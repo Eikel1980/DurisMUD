@@ -35,7 +35,7 @@ if [ -d logs/log ]; then
    echo "Coping news files"
    rm -rf /var/www/html/duris_files/*
    cp /duris/mud/lib/information/news /var/www/html/duris_files/
-  bin/cvs2cl.pl -f lib/information/changelog.cvs src
+  bin/cvs2cl.pl -f lib/information/changelog.cvs src lib/duris.properties
 
   nm --demangle dms | grep " T " | sed -e 's/[(].*[)]//g' > lib/event_names
   ./dms 6666 > dms.out
