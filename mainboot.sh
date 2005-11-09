@@ -26,18 +26,23 @@ while [ $RESULT != 0 ]; do
     fi
   fi
 
-if [ -d logs/log ]; then
+  if [ -d logs/log ]; then
     LOGNAME=`date +%b%d-%H%M`
     mkdir logs/old-logs/$LOGNAME
     mv logs/log/* logs/old-logs/$LOGNAME
   fi
 
-   echo "Coping news files"
-   rm -rf /var/www/html/duris_files/*
-   cp /duris/mud/lib/information/news /var/www/html/duris_files/
+  echo "Coping news files.."
+  rm -rf /var/www/html/duris_files/*
+  cp /duris/mud/lib/information/news /var/www/html/duris_files/
+
+  echo "Creating cvs log file.."
   bin/cvs2cl.pl -f lib/information/changelog.cvs src lib/duris.properties
 
+  echo "Generating list of functions.."
   nm --demangle dms | grep " T " | sed -e 's/[(].*[)]//g' > lib/event_names
+
+  echo "Starting duris server.."
   ./dms 6666 > dms.out
 
   RESULT=${PIPESTATUS[0]}
