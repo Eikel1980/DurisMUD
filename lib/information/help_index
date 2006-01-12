@@ -87,7 +87,7 @@ Type of spell:	Acid
 large amount of damage.  This spell also has the chance of causing the
 victim to move much slower.
 ===========================================================================
-See also:  SLOWNESS 
+See also: SLOWNESS 
 
 #
 "ADRENALINE CONTROL" (Spell)
@@ -207,7 +207,7 @@ attacks.
 See also: "ETHEREAL FORM"
 
 #
-"AIR MAGUS" (Information) [Specialization]
+"AIR MAGUS" (Specialization)
 ===========================================================================
 The Air Magus has mastered the elements of the air itself. They can
 transform their very bodies into particles of air, making them difficult to
@@ -261,7 +261,7 @@ Equipment usage:        Like all classes on Duris, alchemists have their
                         mildly restricted in the use of miscellaneous
                         magical items.	
 ===========================================================================
-See also:  CRAFT, FORGE, MIX, SKILL_ALCHEMIST
+See also: CRAFT, FORGE, MIX, SKILL_ALCHEMIST
 
 #
 ALIGNMENT (General Information)
@@ -320,7 +320,7 @@ craft.
 ===========================================================================
 
 #
-ANIMALIST (Specialization)
+ANIMALIST 
 ===========================================================================
 The Animalist specializes in the feral nature of his art. They are able
 to summon larger pets, and can even take the form of certain animals.
@@ -472,7 +472,7 @@ This skill allows the assassin to apply poison to a special weapon. If the
 poison application is successful, there will be a chance of poisoning the
 next creature attacked. This weapon must be re-poisoned after each battle.
 ===========================================================================
-See also:  POISON
+See also: POISON
 
 #
 APPRAISE (Skill)
@@ -525,7 +525,7 @@ in this category.
 NOTE: You must have arrows or bolts in a quiver, be wielding a bow and not 
 be engaged in battle to use this skill.
 ===========================================================================
-See also:  "RANGE WEAPONS", FIRE, THROW
+See also: "RANGE WEAPONS", FIRE, THROW
 
 #
 "AREA MAKING" AREAS BUILDING (Information)
@@ -539,7 +539,7 @@ levels, and builders, type "credit".
 
 Please email all zone submissions to: astansus@durismud.org
 ===========================================================================
-See also:  ZONES, WIZLIST, DIKUEDIT
+See also: ZONES, WIZLIST, DIKUEDIT
 
 #
 "ARIEKS SHATTERING ICEBALL" ICEBALL (Spell)
@@ -898,7 +898,7 @@ and their actual bodies are in no danger if the avatar is attacked.
 Warning: If ANY one of the clerics that created the avatar loses link, the
 avatar will be lost. 
 ===========================================================================
-See also:  CHANNEL
+See also: CHANNEL
 
 #
 AVENGER (Information)
@@ -1117,7 +1117,7 @@ bloodlust.
 ===========================================================================
 
 #
-"BATTLE-FORGER" "BATTLE FORGER" (Information) [Specialization]
+"BATTLE-FORGER" "BATTLE FORGER" (Specialization)
 ===========================================================================
 The Alchemists of the Battle-Forgers have enhanced their combat skills and 
 through close study of their warrior comrades have taken on skills allowing 
@@ -1156,7 +1156,7 @@ fray to be at their most deadly.
 See also: DREADLORD, SKILL_DREADLORD
 
 #
-BEARHUG (Skill) [Innate]
+BEARHUG (Innate Skill)
 ===========================================================================
 Syntax:	bearhug <victim>
 ===========================================================================
@@ -1294,7 +1294,7 @@ protection, the barrier can be worn down if repeatedly attacked enough.
 See also: "STONE SKIN"
 
 #
-BITE (Skill) [Innate]
+BITE (Innate Skill)
 ===========================================================================
 Syntax: 	innate bite <victim>
 Aggressive: 	Yes
@@ -1304,7 +1304,7 @@ through the body of their victims.
 ===========================================================================
 
 #
-BLACKSMITH (Information) [Specialization]
+BLACKSMITH (Specialization)
 ===========================================================================
 A more subdued and less violent subclass of the alchemist the blacksmith 
 excels in crafting and forging, finding more enjoyment searching the land 
@@ -1326,7 +1326,7 @@ Innates/Passive Abilities
 See also: ALCHEMIST, FORGE, SMELTING, "MINERS SIGHT", FOUNDRY
  
 #
-BLADEMASTER (Information) [Specialization]
+BLADEMASTER (Specialization)
 ===========================================================================
 A Blademaster is a swift warrior able to strike two opponents at a time and 
 fight even faster with the help of "Whirlwind". Under the influence of 
@@ -1342,7 +1342,7 @@ Skills
 See also: "DOUBLE STRIKE", WHIRLWIND
 
 #
-BLAST (Skill) [Innate]
+BLAST (Innate Skill)
 ===========================================================================
 Syntax: innate blast <victim>
 Aggressive: Yes
@@ -1408,7 +1408,7 @@ may abort an offensive spell mid-chant.
 ===========================================================================
 
 #
-"BLOOD REAVER" (Information) [Specialization]
+"BLOOD REAVER" (Specialization)
 ===========================================================================
 The Blood Reaver has mastered the use of pain and blood bonds using this
 to create a number of new abilities. With its attention fully focused on
@@ -1496,7 +1496,7 @@ quite often many of the opponents attacks seem to have no effect upon the
 Mauler. This may be due to the heightened amount of adrenaline in the 
 Mauler's blood.
 ===========================================================================
-See also:  MAULER, MANGLE, SPEC_LIST, BERSERKER, SKILL_BERSERKER
+See also: MAULER, MANGLE, SPEC_LIST, BERSERKER, SKILL_BERSERKER
 
 #
 "BOULDER" (Spell)
@@ -1512,7 +1512,7 @@ damage and if it hits dead on will knock the victim to the ground.
 ===========================================================================
 
 #
-"BOUNTY HUNTER" (Specialization)
+"BOUNTY HUNTER" 
 ===========================================================================
 The Bounty Hunter uses stealth and wits to lure their victims. They can set
 traps to locate the enemy and hide themselves more effectively than their
@@ -1552,7 +1552,7 @@ Skills
 See also: ROGUE, SKILL_ROGUE, CLASSES, SKILLS, ASSASSIN, THIEF 
 
 #
-BREATHE "INNATE BREATHE" (Skill) [Innate]
+BREATHE "INNATE BREATHE" (Innate Skill)
 ===========================================================================
 Syntax:		innate breathe <victim>
 
@@ -1561,7 +1561,7 @@ towards his/her victim.
 ===========================================================================
 
 #
-BRIGAND (Specialization)
+BRIGAND 
 ===========================================================================
 The Brigand takes advantage of holes in the defense of the enemy, which 
 can occur casting or clambering to their feet. He use these moments to deal 
@@ -1781,8 +1781,7 @@ spell is cast because many spells have similar names and the abbreviations
 may not be obvious at once. Experimentation in a safe forum is the best
 idea to insure that no disasters occur.
 ===========================================================================
-See also: MAGIC, MEMORIZE, PRAY, ASSIMILATE, TUPOR, COMMUNE, CASTER,
-          "SPELL SYSTEM", "SPELL SLOT", "SPELL CIRCLE", "SPELL FAILURE"
+See also: MAGIC, MEMORIZE, PRAY, ASSIMILATE, TUPOR, COMMUNE, CASTER, "SPELL SYSTEM", "SPELL SLOT", "SPELL CIRCLE", "SPELL FAILURE"
 
 #
 CASTER (General Information)
@@ -1851,7 +1850,7 @@ Type of spell:  Generic
 See also: "CAUSE CRITICAL", "CAUSE LIGHT"
 
 #
-CAVALIER (General Information) [Specialization]
+CAVALIER (Specialization)
 ===========================================================================
 Cavaliers are the ultimate horsemen. When mounted upon a Pegasus, they
 possess the ability to charge the enemy with their lance while nimbly
@@ -1952,7 +1951,7 @@ Warning: If ANY one of the clerics loses link during the avatar process,
 the avatar will vanish. There IS a time limit on how often clerics can
 avatar.
 ===========================================================================
-See also:  AVATAR
+See also: AVATAR
 
 #
 "CHANNEL NEGATIVE ENERGY" (Spell)
@@ -1989,7 +1988,7 @@ A successful verse of this song will cause those charmed pets in the room,
 both grouped and ungrouped to possibly become charmed. A victim affected 
 by this song becomes charmed until charm breaks or victim is killed.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: SONGS, INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 CHANTS (Information)
@@ -2145,7 +2144,7 @@ Type of song:	Enchantment
 A successful verse of this song has the chance to cause all in room to
 randomly switch to a new target, both within their group and just in room.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: SONGS, INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 CIRCLE (Skill)
@@ -2163,7 +2162,7 @@ Mage and Priest sub-classes) and "semi-casters" (Rangers, Paladins, and
 Anti-Paladins) gain in circle at levels 6, 11, 16, 21, 26, 31, 36, 41, and
 46.
 ===========================================================================
-See also:  BACKSTAB, TANK, "SPELL CIRCLE"
+See also: BACKSTAB, TANK, "SPELL CIRCLE"
 
 #
 CLASSES (General Information)
@@ -2212,8 +2211,7 @@ Equipment usage:  	Like all classes on Duris, Clerics have their own
                         items.
                         
 ===========================================================================
-See also: PRIEST, CAST, PRAY, "SPELL SLOTS", "SPELL SYSTEM", CASTER,
-          "SPELL CIRCLE", SKILL_CLERIC, SKILLS
+See also: SKILL_CLERIC, PRAY
 
 #
 "CLERICAL SPELL KNOWLEDGE" (Skill)
@@ -2294,7 +2292,7 @@ found: &+Wplatinum&+w, &+Ygold&+w, &+csilver&+w, and &+ycopper&+w.&n
 Note: coins are not weightless, so be careful in choosing how much to carry
 around with you.
 ===========================================================================
-See also: EXCHANGE BANKS
+See also: EXCHANGE, BANKS
 
 #
 COLDSHIELD (Spell)
@@ -2769,7 +2767,7 @@ her inventory.) erupts the carrier in flames.
 ===========================================================================
 
 #
-"CONTROL WEATHER" (Spell) [Currently Inactive]
+"CONTROL WEATHER" (Inactive Spell)
 ===========================================================================
 Area of effect: Zone 
 Aggressive:     No
@@ -2823,7 +2821,7 @@ defense.
 See also: ETHERMANCER, COSMOMANCER
 
 #
-COSMOMANCER [Specialization] 
+COSMOMANCER (Specialization)
 =========================================================================== 
 The ultimate and most devastating Ethermancer specializes in the long 
 forgotten and near shunned arts of cosmocy, the ability the control the 
@@ -3003,7 +3001,7 @@ knocked to the ground.
 See also: BASH, BLINDNESS, SWORDSMAN
 
 #
-CRUSADER (General Information) [Specialization]
+CRUSADER (Specialization)
 ===========================================================================
 The Crusader Paladin's main focus is on damage, possessing the added 
 ability to "Skewer" their enemies. They may also utilize their "Lay Hands"
@@ -3114,7 +3112,7 @@ Note: The effects of this spell can only be counteracted by the spell
 See also: "REMOVE CURSE"
 
 #
-CUTPURSE (General Information) [Specialization]
+CUTPURSE (Specialization)
 ===========================================================================
 As their name suggests, the Cutpurse is experienced in the fine art of
 stealing. They have an enhanced steal and can take off with a targets
@@ -3176,7 +3174,7 @@ lands of the living. It has been known to fail however...
 See also: RELOCATE
 
 #
-"DARK KNIGHT" (Information) [Specialization]
+"DARK KNIGHT" (Specialization)
 ===========================================================================
 The Dark Knight's main focus is on damage, possessing the added ability to 
 "Skewer" their enemies. It is rumored that when under the "Armageddon" 
@@ -3274,7 +3272,7 @@ Type of spell:  Enchantment
 This potent spell grants all those grouped with the caster "Vitality" and
 "Protection from Living" spells.
 ===========================================================================
-See also: "VITALITY", "PROTECTION FROM LIVING"
+See also: VITALITY, "PROTECTION FROM LIVING"
 
 #
 "DEATH FIELD" (Spell)
@@ -3314,7 +3312,7 @@ Innate abilities: Ultravision, summon mount, anti-good, vampiric touch,
 See also: ANTI-PALADIN, SKILL_ANTI-PALADIN
 
 #
-DEATHLORD (General Information) [Specialization]
+DEATHLORD (Specialization)
 ===========================================================================
 The Deathlord is a creature of destruction and doom, it thrives on the 
 moments when 'life' hangs in the delicate balance of fate. Their very souls
@@ -3405,7 +3403,7 @@ people reroll their stats until they end up with stats that please them.
 See also: STATS, CLASSES, RACES, REIMBURSEMENT
 
 #
-"DEMONIC RIDER" (Information) [Specialization]
+"DEMONIC RIDER" (Specialization)
 ===========================================================================
 Demonic Riders are the ultimate horsemen. When mounted upon a Hellhound, 
 they possess the ability to charge the enemy with their lance while nimbly
@@ -3509,7 +3507,7 @@ magical items.
 ===========================================================================
 
 #
-"DETONATE", "IMPROVED DETONATE (Pyrokinetic)" (Spell)
+DETONATE "IMPROVED DETONATE" (Spell)
 ===========================================================================
 Area of effect: <victim>
 Aggressive:     Yes
@@ -3520,6 +3518,7 @@ Type of spell:  Generic
 This terribly destructive spell cause the victims body to be enveloped in a
 series of painful focused explosions. If the caster is specialized as a
 Pyrokinetic, the damage is more focused, and much harder to avoid.
+Improved Detonate is a spell for a specialized Pyrokinetic.
 ===========================================================================
 
 #
@@ -3546,7 +3545,7 @@ opponents.
 See also: "SPELL, DEXTERITY", "ENHANCE DEXTERITY", STATISTICS
 
 #
-DIABOLIS (Information) [Specialization]
+DIABOLIS (Specialization)
 ===========================================================================
 The Diabolis Necromancer is a master of assembling and leading the most 
 deadly of undead armies. They can exhume corpses from the ground to be used
@@ -3704,7 +3703,7 @@ instead of just race. Check local justice to see if disguise is allowed.
 ===========================================================================
 
 #
-DISHARMONIST (Information) [Specialization]
+DISHARMONIST (Specialization)
 ===========================================================================
 The disharmonist has developed the harmonic ability to resonate their voice
 and add to the power of their songs. This training of their very voice has
@@ -3873,7 +3872,7 @@ skill.
 ===========================================================================
 
 #
-DOORBASH (Skill) [Innate]
+DOORBASH (Innate Skill)
 ===========================================================================
 Syntax:         doorbash <direction>
 Aggressive:     No
@@ -3913,7 +3912,7 @@ Type of song:	Protection
 "Draconic Crescendo" allows the piper to protect those in the room from
 dragons, similar to the protection spells.
 
-See also:  INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 DRAG (Command)
@@ -3943,7 +3942,7 @@ will attempt to hunt them down!
 ===========================================================================
 
 #
-"DRAGON DISCIPLE" (Specialization)
+"DRAGON DISCIPLE" 
 ===========================================================================
 A monk specialized in the Way of the Dragon is usually referred to as a 
 Dragon Disciple. They focus on abilities derived of the power and might of 
@@ -4088,7 +4087,7 @@ play a drow unless you are a *very* advanced player and are used to the
 Duris style of MUDding, or are willing to face the hardships without
 complaint, as it will NOT be easy.
 ===========================================================================
-See also:  RACES, "GREY ELF", LEVITATE, DARKNESS, "FAERIE FIRE",
+See also: RACES, "GREY ELF", LEVITATE, DARKNESS, "FAERIE FIRE",
            ULTRAVISION, INNATE
 
 #
@@ -4130,8 +4129,7 @@ Equipment Usage:        Druids fall under the Priest classification of
                         armor, and are only mildly restricted in usage of 
                         certain miscellaneous magical items.  
 ===========================================================================
-See also: PRIEST, CAST, COMMUNE, "SPELL SLOTS", "SPELL SYSTEM", CASTER,
-          "SPELL CIRCLE", SKILL_DRUID
+See also: SKILL_DRUID, COMMUNE
 
 #
 "DUAL WIELD" (Skill)
@@ -4180,8 +4178,7 @@ unless you are a *very* advanced player and are used to the Duris
 style of MUDding, or are willing to face the hardships without
 complaint, as it is NOT easy.
 ===========================================================================
-See also:  RACES, "MOUNTAIN DWARF"," INVISIBILITY, STRENGTH,
-           ULTRAVISION, INNATE
+See also: RACES, "MOUNTAIN DWARF", INVISIBILITY, STRENGTH, ULTRAVISION, INNATE
 
 #
 "EARTHEN GRASP" (Spell)
@@ -4256,7 +4253,7 @@ are grouped with the caster.
 ===========================================================================
 
 #
-"EARTH MAGUS" (Specialization)
+"EARTH MAGUS" 
 ===========================================================================
 The Earth Magus uses the elemental power of the earth to better enhance the
 abilities they already possess. They have the power to conjure more 
@@ -4284,7 +4281,7 @@ sample the viands, whereas eat and drink let you ingest your fill.
 See also: QUAFF
 
 #
-ECHO (Skill) [Innate]
+ECHO (Innate Skill)
 ===========================================================================
 With their advanced vocal capacities, Disharmonists are able to play their
 sounds with a resounding echo. This can cause their songs action to
@@ -4323,7 +4320,7 @@ a small amount of damage.
 ===========================================================================
 
 #
-ELEMENTALIST (Information) [Specialization]
+ELEMENTALIST (Specialization)
 ===========================================================================
 The Elementalist has learned to master the power of the elemental realm.
 His elemental offensive spells are able to inflict more damage, and he is
@@ -4454,9 +4451,10 @@ battle skills, heightening its ability to harm and damage.
 See also: DEATHLORD
 
 #
-EMOTE :
+EMOTE
 ===========================================================================
 Syntax:  emote <message_text>
+         : <message_text>
 
 The "emote" command allows you to creatively pretend that your
 character is doing something that the available socials do not
@@ -4479,7 +4477,7 @@ A quicker, equivalent command is ":"
 Note:  "emote" is a social action that is used for *fun*.  Please do not
 take these actions seriously.
 ===========================================================================
-See also:  "SOCIAL ACTIONS"
+See also: "SOCIAL ACTIONS"
 
 #
 ENCHANT (Skill)
@@ -4677,7 +4675,7 @@ by primal fury to cast spells.
 ===========================================================================
 
 #
-ENSLAVER (General Information) [Specialization]
+ENSLAVER (Specialization)
 ===========================================================================
 When the Psionicist chooses this path, they regress into the ways of 
 their Illithid captors, and use their willpower to subjugate lesser races
@@ -4892,7 +4890,7 @@ Equipment usage:        Harpies fall under the Priest classification
                         any type of armor, but are mildly restricted 
                         in the use of miscellaneous magical items.
 ===========================================================================
-See also:  PRIEST, CAST, TUPOR, "SPELL SLOTS", "SPELL SYSTEM", CASTER,
+See also: PRIEST, CAST, TUPOR, "SPELL SLOTS", "SPELL SYSTEM", CASTER,
            "SPELL CIRCLE", SKILL_ETHERMANCER, HARPY
 
 #
@@ -4950,7 +4948,7 @@ where you are wearing them. For example:
 
 This command can be shorted to simply "eq".
 ===========================================================================
-See also:  INVENTORY
+See also: INVENTORY
 
 #
 EVASION (Innate ability)
@@ -5020,7 +5018,7 @@ The standard Duris currency values equate as:
         like to charge an processing fee!
         
 ===========================================================================
-See also:  COINS CURRENCY
+See also: COINS, CURRENCY
 
 #
 EXITS
@@ -5224,7 +5222,7 @@ Syntax:  fill <to-drink_container> <from-drink_container>
 This command lets you refill your drink container from another source.
 Note that you cannot mix liquids.
 ===========================================================================
-See also:  EAT DRINK SIP TASTE, POUR
+See also: EAT DRINK SIP TASTE, POUR
 
 # 
 FIRE (Command)
@@ -5300,7 +5298,7 @@ of the abilities inherent to the plane of fire.
 ===========================================================================
 
 #
-"FIRE MAGUS" (Specialization)
+"FIRE MAGUS" 
 ===========================================================================
 The Fire Magus concentrates on offensive magic by using the element of 
 fire. He possesses extremely powerful spells, reducing his enemies to a 
@@ -5437,7 +5435,7 @@ enemy and causing considerable damage.
 ===========================================================================
 
 #
-"FLAME REAVER" (Information) [Specialization]
+"FLAME REAVER" (Specialization)
 ===========================================================================
 
 The Flame Reaver has mastered the use of &+rfi&+Rre&n and it shows in their 
@@ -5622,7 +5620,7 @@ need specific ingredients in order to cast spells or mix potions.
 See also: ALCHEMIST, INGREDIENTS, "FOREST DRUID"
 
 #
-"FOREST DRUID" (General Information) [Specialization]
+"FOREST DRUID" (Specialization)
 ===========================================================================
 The Frost Druid specialization focuses on utilizing the forces of nature
 for both offensive and defensive purposes.
@@ -5779,7 +5777,7 @@ chills them to the bone.
 ===========================================================================
 
 #
-"FROST MAGUS" (Specialization)
+"FROST MAGUS" 
 ===========================================================================
 The "Frost Magus" aligns itself with the offensive nature of the storms. 
 They are able to call upon the rage of the wind to aid them in their 
@@ -5835,7 +5833,7 @@ Type of song:	Enchantment
 Funereal Hymn has the chance to soothe those in the room, causing them to
 feel much too calm to engage in combat.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: SONGS, INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 "GASEOUS CLOUD" (Spell)
@@ -5949,7 +5947,7 @@ are a *very* advanced player and are used to the Duris style of
 MUDding, or are willing to face the hardships without complaint, as it
 will NOT be easy.
 ===========================================================================
-See also:  RACES, LEVITATE, NECROMANCER, SORCERER, ANTIPALADIN,
+See also: RACES, LEVITATE, NECROMANCER, SORCERER, ANTIPALADIN,
            WARRIOR, PSIONICIST
 
 #
@@ -5969,7 +5967,7 @@ Syntax:  give <amount> <coin_type> <target>
 Giving very heavy objects, or 1000s of coins, or anything that will
 overload the receiver, requires the receiver's consent.
 ===========================================================================
-See also:  COINS CURRENCY CONSENT
+See also: COINS CURRENCY CONSENT
 
 #
 GLANCE
@@ -5984,7 +5982,7 @@ use the "glance" command. This command will provide you with a synopsis of
 the current health of the mob or player that you are glancing at. Others
 cannot see you glancing.
 ===========================================================================
-See also:  LOOK
+See also: LOOK
 
 #
 "GLOBE OF DARKNESS" (Spell)
@@ -6035,7 +6033,7 @@ Statistics: Gnomes have very quick minds, but seem to lack the wisdom to
             very appealing.
 Innates:    Infravision, Farsee.
 ====================================================================== ====
-See also:  RACES, INFRAVISION, INNATE
+See also: RACES, INFRAVISION, INNATE
 
 #
 GMOTD
@@ -6087,7 +6085,7 @@ Goblin unless you are a *very* advanced player and are used to the Duris
 style of MUDding, or are willing to face the hardships without complaint,
 as it will NOT be easy.
 ===========================================================================
-See also:  RACES, ULTRAVISION, INFRAVISION, INNATE
+See also: RACES, ULTRAVISION, INFRAVISION, INNATE
 
 #
 "GOD CALL" (Innate Ability)
@@ -6280,7 +6278,7 @@ Example: echo This is a test.
          will show to others as
          This is a test.
 ===========================================================================
-See also: "GOD, GSHOUT" "GOD, ECHOA," "GOD, ECHOZ"
+See also: "GOD, GSHOUT", "GOD, ECHOA", "GOD, ECHOZ"
 
 #
 "GOD, ECHOA"
@@ -6292,58 +6290,58 @@ Example: echoa LET THE QUEST BEGIN
          will display to everyone (besides you) as
          LET THE QUEST BEGIN
 ===========================================================================
-&+mSee also: "GOD, GSHOUT," "GOD, ECHO," "GOD, ECHOZ"&n
+See also: "GOD, GSHOUT", "GOD, ECHO", "GOD, ECHOZ"
 
 #
 "GOD, ECHOZ"
-&+M===========================================================================&n
+===========================================================================
 &+m"Echoz" is similar to "echo" except the message is echoed within the zone&n
 &+monly.&n
 
 &+mExample: echoz Touch my monkey.&n
 &+m         will be seen as:&n
 &+m         Touch my monkey.&n
-&+M===========================================================================&n
-&+mSee also: "GOD, GSHOUT," "GOD, ECHO," "GOD, ECHOA"&n
+===========================================================================
+See also: "GOD, GSHOUT", "GOD, ECHO", "GOD, ECHOA"
 
 #
 "GOD, FINGER"
-&+M===========================================================================&n
+===========================================================================
 &+mSyntax: finger <player>&n
 
 &+mThis gives you a player's name, title, level, class, race, and the last&n
 &+mtime they saved.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 &+m"GOD, FORCE"&n
-&+M===========================================================================&n
+===========================================================================
 &+mSyntax:  force <victim> <argument>&n
 
 &+mThis causes the game to react as if the victim had entered <argument>.&n
 &+mExcessive forcing is frowned upon.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, FREEZE"
-&+M=================================== =======================================&n
+===========================================================================
 &+mSyntax:  freeze <victim>&n
 
 &+mThe mud will accept no commands from the victim until you freeze them&n
 &+magain, toggling it off. This is a very effective command, and should be&n
 &+mused sparingly.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, GOTO"
-&+M===========================================================================&n
+===========================================================================
 &+m"Goto" lets you change your location to the target's location.&n
 
 &+mExamples: goto 1201         - takes you to room 1201&n
 &+m          goto poofbrain    - takes you to Poofbrain&n
 &+m          goto lamp         - takes you to the top lamp in the database&n
-&+m===========================================================================&n
-&+mSee also: "GOD, TELEPORT," "GOD, TRANS"&n
+===========================================================================
+See also: "GOD, TELEPORT", "GOD, TRANS"
 
 #
 "GOD, GRANT" "GOD, REVOKE"
@@ -6358,25 +6356,25 @@ revoke a command that was previously granted.
 
 #
 "GOD, GSHOUT"
-&+M===========================================================================&n
+===========================================================================
 &+mThis command is like "shout," but it rings out across the world.&n
 
 &+mExample: gshout I'm the greatest in the universe.&n
 &+m         will appear to most people as&n
 &+m         Bippy shouts from the heavens 'I'm the greatest in the universe.'&n
-&+M===========================================================================&n
-&+mSee also: SHOUT&n
+===========================================================================
+See also: SHOUT
 
 #
 "GOD, INGAME"
-&+M===========================================================================&n
+===========================================================================
 &+mIngame" is the same as inroom, except it affects the entire mud instead of&n
 &+monly 1 room.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, INROOM"
-&+M===========================================================================&n
+===========================================================================
 &+m"Inroom" lets you affect an entire room with a command that normally would&n
 &+monly affect one person.&n
 
@@ -6389,11 +6387,11 @@ revoke a command that was previously granted.
 &+mExample: inroom teleport %p 19617 (Teleports everyone in the room to room&n
 &+m19617).&n
 &+mExample: inroom force %m report (Forces all mobs in the room to report).&n
-&+M===========================================================================
+===========================================================================
 
 #
 "GOD, KNOWLEDGE"
-&+M===========================================================================&n
+===========================================================================
 &+mMortals on any MUD can often get lost or have problems that are far beyond&n
 &+mtheir control. This generally occurs no matter how well-coded a MUD is.&n
 
@@ -6419,29 +6417,29 @@ revoke a command that was previously granted.
 
 &+mSo, in synopsis, if there is a problem beyond your control, don't blow 'em&n
 &+moff. Get help.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, LEVELS"
-&+M===========================================================================&n
+===========================================================================
 &+mSyntax: levels [<class>]&n
 
 &+mThis command gives you a list of each experience level for a given class,&n
 &+mor those of your own class with no argument. Do not give this information&n
 &+mto mortals, as we are trying to hide numbers from the game.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, LIGHTNING"
-&+M===========================================================================&n
+===========================================================================
 &+mSyntax: lightning <victim>&n
 
 &+mThis god social lets you strike your hapless victim with lightning. Ka-ZAP!&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, LOAD"
-&+M===========================================================================&n
+===========================================================================
 &+mFor loading new objects or characters from the database. The format is:&n
 
 &+m     load <type> <number>&n
@@ -6450,12 +6448,12 @@ revoke a command that was previously granted.
 &+mobject or character you wish to create.&n
 
 &+mExample: load o 1400&n
-&+M===========================================================================&n
-&+mSee also: "GOD, LOOKUP"&n
+===========================================================================
+See also: "GOD, LOOKUP"
 
 #
 "GOD, LOOKUP"
-&+M===========================================================================&n
+===========================================================================
 &+m"Lookup" is for finding the database number (v-number) of objects or&n
 &+mcharacters in preparation for loading or statting.&n
 
@@ -6465,19 +6463,19 @@ revoke a command that was previously granted.
 
 &+mGives you a listing of all items with staff in their short description&n
 &+malong with their associated database number.&n
-&+M===========================================================================&n
-&+mSee also:  "GOD, LOAD," "GOD, STAT"&n
+===========================================================================
+See also: "GOD, LOAD", "GOD, STAT"
 
 #
-"GOD, PARDON"&n
-&+M===========================================================================&n
+"GOD, PARDON"
+===========================================================================
 "Pardon" will remove the OUTLAW flag.&n
-&+M===========================================================================&n
-See also:  "GOD, PFLAGS," "GOD, SETBIT"&n
+===========================================================================
+See also: "GOD, PFLAGS", "GOD, SETBIT"
 
 #
 "GOD, PARTICIPATION"
-&+M===========================================================================&n
+===========================================================================
 &+mThis refers to the level to participation each god is expected to&n
 &+mcontribute to the MUD. In order to obtain and maintain a god of some power&n
 &+mhere on Duris, each god is expected to continually contribute in some&n
@@ -6497,7 +6495,7 @@ See also:  "GOD, PFLAGS," "GOD, SETBIT"&n
 
 &+mAll gods will be assessed on a regular basis and assessments will be&n
 &+mhandled in this manner:&n
-&+M===========================================================================&n
+---------------------------------------------------------------------------
 &+mEach month, during the Forgers' regular meeting, each god (including&n
 &+mforgers) will be evaluated for the month based on what they have done or&n
 &+mnot done to contribute to the MUD. One month of inactivity is fine, even&n
@@ -6515,7 +6513,7 @@ See also:  "GOD, PFLAGS," "GOD, SETBIT"&n
 &+mhave to work for it like the rest of us (including Forgers).&n
 
 &+mRemember, it is a privilege to be a god here, not a right.&n
-&+M===========================================================================&n
+===========================================================================
 
 #
 "GOD, PFLAGS"
@@ -6536,7 +6534,7 @@ the room you are leaving when you do a "goto."
 
 To see what your current poofin/-out is, type "poofin ?" or "poofout?"
 ===========================================================================
-See also:  "GOD, GOTO"
+See also: "GOD, GOTO"
 
 #
 "GOD, PTELL"
@@ -6588,7 +6586,7 @@ Syntax:  release <socket_number>
 This releases a given socket and the corresponding character's
 connection.
 ===========================================================================
-See also:  "GOD, BAN," "GOD, ALLOW," "GOD, USERS"
+See also: "GOD, BAN", "GOD, ALLOW", "GOD, USERS"
 
 #
 "GOD, RESTORE"
@@ -6612,7 +6610,7 @@ Syntax:  secret <object>
 
 This command sets the SECRET bit on an object.
 ===========================================================================
-See also:  SEARCH
+See also: SEARCH
 
 #
 "GOD, SETATTR"
@@ -6623,7 +6621,7 @@ command "setattr" with no arguments for a list of settable attributes.
 Example:
   > setattr fizzwig wis 18
 ===========================================================================
-See also:  "GOD, SETBIT"
+See also: "GOD, SETBIT"
 
 #
 "GOD, SETBIT"
@@ -6639,7 +6637,7 @@ setbit obj  name flag-type value [on|off]
 setbit dir  room-number flag-type value [on|off]
 setbit aff  name[aff-number] flag value [on|off]
 ===========================================================================
-See also:  "GOD, PFLAGS," "GOD, SETATTR"
+See also: "GOD, PFLAGS", "GOD, SETATTR"
 
 #
 "GOD, SETHOME"
@@ -6706,7 +6704,7 @@ Syntax:
 
 Do not reveal stats to mortals.  This is punishable by deletion.
 ===========================================================================
-See also:  "GOD, LOOKUP"
+See also: "GOD, LOOKUP"
 
 #
 "GOD, STRING"
@@ -6733,7 +6731,7 @@ you enter a string mode (like a bulletin board), and the game will
 prompt you for new lines to the string until you exceed the maximum
 length for the string or you end a line with a '@'.
 ===========================================================================&
-See also:  "GOD, TITLE"
+See also: "GOD, TITLE"
 
 #
 "GOD, SUPERVISE"
@@ -6763,7 +6761,7 @@ Syntax:  teleport <victim> <room # | character>
 This command changes the room of the victim to the desired location or
 the location of <character>.
 ===========================================================================
-See also:  "GOD, GOTO," "GOD, TRANS"
+See also: "GOD, GOTO", "GOD, TRANS"
 
 #
 "GOD, TITLE"
@@ -6785,7 +6783,7 @@ This lets you bring the victim into your current room.
 Note:  unless you are very high level, you cannot bring victims into
 places they could not go on their own, such as ocean rooms.
 ===========================================================================
-See also:  "GOD, GOTO," "GOD, TRANS"
+See also: "GOD, GOTO", "GOD, TRANS"
 
 #
 "GOD, USERS"
@@ -6800,7 +6798,7 @@ single user.
 
 Do NOT reveal users' sites to other mortals.
 ===========================================================================
-See also:  "GOD, BAN," "GOD, ALLOW," "GOD, RELEASE"
+See also: "GOD, BAN", "GOD, ALLOW", "GOD, RELEASE"
 
 #
 "GOD, VIS"
@@ -6813,7 +6811,7 @@ Example:
   > vis 10      : Sets minimum visibility level so that players with
                   levels <= 10 cannot see you.
 ===========================================================================
-See also:  DISPLAY, VIS
+See also: DISPLAY, VIS
 
 #
 "GOD, WHERE"
@@ -7213,7 +7211,7 @@ them protect them from being attacked.
 See also: DEFEND, RESCUE
 
 #
-GUARDIAN (General Information) [Specialization]
+GUARDIAN (Specialization)
 ===========================================================================
 As their name suggests, the Guardian is a true savior to all. They are 
 able to dive in and often rescue their entire group in the heat of battle. 
@@ -7585,7 +7583,7 @@ Type of spell:  Healing
 See also: BLINDNESS, "CURE BLIND", "FULL HEAL"
 
 #
-HEALER (General Information) [Specialization]
+HEALER (Specialization)
 ===========================================================================
 A Healer Cleric is the most utilitarian of all the specializations. They
 have the ability to call upon their own God to heal their entire group, 
@@ -7671,7 +7669,7 @@ you die to another player. Without the limitations of a body your mind is
 more attune to magic and you will be able to memorize any spell you are
 able to use.
 ===========================================================================
-See also:  DEATH, PKILL
+See also: DEATH, PKILL
 
 #
 "HELLFIRE" (Spell)
@@ -7691,7 +7689,7 @@ is based only on the dice of that weapon.
 See also: "VAMPIRIC TOUCH"
 
 #
-HELLSPAWN (General Information) [Specialization]
+HELLSPAWN (Specialization)
 ===========================================================================
 A dealer of death, the Hellspawn is able to instinctively detect the target 
 with the least vital energies remaining. Should they receive the killing 
@@ -7761,7 +7759,7 @@ attempted to hit.
 See also: "DOUBLE ATTACK", "DUAL WIELD"
 
 #
-HOLYMAN (General Information) [Specialization]
+HOLYMAN (Specialization)
 ===========================================================================
 The Holyman Cleric is a master of defensive capabilities. He has the ability
 to invoke his God to calm a room, when needed. And, under the effect of the 
@@ -7856,7 +7854,7 @@ Innate abilities: None
 See also: RACES, INNATE
 
 #
-HUNTSMAN (General Information) [Specialization]
+HUNTSMAN (Specialization)
 ===========================================================================
 Specialized at scouting enemies, the Huntsman has learned to stalk their 
 victims unnoticed, hide in the surroundings and set up traps warning them 
@@ -8137,7 +8135,7 @@ COMMUNICATIONS UTILITIES          MUNDANE LIFE
 
 For more information on each one, type HELP <category>.
 ===========================================================================
-See also:  COMMANDS
+See also: COMMANDS
 
 #
 INDOMITABILITY (Spell)
@@ -8518,7 +8516,7 @@ those who speak it and listening to it for long enough.
 
 There is currently one language for each race, and a private god language.
 ===========================================================================
-See also:  SPEAK
+See also: SPEAK
 
 #
 LAWS RULES
@@ -8572,7 +8570,7 @@ a loud chewing out to losing all of your equipment.
 
 If you don't like these rules, too bad, we do and we own the damn machine.
 ===========================================================================
-See also:  MULTI-PLAYING, RACEWARS, ROBOTS, RAID
+See also: MULTI-PLAYING, RACEWARS, ROBOTS, RAID
 
 #
 "LAY HANDS" (Command)
@@ -9099,10 +9097,10 @@ from the hate building within himself, while in combat some Mauler's
 become so angered from their opponents attacks that they may strike back
 at the opponents arm, possibly dislodging their weapon.
 ===========================================================================
-See also:  MAULER, BOILING BLOOD, SPEC_LIST, BERSERKER, SKILL_BERSERKER
+See also: MAULER, BOILING BLOOD, SPEC_LIST, BERSERKER, SKILL_BERSERKER
 
 #
-MAULER (General Information) [Specialization]
+MAULER (Specialization)
 ===========================================================================
 As the name implies, Mauler's have increased their skills when it comes
 to the control of their takedown skills. With the enhanced ability to
@@ -9119,7 +9117,7 @@ Skills
 51st Level:   Mangle
 
 ===========================================================================
-See also: MANGLE, BOILING BLOOD, SPEC_LIST, BERSERKER, SKILL_BERSERKER
+See also: MANGLE, "BOILING BLOOD", SPEC_LIST, BERSERKER, SKILL_BERSERKER
 
 #
 MAP
@@ -9172,7 +9170,7 @@ the caster receives the spell's benefits with one casting.
 See also: BARKSKIN
 
 #
-"MASS CHARM" [Currently Inactive]
+"MASS CHARM" (Inactive Spell)
 ===========================================================================
 Area of effect: Room
 Aggressive:     Yes
@@ -9459,7 +9457,7 @@ Innate abilities: infravision, ultravision, doorbash, bodyslam, charge
 See also: RACES, INFRAVISION, ULTRAVISION, CHARGE, BODYSLAM, DOORBASH
 
 #
-MINSTREL (General Information) [Specialization]
+MINSTREL (Specialization)
 ===========================================================================
 Minstrel's are the elite of the classic bards or piper, they have taken
 their pure bardic abilities and enhanced and expanded the power and ability
@@ -9969,7 +9967,7 @@ used.
 ===========================================================================
 
 #
-NAME, NAMES (General Information)
+NAME NAMES (General Information)
 =============================================================== ===========
 This is a medieval based fantasy mud, if you pick a name that is NOT suited
 to a mud of that theme, you will be asked to change it. Common names like
@@ -9983,7 +9981,7 @@ will result in deletion.
 ===========================================================================
 
 #
-"NATURES TOUCH" "NATURE'S TOUCH" (Spell)
+"NATURES TOUCH" (Spell)
 ===========================================================================
 Area of effect: <victim>
 Aggressive:      No
@@ -10014,7 +10012,7 @@ assistance and help where they are able.
 See also: NEWBIE, TOGGLE_NCHAT
 
 #
-NECROLYTE (General Information) [Specialization]
+NECROLYTE (Specialization)
 =========================================================================== 
 The Necrolyte possesses heightened senses capable of detecting the dead. He
 is a master in the use of staves and can summon the very shadows to serve
@@ -10034,8 +10032,7 @@ Spells
 9th circle:     Raise Shadow
 
 ===========================================================================
-See also: NECROMANCER, "VISION OF THE DEAD", DARKNESS, "RAISE SHADOW", 
-          "STAFF MASTERY"
+See also: NECROMANCER, "VISION OF THE DEAD", DARKNESS, "RAISE SHADOW", "STAFF MASTERY"
 
 #
 NECROMANCER (Sub-Class of: Magic-User)
@@ -10057,8 +10054,7 @@ Equipment usage:        Necromancers have their own classification of item
 			items.
 			
 ===========================================================================
-See also: MAGIC-USER, MAGIC, SKILL_NECROMANCER, "SPELL SLOT", MEDITATE, 
-          "SPELL CIRCLE", "SPELL SYSTEM", SCRIBE, CASTER, CAST
+See also: SKILL_NECROMANCER
 
 #
 "NEGATIVE CONCUSSION BLAST" (Spell)
@@ -10482,8 +10478,7 @@ Equipment usage:  	Paladins have their own classification of item
 			and most type of armor, but are somewhat limited
 			in their use of miscellaneous magical items.      
 ===========================================================================
-See also: FIGHTER, SKILL_PALADIN, ALIGNMENT, "SPELL SYSTEM", "SPELL SLOTS",
-          "SPELL CIRCLE", CASTER, CAST, PRAY
+See also: SKILL_PALADIN, ALIGNMENT, "LAY HANDS"
 
 #
 PANTHERSPEED (Spell)
@@ -10657,7 +10652,7 @@ Examples:
 > pick door
 > pick safe
 ===========================================================================
-See also:  OPEN CLOSE LOCK UNLOCK
+See also: OPEN CLOSE LOCK UNLOCK
 
 #
 PIPER "UNHOLY-PIPER" (Information)
@@ -10677,7 +10672,7 @@ Equipment Usage:        Like all classes on Duris, Pipers have their own set
                         weapons, and armor, also many magic items.
                         
 ===========================================================================
-See also:  PRACTICE, ROGUE, SKILL_PIPER, SONGS, WAIL
+See also: PRACTICE, ROGUE, SKILL_PIPER, SONGS, WAIL
 
 #
 PLAGUE (Spell)
@@ -10747,7 +10742,7 @@ To create magical effects, the bard must hold the proper instrument, then
 "play" the appropriate song. A magical song will not work without the 
 proper instrumental accompaniment. To end a song simply type "play."
 ===========================================================================
-See also:  INSTRUMENT, SONG, WAIL
+See also: INSTRUMENT, SONG, WAIL
 
 #
 "PLAYER CHARACTER" PC (General Information)
@@ -10755,7 +10750,7 @@ See also:  INSTRUMENT, SONG, WAIL
 "PC" refers to a player character, a character on the MUD that is created
 and played by an actual person.  
 ===========================================================================
-See also:  NPC, MOBILE
+See also: NPC, MOBILE
 
 #
 POISON (Spell)
@@ -10877,8 +10872,7 @@ In the past, the practice command was also used to increase your skills.
 This is no longer the case on Duris, and you must use your skills in battle
 to improve them or by gaining levels.
 ===========================================================================
-See also: SCRIBE, "SPELL SYSTEM", "SPELL SLOT", "SPELL CIRCLE", CASTER,
-          CAST, MAGIC-USER
+See also: SCRIBE, "SPELL SYSTEM", "SPELL SLOT", "SPELL CIRCLE", CASTER, CAST, MAGIC-USER
 
 #
 PRESERVE (Spell)
@@ -11157,7 +11151,7 @@ Equipment usage: Psionicists have their own classification of item
 See also: GITHYANKI, MAGIC-USER, SKILL_PSIONICIST
 
 #
-PSYCHEPORTER (General Information) [Specialization]
+PSYCHEPORTER (Specialization)
 ===========================================================================
 Some Psionicists grow bored with the inability to efficiently travel between
 the planes, therefore a small sect has chosen to enhance their transit
@@ -11264,7 +11258,7 @@ Syntax:  put <item> (in) <container>
 
 This allows you to put items in containers.
 ===========================================================================
-See also:  GET TAKE
+See also: GET TAKE
 
 #
 "PYROKINESES"
@@ -11280,7 +11274,7 @@ amount of fire damage to those in the room not in the reaver's group.
 ===========================================================================
 
 #
-PYROKINETIC (General Information) [Specialization]
+PYROKINETIC (Specialization)
 ===========================================================================
 Upon choosing the path of Pyrokinetic, the psionicist is imbued with the
 willpower to manipulate the flame. Under the effect of such pure focus, he
@@ -11338,7 +11332,7 @@ Syntax:  quaff <potion>
 Quaff is used to consume a (magical) potion. Because potions are magical,
 they will have no effects if quaffed in a "No Magic" room.
 ===========================================================================
-See also:  MAGIC-USER 
+See also: MAGIC-USER 
 
 #
 QUEST
@@ -11621,7 +11615,7 @@ mostly from sheer numbers.
 ===========================================================================
 
 #
-RAGELORD (General Information) [Specialization]
+RAGELORD (Specialization)
 ===========================================================================
 As the name implies, Ragelord's have increased their skills when it comes
 to the control of their baser instincts to flurry and rage. With the
@@ -11697,8 +11691,7 @@ Equipment usage:  Rangers have their own classification of item
 &+RNOTE&n: Rangers must stay good aligned or else they lose their magical
      abilities until they mend their ways.
 ===========================================================================
-See also:  FIGHTER, CAST, MEMORIZE, "SPELL SLOTS", "SPELL SYSTEM", CASTER,
-           "SPELL CIRCLE", SKILL_RANGER, SKILLS
+See also: SKILL_RANGER
 
 #
 "RANGE WEAPONS" (General Information)
@@ -11775,10 +11768,10 @@ Example:
 
   > remove 23           : will delete message 23 if you wrote the message
 ===========================================================================
-See also:  WRITE
+See also: WRITE
 
 #
-REAPER (General Information) [Specialization]
+REAPER (Specialization)
 ===========================================================================
 The Reaper Necromancer is the most appealing to Undead followers. They have
 the innate ability that forces their pets into irreversible submission. 
@@ -12025,7 +12018,7 @@ Syntax:  remove <equipped_item>
 If you no longer wish to wear or wield an item, remove it. You can also
 type "remove all" to remove everything you currently have equipped.
 ===========================================================================
-See also:  WEAR, HOLD GRAB, WIELD
+See also: WEAR, HOLD GRAB, WIELD
 
 #
 "REMOVE CURSE" (Spell)
@@ -12072,6 +12065,13 @@ See also: INNS, CAMP, QUIT, REIMBURSEMENT, IDLE
 REPEAT (General Information)
 ===========================================================================
 The "!" command lets you repeat the last command typed at the keyboard.
+Syntax "!"
+
+Example:
+&+YWave&n
+You wave.
+&+Y!&n
+You wave.
 ===========================================================================
 
 #
@@ -12086,7 +12086,7 @@ Type of song:	Enchantment
 "Requiem of the Crypts" brings a soothing calmness to the room and has  he
 chance to cause all those fighting in the room to be brought to peace.
 ===========================================================================
-See also:  INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 RESCUE (Skill)
@@ -12374,10 +12374,9 @@ magically.
 ===========================================================================
 
 #
-SAY TELL WHISPER ASK ' (Command)
+SAY TELL WHISPER ASK (Command)
 ===========================================================================
-Syntax:         say <text>
-                ' <text>
+Syntax:         say <text> &+G-or-&n ' <text>
                 tell <character> <text>
                 whisper <character> <text>
                 ask <character> <text>
@@ -12493,8 +12492,7 @@ on who you are copying/learning from. Proficiency at scribing affects how
 quickly a Magic-User will inscribe new spells into his/her spellbook when 
 practicing or adding new spells.
 ===========================================================================
-See also: PRACTICE, MAGIC-USER, MYSTICS, "SPELL SYSTEM", "SPELL SLOT",
-          "SPELL CIRCLE"
+See also: PRACTICE, MAGIC-USER, MYSTICS, "SPELL SYSTEM", "SPELL SLOT", "SPELL CIRCLE"
 
 #
 SEARCH (Command)
@@ -12583,7 +12581,7 @@ although you will be unable to discern their true nature.
 See also: HIDE, INVISIBILITY
 
 #
-"SENSE WEAKNESS" (Skill) [Innate]
+"SENSE WEAKNESS" (Innate Skill)
 ===========================================================================
 Syntax:         kill
 
@@ -12621,7 +12619,7 @@ will see you.
 See also: HIDE, SNEAK, FOLLOW
 
 #
-SHADOWMAGE (Information) [Specialization]
+SHADOWMAGE (Specialization)
 ===========================================================================
 The Master of the paths of magic and silent transference. A Shadowmage 
 deeply studied will not feel the discomfort, unease and disorientation as 
@@ -12776,8 +12774,7 @@ Equipment usage:        Shamans fall under the Priest classification of
                         type of armor, but are mildly restricted in the use 
                         of miscellaneous magical items.
 ===========================================================================
-See also: PRIEST, "SPELL SLOTS", "SPELL SYSTEM", "SPELL CIRCLE", CAST, 
-          CASTER, SKILL_SHAMAN, MEDITATE, MEMORIZE, TOTEMS
+See also: SKILL_SHAMAN, TOTEMS
 
 #
 "SHAMAN SPELL KNOWLEDGE" (Skill)
@@ -13320,7 +13317,7 @@ capable men and women who are roughened by years of trading and
 surviving in a harsh world.  Killing them may not be as easy as it
 looks!
 
-See also:  BUY SELL, LIST, VALUE
+See also: BUY SELL, LIST, VALUE
 
 #
 SHOUT (Command)
@@ -13351,7 +13348,7 @@ causing him to be less of a threat to the caster.
 See also: LIONRAGE
 
 #
-SHRIEK (Skill) [Innate]
+SHRIEK (Innate Skill)
 ===========================================================================
 Area of effect: <victim>
 Aggressive:     Yes
@@ -13493,7 +13490,7 @@ Alchemist Specializations
 Battle-Forger, Blacksmith
 
 ===========================================================================
-See also:  ALCHEMIST, SKILLS, BATTLE-FORGER, BLACKSMITH
+See also: ALCHEMIST, SKILLS, BATTLE-FORGER, BLACKSMITH
 
 #
 SKILL_ANTI-PALADIN (General Information)
@@ -13537,9 +13534,7 @@ Anti-Paladin Specializations
 ---------------------------------------------------------------------------
                 Demonic Rider           Dark Knight               Hellspawn
 ===========================================================================
-See also: FIGHTER, ANTI-PALADIN, WEAPONS, "SPELL CIRCLE", "SPELL SYSTEM", 
-          "SPELL SLOT", "SPELL FAILURE", CAST, CASTER, SKILLS, WEAPONS,
-          PRAY, ASSIMILATE
+See also: ANTI-PALADIN
 
 #
 SKILL_AVENGER (Information)
@@ -13637,7 +13632,7 @@ Skills
 51st level:     critical attack, switch opponents
 
 ===========================================================================
-See also:  WARRIOR, WEAPONS, SKILLS 
+See also: WARRIOR, WEAPONS, SKILLS 
 
 #
 SKILL_CLERIC (General Information)
@@ -13686,8 +13681,7 @@ Cleric Specializations
 Healer, Holyman, Zealot
 
 ===========================================================================
-See also: PRIEST, CLERIC, "SPELL CIRCLE", "SPELL SYSTEM", "SPELL SLOT",
-          "SPELL FAILURE", CASTER, CAST, SKILLS, MEDITATE, PRAY, WEAPONS
+See also: CLERIC
 
 #
 SKILL_CONJURER (General Information)
@@ -13729,9 +13723,7 @@ Conjurer Specializations
 Air Magus, Fire Magus, Earth Magus, Water Magus
 
 ===========================================================================
-See also: MAGIC-USER, CONJURER, WEAPONS, SKILLS, MAGIC, "SPELL CIRCLE", 
-	  "SPELL FAILURE", "SPELL SLOT", "SPELL SYSTEM", CAST, CASTER,
-          MEMORIZE, MEDITATE
+See also: CONJURER
                 
 #
 SKILL_DREADLORD (Information)
@@ -13757,7 +13749,7 @@ Dreadlord Specializations
 There are no Dreadlord Specializations at this time.
 
 ===========================================================================
-See also: DREADLORD, SKILLS
+See also: DREADLORD
 
 #
 SKILL_DRUID (General Information)
@@ -13804,8 +13796,7 @@ Druid Specializations
 Forest Druid, Storm Druid
 
 ===========================================================================
-See also: PRIEST, DRUID, "SPELL CIRCLE", "SPELL SYSTEM", "SPELL SLOT", CAST, 
-          "SPELL FAILURE", CASTER, COMMUNE, TERRAIN, WEAPONS, SKILLS
+See also: DRUID, COMMUNE, TERRAIN
 
 #
 SKILL_ETHERMANCER (General Information)
@@ -13844,8 +13835,7 @@ Ethermancer Specializations
 Windtalker, Frost Magus, Cosmomancer
 
 =========================================================================== 
-See also: PRIEST, ETHERMANCER, "SPELL CIRCLE", "SPELL SYSTEM", CASTER,
-          "SPELL SLOT",  CAST, "SPELL FAILURE", SKILLS, WEAPONS, TUPOR
+See also: ETHERMANCER, TUPOR
 
 #
 SKILL_ILLUSIONIST
@@ -13877,8 +13867,7 @@ Spells:
 NOTE:  Illusionists gain in circle at levels 6, 11, 16, 21, 26, 31, 36,
        41, 46, 51, and 56
 ===========================================================================
-See also:  MAGIC-USER, ILLUSIONIST, WEAPONS, SKILLS, MAGIC, "SPELL CIRCLE",
-           "SPELL FAILURE", "SPELL SLOT", "SPELL SYSTEM"
+See also: ILLUSIONIST
 
 #
 SKILL_MERCENARY (General Information)
@@ -13903,7 +13892,7 @@ Mercenary Specializations
 Brigand, Bounty Hunter
 
 ===========================================================================
-See also: MERCENARY, WEAPONS, SKILLS, FIGHTER
+See also: MERCENARY
 
 #
 SKILL_MONK
@@ -13930,7 +13919,7 @@ Dragon Disciple: Fist of Dragon, Mind of Dragon, Enhanced Springleap,
 Elaphidist:	 Flurry of Blows, Evasion, Enhanced Heroism, Enhanced
 		 Pressure Points
 ===========================================================================
-See also:  MONK, CHANTS
+See also: MONK, CHANTS
 
 #
 SKILL_NECROMANCER (General Information)
@@ -13972,9 +13961,7 @@ Necromancer Specializations
 Diabolis, Necrolyte, Reaper
 
 ===========================================================================
-See also: MAGIC-USER, NECROMANCER, "SPELL CIRCLE", "SPELL SYSTEM", CASTER,
-          CAST, "SPELL SLOT", "SPELL FAILURE", MEDITATE, MEMORIZE, SCRIBE,
-          PRACTICE
+See also: NECROMANCER
 
 #
 SKILL_PALADIN (General Information)
@@ -14020,9 +14007,7 @@ Paladin Specializations
 Cavalier, Crusader
                 
 ===========================================================================
-See also: FIGHTER, PALADIN, "SPELL CIRCLE", "SPELL SYSTEM", "SPELL SLOT",
-          "SPELL FAILURE", CAST, CASTER, PRAY, SKILLS, WEAPONS, SKILLS,
-          MEDITATE
+See also: PALADIN, PRAY, MEDITATE, "LAY HANDS"
 
 #
 SKILL_PIPER
@@ -14110,7 +14095,7 @@ Psionicist specializations
 Pyromancer, Enslaver, Psycheporter (not enabled), Telepath (not enabled)
 
 ===========================================================================
-See also: PSIONICIST, WEAPONS, MAGIC, CIRCLE, SKILLS
+See also: PSIONICIST
 
 #
 SKILL_RANGER (General Information)
@@ -14487,7 +14472,7 @@ wink, woops, worship, yawn, yodel, zone
 Typing "commands socials" will generate a complete, up-to-date list of
 social commands.
 ===========================================================================
-See also:  COMMANDS
+See also: COMMANDS
 
 #
 "DURIS INFORMATION" INFORMATION
@@ -14619,7 +14604,7 @@ or deputies and officers (to title themselves).
 &+Wsociety toggle_title_flag
 soc g - toggles your 'no title change' flag
 ===========================================================================
-SEE ALSO:  CONSTRUCT, GUILD, GUILDHALL, "SOCIETY EXAMPLES"
+See also: CONSTRUCT, GUILD, GUILDHALL, "SOCIETY EXAMPLES"
 
 #
 "SOCIETY EXAMPLES"
@@ -14685,7 +14670,7 @@ God: society punish Dumbone     guildhall the guards kill him.*
 Furthermore gods can BAN a mortal from all associations - this happens
 to Dumbone now after the god had his fun having him killed.>
 ===========================================================================
-See also:  SOCIETY, ASSOCIATIONS, GUILDHALL, GUILD
+See also: SOCIETY, ASSOCIATIONS, GUILDHALL, GUILD
 
 #
 "SOLAR FLARE" (Spell)
@@ -14740,7 +14725,7 @@ properties.  Certain songs are only effective on certain instruments.
 51st level:     song of charming (Flute)
                 piper: chant of subversion (Flute)
 ===========================================================================
-See also:  INSTRUMENT, PLAY, BARD, SKILL_BARD, WAIL, PIPER, SKILL_PIPER
+See also: INSTRUMENT, PLAY, BARD, SKILL_BARD, WAIL, PIPER, SKILL_PIPER
 
 #
 "SONG OF CALMING" (Song)
@@ -14774,7 +14759,7 @@ upon those not grouped.
 See also: SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
 
 #
-"SONG OF CHARMING" (Song) [Currently Disabled]
+"SONG OF CHARMING" (Song)
 ===========================================================================
 Area of effect:	Room
 Aggressive:	No
@@ -14879,7 +14864,7 @@ Warning: If your spell expires while you are high in the air or without any
 ground beneath you, the fall can hurt or kill you. This could result in the
 possibility of an irretrievable corpse.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
+See also: SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
 
 #
 "SONG OF FORGETFULNESS" (Song)
@@ -14893,7 +14878,7 @@ Type of song:	Enchantment
 With this song, the bard is able to confuse his/her opponent, forcing a
 temporary loss of memory.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
+See also: SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
 
 #
 "SONG OF HARMING" (Song)
@@ -14909,7 +14894,7 @@ with the singer, the amount dependent on both level and skill. This song
 has also been known to cause other affects, such as blindness. It is not
 possible to kill using this song.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
+See also: SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
 
 #
 "SONG OF HARMONY" (Song)
@@ -14939,7 +14924,7 @@ This song restores the lifeforce of those in the room, including those not
 in the singer's group. The amount it heals is highly dependent on level and
 skill in the song.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD	
+See also: SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
 
 #
 "SONG OF HEROISM" (Song)
@@ -14955,7 +14940,7 @@ the group, increasing their combat abilities. As the bard becomes more
 skillful in this song, it can also cause those in his/her group to move
 much quicker in combat.
 ===========================================================================
-See also:  SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
+See also: SONGS, INSTRUMENT, PLAY, BARD, SKILL_BARD
 
 #
 "SONG OF THE NIGHT" (Song)
@@ -15089,7 +15074,7 @@ Equipment usage: 	Sorcerers have their own classification of item
                         restrictions on what miscellaneous magical items 
                         they can use.      
 ===========================================================================
-See also:  MAGIC-USER, MAGIC, SKILL_SORCERER, "SPELL SLOT", "SPELL CIRCLE",
+See also: MAGIC-USER, MAGIC, SKILL_SORCERER, "SPELL SLOT", "SPELL CIRCLE",
            "SPELL SYSTEM", MEDITATE, SCRIBE, CASTER, CAST
 
 
@@ -15204,7 +15189,7 @@ new one by typing "speak <language>."  Note that you cannot change if you
 are not proficient enough in the target language. "Speak" alone shows a
 list of your language proficiencies, also your currently spoken language.
 ===========================================================================
-See also:  LANGUAGES
+See also: LANGUAGES
 
 #
 SPEC_LIST (General Information)
@@ -15328,7 +15313,7 @@ dependent on level. Each spell occupies one spell slot in the given circle.
 Casters that commune, assimilate or tupor cannot choose what spells will
 fill their specific slots, unlike casters that memorize and pray.
 ===========================================================================
-See also:  "SPELL CIRCLE", "SPELL SYSTEM", MEMORIZE, PRAY, COMMUNE, TUPOR,
+See also: "SPELL CIRCLE", "SPELL SYSTEM", MEMORIZE, PRAY, COMMUNE, TUPOR,
            ASSIMILATE
 
 #
@@ -15400,7 +15385,7 @@ in extreme cases, makes it harder for them to escape from combat.
 ===========================================================================
 
 #
-SPIRITUALIST (General Information) [Specialization]
+SPIRITUALIST (Specialization)
 ===========================================================================
 The Spiritualist has mastered the art of both life and death. He is able to
 heal more effectively than his other Shaman counterparts. Having seen 
@@ -15522,7 +15507,7 @@ The "split" command is used to divvy money equally among grouped players
 and can be used by any member of the group. Remainders go to the person
 splitting.
 ===========================================================================
-See also:  GROUP
+See also: GROUP
 
 #
 SPRINGLEAP (Skill)
@@ -15619,7 +15604,7 @@ in the group, increasing their combat abilities.  As the Piper becomes
 more skillful in this song, it can also cause those in his/her group
 to move much quicker in combat.
 ===========================================================================
-See also:  INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 STATS STATISTICS (General Information)
@@ -15694,7 +15679,7 @@ attacks will 'chip away' at the protection).
 See also: BIOFEEDBACK
 
 #
-"STORM DRUID" (General Information) [Specialization]
+"STORM DRUID" (Specialization)
 ===========================================================================
 The Storm Druid specialization focuses on offensive magic, with spells that
 mainly do damage in battle.
@@ -15877,7 +15862,7 @@ imbued with their name.
 ===========================================================================
 
 #
-"SUMMON HORDE" (Skill) [Innate]
+"SUMMON HORDE" (Innate Skill)
 ===========================================================================
 Syntax:         summon horde
 Aggressive:     on demand
@@ -15889,7 +15874,7 @@ a short amount of time to help the Orc in his battles.
 ===========================================================================
 
 #
-"SUMMON MOUNT" (Skill) [Innate]
+"SUMMON MOUNT" (Innate Skill)
 ===========================================================================
 Syntax:         summon mount
 
@@ -15964,7 +15949,7 @@ towards a new opponent.
 See also: KILL
 
 #
-SWORDSMAN (Information) [Specialization]
+SWORDSMAN (Specialization)
 ===========================================================================
 Master of the offense, the Swordsman may sometimes strike critical hits on 
 their attacks and have gained the "Sweeping Thrust" ability. They 
@@ -16075,7 +16060,7 @@ Type of song:	Enchantment
 "Terrorizing Rhythms" produces fear in the opponent, causing them to feel
 terrified and sometimes results in their fleeing the room.
 ===========================================================================
-See also:  INSTRUMENT, WAIL, PIPER, SKILL_PIPER
+See also: INSTRUMENT, WAIL, PIPER, SKILL_PIPER
 
 #
 TESTCOLOR
@@ -16316,7 +16301,7 @@ are outside and while it is raining (or worse), as the spell causes a
 massive bolt of lightning to hurl itself from the rain clouds overhead,
 striking the intended victim and causing considerable damage.
 ===========================================================================
-See also:  "CONTROL WEATHER", WEATHER
+See also: "CONTROL WEATHER", WEATHER
 
 #
 THROWPOTION (Skill)
@@ -16669,7 +16654,7 @@ cut down on spam.
 See also: TOGGLE
 
 #
-TOGGLE_WIMPY (Command) [Currently Disabled]
+TOGGLE_WIMPY (Disabled Command)
 ===========================================================================
 Syntax:         toggle wimpy <number of hitpoints>
 
@@ -16887,7 +16872,7 @@ is NOT easy.
             and will take more damage from them.
 
 ===========================================================================
-See also:  RACES, RACEWARS, INNATE, INFRAVISION, BODYSLAM
+See also: RACES, RACEWARS, INNATE, INFRAVISION, BODYSLAM
 
 #
 TROPHY (General Information/Command)
@@ -17100,7 +17085,7 @@ Syntax:  value <item>
 This will tell you what a shopkeeper will pay you for an item. Keep in mind 
 that this may not always accurately reflect that item's true value.
 ===========================================================================
-See also:  SHOPS, BUY SELL, LIST
+See also: SHOPS, BUY SELL, LIST
 
 #
 VAMPIRE
@@ -17121,7 +17106,7 @@ Statistics: 	  Vampires are extremely strong creatures, and they are
 		  true weakness is his appearance...ugly as sin.                 
 Innate Abilities: ultravision, vampiric touch, bite
 ===========================================================================
-See also:  WARLOCK, SKILL_WARLOCK
+See also: WARLOCK, SKILL_WARLOCK
 
 #
 "VAMPIRIC TOUCH" (Spell/Innate Ability)
@@ -17346,7 +17331,7 @@ To create magical effects, the piper must hold the proper instrument, then
 "wail" the appropriate song. A magical song will not work without the 
 proper instrumental accompaniment. To end a song simply type "play."
 ===========================================================================
-See also:  INSTRUMENT, SONG, PLAY
+See also: INSTRUMENT, SONG, PLAY
 
 #
 WAKE REST SIT STAND KNEEL RECLINE ALERT
@@ -17518,8 +17503,7 @@ Equipment usage:        Warlock fall under the Priest classification
                         any type of armor, but are mildly restricted 
                         in the use of miscellaneous magical items.
 ===========================================================================
-See also: SKILL_WARLOCK, VAMPIRE, LICH, SHADE, PRIEST, CAST, CASTER,
-          ASSIMILATE, "SPELL SLOTS", "SPELL SYSTEM", "SPELL CIRCLE"
+See also: SKILL_WARLOCK, ASSIMILATE
 
 #
 WARRIOR (Sub-Class of: Fighter)
@@ -17562,7 +17546,7 @@ to the caster if  someone is trying to destroy the wall.
 ===========================================================================
 
 #
-"WATER MAGUS" (General Information) [Specialization]
+"WATER MAGUS" (Specialization)
 ===========================================================================
 The Water Magus concentrates on utilizing the healing powers of the element
 of water. His affinity with this element allows him to breathe underwater 
@@ -17643,10 +17627,10 @@ See also: RELOCATE
 ELAPHIDIST
 ===========================================================================
 A follower of this path of training focuses on emulating the movement of 
-the snake in attempt to enhance speed, mental focus and precision. They will 
-strike at neural knots crippling their opponents or lash out in a flurry of 
-blows. Their extreme control will also enable them to avoid larger magical 
-attacks by twisting out of the way.
+the snake in attempt to enhance speed, mental focus and precision. They
+will strike at neural knots crippling their opponents or lash out in a 
+flurry of blows. Their extreme control will also enable them to avoid 
+larger magical attacks by twisting out of the way.
 
 Innates
 ---------------------------------------------------------------------------
@@ -17658,7 +17642,7 @@ Skills
 Level 31:	Flurry of blows
 Level 36: 	Enhanced heroism
 ===========================================================================
-See also: MONK, EVASION, PRESSURE POINT, FLURRY OF BLOWS, HEROISM	
+See also: MONK, EVASION, "PRESSURE POINT", "FLURRY OF BLOWS", HEROISM
 
 #
 WEAPONS WEAPONRY (General Information)
@@ -17695,7 +17679,7 @@ same time, and you want to exchange them, use the following syntax:
 The last item you remove or pick up always appears at the top of your
 inventory pile.
 ===========================================================================
-See also:  REMOVE, WIELD, EQUIPMENT, INVENTORY
+See also: REMOVE, WIELD, EQUIPMENT, INVENTORY
 
 #
 WEATHER
@@ -17716,13 +17700,12 @@ Type of spell:  Generic
 This spell creates a large, sticky web over an exit, entangling those
 who pass through it with a chance of holding the victims in place.
 ===========================================================================
-See also: "WALL OF STONE", "WALL OF ICE", "WALL OF FLAMES",
-          "WALL OF FORCE", "LIGHTNING CURTAIN", "MINOR PARALYSIS"
+See also: "WALL OF STONE", "WALL OF ICE", "WALL OF FLAMES", "WALL OF FORCE", "LIGHTNING CURTAIN", "MINOR PARALYSIS"
 
 #
 WEBSITE (General Information)
 ===========================================================================
-The Duris Website is at: www.durismud.org
+The Duris Website is at: http://duris.game-host.org/
 ===========================================================================
 
 #
@@ -17778,7 +17761,7 @@ that the skill "double attack" (allowing you to hit twice) can only be used
 with your primary weapon. You cannot hold anything else if wielding two 
 weapons (unless you are a thri-kreen).
 ===========================================================================
-See also:  WEAR, REMOVE, EQUIPMENT, INVENTORY, "DUAL WIELD"
+See also: WEAR, REMOVE, EQUIPMENT, INVENTORY, "DUAL WIELD"
 
 #
 WIGHT (Information)
@@ -17796,7 +17779,7 @@ Innate abilities: Ultravision, Stone skin, Doorbash, Magical resistances.
 See also: WARRIOR, MERCENARY
 
 #
-WILDMAGE (Specialization)
+WILDMAGE 
 ===========================================================================
 The chaos mage will draw power from beyond reality, from the realm of Chaos.
 This realm has immense power reserves but it is very hard to control. This 
@@ -17823,7 +17806,7 @@ strike others in the room, whether they are friend or foe.
 ====================================================================== ====
 
 #
-WIMPY (General Information) [Currently Disabled]
+WIMPY (Disabled)
 ===========================================================================
 Syntax:         toggle wimpy <number_of_hit_points>
 
@@ -17868,7 +17851,7 @@ group while tuporing.
 See also: GSAY, TUPOR
 
 #
-WINDTALKER (Specialization)
+WINDTALKER 
 ===========================================================================
 The Windtalker focuses on the defensive elements of the storms, with the 
 ability to heal themselves more effectively and to distribute the damage 
@@ -17923,7 +17906,7 @@ victim and harder for the victim to flee.
 ===========================================================================
 
 #
-WIZARD (Specialization)
+WIZARD 
 ===========================================================================
 An advanced spellcaster in the ways of the Sorcerer, the Wizard can 
 manipulate the essences of magics as they are tossed through the very air.
@@ -18070,7 +18053,7 @@ Typing /h during the balance of the message gives you a menu of options.
 See also: READ BOARD DELETE
 
 #
-ZEALOT (General Information) [Specialization]
+ZEALOT (Specialization)
 ===========================================================================
 The Zealot Cleric focuses on damage, with the Fighter skill "Offense" and 
 the ability to call upon the God of Tempus to infuse them with power. Their
