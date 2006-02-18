@@ -65,7 +65,7 @@
 &+RDragonnia                      &+L*   &+R 51+     &+w-&+L=&+C  Ilie
 &+gDragonsfall Forest             &+L*  &+g1-50      &+w-&+L=&+C  Unknown
 &+rDreggan Wood                   &+L* &+r30-50      &+w-&+L=&+C  Cyric
-&+YDrifting Realm&n               &+L* &+Y40-50      &+w-&+L=&+C  Sizan
+&+YDrifting Realm                 &+L* &+Y40-50      &+w-&+L=&+C  Sizan
 &+rDrustl's Yerdonia Enslaved     &+L* &+r30-50      &+w-&+L=&+C  Beretorn
 &+gDu'Maathe Castle               &+L* &+g 1-50      &+w-&+L=&+C  Cy
 &+gThe Dusty Highway              &+L* &+g 1-50      &+w-&+L=&+C  Unknown
@@ -198,7 +198,7 @@
 &+YThe Temple of Lizizania        &+L* &+Y20-40      &+w-&+L=&+C  Ssseri
 &+rThe Temple of the Sun          &+L* &+r40-50      &+w-&+L=&+C  Gnosha
 &+rTemple of the Earth            &+L* &+r40-50      &+w-&+L=&+C  Teruaf
-&+LTezcatlipoca                   &+L* &+R45-50+     &+w-&+L=&+C  Beretorn
+&+RTezcatlipoca                   &+L* &+R45-50+     &+w-&+L=&+C  Beretorn
 &+rTikitzopl                      &+L* &+r30-50      &+w-&+L=&+C  Orthaz
 &+gThe Town of Miaeril            &+L*  &+g1-40      &+w-&+L=&+C  Sizan
 &+rThe Town of Sevenoaks          &+L* &+r45-50      &+w-&+L=&+C  Melkivar
@@ -218,6 +218,7 @@
 &+YThe Undead Village             &+L*  &+Y1-10      &+w-&+L=&+C  Unknown
 &+rThe Underground Lava Caves     &+L* &+r30-50      &+w-&+L=&+C  Oraks
 &+gThe Undersea                   &+L*  &+g1-50      &+w-&+L=&+C  Unknown
+&+YThe Underworld                 &+L* &+Y20-50      &+w-&+L=&+C  Clavados
 &+YTower of High Sorcery          &+L* &+Y30-50      &+w-&+L=&+C  Prodigy/Miax/Beretorn
 &+gTwilight Tower of Illusion     &+L*  &+g1-50      &+w-&+L=&+C  Beretorn
 &+YUndermountain                  &+L* &+Y10-40      &+w-&+L=&+C  Corellon
@@ -281,7 +282,8 @@
 
       &+WDuris Code: &+BTavril, Foo, Fafhrd, Io, Stravag, Primus, Cython, Timken,
                      &+BAlyx, Krov, Tasfalen, Ilienze
-      &+WDuris Areas: &+CTripod, Orcus, Cython, Ilienze, Clavados, Jera, Paradox, Sniktiorg
+      &+WDuris Areas: &+CTripod, Orcus, Cython, Ilienze, Clavados, Jera, 
+                      &+CMelkivar, Paradox, Sniktiorg
       &+WHelp Files: &+COsrell, Lowkie
       &+WDuris web site: &+CParadox 
 
@@ -293,8 +295,8 @@
 
       &+rDuris Currently Run By: &+cTharkun, Railand, Clavados
 
-      &+rDuris Coders: &+cTharkun, Clavados, Kvark, Zion, Sev, Phirae
-      &+rDuris Areas &+rGroup: &+cClavados, Railand, Beretorn, Fotenak, Melkivar, Astansus
+      &+rDuris Coders: &+cTharkun, Clavados, Kvark, Sev, Thurd
+      &+rDuris Areas &+rGroup: &+cClavados, Railand, Beretorn, Fotenak, Phirae, Astansus, Zion
       &+rCaretakers of Custom DE Editor: &+cTharkun
       &+rDuris Server and Machine: &+cKvark (&+Wthank you!&+c)
       &+rDuris Site provided by: &+cKvark 
