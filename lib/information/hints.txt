@@ -45,7 +45,7 @@ Some commands can be abbreviated.  Try using shortened commands like 'exp' to se
 Wondering how far you are until you gain your next level? Use the 'experience' command.
 Different equipment will give you different bonuses. After wearing a new piece of equipment, type "attribute" to see if there are any differences.
 Things in your inventory weighing you down?  Wearing or holding your containers may ease the load.
-Mobs starting to get boring when you kill them? The more often you kill the same mob, the less experience you will gain. Type "trophy" to look at which mobs you have recently killed.
+Mobs starting to get boring when you kill them? The more often you kill the same mob, the less experience you will gain. Type "trophy" to look at which areas you have spent time in, and how much you can still stand to learn from them.
 Type "forget (spell name)" to free up a spell slot.  Alternately, you can "forget all" to free all your spell slots.
 Make sure to use your class's skills to do more damage or to escape from harm.
 Beware of guards!  Some guards will come to the aid of your victims!
