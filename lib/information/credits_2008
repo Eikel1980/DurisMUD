@@ -37,6 +37,7 @@
 &+gThe Broken Blade Tavern           &+L* &+g10-50      &+w-&+L=&+C  Unknown
 &+rThe Bronze Citadel                &+L* &+r45-50      &+w-&+L=&+C  Mabort
 &+gBugentolen                        &+L*  &+g1-20      &+w-&+L=&+C  Clavados
+&+RCastle Ravenloft                  &+L*    &+R51+     &+w-&+L=&+C  Fotenak
 &+rCastle Selanis                    &+L* &+r40-50      &+w-&+L=&+C  Clavados
 &+gCaves of Mt. Skelenak, upper      &+L* &+g 1-10      &+w-&+L=&+C  Miax
 &+gCaves of Mt. Skelenak, lover      &+L* &+g10-20      &+w-&+L=&+C  Miax
@@ -44,7 +45,7 @@
 &+rCeothia                           &+L* &+r45-50      &+w-&+L=&+C  Cy
 &+rCeothia - the past                &+L* &+r45-50      &+w-&+L=&+C  Cy
 &+rCeothia - the future              &+L* &+r45-50      &+w-&+L=&+C  Cy
-&+RThe Charcoal Palace               &+L*     &+R51+    &+w-&+L=&+C  Unknown
+&+RThe Charcoal Palace               &+L*     &+R51+    &+w-&+L=&+C  Unknown/Jexni
 &+gCity of Breale                    &+L* &+g 5-50      &+w-&+L=&+C  Unknown
 &+RCity of Brass (Efreeti)           &+L*     &+R51+    &+w-&+L=&+C  Cython
 &+YCity of BogenTok                  &+L* &+Y10-50      &+w-&+L=&+C  Clavados
@@ -189,6 +190,8 @@
 &+YShadowclave                       &+L* &+Y20-40      &+w-&+L=&+C  Clavados
 &+YShafts of the Underdark           &+L* &+Y25-50      &+w-&+L=&+C  Ilienze
 &+RShadamehr Keep                    &+L*    &+R51+     &+w-&+L=&+C  Cyric
+&+YThe Shaughin Settlement           &+L* &+Y25-50      &+w-&+L=&+C  Unknown/Kharne
+&+rThe Shaughin Hunting Grounds      &+L* &+r45-50      &+w-&+L=&+C  Unknown/Kharne
 &+gShipyards                         &+L* &+g 1-50      &+w-&+L=&+C  Melkivar
 &+RShrine of the Orrak               &+L*    &+R51+     &+w-&+L=&+C  Unknown
 &+RSkrentherlog's Temple             &+L*    &+R51+     &+w-&+L=&+C  Xueqin
