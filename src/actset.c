@@ -1,0 +1,1554 @@
+
+/*
+ *************************************************************************
+ * File: actset.c                                           Part of Duris
+ * Usage: low level data fiddling routines
+ * Copyright  1991 - Andrew Choi (I think, it has statics from hell. JAB)
+ * Copyright 1994 - 2008 - Duris Systems Ltd.
+ *************************************************************************
+ */
+
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#include "comm.h"
+#include "db.h"
+#include "events.h"
+#include "interp.h"
+#include "prototypes.h"
+#include "spells.h"
+#include "structs.h"
+#include "utils.h"
+#include "defines.h"
+#include "sql.h"
+#include "ships/ships.h"
+
+/* external variables */
+
+extern P_desc descriptor_list;
+extern P_room world;
+extern char *language_names[];
+extern const flagDef action_bits[];
+extern const flagDef action2_bits[];
+extern const flagDef affected1_bits[];
+extern const flagDef affected2_bits[];
+extern const flagDef affected3_bits[];
+extern const flagDef affected4_bits[];
+extern const flagDef affected5_bits[];
+extern const flagDef aggro_bits[];
+extern const flagDef aggro2_bits[];
+extern const char *apply_types[];
+extern const char *connected_types[];
+extern const char *dirs[];
+extern const char *exit_bits[];
+extern const flagDef extra_bits[];
+extern const flagDef extra2_bits[];
+extern const flagDef anti_bits[];
+extern const flagDef anti2_bits[];
+extern const char *item_material[];
+extern const char *item_types[];
+extern const char *player_bits[];
+extern const char *player2_bits[];
+extern const char *player_law_flags[];
+extern const char *position_types[];
+extern const flagDef room_bits[];
+extern const char *sector_types[];
+extern const Skill skills[];
+extern const char *spells[];
+extern const flagDef wear_bits[];
+extern const struct race_names race_names_table[];
+extern const struct class_names class_names_table[];
+extern const char *size_types[];
+extern int top_of_world;
+extern const int rev_dir[];
+extern int top_of_zone_table;
+extern struct zone_data *zone_table;
+
+/* Macros */
+#define SETBIT_ROOM             0
+#define SETBIT_CHAR             1
+#define SETBIT_OBJ              2
+#define SETBIT_DIR              3
+#define SETBIT_AFF              4
+#define SETBIT_ZONE             5
+#define SETBIT_SHIP             6
+#define ac_shintCopy            ac_sh_intCopy
+#define ARRAY_SIZE(A)           (sizeof(A)/sizeof(*(A)))
+#define SAME_STRING(A, B)       ac_strcasecmp((A), (B))
+#define LOWER_CASE(C)           (isupper(C) ? tolower(C) : (C))
+#define OFFSET_OF(Type, Field)  ((int) (((char *) (&(((Type) NULL)->Field))) - ((char *) NULL)))
+
+/* Types */
+struct setBitTable
+{
+  const char *sb_flag;          /* * Name of "flag" */
+  int      sb_offset;           /* * Offset from beginning of struct */
+  char   **sb_subtable;         /* * Subtable for options */
+
+  void     (*sb_func) (void *, int, char *, int, int);
+  int      entry_size;
+  int      entry_offset;
+};
+
+typedef struct setBitTable SetBitTable;
+
+/* Private Interface */
+
+static int setbit_parse(char *arg, int *, char *, char *, char *, int *);
+
+/* Parse command into arguments */
+/* Basically same as "one_argument", except this one allows quoting with
+ * single quote. */
+
+char    *setbit_parseArgument(char *arg, char *val);
+
+/* Function for branching into "room", "char", or "object" */
+static void setbit_room(P_char, char *, char *, char *, int);
+static void setbit_char(P_char, char *, char *, char *, int);
+static void setbit_obj(P_char, char *, char *, char *, int);
+static void setbit_dir(P_char, char *, char *, char *, int);
+static void setbit_aff(P_char, char *, char *, char *, int);
+static void setbit_zone(P_char ch, char *name, char *flag, char *val, int);
+static void setbit_ship(P_char, char *, char *, char *, int);
+
+/* Parse table routine */
+static void setbit_parseTable(P_char, void *, SetBitTable *, int, char *,
+                              char *, int);
+static void setbit_syntax(P_char ch);
+
+/* Syntax error */
+static void setbit_printOutTable(P_char ch, SetBitTable *, int size);
+static void setbit_printOutSubTable(P_char ch, char **subtable,
+                                    int entry_size);
+static int ac_strcasecmp(const char *s1, const char *s2);
+
+/* String insensitive case comparison */
+/* Copy functions */
+
+/*
+ * ** Copy functions are of the following formats: ** ** func(void *where,
+ * -- Where to copy into **   int  offset,    -- Offset from beginning of
+ * "where" in bytes **   char *value,    -- Value specified by command **
+ *  int  bit,       -- Bit number or atoi(value) **   int  on_off)    --
+ * Turn bit on/off
+ */
+
+static void ac_ageCopy(void *, int, char *, int, int);
+static void ac_bitCopy(void *, int, char *, int, int);
+static void ac_byteCopy(void *, int, char *, int, int);
+static void ac_hitmanaCopy(void *, int, char *, int, int);
+static void ac_intCopy(void *, int, char *, int, int);
+static void ac_longCopy(void *, int, char *, int, int);
+static void ac_objaffCopy(void *, int, char *, int, int);
+static void ac_positionCopy(void *, int, char *, int, int);
+static void ac_savthrCopy(void *, int, char *, int, int);
+static void ac_sbyteCopy(void *, int, char *, int, int);
+static void ac_sh_intCopy(void *, int, char *, int, int);
+static void ac_shortCopy(void *, int, char *, int, int);
+static void ac_skillCopy(void *, int, char *, int, int);
+static void ac_tongueCopy(void *, int, char *, int, int);
+static void ac_ubyteCopy(void *, int, char *, int, int);
+static void ac_idx2flagCopy(void *, int, char *, int, int);
+
+/*
+ * Wizard's command:
+ * setbit "room" room-number flag-type value [ "on | off" ]
+ * setbit "char" name flag-type value [ "on | off"]
+ * setbit "obj"  name flag-type value [ "on | off"]
+ * setbit "dir"  room-number flag-type value [ "on | off" ]
+ * setbit "aff"  name "AFFECT NUMBER" flag-type value [ "on | off" ]
+ */
+
+void do_setbit(P_char ch, char *arg, int cmd)
+{
+  int      type, on_off;
+  char     name[MAX_INPUT_LENGTH];
+  char     flag[MAX_INPUT_LENGTH];
+  char     value[MAX_INPUT_LENGTH];
+  P_char   target;
+
+  if (IS_NPC(ch))
+  {
+    return;
+  }
+  if (setbit_parse(arg, &type, name, flag, value, &on_off) == -1)
+  {
+    setbit_syntax(ch);
+    return;
+  }
+
+  if ( GET_LEVEL(ch) < IMMORTAL || cmd != CMD_SETHOME)
+  {
+    wizlog(GET_LEVEL(ch), "%s: setbit %s", GET_NAME(ch), arg);
+    logit(LOG_WIZ, "%s: setbit %s", GET_NAME(ch), arg);
+    sql_log(ch, WIZLOG, "setbit %s", arg);
+  }
+  
+  switch (type)
+  {
+
+  case SETBIT_ROOM:
+    setbit_room(ch, name, flag, value, on_off);
+    return;
+
+  case SETBIT_CHAR:
+    if (!god_check(GET_NAME(ch)) && god_check(name))
+    {
+      act
+        ("One hella pissed god says 'Hey buddy, that's not very polite, trying to setbit my ass.'",
+         FALSE, ch, 0, 0, TO_ROOM);
+      act
+        ("One hella pissed god says 'Hey buddy, that's not very polite, trying to setbit my ass.'",
+         FALSE, ch, 0, 0, TO_CHAR);
+      return;
+    }
+    setbit_char(ch, name, flag, value, on_off);
+    break;
+
+  case SETBIT_OBJ:
+    setbit_obj(ch, name, flag, value, on_off);
+    break;
+
+  case SETBIT_DIR:
+    setbit_dir(ch, name, flag, value, on_off);
+    break;
+
+  case SETBIT_AFF:
+    setbit_aff(ch, name, flag, value, on_off);
+    break;
+
+  case SETBIT_ZONE:
+    setbit_zone(ch, name, flag, value, on_off);
+    break;
+    
+  case SETBIT_SHIP:
+    setbit_ship(ch, name, flag, value, on_off);
+    break;
+
+  default:
+    logit(LOG_DEBUG, "SETBIT:  Unknown type: %d (%s %d)", type, __FILE__,
+          __LINE__);
+    break;
+  }
+}
+
+/*
+ * Private Interface
+ */
+
+/*
+ * ** Parses command into separate fields.
+ */
+static int setbit_parse(char *arg, int *type, char *name, char *flag,
+                        char *val, int *on_off)
+{
+  char     type_str[MAX_INPUT_LENGTH];
+  char     on_off_str[MAX_INPUT_LENGTH];
+
+  /* Separate into fields */
+
+  if ((arg = setbit_parseArgument(arg, type_str)) == NULL)
+    return -1;
+  if ((arg = setbit_parseArgument(arg, name)) == NULL)
+    return -1;
+  if ((arg = setbit_parseArgument(arg, flag)) == NULL)
+    return -1;
+  if ((arg = setbit_parseArgument(arg, val)) == NULL)
+    return -1;
+
+  setbit_parseArgument(arg, on_off_str);
+
+  /* String conversion to integer */
+
+  switch (*type_str)
+  {
+
+  case 'r':
+  case 'R':
+    *type = SETBIT_ROOM;
+    break;
+
+  case 'c':
+  case 'C':
+  case 'm':
+  case 'M':
+    *type = SETBIT_CHAR;
+    break;
+
+  case 'o':
+  case 'O':
+  case 'i':
+  case 'I':
+    *type = SETBIT_OBJ;
+    break;
+
+  case 'd':
+  case 'D':
+    *type = SETBIT_DIR;
+    break;
+
+  case 'a':
+  case 'A':
+    *type = SETBIT_AFF;
+    break;
+
+  case 'z':
+  case 'Z':
+    *type = SETBIT_ZONE;
+    break;
+    
+  case 's':
+  case 'S':
+    *type = SETBIT_SHIP;
+    break;
+
+  default:
+    return -1;
+  }
+
+  /*
+   * On/Off
+   */
+
+  if (atoi(on_off_str) == 0)
+  {
+    *on_off = 0;
+  }
+  else
+  {
+    *on_off = atoi(on_off_str);
+  }
+
+  /*
+   * Return if OK
+   */
+
+  return 0;
+}
+
+/*
+ * ** For struct room_data: ** ** We allow the following fields to be
+ * modified: ** ** 1) zone ** 2) sector type ** 3) room flags ** 4) trap
+ * level
+ */
+static void setbit_room(P_char ch, char *name, char *flag, char *val,
+                        int on_off)
+{
+
+  /* Internal Macros */
+#undef  OFFSET
+#define OFFSET(Field)   OFFSET_OF(P_room, Field)
+
+  /* Table */
+  SetBitTable table[] = {
+    {"zone", OFFSET(zone), NULL, ac_shintCopy},
+    {"sect", OFFSET(sector_type), (char **) sector_types, ac_byteCopy,
+     sizeof(char *)},
+    {"flag", OFFSET(room_flags), (char **) room_bits, ac_bitCopy,
+     sizeof(flagDef)}
+  };
+
+  /* Local Variables */
+  int      room_number;
+
+  /* Executable Section */
+  if( !strcmp(name, "here") )
+  {
+    room_number = ch->in_room;	
+  }
+  else
+  {
+    room_number = real_room(atoi(name));
+  }
+
+  if (room_number < 0 || room_number > top_of_world)
+  {
+    return;
+  }
+  setbit_parseTable(ch, (void *) (world + room_number), table,
+                    ARRAY_SIZE(table), flag, val, on_off);
+
+  room_light(room_number, REAL);
+}
+
+/*
+ * ** For struct room_data: ** ** We allow the following fields to be
+ * modified: ** ** 1) zone ** 2) sector type ** 3) room flags ** 4) trap
+ * level
+ */
+static void setbit_zone(P_char ch, char *name, char *flag, char *val,
+                        int on_off)
+{
+  if( GET_LEVEL(ch) < FORGER )
+  {
+    return;    
+  }
+    
+  /* Internal Macros */
+#undef  OFFSET
+#define OFFSET(Field)   OFFSET_OF(struct zone_data*, Field)
+  
+  /* Table */
+  SetBitTable table[] = {
+    {"difficulty", OFFSET(difficulty), NULL, ac_shintCopy}
+  };
+  
+  /* Local Variables */
+  int      zone_id;
+  
+  /* Executable Section */
+  int zone_number = atoi(name);
+  zone_id = real_zone(zone_number);
+  
+  if (zone_id < 0)
+  {
+    send_to_char("Invalid zone ID\n", ch);
+    return;
+  }
+  
+  if (!strcmp(flag, "difficulty") && ( atoi(val) < 0 || atoi(val) > 10) )
+  {
+    send_to_char("Difficulty must be from 1 to 10\n", ch);
+    return;    
+  }
+  
+  setbit_parseTable(ch, (void *) (zone_table + zone_id), table,
+                    ARRAY_SIZE(table), flag, val, on_off);
+}
+
+static void setbit_char(P_char ch, char *name, char *flag, char *val,
+                        int on_off)
+{
+  /* Internal Macros */
+#undef  OFFSET
+#define OFFSET(Field)   OFFSET_OF(P_char, Field)
+#define PLOFFSET(Field) OFFSET(player . Field)
+#define ABOFFSET(Field) OFFSET(base_stats . Field)
+#define TAOFFSET(Field) OFFSET(curr_stats . Field)
+#define POOFFSET(Field) OFFSET(points . Field)
+#define SPOFFSET(Field) OFFSET(specials . Field)
+#define PCOFFSET(Field) OFFSET_OF(struct pc_only_data *, Field)
+#define NPOFFSET(Field) OFFSET_OF(struct npc_only_data *, Field)
+
+  SetBitTable table[] = {
+    /* char_player_data */
+    {"sex", PLOFFSET(sex), NULL, ac_ubyteCopy},
+    {"race", PLOFFSET(race), (char **) race_names_table, ac_ubyteCopy,
+     sizeof(struct race_names)},
+    {"racewar", PLOFFSET(racewar), NULL, ac_ubyteCopy},
+    {"level", PLOFFSET(level), NULL, ac_ubyteCopy},
+    {"spec", PLOFFSET(spec), NULL, ac_ubyteCopy},
+    {"home", PLOFFSET(hometown), NULL, ac_intCopy},
+    {"orighome", PLOFFSET(birthplace), NULL, ac_intCopy},
+    {"origbp", PLOFFSET(orig_birthplace), NULL, ac_intCopy},
+    {"age", 0, NULL, ac_ageCopy},
+    {"weight", PLOFFSET(weight), NULL, ac_shortCopy},
+    {"height", PLOFFSET(height), NULL, ac_shortCopy},
+    {"size", PLOFFSET(size), (char **) size_types, ac_ubyteCopy,
+     sizeof(char *)},
+    /* stat_data */
+    {"str", ABOFFSET(Str), NULL, ac_shortCopy},
+    {"dex", ABOFFSET(Dex), NULL, ac_shortCopy},
+    {"agi", ABOFFSET(Agi), NULL, ac_shortCopy},
+    {"con", ABOFFSET(Con), NULL, ac_shortCopy},
+    {"pow", ABOFFSET(Pow), NULL, ac_shortCopy},
+    {"int", ABOFFSET(Int), NULL, ac_shortCopy},
+    {"wis", ABOFFSET(Wis), NULL, ac_shortCopy},
+    {"cha", ABOFFSET(Cha), NULL, ac_shortCopy},
+    {"karma", ABOFFSET(Karma), NULL, ac_shortCopy},
+    {"luck", ABOFFSET(Luck), NULL, ac_shortCopy},
+    /* stat_data (temporary) */
+    {"tstr", TAOFFSET(Str), NULL, ac_shortCopy},
+    {"tdex", TAOFFSET(Dex), NULL, ac_shortCopy},
+    {"tagi", TAOFFSET(Agi), NULL, ac_shortCopy},
+    {"tcon", TAOFFSET(Con), NULL, ac_shortCopy},
+    {"tpow", TAOFFSET(Pow), NULL, ac_shortCopy},
+    {"tint", TAOFFSET(Int), NULL, ac_shortCopy},
+    {"twis", TAOFFSET(Wis), NULL, ac_shortCopy},
+    {"tcha", TAOFFSET(Cha), NULL, ac_shortCopy},
+    {"tkarma", TAOFFSET(Karma), NULL, ac_shortCopy},
+    {"tluck", TAOFFSET(Luck), NULL, ac_shortCopy},
+    /* char_point_data */
+    {"mana", POOFFSET(mana), NULL, ac_shintCopy},
+    {"mxmana", POOFFSET(base_mana), NULL, ac_hitmanaCopy},
+    {"hit", POOFFSET(hit), NULL, ac_shintCopy},
+    {"basehit", POOFFSET(base_hit), NULL, ac_intCopy},
+    {"vit", POOFFSET(vitality), NULL, ac_shintCopy},
+    {"mxvit", POOFFSET(base_vitality), NULL, ac_shintCopy},
+    {"ac", POOFFSET(base_armor), NULL, ac_shintCopy},
+    {"copper", POOFFSET(cash[0]), NULL, ac_intCopy},
+    {"silver", POOFFSET(cash[1]), NULL, ac_intCopy},
+    {"gold", POOFFSET(cash[2]), NULL, ac_intCopy},
+    {"platinum", POOFFSET(cash[3]), NULL, ac_intCopy},
+    {"exp", POOFFSET(curr_exp), NULL, ac_longCopy},
+    {"hitrol", POOFFSET(base_hitroll), NULL, ac_sbyteCopy},
+    {"damrol", POOFFSET(base_damroll), NULL, ac_sbyteCopy},
+    {"diceno", POOFFSET(damnodice), NULL, ac_sbyteCopy},
+    {"dicesz", POOFFSET(damsizedice), NULL, ac_sbyteCopy},
+    /* char_special_data */
+    {"pos", SPOFFSET(position), (char **) position_types, ac_positionCopy,
+     sizeof(char *)},
+    {"pcact", SPOFFSET(act), (char **) player_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"pcact2", SPOFFSET(act2), (char **) player2_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"carryw", SPOFFSET(carry_weight), NULL, ac_intCopy},
+    {"carryn", SPOFFSET(carry_items), NULL, ac_shortCopy},
+    {"timer", SPOFFSET(timer), NULL, ac_shortCopy},
+    {"wasin", SPOFFSET(was_in_room), NULL, ac_intCopy},
+    {"savthr", 0, NULL, ac_savthrCopy},
+    {"drunk", SPOFFSET(conditions[0]), NULL, ac_sbyteCopy},
+    {"hunger", SPOFFSET(conditions[1]), NULL, ac_sbyteCopy},
+    {"thirst", SPOFFSET(conditions[2]), NULL, ac_sbyteCopy},
+    {"zcord", SPOFFSET(z_cord), NULL, ac_sbyteCopy},
+    {"align", SPOFFSET(alignment), NULL, ac_shintCopy},
+    {"ascnum", SPOFFSET(guild), NULL, ac_shintCopy},
+
+    {"aff", SPOFFSET(affected_by), (char **) affected1_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff2", SPOFFSET(affected_by2), (char **) affected2_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff3", SPOFFSET(affected_by3), (char **) affected3_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff4", SPOFFSET(affected_by4), (char **) affected4_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff5", SPOFFSET(affected_by5), (char **) affected5_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"class", PLOFFSET(m_class), (char **) class_names_table, ac_idx2flagCopy,
+     sizeof(struct class_names)},
+    {"secondary", PLOFFSET(secondary_class), (char **) class_names_table, ac_idx2flagCopy,
+     sizeof(struct class_names)},
+    {"multiclass", PLOFFSET(m_class), (char **) &(class_names_table[1]),
+     ac_bitCopy, sizeof(struct class_names)},
+    {"npcact", SPOFFSET(act), (char **) action_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"npcact2", SPOFFSET(act2), (char **) action2_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aggro", NPOFFSET(aggro_flags), (char **) aggro_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aggro2", NPOFFSET(aggro2_flags), (char **) aggro2_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    /* char_skill_data */
+    {"skill", OFFSET_OF(struct char_skill_data *, learned), (char **) spells,
+     ac_skillCopy, sizeof(char *)}
+    ,
+    {"taught", OFFSET_OF(struct char_skill_data *, taught), (char **) spells,
+     ac_skillCopy, sizeof(char *)}
+    ,
+    /* only.npc */
+    {"ldir", NPOFFSET(last_direction), (char **) dirs, ac_sbyteCopy,
+     sizeof(char *)},
+    {"attack", NPOFFSET(attack_type), NULL, ac_sbyteCopy},
+    {"val0", NPOFFSET(value[0]), NULL, ac_intCopy},
+    {"val1", NPOFFSET(value[1]), NULL, ac_intCopy},
+    {"val2", NPOFFSET(value[2]), NULL, ac_intCopy},
+    {"val3", NPOFFSET(value[3]), NULL, ac_intCopy},
+    {"val4", NPOFFSET(value[4]), NULL, ac_intCopy},
+    {"val5", NPOFFSET(value[5]), NULL, ac_intCopy},
+    {"val6", NPOFFSET(value[6]), NULL, ac_intCopy},
+    {"val7", NPOFFSET(value[7]), NULL, ac_intCopy},
+    /* only.pc */
+    {"frags", PCOFFSET(frags), NULL, ac_longCopy},
+    {"epics", PCOFFSET(epics), NULL, ac_longCopy},
+    {"epic_skill_points", PCOFFSET(epic_skill_points), NULL, ac_longCopy},
+    {"prestige", PCOFFSET(prestige), NULL, ac_shintCopy},
+    {"time_left_guild", PCOFFSET(time_left_guild), NULL, ac_longCopy},
+    {"nb_left_guild", PCOFFSET(nb_left_guild), NULL, ac_sbyteCopy},
+    {"language", 0, (char **) language_names, ac_tongueCopy, sizeof(char *)},
+    {"echo", PCOFFSET(echo_toggle), NULL, ac_ubyteCopy},
+    {"prompt", PCOFFSET(prompt), NULL, ac_shortCopy},
+    {"screensize", PCOFFSET(screen_length), NULL, ac_ubyteCopy},
+    {"winvis", PCOFFSET(wiz_invis), NULL, ac_sbyteCopy},
+    {"law_flags", PCOFFSET(law_flags), (char **) player_law_flags,
+     ac_longCopy, sizeof(char *)},
+    {"wimpy", PCOFFSET(wimpy), NULL, ac_shortCopy},
+    {"aggr", PCOFFSET(aggressive), NULL, ac_shortCopy},
+    {"balc", PCOFFSET(spare1), NULL, ac_intCopy},
+    {"bals", PCOFFSET(spare2), NULL, ac_intCopy},
+    {"balg", PCOFFSET(spare3), NULL, ac_intCopy},
+    {"balp", PCOFFSET(spare4), NULL, ac_intCopy},
+    {"deaths", PCOFFSET(numb_deaths), NULL, ac_longCopy}
+  };
+
+  P_char   ppl;
+
+  if ((ppl = get_char_vis(ch, name)) == NULL)
+  {
+    send_to_char("No one by that name here.\r\n", ch);
+    return;
+  }
+  // only level forger+ can setbit players (outside of themselves)
+  if (IS_PC(ppl) && ppl != ch &&
+     ((GET_LEVEL(ch) < FORGER) || (GET_LEVEL(ch) <= GET_LEVEL(ppl))))
+  {
+    send_to_char("Nope, you are too wimpy to affect them.\r\n", ch);
+    return;
+  }
+
+  /* bleah, have to make exceptions now that mobs/pcs aren't the same */
+  if (flag)
+  {
+    if (SAME_STRING(flag, "winvis") && GET_LEVEL(ch) <= 59)
+    {
+      send_to_char("You can't do that.\r\n", ch);
+      return;
+    }
+    if (SAME_STRING(flag, "race"))
+    {
+#ifdef NEW_COMBAT
+      FREE((char *) ppl->points.location_hit);
+      ppl->points.location_hit = NULL;
+#endif
+
+      setbit_parseTable(ch, (void *) ppl, table, ARRAY_SIZE(table), flag, val,
+                        on_off);
+
+      setCharPhysTypeInfo(ppl);
+
+      do_restore(ch, GET_NAME(ppl), 0);
+
+      set_char_size(ppl);
+      balance_affects(ppl);
+      do_save_silent(ppl, 1);   /* to make it stick */
+    }
+    if (ppl)
+    {
+      if (SAME_STRING(flag, "level") || SAME_STRING(flag, "secondary_level"))
+      {
+        if( IS_PC(ppl) && GET_LEVEL(ch) < OVERLORD && atoi(val) >= MINLVLIMMORTAL )
+        {
+          send_to_char("You aren't allowed to set the level that high.\r\n", ch);
+          return;
+        }
+      }
+      if (SAME_STRING(flag, "winvis") &&
+          (atoi(val) >= MIN(60, GET_LEVEL(ch))))
+      {
+        send_to_char("Can't set it that high.\r\n", ch);
+        return;
+      }
+    }
+    if (SAME_STRING(flag, "played"))
+    {
+      ppl->player.time.played = 3600 * (atoi(val));
+      return;
+    }
+    if (SAME_STRING(flag, "ldir") || SAME_STRING(flag, "defpos") ||
+        SAME_STRING(flag, "attack") || SAME_STRING(flag, "memory") ||
+        SAME_STRING(flag, "aggro") || SAME_STRING(flag, "aggro2") ||
+        SAME_STRING(flag, "val0") || SAME_STRING(flag, "val1") ||
+        SAME_STRING(flag, "val2") || SAME_STRING(flag, "val3") ||
+        SAME_STRING(flag, "val4") || SAME_STRING(flag, "val5") ||
+        SAME_STRING(flag, "val6") || SAME_STRING(flag, "val7") )
+    {
+      if (IS_PC(ppl))
+      {
+        send_to_char("PCs do not have this field.\r\n", ch);
+        return;
+      }
+      else
+      {
+        setbit_parseTable(ch, (void *) ppl->only.npc, table,
+                          ARRAY_SIZE(table), flag, val, on_off);
+        return;
+      }
+    }
+    else if (SAME_STRING(flag, "echo") || SAME_STRING(flag, "screensize") ||
+             SAME_STRING(flag, "prompt") || SAME_STRING(flag, "law_flags") ||
+             SAME_STRING(flag, "winvis") || SAME_STRING(flag, "wimpy") ||
+             SAME_STRING(flag, "aggr") || SAME_STRING(flag, "balp") ||
+             SAME_STRING(flag, "balg") || SAME_STRING(flag, "bals") ||
+             SAME_STRING(flag, "balc") || SAME_STRING(flag, "lesson") ||
+             SAME_STRING(flag, "frags") || SAME_STRING(flag, "epics") ||
+             SAME_STRING(flag, "epic_skill_points") ||
+             SAME_STRING(flag, "prestige") ||
+             SAME_STRING(flag, "time_left_guild") ||
+             SAME_STRING(flag, "nb_left_guild") ||
+             SAME_STRING(flag, "deaths"))
+    {
+      if (IS_NPC(ppl))
+      {
+        send_to_char("NPCs do not have this field.\r\n", ch);
+        return;
+      }
+      else
+      {
+        setbit_parseTable(ch, (void *) ppl->only.pc, table, ARRAY_SIZE(table),
+                          flag, val, on_off);
+        return;
+      }
+    }
+  }
+  setbit_parseTable(ch, (void *) ppl, table, ARRAY_SIZE(table), flag, val,
+                    on_off);
+
+  if (IS_NPC(ppl))
+    set_npc_multi(ppl);
+
+  if (SAME_STRING(flag, "mxmana"))
+  {
+    if (GET_MANA(ppl) < GET_MAX_MANA(ppl))
+      GET_MANA(ppl) = GET_MAX_MANA(ppl);
+  }
+  balance_affects(ppl);
+  
+  if( IS_PC(ppl) )
+    update_skills(ppl);
+  
+  do_save_silent(ppl, 1);       /* to make it stick */
+}
+
+static void setbit_ship(P_char ch, char *name, char *flag, char *val,
+                       int on_off)
+{
+  /* Internal Macros */
+
+#undef  OFFSET
+#define OFFSET(Field)   OFFSET_OF(P_ship, Field)
+
+#define AO(N, Field)    OFFSET(affected[N]. Field)
+
+  /* Table */
+
+  SetBitTable table[] = {
+/*    {"item", OFFSET(R_num), NULL, ac_shintCopy},*/
+    
+    {"mxarmor0", OFFSET(maxarmor[0]), NULL, ac_intCopy},
+    {"mxarmor1", OFFSET(maxarmor[1]), NULL, ac_intCopy},
+    {"mxarmor2", OFFSET(maxarmor[2]), NULL, ac_intCopy},
+    {"mxarmor3", OFFSET(maxarmor[3]), NULL, ac_intCopy},
+    {"armor0", OFFSET(armor[0]), NULL, ac_intCopy},
+    {"armor1", OFFSET(armor[1]), NULL, ac_intCopy},
+    {"armor2", OFFSET(armor[2]), NULL, ac_intCopy},
+    {"armor3", OFFSET(armor[3]), NULL, ac_intCopy},
+    {"mxintern0", OFFSET(maxinternal[0]), NULL, ac_intCopy},
+    {"mxintern1", OFFSET(maxinternal[1]), NULL, ac_intCopy},
+    {"mxintern2", OFFSET(maxinternal[2]), NULL, ac_intCopy},
+    {"mxintern3", OFFSET(maxinternal[3]), NULL, ac_intCopy},
+    {"intern0", OFFSET(internal[0]), NULL, ac_intCopy},
+    {"intern1", OFFSET(internal[1]), NULL, ac_intCopy},
+    {"intern2", OFFSET(internal[2]), NULL, ac_intCopy},
+    {"intern3", OFFSET(internal[3]), NULL, ac_intCopy},
+    {"sail", OFFSET(mainsail), NULL, ac_intCopy},
+    {"money", OFFSET(money), NULL, ac_intCopy},
+    {"frags", OFFSET(frags), NULL, ac_intCopy},
+    // entries below are just for help, they arent used in parsetable
+    {"maxspeed", OFFSET(maxspeed_bonus), NULL, ac_intCopy},
+    {"capacity", OFFSET(capacity_bonus), NULL, ac_intCopy},
+    {"crew", OFFSET(sailcrew), NULL, ac_intCopy},
+    {"sailskill", OFFSET(sailcrew), NULL, ac_intCopy},
+    {"gunskill", OFFSET(sailcrew), NULL, ac_intCopy},
+    {"repairskill", OFFSET(sailcrew), NULL, ac_intCopy},
+  };
+    
+
+  /* Local Variable */
+
+  P_ship    ship;
+
+  /* Executable Section */
+  
+  if ((ship = get_ship(name)) == NULL)
+  //if ((ship = getshipfromchar(get_char(name))) == NULL)
+  {
+      send_to_char("No ship by that name here.\r\n", ch);
+      return;
+  }
+  /*if (SAME_STRING(flag, "frags"))
+  {
+      int new_frags = atoi(val);
+      if (new_frags < ship->frags)
+          ship_loose_frags(ship, ship->frags - new_frags);
+      else if (new_frags > ship->frags)
+          ship_gain_frags(ship, new_frags - ship->frags);
+      return;
+  }*/
+  if (SAME_STRING(flag, "crew"))
+  {
+      setcrew(ship, atoi(val), 0);
+      update_ship_status(ship);
+      return;
+  }
+  if (SAME_STRING(flag, "sailskill"))
+  {
+      setcrew(ship, ship->sailcrew.index, atoi(val) * 1000);
+      update_ship_status(ship);
+      return;
+  }
+  if (SAME_STRING(flag, "gunskill"))
+  {
+      setcrew(ship, ship->guncrew.index, atoi(val) * 1000);
+      update_ship_status(ship);
+      return;
+  }
+  if (SAME_STRING(flag, "repairskill"))
+  {
+      setcrew(ship, ship->repaircrew.index, atoi(val) * 1000);
+      update_ship_status(ship);
+      return;
+  }
+  if (SAME_STRING(flag, "capacity"))
+  {
+      ship->capacity_bonus += (atoi(val) - ship->get_capacity());
+      return;
+  }
+  if (SAME_STRING(flag, "maxspeed"))
+  {
+      ship->maxspeed_bonus += (atoi(val) - ship->get_maxspeed());
+      return;
+  }
+
+  setbit_parseTable(ch, (void *) ship, table, ARRAY_SIZE(table), flag, val,
+                    on_off);
+}
+
+static void setbit_obj(P_char ch, char *name, char *flag, char *val,
+                       int on_off)
+{
+  /* Internal Macros */
+
+#undef  OFFSET
+#define OFFSET(Field)   OFFSET_OF(P_obj, Field)
+
+#define AO(N, Field)    OFFSET(affected[N]. Field)
+
+  /* Table */
+
+  SetBitTable table[] = {
+/*    {"item", OFFSET(R_num), NULL, ac_shintCopy},*/
+    {"wear", OFFSET(wear_flags), (char **) wear_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"extra", OFFSET(extra_flags), (char **) extra_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"class", OFFSET(anti_flags), (char **) &(class_names_table[1]),
+     ac_bitCopy, sizeof(struct class_names), OFFSET_OF(struct class_names *,
+                                                       normal)},
+    {"race", OFFSET(anti2_flags), (char **) &(race_names_table[1]),
+     ac_bitCopy, sizeof(struct race_names), OFFSET_OF(struct race_names *,
+                                                      no_spaces)},
+    {"extra2", OFFSET(extra2_flags), (char **) extra2_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff", OFFSET(bitvector), (char **) affected1_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff2", OFFSET(bitvector2), (char **) affected2_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff3", OFFSET(bitvector3), (char **) affected3_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff4", OFFSET(bitvector4), (char **) affected4_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"aff5", OFFSET(bitvector5), (char **) affected5_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"val0", OFFSET(value[0]), NULL, ac_intCopy}
+    ,
+    {"val1", OFFSET(value[1]), NULL, ac_intCopy}
+    ,
+    {"val2", OFFSET(value[2]), NULL, ac_intCopy}
+    ,
+    {"val3", OFFSET(value[3]), NULL, ac_intCopy}
+    ,
+    {"val4", OFFSET(value[4]), NULL, ac_intCopy}
+    ,
+    {"val5", OFFSET(value[5]), NULL, ac_intCopy}
+    ,
+    {"val6", OFFSET(value[6]), NULL, ac_intCopy}
+    ,
+    {"val7", OFFSET(value[7]), NULL, ac_intCopy}
+    ,
+    {"type", OFFSET(type), (char **) item_types, ac_byteCopy, sizeof(char *)},
+    {"material", OFFSET(material), (char **) item_material, ac_shintCopy,
+     sizeof(char *)},
+    {"weight", OFFSET(weight), NULL, ac_intCopy},
+    {"price", OFFSET(cost), NULL, ac_intCopy},
+    {"condition", OFFSET(condition), NULL, ac_shintCopy},
+    {"a0mod", AO(0, modifier), NULL, ac_sbyteCopy},
+    {"a1mod", AO(1, modifier), NULL, ac_sbyteCopy},
+    {"a2mod", AO(2, modifier), NULL, ac_sbyteCopy},
+    {"a0loc", AO(0, location), (char **) apply_types, ac_objaffCopy,
+     sizeof(char *)},
+    {"a1loc", AO(1, location), (char **) apply_types, ac_objaffCopy,
+     sizeof(char *)},
+    {"a2loc", AO(2, location), (char **) apply_types, ac_objaffCopy,
+     sizeof(char *)}
+  };
+
+  /* Local Variable */
+
+  P_obj    obj;
+
+  /* Executable Section */
+
+  if ((obj = get_obj_in_list_vis(ch, name, ch->carrying)) == NULL)
+  {
+    if ((obj =
+         get_obj_in_list_vis(ch, name, world[ch->in_room].contents)) == NULL)
+    {
+      send_to_char("No object by that name here.\r\n", ch);
+      return;
+    }
+  }
+#if 0
+  if ((obj = get_obj_vis(ch, name)) == NULL)
+  {
+    send_to_char("No object by that name here\r\n", ch);
+    return;
+  }
+#endif
+
+  setbit_parseTable(ch, (void *) obj, table, ARRAY_SIZE(table), flag, val,
+                    on_off);
+
+  if (OBJ_WORN(obj))
+  {
+    char_light(obj->loc.wearing);
+    room_light(obj->loc.wearing->in_room, REAL);
+  }
+  if (OBJ_CARRIED(obj))
+  {
+    char_light(obj->loc.carrying);
+    room_light(obj->loc.carrying->in_room, REAL);
+  }
+  if (OBJ_ROOM(obj))
+    room_light(obj->loc.room, REAL);
+}
+
+/*
+ * Note that this cannot really be combined together with **
+ * setbit_room because this requires a pointer to a room_direction **
+ * structure.
+ */
+static void setbit_dir(P_char ch, char *name, char *flag, char *value,
+                       int on_off)
+{
+
+  /* Internal Macros */
+
+#undef  OFFSET
+#define OFFSET(Field)   OFFSET_OF(struct room_direction_data *, Field)
+
+#undef  DIR
+#define DIR(D, Field)   OFFSET(Field)
+
+  /* Extern Variables */
+
+  /* Table */
+
+  SetBitTable table[] = {
+    {"ninfo", DIR(NORTH, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"einfo", DIR(EAST, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"sinfo", DIR(SOUTH, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"winfo", DIR(WEST, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"uinfo", DIR(UP, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"dinfo", DIR(DOWN, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"nwinfo", DIR(NORTHWEST, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"neinfo", DIR(NORTHEAST, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"swinfo", DIR(SOUTHWEST, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"seinfo", DIR(SOUTHEAST, exit_info), (char **) exit_bits, ac_bitCopy,
+     sizeof(char *)},
+    {"nkey", DIR(NORTH, key), NULL, ac_shintCopy},
+    {"ekey", DIR(EAST, key), NULL, ac_shintCopy},
+    {"skey", DIR(SOUTH, key), NULL, ac_shintCopy},
+    {"wkey", DIR(WEST, key), NULL, ac_shintCopy},
+    {"ukey", DIR(UP, key), NULL, ac_shintCopy},
+    {"dkey", DIR(DOWN, key), NULL, ac_shintCopy},
+    {"nwkey", DIR(NORTHWEST, key), NULL, ac_shintCopy},
+    {"nekey", DIR(NORTHEAST, key), NULL, ac_shintCopy},
+    {"swkey", DIR(SOUTHWEST, key), NULL, ac_shintCopy},
+    {"sekey", DIR(SOUTHEAST, key), NULL, ac_shintCopy},
+    {"nroom", DIR(NORTH, to_room), NULL, ac_intCopy},
+    {"eroom", DIR(EAST, to_room), NULL, ac_intCopy},
+    {"sroom", DIR(SOUTH, to_room), NULL, ac_intCopy},
+    {"wroom", DIR(WEST, to_room), NULL, ac_intCopy},
+    {"uroom", DIR(UP, to_room), NULL, ac_intCopy},
+    {"droom", DIR(DOWN, to_room), NULL, ac_intCopy},
+    {"nwroom", DIR(NORTHWEST, to_room), NULL, ac_intCopy},
+    {"neroom", DIR(NORTHEAST, to_room), NULL, ac_intCopy},
+    {"swroom", DIR(SOUTHWEST, to_room), NULL, ac_intCopy},
+    {"seroom", DIR(SOUTHEAST, to_room), NULL, ac_intCopy}
+  };
+
+  /*
+   * Local Variable
+   */
+
+  P_room   room;
+  int      room_number;
+  void    *where = NULL;
+
+  /*
+   * Executable section
+   */
+
+  room_number = real_room(atoi(name));
+
+  if (room_number < 0 || room_number > top_of_world)
+  {
+    return;
+  }
+  room = world + room_number;
+
+  /*
+   * Using first letter to differentiate between
+   */
+  /*
+   * which room_direction pointer to use
+   */
+
+  bool bIsSetRoom = false;
+  switch (*flag)
+  {
+
+  case 'n':
+  case 'N':
+    switch (toupper(flag[1]))
+    {
+    case 'W':
+      where = room->dir_option[NORTHWEST];
+      if (toupper(flag[2]) == 'R') bIsSetRoom = true;
+      break;
+    case 'E':
+      where = room->dir_option[NORTHEAST];
+      if (toupper(flag[2]) == 'R') bIsSetRoom = true;
+      break;
+    default:
+      if (toupper(flag[1]) == 'R') bIsSetRoom = true;
+      where = room->dir_option[NORTH];
+    }
+
+    break;
+
+  case 'e':
+  case 'E':
+    where = room->dir_option[EAST];
+    if (toupper(flag[1]) == 'R') bIsSetRoom = true;
+    break;
+
+  case 'w':
+  case 'W':
+    where = room->dir_option[WEST];
+    if (toupper(flag[1]) == 'R') bIsSetRoom = true;
+    break;
+
+  case 's':
+  case 'S':
+    switch (toupper(flag[1]))
+    {
+    case 'W':
+      where = room->dir_option[SOUTHWEST];
+      if (toupper(flag[2]) == 'R') bIsSetRoom = true;
+      break;
+    case 'E':
+      where = room->dir_option[SOUTHEAST];
+      if (toupper(flag[2]) == 'R') bIsSetRoom = true;
+      break;
+    default:
+      if (toupper(flag[1]) == 'R') bIsSetRoom = true;
+      where = room->dir_option[SOUTH];
+    }
+
+    break;
+
+  case 'u':
+  case 'U':
+    where = room->dir_option[UP];
+    if (toupper(flag[1]) == 'R') bIsSetRoom = true;
+    break;
+
+  case 'd':
+  case 'D':
+    where = room->dir_option[DOWN];
+    if (toupper(flag[1]) == 'R') bIsSetRoom = true;
+    break;
+
+  default:
+    *flag = 'g';                /*
+                                 * To generate syntax error
+                                 */
+    break;
+  }
+
+  if (!where)
+    return;
+
+  // convert a numerical from a vroom num to a real room num
+  if (bIsSetRoom)
+  {
+    if (-1 == atoi(value))
+      room_number = -1;
+    else
+    {
+      room_number = real_room(atoi(value));
+      if (room_number < 0 || room_number > top_of_world)
+      {
+        // invalid room number.. ignore it
+        return;
+      }
+    }
+    sprintf(value, "%d", room_number);
+  }
+
+  setbit_parseTable(ch, (void *) where, table, ARRAY_SIZE(table), flag, value,
+                    on_off);
+}
+
+/*
+ * ** Changes affect structure.
+ */
+static void setbit_aff(P_char ch, char *name, char *flag, char *value,
+                       int on_off)
+{
+  /*
+   * Internal Macros
+   */
+
+#undef OFFSET
+#define OFFSET(Field)   OFFSET_OF(struct affected_type *, Field)
+
+  /*
+   * Extern Variables
+   */
+
+  /*
+   * Table
+   */
+
+  SetBitTable table[] = {
+    {"type", OFFSET(type), (char **) spells, ac_skillCopy, sizeof(char *)},
+    {"dur", OFFSET(duration), NULL, ac_shintCopy},
+    {"mod", OFFSET(modifier), NULL, ac_sbyteCopy},
+    {"loc", OFFSET(location), (char **) apply_types, ac_objaffCopy,
+     sizeof(char *)},
+    {"bits", OFFSET(bitvector), (char **) affected1_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"bits2", OFFSET(bitvector2), (char **) affected2_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"bits3", OFFSET(bitvector3), (char **) affected3_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"bits4", OFFSET(bitvector4), (char **) affected4_bits, ac_bitCopy,
+     sizeof(flagDef)}
+    ,
+    {"bits5", OFFSET(bitvector5), (char **) affected5_bits, ac_bitCopy,
+     sizeof(flagDef)}
+  };
+
+  /*
+   * Local Variable
+   */
+
+  P_char   ppl;
+  struct affected_type *af;
+  char    *af_num_str;
+  int      af_num, i;
+
+  /*
+   * Executable section
+   */
+
+  /*
+   * Since name and affect number are together, we need to
+   */
+  /*
+   * separate them.
+   */
+
+  /*
+   * First get affect number
+   */
+
+  for (af_num_str = name;
+       !isdigit(*af_num_str) && *af_num_str != '\0'; af_num_str++) ;
+
+  if (*af_num_str == '\0')
+  {
+    send_to_char
+      ("Affect number should follow name immediately (no space)\r\n", ch);
+    return;
+  }
+  af_num = atoi(af_num_str);
+
+  /*
+   * Now, get player
+   */
+
+  *af_num_str = '\0';
+
+  if ((ppl = get_char_vis(ch, name)) == NULL)
+  {
+    send_to_char("No one by that name here.\r\n", ch);
+    *af_num_str = '0';
+    return;
+  }
+  else
+  {
+    *af_num_str = '0';
+  }
+
+  /*
+   * Now, find the affect structure
+   */
+
+  for (i = 0, af = ppl->affected;
+       i != af_num && af != NULL; i++, af = af->next) ;
+
+  if (af == NULL)
+  {
+    send_to_char("Affect number specified is too large.\r\n", ch);
+    return;
+  }
+  setbit_parseTable(ch, (void *) af, table, ARRAY_SIZE(table), flag, value,
+                    on_off);
+}
+
+/*
+ * This function uses a "parse table" and tries to match "flag" with
+ * an entry in "parse table".  If a match is found, parameters "ptr",
+ * "value", and "on_off" are passed to function specified in table.  If
+ * not found, prints out valid string parsable by table and return.
+ */
+static void setbit_parseTable(P_char ch, void *ptr, SetBitTable * table,
+                              int size, char *flag, char *value, int on_off)
+{
+  int      i, bit;
+  SetBitTable *entry;
+  char    *string;
+
+  for (i = 0; i < size && !SAME_STRING(flag, table[i].sb_flag); i++) ;
+
+  if (i == size)
+  {
+    setbit_printOutTable(ch, table, size);
+    return;
+  }
+  /* OK .. found entry -- If sb_subtable is not NULL, then, we */
+  /* convert "value" to bit number */
+
+  entry = table + i;
+
+  if (entry->sb_subtable)
+  {
+    for (bit = 0;
+         (string =
+          *(char **) (((char *) entry->sb_subtable) +
+                      entry->entry_size * bit + entry->entry_offset)) != NULL
+         && string[0] != '\n'; bit++)
+      if (SAME_STRING(string, value))
+        break;
+    if (string == NULL || string[0] == '\n')
+    {
+      setbit_printOutSubTable(ch, entry->sb_subtable, entry->entry_size);
+      return;
+    }
+  }
+  else
+  {
+    /* Otherwise, convert value to actual integer. */
+    bit = atoi(value);
+  }
+
+  /* Now call copy function */
+  (*(entry->sb_func)) (ptr, entry->sb_offset, value, bit, on_off);
+}
+
+/* This function should be called when there is a high-level error. */
+static void setbit_syntax(P_char ch)
+{
+  send_to_char("Usage:\r\n", ch);
+  send_to_char("setbit room room-number flag-type value [on|off]\r\n", ch);
+  send_to_char("setbit char name flag-type value [on|off]\r\n", ch);
+  send_to_char("setbit obj  name flag-type value [on|off]\r\n", ch);
+  send_to_char("setbit dir  room-number flag-type value [on|off]\r\n", ch);
+  send_to_char("setbit aff  name[aff-number] flag value [on|off|]\r\n", ch);
+  send_to_char("setbit h name\r\n", ch);
+}
+
+/* This function should be called when "flag" specified is unknown. */
+static void setbit_printOutTable(P_char ch, SetBitTable * table, int size)
+{
+  int      i;
+  char     buff[128];
+
+  send_to_char("Valid flags are:\r\n", ch);
+
+  for (i = 0; i < size; i++)
+  {
+
+    if (i && !(i % 3))
+      send_to_char("\r\n", ch);
+
+    sprintf(buff, "%-20s", table[i].sb_flag);
+    page_string(ch->desc, buff, 1);
+  }
+
+  send_to_char("\r\n", ch);
+}
+
+/* If specified is not in subtable, this function should be called. */
+static void setbit_printOutSubTable(P_char ch, char **subtable,
+                                    int entry_size)
+{
+  int      i;
+  char     buff[128];
+  char    *string;
+
+  send_to_char("Valid sub-options are:\r\n", ch);
+
+  for (i = 0;
+       (string = *(char **) (((char *) subtable) + entry_size * i)) != NULL &&
+       string[0] != '\n'; i++)
+  {
+
+    if (!(i % 3))
+      send_to_char("\r\n", ch);
+
+    sprintf(buff, "%-20s", string);
+    page_string(ch->desc, buff, 1);
+  }
+  send_to_char("\r\n", ch);
+}
+
+/* Basically same as "one_argument" except handles quote */
+char    *setbit_parseArgument(char *arg, char *val)
+{
+  char    *start, *end;
+
+  /* Skip initial space */
+
+  while (*arg == ' ' && *arg != '\0')
+    arg++;
+
+  /* Check to see if single quote .. if not, call one_argument */
+  /* to do right thing */
+
+  if (*arg != '\'')
+  {
+    return one_argument(arg, val);
+  }
+  /* Otherwise .. have single quote.  We modify the terminating */
+  /* single quote to '\0', copy arg into val, and change terminating */
+  /* '\0' back to quote */
+
+  end = start = arg + 1;
+
+  while (*end != '\'' && *end != '\0')
+    end++;
+
+  if (*end == '\0')
+  {                             /* Daggling single quote */
+    *val = '\0';
+    return NULL;
+  }
+  *end = '\0';
+
+  strcpy(val, start);
+  *end = '\'';
+
+  return end + 1;
+}
+
+/* Case insensitive comparison */
+static int ac_strcasecmp(const char *str1, const char *str2)
+{
+  char     low1, low2;
+  int      i;
+
+  for (i = 0;; i++)
+  {
+
+    low1 = LOWER_CASE(*(str1 + i));
+    low2 = LOWER_CASE(*(str2 + i));
+
+    if ((low1 != low2) || (low1 == '\0'))
+      break;
+  }
+
+  return ((low1 == '\0') && (low2 == '\0'));
+}
+
+/* Copy functions */
+
+/* Macro to facilitate making of general copy functions */
+#define MAKE_COPY_FUNCTION(Type)                                        \
+                                                                        \
+static void ac_ ## Type ## Copy(void *where, int offset, char *value, int bit, int on_off) \
+{                                                                       \
+  Type val = (Type) bit;                                                \
+                                                                \
+  bcopy((char *) &val, (char *) where + offset, sizeof(val));           \
+}
+
+/* General copy functions */
+MAKE_COPY_FUNCTION(byte)
+MAKE_COPY_FUNCTION(int)
+MAKE_COPY_FUNCTION(long) MAKE_COPY_FUNCTION(short) MAKE_COPY_FUNCTION(sbyte)
+MAKE_COPY_FUNCTION(sh_int) MAKE_COPY_FUNCTION(ubyte)
+/* Specifical copy functions */
+/* For age, we set only the year using by finding the difference
+   between current MUD time and intended age.  */
+     static void ac_ageCopy(void *where, int offset, char *value, int bit,
+                            int on_off)
+{
+  long     secs;
+  time_t   curr_time = time(NULL);
+  P_char   ch = (P_char) where;
+
+  secs = (bit /* - 17 */ ) * SECS_PER_MUD_YEAR;
+  ch->player.time.birth = curr_time - secs;
+}
+
+/* Use on_off to determine whether to set/clr which bit */
+static void ac_bitCopy(void *where, int offset, char *value, int bit,
+                       int on_off)
+{
+  long     orig_bits;
+
+  while (offset > 31)
+  {
+    offset -= 32;
+    where = (char *) where + 32;
+  }
+  bcopy((char *) where + offset, (char *) &orig_bits, sizeof(orig_bits));
+
+  if (on_off)
+    orig_bits |= 1 << bit;
+  else
+    orig_bits &= ~(1 << bit);
+
+  bcopy((char *) &orig_bits, (char *) where + offset, sizeof(orig_bits));
+}
+
+static void ac_idx2flagCopy(void *where, int offset, char *value, int bit,
+                            int on_off)
+{
+  long     flag;
+
+  flag = 1 << (bit - 1);
+  bcopy((char *) &flag, (char *) where + offset, sizeof(long));
+}
+
+static void ac_positionCopy(void *where, int offset, char *value, int bit,
+                            int on_off)
+{
+  P_char   ch = (P_char) where;
+
+  if (bit < 4)
+    SET_POS(ch, (bit - 1) + GET_STAT(ch));
+  else
+    SET_POS(ch, GET_POS(ch) + (1 << (bit - 2)));;
+}
+
+static void ac_tongueCopy(void *where, int offset, char *value, int bit,
+                          int on_off)
+{
+  P_char   ch = (P_char) where;
+
+  if (IS_PC(ch))
+    GET_LANGUAGE(ch, bit + 1) = (byte) on_off;
+}
+
+/*
+ * ** Saving throw is done by assuming value is in the form ** "A B C D E"
+ */
+static void ac_savthrCopy(void *where, int offset, char *value, int bit,
+                          int on_off)
+{
+  sh_int   sav_thr[5];
+  P_char   ch = (P_char) where;
+
+  sscanf(value, "%hd %hd %hd %hd %hd", sav_thr, sav_thr + 1, sav_thr + 2,
+         sav_thr + 3, sav_thr + 4);
+
+  bcopy((char *) &sav_thr, (char *) ch->specials.apply_saving_throw,
+        sizeof(sav_thr));
+}
+
+/*
+ * ** For skill, "bit" is the actual skill number to practice - 1. ** And
+ * "on_off" indicates how learn a skill is.
+ */
+static void ac_skillCopy(void *where, int offset, char *value, int bit,
+                         int on_off)
+{
+  P_char   ch = (P_char) where;
+  int      skl;
+  byte     val = on_off;
+
+  value = skip_spaces(value);
+  skl = search_block(value, spells, FALSE);
+
+  if (IS_PC(ch))
+  {
+    bcopy(&val, ((char *) &ch->only.pc->skills[skl]) + offset, sizeof(byte));
+  }
+}
+
+/*
+ * ** "Value" contains the string.
+ */
+static void ac_stringCopy(void *where, int offset, char *value, int bit,
+                          int on_off)
+{
+  strcpy((char *) where + offset, value);
+}
+
+/*
+ * ** "bit" is not really a bit to set, but rather, the value of **
+ * location.
+ */
+static void ac_objaffCopy(void *where, int offset, char *value, int bit,
+                          int on_off)
+{
+  byte     location = (byte) bit;
+
+  bcopy((char *) &location, (char *) where + offset, sizeof(location));
+}
+
+/*
+ * ** For max hit and max mana, the value is modified by graf(...), see **
+ * "limits.c", therefore, we want to subtract that from the value **
+ * specified, so that when graf(...) value is added back automatically, **
+ * it will be ok.
+ */
+
+static void ac_hitmanaCopy(void *where, int offset, char *value, int bit,
+                           int on_off)
+{
+  P_char   ch = (P_char) where;
+  sh_int   val;
+
+  if (IS_PC(ch))
+    val = (sh_int) bit - graf(ch, age(ch).year, 2, 4, 17, 14, 8, 4, 3);
+  else
+    val = (sh_int) bit;
+
+  bcopy((char *) &val, (char *) where + offset, sizeof(val));
+}

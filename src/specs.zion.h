@@ -1,0 +1,8 @@
+int zion_shield_absorb_proc(P_obj, P_char, int, char *);
+int generic_shield_block_proc(P_obj, P_char, int, char *);
+int zion_fnf(P_obj, P_char, int, char *);
+int zion_light_dark(P_obj, P_char, int, char *);
+int zion_dispator(P_obj, P_char, int, char *);
+int zion_netheril(P_obj, P_char, int, char *);
+int zion_mace_of_earth(P_obj, P_char, int, char *);
+

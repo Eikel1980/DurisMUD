@@ -1,0 +1,1070 @@
+/*
+   ***************************************************************************
+   *  File: map.c                                             Part of Duris  *
+   *  Copyright  1995 - Duris Systems Ltd.                                   *
+   ***************************************************************************
+ */
+#include <stdio.h>
+#include <sys/types.h>
+#include <string.h>
+#include <math.h>
+
+#include <list>
+using namespace std;
+
+#include "prototypes.h"
+#include "structs.h"
+#include "utils.h"
+#include "comm.h"
+#include "stdio.h"
+#include "config.h"
+#include "db.h"
+#include "justice.h"
+#include "graph.h"
+#include "random.zone.h"
+#include "weather.h"
+#include "spells.h"
+#include "map.h"
+#include "tradeskill.h"
+#include "ships/ships.h"
+
+struct continent
+{
+  int id;
+  const char name[64];
+  int seed_room;
+} continents[] = {
+/*
+  {CONT_GC, "&+WGood Continent", 223531},
+  {CONT_EC, "&+LEvil Continent", 268760},
+  {CONT_EM, "&+GEvermeet", 222250},
+  {CONT_IC, "&+WIce &+CCrag", 226364},
+  {CONT_KK, "&+gKhomani &+LKhan", 248510},
+*/
+  {0, 0, 0}
+};
+
+/*
+   external variables
+ */
+
+extern P_char char_in_room(int);
+extern P_char character_list;
+extern P_desc descriptor_list;
+extern P_index mob_index;
+extern P_index obj_index;
+extern P_room world;
+extern const char *dirs[];
+extern const int rev_dir[];
+extern int top_of_world;
+extern int top_of_zone_table;
+
+/*extern int map_g_modifier;
+extern int map_e_modifier;*/
+extern struct zone_data *zone;
+extern struct zone_data *zone_table;
+extern int LOADED_RANDOM_ZONES;
+extern struct time_info_data time_info;
+
+int      whats_in_maproom(P_char, int, int);
+int      map_e_modifier;
+int      map_g_modifier;
+
+void     add_quest_data(char *map);
+
+/* map specific defines */
+#define CONTAINS_GOOD_SHIP    1
+#define CONTAINS_EVIL_SHIP    2
+#define CONTAINS_SHIP         3
+#define CONTAINS_GOOD_PC      4
+#define CONTAINS_EVIL_PC      5
+#define CONTAINS_PC           6
+#define CONTAINS_DRAGON       7
+#define CONTAINS_MOB          8
+#define CONTAINS_CORPSE       9
+#define CONTAINS_PORTAL      10
+#define CONTAINS_BLOOD       11
+#define CONTAINS_OLD_BLOOD   12
+#define CONTAINS_TRACK       13
+#define CONTAINS_MINE        14
+#define CONTAINS_FERRY       15
+#define CONTAINS_MAGIC_DARK  16
+#define CONTAINS_MAGIC_LIGHT 17
+#define CONTAINS_BUILDING    18
+#define CONTAINS_GROUP       19
+#define CONTAINS_WITCH       20
+
+const char *sector_symbol[NUM_SECT_TYPES] = {
+  "^",                          /* * larger towns */
+  "+",                          /* * roads */
+  ".",                          /* * plains/fields */
+  "*",                          /* * forest */
+  "^",                          /* * hills */
+  "M",                          /* * mountains */
+  "r",                          /* * water shallow */
+  " ",                          /* * water boat */
+  " ",                           /* * noground */
+  " ",                           /* * underwater */
+  " ",                           /* * underwater ground */
+  " ",                          /* * fire plane */
+  " ",                          /* * water ship */
+  ".",                          /* * UD wild */
+  "*",                          /* * UD city */
+  ".",                          /* * UD inside */
+  " ",                          /* * UD water */
+  " ",                          /* * UD noswim */
+  " ",                           /* * UD noground */
+  " ",                           /* * air plane */
+  " ",                           /* * water plane */
+  " ",                          /* * earth plane */
+  " ",                           /* * etheral plane */
+  "R",                          /* * astral plane */
+  ".",                          /* desert */
+  ".",                          /* arctic tundra */
+  "*",                          /* swamp */
+  "M",                          /* UD mountains */
+  "*",                          /* UD slime */
+  ",",                          /* UD low ceilings */
+  " ",                          /* UD liquid mithril */
+  "o",                          /* UD mushroom forest */
+  " ",                          /* Castle Wall */
+  "T",                          /* Castle TOWER */
+  "O",                           /* Castle Itself */
+  " ",                           // "Negative Plane",
+  " ",                           // "Plane of Avernus",
+  "+",                           // "Patrolled Road", 
+  "*",                          /* Snowy Forest */
+};
+
+// whee..  'typedef char bool'?  BAH!
+
+mapSymbolInfo color_symbol_kingdom[NUM_SECT_TYPES] = {
+  {"=wl", true},
+  {"=rl", true},
+  {"=rg", true},
+  {"=rl", true},
+  {"=ry", true},
+  {"=ry", true},
+  {"=cl", true},
+  {"=bB", true},
+  {"+w", false},
+  {"+w", false},
+  {"+w", false},
+  {"=rR", true},
+  {"=bB", true},
+  {"=rL", true},
+  {"=rm", true},
+  {"=bB", true},
+  {"=bB", true},
+  {"+w", false},
+  {"+w", false},
+  {"+L", false},
+  {"+w", false},
+  {"+W", false},
+  {"=RW", true},
+  {"=rY", true},
+  {"=rY", true},
+  {"=rL", true},
+  {"+L", false},
+  {"+LR", true},
+  {"+M", false},
+  {"=wW", true},
+  {"+M", false},
+  {"=wW", true},
+  {"=wL", true},
+  {"+r", false},
+  {"=wl", true}
+};
+
+mapSymbolInfo color_symbol[NUM_SECT_TYPES] = {
+  {"=wl", true},
+  {"+L", false},
+  {"+g", false},
+  {"=gl", true},
+  {"+y", false},
+  {"+y", false},
+  {"=cl", true},
+  {"=bB", true},
+  {"+w", false},
+  {"+w", false},
+  {"+w", false},
+  {"=rR", true},
+  {"=bB", true},
+  {"=mL", true},
+  {"=wl", true},
+  {"+m", false},
+  {"=bB", true},
+  {"=bB", true},
+  {"+w", false},
+  {"+w", false},
+  {"+L", true},
+  {"+w", false},
+  {"+w", false},
+  {"=Lr", true},
+  {"=yY", true},
+  {"+W", false},
+  {"=mL", true},
+  {"+L", false},
+  {"=rL", true},
+  {"+M", false},
+  {"=wW", true},
+  {"+M", false},
+  {"=wL", true},
+  {"=wB", true},
+  {"+r", true},
+  {"=lw", false},
+  {"=lw", false},
+  {"+L", false},
+  {"=wl", true}
+};
+
+unsigned int calculate_relative_room(unsigned int rroom, int x, int y)
+{
+  int      local_y, local_x;
+  int vroom = world[rroom].number, local_map;
+
+  struct zone_data *zone = &zone_table[world[rroom].zone];
+  
+  if( !IS_SET(zone->flags, ZONE_MAP))
+    return 0;
+  
+  int zone_start_vnum = world[zone->real_bottom].number;
+  
+  // how far are we from the northern local map edge
+  local_y = ( ( vroom - zone_start_vnum) / zone->mapx ) % zone->mapy;
+
+  // how far are we from the western local map edge
+  local_x = ( vroom - zone_start_vnum) % zone->mapy;
+  
+  if( local_x + x < 0 )
+    local_x += zone->mapx;
+  else if( local_x + x >= zone->mapx )
+    local_x -= zone->mapx;
+
+  if( local_y + y < 0 )
+    local_y += zone->mapy;
+  else if( local_y + y >= zone->mapy )
+    local_y -= zone->mapy;
+  
+  return real_room0(zone_start_vnum + local_x + x + ( (local_y + y ) * zone->mapx));
+}
+
+/*
+ * return square of the distance between 2 given real rooms
+ */
+int calculate_map_distance(int room1, int room2)
+{
+  int v1, v2, map1, map2, x1, dx, y1, dy, x2, y2;
+
+  if( &zone_table[world[room1].zone] != &zone_table[world[room2].zone] )
+    return -1;
+  
+  struct zone_data *zone = &zone_table[world[room1].zone];
+  
+  if( !IS_SET(zone->flags, ZONE_MAP))
+    return -1;
+  
+  unsigned int zone_start_vnum = world[zone->real_bottom].number;
+  
+  
+  v1 = world[room1].number - zone_start_vnum;
+  v2 = world[room2].number - zone_start_vnum;
+
+  x1 = v1 % zone->mapx;
+  y1 = (v1 / zone->mapx ) % zone->mapy;
+
+  x2 = v2 % zone->mapx;
+  y2 = (v2 / zone->mapx ) % zone->mapy;
+  
+  dx = x1 - x2;
+  dy = y1 - y2;
+  
+  return dx * dx + dy * dy;
+}
+
+/* takes rnum */
+
+int whats_in_maproom(P_char ch, int room, int distance, int show_regardless)
+{
+  P_obj    obj, next_obj;
+  P_char   who, who_next;
+  int z, zw, portal = FALSE, val = 100;
+  int skill, chance, level; // for  seeing tracks
+  /*  int room; */
+
+  if(!ch ||
+    !IS_ALIVE(ch))
+  {
+    return 0;
+  }
+  
+  if(ch->specials.z_cord < 0)
+  {
+    return 0;
+  }
+  
+  /*  room = real_room0(where); */
+  if(!room)
+  {
+    return 0;
+  }
+  
+  if(IS_SET(world[room].room_flags, BLOCKS_SIGHT))
+  {
+    return 0;
+  }
+  
+  if(show_regardless == 999)
+  {
+    return 0;
+  }
+
+  if(IS_SET(world[room].room_flags, MAGIC_DARK) &&
+    !IS_SET(world[room].room_flags, MAGIC_LIGHT))
+  {
+    return CONTAINS_MAGIC_DARK;
+  }
+  
+  if(IS_SET(world[room].room_flags, MAGIC_LIGHT) &&
+    !IS_SET(world[room].room_flags, MAGIC_DARK))
+  {
+    return CONTAINS_MAGIC_LIGHT;
+  }
+  
+  if (world[room].contents)
+  {
+    for (obj = world[room].contents; obj; obj = next_obj)
+    {
+      next_obj = obj->next_content;
+      if (obj->type == ITEM_SHIP)
+      {
+        if( isname("__ferry__", obj->name) )
+        {
+          val = MIN(val, CONTAINS_FERRY);
+        }
+        else
+        {
+          P_ship temp = shipObjHash.find(obj);
+          if (SHIPISDOCKED(temp))
+              val = MIN(val, CONTAINS_SHIP);
+          else if (temp->race == GOODIESHIP)
+              val = MIN(val, CONTAINS_GOOD_SHIP);
+          else if (temp->race == EVILSHIP)
+              val = MIN(val, CONTAINS_EVIL_SHIP);
+        }
+      }
+      if (obj->type == ITEM_CORPSE)
+      {
+        if ((!str_cmp(ch->player.name, obj->action_description) ||
+            IS_TRUSTED(ch) ||
+            GET_SPEC(ch, CLASS_NECROMANCER, SPEC_NECROLYTE)))
+        {
+          val = MIN(val, CONTAINS_CORPSE);
+        }
+      }
+      else if(GET_OBJ_VNUM(obj) == MINE_VNUM && 
+              (( has_innate(ch, INNATE_MINER) && distance < 3 ) ||
+              IS_TRUSTED(ch) ) ) 
+      {
+        val = MIN(val, CONTAINS_MINE);
+      } 
+      // Using track scan ?
+      else if ((obj_index[obj->R_num].virtual_number == 1276) &&
+        affected_by_spell(ch, SKILL_TRACK) &&
+        ((distance <= (GET_CHAR_SKILL(ch, SKILL_TRACK)/20)) ||
+         IS_TRUSTED(ch)) ) 
+      {
+        val = MIN(val, CONTAINS_TRACK);
+      }
+      else if ((obj_index[obj->R_num].virtual_number == 4) &&
+              affected_by_spell(ch, SKILL_TRACK) &&
+              ((distance <= (GET_CHAR_SKILL(ch, SKILL_TRACK)/20)) ||
+               IS_TRUSTED(ch)) )
+      {
+        if ((obj->value[1] == BLOOD_FRESH) &&
+            (GET_CHAR_SKILL(ch, SKILL_IMPROVED_TRACK) > number(50, 80)))
+        {
+          val = MIN(val, CONTAINS_BLOOD);
+        }
+        else if (GET_CHAR_SKILL(ch, SKILL_IMPROVED_TRACK) >= number(80, 100))
+        {
+          val = MIN(val, CONTAINS_OLD_BLOOD);
+        }
+      }
+       else if (obj->type == ITEM_TELEPORT &&
+              obj_index[obj->R_num].virtual_number >= 99800 &&
+              obj_index[obj->R_num].virtual_number <= 99899)
+       {
+        val = MIN(val, CONTAINS_PORTAL);
+       }
+    }
+  }
+  
+  if (world[room].people)
+  {
+    for (who = world[room].people; who; who = who_next)
+    {
+      who_next = who->next_in_room;
+
+      if(who == ch)
+      {
+        continue;
+      }
+      
+      if(IS_PC_PET(ch))
+        continue;
+      
+      if(!CAN_SEE_Z_CORD(ch, who))
+      {
+        continue;
+      }
+      
+      if(affected_by_spell(who, TAG_BUILDING))
+      {
+        val = CONTAINS_BUILDING;
+        break;
+      }
+      
+      zw = who->specials.z_cord;
+      z = ch->specials.z_cord;
+
+      if(GET_ALT_SIZE(who) <= SIZE_MEDIUM && 
+        !IS_TRUSTED(ch) &&
+        ((IS_AFFECTED3(who, AFF3_PASS_WITHOUT_TRACE) && 
+        world[who->in_room].sector_type == SECT_FOREST) ||
+        affected_by_spell(who, SKILL_EXPEDITIOUS_RETREAT)))
+      {
+        continue;
+      }
+      
+      if(GET_SPEC(who, CLASS_ROGUE, SPEC_THIEF) &&
+        IS_AFFECTED(who, AFF_SNEAK) &&
+        !IS_TRUSTED(ch))
+      {
+        continue;
+      }
+      
+      if(IS_NPC(who) &&
+         GET_VNUM(who) == 15)
+      {
+        val = CONTAINS_WITCH;
+        break;
+      }
+      
+      /* if room contains PC, show PC regardless of order - ditto
+         for dragons, but show PCs before dragons (note that val is
+         initialized to 0) */
+      
+      if(IS_DRAGON(who) ||
+         IS_DEMON(who) ||
+         GET_RACE(who) == RACE_DEVIL)
+      {
+        val = CONTAINS_DRAGON;
+        break;
+      }
+
+      if(IS_PC(who) &&
+        !IS_DISGUISE_PC(who) &&
+        !IS_TRUSTED(who) &&
+        !IS_DISGUISE_NPC(who))
+      {
+        if(grouped(ch, who) && // Group at highest priority.
+          distance < 8)
+        {
+          val = CONTAINS_GROUP;
+          break;
+        }
+        
+        if(distance <= 4)
+        {
+          if(!number(0, 1)) // Randomizing evil and good priority.
+          {
+            if(IS_GOOD(who)) // See good align first.
+              val = CONTAINS_GOOD_PC;
+            else if(IS_EVIL(who))
+              val = CONTAINS_EVIL_PC;
+          }
+          else
+          {
+            if(IS_EVIL(who)) // See evil align first.
+              val = CONTAINS_EVIL_PC;
+            else if(IS_GOOD(who))
+              val = CONTAINS_GOOD_PC;
+          }
+        }
+        else
+          val = CONTAINS_PC;
+        // if(get_linking_char(who, LNK_RIDING) &&
+          // IS_NPC(get_linking_char(who, LNK_RIDING)))
+        // {
+          // val = MIN(val, CONTAINS_MOB);
+        // }
+
+        break;
+      }
+      
+      if(IS_NPC(who) &&
+        (GET_SIZE(who) >= SIZE_SMALL))
+          val = CONTAINS_MOB;
+      
+      if(IS_DISGUISE_PC(who) ||
+         IS_DISGUISE_NPC(who))
+          val = CONTAINS_MOB;
+      
+    }
+  }
+  if(val)
+    return val;
+}
+
+void display_map_room(P_char ch, int room, int n, int show_map_regardless)
+{
+  int      x, y, where, what, prev = -1, temp;
+  int      where_rnum, whats_in, distance;
+  bool     hadbg = false, map_tile;
+  char     buf[MAX_STRING_LENGTH];
+  float    horizontal_factor, vertical_factor;
+
+  if(!(ch) ||
+    !IS_ALIVE(ch))
+  {
+    return;
+  }
+
+  if(n > 500)
+  {
+    send_to_char("lines too wide, can't show map safely\n", ch);
+    return;
+  }
+
+  if(ch &&
+    ch->desc &&
+    ch->desc->term_type == TERM_MSP)
+  {
+    if(show_map_regardless != 8)
+    {
+      send_to_char("\n<map>\n", ch, LOG_NONE);
+    }
+    else
+    {
+      send_to_char("<automap>\n", ch, LOG_NONE);
+    }
+  }
+  else
+  {
+    send_to_char("&n \n", ch);
+  }
+
+  horizontal_factor = get_property("map.horizontalFactor", 0.6);
+  vertical_factor = get_property("map.verticalFactor", 1.2);
+
+  for (y = (int) (-0.6 * n); y <= (int) (0.6 * n); y++)
+  {
+    buf[0] = '\0';
+
+    /* send a space, each line */
+    if(ch &&
+      ch->desc &&
+      ch->desc->term_type != TERM_MSP)
+    {
+      send_to_char("           ", ch, LOG_NONE);
+    }
+
+    for (x = -n; x <= n; x++)
+    {
+      where_rnum = calculate_relative_room(room, x, y);
+      distance = (int)sqrt(x * x + y * y);
+
+      if(!where_rnum && IS_UD_MAP(room))
+      {
+        what = SECT_EARTH_PLANE;              /* ocean */
+      }
+      else if(!where_rnum )
+      {
+        what = SECT_OCEAN;
+      }
+      else
+      {
+        what = world[where_rnum].sector_type;
+      }
+      
+      what = BOUNDED(0, (int) what, (NUM_SECT_TYPES-1));
+      map_tile = false;
+      
+      if (hadbg)
+      {
+        strcat(buf, "&n");
+      }
+      
+      if (horizontal_factor * y * y + vertical_factor * x * x > n * n * 0.6)
+      {
+        strcat(buf, " ");
+      }
+      else if (x == 0 && y == 0)
+      {                         /* you */
+        strcat(buf, "&+W@&n");
+      }
+      else if (((whats_in =
+              whats_in_maproom(ch, where_rnum, distance,
+                show_map_regardless)) == CONTAINS_MAGIC_DARK))
+      {
+        strcat(buf, "&+LD&n");
+      }
+      else if (((whats_in =
+              whats_in_maproom(ch, where_rnum, distance,
+                show_map_regardless)) == CONTAINS_MAGIC_LIGHT))
+      {
+        strcat(buf, "&+WL&n");
+      }
+      else if (((whats_in =
+              whats_in_maproom(ch, where_rnum, distance,
+                show_map_regardless)) == CONTAINS_GOOD_SHIP))
+      {
+        strcat(buf, "&+YS&n");
+      }
+      else if (((whats_in =
+              whats_in_maproom(ch, where_rnum, distance,
+                show_map_regardless)) == CONTAINS_EVIL_SHIP))
+      {
+        strcat(buf, "&+RS&n");
+      }
+      else if (((whats_in =
+              whats_in_maproom(ch, where_rnum, distance,
+                show_map_regardless)) == CONTAINS_SHIP))
+      {
+        strcat(buf, "&+WS&n");
+      }
+      else if (((whats_in =
+              whats_in_maproom(ch, where_rnum, distance,
+                show_map_regardless)) == CONTAINS_FERRY))
+      {
+        strcat(buf, "&+WF&n");
+      }
+      else if ((whats_in == CONTAINS_DRAGON))
+      {
+        strcat(buf, "&=LRD&n");
+      }
+      else if ((whats_in == CONTAINS_WITCH))
+      {
+        strcat(buf, "&=LWW&n");
+      }
+      else if ((whats_in == CONTAINS_BUILDING))
+      {
+        strcat(buf, "&+C#&n");
+      }
+      else if(whats_in == CONTAINS_MOB &&
+            (what != SECT_FOREST ||
+            world[room].sector_type == SECT_FOREST))
+      {
+        strcat(buf, "&=LBM&n");
+      }
+      else if ( whats_in == CONTAINS_TRACK &&
+          ((what != SECT_FOREST && world[room].sector_type != SECT_FOREST) ||
+           (what == SECT_FOREST && world[room].sector_type == SECT_FOREST) ||
+           IS_TRUSTED(ch)) )
+      {
+        strcat(buf, "&+Y.");
+      }
+      else if ( whats_in == CONTAINS_OLD_BLOOD &&
+          ((what != SECT_FOREST && world[room].sector_type != SECT_FOREST) ||
+           (what == SECT_FOREST && world[room].sector_type == SECT_FOREST) ||
+           IS_TRUSTED(ch)) )
+      {
+        strcat(buf, "&+r.");
+      }
+      else if ( whats_in == CONTAINS_BLOOD &&
+          ((what != SECT_FOREST && world[room].sector_type != SECT_FOREST) ||
+           (what == SECT_FOREST && world[room].sector_type == SECT_FOREST) ||
+           IS_TRUSTED(ch)) )
+      {
+        strcat(buf, "&+R.");
+      }
+      else if ((whats_in == CONTAINS_PORTAL))
+      {
+        strcat(buf, "&+MO");
+      }
+      else if((whats_in == CONTAINS_PC ||
+              whats_in == CONTAINS_GOOD_PC ||
+              whats_in == CONTAINS_EVIL_PC ||
+              whats_in == CONTAINS_GROUP) && 
+              (what != SECT_FOREST || 
+              world[room].sector_type == SECT_FOREST))
+      {
+        if(whats_in == CONTAINS_GROUP)
+        {
+          strcat(buf, "&=LGP&n");
+        }
+        else if(IS_AFFECTED2(ch, AFF2_DETECT_GOOD) &&
+                whats_in == CONTAINS_GOOD_PC)
+        {
+          strcat(buf, "&=LYP&n");
+        }
+        else if(IS_AFFECTED2(ch, AFF2_DETECT_EVIL) &&
+                whats_in == CONTAINS_EVIL_PC)
+        {
+          strcat(buf, "&=LRP&n");
+        }
+        else
+        {
+          strcat(buf, "&=LWP&n");
+        }
+      }
+      else if ((whats_in == CONTAINS_CORPSE))
+      {
+        strcat(buf, "&+rC");
+      } 
+      else if (whats_in == CONTAINS_MINE)
+      {
+        strcat(buf, "&+Ym");
+      }
+      else if (ch->specials.z_cord < 0 && what != 12 &&
+          what != 7 && what != 8)
+      {                         /* underwater */
+        strcat(buf, "&+L ");
+      }
+      else if ((prev != what) || (x == -n))
+      {
+        int shift = 0;
+        
+        if (hadbg && color_symbol[what].hasBg)
+        {
+          shift = -2;
+        }
+        
+        sprintf(buf + strlen(buf) + shift, "&%s%s",
+            color_symbol[what].colorStrn, sector_symbol[what]);
+        hadbg = color_symbol[what].hasBg;
+        prev = what;
+        map_tile = true;
+      }
+      else
+      {
+        int shift = 0;
+        if(hadbg)
+        {
+          shift = -2;
+        }
+        sprintf(buf + strlen(buf) + shift, "%s", sector_symbol[what]);
+        map_tile = true;
+      }
+
+      if(!map_tile)
+      {
+        prev = -1;
+        hadbg = false;
+      }
+    }
+
+    strcat(buf, "&n \n");       // removed '&n'
+    send_to_char(buf, ch);
+  }
+
+  if(ch &&
+    ch->desc &&
+    ch->desc->term_type == TERM_MSP)
+  {
+    if(show_map_regardless != 8)
+    {
+      send_to_char("\n</map>\n", ch, LOG_NONE);
+    }
+    else
+    {
+      send_to_char("\n</automap>\n", ch, LOG_NONE);
+    }
+  }
+}
+
+void display_map(P_char ch, int n, int show_map_regardless)
+{
+  display_map_room(ch, ch->in_room, n, show_map_regardless);
+}
+
+int map_view_distance(P_char ch, int room)
+{
+  int n;
+
+  if(!(ch) ||
+    !IS_ALIVE(ch))
+  {
+    return 0;
+  }
+  
+  if(has_innate(ch, INNATE_EYELESS))
+  {
+    // eyeless - this means that ANY other factors mean nothing.
+    n = 8;
+  }
+  // if on the surface
+  else if (IS_SURFACE_MAP(room))
+  {
+    if(has_innate(ch, INNATE_DAYBLIND))
+    {
+      n = BOUNDED(0, map_e_modifier, 8);
+    }
+    else
+    {
+      n = BOUNDED(0, map_g_modifier, 8);
+    }
+    
+    if( IS_AFFECTED(ch, AFF_FLY) )
+    {
+      n++;
+    }
+    
+  }
+  else if (IS_UD_MAP(room))
+  {
+    if(RACE_GOOD(ch))
+    {
+      n = 5;
+
+      if( IS_LIGHT(room) )
+        n += 1;
+      
+      if (IS_AFFECTED2(ch, AFF2_ULTRAVISION))
+        n += 1;
+    }
+    else
+    {
+      n = 5;
+    
+      if (has_innate(ch, INNATE_DAYBLIND))
+        n += 1; 
+      
+      if (IS_AFFECTED2(ch, AFF2_ULTRAVISION))
+        n += 2;
+    }
+  }
+  else
+  {
+    n = 5;
+    
+    if(has_innate(ch, INNATE_PERCEPTION))
+      n += 2;
+    
+    if(IS_AFFECTED4(ch, AFF4_HAWKVISION))
+      n += 1;
+  }
+  
+  if (IS_FOREST_ROOM(room) &&
+      !has_innate(ch, INNATE_FOREST_SIGHT) &&
+      n > 3) 
+  {
+    n = 3;
+  }
+
+  n = BOUNDED(0, n, 10);
+  
+  if( IS_OCEAN_ROOM(room) )
+  {
+    n = 10;
+  }
+  if( IS_TRUSTED(ch) )
+  {
+    n = 12;
+  }
+  if (ch->specials.z_cord > 0)
+  {
+    n += ch->specials.z_cord;
+  }
+  
+  return n;
+}
+
+void map_look_room(P_char ch, int room, int show_map_regardless)
+{
+  char     tot_buf[MAX_STRING_LENGTH];
+
+  if(!(ch) ||
+    !IS_ALIVE(ch))
+  {
+    return;
+  }
+
+  /* quickly repair them, before they see the wrong thing */
+  if(ch->specials.z_cord < 0 &&
+    !IS_WATER_ROOM(room))
+  {
+    ch->specials.z_cord = 0;
+  }
+  if(!(IS_MORPH(ch) &&
+    IS_SET((MORPH_ORIG(ch))->specials.act, PLR_MAP))
+    && IS_NPC(ch) )
+  {
+    return;
+  }
+  if(!IS_MORPH(ch) &&
+    !IS_SET(ch->specials.act, PLR_MAP) &&
+    !show_map_regardless)
+  {
+    return;
+  }
+  /*
+  if( !IS_TRUSTED(ch) && 
+      IS_SURFACE_MAP(room) &&
+      IS_DAY && has_innate(ch, INNATE_DAYBLIND) && 
+      !IS_OCEAN_ROOM(room) )
+    return;
+  */
+
+  int n = map_view_distance(ch, room);
+
+  if( n > 1 )
+  {
+    display_map_room(ch, room, n, show_map_regardless);
+  }
+}
+
+void map_look(P_char ch, int show_map_regardless)
+{
+  map_look_room(ch, ch->in_room, show_map_regardless);
+}
+
+bool is_in_line_of_sight_dir(P_char ch, P_char target, int current_room)
+{
+  int      start, end, x, x2, temp, count, where, which_dir;
+
+  if(!(ch) ||
+    !IS_ALIVE(ch))
+  {
+    return false;
+  }
+
+  start = world[ch->in_room].number;
+
+  return FALSE;
+
+  end = world[target->in_room].number;
+  x = 0;
+  x2 = 0;
+  where = 0;
+  which_dir = line_of_sight_dir(ch->in_room, target->in_room);
+
+
+  if (which_dir == 0)
+    return FALSE;
+
+  for (count = 0; count < 5; count++)
+  {
+    if (which_dir == NORTH || which_dir == NORTHEAST ||
+        which_dir == NORTHWEST)
+      x -= 100;
+    else if (which_dir == SOUTH || which_dir == SOUTHEAST ||
+             which_dir == SOUTHWEST)
+      x += 100;
+    if (which_dir == EAST || which_dir == NORTHEAST || which_dir == SOUTHEAST)
+      x2 -= 1;
+    else if (which_dir == WEST || which_dir == NORTHWEST ||
+             which_dir == SOUTHWEST)
+      x2 += 1;
+
+    /* Did the last bump toss us onto a new map? Adjust our figures then... */
+    if (((start / 10000) * 10000) < (((start + x) / 10000) * 10000))
+    {
+      x += 20000;
+      if ((x + start) > 199999)
+      {
+        x -= 90000;
+      }
+    }
+    else if (((start / 10000) * 10000) > (((start + x) / 10000) * 10000))
+    {
+      x -= 20000;
+      if ((x + start) < 110000)
+        x += 90000;
+    }
+    temp = (start + x) - (((start + x) / 100) * 100);
+    if (temp + x2 < 0)
+    {
+      where = (start + x - 9901 + x2);
+      if ((where / 10000) == 13 || (where / 10000) == 16 ||
+          (where / 10000) == 19)
+        where += 30000;
+    }
+    else if (temp + x2 > 99)
+    {
+      where = (start + x + 9901 + x2);
+      if ((where / 10000) == 14 || (where / 10000) == 17 ||
+          (where / 10000) == 20)
+        where -= 30000;
+    }
+    else
+      where = (start + x + x2);
+
+    start = where;
+
+    if (world[real_room0(start)].sector_type == SECT_HILLS ||
+        world[real_room0(start)].sector_type == SECT_FOREST ||
+        world[real_room0(start)].sector_type == SECT_MOUNTAIN)
+      return FALSE;
+
+    if (start == current_room)
+    {
+      if (CAN_SEE_Z_CORD(ch, target))
+        return TRUE;
+      /* Should we also check large objects, such as ships blocking view? */
+
+    }
+  }
+  return FALSE;
+}
+
+void assign_continents()
+{
+  fprintf(stderr, "Assigning continents...\r\n");
+
+  for( int i = 0; continents[i].id; i++ )
+  {
+    fprintf(stderr, "-- %s ", strip_ansi(continents[i].name).c_str());
+    set_continent(real_room0(continents[i].seed_room), continents[i].id);    
+  }
+}
+
+bool set_continent(int start_room, int continent) 
+{       
+  if( !start_room )
+    return FALSE;
+
+        list<int> rooms_left;
+        
+        rooms_left.push_back(start_room);
+        
+  int room = -1;
+  int count = 0;
+        while( !rooms_left.empty() ) 
+  {
+    room = rooms_left.front();
+    rooms_left.pop_front();
+                
+    world[room].continent = continent;
+    count++;
+        
+                for( int dir = 0; dir < NUMB_EXITS; dir++ ) 
+    {
+      if( !world[room].dir_option[dir] ) continue;
+      if( !TOROOM(room, dir) ) continue;      
+      if( world[TOROOM(room, dir)].continent ) continue;
+      if( TOROOM(room, dir) == NOWHERE ) continue;
+      if( TO_OCEAN(room, dir) ) continue;
+      if( !SAME_ZONE(room, dir) ) continue;
+      
+      rooms_left.push_front( TOROOM(room, dir) );
+                }
+                
+        }
+  
+  fprintf(stderr, "(%d rooms)\n", count);
+  
+        return TRUE;
+}
+
+const char *continent_name(int continent_id)
+{
+  for( int i = 0; continents[i].id; i++ )
+  {
+    if( continents[i].id == continent_id )
+      return continents[i].name;
+  }
+  
+  return NULL;
+}

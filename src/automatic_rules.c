@@ -1,0 +1,153 @@
+/****************************************************************************
+ *
+ *  File: hardcore.c                                           Part of Duris
+ *  Usage: PERIODcore chars related materia.
+ *  Copyright  1990, 1991 - see 'license.doc' for complete information.
+ *  Copyright 1994 - 2008 - Duris Systems Ltd.
+ *  Created by: Kvark 			Date: 2002-04-18
+ * ***************************************************************************
+ */
+
+#define TROPHY
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <ctype.h>
+
+#include "comm.h"
+#include "db.h"
+#include "events.h"
+#include "interp.h"
+#include "mm.h"
+#include "new_combat_def.h"
+#include "prototypes.h"
+#include "spells.h"
+#include "structs.h"
+#include "utils.h"
+#include "arena.h"
+#include "arenadef.h"
+#include "justice.h"
+#include "weather.h"
+#include "sound.h"
+
+
+/*
+ * external variables
+ */
+
+extern P_char character_list;
+extern P_desc descriptor_list;
+extern P_event event_type_list[];
+extern P_index mob_index;
+extern P_index obj_index;
+extern P_obj object_list;
+extern P_room world;
+extern char debug_mode;
+extern const char *race_types[];
+extern const int exp_table[61];
+
+//extern const int material_absorbtion[][];
+extern const struct stat_data stat_factor[];
+extern float fake_sqrt_table[];
+extern int pulse;
+extern int arena_hometown_location[];
+extern struct arena_data arena;
+extern struct agi_app_type agi_app[];
+extern struct dex_app_type dex_app[];
+extern struct message_list fight_messages[];
+extern struct str_app_type str_app[];
+extern struct time_info_data time_info;
+extern struct zone_data *zone_table;
+
+
+extern struct minor_create_struct minor_create_name_list[];
+
+int is_Raidable(P_char ch, char *argument, int cmd)
+{
+  if(!(ch))
+  {
+    return false;
+  }
+  else if(IS_TRUSTED(ch) ||
+          IS_NPC(ch) ||
+          (IS_PC(ch) && GET_LEVEL(ch) < 21))
+  {
+    return true;
+  }
+  else if(hasRequriedSlots(ch))
+  {
+    return true;
+  }
+
+  return false;
+}
+
+void do_raid(P_char ch, char *argument, int cmd)
+{
+  if(!ch)
+    return;
+  
+  if(IS_NPC(ch)){
+      send_to_char("Why you a npc care about raidable or not?!", ch);
+    return;
+  }
+  if(hasRequriedSlots(ch))
+    send_to_char("&+GRaidable you are, slay enemies you can!\n", ch);
+  else
+    send_to_char("&+RYou do not have enough equipment to be raidable.\n", ch);
+  
+}
+int hasRequriedSlots(P_char ch)
+{
+  if(!ch)
+    return 0;
+  int      wear_order[] =
+        { 41, 24, 40, 6, 19, 21, 22, 20, 39, 3, 4, 5, 35, 37, 12, 27, 23, 13,
+          10, 31, 11, 14, 15, 33, 34, 9, 32, 1, 2, 16, 17, 25, 26, 18, 7,
+          36, 8, 38, -1
+        };
+  int found = 0, mod = 0, lvl;
+  P_obj t_obj;
+
+  for ( int j = 0; wear_order[j] != -1; j++)
+  {
+    int should_break_outer = 0;
+    if (ch->equipment[wear_order[j]]){
+       t_obj = ch->equipment[wear_order[j]];
+       
+       if(!t_obj){
+            continue;
+          }
+       
+       if (IS_SET(t_obj->extra_flags, ITEM_TRANSIENT))
+       continue;  
+       
+          for (int i = 0; minor_create_name_list[i].keyword[0]; i++) {
+              if(obj_index[t_obj->R_num].virtual_number  == minor_create_name_list[i].obj_number)
+              {
+                should_break_outer = 1;
+                break;
+              }
+          }
+          if(should_break_outer)
+            continue;
+          found++;
+    }
+          
+  }
+  
+  lvl = GET_LEVEL(ch);  
+                        //  Added some slightly more intelligent 
+  if(lvl > 35)          //  rules to the equation figuring on how much
+    mod = 0;            //  equipment a character must be wearing to
+  else if(lvl > 30)     //  be raidable based upon level.  It is somewhat
+    mod = 4;            //  foolish to believe a level 30 character is
+  else if(lvl > 20)     //  going to have more than 1-1.5 sets of eq
+    mod = 6;            //  on hand for CR's or such - Jexni  6/1/09
+
+  if(found + mod > (int) (get_property("raid.min.slots", 12) - 1))
+    return 1;
+
+  return 0;
+}

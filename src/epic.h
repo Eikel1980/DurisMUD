@@ -1,0 +1,99 @@
+#ifndef __EPIC_H__
+#define __EPIC_H__
+
+#include <vector>
+#include <string>
+using namespace std;
+
+#define EPIC_SMALL_STONE    358
+#define EPIC_LARGE_STONE    359
+#define EPIC_MONOLITH       360
+
+#define EPIC_ZONE_TYPE_NONE     0
+#define EPIC_ZONE_TYPE_SMALL    1
+#define EPIC_ZONE_TYPE_LARGE    2
+#define EPIC_ZONE_TYPE_MONOLITH 3
+
+#define EPIC_REWARD_ITEM      1
+#define EPIC_REWARD_SKILL     2
+#define EPIC_REWARD_LEVEL     3
+#define EPIC_MAX_PRESTIGE    12
+
+#define EPIC_IMP_VNUM         54
+#define EPIC_RAVEN_VNUM       55
+#define EPIC_OWL_VNUM         56
+#define EPIC_CAT_VNUM         57
+#define EPIC_BAT_VNUM         58
+#define EPIC_IGUANA_VNUM      59
+
+struct epic_trophy_data 
+{
+  epic_trophy_data(int _z, int _c) : zone_number(_z), count(_c) {}
+  int zone_number;
+  int count;
+};
+
+struct epic_zone_data 
+{
+  epic_zone_data(int _number, string _name, float _freq) : number(_number), name(_name), freq(_freq) {}
+  int number;
+  string name;
+  float freq;
+};
+
+struct epic_zone_completion
+{
+  epic_zone_completion(int _number, int _done_at) : number(_number), done_at(_done_at) {}
+	int number;
+	int done_at;
+};
+
+void do_epic(P_char ch, char *arg, int cmd);
+void do_epic_trophy(P_char ch, char *arg, int cmd);
+void do_epic_zones(P_char ch, char *arg, int cmd);
+vector<string> get_epic_players(int racewar);
+vector<epic_trophy_data> get_epic_zone_trophy(P_char ch);
+int modify_by_epic_trophy(P_char ch, int amount, int zone_number);
+void gain_epic(P_char, int type, int data, int amount);
+void group_gain_epic(P_char, int type, int data, int amount);
+void epic_frag(P_char, int victim_pid, int amount);
+void epic_initialization();
+int epic_skillpoints(P_char);
+void epic_gain_skillpoints(P_char, int);
+const char *epic_prestige(P_char);
+void do_hone(P_char, char*, int); 
+void init_guild_frags();
+void epic_feed_artifacts(P_char ch, int epics, int epic_type);
+void do_epic_skills(P_char ch, char *arg, int cmd);
+void do_infuse(P_char ch, char *arg, int cmd);
+
+int epic_stone(P_obj obj, P_char ch, int cmd, char *arg);
+void epic_stone_one_touch(P_obj obj, P_char ch, int epic_value);
+void epic_free_level(P_char ch);
+void epic_stone_level_char(P_obj obj, P_char ch);
+void epic_stone_set_affect(P_char ch);
+void epic_stone_feed_artifacts(P_obj obj, P_char ch);
+int epic_stone_payout(P_obj obj, P_char ch);
+void epic_stone_absorb(P_obj obj);
+
+void update_epic_zone_mods();
+void update_epic_zone_frequency(int zone_number);
+vector<epic_zone_data> get_epic_zones();
+float get_epic_zone_frequency_mod(int zone_number);
+bool epic_zone_done(int zone_number);
+int zone2saveable(int zone_index);
+int saveable2zone(int saved_zone);
+void epic_choose_new_epic_task(P_char ch);
+
+bool silent_spell_check(P_char ch);
+void say_silent_spell(P_char ch, int spell);
+int two_weapon_check(P_char ch);
+
+#define EPIC_ZONE 0
+#define EPIC_PVP 1
+#define EPIC_ELITE_MOB 2
+#define EPIC_QUEST 3
+#define EPIC_RANDOM_ZONE 4
+#define EPIC_NEXUS_STONE 5
+
+#endif

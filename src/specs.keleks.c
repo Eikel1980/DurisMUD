@@ -1,0 +1,64 @@
+      /* Add keleks procs here, or i will swallow your soul, and seif will swallow your load! */
+#include <ctype.h>
+#include <stdio.h>
+#include <strings.h>
+#include <string.h>
+#include <time.h>
+#include <list>
+using namespace std;
+
+#include "comm.h"
+#include "db.h"
+#include "events.h"
+#include "interp.h"
+#include "prototypes.h"
+#include "spells.h"
+#include "specs.prototypes.h"
+#include "structs.h"
+#include "utils.h"
+#include "weather.h"
+#include "justice.h"
+#include "assocs.h"
+#include "graph.h"
+#include "damage.h"
+#include "reavers.h"
+#include "specs.keleks.h"
+
+int deliverer_hammer(P_obj obj, P_char ch, int cmd, char *arg)
+{
+  P_char   victim;
+  P_char   temp;
+  int dam;
+
+  if (cmd == CMD_SET_PERIODIC)
+    return FALSE;
+
+  if (!ch || !IS_ALIVE(ch))
+    return (FALSE);
+
+  if (!OBJ_WORN_POS(obj, WIELD))
+    return (FALSE);
+
+  if( cmd == CMD_MELEE_HIT )
+  {
+    victim = (P_char) arg;
+
+    if (!victim || !IS_ALIVE(victim))
+      return (FALSE);
+    
+    if (!IS_UNDEAD(victim) && !IS_AFFECTED(victim, AFF_WRAITHFORM))
+      return (FALSE);    
+
+    if (!number(0, 20))
+    {
+      act("&+WYour $q&+W is surrouned by a holy glow as it strikes $N&+W!&n",
+          FALSE, ch, obj, victim, TO_CHAR);
+      act("&+W$n&+W's glows with a &+wholy &+Maura&+W!&n",
+          FALSE, ch, obj, victim, TO_ROOM);
+      int dam = number(50, 250);
+      spell_damage(ch, victim, dam, SPLDAM_HOLY, SPLDAM_NOSHRUG | SPLDAM_NODEFLECT, 0);
+    }
+  }
+  
+  return FALSE;
+}
