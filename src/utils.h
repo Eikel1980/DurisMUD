@@ -1130,20 +1130,23 @@ IS_GIANT(ch) || IS_PC_PET(ch) || IS_PC(ch) || IS_UNDEAD(ch)) && !IS_ANIMAL(ch))
 // Meeting the following define grants hitpoints.spellcaster.maxConBonus.
 #define IS_MAX_CON_BONUS_CLASS(ch) (GET_CLASS(ch, CLASS_ETHERMANCER | CLASS_DRUID | CLASS_CLERIC | CLASS_SORCERER | CLASS_NECROMANCER | CLASS_SHAMAN | CLASS_PSIONICIST | CLASS_ILLUSIONIST | CLASS_CONJURER | CLASS_BARD))
 
-#define IS_COLD_VULN(ch) (GET_RACE(ch) == RACE_THRIKREEN | RACE_F_ELEMENTAL | RACE_EFREET || \
-        FIRESHIELDED(ch) || \
-        IS_AFFECTED2(ch, AFF2_FIRE_AURA)) 
+#define IS_COLD_VULN(ch) (GET_RACE(ch) == RACE_THRIKREEN || \
+                          GET_RACE(ch) == RACE_F_ELEMENTAL || \
+                          GET_RACE(ch) == RACE_EFREET || \
+                          FIRESHIELDED(ch) || \
+                          IS_AFFECTED2(ch, AFF2_FIRE_AURA)) 
         
-#define ENJOYS_FIRE_DAM(ch) ((GET_RACE(ch) == RACE_F_ELEMENTAL | RACE_EFREET) || \
-        IS_AFFECTED2(ch, AFF2_FIRE_AURA))
+#define ENJOYS_FIRE_DAM(ch) ((GET_RACE(ch) == RACE_F_ELEMENTAL || \
+                              GET_RACE(ch) == RACE_EFREET) || \
+                              IS_AFFECTED2(ch, AFF2_FIRE_AURA))
         
 #define IS_AFFLICTED_PSI(ch) ((affected_by_spell(ch, SPELL_POISON) || \
-        IS_AFFECTED2(ch, AFF2_POISONED) || \
-        affected_by_spell(ch, SPELL_CURSE) || \
-        (affected_by_spell(ch, SPELL_WITHER) && GET_LEVEL(ch) > 50) || \
-        (affected_by_spell(ch, SPELL_DISEASE) && GET_LEVEL(ch) > 55) || \
-        IS_AFFECTED(ch, AFF_BLIND)) && \
-        GET_CLASS(ch, CLASS_MINDFLAYER | CLASS_PSIONICIST))
+            IS_AFFECTED2(ch, AFF2_POISONED) || \
+            affected_by_spell(ch, SPELL_CURSE) || \
+            (affected_by_spell(ch, SPELL_WITHER) && GET_LEVEL(ch) > 50) || \
+            (affected_by_spell(ch, SPELL_DISEASE) && GET_LEVEL(ch) > 55) || \
+            IS_AFFECTED(ch, AFF_BLIND)) && \
+            GET_CLASS(ch, CLASS_MINDFLAYER | CLASS_PSIONICIST))
         
 #define EYELESS(ch) (has_innate(ch, INNATE_EYELESS))
 
