@@ -26,7 +26,7 @@ but it is certain that one swift cry will bring many more.
 ~
 1174407244 672 0 8232 0 0 0 1000 S
 PF 0 1 -1
-12 15 61 12d27+72 2d5+2
+36 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
 #16502
@@ -97,7 +97,7 @@ PF 0 1 -1
 0.3.1.5 121500
 8 8 1
 #16506
-halfling guard lieutenant~
+halfling guard lieutenant _nosneak_~
 &+ga lieutenant&N~
 &+gA lieutenant of the Woodseer guard keeps a careful watch.&N
 ~
@@ -109,7 +109,7 @@ Council must value his service a great deal.
 ~
 1174407244 672 0 0 0 0 0 1000 S
 PF 0 1 -1
-40 -3 -95 50d119+2750 6d6+25
+46 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
 #16507
@@ -3319,7 +3319,7 @@ but it is certain that one swift cry will bring many more.
 ~
 1174407246 672 0 8232 0 0 0 1000 S
 PF 0 1 -1
-12 15 61 12d27+72 2d5+2
+41 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
 #16707
@@ -3391,6 +3391,47 @@ PF 0 1 -1
 40 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
+#16711
+minotaur guard mercenary _spec1_~
+&+LA mino&+rtaur &+ymercenary guard&n~
+&+LA mino&+rtaur &+ymercenary stands guard over the halflings.&n
+~
+&+yThis mercenary for hire is part of the Nologak Brigade. This entire
+&+yunit was hired to bolster the defenses of the city of &+WWoodseer.&n
+&+yA most mercenaries groups, there are a wide variety of skills and
+&+Yexpertise.
+~
+1073969226 128 0 939524152 4 0 67121152 0 S
+mt 0 16384 -1
+51 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#16712
+minotaur guard wizard _spec1_ _nosneak_~
+&+LA mino&+rtaur &+ymercenary wizard&n~
+&+LA mino&+rtaur &+ymercenary stands guard over the halflings.&n
+~
+&+yThis mercenary for hire is part of the Nologak Brigade. This entire
+&+yunit was hired to bolster the defenses of the city of &+WWoodseer.&n
+&+yA most mercenaries groups, there are a wide variety of skills and
+&+Yexpertise.
+~
+1073969226 128 0 939524152 4 0 67121152 0 S
+mt 0 512 -1
+51 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#16713
+dwarf mercenary guard _nosneak_~
+&+yA dwarf mercenary tracker and punisher&n~
+&+YA dwarf mercenary stands guard over the halflings&n
+~
+~
+1107785866 128 0 941096986 4 0 101724160 0 S
+pm 0 8192 -1
+46 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 2
 #16900
 halfling scout~
 &+Wa halfling scout&N~

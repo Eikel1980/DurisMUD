@@ -289,8 +289,21 @@ O 0 16680 1 16960 100 0 0 0        * a small sign
 *
 M 0 16502 3 16505 100 0 0 0        * a halfling guard
 E 1 16506 26 5 100 0 0 0           *   a leather tunic
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
 G 1 16507 4 0 100 0 0 0            *    a pike with a jagged tip
 M 0 16690 1 16505 100 0 0 0        * the burly guardian
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16711 6 16505 100 0 0 0        * A minotaur mercenary guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16711 6 16505 100 0 0 0        * A minotaur mercenary guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16711 6 16505 100 0 0 0        * A minotaur mercenary guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16712 2 16505 100 0 0 0        * A minotaur mercenary wizard
 M 0 16501 17 16507 100 0 0 0       * a halfling guard
 E 1 16506 26 5 100 0 0 0           *   a leather tunic
 G 1 16507 4 0 100 0 0 0            *    a pike with a jagged tip
@@ -323,7 +336,7 @@ E 1 16503 29 16 100 0 0 0          *   a short sword
 M 0 16506 3 16515 100 0 0 0        * a lieutenant
 E 1 16505 1 18 100 0 0 0           *   a looking glass
 E 1 16501 5 5 100 0 0 0            *   a suit of alligatorskin armor
-G 1 16502 5 0 100 0 0 0            *    a red-hued short sword
+G 1 16502 24 0 100 0 0 0           *    a red-hued short sword
 M 0 16501 17 16515 100 0 0 0       * a halfling guard
 E 1 16506 26 5 100 0 0 0           *   a leather tunic
 E 1 16503 29 16 100 0 0 0          *   a short sword
@@ -448,6 +461,9 @@ M 0 16686 1 16556 100 0 0 0        * the elven woman
 E 1 16678 1 2 100 0 0 0            *   a jodani wood ring
 M 0 16688 1 16556 100 0 0 0        * the maitre d'
 E 1 16527 3 5 100 0 0 0            *   a black tuxedo
+M 0 16713 1 16556 100 0 0 0        * A dwarf mercenary tracker and punisher
+E 1 16682 2 16 100 0 0 0           *   A long slender dagger
+E 1 16682 2 17 100 0 0 0           *   A long slender dagger
 M 0 16551 1 16557 100 0 0 0        * the bartender
 E 1 16527 3 5 100 0 0 0            *   a black tuxedo
 G 1 16616 4 0 100 0 0 0            *    a sturdy dwarven mug
@@ -558,7 +574,7 @@ M 0 16579 1 16587 100 0 0 0        * a badger
 M 0 16575 9 16588 100 0 0 0        * a salamander
 M 0 16576 1 16588 100 0 0 0        * a blood hawk
 M 0 16505 2 16589 100 0 0 0        * a lieutenant
-E 1 16502 5 16 100 0 0 0           *   a red-hued short sword
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
 E 1 16501 5 5 100 0 0 0            *   a suit of alligatorskin armor
 M 0 16661 7 16589 100 0 0 0        * the halfling warrior
 E 1 16595 9999 6 100 0 0 0         *   a small steel cap
@@ -769,7 +785,7 @@ E 1 16503 29 16 100 0 0 0          *   a short sword
 M 0 16667 7 16652 100 0 0 0        * the small woman
 E 1 16588 10 12 100 0 0 0          *   a bright red cloak
 M 0 16505 2 16653 100 0 0 0        * a lieutenant
-E 1 16502 5 16 100 0 0 0           *   a red-hued short sword
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
 E 1 16501 5 5 100 0 0 0            *   a suit of alligatorskin armor
 M 0 16526 5 16653 100 0 0 0        * a halfling woman
 G 1 16524 6 0 100 0 0 0            *    some platinum
@@ -777,7 +793,7 @@ M 0 16652 6 16653 100 0 0 0        * the halfling boy
 M 0 16660 7 16653 100 0 0 0        * the halfling adventurer
 E 1 16594 7 12 100 0 0 0           *   a dusty traveling cloak
 M 0 16506 3 16653 100 0 0 0        * a lieutenant
-E 1 16502 5 16 100 0 0 0           *   a red-hued short sword
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
 E 1 16501 5 5 100 0 0 0            *   a suit of alligatorskin armor
 M 0 16563 8 16654 100 0 0 0        * a playful kitten
 M 0 16640 3 16654 100 0 0 0        * a traveling mage
@@ -850,7 +866,7 @@ M 0 16629 3 16676 100 0 0 0        * the young mage
 M 0 16636 5 16676 100 0 0 0        * a guardian mage
 E 1 16580 5 12 100 0 0 0           *   an emerald-green cloak
 M 0 16506 3 16676 100 0 0 0        * a lieutenant
-E 1 16502 5 16 100 0 0 0           *   a red-hued short sword
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
 E 1 16501 5 5 100 0 0 0            *   a suit of alligatorskin armor
 M 0 16627 2 16677 100 0 0 0        * the senior mage
 E 1 16578 4 8 100 0 0 0            *   a pair of emerald slippers
@@ -1170,8 +1186,22 @@ M 0 16700 2 16887 100 0 0 0        * a sturdy mountain pony
 M 0 16700 2 16887 100 0 0 0        * a sturdy mountain pony
 M 0 16701 1 16888 100 0 0 0        * a postal clerk
 M 0 16695 1 16888 100 0 0 0        * the halfling mailman
+M 0 16711 6 16889 100 0 0 0        * A minotaur mercenary guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16711 6 16889 100 0 0 0        * A minotaur mercenary guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16711 6 16889 100 0 0 0        * A minotaur mercenary guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
+M 0 16712 2 16889 100 0 0 0        * A minotaur mercenary wizard
 M 0 16706 1 16890 100 0 0 0        * a halfling guard
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
 M 0 16707 1 16890 100 0 0 0        * a burly guardian
+E 1 16502 24 16 100 0 0 0          *   a red-hued short sword
+E 1 16502 24 17 100 0 0 0          *   a red-hued short sword
 M 0 16901 4 16900 100 0 0 0        * a halfling sentinel
 E 1 16900 4 16 100 0 0 0           *   a short sword
 E 1 16901 7 5 100 0 0 0            *   a suit of halfling leather armor
