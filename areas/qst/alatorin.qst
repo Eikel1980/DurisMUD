@@ -1969,3 +1969,40 @@ G I 392
 G C 500000
 G I 83188
 S
+#83348
+MA
+hi hello~
+&N$n nods at $N and says 'Hail, visitor of Alatorin.'
+'I am Ulster Stonehammer, constable of this great city and protector of its interests' he says without a flinch.
+~
+MA
+alatorin city dwarf dwarves shield interest interests~
+&N$n says 'The city of Alatorin has been unfortunately infiltrated by several violent rogues, &+routcasts&N to our great city!'
+~
+MA
+sslitheran melbe birch scruden gru'dank jenk~
+&N$n nods at $N and says 'Birch Scruden, Gru'dank, Jenk, Melbe, and Sslitheran are currently being hunted by my deputies.  A reward of 1500 platinum is available to he who returns the heads or hearts of these five outcasts!'
+~
+MA
+outcasts~
+&N$n nods at $N and continues 'There are five outcasts hidden in the depths of Alatorin.  Please $N, direct your gaze to the wanted list posted here in my office.  Return to me with the heads or hearts of these five wanted criminals for a reward.'
+~
+MA
+taark shanat~
+&N$n says '&+RTaark Shanat&N is my king, and to him I owe my very life.'
+~
+QA
+&N$n applauds $N and says 'Excellent work, $N!'
+Gathering the heads, he continues 'Please, as a token of service to Alatorin, take this medal of honor and your reward money.'
+~
+R C 1500000
+R I 83250
+G I 83255
+G I 83300
+G I 83323
+G I 83276
+G I 83387
+D
+&N$n bows at $N and concludes 'I will report these act of chivalry to the king.'
+~
+S

@@ -4407,12 +4407,106 @@ hide bound hide-bound notebook~
 &+La &N&+yhide&+L-bound &+Wnotebook&N~
 &+yA hide-&+Lbound &+Wnotebook&N has been left here.~
 ~
-33 12 2 0 5 0 0 0 0 0 0
-0 0 20 0 0 0 0 0
+23 12 2 0 5 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
 0 40 100
 E
 hide bound hide-bound notebook~
 &+yA simple &+Wparchment &n&+ynotebook has been bound in a cover of thick hide.
-&+yThere are some detailed notes on the first &+Wsix pages&n&+y of this notebook.
-&+y&+WPage1, page2, page3, page4, page5, page6
+&+yThere are some detailed notes on the first &+Wfive pages&n&+y of this notebook.
+&+y&+WPage1, page2, page3, page4, page5
+~
+E
+page1 1~
+&+WSslitheran
+&+W----------
+&+WA devious drow mage from the depths of Arachdrathos.  This drow
+&+Wis responsible for the covert murders of numerous Alatorin guards
+&+Wto allow contraband be brought into the city.  This powerful mage
+&+Wwas last spotted in a cave somewhere in the Caverns of Time.
+~
+E
+page2 2~
+&+WMelbe
+&+W----------
+&+WMelbe is a deviously-evil githyanki who has been rumored to shift into
+&+Wthe Caverns of Time and poison the young minds of the hooded dwarves that
+&+Wlurk there within.  Melbe is a terrifying adversary able to spread death
+&+Wand influence minds with his mental powers.
+~
+E
+page3 3~
+&+WBirch Scruden
+&+W----------
+&+WA fearsome duergar tactitian who has been taken under the wing of the
+&+Wseige dwarf army.  Birch Scruden is responsible for the murder of several
+&+Whundred mountain dwarf friends of Alatorin and his sanction will cause a
+&+Wrift in the Kimordril-Alatorin alliance.  Birch Scruden will need to be
+&+Wapproached with utmost caution as he and the seige army are very powerful.
+~
+E
+page5 5~
+&+WGru'Dank
+&+W----------
+&+WA half-orc who was once welcomed by the shield dwarves has outcasted himself
+&+Wdue to the violence he brings to the local Alatorin taverns.  Often spotted
+&+Wat Barlow's Brewery, this hunter-turned-drunk has been connected with
+&+Wnumerous late-night murders amongst the Trade and Commerce districts.
+~
+E
+page4 4~
+&+WJenk
+&+W----------
+&+WJenk is a shield dwarf who has gone by many other aliases and faces,
+&+Wpickpocketing the streets of Alatorin.  Although of the same blood as
+&+Wthe king and people of Alatorin, Jenk has ostracized himself from his
+&+Wdevious ways and fast-fingers.  His wereabouts are currently unknown, but
+&+Wis suspected to be seeking refuge in an unseen rogue hideout.
+~
+#83386
+large mithril key~
+&+La large &+Cmithril &+Lkey&N~
+&+LA large &+Cmithril &+Lkey has been left here.~
+~
+18 18 3 0 7 0 8388608 16385 0 0 0
+0 100 0 0 0 0 0 0
+1 1000 100
+E
+large mithril key~
+   &+mThis large mithril key looks like it could open a large mithril lock.
+~
+#83387
+bloody heart jenk~
+&+rthe bloody heart of Jenk&N~
+&+rThe bloody heart of Jenk has been left here.~
+~
+8 2 2 0 7 0 4096 16385 0 0 0
+0 0 0 0 0 0 0 0
+1 10 100
+E
+bloody heart jenk~
+   &+rThis heart has been dug out of the chest of a goblin named Jenk - a
+&+rnotorious thief.
+~
+#83388
+wanted list parchment~
+&+ya &+Rwanted &N&+ylist&N~
+&+yA parchment &+Rwanted list &N&+yis posted on the wall.~
+~
+13 29 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+E
+wanted list parchment~
+&+y---------------------------
+&+y-         WANTED          -
+&+y-                         -
+&+y-  BIRCH SCRUDEN          -
+&+y-  SSLITHERAN             -
+&+y-  MELBE                  -
+&+y-  GRU'DANK               -
+&+y-  JENK                   -
+&+y-                         -
+&+y- SEE ULSTER STONEHAMMER  -
+&+y---------------------------
 ~

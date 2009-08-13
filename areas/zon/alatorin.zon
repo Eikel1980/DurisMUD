@@ -1,6 +1,6 @@
 #831
 &+CAlatorin &+L- the &N&+rForge &+LCity~
-83681 2 0 40 50 1
+83700 2 0 40 50 1
 *
 * Zone edited with durisEdit v2.99de
 *
@@ -781,6 +781,22 @@ D 0 83545 2 5 100 0 0 0
 *     south exit from "A Rocky Cave-In" to
 *     "An Old, Dirty Cavern" - closed/secret
 *
+D 0 83549 0 1 100 0 0 0
+*     north exit from "A Shady Dead-End" to
+*     "The Assassin's Essentials" - closed
+*
+D 0 83700 2 1 100 0 0 0
+*     south exit from "The Assassin's Essentials" to
+*     "A Shady Dead-End" - closed
+*
+D 0 83549 2 1 100 0 0 0
+*     south exit from "A Shady Dead-End" to
+*     "A Dark, Ancient Chamber" - closed
+*
+D 0 83699 0 1 100 0 0 0
+*     north exit from "A Dark, Ancient Chamber" to
+*     "A Shady Dead-End" - closed
+*
 D 0 83582 0 1 100 0 0 0
 *     north exit from "The Iron Gates of Helgor Outpost" to
 *     "Above the Stairs Into Helgor Outpost" - closed
@@ -917,9 +933,9 @@ D 0 83672 2 1 100 0 0 0
 *     south exit from "An Officer's Chamber" to
 *     "An Intersection in the Fort Hallway" - closed
 *
-D 0 83670 0 1 100 0 0 0
+D 0 83670 0 2 100 0 0 0
 *     north exit from "A Guard Post" to
-*     "The Private Chamber of Lord Khoralator" - closed
+*     "The Private Chamber of Lord Khoralator" - closed/locked
 *
 D 0 83679 2 1 100 0 0 0
 *     south exit from "The Private Chamber of Lord Khoralator" to
@@ -1355,6 +1371,8 @@ O 0 1460 3 83623 100 0 0 0         * (object type not in this .obj file)
 O 0 1460 3 83625 100 0 0 0         * (object type not in this .obj file)
 O 0 83139 5 83627 100 0 0 0        * a small wooden desk
 P 1 58335 4 83139 100 0 0 0        *   (object type not in this .obj file)
+P 1 83385 1 83139 100 0 0 0        *   a hide-bound notebook
+O 0 83388 1 83627 100 0 0 0        * a wanted list
 O 0 1705 3 83631 70 0 0 0          * (object type not in this .obj file)
 O 0 338 999 83631 20 0 0 0         * (object type not in this .obj file)
 O 0 1703 5 83631 15 0 0 0          * (object type not in this .obj file)
@@ -2570,11 +2588,14 @@ F 1 83345 12 83659 100 0 0 0       * a dwarven archer (following)
 F 1 83345 12 83659 100 0 0 0       * a dwarven archer (following)
 F 1 83345 12 83659 100 0 0 0       * a dwarven archer (following)
 M 0 83346 4 83666 100 0 0 0        * a fearless guard of Khoralator Fort
+R 1 83351 2 83666 100 0 0 0        * a huge boar (being ridden)
 M 0 83346 4 83667 100 0 0 0        * a fearless guard of Khoralator Fort
+R 1 83351 2 83667 100 0 0 0        * a huge boar (being ridden)
 M 0 83347 2 83670 100 0 0 0        * an elite dwarven guard
 M 0 83347 2 83670 100 0 0 0        * an elite dwarven guard
 M 0 83349 2 83670 100 0 0 0        * a dwarven battlerager
 M 0 83349 2 83670 100 0 0 0        * a dwarven battlerager
+M 0 83350 1 83679 100 0 0 0        * Lord Berhad Khoralator
 M 0 95531 3 83680 65 0 0 0         * (mob type not in this .mob file)
 M 0 95531 3 83680 100 0 0 0        * (mob type not in this .mob file)
 M 0 95531 3 83680 45 0 0 0         * (mob type not in this .mob file)

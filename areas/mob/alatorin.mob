@@ -3906,11 +3906,11 @@ fearless guard khoralator fort dwarf mountain~
 &+Yfor his legion.  A &+Rfirey &+Ygaze stares from his deep-set eyes, armed and trained
 &+Yby the &+WKhor&N&+calator &+CFort &N&+rmilitia &+Yto defend his post.
 ~
-2250 0 0 0 0 0 0 0 S
-pm 0 0 -1
-1 0 0 1d1+1 1d1+1
+1140852936 128 0 671162520 14528 0 0 1000 S
+pm 0 67108865 -1
+59 0 0 1d1+1 1d1+1
 0.0.0.0 0
-8 8 0
+8 8 1
 #83347
 elite dwarven guard mountain dwarf~
 &+yan elite &+Ydwarven &N&+yguard&N~
@@ -3960,5 +3960,36 @@ dwarven dwarf battle rager battlerager~
 1073744074 0 0 216 0 0 0 1000 S
 pm 5 1048576 -1
 53 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#83350
+lord borhad khoralator dwarf leader~
+&+WLord &N&+rBerhad &+WKhor&N&+calator&N~
+&+WLord &N&+rBorhad &+WKhor&N&+calator &N&+cthe &+Ymountain dwarf &+Cfort &n&+rleader &+Wstands here.
+~
+&+WLord &N&+rBorhad &+WKhor&N&+calator &+Yis an aged, yet strong and brilliant
+&+Ydwarven commander.  Rumored to be of the &N&+cKimordril &N&+rbloodline&+Y, &+WLord
+&n&+rBorhad &+WKhor&N&+calator &+Yswings a mighty &+Whammer &+Yand boasts a legendary
+&n&+yheadbutt&+Y.  A long-running friend of &+RTaark Shanat&+Y, &n&+rBorhad &+CKhor&N&+calator
+&+Yboasts strong ties to &N&+yShan&+La&N&+yt&+La&N&+yr&+Y.  He has a long &+Lblack &+Ybeard
+&+Ywith wisps of &Ngrey &+Yand &+Wwhite&+Y, showing signs of age.
+~
+1157630154 128 0 956301464 14528 0 0 1000 S
+pm 0 67108929 -1
+60 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#83351
+huge boar~
+&+La huge &N&+yboar&N~
+&+LA huge &N&+yboar &+Lsniffs around the area.
+~
+   &+LThis huge pig-nosed, &+Wwhite-tusked &+Lbeast stands here covered in a fine
+&+Llayer of &N&+yfur&+L.  This boar has beady black eyes and a small tuft of hair
+&+Lupon its large head.
+~
+134217738 0 0 402653208 0 0 0 0 S
+ae 0 1 -1
+40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1

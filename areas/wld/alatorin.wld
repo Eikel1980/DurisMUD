@@ -9272,6 +9272,16 @@ S
 &+Lshady underground.
 ~
 831 32768 14
+D0
+&+LA large &N&+rdoor&+L leads to a shop.
+~
+door~
+1 0 83700
+D2
+&+LA door to an ancient hold.
+~
+door~
+1 0 83699
 D3
 ~
 ~
@@ -11615,7 +11625,7 @@ D0
 &+LA door with a large &+Wmithril &+Llock.
 ~
 door~
-1 0 83679
+3 83386 83679
 D1
 ~
 ~
@@ -11804,4 +11814,327 @@ D2
 ~
 ~
 0 0 83671
+S
+#83682
+&+LStart of a Rocky Pass&N~
+   &+LThis rocky mountain pass descends the further westward, being overlooked
+&+Lby numerous shelves of rocky bluff.  The air has a scent of the sea to it as
+&+Lthe ocean is close.  This part of the Shanatar mountains begins to descend
+&+Ltowards the western coast from this pass.
+~
+831 32768 5
+D3
+~
+~
+0 0 83683
+S
+#83683
+&+LA &N&+yRocky &+LPass&N~
+   &+LThis rocky mountain pass descends the further westward, being overlooked
+&+Lby numerous shelves of rocky bluff.  The air has a scent of the sea to it as
+&+Lthe ocean is close.  This part of the Shanatar mountains begins to descend
+&+Ltowards the western coast from this pass.
+~
+831 32768 5
+D1
+~
+~
+0 0 83682
+D3
+~
+~
+0 0 83684
+S
+#83684
+&+LAbove a Descent&N~
+   &+LThis rocky mountain pass descends the further westward, being overlooked
+&+Lby numerous shelves of rocky bluff.  The air has a scent of the sea to it as
+&+Lthe ocean is close.  This part of the Shanatar mountains begins to descend
+&+Ltowards the western coast from this pass.
+~
+831 32768 5
+D1
+~
+~
+0 0 83683
+D5
+~
+~
+0 0 83685
+F
+25
+S
+#83685
+&+LBelow an Ascent~
+   &+LThis rocky mountain pass descends the further westward, being overlooked
+&+Lby numerous shelves of rocky bluff.  The air has a scent of the sea to it as
+&+Lthe ocean is close.  This part of the Shanatar mountains begins to descend
+&+Ltowards the western coast from this pass.
+~
+831 32768 5
+D4
+~
+~
+0 0 83684
+D7
+~
+~
+0 0 83686
+S
+#83686
+&+LA Pass Up the &N&+yMountain~
+   &+LThis rocky mountain pass descends the further westward, being overlooked
+&+Lby numerous shelves of rocky bluff.  The air has a scent of the sea to it as
+&+Lthe ocean is close.  This part of the Shanatar mountains begins to descend
+&+Ltowards the western coast from this pass.
+~
+831 32768 5
+D2
+~
+~
+0 0 83689
+D3
+~
+~
+0 0 83687
+D8
+~
+~
+0 0 83685
+S
+#83687
+&+WA Narrow Ledge Around a Chasm&N~
+   &+WThis narrow ledge overlooks a deep chasm.  Two narrow ledges of stone are around
+&+Wthe center crag, which seems to be full of water at the very bottom - most likely
+&+Wfrom the oceanic coast to the west.  The sounds of a shipyard can be heard in the
+&+Wdistance; bells are ringing and men shouting.
+~
+831 32768 5
+D1
+~
+~
+0 0 83686
+D3
+~
+~
+0 0 83688
+S
+#83688
+&+WA Ledge Turn~
+   &+WThis narrow ledge overlooks a deep chasm.  Two narrow ledges of stone are around
+&+Wthe center crag, which seems to be full of water at the very bottom - most likely
+&+Wfrom the oceanic coast to the west.  The sounds of a shipyard can be heard in the
+&+Wdistance; bells are ringing and men shouting.
+~
+831 32768 5
+D1
+~
+~
+0 0 83687
+D2
+~
+~
+0 0 83692
+S
+#83689
+&+WA Narrow Ledge Around a Chasm&N~
+   &+WThis narrow ledge overlooks a deep chasm.  Two narrow ledges of stone are around
+&+Wthe center crag, which seems to be full of water at the very bottom - most likely
+&+Wfrom the oceanic coast to the west.  The sounds of a shipyard can be heard in the
+&+Wdistance; bells are ringing and men shouting.
+~
+831 32768 5
+D0
+~
+~
+0 0 83686
+D2
+~
+~
+0 0 83690
+S
+#83690
+&+WA Rocky Ledge Around a Turn~
+   &+WThis narrow ledge overlooks a deep chasm.  Two narrow ledges of stone are around
+&+Wthe center crag, which seems to be full of water at the very bottom - most likely
+&+Wfrom the oceanic coast to the west.  The sounds of a shipyard can be heard in the
+&+Wdistance; bells are ringing and men shouting.
+~
+831 32768 5
+D0
+~
+~
+0 0 83689
+D3
+~
+~
+0 0 83691
+S
+#83691
+&+WA Rocky Ledge Before a Chasm~
+   &+WThis narrow ledge overlooks a deep chasm.  Two narrow ledges of stone are around
+&+Wthe center crag, which seems to be full of water at the very bottom - most likely
+&+Wfrom the oceanic coast to the west.  The sounds of a shipyard can be heard in the
+&+Wdistance; bells are ringing and men shouting.
+~
+831 32768 5
+D0
+~
+~
+0 0 83692
+D1
+~
+~
+0 0 83690
+D3
+~
+~
+0 0 83693
+S
+#83692
+&+WA Narrow Ledge Around a Chasm&N~
+   &+WThis narrow ledge overlooks a deep chasm.  Two narrow ledges of stone are around
+&+Wthe center crag, which seems to be full of water at the very bottom - most likely
+&+Wfrom the oceanic coast to the west.  The sounds of a shipyard can be heard in the
+&+Wdistance; bells are ringing and men shouting.
+~
+831 32768 5
+D0
+~
+~
+0 0 83688
+D2
+~
+~
+0 0 83691
+S
+#83693
+&+gA Grassy Clearing&N~
+   &+gThis grassy clearing high up in the mountains serves as a rather pleasant
+&+gscene of natures sanctuary.  There are beautiful wild flowers growing here as
+&+gwell as a small mountain stream.  Such a scenic wonderment in a place of such
+&+ghigh travel, as the rocky mountain pass from the east leads into this grassy
+&+gclearing.  This grassy clearing sees a cliff face to the west, a brief trail
+&+gleading down the hill branching off to the north - where the terrain descends
+&+gwalkably gradual.
+~
+831 32768 2
+D0
+~
+~
+0 0 83694
+D1
+~
+~
+0 0 83691
+D3
+~
+~
+0 0 83697
+S
+#83694
+&+LA Trail &N&+yAround a Cliff~
+   &+gA grassy trail descends around a rocky bluff topped with grass above.  The
+&+gdrop seems rather signifigant, as the cliff face is completely vertical.  There
+&+gare tree roots hanging out from various spots of the cliff face, suggesting
+&+gthat this terrain may be the result of a recent shift in the world's makeup.
+~
+831 32768 2
+D2
+~
+~
+0 0 83693
+D3
+~
+~
+0 0 83695
+S
+#83695
+&+LA Turn in the Trail~
+   &+gA grassy trail descends around a rocky bluff topped with grass above.  The
+&+gdrop seems rather signifigant, as the cliff face is completely vertical.  There
+&+gare tree roots hanging out from various spots of the cliff face, suggesting
+&+gthat this terrain may be the result of a recent shift in the world's makeup.
+~
+831 32768 2
+D1
+~
+~
+0 0 83694
+D7
+~
+~
+0 0 83696
+S
+#83696
+&+LA Trail &N&+yAround a Cliff~
+   &+gA grassy trail descends around a rocky bluff topped with grass above.  The
+&+gdrop seems rather signifigant, as the cliff face is completely vertical.  There
+&+gare tree roots hanging out from various spots of the cliff face, suggesting
+&+gthat this terrain may be the result of a recent shift in the world's makeup.
+~
+831 32768 2
+D2
+~
+~
+0 0 83698
+D8
+~
+~
+0 0 83695
+S
+#83697
+&+gA Grassy &+WCliff&N~
+   &+gA grassy trail descends around a rocky bluff topped with grass above.  The
+&+gdrop seems rather signifigant, as the cliff face is completely vertical.  There
+&+gare tree roots hanging out from various spots of the cliff face, suggesting
+&+gthat this terrain may be the result of a recent shift in the world's makeup.
+~
+831 32768 2
+D1
+~
+~
+0 0 83693
+S
+#83698
+&+yA Rocky Cliff Face~
+   &+yThis rocky halt occurs against the steep uprising of the Shanatar
+&+yMountains to the east - directly below a steep cliff face drop.  The
+&+ycliff face is jagged and not completely impossible to climb.  There
+&+yare sounds and sights of an active dwarven port just to the west.
+~
+831 32768 2
+D0
+~
+~
+0 0 83696
+S
+#83699
+&+LA Dark, &NAncient &+LChamber&n~
+   &+LThis dark, ancient chamber was once perhaps used as a storage chamber
+&+Lor sleeping hold.  Now, however, it is abandoned, dark, and unused.  The
+&+Lfloor is made out of blocked stone, set in a design that has gone unused
+&+Lfor years.  The walls are decorated with aging, fading fresco.
+~
+831 32768 0
+D0
+&+LA large door.
+~
+door~
+1 0 83549
+S
+#83700
+&+rThe Assassin's &n&+yEssentials&N~
+   &+rThe Assassin's &N&+yEssentials&n&+r, an unsanctioned, make-shift store
+&+yset deep within the rogue's hideout of Alatorin, houses numerous poisons,
+&+ypotions, concoctions, and strange elixirs scattered about wooden shelves
+&+ybehind a large merchant's stall.  The owner of this shop has turned quite
+&+ya profit, but the ingredients of his vile mixtures remain questionable.
+~
+831 32768 0
+D2
+&+LA large door &N&+rexits the shop.
+~
+door~
+1 0 83549
 S
