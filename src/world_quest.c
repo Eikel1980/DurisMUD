@@ -245,9 +245,9 @@ void quest_reward(P_char ch, P_char quest_mob, int type)
   if(GET_LEVEL(ch) < 21)
     gain_exp(ch, NULL, (EXP_NOTCH(ch) * 2), EXP_WORLD_QUEST);
   else if(GET_LEVEL(ch) < 31)
-    gain_exp(ch, NULL, (EXP_NOTCH(ch)), EXP_WORLD_QUEST);
+    gain_exp(ch, NULL, (int)(EXP_NOTCH(ch) * 0.75), EXP_WORLD_QUEST);
   else if(GET_LEVEL(ch) < 41)
-    gain_exp(ch, NULL, ((int)(EXP_NOTCH(ch) * 0.25)), EXP_WORLD_QUEST);
+    gain_exp(ch, NULL, ((int)(EXP_NOTCH(ch) * 0.20)), EXP_WORLD_QUEST);
   else
     gain_exp(ch, NULL, ((int)(EXP_NOTCH(ch) * 0.05)), EXP_WORLD_QUEST);
     
