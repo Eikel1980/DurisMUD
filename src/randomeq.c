@@ -757,7 +757,7 @@ P_obj create_random_eq_new(P_char killer, P_char mob, int object_type,
     }
     /*  Zone named items get a higher chance to get multiple affects set */
     obj = setsuffix_obj_new(obj);
-    while (!number(0, 1))
+    while (!number(0, 9))
     {
       obj = setsuffix_obj_new(obj);
     }
@@ -796,11 +796,11 @@ P_obj create_random_eq_new(P_char killer, P_char mob, int object_type,
             strip_ansi(material_data[material].m_name).c_str(),
             strip_ansi(slot_data[slot].m_name).c_str(), strip_ansi(buf_temp).c_str());
 
-    if(!number(0, 6))
+    if(!number(0, 9))
     {
       obj = setsuffix_obj_new(obj);
       int sufcount = 0; // to ensure that we don't infinite loop if difficulty isn't set
-      while (!number(0, zone->difficulty) && sufcount < 2)  // zone difficulty generally 1, harder zones might be 2
+      while (number(0, zone->difficulty) && sufcount < 2)  // zone difficulty generally 1, harder zones might be 2
       {
         obj = setsuffix_obj_new(obj);
         sufcount++; 
@@ -835,7 +835,7 @@ P_obj create_random_eq_new(P_char killer, P_char mob, int object_type,
               slot_data[slot].m_name, buf_temp);
     }
     obj = setsuffix_obj_new(obj);
-    while (!number(0, 6))
+    while (!number(0, 9))
     {
       obj = setsuffix_obj_new(obj);
     }
