@@ -868,90 +868,89 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
   {
  
 // Non multi-class mobs exp modifiers are below.
-    if(!IS_MULTICLASS_NPC(victim))
+    if(!IS_MULTICLASS_NPC(victim) &&
+        GET_LEVEL(victim) > 20)
     {
-      if(GET_LEVEL(victim) <= 20)
-      { }
-      else if(GET_CLASS(victim, CLASS_WARRIOR))
-        XP *= 0.50;
+      if(GET_CLASS(victim, CLASS_WARRIOR))
+        XP *= (get_property("gain.exp.mod.warrior", 1.00));
       else if(GET_CLASS(victim, CLASS_MERCENARY))
-        XP *= 0.50;
+        XP *= (get_property("gain.exp.mod.mercenary", 1.00));
       else if(GET_CLASS(victim, CLASS_ROGUE))
-        XP *= 0.50;
+        XP *= (get_property("gain.exp.mod.rogue", 1.00));
       else if(GET_CLASS(victim, CLASS_AVENGER))
-        XP *= 0.75;
+        XP *= (get_property("gain.exp.mod.avenger", 1.00));
       else if(GET_CLASS(victim, CLASS_DREADLORD))
-        XP *= 0.75;
+        XP *= (get_property("gain.exp.mod.dreadlord", 1.00));
       else if(GET_CLASS(victim, CLASS_SORCERER))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.sorcerer", 1.00));
       else if(GET_CLASS(victim, CLASS_CONJURER))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.conjurer", 1.00));
       else if(GET_CLASS(victim, CLASS_NECROMANCER))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.necromancer", 1.00));
       else if(GET_CLASS(victim, CLASS_PSIONICIST))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.psionicist", 1.00));
       else if(GET_CLASS(victim, CLASS_PALADIN))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.paladin", 1.00));
       else if(GET_CLASS(victim, CLASS_ANTIPALADIN))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.antipaladin", 1.00));
       else if(GET_CLASS(victim, CLASS_ETHERMANCER))
-        XP *= 1.15;
+        XP *= (get_property("gain.exp.mod.ethermancer", 1.00));
       else if(GET_CLASS(victim, CLASS_BERSERKER))
-        XP *= 0.50;
+        XP *= (get_property("gain.exp.mod.berserker", 1.00));
       else if(GET_CLASS(victim, CLASS_MONK))
-        XP *= 0.75;
+        XP *= (get_property("gain.exp.mod.monk", 1.00));
       else if(GET_CLASS(victim, CLASS_CLERIC))
-        XP *= 0.85;
+        XP *= (get_property("gain.exp.mod.cleric", 1.00));
       else if(GET_CLASS(victim, CLASS_SHAMAN))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.shaman", 1.00));
       else if(GET_CLASS(victim, CLASS_DRUID))
-        XP *= 1.25;
+        XP *= (get_property("gain.exp.mod.druid", 1.00));
       else
-        XP *= 0.50;
+        XP *= (get_property("gain.exp.mod.other", 1.00));
     }
     
     if(GET_LEVEL(victim) > 20)
     {
       if(IS_ANIMAL(victim) ||
          IS_SLIME(victim))
-        XP *= 0.50;
+        XP *= (get_property("gain.exp.mod.easyraces", 1.00));
     }
     
 // Exp penalty for classes that advance too quickly.
     if(GET_CLASS(ch, CLASS_NECROMANCER) &&
        GET_LEVEL(ch) < 31)
-          XP *= 0.75;
+          XP *= (get_property("gain.exp.mod.player.necro", 1.00));
     else if(GET_CLASS(ch, CLASS_NECROMANCER))
-      XP *= 0.50;
+      XP *= (get_property("gain.exp.mod.player.necro.tier", 1.00));
 
 // Exp penalty for classes that advance too quickly.
     if(GET_CLASS(ch, CLASS_MERCENARY))
-      XP *= 0.75;
+      XP *= (get_property("gain.exp.mod.player.merc", 1.00));
     
-    if(GET_RACE(victim) == RACE_DROW)
-      XP *= 1.15;
+    if(GET_RACE(victim) == RACE_DROW)      
+      XP *= (get_property("gain.exp.mod.victim.race.drow", 1.00));
     
     if(GET_RACE(victim) == RACE_GREY)
-      XP *= 1.15;
+      XP *= (get_property("gain.exp.mod.victim.race.grey", 1.00));
       
     if(GET_RACE(victim) == RACE_PLICH)
-      XP *= 1.15;
-      
-    if(IS_SET(victim->specials.act, ACT_HUNTER))
-      XP *= 1.15;
+      XP *= (get_property("gain.exp.mod.victim.race.plich", 1.00));
       
     if(IS_GREATER_RACE(victim))
-      XP *= 2.00;
+      XP *= (get_property("gain.exp.mod.victim.race.greater", 1.00));
     else if(IS_ELITE(victim))
-      XP *= 2.00;
+      XP *= (get_property("gain.exp.mod.victim.race.elite", 1.00));
     else if(GET_RACE(victim) == RACE_GIANT)
-      XP *= 1.50;
+      XP *= (get_property("gain.exp.mod.victim.race.giant", 1.00));
     else if(IS_ELEMENTAL(victim))
-      XP *= 1.30;
+      XP *= (get_property("gain.exp.mod.victim.race.elemental", 1.00));
+      
+    if(IS_SET(victim->specials.act, ACT_HUNTER))
+      XP *= (get_property("gain.exp.mod.victim.act.hunter", 1.00));
       
     if(!IS_PC(ch) &&
        !IS_SET(ch->specials.act, ACT_MEMORY))
-      XP *= 0.25;
+      XP *= (get_property("gain.exp.mod.victim.act.nomemory", 1.00));
     
     if(IS_PC_PET(victim))
       return 0;
@@ -964,9 +963,11 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
       
     if(CHAR_IN_TOWN(ch) && (GET_LEVEL(victim) > 20) && !IS_PC(victim))
     {
-      XP = (int) (XP * 0.2);
-      send_to_char("&+gThis being a hometown, you receive fewer exps...&n", ch);
-    }
+      XP *= (get_property("gain.exp.mod.victim.location.hometown", 1.00));
+      if(!number(0, 49)) // Limit the spam
+        send_to_char("&+gThis being a hometown, you receive fewer exps...&n", ch);
+    } 
+    
     if(!GET_EXP(victim))
       return 0;
 
