@@ -1203,5 +1203,6 @@ struct material_data {
 
 #define _NEW_LOW_NECRO_ 0
 #define PLAYERLESS_ZONE_SPEED_MODIFIER 3
+#define WH_HIGH_PRIEST_VNUM 55184
 
 #endif /* _DURIS_DEFINES_H_ */

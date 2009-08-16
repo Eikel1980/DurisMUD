@@ -274,6 +274,15 @@ int char_deserves_helping(const P_char ch, const P_char candidate,
       !((candidate->following == ch) || (ch->following == candidate) ||
         (ch->group && (ch->group == candidate->group))))
     return FALSE;
+    
+  if(GET_VNUM(ch) == WH_HIGH_PRIEST_VNUM ||
+     GET_VNUM(candidate) == WH_HIGH_PRIEST_VNUM)
+        return false;
+    
+// Testing to see if this has a desired effect.
+  if(IS_HOMETOWN(ch->in_room) &&
+     !isname("guard", GET_NAME(candidate)))
+        return false;
 
   return TRUE;
 }
@@ -2954,7 +2963,7 @@ bool CastShamanSpell(P_char ch, P_char victim, int helping)
           (sect == SECT_UNDRWLD_INSIDE) ||
           (sect == SECT_UNDRWLD_WILD)) &&
           can_summon_beast(ch, lvl) &&
-          GET_VNUM(ch) != 55184) // Winterhaven high priest
+          GET_VNUM(ch) != WH_HIGH_PRIEST_VNUM) // Winterhaven high priest
       {
         if(npc_has_spell_slot(ch, SPELL_GREATER_SUMMON_BEAST))
           spl = SPELL_GREATER_SUMMON_BEAST;

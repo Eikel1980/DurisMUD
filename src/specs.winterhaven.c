@@ -1398,7 +1398,7 @@ int newbie_spellup_mob(P_char ch, P_char victim, int cmd, char *arg)
 {
   int *spells = NULL;
 
-// Some spells don not stack such as pantherspeed and wolfspeed, accelerated healing and regeneration.
+// Some spells do not stack such as pantherspeed and wolfspeed, accelerated healing and regeneration.
 // So try to avoid these hangups otherwise the spellup mob will simply spam the spell over and over.
   int      ClerBeneSpells[] = {SPELL_ARMOR, SPELL_BLESS, SPELL_DETECT_MAGIC,
     SPELL_PROTECT_FROM_COLD, SPELL_PROTECT_FROM_FIRE,
@@ -1422,7 +1422,8 @@ int newbie_spellup_mob(P_char ch, P_char victim, int cmd, char *arg)
   if (!(ch) ||
       !IS_ALIVE(ch) ||
       IS_IMMOBILE(ch) ||
-      IS_CASTING(ch))
+      IS_CASTING(ch) ||
+      IS_FIGHTING(ch))
   {
     return FALSE;
   }
@@ -1437,8 +1438,7 @@ int newbie_spellup_mob(P_char ch, P_char victim, int cmd, char *arg)
   /* make sure I'm even able to cast in this room! */
   if (IS_SET(world[ch->in_room].room_flags,  SAFE_ZONE | NO_MAGIC | ROOM_SILENT) ||
       affected_by_spell(ch, SPELL_FEEBLEMIND) ||  
-      IS_AFFECTED2(ch, AFF2_SILENCED) ||
-      IS_FIGHTING(ch) )
+      IS_AFFECTED2(ch, AFF2_SILENCED))
   {
     return FALSE;
   } 
@@ -1469,35 +1469,42 @@ int newbie_spellup_mob(P_char ch, P_char victim, int cmd, char *arg)
   for(P_char tch = world[ch->in_room].people; tch; tch = tch->next )
   {
     // return if its an npc, too high level, fighting, with a bit of randomness thrown in
+    
     if(!IS_PC(tch) ||
         GET_LEVEL(tch) > 35 ||
-        !number(0, 2))
+        !number(0, 2) ||
+        ch->in_room != tch->in_room)
           continue;
+          
+    if(IS_FIGHTING(tch))
+      continue;
     
-    if(GET_HIT(tch) < GET_MAX_HIT(tch) &&
-       !IS_FIGHTING(tch))
+    if(GET_HIT(tch) < (int)(GET_MAX_HIT(tch) * 0.75))
+    {
+      if(npc_has_spell_slot(ch, SPELL_FULL_HEAL) && number(0, 1))
       {
-        if(npc_has_spell_slot(ch, SPELL_FULL_HEAL) && number(0, 1))
-        {
-          return MobCastSpell(ch, tch, 0, SPELL_FULL_HEAL, GET_LEVEL(ch));
-        }
-        else if(npc_has_spell_slot(ch, SPELL_GREATER_MENDING) && number(0, 1))
-        {
-          return MobCastSpell(ch, tch, 0, SPELL_GREATER_MENDING, GET_LEVEL(ch));
-        }
-        else if(npc_has_spell_slot(ch, SPELL_NATURES_TOUCH) && number(0, 1))
-        {
-          return MobCastSpell(ch, tch, 0, SPELL_NATURES_TOUCH, GET_LEVEL(ch));
-        }
+        return MobCastSpell(ch, tch, 0, SPELL_FULL_HEAL, GET_LEVEL(ch));
       }
+      else if(npc_has_spell_slot(ch, SPELL_GREATER_MENDING) && number(0, 1))
+      {
+        return MobCastSpell(ch, tch, 0, SPELL_GREATER_MENDING, GET_LEVEL(ch));
+      }
+      else if(npc_has_spell_slot(ch, SPELL_NATURES_TOUCH) && number(0, 1))
+      {
+        return MobCastSpell(ch, tch, 0, SPELL_NATURES_TOUCH, GET_LEVEL(ch));
+      }
+      else
+        continue;
+    }
 
     // else step through the spell list, find one to cast
     if(spells)
       for( int i = 0; spells[i]; i++ )
       {
-        if( !affected_by_spell(tch, spells[i]) && 
+        if(!affected_by_spell(tch, spells[i]) && 
             npc_has_spell_slot(ch, spells[i]) )
         {
+          debug("(%s): casting on (%s).", J_NAME(ch), J_NAME(tch));
           return MobCastSpell(ch, tch, 0, spells[i], GET_LEVEL(ch));
         }
       }
