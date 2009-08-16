@@ -11755,15 +11755,16 @@ int world_quest(P_char ch, P_char pl, int cmd, char *arg)
         mobsay(ch, "Abandon what quest, hmmmm!");
         return TRUE;
       }
-      if(pl->only.pc->quest_giver != GET_VNUM(ch))
-      {
-        mobsay(ch, "Abandon that quest at same place as you got it!");
-        return TRUE;
+      
+// Can now abandon your quest at any bartender.
+      // if(pl->only.pc->quest_giver != GET_VNUM(ch))
+      // {
+        // mobsay(ch, "Abandon that quest at same place as you got it!");
+        // return TRUE;
 
-      }
+      // }
 
-      temp = 3 * GET_LEVEL(pl) * GET_LEVEL(pl) * GET_LEVEL(pl);
-
+      temp = (int)(get_property("worldQuest.abandon.mod", 3) * GET_LEVEL(pl) * GET_LEVEL(pl) * GET_LEVEL(pl));
 
       sprintf(money_string, "OH NO, you've cost me alot of time and money, but toss me %s and I'll take care of your task!", coin_stringv(temp) );
 
