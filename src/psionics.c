@@ -772,9 +772,9 @@ void spell_ballistic_attack(int level, P_char ch, char *arg, int type,
   
   act("With your telekinetic powers, you propel a large rock at $N&n.",
     TRUE, ch, 0, victim, TO_CHAR);
-  act("&n looks over a large rock, then seems to send it crashing into you!",
+  act("$n looks over a large rock, then seems to send it crashing into you!",
     TRUE, ch, 0, victim, TO_VICT);
-  act("&n looks over a large rock, then seems to send it crashing into $N!",
+  act("$n looks over a large rock, then seems to send it crashing into $N!",
     TRUE, ch, 0, victim, TO_NOTVICT);
 
   if(!StatSave(victim, APPLY_AGI, mod))
