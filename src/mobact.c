@@ -241,15 +241,22 @@ int char_deserves_helping(const P_char ch, const P_char candidate,
 
   if(IS_MORPH(candidate))
     return FALSE;
-
+    
+  if(ch->in_room != candidate->in_room)
+    return false;
+    
+  if(ch->specials.z_cord != candidate->specials.z_cord)
+    return false;
+    
   if(candidate->following && IS_PC(candidate->following))
     return FALSE;
 
   if(IS_PC_PET(ch))
     return FALSE;
     
-  if(GET_VNUM(ch) == IMAGE_RELFECTION_VNUM ||
-     GET_VNUM(candidate) == IMAGE_RELFECTION_VNUM)
+  if((IS_NPC(ch) &&
+      GET_VNUM(ch) == IMAGE_RELFECTION_VNUM) ||
+      GET_VNUM(candidate) == IMAGE_RELFECTION_VNUM)
         return false;
 
   if((ch->specials.fighting == candidate) ||
