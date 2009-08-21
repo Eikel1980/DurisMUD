@@ -1108,7 +1108,7 @@ int storage_locker_room_hook(int room, P_char ch, int cmd, char *arg)
 int storage_locker(int room, P_char ch, int cmd, char *arg)
 {
   P_char tmpChar = NULL;
-  int troom;
+  int troom, cost;
   struct zone_data *zone;
   int      bits, wtype, craft, mat;
   P_char   tmp_char;
@@ -1149,26 +1149,30 @@ int storage_locker(int room, P_char ch, int cmd, char *arg)
   bits =
     generic_find(name, FIND_OBJ_INV , ch,
                  &tmp_char, &tmp_object);
+                 
+  
+// 1000 = 1 plat, 100 = 1 gold
+  cost = get_property("locker.stat.cost", 100);
 
   // check legend lore
   if (tmp_object)
   {
     CharWait(ch, (int) (PULSE_VIOLENCE * 1.5));
-     if (GET_MONEY(ch) < 1000 && GET_BALANCE(ch) < 1000  )
+     if (GET_MONEY(ch) < cost && GET_BALANCE(ch) < cost  )
     {
-      send_to_char("The member of the &+YStorage Locker Safety Commission&n says 'Bring me 1 &+Wplatinum&n and ill give you the stats.'\r\n", ch);
+      send_to_char("The member of the &+YStorage Locker Safety Commission&n says 'Bring me 1 &+Ygold&n and ill give you the stats.'\r\n", ch);
       return (TRUE);
     }
     else {
-    send_to_char("The member of the &+YStorage Locker Safety Commission&n takes 1 &+Wplatinum.&n\r\n", ch);
+    send_to_char("The member of the &+YStorage Locker Safety Commission&n takes 1 &+Ygold.&n\r\n", ch);
     send_to_char("The member of the &+YStorage Locker Safety Commission&n says 'This is:'\r\n", ch);
-        if(GET_MONEY(ch) < 1000)
+        if(GET_MONEY(ch) < cost)
         {
-        SUB_BALANCE(ch, 1000, 0);
+        SUB_BALANCE(ch, cost, 0);
         }
         else
         {
-        SUB_MONEY(ch, 1000, 0);
+        SUB_MONEY(ch, cost, 0);
         }
 
     do_lore(ch, arg, 999);
