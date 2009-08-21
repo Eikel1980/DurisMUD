@@ -8380,22 +8380,25 @@ void spell_vitality(int level, P_char ch, char *arg, int type, P_char victim,
                     P_obj obj)
 {
   struct affected_type af;
-  int  healpoints = 4 * level;
+  int  healpoints = 4 * level, duration = 1;
   
   if(IS_NPC(victim) &&
      GET_VNUM(victim) == 250)
       return;
+      
+  if(!IS_PC(ch) &&
+     !IS_PC(victim))
+        duration = 3;
 
   if(!affected_by_spell(victim, SPELL_VITALITY))
   {
     send_to_char("&+BYou feel vitalized.\n", victim);
-/*
-    if(IS_THRIKREEN(victim))
-      healpoints >>= 1;
-*/
+    act("$N looks vitalized.&n",
+      TRUE, ch, 0, victim, TO_ROOM);
+
     bzero(&af, sizeof(af));
     af.type = SPELL_VITALITY;
-    af.duration = KludgeDuration(ch, 25, 4);
+    af.duration = KludgeDuration(ch, 25, 4) * duration;
     af.modifier = healpoints;
     af.location = APPLY_HIT;
 
@@ -8412,7 +8415,7 @@ void spell_vitality(int level, P_char ch, char *arg, int type, P_char victim,
       {
         send_to_char("&+WYou feel a slight &+cmagical surge&+W that reinforces and refreshes your &+Bvitality.\r\n&n", 
           victim);
-        af1->duration = KludgeDuration(ch, 25, 4);
+        af1->duration = KludgeDuration(ch, 25, 4) * duration;
       }
   }
 }
@@ -8421,7 +8424,7 @@ void spell_vitalize_undead(int level, P_char ch, char *arg, int type,
                            P_char victim, P_obj obj)
 {
   struct affected_type af;
-  int      healpoints = 2 * level;
+  int healpoints = 2 * level;
 
   if(!IS_UNDEADRACE(victim))
   {
@@ -16423,7 +16426,7 @@ void spell_vampire(int level, P_char ch, char *arg, int type, P_char vict,
   if(affected_by_spell(ch, SPELL_VAMPIRE))
   {
     for (afp = ch->affected; afp; afp = afp->next)
-      if(afp->type == SPELL_VITALITY)
+      if(afp->type == SPELL_VAMPIRE)
       {
         afp->duration = 10;
       }
