@@ -83,7 +83,7 @@ spiked stone mace~
 ~
 5 11 3 0 8 0 0 24577 0 0 0
 6 1 8 6 0 0 0 0
-1 800 100
+1 20438 100
 E
 mace~
 &+L   This simple &+wstone &+Lmace is spiked and is rather light.&N
@@ -107,9 +107,9 @@ leggings~
 &+Lstart to flicker into and out of known view.&N
 ~
 A
-1 5
+1 8
 A
-5 5
+5 8
 #99408
 spiked stone shield~
 &Na &+Lspiked &+wstone &+Lshield&N~
@@ -122,6 +122,10 @@ E
 shield~
 &+L   This simple &+wstone &+Lshield is spiked and has a leather strap.&N
 ~
+A
+18 2
+A
+19 1
 #99409
 rotted leather armor~
 &Nsome &+rrotted &+yleather &+Larmor&N~
@@ -148,9 +152,9 @@ boots black leather~
 &+Lnew.  The words '&+wFall From Grace&+L' have been etched into the soles.&N
 ~
 A
-14 9
+14 20
 A
-12 5
+12 10
 #99411
 chipped short sword~
 &Na &+Lchipped &+wsword&N~
@@ -198,7 +202,7 @@ bracer~
 &+Lbe seen upon the surface of the pointed spikes.&N
 ~
 A
-18 1
+18 2
 A
 1 5
 #99414
@@ -215,7 +219,7 @@ ring~
 &+Lflawless in every detail, except for a few minor scratches.&N
 ~
 A
-13 9
+13 15
 #99415
 bp backpack~
 &+wa &+Lblack leather backpack&N~
@@ -247,7 +251,7 @@ gloves~
 A
 18 1
 A
-19 1
+19 2
 #99417
 holy armor zarthos~
 &+wthe &+Lholy armor of &+WZarthos&N~
@@ -263,9 +267,9 @@ zarthos armor~
 &+Lvarious spots as well.&N
 ~
 A
-24 -3
+24 -5
 A
-14 18
+14 22
 #99418
 large spiked stone shield~
 &Na &+Llarge spiked &+wstone &+Lshield&N~
@@ -279,9 +283,9 @@ shield~
 &+L   This large &+wstone &+Lshield is spiked and has a leather strap.&N
 ~
 A
-20 -1
+20 -3
 A
-5 5
+5 7
 #99419
 daemonic badge emblam insignia~
 &Na &+Ldaemonic &+rs&+Re&+rr&+Rp&+re&+Rn&+rt&+Ri&+rn&+Re &+Linsignia&N~
@@ -297,9 +301,9 @@ badge emblam insignia~
 &+Lthe creatures shown in the picture.&N
 ~
 A
-26 2
+26 7
 A
-1 2
+1 7
 #99420
 talisman~
 &Na &+Lstone &+wtalisman&N~
@@ -331,7 +335,7 @@ stud earring~
 &+Lreal signs of damage, yet seems to be rather old.&N
 ~
 A
-13 6
+13 10
 A
 26 4
 #99422
@@ -347,7 +351,7 @@ longsword sword~
 &+L   This &+clongsword &+Lhas been stained &+rcrimson &+Lby many past battles.&N
 ~
 A
-18 2
+18 3
 A
 19 2
 #99423
@@ -364,7 +368,7 @@ sleeves~
 &+Lbe seen upon the surface of the pointed spikes.&N
 ~
 A
-18 1
+18 2
 A
 20 -2
 #99424
@@ -380,7 +384,7 @@ dagger~
 &+L   This dagger &+Lhas been crafted from a twisted &+Wbone &+Lof some being.&N
 ~
 A
-18 1
+18 2
 A
 19 2
 #99425
@@ -412,7 +416,7 @@ belt~
 &+L   This &+ybelt &+Lhas been crafted from the magical hide of a displacer beast.&N
 ~
 A
-18 2
+18 3
 A
 1 9
 #99427
@@ -428,7 +432,7 @@ visor~
 &+L   This visor has been crafted from a fine grade of obsidian.&N
 ~
 A
-18 1
+18 2
 A
 13 5
 #99428
@@ -445,9 +449,9 @@ axe~
 &+Lstains.  Several notches have been scratched into the handle of this weapon.&N
 ~
 A
-18 3
+18 4
 A
-19 2
+19 4
 #99429
 opal eye nrohtereb~
 &+wthe &+Lopal eye of N&+bro&+Lh&+bt&+Lereb&N~
@@ -462,7 +466,7 @@ opal eye nrohtereb~
 &+Lit still had life.&N
 ~
 A
-13 18
+13 20
 A
 24 -3
 #99430
@@ -490,7 +494,7 @@ helm~
 &+L   This faded helm has been crafted from a fine grade of obsidian.&N
 ~
 A
-19 1
+19 2
 A
 26 8
 #99432
@@ -499,7 +503,7 @@ claymore sword~
 &+LA large two handed claymore has been left upon the gloomy ground.&N~
 ~
 5 22 3 0 15 0 4203520 4202497 67 95993883 385220608
-13 4 6 3 0 0 0 0
+13 4 6 3 0 48 41 30
 16 18000 100 8192 0 0 0
 E
 claymore~
@@ -545,7 +549,7 @@ sabatons boots~
 &+Lwearer of them.&N
 ~
 A
-24 -2
+24 -3
 A
 14 9
 #99435
@@ -561,9 +565,9 @@ robe hooded~
 &+L   This black hooded robe has many strange runes that have been etched into it.&N
 ~
 A
-5 9
+5 11
 A
-27 5
+27 8
 #99436
 mask chipped skull~
 &Na &+Lchipped &+Wskull &+Lmask&N~
@@ -612,7 +616,7 @@ leggings obsidian~
 &+Lprotection runes.&N
 ~
 A
-19 1
+19 2
 A
 5 5
 #99439
@@ -643,7 +647,7 @@ sleeves emerald~
 &+Lthe surface.  Symbols of &+gs&+Ge&+grp&+Ge&+gnt&+Gi&+gn&+Ge &+Ldragons have been etched into this object.&N
 ~
 A
-13 9
+13 13
 A
 24 -2
 #99441
@@ -662,7 +666,7 @@ boots~
 &+Ltyrant who stalks in the &+Ct&+cw&+Ci&+cl&+Ci&+cg&+Ch&+ct&+L.&N
 ~
 A
-20 -1
+20 -3
 A
 13 9
 #99442
@@ -680,7 +684,7 @@ cloak rotted hydrascale~
 &+Lage not thought real.  Now this is just another &+rr&+yo&+rtt&+ye&+rd &+Lrelic from the past.&N
 ~
 A
-13 9
+13 16
 A
 24 -1
 #99443
@@ -698,9 +702,9 @@ crown tarnished emerald~
 &+Ldemons adorn this ominous object.&N
 ~
 A
-13 9
+13 15
 A
-24 -2
+24 -3
 #99444
 belt torn obsidian~
 &Na &+Ltorn obsidian belt&N~
@@ -718,7 +722,7 @@ belt torn obsidian~
 A
 13 5
 A
-24 -1
+24 -3
 #99445
 feather bluejay majestic~
 &Na &+Bmajestic &+bbluejay &+Bfeather&N~
@@ -726,7 +730,7 @@ feather bluejay majestic~
 ~
 8 50 2 0 11 81 274432 9453569 0 0 0
 0 0 0 0 0 0 0 0
-0 8000 100
+0 43478 100
 E
 feather bluejay~
 &+B   Th&+bi&+Bs i&+bt&+Bem &+bi&+Bs &+ba &+Bv&+be&+Bry m&+ba&+Bj&+be&+Bst&+bi&+Bc sh&+ba&+Bd&+be o&+Bf bl&+bue&+B, th&+be &+Bl&+bi&+Bk&+be o&+Bf wh&+bi&+Bch y&+bou &+Bh&+ba&+Bv&+be &+Bn&+be&+Bv&+be&+Br&n

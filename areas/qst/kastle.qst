@@ -33,8 +33,7 @@ QA
 &+L                                                                        &N
 ~
 R I 99447
-R C 181000
-R I 0
+R C 384000
 G I 98914
 G I 98914
 D
@@ -86,7 +85,7 @@ QA
 &+LSir &+gSl&+Go&+gr&+Gd&+glak &+Lflashes a strange sinister smile.&N
 ~
 R E 124000
-R C 24000
+R C 50000
 G I 99414
 D
 &+LSir &+gSl&+Go&+gr&+Gd&+glak &+Lplaces the ring on his decayed finger.&N

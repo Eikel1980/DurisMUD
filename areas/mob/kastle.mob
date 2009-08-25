@@ -9,8 +9,8 @@ zombie guard~
 &+Lmassive decayed shoulders.&N
 ~
 1174550600 0 0 0 2 0 0 -1000 S
-U 0 1 -1
-20 0 0 1d1+1 1d1+1
+zo 0 1 -1
+35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99401
@@ -39,9 +39,9 @@ a &+Lvorblot&N~
 &+Lalive is difficult to tell.  Most likely it lives off the &+Wmaggots &+Land decayed&N
 &+rflesh &+Lwithin this keep.&N
 ~
-72 0 0 0 0 0 0 1000 S
-AP 0 1 0
-8 0 0 1d1+1 1d1+1
+72 0 0 0 0 0 0 0 S
+x 0 1 3
+37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99403
@@ -54,8 +54,8 @@ a &+Bdorblot&N~
 &+Balive is difficult to tell.  Most likely it lives off the &+Wmaggots &+Band decayed&N
 &+rflesh &+Bwithin this &+Lkeep&+B.&N
 ~
-72 0 0 0 0 0 0 1000 S
-AP 0 1 0
+72 0 0 0 0 0 0 0 S
+X 0 1 3
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -69,9 +69,9 @@ a &+yranvok&N~
 &+ysockets of infernal despair.  Most likely this being lives off slivers of &+rflesh&N
 &+yand fools who wander where they are not welcomed.&N
 ~
-1073756232 0 0 33554432 0 0 0 1000 S
-A 0 1 2
-9 0 0 1d1+1 1d1+1
+1073756232 0 0 33554432 0 0 0 0 S
+y 0 1 2
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99405
@@ -85,8 +85,8 @@ skeletal sentry~
 &+LAnother eternal servant of the evil force who know rules this ruined keep.&N
 ~
 14408 33554440 0 0 2 0 0 -1000 S
-U 0 1 3
-5 0 0 1d1+1 1d1+1
+sk 0 1 3
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99406
@@ -101,8 +101,8 @@ knight skeletal~
 &+Lit once did when it knew lustless life.&N
 ~
 1073756232 33554440 0 0 2 0 0 -1000 S
-U 0 1 3
-10 0 0 1d1+1 1d1+1
+sk 0 1 3
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99407
@@ -116,8 +116,8 @@ decayed knight~
 &+LAnother sadistic servant of the evil force who know rules this ruined keep.&N
 ~
 14408 0 0 0 2 0 0 -1000 S
-U 0 1 3
-16 0 0 1d1+1 1d1+1
+uk 0 1 3
+40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99408
@@ -130,7 +130,7 @@ maggot~
 ~
 74 0 0 0 0 0 0 0 S
 AP 0 0 0
-3 0 0 1d1+1 1d1+1
+35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99409
@@ -143,7 +143,7 @@ maggot~
 ~
 74 0 0 0 0 0 0 0 S
 AP 0 0 0
-5 0 0 1d1+1 1d1+1
+36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99410
@@ -157,8 +157,8 @@ zombie guardian~
 &+Ldecrepid decayed shoulders.&N
 ~
 1174550600 0 0 0 2 0 0 -1000 S
-U 0 1 -1
-18 0 0 1d1+1 1d1+1
+zo 0 1 -1
+36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99411
@@ -172,8 +172,8 @@ zombie servant~
 &+Lhappened.&N
 ~
 33699912 0 0 0 2 0 0 -1000 S
-U 0 0 2
-16 0 0 1d1+1 1d1+1
+zo 0 0 2
+30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99412
@@ -187,8 +187,8 @@ skeletal servant~
 &+Lhappened.&N
 ~
 33699912 0 0 0 2 0 0 -1000 S
-U 0 0 2
-14 0 0 1d1+1 1d1+1
+sk 0 0 2
+30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99413
@@ -202,8 +202,8 @@ sentry zombie~
 &+Llustless life.  Eternal in its service to the dark master of this keep.&N
 ~
 1107441736 0 0 0 2 0 0 -1000 S
-U 0 1 3
-15 0 0 1d1+1 1d1+1
+zo 0 1 3
+36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99414
@@ -217,8 +217,8 @@ shadow warrior~
 &+Lis a servant of the dark force that rules this chaos cursed keep.&N
 ~
 33699912 0 0 0 2 0 0 -1000 S
-U 0 1 3
-22 0 0 1d1+1 1d1+1
+sh 0 1 3
+36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99415
@@ -232,8 +232,8 @@ fiend flesh~
 &+Lhair flows down well past broad massive shoulders to the base of its &+Wspine&+L.&N
 ~
 33568840 1 0 98368 2 16777216 0 -1000 S
-AC 0 1 3
-20 0 0 1d1+1 1d1+1
+y 0 1 3
+37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99416
@@ -246,8 +246,8 @@ dragazhar night hunter bat~
 &+Lcrimson.  The creature wanders here in search of food to sustain listliss life.&N
 ~
 1107439688 1 0 33554432 0 16777216 0 0 S
-A 0 0 3
-9 0 0 1d1+1 1d1+1
+Y 0 1 3
+36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99417
@@ -261,8 +261,8 @@ shadow knight~
 &+Lis a servant of the dark force that rules this chaos cursed keep.&N
 ~
 33699912 0 0 0 2 0 0 -1000 S
-U 0 1 4
-24 0 0 1d1+1 1d1+1
+sh 0 1 4
+37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99418
@@ -275,8 +275,8 @@ slavork slime glob~
 &+gbe seen floating upon the surface of this being.&N
 ~
 72 0 0 0 0 0 0 1000 S
-AP 0 1 0
-16 0 0 1d1+1 1d1+1
+x 0 1 3
+37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99419
@@ -290,8 +290,8 @@ a &+rrabid &+yranvok&N~
 &+Land fools who wander where they are not welcomed.&N
 ~
 1073756232 1 0 33554432 0 16777216 0 1000 S
-A 0 1 2
-12 0 0 1d1+1 1d1+1
+y 0 1 2
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99420
@@ -304,8 +304,8 @@ svartnort magenta river~
 &+mflesh that are on the gloomy ground of this dismal abode.&N
 ~
 72 0 0 0 0 0 0 -1000 S
-AP 0 1 1
-13 0 0 1d1+1 1d1+1
+L 0 1 3
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99421
@@ -320,7 +320,7 @@ thyrane tyrant~
 ~
 33699914 1 0 8 262146 0 0 -1000 S
 UV 0 16 3
-35 0 0 1d1+1 1d1+1
+46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99422
@@ -334,8 +334,8 @@ noctambulant~
 &+Lblue.  S&+be&+Lrp&+be&+Lnt&+bi&+Ln&+be &+Lscales mask a black heart of demonical death desire.&N
 ~
 33699914 1 0 1048584 2 0 0 -1000 S
-AC 0 1 3
-33 0 0 1d1+1 1d1+1
+y 0 1 3
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99423
@@ -367,8 +367,8 @@ quaden lord~
 &+Lback.  Flesh falls from the ancient &+Wbones &+Lof this unholy brute beast.&N
 ~
 33699914 1 0 0 2 0 0 -1000 S
-U 0 1 3
-31 0 0 1d1+1 1d1+1
+ul 0 512 3
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99425
@@ -385,7 +385,7 @@ vrados lord~
 ~
 1107310666 1 0 8 262146 0 0 -1000 S
 UV 0 16384 3
-30 0 0 1d1+1 1d1+1
+40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99426
@@ -400,8 +400,8 @@ undead executioner~
 &+Ldeath as it once did when it knew feeble fleeting life.&N
 ~
 33699914 1 0 8 262146 0 0 -1000 S
-U 0 16 3
-24 0 0 1d1+1 1d1+1
+zo 0 16 3
+37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99427
@@ -416,8 +416,8 @@ shraknar sir~
 &+Llands upon the gloomy ground.&N
 ~
 33699850 1 0 8 2 0 0 -1000 S
-U 0 1 3
-28 0 0 1d1+1 1d1+1
+uk 0 16 3
+37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99428
@@ -432,8 +432,8 @@ kastar~
 &+Lthree times over.  Destined to roam this realm until he is slayed by &+WZarthos&+L.&N
 ~
 33699914 1 0 8 2 0 0 -1000 S
-U 0 1 4
-26 0 0 1d1+1 1d1+1
+zo 0 16384 4
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99429
@@ -497,8 +497,8 @@ svartos lord~
 &+Lif he is slain by a &+rvampire &+Lhunter.&N
 ~
 33699912 0 0 8 262146 0 0 -1000 S
-UV 0 1 -1
-30 0 0 1d1+1 1d1+1
+UV 0 16 -1
+41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99433
@@ -513,8 +513,8 @@ vraklask sir~
 &+Lcreation.  Destined to walk the eternal walk, until slayed by a &+rvampire &+Lhunter.&N
 ~
 33699912 0 0 8 2 0 0 -1000 S
-U 0 1 3
-28 0 0 1d1+1 1d1+1
+x 0 1 3
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99434
@@ -530,7 +530,7 @@ volordles mystical knight~
 ~
 1107441736 0 0 8 262146 0 0 -1000 S
 UV 0 512 3
-31 0 0 1d1+1 1d1+1
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99435
@@ -546,7 +546,7 @@ dicalk captain guards arms~
 ~
 1107441672 0 0 8 262146 0 0 -1000 S
 UV 0 1 3
-26 0 0 1d1+1 1d1+1
+44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99436
@@ -561,8 +561,8 @@ slordlak sir~
 &+Lof sadistic suffering.  Rotted flesh falls from brittle broken &+Wbones&+L.&N
 ~
 33699912 0 0 8 2 0 0 -1000 S
-U 0 1 2
-24 0 0 1d1+1 1d1+1
+uk 0 1 2
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99437
@@ -673,8 +673,8 @@ doden warrior~
 &+Lthose who are of the &+wunlight&+L.&N
 ~
 1107441736 0 0 8 2 0 0 -1000 S
-U 0 1 3
-25 0 0 1d1+1 1d1+1
+uk 0 16 3
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99444
@@ -689,8 +689,8 @@ doden knight~
 &+Lthose who are of the &+wunlight&+L.&N
 ~
 1107441736 0 0 8 2 0 0 -1000 S
-U 0 1 3
-27 0 0 1d1+1 1d1+1
+uk 0 16 3
+41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99445
@@ -705,7 +705,7 @@ guardian vampire~
 ~
 1107441736 0 0 8 262146 0 0 -1000 S
 UV 0 1 3
-28 0 0 1d1+1 1d1+1
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99446
@@ -720,7 +720,7 @@ guard vampire~
 ~
 1107441736 0 0 8 262146 0 0 -1000 S
 UV 0 1 3
-26 0 0 1d1+1 1d1+1
+43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99447
@@ -733,8 +733,8 @@ spider hairy~
 &+Lcreature survives by eating the &+Wmaggots &+Land other vermin that dwell here.&N
 ~
 72 0 0 33554432 0 0 0 1000 S
-AS 0 0 1
-9 0 0 1d1+1 1d1+1
+AS 0 1 4
+43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99448
@@ -747,8 +747,8 @@ spider hairy large~
 &+Lcreature survives by eating the &+Wmaggots &+Land other vermin that dwell here.&N
 ~
 72 0 0 33554432 0 0 0 1000 S
-AS 0 0 1
-14 0 0 1d1+1 1d1+1
+AS 0 0 5
+45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99449
@@ -761,9 +761,9 @@ a &+Lvorblot&N~
 &+Lalive is difficult to tell.  Most likely it lives off the &+Wmaggots &+Land decayed&N
 &+rflesh &+Lwithin these c&+ba&+Lt&+ba&+Lc&+bo&+Lmbs.&N
 ~
-72 0 0 0 0 0 0 1000 S
-AP 0 1 0
-16 0 0 1d1+1 1d1+1
+72 0 0 0 0 0 0 -1000 S
+x 0 1 3
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99450
@@ -776,8 +776,8 @@ sinister bat~
 &+Lshow the skeletal outline of &+Wbones &+Llike most bats.&N
 ~
 33699912 0 0 33554432 0 0 0 -1000 S
-A 0 0 4
-25 0 0 1d1+1 1d1+1
+y 0 1 4
+40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99451
@@ -790,8 +790,8 @@ sinister bat~
 &+Lshow the skeletal outline of &+Wbones &+Llike most bats.&N
 ~
 33699912 0 0 33554432 0 0 0 -1000 S
-A 0 0 4
-26 0 0 1d1+1 1d1+1
+y 0 1 4
+40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99452
@@ -804,9 +804,9 @@ whisper spider~
 &+Lgloom seeking to bring impending doom.  Lethal legs extend form this beast's&N
 &+Linhuman exoskeleton.  This creature no doubt lives on the flesh of fools.&N
 ~
-1107441736 0 0 33554432 0 0 0 1000 S
-AS 0 1 1
-20 0 0 1d1+1 1d1+1
+1107441736 0 0 33554432 0 0 0 0 S
+AS 0 1 3
+44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99453
@@ -822,7 +822,7 @@ varathorn forsaken one~
 ~
 33699914 0 0 24 294914 18874368 0 -1000 S
 PH 0 16 3
-33 0 0 1d1+1 1d1+1
+46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #99454
@@ -835,9 +835,9 @@ a &+Llarge &+yranvok&N~
 &+ysockets of infernal despair.  Most likely this being lives off slivers of &+rflesh&N
 &+yand fools who wander where they are not welcomed.&N
 ~
-1073756232 0 0 33554432 0 0 0 1000 S
-A 0 1 3
-12 0 0 1d1+1 1d1+1
+1073756232 0 0 33554432 0 0 0 -1000 S
+x 0 1 3
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99455
@@ -851,8 +851,8 @@ fiend flesh large~
 &+Lhair flows down well past broad massive shoulders to the base of its &+Wspine&+L.&N
 ~
 33568840 1 0 98368 2 16777216 0 -1000 S
-AC 0 1 4
-25 0 0 1d1+1 1d1+1
+y 0 1 4
+40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99456
@@ -865,8 +865,8 @@ dragazhar night hunter bat~
 &+Lcrimson.  The creature wanders here in search of food to sustain listliss life.&N
 ~
 1107439688 1 0 33554432 0 0 0 0 S
-A 0 0 3
-11 0 0 1d1+1 1d1+1
+x 0 0 3
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99457
@@ -892,8 +892,8 @@ vornite slime glob~
 &+gbe seen floating upon the surface of this being.&N
 ~
 72 0 0 0 0 0 0 1000 S
-AP 0 1 0
-15 0 0 1d1+1 1d1+1
+l 0 1 0
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99459
@@ -906,8 +906,8 @@ svartnort magenta river~
 &+rflesh &+mthat are on the gloomy ground of this dismal domain.&N
 ~
 72 0 0 0 0 0 0 -1000 S
-AP 0 1 1
-12 0 0 1d1+1 1d1+1
+l 0 1 1
+35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99460
@@ -919,9 +919,9 @@ centipede huge~
 &+Lprotrude many tiny feet.  The body is plated with a chitinous shell and it&N
 &+Lmoves with a slight undulating motion.&N
 ~
-72 1 0 33554432 0 0 0 1000 S
-I 0 0 1
-1 0 0 1d1+1 1d1+1
+72 1 0 33554432 0 0 0 0 S
+I 0 1 5
+38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99461
@@ -933,9 +933,9 @@ brown mold~
 &+ybits of &+Wbone &+ycan be seen within this entity.  Whether this creature is alive or&N
 &+ynot is a bit of a mystery.&N
 ~
-72 1 0 33554432 0 0 0 1000 S
+72 1 0 33554432 0 0 0 -1000 S
 AP 0 0 0
-3 0 0 1d1+1 1d1+1
+30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #99462
@@ -950,7 +950,7 @@ nefarious warrior~
 &+Lalmost seems like he is guarding this ruined keep.&N
 ~
 33697866 437262344 1613024 32776 2 16777216 34078720 -1000 S
-U 0 1 3
-9 0 0 1d1+1 1d1+1
+zo 0 1 3
+39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
