@@ -712,8 +712,8 @@ void chant_heroism(P_char ch, char *argument, int cmd)
   sprintf(buf, "A sense of heroism grows in your heart.\r\n");
   bzero(&af, sizeof(af));
   af.type = SKILL_HEROISM;
-  af.flags = AFFTYPE_NODISPEL | AFFTYPE_SHORT;
-  af.duration = GET_LEVEL(ch) / 2;
+  af.flags = AFFTYPE_NODISPEL;
+  af.duration = MAX(5, GET_LEVEL(ch) / 4);
   
   af.modifier = MAX(2, (int) (GET_LEVEL(ch) / 4));
   af.location = APPLY_HITROLL;
