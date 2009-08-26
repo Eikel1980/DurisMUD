@@ -232,7 +232,7 @@ G 1 4590 1 0 100 0 0 0             *    a dark green wand
 F 1 4570 5 4467 100 0 0 0          * a kuo-toan guardian (following)
 F 1 4570 5 4467 100 0 0 0          * a kuo-toan guardian (following)
 M 0 4450 1 4483 100 0 0 0          * a rock worm
-M 0 4460 1 4492 100 0 0 0          * A human rogue
+M 0 4460 1 4492 100 0 0 0          * a human rogue
 G 1 4550 1 0 100 0 0 0             *    a torch burning soft blue flames
 M 0 4695 4 4504 100 0 0 0          * a duergar guardian
 E 1 4655 4 5 100 0 0 0             *   a suit of dwarven scale mail armor
@@ -261,17 +261,17 @@ M 0 4640 4 4519 100 0 0 0          * a duergar warrior
 E 1 4425 4 16 100 0 0 0            *   a battle hammer
 M 0 4640 4 4520 100 0 0 0          * a duergar warrior
 E 1 4425 4 16 100 0 0 0            *   a battle hammer
-M 0 4660 1 4520 100 0 0 0          * The duergar war master
+M 0 4660 1 4520 100 0 0 0          * the duergar war master
 E 1 4510 1 13 100 0 0 0            *   a girdle of giant strength
 G 1 4410 1 0 100 0 0 0             *    a sapphire key
 M 0 4695 4 4521 100 0 0 0          * a duergar guardian
 E 1 4655 4 5 100 0 0 0             *   a suit of dwarven scale mail armor
 M 0 4695 4 4521 100 0 0 0          * a duergar guardian
 E 1 4655 4 5 100 0 0 0             *   a suit of dwarven scale mail armor
-M 0 4670 1 4525 100 0 0 0          * the duergar high cleric
+M 0 4670 1 4525 100 0 0 0          * the duergar High Cleric
 G 1 4640 1 0 100 0 0 0             *    a dark-blue potion
 G 1 4650 1 0 100 0 0 0             *    a light-blue potion
-M 0 4680 1 4525 100 0 0 0          * Bregnar the Duergar King
+M 0 4680 1 4525 100 0 0 0          * Bregnar the duergar King
 E 1 4660 1 15 100 0 0 0            *   a shiny mithril bracelet
 E 1 4505 1 16 100 0 0 0            *   a mithril two-handed dwarven battle hammer
 M 0 4690 2 4525 100 0 0 0          * a human slave
@@ -309,7 +309,7 @@ M 0 4420 7 4594 100 0 0 0          * a water weird
 M 0 4420 7 4595 100 0 0 0          * a water weird
 M 0 4420 7 4596 100 0 0 0          * a water weird
 M 0 4420 7 4597 100 0 0 0          * a water weird
-M 0 4440 1 4606 100 0 0 0          * a Drow Cleric
+M 0 4440 1 4606 100 0 0 0          * a drow cleric
 E 1 4791 2 2 100 0 0 0             *   a tiny spider ring
 E 1 4560 1 11 100 0 0 0            *   a drow buckler
 M 0 4401 1 4610 100 0 0 0          * Zorta the all powerful

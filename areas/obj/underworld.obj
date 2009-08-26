@@ -61,11 +61,11 @@ pool color glowing magenta~
 4609 200 0 0 0 0 0 0
 10000 0 100
 #4405
-bodycloak cloak green dark~
+bodycloak cloak green dark _noquest_~
 &+ga dark-green bodycloak&n~
 A dark-green cloak has been strewn on the floor here.~
 ~
-9 3 3 8 7 0 8192 1025 64 0 0
+9 3 3 8 7 0 8200 1025 64 0 0
 15 9 1 3 0 0 0 0
 10 25000 100 536870928 0 0 0
 E
@@ -244,7 +244,7 @@ corrupted form of common :
 \---------------------------------------------------------/
 ~
 #4505
-hammer mithril handed dwarven~
+hammer mithril handed dwarven _noquest_~
 &+Ba mithril two-handed dwarven battle hammer&n~
 &+MA mithril two-handed dwarven hammer&N lies here waiting for a new owner.~
 ~
