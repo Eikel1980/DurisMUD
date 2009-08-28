@@ -674,6 +674,7 @@ void chant_heroism(P_char ch, char *argument, int cmd)
   struct affected_type af, af1;
   char     buf[100];
   int      skl_lvl = 0;
+  int duration = MAX(5, GET_LEVEL(ch) / 4);
 
   if (!GET_CLASS(ch, CLASS_MONK) && !IS_TRUSTED(ch))
   {
@@ -713,10 +714,11 @@ void chant_heroism(P_char ch, char *argument, int cmd)
   bzero(&af, sizeof(af));
   af.type = SKILL_HEROISM;
   af.flags = AFFTYPE_NODISPEL;
-  af.duration = MAX(5, GET_LEVEL(ch) / 4);
+  af.duration = duration;
   
   af.modifier = MAX(2, (int) (GET_LEVEL(ch) / 4));
   af.location = APPLY_HITROLL;
+  affect_to_char(ch, &af);
   
   af.modifier = MAX(1, GET_LEVEL(ch) / 8);
   af.location = APPLY_DAMROLL;
@@ -727,8 +729,8 @@ void chant_heroism(P_char ch, char *argument, int cmd)
     send_to_char("Something wicked just happened didn't it? My god you feel weird. \r\n", ch);
     bzero(&af1, sizeof(af1));
     af1.type = SPELL_INDOMITABILITY;
-    af1.flags = AFFTYPE_NODISPEL | AFFTYPE_SHORT;
-    af1.duration = GET_LEVEL(ch) / 2;
+    af1.flags = AFFTYPE_NODISPEL;
+    af1.duration = duration / 2;
     affect_to_char(ch, &af1);
   }
   
