@@ -7209,6 +7209,11 @@ int handle_npc_assist(P_char ch)
    * sufficient for assistance of attacked NPC by the unattacked follower or
    * leader. - SKB 19 May 1995
    */
+   
+  if(!IS_IMMOBILE(ch) ||
+     GET_STAT(ch) <= STAT_SLEEPING ||
+     !CAN_ACT(ch))
+      return FALSE;
 
   if((GET_POS(ch) > POS_SITTING) &&
      (ch->following) &&
@@ -7223,7 +7228,8 @@ int handle_npc_assist(P_char ch)
       ((GET_HIT(ch) > GET_HIT(ch->following)) || number(0, 1)))
     {
       if(!IS_SET(ch->specials.act, ACT_MOUNT) ||
-         GET_CLASS(ch->following, CLASS_PALADIN))
+         GET_CLASS(ch->following, CLASS_PALADIN) ||
+         GET_CLASS(ch->following, CLASS_ANTIPALADIN))
       {
 
 // Players with non-undead pets are rescued if the player makes a charisma check. Apr09 -Lucrot
@@ -7308,8 +7314,8 @@ int handle_npc_assist(P_char ch)
   }
 
 
-  if(CAN_ACT(ch) && (GET_POS(ch) > POS_SITTING) &&
-      IS_SET(ch->specials.act, ACT_PROTECTOR))
+  if(GET_POS(ch) > POS_SITTING &&
+     IS_SET(ch->specials.act, ACT_PROTECTOR))
   {
     Victim = find_protector_target(ch);
     if(Victim)
@@ -7364,6 +7370,7 @@ int handle_npc_assist(P_char ch)
       }
     }
   }
+  return FALSE;
 }
 
 bool MobSpellUp(P_char ch)
