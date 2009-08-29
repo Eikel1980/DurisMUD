@@ -25,6 +25,7 @@
 #include "structs.h"
 #include "utils.h"
 #include "mm.h"
+#include "profile.h"
 
 /*
  * external variables 
@@ -106,6 +107,45 @@ void cmdlog(P_char ch, char *str)
 
 void do_debug(P_char ch, char *argument, int cmd)
 {
+  char arg1[MAX_STRING_LENGTH], arg2[MAX_STRING_LENGTH];
+  if (*argument)
+  {
+    half_chop(argument, arg1, arg2);
+    if (isname(arg1, "profile"))
+    {
+    #ifdef DO_PROFILE
+      if (isname(arg2, "on"))
+      {
+        do_profile = true;
+        send_to_char("Profiling mode is now ON.\r\n", ch);
+      }
+      else if (isname(arg2, "off"))
+      {
+        do_profile = false;
+        send_to_char("Profiling mode is now OFF.\r\n", ch);
+      }
+      else if (isname(arg2, "reset"))
+      {
+        send_to_char("Resetting profiling results.\r\n", ch);
+        PROFILES(RESET);
+        reset_func_call_info();
+      }
+      else if (isname(arg2, "save"))
+      {
+        send_to_char("Saving profiling results.\r\n", ch);
+        PROFILES(SAVE);
+        save_func_call_info();
+      }
+      else
+      {
+        send_to_char("Syntex: debug profile <on|off|reset|save>.\r\n", ch);
+      }
+    #else
+      send_to_char("Profiling is not defined.\r\n", ch);
+    #endif
+      return;
+    }
+  }
   if (debug_mode)
   {
     debug_mode = 0;

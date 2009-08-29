@@ -103,7 +103,7 @@ int      used_descs = 0, avail_descs = 0, max_descs = 0;
 struct mm_ds *dead_desc_pool = NULL;
 int      RUNNING_PORT = 0;
 int      no_random = 0;
-int 	 no_ferries = 0;
+int      no_ferries = 0;
 P_char   executing_ch;
 #define  MAX_COMMAND_OUTPUT (5 * MAX_STRING_LENGTH)
 #define  PAD_COMMAND_OUTPUT (500)  // some space for appending a warning
@@ -409,11 +409,6 @@ void run_the_game(int port)
   }
   logit(LOG_STATUS, "Normal termination of game.");
 }
-
-#ifdef DO_PROFILE
-extern void init_func_call_info();
-extern void save_func_call_info();
-#endif
 
 /* Accept new connects, relay commands, and call 'heartbeat-functs' */
 
@@ -894,7 +889,7 @@ void game_loop(int s)
 #endif
 
   if( no_ferries == 0 ) shutdown_ferries();
-	
+        
   shutdown_newships();
 
   shutdown_auction_houses();
@@ -2456,7 +2451,7 @@ int process_input(P_desc t)
       if(t)
         if(t->character){
           t->character->only.pc->recived_data = t->character->only.pc->recived_data + strlen(tmp);
-      	  recivedbytes = recivedbytes + strlen(tmp);
+          recivedbytes = recivedbytes + strlen(tmp);
         }
       write_to_q(tmp, &t->input, 0);
 
@@ -2601,10 +2596,10 @@ bool send_to_pid(const char *str, int pid) {
       if (d->connected == CON_PLYNG && IS_PC(d->character) && GET_PID(d->character) == pid )
       {
         send_to_char(str, d->character);
-				return TRUE;
+                                return TRUE;
       }
     }
-		return FALSE;
+                return FALSE;
 }
 
 void send_to_all(const char *messg)

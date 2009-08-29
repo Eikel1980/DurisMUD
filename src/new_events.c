@@ -237,7 +237,7 @@ void ne_events(void)
       PROFILE_START(event_func);
       (current_event->func)(current_event->ch, current_event->victim, current_event->obj, current_event->data);
       PROFILE_END(event_func);
-      register_func_call((void*)evf, (double) (event_func_profile_end - event_func_profile_beg));
+      PROFILE_REGISTER_CALL(evf, event_func_profile_end - event_func_profile_beg)
      #else
       (current_event->func)(current_event->ch, current_event->victim, current_event->obj, current_event->data);
      #endif
@@ -552,6 +552,7 @@ void show_world_events(P_char ch, const char* arg)
 #ifdef DO_PROFILE
 
 PROFILES(DEFINE);
+bool do_profile = true;
 
 void save_profile_data(const char* name, double total_inside, double total_outside, unsigned total)
 {
