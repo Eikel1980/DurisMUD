@@ -2558,6 +2558,13 @@ void event_combination(P_char ch, P_char victim, P_obj obj, void *data)
     send_to_char("You were unable to execute your deadly combination.\n", ch);
     return;
   }
+  
+  if(ch->in_room != victim->in_room)
+  {
+    send_to_char("&+wYour victim is gone...\r\n", ch);
+    return;
+  }
+  
   if((GET_RACE(victim) == RACE_GOLEM) ||
       (GET_RACE(victim) == RACE_DRAGON) ||
       (GET_RACE(victim) == RACE_GHOST) ||
@@ -2575,14 +2582,14 @@ void event_combination(P_char ch, P_char victim, P_obj obj, void *data)
 
   if(!number(0, 50))
   {
-    act("&+R$n attempts a combination, but falls flat on $s face!", FALSE, ch,
-        0, 0, TO_ROOM);
-    act("&+RYou attempt a combination, but fall flat on your face!", FALSE,
-        ch, 0, 0, TO_CHAR);
+    act("&+R$n attempts a combination, but falls flat on $s face!",
+      FALSE, ch, 0, 0, TO_ROOM);
+    act("&+RYou attempt a combination, but fall flat on your face!",
+      FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
 
-  if(GET_C_LUCK(ch) / 2 > number(0, 100))
+  if(GET_C_LUCK(ch) / 10 > number(0, 100))
   {
     percent = (int) (percent * 1.05);
   }
