@@ -1001,7 +1001,7 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
     {
       XP *= (get_property("gain.exp.mod.victim.location.hometown", 1.00));
       if(!number(0, 49)) // Limit the spam
-        send_to_char("&+gThis being a hometown, you receive fewer exps...&n", ch);
+        send_to_char("&+gThis being a hometown, you receive fewer exps...&n\r\n", ch);
     } 
     
     if(!GET_EXP(victim))
