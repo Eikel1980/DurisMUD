@@ -274,6 +274,16 @@ int char_deserves_helping(const P_char ch, const P_char candidate,
       !((candidate->following == ch) || (ch->following == candidate) ||
         (ch->group && (ch->group == candidate->group))))
     return FALSE;
+    
+  if((IS_NPC(ch) &&  
+     GET_VNUM(ch) == WH_HIGH_PRIEST_VNUM) || 
+     GET_VNUM(candidate) == WH_HIGH_PRIEST_VNUM) 
+        return false;
+        
+  if((IS_NPC(ch) && 
+     GET_VNUM(ch) == IMAGE_RELFECTION_VNUM) || 
+     GET_VNUM(candidate) == IMAGE_RELFECTION_VNUM) 
+      return false; 
 
   return TRUE;
 }
