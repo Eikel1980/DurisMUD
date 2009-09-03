@@ -2307,15 +2307,15 @@ void event_tempus(P_char ch, P_char victim, P_obj obj, void *args)
     level = level / 2;
 
   if(GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT))
-    dura = 3;
+    dura = (int)(get_property("innate.timer.dura.godCall.Tempus.Cleric", 5));
   else
-    dura = 2;
+    dura = (int)(get_property("innate.timer.dura.godCall.Tempus.Other", 3));
 
   memset(&af, 0, sizeof(af));
   af.type = SPELL_DIVINE_FURY;
   af.duration = dura;
   af.modifier = (int)(level / 5);
-  af.flags = AFFTYPE_NODISPEL | AFFTYPE_NOMSG;
+  af.flags = AFFTYPE_NODISPEL;
   
   af.location = APPLY_DAMROLL;
   affect_to_char(ch, &af);
@@ -3925,22 +3925,19 @@ void do_immolate(P_char ch, char *argument, int cmd)
 
 void event_halfling_check(P_char ch, P_char victim, P_obj obj, void *data)
 {
-  int halfling_feet = get_property("innate.movement.bonus.halfling", 20);
   if (!ch->equipment[WEAR_FEET] && !
-      affected_by_spell(ch, TAG_BAREFEET))
-  {
+      affected_by_spell(ch, TAG_BAREFEET)) {
     struct affected_type af;
     memset(&af, 0, sizeof(af));
     af.type = TAG_BAREFEET;
     af.location = APPLY_MOVE_REG;
-    af.modifier = halfling_feet;
+    af.modifier = 6;
     af.duration = 10;
     affect_to_char(ch, &af);
-    send_to_char("&+yYou stretch your toes feeling much more comfortable with unconstrained feet.&n\n", ch);
-  }
-  else if(ch->equipment[WEAR_FEET] &&
-          affected_by_spell(ch, TAG_BAREFEET))
-  {
+    send_to_char("&+yYou stretch your toes feeling much more comfortable "
+        "with unconstrained feet.&n\n", ch);
+  } else if (ch->equipment[WEAR_FEET] &&
+      affected_by_spell(ch, TAG_BAREFEET)) {
     affect_from_char(ch, TAG_BAREFEET);
   }
 

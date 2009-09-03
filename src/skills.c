@@ -1546,7 +1546,7 @@ SPELL_CREATE("vigorize light", SPELL_VIGORIZE_LIGHT, PULSE_SPELLCAST * 2,
 /* Divine fury currently does nothing due to poor coding */
   SPELL_CREATE_MSG("divine fury", SPELL_DIVINE_FURY, PULSE_SPELLCAST * 2,
                 TAR_SELF_ONLY,
-                spell_divine_fury, "You feel less divinely furious.");
+                spell_divine_fury, "&+RYo&+ru fe&+Rel le&+rss di&+Rvine&+rly fu&+Rrious.&n");
 /*  SPELL_ADD(CLASS_CLERIC, 9); */
 
   SPELL_CREATE_MSG("detect invisibility", SPELL_DETECT_INVISIBLE, PULSE_SPELLCAST * 3 / 2,
