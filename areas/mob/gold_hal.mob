@@ -1005,7 +1005,7 @@ glakkabb goblin shaman~
 &+Cin his chamber in deep meditation, not noticing you.
 ~
 1073743882 0 0 0 0 0 0 -1000 S
-PF 0 256 -1
+hg 0 256 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1126,7 +1126,7 @@ goblin acolyte~
 &+Lstop him from his determination to rule over all of them someday.
 ~
 2058 0 0 0 0 0 0 -1000 S
-PF 0 2147483648 -1
+hg 0 2147483648 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1156,7 +1156,7 @@ goblin guard prison~
 &+Lseems a very vicious threat.
 ~
 1140852746 0 0 0 0 0 0 -1000 S
-PF 0 1 -1
+hg 0 1 -1
 37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1231,7 +1231,7 @@ goblin guard prison patrolling~
 &+Lseems a very vicious threat.
 ~
 1140852744 0 0 0 0 0 0 -1000 S
-PF 0 1 -1
+hg 0 1 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1246,7 +1246,7 @@ rokag goblin torturer~
 &+Ghis veins, or an element of &+rBloodLust&+G in his mind.
 ~
 2058 1 0 16 0 0 0 -1000 S
-PF 0 1 -1
+hg 0 1 -1
 42 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1260,7 +1260,7 @@ training goblin~
 &+Lbattle techniques.
 ~
 2058 0 0 0 0 0 0 -1000 S
-PF 0 1 -1
+hg 0 1 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1274,7 +1274,7 @@ exhausted goblin~
 &+Lanother hard day.
 ~
 2058 0 0 0 0 0 0 -1000 S
-PF 0 1 -1
+hg 0 1 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 4 4 1
@@ -1289,7 +1289,7 @@ tield teacher trainer~
 &+Lwith a certain elegance that nobody could describe with words.
 ~
 34826 0 0 16 0 0 0 -1000 S
-PF 0 1 -1
+hg 0 1 -1
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
