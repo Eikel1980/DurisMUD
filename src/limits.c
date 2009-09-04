@@ -350,7 +350,7 @@ int move_regen(P_char ch)
   }
   else
   {
-    gain = graf(ch, age(ch).year, 12, 15, 15, 12, 10, 8, 6);
+    gain = graf(ch, age(ch).year, 14, 20, 20, 16, 14, 12, 11);
   }
 
   if (GET_COND(ch, FULL) == 0)
