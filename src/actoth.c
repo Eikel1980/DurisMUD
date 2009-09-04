@@ -840,7 +840,7 @@ void do_rage(P_char ch, char *argument, int cmd)
     return;
   }
 
-  if(GET_CHAR_SKILL(ch, SKILL_RAGE) < number(-10, 110)) 
+  if(number(0, 110) > GET_CHAR_SKILL(ch, SKILL_RAGE))
   {
     send_to_char("&+RYou are unable to call forth the rage within you...\r\n", ch);
     CharWait(ch, 2 * PULSE_VIOLENCE);
@@ -851,6 +851,8 @@ void do_rage(P_char ch, char *argument, int cmd)
         
   if(!(GET_SPEC(ch, CLASS_BERSERKER, SPEC_RAGELORD)))
     CharWait(ch, 3 * PULSE_VIOLENCE);
+  else
+    CharWait(ch, PULSE_VIOLENCE);
 
   act("&+rYou feel a rage start to come from within...\n",
     FALSE, ch, 0, 0, TO_CHAR);
