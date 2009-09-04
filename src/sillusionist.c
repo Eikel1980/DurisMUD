@@ -1189,7 +1189,7 @@ void spell_hammer(int level, P_char ch, char *arg, int type, P_char victim,
     "$n's &+Bhammer&N strikes $N smashing $M into the ground!"
   };
   int dam, temp, result;
-  bool stunself;
+  bool stunself = false;
 
   if(!IS_ALIVE(ch) ||
     !IS_ALIVE(victim))
@@ -1209,13 +1209,12 @@ void spell_hammer(int level, P_char ch, char *arg, int type, P_char victim,
   }
 
   dam = dice(3 * level, 7);
+  
   if(spell_damage(ch, victim, dam, SPLDAM_GENERIC, SPLDAM_NOSHRUG, &messages)  
     != DAM_NONEDEAD)
         return;
 
-  if(!number(0, 19) &&
-     !IS_ELITE(victim) &&
-     !IS_GREATER_RACE(victim))
+  if(!number(0, 19))
   {
     if(stunself)
       Stun(ch, PULSE_VIOLENCE);
