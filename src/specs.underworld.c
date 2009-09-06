@@ -181,8 +181,7 @@ int torment(P_obj obj, P_char ch, int cmd, char *arg)
     vict &&
     CheckMultiProcTiming(ch))
   {
-    if(CheckMultiProcTiming(ch) &&
-       !number(0, 49)) // 2%
+    if(!number(0, 49)) // 2%
     {
       act("Your $q glows dark and bites into $N's neck.", FALSE,
           obj->loc.wearing, obj, vict, TO_CHAR);
