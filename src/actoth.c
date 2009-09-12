@@ -852,7 +852,7 @@ void do_rage(P_char ch, char *argument, int cmd)
   if(!(GET_SPEC(ch, CLASS_BERSERKER, SPEC_RAGELORD)))
     CharWait(ch, 3 * PULSE_VIOLENCE);
   else
-    CharWait(ch, PULSE_VIOLENCE);
+    CharWait(ch, (int)(0.5 * PULSE_VIOLENCE));
 
   act("&+rYou feel a rage start to come from within...\n",
     FALSE, ch, 0, 0, TO_CHAR);
