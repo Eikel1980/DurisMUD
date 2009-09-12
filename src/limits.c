@@ -741,7 +741,7 @@ void update_exp_table()
   }
 }
 
-int gain_exp_modifiers_race_only(P_char ch, P_char victim, int XP, int type)
+int gain_exp_modifiers_race_only(P_char ch, P_char victim, int XP)
 { 
   char prop_buf[128];
     
@@ -770,7 +770,7 @@ debug("Gain exp race End (%d).", XP);
   return XP;
 }
 
-int gain_exp_modifiers(P_char ch, P_char victim, int XP, int type)
+int gain_exp_modifiers(P_char ch, P_char victim, int XP)
 {
 
 debug("Gain exp modifiers (%d).", XP);
@@ -1039,9 +1039,9 @@ debug("damage 3 exp gain (%d)", XP);
 debug("damage 5 exp gain (%d)", XP);    
     XP = (int)(modify_exp_by_zone_trophy(ch, type, XP));
 debug("damage 6 exp gain (%d)", XP);    
-    XP = (int)(gain_exp_modifiers(ch, victim, XP, NULL));
+    XP = (int)(gain_exp_modifiers(ch, victim, XP));
 debug("damage 7 exp gain (%d)", XP);    
-    XP = (int)(gain_exp_modifiers_race_only(ch, victim, XP, NULL));
+    XP = (int)(gain_exp_modifiers_race_only(ch, victim, XP));
 debug("damage 8 exp gain (%d)", XP);    
     XP = (int)(check_nexus_bonus(ch, XP, NEXUS_BONUS_EXP));
 debug("damage 9 exp gain EXIT (%d)", XP);    
@@ -1069,7 +1069,7 @@ debug("damage 9 exp gain EXIT (%d)", XP);
       XP >> 1;
     }
 debug(" healing 1 (%d).", XP);
-    XP = (int)(gain_exp_modifiers_race_only(ch, NULL, XP, NULL));
+    XP = (int)(gain_exp_modifiers_race_only(ch, NULL, XP));
     XP = (int)(modify_exp_by_zone_trophy(ch, type, (int)(XP)));    
   }
   else if(type == EXP_MELEE)
@@ -1097,9 +1097,9 @@ debug("melee 2.5 exp gain (%d)", XP);
 debug("melee 3 exp gain (%d)", XP);  
     XP = (int)(modify_exp_by_zone_trophy(ch, type, XP));
 debug("melee 4 exp gain (%d)", XP);  
-    XP = (int)(gain_exp_modifiers(ch, victim, XP, NULL));
+    XP = (int)(gain_exp_modifiers(ch, victim, XP));
 debug("melee 5 exp gain (%d)", XP);  
-    XP = (int)(gain_exp_modifiers_race_only(ch, victim, XP, NULL));
+    XP = (int)(gain_exp_modifiers_race_only(ch, victim, XP));
 debug("melee 6 exp gain (%d)", XP);  
     XP = (int)(check_nexus_bonus(ch, XP, NEXUS_BONUS_EXP)); 
 debug("melee 7 exp gain (%d)", XP);  
@@ -1132,8 +1132,8 @@ debug("kill 1 exp gain (%d)", XP);
     XP = (int)((XP * exp_mod(ch, victim)) / 100);     
     XP = (int)(XP * get_property("exp.factor.kill", 1.000));
     XP = (int)(modify_exp_by_zone_trophy(ch, type, XP));
-    XP = (int)(gain_exp_modifiers(ch, victim, XP, NULL));
-    XP = (int)(gain_exp_modifiers_race_only(ch, victim, XP, NULL));
+    XP = (int)(gain_exp_modifiers(ch, victim, XP));
+    XP = (int)(gain_exp_modifiers_race_only(ch, victim, XP));
     XP = (int)(check_nexus_bonus(ch, XP, NEXUS_BONUS_EXP)); 
     logit(LOG_EXP,
           "KILL EXP: %s (%d) killed by %s (%d): old exp: %d, new exp: %d, +exp: %d",
@@ -1150,12 +1150,12 @@ debug("melee 1 exp gain final (%d)", XP);
   else if(type == EXP_WORLD_QUEST)
   {
 debug("world quest 1 (%d)", XP);   
-    XP = (int)(gain_exp_modifiers_race_only(ch, NULL, XP, NULL));
+    XP = (int)(gain_exp_modifiers_race_only(ch, NULL, XP));
 debug("world quest 2 (%d)", XP);   
   }
   else if(type == EXP_QUEST)
   {
-    XP = (int)(gain_exp_modifiers_race_only(ch, NULL, XP, NULL)); 
+    XP = (int)(gain_exp_modifiers_race_only(ch, NULL, XP)); 
   }
 debug("check 5 xp (%d).", XP);  
   range = (int) (new_exp_table[GET_LEVEL(ch) + 1] / 3);
