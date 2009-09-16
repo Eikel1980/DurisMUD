@@ -3488,18 +3488,28 @@ void do_stand(P_char ch, char *argument, int cmd)
       for (kala = world[ch->in_room].people; kala; kala = kala2)
       {
         kala2 = kala->next_in_room;
+        
         if (kala == ch)
         {
           continue;
         }
+        
         if(GET_POS(kala) != POS_STANDING)
         {
           continue;
         }
-        if(ch->specials.fighting != kala)
+// We want to have crippling strike activate when the merc is not fighting
+// tanking the victim. It's more logical this way.                
+        if(ch->specials.fighting == kala)
         {
           continue;
         }
+        
+        if(kala->specials.fighting != ch)
+        {
+          continue;
+        }
+        
         skl = GET_CHAR_SKILL(kala, SKILL_CRIPPLING_STRIKE);
         int      success = 0;
 
@@ -3513,8 +3523,7 @@ void do_stand(P_char ch, char *argument, int cmd)
           {
             act("You spin on your heel, slamming your elbow into $N's ear.",
                 FALSE, kala, 0, ch, TO_CHAR);
-            act
-              ("$n spins around, slamming $s elbow into your ear. \nYour vision blurs and your ears start ringing!",
+            act("$n spins around, slamming $s elbow into your ear. \nYour vision blurs and your ears start ringing!",
                FALSE, kala, 0, ch, TO_VICT);
             act("$n spins around, slamming $s elbow into $N's ear.", FALSE,
                 kala, 0, ch, TO_NOTVICT);
