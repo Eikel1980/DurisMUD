@@ -1466,30 +1466,62 @@ void command_interpreter(P_char ch, char *argument)
         affect_from_char(ch, SKILL_WHIRLWIND);
       }
 /*   charmees who are not naturally aggro, may not follow aggro order   */
-      if (IS_AGG_CMD(cmd) && IS_SET(ch->specials.affected_by, AFF_CHARM) &&
-          (IS_PC(ch) || !IS_SET(ch->only.npc->aggro_flags, AGGR_ALL)))
+      if(IS_AGG_CMD(cmd) &&
+         IS_SET(ch->specials.affected_by, AFF_CHARM) &&
+         (IS_PC(ch) || !IS_SET(ch->only.npc->aggro_flags, AGGR_ALL)))
       {
         i = number(1, 101);
-        if (IS_UNDEAD(ch) && !IS_PUNDEAD(ch))
-          i = MAX(1, i - 50);
-        else if (IS_ELEMENTAL(ch) || GET_RACE(ch) == RACE_DEMON)
-          i = MAX(1, i - 25);
-        if (ch->following && IS_UNDEAD(ch) &&
-            GET_CLASS(ch->following, CLASS_NECROMANCER))
-          i = 0;
-        if (ch->following && GET_CLASS(ch->following, CLASS_MINDFLAYER))
-          i = i - GET_C_POW(ch->following);     /* illithids get power bonus */
-        if (ch->following &&
-            (i > (BOUNDED(0, GET_C_CHA(ch->following), 100))))
+        
+        if(IS_UNDEADRACE(ch) &&
+          !IS_PC(ch))
         {
-          if ((IS_UNDEAD(ch) && !IS_PUNDEAD(ch)) || IS_ELEMENTAL(ch))
+          i = MAX(1, i - 50);
+        }
+        else if(IS_ELEMENTAL(ch) ||
+                GET_RACE(ch) == RACE_DEMON)
+        {
+          i = MAX(1, i - 25);
+        }
+        
+        if(ch->following &&
+           IS_UNDEADRACE(ch) &&
+           GET_CLASS(ch->following, CLASS_NECROMANCER))
+        {
+          i = 0;
+        }
+        
+        if(IS_ANIMAL(ch) &&
+           GET_SPEC(ch->following, CLASS_SHAMAN, SPEC_ANIMALIST))
+        {
+          i >> 1;
+        }
+        
+        if(ch->following &&
+          GET_CLASS(ch->following, CLASS_MINDFLAYER))
+        {
+          i = i - GET_C_POW(ch->following);     /* illithids get power bonus */
+        }
+        
+        if(ch->following &&
+          (i > (BOUNDED(0, GET_C_CHA(ch->following), 100))) &&
+          !number(0, 2))
+        {
+          if((IS_UNDEADRACE(ch) &&
+             !IS_PC(ch)) ||
+             IS_ELEMENTAL(ch))
+          {
             REMOVE_BIT(ch->specials.affected_by, AFF_CHARM);
-          send_to_char
-            ("Uh oh. They don't seem to have agreed with that last order.\r\n",
-             ch->following);
-          if (IS_UNDEAD(ch) && IS_NPC(ch) &&
-              !IS_SET(ch->only.npc->aggro_flags, AGGR_ALL))
+          }
+          
+          send_to_char("&+LUh oh. They don't seem to have agreed with that &+Wlast order.\r\n", ch->following);
+          
+          if(IS_UNDEADRACE(ch) &&
+             IS_NPC(ch) &&
+            !IS_SET(ch->only.npc->aggro_flags, AGGR_ALL))
+          {
             SET_BIT(ch->only.npc->aggro_flags, AGGR_ALL);
+          }
+          
           return;
         }
       }
@@ -1605,17 +1637,27 @@ void command_interpreter(P_char ch, char *argument)
 
         if (IS_AFFECTED(ch, AFF_MEDITATE))
         {
-          if (cmd == CMD_MEDITATE)
+          if(cmd == CMD_MEDITATE)
+          {
             send_to_char("You are already meditating.\n", ch);
+          }
           else if (cmd != CMD_PRAY && cmd != CMD_MEMORIZE && cmd != CMD_ASSIMILATE &&
             cmd != CMD_GCC && cmd != CMD_HELP && cmd != CMD_RWC)
           {
-           if (10 + GET_CHAR_SKILL(ch, SKILL_ADVANCED_MEDITATION) < number(10, 60) ||
-              (cmd != CMD_GSAY && cmd != CMD_SAY && cmd != CMD_TELL && cmd != CMD_LOOK)) {
-            send_to_char("You stop meditating.\r\n", ch);
-            stop_meditation(ch);
-            } else {
-            send_to_char("You continue your meditation uninterrupted.\n", ch);
+            if(10 + GET_CHAR_SKILL(ch, SKILL_ADVANCED_MEDITATION) < number(10, 60) ||
+              (cmd != CMD_GSAY &&
+               cmd != CMD_SAY &&
+               cmd != CMD_TELL &&
+               cmd != CMD_LOOK &&
+               cmd != CMD_NCHAT) &&
+               cmd != CMD_EMOTE)
+            {
+              send_to_char("You stop meditating.\r\n", ch);
+              stop_meditation(ch);
+            }
+            else
+            {
+              send_to_char("You continue your meditation uninterrupted.\n", ch);
             }
           }
         }

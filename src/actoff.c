@@ -2057,7 +2057,8 @@ void do_order(P_char ch, char *argument, int comd)
 #if 1
     else
     {                           /* This is order "followers" */
-      act("$n gives an order to $s followers..", FALSE, ch, 0, 0, TO_ROOM);
+      act("$n gives an order to $s followers.",
+        FALSE, ch, 0, 0, TO_ROOM);
       org_room = ch->in_room;
       org_cord = ch->specials.z_cord;
 
@@ -2089,7 +2090,8 @@ void do_order(P_char ch, char *argument, int comd)
                   send_to_char("Ok.\n", ch);
                   found = TRUE;
                 }
-                if(!CAN_ACT(k))
+                if(!CAN_ACT(k) ||
+                   IS_IMMOBILE(k))
                 {
                   act("$N seems a bit busy at the moment, try later.",
                       FALSE, ch, 0, k, TO_CHAR);
@@ -2110,7 +2112,7 @@ void do_order(P_char ch, char *argument, int comd)
                     logit(LOG_DEBUG, "k got lost in do_order()");
                   }
 */
-                  if(!l_delay && (!char_in_list(k) || !CAN_ACT(k)))
+                  if(!l_delay && (!char_in_list(k) || !CAN_ACT(k) || IS_IMMOBILE(k)))
                   {
                     l_delay = TRUE;
                   }

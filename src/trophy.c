@@ -41,7 +41,7 @@ int modify_exp_by_zone_trophy(P_char ch, int type, int XP)
   if (IS_ILLITHID(ch))
     return XP;
   
-  if( GET_LEVEL(ch) < 11 )
+  if( GET_LEVEL(ch) < 21 )
     return XP;
   
   int zone_number = zone_table[world[ch->in_room].zone].number;
