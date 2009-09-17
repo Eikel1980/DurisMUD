@@ -98,15 +98,13 @@ int modify_exp_by_zone_trophy(P_char ch, int type, int XP)
       
       if(exp_mod < 1.0 &&
         (type == EXP_KILL ||
-         type == EXP_QUEST ||
-         type == EXP_DAMAGE ||
-         type == EXP_HEALING))
+         type == EXP_QUEST))
       {
-        if(exp_mod >= 0.70 )
+        if(exp_mod >= 0.50 )
         {
           send_to_char("&+gThis area feels rather easy.\n", ch);
         }
-        else if( exp_mod >= 0.50 )
+        else if( exp_mod >= 0.30 )
         {
           send_to_char("&+yThis area really isn't much of a challenge.\n", ch);
         }
@@ -117,7 +115,6 @@ int modify_exp_by_zone_trophy(P_char ch, int type, int XP)
         else
         {
           send_to_char("&+YYAWN! You really should find somewhere else to gain experience.\n", ch);
-          exp_mod = 0;
         }              
       }
       
