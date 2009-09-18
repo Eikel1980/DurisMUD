@@ -2816,9 +2816,12 @@ int camp(P_char ch)
 
     if (af)
     {
-      if (!ch->desc || IS_FIGHTING(ch) || (ch->in_room != af->modifier) ||
+      if (!ch->desc ||
+          IS_FIGHTING(ch) ||
+          (ch->in_room != af->modifier) ||
           (GET_STAT(ch) < STAT_SLEEPING) ||
-          IS_SET(ch->specials.affected_by, AFF_HIDE))
+          IS_SET(ch->specials.affected_by, AFF_HIDE) ||
+          IS_IMMOBILE(ch))
       {
         affect_from_char(ch, SKILL_CAMP);
         send_to_char("So much for that camping effort.\n", ch);
