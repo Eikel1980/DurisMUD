@@ -2604,11 +2604,11 @@ bool CastDruidSpell(P_char ch, P_char victim, int helping)
       if(!affected_by_spell(ch, SPELL_ANIMAL_VISION) &&
           npc_has_spell_slot(ch, SPELL_ANIMAL_VISION))
       spl = SPELL_ANIMAL_VISION;
-	else
-	  if(!affected_by_spell(ch, SPELL_ELEMENTAL_AURA) && (world[ch->in_room].sector_type == SECT_FIREPLANE ||
-		  world[ch->in_room].sector_type == SECT_WATER_PLANE || world[ch->in_room].sector_type == SECT_AIR_PLANE ||
-		  world[ch->in_room].sector_type == SECT_EARTH_PLANE))
-	  spl = SPELL_ELEMENTAL_AURA;
+        else
+          if(!affected_by_spell(ch, SPELL_ELEMENTAL_AURA) && (world[ch->in_room].sector_type == SECT_FIREPLANE ||
+                  world[ch->in_room].sector_type == SECT_WATER_PLANE || world[ch->in_room].sector_type == SECT_AIR_PLANE ||
+                  world[ch->in_room].sector_type == SECT_EARTH_PLANE))
+          spl = SPELL_ELEMENTAL_AURA;
   }
 
   // more natures touching? why, thank you!
@@ -2672,11 +2672,11 @@ bool CastDruidSpell(P_char ch, P_char victim, int helping)
     if(!spl && npc_has_spell_slot(ch, SPELL_FIRESTORM))
       spl = SPELL_FIRESTORM;
 
-	if(!spl && npc_has_spell_slot(ch, SPELL_AWAKEN_FOREST) && world[ch->in_room].sector_type == SECT_FOREST)
+        if(!spl && npc_has_spell_slot(ch, SPELL_AWAKEN_FOREST) && world[ch->in_room].sector_type == SECT_FOREST)
       spl = SPELL_AWAKEN_FOREST;
 
-	if(!spl && npc_has_spell_slot(ch, SPELL_HURRICANE) && number(0, 3))
-	  spl = SPELL_HURRICANE;
+        if(!spl && npc_has_spell_slot(ch, SPELL_HURRICANE) && number(0, 3))
+          spl = SPELL_HURRICANE;
 
     if(!spl && npc_has_spell_slot(ch, SPELL_EARTHQUAKE) &&
         (number(0, 3) == 2))
@@ -2690,13 +2690,13 @@ bool CastDruidSpell(P_char ch, P_char victim, int helping)
     spl = SPELL_CALL_LIGHTNING;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_ELEMENTAL_SWARM))
-	spl = SPELL_ELEMENTAL_SWARM;
+        spl = SPELL_ELEMENTAL_SWARM;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_CDOOM))
     spl = SPELL_CDOOM;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_BLOODSTONE))
-	spl = SPELL_BLOODSTONE;
+        spl = SPELL_BLOODSTONE;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_ACID_STREAM))
     spl = SPELL_ACID_STREAM;
@@ -2708,7 +2708,7 @@ bool CastDruidSpell(P_char ch, P_char victim, int helping)
     spl = SPELL_CYCLONE;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_GROW_SPIKES))
-	spl = SPELL_GROW_SPIKES;
+        spl = SPELL_GROW_SPIKES;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_EARTHEN_MAUL))
     spl = SPELL_EARTHEN_MAUL;
@@ -3396,7 +3396,7 @@ bool CastEtherSpell(P_char ch, P_char victim, int helping)
         npc_has_spell_slot(ch, SPELL_STORM_EMPATHY))
       spl = SPELL_STORM_EMPATHY;
 
-	if(!spl && !affected_by_spell(target, SPELL_VAPOR_STRIKE) &&
+        if(!spl && !affected_by_spell(target, SPELL_VAPOR_STRIKE) &&
         npc_has_spell_slot(ch, SPELL_VAPOR_STRIKE))
       spl = SPELL_VAPOR_STRIKE;
 
@@ -3405,7 +3405,7 @@ bool CastEtherSpell(P_char ch, P_char victim, int helping)
         npc_has_spell_slot(ch, SPELL_WIND_RAGE))
       spl = SPELL_WIND_RAGE;
 
-	if(!spl && !affected_by_spell(ch, SPELL_PLANETARY_ALIGNMENT) &&
+        if(!spl && !affected_by_spell(ch, SPELL_PLANETARY_ALIGNMENT) &&
         target == ch &&
         npc_has_spell_slot(ch, SPELL_PLANETARY_ALIGNMENT))
       spl = SPELL_PLANETARY_ALIGNMENT;
@@ -3512,7 +3512,7 @@ bool CastEtherSpell(P_char ch, P_char victim, int helping)
     spl = SPELL_ARIEKS_SHATTERING_ICEBALL;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_COMET))
-	  spl = SPELL_COMET;
+          spl = SPELL_COMET;
 
   if(!spl && npc_has_spell_slot(ch, SPELL_FORKED_LIGHTNING) &&
       spell_can_affect_char(target, SPELL_FORKED_LIGHTNING))
@@ -6073,10 +6073,10 @@ bool MobMercenary(P_char ch)
     {
       do_tackle(ch, 0, CMD_TACKLE);
     }
-	else if (!affected_by_spell_flagged(vict, SKILL_THROAT_CRUSH, AFFTYPE_CUSTOM1) && number(0, 1))
-	{
+        else if (!affected_by_spell_flagged(vict, SKILL_THROAT_CRUSH, AFFTYPE_CUSTOM1) && number(0, 1))
+        {
       do_throat_crush(ch, 0, CMD_THROAT_CRUSH);
-	}
+        }
              
     else
       do_headbutt(ch, 0, CMD_HEADBUTT);
@@ -7464,7 +7464,7 @@ bool MobSpellUp(P_char ch)
     if(GET_CLASS(ch, CLASS_BARD) && (is_multiclass ? !number(0, 3) : !number(0, 1)))
     {
       if(MobBard(ch))
- 	return TRUE;
+        return TRUE;
       if(CastMageSpell(ch, ch, FALSE))
         return TRUE;
       if (!is_multiclass) return FALSE;
@@ -7691,7 +7691,7 @@ PROFILE_START(mundane4);
         {
             goto normal;
 PROFILE_END(mundane4);
-    	}
+        }
     }
   }
 PROFILE_END(mundane4);
@@ -7703,29 +7703,42 @@ PROFILE_START(mundane5);
     { // 38%
       if (GET_MEMORY(ch) != NULL) // guardcheck (no hunt will happen if mob has no memory)  -Odorf
       {
+PROFILE_START(mundane51);
         if(InitNewMobHunt(ch))
         {
+PROFILE_END(mundane51);
 PROFILE_END(mundane5);
           goto normal;
         }
+PROFILE_END(mundane51);
       }
-      else if (TryToGetHome(ch))  // if mob has no memory it might still want to go back  -Odorf
+      else
       {
+PROFILE_START(mundane52);
+        if (TryToGetHome(ch))  // if mob has no memory it might still want to go back  -Odorf
+        {
+PROFILE_END(mundane52);
 PROFILE_END(mundane5);
-        goto normal;
+          goto normal;
+        }
+PROFILE_END(mundane52);
       }
     }
 
     if (GET_MEMORY(ch) != NULL) // guardcheck (no real action will happen in either function if mob has no memory) -Odorf
     {
+PROFILE_START(mundane53);
       CheckForRemember(ch);
+PROFILE_END(mundane53);
       if(/*!ch - no need -Odorf ||*/ !CAN_ACT(ch)) //  do we really need to check CAN_ACT here? -Odorf
       {
 PROFILE_END(mundane5);
         goto normal;
       }
 
+PROFILE_START(mundane54);
       mobact_memoryHandle(ch);
+PROFILE_END(mundane54);
       if(/*!ch - no need -Odorf ||*/ !CAN_ACT(ch)) //  do we really need to check CAN_ACT here? -Odorf
       {
 PROFILE_END(mundane5);
@@ -9947,7 +9960,7 @@ void MobRetaliateRange(P_char ch, P_char vict)
 
 void remember(P_char ch, P_char victim)
 {
-	remember(ch, victim, TRUE);
+        remember(ch, victim, TRUE);
 }
 
 /* make ch remember victim */
@@ -9965,14 +9978,14 @@ void remember(P_char ch, P_char victim, bool check_group_remember)
       NPC_REMEMBERS_GROUP(ch) &&
       (victim->group))
   {
-  	for (gl = victim->group; gl; gl = gl->next)
-  	{
-  		if (ch->in_room == gl->ch->in_room)
-  		{
+        for (gl = victim->group; gl; gl = gl->next)
+        {
+                if (ch->in_room == gl->ch->in_room)
+                {
         logit(LOG_DEBUG, "remembering group members, and the lucky one is: %s", GET_NAME(gl->ch));
-  		  remember(ch, gl->ch, FALSE);
-  		}
-  	}
+                  remember(ch, gl->ch, FALSE);
+                }
+        }
   }
 
   /* don't let golems aggro their own guildees */

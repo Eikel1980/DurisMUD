@@ -20,6 +20,10 @@
   PROFILE_##action(mundane3) \
   PROFILE_##action(mundane4) \
   PROFILE_##action(mundane5) \
+  PROFILE_##action(mundane51) \
+  PROFILE_##action(mundane52) \
+  PROFILE_##action(mundane53) \
+  PROFILE_##action(mundane54) \
   PROFILE_##action(mundane6) \
   PROFILE_##action(mundane7) \
   PROFILE_##action(mundane8) \
