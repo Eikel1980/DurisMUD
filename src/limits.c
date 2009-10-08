@@ -1163,7 +1163,7 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
   XP = BOUNDED(-range, XP, range);
   
   if(XP > 0 &&
-     GET_EXP(ch) > (new_exp_table[GET_LEVEL(ch) + 1] * 0.75));
+     GET_EXP(ch) > (new_exp_table[GET_LEVEL(ch) + 1]));
   {
     XP = 1;
     send_to_char("&+LYour exps are capped and you must gain a level to accumulate more exps.\r\n", ch);
