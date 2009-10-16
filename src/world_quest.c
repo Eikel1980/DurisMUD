@@ -400,6 +400,11 @@ void do_quest(P_char ch, char *args, int cmd)
   char     name[MAX_INPUT_LENGTH], who[MAX_STRING_LENGTH];
   char     Gbuf1[MAX_STRING_LENGTH];
 
+  if(IS_NPC(ch))
+  {
+    return;
+  }
+  
   if (IS_ILLITHID(ch))
   {
     send_to_char("No quests for you!", ch);
