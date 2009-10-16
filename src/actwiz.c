@@ -3675,6 +3675,11 @@ void do_nchat(P_char ch, char *argument, int cmd)
     if (!IS_SET(i->character->specials.act2, PLR2_NCHAT))
       continue;
 
+    if(IS_DISGUISE_PC(i->character) ||
+       IS_DISGUISE_ILLUSION(i->character) ||
+       IS_DISGUISE_SHAPE(i->character))
+      continue;
+      
     if (IS_TRUSTED(i->character))
     {
       sprintf(Gbuf1, "&+G%s&n&+g newbie-chats (%s): '&+Y%s&n&+g'\n",
