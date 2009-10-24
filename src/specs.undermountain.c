@@ -169,10 +169,7 @@ int iron_flindbar(P_obj obj, P_char ch, int cmd, char *arg)
 {
   P_char   vict;
   char     e_pos;
-  int      in_battle, vict_equip;
-
-  vict = (P_char) arg;
-  in_battle = cmd / 1000;
+  int      vict_equip;
 
   if (cmd == CMD_SET_PERIODIC)               /*
                                    Events have priority 
@@ -203,10 +200,14 @@ int iron_flindbar(P_obj obj, P_char ch, int cmd, char *arg)
   if (!e_pos)
     return FALSE;
 
-  if (!in_battle)               /*
-                                   Past here, and you're fighting 
-                                 */
-    return FALSE;
+  vict = (P_char) arg;
+
+  if (!IS_FIGHTING(ch) ||
+      !(vict) ||
+      ch->in_room != vict->in_room)
+  {
+    return false;
+  }
 
   if (!number(0, 30))
   {
