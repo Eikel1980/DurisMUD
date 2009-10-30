@@ -26,8 +26,8 @@ extern struct relic_struct relic_struct_data[];
 #define RANDOM_START_ROOM 100000
 #define RANDOM_END_ROOM 105000
 
-#define MAX_RANDOM_ROOMS 50
-#define MAX_RANDOM_ZONES 100
+#define MAX_RANDOM_ROOMS 30
+#define MAX_RANDOM_ZONES 25 
 
 #define IS_RANDOM_ROOM(room) ( world[room].number >= RANDOM_START_ROOM && world[room].number <= RANDOM_END_ROOM ) 
 

@@ -9979,7 +9979,7 @@ void MobRetaliateRange(P_char ch, P_char vict)
 
 void remember(P_char ch, P_char victim)
 {
-        remember(ch, victim, TRUE);
+  remember(ch, victim, TRUE);
 }
 
 /* make ch remember victim */
@@ -9989,30 +9989,40 @@ void remember(P_char ch, P_char victim, bool check_group_remember)
   Memory  *tmp;
   struct group_list *gl;
 
-  if(!IS_NPC(ch) || IS_NPC(victim) || IS_TRUSTED(victim) || !HAS_MEMORY(ch) ||
-      !IS_ALIVE(ch) || !IS_ALIVE(victim) )
-    return;
-
-  if (check_group_remember &&
-      NPC_REMEMBERS_GROUP(ch) &&
-      (victim->group))
+  if(IS_PC(ch) ||
+    (IS_NPC(victim) && 
+    !IS_PC_PET(victim)) ||
+     IS_TRUSTED(victim) ||
+    !HAS_MEMORY(ch) ||
+    !IS_ALIVE(ch) ||
+    !IS_ALIVE(victim))
   {
-        for (gl = victim->group; gl; gl = gl->next)
-        {
-                if (ch->in_room == gl->ch->in_room)
-                {
-        logit(LOG_DEBUG, "remembering group members, and the lucky one is: %s", GET_NAME(gl->ch));
-                  remember(ch, gl->ch, FALSE);
-                }
-        }
+    return;
+  }
+
+  if(check_group_remember &&
+     NPC_REMEMBERS_GROUP(ch) &&
+     victim->group)
+  {
+    for (gl = victim->group; gl; gl = gl->next)
+    {
+      if (ch->in_room == gl->ch->in_room)
+      {
+        logit(LOG_DEBUG,
+          "remembering group members, and the lucky one is: %s",
+          GET_NAME(gl->ch));
+        remember(ch, gl->ch, FALSE);
+      }
+    }
   }
 
   /* don't let golems aggro their own guildees */
   if(IS_ACT(ch, ACT_GUILD_GOLEM))
   {
-//    if(is_in_own_guild(victim)) return;
     if(GET_A_NUM(ch) == GET_A_NUM(victim))
+    {
       return;
+    }
   }
 
   for (tmp = ch->only.npc->memory; tmp; tmp = tmp->next)
