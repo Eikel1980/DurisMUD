@@ -4139,155 +4139,156 @@ int collar_flames(P_obj obj, P_char ch, int cmd, char *arg)
   if (cmd == CMD_SET_PERIODIC)
     return FALSE;
 
-  if (!obj || !ch)
+  if (!obj ||
+      !ch ||
+      !IS_ALIVE(ch) ||
+      !(*arg))
+  {
     return FALSE;
-
+  }
+  
   if (!OBJ_WORN(obj))
+  {
     return FALSE;
-
-  if (IS_SET(world[ch->in_room].room_flags, LOCKER))
+  }
+  
+  if (ch->in_room &&
+      IS_SET(world[ch->in_room].room_flags, LOCKER))
+  {
     return FALSE;
-	
-  return false; // Will fix this proc later -Lucrot
-
-  return false; //Will fix proc after vacation. -Lucrot
-
-  if (arg && (cmd == CMD_SAY))
+  }
+  
+  if (arg &&
+     (cmd == CMD_SAY))
   {
     if ((isname(arg, "flames")))
     {
-      if (IS_FIGHTING(ch))
+      if (!IS_PC(ch))
       {
-        send_to_char("You are too focused on fighting to complete the incantations!\n", ch);
-        return FALSE;
+        return false;
       }
 
+      CharWait(ch,PULSE_VIOLENCE * 2);
+      
+      if (IS_FIGHTING(ch))
+      {
+        send_to_char(
+          "You are too focused on fighting to complete the incantations!\r\n", ch);
+        return FALSE;
+      }
+  
       curr_time = time(NULL);
 
       if (obj->timer[0] + 300 <= curr_time)
       {
+        elesize = number(1, 100); //raise to 100 if you want spec pets to occur
 
-        elesize = number(1, 100);        //raise to 100 if you want spec pets to occur
-
-        if (elesize > 94)
+        if (can_conjure_greater_elem(ch, GET_LEVEL(ch)))
         {
-          if (!IS_TRUSTED(ch) && (!can_conjure_greater_elem(ch, GET_LEVEL(ch))))
-            elesize = 90;
-          else
+          if (elesize > 98)
           {
 
-            act("You whisper '&+rFl&+Ram&+res&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
-            act("&+rEnormous pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
-
-            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N", TRUE, ch, obj, NULL, TO_ROOM);
-            act("&+cEnormous crystals of &+Cice &+cstart forming and condensing into the form of an elemental.", FALSE, ch, obj, obj, TO_ROOM);
+            act("You whisper '&+rFl&+Ram&+res&n' to your $q...&n",
+              FALSE, ch, obj, 0, TO_CHAR);
+            act("&+rEnormous pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n",
+              FALSE, ch, obj, obj, TO_CHAR);
+            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N",
+              TRUE, ch, obj, NULL, TO_ROOM);
+            act("&+cEnormous crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n",
+              FALSE, ch, obj, obj, TO_ROOM);
 
             firemental = read_mobile(1111, VIRTUAL);
           }
-        }
-        else if (elesize > 89)
-        {
-          if (!IS_TRUSTED(ch) &&
-              (!can_conjure_greater_elem(ch, GET_LEVEL(ch))))
-            elesize = 90;
-          else
+          else if (elesize > 94)
           {
-            act("You whisper '&+rFl&+Ram&+res&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
-            act("&+rEnormous pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
-
-            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N", TRUE, ch, obj, NULL, TO_ROOM);
-            act("&+cEnormous crystals of &+Cice &+cstart forming and condensing into the form of an elemental.", FALSE, ch, obj, obj, TO_ROOM);
+            act("You whisper '&+rFl&+Ram&+res&n' to your $q...&n",
+              FALSE, ch, obj, 0, TO_CHAR);
+            act("&+rEnormous pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n",
+              FALSE, ch, obj, obj, TO_CHAR);
+            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&n",
+              TRUE, ch, obj, NULL, TO_ROOM);
+            act("&+cEnormous crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n",
+              FALSE, ch, obj, obj, TO_ROOM);
 
             firemental = read_mobile(1112, VIRTUAL);
           }
-        }
-        else if (elesize > 70)
-        {
-          if (!IS_TRUSTED(ch) &&
-              (!can_conjure_greater_elem(ch, GET_LEVEL(ch))))
-            elesize = 90;
-          else
+          else if (elesize > 89)
           {
-            act("You whisper '&+rFl&+Ram&+res&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
-            act("&+rLarge pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
-
-            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N", TRUE, ch, obj, NULL, TO_ROOM);
-            act("&+cLarge crystals of &+Cice &+cstart forming and condensing into the form of an elemental.", FALSE, ch, obj, obj, TO_ROOM);
+            act("You whisper '&+rFl&+Ram&+res&n' to your $q...&n",
+              FALSE, ch, obj, 0, TO_CHAR);
+            act("&+rLarge pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n",
+              FALSE, ch, obj, obj, TO_CHAR);
+            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N",
+              TRUE, ch, obj, NULL, TO_ROOM);
+            act("&+cLarge crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n",
+              FALSE, ch, obj, obj, TO_ROOM);
 
             firemental = read_mobile(1110, VIRTUAL);
           }
         }
-
-        if (elesize <= 70)
-        {
-          if (!IS_TRUSTED(ch) && (!can_conjure_lesser_elem(ch, GET_LEVEL(ch))))
-          {
-            act("&nYour $q &+rhu&+Rms &nbriefly...&N", FALSE, ch, obj, obj, TO_CHAR);
-            act("&n$n's $q &+rhu&+Rms &nbriefly...&N", FALSE, ch, obj, obj, TO_ROOM);
-            return FALSE;
-          }
-          else
-          {
-            act("You whisper '&+rFl&+Ram&+res&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
-            act("&+rSmall pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
-
-            act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N", TRUE, ch, obj, NULL, TO_ROOM);
-            act("&+cSmall crystals of &+Cice &+cstart forming and condensing into the form of an elemental.", FALSE, ch, obj, obj, TO_ROOM);
-
-            firemental = read_mobile(1100, VIRTUAL);
-          }
-        }
-
-        if (!(firemental) ||
-              firemental == NULL ||
-              ch->in_room == NOWHERE)
-        {
-          act("&=LBTHERE IS NO FIRE ELEMENTAL, TELL A GOD!!&N", FALSE, ch, obj, obj, TO_CHAR);
-          return FALSE;
-        }
         
-        if(IS_SET(world[ch->in_room].room_flags, SINGLE_FILE))
+        if (!(firemental) &&
+            can_conjure_lesser_elem(ch, GET_LEVEL(ch)))
         {
-          send_to_char("&+RThe elemental failed to arrive. This area is too narrow.\r\n", ch);
-          return false;
+          act("You whisper '&+rFl&+Ram&+res&n' to your $q...&n",
+            FALSE, ch, obj, 0, TO_CHAR);
+          act("&+rSmall pilars of &+Rflames &+rstart forming and condensing into the form of an elemental.&n",
+            FALSE, ch, obj, obj, TO_CHAR);
+          act("$n whispers '&+rFl&+Ram&+res&n' to $s $q...&N",
+            TRUE, ch, obj, NULL, TO_ROOM);
+          act("&+cSmall crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n",
+            FALSE, ch, obj, obj, TO_ROOM);
+
+          firemental = read_mobile(1100, VIRTUAL);
         }
+
+        if(firemental)
+        {
         
-        char_to_room(firemental, ch->in_room, 0);
-        CharWait(ch,PULSE_VIOLENCE * 2);
+          if(IS_SET(world[ch->in_room].room_flags, SINGLE_FILE))
+          {
+            send_to_char("&+RThe elemental failed to arrive. This area is too narrow.\r\n", ch);
+            return false;
+          }
+          
+          char_to_room(firemental, ch->in_room, 0);
 
-        act("&nYou feel slightly drained as your $q channels magical energy.&n", FALSE, ch, obj, obj, TO_CHAR);
+          act("&nYou feel slightly drained as your $q channels magical energy.&n",
+            FALSE, ch, obj, obj, TO_CHAR);
 
-        GET_SIZE(firemental) = SIZE_MEDIUM;
-        firemental->player.m_class = CLASS_WARRIOR;
-        justice_witness(ch, NULL, CRIME_SUMMON);
-        firemental->player.level = 45;
-        sum = dice(GET_LEVEL(firemental) * 4, 8) + (GET_LEVEL(firemental) * 3);
-        while (firemental->affected)
-          affect_remove(firemental, firemental->affected);
-        if (!IS_SET(firemental->specials.act, ACT_MEMORY))
-          clearMemory(firemental);
-        SET_BIT(firemental->specials.affected_by, AFF_INFRAVISION);
-        remove_plushit_bits(firemental);
-        GET_MAX_HIT(firemental) = GET_HIT(firemental) = firemental->points.base_hit = sum;
-        firemental->points.base_hitroll = firemental->points.hitroll = GET_LEVEL(firemental) / 3;
-        firemental->points.base_damroll = firemental->points.damroll = GET_LEVEL(firemental) / 3;
-        MonkSetSpecialDie(firemental);
-        GET_EXP(firemental) = 0;
-        balance_affects(firemental);
-        setup_pet(firemental, ch, 1500, PET_NOCASH);
-        add_follower(firemental, ch);
-        obj->timer[0] = curr_time;
-        return TRUE;
-      }
-      else
-      {
-        act("&+rOnly a small gust of &+Rhot &+rair fills the room.&n", FALSE, ch, obj, obj, TO_CHAR);
-        act("&+rOnly a small gust of &+Rhot &+rair fills the room.&n", FALSE, ch, obj, obj, TO_ROOM);
+          firemental->player.level = 45 + number(-5, 0);
 
-        act("&nYou feel slightly drained as your $q fails to channel magical energy.&n", FALSE, ch, obj, obj, TO_CHAR);
+          sum = dice(GET_LEVEL(firemental) * 4, 8) + (GET_LEVEL(firemental) * 3);
+ 
+          if (IS_SET(firemental->specials.act, ACT_MEMORY))
+          {
+            clearMemory(firemental);
+          }
+          
+          if (!IS_SET(firemental->specials.affected_by, AFF_INFRAVISION))
+          {
+            SET_BIT(firemental->specials.affected_by, AFF_INFRAVISION);
+          }
+        
+          remove_plushit_bits(firemental);
+          GET_MAX_HIT(firemental) = GET_HIT(firemental) = firemental->points.base_hit = sum;
+          firemental->points.base_hitroll = firemental->points.hitroll = GET_LEVEL(firemental) / 3;
+          firemental->points.base_damroll = firemental->points.damroll = GET_LEVEL(firemental) / 3;
+          MonkSetSpecialDie(firemental);
+          GET_EXP(firemental) = 0;
+          balance_affects(firemental);
+          setup_pet(firemental, ch, 1500, PET_NOCASH);
+          add_follower(firemental, ch);
+          obj->timer[0] = curr_time;
+          return TRUE;
+        }
 
-        CharWait(ch,PULSE_VIOLENCE * 2);
-
+        act("&+rOnly a small gust of &+Rhot &+rair fills the room.&n",
+          FALSE, ch, obj, obj, TO_CHAR);
+        act("&+rOnly a small gust of &+Rhot &+rair fills the room.&n",
+          FALSE, ch, obj, obj, TO_ROOM);
+        act("&nYou feel slightly drained as your $q fails to channel magical energy.&n",
+          FALSE, ch, obj, obj, TO_CHAR);
       }
     }
   }
