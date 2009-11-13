@@ -2071,7 +2071,7 @@ plaque mithril~
 #83237
 huge golden weapon rack~
 &+Ya huge golden weapon rack~
-&+YA huge golden weapon rack sits facing the bed, shining with glory.~
+&+YA golden weapon rack sits here positioned against the northern wall.~
 ~
 15 24 5 0 14 0 1 0 0 0 0
 500 0 0 0 0 0 0 0
@@ -2302,7 +2302,7 @@ large sign tokens~
 &+b  Mining     &+L   -&+W 10 tokens
 &+y  C&No&+yl&nl&+ye&Nc&+yt&Ni&+yn&Ng   &+L -&+W 10 tokens
 &+L------------------------------
-&+CAlatorin Medals of Honor - 8
+&+CAlatorin Medals of Honor - 10
 
 &+L------------------------------
 ~
@@ -2609,7 +2609,7 @@ heart ancient baobob tree~
 ~
 8 6 3 0 7 0 33558528 16385 66 0 0
 0 0 0 0 0 0 0 0
-0 55343 100 285212672 0 536870944 0
+0 55343 100 16777216 0 536870944 0
 E
 heart ancient baobob tree~
    &+gThis deep-green heart glows with a deeply-seeded, ancient magic.
@@ -3148,8 +3148,8 @@ A
 A
 1 15
 #83305
-bloody heart blue dragon welp~
-&+rthe bloody heart of a &+Bblue dragon welp&N~
+bloody heart blue drake~
+&+rthe bloody heart of a &+Bblue drake&N~
 &+rThe huge, bloody heart of a &+Bblue dragon&N&+r has been left here.~
 ~
 8 2 3 0 7 0 4096 16385 0 0 0
@@ -3161,9 +3161,9 @@ bloody heart melbe~
 &+rutterly &+Wglistens &N&+rwith the blood of its former owner.
 ~
 #83306
-bloody heart blue dragon welp~
+bloody heart blue drake~
 &+rthe bloody heart of a &+bblue dragon welp&N~
-&+rThe huge, bloody heart of a &+Bblue dragon&N&+r has been left here.~
+&+rthe bloody heart of a &+bblue drake&N~
 ~
 8 2 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
@@ -3174,12 +3174,12 @@ bloody heart melbe~
 &+rutterly &+Wglistens &N&+rwith the blood of its former owner.
 ~
 #83307
-key taark private hall~
-&+La &N&+ckey&+L to &+RTaark Shanat's Private Hall&N~
-An unnamed object lies here, looking lonely and forelorn.~
+key shanat~
+&+Lthe &N&+ckey &+Lof &+RShanat&N~
+&+LThe &N&+ckey &+Lof &+RShanat&+L has been left here.~
 ~
-18 22 2 0 7 0 1 16385 64 0 0
-0 100 0 0 0 0 0 0
+18 22 2 0 7 0 8388609 16385 64 0 0
+0 0 0 0 0 0 0 0
 0 15343 100
 E
 key taark private hall~
@@ -3754,7 +3754,7 @@ _victim_msg~
 ~
 E
 _char_msg~
-&N&+yYour $n &N&+ysuddenly &+Wglows &N&+yunder your &+Ydwarven &N&+ytouch.
+&N&+yYour $q &N&+ysuddenly &+Wglows &N&+yunder your &+Ydwarven &N&+ytouch.
 ~
 A
 18 6
@@ -4223,7 +4223,7 @@ A
 A
 36 5
 #83373
-platinum coin coins~
+mound platinum coin coins~
 &Na great mound of &+Wplatinum&N~
 &+WA great mound of platinum coins covers the floor, filling the room.~
 ~
@@ -5398,9 +5398,9 @@ huge golden key~
 #83444
 emblem dragonslayer~
 &+Lan &+Rem&N&+rbl&+Re&N&+rm &+Lof the &N&+gdragon&+rslayer&N~
-An unnamed object lies here, looking lonely and forelorn.~
+&+LThe emblem of the &N&+gdragon&+rslayer &+Lhas been left here.~
 ~
-9 35 1 0 7 0 0 0 0 0 0
+9 35 1 0 7 0 0 2097153 66 0 0
 5 0 0 0 0 0 0 0
 0 100223 100 0 0 0 4096
 E
@@ -5502,3 +5502,134 @@ An unnamed object lies here, looking lonely and forelorn.~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
+#83451
+hooded flowing black robe~
+&+La hooded flowing black robe&N~
+&+LA crumbled heap lies here looking to be a large heavy robe.~
+~
+9 3 4 0 9 0 0 1033 64 0 0
+5 0 0 1 0 0 0 0
+3 11222 73
+E
+hooded flowing black robe~
+   &+LThis huge, heavy robe is actually made of thin material that has simply been
+&+Lrestitched overself again and again to form a ballooning, massive black gown.
+&+LThe robe is loose enough to wear directly upon, or about ones body, made of a
+&+Lthick black fur material.
+~
+A
+13 18
+A
+3 6
+#83452
+massive studded mithril fists~
+&+msome massive &+ys&+mt&+yu&+md&+yd&+me&+yd &+mmithril fists&N~
+&+mA huge pair of studded mithril fists are laying here.~
+~
+9 18 5 0 5 0 0 129 64 0 0
+5 0 0 0 0 0 0 0
+9 22332 100
+E
+massive studded mithril fists~
+   &+mThese simple, massive fists are covered with huge jagged studs.
+~
+A
+1 12
+A
+31 5
+#83453
+object unnamed~
+an unnamed object~
+An unnamed object lies here, looking lonely and forelorn.~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#83454
+collar razor-sharp mithril blades sharp~
+&+La co&N&+mllar &+Lof &N&+mrazor&+L-sharp &N&+mmithril &+Lblades&N~
+&+LA collar of razor-sharp mithril blades has been left here.~
+~
+9 18 2 0 8 0 1 5 64 0 0
+5 0 0 5 1 0 0 0
+2 5444 100
+E
+collar razor-sharp mithril blades sharp~
+   &+LThis thick, collar has several huge &+mmithril blades &+Ljutting outwards.
+~
+A
+18 2
+A
+19 4
+#83455
+smouldering forge hammer urtengor~
+&+Lthe &N&+rsmouldering &+Lforge &N&+rha&+Rmm&+Yer &+Lof &N&+rUrt&+Ren&+Yg&+Ro&+Yr&N~
+&+LA massive &N&+rsmouldering &+Lhammer sits here on its head.~
+~
+5 11 4 0 15 0 33554944 8193 66 0 48
+4 4 4 0 0 167023 40 33
+1 332230 100
+E
+smouldering forge hammer urtengor~
+   &+LThis heavy stone thick-headed hammer is forever churning in a
+&+Lfantastic liquid-stone state, made graspable by the power of
+&+LUrtengor himself.
+~
+E
+_char_msg~
+With a mighty swing, you smash $N with $q, &+Rsending out a &+Ydestructive &+Rsho&n&+cckw&+Rave of &+Yforce&N!
+~
+E
+_room_msg~
+&n$n's $q &+Yexplodes &+Rwith a massive &n&+cshockwave&+R!
+~
+A
+58 -1
+A
+31 5
+#83456
+righteous warhammer hammer clangeddin silverbeard~
+&+Wthe righteous warhammer of &NClang&+Weddin &+CSilver&+Wbeard&N~
+&+WThe righteous warhammer of &NClang&+Weddin &+CSilver&+Wbeard&N sits here on its head.~
+~
+5 39 4 0 15 0 513 8193 66 0 48
+4 4 4 0 0 243015 33 40
+1 328338 100
+E
+righteous warhammer clangeddin silverbeard~
+   &+WThis glorious, magical stone hammer is that of Clangeddin Silverbeard,
+&+WDwarven god of strength and justice.  The hammer itself shimmers with a
+&+Wglowing holiness.
+~
+E
+_char_msg~
+&NYour $q &+Wexplodes with holy light, smiting $N!
+~
+E
+_room_msg~
+&+WSuddenly, $n's hammer explodes into a brilliant flash of light, smiting $N!
+~
+E
+_victim_msg~
+&n$n's $q &+Wexplodes in a painfully-blinding blast of light, smiting you!
+~
+A
+57 -1
+A
+35 5
+#83457
+golden miner's helmet~
+&+Ya golden miner's helmet&N~
+&+YA golden miner's helmet has been left here.~
+~
+9 24 4 0 9 0 1073741825 17 64 0 0
+0 0 0 0 0 0 0 0
+6 32333 100
+E
+golden miner's helmet~
+   &+YThis miner's helmet is of standard, average dwarven design.
+&+YThe entire thing, however, has been casted in shimmering gold
+&+Ythat seems to be glowing with a special radiance.
+~
+A
+14 20
