@@ -57,6 +57,8 @@ O 0 97907 3 97936 100 0 0 0        * a bubbling spring
 O 0 97908 3 97936 100 0 0 0        * a coconut palm
 O 0 97909 1 97952 100 0 0 0        * a Gnomish telescope
 O 0 97911 1 98000 100 0 0 0        * some huge rocks
+O 0 97940 2 98012 100 0 0 0        * a glorious white quiver of heavenly flight
+O 0 40743 1 98013 100 0 0 0        * (object type not in this .obj file)
 O 0 55326 1 98015 100 0 0 0        * (object type not in this .obj file)
 O 0 55278 1 98015 100 0 0 0        * (object type not in this .obj file)
 *
@@ -156,13 +158,28 @@ M 0 97912 3 98008 100 0 0 0        * a young nestling
 M 0 97912 3 98008 100 0 0 0        * a young nestling
 M 0 97913 1 98008 100 0 0 0        * the mother eagle
 M 0 97915 7 98010 100 0 0 0        * a magnificent griffon
+G 1 40746 5 0 20 0 0 0             *    (object type not in this .obj file)
 M 0 97915 7 98010 100 0 0 0        * a magnificent griffon
+G 1 40746 5 0 20 0 0 0             *    (object type not in this .obj file)
 M 0 97915 7 98010 100 0 0 0        * a magnificent griffon
 M 0 97915 7 98010 100 0 0 0        * a magnificent griffon
 M 0 97915 7 98010 100 0 0 0        * a magnificent griffon
 M 0 97911 6 98010 100 0 0 0        * a glorious eagle
 M 0 97911 6 98010 100 0 0 0        * a glorious eagle
 M 0 97915 7 98010 100 0 0 0        * a magnificent griffon
+M 0 97924 1 98012 3 0 0 0          * a beautiful seraphim
+E 1 97940 2 23 100 0 0 0           *   a glorious white quiver of heavenly flight
+G 1 97941 5 0 100 0 0 0            *    an arrow of heavenly light
+G 1 97941 5 0 100 0 0 0            *    an arrow of heavenly light
+G 1 97941 5 0 100 0 0 0            *    an arrow of heavenly light
+G 1 97941 5 0 100 0 0 0            *    an arrow of heavenly light
+G 1 97941 5 0 100 0 0 0            *    an arrow of heavenly light
+M 0 97922 1 98013 100 0 0 0        * a powerful armored griffon
+E 1 97939 1 35 100 0 0 0           *   a golden saddle studded with aquamarines
+G 1 40746 5 0 100 0 0 0            *    (object type not in this .obj file)
+M 0 97923 1 98013 100 0 0 0        * a vibrant female griffon
+G 1 40746 5 0 100 0 0 0            *    (object type not in this .obj file)
+G 1 40746 5 0 40 0 0 0             *    (object type not in this .obj file)
 M 0 97917 1 98014 100 0 0 0        * a strange being
 M 0 55239 1 98015 100 0 0 0        * (mob type not in this .mob file)
 M 0 97920 1 98017 100 0 0 0        * Mugflog, the shaman

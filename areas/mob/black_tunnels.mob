@@ -158,7 +158,7 @@ that comes near it. Glowing red eyes stand out from the rest of this
 undead, drawing your attention.
 ~
 1107298368 1 0 167772170 12480 0 0 -1000 S
-UG 0 0 -1
+sp 0 0 -1
 35 6 -22 35d70+525 4d6+7
 0.0.0.0 45360
 8 8 1
@@ -214,7 +214,7 @@ guard hulking skeletal~
 &+Wits empty eyesockets. Dressed in full armor, he looks ready for battle.&n
 ~
 67110978 0 0 570458152 12480 0 0 -1000 S
-U 0 16 -1
+sk 0 16 -1
 42 -1 -59 42d107+1890 6d6+12
 0.0.0.0 102060
 8 8 0
@@ -226,7 +226,7 @@ skeleton~
 &+WRaised from the dead, this skeleton walks around brainlessly.&n
 ~
 0 0 0 33554432 0 0 0 -500 S
-U 0 0 -1
+sk 0 1 -1
 10 18 67 10d18+35 2d3+1
 0.0.0.0 1296
 8 8 0

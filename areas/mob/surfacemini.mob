@@ -240,8 +240,8 @@ magnificent griffon~
 &+Won its grizzled face.  This griffon has sharp teeth and bright eyes.  Huge wings
 &+Wspread forth from its lion body, and an eagle head on its neck.
 ~
-395272 0 0 402653208 0 0 0 777 S
-ae 0 1 4
+1074137096 0 0 402653208 0 0 0 777 S
+an 0 67108864 4
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -322,3 +322,48 @@ g 0 256 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
+#97922
+powerful armored griffon~
+&+Ya powerful &n&+car&+Lmo&N&+cr&+Le&N&+cd &+Wgr&+Yif&N&+yfon&N~
+&+YA powerful &+Wgr&+Yiff&N&+yon &N&+carmored &+Yduring his travels &N&+bflies here.
+~
+   &+YThis mighty griffon has lived a long life, shown by the
+&+Yforeign &N&+carmor &+Yadoring his mature body.  Quite respected
+&+Yby the others in its roost, this griffon moves with pride
+&+Yprotecting its flock.
+~
+1140983882 0 0 134217736 0 0 0 1000 S
+ct 0 67108864 5
+50 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#97923
+vibrant female griffon~
+&+Wa vibrant female &+Ygr&+Wiff&N&+yon&N~
+&+WA vibrant female &+Wgr&+Yiff&N&+yon &N&+gsits upon several small eggs in her nest.
+~
+   &+WThis griffon, unlike most of the others, is entirely white from head to
+&+Wtoe.  It is a wonder why the &+Ygr&N&+yiff&+Won race are so rare, partly due
+&+Wto the fact that the egg-laying females are so sparse throughout &N&+rDuris&+W.
+~
+133194 0 0 134217752 0 0 0 1000 S
+an 0 8 5
+50 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 2
+#97924
+beautiful seraphim~
+&+Wa &+Cbe&N&+cau&+Wtiful &+Wse&+Yraph&+Wim&N~
+&+YA beautiful &+Wseraphim &+Wfloats here&+Y nurturing the &+Wgriffons&+Y.
+~
+   &+WThis beautiful angel has two long wings covered in glorious white
+&+Wfeathers.  Her face is a porcelain-white as is her hair.  She has
+&+Wno belly button or nipples, her skin completely smoothed over.  A
+&+Wbeaming smile graces her flawless face as two eyes stare forth
+&+Wshining with a &+Ygolden &+Wbrilliance.
+~
+1073764424 0 0 134217752 0 0 0 1000 S
+an 0 33554432 -1
+56 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 2

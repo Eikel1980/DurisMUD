@@ -425,3 +425,50 @@ potion cleansing~
 10 15 3 0 7 0 8192 2049 64 0 0
 35 200 3 1 0 0 0 0
 0 0 100
+#97939
+golden saddle studded aquamarines~
+&+Ya golden saddle &N&+ys&Nt&N&+yu&Ndd&+ye&Nd with &+Caqua&+Bmar&+Cines&N~
+&+YA golden saddle &N&+ystudded &Nwith &+Caqua&+Bmar&+Cines&N has been left here.~
+~
+9 24 4 0 11 0 0 16777217 64 0 0
+10 0 0 4 0 0 0 0
+2 108223 100
+E
+golden saddle studded aquamarines~
+   &+YThis excellently-made golden saddle has several large &+Caquamarines
+&+Ystudded across both sides, completely symmetrically.
+~
+A
+13 15
+A
+18 3
+#97940
+glorious quiver heavenly flight~
+&+Wa glorious white quiver of heavenly flight&N~
+&+WA glorious white quiver of heavenly flight has been left here.~
+~
+30 50 2 0 7 0 67379201 1048577 66 0 0
+120 5 1 5 0 0 0 0
+0 233220 100 134217728 0 0 0
+E
+glorious quiver heavenly flight~
+   &+WThis glorious white quiver is covered in brilliant angel feathers.
+&+WTwo seperate wings sprout forth from the back of it, flapping on their
+&+Wown free will with graceful elgance.  The quiver shines with a glorious
+&+Wheavenly light.
+~
+A
+14 20
+#97941
+arrow heavenly light~
+&+Wan arrow of &+Yhe&+Wav&+Yen&+Wly &+Yli&+Wgh&+Yt&N~
+&+YAn &+War&+Yro&+Ww of &+Yhe&+Wav&+Yen&+Wly &+Yli&+Wght&N floats here on its own free will.~
+~
+6 6 3 0 15 0 262145 16385 66 0 0
+4 3 6 1 0 0 0 0
+0 6999 100
+E
+arrow heavenly light~
+   &+WThis brilliant white arrow has a &+Yburning tip &+Wand rests on a tiny
+&+Wbed of clouds.
+~

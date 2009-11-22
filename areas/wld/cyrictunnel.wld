@@ -927,9 +927,10 @@ D3
 ~
 0 0 54543
 D5
+&+LThe rocks piled here are the result of a sizable cave-in.
 ~
-~
-4 0 54555
+rocks~
+5 0 54555
 S
 #54545
 &+LA Jagged and Winding Tunnel&N~
@@ -1029,7 +1030,7 @@ S
 &+LAn extreme feeling of heat can be felt to the east, and a more
 &+Lcalm and almost light feeling from the west.
 ~
-545 33029 13
+545 33025 13
 D0
 ~
 ~
@@ -1047,7 +1048,7 @@ S
 &+LAn extreme feeling of heat can be felt to the east, and a more
 &+Lcalm and almost light feeling from the west.
 ~
-545 33029 13
+545 33025 13
 D1
 ~
 ~
@@ -1065,7 +1066,7 @@ S
 &+LAn extreme feeling of heat can be felt to the east, and a more
 &+Lcalm and almost light feeling from the west.
 ~
-545 33029 13
+545 33025 13
 D2
 ~
 ~
@@ -1083,7 +1084,7 @@ S
 &+LAn extreme feeling of heat can be felt to the east, and a more
 &+Lcalm and almost light feeling from the west.
 ~
-545 33029 13
+545 33025 13
 D0
 ~
 ~
@@ -1125,9 +1126,10 @@ D1
 ~
 0 0 54556
 D4
+&+LThe rocks here are the result of a sizable cave-in.
 ~
-~
-4 0 54544
+rocks~
+5 0 54544
 S
 #54556
 &+LA Secret Tunnel&N~
@@ -1215,9 +1217,10 @@ D3
 ~
 0 0 54559
 D4
+&+LA hole in the rocks leads up above into a lava shaft.
 ~
-~
-0 0 54561
+hole~
+5 0 54561
 S
 #54561
 &+LA Small Hole in the Rocks&N~
@@ -1232,9 +1235,10 @@ D4
 ~
 0 0 53632
 D5
+&+LA hole in the rocks leads into this pit of rubble.
 ~
-~
-4 0 54560
+hole~
+5 0 54560
 S
 #54562
 &+LA Dark Staircase&N~

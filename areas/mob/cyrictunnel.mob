@@ -9,7 +9,7 @@ decaying zombie sentry~
 &+Lto protect the chamber to the south.
 ~
 2058 1 0 0 0 0 0 -1000 S
-SH 0 1 -1
+zo 0 1 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -39,7 +39,7 @@ large bat~
 &+Lred eyes give it infravision and let it safely glide through
 &+Lthese tunnels in search of food.
 ~
-8 1 0 0 0 0 0 -1000 S
+2056 1 0 0 0 0 0 -1000 S
 B 0 1 1
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
@@ -54,7 +54,7 @@ wandering zombie~
 &+Lgroans as it stumbles through the tunnels aimlessly.
 ~
 2056 1 0 0 0 0 0 -1000 S
-U 16 1 -1
+zo 16 1 -1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -76,7 +76,7 @@ H 0 1024 -1
 0.0.0.0 0
 8 8 0
 #54505
-decaying~
+decaying zombie~
 &+La &Nde&+gc&+Ga&Nying &+Lzo&+gmb&+Lie&N~
 &+LA decaying &+gzombie&+L moans as he stumbles through the tunnels.
 ~
@@ -85,7 +85,7 @@ decaying~
 &+Lgroans as it stumbles through the tunnels aimlessly.
 ~
 2056 1 0 0 0 0 0 -1000 S
-U 16 1 -1
+zo 16 1 -1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -99,23 +99,23 @@ skeleton humanoid~
 &+Labomination has bits of flesh hanging from its bony body and an
 &+Levil stare with eyes of red fire.
 ~
-8 0 0 0 0 0 0 -1000 S
-U 0 1 -1
+2056 0 0 0 0 0 0 -1000 S
+sk 0 1 -1
 17 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
 #54507
 dark spectre~
 &+La dark spectre&N~
-&+LA dark spectre floats through the chamber
+&+LA dark spectre floats ominously &n&+rthrough the darkness.
 ~
    &+LThis undead creature is about five to six feet tall and looks to
 &+Lhave been animated from a medium sized bipedal humanoid.  This undead
 &+Labomination has bits of flesh hanging from its bony body and an
 &+Levil stare with eyes of red fire.
 ~
-8 1 0 8 0 0 0 -1000 S
-U 0 1 -1
+2056 1 0 8 0 0 0 -1000 S
+sp 0 8192 -1
 17 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -129,8 +129,8 @@ partially decayed zombie~
 &+Labomination has bits of flesh hanging from its bony body and an
 &+Levil stare with eyes of red fire.
 ~
-8 1 0 8 0 0 0 -1000 S
-U 0 1 -1
+2056 1 0 8 0 0 0 -1000 S
+zo 0 1 -1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

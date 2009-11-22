@@ -29,6 +29,22 @@ D 0 54537 0 1 100 0 0 0
 *     north exit from "A Dark Chamber of Sacrifice" to
 *     "A Runed Tunnel Before a Dark Chamber Door" - closed
 *
+D 0 54544 5 5 100 0 0 0
+*     down exit from "A Dark Chamber of Sacrifice" to
+*     "A Rockpile in a Secret Tunnel" - closed/secret
+*
+D 0 54555 4 5 100 0 0 0
+*     up exit from "A Rockpile in a Secret Tunnel" to
+*     "A Dark Chamber of Sacrifice" - closed/secret
+*
+D 0 54560 4 5 100 0 0 0
+*     up exit from "A Secret Tunnel" to
+*     "A Small Hole in the Rocks" - closed/secret
+*
+D 0 54561 5 5 100 0 0 0
+*     down exit from "A Small Hole in the Rocks" to
+*     "A Secret Tunnel" - closed/secret
+*
 D 0 54580 0 1 100 0 0 0
 *     north exit from "A Pillowed Chamber Before the Altar of Cyric" to
 *     "The Stone Altar of Cyric the Destroyer" - closed
@@ -86,6 +102,5 @@ M 0 54512 1 54581 100 0 0 0        * the high priest of Cyric
 E 1 54509 1 15 100 0 0 0           *   a wristband of suffering
 F 1 54513 1 54581 100 0 0 0        * an imp servant (following)
 E 1 54508 1 16 100 0 0 0           *   a bloody sacrimental dagger
-M 0 54515 1 54581 100 0 0 0        * an imp servant
 *
 S
