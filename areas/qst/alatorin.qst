@@ -2231,8 +2231,7 @@ S
 #83392
 MA
 qc_action 300~
-&N$n &+gsays 'And one time we were hunted by the Ultranos!  Fast ship, let me
-&+gtell you!' shivering at the thought of the now-ghost ship.
+&N$n &+gsays 'And one time we were hunted by the Ultranos!  Fast ship, let me tell you!' shivering at the thought of the now-ghost ship.
 ~
 MA
 ultranos~
@@ -2263,6 +2262,14 @@ moregeeth~
 MA
 gruneegth~
 &N$n glares at $N.
+~
+M
+hi hello~
+&N$n looks at $N and says &+G'Yeah and whatdo you know?!'
+~
+M
+qc_action 300~
+&N$n grins and says &+G'The Ultranos was a fine ship, but not fine enough for Bimk!'
 ~
 QA
 &N$n says 'Well done, $n!'

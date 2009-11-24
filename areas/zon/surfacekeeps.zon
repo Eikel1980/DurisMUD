@@ -12,21 +12,25 @@ O 0 120041 2 120985 100 0 0 0      * slash trap
 O 0 120041 2 120985 100 0 0 0      * slash trap
 O 0 120034 1 121029 100 0 0 0      * a huge wooden sign reading 'Hammer and Shield Tavern'
 O 0 120002 1 121030 100 0 0 0      * a statue of a great dwarven battle scene
+O 0 193 5 121082 50 0 0 0          * (object type not in this .obj file)
 O 0 120048 3 121200 100 0 0 0      * a small ore deposit
 P 1 223 3 120048 100 0 0 0         *   (object type not in this .obj file)
 P 1 78485 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 78463 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 78422 3 120048 2 0 0 0         *   (object type not in this .obj file)
+O 0 193 5 121200 50 0 0 0          * (object type not in this .obj file)
 O 0 120017 2 121220 100 0 0 0      * a wooden merchant stall
 O 0 120003 1 121314 100 0 0 0      * a sign reading 'Court Hall'
 O 0 1460 1 121484 100 0 0 0        * (object type not in this .obj file)
 O 0 70 1 121680 100 0 0 0          * (object type not in this .obj file)
 O 0 53624 1 121680 100 0 0 0       * (object type not in this .obj file)
+O 0 193 5 121764 60 0 0 0          * (object type not in this .obj file)
 O 0 120048 3 121873 100 0 0 0      * a small ore deposit
 P 1 78422 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 78485 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 78463 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 223 3 120048 100 0 0 0         *   (object type not in this .obj file)
+O 0 193 5 121873 50 0 0 0          * (object type not in this .obj file)
 O 0 120040 2 122775 100 0 0 0      * dart trap
 O 0 120040 2 122775 100 0 0 0      * dart trap
 O 0 120004 1 123014 100 0 0 0      * a huge sign reading 'Steelgrips Depot'
@@ -35,6 +39,7 @@ P 1 78463 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 78422 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 78485 3 120048 2 0 0 0         *   (object type not in this .obj file)
 P 1 223 3 120048 100 0 0 0         *   (object type not in this .obj file)
+O 0 193 5 123183 50 0 0 0          * (object type not in this .obj file)
 O 0 120006 1 123213 100 0 0 0      * a sign reading 'Muntz's Goods'
 O 0 120000 1 123215 100 0 0 0      * a velvet-covered table with a small sign
 O 0 120001 1 123314 100 0 0 0      * a flag with a white cross
