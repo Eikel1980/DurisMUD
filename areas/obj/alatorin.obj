@@ -1307,7 +1307,7 @@ tempered mithril breastplate breast plate~
 ~
 9 18 3 0 11 0 134217728 9 64 0 0
 20 0 0 5 0 0 0 0
-5 20111 100
+5 74332 100
 A
 17 -50
 A
@@ -1319,7 +1319,7 @@ tempered mithril helmet~
 ~
 9 18 3 0 11 0 134217728 17 64 0 0
 15 0 0 5 0 0 0 0
-5 17000 100
+5 70118 100
 A
 17 -30
 A
@@ -1331,7 +1331,7 @@ tempered mithril arm plates~
 ~
 9 18 3 0 11 0 134217728 257 64 0 0
 15 0 0 5 0 0 0 0
-5 18000 100
+5 75332 100
 A
 17 -30
 A
@@ -1343,7 +1343,7 @@ tempered mithril leg plates~
 ~
 9 18 3 0 11 0 134217728 33 64 0 0
 15 0 0 5 0 0 0 0
-5 18000 100
+5 75339 100
 A
 17 -30
 A
@@ -1355,7 +1355,7 @@ tempered mithril boots~
 ~
 9 18 3 0 11 0 134217728 65 64 0 0
 15 0 0 5 0 0 0 0
-5 18000 100
+5 72443 100
 A
 17 -35
 A
@@ -6333,3 +6333,60 @@ A
 24 -4
 A
 55 4
+#83496
+mithril plated mithril-plated gnomish mobility suit~
+&+Ca &+mmithril&+C-plated &+Rgnomish &+Mm&+Ro&+Mb&+Ri&+Ml&+Ri&+Mt&+Ry &+Wsuit&N~
+&+mA mithril-plated &+Rgnomish &+Mmobility &+Wsuit has been left here.~
+~
+9 18 2 0 15 0 33554432 9 64 0 0
+20 0 0 3 0 0 0 0
+-50 204309 100
+E
+mithril plated mithril-plated gnomish mobility suit~
+   &+CThis fine suit has large &+mmithril plates&+C fastened to the
+&+Cshoulders, chest, back, and stomach.  The &n&+mplates&+L have been
+&+Cshaped into perfect &+Lmuscular &+Cstructure, bound together by a
+&+Cseries of strange cords with miniature &+ypullies &+Cadding resistance.
+&+CThis suit has numerous &+Lbuckles &+Con numerous &+ystraps&+C, allowing
+&+Cits wearer to tighten and release the armor with total ease.
+~
+A
+55 6
+A
+36 6
+#83497
+mithril plated mithril-plated gnomish arm enhancers~
+&+Csome &+mmithril&+C-plated &+Rgnomish &+Marm &+Ce&+cn&+Ch&+ca&+Cn&+cc&+Ce&+cr&+Cs&N~
+&+CSome &N&+mmithril-plated &+Rgnomish &+Mleg &+cenhancers &+Lhave been left here.~
+~
+9 18 2 0 15 0 33554432 257 0 0 0
+20 0 0 3 0 0 0 0
+-20 198332 100
+E
+mithril plated mithril-plated gnomish arm enhancers~
+   &+CThese arm plates are plated with large sheets of &+mmithril&+C.  Huge
+&+Cbands exist on miniature pullies at the joints of the arms, allowing for
+&+Cadded resistance and optimal strength enhancement - gnomish style.
+~
+A
+55 4
+A
+36 4
+#83498
+mithril plated mithril-plated gnomish leg enhancers~
+&+Csome &N&+mmithril&+C-plated &+Rgnomish &n&+mleg &+ce&+Cn&+ch&+Ca&+cn&+Cc&+ce&+Cr&+cs&N~
+&+CSome &N&+mmithril-pltaed &+Rgnomish leg enhancers&+L have been left here.~
+~
+9 18 2 0 15 0 33554432 0 0 0 0
+20 0 0 3 0 0 0 0
+-20 199884 100
+E
+mithril plated mithril-plated gnomish leg enhancers~
+   &+CThese leg enhancers are made with huge &+mmithril plates &+Cprotecting
+&+Cthe major muscles.  Along the knee area there are protective guards with
+&+Cslotted plating, adding additional protection.
+~
+A
+55 4
+A
+36 4

@@ -582,7 +582,7 @@ spirit dwarven cleric dwarf archaic~
 &+Wdwarves.  A great feeling of holy rejuvenation flows from the
 &+Wrighteous form of this holyman.
 ~
-2122 128 0 2 0 0 0 1000 S
+2122 0 0 8 0 0 0 1000 S
 UG 0 33 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0

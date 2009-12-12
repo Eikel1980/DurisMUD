@@ -109,6 +109,37 @@ M
 qc_action 25~
 &+WSomething in the immediate area causes a warm and healing sensation to fill your body.
 ~
+MA
+hi hello~
+&+WThe spirit of the archaic dwarf floats over to $N and tries ineffectively to communicate.  A small image of Berronar Truesilver appears momentarily.
+~
+MA
+berronar truesilver~
+At the sound of &+WBerronar Truesilver's name&N, the &+Warchaic dwarven spirit briefly takes shape into a &N&+yphysical presence&+W...
+&+W'Adventurer!'&N the &+ydwarf calls out&+W 'My life is stuck between &+Clife &+Wand &+Ldeath&+W!  Please, $N, end my suffering..  You must find the &+Choly &+celven &+Crelic of &+Ylife&+W as well as the &+runholy &+Lrelic of &+Wlife &+Land &N&+rdeath&+W..'
+Struggling to maintain its &+Lphysical &Nexistence, the &+ydwarf &Nsays &+W'Go, $N!  Return to me with these &+Crelics&+W!
+~
+MA
+relic life death~
+&+WThe dwarf spirit &Ntakes shape into a mortal &+ydwarf &Nfor a moment and says &+W'Zorta the destroyer in the underworld.. Kitan the great in Menden-of-the-deep.. go $N...'
+~
+MA
+zorta kitan~
+&+WThe spirit of the dwarf struggles to respond, fluctuating between &+Clife&+W and &+Ldeath&+W.
+~
+QA
+&NAs the &+Crelics of &+Ylife &+Cand &+Ldeath &+Wfuse together under the spirits touch, a brilliant bright light fills the area.
+&+WAs the light begins to subside, the form of the dwarven spirit begins to coalesce into the mortal presence of a &N&+ydwarf.
+Within moments, the &+ydwarf &Nstarts fading from sight&+L, entering the spectral realm.
+~
+R I 94726
+R E 250000
+G I 88807
+G I 4402
+D
+&NAs the &+ydwarf &+Lfades further and further into oblivion, he says &+W'Take this symbol $N, as you have done great honor to Berronar Truesilver.'
+&+L...and like that, he is gone.
+~
 S
 #94757
 M

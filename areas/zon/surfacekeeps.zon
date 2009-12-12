@@ -268,9 +268,9 @@ E 1 120011 20 16 100 0 0 0         *   a heavy mithril dwarven hammer
 E 1 120009 14 5 100 0 0 0          *   a full suit of well-polished mithril platemail
 M 0 120031 5 121534 100 0 0 0      * a well-armored dwarven warrior
 E 1 120013 2 14 100 0 0 0          *   some heavy mithril bracers
-M 0 120055 1 121544 2 0 0 0        * the spirit of Thurghan Sanbraid
+M 0 120055 1 121544 6 0 0 0        * the spirit of Thurghan Sanbraid
 E 1 120036 1 5 100 0 0 0           *   a heavenly flowing white gown
-M 0 120056 1 121544 2 0 0 0        * the spirit of Brigy Stonehammer
+M 0 120056 1 121544 6 0 0 0        * the spirit of Brigy Stonehammer
 E 1 120037 1 9 100 0 0 0           *   some spectral gauntlets of the battleragers
 E 1 120011 20 16 100 0 0 0         *   a heavy mithril dwarven hammer
 E 1 120011 20 17 100 0 0 0         *   a heavy mithril dwarven hammer

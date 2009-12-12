@@ -422,7 +422,8 @@ craft crafting~
 &n$n nods at $N and says 'I love crafting, $N.  I've been working on these new &+Bbody enhancement mechanics&N where we can increase our own energy output from simple &+Cmechanics &Nthat attach to the body!'
 With a large grin, $n continues 'My prototypes are finished and I'm ready to produce!  Here's what I will require:
 &Nsome &+Mte&n&+mmp&+Mer&N&+med &+Mmi&+mth&+Mril &Narmor, which you'll find at &+CSteel&N&+cgr&+Lip's &+WDepot&N
-a &+Rgn&N&+romi&+Rsh &+Lshopkeepers token&N
+a &+Rgn&N&+romi&+Rsh &+Lshopkeepers token&N x2
+&+Wa &Nplastic &+Wbag full of &N&+gd&+Grug&N&+gs&N, which you can get from a &+Ggoblin &Nin &+WDeramuth Port&N
 and &+W50 platinum&N for my troubles
 
 'There are five different pieces of &+mte&+Mmpere&+d &+Cmithril &n&+marm&+Mor &Nand thus five different pieces of &+Bbody enhancements&N that I can craft for you, $N!' he says.
@@ -490,6 +491,26 @@ R I 55033
 G I 83250
 G I 83250
 G I 83250
+QA
+&N$n unfastens the &+Cmithril &Nbreastplate from itself.
+After tinkering with the pieces, even &+Yfusing &Nsome together, $n smiles at his finished product.
+~
+R I 83496
+G C 50000
+G I 83188
+G I 55033
+G I 55033
+G I 55247
+QA
+&N$n &nprys off the &+mmithril plating &Nfrom the arm plates.
+&NWith a smile on his face, and after several minutes of &+Rtinkering&N, $n happily says 'All finished!'
+~
+R I 83497
+G C 50000
+G I 83190
+G I 55033
+G I 55033
+G I 55247
 S
 #83151
 M
