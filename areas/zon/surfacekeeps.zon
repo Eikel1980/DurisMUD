@@ -1,6 +1,6 @@
 #1200
 &+LThe &N&+mD&+Le&N&+mp&+Lt&N&+mh&+Ls of &N&+rDuris~
-123833 0 16 60 65 1
+123833 0 16 60 65 2
 100 100
 *
 * Zone edited with durisEdit v2.99de
@@ -110,6 +110,9 @@ E 1 120010 20 11 100 0 0 0         *   a well-polished mithril body shield
 E 1 120011 20 16 100 0 0 0         *   a heavy mithril dwarven hammer
 R 1 120037 10 120964 100 0 0 0     * a huge, furry saddled ram (being ridden)
 M 0 120045 8 120964 80 0 0 0       * a six-legged basilisk
+M 0 120050 1 120992 100 0 0 0      * a cloaked Khoralator Fort scout
+G 1 43708 1 0 100 0 0 0            *    (object type not in this .obj file)
+G 1 95518 1 0 100 0 0 0            *    (object type not in this .obj file)
 M 0 120059 4 121001 20 0 0 0       * a small cockatrice
 M 0 120004 1 121014 100 0 0 0      * a halfling spice merchant
 G 1 823 999 0 100 0 0 0            *    (object type not in this .obj file)
@@ -199,9 +202,6 @@ E 1 120008 5 16 100 0 0 0          *   a huge dwarven battle-axe
 M 0 120012 5 121257 100 0 0 0      * a BrightAxe elite stair guard
 E 1 120008 5 16 100 0 0 0          *   a huge dwarven battle-axe
 M 0 53642 23 121274 100 0 0 0      * (mob type not in this .mob file)
-M 0 120050 1 121290 100 0 0 0      * a cloaked Khoralator Fort scout
-G 1 43708 1 0 100 0 0 0            *    (object type not in this .obj file)
-G 1 95518 1 0 100 0 0 0            *    (object type not in this .obj file)
 M 0 120051 23 121312 80 0 0 0      * an osquip
 M 0 120025 5 121318 100 0 0 0      * a shield dwarf
 M 0 120021 5 121321 100 0 0 0      * a wandering Alatorin guard

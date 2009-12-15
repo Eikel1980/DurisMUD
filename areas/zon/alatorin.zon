@@ -1,6 +1,6 @@
 #831
 &+CAlatorin &+L- the &N&+rForge &+LCity~
-83900 2 0 40 50 1
+83920 2 0 40 50 1
 *
 * Zone edited with durisEdit v2.99de
 *
@@ -3242,17 +3242,17 @@ E 1 83281 16 16 100 0 0 0          *   a mithril dwarven halberd
 F 1 83332 8 83706 100 0 0 0        * an elite Helgor sentinel (following)
 E 1 83281 16 16 100 0 0 0          *   a mithril dwarven halberd
 F 1 83377 1 83706 100 0 0 0        * a pet cave bear (following)
-M 0 4530 8 83717 100 0 0 0         * (mob type not in this .mob file)
-M 0 4530 8 83717 100 0 0 0         * (mob type not in this .mob file)
+M 0 4530 10 83717 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83717 100 0 0 0        * (mob type not in this .mob file)
 M 0 15224 3 83717 100 0 0 0        * (mob type not in this .mob file)
 M 0 15224 3 83721 100 0 0 0        * (mob type not in this .mob file)
 M 0 15224 3 83724 100 0 0 0        * (mob type not in this .mob file)
-M 0 4530 8 83726 100 0 0 0         * (mob type not in this .mob file)
-M 0 4530 8 83726 100 0 0 0         * (mob type not in this .mob file)
-M 0 4530 8 83726 100 0 0 0         * (mob type not in this .mob file)
-M 0 4530 8 83727 100 0 0 0         * (mob type not in this .mob file)
-M 0 4530 8 83727 100 0 0 0         * (mob type not in this .mob file)
-M 0 4530 8 83727 100 0 0 0         * (mob type not in this .mob file)
+M 0 4530 10 83726 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83726 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83726 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83727 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83727 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83727 100 0 0 0        * (mob type not in this .mob file)
 M 0 83373 1 83743 100 0 0 0        * an Alatorin captain
 E 1 83112 999 11 100 0 0 0         *   an iron shield bearing the crest of Alatorin
 E 1 83142 999 16 100 0 0 0         *   a huge warhammer
@@ -3490,5 +3490,18 @@ M 0 83432 4 83900 100 0 0 0        * a smuggler
 G 1 40441 16 0 100 0 0 0           *    (object type not in this .obj file)
 M 0 83433 2 83900 100 0 0 0        * a barbarian smuggler
 G 1 40442 6 0 100 0 0 0            *    (object type not in this .obj file)
+M 0 700066 3 83902 50 0 0 0        * (mob type not in this .mob file)
+M 0 700066 3 83905 50 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83906 100 0 0 0        * (mob type not in this .mob file)
+M 0 4530 10 83908 100 0 0 0        * (mob type not in this .mob file)
+M 0 700066 3 83910 100 0 0 0       * (mob type not in this .mob file)
+M 0 24011 6 83916 100 0 0 0        * (mob type not in this .mob file)
+G 1 53610 2 0 100 0 0 0            *    (object type not in this .obj file)
+M 0 24011 6 83916 100 0 0 0        * (mob type not in this .mob file)
+M 0 24011 6 83916 100 0 0 0        * (mob type not in this .mob file)
+M 0 24011 6 83920 100 0 0 0        * (mob type not in this .mob file)
+G 1 53610 2 0 100 0 0 0            *    (object type not in this .obj file)
+M 0 24011 6 83920 100 0 0 0        * (mob type not in this .mob file)
+M 0 24011 6 83920 100 0 0 0        * (mob type not in this .mob file)
 *
 S
