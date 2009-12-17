@@ -506,7 +506,7 @@ pulsing orb~
 &+Blevitates here, just above the stairs to the wine cellar.
 ~
 T
-20 9 1 60
+2308 9 5 60
 #91026
 rare electrum coin~
 &+Ca rare engraved electrum coin&N~
@@ -851,7 +851,7 @@ time warp mask~
 &+Lth&+ce &+Lti&+Cm&+Le &+mwarp &+Lma&+cs&+Lk&N~
 &+LThe time warp mask&N has been left here.~
 ~
-9 1 3 0 15 0 33554432 262145 0 0 0
+9 1 3 0 15 0 33554496 262145 0 0 0
 10 0 0 5 0 0 0 0
 -10 185424 100 16 0 0 0
 E
