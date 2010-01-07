@@ -29,7 +29,7 @@ vector<whitelist_data> get_whitelist()
 #else  
   if( !qry("SELECT id, created_on, pattern, player, admin, description FROM %s", MULTIPLAY_WHITELIST_TABLE_NAME) )
   {
-    logit(LOG_DEBUG, "whitelisted_host(): qry failed");
+    logit(LOG_DEBUG, "get_whitelist(): qry failed");
     return whitelist;
   }
     

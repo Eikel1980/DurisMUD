@@ -2978,7 +2978,6 @@ void select_main_menu(P_desc d, char *arg)
     close_socket(d);
     break;
   case '1':                    /* enter game */
-#ifdef TEST_MUD
     // multi check
     if (P_char t_ch = is_already_in_game(d))
     {
@@ -3000,8 +2999,8 @@ void select_main_menu(P_desc d, char *arg)
         
         sprintf(buf, "\r\nYou are already in the game as %s, and you need to rent or camp them before you can\r\n"
                      "enter the game with a new character.\r\n\r\n"
-                     "If you are multiple people playing from the same location, please petition or send an email to admin@durismud.com\r\n"
-                     "and we can allow multiple connections from your location.\r\n\r\n", GET_NAME(t_ch));
+                     "If you are multiple people playing from the same location, please petition or send an email to multiplay@durismud.com\r\n"
+                     "and if approved we can allow multiple connections from your location.\r\n\r\n", GET_NAME(t_ch));
                 
         SEND_TO_Q(buf, d);
         SEND_TO_Q(MENU, d);
@@ -3009,7 +3008,6 @@ void select_main_menu(P_desc d, char *arg)
       }
 
     }
-#endif
       
     enter_game(d);
     STATE(d) = CON_PLYNG;
