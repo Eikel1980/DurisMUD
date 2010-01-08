@@ -1622,6 +1622,7 @@ void spell_psionic_cloud(int level, P_char ch, char *arg, int type, P_char victi
   struct affected_type af;
   struct affected_type af1;
   P_char   tch, next;
+  int save;
 
   if (CheckMindflayerPresence(ch))
   {
@@ -1630,18 +1631,23 @@ void spell_psionic_cloud(int level, P_char ch, char *arg, int type, P_char victi
     return;
   }
 
+  act("&+LYou summon a dark haze of psionic energy with the power of your mind!",
+      FALSE, ch, 0, 0, TO_CHAR);
+  act("&+L$n &+Lsquints and a dark haze of psionic energy appears!", FALSE,
+      ch, 0, 0, TO_ROOM);
+
 
   bzero(&af, sizeof(af));
   af.type = SPELL_PSIONIC_CLOUD;
-  af.duration = level;
-  af.modifier = -1 * number(level / 4, 35);
+  af.duration = 2;
+  af.modifier = -1 * number(level / 4, 30);
   af.bitvector = 0;
   af.location = APPLY_POW;
 
   bzero(&af1, sizeof(af1));
   af1.type = SPELL_PSIONIC_CLOUD;
-  af1.duration = level;
-  af1.modifier = -1 * number(level / 4, 35);
+  af1.duration = 2;
+  af1.modifier = -1 * number(level / 4, 25);
   af1.bitvector = 0;
   af1.location = APPLY_MOVE;
 
@@ -1652,17 +1658,28 @@ void spell_psionic_cloud(int level, P_char ch, char *arg, int type, P_char victi
     if (should_area_hit(ch, tch))
     {
       if (affected_by_spell(tch, SPELL_PSIONIC_CLOUD))
+	  {
+		 act("$N &+Lis already affected by your psionic haze!&n",
+         TRUE, ch, 0, tch, TO_CHAR);
         continue;
+	  }
 
+      save = BOUNDED(5, GET_C_POW(ch) + level - GET_C_INT(tch) - GET_LEVEL(tch), 95);
+
+      if(save > number(0, 100))
+	  {
+      act("$N &+Lis engulfed by the psionic haze!&n",
+          TRUE, ch, 0, tch, TO_CHAR);
+      act("&+LYou feel much less virile as you are engulfed by &n$n&+L's psionic cloud...&n",
+          TRUE, ch, 0, tch, TO_VICT);
+      act("$N &+Lis engulfed by the psionic haze!&n",
+          TRUE, ch, 0, tch, TO_NOTVICT);
       affect_to_char(tch, &af);
       affect_to_char(tch, &af1);
+	  }
     }
   }
-  act
-    ("&+LYou summon a dark haze of psionic energy with the power of your mind!",
-     FALSE, ch, 0, 0, TO_CHAR);
-  act("&+L$n &+Lsquints and a dark haze of psionic energy appears!", FALSE,
-      ch, 0, 0, TO_ROOM);
+
   zone_spellmessage(ch->in_room,
                     "&+LYou feel weakened as your psyche senses a massive energy influx!\r\n",
                     "&+LYou feel weakened as your psyche senses a massive energy influx coming from the %s!\r\n");
