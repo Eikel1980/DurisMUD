@@ -265,6 +265,7 @@ mira                      *825-826
 forgotten_forest          *827 (Oraks)
 delwyn                    *828-830
 *alatorin                  *831-832
+alatorin_objects          * just a stub zone to allow loading alatorin objs while zone is reviewed - prevents crashes
 ancientb                  *856 Bridge Zone
 arcium                    *857-862
 crakkaro                  *870-875
