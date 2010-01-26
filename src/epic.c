@@ -2285,25 +2285,15 @@ float get_epic_zone_alignment_mod(int zone_number, ubyte racewar)
   
   mysql_free_result(res);
 
-  if( alignment > 0 && racewar == RACEWAR_EVIL )
+  if( (alignment < 0 && racewar == RACEWAR_GOOD) || (alignment > 0 && racewar == RACEWAR_EVIL) )
   {
-    // good alignment, evil racewar
-    mod += ((float) alignment) * 2.0 * (float) get_property("epic.zone.alignmentMod", 0.10);
+    // good alignment, evil racewar or evil alignment, good racewar
+    mod += ((float) abs(alignment)) * 2.0f * (float) get_property("epic.zone.alignmentMod", 0.10);
   }
-  else if( alignment > 0 && racewar == RACEWAR_GOOD )
+  else if( (alignment > 0 && racewar == RACEWAR_GOOD) || (alignment < 0 && racewar == RACEWAR_EVIL) )
   {
-    // good alignment, good racewar
-    mod += ((float) -alignment) * (float) get_property("epic.zone.alignmentMod", 0.10);    
-  }
-  else if( alignment < 0 && racewar == RACEWAR_EVIL )
-  {
-    // evil alignment, evil racewar
-    mod += ((float) -alignment) * (float) get_property("epic.zone.alignmentMod", 0.10);    
-  }
-  else if( alignment < 0 && racewar == RACEWAR_GOOD )
-  {
-    // evil alignment, good racewar
-    mod += ((float) alignment) * 2.0 * (float) get_property("epic.zone.alignmentMod", 0.10);    
+    // good alignment, good racewar or evil alignment, evil racewar
+    mod -= ((float) abs(alignment)) * (float) get_property("epic.zone.alignmentMod", 0.10);    
   }
   
   debug("get_epic_zone_alignment_mod(zone_number=%d, racewar=%d): %f", zone_number, (int) racewar, mod);
