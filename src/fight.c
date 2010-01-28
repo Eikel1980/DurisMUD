@@ -8113,6 +8113,11 @@ int calculate_attacks(P_char ch, int attacks[])
         number(1, 100) < GET_CHAR_SKILL(ch, SKILL_DUAL_WIELD) &&
         ch->equipment[SECONDARY_WEAPON])
       ADD_ATTACK(SECONDARY_WEAPON);
+  
+    int blurattackchance = (GET_LEVEL(ch) / 2);
+    if (GET_CLASS(ch, CLASS_RANGER) && (number(1, 100) < blurattackchance) &&
+        ch->equipment[SECONDARY_WEAPON])
+      ADD_ATTACK(SECONDARY_WEAPON); 
   }
 
   if(IS_AFFECTED5(ch, AFF5_NOT_OFFENSIVE))
