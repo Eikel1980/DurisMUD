@@ -30,3 +30,275 @@ An outpost of %s&n is here.~
 25 1 0 0 0 0 0 0 0 0 0
 0 7 -1 0 0 0 0 0
 0 0 100
+#48004
+fountain~
+a &+Bfountain&N~
+A large &+Bfountain&N rests here.~
+~
+17 15 3 0 7 0 0 0 0 0 0
+-1 -1 0 0 0 0 0 0
+0 0 100
+#48005
+fountain~
+&+Wa fountain&N~
+&+WA marble white fountain rests here.&N~
+~
+17 15 3 0 7 0 0 0 0 0 0
+-1 -1 17 0 0 0 0 0
+0 0 100
+#48006
+fountain~
+&+La fountain&N~
+&+LA fountain of smooth obsidian rests here.&N~
+~
+17 15 3 0 7 0 0 0 0 0 0
+-1 -1 28 0 0 0 0 0
+0 0 100
+#48007
+cabinet storage~
+&+ya storage cabinet&n~
+&+yA storage cabinet is bolted to the wall here.&n~
+~
+35 16 4 25 7 0 98304 0 64 0 0
+250 5 0 125 0 0 0 0
+0 0 100
+#48100
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48101
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48102
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48103
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48104
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48105
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48106
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48107
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48108
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48109
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48110
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48111
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48112
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48113
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48114
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48115
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48116
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48117
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48118
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48119
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48120
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48121
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48122
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48123
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48124
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48125
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48126
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48127
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48128
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#48129
+board~
+&+ya board&N~
+&+yA bulletin board stands here.&N~
+~
+13 15 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
