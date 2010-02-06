@@ -906,8 +906,9 @@
 #define SKILL_EPIC_LUCK              1259
 #define SKILL_THROAT_CRUSHER         1260 // Just a bogus skill to prevent wrong wear off message to the attacker.
 #define SKILL_SHIP_DAMAGE_CONTROL    1261
+#define SKILL_RAGE_REORIENT          1262 // Added to handle reorient on rage skill
 
-#define LAST_SKILL                   SKILL_SHIP_DAMAGE_CONTROL
+#define LAST_SKILL                   SKILL_RAGE_REORIENT
 
 #define FIRST_SECONDARY_SKILL        1501
 

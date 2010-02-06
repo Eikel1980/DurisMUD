@@ -817,6 +817,7 @@ void do_infuriate(P_char ch, char *argument, int cmd)
 void do_rage(P_char ch, char *argument, int cmd)
 {
   struct affected_type af;
+  int dura;
 
   if(!ch ||
     !CAN_ACT(ch) ||
@@ -835,12 +836,19 @@ void do_rage(P_char ch, char *argument, int cmd)
     return;
   }
 
-  if (IS_AFFECTED2(ch, AFF2_FLURRY))
+  if (affected_by_spell(ch, SKILL_RAGE))
   {
     send_to_char("You are too deep in battle madness!\r\n", ch);
     return;
   }
 
+  if (affected_by_spell(ch, SKILL_RAGE_REORIENT))
+  {
+    send_to_char("You have not yet recovered from your last fit of &+rBloodLust&n!\r\n", ch);
+	return;
+  }
+
+  
   if(number(1, 105) > GET_CHAR_SKILL(ch, SKILL_RAGE))
   {
     send_to_char("&+RYou are unable to call forth the rage within you...\r\n", ch);
@@ -861,13 +869,17 @@ void do_rage(P_char ch, char *argument, int cmd)
   act("$n fills with a &+RSURGE&n of &+rBLoOdLuST! ROARRRRRRRR!!!\r\n",
     FALSE, ch, 0, 0, TO_ROOM);
 
+  dura = (4 * PULSE_VIOLENCE * GET_CHAR_SKILL(ch, SKILL_RAGE)) / 100;
+
   ch->specials.combat_tics = 3;
   memset(&af, 0, sizeof(struct affected_type));
   af.type = SKILL_RAGE;
   af.flags = AFFTYPE_SHORT;
-  af.bitvector2 = AFF2_FLURRY;
-  af.duration = (4 * PULSE_VIOLENCE * GET_CHAR_SKILL(ch, SKILL_RAGE)) / 100;
+  //af.bitvector2 = AFF2_FLURRY; Removing flurry from rage, and lets try just making it increase their damage output instead.
+  af.duration = dura;
   affect_to_char(ch, &af);
+
+  set_short_affected_by(ch, SKILL_RAGE_REORIENT, (dura * 2));
 }
 
 /*

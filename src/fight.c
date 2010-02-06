@@ -350,7 +350,7 @@ void update_dam_factors()
   dam_factor[DF_SLSHIELDINCREASE] = get_property("damage.soulnegshield.increase", 1.5);
   dam_factor[DF_CHAOSSHIELD] = get_property("damage.reduction.chaosshield.mod", 0.90);
   dam_factor[DF_BERSERKRAGE] = get_property("damage.increase.berserk.rage", 1.350);
-  dam_factor[DF_RAGED] = get_property("damage.decrease.rage", 0.700);
+  dam_factor[DF_RAGED] = get_property("damage.increase.rage", 2.000);
   dam_factor[DF_ENERGY_CONTAINMENT] = get_property("damage.reduction.EnergyContainment", 0.750);
 }
 
@@ -4555,8 +4555,8 @@ int melee_damage(P_char ch, P_char victim, double dam, int flags,
     else
       dam = (dam * BOUNDED(1, ((GET_MAX_HIT(ch) / GET_HIT(ch)) / 2), 3));
 
-// Reducing the damage while in rage since a flurried berserker does an insane
-// amount of damage.
+// Since rage no longer flurries, this is going to be a damage increase
+// while the berserker is raged. 
     if(affected_by_spell(ch, SKILL_RAGE))
       dam *= dam_factor[DF_RAGED];
   }
@@ -6251,6 +6251,9 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   to_hit = chance_to_hit(ch, victim, wpn_skill, weapon);
 
   diceroll = number(1, 100);
+  //an increased change to critical hit if affected by rage
+  if (affected_by_spell(ch, SKILL_RAGE))
+	  diceroll -= (GET_CHAR_SKILL(ch, SKILL_RAGE) / 10);
 
   if (diceroll < 5)
     sic = -1;
