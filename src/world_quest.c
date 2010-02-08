@@ -774,7 +774,8 @@ int getItemFromZone(int zone)
             GET_OBJ_WEIGHT(t_obj) > 99 ||
             IS_SET(t_obj->bitvector, AFF_HASTE) ||
             IS_SET(t_obj->bitvector, AFF_DETECT_INVISIBLE) ||            
-            IS_SET(t_obj->bitvector4, AFF4_DETECT_ILLUSION))
+            IS_SET(t_obj->bitvector4, AFF4_DETECT_ILLUSION) ||
+            IS_NOSHOW(t_obj))
         {
           extract_obj(t_obj, FALSE);
           continue;
