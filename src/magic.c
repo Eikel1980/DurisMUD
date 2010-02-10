@@ -9703,7 +9703,7 @@ void spell_shadow_breath_2(int level, P_char ch, char *arg, int type,
 
   if(!NewSaves(victim, SAVING_SPELL, save))
   {
-    spell_energy_drain(level, ch, NULL, 0, victim, obj);
+    spell_enervation(level, ch, NULL, 0, victim, obj);
     return;
   }
   if(spell_damage(ch, victim, dam, SPLDAM_NEGATIVE, SPLDAM_BREATH | SPLDAM_NODEFLECT, &messages) !=
