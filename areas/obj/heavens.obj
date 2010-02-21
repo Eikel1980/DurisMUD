@@ -8549,9 +8549,9 @@ god stone nobody~
 0 0 0 0 0 0 0 0
 0 0 100 134742144 2048 0 0
 #1223
-shiploader wand~
-&+La small wand called 'shiploader'&N~
-&+LA Small wand with a ship shaped pommel lays here&N~
+wand~
+&+La small &+ycargo information&+L wand&N~
+&+LA small wand with a ship shaped pommel lie here&N~
 ~
 13 15 3 0 7 0 67215369 16385 0 0 0
 0 0 0 0 0 0 0 0

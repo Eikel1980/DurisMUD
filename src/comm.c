@@ -785,9 +785,6 @@ void game_loop(int s)
     if (!(pulse % WAIT_SEC))
       newship_activity();
 
-    if (!(pulse % (WAIT_SEC * 120)))
-      cargo_activity();
-
     if( !no_ferries && !(pulse % WAIT_SEC) )
       ferry_activity();
     
@@ -797,8 +794,8 @@ void game_loop(int s)
     if (!(pulse % (WAIT_SEC * 120)))
         spawn_random_mapmob();
         
-    if (!(pulse % WAIT_SEC))
-      arena_activity();
+//    if (!(pulse % WAIT_SEC))
+//      arena_activity();
 
     if (!(pulse % SHORT_AFFECT))
       short_affect_update();
@@ -806,8 +803,8 @@ void game_loop(int s)
     if (!(pulse % PULSES_IN_TICK) && !mini_mode)
       web_info();
 
-    if (!(pulse % PULSES_IN_TICK))
-      wimps_in_accept_queue();
+//    if (!(pulse % PULSES_IN_TICK))
+//      wimps_in_accept_queue();
     PROFILE_END(activities);
 
     PROFILE_START(combat);

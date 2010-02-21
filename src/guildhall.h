@@ -41,6 +41,7 @@ using namespace std;
 #define GH_BANK_COUNTER_VNUM 48010
 #define GH_TOWN_PORTAL_VNUM 48011
 #define GH_LIBRARY_TOME_VNUM 48012
+#define GH_CARGO_BOARD_VNUM 48013
 
 #define GH_ROOM_TEMPLATE_ENTRANCE 48000
 #define GH_ROOM_TEMPLATE_HEARTSTONE 48001
@@ -53,6 +54,7 @@ using namespace std;
 #define GH_ROOM_TEMPLATE_HEAL 48003
 #define GH_ROOM_TEMPLATE_BANK 48008
 #define GH_ROOM_TEMPLATE_TOWN_PORTAL 48009
+#define GH_ROOM_TEMPLATE_CARGO 48010
 
 #define GH_GOLEM_WARRIOR    48001
 #define GH_GOLEM_CLERIC     48002
@@ -72,7 +74,8 @@ using namespace std;
 #define GH_ROOM_TYPE_BANK 7
 #define GH_ROOM_TYPE_TOWN_PORTAL 8
 #define GH_ROOM_TYPE_LIBRARY 9
-#define GH_ROOM_NUM_TYPES 10
+#define GH_ROOM_TYPE_CARGO 10
+#define GH_ROOM_NUM_TYPES 11
 
 /*
  rooms values are type-specific
@@ -111,6 +114,7 @@ int guildhall_window_room(int room, P_char ch, int cmd, char *arg);
 int guildhall_window(P_obj obj, P_char ch, int cmd, char *arg);
 int guildhall_heartstone(P_obj obj, P_char ch, int cmd, char *arg);
 int guildhall_bank_room(int room, P_char ch, int cmd, char *arg);
+int guildhall_cargo_board(P_obj obj, P_char ch, int cmd, char *arg);
 
 int check_gh_home(P_char ch, int r_room);
 P_obj find_gh_library_book_obj(P_char ch);
@@ -265,6 +269,16 @@ struct LibraryRoom : public GuildhallRoom
   P_obj tome;
   
   LibraryRoom() : GuildhallRoom(GH_ROOM_TEMPLATE_LIBRARY), tome(NULL) {}
+};
+
+struct CargoRoom : public GuildhallRoom
+{
+  bool init();
+  bool deinit();
+  
+  P_obj board;
+  
+  CargoRoom() : GuildhallRoom(GH_ROOM_TEMPLATE_CARGO), board(NULL) {}
 };
 
 //

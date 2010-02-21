@@ -260,6 +260,7 @@ void summon_ship_event(P_char ch, P_char victim, P_obj obj, void *data)
         sprintf(tmp_buf, "&+y%s arrives at port.\r\n&N", temp->name);
         send_to_room(tmp_buf, to_room);
         dock_ship(temp, to_room);
+        check_contraband(temp, SHIPLOCATION(temp));
         REMOVE_BIT(temp->flags, SUMMONED);
         temp->speed = 0;
         temp->setspeed = 0;
@@ -808,11 +809,11 @@ int ShipSlot::get_weight() const
     }
     else if (type == SLOT_CARGO)
     {
-        return (int) (val0 * get_property("ship.weight.cargo", 0.0));
+        return (int) (val0 * WEIGHT_CARGO);
     }
     else if (type == SLOT_CONTRABAND)
     {
-        return (int) (val0 * get_property("ship.weight.contraband", 0.0));
+        return (int) (val0 * WEIGHT_CONTRABAND);
     }
     return 0;
 }

@@ -29,6 +29,7 @@ void Guildhall::initialize()
   obj_index[real_object0(GH_DOOR_VNUM)].func.obj = guildhall_door;
   obj_index[real_object0(GH_WINDOW_VNUM)].func.obj = guildhall_window;
   obj_index[real_object0(GH_HEARTSTONE_VNUM)].func.obj = guildhall_heartstone;
+  obj_index[real_object0(GH_CARGO_BOARD_VNUM)].func.obj = guildhall_cargo_board;
   mob_index[real_mobile0(GH_GOLEM_WARRIOR)].func.mob = guildhall_golem;
   mob_index[real_mobile0(GH_GOLEM_CLERIC)].func.mob = guildhall_golem;
   mob_index[real_mobile0(GH_GOLEM_SORCERER)].func.mob = guildhall_golem;

@@ -537,6 +537,11 @@ void do_construct_upgrade(P_char ch, char *arg)
             coin_stringv(get_property("guildhalls.construction.platinum.upgrade.library", 0) * 1000), 
             get_property("guildhalls.construction.points.upgrade.library", 0));
     send_to_char(buff, ch);
+
+    sprintf(buff, "&+W%s&n) %s (%s and %d &+Wconstruction points&n)\r\n", "cargo", "an information board with current cargo prices across the world", 
+            coin_stringv(get_property("guildhalls.construction.platinum.upgrade.cargo", 0) * 1000), 
+            get_property("guildhalls.construction.points.upgrade.cargo", 0));
+    send_to_char(buff, ch);
     
     send_to_char("\r\n", ch);
     send_to_char("To upgrade this room, type 'construct upgrade <type>'\r\n", ch);
@@ -584,6 +589,12 @@ void do_construct_upgrade(P_char ch, char *arg)
     plat_cost = get_property("guildhalls.construction.platinum.upgrade.library", 0) * 1000;
     cp_cost = get_property("guildhalls.construction.points.upgrade.library", 0);
   }      
+  else if( isname(buff, "cargo") )
+  {
+    type = GH_ROOM_TYPE_CARGO;    
+    plat_cost = get_property("guildhalls.construction.platinum.upgrade.cargo", 0) * 1000;
+    cp_cost = get_property("guildhalls.construction.points.upgrade.cargo", 0);
+  }        
   else
   {
     send_to_char("Please enter a valid type of room to upgrade to.\r\n", ch);

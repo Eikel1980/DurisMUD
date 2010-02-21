@@ -234,6 +234,9 @@ void load_guildhall_rooms(Guildhall *guildhall)
       case GH_ROOM_TYPE_LIBRARY:
         room = new LibraryRoom();
         break;                
+      case GH_ROOM_TYPE_CARGO:
+        room = new CargoRoom();
+        break;                        
       default:
         room = new GuildhallRoom();
     }

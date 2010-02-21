@@ -47,27 +47,29 @@ struct ShipFragData shipfrags[10];
 //--------------------------------------------------------------------
 void initialize_newships()
 {
-    int      i, j;
+  obj_index[real_object0(60000)].func.obj = newship_proc;
+  obj_index[real_object0(60001)].func.obj = shipobj_proc;
+  obj_index[real_object0(1223)].func.obj = ship_cargo_info_stick;
+  
+  if (!read_newship())
+  {
+      logit(LOG_FILE, "Error reading ships from file!\r\n");
+  }
 
-    if (!read_newship())
-    {
-        logit(LOG_FILE, "Error reading ships from file!\r\n");
-    }
+  ShipVisitor svs;
+  for (bool fn = shipObjHash.get_first(svs); fn; )
+  {
+      P_ship ship = svs;
+      if (IS_SET(ship->flags, NEWSHIP_DELETE)) 
+      {
+          fn = shipObjHash.erase(svs);
+          delete_ship(ship);
+      } 
+      else
+          fn = shipObjHash.get_next(svs);
+  }
 
-    ShipVisitor svs;
-    for (bool fn = shipObjHash.get_first(svs); fn; )
-    {
-        P_ship ship = svs;
-        if (IS_SET(ship->flags, NEWSHIP_DELETE)) 
-        {
-            fn = shipObjHash.erase(svs);
-            delete_ship(ship);
-        } 
-        else
-            fn = shipObjHash.get_next(svs);
-    }
-
-    initialize_ship_cargo();
+  initialize_ship_cargo();
 }
 
 //--------------------------------------------------------------------
@@ -1720,7 +1722,7 @@ int look_cargo(P_char ch, P_ship ship)
     {
         if (ship->slot[slot].type == SLOT_CARGO) 
         {
-            sprintf(buf, "%s&n, &+Y%d&n crates, invoiced at %s.\r\n",
+            sprintf(buf, "%s&n, &+Y%d&n crates, bought for %s.\r\n",
               cargo_type_name(ship->slot[slot].index),
               ship->slot[slot].val0,
               coin_stringv(ship->slot[slot].val1));
@@ -1728,7 +1730,7 @@ int look_cargo(P_char ch, P_ship ship)
         }
         else if (ship->slot[slot].type == SLOT_CONTRABAND) 
         {
-            sprintf(buf, "&+Y*&n%s&n, &+Y%d&n crates, invoiced at %s.\r\n",
+            sprintf(buf, "&+Y*&n%s&n, &+Y%d&n crates, bought for %s.\r\n",
               contra_type_name(ship->slot[slot].index),
               ship->slot[slot].val0,
               coin_stringv(ship->slot[slot].val1));
@@ -3403,7 +3405,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
     }
     send_to_char ("&+y---=== For sale ===---&N\r\n", ch);
     
-    int cost = 1000 * cargo_sell_price(rroom);
+    int cost = cargo_sell_price(rroom);
 
     //if( GET_LEVEL(ch) < 50 )
     //    cost = (int) (cost * (float) GET_LEVEL(ch) / 50.0);
@@ -3417,7 +3419,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
         if (i == rroom)
             continue;
       
-        cost = 1000 * cargo_buy_price(rroom, i);
+        cost = cargo_buy_price(rroom, i);
 
         //if( GET_LEVEL(ch) < 50 )
         //  cost = (int) (cost * (float) GET_LEVEL(ch) / 50.0);
@@ -3436,7 +3438,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
         {
             send_to_char ("\r\n&+L---=== Contraband for sale ===---&N\r\n", ch);
             
-            cost = 1000 * contra_sell_price(rroom);
+            cost = contra_sell_price(rroom);
 
             //if( GET_LEVEL(ch) < 50 )
             //    cost = (int) (cost * (float) GET_LEVEL(ch) / 50.0);
@@ -3451,7 +3453,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
             if (i == rroom)
                 continue;
           
-            cost = 1000 * contra_buy_price(rroom, i);
+            cost = contra_buy_price(rroom, i);
 
             //if( GET_LEVEL(ch) < 50 )
             //    cost = (int) (cost * (float) GET_LEVEL(ch) / 50.0);
@@ -3474,7 +3476,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
             int cargo_type = ship->slot[i].index;
             if (cargo_type == rroom) 
             {
-                sprintf(buf, "%s&n, &+Y%d&n crates, invoiced at %s&n.\r\n", 
+                sprintf(buf, "%s&n, &+W%d&n crates, bought for %s&n.\r\n", 
                     cargo_type_name(cargo_type), 
                     ship->slot[i].val0,
                     coin_stringv(ship->slot[i].val1));
@@ -3482,19 +3484,20 @@ int list_cargo(P_char ch, P_ship ship, int owned)
             }
             else
             {
-                cost = 1000 * cargo_buy_price(rroom, cargo_type);
-                cost *= ship->slot[i].val0;
+                cost = cargo_buy_price(rroom, cargo_type) * ship->slot[i].val0;
 
                 //if( GET_LEVEL(ch) < 50 )
                 //    cost = (int) (cost * (float) ((float) GET_LEVEL(ch) / 50.0));
             
-                int cost2 = (int) ( ((float) cost / (float) ship->slot[i].val1) - 1.00) * 100;
-
-                sprintf(buf, "%s&n, &+Y%d&n crates. Can sell for %s&n, profit: %d%%\r\n",
+                int profit = ( ((float)cost / (float)ship->slot[i].val1) - 1.00 ) * 100;
+            
+                sprintf(buf2, "%s", coin_stringv(ship->slot[i].val1));              
+                sprintf(buf, "%s&n, &+Y%d&n crates. Bought for %s&n, can sell for %s (%d%% profit)\r\n",
                     cargo_type_name(cargo_type), 
                     ship->slot[i].val0,
+                    buf2,
                     coin_stringv(cost),
-                    cost2);
+                    profit);
                 send_to_char(buf, ch);
             }
         }
@@ -3503,7 +3506,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
             int contra_type = ship->slot[i].index;
             if (contra_type == rroom) 
             {
-                sprintf(buf, "&+L*&n%s&n, &+Y%d&n crates, invoiced at %s&n.\r\n", 
+                sprintf(buf, "&+L*&n%s&n, &+Y%d&n crates, bought for %s&n.\r\n", 
                     contra_type_name(contra_type), 
                     ship->slot[i].val0,
                     coin_stringv(ship->slot[i].val1));
@@ -3511,18 +3514,21 @@ int list_cargo(P_char ch, P_ship ship, int owned)
             }
             else
             {
-                cost = 1000 * contra_buy_price(rroom, contra_type);
+                cost = contra_buy_price(rroom, contra_type);
                 cost *= ship->slot[i].val0;
 
                 //if( GET_LEVEL(ch) < 50 )
                 //    cost = (int) (cost * (float) ((float) GET_LEVEL(ch) / 50.0));
             
-                int cost2 = (int) (((float) ((float) cost / (float) ship->slot[i].val1) - 1.00) * 100);
-                sprintf(buf, "&+L*&n%s&n, &+Y%d&n crates. Can sell for %s&n, profit: %d&n%%\r\n", 
+                int profit = ( ((float)cost / (float)ship->slot[i].val1) - 1.00 ) * 100;
+
+                sprintf(buf2, "%s", coin_stringv(ship->slot[i].val1));
+                sprintf(buf, "&+L*&n%s&n, &+Y%d&n crates. Bought for %s&n, can sell for %s (%d%% profit)\r\n", 
                     contra_type_name(contra_type),
                     ship->slot[i].val0,
+                    buf2,
                     coin_stringv(cost),
-                    cost2);
+                    profit);
                 send_to_char(buf, ch);
             }
         }
@@ -3849,15 +3855,18 @@ int sell_cargo_slot(P_char ch, P_ship ship, int slot, int rroom)
     else
     {
         int crates = ship->slot[slot].val0;
+        int cost = crates * cargo_buy_price(rroom, type);
+        int profit = ( ((float)cost / (float)ship->slot[slot].val1) - 1.00 ) * 100;
         ship->slot[slot].clear();
-
-        int cost = crates * 1000 * cargo_buy_price(rroom, type);
 
         //if( GET_LEVEL(ch) < 50 )
         //    cost = (int) ( cost * GET_LEVEL(ch) / 50.0 );
-
-        wizlog(56,"Cargo: %s sold &+W%d&n crates of %s&n for %s&n.\r\n", GET_NAME(ch), crates, cargo_type_name(type), coin_stringv(cost));
-        sprintf(buf, "You sell &+W%d&n crates of %s&n for %s&n.\r\n", crates, cargo_type_name(type), coin_stringv(cost));
+        
+        sprintf(buf, "CARGO: %s sold &+W%d&n %s&n at %s&n [%d] for %s&n (%d percent profit)", GET_NAME(ch), crates, cargo_type_name(type), ports[rroom].loc_name, ports[rroom].loc_room, coin_stringv(cost), profit);
+        statuslog(56, buf);
+        logit(LOG_SHIP, strip_ansi(buf).c_str());
+        
+        sprintf(buf, "You sell &+W%d&n crates of %s&n for %s&n, for a %d%% profit.\r\n", crates, cargo_type_name(type), coin_stringv(cost), profit);
         send_to_char(buf, ch);
 
         // economy affect
@@ -3947,22 +3956,25 @@ int sell_contra_slot(P_char ch, P_ship ship, int slot, int rroom)
     }
     else
     {
-        int crates = ship->slot[slot].val0;
-        ship->slot[slot].clear();
+      int crates = ship->slot[slot].val0;
+      int cost = crates * contra_buy_price(rroom, type);
+      int profit = ( ((float)cost / (float)ship->slot[slot].val1) - 1.00 ) * 100;
+      ship->slot[slot].clear();
 
-        int cost = crates * 1000 * contra_buy_price(rroom, type);
-      
-        //if( GET_LEVEL(ch) < 50 )
-        //    cost = (int) ( cost * GET_LEVEL(ch) / 50.0 );
+      //if( GET_LEVEL(ch) < 50 )
+      //    cost = (int) ( cost * GET_LEVEL(ch) / 50.0 );
 
-        wizlog(56,"Cargo: %s sold &+W%d&n crates of %s&n for %s&n.\r\n", GET_NAME(ch), crates, contra_type_name(type), coin_stringv(cost));
-        sprintf(buf, "You sell &+W%d&n crates of %s&n for %s&n.\r\n", crates, contra_type_name(type), coin_stringv(cost));
-        send_to_char(buf, ch);
+      sprintf(buf, "CONTRABAND: %s sold &+W%d&n %s&n at %s&n [%d] for %s&n (%d percent profit)", GET_NAME(ch), crates, contra_type_name(type), ports[rroom].loc_name, ports[rroom].loc_room, coin_stringv(cost), profit);
+      statuslog(56, buf);
+      logit(LOG_SHIP, strip_ansi(buf).c_str());
 
-        // economy affect
-        adjust_ship_market(SOLD_CONTRA, rroom, type, crates);
+      sprintf(buf, "You sell &+W%d&n crates of %s&n for %s&n, for a %d%% profit.\r\n", crates, contra_type_name(type), coin_stringv(cost), profit);
+      send_to_char(buf, ch);
 
-        return cost;
+      // economy affect
+      adjust_ship_market(SOLD_CONTRA, rroom, type, crates);
+
+      return cost;      
     }
 }
 void check_contraband(P_ship ship, int to_room)
@@ -3977,7 +3989,8 @@ void check_contraband(P_ship ship, int to_room)
     if (SHIPCONTRA(ship) + SHIPCARGO(ship) == 0)
         return;
 
-    act_to_all_in_ship(ship, "The port authorities boarded the ship in search of contraband");
+    act_to_all_in_ship(ship, "The port authorities board the ship in search of contraband...");
+
     float total_load = (float)SHIPCARGOLOAD(ship) / (float)SHIPMAXCARGOLOAD(ship);
     bool did_confiscate = false;
     for (int slot = 0; slot < MAXSLOTS; slot++)
@@ -3990,6 +4003,7 @@ void check_contraband(P_ship ship, int to_room)
             if (type == rroom) continue; // port does not confiscate its own contraband
 
             float conf_chance = 100.0;
+
             /*if (IS_TRUSTED(ch))
             {
                 conf_chance = 0;
@@ -3997,23 +4011,27 @@ void check_contraband(P_ship ship, int to_room)
             else*/ 
             if (ship->frags >= required_ship_frags_for_contraband(type))
             {
-                conf_chance = 25.0 + (float)crates / 2; // the more contraband you have, the bigger confiscation chance
+                conf_chance = get_property("ship.contraband.baseConfiscationChance", 0.0) + (float)crates / 2; // the more contraband you have, the bigger confiscation chance
                 conf_chance -= sqrt(ship->frags) / 5.0;
                 conf_chance += (100.0 - conf_chance) * (1.0 - total_load); // the more total cargo onboard, the less confiscation chance
-                if (conf_chance > 100) conf_chance = 100;
+                if (conf_chance > 100.0) conf_chance = 100.0;
+                if (conf_chance < 0) conf_chance = 5.0; // always a small chance of being confiscated
             }
           
-            conf_chance *= get_property("ship.contraband.confiscationChanceModifier", 1.000);
-          
-            debug("SHIP: (%s) confiscation chance (%d).", SHIPOWNER(ship), conf_chance);
+            debug("SHIP: (%s) confiscation chance (%f).", SHIPOWNER(ship), conf_chance);
 
             int confiscated = 0;
             for (int i = 0; i < crates; i++)
-                if (number(0, 99) < (int)conf_chance) 
+                if (number(0, 99) < (int)conf_chance)
                     confiscated++;
+          
             if (confiscated > 0)
             {
-                sprintf(buf, "The port authorities found %d crates of %s&n and confiscated it!", confiscated, contra_type_name(type));
+                sprintf(buf, "CONTRABAND: %s had &+W%d&n/&+W%d&n %s&n confiscated in %s [%d]", SHIPOWNER(ship), confiscated, crates, contra_type_name(type), ports[rroom].loc_name, ports[rroom].loc_room);
+                statuslog(56, buf);
+                logit(LOG_SHIP, strip_ansi(buf).c_str());
+                
+                sprintf(buf, "and find %d crates of %s&n, which they confiscate.", confiscated, contra_type_name(type));
                 act_to_all_in_ship(ship, buf);
                 ship->slot[slot].val0 -= confiscated;
                 if (ship->slot[slot].val0 <= 0)
@@ -4023,9 +4041,8 @@ void check_contraband(P_ship ship, int to_room)
         }
     }
     if (!did_confiscate)
-        act_to_all_in_ship(ship, "... but found nothing suspicious");
+        act_to_all_in_ship(ship, "but don't find anything suspicious.");
 }
-
 
 int sell_ship(P_char ch, P_ship ship, const char* arg)
 {
@@ -4500,7 +4517,7 @@ int buy_cargo(P_char ch, P_ship ship, char* arg)
         return TRUE;
     }
 
-    int unit_cost = 1000 * cargo_sell_price(rroom);
+    int unit_cost = cargo_sell_price(rroom);
     int cost = asked_for * unit_cost; 
 
     //if (GET_LEVEL(ch) < 50)
@@ -4528,6 +4545,10 @@ int buy_cargo(P_char ch, P_ship ship, char* arg)
         ship->slot[slot].val1 = cost;
     }
 
+    sprintf(buf, "CARGO: %s bought &+W%d&n %s&n at %s&n [%d] for %s", GET_NAME(ch), placed, cargo_type_name(rroom), ports[rroom].loc_name, ports[rroom].loc_room, coin_stringv(cost));
+    statuslog(56, buf);
+    logit(LOG_SHIP, strip_ansi(buf).c_str());  
+  
     sprintf(buf, "You buy &+W%d&n crates of %s&n for %s.\r\n", placed, cargo_type_name(rroom), coin_stringv(cost) );
     send_to_char(buf, ch);
 
@@ -4626,7 +4647,7 @@ int buy_contra(P_char ch, P_ship ship, char* arg)
         return TRUE;
     }
   
-    int unit_cost = 1000 * contra_sell_price(rroom);
+    int unit_cost = contra_sell_price(rroom);
 
     int cost = asked_for * unit_cost;
 
@@ -4655,6 +4676,10 @@ int buy_contra(P_char ch, P_ship ship, char* arg)
         ship->slot[slot].val1 = cost;
     }
 
+    sprintf(buf, "CONTRABAND: %s bought &+W%d&n %s&n at %s&n [%d] for %s", GET_NAME(ch), placed, contra_type_name(rroom), ports[rroom].loc_name, ports[rroom].loc_room, coin_stringv(cost));
+    statuslog(56, buf);
+    logit(LOG_SHIP, strip_ansi(buf).c_str());  
+  
     sprintf(buf, "You buy &+W%d&n crates of %s&n for %s.\r\n", placed, contra_type_name(rroom), coin_stringv(cost) );
     send_to_char(buf, ch);
 

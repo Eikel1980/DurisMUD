@@ -2565,18 +2565,30 @@ void ansi_comp(char *str)
 
 string pad_ansi(const char *str, int length)
 {
+  return pad_ansi(str, length, FALSE);
+}
+
+string pad_ansi(const char *str, int length, bool trim_to_length)
+{
   string ret_str(str);
 
-  int to_pad = ( length - strip_ansi(str).size());
+  int to_pad = (length - strip_ansi(str).size());
 
   for( int i = 0; i < to_pad; i++ )
   {
     ret_str += " ";
   }
 
-  return ret_str;
+  if( trim_to_length )
+  {
+    return ret_str.substr(0,length);
+  }
+  else
+  {
+    return ret_str;
+  }
 }
-
+      
 string strip_ansi(const char *str)
 {
   int      i = 0;

@@ -555,6 +555,19 @@ INSERT INTO `mud_info` (name, content) VALUES ('motd', 'Motd');
 INSERT INTO `mud_info` (name, content) VALUES ('wizmotd', 'Wizmotd');
 
 --
+-- Table structure for table `ship_cargo_market_mods`
+--
+
+DROP TABLE IF EXISTS `ship_cargo_market_mods`;
+CREATE TABLE `ship_cargo_market_mods` (
+  `type` varchar(255) NOT NULL DEFAULT '',
+  `port_id` int(11) NOT NULL DEFAULT '-1',
+  `cargo_type` int(11) NOT NULL DEFAULT '-1',
+  `modifier` float NOT NULL DEFAULT '0',
+  KEY `type_port_id_cargo_type` (`type`,`port_id`,`cargo_type`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
 -- Table structure for table 'outposts'
 --
 

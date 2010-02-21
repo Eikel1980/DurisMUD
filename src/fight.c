@@ -5268,7 +5268,6 @@ int raw_damage(P_char ch, P_char victim, double dam, uint flags,
     if(dam > 5 &&
       !(flags & RAWDAM_NOEXP))
     {
-      debug("EXP fight.c: Ch:(%s) Victim:(%s) Dam:(%d).", GET_NAME(ch), GET_NAME(victim), (int)(dam));
       gain_exp(ch, victim, dam, EXP_DAMAGE);
     }
 

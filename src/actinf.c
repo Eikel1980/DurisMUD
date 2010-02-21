@@ -40,6 +40,7 @@ using namespace std;
 #include "specializations.h"
 #include "grapple.h"
 #include "nexus_stones.h"
+#include "ships.h"
 
 /* * external variables */
 
@@ -3190,6 +3191,7 @@ void show_vnums(P_char ch)
 #define WORLD_DEBUG 6
 #define WORLD_VNUMS 7
 #define WORLD_QUESTS 9
+#define WORLD_CARGO 10
 
 const char *world_keywords[] = {
   "stats",
@@ -3201,6 +3203,7 @@ const char *world_keywords[] = {
   "debug",
   "vnums",
   "quests",
+  "cargo",
   "\n"
 };
 
@@ -3214,6 +3217,7 @@ const int world_values[] = {
   WORLD_DEBUG,
   WORLD_VNUMS,
   WORLD_QUESTS,
+  WORLD_CARGO,
   -1
 };
 
@@ -3516,7 +3520,12 @@ void do_world(P_char ch, char *argument, int cmd)
   case WORLD_VNUMS:
     show_vnums(ch);
     break;
-    
+  
+  case WORLD_CARGO:
+    one_argument(argument, arg);
+    do_world_cargo(ch, arg);
+    break;
+      
   case WORLD_QUESTS:
     send_to_char("V-Num   Count  Limit  Name\n", ch);
     *buff = '\0';

@@ -17,6 +17,7 @@
 #include "specs.prototypes.h"
 #include "alliances.h"
 #include "storage_lockers.h"
+#include "ships.h"
 
 extern P_room world;
 
@@ -229,3 +230,27 @@ int guildhall_bank_room(int room, P_char ch, int cmd, char *arg)
   return guild_locker_room_hook(room, ch, cmd, arg);
 }
 
+int guildhall_cargo_board(P_obj obj, P_char ch, int cmd, char *arg)
+{
+  if (cmd == CMD_SET_PERIODIC)
+    return FALSE;
+  
+  if (!obj||!ch)
+    return (FALSE);
+  
+  if (arg && (cmd == CMD_LOOK))
+  {
+    char buff[MAX_STRING_LENGTH];
+    one_argument(arg, buff);
+
+    if (isname(buff, obj->name))
+    {
+      sprintf(buff, "You look at %s&n...\r\n", obj->short_description);
+      send_to_char(buff, ch);
+      show_cargo_prices(ch);
+      return TRUE;
+    }
+  }
+  
+  return FALSE;
+}

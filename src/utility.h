@@ -29,4 +29,6 @@ int direction_tag(P_char ch);
 
 const char *condition_str(P_char ch);
 
+string pad_ansi(const char *str, int length, bool trim_to_length);
+
 #endif // _UTILITY_H_

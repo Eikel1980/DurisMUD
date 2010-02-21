@@ -382,6 +382,19 @@ bool LibraryRoom::init()
   return TRUE;
 }
 
+bool CargoRoom::init()
+{
+  GuildhallRoom::init();
+  
+  // load window object
+  if( (this->board = read_object(GH_CARGO_BOARD_VNUM, VIRTUAL)) )
+  {
+    obj_to_room(this->board, real_room0(this->vnum));
+  }  
+  
+  return TRUE;
+}
+
 //
 //
 //
@@ -529,6 +542,20 @@ bool LibraryRoom::deinit()
   {
     obj_from_room(this->tome);
     this->tome = NULL;
+  }
+  
+  return TRUE;
+}
+
+bool CargoRoom::deinit()
+{
+  GuildhallRoom::init();
+  
+  // deinit board obj
+  if( this->board )
+  {
+    obj_from_room(this->board);
+    this->board = NULL;
   }
   
   return TRUE;

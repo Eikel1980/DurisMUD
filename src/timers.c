@@ -3,6 +3,7 @@
 #include "epic.h"
 #include "timers.h"
 #include "assocs.h"
+#include "ships.h"
 
 #ifdef __NO_MYSQL__
 void set_timer(const char *name)
@@ -69,4 +70,5 @@ void timers_activity()
 //  prestige_update();
   zone_trophy_update();
   update_epic_zone_mods();
+  cargo_activity();
 }

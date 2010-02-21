@@ -1674,11 +1674,6 @@ void assign_objects(void)
   obj_index[real_object0(130018)].func.obj = vecna_death_mask;
   obj_index[real_object0(130038)].func.obj = mob_vecna_procs;
   
-/* new ships */
-  obj_index[real_object0(60000)].func.obj = newship_proc;
-  obj_index[real_object0(1223)].func.obj = shiploader_proc;
-  obj_index[real_object0(60001)].func.obj = shipobj_proc;
-
   /* Duris Tournament */
   obj_index[real_object0(67900)].func.obj = arenaobj_proc;
 

@@ -34,19 +34,6 @@ Updated with warships. Nov08 -Lucrot
 #define T_MINDBLAST       8
 #define MAXTIMERS         9
 
-
-#define MINBUYMOD            50
-#define MAXBUYMOD           100
-#define ONBUYADJUST         0.3
-#define BUYADJUSTAUTO         1
-#define MINSELLMOD           30
-#define MAXSELLMODAUTO      125
-#define MAXSELLMOD          150
-#define ONSELLADJUST       0.40
-#define ONSELLADJUSTCARGO  0.15
-#define ONSELLADJUSTALL    0.03
-#define SELLADJUSTAUTOINC     1
-#define SELLADJUSTAUTODEC  0.20
 #define MINCONTRAALIGN     1000
 #define MINCONTRAFRAGS      100
 
@@ -159,6 +146,9 @@ Updated with warships. Nov08 -Lucrot
 
 #define MAXCARGOPERSLOT 10
 #define MAXCONTRAPERSLOT 10
+
+#define WEIGHT_CARGO 2
+#define WEIGHT_CONTRABAND 2
 
 typedef struct ShipData *P_ship;
 
@@ -359,6 +349,7 @@ struct PortData
 {
   int loc_room;
   const char * loc_name;
+  int ocean_map_room;
 };
 
 struct CargoData
@@ -369,11 +360,6 @@ struct CargoData
 };
 
 extern const PortData ports[NUM_PORTS];
-
-struct CargoStats
-{
-    float buy[NUM_PORTS], sell[NUM_PORTS];
-};
 
 struct WeaponData
 {
@@ -590,6 +576,7 @@ int sell_contra_slot(P_char ch, P_ship ship, int slot, int rroom);
 void initialize_ship_cargo();
 int read_cargo();
 int write_cargo();
+void reset_cargo();
 int cargo_sell_price(int location);
 int cargo_sell_price(int location, int type);
 int cargo_buy_price(int location, int type);
@@ -600,6 +587,11 @@ void adjust_ship_market(int transaction, int location, int type, int volume);
 int required_ship_frags_for_contraband(int type);
 const char *cargo_type_name(int type);
 const char *contra_type_name(int type);
+
+void show_cargo_prices(P_char ch);
+void show_contra_prices(P_char ch);
+int ship_cargo_info_stick(P_obj obj, P_char ch, int cmd, char *arg);
+void do_world_cargo(P_char ch, char *arg);
 
 // Externals
 extern P_index obj_index;

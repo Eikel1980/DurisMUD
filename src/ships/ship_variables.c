@@ -17,15 +17,15 @@
 
 /* new Ship Constants */
 const PortData ports[NUM_PORTS] = {
-  { 559633, "Flann" },
-  { 635260, "Dalvik" },
-  { 88846, "Menden" },
-  { 82670, "Myrabolus" },
-  { 66689, "Torrhan" },
-  { 9967, "Sarmiz'Duul" },
-  { 22441, "Storm Port" },
-  { 49090, "Venan'Trut" },
-  { 43158, "Thur'Gurax" },  
+  { 559633, "Flann", 559632 },
+  { 635260, "Dalvik", 635660 },
+  { 88846,  "Menden", 550725 },
+  { 82670,  "Myrabolus", 512874 },
+  { 66689,  "Torrhan", 580879 },
+  { 9967,   "Sarmiz'Duul", 622675 },
+  { 22441,  "Storm Port", 587128 },
+  { 49090,  "Venan'Trut", 545021 },
+  { 43158,  "Thur'Gurax", 616546 },  
 };
 
 /*const char *guncrewname[MAXGUNCREW] = {

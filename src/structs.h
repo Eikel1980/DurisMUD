@@ -1849,7 +1849,7 @@ struct  mob_prog_data
 #define LOG_EXIT "logs/log/exit"
 #define LOG_DAEMON "logs/log/daemon"
 #define LOG_PORTALS "logs/log/portals"
-#define LOG_SHIP "logs/log/ship"
+#define LOG_SHIP "logs/player-log/ship"
 #define LOG_RECALL "logs/log/recall"
 
 /* problem reporting */
