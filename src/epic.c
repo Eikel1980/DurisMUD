@@ -1389,7 +1389,7 @@ void do_summon_familiar(P_char ch, char *argument, int cmd)
       char_to_room(mob, ch->in_room, 0);
       act("$n announces $s arrival with a quiet squeak.", FALSE,
           mob, 0, 0, TO_ROOM);
-      setup_pet(mob, ch, 1000, 0);
+      setup_pet(mob, ch, 1000, PET_NOCASH);
       add_follower(mob, ch);
       return;
     }
