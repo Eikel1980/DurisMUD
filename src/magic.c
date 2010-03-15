@@ -12343,8 +12343,8 @@ void spell_faerie_fog(int level, P_char ch, char *arg, int type,
 void spell_pword_kill(int level, P_char ch, char *arg, int type,
                       P_char victim, P_obj obj)
 {
-  int      percent;
-  int      dam;
+  int dam;
+
   struct damage_messages messages = {
     "$N's life force is drained slightly by the power of your word.",
     "$n's word of power causes you to sag, and you feel your vitality draining away!",
@@ -12354,17 +12354,29 @@ void spell_pword_kill(int level, P_char ch, char *arg, int type,
     "$N hears $n's word of power, and nothing more."
   };
 
-  percent = 100 - (BOUNDED(0, 2 * (level - GET_LEVEL(victim)), 100));
-  percent += number(-10, 10);
-  
-  if(IS_GREATER_RACE(victim) &&
-     percent > 0)
-       percent /= 2;
+  if(!(ch) ||
+     !IS_ALIVE(ch))
+    return;
 
-  if(((percent < 100 || IS_TRUSTED(ch)) && 
-    (!IS_TRUSTED(victim)) &&
-     !NewSaves(victim, SAVING_SPELL, -5 + (100 - percent) / 10)) &&
-     !IS_ELITE(victim))
+// The spell no longer functions against the undead races.
+
+  if(IS_UNDEADRACE(victim))
+  {
+    send_to_char("&+LThe living dead are no longer affected by such an incantation...&n\r\n", ch);
+    return;
+  }
+
+// This is now a straight line percentage check for the victim to pass
+// a save versus spell or die().
+// If the caster is more than 15 levels higher than the victim, the spell
+// save check is automatically triggered.
+
+  if(!IS_GREATER_RACE(victim) &&
+     !IS_TRUSTED(victim) &&
+     !IS_ELITE(victim) &&
+     !(GET_RACE(victim) == RACE_GOLEM | RACE_CONSTRUCT) &&
+     !NewSaves(victim, SAVING_SPELL, -5) &&
+     (level >= number(0, 99) || level > GET_LEVEL(victim) + 15))
   {
     act("&+Y$N &+Ydies instantly from the power of your word.&n", FALSE, ch, 0, victim, TO_CHAR);
     act("&+YYou hear a word of power, and die instantly.&n", FALSE, ch, 0, victim, TO_VICT);
@@ -12378,7 +12390,7 @@ void spell_pword_kill(int level, P_char ch, char *arg, int type,
    if(IS_PC_PET(ch))
      dam /= 2;
    
-   spell_damage(ch, victim, dam, SPLDAM_NEGATIVE, 0, &messages);
+   spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
   }
 }
 
