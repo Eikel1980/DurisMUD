@@ -104,7 +104,7 @@ doombringer sword chaos~
 &+LDoombringer the sword of chaos has been left here.&N~
 ~
 5 19 4 10 15 100 272637953 8193 64 0 0
-13 4 8 3 0 0 0 0
+13 6 8 3 0 0 0 0
 1 200000 100 0 0 0 262144
 E
 doombringer sword chaos~
@@ -150,7 +150,7 @@ sword fire flames flame~
 the sword of fire has been left here.~
 ~
 5 19 4 10 15 100 268443649 8193 64 0 0
-5 5 5 3 0 0 0 0
+5 5 6 3 0 0 0 0
 1 200000 100 536870928 1 0 0
 E
 sword fire~
