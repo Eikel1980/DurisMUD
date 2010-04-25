@@ -408,8 +408,8 @@ bool ship_gain_money(P_ship ship, P_ship target, int salvage, int bounty)
 {
   if (salvage > 0)
   {
-    if (ISNPCSHIP(target))
-        salvage /= 2;
+    //if (ISNPCSHIP(target))
+    //    salvage /= 2;
     sprintf(buf,
       "You recieve %s for the salvage of %s!\r\nIt is currently in your ship's coffers.  To look, use 'look cargo', to get, use 'get money'\r\n",
       coin_stringv(salvage), target->name);
