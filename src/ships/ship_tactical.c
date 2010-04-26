@@ -342,7 +342,7 @@ bool ship_gain_frags(P_ship ship, P_ship target, int frags)
         act_to_all_in_ship(ship, buf);
     }
     else
-        frags /= 5;
+        frags /= 10;
 
       //act_to_all_in_ship(ship, "&+GYour Sail Crew has gained some experience!&N\r\n");
 
