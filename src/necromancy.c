@@ -947,9 +947,11 @@ void spell_create_dracolich(int level, P_char ch, char *arg, int type, P_char vi
   {                             /* Under control */
     act("&+W$N roars to the sky 'I LIVE!!!'", TRUE, ch, 0, mob, TO_ROOM);
     act("&+W$N roars to the sky 'I LIVE!!!'", TRUE, ch, 0, mob, TO_CHAR);
-
+    GET_AC(mob) -= 50;
     int duration = setup_pet(mob, ch, timeToDecay/2 + (6000 / STAT_INDEX(GET_C_INT(mob))), PET_NOCASH);
     add_follower(mob, ch);
+    
+    
   /* if the undead will stop being charmed after a bit, also make it suicide 1-10 minutes later */
     if (duration >= 0)
     {
