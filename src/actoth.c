@@ -2502,11 +2502,18 @@ void do_steal(P_char ch, char *argument, int cmd)
        */
       percent -= GET_OBJ_WEIGHT(obj);
       if (IS_PC(victim))
-        wizlog(MINLVLIMMORTAL, "%s &=LMjust stole &n%s (%d) from %s (%d) with percent (%d)\n",
+      {
+      	wizlog(MINLVLIMMORTAL, "%s &=LMjust stole &n%s (%d) from %s (%d) with percent (%d)\n",
                ch->player.name, obj->short_description,
                obj_index[obj->R_num].virtual_number, victim->player.name,
                world[ch->in_room].number,
                percent);
+      	logit(LOG_STEAL, "%s just stole %s (%d) from %s (%d) with percent (%d)",
+               ch->player.name, obj->short_description,
+               obj_index[obj->R_num].virtual_number, victim->player.name,
+               world[ch->in_room].number,
+               percent);
+       }
     }
     else
     {
@@ -2767,8 +2774,7 @@ void do_steal(P_char ch, char *argument, int cmd)
   {
     if (type == 3)
     {
-      act("&+WHey! $n just swiped some of your hard-earned coins!&N",
-          FALSE, ch, 0, victim, TO_VICT);
+      act("&+WHey! $n just swiped some of your hard-earned coins!&N", FALSE, ch, 0, victim, TO_VICT);
       act("$n just looted $N's purse!", TRUE, ch, 0, victim, TO_NOTVICT);
     }
     else
@@ -2782,10 +2788,8 @@ void do_steal(P_char ch, char *argument, int cmd)
   {
     if (type == 3)
     {
-      act("&+WHey! $n just had $s hand in your purse!&n",
-          FALSE, ch, 0, victim, TO_VICT);
-      act("$n just tried to steal $N's money!",
-          TRUE, ch, 0, victim, TO_NOTVICT);
+      act("&+WHey! $n just had $s hand in your purse!&n", FALSE, ch, 0, victim, TO_VICT);
+      act("$n just tried to steal $N's money!", TRUE, ch, 0, victim, TO_NOTVICT);
     }
     else
     {
