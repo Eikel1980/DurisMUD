@@ -5803,8 +5803,7 @@ bool monk_critic(P_char ch, P_char victim)
     "$N dies as $n sinks five fingers into soft spots in $S shoulder."
   };
 
-  send_to_char("You sneak in and deliver a strike to a pressure point!\r\n",
-      ch);
+  send_to_char("You sneak in and deliver a strike to a pressure point!\r\n", ch);
       
   if(!(ch) ||
      !IS_ALIVE(ch) ||
@@ -5812,7 +5811,8 @@ bool monk_critic(P_char ch, P_char victim)
      !IS_ALIVE(victim))
         return false;
 
-  if (GET_SPEC(ch, CLASS_MONK, SPEC_WAYOFSNAKE))
+  if(GET_SPEC(ch, CLASS_MONK, SPEC_WAYOFSNAKE) ||
+    (GET_CLASS(ch, CLASS_MONK) && IS_NPC(ch) && GET_LEVEL(ch) > 50))
   {
     af = get_spell_from_char(victim, TAG_PRESSURE_POINTS);
     if (!af)
@@ -5821,7 +5821,7 @@ bool monk_critic(P_char ch, P_char victim)
       aff.type = TAG_PRESSURE_POINTS;
       aff.flags = AFFTYPE_SHORT | AFFTYPE_NOSHOW | AFFTYPE_NODISPEL | AFFTYPE_NOAPPLY;
       aff.modifier = 1;
-      aff.duration = 2;
+      aff.duration = (10 * WAIT_SEC);
       affect_to_char(victim, &aff);
       return false;
     }
