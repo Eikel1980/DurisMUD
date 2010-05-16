@@ -8011,23 +8011,19 @@ int calculate_attacks(P_char ch, int attacks[])
 
   if (GET_CLASS(ch, CLASS_MONK))
   {
-    int      num_atts = MonkNumberOfAttacks(ch);
+    int num_atts = MonkNumberOfAttacks(ch);
+    int weight_threshold = GET_C_STR(ch) / 2;
 
-    /* Since we lifted weight restrict on monk, place a restrict here.
-       Start losing 1 attack per 10 lbs after they pass 40 lbs (30 if stoned) */
-
-    if (IS_CARRYING_W(ch) >=
-        (affected_by_spell(ch, SPELL_STONE_SKIN) ? 30 : 40) && IS_PC(ch))
+    if (IS_CARRYING_W(ch) >= weight_threshold && IS_PC(ch))
     {
-      if (affected_by_spell(ch, SPELL_STONE_SKIN))
-        num_atts -=
-          MIN(num_atts - 1, (int) ((IS_CARRYING_W(ch) - 20) / 10));
-      else
-        num_atts -=
-          MIN(num_atts - 1, (int) ((IS_CARRYING_W(ch) - 30) / 10));
+      // if (affected_by_spell(ch, SPELL_STONE_SKIN))
+        // num_atts -=
+          // MIN(num_atts - 1, (int) ((IS_CARRYING_W(ch) - 20) / 10));
+      // else
+        num_atts -= MIN(num_atts - 1, (int) ((IS_CARRYING_W(ch) - 30) / 10));
 
       if (!number(0, 4))
-        send_to_char("&+LYou feel a little weighed down...&n\r\n", ch);
+        send_to_char("&+LYou feel a weighed down, which is causing you to lose attacks.&n\r\n", ch);
     }
 
     if (IS_AFFECTED2(ch, AFF2_SLOW) && num_atts > 1)
@@ -8110,8 +8106,8 @@ int calculate_attacks(P_char ch, int attacks[])
   {
     if (!IS_AFFECTED2(ch, AFF2_SLOW)) {
       ADD_ATTACK(PRIMARY_WEAPON);
-      if (GET_RACE(ch) == RACE_THRIKREEN)
-        ADD_ATTACK(THIRD_WEAPON);
+    if (GET_RACE(ch) == RACE_THRIKREEN)
+      ADD_ATTACK(THIRD_WEAPON);
     }
   }
 
