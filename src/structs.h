@@ -1951,6 +1951,7 @@ struct mcname {
 #define SPEC_GUARDIAN  2
 #define SPEC_SWASHBUCKLER 3
 
+/* Anti-Paladin Specs */
 #define SPEC_DARKKNIGHT 1
 #define SPEC_DEMONIC 2
 #define SPEC_SPAWN 3

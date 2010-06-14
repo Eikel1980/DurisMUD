@@ -3100,7 +3100,7 @@ flaming halo combustion _noquest_~
 ~
 9 1 2 0 7 0 33555457 17 64 12619268 0
 10 0 0 3 0 0 0 0
-0 1000000 100 536870912 4194333 0 0
+0 1000000 100 536870912 29 0 0
 E
 flaming halo combustion~
    &+rThis magically &+Rburning &+Whalo &N&+rswirls in a magical fire around the
@@ -6011,7 +6011,7 @@ keg beer golden pearl~
 &N&+ya keg of beer from &N'the &+YGolden Pearl&N'~
 &+yA large keg of beer marked with the symbol of &N'The &+YGolden Pearl&N' is sitting here upright.~
 ~
-8 6 4 0 5 0 0 0 0 0 0
+8 6 4 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
 8 6332 100
 E

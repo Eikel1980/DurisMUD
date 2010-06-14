@@ -789,7 +789,7 @@ plate platemail awe~
 ~
 9 7 3 14 13 80 1088 9 66 121258171 0
 20 3 1 5 0 0 0 0
-2 1 100 0 0 0 2048
+2 1 100 0 0 0 67108864
 E
 plate platemail awe~
 &+W   Somewhat transparent, this armor is surely made of some magical type&n
@@ -798,7 +798,7 @@ plate platemail awe~
 &+Wclarified.  It is medium in size.&n
 ~
 A
-35 4
+17 -100
 A
 58 -1
 #77747
