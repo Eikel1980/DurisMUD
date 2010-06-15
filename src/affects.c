@@ -2807,8 +2807,8 @@ void poo(P_char ch)
     {
       load->str_mask = (STRUNG_DESC1 | STRUNG_DESC2);
 
-      load->description = str_dup("&+ySome dry boobs has been left here.&n");
-      load->short_description = str_dup("&+ya dry goblin poo-poo&n");
+      load->description = str_dup("&+yA few bits of dry goblin poo have been left here.&n");
+      load->short_description = str_dup("&+ybits of dry goblin poo&n");
 
       if (ch->in_room == NOWHERE)
       {
@@ -2826,7 +2826,7 @@ void poo(P_char ch)
         send_to_char
           ("&+yMmmm, much better. Don't forget to clean it up now.\n", ch);
         act
-          ("&+y$n screws $s face in concentration, and some small tiny boobs drop from between his legs.",
+          ("&+y$n screws $s face in concentration, and some a few small bits of dried goblin poo tumble from between his legs.",
            TRUE, ch, 0, 0, TO_ROOM);
       }
     }
