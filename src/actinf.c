@@ -2292,12 +2292,12 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
           !IS_HARPY(ch) &&
           !IS_REVENANT(ch) &&
           !IS_DRAGONKIN(ch) &&
-          !IS_HALFORC(ch)))
+          !IS_HALFORC(ch))
       {
-        send_to_char("&+WThe brightness there hurts your head!\n", ch);
+		  send_to_char("&+WThe brightness there hurts your head!\n", ch);
         return;
       }
-      else if((IS_MAGIC_DARK(temp) &&
+      else if((IS_MAGIC_DARK(temp)) &&
                !OLD_RACE_NEUTRAL(ch)) &&
                OLD_RACE_GOOD(ch) &&
                !IS_HARPY(ch) &&
