@@ -1,17 +1,21 @@
-[?7h[40m[2J[3C[0;32m--------- Good Races ---------[16C[1;31m--------- Evil Races --------
 
-  [0;32m(h) Human[11C(H for help)[14C[1;31m(o) Orc[12C(O for help)
-  [0;32m(b) Barbarian[7C(B for help) [37m------------ [1;31m(d) Drow Elf[7C(D for help)
-  [0;32m(e) Grey Elf[8C(E for help) [37m- Your ----- [1;31m(t) Swamp Troll    (T for help)
-  [0;32m(m) Mountain Dwarf  (M for help) [37m--- Race --- [1;31m(r) Ogre[11C(R for help)
-  [0;32m(l) Halfling[8C(L for help) [37m----- Mortal [1;31m(j) Githyanki[6C(J for help)
-  [0;32m(g) Gnome[11C(G for help) [37m------------ [1;31m(v) Goblin[9C(V for help)
-  [0;32m(c) Centaur[9C(C for Help) [37m------------ [1;31m(p) Orog[11C(P for help)
-  [0;32m(n) Githzerai[7C(N for Help) [37m------------ [1;31m(u) Duergar Dwarf  (U for help)
+                      Welcome to Duris: Land of BloodLust
+                               durismud.com 7777
 
-[15C[1;33m---- [32mNeutral Races [33mC[32man Pick Evil [33mO[32mr Good Side [33m----
-[25C([32mk) Thri-kreen[5C(K for help)
-[25C[33m([32ms) Minotaur[7C(S for help)
+   (h) Human          (H for help) Choose (o) Orc           (O for help)
+   (b) Barbarian      (B for help)  your  (t) Troll         (T for help)
+   (e) Grey Elf       (E for help)  race  (d) Drow Elf      (D for help)
+   (m) Mountain Dwarf (M for help) Mortal (u) Duergar Dwarf (U for help)
+   (l) Halfling       (L for help)        (v) Goblin        (V for help)
+   (g) Gnome          (G for help)       
+   (c) Centaur        (C for help)       
+   (n) Githzerai      (N for help)        (j) Githyanki     (J for help)
+                                          (r) Ogre          (R for help)
 
-[13C[37m(x) General listing of classes available to each race.
-[0m[255D
+
+
+                         (k) Thri-Kreen (K for help)
+                         (s) Minotaur   (S for help)
+
+
+                    (x) General listing of classes by race.

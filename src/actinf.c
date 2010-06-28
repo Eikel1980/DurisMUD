@@ -2280,7 +2280,7 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
       }
     
       if((IS_AFFECTED2(ch, AFF2_ULTRAVISION) &&
-          IS_MAGIC_LIGHT(temp) && 
+          IS_MAGIC_LIGHT(temp) &&
           !OLD_RACE_NEUTRAL(ch) &&
           !OLD_RACE_GOOD(ch) &&
           !IS_HARPY(ch) &&
