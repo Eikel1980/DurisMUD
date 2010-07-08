@@ -2503,8 +2503,8 @@ bool try_load_pirate_ship(P_ship target, P_char ch, int level)
     NPCShipAI::normalize_direction(dir);
 
     float rad = (float) ((float) (dir) * M_PI / 180.000);
-    float ship_x = 50 + sin(rad) * 10; // 36
-    float ship_y = 50 + cos(rad) * 10; // 36
+    float ship_x = 50 + sin(rad) * 36;
+    float ship_y = 50 + cos(rad) * 36;
 
     int location = tactical_map[(int) ship_x][100 - (int) ship_y].rroom;
 
