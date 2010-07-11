@@ -223,7 +223,7 @@ P_char get_char_on_ship_bridge(P_char ch, const char *name)
     if (vict && !IS_TRUSTED(ch) && !IS_TRUSTED(vict))
         if (racewar(ch, vict) && !IS_DISGUISE(vict) ||
             (IS_DISGUISE(vict) && (EVIL_RACE(ch) != EVIL_RACE(vict))) ||
-            (IS_ILLITHID(ch) && !IS_ILLITHID(vict)))
+            (GET_RACE(ch) == RACE_ILLITHID && !IS_ILLITHID(vict)))
     {
         vict = NULL;
     }
@@ -274,8 +274,7 @@ void do_group(P_char ch, char *argument, int cmd)
 
   /* display group list */
 
-  if(ch &&
-    IS_ILLITHID(ch))
+  if(ch && GET_RACE(ch) == RACE_ILLITHID)
   {
     send_to_char("You feel like being alone right now.\n", ch);
     return;
@@ -296,7 +295,7 @@ void do_group(P_char ch, char *argument, int cmd)
     }
     else
     {
-      if (IS_ILLITHID(ch))
+      if (GET_RACE(ch) == RACE_ILLITHID)
       {
         send_to_char("You feel like being alone right now.\n", ch);
         return;
@@ -640,12 +639,12 @@ void do_group(P_char ch, char *argument, int cmd)
   }
   /* NPC's only allow themselves to be grouped with people they are
      following */
-  if(IS_ILLITHID(ch) || // Illithids cannot group with anything. Nov08 -Lucrot
+  /* if(IS_ILLITHID(ch) || // Illithids cannot group with anything. Nov08 -Lucrot
      IS_ILLITHID(victim))
   {
     act("$N doesn't want to be in your group.", TRUE, ch, 0, victim, TO_CHAR);
     return;
-  }
+  } */
 
   if (IS_NPC(victim) && (victim->following != ch) &&
       !is_linked_to(ch, victim, LNK_CONSENT))
@@ -977,7 +976,7 @@ bool group_add_member(P_char leader, P_char member)
   }
 #endif
 #if 0
-  if (IS_ILLITHID(leader) && IS_PC(member))
+  if (GET_RACE(ch) == RACE_ILLITHID(leader) && IS_PC(member))
   {
     send_to_char("You can't stand being near them!\n", leader);
     return FALSE;
