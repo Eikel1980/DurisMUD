@@ -287,7 +287,7 @@ int inn(int room, P_char ch, int cmd, char *arg)
          ch);
       return TRUE;
     }
-    if (IS_NOTWELCOME(ch) || IS_ILLITHID(ch))
+    if (IS_NOTWELCOME(ch) || GET_RACE(ch) == RACE_ILLITHID)
     {
       send_to_char("You are NOT welcome here!\r\n", ch);
       return TRUE;
