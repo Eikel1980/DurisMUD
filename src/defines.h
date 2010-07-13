@@ -546,8 +546,9 @@ typedef unsigned int uint;
 #define WEAR_NOSE              39
 #define WEAR_HORN              40
 #define WEAR_IOUN              41
+#define WEAR_SPIDER_BODY       42
 
-#define CUR_MAX_WEAR           41
+#define CUR_MAX_WEAR           42
 #define MAX_WEAR               CUR_MAX_WEAR + 1    /* size of equipment[] array */
 
 /* For 'char_player_data' */

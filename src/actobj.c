@@ -3252,6 +3252,9 @@ void perform_wear(P_char ch, P_obj obj_object, int keyword)
     act("$n throws $p in the air and it begins circling $s head.", TRUE, ch,
         obj_object, 0, TO_ROOM);
     break;
+  case 27:
+    act("$n slips $p onto $s spider body.", TRUE, ch, obj_object, 0, TO_ROOM);
+    break;
   }
   if (IS_SET(obj_object->extra_flags, ITEM_LIT))
   {
@@ -4637,7 +4640,27 @@ int wear(P_char ch, P_obj obj_object, int keyword, int showit)
       }
     }
     break;
-
+  case 27:
+    if (CAN_WEAR(obj_object, ITEM_SPIDER_BODY))
+    {
+      if (ch->equipment[WEAR_SPIDER_BODY])
+      {
+        send_to_char
+          ("You're already wearing something on your spider body.\r\n", ch);
+      }
+      else
+      {
+        if (showit)
+        {
+          act("You slip $p around your thorax.", 0, ch, obj_object, 0, TO_CHAR);
+          perform_wear(ch, obj_object, keyword);
+        }
+        obj_from_char(obj_object, TRUE);
+        equip_char(ch, obj_object, WEAR_SPIDER_BODY, !showit);
+        return TRUE;
+      }
+    }
+    break;
   case -1:
     if (showit)
     {
@@ -4692,7 +4715,7 @@ int      equipment_pos_table[CUR_MAX_WEAR][3] = {
   {ITEM_WEAR_EYES, 15, 19},
   {ITEM_WEAR_ABOUT, 9, 12},
   {ITEM_WEAR_QUIVER, 18, 23},
-  {ITEM_WEAR_IOUN, 26, 41},
+  {ITEM_WEAR_IOUN, 26, 42},
   {ITEM_WIELD, 12, 16},         /*
                                  * primary weapon
                                  */
@@ -4709,12 +4732,13 @@ int      equipment_pos_table[CUR_MAX_WEAR][3] = {
   {ITEM_WEAR_HANDS, 7, 32},
   {ITEM_WEAR_WRIST, 11, 33},
   {ITEM_WEAR_WRIST, 11, 34},
-  {ITEM_HORSE_BODY, 22, 35},
-  {ITEM_WEAR_LEGS, 5, 36},
-  {ITEM_WEAR_TAIL, 23, 37},
-  {ITEM_WEAR_FEET, 6, 38},
-  {ITEM_WEAR_NOSE, 24, 39},
-  {ITEM_WEAR_HORN, 25, 40},
+  {ITEM_SPIDER_BODY, 27, 35},
+  {ITEM_HORSE_BODY, 22, 36},
+  {ITEM_WEAR_LEGS, 5, 37},
+  {ITEM_WEAR_TAIL, 23, 38},
+  {ITEM_WEAR_FEET, 6, 39},
+  {ITEM_WEAR_NOSE, 24, 40},
+  {ITEM_WEAR_HORN, 25, 41},
   {ITEM_HOLD, 13, 18}           /*
                                  * held gets checked last of all
                                  */
@@ -4837,6 +4861,8 @@ void do_wear(P_char ch, char *argument, int cmd)
           keyword = 25;
         else if (CAN_WEAR(obj_object, ITEM_WEAR_IOUN))
           keyword = 26;
+        else if (CAN_WEAR(obj_object, ITEM_SPIDER_BODY))
+          keyword = 27;
 
         if (keyword == -2)
         {
