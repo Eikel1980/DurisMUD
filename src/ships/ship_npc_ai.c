@@ -1192,7 +1192,7 @@ void NPCShipAI::a_attack()
                     send_message_to_debug_char("!");
                 }
 
-                if (is_heavy_ship || (intersect == 0 && since_last_fired_right > number(30, 90)))
+                if (is_heavy_ship || (intersect == 0 && since_last_fired_right > number(30, 180)))
                 {
                     if ((ship->target->armor[s_arc] + ship->target->internal[s_arc]) > 0 || weapon_data[w_index].hit_arc > 180)
                     {
@@ -1843,3 +1843,5 @@ void NPCShipAI::send_message_to_debug_char(char *fmt, ... )
 
 
 
+// add target's side per time statistic, switch target side if too many
+// reward - pieces, eq
