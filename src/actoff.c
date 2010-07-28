@@ -399,8 +399,7 @@ int takedown_check(P_char ch, P_char victim, int chance, int skill,
     return TAKEDOWN_CANCELLED;
   }
   
-  if(GET_STAT(victim) <= STAT_SLEEPING ||
-     IS_IMMOBILE(victim))
+  if(GET_STAT(victim) <= STAT_SLEEPING)
   {
     if (affected_by_spell(ch, SKILL_LANCE_CHARGE))
       return TAKEDOWN_PENALTY;
