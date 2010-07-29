@@ -3296,6 +3296,19 @@ void do_drag(P_char ch, char *argument, int cmd)
      */
     command_interpreter(ch, Gbuf2);
 
+    if (ch->in_room != NOWHERE)
+    {
+
+      if(IS_SET(world[ch->in_room].room_flags, LOCKER))
+      {
+        act("The locker door slams shut on your hand before you can pull $p in.",
+            TRUE, ch, obj, 0, TO_CHAR);
+        act("A locker door slams shut on $N's hand.", TRUE, ch,
+            obj, 0, TO_ROOM);
+        return;
+      }
+    }
+
     /*
      * If player moved, drag obj
      */
