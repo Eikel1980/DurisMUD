@@ -453,6 +453,7 @@ CREATE TABLE `zones` (
   `difficulty` int(10) NOT NULL default 0,
   `randoms_zone` tinyint(1) NOT NULL default '1',
   `alignment` int(11) NOT NULL DEFAULT '0',
+  `last_touched` int(10) NOT NULL DEFAULT '0',
   PRIMARY KEY  (`id`),
   KEY `number_index` (`number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
