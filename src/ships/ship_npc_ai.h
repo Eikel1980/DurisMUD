@@ -28,6 +28,7 @@ enum NPC_AI_Turning
 struct NPCShipAI
 {
     P_ship ship;
+    P_ship escort;
     P_char debug_char;
     NPC_AI_Type type;
     struct NPCShipCrewData* crew_data;
@@ -45,6 +46,9 @@ struct NPCShipAI
     void cruise();
     void reload_and_repair();
     void attacked_by(P_ship attacker);
+    void escort_attacked_by(P_ship attacker);
+    bool do_escort();
+    bool go_around_land(P_ship dest);
     bool try_unload();
     
     // General combat
@@ -71,7 +75,6 @@ struct NPCShipAI
     void run_away();
     bool chase();
     float calc_intercept_heading(float h1, float h2);
-    bool go_around_land();
     bool check_ammo();
     void set_new_dir();
     bool worth_ramming();

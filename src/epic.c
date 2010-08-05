@@ -530,7 +530,7 @@ void gain_epic(P_char ch, int type, int data, int amount)
 	amount = (int) ( amount * get_property("epic.witch.multiplier", 1.5));
   }
 
-  if(type != EPIC_PVP && has_epic_task(ch))
+  if(type != EPIC_PVP && type != EPIC_SHIP_PVP && has_epic_task(ch))
   {
     send_to_char("You have not completed the task given to you by the Gods, \n" \
                  "so you are not able to progress at usual pace.\n", ch);
@@ -558,6 +558,9 @@ void gain_epic(P_char ch, int type, int data, int amount)
       break;
     case EPIC_PVP:
       strcpy(type_str, "PVP");
+      break;
+    case EPIC_SHIP_PVP:
+      strcpy(type_str, "PVP_SHIP");
       break;
     case EPIC_ELITE_MOB:
       strcpy(type_str, "ELITE_MOB");
@@ -666,6 +669,9 @@ void epic_feed_artifacts(P_char ch, int epics, int epic_type)
     case EPIC_PVP:
       feed_seconds = (int) (feed_seconds * get_property("artifact.feeding.epic.typeMod.pvp", 2.0));
       break;
+    case EPIC_SHIP_PVP:
+      feed_seconds = (int) (feed_seconds * get_property("artifact.feeding.epic.typeMod.pvpShip", 2.0));
+      break;
     case EPIC_ELITE_MOB:
       feed_seconds = (int) (feed_seconds * get_property("artifact.feeding.epic.typeMod.eliteMob", 1.0));
       break;
@@ -690,7 +696,7 @@ void epic_feed_artifacts(P_char ch, int epics, int epic_type)
     P_obj obj = ch->equipment[i];
     if ( obj && IS_ARTIFACT(obj) )
     {
-      feed_artifact(ch, ch->equipment[i], feed_seconds, (epic_type == EPIC_PVP ? TRUE : FALSE));
+      feed_artifact(ch, ch->equipment[i], feed_seconds, ((epic_type == EPIC_PVP || epic_type == EPIC_SHIP_PVP) ? TRUE : FALSE));
     }
   }
 }
@@ -1048,6 +1054,7 @@ int epic_stone(P_obj obj, P_char ch, int cmd, char *arg)
 
 		  // set completed flag
 		  epic_zone_completions.push_back(epic_zone_completion(zone_number, time(NULL), delta));
+      db_query("UPDATE zones SET last_touch='%d' WHERE number='%d'", time(NULL), zone_number);
     }
 
     act("$p flashes brightly then blurs, and remains still and powerless.",
@@ -1058,6 +1065,56 @@ int epic_stone(P_obj obj, P_char ch, int cmd, char *arg)
   }
 
   return FALSE;
+}
+
+
+void epic_zone_balance()
+{
+  int i, alignment, delta, lt;
+  vector<epic_zone_data> epic_zones = get_epic_zones();
+  
+  for (i = 0; i <= epic_zones.size(); i++)
+  {
+    // No need to balance at 0, and code automatically fixes it to 1 or -1
+    if ( !qry("SELECT alignment, last_touch FROM zones WHERE number = %d", epic_zones[i].number) )
+      return;
+
+    MYSQL_RES *res = mysql_store_result(DB);
+
+    if (mysql_num_rows(res) < 1)
+      return;
+
+    MYSQL_ROW row = mysql_fetch_row(res);
+
+    if (row)
+    {
+      alignment = atoi(row[0]);
+      lt = atoi(row[1]);
+    }
+
+    mysql_free_result(res);
+    
+    if (lt == 0)
+      db_query("UPDATE zones SET last_touch='%d' WHERE number='%d'", time(NULL), epic_zones[i].number);
+
+    if ((alignment == 0) || (alignment == 1) || (alignment == -1))
+      continue;
+    
+    //debug("zone %d alignment %d", epic_zones[i].number, alignment);
+
+    if (time(NULL) - lt < ((int)get_property("epic.alignment.reset.hour", 7*24*60*60)*60*60))
+    {
+      if(alignment > 0)
+        delta = -1;
+      else if (alignment < 0)
+        delta = 1;
+
+      //debug("calling update_epic_zone_alignment");
+      db_query("UPDATE zones SET last_touch='%d' WHERE number='%d'", time(NULL), epic_zones[i].number);
+      update_epic_zone_alignment(epic_zones[i].number, delta);
+      continue;
+    }
+  }
 }
 
 int epic_teacher(P_char ch, P_char pl, int cmd, char *arg)
@@ -2256,7 +2313,7 @@ void update_epic_zone_alignment(int zone_number, int delta)
   qry("UPDATE zones SET alignment = %d WHERE alignment > %d", EPIC_ZONE_ALIGNMENT_MAX, EPIC_ZONE_ALIGNMENT_MAX);
   qry("UPDATE zones SET alignment = %d WHERE alignment < %d", EPIC_ZONE_ALIGNMENT_MIN, EPIC_ZONE_ALIGNMENT_MIN);
   
-  debug("update_epic_zone_alignment(zone_number=%d, delta=%d)", zone_number, delta);
+  //debug("update_epic_zone_alignment(zone_number=%d, delta=%d)", zone_number, delta);
 #endif  
 }
 

@@ -90,6 +90,7 @@ static bool is_boardable(P_ship ship)
 NPCShipAI::NPCShipAI(P_ship s, P_char ch)
 {
     ship = s;
+    escort = 0;
     advanced = 0;
     permanent = false;
     mode = NPC_AI_IDLING;
@@ -159,7 +160,7 @@ void NPCShipAI::activity()
             break;
         }
 
-        if (!find_current_target())
+        if (ship->target == 0 || !find_current_target())
         {
             mode = NPC_AI_CRUISING;
             break;
@@ -174,7 +175,7 @@ void NPCShipAI::activity()
         if (check_dir_for_land_from(ship->x, ship->y, t_bearing, t_range))
         { // we have a land between us and target, forget about combat maneuvering for now, lets find a way to go around it
             b_attack(); // trying to fire over land
-            if (!go_around_land())
+            if (!go_around_land(ship->target))
                 mode = NPC_AI_RUNNING; // TODO: do something better?
             break;
         }
@@ -221,10 +222,18 @@ void NPCShipAI::activity()
 
     case NPC_AI_CRUISING:
     {
-        if (find_new_target())
+        if (type == NPC_AI_PIRATE || type == NPC_AI_HUNTER)
         {
-            mode = NPC_AI_ENGAGING;
-            break;
+            if (find_new_target())
+            {
+                mode = NPC_AI_ENGAGING;
+                break;
+            }
+        }
+        if (type == NPC_AI_ESCORT)
+        {
+            if (do_escort())
+                break;
         }
     } // no break
     case NPC_AI_LEAVING:
@@ -299,8 +308,21 @@ void NPCShipAI::attacked_by(P_ship attacker)
     {
         ship->target = attacker;
         mode = NPC_AI_ENGAGING;
+        if (type == NPC_AI_ESCORT && attacker == escort)
+            type = NPC_AI_HUNTER; // don't attack your escort, it will turn on you!
     }
 }
+
+void NPCShipAI::escort_attacked_by(P_ship attacker)
+{
+    if (ship->target == 0)
+    {
+        ship->target = attacker;
+        mode = NPC_AI_ENGAGING;
+        send_message_to_debug_char("Escortee attacked by %s, engaging!\r\n", attacker->id);
+    }
+}
+
 
 bool NPCShipAI::try_unload()
 {
@@ -310,9 +332,10 @@ bool NPCShipAI::try_unload()
         {
             if (SHIPISDOCKED(contacts[i].ship) || ISNPCSHIP(contacts[i].ship))
                 continue;
+            ship->timer[T_MAINTENANCE] += 10;
             return FALSE;
         }
-
+        send_message_to_debug_char("Unloading!\r\n");
         return try_unload_npc_ship(ship);
     }
     return FALSE;
@@ -340,6 +363,53 @@ bool NPCShipAI::check_for_captain_on_bridge()
     }
     return false;
 }
+
+bool NPCShipAI::do_escort()
+{
+    if (SHIPIMMOBILE(ship)) return false;
+    int i = 0;
+    for (; i < contacts_count; i++) 
+    {
+        if (contacts[i].ship == escort)
+            break;
+    }
+    if (i == contacts_count)
+    {
+        if (ship->timer[T_MAINTENANCE] == 0)
+        {
+            ship->timer[T_MAINTENANCE] = 300;
+            send_message_to_debug_char("Lost escortee!\r\n");
+        }
+        return false;
+    }
+
+    // found our escortee
+    ship->timer[T_MAINTENANCE] = 0;
+    float e_range = contacts[i].range;
+    float e_bearing = contacts[i].bearing;
+    if (check_dir_for_land_from(ship->x, ship->y, e_bearing, e_range))
+    { // we have a land between us and escort, lets find a way to go around it
+        if (!go_around_land(escort))
+            return false;
+        return true;
+    }
+    if (e_range > 5)
+    {
+        new_heading = calc_intercept_heading (e_bearing, escort->heading);
+        if (check_dir_for_land_from(ship->x, ship->y, new_heading, 5))
+            new_heading = e_bearing;
+        send_message_to_debug_char("Chasing escortee: ");
+    }
+    else
+    {
+        speed_restriction = escort->speed;
+        new_heading = escort->heading;
+        send_message_to_debug_char("Following escortee: ");
+    }
+    set_new_dir();
+    return true;
+}
+
 
 
 /////////////////////////
@@ -536,12 +606,12 @@ bool NPCShipAI::chase()
     return true;
 }
 
-bool NPCShipAI::go_around_land()
+bool NPCShipAI::go_around_land(P_ship dest)
 {
     if (SHIPIMMOBILE(ship)) return false;
 
     vector<int> route;
-    if (!dijkstra(ship->location, ship->target->location, valid_ship_edge, route))
+    if (!dijkstra(ship->location, dest->location, valid_ship_edge, route))
     {
         send_message_to_debug_char("Going around land failed!\r\n");
         return false;
@@ -719,7 +789,7 @@ void NPCShipAI::basic_combat_maneuver()
 }
 
 void NPCShipAI::b_attack()
-{    // if we have a ready gun pointing to target in range and enough stamina, fire it right away!
+{    // if we have a ready gun pointing to target in range, fire it right away!
     for (int w_num = 0; w_num < MAXSLOTS; w_num++) 
     {
         if (ship->slot[w_num].type == SLOT_WEAPON) 
@@ -729,8 +799,7 @@ void NPCShipAI::b_attack()
             int w_index = ship->slot[w_num].index;
             if (ship->slot[w_num].position == t_arc &&
                 t_range > (float)weapon_data[w_index].min_range && 
-                t_range < (float)weapon_data[w_index].max_range &&
-                ship->guncrew.stamina > weapon_data[w_index].reload_stamina)
+                t_range < (float)weapon_data[w_index].max_range)
             {
                 ship->setheading = ship->heading;
                 fire_weapon(ship, w_num, t_contact, debug_char);
@@ -753,8 +822,7 @@ void NPCShipAI::b_attack()
                 int t_a = get_arc(ship->heading, contacts[i].bearing);
                 if (ship->slot[w_num].position == t_a &&
                     contacts[i].range > (float)weapon_data[w_index].min_range && 
-                    contacts[i].range < (float)weapon_data[w_index].max_range &&
-                    ship->guncrew.stamina > weapon_data[w_index].reload_stamina)
+                    contacts[i].range < (float)weapon_data[w_index].max_range)
                 {
                     ship->setheading = ship->heading;
                     fire_weapon(ship, w_num, i, debug_char);
@@ -831,7 +899,7 @@ bool NPCShipAI::b_circle_around_arc(int arc)
     normalize_direction(dst_dir);
     int dst_loc = get_room_in_direction_from(t_x, t_y, dst_dir, max_dist);
 
-    send_message_to_debug_char("Circling around (%d, %d, %d): ", dst_dir, max_dist, dst_loc);
+    send_message_to_debug_char("Circling around (%6.2f, %d, %d): ", dst_dir, max_dist, dst_loc);
 
     // TODO: check if there is land between you and dst_loc, and try to go straight there
 
@@ -855,7 +923,6 @@ bool NPCShipAI::b_circle_around_arc(int arc)
     default: return false;
     };
 
-    //send_message_to_debug_char("Circling around: ");
     return true;
 }
 
@@ -901,7 +968,7 @@ bool NPCShipAI::b_turn_reloading_weapon()
     {
         if (advanced < 0) best_arc &= -2;
         new_heading = t_bearing - get_arc_central_bearing(best_arc);
-        send_message_to_debug_char("Turning reloading weapon arc %s: %d", get_arc_name(best_arc), best_arc);
+        send_message_to_debug_char("Turning reloading weapon arc %s: ", get_arc_name(best_arc));
         return true;
     }
     return false;
@@ -1169,8 +1236,7 @@ void NPCShipAI::a_attack()
             int w_index = ship->slot[w_num].index;  
             if (ship->slot[w_num].position == t_arc &&
                 t_range > (float)weapon_data[w_index].min_range && 
-                t_range < (float)weapon_data[w_index].max_range &&
-                ship->guncrew.stamina > weapon_data[w_index].reload_stamina)
+                t_range < (float)weapon_data[w_index].max_range)
             {
                 can_fire_but_not_right = 1;
 
@@ -1266,9 +1332,6 @@ void NPCShipAI::a_attack()
                 if (ship->slot[w_num].position != t_a)
                     continue;
 
-                if (ship->guncrew.stamina > weapon_data[w_index].reload_stamina)
-                    continue;
-
                 int hit_chance = weaponsight(ship, w_num, i, debug_char);
                 if (hit_chance < 50)
                     continue;
@@ -1280,8 +1343,13 @@ void NPCShipAI::a_attack()
                 if (t_a == (t_arc + 2) % 4)
                     fire = true;  // main target is at opposite arc, fire away
 
-                if (IS_SET(weapon_data[w_index].flags, MINDBLAST) && contacts[i].ship->timer[T_MINDBLAST] == 0)
-                    fire = true; // use mindblast whenever possible
+                if (IS_SET(weapon_data[w_index].flags, MINDBLAST))
+                {
+                    if (contacts[i].ship->timer[T_MINDBLAST] == 0)
+                        fire = true; // use mindblast whenever possible
+                    else
+                        continue; // no point...
+                }
 
                 if (fire)
                 {
@@ -1907,10 +1975,12 @@ void NPCShipAI::send_message_to_debug_char(const char *fmt, ... )
 
 
 
-// Problems:
+// TODO:
 // Take damage_ready into account
 // add target's side-per-time statistic, switch target side if too many
 // make sure people dont attacked twice on same cargo run??
-// make advanced attack support multitarget
 // Validate cargo!
 // Pirate Crews: lower levels, remove necros, set di!
+
+// endless loop somewhere in advanced ai?
+// check for ships name in use already

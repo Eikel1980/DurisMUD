@@ -842,17 +842,19 @@ safe sighs~
 MA
 evils evil~
 &+WRosenthal says, '&+LYeah, I long time ago an ancient clan of evils broke through to
-&+Lthe surface world and waged a war that echoed throughout the universe.. My entire
+&+Lthe surface world and waged a war that echoed throughout the known lands. My entire
 &+Lfamily was slain before my eyes during the last great war.&+W'
 
 &+W'&+LMost of the ancient evils escaped with their lives.. but a few were captured
 &+Land rumor has it they are being held here in &+WWinterhaven&+L... It is a terrible sin
 &+Lfor those captives to be left alive.. I don't have much to offer, but I'm would give
 &+Lalmost anything to see their &+rhearts &+Lcarved from their bodies..&+W'&n
+
+&+W'&+LI heard that little weasel of a soul &+WThyz &+Lknows where they are.&+W'&n
 ~
 M
 hi hello howdy hey~
-&+WRosenthal sighs and says, '&+LThe world isn't &+Wsafe &+Lanymore.&+W'&
+&+WRosenthal sighs and says, '&+LThe world isn't &+Wsafe &+Lanymore.&+W'&n
 ~
 Q
 ~
@@ -950,42 +952,36 @@ case display~
 ~
 M
 flaming axe illithid lords~
-&+WSootfoot looks at you and says, &+W'&+mAhhhh yes, that is quite an
-&+mamazing weapon. Bound within it are the mind, body, and soul
-&+mof a rather nastry trio of Illithid lords.&+W'
+&+WSootfoot looks at you and says, &+W'&+mAhhhh yes, that is quite an amazing weapon. Bound
+&+mwithin it are the mind, body, and soul of a rather nastry trio of Illithid lords.&+W'
 
-&+W'&+mIf a lucky traveler were to slay across Qudisocc, Caranthazal,
-&+mand LLznixor, I could make another one. I would also require a
-&+Rgn&+romi&+Rsh &+Co&+Lr&+Cb &+Lof b&+Ci&+Ln&+Cd&+Li&+Cn&+Lg&n, a &+ybronze &+Waxe
-&+mand a glowing weapon from &+WKzantha &+mhilt to make it work.&+W'
+&+W'&+mIf a lucky traveler were to slay across Qudisocc, Caranthazal, and LLznixor, I could
+&+mmake another one. I would also require a &+Rgn&+romi&+Rsh &+Co&+Lr&+Cb &+Lof b&+Ci&+Ln&+Cd&+Li&+Cn&+Lg&n, a &+ybronze &+Waxe &+mand
+&+ma glowing weapon from &+WKzantha &+mhilt to make it work.&+W'
 ~
 M
 titan warhammer snow ogre kings~
-&+WSootfoot grins wickedly and approaches you, '&+mMy, you do have
-&+man eye for power, don't you? I forged that warhammer many decades
-&+mago for a man named &+WOhjal&+m. He came to me with a very strange relic
-&+mfrom a tribe of &+bSnow &+WOgres&+m.&+W'
+&+WSootfoot grins wickedly and approaches you, '&+mMy, you do have an eye for power,
+&+mdon't you? I forged that warhammer many decades ago for a man named &+WOhjal&+m. He
+&+mcame to me with a very strange relic from a tribe of &+bSnow &+WOgres&+m.&+W'
 
-&+W'&+mIf you could bring me the same relic, along with a &+Wwarhammer&+m, a
-&+mweapon hilt, and something to &+Cb&+Lin&+Cd &+mthe pieces together, I could
-&+mproduce such an artifact for you.&+W'&n
+&+W'&+mIf you could bring me &+Wthe tamed &+Rf&+ru&+Rr&+ry &+Wof the snow &+bogre &+Wkings&+m, &+Wa &+cmagical &+Madamantium
+&+Wwarhammer&+m, &+Lthe &+Rgn&+rom&+Rish &+Co&+Lr&+Cb &+Lof b&+Ci&+Ln&+Cd&+Li&+Cn&+Lg&+m, and &+La strange &+mglowing &+Lweapon hilt&+m, I could
+&+mproduce such an artifact for you too.&+W'&n
 ~
 M
 spiked mace death seekers~
-&+WSootfoot squints his eyes at you and whispers, '&+mWhat do you know
-&+mof the legend of the Death Seekers. Nothing but death and decay
-&+mlay bound within that mace. Hardly something a sane person would
-&+mcarry with them.&+W'
+&+WSootfoot squints his eyes at you and whispers, '&+mWhat do you know of the
+&+mlegend of the Death Seekers. Nothing but death and decay lay bound within
+&+mthat mace. Hardly something a sane person would carry with them.&+W'
 
-&+W'&+mBut you don't strike me as sane... You must bring me a mark of
-&+mDeath. Unfortunately there is only one who knows of such a mark,
-&+LFrenbar&+m, the &+rGang&+Lleader&+m. Last I heard, he was hiding out with &+WThyz&+m.&+W'
+&+W'&+mBut you don't strike me as sane... You must bring me &+Lthe mark of &+rD&+Rea&+rth&+m.
+&+mUnfortunately there is only one who knows of such a mark, &+LFrenbar&+m,
+&+mthe &+rGang&+Lleader&+m. Last I heard, he was hiding out with &+WThyz&+m.&+W'
 
-
-&+mI will also require a &+Cmace&+m, preferably made of mithril, a
-&+mmagical weapon hilt, as well as something &+Cpo&+Lwerf&+Cul &+mto hold
-&+mall the pieces together, and I shall craft you an item powered by
-&+Rd&+rea&+Rth &+mitself.&+W'&n
+&+W'&+mI will also require a &+Cmace&+m, preferably made of mithril, a magical &+Lweapon
+&+Lhilt&+m, as well as something &+Cpo&+Lwerf&+Cul &+mto hold &+mall the pieces together,
+&+mand I shall craft you an item powered by &+Rd&+rea&+Rth &+mitself.&+W'&n
 ~
 M
 volo longsword traveler mystical~
@@ -1015,15 +1011,15 @@ fabled dagger ra~
 &+min the &+rCity of &+RBr&+rass &+mand the &+Lman-god &+mHephaestus in the &+LCharcoal Palace&+m. Only
 &+mthese two know the whereabouts of what you seek.&+W'&n
 
-&+W'&+mNonetheless, once in my possession, I will require &na &+cmagical &+Celectrum
-&+Wdagger&+m, &+Lthe &+Rgn&+romi&+Rsh &+Co&+Lr&+Cb &+Lof b&+Ci&+Ln&+Cd&+Li&+Cn&+Lg&+m, and &+La strange &+mglowing &+Lweapon hilt&+m.&+W'&n
+&+W'&+mNonetheless, once in my possession, I will require &na &+cmagical &+Celectrum &+Wdagger&+m,
+&+Lthe &+Rgn&+romi&+Rsh &+Co&+Lr&+Cb &+Lof b&+Ci&+Ln&+Cd&+Li&+Cn&+Lg&+m, and &+La strange &+mglowing &+Lweapon hilt&+m.&+W'&n
 ~
 M
 gauntlets living legend~
-&+WSootfoot grins wickedly and says to you, 'Those gauntlets are quite rare and
+&+WSootfoot grins wickedly and says to you, '&+mThose gauntlets are quite rare and
 &+mare equally as powerful.&+W'
 
-&+W'I recall that the last adventurer to bring me the necessary pieces spoke of
+&+W'&+mI recall that the last adventurer to bring me the necessary pieces spoke of
 &+man individual by the name of &+WU&+Lz&+m. He also mentioned about a legendary tale that
 &+GTh&+Be Lor&+Ge Keepe&+Br &+mfrom &+LThe Kingdom of &+rT&+gor&+rg &+mhas shared with him.&+W'
 
@@ -1052,8 +1048,14 @@ boots abyss~
 ~
 M
 legplates storm~
-&+WSootfoot says to you, '&+mI don't recall how to make that item. Perhaps
-&+myou should check back with me at another time.&+W'&n
+&+WSootfoot says to you, '&+LT&+Whe &+Ll&+Wegplates &+Lo&+Wf &+Lt&+Whe &+LS&+Wtorm &+mare one of my favorite items.
+&+mNot only do they embue the wearer with some pretty powerful magic, they are also
+&+minsulated from the elements. No such thing as a chilly night in those bad boys!
+
+&+mAnyway... there are ten items in existence that have been crafted by a very
+&+mpowerful &+Cm&+cae&+Lls&+wtro&+Cm&+m. In order to craft those legplates, I will require all ten of
+&+mof the &+cm&+Cae&+Ll&+wst&+Cr&+com &+mitems, as well as a &+Rgn&+romi&+Rsh &+Co&+Lr&+Cb &+Lof b&+Ci&+Ln&+Cd&+Li&+Cn&+Lg&+m, &+Wa pair of &+cmagical
+&+mmithril &+Wlegplates&+m, and &+La strange &+Mglowing &+Lflint of armor&+m.&+W'&n
 ~
 M
 armplates cosmos~
@@ -1171,8 +1173,16 @@ R I 55315
 G I 55284
 G I 55209
 G I 55166
-G I 55316
-G I 55317
+G I 22631
+G I 34541
+G I 75856
+G I 76050
+G I 76066
+G I 76243
+G I 76634
+G I 82553
+G I 82554
+G I 82555
 Q
 ~
 R I 55318
@@ -1648,6 +1658,10 @@ snow ogre~
 &+Wof the Snowgre tricket lingers on my body still. Unfortunately for me, only the blessing
 &+Wof the Snowgre King's can release it...'
 ~
+M
+default~
+&+WOhjal says to you, 'This pa&+Wint&+Wing came from the land of the snow ogres.'&n
+~
 Q
 ~
 R I 55061
@@ -1999,14 +2013,27 @@ drug drugs~
 ~
 M
 hi hey hello howdy~
-&+WThys says to you, '&+LUnless you are here to give me &+gdrugs &+Wor somehow
+&+WThyz says to you, '&+LUnless you are here to give me &+gdrugs &+Lor somehow
 &+Loffer me &+Wprotection &+Lfrom the law, I have no reason to speak with you.&+W'&n
 ~
 M
 protection immunity~
 &+WThyz whispers to you, '&+L...this city has me under a close watch. I know they're
 &+Lonly waiting to get enough evidence to put me away for good. My entire business is
-&+Lhere and I'm afraid I can't just walk away from it. If only you could get &+WSir Espet
+&+Lhere and I'm afraid I can't just walk away from it. Without some form of assurance
+&+Lthat I won't be thrown in jail, I'll just have to stay low.&+W'&n
+~
+M
+evil evils~
+&+WThyz whispers to you, '&+LAhhh, so you have heard of them? They're being kept under
+&+Llock and key in the &+Wprisons&+L. You wouldn't be interested in looking for them, would you?&+W'&n
+~
+M
+yes yeap prison prisons key keys~
+&+WThyz grins at you and says, '&+LI know the way into the prisons.. In fact, I have a key for the cell
+&+Ldoors. Of course, this key is very valuable to me and doesn't come cheap. If you want it, you will
+&+Lhave to bring me a letter of immunity, signed by &+WSir Espet &+Lhimself. With his pardon, I can sleep
+&+Lsoundly knowing that I won't be needing the key from the inside.&+W'&n
 ~
 Q
    &+WThyz grins at you and says, "Word! Thanks bro. Here, give this to Bojaxx.
@@ -2077,6 +2104,7 @@ Q
 &N
 ~
 R I 55367
+R I 55367
 G I 28997
 Q
 &N&+wSierra's eagerness at your arrival is disturbing and after a quick glance&n
@@ -2094,6 +2122,7 @@ Q
 &N&+wCrestfallen she tosses you an item and goes back to her station less &n
 &N&+wenthusiastically than before.&n
 ~
+R I 55366
 R I 55366
 G I 28998
 S
@@ -2589,10 +2618,6 @@ R C 350000
 G I 67116
 Q
 ~
-R I 55029
-G I 55154
-Q
-~
 R I 55550
 R I 55551
 R I 55552
@@ -2603,6 +2628,10 @@ Q
 ~
 R I 33719
 G I 15012
+Q
+~
+R C 500000
+G I 55154
 S
 #55166
 MA
@@ -3260,28 +3289,48 @@ D
 ~
 S
 #55230
+M
+hi hello hey howdy~
+&+W   A snow &+bogre &+Wshaman says to you, '&+CYou must bring me the crystalline totem of the
+&+wgl&+ca&+Cc&+ci&+wer &+Cshamans. Only then will I be set free.&+W'&n
+~
 Q
 ~
 R I 55242
-G C 1000000
+G I 87721
 S
 #55231
+M
+hi hey howdy hello~
+A snow ogre shaman says to you, '&+rYou must bring me the obsidian totem of
+&+rthe volcano shamans. Only then will I be set free.&+W'&n
+~
 Q
 ~
 R I 55243
-G C 1000000
+G I 87720
 S
 #55232
+M
+hi hey howdy hello~
+A snow ogre shaman says to you, '&+bYou must bring me the dark-iron totem of
+&+bthe squall shamans. Only then will I be set free.&+W'&n
+~
 Q
 ~
 R I 55245
-G C 1000000
+G I 87723
 S
 #55233
+M
+hi hello hey howdy~
+A snow ogre shaman says to you, '&+yYou must bring me the the sandstone totem of
+&+ythe desert shamans. Only then will I be set free.&+W'&n
+~
 Q
 ~
 R I 55244
-G C 1000000
+G I 87722
 S
 #55234
 M
@@ -3487,52 +3536,63 @@ S
 #55244
 MA
 qc_action~
-&+LA traeling &+Mm&+my&+Ms&+mt&+Mi&+mc &+Lsays, '&+WI prefer flying around to walking
-&+Won the ground!&+L'&n
+&+LA traeling &+Mm&+my&+Ms&+mt&+Mi&+mc &+Lsays, '&+WWhere are they? I sent for help nearly three days ago!&+L'&n
 ~
 M
 hey hello hi howdy~
-&+LA traveling &+Mm&+my&+Ms&+mt&+Mi&+mc &+Wsays to you, 'Flying around like this takes a lot of energy.
-&+WIt requires quite a bit of &+yplanar &+Ydust &+Wto get one off the ground. You wouldn't
-&+Whappen to have a &+Lpouch &+Wto spare, would you? It would save me a bit of time.'&n
+&+LA traveling &+Mm&+my&+Ms&+mt&+Mi&+mc &+Lsays to you, '&+WYou look a bit weak to help me on my task..
+&+WAre you the mercenaries I sent for?&+L'&n
 ~
 M
-pouch planar dust~
-&+LA traveling &+Mm&+my&+Ms&+mt&+Mi&+mc &+Wsays to you, 'They're not the easiest to get, but they are definitely
-&+Wworth the effort. If you have one, I would be interested in buying it from you. Unfortunately
-&+WI don't have much to offer in the form of payment, other than a trinket and a few words
-&+Wof wisdom.'&n
+yes yeap~
+&+LA traveling &+Mm&+my&+Ms&+mt&+Mi&+mc &+Lsays to you, '&+WFine, but it's not my fault if you go and get
+&+Wyourself killed. How about a test then? Bring me six &+Rbrilliant &+rblood-red &+Lorbs &+Was
+&+Wproof of your resilience...&+L'&n
+~
+M
+no nope~
+&+LA traveleing &+Mm&+my&+Ms&+mt&+Mi&+mc &+Llooks at you and asks, '&+WThen why are you here? Begone!&+L'&n
 ~
 Q
+&+LA traveling mystic says to you, 'Wonderful. You're weak appearance is obviously desceptive. Well
+&+Wmaybe that will come in handy. Here, please take these potions. They may help you on the next
+&+Wpart of your.. assignment. I require you to retrieve a magical trinket that is stored in the
+&+Wpersonal vault of the King of Winterhaven. Unfortunately, getting into the Palace and breaking
+&+Winto the vault is a two-fold task.&+L'
+
+&+L'First, the gates are completely sealed and no matter of brute force can break through them. The
+&+Wonly way in is with the help of Rosenthal. He has a hidden portal that can transport you inside
+&+Wthe palace. However, I know he does not share access to it freely. You must negotiate entry with
+&+Whim.&+L'
+
+&+L'Second, once you are inside the Palace, you must use this key to get inside the royal chamber
+&+Wand.. convince the King to hand over the keys to the vault. Be careful though, the royal guards
+&+Wstand at the ready to use their will against you.&+L'
+
+&+L'You can keep the contents of the vault for yourself, just remember to bring me the magical
+&+Wtrinket.&+L'&n
 ~
-R E 250000
-R I 0
-G I 55198
-Q
-~
-R E 250000
-R I 0
-G I 55199
-Q
-~
-R E 250000
-R I 0
-G I 55200
-Q
-~
-R E 250000
-R I 0
-G I 55201
-Q
-~
-R E 250000
-R I 0
-G I 55202
-Q
-~
-R E 250000
-R I 0
-G I 55203
+R I 55400
+R I 55400
+R I 55400
+R I 55426
+G I 55425
+G I 55425
+G I 55425
+G I 55425
+G I 55425
+G I 55425
 S
 #55251
+S
+#55265
+Q
+~
+R I 55312
+R I 55204
+R I 55204
+R I 55204
+G I 32031
+G I 87510
+G I 55313
 S

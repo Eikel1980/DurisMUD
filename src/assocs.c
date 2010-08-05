@@ -4215,6 +4215,7 @@ void check_assoc_prestige_epics(P_char ch, int epics, int epic_type)
     switch( epic_type )
     {
       case EPIC_PVP:
+      case EPIC_SHIP_PVP:
         prestige = (int) get_property("prestige.gain.pvp", 20);
         break;
 

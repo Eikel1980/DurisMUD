@@ -173,10 +173,10 @@ struct ShipData *new_ship(int m_class, bool npc)
       ship->slot[j].clear();
    }
 
-   setcrew(ship, sail_crew_list[0], 0);
-   setcrew(ship, gun_crew_list[0], 0);
-   setcrew(ship, repair_crew_list[0], 0);
-   setcrew(ship, rowing_crew_list[0], 0);
+   set_crew(ship, DEFAULT_CREW);
+   ship->crew.sail_chief = NO_CHIEF;
+   ship->crew.guns_chief = NO_CHIEF;
+   ship->crew.rpar_chief = NO_CHIEF;
 
    assignid(ship, "**");
    ship->keywords = str_dup("ship");
@@ -1161,17 +1161,31 @@ void ship_activity()
         if (!IS_SET(ship->flags, SINKING)) 
         {
             // STAMINA REGEN
-            int stamina_inc = 1;
-            if (ISNPCSHIP(ship) && ship->m_class == SH_DREADNOUGHT)
-                stamina_inc = 5;
-            if (ship->sailcrew.stamina < ship->sailcrew.max_stamina) 
-                ship->sailcrew.stamina += stamina_inc;
-            if (ship->guncrew.stamina < ship->guncrew.max_stamina) 
-                ship->guncrew.stamina += stamina_inc;
-            if (ship->repaircrew.stamina < ship->repaircrew.max_stamina) 
-                ship->repaircrew.stamina += stamina_inc;
-            if (ship->rowingcrew.stamina < ship->rowingcrew.max_stamina) 
-                ship->rowingcrew.stamina += stamina_inc;
+            if (ship->crew.stamina < ship->crew.max_stamina)
+            {
+                float stamina_inc = 3;
+                if (ISNPCSHIP(ship))
+                    stamina_inc = 4;
+                if (ship == npc_dreadnought)
+                    stamina_inc = 15;
+                if (SHIPISDOCKED(ship) || SHIPANCHORED(ship))
+                    stamina_inc *= 4;
+
+                ship->crew.stamina += stamina_inc;
+                if (ship->crew.stamina > ship->crew.max_stamina)
+                    ship->crew.stamina = ship->crew.max_stamina;
+            }
+            if (ship->crew.stamina < 0)
+            {
+                if (number(1, 30) == 1)
+                {
+                    if (ship->crew.stamina > -ship->crew.max_stamina)
+                        act_to_all_in_ship(ship, "&+rYour crew looks exhausted.&N\r\n");
+                    else
+                        act_to_all_in_ship(ship, "&+rYour crew looks &+Rcompletely &+rexhausted.&N\r\n");
+                }
+            }
+
 
             // Battle Stations!
             if (ship->target != NULL)
@@ -1183,7 +1197,7 @@ void ship_activity()
             if ((ship->repair > 0) && ship->timer[T_MINDBLAST] == 0) 
             {
                 float chance = 0.0;
-                if (ship->mainsail < (int)((float)SHIPMAXSAIL(ship) * (ship->repaircrew.skill_mod + 0.4)) && 
+                if (ship->mainsail < (int)((float)SHIPMAXSAIL(ship) * (ship->crew.rpar_mod_applied + 0.4)) && 
                         ship->mainsail < SHIPMAXSAIL(ship) * 0.9)
                 {
                     if (SHIPANCHORED(ship))
@@ -1200,13 +1214,15 @@ void ship_activity()
                         if (ship->mainsail > 0) chance = 30.0;
                         else                                        chance = 0.0;
                     }
-                    chance *= (1.0 + ship->repaircrew.skill_mod);
+                    chance *= (1.0 + ship->crew.rpar_mod_applied) * ship->crew.get_stamina_mod();
                     if (number (0, 1000) < (int)chance)
                     {
-                        ship->mainsail++;
+                        ship->mainsail += MIN(ship->crew.get_sail_repair_mod(), (SHIPMAXSAIL(ship) - ship->mainsail));
                         ship->repair--;
                         if (ship->repair == 0)
                             act_to_all_in_ship(ship, "&+RThe ship is out of repair materials!.&N");
+                        ship->crew.reduce_stamina(3, ship);
+                        ship->crew.rpar_skill_raise((ship->timer[T_BSTATION] > 0 && ship->target && ship->target->race != ship->race) ? 0.1 : 0.01);
                         update_ship_status(ship);
                     }
                 } 
@@ -1219,19 +1235,22 @@ void ship_activity()
                         if (SHIPWEAPONDAMAGED(ship, j) && !SHIPWEAPONDESTROYED(ship, j))
                         {
                             chance = 200.0;
-                            chance *= (1.0 + ship->repaircrew.skill_mod);
+                            chance *= (1.0 + ship->crew.rpar_mod_applied) * ship->crew.get_stamina_mod();
                             if (number (0, 999) < (int)chance)
                             {
-                                ship->slot[j].val2--;
+                                ship->slot[j].val2 -= MIN(ship->crew.get_weapon_repair_mod(), ship->slot[j].val2);
+                                if (ship->slot[j].val2 < 0) ship->slot[j].val2 = 0;
                                 if (!SHIPWEAPONDAMAGED(ship, j))
                                 {
                                     act_to_all_in_ship_f(ship, "&+W%s &+Ghas been repaired!&N", weapon_data[ship->slot[j].index].name);
-                                    ship->slot[j].timer = (int)((float)weapon_data[j].reload_time * (1.0 - ship->guncrew.skill_mod * 0.15));
+                                    ship->slot[j].timer = (int)((float)weapon_data[j].reload_time * (1.0 - ship->crew.guns_mod_applied * 0.15));
                                 }
                                 if (!number(0, 4))
                                     ship->repair--;
                                 if (ship->repair == 0)
                                     act_to_all_in_ship(ship, "&+RThe ship is out of repair materials!.&N");
+                                ship->crew.reduce_stamina(1, ship);
+                                ship->crew.rpar_skill_raise((ship->timer[T_BSTATION] > 0 && ship->target && ship->target->race != ship->race) ? 0.1 : 0.01);
                             }
                         }
                     }
@@ -1241,7 +1260,7 @@ void ship_activity()
                 {
                     if (ship->repair < 1)
                         break;
-                    if (ship->internal[j] < (int)((float)ship->maxinternal[j] * (ship->repaircrew.skill_mod + 0.1)) &&
+                    if (ship->internal[j] < (int)((float)ship->maxinternal[j] * (ship->crew.rpar_mod_applied + 0.1)) &&
                             ship->internal[j] < ship->maxinternal[j] * 0.9) 
                     {
                         can_repair_internal = true;
@@ -1263,24 +1282,26 @@ void ship_activity()
                             if (ship->internal[j] > 0) chance = 30.0;
                             else                       chance = 0.0;
                         }
-                        chance *= (1.0 + ship->repaircrew.skill_mod);
+                        chance *= (1.0 + ship->crew.rpar_mod_applied) * ship->crew.get_stamina_mod();
                         if (number (0, 1000) < (int)chance)
                         {
-                            ship->internal[j]++;
+                            ship->internal[j] += MIN(ship->crew.get_hull_repair_mod(), (ship->maxinternal[j] - ship->internal[j]));
                             ship->repair--;
                             if (ship->repair == 0)
                                 act_to_all_in_ship(ship, "&+RThe ship is out of repair materials!.&N");
+                            ship->crew.reduce_stamina(2, ship);
+                            ship->crew.rpar_skill_raise((ship->timer[T_BSTATION] > 0 && ship->target && ship->target->race != ship->race) ? 0.1 : 0.01);
                             update_ship_status(ship);
                         }
                     }
                 }
-                if (!can_repair_internal && ship->timer[T_BSTATION] == 0 && ship->repaircrew.skill_mod > 0.5)
+                if (!can_repair_internal && ship->timer[T_BSTATION] == 0 && ship->crew.rpar_mod_applied > 0.5)
                 { // highly skilled crew can repair some armor when not in combat
                     for (j = 0; j < 4; j++) 
                     {
                         if (ship->repair < 1)
                             break;
-                        if (ship->armor[j] < (int)((float)ship->maxarmor[j] * (ship->repaircrew.skill_mod - 0.5)) &&
+                        if (ship->armor[j] < (int)((float)ship->maxarmor[j] * (ship->crew.rpar_mod_applied - 0.5)) &&
                                 ship->armor[j] < ship->maxarmor[j] * 0.9) 
                         {
                             if (SHIPANCHORED(ship))
@@ -1291,13 +1312,15 @@ void ship_activity()
                             {
                                 chance = 20.0;
                             }
-                            chance *= (1.0 + ship->repaircrew.skill_mod);
+                            chance *= (1.0 + ship->crew.rpar_mod_applied) * ship->crew.get_stamina_mod();
                             if (number (0, 1000) < (int)chance)
                             {
-                                ship->armor[j]++;
+                                ship->armor[j] += MIN(ship->crew.get_hull_repair_mod(), (ship->maxarmor[j] - ship->armor[j]));
                                 ship->repair--;
                                 if (ship->armor == 0)
                                     act_to_all_in_ship(ship, "&+RThe ship is out of repair materials!.&N");
+                                ship->crew.reduce_stamina(4, ship);
+                                ship->crew.rpar_skill_raise((ship->timer[T_BSTATION] > 0 && ship->target && ship->target->race != ship->race) ? 0.1 : 0.01);
                                 update_ship_status(ship);
                             }
                         }
@@ -1362,7 +1385,6 @@ void ship_activity()
             !SHIPISDOCKED(ship) &&
             !SHIPANCHORED(ship)) 
         {
-            float accel_mod = 1.0 + ship->sailcrew.skill_mod;
             // Setspeed to Speed
             if (ship->setspeed > ship->get_maxspeed()) 
             {
@@ -1370,33 +1392,12 @@ void ship_activity()
             }
             if (ship->setspeed != ship->speed && ship->timer[T_MINDBLAST] == 0) 
             {
-                j = SHIPTYPESPGAIN(ship->m_class);
-                j = (int) ((float)j * accel_mod);
-    
-                if (ship->setspeed > ship->speed) 
-                {
-                    ship->speed += j;
-                    if (ship->setspeed < (ship->speed + j)) 
-                    {
-                        ship->speed = ship->setspeed;
-                    }
-                    if (ship->speed > ship->get_maxspeed()) 
-                    {
-                        ship->speed = ship->get_maxspeed();
-                    }
-                }
-                if (ship->setspeed < ship->speed) 
-                {
-                    ship->speed -= j;
-                    if (ship->setspeed > (ship->speed - j)) 
-                    {
-                        ship->speed = ship->setspeed;
-                    }
-                    if (ship->speed < 0) 
-                    {
-                        ship->speed = 0;
-                    }
-                }
+                int sp_change = get_next_speed_change(ship);
+                ship->speed += sp_change;
+
+                // affect crew stamina
+                float sp_rel_change = ((float)ABS(sp_change) / (float)SHIPACCEL(ship)) / (1.0 + ship->crew.sail_mod_applied);
+                ship->crew.reduce_stamina(sp_rel_change * (2.0 + SHIPHULLMOD(ship) / 10.0), ship);
             }
 
             // SetHeading to Heading
@@ -1406,26 +1407,10 @@ void ship_activity()
                 ship->heading += hd_change;
                 normalize_direction(ship->heading);
 
-
-                /*float h = ship->heading;
-                if (ship->heading < ship->setheading)
-                    h = ship->heading + 360;
-                if ((ship->setheading + 180) < h) 
-                {
-                    ship->heading = (ship->heading + hdspeed);
-                    if (ship->heading >= 360)
-                        ship->heading -= 360;
-                    if ((h + hdspeed) > (ship->setheading + 360))
-                        ship->heading = ship->setheading;
-                } 
-                else 
-                {
-                    ship->heading = (ship->heading - hdspeed);
-                    if (ship->heading < 0)
-                        ship->heading += 360;
-                    if ((h - hdspeed) < ship->setheading)
-                        ship->heading = ship->setheading;
-                }*/
+                // affect crew stamina
+                float hd_rel_change = (ABS(hd_change) / (float)SHIPHDDC(ship)) / (1.0 + ship->crew.sail_mod_applied);
+                if (SHIPIMMOBILE(ship)) hd_rel_change *= 5;
+                ship->crew.reduce_stamina(hd_rel_change * (3.0 + SHIPHULLMOD(ship) / 10.0), ship);
             }
 
             // Movement Goes here
@@ -1434,8 +1419,12 @@ void ship_activity()
                 rad = ship->heading * M_PI / 180.000;
                 ship->x += (float) ((float) ship->speed * sin(rad)) / 150.000;
                 ship->y += (float) ((float) ship->speed * cos(rad)) / 150.000;
+
                 if ((ship->y >= 51.000) || (ship->x >= 51.000) || (ship->y < 50.000) || (ship->x < 50.000)) 
                 {
+                    if (SHIPCLASS(ship) != SH_SLOOP && SHIPCLASS(ship) != SH_YACHT)
+                        ship->crew.sail_skill_raise(0.003);
+
                     getmap(ship);
                     loc = tactical_map[(int) ship->x][100 - (int) ship->y].rroom;
                     if (is_valid_sailing_location(ship, loc))
@@ -1484,7 +1473,7 @@ void ship_activity()
                             stop_autopilot(ship);
 
                         int crash_chance = (ship->timer[T_BSTATION] == 0) ? 0 :
-                            (int)((float)(ship->speed + 50) / (1.0 + ship->sailcrew.skill_mod * 2.0));
+                            (int)((float)(ship->speed + 50) / ((1.0 + ship->crew.sail_mod_applied * 2.0) * ship->crew.get_stamina_mod()) );
 
                         if (ship->timer[T_MINDBLAST] == 0)
                             act_to_all_in_ship(ship, "Your crew attempts to stop the ship from crashing into land!");
@@ -1538,11 +1527,17 @@ void ship_activity()
                     {
                         if (ship->slot[j].timer > 0) 
                         {
+                            if (number(0, 99) >= int (ship->crew.get_stamina_mod() * 100))
+                                continue; 
                             ship->slot[j].timer--;
                             if (ship->slot[j].timer == 0) 
                             {
                                 act_to_all_in_ship_f(ship, "Weapon &+W[%d]&N: [%s] has finished reloading.", j, ship->slot[j].get_description());
                             }
+                            // affect crew stamina
+                            ship->crew.reduce_stamina((float)weapon_data[ship->slot[j].index].weight / SHIPHULLMOD(ship), ship);
+                            if (ship->target && ship->race != ship->target->race)
+                                ship->crew.guns_skill_raise(0.003);
                         }
                     }
                 }
@@ -1764,7 +1759,7 @@ int write_ship(P_ship ship)
     }
 
 
-    fprintf(f, "version:2\n");
+    fprintf(f, "version:3\n");
     fprintf(f, "%d\n", ship->m_class);
     fprintf(f, "%s\n", ship->ownername);
     fprintf(f, "%s\n", ship->name);
@@ -1776,10 +1771,9 @@ int write_ship(P_ship ship)
     }
     fprintf(f, "%d\n", ship->mainsail);
 
-    fprintf(f, "%d %d\n", ship->sailcrew.index, ship->sailcrew.skill);
-    fprintf(f, "%d %d\n", ship->guncrew.index, ship->guncrew.skill);
-    fprintf(f, "%d %d\n", ship->repaircrew.index, ship->repaircrew.skill);
-    fprintf(f, "%d %d\n", ship->rowingcrew.index, ship->rowingcrew.skill);
+    fprintf(f, "%d\n", ship->crew.index);
+    fprintf(f, "%d %d %d 0 0 0\n", (int)(ship->crew.sail_skill * 1000), (int)(ship->crew.guns_skill * 1000), (int)(ship->crew.rpar_skill * 1000));
+    fprintf(f, "%d %d %d 0 0 0 0 0 0 0\n", ship->crew.sail_chief, ship->crew.guns_chief, ship->crew.rpar_chief);
 
     for (i = 0; i < MAXSLOTS; i++)
     {
@@ -1855,7 +1849,7 @@ int read_ships()
         }
 
         
-        if (ver == 2)
+        if (ver == 2 || ver == 3)
         {
             fgets(buf, MAX_STRING_LENGTH, f2);
             for (int i = 0; buf[i] != '\0'; i++) 
@@ -1879,14 +1873,32 @@ int read_ships()
             fscanf(f2, "%d\n", &(ship->mainsail));
             ship->mainsail = BOUNDED(0, ship->mainsail, SHIPMAXSAIL(ship));
                 
-            fscanf(f2, "%d %d\n", &(ship->sailcrew.index), &(ship->sailcrew.skill));
-            fscanf(f2, "%d %d\n", &(ship->guncrew.index), &(ship->guncrew.skill));
-            fscanf(f2, "%d %d\n", &(ship->repaircrew.index), &(ship->repaircrew.skill));
-            fscanf(f2, "%d %d\n", &(ship->rowingcrew.index), &(ship->rowingcrew.skill));
-            ship->sailcrew.update();
-            ship->guncrew.update();
-            ship->repaircrew.update();
-            ship->rowingcrew.update();
+            if (ver == 2)
+            {
+                int dummy, skill;
+                fscanf(f2, "%d %d\n", &(ship->crew.index), &(skill));
+                ship->crew.sail_skill = skill / 1000;
+                if (ship->crew.index == 3)
+                    ship->crew.index = AUTOMATON_CREW;
+                else
+                    ship->crew.index = DEFAULT_CREW;
+                fscanf(f2, "%d %d\n", &dummy, &skill);
+                ship->crew.guns_skill = skill / 1000;
+                fscanf(f2, "%d %d\n", &dummy, &skill);
+                ship->crew.rpar_skill = skill / 1000;
+                fscanf(f2, "%d %d\n", &dummy, &dummy);
+            }
+            if (ver == 3)
+            {
+                int dummy, ss, gs, rs;
+                fscanf(f2, "%d\n", &(ship->crew.index));
+                fscanf(f2, "%d %d %d %d %d %d\n", &(ss), &(gs), &(rs), &dummy, &dummy, &dummy);
+                ship->crew.sail_skill = (float)ss / 1000;
+                ship->crew.guns_skill = (float)gs / 1000;
+                ship->crew.rpar_skill = (float)rs / 1000;
+                fscanf(f2, "%d %d %d %d %d %d %d %d %d %d\n", &(ship->crew.sail_chief), &(ship->crew.guns_chief), &(ship->crew.rpar_chief), &dummy, &dummy, &dummy, &dummy, &dummy, &dummy, &dummy);
+            }
+            update_crew(ship);
             reset_crew_stamina(ship);
 
             for (int i = 0; i < MAXSLOTS; i++)  

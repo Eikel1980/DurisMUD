@@ -1649,9 +1649,7 @@ void assign_objects(void)
   obj_index[real_object0(1222)].func.obj = gfstone;
   
   obj_index[real_object0(192)].func.obj = disarm_pick_gloves;
-
-  obj_index[real_object0(67279)].func.obj = roulette_pistol;  
-  obj_index[real_object0(67282)].func.obj = orb_of_deception;  
+  
   
 /* Hall of the Ancients */
   obj_index[real_object0(77706)].func.obj = trap_razor_hooks;
@@ -2351,7 +2349,6 @@ void assign_rooms(void)
   world[real_room0(6115)].funct = pet_shops;
   world[real_room0(6369)].funct = pet_shops;
   world[real_room0(6244)].funct = pet_shops;
-  world[real_room0(9704)].funct = crew_shop_proc;
   world[real_room0(6683)].funct = ship_shop_proc;
   world[real_room0(123113)].funct = ship_shop_proc;
   world[real_room0(88846)].funct = ship_shop_proc;
@@ -2365,6 +2362,24 @@ void assign_rooms(void)
   world[real_room0(43118)].funct = ship_shop_proc;
   world[real_room0(635260)].funct = ship_shop_proc;
   world[real_room0(584171)].funct = ship_shop_proc;
+
+  world[real_room0(77)].funct = crew_shop_proc;     // whole-list room
+  world[real_room0(1734)].funct = crew_shop_proc;   // Quietus
+  world[real_room0(9704)].funct = crew_shop_proc;   // Sarmiz
+  world[real_room0(43220)].funct = crew_shop_proc;  // WH Harbor
+  world[real_room0(43221)].funct = crew_shop_proc;  // Thur'Gurdax
+  world[real_room0(43222)].funct = crew_shop_proc;  // Fenaline
+  world[real_room0(28197)].funct = crew_shop_proc;  // Vesprin
+  world[real_room0(22481)].funct = crew_shop_proc;  // Stormport
+  world[real_room0(66735)].funct = crew_shop_proc;  // Torrhan
+  world[real_room0(82641)].funct = crew_shop_proc;  // Myrabolus
+  world[real_room0(54240)].funct = crew_shop_proc;  // tent at Fiord
+  world[real_room0(38107)].funct = crew_shop_proc;  // Boyard
+  world[real_room0(49051)].funct = crew_shop_proc;  // Venan'Trut (market inn)
+  world[real_room0(81021)].funct = crew_shop_proc;  // Ceothia
+  world[real_room0(76859)].funct = crew_shop_proc;  // Jade shipguild
+  //world[real_room0()].funct = crew_shop_proc;  // TODO: Tharnadia
+  //world[real_room0()].funct = crew_shop_proc;  // TODO: Stronghold
 
   // Fiord on west side of GC.
   world[real_room0(559633)].funct = ship_shop_proc;

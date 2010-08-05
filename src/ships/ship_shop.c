@@ -202,7 +202,7 @@ int list_weapons(P_char ch, P_ship ship, int owned)
 
         send_to_char_f(ch,  "%2d) %s%-20s   &+Y%2d  %5s  %7s    %2d    %3d  %3d%%  %3d%%  %3d%%    %3d  &n%10s&n\r\n",
           i + 1, 
-          (ship_allowed_weapons[ship->m_class][i] && ((!IS_SET(weapon_data[i].flags, CAPITOL)) || (ship->frags >= MINCAPFRAG))) ? "&+W" : "&+L", 
+          ship_allowed_weapons[ship->m_class][i] && (ship->frags >= weapon_data[i].min_frags) ? "&+W" : "&+L", 
           weapon_data[i].name,
           weapon_data[i].weight,
           rng,
@@ -440,8 +440,8 @@ int sell_cargo(P_char ch, P_ship ship, int slot)
         send_to_char("Thanks for your business!\r\n", ch);        
         ADD_MONEY(ch, total_cost);
 
-        ship->sailcrew.skill += (int)(((float)ship_crew_data[ship->sailcrew.index].skill_gain / 750.0) * (float)total_cost / 2000.0);
-        ship->repaircrew.skill += (int)(((float)ship_crew_data[ship->sailcrew.index].skill_gain / 2000.0) * (float)total_cost / 2000.0);
+        ship->crew.sail_skill_raise(((float)total_cost / 1000000.0) / 1.5);
+        ship->crew.rpar_skill_raise(((float)total_cost / 1000000.0) / 4.0);
 
         update_crew(ship);
         update_ship_status(ship);
@@ -539,8 +539,8 @@ int sell_contra(P_char ch, P_ship ship, int slot)
         send_to_char("Thanks for your business!\r\n", ch);        
         ADD_MONEY(ch, total_cost);
 
-        ship->sailcrew.skill += (int)(((float)ship_crew_data[ship->sailcrew.index].skill_gain / 1000.0) * (float)total_cost / 3000.0);
-        ship->repaircrew.skill += (int)(((float)ship_crew_data[ship->sailcrew.index].skill_gain / 4000.0) * (float)total_cost / 3000.0);
+        ship->crew.sail_skill_raise(((float)total_cost / 1000000.0) / 3.0);
+        ship->crew.rpar_skill_raise(((float)total_cost / 1000000.0) / 9.0);
 
         update_crew(ship);
         update_ship_status(ship);
@@ -1441,13 +1441,14 @@ int buy_weapon(P_char ch, P_ship ship, char* arg1, char* arg2)
         return TRUE;
     }
 
+    if (ship->frags < weapon_data[w].min_frags)
+    {
+        send_to_char ("I'm sorry, but not just anyone can buy this weapon!  You must earn it!\r\n", ch);
+        return TRUE;
+    }
+
     if (IS_SET(weapon_data[w].flags, CAPITOL)) 
     {
-        if (ship->frags < MINCAPFRAG) 
-        {
-            send_to_char ("I'm sorry, but not just anyone can buy a capitol weapon!  You must earn it!\r\n", ch);
-            return TRUE;
-        }
         for (int j = 0; j < MAXSLOTS; j++) 
         {
             if (IS_SET(weapon_data[ship->slot[j].index].flags, CAPITOL) && (ship->slot[j].type == SLOT_WEAPON)) 
@@ -1931,32 +1932,55 @@ int ship_shop_proc(int room, P_char ch, int cmd, char *arg)
 };
 
 
+const int good_crew_shops[] = { 43220, 43222,     0, 28197 };
+const int evil_crew_shops[] = { 43221,  9704, 22481,     0 };
 
-
+int look_crew (P_char ch, P_ship ship);
 int crew_shop_proc(int room, P_char ch, int cmd, char *arg)
 {
-    P_ship ship;
-    int      owned, i, j;
-
     if (!ch)
         return FALSE;
  
     if ((cmd != CMD_LIST) && (cmd != CMD_HIRE))
         return FALSE;
 
-    owned = 0;
+    for (; isspace(*arg); arg++);
+
+    if (RACE_EVIL(ch) && !IS_TRUSTED(ch))
+    {
+        for (unsigned i = 0; i < sizeof(good_crew_shops) / sizeof(int); i++)
+        {
+            if (good_crew_shops[i] == world[room].number)
+            {
+                send_to_char("Noone here wants to talk to such suspicious character.\r\n", ch);
+                return TRUE;
+            }
+        }
+    }
+    if (RACE_GOOD(ch) && !IS_TRUSTED(ch))
+    {
+        for (unsigned i = 0; i < sizeof(evil_crew_shops) / sizeof(int); i++)
+        {
+            if (evil_crew_shops[i] == world[room].number)
+            {
+                send_to_char("Noone here wants to talk to such suspicious character.\r\n", ch);
+                return TRUE;
+            }
+        }
+    }
+
+    P_ship ship = 0;
     ShipVisitor svs;
     for (bool fn = shipObjHash.get_first(svs); fn; fn = shipObjHash.get_next(svs))
     {
         if (isname(GET_NAME(ch), svs->ownername))
         {
             ship = svs;
-            owned = 1;
             break;
         }
     }
 
-    if (!owned)
+    if (!ship)
     {
         send_to_char("You own no ship, no one here wants to talk to you.\r\n", ch);
         return TRUE;
@@ -1964,144 +1988,191 @@ int crew_shop_proc(int room, P_char ch, int cmd, char *arg)
 
     if (cmd == CMD_LIST)
     {
-        send_to_char("&+YYou look around and see these people to hire:&N\r\n", ch);
-        send_to_char("\r\n-=======Sailors=======-      Skill    Skill-Gain   Cost\r\n", ch);
-        for (i = 1; i < MAXCREWS; i++)
+        send_to_char("&+YYou ask around and find these people looking for employer:&N\r\n", ch);
+        int n = 0;
+
+        send_to_char("\r\n", ch);
+        send_to_char("                                             Base Skills      Base    Skill modifiers    Frags       Hiring                 \r\n", ch);
+        send_to_char("-=========== Crews ===========-    Level  Deck/Guns/Repair  stamina  Deck  Guns Repair  to hire       cost          Specials\r\n\r\n", ch);
+        for (int i = 0; i < MAXCREWS; i++)
         {
-            j = sail_crew_list[i];
-            if (j != -1 && j != SAIL_AUTOMATONS)
+            if (ship_crew_data[i].hire_room(world[room].number))
             {
-                send_to_char_f(ch,
-                    "&+Y%d)%s %-20s&N       %4d       %1.2f      %s&N\r\n",
-                    i, ship->frags < ship_crew_data[j].min_frags ? "&+L" : "&+W",
-                    ship_crew_data[j].name, 
-                    ship_crew_data[j].start_skill / 1000,
-                    (float)ship_crew_data[j].skill_gain / 1000.0,
-                    coin_stringv(ship_crew_data[j].hire_cost));
+                n++;
+                send_to_char_f(ch, "&+Y%2d)&N ", n);
+
+                char name_format[20];
+                sprintf(name_format, "%%-%ds&N", strlen(ship_crew_data[i].name) + (30 - strlen(strip_ansi(ship_crew_data[i].name).c_str())));
+                send_to_char_f(ch, name_format, ship_crew_data[i].name);
+                send_to_char_f(ch, "   &+C%1d   ", ship_crew_data[i].level + 1);
+
+                send_to_char_f(ch, " &+W%4d&N/&+W%4d&N/&+W%4d&N", ship_crew_data[i].base_sail_skill, ship_crew_data[i].base_guns_skill, ship_crew_data[i].base_rpar_skill);
+                send_to_char_f(ch, "      &+G%4d", ship_crew_data[i].base_stamina);
+
+                if (ship_crew_data[i].sail_mod != 0)
+                {
+                    char sail_mod[10];
+                    sprintf(sail_mod, "%s%d", (ship_crew_data[i].sail_mod > 0) ? "+" : "", ship_crew_data[i].sail_mod);
+                    send_to_char_f(ch, "   &+W%3s", sail_mod);
+                }
+                else
+                    send_to_char_f(ch, "      ");
+
+                if (ship_crew_data[i].guns_mod != 0)
+                {
+                    char guns_mod[10];
+                    sprintf(guns_mod, "%s%d", (ship_crew_data[i].guns_mod > 0) ? "+" : "", ship_crew_data[i].guns_mod);
+                    send_to_char_f(ch, "   &+W%3s", guns_mod);
+                }
+                else
+                    send_to_char_f(ch, "      ");
+
+                if (ship_crew_data[i].rpar_mod != 0)
+                {
+                    char rpar_mod[10];
+                    sprintf(rpar_mod, "%s%d", (ship_crew_data[i].rpar_mod > 0) ? "+" : "", ship_crew_data[i].rpar_mod);
+                    send_to_char_f(ch, "   &+W%3s", rpar_mod);
+                }
+                else
+                    send_to_char_f(ch, "      ");
+
+                send_to_char_f(ch, "      &+r%4d", ship_crew_data[i].hire_frags);
+                if (ship_crew_data[i].hire_cost)
+                    send_to_char_f(ch, "   &+W%20s    ", coin_stringv(ship_crew_data[i].hire_cost));
+                else
+                    send_to_char_f(ch, "                      ");
+
+                int bonus_no = -1;
+                do {
+                    const char* bonus_str = ship_crew_data[i].get_next_bonus(bonus_no);
+                    if (bonus_str)
+                        send_to_char_f(ch, "&+M%s  ", bonus_str);
+                }
+                while(bonus_no != -1);
+
+                send_to_char("\r\n", ch);
             }
         }
-        send_to_char("\r\n-===Gunnery Experts===-      Skill    Skill-Gain   Stamina     Cost\r\n", ch);
-        for (i = 1; i < MAXCREWS; i++)
+
+        send_to_char("\r\n\r\n", ch);
+        send_to_char("                                                 Minimum  Skill   Skill     Frags        Hiring\r\n", ch);
+        send_to_char("-======= Chief members =======-     Speciality    skill    gain  modifier  to hire        cost \r\n\r\n", ch);
+
+        for (int i = 0; i < MAXCHIEFS; i++)
         {
-            j = gun_crew_list[i];
-            if (j != -1 && j != GUN_AUTOMATONS)
+            if (ship_chief_data[i].hire_room(world[room].number))
             {
-                send_to_char_f(ch,
-                    "&+Y%d)%s %-20s&N       %4d       %1.2f        %d       %s&N\r\n",
-                    i, ship->frags < ship_crew_data[j].min_frags ? "&+L" : "&+W",
-                    ship_crew_data[j].name, 
-                    ship_crew_data[j].start_skill / 1000,
-                    (float)ship_crew_data[j].skill_gain / 1000.0,
-                    ship_crew_data[j].base_stamina,
-                    coin_stringv(ship_crew_data[j].hire_cost));
+                n++;
+                send_to_char_f(ch, "&+Y%2d)&N ", n);
+
+                char name_format[20];
+                sprintf(name_format, "%%-%ds&N", strlen(ship_chief_data[i].name) + (30 - strlen(strip_ansi(ship_chief_data[i].name).c_str())));
+                send_to_char_f(ch, name_format, ship_chief_data[i].name);
+
+                send_to_char_f(ch, "   %-11s", ship_chief_data[i].get_spec());
+                send_to_char_f(ch, "  &+W%5d", ship_chief_data[i].min_skill);
+
+                if (ship_chief_data[i].skill_gain_bonus != 0)
+                {
+                    char skill_gain[10];
+                    sprintf(skill_gain, "%s%d%%", (ship_chief_data[i].skill_gain_bonus > 0) ? "+" : "", ship_chief_data[i].skill_gain_bonus);
+                    send_to_char_f(ch, "  &+W%6s", skill_gain);
+                }
+                else
+                    send_to_char_f(ch, "        ");
+
+                if (ship_chief_data[i].skill_mod != 0)
+                {
+                    char skill_mod[10];
+                    sprintf(skill_mod, "%s%d", (ship_chief_data[i].skill_mod > 0) ? "+" : "", ship_chief_data[i].skill_mod);
+                    send_to_char_f(ch, "    &+W%3s", skill_mod);
+                }
+                else
+                    send_to_char_f(ch, "       ");
+
+               send_to_char_f(ch, "       &+r%4d    &+W%20s\r\n", ship_chief_data[i].hire_frags, coin_stringv(ship_chief_data[i].hire_cost));
             }
         }
-        send_to_char("\r\n-=====Shipwrights=====-      Skill    Skill-Gain   Cost\r\n", ch);
-        for (i = 1; i < MAXCREWS; i++)
-        {
-            j = repair_crew_list[i];
-            if (j != -1)
-            {
-                send_to_char_f(ch,
-                    "&+Y%d)%s %-20s&N       %4d       %1.2f      %s&N\r\n",
-                    i, ship->frags < ship_crew_data[j].min_frags ? "&+L" : "&+W",
-                    ship_crew_data[j].name, 
-                    ship_crew_data[j].start_skill / 1000,
-                    (float)ship_crew_data[j].skill_gain / 1000.0,
-                    coin_stringv(ship_crew_data[j].hire_cost));
-            }
-        }
-        
-        send_to_char_f(ch, "\r\nCurrent Crew\r\n&+LSails:     &+W%-20s &+L(skill &+W%d&+L) \r\n&+LGuns:      &+W%-20s &+L(skill &+W%d&+L)\r\n&+LRepair:    &+W%-20s &+L(skill &+W%d&+L)&N\r\n",
-          ship_crew_data[ship->sailcrew.index].name, ship->sailcrew.skill / 1000,
-          ship_crew_data[ship->guncrew.index].name, ship->guncrew.skill / 1000,
-          ship_crew_data[ship->repaircrew.index].name, ship->repaircrew.skill / 1000); 
+        send_to_char("\r\n\r\n", ch);
+        look_crew (ch, ship);
         return TRUE;
     }
 
     if (cmd == CMD_HIRE)
     {
-        half_chop(arg, arg1, arg3);
-        half_chop(arg3, arg2, arg);
-
-        if (!is_number(arg2))
+        if (!is_number(arg))
         {
-            send_to_char("Valid syntax 'hire <sail/gun/repair> <number>'\r\n", ch);
-            return TRUE;
-        }
-        i = atoi(arg2);
-        if (i < 1 && i > MAXCREWS)
-        {
-            send_to_char("Invalid number.\r\n", ch);
+            send_to_char("Valid syntax 'hire <number>'\r\n", ch);
             return TRUE;
         }
 
-        if (isname(arg1, "sail s"))
+        int n = atoi(arg);
+        int c = 0;
+        for (int i = 0; i < MAXCREWS; i++)
         {
-            j = sail_crew_list[i];
-        }
-        else if (isname(arg1, "gun g"))
-        {
-            j = gun_crew_list[i];
-        }
-        else if (isname(arg1, "repair r"))
-        {
-            j = repair_crew_list[i];
-        }
-        else
-        {
-            send_to_char("Valid syntax 'hire <sail/gun/repair> <number>'\r\n", ch);
-            return TRUE;
-        }
-        if (j == -1 || j == SAIL_AUTOMATONS || j == GUN_AUTOMATONS)
-        {
-            send_to_char("Invalid number.\r\n", ch);
-            return TRUE;
-        }
+            if (ship_crew_data[i].hire_room(world[room].number) && ++c == n) 
+            {
+                if (ship->frags < ship_crew_data[i].hire_frags && 
+                    (ship->crew.sail_skill < ship_crew_data[i].base_sail_skill ||
+                     ship->crew.guns_skill < ship_crew_data[i].base_guns_skill ||
+                     ship->crew.rpar_skill < ship_crew_data[i].base_rpar_skill ))
+                {
+                    send_to_char("&+wNever heard of you and y'er crew looks weak, get lost!\r\n", ch);
+                    return TRUE;
+                }
+                int cost = ship_crew_data[i].hire_cost;
+                if (cost == 0 && !IS_TRUSTED(ch))
+                {
+                    send_to_char_f(ch, "You can't hire this crew!\r\n");
+                    return TRUE;
+                }
+                if (GET_MONEY(ch) < cost)
+                {
+                    send_to_char_f(ch, "It will cost %s to hire this crew!\r\n", coin_stringv(cost));
+                    return TRUE;
+                }
 
-        if (ship->frags < ship_crew_data[j].min_frags)
-        {
-            send_to_char("Your reputation does not impress these guys.\r\n", ch);
-            send_to_char_f(ch, "You need at least %d frags to hire this crew.\r\n", ship_crew_data[j].min_frags);
-            return TRUE;
+                SUB_MONEY(ch, cost, 0);
+                send_to_char ("Aye aye cap'n!  We'll be on yer ship before you board!\r\n", ch);
+                change_crew(ship, i, true);
+                update_ship_status(ship);
+                write_ship(ship);
+                return TRUE;
+            }
         }
-        int cost = ship_crew_data[j].hire_cost;
-        if (GET_MONEY(ch) < cost)
+        for (int i = 0; i < MAXCHIEFS; i++)
         {
-            send_to_char_f(ch, "It will cost %s to hire this crew!\r\n", coin_stringv(cost));
-            return TRUE;
+            if (ship_chief_data[i].hire_room(world[room].number) && ++c == n) 
+            {
+                if (ship->frags < ship_chief_data[i].hire_frags && 
+                    ((ship_chief_data[i].type == SAIL_CHIEF && ship->crew.sail_skill < ship_chief_data[i].min_skill) ||
+                     (ship_chief_data[i].type == GUNS_CHIEF && ship->crew.sail_skill < ship_chief_data[i].min_skill) ||
+                     (ship_chief_data[i].type == RPAR_CHIEF && ship->crew.rpar_skill < ship_chief_data[i].min_skill) ))
+                {
+                    send_to_char("&+wI won't work with these greenhorns unless their captain is someone famous.\r\n", ch);
+                    return TRUE;
+                }
+                int cost = ship_chief_data[i].hire_cost;
+                if (cost == 0 && !IS_TRUSTED(ch))
+                {
+                    send_to_char_f(ch, "You can't hire this guy!\r\n");
+                    return TRUE;
+                }
+                if (GET_MONEY(ch) < cost)
+                {
+                    send_to_char_f(ch, "It will cost %s to hire this guy!\r\n", coin_stringv(cost));
+                    return TRUE;
+                }
+
+                SUB_MONEY(ch, cost, 0);
+                send_to_char ("Aye aye cap'n!  I'll be on yer ship before you board!\r\n", ch);
+                set_chief(ship, i);
+                update_ship_status(ship);
+                write_ship(ship);
+                return TRUE;
+            }
         }
-
-        int current_skill = 0;
-        switch (ship_crew_data[j].type)
-        {
-        case SAIL_CREW:
-            current_skill = ship->sailcrew.skill;
-            break;
-        case GUN_CREW:
-            current_skill = ship->guncrew.skill;
-            break;
-        case REPAIR_CREW:
-            current_skill = ship->repaircrew.skill;
-            break;
-        case ROWING_CREW:
-            current_skill = ship->rowingcrew.skill;
-            break;
-        };
-//        if (current_skill > ship_crew_data[j].start_skill)
-//        {
-//            if (!arg || !(*arg) || !isname(arg, "confirm"))
-//            {
-//                send_to_char ("&+RYour current crew is more skilled!\r\nIf you are sure you want to hire this crew, type 'hire <sail/gun/repair> <number> confirm'.&N\r\n", ch);
-//                return TRUE;
-//            }
-//        }
-
-        SUB_MONEY(ch, cost, 0);
-        send_to_char ("Aye aye cap'n!  We'll be on yer ship before you board!\r\n", ch);
-        setcrew(ship, j, MAX(current_skill, ship_crew_data[j].start_skill));
-        update_ship_status(ship);
-        write_ship(ship);
+        send_to_char("Invalid number.\r\n", ch);
         return TRUE;
     }
     return FALSE;
@@ -2173,7 +2244,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
       return TRUE;
     }
 
-    if (ship->frags < ship_crew_data[SAIL_AUTOMATONS].min_frags || ship->frags < ship_crew_data[GUN_AUTOMATONS].min_frags)
+    if (ship->frags < ship_crew_data[3].hire_frags || ship->frags < ship_crew_data[8].hire_frags)
     {
       send_to_char ("Erzul says 'Who are you I've never heard of you, come back when you are\r\nmore well known.'\r\n", pl);
       return TRUE;
@@ -2213,7 +2284,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
       return TRUE;
     }
 
-    if (ship->frags < ship_crew_data[SAIL_AUTOMATONS].min_frags || ship->frags < ship_crew_data[GUN_AUTOMATONS].min_frags )
+    if (ship->frags < ship_crew_data[3].hire_frags || ship->frags < ship_crew_data[8].hire_frags )
     {
       send_to_char ("Erzul says 'Who are you I've never heard of you, come back when you are\r\nmore well known.'\r\n", pl);
       return TRUE;
@@ -2239,7 +2310,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
 
     if (isname(arg, "sail s"))
     {
-      cost = ship_crew_data[SAIL_AUTOMATONS].hire_cost;
+      cost = ship_crew_data[3].hire_cost;
       if (GET_MONEY(pl) < cost)
       {
         send_to_char_f(ch, "Erzul says 'It will cost %s to make this crew!\r\n", coin_stringv(cost));
@@ -2249,7 +2320,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
       obj_from_char(obj, TRUE);
       extract_obj(obj, TRUE);
       obj = NULL;
-      setcrew(ship, SAIL_AUTOMATONS, ship_crew_data[SAIL_AUTOMATONS].start_skill);
+      set_crew(ship, 3, false);
       update_ship_status(ship);
       write_ship(ship);
       send_to_char ("Erzul says 'They'll be at your ship by the time you get there!\r\n", pl);
@@ -2257,7 +2328,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
     }
     else if (isname(arg, "gun g"))
     {
-      cost = ship_crew_data[GUN_AUTOMATONS].hire_cost;
+      cost = ship_crew_data[8].hire_cost;
       if (GET_MONEY(pl) < cost)
       {
         send_to_char_f(ch, "Erzul says 'It will cost %s to make this crew!\r\n", coin_stringv(cost));
@@ -2267,7 +2338,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
       obj_from_char(obj, TRUE);
       extract_obj(obj, TRUE);
       obj = NULL;
-      setcrew(ship, GUN_AUTOMATONS, ship_crew_data[GUN_AUTOMATONS].start_skill);
+      set_crew(ship, 8, false);
       update_ship_status(ship);
       write_ship(ship);
       send_to_char("Erzul says 'They'll be at your ship by the time you get there!\r\n",       pl);
@@ -2282,3 +2353,5 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
   }
   return FALSE;
 }
+
+

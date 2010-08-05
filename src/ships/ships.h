@@ -34,7 +34,6 @@
 #define MAXSLOTS          16
 #define MAXWEAPON         12
 #define NUM_PORTS          9
-#define MINCAPFRAG      2000
 #define MAXSAIL          250
 #define BOARDING_SPEED     9
 #define SCAN_RANGE        20
@@ -146,14 +145,33 @@
 
 
 // Crews
-#define SAIL_CREW           0
-#define GUN_CREW            1
-#define REPAIR_CREW         2
-#define ROWING_CREW         3
+#define NO_CHIEF            0
+#define SAIL_CHIEF          1
+#define GUNS_CHIEF          2
+#define RPAR_CHIEF          3
 
-#define MAXCREWS            13
-#define SAIL_AUTOMATONS      3
-#define GUN_AUTOMATONS       8
+#define MAXCREWS            24
+#define MAXCHIEFS           13
+#define DEFAULT_CREW         0
+#define AUTOMATON_CREW       1
+
+
+// Crew Flags
+#define CF_NONE              0
+#define CF_SCOUT_RANGE_1     BIT_1
+#define CF_SCOUT_RANGE_2     BIT_2
+#define CF_MAXSPEED_1        BIT_3
+#define CF_MAXSPEED_2        BIT_4
+#define CF_MAXCARGO_10       BIT_5
+#define CF_HULL_REPAIR_2     BIT_6
+#define CF_HULL_REPAIR_3     BIT_7
+#define CF_WEAPONS_REPAIR_2  BIT_8
+#define CF_WEAPONS_REPAIR_3  BIT_9
+#define CF_SAIL_REPAIR_2     BIT_10
+#define CF_SAIL_REPAIR_3     BIT_11
+
+// Crew Chief Flags
+#define CCF_NONE             0
 
 
 typedef struct ShipData *P_ship;
@@ -244,16 +262,19 @@ struct ShipSlot
 };
 
 
-struct ShipCrew
+/*struct ShipCrew
 {
     void update();
     void reset_stamina();
     void replace_members(float percent);
+    float get_stamina_mod();
+    int get_display_stamina();
+    const char* get_stamina_prefix();
 
     int index;
     int skill;
-    int stamina;
-    int max_stamina;
+    float stamina;
+    float max_stamina;
     float skill_mod;
 };
 
@@ -272,7 +293,100 @@ extern const ShipCrewData ship_crew_data[MAXCREWS];
 extern const int sail_crew_list[MAXCREWS];
 extern const int gun_crew_list[MAXCREWS];
 extern const int repair_crew_list[MAXCREWS];
-extern const int rowing_crew_list[MAXCREWS];
+extern const int rowing_crew_list[MAXCREWS];*/
+
+struct ShipCrew
+{
+
+    int index;
+    float sail_skill;
+    float guns_skill;
+    float rpar_skill;
+    float stamina;
+    
+    float max_stamina;
+    float sail_mod_applied;
+    float guns_mod_applied;
+    float rpar_mod_applied;
+
+    int sail_chief;
+    int guns_chief;
+    int rpar_chief;
+
+    void update();
+    void reset_stamina();
+    void replace_members(float percent);
+
+    float get_stamina_mod();
+    int get_display_stamina();
+    const char* get_stamina_prefix();
+
+    void sail_skill_raise(float raise);
+    void guns_skill_raise(float raise);
+    void rpar_skill_raise(float raise);
+    void skill_raise(float raise, float& skill, int chief);
+    void reduce_stamina(float val, P_ship ship);
+
+    int sail_mod();
+    int guns_mod();
+    int rpar_mod();
+
+    int get_contact_range_mod() const;
+    int get_sail_repair_mod() const;
+    int get_weapon_repair_mod() const;
+    int get_hull_repair_mod() const;
+    int get_maxspeed_mod() const;
+    float get_maxcargo_mod() const;
+};
+
+struct ShipCrewData
+{
+    const char *name;  //Crew desc
+
+    int level;
+
+    int base_sail_skill;
+    int base_guns_skill;
+    int base_rpar_skill;
+    int base_stamina;
+
+    int sail_mod;
+    int guns_mod;
+    int rpar_mod;
+
+    int hire_cost;
+    int hire_frags;
+    int hire_rooms[5];
+
+    ulong flags;
+
+    bool hire_room(int room) const;
+    const char* get_next_bonus(int& cur) const;
+    const char* get_bonus_string(ulong flag) const;
+};
+
+struct ShipChiefData
+{
+    int type;
+    const char* name;
+
+    int min_skill;
+    int skill_gain_bonus;
+    int skill_mod;
+
+    int hire_cost;
+    int hire_frags;
+    int hire_rooms[5];
+
+    ulong flags;
+
+    bool hire_room(int room) const;
+    const char* get_spec() const;
+};
+
+
+extern const ShipCrewData ship_crew_data[MAXCREWS];
+extern const ShipChiefData ship_chief_data[MAXCHIEFS];
 
 
 struct ShipRoom
@@ -292,10 +406,11 @@ struct ShipData
     int mainsail;
     int frags;
     float x, y, z, dx, dy, dz; // coords and their deltas
-    struct ShipCrew sailcrew;
-    struct ShipCrew guncrew;
-    struct ShipCrew repaircrew;
-    struct ShipCrew rowingcrew;
+    ShipCrew crew;
+    //struct ShipCrew sailcrew;
+    //struct ShipCrew guncrew;
+    //struct ShipCrew repaircrew;
+    //struct ShipCrew rowingcrew;
     struct ShipSlot slot[MAXSLOTS];  //number of slots
     char *ownername;  //Owner of ship, probably wrong
     char *name, //name of Ship
@@ -369,6 +484,7 @@ struct WeaponData
 
     const char* name;
     int cost;
+    int min_frags;
     int weight;
     int ammo;
     int min_range;
@@ -426,17 +542,19 @@ extern const char *ship_symbol[NUM_SECT_TYPES];
 #define SHIPRINTERNAL(shipdata) (shipdata)->internal[SIDE_REAR]
 #define SHIPPINTERNAL(shipdata) (shipdata)->internal[SIDE_PORT]
 #define SHIPSINTERNAL(shipdata) (shipdata)->internal[SIDE_STAR]
-#define SHIPHULLWEIGHT(shipdata) SHIPTYPEHULLWEIGHT((shipdata)->m_class)
-#define SHIPHULLMOD(shipdata) SHIPTYPEHULLMOD((shipdata)->m_class)
+#define SHIPHULLWEIGHT(shipdata) SHIPTYPEHULLWEIGHT(SHIPCLASS(shipdata))
+#define SHIPHULLMOD(shipdata) SHIPTYPEHULLMOD(SHIPCLASS(shipdata))
 #define SHIPSLOTWEIGHT(shipdata) (shipdata)->slot_weight(-1)
-#define SHIPMAXWEIGHT(shipdata)  SHIPTYPEMAXWEIGHT((shipdata)->m_class)
-#define SHIPMAXSAIL(shipdata)  SHIPTYPEMAXSAIL((shipdata)->m_class)
+#define SHIPMAXWEIGHT(shipdata)  SHIPTYPEMAXWEIGHT(SHIPCLASS(shipdata))
+#define SHIPMAXSAIL(shipdata)  SHIPTYPEMAXSAIL(SHIPCLASS(shipdata))
 #define SHIPAVAILWEIGHT(shipdata) ( SHIPMAXWEIGHT(shipdata) - SHIPSLOTWEIGHT(shipdata) )
-#define SHIPFREEWEAPON(shipdata) SHIPTYPEFREEWEAPON((shipdata)->m_class)
-#define SHIPFREECARGO(shipdata) SHIPTYPEFREECARGO((shipdata)->m_class)
+#define SHIPFREEWEAPON(shipdata) SHIPTYPEFREEWEAPON(SHIPCLASS(shipdata))
+#define SHIPFREECARGO(shipdata) SHIPTYPEFREECARGO(SHIPCLASS(shipdata))
 #define SHIPSAIL(shipdata) (shipdata)->mainsail
 #define SHIPWEAPONDAMAGED(ship, i) (ship->slot[i].val2 > 0)
 #define SHIPWEAPONDESTROYED(ship, i) (ship->slot[i].val2 >= 100)
+#define SHIPHDDC(shipdata) (SHIPTYPEHDDC(SHIPCLASS(shipdata)))
+#define SHIPACCEL(shipdata) (SHIPTYPESPGAIN(SHIPCLASS(shipdata)))
 
 //ID stuff
 #define SHIPID(shipdata) (shipdata)->id
@@ -460,12 +578,12 @@ extern const char *ship_symbol[NUM_SECT_TYPES];
 #define ISWARSHIP(shipdata) (SHIPTYPEKIND((shipdata)->m_class) == SHK_WARSHIP)
 
 //Cargo related stuff
-#define SHIPMAXCARGO(shipdata) SHIPTYPECARGO(SHIPCLASS(shipdata))
+#define SHIPMAXCARGO(shipdata) ((int)(SHIPTYPECARGO(SHIPCLASS(shipdata)) * shipdata->crew.get_maxcargo_mod()))
 #define SHIPMAXCONTRA(shipdata) SHIPTYPECONTRA(SHIPCLASS(shipdata))
 #define SHIPCARGO(shipdata) ((shipdata)->slot_weight(SLOT_CARGO) / 2)
 #define SHIPCONTRA(shipdata) ((shipdata)->slot_weight(SLOT_CONTRABAND) / 2)
-#define SHIPAVAILCARGOLOAD(shipdata) MIN( (SHIPMAXCARGO(shipdata) - (SHIPCARGO(shipdata) + SHIPCONTRA(shipdata))), (SHIPAVAILWEIGHT(shipdata) / 2) )
 #define SHIPCARGOLOAD(shipdata) (SHIPCARGO(shipdata) + SHIPCONTRA(shipdata))
+#define SHIPAVAILCARGOLOAD(shipdata) MIN( (SHIPMAXCARGO(shipdata) - SHIPCARGOLOAD(shipdata)), (SHIPAVAILWEIGHT(shipdata) / 2) )
 #define SHIPMAXCARGOLOAD(shipdata) (SHIPCARGOLOAD(shipdata) + SHIPAVAILCARGOLOAD(shipdata))
 
 
@@ -572,7 +690,9 @@ void do_world_cargo(P_char ch, char *arg);
 int getmap(P_ship ship);
 int getcontacts(P_ship ship, bool limit_range = true);
 
-void setcrew(P_ship ship, int crew_index, int skill);
+void change_crew(P_ship ship, int crew_index, bool skill_drop);
+void set_crew(P_ship ship, int crew_index, bool reset_skills = true);
+void set_chief(P_ship ship, int chief_index);
 void update_crew(P_ship ship);
 void reset_crew_stamina(P_ship ship);
 
@@ -596,6 +716,8 @@ int num_people_in_ship(P_ship ship);
 P_char captain_is_aboard(P_ship ship);
 float get_turning_speed(P_ship ship);
 float get_next_heading_change(P_ship ship);
+int get_acceleration(P_ship ship);
+int get_next_speed_change(P_ship ship);
 
 void act_to_all_in_ship_f(P_ship ship, const char *msg, ... );
 void act_to_all_in_ship(P_ship ship, const char *msg);

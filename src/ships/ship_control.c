@@ -683,30 +683,47 @@ int do_fire (P_char ch, P_ship ship, char* arg)
     }
     arg = skip_spaces(arg);
 
-    half_chop(arg, arg1, arg2);
-    if (isname(arg1, "pirate") && IS_TRUSTED(ch)) 
-    {
-        int lvl = 0;
-        if (is_number(arg2)) lvl = atoi(arg2);
-        if (try_load_npc_ship(ship, ch, NPC_AI_PIRATE, lvl))
-            return true;
-        else
+    
+    if (IS_TRUSTED(ch))
+    { // manual npc loading
+        half_chop(arg, arg1, arg2);
+        if (isname(arg1, "pirate")) 
         {
-            send_to_char("Failed to load pirate ship!\r\n", ch);
-            return true;
-        }
+            int lvl = 0;
+            if (is_number(arg2)) lvl = atoi(arg2);
+            if (try_load_npc_ship(ship, NPC_AI_PIRATE, lvl, ch))
+                return true;
+            else
+            {
+                send_to_char("Failed to load pirate ship!\r\n", ch);
+                return true;
+            }
 
-    }
-    if (isname(arg1, "hunter") && IS_TRUSTED(ch)) 
-    {
-        int lvl = 0;
-        if (is_number(arg2)) lvl = atoi(arg2);
-        if (try_load_npc_ship(ship, ch, NPC_AI_HUNTER, lvl))
-            return true;
-        else
+        }
+        if (isname(arg1, "hunter")) 
         {
-            send_to_char("Failed to load hunter ship!\r\n", ch);
-            return true;
+            int lvl = 0;
+            if (is_number(arg2)) lvl = atoi(arg2);
+            if (try_load_npc_ship(ship, NPC_AI_HUNTER, lvl, ch))
+                return true;
+            else
+            {
+                send_to_char("Failed to load hunter ship!\r\n", ch);
+                return true;
+            }
+        }
+        if (isname(arg1, "escort")) 
+        {
+            int lvl = 0;
+            if (is_number(arg2)) lvl = atoi(arg2);
+            if (try_load_npc_ship(ship, NPC_AI_ESCORT, lvl, ch))
+                return true;
+            else
+            {
+                send_to_char("Failed to load escort ship!\r\n", ch);
+                return true;
+            }
+
         }
     }
     
@@ -868,22 +885,35 @@ int look_cargo(P_char ch, P_ship ship)
 
 int look_crew (P_char ch, P_ship ship)
 {
-    send_to_char_f(ch, "&+L            Crew                  Skill  Stamina\r\n");
+    send_to_char_f(ch, "&+LCurrent crew: %s\r\n", ship_crew_data[ship->crew.index].name);
 
-    send_to_char_f(ch, "&+LSails     :&+W %-20s  %5d\r\n",
-        ship_crew_data[ship->sailcrew.index].name, 
-        ship->sailcrew.skill / 1000);
 
-    send_to_char_f(ch, "&+LGuns      :&+W %-20s  %5d  %d/%d\r\n",
-        ship_crew_data[ship->guncrew.index].name, 
-        ship->guncrew.skill / 1000,
-        ship->guncrew.stamina, ship->guncrew.max_stamina);
-    
-    send_to_char_f(ch, "&+LRepair    :&+W %-20s  %5d\r\n",
-        ship_crew_data[ship->repaircrew.index].name, 
-        ship->repaircrew.skill / 1000);
+    if (ship->crew.sail_chief != NO_CHIEF)
+        send_to_char_f(ch, "              %s\r\n", ship_chief_data[ship->crew.sail_chief].name);
+    if (ship->crew.guns_chief != NO_CHIEF)
+        send_to_char_f(ch, "              %s\r\n", ship_chief_data[ship->crew.guns_chief].name);
+    if (ship->crew.rpar_chief != NO_CHIEF)
+        send_to_char_f(ch, "              %s\r\n", ship_chief_data[ship->crew.rpar_chief].name);
 
-    // TODO: Oars
+    send_to_char_f(ch, "&+LDeck skill:   &+W%-5d&N", (int)ship->crew.sail_skill);
+    if (ship->crew.sail_mod() != 0)
+        send_to_char_f(ch, " &+W(%s%d)&N\r\n", (ship->crew.sail_mod() > 0) ? "+" : "", ship->crew.sail_mod());
+    else
+        send_to_char("\r\n", ch);
+
+    send_to_char_f(ch, "&+LGuns skill:   &+W%-5d&N", (int)ship->crew.guns_skill);
+    if (ship->crew.guns_mod() != 0)
+        send_to_char_f(ch, " &+W(%s%d)&N\r\n", (ship->crew.guns_mod() > 0) ? "+" : "", ship->crew.guns_mod());
+    else
+        send_to_char("\r\n", ch);
+
+    send_to_char_f(ch, "&+LRepair skill: &+W%-5d&N", (int)ship->crew.rpar_skill);
+    if (ship->crew.rpar_mod() != 0)
+        send_to_char_f(ch, " &+W(%s%d)&N\r\n", (ship->crew.rpar_mod() > 0) ? "+" : "", ship->crew.rpar_mod());
+    else
+        send_to_char("\r\n", ch);
+          
+    send_to_char_f(ch, "&+LStamina:      %s%d/&+G%d&N\r\n", ship->crew.get_stamina_prefix(), ship->crew.get_display_stamina(), (int)ship->crew.max_stamina);
 
     return TRUE;
 }
@@ -1194,15 +1224,16 @@ int look_ship(P_char ch, P_ship ship)
     send_to_char_f(ch, "&+LCaptain: &+W%-20s &+rFrags: &+W%-5d     &+LStatus: %-13s     &+LID[&+Y%s&+L]&N\r\n",
             SHIPOWNER(ship), ship->frags, get_ship_status(ship), SHIPID(ship));
     send_to_char_f(ch, "\r\n");
-    send_to_char_f(ch, "        %s%3d&N/&+G%-3d      &+LSpeed Range: &+W0-%-3d&+L            Sails: &+W%-20s&N\r\n",
+    send_to_char_f(ch, "        %s%3d&N/&+G%-3d      &+LSpeed Range: &+W0-%-3d      &+LCrew: &+W%-20s&N\r\n",
             SHIPARMORCOND(SHIPMAXFARMOR(ship), SHIPFARMOR(ship)),
             SHIPFARMOR(ship), SHIPMAXFARMOR(ship),
-            ship->get_maxspeed(), ship_crew_data[ship->sailcrew.index].name);
-    send_to_char_f(ch, "                          &+LWeight: &+W%3d,000   &+L        Guns: &+W%-20s&N\r\n",
-            SHIPHULLWEIGHT(ship), ship_crew_data[ship->guncrew.index].name);
-    send_to_char_f(ch, "           &+y||&N               &+LLoad: &+W%3d/&+W%3d&+L         Repair: &+W%-20s&N\r\n",
-            SHIPSLOTWEIGHT(ship), SHIPMAXWEIGHT(ship), ship_crew_data[ship->repaircrew.index].name);
-    send_to_char_f(ch, "          &+y/..\\&N        &+LPassengers: &+W%2d/%2d&N\r\n", num_people_in_ship(ship), ship->get_capacity());
+            ship->get_maxspeed(), ship_crew_data[ship->crew.index].name);
+    send_to_char_f(ch, "                          &+LWeight: &+W%3d,000          &+W%-20s&N\r\n",
+            SHIPHULLWEIGHT(ship), (ship->crew.sail_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.sail_chief].name);
+    send_to_char_f(ch, "           &+y||&N               &+LLoad: &+W%3d/&+W%3d&N          %-20s&N\r\n",
+            SHIPSLOTWEIGHT(ship), SHIPMAXWEIGHT(ship), (ship->crew.guns_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.guns_chief].name);
+    send_to_char_f(ch, "          &+y/..\\&N        &+LPassengers: &+W%2d/%2d&N            %-20s&N\r\n", 
+            num_people_in_ship(ship), ship->get_capacity(), (ship->crew.rpar_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.rpar_chief].name);
     send_to_char_f(ch, "         &+y/.%s%2d&+y.\\        &N\r\n", SHIPINTERNALCOND(SHIPMAXFINTERNAL(ship), SHIPFINTERNAL(ship)), SHIPFINTERNAL(ship));
     send_to_char(      "        &+y/..&N--&+y..\\        &+LNum  Name                 Position   Ammo   Status&N\r\n", ch);
     send_to_char_f(ch, "        &+y|..&+g%2d&+y..|        %s&N\r\n", SHIPMAXFINTERNAL(ship), generate_slot(ship, 0));
@@ -1229,7 +1260,7 @@ int look_ship(P_char ch, P_ship ship)
     send_to_char_f(ch, "        &+y|..&N--&+y..|        %s&N\r\n", generate_slot(ship, 15));
     send_to_char_f(ch, "        &+y|..&+g%2d&+y..|\r\n", SHIPMAXRINTERNAL(ship));
     send_to_char_f(ch, "        &+y\\______/    &NSet Heading: &+W%-3d  &NSet Speed: &+W%-4d&N  Crew Stamina: %s%d&N\r\n",
-            (int)ship->setheading, ship->setspeed, SHIPARMORCOND(ship->guncrew.max_stamina, ship->guncrew.stamina), ship->guncrew.stamina);
+            (int)ship->setheading, ship->setspeed, ship->crew.get_stamina_prefix(), ship->crew.get_display_stamina());
     send_to_char_f(ch, "                        &NHeading: &+W%-3d      &NSpeed: &+W%-4d&N  Repair Stock: &+W%d&N\r\n", 
             (int)ship->heading, ship->speed, ship->repair);
     send_to_char_f(ch, "        %s%3d&N/&+G%-3d&N\r\n", SHIPARMORCOND(SHIPMAXRARMOR(ship), SHIPRARMOR(ship)), SHIPRARMOR(ship), SHIPMAXRARMOR(ship));

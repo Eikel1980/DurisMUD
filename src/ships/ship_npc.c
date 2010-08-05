@@ -16,8 +16,6 @@
 #include "ship_npc.h"
 #include "ship_npc_ai.h"
 
-#define LOAD_RANGE 36
-
 extern int top_of_world;
 
 
@@ -102,9 +100,9 @@ void setup_npc_clipper_01(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 0, W_SMALL_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_SMALL_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(100, 150);
     load_npc_ship_crew(ship, 8, 0);
 }
@@ -113,9 +111,9 @@ void setup_npc_clipper_02(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 0, W_MEDIUM_BAL, SIDE_FORE);
     set_weapon(ship, 1, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(100, 150);
     load_npc_ship_crew(ship, 8, 0);
 }
@@ -125,9 +123,9 @@ void setup_npc_clipper_03(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 1, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 3, W_SMALL_BAL, SIDE_REAR);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(150, 200);
     load_npc_ship_crew(ship, 8, 0);
 }
@@ -136,9 +134,9 @@ void setup_npc_ketch_01(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 0, W_SMALL_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(150, 200);
     load_npc_ship_crew(ship, 9, 0);
 }
@@ -147,9 +145,9 @@ void setup_npc_ketch_02(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 0, W_SMALL_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(200, 250);
     load_npc_ship_crew(ship, 9, 0);
 }
@@ -157,9 +155,9 @@ void setup_npc_ketch_03(P_ship ship, NPC_AI_Type type) // level 0
 {
     set_weapon(ship, 0, W_SMALL_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_SMALL_CAT, SIDE_REAR);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(200, 250);
     load_npc_ship_crew(ship, 9, 0);
 }
@@ -169,9 +167,9 @@ void setup_npc_caravel_01(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 1, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 3, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(250, 300);
     load_npc_ship_crew(ship, 12, 0);
 }
@@ -180,9 +178,9 @@ void setup_npc_caravel_02(P_ship ship, NPC_AI_Type type) // level 0
     set_weapon(ship, 0, W_MEDIUM_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 200000);
-    setcrew(ship, gun_crew_list[0], 200000);
-    setcrew(ship, repair_crew_list[0], 200000);
+    ship->crew.sail_skill = 200;
+    ship->crew.guns_skill = 200;
+    ship->crew.rpar_skill = 200;
     ship->frags = number(250, 300);
     load_npc_ship_crew(ship, 12, 0);
 }
@@ -192,9 +190,9 @@ void setup_npc_caravel_03(P_ship ship, NPC_AI_Type type) // level 1
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[0], 600000);
-    setcrew(ship, gun_crew_list[0], 600000);
-    setcrew(ship, repair_crew_list[0], 600000);
+    ship->crew.sail_skill = 600;
+    ship->crew.guns_skill = 600;
+    ship->crew.rpar_skill = 600;
     ship->frags = number(400, 500);
     load_npc_ship_crew(ship, 12, 1);
 }
@@ -203,9 +201,9 @@ void setup_npc_corvette_01(P_ship ship, NPC_AI_Type type) // level 1
     set_weapon(ship, 0, W_SMALL_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 300000);
-    setcrew(ship, gun_crew_list[0], 300000);
-    setcrew(ship, repair_crew_list[0], 300000);
+    ship->crew.sail_skill = 300;
+    ship->crew.guns_skill = 300;
+    ship->crew.rpar_skill = 300;
     ship->frags = number(400, 500);
     load_npc_ship_crew(ship, 12, 1);
 }
@@ -214,9 +212,9 @@ void setup_npc_corvette_02(P_ship ship, NPC_AI_Type type) // level 1
     set_weapon(ship, 0, W_SMALL_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 300000);
-    setcrew(ship, gun_crew_list[0], 300000);
-    setcrew(ship, repair_crew_list[0], 300000);
+    ship->crew.sail_skill = 300;
+    ship->crew.guns_skill = 300;
+    ship->crew.rpar_skill = 300;
     ship->frags = number(400, 500);
     load_npc_ship_crew(ship, 12, 1);
 }
@@ -227,9 +225,9 @@ void setup_npc_corvette_03(P_ship ship, NPC_AI_Type type) // level 1
     set_weapon(ship, 2, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[0], 300000);
-    setcrew(ship, gun_crew_list[0], 300000);
-    setcrew(ship, repair_crew_list[0], 300000);
+    ship->crew.sail_skill = 300;
+    ship->crew.guns_skill = 300;
+    ship->crew.rpar_skill = 300;
     ship->frags = number(400, 500);
     load_npc_ship_crew(ship, 12, 1);
 }
@@ -242,9 +240,9 @@ void setup_npc_corvette_04(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 5, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 6, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[1], 800000);
-    setcrew(ship, gun_crew_list[2], 800000);
-    setcrew(ship, repair_crew_list[1], 800000);
+    ship->crew.sail_skill = 1200;
+    ship->crew.guns_skill = 1200;
+    ship->crew.rpar_skill = 1200;
     ship->frags = number(600, 700);
     load_npc_ship_crew(ship, 12, 2);
 }
@@ -253,9 +251,9 @@ void setup_npc_corvette_05(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 0, W_MEDIUM_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(600, 700);
     load_npc_ship_crew(ship, 12, 2);
 }    
@@ -266,9 +264,9 @@ void setup_npc_corvette_06(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 0, W_MEDIUM_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(600, 700);
     load_npc_ship_crew(ship, 12, 2);
 }
@@ -279,9 +277,9 @@ void setup_npc_corvette_07(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 1, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 3, W_MEDIUM_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 1800000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1800;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(700, 800);
     load_npc_ship_crew(ship, 12, 2);
 }
@@ -294,9 +292,9 @@ void setup_npc_corvette_08(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 3, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 5, W_SMALL_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(700, 800);
     load_npc_ship_crew(ship, 12, 2);
 }
@@ -307,9 +305,9 @@ void setup_npc_corvette_09(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_STAR);
     set_weapon(ship, 3, W_MINDBLAST, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 2500000);
-    setcrew(ship, gun_crew_list[3], 2500000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 2500;
+    ship->crew.guns_skill = 2500;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2000, 2200);
     load_npc_ship_crew(ship, 12, 2);
 }
@@ -320,9 +318,9 @@ void setup_npc_corvette_10(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_MINDBLAST, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 2500000);
-    setcrew(ship, gun_crew_list[3], 2500000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 2500;
+    ship->crew.guns_skill = 2500;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2000, 2200);
     load_npc_ship_crew(ship, 12, 2);
 }
@@ -333,9 +331,9 @@ void setup_npc_corvette_11(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_LARGE_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 2400000);
-    setcrew(ship, gun_crew_list[3], 2400000);
-    setcrew(ship, repair_crew_list[2], 2200000);
+    ship->crew.sail_skill = 2400;
+    ship->crew.guns_skill = 2400;
+    ship->crew.rpar_skill = 2200;
     ship->frags = number(2000, 2200);
     load_npc_ship_crew(ship, 12, 3);
 }
@@ -349,9 +347,9 @@ void setup_npc_destroyer_01(P_ship ship, NPC_AI_Type type) // level 1
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 5, W_SMALL_BAL, SIDE_PORT);
     set_weapon(ship, 6, W_SMALL_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[0], 400000);
-    setcrew(ship, gun_crew_list[0], 400000);
-    setcrew(ship, repair_crew_list[0], 400000);
+    ship->crew.sail_skill = 400;
+    ship->crew.guns_skill = 400;
+    ship->crew.rpar_skill = 400;
     ship->frags = number(600, 700);
     load_npc_ship_crew(ship, 15, 1);
 }
@@ -361,9 +359,9 @@ void setup_npc_destroyer_02(P_ship ship, NPC_AI_Type type) // level 1
     set_weapon(ship, 0, W_MEDIUM_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_STAR);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[1], 500000);
-    setcrew(ship, gun_crew_list[0], 500000);
-    setcrew(ship, repair_crew_list[0], 500000);
+    ship->crew.sail_skill = 500;
+    ship->crew.guns_skill = 500;
+    ship->crew.rpar_skill = 500;
     ship->frags = number(600, 700);
     load_npc_ship_crew(ship, 15, 1);
 }
@@ -375,9 +373,9 @@ void setup_npc_destroyer_03(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 4, W_MEDIUM_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(700, 900);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -387,9 +385,9 @@ void setup_npc_destroyer_04(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 1, W_MEDIUM_CAT, SIDE_FORE);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_LARGE_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(700, 900);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -402,9 +400,9 @@ void setup_npc_destroyer_05(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 5, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 6, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(800, 1000);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -417,9 +415,9 @@ void setup_npc_destroyer_06(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 3, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 4, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 5, W_MEDIUM_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(800, 1000);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -431,9 +429,9 @@ void setup_npc_destroyer_07(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 2, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 4, W_MEDIUM_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(800, 1000);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -444,9 +442,9 @@ void setup_npc_destroyer_08(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 1, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 3, W_MEDIUM_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(700, 900);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -459,9 +457,9 @@ void setup_npc_destroyer_09(P_ship ship, NPC_AI_Type type) // level 2
     set_weapon(ship, 3, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 5, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 1500000);
-    setcrew(ship, gun_crew_list[3], 1500000);
-    setcrew(ship, repair_crew_list[1], 1500000);
+    ship->crew.sail_skill = 1500;
+    ship->crew.guns_skill = 1500;
+    ship->crew.rpar_skill = 1500;
     ship->frags = number(800, 1000);
     load_npc_ship_crew(ship, 15, 2);
 }
@@ -474,9 +472,9 @@ void setup_npc_destroyer_10(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 3, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 4, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 5, W_MEDIUM_BAL, SIDE_PORT);
-    setcrew(ship, sail_crew_list[2], 2800000);
-    setcrew(ship, gun_crew_list[3], 2500000);
-    setcrew(ship, repair_crew_list[1], 2500000);
+    ship->crew.sail_skill = 2800;
+    ship->crew.guns_skill = 2500;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2200, 2500);
     load_npc_ship_crew(ship, 15, 3);
 }
@@ -488,9 +486,9 @@ void setup_npc_destroyer_11(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 2, W_LARGE_BAL, SIDE_STAR);
     set_weapon(ship, 3, W_LARGE_BAL, SIDE_STAR);
     set_weapon(ship, 4, W_LARGE_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 2800000);
-    setcrew(ship, gun_crew_list[3], 2500000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 2800;
+    ship->crew.guns_skill = 2500;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2200, 2500);
     load_npc_ship_crew(ship, 15, 3);
 }
@@ -504,9 +502,9 @@ void setup_npc_destroyer_12(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 4, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 5, W_SMALL_BAL, SIDE_STAR);
     set_weapon(ship, 6, W_SMALL_BAL, SIDE_STAR);
-    setcrew(ship, sail_crew_list[2], 2800000);
-    setcrew(ship, gun_crew_list[3], 2500000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 2800;
+    ship->crew.guns_skill = 2500;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2200, 2500);
     load_npc_ship_crew(ship, 15, 3);
 }
@@ -520,9 +518,9 @@ void setup_npc_destroyer_13(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 4, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 5, W_MEDIUM_BAL, SIDE_STAR);
     set_weapon(ship, 6, W_MINDBLAST, SIDE_REAR);
-    setcrew(ship, sail_crew_list[2], 2800000);
-    setcrew(ship, gun_crew_list[3], 2500000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 2800;
+    ship->crew.guns_skill = 2500;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2200, 2500);
     load_npc_ship_crew(ship, 15, 3);
 }
@@ -536,9 +534,9 @@ void setup_npc_frigate_01(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 4, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 5, W_LARGE_BAL, SIDE_PORT);
     set_weapon(ship, 6, W_SMALL_CAT, SIDE_REAR);
-    setcrew(ship, sail_crew_list[2], 4000000);
-    setcrew(ship, gun_crew_list[3], 3000000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 4000;
+    ship->crew.guns_skill = 3000;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2500, 3000);
     load_npc_ship_crew(ship, 18, 3);
 }
@@ -554,9 +552,9 @@ void setup_npc_frigate_02(P_ship ship, NPC_AI_Type type) // level 3
     set_weapon(ship, 6, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 7, W_MEDIUM_BAL, SIDE_PORT);
     set_weapon(ship, 8, W_MINDBLAST, SIDE_REAR);
-    setcrew(ship, sail_crew_list[2], 4000000);
-    setcrew(ship, gun_crew_list[3], 3000000);
-    setcrew(ship, repair_crew_list[2], 2500000);
+    ship->crew.sail_skill = 4000;
+    ship->crew.guns_skill = 3000;
+    ship->crew.rpar_skill = 2500;
     ship->frags = number(2500, 3000);
     load_npc_ship_crew(ship, 18, 3);
 }
@@ -579,9 +577,9 @@ void setup_npc_dreadnought_01(P_ship ship, NPC_AI_Type type) // level 4
     set_weapon(ship,13, W_MINDBLAST, SIDE_REAR);
     set_weapon(ship,14, W_SMALL_CAT, SIDE_REAR);
     set_weapon(ship,15, W_SMALL_CAT, SIDE_REAR);
-    setcrew(ship, sail_crew_list[3], 10000000);
-    setcrew(ship, gun_crew_list[4], 10000000);
-    setcrew(ship, repair_crew_list[2], 10000000);
+    ship->crew.sail_skill = 10000;
+    ship->crew.guns_skill = 10000;
+    ship->crew.rpar_skill = 10000;
     ship->frags = number(3000, 4000);
     load_npc_ship_crew(ship, 20, 4);
 }
@@ -604,9 +602,9 @@ void setup_npc_dreadnought_02(P_ship ship, NPC_AI_Type type) // level 4
     set_weapon(ship,13, W_SMALL_CAT, SIDE_REAR);
     set_weapon(ship,14, W_SMALL_CAT, SIDE_REAR);
     set_weapon(ship,15, W_SMALL_CAT, SIDE_REAR);
-    setcrew(ship, sail_crew_list[3], 10000000);
-    setcrew(ship, gun_crew_list[4], 10000000);
-    setcrew(ship, repair_crew_list[2], 10000000);
+    ship->crew.sail_skill = 10000;
+    ship->crew.guns_skill = 10000;
+    ship->crew.rpar_skill = 10000;
     ship->frags = number(3000, 4000);
     load_npc_ship_crew(ship, 20, 4);
 }
@@ -628,59 +626,12 @@ void setup_npc_dreadnought_03(P_ship ship, NPC_AI_Type type) // level 4
     set_weapon(ship,13, W_MINDBLAST, SIDE_REAR);
     set_weapon(ship,14, W_SMALL_CAT, SIDE_REAR);
     set_weapon(ship,15, W_SMALL_CAT, SIDE_REAR);
-    setcrew(ship, sail_crew_list[3], 10000000);
-    setcrew(ship, gun_crew_list[4], 10000000);
-    setcrew(ship, repair_crew_list[2], 10000000);
+    ship->crew.sail_skill = 10000;
+    ship->crew.guns_skill = 10000;
+    ship->crew.rpar_skill = 10000;
     ship->frags = number(3000, 4000);
     load_npc_ship_crew(ship, 20, 4);
 }
-
-/*void setup_npc_dreadnought_01(P_ship ship, NPC_AI_Type type) // level 4
-{
-    set_weapon(ship, 0, W_LONGTOM, SIDE_FORE);
-    set_weapon(ship, 1, W_FRAG_CAN, SIDE_FORE);
-    set_weapon(ship, 2, W_LARGE_CAT, SIDE_FORE);
-    set_weapon(ship, 3, W_HEAVY_BAL, SIDE_STAR);
-    set_weapon(ship, 4, W_HEAVY_BAL, SIDE_STAR);
-    set_weapon(ship, 5, W_HEAVY_BAL, SIDE_STAR);
-    set_weapon(ship, 6, W_HEAVY_BAL, SIDE_STAR);
-    set_weapon(ship, 7, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship, 8, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship, 9, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,10, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,11, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,12, W_SMALL_CAT, SIDE_REAR);
-    set_weapon(ship,13, W_SMALL_CAT, SIDE_REAR);
-    setcrew(ship, sail_crew_list[3], 10000000);
-    setcrew(ship, gun_crew_list[4], 10000000);
-    setcrew(ship, repair_crew_list[2], 10000000);
-    ship->frags = number(3000, 4000);
-    load_npc_ship_crew(ship, 20, 4);
-}
-
-void setup_npc_dreadnought_02(P_ship ship, NPC_AI_Type type) // level 4
-{
-    set_weapon(ship, 0, W_LONGTOM, SIDE_FORE);
-    set_weapon(ship, 1, W_LARGE_CAT, SIDE_FORE);
-    set_weapon(ship, 2, W_LARGE_CAT, SIDE_FORE);
-    set_weapon(ship, 3, W_LARGE_BAL, SIDE_STAR);
-    set_weapon(ship, 4, W_LARGE_BAL, SIDE_STAR);
-    set_weapon(ship, 5, W_LARGE_BAL, SIDE_STAR);
-    set_weapon(ship, 6, W_LARGE_BAL, SIDE_STAR);
-    set_weapon(ship, 7, W_LARGE_BAL, SIDE_STAR);
-    set_weapon(ship, 8, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship, 9, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,10, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,11, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,12, W_LARGE_BAL, SIDE_PORT);
-    set_weapon(ship,13, W_MINDBLAST, SIDE_REAR);
-    setcrew(ship, sail_crew_list[3], 10000000);
-    setcrew(ship, gun_crew_list[4], 10000000);
-    setcrew(ship, repair_crew_list[2], 10000000);
-    ship->frags = number(3000, 4000);
-    load_npc_ship_crew(ship, 20, 4);
-}*/
-
 
 NPCShipSetup npcShipSetup [] = {
     { SH_CLIPPER,     0, &setup_npc_clipper_01 },
@@ -730,64 +681,6 @@ NPCShipSetup npcShipSetup [] = {
 //////////////////////
 
 P_char dbg_char = 0;
-P_ship load_npc_ship(int level, NPC_AI_Type type, int speed, int m_class, int room, P_char ch)
-{
-    int num = number(0, sizeof(npcShipSetup) / sizeof(NPCShipSetup) - 1);
-
-    int i = 0, ii = 0;
-    while (true)
-    {
-        if ((npcShipSetup[i].m_class == m_class || m_class == -1) && (SHIPTYPESPEED(npcShipSetup[i].m_class) >= speed || speed == -1) && npcShipSetup[i].level == level)
-        {
-            if (ii == num)
-                break;
-            ii++;
-        }
-        i++;
-        if (i == sizeof(npcShipSetup) / sizeof(NPCShipSetup))
-        {
-            if (ii == 0)
-                return 0; // there is no such ship setup in list
-            i = 0;
-        }
-    }
-    
-    dbg_char = ch;
-
-    P_ship ship = new_ship(npcShipSetup[i].m_class, true);
-    if (!ship)
-    {
-        if (ch) send_to_char("Couldn't create npc ship!\r\n", ch);
-        return false;
-    }
-    if (!ship->panel) 
-    {
-        if (ch) send_to_char("No panel!\r\n", ch);
-        return false;
-    }
-
-    ship->race = NPCSHIP;
-    ship->npc_ai = new NPCShipAI(ship, ch);
-    ship->npc_ai->type = type;
-    ship->ownername = 0;
-    ship->anchor = world[room].number;
-
-    int name_index = number(0, sizeof(pirateShipNames)/sizeof(char*) - 1);
-    name_ship(pirateShipNames[name_index], ship);
-    assignid(ship, NULL, true);
-
-    npcShipSetup[i].setup(ship, type);
-    
-    if (!load_ship(ship, room))
-    {
-        if (ch) send_to_char("Couldnt load npc ship!\r\n", ch);
-        return false;
-    }
-    
-    REMOVE_BIT(ship->flags, DOCKED);
-    return ship;
-}
-
 P_ship try_load_npc_ship(P_ship target)
 {
     if (ISNPCSHIP(target))
@@ -835,7 +728,7 @@ P_ship try_load_npc_ship(P_ship target)
         }
     }
 
-    P_ship ship = try_load_npc_ship(target, 0, type, level);
+    P_ship ship = try_load_npc_ship(target, type, level, 0);
 
     if (ship)
     {
@@ -845,16 +738,19 @@ P_ship try_load_npc_ship(P_ship target)
     return ship;
 }
 
-P_ship try_load_npc_ship(P_ship target, P_char ch, NPC_AI_Type type, int level)
+P_ship try_load_npc_ship(P_ship target, NPC_AI_Type type, int level, P_char ch)
 {
     getmap(target);
 
     float dir = target->heading + number(-45, 45);
     normalize_direction(dir);
 
+    int load_range = 0;
+    if (type == NPC_AI_PIRATE || type == NPC_AI_HUNTER)
+        load_range = 45;
     float rad = dir * M_PI / 180.000;
-    float ship_x = 50 + sin(rad) * LOAD_RANGE;
-    float ship_y = 50 + cos(rad) * LOAD_RANGE;
+    float ship_x = 50 + sin(rad) * load_range;
+    float ship_y = 50 + cos(rad) * load_range;
 
     int location = tactical_map[(int) ship_x][100 - (int) ship_y].rroom;
 
@@ -862,7 +758,7 @@ P_ship try_load_npc_ship(P_ship target, P_char ch, NPC_AI_Type type, int level)
     //sprintf(ttt, "Location: x=%d, y=%d, loc=%d, sect=%d\r\n", (int)ship_x, (int)ship_y, location, world[location].sector_type);
     //if (ch) send_to_char(ttt, ch);
 
-    P_ship ship = try_load_npc_ship(location, target, ch, type, level);
+    P_ship ship = try_load_npc_ship(target, type, level, location, ch);
     if (!ship) 
         return 0;
 
@@ -871,10 +767,19 @@ P_ship try_load_npc_ship(P_ship target, P_char ch, NPC_AI_Type type, int level)
         ship->npc_ai->advanced = 1;
     if (level == 2 && number(1, 2) == 1)
         ship->npc_ai->advanced = 1;
-    if (level == 3)
+    if (level >= 3)
         ship->npc_ai->advanced = 1;
 
-    ship->target = target;
+    if (type == NPC_AI_PIRATE || type == NPC_AI_HUNTER)
+    {
+        ship->target = target;
+        ship->npc_ai->mode = NPC_AI_ENGAGING;
+    }
+    if (type == NPC_AI_ESCORT)
+    {
+        ship->npc_ai->escort = target;
+        ship->npc_ai->mode = NPC_AI_CRUISING;
+    }
     float ship_heading = dir + 180;
     normalize_direction(ship_heading);
     ship->setheading = ship_heading;
@@ -883,10 +788,12 @@ P_ship try_load_npc_ship(P_ship target, P_char ch, NPC_AI_Type type, int level)
     ship->setspeed = ship_speed;
     ship->speed = ship_speed;
 
+    if (ch) send_to_char_f(ch, "Loaded level %d %s%s hull %d with %s AI at room %d.\r\n", level, type == NPC_AI_PIRATE ? "pirate" : "", type == NPC_AI_HUNTER ? "hunter" : "", ship->m_class, ship->npc_ai->advanced == 1 ? "advanced" : "basic", location);
+
     return ship;
 }
 
-P_ship try_load_npc_ship(int location, P_ship target, P_char ch, NPC_AI_Type type, int level)
+P_ship try_load_npc_ship(P_ship target, NPC_AI_Type type, int level, int location, P_char ch)
 {
     if (world[location].sector_type != SECT_OCEAN)
     {
@@ -907,6 +814,66 @@ P_ship try_load_npc_ship(int location, P_ship target, P_char ch, NPC_AI_Type typ
     ship->npc_ai->mode = NPC_AI_CRUISING;
     return ship;
 }
+
+P_ship load_npc_ship(int level, NPC_AI_Type type, int speed, int m_class, int room, P_char ch)
+{
+    int num = number(0, sizeof(npcShipSetup) / sizeof(NPCShipSetup) - 1);
+
+    int i = 0, ii = 0;
+    while (true)
+    {
+        if ((npcShipSetup[i].m_class == m_class || m_class == -1) && (SHIPTYPESPEED(npcShipSetup[i].m_class) >= speed || speed == -1) && npcShipSetup[i].level == level)
+        {
+            if (ii == num)
+                break;
+            ii++;
+        }
+        i++;
+        if (i == sizeof(npcShipSetup) / sizeof(NPCShipSetup))
+        {
+            if (ii == 0)
+                return 0; // there is no such ship setup in list
+            i = 0;
+        }
+    }
+    
+    dbg_char = ch;
+
+    P_ship ship = new_ship(npcShipSetup[i].m_class, true);
+    if (!ship)
+    {
+        if (ch) send_to_char("Couldn't create npc ship!\r\n", ch);
+        return false;
+    }
+    if (!ship->panel) 
+    {
+        if (ch) send_to_char("No panel!\r\n", ch);
+        return false;
+    }
+
+    ship->race = NPCSHIP;
+    ship->npc_ai = new NPCShipAI(ship, ch);
+    ship->npc_ai->type = type;
+    ship->ownername = 0;
+    ship->anchor = world[room].number;
+
+    int name_index = number(0, sizeof(pirateShipNames)/sizeof(char*) - 1);
+    name_ship(pirateShipNames[name_index], ship);
+    assignid(ship, NULL, true);
+
+    npcShipSetup[i].setup(ship, type);
+    set_crew(ship, ship->npc_ai->crew_data->ship_crew_index, false);
+    
+    if (!load_ship(ship, room))
+    {
+        if (ch) send_to_char("Couldnt load npc ship!\r\n", ch);
+        return false;
+    }
+    
+    REMOVE_BIT(ship->flags, DOCKED);
+    return ship;
+}
+
 
 bool try_unload_npc_ship(P_ship ship)
 {
@@ -929,8 +896,7 @@ bool load_npc_dreadnought()
         int room = number (0, top_of_world);
         if (!IS_MAP_ROOM(room) || world[room].sector_type != SECT_OCEAN)
             continue;
-        if ((npc_dreadnought = try_load_npc_ship(room, 0, 0, NPC_AI_HUNTER, 4)) != 0)
-        //if ((npc_dreadnought = try_load_npc_ship(room, 0, 0, NPC_AI_HUNTER, 4)) != 0)
+        if ((npc_dreadnought = try_load_npc_ship(0, NPC_AI_HUNTER, 4, room, 0)) != 0)
         {
             int name_index = number(0, sizeof(dreadnoughtShipNames)/sizeof(char*) - 1);
             name_ship(dreadnoughtShipNames[name_index], npc_dreadnought);
@@ -957,7 +923,8 @@ NPCShipCrewData npcShipCrewData[] =
       { 40226, 40230, 0, 0, 0, 0, 0, 0, 0, 0},
       { 40228, 40229, 0, 0, 0, 0, 0, 0, 0, 0 },
       40215,
-      40220
+      40220,
+      2
   },
   {
       1,
@@ -967,7 +934,8 @@ NPCShipCrewData npcShipCrewData[] =
       { 40237, 40241, 0, 0, 0, 0, 0, 0, 0, 0 },
       { 40239, 40240, 0, 0, 0, 0, 0, 0, 0, 0 },
       40216,
-      40221
+      40221,
+      3
   },
   {
       2,
@@ -977,7 +945,8 @@ NPCShipCrewData npcShipCrewData[] =
       { 40248, 40252, 0, 0, 0, 0, 0, 0, 0, 0 },
       { 40250, 40251, 0, 0, 0, 0, 0, 0, 0, 0 },
       40217,
-      40222
+      40222,
+      4
   },
   {
       3,
@@ -987,7 +956,8 @@ NPCShipCrewData npcShipCrewData[] =
       { 40259, 40263, 0, 0, 0, 0, 0, 0, 0, 0 },
       { 40261, 40262, 0, 0, 0, 0, 0, 0, 0, 0 },
       40218,
-      40223
+      40223,
+      5
   },
   {
       4,
@@ -997,7 +967,8 @@ NPCShipCrewData npcShipCrewData[] =
       { 40273, 40274, 0, 0, 0, 0, 0, 0, 0, 0 },
       { 40270, 40271, 0, 0, 0, 0, 0, 0, 0, 0 },
       40219,
-      40224
+      40224,
+      6
   }
 };
 

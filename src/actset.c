@@ -748,9 +748,12 @@ static void setbit_ship(P_char ch, char *name, char *flag, char *val,
     {"capacity", NULL, NULL, ac_intCopy},
     {"air", NULL, NULL, ac_intCopy},
     {"crew", NULL, NULL, ac_intCopy},
+    {"chief", NULL, NULL, ac_intCopy},
+    {"clearchiefs", NULL, NULL, ac_intCopy},
     {"sailskill", NULL, NULL, ac_intCopy},
     {"gunskill", NULL, NULL, ac_intCopy},
     {"repairskill", NULL, NULL, ac_intCopy},
+    {"stamina", NULL, NULL, ac_intCopy},
   };
     
 
@@ -765,15 +768,6 @@ static void setbit_ship(P_char ch, char *name, char *flag, char *val,
       send_to_char("No ship by that name here.\r\n", ch);
       return;
   }
-  /*if (SAME_STRING(flag, "frags"))
-  {
-      int new_frags = atoi(val);
-      if (new_frags < ship->frags)
-          ship_loose_frags(ship, ship->frags - new_frags);
-      else if (new_frags > ship->frags)
-          ship_gain_frags(ship, new_frags - ship->frags);
-      return;
-  }*/
   if (SAME_STRING(flag, "air"))
   {
       if (IS_SET(ship->flags, AIR))
@@ -785,25 +779,39 @@ static void setbit_ship(P_char ch, char *name, char *flag, char *val,
   }
   if (SAME_STRING(flag, "crew"))
   {
-      setcrew(ship, atoi(val), 0);
+      set_crew(ship, atoi(val), true);
+      update_ship_status(ship);
+      return;
+  }
+  if (SAME_STRING(flag, "chief"))
+  {
+      set_chief(ship, atoi(val));
+      update_ship_status(ship);
+      return;
+  }
+  if (SAME_STRING(flag, "clearchiefs"))
+  {
+      ship->crew.sail_chief = NO_CHIEF;
+      ship->crew.guns_chief = NO_CHIEF;
+      ship->crew.rpar_chief = NO_CHIEF;
       update_ship_status(ship);
       return;
   }
   if (SAME_STRING(flag, "sailskill"))
   {
-      setcrew(ship, ship->sailcrew.index, atoi(val) * 1000);
+      ship->crew.sail_skill = atoi(val);
       update_ship_status(ship);
       return;
   }
   if (SAME_STRING(flag, "gunskill"))
   {
-      setcrew(ship, ship->guncrew.index, atoi(val) * 1000);
+      ship->crew.guns_skill = atoi(val);
       update_ship_status(ship);
       return;
   }
   if (SAME_STRING(flag, "repairskill"))
   {
-      setcrew(ship, ship->repaircrew.index, atoi(val) * 1000);
+      ship->crew.rpar_skill = atoi(val);
       update_ship_status(ship);
       return;
   }
@@ -815,6 +823,11 @@ static void setbit_ship(P_char ch, char *name, char *flag, char *val,
   if (SAME_STRING(flag, "maxspeed"))
   {
       ship->maxspeed_bonus += (atoi(val) - ship->get_maxspeed());
+      return;
+  }
+  if (SAME_STRING(flag, "stamina"))
+  {
+      ship->crew.stamina = atoi(val);
       return;
   }
 

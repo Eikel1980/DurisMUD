@@ -341,9 +341,10 @@ float get_turning_speed(P_ship ship)
     if (SHIPIMMOBILE(ship))
         return 1;
 
-    float tspeed = (float)SHIPTYPEHDDC(SHIPCLASS(ship));
+    float tspeed = (float)SHIPHDDC(ship);
     tspeed *= 0.75 + 0.25 * (float)(ship->speed - BOARDING_SPEED) / (float)(SHIPTYPESPEED(SHIPCLASS(ship)) - BOARDING_SPEED); // only 3/4 turn at boarding speed, even less if slower
-    tspeed *= (1.0 + ship->sailcrew.skill_mod);
+    tspeed *= (1.0 + ship->crew.sail_mod_applied);
+    tspeed *= ship->crew.get_stamina_mod();
     return tspeed;
 }
 
@@ -365,7 +366,35 @@ float get_next_heading_change(P_ship ship)
       change = MIN(diff, hdspeed);
     else
       change = MAX(diff, -hdspeed);
+
     return change;
+}
+
+int get_acceleration(P_ship ship)
+{
+    float accel = SHIPACCEL(ship);
+    accel *= (1.0 + ship->crew.sail_mod_applied);
+    accel *= ship->crew.get_stamina_mod();
+    return (int)accel;
+}
+int get_next_speed_change(P_ship ship)
+{
+    int accel = get_acceleration(ship);
+    if (ship->setspeed > ship->speed) 
+    {
+        if (ship->speed + accel <= ship->setspeed)
+            return accel;
+        else 
+            return ship->setspeed - ship->speed;
+    }
+    if (ship->setspeed < ship->speed) 
+    {
+        if (ship->speed - accel >= ship->setspeed)
+            return -accel;
+        else 
+            return ship->setspeed - ship->speed;
+    }
+    return 0;
 }
 
 void update_maxspeed(P_ship ship)
@@ -377,10 +406,11 @@ void update_maxspeed(P_ship ship)
 
     float weight_mod = 1.0 - ( (float) (SHIPSLOTWEIGHT(ship) - weapon_weight_mod - cargo_weight_mod) / (float) SHIPMAXWEIGHT(ship) );
 
-    ship->maxspeed = SHIPTYPESPEED(ship->m_class);
-    ship->maxspeed = (int)((float)ship->maxspeed * (1.0 + ship->sailcrew.skill_mod));
+    int maxspeed = SHIPTYPESPEED(ship->m_class) + ship->crew.get_maxspeed_mod();
+    ship->maxspeed = maxspeed;
+    ship->maxspeed = (int)((float)ship->maxspeed * (1.0 + ship->crew.sail_mod_applied));
     ship->maxspeed = (int) ((float)ship->maxspeed * weight_mod);
-    ship->maxspeed = BOUNDED(1, ship->maxspeed, SHIPTYPESPEED(ship->m_class));
+    ship->maxspeed = BOUNDED(1, ship->maxspeed, maxspeed);
     ship->maxspeed = (int) ((float)ship->maxspeed * (float)ship->mainsail / (float)SHIPMAXSAIL(ship)); // Adjust for sail condition
 }
 
@@ -571,7 +601,7 @@ int getcontacts(P_ship ship, bool limit_range)
             if (obj != ship->shipobj)
             {
               temp = shipObjHash.find(obj);
-              if (!limit_range || range(ship->x, ship->y, ship->z, j, 100 - i, temp->z) <= 35)
+              if (!limit_range || range(ship->x, ship->y, ship->z, j, 100 - i, temp->z) <= (float)(35 + ship->crew.get_contact_range_mod()))
               {
                 setcontact(counter, temp, ship, j, 100 - i);
                 counter++;
@@ -817,12 +847,231 @@ void ShipSlot::clone(const ShipSlot& other)
     val4 = other.val4;
 }
 
-void ShipCrew::replace_members(float percent)
+bool ShipCrewData::hire_room(int room) const
 {
-    skill = ship_crew_data[index].min_skill + (int)( (float)(skill - ship_crew_data[index].min_skill) * (100.0 - percent) / 100.0);
+    for (int i = 0; i < 5; i++)
+        if (hire_rooms[i] == room)
+            return true;
+    return false;
 }
 
-void setcrew(P_ship ship, int crew_index, int skill)
+const char* ShipCrewData::get_next_bonus(int& cur) const
+{
+    for (cur++; cur < 32; cur++)
+    {
+        ulong flag = 1 << cur;
+        if (IS_SET(flags, flag))
+        {
+            return get_bonus_string(flag);
+        }
+    }
+    cur = -1;
+    return NULL;
+}
+
+const char* ShipCrewData::get_bonus_string(ulong flag) const
+{
+    if (flag == CF_SCOUT_RANGE_1)
+        return "Scout Range +1";
+    if (flag == CF_SCOUT_RANGE_2)
+        return "Scout Range +2";
+    if (flag == CF_MAXSPEED_1)
+        return "Maximum Speed +1";
+    if (flag == CF_MAXSPEED_2)
+        return "Maximum Speed +2";
+    if (flag == CF_MAXCARGO_10)
+        return "Cargo Load +10%";
+    if (flag == CF_HULL_REPAIR_2)
+        return "Hull Repair x2";
+    if (flag == CF_HULL_REPAIR_3)
+        return "Hull Repair x3";
+    if (flag == CF_WEAPONS_REPAIR_2)
+        return "Weapons Repair x2";
+    if (flag == CF_WEAPONS_REPAIR_3)
+        return "Weapons Repair x3";
+    if (flag == CF_SAIL_REPAIR_2)
+        return "Sail Repair x2";
+    if (flag == CF_SAIL_REPAIR_3)
+        return "Sail Repair x3";
+    
+    return "Unknown";
+}
+
+bool ShipChiefData::hire_room(int room) const
+{
+    for (int i = 0; i < 5; i++)
+        if (hire_rooms[i] == room)
+            return true;
+    return false;
+}
+
+const char* ShipChiefData::get_spec() const
+{
+    switch (type)
+    {
+    case SAIL_CHIEF: return "Deck";
+    case GUNS_CHIEF: return "Guns";
+    case RPAR_CHIEF: return "Maintenance";
+    };
+    return "";
+}
+
+
+
+void ShipCrew::replace_members(float percent)
+{
+    sail_skill = (float)ship_crew_data[index].base_sail_skill + (sail_skill - (float)ship_crew_data[index].base_sail_skill) * (100.0 - percent) / 100.0;
+    guns_skill = (float)ship_crew_data[index].base_guns_skill + (guns_skill - (float)ship_crew_data[index].base_guns_skill) * (100.0 - percent) / 100.0;
+    rpar_skill = (float)ship_crew_data[index].base_rpar_skill + (rpar_skill - (float)ship_crew_data[index].base_rpar_skill) * (100.0 - percent) / 100.0;
+}
+
+float ShipCrew::get_stamina_mod()
+{
+    if (stamina > 0) return 1.0;
+    return 1.0 / (1.0 + (-stamina) / max_stamina / 3.0);
+}
+const char* ShipCrew::get_stamina_prefix()
+{
+    if (stamina > 0) return "&+G";
+    if (stamina > - max_stamina) return "&+Y";
+    return "&+R";
+}
+int ShipCrew::get_display_stamina()
+{
+    if (stamina > 0) return (int)stamina;
+    return (int) -sqrt(-stamina);
+}
+
+void ShipCrew::sail_skill_raise(float raise)
+{
+    skill_raise(raise, sail_skill, sail_chief);
+}
+void ShipCrew::guns_skill_raise(float raise)
+{
+    skill_raise(raise, guns_skill, guns_chief);
+}
+void ShipCrew::rpar_skill_raise(float raise)
+{
+    skill_raise(raise, rpar_skill, rpar_chief);
+}
+
+void ShipCrew::skill_raise(float raise, float& skill, int chief)
+{
+    raise *= 1.0 + (float)ship_chief_data[chief].skill_gain_bonus / 100;
+    if (skill < ship_chief_data[chief].min_skill)
+    {
+        skill += raise * 4;
+        if (skill > ship_chief_data[chief].min_skill)
+        {
+            raise = (skill - ship_chief_data[chief].min_skill) / 4;
+            skill = ship_chief_data[chief].min_skill;
+        }
+        else
+            raise = 0;
+    }
+    skill += raise;
+}
+
+
+void ShipCrew::reduce_stamina(float val, P_ship ship)
+{
+    stamina -= val;
+    //act_to_all_in_ship_f(ship, "stamina: -%f", val);
+}
+
+int ShipCrew::sail_mod()
+{
+    return ship_crew_data[index].level + ship_crew_data[index].sail_mod + ship_chief_data[sail_chief].skill_mod;
+}
+
+int ShipCrew::guns_mod()
+{
+    return ship_crew_data[index].level + ship_crew_data[index].guns_mod + ship_chief_data[guns_chief].skill_mod;
+}
+
+int ShipCrew::rpar_mod()
+{
+    return ship_crew_data[index].level + ship_crew_data[index].rpar_mod + ship_chief_data[rpar_chief].skill_mod;
+}
+
+void ShipCrew::update()
+{
+    sail_skill = MAX((float)ship_crew_data[index].base_sail_skill, sail_skill);
+    guns_skill = MAX((float)ship_crew_data[index].base_guns_skill, guns_skill);
+    rpar_skill = MAX((float)ship_crew_data[index].base_rpar_skill, rpar_skill);
+    max_stamina = ship_crew_data[index].base_stamina;
+    //TODO max_stamina = (int)((float)ship_crew_data[index].base_stamina * (1.0 + sqrt((float)(skill - ship_crew_data[index].min_skill) / 1000.0) / 300.0) );
+    if (stamina > max_stamina) stamina = max_stamina;
+    
+    sail_mod_applied = sqrt((float)sail_skill) / 130.0 + (float)sail_mod() * 0.04;
+    guns_mod_applied = sqrt((float)guns_skill) / 130.0 + (float)guns_mod() * 0.04;
+    rpar_mod_applied = sqrt((float)rpar_skill) / 130.0 + (float)rpar_mod() * 0.04;
+}
+
+void ShipCrew::reset_stamina() 
+{ 
+    stamina = max_stamina; 
+}
+
+int ShipCrew::get_contact_range_mod() const
+{
+    if (IS_SET(ship_crew_data[index].flags, CF_SCOUT_RANGE_2))
+        return 2;
+    if (IS_SET(ship_crew_data[index].flags, CF_SCOUT_RANGE_1))
+        return 1;
+    return 0;
+}
+int ShipCrew::get_sail_repair_mod() const
+{
+    if (IS_SET(ship_crew_data[index].flags, CF_SAIL_REPAIR_3))
+        return 3;
+    if (IS_SET(ship_crew_data[index].flags, CF_SAIL_REPAIR_2))
+        return 2;
+    return 1; // TODO
+}
+int ShipCrew::get_weapon_repair_mod() const
+{
+    if (IS_SET(ship_crew_data[index].flags, CF_WEAPONS_REPAIR_3))
+        return 3;
+    if (IS_SET(ship_crew_data[index].flags, CF_WEAPONS_REPAIR_2))
+        return 2;
+    return 1; // TODO
+}
+int ShipCrew::get_hull_repair_mod() const
+{
+    if (IS_SET(ship_crew_data[index].flags, CF_HULL_REPAIR_3))
+        return 3;
+    if (IS_SET(ship_crew_data[index].flags, CF_HULL_REPAIR_2))
+        return 2;
+    return 1; // TODO
+}
+int ShipCrew::get_maxspeed_mod() const
+{
+    if (IS_SET(ship_crew_data[index].flags, CF_MAXSPEED_2))
+        return 2;
+    if (IS_SET(ship_crew_data[index].flags, CF_MAXSPEED_1))
+        return 1;
+    return 0; // TODO
+}
+float ShipCrew::get_maxcargo_mod() const
+{
+    if (IS_SET(ship_crew_data[index].flags, CF_MAXCARGO_10))
+        return 1.1;
+    return 1.0; // TODO
+}
+
+
+void update_crew(P_ship ship)
+{
+    ship->crew.update();
+}
+
+void reset_crew_stamina(P_ship ship)
+{
+    ship->crew.reset_stamina();
+}
+
+void change_crew(P_ship ship, int crew_index, bool skill_drop)
 {
     if (crew_index < 0 || crew_index > MAXCREWS)
         return;
@@ -830,89 +1079,58 @@ void setcrew(P_ship ship, int crew_index, int skill)
     if (ship == NULL)
         return;
 
-    switch (ship_crew_data[crew_index].type)
+    if (skill_drop)
     {
-    case SAIL_CREW:
-      {
-        ship->sailcrew.index = crew_index;
-        ship->sailcrew.skill = skill;
-        ship->sailcrew.update();
-        ship->sailcrew.reset_stamina();
-      }
-      break;
+        ship->crew.sail_skill -= ship->crew.sail_skill * ((float)number (20, 100) / 2000);
+        ship->crew.guns_skill -= ship->crew.guns_skill * ((float)number (20, 100) / 2000);
+        ship->crew.rpar_skill -= ship->crew.rpar_skill * ((float)number (20, 100) / 2000);
+    }
 
-    case GUN_CREW:
-      {
-        ship->guncrew.index = crew_index;
-        ship->guncrew.skill = skill;
-        ship->guncrew.update();
-        ship->guncrew.reset_stamina();
-      }
-      break;
-
-    case REPAIR_CREW:
-      {
-        ship->repaircrew.index = crew_index;
-        ship->repaircrew.skill = skill;
-        ship->repaircrew.update();
-        ship->repaircrew.reset_stamina();
-      }
-
-    case ROWING_CREW:
-      {
-        ship->rowingcrew.index = crew_index;
-        ship->rowingcrew.skill = skill;
-        ship->rowingcrew.update();
-        ship->rowingcrew.reset_stamina();
-      }
-    };
+    ship->crew.index = crew_index;
+    ship->crew.sail_skill = MAX((float)ship_crew_data[crew_index].base_sail_skill, ship->crew.sail_skill);
+    ship->crew.guns_skill = MAX((float)ship_crew_data[crew_index].base_guns_skill, ship->crew.guns_skill);
+    ship->crew.rpar_skill = MAX((float)ship_crew_data[crew_index].base_rpar_skill, ship->crew.rpar_skill);
+    ship->crew.update();
+    ship->crew.reset_stamina();
 }
 
-void ShipCrew::update()
+void set_crew(P_ship ship, int crew_index, bool reset_skills)
 {
-    skill = MAX(ship_crew_data[index].min_skill, skill);
-    max_stamina = (int)((float)ship_crew_data[index].base_stamina * (1.0 + sqrt((float)(skill - ship_crew_data[index].min_skill) / 1000.0) / 300.0) );
-    if (stamina > max_stamina) stamina = max_stamina;
-    
-    float sq = sqrt((float)skill / 1000.0);
-    switch (ship_crew_data[index].type)
+    if (crew_index < 0 || crew_index > MAXCREWS)
+        return;
+
+    if (ship == NULL)
+        return;
+
+    ship->crew.index = crew_index;
+    if (reset_skills)
     {
-    case SAIL_CREW:
-    case GUN_CREW:
-        skill_mod = sq / 100.0;
-        break;
-    case REPAIR_CREW:
-        skill_mod = sq / 100.0;
-        break;
-    case ROWING_CREW:
-        skill_mod = sq / 100.0;
-        break;
-    default:
-        skill_mod = 0;
-    };
+        ship->crew.sail_skill = ship_crew_data[crew_index].base_sail_skill;
+        ship->crew.guns_skill = ship_crew_data[crew_index].base_guns_skill;
+        ship->crew.rpar_skill = ship_crew_data[crew_index].base_rpar_skill;
+    }
+    ship->crew.update();
+    ship->crew.reset_stamina();
 }
 
-
-void ShipCrew::reset_stamina() 
-{ 
-    stamina = max_stamina; 
-}
-
-void update_crew(P_ship ship)
+void set_chief(P_ship ship, int chief_index)
 {
-    ship->sailcrew.update();
-    ship->guncrew.update();
-    ship->repaircrew.update();
-    ship->rowingcrew.update();
+    if (ship_chief_data[chief_index].type == SAIL_CHIEF)
+        ship->crew.sail_chief = chief_index;
+    if (ship_chief_data[chief_index].type == GUNS_CHIEF)
+        ship->crew.guns_chief = chief_index;
+    if (ship_chief_data[chief_index].type == RPAR_CHIEF)
+        ship->crew.rpar_chief = chief_index;
+    if (ship_chief_data[chief_index].type == NO_CHIEF)
+    {
+        ship->crew.sail_chief = chief_index;
+        ship->crew.guns_chief = chief_index;
+        ship->crew.rpar_chief = chief_index;
+    }
 }
 
-void reset_crew_stamina(P_ship ship)
-{
-    ship->sailcrew.reset_stamina();
-    ship->guncrew.reset_stamina();
-    ship->repaircrew.reset_stamina();
-    ship->rowingcrew.reset_stamina();
-}
+
+
 
 
 P_char captain_is_aboard(P_ship ship)

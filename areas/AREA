@@ -328,10 +328,10 @@ nexus_ic                  *1301
 nexus_uc                  *1302
 nexus_island              *1303
 nexus_roper               *1304
-brimeforge                 *1310-1311
+brimeforge                *1310-1311
 earthp                    *1312
 airp                      *1316
-*lortower                  *1320
+githyanki_fortress        *1320
 *surf                     *2000
 *underdark                *2100
 surface                   *5000

@@ -15,6 +15,7 @@
 #include "ship_auto.h"
 #include "utils.h"
 #include "events.h"
+#include "epic.h"
 #include "ship_npc.h"
 #include "ship_npc_ai.h"
 
@@ -80,7 +81,7 @@ void scan_target(P_ship ship, P_ship target, P_char ch)
   {
     if (target == contacts[i].ship)
     {
-      if (contacts[i].range <= 20.0)
+      if (contacts[i].range <= 20.0 + (float)ship->crew.get_contact_range_mod())
       {
         send_to_char("Your lookout scans the target ship:\r\n", ch);
         send_to_char ("&+L=======================================================&N\r\n", ch);
@@ -214,7 +215,7 @@ bool ship_gain_frags(P_ship ship, P_ship target, int frags)
     int skill_frags = frags;
     if (ISNPCSHIP(target))
     {
-      if (target->m_class == SH_DREADNOUGHT)
+      if (target == npc_dreadnought)
       {
         frags /= 5;
         skill_frags = frags;
@@ -229,11 +230,16 @@ bool ship_gain_frags(P_ship ship, P_ship target, int frags)
     {
         ship->frags += frags;
         act_to_all_in_ship_f(ship, "Your ship has gained %d frags!\r\n", frags);
+
+        P_char captain = captain_is_aboard(ship);
+        if (captain && frags >= 20)
+        {
+            gain_epic(captain, EPIC_SHIP_PVP, 0, frags / 20);
+        }
     }
-    ship->sailcrew.skill   += skill_frags * ship_crew_data[ship->sailcrew.index].skill_gain;
-    ship->guncrew.skill    += skill_frags * ship_crew_data[ship->guncrew.index].skill_gain;
-    ship->repaircrew.skill += skill_frags * ship_crew_data[ship->repaircrew.index].skill_gain;
-    ship->rowingcrew.skill += skill_frags * ship_crew_data[ship->rowingcrew.index].skill_gain;
+    ship->crew.sail_skill_raise((float)skill_frags);
+    ship->crew.guns_skill_raise((float)skill_frags);
+    ship->crew.rpar_skill_raise((float)skill_frags);
 
     update_crew(ship);
     update_ship_status(ship);
@@ -253,15 +259,13 @@ bool ship_loss_on_sink(P_ship ship, P_ship attacker, int frags)
   else
     members_loss = 15.0 + (float)frags / 30.0;
 
-  ship->sailcrew.replace_members(members_loss);
-  ship->guncrew.replace_members(members_loss);
-  ship->repaircrew.replace_members(members_loss);
+  ship->crew.replace_members(members_loss);
 
   if (frags > 0)
   {
     ship->frags = MAX(0, ship->frags - frags);
 
-    if (ship->frags < ship_crew_data[ship->sailcrew.index].min_frags * 0.8)
+    /*if (ship->frags < ship_crew_data[ship->sailcrew.index].min_frags * 0.8)
     {
       act_to_all_in_ship(ship, "&+RYour sail crew abandons you, due to your reputation!");
       setcrew(ship, sail_crew_list[0], -1);
@@ -280,7 +284,7 @@ bool ship_loss_on_sink(P_ship ship, P_ship attacker, int frags)
     {
       act_to_all_in_ship(ship, "&+RYour rowing crew abandons you, due to your reputation!");
       setcrew(ship, rowing_crew_list[0], -1);
-    }
+    }*/
   }
 
   update_crew(ship);
@@ -350,17 +354,36 @@ bool sink_ship(P_ship ship, P_ship attacker)
         int frag_gain = 0;
         int salvage = 0;
         int bounty = 0;
-        if (!ISNPCSHIP(attacker))
+
+        P_ship gainer = attacker;
+        if (ISNPCSHIP(attacker))
         {
-            if (attacker->race != ship->race)
+           if (attacker->npc_ai && attacker->npc_ai->escort && !ISNPCSHIP(attacker->npc_ai->escort))
+               gainer = attacker->npc_ai->escort;
+           else
+               gainer = 0;
+        }
+        int gain_race = ship->race;
+        if (ISNPCSHIP(ship))
+        {
+            if (ship->npc_ai && ship->npc_ai->escort)
+                gain_race = ship->npc_ai->escort->race;
+        }
+        if (gainer)
+        {
+
+            if (gainer->race != gain_race)
             {
                 frag_gain = calc_frag_gain(ship);
             }
 
-            salvage = calc_salvage(ship);
-            wizlog(56, "Salvage %d", salvage);
+            if (gainer->race != gain_race || !ISNPCSHIP(ship))
+            {
+                salvage = calc_salvage(ship);
+                wizlog(56, "Salvage %d", salvage);
+            }
 
-            if ((ship->frags > 100) && attacker->race != ship->race)
+            if ((ship->frags > 100) && (gainer->race != ship->race))
             {
                 bounty = calc_bounty(ship);
                 wizlog(56, "Bounty %d", bounty);
@@ -369,21 +392,23 @@ bool sink_ship(P_ship ship, P_ship attacker)
             int fleet_size_grouped = 1;
             int fleet_size_total = 1;
             int k = getcontacts(ship);
+            P_char ch1 = get_char2(str_dup(SHIPOWNER(gainer)));
             for (i = 0; i < k; i++)
             {
-                if (contacts[i].ship == attacker)
+                if (contacts[i].ship == gainer)
                     continue;
                 if (SHIPISDOCKED(contacts[i].ship))
                     continue;
                 if (contacts[i].ship->m_class == SH_SLOOP)
                     continue;
-                if (attacker->race == contacts[i].ship->race)
+                if (contacts[i].ship->race == gainer->race ||
+                    (contacts[i].ship->npc_ai && contacts[i].ship->npc_ai->escort && contacts[i].ship->npc_ai->escort->race == gainer->race))
+                {
                    fleet_size_total++;
+                }
 
-                P_char ch1 = get_char2(str_dup(SHIPOWNER(contacts[i].ship)));
-                P_char ch2 = get_char2(str_dup(SHIPOWNER(attacker)));
-            
-                if (ch1 && ch2 && ch1->group && ch1->group == ch2->group)
+                P_char ch2 = get_char2(str_dup(SHIPOWNER(contacts[i].ship)));
+                if (ch1 && ch2 && ch2->group && ch2->group == ch1->group)
                 {
                     fleet_size_grouped++;
                 }
@@ -400,10 +425,9 @@ bool sink_ship(P_ship ship, P_ship attacker)
                 if (contacts[i].ship->m_class == SH_SLOOP)
                     continue;
 
-                P_char ch1 = get_char2(str_dup(SHIPOWNER(contacts[i].ship)));
-                P_char ch2 = get_char2(str_dup(SHIPOWNER(attacker)));
-            
-                if (contacts[i].ship == attacker  || ( ch1 && ch2 && ch1->group && ch1->group == ch2->group) )
+                P_char ch2 = get_char2(str_dup(SHIPOWNER(contacts[i].ship)));
+                if ((contacts[i].ship == gainer) || 
+                    ( ch1 && ch2 && ch2->group && ch2->group == ch1->group))
                 {
                     ship_gain_frags(contacts[i].ship, ship, frag_gain);
                     ship_gain_money(contacts[i].ship, ship, salvage, bounty);
@@ -422,6 +446,17 @@ bool sink_ship(P_ship ship, P_ship attacker)
 }
 
 
+void attacked_by(P_ship target, P_ship attacker, int contact_counter)
+{
+    if (target->npc_ai)
+        target->npc_ai->attacked_by(attacker);
+
+    for (int i = 0; i < contact_counter; i++)
+    {
+        if (contacts[i].ship->npc_ai && contacts[i].ship->npc_ai->escort == target)
+            contacts[i].ship->npc_ai->escort_attacked_by(attacker);
+    }
+}
 
 void volley_hit_event(P_char ch, P_char victim, P_obj obj, void *data)
 {
@@ -441,15 +476,14 @@ void volley_hit_event(P_char ch, P_char victim, P_obj obj, void *data)
         act_to_all_in_ship(target, "&=LRYour crew scrambles to their battlestions&N!\r\n");
     target->timer[T_BSTATION] = BSTATION;
 
-    if (target->npc_ai)
-        target->npc_ai->attacked_by(ship);
+    int k = getcontacts(target);
+    attacked_by(target, ship, k);
 
     if (dice(2, 50) >= 100 - hit_chance) 
     { // we have a hit!
         // calculating your bearing relative to target
         float your_bearing = 0;
         float range = 35.0;
-        int k = getcontacts(target);
         for (int j = 0; j < k; j++) 
         {
             if (ship == contacts[j].ship)
@@ -524,8 +558,7 @@ void volley_hit_event(P_char ch, P_char victim, P_obj obj, void *data)
     }
     return;
 }
-               
-
+    
 int damage_sail(P_ship attacker, P_ship target, int dam)
 {
     P_char captain = captain_is_aboard(target);
@@ -765,6 +798,8 @@ int try_ram_ship(P_ship ship, P_ship target, float tbearing)
         return FALSE;
     }
 
+    if (ship->race != target->race)
+        ship->crew.sail_skill_raise((float)number(1, 3));
 
     // Calculating relative speed 
     float heading_angle = ABS(sheading - theading);
@@ -797,7 +832,7 @@ int try_ram_ship(P_ship ship, P_ship target, float tbearing)
         chance = 75.0 / (hull_mod * speed_mod);
     else
         chance = 100.0 - (25.0 * hull_mod * speed_mod);
-    chance = 100.0 - (100.0 - chance) / (1.0 + ship->sailcrew.skill_mod * (chance / 50.0));
+    chance = 100.0 - (100.0 - chance) / (1.0 + ship->crew.sail_mod_applied * (chance / 50.0));
 
     int hit_chance = BOUNDED(0, (int)chance, 100);
 
@@ -914,9 +949,9 @@ int try_ram_ship(P_ship ship, P_ship target, float tbearing)
     }
 
     // Setting ram timers
-    float whole_crew_mod = (ship->sailcrew.skill_mod + ship->guncrew.skill_mod + ship->repaircrew.skill_mod) / 3.0;
+    float whole_crew_mod = (ship->crew.sail_mod_applied + ship->crew.guns_mod_applied + ship->crew.rpar_mod_applied) / 3.0;
     ship->timer[T_RAM]         = MAX(1, (int)(50.0 * (1.0 - whole_crew_mod * 0.15)));
-    ship->timer[T_RAM_WEAPONS] = MAX(1, (int)(25.0 * (1.0 - ship->guncrew.skill_mod * 0.15)));
+    ship->timer[T_RAM_WEAPONS] = MAX(1, (int)(25.0 * (1.0 - ship->crew.guns_mod_applied * 0.15)));
 
     if (IS_SET(ship->flags, RAMMING)) REMOVE_BIT(ship->flags, RAMMING);
     update_ship_status(target, ship);
@@ -942,7 +977,7 @@ int try_ram_ship(P_ship ship, P_ship target, float tbearing)
 
     float range_mod = (max - (float)t_contact.range) / ((float)max - (float)min);
     percent += (int)((float)75 * range_mod);
-    percent += (int)((float)50 * ship->guncrew.skill_mod);
+    percent += (int)((float)50 * ship->guncrew.mod_applied);
     if (percent > 100)
       percent = 100;
     if (percent < 0)
@@ -978,17 +1013,19 @@ int weaponsight(P_ship ship, int slot, int t_contact, P_char ch)
   float s_next_turn = get_next_heading_change(ship);
   float s_next_heading = ship->heading + s_next_turn;
   normalize_direction(s_next_heading);
+  float s_next_speed = ship->speed + get_next_speed_change(ship);
   float rad = s_next_heading * M_PI / 180.000;
-  float s_next_x = ship->x + (float) ((float) ship->speed * sin(rad)) / 150.000;
-  float s_next_y = ship->y + (float) ((float) ship->speed * cos(rad)) / 150.000;
+  float s_next_x = ship->x + (s_next_speed * sin(rad)) / 150.000;
+  float s_next_y = ship->y + (s_next_speed * cos(rad)) / 150.000;
 
   // calculating next position of the target
   float t_next_turn = get_next_heading_change(target);
   float t_next_heading = target->heading + t_next_turn;
   normalize_direction(t_next_heading);
+  float t_next_speed = target->speed + get_next_speed_change(target);
   rad = t_next_heading * M_PI / 180.000;
-  float t_next_x = (float) contacts[t_contact].x + (target->x - 50.0) + ((float) target->speed * sin(rad)) / 150.000;
-  float t_next_y = (float) contacts[t_contact].y + (target->y - 50.0) + ((float) target->speed * cos(rad)) / 150.000;
+  float t_next_x = (float) contacts[t_contact].x + (target->x - 50.0) + (t_next_speed * sin(rad)) / 150.000;
+  float t_next_y = (float) contacts[t_contact].y + (target->y - 50.0) + (t_next_speed * cos(rad)) / 150.000;
 
   float t_next_bearing = bearing(s_next_x, s_next_y, t_next_x, t_next_y);
   t_next_bearing -= s_next_heading;                                                       // target relative bearing next turn
@@ -999,6 +1036,7 @@ int weaponsight(P_ship ship, int slot, int t_contact, P_char ch)
 
   float closing_speed = ABS(t_next_range - t_curr_range) * 150.0; // in 'ship units'
   float angle_speed = ABS(t_next_bearing - t_curr_bearing);       // in degrees
+  if (angle_speed > 180) angle_speed = 360 - angle_speed;
 
   //send_to_char_f(ch, " ort_sp=%f, cl_sp=%f, an_sp=%f", ortogonal_speed, closing_speed, angle_speed);
 
@@ -1016,9 +1054,9 @@ int weaponsight(P_ship ship, int slot, int t_contact, P_char ch)
 
   //send_to_char_f(ch, " speed=%5.2f", speed);
 
-  float hit_chance = 0.3; // sloop with zero speed modifier at max range
+  float hit_chance = 0.5; // sloop with zero speed modifier at max range
 
-  float speed_mod = 1 + speed / 100.0;
+  float speed_mod = 1 + speed / 50.0;
   hit_chance /= speed_mod;
 
   //send_to_char_f(ch, " hit_1=%5.2f", hit_chance * 100);
@@ -1041,9 +1079,9 @@ int weaponsight(P_ship ship, int slot, int t_contact, P_char ch)
 
   //send_to_char_f(ch, " hit_3=%5.2f", (1.0 - miss_chance) * 100);
 
-  
-  miss_chance /= (1.0 + ship->guncrew.skill_mod);
+  miss_chance /= (1.0 + ship->crew.guns_mod_applied);
   hit_chance = 1.0 - miss_chance;
+  hit_chance *= ship->crew.get_stamina_mod();
 
   //send_to_char_f(ch, " hit_4=%5.2f\n", hit_chance * 100);
   
@@ -1093,18 +1131,16 @@ int fire_weapon(P_ship ship, int w_num, int t_contact, int hit_chance, P_char ch
         send_to_char("&+RWarning! This is the last round of ammo!\r\n", ch);
     if (ship->slot[w_num].val1 > 0)
        ship->slot[w_num].val1--;
-    ship->slot[w_num].timer = MAX(1, (int)((float)weapon_data[w_index].reload_time * (1.0 - ship->guncrew.skill_mod * 0.15)));
+
+    float reload_time = (float)weapon_data[w_index].reload_time * (1.0 - ship->crew.guns_mod_applied * 0.15);
+    reload_time /= ship->crew.get_stamina_mod();
+    ship->slot[w_num].timer = MAX(1, (int)reload_time);
 
     // reducing crew stamina
-    ship->guncrew.stamina -= weapon_data[ship->slot[w_num].index].reload_stamina;
-    if (ship->guncrew.stamina <= 0) 
-    {
-        force_anchor(ship);
-    } 
-    else if (ship->guncrew.stamina <= 20) 
-    {
-        act_to_all_in_ship(ship, "&+RWarning, Crew stamina critical!&N\r\n");
-    }
+    ship->crew.reduce_stamina((float)weapon_data[w_index].weight / (SHIPHULLMOD(ship) / 10.0), ship);
+    if (ship->race != target->race)
+        ship->crew.guns_skill_raise(0.1);
+
     return TRUE;
 }
 
