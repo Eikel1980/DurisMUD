@@ -599,7 +599,7 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
 
   max_total_levels = (int) (GET_LEVEL(ch) * 2);
 
-  if(IS_ILLITHID(ch))
+  if(IS_ILLITHID(ch) || IS_PILLITHID(ch))
   {
     if(level > 51)
       max_level = level + 5;
@@ -1221,7 +1221,7 @@ void spell_psychic_crush(int level, P_char ch, char *arg, int type, P_char victi
     resists_spell(ch, victim))
       return;
       
-  dam = 9 * level + number(1, 25); 
+  dam = 11 * level + number(1, 75); 
 
 // Pow difference stat save and it is harder (25% only) to do extra damage.
 // Crushing hand does *2 damage on failed spell saves.
@@ -1393,7 +1393,7 @@ void spell_detonate(int level, P_char ch, char *arg, int type, P_char victim,
      !(victim))
         return;
       
-  dam = 8 * level + number(1, 20);
+  dam = 9 * level + number(1, 75);
   
   if(victim == ch)
     dam = 1;

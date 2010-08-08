@@ -178,7 +178,6 @@ int race_size(int race)
     case RACE_REPTILE:
     case RACE_SNAKE:
     case RACE_FAERIE:
-    case RACE_KUOTOA:
       return SIZE_TINY;
       break;
       
@@ -188,7 +187,6 @@ int race_size(int race)
     case RACE_GOBLIN:
     case RACE_ANIMAL:
     case RACE_SHADE:
-    case RACE_KOBOLD:
       return SIZE_SMALL;
       break;
       
@@ -231,6 +229,8 @@ int race_size(int race)
     case RACE_ASURA:
     case RACE_BRALANI:
     case RACE_GHAELE:
+    case RACE_KUOTOA:
+    case RACE_KOBOLD:
     default:
       return SIZE_MEDIUM;
       break;
@@ -245,8 +245,6 @@ int race_size(int race)
     case RACE_SNOW_OGRE:
     case RACE_DRIDER:
     case RACE_PWORM:
-    case RACE_DEMON:
-    case RACE_DEVIL:
       return SIZE_LARGE;
       break;
       
@@ -266,6 +264,8 @@ int race_size(int race)
       
     case RACE_GIANT:
     case RACE_PLANT:
+    case RACE_DEMON:
+    case RACE_DEVIL:
     return SIZE_GIANT;
       break;
       
@@ -1131,7 +1131,7 @@ const struct class_names class_names_table[] = {
   {"Dreadlord", "&+LDread&+rlord&n", "Dre", 'e'},
   {"Ethermancer", "&+wEthermancer&n", "Eth", 'g'},
   {"Avenger", "&+WAvenger&n", "Ave", 'z'},
-  {"Theurgist", "&+cTh&+Ceur&+Wgist&n", "The", 'e'},
+  {"Theurgist", "&+cTh&+Ceur&+Wgist&n", "The", '1'},
   {0}
 };
 
