@@ -341,7 +341,7 @@ void spell_single_prismatic_ray(int level, P_char ch, char *arg, int type,
                          room_message);
     if(NewSaves(victim, SAVING_SPELL, 0))
       dam >>= 1;
-    spell_damage(ch, victim, dam, SPLDAM_FIRE, RAWDAM_NOEXP, &messages);
+    spell_damage(ch, victim, dam, SPLDAM_FIRE, 0, &messages);
     break;
   case RAY_ORANGE:
     dam = 275 + dice(level, 2);
@@ -349,7 +349,7 @@ void spell_single_prismatic_ray(int level, P_char ch, char *arg, int type,
                          room_message);
     if(NewSaves(victim, SAVING_SPELL, 0))
       dam >>= 1;
-    spell_damage(ch, victim, dam, SPLDAM_FIRE, RAWDAM_NOEXP, &messages);
+    spell_damage(ch, victim, dam, SPLDAM_FIRE, 0, &messages);
     break;
   case RAY_BLUE:
     dam = 150 + dice(level, 2);
@@ -357,7 +357,7 @@ void spell_single_prismatic_ray(int level, P_char ch, char *arg, int type,
                          room_message);
     if(NewSaves(victim, SAVING_SPELL, 0))
       dam >>= 1;
-    spell_damage(ch, victim, dam, SPLDAM_COLD, RAWDAM_NOEXP, &messages);
+    spell_damage(ch, victim, dam, SPLDAM_COLD, 0, &messages);
     break;
   case RAY_YELLOW:
     show_ray_messages("&+Yyellow&n", ch, victim);
@@ -7316,7 +7316,7 @@ void spell_stone_skin(int level, P_char ch, char *arg, int type,
   }
 
   if(GET_OPPONENT(victim))
-    gain_exp(ch, GET_OPPONENT(victim), 0, EXP_DAMAGE);
+    gain_exp(ch, GET_OPPONENT(victim), number(20, 40), EXP_DAMAGE); // stoning the tank equal to small nuke in exp -Odorf
 
   bzero(&af, sizeof(af));
   af.type = SPELL_STONE_SKIN;
@@ -7353,7 +7353,7 @@ void spell_ironwood(int level, P_char ch, char *arg, int type,
   }
 
   if(GET_OPPONENT(victim))
-    gain_exp(ch, GET_OPPONENT(victim), 0, EXP_DAMAGE);
+    gain_exp(ch, GET_OPPONENT(victim), number(20, 40), EXP_DAMAGE); // stoning the tank equal to small nuke in exp -Odorf
 
   bzero(&af, sizeof(af));
   af.type = SPELL_IRONWOOD;
@@ -14117,34 +14117,23 @@ void spell_resurrect(int level, P_char ch, char *arg, int type, P_char victim,
   clevel = obj->value[2];
 
 
-// Resurrect restores 60 percent of your exps now.
-// Evils level 52 and higher are restored 30 percent of their exps. -Lucrot Sept09
   if(IS_PC(t_ch) && !IS_TRUSTED(t_ch))
   {
     resu_exp = obj->value[4];
     
     if(!IS_TRUSTED(ch)) 
     { 
-      if(EVIL_RACE(t_ch) && 
-         GET_LEVEL(t_ch) >= 52 &&
-         GET_LEVEL(t_ch) <= 55)
-      {
-         resu_exp =
-          (long)(resu_exp * (get_property("gain.exp.mod.res.evil.52", 0.300)));
-      }
-      else if(EVIL_RACE(t_ch))
-      {
-         resu_exp =
-          (long)(resu_exp * (get_property("gain.exp.mod.res.evil", 0.500)));
-      }          
-      else if(GET_LEVEL(t_ch) >= 56)
+      if(GET_LEVEL(t_ch) >= 56)
       {
          resu_exp = (long)(resu_exp * 0.050);
       }
+      else if(EVIL_RACE(t_ch))
+      {
+         resu_exp = (long)(resu_exp * (get_property("gain.exp.mod.res.evil", 0.750)));
+      }          
       else
       {
-         resu_exp =
-          (long)(resu_exp * get_property("gain.exp.mod.res.normal", 0.600));
+         resu_exp = (long)(resu_exp * get_property("gain.exp.mod.res.normal", 0.750));
       }
     }     
     

@@ -2433,8 +2433,9 @@ void do_stat(P_char ch, char *argument, int cmd)
     strcat(o_buf, buf);
 
     if (IS_NPC(k))
-      sprintf(buf2, "&+Y+(&N%s&+Y)",
-              comma_string((long) (GET_LEVEL(k) * GET_HIT(k) * .4)));
+    {
+      //sprintf(buf2, "&+Y+(&N%s&+Y)", comma_string((long) (GET_LEVEL(k) * GET_HIT(k) * .4)));
+    }
     else
     {
       if ((k->player.m_class == 0) ||

@@ -1984,3 +1984,4 @@ void NPCShipAI::send_message_to_debug_char(const char *fmt, ... )
 
 // endless loop somewhere in advanced ai?
 // check for ships name in use already
+// reduce chance for bloodstones

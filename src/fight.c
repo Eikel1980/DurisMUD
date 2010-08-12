@@ -534,9 +534,7 @@ void heal(P_char ch, P_char healer, int hits, int cap)
   hits = vamp(ch, hits, cap);
 
 // debug("Hitting heal function in fight with (%d) hits.", hits);
-  if(IS_PC(healer) &&
-     IS_FIGHTING(ch) &&
-     hits > 5)
+  if(IS_PC(healer) && IS_FIGHTING(ch))
   {
     gain_exp(healer, ch, hits, EXP_HEALING);
   }
@@ -2617,7 +2615,6 @@ void kill_gain(P_char ch, P_char victim)
   int gain, XP;
   struct group_list *gl;
   int group_size = 0;
-  int exp_divider;
   int highest_level = 0;
 
   if( IS_PC(victim) )
@@ -2661,22 +2658,27 @@ void kill_gain(P_char ch, P_char victim)
     
   }  
   
-// This prevents group from ganking solo racewar victims and gaining
+  
+/* This prevents group from ganking solo racewar victims and gaining
 // tremendous exps. For PVP, the exps are divided amongst the group.
   if((IS_PC(ch) ||
       IS_PC_PET(ch)) &&
       IS_PC(victim))
         exp_divider = MAX(group_size, 1);
   else
-    exp_divider = 1;
+    exp_divider = 1; // enabled and tweaked exp divider  -Odorf */
 
-  if( ( RACE_GOOD(ch) && get_property("exp.groupLimit.good", 10) &&
+  /*if( ( RACE_GOOD(ch) && get_property("exp.groupLimit.good", 10) &&
         group_size > get_property("exp.groupLimit.good", 10) ) ||
       ( RACE_EVIL(ch) && get_property("exp.groupLimit.evil", 8) &&
         group_size > get_property("exp.groupLimit.evil", 8) ) )
   {
     exp_divider *= 10;
-  }
+  }  //removed group cap for exp  -Odorf*/
+
+  // exp gain drops slower than group size increases 
+  // to avoid people being unable to get in groups  -Odorf
+  float exp_divider = ((float)group_size + 2.0) / 3.0; 
 
   for (gl = ch->group; gl; gl = gl->next)
   {
@@ -2684,7 +2686,7 @@ void kill_gain(P_char ch, P_char victim)
         !IS_TRUSTED(gl->ch) &&
         (gl->ch->in_room == ch->in_room))
     {
-      XP = (int) ((GET_LEVEL(gl->ch) * gain) / (highest_level * exp_divider));
+      XP = (int) (((float)GET_LEVEL(gl->ch) / (float)highest_level) * ((float)gain / exp_divider));
 
       /* power leveler stopgap measure */
       if ((GET_LEVEL(gl->ch) + 40) < highest_level)
@@ -5342,7 +5344,7 @@ int raw_damage(P_char ch, P_char victim, double dam, uint flags,
     }
     
 // Exps for damage
-    if(dam > 5 &&
+    if(//dam > 5 &&  // any amount of damage yields exp  -Odorf
       !(flags & RAWDAM_NOEXP))
     {
       gain_exp(ch, victim, dam, EXP_DAMAGE);
@@ -6860,7 +6862,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
 
   //!!!
   if (melee_damage
-      (ch, victim, dam, (msg == MSG_HIT ? PHSDAM_TOUCH : PHSDAM_HELLFIRE | PHSDAM_BATTLETIDE) | RAWDAM_NOEXP,
+      (ch, victim, dam, (msg == MSG_HIT ? PHSDAM_TOUCH : PHSDAM_HELLFIRE | PHSDAM_BATTLETIDE), // | RAWDAM_NOEXP,   // hitting yields normal exp -Odorf
        &messages) != DAM_NONEDEAD)
     return true;
 
