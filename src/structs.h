@@ -899,6 +899,7 @@ struct room_data {
 #define EXP_RESURRECT    6
 #define EXP_MELEE        7
 #define EXP_WORLD_QUEST  8
+#define EXP_TANKING      9
 
 struct racial_data_type {
   sh_int base_age, base_vitality, base_mana, max_mana, hp_bonus, max_age;
