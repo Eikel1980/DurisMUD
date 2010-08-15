@@ -1228,6 +1228,7 @@ void show_char_to_char(P_char i, P_char ch, int mode)
               IS_DISGUISE_PC(i))
             sprintf(buffer + strlen(buffer), "%s %s (%s)",
                     ((GET_DISGUISE_RACE(i) == RACE_ILLITHID) ||
+		     (GET_DISGUISE_RACE(i) == RACE_PILLITHID) ||
                      (GET_DISGUISE_RACE(i) == RACE_ORC) ||
 		     (GET_DISGUISE_RACE(i) == RACE_OROG) ||
                      (GET_DISGUISE_RACE(i) == RACE_OGRE) ||
@@ -1266,6 +1267,7 @@ void show_char_to_char(P_char i, P_char ch, int mode)
           if (racewar(ch, i) && !IS_TRUSTED(i) && !IS_ILLITHID(ch))
             sprintf(buffer + strlen(buffer), "%s %s (%s)",
             ((GET_RACE(i) == RACE_ILLITHID) ||
+	     (GET_RACE(i) == RACE_PILLITHID) ||
             (GET_RACE(i) == RACE_ORC) ||
             (GET_RACE(i) == RACE_OROG) ||
             (GET_RACE(i) == RACE_AGATHINON) ||
