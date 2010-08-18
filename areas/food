@@ -4,7 +4,7 @@
 ***      294: time=9   hit=10 mov=9  poi=0  strcon=0  agidex=0  intwis=5  hitdam=0  cost=1       : a piranha
 **       295: time=10  hit=7  mov=7  poi=0  strcon=0  agidex=0  intwis=4  hitdam=0  cost=1       : a medium sized cod
          296: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=14      : a bag of rolled oats
-         297: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=400     : a large pile of hay
+         297: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=392     : a large pile of hay
          298: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=6       : a bucket of slop
          300: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : beluga caviar on a thin wafer
          301: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a plate of potato salad
@@ -49,26 +49,26 @@ X        356: time=10  hit=0  mov=0  poi=2  strcon=0  agidex=0  intwis=0  hitdam
          633: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a piece of charred dorf flesh
          634: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : an elven leg haunch
          800: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : a large swamp grub
-         801: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : an edible section of mangrove root
-         802: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : some thin marsh reeds
-         803: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : an edible root
-         804: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : some edible sprouts
+         801: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : an edible section of mangrove root
+         802: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some thin marsh reeds
+         803: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : an edible root
+         804: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : some edible sprouts
          805: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : some half-ripe blueberries
-         806: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a large forest toadstool
-         807: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : some crabapples
-         808: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some raspberries
-         809: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some edible treeroot moss
+         806: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a large forest toadstool
+         807: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : some crabapples
+         808: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : some raspberries
+         809: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : some edible treeroot moss
          810: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a clump of wiregrass
-         811: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a brown tuber
-         812: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : some lichen
-X        813: time=3   hit=0  mov=0  poi=7  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a few red speckled mushrooms
-         814: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a blind caveworm
-         815: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a clump of green mushrooms
-         816: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : some blue mushrooms
-X        817: time=2   hit=0  mov=0  poi=9  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some purple mushrooms
-         818: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : a large pink mushroom
-         819: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : a small edible cactus
-         820: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1045    : a small clump of desert grass
+         811: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : a brown tuber
+         812: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some lichen
+X        813: time=3   hit=0  mov=0  poi=7  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : a few red speckled mushrooms
+         814: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a blind caveworm
+         815: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a clump of green mushrooms
+         816: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : some blue mushrooms
+X        817: time=2   hit=0  mov=0  poi=9  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : some purple mushrooms
+         818: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : a large pink mushroom
+         819: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a small edible cactus
+         820: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1035    : a small clump of desert grass
          821: time=0   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=55      : some nightshade
          822: time=0   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=62      : a mandrake root
          823: time=0   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=55      : some garlic
@@ -76,7 +76,7 @@ X        817: time=2   hit=0  mov=0  poi=9  strcon=0  agidex=0  intwis=0  hitdam
          825: time=0   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=60      : a few drops of dragons blood
         1216: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a plate of assorted cheeses
         1240: time=60  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10150   : a tasty honey glazed HAM haunch
-        1403: time=28  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=113     : a loaf of dark bread
+        1403: time=28  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=111     : a loaf of dark bread
         1410: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=23      : a chicken egg
         1607: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=12      : some putrid fungi
         2015: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=15      : a small loaf of bread
@@ -96,9 +96,9 @@ X       2304: time=2   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
         2665: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a sword fish
         2666: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : some lamb chops
         2667: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3       : some goat meat
-        2671: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=204     : a peppercorn
-        2674: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a fennel root
-        2675: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=392     : a red mushroom
+        2671: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=200     : a peppercorn
+        2674: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : a fennel root
+        2675: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=400     : a red mushroom
         2676: time=25  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a bass
         2806: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=21      : a beef sandwich
         2807: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=28      : a pork roast sandwich
@@ -109,22 +109,22 @@ X       2304: time=2   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
         3011: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a danish pastry
         3047: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=24      : some dried beef
         3057: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=17      : some dried fruit
-X       3215: time=0   hit=0  mov=0  poi=4  strcon=0  agidex=0  intwis=0  hitdam=0  cost=981     : some pond scum
+X       3215: time=0   hit=0  mov=0  poi=4  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1011    : some pond scum
         3232: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=18      : some salty dried beef
-        3250: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=144     : a wonderous roast
-X       3400: time=1   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1410    : an ogre finger
+        3250: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=140     : a wonderous roast
+X       3400: time=1   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1396    : an ogre finger
         3401: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1968    : a pair of human feet
-        3402: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1772    : a set of troll balls
-        3405: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a pair of eyes
-        3432: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2604    : a half-rat in a block of cheese
+        3402: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1789    : a set of troll balls
+        3405: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : a pair of eyes
+        3432: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2682    : a half-rat in a block of cheese
 X       3437: time=2   hit=0  mov=0  poi=13 strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a chunk of Flind flesh
-X       5001: time=6   hit=0  mov=0  poi=12 strcon=0  agidex=0  intwis=0  hitdam=0  cost=2652    : a bat wing
-        5006: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2900    : a patch of red moss
+X       5001: time=6   hit=0  mov=0  poi=12 strcon=0  agidex=0  intwis=0  hitdam=0  cost=2574    : a bat wing
+        5006: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2842    : a patch of red moss
         5007: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2646    : a patch of blue moss
-        5008: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2727    : a patch of green moss
-X       5009: time=5   hit=0  mov=0  poi=6  strcon=0  agidex=0  intwis=0  hitdam=0  cost=204     : a patch of black moss
-        5015: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=7777    : a standard ration
-**      5018: time=35  hit=4  mov=4  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=3267    : a chunk of rothe meat
+        5008: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2646    : a patch of green moss
+X       5009: time=5   hit=0  mov=0  poi=6  strcon=0  agidex=0  intwis=0  hitdam=0  cost=202     : a patch of black moss
+        5015: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=7623    : a standard ration
+**      5018: time=35  hit=4  mov=4  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=3300    : a chunk of rothe meat
         5301: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=34      : a blueberry muffin
         5302: time=16  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=78      : a loaf of bread
         5311: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=12      : a small vine
@@ -134,31 +134,31 @@ X       5009: time=5   hit=0  mov=0  poi=6  strcon=0  agidex=0  intwis=0  hitdam
         7657: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a salt shaker
         7661: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a carrot
         9224: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a bowl of goulash
-       10423: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a trail ration
-       10424: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a small slab of meat
-       10425: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large slab of meat
-       10426: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a slab of orc meat
+*      10423: time=12  hit=2  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a trail ration
+*      10424: time=2   hit=3  mov=3  poi=0  strcon=1  agidex=1  intwis=0  hitdam=0  cost=1       : a small slab of meat
+*      10425: time=10  hit=3  mov=3  poi=0  strcon=1  agidex=1  intwis=0  hitdam=0  cost=1       : a large slab of meat
+*      10426: time=5   hit=3  mov=3  poi=0  strcon=1  agidex=1  intwis=0  hitdam=0  cost=1       : a slab of orc meat
 X      10427: time=36  hit=-1 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a rotten slab of meat
 X      10607: time=12  hit=-1 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some rotting meat
 X      10626: time=5   hit=-1 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some rotting food
        10643: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a small green mushroom
        10644: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=16      : a large red mushroom
-       10709: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : some green fungi
-       10714: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=495     : a gaund egg
+       10709: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : some green fungi
+       10714: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=505     : a gaund egg
 *      10807: time=24  hit=2  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=87      : an elven pastry
        10900: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : a broken ant leg
        11519: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=24      : a large fried swamp rat
-       11520: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=289     : a huge fried swamp rat
-       11521: time=64  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=673     : a BBQ alligator steak
-       11522: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=124     : a fried alligator foot
-       11523: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=419     : a poached swamp snake
+       11520: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=295     : a huge fried swamp rat
+       11521: time=64  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=667     : a BBQ alligator steak
+       11522: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=122     : a fried alligator foot
+       11523: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=427     : a poached swamp snake
        11553: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=30      : some stomped on grapes
-       11585: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=606     : some elf pate
-       11586: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=294     : some ground elf bone crackers
-       11587: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=101     : a dozen deep fried elf eyeballs
-       11588: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=196     : an elf burger
-       11589: time=36  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=297     : a full rack of BBQ elf ribs
-       11590: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=99      : some elf oysters
+       11585: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=612     : some elf pate
+       11586: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=300     : some ground elf bone crackers
+       11587: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=99      : a dozen deep fried elf eyeballs
+       11588: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=204     : an elf burger
+       11589: time=36  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=294     : a full rack of BBQ elf ribs
+       11590: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=100     : some elf oysters
        11602: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a piece of raw meat
        11613: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large alligator egg
        11614: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large alligator egg
@@ -196,11 +196,11 @@ X      14424: time=1   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        14612: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a stringer of river fish
        15219: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=24      : a large fried bat
        15220: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=289     : a huge fried bat
-       15221: time=64  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=661     : a large vulture egg
-       15222: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=122     : a fried bat wing
-       15223: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=435     : a poached chasm snake
+       15221: time=64  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=685     : a large vulture egg
+       15222: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=125     : a fried bat wing
+       15223: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=431     : a poached chasm snake
        15246: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=39      : a hunk of raw goat meat
-       15252: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=427     : an ogres brain
+       15252: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=431     : an ogres brain
        15271: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=39      : some raw meat
        16259: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=20      : some stale rations
        16543: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some raw turtle meat
@@ -210,7 +210,7 @@ X      14424: time=1   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        16630: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : some dried lizard meat
 *      16633: time=16  hit=1  mov=1  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : some fried perch
 *      16634: time=24  hit=1  mov=1  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=18      : a slab of broiled muskie
-*      16635: time=20  hit=2  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=118     : a salmon steak
+*      16635: time=20  hit=2  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=119     : a salmon steak
        16638: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a sweet red apple
        16639: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : a tart green apple
        16640: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a yellow peach
@@ -220,7 +220,7 @@ X      14424: time=1   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        16644: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a roasted duck
        16659: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=70      : a tin of caviar
        16664: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=50      : an alligator steak
-       16665: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=102     : some sliced duck in white wine sauce
+       16665: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=99      : some sliced duck in white wine sauce
        17029: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a fuzzy blue fungus
        17030: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : a fuzzy red fungus
 X      17031: time=12  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a fuzzy pink fungus
@@ -234,38 +234,38 @@ X      17031: time=12  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        17059: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a dried filet of fish
        17060: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a handful of dried fish eyes
        17074: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a steeders egg sack
-       18711: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=348     : some dwarf flesh
+       18711: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=342     : some dwarf flesh
        19003: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a piece of chothe meat
        19004: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some pootata meat
        19102: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1089    : a greenish-white berry
        19439: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : yummy chunks of Barbarian ribs
        19440: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : ooey gooey human brains
-       20017: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1176    : a rat and tomato sandwich
+       20017: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1224    : a rat and tomato sandwich
        20047: time=25  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a well-done orcish arm
-       20212: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a charred plant
-       20213: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : a green plant
-       20217: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1001    : a tiny green plant
-       20302: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=229     : a prawn
-       20303: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=311     : a sea bass
-       20304: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=712     : a pair of turtle legs
-       20305: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=901     : a dragonfish fillet
+       20212: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a charred plant
+       20213: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a green plant
+       20217: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1021    : a tiny green plant
+       20302: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=227     : a prawn
+       20303: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=317     : a sea bass
+       20304: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=705     : a pair of turtle legs
+       20305: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=910     : a dragonfish fillet
        20421: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a chunk of deer meat
-       20602: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1032    : a bloody piece of meat
+       20602: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1002    : a bloody piece of meat
        21512: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a severed leg
-       22016: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=4950    : a bushel of bananas
-       22017: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a banana
+       22016: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5000    : a bushel of bananas
+       22017: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : a banana
        22409: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=29      : some elf jerky
        23435: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : an apple
        23436: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large beet
        23614: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a fried mushroom
        26237: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a small red lobster
        26238: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=13      : a large piece of shark meat
-       26432: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=200     : a basket of fish
+       26432: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=196     : a basket of fish
        28102: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=20      : a Verspin meal-in-a-box
        28112: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large plump apple
-       28518: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1112    : some masticated meat
+*      28518: time=12  hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=1079    : some masticated meat
        28526: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=4       : a vial of pitcher plant essence
-       28530: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=510     : a mottled green egg
+       28530: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=500     : a mottled green egg
        28556: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3       : a roasted neberi
        28578: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a stand of wild asparagas
        28958: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a centaur haunch
@@ -278,46 +278,46 @@ X      17031: time=12  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        29219: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large steak and kidney pie
        29220: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a salt box
        29438: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some animated bait
-       29460: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : fish food
-*      29462: time=10  hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=3  hitdam=0  cost=1442    : a plate of eel sushi
-**     29463: time=10  hit=3  mov=4  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2581    : a pork harvest stew
-**     29464: time=3   hit=4  mov=4  poi=0  strcon=2  agidex=0  intwis=0  hitdam=0  cost=2344    : a cornish meat pie
-**     29465: time=6   hit=5  mov=4  poi=0  strcon=0  agidex=4  intwis=0  hitdam=0  cost=3923    : fresh clover honey sticks
-*      29466: time=10  hit=3  mov=3  poi=0  strcon=2  agidex=2  intwis=2  hitdam=0  cost=7389    : a gourmet fungus salad
-X      30633: time=10  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3422    : a nightshade plant
-       30655: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2547    : a small ginseng root
-*      30820: time=15  hit=2  mov=2  poi=0  strcon=3  agidex=0  intwis=0  hitdam=1  cost=644     : a bloody goat leg
-*      30821: time=6   hit=3  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=202     : a strip of rabbit flesh
-       33722: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=98      : a piece of ziveryl
+       29460: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : fish food
+*      29462: time=10  hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=3  hitdam=0  cost=1470    : a plate of eel sushi
+**     29463: time=10  hit=3  mov=4  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2556    : a pork harvest stew
+**     29464: time=3   hit=4  mov=4  poi=0  strcon=2  agidex=0  intwis=0  hitdam=0  cost=2390    : a cornish meat pie
+**     29465: time=6   hit=5  mov=4  poi=0  strcon=0  agidex=4  intwis=0  hitdam=0  cost=4083    : fresh clover honey sticks
+*      29466: time=10  hit=3  mov=3  poi=0  strcon=2  agidex=2  intwis=2  hitdam=0  cost=7317    : a gourmet fungus salad
+X      30633: time=10  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3388    : a nightshade plant
+       30655: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2522    : a small ginseng root
+*      30820: time=15  hit=2  mov=2  poi=0  strcon=3  agidex=0  intwis=0  hitdam=1  cost=656     : a bloody goat leg
+*      30821: time=6   hit=3  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=198     : a strip of rabbit flesh
+       33722: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=99      : a piece of ziveryl
        33723: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a ziku nut
        34424: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some fish eggs
 X      34432: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : a briar root
-X      34433: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=11220   : some mandrake root
-X      34434: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : some lotus leaves
-X      34435: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : a clump of nightshade
-X      34436: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : a red mushroom
-X      34438: time=3   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5390    : the kiss of talona bloom
-X      34440: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=102     : the root of a razor vine
-       35810: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=100     : a leg of venison
+X      34433: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=11110   : some mandrake root
+X      34434: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : some lotus leaves
+X      34435: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1000    : a clump of nightshade
+X      34436: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a red mushroom
+X      34438: time=3   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5500    : the kiss of talona bloom
+X      34440: time=4   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=98      : the root of a razor vine
+       35810: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=102     : a leg of venison
        35812: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some unhatched spider eggs
        36203: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3       : a mushroom cap
        36204: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a piece of rothe meat
 X      36205: time=12  hit=0  mov=0  poi=-1 strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a piece of rothe meat
        36422: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=30      : a rothe steak
-       36808: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=102     : some human brains
-X      36809: time=48  hit=0  mov=0  poi=9  strcon=0  agidex=0  intwis=0  hitdam=0  cost=202     : some human brains
-*      37707: time=6   hit=2  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=922     : some venison strips
+       36808: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=98      : some human brains
+X      36809: time=48  hit=0  mov=0  poi=9  strcon=0  agidex=0  intwis=0  hitdam=0  cost=196     : some human brains
+*      37707: time=6   hit=2  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=931     : some venison strips
        37708: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=46      : an iron ration
-*      37709: time=8   hit=1  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=931     : a sausage
+*      37709: time=8   hit=1  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=922     : a sausage
        38024: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3       : a kelp burger
        38114: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a ripe tomato
        38115: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a leaf of lettuce
        38116: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a green pepper
        38117: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a cucumber
-       38122: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=101     : a carrot
+       38122: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=98      : a carrot
 **     38303: time=3   hit=5  mov=5  poi=0  strcon=4  agidex=0  intwis=0  hitdam=2  cost=22      : a slab of beef
        38601: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a frozen berry
-       39105: time=9   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1063    : a piece of hardened bone marrow
+       39105: time=9   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1093    : a piece of hardened bone marrow
        39106: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=56      : a packet of compressed lichen
        39136: time=36  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=86      : a piece of whale blubber
        40206: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some corn
@@ -333,15 +333,15 @@ X      42202: time=10  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        42256: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=50      : a cod
        42257: time=16  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=50      : a small edible root
        42265: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : some oat grains
-       42926: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=918     : some strange mushrooms
+       42926: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=891     : some strange mushrooms
        42927: time=33  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=90      : a cave shroom
        43025: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a ripe tomato
-       43026: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=102     : a carrot
+       43026: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=99      : a carrot
        43027: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a green pepper
        43028: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a cucumber
-       43745: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1485    : a yummy hemp cookie
-       43746: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2040    : a tasty hemp muffin
-       43747: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2450    : a blueberry pie
+       43745: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1530    : a yummy hemp cookie
+       43746: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1960    : a tasty hemp muffin
+       43747: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2550    : a blueberry pie
        45044: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=979     : a loaf of delicious honeybread
        45045: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=12      : a sweet little love muffin
        53101: time=33  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=9       : a purple fungus
@@ -349,15 +349,15 @@ X      42202: time=10  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        53204: time=20  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a half-eaten iron ration
 **     53667: time=35  hit=8  mov=8  poi=0  strcon=0  agidex=6  intwis=0  hitdam=0  cost=5       : a bowl of seafood bisque
 **     53668: time=35  hit=8  mov=8  poi=0  strcon=4  agidex=4  intwis=0  hitdam=0  cost=5       : a bowl of seafood bisque
-       55023: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : some crispy carp fritters
-       55098: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=505     : some seasoned venison jerky
+       55023: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : some crispy carp fritters
+       55098: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=510     : some seasoned venison jerky
        55101: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=254     : a loaf of crusty bread
        55102: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=750     : a plate of seared buffalo and potatoes
        55105: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=50      : some salty bar nuts
-       55147: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=505     : a tasty pastry
-       55148: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1161    : a delicious blueberry pie
+       55147: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=490     : a tasty pastry
+       55148: time=18  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1128    : a delicious blueberry pie
        55149: time=22  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : a thick and crunchy pretzel
-       55150: time=25  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1226    : a cup of soft ice cream
+       55150: time=25  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1274    : a cup of soft ice cream
        65102: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : HoT Wings
        65103: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : Guiness
        66011: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=20      : a piece of bread
@@ -371,39 +371,39 @@ X      42202: time=10  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        66603: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a ripe banana
        66604: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a bunch of grapes
        66692: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=23      : some live worms
-       66694: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=237     : a strawberry pastry
-       66695: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=347     : a sugary doughnut
-       67330: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=151     : plankton pie
-       67331: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : fried algae
+       66694: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=231     : a strawberry pastry
+       66695: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=338     : a sugary doughnut
+       67330: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=150     : plankton pie
+       67331: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : fried algae
        67332: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : kelp cookies
        67345: time=7   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : seaweed stew
        67346: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : algae burrito
-       67347: time=9   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : anchovie pizza
-       67348: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=980     : sea cucumbers
-       67352: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : seaweed surprise
+       67347: time=9   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : anchovie pizza
+       67348: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=990     : sea cucumbers
+       67352: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : seaweed surprise
        67354: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : sahuagin gills
-       67359: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : seaweed rations
+       67359: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1020    : seaweed rations
        69032: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a baked potato
        69042: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a bag of popcorn
        69055: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a radish
        69056: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a potato
-       70023: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1089    : elf surprise
-       70024: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1024    : fried grubs
-       70032: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1010    : some iron rations
+       70023: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1122    : elf surprise
+       70024: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1004    : fried grubs
+       70032: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1030    : some iron rations
        74003: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a slice of bread
-       74007: time=25  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=421     : a roasted stirge
-       74008: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=113     : a piece of peryton jerky
-       74192: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=289     : a roasted fish
-       74193: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=429     : a fish on a stick
-       74194: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=193     : a piece of fish jerky
-       74195: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1191    : a roasted pike
+       74007: time=25  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=433     : a roasted stirge
+       74008: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=112     : a piece of peryton jerky
+       74192: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=291     : a roasted fish
+       74193: time=4   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=421     : a fish on a stick
+       74194: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=190     : a piece of fish jerky
+       74195: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1202    : a roasted pike
        74196: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=791     : a bread bowl of fish soup
 X      74233: time=35  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=318     : a small heap of forest mushrooms
        74258: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some burned flesh
        75201: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1035    : a small frozen berry
        75249: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a frozen fish
-       75254: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1025    : a frozen blueberry
-*      78048: time=12  hit=2  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=226     : a piece of jerky
+       75254: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=995     : a frozen blueberry
+*      78048: time=12  hit=2  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=220     : a piece of jerky
        80069: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=4       : an oblong fruit
        80072: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=4       : a red weekkii fruit
        80113: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : some raw fish
@@ -417,73 +417,73 @@ X      74233: time=35  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        82010: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=20      : a grilled steak
        82011: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2       : an onion
        82203: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a freshly baked blueberry muffin
-**     82506: time=10  hit=3  mov=4  poi=0  strcon=0  agidex=0  intwis=5  hitdam=0  cost=2244    : a dietary supplement
+**     82506: time=10  hit=3  mov=4  poi=0  strcon=0  agidex=0  intwis=5  hitdam=0  cost=2222    : a dietary supplement
        82701: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a chunk of meat
 **     82702: time=9   hit=6  mov=5  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a small yellow mushroom
        82703: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some blackberries
        82706: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a large chunk of meat
-*      83116: time=10  hit=3  mov=3  poi=0  strcon=0  agidex=1  intwis=0  hitdam=0  cost=792     : a bloody haunch of caribou meat
+*      83116: time=10  hit=3  mov=3  poi=0  strcon=0  agidex=1  intwis=0  hitdam=0  cost=800     : a bloody haunch of caribou meat
 *      83117: time=10  hit=3  mov=3  poi=0  strcon=1  agidex=0  intwis=0  hitdam=0  cost=880     : a bloody haunch of theezak meat
-***    83143: time=24  hit=10 mov=10 poi=0  strcon=0  agidex=0  intwis=0  hitdam=3  cost=990     : a glazed rack of caribou ribs
-***    83168: time=20  hit=10 mov=8  poi=0  strcon=5  agidex=5  intwis=0  hitdam=0  cost=1319    : a cheese-covered garlic apple clam mash
-***    83169: time=36  hit=10 mov=5  poi=0  strcon=5  agidex=0  intwis=0  hitdam=2  cost=1430    : some juicy theezak spare ribs
-***    83170: time=18  hit=13 mov=8  poi=0  strcon=0  agidex=0  intwis=7  hitdam=0  cost=1       : an orange-accented deep fried fish 'n chips
-*      83183: time=6   hit=3  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=600     : some salted pork
-**     83201: time=10  hit=5  mov=5  poi=0  strcon=0  agidex=0  intwis=0  hitdam=2  cost=202     : a bloody haunch of lion meat
-**     83220: time=10  hit=5  mov=5  poi=0  strcon=5  agidex=0  intwis=0  hitdam=0  cost=198     : a bloody haunch of olyx meat
-***    83221: time=24  hit=15 mov=7  poi=0  strcon=3  agidex=3  intwis=0  hitdam=0  cost=6513    : some seasoned lion rib nuggets
-***    83222: time=30  hit=7  mov=10 poi=0  strcon=0  agidex=8  intwis=0  hitdam=0  cost=9537    : some tender baby back olyx ribs
-*      83223: time=60  hit=2  mov=2  poi=0  strcon=2  agidex=0  intwis=0  hitdam=0  cost=12874   : a side of boar
-***    83224: time=16  hit=16 mov=8  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=2000    : some stew with a zing
-**     83225: time=24  hit=4  mov=4  poi=0  strcon=2  agidex=0  intwis=0  hitdam=1  cost=3444    : a broiled zesty meatloaf
+***    83143: time=36  hit=12 mov=12 poi=0  strcon=0  agidex=0  intwis=0  hitdam=3  cost=1010    : a glazed rack of caribou ribs
+***    83168: time=10  hit=10 mov=8  poi=0  strcon=5  agidex=5  intwis=0  hitdam=0  cost=1332    : a cheese-covered garlic apple clam mash
+***    83169: time=36  hit=14 mov=10 poi=0  strcon=5  agidex=0  intwis=0  hitdam=2  cost=1430    : some juicy theezak spare ribs
+***    83170: time=8   hit=11 mov=9  poi=0  strcon=0  agidex=0  intwis=7  hitdam=0  cost=1       : an orange-accented deep fried fish 'n chips
+*      83183: time=6   hit=3  mov=2  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=588     : some salted pork
+**     83201: time=10  hit=5  mov=5  poi=0  strcon=0  agidex=0  intwis=0  hitdam=2  cost=200     : a bloody haunch of lion meat
+**     83220: time=10  hit=5  mov=5  poi=0  strcon=5  agidex=0  intwis=0  hitdam=0  cost=200     : a bloody haunch of olyx meat
+***    83221: time=36  hit=16 mov=11 poi=0  strcon=3  agidex=3  intwis=0  hitdam=0  cost=6577    : some seasoned lion rib nuggets
+***    83222: time=36  hit=10 mov=12 poi=0  strcon=0  agidex=8  intwis=0  hitdam=0  cost=9537    : some tender baby back olyx ribs
+**     83223: time=60  hit=5  mov=3  poi=0  strcon=2  agidex=0  intwis=0  hitdam=1  cost=13134   : a side of boar
+***    83224: time=25  hit=15 mov=15 poi=0  strcon=0  agidex=0  intwis=6  hitdam=0  cost=2020    : some stew with a zing
+***    83225: time=30  hit=20 mov=12 poi=0  strcon=2  agidex=0  intwis=0  hitdam=1  cost=3444    : a broiled zesty meatloaf
 ***    83322: time=72  hit=20 mov=10 poi=0  strcon=5  agidex=5  intwis=0  hitdam=0  cost=1       : the gored tongue of a swamp troll
 ***    83323: time=2   hit=6  mov=10 poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=4       : the bloody heart of Birch Scruden
-***    83482: time=36  hit=30 mov=15 poi=0  strcon=0  agidex=0  intwis=10 hitdam=0  cost=4419    : a bowl of white dragon egg soup
-***    83483: time=36  hit=25 mov=18 poi=0  strcon=0  agidex=8  intwis=0  hitdam=0  cost=3285    : a bowl of wyvern egg soup
+***    83482: time=24  hit=18 mov=10 poi=0  strcon=0  agidex=0  intwis=10 hitdam=0  cost=4333    : a bowl of white dragon egg soup
+***    83483: time=24  hit=20 mov=9  poi=0  strcon=0  agidex=8  intwis=0  hitdam=0  cost=3221    : a bowl of wyvern egg soup
 X      83529: time=4   hit=-2 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a chunk of rotting basilisk flesh
 X      83556: time=4   hit=-4 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a chunk of rotting ram meat
 X      83572: time=4   hit=-4 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a chunk of rotting cockatrice flesh
-       85719: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1419    : a freshly killed salmon
+       85719: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1461    : a freshly killed salmon
        85741: time=30  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a small mushroom
        88800: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a parsnip
 X      88801: time=3   hit=0  mov=0  poi=10 strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : some witchbane
        88802: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a clump of grannywort
-*      88808: time=6   hit=3  mov=2  poi=0  strcon=1  agidex=0  intwis=0  hitdam=0  cost=229     : a leg of mutton
+*      88808: time=6   hit=3  mov=2  poi=0  strcon=1  agidex=0  intwis=0  hitdam=0  cost=227     : a leg of mutton
 *      88809: time=10  hit=3  mov=3  poi=0  strcon=1  agidex=1  intwis=0  hitdam=0  cost=614     : a meat pie
 *      88820: time=3   hit=1  mov=1  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=8       : a hardtack biscuit
-**     88823: time=3   hit=4  mov=3  poi=0  strcon=0  agidex=0  intwis=4  hitdam=0  cost=1089    : some salted fish jerky
+**     88823: time=3   hit=4  mov=3  poi=0  strcon=0  agidex=0  intwis=4  hitdam=0  cost=1100    : some salted fish jerky
        89014: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a bunch of grapes
 X      89015: time=24  hit=-1 mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a chunk of rotting meat
        89016: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : thickly sliced bread
-       89113: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=981     : a pressed rat
-       89114: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1023    : a haunch of meat
+       89113: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1011    : a pressed rat
+       89114: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1003    : a haunch of meat
        89115: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1025    : a journey cake
        89126: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a meat pie
        89127: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : an apple pie
        89128: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a slice of chocolate cake
        90007: time=1   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a speckled hawk egg
        93302: time=8   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a narm
-X      93310: time=76  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=147000  : Naergot the Black's heart
-X      95003: time=5   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=101     : a speckled mushroom
+X      93310: time=76  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=148500  : Naergot the Black's heart
+X      95003: time=5   hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=100     : a speckled mushroom
        95505: time=7   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=9       : a bunch of green fungi
        95506: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a potato
        95508: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=6       : a carrot
        95510: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a potato
        95528: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=20      : some standard rations
-       95546: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=198     : some goat meat
-       96844: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=100     : a box of Questos Cereal
-*      96923: time=20  hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=914     : some delicious beef
+       95546: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=204     : some goat meat
+       96844: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=98      : a box of Questos Cereal
+*      96923: time=20  hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=0  hitdam=1  cost=905     : some delicious beef
        97049: time=2   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a half-eaten sandwich
        97115: time=75  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=12      : an onion
        97136: time=125 hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=12      : a juicy onion
-**     97506: time=2   hit=5  mov=4  poi=0  strcon=3  agidex=0  intwis=0  hitdam=0  cost=3989    : a chocolate cake
-**     97507: time=2   hit=4  mov=5  poi=0  strcon=0  agidex=4  intwis=0  hitdam=0  cost=4268    : a lemon cake
-       97512: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=132     : a piece of holy bread
-*      97521: time=8   hit=1  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5632    : a cucumber
-       97575: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=396     : a small rose bud
+**     97506: time=2   hit=5  mov=4  poi=0  strcon=3  agidex=0  intwis=0  hitdam=0  cost=3833    : a chocolate cake
+**     97507: time=2   hit=4  mov=5  poi=0  strcon=0  agidex=4  intwis=0  hitdam=0  cost=4225    : a lemon cake
+       97512: time=15  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=134     : a piece of holy bread
+*      97521: time=8   hit=1  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5800    : a cucumber
+       97575: time=10  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=399     : a small rose bud
        98524: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=306     : a large salmon
-X      98525: time=24  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=306     : a large salmon
-       98609: time=0   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a tiny sparrow's egg
+X      98525: time=24  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam=0  cost=294     : a large salmon
+**     98609: time=2   hit=4  mov=4  poi=0  strcon=0  agidex=0  intwis=4  hitdam=0  cost=1       : a tiny sparrow's egg
        98617: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a pickle
        98646: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : a handful of plump blueberries
        98647: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : little new potato
@@ -498,13 +498,13 @@ X      98525: time=24  hit=0  mov=0  poi=1  strcon=0  agidex=0  intwis=0  hitdam
        98656: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : long thin green beans
        98657: time=48  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=1       : rosy red tomatoes
        99022: time=5   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : an egg
-***   120035: time=7   hit=10 mov=10 poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3600    : a juicy osquip steak
-*     120051: time=3   hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=594     : a freshly-killed osquip
-      132507: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=102     : a piece of fried mutton
-      132508: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=196     : a succulent roast
+***   120035: time=7   hit=10 mov=10 poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=3564    : a juicy osquip steak
+*     120051: time=3   hit=3  mov=3  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=600     : a freshly-killed osquip
+      132507: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=100     : a piece of fried mutton
+      132508: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=204     : a succulent roast
       132509: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=50      : a light elvish pastry
       132552: time=12  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=10      : a loaf of bread
       132553: time=6   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=5       : a halfling pastry
       132587: time=24  hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=20      : some iron rations
       132588: time=3   hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=4       : an apple
-      500026: time=100 hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=7906    : a wyvern egg
+      500026: time=100 hit=0  mov=0  poi=0  strcon=0  agidex=0  intwis=0  hitdam=0  cost=7828    : a wyvern egg
