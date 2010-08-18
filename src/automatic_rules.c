@@ -86,6 +86,7 @@ void do_raid(P_char ch, char *argument, int cmd)
 {
   P_desc i;
   P_char tch;
+  int found = 0;
   char arg1[MAX_INPUT_LENGTH], arg2[MAX_INPUT_LENGTH];
   char Gbuf[MAX_INPUT_LENGTH];
   if (!IS_TRUSTED(ch))
@@ -122,12 +123,16 @@ void do_raid(P_char ch, char *argument, int cmd)
             (!str_cmp(arg1, "zone") && (world[i->character->in_room].zone == world[ch->in_room].zone)) ||
             (!str_cmp(arg1, "good") && GOOD_RACE(i->character)) ||
             (!str_cmp(arg1, "evil") && EVIL_RACE(i->character)) ||
-            (!str_cmp(arg1, "all")) ||
-            (!str_cmp(arg1, i->character->player.name)))
+            (!str_cmp(arg1, "all")))
         {
 	  tch = i->character;
 	}
-	
+	else if (!str_cmp(arg1, i->character->player.name))
+	{
+	  tch = i->character;
+	  found = TRUE;
+	}
+
 	if (tch && IS_PC(tch) && !IS_TRUSTED(tch))
         {
           if (hasRequriedSlots(tch))
@@ -143,13 +148,14 @@ void do_raid(P_char ch, char *argument, int cmd)
             send_to_char(Gbuf, ch);
           }
         }
-	else if (!(!str_cmp(arg1, "room") || !str_cmp(arg1, "zone") ||
-	           !str_cmp(arg1, "evil") || !str_cmp(arg1, "good") ||
-		   !str_cmp(arg1, "all")))
-	{
-	  send_to_char("You don't see anybody.\n", ch);
-	}
       }
+    }
+    if (!found && 
+        !(!str_cmp(arg1, "room") || !str_cmp(arg1, "zone") ||
+        !str_cmp(arg1, "evil") || !str_cmp(arg1, "good") ||
+        !str_cmp(arg1, "all")))
+    {
+      send_to_char("You don't see anybody.\n", ch);
     }
     return;
   }
