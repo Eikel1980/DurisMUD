@@ -3734,7 +3734,7 @@ void do_nchat(P_char ch, char *argument, int cmd)
       
     if (IS_TRUSTED(i->character))
     {
-      sprintf(Gbuf1, "&+G%s&n&+g newbie-chats (%s): '&+Y%s&n&+g'\n",
+      sprintf(Gbuf1, "&+G%s&n&+g newbie-chats (%s&+g): '&+Y%s&n&+g'\n",
               PERS(ch, i->character, FALSE), Gbuf2, language_CRYPT(ch,
                                                                    i->
                                                                    character,
