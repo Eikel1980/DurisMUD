@@ -935,7 +935,9 @@ void do_tell(P_char ch, char *argument, int cmd)
       if (IS_SET(vict->specials.act, PLR_AFK))
         act("$E is away from $S keyboard right now..", FALSE, ch, 0, vict,
             TO_CHAR);
-      
+      if (!CAN_SEE(vict, ch))
+	act("&+L$E cannot see you..&n", FALSE, ch, 0, vict, TO_CHAR);
+
       if (get_property("logs.chat.status", 0.000) && IS_PC(ch) && IS_PC(vict))
         logit(LOG_CHAT, "%s tells %s '%s'", GET_NAME(ch), GET_NAME(vict), message);
     }
