@@ -584,7 +584,7 @@ void do_quest(P_char ch, char *args, int cmd)
     }
     else if(ch->only.pc->quest_type == FIND_AND_KILL)
     {
-      sprintf(buf, "Go kill %d %s (%d left) in %s and then come back!\r\n", ch->only.pc->quest_kill_original, q_name,  (ch->only.pc->quest_kill_original - ch->only.pc->quest_kill_how_many),  zone_table[real_zone0(ch->only.pc->quest_zone_number)].name );
+      sprintf(buf, "Go kill %d %s (%d left) in %s!\r\n", ch->only.pc->quest_kill_original, q_name,  (ch->only.pc->quest_kill_original - ch->only.pc->quest_kill_how_many),  zone_table[real_zone0(ch->only.pc->quest_zone_number)].name );
       send_to_char(buf, ch);
       wizlog(56, "%s got a quest to go kill %d of mob vnum %d; they have %d left.", 
            GET_NAME(ch), ch->only.pc->quest_kill_original, ch->only.pc->quest_mob_vnum,
@@ -1012,7 +1012,7 @@ int suggestQuestMob(int zone_num, P_char ch, int QUEST_TYPE)
 
   if(KIND_OF_QUEST == FIND_AND_KILL) //FIND AND KILL A MOB
   {
-    MAX_LEVEL = MAX_LEVEL + 10;
+    MAX_LEVEL = MAX_LEVEL + 6;
   }
   if(KIND_OF_QUEST == FIND_AND_ASK) //FIND AND TALK TO HIM
   {

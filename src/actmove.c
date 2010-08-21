@@ -885,6 +885,9 @@ int can_enter_room(P_char ch, int room, int show_msg)
 
     if (IS_AFFECTED(ch, AFF_LEVITATE))
       has_boat = TRUE;
+    
+    if (has_innate(ch, INNATE_SWAMP_SNEAK))
+      has_boat = TRUE;
 
     if (!has_boat && !IS_TRUSTED(ch) && !IS_AFFECTED(ch, AFF_WRAITHFORM) &&
         ch->specials.z_cord < 1)
@@ -1258,7 +1261,7 @@ int do_simple_move_skipping_procs(P_char ch, int exitnumb, unsigned int flags)
     return FALSE;
   }
 
-  if(has_innate(ch, INNATE_SWAMP_SNEAK))
+  if(has_innate(ch, INNATE_CALMING))
     calming = (int)get_property("innate.calming.delay", 10);
 
   if(!can_enter_room(ch, EXIT(ch, exitnumb)->to_room, TRUE))
