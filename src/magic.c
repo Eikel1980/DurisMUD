@@ -2753,7 +2753,7 @@ void spell_bigbys_clenched_fist(int level, P_char ch, char *arg, int type,
     "$n's &+Ymagic fist&N punches $N into so much pulp!", 0
   };
 
-  int dam = 7 * level + number(1, 25);
+  int dam = 10 * level + number(1, 25);
 
   if(!NewSaves(victim, SAVING_SPELL, 0))
     dam = (int) (dam * 2.0);
@@ -2795,7 +2795,7 @@ void spell_bigbys_crushing_hand(int level, P_char ch, char *arg, int type,
       0
   };
 
-  int dam = 8 * level + number(1, 25);
+  int dam = 14 * level + number(1, 25);
 
   if(!NewSaves(victim, SAVING_SPELL, 0))
     dam = (int) (dam * 2);
