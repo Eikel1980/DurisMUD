@@ -599,7 +599,7 @@ void raise_undead(int level, P_char ch, P_char victim, P_obj obj,
   if ((typ >= THEURPET_START) && (typ <= THEURPET_END))
   {
     act("After a short &+yr&+Yi&+Wtu&+Ya&+yl&n, the &+Wsoul&n of $N&n is called to inhibit the $p.", FALSE, ch, obj, undead, TO_CHAR);
-    act("The &p &+btr&+Ban&+Csf&+Bor&+bms&n into $N&n and awaits instructions from &n&n.", FALSE, ch, obj, undead, TO_ROOM);
+    act("The $p &+btr&+Ban&+Csf&+Bor&+bms&n into $N&n and awaits instructions from &n&n.", FALSE, ch, obj, undead, TO_ROOM);
   }
   else
   {
@@ -772,7 +772,7 @@ void spawn_raise_undead(P_char ch, P_char vict, P_obj corpse)
         act("You place your hand on &N upon $S last dieing breath.", FALSE, ch, 0, vict, TO_CHAR);
         act("After a short &+yr&+Yi&+Wtu&+Ya&+yl&n, the &+Wsoul&n of $N&n is called to inhibit the $p.", FALSE, ch, 0, vict, TO_CHAR);
 	act("$n&n places $s hand on $N upon $S last dieing breath.", FALSE, ch, 0, vict, TO_ROOM);
-        act("The &p &+btr&+Ban&+Csf&+Bor&+bms&n into $N&n and awaits instructions from &n&n.", FALSE, ch, 0, vict, TO_ROOM);
+        act("The $p &+btr&+Ban&+Csf&+Bor&+bms&n into $N&n and awaits instructions from &n&n.", FALSE, ch, 0, vict, TO_ROOM);
       }
       else
       {
