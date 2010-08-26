@@ -968,6 +968,8 @@ int exp_mod(P_char k, P_char victim)
 // -Lucrot Sep09
 int gain_exp(P_char ch, P_char victim, const int value, int type)
 {
+  int goodcap = get_property("exp.level.cap.good", 15);
+  int evilcap = get_property("exp.level.cap.evil", 15);
   if(!(ch))
   {
     return 0;
@@ -1043,7 +1045,7 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
     P_char tank = GET_OPPONENT(victim);
     if (tank && tank != ch && IS_PC(tank) && grouped(tank, ch))
     {
-      if (GET_LEVEL(tank) >= GET_LEVEL(ch) - 15)  // powerleveling stopgap
+      if (GET_LEVEL(tank) >= GET_LEVEL(ch) - (RACE_GOOD(ch) ? goodcap : evilcap))  // powerleveling stopgap
       {
         gain_exp(tank, victim, XP, EXP_TANKING);
       }
@@ -1080,7 +1082,8 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
     if (!attacker) // only for healing in fight
         return 0;
 
-    if (GET_LEVEL(victim) <= GET_LEVEL(ch) - 15 || GET_LEVEL(victim) >= GET_LEVEL(ch) + 15)  // powerleveling stopgap
+    if (GET_LEVEL(victim) <= GET_LEVEL(ch) - GOOD_RACE(ch) ? goodcap : evilcap || 
+	GET_LEVEL(victim) >= GET_LEVEL(ch) + GOOD_RACE(ch) ? goodcap :evilcap)  // powerleveling stopgap
     {
       return 0;
     }
@@ -1245,20 +1248,23 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
     }
     else
     {
-      XP = XP * get_property("exp.factor.kill", 1.00) ;
+      if (!IS_PC(victim))
+      {
+        XP = XP * get_property("exp.factor.kill", 1.00) ;
 // debug("kill 1 exp gain (%d)", (int)XP);
-      XP = gain_global_exp_modifiers(ch, XP);
+        XP = gain_global_exp_modifiers(ch, XP);
 // debug("kill 2 exp gain (%d)", (int)XP);
-      XP = XP * exp_mod(ch, victim) / 100;
+        XP = XP * exp_mod(ch, victim) / 100;
 // debug("kill 3 exp gain (%d)", (int)XP);
-      XP = modify_exp_by_zone_trophy(ch, type, XP);
+        XP = modify_exp_by_zone_trophy(ch, type, XP);
 // debug("kill 4 exp gain (%d)", (int)XP);
-      XP = gain_exp_modifiers(ch, victim, XP);
+        XP = gain_exp_modifiers(ch, victim, XP);
 // debug("kill 5 exp gain (%d)", (int)XP);
-      XP = gain_exp_modifiers_race_only(ch, victim, XP);
+        XP = gain_exp_modifiers_race_only(ch, victim, XP);
 // debug("kill 6 exp gain (%d)", (int)XP);
-      XP = check_nexus_bonus(ch, (int)XP, NEXUS_BONUS_EXP); 
+        XP = check_nexus_bonus(ch, (int)XP, NEXUS_BONUS_EXP); 
 // debug("kill 7 exp gain (%d)", (int)XP);
+      }
       logit(LOG_EXP,
             "KILL EXP: %s (%d) killed by %s (%d): old exp: %d, new exp: %d, +exp: %d",
             GET_NAME(victim), GET_LEVEL(victim), GET_NAME(ch),
@@ -1267,7 +1273,7 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
     
     if(pvp)
     {
-      XP = XP * get_property("gain.exp.mod.pvp", 1.250);
+      XP = XP * get_property("gain.exp.mod.pvp", 1.000);
 // debug("kill 8 exp gain (%d)", (int)XP);
     }
   }

@@ -351,6 +351,7 @@ void update_dam_factors()
   dam_factor[DF_BERSERKRAGE] = get_property("damage.increase.berserk.rage", 1.350);
   dam_factor[DF_RAGED] = get_property("damage.increase.rage", 2.000);
   dam_factor[DF_ENERGY_CONTAINMENT] = get_property("damage.reduction.EnergyContainment", 0.750);
+  dam_factor[DF_GUARDIANS_BULWARK] = get_property("damage.reduction.guardians.bulwark", 0.850);
 }
 
 // The swashbuckler is considered the victim. // May09 -Lucrot
@@ -4566,6 +4567,10 @@ int melee_damage(P_char ch, P_char victim, double dam, int flags,
     if(has_innate(victim, INNATE_TROLL_SKIN))
       dam *= dam_factor[DF_TROLLSKIN];
 
+    if(has_innate(victim, INNATE_GUARDIANS_BULWARK) &&
+	victim->equipment[WEAR_SHIELD])
+      dam *= dam_factor[DF_GUARDIANS_BULWARK];
+    
     if(affected_by_spell(victim, SKILL_BERSERK))
       dam *= dam_factor[DF_BERSERKMELEE];
 
@@ -5655,8 +5660,7 @@ int calculate_thac_zero(P_char ch, int skill)
   {
     to_hit = get_property("to.hit.WarriorTypes", 10);
   }
-  else if(GET_CLASS(ch, CLASS_MONK) ||
-          GET_CLASS(ch, CLASS_MERCENARY) ||
+  else if(GET_CLASS(ch, CLASS_MERCENARY) ||
           GET_CLASS(ch, CLASS_REAVER) ||
           GET_CLASS(ch, CLASS_RANGER)  ||
           GET_CLASS(ch, CLASS_BERSERKER) ||
@@ -5672,7 +5676,8 @@ int calculate_thac_zero(P_char ch, int skill)
   }
   else if(GET_CLASS(ch, CLASS_THIEF) ||
          GET_CLASS(ch, CLASS_BARD) ||
-         GET_CLASS(ch, CLASS_ROGUE))
+         GET_CLASS(ch, CLASS_ROGUE) ||
+	 GET_CLASS(ch, CLASS_MONK))
   {
     to_hit = get_property("to.hit.RogueTypes", 7);
   }
@@ -8397,11 +8402,11 @@ void perform_violence(void)
     number_attacks = calculate_attacks(ch, attacks);
 
 // Monks ignore inertial barrier and armlocks. May2010 -Lucrot
-    if(!GET_CLASS(ch, CLASS_MONK) &&
-      (IS_AFFECTED3(opponent, AFF3_INERTIAL_BARRIER) ||
+// Removing monks ignore per Kitsero. Aug2010
+    if(IS_AFFECTED3(opponent, AFF3_INERTIAL_BARRIER) ||
       (!GET_CLASS(ch, CLASS_PSIONICIST) &&
       IS_AFFECTED3(ch, AFF3_INERTIAL_BARRIER) ) ||
-      IS_ARMLOCK(ch)))
+      IS_ARMLOCK(ch))
     {
       real_attacks = number_attacks - (int) (number_attacks / 2);
     }
