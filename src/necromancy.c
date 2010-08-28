@@ -348,7 +348,7 @@ void raise_undead(int level, P_char ch, P_char victim, P_obj obj,
   if ((GET_ALIGNMENT(ch) > 0) && GET_CLASS(ch, CLASS_NECROMANCER))
   {
     send_to_char
-      ("You don't even _consider_ such a evil act, meddling with undead!",
+      ("You don't even _consider_ such a evil act, meddling with undead!\n",
        ch);
     return;
   }
@@ -356,7 +356,7 @@ void raise_undead(int level, P_char ch, P_char victim, P_obj obj,
   if ((GET_ALIGNMENT(ch) < 0) && GET_CLASS(ch, CLASS_THEURGIST))
   {
     send_to_char
-      ("You don't even _consider_ such a good act, meddling with angels!",
+      ("You don't even _consider_ such a good act, meddling with angels!\n",
        ch);
     return;
   }

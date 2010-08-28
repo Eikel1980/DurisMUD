@@ -7545,7 +7545,10 @@ struct obj_data *clone_obj(P_obj obj)
       SET_BIT(ocopy->str_mask, STRUNG_DESC1);
     }
   }
-
+  if (obj->action_description)
+  {
+    ocopy->action_description = str_dup(obj->action_description);
+  }
 
   for (i = 0; i <= NUMB_OBJ_VALS; i++)
     ocopy->value[i] = obj->value[i];
