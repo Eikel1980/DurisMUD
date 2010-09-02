@@ -162,7 +162,7 @@ int list_cargo(P_char ch, P_ship ship, int owned)
         }
     }
 
-    send_to_char_f(ch, "\r\nCapacity: &+W%d&n/&+W%d\r\n", SHIPAVAILCARGOLOAD(ship), SHIPMAXCARGOLOAD(ship));
+    send_to_char_f(ch, "\r\nCapacity: &+W%d&n/&+W%d\r\n", SHIP_AVAIL_CARGO_LOAD(ship), SHIP_MAX_CARGO_LOAD(ship));
 
     return TRUE;
 }
@@ -271,18 +271,18 @@ int list_hulls (P_char ch, P_ship ship, int owned)
         send_to_char("&+W-----------------------------------------------------------------------------------\r\n", ch);
         for (int i = 0; i < MAXSHIPCLASS; i++)                                
         {
-            if (SHIPTYPECOST(i) == 0) continue;
+            if (SHIPTYPE_COST(i) == 0) continue;
             send_to_char_f(ch, "%-2d) %-11s   &+Y%-3d    &+Y%-3d       &+Y%-2d      &+Y%-3d    &+Y%-3d   &+Y%1d/&+Y%1d/&+Y%1d/&+Y%1d   &+R%c   &n%-14s\r\n", 
                 i + 1,
-                SHIPTYPENAME(i), 
-                SHIPTYPEMAXWEIGHT(i),
-                SHIPTYPECARGO(i),
-                SHIPTYPEPEOPLE(i),
-                SHIPTYPESPEED(i),
+                SHIPTYPE_NAME(i), 
+                SHIPTYPE_MAX_WEIGHT(i),
+                SHIPTYPE_CARGO(i),
+                SHIPTYPE_PEOPLE(i),
+                SHIPTYPE_SPEED(i),
                 ship_arc_properties[i].armor[SIDE_FORE] + ship_arc_properties[i].armor[SIDE_STAR] + ship_arc_properties[i].armor[SIDE_REAR] + ship_arc_properties[i].armor[SIDE_PORT],
                 ship_arc_properties[i].max_weapon_slots[SIDE_FORE], ship_arc_properties[i].max_weapon_slots[SIDE_STAR], ship_arc_properties[i].max_weapon_slots[SIDE_REAR], ship_arc_properties[i].max_weapon_slots[SIDE_PORT],
-                (SHIPTYPEEPICCOST(i) > 0) ? ('0' + SHIPTYPEEPICCOST(i)) : ' ',
-                coin_stringv(SHIPTYPECOST(i)));
+                (SHIPTYPE_EPIC_COST(i) > 0) ? ('0' + SHIPTYPE_EPIC_COST(i)) : ' ',
+                coin_stringv(SHIPTYPE_COST(i)));
         }
         send_to_char("\r\nTo upgrade/downgrade your hull, type 'buy <number>'\r\n", ch);
         send_to_char("To sell your ship completely, type 'sell ship'. &+RCAUTION!&n You will loose your frags and crews!\r\n", ch);
@@ -318,18 +318,18 @@ int list_hulls (P_char ch, P_ship ship, int owned)
         send_to_char("&+W-----------------------------------------------------------------------------------\r\n", ch);
         for (int i = 0; i < MAXSHIPCLASS; i++)
         {
-            if (SHIPTYPECOST(i) == 0) continue;
+            if (SHIPTYPE_COST(i) == 0) continue;
             send_to_char_f(ch, "%-2d) %-11s   &+Y%-3d    &+Y%-3d       &+Y%-2d      &+Y%-3d    &+Y%-3d   &+Y%1d/&+Y%1d/&+Y%1d/&+Y%1d   &+R%c   &n%-14s\r\n",
                 i + 1,
-                SHIPTYPENAME(i), 
-                SHIPTYPEMAXWEIGHT(i),
-                SHIPTYPECARGO(i),
-                SHIPTYPEPEOPLE(i),
-                SHIPTYPESPEED(i),
+                SHIPTYPE_NAME(i), 
+                SHIPTYPE_MAX_WEIGHT(i),
+                SHIPTYPE_CARGO(i),
+                SHIPTYPE_PEOPLE(i),
+                SHIPTYPE_SPEED(i),
                 ship_arc_properties[i].armor[SIDE_FORE] + ship_arc_properties[i].armor[SIDE_STAR] + ship_arc_properties[i].armor[SIDE_REAR] + ship_arc_properties[i].armor[SIDE_PORT],
                 ship_arc_properties[i].max_weapon_slots[SIDE_FORE], ship_arc_properties[i].max_weapon_slots[SIDE_STAR], ship_arc_properties[i].max_weapon_slots[SIDE_REAR], ship_arc_properties[i].max_weapon_slots[SIDE_PORT],
-                (SHIPTYPEEPICCOST(i) > 0) ? ('0' + SHIPTYPEEPICCOST(i)) : ' ',
-                coin_stringv(SHIPTYPECOST(i)));
+                (SHIPTYPE_EPIC_COST(i) > 0) ? ('0' + SHIPTYPE_EPIC_COST(i)) : ' ',
+                coin_stringv(SHIPTYPE_COST(i)));
         }
 
         send_to_char("\r\n", ch);
@@ -368,14 +368,14 @@ int summon_ship (P_char ch, P_ship ship, bool time_only)
 
     if (!time_only)
     {
-        int summon_cost = SHIPTYPEHULLWEIGHT(ship->m_class) * 50;
+        int summon_cost = SHIPTYPE_HULL_WEIGHT(ship->m_class) * 50;
         if (GET_MONEY(ch) < summon_cost) 
         {
             send_to_char_f(ch, "It will cost %s to summon your ship!\r\n", coin_stringv(summon_cost));
             return TRUE;
         }
     
-        if (ship->location == 31725) {
+        if (ship->location == DAVY_JONES_LOCKER) {
             send_to_char("You start to call your ship back from &+LDavy Jones Locker...\r\n", ch);
         }
     
@@ -385,7 +385,7 @@ int summon_ship (P_char ch, P_ship ship, bool time_only)
     int summontime, pvp = false;
     if( IS_TRUSTED(ch) )
         summontime = 0;
-    else if (SHIPCLASS(ship) == SH_SLOOP && SHIPCLASS(ship) == SH_YACHT)
+    else if (SHIP_CLASS(ship) == SH_SLOOP && SHIP_CLASS(ship) == SH_YACHT)
     {
         summontime = (280 * 50) / MAX(get_maxspeed_without_cargo(ship), 1);
     }
@@ -635,7 +635,7 @@ int sell_slot (P_char ch, P_ship ship, int slot)
     if (ship->slot[slot].type == SLOT_WEAPON) 
     {
         int cost;
-        if (SHIPWEAPONDAMAGED(ship, slot))
+        if (SHIP_WEAPON_DAMAGED(ship, slot))
             cost = (int) (weapon_data[ship->slot[slot].index].cost * .1);
         else
             cost = (int) (weapon_data[ship->slot[slot].index].cost * .9);
@@ -685,12 +685,12 @@ void check_contraband(P_ship ship, int to_room)
     if (rroom >= NUM_PORTS) 
         return;
 
-    if (SHIPCONTRA(ship) + SHIPCARGO(ship) == 0)
+    if (SHIP_CONTRA(ship) + SHIP_CARGO(ship) == 0)
         return;
 
     act_to_all_in_ship(ship, "The port authorities board the ship in search of contraband...");
 
-    float total_load = (float)SHIPCARGOLOAD(ship) / (float)SHIPMAXCARGOLOAD(ship);
+    float total_load = (float)SHIP_CARGO_LOAD(ship) / (float)SHIP_MAX_CARGO_LOAD(ship);
     bool did_confiscate = false;
     for (int slot = 0; slot < MAXSLOTS; slot++)
     {
@@ -716,7 +716,7 @@ void check_contraband(P_ship ship, int to_room)
                 if (conf_chance < 0) conf_chance = 5.0; // always a small chance of being confiscated
             }
           
-            debug("SHIP: (%s) confiscation chance (%f).", SHIPOWNER(ship), conf_chance);
+            debug("SHIP: (%s) confiscation chance (%f).", SHIP_OWNER(ship), conf_chance);
 
             int confiscated = 0;
             for (int i = 0; i < crates; i++)
@@ -725,7 +725,7 @@ void check_contraband(P_ship ship, int to_room)
           
             if (confiscated > 0)
             {
-                sprintf(buf, "CONTRABAND: %s had &+W%d&n/&+W%d&n %s&n confiscated in %s [%d]", SHIPOWNER(ship), confiscated, crates, contra_type_name(type), ports[rroom].loc_name, ports[rroom].loc_room);
+                sprintf(buf, "CONTRABAND: %s had &+W%d&n/&+W%d&n %s&n confiscated in %s [%d]", SHIP_OWNER(ship), confiscated, crates, contra_type_name(type), ports[rroom].loc_name, ports[rroom].loc_room);
                 statuslog(56, buf);
                 logit(LOG_SHIP, strip_ansi(buf).c_str());
                 
@@ -760,12 +760,12 @@ int sell_ship(P_char ch, P_ship ship, const char* arg)
         i += (ship->armor[j] + ship->internal[j]);
         k += (ship->maxarmor[j] + ship->maxinternal[j]);
     }
-    int cost = (int) ((int) (SHIPTYPECOST(ship->m_class) * .90) * (float) ((float) i / (float) k));
+    int cost = (int) ((int) (SHIPTYPE_COST(ship->m_class) * .90) * (float) ((float) i / (float) k));
     for (j = 0; j < MAXSLOTS; j++) 
     {
         if (ship->slot[j].type == SLOT_WEAPON) 
         {
-            if (SHIPWEAPONDAMAGED(ship, j))
+            if (SHIP_WEAPON_DAMAGED(ship, j))
                 cost += (int) (weapon_data[ship->slot[j].index].cost * .1);
             else
                 cost += (int) (weapon_data[ship->slot[j].index].cost * .9);
@@ -790,7 +790,7 @@ int repair_all(P_char ch, P_ship ship)
 {
     int cost = 0, buildtime = 0;
 
-    int sail_damage = SHIPMAXSAIL(ship) - ship->mainsail;
+    int sail_damage = SHIP_MAX_SAIL(ship) - ship->mainsail;
     if (sail_damage > 0)
     {
         cost += sail_damage * 2000;
@@ -810,9 +810,9 @@ int repair_all(P_char ch, P_ship ship)
 
     for (int slot = 0; slot < MAXSLOTS; slot++) 
     {
-        if (ship->slot[slot].type == SLOT_WEAPON && SHIPWEAPONDAMAGED(ship, slot))
+        if (ship->slot[slot].type == SLOT_WEAPON && SHIP_WEAPON_DAMAGED(ship, slot))
         {
-            if (SHIPWEAPONDESTROYED(ship, slot))
+            if (SHIP_WEAPON_DESTROYED(ship, slot))
             {
                 cost += weapon_data[ship->slot[slot].index].cost / 2;
                 buildtime += 150;
@@ -839,7 +839,7 @@ int repair_all(P_char ch, P_ship ship)
 
     SUB_MONEY(ch, cost, 0);
 
-    ship->mainsail = SHIPMAXSAIL(ship);
+    ship->mainsail = SHIP_MAX_SAIL(ship);
     for (int j = 0; j < 4; j++) 
     {
         ship->armor[j] = ship->maxarmor[j];
@@ -847,7 +847,7 @@ int repair_all(P_char ch, P_ship ship)
     }
     for (int slot = 0; slot < MAXSLOTS; slot++) 
     {
-        if (ship->slot[slot].type == SLOT_WEAPON && SHIPWEAPONDAMAGED(ship, slot))
+        if (ship->slot[slot].type == SLOT_WEAPON && SHIP_WEAPON_DAMAGED(ship, slot))
             ship->slot[slot].val2 = 0;
     }
 
@@ -862,7 +862,7 @@ int repair_all(P_char ch, P_ship ship)
 
 int repair_sail(P_char ch, P_ship ship)
 {
-    int total_damage = SHIPMAXSAIL(ship) - ship->mainsail;
+    int total_damage = SHIP_MAX_SAIL(ship) - ship->mainsail;
     if (total_damage <= 0) 
     {
         send_to_char("Your sails are fine, they don't need repair!\r\n", ch);
@@ -884,7 +884,7 @@ int repair_sail(P_char ch, P_ship ship)
 
     SUB_MONEY(ch, cost, 0);
 
-    ship->mainsail = SHIPMAXSAIL(ship);
+    ship->mainsail = SHIP_MAX_SAIL(ship);
 
     int buildtime = 75 + total_damage;
     send_to_char_f(ch, "Thanks for your business, it will take %d hours to complete this repair.\r\n", buildtime / 75);
@@ -1065,12 +1065,12 @@ int repair_weapon(P_char ch, P_ship ship, char* arg)
         send_to_char ("Invalid weapon slot'\r\n", ch);
         return TRUE;
     }
-    if (!SHIPWEAPONDAMAGED(ship, slot)) 
+    if (!SHIP_WEAPON_DAMAGED(ship, slot)) 
     {
         send_to_char("This weapon isn't broken!\r\n", ch);
         return TRUE;
     }
-    if (SHIPWEAPONDESTROYED(ship, slot))
+    if (SHIP_WEAPON_DESTROYED(ship, slot))
     {
         cost = weapon_data[ship->slot[slot].index].cost / 2;
         buildtime = 150;
@@ -1182,7 +1182,7 @@ int rename_ship(P_char ch, P_ship ship, char* new_name)
 
 
     /* count money */
-    int renamePrice = (int) (SHIPTYPECOST(ship->m_class) / 10);
+    int renamePrice = (int) (SHIPTYPE_COST(ship->m_class) / 10);
 
     if (GET_MONEY(ch) < renamePrice)
     {
@@ -1220,7 +1220,7 @@ int buy_cargo(P_char ch, P_ship ship, char* arg)
         send_to_char("What cargo? We don't sell any cargo here!\r\n", ch);
         return TRUE;
     }
-    if (SHIPMAXCARGO(ship) == 0)
+    if (SHIP_MAX_CARGO(ship) == 0)
     {
         send_to_char("You ship has no space for cargo.\r\n", ch);
         return TRUE;    
@@ -1237,14 +1237,14 @@ int buy_cargo(P_char ch, P_ship ship, char* arg)
         return TRUE;
     }
 
-    if (SHIPAVAILCARGOLOAD(ship) <= 0)
+    if (SHIP_AVAIL_CARGO_LOAD(ship) <= 0)
     {
         send_to_char("You don't have any space left on your ship!\r\n", ch);
         return TRUE;
     }
-    else if (asked_for > SHIPAVAILCARGOLOAD(ship))
+    else if (asked_for > SHIP_AVAIL_CARGO_LOAD(ship))
     {
-        send_to_char_f(ch, "You only have space for %d more crates!\r\n", SHIPAVAILCARGOLOAD(ship));
+        send_to_char_f(ch, "You only have space for %d more crates!\r\n", SHIP_AVAIL_CARGO_LOAD(ship));
         return TRUE;
     }
 
@@ -1337,7 +1337,7 @@ int buy_contra(P_char ch, P_ship ship, char* arg)
         send_to_char ("Contraband?! *gasp* how could you even think that I would sell such things!\r\n", ch);
         return TRUE;
     }
-    if (SHIPMAXCONTRA(ship) == 0)
+    if (SHIP_MAX_CONTRA(ship) == 0)
     {
         send_to_char("You ship has no places to hide contraband.\r\n", ch);
         return TRUE;
@@ -1355,20 +1355,20 @@ int buy_contra(P_char ch, P_ship ship, char* arg)
         return TRUE;
     }
 
-    if (SHIPAVAILCARGOLOAD(ship) <= 0)
+    if (SHIP_AVAIL_CARGO_LOAD(ship) <= 0)
     {
         send_to_char("You don't have any space left on your ship!\r\n", ch);
         return TRUE;
     }
     // max contraband amount reduced proportionally to total available cargo load
-    int contra_max = int ((float)SHIPMAXCONTRA(ship) * ((float)SHIPMAXCARGOLOAD(ship) / (float)SHIPMAXCARGO(ship)));
-    int contra_avail = contra_max - SHIPCONTRA(ship);
+    int contra_max = int ((float)SHIP_MAX_CONTRA(ship) * ((float)SHIP_MAX_CARGO_LOAD(ship) / (float)SHIP_MAX_CARGO(ship)));
+    int contra_avail = contra_max - SHIP_CONTRA(ship);
     if (contra_avail <= 0)
     {
         send_to_char("You don't have any space left on your ship to hide contraband!\r\n", ch);
         return TRUE;
     }
-    int max_avail = MIN(SHIPAVAILCARGOLOAD(ship), contra_avail);
+    int max_avail = MIN(SHIP_AVAIL_CARGO_LOAD(ship), contra_avail);
     if (asked_for > max_avail)
     {
         send_to_char_f(ch, "You only have space for %d more crates of contraband to hide!\r\n", max_avail);
@@ -1471,9 +1471,9 @@ int buy_weapon(P_char ch, P_ship ship, char* arg1, char* arg2)
         return TRUE;
     }
 
-    if (weapon_data[w].weight > SHIPAVAILWEIGHT(ship) ) 
+    if (weapon_data[w].weight > SHIP_AVAIL_WEIGHT(ship) ) 
     {
-        send_to_char_f(ch, "That weapon weighs %d! Your ship can only support %d!\r\n", weapon_data[w].weight, SHIPMAXWEIGHT(ship));
+        send_to_char_f(ch, "That weapon weighs %d! Your ship can only support %d!\r\n", weapon_data[w].weight, SHIP_MAX_WEIGHT(ship));
         return TRUE;
     }
     if (!ship_allowed_weapons[ship->m_class][w])
@@ -1574,9 +1574,9 @@ int buy_equipment(P_char ch, P_ship ship, char* arg1)
         return TRUE;
     }
 
-    if (equipment_data[e].weight > SHIPAVAILWEIGHT(ship) ) 
+    if (equipment_data[e].weight > SHIP_AVAIL_WEIGHT(ship) ) 
     {
-        send_to_char_f(ch, "That equipment weighs %d! Your ship can only support %d!\r\n", equipment_data[e].weight, SHIPMAXWEIGHT(ship));
+        send_to_char_f(ch, "That equipment weighs %d! Your ship can only support %d!\r\n", equipment_data[e].weight, SHIP_MAX_WEIGHT(ship));
         return TRUE;
     }
     if (!ship_allowed_equipment[ship->m_class][e])
@@ -1670,13 +1670,13 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
         return TRUE;
     }
 
-    if (SHIPTYPEMINLEVEL(i) > GET_LEVEL(ch)) 
+    if (SHIPTYPE_MIN_LEVEL(i) > GET_LEVEL(ch)) 
     {
         send_to_char ("You are too low for such a big ship! Get more experience!\r\n", ch);
         return TRUE;
     }
 
-    if (SHIPTYPECOST(i) == 0 && !IS_TRUSTED(ch)) 
+    if (SHIPTYPE_COST(i) == 0 && !IS_TRUSTED(ch)) 
     {
         send_to_char ("You can not buy this hull.\r\n", ch);
         return TRUE;
@@ -1692,7 +1692,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
             return TRUE;
         }
 
-        if (SHIPCONTRA(ship) + SHIPCARGO(ship) > 0)
+        if (SHIP_CONTRA(ship) + SHIP_CARGO(ship) > 0)
         {
             send_to_char ("You can not reconstruct ship full of cargo!\r\n", ch);
             return TRUE;
@@ -1709,33 +1709,33 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
             }
         }*/
 
-        cost = SHIPTYPECOST(i) - (int) (SHIPTYPECOST(oldclass) * .90);
+        cost = SHIPTYPE_COST(i) - (int) (SHIPTYPE_COST(oldclass) * .90);
         if (cost >= 0)
         {
-            if (GET_MONEY(ch) < cost || epic_skillpoints(ch) < SHIPTYPEEPICCOST(i)) 
+            if (GET_MONEY(ch) < cost || epic_skillpoints(ch) < SHIPTYPE_EPIC_COST(i)) 
             {
-                if (SHIPTYPEEPICCOST(i) > 0)
-                    send_to_char_f(ch, "That upgrade costs %s and %d epic points!\r\n", coin_stringv(cost), SHIPTYPEEPICCOST(i));
+                if (SHIPTYPE_EPIC_COST(i) > 0)
+                    send_to_char_f(ch, "That upgrade costs %s and %d epic points!\r\n", coin_stringv(cost), SHIPTYPE_EPIC_COST(i));
                 else
                     send_to_char_f(ch, "That upgrade costs %s!\r\n", coin_stringv(cost));
                 return TRUE;
             }
             SUB_MONEY(ch, cost, 0);/* OKay, they have the plat, deduct it and build the ship */
-            if (SHIPTYPEEPICCOST(i) > 0)
-                epic_gain_skillpoints(ch, -SHIPTYPEEPICCOST(i));
+            if (SHIPTYPE_EPIC_COST(i) > 0)
+                epic_gain_skillpoints(ch, -SHIPTYPE_EPIC_COST(i));
         }
         else
         {
-            if (epic_skillpoints(ch) < SHIPTYPEEPICCOST(i))
+            if (epic_skillpoints(ch) < SHIPTYPE_EPIC_COST(i))
             {
-                send_to_char_f(ch, "That upgrade costs %d epic points!\r\n", SHIPTYPEEPICCOST(i));
+                send_to_char_f(ch, "That upgrade costs %d epic points!\r\n", SHIPTYPE_EPIC_COST(i));
                 return TRUE;
             }
             cost *= -1;
             send_to_char_f(ch, "You receive %s&n for remaining materials.\r\n", coin_stringv(cost));
             ADD_MONEY(ch, cost);
-            if (SHIPTYPEEPICCOST(i) > 0)
-                epic_gain_skillpoints(ch, -SHIPTYPEEPICCOST(i));
+            if (SHIPTYPE_EPIC_COST(i) > 0)
+                epic_gain_skillpoints(ch, -SHIPTYPE_EPIC_COST(i));
         }
 
         ship->m_class = i;
@@ -1768,12 +1768,12 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
         if (!check_ship_name(0, ch, arg2))
             return TRUE;
 
-        if (GET_MONEY(ch) < SHIPTYPECOST(i) || epic_skillpoints(ch) < SHIPTYPEEPICCOST(i)) 
+        if (GET_MONEY(ch) < SHIPTYPE_COST(i) || epic_skillpoints(ch) < SHIPTYPE_EPIC_COST(i)) 
         {
-            if (SHIPTYPEEPICCOST(i) > 0)
-                send_to_char_f(ch, "That ship costs %s and %d epic points!\r\n", coin_stringv(SHIPTYPECOST(i)), SHIPTYPEEPICCOST(i));
+            if (SHIPTYPE_EPIC_COST(i) > 0)
+                send_to_char_f(ch, "That ship costs %s and %d epic points!\r\n", coin_stringv(SHIPTYPE_COST(i)), SHIPTYPE_EPIC_COST(i));
             else
-                send_to_char_f(ch, "That ship costs %s!\r\n", coin_stringv(SHIPTYPECOST(i)));
+                send_to_char_f(ch, "That ship costs %s!\r\n", coin_stringv(SHIPTYPE_COST(i)));
             return TRUE;
         }
 
@@ -1785,7 +1785,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
             send_to_char_f(ch, "Error creating new ship (%d), please notify a god.\r\n", shiperror);
             return TRUE;
         }
-        buildtime = 75 * SHIPTYPEID(i) / 4;
+        buildtime = 75 * SHIPTYPE_ID(i) / 4;
         ship->ownername = str_dup(GET_NAME(ch));
         ship->anchor = world[ch->in_room].number;
         name_ship(arg2, ship);
@@ -1798,10 +1798,10 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
         write_ships_index();
 
         // everything went successfully, substracting the cost        
-        SUB_MONEY(ch, SHIPTYPECOST(i), 0);
-        if (SHIPTYPEEPICCOST(i) > 0)
-            epic_gain_skillpoints(ch, -SHIPTYPEEPICCOST(i));
-        send_to_char_f(ch, "Thanks for your business, this hull will take %d hours to build.\r\n", SHIPTYPEID(i) / 4);
+        SUB_MONEY(ch, SHIPTYPE_COST(i), 0);
+        if (SHIPTYPE_EPIC_COST(i) > 0)
+            epic_gain_skillpoints(ch, -SHIPTYPE_EPIC_COST(i));
+        send_to_char_f(ch, "Thanks for your business, this hull will take %d hours to build.\r\n", SHIPTYPE_ID(i) / 4);
     }
 
     if (!IS_TRUSTED(ch) && BUILDTIME)
@@ -1874,7 +1874,7 @@ int ship_shop_proc(int room, P_char ch, int cmd, char *arg)
     {
         if ((cmd != CMD_SUMMON) && (cmd != CMD_LIST) && (cmd != CMD_SELL))
         {
-            int summon_cost = SHIPTYPEHULLWEIGHT(ship->m_class) * 100;
+            int summon_cost = SHIPTYPE_HULL_WEIGHT(ship->m_class) * 100;
             send_to_char("Your ship needs to be here to receive service.\r\n", ch);
             send_to_char_f(ch, "For a small fee of %s, &nI can have my men tell your crew to sail here.\r\n", coin_stringv(summon_cost));
             send_to_char("Just type 'summon ship' to have your ship sail here.\r\n", ch);
@@ -1882,7 +1882,7 @@ int ship_shop_proc(int room, P_char ch, int cmd, char *arg)
         }
     }
 
-    if (owned && (!SHIPISDOCKED(ship) || ship->timer[T_UNDOCK] != 0)) 
+    if (owned && (!SHIP_DOCKED(ship) || ship->timer[T_UNDOCK] != 0)) 
     {
         if ((cmd != CMD_SUMMON) && (cmd != CMD_LIST) && (cmd != CMD_SELL))
         {
@@ -1954,7 +1954,7 @@ int ship_shop_proc(int room, P_char ch, int cmd, char *arg)
             }
             else 
             {
-                if (!SHIPISDOCKED(ship) || ship->timer[T_UNDOCK] != 0)
+                if (!SHIP_DOCKED(ship) || ship->timer[T_UNDOCK] != 0)
                 {
                     send_to_char_f(ch,"Dock your ship first!\r\n");
                     return TRUE;

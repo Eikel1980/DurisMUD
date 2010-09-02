@@ -9,6 +9,7 @@
 #define SHIP_ZONE_START 50001
 #define SHIP_ZONE_END 50999
 #define BUILDTIME 1
+#define DAVY_JONES_LOCKER 31725
 
 // Ship status
 #define DOCK              0
@@ -214,25 +215,25 @@ extern const int ship_allowed_weapons[MAXSHIPCLASS][MAXWEAPON];
 extern const int ship_allowed_equipment[MAXSHIPCLASS][MAXEQUIPMENT];
 
 // SHIP TYPE DATA MACROS
-#define SHIPTYPEID(index) ship_type_data[(index)]._classid
-#define SHIPTYPENAME(index) ship_type_data[(index)]._classname
-#define SHIPTYPECOST(index) ship_type_data[(index)]._cost
-#define SHIPTYPEEPICCOST(index) ship_type_data[(index)]._epiccost
-#define SHIPTYPEHULLWEIGHT(index) ship_type_data[(index)]._hull
-#define SHIPTYPEHULLMOD(index) ship_type_data[(index)].get_hull_mod()
-#define SHIPTYPEMAXWEIGHT(index) ship_type_data[(index)]._mxweight
-#define SHIPTYPEMAXSAIL(index) ship_type_data[(index)]._mxsail
-#define SHIPTYPESLOTS(index) ship_type_data[(index)]._slots
-#define SHIPTYPECARGO(index) ship_type_data[(index)]._mxcargo
-#define SHIPTYPECONTRA(index) ship_type_data[(index)]._mxcontra
-#define SHIPTYPEPEOPLE(index) ship_type_data[(index)]._mxpeople
-#define SHIPTYPESPEED(index) ship_type_data[(index)]._mxspeed
-#define SHIPTYPEHDDC(index) ship_type_data[(index)]._headingchangedecrement
-#define SHIPTYPESPGAIN(index) ship_type_data[(index)]._speedgain
-#define SHIPTYPEMINLEVEL(index) ship_type_data[(index)]._minlevel
-#define SHIPTYPEFREEEQUIPMENT(index) ship_type_data[(index)]._freeequip
-#define SHIPTYPEFREECARGO(index) ship_type_data[(index)]._freecargo
-#define SHIPTYPEKIND(index) ship_type_data[(index)]._kind
+#define SHIPTYPE_ID(index) ship_type_data[(index)]._classid
+#define SHIPTYPE_NAME(index) ship_type_data[(index)]._classname
+#define SHIPTYPE_COST(index) ship_type_data[(index)]._cost
+#define SHIPTYPE_EPIC_COST(index) ship_type_data[(index)]._epiccost
+#define SHIPTYPE_HULL_WEIGHT(index) ship_type_data[(index)]._hull
+#define SHIPTYPE_HULL_MOD(index) ship_type_data[(index)].get_hull_mod()
+#define SHIPTYPE_MAX_WEIGHT(index) ship_type_data[(index)]._mxweight
+#define SHIPTYPE_MAX_SAIL(index) ship_type_data[(index)]._mxsail
+#define SHIPTYPE_SLOTS(index) ship_type_data[(index)]._slots
+#define SHIPTYPE_CARGO(index) ship_type_data[(index)]._mxcargo
+#define SHIPTYPE_CONTRA(index) ship_type_data[(index)]._mxcontra
+#define SHIPTYPE_PEOPLE(index) ship_type_data[(index)]._mxpeople
+#define SHIPTYPE_SPEED(index) ship_type_data[(index)]._mxspeed
+#define SHIPTYPE_HDDC(index) ship_type_data[(index)]._headingchangedecrement
+#define SHIPTYPE_SPEED_GAIN(index) ship_type_data[(index)]._speedgain
+#define SHIPTYPE_MIN_LEVEL(index) ship_type_data[(index)]._minlevel
+#define SHIPTYPE_FREE_EQUIPMENT(index) ship_type_data[(index)]._freeequip
+#define SHIPTYPE_FREE_CARGO(index) ship_type_data[(index)]._freecargo
+#define SHIPTYPE_KIND(index) ship_type_data[(index)]._kind
 
 struct ShipArcProperties
 {
@@ -410,7 +411,7 @@ struct ShipData
     void show(P_char ch) const;
     int slot_weight(int type) const;
     int get_maxspeed() const { return maxspeed + maxspeed_bonus; }
-    int get_capacity() const { return SHIPTYPEPEOPLE(m_class) + capacity_bonus; }
+    int get_capacity() const { return SHIPTYPE_PEOPLE(m_class) + capacity_bonus; }
 
     int maxarmor[4], armor[4];
     int maxinternal[4], internal[4];
@@ -542,70 +543,70 @@ extern const char *ship_symbol[NUM_SECT_TYPES];
 /* ship variable access macros */
 
 //Armor defines
-#define SHIPMAXFARMOR(shipdata) (shipdata)->maxarmor[SIDE_FORE]
-#define SHIPMAXRARMOR(shipdata) (shipdata)->maxarmor[SIDE_REAR]
-#define SHIPMAXPARMOR(shipdata) (shipdata)->maxarmor[SIDE_PORT]
-#define SHIPMAXSARMOR(shipdata) (shipdata)->maxarmor[SIDE_STAR]
-#define SHIPARMOR(shipdata, arc) (shipdata)->armor[(arc)]
-#define SHIPFARMOR(shipdata) (shipdata)->armor[SIDE_FORE]
-#define SHIPRARMOR(shipdata) (shipdata)->armor[SIDE_REAR]
-#define SHIPPARMOR(shipdata) (shipdata)->armor[SIDE_PORT]
-#define SHIPSARMOR(shipdata) (shipdata)->armor[SIDE_STAR]
+#define SHIP_MAX_FARMOR(shipdata) (shipdata)->maxarmor[SIDE_FORE]
+#define SHIP_MAX_RARMOR(shipdata) (shipdata)->maxarmor[SIDE_REAR]
+#define SHIP_MAX_PARMOR(shipdata) (shipdata)->maxarmor[SIDE_PORT]
+#define SHIP_MAX_SARMOR(shipdata) (shipdata)->maxarmor[SIDE_STAR]
+#define SHIP_ARMOR(shipdata, arc) (shipdata)->armor[(arc)]
+#define SHIP_FARMOR(shipdata) (shipdata)->armor[SIDE_FORE]
+#define SHIP_RARMOR(shipdata) (shipdata)->armor[SIDE_REAR]
+#define SHIP_PARMOR(shipdata) (shipdata)->armor[SIDE_PORT]
+#define SHIP_SARMOR(shipdata) (shipdata)->armor[SIDE_STAR]
 
 //Internal defines
-#define SHIPMAXRINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_REAR]
-#define SHIPMAXFINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_FORE]
-#define SHIPMAXPINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_PORT]
-#define SHIPMAXSINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_STAR]
-#define SHIPINTERNAL(shipdata,arc) (shipdata)->internal[(arc)]
-#define SHIPFINTERNAL(shipdata) (shipdata)->internal[SIDE_FORE]
-#define SHIPRINTERNAL(shipdata) (shipdata)->internal[SIDE_REAR]
-#define SHIPPINTERNAL(shipdata) (shipdata)->internal[SIDE_PORT]
-#define SHIPSINTERNAL(shipdata) (shipdata)->internal[SIDE_STAR]
-#define SHIPHULLWEIGHT(shipdata) SHIPTYPEHULLWEIGHT(SHIPCLASS(shipdata))
-#define SHIPHULLMOD(shipdata) SHIPTYPEHULLMOD(SHIPCLASS(shipdata))
-#define SHIPSLOTWEIGHT(shipdata) (shipdata)->slot_weight(-1)
-#define SHIPMAXWEIGHT(shipdata)  SHIPTYPEMAXWEIGHT(SHIPCLASS(shipdata))
-#define SHIPMAXSAIL(shipdata)  SHIPTYPEMAXSAIL(SHIPCLASS(shipdata))
-#define SHIPAVAILWEIGHT(shipdata) ( SHIPMAXWEIGHT(shipdata) - SHIPSLOTWEIGHT(shipdata) )
-#define SHIPFREEEQUIPMENT(shipdata) SHIPTYPEFREEEQUIPMENT(SHIPCLASS(shipdata))
-#define SHIPFREECARGO(shipdata) SHIPTYPEFREECARGO(SHIPCLASS(shipdata))
-#define SHIPSAIL(shipdata) (shipdata)->mainsail
-#define SHIPWEAPONDAMAGED(ship, i) (ship->slot[i].val2 > 0)
-#define SHIPWEAPONDESTROYED(ship, i) (ship->slot[i].val2 >= 100)
-#define SHIPHDDC(shipdata) (SHIPTYPEHDDC(SHIPCLASS(shipdata)))
-#define SHIPACCEL(shipdata) (SHIPTYPESPGAIN(SHIPCLASS(shipdata)))
+#define SHIP_MAX_RINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_REAR]
+#define SHIP_MAX_FINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_FORE]
+#define SHIP_MAX_PINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_PORT]
+#define SHIP_MAX_SINTERNAL(shipdata) (shipdata)->maxinternal[SIDE_STAR]
+#define SHIP_INTERNAL(shipdata,arc) (shipdata)->internal[(arc)]
+#define SHIP_FINTERNAL(shipdata) (shipdata)->internal[SIDE_FORE]
+#define SHIP_RINTERNAL(shipdata) (shipdata)->internal[SIDE_REAR]
+#define SHIP_PINTERNAL(shipdata) (shipdata)->internal[SIDE_PORT]
+#define SHIP_SINTERNAL(shipdata) (shipdata)->internal[SIDE_STAR]
+#define SHIP_HULL_WEIGHT(shipdata) SHIPTYPE_HULL_WEIGHT(SHIP_CLASS(shipdata))
+#define SHIP_HULL_MOD(shipdata) SHIPTYPE_HULL_MOD(SHIP_CLASS(shipdata))
+#define SHIP_SLOT_WEIGHT(shipdata) (shipdata)->slot_weight(-1)
+#define SHIP_MAX_WEIGHT(shipdata)  SHIPTYPE_MAX_WEIGHT(SHIP_CLASS(shipdata))
+#define SHIP_MAX_SAIL(shipdata)  SHIPTYPE_MAX_SAIL(SHIP_CLASS(shipdata))
+#define SHIP_AVAIL_WEIGHT(shipdata) ( SHIP_MAX_WEIGHT(shipdata) - SHIP_SLOT_WEIGHT(shipdata) )
+#define SHIP_FREE_EQUIPMENT(shipdata) SHIPTYPE_FREE_EQUIPMENT(SHIP_CLASS(shipdata))
+#define SHIP_FREE_CARGO(shipdata) SHIPTYPE_FREE_CARGO(SHIP_CLASS(shipdata))
+#define SHIP_SAIL(shipdata) (shipdata)->mainsail
+#define SHIP_WEAPON_DAMAGED(ship, i) (ship->slot[i].val2 > 0)
+#define SHIP_WEAPON_DESTROYED(ship, i) (ship->slot[i].val2 >= 100)
+#define SHIP_HDDC(shipdata) (SHIPTYPE_HDDC(SHIP_CLASS(shipdata)))
+#define SHIP_ACCEL(shipdata) (SHIPTYPE_SPEED_GAIN(SHIP_CLASS(shipdata)))
 
 //ID stuff
-#define SHIPID(shipdata) (shipdata)->id
-#define SHIPCLASS(shipdata) (shipdata)->m_class
-#define SHIPOWNER(shipdata) (shipdata)->ownername
-#define SHIPNAME(shipdata) (shipdata)->name
-#define SHIPOBJ(shipdata) (shipdata)->shipobj
-#define SHIPROOMNUM(shipdata, num) (shipdata)->room[(num)].roomnum
-#define SHIPROOMEXIT(shipdata, num, ext) (shipdata)->room[(num)].exit[(ext)]
-#define SHIPCLASSNAME(shipdata) SHIPTYPENAME((shipdata)->m_class)
-#define SHIPARMORCOND(maxhp, curhp) condition_prefix((maxhp), (curhp), true)
-#define SHIPINTERNALCOND(maxhp, curhp) condition_prefix((maxhp), (curhp), false)
-#define SHIPISLOADED(shipdata) IS_SET((shipdata)->flags, LOADED)
-#define SHIPSINKING(shipdata) IS_SET((shipdata)->flags, SINKING)
-#define SHIPSUNKBYNPC(shipdata) IS_SET((shipdata)->flags, SUNKBYNPC)
-#define SHIPIMMOBILE(shipdata) (shipdata->get_maxspeed() == 0)
-#define SHIPISDOCKED(shipdata) IS_SET((shipdata)->flags, DOCKED)
-#define SHIPANCHORED(shipdata) IS_SET((shipdata)->flags, ANCHOR)
-#define SHIPISFLYING(shipdata) IS_SET((shipdata)->flags, FLYING)
-#define ISNPCSHIP(shipdata) ((shipdata)->race == NPCSHIP)
-#define ISMERCHANT(shipdata) (SHIPTYPEKIND((shipdata)->m_class) == SHK_MERCHANT)
-#define ISWARSHIP(shipdata) (SHIPTYPEKIND((shipdata)->m_class) == SHK_WARSHIP)
+#define SHIP_ID(shipdata) (shipdata)->id
+#define SHIP_CLASS(shipdata) (shipdata)->m_class
+#define SHIP_OWNER(shipdata) (shipdata)->ownername
+#define SHIP_NAME(shipdata) (shipdata)->name
+#define SHIP_OBJ(shipdata) (shipdata)->shipobj
+#define SHIP_ROOM_NUM(shipdata, num) (shipdata)->room[(num)].roomnum
+#define SHIP_ROOM_EXIT(shipdata, num, ext) (shipdata)->room[(num)].exit[(ext)]
+#define SHIP_CLASS_NAME(shipdata) SHIPTYPE_NAME((shipdata)->m_class)
+#define SHIP_ARMOR_COND(maxhp, curhp) condition_prefix((maxhp), (curhp), true)
+#define SHIP_INTERNAL_COND(maxhp, curhp) condition_prefix((maxhp), (curhp), false)
+#define SHIP_LOADED(shipdata) IS_SET((shipdata)->flags, LOADED)
+#define SHIP_SINKING(shipdata) IS_SET((shipdata)->flags, SINKING)
+#define SHIP_SUNK_BY_NPC(shipdata) IS_SET((shipdata)->flags, SUNKBYNPC)
+#define SHIP_IMMOBILE(shipdata) (shipdata->get_maxspeed() == 0)
+#define SHIP_DOCKED(shipdata) IS_SET((shipdata)->flags, DOCKED)
+#define SHIP_ANCHORED(shipdata) IS_SET((shipdata)->flags, ANCHOR)
+#define SHIP_FLYING(shipdata) IS_SET((shipdata)->flags, FLYING)
+#define IS_NPC_SHIP(shipdata) ((shipdata)->race == NPCSHIP)
+#define IS_MERCHANT(shipdata) (SHIPTYPE_KIND((shipdata)->m_class) == SHK_MERCHANT)
+#define IS_WARSHIP(shipdata) (SHIPTYPE_KIND((shipdata)->m_class) == SHK_WARSHIP)
 
 //Cargo related stuff
-#define SHIPMAXCARGO(shipdata) ((int)(SHIPTYPECARGO(SHIPCLASS(shipdata)) * shipdata->crew.get_maxcargo_mod()))
-#define SHIPMAXCONTRA(shipdata) SHIPTYPECONTRA(SHIPCLASS(shipdata))
-#define SHIPCARGO(shipdata) ((shipdata)->slot_weight(SLOT_CARGO) / 2)
-#define SHIPCONTRA(shipdata) ((shipdata)->slot_weight(SLOT_CONTRABAND) / 2)
-#define SHIPCARGOLOAD(shipdata) (SHIPCARGO(shipdata) + SHIPCONTRA(shipdata))
-#define SHIPAVAILCARGOLOAD(shipdata) MIN( (SHIPMAXCARGO(shipdata) - SHIPCARGOLOAD(shipdata)), (SHIPAVAILWEIGHT(shipdata) / 2) )
-#define SHIPMAXCARGOLOAD(shipdata) (SHIPCARGOLOAD(shipdata) + SHIPAVAILCARGOLOAD(shipdata))
+#define SHIP_MAX_CARGO(shipdata) ((int)(SHIPTYPE_CARGO(SHIP_CLASS(shipdata)) * shipdata->crew.get_maxcargo_mod()))
+#define SHIP_MAX_CONTRA(shipdata) SHIPTYPE_CONTRA(SHIP_CLASS(shipdata))
+#define SHIP_CARGO(shipdata) ((shipdata)->slot_weight(SLOT_CARGO) / 2)
+#define SHIP_CONTRA(shipdata) ((shipdata)->slot_weight(SLOT_CONTRABAND) / 2)
+#define SHIP_CARGO_LOAD(shipdata) (SHIP_CARGO(shipdata) + SHIP_CONTRA(shipdata))
+#define SHIP_AVAIL_CARGO_LOAD(shipdata) MIN( (SHIP_MAX_CARGO(shipdata) - SHIP_CARGO_LOAD(shipdata)), (SHIP_AVAIL_WEIGHT(shipdata) / 2) )
+#define SHIP_MAX_CARGO_LOAD(shipdata) (SHIP_CARGO_LOAD(shipdata) + SHIP_AVAIL_CARGO_LOAD(shipdata))
 
 
 
@@ -738,6 +739,7 @@ int anchor_room(int room);
 int num_people_in_ship(P_ship ship);
 void clear_cargo(P_ship ship);
 P_char captain_is_aboard(P_ship ship);
+bool pc_is_aboard(P_ship ship);
 float get_turning_speed(P_ship ship);
 float get_next_heading_change(P_ship ship);
 int get_acceleration(P_ship ship);
@@ -748,6 +750,7 @@ void act_to_all_in_ship(P_ship ship, const char *msg);
 void act_to_outside_ships(P_ship ship, P_ship notarget, int range, const char *msg, ... );
 void act_to_outside(P_ship ship, int range, const char *msg, ... );
 void everyone_get_out_ship(P_ship ship);
+void clear_ship_content(P_ship ship);
 void look_out_ship(P_ship ship, P_char ch);
 void everyone_look_out_ship(P_ship ship);
 bool is_valid_sailing_location(P_ship ship, int room);

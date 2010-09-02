@@ -33,8 +33,8 @@ P_ship try_load_npc_ship(P_ship target, NPC_AI_Type type, int level, P_char dbg_
 P_ship try_load_npc_ship(P_ship target, NPC_AI_Type type, int level, int location, P_char dgb_ch);
 P_ship load_npc_ship(int level, NPC_AI_Type type, int speed, int m_class, int room, P_char dgb_ch);
 bool try_unload_npc_ship(P_ship ship);
-bool load_npc_dreadnought();
-extern P_ship npc_dreadnought;
+bool load_cyrics_revenge();
+extern P_ship cyrics_revenge;
 
 
 extern NPCShipCrewData npcShipCrewData[];

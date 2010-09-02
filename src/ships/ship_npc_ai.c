@@ -29,9 +29,9 @@ extern char buf[MAX_STRING_LENGTH];
 
 static bool weapon_ok(P_ship ship, int w_num)
 {
-    if (SHIPWEAPONDESTROYED(ship, w_num)) 
+    if (SHIP_WEAPON_DESTROYED(ship, w_num)) 
         return false;
-    if (SHIPWEAPONDAMAGED(ship, w_num)) 
+    if (SHIP_WEAPON_DAMAGED(ship, w_num)) 
         return false;
     if (ship->slot[w_num].val1 == 0) 
         return false;
@@ -81,7 +81,7 @@ static bool is_boardable(P_ship ship)
 {
     if (ship->speed > BOARDING_SPEED)
         return false;
-    if (ISWARSHIP(ship) && ship->speed > 0)
+    if (IS_WARSHIP(ship) && ship->speed > 0)
         return false;
     return true;
 }
@@ -107,7 +107,7 @@ NPCShipAI::NPCShipAI(P_ship s, P_char ch)
     speed_restriction = -1;
     since_last_fired_right = 0;
 
-    if (SHIPHULLWEIGHT(ship) > 200)
+    if (SHIP_HULL_WEIGHT(ship) > 200)
     {
         is_heavy_ship = true;
         is_multi_target = true;
@@ -132,7 +132,7 @@ NPCShipAI::NPCShipAI(P_ship s, P_char ch)
 
 void NPCShipAI::activity()
 {
-    if(!IS_MAP_ROOM(ship->location) || SHIPSINKING(ship)) 
+    if(!IS_MAP_ROOM(ship->location) || SHIP_SINKING(ship)) 
         return; 
 
     if (ship->timer[T_MINDBLAST])
@@ -168,7 +168,7 @@ void NPCShipAI::activity()
             break;
         }
 
-        if (SHIPIMMOBILE(ship))
+        if (SHIP_IMMOBILE(ship))
         {
             immobile_maneuver();
             break;
@@ -272,7 +272,7 @@ void NPCShipAI::cruise()
 
 void NPCShipAI::reload_and_repair()
 {
-    if (ship->mainsail < SHIPMAXSAIL(ship))
+    if (ship->mainsail < SHIP_MAX_SAIL(ship))
     {
         if (number(1, 30) == 1)
             ship->mainsail++;
@@ -330,9 +330,11 @@ bool NPCShipAI::try_unload()
 {
     if (ship->timer[T_MAINTENANCE] == 1)
     {
+        if (pc_is_aboard(ship))
+            return FALSE;
         for (int i = 0; i < contacts_count; i++)
         {
-            if (SHIPISDOCKED(contacts[i].ship) || ISNPCSHIP(contacts[i].ship))
+            if (SHIP_DOCKED(contacts[i].ship) || IS_NPC_SHIP(contacts[i].ship))
                 continue;
             ship->timer[T_MAINTENANCE] += 10;
             return FALSE;
@@ -368,7 +370,7 @@ bool NPCShipAI::check_for_captain_on_bridge()
 
 bool NPCShipAI::do_escort()
 {
-    if (SHIPIMMOBILE(ship)) return false;
+    if (SHIP_IMMOBILE(ship)) return false;
     int i = 0;
     for (; i < contacts_count; i++) 
     {
@@ -422,7 +424,7 @@ bool NPCShipAI::find_current_target()
 {
     for (int i = 0; i < contacts_count; i++) 
     {
-        if (SHIPISDOCKED(contacts[i].ship) || SHIPSINKING(contacts[i].ship)) continue;
+        if (SHIP_DOCKED(contacts[i].ship) || SHIP_SINKING(contacts[i].ship)) continue;
         if (contacts[i].ship == ship->target)
         {
             update_target(i);
@@ -438,13 +440,13 @@ bool NPCShipAI::find_new_target()
 {
     for (int i = 0; i < contacts_count; i++) 
     {
-        if (ship == npc_dreadnought && ship->timer[T_BSTATION] == 0 && !ISNPCSHIP(contacts[i].ship))
+        if (ship == cyrics_revenge && ship->timer[T_BSTATION] == 0 && !IS_NPC_SHIP(contacts[i].ship))
         { // chance to ignore player's if not too close
             if (contacts[i].range > 30)
                 continue;
             if (contacts[i].range > 10 
                 && (contacts[i].ship->m_class == SH_SLOOP || contacts[i].ship->m_class == SH_YACHT ||
-                number(0, (int)contacts[i].range * 4) > 0))
+                number(0, ((int)contacts[i].range - 7) * 8) > 0))
             {
                 continue;
             }
@@ -477,14 +479,14 @@ void NPCShipAI::update_target(int i) // index in contacts
 
 bool NPCShipAI::is_valid_target(P_ship tar)
 {
-    if (SHIPISDOCKED(tar))
+    if (SHIP_DOCKED(tar))
         return false;
-    if (SHIPSINKING(tar))
+    if (SHIP_SINKING(tar))
         return false;
     if (tar == ship->target)
         return true;
 
-    if (ship == npc_dreadnought) // Revenge attacks everything
+    if (ship == cyrics_revenge) // Revenge attacks everything
         return true;
     return (tar->race == GOODIESHIP || tar->race == EVILSHIP);
 }
@@ -530,7 +532,7 @@ void NPCShipAI::board_target()
     if (!grunt_count)
         return;
 
-    if (ship == npc_dreadnought)
+    if (crew_data->level == 4)
     {
         act_to_all_in_ship(ship->target, "&+YA group of &+Rr&+ra&+Rv&+ra&+Rg&+ri&+Rn&+rg &+Rd&+re&+Rm&+ro&+Rn&+rs &+Yjust &=LWboarded&N &+Yyour ship!&N\r\n");
     }
@@ -548,7 +550,7 @@ void NPCShipAI::board_target()
         bool ok = false;
         for (int k = 0; k < NUM_EXITS; k++) 
         {
-            if (SHIPROOMEXIT(ship->target, j, k) != -1)
+            if (SHIP_ROOM_EXIT(ship->target, j, k) != -1)
             {
                 ok = true;
                 break;
@@ -602,7 +604,7 @@ bool NPCShipAI::charge_target(bool for_boarding)
 
 bool NPCShipAI::chase()
 {
-    if (SHIPIMMOBILE(ship)) return false;
+    if (SHIP_IMMOBILE(ship)) return false;
     new_heading = calc_intercept_heading (t_bearing, ship->target->heading);
     if (check_dir_for_land_from(ship->x, ship->y, new_heading, 5))
         new_heading = t_bearing;
@@ -613,7 +615,7 @@ bool NPCShipAI::chase()
 
 bool NPCShipAI::go_around_land(P_ship dest)
 {
-    if (SHIPIMMOBILE(ship)) return false;
+    if (SHIP_IMMOBILE(ship)) return false;
 
     vector<int> route;
     if (!dijkstra(ship->location, dest->location, valid_ship_edge, route))
@@ -697,7 +699,7 @@ float NPCShipAI::calc_intercept_heading(float tb, float th)
 
 bool NPCShipAI::worth_ramming()
 {
-    if ((float)SHIPHULLWEIGHT(ship->target) / (float)SHIPHULLWEIGHT(ship) >= 1.5)
+    if ((float)SHIP_HULL_WEIGHT(ship->target) / (float)SHIP_HULL_WEIGHT(ship) >= 1.5)
         return false;
 
     if (ship->armor[SIDE_FORE] == 0 || 
@@ -724,7 +726,7 @@ bool NPCShipAI::check_ram()
         return false;
     if (!check_ram_arc(ship->heading, t_bearing, 120))
         return false;
-    if (SHIPISFLYING(ship) != SHIPISFLYING(ship->target))
+    if (SHIP_FLYING(ship) != SHIP_FLYING(ship->target))
         return false;
 
     if (!advanced && !is_boardable(ship->target) && number(1, 3) > 1)
@@ -738,7 +740,7 @@ void NPCShipAI::ram_target()
     send_message_to_debug_char("\r\nRamming!\r\n");
     if (try_ram_ship(ship, ship->target, t_bearing))
     {
-        //if (SHIPIMMOBILE(ship->target) && !did_board)
+        //if (SHIP_IMMOBILE(ship->target) && !did_board)
         if (ship->target && is_boardable(ship->target) && did_board != ship->target)
         {
             board_target();
@@ -987,7 +989,7 @@ bool NPCShipAI::b_turn_reloading_weapon()
 
 bool NPCShipAI::b_make_distance(float distance)
 {
-    if (SHIPIMMOBILE(ship)) return false;
+    if (SHIP_IMMOBILE(ship)) return false;
     if (t_range > distance) return true;
 
     send_message_to_debug_char("Breaking distance: ");

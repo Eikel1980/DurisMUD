@@ -150,7 +150,7 @@ void look_out_ship(P_ship ship, P_char ch)
 {
    if (ship->m_class == SH_CRUISER || ship->m_class == SH_DREADNOUGHT)
       ch->specials.z_cord = 2;
-   if (SHIPISFLYING(ship))
+   if (SHIP_FLYING(ship))
       ch->specials.z_cord = 4;
    new_look(ch, 0, -5, ship->location);
    ch->specials.z_cord = 0;
@@ -186,8 +186,7 @@ void everyone_get_out_ship(P_ship ship)
 
   for (i = 0; i < MAX_SHIP_ROOM; i++)
   {
-    for (ch = world[real_room(ship->room[i].roomnum)].people; ch;
-         ch = ch_next)
+    for (ch = world[real_room(ship->room[i].roomnum)].people; ch; ch = ch_next)
     {
       if (ch)
       {
@@ -196,8 +195,7 @@ void everyone_get_out_ship(P_ship ship)
         char_to_room(ch, ship->location, -1);
       }
     }
-    for (obj = world[real_room(ship->room[i].roomnum)].contents; obj;
-         obj = obj_next)
+    for (obj = world[real_room(ship->room[i].roomnum)].contents; obj; obj = obj_next)
     {
       if (obj)
       {
@@ -207,6 +205,47 @@ void everyone_get_out_ship(P_ship ship)
           obj_next = obj->next_content;
           obj_from_room(obj);
           obj_to_room(obj, ship->location);
+        }
+      }
+    }
+  }
+}
+
+void clear_ship_content(P_ship ship)
+{
+  P_char   ch, ch_next;
+  P_obj    obj, obj_next;
+  int      i;
+
+  for (i = 0; i < MAX_SHIP_ROOM; i++)
+  {
+    for (ch = world[real_room(ship->room[i].roomnum)].people; ch; ch = ch_next)
+    {
+      if (ch)
+      {
+        ch_next = ch->next_in_room;
+        if (IS_PC(ch))
+        {
+          char_from_room(ch);
+          char_to_room(ch, ship->location, -1);
+        }
+        else
+        {
+          extract_char(ch);
+        }
+      }
+    }
+    for (obj = world[real_room(ship->room[i].roomnum)].contents; obj; obj = obj_next)
+    {
+      if (obj)
+      {
+        obj_next = obj->next_content;
+        if (obj != ship->panel)
+        {
+          obj_next = obj->next_content;
+          //obj_from_room(obj);
+          //obj_to_room(obj, ship->location);
+          extract_obj(obj, TRUE);
         }
       }
     }
@@ -234,10 +273,10 @@ void act_to_all_in_ship(P_ship ship, const char *msg)
 
   for (int i = 0; i < MAX_SHIP_ROOM; i++)
   {
-    if ((SHIPROOMNUM(ship, i) != -1) && world[real_room(SHIPROOMNUM(ship, i))].people)
+    if ((SHIP_ROOM_NUM(ship, i) != -1) && world[real_room(SHIP_ROOM_NUM(ship, i))].people)
     {
-      act(msg, FALSE, world[real_room(SHIPROOMNUM(ship, i))].people, 0, 0, TO_ROOM);
-      act(msg, FALSE, world[real_room(SHIPROOMNUM(ship, i))].people, 0, 0, TO_CHAR);
+      act(msg, FALSE, world[real_room(SHIP_ROOM_NUM(ship, i))].people, 0, 0, TO_ROOM);
+      act(msg, FALSE, world[real_room(SHIP_ROOM_NUM(ship, i))].people, 0, 0, TO_CHAR);
     }
   }
 }
@@ -306,7 +345,7 @@ P_ship get_ship_from_char(P_char ch)
   ShipVisitor svs;
   for (bool fn = shipObjHash.get_first(svs); fn; fn = shipObjHash.get_next(svs))
   {
-    if (!SHIPISLOADED(svs))
+    if (!SHIP_LOADED(svs))
       continue;
 
     for (j = 0; j < MAX_SHIP_ROOM; j++)
@@ -325,7 +364,7 @@ int num_people_in_ship(P_ship ship)
   int      i, num = 0;
   P_char   ch;
 
-  if (!SHIPISLOADED(ship))
+  if (!SHIP_LOADED(ship))
     return 0;
 
   for (i = 0; i < MAX_SHIP_ROOM; i++)
@@ -349,11 +388,11 @@ int num_people_in_ship(P_ship ship)
 
 float get_turning_speed(P_ship ship)
 {
-    if (SHIPIMMOBILE(ship))
+    if (SHIP_IMMOBILE(ship))
         return 1;
 
-    float tspeed = (float)SHIPHDDC(ship);
-    tspeed *= 0.75 + 0.25 * (float)(ship->speed - BOARDING_SPEED) / (float)(SHIPTYPESPEED(SHIPCLASS(ship)) - BOARDING_SPEED); // only 3/4 turn at boarding speed, even less if slower
+    float tspeed = (float)SHIP_HDDC(ship);
+    tspeed *= 0.75 + 0.25 * (float)(ship->speed - BOARDING_SPEED) / (float)(SHIPTYPE_SPEED(SHIP_CLASS(ship)) - BOARDING_SPEED); // only 3/4 turn at boarding speed, even less if slower
     tspeed *= (1.0 + ship->crew.sail_mod_applied);
     tspeed *= ship->crew.get_stamina_mod();
     return tspeed;
@@ -383,7 +422,7 @@ float get_next_heading_change(P_ship ship)
 
 int get_acceleration(P_ship ship)
 {
-    float accel = SHIPACCEL(ship);
+    float accel = SHIP_ACCEL(ship);
     accel *= (1.0 + ship->crew.sail_mod_applied);
     accel *= ship->crew.get_stamina_mod();
     return (int)accel;
@@ -410,26 +449,26 @@ int get_next_speed_change(P_ship ship)
 
 void update_maxspeed(P_ship ship, int breach_count)
 {
-    if ((breach_count >= 1 && !SHIPISFLYING(ship)) || ship->mainsail == 0)
+    if ((breach_count >= 1 && !SHIP_FLYING(ship)) || ship->mainsail == 0)
     {
         ship->maxspeed = 0;
         return;
     }
 
     int equipment_weight = ship->slot_weight(SLOT_WEAPON) + ship->slot_weight(SLOT_EQUIPMENT);
-    int equipment_weight_mod = MIN(SHIPFREEEQUIPMENT(ship), equipment_weight);
+    int equipment_weight_mod = MIN(SHIP_FREE_EQUIPMENT(ship), equipment_weight);
     int cargo_weight = ship->slot_weight(SLOT_CARGO) + ship->slot_weight(SLOT_CONTRABAND);
-    int cargo_weight_mod = MIN(SHIPFREECARGO(ship), cargo_weight);
+    int cargo_weight_mod = MIN(SHIP_FREE_CARGO(ship), cargo_weight);
 
-    float weight_mod = 1.0 - ( (float) (SHIPSLOTWEIGHT(ship) - equipment_weight_mod - cargo_weight_mod) / (float) SHIPMAXWEIGHT(ship) );
+    float weight_mod = 1.0 - ( (float) (SHIP_SLOT_WEIGHT(ship) - equipment_weight_mod - cargo_weight_mod) / (float) SHIP_MAX_WEIGHT(ship) );
 
-    int ceil = SHIPTYPESPEED(ship->m_class) + ship->crew.get_maxspeed_mod();
+    int ceil = SHIPTYPE_SPEED(ship->m_class) + ship->crew.get_maxspeed_mod();
     float maxspeed = ceil;
-    if (breach_count == 0 && SHIPISFLYING(ship)) maxspeed *= 1.2;
+    if (breach_count == 0 && SHIP_FLYING(ship)) maxspeed *= 1.2;
     maxspeed = maxspeed * (1.0 + ship->crew.sail_mod_applied);
     maxspeed = maxspeed * weight_mod;
-    maxspeed = maxspeed * (float)ship->mainsail / (float)SHIPMAXSAIL(ship); // Adjust for sail condition
-    if (breach_count == 1 && SHIPISFLYING(ship)) maxspeed *= 0.5;
+    maxspeed = maxspeed * (float)ship->mainsail / (float)SHIP_MAX_SAIL(ship); // Adjust for sail condition
+    if (breach_count == 1 && SHIP_FLYING(ship)) maxspeed *= 0.5;
     ship->maxspeed = BOUNDED(1, (int)maxspeed, ceil);
 }
 
@@ -439,15 +478,15 @@ int get_maxspeed_without_cargo(P_ship ship)
         return 0;
 
     int equipment_weight = ship->slot_weight(SLOT_WEAPON) + ship->slot_weight(SLOT_EQUIPMENT);
-    int equipment_weight_mod = MIN(SHIPFREEEQUIPMENT(ship), equipment_weight);
+    int equipment_weight_mod = MIN(SHIP_FREE_EQUIPMENT(ship), equipment_weight);
 
-    float weight_mod = 1.0 - ( (float) (equipment_weight - equipment_weight_mod) / (float) SHIPMAXWEIGHT(ship) );
+    float weight_mod = 1.0 - ( (float) (equipment_weight - equipment_weight_mod) / (float) SHIP_MAX_WEIGHT(ship) );
     
-    int ceil = SHIPTYPESPEED(ship->m_class) + ship->crew.get_maxspeed_mod();
+    int ceil = SHIPTYPE_SPEED(ship->m_class) + ship->crew.get_maxspeed_mod();
     float maxspeed = ceil;
     maxspeed = maxspeed * (1.0 + ship->crew.sail_mod_applied);
     maxspeed = maxspeed * weight_mod;
-    maxspeed = maxspeed * (float)ship->mainsail / (float)SHIPMAXSAIL(ship); // Adjust for sail condition
+    maxspeed = maxspeed * (float)ship->mainsail / (float)SHIP_MAX_SAIL(ship); // Adjust for sail condition
     return BOUNDED(1, (int)maxspeed, ceil);
 }
 
@@ -477,7 +516,7 @@ void assignid(P_ship ship, char *id, bool npc)
       ShipVisitor svs;
       for (bool fn = shipObjHash.get_first(svs); fn; fn = shipObjHash.get_next(svs))
       {
-        if( strcmp(newid, SHIPID(svs)) == 0 )
+        if( strcmp(newid, SHIP_ID(svs)) == 0 )
         {
           taken = true;
           break;
@@ -495,7 +534,7 @@ void assignid(P_ship ship, char *id, bool npc)
 
     }
 
-    SHIPID(ship) = str_dup(newid);
+    SHIP_ID(ship) = str_dup(newid);
    
   }
   else
@@ -503,7 +542,7 @@ void assignid(P_ship ship, char *id, bool npc)
     // assigning specific id
     if( isname(id, "**"))
     {
-      SHIPID(ship) = str_dup("**");
+      SHIP_ID(ship) = str_dup("**");
       return;
     }
 
@@ -696,9 +735,9 @@ void ShipData::show(P_char ch) const
   
   send_to_char_f(ch, "Speed: %d, Set Speed: %d, Max Speed: %d, Sailcond: %d\r\n", this->speed, this->setspeed, this->maxspeed, this->mainsail);
   
-  send_to_char_f(ch, "Hull weight: %d, Max load: %d, Slot weight: %d, Available weight: %d\r\n", SHIPHULLWEIGHT(this), SHIPMAXWEIGHT(this), slot_weight(-1), SHIPAVAILWEIGHT(this));
+  send_to_char_f(ch, "Hull weight: %d, Max load: %d, Slot weight: %d, Available weight: %d\r\n", SHIP_HULL_WEIGHT(this), SHIP_MAX_WEIGHT(this), slot_weight(-1), SHIP_AVAIL_WEIGHT(this));
   
-  send_to_char_f(ch, "Max cargo: %d, Current cargo: %d, Available cargo: %d\r\n", SHIPMAXCARGO(this), SHIPCARGO(this), SHIPAVAILCARGOLOAD(this) );
+  send_to_char_f(ch, "Max cargo: %d, Current cargo: %d, Available cargo: %d\r\n", SHIP_MAX_CARGO(this), SHIP_CARGO(this), SHIP_AVAIL_CARGO_LOAD(this) );
   
   send_to_char("\r\nSlots:\r\n---------------------------------------------------\r\n", ch);
   
@@ -881,7 +920,7 @@ int ShipSlot::get_weight(const ShipData* ship) const
             wt = eq_ram_weight(ship);
         if (index == E_LEVISTONE)
         {
-            if (SHIPISFLYING(ship))
+            if (SHIP_FLYING(ship))
                 wt = 0;
             else
                 wt = eq_levistone_weight(ship);
@@ -1209,38 +1248,46 @@ void clear_cargo(P_ship ship)
 
 P_char captain_is_aboard(P_ship ship)
 {
-    P_char ch, ch_next;
-    int i;
-
-    if (!(ship))
-    {
-        return NULL;
-    }
-  
-    for (i = 0; i < MAX_SHIP_ROOM; i++)
-    {
-        for (ch = world[real_room(ship->room[i].roomnum)].people; ch;
-             ch = ch_next)
-        {
-            if (ch)
-            {
-                ch_next = ch->next_in_room;
-                
-                if (IS_NPC(ch))
-                {
-                    continue;
-                }
-                
-                if (IS_PC(ch) && isname(GET_NAME(ch), SHIPOWNER(ship)))
-                {
-                    return ch;
-                }
-            }
-        }
-    }
-
+  if (!(ship))
     return NULL;
+
+  for (int i = 0; i < MAX_SHIP_ROOM; i++)
+  {
+    P_char ch_next = 0;
+    for (P_char ch = world[real_room(ship->room[i].roomnum)].people; ch; ch = ch_next)
+    {
+      if (ch)
+      {
+        ch_next = ch->next_in_room;
+             
+        if (IS_NPC(ch))
+          continue;
+             
+        if (IS_PC(ch) && isname(GET_NAME(ch), SHIP_OWNER(ship)))
+          return ch;
+      }
+    }
+  }
+  return NULL;
 }
+
+bool pc_is_aboard(P_ship ship)
+{
+  if (!(ship))
+    return NULL;
+
+  for (int i = 0; i < MAX_SHIP_ROOM; i++)
+  {
+    P_char ch_next = 0;
+    for (P_char ch = world[real_room(ship->room[i].roomnum)].people; ch; ch = ch_next)
+    {
+      if (ch && IS_PC(ch))
+          return true;
+    }
+  }
+  return false;
+}
+
 
 int anchor_room(int room)
 {
@@ -1347,7 +1394,7 @@ bool is_valid_sailing_location(P_ship ship, int room)
     if (world[room].number < 110000)
         return false;
 
-    if (SHIPISFLYING(ship))
+    if (SHIP_FLYING(ship))
     {
         if (!IS_MAP_ROOM(room) || world[room].sector_type == SECT_MOUNTAIN)
         {
@@ -1381,11 +1428,11 @@ int eq_ram_damage(const ShipData* ship)
 }
 int eq_ram_weight(const ShipData* ship)
 {
-    return (SHIPHULLWEIGHT(ship) + 10) / 24;
+    return (SHIP_HULL_WEIGHT(ship) + 10) / 24;
 }
 int eq_ram_cost(const ShipData* ship)
 {
-    return SHIPHULLWEIGHT(ship) * 1000;
+    return SHIP_HULL_WEIGHT(ship) * 1000;
 }
 
 bool has_eq_levistone(const ShipData* ship)
@@ -1401,7 +1448,7 @@ int eq_levistone_slot(const ShipData* ship)
 }
 int eq_levistone_weight(const ShipData *ship)
 {
-    return (SHIPHULLWEIGHT(ship) + 50) / 40;
+    return (SHIP_HULL_WEIGHT(ship) + 50) / 40;
 }
 
 
@@ -1412,10 +1459,10 @@ bool ocean_pvp_state()
     for (bool fn = shipObjHash.get_first(svs); fn; fn = shipObjHash.get_next(svs))
     {
         P_ship ship = svs;
-        if (SHIPISDOCKED(ship)) 
+        if (SHIP_DOCKED(ship)) 
             continue;
 
-        if (SHIPCLASS(ship) == SH_SLOOP || SHIPCLASS(ship) == SH_YACHT)
+        if (SHIP_CLASS(ship) == SH_SLOOP || SHIP_CLASS(ship) == SH_YACHT)
             continue;
 
         int contact_count = getcontacts(ship, false);
@@ -1425,7 +1472,7 @@ bool ocean_pvp_state()
         {
             if (contacts[i].ship == ship)
                 continue;
-            if (SHIPISDOCKED(contacts[i].ship))
+            if (SHIP_DOCKED(contacts[i].ship))
                 continue;
 
             if ((contacts[i].ship->race == GOODIESHIP && ship->race == EVILSHIP) ||

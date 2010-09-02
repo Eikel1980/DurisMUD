@@ -25,7 +25,7 @@ extern char tmp_str[MAX_STRING_LENGTH];
 
 int order_sail(P_char ch, P_ship ship, char* arg1, char* arg2)
 {
-    if (SHIPANCHORED(ship)) 
+    if (SHIP_ANCHORED(ship)) 
     {
         send_to_char("You are anchored, de-anchor first.\r\n", ch);
         return TRUE;
@@ -120,7 +120,7 @@ int jettison_contraband(P_char ch, P_ship ship, char* arg)
 
 int order_undock(P_char ch, P_ship ship)
 {        
-    if (!SHIPISDOCKED(ship) && !SHIPANCHORED(ship)) 
+    if (!SHIP_DOCKED(ship) && !SHIP_ANCHORED(ship)) 
     {
         send_to_char("The ship is not docked or anchored!\r\n", ch);
         return TRUE;
@@ -132,14 +132,14 @@ int order_undock(P_char ch, P_ship ship)
         return TRUE;
     }
 
-    if (SHIPISDOCKED(ship))
+    if (SHIP_DOCKED(ship))
     {
         if (ship->mainsail == 0)
         {
             send_to_char ("You cannot unfurl your sails, they are destroyed.\r\n", ch);
             return TRUE;
         }
-        if (SHIPIMMOBILE(ship))
+        if (SHIP_IMMOBILE(ship))
         {
             send_to_char("&+RYour ship is immobilized. Undocking procedures cancelled.\r\n", ch);
             return TRUE;
@@ -149,7 +149,7 @@ int order_undock(P_char ch, P_ship ship)
     }
 
     send_to_char("Your crew begins undocking procedures.\r\n", ch);
-    if (!ISNPCSHIP(ship))
+    if (!IS_NPC_SHIP(ship))
     {
         if (RACE_PUNDEAD(ch))
             ship->race = UNDEADSHIP;
@@ -169,17 +169,17 @@ int order_undock(P_char ch, P_ship ship)
 
 int order_maneuver(P_char ch, P_ship ship, char* arg)
 {
-    if (SHIPISDOCKED(ship)) 
+    if (SHIP_DOCKED(ship)) 
     {
         send_to_char("Might want to undock first.\r\n", ch);
         return TRUE;
     }
-    if (SHIPISFLYING(ship)) 
+    if (SHIP_FLYING(ship)) 
     {
         send_to_char("Land your ship before maneuvering it.\r\n", ch);
         return TRUE;
     }
-    if (SHIPIMMOBILE(ship)) 
+    if (SHIP_IMMOBILE(ship)) 
     {
         send_to_char("You're immobile, you can't maneuver!\r\n", ch);
         return TRUE;
@@ -247,8 +247,8 @@ int order_maneuver(P_char ch, P_ship ship, char* arg)
             ship->setspeed = 0;
             send_to_room_f(ship->location, "%s &Nmaneuvers to the %s.\r\n", ship->name, dirs[dir]);
             ship->location = world[ship->location].dir_option[dir]->to_room;
-            obj_from_room(SHIPOBJ(ship));
-            obj_to_room(SHIPOBJ(ship), ship->location);
+            obj_from_room(SHIP_OBJ(ship));
+            obj_to_room(SHIP_OBJ(ship), ship->location);
             send_to_room_f(ship->location, "%s &Nmaneuvers in from the %s.\r\n", ship->name, dirs[rev_dir[dir]]);
             act_to_all_in_ship_f(ship, "Your ship manuevers to the %s.", dirs[dir]);
             ship->timer[T_MANEUVER] = 5;
@@ -275,19 +275,19 @@ int order_maneuver(P_char ch, P_ship ship, char* arg)
 
 int order_anchor(P_char ch, P_ship ship)
 {
-    if (SHIPSINKING(ship)) 
+    if (SHIP_SINKING(ship)) 
     {
         send_to_char ("Anchor while sinking?! Your ship IS the anchor now!\r\n", ch);
         return TRUE;
     }
 
-    if (SHIPISFLYING(ship)) 
+    if (SHIP_FLYING(ship)) 
     {
         send_to_char ("You have to land your ship to anchor!\r\n", ch);
         return TRUE;
     }
 
-    if (SHIPISDOCKED(ship)) 
+    if (SHIP_DOCKED(ship)) 
     {
         send_to_char("You are docked, undock first!\r\n", ch);
         return TRUE;
@@ -311,13 +311,13 @@ int order_anchor(P_char ch, P_ship ship)
 int order_ram(P_char ch, P_ship ship, char* arg)
 {
    
-    if (SHIPSINKING(ship)) 
+    if (SHIP_SINKING(ship)) 
     {
         send_to_char("Ram while sinking, yeah right!\r\n", ch);
         return TRUE;
     }
 
-    if (SHIPISDOCKED(ship)) 
+    if (SHIP_DOCKED(ship)) 
     {
         send_to_char("Ram while docked, yeah right!\r\n", ch);
         return TRUE;
@@ -456,7 +456,7 @@ int order_speed(P_char ch, P_ship ship, char* arg)
         } 
         else if (isname(arg, "max maximum")) 
         {
-            if (!SHIPIMMOBILE(ship)) 
+            if (!SHIP_IMMOBILE(ship)) 
             {
                 ship->setspeed = ship->get_maxspeed();
                 act_to_all_in_ship_f(ship, "Speed set to &+W%d&N.", ship->setspeed);
@@ -466,7 +466,7 @@ int order_speed(P_char ch, P_ship ship, char* arg)
         } 
         else if (isname(arg, "med medium")) 
         {
-            if (!SHIPIMMOBILE(ship)) 
+            if (!SHIP_IMMOBILE(ship)) 
             {
                 ship->setspeed = MAX(1, ship->get_maxspeed() * 2 / 3);
                 act_to_all_in_ship_f(ship, "Speed set to &+W%d&N.", ship->setspeed);
@@ -476,7 +476,7 @@ int order_speed(P_char ch, P_ship ship, char* arg)
         } 
         else if (isname(arg, "min minimum slow")) 
         {
-            if (!SHIPIMMOBILE(ship)) 
+            if (!SHIP_IMMOBILE(ship)) 
             {
                 ship->setspeed = MAX(1, ship->get_maxspeed() / 3);
                 act_to_all_in_ship_f(ship, "Speed set to &+W%d&N.", ship->setspeed);
@@ -517,7 +517,7 @@ int order_signal(P_char ch, P_ship ship, char* arg1, char* arg2)
         P_ship target = contacts[i].ship;
         if (isname(arg1, target->id)) 
         {
-            if (SHIPISDOCKED(target)) 
+            if (SHIP_DOCKED(target)) 
             {
                 send_to_char ("You cannot send signals to docked ships!\r\n", ch);
                 return TRUE;
@@ -533,8 +533,8 @@ int order_signal(P_char ch, P_ship ship, char* arg1, char* arg2)
                 return TRUE;
             }
 
-            send_to_char_f(ch, "&+GYou've sent a &+Ys&+Bi&+Wg&+yn&+Ma&+Cl &+Gmessage to &+W[%s]&N:%s&+G.&N\r\n", SHIPID(target), SHIPNAME(target));
-            act_to_all_in_ship_f(target, "&+GYour ship has recieved a &+Ys&+Bi&+Wg&+yn&+Ma&+Cl &+Gmessage from &+W[%s]&N:%s &+Gdecoded as \'&+Y%s&+G\'.&n", SHIPID(ship), SHIPNAME(ship), arg2);
+            send_to_char_f(ch, "&+GYou've sent a &+Ys&+Bi&+Wg&+yn&+Ma&+Cl &+Gmessage to &+W[%s]&N:%s&+G.&N\r\n", SHIP_ID(target), SHIP_NAME(target));
+            act_to_all_in_ship_f(target, "&+GYour ship has recieved a &+Ys&+Bi&+Wg&+yn&+Ma&+Cl &+Gmessage from &+W[%s]&N:%s &+Gdecoded as \'&+Y%s&+G\'.&n", SHIP_ID(ship), SHIP_NAME(ship), arg2);
             return TRUE;
         }
     }
@@ -555,7 +555,7 @@ int order_fly(P_char ch, P_ship ship)
         send_to_char("Your ship must be outside to fly.\r\n", ch); 
         return TRUE; 
     }
-    if (SHIPISFLYING(ship))
+    if (SHIP_FLYING(ship))
     {
         send_to_char("Your ship is already floating in air.\r\n", ch); 
         return TRUE; 
@@ -570,7 +570,7 @@ int order_fly(P_char ch, P_ship ship)
 }
 int order_land(P_char ch, P_ship ship)
 {
-    if (!SHIPISFLYING(ship))
+    if (!SHIP_FLYING(ship))
     {
         send_to_char("Your ship is not flying or anything.\r\n", ch); 
         return TRUE;
@@ -654,12 +654,12 @@ int do_fire_weapon(P_ship ship, P_char ch, int w_num)
         if (ch) send_to_char("Target is not in weapon's firing arc!\r\n", ch);
         return TRUE;
     }
-    if (SHIPWEAPONDESTROYED(ship, w_num)) 
+    if (SHIP_WEAPON_DESTROYED(ship, w_num)) 
     {
         if (ch) send_to_char("Weapon is destroyed!\r\n", ch);
         return TRUE;
     }
-    if (SHIPWEAPONDAMAGED(ship, w_num)) 
+    if (SHIP_WEAPON_DAMAGED(ship, w_num)) 
     {
         if (ch) send_to_char("Weapon is damaged!\r\n", ch);
         return TRUE;
@@ -685,7 +685,7 @@ int do_fire_arc(P_ship ship, P_char ch, int arc)
     {
         if (ship->slot[i].type == SLOT_WEAPON && ship->slot[i].position == arc)
         {
-            if (SHIPANCHORED(ship)) 
+            if (SHIP_ANCHORED(ship)) 
                 return TRUE;
             do_fire_weapon(ship, ch, i);
             fired++;
@@ -698,20 +698,20 @@ int do_fire_arc(P_ship ship, P_char ch, int arc)
 
 int do_fire (P_char ch, P_ship ship, char* arg)
 {
-    if (!isname(GET_NAME(ch), SHIPOWNER(ship)) && !IS_TRUSTED(ch) &&
-        (ch->group == NULL ? 1 : get_char2(str_dup(SHIPOWNER(ship))) ==
-         NULL ? 1 : (get_char2(str_dup(SHIPOWNER(ship)))->group != ch->group))) 
+    if (!isname(GET_NAME(ch), SHIP_OWNER(ship)) && !IS_TRUSTED(ch) &&
+        (ch->group == NULL ? 1 : get_char2(str_dup(SHIP_OWNER(ship))) ==
+         NULL ? 1 : (get_char2(str_dup(SHIP_OWNER(ship)))->group != ch->group))) 
     {
         send_to_char("You are not the captain of this ship, the crew ignores you.\r\n", ch);
         return TRUE;
     }
 
-    if (SHIPSINKING(ship)) 
+    if (SHIP_SINKING(ship)) 
     {
         send_to_char ("The ship is sinking! Your crew has already abandoned ship!\r\n", ch);
         return TRUE;
     }
-    if (SHIPISDOCKED(ship) || SHIPANCHORED(ship)) 
+    if (SHIP_DOCKED(ship) || SHIP_ANCHORED(ship)) 
     {
         send_to_char("Your crew isn't ready, undock first.\r\n", ch);
         return TRUE;
@@ -812,9 +812,9 @@ int do_fire (P_char ch, P_ship ship, char* arg)
 
 int do_lock_target(P_char ch, P_ship ship, char* arg)
 {
-    if (!isname(GET_NAME(ch), SHIPOWNER(ship)) && !IS_TRUSTED(ch) &&
-        (ch->group == NULL ? 1 : get_char2(str_dup(SHIPOWNER(ship))) ==
-         NULL ? 1 : (get_char2(str_dup(SHIPOWNER(ship)))->group != ch->group))) 
+    if (!isname(GET_NAME(ch), SHIP_OWNER(ship)) && !IS_TRUSTED(ch) &&
+        (ch->group == NULL ? 1 : get_char2(str_dup(SHIP_OWNER(ship))) ==
+         NULL ? 1 : (get_char2(str_dup(SHIP_OWNER(ship)))->group != ch->group))) 
     {
         send_to_char ("You are not the captain of this ship, the crew ignores you.\r\n", ch);
         return TRUE;
@@ -875,7 +875,7 @@ int do_lock_target(P_char ch, P_ship ship, char* arg)
         P_ship temp = contacts[i].ship;
         if (isname(arg, temp->id)) 
         {
-            if (SHIPISDOCKED(temp)) 
+            if (SHIP_DOCKED(temp)) 
             {
                 send_to_char ("You cannot lock onto docked ships, that's against the sailor's code!\r\n", ch);
                 return TRUE;
@@ -922,7 +922,7 @@ int look_cargo(P_char ch, P_ship ship)
         }
     }
 
-    send_to_char_f(ch, "\r\nCargo capacity: &+W%d&n/&+W%d\r\n", SHIPAVAILCARGOLOAD(ship), SHIPMAXCARGOLOAD(ship));
+    send_to_char_f(ch, "\r\nCargo capacity: &+W%d&n/&+W%d\r\n", SHIP_AVAIL_CARGO_LOAD(ship), SHIP_MAX_CARGO_LOAD(ship));
 
     return TRUE;
 }
@@ -969,7 +969,7 @@ int look_weapon (P_char ch, P_ship ship, char* arg)
         send_to_char("Valid syntax: look <sight/weapon> <weapon number>\r\n", ch);
         return TRUE;
     }
-    if(SHIPISDOCKED(ship)) 
+    if(SHIP_DOCKED(ship)) 
     { 
         send_to_char("You must be undocked to sight your weapons!\r\n", ch); 
         return TRUE; 
@@ -1000,12 +1000,12 @@ int look_weapon (P_char ch, P_ship ship, char* arg)
         send_to_char("Invalid Weapon!\r\n", ch);
         return TRUE;
     }
-    if (SHIPWEAPONDESTROYED(ship, slot)) 
+    if (SHIP_WEAPON_DESTROYED(ship, slot)) 
     {
         send_to_char("That weapon is destroyed!\r\n", ch);
         return TRUE;
     }
-    if (SHIPWEAPONDAMAGED(ship, slot)) 
+    if (SHIP_WEAPON_DAMAGED(ship, slot)) 
     {
         send_to_char("That weapon is damaged!\r\n", ch);
         return TRUE;
@@ -1032,7 +1032,7 @@ int look_tactical_map(P_char ch, P_ship ship, char* arg1, char* arg2)
     int      x, y;
     float    shiprange;
 
-    if(SHIPISDOCKED(ship)) 
+    if(SHIP_DOCKED(ship)) 
     { 
         send_to_char("You must be undocked to look tactical.\r\n", ch); 
         return TRUE; 
@@ -1113,7 +1113,7 @@ int look_contacts(P_char ch, P_ship ship)
 {
 
     if( !IS_MAP_ROOM(ship->location) ||
-        SHIPISDOCKED(ship) ) 
+        SHIP_DOCKED(ship) ) 
     {
         send_to_char("You must be on the open sea to display contacts.\r\n", ch);
         return TRUE;
@@ -1124,7 +1124,7 @@ int look_contacts(P_char ch, P_ship ship)
     send_to_char_f (ch, "=========================================================================|&N\r\n");
     for (int i = 0; i < k; i++) 
     {
-        if (SHIPISDOCKED(contacts[i].ship)) 
+        if (SHIP_DOCKED(contacts[i].ship)) 
         {
             if (contacts[i].range > 5)
                 continue;
@@ -1132,7 +1132,7 @@ int look_contacts(P_char ch, P_ship ship)
         //dispcontact(i);
 
         const char* race_indicator = "&n";
-        if (contacts[i].range < SCAN_RANGE && !SHIPISDOCKED(contacts[i].ship))
+        if (contacts[i].range < SCAN_RANGE && !SHIP_DOCKED(contacts[i].ship))
         {
             if (contacts[i].ship->race == GOODIESHIP)
                 race_indicator = "&+Y";
@@ -1157,9 +1157,9 @@ int look_contacts(P_char ch, P_ship ship)
           (int)contacts[i].ship->heading,
           contacts[i].ship->speed, 
           contacts[i].arc,
-          SHIPSINKING(contacts[i].ship) ? "&+RS&N" :
-            SHIPISDOCKED(contacts[i].ship) ? "&+yD&N" :
-               SHIPANCHORED(contacts[i].ship) ? "&+yA&N" : "");
+          SHIP_SINKING(contacts[i].ship) ? "&+RS&N" :
+            SHIP_DOCKED(contacts[i].ship) ? "&+yD&N" :
+               SHIP_ANCHORED(contacts[i].ship) ? "&+yA&N" : "");
     }
     return TRUE;
 }
@@ -1190,7 +1190,7 @@ int look_weaponspec(P_char ch, P_ship ship)
                 else
                     sprintf(dam, "%d-%d", weapon_data[w_index].min_damage, weapon_data[w_index].max_damage);
             }
-            if (!SHIPWEAPONDESTROYED(ship, slot))
+            if (!SHIP_WEAPON_DESTROYED(ship, slot))
             {
                 send_to_char_f(ch,  "&+W[%2d]  %-20s    %5s  %7s    %2d    %s&N\r\n",
                   slot, weapon_data[w_index].name, rng, dam, weapon_data[w_index].ammo, ship->slot[slot].get_status_str());
@@ -1221,7 +1221,7 @@ char* generate_slot(P_ship ship, int sl)
   }
   else if (ship->slot[sl].type == SLOT_WEAPON)
   {
-      if (!SHIPWEAPONDESTROYED(ship, sl))
+      if (!SHIP_WEAPON_DESTROYED(ship, sl))
       {
           sprintf(slot_desc, "&+W[%2d] %-20s &+W%-9s   %2d    %s", sl, 
               ship->slot[sl].get_description(), ship->slot[sl].get_position_str(), ship->slot[sl].val1, ship->slot[sl].get_status_str());
@@ -1247,10 +1247,10 @@ char* generate_slot(P_ship ship, int sl)
 const char* get_ship_status(P_ship ship)
 {
     return
-    SHIPSINKING(ship)  ? "&=LRSINKING&N" :
-    SHIPIMMOBILE(ship) ? "&+RIMMOBILE&N" : 
-    SHIPANCHORED(ship) ? "&+yANCHORED&N" : 
-    SHIPISDOCKED(ship) ? "&+yDOCKED&N" : 
+    SHIP_SINKING(ship)  ? "&=LRSINKING&N" :
+    SHIP_IMMOBILE(ship) ? "&+RIMMOBILE&N" : 
+    SHIP_ANCHORED(ship) ? "&+yANCHORED&N" : 
+    SHIP_DOCKED(ship) ? "&+yDOCKED&N" : 
                          "&+yUNDOCKED&N"; 
 }
 
@@ -1261,7 +1261,7 @@ int look_ship(P_char ch, P_ship ship)
 
     char target_str[100];
     P_ship target = ship->target;
-    if (target != NULL && SHIPISLOADED(target))
+    if (target != NULL && SHIP_LOADED(target))
         sprintf(target_str, "&+GTarget: &+W[%s]&N: %s", target->id, target->name);
     else
         sprintf(target_str, " ");
@@ -1271,54 +1271,54 @@ int look_ship(P_char ch, P_ship ship)
     send_to_char_f(ch, "               %s\r\n", target_str);
     send_to_char(      "&+L-========================================================================-&N\r\n", ch);
     send_to_char_f(ch, "&+LCaptain: &+W%-20s &+rFrags: &+W%-5d     &+LStatus: %-13s     &+LID[&+Y%s&+L]&N\r\n",
-            SHIPOWNER(ship), ship->frags, get_ship_status(ship), SHIPID(ship));
+            SHIP_OWNER(ship), ship->frags, get_ship_status(ship), SHIP_ID(ship));
     send_to_char_f(ch, "\r\n");
     send_to_char_f(ch, "        %s%3d&N/&+G%-3d      &+LSpeed Range: &+W0-%-3d      &+LCrew: &+W%-20s&N\r\n",
-            SHIPARMORCOND(SHIPMAXFARMOR(ship), SHIPFARMOR(ship)),
-            SHIPFARMOR(ship), SHIPMAXFARMOR(ship),
+            SHIP_ARMOR_COND(SHIP_MAX_FARMOR(ship), SHIP_FARMOR(ship)),
+            SHIP_FARMOR(ship), SHIP_MAX_FARMOR(ship),
             ship->get_maxspeed(), ship_crew_data[ship->crew.index].name);
     send_to_char_f(ch, "                          &+LWeight: &+W%3d,000          &+W%-20s&N\r\n",
-            SHIPHULLWEIGHT(ship), (ship->crew.sail_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.sail_chief].name);
+            SHIP_HULL_WEIGHT(ship), (ship->crew.sail_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.sail_chief].name);
     send_to_char_f(ch, "           &+y||&N               &+LLoad: &+W%3d/&+W%3d&N          %-20s&N\r\n",
-            SHIPSLOTWEIGHT(ship), SHIPMAXWEIGHT(ship), (ship->crew.guns_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.guns_chief].name);
+            SHIP_SLOT_WEIGHT(ship), SHIP_MAX_WEIGHT(ship), (ship->crew.guns_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.guns_chief].name);
     send_to_char_f(ch, "          &+y/..\\&N        &+LPassengers: &+W%2d/%2d&N            %-20s&N\r\n", 
             num_people_in_ship(ship), ship->get_capacity(), (ship->crew.rpar_chief == NO_CHIEF) ? "" : ship_chief_data[ship->crew.rpar_chief].name);
-    send_to_char_f(ch, "         &+y/.%s%2d&+y.\\        &N\r\n", SHIPINTERNALCOND(SHIPMAXFINTERNAL(ship), SHIPFINTERNAL(ship)), SHIPFINTERNAL(ship));
+    send_to_char_f(ch, "         &+y/.%s%2d&+y.\\        &N\r\n", SHIP_INTERNAL_COND(SHIP_MAX_FINTERNAL(ship), SHIP_FINTERNAL(ship)), SHIP_FINTERNAL(ship));
     send_to_char(      "        &+y/..&N--&+y..\\        &+LNum  Name                 Position   Ammo   Status&N\r\n", ch);
-    send_to_char_f(ch, "        &+y|..&+g%2d&+y..|        %s&N\r\n", SHIPMAXFINTERNAL(ship), generate_slot(ship, 0));
+    send_to_char_f(ch, "        &+y|..&+g%2d&+y..|        %s&N\r\n", SHIP_MAX_FINTERNAL(ship), generate_slot(ship, 0));
     send_to_char_f(ch, "        &+y|......| &+g%3d    %s&N\r\n", ship->mainsail, generate_slot(ship, 1));
     send_to_char_f(ch, "        &+y\\__..__/ &N---    %s&N\r\n", generate_slot(ship, 2));
-    send_to_char_f(ch, "        &+y|..||..|&+L/&N&+g%3d    %s&N\r\n", SHIPMAXSAIL(ship), generate_slot(ship, 3));
+    send_to_char_f(ch, "        &+y|..||..|&+L/&N&+g%3d    %s&N\r\n", SHIP_MAX_SAIL(ship), generate_slot(ship, 3));
     send_to_char_f(ch, "        &+y|......&+L/        %s&N\r\n", generate_slot(ship, 4));
     send_to_char_f(ch, "        &+y|.....&+L/&N&+y|        %s&N\r\n", generate_slot(ship, 5));
     send_to_char_f(ch, "        &+y|....&+L/&N&+y.|        %s&N\r\n", generate_slot(ship, 6));
     send_to_char_f(ch, "    %s%3d &N&+y|%s%2d&+y.&+L/&N%s%2d&+y| %s%3d    %s&N\r\n",
-            SHIPARMORCOND(SHIPMAXPARMOR(ship), SHIPPARMOR(ship)), SHIPPARMOR(ship),
-            SHIPINTERNALCOND(SHIPMAXPINTERNAL(ship), SHIPPINTERNAL(ship)), SHIPPINTERNAL(ship),
-            SHIPINTERNALCOND(SHIPMAXSINTERNAL(ship), SHIPSINTERNAL(ship)), SHIPSINTERNAL(ship), 
-            SHIPARMORCOND(SHIPMAXSARMOR(ship), SHIPSARMOR(ship)), SHIPSARMOR(ship),  generate_slot(ship, 7));
+            SHIP_ARMOR_COND(SHIP_MAX_PARMOR(ship), SHIP_PARMOR(ship)), SHIP_PARMOR(ship),
+            SHIP_INTERNAL_COND(SHIP_MAX_PINTERNAL(ship), SHIP_PINTERNAL(ship)), SHIP_PINTERNAL(ship),
+            SHIP_INTERNAL_COND(SHIP_MAX_SINTERNAL(ship), SHIP_SINTERNAL(ship)), SHIP_SINTERNAL(ship), 
+            SHIP_ARMOR_COND(SHIP_MAX_SARMOR(ship), SHIP_SARMOR(ship)), SHIP_SARMOR(ship),  generate_slot(ship, 7));
     send_to_char_f(ch, "    &N--- &+y|&N--&+Y/\\&N--&+y| &N---    %s&N\r\n", generate_slot(ship, 8));
     send_to_char_f(ch, "    &+G%3d &N&+y|&+g%2d&+Y\\/&N&+g%2d&+y| &+G%3d    %s&N\r\n",
-            SHIPMAXPARMOR(ship), SHIPMAXPINTERNAL(ship), SHIPMAXSINTERNAL(ship), SHIPMAXSARMOR(ship), generate_slot(ship, 9));
+            SHIP_MAX_PARMOR(ship), SHIP_MAX_PINTERNAL(ship), SHIP_MAX_SINTERNAL(ship), SHIP_MAX_SARMOR(ship), generate_slot(ship, 9));
     send_to_char_f(ch, "        &+y|......|        %s&N\r\n", generate_slot(ship, 10));
     send_to_char_f(ch, "        &+y|__||__|        %s&N\r\n", generate_slot(ship, 11));
     send_to_char_f(ch, "        &+y/......\\        %s&N\r\n", generate_slot(ship, 12));
     send_to_char_f(ch, "        &+y|......|        %s&N\r\n", generate_slot(ship, 13));
     send_to_char_f(ch, "        &+y|..%s%2d&+y..|        %s&N\r\n", 
-            SHIPINTERNALCOND(SHIPMAXRINTERNAL(ship), SHIPRINTERNAL(ship)), SHIPRINTERNAL(ship), generate_slot(ship, 14));
+            SHIP_INTERNAL_COND(SHIP_MAX_RINTERNAL(ship), SHIP_RINTERNAL(ship)), SHIP_RINTERNAL(ship), generate_slot(ship, 14));
     send_to_char_f(ch, "        &+y|..&N--&+y..|        %s&N\r\n", generate_slot(ship, 15));
-    send_to_char_f(ch, "        &+y|..&+g%2d&+y..|\r\n", SHIPMAXRINTERNAL(ship));
+    send_to_char_f(ch, "        &+y|..&+g%2d&+y..|\r\n", SHIP_MAX_RINTERNAL(ship));
     send_to_char_f(ch, "        &+y\\______/    &NSet Heading: &+W%-3d  &NSet Speed: &+W%-4d&N  Crew Stamina: %s%d&N\r\n",
             (int)ship->setheading, ship->setspeed, ship->crew.get_stamina_prefix(), ship->crew.get_display_stamina());
     send_to_char_f(ch, "                        &NHeading: &+W%-3d      &NSpeed: &+W%-4d&N  Repair Stock: &+W%d&N\r\n", 
             (int)ship->heading, ship->speed, ship->repair);
-    send_to_char_f(ch, "        %s%3d&N/&+G%-3d&N\r\n", SHIPARMORCOND(SHIPMAXRARMOR(ship), SHIPRARMOR(ship)), SHIPRARMOR(ship), SHIPMAXRARMOR(ship));
+    send_to_char_f(ch, "        %s%3d&N/&+G%-3d&N\r\n", SHIP_ARMOR_COND(SHIP_MAX_RARMOR(ship), SHIP_RARMOR(ship)), SHIP_RARMOR(ship), SHIP_MAX_RARMOR(ship));
     return TRUE;
 }
 
 int claim_coffer(P_char ch, P_ship ship)
 {
-    if (!isname(GET_NAME(ch), SHIPOWNER(ship)))
+    if (!isname(GET_NAME(ch), SHIP_OWNER(ship)))
     {
         send_to_char("But you are not the captain of this ship...\r\n", ch);
         return false;
@@ -1369,7 +1369,7 @@ int ship_panel_proc(P_obj obj, P_char ch, int cmd, char *arg)
         send_to_char("Not valid ship or error in ship code.\r\n", ch);
         return FALSE;
     }
-    if (!SHIPISLOADED(ship))
+    if (!SHIP_LOADED(ship))
     {
         send_to_char("Error: ship is not loaded!\r\n", ch);
         return FALSE;
@@ -1403,9 +1403,9 @@ int ship_panel_proc(P_obj obj, P_char ch, int cmd, char *arg)
             return TRUE;
         }
       
-        if (!isname(str_dup(SHIPOWNER(ship)), GET_NAME(ch)) && !IS_TRUSTED(ch))
+        if (!isname(str_dup(SHIP_OWNER(ship)), GET_NAME(ch)) && !IS_TRUSTED(ch))
         {
-            P_char real_owner = get_char2(str_dup(SHIPOWNER(ship)));
+            P_char real_owner = get_char2(str_dup(SHIP_OWNER(ship)));
             if (ch->group == NULL || real_owner == NULL || real_owner->group != ch->group)
             {
                 send_to_char ("You are not the captain of this ship, the crew ignores you.\r\n", ch);
@@ -1422,7 +1422,7 @@ int ship_panel_proc(P_obj obj, P_char ch, int cmd, char *arg)
             send_to_char ("Arrgh! There are too many people on this ship to move!\r\n", ch);
             return TRUE;
         }
-        if (SHIPSINKING(ship)) 
+        if (SHIP_SINKING(ship)) 
         {
             send_to_char("&+RYou cannot control the ship while it's sinking!&N\r\n", ch);
             return TRUE;
