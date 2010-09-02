@@ -150,6 +150,8 @@ void NPCShipAI::activity()
     contacts_count = getcontacts(ship, false); // doing it here once
     speed_restriction = -1;
 
+    if (IS_SET(ship->flags, AIR) && !SHIP_FLYING(ship) && !number(0, 5))
+        fly_ship(ship);
 
     switch(mode)
     {
@@ -707,7 +709,12 @@ bool NPCShipAI::worth_ramming()
         ship->armor[SIDE_PORT] == 0 || 
         ship->maxarmor[SIDE_FORE] / ship->armor[SIDE_FORE] >= 2 ||
         ship->maxarmor[SIDE_STAR] / ship->armor[SIDE_STAR] >= 2 ||
-        ship->maxarmor[SIDE_PORT] / ship->armor[SIDE_PORT] >= 2 || advanced < 0)
+        ship->maxarmor[SIDE_PORT] / ship->armor[SIDE_PORT] >= 2 || 
+        ship->internal[SIDE_FORE] == 0 ||
+        ship->internal[SIDE_STAR] == 0 ||
+        ship->internal[SIDE_PORT] == 0 ||
+        ship->internal[SIDE_REAR] == 0 ||
+        advanced < 0)
     {
         return false;
     }
@@ -726,7 +733,9 @@ bool NPCShipAI::check_ram()
         return false;
     if (!check_ram_arc(ship->heading, t_bearing, 120))
         return false;
-    if (SHIP_FLYING(ship) != SHIP_FLYING(ship->target))
+    if (!SHIP_FLYING(ship) && SHIP_FLYING(ship->target))
+        return false;
+    if (SHIP_FLYING(ship) && !SHIP_FLYING(ship->target) && !IS_WATER_ROOM(ship->location))
         return false;
 
     if (!advanced && !is_boardable(ship->target) && number(1, 3) > 1)
@@ -738,6 +747,8 @@ bool NPCShipAI::check_ram()
 void NPCShipAI::ram_target()
 {
     send_message_to_debug_char("\r\nRamming!\r\n");
+    if (SHIP_FLYING(ship))
+        land_ship(ship);
     if (try_ram_ship(ship, ship->target, t_bearing))
     {
         //if (SHIP_IMMOBILE(ship->target) && !did_board)

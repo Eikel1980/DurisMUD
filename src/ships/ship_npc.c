@@ -563,7 +563,7 @@ void setup_npc_frigate_02(P_ship ship, NPC_AI_Type type) // level 3
     load_npc_ship_crew(ship, 18, 3);
 }
 
-void setup_cyrics_revenge_01(P_ship ship, NPC_AI_Type type) // level 4
+void setup_npc_dreadnought_01(P_ship ship, NPC_AI_Type type) // level 4
 {
     set_weapon(ship, 0, W_FRAG_CAN, SIDE_FORE);
     set_weapon(ship, 1, W_LARGE_CAT, SIDE_FORE);
@@ -588,7 +588,7 @@ void setup_cyrics_revenge_01(P_ship ship, NPC_AI_Type type) // level 4
     load_npc_ship_crew(ship, 20, 4);
 }
 
-void setup_cyrics_revenge_02(P_ship ship, NPC_AI_Type type) // level 4
+void setup_npc_dreadnought_02(P_ship ship, NPC_AI_Type type) // level 4
 {
     set_weapon(ship, 0, W_LONGTOM, SIDE_FORE);
     set_weapon(ship, 1, W_LARGE_CAT, SIDE_FORE);
@@ -612,7 +612,7 @@ void setup_cyrics_revenge_02(P_ship ship, NPC_AI_Type type) // level 4
     ship->frags = number(3000, 4000);
     load_npc_ship_crew(ship, 20, 4);
 }
-void setup_cyrics_revenge_03(P_ship ship, NPC_AI_Type type) // level 4
+void setup_npc_dreadnought_03(P_ship ship, NPC_AI_Type type) // level 4
 {
     set_weapon(ship, 0, W_LARGE_CAT, SIDE_FORE);
     set_weapon(ship, 1, W_LARGE_CAT, SIDE_FORE);
@@ -672,9 +672,9 @@ NPCShipSetup npcShipSetup [] = {
     { SH_DESTROYER,   3, &setup_npc_destroyer_12 },
     { SH_FRIGATE,     3, &setup_npc_frigate_01 },
     { SH_FRIGATE,     3, &setup_npc_frigate_02 },
-    { SH_DREADNOUGHT, 4, &setup_cyrics_revenge_01 },
-    { SH_DREADNOUGHT, 4, &setup_cyrics_revenge_02 },
-    { SH_DREADNOUGHT, 4, &setup_cyrics_revenge_03 },
+    { SH_DREADNOUGHT, 4, &setup_npc_dreadnought_01 },
+    { SH_DREADNOUGHT, 4, &setup_npc_dreadnought_02 },
+    { SH_DREADNOUGHT, 4, &setup_npc_dreadnought_03 },
 };
 
 
@@ -913,7 +913,6 @@ bool load_cyrics_revenge()
             cyrics_revenge->npc_ai->advanced = 1;
             cyrics_revenge->npc_ai->permanent = true;
             SET_BIT(cyrics_revenge->flags, AIR);
-            fly_ship(cyrics_revenge);
             return true;
         }
     }
@@ -1064,11 +1063,11 @@ bool load_treasure_chest(P_ship ship, P_char captain, NPCShipCrewData* crew)
     int money = 0;
     switch (crew->level)
     {
-    case 0: money = number(200, 400); break;
-    case 1: money = number(500, 600); break;
-    case 2: money = number(800, 1000); break;
-    case 3: money = number(1200, 1500); break;
-    case 4: money = number(3000, 5000); break;
+    case 0: money = number(400, 800); break;
+    case 1: money = number(600, 1000); break;
+    case 2: money = number(1200, 1500); break;
+    case 3: money = number(1500, 3000); break;
+    case 4: money = number(5000,10000); break;
     };
 
     P_obj money_obj = create_money(0, 0, 0, money);

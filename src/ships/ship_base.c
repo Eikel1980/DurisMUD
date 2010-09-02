@@ -713,24 +713,24 @@ void set_ship_layout(P_ship ship, int m_class)
         break;
 
     case SH_DREADNOUGHT:
-        SHIP_ROOM_EXIT(ship, 0, DOWN)  = room + 1;
-        SHIP_ROOM_EXIT(ship, 1, UP)    = room;
+        SHIP_ROOM_EXIT(ship, 0, DOWN)  = room + 6;
         SHIP_ROOM_EXIT(ship, 1, SOUTH) = room + 2;
         SHIP_ROOM_EXIT(ship, 1, NORTH) = room + 3; // launch
         SHIP_ROOM_EXIT(ship, 1, WEST)  = room + 4;
         SHIP_ROOM_EXIT(ship, 1, EAST)  = room + 5;
+        SHIP_ROOM_EXIT(ship, 1, DOWN)  = room + 11;
         SHIP_ROOM_EXIT(ship, 2, NORTH) = room + 1;
         SHIP_ROOM_EXIT(ship, 2, SOUTH) = room + 6;
         SHIP_ROOM_EXIT(ship, 2, DOWN)  = room + 7; // hold
         SHIP_ROOM_EXIT(ship, 2, WEST)  = room + 8; // launch
         SHIP_ROOM_EXIT(ship, 2, EAST)  = room + 9; // launch
+        SHIP_ROOM_EXIT(ship, 6, UP)    = room;
         SHIP_ROOM_EXIT(ship, 6, NORTH) = room + 2;
         SHIP_ROOM_EXIT(ship, 6, SOUTH) = room + 10;
-        SHIP_ROOM_EXIT(ship, 6, DOWN)  = room + 11;
         SHIP_ROOM_EXIT(ship, 6, WEST)  = room + 12;
         SHIP_ROOM_EXIT(ship, 6, EAST)  = room + 13;
-        SHIP_ROOM_EXIT(ship,11, UP)    = room + 6;
-        SHIP_ROOM_EXIT(ship,11, SOUTH) = room + 14;
+        SHIP_ROOM_EXIT(ship,11, UP)    = room + 1;
+        SHIP_ROOM_EXIT(ship,11, NORTH) = room + 14;
         SHIP_ROOM_EXIT(ship, 3, SOUTH) = room + 1;
         SHIP_ROOM_EXIT(ship, 4, EAST)  = room + 1;
         SHIP_ROOM_EXIT(ship, 4, SOUTH) = room + 8;
@@ -748,7 +748,7 @@ void set_ship_layout(P_ship ship, int m_class)
         SHIP_ROOM_EXIT(ship,12, NORTH) = room + 8;
         SHIP_ROOM_EXIT(ship,13, WEST)  = room + 6;
         SHIP_ROOM_EXIT(ship,13, NORTH) = room + 9;
-        SHIP_ROOM_EXIT(ship,14, NORTH) = room + 11;
+        SHIP_ROOM_EXIT(ship,14, SOUTH) = room + 11;
 
         ship->entrance = room + 14;
         break;
