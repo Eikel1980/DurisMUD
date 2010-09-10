@@ -1011,3 +1011,19 @@ HO 0 1 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
+#22470
+lanagin priest bloodstone orc teacher _spec1_ _spec2_ _spec3_~
+&+rLanagin&+L the &+wpriest &+Lof Bloodstone&n~
+&+rLanagin&+L the &+wpriest &+Lof Bloodstone stands here, waiting to &+Wconverse &+Lwith Daagar.
+~
+&+L   Having traveled a small ways, this devoted priest has come to speak
+&+Lwith Daagar regarding several questions of trade between &+RBloodstone &+Land
+&+bStormport&+L. While here, he has made his presence known and has been very
+&+Lwill to teach others about the dark lords he follows. Seekers of the
+&+Lclerical arts would do well to speak to him about learning more.
+~
+2147518536 0 0 402653336 0 128 4194304 -1000 S
+HO 0 32 -1
+59 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
