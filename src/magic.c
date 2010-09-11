@@ -3160,7 +3160,7 @@ void spell_single_meteorswarm(int level, P_char ch, char *arg, int type,
       return;
 
   dam = 100 + level * 6 + number(1, 40);
-  if (IS_PC(victim))
+  if (IS_PC(ch) && IS_PC(victim))
     dam = dam * get_property("spell.area.damage.to.pc", 0.5); 
   dam = dam * get_property("spell.area.damage.factor.meteorswarm", 1.000);
   spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
@@ -3495,7 +3495,7 @@ void spell_single_firestorm(int level, P_char ch, char *arg, int type,
   if(NewSaves(victim, SAVING_SPELL, 0))
     dam >>= 1;
   
-  if (IS_PC(victim))
+  if (IS_PC(ch) && IS_PC(victim))
     dam = dam * get_property("spell.area.damage.to.pc", 0.5);
   
   dam = dam * get_property("spell.area.damage.factor.firestorm", 1.000);
@@ -12271,7 +12271,7 @@ void spell_single_incendiary_cloud(int level, P_char ch, char *arg, int type,
     dam /= 2;
   }
 
-  if (IS_PC(victim))
+  if (IS_PC(ch) && IS_PC(victim))
     dam = dam * get_property("spell.area.damage.to.pc", 0.5);
   
   dam = dam * get_property("spell.area.damage.factor.incendiary", 1.000);
@@ -12728,7 +12728,7 @@ void spell_ice_storm(int level, P_char ch, char *arg, int type, P_char victim,
         act("$n is splashed with &+bwater&n!", FALSE, tch, 0, 0, TO_ROOM);
         make_wet(tch, WAIT_MIN);
       } else {
-        if (IS_PC(tch))
+        if (IS_PC(ch) && IS_PC(tch))
           dam = dam * get_property("spell.area.damage.to.pc", 0.5);
   
         send_to_char("You are blasted by the storm!\n", tch);
@@ -13004,7 +13004,7 @@ void spell_ghastly_touch(int level, P_char ch, char *arg, int type, P_char victi
   int dam;
   dam = (int) number(level * 4, level * 6);
   
-  if (IS_PC(victim))
+  if (IS_PC(ch) && IS_PC(victim))
     dam = dam * get_property("spell.area.damage.to.pc", 0.5);
   
   dam = dam * get_property("spell.area.damage.factor.summonghasts", 1.000);
@@ -13045,7 +13045,7 @@ void spell_heavens_aid(int level, P_char ch, char *arg, int type, P_char victim,
   int dam;
   dam = (int) number(level * 4, level * 6);
 
-  if (IS_PC(victim))
+  if (IS_PC(ch) && IS_PC(victim))
     dam = dam * get_property("spell.area.damage.to.pc", 0.5);
 
   dam = dam * get_property("spell.area.damage.factor.aidoftheheavens", 1.000);
@@ -17117,7 +17117,7 @@ void event_cdoom(P_char ch, P_char vict, P_obj obj, void *data)
       finaldam = (int) (finaldam * 0.75);
     }
     
-    if (IS_PC(tch))
+    if (IS_PC(ch) && IS_PC(tch))
       finaldam = finaldam * get_property("spell.area.damage.to.pc", 0.5);
   
     finaldam = finaldam * get_property("spell.area.damage.factor.doom", 1.000);

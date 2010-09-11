@@ -65,6 +65,8 @@ const struct race_names race_names_table[LAST_RACE + 2] = {
   {"Kuo Toa", "KuoToa", "&+GKu&+Lo T&+Goa&n", "KT"},
   {"Wood Elf", "WoodElf", "&+gW&+Goo&+gd E&+Glf&n", "WE"},
   {"Firbolg", "Firbolg", "&+yFir&+cbolg&n", "FB"},
+  {"Agathinon", "Agathinon", "&+WAga&+Yt&+Whin&+Yo&+Wn&n",            "AG"},
+  {"Eladrin", "Eladrin", "&+cE&+Cl&+Wadr&+Ci&+cn&n",                  "EL"},
   {"Gargoyle", "Gargoyle", "&+LGar&+wgo&+Lyle&n", "MG"},
   {"Fire Elemental", "FireElemental", "&+rFire Elemental&n", "EF"},
   {"Air Elemental", "AirElemental", "&+CAir Elemental&n", "EA"},
@@ -111,10 +113,8 @@ const struct race_names race_names_table[LAST_RACE + 2] = {
   {"Wraith", "Wraith", "&+LWr&+wai&+Lth&n",                           "WR"},
   {"Shadow", "Shadow", "&+LShadow&n",                                 "SW"},
   {"Purple Worm", "PurpleWorm", "&+mPurple &+LWorm&n",                "PW"},
-  {"Agathinon", "Agathinon", "&+WAga&+Yt&+Whin&+Yo&+Wn&n",            "AG"},
   {"Void Elemental", "VoidElemental", "&+LVoi&+wd Elemen&+Ltal&n",    "VE"},
   {"Ice Elemental", "IceElemental", "&+CIc&+We Ele&+Cme&+Wnt&+Cal&n", "IE"},
-  {"Eladrin", "Eladrin", "&+cE&+Cl&+Wadr&+Ci&+cn&n",                  "EL"},
   {"Phoenix", "Phoenix", "&+rP&+Rh&+Yo&+We&+Yn&+Ri&+rx&n", "PX"},
   {"Archon", "Archon", "&+RArch&+Wo&+Rn&n", "AR"},
   {"Asura", "Asura", "&+RAsu&+Yr&+Ra&n", "AU"},
@@ -127,6 +127,7 @@ const struct race_names race_names_table[LAST_RACE + 2] = {
   {"Succubus", "Succubus", "&+LS&+ru&+Rccub&+ru&+Ls&n", "SU"},
   {"Fire Giant", "FireGiant", "&+rFi&+Rre Gia&+rnt&n", "FG"},
   {"Frost Giant", "FrostGiant", "&+cFr&+Cos&+Wt G&+Cia&+cnt&n", "IG"},
+  {"Deva", "Deva", "&+wD&+Wev&+wa&n", "DV"},
 {0}
 };
 
