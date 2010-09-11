@@ -8241,8 +8241,6 @@ PROFILE_END(mundane_assist);
     handle_npc_assist(ch);
 PROFILE_END(mundane_assist);
 
-/*  commenting this out, see below...
- 
   if(IS_HUMANOID(ch) && !IS_PATROL(ch))
   {
     for (obj = world[ch->in_room].contents; obj; obj = next_obj)
@@ -8260,7 +8258,7 @@ PROFILE_END(mundane_assist);
 
   if(IS_SET(ch->specials.act, ACT_SCAVENGER) && world[ch->in_room].contents
       && (!number(0, MAX(1, 15 - STAT_INDEX(GET_C_INT(ch))))) &&
-      !IS_FIGHTING(ch) && !IS_ANIMAL(ch) && !IS_UNDEAD(ch))
+      !IS_FIGHTING(ch) && !IS_ANIMAL(ch))
   {
     max = 1;
     best_obj = NULL;
@@ -8353,9 +8351,8 @@ PROFILE_END(mundane_assist);
         goto normal;
       }
     }
-  } - This code is crashing the game sometimes... someone needs to figure out why
-      backtrace points to obj->next_content  - Jexni 11/1/08 */
-
+  } 
+  
   if( !IS_ALIVE(ch) )
   {
     return;

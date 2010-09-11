@@ -464,13 +464,13 @@ int vecna_minifist(P_obj obj, P_char ch, int cmd, char *arg)
   if (cmd != CMD_MELEE_HIT || !ch)
     return FALSE;
 
-  if (!ch->specials.fighting)
-    return FALSE;
+  //if (!ch->specials.fighting)
+  //  return FALSE;
  
   if (!OBJ_WORN_POS(obj, WIELD))
     return FALSE;
 
-  if (number(0, 100) <= 5)
+  if (number(0, 100) <= 6)
   {
     victim = ch->specials.fighting;
     if (GET_RACE(victim) != RACE_OGRE || GET_RACE(victim) != RACE_CENTAUR || GET_RACE(victim) != RACE_SGIANT || GET_RACE(victim) != RACE_MINOTAUR)
@@ -495,13 +495,13 @@ int vecna_dispel(P_obj obj, P_char ch, int cmd, char *arg)
   if (cmd != CMD_MELEE_HIT || !ch)
     return FALSE;
 
-  if (!ch->specials.fighting)
-    return FALSE;
+  //if (!ch->specials.fighting)
+  //  return FALSE;
  
   if (!OBJ_WORN_POS(obj, WIELD))
     return FALSE;
 
-  if (number(0, 100) <= 4)
+  if (number(0, 100) <= 5)
   {
     victim = ch->specials.fighting;
     act("&+LYour &+rrazor-edged dagger &+Lglows with motes of &+rcrimson &+Llight as it attacks $N's &+c m&+Cagi&+cc!", FALSE, ch, NULL, victim, TO_CHAR);
@@ -523,13 +523,13 @@ int vecna_boneaxe(P_obj obj, P_char ch, int cmd, char *arg)
   if (cmd != CMD_MELEE_HIT || !ch)
     return FALSE;
 
-  if (!ch->specials.fighting)
-    return FALSE;
+  //if (!ch->specials.fighting)
+  //  return FALSE;
  
   if (!OBJ_WORN_POS(obj, WIELD))
     return FALSE;
 
-  if (number(0, 100) <= 4)
+  if (number(0, 100) <= 6)
   {
     victim = ch->specials.fighting;
     act("&+LYour large &+Wbone &+Laxe shrieks in &+rrage &+Lat the sight of $N!", FALSE, ch, NULL, victim, TO_CHAR);
