@@ -1025,7 +1025,7 @@ void load_mines(bool set_event, bool load_all, int map)
 
   for( P_obj tobj = object_list; tobj; tobj = tobj->next )
   {
-    if( (GET_OBJ_VNUM(tobj) == MINE_VNUM) &&
+    if( (GET_OBJ_VNUM(tobj) == MINE_VNUM) && (tobj->loc.room > 0) &&
         (world[tobj->loc.room].number >= mine_data[map].start) &&
         (world[tobj->loc.room].number <= mine_data[map].end) )
     {
