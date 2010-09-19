@@ -19119,7 +19119,7 @@ void spell_doom_blade(int level, P_char ch, char *arg, int type,
     act("figure recites a short &n&+Yprayer&n before &n&+Wva&n&+wni&n&+Ls&n&+whi&n&+Wng&n as fast as it came.", TRUE, ch, weapon, 0, TO_CHAR);
 
     act("As $n calls to the &n&+Wh&n&+Yea&n&+Wv&n&+Ye&n&+Wns&n for a weapon to slay the &n&+Lev&n&+ri&n&+Ll&n in the world,", TRUE, ch, weapon, 0, TO_ROOM);
-    act("an &n&+Yang&n&+We&n&+Yl&n&+Ric&n figure &n&+Lmat&n&+wer&n&+Wia&n&+wli&n&+Lzes&n before you, handing a &n&+Ygolden&n blade to (player).", TRUE, ch, weapon, 0, TO_ROOM);
+    act("An &n&+Yang&n&+We&n&+Yl&n&+Ric&n figure &n&+Lmat&n&+wer&n&+Wia&n&+wli&n&+Lzes&n before you, handing a &n&+Ygolden&n blade to $n.", TRUE, ch, weapon, 0, TO_ROOM);
     act("The figure recites a short &n&+Yprayer&n before &n&+Wva&n&+wni&n&+Ls&n&+whi&n&+Wng&n as fast as it came.", TRUE, ch, weapon, 0, TO_ROOM);
   }
   else
