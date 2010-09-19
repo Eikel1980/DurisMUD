@@ -5247,7 +5247,7 @@ int raw_damage(P_char ch, P_char victim, double dam, uint flags,
         dam *= dam_factor[DF_SANC];
         float group_mod = 1.0 - ( (float) group_size * 
           (float) get_property("damage.reduction.sanctuary.paladin.groupMod", 0.02) );
-        dam *= group_mod;
+        dam *= MAX(.25, group_mod);
       }
 
       if(IS_AFFECTED4(victim, AFF4_SANCTUARY) &&
