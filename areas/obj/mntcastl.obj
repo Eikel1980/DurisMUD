@@ -57,7 +57,7 @@ black gem small~
 &+La small black gem&n~
 Lying lost amoung the cracks in the ground is a small dark gem.~
 ~
-11 8 9 0 14 100 110592 16385 64 0 0
+11 8 9 0 14 100 110592 540673 64 0 0
 0 0 0 0 0 0 0 0
 1 230000 100
 E
@@ -67,7 +67,7 @@ of the gem is an almost imperceptable line of a white substance, probably
 used to adhere it to a decorative piece.
 ~
 A
-12 20
+3 5
 A
 13 5
 #37105
@@ -376,7 +376,7 @@ umber hulk talon~
 A long talon from an umber hulk.
 ~
 A
-12 25
+14 10
 A
 13 10
 #37126
@@ -594,7 +594,7 @@ seems to glow in the light.
 A
 13 25
 A
-12 35
+5 5
 #37140
 rod iron whitestone~
 &+ca delicate iron rod&n set with &+Wwhitestone&n~
@@ -692,7 +692,7 @@ ball flame~
 This small ball of flame is cool to the touch, yet will quite adequately light the way.
 ~
 A
-12 30
+4 5
 A
 13 30
 #37146
