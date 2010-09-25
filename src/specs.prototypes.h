@@ -1068,4 +1068,5 @@ int lucrot_mindstone(P_obj obj, P_char ch, int cmd, char *arg);
 // specs.venthix.c
 int roulette_pistol(P_obj obj, P_char ch, int cmd, char *arg);
 int orb_of_deception(P_obj obj, P_char ch, int cmd, char *arg);
-
+void event_super_cannon(P_char ch, P_char vict, P_obj obj, void *data);
+int super_cannon(P_obj obj, P_char ch, int cmd, char *arg);

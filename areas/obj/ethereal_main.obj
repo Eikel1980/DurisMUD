@@ -224,8 +224,8 @@ ball green mist~
 &+Ga green ball of mist&n~
 &+Ga misty ball has been left here.&n~
 ~
-3 1 2 4 7 0 1024 16385 64 37883812 0
-30 4 4 38 0 0 0 0
+3 1 2 4 7 0 0 16385 64 0 0
+30 4 4 118 0 0 0 0
 4 0 100
 E
 ball mist~
@@ -234,7 +234,7 @@ It has a swirling green mist inside.
 A
 18 1
 A
-12 3
+23 -1
 #12440
 leggings green dark~
 &+ga pair of dark green leggings&n~
@@ -265,12 +265,12 @@ ball sooty smoke~
 &+yA small ball has been left here.&n~
 ~
 3 6 2 4 7 0 1024 16385 64 37883812 0
-20 4 4 4 0 0 0 0
+20 4 4 165 0 0 0 0
 4 7000 100
 A
 19 1
 A
-12 3
+22 -1
 #12460
 rift small hole~
 &+La small rift&n~

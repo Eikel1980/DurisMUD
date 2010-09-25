@@ -1038,7 +1038,7 @@ heart~
 ~
 12 2 3 0 9 69 126976 1 64 0 0
 0 0 0 0 0 0 0 0
-3 23423 100
+3 23423 100 2048 0 0 0
 E
 heart~
 &+L   This black heart of a &+gTentabeast &+Lbeats on even without a body.  As you gaze&N
@@ -1050,7 +1050,7 @@ heart~
 &+Lthe &+wdead &+Lflows down your &+Wspine&+L.&N
 ~
 A
-12 20
+13 15
 A
 27 5
 #20254
@@ -1139,6 +1139,6 @@ scintilating earring~
 &+Me&+md&+Mg&+me&+Ms&+m.  &+MI&+mt s&+Mee&+mms l&+Mi&+mk&+Me &+mth&+Me &+ml&+Mu&+mst&+Me&+mr &+Mo&+mf th&+Mis &+me&+Ma&+mr&+Mr&+mi&+Mn&+mg &+Mi&+ms n&+Mea&+mrly &+Mi&+mmp&+Mo&+mss&+Mi&+mbl&+Me &+mt&+Mo &+md&+Mu&+mll.&N
 ~
 A
-12 25
+22 -2
 A
 20 -2

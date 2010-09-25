@@ -806,7 +806,7 @@ void event_mine_check(P_char ch, P_char victim, P_obj, void *data)
     create_parchment(ch); 
 
   if(!number(0,4) &&
-     (GET_OBJ_VNUM(pick) != 82033) &&
+     (GET_OBJ_VNUM(pick) != 83318) &&
      DamageOneItem(ch, 1, pick, false))
     return;
 

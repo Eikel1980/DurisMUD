@@ -738,6 +738,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
            (GET_RACE(ch) == RACE_ASURA) || \
            (GET_RACE(ch) == RACE_BRALANI) || \
            (GET_RACE(ch) == RACE_GHAELE) || \
+           (GET_RACE(ch) == RACE_ELADRIN) || \
            (GET_RACE(ch) == RACE_TITAN) || \
            (GET_RACE(ch) == RACE_AVATAR))
 
@@ -1116,6 +1117,7 @@ IS_GIANT(ch) || IS_PC_PET(ch) || IS_PC(ch) || IS_UNDEAD(ch)) && !IS_ANIMAL(ch))
   (GET_RACE(ch) == RACE_ANGEL) || \
   (GET_RACE(ch) == RACE_BEHOLDER) || \
   (GET_RACE(ch) == RACE_PLICH) || \
+  (GET_RACE(ch) == RACE_ELADRIN) || \
   (GET_RACE(ch) == RACE_TITAN) || \
   (GET_RACE(ch) == RACE_AVATAR))
 

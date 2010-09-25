@@ -91,7 +91,7 @@ A
 4 -1
 #15
 banana~
-&+Ya banana&N~
+&+Ya ba&+yna&+Yna&N~
 &+YA banana lies here on the ground, turning &+ybrown.&N~
 ~
 5 48 2 0 7 0 8192 8193 0 0 0
@@ -4541,6 +4541,20 @@ A
 18 8
 A
 19 3
+#427
+cannon bronze _id_~
+&+LThe large &+ybronze &+Lcannon of the &+ydw&+Ya&+yrv&+Ye&+yn &+csm&+Ci&+cths&n~
+&+LThe large &+ybronze &+Lcannon sits here, detailed &+ydw&+Ya&+yrv&+Ye&+yn &+cinscriptions &+Lrunning the length of the barrel.&n~
+~
+12 20 7 0 11 0 40960 0 0 0 0
+0 0 0 0 0 0 0 0
+1000000 0 100
+E
+cannon~
+To prime the cannon for firing use 'order cannon [gunpowder] [direction]'
+Ie, to go north 10 paces, type 'order cannon 10 0'
+The larger the distance, the more inacuraate the direction can be.
+~
 #429
 canoe~
 &+ya small one-man canoe&n~
