@@ -56,7 +56,7 @@ shadow _nosneak_~
 &+Ldetermination to fulfill the desires of its evil master.
 ~
 1073743945 1 0 524296 192 0 4096 -1000 S
-sw 0 4 -1
+sw 0 1 -1
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -91,8 +91,13 @@ lich rashid ibn halil _size_giant_ br_s~
 the lich of &+rRashid&N~
 The lich of &+rRashid Ibn-Halil&N stands here.
 ~
-This misshapen creature hobbles along.  Once a humanoid of some sort, but
-now forever damned to serve its undead master.
+   &+rRashid Ibn-Halil &+Lwas once a powerful &+Capprentice &+Lto the archmage. Spending
+&+Lscores of years, first in life, than in death as pupil of &+WVecna&+L, &+rRashid's
+&+Lpowers grew quiet respectable in their own right. As years passed and
+&+rRashid &+Lwas unable to extend his natural life with magic anymore, &+WVecna
+&+Ltought the ageing apprentice how to &+Bcontain &+Land &+Bcontrol &+Lhis life essence,
+&+Lin the form of a lich. Serving his master still in undeath, &+rRashid &+Lstalks
+&+Lthese barrows, guarding entrance to his masters work chambers.&n
 ~
 1074792520 1 0 805306520 309440 67108864 8192 -1000 S
 ul 0 516 -1
