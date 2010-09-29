@@ -3570,6 +3570,16 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
     remember(victim, GET_MASTER(ch));
   }
 
+  if (has_innate(victim, INNATE_EVASION) &&
+      GET_SPEC(victim, CLASS_MONK, SPEC_WAYOFDRAGON))
+  {
+    if ((((int) get_property("innate.evasion.removechance", 15.000))) > number(1,100))
+    {
+      send_to_char("You twist out of the way avoiding the harmful magic!\n", victim);
+      act ("$n twists out of the way avoiding the harmful magic!", FALSE, victim, 0, ch, TO_ROOM);
+      return DAM_NONEDEAD;
+    }
+  }    
   // globes check
   if (ch != victim)
   {
@@ -4064,6 +4074,8 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
 	dam *= dam_factor[DF_TIGERPALM];
       break;
     case SPLDAM_NEGATIVE:
+      if (victim && IS_ANGEL(victim))
+        dam *= get_property("damage.neg.increase.modifierVsAngel", 1.300);
       if (IS_AFFECTED2(victim, AFF2_SOULSHIELD))
         dam *= dam_factor[DF_SLSHIELDINCREASE];
       if (IS_AFFECTED4(victim, AFF4_NEG_SHIELD))

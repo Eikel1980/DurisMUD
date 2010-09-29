@@ -931,8 +931,9 @@
 #define SKILL_SHIP_DAMAGE_CONTROL    1261
 #define SKILL_RAGE_REORIENT          1262 // Added to handle reorient on rage skill
 #define SKILL_TIGER_PALM             1263
+#define SKILL_DIAMOND_SOUL           1264
 
-#define LAST_SKILL                   SKILL_TIGER_PALM
+#define LAST_SKILL                   SKILL_DIAMOND_SOUL
 
 #define FIRST_SECONDARY_SKILL        1501
 
@@ -1092,6 +1093,9 @@
 #define TAR_EPIC          BIT_26
 #define TAR_SPELL         BIT_27
 #define TAR_POISON        BIT_28
+#define TAR_WALL          BIT_29 
+/* TAR_WALL checks arguments for directional keywords, and returns pointer 
+   to a target object if ch can see a wall in that direction */
 
 /* Possible Targets:
 
