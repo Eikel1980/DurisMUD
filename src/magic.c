@@ -8819,7 +8819,7 @@ void spell_vitalize_undead(int level, P_char ch, char *arg, int type,
 
     bzero(&af, sizeof(af));
     af.type = SPELL_VITALIZE_UNDEAD;
-    af.duration = KludgeDuration(ch, 25, 4);
+    af.duration = KludgeDuration(ch, 25, 10);
     af.modifier = healpoints;
     af.location = APPLY_HIT;
 
@@ -8834,7 +8834,7 @@ void spell_vitalize_undead(int level, P_char ch, char *arg, int type,
     for (af1 = victim->affected; af1; af1 = af1->next)
       if(af1->type == SPELL_VITALIZE_UNDEAD)
       {
-        af1->duration = KludgeDuration(ch, 25, 4);
+        af1->duration = KludgeDuration(ch, 25, 10);
       }
   }
 
@@ -8927,9 +8927,9 @@ void spell_globe(int level, P_char ch, char *arg, int type, P_char victim,
     bzero(&af, sizeof(af));
     af.type = SPELL_GLOBE;
     if(GET_CLASS(ch, CLASS_CONJURER))
-      af.duration = 10;
+      af.duration = 15;
     else
-      af.duration = 4;
+      af.duration = 8;
     af.bitvector2 = AFF2_GLOBE;
     affect_to_char(victim, &af);
   }
@@ -8940,7 +8940,7 @@ void spell_globe(int level, P_char ch, char *arg, int type, P_char victim,
     for (af1 = victim->affected; af1; af1 = af1->next)
       if(af1->type == SPELL_GLOBE)
       {
-        af1->duration = 4;
+        af1->duration = 8;
       }
   }
 
@@ -8961,7 +8961,7 @@ void spell_minor_globe(int level, P_char ch, char *arg, int type,
 
     bzero(&af, sizeof(af));
     af.type = SPELL_MINOR_GLOBE;
-    af.duration = 4;
+    af.duration = 6;
     af.bitvector = AFF_MINOR_GLOBE;
     affect_to_char(victim, &af);
   }
@@ -8972,7 +8972,7 @@ void spell_minor_globe(int level, P_char ch, char *arg, int type,
     for (af1 = victim->affected; af1; af1 = af1->next)
       if(af1->type == SPELL_MINOR_GLOBE)
       {
-        af1->duration = 4;
+        af1->duration = 6;
       }
   }
 
@@ -11351,7 +11351,7 @@ void spell_hellfire(int level, P_char ch, char *arg, int type, P_char victim,
   bzero(&af, sizeof(af));
   af.type = SPELL_HELLFIRE;
   af.location = APPLY_NONE;
-  af.duration = 7;
+  af.duration = 15;
   af.bitvector4 = AFF4_HELLFIRE;
   affect_to_char(ch, &af);
 
@@ -15613,7 +15613,7 @@ void spell_soulshield(int level, P_char ch, char *arg, int type,
 
     bzero(&af, sizeof(af));
     af.type = SPELL_SOULSHIELD;
-    af.duration =  (int) (5 + GET_CHAR_SKILL(ch, SKILL_DEVOTION) / 5);
+    af.duration =  (int) (15 + GET_CHAR_SKILL(ch, SKILL_DEVOTION) / 5);
     af.bitvector2 = AFF2_SOULSHIELD;
     affect_to_char(victim, &af);
   }
@@ -15654,7 +15654,7 @@ void spell_holy_sacrifice(int level, P_char ch, char *arg, int type,
 */
     bzero(&af, sizeof(af));
     af.type = SPELL_HOLY_SACRIFICE;
-    af.duration = 5;
+    af.duration = (int) (15 + GET_CHAR_SKILL(ch, SKILL_DEVOTION) / 10);
 /*    af.modifier = GET_PID(ch); */
     af.bitvector4 = /*(ch == victim)? */ AFF4_HOLY_SACRIFICE /*:0 */ ;
     affect_to_char(victim, &af);
