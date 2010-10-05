@@ -19274,7 +19274,7 @@ void spell_divine_blessing(int level, P_char ch, char *arg, int type, P_char vic
         TRUE, victim, weapon, 0, TO_ROOM);
     memset(&af, 0, sizeof(af));
     af.type = SPELL_DIVINE_BLESSING;
-    af.duration = 5;
+    af.duration = 15;
     affect_to_char(victim, &af);
   }
 }

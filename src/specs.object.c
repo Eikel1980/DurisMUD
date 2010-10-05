@@ -3052,7 +3052,8 @@ int vapor(P_obj obj, P_char ch, int cmd, char *arg)
     }
     // It's on body
     if(OBJ_WORN_BY(obj, ch) &&
-      !affected_by_spell(ch, SPELL_GLOBE))
+      !affected_by_spell(ch, SPELL_GLOBE) &&
+      !IS_AFFECTED2(ch, AFF2_GLOBE))
     {
       if(IS_PC(ch))
       {
