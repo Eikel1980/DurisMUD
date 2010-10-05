@@ -11,6 +11,7 @@
 #include "justice.h"
 #include "necromancy.h"
 #include "damage.h"
+#include "graph.h"
 
 extern P_room world;
 extern P_index mob_index;
@@ -1122,6 +1123,10 @@ void spell_call_titan(int level, P_char ch, char *arg, int type, P_char victim, 
   {                             /* Under control */
     act("&+W$N roars to the sky 'I LIVE!!!'", TRUE, ch, 0, mob, TO_ROOM);
     act("&+W$N roars to the sky 'I LIVE!!!'", TRUE, ch, 0, mob, TO_CHAR);
+
+    radiate_message_from_room(ch->in_room, "&+cYoy hear a loud roar in the distance.\r\n", 3, 
+                              (RMFR_FLAGS) (RMFR_RADIATE_ALL_DIRS | RMFR_PASS_WALL | RMFR_PASS_DOOR | RMFR_CROSS_ZONE_BARRIER), 0);	
+
     GET_AC(mob) -= 50;
     int duration = setup_pet(mob, ch, timeToDecay/2 + (6000 / STAT_INDEX(GET_C_INT(mob))), PET_NOCASH);
     add_follower(mob, ch);
@@ -1360,6 +1365,10 @@ void spell_create_dracolich(int level, P_char ch, char *arg, int type, P_char vi
   {                             /* Under control */
     act("&+W$N roars to the sky 'I LIVE!!!'", TRUE, ch, 0, mob, TO_ROOM);
     act("&+W$N roars to the sky 'I LIVE!!!'", TRUE, ch, 0, mob, TO_CHAR);
+
+    radiate_message_from_room(ch->in_room, "&+cYoy hear a loud roar in the distance.\r\n", 3, 
+                              (RMFR_FLAGS) (RMFR_RADIATE_ALL_DIRS | RMFR_PASS_WALL | RMFR_PASS_DOOR | RMFR_CROSS_ZONE_BARRIER), 0);	
+
     GET_AC(mob) -= 50;
     int duration = setup_pet(mob, ch, timeToDecay/2 + (6000 / STAT_INDEX(GET_C_INT(mob))), PET_NOCASH);
     add_follower(mob, ch);
@@ -2602,11 +2611,12 @@ void spell_taint(int level, P_char ch, char *arg, int type,
   }
 
   dam = 9 * MIN(level, 56) + number(-40, 40);
+  dam *= 1.8;
 // dam = 13 * level + number(0, level);
   if(saves_spell(victim, SAVING_SPELL))
     dam >>= 1;
 
-  spell_damage(ch, victim, dam, SPLDAM_HOLY, 0,
+  spell_damage(ch, victim, dam, SPLDAM_NEGATIVE, 0,
                &messages);
 }
 

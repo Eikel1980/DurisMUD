@@ -967,7 +967,7 @@ kharma mind beads~
 &+Lsome &+gkharma&+L mind&+g beads&N~
 &nA string of &+gbeads&n is here wishing to calm the soul.&n~
 ~
-9 8 3 0 10 0 1024 5 64 4 0
+9 8 3 0 10 0 0 5 64 0 0
 3 0 0 1 0 0 0 0
 0 0 100 4 0 0 0
 E
@@ -977,7 +977,7 @@ kharma mind beads~
 &Nof addition.&n
 ~
 A
-12 40
+27 10
 A
 35 4
 #28964

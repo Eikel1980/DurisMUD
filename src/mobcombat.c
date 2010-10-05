@@ -956,6 +956,10 @@ bool DragonCombat(P_char ch, int awe)
       0, ch, 0, 0, TO_CHAR);
     act("$n&N &+RROARS&n, filling your heart with &+Lsheer terror!&n",
       1, ch, 0, 0, TO_ROOM);
+      
+    radiate_message_from_room(ch->in_room, "&+CA thundering roar echoes through the area!\r\n", 
+	                            GET_LEVEL(ch)/10 + (GET_LEVEL(ch) > 30 ? (GET_LEVEL(ch)-30)/5 : 0), 
+                              (RMFR_FLAGS) (RMFR_RADIATE_ALL_DIRS | RMFR_PASS_WALL | RMFR_PASS_DOOR | RMFR_CROSS_ZONE_BARRIER), 0);
     
     for (tchar1 = world[ch->in_room].people; tchar1; tchar1 = tchar2)
     {

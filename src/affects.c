@@ -1404,6 +1404,8 @@ void all_affects(P_char ch, int mode)
 
 char affect_total(P_char ch, int kill_ch)
 {
+  P_char killer;
+  
   if (!ch)
     return FALSE;
 
@@ -1440,6 +1442,20 @@ char affect_total(P_char ch, int kill_ch)
           (ch->in_room == NOWHERE) ? -1 : world[ch->in_room].number,
           GET_HIT(ch));
 
+    // No more vit death or zerk death to avoid frags
+    for (killer = world[ch->in_room].people; killer; killer = killer->next_in_room)
+    {
+      if (killer && 
+	  killer->specials.fighting &&
+	  killer->specials.fighting == ch &&
+	  killer->in_room == ch->in_room &&
+	  GET_RACEWAR(killer) != GET_RACEWAR(ch))
+      {
+        die(ch, killer);
+	return TRUE;
+      }
+    }
+    
     die(ch, ch);
     return TRUE;
   }
@@ -1493,6 +1509,9 @@ char affect_total(P_char ch, int kill_ch)
     apply_reaver_mods(ch);
 
   ch->specials.base_combat_round = MAX(3, ch->specials.base_combat_round);
+
+  if (IS_PC(ch) && GET_CHAR_SKILL(ch, SKILL_FORGE) >= 70)
+	  ch->specials.affected_by5 |= AFF5_MINE; /* high enough skill in forge grants miner's sight */
 
   /* only if actually in game. JAB */
   if (ch->desc && !ch->desc->connected && (GET_STAT(ch) != STAT_DEAD))
@@ -3635,7 +3654,7 @@ void affect_update(void)
 //---------------------------------------------------------------------------------
 void short_affect_update(void)
 {
-  P_char   i, i_next;
+  P_char   i, i_next, killer;
   struct affected_type *af, *next_af_dude;
 
   for (i = character_list; i; i = i_next)
@@ -3657,6 +3676,21 @@ void short_affect_update(void)
         logit(LOG_DEATH, "%s killed in %d (< -10 hits)", GET_NAME(i),
               (i->in_room == NOWHERE) ? -1 : world[i->in_room].number);
       }
+
+      // No more vit death or zerk death to avoid frags
+      for (killer = world[i->in_room].people; killer; killer = killer->next_in_room)
+      {
+        if (killer && 
+	    killer->specials.fighting &&
+	    killer->specials.fighting == i &&
+	    killer->in_room == i->in_room &&
+	    GET_RACEWAR(killer) != GET_RACEWAR(i))
+        {
+          die(i, killer);
+  	  break;
+        }
+      }
+    
       die(i, i);
       i = NULL;
       continue;
