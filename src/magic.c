@@ -7754,7 +7754,7 @@ void spell_word_of_recall(int level, P_char ch, char *arg, int type,
   e_pos = heavy = 0;
   do
   {
-    if(IS_CARRYING_W(victim) > ((CAN_CARRY_W(victim) / 100) * 60))
+    if(IS_CARRYING_W(victim) > ((CAN_CARRY_W(victim) / 100) * 70))
       if(victim->equipment[e_pos])
       {
         logit(LOG_RECALL, "WORD OF RECALL: (%s) drops (%s) in [%d].",
