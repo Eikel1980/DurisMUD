@@ -10904,7 +10904,7 @@ bool check_item_teleport(P_char ch, char *arg, int cmd)
   if ((obj_index[obj->R_num].virtual_number == 48000) &&
       IS_FIGHTING(ch))
   {
-    act("&+WYou cannot enter a guildhall in combat!", FLASE, ch, obj, 0, TO_CHAR);
+    act("&+WYou cannot enter a guildhall in combat!", FALSE, ch, obj, 0, TO_CHAR);
     return TRUE;
   }
 
