@@ -657,6 +657,13 @@ void spell_reflection(int level, P_char ch, char *arg, int type,
          victim);
       return;
     }
+    if (!image->only.npc)
+    {
+      logit(LOG_DEBUG, "Error reading image for %s.", GET_NAME(ch));
+      send_to_char("Error reading image mob, let a god know.\r\n", ch);
+      extract_char(image);
+      return;
+    }
     
     if(spot == i)
     {
