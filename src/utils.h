@@ -312,7 +312,7 @@ int IS_TWILIGHT_ROOM(int r);
 
 #define SANA(obj) (index("aeiouyAEIOUY", *(obj)->name) ? "an" : "a")
 
-#define IS_NPC(ch)  (IS_SET((ch)->specials.act, ACT_ISNPC))
+#define IS_NPC(ch) (IS_SET((ch)->specials.act, ACT_ISNPC))
 
 #define IS_PC(ch) (!IS_NPC((ch)))
 
@@ -686,10 +686,6 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
                          IS_AVATAR(ch) || IS_TITAN(ch) || \
                          IS_ACT(ch, ACT_BREATHES_FIRE | ACT_BREATHES_LIGHTNING | ACT_BREATHES_FROST | ACT_BREATHES_ACID | \
             ACT_BREATHES_GAS | ACT_BREATHES_SHADOW | ACT_BREATHES_BLIND_GAS)))
-/*    isname ("br_f", GET_NAME (ch)) || isname ("br_c", GET_NAME (ch)) || \
-          isname ("br_g", GET_NAME (ch)) || isname ("br_a", GET_NAME (ch)) || \
-          isname ("br_l", GET_NAME (ch)) || isname ("br_s", GET_NAME (ch)) || \
-          isname ("br_b", GET_NAME (ch)))*/
 
 #define IS_SLIME(ch) (GET_RACE(ch) == RACE_SLIME)
 #define IS_DEMON(ch)  (GET_RACE(ch) == RACE_DEMON)
@@ -716,22 +712,13 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
 #define IS_AVATAR(ch) (GET_RACE(ch) == RACE_AVATAR)
 
 #define IS_UNDEADRACE(ch)  ((GET_RACE(ch) == RACE_UNDEAD) || \
-           (GET_RACE(ch) == RACE_GHOST) || \
-           (GET_RACE(ch) == RACE_VAMPIRE) || \
            (GET_RACE(ch) == RACE_PLICH) || \
-           (GET_RACE(ch) == RACE_PDKNIGHT) || \
            (GET_RACE(ch) == RACE_PVAMPIRE) || \
            (GET_RACE(ch) == RACE_SHADE) || \
            (GET_RACE(ch) == RACE_REVENANT) || \
            (GET_RACE(ch) == RACE_PSBEAST) || \
            (GET_RACE(ch) == RACE_WIGHT) || \
-           (GET_RACE(ch) == RACE_GARGOYLE) || \
            (GET_RACE(ch) == RACE_PHANTOM) || \
-           (GET_RACE(ch) == RACE_ZOMBIE) || \
-           (GET_RACE(ch) == RACE_SPECTRE) || \
-           (GET_RACE(ch) == RACE_SKELETON) || \
-           (GET_RACE(ch) == RACE_WRAITH) || \
-           (GET_RACE(ch) == RACE_SHADOW) || \
            (GET_RACE(ch) == RACE_V_ELEMENTAL) || \
            (IS_DRACOLICH(ch)) || \
            (IS_UNDEAD(ch)))
@@ -745,19 +732,19 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
            (GET_RACE(ch) == RACE_AVATAR))
 
 #define IS_UNDEAD(ch) ((GET_RACE(ch) == RACE_UNDEAD) || \
-           ( GET_RACE(ch) == RACE_GHOST ) || \
-           ( GET_RACE(ch) == RACE_VAMPIRE ) || \
-           ( GET_RACE(ch) == RACE_PLICH ) || \
-           ( GET_RACE(ch) == RACE_PDKNIGHT ) || \
-           ( GET_RACE(ch) == RACE_ZOMBIE ) || \
-           ( GET_RACE(ch) == RACE_SPECTRE) || \
-           ( GET_RACE(ch) == RACE_SKELETON) || \
-           ( GET_RACE(ch) == RACE_WRAITH) || \
-           ( GET_RACE(ch) == RACE_SHADOW) || \
-           ( IS_DRACOLICH(ch)) || \
-           ( IS_AFFECTED(ch, AFF_WRAITHFORM) ) ||\
-           ( IS_AFFECTED4(ch, AFF4_VAMPIRE_FORM) && !GET_CLASS(ch, CLASS_THEURGIST) ) ||\
-           ( RACE_PUNDEAD(ch) ) || (OLD_RACE_PUNDEAD(ch) ))
+           (GET_RACE(ch) == RACE_GHOST) || \
+           (GET_RACE(ch) == RACE_VAMPIRE) || \
+           (GET_RACE(ch) == RACE_PLICH) || \
+           (GET_RACE(ch) == RACE_PDKNIGHT) || \
+           (GET_RACE(ch) == RACE_ZOMBIE) || \
+           (GET_RACE(ch) == RACE_SPECTRE) || \
+           (GET_RACE(ch) == RACE_SKELETON) || \
+           (GET_RACE(ch) == RACE_WRAITH) || \
+           (GET_RACE(ch) == RACE_SHADOW) || \
+           (IS_DRACOLICH(ch)) || \
+           (IS_AFFECTED(ch, AFF_WRAITHFORM) ) || \
+           (IS_AFFECTED4(ch, AFF4_VAMPIRE_FORM) && !GET_CLASS(ch, CLASS_THEURGIST) ) || \
+           (RACE_PUNDEAD(ch)) || (OLD_RACE_PUNDEAD(ch)))
 
 #define IS_ANGELIC(ch) (IS_AFFECTED4(ch, AFF4_VAMPIRE_FORM) && GET_CLASS(ch, CLASS_THEURGIST))
 
@@ -782,8 +769,8 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
            ( GET_RACE(ch) == RACE_A_ELEMENTAL ) || \
            ( GET_RACE(ch) == RACE_F_ELEMENTAL ) || \
            ( GET_RACE(ch) == RACE_E_ELEMENTAL ) || \
-		   ( GET_RACE(ch) == RACE_V_ELEMENTAL ) || \
-		   ( GET_RACE(ch) == RACE_I_ELEMENTAL ) || \
+	   ( GET_RACE(ch) == RACE_V_ELEMENTAL ) || \
+           ( GET_RACE(ch) == RACE_I_ELEMENTAL ) || \
            ( IS_THEURPET_RACE(ch) ) || \
            ( GET_RACE(ch) == RACE_EFREET ))
 
@@ -1112,18 +1099,15 @@ IS_GIANT(ch) || IS_PC_PET(ch) || IS_PC(ch) || IS_UNDEAD(ch)) && !IS_ANIMAL(ch))
 // Certain mobs are feared more than others. This define simply
 // allows for quick use. -Lucrot Oct08
 
-#define IS_GREATER_RACE(ch) \
-  ((GET_RACE(ch) == RACE_DRAGON) || \
-  (GET_RACE(ch) == RACE_DEMON) || \
-  (GET_RACE(ch) == RACE_DEVIL) || \
-  (GET_RACE(ch) == RACE_ANGEL) || \
-  (GET_RACE(ch) == RACE_BEHOLDER) || \
-  (GET_RACE(ch) == RACE_PLICH) || \
-  (GET_RACE(ch) == RACE_ELADRIN) || \
-  (GET_RACE(ch) == RACE_TITAN) || \
-  (GET_RACE(ch) == RACE_AVATAR) || \
-  (GET_RACE(ch) == RACE_CONSTRUCT) || \
-  (GET_RACE(ch) == RACE_EFREET))
+#define IS_GREATER_RACE(ch) (IS_NPC(ch) && \
+                            ((GET_RACE(ch) == RACE_DRAGON) || \
+                             (GET_RACE(ch) == RACE_DEMON) || \
+                             (GET_RACE(ch) == RACE_DEVIL) || \
+                             (GET_RACE(ch) == RACE_ANGEL) || \
+                             (GET_RACE(ch) == RACE_BEHOLDER) || \
+                             (GET_RACE(ch) == RACE_PLICH) || \
+                             (GET_RACE(ch) == RACE_AVATAR) || \
+                             (GET_RACE(ch) == RACE_CONSTRUCT)))
 
 #define SKILL_DATA(ch, skill)   (skills[(skill)].m_class[flag2idx((ch)->player.m_class)-1])
 #define SKILL_DATA2(ch, skill)   (skills[(skill)].m_class[flag2idx((ch)->player.secondary_class)-1])
@@ -1156,11 +1140,6 @@ IS_GIANT(ch) || IS_PC_PET(ch) || IS_PC(ch) || IS_UNDEAD(ch)) && !IS_ANIMAL(ch))
 #endif
 
 /* Combat related */
-/*
-#define GET_CS(ch) (((IS_WARRIOR(ch) ? 2.0 : IS_CLERIC(ch) ? 1.5 : \
-    IS_THIEF(ch) ? 1.0 : IS_MAGE(ch) ? 0.5 : 1.0) * \
-    (float)GET_LEVEL(ch)) + GET_CHAR_SKILL(ch, WeaponSkill_num(ch)))
-*/
 
 #define GET_ZONE(ch)  (world[ch->in_room].zone)
 #define ROOM_ZONE_NUMBER(rnum) (zone_table[world[rnum].zone].number)

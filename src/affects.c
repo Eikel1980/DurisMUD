@@ -410,7 +410,6 @@ int calculate_hitpoints(P_char ch)
     {
       sprintf(buf, "stats.con.%s", race_names_table[GET_RACE(ch)].no_spaces);
       mod = (int) get_property(buf, 100.);
-//      debug("mod for race is (%d).", mod);
       hps += (int) (hitpoint_bonus * get_property("hitpoints.spellcaster.maxConBonus", 5.0) * mod / 100);
     }
   }
@@ -3425,26 +3424,31 @@ bool falling_obj(P_obj obj, int start_speed, bool caller_is_event)
       world[obj->loc.room].sector_type = SECT_INSIDE;
       return FALSE;
     }
-    act("$p drops from sight.", TRUE, 0, obj, 0, TO_ROOM);
-    if (!obj->z_cord)
-      new_room = world[obj->loc.room].dir_option[DOWN]->to_room;
-    speed = 31;
-    add_event(event_falling_obj, 4, NULL, NULL, obj, 0, &speed, sizeof(speed));
-    /*
-     1 second and speed
-     31 mph after that
-     */
-    if (!obj->z_cord)
+    else if(world[obj->loc.room].dir_option[DOWN])
     {
-      obj_from_room(obj);
-      obj_to_room(obj, new_room);
+       if((world[obj->loc.room].sector_type == SECT_NO_GROUND) || (world[obj->loc.room].sector_type == SECT_UNDRWLD_NOGROUND))
+       {
+         act("$p drops from sight.", TRUE, 0, obj, 0, TO_ROOM);
+         if (!obj->z_cord)
+           new_room = world[obj->loc.room].dir_option[DOWN]->to_room;
+         speed = 31;
+         add_event(event_falling_obj, 4, NULL, NULL, obj, 0, &speed, sizeof(speed));
+         /*
+          1 second and speed
+          31 mph after that -- Jexfix
+          */
+         if (!obj->z_cord)
+         {
+           obj_from_room(obj);
+           obj_to_room(obj, new_room);
+         }
+         else
+         {
+           obj->z_cord--;
+           had_zcord = TRUE;
+         }
+       }
     }
-    else
-    {
-      obj->z_cord--;
-      had_zcord = TRUE;
-    }
-
     return TRUE;
   }
 

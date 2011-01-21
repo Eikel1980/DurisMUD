@@ -683,7 +683,7 @@ void shopping_sell(char *arg, P_char ch, P_char keeper, int shop_nr)
   send_to_char(Gbuf1, ch);
   
   if(sale &&
-     sale >= get_property("stats.sell.log", 50000))
+     sale >= get_property("stats.sell.log", 500000))
       statuslog(ch->player.level,
         "&+LSALE:&n (%s&n) just sold [%d] (%s&n) for (%s&n) at [%d]!",
           GET_NAME(ch),
