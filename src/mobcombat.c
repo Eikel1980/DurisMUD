@@ -912,7 +912,7 @@ bool DragonCombat(P_char ch, int awe)
 
   // Dragons breathing = cool.  Other mobs breathing = ok... but not every round - Jexni 1/20/11
   breath_chance = (int) (IS_DRAGON(ch) ? (GET_LEVEL(ch) / 30) : (GET_LEVEL(ch) / 60));
-  breath_chance = (IS_ELITE(ch) ? breath_chance - 1 : breath_chance);
+  breath_chance = (IS_ELITE(ch) ? breath_chance + 1 : breath_chance);
 
   if (!IS_DRAGON(ch) && !IS_TITAN(ch) && !IS_AVATAR(ch) && CAN_BREATHE(ch))
   {
