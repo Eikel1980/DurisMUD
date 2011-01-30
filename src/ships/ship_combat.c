@@ -257,7 +257,7 @@ bool ship_loss_on_sink(P_ship ship, P_ship attacker, int frags)
     frags = 0;
   }
   else
-    members_loss = 15.0 + (float)frags / 30.0;
+    members_loss = 10.0 + (float)frags / 30.0;
 
   ship->crew.replace_members(members_loss);
 
