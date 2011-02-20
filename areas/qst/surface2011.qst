@@ -1,4 +1,4 @@
-#500000
+#200000
 M
 hi sa'dah~
 &+RSa'Dah &nsays to you, '&+LLittle one, how would you like to be given powers
@@ -29,17 +29,17 @@ QA
 ~
 R C 1000000
 R E 1000000
-R I 500032
-G I 500016
-G I 500017
-G I 500018
-G I 500019
+R I 200032
+G I 200016
+G I 200017
+G I 200018
+G I 200019
 D
 &+rSa'Dah &+Lsnaps his finger and summons a cloud of darkness. As the cloud
 &+Lpasses over him, he disappears.&n
 ~
 S
-#500023
+#200023
 M
 hi mystic power powerful~
 &+LThe powerful &+mmy&+rst&+mic &nsays to you, '&+LHello there traveler. Do not be
@@ -77,20 +77,20 @@ QA
 &+Lthis sash as appreciation for your efforts. In addition, this key will grant
 &+Lyou passage to a secret area near the entrance of &+CThe Transparent Tower&+L.&n'
 ~
-R I 500033
-R I 500034
-G I 500028
-G I 500029
-G I 500030
-G I 500031
-G I 500032
+R I 200033
+R I 200034
+G I 200028
+G I 200029
+G I 200030
+G I 200031
+G I 200032
 D
 &+LThe powerful &+mmy&+rst&+mic &nsays to you, '&+LBring me war young disciple...'
 
 &+LThe &+Yblazing &+Lcolumn of &+Yenergy &+Lsuddenly vanishes, taking the &+mmy&+rst&+mic &+Lwith it.&n
 ~
 S
-#500024
+#200024
 M
 qc_action 60~
 &+LJa'Gunk reels his line in and pulls off &+ca pike large&+L.
@@ -125,7 +125,7 @@ Q
 R C 900
 G I 356
 S
-#500026
+#200026
 M
 qc_action 50~
 &+rKrekish &+WVice&nF&+Lang&+L ducks behind a nearby rock, spying on something.
@@ -157,13 +157,13 @@ QA
 ~
 R C 10000
 R E 40000
-R I 500005
-G I 500004
+R I 200005
+G I 200004
 D
 &+rKrekish &+WVice&nF&+Lang says 'I shall now return to Shady Grove.'
 ~
 S
-#500027
+#200027
 M
 qc_action 50~
 &+rGr'Tak scans the surroundings and readies himself, preparing for the attack.
@@ -183,15 +183,15 @@ hi hello~
 ~
 Q
 ~
-R I 500007
+R I 200007
 R C 15000
 R E 90000
-G I 500006
+G I 200006
 D
 &+rGr'Tak runs off into the distance.
 ~
 S
-#500028
+#200028
 M
 qc_action 50~
 &+BAgnut conjures an incantation.
@@ -216,7 +216,7 @@ QA
 &+BAgnot graciously takes the bracer, glands, and money and thanks you
 &+Bwith a foul-breathed grunt.  Moments later, he finishes his creation.
 ~
-R I 500008
+R I 200008
 G I 43142
 G I 43142
 G I 43142
@@ -226,7 +226,7 @@ D
 &+BAgnot say 'Me see you later!'
 ~
 S
-#500041
+#200041
 M
 qc_action 50~
 &+WA decorated Winterhaven watchman peers out across the lands, aware of his surroundings.
@@ -248,7 +248,7 @@ hi hello~
 &+WA decorated Winterhaven watchman ignores you.
 ~
 S
-#500043
+#200043
 M
 qc_action 50~
 &+WSeveral Winterhaven troops on horseback ride through here, disappearing into the distance.
@@ -258,7 +258,7 @@ qc_action 50~
 &+BA huge bolt of lightning strikes far off to the southwest, rumbling as it hits.
 ~
 S
-#500046
+#200046
 M
 qc_action 50~
 &+YA dwarven trapper kneels down and sets up a small trap, covering it with a tumbleweed.
@@ -268,7 +268,7 @@ qc_action 50~
 &+LDark clouds birth forked bolts of &+B&-Llightning&N&+L far off to the southwest.
 ~
 S
-#500052
+#200052
 M
 qc_action 50~
 &+GCrodog flexes, his massive dwarven muscles bulging under his mail.
@@ -296,21 +296,21 @@ mountaineer mountaineers~
 QA
 &+GCrodog says 'Excellent, welcome to the mountaineer watch!'
 ~
-R I 500021
+R I 200021
 R E 105000
-G I 500020
-G I 500020
-G I 500020
-G I 500020
-G I 500020
+G I 200020
+G I 200020
+G I 200020
+G I 200020
+G I 200020
 S
-#500055
+#200055
 M
 qc_action 55~
 &+WMeldar the Winterhaven Marshall says 'Greetings.'
 ~
 S
-#500059
+#200059
 M
 qc_action 50~
 &+gA highwayman looks around and says 'Winterhaven is a beautiful realm, and we aim to keep it that way.'
@@ -324,7 +324,7 @@ qc_action 45~
 &+WSudden freezing winds slice through the area, chilling everything they touch.
 ~
 S
-#500066
+#200066
 M
 qc_action 50~
 &+BWay off in the distant south, a lightning bolt lights up a small fraction of the sky.
@@ -338,7 +338,7 @@ qc_action 50~
 &+LA large spider in a nearby tree slowly descends down, &Ncasting a long sticky web.
 ~
 S
-#500070
+#200070
 M
 qc_action 50~
 &+WJonius the Verspin Watchman &Npeers across the Tundra, scanning the horizon.
@@ -358,9 +358,9 @@ QA
 &+WJonius the Verspin Watchman says 'Excellent.  Thank you.  Your reward...'
 ~
 R C 50000
-G I 500024
+G I 200024
 S
-#500075
+#200075
 M
 hi stargazer~
 &+gJorl'gan &nlooks at you and says, '&+LThese are dangerous times young
@@ -393,15 +393,15 @@ of &+Ldust &nand &+Lash&n.
 ~
 R C 100000
 R E 100000
-R I 500031
-G I 500015
+R I 200031
+G I 200015
 D
 &+gJorl'gan &nbegins chanting an incantation.
 &+gJorl'gan &ncompletes his spell.
 &+gJorl'gan &nsuddenly turns to dust and blows away.&n
 ~
 S
-#500076
+#200076
 M
 hi cho'van~
 &+CCho'van &ngrins at you and says, '&+LDarkness surrounds us.. The vile
@@ -437,14 +437,14 @@ QA
 ~
 R C 100000
 R E 100000
-R I 500030
-G I 500015
+R I 200030
+G I 200015
 D
 &+CCho'van &nutters a single word.
 &+CCho'van &+Yexplodes &ninto a cloud of dust.&n
 ~
 S
-#500078
+#200078
 M
 hi merrova~
 &+MMerrova &nsmiles at you and says, '&+LHello there adventurer, have
@@ -481,8 +481,8 @@ QA
 ~
 R C 100000
 R E 100000
-R I 500029
-G I 500015
+R I 200029
+G I 200015
 D
 &+MMerrova &nsays to you, '&+LProtect that locket as many new evils will seek
 &+Lit out in the future.&n'
@@ -490,7 +490,7 @@ D
 &+MMerrova &ngestures briefly and &+Lvanishes&n.&n
 ~
 S
-#500079
+#200079
 M
 hi~
 &+BThorne &nsays to you, '&+LUnless you have slain the great minotaur &+rSa'Dah&+L,
@@ -513,14 +513,14 @@ QA
 ~
 R C 100000
 R E 100000
-R I 500028
-G I 500015
+R I 200028
+G I 200015
 D
 &+BThorne &nopens up a doorway into nothingness and walks through it.
 &nThe doorway closes shut and disappears.&n
 ~
 S
-#500092
+#200092
 M
 qc_action 50~
 &+GKres'Nesthius casts his line far into the lake and lets his baiited hook sink.
@@ -580,7 +580,7 @@ QA
 R C 900
 G I 334
 S
-#500094
+#200094
 M
 qc_action 50~
 &+CChesynn grimmaces as he squeezes a bandage around his wound.
@@ -606,9 +606,9 @@ QA
 &+Conce again free to.. well..'
 &+CChesynn bows before you.
 ~
-R I 500023
+R I 200023
 R E 90000
-G I 500022
+G I 200022
 D
 &+CChesynn runs off into the distance.
 ~
@@ -616,14 +616,14 @@ QA
 &N$n bows at $N and says 'Well done.'
 After a few short moments of fiddling with the &+Wfangs&N and a bit of string..
 ~
-R I 500053
+R I 200053
 G I 43140
 G I 43140
 G I 43140
 G I 43140
 G I 43140
 S
-#500096
+#200096
 M
 qc_action 50~
 &+LTren Tind &+yslowly starts chanting and his hands turn into cheetah claws.
@@ -653,13 +653,13 @@ QA
 ~
 R E 50000
 R C 300000
-G I 500023
+G I 200023
 D
 &+LTren Tind &+ysays &+L'Excellent!  Thank you graciously!'
 &+LWith the blink of an eye, Tren Tind is gone, and an eagle soars away...
 ~
 S
-#500098
+#200098
 M
 qc_action 50~
 &+LWaves of darkness seem to eminate from Snardag the Dark Wizard.
@@ -682,14 +682,14 @@ QA
 ~
 R E 115000
 R C 200000
-G I 500025
-G I 500025
-G I 500025
+G I 200025
+G I 200025
+G I 200025
 D
 &+LThe dark wizard suddenly disappears.
 ~
 S
-#500099
+#200099
 M
 qc_action 50~
 &+LKrethin&N looks about the mountains and closes his eyes, communing with the earth.
@@ -723,12 +723,12 @@ QA
 ~
 R E 65000
 R C 95000
-G I 500026
+G I 200026
 D
 &+LKrethin &Nsays 'I must now go study this egg.  Godspeed traveller.'
 ~
 S
-#500100
+#200100
 M
 qc_action 50~
 &+LA dark essence of undeath flows forth from Azikarzith.
@@ -747,12 +747,12 @@ QA
 ~
 R E 95000
 R C 95000
-G I 500026
+G I 200026
 D
 &+LAzikarzith consumes the wyvern egg and is gone!
 ~
 S
-#500101
+#200101
 M
 qc_action 50~
 &+YFlegnus floats through, glowing with a strong golden aura.
@@ -768,17 +768,17 @@ QA
 &+YFlegnus says 'Excellent job... one moment, let me fuse these together.'
 &+YA moment later...
 ~
-R I 500027
-G I 500025
-G I 500025
-G I 500025
-G I 500025
+R I 200027
+G I 200025
+G I 200025
+G I 200025
+G I 200025
 G C 50000
 D
 &+YFlegnus floats off.
 ~
 S
-#500111
+#200111
 M
 qc_action 55~
 &+WModug &+ygrunts and casts a fishing line into the fresh &+Clake &+Bwaters&+y.
@@ -816,7 +816,7 @@ Q
 R C 2000
 G I 294
 S
-#500116
+#200116
 M
 hi hello howdy hey~
 &+rThe &+RProphet &+rof &+RIce &+Wsays to you, 'Greetings traveler. Welcome
@@ -836,13 +836,13 @@ pledge yes allegiance~
 ~
 Q
 ~
-R I 500003
-R I 500049
-R I 500049
-R I 500049
-G I 500048
+R I 200003
+R I 200049
+R I 200049
+R I 200049
+G I 200048
 S
-#500117
+#200117
 M
 hi hello howdy hey~
 &+bThe &+CProphet &+bof &+CIce &+Wsays to you, 'Greetings traveler. Welcome
@@ -861,19 +861,19 @@ pledge yes allegiance~
 ~
 Q
 ~
-R I 500046
-R I 500050
-R I 500050
-R I 500050
-G I 500047
+R I 200046
+R I 200050
+R I 200050
+R I 200050
+G I 200047
 S
-#500121
+#200121
 M
 qc_action 400~
 &N$n says 'Hammer those nails, spread that sealant, load those cannons!'
 ~
 S
-#500124
+#200124
 M
 qc_action 500~
 &+yA dock worker climbs up on the side of a docked Ketch, hammering &+Cnails&N&+y into a new supporting beam.
@@ -887,7 +887,7 @@ qc_action 500~
 &N&+yA dock worker ties on a large &+Wmast &N&+yatop the previously-damaged hull of a Ketch.
 ~
 S
-#500188
+#200167
 M
 qc_action 70~
 $n says, '&+WI've been living amongst and studying animals all my life.&n'
@@ -899,7 +899,7 @@ $n sighs, '&+WI was on my way to visit her, but a fierce fomorian army has invad
 $n whispers, '&+WI do hope she is alright...&n'
 ~
 S
-#500190
+#200169
 M
 qc_action 70~
 $n says thoughtfully, '&+WYou know, these animals obey me, but not of their own will.&n'
@@ -911,13 +911,13 @@ $n sighs, '&+WIf only I could learn the secret of the witch living by the briar 
 $n continues, '&+WShe is bound to her pet so strongly that it would never desert her.&n'
 ~
 S
-#500193
+#200172
 M
 qc_action 50~
 $n says, '&+WI have heard there is a crazy lad, some kind of doctor who can teach you amazing things about one's body!&n'
 ~
 S
-#500200
+#200179
 M
 qc_action 100~
 $n whispers to you, '&+WI can bring down an entire swarm of meteors but this is not the most devastating force one can summon!&n'
@@ -934,7 +934,7 @@ $n says, '&+WThere are rumors of an ancient frost giant with arcane knowledge su
 $n whispers, '&+WIf only I could find him, I might finally master my art.&n'
 ~
 S
-#500209
+#200188
 M
 qc_action 70~
 $n says warmly, '&+WGreetings!&n'
@@ -946,7 +946,7 @@ $n continues, '&+WMy master at temple cloister taught me well.&n'
 $n asks, '&+WI wonder, had I stayed, if he had more to teach me?&n'
 ~
 S
-#500212
+#200191
 M
 qc_action 50~
 $n says, '&+WThe most important thing is meditation.&n'
@@ -954,7 +954,7 @@ $n continues, '&+WIf you achieve full alignment of your body and mind, you will 
 $n sighs, '&+WI wish I was paying more attention to father Tel's lessons&n.'
 ~
 S
-#500217
+#200196
 M
 qc_action 70~
 $n whispers, '&+WThere are legends of a hidden cathedral somewhere in the icy tundra of the north.&n'

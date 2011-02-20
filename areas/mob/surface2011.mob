@@ -1,4 +1,4 @@
-#500000
+#200000
 sa'dah sa dah labyrinthmaster minotaur~
 &+rSa'Dah &+Lthe labyrinth&+rmaster&n~
 &+rSa'Dah &+Lthe labyrinth&+rmaster &+Ltraverses the world in and endless search.&n
@@ -13,7 +13,7 @@ mt 0 17 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500001
+#200001
 immature leucrotta~
 &+yan immature leucrotta&n~
 &+yAn immature leucrotta wanders around looking for scraps of &+rf&+Roo&+rd&+y.&n
@@ -27,7 +27,7 @@ a 0 1 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500002
+#200002
 male mature leucrotta~
 &+ya mature leucrotta&n~
 &+yA mature male leucrotta sniffs the air in search of &+rp&+Rre&+ry&+y.&n
@@ -44,7 +44,7 @@ a 0 1 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500003
+#200003
 female leucrotta~
 &+ya female leucrotta&n~
 &+yA female leucrotta is busy looking for an easy &+rm&+Rea&+rl&+y.&n
@@ -61,7 +61,7 @@ a 0 1 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500004
+#200004
 large crocodile~
 &+ga large crocodile&n~
 &+gA large crocodile wanders through the area in search of a &+rm&+Rea&+rl&+g.&n
@@ -76,7 +76,7 @@ r 0 1 3
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500005
+#200005
 large female crocodile~
 &+ga female crocodile&n~
 &+gA large female crocodile is busy making sure the area is safe for her young.&n
@@ -91,7 +91,7 @@ r 0 1 3
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500006
+#200006
 shambling mound~
 &+ga sh&+mam&+gbl&+min&+gg m&+mou&+gnd&n~
 &+gA hulking mound of &+Lrotten &+gplants and &+mfoul &+gvegetation lumbers forth.&n
@@ -106,7 +106,7 @@ r 0 1 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500007
+#200007
 vicious lizardman~
 &+ga vicious lizardman&n~
 &+gA vicious lizardman prowls through the area in search of a victim.&n
@@ -122,7 +122,7 @@ h 0 1 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500008
+#200008
 stealthy orc bandit~
 &+La stealthy &+gorc &+Lbandit&n~
 &+LA stealthy &+gorc &+Lbandit sneaks around, looking for something to ambush.&n
@@ -136,7 +136,7 @@ ho 0 1 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500009
+#200009
 experienced orc raider~
 &+Lan experienced &+gorc &+Lraider&n~
 &+LAn experienced &+gorc &+Lraider is looking for a fight.&n
@@ -150,7 +150,7 @@ ho 0 1 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500010
+#200010
 devious orc thief~
 &+La devious &+gorc &+Lthief&n~
 &+LA devious &+gorc &+Lthief lurks among the hills and trees.&n
@@ -164,7 +164,7 @@ ho 0 65536 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500011
+#200011
 large black wolf~
 &+La black wolf&n~
 &+LA large black wolf is busy looking for something to eat.&n
@@ -178,7 +178,7 @@ a 0 1 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500012
+#200012
 cloaked orc~
 &+La cloaked orc&n~
 &+LA cloaked orc stands here with his fists clenched.&n
@@ -192,7 +192,7 @@ ho 0 64 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500013
+#200013
 burly lizardman warrior~
 &+ga &+Lburly &+glizardman &+Wwarrior&n~
 &+gA &+Lburly &+glizardman &+Wwarrior &+gwanders around looking for a victim.&n
@@ -208,7 +208,7 @@ h 0 1 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500014
+#200014
 lizardman witch doctor~
 &+ga lizardman &+Gwitch doctor&n~
 &+gA lizardman &+Gwitch doctor &+gwanders through the room.&n
@@ -224,7 +224,7 @@ h 0 256 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500015
+#200015
 swamp rat large~
 &+La large &+mswamp &+Lrat&n~
 &+LA large &+mswamp &+Lrat wanders around this &+gma&+mrs&+ghy &+Lplace.&n
@@ -238,7 +238,7 @@ a 0 1 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500016
+#200016
 will wisp~
 &+La will o' wisp&n~
 &+LA strange levitating &+Wlight &+Lseems to &+Wbob &+Land &+Wweave &+Lits way through the room.&n
@@ -252,7 +252,7 @@ ug 0 1 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500017
+#200017
 large will wisp~
 &+La large will o' wisp&n~
 &+LA strange levitating &+Wlight &+Lseems to &+Wbob &+Land &+Wweave &+Lits way through the room.&n
@@ -266,7 +266,7 @@ ug 0 1 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500018
+#200018
 one eyed one-eyed pirate~
 &+La &+wone&+L-eyed &+ypirate&n~
 &+LA &+wone&+L-eyed &+ypirate &+Lstands here.&n
@@ -282,7 +282,7 @@ h2 0 1 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500019
+#200019
 jade commoner~
 &+ga &+Gjade &+Wcommoner&n~
 &+gA &+Gjade &+Wcommoner &+gwanders around the island.&n
@@ -297,7 +297,7 @@ ph 0 1 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500020
+#200020
 water ox~
 &+ya water &+Lox&n~
 &+yA water &+Lox &+yambles around the marshy wilds.&n
@@ -311,7 +311,7 @@ ah 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500021
+#200021
 rickshaw worker~
 &+ya &+wrick&+yshaw worker&n~
 &+yA &+wrick&+yshaw worker is happily enjoying some time off.&n
@@ -326,7 +326,7 @@ ph 0 1 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500022
+#200022
 marsh viper~
 &+ga &+mmarsh &+gviper&n~
 &+gA &+mmarsh &+gviper slithers around the &+GJade &+gwilds&n
@@ -340,7 +340,7 @@ rs 0 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500023
+#200023
 powerful mystic~
 &+La powerful &+mmy&+rst&+mic&n~
 &+LA powerful &+mmy&+rst&+mic &+Lstands here, quietly awaiting his servants return.&n
@@ -356,7 +356,7 @@ cn 0 1049281 4
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500024
+#200024
 jagunk ja fisherman orc~
 &+LJa'Gunk the Fisherman&N~
 &+WFishing into these waters, &+LJa'Gunk the Fisherman &+Wbaits and casts his line.
@@ -371,7 +371,7 @@ ho 0 1 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500025
+#200025
 giant black spider~
 &+La giant black spider&N~
 &+LA giant black spider crawls across a web.
@@ -383,7 +383,7 @@ as 0 1 1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500026
+#200026
 krekish vicefang orc knight~
 &+rKrekish &+WVice&nF&+Lang&N~
 &+rKrekish &+WVice&NF&+Lang &+Lthe Orc Hunter stalks through the area.
@@ -401,7 +401,7 @@ ho 0 1 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500027
+#200027
 gr'tak gr tak orog raider~
 &+rGr'Tak &+Lthe &+rraider&N~
 &+rGr'Tak &+Lthe orog &+rraider&+L walks through here, preparing an attack.
@@ -416,7 +416,7 @@ or 0 16385 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500028
+#200028
 agnut shaman ogre~
 &+BAgnut the &+Cshaman&N~
 &+BAgnut the shaman stands here, &+Ccommuning with his essence.
@@ -432,7 +432,7 @@ po 0 256 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500029
+#200029
 wild ettercap~
 &+ya wild &+Lettercap&n~
 &+yA wild &+Lettercap &+yscours the countryside looking for trapped prey.&n
@@ -447,7 +447,7 @@ ac 0 1 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500030
+#200030
 hungry ettercap~
 &+ya &+rhu&+Rng&+rry &+Lettercap&n~
 &+yA &+rhu&+Rng&+rry &+Lettercap &+ylumbers throughout the surround countryside.&n
@@ -462,7 +462,7 @@ ac 0 1 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500031
+#200031
 forest ettercap~
 &+ya &+gfo&+Gre&+gst &+Lettercap&n~
 &+yA &+gfo&+Gre&+gst &+Lettercap &+ylooks for a place to spin a trap.&n
@@ -477,7 +477,7 @@ ac 0 1 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500032
+#200032
 dangerous lizardman hunter~
 &+ga &+Ldangerous &+glizardman &+Whunter&n~
 &+gA &+Ldangerous &+glizardman &+Whunter &+gpatrols the patrols his territory.&n
@@ -493,7 +493,7 @@ h 0 1 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500033
+#200033
 swamp troll~
 &+ga sw&+ma&+gmp troll&n~
 &+gA sw&+ma&+gmp troll skulks through the knee-deep shallows.&n
@@ -509,7 +509,7 @@ pt 0 1 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500034
+#200034
 troll marauder~
 &+ga troll mar&+mau&+gder&n~
 &+gA troll mar&+mau&+gder stumbles through the dense thicket, looking for something to smash.&n
@@ -525,7 +525,7 @@ pt 0 1 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500035
+#200035
 displacer beast feline fierce~
 &+ra displacer &+Rbeast&n~
 &+rThis &+Rfierce &+rfeline beast stalks its prey with &+Rbrutal &+refficiency.&n
@@ -541,7 +541,7 @@ ac 0 1 4
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500036
+#200036
 vicious snardval~
 &+La &+rvicious sn&+Ra&+rrdv&+Ra&+rl&n~
 &+LA &+rvicious sn&+Ra&+rrdv&+Ra&+rl &+Lis busy exploring this vast &+gforest&+L.&n
@@ -557,7 +557,7 @@ ra 0 1 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500037
+#200037
 sightless bog wyrm bogwyrm~
 &+ga &+msightless &+Gbo&+gg&+mwyrm&n~
 &+gA &+msightless &+Gbo&+gg&+mwyrm &+gsplashes around in the shallow &+Gma&+grsh&+Gl&+gand&+Gs&+g.&n
@@ -573,7 +573,7 @@ ac 0 1 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500038
+#200038
 double-headed dragonfly~
 &+ya &+Ydouble-headed &+ydragon&+rfly&n~
 &+yA &+Ydouble-headed &+ydragon&+rfly &+ycruises around the marshlands, looking for a place to lay its egg.&n
@@ -588,7 +588,7 @@ i 0 1 1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500039
+#200039
 sand spider~
 &+ya sand spider&N~
 &+yA sand spider crawls through here, seemingly gliding across the desert.
@@ -603,7 +603,7 @@ as 0 1 1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500040
+#200040
 wemic scout~
 &+La &+ywemic &+Lscout&N~
 &+yA wemic scout walks through here&+L, scanning for danger.
@@ -617,7 +617,7 @@ h 0 1 4
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500041
+#200041
 decorated tharnadian human watchman~
 &+Wa decorated &+LTharnadian &+Wwatchman&N~
 &+WA decorated watchman of the &+LTharnadian &+Wpatrol scans the horizon.
@@ -631,7 +631,7 @@ ph 0 1 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500042
+#200042
 human traveller~
 &+Ca human traveller&N~
 &+CA human traveller walks through here, making his way across the country.
@@ -645,7 +645,7 @@ PH 0 1 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500043
+#200043
 rabbit~
 &Na rabbit&N~
 &NA small rabbit is here&+g, hopping through the grass.
@@ -657,7 +657,7 @@ a 0 1 2
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500044
+#200044
 barbarian hunter~
 &+Ba barbarian hunter&N~
 &+BA barbarian hunter slowly creeps through the area.
@@ -671,7 +671,7 @@ pb 0 1 -1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500045
+#200045
 deer~
 &+ya deer&N~
 &+yA deer stands here, &+ggrazing on some grass.&N
@@ -684,7 +684,7 @@ a 0 1 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500046
+#200046
 dwarven trapper~
 &+Ya dwarven trapper&N~
 &+YA dwarven trapper has travelled out here, on the hunt for some critters.
@@ -698,7 +698,7 @@ pm 0 1 -1
 17 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500047
+#200047
 huge boar~
 &Na huge boar&N~
 &NA huge boar charges through here, squeeling viciously.
@@ -711,7 +711,7 @@ a 0 1 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500048
+#200048
 barbarian soldier~
 &+ya barbarian soldier&N~
 &+yA barbarian soldier proudly walks through here, scanning the area.
@@ -726,7 +726,7 @@ pb 0 1 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500049
+#200049
 member woodseer brigade~
 &+ya member of the Woodseer Brigade&N~
 &+yA member of the Woodseer Brigade patrols the countryside, scanning for evil.
@@ -741,7 +741,7 @@ pf 0 1 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500050
+#200050
 halfling lieutenant~
 &+ya halfling &+glieutenant&N~
 &+yA halfling &+glieutenant &+ywalks through here, leading his troops.
@@ -756,7 +756,7 @@ pf 0 1 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500051
+#200051
 mountaineer dwarf~
 &+Ga mountaineer&N~
 &+gA mountaineer walks through here, poised for combat.
@@ -771,7 +771,7 @@ pm 0 1 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500052
+#200052
 crodog forgefire mountaineer dwarf~
 &+GCrodog Forgefire the Mountaineer&N~
 &+GCrodog Forgefire the Mountaineer of Kimordril steps ahead of his men, leading proudly.
@@ -786,7 +786,7 @@ pm 0 1 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500053
+#200053
 green iguana~
 &+ga green iguana&N~
 &+gA green iguana walks across the ground here, slowly peering about.
@@ -799,7 +799,7 @@ r 0 1 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500054
+#200054
 gnome gnomish grenadier~
 &+Ra gnomish grenadier&N~
 &+RA gnomish grenadier walks through the area, looking towards the horizon.
@@ -814,7 +814,7 @@ pg 0 1 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500055
+#200055
 meldar tharnadian marshall~
 &+WMeldar the &+LTharnadian &+WMarshall&N~
 &+WMeldar the &+LTharnadian &+WMarshall passes through here, guarding the road.&n
@@ -831,7 +831,7 @@ PH 0 8 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500056
+#200056
 noble white steed~
 &+Wa noble white steed&N~
 &+WA noble white steed trots here, swatting its tail.
@@ -845,7 +845,7 @@ ae 0 1 4
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500057
+#200057
 magnificent horse~
 &+ya magnificent horse&N~
 &+yA magnificent horse trots through here, looking noble.
@@ -859,7 +859,7 @@ ae 0 1 4
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500058
+#200058
 elite highwayman~
 &+Ban elite highwayman&N~
 &+WAn elite highwayman stands here, protecting the roads of Tharnadia.&n
@@ -874,7 +874,7 @@ ph 0 1 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500059
+#200059
 highwayman~
 &+ga highwayman&N~
 &+gA highwayman stands here, scanning the roads protected by &+LTharnadia&+g.&n
@@ -889,7 +889,7 @@ ph 0 1 -1
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500060
+#200060
 elite tharnadian warrior~
 &+Wan elite &+LTharnadian &+Wwarrior&N~
 &+WAn elite &+LTharnadian &+Wwarrior stands here, poised and ready for combat.&n
@@ -904,7 +904,7 @@ ph 0 1 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500061
+#200061
 huge owlbear~
 &+La huge &+yowl&+Lbear&N~
 &+LA huge &+yowl&+Lbear stalks through the forests.
@@ -918,7 +918,7 @@ ac 0 1 5
 39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500062
+#200062
 huge owlbear~
 &+La hungry &+yowl&+Lbear&N~
 &+LA hungry &+yowl&+Lbear stalks through here, looking for something to eat.
@@ -932,7 +932,7 @@ ac 0 1 4
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500063
+#200063
 snarling wolf~
 &+La snarling wolf&N~
 &+LA snarling black wolf stalks through here, &+Wshowing its teeth.
@@ -946,7 +946,7 @@ a 0 1 3
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500064
+#200064
 gnoll~
 &+ca gnoll&N~
 &+cA gnoll walks through here, looking around the area.
@@ -960,7 +960,7 @@ h 0 1 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500065
+#200065
 faerie sprite~
 &+Ga faerie sprite&N~
 &+GA faerie sprite flies through the area, bobbing through the trees.
@@ -973,7 +973,7 @@ hf 0 2080 1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500066
+#200066
 glowing wisp~
 &+Ca glowing wisp&N~
 &+CA glowing wisp whirls through the area, it leaves a faint glowing trail of light.
@@ -986,7 +986,7 @@ sp 0 1 0
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500067
+#200067
 caribou~
 &+ya caribou&N~
 &+yA caribou graciously leaps from spot to spot in the tundra, looking about.
@@ -1000,7 +1000,7 @@ a 0 1 4
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500068
+#200068
 snow buffalo~
 &+Wa snow &+Cbuffalo&N~
 &+WA snow &+Cbuffalo walks through here, grazing on the grass.
@@ -1014,7 +1014,7 @@ a 0 1 5
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500069
+#200069
 snow fox~
 &+Wa snow &+rfox&N~
 &+WA small snow fox trots here&+r, foraging the tundra.
@@ -1028,7 +1028,7 @@ a 0 1 2
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500070
+#200070
 sir jonius verspin watchman~
 &+WSir Jonius the Verspin Watchman&N~
 &+WSir Jonius the Verspin Watchman walks under a thick hood across the Ice Crag Tundra highway.
@@ -1047,7 +1047,7 @@ PH 0 67108864 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500071
+#200071
 thri thri-kreen~
 &+Ga &+gthri-&+Ykreen&N~
 &+GA &+gthri&+Y-kreen &+Gchitters as it walks through, peering about.
@@ -1063,7 +1063,7 @@ tk 0 1 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500072
+#200072
 minotaur~
 &+Ra &+Lmino&+rtaur&N~
 &+RA large &+Lmino&+rtaur&+L hulks its way around here, scouting the terrain.
@@ -1078,7 +1078,7 @@ mt 0 1 4
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500073
+#200073
 young ape~
 &Na young ape&N~
 &nA young ape swings through the jungle and leaps across the rocks.
@@ -1092,7 +1092,7 @@ aa 0 1 3
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500074
+#200074
 huge grey ape~
 &Na huge grey ape&N~
 &NA huge grey ape swings &+glumbers through here with stern confidence.
@@ -1106,7 +1106,7 @@ aa 0 1 5
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500075
+#200075
 jorl'gan stargazer~
 &+gJorl'gan &+Lthe &+Ystar&+Lgazer&n~
 &+gJorl'gan &+Lthe &+Ystar&+Lgazer seeks to expand his domain.&n
@@ -1122,7 +1122,7 @@ x 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500076
+#200076
 cho'van philosopher~
 &+CCho'van &+Lthe &+cphilosopher&n~
 &+CCho'van &+Lthe &+cphilosopher &+Levaluates the balance of good and evil.&n
@@ -1139,7 +1139,7 @@ x 0 33554432 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500077
+#200077
 mountain eagle~
 &+ya mountain &+Weagle&N~
 &+yA mountain &+Weagle &+ysoars through here&N, swooping with the wind.
@@ -1152,7 +1152,7 @@ b 0 1 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500078
+#200078
 merrova traveler~
 &+MMerrova &+Lthe &+mtraveler~
 &+MMerrova &+Lthe &+mtraveler &+Lstruggles to fight a dark &+revil&+L.&n
@@ -1169,7 +1169,7 @@ x 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500079
+#200079
 thorne enchanter~
 &+BThorne &+Lthe &+Wen&+cch&+Ba&+cnt&+Wer&n~
 &+BThorne &+Lthe &+Wen&+cch&+Ba&+cnt&+Wer &+Lstands here, examining the countryside.&n
@@ -1186,7 +1186,7 @@ x 0 4194304 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500080
+#200080
 undead behemoth~
 &+Lan undead behemoth&N~
 &+LAn undead behemoth slowly stomps across the wasteland, reeking of undeath.
@@ -1201,7 +1201,7 @@ u 0 1 5
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500081
+#200081
 powerful lich~
 &+Ma &+mpowerful &+Mlich&N~
 &+MA &+mpowerful &+Mlich &+Mfloats across the ground, &+Lspewing forth darkness.
@@ -1217,7 +1217,7 @@ ul 0 1024 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500082
+#200082
 skeleton~
 &+Wa skeleton&N~
 &+WA shambling skeleton lumbers through the area, animated by powerful magic.
@@ -1231,7 +1231,7 @@ sk 0 1 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500083
+#200083
 zombie~
 &+ga zombie&N~
 &+gA rotting zombie shuffles through the wasteland.
@@ -1243,7 +1243,7 @@ zo 0 1 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500084
+#200084
 shade~
 &+La shade&N~
 &+LA shade materializes from the darkness here...
@@ -1255,7 +1255,7 @@ sw 0 1 2
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500085
+#200085
 behemoth~
 &+La &+rb&+Le&+rh&+Le&+rm&+Lo&+rt&+Lh&N~
 &+LA hulking &+rbehemoth&+L stomps through here, protecting his territory.
@@ -1272,7 +1272,7 @@ bk 0 1 6
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500086
+#200086
 large skeletal knight~
 &+Wa large skeletal knight&N~
 &+WA large skeletal knight shambles here &+Rwith eyes of fire.
@@ -1286,7 +1286,7 @@ sk 0 1 4
 37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500087
+#200087
 nightcrawler shadow~
 &+La &+bn&+Li&+bg&+Lh&+bt&+Lc&+br&+La&+bw&+Ll&+be&+Lr&N~
 &+LA nightcrawler &+bshadow &+Lfloats in and out through the shadows here.
@@ -1301,7 +1301,7 @@ sw 0 516 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500088
+#200088
 headless zombie~
 &+La headless &+gzombie&N~
 &+LA headless &+gzombie &+Lshambles mindlessly through the area.
@@ -1313,7 +1313,7 @@ zo 0 1 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500089
+#200089
 skeletal zombie~
 &+Wa &+gs&+Wkel&+getal z&+Wo&+rm&+gbie&N~
 &+gA &+Wskeletal &+gzombie of &+Ldecaying &+rflesh &+gshambles through here.
@@ -1325,7 +1325,7 @@ zo 0 1 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500090
+#200090
 green wyrm~
 &+La &+ggreen wyrm&N~
 &+gA grey wyrm swiftly slithers across the grass&+L, moving with frightening speed.
@@ -1339,7 +1339,7 @@ dk 0 1 4
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500091
+#200091
 large undead wolf~
 &+La large &+run&+Rde&+rad &+Lwolf&N~
 &+LA large &+run&+Rde&+rad &+Lwolf prowls through here.
@@ -1354,7 +1354,7 @@ u 0 1 4
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500092
+#200092
 kres'nesthius fisherman elf kres~
 &+cKres'&+BNesthius &+Lthe fisherman&N~
 &+GKres'Nesthius the fisherman stands here, casting his line into the lake.
@@ -1369,7 +1369,7 @@ pe 0 1 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500093
+#200093
 undead ape~
 &+ga&+Ln u&+gnde&+Lad &+gap&+Le&n~
 &+LA &+gvi&+Lciou&+gs lo&+Lok&+gin&+Lg u&+gnde&+Lad &+gap&+Le swi&+gng&+Ls fr&+gom t&+Lree t&+go tr&+Lee.&n
@@ -1386,7 +1386,7 @@ zo 0 1 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500094
+#200094
 chesynn tundra hunter~
 &+CCheshynn the &+WTundra &+CHunter&N~
 &+CChesynn the &+WTundra &+CHunter kneels here&+r, nursing a &+Rwound&+r.
@@ -1401,7 +1401,7 @@ pe 0 2 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500095
+#200095
 grey fang alpha panther~
 Grey Fang &+Wthe alpha panther&N~
 &nGrey Fang &+Wthe alpha panther&+C prowls through the tundra.
@@ -1415,7 +1415,7 @@ a 0 1 4
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500096
+#200096
 tren tind halfling nomad~
 &+LTren Tind &+ythe halfling &+Lnomad&N~
 &+LTren Tind &+ythe halfling &+Lnomad&+y walks through here, surveying these sands.
@@ -1432,7 +1432,7 @@ pf 0 384 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500097
+#200097
 wyvern~
 &+ya wyvern&N~
 &+yA huge feathery wyvern flies here, screeching as it descends.
@@ -1446,7 +1446,7 @@ b 0 1 5
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500098
+#200098
 snardag dark wizard~
 &+LSnardag the Dark Wizard&N~
 &+LSnardag the Dark Wizard rests here, atop the bluffs.
@@ -1463,7 +1463,7 @@ pl 0 516 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 5 1
-#500099
+#200099
 krethin centaur peak seer~
 &+LKrethin the &+gCen&+Ltaur &+yPeak&+C Seer&N~
 &+LKrethin the &+gCen&+Ltaur &+yPeak &+CSeer &+Lstands here, looking across the mountains.
@@ -1479,7 +1479,7 @@ ct 0 128 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500100
+#200100
 azikarzith demilich lich~
 &+LAzikarzith the &+gDemi&+GLich&N~
 &+LAzikarzith the &+gDemi&+GLich &+Lfloats through here, observing the Isle of Death.
@@ -1494,7 +1494,7 @@ ul 0 4 2
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500101
+#200101
 flegnus ancient larethian~
 &+YFlegnus the Ancient Larethian&N~
 &+YFlegnus the ancient Larethian floats across the hillside.
@@ -1509,7 +1509,7 @@ PH 0 1 -1
 49 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500102
+#200102
 flamewood treant~
 &+ga &+rfl&+Ra&+rme&+ywood &+gtreant&n~
 &+gA large &+rfl&+Ra&+rme&+ywood &+gtreant travels through the countryside.&n
@@ -1524,7 +1524,7 @@ vt 0 1 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500103
+#200103
 spiritwood treant~
 &+ga &+Wsp&+Cir&+Wit&+ywood &+gtreant&n~
 &+gA &+Wsp&+Cir&+Wit&+ywood &+gtreant explores the vast wilderness here.&n
@@ -1539,7 +1539,7 @@ vt 0 1 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500104
+#200104
 elven guard~
 &+gan &+celven &+gguard&n~
 &+gOne of the guards of Evermeet patrols the countryside.&n
@@ -1554,7 +1554,7 @@ pe 0 1 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500105
+#200105
 elite elven guard~
 &+gan &+Celite &+celven &+gguard&n~
 &+gAn &+Celite &+celven &+gguard keeps the inhabitants of this area safe.&n
@@ -1569,7 +1569,7 @@ pe 0 1 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500106
+#200106
 human soldier~
 &+ya &+Whuman &+ysoldier&n~
 &+yA &+Whuman &+ysoldier from the nearby city of &+WWinterhaven &+yprotects the area.&n
@@ -1584,7 +1584,7 @@ ph 0 1 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500107
+#200107
 elite human soldier~
 &+yan &+welite &+Whuman &+ysoldier&n~
 &+yAn &+welite &+Whuman &+ysoldier is busy scanning the horizon for enemies.&n
@@ -1599,7 +1599,7 @@ ph 0 1 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500108
+#200108
 barbarian mercenary~
 &+wa &+Bbarbarian &+wmercenary&n~
 &+wA well trained &+Bbarbarian &+wmercenary has been hired to guard the countryside from &+revil&+w.&n
@@ -1613,7 +1613,7 @@ pb 0 16384 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500109
+#200109
 centaur guard guardsman~
 &+ga cen&+Ltaur &+gguardsman&n~
 &+gA cen&+Ltaur &+gguardsman stands here protecting the forest from invaders.&n
@@ -1628,7 +1628,7 @@ ct 0 1 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500110
+#200110
 gnomish observer~
 &+La &+RGn&+romi&+Rsh &+Lobserver&n~
 &+LA &+RGn&+romi&+Rsh &+Lobserver wanders around the countryside.&n
@@ -1642,7 +1642,7 @@ pg 0 524288 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500111
+#200111
 moldug barbarian fisherman~
 &+WMoldug &+ythe barbarian fisherman&N~
 &+WMoldug &+ythe barbarian fisherman sits on the edge of the dock&N, eyeing the fish.
@@ -1657,7 +1657,7 @@ pb 0 1 4
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500112
+#200112
 huge furry ram~
 &+Ya &+Whuge furry &+Yram&N~
 &+YA &+Whuge, furry &+Yram &+Wtrots across &+Cthe frozen plains.
@@ -1671,7 +1671,7 @@ a 0 1 5
 39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500113
+#200113
 wild horse~
 a &+Wwild &Nhorse~
 A &+Wwild &Nhorse of the sylvan woodlands trots about here briskly.
@@ -1685,7 +1685,7 @@ ae 0 1 4
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500114
+#200114
 hill giant humanoid~
 &+ya wandering hill &+Ygiant&n~
 &+yA large humanoid creature at least twelve feet in height is roaming about here.&n
@@ -1699,7 +1699,7 @@ G 0 16384 6
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500115
+#200115
 hill giant humanoid unworried~
 &+yan unworried hill &+Ygiant&n~
 &+yA ten foot tall humanoid that resembles an ogre stands here chanting.&n
@@ -1715,7 +1715,7 @@ G 0 256 6
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500116
+#200116
 prophet fire _spec3_~
 &+rthe &+RProphet &+rof &+RFire&n~
 &+rThe &+RProphet &+rof &+RFire &+ris busy conjuring &+RFlames&+r.&n
@@ -1726,7 +1726,7 @@ ef 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500117
+#200117
 prophet ice _spec2_~
 &+bthe &+CProphet &+bof &+CIce&n~
 &+bThe &+CProphet &+bof &+CIce &+bis busy conjuring &+Cicicles&+b.&n
@@ -1737,7 +1737,7 @@ ew 0 33554432 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500118
+#200118
 guardian fire~
 &+Lthe &+Rguardian &+Lof &+rthe Altar of &+RFire&n~
 &+Lthe &+RGuardian &+Lof &+rthe Altar of &+RFire &+Lstands here, motionless.&n
@@ -1748,7 +1748,7 @@ ef 0 1 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500119
+#200119
 guardian ice~
 &+Lthe &+Cguardian &+Lof &+bthe Altar of &+CIce&n~
 &+LThe &+CGuardian &+Lof &+bthe Altar of &+CIce &+Lstands here, motionless.&n
@@ -1759,7 +1759,7 @@ ie 0 1 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500120
+#200120
 young gnomish scientist~
 &+Wa young &+RGn&+romi&+Rsh &+Rsc&+rie&+Rnt&+ri&+Rst&n~
 &+WA young &+RGn&+romi&+Rsh Sc&+rie&+Rnt&+ri&+Rst &+Wwanders around this &+gSecluded Island&+W.&n
@@ -1770,7 +1770,7 @@ ph 0 524288 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500121
+#200121
 flann broad-chested shipmaster~
 &+yFlann, the &+Ybroad-chested &+yshipmaster&n~
 &+yFlann, the &+Ybroad-chested &+yshipmaster keeps a sharp eye on his pier.&n
@@ -1784,7 +1784,7 @@ PH 0 64 5
 59 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500122
+#200122
 human seafarer~
 &+Ca human seafarer&N~
 &+CA human seafarer stands here&n&+y, awaiting the completion of his latest ship work.
@@ -1799,7 +1799,7 @@ PH 0 1 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500123
+#200123
 battle-scarred shield dwarf sailor~
 &+La battle-scarred &Nsh&+Wie&Nld &+Ydwarf &+Ysailor&N~
 &+LA battle-scarred &Nsh&+Wie&Nld &+Ydwarf sailor &Nawaits a repair on his ship.
@@ -1817,7 +1817,7 @@ pm 0 1 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500124
+#200124
 dock worker~
 &+ya dock &Nworker&N~
 &+yA dock worker of the fiord ship yard&N works on a ship.
@@ -1832,7 +1832,7 @@ h 0 1 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500125
+#200125
 barbarian traveler~
 &+Ba barbarian &N&+ytraveler&N~
 &+BA burly barbarian &N&+ytraveler&+B visits the fiord.
@@ -1848,7 +1848,7 @@ pb 0 16384 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500126
+#200126
 frzzt undead boatman~
 &+rFrz&+Lzt, the undead &+rboat&+Lman&n~
 &+rFrz&+Lzt, the undead &+rboat&+Lman stands here, waiting to take you on a one way journey.&n
@@ -1859,7 +1859,7 @@ sk 0 1 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500127
+#200127
 undead minion~
 &+Lan undead &+rmin&+Lion&n~
 &+LAn undead &+rmin&+Lion is busy loading cargo onto a nearby ship.&n
@@ -1870,7 +1870,7 @@ sk 0 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
-#500128
+#200128
 seni revered theurgist eladrin teacher _spec3_ _spec2_ _spec1_~
 &+WS&+Cen&+Wi, the revered &+cth&+Ceur&+Wgist&n~
 &+WA slender &+ce&+Cl&+Wadr&+Ci&+cn &+Wwonders about, lost in &+Ycontemplation &+Wof the &+Wt&+ch&+Ca&+Wu&+Cm&+ca&+Ct&+Wu&+Cr&+cg&+Ci&+Wc &+Warts.&n
@@ -1886,7 +1886,7 @@ EL 0 134217728 -1
 59 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500150
+#200129
 reaver snudk goblin shock_reaver teacher _spec3_~
 &+gSnudk&+L, the &+Ggoblin &+Yshock &+Lreaver&N~
 &+LThe famous &+Yshock reaver&+L, &+GSnudk&+L, wanders here.&N
@@ -1903,7 +1903,7 @@ HG 0 2097152 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500151
+#200130
 reaver vacket orc ice_reaver teacher _spec1_~
 &+Lthe &+ci&+Cc&+ce &+Lreaver, Vacket&N~
 &+LA master orc &+Creaver &+Lnamed Vacket roams the land.&N
@@ -1921,7 +1921,7 @@ HO 0 2097152 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500152
+#200131
 reaver silurilith drow elf flame_reaver teacher _spec2_~
 &+rSilurilith&+R, master &+rfl&+Ra&+rme &+Rreaver&N~
 &+rA drow elf &+Rreaver &+rwatches her surroundings closely.&N
@@ -1939,7 +1939,7 @@ PL 0 2097152 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500153
+#200132
 warrior gurthuz troll guardian teacher _spec2_~
 &+GGurthuz&+L, master &+yguardian &+Lof the S&+mw&+ga&+mm&+Lp &+gTrolls&N~
 &+GA master troll warrior makes his way through the area here.&N
@@ -1957,7 +1957,7 @@ PT 0 1 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500154
+#200133
 warrior urghegg ogre swordsman teacher _spec1_~
 &+Ythe great &+bogre &+Bswordsman &+YUrghegg&N~
 &+YA great &+bogre warrior &+Ystomps fiercely through the area.&N
@@ -1976,7 +1976,7 @@ PO 0 1 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500155
+#200134
 xixxrelaa githyanki pyrokinetic robed flames teacher _spec1_~
 &+Lthe &+Ggith&+Lyanki &+wgrand &+rpy&+Rro&+Ykin&+Ret&+ric&+w, Xixxrelaa&N~
 &+LA robed figured &+rbathed in &+Rflames &+Lpasses by.&N
@@ -1993,7 +1993,7 @@ GI 0 4 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500156
+#200135
 k'vi'shiiu githyanki master enslaver teacher _spec2_~
 &+WK'vi'shiiu&+w, &+Lmaster &+Wenslaver &+wof &+LGith&N~
 &+WA master enslaver moves along the path with her entourage at her heels.&N
@@ -2010,7 +2010,7 @@ GI 0 4 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500157
+#200136
 zjojth githyanki master psycheporter teacher _spec3_~
 &+MZjojth&+m, the pre&+Memin&+mant &+bpsycheporter&N~
 &+mAn extremely gaunt and emaciated githyanki awaits students here.&n
@@ -2026,7 +2026,7 @@ GI 0 4 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500158
+#200137
 vlu'rruq githyanki figure black dark_knight teacher _spec1_~
 &+RV&+rlu'rruq &+Lthe githyanki dark knight&N~
 &+LA figure clad in the deepest black platemail strides through the area.&N
@@ -2042,7 +2042,7 @@ GI 0 16 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500159
+#200138
 morthreck orc demonic_rider teacher _spec2_~
 &+rMorthreck&+R, &+LHell&+Rrider&+r of &+LApocalypse&N~
 &+LThe Hell&+Rrider &+rof &+LApocalypse, &+rMorthreck &+Lrides here.&N
@@ -2058,7 +2058,7 @@ HO 0 16 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500160
+#200139
 orethma goblin windtalker teacher _spec1_~
 &+YOrethma, the &+Ggoblin &+wwindtalker&n~
 &+YA great &+Ggoblin &+Yethermancer floats about here.&N
@@ -2074,7 +2074,7 @@ HG 0 33554432 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500161
+#200140
 kwarooe orc frost_magus teacher _spec2_~
 &+CKwarooe, &+cthe frost magus&n~
 &+CAn orc frost magus leaves a trail of icicles behind him.&n
@@ -2090,7 +2090,7 @@ HO 0 33554432 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500162
+#200141
 thuu goblin cosmomancer teacher _spec3_~
 &+yThuu&+Y, the &+Ggoblin &+Yco&+wsm&+yo&+wman&+Ycer&n~
 &+yA strange goblin stands here, juggling meteorites.&N
@@ -2105,7 +2105,7 @@ HG 0 33554432 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500163
+#200142
 bwizx goblin disharmonist teacher _spec1_~
 &+rB&+Lw&+Ri&+Lz&+rx&+L, the &+Ggoblin &+Ldisharmonist&n~
 &+rThe high-pitched singing of this goblin makes everyone in the area upset.&n
@@ -2121,7 +2121,7 @@ HG 0 32768 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500164
+#200143
 fnoth orc scoundrel teacher _spec2_~
 &+GFn&+go&+Gth, the orc master scoundrel&n~
 &+GA master orcish scoundrel stands here, daring you to try something.&n
@@ -2136,7 +2136,7 @@ HO 0 32768 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500165
+#200144
 jerastras drow elven minstrel teacher _spec3_~
 &+mthe master drow elven &+Yminstrel &+mJerastras&n~
 &+mA master minstrel wanders the world here.&N
@@ -2152,7 +2152,7 @@ PL 0 32768 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500166
+#200145
 zroz drow elven wildmage teacher _spec1_~
 &+CZ&+croz, the drow elven &+MWildmage&N~
 &+CZ&+croz, the drow elven &+Mwildmage&N &+cgathers energy to cast a spell.&N
@@ -2168,7 +2168,7 @@ PL 0 512 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500167
+#200146
 iu goblin wizard teacher _spec2_~
 &+ythe &+Lgoblin wizard&n &+yIu&n~
 &+yA goblin wizard roams the land here.&n
@@ -2183,7 +2183,7 @@ HG 0 512 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500168
+#200147
 be'tre orc unseen shadowmage teacher _spec3_~
 &+rBe&+L'&+rtre, &+Lthe unseen&n~
 &+LAn orc shadowmage blinks in and out of existence here.&n
@@ -2199,7 +2199,7 @@ HO 0 512 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500169
+#200148
 kjrell drow elven diabolis teacher _spec1_~
 &+mK&+Mj&+mrell the &+rdiabolis&n~
 &+MAn almost skeletal drow elf digs up a body here.&N
@@ -2214,7 +2214,7 @@ PL 0 1024 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500170
+#200149
 theralana drow elven necrolyte teacher _spec2_~
 &+WTheralana Sipriss, &+Ldrow necrolyte&n~
 &+WA drow elven necrolyte master controls her hoarde of undead here.&n
@@ -2230,7 +2230,7 @@ PL 0 1024 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500171
+#200150
 screcksis drow elven reaper teacher _spec3_~
 &+rthe &+mdrow elven &+Lreaper, &+rScrecksis&n~
 &+rA drow elven reaper moves about here, doomblade at the ready.&N
@@ -2246,7 +2246,7 @@ PL 0 1024 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500172
+#200151
 skivv githyanki air_magus teacher _spec1_~
 &+Wthe &+Cmaster &+cair magus, &+CSkivv&n~
 &+CA githyanki air magus floats along here.&n
@@ -2261,7 +2261,7 @@ GI 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500173
+#200152
 skarvv githyanki water_magus teacher _spec2_~
 &+Wthe &+Bmaster &+bwater magus, &+BSkarvv&n~
 &+BA githyanki water magus oozes along here.&n
@@ -2277,7 +2277,7 @@ GI 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500174
+#200153
 skuvv githyanki fire_magus teacher _spec3_~
 &+Wthe &+Rmaster &+rfire magus, &+RSkuvv&n~
 &+rA githyanki fire magus roams along here.&n
@@ -2293,7 +2293,7 @@ GI 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500175
+#200154
 skevv githyanki earth_magus teacher _spec4_~
 &+Wthe &+Ymaster &+yearth magus, &+YSkevv&n~
 &+yA githyanki earth magus hulks along here.&n
@@ -2309,7 +2309,7 @@ GI 0 2048 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500176
+#200155
 spuzz duergar assassin teacher _spec1_~
 &+rthe duergar master assassin, &+RSp&+Lu&+Rzz&n~
 &+RSpuzz&+r, the master assassin shadows through the area.&N
@@ -2324,7 +2324,7 @@ PD 0 4096 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500177
+#200156
 tylck orc thief teacher _spec2_~
 &+LTylck, the orcish thief&n~
 &+LA master thief shadows through the area here.&n
@@ -2340,7 +2340,7 @@ HO 0 4096 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500178
+#200157
 feqt drow elven swashbuckler teacher _spec3_~
 &+CF&+ce&+Cq&+ct&+C, the drow elf &+cswashbuckler&n~
 &+CA rather flamboyant swashbuckler travels the lands here.&n
@@ -2357,7 +2357,7 @@ PL 0 1 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500179
+#200158
 dreikk duergar archer shadow_archer teacher _spec4_~
 &+GDreikk, the duergar &+Lshadow archer&n~
 &+GA duergar archer wielding an ancient looking long bow stands here.&n
@@ -2372,7 +2372,7 @@ PD 0 4096 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500180
+#200159
 lloj troll brigand teacher _spec1_~
 &+YL&+yloj&+Y, the troll brigand&n~
 &+YA master brigand prowls the countryside here.&n
@@ -2388,7 +2388,7 @@ PT 0 16384 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500181
+#200160
 myrkt troll hunter bounty_hunter teacher _spec2_~
 &+LMyrkt&+y, the troll &+Lbounty hunter&n~
 &+yA troll bounty hunter tracks his prey here.&n
@@ -2403,7 +2403,7 @@ PT 0 16384 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500182
+#200161
 ruukoz orog berserker mauler teacher _spec1_~
 &+ran orog mauler named &+RRuu&+Lkoz&n~
 &+rA savage looking orog berserker knocks things to the ground as he passes by.&n
@@ -2418,7 +2418,7 @@ OR 0 1048576 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500183
+#200162
 boq orc berserker ragelord teacher _spec2_~
 &+LBoq, the orc &+Rrage&+rlord&N~
 &+LThe famous &+Rragelord&+L, Boq, stands here.&n
@@ -2434,7 +2434,7 @@ HO 0 1048576 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500184
+#200163
 thoemaa orc magician teacher _spec1_~
 &+wThoemaa&+c, the orc magician&n~
 &+wAn orc magician conjures images of himself here.&n
@@ -2449,7 +2449,7 @@ HO 0 4194304 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500185
+#200164
 ugreth orc dark_dreamer teacher _spec2_~
 &+mUg&+wre&+mth the dark &+wdreamer&n~
 &+wAn orc plays in the shadows here, conjuring frightening illusions.&n
@@ -2465,7 +2465,7 @@ HO 0 4194304 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500186
+#200165
 koztk vampire deathlord teacher _spec1_~
 &+rthe vampire &+Ldeathlord &+RKoztk&n~
 &+rKoztk, the &+Ldeathlord &+rstands here, ready to command.&n
@@ -2481,7 +2481,7 @@ UV 0 16777216 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500187
+#200166
 szezt vampire shadowlord teacher _spec2_~
 &+Rthe vampire &+Lshadowlord &+rSzezt&n~
 &+RSzezt, the &+Lshadowlord &+Rstands here, ready to command.&n
@@ -2497,7 +2497,7 @@ UV 0 16777216 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500188
+#200167
 perin half elf forest druid teacher _spec1_~
 &+gPerin, the &+Gforest &+gdruid&n~
 &+gPerin, the great druid, stands here, carefully scrutinizing the ground.&n
@@ -2511,7 +2511,7 @@ P2 0 128 -1
 60 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
-#500189
+#200168
 tameron centaur storm druid teacher _spec2_~
 &+CTameron&+c, the &+Cwild&+c-&+Ceyed &+cStorm &+CDruid&n~
 &+cThe storm druid, &+CTameron&+c, stands here, searching for brethren to join him.&n
@@ -2528,7 +2528,7 @@ CT 0 128 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500190
+#200169
 mugtogg barbarian elementalist teacher _spec1_~
 &+Mthe elementalist, &+mMugtogg the great&n~
 &+mMugtogg, the great shaman, stands here, mixing reagents.&n
@@ -2542,7 +2542,7 @@ PB 0 256 -1
 60 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
-#500191
+#200170
 keira barbarian spiritualist teacher _spec2_~
 &+WKeira&+B, the great shamaness of Ugta&n~
 &+WKeira&+w, the great shamaness, stands here, &+Bconcern&+w and &+Bempathy &+wexuding from her.&n
@@ -2559,7 +2559,7 @@ PB 0 256 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500192
+#200171
 chimel halfling animalist teacher _spec3_~
 &+Ythe halfling animalist, &+yChimel&n~
 &+YChimel&+y the animalist, stands here, calling the wildlife to do his will.&n
@@ -2576,7 +2576,7 @@ PF 0 256 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500193
+#200172
 surak dwarf guardian teacher _spec2_~
 &+Ythe muscle-bound dwarf named &+ySurak&n~
 &+YSurak, the great dwarven warrior, stands here, toying with a small boulder.&n
@@ -2590,7 +2590,7 @@ PM 0 1 -1
 60 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
-#500194
+#200173
 xzch thrikreen swordsman teacher _spec1_~
 &+Bthe legendary swordsman, &+YXzch&n~
 &+YXzch&+B, the legendary swordsman, sharpens his weapons here.&n
@@ -2608,7 +2608,7 @@ TK 0 1 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500195
+#200174
 jaer human bounty hunter teacher _spec2_~
 &+yJaer, &+wthe skull&n~
 &+yJaer, the great bounty hunter, stands here, studying your features.&n
@@ -2622,7 +2622,7 @@ PH 0 16384 -1
 56 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
-#500196
+#200175
 branok barbarian brigand teacher _spec1_~
 &+Ythe barbarian &+yBr&+Lig&+yand, &+YBranok&n~
 &+yA daring brigand prowls the countryside, looking for an &+Yeasy mark&+y.&n
@@ -2640,7 +2640,7 @@ PB 0 16384 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500197
+#200176
 kortril grey elf minstrel teacher _spec3_~
 &+mKortril Levylinnae&n~
 &+mKortril, the great minstrel, stands here, hashing out a new ballad.&n
@@ -2655,7 +2655,7 @@ PE 0 32768 -1
 56 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
-#500198
+#200177
 rasteril halfling scoundrel teacher _spec2_~
 &+rthe halfling scoundrel, &+RRasteril&n~
 &+RA devestatingly handsome halfling stands here, leering at anything female.&n
@@ -2672,7 +2672,7 @@ PF 0 32768 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500199
+#200178
 sythandria half elf disharmonist teacher _spec1_~
 &+mSyth&+Can&+mdria, &+cthe discordant &+mharmonist&n~
 &+MA shrieking wail of discordant notes emanates from a half-elven maiden here.&n
@@ -2689,7 +2689,7 @@ P2 0 32768 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500200
+#200179
 ghiran human wizard teacher _spec2_~
 &+bGhiran, the grand wizard&n~
 &+bGhiran, the grand wizard, stands here, thinking quietly.&n
@@ -2704,7 +2704,7 @@ PH 0 512 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500201
+#200180
 valiwilwoor grey elf shadowmage teacher _spec3_~
 &+rValiwilwoor&n~
 &+rA grey elven &+Lshadowmage&+r teleports randomly about the area.&n
@@ -2719,7 +2719,7 @@ PE 0 512 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500202
+#200181
 wanyol half elf wildmage teacher _spec1_~
 &+ca half elf &+mwildmage &+cnamed &+CWanyol&n~
 &+CA rather haphazard-looking half elf stands here, commanding chaotic forces.&n
@@ -2735,7 +2735,7 @@ P2 0 512 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500203
+#200182
 valyn grey elf huntsman teacher _spec2_~
 &+gValyn&n~
 &+gValyn, the great elven ranger, stands here, peering this way and that.&n
@@ -2749,7 +2749,7 @@ PE 0 2 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500204
+#200183
 llyriv half elf bladesman teacher _spec1_~
 &+Can accomplished &+cbladesman &+Cnamed &+WLlyriv&n~
 &+WA half-elven bladesman wanders the world here, searching for evil.&n
@@ -2764,7 +2764,7 @@ P2 0 2 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500205
+#200184
 zermeiel centaur marshall teacher _spec3_~
 &+LZermeiel the &+gcen&+Ltaur&n~
 &+LThe high marshall of the centaurs trots through the area here, head held high.&n
@@ -2781,7 +2781,7 @@ CT 0 2 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500206
+#200185
 alana human crusader teacher _spec1_~
 &+WAlana&n~
 &+WAlana, the great paladin crusader, stands here, at the ready.&n
@@ -2794,7 +2794,7 @@ CT 0 8 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500207
+#200186
 bregtar half elf cavalier teacher _spec1_~
 &+WBreg&+Ytar&+W, Torm's Hand&n~
 &+WA handsome half elven cavalier charges through the countryside.&n
@@ -2809,7 +2809,7 @@ P2 0 8 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500208
+#200187
 sir dravor human lightbringer teacher _spec1_~
 &+WSir Dravor&n, the &+Yholy&n &+Lavenger&n~
 &+WSir Dravor&n the &+Yholy&n &+Lavenger protects the countryside from &+Levil&n.
@@ -2823,7 +2823,7 @@ PH 0 67108864 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500209
+#200188
 father benali human holyman teacher _spec2_~
 &+cFather Benali&n~
 &+cFather Benali, the great cleric, stands here in silent prayer.&n
@@ -2837,7 +2837,7 @@ PH 0 32 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500210
+#200189
 ryllinae grey elf healer teacher _spec3_~
 &+GR&+gy&+Gl&+gl&+Gi&+gn&+Ga&+ge&n~
 &+GA fair-skinned elf woman motions you closer, searching you for wounds.&n
@@ -2852,7 +2852,7 @@ PE 0 32 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500211
+#200190
 burbrumly gnome zealot teacher _spec1_~
 &+rthe great gnome zealot &+RBurbrumly&n~
 &+RA zealous gnome cleric talks incessantly as he meanders through the area.&n
@@ -2866,7 +2866,7 @@ PG 0 32 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500212
+#200191
 mu human red_dragon teacher _spec1_~
 &+yMu&n~
 &+yMu, the grand red dragon, stands here, staring off into space.&n
@@ -2881,7 +2881,7 @@ PH 0 64 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500213
+#200192
 k'thruu githzerai elaphidist teacher _spec2_~
 &+Cthe grand elaphidist, &+wK'thruu&n~
 &+CA strange githzerai elaphidist practices martial arts here.&n
@@ -2895,7 +2895,7 @@ GZ 0 64 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500214
+#200193
 kralim human diabolis teacher _spec1_~
 &+LKralim&n~
 &+LA decrepit old human man moves through the area, undead minions in tow.&n
@@ -2910,7 +2910,7 @@ PH 0 1024 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500215
+#200194
 nebretych human necrolyte teacher _spec2_~
 &+YNeb&+Lre&+Ytych&n~
 &+YA strange human man performs a ritual around a corpse here.&n
@@ -2926,7 +2926,7 @@ PH 0 1024 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500216
+#200195
 bhui human reaper teacher _spec3_~
 &+mBhu&+Li&+m, the &+Lre&+Wap&+Ler&n~
 &+mA gothic man wielding a shadow blade leers at you as he passes by.&n
@@ -2941,7 +2941,7 @@ PH 0 1024 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500217
+#200196
 suri gnome earth_magus teacher _spec4_~
 &+YSuri, &+ymaiden of the earth&n~
 &+YThe great &+yearth magus, &+YSuri, stands here, deep in thought.&n
@@ -2956,7 +2956,7 @@ PG 0 2048 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500218
+#200197
 d'renzd githzerai water_magus teacher _spec2_~
 &+bthe grand water magus, &+BD&+b'&+Brenzd&n~
 &+bA conjurer surfs upon a moving swath of water here.&n
@@ -2971,7 +2971,7 @@ GZ 0 2048 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500219
+#200198
 kiovock human fire_magus teacher inferno _spec3_~
 &+rthe &+Rinferno&+r, &+YKiovock&n~
 &+RA man known as &+rthe Inferno&+R, juggles balls of fire here.&n
@@ -2986,7 +2986,7 @@ PH 0 2048 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500220
+#200199
 cruthuallyr grey elf air_magus teacher _spec1_~
 &+Ca grey elven air magus named &+WCruthuallyr&n~
 &+CGusts of wind seem to push at the back of this grey elf as he runs past.&n
@@ -3001,7 +3001,7 @@ PE 0 2048 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500221
+#200200
 favi halfling thief teacher _spec2_~
 &+LFavi&n~
 &+LFavi, the great thief, stands here, looking you over carefully.&n
@@ -3015,7 +3015,7 @@ PF 0 4096 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500222
+#200201
 nival human assassin teacher _spec1_~
 &+rNival&n~
 &+rNival, the great assassin, stands here, fingering his dagger.&n
@@ -3029,7 +3029,7 @@ PH 0 4096 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500223
+#200202
 llwystyn grey elf swashbuckler teacher _spec3_~
 &+gthe grey elf swashbuckler &+GLlwystyn&n~
 &+GAn elven swashbuckler dances with swords in hand here.&n
@@ -3044,7 +3044,7 @@ PE 0 1 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500224
+#200203
 hiliddipply gnome shadow_archer teacher _spec4_~
 &+LHiliddipply, &+bshadow archer of &+RAshrumite&n~
 &+LA heavy oaken longbow hangs from one shoulder of this black-clothed gnome.&n
@@ -3059,7 +3059,7 @@ PG 0 4096 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500225
+#200204
 taa human magician teacher _spec1_~
 &+BTaa&+c, the human magician&n~
 &+BA human magician conjures images of himself here.&n
@@ -3074,7 +3074,7 @@ PH 0 4194304 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500226
+#200205
 maelia halfling dark_dreamer teacher _spec2_~
 &+mthe diminutive &+Ldark &+wdreamer, &+mMaelia&n~
 &+wA halfling woman hides in the shadows here, conjuring frightening illusions.&n
@@ -3089,7 +3089,7 @@ PF 0 4194304 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500227
+#200206
 erull gnome windtalker teacher _spec1_~
 &+YErull, the &+rgnome &+wwindtalker&n~
 &+YA great &+Ggnome &+Yethermancer floats about here.&N
@@ -3105,7 +3105,7 @@ PG 0 33554432 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
-#500228
+#200207
 xaula human frost_magus teacher _spec2_~
 &+CXaula, &+cthe benevolent &+Cfrost magus&n~
 &+cA frosty human magus leaves a trail of icicles behind him.&n
@@ -3121,7 +3121,7 @@ PH 0 33554432 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500229
+#200208
 jamael gnome cosmomancer teacher _spec1_~
 &+yJamael&+Y, the &+Ggrand &+Yco&+wsm&+yo&+wman&+Ycer&n~
 &+yA strange gnome stands here, juggling meteorites.&N
@@ -3136,7 +3136,7 @@ PG 0 33554432 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500230
+#200209
 eom half elf inquisitor teacher _spec2_~
 &+MEom&+m, the grand inquisitor&n~
 &+mA stunningly beautiful half-elven woman glares fiercely at anyone in sight.&n
@@ -3150,7 +3150,7 @@ P2 0 67108864 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
-#500231
+#200210
 draknah drow conjurer teacher~
 &+mDraknah&n~
 &+mDraknah, the great drow conjurer, stands here.&n
@@ -3163,7 +3163,7 @@ PL 3 2048 -1
 56 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
-#500232
+#200211
 sodolum drow necromancer necro teacher~
 &+LSodolum&n~
 &+LSodolum, the great necromancer, stands here.&n
@@ -3179,7 +3179,7 @@ PL 3 1024 -1
 56 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 2
-#500233
+#200212
 ofnil sorcerer drow teacher~
 &+gOfnil&n~
 &+gOfnil, the great sorcerer, stands here.&n
