@@ -1,4 +1,4 @@
-#500000
+#200000
 two-handed black minotaur axe~
 &+La &+rtwo&+L-handed black &+rmino&+Ltaur axe&n~
 &+La &+rtwo&+L-handed black &+rmino&+Ltaur axe lays here.&n~
@@ -22,7 +22,7 @@ A
 18 3
 A
 19 3
-#500001
+#200001
 pile crates large~
 &+ya large pile of crates&n~
 &+yA large pile of crates lies here.&n~
@@ -38,7 +38,7 @@ pile crates large~
 &+ythe oceans, something tells you the port authorities wouldn't be very
 &+yaccomodating if they caught you doing it.&n
 ~
-#500002
+#200002
 wooden cabin~
 &+yan old &+Ywooden &+ycabin&n~
 &+yAn old &+Ywooden &+ycabin sits on this island.&n~
@@ -46,7 +46,7 @@ wooden cabin~
 25 15 3 0 7 0 0 0 0 0 0
 97906 7 -1 0 0 0 0 0
 0 0 100
-#500003
+#200003
 flaming ring prophet~
 &+rthe &+RFlaming &+rring of the &+RProphet&n~
 &+rA strange &+Rring &+rburns quietly on the floor.&n~
@@ -54,7 +54,7 @@ flaming ring prophet~
 8 15 3 0 7 0 1 3 64 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500004
+#200004
 bloody head grtak gr'tak raider~
 &+rthe bloody head of Gr'Tak the Raider&N~
 &+rThe bloody head of Gr'Tak the Raider lies here in a puddle.~
@@ -66,7 +66,7 @@ E
 bloody head grtak gr'tak raider~
    &+rThis head drips with blood.
 ~
-#500005
+#200005
 hunting arm bracer~
 &+ga &+Lhunting &+garm bracer&N~
 &+gA &+Lhunting &+garm bracer &+Lhas been left here in the &+ydirt&+L.~
@@ -82,7 +82,7 @@ A
 18 2
 A
 19 1
-#500006
+#200006
 bloody head krekish vicefang~
 &+rthe bloody head of Krekish ViceFang&N~
 &+rThe bloody head of Krekish ViceFang lies here.~
@@ -94,7 +94,7 @@ E
 bloody head grtak gr'tak raider~
    &+rThis head drips with blood.
 ~
-#500007
+#200007
 chainlinked chain raiders raider bracelet~
 &+La &Nc&+Lh&Na&+Li&Nn&+L-&Nl&+Li&Nn&+Lk&Ne&+Ld &+rraider's &+Lb&Nr&+La&Nc&+Le&Nl&Ne&+Lt&N~
 &+LA chain-linked raider's bracelet has been left here.~
@@ -111,7 +111,7 @@ A
 18 3
 A
 19 2
-#500008
+#200008
 gaseous bracelet~
 &+La &+gga&+Gs&+Ye&+Go&+gus &+Lbr&+gac&+Lel&+get&N~
 &+LA &+ggaseous &+Lbracelet&N has been left here.~
@@ -128,7 +128,7 @@ A
 23 -3
 A
 13 16
-#500009
+#200009
 tharnadian long longsword sword~
 &+Wa &+LTharnadian &+Wlongsword&N~
 &+WA &+LTharnadian &+Wlongsword has been left here.~
@@ -140,7 +140,7 @@ E
 winterhaven longsword sword~
    &+WThis simple steel longsword bares the crest of Winterhaven on the hilt.
 ~
-#500010
+#200010
 tharnadian shield crest~
 &+Wa shield bearing the &+LTharnadian &+Ccrest&N~
 &+WA &+LTharnadian &+Wshield has been left here in the &+ydirt&+W.~
@@ -156,7 +156,7 @@ A
 14 5
 A
 1 5
-#500011
+#200011
 grenadier proc~
 &+Lgrenadier proc&N~
 &+Lgrenadier proc&N~
@@ -172,7 +172,7 @@ A
 18 20
 A
 19 -5
-#500012
+#200012
 gnomish flamethrower flame thrower~
 &+Ra gnomish &+Yflame&+rthrower&N~
 &+RA gnomish &+Yflame&+rthrower &+Lhas been left here, &+rgiving off heat.~
@@ -188,7 +188,7 @@ gnomish flamethrower~
 &+Wof the rifle.  This fire-shooting mechanism seems quite complicated and can
 &+Wprobably only be figured out by Goblins and Gnomes.
 ~
-#500013
+#200013
 tiny faerie potion~
 &+Ga tiny faerie potion&N~
 &+GA tiny faerie potion has been left here in the &+ydirt&+G.~
@@ -200,7 +200,7 @@ E
 tiny faerie potion~
    &+GThis tiny potion glows with a bright magic.
 ~
-#500014
+#200014
 huge silver claymore~
 &+Wa huge &+Csilver &+Wclaymore&N~
 &+WA huge silver claymore has been left here in the &+ydirt&+W.~
@@ -213,7 +213,7 @@ huge silver claymore~
    &+CThis sword is quite large and thick.  Entirely made of silver, it is
 &+Csurprizingly excellently balanced for such a massive blade.
 ~
-#500015
+#200015
 heart sa'dah~
 &+Lthe still &+rbeating &+Lheart of &+rSa'Dah&n~
 &+La still &+rbeating &+Lheart lies here.&n~
@@ -221,7 +221,7 @@ heart sa'dah~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500016
+#200016
 heart jorl'gan~
 &+Lthe still &+rbeating &+Lheart of &+gJorl'gan&n~
 &+La still &+rbeating &+Lheart lies here.&n~
@@ -229,7 +229,7 @@ heart jorl'gan~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500017
+#200017
 heart cho'van~
 &+Lthe still &+rbeating &+Lheart of &+CCho'van&n~
 &+La still &+rbeating &+Lheart lies here.&n~
@@ -237,7 +237,7 @@ heart cho'van~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500018
+#200018
 pulsing darkness throbbing merrova~
 &+Lthe &+mpulsing &+Ldarkness of &+MMerrova&n~
 &+LA &+mthrobbing &+Land &+mpulsing &+Ldarkness lies here.&n~
@@ -245,7 +245,7 @@ pulsing darkness throbbing merrova~
 13 1 3 0 7 0 8392713 1 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500019
+#200019
 heart thorne~
 &+Lthe still &+rbeating &+Lheart of &+BThorne&n~
 &+La still &+rbeating &+Lheart lies here.&n~
@@ -253,7 +253,7 @@ heart thorne~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500020
+#200020
 nightcrawler claw~
 &+La n&+bi&+Lght&+bcr&+Lawler c&+bl&+Law&N~
 &+LA hideous nightcrawler claw has been left here.~
@@ -269,7 +269,7 @@ A
 18 4
 A
 19 2
-#500021
+#200021
 insignia kimordril mountaineers~
 &+Lan &+ginsignia&+L of the &+YKimordril &+gMountaineers&N~
 &+LAn insignia of the Kimordril Mountaineers lies here.~
@@ -285,7 +285,7 @@ A
 5 6
 A
 1 6
-#500022
+#200022
 bloody paw grey fang~
 &+rthe bloody paw of Grey Fang&N~
 &+rThe bloody paw of Grey Fang has been left here.~
@@ -298,7 +298,7 @@ bloody paw grey fang~
    &+rThis huge, clawed paw has been removed from the corpse of Grey Fang - the
 &+ralpha male of the tundra panthers.
 ~
-#500023
+#200023
 frosty white potion~
 &+Wa &+Cfrosty &+Wwhite potion&N~
 &+WA &+Cfrosty &+Wwhite potion has been left here.~
@@ -310,7 +310,7 @@ E
 frosty white potion~
    &+WThis small potion has a &+Cfrosty &+Wsheen.
 ~
-#500024
+#200024
 lizardman totem elemental~
 &+ga &+Ll&+Gi&+Lz&+Ga&+Lr&+Gd&+Lm&+Ga&+Ln &+gtotem&N~
 &+gA &+Llizardman &+gtotem&N has been left here.~
@@ -327,7 +327,7 @@ A
 13 10
 A
 4 5
-#500025
+#200025
 huge blood crystal~
 &+ra huge &+Rblood &+rcrystal&N~
 &+rJutting out of the ground, a huge &+Rblood crystal &+Lgrows here.~
@@ -339,7 +339,7 @@ E
 huge blood crystal~
    &+rThis heavy red crystal glows with an evil aura.
 ~
-#500026
+#200026
 wyvern egg~
 &+ya wyvern &+Wegg&N~
 &+yA wyvern &+Wegg &+yrests here in a thick wyvern nest.~
@@ -351,7 +351,7 @@ E
 wyvern egg~
    &+yThis large &+Wegg&+y looks ready to hatch at any minute.
 ~
-#500027
+#200027
 blood crystal wand~
 &+Ra blood cry&+rs&+Rt&+ral wand&N~
 &+RA blood crystal wand has been left here.~
@@ -363,7 +363,7 @@ E
 blood crystal wand~
    &+rThis blood crystal wand glows with a vampiric power.
 ~
-#500028
+#200028
 crumbling locket fire~
 &+Lthe &+wcrumbling &+Llocket of &+rfire&n~
 &+LAn &+wancient &+Llocket lies here, decaying in the winds of time.&n~
@@ -387,7 +387,7 @@ runes inscriptions~
 &+LUnite the four tokens and the book of tomorrows,
 &+LAnd the powerful &+mmy&+rst&+mic &+Lshall mend our sorrows...&n
 ~
-#500029
+#200029
 crumbling locket water~
 &+Lthe &+wcrumbling &+Llocket of &+bwater&n~
 &+LAn &+wancient &+Llocket lies here, decaying in the winds of time.&n~
@@ -411,7 +411,7 @@ runes inscriptions~
 &+LUnite the four tokens and the book of tomorrows,
 &+LAnd the powerful &+mmy&+rst&+mic &+Lshall mend our sorrows...&n
 ~
-#500030
+#200030
 crumbling locket earth~
 &+Lthe &+wcrumbling &+Llocket of &+yearth&n~
 &+LAn &+wancient &+Llocket lies here, decaying in the winds of time.&n~
@@ -435,7 +435,7 @@ runes inscriptions~
 &+LUnite the four tokens and the book of tomorrows,
 &+LAnd the powerful &+mmy&+rst&+mic &+Lshall mend our sorrows...&n
 ~
-#500031
+#200031
 crumbling locket fire~
 &+Lthe &+wcrumbling &+Llocket of &+Cair&n~
 &+LAn &+wancient &+Llocket lies here, decaying in the winds of time.&n~
@@ -459,7 +459,7 @@ runes inscriptions~
 &+LUnite the four tokens and the book of tomorrows,
 &+LAnd the powerful &+mmy&+rst&+mic &+Lshall mend our sorrows...&n
 ~
-#500032
+#200032
 strange powerful mystical book tomorrows~
 &+Lthe &+mmy&+rst&+mic&+ral &+Lbook of &+Ytommorrows&n~
 &+LA strange and powerful &+Ybook &+Llies here.&n~
@@ -467,7 +467,7 @@ strange powerful mystical book tomorrows~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500033
+#200033
 mystical sash netherworld~
 &+Lthe &+mmy&+rst&+mic&+ral &+Lsash of the Netherworld&n~
 &+LA really &+mpo&+rwe&+mrf&+rul &+Lsash lies here.&n~
@@ -479,7 +479,7 @@ A
 24 -5
 A
 23 -5
-#500034
+#200034
 mystical key~
 &+La &+mmy&+rst&+mic&+ral &+Lkey&n~
 &+LA strange looking &+mk&+re&+my &+lies here.&n~
@@ -487,7 +487,7 @@ mystical key~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500035
+#200035
 gnomish observatory~
 &+La &+RGn&+romi&+Rsh &+Lobservatory&n~
 &+LA &+RGn&+romi&+Rsh &+Lobservatory sits on the hill here, beckoning you to enter.&n~
@@ -511,7 +511,7 @@ runes inscriptions~
 &+LUnite the four tokens and the book of tomorrows,
 &+LAnd the powerful &+mmy&+rst&+mic &+Lshall mend our sorrows...&n
 ~
-#500036
+#200036
 impaled halfling~
 &+Lan &+rimpaled &+yhalfling&N~
 &+LThe &+Wbody &+Lof a &+yhalfling &+Lhangs &+rimpaled &+Lon a &+Cpike&+L, limbs dangling lifelessly.~
@@ -524,7 +524,7 @@ impaled halfling~
    &+yThe body of a dead halfling has been impaled onto a large minotaur war pike.  This
 &+ygesture of ruthless &+rbrutality &+ymay warn of danger ahead.
 ~
-#500037
+#200037
 huge sign~
 &+La &+W*HUGE* &+Lsign&N~
 &+LA &+W*HUGE* &+Lsign is posted at &+cClavados' Crossing&+L.~
@@ -546,7 +546,7 @@ huge sign~
 &+y       |   |
 &+g\&+G|&+g/----\&+G\\//&+g/---\&+G|&+g/|
 ~
-#500038
+#200038
 large sign~
 &+La large &+ysign&N~
 &+LA large &+ysign &+Lhas been posted here at this turning point.~
@@ -567,7 +567,7 @@ large sign~
 &+y      |     |
 &+g\\//\\//\\//\\//\\//
 ~
-#500039
+#200039
 sign~
 &+La &+csign&+L~
 &+cA small &+Lsign &+cis posted here at this roadway intersection.~
@@ -586,7 +586,7 @@ sign~
 &+y        |    |
 &+G\\//\\//\\//\\//\\//\\//
 ~
-#500040
+#200040
 snow-covered sign~
 &+La &+Wsnow-covered &+ysign&N~
 &+LA huge &+Wsnow-covered &+ysign &+Lis posted here at the &+Cfrozen &+Lcrossing.~
@@ -605,7 +605,7 @@ snow-covered sign~
 &+W           |   |
 &+G\\&+g//\\//\\//\\//\\//\\//\\&+G//
 ~
-#500041
+#200041
 old sign~
 &+Lan &+yold &+Lsign&N~
 &+LAn old &+ysign &+Lis posted here, partly &+Csheened &+Lby &+cfrost&+L.~
@@ -624,7 +624,7 @@ old sign~
 &+y         |   |
 &+G\\//\\//\\//\\//\\//\\//|
 ~
-#500042
+#200042
 frozen sign~
 &+Ca &+Wfrozen &+Csign&N~
 &+CA frozen &+Wsign &+Cis posted here at the &+Lhi&Ngh&+Lway &+Ccrossing&+L.~
@@ -644,7 +644,7 @@ frozen sign~
 &+C        |   |
 &+C\\&+G//&+C\\&+G//&+G\\&+C//&+G\\&+C//&+G\\&+C//&+G\\&+C//
 ~
-#500043
+#200043
 old sign~
 &+Lan &Nold &+ysign&N~
 &+LAn &Nold &+ysign &+Lis posted here&+g in the grass.~
@@ -662,7 +662,7 @@ old sign~
 &+y       |   |
 &+g\\//\\//\\//\\//\\//\\//
 ~
-#500044
+#200044
 sign small~
 &+ya small sign&N~
 &+yA small sign is posted here at the &+ggrassy &+yhighway intersection.~
@@ -685,7 +685,7 @@ sign small~
 &+y   |  |
 &+G\\//\\//\\//\\//
 ~
-#500045
+#200045
 sign~
 &+La &+ysign&N~
 &+gA small &+ysign &+ypokes out of a patch of &+govergrown grass.~
@@ -702,7 +702,7 @@ sign~
 &+y       |  |
 &+g\\//\\//\\//\\//\\/\\/
 ~
-#500046
+#200046
 frosty ring prophet~
 &+bthe &+CFrosty &+bring of the &+CProphet&n~
 &+bA &+Ccold &+bring lies here, chilling the floor.&n~
@@ -710,7 +710,7 @@ frosty ring prophet~
 8 15 3 0 7 0 1 3 64 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500047
+#200047
 head prophet fire~
 &+Lthe &+rhead &+Lof the &+RProphet &+rof &+RFire&n~
 &+LThe &+rhead &+Lof the &+RPropher &+rof &+RFire &+Lfloats here.&n~
@@ -722,7 +722,7 @@ A
 13 25
 A
 3 10
-#500048
+#200048
 head prophet ice~
 &+LThe &+bhead &+Lof the &+CProphet &+bof &+CIce&n~
 &+LThe &+bhead &+Lof the &+CProphet &+bof &+CIce &+Lfloats here.&n~
@@ -734,7 +734,7 @@ A
 13 25
 A
 3 10
-#500049
+#200049
 potion living flames~
 &+Lthe &+rpotion &+Lof &+Rliving &+rflames&n~
 &+LThe &+rpotion &+Lof &+Rliving &+rflames &+Llies here.&n~
@@ -742,7 +742,7 @@ potion living flames~
 10 15 3 0 7 0 0 16385 64 0 0
 52 492 144 0 0 0 0 0
 0 0 100
-#500050
+#200050
 potion blistering cold~
 &+Lthe &+bpotion &+Lof &+Cblistering &+bcold&n~
 &+LThe &+bpotion &+Lof &+Cblistering &+bcold &+Llies here.&n~
@@ -750,7 +750,7 @@ potion blistering cold~
 10 15 3 0 7 0 0 16385 64 0 0
 52 56 411 0 0 0 0 0
 0 0 100
-#500051
+#200051
 gnomish laboratory~
 &+La &+RGn&+romi&+Rsh &+LLaboratory&n~
 &+LA small &+RGn&+romi&+Rsh &+LLaboratory sits on this &+GSecluded Island&+L.&n~
@@ -758,7 +758,7 @@ gnomish laboratory~
 25 15 3 0 7 0 0 0 0 0 0
 98016 7 -1 0 0 0 0 0
 0 0 100
-#500052
+#200052
 small shabby hut~
 &+yA Small and Shabby &+gHut&n~
 &+yA Small and Shabby &+gHut &+ysits here.&n~
@@ -766,7 +766,7 @@ small shabby hut~
 25 5 3 0 7 0 0 0 0 0 0
 98017 7 -1 0 0 0 0 0
 0 0 100
-#500053
+#200053
 tundra hunter's necklace fangs~
 &+Ca tundra &+Chunter's &N&+ynecklace of &+Wfangs&N~
 &+cA tundra hunter's &N&+cnecklace of &+Wfangs&N has been left here.~
@@ -786,7 +786,7 @@ A
 19 2
 A
 14 16
-#500102
+#200054
 large chunk flamewood~
 &+ya large chunk of &+rfl&+Ra&+rme&+ywood&n~
 &+yA large chunk of &+rfl&+Ra&+rme&+ywood lies here.&n~
@@ -794,7 +794,7 @@ large chunk flamewood~
 13 6 3 0 7 0 8388617 1 64 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500103
+#200055
 large chunk spiritwood~
 &+ya large chunk of &+Wsp&+Cir&+Wit&+ywood&n~
 &+yA large chunk of &+Wsp&+Cir&+Wit&+ywood lies here.&n~
@@ -802,7 +802,7 @@ large chunk spiritwood~
 13 6 3 0 7 0 8388617 1 64 0 0
 0 0 0 0 0 0 0 0
 0 0 100
-#500104
+#200056
 bracelet bronze _id_~
 &+ya thick bronze bracelet&n~
 &+yA thick bronze bracelet lies here, glinting in the light.&n~
@@ -831,7 +831,7 @@ A
 3 4
 A
 13 6
-#500105
+#200057
 chainmail armor suit chain~
 &+ca suit of finely crafted dwarven chainmail&n~
 &+cA suit of chainmail lies here, discarded.&n~
@@ -848,7 +848,7 @@ A
 1 5
 A
 5 5
-#500106
+#200058
 shield embossed cross iron~
 &+can iron shield with an embossed &+Wcross&n~
 &+cAn iron shield lies here.&n~
@@ -865,7 +865,7 @@ A
 24 -2
 A
 4 5
-#500107
+#200059
 book prayer small~
 a small prayer book~
 A small prayer book lies here, discarded.~
@@ -882,7 +882,7 @@ A
 4 4
 A
 24 -1
-#500108
+#200060
 longsword sword long wicked black~
 &+La wicked black longsword&n~
 &+LA longsword lies here, wickedly curved.&n~
@@ -899,7 +899,7 @@ A
 18 2
 A
 19 2
-#500109
+#200061
 boots moss _id_~
 &+ga pair of moss-covered boots&n~
 &+gA pair of moss-covered boots lie here, discarded.&n~
@@ -927,7 +927,7 @@ A
 14 15
 A
 18 1
-#500110
+#200062
 gloves leather simple _id_~
 &+ya pair of simple leather gloves&n~
 &+yA pair of leather gloves lies here, discarded.&n~
@@ -953,7 +953,7 @@ A pair of &+ygloves of the monk&n are here.
 ~
 A
 19 1
-#500111
+#200063
 cloak bodycloak silken silk long~
 &+ma long silken bodycloak&n~
 &+mA long bodycloak lies here, discarded.&n~
@@ -970,7 +970,7 @@ A
 4 4
 A
 13 6
-#500112
+#200064
 sleeves horsehide horse hide short _id_~
 &+ya pair of short horsehide sleeves&n~
 &+yA pair of horsehide sleeves are here, discarded.&n~
@@ -999,7 +999,7 @@ A
 12 10
 A
 27 4
-#500113
+#200065
 ring black tiny _id_~
 &+La tiny black ring&n~
 &+LA tiny black ring is here, discarded.&n~
@@ -1027,7 +1027,7 @@ A
 17 -4
 A
 13 7
-#500114
+#200066
 loop tube twine hollow necklace _id_~
 &+ya &+chollow tube&+y on a loop of twine&n~
 &+yA &+chollow tube&+y on a loop of twine lies here, discarded.&n~
@@ -1056,7 +1056,7 @@ A
 18 1
 A
 3 2
-#500115
+#200067
 eyeglasses glasses gold rimmed~
 &+ca pair of &+Ygold-rimmed&+c eyeglasses&n~
 &+cA pair of eyeglasses lies here, discarded.&n~
@@ -1072,7 +1072,7 @@ A
 18 3
 A
 2 9
-#500116
+#200068
 dagger steel thin~
 &+ca thin steel dagger&n~
 &+cA steel dagger lies here, discarded.&n~
@@ -1088,7 +1088,7 @@ A
 19 2
 A
 18 1
-#500117
+#200069
 leggings shin guards wooden soot shinguards~
 &+ya pair of wooden shin guards covered with &+Lsoot&n~
 &+yA pair of wooden shin guards lie here.&n~
@@ -1105,7 +1105,7 @@ A
 14 10
 A
 26 3
-#500118
+#200070
 lyre wooden simple instrument~
 &+ya simple wooden lyre&n~
 &+yA wooden lyre lies here, discarded.&n~
@@ -1117,7 +1117,7 @@ E
 lyre wooden simple~
 &+cWith but three strings, this lyre is simple indeed.
 ~
-#500119
+#200071
 ale goblet golden~
 &+Ya golden goblet&n~
 &+YA golden goblet lies here.&n~
@@ -1132,7 +1132,7 @@ its own.
 ~
 A
 3 3
-#500120
+#200072
 robes black~
 &+La set of thick black robes&n~
 &+LSome black robes lie here.&n~
@@ -1149,7 +1149,7 @@ A
 17 -12
 A
 13 12
-#500121
+#200073
 staff stonewood _id_~
 &+Lan ancient stonewood staff&n~
 &+LAn ancient staff lies here.&n~
@@ -1177,7 +1177,7 @@ A
 24 -1
 A
 5 5
-#500122
+#200074
 dagger iron~
 &+can iron dagger&n~
 &+cAn iron dagger lies here.&n~
@@ -1191,7 +1191,7 @@ Small and sharp, this six-inch blade looks fairly deadly.
 ~
 A
 19 1
-#500123
+#200075
 bracer untapped power~
 &+cbracer&n of &+Luntapped&n &+Mpower&n~
 A &+cbracer&n of &+Luntapped&n &+Mpower&n lies here humming.~
