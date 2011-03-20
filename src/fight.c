@@ -3443,11 +3443,6 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
   /* Being berserked incurs more damage from spells. Ouch. */
   if(affected_by_spell(victim, SKILL_BERSERK))
   {
-// Mountain and duergar dwarves do not receive addition berserk damage from spells.
-    if((GET_RACE(ch) == RACE_DUERGAR) ||
-       GET_RACE(ch) == RACE_MOUNTAIN)
-    { }
-    else
     { // 110%
       dam *= dam_factor[DF_BERSERKSPELL];
     }
@@ -3466,7 +3461,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
     }
   }
 
-  // Lom: as I moved elementalist dam update here, so vamping(fire elemental fro mfire spell)
+  // Lom: as I moved elementalist dam update here, so vamping(fire elemental from fire spell)
   //      will be correctly increased as he does more dmg
   if(ELEMENTAL_DAM(type) &&
     GET_SPEC(ch, CLASS_SHAMAN, SPEC_ELEMENTALIST) &&
@@ -4048,21 +4043,21 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
         {
           if(GET_LEVEL(victim) >= 46)
           {
-            levelmod = 1.50;
+            levelmod = 1.75;
           }
           if(GET_LEVEL(victim) >= 51)
           {
-            levelmod = 2.0;
+            levelmod = 1.5;
           }
           if(GET_LEVEL(victim) >= 56)
           {
-            levelmod = 2.5;
+            levelmod = 1.25;
           }
-          dam = (int) (dam / levelmod);
+          dam = (int) (dam * levelmod);
         }  
         //dam *= get_property("damage.holy.increase.modifierVsUndead", 2.000);
         
-        if(levelmod < 2.5) // Message is not displayed versus level 56 and greater vampires.
+        if(GET_LEVEL(victim) < 56) // Message is not displayed versus level 56 and greater vampires.
         {
           act("$N&+W wavers in agony, as the positive energies purge $s undead essence!&n",
             FALSE, ch, 0, victim, TO_CHAR);
@@ -4092,7 +4087,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
       break;
     case SPLDAM_NEGATIVE:
       if (victim && IS_ANGEL(victim))
-        dam *= get_property("damage.neg.increase.modifierVsAngel", 1.300);
+        dam *= get_property("damage.neg.increase.modifierVsAngel", 1.500);
       if (IS_AFFECTED2(victim, AFF2_SOULSHIELD))
         dam *= dam_factor[DF_SLSHIELDINCREASE];
       if (IS_AFFECTED4(victim, AFF4_NEG_SHIELD))
@@ -5107,6 +5102,7 @@ void check_vamp(P_char ch, P_char victim, double fdam, uint flags)
     !IS_AFFECTED4(ch, AFF4_BATTLE_ECSTASY) &&
     IS_AFFECTED4(victim, AFF4_HOLY_SACRIFICE) &&
     (flags & RAWDAM_HOLYSAC) &&
+    !affected_by_spell(victim, SPELL_BMANTLE) &&
     !affected_by_spell(victim, SPELL_PLAGUE)) &&
     ((GOOD_RACE(victim) && !GOOD_RACE(ch)) ||
      (EVIL_RACE(victim) && !EVIL_RACE(ch))))
