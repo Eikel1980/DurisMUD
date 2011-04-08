@@ -27,6 +27,7 @@
 #include "range.h"
 #include "damage.h"
 #include "guildhall.h"
+#include "buildings.h"
 #include "nexus_stones.h"
 #include "map.h"
 
@@ -705,6 +706,7 @@ int platemail_of_defense(P_obj obj, P_char ch, int cmd, char *arg)
         act("$n's $q hums briefly.", TRUE, ch, obj, NULL, TO_ROOM);
         spell_stone_skin(60, ch, 0, 0, ch, NULL);
         obj->timer[0] = curr_time;
+        return TRUE;
       }
     }
   }
@@ -1354,7 +1356,7 @@ int purple_worm(P_char ch, P_char pl, int cmd, char *arg)
     {
       // swallow the bastard
       vict = ch->specials.fighting;
-      if (!IS_TRUSTED(vict) && !IS_ELITE(vict) && !IS_NEXUS_GUARDIAN(vict) && !IS_GH_GOLEM(vict) )
+      if (!IS_TRUSTED(vict) && !IS_ELITE(vict) && !IS_NEXUS_GUARDIAN(vict) && !IS_GH_GOLEM(vict) && !IS_OP_GOLEM(vict))
       {
         if (vict->in_room == ch->in_room)
         {

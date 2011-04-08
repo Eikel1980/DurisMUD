@@ -788,6 +788,9 @@ void disarm_obj_events(P_obj, event_func_type);
 void clear_char_events(P_char, int, void*);
 int ne_event_time(P_nevent);
 
+/* epic.c */
+int devotion_spell_check(int);
+
 
 /* fight.c */
 bool rapier_dirk(P_char, P_char);

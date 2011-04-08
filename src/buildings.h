@@ -32,6 +32,8 @@ using namespace std;
 #define OUTPOST_GATEGUARD_WAR    97801
 #define MAX_OUTPOST_GATEGUARDS   2
 
+#define IS_OP_GOLEM(ch) (IS_NPC(ch) && (GET_VNUM(ch) == OUTPOST_GATEGUARD_WAR))
+
 struct Building
 {
   Building();

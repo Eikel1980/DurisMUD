@@ -3517,57 +3517,6 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
     return DAM_NONEDEAD;
   }
 
-  /*
-  if(type == SPLDAM_NEGATIVE &&
-     IS_UNDEADRACE(ch) &&
-     IS_UNDEADRACE(victim))
-  {
-    act("&+LYour spell fails to injure&n $N.&n",
-      FALSE, ch, 0, victim, TO_CHAR);
-    return DAM_NONEDEAD;
-  }
-    
-// Lom: added self check to prevent heal self with negative spell damage
-  if(type == SPLDAM_NEGATIVE &&
-     ch != victim &&
-     IS_UNDEADRACE(victim))
-  {
-    act("$N&+L grins wickedly as $e absorbs your spell!&n",
-      FALSE, ch, 0, victim, TO_CHAR);
-    act("&+LYess! You can feel the evil energies flowing into your body...&n",
-      FALSE, ch, 0, victim, TO_VICT);
-    act("$N&+L grins wickedly as $e absorbs&n $n&+L's spell!&n",
-      FALSE, ch, 0, victim, TO_NOTVICT);
-    vamp(victim,  dam / 4, GET_MAX_HIT(victim) * 1.3);
-    return DAM_NONEDEAD;
-  }
-
-  if ((type == SPLDAM_HOLY ||
-       type == SPLDAM_LIGHTNING) &&
-      IS_ANGEL(ch) &&
-      IS_ANGEL(victim))
-  {
-    act("&+WYour spell fails to injure&n $N.&n",
-      FALSE, ch, 0, victim, TO_CHAR);
-    return DAM_NONEDEAD;
-  }
-
-  if ((type == SPLDAM_HOLY ||
-       type == SPLDAM_LIGHTNING) &&
-      ch != victim &&
-      IS_ANGEL(victim))
-  {
-    act("$N&+W grins wickedly as $e absorbs your spell!&n",
-      FALSE, ch, 0, victim, TO_CHAR);
-    act("&+WYess! You can feel the energies flowing into your body...&n",
-      FALSE, ch, 0, victim, TO_VICT);
-    act("$N&+W grins wickedly as $e absorbs&n $n&+L's spell!&n",
-      FALSE, ch, 0, victim, TO_NOTVICT);
-    vamp(victim,  dam / 4, GET_MAX_HIT(victim) * 1.3);
-    return DAM_NONEDEAD;
-  }
-  */
-
   // end of vamping(is non agro now)
   // Lom: I think should set memory here, before messages
   // Lom: also might put globe check prior damage messages
@@ -3628,8 +3577,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
   {
     /* deflection */
     if(IS_AFFECTED4(victim, AFF4_DEFLECT) &&
-      !IS_ILLITHID(ch) &&
-      IS_ALIVE(ch) )
+      IS_ALIVE(ch))
     {
       act("&+cA &+Ctranslucent&n&+c field &+Wflashes&n&+c around your body upon contact with&n $n&n&+c's assault, deflecting it back at $m!",
          FALSE, ch, 0, victim, TO_VICT);
@@ -3905,7 +3853,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
     case SPLDAM_FIRE:
       if ( IS_AFFECTED4(victim, AFF4_ICE_AURA) )
       {
-        act("&+rYour fiery spell causes&n $N &+rsmolder and spasm in pain!&n",
+        act("&+rYour fiery spell causes&n $N to &+rsmolder and spasm in pain!&n",
            TRUE, ch, 0, victim, TO_CHAR);
         act("$n's &+fiery spell causes you smolder and spasm in pain!&n",
            TRUE, ch, 0, victim, TO_VICT);
@@ -4873,6 +4821,10 @@ void check_vamp(P_char ch, P_char victim, double fdam, uint flags)
   if(affected_by_spell(victim, SPELL_NEG_ENERGY_BARRIER))
     return;
       
+// So does not being alive!
+  if(GET_RACE(victim) == RACE_CONSTRUCT)
+    return;
+
   if(flags & SPLDAM_NOVAMP)
     return;
   
@@ -5213,7 +5165,7 @@ int raw_damage(P_char ch, P_char victim, double dam, uint flags,
         return DAM_NONEDEAD;
       }
       
-      justice_witness(ch, victim, CRIME_ATT_MURDER);
+      //justice_witness(ch, victim, CRIME_ATT_MURDER);
 
       if(victim->following == ch)
       {
@@ -5925,7 +5877,8 @@ bool monk_critic(P_char ch, P_char victim)
   if(!(ch) ||
      !IS_ALIVE(ch) ||
      !(victim) ||
-     !IS_ALIVE(victim))
+     !IS_ALIVE(victim) ||
+     IS_CONSTRUCT(victim))
         return false;
 
   if(GET_SPEC(ch, CLASS_MONK, SPEC_WAYOFSNAKE) ||
@@ -6109,6 +6062,9 @@ int anatomy_strike(P_char ch, P_char victim, int msg, struct damage_messages *me
   memset(&af, 0, sizeof(af));
   af.type = SKILL_ANATOMY;
   af.flags = AFFTYPE_NOSHOW | AFFTYPE_NODISPEL | AFFTYPE_SHORT;
+
+  if(IS_CONSTRUCT(victim))
+    goto regular;
 
   switch(number(0, 6))
   {
@@ -6546,7 +6502,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     gvict = grapple_attack_check(victim);
     if (gvict && (gvict != ch))
     {
-      chance = grapple_attack_chance(ch, gvict, 0);
+      chance = grapple_misfire_chance(ch, gvict, 0);
       if (number(1, 100) <= chance)
       {
         victim = gvict;
@@ -6608,7 +6564,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   }
 
   if (!weapon && affected_by_spell(ch, SPELL_VAMPIRIC_TOUCH) &&
-      !IS_UNDEADRACE(victim) && !NewSaves(victim, SAVING_PARA, 0))
+      !IS_UNDEADRACE(victim) && !IS_CONSTRUCT(victim) && !NewSaves(victim, SAVING_PARA, 0))
   {
     act("You touch $N with your bare hands, draining $S life force.",
         FALSE, ch, 0, victim, TO_CHAR);
@@ -6637,29 +6593,26 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     if (GET_CHAR_SKILL(victim, SKILL_INDOMITABLE_RAGE) > number(50, 160) &&
       affected_by_spell(victim, SKILL_BERSERK))
     {
-      act("The critical hit sends you into a pure berserk trance! &+RROARRRRRRR!&n\n", TRUE, ch,
+      act("$n&+W's critical hit sends you into a &+rpure &+Rberserk &+rtrance! &+RROARRRRRRR!&n\n", TRUE, ch,
             0, victim, TO_VICT);
       act("$N lets out a fearsome &+RROAR&n!\n", TRUE, ch, 0, victim, TO_CHAR);
       sic = 0;
-      if (!fear_check(ch) &&
-            NewSaves(ch, SAVING_FEAR, 0))
-      //do_flee(ch, 0, 0);
-            bzero(&ir, sizeof(ir));
+
+      bzero(&ir, sizeof(ir));
       ir.type = SKILL_INDOMITABLE_RAGE;
       ir.duration = 5;
       ir.flags = AFFTYPE_SHORT;
       //hitroll
-      ir.modifier = -20;
+      ir.modifier = 5;
       ir.location = APPLY_HITROLL;
         affect_to_char(ch, &ir);
       //damroll
-      ir.modifier = -20;
+      ir.modifier = 5;
       ir.location = APPLY_DAMROLL;
         affect_to_char(ch, &ir);
       //save fear
-      ir.modifier = 20;
+      ir.modifier = -5;
       ir.location = APPLY_SAVING_FEAR;
-      
       affect_to_char(ch, &ir);
     }
   }
@@ -6685,14 +6638,15 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     critical_attack(ch, victim, msg);
   }
 
-  if (has_innate(ch, INNATE_BATTLE_FRENZY) && !number(0, 20))
+  if (has_innate(ch, INNATE_BATTLE_FRENZY) && !number(0, 20) && IS_HUMANOID(victim))
     if (battle_frenzy(ch, victim) != DAM_NONEDEAD)
       return FALSE;
 
   if(GET_CHAR_SKILL(ch, SKILL_VICIOUS_ATTACK) > 0 &&
     !affected_by_spell(ch, SKILL_WHIRLWIND) &&
     !vicious_hit &&
-    GET_POS(ch) == POS_STANDING)
+    GET_POS(ch) == POS_STANDING &&
+    !GET_RACE(victim) == RACE_CONSTRUCT)
   {
     if(notch_skill(ch, SKILL_VICIOUS_ATTACK,
                     get_property("skill.notch.offensive.auto", 100)) ||
@@ -6724,7 +6678,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     dam = dice(ch->points.damnodice, ch->points.damsizedice);
   }
   else
-    dam = number(0, 2);         /* 1d3 - 1 dam with bare hands */
+    dam = number(1, 4);         /* 1d4 dam with bare hands */
 
   if (weapon)
   {
@@ -6745,11 +6699,11 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
 
   if (sic == -1 && GET_CHAR_SKILL(ch, SKILL_DEVASTATING_CRITICAL) > devcrit)
   {
-    dam = (int) ((float) dam * ((float) number(4, 7) / 1.5));
+    dam = (int) (dam * 2.5);
   }
   else if (sic == -1)
   {
-    dam = (int) ((float) dam * ((float) number(4, 7) / 2.00));
+    dam = (int) (dam * 2.0);
   }
 
   if(GET_CLASS(ch, CLASS_MONK) &&
@@ -6772,11 +6726,10 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     }
   }
 
-  // low weapon skill affects damage - used to be offense skill check
-  if(sic != -1 &&
-    wpn_skill < number(1, 101))
+  // Weapon skill check, used to be offense.
+  if(sic != -1)
   {
-    dam = (int) (dam * number(3, 10) / 10);
+    dam = (int) (dam * (wpn_skill / 100)); // maxes at .95 mod
   }
   
   if (has_divine_force(ch))
@@ -6800,7 +6753,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     
     if(IS_NPC(ch) &&
        IS_ELITE(ch))
-          vs_skill += 100;
+          vs_skill += number(25, 100);
   }
   if (vs_skill > 0 &&
       (notch_skill(ch, SKILL_VICIOUS_STRIKE,
@@ -6813,7 +6766,9 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
              * GET_CHAR_SKILL(ch, SKILL_VICIOUS_STRIKE);
     }
     else if(IS_ELITE(ch))
-      dam += GET_LEVEL(ch) * 2;
+      dam += (int) GET_LEVEL(ch) * 1.5;
+    else if(IS_GREATER_RACE(ch))
+      dam += GET_LEVEL(ch) * 1.25;
     else if(IS_NPC(ch))
       dam += GET_LEVEL(ch);
 
@@ -6935,15 +6890,14 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     do_stand(victim, 0, 0);
   }
 
-  if( reaver_hit_proc(ch, victim, weapon) )
+  if(reaver_hit_proc(ch, victim, weapon))
     return true;
 
   if (affected_by_spell(ch, SPELL_DREAD_BLADE) && dread_blade_proc(ch, victim))
     return true;
 
   blade_skill = GET_CLASS(ch, CLASS_AVENGER) ? SKILL_HOLY_BLADE : SKILL_TAINTED_BLADE;
-  if (notch_skill(ch, blade_skill,
-                  get_property("skill.notch.offensive.auto", 100)) ||
+  if (notch_skill(ch, blade_skill, get_property("skill.notch.offensive.auto", 100)) ||
       (GET_CHAR_SKILL(ch, blade_skill) > number(1, 100) &&
        !number(0, 40))) {
     if (tainted_blade(ch, victim))
@@ -7479,11 +7433,11 @@ int dodgeSucceed(P_char char_dodger, P_char attacker, P_obj wpn)
   percent += (int) (load_modifier(attacker) / 100);
 
   // Drows receive special dodge bonus now based on level.
-  // Level 56 drow has 10% innate dodge. Weight will negative this bonus.
+  // Level 56 drow has 10% innate dodge.  Excessive weight will negate this bonus.
   if(GET_RACE(char_dodger) == RACE_DROW &&
      !IS_STUNNED(char_dodger) &&
      ((int) (load_modifier(char_dodger) / 100) < 50) &&
-     GET_LEVEL(char_dodger) >= number(1, 560))
+     !number(0, 10))
   {
     //debug("Drow dodge (%s).", GET_NAME(char_dodger));
   }
@@ -8286,7 +8240,8 @@ int calculate_attacks(P_char ch, int attacks[])
       ADD_ATTACK(PRIMARY_WEAPON);
   }
 
-  if (affected_by_spell(ch, SPELL_KANCHELSIS_FURY))
+  // This is a reaver-only bonus, as it goddamned should have been originally
+  if (affected_by_spell(ch, SPELL_KANCHELSIS_FURY) && GET_CLASS(ch, CLASS_REAVER))
   {
     ADD_ATTACK(PRIMARY_WEAPON);
 
@@ -8728,7 +8683,7 @@ int pv_common(P_char ch, P_char opponent, const P_obj wpn)
         leapSucceed(opponent, ch) ||
         MonkRiposte(opponent, ch, wpn)))
       {
-        justice_witness(ch, opponent, CRIME_ATT_MURDER);
+        //justice_witness(ch, opponent, CRIME_ATT_MURDER);
         return false;
       }
     }
@@ -8967,14 +8922,17 @@ bool fear_check(P_char ch)
   if(!(ch) ||
     !IS_ALIVE(ch))
   {
-    return true;
+    return TRUE;
   }
+
+  if(IS_CONSTRUCT(ch))
+    return FALSE;
 
   if(affected_by_spell(ch, SPELL_INDOMITABILITY))
   {
     act("&+WBeing blessed by protective spirits, you manage to withstand the fear.", FALSE, ch, 0, 0, TO_CHAR);
     act("&+WBeing blessed by protective spirits, $n&+W manages to withstand the fear.", FALSE, ch, 0, 0, TO_ROOM);
-    return true;
+    return TRUE;
   }
 
   if(IS_SET(ch->specials.act, ACT_ELITE) ||
@@ -8982,7 +8940,7 @@ bool fear_check(P_char ch)
   {
     act("&+WYou are simply fearless!", FALSE, ch, 0, 0, TO_CHAR);
     act("&+W$n&+W is simply fearless!", FALSE, ch, 0, 0, TO_ROOM);
-    return true;
+    return TRUE;
   }
 
   if(GET_CHAR_SKILL(ch, SKILL_INDOMITABLE_RAGE) > number(1, 150) &&
@@ -8990,14 +8948,14 @@ bool fear_check(P_char ch)
   {
     act("&+RWhat, and miss out on the glorious bloodbath? I think not....&n", FALSE, ch, 0, 0, TO_CHAR);
     act("&+R$n&+R snivels derisively for a moment, too caught up in his rage to acknowledge fear itself!&n", FALSE, ch, 0, 0, TO_ROOM);
-    return true;
+    return TRUE;
   }
   
   if(GET_CLASS(ch, CLASS_DREADLORD))
   {
     act("&+LBeing fear incarnate, you laugh derisively at the attempt to scare you into submission!&n", FALSE, ch, 0, 0, TO_CHAR);
     act("&+LThe fearful visage has no affect on $n&+L!&n", FALSE, ch, 0, 0, TO_ROOM);
-    return true;
+    return TRUE;
   }
 
   if(IS_GREATER_RACE(ch) &&
@@ -9005,10 +8963,10 @@ bool fear_check(P_char ch)
   {
     act("&+yFear is for the weak willed... which you are not!&n",
       FALSE, ch, 0, 0, TO_CHAR);
-    return true;
+    return TRUE;
   }
   
-  return false;
+  return FALSE;
 }
 
 bool critical_attack(P_char ch, P_char victim, int msg)
@@ -9021,9 +8979,10 @@ bool critical_attack(P_char ch, P_char victim, int msg)
   if(!(ch) ||
      !(victim) ||
      !IS_ALIVE(ch) ||
-     !IS_ALIVE(victim))
+     !IS_ALIVE(victim) ||
+     GET_RACE(victim) == RACE_CONSTRUCT)
   {
-    return false;
+    return FALSE;
   }
   
   random = number(0, 3);

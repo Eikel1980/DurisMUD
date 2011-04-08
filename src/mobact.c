@@ -36,6 +36,7 @@
 #include "map.h"
 #include "profile.h"
 #include "guildhall.h"
+#include "buildings.h"
 
 /*
  * external variables
@@ -5233,7 +5234,8 @@ void StompAttack(P_char ch)
       continue;
     }
     
-    if(IS_GH_GOLEM(tch) ||
+    if(IS_OP_GOLEM(tch) ||
+       IS_GH_GOLEM(tch) ||
        IS_NEXUS_GUARDIAN(tch) || 
        IS_ELITE(tch) || 
        IS_IMMATERIAL(tch) ||
@@ -5336,7 +5338,8 @@ void SweepAttack(P_char ch)
       continue;
     }
     
-    if(IS_GH_GOLEM(tch) ||
+    if(IS_OP_GOLEM(tch) ||
+       IS_GH_GOLEM(tch) ||
        IS_NEXUS_GUARDIAN(tch) || 
        IS_ELITE(tch) || 
        IS_IMMATERIAL(tch) ||
@@ -10269,7 +10272,7 @@ void remember(P_char ch, P_char victim, bool check_group_remember)
   }
 
   /* don't let golems aggro their own guildees */
-  if( IS_GH_GOLEM(ch) && (GET_A_NUM(ch) == GET_A_NUM(victim)) )
+  if((IS_OP_GOLEM(ch) || IS_GH_GOLEM(ch)) && (GET_A_NUM(ch) == GET_A_NUM(victim)))
   {
     return;
   }

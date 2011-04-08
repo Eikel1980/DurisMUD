@@ -1029,7 +1029,7 @@ int epic_stone(P_obj obj, P_char ch, int cmd, char *arg)
     act("You touch $p.", FALSE, ch, obj, 0, TO_CHAR);
 
     act("$p begins to vibrate madly, shaking the entire room\n"
-        "and almost knocking you off your feet!\n"
+        "almost knocking you off your feet!\n"
         "Suddenly, a huge storm of &+Bblue energy&n erupts from it!", FALSE, ch, obj, 0, TO_ROOM);
 
     if( zone_number )
@@ -1619,10 +1619,9 @@ void epic_initialization()
 // 8    2    2
 
 
-int devotion_check(P_char ch)
+int devotion_skill_check(P_char ch)
 {
-  int dev_power =
-    (GET_CHAR_SKILL(ch, SKILL_DEVOTION) - 40)/10 - number(0,50);
+  int dev_power = (GET_CHAR_SKILL(ch, SKILL_DEVOTION) - 40)/10 - number(0,50);
 
   if( dev_power <= 0 ) return 0;
 
@@ -1647,6 +1646,31 @@ int devotion_check(P_char ch)
   return 10 * dev_power;
 }
 
+int devotion_spell_check(int spell)
+{
+  switch(spell)
+  {
+    case SPELL_FLAMESTRIKE:
+    case SPELL_APOCALYPSE:
+    case SPELL_JUDGEMENT:
+    case SPELL_FULL_HARM:
+    case SPELL_HARM:
+    case SPELL_CAUSE_LIGHT:
+    case SPELL_CAUSE_SERIOUS:
+    case SPELL_CAUSE_CRITICAL:
+    case SPELL_DESTROY_UNDEAD:
+    case SPELL_HOLY_WORD:
+    case SPELL_UNHOLY_WORD:
+    case SPELL_EARTHQUAKE:
+    case SPELL_TURN_UNDEAD:
+    case SPELL_BANISH:
+      return TRUE;
+    default:
+      return FALSE;
+  }
+
+  return FALSE;
+}
 
 int stat_shops(int room, P_char ch, int cmd, char *arg)
 {
@@ -1914,7 +1938,7 @@ int chant_mastery_bonus(P_char ch, int dura)
         chant_bonus == 0 ? "&+WSparkling&n" :
         chant_bonus == 1 ? "&+WSparkling" : "&+WSp&+Cark&+Wli&+Cn&+Wg");
     act(buffer, FALSE, ch, 0, 0, TO_CHAR);
-    sprintf(buffer, "%s magic surrounds $n as $e begins $s chant.&n",
+    sprintf(buffer, "%s magic surrounds $n &+Was $e begins $s chant.&n",
         chant_bonus == 0 ? "&+WSparkling&n" :
         chant_bonus == 1 ? "&+WSparkling" : "&+WSp&+Cark&+Wli&+Cn&+Wg");
     act(buffer, FALSE, ch, 0, 0, TO_ROOM);

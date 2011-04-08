@@ -2477,7 +2477,8 @@ char    *PERS(P_char ch, P_char vict, int short_d, bool noansi)
            (GET_DISGUISE_RACE(ch) == RACE_PILLITHID) ||
 	   (GET_DISGUISE_RACE(ch) == RACE_ORC) ||
            (GET_DISGUISE_RACE(ch) == RACE_OGRE) ||
-           (GET_DISGUISE_RACE(ch) == RACE_AGATHINON)) ? "An" : "A",
+           (GET_DISGUISE_RACE(ch) == RACE_AGATHINON) ||
+           (GET_DISGUISE_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
           race_names_table[GET_DISGUISE_RACE(ch)].ansi);
     }
     else if (IS_DISGUISE_NPC(ch))
@@ -2494,7 +2495,8 @@ char    *PERS(P_char ch, P_char vict, int short_d, bool noansi)
            (GET_RACE(ch) == RACE_ORC) ||
            (GET_RACE(ch) == RACE_OROG) ||
            (GET_RACE(ch) == RACE_OGRE) ||
-           (GET_RACE(ch) == RACE_AGATHINON)) ? "An" : "A",
+           (GET_RACE(ch) == RACE_AGATHINON) ||
+           (GET_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
           race_names_table[GET_RACE(ch)].ansi);
     }
     return GS_buf1;
@@ -2527,7 +2529,8 @@ char    *PERS(P_char ch, P_char vict, int short_d, bool noansi)
 	     (GET_RACE(ch) == RACE_ORC) ||
 	     (GET_RACE(ch) == RACE_OROG) ||
              (GET_RACE(ch) == RACE_OGRE) ||
-             (GET_RACE(ch) == RACE_AGATHINON)) ? "An" : "A",
+             (GET_RACE(ch) == RACE_AGATHINON) ||
+             (GET_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
             race_names_table[GET_RACE(ch)].ansi);
         return (GS_buf1);
       }
@@ -2566,7 +2569,8 @@ char    *PERS(P_char ch, P_char vict, int short_d, bool noansi)
          (GET_RACE(ch) == RACE_ORC) ||
          (GET_RACE(ch) == RACE_OROG) ||
          (GET_RACE(ch) == RACE_OGRE) ||
-         (GET_RACE(ch) == RACE_AGATHINON)) ? "An" : "A",
+         (GET_RACE(ch) == RACE_AGATHINON) ||
+         (GET_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
         race_names_table[GET_RACE(ch)].ansi);
     return GS_buf1;
   }
@@ -2991,7 +2995,6 @@ char racewar(P_char viewer, P_char viewee)
   {
     if (IS_DISGUISE_NPC(viewee))
     {
-      logit(LOG_DEBUG, "Utility.c in racewar(): IS_DIGUISED_NPC -> (%s) in (%d) -- backtracing crash from 3/24", GET_NAME(viewee), world[viewee->in_room].number);
       return FALSE;
     }
     if (GET_RACEWAR(viewer) == viewee->disguise.racewar)
@@ -3490,7 +3493,8 @@ void generate_desc(P_char ch)
 
   if ((GET_RACE(ch) == RACE_ORC) || (GET_RACE(ch) == RACE_OGRE) ||
       (GET_RACE(ch) == RACE_OROG) || (GET_RACE(ch) == RACE_ILLITHID) ||
-      (GET_RACE(ch) == RACE_AGATHINON) || (GET_RACE(ch) == RACE_PILLITHID))
+      (GET_RACE(ch) == RACE_AGATHINON) || (GET_RACE(ch) == RACE_PILLITHID) ||
+      (GET_RACE(ch) == RACE_ELADRIN))
   {
     prep = "An";
   }
