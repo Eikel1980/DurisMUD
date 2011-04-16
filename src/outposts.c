@@ -1341,7 +1341,8 @@ int outpost_gateguard_proc(P_char ch, P_char pl, int cmd, char *arg)
     return FALSE;
   }
   
-  if (cmd == CMD_GOTHIT || cmd == CMD_GOTNUKED)
+  if (get_outpost_meurtriere(building) &&
+      (cmd == CMD_GOTHIT || cmd == CMD_GOTNUKED))
   {
     // throw some percentages around and attack the room, we can't very well
     // judge where we throw oil down the murder hole can we?
