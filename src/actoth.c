@@ -3817,7 +3817,7 @@ void show_toggles(P_char ch)
           ONOFF(PLR2_FLAGGED(ch, PLR2_LGROUP)),
           ONOFF(PLR2_FLAGGED(ch, PLR2_SPEC)),
           ONOFF(PLR2_FLAGGED(ch, PLR2_WEBINFO)),
-	  ONOFF(PLR2_FLAGGED(ch, PLR2_SHOW_QUEST))
+	  ONOFF(PLR2_FLAGGED(ch, PLR2_SHOW_QUEST)),
 	  ONOFF(PLR2_FLAGGED(ch, PLR2_NEWBIEEQ)));
   send_to_char(Gbuf1, send_ch);
 
