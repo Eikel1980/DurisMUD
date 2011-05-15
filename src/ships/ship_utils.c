@@ -360,6 +360,7 @@ P_ship get_ship_from_char(P_char ch)
   return NULL;
 }
 
+
 int num_people_in_ship(P_ship ship)
 {
   int      i, num = 0;
