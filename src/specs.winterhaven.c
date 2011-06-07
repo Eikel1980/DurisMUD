@@ -243,11 +243,11 @@ int storm_legplates(P_obj obj, P_char ch, int cmd, char *arg)
       data = (struct proc_data *) arg;
       vict = data->victim;
 
-      act("$q &+wsizzles with &+Yenergy &+was $N tries to hit you.&n", TRUE, ch, obj, NULL, TO_CHAR);
+      act("$q &+wsizzles with &+Yenergy &+was $N tries to hit you.&n", TRUE, ch, obj, vict, TO_CHAR);
 
-      act("$q &+wsizzles with &+Yenergy &+was you try to hit $n.&n", TRUE, ch, obj, NULL, TO_VICT);
+      act("$q &+wsizzles with &+Yenergy &+was you try to hit $n.&n", TRUE, ch, obj, vict, TO_VICT);
 
-      act("$q &+wsizzles with &+Yenergy &+was $N &+wtries to hit $n&+w.&n", TRUE, ch, obj, NULL, TO_NOTVICT);
+      act("$q &+wsizzles with &+Yenergy &+was $N &+wtries to hit $n&+w.&n", TRUE, ch, obj, vict, TO_NOTVICT);
 
       spell_lightning_bolt(50, ch, 0, SPELL_TYPE_SPELL, vict, 0);
       spell_lightning_bolt(50, ch, 0, SPELL_TYPE_SPELL, vict, 0);
@@ -3882,11 +3882,11 @@ int damnation_staff(P_obj obj, P_char ch, int cmd, char *arg)
     data = (struct proc_data *) arg;
     vict = data->victim;
 
-    act("&+LYour $q &+mflares &+rbril&+Rli&+rantly &+Las it intercepts &n$N's &+Lattack and &+rsav&+Rag&+rely &+Lstrikes back!&n", TRUE, ch, obj, NULL, TO_CHAR);
+    act("&+LYour $q &+mflares &+rbril&+Rli&+rantly &+Las it intercepts &n$N's &+Lattack and &+rsav&+Rag&+rely &+Lstrikes back!&n", TRUE, ch, obj, vict, TO_CHAR);
 
-    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las it intercepts &nyour &+Lattack and &+rsav&+Rag&+rely &+Lstrikes back!&n", TRUE, ch, obj, NULL, TO_VICT);
+    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las it intercepts &nyour &+Lattack and &+rsav&+Rag&+rely &+Lstrikes back!&n", TRUE, ch, obj, vict, TO_VICT);
 
-    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las it intercepts &n$N's &+Lattack and &+rsav&+Rag&+rely &+Lstrikes back!&n", TRUE, ch, obj, NULL, TO_NOTVICT);
+    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las it intercepts &n$N's &+Lattack and &+rsav&+Rag&+rely &+Lstrikes back!&n", TRUE, ch, obj, vict, TO_NOTVICT);
 
     switch(number(0,2))
     {
@@ -3960,11 +3960,11 @@ int nuke_damnation(P_obj obj, P_char ch, int cmd, char *arg)
     data = (struct proc_data *) arg;
     vict = data->victim;
 
-    act("&+LYour $q &+mflares &+rbril&+Rli&+rantly &+Las &n$N's &+Lspell is tranformed and deflected!&n", TRUE, ch, obj, NULL, TO_CHAR);
+    act("&+LYour $q &+mflares &+rbril&+Rli&+rantly &+Las &n$N's &+Lspell is tranformed and deflected!&n", TRUE, ch, obj, vict, TO_CHAR);
 
-    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las your spell is tranformed and deflected back at you!&n", TRUE, ch, obj, NULL, TO_VICT);
+    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las your spell is tranformed and deflected back at you!&n", TRUE, ch, obj, vict, TO_VICT);
 
-    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las &n$N's &+Lspell is tranformed and deflected!&n", TRUE, ch, obj, NULL, TO_NOTVICT);
+    act("$n's $q &+mflares &+rbril&+Rli&+rantly &+Las &n$N's &+Lspell is tranformed and deflected!&n", TRUE, ch, obj, vict, TO_NOTVICT);
 
     switch(number(0,1))
     {
@@ -3987,7 +3987,7 @@ int nuke_damnation(P_obj obj, P_char ch, int cmd, char *arg)
 int collar_frost(P_obj obj, P_char ch, int cmd, char *arg)
 {
   int      curr_time;
-  P_char   icemental;
+  P_char   icemental = NULL;
   int      i, j, sum, elesize, chance;
 
   if (cmd == CMD_SET_PERIODIC)
@@ -4019,13 +4019,10 @@ int collar_frost(P_obj obj, P_char ch, int cmd, char *arg)
 
         elesize = number(1, 100);        //raise to 100 if you want spec pets to occur
 
-        if (elesize > 94)
-        {
-          if (!IS_TRUSTED(ch) && (!can_conjure_greater_elem(ch, GET_LEVEL(ch))))
-            elesize = 90;
-          else
-          {
-
+        if (can_conjure_greater_elem(ch, GET_LEVEL(ch)))
+	{
+	  if (elesize > 94)
+	  {
             act("You whisper '&+bFr&+Co&+bst&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
             act("&+cEnormous crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
 
@@ -4034,14 +4031,8 @@ int collar_frost(P_obj obj, P_char ch, int cmd, char *arg)
 
             icemental = read_mobile(1160, VIRTUAL);
           }
-        }
-        else if (elesize > 89)
-        {
-          if (!IS_TRUSTED(ch) &&
-              (!can_conjure_greater_elem(ch, GET_LEVEL(ch))))
-            elesize = 90;
-          else
-          {
+	  else if (elesize > 89)
+	  {
             act("You whisper '&+bFr&+Co&+bst&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
             act("&+cEnormous crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
 
@@ -4050,14 +4041,8 @@ int collar_frost(P_obj obj, P_char ch, int cmd, char *arg)
 
             icemental = read_mobile(1159, VIRTUAL);
           }
-        }
-        else if (elesize > 70)
-        {
-          if (!IS_TRUSTED(ch) &&
-              (!can_conjure_greater_elem(ch, GET_LEVEL(ch))))
-            elesize = 90;
-          else
-          {
+	  else if (elesize > 70)
+	  {
             act("You whisper '&+bFr&+Co&+bst&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
             act("&+cLarge crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
 
@@ -4066,27 +4051,18 @@ int collar_frost(P_obj obj, P_char ch, int cmd, char *arg)
 
             icemental = read_mobile(1158, VIRTUAL);
           }
-        }
+	}
 
         if (elesize <= 70)
         {
-          if (!IS_TRUSTED(ch) && (!can_conjure_lesser_elem(ch, GET_LEVEL(ch))))
-          {
-            act("&nYour $q &+bhu&+Cms &nbriefly...&N", FALSE, ch, obj, obj, TO_CHAR);
-            act("&n$n's $q &+bhu&+Cms &nbriefly...&N", FALSE, ch, obj, obj, TO_ROOM);
-            return FALSE;
-          }
-          else
-          {
-            act("You whisper '&+bFr&+Co&+bst&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
-            act("&+cSmall crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
+	  act("You whisper '&+bFr&+Co&+bst&n' to your $q...", FALSE, ch, obj, 0, TO_CHAR);
+	  act("&+cSmall crystals of &+Cice &+cstart forming and condensing into the form of an elemental.&n", FALSE, ch, obj, obj, TO_CHAR);
 
-            act("$n whispers '&+bFr&+Co&+bst&n' to $q...&N", TRUE, ch, obj, NULL, TO_ROOM);
-            act("&+cSmall crystals of &+Cice &+cstart forming and condensing into the form of an elemental.", FALSE, ch, obj, obj, TO_ROOM);
+	  act("$n whispers '&+bFr&+Co&+bst&n' to $q...&N", TRUE, ch, obj, NULL, TO_ROOM);
+	  act("&+cSmall crystals of &+Cice &+cstart forming and condensing into the form of an elemental.", FALSE, ch, obj, obj, TO_ROOM);
 
-            icemental = read_mobile(1157, VIRTUAL);
-          }
-        }
+	  icemental = read_mobile(1157, VIRTUAL);
+	}
 
         if (!(icemental) ||
               icemental == NULL ||
@@ -4146,7 +4122,7 @@ int collar_frost(P_obj obj, P_char ch, int cmd, char *arg)
 int collar_flames(P_obj obj, P_char ch, int cmd, char *arg)
 {
   int      curr_time;
-  P_char   firemental;
+  P_char   firemental = NULL;
   int      i, j, sum, elesize, chance;
 
   if (cmd == CMD_SET_PERIODIC)

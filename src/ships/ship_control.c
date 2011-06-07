@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 #include "comm.h"
 #include "db.h"
@@ -14,6 +15,7 @@
 #include "ship_auto.h"
 #include "ship_npc.h"
 #include "ship_npc_ai.h"
+#include "ctf.h"
 
 extern char buf[MAX_STRING_LENGTH];
 extern char arg1[MAX_STRING_LENGTH];
@@ -378,6 +380,30 @@ int order_heading(P_char ch, P_ship ship, char* arg)
     return TRUE;
 }
 
+int carrying_flag(P_ship ship)
+{
+  int i;
+  P_char ch;
+  P_obj obj;
+
+  for (i = 0; i < ship->room_count; i++)
+  {
+    for (obj = world[real_room0(ship->room[i].roomnum)].contents; obj; obj = obj->next_content)
+    {
+      if (GET_OBJ_VNUM(obj) == 790 ||
+	  GET_OBJ_VNUM(obj) == 791 ||
+	  GET_OBJ_VNUM(obj) == 792)
+	return TRUE;
+    }
+    for (ch = world[real_room0(ship->room[i].roomnum)].people; ch; ch = ch->next_in_room)
+    {
+      if (ctf_carrying_flag(ch))
+	return TRUE;
+    }
+  }
+  return 0;
+}
+
 int order_speed(P_char ch, P_ship ship, char* arg)
 {
     int      speed;
@@ -441,6 +467,15 @@ int order_speed(P_char ch, P_ship ship, char* arg)
             send_to_char_f(ch, "Please enter a number value between %3d-%-d.\r\n", 0, ship->get_maxspeed());
         }
     }
+
+#if (1)
+    if (carrying_flag(ship))
+    {
+      ship->setspeed = ship->setspeed-(int)pow((double)(ship->setspeed/12), 2);
+      act_to_all_in_ship_f(ship, "Speed reduced to &+W%d&N because it's carrying a CTF flag.", ship->setspeed);
+    }
+#endif
+
     return TRUE;
 }
 

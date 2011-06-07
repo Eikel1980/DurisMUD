@@ -1263,7 +1263,7 @@ void justice_guard_remove(P_char ch)
 {
   struct justice_guard_list *gl;
 
-  if (IS_PC(ch) || (!IS_SET(ch->only.npc->spec[2], MOB_SPEC_JUSTICE)))
+  if (IS_PC(ch) || !ch->only.npc || (!IS_SET(ch->only.npc->spec[2], MOB_SPEC_JUSTICE)))
     return;
 
   /* if I'm hunting anyone, I should stop now :) */
