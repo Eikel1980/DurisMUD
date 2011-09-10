@@ -2037,6 +2037,12 @@ void do_epic(P_char ch, char *arg, int cmd)
     return;
   }
 
+  if( !str_cmp("share", buff2) )
+  {
+    do_epic_share(ch, arg, cmd);
+    return;
+  }
+
   // else show list of epic players
   vector<string> top_good_players = get_epic_players(RACEWAR_GOOD);
   vector<string> top_evil_players = get_epic_players(RACEWAR_EVIL);
@@ -2311,6 +2317,57 @@ void do_epic_zones(P_char ch, char *arg, int cmd)
   }
   
 	send_to_char("\n* = already completed this boot.\n", ch);  
+}
+
+void do_epic_share(P_char ch, char *arg, int cmd)
+{
+
+  struct affected_type *afp, *tafp;
+
+  if (!has_epic_task(ch))
+  {
+    send_to_char("You don't have an epic task to share.\r\n", ch);
+    return;
+  }
+  else
+  {
+    afp = get_epic_task(ch);
+  }
+
+  if( ch->group )
+  {
+    for( struct group_list *gl = ch->group; gl; gl = gl->next )
+    {
+      if( gl->ch == ch ) continue;
+      if( gl->ch->in_room == ch->in_room )
+      {
+	if (is_linked_to(ch, gl->ch, LNK_CONSENT) && IS_PC(gl->ch))
+	{
+	  if (has_epic_task(gl->ch))
+	  {
+	    tafp = get_epic_task(gl->ch);
+	    tafp->type = afp->type;
+	    tafp->flags = afp->flags;
+	    tafp->duration = afp->duration;
+	    tafp->modifier = afp->modifier;
+	  }
+	  else
+	  {
+	    struct affected_type af, *afp;
+	    memset(&af, 0, sizeof(af));
+	    af.type = afp->type;
+	    af.flags = afp->flags;
+	    af.duration = afp->duration;
+	    af.modifier = afp->modifier;
+	    affect_to_char(gl->ch, &af);
+	  }
+	act("&+C$n has just shared his epic task with you!&n", TRUE, ch, 0, gl->ch, TO_VICT);
+	act("&+CYou have just shared your epic task with $N.&n", TRUE, ch, 0, gl->ch, TO_CHAR);
+	}
+      }
+    }
+  }
+
 }
 
 void do_epic_trophy(P_char ch, char *arg, int cmd)
