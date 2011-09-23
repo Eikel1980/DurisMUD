@@ -109,11 +109,7 @@ float    racial_spldam_defensive_factor[LAST_RACE + 1][LAST_SPLDAM_TYPE + 1];
 
  /* Weapon attack texts */
 struct attack_hit_type attack_hit_text[] = {
-<<<<<<< HEAD
   {"punch", "punches", "punched"},              /* TYPE_HIT      */
-=======
-  {"punch", "punches", "punched"},               /* TYPE_HIT      */
->>>>>>> 9587a37f921bbd265e3ada8d7b6a24725301c301
   {"bludgeon", "bludgeons", "bludgeoned"},      /* TYPE_BLUDGEON */
   {"pierce", "pierces", "pierced"},             /* TYPE_PIERCE   */
   {"slash", "slashes", "slashed"},              /* TYPE_SLASH    */
@@ -6685,7 +6681,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     !affected_by_spell(ch, SKILL_WHIRLWIND) &&
     !vicious_hit &&
     GET_POS(ch) == POS_STANDING &&
-    !GET_RACE(victim) == RACE_CONSTRUCT)
+    GET_RACE(victim) != RACE_CONSTRUCT )
   {
     if(notch_skill(ch, SKILL_VICIOUS_ATTACK,
                     get_property("skill.notch.offensive.auto", 100)) ||
