@@ -533,6 +533,8 @@ int ioun_sustenance(P_obj, P_char, int, char *);
 int ioun_testicle(P_obj, P_char, int, char *);
 int ioun_warp(P_obj, P_char, int, char *);
 
+/* specs.lohrr.c */
+int leviathan(P_char, P_char, int, char *);
 
 
 /* specs.object.c */
