@@ -2025,9 +2025,9 @@ M 0 83104 2 83106 100 0 0 0        * a fat dwarf
 M 0 83105 1 83107 100 0 0 0        * the Stonebrew cook
 M 0 83112 1 83111 100 0 0 0        * an Alatorin receptionist
 M 0 83110 1 83112 100 0 0 0        * an exhausted sailor
-M 0 83111 3 83113 100 0 0 0        * a travelling miner
-M 0 83111 3 83113 100 0 0 0        * a travelling miner
-M 0 83111 3 83113 100 0 0 0        * a travelling miner
+M 0 83111 3 83113 100 0 0 0        * a traveling miner
+M 0 83111 3 83113 100 0 0 0        * a traveling miner
+M 0 83111 3 83113 100 0 0 0        * a traveling miner
 M 0 83109 1 83114 100 0 0 0        * a snow ogre
 E 1 83113 1 13 100 0 0 0           *   a belt of elven scalps
 M 0 83127 1 83115 100 0 0 0        * a greedy banker
@@ -2423,15 +2423,15 @@ E 1 83321 1 16 100 0 0 0           *   a gnarled wooden club
 E 1 83320 1 17 100 0 0 0           *   a long sharp chain
 G 1 83322 1 0 100 0 0 0            *    the gored tongue of a swamp troll
 M 0 83211 2 83252 100 0 0 0        * a shield dwarf drill sergeant
-F 1 83199 8 83252 100 0 0 0        * A young Hammerhelm recruit (following)
-F 1 83199 8 83252 100 0 0 0        * A young Hammerhelm recruit (following)
-F 1 83199 8 83252 100 0 0 0        * A young Hammerhelm recruit (following)
-F 1 83199 8 83252 100 0 0 0        * A young Hammerhelm recruit (following)
+F 1 83199 8 83252 100 0 0 0        * a young Hammerhelm recruit (following)
+F 1 83199 8 83252 100 0 0 0        * a young Hammerhelm recruit (following)
+F 1 83199 8 83252 100 0 0 0        * a young Hammerhelm recruit (following)
+F 1 83199 8 83252 100 0 0 0        * a young Hammerhelm recruit (following)
 M 0 83211 2 83254 100 0 0 0        * a shield dwarf drill sergeant
-F 1 83199 8 83254 100 0 0 0        * A young Hammerhelm recruit (following)
-F 1 83199 8 83254 100 0 0 0        * A young Hammerhelm recruit (following)
-F 1 83199 8 83254 100 0 0 0        * A young Hammerhelm recruit (following)
-F 1 83199 8 83254 100 0 0 0        * A young Hammerhelm recruit (following)
+F 1 83199 8 83254 100 0 0 0        * a young Hammerhelm recruit (following)
+F 1 83199 8 83254 100 0 0 0        * a young Hammerhelm recruit (following)
+F 1 83199 8 83254 100 0 0 0        * a young Hammerhelm recruit (following)
+F 1 83199 8 83254 100 0 0 0        * a young Hammerhelm recruit (following)
 M 0 83143 8 83258 100 0 0 0        * a gate guard of Shanat Citadel
 E 1 83142 999 16 100 0 0 0         *   a huge warhammer
 E 1 83111 999 17 100 0 0 0         *   an iron broadsword
@@ -3814,7 +3814,7 @@ G 1 11619 10 0 100 0 0 0           *    (object type not in this .obj file)
 G 1 11619 10 0 100 0 0 0           *    (object type not in this .obj file)
 M 0 83473 1 83861 100 0 0 0        * a beefy troglodyte shaman
 E 1 83549 9 5 100 0 0 0            *   some filthy hides
-E 1 83551 1 12 100 0 0 0           *   a frayed skin cloak branded with primative glyphs
+E 1 83551 1 12 100 0 0 0           *   a frayed skin cloak branded with primitive glyphs
 E 1 83530 28 16 100 0 0 0          *   a heavy bone club
 E 1 83550 1 18 100 0 0 0           *   a brazen brass totem headed with dwarven skulls
 F 1 83476 1 83861 100 0 0 0        * a large basilisk (following)

@@ -212,7 +212,7 @@ pm 0 16384 -1
 #120014
 holyman dwarf _spec3_~
 &+Wa &+Bholyman&N~
-&+WA &+Bholyman &+Win brilliant white robes &+Bblesses you&N as he walks through.
+&+WA &+Bholyman &+Win brilliant white robes &+Bblesses you&+W as he walks through.
 ~
    &+WThis pristine holyman, most likely an acolyte of Dumathoin, stands here
 &+Wwalking with a fortunate smile, foreseeing life and peace for his people,
@@ -476,7 +476,7 @@ pm 0 1 -1
 #120032
 traveler verspin~
 &n&+ga traveler from &n&+mVerspin&n~
-&+gA well-dressed traveler from &+mVerspin &nwalks through here, stunned by the architecture.
+&+gA well-dressed traveler from &+mVerspin &+gwalks through here, stunned by the architecture.
 ~
    &n&+mThis man wears thick furred coats and linens of imported cloth.  He has
 &+ma stern face that has braved the low temperatures of these areas for
@@ -520,7 +520,7 @@ pm 0 1 -1
 8 8 1
 #120035
 gnome eyeglasses merchant~
-&+RA gnome &+Ceyeglasses &+Rmerchant&N~
+&+Ra gnome &+Ceyeglasses &+Rmerchant&N~
 &+RA cheerful gnome &+Ceyeglasses &+Rmerchant stands behind the &N&+ystall&+R.
 ~
    &+RThis gnomish salesman greets all of his customers with the same cheerful

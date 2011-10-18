@@ -4373,18 +4373,21 @@ mithril sign~
 &+m+-----------------------------------+
 &+m| &+MMundorno - Master of Dragon Scale&N&+m |
 &+m|           *-*-*-*-*-*-*           |
-&+m| &+LALL Smithery requires &+W100 &+Lplat !!&N&+m |
-&+m|   &+LMundorno will fasten the most&N&+m   |
-&+m| &+Lselect dragon scales from various&N&+m |
-&+m| &+Lbeasts around the world onto the&N&+m  |
-&+m|   &+Lfinest mithril of Alatorin.    &N&+m |
-&+m|          *-*-*-*-*-*-*-*         &n&+m |
-&+m|  leg plates, arm plates, helmet  &N&+m |
-&+m|    breastplate -into platemail-  &N&+m |
+&+m| &+LAll smithing requires &+W100 &+Lplat!! &+m |
+&+m|   &+LMundorno will fasten the most  &+m |
+&+m| &+Lselect dragon scales from various&+m |
+&+m| &+Lbeasts around the world onto the &+m |
+&+m|   &+Lfinest mithril of Alatorin.    &+m |
+&+m|          *-*-*-*-*-*-*-*         &+m |
+&+m|      -into  platemail            &+m |
+&+m|             legplates            &+m |
+&+m|             armplates            &+m |
+&+m|               helm               &+m |
+&+m|            breastplate           &+m |
 &+m|          *-*-*-*-*-*-*-*          |
-&+m|       &+Wc&nh&+Cr&+Rom&+Ci&+Wu&nm &+Ldragon&N&+cs&+Lc&N&+ca&+Ll&N&+ce&+Lss&n&+m      |
-&+m|        &+Wsome si&+Cl&N&+cver dragonscales&+m   |
-&+m|           &+Ldragon scales&N x4   &N&+m     |
+&+m|       &+Wc&nh&+Cr&+Rom&+Ci&+Wu&nm &+Ldragon&+cs&+Lc&+ca&+Ll&+ce&+Ls      &+m |
+&+m|      &+Wsome si&+Cl&+cver dragonscales    &+m |
+&+m|         &N4x  &+Ldragon scales        &+m |
 &+m|          *-*-*-*-*-*-*-*          |
 &+m+-----------------------------------+
 ~
@@ -7419,7 +7422,7 @@ mithril inscription~
 &+m- &+Mgrace his neck and wrist, the strength &+m-
 &+m- &+Mof Urtengor, will of Clangeddin, and   &+m-
 &+m- &+Mfaith of Berronar may bless and grant  &+m-
-&+m- &+Mthou thy strength of dwarves past and  &+m-
+&+m- &+Mthee the strength of dwarves past and  &+m-
 &+m- &+Mfuture and let thy beard be as of fire &+m-
 &+m- &+Mthy fists be of rock, and thy balls be &+m-
 &+m- &+Mof steel; glory be to the dwarven kind &+m-
