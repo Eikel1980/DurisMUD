@@ -1157,11 +1157,12 @@ uint checkObjects(FILE *file, size_t& numbLines, bool* userQuit)
         }
       }
 
-     // check object condition percentage
+     // check object condition and max_condition percentages
 
-      if ((obj->condition == 0) || (obj->condition > 100))
+      if ((obj->condition == 0) || (obj->condition > 1000) ||
+          (obj->max_condition == 0) || (obj->max_condition > 1000))
       {
-        sprintf(strn, "object #%u's condition is not between 1-100%%\n",
+        sprintf(strn, "object #%u's condition/max_condition is not between 1-1000%%\n",
                 objNumb);
         errors++;
 

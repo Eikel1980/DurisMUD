@@ -193,7 +193,8 @@ const menuChoice objMisc2ChoiceArr[] =
   { "weight", 0, 0, offsetof(objectType, weight), mctInt, mclNone, mcdDefault, 0, 0 },
   { "volume", "volume (obsolete)", 0, offsetof(objectType, space), mctUInt, mclNone, mcdDefault, 0, 0 },
   { "worth", 0, 0, offsetof(objectType, worth), mctMoney, mclNone, mcdDefault, 0, 0 },
-  { "condition", 0, 0, offsetof(objectType, condition), mctPercentage, mclNone, mcdDefault, 0, 0 },
+  { "condition", "percentage of max condition", 0, offsetof(objectType, condition), mctPercentage, mclNone, mcdDefault, 0, 0 },
+  { "max condition", 0, 0, offsetof(objectType, max_condition), mctUInt, mclNone, mcdDefault, 0, 0 },
   { 0 } };
 
 const menuChoice objExtraDescChoiceArr[] =
@@ -316,6 +317,7 @@ const menuChoiceGroup objMisc2GroupArr[] =
   MENU_BLANK_LINE,
   { &objMisc2ChoiceArr[6], 'G', 0 },
   { &objMisc2ChoiceArr[7], 'H', 0 },
+  { &objMisc2ChoiceArr[8], 'I', 0 },
   { 0, 0, 0 } };
 
 menu g_objMisc2Menu =

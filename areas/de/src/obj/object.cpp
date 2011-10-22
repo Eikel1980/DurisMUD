@@ -237,7 +237,9 @@ bool compareObjectType(const objectType *obj1, const objectType *obj2)
     return false;
   if (obj1->worth != obj2->worth) 
     return false;
-  if (obj1->condition != obj2->condition) 
+  if (obj1->condition != obj2->condition)
+    return false;
+  if (obj1->max_condition != obj2->max_condition)
     return false;
 
   for (uint i = 0; i < NUMB_OBJ_APPLIES; i++)

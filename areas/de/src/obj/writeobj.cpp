@@ -106,10 +106,10 @@ void writeObjecttoFile(FILE *objectFile, const objectType *obj)
           obj->objValues[4], obj->objValues[5],
           obj->objValues[6], obj->objValues[7]);
 
- // next, the weight, worth, and condition
+ // next, the weight, worth, condition and max_condition
 
-  fprintf(objectFile, "%d %u %u",
-          obj->weight, obj->worth, obj->condition);
+  fprintf(objectFile, "%d %u %u %u",
+          obj->weight, obj->worth, obj->condition, obj->max_condition);
 
  // if aff1 and/or aff2/3/4 flags are non-zero, write them
 

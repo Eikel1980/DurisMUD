@@ -312,23 +312,41 @@ objectType *readObjectFromFile(FILE *objectFile, char *nextStrn, const bool chec
            &(objPtr->objValues[7]));
   }
 
- // read third misc line - weight, value, condition, aff1, aff2, aff3, aff4
-
-  const size_t intMiscArgs3[] = { 3, 5, 7, 0 };
+ // read third misc line - weight, value, condition, max_condition, aff1, aff2, aff3, aff4
+ 
+  const size_t intMiscArgs3[] = { 3, 4, 5, 6, 7, 8, 0 };
 
   if (!readAreaFileLine(objectFile, strn, 512, ENTITY_OBJECT, objNumb, ENTITY_TYPE_UNUSED, 
                         ENTITY_NUMB_UNUSED, "misc info 3", 0, intMiscArgs3, false, true))
     exit(1);
-
+  
   if (numbArgs(strn) == 3)
   {
     sscanf(strn, "%d%u%u", &(objPtr->weight), &(objPtr->worth),
                            &(objPtr->condition));
+
+    objPtr->max_condition = 100;
   }
-  else
-  if (numbArgs(strn) == 5)
+  else if (numbArgs(strn) == 4)
+  {
+    sscanf(strn, "%d%u%u", &(objPtr->weight), &(objPtr->worth),
+                           &(objPtr->condition),
+                           &(objPtr->max_condition));
+  }
+  else if (numbArgs(strn) == 5)
   {
     sscanf(strn, "%d%u%u%u%u", &(objPtr->weight), &(objPtr->worth),
+                               &(objPtr->condition),
+                               &(objPtr->affect1Bits),
+                               &(objPtr->affect2Bits));
+
+    objPtr->max_condition = 100;
+    setVarBoolVal(&g_varHead, VAR_OBJAFFECT_NAME, true, false);
+  }
+  else if (numbArgs(strn) == 6)
+  {
+    sscanf(strn, "%d%u%u%u%u", &(objPtr->weight), &(objPtr->worth),
+                               &(objPtr->condition),
                                &(objPtr->condition),
                                &(objPtr->affect1Bits),
                                &(objPtr->affect2Bits));
@@ -339,6 +357,18 @@ objectType *readObjectFromFile(FILE *objectFile, char *nextStrn, const bool chec
   {
     sscanf(strn, "%d%u%u%u%u%u%u", &(objPtr->weight), &(objPtr->worth),
                                    &(objPtr->condition),
+                                   &(objPtr->affect1Bits),
+                                   &(objPtr->affect2Bits),
+                                   &(objPtr->affect3Bits),
+                                   &(objPtr->affect4Bits));
+    objPtr->max_condition = 100;
+    setVarBoolVal(&g_varHead, VAR_OBJAFFECT_NAME, true, false);
+  }
+  else if (numbArgs(strn) == 8)
+  {
+    sscanf(strn, "%d%u%u%u%u%u%u", &(objPtr->weight), &(objPtr->worth),
+                                   &(objPtr->condition),
+                                   &(objPtr->max_condition),
                                    &(objPtr->affect1Bits),
                                    &(objPtr->affect2Bits),
                                    &(objPtr->affect3Bits),

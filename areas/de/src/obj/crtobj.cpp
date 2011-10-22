@@ -94,6 +94,7 @@ objectType *createObjectType(const bool incLoaded, const uint objNumb, const boo
     newObj->size = OBJSIZE_MEDIUM;
     newObj->material = MAT_IRON;
     newObj->condition = 100;
+    newObj->max_condition = 100;
     newObj->craftsmanship = OBJCRAFT_AVERAGE;
   }
 

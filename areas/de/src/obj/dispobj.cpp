@@ -429,7 +429,7 @@ obj->affect4Bits,
 "&+YObj apply #1:&n %u (%s) by %d\n"
 "&+YObj apply #2:&n %u (%s) by %d\n"
 "\n"
-"&+YWeight:&n %d    &+YValue:&n %u    &+YCondition:&n %u\n"
+"&+YWeight:&n %d    &+YValue:&n %u    &+YCondition:&n %u   &+YMax Condition:&n %u\n"
 "\n",
 obj->objType, getObjTypeStrn(obj->objType),
 obj->objValues[0], getObjValueStrn(obj->objType, 0, obj->objValues[0], fstrn, true),
@@ -446,7 +446,7 @@ obj->objApply[0].applyWhere, getObjApplyStrn(obj->objApply[0].applyWhere),
 obj->objApply[1].applyWhere, getObjApplyStrn(obj->objApply[1].applyWhere),
   obj->objApply[1].applyModifier,
 
-obj->weight, obj->worth, obj->condition);
+obj->weight, obj->worth, obj->condition, obj->max_condition);
 
   displayColorString(strn);
 }

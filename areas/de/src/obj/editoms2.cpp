@@ -100,7 +100,8 @@ void editObjMisc2(objectType *obj)
   usint ch;
   uint oldMat = obj->material, oldSize = obj->size,
         oldCraft = obj->craftsmanship, oldDam = obj->damResistBonus,
-        oldWorth = obj->worth, oldCond = obj->condition, oldVol = obj->space;
+        oldWorth = obj->worth, oldCond = obj->condition, oldMCond = obj->max_condition,
+        oldVol = obj->space;
   int oldWeight = obj->weight;
 
  // back up the old stuff
@@ -120,6 +121,7 @@ void editObjMisc2(objectType *obj)
       obj->weight = oldWeight;
       obj->worth = oldWorth;
       obj->condition = oldCond;
+      obj->max_condition = oldMCond;
       obj->space = oldVol;
 
       _outtext("\n\n");
