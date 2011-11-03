@@ -2108,6 +2108,17 @@ void enter_game(P_desc d)
         send_to_char("\r\nYou rejoin the land of the living...\r\n", ch);
       restoreItemsOnly(ch, 0);
     }
+    else if(d->rtype == RENT_POOFARTI)
+    {
+      send_to_char("\r\nThe gods have taken your artifact...\r\n", ch);
+      cost = restoreItemsOnly(ch, 100);
+    }
+    else if(d->rtype == RENT_SWAPARTI)
+    {
+      send_to_char("\r\nThe gods have taken your artifact... and "
+	"replaced it with another!\r\n", ch);
+      cost = restoreItemsOnly(ch, 100);
+    }
     else
     {
       send_to_char("\r\nCouldn't find any items in storage for you...\r\n",

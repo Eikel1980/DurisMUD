@@ -2986,7 +2986,10 @@ P_obj read_object(int nr, int type)
   /* arti check every minute */
 
   if (IS_ARTIFACT(obj))
+  {
     add_event(event_artifact_poof, 2 * WAIT_SEC, 0, 0, obj, 0, 0, 0);
+    obj->timer[5] = time(NULL);
+  }
 
   /* init justice flag */
 //  obj->justice_status = 0;

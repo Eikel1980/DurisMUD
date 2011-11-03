@@ -2377,9 +2377,16 @@ void do_stat(P_char ch, char *argument, int cmd)
         strcat(buf, craftsmanship_names[craft]);
         strcat(buf, "\n");
       }
+      if( IS_ARTIFACT( j ) )
+      {
+         long ct = time(0);
+         strcat( buf, "&+YIn game since: &n" );
+         strcat( buf, asctime(localtime(& (j->timer[5]) )) );
+         strcat( buf, "\n");
+      }
       strcat(o_buf, buf);
     }
-        
+
     /*
        if(j->justice_status > 0) {
        strcat(o_buf, "\n&+RJustice:\n");

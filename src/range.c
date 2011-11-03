@@ -262,7 +262,7 @@ void event_enchant_arrow(P_char ch, P_char victim, P_obj obj, void *data)
 
   obj->name = arrow->name;
   obj->short_description = arrow->short_description;
-  obj->timer[5] = ARROW_NONE;
+  obj->timer[3] = ARROW_NONE;
 }
 
 void enchant_arrows(P_char ch, P_char vict, P_obj arrow, int cmd)
@@ -284,7 +284,7 @@ void enchant_arrows(P_char ch, P_char vict, P_obj arrow, int cmd)
   case ARROW_NONE:
     break;
   case ARROW_MARK:
-    if (arrow->timer[5] == ARROW_MARK)
+    if (arrow->timer[3] == ARROW_MARK)
       return;
     
     sprintf(buf2, "&n of &+L%s&n", GET_NAME(ch));
@@ -295,7 +295,7 @@ void enchant_arrows(P_char ch, P_char vict, P_obj arrow, int cmd)
     sprintf(buf, "%s a%s", arrow->name, GET_NAME(ch));
     arrow->name = str_dup(buf);
     
-    arrow->timer[5] = ARROW_MARK;
+    arrow->timer[3] = ARROW_MARK;
     duration = WAIT_SEC * (int)get_property("archery.enchantArrows.mark.duration", 300);
     add_event(event_enchant_arrow, duration, 0, 0, arrow, 0, 0, 0);
     break;
