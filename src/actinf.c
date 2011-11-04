@@ -3788,17 +3788,17 @@ void do_attributes(P_char ch, char *argument, int cmd)
   }
   if(IS_MORPH(ch))
   {
-    send_to_char("Wouldn't you like to know?\n", ch);
+    send_to_char("Wouldn't you like to know?\n", ch, LOG_NONE);
     return;
   }
   /* header */
   sprintf(buf, "\n\t\t&+gCharacter attributes for &+G%s\n\n&n", GET_NAME(ch));
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   /* level, race, class */
   sprintf(buf, "&+cLevel: &+Y%d   &n&+cRace:&n %s   &+cClass:&n %s &n\n",
           GET_LEVEL(ch), race_to_string(ch), get_class_string(ch, buffer));
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   if(IS_PC(ch))
   {
@@ -3813,7 +3813,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
           "&+cHeight: &+Y%d &n&+yinches "
           "&+cWeight: &+Y%d &n&+ylbs  &+cSize: &+Y%s\n\n",
           GET_AGE(ch), age(ch).month, h, w, size_types[GET_ALT_SIZE(ch)]);
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   /* Stats */
   if(GET_LEVEL(ch) >= 1)
@@ -4003,7 +4003,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
                             ((GET_C_CHA(ch) * 100 /
                               stat_factor[(int) GET_RACE(ch)].Cha) + .55)));
   }
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   /* Armor Class */
 
@@ -4013,7 +4013,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
   else
     sprintf(buf, "&+cArmor Points: &+Y%d&+c  Reduces melee damage taken by &+Y%.1f&n&+y%%&n \n", t_val, (double)(t_val * -0.10));
 
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   if(IS_PC(ch) && GET_CLASS(ch, CLASS_MONK))
     MonkSetSpecialDie(ch);
@@ -4051,7 +4051,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
   }
 
   strcat(buf, "\n");
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   /*
    * Alignment
@@ -4067,7 +4067,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
     sprintf(buf, "&+cAlignment: &+Y%s\n\n",
             align_to_string(GET_ALIGNMENT(ch)));
   }
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   /*
    * Saving throws
@@ -4078,13 +4078,13 @@ void do_attributes(P_char ch, char *argument, int cmd)
           save_to_string(ch, SAVING_FEAR).c_str(),
           save_to_string(ch, SAVING_BREATH).c_str(),
           save_to_string(ch, SAVING_SPELL).c_str());
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   /*
    * Equipment Carried
    */
   sprintf(buf, "\n&+cLoad carried: &+Y%s\n", load_to_string(ch));
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 }
 
 void do_score(P_char ch, char *argument, int cmd)
@@ -4129,14 +4129,14 @@ void do_score(P_char ch, char *argument, int cmd)
   sprintf(buf, "Level: %d   Race: %s   Class: %s &nSex: %s\n&n",
           GET_LEVEL(ch),
           race_to_string(ch), get_class_string(ch, buffer), buf2);
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE );
 
   /* description */
 #if 0
   if(ch->player.short_descr)
   {
     sprintf(buf, "Quick Description: %s\n", ch->player.short_descr);
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
   }
 #endif
 
@@ -4156,13 +4156,13 @@ void do_score(P_char ch, char *argument, int cmd)
             GET_HIT(ch), GET_MAX_HIT(ch),
             GET_VITALITY(ch), GET_MAX_VITALITY(ch));
   }
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE );
 
   /* money */
   sprintf(buf,
           "Coins carried: &+W%4d platinum&N  &+Y%4d gold&N  &n%4d silver&N  &+y%4d copper&N\n",
           GET_PLATINUM(ch), GET_GOLD(ch), GET_SILVER(ch), GET_COPPER(ch));
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE );
   buf[0] = 0;
   if(IS_PC(ch))
   {
@@ -4171,7 +4171,7 @@ void do_score(P_char ch, char *argument, int cmd)
             GET_BALANCE_PLATINUM(ch),
             GET_BALANCE_GOLD(ch),
             GET_BALANCE_SILVER(ch), GET_BALANCE_COPPER(ch));
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
     /* justice info */
 /*    found = FALSE;
     strcpy(buf, "&+YWanted in:    &N");
@@ -4185,7 +4185,7 @@ void do_score(P_char ch, char *argument, int cmd)
     if(found) {
       buf[strlen(buf) - 2] = '\0';
       strcat(buf, "\n");
-      send_to_char(buf, ch);
+      send_to_char(buf, ch, LOG_NONE );
     }
 */
     found = FALSE;
@@ -4202,7 +4202,7 @@ void do_score(P_char ch, char *argument, int cmd)
     {
       buf[strlen(buf) - 2] = '\0';
       strcat(buf, "\n");
-      send_to_char(buf, ch);
+      send_to_char(buf, ch, LOG_NONE );
     }
     /* playing time */
     playing_time =
@@ -4211,14 +4211,14 @@ void do_score(P_char ch, char *argument, int cmd)
                         ch->player.time.played), 0);
     sprintf(buf, "Playing time: %d days / %d hours/ %d minutes\n",
             playing_time.day, playing_time.hour, playing_time.minute);
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
 
     /* traffic info*/
     sprintf(buf, "&+wReceived data:&+y %5.4f &+wMB this session.\n", (float) (ch->only.pc->send_data / 1048576.0000 ));
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
 
     sprintf(buf, "&+wSend data:    &+y %5.4f &+wMB this session.\n", (float) (ch->only.pc->recived_data / 1048576.0000 ));
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
 
 
 
@@ -4227,10 +4227,10 @@ void do_score(P_char ch, char *argument, int cmd)
     if(ch->desc && ch->desc->z_str)
     {
       sprintf(buf, "%d\%\n", compress_get_ratio(ch->desc));
-      send_to_char(buf, ch);
+      send_to_char(buf, ch, LOG_NONE );
     }
     else
-      send_to_char("none\n", ch);
+      send_to_char("none\n", ch, LOG_NONE);
 
 //    /* prestige */
 //    sprintf(buf, "Prestige: %s\n", epic_prestige(ch));
@@ -4277,7 +4277,7 @@ void do_score(P_char ch, char *argument, int cmd)
     sprintf(buf + strlen(buf), "Your Master: %s\n", GET_NAME(GET_MASTER(ch)));
 
   if(*buf)
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
 
   /* followers */
   found = FALSE;
@@ -4295,7 +4295,7 @@ void do_score(P_char ch, char *argument, int cmd)
             follower->player.short_descr : GET_NAME(fol->follower));
   }
   if(found)
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE );
 
   /* status */
   switch (GET_STAT(ch))
@@ -4494,7 +4494,7 @@ void do_score(P_char ch, char *argument, int cmd)
   }
 
   strcat(buf, "\n");
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE );
 
   /* status type things */
 
@@ -4568,9 +4568,9 @@ void do_score(P_char ch, char *argument, int cmd)
   }
   if(*buf)
   {
-    send_to_char("        ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char( "        ", ch, LOG_NONE );
+    send_to_char( buf, ch, LOG_NONE );
+    send_to_char( "\n", ch, LOG_NONE );
   }
 
   if(IS_PC(ch) && IS_HARDCORE(ch))
@@ -4578,17 +4578,17 @@ void do_score(P_char ch, char *argument, int cmd)
     hardcorepts = getHardCorePts(ch);
     hardcorepts = (hardcorepts / 100.0);
     sprintf(buf, "&nHardCore pts:   &+R%+6.2f&n\n", hardcorepts);
-    send_to_char(buf, ch);
+    send_to_char( buf, ch, LOG_NONE );
   }
   /* frags */
 #ifdef STANCES_ALLOWED
   if(IS_AFFECTED5(ch, AFF5_STANCE_DEFENSIVE))
-          send_to_char("Stance: &+yDefensive stance&n\n", ch);
+          send_to_char("Stance: &+yDefensive stance&n\n", ch, LOG_NONE);
            
   else if(IS_AFFECTED5(ch, AFF5_STANCE_OFFENSIVE))
-    send_to_char("Stance: &+rOffensive stance&n\n", ch);
+    send_to_char("Stance: &+rOffensive stance&n\n", ch, LOG_NONE);
   else
-    send_to_char("Stance: &+WNo stance at all&n\n", ch);
+    send_to_char("Stance: &+WNo stance at all&n\n", ch, LOG_NONE);
 #endif
                              
   if(GET_LEVEL(ch) > 19)
@@ -4635,7 +4635,7 @@ void do_score(P_char ch, char *argument, int cmd)
         sprintf(buf, "&nEpic points: &+W%d&n  Skill points: &+W%d&n\n",
              ch->only.pc->epics, ch->only.pc->epic_skill_points);
       }
-      send_to_char(buf, ch);
+      send_to_char( buf, ch, LOG_NONE );
     }
   }
 
@@ -4644,29 +4644,29 @@ void do_score(P_char ch, char *argument, int cmd)
   {
     ebdata.type = EPIC_BONUS_NONE;
   }
-  send_to_char_f(ch, "&nEpic Bonus: &+C%s&n (&+C%.2f%%&n)\r\n", ebd[ebdata.type].description, get_epic_bonus(ch, ebdata.type)*100);
+  send_to_char_f(ch, "&nEpic Bonus: &+C%s&n (&+C%.2f%%&n)\r\n", ebd[ebdata.type].description, get_epic_bonus(ch, ebdata.type)*100, LOG_NONE);
 
-  send_to_char("&+RFrags:&n   ", ch);
+  send_to_char("&+RFrags:&n   ", ch, LOG_NONE);
 
   fragnum = (float) ch->only.pc->frags;
   fragnum /= 100;
   sprintf(buf, "%+.2f   &n&+LDeaths:&n   %d\n", fragnum, ch->only.pc->numb_deaths);
-  send_to_char(buf, ch);
+  send_to_char(buf, ch, LOG_NONE);
 
   if(ch->linking)
   {
     sprintf(buf, "Consenting: %s\n", ch->linking->linked->player.name);
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE);
   }
 
   if(IS_DISGUISE(ch))
   {
     if(IS_DISGUISE_ILLUSION(ch))
-      send_to_char("In the illusion of: ", ch);
+      send_to_char("In the illusion of: ", ch, LOG_NONE);
     else if(IS_DISGUISE_SHAPE(ch))
-      send_to_char("Shapechanged as: ", ch);
+      send_to_char("Shapechanged as: ", ch, LOG_NONE);
     else
-      send_to_char("Disguised as: ", ch);
+      send_to_char("Disguised as: ", ch, LOG_NONE);
     percent =
       (int) ((float) ch->disguise.hit / (float) (GET_LEVEL(ch) * 4) * 100.0);
     sprintf(buf, "%s (%s)\n", ch->disguise.name,
@@ -4675,7 +4675,7 @@ void do_score(P_char ch, char *argument, int cmd)
                                                                       >
                                                                       25) ?
             "&+yfair&N" : "&+rPoor&N");
-    send_to_char(buf, ch);
+    send_to_char(buf, ch, LOG_NONE);
   }
 
   buf[0] = 0;
@@ -4703,9 +4703,9 @@ void do_score(P_char ch, char *argument, int cmd)
 
   if(*buf)
   {
-    send_to_char("Detecting:      ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Detecting:      ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
   buf[0] = 0;
 
@@ -4739,9 +4739,9 @@ void do_score(P_char ch, char *argument, int cmd)
   
   if(*buf)
   {
-    send_to_char("Protected from: ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Protected from: ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
 
   buf[0] = 0;
@@ -4754,9 +4754,9 @@ void do_score(P_char ch, char *argument, int cmd)
 
   if(*buf)
   {
-    send_to_char("Protected by:   ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Protected by:   ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
   buf[0] = 0;
 
@@ -4810,9 +4810,9 @@ void do_score(P_char ch, char *argument, int cmd)
    
   if(*buf)
   {
-    send_to_char("Enchantments:   ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Enchantments:   ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
   
   buf[0] = 0;
@@ -4843,9 +4843,9 @@ void do_score(P_char ch, char *argument, int cmd)
     
   if(*buf)
   {
-    send_to_char("Songs:   ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Songs:   ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
   
   buf[0] = 0;
@@ -4858,7 +4858,7 @@ void do_score(P_char ch, char *argument, int cmd)
 	
     if((af = get_spell_from_char(ch, TAG_POOL)) == NULL)
     {
-      send_to_char("Stat pool timeout: none\n", ch);
+      send_to_char("Stat pool timeout: none\n", ch, LOG_NONE);
     }
 	  else
 	  {
@@ -4867,7 +4867,7 @@ void do_score(P_char ch, char *argument, int cmd)
 	    sprintf(buf, "Stat Pool timeout: %d:%s%d:%s%d\n", timer.day * 24 + timer.hour,
 	      (timer.minute > 9) ? "" : "0", timer.minute,
 	      (timer.second > 9) ? "" : "0", timer.second);
-	    send_to_char(buf, ch);
+	    send_to_char(buf, ch, LOG_NONE);
 	  }
   }
   
@@ -4877,7 +4877,7 @@ void do_score(P_char ch, char *argument, int cmd)
   {
 	int RemainingBartenderQuests = sql_world_quest_can_do_another(ch);
 	sprintf(buf, "&+yBartender Quests Remaining:&n %d\n", RemainingBartenderQuests);
-	send_to_char(buf, ch);
+	send_to_char(buf, ch, LOG_NONE);
   }
   
   buf[0] = 0;
@@ -4901,9 +4901,9 @@ void do_score(P_char ch, char *argument, int cmd)
     
   if(*buf)
   {
-    send_to_char("Afflicted with: ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Afflicted with: ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
 
   struct affected_type af, *afp;
@@ -4923,9 +4923,9 @@ void do_score(P_char ch, char *argument, int cmd)
   sprintf(buf, "Injuries: ");
   if(*buf2)
   {
-    send_to_char(buf, ch);
-    send_to_char(buf2, ch);
-    send_to_char("\n", ch);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char(buf2, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
 
   tch = get_linking_char(ch, LNK_BLOOD_ALLIANCE);
@@ -4935,10 +4935,10 @@ void do_score(P_char ch, char *argument, int cmd)
   if( tch )
   {
     buf[0] = 0;
-    send_to_char("Blood alliance with: ", ch);
+    send_to_char("Blood alliance with: ", ch, LOG_NONE);
     strcat(buf, GET_NAME(tch));
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
   
   if( IS_AFFECTED3(ch, AFF3_PALADIN_AURA) )
@@ -4956,9 +4956,9 @@ void do_score(P_char ch, char *argument, int cmd)
 
     if(*buf)
     {
-      send_to_char("Paladin auras:  ", ch);
-      send_to_char(buf, ch);
-      send_to_char("\n", ch);
+      send_to_char("Paladin auras:  ", ch, LOG_NONE);
+      send_to_char(buf, ch, LOG_NONE);
+      send_to_char("\n", ch, LOG_NONE);
     }
   }
 
@@ -4969,17 +4969,17 @@ void do_score(P_char ch, char *argument, int cmd)
       strcat(buf, " Healing");
       if(*buf)
       {
-          send_to_char("Enhancements:   ", ch);
-          send_to_char(buf, ch);
-          send_to_char("\n", ch);
+          send_to_char("Enhancements:   ", ch, LOG_NONE);
+          send_to_char(buf, ch, LOG_NONE);
+          send_to_char("\n", ch, LOG_NONE);
       }
   }
   
   if(affected_by_spell(ch, TAG_SPAWN))
    if(has_innate(ch, INNATE_SPAWN))
-     send_to_char("&+LYou are willing to summon spawns.\n", ch);
+     send_to_char("&+LYou are willing to summon spawns.\n", ch, LOG_NONE);
    else if(has_innate(ch, INNATE_ALLY))
-     send_to_char("&+WYou are willing to summon allies.\n", ch);
+     send_to_char("&+WYou are willing to summon allies.\n", ch, LOG_NONE);
   
   tch = guarding(ch);
   if( tch )
@@ -4996,9 +4996,9 @@ void do_score(P_char ch, char *argument, int cmd)
 	  strcat(buf, tch2->player.name);
 	}
       }
-    send_to_char("Guarding: ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Guarding: ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
 
   tch = guarded_by(ch);
@@ -5006,9 +5006,9 @@ void do_score(P_char ch, char *argument, int cmd)
   {
     buf[0] = 0;
     strcat(buf, tch->player.name);
-    send_to_char("Guarded by: ", ch);
-    send_to_char(buf, ch);
-    send_to_char("\n", ch);
+    send_to_char("Guarded by: ", ch, LOG_NONE);
+    send_to_char(buf, ch, LOG_NONE);
+    send_to_char("\n", ch, LOG_NONE);
   }
 
   buf[0] = 0;
@@ -5117,18 +5117,18 @@ void do_score(P_char ch, char *argument, int cmd)
     if(*buf &&
        !affected_by_spell(ch, SPELL_FEEBLEMIND))
     {
-      send_to_char("\n&+cActive Spells:&n\n--------------\n", ch);
+      send_to_char("\n&+cActive Spells:&n\n--------------\n", ch, LOG_NONE);
 
-      send_to_char(buf, ch);
+      send_to_char(buf, ch, LOG_NONE);
     }
   }
   
   if(affected_by_spell(ch, SKILL_REGENERATE))
   {
-    send_to_char("regenerating\n", ch);
+    send_to_char("regenerating\n", ch, LOG_NONE);
   }
   
-  send_to_char("\n", ch);
+  send_to_char("\n", ch, LOG_NONE);
 }
 
 void do_time(P_char ch, char *argument, int cmd)
@@ -8137,7 +8137,7 @@ void do_recall(P_char ch, char *argument, int cmd)
   ITERATE_LOG_LIMIT(ch, LOG_PRIVATE, size)
   {
     if( !pattern || fnmatch(pattern, LOG_MSG(), FNM_CASEFOLD) )
-      send_to_char( LOG_MSG(), ch );
+      send_to_char( LOG_MSG(), ch, LOG_NONE );
   }  
 }
 
