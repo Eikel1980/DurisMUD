@@ -317,7 +317,7 @@ void SetSpellCircles(void)
   bool     added, flag;
   int      i, lvl, max, pf, p_c = 0, t_c = 0, tot_circles = 0, cur_circle;
 
-  pf = 125;                     /*
+  pf = 112;                     /*
                                    a pf of 125 gives 74 total spells at level
                                    50
                                  */
@@ -327,7 +327,6 @@ void SetSpellCircles(void)
 
   for(lvl = 1; lvl < TOTALLVLS; lvl++)
   {
-
     added = FALSE;
     for(i = 0; i < MAX_CIRCLE; i++)
       spl_table[lvl][i] = spl_table[lvl - 1][i];
@@ -684,7 +683,7 @@ float mem_time_modifiers(P_char ch, float time, bool check)
      if(!IS_MULTICLASS_PC(ch))
      {
        level = MAX(1, level - 2);
-       time_mult = 2.25;
+       time_mult = 1.75;
      }
      else if(IS_MULTICLASS_PC(ch))
      {
