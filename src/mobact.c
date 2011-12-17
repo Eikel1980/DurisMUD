@@ -6516,7 +6516,7 @@ void MobCombat(P_char ch)
     return;
   }
   
-  if(!MIN_POS(ch, POS_STANDING + STAT_NORMAL))
+  if(!MIN_POS(ch, POS_STANDING + STAT_NORMAL) && !number(0, 1))
   {
     do_stand(ch, 0, 0);
   }
@@ -7018,10 +7018,15 @@ void MobStartFight(P_char ch, P_char vict)
     backstab(ch, vict);
     return;
   }
-  if(!fudge_flag && GET_CLASS(ch, CLASS_WARRIOR) && has_innate(ch, INNATE_BODYSLAM) &&
-      GET_POS(vict) == POS_STANDING && get_takedown_size(ch) <= get_takedown_size(vict)+1 &&
-      get_takedown_size(ch) >= get_takedown_size(vict) - 2 && !IS_BACKRANKED(vict) &&
-      !number(0,3) && HAS_FOOTING(ch)) {
+  if(!fudge_flag && 
+     GET_CLASS(ch, CLASS_WARRIOR) && 
+     has_innate(ch, INNATE_BODYSLAM) &&
+     GET_POS(vict) == POS_STANDING && 
+     get_takedown_size(ch) <= get_takedown_size(vict) + 1 &&
+     get_takedown_size(ch) >= get_takedown_size(vict) - 2 && 
+     !IS_BACKRANKED(vict) &&
+     !number(0, 3) && 
+     HAS_FOOTING(ch)) {
     bodyslam(ch, vict);
     return;
   }
@@ -7746,7 +7751,6 @@ PROFILE_END(mundane_wagon);
   // TODO: make it dependent on room fighting flag -Odorf
 PROFILE_START(mundane_wakeup);
   if((GET_STAT(ch) == STAT_SLEEPING) && !ALONE(ch) &&
-      /*(ch->in_room != NOWHERE) && - included in ALONE macro -Odorf */
       !IS_SET(world[ch->in_room].room_flags, ROOM_SILENT) &&
       !IS_AFFECTED(ch, AFF_SLEEP) && !IS_AFFECTED(ch, AFF_KNOCKED_OUT))
   { // 1.3%
@@ -7768,7 +7772,6 @@ PROFILE_START(mundane_justice);
   if(IS_SET(ch->specials.act, ACT_PROTECTOR))
     if(JusticeGuardAct(ch))  // Justice hook.
     {// 0%
-PROFILE_END(mundane_justice);
       goto normal;
     }
 PROFILE_END(mundane_justice);
@@ -8040,8 +8043,7 @@ PROFILE_START(mundane_picktarget);
 	 has_innate(tmp_ch, INNATE_CALMING))
         calming = (int)get_property("innate.calming.delay", 10);
 
-    add_event(event_agg_attack, 1 + calming,
-	  ch, tmp_ch, 0, 0, 0, 0);
+    add_event(event_agg_attack, 1 + calming, ch, tmp_ch, 0, 0, 0, 0);
 PROFILE_END(mundane_picktarget);
     goto normal;
   }
@@ -8062,9 +8064,9 @@ PROFILE_START(mundane_attack);
         (GET_MASTER(tmp_ch)->in_room == ch->in_room) &&
         CAN_SEE(ch, GET_MASTER(tmp_ch)) && StatSave(ch, APPLY_INT, 0))
     {
-
       /* * switch targets (if we can) */
-      attack(ch, tmp_ch);
+      attack(ch, GET_MASTER(tmp_ch));  // why would we continue to attack the pet if we don't have to?  Changing to
+                                       // master - Jexni 12/17/11
 PROFILE_END(mundane_attack);
       goto normal;
     }
@@ -8100,11 +8102,11 @@ PROFILE_START(mundane_assist);
   {
     for (door = 0; door < NUM_EXITS; door++)
     {
-      if(CAN_GO(ch, door) && !IS_SET(world[EXIT(ch, door)->to_room].room_flags, NO_MOB) &&
+      if(CAN_GO(ch, door) && 
+        // !IS_SET(world[EXIT(ch, door)->to_room].room_flags, NO_MOB) &&  commented out for wipe2011
         (world[EXIT(ch, door)->to_room].zone == world[ch->in_room].zone) &&
         !IS_SET(zone_table[world[EXIT(ch, door)->to_room].zone].flags, ZONE_SILENT) &&
-        !IS_SET(world[EXIT(ch, door)->to_room].room_flags, ROOM_SILENT)
-        /* &&!IS_SET(world[EXIT(ch, door)->to_room].room_flags, MAGIC_DARK) */)
+        !IS_SET(world[EXIT(ch, door)->to_room].room_flags, ROOM_SILENT))
       {
         P_char next;
         for (tmp_ch = world[EXIT(ch, door)->to_room].people; tmp_ch;
@@ -8116,7 +8118,7 @@ PROFILE_START(mundane_assist);
           {
             ch->only.npc->last_direction = door;
             do_move(ch, 0, exitnumb_to_cmd(door));
-            REMOVE_BIT(ch->specials.act2, ACT2_COMBAT_NEARBY );
+            REMOVE_BIT(ch->specials.act2, ACT2_COMBAT_NEARBY);
 PROFILE_END(mundane_assist);
             goto normal;
           }
@@ -9915,8 +9917,7 @@ P_char find_protector_target(P_char ch)
   unsigned best_value = 0;      /* value for the best yet found target */
   unsigned cur_val;             /* value for currently examining
                                    target */
-  int      is_guard = FALSE;    /* set to TRUE if ch is a justice
-                                   guard */
+  int      is_guard = TRUE;    /* set to TRUE for all guards for wipe2011 */
 
   if(!ch || IS_FIGHTING(ch) || !CAN_ACT(ch) || ALONE(ch) || GET_MASTER(ch))
     return NULL;
@@ -9957,7 +9958,6 @@ P_char find_protector_target(P_char ch)
     /* special handling for guild golems */
     if(GET_A_NUM(ch))
     {
-
       /* golems ALWAYS kill enemies */
       if(find_enemy(vict, (ush_int) GET_A_NUM(ch)))
         cur_val |= BIT_30;
@@ -9970,7 +9970,6 @@ P_char find_protector_target(P_char ch)
     /* now it splits, depending on if its justice related or not.. */
     if(is_guard && (IS_NPC(t_ch) || IS_NPC(vict)) && !IS_ANIMAL(vict))
     {
-
       /* if this is the same race as me (but the person they are
          fighting isn't) */
       if((GET_RACE(t_ch) == GET_RACE(ch)) &&
@@ -9983,7 +9982,6 @@ P_char find_protector_target(P_char ch)
 
       if(IS_EVIL(ch) && IS_EVIL(t_ch) && !IS_EVIL(vict))
         cur_val |= BIT_20;
-
     }
 
     if(IS_PC(vict) && IS_NPC(t_ch))
@@ -10010,7 +10008,7 @@ P_char find_protector_target(P_char ch)
 
 void MobRetaliateRange(P_char ch, P_char vict)
 {
-  char /*buf[MAX_INPUT_LENGTH], */ result;
+  char result;
   P_nevent  ev = NULL;
   int      dummy;
   hunt_data data;
@@ -10047,7 +10045,6 @@ void MobRetaliateRange(P_char ch, P_char vict)
   if(IS_CASTING(ch))
     if(is_casting_aggr_spell(ch))
     {
-/*      wizlog(56,"We've just detected an aggro spell being cast and thus do not break spellcasting upon being ranged.");*/
       return;
     }
     else if(IS_FIGHTING(ch))
@@ -10069,16 +10066,15 @@ void MobRetaliateRange(P_char ch, P_char vict)
     }
     else if(IS_PC_PET(vict) && CAN_SEE(ch, GET_MASTER(vict)))
     {
-      if(!
-          (IS_TRUSTED(GET_MASTER(vict)) &&
-           IS_SET(GET_MASTER(vict)->specials.act, PLR_AGGIMMUNE)))
-        if((GET_STAT(ch) > STAT_INCAP))
-          remember(ch, GET_MASTER(vict));
+      if(!(IS_TRUSTED(GET_MASTER(vict)) &&
+          IS_SET(GET_MASTER(vict)->specials.act, PLR_AGGIMMUNE)))
+         if((GET_STAT(ch) > STAT_INCAP))
+            remember(ch, GET_MASTER(vict));
     }
   }
   /* A few guaranteed calls */
-#if 0
-  if( /*IS_DRAGON(ch) */ CAN_BREATHE(ch))
+
+  if(CAN_BREATHE(ch))
   {
 
     /* if there's an error..  exit the function */
@@ -10089,9 +10085,8 @@ void MobRetaliateRange(P_char ch, P_char vict)
     else
       return;
   }
-#endif // no range breath anymore, circling that really sucks
-  /* Higher wimpy set, as they know its tough to charge into an arrow */
 
+  /* Higher wimpy set, as they know its tough to charge into an arrow */
   if(AWAKE(ch) && CAN_ACT(ch) && !IS_STUNNED(ch))
     if(IS_SET(ch->specials.act, ACT_WIMPY) &&
         (GET_HIT(ch) < (GET_LEVEL(ch) * 6)) &&
@@ -10099,10 +10094,8 @@ void MobRetaliateRange(P_char ch, P_char vict)
       do_flee(ch, 0, 0);
 
   /* Next group will handle situation on their own */
-
   if(!mob_can_range_att(ch, vict) && !IS_SET(ch->specials.act2, ACT2_NO_LURE))
   {
-
     /* try to charge them */
 
     /* Are they hunting already? */
@@ -10113,15 +10106,12 @@ void MobRetaliateRange(P_char ch, P_char vict)
 
     /* Can they even get there? (rivers, etc) */
     if(find_first_step(ch->in_room, vict->in_room,
-                        (IS_MAGE(ch) || IS_AFFECTED(ch, AFF_FLY)) ? BFS_CAN_FLY : 0,
-                        0, 0, &dummy)
-        >= 0)
+       (IS_MAGE(ch) || IS_AFFECTED(ch, AFF_FLY)) ? BFS_CAN_FLY : 0, 0, 0, &dummy) >= 0)
     {
       data.hunt_type = HUNT_JUSTICE_INVADER;
       data.targ.victim = vict;
       data.huntFlags = (IS_MAGE(ch) || IS_AFFECTED(ch, AFF_FLY)) ? BFS_CAN_FLY : 0;
       add_event(mob_hunt_event, PULSE_MOB_HUNT, ch, NULL, NULL, 0, &data, sizeof(hunt_data));
-      //AddEvent(EVENT_MOB_HUNT, PULSE_MOB_HUNT, TRUE, ch, data);
       add_event(return_home, 30, ch, 0, 0, 0, 0, 0);
       return;
     }
@@ -10207,7 +10197,6 @@ void remember(P_char ch, P_char victim, bool check_group_remember)
 void forget(P_char ch, P_char victim)
 {
   Memory  *curr, *prev = NULL;
-
 
   if(!IS_NPC(ch))
     return;
@@ -10297,7 +10286,8 @@ void event_agg_attack(P_char ch, P_char victim, P_obj obj, void *data)
     return;
   }
   
-  if(ch->specials.z_cord != victim->specials.z_cord)
+  if(ch->specials.z_cord != victim->specials.z_cord ||
+     (IS_AFFECTED(victim, AFF_SNEAK) && !number(0, 2)))
   {
     return;
   }
@@ -10379,15 +10369,18 @@ void event_agg_attack(P_char ch, P_char victim, P_obj obj, void *data)
       return;                   /* damn, missed again */
     }
     
+    // target ran by, chase...
     for(door = 0; door < NUM_EXITS; door++)
-      if(CAN_GO(ch, door) &&
-        (victim->in_room == EXIT(ch, door)->to_room) &&
-        CAN_SEE(ch, victim))
-      {
-        do_move(ch, 0, exitnumb_to_cmd(door));
-        add_event(event_agg_attack, 1, ch, victim, 0, 0, 0, 0);
-        return;
-      }
+    {
+       if(CAN_GO(ch, door) &&
+         (victim->in_room == EXIT(ch, door)->to_room) &&
+          CAN_SEE(ch, victim))
+       {
+         do_move(ch, 0, exitnumb_to_cmd(door));
+         add_event(event_agg_attack, 2, ch, victim, 0, 0, 0, 0);
+         return;
+       }
+    }
   }
 }
 

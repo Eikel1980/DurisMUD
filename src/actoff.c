@@ -4848,7 +4848,7 @@ void attack(P_char ch, P_char victim)
   }
   else if(victim == ch->specials.fighting)
   {
-    send_to_char("C'mon, you are doing it all the time!\n", ch);
+    act("You're already fighting %m, genius.\n", FALSE, ch, 0, victim, 0);
     return;
   }
   else

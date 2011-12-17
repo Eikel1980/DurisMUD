@@ -2510,6 +2510,7 @@ int devour(P_char ch, P_char pl, int cmd, char *arg)
 {
   P_obj    i, temp, next_obj;
 
+   return FALSE;// wipe2011
   /*
    * check for periodic event calls
    */
@@ -15922,7 +15923,7 @@ int bs_griffon(P_char ch, P_char pl, int cmd, char *arg)
     act("$n begins eyeing you quite intently.", TRUE, ch, 0, 0, TO_ROOM);
     return TRUE;
   case 3:
-    act("$n snaps the bone of a carcus $e is devouring.",
+    act("$n snaps the bone of a carcass $e is devouring.",
         TRUE, ch, 0, 0, TO_ROOM);
     return TRUE;
   default:

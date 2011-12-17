@@ -43,6 +43,7 @@ typedef unsigned long int ulong;
     (defined(_POSIX_SOURCE) && !defined(_SVID_SOURCE))
 typedef unsigned int uint;
 #endif
+
 /* rather than doing these over and over again, define once here and use the
    defines in the other defines.  JAB */
 
@@ -151,7 +152,7 @@ typedef unsigned int uint;
 #define ITEM_WEAR_ARMS      BIT_9
 #define ITEM_WEAR_SHIELD    BIT_10
 #define ITEM_WEAR_ABOUT     BIT_11
-#define ITEM_WEAR_WAIST    BIT_12
+#define ITEM_WEAR_WAIST     BIT_12
 #define ITEM_WEAR_WRIST     BIT_13
 #define ITEM_WIELD          BIT_14
 #define ITEM_HOLD           BIT_15

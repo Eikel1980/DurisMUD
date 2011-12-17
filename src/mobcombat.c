@@ -282,12 +282,11 @@ int top;
   case 4:
   case 5:
   case 6:
-  case 10:
     if( victim )
     {
       act("$n suddenly flares black, and encases you in darkness!", TRUE, ch, 0, victim, TO_VICT);
       act("$n emits a pure sphere of darkness, enveloping $N!", TRUE, ch, 0, victim, TO_NOTVICT);
-      blind(ch, victim, 10 * WAIT_SEC);
+      blind(ch, victim, 5 * WAIT_SEC);
     }
     break;
   default:
@@ -297,7 +296,7 @@ int top;
 
 void WraithCombat(P_char ch, P_char victim)
 {
-int top;
+   int top;
 
 // Multiclass will have other ability and specials to use.
   if(IS_MULTICLASS_NPC(ch))
@@ -379,9 +378,8 @@ int UndeadCombat(P_char ch)
 
   if(!IS_PC_PET(ch) &&
     (GET_RACE(ch) == RACE_GHOST || GET_RACE(ch) == RACE_SPECTRE ||
-    GET_RACE(ch) == RACE_WRAITH || GET_RACE(ch) == RACE_SHADOW ||
-    GET_RACE(ch) == RACE_BRALANI || GET_RACE(ch) == RACE_DEVA) &&
-    (number(1, 100) <= 10))
+     GET_RACE(ch) == RACE_WRAITH || GET_RACE(ch) == RACE_SHADOW ||
+     (number(1, 100) <= 10)))
   {
     GhostFearEffect(ch);
     return TRUE;
@@ -487,9 +485,9 @@ int BeholderCombat(P_char ch)
   {
     return TRUE;
   }
-/*  if (!number(0, 2))*/
 
-  gotlucky = TRUE;
+  if(GET_C_LUCK(ch) > number(0, 300))
+    gotlucky = TRUE;
 
   for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
   {
@@ -535,12 +533,6 @@ int BeholderCombat(P_char ch)
       if(currPC == luckyPC)
       {
         hitpc = TRUE;
-
-        /*
-         * mostly based on AD&D beholders - get sleep, telekinesis, flesh to
-         * stone (major para), disintegrate, fear, slow, and cause serious (more
-         * like full harm on Duris)
-         */
         random = number(0, 9);  // beholders will not proc every round - Jexni 5/15/09
         {
           /* sleep */

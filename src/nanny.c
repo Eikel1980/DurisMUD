@@ -85,7 +85,7 @@ extern int new_exp_table[];
 #define PLR_FLAGS(ch)          ((ch)->specials.act)
 #define PLR_FLAGGED(ch, flag)  (IS_SET(PLR_FLAGS(ch), flag))
 #define PLR_TOG_CHK(ch, flag)  ((TOGGLE_BIT(PLR_FLAGS(ch), (flag))) & (flag))
-#define ALLOCATE_AMT get_property("char.creation.allocation.amt", 200.000)
+#define ALLOCATE_AMT get_property("char.creation.allocate.amt", 200.000)
 
 void     email_player_info(char *, char *, struct descriptor_data *);
 extern int email_in_use(char *, char *);
@@ -3841,7 +3841,10 @@ void select_attrib(P_desc d, char *arg)
     default:
     {
       display_stats(d);
-      sprintf(instr, "Please select an attribute to modify, and an amount to modify it by.\r\nYou are allowed a total of %d points, but no stat can be below %d.\r\n                      Choose wisely.", ALLOCATE_AMT, min);
+      sprintf(instr, "        Please select an attribute to modify, and an amount to modify it by.\r\n"
+                     "         You are allowed a total of %d points, but no stat can be below %d.\r\n"
+                     "Stats above 75 come at a higher and higher price, take this into account when choosing.\r\n"
+                     "                                 Choose wisely.", ALLOCATE_AMT, min);
       SEND_TO_Q(instr, d);
       SEND_TO_Q(attribmod, d);
       sprintf(buf2 + strlen(buf2), "\r\nYou have %d points remaining to allocate.\r\n", GET_CR_PNTS(d));
@@ -3885,6 +3888,7 @@ void select_attrib(P_desc d, char *arg)
       display_stats(d);
       sprintf(buf2 + strlen(buf2), "\r\nYou have %d points remaining to allocate.\r\n", GET_CR_PNTS(d));
       SEND_TO_Q(buf2, d);
+      SEND_TO_Q("Please choose a statistic to change, and an amount to change it by, or (x) to keep these settings. \r\n", d);
     }
   }
 

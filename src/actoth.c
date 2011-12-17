@@ -6136,7 +6136,7 @@ void do_descend(P_char ch, char *arg, int cmd)
     if(GET_CLASS(ch, CLASS_NECROMANCER))
     {
       SELECTION = NECRO;
-      cost = get_property("descent.epicCost.Lich", 250);
+      cost = get_property("descend.epicCost.Lich", 2500);
     }
       /*
      if (!str_cmp(second_arg,  "Warrior")){

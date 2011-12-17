@@ -640,17 +640,6 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
 
 #define IS_PATROL(CH) (IS_NPC(CH) && IS_SET((CH)->specials.act, ACT_PATROL))
 
-/*
-#define IS_AGGRESSIVE(MOB) (IS_NPC(MOB) && \
-  ((IS_SET((MOB)->specials.act, ACT_AGGRESSIVE)) || \
-  (IS_SET((MOB)->specials.act, ACT_AGGRESSIVE_EVIL)) || \
-  (IS_SET((MOB)->specials.act, ACT_AGGRESSIVE_GOOD)) || \
-  (IS_SET((MOB)->specials.act, ACT_AGGRESSIVE_NEUTRAL)) || \
-  (IS_SET((MOB)->specials.act, ACT_AGG_RACEEVIL)) || \
-  (IS_SET((MOB)->specials.act, ACT_AGG_RACEGOOD)) || \
-  (IS_SET((MOB)->specials.act, ACT_AGG_OUTCAST))))
-*/
-
 #define IS_AGGRESSIVE(m) (IS_NPC(m) && ((m)->only.npc->aggro_flags || (m)->only.npc->aggro2_flags || (m)->only.npc->aggro3_flags))
 
 #define CHAR_IS_FLAGGED(CH)  \
