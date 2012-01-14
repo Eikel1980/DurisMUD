@@ -278,7 +278,8 @@ const char *spldam_types[] = {
   "holy",
   "psionic",
   "spiritual",
-  "sound"
+  "sound",
+  "extraplanar"
 };
 
 void update_racial_dam_factors()
@@ -307,24 +308,16 @@ void update_dam_factors()
   dam_factor[DF_TROLLSKIN] = get_property("damage.reduction.trollskin", 0.8);
   dam_factor[DF_BARKSKIN] = get_property("damage.reduction.barkskin", 0.90);
   dam_factor[DF_BERSERKMELEE] = get_property("damage.reduction.berserk", 0.10);
-  dam_factor[DF_SOULMELEE] =
-    get_property("damage.reduction.soulshield.melee", 0.8);
-  dam_factor[DF_SOULSPELL] =
-    get_property("damage.reduction.soulshield.spell", 0.8);
-  dam_factor[DF_NEG_SHIELD_SPELL] =
-    get_property("damage.reduction.negshield.spell", 0.8);
-  dam_factor[DF_PROTLIVING] =
-    get_property("damage.reduction.protLiving", 0.95);
-  dam_factor[DF_PROTANIMAL] =
-    get_property("damage.reduction.protAnimal", 0.8);
-  dam_factor[DF_PROTECTION] =
-    get_property("damage.reduction.protElement", 0.75);
-  dam_factor[DF_PROTECTION_TROLL] =
-    get_property("damage.reduction.protFire.Troll", 0.90);
-  dam_factor[DF_ELSHIELDRED_TROLL] =
-    get_property("damage.reduction.fireColdShield.Troll", 0.80);
-  dam_factor[DF_ELSHIELDRED] =
-    get_property("damage.reduction.fireColdShield", 0.55);
+  dam_factor[DF_SOULMELEE] = get_property("damage.reduction.soulshield.melee", 0.8);
+  dam_factor[DF_SOULSPELL] = get_property("damage.reduction.soulshield.spell", 0.8);
+  dam_factor[DF_NEG_SHIELD_SPELL] = get_property("damage.reduction.negshield.spell", 0.8);
+  dam_factor[DF_EXPLAN] = get_property("damage.increase.extraplanar", 1.15);
+  dam_factor[DF_PROTLIVING] = get_property("damage.reduction.protLiving", 0.95);
+  dam_factor[DF_PROTANIMAL] = get_property("damage.reduction.protAnimal", 0.8);
+  dam_factor[DF_PROTECTION] = get_property("damage.reduction.protElement", 0.75);
+  dam_factor[DF_PROTECTION_TROLL] = get_property("damage.reduction.protFire.Troll", 0.90);
+  dam_factor[DF_ELSHIELDRED_TROLL] = get_property("damage.reduction.fireColdShield.Troll", 0.80);
+  dam_factor[DF_ELSHIELDRED] = get_property("damage.reduction.fireColdShield", 0.55);
   dam_factor[DF_IRONWILL] =get_property("damage.reduction.towerOfIronWill", 0.5);
   dam_factor[DF_TIGERPALM] =get_property("damage.reduction.tigerpalm", 0.65);
   dam_factor[DF_ELAFFINITY] = get_property("damage.reduction.elementalAffinity", 0.25);
@@ -3072,7 +3065,7 @@ int try_riposte(P_char ch, P_char victim, P_obj wpn)
       TRUE, ch, 0, victim, TO_CHAR);
       
     hit(ch, victim, ch->equipment[PRIMARY_WEAPON]);
-    if(char_in_list(victim))
+    if(char_in_list(victim) && IS_ALIVE(victim))
       hit(ch, victim, ch->equipment[SECONDARY_WEAPON]);
     return true;      
   }
@@ -3086,8 +3079,7 @@ int try_riposte(P_char ch, P_char victim, P_obj wpn)
   }
   
   // Notching the skill means failing the riposte.
-  if(notch_skill
-    (ch, SKILL_RIPOSTE, get_property("skill.notch.defensive", 40)))
+  if(notch_skill(ch, SKILL_RIPOSTE, get_property("skill.notch.defensive", 40)))
       return false;
   
   // Much harder to riposte while knocked down
@@ -3103,9 +3095,9 @@ int try_riposte(P_char ch, P_char victim, P_obj wpn)
   if(IS_ELITE(ch))
   {
     if(GET_CLASS(ch, CLASS_WARRIOR) ||
-      GET_CLASS(ch, CLASS_ANTIPALADIN) ||
-      GET_CLASS(ch, CLASS_DREADLORD) ||
-      GET_CLASS(ch, CLASS_AVENGER))
+       GET_CLASS(ch, CLASS_ANTIPALADIN) || 
+       GET_CLASS(ch, CLASS_DREADLORD) ||
+       GET_CLASS(ch, CLASS_AVENGER))
     {
       skl += GET_LEVEL(ch) * (1. + (number(1, 10) / 20));
       npcepicriposte == true;
@@ -3239,72 +3231,40 @@ int try_riposte(P_char ch, P_char victim, P_obj wpn)
   }                             // same as above
 #endif
 
-  if(char_in_list(ch) && char_in_list(victim) &&
-    (skl = GET_CHAR_SKILL(ch, SKILL_FOLLOWUP_RIPOSTE)) > 0)
+  if(char_in_list(ch) && 
+     char_in_list(victim) && 
+     IS_ALIVE(ch) && 
+     IS_ALIVE(victim) &&
+     (skl = GET_CHAR_SKILL(ch, SKILL_FOLLOWUP_RIPOSTE)) > 0)
   { 
-    notch_skill(ch, SKILL_FOLLOWUP_RIPOSTE,
-      get_property("skill.notch.defensive", 40));
+    notch_skill(ch, SKILL_FOLLOWUP_RIPOSTE, get_property("skill.notch.defensive", 40));
        
-    if(number(0, 1) == 0)
+    if(skl / 3 > number(0, 100))
     {
-      if(skl / 3 > number(0, 100))
+      if(IS_HUMANOID(ch) && IS_HUMANOID(victim))
       {
-        act
-          ("Before $N can recover $n steps forward and slams $s fist into $S face.",
-           TRUE, ch, 0, victim, TO_NOTVICT);
-        act
-          ("Before $E can recover you step forward and slam your fist into $S face.",
-           TRUE, ch, 0, victim, TO_CHAR);
-        act
-          ("Before you can recover $n steps forward and slams $s fist into your face!",
-           TRUE, ch, 0, victim, TO_VICT);
-        victim_dead =
-          damage(ch, victim, 25 * ch->specials.damage_mod,
-          SKILL_FOLLOWUP_RIPOSTE);
-
-        if(!victim_dead &&
-          skl / 3 > number(0, 100))
-        {
-          act("As $N staggers back $n follows-up with a well-placed kick.",
-              TRUE, ch, 0, victim, TO_NOTVICT);
-          act("As $E staggers back you follow-up with a well-placed kick.",
-              TRUE, ch, 0, victim, TO_CHAR);
-          act("As you stagger from the blow $n follows-up with a well-placed kick.",
-             TRUE, ch, 0, victim, TO_VICT);
-          melee_damage(ch, victim, dice(20, 6), 0, 0);
-        }
+        act("Before $N can recover $n steps forward and slams $s fist into $S face.",
+            TRUE, ch, 0, victim, TO_NOTVICT);
+        act("Before $E can recover you step forward and slam your fist into $S face.",
+            TRUE, ch, 0, victim, TO_CHAR);
+        act("Before you can recover $n steps forward and slams $s fist into your face!",
+            TRUE, ch, 0, victim, TO_VICT);
       }
-    }
-    else
-    {
-      if(skl / 3 > number(0, 100))
+      else
       {
-        act("Spinning around $n slams his elbow into $N's throat.", TRUE, ch,
-            0, victim, TO_NOTVICT);
-        act
-          ("Before you can react $n spins around and slams $s elbow into your throat.",
-           TRUE, ch, 0, victim, TO_VICT);
-        act("Spinning around you slam your elbow into $N's throat.", TRUE, ch,
-            0, victim, TO_CHAR);
-        victim_dead =
-          damage(ch, victim, 25 * ch->specials.damage_mod,
-          SKILL_FOLLOWUP_RIPOSTE);
+        act("Before $N can recover $n viciously attacks again!", TRUE, ch, 0, victim, TO_NOTVICT);
+        act("Before $E can recover, you viciously attack $M again!", TRUE, ch, 0, victim, TO_CHAR);
+        act("Before you can recover $n viciously attacks you again!", TRUE, ch, 0, victim, TO_VICT);
+      }
+     
+      victim_dead = melee_damage(ch, victim, (GET_LEVEL(ch) / 2) * ch->specials.damage_mod, PHSDAM_NOREDUCE, 0);
 
-        if(!victim_dead &&
-          skl / 3 > number(0, 100))
-        {
-          act
-            ("...then steps forward and brutally slams $s head into $N's face.",
-             TRUE, ch, 0, victim, TO_NOTVICT);
-          act
-            ("As $E gasps for breath you step forward and slam your head into $S face. ",
-             TRUE, ch, 0, victim, TO_CHAR);
-          act
-            ("As you stagger and gasp for breath $e steps forward and slams $s head into your face. Yikes!",
-             TRUE, ch, 0, victim, TO_VICT);
-          damage(ch, victim, dice(20, 6), SKILL_FOLLOWUP_RIPOSTE);
-        }
-
+      if(victim_dead == DAM_NONEDEAD && skl / 3 > number(0, 200))
+      {
+        act("As $N staggers back $n follows-up with another brutal attack!", TRUE, ch, 0, victim, TO_NOTVICT);
+        act("As $E staggers back you follow-up with another brutal attack!", TRUE, ch, 0, victim, TO_CHAR);
+        act("As you stagger from the blow $n follows-up with another brutal attack!", TRUE, ch, 0, victim, TO_VICT);
+        melee_damage(ch, victim, dice(4, GET_LEVEL(ch) / 10), PHSDAM_NOREDUCE, 0);
       }
     }
   }
@@ -3381,7 +3341,6 @@ bool can_hit_target(P_char ch, P_char vict)
   return TRUE;
 }
 
-
 /*
  * This function is now merely a wrapper translating old-style arguments to the new
  * damage API. It is provided for backward compatibility and should not be
@@ -3447,20 +3406,19 @@ bool damage(P_char ch, P_char victim, double dam, int attacktype)
  * explanation for some arguments:
  *
  * flags - a value describing damage type, used to check protections, vulnerabilities
- *        one of SPLDAM_FIRE, SPLDAM_COLD, SPLDAM_GAS, SPLDAM_ACID, SPLDAM_GENERIC,
- *        SPLDAM_LIGHTING, SPLDAM_NEGATIVE, SPLDAM_HOLY
- *        maybe be combined with one of the flags: SPLDAM_ISBREATH, SPLDAM_NOSHRUG
+ *        i.e. SPLDAM_FIRE, in the form of SPLDAM_XXXX and may be combined with one of the type flags,
+ *        such as SPLDAM_ISBREATH or SPLDAM_NOSHRUG to create a complete damage type description
  *        for example SPLDAM_GAS | SPLDAM_ISBREATH for gaseous breath
- *        SPLDAM_NOSHRUG decides whether damage can be deflected, shrugged, absorbed with proc
- *        in most cases not set, exceptions are damage from soulhield, fireshield, throw lightning
- *        some item procs
- * magic_circle - spell's circle, used in globe checks
+ *        SPLDAM_NOSHRUG determines whether damage can be shrugged, absorbed with proc etc.
+ *        SPLDAM_NODEFLECT determines whether damage can be deflected etc.
+ *        in most cases, these delimiters may not be set, exceptions are damage from soulshield, fireshield
+ *        throw lightning and some item procs
+ *
+ *        magic_circle - spell's circle, used in globe checks
  *
  * TO DO:
- *   consider implementing globe checks as extra flags like SPLDAM_MINORGLOBEBLOCKS,
- *   SPLDAM_SPIRITWARDBLOCKS etc
- *   replace SPLDAM_ prefix with something else, it may collide with constants
- *   for spells. SPLDAM, PHSDAM
+ *        replace SPLDAM_ prefix with something else, it may collide with constants
+ *        for spells.
  */
 int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
                  struct damage_messages *messages)
@@ -3526,8 +3484,8 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
   // Lom: as I moved elementalist dam update here, so vamping(fire elemental from fire spell)
   //      will be correctly increased as he does more dmg
   if(ELEMENTAL_DAM(type) &&
-    GET_SPEC(ch, CLASS_SHAMAN, SPEC_ELEMENTALIST) &&
-    GET_LEVEL(ch) >= 35)
+     GET_SPEC(ch, CLASS_SHAMAN, SPEC_ELEMENTALIST) &&
+     GET_LEVEL(ch) >= 35)
         dam *= dam_factor[DF_ELEMENTALIST];
   
   if(ELEMENTAL_DAM(type) &&
@@ -3536,73 +3494,19 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
   
   // Lom: honestly I would like put globe/sphere/deflect/etc checks first,
   //      so could not heal globed fire elemental with fireball or burning hands
-
-  // vamping from spells might happen
-  if(type == SPLDAM_FIRE &&
-    ch != victim &&
-    ((IS_AFFECTED2(victim, AFF2_FIRE_AURA) &&
-    IS_AFFECTED2(victim, AFF2_FIRESHIELD)) ||
-    GET_RACE(victim) == RACE_F_ELEMENTAL))
-  {
-    act("$N&+R absorbs your spell!",
-      FALSE, ch, 0, victim, TO_CHAR);
-    act("&+RYou absorb&n $n's&+R spell!",
-      FALSE, ch, 0, victim, TO_VICT);
-    act("$N&+R absorbs&n $n's&+R spell!",
-      FALSE, ch, 0, victim, TO_NOTVICT);
-    vamp(victim,  dam / 4, GET_MAX_HIT(victim) * 1.3);
-    
-    // Solving issue of fire elementals not unmorting after vamping from fire spell
-    update_pos(victim);
-    if(IS_NPC(victim))
-      do_alert(victim, NULL, 0);
-
-    return DAM_NONEDEAD;
-  }
-  if(type == SPLDAM_COLD &&
-    ch != victim &&
-    ((IS_AFFECTED4(victim, AFF4_ICE_AURA)) && 
-    IS_AFFECTED3(victim, AFF3_COLDSHIELD)))
-  {
-    act("$N&+C absorbs your spell!",
-      FALSE, ch, 0, victim, TO_CHAR);
-    act("&+CYou absorb&n $n's&+C spell!",
-      FALSE, ch, 0, victim, TO_VICT);
-    act("$N&+C absorbs&n $n's &+Cspell!",
-      FALSE, ch, 0, victim, TO_NOTVICT);
-    vamp(victim, dam / 4, GET_MAX_HIT(victim) * 1.3); 
-
-    update_pos(victim);
-    if(IS_NPC(victim))
-      do_alert(victim, NULL, 0);
-  
-    return DAM_NONEDEAD;
-  }
-
-  // end of vamping(is non agro now)
-  // Lom: I think should set memory here, before messages
-  // Lom: also might put globe check prior damage messages
-
-  // victim remembers attacker 
-  remember(victim, ch);
-
-  if(IS_PC_PET(ch) &&
-      GET_MASTER(ch)->in_room == ch->in_room &&
-      CAN_SEE(victim, GET_MASTER(ch)))
-  {
-    remember(victim, GET_MASTER(ch));
-  }
+  //      DONE!  Jexni 1/14/12
 
   if(has_innate(victim, INNATE_EVASION) &&
-      GET_SPEC(victim, CLASS_MONK, SPEC_WAYOFDRAGON))
+     GET_SPEC(victim, CLASS_MONK, SPEC_WAYOFDRAGON))
   {
-    if((((int) get_property("innate.evasion.removechance", 15.000))) > number(1,100))
+    if(((int) get_property("innate.evasion.removechance", 15.000)) > number(1, 100))
     {
       send_to_char("You twist out of the way avoiding the harmful magic!\n", victim);
       act ("$n twists out of the way avoiding the harmful magic!", FALSE, victim, 0, ch, TO_ROOM);
       return DAM_NONEDEAD;
     }
   }    
+
   // globes check
   if(ch != victim)
   {
@@ -3611,9 +3515,9 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
     (IS_AFFECTED3(victim, AFF3_GR_SPIRIT_WARD) &&
     (flags & SPLDAM_GRSPIRIT)))
     {
-      act("&+WThe globe around your body flares as it bears the brunt of&n $n&+W's assault!",
+      act("&+WThe spiritual globe around your body flares as it bears the brunt of $n&+W's assault!",
          FALSE, ch, 0, victim, TO_VICT | ACT_NOTTERSE);
-      act("&+WThe globe around&n $N&+W's body flares as it bears the brunt of your assault!",
+      act("&+WThe spiritual globe around $N&+W's body flares as it bears the brunt of your assault!",
          FALSE, ch, 0, victim, TO_CHAR | ACT_NOTTERSE);
       attack_back(ch, victim, FALSE);
       return DAM_NONEDEAD;
@@ -3623,9 +3527,9 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
       (IS_AFFECTED2(victim, AFF2_GLOBE) &&
       (flags & SPLDAM_GLOBE)))
     {
-      act("&+RThe globe around your body flares as it bears the brunt of&n $n&+R's assault!",
+      act("&+RThe globe around your body flares as it bears the brunt of $n&+R's assault!",
          FALSE, ch, 0, victim, TO_VICT | ACT_NOTTERSE);
-      act("&+RThe globe around&n $N&+R's body flares as it bears the brunt of your assault!",
+      act("&+RThe globe around $N&+R's body flares as it bears the brunt of your assault!",
          FALSE, ch, 0, victim, TO_CHAR | ACT_NOTTERSE);
       attack_back(ch, victim, FALSE);
       return DAM_NONEDEAD;
@@ -3634,24 +3538,20 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
   // end of globes check
 
   /* check for deflectable spells - basically all but shields damage and already deflected spells */
-  if((ch != victim) &&
-     !IS_SET(flags, SPLDAM_NODEFLECT))
+  if((ch != victim) && !IS_SET(flags, SPLDAM_NODEFLECT))
   {
     /* deflection */
-    if(IS_AFFECTED4(victim, AFF4_DEFLECT) &&
-      IS_ALIVE(ch))
+    if(IS_AFFECTED4(victim, AFF4_DEFLECT) && IS_ALIVE(ch))
     {
-      act("&+cA &+Ctranslucent&n&+c field &+Wflashes&n&+c around your body upon contact with&n $n&n&+c's assault, deflecting it back at $m!",
+      act("&+cThe &+Ctranslucent &+cfield around your body &+Wflashes &+cunder $n&+c's assault, deflecting it back at $m!",
          FALSE, ch, 0, victim, TO_VICT);
-      act("&+cA &+Ctranslucent&n&+c field &+Wflashes&n&+c around&n $N&n&+c's body upon contact with&n $n&n&+c's assault, deflecting it back at $m!",
+      act("&+cThe &+Ctranslucent &+cfield around $N&+c's body &+Wflashes &+cunder $n&+c's assault, deflecting it back at $m!",
          FALSE, ch, 0, victim, TO_NOTVICT);
-      act("&+cA &+Ctranslucent&n&+c field &+Wflashes&n&+c around&n $N&n&+c's body upon contact with your assault, deflecting it back at YOU!",
+      act("&+cThe &+Ctranslucent &+cfield around $N&+c's body &+Wflashes &+cunder your assault, deflecting it back at YOU!",
          FALSE, ch, 0, victim, TO_CHAR);
 
       affect_from_char(victim, SPELL_DEFLECT);
-      result =
-        spell_damage(ch, ch, dam * 0.7, type, flags | SPLDAM_NODEFLECT,
-                     messages);
+      result = spell_damage(ch, ch, dam * 0.7, type, flags | SPLDAM_NODEFLECT, messages);
 
       if(result == DAM_NONEDEAD)
       {
@@ -3681,8 +3581,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
         data.attacktype = type;
         data.flags = flags;
         data.messages = messages;
-        if((*obj_index[item->R_num].func.obj) (item, victim, CMD_GOTNUKED,
-                                                (char *) &data))
+        if((*obj_index[item->R_num].func.obj) (item, victim, CMD_GOTNUKED, (char *) &data))
         {
           if(GET_STAT(victim) == STAT_DEAD)
             return DAM_VICTDEAD;
@@ -3705,8 +3604,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
       data.flags = flags;
       data.messages = messages;
 
-      if((*mob_index[GET_RNUM(victim)].func.mob) (victim, ch, CMD_GOTNUKED,
-                                              (char *) &data))
+      if((*mob_index[GET_RNUM(victim)].func.mob) (victim, ch, CMD_GOTNUKED, (char *) &data))
       {
         if(GET_STAT(victim) == STAT_DEAD)
           return DAM_VICTDEAD;
@@ -3719,38 +3617,33 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
 
     if(IS_AFFECTED4(victim, AFF4_STORNOGS_SPHERES))
     {
-      act("&+RThe sphere circling you darts in front of&n $n&+R's assault, absorbing its magic and leaving you unharmed!",
+      act("&+RA sphere circling you darts in front of&n $n&+R's assault, absorbing its magic and leaving you unharmed!",
          FALSE, ch, 0, victim, TO_VICT);
-      act("&+RThe sphere circling&n $N&+R's body darts in front of&n $n&+R's assault!",
-         FALSE, ch, 0, victim, TO_NOTVICT);
-      act("&+RThe sphere circling&n $N&+R's body darts in front of your assault!",
-         FALSE, ch, 0, victim, TO_CHAR);
+      act("&+RA sphere circling $N&+R's body darts in front of&n $n&+R's assault!", FALSE, ch, 0, victim, TO_NOTVICT);
+      act("&+RThe sphere circling $N&+R's body darts in front of your assault!", FALSE, ch, 0, victim, TO_CHAR);
       af = get_spell_from_char(victim, SPELL_STORNOGS_SPHERES);
 
       if(af && --af->modifier == 0)
       {
         affect_from_char(victim, SPELL_STORNOGS_SPHERES);
         REMOVE_BIT(victim->specials.affected_by4, AFF4_STORNOGS_SPHERES);
-        send_to_char("The last sphere protecting you disappears.\r\n",
-                     victim);
+        send_to_char("The last sphere protecting you disappears.\r\n", victim);
       }
       attack_back(ch, victim, FALSE);
       return DAM_NONEDEAD;
     }
 
-    if(GET_CHAR_SKILL(victim, SKILL_ARCANE_RIPOSTE) > 0 &&
-        !IS_TRUSTED(victim))
+    if(GET_CHAR_SKILL(victim, SKILL_ARCANE_RIPOSTE) > 0 && !IS_TRUSTED(victim))
     {
       int skill_lvl = GET_CHAR_SKILL(victim, SKILL_ARCANE_RIPOSTE);
         
       if(!IS_STUNNED(victim) &&
-        (dam > 10 && 
-        notch_skill(victim, SKILL_ARCANE_RIPOSTE, get_property("skill.notch.arcane", 100))) ||
+        (dam > 10 && notch_skill(victim, SKILL_ARCANE_RIPOSTE, get_property("skill.notch.arcane", 100))) ||
         (number(1, 100) < skill_lvl / 8))
       {
-        act("$N frowns in &+cconcentration&n as $E intercepts $n's spell and &+Churls it back at $m!&n",
+        act("$N &+cconcentrates visibly as $E intercepts $n's spell and &+Churls it back at $m!&n",
           TRUE, ch, 0, victim, TO_NOTVICT);
-        act("$N frowns in &+cconcentration&n as $E intercepts your spell and &+Churls it back at you!&n",
+        act("$N &+cconcentrates visibily as $E intercepts your spell and &+Churls it back at you!&n",
           TRUE, ch, 0, victim, TO_CHAR);
         act("With &+cgreat mastery&n you intercept $n's spell and &+Churl it back at $m!&n",
           TRUE, ch, 0, victim, TO_VICT);
@@ -3780,20 +3673,25 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
         number(1, 200) <= (GET_LEVEL(victim) + GET_C_LUCK(victim) / 10) ||
         ((IS_ELITE(victim) || IS_GREATER_RACE(victim)) && !number(0, 4))))
       {
-        act("$N raises hands performing an &+Marcane gesture&n and some of $n's &+mspell energy&n is dispersed.",
+        act("$N performs an &+Marcane gesture&n and some of $n's &+mspell energy&n is dispersed.",
           TRUE, ch, 0, victim, TO_NOTVICT);
-        act("$N raises hands performing an &+Marcane gesture&n and some of your &+mspell's energy&n is dispersed.",
+        act("$N performs an &+Marcane gesture&n and some of your &+mspell's energy&n is dispersed.",
           TRUE, ch, 0, victim, TO_CHAR);
-        act("You perform an &+Marcane gesture&n dispersing some of $n's &+mmspell energy.&n",
+        act("You perform an &+Marcane gesture&n dispersing some of $n's &+mspell energy.",
           TRUE, ch, 0, victim, TO_VICT);
-        dam = dam - number(1, (get_property("skill.arcane.block.dam.reduction", .004) * GET_CHAR_SKILL(victim, SKILL_ARCANE_BLOCK) * dam));
+        int reduction = get_property("skill.arcane.block.dam.reduction", .004);
+        dam = dam - number(1, reduction * GET_CHAR_SKILL(victim, SKILL_ARCANE_BLOCK) * dam);
       }
     }
 
     if(GET_CHAR_SKILL(victim, SKILL_DISPERSE_FLAMES) &&
        type == SPLDAM_FIRE &&
        GET_CHAR_SKILL(victim, SKILL_DISPERSE_FLAMES) > number(0, 100) &&
-       !IS_TRUSTED(victim))
+       !IS_TRUSTED(victim) &&
+       ch != victim &&
+       (!(IS_AFFECTED2(victim, AFF2_FIRE_AURA) &&
+       IS_AFFECTED2(victim, AFF2_FIRESHIELD)) ||
+       GET_RACE(victim) == RACE_F_ELEMENTAL))  // if you can absorb, you're not going to disperse - Jexni 1/14/12
     {
       if((dam > 10 && notch_skill(victim, SKILL_DISPERSE_FLAMES,
            get_property("skill.notch.pyrokinetics", 100))) ||
@@ -3808,27 +3706,29 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
          return DAM_NONEDEAD;
       }
      
-
       if(GET_CHAR_SKILL(victim, SKILL_FLAME_MASTERY) &&
-        type == SPLDAM_FIRE &&
-        GET_CHAR_SKILL(victim, SKILL_FLAME_MASTERY) > number(0, 100) &&
-        !IS_TRUSTED(victim))
+         type == SPLDAM_FIRE &&
+         GET_CHAR_SKILL(victim, SKILL_FLAME_MASTERY) > number(0, 100) &&
+         !IS_TRUSTED(victim) &&
+         ch != victim &&
+         number(0, 1) &&
+         (!(IS_AFFECTED2(victim, AFF2_FIRE_AURA) &&
+         IS_AFFECTED2(victim, AFF2_FIRESHIELD)) ||
+         GET_RACE(victim) == RACE_F_ELEMENTAL))  // if you can absorb, you might send them back - Jexni 1/14/12)
       {
-        if((dam > 10 && notch_skill(victim, SKILL_FLAME_MASTERY,
-                                     get_property("skill.notch.pyrokinetics", 100))) ||
-            (!number(0, 10) && number(1, 56) <= GET_LEVEL (ch)))
+        if((dam > 10 && 
+            notch_skill(victim, SKILL_FLAME_MASTERY, get_property("skill.notch.pyrokinetics", 100))) ||
+           (!number(0, 10) && number(1, 56) <= GET_LEVEL (ch)))
         {
-          act("$N &+rsmiles slightly as $E stops the &+Yflames &+rsummoned by&n $n &+rand hurls them back at $m!&n",
+          act("$N &+rsmiles slightly as $E stops the &+Yflames &+rsummoned by $n &+rand hurls them back at $m!",
             TRUE, ch, 0, victim, TO_NOTVICT);
-          act("&+rTo your horror you see&n $N &+rsmile slightly as $E halts the &+Yflames &+rand hurls them back at you!&n",
+          act("&+rTo your horror you see&n $N &+rsmile slightly as $E halts the &+Yflames &+rand hurls them back at you!",
             TRUE, ch, 0, victim, TO_CHAR);
-          act("&+rYou laugh as you send &+Yflames &+rand burning &+Wectoplasm &+rback towards&n $n.&n",
+          act("&+rYou laugh as you send &+Yflames &+rand burning &+Wectoplasm &+rback towards $n.&n",
               TRUE, ch, 0, victim, TO_VICT);
-          result =
-            spell_damage(victim, ch,
-                         GET_CHAR_SKILL(victim,
-                                        SKILL_FLAME_MASTERY) * dam / 80, type,
-                         flags, messages);
+          int skill = GET_CHAR_SKILL(victim, SKILL_FLAME_MASTERY);
+          result = spell_damage(victim, ch, skill * dam / 80, type, flags, messages);
+
           if(result == DAM_VICTDEAD)
           {
             return DAM_CHARDEAD;
@@ -3842,57 +3742,110 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
         }
       }
     }                             /* end deflectable */
-  }	
-    if(!(flags & SPLDAM_NOSHRUG) && spell_msg_data.true_false)
+  }
+
+  // vamping from spells might happen
+  if(type == SPLDAM_FIRE &&
+    ch != victim &&
+    ((IS_AFFECTED2(victim, AFF2_FIRE_AURA) &&
+    IS_AFFECTED2(victim, AFF2_FIRESHIELD)) ||
+    GET_RACE(victim) == RACE_F_ELEMENTAL))
+  {
+    act("$N&+R absorbs your spell!",
+      FALSE, ch, 0, victim, TO_CHAR | ACT_NOTTERSE);
+    act("&+RYou absorb&n $n's&+R spell!",
+      FALSE, ch, 0, victim, TO_VICT | ACT_NOTTERSE);
+    act("$N&+R absorbs&n $n's&+R spell!",
+      FALSE, ch, 0, victim, TO_NOTVICT | ACT_NOTTERSE);
+    vamp(victim,  dam / 4, GET_MAX_HIT(victim) * 1.3);
+    
+    // Solving issue of fire elementals not unmorting after vamping from fire spell
+    update_pos(victim);
+    if(IS_NPC(victim))
+      do_alert(victim, NULL, 0);
+
+    return DAM_NONEDEAD;
+  }
+  if(type == SPLDAM_COLD &&
+    ch != victim &&
+    ((IS_AFFECTED4(victim, AFF4_ICE_AURA)) && 
+    IS_AFFECTED3(victim, AFF3_COLDSHIELD)))
+  {
+    act("$N&+C absorbs your spell!",
+      FALSE, ch, 0, victim, TO_CHAR | ACT_NOTTERSE);
+    act("&+CYou absorb&n $n's&+C spell!",
+      FALSE, ch, 0, victim, TO_VICT | ACT_NOTTERSE);
+    act("$N&+C absorbs&n $n's &+Cspell!",
+      FALSE, ch, 0, victim, TO_NOTVICT | ACT_NOTTERSE);
+    vamp(victim, dam / 4, GET_MAX_HIT(victim) * 1.3); 
+
+    update_pos(victim);
+    if(IS_NPC(victim))
+      do_alert(victim, NULL, 0);
+  
+    return DAM_NONEDEAD;
+  }
+
+  /* Guess we'll put the new ether spells here */
+  if(type == SPLDAM_FIRE && affected_by_spell(victim, SPELL_ICE_ARMOR))
+  {
+    act("$N&+C's &+bicy &+Bshield &+wmelts &+Cfrom $n&+C's &+Rf&+ri&+Ye&+rr&+Ry &+rassault, &+Cbut leaves $M unharmed!",
+        TRUE, ch, 0, victim, TO_NOTVICT);
+    act("$N&+C's &+bicy &+Bshield &+wmelts &+Cfrom your &+Rf&+ri&+Ye&+rr&+Ry &+rassault, &+Cbut leaves $M unharmed!",
+        TRUE, ch, 0, victim, TO_CHAR);
+    act("&+CYour &+bicy &+Bshield &+wmelts &+Cfrom the &+Rf&+ri&+Ye&+rr&+Ry &+rassault, &+Cbut leaves you unharmed!",
+        TRUE, ch, 0, victim, TO_VICT);
+    affect_from_char(victim, SPELL_ICE_ARMOR);
+    return DAM_NONEDEAD;
+  }
+
+  if(type == SPLDAM_HOLY && affected_by_spell(victim, SPELL_NEG_ARMOR))
+  {
+    act("$n's &+Wh&+wo&+Ll&+Wy &+wspell &+Ldisperses the negative shield surrounding $N&+L, but leaves $M unharmed!",
+        TRUE, ch, 0, victim, TO_NOTVICT);
+    act("&+LThe &+Wh&+wo&+Ll&+Wy &+wspell &+Ldisperses the negative shield surrounding $N&+L, but leaves $M unharmed!",
+        TRUE, ch, 0, victim, TO_CHAR);
+    act("&+LThe barrier of negative energy &=LWflashes&n &+Las the &+Wh&+wo&+Ll&+Wy &+wspell &+Ldisperses it, leaving you unharmed!",
+        TRUE, ch, 0, victim, TO_VICT);
+    affect_from_char(victim, SPELL_NEG_ARMOR);
+    return DAM_NONEDEAD;
+  }
+ 	/* End Ethermancer Absorb Spells */
+
+  // end of vamping/absorb
+  // victim remembers attacker 
+  remember(victim, ch);
+
+  if(IS_PC_PET(ch) &&
+      GET_MASTER(ch)->in_room == ch->in_room &&
+      CAN_SEE(victim, GET_MASTER(ch)))
+  {
+    remember(victim, GET_MASTER(ch));
+  }
+	
+  if(!(flags & SPLDAM_NOSHRUG) && spell_msg_data.true_false)
+  {
+    if(dam / 100 > number(1, 7) &&
+       has_innate(victim, INNATE_SPELL_ABSORB) &&
+       number(0, 100) < GET_LEVEL(victim) && IS_CASTER(victim))
     {
-      if(dam / 100 > number(1, 7) &&
-          has_innate(victim, INNATE_SPELL_ABSORB) &&
-          number(0, 100) < GET_LEVEL(victim) && IS_CASTER(victim))
+      for (circle = get_max_circle(victim); circle >= 1; circle--)
       {
-        for (circle = get_max_circle(victim); circle >= 1; circle--)
+        if(victim->specials.undead_spell_slots[circle] < max_spells_in_circle(victim, circle))
         {
-          if(victim->specials.undead_spell_slots[circle] <
-              max_spells_in_circle(victim, circle))
-          {
-            send_to_char("&+LYou feel power surge into you.&n\r\n", victim);
-            victim->specials.undead_spell_slots[circle]++;
-            break;
-          }
+          send_to_char("&+LYou feel power surge into you.&n\r\n", victim);
+          victim->specials.undead_spell_slots[circle]++;
+          break;
         }
       }
-      attack_back(ch, victim, FALSE);
-      return DAM_NONEDEAD;
     }
+    attack_back(ch, victim, FALSE);
+    return DAM_NONEDEAD;
+  }
 
-    /* Guess we'll put the new ether spells here */
-    if(type == SPLDAM_FIRE && affected_by_spell(victim, SPELL_ICE_ARMOR))
-    {
-       act("&+C$N&+C's &+WI&+Cc&+wy &+BShield &+Rmelts &+Caround $M from $n's &+Rf&+ri&+Yer&+Ry &+rassault, &+Cbut leaves $M unharmed!",
-         TRUE, ch, 0, victim, TO_NOTVICT);
-       act("&+C$N&+C's &+WI&+Cc&+wy &+BShield &+Rmelts &+Caround $M from your &+Rf&+ri&+Yer&+Ry &+rassault, &+Cbut leaves $M unharmed!",
-         TRUE, ch, 0, victim, TO_CHAR);
-       act("&+CYour &+Wi&+Cc&+wy &+Bshield &+Rmelts &+Caround you from the &+Rf&+ri&+Yer&+Ry &+rassault, &+Cbut leaves you unharmed!&n",
-         TRUE, ch, 0, victim, TO_VICT);
-       affect_from_char(victim, SPELL_ICE_ARMOR);
-       return DAM_NONEDEAD;
-     }
-
-    if(type == SPLDAM_HOLY && affected_by_spell(victim, SPELL_NEG_ARMOR))
-    {
-       act("$n's &+WH&+wo&+Ll&+Wy &+wspell &+Ldisperses the negative shield surrounding $N&+L, but leaves $M unharmed!&n",
-         TRUE, ch, 0, victim, TO_NOTVICT);
-       act("&+LThe &+WH&+wo&+Ll&+Wy &+wspell &+Ldisperses the negative shield surrounding $N&+L, but leaves $M unharmed!&n",
-         TRUE, ch, 0, victim, TO_CHAR);
-       act("&+LThe barrier of negative energy &=LWFLASHES&n &+Las the &+WH&+wo&+Ll&+Wy &+wspell &+Ldisperses your shield but leaves you unharmed!&n",
-         TRUE, ch, 0, victim, TO_VICT);
-       affect_from_char(victim, SPELL_NEG_ARMOR);
-       return DAM_NONEDEAD;
-    }
-	/* End Ethermancer Absorb Spells */
-
-    if(!(flags & SPLDAM_NODEFLECT) &&
-      IS_AFFECTED4(victim, AFF4_HELLFIRE) &&
-      !number(0, (11 - GET_LEVEL(victim))))
+  if(!(flags & SPLDAM_NODEFLECT) &&
+       IS_AFFECTED4(victim, AFF4_HELLFIRE) &&
+       !number(0, (11 - GET_LEVEL(victim))))
     {
        act("&+LYour spell is absorbed by&n $N's &+Rhellfire!",
          FALSE, ch, 0, victim, TO_CHAR);
@@ -3900,8 +3853,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
          FALSE, ch, 0, victim, TO_VICT);
        act("$n's&+L spell is absorbed by&n $N's &+Rhellfire!",
          FALSE, ch, 0, victim, TO_NOTVICT);
-       vamp(victim, dam * get_property("vamping.hellfire.absorb", 0.14),
-            (int)(GET_MAX_HIT(victim) * 1.3));
+       vamp(victim, dam * get_property("vamping.hellfire.absorb", 0.14), (int)(GET_MAX_HIT(victim) * 1.3));
        return DAM_NONEDEAD;
     }
 
@@ -3910,10 +3862,10 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
     {
     case SPLDAM_GENERIC:
       if(has_innate(victim, MAGICAL_REDUCTION))
-        dam *= 0.85;
+        dam *= 0.90;
       break;
     case SPLDAM_FIRE:
-      if( IS_AFFECTED4(victim, AFF4_ICE_AURA) )
+      if(IS_AFFECTED4(victim, AFF4_ICE_AURA))
       {
         act("&+rYour fiery spell causes&n $N to &+rsmolder and spasm in pain!&n",
            TRUE, ch, 0, victim, TO_CHAR);
@@ -3934,10 +3886,8 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
           dam *= dam_factor[DF_PROTECTION_TROLL];
 
         send_to_char("&+RThe flames cause your skin to &+Lsmoke!\r\n", victim);
-        act("&+rThe intense &+Rflames &+rcause&n $n's skin to &+rsmolder and &+Yburn!&n",
-          FALSE, victim, 0, 0, TO_VICT);
-        act("&+rThe intense &+Rflames &+rcause&n $n's skin to &+rsmolder and &+Yburn!&n",
-          FALSE, victim, 0, 0, TO_NOTVICT);
+        act("&+rThe intense &+Rflames &+rcause&n $n's skin to &+rsmolder and &+Yburn!&n", FALSE, victim, 0, 0, TO_VICT);
+        act("&+rThe intense &+Rflames &+rcause&n $n's skin to &+rsmolder and &+Yburn!&n", FALSE, victim, 0, 0, TO_NOTVICT);
           
         if(!affected_by_spell(ch, TAG_TROLL_BURN))
         {
@@ -3946,7 +3896,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
           bzero(&af, sizeof(af));
           af.type = TAG_TROLL_BURN;
           af.flags = AFFTYPE_SHORT | AFFTYPE_NOSHOW | AFFTYPE_NODISPEL;
-          af.duration = WAIT_SEC * 30;
+          af.duration = WAIT_SEC * 20;
           affect_to_char(victim, &af);
         }
         else
@@ -3956,7 +3906,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
           {
             if(af1->type == TAG_TROLL_BURN)
             {
-              af1->duration =  WAIT_SEC * 30;
+              af1->duration =  WAIT_SEC * 20;
             }
           }
         }
@@ -3981,13 +3931,13 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
         if(ilogb(dam) > number(6, 10))
         {
           make_dry(victim);
-          send_to_char("The heat of the spell dried up your clothes completely!\n", victim);
+          send_to_char("The heat of the spell dries you off completely!\n", victim);
         }
       }
 
       break;
     case SPLDAM_COLD:
-       if(GET_RACE(victim) == RACE_F_ELEMENTAL || IS_EFREET(victim) )
+       if(GET_RACE(victim) == RACE_F_ELEMENTAL || IS_EFREET(victim))
        {
          act("&+BYour icy spell makes&n $N &+Bwrithe in agony!&n",
           TRUE, ch, 0, victim, TO_CHAR);
@@ -3997,7 +3947,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
           TRUE, ch, 0, victim, TO_NOTVICT);
          dam *= (int) (IS_EFREET(victim) ? (.75 * dam_factor[DF_VULNCOLD]) : (dam_factor[DF_VULNCOLD]));
        }
-       else if( IS_AFFECTED2(victim, AFF2_FIRE_AURA) )
+       else if(IS_AFFECTED2(victim, AFF2_FIRE_AURA))
        {
          act("&+BYour icy spell makes&n $N &+Bwrithe in agony!&n",
             TRUE, ch, 0, victim, TO_CHAR);
@@ -4064,16 +4014,17 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
             levelmod = 1.25;
           }
           dam = (int) (dam * levelmod);
-        }  
-        //dam *= get_property("damage.holy.increase.modifierVsUndead", 2.000);
+        }
+        else  
+          dam *= get_property("damage.holy.increase.modifierVsUndead", 2.000);
         
         if(GET_LEVEL(victim) < 56) // Message is not displayed versus level 56 and greater vampires.
         {
-          act("$N&+W wavers in agony, as the positive energies purge $s undead essence!&n",
+          act("$N &+Wwavers in agony, as the holy energies purge $s undead essence!&n",
             FALSE, ch, 0, victim, TO_CHAR);
-          act("&+WNooo! The holy power of&n $n&+W is almost too much...&n", FALSE, ch, 0,
+          act("&+WNooo! The holy power of $n&+W is almost too much...", FALSE, ch, 0,
             victim, TO_VICT);
-          act("$N&+W wavers in agony, as the positive energies sent by&n $n&+W purge $s essence!&n",
+          act("$N &+Wwavers in agony, as the holy energies sent by $n&+W purge $s essence!&n",
              FALSE, ch, 0, victim, TO_NOTVICT);
         }
       }
@@ -4102,6 +4053,9 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
         dam *= dam_factor[DF_SLSHIELDINCREASE];
       if(IS_AFFECTED4(victim, AFF4_NEG_SHIELD))
         dam *= dam_factor[DF_NEG_SHIELD_SPELL];
+      break;
+    case SPLDAM_EXPLAN:
+      dam *= dam_factor[DF_EXPLAN];
       break;
     default:
       break;
