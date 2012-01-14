@@ -3355,8 +3355,7 @@ bool damage(P_char ch, P_char victim, double dam, int attacktype)
 
   if(IS_SPELL_S(attacktype))
   {
-    if(attacktype == SPELL_HOLY_WORD || attacktype == SPELL_UNHOLY_WORD || 
-	attacktype == SPELL_VOICE_OF_CREATION)
+    if(attacktype == SPELL_HOLY_WORD || attacktype == SPELL_UNHOLY_WORD)
       type = SPLDAM_HOLY;
     else
       type = SPLDAM_GENERIC;

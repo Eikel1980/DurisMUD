@@ -1641,8 +1641,7 @@ bool check_mob_retaliate(P_char ch, P_char tar_char, int spl)
          if the below conditional is true, then ITS NOT AN AGGRO SPELL!
        */
       if (((spl == SPELL_HOLY_WORD) && !IS_EVIL(tch)) ||
-          ((spl == SPELL_UNHOLY_WORD) && !IS_GOOD(tch)) ||
-	  ((spl == SPELL_VOICE_OF_CREATION)) && !IS_EVIL(tch))
+          ((spl == SPELL_UNHOLY_WORD) && !IS_GOOD(tch)))
         continue;
 
       if (number(1, 150) > (GET_LEVEL(tch) + STAT_INDEX(GET_C_INT(tch))))
@@ -2195,7 +2194,7 @@ void do_cast(P_char ch, char *argument, int cmd)
 
   if (get_spell_circle(ch, tmp_spl.spell) == get_max_circle(ch)
       && number(0,100) > GET_C_AGI(ch)/2 + 50)
-    add_event(event_abort_spell, number(0,9)*dura/10, ch, 0, 0, 0, 0, 0);
+    add_event(event_abort_spell, number(0, 9) * dura / 10, ch, 0, 0, 0, 0, 0);
 
   dura = BOUNDED(1, dura, 4);
   tmp_spl.timeleft -= dura;
@@ -2203,7 +2202,8 @@ void do_cast(P_char ch, char *argument, int cmd)
   if (cmd == CMD_SPELLWEAVE)
     if (GET_CHAR_SKILL(ch, SKILL_SPELLWEAVE))
       tmp_spl.flags = CST_SPELLWEAVE;
-    else {
+    else 
+    {
       send_to_char("You haven't mastered this sophisticated art.\n", ch);
       return;
     }
@@ -2212,8 +2212,7 @@ void do_cast(P_char ch, char *argument, int cmd)
     tmp_spl.arg = str_dup(common_target_data.arg);
 
   SET_BIT(ch->specials.affected_by2, AFF2_CASTING);
-  add_event(event_spellcast, BOUNDED(1, dura, 4), ch, 
-      common_target_data.t_char, 0, 0, &tmp_spl,
+  add_event(event_spellcast, BOUNDED(1, dura, 4), ch, common_target_data.t_char, 0, 0, &tmp_spl,
       sizeof(struct spellcast_datatype));
 
   if (common_target_data.t_char)
@@ -2333,16 +2332,16 @@ void event_spellcast(P_char ch, P_char victim, P_obj obj, void *data)
     {
       appear(ch);
     }
-    if (IS_PC(ch)) // no point in sending messages to mobs  -Odorf
+    if(IS_PC(ch)) // no point in sending messages to mobs  -Odorf
     {
       if (GET_CHAR_SKILL(ch, SKILL_SPELL_KNOWLEDGE_SHAMAN))
         skl = SKILL_SPELL_KNOWLEDGE_SHAMAN;
-      else if (GET_CHAR_SKILL(ch, SKILL_SPELL_KNOWLEDGE_CLERICAL))
+      else if(GET_CHAR_SKILL(ch, SKILL_SPELL_KNOWLEDGE_CLERICAL))
         skl = SKILL_SPELL_KNOWLEDGE_CLERICAL;
       else
         skl = SKILL_SPELL_KNOWLEDGE_MAGICAL;
      
-      if (GET_CLASS(ch, CLASS_PSIONICIST | CLASS_DRUID | CLASS_ETHERMANCER) ||
+      if(GET_CLASS(ch, CLASS_PSIONICIST | CLASS_DRUID | CLASS_ETHERMANCER) ||
           number(1, 100) <= GET_CHAR_SKILL(ch, skl))
       {
         sprintf(buf, "Casting: %s ", skills[arg->spell].name);
@@ -2362,11 +2361,13 @@ void event_spellcast(P_char ch, P_char victim, P_obj obj, void *data)
     return;
   }
 
-  if (arg->arg) {
+  if (arg->arg) 
+  {
     strcpy(args, arg->arg);
     FREE(arg->arg);
     arg->arg = NULL;
-  } else
+  }
+  else
     args[0] = '\0';
 
   /*
@@ -2376,7 +2377,8 @@ void event_spellcast(P_char ch, P_char victim, P_obj obj, void *data)
 
   use_spell(ch, arg->spell);
 
-  if (weaving) {
+  if (weaving) 
+  {
     struct affected_type af;
 
     REMOVE_BIT(ch->specials.affected_by2, AFF2_CASTING);
@@ -2560,8 +2562,7 @@ void event_spellcast(P_char ch, P_char victim, P_obj obj, void *data)
         if (should_area_hit(ch, t))
         {
           if (((arg->spell == SPELL_HOLY_WORD) && !IS_EVIL(t)) ||
-              ((arg->spell == SPELL_UNHOLY_WORD) && !IS_GOOD(t)) ||
-	      ((arg->spell == SPELL_VOICE_OF_CREATION && !IS_EVIL(t))))
+              ((arg->spell == SPELL_UNHOLY_WORD) && !IS_GOOD(t)))
             continue;
           justice_witness(ch, t, CRIME_ATT_MURDER);
         }

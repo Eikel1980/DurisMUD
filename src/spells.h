@@ -657,7 +657,7 @@
 #define SPELL_MEND_SOUL              608
 #define SPELL_HOLY_AURA              609
 #define SPELL_AID_OF_THE_HEAVENS     610
-#define SPELL_VOICE_OF_CREATION      611
+
 #define SPELL_PYROKINESIS            612
 #define SPELL_OBTENEBRATION          613
 #define SPELL_HOLY_BLADE             614
