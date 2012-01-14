@@ -1289,6 +1289,7 @@ struct material_data {
 #define MAX_AC_APPLY 30 // used to cap benefit from items that use APPLY_AC
 
 // Tiamat stuff - OBJECT_FIRESWORN procs load leader + 4 followers 
+#define SPHINX_CROWN       135218
 #define LEADER_FIRESWORN   135217
 #define FOLLOWER_FIRESWORN 135216
 #define OBJECT_FIRESWORN   135238

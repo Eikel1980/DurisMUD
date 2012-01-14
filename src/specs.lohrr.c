@@ -88,18 +88,14 @@ int dagger_of_wind( P_obj obj, P_char ch, int cmd, char *argument )
    return TRUE;
 }
 
-// Alright, so... I made a first attempt at trying to hack some code together and
-//  wanted to see if I did it correct. I'm going to cut/paste the proc I put together.
-// Basicly, what I was intending, is for a proc that works on command, with a cooldown
-//  (yea, the current cooldown is to fast for this item, but i can tweak)... lemme know
-//  if it looks right, or what needs to change...
+// Proc for object vnum SPHINX_CROWN.
 int sphinx_prefect_crown( P_obj obj, P_char ch, int cmd, char *arg )
 {
    int curr_time;
    char first_arg256;
 
    if( cmd == CMD_SET_PERIODIC )
-      return TRUE;
+      return FALSE;
    if( !OBJ_WORN_POS( obj, WEAR_HEAD ) )
       return FALSE;
 
@@ -125,7 +121,7 @@ int sphinx_prefect_crown( P_obj obj, P_char ch, int cmd, char *arg )
          act("&+LA wicked &+rgrin &+Lpasses across $n's &+Lface as they are &+me&+Mm&+mp&+Mo&+mw&+Me&+mr&+Me&+md &+Lwith &+rancient &+gwisdom &+Land &+Cknowledge&+L!&n", TRUE, ch, obj, NULL, TO_ROOM);
          spell_mordenkainens_lucubration(60, ch, 0, 0, ch, NULL);
          obj->timer[0] = curr_time;
-         obj->timer[1] = 0;														      return FALSE;
+         obj->timer[1] = 0;
          return TRUE;
       }
    }
@@ -137,6 +133,8 @@ int sphinx_prefect_crown( P_obj obj, P_char ch, int cmd, char *arg )
          TRUE, obj->loc.wearing, obj, 0, TO_CHAR);
       obj->timer[1] = 1;														      return FALSE;
    }
+
+   return FALSE;
 }
 
 int adjacent_room_nesw(P_char ch, int num_rooms )

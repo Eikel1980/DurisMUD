@@ -537,7 +537,7 @@ int ioun_warp(P_obj, P_char, int, char *);
 
 /* specs.lohrr.c */
 int leviathan(P_char, P_char, int, char *);
-
+int sphinx_prefect_crown( P_obj, P_char, int, char * );
 
 /* specs.object.c */
 
