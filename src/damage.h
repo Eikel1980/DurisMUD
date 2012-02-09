@@ -65,7 +65,8 @@
 #define DF_TIGERPALM              49
 #define DF_ELPOWER                50
 #define DF_EXPLAN                 51
-#define LAST_DF                   51
+#define DF_PROT_F_UNDEAD          52
+#define LAST_DF                   52
 
 #define SPLDAM_GENERIC   1
 #define SPLDAM_FIRE      2
