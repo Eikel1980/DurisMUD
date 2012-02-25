@@ -5,7 +5,7 @@ velvet covered table sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 velvet covered table sign~
    &+BThis long, yet short table sits here covered in a velvet sheet.  There
@@ -18,7 +18,7 @@ flag~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flag~
    &+BThis blue pennant-shaped flag has a large white cross on the center of either side.
@@ -30,7 +30,7 @@ statue~
 ~
 13 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
    &+RThis large statue is made of forged, chiseled and blasted, then re-polished
@@ -46,7 +46,7 @@ sign court hall silver~
 ~
 8 22 3 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign court hall silver~
    &+C-------------
@@ -61,7 +61,7 @@ huge sign~
 ~
 8 16 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge sign~
    &+C_________________
@@ -76,7 +76,7 @@ black bladed dagger black-bladed~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 1 7 0 0 0 0 0
-1 7439 100
+1 7439 100 100
 E
 black bladed dagger black-bladed~
    &+LThis average-looking dagger has a dyed black blade, and is surprisingly
@@ -93,7 +93,7 @@ sign muntz's goods~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 object unnamed~
    &+yThis sign reads &+W'Muntz's Goods'&+y and hangs just next to the
@@ -106,7 +106,7 @@ silver-lined purple silk hood silver _noquest_~
 ~
 9 3 3 0 13 0 1 17 64 0 0
 15 0 0 3 0 0 0 0
-0 22322 100
+0 22322 100 100
 E
 silver-lined purple silk hood silver~
    &+cThis extremely-fine silken hood has small marks of stars across it.
@@ -124,7 +124,7 @@ huge dwarven battle-axe axe~
 ~
 5 18 3 0 14 0 4194304 8193 64 0 0
 1 2 6 0 0 0 0 0
-10 22322 100
+10 22322 100 100
 E
 huge dwarven battle-axe axe~
    &+CMasterfully-crafted, this mithril battle-axe bares the insignia of the
@@ -141,7 +141,7 @@ full suit well-polished well polished mithril platemail plate~
 ~
 9 18 3 0 11 0 537133056 9 64 0 0
 150 0 0 0 0 0 0 0
-10 125432 100
+10 125432 100 100
 E
 full suit well-polished well polished mithril platemail plate~
    &+WThis full suit of mithril platemail has been polished to a glorious shine.
@@ -157,7 +157,7 @@ well-polished well polished mithril body shield~
 ~
 37 18 3 0 11 0 262144 513 0 0 0
 1 3 4 180 4 0 0 0
-7 42334 100
+7 42334 100 100
 E
 well-polished well polished mithril body shield~
    &+WThis huge body shield is made of shining polished mithril.
@@ -173,7 +173,7 @@ heavy mithril dwarven hammer~
 ~
 5 18 3 0 14 0 0 8193 66 0 0
 4 2 4 0 0 0 0 0
-5 16433 100
+5 16433 100 100
 E
 heavy mithril dwarven hammer~
    &+WThis heavy one-handed hammer is crafted of perfect mithril ore.
@@ -189,7 +189,7 @@ alatorin warhammer hammer~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 4 2 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 alatorin warhammer hammer~
    &+cThis heavy iron warhammer bears the crest of Alatorin.
@@ -205,7 +205,7 @@ heavy mithril bracers~
 ~
 9 18 3 0 7 0 0 4097 64 0 0
 10 0 0 0 0 0 0 0
-4 15343 100
+4 15343 100 100
 E
 heavy mithril bracers~
    &+mThese heavy mithril bracers are made with excellent dwarven precision.
@@ -221,7 +221,7 @@ pair gnomish eye glasses eyeglasses~
 ~
 9 7 3 0 7 0 0 131073 64 0 0
 5 0 0 1 0 0 0 0
-0 40000 100 0 28 0 0
+0 40000 100 100 0 28 0 0
 E
 pair gnomish eye glasses eyeglasses~
    &+MThis magical pair of &+Rgnomish &+Meyeglasses seem quite sturdy and
@@ -234,7 +234,7 @@ pair pink-tinted pink gnomish eyeglasses glasses~
 ~
 9 7 3 0 7 0 8388608 131073 64 0 0
 5 0 0 1 0 0 0 0
-0 100000 100 4 0 0 0
+0 100000 100 100 4 0 0 0
 E
 pair pink-tinted pink gnomish eyeglasses glasses~
    &+LThis pair of gnomish eyeglasses are tinted with a thick pink hue.  They
@@ -249,7 +249,7 @@ pair blue blue-tinted gnomish eyeglasses glasses _noquest_~
 ~
 9 7 3 0 7 0 8388608 131073 64 0 0
 5 0 0 1 0 0 0 0
-0 150000 100 8 0 0 0
+0 150000 100 100 8 0 0 0
 E
 pair blue-tinted blue gnomish eyeglasses glasses~
    &+LThis pair of gnomish eyeglasses are tinted with a thick pink hue.  They
@@ -264,7 +264,7 @@ wooden merchant stall~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden merchant stall~
    &+yThis wooden merchant stall sits here in the concourse of Alatorin.
@@ -278,7 +278,7 @@ gold spurred polished mithril boots~
 ~
 9 18 3 0 9 0 0 16449 0 0 0
 10 0 0 0 0 0 0 0
-4 33223 100
+4 33223 100 100
 E
 gold spurred polished mithril boots~
    &+YThese mithril boots have huge gold spurs on their rears.
@@ -294,7 +294,7 @@ iron shield alatorin~
 ~
 37 15 5 0 7 0 0 16897 0 0 0
 1 5 5 100 5 0 0 0
-30 9304 100
+30 9304 100 100
 E
 iron shield alatorin~
    &+LThis strange shield has a squared-off, right-angled corner shield with
@@ -312,7 +312,7 @@ sergeant badge hammerhelm militia~
 ~
 9 15 3 0 7 0 4096 2097153 2 0 0
 5 0 0 3 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 sergeant badge hammerhelm militia~
    &+LCrafted of thick &N&+ciron&+L, this &+Yblessed &+Ldwarven badge bears the
@@ -330,7 +330,7 @@ heavy adamantite full-faced full helmet faced~
 ~
 9 19 4 0 7 0 1073741824 17 64 0 0
 5 0 0 5 0 0 0 0
-19 48338 100
+19 48338 100 100
 E
 heavy adamantite full-faced full helmet faced~
    &+LThis heavy adamantite helmet has a full mask and visor attached.  A thin
@@ -348,7 +348,7 @@ full suit heavy adamantite~
 ~
 9 19 3 0 7 0 536870912 9 64 0 0
 150 0 0 5 0 0 0 0
-20 89433 100
+20 89433 100 100
 E
 full suit heavy adamantite~
    &+LThis is a full suit of adamantite plate, made with duergar dwarven precision
@@ -369,7 +369,7 @@ long two-handed barbed adamantite halberd~
 ~
 5 15 3 0 7 0 4194304 8193 0 0 0
 13 3 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 long two-handed barbed adamantite halberd~
 This long-handled &+Lmoorwood&+L halberd has a huge &+Ladamantite &Naxe tip.
@@ -385,7 +385,7 @@ pair wolf hide sleeves~
 ~
 9 12 3 0 7 0 1 257 64 0 0
 10 0 0 3 0 0 0 0
-3 6849 100
+3 6849 100 100
 E
 pair wolf hide sleeves~
    &+BSome thick wolf hide sleeves have been made from several layers of thick
@@ -402,7 +402,7 @@ thick bladed thick-bladed hunting knife~
 ~
 5 16 2 0 1 0 0 8193 64 0 0
 2 2 4 0 0 0 0 0
-2 299 100
+2 299 100 100
 E
 thick bladed thick-bladed hunting knife~
    &+CThis blade, made out of a long length of sharpened steel, has been crudely-
@@ -419,7 +419,7 @@ enormous steel axe~
 ~
 5 16 7 0 9 0 4194304 8193 0 0 0
 13 5 3 0 0 0 0 0
-25 20443 100
+25 20443 100 100
 E
 enormous steel axe~
    &+WThis is massive axe is pretty simple in design without many distinctive
@@ -434,7 +434,7 @@ battered tree trunk~
 ~
 5 5 6 0 7 0 13115464 8193 0 0 0
 10 4 11 0 0 0 0 0
-60 4 79
+60 4 79 100
 E
 battered tree trunk~
    &+yThis massive, unrooted tree still has its leaf-covered branches.
@@ -450,7 +450,7 @@ enormous stitched hide misshapen sack~
 ~
 15 12 6 0 7 0 0 16385 0 0 0
 250 5 0 100 0 0 0 0
-30 10333 100
+30 10333 100 100
 E
 enormous stitched hide misshapen bag~
    &+yThis massive bag is loosely stitched out of numerous hides of various
@@ -463,7 +463,7 @@ silver myrabolan short sword shortsword~
 ~
 5 22 3 0 7 0 1 8193 64 0 0
 9 4 4 0 0 0 0 0
-0 15349 100
+0 15349 100 100
 E
 silver myrabolan short sword shortsword~
    &+cThis silver shortsword bears the marks of &+MMyrabolan &N&+celven design.
@@ -480,7 +480,7 @@ pitch black belt mindstone buckle~
 ~
 9 11 3 0 7 0 1 2049 64 0 0
 10 0 0 0 0 0 0 0
-0 10993 100
+0 10993 100 100
 E
 pitch black belt mindstone buckle~
    &+LThis pitch-black leather belt has a thick belt buckle set with one
@@ -497,7 +497,7 @@ tattered old hooded sage cloak sages _noquest_~
 ~
 9 3 3 0 12 0 1024 1025 64 8818596 0
 5 0 0 1 0 0 0 0
-0 3002 79
+0 3002 79 100
 E
 tattered old hooded sage cloak sages~
    &+mThis old, hooded cloak bears a silver lining and numerous runes throughout.
@@ -514,7 +514,7 @@ diorite ring opal~
 ~
 9 26 1 0 6 0 1 3 64 0 0
 3 0 0 0 0 0 0 0
-0 15349 100
+0 15349 100 100
 E
 diorite ring opal~
    &+LThis tiny diorite ring has streaks of red with a pitch-black base.  This
@@ -532,7 +532,7 @@ hand stitched ram-hide ram hide backpack bp~
 ~
 15 12 4 0 7 0 0 4194305 0 0 0
 300 5 0 50 0 0 0 0
-0 15334 100
+0 15334 100 100
 E
 hand stitched ram-hide ram hide backpack bp~
    &+WThis large furry backpack has been hand-stitched with thick, now-blackened
@@ -545,7 +545,7 @@ wooden sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden sign~
 +---------------------------+
@@ -562,7 +562,7 @@ juicy osquip steak~
 ~
 19 2 2 0 11 0 8192 1 0 0 0
 7 10 10 0 0 0 0 0
-0 2600 100
+0 2600 100 100
 E
 juicy osquip steak~
    &+rThis juicy &+Yosquip &n&+rsteak has been prepared quite easily, as the
@@ -575,7 +575,7 @@ heavenly flowing white gown _noquest_~
 ~
 9 3 3 0 15 0 67118113 9 64 0 0
 0 0 0 1 0 0 0 0
-0 120332 100 0 0 0 33554432
+0 120332 100 100 0 0 0 33554432
 E
 heavenly flowing white gown~
    &+WThis magnificent white garment carries with it a powerful &+Cprotective
@@ -592,7 +592,7 @@ spectral gauntlets battleragers _noquest_~
 ~
 9 1 3 0 15 0 33555456 129 64 1065027 0
 4 0 0 3 0 0 0 0
-0 6555 100 24 0 0 0
+0 6555 100 100 24 0 0 0
 E
 spectral gauntlets battleragers~
    &+cThese strange magical gauntlets &+Wexist.
@@ -609,7 +609,7 @@ dagger seers~
 ~
 5 16 2 0 11 0 100671488 8193 64 0 0
 2 2 6 0 0 0 0 0
-0 18993 100
+0 18993 100 100
 E
 dagger seers~
    &+LThis strange dark dagger glows with a blessed, or possibly cursed, magical aura.
@@ -625,7 +625,7 @@ deathweave leggings~
 ~
 9 1 3 0 15 0 1 33 64 0 0
 5 0 0 3 0 0 0 0
-0 18439 100
+0 18439 100 100
 E
 deathweave leggings~
    &+LThese mysterious black leggings are made with a spectral, non-substantial
@@ -642,7 +642,7 @@ dart trap~
 ~
 8 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 T
 21 7 1 70
 #120041
@@ -652,7 +652,7 @@ slash trap~
 ~
 8 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 T
 13 8 1 55
 #120042
@@ -662,7 +662,7 @@ ancient golden helmet~
 ~
 9 24 3 0 9 0 0 17 64 0 0
 5 0 0 0 0 0 0 0
-3 34332 100
+3 34332 100 100
 E
 ancient golden helmet~
    &+YAlthough very aged, this helmet is made of flawless pure gold.  It
@@ -679,7 +679,7 @@ skull-headed totem ethereal flux~
 ~
 34 1 3 0 7 0 33554433 16385 64 0 0
 63 0 0 0 0 0 0 0
-0 122332 100 2 0 0 0
+0 122332 100 100 2 0 0 0
 E
 skull-headed totem ethereal flux~
    &+WThis fearsome totem is headed with the horned skull of a once-sacrified
@@ -697,7 +697,7 @@ skull shoulder guard lined feathers~
 ~
 9 10 3 0 2 0 0 257 0 0 0
 15 0 0 3 0 0 0 0
-1 15332 100
+1 15332 100 100
 E
 skull shoulder guard lined feathers~
    &+yThis simple shoulder guard is made of the de-&+rbr&+Mai&N&+mned &+Wskull &N&+yof a huge
@@ -717,7 +717,7 @@ skull knee guards lined feathers~
 ~
 9 10 3 0 2 0 0 33 0 0 0
 15 0 0 3 0 0 0 0
-1 15332 100
+1 15332 100 100
 E
 skull knee guards lined feathers~
    &+yThese fine knee guards are basically just two large humanoid &+Wskulls
@@ -736,7 +736,7 @@ skull-faced warmask mask skull faced lined feathers~
 ~
 9 15 3 0 7 0 0 262145 0 0 0
 7 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skull-faced warmask mask skull faced lined feathers~
    &+WThis brutal mask is made of the front portion of a &+Ydwarf &+Wskull,
@@ -755,7 +755,7 @@ plush saddle embroided lightning bolts~
 ~
 9 14 4 0 7 0 1 16777217 64 0 0
 5 0 0 0 0 0 0 0
-0 143223 100 0 128 0 0
+0 143223 100 100 0 128 0 0
 E
 plush saddle embroided lightning bolts~
    &+yThis fine leather saddle has been lined with exquisite &+msilk.
@@ -774,7 +774,7 @@ small ore deposit~
 ~
 15 11 3 0 7 0 4096 0 0 0 0
 500 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small ore deposit~
 &N&+yThe jagged rocks of the Shanatar valley floor in this narrow cornice
@@ -788,7 +788,7 @@ golden gold dwarven band runes~
 ~
 9 24 1 0 8 0 4097 3 64 0 0
 2 0 0 0 0 0 0 0
-0 554 100
+0 554 100 100
 E
 golden ring dwarven runes~
    &+YThis tiny golden ring is quite simple really, merely a polished circular
@@ -807,7 +807,7 @@ dwarven holy symbol~
 ~
 9 5 2 0 7 0 1 16389 0 0 0
 5 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 dwarven holy symbol~
    This small, simple necklace is a string of &+ywooden &Nbeads, each painted
@@ -824,7 +824,7 @@ freshly killed osquip remains~
 ~
 19 2 1 0 7 0 0 1 0 0 0
 3 3 3 0 0 0 0 0
-1 600 100
+1 600 100 100
 E
 freshly killed osquip remains~
    &+yThis small, fresh corpse is that of a recently-killed &+Yosquip&N&+y, a race of
@@ -840,7 +840,7 @@ gloomwing feather~
 ~
 9 50 2 0 7 0 0 8929281 64 0 0
 1 0 0 0 0 0 0 0
-0 3222 100
+0 3222 100 100
 E
 gloomwing feather~
 &+LThis single &+mgloo&+Lmwing fea&+mther &+Lhas been plucked from the body
@@ -857,7 +857,7 @@ gloomwing feather~
 ~
 9 50 2 0 7 0 0 8929281 64 0 0
 1 0 0 0 0 0 0 0
-0 3222 100
+0 3222 100 100
 E
 gloomwing feather~
 &+LThis single &+mgloo&+Lmwing fea&+mther &+Lhas been plucked from the body

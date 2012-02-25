@@ -5,7 +5,7 @@ sign weathered battered~
 ~
 12 6 3 10 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-10 20 100
+10 20 100 100
 E
 sign weathered battered~
 This sign appears to have been here for quite a while, as it is barely
@@ -19,7 +19,7 @@ timber piece wood charred~
 ~
 5 6 3 0 7 0 0 24577 0 0 0
 10 1 4 7 0 0 0 0
-11 30 100
+11 30 100 100
 E
 timber piece wood charred~
 It looks like this rough board has been partially burned, though it is
@@ -34,7 +34,7 @@ pile charred embers~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-5 1 100
+5 1 100 100
 E
 pile charred embers~
 This pile of long-burnt embers appears to be what's left of a bit of the
@@ -47,7 +47,7 @@ mostly burnt note~
 ~
 13 29 1 1 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 mostly burnt note~
 The note, though mostly burnt, is still slightly legible in cursive common..
@@ -63,7 +63,7 @@ large piece log driftwood~
 ~
 12 6 0 0 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-4000 500 100
+4000 500 100 100
 E
 large piece log driftwood~
 Apparently, this large log is too big to be sucked down by the current and
@@ -76,7 +76,7 @@ twigs sticks wood~
 ~
 13 6 0 0 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 100 100
+5 100 100 100
 E
 twigs sticks wood~
 These twigs and sticks are dry enough to be used as kindling for
@@ -89,7 +89,7 @@ lantern brass~
 ~
 13 17 0 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-8 5000 100
+8 5000 100 100
 E
 lantern brass~
 This tarnished lantern seems to have seen quite a bit of use, but has been
@@ -102,7 +102,7 @@ A rough wooden shelf is here, nailed to a wall.~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 300 0 0 100 0 0 0 0
-50 10 100
+50 10 100 100
 E
 shelf~
 A simple wooden shelf, it does the job it was made to do.
@@ -114,7 +114,7 @@ A tarnished brass sextant lies here.~
 ~
 13 17 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 10000 100
+4 10000 100 100
 E
 sextant brass~
 This sextant, though obviously unused for many years, looks as though
@@ -127,7 +127,7 @@ An urn made of clay sits here squatly.~
 ~
 15 9 3 0 7 0 0 16385 0 0 0
 30 0 0 100 0 0 0 0
-6 500 100
+6 500 100 100
 E
 squat urn clay~
 This urn looks as though it could hold things quite well, what with the
@@ -140,7 +140,7 @@ A bit of cured venison lies here mouth-wateringly.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 2 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 venison cured bit~
 Made from cured deer flesh, this venison looks good enough to eat, though
@@ -153,7 +153,7 @@ A tattered shirt lies here.~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 5 100
+1 5 100 100
 E
 shirt tattered dirty~
 Tattered and torn, this plain cotton shirt is of even less use than
@@ -166,7 +166,7 @@ A pair of tattered pants lie here.~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 0 0 4 0 0 0 0
-2 8 100
+2 8 100 100
 E
 pants tattered dirty~
 Made of thick cotton, these pants don't even hardly hide what they
@@ -182,7 +182,7 @@ An old mattress lies here, invisible to mere mortals.~
 ~
 15 3 3 0 7 0 2 0 0 0 0
 10 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mattress~
 The mattress appears to be fairly new, with straw padding the sleeper.
@@ -194,7 +194,7 @@ A small collection of coins is scattered about here.~
 ~
 20 16 1 0 7 0 4096 1 0 0 0
 13 3 0 0 0 0 0 0
-2 500 100
+2 500 100 100
 E
 coins handful collection~
 They look like coins, only coinier.
@@ -206,7 +206,7 @@ branch wood~
 ~
 13 6 0 0 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 500 100
+4 500 100 100
 E
 branch wood~
 Looks like this branch has been broken off by the elements.  It's a bit
@@ -219,7 +219,7 @@ key rusted old~
 ~
 18 16 1 1 7 0 8392704 16389 0 0 0
 0 5 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 key rusted old~
 Nearly rusted clean through, this key is clearly very old.  As some
@@ -234,7 +234,7 @@ gravemarker stone marker column ashmank marble~
 ~
 13 38 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1000 100000 100
+1000 100000 100 100
 E
 stone marker column ashmank marble~
 Whoever died here must have been very important indeed, for this
@@ -254,7 +254,7 @@ squat gravemarker obsidian grave~
 ~
 13 36 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1500 100000 100
+1500 100000 100 100
 E
 squat gravemarker obsidian grave marker~
 This large, squat gravemarker appears to be very old, having been worn
@@ -282,7 +282,7 @@ ring silver tarnished~
 ~
 9 22 1 1 7 0 1024 3 66 37883812 0
 4 1 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 ring silver tarnished~
 This simple silver band has been tarnished by exposure to the elements.
@@ -298,7 +298,7 @@ A tattered burial shroud lies here.~
 ~
 9 3 0 0 7 0 73856 1025 0 0 0
 1 9 1 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 burial shroud tattered~
 This burial shroud looks and smells as though it was once around
@@ -315,7 +315,7 @@ rat dead~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 1 0 0 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rat dead~
 This rat is dead, and has been so for a very, very long time.  The right
@@ -329,7 +329,7 @@ a coffin~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 500 0 0 100 0 0 0 0
-5000 100000 100
+5000 100000 100 100
 E
 coffin~
 Made purely of marble and inscribed with many intricate runes, this coffin
@@ -342,7 +342,7 @@ a gargoyle head~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 270 14388 5 0 0 0 0 0
-300 10001 100
+300 10001 100 100
 E
 head gargoyle~
 One of the gargoyle heads appears to have a bit of a gap between it and the
@@ -355,7 +355,7 @@ a coffin mounted atop a pedestal~
 ~
 15 11 3 0 7 0 2 0 0 0 0
 250 13 0 100 0 0 0 0
-5000 100000 100
+5000 100000 100 100
 E
 coffin~
 This small marble coffin appears to be closed with a simple iron
@@ -369,7 +369,7 @@ The shrivelled corpse of a mountain dwarf lies here.~
 ~
 15 2 3 30 7 0 8192 1 0 0 0
 125 0 0 100 0 0 0 0
-50 10 100
+50 10 100 100
 E
 corpse shrivelled dwarf~
 This corpse has obviously been dead for a long, long time.  Any
@@ -383,7 +383,7 @@ A tiny vial full of a clear liquid sits here.~
 ~
 10 7 2 4 7 0 4096 16385 0 0 0
 10 3 14 16 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 vial potion~
 The liquid inside this tiny vial is indistinguishable from water,
@@ -396,7 +396,7 @@ a marble coffin, closed~
 ~
 12 38 0 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 100000 100
+1000 100000 100 100
 E
 coffin~
 Sealed shut with metal pins, this coffin would be hard to open
@@ -416,7 +416,7 @@ bouquet dead~
 ~
 13 42 0 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-1 50 100
+1 50 100 100
 E
 bouquet dead~
 Dried flowers and stalks of grass are all that make up this once-
@@ -429,7 +429,7 @@ wreath roses wilted~
 ~
 13 42 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wreath roses wilted~
 A collection of a half-dozen roses woven into a wreath, it has
@@ -442,7 +442,7 @@ daisy simple flower~
 ~
 12 42 0 0 7 0 73728 16385 2 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 daisy simple flower~
 This pretty little flower appears freshly picked, and smells nice
@@ -459,7 +459,7 @@ marigolds flowers clump flower marigold~
 ~
 13 42 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-2 100 100
+2 100 100 100
 E
 marigolds flowers clump flower marigold~
 This collection of marigolds was probably beautiful and fragrant once,
@@ -473,7 +473,7 @@ the river~
 ~
 17 40 0 0 7 0 8194 0 0 0 0
 -1 -1 0 0 0 0 0 0
-666 69 100
+666 69 100 100
 E
 river water stream~
 It looks as though the river's water is drinkable.
@@ -485,7 +485,7 @@ a loose stone~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 270 14399 4 0 0 0 0 0
-99999 1 100
+99999 1 100 100
 E
 stone walls wall stones~
 One of the stones in the wall does seem to protude a bit oddly..
@@ -497,7 +497,7 @@ diamond gem small~
 ~
 8 8 0 0 7 0 128 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 diamond gem small~
 This valuable-looking gem catches the light nicely, sparkling as you
@@ -510,7 +510,7 @@ emerald gem tiny~
 ~
 8 32 0 0 7 0 128 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 emerald gem tiny~
 If this gem were much smaller, it couldn't even be set into a ring.  At
@@ -524,7 +524,7 @@ The shattered remains of a marble coffin lid lie scattered about.~
 ~
 13 38 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-200 10 100
+200 10 100 100
 E
 lid shattered marble~
 Looks like the people who robbed this tomb didn't care much about
@@ -537,7 +537,7 @@ A torn bit of clothing lies here.~
 ~
 13 3 3 8 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 3 100
+1 3 100 100
 E
 torn clothing bit~
 This bit of clothing looks like it came off of some poor adventurer's
@@ -551,7 +551,7 @@ dented steel dagger~
 ~
 5 16 2 3 7 0 4096 8193 0 0 0
 2 1 3 11 0 0 0 0
-2 100 100
+2 100 100 100
 E
 dented steel dagger~
 Once in perfect condition, this dagger has since been bent in the
@@ -565,7 +565,7 @@ tag version nakral crypt~
 ~
 12 6 0 0 7 0 532480 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 tag version nakral crypt~
 version 1.0, Nakral's Crypt
@@ -579,7 +579,7 @@ A &+Lcrown of tiny swords&n lies here.~
 ~
 9 16 3 8 7 0 2098176 17 64 87572571 0
 9 4 16 3 0 0 0 0
-5 25000 100
+5 25000 100 100
 E
 crown tiny swords sword~
 &+LThis smallish crown appears to be made entirely of miniature swords, all
@@ -597,7 +597,7 @@ ring warding blue~
 ~
 9 16 1 1 7 0 0 3 66 0 0
 7 1 0 3 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 ring warding blue~
 This simple blue band is just large enough to fit around a human-sized ring
@@ -612,7 +612,7 @@ A thicked-bladed long sword lies here.~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 6 3 0 0 0 0
-15 5000 100
+15 5000 100 100
 E
 sword thick long~
 This long sword has an unusually thick blade sharpened to a razor edge.
@@ -629,7 +629,7 @@ A heavy leather cloak lies here in a heap.~
 ~
 9 13 3 8 7 0 0 1025 0 0 0
 12 9 1 4 0 0 0 0
-15 1000 100
+15 1000 100 100
 E
 cloak heavy leather~
 This leather cloak is thicker than most, and thus should provide a greater
@@ -647,7 +647,7 @@ A pair of heavy leather boots are here, tongues out.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 9 6 1 4 0 0 0 0
-8 2000 100
+8 2000 100 100
 E
 leather heavy boots~
 These leather boots look as though they would go about three or four inches
@@ -665,7 +665,7 @@ A longsword lies here, slightly rusted.~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 6 3 0 0 0 0
-8 500 100
+8 500 100 100
 E
 sword rusted long~
 Though rusted in spots, this long sword feels as though it is still a
@@ -682,7 +682,7 @@ A shoddy suit of full-body leather armor lies here.~
 ~
 9 13 0 0 7 0 536870912 9 0 4173708804 0
 15 3 1 3 0 0 0 0
-15 1000 100
+15 1000 100 100
 E
 leather suit armor shoddy~
 This suit of leather armor has definitely seen better days - once supple, the
@@ -699,7 +699,7 @@ A pair of shoddy leather boots is here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 5 6 1 3 0 0 0 0
-5 750 100
+5 750 100 100
 E
 boots shoddy leather~
 This pair of leather boots may have once been suitable, but now they are
@@ -717,7 +717,7 @@ A wooden staff lies here, shrunken from heat and sun.~
 ~
 4 6 3 10 7 0 9216 16385 64 4197892 0
 30 1 1 103 0 0 0 0
-5 7500 100
+5 7500 100 100
 E
 staff wooden shrunken~
 This three-foot wooden staff is shrunk from exposure to heat and sun,
@@ -734,7 +734,7 @@ robes robe heavy blood~
 ~
 9 3 3 8 7 0 41984 9 64 4197888 0
 15 3 1 4 0 0 0 0
-12 25000 100 536870912 0 0 0
+12 25000 100 100 536870912 0 0 0
 E
 robe robes heavy blood~
 Blood and other (unidentifiable) stains splatter this dark robe from the
@@ -753,7 +753,7 @@ A &+Wlily-white potion&n is sitting here.~
 ~
 10 7 2 4 7 0 0 16385 66 0 0
 40 1 28 3 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 potion lily white lily-white~
 &+WA simple spherical flask stoppered with a cork, the white
@@ -766,7 +766,7 @@ mace thick handled~
 ~
 5 16 3 8 7 0 128 8193 0 4173708804 0
 6 3 7 6 0 0 0 0
-9 15000 100
+9 15000 100 100
 E
 mace thick handled~
 This mace, about one and a half feet long and with a thick handle, looks
@@ -783,7 +783,7 @@ shield skull embossed emblem~
 ~
 37 16 3 15 7 0 131200 513 64 4173708804 0
 2 1 3 180 3 0 0 0
-15 3000 100
+15 3000 100 100
 E
 shield skull embossed emblem~
 This heavy iron shield, roughly circular, has a grinning skull
@@ -800,7 +800,7 @@ belt gaudy eelskin fake~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 3 10 0 3 0 0 0 0
-1 250 100
+1 250 100 100
 E
 belt gaudy eelskin fake~
 Man, this belt sure is ugly.  The "eelskin" is clearly fake, and at any rate,
@@ -815,7 +815,7 @@ headband feathered band head feather~
 ~
 9 12 1 1 7 0 2097152 17 64 0 0
 1 4 1 3 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 feathered headband band~
 This simple headband is constructed of an adjustable dark leather strap
@@ -832,7 +832,7 @@ scarf silk~
 ~
 11 3 3 3 7 0 8192 5 64 0 0
 0 0 0 4 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 scarf silk~
 This scarf, dyed purple, is somehow very beautiful, perhaps in its
@@ -849,7 +849,7 @@ scroll vellum old~
 ~
 2 29 1 2 7 0 1024 16385 0 37883812 0
 25 95 99 -1 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 vellum old scroll~
 This old vellum scroll is covered with runes that would befuddle even the
@@ -862,7 +862,7 @@ water dank pool~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 100 100 0 1 0 0 0 0
-3 1 100
+3 1 100 100
 E
 water dank pool~
 Nearly black from whatever bits of matter are floating inside it,
@@ -876,7 +876,7 @@ torch sconce~
 ~
 13 16 3 8 7 0 262144 0 64 0 0
 0 0 0 0 0 0 0 0
-10 20 100
+10 20 100 100
 E
 torch sconce~
 Mounted in a bronze sconce attached to the wall, the torch burns
@@ -889,7 +889,7 @@ torches sconces torch~
 ~
 13 16 3 8 7 0 262144 0 64 0 0
 0 0 0 0 0 0 0 0
-10 10 100
+10 10 100 100
 E
 torch sconce~
 These torches do their job well, lighting up the area around them.
@@ -901,7 +901,7 @@ torches sconces torch~
 ~
 29 16 0 50 7 0 262144 0 64 0 0
 340 14411 1 0 0 0 0 0
-10 10 100
+10 10 100 100
 E
 torch sconce~
 These torches do their job well, lighting up the area around them.
@@ -914,7 +914,7 @@ pit hole scat~
 ~
 15 16 3 0 7 0 2 0 0 0 0
 200 0 0 100 0 0 0 0
-10 50 100
+10 50 100 100
 E
 pit hole scat~
 It's a scat hole, alright..  The fact that it is filled with a
@@ -928,7 +928,7 @@ turd orc scat~
 ~
 19 42 2 2 7 0 4096 16385 0 0 0
 3 0 0 1 0 0 0 0
-2 1 100
+2 1 100 100
 E
 turd orc scat~
 That's right, it's a huge orc turd.  Whoever dropped this momma must
@@ -941,7 +941,7 @@ feces pile scat~
 ~
 19 42 2 2 7 0 4096 16385 0 0 0
 2 0 0 1 0 0 0 0
-1 1 100
+1 1 100 100
 E
 feces pile scat~
 That's right, a small pile of diarrhea-like fecal matter.  Live it
@@ -954,7 +954,7 @@ turd small orc scat~
 ~
 19 42 2 2 7 0 4096 16385 0 0 0
 1 0 0 1 0 0 0 0
-1 1 100
+1 1 100 100
 E
 turd small orc scat~
 Though smaller than most, this piece of waste is no less potent
@@ -967,7 +967,7 @@ dagger small~
 ~
 5 16 2 3 7 0 1053696 8193 64 12713476 0
 2 1 3 11 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 dagger small~
 Sharp and well-balanced, this dagger appears to be well made.  Complex
@@ -991,7 +991,7 @@ shirt chain rusty chainmail~
 ~
 9 16 3 8 7 0 0 9 0 4165209604 0
 8 3 1 3 0 0 0 0
-12 1000 100
+12 1000 100 100
 E
 shirt chain rusty~
 Though slightly rusted, this shirt looks like it gives fair protection.
@@ -1003,7 +1003,7 @@ pants rusty chain chainmail~
 ~
 9 16 3 8 7 0 0 33 0 4165209604 0
 7 5 1 3 0 0 0 0
-13 1000 100
+13 1000 100 100
 E
 pants rusty chain~
 Though slighty rusty, these pants still protect well.
@@ -1015,7 +1015,7 @@ table huge oak~
 ~
 15 5 3 0 7 0 2 1 0 0 0
 1000 0 0 100 0 0 0 0
-500 10000 100
+500 10000 100 100
 E
 table huge oak~
 Relatively clean, this huge table looks like it has been taken care of
@@ -1028,7 +1028,7 @@ chair padded plush~
 ~
 15 3 3 0 7 0 0 1 0 0 0
 50 0 0 100 0 0 0 0
-125 10000 100
+125 10000 100 100
 E
 chair padded plush~
 This chair is definitely intended for someone important - with
@@ -1042,7 +1042,7 @@ coins handful coin pile~
 ~
 20 16 1 0 7 0 4096 1 0 0 0
 7 4 1 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 coins handful coin pile~
 They sure look like coins, alright.
@@ -1054,7 +1054,7 @@ placemat stained mat~
 ~
 13 3 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 placemat stained mat~
 Made of bleached fabric, a gravy stain of some sort has ruined any
@@ -1067,7 +1067,7 @@ plate dented iron~
 ~
 5 15 3 0 7 0 0 24577 0 0 0
 10 1 2 7 0 0 0 0
-3 20 100
+3 20 100 100
 E
 plate dented iron~
 Though dented, this plate still has a nice lip to prevent spills
@@ -1082,7 +1082,7 @@ placemat velvet~
 ~
 12 3 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-2 500 100
+2 500 100 100
 E
 placemat velvet~
 Almost as thick as carpet, this placemat has not a stain on it,
@@ -1096,7 +1096,7 @@ rack potrack~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-10 100 100
+10 100 100 100
 E
 rack potrack~
 A simple wooden board with some pegs on it, it does the job.
@@ -1108,7 +1108,7 @@ saucepan pan iron~
 ~
 5 15 3 0 7 0 0 24577 0 0 0
 10 1 4 7 0 0 0 0
-3 50 100
+3 50 100 100
 E
 saucepan pan iron~
 Currently empty and well-cleaned, this saucepan is sturdily
@@ -1121,7 +1121,7 @@ pot iron deep~
 ~
 5 15 3 0 7 0 0 24577 0 0 0
 10 1 5 7 0 0 0 0
-5 200 100
+5 200 100 100
 E
 pot iron deep~
 With thick sides and a deepness rivalled by Confucious, this
@@ -1134,7 +1134,7 @@ stove wood~
 ~
 12 6 0 0 7 0 262144 0 64 0 0
 0 0 0 0 0 0 0 0
-500 5000 100
+500 5000 100 100
 E
 stove wood~
 Though it glows visibly and gives off quite a bit of heat, no
@@ -1147,7 +1147,7 @@ apron cloth stained~
 ~
 9 3 3 6 7 0 0 2049 0 0 0
 2 10 0 3 0 0 0 0
-2 100 100
+2 100 100 100
 E
 apron cloth stained~
 Stained and torn, this apron ain't too pretty.
@@ -1159,7 +1159,7 @@ ring iron thick~
 ~
 9 15 1 1 7 0 0 3 64 0 0
 3 1 0 4 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 ring iron thick~
 Though unimpressive, this ring does somehow give you a feeling
@@ -1176,7 +1176,7 @@ ladle iron~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 10 1 3 7 0 0 0 0
-2 50 100
+2 50 100 100
 E
 ladle iron~
 This iron soup ladle is much like any other: the handle is about a
@@ -1194,7 +1194,7 @@ shelves shelf pantry~
 ~
 15 6 3 0 7 0 8194 0 0 0 0
 150 0 0 100 0 0 0 0
-10 10 100
+10 10 100 100
 E
 shelf shelves pantry~
 They look like shelves alright.  Made of wood and attached to the
@@ -1210,7 +1210,7 @@ plate iron~
 ~
 5 15 3 0 7 0 0 24577 0 0 0
 10 1 2 7 0 0 0 0
-3 50 100
+3 50 100 100
 E
 plate iron~
 Made of iron and plate-shaped, this useful piece of equipment can
@@ -1225,7 +1225,7 @@ meat dried piece~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 meat dried piece~
 Dried and salted, this meat can last a while and doesn't taste bad
@@ -1238,7 +1238,7 @@ moss glowing~
 ~
 12 30 0 0 7 0 262146 0 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 moss glowing~
 Although seemingly exactly like any other moss, it glows slightly.
@@ -1250,7 +1250,7 @@ key iron~
 ~
 18 15 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 key iron~
 Simple, this key has a loop with a cylindrical piece of iron
@@ -1263,7 +1263,7 @@ footchest chest iron~
 ~
 15 15 5 50 7 0 2 0 0 0 0
 200 15 14447 250 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 footchest chest iron~
 No more than six inches high, one foot wide, and two feet long,
@@ -1276,7 +1276,7 @@ key iron tiny~
 ~
 18 15 1 1 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key iron tiny~
 Tiny, but functional.
@@ -1288,7 +1288,7 @@ bed straw~
 ~
 15 42 3 0 7 0 2 0 0 0 0
 50 0 0 100 0 0 0 0
-5 1 100
+5 1 100 100
 E
 bed straw~
 Made of straw, this bed does a nice enough job of being
@@ -1301,7 +1301,7 @@ coins handful coin pile~
 ~
 20 16 1 0 7 0 4096 1 0 0 0
 11 6 2 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 coins handful coin pile~
 They sure look like coins, alright.
@@ -1313,7 +1313,7 @@ ring jade iron~
 ~
 9 15 1 1 7 0 0 3 64 0 0
 7 1 0 3 0 0 0 0
-1 2500 100
+1 2500 100 100
 E
 ring jade iron~
 Composed of a thick iron band with jade inlays, this ring bears
@@ -1328,7 +1328,7 @@ coins stack silver pile~
 ~
 20 22 1 0 7 0 0 1 0 0 0
 0 21 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 coins stack silver pile~
 Yep, looks like a pile of silver coins alright.
@@ -1340,7 +1340,7 @@ lantern brass small~
 ~
 13 17 0 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 lantern brass small~
 &+WThough small, the light from this lantern is powerful enough to
@@ -1353,7 +1353,7 @@ amulet wooden circular~
 ~
 9 6 3 2 7 0 8192 16389 64 0 0
 4 2 0 3 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 amulet wooden circular~
 Made of a cross-section from a tree limb, then covered with some
@@ -1371,7 +1371,7 @@ A blanket lies here in a heap.~
 ~
 11 3 3 8 7 0 65536 1025 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 blanket~
 This rough cloth blanket is stained with sweat and smells strangely
@@ -1384,7 +1384,7 @@ A blanket lies here in a heap.~
 ~
 11 3 3 8 7 0 65536 1025 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 blanket~
 This rough cloth blanket is stained with sweat and smells strangely
@@ -1397,7 +1397,7 @@ sword bone~
 ~
 5 10 3 10 7 0 1152 8193 0 87572571 0
 5 3 6 3 0 0 0 0
-7 2000 100
+7 2000 100 100
 E
 sword bone~
 Made of a large hip bone sharpened along one edge and at the tip,
@@ -1414,7 +1414,7 @@ An old scrap of paper sits here.~
 ~
 12 28 1 2 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 paper scrap~
 Though most of the text is too smudged or faded to make out, you
@@ -1427,7 +1427,7 @@ shelves shelf~
 ~
 15 6 3 0 7 0 8194 0 0 0 0
 1000 0 0 100 0 0 0 0
-100 1000 100
+100 1000 100 100
 E
 shelf shelves~
 Made of wood, these shelves look capable of holding quite a bit.
@@ -1439,7 +1439,7 @@ bed~
 ~
 12 3 0 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-100 15000 100
+100 15000 100 100
 E
 bed~
 With velvet covers and a velvet pillow, this small bed looks very
@@ -1452,7 +1452,7 @@ bracelet iron dark~
 ~
 9 15 3 3 7 0 1024 4097 64 4198148 0
 6 0 0 3 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 bracelet iron dark~
 Made of dark iron, this bracelet is simple, yet seems to
@@ -1469,7 +1469,7 @@ key iron~
 ~
 18 15 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 key iron~
 Made of thick iron, this key looks sturdy as any key you've seen.
@@ -1481,7 +1481,7 @@ a mutilated human body~
 ~
 12 2 3 30 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-150 1 100
+150 1 100 100
 E
 human body corpse~
 &+LJust looking at this horribly mutilated corpse is enough to make one want
@@ -1496,7 +1496,7 @@ counters counter~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 2500 0 0 100 0 0 0 0
-100 1000 100
+100 1000 100 100
 E
 counters counter~
 Made of wood, the counters line the east and west walls along the entire
@@ -1509,7 +1509,7 @@ vial black liquid~
 ~
 10 40 2 4 7 0 65536 16385 0 0 0
 25 61 -1 -1 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 vial black liquid~
 &+LA simple glass vial stoppered with cork, the liquid inside doesn't
@@ -1522,7 +1522,7 @@ parchment~
 ~
 2 29 1 2 7 0 1024 16385 0 4197892 0
 20 94 35 -1 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 parchment~
 &+yThough mostly incomprehensible, the scroll seems to have something
@@ -1535,7 +1535,7 @@ A &+Wlily-white potion&n is sitting here.~
 ~
 10 7 2 4 7 0 4096 16385 66 0 0
 40 28 28 3 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 potion lily white lily-white~
 &+WA simple spherical flask stoppered with a cork, the liquid
@@ -1548,7 +1548,7 @@ island~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 200 0 0 100 0 0 0 0
-50 15000 100
+50 15000 100 100
 E
 island~
 &+yAbout ten feet to a side, this island has a few stools placed
@@ -1561,7 +1561,7 @@ journal~
 ~
 13 28 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 journal~
 &+yThis leather-bound journal appears to be that of Theodeus Nak'ral.
@@ -1630,7 +1630,7 @@ parchment~
 ~
 13 29 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 parchment~
 Though mostly illegible cat scratchings, some bits can be made out...
@@ -1652,7 +1652,7 @@ table~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 200 0 0 100 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 table~
 Roughly five feet to a side, the table has a few papers scattered
@@ -1665,7 +1665,7 @@ corpse elf body woman~
 ~
 12 2 3 30 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-110 1 100
+110 1 100 100
 E
 elf body corpse woman~
 &+gThe only word that can describe this perfectly formed elven woman is
@@ -1679,7 +1679,7 @@ spike rusted steel~
 ~
 5 16 2 0 7 0 0 24577 64 0 0
 2 1 2 11 0 0 0 0
-2 50 100
+2 50 100 100
 E
 spike rusted steel~
 Rusted almost clean through, this spike nonetheless makes a fairly
@@ -1696,7 +1696,7 @@ barrels barrel~
 ~
 15 6 3 10 7 0 2 0 0 0 0
 100 0 0 100 0 0 0 0
-10 100 100
+10 100 100 100
 E
 barrel~
 Made of wood with iron bands and basically barrel-shaped, they look
@@ -1709,7 +1709,7 @@ broadsword ancient sword~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 4 5 3 0 0 0 0
-12 5000 100
+12 5000 100 100
 E
 broadsword ancient sword~
 Though clearly old, with pitted metal and dents here and there, the
@@ -1726,7 +1726,7 @@ key ancient~
 ~
 18 16 1 1 7 0 8388608 16389 0 0 0
 0 0 0 0 0 0 0 0
-1 50 100
+1 50 100 100
 E
 key ancient~
 Though ancient, with pitted metal and small dents, this key is still
@@ -1740,7 +1740,7 @@ skeleton adventurer~
 ~
 15 10 3 0 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-20 1 100
+20 1 100 100
 E
 skeleton adventurer~
 Whoever this poor bastard once was, he's dead now.
@@ -1752,7 +1752,7 @@ A small pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 11 12 3 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 coins pile~
 They look like coins, sure enough.
@@ -1764,7 +1764,7 @@ plaque brass~
 ~
 13 17 3 10 7 0 32768 0 0 0 0
 0 0 0 0 0 0 0 0
-5 10 100
+5 10 100 100
 E
 plaque brass~
 
@@ -1785,7 +1785,7 @@ necklace iron segmented~
 ~
 9 15 3 2 7 0 0 5 64 4173708804 0
 8 2 0 3 0 0 0 0
-7 2000 100
+7 2000 100 100
 E
 necklace iron segmented~
 This necklace, made of alternating polished and unpolished bits of iron,
@@ -1802,7 +1802,7 @@ chest wooden~
 ~
 15 6 5 50 7 0 8192 0 0 0 0
 150 15 0 250 0 0 0 0
-20 500 100
+20 500 100 100
 E
 chest wooden~
 Made of wood reinforced with iron bands, this chest looks like it
@@ -1815,7 +1815,7 @@ A small pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 25 10 5 0 0 0 0
-1 1 100
+1 1 100 100
 E
 coins pile~
 If you don't know what a pile of coins is, you suck.
@@ -1827,7 +1827,7 @@ ring black steel~
 ~
 9 16 1 1 7 0 65664 3 64 0 0
 5 1 0 3 0 0 0 0
-1 500 100
+1 500 100 100
 E
 ring black steel~
 This ring, made of black steel, is finely engraved with what look like
@@ -1844,7 +1844,7 @@ chest wooden~
 ~
 15 6 5 50 7 0 8192 0 0 0 0
 450 15 0 250 0 0 0 0
-30 1500 100
+30 1500 100 100
 E
 chest wooden~
 Made of wood reinforced with iron bands, this chest looks like it
@@ -1857,7 +1857,7 @@ coins platinum stack short~
 ~
 20 25 1 0 7 0 0 1 0 0 0
 0 0 0 100 0 0 0 0
-1 10 100
+1 10 100 100
 E
 platinum stack short~
 Man, platinum sure is great, ain't it?  Go Trailblazers!
@@ -1869,7 +1869,7 @@ bauble brass tiny~
 ~
 12 17 0 0 7 0 4096 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 bauble brass tiny~
 A tiny sphere of brass no more than a quarter of an inch in diameter,
@@ -1886,7 +1886,7 @@ crate stack~
 ~
 15 6 5 50 7 0 8192 0 0 0 0
 50 0 0 250 0 0 0 0
-5 10 100
+5 10 100 100
 E
 crate stack~
 Made of wooden slats, this crate looks much like any other.
@@ -1898,7 +1898,7 @@ crate tilted side~
 ~
 15 6 5 50 7 0 8192 0 0 0 0
 50 0 0 250 0 0 0 0
-5 10 100
+5 10 100 100
 E
 crate side~
 Looks like a crate - wooden slats, a shape reminiscent of a
@@ -1911,7 +1911,7 @@ crate remains broken~
 ~
 15 6 5 50 7 0 8192 0 0 0 0
 10 0 0 250 0 0 0 0
-2 1 100
+2 1 100 100
 E
 crate remains broken~
 Looks like someone was looking for something.  Did they succeed?  You
@@ -1924,7 +1924,7 @@ crate topless~
 ~
 15 6 5 50 7 0 8192 0 0 0 0
 20 0 0 250 0 0 0 0
-3 10 100
+3 10 100 100
 E
 crate topless~
 Much like any other crate, only topless.  Sexy.
@@ -1936,7 +1936,7 @@ wood fragment plank wooden~
 ~
 5 6 3 0 7 0 8192 8193 0 0 0
 10 1 3 11 0 0 0 0
-2 10 100
+2 10 100 100
 E
 wood fragment~
 &+yNo doubt once a part of a plank, this chunk of wood is now
@@ -1953,7 +1953,7 @@ dagger iron~
 ~
 5 15 2 3 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-2 500 100
+2 500 100 100
 E
 dagger iron~
 Made of iron, this dagger looks remarkably plain.
@@ -1967,7 +1967,7 @@ bunny dust~
 ~
 13 3 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bunny dust~
 Why look, it's a dust bunny..  Isn't it cute?
@@ -1983,7 +1983,7 @@ nail nine inch~
 ~
 5 16 2 0 7 0 4096 8193 66 0 0
 2 1 4 11 0 0 0 0
-2 10 100
+2 10 100 100
 E
 nail nine inch~
 &+cIt looks like every other nail, though it appears to have been made
@@ -2002,7 +2002,7 @@ chunk adamantite~
 ~
 12 19 0 0 7 0 8421376 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 chunk adamantite~
 &+rFairly heavy, this nugget of adamantite looks valuable indeed.
@@ -2014,7 +2014,7 @@ vest felt green overstretched~
 ~
 9 3 0 0 7 0 0 9 64 0 0
 10 3 1 3 0 0 0 0
-4 500 100
+4 500 100 100
 E
 vest felt green overstretched~
 Made of thick green felt and rather large, this poor vest has been
@@ -2031,7 +2031,7 @@ belt felt green~
 ~
 9 3 3 3 7 0 0 2049 64 0 0
 2 10 0 3 0 0 0 0
-1 500 100
+1 500 100 100
 E
 belt felt green~
 Made of thick velt, this belt has been stretched by someone or
@@ -2048,7 +2048,7 @@ boots iron segmented~
 ~
 9 15 3 8 7 0 0 65 64 4173708804 0
 10 6 1 3 0 0 0 0
-9 2500 100
+9 2500 100 100
 E
 boots iron segmented~
 &+cMade of alternating polished and unpolished plates of iron, these
@@ -2065,7 +2065,7 @@ wings iron tiny~
 ~
 8 15 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 2750 100 134217728 0 0 0
+1 2750 100 100 134217728 0 0 0
 E
 wings iron tiny~
 Besides being pretty in a delicate sort of way, these wings look
@@ -2083,7 +2083,7 @@ collar obsidian~
 ~
 9 36 0 0 7 0 0 5 64 4169510912 0
 7 2 1 3 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 collar obsidian~
 &+LMade of pure obsidian, this collar is only polished on the inside,
@@ -2100,7 +2100,7 @@ tail imp black~
 ~
 12 2 0 0 7 0 8192 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 4269 100
+1 4269 100 100
 E
 tail~
 &+LPurely black, you could swear this tail still twitches every now
@@ -2117,7 +2117,7 @@ chunk adamantite~
 ~
 12 19 0 0 7 0 8421376 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 chunk adamantite~
 &+rFairly heavy, this nugget of adamantite looks valuable indeed.
@@ -2129,7 +2129,7 @@ torches torch~
 ~
 13 16 3 8 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-10 10 100
+10 10 100 100
 E
 torches torch~
 &+LMounted in sconces, these lit torches light up the area, as you
@@ -2142,7 +2142,7 @@ crown steel black~
 ~
 9 16 3 8 7 0 128 17 64 0 0
 8 4 16 3 0 0 0 0
-4 1200 100
+4 1200 100 100
 E
 crown steel black~
 &+LHeavy and rather plain, this crown is basically a black steel
@@ -2159,7 +2159,7 @@ robes purple robe thick~
 ~
 9 3 3 8 7 0 128 9 64 0 0
 10 0 0 4 0 0 0 0
-10 1200 100
+10 1200 100 100
 E
 robes purple robe thick~
 &+mThick, with white lining, these robes look very nice indeed.
@@ -2175,7 +2175,7 @@ throne bone~
 ~
 29 10 0 50 7 0 2 0 0 0 0
 270 14480 0 1 0 0 0 0
-750 20302 100
+750 20302 100 100
 E
 throne bone~
 &+WMade of bone shaped like a chair, this monstrosity is fearsome
@@ -2189,7 +2189,7 @@ ring knuckle bone knucklebone~
 ~
 9 10 1 1 7 0 0 3 64 0 0
 3 1 0 3 0 0 0 0
-0 7500 100
+0 7500 100 100
 E
 ring knuckle bone knucklebone~
 &+WMade from some poor creature's knucklebone, this ring fits
@@ -2206,7 +2206,7 @@ metal twisted bit~
 ~
 5 16 2 0 7 0 4096 8193 0 0 0
 2 3 6 11 0 0 0 0
-2 13 100
+2 13 100 100
 E
 metal twisted bit~
 This sharp bit of metal is about two inches long, and twisted
@@ -2223,7 +2223,7 @@ bone shattered piece~
 ~
 5 10 2 0 7 0 4096 8193 0 0 0
 2 1 5 3 0 0 0 0
-2 1 100
+2 1 100 100
 E
 bone shattered piece~
 Probably a piece of some creature's leg bone, this long, narrow
@@ -2240,7 +2240,7 @@ corpse troll rotting~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 203 0 0 100 0 0 0 0
-170 69 100
+170 69 100 100
 E
 corpse troll~
 &+gThis troll has clearly been dead for a long, long time.  Its
@@ -2255,7 +2255,7 @@ corpse human rotting~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 293 0 0 100 0 0 0 0
-141 12 100
+141 12 100 100
 E
 corpse human rotting~
 &+MThis man, once alive, is now dead, and has been for quite a while.
@@ -2269,7 +2269,7 @@ bracelet wooden wood stained~
 ~
 9 6 3 3 7 0 8192 4097 64 0 0
 4 11 24 3 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 bracelet wooden wood stained~
 &+yStained though it is, this finely carved wooden bracelet still
@@ -2286,7 +2286,7 @@ corpse dwarf rotting~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 293 0 0 100 0 0 0 0
-141 12 100
+141 12 100 100
 E
 corpse dwarf rotting~
 &+MThis man, once alive, is now dead, and has been for quite a while.
@@ -2300,7 +2300,7 @@ A tiny diamond has been discarded here.~
 ~
 8 8 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1273 100
+1 1273 100 100
 E
 diamond tiny~
 Though tiny, this diamond is no doubt worth something.
@@ -2312,7 +2312,7 @@ corpse elf rotting~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 203 0 0 100 0 0 0 0
-170 69 100
+170 69 100 100
 E
 corpse elf~
 &+gAt least 200 years old, this elf clearly went before her time.
@@ -2326,7 +2326,7 @@ corpse elf drow~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 203 0 0 100 0 0 0 0
-123 69 100
+123 69 100 100
 E
 corpse elf drow~
 &+mWith a missing leg and half of the right arm missing, whatever
@@ -2341,7 +2341,7 @@ key ironwood dark~
 ~
 18 6 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 432 100
+1 432 100 100
 E
 key ironwood dark~
 &+LMade of ironwood stained black, this key seems heavy for its
@@ -2354,7 +2354,7 @@ earring ironwood dark~
 ~
 9 6 1 1 7 0 1115264 524289 64 4197892 0
 5 14 0 3 0 0 0 0
-1 2500 100 0 128 0 0
+1 2500 100 100 0 128 0 0
 E
 earring ironwood dark~
 &+LThough small, this simple teardrop-shaped earring seems heavy.
@@ -2370,7 +2370,7 @@ wand ebony~
 ~
 3 6 2 4 7 0 1024 16385 64 4197892 0
 50 10 10 5 0 0 0 0
-3 35000 100
+3 35000 100 100
 E
 wand ebony~
 &+LA simple ebony wand topped by a small iron globe, this wand
@@ -2385,7 +2385,7 @@ hand elf~
 ~
 12 2 0 0 7 0 128 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1769 100
+2 1769 100 100
 E
 hand elf~
 &+gThough disembodied, this hand (right hand, by the way) seems
@@ -2402,7 +2402,7 @@ cloak silken threadbare silk~
 ~
 9 3 3 8 7 0 0 1025 64 0 0
 7 9 1 3 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 cloak silken threadbare silk~
 &+LThis silken cloak has been worn so often that is now suitable
@@ -2419,7 +2419,7 @@ chunk adamantite~
 ~
 12 19 0 0 7 0 8421376 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 chunk adamantite~
 &+rFairly heavy, this nugget of adamantite looks valuable indeed.
@@ -2431,7 +2431,7 @@ key wooden long~
 ~
 18 6 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key wooden long~
 &+yMade of wood, this key has a long shaft compared to most.
@@ -2443,7 +2443,7 @@ skeleton humanoid human~
 ~
 15 10 3 0 7 0 0 0 0 0 0
 20 0 0 100 0 0 0 0
-10 430 100
+10 430 100 100
 E
 skeleton humanoid human~
 With an eternal scowl, this skeleton stands chained to his irons.
@@ -2455,7 +2455,7 @@ irons leg broken~
 ~
 13 16 3 8 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 100 100
+5 100 100 100
 E
 irons leg broken~
 &+cOnce usable, these broken leg irons are now useless.
@@ -2467,7 +2467,7 @@ A key made of pumice lies here, discarded.~
 ~
 18 11 1 1 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key pumice warm~
 Made of pumice, this key is constantly warm to the touch.
@@ -2479,7 +2479,7 @@ horn magma tiny~
 ~
 13 11 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 129 100
+1 129 100 100
 E
 horn magma tiny~
 &+LMade of hardened lava, this tiny horn seems to possess an
@@ -2496,7 +2496,7 @@ A tiny ring made of pumice is here, discarded.~
 ~
 9 11 1 1 7 0 0 3 64 0 0
 3 1 0 3 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 ring pumice tiny~
 Made of pumice, this ring nonetheless fits snugly over the ring
@@ -2513,7 +2513,7 @@ A small chest of pumice is here, seemingly part of the floor.~
 ~
 15 11 5 50 7 0 0 0 0 0 0
 200 29 14525 250 0 0 0 0
-20 2000 100
+20 2000 100 100
 E
 chest pumice~
 Made of pumice, this chest seems to be part of the floor, seamlessly
@@ -2526,7 +2526,7 @@ A helm of pumice lies here, discarded.~
 ~
 9 11 3 10 7 0 8192 17 64 4165209604 0
 8 4 1 3 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 helm pumice~
 Basically a half-sphere carved out in the middle, this helmet looks
@@ -2543,7 +2543,7 @@ A dagger made from pumice lies here, discarded.~
 ~
 5 11 2 3 7 0 8192 8193 64 0 0
 2 1 6 11 0 0 0 0
-1 2752 100
+1 2752 100 100
 E
 dagger pumice~
 With a hilt of iron and a blade of pumice, this dagger is extremely
@@ -2560,7 +2560,7 @@ gloves adamantite~
 ~
 9 19 3 6 7 0 0 129 64 4173708804 0
 9 7 6 3 0 0 0 0
-6 3500 100 0 64 0 0
+6 3500 100 100 0 64 0 0
 E
 gloves adamantite~
 &+rMade of adamantite formed into chainmail, these gloves are
@@ -2577,7 +2577,7 @@ paper scrap~
 ~
 13 28 1 2 7 0 8421376 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 paper scrap~
 Scrawled in common is the single word "unaqzl".
@@ -2589,7 +2589,7 @@ collar gemstones iron purple~
 ~
 9 15 0 0 7 0 0 5 64 4248567899 0
 6 2 1 3 0 0 0 0
-3 5000 100 0 64 0 0
+3 5000 100 100 0 64 0 0
 E
 collar gemstones iron purple~
 &+cA simple iron collar studded with purple gems, this collar
@@ -2606,7 +2606,7 @@ ear wolf white~
 ~
 13 2 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100 0 64 0 0
+0 100 100 100 0 64 0 0
 E
 ear wolf white~
 &+WBig for a right ear.
@@ -2620,7 +2620,7 @@ sword marble runes~
 ~
 5 38 3 10 7 0 2098176 8193 64 87572571 0
 5 1 7 3 0 0 0 0
-28 7500 100 0 8192 0 0
+28 7500 100 100 0 8192 0 0
 E
 sword marble~
 &+gMade of marble and two and a half feet long, this heavy sword
@@ -2643,7 +2643,7 @@ chunk adamantite~
 ~
 12 19 0 0 7 0 8421376 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 chunk adamantite~
 &+rFairly heavy, this nugget of adamantite looks valuable indeed.
@@ -2655,7 +2655,7 @@ vial green potion~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 15 43 -1 -1 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 vial green potion~
 &+gA simple vial stoppered with a cork, the thick green liquid
@@ -2668,7 +2668,7 @@ beaker purple liquid~
 ~
 10 40 2 4 7 0 65536 16385 0 0 0
 50 9 108 117 0 0 0 0
-4 2500 100
+4 2500 100 100
 E
 beaker purple liquid~
 &+mRoughly cylindrical, this beaker contains a thin purple substance
@@ -2681,7 +2681,7 @@ A &+Lstone&N token lies here, discarded.~
 ~
 9 11 0 0 7 0 0 16389 64 0 0
 8 0 0 3 0 0 0 0
-2 500 100
+2 500 100 100
 E
 token stone~
 Simple, this token is circular with a small circular depression
@@ -2699,7 +2699,7 @@ chunk adamantite~
 ~
 12 19 0 0 7 0 8421376 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 chunk adamantite~
 &+rFairly heavy, this nugget of adamantite looks valuable indeed.
@@ -2711,7 +2711,7 @@ robe cotton bleached robes~
 ~
 9 3 3 8 7 0 9216 9 66 4197892 0
 6 3 1 3 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 robe cotton bleached robes~
 &+WThis robe is a simple one, made only to cover the body and provide
@@ -2728,7 +2728,7 @@ bracelet moss~
 ~
 9 30 3 3 7 0 8192 4097 64 0 0
 8 0 0 3 0 0 0 0
-2 10000 100 2048 0 0 0
+2 10000 100 100 2048 0 0 0
 E
 bracelet moss~
 &+yMade of thick wood, this bracelet has bits of moss on it that,
@@ -2745,7 +2745,7 @@ staff runes thick wooden~
 ~
 5 6 3 10 7 0 9216 8193 64 37883620 0
 12 3 5 6 0 0 0 0
-10 5392 100 0 16 0 0
+10 5392 100 100 0 16 0 0
 E
 staff runes thick wooden~
 &+yInscribed with burnt-in runes from top to bottom, this thick staff
@@ -2762,7 +2762,7 @@ broach steel shiny~
 ~
 9 16 0 0 7 0 4096 5 64 0 0
 4 2 1 3 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 broach steel shiny~
 &+CA simple loop that fits around the neck, this broach nonetheless
@@ -2779,7 +2779,7 @@ eyepiece steel~
 ~
 9 16 0 0 7 0 0 131073 64 0 0
 2 12 12 3 0 0 0 0
-2 4912 100 4 0 0 0
+2 4912 100 100 4 0 0 0
 E
 eyepiece steel~
 &+LThis dark steel eyepiece, roughly one inch in diameter and three inches
@@ -2796,7 +2796,7 @@ longsword sword long glowing~
 ~
 5 16 3 10 7 0 263296 8193 64 87572571 0
 5 3 6 3 0 0 0 0
-10 3219 100
+10 3219 100 100
 E
 longsword sword long glowing~
 &+CApparently made of steel and glowing with an unholy light, this
@@ -2813,7 +2813,7 @@ orb glowing~
 ~
 25 16 0 50 7 0 327681 0 64 0 0
 14386 320 -1 0 0 0 0 0
-9 49323 100
+9 49323 100 100
 E
 orb glowing~
 &+WPerfectly spherical and glowing with an eerie light, this orb no doubt
@@ -2826,7 +2826,7 @@ tooth serrated shark~
 ~
 5 10 2 0 7 0 8192 0 0 0 0
 2 3 4 11 0 0 0 0
-1 930 100
+1 930 100 100
 E
 tooth serrated shark~
 &+WThis serrated shark's tooth looks like just the thing you'd hate to
@@ -2843,7 +2843,7 @@ necklace strength stones blue~
 ~
 9 11 3 2 7 0 0 5 66 4173708804 0
 6 2 0 3 0 0 0 0
-4 3922 100
+4 3922 100 100
 E
 necklace strength stones blue~
 &+bMade of blue stones run through with simple white thread, this
@@ -2860,7 +2860,7 @@ A dirtied scrap of paper lies here.~
 ~
 13 28 1 2 7 0 40960 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 paper scrap~
 Written in elegantly done common, this dirty scrap of paper reads:
@@ -2876,7 +2876,7 @@ Some cracks are in the walls here.~
 ~
 15 11 3 0 7 0 40962 0 0 0 0
 15 0 0 100 0 0 0 0
-50 1 100
+50 1 100 100
 E
 cracks crack~
 They look like cracks, alright.
@@ -2888,7 +2888,7 @@ tag version nakral crypt~
 ~
 12 6 0 0 7 0 565248 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 tag version nakral crypt~
 version 1.0, Nakral's Crypt
@@ -2902,7 +2902,7 @@ totem leopard granite white~
 ~
 34 37 2 2 7 0 1024 16385 0 37883812 0
 15 0 0 0 0 0 0 0
-4 17321 100
+4 17321 100 100
 E
 totem leopard granite white~
 &+WAbout a foot long, this totem is big and heavy, giving you a feeling
@@ -2919,7 +2919,7 @@ band gold scratched~
 ~
 9 24 1 1 7 0 4096 3 64 0 0
 4 1 0 3 0 0 0 0
-0 5483 100
+0 5483 100 100
 E
 band gold scratched~
 This ring was probably once a fine piece of jewelry, but the sands
@@ -2936,7 +2936,7 @@ mace iron ancient~
 ~
 5 15 3 8 7 0 0 24577 0 0 0
 6 2 4 7 0 0 0 0
-8 3921 100
+8 3921 100 100
 E
 mace iron ancient~
 Simply constructed with a wooden handle and an iron head, the mace
@@ -2953,7 +2953,7 @@ collar mithril~
 ~
 9 18 0 0 7 0 262272 5 64 0 0
 8 2 1 3 0 0 0 0
-6 9853 100
+6 9853 100 100
 E
 collar mithril~
 &+CSimply constructed out of mithril, this collar glows with a strange
@@ -2971,7 +2971,7 @@ collar mithril~
 ~
 9 18 0 0 7 0 129 5 64 4198895524 0
 12 2 1 3 0 0 0 0
-6 9853 100
+6 9853 100 100
 E
 collar mithril~
 &+CSimply constructed out of mithril, this collar glows with a strange
@@ -2989,7 +2989,7 @@ sword long longsword~
 ~
 5 16 3 10 7 0 0 24577 0 4173708804 0
 5 2 7 3 0 0 0 0
-8 394 100
+8 394 100 100
 E
 sword long longsword~
 Looks like a longsword, all right.
@@ -3005,7 +3005,7 @@ platemail stone plate ancient suit~
 ~
 9 11 3 25 7 0 33920 9 64 87572571 0
 31 3 1 3 0 0 0 0
-110 23192 100
+110 23192 100 100
 E
 platemail stone plate ancient~
 &+LMade of an unidentifiable dark grey stone, this suit of platemail looks
@@ -3023,7 +3023,7 @@ gloves iron segmented~
 ~
 9 15 3 6 7 0 0 129 64 4173708804 0
 11 7 6 3 0 0 0 0
-9 2500 100
+9 2500 100 100
 E
 gloves iron segmented~
 &+cMade of plates of iron hooked together with eyelets and hooks, these

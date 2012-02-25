@@ -5,7 +5,7 @@ water~
 ~
 17 40 3 0 1 0 0 0 0 0 0
 1000 -1 0 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 hole water~
 &+B   The water looks cool and refreshing.  Many animals have taken a dip in this
@@ -18,7 +18,7 @@ pool~
 ~
 25 40 3 0 10 0 2 0 0 0 0
 69041 7 -1 0 0 0 0 0
--1 0 100
+-1 0 100 100
 E
 pool~
 &N   &+BThe water looks cool and refreshing.&N
@@ -30,7 +30,7 @@ buffalo-hide buffalo hide bp backpack~
 ~
 15 12 3 0 10 0 64 4194305 0 0 0
 300 1 0 300 0 0 0 0
-4 0 100
+4 0 100 100
 E
 buffalo-hide buffalo hide bp backpack~
 &N   This backpack is made from tough&+y buffalo hide&N.  The shoulder straps are
@@ -46,7 +46,7 @@ mask face golem stone~
 ~
 9 11 3 0 10 0 4096 278529 0 0 0
 3 0 0 3 0 0 0 0
-5 0 100 0 16 0 0
+5 0 100 100 0 16 0 0
 E
 mask face golem stone~
 &+L  This mask is made of stone.&N
@@ -62,7 +62,7 @@ sword~
 ~
 5 16 3 0 10 0 0 24577 0 0 0
 9 2 3 3 0 0 0 0
-6 0 100
+6 0 100 100
 E
 sword~
 &+L  This sword is made out of steel, highly prized by the owner.&N
@@ -76,7 +76,7 @@ axe stone battle~
 ~
 5 11 3 0 9 0 0 8193 0 0 0
 1 1 4 6 0 0 0 0
-10 0 100
+10 0 100 100
 E
 axe stone battle~
 &+L   This stone axe is a very sinister weapon.&N
@@ -90,7 +90,7 @@ totem chieftain~
 ~
 34 6 3 0 14 0 33555520 16385 0 256 0
 60 0 0 0 0 0 0 0
-10 16432 100 536870944 16 0 0
+10 16432 100 100 536870944 16 0 0
 E
 totem chieftain~
 &+L   This black steel totem was made deep below the surface of the planet.
@@ -108,7 +108,7 @@ belt fancy~
 ~
 9 14 3 0 10 0 0 18433 0 0 0
 2 0 0 2 0 0 0 0
-3 0 100 0 16 0 0
+3 0 100 100 0 16 0 0
 E
 belt fancy~
 &+L   This belt is rather nice.&N
@@ -124,7 +124,7 @@ steel piece~
 ~
 18 16 3 0 4 0 0 8388609 0 0 0
 0 100 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 steel~
 &+L   This piece of &+csteel&+L is small and unspectacular.&N
@@ -136,7 +136,7 @@ throne large steel~
 ~
 15 16 3 0 10 0 0 0 0 0 0
 100 13 69008 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 throne large steel~
 &+L   This large throne is used only by the chieftain of the clan.  It is large
@@ -152,7 +152,7 @@ halp sword longsword~
 ~
 5 16 3 0 10 0 4104 8193 64 0 0
 5 3 3 3 0 0 0 0
-10 14349 100 4 0 0 0
+10 14349 100 100 4 0 0 0
 E
 halp sword longsword~
 &+W   This longsword looks to be one that would be well fit for use by a ranger.
@@ -171,7 +171,7 @@ rangers cloak ranger~
 ~
 9 14 3 0 14 0 65600 17409 0 4 0
 10 0 0 2 0 0 0 0
-6 0 100 16777220 0 0 0
+6 0 100 100 16777220 0 0 0
 E
 rangers cloak ranger~
 &+y   This cloak is very well made.  It has a magical presence to it.  There is
@@ -189,7 +189,7 @@ javelin steel~
 ~
 5 16 3 0 9 0 4194304 8193 0 0 0
 2 3 4 11 1 0 0 0
-7 0 100
+7 0 100 100
 E
 javelin steel~
 &+L   This black javelin is tipped with a very sharp head.  The javelin is
@@ -202,7 +202,7 @@ bar~
 ~
 13 5 3 0 2 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 bar~
 &N   This bar counter is very well taken care of.  The wood has been stained and
@@ -215,7 +215,7 @@ A blackened tail pieces lies here discarded.&N~
 ~
 9 15 3 0 11 0 1 33570817 0 0 0
 4 0 0 1 1 0 0 0
-5 0 100
+5 0 100 100
 E
 tail tailpiece~
 &N   This simple looking tailpiece is covere with spikes.  It is covered with
@@ -232,7 +232,7 @@ mask~
 ~
 9 15 3 0 7 0 0 278529 0 0 0
 4 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mask~
 &N   This creepy mask is imbued with magic.  The face on the mask is very ugly.
@@ -249,7 +249,7 @@ A surgeons mask lies here forgotten.&N~
 ~
 9 2 3 0 13 0 32 278529 0 0 0
 5 0 0 3 0 0 0 0
-3 0 100 0 4096 0 0
+3 0 100 100 0 4096 0 0
 E
 mask surgeon surgeons~
 &N   This mask ties behind the head.  It is currently soaked with blood and
@@ -266,7 +266,7 @@ A small &+ywooden&N &+Lquiver&N lies here forgotten.&N~
 ~
 30 5 2 0 10 2 64 1064961 0 0 0
 40 5 1 20 0 0 0 0
-5 0 100 0 16 0 0
+5 0 100 100 0 16 0 0
 E
 elven quiver~
 &N   This small quiver is covered with ancient runes.  The item glows with
@@ -284,7 +284,7 @@ A pair of &+ggardeners&N shears lie here. &N~
 ~
 5 15 3 0 9 0 0 24577 0 0 0
 2 3 1 11 0 0 0 0
-3 0 100
+3 0 100 100
 E
 shears~
 &N   This sharp pair of shears is a deadly weapon.  The wooden handle looks very
@@ -301,7 +301,7 @@ brass ring~
 ~
 9 17 3 0 8 0 64 3 0 8096 0
 1 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 brass ring~
 &N   This ring is made of brass.  It is very plain and smooth.&N
@@ -317,7 +317,7 @@ a water fountain~
 ~
 17 11 3 0 15 0 8 0 0 0 0
 99999999 -1 0 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 water fountain~
 &N   This water fountain is very grand by any creatures standard.  It was crafted
@@ -333,7 +333,7 @@ rat rats tail~
 ~
 11 2 3 0 3 0 0 41959425 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rat rats tail~
 &N   This is a rats tail...GROSS!&N
@@ -345,7 +345,7 @@ A piece of paper with lots of writing on it lays here.&N~
 ~
 13 29 3 0 4 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 order form paper~
 &N   This appears to be an order form.
@@ -374,7 +374,7 @@ A many notched axe lies on the ground here forgotten.&N~
 ~
 5 15 3 0 8 0 0 8193 0 0 0
 1 2 2 7 0 0 0 0
-7 0 100
+7 0 100 100
 E
 axe ax~
 &N  This axe has many notches in it.  It has obviously been used in many battles.&N
@@ -388,7 +388,7 @@ a suit of armor lies on the ground here forgotten.&N~
 ~
 9 16 3 0 7 0 536870912 9 0 32794 0
 200 0 0 3 0 0 0 0
-14 16343 100
+14 16343 100 100
 E
 plate platemail suit armor~
 &N   This platemail has been blessed by the gods.  It is very sturdy and can
@@ -405,7 +405,7 @@ desk~
 ~
 15 6 3 0 10 0 0 0 0 0 0
 100 13 69075 100 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 desk~
 &+y   This desk is very well made with many different drawers in it.  The top
@@ -418,7 +418,7 @@ a small flute lies upon the ground obviously forgotten&N~
 ~
 32 41 3 1 9 0 0 16385 0 0 0
 184 40 1 5 0 0 0 0
-3 0 100
+3 0 100 100
 E
 flute slender~
 &N   This small flute is made from bamboo. It is a very well made instrument and
@@ -431,7 +431,7 @@ iron wrist wristband~
 ~
 9 15 3 0 5 0 0 4097 0 122974 0
 1 0 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 iron wrist wristband~
 &N   This wristband is made from iron and can offer an added amount of damage
@@ -446,7 +446,7 @@ iron cap~
 ~
 9 15 3 0 3 0 0 17 0 0 0
 2 0 0 2 0 0 0 0
-2 0 100
+2 0 100 100
 E
 iron cap~
 &N   This cap is made out of iron and has been put together with iron bolts.&N
@@ -458,7 +458,7 @@ iron mask~
 ~
 9 15 3 0 3 0 0 262145 0 0 0
 1 0 0 1 0 0 0 0
-3 0 100
+3 0 100 100
 E
 iron mask~
 &N   This iron mask is used to cover the face.  There is a leather strap that
@@ -471,7 +471,7 @@ shield iron~
 ~
 37 15 3 0 4 0 0 513 0 0 0
 2 1 3 85 4 0 0 0
-8 0 100
+8 0 100 100
 E
 shield iron~
 &+L   This large iron shield has a large strap that is used to strap it to the
@@ -484,7 +484,7 @@ A long and thin dagger lies here on the ground.&N~
 ~
 5 15 3 0 8 0 0 8193 0 0 0
 2 2 2 11 0 0 0 0
-4 0 100
+4 0 100 100
 E
 dagger iron~
 &+L   This iron dagger has a fine edge.  Its very well made and can cause a
@@ -497,7 +497,7 @@ A &+Wbaked potato&N has been tossed to the ground here.&N~
 ~
 19 48 3 0 8 0 8 16385 0 0 0
 4 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 baked potato iron food~
 &N   This potato looks very tasty.  Its skin has been roasted to a crispy brown
@@ -511,7 +511,7 @@ iron locket~
 ~
 9 15 3 0 13 0 98313 5 0 0 0
 1 0 0 1 0 0 0 0
-3 0 100 36 0 0 0
+3 0 100 100 36 0 0 0
 E
 iron locket~
 &N   This magical locket glows with a magical power.  The locket has been very
@@ -524,7 +524,7 @@ a book rests here obviously forgotten.~
 ~
 13 29 3 0 14 0 4104 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 book~
 &N   This small book contains three pages.  The book is bound with leather and
@@ -599,7 +599,7 @@ A bookcase has been built to hold books here.&N~
 ~
 15 6 3 0 10 0 2 0 0 0 0
 40 0 0 40 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 bookcase~
 &N   This bookcase is well made and filled with many different kinds of books.&N
@@ -611,7 +611,7 @@ A simple fountain made of stone has been constructed here.&N~
 ~
 17 40 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
--1 0 100
+-1 0 100 100
 E
 fountain water~
 &N   This simple fountain is only used to give water to the people of the
@@ -624,7 +624,7 @@ A triangular piece of metal lies here upon the ground.&N~
 ~
 37 15 3 0 5 0 65536 513 0 0 0
 2 7 3 125 3 0 0 0
-12 0 100
+12 0 100 100
 E
 triangular triangle shield metal piece~
 &N   This triangular shield is used by the night watchers of a mountain village.
@@ -637,7 +637,7 @@ metal ring piece~
 ~
 9 15 3 0 4 0 229384 3 0 0 0
 1 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 metal ring piece~
 &N   This cheap ring is worn on the finger.&N
@@ -649,7 +649,7 @@ A key lies here.&N~
 ~
 18 33 3 0 7 0 136 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key blue~
    A key.&N
@@ -661,7 +661,7 @@ key~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 key~
    A key&N
@@ -673,7 +673,7 @@ a key lies here&N~
 ~
 18 15 3 0 7 0 4232 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 key~
    a key is a key
@@ -685,7 +685,7 @@ A bag of popcorn lies upon the ground&N~
 ~
 19 48 3 0 2 0 8 16385 0 0 0
 6 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 pop popcorn bag~
    A bag of popcorn is filled with popcorn.&N
@@ -697,7 +697,7 @@ A &+Bbig blue balloon&N floats here&N~
 ~
 13 49 3 0 7 0 67108864 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 big blue balloon~
    the balloon is a nice gift for a child&N
@@ -709,7 +709,7 @@ A &+Rbig red balloon&N floats here&N~
 ~
 13 49 3 0 7 0 67108864 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 big red balloon~
    The balloon is a balloon.
@@ -721,7 +721,7 @@ A long bladed dagger lies upon the ground here.&N~
 ~
 5 16 3 0 12 0 172352 8396801 0 24576 0
 2 2 3 11 0 0 0 0
-8 0 100
+8 0 100 100
 E
 dagger spider~
 &+L   This dagger is long and sharp.  Its crosspiece is the shape of a spider.&N
@@ -737,7 +737,7 @@ A key lies on the ground here&N~
 ~
 18 1 3 0 15 0 8630521 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key shadow~
    The key is but a mere shadow.&N
@@ -749,7 +749,7 @@ moldy helm~
 ~
 9 6 3 0 7 0 0 17 0 0 0
 10 0 0 3 0 0 0 0
-5 0 100 0 28 0 0
+5 0 100 100 0 28 0 0
 E
 moldy helm~
    This wooden helm is covered with mold.&N
@@ -765,7 +765,7 @@ A piece of rawhide with metal lies here.&N~
 ~
 9 12 3 0 7 0 8 4097 0 0 0
 2 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 watch brown~
    This sundial rests upon a strip of rawhide.&N
@@ -781,7 +781,7 @@ clown paint pool~
 ~
 9 2 3 0 7 0 72 262145 0 0 0
 2 0 0 3 0 0 0 0
-3 0 100
+3 0 100 100
 E
 clown paint~
    Gross.  A face.
@@ -797,7 +797,7 @@ a pile of coins lies here.&N~
 ~
 20 24 3 0 7 0 0 1 0 0 0
 0 0 100 200 0 0 0 0
-40 0 100
+40 0 100 100
 E
 coins~
    some coins
@@ -809,7 +809,7 @@ A small surgical tool lies here.&N~
 ~
 5 16 3 0 13 0 1024 8193 0 122880 0
 2 1 4 0 0 0 0 0
-4 16534 100 73792 0 0 0
+4 16534 100 100 73792 0 0 0
 E
 scalpel~
    This scalpel is a useful dagger.&N
@@ -825,7 +825,7 @@ a silver earring lies upon the ground here&N~
 ~
 9 22 3 0 10 0 4224 524289 1 0 0
 1 0 0 2 0 0 0 0
-2 15984 100 33554464 0 0 0
+2 15984 100 100 33554464 0 0 0
 E
 silver earring ear~
    &+CThis small silver earring is in the shape of a large hoop with several small
@@ -846,7 +846,7 @@ a severed head lies upon the ground.~
 ~
 8 2 3 0 9 0 8458280 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 head~
 &N  What a gruesome sight!  Gross!&N
@@ -858,7 +858,7 @@ corn plant~
 ~
 13 42 3 0 3 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 corn plant~
 &+g   This plant grows &+Ycorn&+g.  The plants are planted in straight rows to ensure
@@ -871,7 +871,7 @@ radish plant~
 ~
 19 48 3 0 3 0 0 16385 0 0 0
 3 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 radish plant~
 &+g   This &+Rradish&+g plant grows here.  Only the leaves are visible as the main
@@ -884,7 +884,7 @@ potato~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 potato~
 &N   This potato is smooth and brown.  The skin of the potato is filled with
@@ -898,7 +898,7 @@ dirt clump~
 ~
 13 1 3 0 1 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 dirt clump~
 &N   This dirt clump is a clump of dirt.&N
@@ -910,7 +910,7 @@ farmer farmers hat~
 ~
 9 3 3 0 5 0 0 17 0 0 0
 2 0 0 2 0 0 0 0
-4 0 100
+4 0 100 100
 E
 farmer farmers hat~
 &N   This large hat is used to keep the sun out of the farmers hat.  It's large
@@ -923,7 +923,7 @@ boots boot~
 ~
 9 13 3 0 7 0 0 16449 0 0 0
 3 0 0 3 0 0 0 0
-3 0 100
+3 0 100 100
 E
 boots boot~
 &+y  These are leather boots.&N
@@ -935,7 +935,7 @@ bracer leather~
 ~
 9 14 3 0 8 0 0 20481 0 0 0
 1 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 bracer leather~
 &+y  This bracer is made out of leather.&N
@@ -947,7 +947,7 @@ ring golden gold small~
 ~
 9 24 3 0 10 0 256 16387 0 0 0
 3 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 ring golden gold small~
 &N  This simple band is a wedding ring to be sure.  It has seen a great deal of
@@ -961,7 +961,7 @@ ring troglodyte spiked~
 ~
 9 15 3 0 11 0 1 16387 0 0 0
 1 0 0 3 1 0 0 0
-3 0 100
+3 0 100 100
 E
 ring troglodyte spiked~
 &N   This spiked ring is very simple, but its spikes make it deadly.  The ring
@@ -980,7 +980,7 @@ troglodyte earring~
 ~
 9 21 3 0 10 0 64 540673 0 0 0
 1 0 0 2 0 0 0 0
-2 0 100
+2 0 100 100
 E
 ring troglodyte~
 &N   This simple earring is a rare find as it comes from an underground race of
@@ -998,7 +998,7 @@ A dirty piece of cloth lies here undisturbed.&N~
 ~
 11 3 3 0 7 0 0 278529 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 gag cloth filthy~
 &N   This dirty piece of cloth has been fashioned into a gag.  There is a thick
@@ -1014,7 +1014,7 @@ A long whip lies here forgotten.&N~
 ~
 5 13 3 0 11 0 0 8193 0 0 0
 14 1 3 2 0 0 0 0
-6 0 100
+6 0 100 100
 E
 whip ettin-made ettin~
 &N   This whip is quite long and powerful.&N
@@ -1030,7 +1030,7 @@ bow white large~
 ~
 6 6 3 0 11 0 64 24577 0 24644 0
 60 70 0 1 0 0 0 0
-4 0 100
+4 0 100 100
 E
 bow white large~
 &N   This large bow is made from a fine white wood.  The bow is elgently
@@ -1048,7 +1048,7 @@ cloth sash tentro thin~
 ~
 9 15 3 0 11 0 64 18433 0 0 0
 1 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 E
 cloth sash tentro thin~
 &N   This thin sash bears the emblem of &+LT&+Rentr&+Lo&N.  The sash is a very rare item,
@@ -1065,7 +1065,7 @@ tentro-made tentro made spell book spellbook~
 ~
 33 5 3 0 11 0 4104 16385 0 0 0
 0 0 200 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 tentro-made tentro made spell book spellbook~
 &N   This spellbook was made in &+LT&+Rentr&+Lo&N, a mountain city that is secluded from
@@ -1081,7 +1081,7 @@ eyepatch~
 ~
 9 47 3 0 9 0 0 147457 0 0 0
 1 0 0 2 0 0 0 0
-2 0 100 0 16 0 0
+2 0 100 100 0 16 0 0
 E
 eye patch~
 &N   This eye patch is cheap looking and falling apart.  It is made from a very
@@ -1097,7 +1097,7 @@ mask tentro~
 ~
 9 9 3 0 14 0 65 262145 0 0 0
 6 0 0 3 0 0 0 0
-2 0 100 33554436 0 0 0
+2 0 100 100 33554436 0 0 0
 E
 mask tentro~
 &N   This strange mask is covered with carvings from and of the city of &+LT&+rentr&+Lo&N.
@@ -1131,7 +1131,7 @@ A small mask lies here forgotten by its owner.&N~
 ~
 9 15 3 0 7 0 8388608 278529 0 0 0
 15 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mask troglodyte~
 &N   This simple mask serves no real purpose.  It has no magic within it and
@@ -1148,7 +1148,7 @@ hemp pants pair~
 ~
 9 43 3 0 9 0 0 16417 0 0 0
 5 0 0 2 0 0 0 0
-3 0 100
+3 0 100 100
 E
 hemp pants pair~
 &N   These are nice pants.&N
@@ -1162,7 +1162,7 @@ A strong looking arrow lies here undisturbed.&N~
 ~
 7 6 3 0 9 0 0 24577 0 0 0
 2 1 8 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 arrow strong~
 &N   This strong arrow has a sharp head and expensive looking feathers.&N
@@ -1174,7 +1174,7 @@ A &+ybuffalo totem&N lies here forgotten.&N~
 ~
 34 5 3 0 5 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 buffalo totem~
 &N   This&+y totem&N has been carved into the shape of a &+ybuffalo&N, native to the&+g plain&N
@@ -1188,7 +1188,7 @@ key~
 ~
 18 6 3 0 2 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key wooden desk~
 &+y   This small key is made from wood.&N
@@ -1200,7 +1200,7 @@ A simple vest has been left behind here.&N~
 ~
 15 3 3 0 7 0 0 16393 0 0 0
 20 5 0 12 0 0 0 0
-2 0 100
+2 0 100 100
 E
 vest simple~
 &+B   This simple vest is filled with many pockets.  It was probably bought from
@@ -1214,7 +1214,7 @@ A simple harp has been abandoned here.&N~
 ~
 32 5 3 0 8 0 0 16385 0 0 0
 187 35 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 E
 simple harp~
 &N    This simple harp is made from soft bark and cheap looking strings.  There
@@ -1227,7 +1227,7 @@ A simple map has been thrown aside here.&N~
 ~
 13 28 3 0 2 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 simple map~
 &+g                   The Field of Endolin
@@ -1257,7 +1257,7 @@ key~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key~
 &+L   This is a key.&N
@@ -1269,7 +1269,7 @@ long dagger troglodyte~
 ~
 5 11 3 0 9 0 512 8193 0 122880 0
 2 1 3 0 0 0 0 0
-4 15 66
+4 15 66 100
 E
 long dagger troglodyte~
 &+L   This long knife is a deadly weapon.  Made in the &+gtr&+Gog&+glo&+Gdy&+gte&+L cave system,
@@ -1285,7 +1285,7 @@ human corpse~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 human corpse~
 &+L   This battered corpse is that of a&+C human&+L, a surface dweller and most hated
@@ -1303,4 +1303,4 @@ large pile corn husks~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

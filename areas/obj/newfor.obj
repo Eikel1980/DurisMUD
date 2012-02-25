@@ -5,7 +5,7 @@ torch~
 ~
 13 6 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 torch~
 &+yThis is a long wooden &+Ytorch&+y that has been sharpened at the bottom just
@@ -18,7 +18,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+W-------------------
@@ -35,7 +35,7 @@ mirror portal~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 53338 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mirror portal~
 &+gThis large &+Cmirror&+g seems to almost swirl the image reflected back at
@@ -49,7 +49,7 @@ flower orchid~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #53304
 fountain kings~
 &+Wan enormous fountain&n~
@@ -57,7 +57,7 @@ fountain kings~
 ~
 17 38 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain kings~
 &+WThis splendid fountain sits directly in the center of the King's Glen.
@@ -71,7 +71,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53306
 rose bush~
 &+ga &+Rrose&+g bush&n~
@@ -79,7 +79,7 @@ rose bush~
 ~
 15 30 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rose bush~
 &+gThis beautiful flower bush saturates the area with the scent of &+Rrose&+g.&n
@@ -91,7 +91,7 @@ small sparrows nest~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #53308
 bluebird small nest~
 &+ya &+Bbluebird&+y nest&n~
@@ -99,7 +99,7 @@ bluebird small nest~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #53309
 rock pile rocks~
 &+wa rock pile&n~
@@ -107,7 +107,7 @@ rock pile rocks~
 ~
 15 37 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock pile rocks~
 &+wIt looks like someone was trying to build something with rocks here,
@@ -120,7 +120,7 @@ wide push broom~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 12 2 2 7 0 0 0 0
-0 1 100
+0 1 100 100
 A
 18 1
 A
@@ -132,7 +132,7 @@ rose petal weave~
 ~
 9 5 3 0 7 0 4096 0 0 0 0
 4 0 0 2 0 0 0 0
-0 299 100
+0 299 100 100
 A
 13 5
 #53312
@@ -142,7 +142,7 @@ mirror portal~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 53377 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53313
 campfire camp fire~
 &+ya camp&+rfire&n~
@@ -150,7 +150,7 @@ campfire camp fire~
 ~
 15 15 3 0 7 0 262144 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #53314
 lilac bush~
 &+ga &+mlilac &+gbush&n~
@@ -158,7 +158,7 @@ lilac bush~
 ~
 15 4 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #53315
 petal rose~
 &+ga &+Rrose&+g petal&n~
@@ -166,7 +166,7 @@ petal rose~
 ~
 8 5 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #53316
 petal dandylion~
 &+ga &+Ydandy&+glion petal&n~
@@ -174,7 +174,7 @@ petal dandylion~
 ~
 8 5 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #53317
 petal orchid~
 &+Man orchid petal&n~
@@ -182,7 +182,7 @@ petal orchid~
 ~
 8 5 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #53318
 petal lilac~
 &+ga &+mlilac&+g petal&n~
@@ -190,7 +190,7 @@ petal lilac~
 ~
 8 5 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #53319
 large sign~
 &+Wa large sign&n~
@@ -198,7 +198,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+WThe sign reads:&n
@@ -214,7 +214,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+WThe sign reads:&n
@@ -230,7 +230,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+WThe sign reads:&n
@@ -246,4 +246,4 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

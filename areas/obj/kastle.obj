@@ -5,7 +5,7 @@ boulder large~
 ~
 29 11 3 0 12 80 0 0 0 0 0
 270 99406 5 0 0 0 0 0
-9 9000 100
+9 9000 100 100
 E
 boulder large~
 &+L   This is a rather large &+wboulder&+L, some odd symbols have been drawn upon it.&N
@@ -17,7 +17,7 @@ stone glowing~
 ~
 29 11 3 0 11 0 1 0 0 0 0
 320 99418 4 0 0 0 0 0
-666 2000 100
+666 2000 100 100
 E
 stone glowing~
 &+L   This stone &+Mglows &+Lwith an eerie light that fills your &+cs&+Co&+cu&+Cl &+Lwith fright.&N
@@ -29,7 +29,7 @@ shelf bookshelf old~
 ~
 15 6 3 0 11 0 0 0 0 0 0
 81 0 0 81 0 0 0 0
-81 9000 100
+81 9000 100 100
 E
 shelf bookshelf old~
 &+y   This old bookshelf seems like it has been here for a very long time.&N
@@ -41,7 +41,7 @@ tome bound spellbook~
 ~
 33 43 3 0 12 0 12288 8404993 64 0 0
 0 0 222 0 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 tome shairak spellbook~
 &+L   Spun from darkness and bound in dismal despair.  This &+btome &+Lseems to radiate&N
@@ -59,7 +59,7 @@ key stone~
 ~
 18 11 3 0 8 9 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 key stone~
 &+L   This is a simple stone &+wkey &+Lwith a symbol of Shairak etched into it.&N
@@ -71,7 +71,7 @@ image moon~
 ~
 29 1 3 0 15 100 1 0 0 0 0
 320 99420 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 image~
 &+L   This is an &+cimage &+Lof the nocturnal freezing moon.&N
@@ -83,7 +83,7 @@ spiked stone mace~
 ~
 5 11 3 0 8 0 0 24577 0 0 0
 6 1 8 6 0 0 0 0
-1 20438 100
+1 20438 100 100
 E
 mace~
 &+L   This simple &+wstone &+Lmace is spiked and is rather light.&N
@@ -99,7 +99,7 @@ spectral leggings~
 ~
 9 19 3 0 14 80 8192 16417 64 4227727364 90112
 12 0 0 5 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 leggings~
 &+L   These leggings seem like they have been crafted from a &+Ws&+wp&+We&+wc&+Wt&+wr&+Wa&+wl &+Lspirit.  An&N
@@ -117,7 +117,7 @@ spiked stone shield~
 ~
 37 11 3 0 8 44 0 16897 0 0 0
 1 1 4 120 4 1 0 0
-10 2000 100
+10 2000 100 100
 E
 shield~
 &+L   This simple &+wstone &+Lshield is spiked and has a leather strap.&N
@@ -133,7 +133,7 @@ rotted leather armor~
 ~
 9 13 3 0 7 0 8192 16393 0 0 0
 10 0 0 3 0 0 0 0
-2 200 100
+2 200 100 100
 E
 rotted armor~
 &+y   This suit of &+rrotted &+yleather &+Larmor &+yseems like it is centuries old.&N
@@ -145,7 +145,7 @@ boots black leather~
 ~
 9 14 3 0 10 33 8192 16449 0 0 0
 6 0 0 3 0 0 0 0
-0 100 100
+0 100 100 100
 E
 boots black leather~
 &+L   These black leather boots are rather well made and still seem almost brand&N
@@ -162,7 +162,7 @@ chipped short sword~
 ~
 5 16 3 0 8 0 0 24577 0 0 0
 9 2 4 11 0 0 0 0
-0 200 100
+0 200 100 100
 E
 chipped sword~
 &+L   This &+wsword &+Lhas been chipped, missing a good part of the original blade.&N
@@ -178,7 +178,7 @@ quill raven feather~
 ~
 21 50 3 0 9 0 8192 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 9 100
+0 9 100 100
 E
 quill feather~
 &+L   This &+wquill &+Lis from the feather of a rather large raven.  Some words have&N
@@ -195,7 +195,7 @@ spiked leather bracer~
 ~
 9 14 3 0 10 0 8192 20481 0 0 0
 5 0 0 3 1 0 0 0
-0 500 100
+0 500 100 100
 E
 bracer~
 &+L   This bracer is made from a very fine grade of leather.  Crimson &+rstains &+Lcan&N
@@ -212,7 +212,7 @@ snake skull ring~
 ~
 11 10 3 0 11 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-0 400 100 32768 0 0 0
+0 400 100 100 32768 0 0 0
 E
 ring~
 &+L   This ring has been crafted from the &+Wskull &+Lof a &+gs&+Gn&+ga&+Gk&+ge&+L.  The item is almost&N
@@ -227,7 +227,7 @@ bp backpack~
 ~
 15 14 3 0 13 0 8192 4210689 0 0 0
 181 1 0 181 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 bp backpack~
 &+L   This backpack has been crafted from a very fine grade of leather.  Demonic&N
@@ -242,7 +242,7 @@ gloves~
 ~
 9 14 3 0 12 0 8192 129 0 0 0
 6 0 0 5 1 0 0 0
-0 900 100
+0 900 100 100
 E
 gloves~
 &+L   These gloves are made from a very fine grade of leather.  Crimson &+rstains &+Lcan&N
@@ -259,7 +259,7 @@ holy armor zarthos~
 ~
 9 22 3 0 15 81 8200 9 65 4173696516 0
 25 0 0 5 0 0 0 0
-0 18000 100
+0 18000 100 100
 E
 zarthos armor~
 &+L   This armor has been crafted out of pure &+csilver&+L.  The holy seal of &+WZarthos&N
@@ -277,7 +277,7 @@ large spiked stone shield~
 ~
 37 11 3 0 10 88 0 16897 0 0 0
 1 7 4 138 5 1 0 0
-24 400 100
+24 400 100 100
 E
 shield~
 &+L   This large &+wstone &+Lshield is spiked and has a leather strap.&N
@@ -293,7 +293,7 @@ daemonic badge emblam insignia~
 ~
 11 47 3 0 14 76 8200 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 badge emblam insignia~
 &+L   This item depicts what seem to be nine &+rs&+Re&+rr&+Rp&+re&+Rn&+rt&+Rs &+Lengaged in some sort of odd&N
@@ -311,7 +311,7 @@ talisman~
 ~
 9 36 3 0 12 0 0 5 0 0 0
 5 0 0 5 0 0 0 0
-0 900 100
+0 900 100 100
 E
 stone talisman~
 &+L   This &+wtalisman &+Lis made from a fine grade of obsidian.   Several runes have&N
@@ -328,7 +328,7 @@ ear stud emerald earring~
 ~
 9 32 3 0 12 0 0 524289 0 0 0
 4 0 0 4 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 stud earring~
 &+L   This ear stud has a fine grade of &+ge&+Gm&+ge&+Gr&+ga&+Gl&+gd &+Lset into it.  The item shows no&N
@@ -345,7 +345,7 @@ longsword curved sword bloody~
 ~
 5 22 3 0 11 0 8192 8193 67 0 0
 5 2 5 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 longsword sword~
 &+L   This &+clongsword &+Lhas been stained &+rcrimson &+Lby many past battles.&N
@@ -361,7 +361,7 @@ spiked leather sleeves~
 ~
 9 12 3 0 14 0 8192 257 0 0 0
 8 0 0 4 1 0 0 0
-0 4000 100
+0 4000 100 100
 E
 sleeves~
 &+L   These sleeves are made from a very thick animal hide.  Crimson &+rstains &+Lcan&N
@@ -378,7 +378,7 @@ twisted bone dagger~
 ~
 5 10 3 0 10 0 0 8193 66 0 0
 2 3 2 11 0 0 0 0
-1 300 100
+1 300 100 100
 E
 dagger~
 &+L   This dagger &+Lhas been crafted from a twisted &+Wbone &+Lof some being.&N
@@ -394,7 +394,7 @@ quiver~
 ~
 30 12 3 4 12 0 8192 1048577 0 0 0
 44 1 1 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 quiver~
 &+L   This quiver has been crafted from the thick hide of a displacer beast.&N
@@ -410,7 +410,7 @@ belt~
 ~
 9 12 3 0 13 50 8192 2049 0 0 0
 8 0 0 5 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 belt~
 &+L   This &+ybelt &+Lhas been crafted from the magical hide of a displacer beast.&N
@@ -426,7 +426,7 @@ visor obsidian dull~
 ~
 9 36 3 0 14 0 0 131073 0 0 0
 5 0 0 5 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 visor~
 &+L   This visor has been crafted from a fine grade of obsidian.&N
@@ -442,7 +442,7 @@ axe battle executioner ax~
 ~
 5 18 3 0 14 0 4203520 8193 67 95993883 0
 13 4 4 3 0 0 0 0
-12 9000 100
+12 9000 100 100
 E
 axe~
 &+L   This is a large executioner's &+waxe&+L, the blade has been &+rs&+Ro&+rak&+Re&+rd &+Lby many crimson&N
@@ -459,7 +459,7 @@ opal eye nrohtereb~
 ~
 8 33 3 0 15 88 45056 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 9000 100 0 8 0 0
+0 9000 100 100 0 8 0 0
 E
 opal eye nrohtereb~
 &+L   This is the black opal eye of N&+bro&+Lh&+bt&+Lereb, the pupil still seems to move as if&N
@@ -476,7 +476,7 @@ ossuary~
 ~
 15 11 3 0 10 0 4096 16385 0 0 0
 9 0 0 9 0 0 0 0
-3 18 100
+3 18 100 100
 E
 ossuary~
 &+L   This ossuary is used to hold the &+Wbones &+Lof those who are cursed immortal.&N
@@ -488,7 +488,7 @@ helm obsidian~
 ~
 9 36 3 0 14 0 0 17 0 4173696516 92416
 8 0 0 5 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 helm~
 &+L   This faded helm has been crafted from a fine grade of obsidian.&N
@@ -504,7 +504,7 @@ claymore sword~
 ~
 5 22 3 0 15 0 4203520 4202497 67 95993883 385220608
 13 4 6 3 0 48 41 30
-16 18000 100 8192 0 0 0
+16 18000 100 100 8192 0 0 0
 E
 claymore~
 &+L   This is the mighty claymore of &+WZarthos &+Lthe great &+rvampire &+Lhunter.  Stains of&N
@@ -522,7 +522,7 @@ suit chainmail splintbone~
 ~
 9 10 3 0 11 0 0 9 1 4165275140 0
 18 0 0 5 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 splintbone chainmail~
 &+L   This chainmail has been crafted from slivers of hard &+Wbone&+L.  Yet the object&N
@@ -540,7 +540,7 @@ sabatons boots~
 ~
 9 36 3 0 11 53 8192 65 0 0 0
 8 0 0 5 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 sabatons boots~
 &+L   These boots have been crafted from a very fine grade of obsidian.  They have&N
@@ -559,7 +559,7 @@ robe hooded~
 ~
 9 12 3 0 11 0 12288 9 64 0 0
 12 0 0 5 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 robe hooded~
 &+L   This black hooded robe has many strange runes that have been etched into it.&N
@@ -575,7 +575,7 @@ mask chipped skull~
 ~
 9 10 3 0 11 0 8192 262145 0 0 0
 5 0 0 4 0 0 0 0
-0 9 100
+0 9 100 100
 E
 mask~
 &+L   This mask has been crafted from the &+Wskull &+Lof some sort of demonical looking&N
@@ -593,7 +593,7 @@ suit obsidian plate platemail~
 ~
 9 36 3 0 11 0 0 16393 0 4173708868 0
 14 0 0 4 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 plate suit~
 &+L   This suit has been crafted from a rather fine grade of obsidian.  Though it&N
@@ -608,7 +608,7 @@ leggings obsidian~
 ~
 9 36 3 0 11 0 0 16417 0 4165275204 0
 8 0 0 4 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 leggings obsidian~
 &+L   These leggings have been crafted from a rather fine grade of obsidian.  Odd&N
@@ -626,7 +626,7 @@ cracked club~
 ~
 5 36 3 0 7 0 0 8193 0 0 0
 10 1 8 7 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 cracked club~
 &+L   This club has been crafted from an inferior grade of obsidian.  Thus it has&N
@@ -639,7 +639,7 @@ sleeves emerald~
 ~
 9 32 3 0 14 69 8192 257 0 0 0
 8 0 0 4 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 sleeves emerald~
 &+L   These sleeves have been crafted by a fine grade of &+ge&+Gm&+ge&+Gr&+ga&+Gl&+gd&+L.  The luster of&N
@@ -657,7 +657,7 @@ boots obsidian~
 ~
 9 36 3 0 11 63 8192 65 0 0 0
 8 0 0 5 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 boots~
 &+L   These &+wboots &+Lhave been crafted from a very fine grade of obsidian.  They have&N
@@ -676,7 +676,7 @@ cloak rotted hydrascale~
 ~
 9 47 3 0 13 69 8192 17409 0 0 0
 8 0 0 4 0 0 0 0
-3 6666 100
+3 6666 100 100
 E
 cloak rotted hydrascale~
 &+L   This once grand cloak has been crafted from a fine grade of hydra&+rsc&+Ra&+rl&+Re&+L.  A&N
@@ -694,7 +694,7 @@ crown emerald tarnished~
 ~
 9 32 3 0 14 69 8192 16401 0 0 0
 7 0 0 5 0 0 0 0
-0 13000 100
+0 13000 100 100
 E
 crown tarnished emerald~
 &+L   This tarnished crown has been crafted from a fine grade of &+ge&+Gm&+ge&+Gr&+ga&+Gl&+gd&+L.  Luster&N
@@ -712,7 +712,7 @@ belt torn obsidian~
 ~
 9 36 3 0 11 50 0 2049 0 0 0
 5 0 0 4 0 0 0 0
-2 8000 100
+2 8000 100 100
 E
 belt torn obsidian~
 &+L   This belt has been crafted from a rather good grade of obsidian.  The item&N
@@ -730,7 +730,7 @@ feather bluejay majestic~
 ~
 8 50 2 0 11 81 274432 9453569 0 0 0
 0 0 0 0 0 0 0 0
-0 43478 100
+0 43478 100 100
 E
 feather bluejay~
 &+B   Th&+bi&+Bs i&+bt&+Bem &+bi&+Bs &+ba &+Bv&+be&+Bry m&+ba&+Bj&+be&+Bst&+bi&+Bc sh&+ba&+Bd&+be o&+Bf bl&+bue&+B, th&+be &+Bl&+bi&+Bk&+be o&+Bf wh&+bi&+Bch y&+bou &+Bh&+ba&+Bv&+be &+Bn&+be&+Bv&+be&+Br&n
@@ -750,7 +750,7 @@ devil eyes elishia unique~
 ~
 9 35 3 0 15 81 271720448 131073 0 0 0
 9 0 0 5 0 0 0 0
-4 181000 100 536969248 0 0 0
+4 181000 100 100 536969248 0 0 0
 E
 eyes elishia~
 &+r   Th&+Ri&+rs &+bmysterious &+Ldemonical &+Ro&+rbj&+Re&+rct w&+Ra&+rs n&+Ro&+rt cr&+Rea&+rt&+Re&+rd &+Ri&+rn th&+Ri&+rs w&+Ro&+rrld &+Ro&+rf m&+Ro&+rrt&+Ra&+rls.&N
@@ -774,7 +774,7 @@ blood dagger twisted crawler~
 ~
 5 22 3 0 15 81 16786704 8193 67 85553169 0
 2 3 3 11 0 0 0 0
-3 93300 100
+3 93300 100 100
 E
 dagger twisted~
 &+L   This object consists of what appear to be two &+rt&+Ra&+rl&+Ro&+rn&+Rs &+Lthat have been twisted&N
@@ -793,7 +793,7 @@ daemonic badge serpent insignia~
 ~
 11 47 3 0 14 81 8200 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 badge serpent insignia sigil~
 &+L                                                                     &N

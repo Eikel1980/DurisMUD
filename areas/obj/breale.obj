@@ -5,7 +5,7 @@ A &+Rred key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 11 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2601
 black key~
 a &+Lblack key&N~
@@ -13,7 +13,7 @@ A &+Lblack key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 12 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2602
 amulet triad witches~
 the &+Mamulet of the triad of witches&N~
@@ -21,7 +21,7 @@ The &+Mamulet of the triad of witches&N lies here.~
 ~
 9 16 3 2 7 0 1024 5 64 4197892 0
 4 2 0 3 0 0 0 0
-0 2000 100
+0 2000 100 100
 A
 33 1
 A
@@ -33,7 +33,7 @@ The &+Bbroom of ice&N lies here.~
 ~
 4 6 3 10 7 0 1024 16385 64 4197892 0
 15 1 1 111 0 0 0 0
-4 500 100
+4 500 100 100
 #2604
 weightless legging leggings leg protection~
 the &+bweightless leggings of protection&N~
@@ -41,7 +41,7 @@ The &+bweightless leggings of protection&N lie here.~
 ~
 9 16 3 8 7 0 1024 33 0 4197892 0
 15 5 1 3 0 0 0 0
-0 900 100
+0 900 100 100
 A
 10 -10
 #2605
@@ -51,7 +51,7 @@ The &+Rbroom of fire&N lies here.~
 ~
 3 6 2 4 7 0 1024 16385 64 4197892 0
 20 1 1 26 0 0 0 0
-4 500 100
+4 500 100 100
 #2606
 weightless robe protection~
 the &+bweightless robe of protection&N~
@@ -59,7 +59,7 @@ The &+bweightless robe of protection&N lies here.~
 ~
 9 3 3 8 7 0 1024 9 0 4197892 0
 20 3 1 3 0 0 0 0
-0 900 100
+0 900 100 100
 A
 10 -10
 #2607
@@ -69,7 +69,7 @@ The &+Wbroom of air&N lies here.~
 ~
 4 6 3 10 7 0 1024 16385 64 4197892 0
 25 1 1 76 0 0 0 0
-4 890 100
+4 890 100 100
 #2608
 witch leggings legging leg~
 a pair of &+Lwitch&n leggings~
@@ -77,7 +77,7 @@ A pair of witch leggings lie here.~
 ~
 9 16 3 8 7 0 1024 33 64 4197892 0
 6 5 1 3 0 0 0 0
-3 50 100
+3 50 100 100
 A
 13 5
 #2609
@@ -87,7 +87,7 @@ A &+Wrag of many cackles&N lies crumpled here.~
 ~
 9 3 3 8 7 0 1024 9 0 4197892 0
 3 3 1 3 0 0 0 0
-5 200 100
+5 200 100 100
 #2610
 ceremonial dagger~
 a &+Wceremonial dagger&N~
@@ -95,7 +95,7 @@ A &+Wceremonial dagger&N lies here.~
 ~
 5 16 2 3 7 0 1024 8193 64 4197892 0
 2 1 4 11 0 0 0 0
-1 300 100
+1 300 100 100
 #2611
 cloak dark~
 a &+Ldark cloak&N~
@@ -103,7 +103,7 @@ A &+Ldark cloak&N lies crumpled here.~
 ~
 9 3 3 8 7 0 1024 1025 0 4197892 0
 5 9 1 3 0 0 0 0
-5 400 100
+5 400 100 100
 A
 18 2
 #2612
@@ -113,7 +113,7 @@ The &+Rdevil's instrument&N lies here.~
 ~
 5 16 3 0 7 0 1024 8193 64 4197892 0
 9 1 5 11 0 0 0 0
-1 240 100
+1 240 100 100
 A
 19 1
 #2613
@@ -123,7 +123,7 @@ A hag rag lies crumpled here.~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 2 3 1 3 0 0 0 0
-4 250 100
+4 250 100 100
 A
 17 -1
 #2614
@@ -133,7 +133,7 @@ An &+Welemental staff of nature&N lies here.~
 ~
 4 6 3 10 7 0 0 16385 64 0 0
 9 1 1 103 0 0 0 0
-4 10 100
+4 10 100 100
 #2615
 priestly cap~
 a &+Wpriestly cap&N~
@@ -141,7 +141,7 @@ A &+Wpriestly cap&N lies here.~
 ~
 9 3 3 3 7 0 1024 17 0 33685920 0
 3 4 16 3 0 0 0 0
-1 500 100
+1 500 100 100
 A
 30 4
 A
@@ -153,7 +153,7 @@ The &+bmauler&N lies here.~
 ~
 5 16 3 0 7 0 1024 8193 64 33685920 0
 4 2 6 7 0 0 0 0
-10 800 100
+10 800 100 100
 A
 18 3
 A
@@ -165,7 +165,7 @@ A &+Wbrealean skirt&N lies crumpled here.~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-4 900 100
+4 900 100 100
 #2618
 white leather tunic~
 a &+Wwhite leather tunic&N~
@@ -173,7 +173,7 @@ A &+Wwhite leather tunic&N lies crumpled here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 2 3 1 3 0 0 0 0
-15 700 100
+15 700 100 100
 A
 3 -2
 A
@@ -185,7 +185,7 @@ A &+Gjeweled blade&N lies here.~
 ~
 5 16 3 10 7 0 0 8193 0 0 0
 9 1 4 3 0 0 0 0
-1 250 100
+1 250 100 100
 #2620
 loin cloth~
 a &+Wloin cloth&N~
@@ -193,7 +193,7 @@ A &+Wloin cloth&N lies here.~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-1 10 100
+1 10 100 100
 #2621
 candle~
 a &+Wcandle&N~
@@ -201,7 +201,7 @@ A &+Wcandle&N lies here.~
 ~
 1 5 0 0 7 0 0 16385 0 0 0
 0 0 10 0 0 0 0 0
-1 2 100
+1 2 100 100
 #2622
 righteous robe~
 a &+Wrighteous robe&N~
@@ -209,7 +209,7 @@ A &+Wrighteous robe&N lies crumpled here.~
 ~
 9 3 3 8 7 0 1024 9 0 33685920 0
 6 3 1 3 0 0 0 0
-4 100 100
+4 100 100 100
 A
 4 2
 #2623
@@ -219,7 +219,7 @@ A &+Wholy cloth&N lies here.~
 ~
 9 3 3 8 7 0 1024 9 0 33685920 0
 3 3 1 3 0 0 0 0
-1 60 100
+1 60 100 100
 A
 4 2
 A
@@ -231,7 +231,7 @@ The &+Wpriestly robes of sacrifice&N lie crumpled here.~
 ~
 9 3 3 8 7 0 1024 9 0 33685920 0
 6 3 1 3 0 0 0 0
-8 20 100
+8 20 100 100
 A
 13 -5
 #2625
@@ -241,7 +241,7 @@ A &+Rred demon hide&N lies here.~
 ~
 9 12 0 0 7 0 0 9 0 4194697632 0
 12 3 1 3 0 0 0 0
-10 300 100
+10 300 100 100
 A
 28 5
 A
@@ -253,7 +253,7 @@ A &+Wbrealean shirt&N lies crumpled here.~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 4 3 1 3 0 0 0 0
-8 30 100
+8 30 100 100
 #2627
 brealean pants pant~
 a pair of &+Wbrealean pants&N~
@@ -261,7 +261,7 @@ A pair of &+Wbrealean pants&N lie here.~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-5 20 100
+5 20 100 100
 #2628
 brealean curved sword~
 a &+Wbrealean curved sword&N~
@@ -269,7 +269,7 @@ A &+Wbrealean curved sword&N lies here.~
 ~
 5 16 3 10 7 0 0 8193 0 0 0
 9 1 5 3 0 0 0 0
-6 40 100
+6 40 100 100
 #2629
 brealean dress~
 a &+Wbrealean dress&N~
@@ -277,7 +277,7 @@ A &+Wbrealean dress&N lies crumpled here.~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 5 3 1 3 0 0 0 0
-6 10 100
+6 10 100 100
 #2630
 brealean long dagger~
 a &+Wbrealean long dagger&N~
@@ -285,7 +285,7 @@ A &+Wbrealean long dagger&N lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-1 20 100
+1 20 100 100
 #2631
 brealean knickers knick~
 a pair of &+Wbrealean knickers&N~
@@ -293,7 +293,7 @@ A pair of &+Wbrealean knickers&N lie here.~
 ~
 9 3 0 0 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-5 10 100
+5 10 100 100
 #2632
 child's child shirt~
 a &+Wchild's shirt&N~
@@ -301,7 +301,7 @@ A &+Wchild's shirt&N lies crumpled here.~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-2 5 100
+2 5 100 100
 #2633
 pocket knife~
 a &+Wpocket knife&N~
@@ -309,7 +309,7 @@ A &+Wpocket knife&N lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 3 11 0 0 0 0
-1 7 100
+1 7 100 100
 #2634
 white leather pants pant~
 a pair of &+Wwhite leather pants&N~
@@ -317,7 +317,7 @@ A pair of &+Wwhite leather pants&N lie here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-9 400 100
+9 400 100 100
 #2635
 dirty rags rag~
 &+ydirty rags&N~
@@ -325,7 +325,7 @@ dirty rags rag~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-5 25 100
+5 25 100 100
 #2636
 broom earth~
 the &+ybroom of earth&N~
@@ -333,7 +333,7 @@ The &+ybroom of earth&N lies here.~
 ~
 4 6 3 10 7 0 1024 16385 64 4197892 0
 20 2 2 23 0 0 0 0
-4 2000 100
+4 2000 100 100
 #2637
 cloak youth~
 the &+Ycloak of youth&N~
@@ -341,7 +341,7 @@ The &+Ycloak of youth&N lies crumpled here.~
 ~
 9 3 3 8 7 0 1024 1025 64 4197892 0
 5 9 1 3 0 0 0 0
-2 800 100
+2 800 100 100
 A
 9 -50
 A
@@ -353,7 +353,7 @@ A &+Wstandard breale vest&N lies here.~
 ~
 9 3 0 0 7 0 0 9 0 0 0
 8 3 1 3 0 0 0 0
-15 100 100
+15 100 100 100
 #2639
 standard breale leggings legging leg~
 a pair of &+Wstandard breale leggings&N~
@@ -361,7 +361,7 @@ A pair of &+Wstandard breale leggings&N lie here.~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-8 100 100
+8 100 100 100
 #2640
 breale captain's captain belt~
 a &+Wbreale captain's belt&N~
@@ -369,7 +369,7 @@ A &+Wbreale captain's belt&N lies here.~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 5 10 0 3 0 0 0 0
-1 700 100
+1 700 100 100
 #2641
 sharpened sharp wooden wood dagger~
 a &+Wsharpened wooden dagger&N~
@@ -377,7 +377,7 @@ A &+Wsharpened wooden dagger&N lies here.~
 ~
 5 6 2 3 7 0 0 8193 0 0 0
 2 1 3 11 0 0 0 0
-1 10 100
+1 10 100 100
 #2642
 bloodstained apron~
 a &+Rbloodstained &+Wapron&N~
@@ -385,7 +385,7 @@ A &+Rbloodstained &+Wapron&N lies here.~
 ~
 9 3 3 6 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-1 10 100
+1 10 100 100
 #2643
 leather suit stained ale~
 a &+Wleather suit stained with &+yale&N~
@@ -393,7 +393,7 @@ A &+Wleather suit stained with &+yale&N lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-1 10 100
+1 10 100 100
 #2644
 club~
 a &+Wclub&N~
@@ -401,7 +401,7 @@ A &+Wclub&N lies here.~
 ~
 5 16 3 8 7 0 0 8193 0 0 0
 10 1 3 7 0 0 0 0
-1 10 100
+1 10 100 100
 #2645
 triangular bracelet~
 a &+Wtriangular bracelet&N~
@@ -409,7 +409,7 @@ A &+Wtriangular bracelet&N lies here.~
 ~
 9 16 3 3 7 0 0 4097 64 0 0
 3 0 0 3 0 0 0 0
-1 0 100
+1 0 100 100
 A
 3 2
 A
@@ -421,7 +421,7 @@ A pair of &+Wiron sleeves&N lie here.~
 ~
 9 15 3 8 7 0 0 257 0 0 0
 5 8 1 3 0 0 0 0
-30 800 100
+30 800 100 100
 #2647
 iron leggings legging leg~
 a pair of &+Wiron leggings&N~
@@ -429,7 +429,7 @@ A pair of &+Wiron leggings&N lie here.~
 ~
 9 15 3 8 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-25 800 100
+25 800 100 100
 #2648
 iron boots boot~
 a pair of &+Wiron boots&N~
@@ -437,7 +437,7 @@ A pair of &+Wiron boots&N lie here.~
 ~
 9 15 3 8 7 0 0 65 0 0 0
 5 6 1 3 0 0 0 0
-8 800 100
+8 800 100 100
 #2649
 iron gauntlets gauntlet gaunt~
 a pair of &+Wiron gauntlets&N~
@@ -445,7 +445,7 @@ A pair of &+Wiron gauntlets&N lie here.~
 ~
 9 15 3 5 7 0 0 129 0 0 0
 6 7 1 3 0 0 0 0
-5 800 100
+5 800 100 100
 #2650
 iron dagger~
 an &+Wiron dagger&N~
@@ -453,7 +453,7 @@ An &+Wiron dagger&N lies here.~
 ~
 5 15 2 3 7 0 0 8193 0 0 0
 2 1 3 11 0 0 0 0
-1 800 100
+1 800 100 100
 #2651
 iron spear~
 an &+Wiron spear&N~
@@ -461,7 +461,7 @@ An &+Wiron spear&N lies here.~
 ~
 5 15 4 0 7 0 0 8193 0 4194697632 0
 8 1 4 11 0 0 0 0
-10 850 100
+10 850 100 100
 #2652
 iron morning morningstar~
 an &+Wiron morningstar&N~
@@ -469,7 +469,7 @@ An &+Wiron morningstar&N lies here.~
 ~
 5 15 3 8 7 0 0 8193 0 4165209604 0
 3 1 6 7 0 0 0 0
-12 900 100
+12 900 100 100
 #2653
 monty monty's ale~
 a cup of &+YMonty's ale&N~
@@ -477,7 +477,7 @@ A cup of &+YMonty's ale&N lies here.~
 ~
 17 9 0 0 7 0 0 16385 0 0 0
 10 10 3 0 0 0 0 0
-1 10 100
+1 10 100 100
 #2654
 iron plate~
 a suit of &+Wiron plate&N~
@@ -485,7 +485,7 @@ A suit of &+Wiron plate&N lies here.~
 ~
 9 15 0 0 7 0 0 9 0 4165209604 0
 12 3 1 3 0 0 0 0
-25 2300 100
+25 2300 100 100
 #2655
 iron sword~
 an &+Wiron sword&N~
@@ -493,7 +493,7 @@ An &+Wiron sword&N lies here.~
 ~
 5 15 3 10 7 0 0 8193 0 0 0
 9 1 4 3 0 0 0 0
-6 300 100
+6 300 100 100
 #2656
 homebrewed beer~
 a tankard of &+Yhomebrewed beer&N~
@@ -501,7 +501,7 @@ A tankard of &+Yhomebrewed beer&N lies here.~
 ~
 17 16 0 0 7 0 0 16385 0 0 0
 5 5 1 0 0 0 0 0
-1 5 100
+1 5 100 100
 #2657
 apple~
 an &+Rapple&N~
@@ -509,7 +509,7 @@ An &+Rapple&N lies here.~
 ~
 19 3 2 2 7 0 0 16385 0 0 0
 6 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2658
 orange~
 an &+Yorange&N~
@@ -517,7 +517,7 @@ An &+Yorange&N lies here.~
 ~
 19 3 2 2 7 0 0 16385 0 0 0
 6 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2659
 banana~
 a &+Ybanana&N~
@@ -525,7 +525,7 @@ A &+Ybanana&N lies here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 9 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2660
 grapefruit grape~
 a &+Ygrapefruit&N~
@@ -533,7 +533,7 @@ A &+Ygrapefruit&N lies here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 9 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2661
 grapes~
 some &+Mgrapes&N~
@@ -541,7 +541,7 @@ Some &+Mgrapes&N lie here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2662
 peach~
 a &+Ypeach&N~
@@ -549,7 +549,7 @@ A &+Ypeach&N lies here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2663
 pear~
 a &+ypear&N~
@@ -557,7 +557,7 @@ A &+ypear&N lies here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2664
 sardines sardine~
 some &+Wsardines&N~
@@ -565,7 +565,7 @@ The &+Wsardines&N lie here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 15 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2665
 sword fish~
 a &+Wsword fish&N~
@@ -573,7 +573,7 @@ A &+Wsword fish&N lies here.~
 ~
 19 16 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2666
 lamb chops chop~
 some &+Wlamb chops&N~
@@ -581,7 +581,7 @@ Some &+Wlamb chops&N lie here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 #2667
 goat meat~
 some &+Wgoat meat&N~
@@ -589,7 +589,7 @@ Some &+Wgoat meat&N lies here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-1 3 100
+1 3 100 100
 #2668
 emerald bracelet~
 an &+Remerald bracelet&N~
@@ -597,7 +597,7 @@ An &+Remerald bracelet&N lies here.~
 ~
 8 32 3 3 7 0 0 4097 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 #2669
 gold band~
 a &+Ygold band&N~
@@ -605,7 +605,7 @@ A &+Ygold band&N lies here.~
 ~
 8 24 1 1 7 0 0 4097 0 0 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 #2670
 ash~
 some &+Lash&N~
@@ -613,7 +613,7 @@ Some &+Lash&N lies here.~
 ~
 12 2 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 #2671
 peppercorn~
 a &+Lpeppercorn&N~
@@ -621,7 +621,7 @@ A &+Lpeppercorn&N lies here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 200 100
+0 200 100 100
 #2672
 wood~
 a tiny pile of &+ywood&N~
@@ -629,7 +629,7 @@ A tiny pile of &+ywood&N lies here.~
 ~
 12 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 #2673
 dirt~
 some &+ydirt&N~
@@ -637,7 +637,7 @@ Some &+ydirt&N lies in a pile here.~
 ~
 12 2 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 #2674
 fennel root~
 a &+Wfennel root&N~
@@ -645,7 +645,7 @@ A &+Wfennel root&N grows here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 4 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 #2675
 red mushroom~
 a &+Rred mushroom&N~
@@ -653,7 +653,7 @@ A &+Rred mushroom&N grows here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 4 0 0 0 0 0 0 0
-0 400 100
+0 400 100 100
 #2676
 bass~
 a &+Wbass&N~
@@ -661,7 +661,7 @@ a &+Wbass&N lies here.~
 ~
 19 5 2 2 7 0 0 16385 0 0 0
 25 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2677
 diamond ring~
 a &+Wdiamond ring&N~
@@ -669,7 +669,7 @@ A &+Wdiamond ring&N lies here.~
 ~
 8 8 1 1 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 #2678
 sign~
 &+yan old oaken sign&N~
@@ -677,7 +677,7 @@ sign~
 ~
 16 5 1 1 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 sign~
 
@@ -693,7 +693,7 @@ small potion healing~
 ~
 10 15 3 0 7 0 8388609 16385 0 0 0
 50 214 0 0 0 0 0 0
-1 3200 100
+1 3200 100 100
 #2680
 small key~
 &+Ga small key&N~
@@ -701,7 +701,7 @@ A key sits here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #2681
 emerald bracelet~
 &+wan &+gemerald bracelet&n~
@@ -709,7 +709,7 @@ emerald bracelet~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 6 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 1 3
 A
@@ -721,7 +721,7 @@ gloves iron~
 ~
 9 15 3 0 7 0 0 129 0 0 0
 8 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 #2683
@@ -731,7 +731,7 @@ potion blue~
 ~
 10 7 3 0 7 0 0 16385 0 0 0
 25 1 192 -1 0 0 0 0
-0 234 100
+0 234 100 100
 #2684
 potion pink~
 &+Ma pink potion&n~
@@ -739,7 +739,7 @@ potion pink~
 ~
 10 7 3 0 7 0 0 16385 0 0 0
 25 3 64 -1 0 0 0 0
-0 345 100
+0 345 100 100
 #2685
 altar~
 &+Wan ornamental altar&n~
@@ -747,4 +747,4 @@ altar~
 ~
 15 34 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100

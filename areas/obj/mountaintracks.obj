@@ -5,7 +5,7 @@ A &+gtall &+ytower&n rises well over one hundred feet.~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 20989 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tall tower~
 &+yThis tall tower once served as a watchtower for the evil races and now is
@@ -21,7 +21,7 @@ a &+gtroll&n-&+yskin &+geye&+ypatch~
 ~
 9 2 3 0 7 0 0 131073 0 0 0
 4 0 0 2 0 0 0 0
-3 12282 100
+3 12282 100 100
 E
 troll-skin eyepatch~
 &+gThis is a troll-skin eyepatch. It was made of troll-skin and smells horrible.
@@ -37,7 +37,7 @@ small cave~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 20909 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small cave~
 &+LA small cave entrance.
@@ -49,7 +49,7 @@ A fresh water &+csilver spring &nruns through the cavern.~
 ~
 25 40 3 0 7 0 0 0 0 0 0
 20913 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 silver spring~
 &+cA fresh water silver spring that runs through the undermountain cavern.
@@ -61,7 +61,7 @@ A feather belonging to a golden eagle rests here.~
 ~
 11 50 3 0 7 0 0 524289 0 0 0
 0 0 0 0 0 0 0 0
-1 23222 100
+1 23222 100 100
 E
 golden eagle feather~
 &+YA feather belonging to a golden eagle.
@@ -77,7 +77,7 @@ A waterfall forms a &+cfresh water &+bbase&n.~
 ~
 13 40 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 warm waterfall base~
 &+cThe waterfall above creates a base of fresh water here.
@@ -89,7 +89,7 @@ A duergar pendant of undead warding lays here.~
 ~
 9 19 3 0 7 0 0 5 64 0 0
 8 0 0 3 0 0 0 0
-2 28322 100
+2 28322 100 100
 E
 duergar pendant undead warding~
 &+rThis pendant was crafted by some duergar to ward against undead. It possess
@@ -107,7 +107,7 @@ statue~
 ~
 8 36 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-4393 84848322 100
+4393 84848322 100 100
 E
 statue~
 &+LThis statue rises well over ten feet tall and must have taken an army of
@@ -121,7 +121,7 @@ spiral pool spiraling~
 ~
 17 40 3 0 7 0 256 0 0 0 0
 1 999 0 0 0 0 0 0
-9292 2828282 100
+9292 2828282 100 100
 E
 spiral pool spiraling~
 &+bThis pool spirals clockwise.
@@ -133,7 +133,7 @@ an &+retched &+Lobsi&+rdian ri&+Lng~
 ~
 11 36 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 18282 100
+1 18282 100 100
 E
 etched obsidian ring~
 &+LThis ring has something etched in it. It is duergar. It says "Undead life taker".
@@ -149,7 +149,7 @@ stinky bag~
 ~
 15 13 3 0 7 0 0 16385 0 0 0
 150 1 0 150 0 0 0 0
-1 2282 100
+1 2282 100 100
 E
 stinky bag~
 &+LA stinky bag that can hold many traveling items.
@@ -161,7 +161,7 @@ a &+Ltwo&n-&+Lhanded&n &+Lbastard sword~
 ~
 5 15 3 0 7 0 4194304 8193 0 0 0
 13 3 5 3 0 0 0 0
-5 22 100
+5 22 100 100
 E
 two-handed two handed bastard sword~
 &+LA two-handed bastard sword capable of inflicting large amounts of damage.
@@ -177,7 +177,7 @@ former logger cabin~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 former logger cabin~
 &+yThis was once a logger cabin and housed a few loggers. Now it is a crumbled
@@ -190,7 +190,7 @@ A thin steel dagger lays here.~
 ~
 5 16 3 0 7 0 0 8193 0 1 0
 2 2 3 11 0 0 0 0
-1 112 100
+1 112 100 100
 E
 thin steel dagger~
 A thin steel dagger.
@@ -202,7 +202,7 @@ an &+Wamu&+Llet &nof the &+Lfor&+Ws&+Waken&n~
 ~
 9 7 3 0 7 0 0 5 0 0 0
 5 0 0 2 0 0 0 0
-2 12811 100
+2 12811 100 100
 E
 amulet forsaken~
 &+LThis amulet belonged once to a logger who logged well. It was the last forsaken
@@ -219,7 +219,7 @@ broken~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 broken gate~
 &+LThis broken gate sweys in the wind. It leads to a cemetery.
@@ -231,7 +231,7 @@ broken~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 broken gate~
 &+LThis broken gate sweys in the wind. It leads out of the cemetery.
@@ -243,7 +243,7 @@ A &+ymarked tombstone&n is covered in foilage.~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 20949 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 marked tombstoen~
 &+yThis tombstone is covered in foilage but some of the words enscribed can
@@ -256,7 +256,7 @@ collaspsed section earth~
 ~
 29 1 3 0 7 0 0 0 0 0 0
 270 20973 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 collaspsed section earth~
 &+LThis section of earth blocks the way through the catacombs.
@@ -268,7 +268,7 @@ A huge &+Lhole&n within the catacomb floor.~
 ~
 25 1 3 0 7 0 0 0 0 0 0
 21008 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge hole~
 &+LThis is a huge hole within the catacomb floor. It is an endless drop that
@@ -281,7 +281,7 @@ an &+Letched &+Ls&+Wa&+rr&+Ld&+ro&+Lny&+Wx &+rr&+Wi&+rn&+Wg~
 ~
 11 33 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 12121 100
+1 12121 100 100
 E
 etched sardonyx~
 &+rA sardonyx ring with something unlegible etched into it.
@@ -297,7 +297,7 @@ an &+yancient ru&+Wne en&+yscrib&+Wed br&+yacer~
 ~
 9 37 3 0 7 0 4096 4097 0 0 0
 6 0 0 3 0 0 0 0
-2 23222 100
+2 23222 100 100
 E
 rune enscribed ancient~
 &+yAn ancient bracer with runes enscribed upon it.
@@ -313,7 +313,7 @@ fall iron gate~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fall iron gate~
 &+LThis iron gate has stood for an untold number of years. It no longer functions
@@ -327,7 +327,7 @@ miniature carved piece~
 ~
 11 36 3 0 7 0 4096 2097153 0 0 0
 0 0 0 0 0 0 0 0
-2 232 100
+2 232 100 100
 E
 miniature carved piece~
 &+LThis is a miniature carved piece of the great statue of Astansus that is in
@@ -346,7 +346,7 @@ a pair of &+Lbear&n-&+yhide moun&+Ltain boots~
 ~
 9 12 3 0 5 0 0 65 0 0 0
 4 0 0 3 0 0 0 0
-3 12181 100
+3 12181 100 100
 E
 bear-skin bear skin mountain boots~
 &+yA bear of finely made mountain boots.
@@ -362,7 +362,7 @@ number ring caravans caravan~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 20953 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring caravans~
 &+yThis ring was set up by a party of tinkers.
@@ -374,7 +374,7 @@ A faded azurite embedded helm lays here.~
 ~
 9 44 3 0 5 0 4224 17 64 0 0
 12 0 0 4 0 0 0 0
-4 12983 100
+4 12983 100 100
 E
 faded azurite embedded helm~
 &+LThis helm possesses great magic.
@@ -388,7 +388,7 @@ A twisted dagger lays here.~
 ~
 5 36 3 0 5 0 0 8193 64 0 0
 2 1 6 0 0 0 0 0
-2 23822 100
+2 23822 100 100
 E
 twisted dagger~
 &+LThis was wielded by some sort of undead creature called a shadow beast. It is
@@ -405,7 +405,7 @@ A ring embroided with fine peridots lies here.~
 ~
 9 8 3 0 5 0 1 3 0 0 0
 4 0 0 2 0 0 0 0
-2 23222 100
+2 23222 100 100
 E
 embroided peridot cloak~
 &+gThis is a fine ring that has been embroided with peridots. It glows softly.
@@ -421,7 +421,7 @@ a &+Wshi&+wm&+Wm&+Wer&+wi&+Wng translucent &+gc&+Wlo&+ga&+Wk~
 ~
 9 45 3 0 5 0 33558528 1025 64 0 0
 4 0 0 2 0 0 0 0
-2 12823 100
+2 12823 100 100
 E
 shimmering translucent cloak~
 &+WThis cloak is unworldly and is magical in nature.
@@ -437,7 +437,7 @@ A fine pair of mithril leggings lays here.~
 ~
 9 18 3 0 5 0 0 33 64 0 0
 12 0 0 3 0 0 0 0
-6 12922 100
+6 12922 100 100
 E
 mithril leggings~
 &+WThese fine pair of mithril leggings were made by a master artisan. They radiate
@@ -454,7 +454,7 @@ A nice pair of crimson leggings lay here.~
 ~
 9 15 3 0 5 0 0 33 0 0 0
 14 0 0 3 0 0 0 0
-4 12383 100
+4 12383 100 100
 E
 crimson crimson-hued leggings~
 &+rThese leggings were made by a great blacksmith. They protect the wearer's legs
@@ -471,7 +471,7 @@ A nice pair of ruby encrusted sleeves lay here.~
 ~
 9 16 3 0 5 0 0 257 64 0 0
 12 0 0 3 0 0 0 0
-2 18222 100
+2 18222 100 100
 E
 ruby encrusted sleeves~
 &+rThese sleeves have rubies encrusted into them. They seem magical in nature
@@ -488,7 +488,7 @@ A ruby ring lays here.~
 ~
 11 31 3 0 5 0 0 3 64 0 0
 0 0 0 0 0 0 0 0
-1 18333 100
+1 18333 100 100
 E
 ruby ring~
 &+rThis is a fine ruby ring. It is magical so there must be more than meets the
@@ -505,7 +505,7 @@ A helmet of bloodstone lays here.~
 ~
 9 15 3 0 5 0 0 17 0 0 0
 10 0 0 4 0 0 0 0
-2 9282 100
+2 9282 100 100
 E
 helmet bloodstone~
 &+LThis helmet was made in the great city of bloodstone. It protects its wearer
@@ -522,7 +522,7 @@ large boulder~
 ~
 29 36 3 0 5 0 0 0 0 0 0
 270 21139 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large boulder~
 &+yThis large boulder seems out of place along the mountain path. Curious.
@@ -534,7 +534,7 @@ long vine~
 ~
 25 42 3 0 5 0 4096 0 0 0 0
 21144 65 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 long vine~
 &+gThis long vine dangles from above. It might be useful to hold on to while
@@ -547,7 +547,7 @@ bone leggings~
 ~
 9 10 3 0 5 0 0 33 0 0 0
 12 0 0 3 0 0 0 0
-3 23222 100
+3 23222 100 100
 E
 bone leggings~
 &+WA pair of leggings made of bone.
@@ -563,7 +563,7 @@ a long &+Lflowi&+rng&+L r&+rob&+Le of the &+rd&+Lam&+rne&+Ld~
 ~
 9 2 3 0 5 0 0 1025 64 0 0
 8 0 0 2 0 0 0 0
-2 23222 100
+2 23222 100 100
 E
 flowing robe damned~
 &+LThis robe once belonged to an accursed vampire, it is covered in blood.
@@ -579,7 +579,7 @@ A fine pair of ruby slippers lay here.~
 ~
 9 31 3 0 5 0 0 65 2 0 0
 4 0 0 2 0 0 0 0
-2 12292 100
+2 12292 100 100
 E
 ruby slippers~
 &+RThese ruby slippers are fine.
@@ -595,7 +595,7 @@ a pair of &+bcold &+Lgr&+ban&+Lit&+be &+Lga&+bun&+Ltl&+bet&+Ls~
 ~
 9 15 3 0 5 0 0 129 0 0 0
 12 0 0 4 0 0 0 0
-4 31282 100
+4 31282 100 100
 E
 bloodstone gauntlets~
 &+LA pair of gauntlets from the great city of bloodstone.
@@ -611,7 +611,7 @@ mound of earth~
 ~
 29 11 3 0 5 0 0 0 0 0 0
 270 20904 6 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mound of earth~
 &+yA large mound of earth that looks mysterious.
@@ -623,7 +623,7 @@ a &+bblue &+Lquartz me&+bdal&+Lli&+bo&+Ln~
 ~
 9 11 3 0 5 0 4097 5 0 0 0
 5 0 0 3 0 0 0 0
-2 12029 100
+2 12029 100 100
 E
 blue quartz medallion~
 &+LThis medallion looks to have some magical power embued into it. It glows
@@ -638,7 +638,7 @@ dark crevice~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 20979 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark crevice~
 &+LThis is a dark crevice, which leads to another chamber, the chamber of death.
@@ -650,7 +650,7 @@ a &+Wlost &+gplatemail &nof &+Ydwarven &+Lheroes~
 ~
 9 19 3 0 5 0 4096 9 0 0 0
 35 0 0 3 0 0 0 0
-5 22322 100
+5 22322 100 100
 E
 lost platemail dwarven heroes~
 &+LThis dwarven platemail was lost long ago. It was sent, along with its
@@ -668,7 +668,7 @@ large boulder~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 20921 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large boulder~
 &+yThis boulder seems out of place.
@@ -680,7 +680,7 @@ a pair of &+rleggings made of &+Rflesh~
 ~
 9 2 3 0 5 0 1 33 0 0 0
 12 0 0 0 0 0 0 0
-2 23222 100
+2 23222 100 100
 E
 flesh leggings pair~
 &+rThese leggings are made of flesh, human flesh.
@@ -696,7 +696,7 @@ green dragon scale~
 ~
 8 35 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-2 2322 100
+2 2322 100 100
 E
 green dragon scale~
 &+gThis is a green dragon scale. Some people would kill to get their hands on
@@ -710,7 +710,7 @@ vampire tooth~
 ~
 8 10 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 23 100
+1 23 100 100
 E
 vampire tooth~
 &+rA vampire's tooth.
@@ -722,7 +722,7 @@ glowing green potion~
 ~
 10 7 3 0 5 0 1 16385 0 0 0
 50 280 41 236 0 0 0 0
-2 2 100
+2 2 100 100
 E
 glowing green potion~
 &+GA glowing green potion. It was concocted by Futni, the drow elementalist.
@@ -735,7 +735,7 @@ some &+cm&+Ci&+ct&+Ch&+cr&+Ci&+cl g&+Cl&+co&+Cv&+ce&+Cs&n of the &+yex&+Yplo&+yr
 ~
 9 15 3 0 5 0 1 129 0 0 0
 7 0 0 3 0 0 0 0
-5 43222 100
+5 43222 100 100
 E
 mesh mithril gloves~
 &+WThese gloves seem to radiate with an aura of power. They are made of a mesh
@@ -750,7 +750,7 @@ a &+Chan&+cdhel&+bd de&+cvic&+Ce &nof &+Cl&+ci&+Bf&+be&+cg&+civ&+Wi&+Cn&+Bg~
 ~
 12 15 3 0 5 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 83328 100
+2 83328 100 100
 E
 halfling handheld device~
 &+YThis lifeviging device was designed by the greater halfling community with
@@ -768,7 +768,7 @@ wooden fence~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 20918 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden fence~
 &+yThis wooden fence runs east and west. It isn't much higher than three feet
@@ -781,7 +781,7 @@ A &+ymetal shack&n sways in the wind.~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 metal shack~
 &+yA metal shack that looks very old.
@@ -793,7 +793,7 @@ circular marble piece~
 ~
 13 38 3 0 5 0 4096 1 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 circular marble piece~
 &+LThis black marble piece is has magic powers embued into it. Its mysterious
@@ -806,7 +806,7 @@ a &+Yg&+yol&+Yde&+yn &+gbr&+Gac&+ger &nof a &+rse&+Rrp&+ren&+Rt~
 ~
 9 15 3 0 5 0 0 4097 64 4308548 0
 8 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bracer golden serpent~
 &+rThis bracer is made of gold and formed into the shape of a serpent. It isn't
@@ -823,7 +823,7 @@ a &+Lbla&+mck o&+Lpa&+ml ey&+mep&+Liec&+me~
 ~
 11 31 3 0 5 0 4096 131073 64 0 0
 0 0 0 0 0 0 0 0
-1 43232 100
+1 43232 100 100
 E
 black opal eye piece eyepiece~
 &+LThis black opaly eyepiece looks magical in nature. It is smoothly polished
@@ -840,7 +840,7 @@ an &+yold straw &+Yhat~
 ~
 9 5 3 0 5 0 1 17 0 0 0
 4 0 0 2 0 0 0 0
-1 23232 100
+1 23232 100 100
 E
 old straw hat~
 &+yThis is an old straw hat. Its something an old farmer would wear.
@@ -856,7 +856,7 @@ A pair of dusty leggings lay here.~
 ~
 9 5 3 0 5 0 0 33 64 0 0
 12 0 0 0 0 0 0 0
-2 23929 100
+2 23929 100 100
 E
 dusty leggings pair~
 &+yThese leggings have seen better days. They were used for farming by a farmer
@@ -873,7 +873,7 @@ wooden warning sign~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden warning sign~
    &+WThe warning sign reads:  Beware of Undead!  Village has been raised!
@@ -885,7 +885,7 @@ collaspsed section earth~
 ~
 29 1 3 0 7 0 0 0 0 0 0
 270 20922 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 collaspsed section earth~
 &+LThis section of earth blocks the way through the catacombs.
@@ -897,7 +897,7 @@ large pile rubble~
 ~
 13 1 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 collaspsed section earth~
 &+LThis section of earth blocks the way through the catacombs.
@@ -909,7 +909,7 @@ clear crystal potion~
 ~
 10 7 3 0 7 0 4096 16385 0 0 0
 41 356 0 0 0 0 0 0
-2 2832 100
+2 2832 100 100
 E
 clear crystal potion~
 &+cThis potion has swirling clear fluid inside of it.

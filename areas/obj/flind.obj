@@ -5,7 +5,7 @@ finger ogre cylindrical object~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 1 0 0 1 0 0 0 0
-2 1424 100
+2 1424 100 100
 E
 finger ogre cylindrical object~
 This fat finger cut from an ogre claw doesnt look all that appetizing.
@@ -17,7 +17,7 @@ A cleanly severed pair of feet stand here.~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 3 0 0 0 0 0 0 0
-4 2008 100
+4 2008 100 100
 E
 feet pair~
 These pale human feet have been kept warm for maximum taste.
@@ -29,7 +29,7 @@ balls nuts testicles nads troll something~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-3 1789 100
+3 1789 100 100
 E
 balls nuts testicles nads troll something~
 &+gThese large nads have been removed from some unfortunate troll.
@@ -41,7 +41,7 @@ A fully stocked display case stands here.~
 ~
 15 6 3 0 8 0 262144 0 0 0 0
 500 24 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 display case~
    This case is made of a dark hardwood and contains a glass front, a rarity
@@ -55,7 +55,7 @@ cross inverted~
 ~
 25 6 3 0 7 0 0 0 0 0 0
 3462 15 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 inverted cross~
 &+L   The empty spaces where the fire does not burn creates a void in the shape
@@ -68,7 +68,7 @@ Two &+beyes&n lie here, looking at nothing.~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 pair eyes~
 &+b   The eyes stare back at you as you look at them.
@@ -80,7 +80,7 @@ blood bag dripping leather~
 ~
 15 13 3 0 3 0 8320 8404993 0 0 0
 25 1 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 blood bag dripping leather~
 &+r   This leather bag is completely soaked through with blood.
@@ -92,7 +92,7 @@ part portion corpse half body~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 part portion corpse half body~
 &+rThis mangled pile of flesh and bone used to be half a creature.
@@ -104,7 +104,7 @@ mangled torso corpse portion~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 part portion corpse half torso~
 &+rThis mangled pile of flesh and bone used to be half a creature.
@@ -116,7 +116,7 @@ A small metal box is mounted against the back wall.~
 ~
 15 16 3 0 4 0 0 0 0 0 0
 100 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 box cage metal panel~
 This metal box sits about four feet above the floor and is caked with blood.
@@ -131,7 +131,7 @@ symbol demonic fire~
 ~
 25 1 3 0 7 0 0 0 0 0 0
 3435 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 symbol demonic fire~
 &+R   Fire ignites in the air, creating an intricate demonic symbol.  The
@@ -145,7 +145,7 @@ A large sword lies here, reflecting light off its edges.~
 ~
 5 16 3 0 8 0 4195328 8193 0 87572507 0
 13 2 6 3 0 0 0 0
-10 0 100
+10 0 100 100
 E
 sword broadsword blood flecked blood-flecked~
 Although the hilt shows heavy use, the blade remains incredibly sharp.
@@ -161,7 +161,7 @@ A beat-up club has been tossed away.~
 ~
 5 6 3 0 3 0 0 8193 0 4165209668 0
 10 1 4 7 0 0 0 0
-5 0 100
+5 0 100 100
 E
 club tutor tutor's~
 This solid wooden club contains many dents and scrapes, along with a few
@@ -178,7 +178,7 @@ ale beer six-pack bottles few~
 ~
 17 7 3 0 7 0 0 16385 0 0 0
 6 6 4 0 0 0 0 0
-6 0 100
+6 0 100 100
 E
 beer ale six-pack bottles few~
 &+Y   These six bottles have been topped with corks and tied together for
@@ -191,7 +191,7 @@ pair thumbscrews device torture~
 ~
 9 15 3 0 10 0 128 129 0 0 0
 1 0 0 3 0 0 0 0
-2 500 100
+2 500 100 100
 E
 pair thumb thumbscrews device torture~
 &+CThese metal thumbscrews look well used and capable of inflicting great pain.
@@ -205,7 +205,7 @@ veins pulsating pile~
 ~
 9 2 3 0 7 0 0 262145 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 veins pulsating pile~
 &+b   Veins from several different races have been delicately removed from
@@ -223,7 +223,7 @@ jar pickled fetus~
 ~
 11 7 3 0 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 jar pickled fetus~
 &+B   This clear jar holds a thick &+Ldark liquid &+Band a small &+Yhuman fetus &+Bfloats
@@ -237,7 +237,7 @@ arm dismembered part~
 ~
 5 2 3 0 7 0 4194304 8193 0 4173708804 0
 10 3 6 6 0 0 0 0
-0 0 100
+0 0 100 100
 E
 arm dismembered~
 &+gA bloody limb ripped from a troll has hardened with the claw clenched
@@ -250,7 +250,7 @@ robe pile cloth shroom~
 ~
 9 3 3 0 9 0 1024 9 0 37883812 0
 8 0 0 2 0 0 0 0
-8 0 100
+8 0 100 100
 E
 robe pile cloth shroom~
 &+L   This robe is covered with representations of an underground &+ymushroom
@@ -268,7 +268,7 @@ vial glass screaming~
 ~
 10 7 3 0 7 0 1024 16385 64 4197892 0
 25 131 -1 -1 50 0 0 0
-2 0 100
+2 0 100 100
 E
 vial glass screaming~
 &+L   Black and red smoke boils furiously inside this vial and what seem to be
@@ -287,7 +287,7 @@ mask demons face~
 ~
 9 2 3 0 7 0 0 262145 0 0 0
 3 0 0 3 0 0 0 0
-3 0 100
+3 0 100 100
 E
 mask demons face~
 &+r   This mask appears to have a life of its own, its evil face emits a
@@ -304,7 +304,7 @@ shield bone large~
 ~
 37 10 3 0 8 0 1024 513 0 121258043 0
 2 1 4 95 3 1 0 0
-5 0 100
+5 0 100 100
 E
 shield bone large~
 &+W   This large round shield is entirely made of bone, and thousands of
@@ -321,7 +321,7 @@ mace bone pile assorted bones~
 ~
 5 10 3 0 7 0 0 8193 0 0 0
 6 2 6 7 0 0 0 0
-6 0 100
+6 0 100 100
 E
 mace bone assorted pile~
 &+W  Entirely comstructed of bones, the mace has a femur for a handle, smaller
@@ -338,7 +338,7 @@ symbol demonic rune evil~
 ~
 25 1 3 0 7 0 0 0 64 0 0
 3431 197 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 symbol demonic~
 &+r   Blood pulses in thin streams through the air, twisting and bending to
@@ -351,7 +351,7 @@ symbol demonic rune evil~
 ~
 25 1 3 0 7 0 0 0 64 0 0
 3441 197 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 symbol demonic~
 &+r   Blood pulses in thin streams through the air, twisting and bending to
@@ -364,7 +364,7 @@ hammer small metal~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 4 2 4 7 1 0 0 0
-4 0 100
+4 0 100 100
 E
 hammer small metal~
 &+C   This forged metal hammer has a heavy metal head and handle.
@@ -380,7 +380,7 @@ head troll hardened~
 ~
 9 12 3 0 7 0 1073741824 1 0 0 0
 15 0 0 2 0 0 0 0
-8 0 100
+8 0 100 100
 E
 head troll hardened~
 &+g   This ugly troll head has been decapitated, hollowed out and dried to
@@ -397,7 +397,7 @@ vat innards urine~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 200 0 0 0 0 0 0 0
-95 0 100
+95 0 100 100
 E
 vat innards urine~
 &+y   This disgusting mixture of warm innards and Flind urine smells worse than
@@ -410,7 +410,7 @@ gloves pair leather lead filled~
 ~
 9 13 3 0 6 0 0 129 0 4173708804 0
 6 0 0 4 0 0 0 0
-5 0 100
+5 0 100 100
 E
 gloves pair leather lead filled~
    These leather gloves have pockets of lead sewn into the knuckle area to
@@ -427,7 +427,7 @@ whip twisted braided rope~
 ~
 5 14 3 0 9 0 0 8193 0 0 0
 14 3 5 2 0 0 0 0
-8 0 100
+8 0 100 100
 E
 whip rope twisted braided~
    &+bThis large whip is constructed of tightly twisted leather covered in
@@ -442,7 +442,7 @@ portal glowing transparant~
 ~
 25 1 3 0 7 0 1 0 64 0 0
 3409 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal glowing transparant~
 &+B   The portal is covered with a bright sheet of electricity.
@@ -454,7 +454,7 @@ portal glowing transparant~
 ~
 25 1 3 0 7 0 1 0 64 0 0
 3408 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal glowing transparant~
    &+bThe portal is covered with a bright sheet of electricity nd the
@@ -467,7 +467,7 @@ cheese block half rat~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 4 0 0 0 0 0 0 0
-2 2656 100
+2 2656 100 100
 E
 cheese block~
 &+Y   Half a small rat sticks out of the cheese, the other half sent off in
@@ -480,7 +480,7 @@ head fetus earring maggot maggots something~
 ~
 9 2 3 0 7 0 0 524289 64 0 0
 2 0 0 2 0 0 0 0
-2 0 100
+2 0 100 100
 E
 skull fetus earring maggot maggots head something~
    &+YA small head dangles from a post and chain mounted in its top.  &+WMaggots
@@ -497,7 +497,7 @@ skull horns demon horned bone~
 ~
 9 10 3 0 7 0 4096 17 0 0 0
 7 0 0 2 0 0 0 0
-3 0 100
+3 0 100 100
 E
 skull horns demon bone horned~
    &+LThis is the top of a &+rdemon &+Wskull&+L, containing two thick black horns.
@@ -514,7 +514,7 @@ dagger notched~
 ~
 5 15 3 0 7 0 0 8193 0 4194697632 0
 2 1 4 11 0 0 0 0
-3 0 100
+3 0 100 100
 E
 dagger notched~
 &+M   This dagger has a blade of extraordinary sharpness on its lower half and
@@ -531,7 +531,7 @@ cross key~
 ~
 18 24 3 0 7 0 8388608 16385 0 0 0
 0 5 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 cross key~
 &+Y   This small cross is notched at the base, evidently it is used as a key.
@@ -543,7 +543,7 @@ flesh chunk flind~
 ~
 19 15 3 0 7 0 0 16385 0 0 0
 2 0 0 13 0 0 0 0
-3 0 100
+3 0 100 100
 E
 flesh chunk flind~
 &+y  This chunk of Flind flesh has bits of white mold covering it.  Is that
@@ -556,7 +556,7 @@ horns demon armguards horned pair bone~
 ~
 9 10 3 0 7 0 4096 257 0 0 0
 9 0 0 4 0 0 0 0
-8 0 100
+8 0 100 100
 E
 horns demon armguards horned pair bone~
 &+L  A pair of armguards, formed from the outer arms of a Serrated Demon.
@@ -573,7 +573,7 @@ ring flames flaming~
 ~
 11 1 3 0 10 0 0 3 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring flames flaming~
 &+r  This small ring appears to be made of flames, but it can be worn as though
@@ -590,7 +590,7 @@ bell goat~
 ~
 11 15 3 0 7 0 128 16389 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 bell goat~
 &+y  A simple iron bell with a thin leather strap run through a hook.  It

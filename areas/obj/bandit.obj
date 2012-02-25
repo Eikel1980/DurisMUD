@@ -5,7 +5,7 @@ A large thorn from a &+Lblack&+gthorn&N tree lies here~
 ~
 5 6 3 0 7 0 0 8193 64 0 0
 2 2 3 11 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 thorn black blackthorn~
 This thorn is at least a full meter long tappering off to a very sharp point.
@@ -24,7 +24,7 @@ a collar with large thorns lies here~
 ~
 9 6 0 0 7 0 262144 5 64 0 0
 5 2 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 collar thorn blackthorn~
 This collar is very well constructed from a wide strip of hard leather. Small
@@ -40,7 +40,7 @@ a wooden shield has been left here.~
 ~
 37 6 3 15 7 0 1024 513 0 87572571 0
 2 1 3 164 0 0 0 0
-10 20000 100
+10 20000 100 100
 E
 shield blackthorn wood black thorn~
 This shield is huge, covering half of a normal humans body when used properly.
@@ -57,7 +57,7 @@ a &+yputrid pool&N of &+Ywaste&N emits a foul odor~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 9 1 0 0 0 0
-0 0 100
+0 0 100 100
 #98504
 shard stone small~
 a small &+Lshard&n of &+Lstone&n~
@@ -65,7 +65,7 @@ A small piece of &+Lstone&n has been left here.~
 ~
 5 11 2 2 7 0 0 8193 0 0 0
 15 2 3 11 0 0 0 0
-1 3000 100
+1 3000 100 100
 A
 18 1
 A
@@ -77,7 +77,7 @@ a &+ystone dagger&N has been left here~
 ~
 5 11 2 3 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-1 500 100
+1 500 100 100
 A
 19 1
 A
@@ -89,7 +89,7 @@ a &+L*LARGE*&n pile of &+Yloot&N fills the canyon~
 ~
 15 16 3 0 7 0 2 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile loot large~
 This pile of loot contains a wide variety of *JUNK*. It is stacked so high it
@@ -102,7 +102,7 @@ a &+Ygold watch&N lies here~
 ~
 8 24 0 0 7 0 4096 16389 64 0 0
 0 0 0 0 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 watch gold~
 This gold watch seems to be recently polished despite the conditions it was
@@ -125,7 +125,7 @@ a large leather belt lies here~
 ~
 15 12 3 3 7 0 0 2049 0 0 0
 100 5 0 100 0 0 0 0
-5 6000 100
+5 6000 100 100
 E
 belt money~
 This belt is made from a thick, stiff leather base, which provides a decent
@@ -144,7 +144,7 @@ a large stack of &+Wplatinum&N coins lies here~
 ~
 20 25 1 0 7 0 4096 1 0 0 0
 0 0 0 5 0 0 0 0
-5 5 100
+5 5 100 100
 #98510
 coins platinum stack~
 some &+Wplatinum&N coins~
@@ -152,7 +152,7 @@ a large stack of &+Wplatinum&N coins lies here~
 ~
 20 25 1 0 7 0 4096 1 0 0 0
 0 0 0 5 0 0 0 0
-5 5 100
+5 5 100 100
 #98511
 coins platinum stack~
 some &+Wplatinum&N coins~
@@ -160,7 +160,7 @@ a large stack of &+Wplatinum&N coins lies here~
 ~
 20 25 1 0 7 0 4096 1 0 0 0
 0 0 0 5 0 0 0 0
-5 5 100
+5 5 100 100
 #98512
 mask leather black~
 a &+Lblack leather&N &+bmask&N~
@@ -168,7 +168,7 @@ a small piece of black leather has been discarded here~
 ~
 9 13 3 3 7 0 0 131073 64 0 0
 2 12 2 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 #98513
 sword blade longblade long ogreish~
 an &+bogreish&N &+Llong&+bblade&N~
@@ -176,7 +176,7 @@ a *huge* sword lies here.~
 ~
 5 16 3 10 7 0 4195328 8193 0 87572571 0
 5 3 4 3 0 0 0 0
-20 20000 100
+20 20000 100 100
 E
 sword blade longblade long ogreish~
 This blade is obviously crafted for a large race of being, a rough engraving
@@ -195,7 +195,7 @@ a torn piece of &+Wpaper&N lies here~
 ~
 13 28 1 2 7 0 524288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 note torn paper~
 This small piece of paper is the right side of a torn note .. only one partial
@@ -208,7 +208,7 @@ a torn piece of &+Wpaper&N lies here~
 ~
 13 28 1 2 7 0 524288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 note torn paper~
 This small piece of paper is the left side of a torn note .. only partial
@@ -221,7 +221,7 @@ This &+ybookshelf&N is pulled to open way east.~
 ~
 29 6 2 5 7 0 2 0 0 0 0
 340 98528 1 1 0 0 0 0
-1 5 100
+1 5 100 100
 E
 bookshelf book shelf~
 This large bookshelf is defaced with ugly carvings and vandalism. It rises
@@ -235,7 +235,7 @@ This &+ybookshelf&N is pushed to open way west.~
 ~
 29 6 2 5 7 0 2 0 0 0 0
 270 98531 3 1 0 0 0 0
-1 5 100
+1 5 100 100
 E
 bookshelf book shelf~
 This large bookshelf is defaced with ugly carvings and vandalism. It rises
@@ -249,7 +249,7 @@ a &+Gglowing&N &+ggreen eye&N sits here~
 ~
 8 2 0 0 7 0 262272 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 15438 100
+1 15438 100 100
 #98519
 cleaver~
 a &+mmatron's &+Lcleaver&N~
@@ -257,7 +257,7 @@ a large cleaver lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 4198895524 0
 9 1 5 3 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 clever~
 This clever is huge, measuring a good two meters in length. The top part curves
@@ -274,7 +274,7 @@ a &+ywashboard&N has been left here~
 ~
 5 16 3 50 7 0 0 24577 0 0 0
 10 1 3 7 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 washboard board wash~
 This huge washboard has rough, ridged sides making it an excellent weapon
@@ -289,7 +289,7 @@ a long piece of wire sits here~
 ~
 5 3 3 8 7 0 0 24577 0 0 0
 2 1 3 2 0 0 0 0
-1 40 100
+1 40 100 100
 E
 hanger wire clothes~
 This long piece of wire appears to have been a clothes hanger at one time.
@@ -304,7 +304,7 @@ a &+rhalf-eaten&N &+Lcorpse&N lies in a &+rmessy heap&N~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-150 0 100
+150 0 100 100
 E
 corpse~
 This poor soul found itself as a meal for the alligators. Whats left of the
@@ -317,7 +317,7 @@ a pair of &+ybrown&N boots is lieing here~
 ~
 9 16 3 8 7 0 12288 65 64 0 0
 6 6 1 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 boots boot stealth~
 These boots are made from a strange brown hide that is rather soft to the
@@ -334,7 +334,7 @@ a &+Mlarge salmon&N has been discarded here~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-5 300 100
+5 300 100 100
 E
 salmon large fish~
 This large salmon looks like it was in the prime of life when it was caught.
@@ -347,7 +347,7 @@ a &+Mlarge salmon&N has been discarded here~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 1 0 0 0 0
-5 300 100
+5 300 100 100
 E
 salmon large fish~
 This large salmon looks like it was in the prime of life when it was caught.
@@ -361,7 +361,7 @@ A &+W*LARGE*&N &+ywooden sign&N has been hung here.~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wooden large~
 This sign has been firmly attached to a tree trunk. It message is written in
@@ -382,7 +382,7 @@ a large hammer has been left here.~
 ~
 5 16 3 8 7 0 0 8193 0 0 0
 4 1 5 7 0 0 0 0
-10 5000 100
+10 5000 100 100
 E
 hammer~
 This hammer looks to be of the finest quality, the head contructed quite
@@ -400,7 +400,7 @@ dagger brass~
 ~
 5 17 2 3 7 0 0 8193 0 4198895524 0
 2 2 3 11 0 0 0 0
-4 8473 100
+4 8473 100 100
 E
 dagger brass~
 &+yMade by experienced craftsmen, this brass silver-hilted dagger looks
@@ -417,7 +417,7 @@ dagger silver serrated~
 ~
 5 22 2 3 7 0 0 8193 0 4198895524 0
 2 2 4 11 0 0 0 0
-3 3984 100
+3 3984 100 100
 A
 18 2
 A
@@ -429,7 +429,7 @@ bracelet wooden spikes~
 ~
 9 6 3 0 7 0 0 4097 0 0 0
 3 0 0 2 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 bracelet wooden spikes~
 &+yThis small piece of wood has been quickly cared into the form of a bracelet. It has been embedded with small &+Lstone spikes&n.
@@ -443,7 +443,7 @@ earring gold trim small~
 ~
 9 36 3 0 7 0 0 524289 64 0 0
 4 0 0 0 0 0 0 0
-0 7343 100
+0 7343 100 100
 E
 earring gold trim small~
 &+LThis small, masterly-crafted earring has been carved from obsidian and laced with &+Ygold&n.
@@ -459,7 +459,7 @@ A pair of bloody sleeves lay here.~
 ~
 9 15 3 0 7 0 0 257 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sleeves red bloody~
 These horrible sleeves have seen many battles, as they are smeared with &+rblood&n and decaying &+rflesh&n.
@@ -475,7 +475,7 @@ A large spiked crown sits here.~
 ~
 9 15 3 0 7 0 4096 17 0 0 0
 6 0 0 0 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 spiked crown stone~
 &+LA massive piece of stone carved in the shape of a crown. Many sharp spikes jet out from the edges.&n

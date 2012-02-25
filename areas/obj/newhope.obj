@@ -5,7 +5,7 @@ couch battered~
 ~
 15 5 3 10 7 0 8388616 0 0 0 0
 50 5 0 50 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 couch battered~
 &+y   This was once an adequate piece of furniture, but now it looks little more&n
@@ -19,7 +19,7 @@ table wooden~
 ~
 15 6 3 30 7 0 0 0 0 0 0
 25 5 0 25 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table wooden~
 &+y   This small wooden table gleams with the oils used to clean and protect the&n
@@ -36,7 +36,7 @@ bed bedding~
 ~
 15 6 4 500 7 0 0 0 0 0 0
 200 5 0 200 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 bed bedding~
 &+y   This bed is so big that even a couple of giants could get lost in it.  The&n
@@ -53,7 +53,7 @@ negligee~
 ~
 9 3 3 1 7 0 0 9 0 1 0
 5 0 0 1 0 0 0 0
-0 300 100
+0 300 100 100
 E
 negligee~
 &+M   The cloth used to make this negligee is very thin and silky.  It is almost&n
@@ -72,7 +72,7 @@ workbench bench~
 ~
 15 6 4 250 7 0 0 0 0 0 0
 200 5 0 150 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 workbench bench~
 &+y   The top of this sturdy bench bears scratches, scars, and burns showing that&n
@@ -88,7 +88,7 @@ table~
 ~
 5 6 3 5 7 0 8200 8193 0 0 0
 10 5 2 6 0 0 0 0
-10 50 100
+10 50 100 100
 E
 table~
 &+y   This small table has short legs, making it almost impossible to tip as it&n
@@ -108,7 +108,7 @@ pillow~
 ~
 5 3 2 1 7 0 8200 8193 0 0 0
 10 3 3 7 0 0 0 0
-1 20 100
+1 20 100 100
 E
 pillow~
 &+r   This pillow has little of the original bright red dyes left in it, leaving&n
@@ -125,7 +125,7 @@ stone smooth~
 ~
 5 11 1 1 7 0 8 8396801 64 0 0
 2 2 2 6 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stone smooth~
 &+r   This &+ysmoo&+Yt&+yh s&+Yt&+yone&+r would fit perfectly in the hand of a &+yhalfling&+r or &+Ggoblin.&n
@@ -143,7 +143,7 @@ table tables bench benches~
 ~
 13 11 4 0 7 0 8200 0 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 table tables bench benches~
 &+w   Th&+ye&+wse t&+yab&+wles &+Wa&+wnd ben&+ych&+we&+Ws&+w have been c&+yarv&+wed fro&+Wm&+w a sing&+yle p&+wiece of s&+Wt&+yon&+we, and&n
@@ -162,7 +162,7 @@ club wooden~
 ~
 5 6 2 4 7 0 8192 8193 0 1 0
 11 2 4 6 0 0 0 0
-3 1500 100
+3 1500 100 100
 E
 club wooden~
 &+y   This club is made of a hard wood with some barbed &+cmetal spikes&+y embedded in&n
@@ -181,7 +181,7 @@ shield redwood~
 ~
 37 6 2 3 7 0 8192 4194817 0 1 0
 1 5 3 10 3 0 0 0
-3 850 100
+3 850 100 100
 E
 shield redwood~
 &+r   This shield is made of a hard redwood, and a master craftsman has captured&n
@@ -197,7 +197,7 @@ tabard leather~
 ~
 9 14 2 1 7 0 8192 1033 0 0 0
 5 0 0 2 0 0 0 0
-2 1050 100
+2 1050 100 100
 E
 tabard leather~
 &+y   This lea&+rt&+yher tab&+ra&+yrd is sta&+rine&+yd by &+rsp&+ylattere&+rd blood f&+yrom many battles, and&n
@@ -214,7 +214,7 @@ hammer~
 ~
 5 16 3 3 11 20 4202496 8193 64 0 0
 4 3 5 7 0 0 0 0
-5 10355 100
+5 10355 100 100
 E
 hammer~
 &+C   This massive hammer is forged from the finest steel, and can be used either&n
@@ -235,7 +235,7 @@ table~
 ~
 15 6 4 1000 7 0 8200 0 0 0 0
 300 0 0 300 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table~
 &+y   This table has seen a lot of heavy use, yet it is still in good shape and&n
@@ -251,7 +251,7 @@ grapes iron~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 grapes iron~
 &+m   These grapes are fresh - nice and plump and firm.  They are a dark purple&n
@@ -265,7 +265,7 @@ meat chunk iron~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 24 -1 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 meat chunk iron~
 &+y   There is no telling what sort of animal this originally was as it has been&n
@@ -280,7 +280,7 @@ bread slice iron~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bread slice iron~
 &+y   Th&+Wis slice of bread is very thick, and appears to have been made fro&+ym very&n
@@ -294,7 +294,7 @@ table bench~
 ~
 15 6 4 3000 7 0 8192 0 0 0 0
 300 5 0 300 0 0 0 0
-3000 1 100
+3000 1 100 100
 E
 table bench~
 &+r   This table has been carved from a wood that is a natural dark red in color.&n
@@ -312,7 +312,7 @@ tankard pewter~
 ~
 17 22 1 1 7 0 33824768 8388609 0 0 0
 20 20 5 0 0 0 0 0
-2 550 100
+2 550 100 100
 E
 tankard pewter~
 &+c   This tankard is made of thick pewter.  Long faces with leering grins have&n
@@ -326,7 +326,7 @@ heart key~
 ~
 18 16 1 0 7 0 41988105 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 heart key~
 &+r   A large h&+Re&+rar&+Rt&+r has been taken and pulled so that it has been lengthened, and&n
@@ -345,7 +345,7 @@ dagger shard~
 ~
 5 11 1 1 7 0 33566720 8396801 64 0 0
 2 2 4 11 0 0 0 0
-1 1566 100
+1 1566 100 100
 E
 dagger shard~
 &+y   A s&+wt&+yone sh&+wa&+yrd has been taken and used to create an exquisite dagger with an&n
@@ -364,7 +364,7 @@ dagger bone shard~
 ~
 5 18 1 0 12 20 33562624 8396801 64 0 0
 2 2 3 11 0 0 0 0
-0 25666 100 4 0 2097152 0
+0 25666 100 100 4 0 2097152 0
 E
 dagger bone shard~
 &+y   Though this &+ws&+Wh&+war&+Wd&+y originally came from a &+Wb&+wone,&+y it is harder than stone and&n
@@ -383,7 +383,7 @@ dagger splinter wood~
 ~
 5 6 1 0 7 0 8192 8396801 64 0 0
 2 2 2 11 0 0 0 0
-0 750 100
+0 750 100 100
 E
 dagger splinter~
 &+y   A long splinter of hard wood has been taken and shaped into a weapon with&n
@@ -401,7 +401,7 @@ bottle elven wine~
 ~
 17 9 2 1 7 0 8200 8388609 0 0 0
 10 10 2 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 bottle elven wine~
 &+y   Though covered in dust, this bottle of &+celven &+mwine&+y has lost none of its fine&n
@@ -415,7 +415,7 @@ bone sleeves~
 ~
 9 10 3 2 7 0 8192 257 0 0 0
 6 0 0 3 0 0 0 0
-5 500 100
+5 500 100 100
 E
 bone sleeves~
 &+w   This set of s&+Wl&+wee&+Wv&+wes has been crafted from &+Wb&+wone carefully spliced together&n
@@ -430,7 +430,7 @@ bone leggings~
 ~
 9 10 3 2 7 0 8192 33 0 0 0
 8 0 0 3 0 0 0 0
-7 600 100
+7 600 100 100
 E
 bone leggings~
 &+w   These &+Wl&+we&+Wgg&+win&+Wg&+ws have been made from &+Wb&+wones that have been strung together by&n
@@ -445,7 +445,7 @@ bone vest~
 ~
 9 10 3 3 7 0 270336 9 0 0 0
 13 0 0 3 0 0 0 0
-10 1600 100
+10 1600 100 100
 E
 bone vest~
 &+w   This ves&+Wt&+w has been crafted by securing &+Wb&+wones together in a definite form,&n
@@ -460,7 +460,7 @@ chain sleeves~
 ~
 9 16 3 2 7 0 8192 257 0 0 0
 10 0 0 3 0 0 0 0
-4 1000 100
+4 1000 100 100
 E
 cahin sleeves~
 &+c   This set of c&+Ch&+cain s&+Cl&+cee&+Cv&+ces is very well crafted and slides on to almost any&n
@@ -476,7 +476,7 @@ chain leggings~
 ~
 9 16 3 3 7 0 8192 33 0 0 0
 12 0 0 3 0 0 0 0
-5 900 100
+5 900 100 100
 E
 chain leggings~
 &+c   This set of &+Cl&+ce&+Cgg&+cin&+Cg&+cs has been crafted from hard steel.  They are very well&n
@@ -491,7 +491,7 @@ chain vest~
 ~
 9 16 3 4 7 0 8192 9 0 0 0
 15 0 0 3 0 0 0 0
-8 2000 100
+8 2000 100 100
 E
 chain vest~
 &+c   This c&+Ch&+cain ves&+Ct&+c has been finely crafted from the strongest &+Csteel&+c that they&n
@@ -506,7 +506,7 @@ sword longsword black~
 ~
 5 16 3 1 7 0 8192 8193 0 0 0
 5 2 3 3 0 0 0 0
-11 9203 100
+11 9203 100 100
 E
 sword longsword black~
 &+w   The longsword has a very finely honed blade that is so sharp that it almost&n
@@ -523,7 +523,7 @@ dagger black~
 ~
 5 16 2 1 7 0 8192 8193 0 1 0
 2 1 4 11 0 0 0 0
-1 3530 100
+1 3530 100 100
 E
 dagger black~
 &+w   This &+Ld&+wa&+Lgg&+wer has been made from the finest &+Csteel&+w forged in this weaponsmith
@@ -539,7 +539,7 @@ sword short black~
 ~
 5 16 2 1 7 0 8192 8193 0 0 0
 9 1 5 3 0 0 0 0
-2 5464 100
+2 5464 100 100
 E
 sword short black~
 &+w   This s&+Lh&+wor&+Lt&+w swor&+Ld&+w has been created out of the finest &+Csteel&+w produced in this&n
@@ -555,7 +555,7 @@ sword great two-handed black~
 ~
 5 16 4 3 7 0 4202496 8193 0 1 0
 13 4 3 3 0 0 0 0
-6 9732 100
+6 9732 100 100
 E
 sword great two-handed black~
 &+w   This great sword is so big that even larger races need to wield it with two&n
@@ -572,7 +572,7 @@ hammer black~
 ~
 5 16 3 2 7 0 8192 8193 0 0 0
 4 3 2 6 0 0 0 0
-5 8634 100
+5 8634 100 100
 E
 hammer black~
 &+w   This well-balanced &+Lh&+wammer has been crafted from the finest &+Csteel&+w created in&n
@@ -588,7 +588,7 @@ hammer great two-handed black~
 ~
 5 16 4 4 7 0 4202496 8193 0 0 0
 4 4 4 6 0 0 0 0
-8 14532 100
+8 14532 100 100
 E
 hammer great two-handed black~
 &+w   This grea&+Lt t&+wwo-&+Lh&+wan&+Ld&+we&+Ld h&+wammer is a solid, heavy weapon.  It can be used with&n
@@ -604,7 +604,7 @@ sleeves rawhide~
 ~
 9 12 3 2 7 0 8192 257 0 0 0
 3 0 0 3 0 0 0 0
-4 600 100
+4 600 100 100
 E
 sleeves rawhide~
 &+y   Wide strips of raw&+wh&+yi&+wd&+ye have been woven together to create a set of sturdy&n
@@ -619,7 +619,7 @@ vest rawhide~
 ~
 9 12 3 2 7 0 8192 9 0 0 0
 7 0 0 3 0 0 0 0
-5 1400 100
+5 1400 100 100
 E
 vest rawhide~
 &+y   Wide s&+wt&+yri&+wp&+ys of raw&+wh&+yi&+wd&+ye have been woven together to create a sturdy ves&+wt.&n
@@ -634,7 +634,7 @@ leggings rawhide~
 ~
 9 12 3 2 7 0 8192 33 0 0 0
 5 0 0 3 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 leggings rawhide~
 &+y   This se&+wt&+y o&+wf l&+ye&+wgg&+yin&+wg&+ys has been created by weaving wide strips of different&n
@@ -649,7 +649,7 @@ bracer rawhide~
 ~
 9 12 3 1 7 0 8192 4097 0 0 0
 1 0 0 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 bracer rawhide~
 &+y   Wide st&+wrips of r&+yawhide fr&+wom differ&+yent color&+wed cows h&+yas been w&+woven toge&+yther&n
@@ -664,7 +664,7 @@ whip rawhide~
 ~
 5 12 3 1 7 0 8192 8193 0 0 0
 14 2 4 2 0 0 0 0
-3 800 100
+3 800 100 100
 E
 whip rawhide~
 &+y   S&+wt&+yri&+wp&+ys of leather have been &+wb&+yrai&+wd&+ye&+wd&+y together to form a w&+wh&+yi&+wp.&+y  This weapon&n
@@ -680,7 +680,7 @@ rope rawhide~
 ~
 12 12 3 3 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 100 100
+5 100 100 100
 E
 rope rawhide~
 &+y   This long ro&+wp&+ye has been created by braiding together s&+wt&+yri&+wp&+ys of different&n
@@ -696,7 +696,7 @@ bp backpack mulehide~
 ~
 15 12 3 3 7 0 270336 4194305 0 0 0
 150 5 0 150 0 0 0 0
-3 200 100
+3 200 100 100
 E
 bp backpack mulehide~
 &+w   S&+Lt&+wri&+Lp&+ws of mu&+Ll&+we&+Lh&+wi&+Ld&+we have been woven together to create a strong, watertight&n
@@ -713,7 +713,7 @@ belt rawhide~
 ~
 9 12 2 1 7 0 8192 2049 0 0 0
 2 0 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 belt rawhide~
 &+w   &+yStrips of r&+wawh&+yide from d&+wiff&+yerent colo&+wred&+y cows have&+w be&+yen braide&+wd t&+yogether to&n
@@ -729,7 +729,7 @@ boots rawhide~
 ~
 9 12 2 1 7 0 8192 65 0 0 0
 2 0 0 3 0 0 0 0
-3 600 100
+3 600 100 100
 E
 boots rawhide~
 &+y   This se&+wt&+y o&+wf b&+yoo&+wt&+ys have been created by weaving together strips of raw&+wh&+yi&+wd&+ye&n
@@ -747,7 +747,7 @@ pouch rawhide~
 ~
 15 12 2 50 7 0 8192 8388609 0 0 0
 50 5 0 50 0 0 0 0
-3 50 100
+3 50 100 100
 E
 pouch rawhide~
 &+y   Strips &+wof different&+y colored rawh&+wide have been&+y woven togeth&+wer to form a &+ybelt&n
@@ -762,7 +762,7 @@ bracer bone~
 ~
 9 10 2 1 7 0 8192 4097 0 0 0
 2 0 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 bracer bone~
 &+w   This &+Wb&+wracer has been created by hollowing out a huge &+Wb&+wone, probably from a&n
@@ -777,7 +777,7 @@ boots bone~
 ~
 9 10 2 2 7 0 8192 65 0 0 0
 4 0 0 3 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 boots bone~
 &+w   A number of &+Wb&+wones of varying sizes have been strung together with fine wire&n
@@ -796,7 +796,7 @@ helm bone~
 ~
 9 10 2 1 7 0 8192 17 0 0 0
 2 0 0 3 0 0 0 0
-2 400 100
+2 400 100 100
 E
 helm bone~
 &+w   This &+Wh&+we&+Wl&+wm appears to have been carved from three &+Wb&+wones.  The three sections&n
@@ -812,7 +812,7 @@ bracer chain~
 ~
 9 16 2 1 7 0 8192 4097 0 0 0
 4 0 0 3 0 0 0 0
-1 800 100
+1 800 100 100
 E
 bracer chain~
 &+c   This b&+Cr&+cacer has been crafted from the best &+Csteel&+c they could create at this&n
@@ -828,7 +828,7 @@ coif chain~
 ~
 9 16 2 1 7 0 8192 17 0 0 0
 5 0 0 3 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 coif chain~
 &+c   This coi&+Cf&+c has been crafted from links of the finest &+Csteel&+c produced in this&n
@@ -843,7 +843,7 @@ boots chain~
 ~
 9 16 2 1 7 0 8192 65 0 0 0
 5 0 0 3 0 0 0 0
-4 1200 100
+4 1200 100 100
 E
 boots chain~
 &+c   These &+Cb&+coo&+Ct&+cs have been made from tight c&+Ch&+cain &+Cl&+cin&+Ck&+cs created from the finest&n
@@ -860,7 +860,7 @@ quiver rawhide~
 ~
 30 12 2 2 7 0 8192 9437185 0 0 0
 40 5 1 40 0 0 0 0
-10 2000 100
+10 2000 100 100
 E
 quiver rawhide~
 &+y   Created by s&+wt&+yri&+wp&+ys of raw&+wh&+yi&+wd&+ye woven together, this &+wq&+yuiver is very sturdy as&n
@@ -875,7 +875,7 @@ shirt black cotton~
 ~
 9 3 2 1 7 0 8192 9 0 0 0
 3 0 0 1 0 0 0 0
-1 600 100
+1 600 100 100
 E
 shirt black cotton~
 &+w   This &+Lshirt&+w is made from a fine &+Lblack cloth&+w that almost seems to shimmer in&n
@@ -890,7 +890,7 @@ pants black wool~
 ~
 9 3 3 1 7 0 8192 33 0 0 0
 3 0 0 2 0 0 0 0
-1 600 100
+1 600 100 100
 E
 pants black wool~
 &+w   This pair of &+Lpants&+w has been woven of thick &+Lblack wool.&+w  Not only do they&n
@@ -905,7 +905,7 @@ cloak black wool~
 ~
 9 3 2 1 7 0 8192 1025 0 0 0
 1 0 0 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 cloak black wool~
 &+w   This thick wool &+Lcloak&+w is made from wool so &+Lblack&+w that it seems to absorb&n
@@ -920,7 +920,7 @@ hat black felt~
 ~
 9 3 2 1 7 0 8192 17 0 0 0
 1 0 0 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 hat black felt~
 &+w   This rounded &+Lhat&+w has been formed from thick &+Lblack felt.&+w  It absorbs a bit&n
@@ -936,7 +936,7 @@ gloves black cotton~
 ~
 9 3 2 0 7 0 8192 129 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 gloves black cotton~
 &+w   This pair of finely made&+L gloves&+w has been created from &+Lblack cotton.&+w  They&n
@@ -951,7 +951,7 @@ shirt red cotton~
 ~
 9 3 2 1 7 0 8192 9 0 0 0
 3 0 0 2 0 0 0 0
-1 600 100
+1 600 100 100
 E
 shirt red cotton~
 &+y   This comfortable &+rshirt&+y has been woven from a thick &+rred cotton.&+y  As well as&n
@@ -966,7 +966,7 @@ pants red wool~
 ~
 9 3 2 1 7 0 8192 33 0 0 0
 3 0 0 2 0 0 0 0
-2 600 100
+2 600 100 100
 E
 pants red wool~
 &+y   These &+rpants&+y have been made from thick wool and they provide protection not&n
@@ -981,7 +981,7 @@ cloak red wool~
 ~
 9 3 2 1 7 0 8192 1025 0 0 0
 1 0 0 2 0 0 0 0
-2 200 100
+2 200 100 100
 E
 cloak red wool~
 &+y   This heavy &+rcloak&+y is made from thick wool.  When wrapped about an adventurer&n
@@ -997,7 +997,7 @@ kerchief cotton red~
 ~
 9 3 2 0 7 0 8192 17 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 kerchief cotton red~
 &+r   This red cotton kerchief has small &+Lblack skulls&+r scattered about on it.  It&n
@@ -1012,7 +1012,7 @@ gloves cotton red~
 ~
 9 3 1 0 7 0 8192 129 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 gloves cotton red~
 &+r   This pair of gloves is made from woven cotton that has been dyed a dark red&n
@@ -1028,7 +1028,7 @@ shirt cotton green~
 ~
 9 3 2 1 7 0 8192 9 0 0 0
 3 0 0 1 0 0 0 0
-1 600 100
+1 600 100 100
 E
 shirt cotton green~
 &+g   Th&+Gis&+g green &+Gshi&+grt has bee&+Gn &+gcreat&+Ged &+gfrom a t&+Ghic&+gk cotton ma&+Gter&+gial that fe&+Gels&n
@@ -1044,7 +1044,7 @@ pants wool green~
 ~
 9 3 2 2 7 0 8192 33 0 0 0
 3 0 0 2 0 0 0 0
-2 600 100
+2 600 100 100
 E
 pants wool green~
 &+G  &+g This&+G p&+gair of pant&+Gs &+ghas been &+Gma&+gde from t&+Ghic&+gk wool that has b&+Gee&+gn stained dark&n
@@ -1060,7 +1060,7 @@ cloak green wool~
 ~
 9 3 2 2 7 0 8192 1025 0 0 0
 1 0 0 2 0 0 0 0
-2 200 100
+2 200 100 100
 E
 cloak green wool~
 &+g   The he&+Gavy&+g wool c&+Gloa&+gk was dyed a dar&+Gk g&+green col&+Gor &+gwith bright gr&+Gee&+gn stripes.&n
@@ -1076,7 +1076,7 @@ hat felt green~
 ~
 9 3 1 0 7 0 8192 17 0 0 0
 1 0 0 2 0 0 0 0
-0 200 100
+0 200 100 100
 E
 hat felt green~
 &+g   The ha&+Gt h&+gas been crea&+Gted&+g from a thic&+Gk f&+gelt mater&+Gial&+g that has been dye&+Gd a&n
@@ -1091,7 +1091,7 @@ gloves cotton green~
 ~
 9 3 1 0 7 0 8192 129 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 gloves cotton green~
 &+G   &+gThis pair of gl&+Gov&+ges has been &+Gma&+gde from a st&+Gur&+gdy cotton mater&+Gial&+g as has been&n
@@ -1106,7 +1106,7 @@ shirt cotton blue~
 ~
 9 3 2 1 7 0 8192 9 0 0 0
 3 0 0 1 0 0 0 0
-1 600 100
+1 600 100 100
 E
 shirt cotton blue~
 &+b   This shirt is made from sturdy cotton that has been dyed a dark blue color.&n
@@ -1121,7 +1121,7 @@ pants blue wool~
 ~
 9 3 2 2 7 0 8192 33 0 0 0
 3 0 0 2 0 0 0 0
-2 600 100
+2 600 100 100
 E
 pants blue wool~
 &+b   Woven from a heavy wool, these pants have been dyed a dark blue color.  As&n
@@ -1136,7 +1136,7 @@ blue wool cloak~
 ~
 9 3 2 2 7 0 8192 1025 0 0 0
 1 0 0 2 0 0 0 0
-2 200 100
+2 200 100 100
 E
 blue wool cloak~
 &+b   Thick, heavy wool has been woven into a cloak and dyed a dark blue color.&n
@@ -1152,7 +1152,7 @@ kerchief cotton blue~
 ~
 9 3 1 0 7 0 8192 17 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 kerchief cotton blue~
 &+b   A &+ck&+berc&+ch&+bie&+cf&+b has been made from a sturdy cotton material.  It has been dyed&n
@@ -1167,7 +1167,7 @@ gloves cotton blue~
 ~
 9 3 1 0 7 0 8192 129 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 gloves cotton blue~
 &+b   This pair of gloves is made from sturdy cotton that was dyed a dark blue&n
@@ -1183,7 +1183,7 @@ vest black leather~
 ~
 11 14 2 0 12 40 33562624 9 64 0 0
 0 0 0 0 0 0 0 0
-0 12000 100
+0 12000 100 100
 E
 vest black leather~
 &+r   The workmanship on this &+Lvest&+r is exquisite.  Faces contorted with pain seem&n
@@ -1204,7 +1204,7 @@ pants black leather~
 ~
 11 14 2 0 12 40 33562624 33 64 0 0
 0 0 0 0 0 0 0 0
-0 12000 100
+0 12000 100 100
 E
 pants black leather~
 &+r   This pair of &+Lpants&+r has been crafted by a master.  Though made out of heavy&n
@@ -1225,7 +1225,7 @@ stock blood bloodstained~
 ~
 15 6 6 4000 7 0 8192 0 0 0 0
 2000 5 0 20 0 0 0 0
-4000 1 100
+4000 1 100 100
 E
 stock blood bloodstained~
 &+y   This set of stocks is big enough and sturdy enough to hold even the largest&n
@@ -1255,7 +1255,7 @@ fringed backpack bp~
 ~
 15 12 2 3 7 0 8192 4194305 0 0 0
 100 5 0 100 0 0 0 0
-3 400 100
+3 400 100 100
 E
 fringed backpack bp~
 &+y   This small backpack has been made from a light, supple suede.  The one who&n
@@ -1270,7 +1270,7 @@ fringed suede vest~
 ~
 9 12 3 2 7 0 8192 9 0 0 0
 4 0 0 1 0 0 0 0
-2 1200 100
+2 1200 100 100
 E
 fringed suede vest~
 &+y   This vest has been created from a supple suede, and has fringes running&n
@@ -1286,7 +1286,7 @@ fringed suede pants~
 ~
 9 12 3 2 7 0 8192 33 0 0 0
 3 0 0 1 0 0 0 0
-2 900 100
+2 900 100 100
 E
 fringed suede pants~
 &+y   This pair of pants has been crafted from thin, supple leather.  The crafter&n
@@ -1301,7 +1301,7 @@ fringed suede quiver~
 ~
 30 12 2 1 7 0 8192 1048577 0 0 0
 30 5 1 20 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 fringed suede quiver~
 &+y   This quiver has fringe running down both sides of it, helping keep the&n
@@ -1316,7 +1316,7 @@ fringed suede boots~
 ~
 9 12 2 1 7 0 8192 65 0 0 0
 1 0 0 1 0 0 0 0
-1 400 100
+1 400 100 100
 E
 fringed suede boots~
 &+y   This set of boots has been made from a supple, comfortable suede.  They are&n
@@ -1333,7 +1333,7 @@ fringed suede waterskin~
 ~
 17 12 2 5 7 0 8192 8388609 0 0 0
 15 15 11 0 0 0 0 0
-5 300 100
+5 300 100 100
 E
 fringed suede waterskin~
 &+y   This waterskin is made from a supple suede, worked into an oval shape.  It&n
@@ -1348,7 +1348,7 @@ fringed suede sleeves~
 ~
 9 12 2 2 7 0 8192 257 0 0 0
 2 0 0 1 0 0 0 0
-2 300 100
+2 300 100 100
 E
 fringed suede sleeves~
 &+y   This set of sleeves is made from a supple suede that feels very comfortable&n
@@ -1363,7 +1363,7 @@ camel bladder waterskin~
 ~
 17 2 2 3 7 0 8192 8388609 0 0 0
 30 30 0 0 0 0 0 0
-3 15 100
+3 15 100 100
 E
 camel bladder waterskin~
 &+w   This waterskin has been made from a camel's bladder that has been cleaned&n
@@ -1379,7 +1379,7 @@ book spellbook bark~
 ~
 33 4 1 0 10 25 270337 8404993 0 0 0
 0 0 120 0 0 0 0 0
-0 3500 100
+0 3500 100 100
 E
 book spellbook bark~
 &+r   With parchment pages bound together inside stiffened &+Lb&+war&+Lk&+r covers, this &+Lb&+woo&+Lk&n
@@ -1399,7 +1399,7 @@ feathered quill~
 ~
 12 50 1 0 11 30 33562624 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 feathered quill~
 &+r   This &+Lq&+wui&+Lll&+r has been created by using a fine wire to strap together several&n
@@ -1420,7 +1420,7 @@ pine vulture totem~
 ~
 34 6 1 0 11 40 8193 8404993 0 0 0
 1 0 0 0 0 0 0 0
-0 331 100
+0 331 100 100
 E
 pine vulture totem~
 &+y   The vu&+rlt&+yure carved from this piece of pine looks as though it is about to&n
@@ -1440,7 +1440,7 @@ ash osprey totem~
 ~
 34 6 1 0 11 40 33562625 8404993 0 0 0
 3 0 0 0 0 0 0 0
-0 6500 100
+0 6500 100 100
 E
 ash osprey totem~
 &+w   A small piece of wood from an as&+Wh t&+wree has been carved into a likeness of&n
@@ -1461,7 +1461,7 @@ quartz cube totem~
 ~
 34 26 1 0 11 40 8193 8404993 0 0 0
 4 0 0 0 0 0 0 0
-0 331 100
+0 331 100 100
 E
 quartz cube totem~
 &+w   A piece of regular &+Yq&+wua&+yr&+Yt&+wz has been taken and carefully carved into a cu&+Yb&+we&n
@@ -1481,7 +1481,7 @@ flint pyramid totem~
 ~
 34 26 1 0 11 40 33562625 8404993 0 0 0
 12 0 0 0 0 0 0 0
-0 6500 100
+0 6500 100 100
 E
 flint pyramid totem~
 &+L   This piece of &+Yfl&+Lin&+Yt&+L has been carefully shaped into a perfect pyramid.  Its&n
@@ -1501,7 +1501,7 @@ coral heart totem~
 ~
 34 26 1 0 11 40 8193 8404993 0 0 0
 16 0 0 0 0 0 0 0
-0 331 100
+0 331 100 100
 E
 coral heart totem~
 &+M   A piece of cora&+ml&+M has been taken and shaped into the shape of a &+mh&+Mear&+mt.&+M  The&n
@@ -1520,7 +1520,7 @@ lapis lazuli starburst totem~
 ~
 34 26 1 0 11 40 33562625 8404993 0 0 0
 48 0 0 0 0 0 0 0
-0 6500 100
+0 6500 100 100
 E
 lapis lazuli starburst totem~
 &+b   A piece of &+Bl&+ba&+Bp&+bis &+Bl&+ba&+Yz&+bu&+Bl&+bi, a dark blue gem shot through with bands of &+Bbright&n
@@ -1540,7 +1540,7 @@ coral scorpion earring~
 ~
 8 26 1 0 10 30 33562625 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 coral scorpion earring~
 &+M   A piece of co&+rr&+Ma&+ml&+M has been taken and carved into an exquisite likeness of a&n
@@ -1557,7 +1557,7 @@ silver chain necklace~
 ~
 8 22 1 1 10 30 8193 5 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 silver chain necklace~
 &+C   Made of &+Wf&+Cine si&+Wl&+Cver &+Wl&+Cin&+Wk&+Cs strung together in a c&+Wh&+Cain, the nec&+Wkl&+Cace has been&n
@@ -1575,7 +1575,7 @@ silver chain bracelet~
 ~
 8 22 1 0 10 30 8193 4097 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 silver chain necklace~
 &+C   Made from &+Wf&+Cine si&+Wl&+Cver &+Wl&+Cin&+Wk&+Cs strung together into a c&+Wh&+Cain, this &+Wb&+Crace&+Wl&+Ce&+Wt&+C has&n
@@ -1592,7 +1592,7 @@ etched silver ring~
 ~
 8 22 1 0 10 30 33562624 3 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 etched silver ring~
 &+C   The rin&+Wg&+C has been crafted from fine si&+Wl&+Cver.  Its broad band has been e&+Wt&+Cc&+Wh&+Ce&+Wd&n
@@ -1610,7 +1610,7 @@ carved jade amulet~
 ~
 8 26 1 1 10 30 33562624 5 0 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 carved jade amulet~
 &+G   This amu&+gl&+Ge&+gt&+G has been carve&+gd&+G from a piece of &+gj&+Ga&+gd&+Ge into the shape of the head&n
@@ -1628,7 +1628,7 @@ carved ivory nose ring~
 ~
 8 34 1 0 10 30 8193 67108865 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 carved ivory nose ring~
 &+w   This nose &+Wr&+win&+Wg&+w has been expertly crafted from ivo&+Wry.&+w  It has been crafted&n
@@ -1645,7 +1645,7 @@ carved ivory horn tips~
 ~
 8 34 1 0 10 30 33562624 134217729 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 carved ivory horn tips~
 &+w   Ivo&+Wry&+w has been taken and carved into a shape that will fit on the ends of&n
@@ -1663,7 +1663,7 @@ granite pitchfork fork~
 ~
 5 37 3 0 9 20 4202496 8193 0 0 0
 18 2 3 11 0 0 0 0
-4 15555 100
+4 15555 100 100
 E
 granite pitchfork fork~
 &+w   Though made of stone, the tines on this &+Lp&+wi&+Lt&+wc&+Lhf&+wor&+Lk&+w are wickedly sharp.  They&n
@@ -1682,7 +1682,7 @@ marble dagger~
 ~
 5 38 2 0 9 20 33562624 8193 64 0 0
 2 2 4 11 0 0 0 0
-1 8350 100
+1 8350 100 100
 E
 marble dagger~
 &+w   Made from the finest, hardest mar&+gbl&+we, this &+gd&+wa&+ggg&+wer has been crafted to hold&n
@@ -1701,7 +1701,7 @@ white stone scythe~
 ~
 5 11 3 0 9 20 4202497 8193 0 0 0
 17 1 8 3 0 0 0 0
-3 11321 100
+3 11321 100 100
 E
 white stone scythe~
 &+w   Made from a w&+Wh&+wi&+Wt&+we s&+Wt&+wone, this sc&+Wyth&+we has been crafted with one purpose in&n
@@ -1723,7 +1723,7 @@ yew bow~
 ~
 6 6 3 0 7 0 33562624 8193 0 0 0
 1 1 0 1 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 yew bow~
 &+y   Carefully crafted over a long period of time, this &+wb&+yow has the resilience&n
@@ -1741,7 +1741,7 @@ ash bow~
 ~
 6 6 3 0 7 0 33562624 8193 0 0 0
 1 2 0 1 0 0 0 0
-1 6000 100
+1 6000 100 100
 E
 ash bow~
 &+w   Crafted from the woo&+Wd&+w of an as&+Wh t&+wree, this &+Wb&+wow is strong enough to be used&n
@@ -1758,7 +1758,7 @@ ash arrow~
 ~
 7 6 1 0 7 0 33562624 8193 0 0 0
 0 1 4 1 0 0 0 0
-0 150 100
+0 150 100 100
 E
 ash arrow~
 &+w   This a&+Wrr&+wow has been created from woo&+Wd&+w from an as&+Wh t&+wree.  It is straight,&n
@@ -1774,7 +1774,7 @@ ash sword~
 ~
 5 6 2 0 7 0 8192 8193 0 0 0
 5 1 3 3 0 0 0 0
-2 200 100
+2 200 100 100
 E
 ash sword~
 &+w   This swor&+Wd&+w is not as finely crafted as other weapons available in the town,&n
@@ -1790,7 +1790,7 @@ ash dagger~
 ~
 5 6 1 0 7 0 8192 8396801 0 0 0
 2 1 2 11 0 0 0 0
-1 150 100
+1 150 100 100
 E
 ash dagger~
 &+w   Woo&+Wd&+w from an as&+Wh t&+wree has been used to craft this da&+Wgg&+wer.  Though it is not&n
@@ -1806,7 +1806,7 @@ inlaid box~
 ~
 15 6 2 0 7 0 8192 8388609 0 0 0
 50 5 0 50 0 0 0 0
-0 150 100
+0 150 100 100
 E
 inlaid box~
 &+y   This sma&+rll&+y woo&+rd&+yen &+rb&+yox is has straps attached to it so that it may be worn&n
@@ -1822,7 +1822,7 @@ wood backpack bp~
 ~
 15 6 2 0 7 0 8192 4194305 0 0 0
 100 5 0 100 0 0 0 0
-3 200 100
+3 200 100 100
 E
 wood backpack bp~
 &+y   Wood sl&+rats have been a&+yttached to a wo&+rod frame using &+ywooden pegs to &+rcreate&n
@@ -1837,7 +1837,7 @@ carved tankard~
 ~
 17 6 1 0 7 0 8192 8404993 0 1 0
 10 10 1 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 carved tankard~
 &+y   A miniature mural has been carved around the sides of this woo&+rd&+yen &+rt&+yan&+rk&+yar&+rd.&n
@@ -1853,7 +1853,7 @@ ash staff~
 ~
 5 6 3 0 7 0 33562624 8193 0 0 0
 12 1 4 6 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 ash staff~
 &+w   This sta&+Wff&+w has been crafted from the woo&+Wd&+w of an as&+Wh t&+wree.  The woo&+Wd&+w itself&n
@@ -1872,7 +1872,7 @@ carved wood numchucks~
 ~
 5 6 3 0 7 0 8193 8396801 0 0 0
 10 1 5 7 0 0 0 0
-4 5500 100
+4 5500 100 100
 E
 carved wood numchucks~
 &+y   This set of numc&+rh&+yuc&+rk&+ys has an over&+rl&+ya&+rpp&+yin&+rg&+y sca&+rl&+ye &+rp&+ya&+rtt&+yern carved into it.  The&n
@@ -1892,7 +1892,7 @@ tail ring rawhide~
 ~
 9 12 1 0 10 40 33562624 33554433 0 0 0
 1 0 0 1 0 0 0 0
-0 200 100
+0 200 100 100
 E
 tail ring rawhide~
 &+y   Made from &+wb&+yrai&+wd&+ye&+wd&+y raw&+wh&+yi&+wd&+ye, this &+wt&+yai&+wl&+y rin&+wg&+y is able to stretch or shrink a
@@ -1907,7 +1907,7 @@ pressed rat iron~
 ~
 19 48 1 0 7 0 8192 8388609 0 0 0
 8 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pressed rat iron~
 &+r   A &+wra&+yt&+r has been caught and baked, then &+yp&+wresse&+yd&+r flat for easier carrying.  It&n
@@ -1923,7 +1923,7 @@ haunch meat iron~
 ~
 19 48 2 0 7 0 8192 8388609 0 0 0
 12 0 0 0 0 0 0 0
-1 3 100
+1 3 100 100
 E
 haunch meat iron~
 &+r   This looks to be the upper leg of some poor quadruped.  The bone is still&n
@@ -1938,7 +1938,7 @@ journey cake iron~
 ~
 19 48 1 0 7 0 8192 8388609 0 0 0
 24 0 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 journey cake iron~
 &+y   This journey cake is made from a mixture of grains, fruits, and liquid that&n
@@ -1954,7 +1954,7 @@ horse stomach waterskin~
 ~
 17 2 2 0 7 0 8192 9437185 0 0 0
 30 30 0 0 0 0 0 0
-5 10 100
+5 10 100 100
 E
 horse stomach waterskin~
 &+r   The large &+ws&+Lt&+womac&+Lh&+r of a &+Lh&+worse&+r has been removed and cleaned thoroughly so it&n
@@ -1969,7 +1969,7 @@ mithral piece~
 ~
 13 18 1 0 7 0 8192 1 2 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 mithral~
 &+r   This is just a lump of &+Cmetal,&+r and not even pure metal at that.  It seems to&n
@@ -1983,7 +1983,7 @@ mithral short sword shining~
 ~
 5 18 2 0 11 40 33562624 8193 0 0 0
 9 3 3 3 0 0 0 0
-1 32352 100 67108864 0 0 0
+1 32352 100 100 67108864 0 0 0
 E
 mithral short sword~
 &+C   This sword is wrought from mithral, one of the harder metals known.  It has&n
@@ -2002,7 +2002,7 @@ mithral longsword sword shining~
 ~
 5 18 2 0 11 40 33562624 8193 0 0 0
 5 3 4 3 0 0 0 0
-2 45430 100 4 0 0 0
+2 45430 100 100 4 0 0 0
 E
 mithral longsword sword~
 &+C   This longsword has been crafted out of mithral, one of the hardest metals&n
@@ -2021,7 +2021,7 @@ mithral two-handed sword shining~
 ~
 5 18 3 0 11 40 37756928 8193 0 0 0
 13 4 5 3 0 0 0 0
-3 75432 100 32 0 0 0
+3 75432 100 100 32 0 0 0
 E
 mithral two-handed sword~
 &+C   The two-handed sword was made by a master weaponsmith with the intent to&n
@@ -2041,7 +2041,7 @@ barbed dagger~
 ~
 5 16 1 0 10 30 8193 8396801 2 0 0
 2 3 3 11 0 0 0 0
-1 18000 100 0 0 2097152 0
+1 18000 100 100 0 0 2097152 0
 E
 barbed dagger~
 &+r   This &+Ld&+ra&+Lgg&+rer has the cold feel of death about it when held.  It was crafted&n
@@ -2061,7 +2061,7 @@ two-handed hammer~
 ~
 5 16 3 0 11 40 37756928 8193 2 0 0
 4 4 4 6 0 0 0 0
-8 24000 100
+8 24000 100 100
 E
 two-handed hammer~
 &+r   This huge &+Lh&+wammer&+r could easily crush the skull of even a hard-headed &+bogre,&n
@@ -2081,7 +2081,7 @@ braided pelt belt~
 ~
 9 12 2 0 10 30 33562624 2049 2 0 0
 7 0 0 1 0 0 0 0
-1 22000 100
+1 22000 100 100
 E
 braided pelt belt~
 &+y   This strong belt has been made by braiding together pelts from ferrets and&n
@@ -2099,7 +2099,7 @@ braided raccoon raccoonskin head headband~
 ~
 9 12 2 0 9 20 270337 17 2 0 0
 10 0 0 1 0 0 0 0
-1 22000 100
+1 22000 100 100
 E
 braided raccoon raccoonskin head headband~
 &+r   This &+Lh&+yea&+Ldb&+yan&+Ld&+r has been created by taking strips of raccoonskin with the fur&n
@@ -2120,7 +2120,7 @@ boots ferret ferretskin~
 ~
 9 12 2 0 10 30 33562624 65 2 0 0
 5 0 0 2 0 0 0 0
-3 22000 100
+3 22000 100 100
 E
 boots ferret ferretskin~
 &+L   F&+werre&+Lt h&+wi&+Ld&+wes&+r have been used to create this pair of sturdy waterproof &+Lb&+woo&+Lt&+ws.&n
@@ -2141,7 +2141,7 @@ meat pie iron~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 meat pie~
 &+y   This meat pie has been made from a red meat cut into small cubes.  A wide&n
@@ -2156,7 +2156,7 @@ apple pie iron~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 apple pie iron~
 &+y   This apple pie has been made from a variety of apples, none of which were&n
@@ -2171,7 +2171,7 @@ chocolate cake iron slice~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chocolate cake iron~
 &+y   This was a fudge chocolate layer cake.  It had a strawberry glaze between&n
@@ -2186,7 +2186,7 @@ eye ogre~
 ~
 11 2 1 0 12 60 33562625 131073 64 0 0
 0 0 0 0 0 0 0 0
-0 350000 100 33554472 0 0 0
+0 350000 100 100 33554472 0 0 0
 E
 eye ogre~
 &+r   With strands of flesh that contain nerves still attached, the &+bo&+Bg&+bre e&+By&+be&+r has&n
@@ -2208,7 +2208,7 @@ marble hammer~
 ~
 5 38 2 0 11 40 8192 8193 64 0 0
 4 2 8 6 0 0 0 0
-5 10000 100 0 128 0 0
+5 10000 100 100 0 128 0 0
 E
 marble hammer~
    &+wMa&+Gr&+gbl&+we&+r has been taken and shaped into a strong &+gh&+wamme&+Gr&+r by a stonemason who&n
@@ -2228,7 +2228,7 @@ leggings bone~
 ~
 9 10 3 0 10 30 8192 33 64 0 0
 10 0 0 4 0 0 0 0
-5 20000 100
+5 20000 100 100
 E
 leggings bone~
 &+r   These leggings have been carved from minotaur bones.  The individual bones&n
@@ -2250,7 +2250,7 @@ femur bone totem~
 ~
 34 10 2 0 11 40 270337 16385 64 0 0
 63 0 0 0 0 0 0 0
-1 60000 100
+1 60000 100 100
 E
 femur bone totem~
 &+r   Carved in the shape of a pile of animal heads, this femur came from a young&n
@@ -2273,7 +2273,7 @@ woven mithral tail ring~
 ~
 9 18 1 0 12 50 8192 33554433 2 0 0
 5 0 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 woven mithral tail ring~
 &+c   Mi&+Cth&+cra&+Cl&+r had been taken and formed into fine wires of varying diameters that&n
@@ -2294,7 +2294,7 @@ necklace tail tails feather feathers~
 ~
 9 12 2 0 10 30 33562624 5 64 0 0
 5 0 0 2 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 necklace tail tails feather feathers~
 &+r   Five strips of varied colors of leather have been braided together to form&n
@@ -2314,7 +2314,7 @@ green black oval earring~
 ~
 9 11 1 0 9 20 8192 524289 64 0 0
 5 0 0 1 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 green black oval earring~
 &+r   This small &+gova&+Ll&+g earrin&+Lg&+r has been made from two different bits of petrified&n
@@ -2334,7 +2334,7 @@ snuggly cuddlebunny toy spellbook bunny book~
 ~
 33 29 2 0 12 50 33562688 8404993 0 0 0
 0 0 350 0 0 0 0 0
-0 16000 100 4 0 0 0
+0 16000 100 100 4 0 0 0
 E
 snuggly cuddlebunny toy spellbook~
 &+r   This &+Ms&+Wn&+Mug&+Wg&+Mly cu&+Wdd&+Mle&+Wb&+Munny&+r is made from a soft fur, and stuffed with a &+Wwhite&n
@@ -2355,7 +2355,7 @@ wet mop~
 ~
 5 6 3 0 10 30 8192 8193 0 0 0
 12 2 6 7 0 0 0 0
-2 1500 100
+2 1500 100 100
 E
 wet mop~
 &+r   The &+gtroll&+r janitor is never without this &+wmo&+yp,&+r as it is his job to make sure&n
@@ -2377,7 +2377,7 @@ mithral chain barding~
 ~
 9 18 4 0 12 50 33562688 16777217 0 0 0
 25 0 0 4 0 0 0 0
-10 22000 100
+10 22000 100 100
 E
 mithral chain barding~
 &+r   Patterns of dark and light silver have been hammered into the chains of the&n
@@ -2398,7 +2398,7 @@ throne imposing~
 ~
 13 47 5 0 11 40 8 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 throne imposing~
 &+r   At first glance this huge &+mthrone&+r appears to have been made from a single&n
@@ -2424,7 +2424,7 @@ mithral dagger~
 ~
 5 18 1 0 10 30 8256 8396801 0 0 0
 2 2 3 11 0 0 0 0
-2 6332 100
+2 6332 100 100
 E
 mithral dagger~
 &+c   This &+Cd&+ca&+Cgg&+cer has been made from a fine mi&+Cth&+cra&+Cl&+c and will keep its sharp edges&n
@@ -2443,7 +2443,7 @@ mithral shortsword sword short~
 ~
 5 18 2 0 10 30 8256 8396801 0 0 0
 9 3 2 3 0 0 0 0
-3 5436 100
+3 5436 100 100
 E
 mithral shortsword sword short~
 &+c   This &+Cl&+con&+Cg&+cswor&+Cd&+c has been crafted from mi&+Cth&+cra&+Cl&+c so that it will hold its sharp&n
@@ -2462,7 +2462,7 @@ mithral longsword sword long~
 ~
 5 18 3 0 10 30 8256 8396801 0 0 0
 5 3 3 3 0 0 0 0
-4 9352 100
+4 9352 100 100
 E
 mithral longsword sword long~
 &+c   This &+Cl&+con&+Cg&+cswor&+Cd&+c has been crafted from mi&+Cth&+cra&+Cl&+c and will keep its sharp edge,&n
@@ -2481,7 +2481,7 @@ shining mithral dagger~
 ~
 5 18 1 0 11 40 8256 8396801 320 0 0
 2 3 3 11 0 0 0 0
-1 52432 100
+1 52432 100 100
 E
 shining mithral dagger~
 &+c   This &+Cd&+ca&+Cgg&+cer is made with expert craftsmanship.  It can be used to find any&n
@@ -2502,7 +2502,7 @@ tentacle~
 ~
 5 2 3 0 7 0 12352 8193 0 0 0
 14 2 5 2 0 0 0 0
-5 25000 100
+5 25000 100 100
 E
 tentacle~
 &+r   Somehow during the battle, one of the &+mt&+ren&+mt&+rac&+ml&+res came loose from the body of&n
@@ -2522,7 +2522,7 @@ shimmering blue breastplate breast~
 ~
 9 35 3 0 12 50 33562688 9 64 0 0
 30 0 0 4 0 0 0 0
-8 95000 100 0 0 2097152 0
+8 95000 100 100 0 0 2097152 0
 E
 shimmering blue breastplate breast~
 &+B   Th&+bis breastpla&+Bt&+be has be&+Ben cre&+bate&+Bd from sca&+bles f&+Brom a blue dr&+bagon.  T&+Bhis not&n
@@ -2542,7 +2542,7 @@ shortsword sword dragonclaw claw~
 ~
 5 35 2 0 12 50 33566720 8193 64 0 0
 9 3 3 3 0 0 0 0
-2 80000 100
+2 80000 100 100
 E
 shortsword sword dragonclaw claw~
 &+w   Th&+Lis&+w curved sword is &+Lcr&+wafted from a s&+Lin&+wgle dragon's c&+Lla&+ww.  It is &+Lna&+wturally&n
@@ -2562,7 +2562,7 @@ shimmering purple bracer~
 ~
 9 35 2 0 12 50 33566721 4097 64 0 0
 20 0 0 3 0 0 0 0
-1 75000 100 64 0 0 0
+1 75000 100 100 64 0 0 0
 E
 shimmering purple bracer~
 &+m   M&+Made f&+mrom a single sca&+Mle fro&+mm an ame&+Mthyst d&+mragon, th&+Mis b&+mracer has b&+Meen&+m made&n
@@ -2583,7 +2583,7 @@ shimmering green leggings~
 ~
 9 35 3 0 12 50 33566784 33 64 0 0
 20 0 0 4 0 0 0 0
-4 85000 100 0 0 64 0
+4 85000 100 100 0 0 64 0
 E
 shimmering green leggings~
 &+g   M&+Gade f&+grom the scale&+Gs of &+ga green dra&+Ggon, &+gthese leggin&+Ggs prot&+gect the &+Gwear&+ger&n
@@ -2604,7 +2604,7 @@ shimmering red femur~
 ~
 5 35 3 0 12 50 37761088 8193 64 0 0
 12 4 2 0 0 0 0 0
-3 105000 100 4 0 0 0
+3 105000 100 100 4 0 0 0
 E
 shimmering red femur~
 &+r   Ma&+Rde fr&+rom the f&+Remur &+rof a red dr&+Ragon, &+rthis weap&+Ron c&+ran be used t&+Ro pou&+rnd just&n
@@ -2624,7 +2624,7 @@ rusty platemail plate mail~
 ~
 9 16 3 0 7 0 0 9 0 0 0
 10 0 0 3 0 0 0 0
-10 5000 50
+10 5000 50 100
 E
 rusty platemail plate mail~
 &+c  This platemail has been left to rust.  It has some holes in it where the one&n
@@ -2644,7 +2644,7 @@ cracked longsword sword~
 ~
 5 16 2 0 7 0 0 8193 0 0 0
 5 1 4 3 0 0 0 0
-2 500 50
+2 500 50 100
 E
 cracked longsword sword~
 &+c  At one time, this sword was a very good one to have indeed.  But time, and&n
@@ -2664,7 +2664,7 @@ cracked dagger~
 ~
 18 16 2 0 7 0 8658944 16385 2 0 0
 0 1 0 0 0 0 0 0
-0 250 50
+0 250 50 100
 E
 cracked dagger~
 &+r   It is easy to understand why this &+cdagger&+r has been just tossed aside.  The&n
@@ -2681,7 +2681,7 @@ sword two-handed dark darkly glow glowing~
 ~
 5 16 4 0 11 40 37756928 8193 64 0 0
 13 4 4 3 0 0 0 0
-5 22500 100
+5 22500 100 100
 E
 sword two-handed dark darkly glow glowing~
 &+r   This t&+cwo-&+rh&+can&+rd&+ce&+rd &+cswor&+rd seems to emanate a dark glow from deep inside of it.&n
@@ -2701,7 +2701,7 @@ ferrethide hide ring~
 ~
 9 12 1 0 10 30 270337 3 64 0 0
 15 0 0 1 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 ferrethide hide ring~
 &+r   Four narrow strips of &+wf&+yerre&+wth&+yi&+wd&+ye&+r have been braided into a tight &+yrin&+wg.&+r  The&n
@@ -2721,7 +2721,7 @@ pelt loincloth~
 ~
 9 12 3 0 10 30 33562624 2049 64 0 0
 15 0 0 3 0 0 0 0
-3 22500 100
+3 22500 100 100
 E
 pelt loincloth~
 &+r   Made from the &+wp&+ye&+wlt&+r of a &+wb&+ya&+wdg&+yer,&+r this &+wl&+yoinc&+wl&+yo&+wth&+r still retains the soft fur.&n
@@ -2740,7 +2740,7 @@ etched mithral bracer~
 ~
 9 18 2 0 11 40 33562624 4097 64 0 0
 10 0 0 4 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 etched mithral bracer~
 &+c   &+CA w&+cide variety of we&+Capo&+cns have been e&+Ctch&+ced upon this br&+Cac&+cer.  Eac&+Ch t&+cype of&n
@@ -2760,7 +2760,7 @@ braided plant necklace~
 ~
 9 43 2 0 11 40 33562624 5 64 0 0
 5 0 0 1 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 braided plant necklace~
 &+r    Several types of &+Gv&+gines&+r have been &+Gb&+grai&+Gd&+ge&+Gd&+r together to form an interesting&n
@@ -2782,7 +2782,7 @@ helm transparent~
 ~
 9 27 2 0 11 40 33562624 17 64 0 0
 10 0 0 4 0 0 0 0
-2 22500 100
+2 22500 100 100
 E
 helm transparent~
 &+r   Though large enough to protect even the head of a giant, this helm has been&n
@@ -2801,7 +2801,7 @@ sunbeam flute~
 ~
 32 1 2 0 12 50 100933632 8404993 64 0 0
 184 1 1 1 0 0 0 0
-0 22500 100 32 0 0 0
+0 22500 100 100 32 0 0 0
 E
 sunbeam flute~
 &+r   This &+Wfl&+Yu&+Wt&+Ye&+r appears to be a slightly solidified piece of a &+Ysun&+Wb&+Yeam.&+r  It has&n
@@ -2822,7 +2822,7 @@ belt braided bearskin~
 ~
 9 12 2 0 12 50 33562624 2049 64 0 0
 10 0 0 3 0 0 0 0
-1 22500 100
+1 22500 100 100
 E
 belt braided bearskin~
 &+r   Strips of pelts from &+ybrown&+r and &+wgrizzly b&+years&+r have been taken and &+wb&+yrai&+wd&+ye&+wd&n
@@ -2842,7 +2842,7 @@ oval tattered flesh~
 ~
 9 2 0 0 11 40 33824768 2097153 64 0 0
 5 0 0 1 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 oval tattered flesh~
 &+r   This small ova&+ml&+r of &+mfl&+re&+msh&+r has been shredded around the edges.  The reason it&n
@@ -2863,7 +2863,7 @@ necklace swirling feathers~
 ~
 11 50 2 0 11 40 100671488 5 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 67108864 0 0 0
+0 22500 100 100 67108864 0 0 0
 E
 necklace swirling feathers~
 &+C   Fea&+ythe&+Crs constant&+yly s&+Cwirl in a spi&+yral&+C pattern tha&+yt ro&+Cughly outl&+yine&+Cs an oval&n
@@ -2884,7 +2884,7 @@ ankylosaur tail club~
 ~
 5 11 2 0 11 40 8193 8396801 64 0 0
 10 3 4 0 0 0 0 0
-3 22500 100 4 0 0 0
+3 22500 100 100 4 0 0 0
 E
 ankylosaur tail club~
 &+b   Someone has taken the end of the tail of an an&+Bkyl&+bosaur and crafted a c&+Bl&+bu&+Bb&n
@@ -2903,7 +2903,7 @@ etched mithral faceguard mask~
 ~
 11 18 2 0 11 40 8193 262145 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 0 0 2097152 0
+0 22500 100 100 0 0 2097152 0
 E
 etched mithral faceguard~
 &+r   This &+cmi&+Cth&+cra&+Cl f&+caces&+Ch&+cie&+Cld&+r has been etched to give the wearer a fearsome look&n
@@ -2923,7 +2923,7 @@ carved turquoise stud earring~
 ~
 11 26 0 0 11 40 270337 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 0 0 64 0
+0 22500 100 100 0 0 64 0
 E
 carved turquoise stud earring~
 &+r   A small piece of &+wt&+cur&+Lq&+cuoise&+r has been taken and carved into the shape of a&n
@@ -2943,7 +2943,7 @@ calcified pachycephalosaurus skull dinosaur~
 ~
 9 11 2 0 11 40 270337 17 64 0 0
 10 0 0 5 0 0 0 0
-5 22500 100
+5 22500 100 100
 E
 calcified pachycephalosaurus skull dinosaur~
 &+r   The &+ws&+Wk&+wu&+Wll&+r of the &+wpac&+Why&+wce&+Wph&+wa&+Wl&+wosaurus&+r is usually about ten inches thick, but&n
@@ -2965,7 +2965,7 @@ translucent crystal hemisphere mask~
 ~
 11 27 2 0 12 50 270337 262145 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 4 0 0 0
+0 22500 100 100 4 0 0 0
 E
 translucent crystal hemisphere mask~
 &+r   This &+Mh&+memis&+Mph&+mere&+r has been carved from a single diamond that has a &+Mp&+min&+Mk t&+min&+Mt&n
@@ -2986,7 +2986,7 @@ braided elfskin headband~
 ~
 11 12 2 0 11 40 33562624 17 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 33554432 0 0 0
+0 22500 100 100 33554432 0 0 0
 E
 braided elfskin headband~
 &+r   This &+ch&+mea&+cdb&+man&+cd&+r has been crafted from the skin of both &+mdrow&+r and &+cgrey &+me&+cl&+mves.&n
@@ -3008,7 +3008,7 @@ panther pantherhide hide quiver~
 ~
 30 12 2 0 11 40 270337 1048577 64 0 0
 160 1 1 50 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 panther pantherhide hide quiver~
 &+r   This unusual &+wq&+yuiver&+r has been fashioned from the &+wh&+yi&+wd&+ye&+r of a &+wp&+yan&+wth&+yer&+r that was&n
@@ -3031,7 +3031,7 @@ carved jade ring~
 ~
 9 26 1 0 11 40 8193 3 64 0 0
 10 0 0 1 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 carved jade ring~
 &+r   This &+Gj&+ga&+Gd&+ge &+Gr&+gin&+Gg&+r has been &+gca&+Gr&+gve&+Gd&+r into the likeness of a coiled snake.  The&n
@@ -3050,7 +3050,7 @@ emerald lizard earring~
 ~
 11 32 1 0 11 40 33562624 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 0 8192 0 0
+0 22500 100 100 0 8192 0 0
 E
 emerald lizard earring~
 &+r   An &+geme&+Gr&+ga&+Gld&+r has carefully been crafted into the shape of a jointed &+Gl&+giza&+Grd.&n
@@ -3070,7 +3070,7 @@ woven mithral choker~
 ~
 9 18 2 0 11 40 33562624 5 64 0 0
 10 0 0 3 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 woven mithral choker~
 &+c   F&+Cine&+c stran&+Cds of&+c mithral ha&+Cve&+c be&+Cen w&+coven into &+Ca c&+choker tha&+Ct is&+c worn &+Cfo&+cr the&n
@@ -3089,7 +3089,7 @@ acorn cap~
 ~
 9 6 2 0 11 40 33562624 17 64 0 0
 10 0 0 3 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 acorn cap~
 &+r   This &+gc&+yap&+r is made from the wood from an oak and a willow, worked together&n
@@ -3110,7 +3110,7 @@ collar triceratops frill~
 ~
 9 10 3 0 11 40 33562624 5 64 0 0
 10 0 0 4 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 collar triceratops frill~
 &+r   A high, hard collar has been created using the &+yf&+cri&+yll&+r from the head of a&n
@@ -3130,7 +3130,7 @@ bracelet woven wolverine hide~
 ~
 9 12 2 0 11 40 33562624 4097 64 0 0
 10 0 0 2 0 0 0 0
-0 22500 100
+0 22500 100 100
 E
 bracelet woven wolverine hide~
 &+r   Strips of &+ywo&+Ll&+yverine&+Lh&+yi&+Ld&+ye&+r have been taken and woven together to form a wide&n
@@ -3151,7 +3151,7 @@ braided rawhide drum~
 ~
 32 12 2 0 10 30 33562624 8404993 0 0 0
 188 1 0 1 0 0 0 0
-2 1712 100
+2 1712 100 100
 E
 braided rawhide drum~
 &+r   Th&+mis &+rsma&+yll&+r, handheld drum&+m has&+r woven &+yrawhi&+rde stre&+mtche&+rd tight acro&+yss th&+re top.&n
@@ -3171,7 +3171,7 @@ copper flute~
 ~
 32 21 2 0 10 30 33562624 16385 0 0 0
 184 1 1 1 0 0 0 0
-1 2015 100
+1 2015 100 100
 E
 copper flute~
 &+r   This fl&+yu&+rt&+ye&+r is made from beaten copper and it still bears the marks of the&n
@@ -3192,7 +3192,7 @@ inlaid pearl mandolin~
 ~
 32 6 2 0 10 30 33562624 16385 0 0 0
 186 1 1 1 0 0 0 0
-1 1452 100
+1 1452 100 100
 E
 inlaid pearl mandolin~
 &+r   This small &+yman&+wd&+yo&+wl&+yin&+r has been &+yin&+wl&+yai&+wd&+r with worked &+Wp&+wear&+Wl&+r shaped into feathers&n
@@ -3212,7 +3212,7 @@ shaped splinter wood lockpick pick~
 ~
 31 6 0 0 9 20 33562624 16385 0 0 0
 25 1 0 0 0 0 0 0
-0 6 100
+0 6 100 100
 E
 shaped splinter wood lockpick pick~
 &+r   This long, thin piece of &+ywood&+r has been shaped to make it easier to pick any&n
@@ -3227,7 +3227,7 @@ marble shard lockpick pick~
 ~
 31 38 0 0 9 20 33562624 0 0 0 0
 30 1 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 marble shard lockpick pick~
 &+r   The stonemason has crafted this slim shard into an excellent tool to pick&n
@@ -3243,7 +3243,7 @@ sow ear sack~
 ~
 15 2 2 0 11 40 33824768 9453569 0 0 0
 120 1 0 120 0 0 0 0
-1 565 100
+1 565 100 100
 E
 sow ear sack~
 &+r   With a great deal of irony, a master craftsman has taken this &+Ws&+Mow's ea&+Wr&+r and&n
@@ -3261,7 +3261,7 @@ horn parasaurolophus~
 ~
 32 10 2 0 10 30 33562624 8404993 0 0 0
 189 1 1 1 0 0 0 0
-2 1522 100
+2 1522 100 100
 E
 horn parasaurolophus~
 &+r   The long top crest of a &+mp&+Marasauro&+ml&+Mo&+mph&+Mus&+r has been taken and cleaned out.  It&n
@@ -3281,7 +3281,7 @@ carved pearl lyre~
 ~
 32 52 2 0 11 40 33562624 8404993 0 0 0
 185 1 1 1 0 0 0 0
-1 1536 100
+1 1536 100 100
 E
 carved pearl lyre~
 &+r   Extremely large fresh water &+wp&+Wear&+wl&+Ws&+r have been used to create the frame for&n
@@ -3301,7 +3301,7 @@ inlaid harp~
 ~
 32 6 2 0 11 40 33562624 8404993 0 0 0
 187 1 1 1 0 0 0 0
-1 1136 100
+1 1136 100 100
 E
 inlaid harp~
 &+r   Hard oak was used to form the frame for this harp, and the craftsman inlaid&n
@@ -3320,7 +3320,7 @@ bone sliver lockpick pick~
 ~
 31 10 0 0 9 20 8192 8404993 0 0 0
 25 1 0 0 0 0 0 0
-0 7 100
+0 7 100 100
 E
 bone sliver lockpick pick~
 &+r   This long &+Ws&+wl&+Wiver&+r of &+wb&+Wone&+r has been crafted into a clever lockpick.  Though&n
@@ -3336,7 +3336,7 @@ sigil badge~
 ~
 11 10 1 0 11 40 270336 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 1015 100
+0 1015 100 100
 E
 sigil badge~
 &+r   Carved from a dark brown bone, this si&+Lg&+ri&+bl&+r is the symbol of the &+blord&+r of the&n
@@ -3359,7 +3359,7 @@ mask butterfly~
 ~
 9 50 2 0 12 50 8193 131073 64 0 0
 5 0 0 2 0 0 0 0
-0 15530 100
+0 15530 100 100
 E
 mask butterfly~
 &+r   This small &+bmas&+Lk&+r covers the area around the eyes, making it seem as though&n
@@ -3382,7 +3382,7 @@ eye key~
 ~
 18 11 1 0 7 0 41955336 16385 64 0 0
 0 10 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 eye key~
 &+r   One of the small e&+my&+res on the bulk of the &+mt&+ren&+mt&+rac&+ml&+rer instantly petrified upon&n
@@ -3398,7 +3398,7 @@ belt woven dreams~
 ~
 11 1 3 0 12 0 33562624 2049 64 0 0
 0 0 0 0 0 0 0 0
-0 15888 100 32 0 0 0
+0 15888 100 100 32 0 0 0
 E
 belt woven dreams~
 ~

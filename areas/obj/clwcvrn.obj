@@ -5,7 +5,7 @@ shard crystal~
 ~
 18 8 1 0 7 0 8396801 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 shard crystal~
 This thin shard of crystal looks almost like a key of some sort.  Strange
@@ -19,7 +19,7 @@ shard amber crystal~
 ~
 18 8 1 0 15 0 8466432 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 shard amber crystal~
 This amber shard of crystal is squat and serrated.  It would almost look
@@ -34,7 +34,7 @@ key crystal~
 ~
 18 8 1 0 7 0 8519680 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key crystal~
 This crystal key is extremely intricate, and would be almost impossible for
@@ -48,7 +48,7 @@ corpse umber hulk~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse umber hulk~
 The umber hulk fought a great battle, with something, but it suffered a number
@@ -66,7 +66,7 @@ emerald~
 ~
 8 32 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 emerald~
 This emerald is worth a fair amount of money.  Even though it is small and
@@ -80,7 +80,7 @@ crystal~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 crystal~
 This crystal has a soft organic nature that implies it isn't really solid
@@ -95,7 +95,7 @@ moss~
 ~
 13 43 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 moss~
 This thick moss exudes a thin liquid that seems to help heal the wounds
@@ -108,7 +108,7 @@ potion moss mossy~
 ~
 10 40 3 0 7 0 0 16385 0 0 0
 20 1 3 15 0 0 0 0
-1 2000 100
+1 2000 100 100
 #80708
 crystal blue~
 &+ba large, flat, blue cr&+Bys&+Wtal&N~
@@ -116,7 +116,7 @@ crystal blue~
 ~
 8 8 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 200 100
+3 200 100 100
 E
 crystal blue~
 If one know a way to easily cut and form this crystal without breaking it,
@@ -129,7 +129,7 @@ shield crystal~
 ~
 37 8 8 0 10 0 0 513 0 4165304132 0
 2 1 2 100 3 0 0 0
-3 350 100
+3 350 100 100
 E
 crystal shield~
 This shield is made of thin crystal.  It is good protection against most
@@ -142,7 +142,7 @@ crystal red~
 ~
 8 8 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 crystal red~
 This tiny, jagged, red crystal looks a bit small for anything other than
@@ -156,7 +156,7 @@ earring crystal red~
 ~
 11 8 1 0 8 0 8192 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 earring crystal red~
 There is an inner magic to this tiny earring that appears to grow more
@@ -173,7 +173,7 @@ crystal violet~
 ~
 8 8 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 crystal violet~
 This long crystal glows with an inner, magical light.  Though hard as a
@@ -187,7 +187,7 @@ An unseen pile of rubble.~
 ~
 15 15 3 0 7 0 2 0 0 0 0
 15 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #80714
 crystal crystals amber~
 &+ytiny amber crystals&N~
@@ -195,7 +195,7 @@ crystal crystals amber~
 ~
 13 8 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crystal crystals amber~
 These tiny crystals have been set out in neat, organized rows.  It is quite
@@ -210,7 +210,7 @@ collar crystal~
 ~
 9 8 8 0 9 0 0 5 0 0 0
 4 2 1 3 0 0 0 0
-1 500 100
+1 500 100 100
 E
 collar crystal~
 This single violet crystal has been magically bent and joined to create a
@@ -228,7 +228,7 @@ crystal green~
 ~
 8 8 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 200 100
+2 200 100 100
 E
 crystal green~
 This long crystal is suprisingly strong and firm.  It doesn't even seem to
@@ -242,7 +242,7 @@ sword crystal~
 ~
 5 8 3 0 9 0 1024 8193 64 96071707 0
 5 1 6 3 0 0 0 0
-4 500 100
+4 500 100 100
 E
 sword crystal~
 This sword has been made from a single, long green crystal.  The crystal
@@ -260,7 +260,7 @@ javelin crystal~
 ~
 5 8 3 0 9 0 4194320 8193 64 0 0
 2 1 8 11 0 0 0 0
-2 500 100
+2 500 100 100
 E
 javelin crystal~
 This thin shaft of green crystal has been honed to an extremely sharp point
@@ -276,7 +276,7 @@ mandolin instrument~
 ~
 32 6 3 0 7 0 0 16385 0 0 0
 186 10 1 1 0 0 0 0
-3 20 100
+3 20 100 100
 E
 mandolin~
 This old instrument has suffered greatly over the years.  Chipped and scarred,
@@ -291,7 +291,7 @@ pendant obsidian~
 ~
 9 36 8 0 7 0 0 5 64 0 0
 1 2 2 1 0 0 0 0
-1 250 100
+1 250 100 100
 E
 pendant obsidian~
 This odd pendant has been carved from a single piece of obsidian and affixed
@@ -308,7 +308,7 @@ bracelet crystal~
 ~
 9 8 3 0 8 0 4096 4097 0 0 0
 4 11 24 3 0 0 0 0
-2 100 100
+2 100 100 100
 E
 bracelet crystal~
 The smooth crystal is violet in color, yet still almost translucent.  Fine
@@ -322,7 +322,7 @@ plate breastplate crystal~
 ~
 9 8 8 0 8 0 0 9 0 4173708868 0
 12 3 134 4 0 0 0 0
-3 350 100
+3 350 100 100
 E
 plate breastplate crystal~
 Though solid armor for most instances, the crystal is brittle and not likely
@@ -339,7 +339,7 @@ helm crystal~
 ~
 9 8 8 0 8 0 0 17 0 4165287492 0
 3 4 1 3 0 0 0 0
-3 350 100
+3 350 100 100
 E
 helm crystal~
 This helm has been made from extremely thick layers of crystal that have
@@ -356,7 +356,7 @@ sword crystal~
 ~
 5 8 3 0 8 0 1024 8193 0 96071707 0
 5 1 8 3 0 0 0 0
-20 350 100
+20 350 100 100
 E
 sword crystal~
 A long, wide piece of amber crystal has been sharpened to a fine edge
@@ -372,7 +372,7 @@ ring crystal red~
 ~
 11 8 1 0 8 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 ring crystal red~
 This perfectly smooth red crystal has been formed into an attactive
@@ -390,7 +390,7 @@ book golems golem~
 ~
 13 28 3 0 13 0 8454144 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 500 100
+3 500 100 100
 E
 book golem golems~
 The thick, carefully bound book appears to be an extremely detailed,
@@ -406,7 +406,7 @@ robes purple~
 ~
 11 3 3 0 8 0 8192 9 0 0 0
 0 0 0 0 0 0 0 0
-2 500 100
+2 500 100 100
 E
 robes purple~
 Soft, silky fabric has been folded over several times to create a thick,
@@ -423,7 +423,7 @@ mask rainbow crystal~
 ~
 9 8 3 0 8 0 0 262145 0 0 0
 4 13 1 2 0 0 0 0
-1 500 100
+1 500 100 100
 E
 mask rainbow crystal~
 Multi-colored crystals have been melded together to create a rainbow of
@@ -442,7 +442,7 @@ A pile of trash sits on the cavern floor.~
 ~
 13 8 1 0 8 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 trash heap~
 Rotting bolts of cloth and other oddities have been piled here, once
@@ -455,7 +455,7 @@ pile crystal shards jagged~
 ~
 15 8 1 0 8 0 8192 524289 0 0 0
 15 0 0 15 0 0 0 0
-0 500 100
+0 500 100 100
 E
 pile crystal shards jagged~
 Small bits of shattered crystal have gathered here, left by the
@@ -469,7 +469,7 @@ pile crystal shards jagged~
 ~
 11 8 1 0 8 0 8192 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 pile crystal shards jagged~
 Small bits of shattered crystal have gathered here, left by the
@@ -483,7 +483,7 @@ pile crystal shards jagged~
 ~
 11 8 1 0 8 0 8192 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 pile crystal shards jagged~
 Small bits of shattered crystal have gathered here, left by the
@@ -497,7 +497,7 @@ crystal rainbow key~
 ~
 8 8 1 0 8 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 crystal rainbow key~
 This odd, twisted length of crystal is about the length of a human's
@@ -512,7 +512,7 @@ crystal rainbow shards~
 ~
 13 8 1 0 8 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 crystal rainbow shards~
 The rainbow colors of the crystal shards are clearly not natural, the
@@ -527,7 +527,7 @@ eyepatch crystal red~
 ~
 9 8 1 0 8 0 0 131073 0 0 0
 1 12 4 2 0 0 0 0
-0 500 100
+0 500 100 100
 E
 eyepatch crystal red~
 The jagged eyepatch is blood red, with the exception of a vein of white
@@ -546,7 +546,7 @@ armplates plates crystal~
 ~
 9 8 8 0 10 0 1024 257 0 121258299 0
 5 8 1 2 0 0 0 0
-3 350 100
+3 350 100 100
 E
 armplates plates crystal~
 Thick and solid, these armplates provide solid protection.  Long term
@@ -563,7 +563,7 @@ legplates plates crystal~
 ~
 9 8 8 0 10 0 1024 33 0 87572507 0
 6 5 14 3 0 0 0 0
-3 350 100
+3 350 100 100
 E
 legplates plates crystal~
 The legplates are solid armor, though likely to shatter, but are a bit
@@ -578,7 +578,7 @@ sapphire tiny~
 ~
 8 33 1 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 3500 100
+0 3500 100 100
 E
 sapphire tiny~
 This tiny stone has several small flaws but would still bring a nice price.
@@ -590,7 +590,7 @@ sapphire gem~
 ~
 8 33 1 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 sapphire gem~
 Though the chip does detract from its value, the gem is still worth a fair
@@ -603,7 +603,7 @@ ruby gem~
 ~
 8 31 1 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 4500 100
+0 4500 100 100
 E
 ruby gem~
 Though quite small, its even facets and color will bring a very nice price.
@@ -615,7 +615,7 @@ crystal white~
 ~
 8 8 2 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 crystal white~
 The chrysloin seem to think that pure white crystals such as this one are
@@ -628,7 +628,7 @@ crystal~
 ~
 5 8 3 0 7 0 5120 8193 0 96071707 0
 2 2 5 11 0 0 0 0
-0 200 100
+0 200 100 100
 E
 crystal~
 Someone has worked on this crystal to make one end of it rounded and smooth
@@ -647,7 +647,7 @@ desk~
 ~
 15 8 3 0 7 0 0 0 0 0 0
 300 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk~
 The crystal of the walls of the tower has been melded into a somewhat plain
@@ -662,7 +662,7 @@ Some no-show shelves stand here.~
 ~
 15 15 3 0 7 0 2 0 0 0 0
 15 0 0 15 0 0 0 0
-0 0 100
+0 0 100 100
 #80745
 vial crystal~
 &+Wa crystal vial&N~
@@ -670,7 +670,7 @@ vial crystal~
 ~
 10 8 1 0 7 0 4096 16385 0 0 0
 20 15 14 39 5 0 0 0
-0 3500 100
+0 3500 100 100
 E
 vial crystal~
 The bubbling liquid inside the vial looks potent, and dangerous.  It would
@@ -683,7 +683,7 @@ pool water~
 ~
 17 40 2 0 7 0 0 0 0 0 0
 -1 -1 28 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
 The water swirls in tight eddies as it sinks through a small hole in the
@@ -698,7 +698,7 @@ crystal burning hot red-hot~
 ~
 29 8 3 0 7 0 1 0 0 0 0
 270 80773 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crystal burning hot red-hot~
 The crystal glows with a bizarre red color, a color that indicates its
@@ -715,7 +715,7 @@ ring silver band~
 ~
 9 22 1 0 7 0 4096 3 0 0 0
 1 1 0 1 0 0 0 0
-0 3500 100
+0 3500 100 100
 E
 ring silver band~
 This simple silver band has been endowed with a faint magic, perhaps one
@@ -733,7 +733,7 @@ shards remains crystal~
 ~
 15 8 2 0 7 0 0 0 0 0 0
 20 0 0 20 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shards remains crystal~
 The shattered remains of a blue crystal golem lie here.  Whether a failed
@@ -747,7 +747,7 @@ table stone~
 ~
 13 11 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table stone~
 Heavy stone has been used to create a sturdy table capable of withstanding
@@ -762,7 +762,7 @@ A book lies on the floor, decaying in the wet air.~
 ~
 13 28 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 The book was clearly not very important to its previous owner.  It was
@@ -777,7 +777,7 @@ carpet~
 ~
 13 3 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 carpet~
 Intricate drow designs cover the length of this massive carpet, a carpet that
@@ -792,7 +792,7 @@ throne crystal~
 ~
 13 8 4 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 throne crystal~
 The large throne has been made entirely of different shades of blue crystal.
@@ -807,7 +807,7 @@ water crystal shard~
 ~
 17 8 3 0 9 0 77832 16385 0 0 0
 20 20 0 0 0 0 0 0
--2 1 100
+-2 1 100 100
 E
 water crystal shard~
 This bizzare crystal appears to be as much water as it is stone.  It is

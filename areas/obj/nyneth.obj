@@ -5,7 +5,7 @@ key nyneth ny'neth~
 ~
 18 15 0 0 5 0 8388616 1 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22901
 key wyrm~
 &+La black key shaped like a &+ggreen wyrm&n~
@@ -13,7 +13,7 @@ key wyrm~
 ~
 18 15 3 0 5 0 8916992 1 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22902
 portal~
 &+Ca glowing portal.&n~
@@ -21,7 +21,7 @@ portal~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 22930 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22903
 portal~
 &+Ca glowing portal.&n~
@@ -29,7 +29,7 @@ portal~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 23000 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22904
 portal~
 &+Ca glowing portal.&n~
@@ -37,7 +37,7 @@ portal~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 38700 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22930
 key straw~
 &+ya straw key&n~
@@ -45,7 +45,7 @@ key straw~
 ~
 18 15 3 1 7 100 8413184 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #22931
 key lightning~
 &+La &+Blightning &+Lkey&n~
@@ -53,7 +53,7 @@ key lightning~
 ~
 18 15 3 1 7 100 8413192 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #22932
 razor shard volcanic stone~
 &+ya shard of &+rvolcanic &+Lstone&n~
@@ -61,7 +61,7 @@ razor shard volcanic stone~
 ~
 5 11 3 1 10 0 8 8193 0 0 0
 2 2 7 11 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 3
 A
@@ -73,7 +73,7 @@ lightningstone hammer stone~
 ~
 5 11 3 5 12 0 0 8193 64 0 0
 4 4 4 6 0 0 0 0
-5 0 100
+5 0 100 100
 A
 18 2
 A
@@ -85,7 +85,7 @@ reed spear flimsy~
 ~
 5 42 3 3 10 0 8192 8193 64 0 0
 9 3 4 11 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 4
 A
@@ -97,7 +97,7 @@ smooth boulder lava rock~
 ~
 5 11 3 10 5 0 524296 8192 0 0 0
 10 5 20 7 0 0 0 0
-10 0 100
+10 0 100 100
 A
 18 3
 A
@@ -109,7 +109,7 @@ potion dust dusty~
 ~
 10 7 3 1 9 0 0 1 64 0 0
 50 36 -1 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #22937
 elixir vial potion hunting sizzling~
 &+Lelixir of &+rhunting&n~
@@ -117,7 +117,7 @@ elixir vial potion hunting sizzling~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 66 66 66 0 0 0 0
-1 0 100
+1 0 100 100
 #22938
 lightning bottle potion~
 &+Blightning &+Lin a &+cbottle&n~
@@ -125,7 +125,7 @@ lightning bottle potion~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 -1 41 466 0 0 0 0
-1 0 100
+1 0 100 100
 #22939
 vial potion vampiric rage~
 &+La vial of &+rvampiric &+Rrage&n~
@@ -133,7 +133,7 @@ vial potion vampiric rage~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 134 -1 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #22940
 jar rotting flesh potion~
 &+La jar of &+Grotting &+Rflesh&n~
@@ -141,7 +141,7 @@ jar rotting flesh potion~
 ~
 10 15 3 1 7 0 0 1 64 0 0
 60 97 131 318 0 0 0 0
-1 0 100
+1 0 100 100
 #22941
 potion translucent elixir~
 &+La &+Wtrans&+clucent &+Lelixir&n~
@@ -149,7 +149,7 @@ potion translucent elixir~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 19 84 189 0 0 0 0
-1 0 100
+1 0 100 100
 #22942
 elixir potion arcane resistance shimmering~
 &+gan elixir of &+marcane&+g resistance&n~
@@ -157,7 +157,7 @@ elixir potion arcane resistance shimmering~
 ~
 10 15 3 0 7 0 8192 1 64 0 0
 60 144 -1 -1 0 0 0 0
-0 0 100
+0 0 100 100
 #22943
 vial depths dark green potion~
 &+ga vial of the &+Bdepths&n~
@@ -165,7 +165,7 @@ vial depths dark green potion~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 40 56 -1 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #22944
 potion liquid fire~
 &+ra potion of liquid &+Rfire&n~
@@ -173,7 +173,7 @@ potion liquid fire~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 233 96 108 0 0 0 0
-1 0 100
+1 0 100 100
 #22945
 mental potion blue liquid toughness~
 &+La potion of &+bmental &+Ltoughness&n~
@@ -181,7 +181,7 @@ mental potion blue liquid toughness~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 260 163 157 0 0 0 0
-1 0 100
+1 0 100 100
 #22946
 thin piece straw~
 &+ya thin piece of &+Ystraw&n~
@@ -189,7 +189,7 @@ thin piece straw~
 ~
 3 43 3 1 7 50 9216 16385 64 46370724 0
 56 29 29 261 0 0 0 0
-1 0 100
+1 0 100 100
 #22947
 rod electrical manipulation~
 &+ba &+Brod &+bof &+Belectrical &+bmanipulation&n~
@@ -197,7 +197,7 @@ rod electrical manipulation~
 ~
 4 16 3 1 13 50 1 16385 64 0 0
 56 5 5 62 0 0 0 0
-2 0 100
+2 0 100 100
 A
 24 -5
 A
@@ -209,7 +209,7 @@ wand lighting speed blue white~
 ~
 3 19 3 1 14 70 1 16385 64 0 0
 60 15 15 201 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 25
 #22949
@@ -219,7 +219,7 @@ staff dark alliance black~
 ~
 4 6 3 2 13 40 0 16385 64 0 0
 60 5 5 318 0 0 0 0
-3 0 100
+3 0 100 100
 A
 13 20
 A
@@ -231,7 +231,7 @@ staff watery command~
 ~
 4 40 3 2 10 60 9216 16385 64 4198144 0
 60 19 19 85 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 20
 A
@@ -243,7 +243,7 @@ chunk molten magma~
 ~
 4 11 3 1 7 20 1 16385 64 0 0
 60 2 2 108 0 0 0 0
-3 0 100
+3 0 100 100
 #22952
 figurine elemental command _noquest_~
 &+La &+mfigurine &+Lof &+belemental &+Lcommand&n~
@@ -251,7 +251,7 @@ figurine elemental command _noquest_~
 ~
 4 11 3 1 15 0 0 16385 64 0 0
 60 15 15 78 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 10
 A
@@ -263,7 +263,7 @@ dusty rod wand~
 ~
 4 11 3 1 7 0 1025 16385 64 46370724 0
 60 2 2 217 0 0 0 0
-2 23 100
+2 23 100 100
 #22954
 wand demonic hatred~
 &+La wand of &+rdemonic hatred&n~
@@ -271,7 +271,7 @@ wand demonic hatred~
 ~
 3 19 3 2 15 0 1025 16385 64 46370724 0
 60 6 6 308 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 25
 A
@@ -283,7 +283,7 @@ claw ravelloth~
 ~
 3 46 3 2 14 50 1024 16385 64 46370724 0
 60 6 6 271 0 0 0 0
-3 0 100
+3 0 100 100
 A
 13 15
 A
@@ -295,7 +295,7 @@ golden scabbard emeralds rubies~
 ~
 30 24 3 3 14 70 1 9453569 64 0 0
 90 1 1 0 0 0 0 0
-3 0 100
+3 0 100 100
 A
 2 8
 A
@@ -307,7 +307,7 @@ ram horned helm demonic~
 ~
 9 10 3 5 15 86 33554432 17 64 0 0
 5 0 0 1 0 0 0 0
-4 0 100
+4 0 100 100
 A
 19 4
 A
@@ -319,7 +319,7 @@ winged boots angelic _noquest_~
 ~
 9 50 3 2 15 76 8192 65 64 0 0
 5 0 0 1 0 0 0 0
--10 0 100 134217728 0 0 0
+-10 0 100 100 134217728 0 0 0
 A
 13 20
 A
@@ -331,7 +331,7 @@ robe shimmering lighting titan magi _noquest_~
 ~
 9 1 3 3 14 100 66560 16393 64 12619268 0
 10 0 0 1 0 0 0 0
-2 0 100 0 128 0 0
+2 0 100 100 0 128 0 0
 A
 13 35
 A
@@ -343,7 +343,7 @@ lesser cloak wizardry~
 ~
 9 3 3 3 13 62 1 1025 64 0 0
 8 0 0 1 0 0 0 0
-2 0 100 4 0 0 0
+2 0 100 100 4 0 0 0
 A
 33 4
 A
@@ -355,7 +355,7 @@ vambraces vampire lords _noquest_~
 ~
 9 19 3 2 14 95 33554432 257 64 0 0
 2 0 0 3 0 0 0 0
-2 0 100 32 0 0 0
+2 0 100 100 32 0 0 0
 A
 19 3
 A
@@ -367,7 +367,7 @@ hammer titans lightning~
 ~
 5 19 3 5 15 95 20980993 8193 64 87572507 0
 4 8 5 7 0 0 0 0
-15 0 100 0 128 0 0
+15 0 100 100 0 128 0 0
 A
 18 4
 A
@@ -379,7 +379,7 @@ divine bracer defense~
 ~
 9 19 3 1 15 100 33570817 4097 64 0 0
 9 0 0 3 0 0 0 0
-1 0 100 268435456 0 0 0
+1 0 100 100 268435456 0 0 0
 A
 13 25
 A
@@ -391,7 +391,7 @@ key 2nd second~
 ~
 12 15 3 0 7 0 0 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22965
 key vault~
 &+Lthe&+B vault&+L key&n~
@@ -399,7 +399,7 @@ key vault~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22966
 portal dark~
 &+La dark portal&n~
@@ -407,7 +407,7 @@ portal dark~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22908 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22967
 horn harbringer destruction _noquest_~
 &+Lthe &+yhorn &+Lof the &+yharbringer &+Lof &+rdestruction&n~
@@ -415,7 +415,7 @@ horn harbringer destruction _noquest_~
 ~
 32 15 3 0 7 0 9217 16385 64 8487456 0
 189 60 0 20 0 0 0 0
-0 0 100 0 28 0 0
+0 0 100 100 0 28 0 0
 A
 13 25
 A
@@ -427,7 +427,7 @@ eye third mindreaver _noquest_~
 ~
 9 15 3 0 7 0 0 147457 0 0 0
 5 0 0 1 0 0 0 0
-0 0 100 0 2 0 0
+0 0 100 100 0 2 0 0
 A
 12 50
 A
@@ -439,7 +439,7 @@ cloak battle battledancer dancer _noquest_~
 ~
 9 3 3 1 14 99 0 17409 0 0 0
 10 0 0 5 0 0 0 0
-1 0 100 8 0 0 0
+1 0 100 100 8 0 0 0
 A
 13 25
 A
@@ -451,7 +451,7 @@ ringmail lifeforce enhanced ring mail _noquest_~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 20 0 0 3 0 0 0 0
-0 0 100 0 32768 0 0
+0 0 100 100 0 32768 0 0
 A
 13 40
 A
@@ -463,4 +463,4 @@ elixir beyond~
 ~
 10 15 3 0 7 0 0 16385 0 0 0
 60 161 180 286 0 0 0 0
-0 0 100
+0 0 100 100

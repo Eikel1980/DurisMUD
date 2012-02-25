@@ -5,7 +5,7 @@ heart dolgar~
 ~
 12 2 3 0 9 69 110592 1 64 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 heart~
 &+R   Th&+ri&+Rs &+Ris &+rthe &+revil &+Rheart &+rof &+LD&+ro&+Llg&+ra&+Lr the &+rancient &+Lblack dragon&+r.  The item &+Rbeats&N
@@ -19,7 +19,7 @@ blacksmith hammer gleaming~
 ~
 5 18 3 0 13 70 20979968 8413185 67 0 0
 4 4 3 6 0 0 0 0
-9 81000 100
+9 81000 100 100
 E
 blacksmith hammer gleaming~
    &+LThis hammer seems to be made of a magical metal.  The object appears to be&N
@@ -37,7 +37,7 @@ suit spiked leather armor~
 ~
 9 14 3 0 14 39 8192 16393 64 4165209604 24960
 15 0 0 5 1 0 0 0
-0 55000 100
+0 55000 100 100
 E
 spiked leather armor~
 &+y   This armor seems to be rather well made, and from a good grade of leather.&N
@@ -55,7 +55,7 @@ silver cutlass sword~
 ~
 5 22 3 0 13 55 9217 24577 66 96071707 0
 5 2 4 3 0 0 0 0
-4 33000 100
+4 33000 100 100
 E
 silver cutlass sword~
 &+c   This sword is made from a very good grade of silver.  Its blade is slightly&n
@@ -73,7 +73,7 @@ spiked buckler shield~
 ~
 37 18 3 0 14 70 8192 16897 66 4165287428 18432
 1 1 2 80 5 1 0 0
-15 18000 100
+15 18000 100 100
 E
 spiked buckler shield~
 &+L   This shield seems to be very well made, and from a metal with magical&n
@@ -91,7 +91,7 @@ ring tentabeast blue tenta~
 ~
 9 33 3 0 15 39 12289 16387 66 0 0
 1 0 0 5 0 0 0 0
-0 69000 100 2048 0 0 0
+0 69000 100 100 2048 0 0 0
 E
 ring tentabeast blue tenta~
 &+B   This ring comes from the &+gTentabeast&+B, it is rumored that those who posses the&n
@@ -110,7 +110,7 @@ fine dragon scale boots~
 ~
 9 35 3 0 15 80 8192 16449 66 0 0
 9 0 0 5 0 0 0 0
-3 99000 100
+3 99000 100 100
 E
 fine dragon scale boots~
 &+L   These pitch black boots are very well made, they are rather light as well.&n
@@ -129,7 +129,7 @@ limestone bracelet crafted lime~
 ~
 9 39 3 0 15 50 8192 20481 66 0 0
 8 0 0 3 0 0 0 0
-2 99000 100
+2 99000 100 100
 E
 limestone bracelet crafted lime~
 &+L   This bracelet has been crafted from a very good grade of &+glimestone&+L.  It is&n
@@ -147,7 +147,7 @@ pile black dragon scales~
 ~
 12 35 3 0 7 80 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 9000 100
+3 9000 100 100
 E
 pile black dragon scales~
    &+LThis is a pile of discarded dragon scales of what seems like a Black Dragon.&N
@@ -162,7 +162,7 @@ heart sanrabb~
 ~
 12 2 3 0 7 50 33566721 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 heart~
 &+r   This ghastly looking &+Rheart &+rbeats on even without a body.  The organ is about&N
@@ -176,7 +176,7 @@ head bunny master xertrath~
 ~
 13 2 1 0 7 20 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 9 100
+0 9 100 100
 E
 head bunny master xertrath~
    &+LThis Be the Head of &+WX&+Le&+WrTr&+La&+Wth Th&+Le &+WB&+Lu&+WnnY &+Lo&+Wf Wr&+La&+WtH&+L.&N
@@ -188,7 +188,7 @@ dead animal moof~
 ~
 13 2 3 0 15 81 16789520 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dead animal~
 &+L   You gaze at this &+yanimal &+Land you realize that perhaps &+rsuicide &+Lis not the&n
@@ -207,7 +207,7 @@ charred plant~
 ~
 19 43 0 0 7 0 8192 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 charred plant~
 &+g   This plant looks like something &+rburned &+git rather badly.  However it looks&n
@@ -220,7 +220,7 @@ green plant~
 ~
 19 43 0 0 7 0 12288 16385 0 0 0
 48 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 green plant~
 &+G   This plant is a bright green color, and you notice it has many buds.  Its&n
@@ -235,7 +235,7 @@ large black dragon scale~
 ~
 12 35 3 0 7 80 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 9000 100
+3 9000 100 100
 E
 large black dragon scale~
    &+LThis is a large and thick dragon scale of an &+rancient &+LBlack Dragon.  The item&N
@@ -249,7 +249,7 @@ black war visor warvisor~
 ~
 9 35 3 0 15 80 1056768 147457 66 0 0
 7 0 0 5 0 0 0 0
-0 58030 100
+0 58030 100 100
 E
 black war visor warvisor~
 &+L   This visor seems to be made from a very hard dragon scale.  It seems like a&n
@@ -268,7 +268,7 @@ black opal eye dolgar~
 ~
 8 23 3 0 15 69 1060864 16385 66 0 0
 0 0 0 0 0 0 0 0
-1 99000 100 0 8192 0 0
+1 99000 100 100 0 8192 0 0
 E
 black opal eye dolgar~
 &+L   This eye crackles with power of a being that is not of this world.  Just&n
@@ -286,7 +286,7 @@ green plant~
 ~
 19 43 0 0 7 0 8192 16385 0 0 0
 18 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 plant nug nugget~
 &+G   This plant is a bright green color, and you notice it has many buds.  Its&n
@@ -301,7 +301,7 @@ armor spiked splint mail~
 ~
 9 15 3 0 8 10 0 16393 0 4173708868 24576
 9 0 0 3 1 0 0 0
-20 8000 100
+20 8000 100 100
 E
 armor spiked splint mail~
 &+L   This armor seems to be of a better than average make.  It is &+rspiked &+Land some&n
@@ -314,7 +314,7 @@ armor spiked plate mail~
 ~
 9 16 3 0 11 21 8192 16393 66 4173708868 26624
 18 0 0 5 1 0 0 0
-5 10000 100
+5 10000 100 100
 E
 armor spiked plate mail~
 &+L   This plate armor seems to be rather very well made.  It is &+rspiked &+Land some&n
@@ -352,7 +352,7 @@ mystic scroll~
 ~
 2 43 3 0 11 9 77825 8404993 66 0 0
 50 201 204 233 0 0 0 0
-0 33000 100
+0 33000 100 100
 E
 mystic scroll~
    &+LThis &+bmystic &+Lscroll has many strange words written on it.&n
@@ -364,7 +364,7 @@ shield buckler~
 ~
 37 46 3 0 8 9 0 16897 0 0 0
 1 6 2 78 3 0 0 0
-1 500 100
+1 500 100 100
 E
 shield buckler~
    &+LThis is a simple oval shaped buckler, adjustable leather straps attach the&n
@@ -377,7 +377,7 @@ shield large~
 ~
 37 46 3 0 9 18 0 513 0 0 0
 1 7 4 98 4 0 0 0
-20 1500 100
+20 1500 100 100
 E
 shield large~
    &+LThis is a large triangle shaped shield, adjustable leather straps attach the&n
@@ -390,7 +390,7 @@ armor spiked ringmail mail~
 ~
 9 46 3 0 9 18 0 16393 0 4173708868 24576
 10 0 0 3 1 0 0 0
-15 8000 100
+15 8000 100 100
 E
 armor spiked ringmail~
 &+L   This armor seems to be of a better than average make.  It is &+rspiked &+Land some&n
@@ -403,7 +403,7 @@ soft leather boots simple~
 ~
 9 13 3 0 8 9 8192 16449 0 4227727360 90112
 5 0 0 3 0 0 0 0
-0 9 100
+0 9 100 100
 E
 soft boots simple~
    &+yThese boots are made of a very soft and flexiable leather.  They are&n
@@ -420,7 +420,7 @@ padded leather armor~
 ~
 9 13 3 0 7 5 0 16393 0 4227727360 24576
 7 0 0 3 0 0 0 0
-10 900 100
+10 900 100 100
 E
 padded leather armor~
    &+yThis armor seems to be made of leather and is padded.  While not offering&n
@@ -433,7 +433,7 @@ hand axe~
 ~
 5 15 3 0 7 9 1024 24577 0 95993883 0
 1 1 7 3 0 0 0 0
-3 700 100
+3 700 100 100
 E
 hand axe~
    &+LThis hand &+raxe &+Lhas a sharp blade that has many stains of past battles.&N
@@ -445,7 +445,7 @@ spiked mace~
 ~
 5 20 3 0 11 21 0 24577 0 4161089600 0
 7 1 8 7 0 0 0 0
-3 9000 100
+3 9000 100 100
 E
 spiked mace~
    &+LThis &+cmace &+Lis lined with spikes &+Lthat have dried &+rblood &+Lstains upon them.&n
@@ -457,7 +457,7 @@ marble totem polished~
 ~
 34 38 3 0 15 60 9216 16385 66 256 0
 60 0 0 0 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 marble totem~
    &+WT&+wh&+Li&+ws &+Wt&+wo&+Lt&+we&+Wm s&+we&+Le&+wm&+Ws &+wt&+Lo &+wb&+We &+wm&+Wa&+wd&+Le &+wf&+Wr&+wo&+Lm &+wa &+Wv&+we&+Lr&+wy &+Wg&+wo&+Lo&+wd &+Wg&+wr&+La&+wd&+We &+wo&+Lf &+Wm&+wa&+Lr&+wb&+Wl&+we&+L.  &+WI&+wt &+Lh&+wa&+Ws &+wa&+Ll&+Ws&+wo&N
@@ -476,7 +476,7 @@ bloody shroud~
 ~
 9 43 3 0 13 40 9216 134234113 66 89672465 65535
 1 0 0 5 0 0 0 0
-0 9 100
+0 9 100 100
 E
 bloody shroud~
    &+LThis &+Rblood &+rsoaked &+Lshroud is made to wrap around the &+Whorns &+Lof a minotaur.&N
@@ -492,7 +492,7 @@ pronged bone~
 ~
 9 10 3 0 11 21 8192 67125249 66 4227727360 57344
 3 0 0 3 0 0 0 0
-0 9 100
+0 9 100 100
 E
 pronged bone~
    &+LThis item has been made from the &+Wbone &+Lof a rather large sized animal.&n
@@ -508,7 +508,7 @@ twisted ribbon~
 ~
 9 2 3 0 9 9 9216 33570817 66 89672465 65535
 2 0 0 3 0 0 0 0
-0 9 100
+0 9 100 100
 E
 ribbon twisted~
 &+L   This &+Bribbon &+Lseems to be made from the &+bskin &+Lof some sort of small &+Cblue&N
@@ -525,7 +525,7 @@ cloak mendes strange~
 ~
 9 12 3 0 15 81 139264 17409 66 0 0
 13 0 0 5 1 0 0 0
-0 18000 100
+0 18000 100 100
 E
 cloak~
 &+L   This &+ycloak &+Lis made of a strong hide and is covered in &+Rspikes&+L.  It bears the&N
@@ -556,7 +556,7 @@ misericord dagger sharp~
 ~
 5 22 3 0 14 76 8192 24577 67 4194697696 0
 2 3 3 11 0 0 0 0
-5 9000 100
+5 9000 100 100
 E
 misericord dagger~
    &+cThis is a narrow dagger that comes to a thin point at the end.&N
@@ -572,7 +572,7 @@ glowing elven cutlass~
 ~
 5 22 3 0 11 49 16787217 24577 67 96071707 520487948
 5 3 3 3 0 0 0 0
-6 33000 100
+6 33000 100 100
 E
 glowing elven cutlass~
    &+LThis cutlass seems to be made of &+csilver &+Land has a strange eerie &+Mglow&+L.&N
@@ -588,7 +588,7 @@ carved bone mask~
 ~
 9 10 3 0 9 18 8192 278529 0 4227727360 256
 7 0 0 4 0 0 0 0
-1 7000 100
+1 7000 100 100
 E
 carved bone mask~
    &+LThis mask has been &+ccarved &+Lfrom a rather thick &+Wbone&+L.&N
@@ -604,7 +604,7 @@ flowing embroidered robe~
 ~
 9 43 3 0 11 21 8192 16393 66 0 0
 9 0 0 4 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 flowing embroidered robe~
    &+LThis robe is very light and gives of an aura of magical energy.&N
@@ -620,7 +620,7 @@ deadly potion~
 ~
 10 1 3 0 11 9 77824 8404993 0 0 0
 10 35 14 43 9 0 0 0
-0 18000 100
+0 18000 100 100
 E
 deadly potion~
    &+LThis potion has a &+Wskull &+Lupon it and looks rather dangerous to drink.&N
@@ -632,7 +632,7 @@ spear lugged~
 ~
 5 36 3 0 15 80 20979984 24577 66 0 0
 8 5 3 11 0 0 0 0
-9 81000 100
+9 81000 100 100
 E
 lugged spear~
 &+L   This &+yl&+ru&+ygg&+re&+yd &+Lspear has been crafted by a black stone, yet is rather light for&N
@@ -651,7 +651,7 @@ fountain shairak~
 ~
 17 25 6 0 15 100 0 0 66 0 0
 666 666 0 0 0 0 0 0
-666 90000 100
+666 90000 100 100
 E
 fountain shairak~
 &+B   The &+bwaters &+Bof this fountain seem to be rather cool and crisp.  The fountain&N
@@ -664,7 +664,7 @@ water smoked flagon~
 ~
 17 44 1 0 15 76 8200 8404993 0 0 0
 69 69 0 0 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 smoked flagon~
 &+L   This &+rflagon &+Lseems to be of an exceptional workmanship, It is a dark smoked&n
@@ -805,7 +805,7 @@ scintilating leggings~
 ~
 9 18 3 0 15 81 8192 16417 66 4173696900 92160
 12 0 0 5 1 0 0 0
-0 18000 100
+0 18000 100 100
 E
 scintilating leggings~
 &+m   Th&+Me&+ms&+Me &+ml&+Me&+mgg&+Mi&+mngs &+Ma&+mr&+Me &+mm&+Ma&+md&+Me o&+mf &+Ma &+mv&+Me&+mry l&+Mu&+msty &+Ma&+mnd sh&+Mi&+mny m&+Ma&+mt&+Me&+mr&+Mia&+ml.  Y&+Mou &+mn&+Mo&+mt&+Mi&+mc&+Me i&+mt&n
@@ -825,7 +825,7 @@ mystic tome mysticism~
 ~
 33 29 2 0 15 50 67121161 8404993 66 0 0
 0 0 181 0 0 0 0 0
-0 18000 100
+0 18000 100 100
 E
 mystic tome mysticism~
 &+m   This &+rt&+Ro&+rm&+Re &+mis made from a parchment the likes of which you have never seen&n
@@ -842,7 +842,7 @@ ale marble flask~
 ~
 17 38 2 0 11 50 8192 8404993 0 0 0
 50 50 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 marble flask~
 &+W   T&+wh&+Li&+ws &+Wf&+wl&+La&+ws&+Wk &+wi&+Ls &+wm&+Wa&+wd&+Le &+wo&+Wf &+wa &+Wv&+we&+Lr&+wy &+Wg&+wo&+Lo&+wd &+Wg&+wr&+La&+wd&+We &+wo&+Lf &+Wm&+wa&+Lr&+wb&+Wle&+L.  &+wI&+Wt &+wi&+Ls &+wr&+Wa&+wt&+Lh&+we&+Wr &+ws&+Wm&+wa&+Ll&+wl &+Wa&+wn&+Ld&N
@@ -856,7 +856,7 @@ bloody dragon talon~
 ~
 5 34 3 0 9 9 4096 24577 0 0 0
 2 2 3 11 0 0 0 0
-5 81000 100
+5 81000 100 100
 E
 bloody dragon talon~
 &+L   This &+Wtalon &+Lseems like it comes from a rather large creature.  Most likely&n
@@ -869,7 +869,7 @@ whiskey bottle glass~
 ~
 17 7 2 0 7 9 0 16385 0 0 0
 9 9 5 0 0 0 0 0
-0 900 100
+0 900 100 100
 E
 bottle~
    &+yA simple bottle made from glass.&N
@@ -881,7 +881,7 @@ beer odd belt soaked~
 ~
 9 43 3 0 11 9 8192 18433 0 0 0
 5 0 0 3 0 0 0 0
-0 3 100
+0 3 100 100
 E
 beer odd belt soaked~
    &+yThis once new belt seems to of been soaked in beer.&N
@@ -897,7 +897,7 @@ belt bearing symbol baphomet~
 ~
 9 47 3 0 15 66 139264 18433 66 0 0
 8 0 0 5 1 0 0 0
-0 18000 100
+0 18000 100 100
 E
 belt~
 &+L   This &+ybelt &+Lis made of &+gr&+Ge&+gpt&+Gi&+gl&+Gia&+gn &+Gsc&+ga&+Gl&+ge &+Land is covered in &+cspikes&+L.  It bears the&N
@@ -927,7 +927,7 @@ belt crest darkuul~
 ~
 9 14 3 0 11 33 8192 18433 64 0 0
 7 0 0 4 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 belt~
    &+LThis belt has the &+cmystic &+Rcrest &+Lof &+mDarkuul &+rburnt &+Linto its buckle.&N
@@ -959,7 +959,7 @@ blood stained mask~
 ~
 9 23 3 0 13 55 8192 278529 66 4227727360 2304
 6 0 0 5 1 0 0 0
-1 9000 100
+1 9000 100 100
 E
 blood stained mask~
    &+rS&+Rt&+rai&+Rn&+rs &+Lof &+rbl&+Roo&+rd &+Lupon a surface of hatred.  Marks of past battles upon the&n
@@ -984,7 +984,7 @@ snake marble badge~
 ~
 11 38 2 0 11 50 8192 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 2315 100
+0 2315 100 100
 E
 snake marble badge~
 &+W   T&+wh&+Li&+ws &+Ws&+wn&+La&+wk&+We &+wi&+Ls &+wm&+Wa&+wd&+Le &+wo&+Wf &+wa &+Wv&+we&+Lr&+wy &+Wg&+wo&+Lo&+wd &+Wg&+wr&+La&+wd&+We &+wo&+Lf &+Wm&+wa&+Lr&+wb&+Wle&+L.  &+wI&+Wt &+wi&+Ls &+wr&+Wa&+wt&+Lh&+we&+Wr &+ws&+Wm&+wa&+Ll&+wl &+Wa&+wn&+Ld&N
@@ -1000,7 +1000,7 @@ bloody bastard sword~
 ~
 5 22 3 0 9 33 4207616 8396801 66 85475345 24576
 13 3 5 3 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 bloody bastard sword~
 &+L   This bastard sword is stained by many past battles.  The hilt of the sword&N
@@ -1020,7 +1020,7 @@ helm skull~
 ~
 9 22 3 0 15 88 8192 16401 66 4173696644 75776
 9 0 0 5 0 0 0 0
-0 33000 100
+0 33000 100 100
 E
 helm skull~
 &+L   This &+whelm &+Lhas been soaked by the &+rbl&+Ro&+ro&+Rd &+Lof fallen foes, a &+Wskull &+Linsignia has&N
@@ -1038,7 +1038,7 @@ heart~
 ~
 12 2 3 0 9 69 126976 1 64 0 0
 0 0 0 0 0 0 0 0
-3 23423 100 2048 0 0 0
+3 23423 100 100 2048 0 0 0
 E
 heart~
 &+L   This black heart of a &+gTentabeast &+Lbeats on even without a body.  As you gaze&N
@@ -1060,7 +1060,7 @@ scintilating sleeves~
 ~
 9 18 3 0 15 81 8192 16641 66 0 0
 12 0 0 5 1 0 0 0
-0 18000 100
+0 18000 100 100
 E
 scintilating sleeves~
 &+m   Th&+Me&+ms&+Me &+ms&+Ml&+mee&+mv&+Mes &+Ma&+mr&+Me &+mm&+Ma&+md&+Me o&+mf &+Ma &+mv&+Me&+mry l&+Mu&+msty &+Ma&+mnd sh&+Mi&+mny m&+Ma&+mt&+Me&+mr&+Mia&+ml.  Y&+Mou &+mn&+Mo&+mt&+Mi&+mc&+Me i&+mt&n
@@ -1079,7 +1079,7 @@ grishnak scum head traitor~
 ~
 13 2 3 0 7 55 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 423 100
+1 423 100 100
 E
 grishnak scum head traitor~
 &+L   This is the head of the scum traitor &+YGrishnak &+Lwho betrayed the true power of&N
@@ -1093,7 +1093,7 @@ scintilating necklace~
 ~
 9 18 3 0 15 81 8192 16389 2 0 0
 8 0 0 5 1 0 0 0
-0 18000 100
+0 18000 100 100
 E
 scintilating necklace~
 &+m   T&+Mh&+mi&+Ms &+mn&+Me&+mc&+Mk&+ml&+Ma&+mc&+Me &+mi&+Ms &+mm&+Ma&+md&+Me o&+mf &+Ma &+mv&+Me&+mry l&+Mu&+msty &+Ma&+mnd &+Mh&+Ma&+mr&+Md &+mm&+Ma&+mt&+Me&+mr&+Mia&+ml.  Y&+Mou &+mn&+Mo&+mt&+Mi&+mc&+Me &+mt&+Mh&+ma&+Mt i&+mt&n
@@ -1112,7 +1112,7 @@ quiver marble~
 ~
 30 38 2 0 14 81 8192 9437185 0 0 0
 181 0 1 0 0 0 0 0
-0 18181 100
+0 18181 100 100
 E
 quiver marble~
 &+W   T&+wh&+Li&+ws &+Wq&+wu&+Li&+wv&+We&+wr i&+Ls &+wm&+Wa&+wd&+Le &+wo&+Wf &+wa &+Wv&+we&+Lr&+wy &+Wg&+wo&+Lo&+wd &+Wg&+wr&+La&+wd&+We &+wo&+Lf &+Wm&+wa&+Lr&+wb&+Wle&+L.  &+wI&+Wt &+wi&+Ls &+wr&+Wa&+wt&+Lh&+we&+Wr &+ws&+Wm&+wa&+Ll&+wl &+Wa&+wn&+Ld&N
@@ -1130,7 +1130,7 @@ scintilating earring~
 ~
 9 18 3 0 15 81 8192 540673 2 0 0
 4 0 0 4 1 0 0 0
-0 18000 100
+0 18000 100 100
 E
 scintilating earring~
 &+m   T&+Mh&+mi&+Ms &+me&+Ma&+mr&+Mr&+mi&+Mn&+mg &+mi&+Ms &+mm&+Ma&+md&+Me o&+mf &+Ma &+mv&+Me&+mry l&+Mu&+msty &+Ma&+mnd &+Mh&+Ma&+mr&+Md &+mm&+Ma&+mt&+Me&+mr&+Mia&+ml.  Y&+Mou &+mn&+Mo&+mt&+Mi&+mc&+Me &+mt&+Mh&+ma&+Mt i&+mt&n

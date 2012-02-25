@@ -5,7 +5,7 @@ statue stone large~
 ~
 12 11 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue khildarak strongstone~
 This statue is carved from pure &+Wgranite&N by the members of clan Shatter Stone.
@@ -33,7 +33,7 @@ pool water spring~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water spring~
 A large hole has been dug into the stone of the cavern to create this pool.
@@ -46,7 +46,7 @@ crate~
 ~
 29 6 0 50 7 0 2 0 0 0 0
 270 17526 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crate~
 This crate is a large one, it reaches almost to the ceiling.
@@ -58,7 +58,7 @@ rock~
 ~
 29 11 0 50 7 0 8194 0 0 0 0
 270 17532 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock~
 This rock protrudes out from the cavern wall father than any others, making it
@@ -71,7 +71,7 @@ ash dust~
 ~
 29 1 0 50 7 0 2 0 0 0 0
 66 17070 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ash dust ground floor~
 The ash is very thick on the floor in this area, looking around shows nothing
@@ -84,7 +84,7 @@ fountain water~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water spring~
 A large hole has been dug into the stone of the cavern to create this pool.
@@ -97,7 +97,7 @@ crank~
 ~
 29 16 0 50 7 0 2 0 0 0 0
 270 17332 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crank~
 A large hand crank looks turnable.
@@ -109,7 +109,7 @@ bookcase~
 ~
 29 6 0 50 7 0 2 0 0 0 0
 340 17058 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookcase~
 This bookcase is full of worthless books and seems to be slightly ajar from
@@ -122,7 +122,7 @@ tapestry~
 ~
 29 3 0 50 7 0 2 0 0 0 0
 270 17159 1 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 This tapestry is large and colorful. I appears to slightly move occasionaly,
@@ -135,7 +135,7 @@ rack storage~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 340 17202 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rack storage~
 This stone storage rack is full of useless junk. It appears to be set against
@@ -148,7 +148,7 @@ rock~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 270 17000 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock rocks wall walls~
 Several rocks protrude out from the walls, making the space cramped and tight.
@@ -161,7 +161,7 @@ rock~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 270 17001 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock rocks wall walls~
 The wall has several rocks that protrude out, making the passage even
@@ -174,7 +174,7 @@ crate~
 ~
 29 6 0 50 7 0 2 0 0 0 0
 270 17527 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crate~
 The back of this crate can be seen through the hole in the wall.
@@ -186,7 +186,7 @@ rock~
 ~
 29 11 0 50 7 0 8194 0 0 0 0
 270 17533 4 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock~
 This rock protrudes out from the cavern wall father than any others, making it
@@ -199,7 +199,7 @@ rock~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 274 17537 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock~
 A dark outline can be seen around the flat spot on the floor, it appears it
@@ -212,7 +212,7 @@ rock~
 ~
 29 11 0 50 7 0 8194 0 0 0 0
 274 17637 4 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock~
 This large rock appears to be jammed into a hole, blocking it.
@@ -224,7 +224,7 @@ bookcase~
 ~
 29 6 0 50 7 0 2 0 0 0 0
 270 17069 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookcase~
 This bookcase is full of worthless books and seems to be slightly ajar from
@@ -237,7 +237,7 @@ tapestry~
 ~
 29 3 0 50 7 0 2 0 0 0 0
 270 17160 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 This tapestry is large and colorful. I appears to slightly move occasionaly,
@@ -250,7 +250,7 @@ rack storage~
 ~
 29 11 0 50 7 0 2 0 0 0 0
 270 17203 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rack storage~
 This stone storage rack is full of useless junk. It appears to be set against
@@ -263,7 +263,7 @@ display case~
 ~
 15 7 5 50 7 0 0 0 64 0 0
 50 29 17020 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 display case~
 This display case is made of a magical seamless glass, impervious to any kind
@@ -278,7 +278,7 @@ rib bone~
 ~
 18 10 1 1 7 0 9011200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rib bone~
 This small piece of rib bone looks very old and fragile. It appears to have
@@ -291,7 +291,7 @@ war hammer~
 ~
 5 16 3 8 7 0 131072 8193 64 4165209604 0
 4 4 5 7 0 0 0 0
-5 100000 100
+5 100000 100 100
 E
 war hammer~
 This war hammer is constructed of a single piece of pure adamantite. Its
@@ -310,7 +310,7 @@ tentacle~
 ~
 12 2 0 0 7 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 tentacle~
 This piece of tentacle is rougly a foot in length, its not clear what kind
@@ -323,7 +323,7 @@ belt skull vermin~
 ~
 9 10 3 3 7 0 0 2049 0 0 0
 2 10 0 3 0 0 0 0
-1 100 100
+1 100 100 100
 #17024
 belt skull vermin skulls~
 &+ya large vermin&N &+Wskull&N &+ybelt&N~
@@ -331,7 +331,7 @@ belt skull vermin skulls~
 ~
 9 10 3 3 7 0 0 2049 0 0 0
 5 10 0 3 0 0 0 0
-2 2400 100
+2 2400 100 100
 E
 belt skull vermin skulls~
 This belt is made from the skulls of large vermin attached via a fungus
@@ -344,7 +344,7 @@ mug goblin skull~
 ~
 17 10 0 0 7 0 0 16385 0 0 0
 20 20 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 mug goblin skull~
 This mug has been fashioned out of a goblins skull. The top of the mug has
@@ -357,7 +357,7 @@ ring skull rat~
 ~
 9 16 1 1 7 0 0 3 0 0 0
 1 1 0 3 0 0 0 0
-0 200 100
+0 200 100 100
 E
 ring skull rat~
 This small rats skull has been fashioned into a ring. The mouth of the rat
@@ -371,7 +371,7 @@ skull orc container~
 ~
 15 10 3 0 7 0 0 16385 0 0 0
 20 5 0 100 0 0 0 0
-2 500 100
+2 500 100 100
 E
 skull orc container~
 The top of this large orc skull has been cut and hinged allowing it to be
@@ -384,7 +384,7 @@ earring lizard skull~
 ~
 9 10 1 1 7 0 0 524289 0 0 0
 1 14 0 3 0 0 0 0
-0 200 100
+0 200 100 100
 E
 earring lizard skull~
 This small lizard skull has been attached to a small piece of string so it
@@ -397,7 +397,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 12 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -409,7 +409,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 12 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -421,7 +421,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 12 0 0 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -433,7 +433,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 12 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -445,7 +445,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 3 100
+0 3 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -457,7 +457,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 3 100
+0 3 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -469,7 +469,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 3 100
+0 3 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -481,7 +481,7 @@ fungus~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 fungus~
 Little blue hairs grow from the surface of this brain shaped piece of fungus.
@@ -493,7 +493,7 @@ cap red~
 ~
 9 2 3 3 7 0 0 16401 0 0 0
 1 4 16 3 0 0 0 0
-0 10 100
+0 10 100 100
 E
 cap red~
 This cap is woven from fibers of a red fungus.
@@ -505,7 +505,7 @@ shoes shoe yellow~
 ~
 13 2 3 6 7 0 0 16449 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 shoes shoe yellow~
 These shoes are just basic protection for your feet, they are made from
@@ -518,7 +518,7 @@ cape brown~
 ~
 9 3 0 0 7 0 0 17409 0 0 0
 2 9 1 3 0 0 0 0
-1 200 100
+1 200 100 100
 #17040
 glove gloves blue~
 &+ba pair of blue fungus gloves&N~
@@ -526,7 +526,7 @@ glove gloves blue~
 ~
 9 3 3 6 7 0 0 16513 0 0 0
 1 7 6 3 0 0 0 0
-0 40 100
+0 40 100 100
 E
 glove gloves blue~
 These gloves offer only basic protection. They are woven from a deep blue
@@ -539,7 +539,7 @@ pants green~
 ~
 9 3 3 8 7 0 0 16417 0 0 0
 4 5 1 3 0 0 0 0
-2 300 100
+2 300 100 100
 E
 pants green~
 These pants are thick, woven from a green fungus fiber.
@@ -551,7 +551,7 @@ shirt orange~
 ~
 9 3 3 8 7 0 0 16393 0 0 0
 4 3 1 3 0 0 0 0
-2 600 100
+2 600 100 100
 E
 shirt orange~
 This shirt is very thick, woven from a bright orange fungus fiber.
@@ -563,7 +563,7 @@ A &+Lblack&N and &+mpurple&N collar has been left here.&N~
 ~
 9 5 0 0 7 0 0 16389 0 0 0
 4 2 1 3 0 0 0 0
-1 800 100
+1 800 100 100
 E
 collar black purple~
 This colar is made from a purple fungus fiber with a band of black fungus
@@ -577,7 +577,7 @@ A &+Lblack&N and &+mpurple&N bracelet has been left here.&N~
 ~
 9 5 3 3 7 0 0 20481 0 0 0
 3 11 24 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 collar black purple~
 This bracelet is made from a purple fungus fiber with a band of black fungus
@@ -593,7 +593,7 @@ hammer war steel~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 4 1 9 7 0 0 0 0
-9 10000 100
+9 10000 100 100
 E
 hammer war steel~
 This war hammer is finely crafted. The head is a bright polished steel, the
@@ -608,7 +608,7 @@ hammer war steel~
 ~
 5 16 4 8 7 0 4194304 8193 0 4173708804 0
 4 2 8 7 0 0 0 0
-21 15000 100
+21 15000 100 100
 E
 hammer war steel~
 This war hammer is finely crafted. The head is a bright polished steel, the
@@ -625,7 +625,7 @@ sword short polished steel~
 ~
 5 16 2 10 7 0 0 8193 0 4198895524 0
 9 1 7 11 0 0 0 0
-5 20000 100
+5 20000 100 100
 E
 sword short polished steel~
 This short sword is finely crafted and sharp. The blade and handle forged
@@ -640,7 +640,7 @@ sword long polished steel~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 10 3 0 0 0 0
-5 30000 100
+5 30000 100 100
 E
 sword short polished steel~
 This short sword is finely crafted and sharp. The blade and handle forged
@@ -657,7 +657,7 @@ sword long polished steel~
 ~
 5 16 4 10 7 0 4195328 8193 0 87572571 0
 5 2 7 3 0 0 0 0
-10 50000 100
+10 50000 100 100
 E
 sword short polished steel~
 This long sword is finely crafted and sharp. The blade and handle forged
@@ -674,7 +674,7 @@ axe battle polished steel~
 ~
 5 16 3 8 7 0 1024 8193 0 87572571 0
 1 1 10 3 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 axe battle polished steel~
 This battle axe is finely crafted. Its head is made of the finest duergar
@@ -691,7 +691,7 @@ axe battle polished steel double~
 ~
 5 16 3 8 7 0 4195328 8193 0 87572571 0
 1 2 7 3 0 0 0 0
-10 27000 100
+10 27000 100 100
 E
 axe battle polished steel~
 This battle axe is finely crafted. Its head is made of the finest duergar
@@ -708,7 +708,7 @@ headband fire opal~
 ~
 9 26 0 0 7 0 0 17 0 0 0
 4 4 1 3 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 headband fire opal~
 This headband is made from black leather lined with a solid row of brilliant
@@ -721,7 +721,7 @@ ring crimson coral~
 ~
 9 16 1 1 7 0 0 3 0 0 0
 1 1 0 3 0 0 0 0
-0 800 100
+0 800 100 100
 E
 ring crimson coral~
 This ring is carved into the shape of a triangular spike that extends an
@@ -736,7 +736,7 @@ boat~
 ~
 22 5 0 0 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-20 20000 100
+20 20000 100 100
 E
 boat~
 This boat is made from pressed fungus fibers and seems quite sturdy. It is
@@ -749,7 +749,7 @@ canoe boat~
 ~
 22 5 4 30 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-70 5000 100
+70 5000 100 100
 E
 canoe boat~
 This canoe is made from pressed fungus fibers and seems quite sturdy.
@@ -761,7 +761,7 @@ armor potion~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 20 1 -1 -1 0 0 0 0
-1 800 100
+1 800 100 100
 E
 armor potion~
 This vile vile is filled with a foul looking black liquid.
@@ -773,7 +773,7 @@ steak ixitxachitl cured~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 4 100
+1 4 100 100
 #17058
 squid tentacle dried~
 &+ya large piece of dried &+Ysquid&N &+ytentacle&N~
@@ -781,7 +781,7 @@ squid tentacle dried~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 #17059
 filet fish dried~
 &+ga dried filet of &+Gfish&N~
@@ -789,7 +789,7 @@ filet fish dried~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #17060
 eyes fish~
 &+La handful of dried &+Bfish eyes&N~
@@ -797,7 +797,7 @@ eyes fish~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #17061
 claw bear~
 &+La large bear claw&N~
@@ -805,7 +805,7 @@ claw bear~
 ~
 5 10 3 5 7 0 1024 8193 0 87572571 0
 2 1 9 3 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 claw bear~
 This bear claw is huge with several long sharp claws. A long piece of the
@@ -820,7 +820,7 @@ tooth dragons dragon~
 ~
 5 10 3 0 7 0 0 8193 0 0 0
 2 1 8 11 0 0 0 0
-2 13000 100
+2 13000 100 100
 E
 tooth~
 This tooth is the lenth of an average sword. Its slightly curved and the
@@ -837,7 +837,7 @@ scrotum dragon bag~
 ~
 17 12 3 10 7 0 0 16385 0 0 0
 100 100 0 100 0 0 0 0
-1 500 100
+1 500 100 100
 E
 scrotum dragon bag~
 This large dragon scrotum has been closed to make a rather durable water
@@ -850,7 +850,7 @@ collar bear fur~
 ~
 9 3 0 0 7 0 0 5 0 0 0
 3 2 1 3 0 0 0 0
-1 400 100
+1 400 100 100
 #17065
 cape bear fur~
 &+La cave bear fur &+bcape&N~
@@ -858,7 +858,7 @@ cape bear fur~
 ~
 9 3 0 0 7 0 0 1025 0 0 0
 5 9 1 3 0 0 0 0
-5 8000 100
+5 8000 100 100
 #17066
 bracelet dragon hide~
 &+ga dragon hide &+Gbracelet&N~
@@ -866,7 +866,7 @@ bracelet dragon hide~
 ~
 9 12 3 3 7 0 0 4097 0 0 0
 3 11 24 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 bracelet dragon hide~
 This braclet is made from a thick dragon hide. It is very wide, designed to
@@ -879,7 +879,7 @@ belt dragon hide~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 6 10 0 3 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 bracelet dragon hide~
 This belt is made from a thick green dragons hide. It is very wide, designed
@@ -892,7 +892,7 @@ foot dragon dragons~
 ~
 5 2 3 0 7 0 4194304 8193 0 0 0
 10 2 6 3 0 0 0 0
-30 60000 100
+30 60000 100 100
 E
 foot dragon dragons~
 This severed dragons foot is huge, requiring two hands to wield effectively.
@@ -910,7 +910,7 @@ headband dragon hide~
 ~
 9 12 0 0 7 0 0 17 0 0 0
 5 4 1 3 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 headband dragon hide~
 This headband is made from a thick green dragons hide. It is very wide,
@@ -923,7 +923,7 @@ parchment rolled _id_~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 20 45 -1 -1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 _id_name_~
 parchment scroll identify
@@ -939,7 +939,7 @@ rolled parchment scroll _id_~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 1 1 -1 -1 0 0 0 0
-1 200 100
+1 200 100 100
 E
 _id_name_~
 scroll protection
@@ -955,7 +955,7 @@ a &+Lminers&N &+ytool belt&N~
 ~
 15 12 3 3 7 0 0 2049 0 0 0
 30 5 0 100 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 belt tool miners~
 This large belt is made from a dark animal hide, designed to hold the tools
@@ -970,7 +970,7 @@ rod divining stick~
 ~
 12 6 2 4 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 rod divining stick~
 This rod is specialy formed into a large Y-shape to be used as a diving rod.
@@ -982,7 +982,7 @@ A large &+Yegg sack&N sits here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 egg sack~
 This large sack is filled with many large eggs. The sack is made from a soft
@@ -995,7 +995,7 @@ A &+ywooden chest&N sits against the wall.~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 100 13 0 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest wooden~
 This wooden chest is covered with intricate carvings, very finely crafted.
@@ -1008,7 +1008,7 @@ A small pile of &+Ygold&N sits here.~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 3 0 0 0 0 0
-2 1 100
+2 1 100 100
 #17077
 stone clear diamond~
 a &+Wclear stone&N~
@@ -1016,7 +1016,7 @@ A &+Wclear stone&N has been left here.~
 ~
 8 8 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1800 100
+1 1800 100 100
 #17078
 stone purple~
 a &+mpurple stone&N~
@@ -1024,7 +1024,7 @@ A &+mpurple stone&N has been left here.~
 ~
 8 11 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1200 100
+1 1200 100 100
 #17079
 belt rothe~
 a &+Wrothe skin&N belt~
@@ -1032,7 +1032,7 @@ A long piece of &+Wrothe skin&N lies here.~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 5 10 0 3 0 0 0 0
-2 4000 100
+2 4000 100 100
 E
 belt rothe~
 This belt is very wide, made of thick rothe skin finely cured and crafted
@@ -1045,7 +1045,7 @@ A pair of &+ybear feet&N are sitting here.~
 ~
 9 2 3 6 7 0 0 65 0 0 0
 5 6 1 3 0 0 0 0
-4 4000 100
+4 4000 100 100
 E
 shoes feet bear shoe~
 These unique shoes have been made from the whole foot of a large bear. The
@@ -1059,7 +1059,7 @@ A shield made from &+Wvermin skulls&N lies here.~
 ~
 37 10 3 15 7 0 0 513 0 4198895524 0
 2 1 3 75 3 0 0 0
-4 1000 100
+4 1000 100 100
 #17082
 armor mail banded~
 a suit of &+Ybanded mail&N~
@@ -1067,7 +1067,7 @@ A suit of armor has been left here.~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 20 3 1 3 0 0 0 0
-15 13000 100
+15 13000 100 100
 #17083
 armor plate breast breastplate adamantite~
 an &+Ladamantite breastplate&N~
@@ -1075,7 +1075,7 @@ A suit of armor has been left here.~
 ~
 9 19 0 0 7 0 1024 9 0 87572571 0
 25 3 6 3 0 0 0 0
-20 60000 100
+20 60000 100 100
 E
 armor adamantite suit plate mail platemail~
 This suit of platemail has been finely crafted by duergar clansdwarves. The
@@ -1088,7 +1088,7 @@ A suit of armor has been left here.~
 ~
 9 16 3 25 7 0 536871936 9 0 87572571 0
 50 3 1 3 0 0 0 0
-30 70000 100
+30 70000 100 100
 E
 armor suit plate mail platemail~
 This suit of platemail has been finely crafted by duergar clansdwarves. The
@@ -1103,7 +1103,7 @@ A set of gauntlets lies here.~
 ~
 9 19 3 5 7 0 0 129 0 4165209604 0
 6 7 1 3 0 0 0 0
-8 35000 100
+8 35000 100 100
 E
 guantlets spiked~
 These guantlets are finely crafted from polished steel. The joints are all
@@ -1120,7 +1120,7 @@ A set of gauntlets lies here.~
 ~
 9 19 3 5 7 0 0 129 0 4165209604 0
 6 7 1 3 0 0 0 0
-8 25000 100
+8 25000 100 100
 E
 guantlets spiked~
 These guantlets are finely crafted from polished steel. The joints are all
@@ -1135,7 +1135,7 @@ A set of leggings has been left here.~
 ~
 9 19 3 8 7 0 0 33 0 4165209604 0
 10 5 1 3 0 0 0 0
-10 30000 100
+10 30000 100 100
 E
 leggings adamantite legging~
 These leggings are finely crafted from adamantite. The knee joint is well made
@@ -1148,7 +1148,7 @@ A pair of boots has been left here.~
 ~
 9 19 3 8 7 0 0 65 0 4165209604 0
 5 6 1 3 0 0 0 0
-10 15000 100
+10 15000 100 100
 E
 boots boot adamantite~
 Finely crafted to allow movement at the ankle, these boots provide excellent
@@ -1161,7 +1161,7 @@ A shield has been left here.~
 ~
 37 19 3 15 7 0 0 513 0 4165209604 0
 2 1 3 100 3 0 0 0
-15 25000 100
+15 25000 100 100
 E
 shield steel~
 This polished steel shield is large and finely crafted to provide maximum
@@ -1175,7 +1175,7 @@ A pair of black armplates lies here.~
 ~
 9 19 3 8 7 0 1024 257 0 87572571 0
 10 8 1 3 0 0 0 0
-10 30000 100
+10 30000 100 100
 E
 adamantite armplates arm plate plates~
 These armplates are finely crafted from pure adamantite. They are duergar in
@@ -1188,7 +1188,7 @@ A wicked looking helm lies here.~
 ~
 9 19 3 10 7 0 0 17 0 4165209604 0
 10 4 1 3 0 0 0 0
-5 24000 100
+5 24000 100 100
 E
 razored helm adamantite~
 This helm is crafted from full adamantite. A large razor sharp blade runs the
@@ -1202,7 +1202,7 @@ duergar duergar-made longbow bow~
 ~
 6 6 0 4 7 0 4202496 24577 64 0 0
 70 60 0 1 0 0 0 0
-1 2545 100
+1 2545 100 100
 E
 duergar duergar-made longbow bow~
 &+r   This longbow has been carefully crafted by the duergar fletchers.
@@ -1214,7 +1214,7 @@ magical duergar arrow~
 ~
 7 6 2 3 7 0 0 1 64 0 0
 4 3 5 1 0 0 0 0
-1 1514 100
+1 1514 100 100
 E
 magical duergar arrow~
 &+r   This is an arrow made by Duergar fletchers.
@@ -1226,7 +1226,7 @@ duergar flight arrow simple~
 ~
 7 6 2 3 7 0 0 1 0 0 0
 3 1 8 1 0 0 0 0
-1 160 100
+1 160 100 100
 E
 duergar flight arrow simple~
 &+y   This small arrow doesn't do much damage but it still gets the job done.
@@ -1238,7 +1238,7 @@ roper skin quiver~
 ~
 30 12 2 12 9 0 8193 1048577 64 0 0
 30 0 1 0 0 0 0 0
-4 600 100
+4 600 100 100
 E
 roper skin quiver~
 &+y   This quiver has been fashioned from the hide of a &+groper&N.
@@ -1250,7 +1250,7 @@ shard metal~
 ~
 5 15 3 0 5 0 1024 8193 0 8515584 0
 2 3 4 0 0 0 0 0
-4 0 100
+4 0 100 100
 A
 18 3
 A
@@ -1262,7 +1262,7 @@ gate~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 10721 99 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gate~
    &+cThis metal gate is supposed to protect the entrance to the &+Lcave&+c,

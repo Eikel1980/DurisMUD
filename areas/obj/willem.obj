@@ -5,7 +5,7 @@ iron key~
 ~
 18 15 1 1 7 0 8388616 1 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 iron key~
 This key could be easily mistaken for any of a thousand others. It is well-
@@ -19,7 +19,7 @@ The corpse of a human with a crazed look in its eyes lies here.~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 1 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse~
 This explains the mystery- whoever locked themselves in here may have
@@ -33,7 +33,7 @@ A bubbling &+bfountain &+wsits here amongst the shrubbery.~
 ~
 17 38 4 2500 11 0 0 0 0 0 0
 -1 -1 28 0 0 0 0 0
-2500 0 100
+2500 0 100 100
 E
 fountain~
 The figurine that stands atop the fountain is that of a man in dark plate.
@@ -48,7 +48,7 @@ A six-inch piece of ivory lies here.~
 ~
 3 34 2 2 14 0 8912904 16385 0 0 0
 21 1 1 34 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 horn~
 This short piece of bone has a spiral pattern in it, which means that it was
@@ -63,7 +63,7 @@ A small green bauble connected to a string lies here.~
 ~
 9 6 1 1 7 0 135168 5 64 0 0
 2 2 2 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 bauble curio arboreal~
 This is little more than a small, twisted piece of wood attached to a string
@@ -80,7 +80,7 @@ A thin square piece of metal lies here undisturbed.~
 ~
 9 25 2 2 7 0 67108864 2049 64 0 0
 9 10 0 2 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 buckle strip leather~
 This is a simple rectangular piece of metal, two by three inches, with a
@@ -98,7 +98,7 @@ a huge statue~
 ~
 25 38 7 20000 12 0 0 0 0 0 0
 7140 259 -1 0 0 0 0 0
-20000 0 100
+20000 0 100 100
 E
 statue~
 This statue is of a woman dressed for battle. Her long hair flows from under
@@ -113,7 +113,7 @@ badge pin~
 ~
 18 15 1 1 7 0 8388608 2097153 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 badge pin~
 &+rThis small pin bears the insignia of the Ring of Glory, an adventuring
@@ -127,7 +127,7 @@ mask visor~
 ~
 9 25 2 7 11 0 1024 262145 64 87556123 0
 10 13 1 4 0 0 0 0
-7 15000 100
+7 15000 100 100
 E
 mask visor~
 &+WThis mask is made out of solid platinum and is quite thick. It looks to
@@ -144,7 +144,7 @@ statue figure~
 ~
 25 38 7 20000 12 0 0 0 64 0 0
 7159 259 -1 0 0 0 0 0
-20000 0 100
+20000 0 100 100
 E
 statue figure~
 This statue is not quite as tall as the one to the south. It depicts a
@@ -159,7 +159,7 @@ pin badge~
 ~
 18 15 1 1 11 0 8388608 2097153 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pin badge~
 &+LThis dark-hued pin bears a series of five pentagons set about an iron ring.
@@ -173,7 +173,7 @@ cloak~
 ~
 9 15 3 0 7 0 1024 1025 64 4197888 0
 10 9 1 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cloak~
 This sumptuous cloak is made of a thich, rich fabric native to Evermeet, and
@@ -193,7 +193,7 @@ statue~
 ~
 25 38 7 20000 12 0 0 0 64 0 0
 7164 259 -1 0 0 0 0 0
-20000 0 100
+20000 0 100 100
 E
 statue~
 This is the middle statue of the group of five, and it does appear to be a
@@ -207,7 +207,7 @@ badge pin~
 ~
 18 15 1 1 11 0 8388608 2097153 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 badge pin~
 &+bThis tiny pin has the symbol of the Ring of Glory- a circle of five
@@ -222,7 +222,7 @@ hammer warhammer~
 ~
 5 22 3 10 11 0 16909568 8193 67 33685536 0
 4 1 4 6 0 0 0 0
-12 11000 100
+12 11000 100 100
 E
 hammer warhammer~
 &+WThis silver-headed warhammer is excellently balanced and shaped such that
@@ -240,7 +240,7 @@ statue woman~
 ~
 25 38 7 20000 12 0 0 0 64 0 0
 7165 259 -1 0 0 0 0 0
-20000 0 100
+20000 0 100 100
 E
 statue woman~
 This statue shows a beautiful elven woman resting on a great staff. She
@@ -255,7 +255,7 @@ pin badge~
 ~
 18 15 1 1 11 0 8388608 2097153 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pin badge~
 &+gThis is a badge of the Ring of Glory,a guild based out of Tharnadia many
@@ -269,7 +269,7 @@ chain bangle bracelet~
 ~
 9 15 3 0 7 0 3276800 4097 64 0 0
 2 11 4 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chain bangle bracelet~
 A fine silver thread, meant to be worn about a wrist, has attached to it a
@@ -288,7 +288,7 @@ key~
 ~
 18 26 1 1 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key~
 This key is made of a &+Ysparkling &+wmaterial, perhaps even a kind of
@@ -306,7 +306,7 @@ chest~
 ~
 15 6 3 460 7 0 4096 0 64 0 0
 450 15 7118 450 0 0 0 0
-45 0 100
+45 0 100 100
 E
 chest~
 The chest has magical sigils in Old Gnomish all up and down the steel bands
@@ -320,7 +320,7 @@ A scroll rests here.~
 ~
 2 28 2 1 7 0 0 1 64 0 0
 41 132 -1 -1 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 scroll~
 This scroll is made of fine vellum and has a crimson edge to it. It is
@@ -337,7 +337,7 @@ A small roll of parchment lies here.~
 ~
 2 28 2 1 7 0 0 1 64 0 0
 6 1 141 192 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 roll scroll parchment~
 This scroll is rolled very tightly, as though it has much content. It is
@@ -354,7 +354,7 @@ A piece of waterlogged paper lies here.~
 ~
 2 28 2 1 7 0 0 1 64 0 0
 16 34 81 96 0 0 0 0
-1 2500 100
+1 2500 100 100
 E
 piece paper scroll~
 This looseleaf paper is dyed a deep blue on all four sides. Small bits of wax
@@ -371,7 +371,7 @@ a statue of a rogue~
 ~
 25 38 7 20000 12 0 0 0 64 0 0
 7172 259 -1 0 0 0 0 0
-20000 0 100
+20000 0 100 100
 E
 statue thief rogue~
 This statue, the northernmost of the five, depicts a figure in a halfcape
@@ -386,7 +386,7 @@ pin badge~
 ~
 18 15 1 1 11 0 8388608 2097153 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pin badge~
 This small pin is also quite drab, a medium brown color on a gray iron
@@ -401,7 +401,7 @@ A bone-colored dagger has been abandoned here.~
 ~
 5 15 2 0 7 0 1024 8193 64 8515584 0
 2 1 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dagger~
 This six-inch blade has a phenomenally keen edge. If this weapon hits at all,
@@ -419,7 +419,7 @@ lump black dark substance~
 ~
 11 49 2 1 5 0 128 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1200 100
+1 1200 100 100
 E
 lump black dark substance~
 Yep, it's a black lump.
@@ -435,7 +435,7 @@ Webbing covers the walls here.~
 ~
 15 15 3 0 7 0 2 0 0 0 0
 50 0 0 10 0 0 0 0
-0 0 100
+0 0 100 100
 E
 webbing web webs~
 This is definitely spiderweb, rather than cobweb, but the individual strands
@@ -448,7 +448,7 @@ An odd contraption, resembling antlers, lies here.~
 ~
 9 10 3 4 7 0 5120 134217729 0 85475329 65535
 1 22 0 1 1 0 0 0
-1 8000 100
+1 8000 100 100
 E
 contraption antlers horn horns eviscerator~
 This odd gadget consist of a pair of loops. Attached to each loop are three
@@ -467,7 +467,7 @@ book biography turol~
 ~
 8 28 2 2 7 0 528384 1 0 0 0
 0 0 0 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 book biography turol~
 &+cThe first page of the book says:
@@ -574,7 +574,7 @@ A pin lies here, sparkling brightly.~
 ~
 9 15 1 1 7 0 8454144 2097153 64 0 0
 1 16 0 1 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 pin badge~
 The insignia on this pin consists of five pentagrams mounted on a tiny
@@ -591,7 +591,7 @@ sword longsword saber bloodsaber~
 ~
 5 16 3 6 7 0 1024 8193 64 96071707 0
 5 1 6 3 0 0 0 0
-6 14000 100
+6 14000 100 100
 E
 sword longsword saber bloodsaber~
 &+rThis sword has a slight curve to its blade, and the edge is wickedly sharp.
@@ -610,7 +610,7 @@ A sword with a red hilt has been left here.~
 ~
 5 18 3 6 9 0 1024 8193 65 96071707 0
 5 1 6 3 0 0 0 1
-7 10000 100
+7 10000 100 100
 E
 sword longsword crimson~
 Bright red wrapping criss-crosses this sword's hilt, and the handguard has
@@ -630,7 +630,7 @@ A pair of reinforced leather boots lies here.~
 ~
 9 15 3 0 7 0 1024 65 0 119238689 130895
 11 6 1 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pair boots~
 These boots look to be made of the usual hard leather, but closer investiga-
@@ -648,7 +648,7 @@ key crimson red~
 ~
 18 15 1 1 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 E
 key crimson red~
 There is little to be said for this small red key.
@@ -660,7 +660,7 @@ A yellowed slip of paper lies here face-down.~
 ~
 8 28 2 1 8 0 8978432 1 0 0 0
 0 0 0 0 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 slip paper letter~
    rest  riz  'Durlo  n,
@@ -686,7 +686,7 @@ A necklace with a spider symbol lies here.~
 ~
 9 19 2 1 7 0 0 5 65 0 0
 4 2 2 3 0 0 0 0
-2 18000 100
+2 18000 100 100
 E
 necklace spider emissary~
 A scintillating chain of adamantium has a spider-shaped pendant attached to
@@ -703,7 +703,7 @@ A piece of midnight-blue ribbon lies here in loops.~
 ~
 9 3 3 1 9 0 0 33554433 65 0 0
 2 20 0 1 0 0 0 0
-1 6000 100
+1 6000 100 100
 E
 ribbon blue silver thread~
 This four-foot ribbon has tracings of silver thread in a crosshatch pattern
@@ -721,7 +721,7 @@ A sword lies gleaming in the dust here.~
 ~
 5 16 3 7 9 0 66561 8193 64 87572507 0
 5 1 6 3 0 0 0 0
-7 25000 100 8 0 0 0
+7 25000 100 100 8 0 0 0
 E
 sword greater bloodsaber saber~
 &+rThis terrifying blade is alive with evil magical energy. The blade itself
@@ -740,7 +740,7 @@ A small piece of gray animal matter lies here.~
 ~
 13 2 3 3 7 0 4104 1 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 piece gray matter stinger~
 This hunk of chitinous material tapers to a fine point. It must once have
@@ -753,7 +753,7 @@ A large round helmet lies here on the ground.~
 ~
 9 20 3 5 7 0 0 17 0 0 0
 8 4 1 5 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 helmet padded round~
 This odd helmet is a rounded shape and covers the back of the neck and the
@@ -773,7 +773,7 @@ lump blue ooze~
 ~
 13 49 1 1 7 0 8 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 lump blue ooze~
 Something about these lumps of ooze makes them very difficult to describe,
@@ -786,7 +786,7 @@ A length of gauze lies unravelled here.~
 ~
 9 15 3 0 7 0 0 134217729 64 0 0
 1 22 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 length gauze wrappings~
 Gauze, of course, is the loosely woven fabric developed by the medical
@@ -805,7 +805,7 @@ A small key lies here, forgotten.~
 ~
 18 15 1 1 7 0 8388616 1 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 red jail key~
 This small red key is attached to an iron ring. A tiny stamp on it marks it
@@ -818,7 +818,7 @@ a &+Wbelt &+wof &+Rdragonslaying~
 ~
 9 22 3 3 10 0 0 2049 67 0 0
 9 10 0 3 0 0 0 0
-2 12000 100
+2 12000 100 100
 E
 belt~
 This belt is constructed of links of silver. Its buckle depicts a longsword
@@ -835,7 +835,7 @@ chandelier~
 ~
 15 15 4 1000 7 0 262144 0 64 0 0
 4 0 0 4 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 chandelier~
 Several rings of what look like rusted iron are connected to each other by
@@ -849,7 +849,7 @@ A candle sits here, burning and burning.~
 ~
 3 3 2 2 7 0 266240 16385 64 0 0
 26 1 1 18 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 candle flame light~
 How very odd, a candle with wax that doesn't melt and a wick that doesn't
@@ -862,7 +862,7 @@ A six-inch tail spine sits here~
 ~
 3 10 2 2 7 0 4096 16385 64 0 0
 46 1 1 3 0 0 0 0
-2 8000 100
+2 8000 100 100
 E
 tail spine drake wooddrake~
 This looks like a quill, or spine, and is roughly six inches long. It comes
@@ -877,7 +877,7 @@ A greenish scaled mask rests here.~
 ~
 9 35 2 4 10 0 128 262145 64 0 0
 9 13 1 4 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 mask dragon dragonkin scaled~
 This mask is made from the hide of a wooddrake. It is smooth and form-
@@ -895,7 +895,7 @@ A piece of bone carved into the shape of a wolf lies here.~
 ~
 34 10 2 2 7 0 1024 16385 64 256 0
 51 0 0 0 0 0 0 0
-2 500 100
+2 500 100 100
 E
 piece bone wolf white totem~
 This fine piece of craftsmanship is about six inches long, two inches of
@@ -913,7 +913,7 @@ A flute lies here, sparkling brightly.~
 ~
 32 22 3 5 7 0 0 16385 64 0 0
 184 15 1 1 0 0 0 0
-5 40000 100
+5 40000 100 100
 E
 flute silver~
 This instrument is dazzling in its artistry and beauty. Constructed of almost
@@ -930,7 +930,7 @@ Several pieces of red embroidered cloth lie here.~
 ~
 9 3 2 3 7 0 1024 4097 64 87556123 0
 1 11 1 1 0 0 0 0
-2 13000 100
+2 13000 100 100
 E
 pieces cloth stripes watch red~
 This is a section of sleeve into which has been sewn three stripes of wavy
@@ -949,7 +949,7 @@ A small sapphire earring lies here, sparkling like the ocean.~
 ~
 9 33 1 1 7 0 0 524289 64 0 0
 1 14 0 3 0 0 0 0
-1 14000 100
+1 14000 100 100
 E
 earring waves~
 This earring is a sculpted sapphire mounted on a tiny silver backing. The
@@ -967,7 +967,7 @@ claymore sword~
 ~
 5 18 3 22 13 0 21234944 8193 64 87572507 0
 13 2 4 3 0 0 0 0
-22 32000 100
+22 32000 100 100
 E
 claymore earthcleaver sword~
 This two-handed sword is a full eight feet long, including the foot-long
@@ -988,7 +988,7 @@ A red-tinted skull lies here, grinning.~
 ~
 13 10 3 4 7 0 8917000 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 skull~
 The crimson color of the skull is enough to brand this remain as belonging
@@ -1005,4 +1005,4 @@ glowing portal~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 7145 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100

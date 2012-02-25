@@ -5,7 +5,7 @@ mushroom~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130155 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130105
 mushroom~
 an unseen mushroom porter obj~
@@ -13,7 +13,7 @@ an unseen mushroom porter obj~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130163 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom~
 this poor mushroom just gets stomped to move players forward
@@ -25,7 +25,7 @@ mushroom~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130171 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom~
 This poor mushroom sends people to room 72 when stomped.
@@ -37,7 +37,7 @@ Yet another teleporting mushroom is hiding here.~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130179 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom~
 Upon stompage, this invisible mushroom ports players to room 80
@@ -49,7 +49,7 @@ frozen troll heart~
 ~
 13 2 2 0 7 0 33562632 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 frozen troll heart~
 &+w     Sometime during the fight, the chest of this &+Wtroll&+w was broken open and&n
@@ -63,7 +63,7 @@ lizard claw~
 ~
 13 10 1 0 7 0 8200 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 lizard claw~
 &+w     The fight was so vicious that the aggravated &+Clizard&+w tore a claw during&n
@@ -77,7 +77,7 @@ ornate drinking horn~
 ~
 18 8 2 0 14 0 33566729 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 ornate drinking horn~
 &+y     This ornate drinking horn has runes etched into it.  It does not come from&n
@@ -93,7 +93,7 @@ mushroom~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130154 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130118
 mushroom~
 &+Ra ma&+Wl&+Revo&+Wl&+Ren&+Wt &+Rmus&+Wh&+Rro&+Wo&+Rm&n~
@@ -101,7 +101,7 @@ mushroom~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130170 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom~
 This poor mushroom sends people to room 72 when stomped.
@@ -113,7 +113,7 @@ Yet another teleporting mushroom is hiding here.~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130178 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom~
 Upon stompage, this invisible mushroom ports players to room 80
@@ -125,7 +125,7 @@ an unseen mushroom porter obj~
 ~
 25 15 3 0 7 0 10 0 0 0 0
 130162 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom~
 this poor mushroom just gets stomped to move players forward

@@ -8,8 +8,8 @@ gnome merchant gift shopkeeper~
 &+gplace willingfuly. Instead, he is trying to sell some worthless junk to every
 &+gpassing person, be it &+WAft&+werl&+Life&+g member or any of their guests.
 ~
-10 0 0 0 0 0 0 0 S
-PG 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+PG 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -25,8 +25,8 @@ girl half-naked naked half elven woman suse golem _nobutt_ assoc3_n_0 br_c~
 
 &+G"&+yDo you need any information about &+WAft&+werl&+Life&+y?&+G"
 ~
-104888906 0 0 973086780 45278 0 0 0 S
-OG 0 32 6
+104888906 0 0 0 973086780 45278 0 0 0 S
+OG 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -46,8 +46,8 @@ man handsome boy golem _nobutt_ assoc3_n_0 br_c~
 &+c"If you would like to get more information on what &+WAft&+werl&+Life&+c really
 &+c is, then let me suggest one thing - talk to the girl that sits over there."
 ~
-71334410 0 0 973152316 12510 0 0 0 S
-OG 0 512 6
+71334410 0 0 0 973152316 12510 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -67,8 +67,8 @@ golem adamantium guardian _nobutt_ assoc3_n_0 br_c~
 
 &+m"Need anything? Talk to the girl."
 ~
-71858762 0 0 973152316 12510 0 0 0 S
-OG 0 512 6
+71858762 0 0 0 973152316 12510 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -89,8 +89,8 @@ golem gold golden guardian _nobutt_ assoc3_n_0 br_c~
 
 &+Y"Looking for informations? Talk to the girl."
 ~
-71334474 0 0 973152316 12510 0 0 0 S
-OG 0 512 6
+71334474 0 0 0 973152316 12510 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

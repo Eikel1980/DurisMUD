@@ -5,7 +5,7 @@ gate wooden broken~
 ~
 15 6 4 0 14 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gate wooden broken~
    &+yThis gate lies barely attached to the end of a wooden fence.
@@ -20,7 +20,7 @@ feather~
 ~
 11 50 1 0 7 0 67514368 540673 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100 67108864 0 0 0
+1 0 100 100 67108864 0 0 0
 E
 feather~
    &+LThis is a small black feather that seemingly floats of its
@@ -36,7 +36,7 @@ a bright &+Wwhite&N feather wafts to the ground.&N~
 ~
 12 50 2 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 feather white~
    &+cThis &+Wwhite&N feather seems to have come from the downy
@@ -49,7 +49,7 @@ feather~
 ~
 12 50 2 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 feather~
    &+yThis &+rred&+y-tailed hawk's feather seems to have come from
@@ -62,7 +62,7 @@ feather~
 ~
 12 50 2 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 feather~
    &+CThis &+Lblack&N &+Cfalcon's feather appears to have come from
@@ -75,7 +75,7 @@ ring soft feathered~
 ~
 11 50 2 0 11 0 67108864 167772163 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100 67108864 0 0 0
+1 0 100 100 67108864 0 0 0
 E
 ring~
    &+bThis ring is made of magically entwined feathers from a hawk, owl,
@@ -92,7 +92,7 @@ frayed cloth collar~
 ~
 11 3 2 0 7 0 262144 5 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 67108864 0 0 0
+0 0 100 100 67108864 0 0 0
 E
 frayed cloth collar~
    &+mThis collar was once a lovely work of art, with embroidered&N &+Bf&+Yl&+Mo&+Rw&+Ge&+br&+W&+Bs&N
@@ -109,7 +109,7 @@ table~
 ~
 29 6 4 0 5 0 0 0 0 0 0
 340 98607 3 0 0 0 0 0
-5 0 50
+5 0 50 100
 E
 table~
    &+yThis old table was snapped cleanly in half, probably from the
@@ -123,7 +123,7 @@ nest~
 ~
 15 4 2 0 7 0 0 0 0 0 0
 0 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 nest~
    &+yThis little nest is built of tiny twigs and strips of faded
@@ -136,7 +136,7 @@ egg food~
 ~
 19 48 1 0 7 0 4096 1 0 0 0
 2 4 4 0 0 0 4 0
-0 0 100
+0 0 100 100
 E
 egg food~
    &+YThis little egg looks awfully tasty!
@@ -148,7 +148,7 @@ key~
 ~
 18 34 2 0 7 0 8392705 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key~
    &+WThis white key looks to be made of marble.
@@ -160,7 +160,7 @@ veil~
 ~
 11 3 3 0 14 0 13313 262145 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 veil~
    &+WThis wedding veil appears to never have been used.  It has been packed
@@ -178,7 +178,7 @@ chest small~
 ~
 15 34 2 0 14 0 4096 1 0 0 0
 150 29 98610 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest small~
    &+MThis little chest has been forgotten in the corner for many years.
@@ -193,7 +193,7 @@ knife carving rusty~
 ~
 5 16 3 0 7 0 4096 8396801 64 0 0
 2 1 4 11 0 0 0 0
-2 0 100
+2 0 100 100
 E
 knife carving rusty~
    &+LThis dull steel carving knife has &+rrusted&N &+Lhorribly from being
@@ -210,7 +210,7 @@ note paper message~
 ~
 16 29 2 0 7 0 8913024 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 note paper message~
    &+WIn a very feminine flowing hand is scripted...
@@ -228,7 +228,7 @@ web large~
 ~
 15 3 3 0 7 0 0 1025 0 0 0
 20 5 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 web large~
    &+LThis mass of webs seems large enough to hold just about anything,
@@ -245,7 +245,7 @@ leather gloves~
 ~
 12 14 2 0 7 0 4096 129 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 leather gloves~
    &+yThese old gloves have lay hidden by the spider webs for years.
@@ -262,7 +262,7 @@ pickle food~
 ~
 19 48 2 0 7 0 0 1 0 0 0
 48 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 pickle food~
    &+GThis sure is one yummy looking Pickle! Mmmmmm
@@ -274,7 +274,7 @@ skin waterskin water~
 ~
 17 3 3 0 7 0 0 1 0 0 0
 64 64 0 0 0 0 0 0
-2 20 100
+2 20 100 100
 E
 skin waterskin water~
    &+yThis waterskin is made of very tightly woven cloth that has been
@@ -287,7 +287,7 @@ map treasure paper~
 ~
 8 29 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 map treasure paper~
    &+YA brightly marked Treasure Map shows you Exactly Where "X"
@@ -300,7 +300,7 @@ loaf bread food~
 ~
 24 48 2 0 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 loaf bread food~
    &+wthis loaf of bread sure looks stale.. hope you are hungry!
@@ -312,7 +312,7 @@ torch light~
 ~
 1 6 3 0 7 0 1 1 0 0 0
 0 0 4 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 torch light~
    &+yThis old torch sure looks like it's about to go out..
@@ -324,7 +324,7 @@ bp backpack cloth tough~
 ~
 15 3 3 0 7 0 0 4210688 0 0 0
 150 5 0 150 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 bp backpack cloth tough~
    &+yThis old Backpack is sturdy as heck and looks like it could hold
@@ -337,7 +337,7 @@ table bedside broken~
 ~
 15 6 3 0 7 0 4096 0 0 0 0
 100 5 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 table bedside broken~
    &+yThis poor old table used to sit beside a grand bed.  Now, however,
@@ -350,7 +350,7 @@ cudgel mace club~
 ~
 5 6 3 0 7 0 16781568 8193 64 0 0
 10 1 6 7 0 0 0 0
-2 0 100
+2 0 100 100
 E
 cudgel mace club~
    &+GThis cudgel is made of hard greenwood and looks like it would make
@@ -367,7 +367,7 @@ belt cummerbund blue~
 ~
 11 3 2 0 12 0 4097 2049 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 belt cummerbund blue~
    &+bThis &+Bblue&N &+bcummerbund is made of the finest Satin. It looks
@@ -384,7 +384,7 @@ cedar chest~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 300 5 0 0 0 0 0 0
-150 0 100
+150 0 100 100
 E
 cedar chest~
    &+yThis lovely cedar chest has lain forgotten in the cellar for
@@ -397,7 +397,7 @@ letter note message~
 ~
 16 29 2 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 letter note message~
    &+cThis note was packed away with a formal outfit, most of which has
@@ -430,7 +430,7 @@ bones remains~
 ~
 13 10 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bones~
    &+WAfter burying her son and husband, this woman died a miserable
@@ -444,7 +444,7 @@ key tiny silver~
 ~
 18 22 2 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key tiny silver~
    &+WThis little key looks to be just the size to fit the lock
@@ -457,7 +457,7 @@ guano pile~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 5 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 bat guano pile~
    &+yThis little heap of bat guano lies on the floor between some boxes.
@@ -470,7 +470,7 @@ well~
 ~
 25 11 4 0 7 0 0 0 0 0 0
 98629 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 well~
    &+cThis old well seems to have &+ydried&N &+cup since the destruction
@@ -484,7 +484,7 @@ large cage rusted~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 300 15 98635 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large cage rusted~
    &+CThis large cage is empty of prisoners now, but contains remnants of
@@ -498,7 +498,7 @@ small cage~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 200 13 98635 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small cage~
    &+CThis small cage seems built to hold children captives.  What cruel
@@ -511,7 +511,7 @@ brass cage~
 ~
 15 17 3 0 7 0 0 0 0 0 0
 250 13 98635 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 brass cage~
    &+yThis cage is oddly made of brass, a soft metal.  Obviously the
@@ -525,7 +525,7 @@ rusty key~
 ~
 18 16 2 0 7 0 8392705 1 0 0 0
 0 24 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rusty key~
    &+rThis little key is so rusty you wonder how it has the power to turn
@@ -538,7 +538,7 @@ a pair of &+Ltattered&N pants lie in a heap on the ground.&N~
 ~
 11 13 2 0 7 0 0 33 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pants~
    &+yThese old pants are tattered and frayed as though they'd been worn
@@ -555,7 +555,7 @@ garish shoes~
 ~
 11 3 2 0 7 0 262145 65 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 garish shoes~
    &+GThese shoes are so bright they hurt your eyes, but at the same time,
@@ -572,7 +572,7 @@ rusty sword~
 ~
 5 16 3 0 7 0 12289 8193 0 0 0
 5 2 3 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 rusty sword~
    &+CThis longsword is made of steel, but you see great scars of
@@ -589,7 +589,7 @@ wooden gate~
 ~
 12 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden gate~
    &+yThis old wooden gate has definitely seen better days.  Its cross-
@@ -602,7 +602,7 @@ pot container cookpot~
 ~
 15 15 2 0 7 0 8192 1 2 0 0
 200 5 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pot container cookpot~
    &+LThis old pot has seen many years of use. It's made of well-seasoned
@@ -615,7 +615,7 @@ ladle~
 ~
 5 15 2 0 7 0 0 8193 0 0 0
 10 1 3 7 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ladle~
    &+gThis ladle has a nice long handle and seems to fit your hand well.
@@ -629,7 +629,7 @@ eyestalk beholder's~
 ~
 12 2 2 0 7 0 8916993 16385 0 4227727370 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 eyestalk beholder's~
    &+MThis fleshy eyestalk was once attached to the 'head' of a beholder.
@@ -643,7 +643,7 @@ green linen bag~
 ~
 15 3 2 0 7 0 1 8404993 0 0 0
 250 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 green linen bag~
    &+GThis linen bag is just the right size to carry around small items
@@ -656,7 +656,7 @@ round red gem~
 ~
 8 31 2 0 7 0 262145 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 round red gem~
    &+rThis little &+Rred&N &+rgem glitters with a lovely fiery light as it
@@ -669,7 +669,7 @@ dagger~
 ~
 5 18 2 0 7 0 8193 8396801 64 0 0
 2 2 3 11 0 0 0 0
-1 0 100
+1 0 100 100
 E
 dagger~
    &+mThis little Mithril dagger glimmers with an inner light.  Its edge is
@@ -686,7 +686,7 @@ handful plump blueberries berries~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 handful plump blueberries berries~
    &+BThis handful of juicy blueberries has fallen from the bushes.
@@ -698,7 +698,7 @@ little new potato~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 little new potato~
    &+ySmall clumps of dirt still cling to the potato you hold, giving it
@@ -711,7 +711,7 @@ cluster grapes~
 ~
 19 48 1 0 7 0 0 1 0 0 0
 48 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 cluster grapes~
    &+mThese grapes are plump and juicy, ripened to the peak of their
@@ -724,7 +724,7 @@ green pea peapods peapod~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 green pea peapods peapod~
    &+GThese bright green peapods look so tender and sweet, just the right
@@ -737,7 +737,7 @@ cluster grapes~
 ~
 19 48 1 0 7 0 4096 1 0 0 0
 48 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 cluster grapes~
     &+mThese grapes are plump and juicy, ripened to the peak of their
@@ -750,7 +750,7 @@ red berry berries~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 red berry berries~
    &+RThese bright red berries are scattered on the ground in between
@@ -763,7 +763,7 @@ corn~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 corn~
    &+YThis ear of corn has the plumpest kernels you've ever seen!&N
@@ -775,7 +775,7 @@ long green cucumber cucumbers~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 48 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 long green cucumber cucumbers~
    &+GThese long green cucumbers look refreshing in their glossy skins.&N
@@ -787,7 +787,7 @@ plump juicy melon melons~
 ~
 19 48 2 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 plump juicy melon melons~
    &+YThese melons look mouth-wateringly delicious as they nestle in
@@ -800,7 +800,7 @@ bright red strawberries berry strawberry~
 ~
 19 48 1 0 7 0 4096 1 0 0 0
 24 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 bright red strawberries berry strawberry~
    &+RThese clusters of bright red berries looks so delicious as to
@@ -813,7 +813,7 @@ long thin green beans bean~
 ~
 19 48 2 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 long thin green beans bean~
    &+GThese long, thin green beans hang invitingly from their branches.&N
@@ -825,7 +825,7 @@ rosy red tomatoes tomato~
 ~
 19 48 2 0 7 0 0 1 0 0 0
 48 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rosy red tomatoes tomato~
    &+RThese tomatoes look heavenly as they nestle within their bushes.&N
@@ -837,7 +837,7 @@ club toy~
 ~
 5 6 3 0 7 0 8192 8193 0 0 0
 10 1 4 7 0 0 0 0
-2 0 100
+2 0 100 100
 E
 club toy~
    &+yThis little club was used by the Ettin cubs as a toy, teething
@@ -855,7 +855,7 @@ loincloth~
 ~
 11 3 2 0 7 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 loincloth~
    &+LThis filthy scrap of cloth is stained&N &+Yyellow&N &+Lfrom the many
@@ -872,7 +872,7 @@ sack dress~
 ~
 11 3 2 0 7 0 0 9 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 sack dress~
    &+wThis nasty old sack has had holes cut into it where arms and a head
@@ -890,7 +890,7 @@ shackles~
 ~
 11 15 2 0 7 0 262144 20517 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 shackles~
    &+LThese black-iron shackles are&N &+rrusted&+L, pitted with age and
@@ -908,7 +908,7 @@ wooden club~
 ~
 5 6 3 0 7 0 4194304 8193 0 0 0
 10 1 10 6 0 0 0 0
-7 0 100
+7 0 100 100
 E
 wooden club~
    &+yThis old wooden club is battered and chipped.  It looks to have been
@@ -926,7 +926,7 @@ door dutch-door~
 ~
 12 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 door dutch-door~
    &+yThis old door, able to have the top half opened while the bottom half
@@ -940,7 +940,7 @@ saddle~
 ~
 11 14 3 0 12 0 4096 16777217 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 saddle~
    &+yThis saddle is a beautiful example of a leather-worker's skills.
@@ -959,7 +959,7 @@ large storage bin~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 300 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large storage bin~
    &+GThis large storage bin looks handy for storing the many items one
@@ -972,7 +972,7 @@ sign~
 ~
 12 6 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    &+yThis old sign leans over to the side of the tunnel shaft.
@@ -992,7 +992,7 @@ table~
 ~
 29 6 4 0 5 0 0 0 0 0 0
 340 98610 1 0 0 0 0 0
-5 0 50
+5 0 50 100
 E
 table~
    &+yThis old table was snapped cleanly in half, probably from the

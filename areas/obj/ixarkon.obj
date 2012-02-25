@@ -5,7 +5,7 @@ A large iron lever connected to the bridge mechanism sits here.~
 ~
 29 15 0 50 7 0 0 0 0 0 0
 340 96423 1 1 0 0 0 0
-50 100 100
+50 100 100 100
 E
 iron lever~
 This huge iron lever fits intricately with the bridgework
@@ -19,7 +19,7 @@ A large iron lever connected to the bridge mechanism sits here.~
 ~
 29 15 0 50 7 0 0 0 0 0 0
 340 96428 3 1 0 0 0 0
-50 100 100
+50 100 100 100
 E
 iron lever~
 This huge iron lever fits intricately with the bridgework
@@ -33,7 +33,7 @@ A &+Gs&+Rh&+Yi&+Bm&+Mm&+Le&+Cr&+Gi&+Rn&+Yg&N veil of colors.~
 ~
 13 1 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-100 0 100
+100 0 100 100
 E
 shimmering veil colors~
 &+GThe veil of colors shifts and flows in various patterns.&N
@@ -48,7 +48,7 @@ dirty rags~
 ~
 11 3 3 8 7 0 0 1025 0 0 0
 0 0 0 4 0 0 0 0
-1 5 100
+1 5 100 100
 E
 dirty rags~
 &+LLice infested rags, covered with dirt and grime.&N
@@ -62,7 +62,7 @@ a thick &+Liron&N collar~
 ~
 9 15 0 0 7 0 0 5 0 0 0
 5 2 1 4 0 0 0 0
-2 100 100
+2 100 100 100
 E
 thick iron collar~
 A thick band of metal, with ends riveted together. Some of the
@@ -76,7 +76,7 @@ rusty shackles~
 ~
 9 15 0 0 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 E
 rusty shackles~
 These iron shackles have seen better days, having nearly rusted
@@ -89,7 +89,7 @@ cloth jacket ragged~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 250 100
+1 250 100 100
 E
 cloth jacket~
 A loose cloth jacket, worn by many of the slaves of the city,
@@ -107,7 +107,7 @@ long cruel whip~
 ~
 5 13 3 0 7 0 0 8193 0 0 0
 14 1 4 2 0 0 0 0
-1 1230 100
+1 1230 100 100
 E
 long cruel whip~
 This long black whip has been used by many of the slave overseers
@@ -123,7 +123,7 @@ A &+rwicked&N looking dagger lies on the ground.~
 ~
 5 16 2 0 7 0 0 8193 0 0 0
 2 2 3 0 0 0 0 0
-1 1432 100
+1 1432 100 100
 E
 tiny barbed dagger~
 A small steel dagger, with many wicked barbs running along the
@@ -138,7 +138,7 @@ An evil-looking dagger smeared with poison lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 2 4 0 2 0 0 0
-0 6343 100
+0 6343 100 100
 E
 serrated dagger poison~
 This long serrated dagger has been smeared with some foul poison
@@ -156,7 +156,7 @@ a small &+Ygolden&n ring lies on the ground.~
 ~
 11 24 1 1 7 0 0 3 0 0 0
 0 0 0 1 0 0 0 0
-0 2466 100
+0 2466 100 100
 E
 tiny golden ring~
 A small golden ring, of mediocre craftsmanship.
@@ -172,7 +172,7 @@ A huge waistband of leather lies on the ground.~
 ~
 9 13 3 3 7 0 0 2049 64 0 0
 7 10 0 4 0 0 0 0
-2 34065 100
+2 34065 100 100
 E
 thick leather belt glowing~
 This massive belt has been formed of many pieces of leather
@@ -192,7 +192,7 @@ A ragged leather loincloth lies on the ground.~
 ~
 11 13 0 0 7 0 0 2049 0 0 0
 0 0 0 5 0 0 0 0
-0 25 100
+0 25 100 100
 E
 leather loincloth~
 A dirty leather loincloth, this ragged clothing leaves not much
@@ -207,7 +207,7 @@ A small rock pulsates with energy here.~
 ~
 12 11 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 400 100
+0 400 100 100
 E
 small glowing rock~
 This small rock seems almost chalky in composition, and seems to
@@ -224,7 +224,7 @@ A piece of soft red leather lies here.~
 ~
 11 3 0 0 7 0 0 17 0 0 0
 0 0 0 1 0 0 0 0
-0 5906 100
+0 5906 100 100
 E
 red skullcap~
 This red leather skullcap has many intricate embroideries on it,
@@ -241,7 +241,7 @@ A piece of soft black leather lies here.~
 ~
 11 3 0 0 7 0 0 17 0 0 0
 0 0 0 1 0 0 0 0
-0 10906 100
+0 10906 100 100
 E
 black skullcap~
 This black leather skullcap has many intricate embroideries on
@@ -258,7 +258,7 @@ a thick bracelet of iron lies here.~
 ~
 9 15 3 3 7 0 0 4097 0 0 0
 5 11 24 4 0 0 0 0
-0 200 100
+0 200 100 100
 E
 heavy iron bracelet~
 Thick iron rivets seal off the ends of this bracelet of iron,
@@ -271,7 +271,7 @@ bone white bone-white parchment~
 ~
 2 29 1 2 7 0 0 1 0 0 0
 25 1 0 0 0 0 0 0
-0 200 100
+0 200 100 100
 E
 bone bone-white white parchment~
 &+LThis bone-white parchment has many spidery runes scrawled over
@@ -285,7 +285,7 @@ A piece of vellum dyed &+ggreen&N lies on the ground here.~
 ~
 2 29 1 2 7 0 0 1 0 0 0
 45 44 0 0 0 0 0 0
-0 255 100
+0 255 100 100
 E
 piece green vellum~
 &+gThis piece of vellum has been dyed a deep green color, and
@@ -298,7 +298,7 @@ bright blue scroll~
 ~
 2 29 1 2 7 0 0 1 0 0 0
 25 76 0 0 0 0 0 0
-0 6434 100
+0 6434 100 100
 E
 bright blue scroll~
 &+BA bright blue piece of paper which reeks of magic.&N
@@ -315,7 +315,7 @@ sleeves silk purple~
 ~
 11 3 3 8 7 0 0 257 0 0 0
 0 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 sleeves silk purple~
 &+mElegantly woven silk has been dyed a deep purple color and
@@ -332,7 +332,7 @@ green gauze mask~
 ~
 11 3 3 3 7 0 0 262145 0 0 0
 0 0 0 4 0 0 0 0
-0 24000 100
+0 24000 100 100
 E
 green gauze mask~
 &+GA sheer film of gauze has been formed into a mask of sorts.&N
@@ -348,7 +348,7 @@ A bundle of cloth lies on the ground here.~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 0 0 4 0 0 0 0
-0 500 100
+0 500 100 100
 E
 baggy cloth pants~
 Coarse cloth has been stitched together to form a rough pair of
@@ -363,7 +363,7 @@ A small axe lies on the ground.~
 ~
 5 16 3 8 7 0 0 8193 0 0 0
 1 1 6 3 0 0 0 0
-0 3400 100
+0 3400 100 100
 E
 small hand axe~
 A small axe, of mediocre craftsmanship.
@@ -379,7 +379,7 @@ dangling golden earring~
 ~
 11 24 1 1 7 0 0 524289 0 0 0
 0 0 0 1 0 0 0 0
-0 23000 100
+0 23000 100 100
 E
 dangling golden earring~
 &+yA small hoop of gold, fashioned to be worn by one of the
@@ -396,7 +396,7 @@ A wooden raft lies on the ground.~
 ~
 22 6 4 30 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-25 400 100
+25 400 100 100
 E
 raft small logs~
 Many small logs have been thatched together to form a makeshift
@@ -409,7 +409,7 @@ A small cloth bag lies on the ground.~
 ~
 15 3 3 8 7 0 0 1 0 0 0
 50 1 -1 80 0 0 0 0
-0 900 100
+0 900 100 100
 E
 small cloth bag~
 A small bag of cloth. Doesn't look very big.
@@ -421,7 +421,7 @@ A black cloth bag lies on the ground here.~
 ~
 15 12 3 10 7 0 0 1 0 0 0
 50 1 -1 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bag illithid~
 This large black cloth bag is adorned with weird arcane symbols of the
@@ -435,7 +435,7 @@ a suit of steel ringmail lies on the ground.~
 ~
 9 16 0 0 7 0 0 9 0 0 0
 12 3 1 3 0 0 0 0
-0 54000 100
+0 54000 100 100
 E
 suit steel ringmail~
 Hundreds of light steel rings have been linked together to form a
@@ -450,7 +450,7 @@ a pair of protective goggles lies on the ground.~
 ~
 9 16 3 3 7 0 0 131073 0 0 0
 2 12 2 3 0 0 0 0
-0 31200 100
+0 31200 100 100
 E
 protective goggles~
 A pair of goggles with hard crystalline lenses serves as a
@@ -467,7 +467,7 @@ A pile of rough leather lies on the ground.~
 ~
 11 13 3 8 7 0 0 1025 0 0 0
 0 0 0 5 0 0 0 0
-0 570 100
+0 570 100 100
 E
 rough leather coat~
 Coarse rough leather has been stitched together to form a crude
@@ -482,7 +482,7 @@ A large round spore lies here, waiting to burst.~
 ~
 12 48 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom spore~
 This large round spore is from one of the myconid's possibly,
@@ -500,7 +500,7 @@ A pair of leather gloves lies on the ground.~
 ~
 11 13 3 6 7 0 0 129 0 0 0
 0 0 0 5 0 0 0 0
-0 300 100
+0 300 100 100
 E
 tough leather gloves~
 A pair of tough leather gloves, used by workers in the gardens.
@@ -514,7 +514,7 @@ A long robe of silk lies on the ground collecting dust.~
 ~
 11 3 3 8 7 0 0 1025 0 0 0
 0 0 0 4 0 0 0 0
-0 1200000 100
+0 1200000 100 100
 E
 long silk robe~
 This long flowing robe is made of the finest silk and is
@@ -531,7 +531,7 @@ small spider amulet~
 ~
 11 16 3 2 7 0 0 5 0 0 0
 0 0 0 1 0 0 0 0
-0 40000 100
+0 40000 100 100
 E
 small spider amulet~
 This small obsidian amulet has been carved to represent the Drow
@@ -549,7 +549,7 @@ A soft leather skullcap lies on the ground.~
 ~
 11 10 0 0 7 0 0 17 0 0 0
 0 0 0 9 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 bone bone-white white skullcap~
 A soft piece of leather has been dyed bone-white to form a small
@@ -567,7 +567,7 @@ a pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
 A pile of silver coins.
@@ -579,7 +579,7 @@ a pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
 A pile of gold coins.
@@ -591,7 +591,7 @@ a pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
 A pile of gold coins.
@@ -603,7 +603,7 @@ a pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
 A pile of platinum coins.
@@ -615,7 +615,7 @@ a pile of coins lies here.~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
 A pile of platinum coins.
@@ -627,7 +627,7 @@ a pile of coins lies here~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
 A large pile of platinum coins.
@@ -639,7 +639,7 @@ A small leather water skin lies here.~
 ~
 17 12 3 8 7 0 0 1 0 0 0
 20 20 0 0 0 0 0 0
-0 400 100
+0 400 100 100
 E
 skin water small leather~
 A small leather water skin, containing a small amount of brackish looking
@@ -652,7 +652,7 @@ A faintly shimmering large bag lies on the ground here.~
 ~
 15 27 3 10 15 0 134218752 1 64 0 0
 500 1 -1 100 0 0 0 0
--300 400000 100
+-300 400000 100 100
 E
 bottomless bag illithids~
 Strange illithid magic has been worked to form this mighty

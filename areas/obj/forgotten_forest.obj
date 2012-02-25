@@ -5,7 +5,7 @@ A large &+cchunk&N of &+rmeat&N lies here.~
 ~
 19 2 4 0 1 0 8 1 0 0 0
 15 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 chunk meat~
 &+RIt has a deep &+rred &+Rcolour and a strong &+rbloody &+Rsmell.
@@ -17,7 +17,7 @@ mushroom yellow small~
 ~
 19 48 1 0 10 0 20488 1 0 0 0
 9 6 5 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 mushroom yellow small~
 &+yIn Poland it's called '&+Ykurka&+y'.
@@ -29,7 +29,7 @@ some &+Lblack&+mberries~
 ~
 19 48 2 0 9 0 20488 16385 0 0 0
 12 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 blackberries berries~
 &+mA bunch of delicious looking &+Lblack&+mberries. They look very tasty indeed.
@@ -41,7 +41,7 @@ saddle iron leather~
 ~
 9 13 4 0 3 0 0 16777217 0 0 0
 25 0 0 3 0 0 0 0
-6 79014 100 0 16 0 0
+6 79014 100 100 0 16 0 0
 E
 saddle iron leather~
 &+yThis is a crudly constructed leather saddle, held together with large &+Liron
@@ -58,7 +58,7 @@ boots pair~
 ~
 9 14 2 0 13 0 24576 65 0 0 0
 8 0 0 2 0 0 0 0
-4 47141 100
+4 47141 100 100
 E
 boots pair~
 &+GThey are fashioned from rough leather that has been &+yoiled &+Gfrequently to make
@@ -75,7 +75,7 @@ A very large &+cchunk&N of &+rmeat&N lies here.~
 ~
 19 2 4 0 1 0 8 1 0 0 0
 15 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 chunk meat large~
 &+RIt has a deep &+rred &+Rcolour and a strong &+rbloody &+Rsmell.
@@ -87,7 +87,7 @@ A pair of soft gloves made from &+Wfeathers&N is lying on the ground.~
 ~
 9 50 2 0 5 0 278528 129 0 0 0
 3 0 0 1 0 0 0 0
-2 20513 100
+2 20513 100 100
 E
 gloves~
 The gloves are made from soft &+Wwhite feathers&N, but they appear quite durable.

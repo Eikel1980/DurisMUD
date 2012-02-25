@@ -5,7 +5,7 @@ stone standing large~
 ~
 12 15 3 0 7 0 64 0 0 1 0
 0 0 0 0 0 0 0 0
-1 0 100 100
+1 0 100 0
 E
 stone standing large runed&n~
 &+L   This large stone is made of solid granite and seems to be extremely old.
@@ -25,7 +25,7 @@ keystone stone dubneth~
 ~
 15 15 4 0 7 0 64 0 0 1 0
 40 29 134125 13 0 0 0 0
-1 0 100 100
+1 0 100 0
 E
 keystone stone dubneth&n~
 &+L   The keystone of Dubneth has known marks at all, the only thing that is odd
@@ -42,7 +42,7 @@ farmer impailed figure~
 ~
 12 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100 100
+0 0 100 0
 E
 farmer impailed figure&n~
    The farmer looks fairly recently impailed. He seems to have been in his
@@ -73,7 +73,7 @@ farmer decaptitated~
 ~
 12 15 3 0 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 farmer decaptitated~
    The corpse looks like it actually died of blood loss. It seems like he
@@ -89,7 +89,7 @@ sword black two-handed~
 ~
 5 15 3 10 7 0 4194304 8193 0 1 0
 13 2 6 3 0 0 0 0
-10 9581 100 100
+10 9581 100 0
 E
 sword black two-handed~
 &+L   This large sword has been specificaly blessed by the dark clerics of
@@ -108,7 +108,7 @@ dagger black iron~
 ~
 5 15 3 0 7 10 0 8193 0 49152 0
 2 2 4 11 1 0 0 0
-5 6025 100 100
+5 6025 100 0
 E
 dagger black iron&n~
 &+L   This black dagger is made out of normal iron that has been exposed to the
@@ -127,7 +127,7 @@ head decapitated joseph~
 ~
 12 15 3 0 7 0 4096 8404993 0 1 0
 0 0 0 0 0 0 0 0
-3 1 100 100
+3 1 100 0
 E
 head decapitated joseph&n~
 &+L  The head belonged once to Joseph Hammerson, who died trying to destroy the
@@ -140,7 +140,7 @@ table mess~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 table mess~
 &n&+y   This long table is used to eat on my all the guards of the tower. The
@@ -154,7 +154,7 @@ black longsword iron sword~
 ~
 5 15 3 0 7 10 64 8193 0 32774 0
 5 2 5 3 0 0 0 0
-8 7582 100 100
+8 7582 100 0
 E
 black longsword iron~
 &+L   This black longsword is one of many that has been mass produced for the
@@ -173,7 +173,7 @@ leg chicken~
 ~
 19 15 3 0 7 0 0 16385 0 1 0
 6 0 0 0 0 0 0 0
-1 7 100 100
+1 7 100 0
 E
 leg chicken&n~
 &n&+y  Its a chicken leg, its been fried, thats about it.&n
@@ -185,7 +185,7 @@ club massive~
 ~
 5 15 3 0 7 0 4194304 8193 0 863928346 0
 10 3 5 6 0 0 0 0
-0 3095 100 100
+0 3095 100 0
 E
 club massive~
 &n&+y  Its a big mean looking hill giant club. It has written into the club
@@ -203,7 +203,7 @@ spoon wooden~
 ~
 5 15 3 0 7 0 0 8193 0 57344 0
 2 2 3 11 0 0 0 0
-3 4 100 100
+3 4 100 0
 E
 spoon wooden&n~
 &n&+y  Its a spoon with the normal end shaved off to make a vicious little point.
@@ -219,7 +219,7 @@ altar black sargon~
 ~
 12 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-100 0 100 100
+100 0 100 0
 E
 altar black sargon~
 &+L   The black altar does not look like it is well taken care of, but it does
@@ -254,7 +254,7 @@ cask ale~
 ~
 17 15 3 0 7 0 0 16385 0 1 0
 14 13 3 0 0 0 0 0
-10 6025 100 100
+10 6025 100 0
 E
 cask ale&n~
 &+y   This large ale cask has the words written 'Dargons Best XXXX' written on
@@ -267,7 +267,7 @@ A &+Wsilver plated &n&+rwine &nglass is here sitting on the ground.&n~
 ~
 17 15 3 0 7 10 64 8404993 0 1 0
 12 10 13 0 0 0 0 0
-1 15942 100 100
+1 15942 100 0
 E
 silver wine glass&n~
 &n&+r   This wine glass is made of silver except for the top which is made of
@@ -281,7 +281,7 @@ bag traveling~
 ~
 15 15 3 0 7 0 0 4194305 0 1 0
 50 5 0 50 0 0 0 0
-0 502 100 100
+0 502 100 0
 E
 bag traveling&n~
 &+y   This bag is made of buckskin leather and is very nice and fits on one's
@@ -296,7 +296,7 @@ letter finely&n~
 ~
 13 15 3 0 7 0 64 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 letter finely&n~
 
@@ -321,7 +321,7 @@ torch flickering~
 ~
 13 15 3 0 7 0 262208 0 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 torch flickering&n~
 &+R   This flickering torch seems to not be burning down at all, and it seems
@@ -334,7 +334,7 @@ key black iron~
 ~
 12 15 3 0 7 0 8388608 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 key black iron&n~
 &+L   This is a large oddly made black spiked key, it looks like it could hurt
@@ -347,7 +347,7 @@ note worn letter~
 ~
 13 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 note worn letter&n~
 &+c   The letter seems to have traveled quite a ways to get here, it has food
@@ -369,7 +369,7 @@ black mace~
 ~
 5 15 3 0 7 0 64 8193 0 416 0
 6 2 4 7 0 0 0 0
-1 5024 100 100
+1 5024 100 0
 E
 black mace&n~
 &+L  This is a black iron mace used by only those who are devotee's of Sargon,
@@ -451,7 +451,7 @@ sargon figure small~
 ~
 13 15 3 0 7 0 65 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 sargon figure small&n~
 &+L   The statue looks to be about four feet tall and shows a human type of
@@ -472,7 +472,7 @@ black key small~
 ~
 13 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 black key small&n~
 &+L   Its a small black key, devoid of adorment.
@@ -484,7 +484,7 @@ key adamantium small~
 ~
 13 15 3 0 7 0 4160 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 key admantium small~
 &+L   This small admantium key has the mark of Sargon on it. &n
@@ -516,7 +516,7 @@ altar bloody sargon~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 altar bloody sargon&n~
 &+L   This large bloody altar has been consecrated to the Dark Lord, Sargon.
@@ -530,7 +530,7 @@ locket gold~
 ~
 13 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 4025 100 100
+0 4025 100 0
 E
 locket gold&n~
 &+Y   It is a pretty gold locket in it with a small old picture of a woman,
@@ -543,7 +543,7 @@ desk wood stained~
 ~
 15 15 3 0 7 0 64 0 0 1 0
 100 13 134026 10 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 desk wood stained&n~
 &+L   This dark desk seems to be made out of mahagoney and has been stained a
@@ -592,7 +592,7 @@ blood bottle black~
 ~
 10 15 3 0 7 0 4160 16385 0 1 0
 52 179 36 163 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 blood bottle black~
 &+r   This bottle seems to filled with some sort of blood that is warm to the
@@ -605,7 +605,7 @@ A hastily written note lays here.&n~
 ~
 13 15 3 0 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 note written hastily~
    The note is hastily made and almost illegible but reads:
@@ -623,7 +623,7 @@ A letter with the seal of &n&+rBloodstone &non it lays here.&n~
 ~
 12 15 3 0 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 letter bloodstone&n~
 &+L   Dear Kinslor,
@@ -668,7 +668,7 @@ key keyboard&n~
 ~
 15 15 3 0 7 0 2 0 0 1 0
 100 0 0 100 0 0 0 0
-0 1 100 100
+0 1 100 0
 E
 key keyboard&n~
 &+y   This keyboard usually has all the keys to both the shackles and also the
@@ -681,7 +681,7 @@ key iron black~
 ~
 12 15 3 0 7 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-1 592 100 100
+1 592 100 0
 E
 key iron black~
 &+L  Its a key of black iron, who knows what it goes to. &n
@@ -693,7 +693,7 @@ steel small key~
 ~
 12 15 3 0 7 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 steel small key&n~
 &+W   The key has the small letters 'SG' written on it. It seems to be a very
@@ -706,7 +706,7 @@ corpse girl peasant girl's~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 corpse girl peasant girl's~
 &+C   This is the corpse of a young peasant girl. There is a large hole in her
@@ -719,7 +719,7 @@ corpse orc ancient~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 orc ancient corpse~
 &+r   This ancient orc had appearantly out lived his usefulness in life, only
@@ -733,7 +733,7 @@ corpse young knight~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 corpse young knight&n~
 &+W   This knight must have been captured by the order. He seems to have been
@@ -747,7 +747,7 @@ village farmer corpse~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 village farmer corpse&n~
 &+g   This farmer was once a member of the village of Dubneth. Now however he
@@ -761,7 +761,7 @@ book bookshelves~
 ~
 15 15 3 0 7 0 2 0 0 1 0
 100 0 0 100 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 book bookshelves&n~
 &+L   These bookshelves are made of black stone, and have intricate symbols of
@@ -775,7 +775,7 @@ book inquiry temporal magic~
 ~
 33 15 3 0 7 0 64 16385 0 3584 0
 0 0 120 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 book inquiry temporal magic&n~
 &+C   This book seems to be about temporal magic. It seems however that there
@@ -789,7 +789,7 @@ demon bound spellbook earlion book~
 ~
 33 15 3 0 7 0 4161 16385 0 3584 0
 0 0 100 0 0 0 0 0
-1 32953 100 100
+1 32953 100 0
 E
 demon bound spellbook earlion&n~
 &+L   This is the only spellbook that Earlion kept with him after he was
@@ -808,7 +808,7 @@ iron black chest~
 ~
 15 15 3 0 7 0 2 0 0 1 0
 100 29 134048 100 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 iron black chest&n~
 &+L   This large chest seems to have been welded directly into the floor. Also
@@ -822,7 +822,7 @@ bone key~
 ~
 12 15 3 0 7 0 8392769 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 bone key&n~
 &+W  Its a key made of bone, it seems to be a finger bone actually, but it is
@@ -899,7 +899,7 @@ drow elf journal~
 ~
 13 15 3 0 7 0 64 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 153 100 100
+1 153 100 0
 E
 drow elf journal&n~
    This journal seems to be a diary of some sort, a few of the excerts read:
@@ -942,7 +942,7 @@ exit north south east west n s e w~
 ~
 13 15 3 0 7 0 2 0 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 exit desciptions north south east west&n~
 &n&+b   In that direction are more of the long mists of this horrible maze...&n
@@ -954,7 +954,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134054 1 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter&n~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -966,7 +966,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134055 2 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter&n~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -978,7 +978,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134056 3 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -990,7 +990,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134057 4 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter&n~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -1002,7 +1002,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134057 1 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter&n~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -1014,7 +1014,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134059 2 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter&n~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -1026,7 +1026,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134060 3 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -1038,7 +1038,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134061 4 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -1050,7 +1050,7 @@ maze teleporter~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134058 4 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 maze teleporter~
 &n&+b   The maze here seems to go on forever... who can tell where it ends.&n
@@ -1062,7 +1062,7 @@ portal shadows~
 ~
 25 15 3 0 7 0 33554497 0 0 1 0
 134117 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 portal shadows~
 &+W   This glowing portal is made out of shadows. Darkness and light seem to
@@ -1075,7 +1075,7 @@ spectre dagger~
 ~
 5 15 3 0 7 0 524353 8193 0 57344 0
 2 3 5 11 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 spectre dagger&n~
 &+C  It is a dagger made of ethereal mist that seems to be fading away.&n
@@ -1091,7 +1091,7 @@ blood flesh red letter~
 ~
 12 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 blood flesh red letter~
 &+r   This letter is written in blood and on parchmant made of human flesh. It
@@ -1117,7 +1117,7 @@ circlet flame flames shadows~
 ~
 9 15 3 0 7 20 97 5 0 7680 0
 7 2 1 3 0 0 0 0
-1 32964 100 100
+1 32964 100 0
 E
 circlet flame flames shadows~
 &+r   This circlet is one of many that have been givin to mortals by the demons
@@ -1136,7 +1136,7 @@ wand skull~
 ~
 3 15 3 0 7 0 65 16385 0 1536 0
 51 2 2 271 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 wand skull&n~
 &+L   This wand is made of blackwood and has a small animal skull at the top of
@@ -1149,7 +1149,7 @@ portal bones~
 ~
 25 15 3 0 7 0 8257 0 0 1 0
 134051 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 portal bones~
 &+L   This portal is made of bones that incircle a glowing portal that seems to
@@ -1162,7 +1162,7 @@ bone picture mural~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134066 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 bone picture murial~
 &+W   The picture itself seems to be glowing slightly... how odd.&n
@@ -1174,7 +1174,7 @@ bone picture mural~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134073 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 bone picture murial~
 &+W   The picture itself seems to be glowing slightly... how odd.&n
@@ -1186,7 +1186,7 @@ portal elemental element~
 ~
 25 15 3 0 7 0 8257 0 0 1 0
 134045 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 portal bones~
 &+L   This portal is made of bones that incircle a glowing portal that seems to
@@ -1199,7 +1199,7 @@ energy power plane~
 ~
 14 15 3 0 7 0 2 0 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 energy power plane~
 &+W   This is the power of the elemental plane of energy.&n
@@ -1213,7 +1213,7 @@ table wood~
 ~
 15 15 3 0 7 0 2 0 0 1 0
 52 0 0 100 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 table wood~
 &+g   Its a large table with some papers on it.&n
@@ -1225,7 +1225,7 @@ notes note scattered papers paper~
 ~
 12 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 notes note scattered papers paper~
    These notes are out of order and strange put you manage to put the following
@@ -1251,7 +1251,7 @@ A teleporter the PC's can't see to room 75.&n~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134074 6 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 teleporter~
 &+B   Below there seems to be a swirling of mist.&n
@@ -1263,7 +1263,7 @@ paper note letter papers~
 ~
 12 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 paper note letter papers~
    The piece of paper seems to be a translation from some language into
@@ -1278,7 +1278,7 @@ paper note letter papers~
 ~
 12 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 paper note letter papers~
    The note says simply "I know that one of the parts of the word must be
@@ -1292,7 +1292,7 @@ paper note letter papers~
 ~
 12 15 3 0 7 0 4096 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 paper note letter papers old~
    The old letter seems to be rubbish, however the simple word "os" is written
@@ -1305,7 +1305,7 @@ paper note letter papers~
 ~
 12 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 paper note letter papers~
 &+L   The piece of black parchment has is made of paper, but of some odd tree.
@@ -1322,7 +1322,7 @@ a potion of &+Lgray mist&n~
 ~
 10 15 3 0 7 0 4161 16385 0 1 0
 30 84 108 41 100 0 0 0
-1 1 100 100
+1 1 100 0
 E
 potion gray mist~
 &+L  This potion is made of swirling grey mist.&n
@@ -1334,7 +1334,7 @@ a scroll of &+Leradication&n~
 ~
 2 15 3 0 7 0 69697 16385 0 3584 0
 51 25 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 scroll eradication~
 &+L  This scroll kills people, it says so on the outside.&n
@@ -1346,7 +1346,7 @@ wand shadow shadows~
 ~
 3 15 3 0 7 0 69697 16385 0 3584 0
 50 2 1 147 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 wand shadow shadows~
 &+L  This wand is almost insumstantial. It is made of darkness and shadows.&n
@@ -1358,7 +1358,7 @@ white liquid potion~
 ~
 10 15 3 0 7 0 69697 16385 0 1 0
 40 9 75 16 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 white liquid potion~
 &+W   Its a bottle with a white liquid in it, it seems clerical in nature.&n
@@ -1370,7 +1370,7 @@ portal darkness~
 ~
 15 15 3 0 7 0 65 0 0 1 0
 100 5 0 100 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 portal darkness~
 &+L   This portal seems to open up into a small portal before enering the
@@ -1456,7 +1456,7 @@ mural picture portal~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134105 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 murial picture portal~
 &+r   The murial before you is one of fore and carnage... however... looking at
@@ -1470,7 +1470,7 @@ portal demonic glowing~
 ~
 25 15 3 0 7 0 1 0 0 1 0
 134047 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 portal demonic glowing~
 &+r   This glowing portal was created by the demons and the conjurers to link
@@ -1502,7 +1502,7 @@ pearl glowing negative energy~
 ~
 12 15 3 0 7 10 4449 524289 0 1 0
 0 0 0 0 0 0 0 0
-1 32859 100 100
+1 32859 100 0
 E
 pearl glowing negative energy&n~
 &+M   This glowing peral is the remains of a demons soul. Sometimes a demon's
@@ -1578,7 +1578,7 @@ tower black key chamber~
 ~
 12 15 3 0 7 0 8388609 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 tower black key chamber~
 &+L   This long black key is the only thing that will open the final door that
@@ -1591,7 +1591,7 @@ key treasure tower~
 ~
 12 15 3 0 7 0 1 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 key treasure tower~
 &+L   This key is held normally bu Urian Shadowborn and goes to the treasure
@@ -1604,7 +1604,7 @@ coins pile platinum~
 ~
 20 15 3 0 7 0 0 1 0 1 0
 0 0 0 500 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 coins pile platinum~
 &+W  Its a really big pile of coins.&n
@@ -1616,7 +1616,7 @@ gauntlets eradication pair&n~
 ~
 9 15 3 0 7 30 1069377 129 0 57790 0
 13 7 1 3 0 0 0 0
-7 54924 100 100
+7 54924 100 0
 E
 gauntlets eradication pair~
 &+r   These gauntlets were once worn my Lord Edrick Von'Darkenthe. He was the
@@ -1724,7 +1724,7 @@ bone key charred~
 ~
 12 15 3 0 7 0 8388673 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 bone key charred~
 &n&+r   This key seems to be made of bones, and is clearly of demonic manufacture.&n
@@ -1760,7 +1760,7 @@ small parchment human flesh scroll letter~
 ~
 12 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 small parchment human flesh~
    This scroll is written on fresh human flesh that has been slightly cured.&n
@@ -1787,7 +1787,7 @@ staff cold iron cold-iron long~
 ~
 4 15 3 0 7 0 65 16385 0 1 0
 20 10 5 10 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 staff cold iron cold-iron long~
 &+L   This staff is a conjurers staff, and is used to draw circles of power to
@@ -1804,7 +1804,7 @@ sword glowing light broadsword _id_~
 ~
 5 15 3 0 7 0 270657 8193 0 14 0
 5 4 6 3 0 0 0 0
-9 42842 100 100
+9 42842 100 0
 E
 _id_name_~
 broadsword sword redemption light
@@ -1839,7 +1839,7 @@ bone mask bloodstone~
 ~
 9 15 3 0 7 0 64 262145 0 1 0
 6 13 0 4 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 bone mask bloodstone~
 &+L   This mask is made of the bones of dead skeletons, enchented again it is
@@ -1856,7 +1856,7 @@ iron gate key~
 ~
 12 15 3 0 7 0 8388608 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 iron gate key~
 &+L   Its a large iron gate key.&n
@@ -1868,7 +1868,7 @@ drow made bracelet~
 ~
 9 15 3 0 7 0 64 4097 0 6 0
 8 11 1 3 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 drow made bracelet~
 &+m   This drow made bracelet was made for one of the few lovers that Essra,
@@ -1905,7 +1905,7 @@ key death magic~
 ~
 12 15 3 0 7 0 4161 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 key death magic~
 &+L   This ancient key is one of the three stasis keys.&n
@@ -1917,7 +1917,7 @@ key elemental magic~
 ~
 12 15 3 0 7 0 4161 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 key death magic~
 &+L   This ancient key is one of the three stasis keys.&n
@@ -1929,7 +1929,7 @@ key creation magic~
 ~
 12 15 3 0 7 0 4161 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 key death magic&n~
 &+L   This ancient key is one of the three stasis keys.
@@ -1941,7 +1941,7 @@ portal shadows~
 ~
 25 15 3 0 7 0 33554497 0 0 1 0
 134058 7 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 portal shadows~
 &+W   This glowing portal is made out of shadows. Darkness and light seem to
@@ -1997,7 +1997,7 @@ key stasis~
 ~
 12 15 3 0 7 0 1 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 key stasis~
 &+B   This key seems to exist only partially in this reality, it seems to fade
@@ -2010,7 +2010,7 @@ The corpse of the &+Wlegendary &n&+msorcerer &+WMartin &+CL&+Ble&n&+bwe&+Blly&+C
 ~
 15 15 3 0 7 0 0 0 0 1 0
 100 0 0 100 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 corpse martin sorcerer llewellyn&n~
    This is the corpse of one of the most poweful &n&+msorcerers&n that has ever
@@ -2037,7 +2037,7 @@ spellbook book legendary sorcerer martin llewellyn&n~
 ~
 33 15 3 0 7 100 28737 16385 0 3584 0
 0 0 200 0 0 0 0 0
-1 100493 100 100
+1 100493 100 0
 E
 spellbook book legendary sorcerer martin llewelyn&n~
    Opening the spellbook you see that the first page has been written in
@@ -2179,7 +2179,7 @@ star key~
 ~
 12 15 3 0 7 0 8388673 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 star key~
 &+L   This is the Star Key, the gate key to open the Prison of Exile and free,
@@ -2210,7 +2210,7 @@ A teleporter the PC's can't see to room 5.&n~
 ~
 25 15 3 0 7 0 2 0 0 1 0
 134004 1 -1 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 teleportar&n~
    Its a teleportar the PC's can't see.&n
@@ -2222,7 +2222,7 @@ bowl pub stew~
 ~
 19 15 3 0 7 0 0 16385 0 1 0
 10 0 0 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 bowl pub stew~
 &n&+y   Its a bowl of stew, the kind made in Dubneth.&n
@@ -2234,7 +2234,7 @@ tankard ale paranel's best~
 ~
 17 15 3 0 7 0 0 16385 0 1 0
 10 10 7 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 tankard ale tharnaida best~
 &+W   This wide pewter tankard has the words 'Tharaidia's Best' written on the
@@ -2247,7 +2247,7 @@ barrel local ale lady light~
 ~
 17 15 3 0 7 0 0 8404993 0 1 0
 30 30 3 0 0 0 0 0
-1 1 100 100
+1 1 100 0
 E
 barrel local ale lady light~
 &+Y   This brew is very old, and the tradition for making it has come down the
@@ -2349,7 +2349,7 @@ rift exile~
 ~
 25 15 3 0 7 0 65 0 0 1 0
 134128 7 -1 0 0 0 0 0
-0 0 100 100
+0 0 100 0
 E
 rift exile~
 &+L   This rift levitates against the picture, small, and yet swirling with
@@ -2364,7 +2364,7 @@ dragon ring tail scales lords~
 ~
 9 15 3 0 7 0 65 33554435 0 2 0
 5 20 0 3 0 0 0 0
-4 4392 100 100
+4 4392 100 0
 E
 dragon ring tail scales lords~
 &+r   This ring was forged by the ancient red dragon Dalthhimfire. He made it
@@ -2383,7 +2383,7 @@ brain illithid magus zaquia~
 ~
 13 15 3 0 7 0 4161 8404993 0 1 0
 0 0 0 0 0 0 0 0
-3 2524 100 100
+3 2524 100 0
 E
 brain illithid magus zaqia~
 &+M   This brain belongs to the rogue illithid magus Zaqia. Once a friend of the
@@ -2402,7 +2402,7 @@ earring shade shadows~
 ~
 9 15 3 0 7 0 4193 524289 0 122942 0
 4 14 0 3 0 0 0 0
-2 25843 100 100
+2 25843 100 0
 E
 earring shade shadows~
 &+L   This earring is made of the last bits of the greatest of Sargon's evil
@@ -2451,7 +2451,7 @@ chest gold huge inlaid~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 100 29 134095 100 0 0 0 0
-4 1054 100 100
+4 1054 100 0
 E
 chest gold huge inlaid~
 &+L   This chest was created with the rest of this huge tower.&n It is the chest
@@ -2486,7 +2486,7 @@ ring elven nobility shadowglade~
 ~
 13 15 3 0 7 0 0 3 0 1 0
 0 0 0 0 0 0 0 0
-1 145 100 100
+1 145 100 0
 E
 ring elven nobility shadowglade&n~
    This ring is worn only by the nobles of Shadowglade, and indicated that

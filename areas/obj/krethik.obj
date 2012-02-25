@@ -5,7 +5,7 @@ a&+L long barbed whip named '&+bMin&+mdbr&+Me&+raker&+L'~
 ~
 5 13 3 0 11 0 8192 8193 64 4173708804 0
 14 5 4 2 0 0 0 0
-3 58000 100 0 0 16777216 0
+3 58000 100 100 0 0 16777216 0
 E
 whip barbed~
 &+LThis black whip is about seven feet long and is made of a black steel
@@ -23,7 +23,7 @@ A large jug lies here.~
 ~
 17 9 0 0 7 0 8192 16385 0 0 0
 9 9 2 0 0 0 0 0
-1 800 100
+1 800 100 100
 E
 jug wine~
 &+yThis clay jug is about a foot tall and appears to hold alot of liquid.
@@ -36,7 +36,7 @@ A longsword lies here.~
 ~
 5 16 3 10 7 0 0 8193 0 4198895524 0
 5 2 5 3 0 0 0 0
-4 10000 100
+4 10000 100 100
 E
 orcish longsword sword~
 &+WThis longsword appears to be of orcish design. It is about four feet long
@@ -54,7 +54,7 @@ A large axe lies here.~
 ~
 5 16 4 8 7 0 4195328 8193 0 87572571 0
 1 3 6 3 0 0 0 0
-7 16000 100
+7 16000 100 100
 E
 waraxe axe orcish~
 &+WThis is a large double bladed waraxe. The shaft is made from quality&+y wood&+W and
@@ -70,7 +70,7 @@ A light shortsword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 4194697632 0
 9 2 3 11 0 0 0 0
-2 7000 100
+2 7000 100 100
 E
 shortsword sword short orcish~
 &+WThis sword is only about two feet long, but is razor sharp. The blade is made
@@ -85,7 +85,7 @@ A large&+L granite statue&N stands here for all to veiw.~
 ~
 29 37 0 50 7 0 0 0 0 0 0
 270 20037 5 1 0 0 0 0
-200 0 100
+200 0 100 100
 E
 statue~
 This huge&+L granite&N statue stands here, upon a small pedestal. The statue is that of an orc dressed in full plate and wielding a massive greataxe. A small &+Ybronze&N plaque at the foot of the statue reads:
@@ -98,7 +98,7 @@ A small mug sits here.~
 ~
 17 9 0 0 7 0 0 16385 0 0 0
 3 3 3 0 0 0 0 0
-1 150 100
+1 150 100 100
 E
 mug~
 This is a small&+y wooden&N mug. It bears the crest of&+L Krethik Keep&N, a clenched
@@ -111,7 +111,7 @@ Some leg plates are lying here.~
 ~
 9 16 3 8 7 0 0 33 0 4173708804 0
 8 5 1 3 0 0 0 0
-6 12500 100
+6 12500 100 100
 E
 leg plates~
 &+WThese heavy metal leg plates have been forged by Freth, master armor smith of
@@ -128,7 +128,7 @@ Some arm plates are laying here.~
 ~
 9 16 3 8 7 0 0 257 0 4173708804 0
 8 8 1 3 0 0 0 0
-6 12500 100
+6 12500 100 100
 E
 arm plates~
 &+WThese heavy iron arm plates have been forged by Freth, master armor smith of
@@ -145,7 +145,7 @@ An iron breastplate lies here.~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 18 3 6 3 0 0 0 0
-20 25000 100
+20 25000 100 100
 E
 breastplate~
 &+WThese heavy iron breastplate has been forged by Freth, master armor smith of
@@ -159,7 +159,7 @@ Some boots are sitting here.~
 ~
 9 16 3 8 7 0 0 65 0 4173708804 0
 8 6 1 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 boots~
 &+WThese heavy iron boots have been forged by Freth, master armor smith of
@@ -176,7 +176,7 @@ An iron helmet sits here.~
 ~
 9 16 3 10 7 0 0 17 0 4173708804 0
 9 4 1 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 helmet~
 &+WThis heavy iron helmet was forged by Freth, master armor smith of&+L Krethik Keep&+W.
@@ -189,7 +189,7 @@ An iron shield sits here.~
 ~
 37 16 3 15 7 0 0 513 0 4173708804 0
 2 1 3 155 4 0 0 0
-10 10000 100
+10 10000 100 100
 E
 shield~
 &+WThis heavy iron shield was forged by Freth, master armor smith of&+L Krethik Keep&+W.
@@ -207,7 +207,7 @@ Some gauntlets lie here.~
 ~
 9 16 3 5 7 0 0 129 0 4173708804 0
 8 7 1 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 gauntlets~
 &+WThese gauntlets have been forged by Freth, master armor smith of&+L Krethik Keep&+W.
@@ -222,7 +222,7 @@ A &+Lbasilisk scale shield&n lies here.~
 ~
 37 47 3 15 10 0 0 513 64 4173708804 0
 2 1 4 178 3 0 0 0
-15 30000 100 0 4096 0 0
+15 30000 100 100 0 4096 0 0
 E
 shield basilisk~
 This large shield is created from &+Lblack&N basilisk scales. The shield is
@@ -240,7 +240,7 @@ A &+Wmithril bracer&N marked with a &+rbloody fist&N lies here.~
 ~
 9 18 3 3 11 0 131072 4097 64 4165209604 0
 8 11 1 3 0 0 0 0
-5 50000 100
+5 50000 100 100
 E
 bracer mithril bloodyfist~
 This bracer appears to be extremly old and seems to glow slightly. Used by
@@ -258,7 +258,7 @@ A slender &+Liron&+ywood totem&N lies here.~
 ~
 34 6 2 2 11 0 1024 16385 64 33685924 0
 60 0 0 0 0 0 0 0
-5 300000 100
+5 300000 100 100
 E
 totem spiked~
 &+LThis two foot long totem has been carved from ironwood. Large spikes cover
@@ -275,7 +275,7 @@ A nasty looking sandwich lies here.~
 ~
 19 2 2 2 7 0 73728 1 64 0 0
 6 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 sandwich~
 &+WThis odd looking sandwich is quite repulsive. Only Freth, the master armor
@@ -288,7 +288,7 @@ A thin vial lies here.~
 ~
 10 7 2 4 7 0 8192 16385 64 0 0
 50 9 28 1 0 0 0 0
-0 28000 100
+0 28000 100 100
 E
 vial potion~
 &+cThis thin vial contains a greyish sour smelling liquid.&N
@@ -300,7 +300,7 @@ A small gown lies in a pile here.~
 ~
 9 3 0 0 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 gown~
 &+WThis small white gown is made from a nearly transperant material.  A
@@ -315,7 +315,7 @@ A golden ring sits here, looking very powerful.~
 ~
 11 24 1 1 7 0 1 3 64 0 0
 0 0 0 2 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 ring~
 &+YThis small golden ring sparkles with inner power. Shining so brightly and
@@ -332,7 +332,7 @@ an altar~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
 This altar has been devoted to&+L Dr&+ru&+Lll&N, &+gorcish&N god of war. Three&+L black&N candles
@@ -347,7 +347,7 @@ The sacrificed corpse of an &+Lorc&N lies upon the altar.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 1 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse~
 &+LThis poor orc was chosen to be the sacrifice to Drull today. A horrible
@@ -360,7 +360,7 @@ Some blood covered robes lies here.~
 ~
 9 3 3 8 7 0 5120 9 0 37883812 0
 5 3 1 3 0 0 0 0
-1 1 100
+1 1 100 100
 E
 robes~
 &+WThese heavy white robes are used to dress the sacrifices to&+L Dr&+ru&+Lll&+W.&+R Blood&+W from
@@ -379,7 +379,7 @@ an&+L unholy amulet of Dr&+ru&+Lll~
 ~
 9 11 3 2 8 0 0 5 64 4248567835 0
 8 2 0 3 0 0 0 0
-1 45000 100 32 0 0 0
+1 45000 100 100 32 0 0 0
 E
 amulet~
 &+LThis black steel amulet is shaped like a small triangle. A&+r crimson&+L sword
@@ -396,7 +396,7 @@ A &+Lslender black dagger&N lies here.~
 ~
 5 16 3 3 7 0 0 8193 0 4198895524 0
 2 3 3 11 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 dagger slender~
    This thin bladed dagger is commonly used in sacrifices. Its forged from
@@ -413,7 +413,7 @@ A large golden collar lies here.~
 ~
 9 24 3 0 10 0 3153920 5 66 0 0
 8 2 1 3 0 0 0 0
-1 95000 100 0 128 0 0
+1 95000 100 100 0 128 0 0
 E
 collar~
 &+YThis large golden collar is covered with perfectly cut&N &+bsap&+Bphir&+bes&+Y. A&+Y small
@@ -431,7 +431,7 @@ a&+L delicate spider-shaped eyepatch&N~
 ~
 9 3 3 2 7 0 8192 131073 64 0 0
 3 12 2 3 0 0 0 0
-1 70000 100 8 0 0 0
+1 70000 100 100 8 0 0 0
 E
 eyepatch spider~
 &+LThis small, light weight eyepatch is made of some rare black metal. The
@@ -449,7 +449,7 @@ A staff covered with vines lies here.~
 ~
 4 6 3 10 7 0 1024 16385 64 33685920 0
 26 3 3 139 0 0 0 0
-1 18000 100
+1 18000 100 100
 E
 staff~
 &+yThis long wooden staff is has been carved from oak. Odd&+g vines&+y have twisted
@@ -464,7 +464,7 @@ A small wooden mace lies here.~
 ~
 5 16 2 8 7 0 8192 8193 0 4165209604 0
 6 1 3 7 0 0 0 0
-2 12 100
+2 12 100 100
 E
 mace~
 &+yUsed for practicing this, light wooden mace is not very dangerous. It
@@ -477,7 +477,7 @@ cabinet~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 50 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cabinet~
 &+yThis cabinet is used to hold the soldiers' extra equipment.&N
@@ -489,7 +489,7 @@ A meat cleaver lies here.~
 ~
 5 16 2 0 7 0 0 8193 0 4198895524 0
 9 3 3 3 0 0 0 0
-3 1500 100
+3 1500 100 100
 E
 cleaver~
 &+WThis shiny meatr cleaver is used by cooks to chop and prepare meat. It's
@@ -504,7 +504,7 @@ A long barbed spear lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 4198895524 0
 8 3 6 11 0 0 0 0
-6 28000 100
+6 28000 100 100
 E
 spear~
 &+WThis warspear is about five feet long. Its tip is razor sharp, and surrounded
@@ -521,7 +521,7 @@ a&+W crystal vial&N~
 ~
 17 7 1 2 7 0 8192 16385 0 0 0
 9 9 27 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 vial~
 &+WThis small, three inch vial is made of a clear crystal.&N
@@ -533,7 +533,7 @@ A small note lies here.~
 ~
 13 29 1 1 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 note~
 This small note has been folded neatly. It reads:
@@ -549,7 +549,7 @@ A short adamantium sword lies here.~
 ~
 5 16 2 6 7 0 0 8193 0 4198895524 0
 9 3 4 11 0 0 0 0
-3 23000 100
+3 23000 100 100
 E
 shortsword dwarven~
 &+rThis thin shortsword was masterfully forged by the duergar of Khildarak.
@@ -567,7 +567,7 @@ A massive stone club lies here.~
 ~
 5 11 3 8 7 0 4194304 8193 0 4173708804 0
 10 5 6 6 0 0 0 0
-35 11000 100
+35 11000 100 100
 E
 club~
 &+LThis massive six foot club is made from stone. It is covered with large
@@ -585,7 +585,7 @@ A spiked steel helm lies here.~
 ~
 9 16 3 10 7 0 0 17 0 4173708804 0
 13 4 1 3 0 0 0 0
-15 15000 100
+15 15000 100 100
 E
 helm~
 &+LThis heavy metal helm is covered withthree inch spikes. When used in combat
@@ -602,7 +602,7 @@ A &+Lspiked&N &+Wsteel&N &+Lbuckler&N lies here.~
 ~
 37 16 3 15 9 0 0 513 0 4198895524 0
 1 1 2 10 5 1 0 0
-3 19000 100
+3 19000 100 100
 E
 buckler~
 &+LThis round steel buckler is covered in spikes. Used correctly, it can be
@@ -620,7 +620,7 @@ A &+Lspiked&N &+Wsteel&N &+Lbreastplate&N lies here.~
 ~
 9 16 0 0 8 0 0 9 0 4173708804 8192
 22 3 6 3 1 0 0 0
-16 28000 100
+16 28000 100 100
 E
 breastplate~
 &+LThis breastplate has been forged from steel. Large spikes cover the
@@ -637,7 +637,7 @@ a&+L thin black belt of&+Y accuracy&N~
 ~
 9 13 3 3 9 0 8192 2049 64 4165209604 0
 7 10 0 3 0 0 0 0
-1 22000 100
+1 22000 100 100
 E
 belt~
 &+LThis think black belt is made from panther skin, and specially enchanted
@@ -656,7 +656,7 @@ A small rose colored potion lies here.~
 ~
 10 7 2 4 7 0 4096 16385 0 0 0
 50 70 70 70 0 0 0 0
-1 59000 100
+1 59000 100 100
 E
 potion~
 &+M   This small rose colored potion smells of fresh flowers. Just smelling it
@@ -669,7 +669,7 @@ A black pelt lies here.~
 ~
 9 12 0 0 7 0 0 1025 0 0 0
 11 9 1 3 0 0 0 0
-7 8 100 0 64 0 0
+7 8 100 100 0 64 0 0
 E
 pelt~
 &+LThis pelt smells like a dead dog, but offers great protection from physical
@@ -686,7 +686,7 @@ A small rusty key lies here.~
 ~
 18 16 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 &+rThis small rusty key has a clenched fist covered with blood on it.
@@ -698,7 +698,7 @@ A cheetah shaped totem lies here.~
 ~
 34 24 2 2 7 0 74752 16385 64 33685920 0
 3 0 0 0 0 0 0 0
-1 28000 100
+1 28000 100 100
 E
 totem cheetah~
 &+YThis small totem has been masterfully carved from gold into the shape of
@@ -716,7 +716,7 @@ a corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse~
 This poor messanger must have given the emissary some bad news. He now
@@ -729,7 +729,7 @@ a fireplace~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fireplace~
 &+LThis stone&+R fireplace&+L gives the room a warm pleasant&+Y glow&+L. It also provides
@@ -742,7 +742,7 @@ A well-done orcish arm lies here.~
 ~
 19 2 2 2 7 0 65536 8404993 0 0 0
 25 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 arm~
 &+gThis arm was pulled at the shoulders. Someone has the arm cooked until it
@@ -755,7 +755,7 @@ a&+r bloody triangle&N~
 ~
 25 16 0 50 7 0 0 0 0 0 0
 20141 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 triangle~
 &+rThis triangle has been drawn by a master shaman. It seems to shimmer whenever
@@ -768,7 +768,7 @@ a&+r bloody triangle&N~
 ~
 25 16 0 50 7 0 0 0 0 0 0
 20132 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 triangle~
 &+rThis triangle has been drawn here by a master shaman. It seems to shimmer
@@ -781,7 +781,7 @@ A small mace lies here.~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 6 1 9 7 0 0 0 0
-3 11000 100
+3 11000 100 100
 E
 mace~
 &+WThis small iron mace has been forged by Dreg, master weapon smith of
@@ -798,7 +798,7 @@ a &+Lchunk of black rock~
 ~
 5 11 3 0 7 0 65536 8193 0 0 0
 10 1 6 6 0 0 0 0
-6 10 100
+6 10 100 100
 E
 rock~
 &+LThis chunk of rock has been broken away from Krethik Keep's outer wall.
@@ -810,7 +810,7 @@ A round wooden shield lies here.~
 ~
 37 16 3 15 7 0 0 513 0 4173708804 0
 2 1 3 67 3 0 0 0
-4 10 100
+4 10 100 100
 E
 shield~
 &+yThis round wooden shield appears to be used often. Slash marks cover most
@@ -824,7 +824,7 @@ A pair of leather boots sits here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 3 6 1 3 0 0 0 0
-2 10 100
+2 10 100 100
 E
 boots~
 &+yThese pair of boots are cracked and covered with mud. An awful smell comes
@@ -837,7 +837,7 @@ Some goatskin gloves lie here.~
 ~
 9 12 3 6 7 0 0 129 0 0 0
 4 7 6 3 0 0 0 0
-2 10 100
+2 10 100 100
 E
 gloves~
 &+WCrafted from heavy goatskin, these gloves offer minor protection from the
@@ -850,7 +850,7 @@ A jacket made from goatskin lies here.~
 ~
 9 12 0 0 7 0 0 1025 0 0 0
 5 9 1 3 0 0 0 0
-5 10 100
+5 10 100 100
 E
 jacket~
 &+WThis jacket has been crafted from goatskin. It offers minor protection
@@ -863,7 +863,7 @@ A pair of pants lie here.~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-2 15 100
+2 15 100 100
 E
 pants~
 &+bMade from a soft cloth, these pants are very comfortable.&N
@@ -875,7 +875,7 @@ A &+Ygolden&N &+r heart&N lies here, throbbing with unkown powers.~
 ~
 8 2 0 0 12 0 308224 16385 64 37883812 0
 0 0 0 0 0 0 0 0
-1 45000 100 32768 0 0 0
+1 45000 100 100 32768 0 0 0
 E
 heart~
 &+YThis golden heart throbs powerfully. An almost blinding bright light
@@ -892,7 +892,7 @@ A crack in the wall can be seen.~
 ~
 25 11 0 50 7 0 2 0 0 0 0
 20142 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crack~
 It looks like a large crack in the wall.
@@ -904,7 +904,7 @@ A large crack can be seen in the wall.~
 ~
 25 11 0 50 7 0 2 0 0 0 0
 20047 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crack~
 It looks like a large crack in the wall.
@@ -916,7 +916,7 @@ A rusty helm sits here.~
 ~
 9 16 3 10 7 0 4096 17 0 4173708804 0
 7 4 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 E
 helm~
 &+rThis old rusty pot helm is marked with a clenched fist covered with blood,
@@ -929,7 +929,7 @@ A rusty old battle-axe lies here.~
 ~
 5 16 3 8 7 0 5120 8193 0 87572571 0
 1 1 10 3 0 0 0 0
-4 500 100
+4 500 100 100
 E
 axe rusty~
 &+rThis rusty old battle-axe doesn't appear to be very effective anymore.
@@ -941,7 +941,7 @@ An ancient skeleton of an orc lies here.~
 ~
 15 2 3 30 7 0 4096 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skeleton corpse orc~
 &+WThis ancient skeleton belongs to an orc, probally a guard, that stumbled into
@@ -954,7 +954,7 @@ An emerald ring lies here, sparkling.~
 ~
 9 16 1 1 7 0 12288 3 64 0 0
 4 1 0 3 0 0 0 0
-1 46000 100
+1 46000 100 100
 E
 ring~
 &+YThis ancient geolden ring sparkles with beauty. The large&+g emerald&+Y set within
@@ -971,7 +971,7 @@ a&+L thin black scimitar~
 ~
 5 16 3 10 7 0 1024 8193 64 87572571 0
 9 3 4 3 0 0 0 0
-2 38000 100
+2 38000 100 100
 E
 scimitar~
 &+LThis scimitar has been forged from some unkown black metal. Small spiders
@@ -988,7 +988,7 @@ large black key~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 large black key~
 This key has been forged from black iron.
@@ -1000,7 +1000,7 @@ Some leg plates lie here, crafted from &+gtur&+Gtle&N-&+Gs&+ghell.&N~
 ~
 9 15 3 8 7 0 8192 33 64 0 0
 12 5 1 3 0 0 0 0
-5 12000 100 2048 0 0 0
+5 12000 100 100 2048 0 0 0
 E
 leg plates turtle~
 &+GCovered with slime, these greenish turtle-shells have been attached to some
@@ -1018,7 +1018,7 @@ crown adamantium~
 ~
 9 19 3 8 7 0 0 17 64 0 0
 11 4 16 4 0 0 0 0
-0 70000 100
+0 70000 100 100
 E
 crown~
 &+mCrafted from pure adamantium, this massive crown looks very elegant. Worn
@@ -1035,7 +1035,7 @@ A &+Lsilvery cutlass&N lies here, emanating good vibes.~
 ~
 5 22 3 0 11 0 132096 8193 64 9039872 0
 9 5 4 3 0 0 0 0
-6 62500 100
+6 62500 100 100
 E
 cutlass luck~
 &+WThis three foot long curved blade is forged from a silvery metal. The hilt
@@ -1054,7 +1054,7 @@ A heavy &+Ylion-skin cloak&N lies here.~
 ~
 9 12 3 8 7 0 8192 1025 64 4198895524 0
 12 9 1 4 0 0 0 0
-10 32500 100
+10 32500 100 100
 E
 lion-skin lion cloak~
 &+YThis cloak, crafted from the skin of a giant lion, offers great protection
@@ -1071,7 +1071,7 @@ A thin rapier lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 4198895524 0
 9 2 6 11 0 0 0 0
-2 20000 100
+2 20000 100 100
 E
 rapier~
 This thin rapier is in poor condition and seems to be starting to rust.
@@ -1087,7 +1087,7 @@ A earring lies here, made from a &+Wdragon tooth&N.~
 ~
 9 10 1 1 9 0 40960 524289 64 0 0
 3 14 0 3 0 0 0 0
-1 21000 100 0 12416 0 0
+1 21000 100 100 0 12416 0 0
 E
 dragon earring~
 &+WThis small dragon tooth has been polished and etched with powerful glyphs of
@@ -1104,7 +1104,7 @@ a&+y huge chest~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 10000 29 20073 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
 &+yThis chest is used by Tyrik to store his most valued item.
@@ -1116,7 +1116,7 @@ A small emerald key lies here.~
 ~
 18 32 1 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key emerald~
 This key has been crafted of steel and studded with emeralds. Whatever it
@@ -1129,7 +1129,7 @@ A key covered with cobwebs lies here.~
 ~
 18 11 1 1 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key stone~
 &+WThis legendary key is said to open the hidden crypt where Ferrik, the great
@@ -1142,7 +1142,7 @@ A loose brick can be seen here.~
 ~
 29 9 0 50 7 0 2 0 0 0 0
 270 20146 1 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 loose brick~
 This brick appears to have been left loose on purpose, maybe to trigger some
@@ -1155,4 +1155,4 @@ bloody head blig~
 ~
 4 2 3 0 7 0 0 16385 0 0 0
 46 1 1 54 0 0 0 0
-0 0 100
+0 0 100 100

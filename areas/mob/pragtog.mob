@@ -7,8 +7,8 @@ huge orc guard~
 &+yand wields a nasty looking club. He watches the tunnel carefully, legs
 &+yspread and arms ready to keep anyone unwanted away.&n
 ~
-100669442 1 0 40 0 0 0 -850 S
-HO 0 1 -1
+100669442 1 0 0 40 0 0 0 -850 S
+HO 0 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -21,8 +21,8 @@ smelly orc guard~
 &+yto deal with any intruders that cause trouble within his home. Large tusks,
 &+ysharpened to a fine point, jut out from his lower jaw.&n
 ~
-1174411332 1 0 33554436 0 0 0 -900 S
-HO 0 1 -1
+1174411332 1 0 0 33554436 0 0 0 -900 S
+HO 0 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 1
@@ -36,8 +36,8 @@ lost gnome~
 &+Rlooks scratched, as though he has run into a few &+Lnasty &+Rchracters on his
 &+Rlittle journey.&n
 ~
-212 0 0 34078720 0 0 0 500 S
-PG 0 0 -1
+212 0 0 0 34078720 0 0 0 500 S
+PG 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 3.2.0.0 907
 8 8 1
@@ -51,8 +51,8 @@ fat orc cook~
 &+yprecious food. Drool drips from his chin as he shuffles about, living his
 &+ybountiful life.&n
 ~
-6 0 0 33587200 1088 0 0 -400 S
-HO 0 16384 -1
+6 0 0 0 33587200 1088 0 0 -400 S
+HO 0 16384 0 -1
 20 13 35 20d35+140 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -65,8 +65,8 @@ large orc warrior~
 &+bStrong muscles and two huge fists can surely deal out harsh blows. Six feet
 &+btall and full of aggressiveness, this orc looks ready to battle.&n
 ~
-2114 64 0 33554432 0 0 0 -900 S
-HO 0 1 -1
+2114 64 0 0 33554432 0 0 0 -900 S
+HO 0 1 0 -1
 18 13 42 18d35+126 3d4+2
 9.7.3.0 8748
 8 8 1
@@ -79,8 +79,8 @@ drevch~
 &+mfound in places with blood underground. Eyeless, it feels and smells its way
 &+maround. A hard shell covers the top of its body.&n
 ~
-33554514 0 0 571473920 13504 0 0 0 S
-I 0 0 -1
+33554514 0 0 0 571473920 13504 0 0 0 S
+I 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -95,8 +95,8 @@ orc shaman~
 &+yrobe and various amulets and talismans, the shaman looks as though he knows
 &+ya spell or two.&n
 ~
-33556546 1 0 33554476 0 0 0 -950 S
-HO 0 256 -1
+33556546 1 0 0 33554476 0 0 0 -950 S
+HO 0 256 0 -1
 40 2 -28 40d88+880 4d7+10
 3.3.3.3 51840
 8 8 1
@@ -109,8 +109,8 @@ drunk orc~
 &+gwake up for quite some time. His pig-like nostrils flare as he snores loudly,
 &+gprobably dreaming about some orcish fantasy.&n
 ~
-80 0 0 33554432 1024 0 0 -750 S
-HO 0 0 -1
+80 0 0 0 33554432 1024 0 0 -750 S
+HO 0 0 0 -1
 11 15 64 11d23+44 2d5+2
 5.4.1.0 5346
 4 4 1
@@ -124,8 +124,8 @@ guard orc~
 &+Lconstantly and keeping an eye on everything, he waits for anyone to make
 &+La mistake.&n
 ~
-100663362 1 0 33554464 0 0 0 -1000 S
-HO 0 1 -1
+100663362 1 0 0 33554464 0 0 0 -1000 S
+HO 0 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -140,8 +140,8 @@ rekrok massive orc slavemaster~
 &+rin a pony tail, hanging down to the middle of his back, and the rest of
 &+rhis head is bald.&n
 ~
-1174407234 1 0 33628200 0 0 0 -1000 S
-HO 0 1 -1
+1174407234 1 0 0 33628200 0 0 0 -1000 S
+HO 0 1 0 -1
 39 2 -24 39d95+897 4d7+10
 2.2.3.2 50544
 8 8 1
@@ -155,8 +155,8 @@ hair is all white, and it is a bit smaller than the duergar, but the same in
 all other respects. Both wrists are chained to the wall. He has been put here
 until the orcs need him for a job, or to work below.
 ~
-33556562 0 0 33554432 1024 0 0 -500 S
-PD 0 1 -1
+33556562 0 0 0 33554432 1024 0 0 -500 S
+PD 0 1 0 -1
 9 18 71 9d21+49 2d3+1
 4.3.0.0 1166
 8 8 1
@@ -169,8 +169,8 @@ goblin slave~
 &+Gfor trying to run away. Red eyes glaring, and arms writhing in their shackles
 &+Ghe tugs away from the wall futilely.&n
 ~
-33560642 64 0 0 0 0 0 -995 S
-HG 0 0 -1
+33560642 64 0 0 0 0 0 0 -995 S
+HG 0 0 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -184,8 +184,8 @@ gnome slave~
 &+Rbruise is on his forehead, probably having been knocked out by an orc and
 &+Rcarried into the settlement.&n
 ~
-33560642 0 0 33554432 0 0 0 0 S
-PG 0 0 -1
+33560642 0 0 0 33554432 0 0 0 0 S
+PG 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 3.2.0.0 907
 6 6 1
@@ -198,8 +198,8 @@ hungry orc~
 &+gdirty, and gripping a recently chewed on bone, he ignores everything except
 &+gthe location of a new meal.&n
 ~
-6208 0 0 33554432 0 0 0 -800 S
-HO 0 0 -1
+6208 0 0 0 33554432 0 0 0 -800 S
+HO 0 0 0 -1
 13 15 58 13d23+52 2d5+2
 6.5.2.0 6318
 8 8 1
@@ -214,8 +214,8 @@ deadly basilisk~
 &+gvictim and turn it to stone. Small, flat spikes run down the length of its
 &+gbody, from the top of its head to the end of its tail.&n
 ~
-1107298368 760 0 570458168 4288 0 0 -1000 S
-AC 0 1 -1
+1107298368 760 0 0 570458168 4288 0 0 -1000 S
+AC 0 1 0 -1
 33 6 -5 33d83+561 4d6+7
 0.0.0.0 42768
 8 8 0
@@ -229,8 +229,8 @@ chief pragtog~
 &+rand wielding a huge broadsword, he wouldn't be one to take on alone. His hair
 &+ris braided and tattoos cover his arms, shoulders and neck.&n
 ~
-1174411330 1 0 570531900 12480 0 0 -1000 S
-HO 0 1 -1
+1174411330 1 0 0 570531900 12480 0 0 -1000 S
+HO 0 1 0 -1
 53 -5 -104 53d131+4505 7d6+30
 8.0.6.6 214650
 8 8 1
@@ -245,8 +245,8 @@ dwarven slave dwarf~
 &+Yon the stone. He waits for an opportunity to escape, but in the meantime, he
 &+Yworks.&n
 ~
-6210 0 0 33554432 0 0 0 900 S
-PM 0 1 -1
+6210 0 0 0 33554432 0 0 0 900 S
+PM 0 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -259,8 +259,8 @@ female woman orc~
 &+mpillows in Pragtog's domain, she endures the cruelty of Pragtog in exchange
 &+mfor her life.&n
 ~
-6354 0 0 33554432 0 0 0 -500 S
-HO 0 0 -1
+6354 0 0 0 33554432 0 0 0 -500 S
+HO 0 0 0 -1
 10 18 67 10d18+35 2d3+1
 5.3.0.0 1296
 5 5 2
@@ -273,8 +273,8 @@ evil orc~
 &+Lwho falls behind many lashes of his long, leather whip. Dressed in black
 &+Lleather boots and armor, he keeps an eye out for slackers.&n
 ~
-67115074 1 0 33554448 0 0 0 -1000 S
-HO 0 1 -1
+67115074 1 0 0 33554448 0 0 0 -1000 S
+HO 0 1 0 -1
 24 11 23 24d47+240 3d5+3
 6.1.6.0 21384
 8 8 1
@@ -287,8 +287,8 @@ goblin slave~
 &+rat the sight of any orc. Feeble hands grip the handle of a small pick, but
 &+rfear prevents him from doing any work.&n
 ~
-6338 0 0 33554432 0 0 0 -1000 S
-HG 0 0 -1
+6338 0 0 0 33554432 0 0 0 -1000 S
+HG 0 0 0 -1
 6 18 80 6d18+21 2d3+1
 3.2.0.0 777
 8 8 1
@@ -300,8 +300,8 @@ mimic mushroom purple blue~
 &+gThis small mushroom suddenly opens a mouth and snarls at your presence. It
 &+graises the suspicion that this ISN'T a mushroom.&n
 ~
-66 0 0 34603008 0 0 0 0 S
-A 0 0 -1
+66 0 0 0 34603008 0 0 0 0 S
+A 0 0 0 -1
 10 18 67 10d18+35 2d3+1
 0.0.0.0 1296
 8 8 0
@@ -315,8 +315,8 @@ spirit guardian glowing~
 &+WTransparent, you can see the other side of the room through her. Perhaps she
 &+Wis connected somehow to the glowing runes in the floor?&n
 ~
-33554497 0 0 704749628 14528 0 0 1000 S
-UG 0 32 -1
+33554497 0 0 0 704749628 14528 0 0 1000 S
+UG 0 32 0 -1
 50 -3 -105 50d110+2700 6d6+25
 0.0.0.0 121500
 8 8 2
@@ -331,8 +331,8 @@ umber hulk umberhulk~
 &+cof its gaping maw of pointed teeth, and a hard chitinous shell, it
 &+cresembles a large beetle on steroids that stands on two legs.&n
 ~
-33560640 760 0 570531880 0 0 0 -750 S
-AC 0 1 -1
+33560640 760 0 0 570531880 0 0 0 -750 S
+AC 0 1 0 -1
 37 2 -18 37d95+851 4d7+10
 0.0.0.0 47952
 8 8 0
@@ -345,8 +345,8 @@ angry trapped ghost~
 &+Wghost could possibly be someone who had died a terrible death in this very
 &+Wroom. It wanders about, forever lonely and enraged by its demise.&n
 ~
-1107429440 760 0 33628268 4160 0 0 -800 S
-UG 0 2048 -1
+1107429440 760 0 0 33628268 4160 0 0 -800 S
+UG 0 2048 0 -1
 40 2 -38 40d64+840 4d7+10
 0.0.0.0 51840
 8 8 1
@@ -360,8 +360,8 @@ thief lurking~
 &+Lhe prowls along these corridors. Dressed completely in black, he almost
 &+Lblends into the walls.&n
 ~
-1073748166 760 0 34603040 0 0 0 -900 S
-PL 0 4096 -1
+1073748166 760 0 0 34603040 0 0 0 -900 S
+PL 0 4096 0 -1
 45 13 35 20d30+100 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -374,8 +374,8 @@ duergar slave~
 &+rescaping from the orcs. Confused and muttering the whole time, it continues
 &+rto wander around the tunnels.&n
 ~
-4308 1 0 33554432 0 0 0 -600 S
-PD 0 0 -1
+4308 1 0 0 33554432 0 0 0 -600 S
+PD 0 0 0 -1
 9 18 71 9d18+31 2d3+1
 4.3.0.0 1166
 8 8 1

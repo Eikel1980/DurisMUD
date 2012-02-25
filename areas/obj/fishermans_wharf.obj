@@ -5,7 +5,7 @@ paper guide~
 ~
 12 28 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 8773 100
+1 8773 100 100
 E
 paper guide~
 &+gGuide to Fisher&+Lmans Wharf&N
@@ -39,7 +39,7 @@ paddle boat~
 ~
 22 5 3 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 9343 100
+4 9343 100 100
 E
 paddle boat~
 &+yThe small boat is made of soft wood and equipped with two oars.  The
@@ -54,7 +54,7 @@ sack worms earthworms bait~
 ~
 12 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 541 100
+1 541 100 100
 E
 sack worms earthworms bait~
 &+yA brown paper sack is filled with worms and soil.&N
@@ -66,7 +66,7 @@ fishing pole~
 ~
 8 6 3 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1812 100
+1 1812 100 100
 E
 fishing pole~
 &+yThis fine fishing pole has been carved and crafted by an experienced angler.&N
@@ -80,7 +80,7 @@ rugged trapper sling~
 ~
 9 3 3 0 7 0 0 1048577 0 0 0
 7 0 0 3 0 0 0 0
-1 2025 100
+1 2025 100 100
 E
 rugged trapper sling~
 &+yThe sling is simply a sizeable cloth pouch attached to a rope.&n
@@ -96,7 +96,7 @@ reel line~
 ~
 12 3 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 341 100
+1 341 100 100
 E
 reel line~
 &+cThis reel of fishing line looks to be in perfect shape.&N
@@ -108,7 +108,7 @@ pipe snorkel~
 ~
 9 15 3 0 7 0 0 262145 0 0 0
 6 0 0 4 0 0 0 0
-2 5832 100 2048 0 0 0
+2 5832 100 100 2048 0 0 0
 E
 pipe snorkel~
 &+wThis leftover piece of pipe was converted into a snorkel.&N
@@ -124,7 +124,7 @@ rubber mask divers~
 ~
 9 49 3 0 7 0 8192 262145 0 0 0
 8 0 0 3 0 0 0 0
-1 8382 100 2048 0 0 0
+1 8382 100 100 2048 0 0 0
 E
 rubber mask divers~
 &+LThe rubber sealed mask provide a tight fit.&N
@@ -140,7 +140,7 @@ fishing cast net~
 ~
 15 43 3 0 7 0 8192 8388609 0 0 0
 315 0 0 0 0 0 0 0
-2 4831 100
+2 4831 100 100
 E
 fishing cast net~
 &+wThe simple net has been woven together with some hemp fibers.&N
@@ -152,7 +152,7 @@ post sign warning~
 ~
 12 6 3 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-5 321 100
+5 321 100 100
 E
 sign caution warning~
            &+W---  &+rWARNING  &+W---
@@ -171,7 +171,7 @@ lily pads pad~
 ~
 9 42 3 0 10 0 1318920 20485 0 0 0
 3 0 0 2 0 0 0 0
-1 23 100
+1 23 100 100
 E
 lily pads pad~
 &+G   The round lily pad floats on the surface and extends to the lakes
@@ -189,7 +189,7 @@ spawn jelly eggs~
 ~
 8 45 3 0 7 0 12288 8388609 0 0 0
 0 0 0 0 0 0 0 0
--2 1482 100
+-2 1482 100 100
 E
 spawn jelly eggs~
 &+GThe ma&+gss&+G of gr&+gee&+Gn g&+goo&+G su&+grr&+Gound the developing frog e&+ggg&+Gs&+g.&n
@@ -203,7 +203,7 @@ stick sticks bundle~
 ~
 5 5 3 0 7 0 8192 8193 0 0 0
 6 1 4 2 0 0 0 0
-2 39 100
+2 39 100 100
 E
 sticks~
 &+yA bundle of sticks have been collected for a fire.&n
@@ -219,7 +219,7 @@ beaver pelt~
 ~
 9 12 3 0 7 0 12288 2049 0 0 0
 3 0 0 3 0 0 0 0
-1 125 100
+1 125 100 100
 E
 beaver pelt~
 &+yThis pelt was probably skinned from a nearby beaver.&N
@@ -235,7 +235,7 @@ glass bottle~
 ~
 13 7 3 0 7 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-1 13 100
+1 13 100 100
 E
 glass bottle~
 &+yThe old beer bottle is filled with mud.&N
@@ -247,7 +247,7 @@ eagle egg~
 ~
 12 45 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 9291 100
+1 9291 100 100
 E
 eagle egg~
 &+wThe egg's design is similar to an eagles egg.&N
@@ -261,7 +261,7 @@ petrified fanged snake totem~
 ~
 34 11 3 0 7 0 3145728 8404993 0 0 0
 10 75 0 0 0 0 0 0
-3 7332 100
+3 7332 100 100
 E
 petrified fanged snake totem~
 &+LThe stone statue of a snake has real &+rf&+Lan&+rg&+Ls attached.&n
@@ -277,7 +277,7 @@ treasure coins~
 ~
 20 24 3 0 7 0 0 1 0 0 0
 2 69 17 99 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 treasure coins~
 &+mThe assortment of coins sparkle in the light.&n
@@ -289,7 +289,7 @@ gloves snakeskin snake~
 ~
 9 12 3 0 7 0 4096 129 0 0 0
 10 0 0 3 0 0 0 0
-1 9741 100 268435456 0 0 0
+1 9741 100 100 268435456 0 0 0
 E
 gloves snakeskin snake~
 &+YThe &+ysk&+Yin from these gloves came from a powerful serpent.&n
@@ -305,7 +305,7 @@ serpentine shin guards scale~
 ~
 9 47 3 0 7 0 0 33 0 0 0
 10 0 0 4 0 0 0 0
-2 15327 100 33554432 0 0 0
+2 15327 100 100 33554432 0 0 0
 E
 serpentine shin guards~
 &+gFinely woven &+Gs&+gc&+Gal&+ges combine to make these flexible yet strong &+Lskin&+w-guards&+g.&n
@@ -321,7 +321,7 @@ fanged jaw piece fangs~
 ~
 9 10 3 0 7 0 0 262145 0 0 0
 9 0 0 4 0 0 0 0
-2 8127 100 32768 0 0 0
+2 8127 100 100 32768 0 0 0
 E
 fanged jaw piece~
 &+LThis bone fragment of a broken &+rj&+La&+rw&+L still has some &+rf&+Lan&+rg&+Ls attached.&n
@@ -337,7 +337,7 @@ crystalline harp~
 ~
 4 8 3 0 7 0 0 16385 0 0 0
 51 5 5 140 0 0 0 0
-1 63323 100
+1 63323 100 100
 E
 crystalline harp~
 &+M   Magical in nature this harp has suddenly crystallized into a divine
@@ -350,7 +350,7 @@ enchanted wrist guards wristguards~
 ~
 9 19 3 0 7 0 2105344 4097 0 0 0
 8 0 0 3 0 0 0 0
-2 14328 100
+2 14328 100 100
 E
 enchanted wrist guards wristguards~
 &+MThe adamantium bracers have been enchanted by a powerful serpent.&n
@@ -366,7 +366,7 @@ sapling strange~
 ~
 29 5 3 0 7 0 0 0 64 0 0
 270 88911 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sapling strange~
    &+gThis &+ysapling&+g stands before you, swaying in the wind. It seems to
@@ -379,4 +379,4 @@ sapling strange~
 ~
 29 5 3 0 7 0 0 0 64 0 0
 270 88973 2 0 0 0 0 0
-0 0 100
+0 0 100 100

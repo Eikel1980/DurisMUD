@@ -2,19 +2,19 @@
 dark outpost~
 29448 0 0 40 50 1
 *
-* Zone edited with dikuEdit v2.98h
+* Zone edited with durisEdit v2.99de
 *
 *
 *
-O 0 11059 999 29410 100 0 0 0      * (object not in this .OBJ file)
+O 0 11059 999 29410 100 0 0 0      * (object type not in this .obj file)
 O 0 29411 1 29412 100 0 0 0        * a glowing portal
-O 0 11059 999 29420 100 0 0 0      * (object not in this .OBJ file)
+O 0 11059 999 29420 100 0 0 0      * (object type not in this .obj file)
 O 0 29420 1 29422 100 0 0 0        * A Pool of Elf Blood
-O 0 11059 999 29430 100 0 0 0      * (object not in this .OBJ file)
+O 0 11059 999 29430 100 0 0 0      * (object type not in this .obj file)
 O 0 29430 1 29432 100 0 0 0        * An Icy Pool
-O 0 11059 999 29440 100 0 0 0      * (object not in this .OBJ file)
+O 0 11059 999 29440 100 0 0 0      * (object type not in this .obj file)
 O 0 29440 1 29442 100 0 0 0        * the Device generated portal
-O 0 11059 999 29445 100 0 0 0      * (object not in this .OBJ file)
+O 0 11059 999 29445 100 0 0 0      * (object type not in this .obj file)
 O 0 29445 1 29448 100 0 0 0        * a hole in time and space
 *
 M 0 29410 3 29410 100 0 0 0        * A temple sentry

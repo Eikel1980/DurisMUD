@@ -5,7 +5,7 @@ a ballista~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #30801
 statue king brimar~
 statue in central square~
@@ -13,7 +13,7 @@ statue in central square~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue king brimar~
 &+mStanding at least forty feet into the air is the carved stone statue of Brimar
@@ -31,7 +31,7 @@ a simmering pot of food~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pot food~
 &+yA large stone pot has been placed next to the fire. A brown liquid within the
@@ -44,7 +44,7 @@ goat on a spit~
 ~
 13 15 3 0 7 0 263168 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 goat skewered~
 &+LRaised in the valley these goats are the primary meal for the storm giants.
@@ -59,7 +59,7 @@ fire pit in the inn~
 ~
 13 15 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pit burning branches~
 &+yThe pit would appear to be dug about four feet into solid stone. Filled with
@@ -74,7 +74,7 @@ club gnarled stone~
 ~
 5 11 4 0 7 1 4194304 8193 0 0 0
 10 1 8 7 0 0 0 0
-5 1 100
+5 1 100 100
 E
 club gnarled stone~
 &+yA lender piece of stone chiseled so that it can be wielded like a club. A
@@ -92,7 +92,7 @@ axe battle-axe battle ice~
 ~
 5 1 3 0 7 25 4195328 8193 64 85475329 0
 1 3 6 3 0 0 0 0
-8 1 100
+8 1 100 100
 E
 axe battle-axe battle ice~
 &+WForged entirely of ice, this large battle-axe is honed to a razors edge. The
@@ -111,7 +111,7 @@ statue by warriors guild~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue warrior storm giant~
 &+MStanding high into the air, this statue is a tribute to the fierce warrior
@@ -127,7 +127,7 @@ raging fire in council chamber~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fire black haze~
 &+LTall trees have been tossed into a pit in the center of the room. The fire
@@ -141,7 +141,7 @@ granite dagger~
 ~
 5 11 3 0 7 0 1024 8193 0 85475329 0
 2 3 3 11 0 0 0 0
-6 5000 100
+6 5000 100 100
 E
 granite dagger~
 &+LCarved from a thick piece of granite, this large dagger's blade is chisled to
@@ -159,7 +159,7 @@ stone desk~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 600 13 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stone desk~
 &+LA large slab of granite rests atop two thick obilisks. Small carvings can be
@@ -174,7 +174,7 @@ warning sign~
 ~
 13 15 3 0 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign warning~
      &+y ***************************************
@@ -196,7 +196,7 @@ torch is a lever~
 ~
 29 15 3 0 7 0 262144 0 0 0 0
 340 30884 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 torch~
 &+yA large clump of twisted reeds sit mounted into thick mithril brackets. The
@@ -212,7 +212,7 @@ counter in warrior shop~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 counter granite~
 &+yStretching across the entire length of the room stands this granite counter.
@@ -226,7 +226,7 @@ merchant stall~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stall~
 &+yCovered with fine potteries and a few crude weapons, this stall provides a
@@ -239,7 +239,7 @@ spilt ale~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tankard ale~
 &+yThis large tankard appears as though it was carved from stone. Now lying on
@@ -252,7 +252,7 @@ ring ruby~
 ~
 9 24 1 0 11 40 0 3 64 0 0
 4 0 0 2 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 ring ruby~
 &+YThis tiny ring is forged from a bright yellow gold. Inset into the top of the
@@ -269,7 +269,7 @@ statue in straags palace~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
 &+LStanding at least fourteen feet tall is the statue of a long deceased storm
@@ -287,7 +287,7 @@ map leather parchment~
 ~
 13 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 map leather parchment~
 &+y"By order of King Straag, three divisions of storm giant warriors will head
@@ -300,7 +300,7 @@ glowing vein of mithril - light source~
 ~
 13 15 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 vein mithril~
 &+CSnaking its way along the cavern wall is a thick vein of mithril. The strange
@@ -314,7 +314,7 @@ goat leg bloody~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 15 2 2 0 3 0 0 1
-1 650 100
+1 650 100 100
 E
 goat leg bloody~
 &+gThis large hind quarter drips with fresh blood. The wool having been shaved
@@ -327,7 +327,7 @@ rabbit flesh~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 6 3 2 0 0 0 0 0
-0 200 100
+0 200 100 100
 E
 rabbit flesh~
 &+gThis thick strip of flesh was pulled from the fattiest portion of a large
@@ -341,7 +341,7 @@ belt mithril~
 ~
 9 18 3 0 14 0 32768 2049 64 0 0
 10 0 0 0 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 belt mithril~
 &+CThin strips of twisted mithril are banded together to form a thick belt. Small
@@ -359,7 +359,7 @@ storms scimitar gleaming~
 ~
 5 15 4 0 13 50 4228096 8193 64 85458945 4285234
 13 3 7 3 1 0 0 0
-8 600000 100
+8 600000 100 100
 E
 storm scimitar~
 &+WThis large scimitar is forged of a metal only found in the kingdom of
@@ -380,7 +380,7 @@ council desk~
 ~
 13 15 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk stone~
 &+wCrafted from a large boulder, this stone desk provides a platform onto which
@@ -397,7 +397,7 @@ red book~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 340 30916 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 red book~
    &+rThis book is entitled '&+CThe Treasure of the Storm Giants&+r'
@@ -410,7 +410,7 @@ king straag throne~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 golden throne gold~
 &+YStanding in the center of the room, elevated atop four steps, is a large
@@ -424,7 +424,7 @@ hat sorcery pointed~
 ~
 4 15 3 0 7 0 66560 17 64 0 0
 50 5 5 15 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hat sorcery pointed~
 &+gThis large black hat extends at least two feet above a normal persons head.
@@ -451,7 +451,7 @@ vial purple~
 ~
 10 15 3 0 7 0 0 1 64 0 0
 40 28 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 vial purple~
 &+LA small glass vial with a bubbling purple liquid.&n
@@ -463,7 +463,7 @@ torch burning in pirate cave~
 ~
 13 15 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 torch~
 &+WMounted into the wall, this reed torch fully illuminates the room.&n
@@ -475,7 +475,7 @@ chest sea~
 ~
 15 15 3 0 7 0 143360 0 0 0 0
 600 29 0 600 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest sea~
 &+yThis large chest of hardened jodani wood is bound by thick strips of mithril
@@ -489,7 +489,7 @@ steel dirk~
 ~
 5 16 3 0 7 0 16842752 8193 0 0 0
 2 1 7 11 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 steel dirk~
 &+cCrafted of crude steel, this dirk has a slight tint of rust from the constant
@@ -502,7 +502,7 @@ pile gold~
 ~
 20 15 3 0 7 0 0 0 0 0 0
 0 0 800 25 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile gold~
 &+gA pile of small coins.&n
@@ -514,7 +514,7 @@ sword large two handed two-handed~
 ~
 5 15 3 0 7 0 1024 8193 0 85553177 0
 13 2 8 0 0 0 0 0
-9 204 100
+9 204 100 100
 E
 sword large two handed two-handed~
 &+yForged of a tough metal, this crudely shaped sword would appear to be crafted
@@ -532,7 +532,7 @@ dagger curved~
 ~
 5 15 3 0 7 0 1024 8193 0 85553153 0
 2 1 6 11 0 0 0 0
-0 61 100
+0 61 100 100
 E
 dagger curved~
 &+LThe long blade twists into a fine point. IT would appear that the metal forger
@@ -550,7 +550,7 @@ breastplate breast plate bronze~
 ~
 9 20 3 0 7 0 0 9 0 0 0
 9 0 0 4 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 breastplate breast plate bronze~
 &+yCrudely hammered from a large sheet of bronze metal, this breastplate
@@ -565,7 +565,7 @@ bronze mask~
 ~
 9 20 3 0 7 0 0 262145 0 0 0
 7 0 0 5 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 bronze mask~
 &+yTwo large openings provide ample room by which one can see. A large slit with
@@ -578,7 +578,7 @@ barrel oaken~
 ~
 17 6 3 0 7 0 0 1 0 0 0
 20 20 0 0 0 0 0 0
-0 150 100
+0 150 100 100
 E
 barrel oaken~
 &+yThis woden barrel is rivited with thin strips of iron around its seems. A
@@ -592,7 +592,7 @@ flute ruby~
 ~
 32 15 3 0 7 0 0 8404993 0 0 0
 184 56 0 25 0 0 0 0
-0 1 100
+0 1 100 100
 E
 flute ruby~
 &+yThis small silver flute is enrusted with bright red rubies. The rubies
@@ -610,7 +610,7 @@ steel halberd~
 ~
 5 16 3 0 7 0 1024 8193 0 85553153 0
 5 1 8 3 0 0 0 0
-6 3000 100
+6 3000 100 100
 E
 steel halberd~
 &+yCurved so that the center of the sword is slightly thicker than the rest of
@@ -624,7 +624,7 @@ silk robe embroidered lightning bolts~
 ~
 9 3 3 0 5 0 0 9 0 0 0
 15 0 0 1 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 silk robe embroidered lightning bolts~
    &+bThis silk robe has been finely stitched, and is quite large and
@@ -642,7 +642,7 @@ granite key~
 ~
 18 11 3 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 granite key~
    &+LThis small key has been made of a fine, yet brittle granite.
@@ -654,7 +654,7 @@ silver chain necklace~
 ~
 9 22 3 0 5 0 0 5 64 0 0
 7 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 A
 13 10
 A
@@ -666,7 +666,7 @@ silk stringed mandolin instrument~
 ~
 32 6 3 0 5 0 1 16385 64 0 0
 186 56 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 A
 13 10
 A
@@ -678,7 +678,7 @@ heavy spiked combat gloves~
 ~
 9 3 3 0 5 0 0 129 0 0 0
 5 0 0 4 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 heavy spiked combat gloves~
 ~
@@ -693,7 +693,7 @@ something~
 ~
 5 15 3 0 5 0 2 8192 0 0 0
 10 5 6 0 0 263030 50 18
-0 0 100
+0 0 100 100
 E
 something~
 ~
@@ -710,7 +710,7 @@ mighty crown thunder~
 ~
 9 8 4 0 14 0 0 17 64 0 0
 10 0 0 4 0 0 0 0
-6 15000 100 0 128 0 0
+6 15000 100 100 0 128 0 0
 E
 mighty crown thunder~
    &+WThe crown of the mighty King Straag, lord of the Storm Giants.
@@ -726,7 +726,7 @@ signet ring storms~
 ~
 9 8 3 0 5 0 0 3 64 0 0
 4 0 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 signet ring storms~
    &+WBefore you, the signet ring of storms.. the personal ring of King Straag,
@@ -743,7 +743,7 @@ black silken skull eyepatch~
 ~
 9 3 3 0 13 0 0 131073 0 0 0
 4 0 0 2 0 0 0 0
-0 15000 100
+0 15000 100 100
 A
 2 6
 A
@@ -755,7 +755,7 @@ suit black chainmail~
 ~
 9 16 3 0 14 0 0 9 64 0 0
 15 0 0 4 0 0 0 0
-7 17540 100
+7 17540 100 100
 A
 13 16
 A
@@ -767,7 +767,7 @@ huge stone vault~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 400 9 30851 20 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge stone vault~
    &+LThis huge stone vault has a massive &+Bkeyhole&+L.
@@ -779,7 +779,7 @@ huge blue key~
 ~
 18 11 1 0 7 0 4096 16385 0 0 0
 0 100 0 0 0 0 0 0
-2 4 100
+2 4 100 100
 E
 huge blue key~
    &+LThis key, carried by the &+CKing of the Storm Giants&+L, must open something of
@@ -792,7 +792,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #30853
 silver scimitar mithril pommel~
 &+Ca silver scimitar with a &+mmithril &+Cpommel&N~
@@ -800,7 +800,7 @@ silver scimitar mithril pommel~
 ~
 5 22 3 0 12 0 0 8193 67 0 0
 5 3 7 0 0 0 0 0
-0 16893 100
+0 16893 100 100
 E
 silver scimitar mithril pommel~
    &+CThis extremely-well balanced scimitar is set in a thick &+mmithril &+Cpommel.
@@ -816,4 +816,4 @@ rusty key~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

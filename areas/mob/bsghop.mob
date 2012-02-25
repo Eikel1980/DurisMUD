@@ -6,8 +6,8 @@ golem spectre girl~
 &+L   This spectre has the appearance of a child yet the power of one who has
 &+L  lived the land above.  With innocent &+Rred&+L eyes she looks through you.
 ~
-4194312 0 0 0 0 0 0 0 S
-PH 0 1 -1
+4194312 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -20,8 +20,8 @@ boy golem skeleton~
 &+L  them is muscular and young for just a moment hope springs... no the hope is
 &+L  gone and now instead you stare into an empty &+Wskull&+L.
 ~
-4194312 0 0 0 0 0 0 0 S
-PH 0 1 -1
+4194312 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -34,8 +34,8 @@ child wraith golem~
 &+L  slaughtered this child like countless others and now d&+ma&+Lrk&+me&+Lr magic binds the
 &+L  tired soul to &+ge&+ya&+gr&+yt&+Lh.
 ~
-4194312 0 0 0 0 0 0 0 S
-PH 0 512 -1
+4194312 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -47,8 +47,8 @@ angel death golem~
 &+L   Summoned by the l&+ba&+cu&+Lgh&+bt&+ce&+Lr of children, the &+WA&+Lngel of D&+weat&+Lh resides here, his
 &+L  work is being carried out by the residents of this Outpost.
 ~
-4194312 0 0 0 0 0 0 0 S
-PH 0 32 -1
+4194312 0 0 0 0 0 0 0 0 S
+PH 0 32 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

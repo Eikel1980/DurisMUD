@@ -5,7 +5,7 @@ sign~
 ~
 13 5 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+W --------------------------
@@ -23,7 +23,7 @@ serpent monument~
 ~
 13 38 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #76603
 broken rickshaw~
 &+ya broken &+wrick&+yshaw&n~
@@ -31,7 +31,7 @@ broken rickshaw~
 ~
 13 6 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 broken rickshaw~
 &+yIt appears this small rickshaw has broken a wheel by the
@@ -45,7 +45,7 @@ blacksteel katar~
 ~
 5 16 3 0 10 0 0 8193 0 0 0
 2 2 5 0 0 0 0 0
-0 8111 100
+0 8111 100 100
 E
 blacksteel katar~
 &+LA katar is an eastern weapon reknowned for its viciousness. Its basic
@@ -65,7 +65,7 @@ emerald kimono~
 ~
 9 3 3 0 5 0 0 1025 0 0 0
 12 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 emerald kimono~
 &+mThis is a beautiful dress of eastern design. Most all
@@ -82,7 +82,7 @@ wrist bow wristbow~
 ~
 9 6 3 0 5 0 0 4097 0 0 0
 0 0 0 3 0 0 0 0
-0 8111 100
+0 8111 100 100
 E
 wrist bow wristbow~
 &+LThis wristbow is useless as a missile weapon without the decades of
@@ -99,7 +99,7 @@ harvest bag~
 ~
 8 3 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 harvest bag~
 &+YThis large bag is full of &+Wrice&+y, ready for comsumption or grinding.&n
@@ -111,7 +111,7 @@ rice harvest~
 ~
 8 15 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rice harvest~
 &+yThis &+Wrice&+y seems to be just mature enough to harvest.&n
@@ -123,7 +123,7 @@ Some noshow trigger stones~
 ~
 29 11 3 0 5 0 2 0 0 0 0
 270 76787 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stones~
 switches!
@@ -135,7 +135,7 @@ Some noshow trigger stones~
 ~
 29 11 3 0 5 0 2 0 0 0 0
 270 76788 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stones~
 switches!
@@ -147,7 +147,7 @@ blood red key~
 ~
 18 15 3 0 5 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood red key~
 &+rThis key has the mark of the army of armageddon on it, and upon further
@@ -167,7 +167,7 @@ donation plate~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 donation plate~
 &+WA simple metal plate built into the wall that is used by temple goers
@@ -180,7 +180,7 @@ head scralack~
 ~
 8 2 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 head scralack~
 &+rThis head is proof of the death of Scralack, the strike force general.&n
@@ -192,7 +192,7 @@ storage bin~
 ~
 15 16 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 storage bin~
 &+LA large, black steel bin that is used for storing or transporting objects,
@@ -206,7 +206,7 @@ armageddon signet ring~
 ~
 9 15 3 0 5 0 4096 3 0 0 0
 6 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 armageddon signet ring~
 &+LThis ring bares the mark of the army of&+r armageddon&+L. It is a type of
@@ -224,7 +224,7 @@ katana~
 ~
 5 32 3 0 5 0 0 8193 0 0 0
 5 3 4 0 0 0 0 0
-0 9001 100
+0 9001 100 100
 E
 katana~
 &+gThis katana is the typical weapon for any Jade soldier. All the
@@ -243,7 +243,7 @@ enormous hemp net~
 ~
 8 43 3 0 5 0 524288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 enormous animal net~
 &+yThis hemp net is almost double the size of a regular one used for
@@ -257,7 +257,7 @@ bonzai tree~
 ~
 15 6 3 0 5 0 0 0 0 0 0
 100 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bonzai tree~
 &+yThe &+gbonzai&+y tree is as much as a hobby as it is a form of vegetation
@@ -271,7 +271,7 @@ boar meat strip~
 ~
 8 48 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 boar meat strip~
 &+rThis meat looks fairly fresh, the boar must have been slain recently.
@@ -284,7 +284,7 @@ enormous boar hide~
 ~
 8 12 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 enormous boar hide~
 &+yThis hide is large enough to use as a bedcover for an ogre. It is a
@@ -298,7 +298,7 @@ toolshed shed~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 76844 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 toolshed shed~
 &+LA fairly simple shed, large enough to fit several people and all the
@@ -312,7 +312,7 @@ shelves shelf~
 ~
 15 16 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shelves shelf~
 &+CSimple steel shelves line the inside of the toolshed. Unforuately the
@@ -326,7 +326,7 @@ utility knife~
 ~
 13 15 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 utility knife~
 &+wThis knife doesn't appear to be of much use as a weapon, in fact probably
@@ -339,7 +339,7 @@ seaturtle turtle~
 ~
 8 2 3 0 5 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 seaturtle turtle~
 &+gThis turtle is quite large for turtle standards, and quite a pain to
@@ -353,7 +353,7 @@ electrum halberd~
 ~
 5 23 3 0 5 0 4194304 8193 64 0 0
 8 4 7 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 electrum halberd~
 &+LA halberd quite a basic form of polearm, a long shaft with a blade
@@ -371,7 +371,7 @@ ground rice~
 ~
 8 48 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ground rice~
 &+yThis &+Wrice&+y has been ground and proccessed, it is ready for cooking, pasting
@@ -384,7 +384,7 @@ headdress hammer~
 ~
 9 3 3 0 11 0 0 17 0 0 0
 9 0 0 2 0 0 0 0
-0 33666 100
+0 33666 100 100
 E
 headdress hammer~
 &+LThis is the headdress of the great martial artist known as
@@ -402,7 +402,7 @@ bottle wine ricewine~
 ~
 10 40 3 0 5 0 0 8404993 0 0 0
 51 39 357 221 0 0 0 0
-0 10022 100
+0 10022 100 100
 E
 bottle wine ricewine~
 &+WThis bottle of wine has been mixed up by an experienced eastern-land
@@ -416,7 +416,7 @@ dice key~
 ~
 18 15 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dice key~
 &+LThis key has a handle that is shaped just like a six-sided &+Wdice&+L.&n
@@ -428,7 +428,7 @@ firecracker cracker~
 ~
 10 28 3 0 5 0 0 16385 0 0 0
 25 167 0 0 0 0 0 0
-0 200000 100
+0 200000 100 100
 E
 firecracker cracker~
 &+WOnly about the size of a human thumb, this little colourful firecracker,
@@ -442,7 +442,7 @@ hydra scale~
 ~
 8 35 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hydra scale~
 &+gThis scale is quite the trophy of a magnificent kill. Perhaps a crafts-
@@ -456,7 +456,7 @@ piles bones~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 piles bones~
 &+WPiles upon piles of bones, picked clean and with even the marrow sucked
@@ -469,7 +469,7 @@ mystic emerald broach~
 ~
 9 32 3 0 5 0 0 5 64 0 0
 5 0 0 3 0 0 0 0
-0 2288 100
+0 2288 100 100
 E
 mystic emerald broach~
 &+CThis is a fairly normal looking broach, except for the large &+Gemerald&+C that
@@ -487,7 +487,7 @@ sash maelstrom~
 ~
 9 3 3 0 12 0 0 2049 64 0 0
 8 0 0 2 0 0 0 0
-0 19922 100
+0 19922 100 100
 A
 10 -40
 A
@@ -499,7 +499,7 @@ rice paper hat~
 ~
 9 28 3 0 4 0 0 17 0 0 0
 2 0 0 1 0 0 0 0
-0 90 100
+0 90 100 100
 E
 rice paper hat~
 &+WThis hat has been made from folding several sheets of rice paper into
@@ -514,7 +514,7 @@ enchanted rice paper hat~
 ~
 9 28 3 0 10 0 8192 17 64 0 0
 10 0 0 3 0 0 0 0
-0 23888 100
+0 23888 100 100
 E
 enchanted rice paper hat~
 &+WUsually a paper hat would be nothing more than an object to be scoffed at,
@@ -530,7 +530,7 @@ emerald pike~
 ~
 5 16 3 0 7 0 4194304 8193 0 0 0
 8 3 4 0 0 0 0 0
-0 8221 100
+0 8221 100 100
 E
 emerald pike~
 &+LThis long polearm has been tipped with a chisled shard of &+Gemerald&+L,
@@ -548,7 +548,7 @@ fan knives _proc_~
 ~
 5 23 3 0 11 0 0 8193 0 0 0
 17 2 4 0 0 0 0 0
-0 21811 100
+0 21811 100 100
 E
 fan knives _proc_~
 &+cThis deadly weapon is the erotic dream of every assassin come true.
@@ -567,7 +567,7 @@ paper lantern~
 ~
 1 28 3 0 5 0 262144 16385 0 0 0
 0 0 300 0 0 0 0 0
-0 81 100
+0 81 100 100
 E
 paper lantern~
 &+gJade is reknowned for their lanterns and flowers more than
@@ -581,7 +581,7 @@ cherry tree~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cherry tree~
 &+yThis tree seems to bloom almost year round, bright white leaves hide
@@ -595,7 +595,7 @@ flowers bed snapdragons~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flowers bed snapdragons~
 &+gThis is a bed a beautiful snapdragons, planted in unison all down the
@@ -608,7 +608,7 @@ wild orchids~
 ~
 15 30 3 0 5 0 0 0 0 0 0
 100 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wild orchids~
 &+gSome wild &+morchids&+g seem to be blooming here.&n
@@ -620,7 +620,7 @@ green blade wakazashi~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 9 4 3 0 0 0 0 0
-0 8991 100
+0 8991 100 100
 E
 green blade wakazashi~
 &+gSlightly shorter than a katana, this blade is shaped identically,
@@ -638,7 +638,7 @@ captured razorback male~
 ~
 8 2 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 captured razorback male~
 &+yWow! What a catch. If one was to be interested in collecting rare and
@@ -651,7 +651,7 @@ scrying mirror~
 ~
 25 7 3 0 5 0 4129 0 0 0 0
 76862 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scrying mirror~
 &+cThis is a mystical communication mirror, used to speak with people
@@ -664,7 +664,7 @@ scrying mirror~
 ~
 25 7 3 0 5 0 4129 0 0 0 0
 76799 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scrying mirror~
 &+cThis is a mystical communication mirror, used to speak with people
@@ -677,7 +677,7 @@ blood stained booklet~
 ~
 8 29 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stained blood booklet~
 &+r        Generals of Armageddon, doust forget thy place.
@@ -703,7 +703,7 @@ bamboo helm battlehlem~
 ~
 9 41 3 0 5 0 0 17 0 0 0
 9 0 0 3 0 0 0 0
-0 23001 100
+0 23001 100 100
 E
 bamboo helm battlehlem~
 &+yThis helm is extremely well crafted, and even though it is created
@@ -722,7 +722,7 @@ bamboo battledress dress~
 ~
 9 41 3 0 13 0 0 9 0 0 0
 60 0 0 3 0 0 0 0
-0 72111 100
+0 72111 100 100
 A
 31 4
 A
@@ -734,7 +734,7 @@ bamboo trees stalks~
 ~
 15 6 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bamboo trees stalks~
 &+ySeveral shoots of bamboo grow up from the soft earth here.&n
@@ -746,7 +746,7 @@ special sushi~
 ~
 10 48 3 0 7 0 0 16385 0 0 0
 50 28 0 0 0 0 0 0
-0 11020 100
+0 11020 100 100
 E
 special sushi~
 &+WRice&+g and fish wrapped in seaweed. Hmm. How exotic.&n
@@ -758,7 +758,7 @@ bowl turtle soup~
 ~
 10 40 3 0 7 0 0 16385 0 0 0
 50 200 35 15 0 0 0 0
-0 922 100
+0 922 100 100
 E
 bowl turtle soup~
 &+gIt sure doesn't smell very nice, and probably is for an aquired taste,
@@ -771,7 +771,7 @@ sign~
 ~
 13 6 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+W  ----------------------
@@ -789,7 +789,7 @@ family heirloom~
 ~
 8 24 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 family heirloom~
 &+YThis heirloom has been etched with several markings of the far east
@@ -804,7 +804,7 @@ mask armageddon~
 ~
 9 15 3 0 5 0 0 262145 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -816,7 +816,7 @@ wad spawn goo~
 ~
 9 40 3 0 7 0 33558656 68042753 64 0 0
 7 0 0 0 0 0 0 0
-0 34433 100 8 28 0 0
+0 34433 100 100 8 28 0 0
 A
 24 -2
 A
@@ -828,7 +828,7 @@ bar electrum~
 ~
 8 23 3 0 11 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 300000 100
+10 300000 100 100
 E
 bar electrum~
 &+CThis is a half-kilogram bar of electrum. It is usually worth the most
@@ -842,7 +842,7 @@ chunk adamantium~
 ~
 8 19 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 chunk adamantium~
 &+mThis is solid, pure, chunk of adamantium, one of the rarest,
@@ -856,7 +856,7 @@ bar electium~
 ~
 8 19 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 bar electium~
 &+mOne part electrum, one part adamantium, this refined bar of electium is
@@ -869,7 +869,7 @@ weapon template~
 ~
 8 15 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 weapon template~
 &+cThis is a template used for forging weapons. It is a type of mold that
@@ -884,7 +884,7 @@ lilac bush~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lilac bush~
 &+gThis is a fragrant &+mlilac&+g tree. The blooming flowers are deep &+mpurple&+g,
@@ -897,7 +897,7 @@ paper fan~
 ~
 33 28 3 0 7 0 0 16385 0 0 0
 0 0 40 0 0 0 0 0
-0 19922 100
+0 19922 100 100
 E
 paper fan~
 &+mPaper fans are very common in the eastern culture, and depending
@@ -913,7 +913,7 @@ hertitage bracelet~
 ~
 9 8 3 0 7 0 0 4097 0 0 0
 7 0 0 3 0 0 0 0
-0 6881 100
+0 6881 100 100
 A
 13 15
 A
@@ -925,7 +925,7 @@ emerald roses~
 ~
 15 30 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 emerald roses~
 &+gProbably one of the rarest flowers to ever grow on the material plane,
@@ -939,7 +939,7 @@ heart hydra~
 ~
 8 2 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 heart hydra~
 &+rThis heart is more than enough proof that a great hydra has been slain.&n
@@ -951,7 +951,7 @@ severed index finger~
 ~
 8 2 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 severed index finger~
 ~
@@ -962,7 +962,7 @@ royal invitation~
 ~
 8 28 3 0 5 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 royal invitation~
 &+WThis is a letter of invitation that allows personal audience with the
@@ -977,7 +977,7 @@ numchucks electrum~
 ~
 5 23 3 0 11 0 1024 8193 0 114752 0
 20 5 5 0 0 0 0 0
-0 19222 100
+0 19222 100 100
 A
 10 -25
 A
@@ -989,7 +989,7 @@ cheery seed~
 ~
 8 30 3 0 5 0 528384 1 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 cheery seed~
 &+yThis little seedling belongs to a &+Rcherry&+y tree.&n
@@ -1001,7 +1001,7 @@ wood sprite~
 ~
 8 2 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 wood sprite~
 &+gSprites&+y are cousins of faeries, brownies, nymphs, and wisps. They share
@@ -1017,7 +1017,7 @@ skull crossbones earring~
 ~
 9 22 3 0 7 0 0 524289 0 0 0
 3 0 0 2 0 0 0 0
-0 822 100
+0 822 100 100
 E
 skull crossbones earring~
 &+cThis earring dangles down from the lobe nearly to the shoulder, where
@@ -1035,7 +1035,7 @@ cargo crates~
 ~
 25 6 3 0 5 0 0 0 0 0 0
 76909 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cargo crates~
 &+yThese crates are large enough for even an ogre to enter easily. They
@@ -1048,7 +1048,7 @@ cargo crates~
 ~
 25 6 3 0 5 0 0 0 0 0 0
 76910 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cargo crates~
 &+yThese crates are large enough for even an ogre to enter easily. They
@@ -1061,7 +1061,7 @@ wildflowers flowers~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wildflowers flowers~
 &+gThis is a bed of a bouquet of wildflowers, gather from all over &+GJade&+g.&n
@@ -1073,7 +1073,7 @@ pipe wisdom~
 ~
 9 34 3 0 5 0 1 262145 0 0 0
 0 0 0 3 0 0 0 0
-0 7888 100 0 16 0 0
+0 7888 100 100 0 16 0 0
 E
 pipe wisdom~
 &+yThis ivory pipe has been carved with great detail. Tiny pictures and etching
@@ -1090,7 +1090,7 @@ map jade~
 ~
 8 28 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 map jade~
 &+WA simple, yet effective map, to navigate the capital.
@@ -1127,7 +1127,7 @@ bone warhatchet hatchet~
 ~
 5 10 3 0 11 0 16778512 8193 66 16384 0
 1 5 5 0 0 0 0 0
-0 7481 100
+0 7481 100 100
 E
 bone warhatchet hatchet~
 &+LThis hatchet appears to be perfect for throwing. The balance in the
@@ -1145,7 +1145,7 @@ emerald rose seeds~
 ~
 8 5 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 emerald rose seeds~
 &+gThese seeds are from the extremely rare &+Gemerald&+g rose.&n
@@ -1157,7 +1157,7 @@ armor template~
 ~
 8 15 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 weapon template~
 &+cThis is a template used for forging armor. It is a type of mold that
@@ -1172,7 +1172,7 @@ warplate plate sixth legion~
 ~
 9 1 3 0 12 0 8193 9 64 4197892 0
 50 0 0 4 1 0 0 0
-0 76711 100
+0 76711 100 100
 E
 warplate plate sixth legion~
 &+LThe armor of the dreaded&+r Sixth Legion&+L is all extremely powerful,
@@ -1192,7 +1192,7 @@ tanto blacksteel~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 3 4 0 0 0 0 0
-0 3211 100
+0 3211 100 100
 E
 tanto blacksteel~
 &+LA tanto is a short sword used by the assassins and killers of the
@@ -1210,7 +1210,7 @@ spiked bamboo shield~
 ~
 37 41 3 0 5 0 0 513 0 0 0
 1 3 4 170 1 0 0 0
-0 9022 100
+0 9022 100 100
 E
 spiked bamboo shield~
 &+yThis shield is basically just a dozen or so bamboo poles roped
@@ -1226,7 +1226,7 @@ robe red dragons~
 ~
 9 3 3 0 5 0 0 1025 64 0 0
 15 0 0 2 0 0 0 0
-0 8921 100
+0 8921 100 100
 A
 18 3
 A
@@ -1238,7 +1238,7 @@ sandals bamboo~
 ~
 9 41 3 0 5 0 0 65 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sandals bamboo~
 &+yThese sandals may appear to be quite plain but they make excellent foot
@@ -1253,7 +1253,7 @@ storage racks bins~
 ~
 15 6 3 0 5 0 0 0 0 0 0
 -1000 5 0 -1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 storage racks bins~
 &+yStorage items of all sorts line the walls here, everything from wine-
@@ -1266,7 +1266,7 @@ storage racks bins bottle bottles~
 ~
 29 6 3 0 5 0 0 0 0 0 0
 270 76874 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 storage racks bins~
 &+yStorage items of all sorts line the walls here, everything from wine-
@@ -1280,7 +1280,7 @@ mark mankillers sigil~
 ~
 8 3 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 mark mankillers sigil~
 &+rThis mark has the bleeding heart pierced by a dagger assassin sigil
@@ -1295,7 +1295,7 @@ medallion vengence~
 ~
 9 23 3 0 5 0 1 5 64 0 0
 8 0 0 3 0 0 0 0
-0 21922 100
+0 21922 100 100
 E
 medallion vengence~
 &+LThis medallion has an aura of pure evil about it, the
@@ -1311,7 +1311,7 @@ emerald royal key~
 ~
 18 32 3 0 5 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 emerald royal key~
 &+gThis key has been crafted from pure emerald crystral. It has been etched
@@ -1324,7 +1324,7 @@ wild orchid seeds~
 ~
 8 4 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 wild orchid seeds~
 &+gThese seeds are from a wild &+morchid&+g bush.&n
@@ -1336,7 +1336,7 @@ snapdragon seeds~
 ~
 8 4 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 snapdragon seeds~
 &+gThese &+yseeds&+g are from a pretty little snapdragon plant.&n
@@ -1348,7 +1348,7 @@ bonzai tree seed~
 ~
 8 4 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 bonzai tree seed~
 &+yThese seeds belong to the &+gbonzai&+y tree, a unique type of vegetation found
@@ -1361,7 +1361,7 @@ lilac seeds~
 ~
 8 4 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 lilac seeds~
 &+gThese seeds belong to a &+mlilac&+g bush.&n
@@ -1373,7 +1373,7 @@ crack wall~
 ~
 25 11 3 0 5 0 0 0 0 0 0
 76917 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crack wall~
 &+LThis crack seems to be wide enough to squeeze through, however there is
@@ -1386,7 +1386,7 @@ kabuto helm~
 ~
 9 15 3 0 5 0 0 17 0 0 0
 0 0 0 0 0 0 0 0
-0 5001 100
+0 5001 100 100
 E
 kabuto helm~
 &+yThis helmet is designed in traditional eastern fashion, it
@@ -1400,7 +1400,7 @@ oda sleeves gote~
 ~
 9 15 3 0 5 0 0 257 0 0 0
 0 0 0 0 0 0 0 0
-0 5661 100
+0 5661 100 100
 E
 oda sleeves gote~
 &+yTraditional eastern armwear, these sleeves are made from padded
@@ -1413,7 +1413,7 @@ scale jade wyrm~
 ~
 8 35 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1002 100
+0 1002 100 100
 E
 scale jade wyrm~
 &+gThis scale is from a massive jade wyrm. It is the size of a mans
@@ -1426,7 +1426,7 @@ crack wall~
 ~
 25 11 3 0 5 0 0 0 0 0 0
 76904 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crack wall~
 &+LThis crack seems to be wide enough to squeeze through, however there is
@@ -1439,7 +1439,7 @@ katar miasma~
 ~
 5 19 3 0 5 0 16777473 8193 64 0 0
 2 3 6 0 0 186 50 20
-0 50300 100 32768 12288 0 0
+0 50300 100 100 32768 12288 0 0
 E
 katar miasma~
 ~
@@ -1466,7 +1466,7 @@ refined bar mithril~
 ~
 8 18 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 600000 100
+0 600000 100 100
 E
 refined bar mithril~
 &+mThis bar is the result of refining a solid piece of mithril ore.
@@ -1479,7 +1479,7 @@ gale combat vest~
 ~
 9 13 3 0 5 0 0 9 0 0 0
 11 0 0 3 0 0 0 0
-0 781 100
+0 781 100 100
 E
 gale combat vest~
 &+LThis combat vest is a well-known style of the Storm Port navy.
@@ -1495,7 +1495,7 @@ war sword warsword iron~
 ~
 5 15 3 0 5 0 0 8193 0 0 0
 9 2 5 0 0 0 0 0
-0 7272 100
+0 7272 100 100
 E
 war sword warsword iron~
 &+LA warsword found typically within the ranks of the Storm Port
@@ -1513,7 +1513,7 @@ bouquet flowers~
 ~
 3 30 3 0 5 0 0 16385 0 0 0
 50 3 3 444 0 0 0 0
-0 8878 100
+0 8878 100 100
 E
 bouquet flowers~
 &+gThis bouquet of flowers is absolutely breath-taking, whoever made
@@ -1529,7 +1529,7 @@ captured outlaw~
 ~
 8 2 3 0 5 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-50 1 100
+50 1 100 100
 E
 captured outlaw~
 &+ySeems you have caught yourself an outlaw here, he writhes and shouts
@@ -1543,7 +1543,7 @@ glass ampoule holy water~
 ~
 10 40 3 0 5 0 16777232 16385 0 0 0
 30 58 0 0 0 0 0 0
-0 200000 100
+0 200000 100 100
 E
 glass ampoule holy water~
 &+WThis is a small glass globe that has been filled with holy water.
@@ -1557,7 +1557,7 @@ white belt silk~
 ~
 15 3 3 0 5 0 0 2049 0 0 0
 50 5 0 50 0 0 0 0
-0 6881 100
+0 6881 100 100
 E
 white belt silk~
 &+WThis is fairly simple belt, made from white cloth, with white
@@ -1573,7 +1573,7 @@ neck chain fortune~
 ~
 9 16 3 0 5 0 8192 5 0 0 0
 8 0 0 3 0 0 0 0
-0 8771 100
+0 8771 100 100
 E
 neck chain fortune~
 &+yA simple chain necklace, that has the emblem of the &+LSoldiers of&+Y Fortune
@@ -1590,7 +1590,7 @@ holy relic east~
 ~
 8 27 3 0 5 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 holy relic~
 &+LOne of the four holy relics of the &+WCelestial&+C Kings&+L. Each relic is
@@ -1606,7 +1606,7 @@ Some noshow pillar triggers~
 ~
 29 6 3 0 5 0 2 0 0 0 0
 270 76692 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #76710
 brig key iron~
 &+Lthe brig key&n~
@@ -1614,7 +1614,7 @@ brig key iron~
 ~
 18 15 3 0 5 0 4096 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 brig key iron~
 &+LThis solid iron key seems completely unremarkably except for
@@ -1627,7 +1627,7 @@ holy relic west~
 ~
 8 27 3 0 5 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 holy relic~
 &+LOne of the four holy relics of the &+WCelestial&+C Kings&+L. Each relic is
@@ -1643,7 +1643,7 @@ holy relic north~
 ~
 8 27 3 0 5 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 holy relic~
 &+LOne of the four holy relics of the &+WCelestial&+C Kings&+L. Each relic is
@@ -1659,7 +1659,7 @@ holy relic south~
 ~
 8 27 3 0 5 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 holy relic~
 &+LOne of the four holy relics of the &+WCelestial&+C Kings&+L. Each relic is
@@ -1675,7 +1675,7 @@ gloves mind~
 ~
 9 3 3 0 5 0 0 129 64 0 0
 7 0 0 3 0 0 0 0
-0 32312 100 0 0 16777216 0
+0 32312 100 100 0 0 16777216 0
 E
 gloves mind~
 &+bA strange blue-hued cloth that radiates magical energies has
@@ -1693,7 +1693,7 @@ Some noshow pillar triggers~
 ~
 29 6 3 0 5 0 2 0 0 0 0
 270 76929 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #76716
 golden gold elven necklace~
 &+ya &+Ygolden&+y elven necklace&n~
@@ -1701,7 +1701,7 @@ golden gold elven necklace~
 ~
 9 24 3 0 5 0 0 5 0 0 0
 6 0 0 3 0 0 0 0
-0 2999 100
+0 2999 100 100
 E
 golden gold elven necklace~
 &+gThis necklace is engraved with ancient elven runes, most likely
@@ -1717,7 +1717,7 @@ glass eye~
 ~
 9 7 3 0 7 0 0 131073 0 0 0
 8 0 0 3 0 0 0 0
-0 6722 100
+0 6722 100 100
 A
 18 3
 A
@@ -1729,7 +1729,7 @@ green silk belt~
 ~
 9 3 3 0 7 0 0 2049 0 0 0
 0 0 0 3 0 0 0 0
-0 8991 100
+0 8991 100 100
 A
 13 20
 #76719
@@ -1739,7 +1739,7 @@ spiked electrum bracer~
 ~
 9 23 3 0 5 0 0 4097 0 0 0
 7 0 0 3 0 0 0 0
-0 7661 100
+0 7661 100 100
 A
 18 2
 A
@@ -1751,7 +1751,7 @@ chest plate electium~
 ~
 9 23 3 0 13 0 8193 9 0 0 0
 48 0 0 5 0 0 0 0
-0 67771 100
+0 67771 100 100
 A
 13 20
 A
@@ -1763,7 +1763,7 @@ spiked bamboo collar~
 ~
 9 41 3 0 7 0 0 5 0 0 0
 8 0 0 2 0 0 0 0
-0 7822 100
+0 7822 100 100
 A
 18 2
 A
@@ -1775,7 +1775,7 @@ hood cunning~
 ~
 9 3 3 0 5 0 0 17 0 0 0
 10 0 0 1 0 0 0 0
-0 78000 100 256 2 0 0
+0 78000 100 100 256 2 0 0
 A
 33 2
 A
@@ -1787,7 +1787,7 @@ lohengrin greatsword sword~
 ~
 5 23 3 0 5 0 4194305 8193 0 0 0
 13 6 6 0 0 0 0 0
-0 78111 100 268435456 0 0 0
+0 78111 100 100 268435456 0 0 0
 A
 18 5
 A
@@ -1799,7 +1799,7 @@ simple necktie neck tie~
 ~
 9 3 3 0 5 0 0 5 0 0 0
 3 0 0 2 0 0 0 0
-0 679 100
+0 679 100 100
 A
 13 5
 #76725
@@ -1809,7 +1809,7 @@ enchanted necktie neck tie~
 ~
 9 3 3 0 5 0 0 5 0 0 0
 8 0 0 2 0 0 0 0
-0 679 100
+0 679 100 100
 A
 13 10
 #76726
@@ -1819,7 +1819,7 @@ bamboo chestguard guard~
 ~
 9 41 3 0 5 0 0 9 0 0 0
 25 0 0 3 0 0 0 0
-0 89777 100 16777248 0 0 0
+0 89777 100 100 16777248 0 0 0
 A
 54 35
 #76727
@@ -1829,7 +1829,7 @@ vambraces ebriham~
 ~
 9 15 3 0 9 0 0 257 0 0 0
 11 0 0 3 0 0 0 0
-0 9911 100
+0 9911 100 100
 A
 1 10
 A
@@ -1841,7 +1841,7 @@ stained robes brother mande~
 ~
 9 3 3 0 2 0 4160 1025 0 0 0
 7 0 0 1 0 0 0 0
-0 1 100
+0 1 100 100
 #76729
 royal clasp bloodstone~
 &+Lthe royal clasp of &+rBloodstone&n~
@@ -1849,7 +1849,7 @@ royal clasp bloodstone~
 ~
 9 16 3 0 5 0 0 524289 0 0 0
 4 0 0 2 0 0 0 0
-0 9000 100
+0 9000 100 100
 A
 34 2
 A
@@ -1861,4 +1861,4 @@ bloody head mande~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

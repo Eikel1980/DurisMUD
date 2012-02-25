@@ -5,7 +5,7 @@ planetary display~
 ~
 8 38 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 planetary display~
 &+WThis display is truly amazing, a scaled down version of the solar
@@ -20,7 +20,7 @@ bookcase case~
 ~
 15 6 3 0 7 0 0 0 0 1 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookcase case~
 &+yThis bookcase is packed to its capacity with rare and important books.&n
@@ -32,7 +32,7 @@ ornate fountain~
 ~
 17 15 3 0 7 0 0 0 0 1 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ornate fountain~
 &+WA beautiful fountain, carved and designed especially for the walk
@@ -45,7 +45,7 @@ cosmic statue~
 ~
 8 38 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cosmic statue~
 &+WThis is just one of the many carved statues that are spread all over
@@ -59,7 +59,7 @@ oracle statue ball~
 ~
 25 15 3 0 7 0 0 0 0 1 0
 76228 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 oracle statue ball~
 &+WA strange feeling overwhelms you when you gaze at this
@@ -73,7 +73,7 @@ anvil~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 anvil~
 &+LA simple iron anvil used for blacksmithing.&n
@@ -85,7 +85,7 @@ lightpost light~
 ~
 13 15 3 0 7 0 262144 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lightpost light~
 &+WThis lightpost has been fashioned from moonstone. It is kept lit
@@ -98,7 +98,7 @@ lightpost light~
 ~
 13 15 3 0 7 0 262144 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lightpost light~
 &+YThis lightpost has been fashioned from sunstone, it is kept lit
@@ -111,7 +111,7 @@ packing crates~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 packing crates~
 &+yTypical crates used for shipping.&n
@@ -123,7 +123,7 @@ tether pole~
 ~
 13 6 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tether pole~
 &+yThis tether pole is as tall as about two men and as almost half a foot
@@ -140,7 +140,7 @@ sunstone key~
 ~
 18 11 3 0 7 0 134217728 16385 0 1 0
 0 100 0 0 0 0 0 0
-0 100000 100
+0 100000 100 100
 E
 sunstone key~
 &+yThis key appears to be quite well made, and is quite
@@ -154,7 +154,7 @@ drafting table~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 drafting table~
 &+yThis table is enormous. It is used by engineers to draft blueprints,
@@ -168,7 +168,7 @@ contraption~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 contraption~
 &+yOnly god and just maybe the people who constructed
@@ -182,7 +182,7 @@ stacks lumber~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stacks lumber~
 &+yLumber imported from Desolate has been piled up here, for use with &+yship construction.&n
@@ -194,7 +194,7 @@ a trigger boulder~
 ~
 29 15 3 0 7 0 2 0 0 1 0
 270 76134 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #76016
 trebuchet~
 &+yan enormous trebuchet&n~
@@ -202,7 +202,7 @@ trebuchet~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 trebuchet~
 &+yAs one of the most powerful types of siege and defense
@@ -217,7 +217,7 @@ warp pad~
 ~
 25 15 3 0 7 0 1 0 0 1 0
 76002 282 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 warp pad~
 &+YObviously some sort of magical teleporter, large enough
@@ -231,7 +231,7 @@ moonstone greatsword great sword~
 ~
 5 11 3 0 7 0 4194304 8193 0 0 0
 13 4 5 0 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 moonstone greatsword great sword~
 &+WThis is a very large greatsword, and extremely heavy. It
@@ -248,7 +248,7 @@ plate full moonstone~
 ~
 9 11 3 0 7 0 536870912 1025 0 0 0
 35 0 0 4 0 0 0 0
-0 25000 100
+0 25000 100 100
 A
 18 1
 A
@@ -260,7 +260,7 @@ a trigger boulder~
 ~
 29 15 3 0 7 0 2 0 0 1 0
 270 76185 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 #76021
 statue~
 &+Wa magificent statue&n~
@@ -268,7 +268,7 @@ statue~
 ~
 13 34 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
 &+WThis statue, carved from pure ivory, is yet another
@@ -281,7 +281,7 @@ crevice cave~
 ~
 25 15 3 0 7 0 0 0 0 1 0
 76218 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crevice cave~
 &+LThis cave looks dark and scary and there is only one way of telling
@@ -294,7 +294,7 @@ hole~
 ~
 25 15 3 0 7 0 0 0 0 1 0
 76217 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole~
 &+LThis hole leads up from out of the cave back to the surface of the
@@ -307,7 +307,7 @@ sparkling fountain~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sparkling fountain~
 &+WThis fountain constructed at Heavens Plaza seems to emit a healing warmth,
@@ -320,7 +320,7 @@ bunk bed~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bunk bed~
 &+yThis is a set of two beds, one on bottom on one top.
@@ -334,7 +334,7 @@ wounded runner~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 1000 0 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wounded runner~
 &+yThis runner looks to be in pretty bad shape, he looks up at you with
@@ -351,7 +351,7 @@ blueprints second draft~
 ~
 8 29 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #76028
 security key~
 &+La security key&n~
@@ -359,7 +359,7 @@ security key~
 ~
 18 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 security key~
 &+LThis looks like a key that is used for unlocking handcuffs, or other
@@ -372,7 +372,7 @@ park bench~
 ~
 13 6 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 park bench~
 &+yA simple wooden park bench has been set up here.&n
@@ -384,7 +384,7 @@ mask templar~
 ~
 9 34 3 0 11 0 0 262145 0 18886672 0
 8 0 0 3 0 0 0 0
-0 11200 100
+0 11200 100 100
 E
 mask templar~
 &+WThis mask is etched with the holy runes of the sect
@@ -402,7 +402,7 @@ slink fur~
 ~
 13 2 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 slink fur~
 &+yThis is the fur of the rarely seen mountain slink.
@@ -415,7 +415,7 @@ bracer whirlwinds~
 ~
 9 16 3 0 5 0 1025 4097 0 85999643 0
 7 0 0 0 0 0 0 0
-0 22211 100
+0 22211 100 100
 E
 bracer whirlwinds~
 &+WThis bracers absolutely pulsates with untapped magiks of the storms.
@@ -431,7 +431,7 @@ sunstone greatsword great sword~
 ~
 5 11 3 0 7 0 4194304 8193 0 0 0
 13 3 5 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 sunstone greatsword great sword~
 &+yThis is a very large sword carved from a solid chunk of
@@ -448,7 +448,7 @@ plate full sunstone~
 ~
 9 11 3 0 7 0 536870912 9 0 0 0
 40 0 0 4 0 0 0 0
-0 50000 100
+0 50000 100 100
 A
 18 2
 A
@@ -460,7 +460,7 @@ bracelet astrology~
 ~
 9 15 3 0 5 0 0 4097 0 69234715 0
 5 0 0 0 0 0 0 0
-0 9921 100
+0 9921 100 100
 A
 13 15
 A
@@ -472,7 +472,7 @@ chrome shin guards shinguards~
 ~
 9 15 3 0 5 0 0 33 0 0 0
 8 0 0 2 0 0 0 0
-0 12212 100
+0 12212 100 100
 E
 chrome shin guards shinguards~
 &+wThese chrome coloured plates fit perfectly over the lower
@@ -487,7 +487,7 @@ cosmic tome~
 ~
 33 29 3 0 5 0 0 8404993 0 0 0
 0 0 300 0 0 0 0 0
-0 2222 100
+0 2222 100 100
 E
 cosmic tome~
 &+WThis book has been designed for those who lack the ability
@@ -501,7 +501,7 @@ soul zeenium~
 ~
 8 1 3 0 5 0 8916992 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 soul zeenium~
 &+wA dark and evil soul that should be sealed away somewhere.&n
@@ -513,7 +513,7 @@ soul ignor~
 ~
 8 1 3 0 5 0 8916992 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 soul ignor~
 &+wA dark and evil soul that should be sealed away somewhere.&n
@@ -525,7 +525,7 @@ soul strata~
 ~
 8 1 3 0 5 0 8916992 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 soul strata~
 &+wA dark and evil soul that should be sealed away somewhere.&n
@@ -537,7 +537,7 @@ soul omoona~
 ~
 8 1 3 0 5 0 8916992 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 soul omoona~
 &+wA dark and evil soul that should be sealed away somewhere.&n
@@ -549,7 +549,7 @@ sunstone warmace mace~
 ~
 5 11 3 0 5 0 1024 8193 0 68698113 0
 6 3 6 0 0 0 0 0
-0 27011 100
+0 27011 100 100
 A
 18 3
 A
@@ -561,7 +561,7 @@ barbed whip cometstrike~
 ~
 5 14 3 0 12 0 0 8193 64 0 0
 14 3 6 0 0 520 50 30
-0 34022 100
+0 34022 100 100
 E
 barbed whip cometstrike~
 &+yBeautiful cured leather has been bound together to create a magical whip.
@@ -590,7 +590,7 @@ cosmic totem~
 ~
 34 6 3 0 5 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-0 8001 100
+0 8001 100 100
 A
 13 8
 #76045
@@ -600,7 +600,7 @@ council key~
 ~
 18 15 3 0 5 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 council key~
 &+LThis key is eteched with tiny&+Y sunstone&+L cosmic runes and
@@ -614,7 +614,7 @@ harp stars~
 ~
 32 6 3 0 11 0 0 16385 0 0 0
 187 40 0 20 0 0 0 0
-0 19000 100
+0 19000 100 100
 A
 19 3
 #76047
@@ -624,7 +624,7 @@ water wisp~
 ~
 9 1 3 0 5 0 8192 524289 64 0 0
 7 0 0 2 0 0 0 0
-0 5000 100 0 16 0 0
+0 5000 100 100 0 16 0 0
 A
 12 15
 A
@@ -636,7 +636,7 @@ moonstone visor~
 ~
 9 11 3 0 9 0 0 131073 0 0 0
 0 0 0 3 0 0 0 0
-0 9222 100
+0 9222 100 100
 E
 moonstone visor~
 &+wThis is a visor crafted from moonstone that connects with
@@ -653,7 +653,7 @@ key oblong sunstone~
 ~
 18 11 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #76050
 robes maelstrom~
 &+wth&+Ce ro&+cbes o&+Lf the &+Cm&+cae&+Lls&+wtro&+Cm&n~
@@ -661,7 +661,7 @@ robes maelstrom~
 ~
 9 15 3 0 5 0 0 1025 0 96071771 0
 10 0 0 2 0 0 0 0
-0 0 100 0 0 0 2048
+0 0 100 100 0 0 0 2048
 E
 robes maelstrom~
 &+cThese robes, a part of the legendary maelstrom equipment created
@@ -676,7 +676,7 @@ gloves storm maelstrom~
 ~
 9 15 3 0 5 0 0 129 0 17825856 0
 8 0 0 0 0 0 0 0
-0 0 100 0 0 2097152 0
+0 0 100 100 0 0 2097152 0
 E
 gloves storm maelstrom~
 &+cThis gloves contain the very essence of the storms and are almost
@@ -693,7 +693,7 @@ sunstone knuckles~
 ~
 9 11 3 0 12 0 1025 129 0 17825856 0
 8 0 0 3 0 0 0 0
-0 8821 100
+0 8821 100 100
 A
 32 3
 A
@@ -705,7 +705,7 @@ sunstone horn clasp~
 ~
 9 11 3 0 5 0 0 134217729 0 0 0
 6 0 0 2 0 0 0 0
-0 9911 100 0 12288 0 0
+0 9911 100 100 0 12288 0 0
 A
 13 10
 A
@@ -717,7 +717,7 @@ dying prisoner~
 ~
 15 2 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dying prisoner~
 &+LThis poor fellow has been locked up for far too long
@@ -731,7 +731,7 @@ jugglers shoes~
 ~
 9 15 3 0 5 0 1024 65 0 126976 0
 5 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 A
 26 5
 A
@@ -743,7 +743,7 @@ sunstone dagger~
 ~
 5 11 3 0 5 0 16777488 8193 0 0 0
 2 2 6 0 0 0 0 0
-0 22929 100
+0 22929 100 100
 A
 18 3
 A
@@ -755,7 +755,7 @@ chimaera scale~
 ~
 9 35 3 0 5 0 4096 513 0 0 0
 18 0 0 3 0 0 0 0
-20 8989 100 8 0 0 0
+20 8989 100 100 8 0 0 0
 A
 13 15
 #76058
@@ -765,7 +765,7 @@ gnomish cape life~
 ~
 9 3 3 0 5 0 0 1025 0 0 0
 10 0 0 2 0 0 0 0
-0 6771 100
+0 6771 100 100
 A
 13 12
 A
@@ -777,7 +777,7 @@ head siege golem~
 ~
 9 15 3 0 13 100 0 17 0 0 0
 12 0 0 5 0 0 0 0
-0 32211 100 32832 0 0 0
+0 32211 100 100 32832 0 0 0
 A
 19 2
 A
@@ -789,7 +789,7 @@ eyes basilisk~
 ~
 9 2 3 0 5 0 64 131073 0 0 0
 8 0 0 3 0 0 0 0
-0 12345 100
+0 12345 100 100
 A
 22 -3
 A
@@ -801,7 +801,7 @@ staff storm~
 ~
 5 6 3 0 10 0 1 8193 0 67203099 0
 12 3 4 0 0 191 11 10
-0 44000 100
+0 44000 100 100
 E
 staff storm~
 &+cThis staff &+Mglows&+c with the power of the &+cdruidistic storms.
@@ -829,7 +829,7 @@ generic potion~
 ~
 10 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #76063
 spiked sunstone collar~
 &+Ya spiked s&+yu&+Ynst&+yon&+Ye collar&n~
@@ -837,7 +837,7 @@ spiked sunstone collar~
 ~
 9 11 3 0 5 0 0 5 0 0 0
 6 0 0 3 1 0 0 0
-0 12000 100
+0 12000 100 100
 A
 18 2
 A
@@ -849,7 +849,7 @@ wisp living wind~
 ~
 8 1 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #76065
 wisp living wind~
 &+ca wisp of living wind&n~
@@ -857,7 +857,7 @@ wisp living wind~
 ~
 9 1 3 0 5 0 8192 2097153 0 0 0
 1 0 0 1 0 0 0 0
-0 1 100
+0 1 100 100
 A
 13 15
 #76066
@@ -867,7 +867,7 @@ halo maelstrom~
 ~
 9 1 3 0 12 0 0 17 0 0 0
 6 0 0 3 0 0 0 0
-0 18999 100 4 0 0 0
+0 18999 100 100 4 0 0 0
 A
 33 2
 A
@@ -879,7 +879,7 @@ feathers cockatrice~
 ~
 9 50 3 0 5 0 4096 257 0 0 0
 8 0 0 3 0 0 0 0
-0 8999 100 134217728 0 0 0
+0 8999 100 100 134217728 0 0 0
 A
 14 10
 #76068
@@ -889,7 +889,7 @@ study papers~
 ~
 8 28 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #76069
 study papers~
 &+Wa study of planetary alignment&n~
@@ -897,7 +897,7 @@ study papers~
 ~
 8 28 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #76243
 emblem maelstrom~
 &+Lem&+cblem o&+wf th&+ce mae&+Clstr&+Lom&n~
@@ -905,7 +905,7 @@ emblem maelstrom~
 ~
 9 1 3 0 5 0 0 2097153 0 0 0
 0 0 0 2 0 0 0 0
-0 1 100
+0 1 100 100
 A
 14 20
 #76244
@@ -915,7 +915,7 @@ hydra scale gorget~
 ~
 9 35 3 0 9 0 0 131073 0 0 0
 8 0 0 3 0 0 0 0
-0 9001 100
+0 9001 100 100
 A
 18 2
 A

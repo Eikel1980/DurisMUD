@@ -5,7 +5,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+W    -----------------------------------------\
@@ -30,7 +30,7 @@ sign small~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign small~
 &+W   _________________________________
@@ -48,7 +48,7 @@ campfire fire~
 ~
 15 15 3 0 7 0 262144 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 campfire fire~
 &+yThis &+rcampfire&+y has been set in the &+Ycamping&+y grounds and kept burning
@@ -62,7 +62,7 @@ casket~
 ~
 15 37 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 casket~
 &+LThis black casket is roughly seven feet long.  It sits in the large
@@ -76,7 +76,7 @@ casket~
 ~
 25 37 3 0 7 0 0 0 0 0 0
 22309 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 casket~
 &+LThis black casket is roughly seven feet long.  It sits in the large
@@ -91,7 +91,7 @@ small note~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small note~
 &+W     ______________
@@ -110,7 +110,7 @@ parchment note~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 parchment note~
 &+yThe parchment reads...&n
@@ -128,7 +128,7 @@ pile garbage~
 ~
 15 48 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile garbage~
 &+gThis is just a huge &+Wpile&+g of refuse inside the forest.  Campers can
@@ -142,7 +142,7 @@ small cabinet~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 15 22210 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small cabinet~
 &+yThis is a fairly small cabinet used by the &+LBlack Knight&+y to keep his
@@ -156,7 +156,7 @@ pile garbage~
 ~
 15 48 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile garbage~
 &+gThis &+Wpile&+g of refuse appears to have been here for quite a long time,
@@ -173,7 +173,7 @@ bronze key~
 ~
 18 20 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bronze key~
 &+yThis is just a simple bronze key.  It seems extremely filthy though,
@@ -186,7 +186,7 @@ stinky meat bones~
 ~
 13 10 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stinky meat bones~
 &+WThese bones must be leftovers from some camper's lunch.  By the
@@ -201,7 +201,7 @@ old book~
 ~
 8 29 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 old book~
 &+yThis book is opened to a page already. It appears to be a roster
@@ -227,7 +227,7 @@ leafy branches~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 340 22285 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22214
 sad monkey~
 &+ya sad little monkey&n~
@@ -235,7 +235,7 @@ sad monkey~
 ~
 15 2 3 0 7 0 4096 1 0 0 0
 100 5 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sad monkey~
 &+yThis poor little monkey seems so very sad.  He has wandered off
@@ -250,7 +250,7 @@ silver neck chain~
 ~
 9 22 3 0 7 0 4096 5 0 0 0
 5 0 0 3 0 0 0 0
-0 121 100
+0 121 100 100
 E
 silver neck chain~
 &+CThis is a simple chain that is worn around ones neck. It seems
@@ -263,7 +263,7 @@ badge armageddon~
 ~
 11 3 3 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 892 100
+0 892 100 100
 E
 badge armageddon~
 &+LThis is the identifaction badge of the army of &+rarmageddon&+L.  It
@@ -279,7 +279,7 @@ opaque sword short~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 9 3 2 11 0 0 0 0
-0 8981 100
+0 8981 100 100
 E
 opaque sword short~
 &+LThis is a pitch-black shortsword, commonly used by the scouts in
@@ -297,7 +297,7 @@ pile lumber logs~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile lumber logs~
 &+yThis is all fresh lumber, neatly piled on the side of the road.  It
@@ -310,7 +310,7 @@ large wagon~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large wagon~
 &+yThis is a large wagon, usually used for transporting goods from
@@ -326,7 +326,7 @@ iron rod~
 ~
 8 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 iron rod~
 &+wThis is nothing more than a long, slender shaft of iron.  Like an iron
@@ -339,7 +339,7 @@ fountain elegant~
 ~
 17 38 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain elegant~
 &+cThis &+Wfountain&+c has been carved from pure &+Wwhite marble&+c.  The water
@@ -354,7 +354,7 @@ casket~
 ~
 25 37 3 0 7 0 0 0 0 0 0
 22273 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 casket~
 &+LThis black casket is roughly seven feet long.  By climbing back
@@ -367,7 +367,7 @@ black button~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22309 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black button~
 &+LThis is a simple black button built into the eastern wall.&n
@@ -379,7 +379,7 @@ black button~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22310 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black button~
 &+LThis is a simple black button built into the eastern wall.&n
@@ -391,7 +391,7 @@ keg ale~
 ~
 17 6 3 0 7 0 0 0 0 0 0
 -1 -1 1 0 0 0 0 0
-90 22 100
+90 22 100 100
 E
 keg ale~
 &+yThis is a keg full of delicious, yummy, &+Yale&+y.  The mercenaries who
@@ -405,7 +405,7 @@ steel mesh vest~
 ~
 9 16 3 0 7 0 0 9 0 0 0
 11 0 0 3 0 0 0 0
-0 5666 100
+0 5666 100 100
 E
 steel mesh vest~
 &+wThis is a &+Cvest&+w made from woven &+Csteel&+w mesh.  It offers fairly decent
@@ -418,7 +418,7 @@ steel warhammer hammer~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 4 2 6 6 0 0 0 0
-0 3929 100
+0 3929 100 100
 E
 steel warhammer hammer~
 &+wThis is a &+Csteel&+w warhammer used by the &+cDesolate&+w militia, it is quite
@@ -435,7 +435,7 @@ tankard ale~
 ~
 13 9 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 83 100
+0 83 100 100
 E
 tankard ale~
 &+yWow. Its a mug full of &+Ybeer&+y. Thirsty anyone? &n
@@ -447,7 +447,7 @@ tankard empty~
 ~
 13 9 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 83 100
+0 83 100 100
 E
 tankard empty~
 &+yThis is an empty &+Ybeer&+y mug.  Looks like whoever had it last was
@@ -460,7 +460,7 @@ tankard ale full~
 ~
 17 9 3 0 7 0 8388608 16385 0 0 0
 10 10 1 0 0 0 0 0
-0 83 100
+0 83 100 100
 E
 tankard ale full~
 &+yThis tankard of fresh &+Yale&+y seems to be just the thing to quench
@@ -474,7 +474,7 @@ broken wheel~
 ~
 8 6 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 3421 100
+0 3421 100 100
 E
 broken wheel~
 &+yThis &+Lwagon&+y wheel seems fairly damaged.  It appears several of the
@@ -489,7 +489,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+y       / \
@@ -513,7 +513,7 @@ canvas tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22326 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 canvas tent~
 &+yThis is just a regular &+Ycanvas tent&+y set up by some long-gone camper.
@@ -526,7 +526,7 @@ naughty magazine playelf~
 ~
 33 28 3 0 7 0 0 16385 0 0 0
 0 0 35 0 0 0 0 0
-0 2779 100
+0 2779 100 100
 E
 naughty magazine playelf~
 &+cThis magazine is quite a treasure for elven teenage males.&n
@@ -562,7 +562,7 @@ ethereal spike~
 ~
 5 1 3 0 7 0 524288 8193 0 0 0
 2 2 6 11 0 0 0 0
-0 1 100
+0 1 100 100
 A
 18 2
 A
@@ -574,7 +574,7 @@ black button~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22313 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black button~
 &+LThis is a simple black button built into the western wall.&n
@@ -586,7 +586,7 @@ masters armor~
 ~
 9 27 3 0 13 0 4097 9 0 0 0
 24 0 0 4 1 0 0 0
-0 56871 100 36 0 0 0
+0 56871 100 100 36 0 0 0
 E
 masters armor~
 &+WThe fabled armor of the legendar&+Ry Masters.  Rumors around this
@@ -605,7 +605,7 @@ elven golden bracelet~
 ~
 9 24 3 0 11 0 0 4097 0 0 0
 6 0 0 3 0 0 0 0
-0 772 100
+0 772 100 100
 E
 elven golden bracelet~
 &+yThis &+Ygolden&+y bracelet has several runes of ancient elven design
@@ -621,7 +621,7 @@ pants evergreen bark~
 ~
 9 4 3 0 7 0 0 33 0 0 0
 8 0 0 2 0 0 0 0
-0 5562 100
+0 5562 100 100
 E
 pants evergreen bark~
 &+gThese pants have been crafted by stitching together the &+ybark&+g from
@@ -640,7 +640,7 @@ jousting trophy~
 ~
 8 24 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 30000 100
+0 30000 100 100
 E
 jousting trophy~
 &+YEngraved on the tall golden trophy are the words :&n
@@ -654,7 +654,7 @@ leather hiking boots~
 ~
 9 15 3 0 7 0 0 65 0 0 0
 5 0 0 4 0 0 0 0
-0 6682 100
+0 6682 100 100
 E
 leather hiking boots~
 &+LThese boots have been fashioned with some thick leather.  They
@@ -670,7 +670,7 @@ red glasses sunglasses~
 ~
 9 15 3 0 7 0 0 131073 0 0 0
 4 0 0 2 0 0 0 0
-0 18221 100 0 28 0 0
+0 18221 100 100 0 28 0 0
 E
 red glasses sunglasses~
 &+LThese sun-glasses aren't just for protecting the eyes from the
@@ -687,7 +687,7 @@ lance red black _lance_~
 ~
 5 16 3 0 7 0 4194304 8193 0 0 0
 16 2 8 11 0 0 0 0
-0 11882 100 65536 0 0 0
+0 11882 100 100 65536 0 0 0
 E
 red black lance~
 &+LThis lance is quite long, it is slender and light and made from high
@@ -705,7 +705,7 @@ white blue lance _lance_~
 ~
 5 16 3 0 7 0 4194304 8193 0 0 0
 16 2 8 11 0 0 0 0
-0 11882 100 8192 0 0 0
+0 11882 100 100 8192 0 0 0
 E
 white blue lance~
 &+WThis lance is quite long, it is slender and light and made from high
@@ -723,7 +723,7 @@ steel long sword~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 4 2 3 0 0 0 0
-0 4898 100
+0 4898 100 100
 E
 steel long sword~
 &+wThis is a plain &+Csteel&+w longsword used by the &+cDesolate&+w militia.  Though
@@ -741,7 +741,7 @@ painted rock~
 ~
 13 11 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 painted rock~
 &+LThe rock has a small chart listed on it. Its the odds for the
@@ -760,7 +760,7 @@ black button~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22311 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black button~
 &+LThis is a simple black button built into the southern wall.&n
@@ -772,7 +772,7 @@ black button~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22312 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black button~
 &+LThis is a simple black button built into the western wall.&n
@@ -784,7 +784,7 @@ black button~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22314 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black button~
 &+LThis is a simple black button built into the northern wall.&n
@@ -796,7 +796,7 @@ platium dog collar~
 ~
 9 25 3 0 7 0 0 5 0 0 0
 6 0 0 4 0 0 0 0
-0 8899 100
+0 8899 100 100
 E
 platium dog collar~
 &+wA seemingly sturdy collar that has been plated with expensive
@@ -814,7 +814,7 @@ repaired wheel~
 ~
 8 6 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 98 100
+0 98 100 100
 E
 repaired wheel~
 &+LThis &+ywagon wheel&+L looks as good as new, its hard to tell it was
@@ -827,7 +827,7 @@ brass token ancients~
 ~
 9 17 3 0 7 0 0 5 64 0 0
 6 0 0 3 0 0 0 0
-0 9789 100 0 0 0 131072
+0 9789 100 100 0 0 0 131072
 E
 brass token ancients~
 &+yThis is an extremely old &+Ltoken&+y, marked with odd glyphs of an
@@ -843,7 +843,7 @@ rocks rock~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22251 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22254
 counter~
 &+ya counter&n~
@@ -851,7 +851,7 @@ counter~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 counter~
 &+yIts the counter that the banker works on and behind.&n
@@ -863,7 +863,7 @@ deep blue potion~
 ~
 10 40 3 0 7 0 134217736 1 0 0 0
 50 73 39 39 0 0 0 0
-0 1 100
+0 1 100 100
 E
 deep blue potion~
 &+bThis deep blue potion bubbles vigoriously.  It seems something like
@@ -876,7 +876,7 @@ glow rock~
 ~
 1 11 3 0 7 0 262144 8404993 0 0 0
 0 0 12 0 0 0 0 0
-0 1901 100
+0 1901 100 100
 E
 glow rock~
 &+LThis is one of the stones found deep below the surface of the earth
@@ -890,7 +890,7 @@ steel mesh boots~
 ~
 9 16 3 0 7 0 0 65 0 0 0
 12 0 0 2 0 0 0 0
-0 23911 100
+0 23911 100 100
 E
 steel mesh boots~
 &+wThese boots have been fashioned from finely woven &+Csteel&+w-mesh, they
@@ -907,7 +907,7 @@ steel mesh gloves~
 ~
 9 16 3 0 7 0 0 129 0 0 0
 9 0 0 2 1 0 0 0
-0 14009 100
+0 14009 100 100
 E
 steel mesh gloves~
 &+wThese loose fitting gloves are pulled comfortably over ones hands
@@ -925,7 +925,7 @@ chain linked arrow case~
 ~
 30 16 3 0 7 0 0 1048577 0 0 0
 4 5 1 0 0 0 0 0
-0 12889 100
+0 12889 100 100
 E
 chain linked arrow case~
 &+wThis arrow case has been crafted from &+Cchainmail&+w, the entire case
@@ -942,7 +942,7 @@ steel sabre~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 3 4 3 0 0 0 0
-0 8989 100
+0 8989 100 100
 E
 steel sabre~
 &+wThis long, slender, and slightly curved blade has had the edge plated
@@ -959,7 +959,7 @@ chain mail bracelet~
 ~
 9 16 3 0 7 0 0 4097 0 0 0
 4 0 0 2 0 0 0 0
-0 6878 100
+0 6878 100 100
 E
 chain mail bracelet~
 &+wThis bracelet is just a simple set of interlinking &+Csteel&+w circles
@@ -977,7 +977,7 @@ shoulder drape chain linked~
 ~
 9 16 3 0 7 0 0 1025 0 0 0
 11 0 0 2 0 0 0 0
-0 12092 100
+0 12092 100 100
 E
 shoulder drape chain linked~
 &+wThis loose fitting &+Cchain mail&+w drapes over the shoulders to protect
@@ -995,7 +995,7 @@ divine token revalations~
 ~
 9 34 3 0 7 0 4096 5 0 0 0
 6 0 0 3 0 0 0 0
-0 8981 100
+0 8981 100 100
 E
 divine token revalations~
 &+WThis token is obviously from the mythical &+CHome &+Wof the &+CDivine&+W, the
@@ -1011,7 +1011,7 @@ stripes desolate~
 ~
 11 3 3 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 2341 100
+0 2341 100 100
 E
 stripes desolate~
 &+LThese &+Wstripes&+L are what denotes a high ranking officer within the
@@ -1026,7 +1026,7 @@ potion leaves bark~
 ~
 10 40 3 0 7 0 4096 16385 0 0 0
 50 294 141 355 0 0 0 0
-0 1 100
+0 1 100 100
 E
 potion leaves bark~
 &+gThis potion seems to be almost alive with the energy of nature.
@@ -1039,7 +1039,7 @@ mask vitality~
 ~
 9 1 3 0 7 0 4097 262145 64 0 0
 11 0 0 3 0 0 0 0
-0 9090 100
+0 9090 100 100
 E
 mask vitality~
 &+cThis mask has been adorned with various arcane runes.  It glows
@@ -1057,7 +1057,7 @@ book bark nymph~
 ~
 33 29 3 0 7 0 4096 16385 0 0 0
 0 0 250 0 0 0 0 0
-0 4901 100
+0 4901 100 100
 E
 book bark nymph~
 &+yThis book seems to have been fashioned from extremely light sheets
@@ -1071,7 +1071,7 @@ rocks rock~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22340 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22269
 monkey man mandolin instrument~
 &+ya &+Ymonkey&+y-man &+Ymandolin&n~
@@ -1079,7 +1079,7 @@ monkey man mandolin instrument~
 ~
 32 6 3 0 7 0 0 16385 0 0 0
 186 50 0 20 0 0 0 0
-0 3902 100
+0 3902 100 100
 E
 monkey man mandolin~
 &+y   This is an odd looking instrument that has been carved out of
@@ -1097,7 +1097,7 @@ sign small~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign small~
 &+W   _________________________________
@@ -1119,7 +1119,7 @@ soldiers tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22364 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22272
 soldiers tent~
 &+ya soldier's tent&n~
@@ -1127,7 +1127,7 @@ soldiers tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22365 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22273
 soldiers tent~
 &+ya soldier's tent&n~
@@ -1135,7 +1135,7 @@ soldiers tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22366 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22274
 long iron trident~
 &+La long &+wiron&+L trident&n~
@@ -1143,7 +1143,7 @@ long iron trident~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 8 2 5 11 0 0 0 0
-0 2901 100
+0 2901 100 100
 E
 long iron trident~
 &+LThis trident has been forged within the foundry of Storm Port. It
@@ -1161,7 +1161,7 @@ blackened soil~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 22264 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22276
 lantern torch magic~
 &+ya magic &+Ytorch&n~
@@ -1169,7 +1169,7 @@ lantern torch magic~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 340 22263 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 #22277
 sword tempest~
 &+cthe sword of the &+Ctem&+cpe&+Wst&n~
@@ -1177,7 +1177,7 @@ sword tempest~
 ~
 5 15 3 0 11 0 4194305 8193 0 0 0
 13 4 6 3 0 0 0 0
-0 9090 100 65536 0 0 0
+0 9090 100 100 65536 0 0 0
 E
 sword tempest~
 &+cThe Tempest mark on a piece of equipment is the highest privilege
@@ -1196,7 +1196,7 @@ titan strength greaves~
 ~
 9 16 3 0 12 0 4096 33 0 0 0
 12 0 0 4 0 0 0 0
-0 8982 100
+0 8982 100 100
 E
 titan strength greaves~
 &+LThese &+cgreaves&+L fit perfectly over almost anyones legs and offer
@@ -1215,7 +1215,7 @@ blackened bracer squall~
 ~
 9 16 3 0 7 0 0 4097 0 0 0
 8 0 0 3 0 0 0 0
-0 5122 100
+0 5122 100 100
 E
 blackened bracer squall~
 &+LThe equipment bearing the mark of the &+WSquall&+L is the secondest
@@ -1233,7 +1233,7 @@ blackened collar squall~
 ~
 9 16 3 0 7 0 0 5 0 0 0
 7 0 0 3 0 0 0 0
-0 2221 100
+0 2221 100 100
 E
 blackened collar squall~
 &+LThis collar bares the crest of &+WSquall&+L, a position within the &+WStorm
@@ -1252,7 +1252,7 @@ blackened shield gale~
 ~
 37 15 3 0 7 0 0 513 0 0 0
 1 3 4 95 0 0 0 0
-0 8981 100
+0 8981 100 100
 E
 blackened shield gale~
 &+LThis shield bares the crest of &+CGale&+L, a position within the &+WStorm
@@ -1269,7 +1269,7 @@ war sword iron~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 9 2 5 3 0 0 0 0
-0 2901 100
+0 2901 100 100
 E
 war sword iron~
 &+LThis sword is only about a foot in length and quite broad. It
@@ -1287,7 +1287,7 @@ badge storm~
 ~
 11 3 3 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 24 100
+0 24 100 100
 E
 badge storm~
 &+LThis is a simple &+Wbadge&+L that marks the wearer as a high ranking
@@ -1300,7 +1300,7 @@ severed hand thief~
 ~
 8 2 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 severed hand thief~
 &+rEww. Its someone's severed hand.  If they aren't dead they probably
@@ -1313,7 +1313,7 @@ banana~
 ~
 31 48 3 0 7 0 0 16385 0 0 0
 5 50 0 0 0 0 0 0
-0 1209 100
+0 1209 100 100
 E
 banana~
 &+YIts yellow, its a banana.  Some people think bananas are yummy,
@@ -1326,7 +1326,7 @@ jeweled purple ring~
 ~
 9 26 3 0 7 0 0 3 0 0 0
 6 0 0 3 0 0 0 0
-0 8122 100
+0 8122 100 100
 E
 jeweled purple ring~
 &+mThis ring bares the royal crest of the &+RT&+Yr&+Gi&+L-Lords&+m of &+MMyrabolus&+m. It
@@ -1343,7 +1343,7 @@ coconut bp backpack~
 ~
 15 4 3 0 7 0 0 4210689 0 0 0
 250 5 0 250 0 0 0 0
-0 2900 100
+0 2900 100 100
 E
 coconut bp backpack~
 &+yIt is quite strange to see anything created from the shells of a
@@ -1357,7 +1357,7 @@ earring forest goddess~
 ~
 9 30 1 0 7 0 0 524289 0 0 0
 10 0 0 2 0 0 0 0
-0 9011 100
+0 9011 100 100
 E
 earring forest goddess~
 &+gThis &+Learring&+g is quite magical, and though it was imbued by powers
@@ -1373,7 +1373,7 @@ totem angelic seraphim~
 ~
 34 15 3 0 7 0 0 16385 0 0 0
 53 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 totem angelic seraphim~
 &+WThis totem has come from the Divine Lands, and is most commonely used
@@ -1390,7 +1390,7 @@ small altar~
 ~
 15 6 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #22291
 random_exit exit_n~
 random_exit~
@@ -1398,4 +1398,4 @@ This is a random exit object.~
 ~
 13 15 3 0 5 0 2 0 0 0 0
 100 77302 0 0 0 0 0 0
-0 0 100
+0 0 100 100

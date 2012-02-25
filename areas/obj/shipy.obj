@@ -5,7 +5,7 @@ An unwanted sword sits on the ground here.~
 ~
 5 15 3 0 7 0 4980736 8193 0 0 0
 13 1 10 3 0 0 0 0
-1 1 100
+1 1 100 100
 #43101
 large shipping crate~
 &+ya shipping crate~
@@ -13,7 +13,7 @@ large shipping crate~
 ~
 13 6 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 1 100
+10 1 100 100
 #43102
 large sign~
 &+ya LARGE sign&N~
@@ -21,7 +21,7 @@ large sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-100 1 100
+100 1 100 100
 E
 large sign~
 &+R---------------------------------------&N
@@ -41,7 +41,7 @@ large sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-100 1 100
+100 1 100 100
 E
 large sign~
 &+R-----------------------------------------&N
@@ -61,7 +61,7 @@ large sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-100 1 100
+100 1 100 100
 E
 large sign~
 &+R---------------------------------------&N
@@ -82,7 +82,7 @@ A medallion sits on the ground here.~
 ~
 9 15 3 0 10 0 8193 5 0 0 0
 10 0 0 0 0 0 0 0
-1 10101 100
+1 10101 100 100
 A
 3 7
 A
@@ -94,7 +94,7 @@ An unwanted harp sits on the ground here.~
 ~
 32 6 3 0 12 0 67117065 16385 0 0 0
 187 36 0 20 0 0 0 0
-1 1010 100
+1 1010 100 100
 A
 2 4
 A
@@ -106,7 +106,7 @@ A red towel sits on the ground here.~
 ~
 9 3 5 0 5 0 0 18433 0 0 0
 10 0 0 0 0 0 0 0
-3 133 100
+3 133 100 100
 A
 28 7
 A
@@ -118,7 +118,7 @@ massive anchor~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 massive anchor~
 &+LThis massive iron anchor rests propped against a huge rock, marking
@@ -131,7 +131,7 @@ sign fishermans hutch~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign fishermans hutch~
 &+yThis sign reads:
@@ -145,7 +145,7 @@ small sign wooden~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small sign wooden~
 &+LThis sign reads:
@@ -158,7 +158,7 @@ heavy stein~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 6 3 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 heavy stein~
 &+CThis heavy glass stein has a small &+Wengraving &+Cetched onto the bottom.
@@ -178,7 +178,7 @@ sign bar endless seas~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign bar endless seas~
 &+yThis sign reads:
@@ -191,7 +191,7 @@ sign safis slashers~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign safis slashers~
 &+yThis sign reads:
@@ -204,7 +204,7 @@ sign poles pols~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign pols poles~
 &+yThis sign reads:
@@ -217,7 +217,7 @@ cask canderthal spirits~
 ~
 8 7 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-15 15454 100
+15 15454 100 100
 E
 cask canderthal spirits~
 &+WThis heavy cask of spirits bares the label of the Canderthal Harbor.
@@ -229,7 +229,7 @@ iron sword longsword~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 2 5 0 0 0 0 0
-6 4534 100
+6 4534 100 100
 E
 iron sword longsword~
    &+LThis iron longsword is heavy, but very sharp and deadly.
@@ -245,7 +245,7 @@ statue silvanos~
 ~
 25 15 3 0 7 0 1 0 64 0 0
 43276 197 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue silvanos~
 &+W   This glorious statue stands nearly sixty feet tall.
@@ -263,7 +263,7 @@ sign reading winds breath inn~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign reading winds breath inn~
 &+cThis sign reads:
@@ -276,7 +276,7 @@ sign reading fatiras weaponry~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign reading fatiras weaponry~
 &+CThis sign reads:
@@ -289,7 +289,7 @@ fine elven fishing pole~
 ~
 12 6 3 0 7 0 67117057 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 843 100
+1 843 100 100
 E
 fine elven fishing pole~
    &+LThis fine wooden fishing pole looks like it can bend pretty far.
@@ -303,7 +303,7 @@ sign reading jad fishery jads~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign reading jads fishery~
 &+CThis sign reads:
@@ -316,7 +316,7 @@ sign reading martineks clam house~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign reading martineks clam house~
 &+CThis sign reads:
@@ -329,7 +329,7 @@ suit elven chainmail~
 ~
 9 15 3 0 7 0 1 9 64 0 0
 60 0 0 0 0 0 0 0
-0 25000 100 0 28 0 0
+0 25000 100 100 0 28 0 0
 E
 suit elven chainmail~
    &+CThis elegant chainmail fits very well and glows with a powerful magic.
@@ -345,7 +345,7 @@ elven longsword sword~
 ~
 5 22 3 0 7 0 0 8193 0 0 0
 5 2 6 0 0 0 0 0
-4 8452 100
+4 8452 100 100
 E
 elven longsword sword~
 &+CThis fine elven longsword shines with an inner magic.
@@ -361,7 +361,7 @@ old reinforced shipping crate~
 ~
 13 6 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 1 100
+10 1 100 100
 #43126
 sign witchdoctor~
 &+ga sign reading 'Witchdoctor'~
@@ -369,7 +369,7 @@ sign witchdoctor~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign witchdoctor~
 &+gThis Sign Reads:
@@ -382,7 +382,7 @@ sign gutted githzerai~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign gutted githzerai~
 &+WThis sign reads:
@@ -395,7 +395,7 @@ elemental obsidian totem~
 ~
 34 36 3 0 7 0 1025 16385 64 288 0
 29 0 0 0 0 0 0 0
-4 41999 100 536870912 64 0 0
+4 41999 100 100 536870912 64 0 0
 E
 elemental obsidian totem~
 &+LThis obsidian totem glows with deeper elemental powers.
@@ -407,7 +407,7 @@ marbled thur thurgurax spirit totem~
 ~
 34 38 3 0 7 0 1025 16385 64 288 0
 53 0 0 0 0 0 0 0
-1 34233 100
+1 34233 100 100
 E
 marbled thur thurgurax spirit totem~
 &+WThis white marble mace has glowing runes of the Thur'Gurax horde on it.
@@ -423,7 +423,7 @@ firwood chimera totem~
 ~
 34 6 3 0 7 0 1025 16385 64 288 0
 23 0 0 0 0 0 0 0
-1 43232 100
+1 43232 100 100
 E
 firwood chimera totem~
    &+yThis magical totem is carved into the shape of a chimera.
@@ -439,7 +439,7 @@ lightning bolt charm~
 ~
 9 7 1 0 7 0 4096 5 0 0 0
 4 0 0 0 0 0 0 0
-1 3123 100
+1 3123 100 100
 E
 lightning bolt charm~
 &+BThis tiny glass charm is a small lightning bolt, hanging from a silver cord.
@@ -455,7 +455,7 @@ altar storms~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 43318 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar storms~
 &+CThis large powerful altar is made of thick marble.  The altar itself
@@ -470,7 +470,7 @@ ringmail bearing crest clan bloodyfist~
 ~
 9 18 3 0 7 0 0 9 0 0 0
 55 0 0 0 0 0 0 0
-15 45884 100
+15 45884 100 100
 E
 ringmail bearing crest clan bloodyfist~
 &+LThis heavy mitrhil ringmail looks strong and powerful.
@@ -486,7 +486,7 @@ sign cairme bloodfangs~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign cairme bloodfangs~
 &+yThis sign reads:
@@ -499,7 +499,7 @@ bone broadsword sword~
 ~
 5 10 3 0 7 0 4194304 8193 0 0 0
 13 3 5 0 0 0 0 0
-8 45453 100
+8 45453 100 100
 E
 bone broadsword sword~
 &+WThis heavy bone broadswird os quite sharp and very lethal.
@@ -515,7 +515,7 @@ note~
 ~
 13 28 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 note~
 &+WThis note says:  'The bearer of this receipt shall bring back to me this note,
@@ -529,7 +529,7 @@ snapjaw turtle shell~
 ~
 37 10 3 0 7 0 4096 513 0 0 0
 1 1 3 100 0 0 0 0
-6 1232 100
+6 1232 100 100
 E
 snapjaw turtle shell~
    &+WThis large turtle shell has huge bone spikes on it.
@@ -545,7 +545,7 @@ fire gland~
 ~
 10 15 3 0 7 0 4097 16385 64 0 0
 40 108 0 0 65 0 0 0
-0 0 100
+0 0 100 100
 E
 fire gland~
    &+rThis small sac of fiery gas is hot to the touch.
@@ -557,7 +557,7 @@ sand viper venom sac~
 ~
 17 15 3 0 7 0 4096 16385 0 0 0
 10 10 27 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sand viper venom sac~
 &+LThis small fleshy sac is full of thick black sand viper poison.
@@ -569,7 +569,7 @@ sharp panther fang~
 ~
 5 10 3 0 7 0 0 8193 0 0 0
 2 1 5 0 0 0 0 0
-0 4343 100
+0 4343 100 100
 E
 sharp panther fang~
 &+WThis small panther fang is quite sharp and deadly.
@@ -583,7 +583,7 @@ jade katana~
 ~
 5 26 3 0 14 0 0 8193 64 0 0
 5 3 3 0 0 0 0 0
-2 15453 100
+2 15453 100 100
 E
 jade katana~
 &+gThis balanced katana is made from magically reinforced jade.
@@ -599,7 +599,7 @@ green hydralisk gland~
 ~
 10 15 3 0 7 0 4096 16385 0 0 0
 40 104 105 141 65 0 0 0
-0 0 100
+0 0 100 100
 E
 green hydralisk gland~
 &+gThis small green sac of gaseous fluid has been removed from a hydralisk.
@@ -611,7 +611,7 @@ bandit shiv~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 2 3 0 0 0 0 0
-0 453 100
+0 453 100 100
 E
 bandit shiv~
    &+rThis small shiv has the markings of a bandit band.
@@ -625,7 +625,7 @@ large mixed potion~
 ~
 10 7 3 0 7 0 33554432 8404993 64 0 0
 56 144 158 0 300 0 0 0
-0 61232 100
+0 61232 100 100
 E
 large mixed potion~
    &+BThis huge graduated beaker, normally used for volumatic scientific experiments,
@@ -640,7 +640,7 @@ fenaline moonwell~
 ~
 25 1 3 0 7 0 1 0 64 0 0
 54245 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fenaline moonwell~
    &+cThis large moonwell is a glorious magical pool shimmering within the

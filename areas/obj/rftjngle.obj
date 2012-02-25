@@ -5,7 +5,7 @@ crossbow~
 ~
 6 6 2 0 9 20 9216 24577 0 96071683 0
 70 90 0 2 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 crossbow~
 Though it has been made of relatively plain wood, the construction is solid and
@@ -19,7 +19,7 @@ sword short~
 ~
 5 16 2 0 9 0 1024 8193 0 96071707 0
 9 1 5 3 0 0 0 0
-2 4000 100
+2 4000 100 100
 E
 sword short~
 This fine weapon has been treated with some sort of purple-black dye to keep it
@@ -38,7 +38,7 @@ mandolin instrument~
 ~
 32 6 2 0 12 20 9216 16385 0 8499360 0
 186 10 0 1 0 0 0 0
-2 3500 100
+2 3500 100 100
 E
 mandolin~
 Intricate roses and orchids have been carved into the sides of this fine
@@ -55,7 +55,7 @@ robe tattered~
 ~
 9 3 3 0 7 0 8192 9 0 0 0
 5 3 1 1 0 0 0 0
-3 200 100
+3 200 100 100
 E
 robe tattered~
 This robe was once quite a nice piece of work.  Fine embroidery lines the edges
@@ -69,7 +69,7 @@ mail banded~
 ~
 9 16 3 0 7 0 1024 9 0 85475353 0
 18 3 1 3 0 0 0 0
-20 12000 100
+20 12000 100 100
 E
 mail banded~
 This armor has been fashioned from a number of flexible white steal bands which
@@ -84,7 +84,7 @@ a spiked hammer~
 ~
 5 16 3 0 9 0 4195328 8193 0 87572507 0
 4 3 5 7 0 0 0 0
-20 14000 100
+20 14000 100 100
 E
 hammer warhammer~
 This sturdy weapon has a long wooden shaft and a heavy steel head.  The steel
@@ -100,7 +100,7 @@ bow long longbow~
 ~
 6 6 3 4 14 0 4202496 24577 0 0 0
 70 60 0 1 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 bow long longbow~
 Carved from the finest ebonwood this longbow looks like more artwork than
@@ -117,7 +117,7 @@ quiver~
 ~
 30 3 3 0 7 0 9216 1048577 0 96071683 0
 45 0 1 0 0 0 0 0
-2 2300 100
+2 2300 100 100
 E
 quiver~
 At first glance this appears to be a rather plain brown quiver, closer
@@ -133,7 +133,7 @@ arrow~
 ~
 7 6 3 3 14 20 8192 16385 0 0 0
 1 1 6 1 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 arrow~
 This long, thin arrow has a small, but sharp, hunting point at its end.  Its
@@ -149,7 +149,7 @@ harness weapons leather~
 ~
 15 14 3 0 7 0 8192 1025 0 0 0
 10 0 0 100 0 0 0 0
-1 800 100
+1 800 100 100
 E
 harness weapons leather~
 Leather loops line these strange straps, loops that are clearly designed to
@@ -165,7 +165,7 @@ dagger granite~
 ~
 5 37 2 0 7 0 1040 8193 0 96071707 0
 2 1 2 11 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 dagger granite~
 Deep green granite with faint pink flecks has been chipped and shaped into an
@@ -183,7 +183,7 @@ club~
 ~
 5 6 3 0 7 0 8192 8193 0 4165209668 0
 10 2 2 6 0 0 0 0
-3 200 100
+3 200 100 100
 E
 club~
 This water-logged wood is almost worth-less for any purpose, especially that of
@@ -197,7 +197,7 @@ spear~
 ~
 5 6 3 0 7 0 4203536 24577 0 96071707 0
 8 1 5 11 0 0 0 0
-4 250 100
+4 250 100 100
 E
 spear~
 The short shaft and long blade show that this spear is designed for short range
@@ -211,7 +211,7 @@ armor black leather~
 ~
 9 14 3 0 10 0 536880128 9 0 96071707 0
 20 3 1 3 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 armor black leather~
 This thin leather armor offers a small degree of protection while still
@@ -225,7 +225,7 @@ wrist guard black leather~
 ~
 9 14 3 0 7 10 9216 4097 0 96071683 0
 5 11 1 3 0 0 0 0
-0 5700 100
+0 5700 100 100
 E
 wrist guard black leather~
 This thick band of leather is clearly designed to be used as a wrist guard by
@@ -244,7 +244,7 @@ crossbow black steel~
 ~
 6 16 3 0 7 0 0 24577 0 0 0
 105 90 0 3 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 crossbow black steel~
 This sturdy weapon has been made from blackened steel to keep it from
@@ -258,7 +258,7 @@ stiletto sharp~
 ~
 5 16 3 5000 11 10 1024 8193 0 96071707 0
 2 1 2 11 0 0 0 0
-2 1 100
+2 1 100 100
 E
 stiletto sharp~
 This extraordinarily sharp weapon gleams with a hungry light.  The blade of the
@@ -275,7 +275,7 @@ dagger black~
 ~
 5 16 2 0 10 0 0 8193 0 4194697696 0
 2 1 2 11 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 dagger black~
 This plain dagger is the staple of thieves and assassins everywhere.  It is
@@ -294,7 +294,7 @@ gloves~
 ~
 9 14 3 0 14 0 13312 129 0 8499200 0
 10 7 1 5 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 gloves~
 These fine leather gloves have been stitched with the name Juaraldo' in bright
@@ -314,7 +314,7 @@ eyepatch black leather~
 ~
 9 14 3 0 14 10 1122304 131073 0 0 0
 3 12 1 5 0 0 0 0
-0 1 100
+0 1 100 100
 E
 eyepatch black leather~
 High quality leather has been used to make this small eyepatch, all of it dyed
@@ -334,7 +334,7 @@ A no_show, poisoned scorpion stinger lies here.~
 ~
 5 13 2 0 7 0 8388610 8193 0 0 0
 2 1 4 11 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stinger~
 This is a test to see whether or not I can avoid procs by making a no_show item
@@ -347,7 +347,7 @@ skin tigerskin~
 ~
 13 12 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin tigerskin~
 This fine hide is in high demand in many cities.  Not only can it be used to
@@ -361,7 +361,7 @@ claws tiger~
 ~
 9 12 3 0 7 0 12288 129 0 0 0
 1 7 0 3 0 0 0 0
-2 2300 100
+2 2300 100 100
 E
 claws tiger~
 Tiger claws are often kept as trophies of a kill. The sharp talons of the claws
@@ -379,7 +379,7 @@ armor tigerskin~
 ~
 9 12 3 0 12 10 74752 9 0 96071707 0
 30 3 1 4 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 armor tigerskin~
 This fine leather armor is far more valuable than a standard suit of armor.
@@ -399,7 +399,7 @@ skin tigerskin white~
 ~
 13 12 3 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin tigerskin white~
 This fine, thick hide is extremely soft and pliable.  In the hands of a good
@@ -412,7 +412,7 @@ boots white tigerskin~
 ~
 9 12 3 0 11 0 3219456 65 0 0 0
 10 6 1 4 0 0 0 0
-1 35000 100
+1 35000 100 100
 E
 boots white tigerskin~
 These boots have been carefully constructed from the skin of a white tiger.
@@ -431,7 +431,7 @@ scimitar~
 ~
 5 22 3 0 12 20 36864 8193 1 4198895460 82690
 5 1 6 3 0 0 0 0
-20 14000 100
+20 14000 100 100
 E
 scimitar~
 This scimitar has been made of the the finest silver, unfortunately it has been
@@ -450,7 +450,7 @@ ruby~
 ~
 8 31 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 ruby~
 This highly polished stone must have been carelessly left behind by someone on
@@ -464,7 +464,7 @@ mithril chunk ore~
 ~
 8 18 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 12500 100
+5 12500 100 100
 E
 mithril chunk ore~
 This misshapen hunk of ore is extremely valuable.  Mithril is a highly prized
@@ -477,7 +477,7 @@ chest~
 ~
 15 6 3 0 7 0 4096 16385 0 0 0
 15 13 0 250 0 0 0 0
-6 100 100
+6 100 100 100
 E
 chest~
 Though very old, this chest has a sturdy lock that would require a good
@@ -491,7 +491,7 @@ bar platinum~
 ~
 8 25 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 bar platinum~
 This heavy bar of platinum is certainly worth a great deal of money.  A stamp
@@ -505,7 +505,7 @@ A broken sword has become buried in the jungle humus.~
 ~
 8 16 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-12 450 100
+12 450 100 100
 E
 sword broken~
 Completely worthless now, this sword must once have been a fine weapon.  A few
@@ -520,7 +520,7 @@ dagger shard rusted~
 ~
 5 16 2 0 7 0 4096 24577 0 4227727392 0
 2 1 1 11 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dagger shard rusted~
 This rusty dagger has been poorly treated by the humid jungle air.  It is
@@ -533,7 +533,7 @@ staff broken~
 ~
 4 6 3 0 7 0 0 16385 0 0 0
 2 1 1 3 0 0 0 0
-4 400 100
+4 400 100 100
 E
 staff broken~
 The staff appears to have been broken in the release of a powerful spell, yet
@@ -547,7 +547,7 @@ cudgel cherry~
 ~
 5 6 3 0 8 0 0 8193 0 0 0
 10 2 5 6 0 0 0 0
-4 2000 100
+4 2000 100 100
 E
 cudgel cherry~
 Strong cherry wood makes good clubs, and this cudgel is a fine example of why.
@@ -566,7 +566,7 @@ earring emerald~
 ~
 9 32 1 0 14 30 102400 524289 0 0 0
 5 14 0 5 0 0 0 0
-0 45000 100
+0 45000 100 100
 E
 emerald earring~
 A quick inspection of the emerald shows that the clasp that holds it to one's
@@ -584,7 +584,7 @@ ring sapphire~
 ~
 9 33 1 0 14 35 102400 100663299 0 0 0
 5 1 0 5 0 0 0 0
-0 35000 100
+0 35000 100 100
 E
 ring sapphire~
 Despite the small chip and crack in the stone, this sapphire ring is still
@@ -603,7 +603,7 @@ bracelet sapphire~
 ~
 9 33 3 0 14 35 4096 4097 0 0 0
 5 11 1 5 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 sapphire bracelet~
 This fine piece of jewelry has been made from platinum and then studded with
@@ -622,7 +622,7 @@ medallion mithril~
 ~
 9 18 3 0 14 35 102400 5 0 0 0
 8 2 2 3 0 0 0 0
-1 45000 100
+1 45000 100 100
 E
 medallion mithral~
 The long mithral chain and the medallion that hangs from it are both quite odd.
@@ -642,7 +642,7 @@ totem tiger~
 ~
 34 10 2 0 12 0 5120 16385 0 256 0
 15 0 0 0 0 0 0 0
-1 45000 100
+1 45000 100 100
 E
 totem tiger~
 This beautiful totem has been carved from the canine of a massive tiger.  The
@@ -659,7 +659,7 @@ bromeliard flower~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bromeliard flower~
 This massive, bowl-like flower sits on the jungle floor collecting water and
@@ -676,7 +676,7 @@ bromeliard flower~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bromeliard flower~
 This somewhat small bromliard clings to the jungle floor, its roots reaching
@@ -691,7 +691,7 @@ bromeliard flower~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bromeliard flower~
 The bright yellow petals of this huge flower are fringed with pale red.  The
@@ -705,7 +705,7 @@ orchid flower star~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orchid flower star~
 This beautiful flower is quite rare, and would be valuable if there was anyway
@@ -721,7 +721,7 @@ orchid purple~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orchid purple~
 The deep purple of the flower is extremely attractive, the pungent, rotting
@@ -735,7 +735,7 @@ flower gluka chain~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flower gluka chain~
 The gluka is a vine that wraps around roots and trees.  When it is on bloom it
@@ -749,7 +749,7 @@ vine twisting~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 vine twisting~
 This thick vine twists as it climbs toward the canopy.  Like many jungle vines
@@ -763,7 +763,7 @@ flower red~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flower red~
 This small red flower has a strange, peaceful beauty to it.  Far to small to be
@@ -778,7 +778,7 @@ skin troll band wrist~
 ~
 9 12 3 0 9 0 0 4097 64 0 0
 3 11 1 3 0 0 0 0
-1 500 100
+1 500 100 100
 E
 skin troll band wrist~
 A thick piece of troll's skin has been turned into a small wrist band.  One
@@ -797,7 +797,7 @@ gythka obsidian~
 ~
 5 36 3 0 9 0 4195328 8193 0 87572507 0
 8 1 5 3 0 0 0 0
-20 5000 100
+20 5000 100 100
 E
 gythka obsidian~
 This odd stone weapon appears to have a sharper edge than most steel weapons.
@@ -817,7 +817,7 @@ A no_show whip lies here.~
 ~
 5 13 3 0 7 0 8388610 8193 0 0 0
 3 1 4 2 10 0 0 0
-0 1 100
+0 1 100 100
 #80051
 stone stones rock rocks~
 &+Lan ancient stone marker&N~
@@ -825,7 +825,7 @@ stone stones rock rocks~
 ~
 13 11 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone stones rock rocks~
 The stones were piled here a very long time ago, yet the jungle has not
@@ -841,7 +841,7 @@ alligatorskin bp backpack bag~
 ~
 15 12 3 0 7 0 0 1025 0 0 0
 100 5 0 100 0 0 0 0
-0 35000 100
+0 35000 100 100
 E
 alligatorskin bp backpack bag~
 Though the backpack looks almost formless, a close inspection reveals that the
@@ -859,7 +859,7 @@ feather quetzel green~
 ~
 8 1 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 150 100
+0 150 100 100
 E
 feather quetzel green~
 This long, delicate feather is soft and brightly colored making it perfect for
@@ -872,7 +872,7 @@ feather quetzel yellow~
 ~
 8 1 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 150 100
+0 150 100 100
 E
 feather quetzel yellow~
 This long tail feather is from one of the brightly colored quetzels that fly
@@ -886,7 +886,7 @@ feather quetzel red~
 ~
 8 1 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 150 100
+0 150 100 100
 E
 feather quetzel red~
 This feather, like all the feathers of the beautiful quetzels that fly through
@@ -901,7 +901,7 @@ A no_show nest waits to be noticed.~
 ~
 15 13 3 0 7 0 2 0 0 0 0
 40 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #80057
 cloak feathered~
 &+Ga qu&+Ret&+Yzel &+Gfeather cloak&N~
@@ -909,7 +909,7 @@ cloak feathered~
 ~
 9 50 3 0 12 0 2170880 1025 64 0 0
 8 9 32 1 0 0 0 0
-1 35000 100
+1 35000 100 100
 E
 cloak feathered feathers~
 This beautiful cloak has been constructed completely from soft quetzel
@@ -928,7 +928,7 @@ frogskin frog skin~
 ~
 13 3 3 0 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 frogskin frog~
 It is a well-known fact that the poison can be extracted from these skins if
@@ -942,7 +942,7 @@ poison vial~
 ~
 17 13 3 0 7 0 8454144 16385 0 0 0
 1 1 0 10 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 vial poison~
 This poison has been extracted from the skins of several poison dart frogs
@@ -957,7 +957,7 @@ hide couatl~
 ~
 8 35 3 0 7 0 110592 16385 64 0 0
 0 0 0 0 0 0 0 0
-10 20000 100
+10 20000 100 100
 E
 hide couatl~
 This thick hide could probably be turned into a fine set of armor, if one
@@ -971,7 +971,7 @@ armor hide couatl~
 ~
 9 35 3 0 14 50 536937472 9 64 96071707 0
 50 3 1 5 0 0 0 0
-20 80000 100
+20 80000 100 100
 E
 armor hide couatl~
 An expert blacksmith has worked on this fine coatl hide to create an astounding
@@ -994,7 +994,7 @@ hide couatl skin~
 ~
 8 35 3 0 7 0 110592 16385 64 0 0
 0 0 0 0 0 0 0 0
-20 12000 100
+20 12000 100 100
 E
 hide couatl skin~
 This large hide comes from a young couatl.  Though its scales aren't as large
@@ -1010,7 +1010,7 @@ boots couatl hide~
 ~
 9 35 3 0 14 0 32768 65 64 0 0
 10 6 1 5 0 0 0 0
-7 25000 100
+7 25000 100 100
 E
 boots couatl hide~
 Tiny scales that are harder than any metal line the outside of these otherwise
@@ -1031,7 +1031,7 @@ couatl hide eyepatch~
 ~
 9 35 3 0 14 0 204800 131073 64 0 0
 3 12 4 5 0 0 0 0
-0 45000 100
+0 45000 100 100
 E
 couatl hide eyepatch~
 At first glance, this small piece of couatl hide appears to be simply a scrap
@@ -1050,7 +1050,7 @@ couatl hide wrist guard~
 ~
 9 35 3 0 12 0 200704 4097 64 0 0
 2 11 1 2 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 couatl hide wrist guard~
 The pale green scales shimmer showing that even though the couatl they came
@@ -1068,7 +1068,7 @@ bracer couatl hide~
 ~
 9 35 3 0 15 50 3178496 4097 64 0 0
 8 11 1 5 0 0 0 0
-0 35000 100
+0 35000 100 100
 E
 bracer couatl hide~
 The couatl scales have been fused by some incredible magical fire to make a
@@ -1086,7 +1086,7 @@ egg couatl~
 ~
 8 13 3 0 7 0 8425472 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 egg couatl~
 The egg is quite large and somewhat elongated in shape.  It appears to be the
@@ -1099,7 +1099,7 @@ vine flower~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #80069
 fruit~
 &+man oblong fruit&N~
@@ -1107,7 +1107,7 @@ fruit~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 12 0 0 0 0 0 0 0
-0 4 100
+0 4 100 100
 E
 fruit~
 This odd fruit has many names, most of which simply translate to 'sweet and
@@ -1123,7 +1123,7 @@ flower rielikki~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flower rielikki~
 This rare and delicate flower is one of the many epiphytic flowers found in the
@@ -1138,7 +1138,7 @@ longsword drow sword~
 ~
 5 16 3 0 7 0 8913920 8193 64 87572507 0
 5 4 6 3 0 0 0 0
-20 25000 100
+20 25000 100 100
 E
 longsword drow~
 Drow blades are carefully made and extremely sharp.  Unfortunately, this blade
@@ -1158,7 +1158,7 @@ fruit weekkii~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 4 100
+0 4 100 100
 E
 fruit weekkii~
 This hard, bright red fruit is a bit sour, but certainly good enough to eat.
@@ -1172,7 +1172,7 @@ burst fruit juice~
 ~
 17 48 3 0 7 0 0 16385 0 0 0
 1 1 6 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 burst fruit juice~
 Though clearly a jungle fruit, this burst fruit is not eaten at all.  It
@@ -1186,7 +1186,7 @@ purple flower~
 ~
 11 1 3 0 7 0 0 134758401 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 purple flower~
 Delicate and beautiful, this purple flower is the type of thing that travelers
@@ -1200,7 +1200,7 @@ shell turtle~
 ~
 8 13 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-15 15000 100
+15 15000 100 100
 E
 shell turtle~
 This gigantic shell is extremely thick and hard and could potentially be made
@@ -1213,7 +1213,7 @@ armor plate turtle shell~
 ~
 9 16 3 0 13 0 1024 9 64 119161017 0
 24 3 1 5 0 0 0 0
-12 25000 100
+12 25000 100 100
 E
 armor plate turtle shell~
 This heavy armor has been made from pieces of a giant turtle's shell.  The
@@ -1231,7 +1231,7 @@ skin alligator~
 ~
 8 12 3 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 skin alligator~
 Though the skin isn't terribly large, it is quite tough as well as distinctive.
@@ -1245,7 +1245,7 @@ skin alligator~
 ~
 8 12 3 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 skin alligator~
 This rough hide would make a good set of armor, or even a nice set of boots,
@@ -1259,7 +1259,7 @@ tunic alligatorskin~
 ~
 9 14 3 0 9 0 8192 9 0 4165209668 0
 15 3 138 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 tunic alligatorskin~
 This really isn't the best piece of armor around, but it is fairly light and
@@ -1278,7 +1278,7 @@ armor suit alligatorskin~
 ~
 9 14 3 0 9 0 8192 9 0 4165209668 0
 20 3 1 4 1 0 0 0
-1 25000 100
+1 25000 100 100
 E
 armor suit alligatorskin~
 Even though red alligators are somewhat small, their tough hides bear many
@@ -1297,7 +1297,7 @@ sword khopesh~
 ~
 5 16 3 0 7 0 1024 8193 0 96071707 0
 5 1 6 3 0 0 0 0
-12 3500 100
+12 3500 100 100
 E
 sword khopesh~
 Although this isn't the finest weapon in the world, it has an extremely jagged
@@ -1313,7 +1313,7 @@ key wooden ugly~
 ~
 18 5 1 0 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key wooden ugly~
 This ugly wooden key is meant to fit a lock that is undoubtedly as ugly and
@@ -1326,7 +1326,7 @@ key bone~
 ~
 18 10 1 0 7 0 8388608 16385 0 0 0
 0 2 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key bone~
 It appears to have been made from a long, thin bone.  The teeth of the key look
@@ -1339,7 +1339,7 @@ tunic ape ape-skin skin~
 ~
 9 12 3 0 7 0 0 9 0 0 0
 10 3 138 4 0 0 0 0
-8 2000 100
+8 2000 100 100
 E
 tunic ape ape-skin skin~
 This horribly heavy tunic has been made from the uncured hide of a large ape.
@@ -1355,7 +1355,7 @@ armor skin~
 ~
 9 13 3 0 8 0 0 9 0 0 0
 14 3 1 4 0 0 0 0
-10 2000 100
+10 2000 100 100
 E
 armor skin gorilla gorilla-skin~
 This heavy gorilla skin has been carefully cured and stitched together to
@@ -1371,7 +1371,7 @@ club bone~
 ~
 5 10 3 0 7 0 0 8193 0 0 0
 6 2 4 6 0 0 0 0
-3 2000 100
+3 2000 100 100
 E
 bone tiger thigh~
 The knobby end of this huge thigh bone has several sharpened ridges to make it
@@ -1390,7 +1390,7 @@ tigerskin shield~
 ~
 37 14 3 0 9 0 0 513 0 4165287492 0
 1 1 3 86 3 0 0 0
-6 3500 100
+6 3500 100 100
 E
 tigerskin shield~
 Two thick layers of tigerskin have been stretched taut over a solid wood
@@ -1405,7 +1405,7 @@ club wood~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 10 1 4 6 0 0 0 0
-3 1 100
+3 1 100 100
 E
 club wood~
 This solid stick of wood makes an excellent weapon for those without the
@@ -1420,7 +1420,7 @@ frogskin mask~
 ~
 9 14 3 0 10 5 0 262145 0 0 0
 3 13 1 3 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 frogskin mask~
 This brightly colored mask has been made from the skins of a number of
@@ -1438,7 +1438,7 @@ earring tooth~
 ~
 11 10 1 0 10 0 0 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 earring tooth~
 Made from the eye tooth of a large tiger, this earring makes quite a statement
@@ -1453,7 +1453,7 @@ bracelet tigerbone~
 ~
 9 10 3 0 8 0 0 4097 0 0 0
 3 11 1 3 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 bracelet tigerbone~
 A number of bones from a tiger's paw have been strung together to create this
@@ -1471,7 +1471,7 @@ necklace tigerbone~
 ~
 9 10 3 0 7 0 0 5 0 0 0
 2 2 2 3 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 necklace tigerbone~
 Bones and teeth of various sizes have been used to create this somewhat
@@ -1487,7 +1487,7 @@ shirt linen~
 ~
 11 3 3 0 7 0 0 9 0 0 0
 0 0 0 0 0 0 0 0
-1 400 100
+1 400 100 100
 E
 shirt linen~
 This shirt is of no use as armor, but it does provide some protection from the
@@ -1503,7 +1503,7 @@ pants cloth~
 ~
 11 3 3 0 7 0 0 33 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pants cloth~
 These light pants are barely thick enough to help protect against thorns and
@@ -1519,7 +1519,7 @@ collar alligatorskin~
 ~
 9 14 3 0 9 0 0 5 0 0 0
 4 2 1 4 0 0 0 0
-1 2500 100
+1 2500 100 100
 E
 collar alligatorskin~
 A thick piece of rough alligatorskin has been turned into a wide collar.
@@ -1535,7 +1535,7 @@ bracelet alligatorskin~
 ~
 9 14 3 0 9 0 0 4097 0 0 0
 4 11 1 3 0 0 0 0
-1 2500 100
+1 2500 100 100
 E
 bracer alligatorskin~
 Thick strips of alligatorskin have been put together to create a crude bracer.
@@ -1553,7 +1553,7 @@ shield alligatorskin~
 ~
 37 14 3 0 9 0 1024 513 0 121258171 0
 1 1 3 100 3 0 0 0
-5 4500 100
+5 4500 100 100
 E
 shield alligatorskin~
 Thick alligatorskin has been used to create a sturdy shield.  The wooden
@@ -1571,7 +1571,7 @@ boots cloth~
 ~
 11 3 3 0 7 0 0 65 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 boots cloth~
 This pair of boots has been made from a thin cloth that was once dyed some
@@ -1587,7 +1587,7 @@ boots tigerskin~
 ~
 9 13 3 0 9 0 0 65 0 0 0
 6 6 1 3 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 boots tigerskin~
 This pair of boots has been made from two layers of tigerskin.  They are sturdy
@@ -1604,7 +1604,7 @@ skull~
 ~
 9 10 3 0 7 0 0 17 0 4165287492 0
 6 4 1 3 0 0 0 0
-6 2000 100
+6 2000 100 100
 E
 skull~
 The lower bones of the skull have been broken away and the skull itself
@@ -1623,7 +1623,7 @@ belt tigerskin skin~
 ~
 9 14 3 0 9 0 0 2049 0 0 0
 4 10 0 3 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 belt tigerskin skin~
 Holes have been punched along one end of the strip of skin and a buckle has
@@ -1638,7 +1638,7 @@ belt cloth~
 ~
 11 3 3 0 7 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-0 200 100
+0 200 100 100
 E
 belt cloth~
 The thick fabric is decent enough for holding up one's pants and for attaching
@@ -1653,7 +1653,7 @@ a throne~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 throne bone~
 This throne has been made from the bones of tigers and alligators, as well as
@@ -1670,7 +1670,7 @@ skin tigerskin~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skin tigerskin~
 This skin is from a massive tiger, one much larger than the average tiger in
@@ -1685,7 +1685,7 @@ javelin painted~
 ~
 5 6 3 0 11 0 16790784 8193 0 96071683 0
 8 1 6 11 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 javelin painted~
 This wicked looking weapon has been painted with bright red and yellow colors
@@ -1703,7 +1703,7 @@ tooth alligator totem~
 ~
 34 10 2 0 10 0 1024 16385 0 256 0
 3 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 tooth alligator totem~
 This large alligator tooth has been carefully inscribed with a number of
@@ -1718,7 +1718,7 @@ rod steel spiked~
 ~
 5 16 3 0 7 0 0 8193 0 4165210052 0
 7 1 2 6 0 0 0 0
-25 8000 100
+25 8000 100 100
 E
 rod steel spiked~
 This heavy rod has been tipped at one end with a collection of wicked spikes.
@@ -1737,7 +1737,7 @@ leggings alligatorskin~
 ~
 9 14 3 0 10 0 8192 33 0 4165287748 0
 7 5 1 4 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 leggings alligatorskin~
 The rough alligatorskin provides excellent protection, and the soft furry skin
@@ -1752,7 +1752,7 @@ sleeves alligatorskin~
 ~
 9 14 3 0 7 0 8192 257 0 4165287748 0
 7 8 1 4 0 0 0 0
-0 2300 100
+0 2300 100 100
 E
 sleeves alligatorskin~
 Rough alligatorskin makes for an excellent protective covering for any warrior,
@@ -1769,7 +1769,7 @@ desk cracked~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk cracked~
 A long crack runs along one side of the desk down to the left front leg.  The
@@ -1785,7 +1785,7 @@ desk old~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk old~
 This desk is quite old, yet it has been treated extremely well.  The humid
@@ -1801,7 +1801,7 @@ desk ebonwood~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk ebonwood~
 This solid desk is clearly of halfling design and building.  It is amazing that
@@ -1818,7 +1818,7 @@ Some raw fish has been left behind.~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 E
 fish raw~
 This raw fish is unidentifiable.  It has been salted and treated to make it
@@ -1832,7 +1832,7 @@ fish smoked~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 20 0 0 0 0 0 0 0
-0 3 100
+0 3 100 100
 E
 fish smoked~
 This black piranha meat has been smoked to add a bit of flavor to it and
@@ -1847,7 +1847,7 @@ A stale ration has been tossed aside to rot.~
 ~
 19 48 3 0 7 0 0 0 0 0 0
 10 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ration stale~
 This stale ration has simply spent to much time uneaten.  Though it was
@@ -1861,7 +1861,7 @@ bed ebonwood~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bed ebonwood~
 This fine ebonwood bed was clearly made by a halfling craftsman.  It is only
@@ -1875,7 +1875,7 @@ bar~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bar~
 This long wooden bar looks ready to collapse at any moment.  Several notches
@@ -1889,7 +1889,7 @@ mug glass ale~
 ~
 17 5 8 0 7 0 0 16385 0 0 0
 1 1 4 0 0 0 0 0
-1 20 100
+1 20 100 100
 E
 mug glass~
 This shoddy wooden mug is almost as cheap as the ale it is served in.  Probably
@@ -1903,7 +1903,7 @@ card black prince~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 30 1 1 28 0 0 0 0
-0 2300 100
+0 2300 100 100
 E
 card black prince~
 Depending upon what game is being played, the black prince is the highest
@@ -1918,7 +1918,7 @@ card queen blood~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 20 1 1 57 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 card queen blood~
 The blood queen is one of the higher cards in almost any game.  This card seems
@@ -1931,7 +1931,7 @@ card blood ten~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 20 1 1 111 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 card blood ten 10~
 Though a numbered card, the blood ten is still one of the highest cards in
@@ -1946,7 +1946,7 @@ card blood prince~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 20 1 1 223 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 card blood prince~
 The blood prince is the highest card of the blood suit.  Only the black
@@ -1961,7 +1961,7 @@ card black queen~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 25 1 1 15 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 card black queen~
 Made of an incredibly thin and flexible piece of wood, this beautiful playing
@@ -1974,7 +1974,7 @@ card green prince~
 ~
 13 4 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 card green prince~
 A small chip in the upper left corner of this thin piece of wood surely allows
@@ -1989,7 +1989,7 @@ card green queen~
 ~
 13 4 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 card green queen~
 This thin wooden card has been worn by ages of hard use.  The plain design on
@@ -2004,7 +2004,7 @@ card green ten~
 ~
 13 4 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 card green ten~
 This thin wooden playing card is as flexible as a stiff piece of paper, but
@@ -2018,7 +2018,7 @@ card yellow prince~
 ~
 13 4 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 card yellow prince~
 The bright yellow design of the prince adds color to any hand.  Unfortunately,
@@ -2032,7 +2032,7 @@ card yellow queen~
 ~
 13 4 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 card yellow queen~
 The queen painted on this card looks a bit sickly.  The dye used to create
@@ -2046,7 +2046,7 @@ card yellow ten~
 ~
 13 4 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 card yellow ten~
 This poor yellow card is one of those most often discarded.  It may not be
@@ -2059,7 +2059,7 @@ card black ten~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 25 1 1 197 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 card black ten~
 Being a black card this ten is of the highest suit, making it at least
@@ -2072,7 +2072,7 @@ net~
 ~
 13 3 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 net~
 This net is carefully woven from thin cloth strands.  It isn't worth very much
@@ -2086,7 +2086,7 @@ figurine carving~
 ~
 8 6 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 figurine carving~
 This beautifully carved tiger would be worth at least a few platinum in almost
@@ -2103,7 +2103,7 @@ spear hunting~
 ~
 5 6 4 0 8 0 20979712 8193 0 0 0
 8 1 5 11 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 spear hunting~
 This large, heavy spear is made from a dense wood that sounds as firm as rock
@@ -2120,7 +2120,7 @@ bark~
 ~
 8 6 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 bark~
 Some soft bark has been stripped from a tree in long, thin pieces and left here
@@ -2133,7 +2133,7 @@ blanket bark~
 ~
 9 6 3 0 7 0 0 1025 0 0 0
 8 9 34 3 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 blanket bark~
 Thin strips of soft bark have been woven into a soft blanket.  Though it has a
@@ -2147,7 +2147,7 @@ necklace beads string~
 ~
 9 6 3 0 7 0 0 5 0 0 0
 5 2 2 3 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 necklace beads string~
 Bright yellow beads made from some sort of dyed clay have been strung together
@@ -2160,7 +2160,7 @@ petals flower~
 ~
 8 6 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 petals flower~
 An astounding, almost fluorescent, red pigment makes these flower petals stand
@@ -2173,7 +2173,7 @@ mask red war~
 ~
 9 6 3 0 11 10 0 262145 0 0 0
 7 13 1 4 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 mask red war~
 Bright red paint makes this mask stand out, even in the darkest of nights.
@@ -2191,7 +2191,7 @@ armor azurian~
 ~
 9 14 3 0 11 0 8192 9 0 4165209732 0
 20 3 1 5 0 0 0 0
-8 4500 100
+8 4500 100 100
 E
 armor azurian~
 The deep blue-black color of the hide gives it a sinister appearance.  The hair
@@ -2209,7 +2209,7 @@ sleeves~
 ~
 9 14 3 0 11 0 8192 257 0 4165209604 0
 8 8 1 5 0 0 0 0
-2 4500 100
+2 4500 100 100
 E
 sleeves~
 The deep blue-black color of the azurian hide is quite unpleasant to look at.
@@ -2228,7 +2228,7 @@ leggings~
 ~
 9 14 3 0 11 0 8192 33 0 4165209604 0
 8 5 1 5 0 0 0 0
-2 4500 100
+2 4500 100 100
 E
 leggings~
 Thick but flexible, these deep blue-black leggings demonstrate excellent
@@ -2246,7 +2246,7 @@ leaves crumpled~
 ~
 8 6 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 leaves crumpled~
 Someone picked these leaves and then left them behind.  They have been crumpled
@@ -2259,7 +2259,7 @@ potion vial~
 ~
 10 6 3 0 7 0 0 16385 0 0 0
 30 234 234 -1 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 potion vial~
 The deep green potion looks thick and viscous in its clear glass vial.
@@ -2271,7 +2271,7 @@ parchment plans~
 ~
 8 6 3 0 7 0 4104 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 parchment plans~
 A number of mathematical symbols and notations have been made all across the
@@ -2285,7 +2285,7 @@ tool brass~
 ~
 8 17 3 0 14 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 87000 100
+1 87000 100 100
 E
 tool brass~
 This odd-looking tool must have some sort of purpose, though what it might be
@@ -2300,7 +2300,7 @@ totem cloud rock~
 ~
 34 11 2 0 12 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 totem cloud rock~
 This soft rock has been cut and shaped to look somewhat like a cloud.  It is
@@ -2317,7 +2317,7 @@ collar bones~
 ~
 9 10 3 0 8 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 collar bones~
 Elven finger bones have been strung together to create a disgusting looking
@@ -2333,7 +2333,7 @@ bracer stone~
 ~
 9 11 3 0 9 0 0 4097 0 0 0
 5 11 1 4 0 0 0 0
-2 4500 100
+2 4500 100 100
 E
 bracer stone~
 Hard stone has been carved into a large bracelet.  Though quite protective, it
@@ -2350,7 +2350,7 @@ sword elven silver~
 ~
 5 22 3 0 15 25 99336 8193 64 95993883 0
 5 1 6 3 0 0 0 0
-20 4500 100
+20 4500 100 100
 E
 sword elven silver~
 Crafted of fine silver, alloyed with some tougher metal, this sword has
@@ -2370,7 +2370,7 @@ rod chieftain gold golden~
 ~
 5 24 3 0 10 0 0 8193 64 4165287492 0
 10 1 3 6 0 0 0 0
-20 4500 100
+20 4500 100 100
 E
 rod chieftain gold golden~
 Solid gold has been used to create a heavy, scepter-like rod.  The symbol of
@@ -2386,7 +2386,7 @@ scale couatl~
 ~
 11 35 10 0 14 0 0 524289 0 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 scale couatl~
 Couatl scales are as hard has dragon scales, tough as diamond though almost
@@ -2404,7 +2404,7 @@ throne~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 throne~
 Couatl are mysterious, powerful beasts and are respected and feared by all in
@@ -2418,7 +2418,7 @@ head~
 ~
 8 6 3 0 7 0 4104 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 head~
 This disgusting, bloody trophy is of little use to anyone, at least not anyone
@@ -2432,7 +2432,7 @@ amulet trinket silver~
 ~
 8 22 3 0 10 0 4104 16389 1 0 0
 0 0 0 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 amulet trinket silver~
 Elven writing on the back of the amulet says, "For My Dearest Summerstorm." The
@@ -2445,7 +2445,7 @@ mask scales~
 ~
 9 35 3 0 14 0 0 262145 0 0 0
 5 13 1 5 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 mask scales~
 Couatl have small scales that line a tough, leathery hide.  The scales are as
@@ -2465,7 +2465,7 @@ granite stone~
 ~
 13 11 7 0 15 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 granite stone~
 The stone has an inexplicable magic to it, one that can't easily be explained
@@ -2489,7 +2489,7 @@ staff~
 ~
 8 6 3 0 15 0 77832 16385 0 0 0
 0 0 0 0 0 0 0 0
-14 1000 100
+14 1000 100 100
 E
 staff~
 This massive staff is far to large for any but a giant to even hold.  Despite
@@ -2507,7 +2507,7 @@ A no-show teleporter into the fire cage.~
 ~
 25 1 1 15 15 0 2 0 0 0 0
 80162 5 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 #80159
 brazier bowl down~
 teleporter out of the fire cage~
@@ -2515,7 +2515,7 @@ A no-show teleporter out of the fire cage.~
 ~
 25 1 1 15 15 0 2 0 0 0 0
 80061 6 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 #80160
 bowl up in~
 teleporter into the water cage~
@@ -2523,7 +2523,7 @@ A no-show teleporter into the water cage.~
 ~
 25 1 1 15 15 0 2 0 0 0 0
 80164 5 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 #80161
 bowl down out~
 teleporter out of water cage~
@@ -2531,7 +2531,7 @@ A no-show teleporter out of the water cage.~
 ~
 25 1 1 15 15 0 8194 0 0 0 0
 80072 6 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 #80162
 plane air light~
 &+Wa shimmering plane of light&N~
@@ -2539,7 +2539,7 @@ plane air light~
 ~
 25 1 4 15 15 0 67108865 0 64 0 0
 80161 7 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 E
 plane air light~
 This shimmering plane has little substance, when it can only be seen when one
@@ -2553,7 +2553,7 @@ plane air light~
 ~
 25 1 4 15 15 0 67108865 0 64 0 0
 80060 7 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 E
 plane air light~
 This plane of light must be an exit from the prison.  It would seem that some
@@ -2567,7 +2567,7 @@ A no-show teleporter into the earth cage.~
 ~
 25 1 1 15 15 0 2 0 0 0 0
 80163 5 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 #80165
 bowl mud down~
 teleporter out of the earth cage~
@@ -2575,7 +2575,7 @@ A no-show teleporter out of the earth cage.~
 ~
 25 1 1 15 15 0 2 0 0 0 0
 80071 6 -1 0 0 0 0 0
-30 1000 100
+30 1000 100 100
 #80166
 amulet air~
 &+ca strange amulet of swirling air&N~
@@ -2583,7 +2583,7 @@ amulet air~
 ~
 8 1 3 0 15 0 77832 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 amulet air~
 This amulet is difficult to look at, it changes shapes continuously, yet
@@ -2596,7 +2596,7 @@ cloak air~
 ~
 9 19 3 0 15 10 65537 1025 64 0 0
 10 9 34 5 0 0 0 0
-0 45000 100 134217728 0 0 0
+0 45000 100 100 134217728 0 0 0
 E
 cloak air~
 The air swirls and turns, but somehow remains whole.  This cloak is clearly
@@ -2614,7 +2614,7 @@ amulet earth~
 ~
 8 11 3 0 15 0 69640 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 amulet earth~
 Earth and stone together form this odd amulet, as well as the frail chain it
@@ -2629,7 +2629,7 @@ mask earth~
 ~
 9 19 3 0 15 20 0 262145 64 0 0
 9 13 1 5 0 0 0 0
-1 1000 100 268435456 128 0 0
+1 1000 100 100 268435456 128 0 0
 E
 mask earth~
 Heavy earth and stone has been magically melded into a smooth-surfaced mask
@@ -2647,7 +2647,7 @@ amulet water~
 ~
 8 40 3 0 15 0 77832 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 amulet water~
 A small globe of swirling water is attached to a thin string of water.  The
@@ -2660,7 +2660,7 @@ drum drums water instrument~
 ~
 32 40 3 0 15 0 66560 16385 64 8421376 0
 188 50 0 1 0 0 0 0
-3 45000 100
+3 45000 100 100
 E
 drum drums water~
 Two spheres of water, or layers of water surrounding air are connected at one
@@ -2680,7 +2680,7 @@ medallion flaming fire~
 ~
 8 1 3 0 15 0 67178504 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 medallion flaming fire~
 This fiery medallion seems to fold in on itself at times, disappearing and
@@ -2695,7 +2695,7 @@ javelin flaming~
 ~
 5 19 3 0 15 0 369936 8193 0 85536769 0
 2 1 3 11 0 0 0 0
-1 1000 100 536870912 0 0 0
+1 1000 100 100 536870912 0 0 0
 E
 javelin flaming~
 Powerful magic has been used to create a javelin of ever-burning fire.  It
@@ -2713,7 +2713,7 @@ longsword green sword~
 ~
 5 18 3 0 13 0 1024 8193 0 96071707 0
 5 1 6 3 0 0 0 0
-20 1000 100
+20 1000 100 100
 E
 longsword green~
 Elven magic and dwarven blacksmithing have been combined in the creation of
@@ -2729,7 +2729,7 @@ leggings jodani wood~
 ~
 9 6 3 0 13 0 8192 33 0 4165287492 0
 8 5 1 4 0 0 0 0
-3 12000 100
+3 12000 100 100
 E
 leggings jodani wood~
 Small scales have been carefully sealed together to create leggings that are
@@ -2747,7 +2747,7 @@ sleeves jodani wood~
 ~
 9 6 3 0 13 0 8192 257 0 4165287492 0
 8 8 1 4 0 0 0 0
-3 12000 100
+3 12000 100 100
 E
 sleeves jodani wood~
 The thick wooden scales that have been joined together are small enough to
@@ -2765,7 +2765,7 @@ sword longsword orcslayer~
 ~
 5 19 3 0 15 0 2196480 8193 0 87642115 4096
 5 1 6 3 0 0 0 0
-20 45000 100
+20 45000 100 100
 E
 sword longsword orcslayer~
 Dwarven runes mark this magical sword as "Orcslayer", a name of power and
@@ -2783,7 +2783,7 @@ circlet jodani wood~
 ~
 9 6 3 0 13 0 8192 17 0 0 0
 6 4 14 3 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 circlet jodani wood~
 This thick circlet of wood is designed to hold one's hair back out of their
@@ -2801,7 +2801,7 @@ bow jodani wood~
 ~
 6 6 3 0 13 0 9216 24577 0 87556099 0
 70 90 0 1 0 0 0 0
-4 7500 100
+4 7500 100 100
 E
 bow jodani wood~
 This heavy bow was designed for strong arms and hands, few inexperienced
@@ -2815,7 +2815,7 @@ arrow jodani wood~
 ~
 7 6 3 0 13 0 8192 16385 0 0 0
 3 2 8 1 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 arrow jodani wood~
 The shaft of the arrow is perfectly straight and round, and the large feathers
@@ -2829,7 +2829,7 @@ Some dried and cured meat has been dropped here.~
 ~
 19 48 2 0 7 0 0 16385 0 0 0
 18 0 0 0 0 0 0 0
-1 3 100
+1 3 100 100
 E
 meat~
 This meat has been carefully dried and cured so that it will last a very long
@@ -2842,7 +2842,7 @@ soup turtle~
 ~
 19 48 2 0 13 0 134217728 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 soup turtle~
 Just the right amount of spices and vegetables have been added to the soup so
@@ -2855,7 +2855,7 @@ stew tapir~
 ~
 19 48 2 0 13 0 134295560 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 stew tapir _ignore_~
 The tough tapir meat has been simmered with potatoes and spices for several
@@ -2868,7 +2868,7 @@ roast quetzel~
 ~
 19 48 2 0 13 0 134217728 16385 0 0 0
 24 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 roast quetzel~
 Harsh spices and a gamy flavor mark this as a dish that one either loves or
@@ -2882,7 +2882,7 @@ potion blue~
 ~
 10 40 1 0 10 0 134283264 16385 0 0 0
 20 43 3 14 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 potion blue~
 A thick, bright blue potion is within the clear glass vial, there are no
@@ -2895,7 +2895,7 @@ A glass vial with a clear potion has been left here.~
 ~
 10 40 1 0 15 0 134283264 16385 0 0 0
 20 215 221 204 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 potion clear vial glass~
 The potion is as clear as water, yet is as thick as heavy oil.  It has a
@@ -2908,7 +2908,7 @@ potion brown~
 ~
 10 40 1 0 15 0 65536 16385 0 0 0
 20 192 1 204 0 0 0 0
-1 7500 100
+1 7500 100 100
 E
 potion brown~
 The stuff inside the vial looks as appealing as mud, and smells like manure.
@@ -2921,7 +2921,7 @@ guard wrist archer~
 ~
 9 6 3 0 12 0 8192 4097 0 0 0
 5 11 1 3 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 guard wrist archer~
 This wide wrist guard is designed for archers to help them avoid getting burned
@@ -2938,7 +2938,7 @@ katana green mithril~
 ~
 5 18 3 0 14 25 1024 8193 0 96071707 0
 5 1 7 3 0 0 0 0
-20 35000 100
+20 35000 100 100
 E
 katana green mithril~
 Fine dwarven craftsmanship and elven magic have created an expensive, but high
@@ -2955,7 +2955,7 @@ armor scalemail scale mithril~
 ~
 9 18 3 0 14 10 134217728 9 0 4173708868 0
 20 3 1 1 0 0 0 0
-20 45000 100
+20 45000 100 100
 E
 armor scalemail scale mithril~
 This mithril body armor is expensive, extremely expensive, but it is well worth
@@ -2969,7 +2969,7 @@ sleeves scalemail scale mithril~
 ~
 9 18 3 0 14 0 134217728 257 0 4173708868 0
 8 8 1 1 0 0 0 0
-4 10000 100
+4 10000 100 100
 E
 sleeves scalemail scale mithril~
 All mithril armor is expensive, extremely expensive, but it is well worth the
@@ -2988,7 +2988,7 @@ leggings scalemail scale mithril~
 ~
 9 18 3 0 14 0 134217728 33 0 4173708868 0
 8 5 1 1 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 leggings scalemail scale mithril~
 Like all mithril armor, these leggings are quite costly, but well worth the
@@ -3008,7 +3008,7 @@ bracelet mithril gem gems~
 ~
 8 18 3 0 9 0 0 20481 0 0 0
 0 0 0 0 0 0 0 0
-3 45000 100
+3 45000 100 100
 E
 bracelet mithril gem gems~
 Mithril is valuable alone, this bracelet adds valuable gems to an already
@@ -3023,7 +3023,7 @@ headband band silver~
 ~
 8 22 3 0 10 0 0 16401 1 0 0
 0 0 0 0 0 0 0 0
-3 35000 100
+3 35000 100 100
 E
 headband band silver~
 Made of solid silver, this headband adds an understated touch to any wardrobe.
@@ -3037,7 +3037,7 @@ badge gold eagle~
 ~
 8 24 1 0 10 0 0 2113537 0 0 0
 0 0 0 0 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 badge gold eagle~
 This gold badge has been carefully shaped into a perched eagle.  Tiny ruby eyes
@@ -3050,7 +3050,7 @@ bow crystal shard~
 ~
 6 35 3 0 15 50 4464641 24577 66 0 0
 105 90 0 1 0 0 0 0
-1 100000 100 4 0 0 0
+1 100000 100 100 4 0 0 0
 E
 bow crystal shard~
 It first appears to be a fine, long crystal, but closer inspection shows that
@@ -3068,7 +3068,7 @@ armor leather~
 ~
 9 14 3 0 9 0 8192 9 0 4165209668 0
 14 3 1 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 armor leather~
 Impressions of leaves and the symbols of several elven gods were put into the
@@ -3083,7 +3083,7 @@ desk~
 ~
 15 6 3 0 13 0 0 0 0 0 0
 100 13 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #80199
 hammer mithril~
 &+Ca small mithril hammer&N~
@@ -3091,7 +3091,7 @@ hammer mithril~
 ~
 5 18 3 0 14 10 16777472 8193 0 4165209692 0
 4 1 5 6 0 0 0 0
-14 25000 100
+14 25000 100 100
 E
 hammer mithril~
 This mithril hammer is heavy for its size, yet perfectly balanced for throwing.
@@ -3110,7 +3110,7 @@ axe~
 ~
 13 18 3 0 14 0 1 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 axe~
 This massive axe has been made of pure mithril and trimmed in silver.  It looks
@@ -3124,7 +3124,7 @@ sword longsword whistler~
 ~
 5 18 3 0 13 0 9216 8193 0 87572507 0
 5 1 6 3 0 0 0 0
-20 25000 100
+20 25000 100 100
 E
 sword longsword whistler~
 This odd longsword has groves cut at strange angles along the blade.  A close
@@ -3142,7 +3142,7 @@ horn silver elegant instrument~
 ~
 32 22 3 0 14 0 132096 16385 1 8421376 0
 189 50 0 1 0 0 0 0
-2 35000 100 0 64 0 0
+2 35000 100 100 0 64 0 0
 E
 horn silver elegant~
 This horn is one of the finest pieces of silver work that can be seen
@@ -3160,7 +3160,7 @@ leaf gold golden~
 ~
 9 24 1 0 14 10 0 524289 64 0 0
 5 14 0 1 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 leaf gold golden~
 This thin, delicate golden leaf has been created with every exquisite
@@ -3179,7 +3179,7 @@ collar wood jodani wooden~
 ~
 9 6 3 0 14 20 12288 5 64 0 0
 4 2 1 5 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 collar wood jodani wooden~
 This thick wooden collar has been made of hard jodani wood.  Jodani wood
@@ -3197,7 +3197,7 @@ milk silver flask~
 ~
 17 22 1 0 10 10 12288 8404993 65 0 0
 30 30 10 0 0 0 0 0
--20 2000 100
+-20 2000 100 100
 E
 silver flask~
 This tiny flask has been imbued with a great magic that allows it to
@@ -3216,7 +3216,7 @@ amulet iron dull~
 ~
 13 15 3 0 7 0 65536 16389 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 amulet iron dull~
 This odd amulet looks worthless at first.  Further study reveals a hidden
@@ -3233,7 +3233,7 @@ Old connections - East,80013 West80007, south 80021 (no show).~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #80208
 mask water~
 &+bthe water mask&N~
@@ -3241,7 +3241,7 @@ mask water~
 ~
 9 40 2 0 12 20 1 262145 64 0 0
 7 13 1 3 0 0 0 0
-3 2000 100 2048 0 0 0
+3 2000 100 100 2048 0 0 0
 E
 mask water~
 The water swirls in living eddies and glows with a magical light.
@@ -3259,7 +3259,7 @@ dagger silver bright~
 ~
 5 22 2 0 9 10 16778512 8193 65 96071707 0
 2 4 3 11 0 0 0 0
-0 2000 100 8 0 0 0
+0 2000 100 100 8 0 0 0
 E
 dagger silver bright~
 This bright dagger has been made of silver alloyed with some other magical
@@ -3279,7 +3279,7 @@ A no_show bed is in the corner.~
 ~
 15 15 3 0 7 0 2 0 0 0 0
 20 0 0 40 0 0 0 0
-0 0 100
+0 0 100 100
 #80211
 club stone~
 &+La large stone club&N~
@@ -3287,7 +3287,7 @@ club stone~
 ~
 5 11 3 10 7 0 0 8193 0 0 0
 10 1 3 6 0 0 0 0
-30 1 100
+30 1 100 100
 E
 club stone~
 This huge stone club could only be wielded effectively by a creature of
@@ -3300,7 +3300,7 @@ table~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table~
 Standing so high a full-sized human could walk beneath it, it is clear
@@ -3313,7 +3313,7 @@ mortar stone~
 ~
 5 11 3 10 7 0 0 24577 0 0 0
 10 2 4 6 0 0 0 0
-30 1 100
+30 1 100 100
 E
 mortar stone~
 This massive mortar has bits of broken bone embedded in its working end, a
@@ -3327,7 +3327,7 @@ collar stone~
 ~
 9 11 3 0 7 0 4096 5 0 0 0
 1 2 1 3 1 0 0 0
-2 1 100
+2 1 100 100
 E
 collar stone~
 Wicked stone spikes surround the hard rock of the collar.  A clever stone
@@ -3342,7 +3342,7 @@ bracelet stone~
 ~
 9 11 3 2 7 0 4096 4097 0 0 0
 1 11 1 3 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bracelet stone~
 The wide bracelet bears a long row of wicked stone spikes that make it
@@ -3357,7 +3357,7 @@ Old exit south use to connect to 80134.~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #80217
 key~
 Key~
@@ -3365,7 +3365,7 @@ This key says MH connects N from here to 80319 (old exit no show)~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #80218
 small sign~
 &+wa small sign&n~
@@ -3373,7 +3373,7 @@ A Small sign reading (North connected to 80405) sits here.~
 ~
 13 15 3 0 7 0 8194 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #80219
 large river damn log~
 &+ya log dam&N~
@@ -3381,4 +3381,4 @@ large river damn log~
 ~
 13 15 3 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

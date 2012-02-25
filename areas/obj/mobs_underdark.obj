@@ -5,7 +5,7 @@ huge spiked crimson mace~
 ~
 5 15 3 0 3 0 0 8193 0 0 0
 7 2 5 0 0 0 0 0
-3 8000 100
+3 8000 100 100
 E
 huge spiked crimson mace~
    &+LThis huge mace appears to be made of iron, although it is hard to
@@ -23,7 +23,7 @@ small silver earring~
 ~
 9 22 2 0 8 0 0 524289 0 0 0
 5 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small silver earring~
    &+LThis small earring is fairly well made of fine stretched &+Csilver&+L.
@@ -41,7 +41,7 @@ worn cloth leather wristband~
 ~
 9 13 3 0 5 0 0 4097 0 0 0
 5 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 worn cloth leather wristband~
    &+LThis small wristband is made of various strands of cloth and
@@ -58,7 +58,7 @@ ragged red cape~
 ~
 9 3 3 0 5 0 0 1025 0 0 0
 7 0 0 3 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 ragged red cape~
    &+rThis red cape is covered with diry stains and marks.  Various tears
@@ -76,7 +76,7 @@ massive spiked crimson mace~
 ~
 5 15 3 0 3 0 4194304 8193 64 0 0
 7 4 5 0 0 0 0 0
-3 8000 100
+3 8000 100 100
 E
 huge spiked crimson mace~
    &+LThis huge mace appears to be made of iron, although it is hard to
@@ -94,7 +94,7 @@ large girth furred hide~
 ~
 9 12 4 0 2 0 0 2049 0 0 0
 7 0 0 4 0 0 0 0
-7 2000 100
+7 2000 100 100
 E
 large girth furred hide~
    &+yThis masive belt can entwined the wearers waist at least three times
@@ -113,7 +113,7 @@ string bugbear teeth~
 ~
 9 10 2 0 2 0 0 5 0 0 0
 2 0 0 1 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 string bugbear teeth~
    Several long stringes, entwined together, loop through several
@@ -131,7 +131,7 @@ fine adamantine sword longsword~
 ~
 5 19 3 0 11 0 0 8193 64 96 0
 5 3 3 0 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 fine adamantine sword longsword~
    &+LThis longsword is exceptionally made.  It is extremely well balaced
@@ -149,7 +149,7 @@ spiked adamantine gauntlets~
 ~
 9 19 3 0 11 0 0 129 0 0 0
 8 0 0 4 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 spiked adamantine gauntlets~
    &+LThis medium-sized pair of adamantine gauntlets have several fine
@@ -168,7 +168,7 @@ long spider silk cloak~
 ~
 9 3 3 0 11 0 0 1025 0 0 0
 7 0 0 2 0 0 0 0
--5 15000 100
+-5 15000 100 100
 E
 long spider silk cloak~
    &+LThis long and elaborate spider silk cloak is excellently made.
@@ -186,7 +186,7 @@ fine suit drow chainmail~
 ~
 9 15 3 0 5 0 0 9 0 0 0
 20 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fine suit drow chainmail~
    &+LThis fine suit of drow chainmail gives off a slight magical aura.
@@ -204,7 +204,7 @@ dark vile potion~
 ~
 10 15 3 0 5 0 1 16385 0 0 0
 25 1 3 189 50 0 0 0
-0 0 100
+0 0 100 100
 E
 dark vile potion~
    &+LThis dark and vile potion swirls around in a nearly pitch-black flask.
@@ -216,7 +216,7 @@ half ancient amulet~
 ~
 8 19 1 0 5 0 8388609 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 half ancient amulet~
    &+LThis strange half of an amulet appears to be quite old and quite
@@ -230,7 +230,7 @@ half ancient amulet~
 ~
 18 19 1 0 5 0 41943040 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 half ancient amulet~
    &+LThis strange half of an amulet appears to be quite old and quite
@@ -244,7 +244,7 @@ bronze-plated boots~
 ~
 9 20 3 0 11 0 0 65 64 0 0
 8 0 0 3 0 0 0 0
-2 25000 100 67108864 0 0 0
+2 25000 100 100 67108864 0 0 0
 E
 bronze-plated boots~
    &+LThese magical boots appear to be of drow design.  They have large
@@ -263,7 +263,7 @@ bronze zarbonesti seal~
 ~
 9 20 1 0 15 0 67117056 2097153 0 0 0
 1 0 0 4 0 0 0 0
--5 29000 100
+-5 29000 100 100
 E
 bronze zarbonesti seal~
   &+LThis appears to be the&+c insignia&+L of a great &+mdrow&+L prophet.
@@ -282,7 +282,7 @@ fine drow elven scepter~
 ~
 5 19 3 0 15 0 33555456 8193 66 38539168 0
 12 4 6 0 3 0 0 0
-2 31000 100 0 12 0 0
+2 31000 100 100 0 12 0 0
 E
 fine drow elven scepter~
    &+LThis fine &+madamantium &+Lscepter hums with a strange ang &+bmagical&+L energy.
@@ -302,7 +302,7 @@ flail hafted~
 ~
 5 19 3 0 14 0 0 8193 64 0 0
 3 3 8 0 4 0 0 0
-4 18000 100 0 0 0 16777216
+4 18000 100 100 0 0 0 16777216
 E
 flail hafted~
    &+LThis large adamantium flail has a bare handle, also comprised of pure
@@ -319,7 +319,7 @@ black leather blade harness~
 ~
 9 13 3 0 5 0 0 1025 0 0 0
 10 0 0 3 0 0 0 0
--10 25000 100
+-10 25000 100 100
 E
 black leather blade harness~
    &+LThis black leather harness is worn strappd around one's thighs and

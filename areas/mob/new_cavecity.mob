@@ -8,8 +8,8 @@ color.  His blazing skull seems to see into your soul. He throws his head
 back and bellows, 'No Mortal shall pass thru these gates. Try and I shall
 destroy you!
 ~
-2062 1 0 587276440 14530 0 0 -1000 S
-U 0 1 -1
+2062 1 0 0 587276440 14530 0 0 -1000 S
+U 0 1 0 -1
 59 -7 -117 57d143+5985 7d6+35
 0.0.0.0 230850
 8 8 1
@@ -23,8 +23,8 @@ a skeleton in full armor, his armor glows red, matching the color of his
 hollow eye sockets. He has been brought back to existence by an evil cleric,
 forced to protect the halls of which he roams.
 ~
-2120 1 0 838869144 2 0 0 -1000 S
-U 0 1 -1
+2120 1 0 0 838869144 2 0 0 -1000 S
+U 0 1 0 -1
 55 -5 -111 55d131+4675 7d6+30
 0.0.0.0 222750
 8 8 1
@@ -37,8 +37,8 @@ undead warg~
 with a brown coat of fur, and blazing red eyes. His 3ich fangs are bloody,
 probably from a recent kill of an animal. A sent of death fills your nostrils.
 ~
-136 1 0 33554440 262144 0 0 -1000 S
-U 0 4096 -1
+136 1 0 0 33554440 262144 0 0 -1000 S
+U 0 4096 0 -1
 51 -5 -98 51d110+4233 7d6+30
 0.0.0.0 206550
 8 8 0
@@ -51,8 +51,8 @@ wight~
 It has 2 deep black holes that appear as voids to the human soul. It moans
 a deep evil song of hatred and sorrow.
 ~
-200 1 0 33554440 1 0 0 -1000 S
-U 0 0 -1
+200 1 0 0 33554440 1 0 0 -1000 S
+U 0 0 0 -1
 49 -3 -81 49d100+2597 6d6+25
 0.0.0.0 119070
 8 8 0
@@ -64,8 +64,8 @@ ghoul undead~
    It looks dead, long dead, very dead. It mumbles some strange things, but it
 seem to be chanting "Drizz'ul Act'reeen Azar" over and over again..
 ~
-200 1 0 33554568 0 0 0 -1000 S
-U 0 1 -1
+200 1 0 0 33554568 0 0 0 -1000 S
+U 0 1 0 -1
 50 -1 -69 45d107+2025 6d6+12
 0.0.0.0 109350
 8 8 0
@@ -77,8 +77,8 @@ A fiendish looking ghast is here, staggering.
    It looks great, for being dead for as long as it has. Much of its flesh as
 already rotted away.
 ~
-200 1 0 136 2 0 0 -1000 S
-U 0 1 -1
+200 1 0 0 136 2 0 0 -1000 S
+U 0 1 0 -1
 51 -1 -56 41d99+1804 6d6+12
 0.0.0.0 99630
 8 8 0
@@ -92,8 +92,8 @@ a deep black. A powerful aura surrounds him, for he is a dragon that lives
 even after death itself. He doesnt like your intrusion on his haven of death.
 Your skin crawls as his deep eyes see deep into your soul.
 ~
-2058 1 0 838860952 2242 0 0 -1000 S
-D 0 512 -1
+2058 1 0 0 838860952 2242 0 0 -1000 S
+D 0 512 0 -1
 60 -10 -152 60d96+6780 7d6+35
 6.6.9.22 486000
 8 8 1
@@ -105,8 +105,8 @@ An undead dragon is here, aimlessly wandering.
    It seems to have no mind at all, it staggers from side to side waiting for
 someone to attack.
 ~
-2248 1 0 33554568 2 0 0 -1000 S
-D 0 1 -1
+2248 1 0 0 33554568 2 0 0 -1000 S
+D 0 1 0 -1
 50 -3 -115 50d119+3250 6d6+25
 0.3.7.14 243000
 8 8 0
@@ -118,8 +118,8 @@ autexil guardian~
    He is tall and strong with the powers of a warrior and a mage as well. This
 makes him a good guard for his master.
 ~
-2058 0 0 33554584 2 0 0 -1000 S
-H 0 512 -1
+2058 0 0 0 33554584 2 0 0 -1000 S
+H 0 512 0 -1
 57 -7 -117 57d96+5871 7d6+35
 2.4.8.6 230850
 8 8 1
@@ -132,8 +132,8 @@ akabar cleric~
 trained in the fields of fighters, mages, and clerics. His power is overwhelming
 to most in the area.
 ~
-67594 1 0 33554568 2 0 0 -1000 S
-H 0 512 -1
+67594 1 0 0 33554568 2 0 0 -1000 S
+H 0 512 0 -1
 60 -10 -132 10d10+20000 7d6+35
 6.6.9.7 243000
 8 8 1
@@ -145,8 +145,8 @@ The soul of an undead housewife is screaming here.
    She look really, really angry. Almost ready to rip someone's head off and eat
 it.
 ~
-2058 0 0 8 0 0 0 -1000 S
-U 0 256 -1
+2058 0 0 0 8 0 0 0 -1000 S
+U 0 256 0 -1
 55 -5 -111 55d121+4620 7d6+30
 0.0.0.0 222750
 8 8 2
@@ -157,8 +157,8 @@ The soul of an undead husband is here, beating his wife.
 ~
    He is beating his wife repeatedly with his belt. He looks very angry as well.
 ~
-2058 0 0 33554440 2 0 0 0 S
-U 0 32 -1
+2058 0 0 0 33554440 2 0 0 0 S
+U 0 32 0 -1
 55 -5 -111 55d121+4620 7d6+30
 0.0.0.0 222750
 8 8 1
@@ -171,8 +171,8 @@ necromancer ordack~
 the Tower's archmage. He has survived through many holders of the tower, and may
 be around for years to come.
 ~
-2186 0 0 33554440 2 0 0 -1000 S
-H 0 1024 -1
+2186 0 0 0 33554440 2 0 0 -1000 S
+H 0 1024 0 -1
 58 -7 -125 58d96+5974 7d6+35
 3.4.8.6 234900
 5 5 1
@@ -187,8 +187,8 @@ blade. Till one day, his sword became thirsty for his own blood and imbeded
 itself into his heart, resulting in the death, and rebirth of his soul...
 this time as a shadow wraith.
 ~
-67176649 1 0 33628328 0 0 0 -1000 S
-X 0 512 -1
+67176649 1 0 0 33628328 0 0 0 -1000 S
+X 0 512 0 -1
 62 -10 -147 60d96+35600 7d6+45
 6.6.4.10 364500
 8 8 1
@@ -200,8 +200,8 @@ akulab overlord~
    He says "I hate being interrupted when I am working!" He turns around ready
 to fight.
 ~
-1073744010 0 0 33554600 3 0 0 -1000 S
-G 0 256 -1
+1073744010 0 0 0 33554600 3 0 0 -1000 S
+G 0 256 0 -1
 60 -10 -122 60d132+6540 7d6+35
 6.6.9.7 243000
 8 8 1
@@ -213,8 +213,8 @@ dred guard mine~
    Dred has been here guarding the mine forever, pledged his unending faith
 to Akulab, his evil master. He looks wary, but still could put up a good fight.
 ~
-2058 1 0 33554456 2 0 0 -1000 S
-H 0 1 -1
+2058 1 0 0 33554456 2 0 0 -1000 S
+H 0 1 0 -1
 55 -5 -111 55d131+4675 7d6+30
 0.2.7.6 222750
 8 8 1
@@ -226,8 +226,8 @@ water elemental~
    The water elemental is huge size and does not seems at all pleased to
 see you.
 ~
-264266 1 0 33554584 2 0 0 0 S
-EW 0 1 -1
+264266 1 0 0 33554584 2 0 0 0 S
+EW 0 1 0 -1
 42 -1 -69 42d107+1890 6d6+12
 0.0.0.0 102060
 8 8 0
@@ -239,8 +239,8 @@ undead wizard~
    He says "Welcome to my shop." He forces a smile with what is left of his
 face.....
 ~
-2058 0 0 33554568 2 0 0 -1000 S
-U 0 512 -1
+2058 0 0 0 33554568 2 0 0 -1000 S
+U 0 512 0 -1
 56 -7 -114 56d96+5768 7d6+35
 0.0.0.0 226800
 8 8 1
@@ -252,8 +252,8 @@ water fiend~
    A fiend formed from the water elemental, it is here to guard the rivers water
 against unwanted visitors.
 ~
-2058 1 0 8 0 0 0 -1000 S
-EW 0 1 -1
+2058 1 0 0 8 0 0 0 -1000 S
+EW 0 1 0 -1
 54 -5 -117 54d131+4590 7d6+30
 0.0.0.0 218700
 8 8 0
@@ -265,8 +265,8 @@ An undead fish is here, floating on top of the water.
    Its dead, very dead....Not something that people would catch and bring home
 for the family.
 ~
-295048 1 0 8 0 0 0 -1000 S
-U 0 0 -1
+295048 1 0 0 8 0 0 0 -1000 S
+U 0 0 0 -1
 10 18 67 10d18+35 2d3+1
 0.0.0.0 1296
 8 8 0
@@ -277,8 +277,8 @@ An undead child is here, crawling on the ground.
 ~
    It looks very very young. It seems to be very very evil.
 ~
-2184 1 0 33554440 2 0 0 -1000 S
-U 0 0 -1
+2184 1 0 0 33554440 2 0 0 -1000 S
+U 0 0 0 -1
 12 15 61 12d23+48 2d5+2
 0.0.0.0 5832
 8 8 0
@@ -291,8 +291,8 @@ undead boatman keeper~
 falling from its limbs. He seems to be repeating the job he did in life
 over and over again till the end of time.
 ~
-2122 0 0 136 194 0 0 -1000 S
-U 0 256 -1
+2122 0 0 0 136 194 0 0 -1000 S
+U 0 256 0 -1
 60 -7 -117 57d132+5928 7d6+35
 0.0.0.0 230850
 8 8 1
@@ -304,8 +304,8 @@ jurtrem dreaded executioner~
 He stands nine feet tall with pitch-black eyes and long white hair.  His arms
 are extremely muscled, covered by pale white skin.
 ~
-67595 1 0 33628344 32770 0 0 -1000 S
-G 0 16777216 -1
+67595 1 0 0 33628344 32770 0 0 -1000 S
+G 0 16777216 0 -1
 60 -10 -122 60d120+16480 7d6+47
 6.6.9.7 275000
 8 8 1
@@ -316,8 +316,8 @@ kraken~
 ~
 Its form shift and wavers about, not allowing you to get a good look at it.
 ~
-1074007114 1 0 34605096 0 0 0 -1000 S
-A 0 8192 -1
+1074007114 1 0 0 34605096 0 0 0 -1000 S
+A 0 8192 0 -1
 58 -7 -125 58d120+5974 7d6+35
 0.0.0.0 234900
 8 8 0
@@ -329,8 +329,8 @@ shadow lord~
 His blackened form shifts in and out, never quite allowing you a good look
 at any of its features.  The shadow is about eight feet tall.
 ~
-1140852810 1 0 570949816 2 0 0 -1000 S
-X 0 1 -1
+1140852810 1 0 0 570949816 2 0 0 -1000 S
+X 0 1 0 -1
 59 -7 -132 57d143+6384 7d6+35
 2.4.2.9 346275
 8 8 0

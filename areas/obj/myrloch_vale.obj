@@ -5,7 +5,7 @@ An &+Wivory&N statue of a horse stands here.~
 ~
 25 34 0 50 7 0 98304 0 0 0 0
 26414 320 -1 0 0 0 0 0
-2000 1 100
+2000 1 100 100
 E
 ivory horse statue~
 The statue of the horse is made fomr the purest ivory, but not animal
@@ -19,7 +19,7 @@ statue labelas~
 ~
 25 11 0 50 7 0 65536 0 64 0 0
 26452 320 -1 0 0 0 0 0
-2000 1 100
+2000 1 100 100
 E
 statue labelas~
 The statue of labelas is made from deep green jade, it stands about
@@ -32,7 +32,7 @@ corellon statue~
 ~
 25 11 0 50 7 0 65536 0 64 0 0
 26451 320 -1 0 0 0 0 0
-2000 1 100
+2000 1 100 100
 E
 statue corellon~
 The statue of corellon is made from fine gold, polished to shine
@@ -46,7 +46,7 @@ rillifane statue~
 ~
 25 11 0 50 7 0 65536 0 64 0 0
 26453 320 -1 0 0 0 0 0
-2000 1 100
+2000 1 100 100
 E
 rillafane statue~
 The statue of rillafane is made from smooth ivory, and has a touch
@@ -60,7 +60,7 @@ hannalil statue~
 ~
 25 11 0 50 7 0 65536 0 64 0 0
 26454 320 -1 0 0 0 0 0
-2000 1 100
+2000 1 100 100
 #26405
 chest mineral~
 &+ya mineral chest from the under-world&N~
@@ -68,7 +68,7 @@ chest mineral~
 ~
 15 11 5 50 7 0 32768 0 0 0 0
 500 31 26406 250 0 0 0 0
-2000 1 100
+2000 1 100 100
 E
 chest~
 This is a rather small chest about, two feet across
@@ -81,7 +81,7 @@ key under-realms~
 ~
 18 16 1 1 7 0 8421376 16385 0 0 0
 3 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key under-realms~
 This key is made form onyx and it is solid black.
@@ -93,7 +93,7 @@ waterfall large~
 ~
 25 40 0 50 7 0 73728 0 64 0 0
 26309 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 waterfall large~
 The waterfall is about one hundred fett high and drops water
@@ -106,7 +106,7 @@ water holy waterfall small~
 ~
 17 40 0 0 7 0 73728 0 0 0 0
 3000 3000 17 0 0 0 0 0
-2000 1 100
+2000 1 100 100
 E
 waterfall small~
 This waterfall looks as if you could probably drink from it with alittle
@@ -119,7 +119,7 @@ key flaming red~
 ~
 18 16 1 1 7 0 8392704 16385 64 0 0
 3 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key red flaming~
 This key has a small flame of fire around it that catches your eye.
@@ -133,7 +133,7 @@ water spring~
 ~
 17 40 0 0 7 0 0 0 64 0 0
 3000 3000 0 0 0 0 0 0
-5000 1 100
+5000 1 100 100
 E
 spring~
 The spring seem to be flowing from am endless source, its waterlevel
@@ -147,7 +147,7 @@ key brimstone~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 3 100 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 key brimstone~
 This key is made from brimstone and is about 8 inches long.
@@ -159,7 +159,7 @@ key jade~
 ~
 18 16 1 1 7 0 8814592 16385 0 0 0
 3 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key jade~
 This key is made of jade and has a sigil of a small flame
@@ -172,7 +172,7 @@ stalagmite~
 ~
 29 11 0 50 7 0 69632 0 0 0 0
 340 26540 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stalagmite~
 It looks a little loose.
@@ -184,7 +184,7 @@ stalagmite~
 ~
 29 11 0 50 7 0 69632 0 0 0 0
 340 26534 1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stalagmite~
 It looks a little loose.
@@ -196,7 +196,7 @@ stalagmite~
 ~
 29 11 0 50 7 0 69632 0 0 0 0
 340 26534 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stalagmite~
 It looks like it could be pulled or pushed somehow.
@@ -208,7 +208,7 @@ stalagmite~
 ~
 29 11 0 50 7 0 69632 0 0 0 0
 340 26540 3 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stalagmite~
 It looks as if it could be moved.
@@ -220,7 +220,7 @@ An old key lies here, aging.~
 ~
 18 16 1 1 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key old~
 This key has a message writtin on it, Property of the master of the grove.
@@ -232,7 +232,7 @@ bloodied head warlord fire~
 ~
 8 2 0 0 7 0 8421376 1 0 0 0
 0 0 0 0 0 0 0 0
-60 1 100
+60 1 100 100
 E
 head warlord fire bloodied~
 The head still drips blood from it, the blood is deep red in color
@@ -245,7 +245,7 @@ artifact under realms~
 ~
 12 16 0 0 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 1 100 0 2 0 0
+5 1 100 100 0 2 0 0
 E
 artifact under realms~
 This artifact is small, about the size of a fruit. It is made
@@ -263,7 +263,7 @@ An old bracelet lies here untouched on the floor.~
 ~
 8 16 3 3 7 0 36864 4097 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 old bracelet~
 This bracelet is very old and ugly.
@@ -275,7 +275,7 @@ bracelet llewyrr~
 ~
 9 16 3 3 7 0 263168 4097 64 4197892 0
 4 11 24 3 0 0 0 0
-3 1 100
+3 1 100 100
 E
 bracelet llewyrr~
 This bracelet is of fine gold, and fits perfectly on your wrist.
@@ -291,7 +291,7 @@ A short sword lies here on the ground.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 6 3 0 0 0 0
-5 1 100
+5 1 100 100
 E
 sword short~
 A small sword crafted from  fine metel, it has a nice hilt
@@ -304,7 +304,7 @@ A short sword lies here on the ground.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 6 3 0 0 0 0
-5 1 100
+5 1 100 100
 E
 sword short~
 A small sword crafted from  fine metel, it has a nice hilt
@@ -317,7 +317,7 @@ A long sword rests here unattended.~
 ~
 5 16 3 10 7 0 0 8193 0 0 0
 5 1 8 3 0 0 0 0
-10 1 100
+10 1 100 100
 E
 long sword~
 This is just an average longsword but nicer then most.
@@ -329,7 +329,7 @@ leather shield~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 1 1 3 65 0 0 0 0
-10 1 100
+10 1 100 100
 E
 shield leather~
 This shield is made from a fine deep rich leather, known only
@@ -342,7 +342,7 @@ bag depth llewyrr~
 ~
 15 3 3 10 7 0 0 16385 64 0 0
 300 1 -1 100 0 0 0 0
-4 1000000 100
+4 1000000 100 100
 E
 bag depth llewyrr~
 This bag can hold its own wieght. it was crafted by
@@ -357,7 +357,7 @@ ring llewyrr~
 ~
 9 16 1 1 7 0 0 3 64 0 0
 1 1 0 3 0 0 0 0
-2 10500 100
+2 10500 100 100
 E
 ring gold llewyrr~
 This ring is made of fine Llewyrr gold
@@ -375,7 +375,7 @@ potion flash~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 40 65 0 0 0 0 0 0
-2 43234 100
+2 43234 100 100
 E
 potion flash~
 This potion is a deep red, and it is bubleing like it is about
@@ -388,7 +388,7 @@ wand water~
 ~
 3 40 2 4 7 0 1 16385 64 0 0
 5 1 1 1 0 0 0 0
-3 14563 100
+3 14563 100 100
 E
 wand water~
 This wand looks as though it is made form water, but it is quite solid.
@@ -400,7 +400,7 @@ boots llewyrr~
 ~
 9 12 3 8 7 0 0 65 64 0 0
 4 6 1 3 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 boots llewyrr~
 These boots are made from a golden leather, a comfortable fit indeed.
@@ -416,7 +416,7 @@ Some Llewyrr ale sits here on the ground.~
 ~
 17 9 0 0 7 0 0 1 0 0 0
 2 2 3 0 0 0 0 0
-3 10 100
+3 10 100 100
 #26432
 fish basket~
 &+ba basket of fish&N~
@@ -424,7 +424,7 @@ fish basket~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 20 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 #26433
 old dagger~
 an old dagger~
@@ -432,7 +432,7 @@ An old dagger sits here~
 ~
 8 16 2 3 7 0 4096 8193 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 old dagger~
 Yup its an old dagger alright, probably worthless too,
@@ -445,7 +445,7 @@ twisted sphere piercing~
 ~
 5 16 3 0 7 0 1024 8193 0 8515584 0
 2 2 4 11 0 0 0 0
-2 23456 100
+2 23456 100 100
 E
 twisted sphere~
 This sphere is jet black, with no glare or reflection
@@ -463,7 +463,7 @@ a glittering mountain of coins lays here on the floor~
 ~
 20 16 1 0 7 0 4096 1 0 0 0
 0 0 0 300 0 0 0 0
-1 1 100
+1 1 100 100
 #26436
 toy~
 a toy~
@@ -471,7 +471,7 @@ A small toy rests here.~
 ~
 13 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 toy~
 A small peice of wood, with a string attached to it with.
@@ -483,7 +483,7 @@ stairway glowing~
 ~
 25 16 0 50 7 0 69632 0 0 0 0
 26425 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 #26438
 shield flaming~
 &+Ra flaming shield&N~
@@ -491,7 +491,7 @@ shield flaming~
 ~
 37 16 3 15 7 0 0 513 0 4173708804 0
 2 1 3 200 0 0 0 0
-8 100000 100 536870912 0 0 0
+8 100000 100 100 536870912 0 0 0
 E
 shield flaming~
 &+RThis shield is of medium size, and is engulfed in flames.  It seems like it
@@ -508,7 +508,7 @@ scroll tattered yellow~
 ~
 2 29 1 2 7 0 0 1 64 0 0
 25 53 0 0 0 0 0 0
-1 3125 100
+1 3125 100 100
 #26440
 stone glowing small~
 &+Wa small glowing stone&N~
@@ -516,7 +516,7 @@ stone glowing small~
 ~
 1 11 0 0 7 0 0 16385 0 0 0
 0 0 -1 0 0 0 0 0
-1 550 100
+1 550 100 100
 #26441
 ring purple stone~
 &+ma purple stone ring&n~
@@ -524,7 +524,7 @@ ring purple stone~
 ~
 11 11 1 1 7 0 1024 3 64 4197892 0
 0 0 0 10 0 0 0 0
-0 75000 100
+0 75000 100 100
 A
 13 30
 #26442
@@ -534,7 +534,7 @@ chest wooden small~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 5 15 26443 250 0 0 0 0
-1 1 100
+1 1 100 100
 #26443
 key tiny stone~
 a tiny stone key~
@@ -542,7 +542,7 @@ A tiny stone key is lying here.~
 ~
 18 11 1 1 7 0 8392704 1 0 0 0
 15 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #26550
 emblem silvery moon pin harp~
 &+ca silvery pin with an emblem of a &+Wmoon&N &+cand a &+Charp&N~
@@ -550,7 +550,7 @@ emblem silvery moon pin harp~
 ~
 9 22 0 0 7 0 589824 2113537 0 0 0
 2 0 0 1 0 0 0 0
-1 1 100 32 0 0 0
+1 1 100 100 32 0 0 0
 E
 harp pin silver moon emblem~
 &+WThe emblem is silver in color, and has a moon and a harp on it

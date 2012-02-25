@@ -5,7 +5,7 @@ pond~
 ~
 17 11 3 0 13 0 0 0 0 0 0
 600 600 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pond~
 &+BThe pond is surrounded by reeds. It is rather small, and its surface is covered
@@ -21,7 +21,7 @@ chain coif~
 ~
 9 16 3 0 7 0 0 17 0 0 0
 6 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 chain coif~
 &+cCrafted of joinging rings of metal, this coif will provide minimal protection
@@ -34,7 +34,7 @@ A steel helmet with ungainly wings has fallen from someone's head.~
 ~
 9 16 3 0 7 0 0 17 0 0 0
 9 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 steel winged helmet~
 &+yThis large stell helmet has what appears to be owl feathers stretching from
@@ -48,7 +48,7 @@ carved wooden earring~
 ~
 9 16 3 0 7 0 0 524289 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 carved wooden earring~
 &+yThis earring is made from finely crafted wood with a thin silver clasp.&N
@@ -62,7 +62,7 @@ leather face guard~
 ~
 9 14 3 0 7 0 0 262145 0 0 0
 9 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 leather face guard~
 &+yThinly cured leather is formed and shaped to create this face guard. Large
@@ -78,7 +78,7 @@ iron neck guard~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 6 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 iron neck guard~
 &+yA think piece of crudely shaped metal provides the wearer a minimal
@@ -93,7 +93,7 @@ studded collar~
 ~
 9 16 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 studded collar~
 &+yThis thick leather collar has small metal studs spaced about an inch
@@ -108,7 +108,7 @@ leather suit armor steel plates~
 ~
 9 16 3 0 7 0 0 9 0 0 0
 12 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 leather suit armor steel plates~
 &+yThe thick hide of some animal has been expertly cured and affixed
@@ -122,7 +122,7 @@ black blackened scale tunic~
 ~
 9 16 3 0 7 0 0 9 0 0 0
 7 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 black blackened scale tunic~
 &+LThis long tunic is formed of thin pieces of iron overlayed onto the
@@ -136,7 +136,7 @@ A wide belt lies here, drawing attention.~
 ~
 9 16 3 0 7 0 0 2049 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 wide broad belt iron links~
 &+yThis wide leather belt is overlayed with thick links of unforged
@@ -151,7 +151,7 @@ A strip of leather with iron loops has been tossed aside.~
 ~
 9 16 3 0 7 0 0 2049 0 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 leather belt strip iron loops~
 &+cThis simple belt has small iron links making it easy fr one to
@@ -166,7 +166,7 @@ red black armplates~
 ~
 9 16 3 0 7 0 0 257 0 0 0
 7 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 red black armplates~
 &+rCrudely shaped armplates painted red and black provide the wearer a
@@ -180,7 +180,7 @@ vicious armguards~
 ~
 9 16 3 0 7 0 0 257 0 0 0
 7 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 vicious armguards~
 &+yThese thick metal and leather armguards have large spikes protruding from
@@ -198,7 +198,7 @@ An iron bracer has not crumpled to a heap after it has been thown to the ground.
 ~
 9 16 3 0 7 0 0 129 0 0 0
 5 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 leather-lined iron bracer~
 &+yThick pieces of leather are fastened to the inside of this bracer providing
@@ -211,7 +211,7 @@ simple steel wrist guard~
 ~
 9 16 3 0 7 0 0 4097 0 0 0
 8 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 simple steel wrist guard~
 &+cThis thin circular piece of metal is worn over ones wrist. The crudely
@@ -225,7 +225,7 @@ studded iron gauntlets~
 ~
 9 16 3 0 7 0 0 129 0 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 studded iron gauntlets~
 &+cThese large metal gauntlets are made from crudely shaped iron. The
@@ -241,7 +241,7 @@ large claws~
 ~
 9 16 3 0 7 0 0 129 0 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 large claws~
 &+yThick claws are fastened to a thin leather strap. the strap placed over
@@ -258,7 +258,7 @@ ring bronze~
 ~
 9 16 3 0 7 0 0 3 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 wide ring bronze~
 &+yCrudely forged by an inexperienced craftsman, this ring is made
@@ -273,7 +273,7 @@ whisper thin longsword~
 ~
 5 16 3 0 7 0 0 8193 0 132064 0
 5 3 3 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 whisper thin longsword~
 &+yThis longsword has an unusually thin blade. Its wooden hilt grooved
@@ -286,7 +286,7 @@ dagger~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 1 4 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 dagger~
 &+LThis sleek dagger stands out as its hilt is formed from an
@@ -300,7 +300,7 @@ large axe~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 1 1 8 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 large heavy axe~
 &+yA thick oak handle secures this large blade in place. The blades edge
@@ -313,7 +313,7 @@ solid iron battle hammer~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 4 1 8 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 solid iron battle hammer~
 blabla&N
@@ -325,7 +325,7 @@ two-handed steel sword~
 ~
 5 16 3 0 7 0 4194304 8193 0 4064 0
 13 2 6 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 two-handed steel sword~
 &+cThis large sword's blade is sharpened to a keen edge on both sides. Its
@@ -339,7 +339,7 @@ curved wicked dagger~
 ~
 5 16 3 0 7 0 0 8193 0 524768 0
 2 1 6 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 dagger~
 &+cThe blade is forged by string metals but is extremely thin, able to
@@ -352,7 +352,7 @@ thin light dagger~
 ~
 5 16 3 0 7 0 0 8193 0 87159195 0
 2 1 4 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 thin light dagger~
 &+yThis narrow dagger is lightweight and able to be effectively wielded
@@ -365,7 +365,7 @@ club heavy head iron~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 10 1 8 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 club heavy iron head~
 This large gnarled club has been encusted with small iron heads
@@ -379,7 +379,7 @@ two-pronged dagger~
 ~
 5 16 3 0 7 0 0 8193 0 480 0
 2 1 6 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 two-pronged dagger~
 &+yThis small dagger has two blades protruding from its hilt. A space
@@ -392,7 +392,7 @@ steel ring root~
 ~
 9 16 3 0 7 0 0 3 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 steel ring root~
 &+yThis small steel ring is crafted to resemble an outstretched root. The
@@ -408,7 +408,7 @@ shield tree~
 ~
 37 16 3 0 7 0 0 513 0 0 0
 1 5 3 86 3 1 0 0
-2 0 100
+2 0 100 100
 E
 shield tree~
 &+yThis large metal shield is encrusted with the emblem of a huge oak
@@ -423,7 +423,7 @@ black blackened round steel shield~
 ~
 37 16 3 0 7 0 0 513 0 0 0
 1 7 3 80 3 0 0 0
-2 0 100
+2 0 100 100
 E
 black blackened round steel shield~
 &+yHeld too long in the fires of the forge, this blackened metal
@@ -438,7 +438,7 @@ curved shin guards~
 ~
 9 16 3 0 7 0 0 33 0 0 0
 6 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 curved shin guards~
 &+cThin sheets of metal joined by leather straps form this pair of
@@ -451,7 +451,7 @@ full leg armor heavy set~
 ~
 9 16 3 0 7 0 0 33 0 0 0
 9 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 full leg armor heavy set~
 &+cHeavy sheets of formed iron held together by leather straps form
@@ -466,7 +466,7 @@ fur-lined steel shod boots~
 ~
 9 16 3 0 7 0 0 65 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 fur-lined steel shod boots~
 &+yThese leather boots have thick metal shods. Billowing white rabbit
@@ -481,7 +481,7 @@ traveling boots waterproof light~
 ~
 9 16 3 0 7 0 0 65 0 0 0
 3 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 traveling boots waterproof light~
 &+yThese boots are formed from cured leather sealed in beeswax.&N
@@ -495,7 +495,7 @@ robe~
 ~
 9 3 3 0 7 0 0 9 0 0 1024
 8 0 0 3 0 0 0 0
-2 2222 100
+2 2222 100 100
 E
 robe~
 &+MThis robe is made of purple silk. It is very soft and a pleasure
@@ -510,7 +510,7 @@ apple~
 ~
 19 1 1 0 7 0 0 1 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 apple~
 &+rSmall, red, and round, It is an apple.&n
@@ -522,7 +522,7 @@ beet~
 ~
 19 1 1 0 7 0 4096 1 0 0 0
 2 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 beet~
 &+rSmall and round, this is a beet from a farmer's field.&n

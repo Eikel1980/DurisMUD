@@ -5,7 +5,7 @@ rod steel~
 ~
 5 16 3 0 11 10 1024 8193 0 87650331 0
 10 3 4 6 0 0 0 0
-20 20000 100
+20 20000 100 100
 E
 rod steel~
 This heavy steel rod is well-balanced and can be used for just about anything.
@@ -21,7 +21,7 @@ corpse bloody~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse bloody~
 The naked corpse is that of an elf.  Long cuts along the torso of the corpse
@@ -41,7 +41,7 @@ orchid~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orchid~
 This flower may once have been quite beautiful, but now it is barely
@@ -55,7 +55,7 @@ cloak fangs snake~
 ~
 9 10 3 0 9 0 12288 1025 0 0 0
 8 9 1 3 0 0 0 0
-3 35000 100
+3 35000 100 100
 E
 cloak fangs snake~
 The hollow fangs of hundreds of poisonous snakes have been strung together to
@@ -74,7 +74,7 @@ lyre bloodwood instrument~
 ~
 32 6 3 0 14 25 1024 16385 0 8421376 0
 185 35 0 6 0 0 0 0
-10 45000 100 0 8192 0 0
+10 45000 100 100 0 8192 0 0
 E
 lyre bloodwood~
 Made from heavy bloodwood, this fine instrument has a beautiful sound and
@@ -94,7 +94,7 @@ blade sword serpent~
 ~
 5 22 3 0 13 10 4194304 8193 65 0 0
 13 3 6 3 0 0 0 0
-18 58000 100
+18 58000 100 100
 E
 blade sword serpent~
 This incredible silver blade is difficult to explain.  It is extremely
@@ -123,7 +123,7 @@ corpse charred~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse charred~
 The arms and legs of this burning victim were spread out and tied to stakes
@@ -140,7 +140,7 @@ A no_show muddy hole waits to be noticed~
 ~
 15 13 3 0 7 0 2 0 0 0 0
 200 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #80608
 sphere gold eye~
 &+Ya golden eye&N~
@@ -148,7 +148,7 @@ sphere gold eye~
 ~
 9 24 3 0 10 0 2134016 131073 0 0 0
 5 12 2 3 0 0 0 0
-3 12500 100
+3 12500 100 100
 E
 sphere gold eye~
 This half-sphere of gold has been carefully etched along its curved side to
@@ -169,7 +169,7 @@ well red brick~
 ~
 17 11 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 well red brick~
 The bricks of the well have been chipped and abused by centuries of standing
@@ -185,7 +185,7 @@ totem lion figurine~
 ~
 34 24 2 0 12 0 5120 16385 64 256 0
 3 0 1 0 0 0 0 0
-6 1 100
+6 1 100 100
 E
 lion totem figurine~
 This carefull made golden lion has been engraved with strange sigils along
@@ -205,7 +205,7 @@ chest wood wooden~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 200 29 80612 300 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chest wood wooden~
 The chest is massive, and sturdily built.  The golden lock appears to be
@@ -219,7 +219,7 @@ key gold~
 ~
 18 13 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key gold~
 Though made of a precious metal, the key is not terribly complex or even very
@@ -234,7 +234,7 @@ silk bolt~
 ~
 8 3 4 30 14 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-35 75000 100
+35 75000 100 100
 E
 silk bolt~
 Fine silk is worth more than its weight in gold, and this silk is some of the
@@ -249,7 +249,7 @@ coins platinum~
 ~
 20 13 3 0 7 0 0 16385 0 0 0
 0 0 0 200 0 0 0 0
-0 1 100
+0 1 100 100
 #80615
 armor leather snakeskin~
 &+yleather armor with &+gsn&+Gak&+ges&+Gki&+gn&+y trim&N~
@@ -257,7 +257,7 @@ armor leather snakeskin~
 ~
 9 14 3 0 12 10 131072 9 64 4165209668 0
 22 3 1 4 1 0 0 0
-3 15000 100
+3 15000 100 100
 E
 armor leather trimmed~
 Diamond patterned snakeskin has been used to trim the edges and sleeves of this
@@ -275,7 +275,7 @@ collar gold~
 ~
 9 24 3 0 11 0 0 5 0 0 0
 10 2 1 5 0 0 0 0
-4 50000 100
+4 50000 100 100
 E
 collar gold~
 This thick, solid gold collar is nothing more than a sign of wealth, and
@@ -294,7 +294,7 @@ sword snakebite~
 ~
 5 22 3 0 14 20 33686528 8193 65 87572507 0
 13 4 4 3 1 33 60 20
-20 100000 100 16 0 0 0
+20 100000 100 100 16 0 0 0
 E
 sword snakebite~
 This highly sharpened blade shows a level of craftsmanship that could not
@@ -331,7 +331,7 @@ cloak scale scales~
 ~
 9 47 3 0 10 0 40960 1025 0 0 0
 9 9 1 3 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 cloak scale scales~
 The cloak appears to have been made from the skins of a number of snakes, but
@@ -351,7 +351,7 @@ chainmail silver suit~
 ~
 9 22 3 0 11 20 1089536 9 67 4169510976 0
 25 0 1 3 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 chainmail silver suit~
 This silver chainmail has the eblem of a githyanki silversmith on its left
@@ -370,7 +370,7 @@ chainmail silver tunic~
 ~
 9 22 3 0 10 0 0 9 65 0 0
 20 3 1 3 0 0 0 0
-5 24000 100
+5 24000 100 100
 E
 chainmail silver tunic~
 Made from tiny links, this chainmail was forged of the purest and finest silver.
@@ -389,7 +389,7 @@ bracer yuan-ti skin~
 ~
 9 47 3 0 10 0 73728 4097 64 0 0
 8 11 1 5 0 0 0 0
-2 10000 100 0 4096 0 0
+2 10000 100 100 0 4096 0 0
 E
 bracer yuan-ti skin~
 This bracer has been crudely made from the skins of several yuan-ti that have
@@ -407,7 +407,7 @@ corpse~
 ~
 15 2 3 0 10 0 0 0 0 0 0
 10 0 0 100 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 corpse~
 The leg has already been torn off this corpse, most likely to be eaten.  Savage
@@ -422,7 +422,7 @@ leg~
 ~
 5 2 3 0 5 0 8192 8193 0 4165209668 0
 10 2 9 6 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 leg~
 This long leg has had most of the flesh eaten off of it.  Most of what remains
@@ -439,7 +439,7 @@ note paper~
 ~
 13 29 3 0 10 0 45056 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 note paper~
 The note is so old and stained that it is almost impossible to read.  The only
@@ -458,7 +458,7 @@ earring finger troll~
 ~
 11 2 3 0 7 0 12288 67633153 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 earring finger troll~
 Someone has turned this severed finger into a macabre earring.  The claw at

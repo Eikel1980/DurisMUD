@@ -5,7 +5,7 @@ a &+rred&+ywood de&+rsk&N~
 ~
 15 6 3 0 11 0 0 0 0 0 0
 1000 29 42603 1000 0 0 0 0
-800 0 100
+800 0 100 100
 E
 desk redwood~
 &+y  Standing eight feet high this desk was obviously made for a giant, it is
@@ -24,7 +24,7 @@ a &+Bbaby &+Lorc&N~
 ~
 8 2 3 0 7 0 36872 16385 0 0 0
 0 0 0 0 0 0 0 0
-40 1 100
+40 1 100 100
 E
 baby orc toy~
 &+LThis baby orc, which had once been kidnapped by vultures, now giggles noisily.&N
@@ -36,7 +36,7 @@ a &+cbaby's &+Yr&+ca&+Yt&+ct&+Yl&+ce&N~
 ~
 8 6 3 0 7 0 36864 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rattle toy~
 A &+cbaby's &+Yr&+ca&+Yt&+ct&+Yl&+ce, one of many toys a baby would play with.&N
@@ -48,7 +48,7 @@ a &+ylarge &+rRed&+ywoo&+rd k&+yey &+cattached to a chain&N~
 ~
 18 6 3 0 10 0 8486920 16389 0 0 0
 0 0 0 0 0 0 0 0
-10 1 100
+10 1 100 100
 E
 key~
 &+yA large piece of redwood carved into the shape of a key.  Due to the hardness
@@ -65,7 +65,7 @@ A &+gsmall &+cmetal key &+Lbarely visible is laying amongst the &+ydirt.&N~
 ~
 18 16 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key small metal~
 &+LTwisted and bent a key has been carved out of metal.  It may not be pleasant
@@ -78,7 +78,7 @@ A &+Bsl&+Len&+Bde&+Lr k&+Bey &+wattached to a &+cchain &+Llays here amongst the 
 ~
 18 16 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 key slender~
 A long slender piece of metal has been cut and grooved to form the shape of
@@ -91,7 +91,7 @@ wooden wood redwood cloak~
 ~
 9 6 3 0 10 0 4096 1025 66 0 0
 7 9 39 5 0 0 0 0
-0 1 100
+0 1 100 100
 E
 wooden wood redwood cloak~
 &+yMade of the finest redwood, this cloak offers great protection to the wearer.
@@ -112,7 +112,7 @@ book diary~
 ~
 13 28 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book diary~
 &+LMany ages ago me and my family were cast down by a horrible king.  This
@@ -129,7 +129,7 @@ a &+Bstuffed &+Msorceror &+Bdoll&N~
 ~
 34 3 3 0 8 0 8192 16385 0 0 0
 4 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 doll stuffed sorc sorceror~
 &+cThis appears to be a stuffed doll crafted into the shape of a &+ygnome&+c.
@@ -144,7 +144,7 @@ a &+Bstuffed &+Msorceror &+Bdoll&N~
 ~
 34 3 3 0 8 0 8192 16385 0 0 0
 16 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 doll stuffed sorc sorceror~
 &+cThis appears to be a stuffed doll crafted into the shape of a &+ygnome&+c.
@@ -159,7 +159,7 @@ a &+Bstuffed &+Msorceror &+Bdoll&N~
 ~
 34 3 3 0 7 0 8192 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 doll stuffed sorc sorceror~
 &+cThis appears to be a stuffed doll crafted into the shape of a &+ygnome&+c.
@@ -174,7 +174,7 @@ boomerang redwood wood~
 ~
 5 6 3 0 14 0 16785681 8193 64 4165209860 256
 10 3 6 7 0 0 0 0
-0 1 100
+0 1 100 100
 E
 boomerang redwood wood~
 &+y  Measuring almost three feet long, a piece of hard redwood has been chiseled
@@ -195,7 +195,7 @@ can~
 ~
 17 16 3 0 7 0 65544 142622721 0 0 0
 2 2 15 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 can~
 &+ra can of coca-cola.
@@ -207,7 +207,7 @@ leg grasshopper remains~
 ~
 7 12 3 0 7 0 4096 8193 0 0 0
 1 1 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 leg grasshopper remains~
 &+gThis leg of a grasshopper is no longer attached to its previous owner.
@@ -219,7 +219,7 @@ a &+Lset of &+rl&+La&+rd&+Ly&+rb&+Lu&+rg wings&N~
 ~
 9 2 3 1 7 0 67108993 262657 0 0 0
 3 13 1 2 0 0 0 0
-7 1000 100 67108864 0 0 0
+7 1000 100 100 67108864 0 0 0
 E
 wings ladybug~
 &+rOnce allowing a ladybug to fly, these wings have been
@@ -236,7 +236,7 @@ sign wood wooden~
 ~
 13 6 4 0 11 0 1032 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wood wooden~
 &+G                 |   &+y                                  |
@@ -260,7 +260,7 @@ fountain~
 ~
 17 6 5 0 13 0 0 0 0 0 0
 99999999 99999999 16 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 fountain~
 
@@ -276,7 +276,7 @@ plaque wood etchings etching~
 ~
 13 6 2 0 11 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 plaque wood~
 
@@ -294,7 +294,7 @@ dead insect~
 ~
 19 2 1 0 7 0 4104 1 0 0 0
 1 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dead insect~
 &+Lan extremely dead insect.
@@ -306,7 +306,7 @@ dead arachnid~
 ~
 19 2 1 0 7 0 4104 1 0 0 0
 1 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dead arachnid~
 &+La very dead arachnid.
@@ -318,7 +318,7 @@ a &+Wlarge &+Yw&+La&+Ys&+Lp&+Y'&+Ls &+Ys&+Lt&+Yi&+Ln&+Yg&+Le&+Yr&N~
 ~
 5 46 3 0 7 0 5248 8193 64 94208 0
 19 4 2 11 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 stinger~
 &+Ya large wasp's stinger.
@@ -334,7 +334,7 @@ a &+rfire &+Lant leg&N~
 ~
 3 2 3 0 7 0 13312 16385 0 4197892 0
 6 2 2 96 0 0 0 0
-0 1 100
+0 1 100 100
 E
 leg~
 &+rthe remains of a fire ant leg.
@@ -346,7 +346,7 @@ finger orc~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 finger orc~
 &+LOnce belonging to an orc, this finger is a tasty treat.
@@ -358,7 +358,7 @@ an &+Rengraved &+ywooden stick&N~
 ~
 34 6 3 0 7 0 69632 16385 64 0 0
 32 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 totem redwood stick wood~
 &+yEngravings of demons and angels cover this short stick, giving one
@@ -375,7 +375,7 @@ a &+Bc&+Rr&+cy&+Ys&+Wt&+ga&+Cl &+Rw&+Ga&+Yn&+Cd &+Mo&+Rf &+Bt&+Yh&+ce &+Ra&+Yr&+
 ~
 3 8 3 0 7 0 50930048 24577 64 0 0
 6 10 10 66 0 0 0 0
-0 1 100
+0 1 100 100
 E
 wand rod~
 &+RThi&+Cs wa&+Gnd is g&+Clowi&+Rng wit&+Ch m&+Gale&+Cvol&+Rent fo&+Grc&+Ce.
@@ -395,7 +395,7 @@ chest crystaline~
 ~
 15 8 3 0 7 0 1 0 0 0 0
 500 5 0 500 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chest crystaline~
 &+RThis &+Gch&+Re&+Cst i&+Gs mad&+Ce &+Mfrom m&+Ragi&+Bcal&+G cry&+Cst&+Wali&+Bne..
@@ -411,7 +411,7 @@ can~
 ~
 17 16 3 0 7 0 65544 142622721 0 0 0
 2 2 24 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 can~
 &+Ra can of pepsi.
@@ -423,7 +423,7 @@ pedestal~
 ~
 13 6 3 0 11 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pedestal~
 &+rThis pedestal has three levels to its pyramid shape. The bottle level which
@@ -445,7 +445,7 @@ chest crystaline~
 ~
 15 8 3 0 7 0 1 0 0 0 0
 500 31 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest crystaline~
 &+RThis &+Gch&+Re&+Cst i&+Gs mad&+Ce &+Mfrom m&+Ragi&+Bcal&+G cry&+Cst&+Wali&+Bne..
@@ -461,7 +461,7 @@ guilotene~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 50 5 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 guilotene~
 &+LThis 10 foot tall guilotene is probably used to kill dinner before preparing
@@ -477,7 +477,7 @@ blade guilotene~
 ~
 5 16 3 0 7 0 4199424 24577 64 85475353 0
 1 4 4 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 blade guilotene~
 &+LThis 4 foot long blade from a rusty guilotene has been removed and is now
@@ -494,7 +494,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -510,7 +510,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -526,7 +526,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -542,7 +542,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -558,7 +558,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -574,7 +574,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -590,7 +590,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -606,7 +606,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -622,7 +622,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -638,7 +638,7 @@ the &+Lskin of a &+Ggrass &+Lsnake&N~
 ~
 9 2 3 0 7 0 110600 9 0 0 0
 1 3 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skin snakeskin~
 &+LThis skin been removed from a dead &+Ggrass &+Lsnake.
@@ -654,7 +654,7 @@ boots snakeskin~
 ~
 9 47 3 0 11 0 8192 65 0 4227727360 90112
 7 6 1 5 0 0 0 0
-0 1 100
+0 1 100 100
 E
 boots snakeskin~
 &+LThese bo&+gots were f&+Gashioned from the sk&+gins of many grass&+L snakes.  They
@@ -671,7 +671,7 @@ chest wooden~
 ~
 15 6 4 0 9 0 0 0 0 0 0
 200 29 42603 200 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chest wooden~
 &+yThis large wooden chest was designed for one purpose,
@@ -684,7 +684,7 @@ torch~
 ~
 1 6 3 0 7 0 262144 16385 0 0 0
 0 0 24 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 torch~
 &+ra bundle of wooden spl&+yinters tied together to form a to&+Yrch.
@@ -696,7 +696,7 @@ loincloth leather cloth~
 ~
 11 3 3 0 7 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 loincloth leather cloth~
 &+ya piece of cloth that was simply torn off and worn as a belt.
@@ -708,7 +708,7 @@ A &+gsmall &+Rapple &+ytree lays here.&N~
 ~
 5 5 5 50 7 0 0 8193 0 0 0
 10 2 4 7 0 0 0 0
-50 1 100
+50 1 100 100
 E
 tree~
 &+yThis small &+Rapple &+gtree&+y was once growing in the wild.  It
@@ -721,7 +721,7 @@ torch~
 ~
 1 6 3 0 7 0 262144 24577 0 0 0
 0 0 99999999 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 torch~
 &+ra bundle of wooden spl&+yinters tied together to form a to&+Yrch.
@@ -733,7 +733,7 @@ carvings words~
 ~
 13 6 3 0 9 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 carvings~
 &+y|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -761,7 +761,7 @@ some &+Ydwarven &+cgoggles &+Ycovered in &+ydirt&N~
 ~
 9 7 3 0 7 0 262144 131073 0 0 0
 1 12 12 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 goggles glasses glass lenses~
 &+YThese &+cgoggles&+Y have been fasioned to allow someone to see in the dark.
@@ -773,7 +773,7 @@ some &+Ydwarven &+cgoggles &+Ycovered in &+rdirt&N~
 ~
 9 7 3 0 7 0 1441792 131073 64 4227727360 256
 3 12 12 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 goggles glasses glass~
 &+YThese &+cgoggles&+Y have been fasioned to allow someone to see in the dark.
@@ -789,7 +789,7 @@ boomerang redwood~
 ~
 5 6 3 0 7 0 16785664 8193 0 4165275460 256
 10 2 4 7 0 0 0 0
-0 1 100
+0 1 100 100
 E
 boomerang redwood~
 &+y  Measuring almost three feet long, a piece of hard redwood has been chiseled
@@ -806,7 +806,7 @@ a &+ydirt &+rcovered &+Rengraved &+rwo&+yod&+ren &+ystick&N~
 ~
 4 6 3 0 11 0 4326401 16385 64 100794536 256
 50 20 20 24 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stick staff wooden engraved~
 &+rThis long redwood staf&+yf is engraved with many elegant &+Rcarvings&+y of weapons
@@ -823,7 +823,7 @@ boomerang redwood~
 ~
 5 6 3 0 7 0 16785664 8193 0 4165275460 256
 10 2 4 7 0 0 0 0
-0 1 100
+0 1 100 100
 E
 boomerang redwood~
 &+y  Measuring almost three feet long, a piece of hard redwood has been chiseled
@@ -840,7 +840,7 @@ a &+ysuit of dwarven woodmail&N~
 ~
 9 6 3 0 7 0 73728 9 64 4227727360 256
 20 3 255 4 0 0 0 0
-0 1 100
+0 1 100 100
 E
 woodmail dwarven suit armor chain chains~
 &+yThis dwarven woodmail was designed by expert armor makers that are dwarf.
@@ -855,7 +855,7 @@ a small &+Yw&+La&+Ys&+Lp&+Y'&+Ls &+Ys&+Lt&+Yi&+Ln&+Yg&+Le&+Yr&N~
 ~
 5 46 3 0 7 0 5248 8193 64 94208 0
 19 2 3 11 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 stinger piece insect~
 &+Ya small wasp's stinger.
@@ -867,7 +867,7 @@ a &+ylar&+cge &+rbir&+Lds &+gne&+Bst&N~
 ~
 15 42 3 0 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 nest~
 &+LThis large vultures nest was created from various types of &+Bstring&+L,
@@ -881,7 +881,7 @@ a &+ylarge bag of &+Wc&+Lo&+Ww &+Yfood&N~
 ~
 15 14 6 10 7 0 0 262145 0 4227727360 49151
 150 1 0 150 0 0 0 0
-50 1 100
+50 1 100 100
 E
 bag food large~
 &+y   This tainted bag used to provide nutritious &+Yfood&+y to &+Wc&+Lo&+Ww&+ys.
@@ -902,7 +902,7 @@ pedestal~
 ~
 13 6 3 0 11 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pedestal~
 &+rThis pedestal has three levels to its pyramid shape. The bottle level which
@@ -924,7 +924,7 @@ feather birdfeather~
 ~
 3 50 3 0 7 0 0 16385 66 0 0
 15 2 2 84 0 0 0 0
-0 1 100
+0 1 100 100
 E
 feather birdfeather~
 &+GThis birdfeather has been enchanted by a great druid.
@@ -936,7 +936,7 @@ feather ostrich~
 ~
 3 50 3 0 7 0 0 16385 66 0 0
 15 2 2 83 0 0 0 0
-0 1 100
+0 1 100 100
 E
 feather ostrich~
 &+GThis feather has been enchanted by a great druid.
@@ -948,7 +948,7 @@ some &+rdeviled &+Yeggs&N~
 ~
 19 45 3 0 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 eggs~
 &+WThe &+Yyolk &+Wof this egg has been mixxed with &+wmayonase &+Wto create&+r deviled &+Weggs.
@@ -960,7 +960,7 @@ vine roots~
 ~
 19 43 3 0 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 vine roots~
 &+yRoots of a &+gvine &+yhave been ripped from the ground and are now edible.
@@ -972,7 +972,7 @@ weed~
 ~
 19 43 3 0 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 weed~
 &+ya boot &+glace of mauled &+Gweed &+yhas been prepared in an edible form.
@@ -984,7 +984,7 @@ bowl round leaves~
 ~
 17 43 3 4 7 0 0 8407041 0 0 0
 50 50 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 bowl round leaves~
 &+gMany small &+Gleaves&+g have been stiched together to form a &+cwater&+g-tight
@@ -999,7 +999,7 @@ hand orc~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 hand orc~
 &+LOnce belonging to an orc, this hand has been severed to become food.
@@ -1011,7 +1011,7 @@ arm orc~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 4 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 arm orc~
 &+LOnce belonging to an orc, this arm is a meal in itself.
@@ -1023,7 +1023,7 @@ leg orc~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 4 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 leg orc~
 &+LOnce attached to an orc, this leg is now a tasty treat.
@@ -1035,7 +1035,7 @@ head orc~
 ~
 17 2 3 0 7 0 0 16385 0 0 0
 4 4 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 head orc~
 &+LThis is the head of an orc.
@@ -1047,7 +1047,7 @@ bowl blood orc~
 ~
 17 6 3 0 7 0 0 16385 0 0 0
 3 3 13 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 bowl blood orc~
 &+LA full bowl of orc &+rblood&+L.
@@ -1059,7 +1059,7 @@ glass tea~
 ~
 17 6 3 0 7 0 0 16385 0 0 0
 1 1 11 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 glass tea~
 &+cFreshly made &+Ytea&+c.
@@ -1071,7 +1071,7 @@ club wood hardwood stick~
 ~
 5 6 3 5 7 0 8192 8193 0 0 0
 10 2 4 7 0 0 0 0
-5 1 100
+5 1 100 100
 E
 club wood hardwood stick~
 &+yA chunk of giant redwood is fashioned into a bludgeoning weapon.
@@ -1087,7 +1087,7 @@ hammer wood hardwood stick~
 ~
 5 6 3 15 7 0 4202496 8193 0 4227805184 0
 4 3 4 6 0 0 0 0
-15 1 100
+15 1 100 100
 E
 hammer wood hardwood stick~
 &+yThis hammer was carved from a giant redwood.
@@ -1103,7 +1103,7 @@ club huge redwood wood chunk tree~
 ~
 5 6 5 65 7 0 4202496 24577 0 4227805184 3837
 10 3 5 7 0 0 0 0
-65 1 100
+65 1 100 100
 E
 club huge redwood wood chunk tree~
 &+yA very roughly cut chunk of redwood is now a huge weapon.
@@ -1119,7 +1119,7 @@ bark shield wood redwood~
 ~
 37 4 3 5 7 0 8192 513 0 0 0
 1 3 4 68 5 0 0 0
-10 1 100
+10 1 100 100
 E
 bark shield wood redwood~
 &+yCut from a giant redwood, this piece of bark has been fashioned into a shield.
@@ -1133,7 +1133,7 @@ splinter wood redwood~
 ~
 7 6 3 0 7 0 8192 16385 0 0 0
 1 2 2 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 splinter wood redwood~
 &+yA three foot long splinter of redwood has been crafted into an arrow.
@@ -1145,7 +1145,7 @@ bracelet dirt roots~
 ~
 9 42 3 0 7 0 8192 20481 64 0 0
 4 11 1 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bracelet dirt roots~
 &+mIncredibly hard &+groots &+mand &+ydirt &+mare molded together to form
@@ -1162,7 +1162,7 @@ whip roots~
 ~
 5 42 3 0 7 0 8192 24577 0 0 0
 14 2 5 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 whip roots~
 &+gLong roots have been tied together to form a whip.
@@ -1178,7 +1178,7 @@ whip weeds~
 ~
 5 42 3 0 7 0 8192 24577 0 0 0
 14 2 4 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 whip weeds~
 &+gLong narrow weeds form an exceptional weapon.
@@ -1194,7 +1194,7 @@ ground feather birdfeather bottle feathers birdfeathers~
 ~
 10 50 3 0 7 0 0 16385 66 0 0
 15 84 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ground feather birdfeather bottle feathers birdfeathers~
 &+CGround birdfeathers &+Gmagically brewed into a potion.
@@ -1206,7 +1206,7 @@ ground feather ostrich bottle feathers~
 ~
 10 50 3 0 7 0 0 16385 66 0 0
 15 83 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ground feather ostrich bottle feathers~
 &+BOstrich &+Gfeathers have been beaten to a pulp and are now in a liquid form.
@@ -1218,7 +1218,7 @@ dirt small bottle~
 ~
 10 9 3 0 7 0 0 16385 66 0 0
 15 16 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirt small bottle~
 &+yEnchanted dirt.
@@ -1230,7 +1230,7 @@ dirt bottle~
 ~
 10 9 3 0 7 0 0 16385 66 0 0
 15 57 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirt bottle~
 &+yEnchanted dirt.
@@ -1242,7 +1242,7 @@ dirt large bottle~
 ~
 10 9 3 0 7 0 0 16385 66 0 0
 15 15 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirt large bottle~
 &+yEnchanted dirt.
@@ -1254,7 +1254,7 @@ dirt vial~
 ~
 10 9 3 0 7 0 0 16385 66 0 0
 15 28 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirt vial~
 &+yA vial of enchanted dirt.
@@ -1266,7 +1266,7 @@ dirt vial large~
 ~
 10 9 3 0 7 0 0 16385 66 0 0
 15 9 -1 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirt vial large~
 &+yA vial of enchanted dirt.
@@ -1278,7 +1278,7 @@ ring wood redwood twisting long~
 ~
 9 6 3 1 9 0 12288 16387 66 0 0
 2 1 0 3 0 0 0 0
-1 1 100
+1 1 100 100
 E
 ring wood redwood twisting long~
 &+yLong twisting red&+rwoo&+yd strands form this magical ring.
@@ -1294,7 +1294,7 @@ pendant wood redwood twisting long loop~
 ~
 9 6 3 1 9 0 12288 16389 66 0 0
 4 2 2 2 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pendant wood redwood twisting long loop~
 &+yMade from strands of red&+rwoo&+yd, this pendant is very appealing to the eye.
@@ -1310,7 +1310,7 @@ thin redwood wood gloves~
 ~
 9 6 3 1 9 0 12288 16513 66 0 0
 3 7 1 2 0 0 0 0
-1 1 100
+1 1 100 100
 E
 thin redwood wood gloves~
 &+yUsing some unknown technique, red&+rwoo&+yd has been fashioned into gloves that
@@ -1327,7 +1327,7 @@ pile heaping arachnids~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 150 0 0 150 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pile heaping arachnids~
 &+LWhat can only be the remains of a creeping doom.
@@ -1339,7 +1339,7 @@ pile heaping insects~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 150 0 0 150 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile heaping insects~
 &+LWhat can only be the reamins of a creeping doom.
@@ -1351,7 +1351,7 @@ slab meat orc~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 4 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 slab meat orc~
 &+LAn unidentifiable slab of meat that was once an orc.
@@ -1363,7 +1363,7 @@ table~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table~
 &+WNine feet long and four feet wide.  This long butchers table is covered with
@@ -1376,7 +1376,7 @@ knife~
 ~
 5 16 3 0 7 0 4199424 24577 64 87572507 0
 1 2 5 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 knife~
 &+WThis long cleaver is covered with &+rblood&+W, it has recently been used.
@@ -1390,7 +1390,7 @@ saddle reeds~
 ~
 9 42 4 6 7 0 8192 16777217 64 4227727360 114687
 7 19 126 4 0 0 0 0
-7 1 100
+7 1 100 100
 E
 saddle reeds~
 &+gLooping &+Greeds&+g and intricate designs form the edges of this saddle.  The
@@ -1409,7 +1409,7 @@ a set of &+ggardening&+w shears&N~
 ~
 5 16 4 4 7 0 8 24577 0 0 0
 2 2 2 11 0 0 0 0
-4 1 100
+4 1 100 100
 E
 shears~
 &+gA simple gardners tool.
@@ -1425,7 +1425,7 @@ splinter wood redwood~
 ~
 5 6 2 1 7 0 74752 24577 0 94208 0
 2 3 1 11 0 0 0 0
-1 1 100
+1 1 100 100
 E
 splinter wood redwood~
 &+LA foot long splinter of &+yred&+rwoo&+yd &+Lhas been fasioned into a
@@ -1438,7 +1438,7 @@ gloves thin cloth~
 ~
 9 3 2 0 7 0 99328 16513 64 77824 0
 2 7 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 gloves thin cloth~
 &+LAlmost whisper thin and quite comfortable, these feel right at home on
@@ -1455,7 +1455,7 @@ key black small~
 ~
 18 11 2 1 7 0 69640 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key black small~
 &+LA very small black key.
@@ -1467,7 +1467,7 @@ ring crystal magical tiny hoop~
 ~
 9 8 3 0 7 0 12288 3 66 0 0
 2 1 0 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ring crystal magical tiny hoop~
 &+WG&+Bl&+Go&+Yw&+Mi&+Bn&+Rg w&+Gi&+Wth p&+Bo&+Mw&+Ye&+Rr,&+G t&+Yh&+Bi&+Rs&+W r&+Bi&+Yng&+M se&+Re&+Bm&+Gs to &+Bm&+Yak&+We y&+Mou fe&+Gel &+Mhe&+Cal&+Rth&+Wi&+Ger &+Mtha&+Cn &+Wyou
@@ -1482,7 +1482,7 @@ hay ball~
 ~
 19 48 4 20 7 0 0 0 0 0 0
 10 0 0 0 0 0 0 0
-20 0 100
+20 0 100 100
 E
 hay ball~
 &+YIt appears to be hay.
@@ -1494,7 +1494,7 @@ bookshelf shelf~
 ~
 15 6 3 40 11 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-20 1 100
+20 1 100 100
 E
 bookshelf shelf~
 &+yEquisitely designed a red&+rwoo&+yd bookshelf was made over many weeks by a
@@ -1507,7 +1507,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 &+RThe &+BOgre &+Rin the &+BH&+Ra&+Bt&+R.
@@ -1519,7 +1519,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 &+GGreen Eggs &+Yand &+LOrc &+ghas caused this war!
@@ -1568,7 +1568,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 &+gOne &+Wc&+Lo&+Ww&+g, two &+Wc&+Lo&+Ww&+g, &+Rred &+Wc&+Lo&+Ww&+g, &+Bblue &+Wc&+Lo&+Ww&+g.
@@ -1580,7 +1580,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 &+yThree blind &+GGi&+Wth's
@@ -1603,7 +1603,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 &+gThe &+mdrow &+gwho stole ch&+rrist&+gmas.&N
@@ -1615,7 +1615,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+cThis book appears to contain many recipes, each seems to include &+Lorc.&N
@@ -1627,7 +1627,7 @@ bookshelf shelf~
 ~
 15 6 3 200 7 0 0 0 0 0 0
 150 0 0 250 0 0 0 0
-200 1 100
+200 1 100 100
 E
 bookshelf shelf~
 &+yEquisitely designed a large red&+rwoo&+yd bookshelf was made over many
@@ -1640,7 +1640,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+rWar &+win &+cWar.
@@ -1652,7 +1652,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+ySwiss Family &+GGith&+Wyanki
@@ -1664,7 +1664,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+YThe Wizard of &+LOrc
@@ -1676,7 +1676,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+CThe Big, &+gThe Bad, &+Rand the Ugly:&+B An ogre's biography
@@ -1688,7 +1688,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+bBodyslamming Made Easy
@@ -1700,7 +1700,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 Charging Techniques: A &+rMino&+Ltaur &+wInstructional Guide
@@ -1712,7 +1712,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+MWhen you fall you will hit head on floor.
@@ -1730,7 +1730,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+yThe do it yourself woodcarvers guide.
@@ -1742,7 +1742,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+G1001 Uses for Dead Things
@@ -1754,7 +1754,7 @@ book~
 ~
 13 28 3 0 7 0 8200 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 book~
 &+CThe &+yWoka &+LBean &+CCook Book
@@ -1767,7 +1767,7 @@ yarn string~
 ~
 9 3 3 0 7 0 12296 2049 0 0 0
 1 10 0 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 yarn string~
 &+GCol&+Bor&+Ge&+Bd ya&+Grn
@@ -1781,7 +1781,7 @@ twig~
 ~
 3 6 3 0 7 0 12296 16385 0 0 0
 3 1 1 12 0 0 0 0
-0 1 100
+0 1 100 100
 E
 twig~
 &+yA magically enshrouded twig.
@@ -1793,7 +1793,7 @@ cloth shred ragged~
 ~
 9 3 3 0 7 0 12296 17 0 0 0
 1 4 16 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 cloth shred ragged~
 &+RA ragg&+yed pie&+Rce of cloth
@@ -1805,7 +1805,7 @@ cloth shred ragged~
 ~
 9 3 3 0 7 0 12296 17 0 0 0
 1 4 16 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 cloth shred ragged~
 &+yA rag&+Rged pie&+yce of cloth

@@ -5,7 +5,7 @@ tree palm~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tree palm~
 &+yThe type of palm tree is a regular sight out in the &+YSavannah&+y, it
@@ -19,7 +19,7 @@ pool water~
 ~
 17 40 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
 &+BThis a fair sized pool, kept fresh from runoff from the mountains.
@@ -33,7 +33,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22022 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis small hole, just big enough to squeeze through, leads down
@@ -47,7 +47,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22013 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis is nothing more than a small hole leading up into the &+YSavannah.&n
@@ -59,7 +59,7 @@ fire brazier~
 ~
 8 15 3 0 7 0 1 1 0 0 0
 0 0 0 0 0 0 0 0
-0 800 100
+0 800 100 100
 E
 fire brazier~
 &+rThis tall &+Rbrazier&+r acts as a sort of communication device between
@@ -73,7 +73,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22045 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LPeering into this pit prooves useless as there is nothing visible
@@ -87,7 +87,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22043 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis hole leads back up to the mountain top.  Hardley even a sliver
@@ -100,7 +100,7 @@ sign large~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign large~
 
@@ -120,7 +120,7 @@ camp fire campfire~
 ~
 15 15 3 0 7 0 262144 0 0 0 0
 10000 5 0 10000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 camp fire campfire~
 &+yThis camp&+rfire&+y has been set by a group of adventurers.  They are
@@ -133,7 +133,7 @@ prybar~
 ~
 18 15 3 0 7 0 8388608 24577 0 0 0
 0 0 0 0 0 0 0 0
-0 340 100
+0 340 100 100
 E
 prybar~
 &+LThis prybar is made from solid iron, it looks like it could easily
@@ -146,7 +146,7 @@ fiery portal~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 40787 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fiery portal~
 &+rThose peering inside the portal can see a distant plane, far from
@@ -160,7 +160,7 @@ huge ant hill anthill~
 ~
 15 11 3 0 7 0 33554432 0 0 0 0
 10000 5 0 10000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge ant hill anthill~
 &+yThis &+Lanthill&+y is swarming with millions of &+Lants&+y, constantly moving
@@ -173,7 +173,7 @@ sign large~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign large~
 
@@ -191,7 +191,7 @@ large coconut~
 ~
 8 4 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 230 100
+0 230 100 100
 E
 large coconut~
 &+yThis coconut has fallen from a tree somewhere.  The outside of
@@ -204,7 +204,7 @@ small coconut~
 ~
 8 4 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 331 100
+0 331 100 100
 E
 large coconut~
 &+yThis coconut has fallen from a tree somewhere.  It occurs to you as
@@ -217,7 +217,7 @@ broken coconut~
 ~
 8 4 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 120 100
+0 120 100 100
 E
 large coconut~
 &+yThis coconut has fallen from a tree somewhere.  The outside of
@@ -230,7 +230,7 @@ bushel bananas~
 ~
 19 48 3 0 7 0 0 1 0 0 0
 2 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 bushel bananas~
 &+YThere appears to be several bananas on this bushel.  Would make a
@@ -243,7 +243,7 @@ banana~
 ~
 19 48 3 0 7 0 0 1 0 0 0
 1 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 banana~
 &+YBananas are fairly tasty, if you like that sort of thing.  Monkeys
@@ -256,7 +256,7 @@ cosmic glow rod~
 ~
 15 7 3 0 13 0 1310720 8413185 64 0 0
 100 5 0 400 0 0 0 0
-0 38000 100
+0 38000 100 100
 E
 cosmic glow rod~
 &+wThis rod has obviously been enchanted by the art of &+Wcosmocy&+w.  Few
@@ -271,7 +271,7 @@ purple claymore~
 ~
 5 15 3 0 7 0 1024 8193 64 87572483 572652
 5 4 4 3 0 0 0 0
-0 3400 100
+0 3400 100 100
 E
 purple claymore~
 &+cThis weapon is about four feet in length.  Its a broadsword that
@@ -290,7 +290,7 @@ cloak storm winds~
 ~
 9 15 3 0 7 0 0 1025 0 0 0
 11 0 0 2 0 0 0 0
-0 9565 100
+0 9565 100 100
 E
 cloak desert wind~
 &+yThis &+Ccloak&+y has &+Ywemic&+y tribal designs sewn onto it.  It is incredibly
@@ -307,7 +307,7 @@ gauntlets overfiend~
 ~
 9 15 3 0 3 0 1024 129 0 85487633 0
 4 0 0 3 0 0 0 0
-0 1 100 536870912 0 0 0
+0 1 100 100 536870912 0 0 0
 E
 gauntlets overfiend~
 &+LThis gauntlets are quite large, as they once fit upon the hands of
@@ -326,7 +326,7 @@ cracked gargoyle egg shell~
 ~
 8 45 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 cracked gargoyle egg shell~
 &+cThis was once a fair-sized gargoyle &+Wegg&+c.  Now it is broken and doesn't
@@ -340,7 +340,7 @@ strands leather~
 ~
 8 13 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 strands leather~
 &+yThese are some simple leather strands that could have possibly
@@ -354,7 +354,7 @@ bone key~
 ~
 18 10 3 0 7 0 0 16385 0 0 0
 0 20 0 0 0 0 0 0
-0 908 100
+0 908 100 100
 E
 bone key~
 &+WThis key doesn't appear to be all that well made, as was probably
@@ -367,7 +367,7 @@ femur bone~
 ~
 8 10 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 7881 100
+0 7881 100 100
 E
 femur bone~
 &+WThis appears to femur bone from what once might have been human, it
@@ -381,7 +381,7 @@ nest~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 10000 5 0 10000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 nest~
 &+yThis nest is nearly the size of the entire room.  Several young
@@ -394,7 +394,7 @@ scroll~
 ~
 16 15 3 0 7 0 528384 1 0 0 0
 0 0 0 0 0 0 0 0
-0 6776 100
+0 6776 100 100
 E
 scroll~
 The scroll's seal has been broken.  It appears to have the crest of
@@ -438,7 +438,7 @@ coconut shoulder guard~
 ~
 9 4 3 0 7 0 0 1025 0 4165209604 0
 12 0 0 4 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 coconut shoulder guard~
 &+yThis is a shoulder protector that has been put together using
@@ -456,7 +456,7 @@ medallion gaia~
 ~
 9 30 3 0 7 0 5121 5 0 37882788 0
 6 0 0 3 0 0 0 0
-0 22301 100
+0 22301 100 100
 E
 medallion gaia~
 &+gThis medallion pulsates with energy infused by the gaia tree.  It
@@ -473,7 +473,7 @@ extinction silver dirk~
 ~
 5 22 3 0 11 0 1024 8193 65 49152 0
 2 2 8 11 0 0 0 0
-0 33882 100 16 8 0 0
+0 33882 100 100 16 8 0 0
 E
 extinction silver dirk~
 &+LThis twelve inch &+Cdirk&+L is basically just a sharp, pointed blade
@@ -488,7 +488,7 @@ bronze ring~
 ~
 9 20 3 0 7 0 16385 3 0 0 0
 6 0 0 3 0 0 0 0
-0 8887 100 0 0 0 16777216
+0 8887 100 100 0 0 0 16777216
 E
 bronze ring~
 &+wThis ring seems extremely old.  The &+ybronze&+w colour has all but
@@ -507,7 +507,7 @@ puredark pure dark mace~
 ~
 5 15 3 0 7 0 17409 8193 64 35864995 0
 7 4 4 0 0 323 50 25
-0 33781 100 65536 0 0 262144
+0 33781 100 100 65536 0 0 262144
 E
 puredark pure dark mace~
 &+LPureDark&+w is the legendary weapon of &+rAbaddon&+w, &+rSatan's&+w infamous general.
@@ -536,7 +536,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22089 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis small hole, just big enough to squeeze through, leads down
@@ -550,7 +550,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22066 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis small hole, just big enough to squeeze through, leads back
@@ -563,7 +563,7 @@ coins pile~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 50 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 coins pile~
 &+WA pile of platnium coins.&n
@@ -575,7 +575,7 @@ golden vest weave~
 ~
 9 15 3 0 7 0 16385 9 0 0 0
 19 0 0 4 0 0 0 0
-0 8989 100
+0 8989 100 100
 E
 golden vest weave~
 &+YThis vest seems to have been &+Yw&+yo&+Yv&+ye&+Yn from strands of gold.  Even
@@ -593,7 +593,7 @@ silver pair arm~
 ~
 9 15 3 0 7 0 17408 257 1 8515652 0
 11 0 0 3 0 0 0 0
-0 10777 100 0 2 0 0
+0 10777 100 100 0 2 0 0
 E
 silver pair arm~
 &+wThese arm protectors are simply a solid sheet of &+Csilver&+w molded to
@@ -609,7 +609,7 @@ badge hate~
 ~
 11 1 3 0 7 0 8409088 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 badge hate~
 &+LThis badge bears the symbol of &+YHate&+L.&n
@@ -621,7 +621,7 @@ badge pain~
 ~
 11 1 3 0 7 0 8409088 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 badge pain~
 &+LThis badge bears the symbol of &+WPain&+L.&n
@@ -633,7 +633,7 @@ badge fear~
 ~
 11 1 3 0 7 0 8409088 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 badge fear~
 &+LThis badge bears the symbol of &+bFear&+L.&n
@@ -645,7 +645,7 @@ badge rage~
 ~
 11 1 3 0 7 0 8409088 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 badge rage~
 &+LThis badge bears the symbol of &+rRage&+L.&n
@@ -657,7 +657,7 @@ key vault~
 ~
 18 15 3 0 7 0 8404992 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key vault~
 &+LThis pitch black key is used for opening the &+Ytreasure&+L room inside
@@ -670,7 +670,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22120 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis small hole, just big enough to squeeze through, leads down
@@ -684,7 +684,7 @@ hole pit~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22019 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole pit~
 &+LThis small hole in the cavern wall leads back up to the &+YSavannah&n
@@ -697,7 +697,7 @@ scepter snakes~
 ~
 5 2 3 0 7 0 0 8193 0 0 0
 12 2 8 7 0 0 0 0
-0 100 100
+0 100 100 100
 E
 scepter snakes~
 &+yThis scepter is long and scaly and almost seems alive.  Despite
@@ -715,7 +715,7 @@ remains roc~
 ~
 4 10 3 0 7 0 4096 16385 0 0 0
 1 1 1 1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 remains roc~
 &+yThese remains consist of a bunch of large feathers and a very long
@@ -728,7 +728,7 @@ strands leather~
 ~
 8 13 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 strands leather~
 &+yThese are some simple leather strands that could have possibly
@@ -743,7 +743,7 @@ longbow bow roc bone~
 ~
 6 15 3 0 10 0 0 8413185 0 0 0
 105 60 0 1 0 0 0 0
-0 21233 100
+0 21233 100 100
 E
 longbow bow roc bone~
 &+yThis longbow has been crafted from the &+Wwing bone&+y of a large &+Wroc&+y.
@@ -761,7 +761,7 @@ pitch black body cloak~
 ~
 9 1 3 0 11 0 1025 9 64 46305188 0
 12 0 0 1 0 0 0 0
-0 40099 100
+0 40099 100 100
 E
 pitch black body cloak~
 &+LThis black cloak is extremely light, almost to the point of having
@@ -778,7 +778,7 @@ tower shield~
 ~
 37 27 3 0 7 0 16385 513 64 0 0
 1 3 5 168 4 0 0 0
-20 29898 100
+20 29898 100 100
 E
 tower shield~
 &+WThis shield has been crafted from almost pure crystal.  It is quite
@@ -795,7 +795,7 @@ infinity collar~
 ~
 15 1 3 0 12 0 16384 5 64 4227728384 66066
 300 5 0 300 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 infinity collar~
 &+LThis collar is almost dripping with the powers of &+Wcosmocy&+L.  Very
@@ -814,7 +814,7 @@ illithid skin stretched~
 ~
 9 15 3 0 2 0 4096 262145 64 0 0
 5 0 0 2 0 0 0 0
-0 2997 100
+0 2997 100 100
 E
 illithid skin stretched~
 &+MThis is the remains of a dead illithid. It is rather slimy, but if
@@ -832,7 +832,7 @@ imp skull cap~
 ~
 9 10 3 0 7 0 33571840 17 0 12713748 82690
 10 0 0 3 0 0 0 0
-0 8998 100 65536 4232 0 0
+0 8998 100 100 65536 4232 0 0
 E
 imp skull cap~
 &+LThis cap has been fashioned from the &+Wskull&+L of an &+rimp&+L.  Unfortuately
@@ -849,7 +849,7 @@ satyr horns~
 ~
 9 10 3 0 7 0 16384 134217729 64 0 0
 7 0 0 2 0 0 0 0
-0 7287 100
+0 7287 100 100
 E
 satyr horns~
 &+LThese &+Whorns&+L once belonged to a satyr.  The creature, long dead,
@@ -868,7 +868,7 @@ flute satyr instrument~
 ~
 32 36 3 0 7 0 17408 16385 64 8499232 0
 184 48 0 20 0 0 0 0
-0 552 100
+0 552 100 100
 E
 flute satyr~
 &+LThis is a fairly long flute, crafted with some odd designes etched
@@ -886,7 +886,7 @@ angelic sandals~
 ~
 9 1 3 0 7 0 16384 65 2 0 0
 6 0 0 3 0 0 0 0
-0 20889 100 134217728 0 0 0
+0 20889 100 100 134217728 0 0 0
 E
 angelic sandals~
 &+WThese sandals appear to be from the &+CHome&+W of the &+CDivine&+W.  They must
@@ -904,7 +904,7 @@ dangling chain crucifix~
 ~
 9 15 3 0 7 0 16385 524289 2 0 0
 4 0 0 3 0 0 0 0
-0 1223 100 8256 0 0 0
+0 1223 100 100 8256 0 0 0
 E
 dangling chain crucifix~
 &+WThis is nothing more then a simple crucifix hanging from a &+wsteel chain&+W,
@@ -920,7 +920,7 @@ elephant tusk~
 ~
 5 10 3 0 7 0 17408 8193 0 86359642 0
 13 3 4 11 0 0 0 0
-0 9890 100
+0 9890 100 100
 E
 elephant tusk~
 &+WThis is the long tusk from a long deceased &+welephant&+W.  It seems to
@@ -939,7 +939,7 @@ scaly potion~
 ~
 10 40 3 0 7 0 4096 8404993 0 0 0
 20 28 28 -1 0 0 0 0
-0 1 100
+0 1 100 100
 E
 scaly potion~
 &+yThe liquid inside this scaly potion looks and smells awful.  It
@@ -952,7 +952,7 @@ drow longsword long sword~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 4 2 3 0 0 0 0
-0 8882 100
+0 8882 100 100
 E
 drow longsword long sword~
 &+mThis sword is the regular weapon of the drow soldiers within the
@@ -970,7 +970,7 @@ coconut kilt~
 ~
 9 4 3 0 7 0 0 33 0 0 0
 9 0 0 4 0 0 0 0
-0 8989 100
+0 8989 100 100
 E
 coconut kilt~
 &+yThis kilt has been fashioned by the shells of several c&+Wo&+yc&+Wo&+ynuts.&n
@@ -987,7 +987,7 @@ coconut belt~
 ~
 9 4 3 0 7 0 0 2049 0 0 0
 7 0 0 4 0 0 0 0
-0 7872 100
+0 7872 100 100
 E
 coconut belt~
 &+yThis belt has been constructed by a string of c&+Wo&+yc&+Wo&+ynut shells. Though
@@ -1002,7 +1002,7 @@ masters cloak~
 ~
 9 3 3 0 7 0 16385 1025 0 0 0
 12 0 0 3 0 0 0 0
-0 12888 100 33556480 0 0 0
+0 12888 100 100 33556480 0 0 0
 E
 masters cloak~
 &+WThis is the cloak of the fabled &+RMasters&+W, the legendary group who
@@ -1020,7 +1020,7 @@ earthen vial~
 ~
 10 40 3 0 7 0 0 8404993 0 0 0
 20 36 36 36 0 0 0 0
-0 1 100
+0 1 100 100
 E
 earthen vial~
 &+yThis vial is dark brown, the colour of soil.  It doesn't appear to
@@ -1033,7 +1033,7 @@ silvery potion~
 ~
 10 40 3 0 7 0 0 8404993 0 0 0
 20 28 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 silvery potion~
 &+cThis potion is full of a silvery coloured liquid.  It has no smell.&n
@@ -1045,7 +1045,7 @@ leg scale plates dragon~
 ~
 9 35 3 0 7 0 0 33 64 0 0
 10 0 0 4 0 0 0 0
-0 7898 100
+0 7898 100 100
 E
 leg scale plates dragon~
 &+gThese &+Lleg&+g plates have been fashioned from the scales of a large
@@ -1062,7 +1062,7 @@ djinn totem~
 ~
 34 22 3 0 7 0 16384 16385 0 0 0
 29 0 0 0 0 0 0 0
-0 8891 100
+0 8891 100 100
 E
 djinn totem~
 &+cThis totem once belonged to an ancient djinn. It is quite mystical
@@ -1080,7 +1080,7 @@ ring overfiend~
 ~
 9 2 3 0 7 0 16384 3 0 0 0
 3 0 0 3 0 0 0 0
-0 2988 100
+0 2988 100 100
 E
 ring overfiend~
 &+LThis ring is a twisted, hideous lump of blackened flesh that has
@@ -1098,7 +1098,7 @@ black veil~
 ~
 9 3 3 0 7 0 0 131073 0 0 0
 7 0 0 1 0 0 0 0
-0 797 100
+0 797 100 100
 E
 black veil~
 &+LThis is a simple black veil.  It covers the eyes neatly and helps
@@ -1113,7 +1113,7 @@ icecrown crown icy unique~
 ~
 9 27 3 0 15 0 268436481 17 64 83902489 0
 6 0 0 0 0 0 0 0
-0 32033 100
+0 32033 100 100
 E
 frozen crown ice~
 &+cThis crown pulsates with the evil magic of undeath.&n
@@ -1127,4 +1127,4 @@ splintered angel wing~
 ~
 8 2 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100

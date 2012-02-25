@@ -5,7 +5,7 @@ gallows rotting wooden~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 100 100
+1500 100 100 100
 E
 gallows rotting wooden~
 &+L   This rotting structure is where justice is dispensed in the castle.  All&n
@@ -21,7 +21,7 @@ grandfather clock~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 100000 100
+1500 100000 100 100
 E
 grandfather clock~
 &+W   This incredibly detailed creation is the product of months of work by&n
@@ -37,7 +37,7 @@ large oaken desk~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 10000 100
+1500 10000 100 100
 E
 large oaken desk~
 &+Y   This impressively crafted desk is where the scrivener does all of his&n
@@ -52,7 +52,7 @@ bar dark oaken~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 10000 100
+1500 10000 100 100
 E
 dark oaken pub~
 &+L   This fine work is used as a serving area for the people coming into the&n
@@ -67,7 +67,7 @@ large iron oven~
 ~
 15 15 3 1500 7 0 0 0 0 1 0
 100 5 0 100 0 0 0 0
-1500 10000 100
+1500 10000 100 100
 E
 large iron oven~
 &+y   This oven is used by the baker in his daily routine as he bakes the bread&n
@@ -81,7 +81,7 @@ large steel anvil~
 ~
 12 15 3 2500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-2500 10000 100
+2500 10000 100 100
 E
 large steel anvil~
 &+L   This large anvil is constructed of the very finest steel.  Its flat&n
@@ -96,7 +96,7 @@ straw target~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 10000 100
+1500 10000 100 100
 E
 straw target~
 &+Y   This heavy target has been mounted on the far wall of the shop, intended&n
@@ -111,7 +111,7 @@ dye filled vats dye-filled~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 0 100
+1500 0 100 100
 E
 dye filled vats dye-filled~
 &+b   These wooden tubs are filled with various colours of dye.  Used by the&n
@@ -126,7 +126,7 @@ large loom~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 10000 100
+1500 10000 100 100
 E
 large loom~
 &+C   Used for weaving yarn into cloth, this loom is extremely large.  Designed&n
@@ -140,7 +140,7 @@ heavy ballista~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 15000 100
+1500 15000 100 100
 E
 heavy ballista~
 &+W   This heavy machine resembles nothing so much as a giant crossbow.  Its&n
@@ -156,7 +156,7 @@ solid oaken mangonel~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 30000 100
+1500 30000 100 100
 E
 solid oaken mangonel~
 &+W   One of many variations of catapult, this device uses a counterweight to&n
@@ -171,7 +171,7 @@ cauldron boiling oil~
 ~
 17 15 3 1500 7 0 0 0 0 1 0
 1000 1000 7 1 0 0 0 0
-1500 15000 100
+1500 15000 100 100
 E
 cauldron boiling oil~
 &+W   This huge vat of oil is is kept boiling by a small flame underneath,&n
@@ -187,7 +187,7 @@ fountain polished ivory~
 ~
 17 15 3 1500 7 0 0 0 0 1 0
 -1 -1 17 0 0 0 0 0
-1500 25000 100
+1500 25000 100 100
 E
 fountain polished ivory~
 &+W   This magnificent fountain splashes water about in a brilliant display&n
@@ -202,7 +202,7 @@ red blue dartboard dart board~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 10000 100
+1500 10000 100 100
 E
 red blue dartboard dart board~
 &+W   Divided into twelve equal slices this board is used for several commonly&n
@@ -217,7 +217,7 @@ finely crafted finely_crafted ebony desk~
 ~
 15 15 3 1500 7 0 0 0 0 1 0
 300 5 0 300 0 0 0 0
-1500 45000 100
+1500 45000 100 100
 E
 finely crafted finely_crafted ebony desk~
 &+L   This large desk is made of the finest ebony, a wood nearly impossible to&n
@@ -233,7 +233,7 @@ telescope expensive~
 ~
 12 15 3 1500 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1500 100000 100
+1500 100000 100 100
 E
 telescope expensive~
 &+b   This large instrument is used for a dual purpose.  During the night it is&n
@@ -247,7 +247,7 @@ fleece sheep~
 ~
 12 15 3 5 7 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 fleece sheep~
 &+W   Shorn from a fine wool sheep, this fleece is of the highest quality wool.&n
@@ -259,7 +259,7 @@ spool fine white yarn~
 ~
 12 15 3 3 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 spool fine white yarn~
 &+W   This spool contains fine white yarn, woven from sheeps fleece.&n
@@ -271,7 +271,7 @@ spool crimson yarn~
 ~
 12 15 3 3 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 spool crimson yarn~
 &+r   This wool has been dyed crimson red.&n
@@ -283,7 +283,7 @@ bolt crimson fabric~
 ~
 12 15 3 3 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 bolt crimson fabric~
 &+r   This fabric has recently been woven, and it is deep crimson.&n
@@ -295,7 +295,7 @@ large crimson banner~
 ~
 8 15 3 5 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 large crimson banner~
 &+r   Designed to be hung from a flagpole, this banner is riveted on one end.&n
@@ -308,7 +308,7 @@ velvet-lined velvet pair lizard lizard-skin slippers~
 ~
 9 15 3 2 7 0 0 65 0 0 0
 2 6 1 1 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 velvet-lined velvet pair lizard lizard-skin slippers~
 &+g   This pair of slippers, while quite revolting in appearance, are actually&n
@@ -323,7 +323,7 @@ assessment paper note~
 ~
 12 15 3 1 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 assessment paper note~
 &+w   The paper is scrawled with various notes by the Duke himself, most of&n
@@ -337,7 +337,7 @@ deep blue braid rank~
 ~
 9 15 3 1 7 0 0 4097 0 0 0
 5 11 1 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 deep blue braid rank~
 &+b   This braid of rank is only used in one place, a neighboring shire&n
@@ -355,7 +355,7 @@ hastily scribbled note~
 ~
 12 15 3 1 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 hastily scribbled note~
 &+W        My Liege,&n
@@ -381,7 +381,7 @@ signet ring delwyn~
 ~
 9 15 3 1 7 0 0 3 0 0 0
 2 1 0 1 0 0 0 0
-1 45000 100
+1 45000 100 100
 E
 signet ring delwyn~
 &+b   This is the signet ring of Duke Delwyn.  It is used for sealing letters&n
@@ -399,7 +399,7 @@ carved ivory knight~
 ~
 12 15 3 1 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 carved ivory knight~
 &+W   This small ivory piece is from a finely carved chess set.&n
@@ -411,7 +411,7 @@ spit shined spit-shined pair military boots~
 ~
 9 15 3 3 7 0 1024 65 0 87052379 0
 5 6 1 1 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 spit shined spit-shined pair military boots~
 &+L   These fine boots are not of standard issue, at least for enlisted men.&n
@@ -429,7 +429,7 @@ small iron bell~
 ~
 12 15 3 5 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 small iron bell~
 &+L   A small iron bell, built delicate as if it were to be used in some&n
@@ -442,7 +442,7 @@ large iron cog~
 ~
 13 15 3 5 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 large iron cog~
 &+L   This large iron cog is useless to someone not trained in the intricacies&n
@@ -455,7 +455,7 @@ spike knuckled spike-knuckled blade~
 ~
 5 15 3 2 7 0 0 8193 1 125470 0
 2 3 3 11 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 spike knuckled spike-knuckled trench knife~
 &+W   This trench knife is designed for close quarters fighting.  The spikes&n
@@ -473,7 +473,7 @@ pair cotton weave cotton-weave greaves~
 ~
 9 15 3 2 7 0 0 33 0 0 0
 4 5 1 1 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 pair leather greeves bearing mark delwyn~
 &+y   These leather greeves are custom-made for the archers in the castle&n
@@ -489,7 +489,7 @@ tunic woven hardened reed~
 ~
 9 15 3 5 7 0 0 9 0 0 0
 8 3 1 1 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 heavy leather tunic bearing mark delwyn~
 &+y   This leather tunic bears the mark of delwyn, having been created for the&n
@@ -505,7 +505,7 @@ sleeves pleated seal skin seal-skin~
 ~
 9 15 3 3 7 0 0 257 0 0 0
 4 8 1 1 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 thick leather sleeves bearing mark delwyn~
 &+y   These sleeves are specially created for the guard of the delwyn castle.&n
@@ -521,7 +521,7 @@ pair ostriche hide dark ostriche-hide boots~
 ~
 9 15 3 2 7 0 0 65 0 0 0
 5 6 1 1 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 pair ostriche hide dark ostriche-hide boots~
 &+b   These boots are sewn from the skin of a deceased ostrich.  The marks&n
@@ -537,7 +537,7 @@ pair thick hydra hide hydra-hide gloves~
 ~
 9 15 3 2 7 0 0 129 0 0 0
 8 8 1 1 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 pair thick hydra hide hydra-hide gloves~
 &+y   Stitched together from the skin of a deceased hydra, these gloves are&n
@@ -555,7 +555,7 @@ finely woven finely-woven mesh eyepatch~
 ~
 9 15 3 1 7 0 0 131073 0 0 0
 3 12 1 1 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 finely woven finely-woven mesh eyepatch~
 &+c   Woven of fine wire strands, this eyepatch is supple and easy to move.&n
@@ -574,7 +574,7 @@ pleated red yellow kilt~
 ~
 9 15 3 2 7 0 0 33 0 0 0
 5 5 1 1 0 0 0 0
-2 100000 100
+2 100000 100 100
 E
 pleated red yellow kilt~
 &+y   This finely crafted kilt is of the tartan of a far-off hill clan.  The&n
@@ -590,7 +590,7 @@ heavy oaken shillelagh club~
 ~
 5 15 3 3 7 0 0 8193 0 0 0
 10 1 8 7 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 heavy oaken shillelagh club~
 &+y   This heavy oaken club is used by the local constabulary to enforce the&n
@@ -607,7 +607,7 @@ helm spiked rhemoraz hide rhemoraz-hide~
 ~
 9 15 3 5 7 0 1024 17 0 87572539 0
 15 4 1 3 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 helm spiked rhemoraz hide rhemoraz-hide~
 &+w   Made from the flesh of the great polar worms, this helm looks to provide&n
@@ -625,7 +625,7 @@ massive broad-bladed claymore broad bladed~
 ~
 5 15 3 5 7 0 4195328 8193 0 83902489 0
 13 4 4 2 0 0 0 0
-4 100000 100
+4 100000 100 100
 E
 massive broad-bladed claymore broad bladed~
 &+W   This is the fabled weapon of the great Duke Delwyn.  Reputed to have been&n

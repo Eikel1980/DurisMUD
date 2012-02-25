@@ -5,7 +5,7 @@ blanket~
 ~
 9 15 3 0 7 0 0 16778241 0 0 0
 10 0 0 3 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 blanket~
 &+gThis fine blanket was a gift to &+GTrent&+Lloss &+gfrom the &+Gdruids &+gof the temple&N
@@ -24,7 +24,7 @@ ring vines knot~
 ~
 9 15 3 0 7 0 0 34078723 0 0 0
 1 0 0 3 0 0 0 0
-0 500 100
+0 500 100 100
 E
 ring vines knot~
 &+gThis ring is composed of single length of vine that has been woven into a&N
@@ -44,7 +44,7 @@ heart lump wood~
 ~
 13 15 3 0 7 0 8388616 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 heart pine~
 &+LThis knot of wood it blacked and charred and seems to have been warped&N
@@ -58,7 +58,7 @@ blob mind~
 ~
 13 15 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 blob mind~
 &+LThis blob of grey matter has taken on more of a purplish tinge as some&N
@@ -73,7 +73,7 @@ tome book~
 ~
 33 15 3 0 7 0 262144 8388609 0 0 0
 0 0 150 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 tome book~
 &+gThis book was en&+Gch&+Yan&+Gte&+gd by the druids of the &+WTemple of the &+YSun&+g.  The mage&N
@@ -87,7 +87,7 @@ ring~
 ~
 9 15 3 0 7 0 0 33554435 64 0 0
 5 0 0 5 0 0 0 0
-3 1212 100 73728 0 0 0
+3 1212 100 100 73728 0 0 0
 E
 ring stone~
 &+LThis ring has been hardened to an rigid stone that has taken the&N
@@ -105,7 +105,7 @@ rock~
 ~
 13 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rock~
 &+LThis rock has some magical properties that make it almost hum as you are&N
@@ -119,7 +119,7 @@ lyre instrument~
 ~
 32 15 3 0 7 0 0 16385 0 0 0
 185 50 0 1 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 lyre instrument~
 &+YThis well crafted instrument has been endowed with magical spells that allow&N
@@ -136,7 +136,7 @@ sunbeam beam~
 ~
 13 15 3 0 7 0 8650760 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sunbeam beam~
 &+YA glowing beam of light has been captured and bound into a glowing shard.&N
@@ -152,7 +152,7 @@ ring sun~
 ~
 9 15 3 0 7 0 173056 3 0 33685920 0
 2 0 0 3 0 0 0 0
-5 1212 100 536870912 0 0 0
+5 1212 100 100 536870912 0 0 0
 E
 mace~
 &+YThis mace glows with a &+Rbur&+rni&+Rng f&+rur&+Ry &+Ythat can only be contained when the sun&N
@@ -170,7 +170,7 @@ necklace~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 necklace~
 &+gThis necklace is a collection of the evil trolls that have been slain by a&N
@@ -188,7 +188,7 @@ belt~
 ~
 9 15 3 0 7 0 0 2049 64 0 0
 10 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 belt~
 &+gThis belt is the color of the elven forest and seems to blend in and provide&N
@@ -205,7 +205,7 @@ hide belt~
 ~
 9 15 3 0 7 0 0 2049 0 0 0
 10 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 hide belt~
 &+yThe hide of a slain &+Lcent&+gaur &+yhas been tanned and hardened into a fine belt&N
@@ -223,7 +223,7 @@ pants~
 ~
 9 15 3 0 7 0 0 33 0 0 0
 6 0 0 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 pants~
 &+rThese pants have been well paded and enchanted with special protections for&N
@@ -243,7 +243,7 @@ blanket~
 ~
 9 15 3 0 7 0 0 16778241 0 0 0
 10 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 blanket~
 &+wFine feathers cover this blanket and make it seem to hover slightly above the&N
@@ -261,7 +261,7 @@ mask ritual shaman~
 ~
 9 15 3 0 7 0 0 262145 0 0 0
 10 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 mask ritual shaman~
 &+bA horrid scowl covers this mask which appears to be used in important shaman&N
@@ -280,7 +280,7 @@ ring brass~
 ~
 9 15 3 0 7 0 1 3 0 0 0
 2 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 ring brass~
 &+rA glowing &+ybrass &+rring has been tempered in a searing fire and was given as&N
@@ -298,7 +298,7 @@ bag~
 ~
 15 15 3 0 7 0 0 8388609 0 0 0
 100 0 0 100 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 bag~
 &+YThis carrying bag is a useful tool for the travelling singer due to its&N
@@ -311,7 +311,7 @@ tunic~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 20 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 tunic~
 &+rA large stain has soaked into this &+bdark &+Bblue &+btunic &+rmaking it appear to be&N
@@ -330,7 +330,7 @@ boots stained purple~
 ~
 9 15 3 0 7 0 0 65 0 0 0
 10 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 boots stained purple~
 &+bThese boots are used by workers when they are crushing grapes.  They have&N
@@ -348,7 +348,7 @@ key~
 ~
 18 15 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 &+gVines cover the handle of the key and hang to the ground.&N
@@ -360,7 +360,7 @@ sword slaying~
 ~
 5 15 3 0 7 0 4194304 8193 0 0 0
 13 3 5 3 1 0 0 0
-10 10000 100
+10 10000 100 100
 E
 sword slaying~
 &+wA faint humming can be heard from this sword. It seems to have been possessed&N
@@ -378,7 +378,7 @@ earring gold~
 ~
 9 15 3 0 7 0 0 524289 64 0 0
 5 0 0 3 0 0 0 0
-1 1121 100
+1 1121 100 100
 E
 earring gold~
 &+YPure gold has been formed into a beautiful earring which provides the wearer&N
@@ -395,7 +395,7 @@ key~
 ~
 18 15 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 &+WThis key has the symbol of the temple of the &+Ysun &+Wemblazoned on the handle.&N
@@ -407,7 +407,7 @@ key~
 ~
 18 15 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 &+YThis is the final key that unlocks the power source room in the temple.&N
@@ -419,7 +419,7 @@ circlet golden~
 ~
 9 15 3 0 7 0 0 17 64 0 0
 10 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 circlet golden~
 &+YThis circlet emits a heavenly light and has been blessed from above with&N
@@ -436,7 +436,7 @@ belt tool~
 ~
 9 15 3 0 7 0 0 2049 0 0 0
 5 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 belt tool~
 &+c   This tool belt has been modified by the halflings working on this farm.&N

@@ -5,7 +5,7 @@ A large bag sits carelessly in the corner here.~
 ~
 15 3 3 10 7 0 0 16385 0 0 0
 100 1 -1 100 0 0 0 0
-5 500 100
+5 500 100 100
 #97501
 broom large~
 a large broom~
@@ -13,7 +13,7 @@ A large broom was left carelessly on the ground here.~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 10 1 2 6 0 0 0 0
-3 100 100
+3 100 100 100
 #97502
 belt sweepers shady~
 &+Ra belt of street sweepers&N~
@@ -21,7 +21,7 @@ A belt sits on the ground here.~
 ~
 9 13 3 3 7 0 8192 2049 2 0 0
 2 10 0 3 0 0 0 0
-2 400 100
+2 400 100 100
 A
 24 -1
 A
@@ -33,7 +33,7 @@ A small collar collects among the rubble on the ground.~
 ~
 9 10 0 0 7 0 128 5 0 0 0
 2 2 1 3 0 0 0 0
-3 900 100
+3 900 100 100
 A
 14 5
 #97504
@@ -43,7 +43,7 @@ A ball of yarn is on the ground here.~
 ~
 4 3 3 10 7 0 0 16385 0 0 0
 5 3 3 32 0 0 0 0
-1 3992 100
+1 3992 100 100
 #97505
 bracelet silverish silver chain links chainlinks~
 a &+Wsilverish&N bracelet of chainlinks~
@@ -51,7 +51,7 @@ A silver wristband collects among the rubble here.~
 ~
 9 22 3 3 7 0 9216 4097 66 33685920 0
 5 11 24 3 0 0 0 0
-3 6993 100
+3 6993 100 100
 A
 19 1
 #97506
@@ -61,7 +61,7 @@ A chocolate cake gathers dust on the ground here.~
 ~
 19 48 2 2 7 0 0 16385 0 0 0
 2 5 4 0 3 0 0 0
-2 3911 100
+2 3911 100 100
 #97507
 cake lemon~
 &+Ya lemon cake&n~
@@ -69,7 +69,7 @@ A lemon cake gathers dust on the ground here.~
 ~
 19 48 2 2 7 0 0 16385 0 0 0
 2 4 5 0 0 4 0 0
-2 4311 100
+2 4311 100 100
 #97508
 rosary obsidian~
 &+Wan obsidian rosary~
@@ -77,7 +77,7 @@ A black rosary seems to have been lost here on the ground.~
 ~
 9 36 0 0 7 0 0 5 2 0 0
 1 2 1 3 0 0 0 0
-5 822 100
+5 822 100 100
 A
 13 5
 #97509
@@ -87,7 +87,7 @@ An unwanted black bible gathers among the rubble here.~
 ~
 4 28 3 10 7 0 1 16385 0 0 0
 30 2 2 47 0 0 0 0
-1 19999 100
+1 19999 100 100
 #97510
 spatula~
 a baking spatula~
@@ -95,7 +95,7 @@ A baking spatula lies tossed here on the ground.~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 10 1 2 7 0 0 0 0
-5 250 100
+5 250 100 100
 A
 2 2
 #97511
@@ -105,7 +105,7 @@ An unwanted mask lies on the ground here.~
 ~
 11 10 3 3 7 0 12288 262145 0 0 0
 0 0 0 9 0 0 0 0
-10 9999 100
+10 9999 100 100
 A
 18 1
 #97512
@@ -115,7 +115,7 @@ A piece of holy bread lies tossed here on the ground.~
 ~
 19 48 2 2 7 0 0 1 0 0 0
 15 0 0 0 0 0 0 0
-1 132 100
+1 132 100 100
 #97513
 visor pitch black knight~
 a &+Lpitch black&N knight's visor~
@@ -123,7 +123,7 @@ A metallic visor lies tossed here on the ground.~
 ~
 9 16 0 0 7 0 1024 17 0 87572571 0
 5 4 1 3 0 0 0 0
-1 999 100
+1 999 100 100
 A
 18 2
 A
@@ -135,7 +135,7 @@ A shiny collar has been disposed of here.~
 ~
 9 8 0 0 7 0 139264 5 66 0 0
 6 2 1 3 0 0 0 0
-2 493 100
+2 493 100 100
 A
 13 15
 A
@@ -147,7 +147,7 @@ A tiny ring has been left here.~
 ~
 9 10 1 1 7 0 0 3 0 4169510912 0
 5 1 0 3 0 0 0 0
-5 700 100
+5 700 100 100
 A
 19 1
 #97516
@@ -157,7 +157,7 @@ An unwanted sword sits here.~
 ~
 5 10 3 10 7 0 8192 8193 2 4198895524 0
 5 1 8 3 0 0 0 0
-10 9904 100
+10 9904 100 100
 A
 18 1
 #97517
@@ -167,7 +167,7 @@ A black heap of linen sits on the ground here.~
 ~
 9 3 0 0 7 0 9216 1025 0 37883812 0
 3 9 1 3 0 0 0 0
-3 932 100
+3 932 100 100
 A
 26 5
 #97518
@@ -177,7 +177,7 @@ An small dark tattoo rests on the ground here.~
 ~
 11 1 0 0 7 0 8192 262145 66 0 0
 0 0 0 4 0 0 0 0
-1 931 100
+1 931 100 100
 #97519
 staff of armageddon~
 &+Ra staff of armageddon&N~
@@ -185,7 +185,7 @@ An used staff lies tossed on the ground here.~
 ~
 4 6 3 10 7 0 8192 16385 64 0 0
 40 1 1 72 0 0 0 0
-1 873 100
+1 873 100 100
 A
 3 2
 #97520
@@ -195,7 +195,7 @@ egg black antiquity~
 ~
 9 45 0 0 7 0 8320 8388609 0 0 0
 6 18 0 3 0 0 0 0
-3 9222 100
+3 9222 100 100
 A
 26 3
 A
@@ -207,7 +207,7 @@ cucumber~
 ~
 19 48 2 2 7 0 0 1 0 0 0
 8 1 0 0 0 0 0 0
-1 5688 100
+1 5688 100 100
 #97522
 belt pitch black dragonscale~
 &+La pitch black dragonscale belt&n~
@@ -215,7 +215,7 @@ A dark black belt gathers among the rubble here.~
 ~
 9 35 3 3 7 0 8320 2049 0 0 0
 7 10 0 3 0 0 0 0
-2 4993 100
+2 4993 100 100
 A
 24 -3
 A
@@ -227,7 +227,7 @@ A used candle sits tossed on the ground here.~
 ~
 1 43 0 0 7 0 0 16385 0 0 0
 0 0 6 0 0 0 0 0
-1 12 100
+1 12 100 100
 #97524
 pendant glowing ruby~
 &+Ra glowing ruby pendant&N~
@@ -235,7 +235,7 @@ An unwanted pendant sits on the ground here.~
 ~
 9 31 3 2 7 0 8193 5 0 0 0
 5 2 1 3 0 0 0 0
-0 383 100
+0 383 100 100
 A
 24 -2
 A
@@ -247,7 +247,7 @@ An unwanted chain collects among the rubble here.~
 ~
 9 16 0 0 7 0 2105344 5 0 0 0
 3 2 1 3 0 0 0 0
-3 593 100
+3 593 100 100
 #97526
 scale black dragon~
 a black dragon scale~
@@ -255,7 +255,7 @@ A black scale sits unwanted on the ground here.~
 ~
 9 35 0 0 7 0 8193 9 0 0 0
 3 3 1 3 0 0 0 0
-2 2764 100
+2 2764 100 100
 A
 28 2
 A
@@ -267,7 +267,7 @@ gauntlets tarnished~
 ~
 9 16 3 5 7 0 8192 129 2 4169510912 0
 4 7 1 3 0 0 0 0
-3 4993 100
+3 4993 100 100
 A
 19 1
 A
@@ -279,7 +279,7 @@ A pair of unwanted leggings collects in the rubble here.~
 ~
 9 16 0 0 7 0 0 33 0 4165209604 0
 5 5 1 3 0 0 0 0
-4 1237 100
+4 1237 100 100
 A
 17 -5
 A
@@ -291,7 +291,7 @@ A pair of unwanted sleeves is on the ground here.~
 ~
 9 16 3 8 7 0 0 257 66 4169510912 0
 4 8 1 3 0 0 0 0
-3 2193 100
+3 2193 100 100
 A
 3 5
 A
@@ -303,7 +303,7 @@ An unwanted platemail collects among the dust here.~
 ~
 9 16 3 25 7 0 1 9 64 4173708804 0
 20 3 1 3 0 0 0 0
-45 2992 100
+45 2992 100 100
 A
 1 3
 A
@@ -315,7 +315,7 @@ An unwanted pair of boots sits on the floor here.~
 ~
 9 22 3 8 7 0 73728 65 64 0 0
 6 6 1 3 0 0 0 0
-3 5993 100
+3 5993 100 100
 A
 14 10
 A
@@ -327,7 +327,7 @@ An unwanted mask beckons to be picked up.~
 ~
 9 24 3 3 7 0 294912 262145 2 0 0
 3 13 1 3 0 0 0 0
-2 1931 100
+2 1931 100 100
 #97533
 casket large~
 a large casket~
@@ -335,7 +335,7 @@ A large silvery casket sits here aging with time.~
 ~
 15 6 3 0 7 0 1 0 64 0 0
 100 29 0 100 0 0 0 0
-100 1 100
+100 1 100 100
 #97534
 purple suit dragon scales~
 a &+mpurple&N suit of &+mdragon scales&N~
@@ -343,7 +343,7 @@ An unwanted suit rests here.~
 ~
 9 35 0 0 7 0 107649 9 66 87572571 0
 20 3 1 3 0 0 0 0
-23 23478 100
+23 23478 100 100
 A
 13 2
 A
@@ -355,7 +355,7 @@ An unwanted key collects among the rubble here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #97536
 potion aqua-blue aqua blue~
 an aqua-blue potion~
@@ -363,7 +363,7 @@ An unwanted potion is sitting here.~
 ~
 10 7 2 4 7 0 4128 1 64 0 0
 50 1 123 3 0 0 0 0
-2 629 100
+2 629 100 100
 #97537
 necklace small crystal spheres~
 a necklace of &+Ysmall crystal spheres&N~
@@ -371,7 +371,7 @@ An unwanted necklace beckons for a new owner.~
 ~
 9 8 3 2 7 0 40960 5 66 4169510912 0
 6 2 0 3 0 0 0 0
-7 873 100
+7 873 100 100
 A
 24 -2
 A
@@ -383,7 +383,7 @@ A small key lies on the ground here.~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #97539
 potion green healing~
 &+ga green potion of healing&n~
@@ -391,7 +391,7 @@ A green potion sits on the ground here.~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 30 16 -1 -1 0 0 0 0
-2 52 100
+2 52 100 100
 #97540
 bracelet silverish silver chain links chainlinks~
 a &+Wsilverish&N bracelet of chainlinks~
@@ -399,7 +399,7 @@ A silver wristband collects among the rubble here.~
 ~
 9 22 3 3 7 0 9216 4097 66 33685920 0
 5 11 24 3 0 0 0 0
-3 6993 100
+3 6993 100 100
 A
 18 1
 #97541
@@ -409,7 +409,7 @@ A large pile of coins is collecting dust on the ground here.~
 ~
 20 16 1 0 7 0 4096 1 0 0 0
 100 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #97542
 vial dragon's blood~
 &+Ra vial of dragon's blood~
@@ -417,7 +417,7 @@ A strange vial collects among the rubble here.~
 ~
 11 2 1 2 7 0 8192 5 0 0 0
 0 0 0 6 0 0 0 0
-4 382 100
+4 382 100 100
 A
 25 -4
 A
@@ -429,7 +429,7 @@ a small decaying tree stump~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 #97544
 boulder large~
 a large boulder~
@@ -437,7 +437,7 @@ a large boulder~
 ~
 13 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 #97545
 bed large~
 a large bed~
@@ -445,7 +445,7 @@ a large bed~
 ~
 13 3 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 #97546
 well large~
 a large well~
@@ -453,7 +453,7 @@ a large well~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 10000 0 0 100 0 0 0 0
-1999 0 100
+1999 0 100 100
 #97547
 bottle spirits~
 a bottle of orcish spirits~
@@ -461,7 +461,7 @@ An unwanted bottle collects among the rubble here.~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 5 5 3 0 0 0 0 0
-1 293 100
+1 293 100 100
 #97548
 platemail plate mail orcish~
 &+Wa suit of orcish platemail&N~
@@ -469,7 +469,7 @@ An unwanted platemail sits on the ground here.&N~
 ~
 9 16 3 25 7 0 8192 9 64 4173708804 0
 10 3 1 3 0 0 0 0
-7 2100 100
+7 2100 100 100
 A
 5 4
 A
@@ -481,7 +481,7 @@ An old sword sits on the ground here.~
 ~
 5 16 3 10 7 0 8192 8193 64 4165209604 0
 5 1 6 3 0 0 0 0
-3 1093 100
+3 1093 100 100
 A
 1 1
 A
@@ -493,7 +493,7 @@ An unwanted undershirt collects among the rubble here.~
 ~
 9 3 3 8 7 0 532480 9 0 0 0
 1 3 1 3 0 0 0 0
-2 100 100
+2 100 100 100
 A
 1 1
 #97551
@@ -503,7 +503,7 @@ A pair of cotton leggings sits on the ground here.~
 ~
 9 3 3 8 7 0 8192 33 0 0 0
 5 5 1 3 0 0 0 0
-2 199 100
+2 199 100 100
 A
 1 3
 #97552
@@ -513,7 +513,7 @@ An unwanted sword is here waiting for a new owner.~
 ~
 5 8 3 10 7 0 4202496 8193 66 0 0
 13 2 4 3 0 0 0 0
-4 1100 100
+4 1100 100 100
 A
 18 2
 A
@@ -525,7 +525,7 @@ An unwanted spear sits on the ground here.~
 ~
 5 6 3 0 7 0 8192 8193 64 4198895524 0
 8 1 5 11 0 0 0 0
-4 300 100
+4 300 100 100
 A
 2 1
 #97554
@@ -535,7 +535,7 @@ An unwanted staff sits on the ground here.~
 ~
 5 6 3 10 7 0 8192 8193 64 0 0
 12 1 3 7 0 0 0 0
-3 100 100
+3 100 100 100
 A
 1 1
 #97555
@@ -545,7 +545,7 @@ An small dark tattoo rests on the ground here.~
 ~
 11 1 0 0 7 0 8192 262145 64 0 0
 0 0 0 4 0 0 0 0
-1 933 100
+1 933 100 100
 A
 5 5
 A
@@ -557,7 +557,7 @@ water fountain large~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97557
 scroll fire~
 &+Ra scroll of fire&N~
@@ -565,7 +565,7 @@ An unwanted scroll collects among the rubble here.~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 25 205 205 -1 0 0 0 0
-1 30999 100
+1 30999 100 100
 #97558
 scroll ice~
 &+Wa scroll of ice&N~
@@ -573,7 +573,7 @@ An unwanted scroll collects among the rubble here.~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 25 8 8 -1 0 0 0 0
-1 30999 100
+1 30999 100 100
 #97559
 dagger orcish forged~
 &+Wan orcish-forged dagger&N~
@@ -581,7 +581,7 @@ dagger orcish forged~
 ~
 5 16 2 3 7 0 0 8193 66 0 0
 2 2 4 11 0 0 0 0
-3 1392 100
+3 1392 100 100
 A
 1 5
 A
@@ -593,7 +593,7 @@ blade forged orcish~
 ~
 5 16 3 10 7 0 8192 8193 66 4173708804 0
 13 3 4 3 0 0 0 0
-5 3192 100
+5 3192 100 100
 A
 18 4
 #97561
@@ -603,7 +603,7 @@ diaper old~
 ~
 9 3 0 0 7 0 532480 33 64 0 0
 1 5 1 3 0 0 0 0
-1 10 100
+1 10 100 100
 #97562
 quill old~
 &+Wan old quill&N~
@@ -611,7 +611,7 @@ An old quill collects among the rubble here.~
 ~
 21 5 1 1 7 0 524288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #97563
 bracelet orcish woven~
 &+Can orcish-woven bracelet&N~
@@ -619,7 +619,7 @@ An unwanted bracelet collects among the rubble here.~
 ~
 9 42 3 3 7 0 8192 4097 64 0 0
 2 11 24 3 0 0 0 0
-2 574 100
+2 574 100 100
 A
 30 1
 A
@@ -631,7 +631,7 @@ A useless key has been discarded of here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97565
 shiny golden ring~
 &+Ya shiny golden ring&N~
@@ -639,7 +639,7 @@ An unwanted golden ring has been disposed of here.~
 ~
 9 24 1 1 7 0 0 3 0 0 0
 4 1 0 3 0 0 0 0
-1 922 100
+1 922 100 100
 A
 14 2
 A
@@ -651,7 +651,7 @@ An unwanted figurine sits on the ground here.~
 ~
 9 11 0 0 7 0 0 8388609 0 0 0
 2 18 0 3 0 0 0 0
-1 199 100
+1 199 100 100
 #97567
 earring shiny golden~
 &+Ya shiny golden earring of the ancients&N~
@@ -659,7 +659,7 @@ An old earring is here collecting among the rubble.~
 ~
 11 24 1 1 7 0 0 524289 64 0 0
 0 0 0 0 0 0 0 0
-1 932 100
+1 932 100 100
 A
 4 3
 A
@@ -671,7 +671,7 @@ An old staff has been discarded of here.~
 ~
 5 6 3 10 7 0 0 8193 64 0 0
 12 2 2 7 0 0 0 0
-2 4321 100
+2 4321 100 100
 A
 18 2
 #97569
@@ -681,7 +681,7 @@ helm red~
 ~
 9 16 3 10 7 0 1024 17 0 37883812 0
 5 4 1 3 0 0 0 0
-2 599 100
+2 599 100 100
 A
 23 -1
 A
@@ -693,7 +693,7 @@ sword blood ancients~
 ~
 5 16 3 10 7 0 8320 8193 64 4173708804 0
 13 3 5 3 0 0 0 0
-11 13932 100
+11 13932 100 100
 A
 19 3
 A
@@ -705,7 +705,7 @@ An unwanted mace collects among the rubble here.~
 ~
 5 16 3 8 7 0 8192 8193 64 4173708804 0
 7 1 8 6 0 0 0 0
-7 1223 100
+7 1223 100 100
 A
 2 2
 #97572
@@ -715,7 +715,7 @@ amulet bloodied old~
 ~
 9 16 3 2 7 0 8192 5 0 0 0
 2 2 0 3 0 0 0 0
-3 933 100
+3 933 100 100
 #97573
 mace stone~
 &+Ca stone mace&N~
@@ -723,7 +723,7 @@ mace stone~
 ~
 5 11 3 8 7 0 4206720 8193 64 0 0
 6 3 5 6 0 0 0 0
-10 2993 100
+10 2993 100 100
 A
 18 2
 A
@@ -735,7 +735,7 @@ leaf green small~
 ~
 10 30 2 4 7 0 12288 16385 0 0 0
 15 3 -1 -1 0 0 0 0
-1 193 100
+1 193 100 100
 #97575
 rose bud~
 &+Ra small rose bud&N~
@@ -743,7 +743,7 @@ rose bud~
 ~
 19 42 2 2 7 0 0 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 393 100
+1 393 100 100
 #97576
 chain holy beads~
 &+Ya chain of orcish holy beads&N~
@@ -751,7 +751,7 @@ chain holy beads~
 ~
 9 16 3 2 7 0 8192 16389 0 0 0
 5 2 1 3 0 0 0 0
-2 993 100
+2 993 100 100
 A
 28 2
 A
@@ -763,7 +763,7 @@ ring crystal old~
 ~
 11 8 1 1 7 0 8192 3 0 0 0
 0 0 0 0 0 0 0 0
-0 872 100
+0 872 100 100
 A
 14 5
 A
@@ -775,7 +775,7 @@ An unwanted dagger collects among the rubble here.~
 ~
 5 8 2 3 7 0 8192 8193 0 0 0
 2 2 3 11 0 0 0 0
-2 784 100
+2 784 100 100
 A
 18 2
 A
@@ -787,7 +787,7 @@ An unwated vial rests on the ground here.~
 ~
 17 40 1 2 7 0 8192 16385 0 0 0
 15 15 28 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 #97580
 sparkling diamond pendant~
 a &+Wsparkling diamond pendant&N~
@@ -795,7 +795,7 @@ An unwanted pendant rests on the ground here.~
 ~
 9 8 3 2 7 0 73728 5 66 0 0
 3 2 1 3 0 0 0 0
-3 5094 100
+3 5094 100 100
 A
 13 5
 A
@@ -807,7 +807,7 @@ An unwanted ruby sits here.~
 ~
 8 31 0 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 200 100
+3 200 100 100
 #97582
 golden skeleton key~
 &+Ya golden skeleton key&N~
@@ -815,7 +815,7 @@ An unwanted key rests on the ground here.~
 ~
 18 10 1 2 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 3 100
+2 3 100 100
 #97583
 green dragon horn~
 a &+ggreen&N dragon's horn~
@@ -823,7 +823,7 @@ An unwanted horn sits on the ground here.~
 ~
 5 10 2 0 7 0 73728 8193 66 4198895524 0
 19 2 4 11 0 0 0 0
-9 9232 100
+9 9232 100 100
 A
 18 2
 A
@@ -835,7 +835,7 @@ An unwanted crown sits on the ground here.~
 ~
 9 16 3 8 7 0 106496 17 66 0 0
 9 4 16 3 0 0 0 0
-5 3422 100
+5 3422 100 100
 A
 13 5
 A
@@ -847,7 +847,7 @@ An unwanted pendant sits on the floor here.~
 ~
 11 22 3 2 7 0 106624 5 66 0 0
 0 0 0 1 0 0 0 0
-5 9843 100
+5 9843 100 100
 A
 23 -1
 #97586
@@ -857,7 +857,7 @@ the cracked &+Rblood sword&N of the &+Wancients&N~
 ~
 5 16 3 10 7 0 4235393 8193 64 4173708804 0
 13 4 5 3 0 0 0 0
-11 13932 100
+11 13932 100 100
 A
 19 3
 A
@@ -869,7 +869,7 @@ dark altar~
 ~
 15 11 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #97588
 gauntlets warmitts orcish~
 &+Wa pair of orcish warmitts&n~
@@ -877,7 +877,7 @@ gauntlets warmitts orcish~
 ~
 9 16 3 5 7 0 8192 129 2 4169510912 0
 4 7 1 3 0 0 0 0
-3 4993 100
+3 4993 100 100
 A
 19 1
 A
@@ -889,7 +889,7 @@ serrated orcish warsword~
 ~
 5 16 4 10 7 0 8192 8193 66 0 0
 13 4 3 3 0 0 0 0
-4 1100 100
+4 1100 100 100
 A
 18 3
 A

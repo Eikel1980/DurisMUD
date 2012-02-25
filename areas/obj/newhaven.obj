@@ -5,7 +5,7 @@ elegant gate~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 35203 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #35201
 painting library~
 a large painting~
@@ -13,7 +13,7 @@ A large painting depicting a library hangs here~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 35230 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #35202
 rusted gate~
 &+ra rusted gate&N~
@@ -21,7 +21,7 @@ rusted gate~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 35251 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #35203
 painting library~
 &+Ga large painting&N~
@@ -29,7 +29,7 @@ painting library~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 35280 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #35204
 glaive silver glimmering~
 &+Wa glimmering&+c silver&n &+Lglaive&N~
@@ -37,7 +37,7 @@ glaive silver glimmering~
 ~
 5 15 3 2 12 0 4195328 8193 67 87572507 0
 13 4 5 3 0 0 0 0
-15 15000 100
+15 15000 100 100
 A
 18 1
 A
@@ -49,7 +49,7 @@ shield tower skull spiked~
 ~
 37 15 3 0 7 0 201393152 513 66 121323579 0
 1 3 4 115 1 0 0 0
-35 35000 100
+35 35000 100 100
 E
 shield tower skull spiked~
 &+LThis shield offers great protection against physical blows.  The shield is pitch black in color
@@ -65,7 +65,7 @@ ring silver black sapphire~
 ~
 11 15 3 0 7 0 234881024 3 64 0 0
 0 0 0 0 0 0 0 0
-1 26000 100
+1 26000 100 100
 E
 ring silver black sapphire~
 &+wThis ring is exquisite in every detail.  A single gnome cut &+Lblack sapphire&N
@@ -83,7 +83,7 @@ chainmail suit hammer crest~
 ~
 9 15 3 0 7 0 134217728 9 66 4165209988 0
 26 0 0 3 0 0 0 0
-4 45000 100
+4 45000 100 100
 E
 chainmail elven hammer crest~
 &+CThis set of chainmail has been carefully forged and enchanted by a master
@@ -101,7 +101,7 @@ longsword gleaming shiny sword~
 ~
 5 15 3 0 7 0 67109888 8193 64 96071707 0
 5 3 4 3 0 0 0 0
-4 13000 100
+4 13000 100 100
 E
 longsword gleaming shiney~
 &+WThis sword has been forged from the finest steel available on the Moon Shaes.
@@ -118,7 +118,7 @@ morningstar morning-star flaming~
 ~
 5 15 3 0 7 0 262144 8193 64 4165210052 0
 7 3 9 6 0 0 0 0
-20 780000 100
+20 780000 100 100
 E
 morningstar morning-star flame crimson~
 &+RThis morning star glows with a bright crimson hue
@@ -136,7 +136,7 @@ shield tower~
 ~
 37 15 4 0 7 0 0 513 64 4165209924 0
 1 7 5 126 4 1 0 0
-20 10000 100
+20 10000 100 100
 E
 tower shield blood~
 &+LThis tower shield has been forged from a solid
@@ -154,7 +154,7 @@ suit onyx platemail~
 ~
 9 36 3 0 11 0 2097152 9 64 4165287876 0
 24 0 0 4 1 0 0 0
-40 25000 100
+40 25000 100 100
 E
 suit onyx platemail~
 &+WThis suit offers vast protection from physical attacks.
@@ -172,7 +172,7 @@ circlet white stone~
 ~
 9 11 3 0 7 0 98432 17 64 0 0
 10 0 0 3 0 0 0 0
-5 18000 100
+5 18000 100 100
 A
 18 1
 A
@@ -184,7 +184,7 @@ choker sandstone~
 ~
 9 11 3 0 7 0 1147008 5 64 0 0
 10 0 0 3 0 0 0 0
-5 12000 100
+5 12000 100 100
 A
 20 -2
 A
@@ -196,7 +196,7 @@ epee crimson stained blade~
 ~
 5 15 3 0 7 0 16778496 8193 66 8515584 0
 2 2 7 11 0 0 0 0
-0 23000 100
+0 23000 100 100
 E
 epee crimson stained tiny~
 &+LThis small epee is very narrow and long as &+rstains of crimson&+L tarnish the

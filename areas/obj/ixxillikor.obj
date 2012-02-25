@@ -5,7 +5,7 @@ blue potion container~
 ~
 10 7 3 0 7 0 64 1 0 1 0
 30 66 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 blue potion container~
 &+cA blue liquid bubbles vigorously in this small glass vial.&n
@@ -17,7 +17,7 @@ vial gold golden~
 ~
 10 7 3 0 7 0 524360 1 0 4098 0
 30 15 0 0 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 vial gold golden~
 &+YGolden liquid swirls in this glass vial. The vibrations shaking ones hand as
@@ -30,7 +30,7 @@ green potion~
 ~
 10 15 1 0 12 0 0 1 0 1 0
 30 79 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 green potion~
 &+gThis small glass container holds a frothing green potion that swirls about
@@ -43,7 +43,7 @@ leather parchment scroll~
 ~
 2 13 3 0 7 0 0 1 0 1 0
 30 35 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 leather parchment scroll~
 &+yIntricate runes are burned into this leather scroll. The edges outlines as
@@ -56,7 +56,7 @@ robe~
 ~
 9 3 3 0 7 0 0 1025 0 4096 0
 0 0 0 0 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 robe~
 &+mLong and volumnous, this thin rospider-silk robe appers to be of the type
@@ -74,7 +74,7 @@ gold band~
 ~
 11 24 3 0 7 0 0 3 0 73312 0
 0 0 0 0 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 gold band~
 &+gA small round band of gold. strange runes are barely visible on the inside
@@ -91,7 +91,7 @@ leggings spider silk~
 ~
 11 3 3 0 7 0 0 33 0 1 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 leggings spider silk~
 &+mCrafted from the silk of a drider, these leggings emit a soft magical pulse.&n
@@ -107,7 +107,7 @@ necklace rocks chipped~
 ~
 9 11 3 0 7 0 0 5 0 0 0
 3 0 0 0 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 necklace rocks chipped~
 &+ySmall black stones have been melted together to create this small necklace.
@@ -124,7 +124,7 @@ mask bronze~
 ~
 9 20 3 0 11 0 0 262145 0 0 0
 2 0 0 3 0 0 0 0
-1 2500 100
+1 2500 100 100
 E
 mask bronze~
 &+yA simple elongated mask of bronze. There are four small holes around the
@@ -141,7 +141,7 @@ drider belt hair purple~
 ~
 9 1 3 0 7 0 64 2049 0 0 0
 2 0 0 0 0 0 0 0
-1 1100 100
+1 1100 100 100
 E
 drider belt hair purple~
 &+mCoarse hair from a drider is braided together to create this belt. The ends
@@ -158,7 +158,7 @@ bracer githyanki~
 ~
 9 2 3 0 7 0 64 4097 0 0 0
 4 0 0 2 0 0 0 0
-0 8500 100
+0 8500 100 100
 E
 bracer githyanki~
 &+gTwo thin bands of githyanki flesh. Intricate runes have been burned into the
@@ -175,7 +175,7 @@ slippers feather feathered~
 ~
 11 50 2 0 12 0 0 65 0 0 0
 0 0 0 0 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 slippers feather feathered~
 &+wThin white feathers from an owl have been secured together with thin strands
@@ -191,7 +191,7 @@ broadsword sword two broad~
 ~
 5 19 3 0 12 0 4194304 8193 0 0 0
 13 1 10 0 0 0 0 0
-3 500 100
+3 500 100 100
 E
 broadsword sword two broad~
 &+yMeasuring at least seven feet in length, this large broadsword, only
@@ -210,7 +210,7 @@ sleeves beetle shell~
 ~
 9 46 3 0 10 0 0 257 0 0 0
 4 0 0 5 0 0 0 0
-1 11000 100
+1 11000 100 100
 E
 sleeves beetle shell~
 &+yMade from the backshell of a large beetle, these spiked sleeves are are
@@ -228,7 +228,7 @@ gauntlets barbed~
 ~
 9 19 3 0 12 0 0 129 0 0 0
 2 0 0 0 0 0 0 0
-2 8000 100
+2 8000 100 100
 E
 gauntlets barbed~
 &+gThese large gauntlets have deadly barbs protruding from the sides of the
@@ -247,7 +247,7 @@ boots~
 ~
 11 43 3 0 11 0 0 65 0 1 0
 0 0 0 0 0 0 0 0
-0 5350 100
+0 5350 100 100
 E
 boots~
 &+mFastened from the stalks of large purple mushrooms, and secured together by
@@ -266,7 +266,7 @@ fountain basin brain fluid~
 ~
 17 11 3 0 7 0 0 0 0 1 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain basin brain fluid~
 &+LThis large stone basin sits discretely in the far corner of the wall. A small
@@ -282,7 +282,7 @@ wand glass _id_~
 ~
 3 7 2 0 13 0 4096 16385 64 0 0
 15 3 3 10 0 0 0 0
-1 5200 100
+1 5200 100 100
 E
 wand glass~
 &+wThis glass wand has intricate runes carved down its length. A slight glaze of
@@ -295,7 +295,7 @@ sign warning _id_~
 ~
 13 29 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign warning~
 &+yThe sign simply reads:
@@ -310,7 +310,7 @@ finger severed _id_~
 ~
 11 2 2 0 7 0 12288 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 finger severed~
 &+yThis finger, severed from a githyanki, has a small golden loop
@@ -328,7 +328,7 @@ vial gold golden potion~
 ~
 10 7 3 0 7 0 524360 1 0 4098 0
 30 530 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 vial gold golden~
 &+YGolden liquid swirls in this glass vial. The vibrations shaking ones hand as
@@ -341,7 +341,7 @@ dragonscale bodycloak cloak _id_~
 ~
 15 35 3 0 13 100 0 1025 0 0 0
 500 5 0 500 0 0 0 0
-1 66000 100 65536 12288 0 0
+1 66000 100 100 65536 12288 0 0
 E
 bp backpack dragonscale scale~
 &+gIntricate scaled from the tail of a green dragon are intertwined with
@@ -361,7 +361,7 @@ crystal armageddon _id_~
 ~
 11 8 3 0 14 40 8192 8912897 0 0 0
 0 0 0 0 0 0 0 0
-2 99999 100
+2 99999 100 100
 E
 crystal~
 &+rThis jagged piece of crystal is about seven inches thick and stands about
@@ -379,7 +379,7 @@ scabbard bones _id_~
 ~
 11 10 3 0 12 50 0 1048577 0 0 0
 0 0 0 0 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 scabbard finger~
 &+yThis scabbard is crafted from the bones of some humanoid. Thin pieces
@@ -397,7 +397,7 @@ book spellbook tome _id_~
 ~
 33 13 3 0 14 40 0 8404993 0 0 0
 0 0 300 0 0 0 0 0
-1 99999 100
+1 99999 100 100
 E
 book spellbook tome~
 &+yThis ancient spellbook is bound in rune etched leather. The mystical
@@ -416,7 +416,7 @@ claw jagged _id_~
 ~
 5 46 2 0 7 0 0 8193 0 160 0
 2 1 8 0 0 0 0 0
-1 22222 100
+1 22222 100 100
 E
 claw jagged~
 &+yThis large claw is easily held in the palm of ones hand. The tapered end
@@ -434,7 +434,7 @@ key iron _id_~
 ~
 13 15 3 0 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key iron~
 &+cThis simple key appears to be crafted from iron. Wide gouges run
@@ -447,7 +447,7 @@ stalk club mushroom _id_~
 ~
 5 6 3 0 7 40 0 4202497 0 0 0
 10 1 10 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 stalk mushroom club~
 &+mThis thick mushroom stalked has huge round wooden clumbs at its

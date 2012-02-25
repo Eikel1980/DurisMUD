@@ -7,8 +7,8 @@ grocer village~
 mixed.  Its a thankless job, but someone's gotta do it.  The grocer looks at
 around with curiosity, looking for new sales opportunities.
 ~
-2122 0 0 268435500 12 0 0 0 S
-PH 0 1 -1
+2122 0 0 0 268435500 12 0 0 0 S
+PH 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -22,8 +22,8 @@ man takes care of cleaning and preparing all the fresh game and fish that are
 caught by the village hunters and fishers.  The broad shouldered dwarf appears
 to be quite strong, after years of preparing food for the village.
 ~
-2122 0 0 268435500 12 0 0 0 S
-PM 0 1 -1
+2122 0 0 0 268435500 12 0 0 0 S
+PM 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -39,8 +39,8 @@ village member willing to take on the trials of the world.  Goltyrn is here
 to teach potential adventurers the fine arts of exploration, and the old elf
 lives to pass on his knowledge.
 ~
-2122 0 0 268435500 12 0 0 1000 S
-PE 0 2 -1
+2122 0 0 0 268435500 12 0 0 1000 S
+PE 0 2 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -54,8 +54,8 @@ of adventuring.  This young girl tends to the shop while Goltyrn spins his
 tails of high-seas adventure, or dragon slaying.  She smiles contently as
 customers look at the wares that are sold here.
 ~
-2122 0 0 268435500 12 0 0 0 S
-PH 0 1 -1
+2122 0 0 0 268435500 12 0 0 0 S
+PH 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -71,8 +71,8 @@ share the duty of watching the four towers.  Two member teams can be found
 watching the tower, sleeping in the bunks below, and spending their free
 time with their families.
 ~
-2122 0 0 268435500 12 0 0 0 S
-PM 0 1 -1
+2122 0 0 0 268435500 12 0 0 0 S
+PM 0 1 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -87,8 +87,8 @@ first line of defense for the oasis village.  Twenty four guards in total
 share the duty of watching the four towers.  This guard is currently resting
 before his next duty of watchout.
 ~
-2122 0 0 268435500 12 0 0 0 S
-PM 0 1 -1
+2122 0 0 0 268435500 12 0 0 0 S
+PM 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 8 1
@@ -104,8 +104,8 @@ dark eyes reflect the sparks which fly off his hammer with every strike upon
 the enormous anvil.  The hammer which he wields with ease in his right hand
 looks heavy enough to be a struggle for even a Barbarian.
 ~
-2122 0 0 805306428 2060 0 0 1000 S
-PM 0 8 -1
+2122 0 0 0 805306428 2060 0 0 1000 S
+PM 0 8 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -120,8 +120,8 @@ capable of handling himself in a fight, if ever the occasion should arise.
 Bargor's assistant is always willing to show off the wares of the famous
 dwarf, and seems to know quite a bit about the selling points of each piece.
 ~
-2122 0 0 268435500 12 0 0 0 S
-P2 0 1 -1
+2122 0 0 0 268435500 12 0 0 0 S
+P2 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -137,8 +137,8 @@ in by Jallev, and has been given the task of working in his weapon shop.  The
 rest of the villagers have come to trust the duergar like any other member of
 the village.  This town truly is a strange collaboration of races.
 ~
-2122 0 0 268435500 12 0 0 -1000 S
-PD 0 1 -1
+2122 0 0 0 268435500 12 0 0 -1000 S
+PD 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -154,8 +154,8 @@ create his own artifact-quality weapons.  Jallev is an accomplished fighter
 and is certainly not a man to be underestimated, for he not only knows weapons;
 he knows how to use them.
 ~
-2122 0 0 805306428 2060 0 0 1000 S
-PE 0 1 -1
+2122 0 0 0 805306428 2060 0 0 1000 S
+PE 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -171,8 +171,8 @@ out whenever a dispute arises between villagers, or when there is a threat of
 drought or a food shortage.  The troubles which seem to be bothering the mayor
 on this day, however, seem to be far more critical.
 ~
-2122 0 0 805306428 2060 0 0 1000 S
-PE 0 512 -1
+2122 0 0 0 805306428 2060 0 0 1000 S
+PE 0 512 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -189,8 +189,8 @@ magical in nature.  The captain props himself up with a massive bastard sword
 with he holds in his right hand.  Many scuff marks in the floor of his house
 suggest that the captain tends to stand that way quite often.
 ~
-2122 0 0 805306428 2060 0 0 1000 S
-PB 0 1 -1
+2122 0 0 0 805306428 2060 0 0 1000 S
+PB 0 1 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -206,8 +206,8 @@ have also given the archer the skills of an accomplished ranger.  With bow in
 hand, the elf effortlessly lands bullseye after bullseye against the furthest
 of the targets at the end of the archery field.
 ~
-34890 0 0 805306428 2060 0 0 1000 S
-PE 0 2 -1
+34890 0 0 0 805306428 2060 0 0 1000 S
+PE 0 2 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -222,8 +222,8 @@ at targets a few hundred feet away.  The pupil has much to learn, but with
 such an impressive teacher, soon this student will be defending his village
 with expert marksmanship.
 ~
-1073743946 0 0 805306428 12 0 0 1000 S
-PH 0 2 -1
+1073743946 0 0 0 805306428 12 0 0 1000 S
+PH 0 2 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -237,8 +237,8 @@ are accosted in any way.  In times of crisis, these guards become the soldiers
 of the village and will give their lives to save the home that they love.  The
 soldiers are strong fighters and are capable of defending themselves well.
 ~
-1140852810 0 0 44 12 0 0 0 S
-PM 0 1 -1
+1140852810 0 0 0 44 12 0 0 0 S
+PM 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -253,8 +253,8 @@ from the other guards with a bright &+Yyellow stripe&n which is worn on their
 right shoulder.  Sergeants can offen be heard barking commands at the guards
 which they lead.
 ~
-1140852808 0 0 44 2060 0 0 0 S
-PM 0 1 -1
+1140852808 0 0 0 44 2060 0 0 0 S
+PM 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -268,8 +268,8 @@ hard to distinguish the lineage of its inhabitants.  This villager goes about
 his normal daily activities, and occasionally hums to himself a song that only
 he can hear.
 ~
-1140852808 0 0 36 12 0 0 0 S
-PM 0 1 -1
+1140852808 0 0 0 36 12 0 0 0 S
+PM 0 1 0 -1
 32 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -283,8 +283,8 @@ hard to distinguish the lineage of its inhabitants.  This villager goes about
 her normal daily activities, and occasionally hums to herself a song that only
 she can hear.
 ~
-1140852808 0 0 36 12 0 0 0 S
-PM 0 1 -1
+1140852808 0 0 0 36 12 0 0 0 S
+PM 0 1 0 -1
 32 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -297,8 +297,8 @@ A young village teenager plays here.
 child runs about the village yelling and shouting and paying no heed to the
 dangers outside the village walls.
 ~
-1140852808 0 0 36 12 0 0 0 S
-PH 0 1 -1
+1140852808 0 0 0 36 12 0 0 0 S
+PH 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -311,8 +311,8 @@ inhabitant village~
 or perhaps in the diamond mines of the town.  He looks forward to having a good
 meal and having a good nights rest.
 ~
-67110986 0 0 44 12 0 0 0 S
-PE 0 1 -1
+67110986 0 0 0 44 12 0 0 0 S
+PE 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -325,8 +325,8 @@ villager female~
 resting in her house after whatever her day offered.  She seems to be always
 straightening the pillows of the sofa's and checking the curtains.
 ~
-67110986 0 0 44 12 0 0 0 S
-PE 0 1 -1
+67110986 0 0 0 44 12 0 0 0 S
+PE 0 1 0 -1
 32 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -340,8 +340,8 @@ careless abandon.  This child appears to be playing a game of hide and seek
 with his peers.  With the many bushes and flower beds in the park, this area
 is a perfect place for the childish game.
 ~
-67110984 0 0 44 12 0 0 0 S
-P2 0 1 -1
+67110984 0 0 0 44 12 0 0 0 S
+P2 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -354,8 +354,8 @@ halfling villager~
 The halfling sits peacefully reading a novel, oblivious to his surroundings.
 The halfling, although small in size, appears to be quite intelligent.
 ~
-67110986 0 0 44 12 0 0 0 S
-PF 0 10 -1
+67110986 0 0 0 44 12 0 0 0 S
+PF 0 10 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -370,8 +370,8 @@ Centaurs are known to be incredibily strong, even able to wield two-handed
 weapons in only one hand.  Any beast with strength enough to pull off such a
 feat should be feared and admired.
 ~
-67110986 0 0 60 12 0 0 0 S
-CT 0 1 -1
+67110986 0 0 0 60 12 0 0 0 S
+CT 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -386,8 +386,8 @@ with piercing blue eyes that stear out from behind a full helmet visor.  As
 his glance is met, he raises his head and speaks: "have you come to challenge
 the gladiators of the tower?"
 ~
-67110986 0 0 60 13 0 0 0 S
-PB 0 1 -1
+67110986 0 0 0 60 13 0 0 0 S
+PB 0 1 0 -1
 58 0 0 30000d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -400,8 +400,8 @@ knight warrior green~
 In his hands, he wields an incredibly sharp blade - sharp enough to cut through
 metal.  This knight will be a challenge to defeat.
 ~
-67110986 1 0 301989948 2061 0 0 0 S
-PO 0 1 -1
+67110986 1 0 0 301989948 2061 0 0 0 S
+PO 0 1 0 -1
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -414,8 +414,8 @@ knight warrior blue~
 In his hands, he wields an incredibly sharp blade - sharp enough to cut through
 metal.  This knight will be a challenge to defeat.
 ~
-67110986 1 0 301989948 2061 0 0 0 S
-PO 0 1 -1
+67110986 1 0 0 301989948 2061 0 0 0 S
+PO 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -428,8 +428,8 @@ knight warrior gold~
 In his hands, he wields an incredibly sharp blade - sharp enough to cut throug
 metal.  This knight will be a challenge to defeat.
 ~
-67110986 1 0 301989948 2061 0 0 0 S
-PO 0 1 -1
+67110986 1 0 0 301989948 2061 0 0 0 S
+PO 0 1 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -442,8 +442,8 @@ knight warrior red~
 In his hands, he wields an incredibly sharp blade - sharp enough to cut throug
 metal.  This knight will be a challenge to defeat.
 ~
-67110986 1 0 301989948 2061 0 0 0 S
-PO 0 1 -1
+67110986 1 0 0 301989948 2061 0 0 0 S
+PO 0 1 0 -1
 57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -458,8 +458,8 @@ defeated in combat.  Peering into the slits of his visor, glowing red eyes
 watch every move.  This knight will undoubtedly return to in the nightmares
 of his opponents, if they ever sleep again.
 ~
-100665418 1 0 302055486 2061 0 0 -1000 S
-X 0 48 -1
+100665418 1 0 0 302055486 2061 0 0 -1000 S
+X 0 48 0 -1
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -475,8 +475,8 @@ worthless.  He is always on the lookout for strange new ingredients to add
 to his potion making endeavors.  Although his age has made this gnomes bones
 weak, and forgetfulness has set in, his mind can become very sharp if provoked.
 ~
-1140852810 0 0 44 2060 0 0 0 S
-PG 0 256 -1
+1140852810 0 0 0 44 2060 0 0 0 S
+PG 0 256 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -493,8 +493,8 @@ finish the upper limbs in frightening fashion.  As the creature sizes prepares
 its upper torso shifts back and forth and its claws clench and release at the
 air.
 ~
-1073743944 1 0 268959800 14 0 0 -1000 S
-TK 0 1 -1
+1073743944 1 0 0 268959800 14 0 0 -1000 S
+TK 0 1 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -509,8 +509,8 @@ other drone insects, and quite capable of defending itself and its eggs against
 any intruders who would dare to tresspass here.  Like the other insects of the
 lair, it has two sets of limbs which allow it to strike out with ferocity.
 ~
-67112010 1 0 268959928 2062 0 0 -1000 S
-D 0 2 -1
+67112010 1 0 0 268959928 2062 0 0 -1000 S
+D 0 2 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -524,8 +524,8 @@ brethren.  When angered, the mantis makes a frightening opponent.  Its green
 exoskeleton seems thin, but it is incredibly durable.  Its four limbs are
 also incredibly strong, despite their lithe appearance.
 ~
-1073743944 1 0 268959800 14 0 0 -1000 S
-TK 0 1 -1
+1073743944 1 0 0 268959800 14 0 0 -1000 S
+TK 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -539,8 +539,8 @@ brothers, but it is a fearsome opponent as well.  Its skin tone and thin
 strong limbs allow it to sneak easily through the lair of the mantis.  In
 groups, these small insects become a frightening foe.
 ~
-1073743944 1 0 268959784 14 0 0 -1000 S
-TK 0 1 -1
+1073743944 1 0 0 268959784 14 0 0 -1000 S
+TK 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -554,8 +554,8 @@ to venture into the depths of these tunnels.  The mantis' strong carapace
 makes their natural armor incredibly high.  These mantis, even when not using
 a weapon hit incredibly hard, and with a blinding speed!
 ~
-1073743944 1 0 268959800 14 0 0 -1000 S
-TK 0 1 -1
+1073743944 1 0 0 268959800 14 0 0 -1000 S
+TK 0 1 0 -1
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -569,8 +569,8 @@ opponents.  The acid not only burns but it tenderizes the skin of the mantis'
 victims in preparation for their feasting.  This mantis is slightly larger
 than many of the full sized mantis of the caverns, and slightly more dangerous.
 ~
-1073744968 1 0 268959800 14 0 0 -1000 S
-TK 0 1 -1
+1073744968 1 0 0 268959800 14 0 0 -1000 S
+TK 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -583,8 +583,8 @@ locust buzzing~
 its the acidic substance on the walls that cause them to grow to abnormal
 sizes.  Perhaps the goo is also the cause of their hightened aggresiveness.
 ~
-1140861002 1 0 268435512 14 0 0 -500 S
-I 0 1 -1
+1140861002 1 0 0 268435512 14 0 0 -500 S
+I 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -597,8 +597,8 @@ locust buzzing~
 its the acidic substance on the walls that cause them to grow to abnormal
 sizes.  Perhaps the goo is also the cause of their hightened aggresiveness.
 ~
-1140861002 1 0 268435496 14 0 0 -500 S
-I 0 1 -1
+1140861002 1 0 0 268435496 14 0 0 -500 S
+I 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -611,8 +611,8 @@ locust buzzing~
 its the acidic substance on the walls that cause them to grow to abnormal
 sizes.  Perhaps the goo is also the cause of their hightened aggresiveness.
 ~
-1140861002 1 0 268435496 14 0 0 -500 S
-I 0 1 -1
+1140861002 1 0 0 268435496 14 0 0 -500 S
+I 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -625,8 +625,8 @@ locust buzzing~
 its the acidic substance on the walls that cause them to grow to abnormal
 sizes.  Perhaps the goo is also the cause of their hightened aggresiveness.
 ~
-1140861002 1 0 268435496 14 0 0 -500 S
-I 0 1 -1
+1140861002 1 0 0 268435496 14 0 0 -500 S
+I 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -642,8 +642,8 @@ others, seems to control his movements with grace and agility.  He has
 undoubtedly trained hard and proven himself a valuable asset to the mantis
 hive.
 ~
-1140866122 1 0 268959804 2062 67108864 0 -1000 S
-TK 0 1 -1
+1140866122 1 0 0 268959804 2062 67108864 0 -1000 S
+TK 0 1 0 -1
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -657,8 +657,8 @@ the main artery of the area.  These mantis are far stronger and deadlier than
 the others.  They also have the ability to spit acid at their opponents, adding
 even more firepower to their arsenal.
 ~
-1073753160 1 0 268959788 2062 67108864 0 -1000 S
-TK 0 1 -1
+1073753160 1 0 0 268959788 2062 67108864 0 -1000 S
+TK 0 1 0 -1
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -672,8 +672,8 @@ purpose which is, as of yet, unknown.  They follow the commands of their
 general who, in turn, receives his orders from an even higher source.  These
 rather ordinary soldiers are the infantry of the mantis army.
 ~
-1073743944 1 0 268959788 2062 0 0 -1000 S
-TK 0 1 -1
+1073743944 1 0 0 268959788 2062 0 0 -1000 S
+TK 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -688,8 +688,8 @@ and nature.  The shaman mantis are revered by their brethren as being the
 most intelligent and most deserving of respect.  This mantis, uses his wits
 rather than sheer brawn to inflict pain upon its adversaries.
 ~
-1073743944 1 0 268959788 2062 0 0 -1000 S
-TK 0 256 -1
+1073743944 1 0 0 268959788 2062 0 0 -1000 S
+TK 0 256 0 -1
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -702,8 +702,8 @@ mantis feeding~
 thrilled about it.  The mantis leaps to the foray, in the attempts of making
 adventurers its next meal.
 ~
-1140852808 1 0 268959800 2062 0 0 -1000 S
-TK 0 1 -1
+1140852808 1 0 0 268959800 2062 0 0 -1000 S
+TK 0 1 0 -1
 39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -716,8 +716,8 @@ mantis ravenous~
 thrilled about it.  The mantis leaps to the foray, in the attempts of making
 adventurers its next meal.  This large mantis looks to be a ferocious opponent.
 ~
-1140852808 1 0 268959800 2062 67108864 0 -1000 S
-TK 0 1 -1
+1140852808 1 0 0 268959800 2062 67108864 0 -1000 S
+TK 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -731,8 +731,8 @@ guards have been hand picked by the queen, herself.  These guards exhibit the
 most powerful attributes that the insect beasts can hope to obtain: strength,
 wisdom, and intelligence.
 ~
-1140853834 1 0 268959800 2063 67108864 0 -1000 S
-TK 0 10 -1
+1140853834 1 0 0 268959800 2063 67108864 0 -1000 S
+TK 0 10 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -745,8 +745,8 @@ guard mantis royal~
 mantis possess the most sought after qualities that a mantis can aspire to.
 These hand picked guards are the epitome of strength, wisdom and intelligence.
 ~
-1140853834 1 0 268959800 2062 67108864 0 -1000 S
-TK 0 32 -1
+1140853834 1 0 0 268959800 2062 67108864 0 -1000 S
+TK 0 32 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -759,8 +759,8 @@ guard mantis royal~
 mantis possess the most sought after qualities that a mantis can aspire to.
 These hand picked guards are the epitome of strength, wisdom and intelligence.
 ~
-1140853834 1 0 268959800 2062 67108864 0 -1000 S
-TK 0 16 -1
+1140853834 1 0 0 268959800 2062 67108864 0 -1000 S
+TK 0 16 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -773,8 +773,8 @@ guard mantis royal~
 mantis possess the most sought after qualities that a mantis can aspire to.
 These hand picked guards are the epitome of strength, wisdom and intelligence.
 ~
-1140853834 1 0 268959800 2062 67108864 0 -1000 S
-TK 0 512 -1
+1140853834 1 0 0 268959800 2062 67108864 0 -1000 S
+TK 0 512 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -792,8 +792,8 @@ hard to discern if she is screaming in anger or delight at the sight of food.
 The enormous beast lunges forward to attack, with all four limbs poised to
 rend flesh from their limbs.
 ~
-67140682 1 0 268959928 2062 0 0 -1000 S
-D 0 256 -1
+67140682 1 0 0 268959928 2062 0 0 -1000 S
+D 0 256 0 -1
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -810,8 +810,8 @@ visit fledgling worlds in search of future fodder and slaves.  The illithids
 have the power to control minds, and inflict pain without touching or chanting
 any magical incantations.
 ~
-10312 1 0 268959928 2062 0 0 -1000 S
-MF 0 4 -1
+10312 1 0 0 268959928 2062 0 0 -1000 S
+MF 0 4 0 -1
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -826,8 +826,8 @@ them look like a humanoid squid, with purplish flesh and tentacles which
 flail about its head.  This bodyguards travel with the illithid emissary
 to protect it, as if the emisarry had any reason to fear for its safety.
 ~
-67119178 1 0 268959800 2062 0 0 -1000 S
-MF 0 4 -1
+67119178 1 0 0 268959800 2062 0 0 -1000 S
+MF 0 4 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -841,8 +841,8 @@ around the land to train here, with some of the finest teachers available.
 Although, not very strong, this warrior is extremely agile and skilled with
 a sword.
 ~
-2122 0 0 536870956 12 0 0 500 S
-PH 0 1 -1
+2122 0 0 0 536870956 12 0 0 500 S
+PH 0 1 0 -1
 42 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -857,8 +857,8 @@ skin on his body.  The foreman seems quite troubled, and he almost doesn't
 notice another presence.  The recent troubles in the mines obviously have him
 quite concerned.
 ~
-2122 0 0 268435500 12 0 0 1000 S
-PM 0 1 -1
+2122 0 0 0 268435500 12 0 0 1000 S
+PM 0 1 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -873,8 +873,8 @@ elusive diamonds.  His face shows concern about the recent disappearance of
 his fellow miners, and he undoubtedly fears his own fate staying here in the
 mines.
 ~
-2122 0 0 268435500 12 0 0 1000 S
-PM 0 1 -1
+2122 0 0 0 268435500 12 0 0 1000 S
+PM 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -889,8 +889,8 @@ elusive diamonds.  His face shows concern about the recent disappearance of
 his fellow miners, and he undoubtedly fears his own fate staying here in the
 mines.
 ~
-2122 0 0 268435500 12 0 0 1000 S
-PM 0 1 -1
+2122 0 0 0 268435500 12 0 0 1000 S
+PM 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -904,8 +904,8 @@ puffy and tears are streaming down her cheeks.  Something quite terrible must
 have happened to cause such pain and suffering.  Every once in a while she
 mentions the word 'Kara'.
 ~
-67110986 0 0 44 12 0 0 0 S
-PE 0 1 -1
+67110986 0 0 0 44 12 0 0 0 S
+PE 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -919,8 +919,8 @@ wander the caverns he used to toil in.  Zombies are often under the influence
 of a far more powerful master, and they tend to have their strength augmented
 in death.  They often make fearsome opponents.
 ~
-1073748040 1 0 268435516 14 0 0 -500 S
-U 0 1 -1
+1073748040 1 0 0 268435516 14 0 0 -500 S
+U 0 1 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -934,8 +934,8 @@ although corporeal, is able to use daggers that inflict very tangible damage.
 Spectres can be deadly if they are able to sneak up on their opponents much
 like a stealthy thief.
 ~
-1073764424 1 0 268435516 14 0 0 -500 S
-UG 0 8192 -1
+1073764424 1 0 0 268435516 14 0 0 -500 S
+UG 0 8192 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -949,8 +949,8 @@ species and posess the ability to charm humanoids and turn them against their
 own allies.  Vampires are often incredibly strong and deadly in combat.  This
 lich appears to be muttering the word "&+rZoth&n".
 ~
-1073748040 1 0 268959804 2062 67108864 0 -1000 S
-UV 0 1 3
+1073748040 1 0 0 268959804 2062 67108864 0 -1000 S
+UV 0 1 0 3
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -968,8 +968,8 @@ ambassador hell mortazoth demon~
 &+Lenergy, giving off a strange dark glow which seems to suck the magical
 &+Llight from the equipment of the party.
 ~
-33585258 1 0 268435516 2063 0 0 -1000 S
-X 0 512 -1
+33585258 1 0 0 268435516 2063 0 0 -1000 S
+X 0 512 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -985,8 +985,8 @@ undead leaders and are often seen directing lesser undead to engage enemies
 while the intelligent lich blasts his foes with powerful spells.  This lich
 seems to be muttering the word "&+rMorta&n" over and over.
 ~
-1073748040 1 0 268959804 2062 0 0 -1000 S
-U 0 512 -1
+1073748040 1 0 0 268959804 2062 0 0 -1000 S
+U 0 512 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1000,8 +1000,8 @@ demon massive~
 &+rsomething or someone.  His evil glare sends shivers down the spine.  This
 &+rdemon will make for an incredible opponent.
 ~
-33585258 1 0 268435516 2062 0 0 -1000 S
-X 0 16 -1
+33585258 1 0 0 268435516 2062 0 0 -1000 S
+X 0 16 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1

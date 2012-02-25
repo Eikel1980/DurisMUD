@@ -5,7 +5,7 @@ fountain blue~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 9 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain blue~
 Tucked into the corner formed by the two tall walls to the south and east, this
@@ -22,7 +22,7 @@ fountain purple~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain purple~
 Made of some of the rarest purple marble, water spills off carefully carved
@@ -37,7 +37,7 @@ belt~
 ~
 9 14 8 3 7 0 0 2049 0 0 0
 4 10 0 3 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 belt~
 This thick leather belt has been lined with small kenku throwing blades.  The
@@ -53,7 +53,7 @@ wand splintered~
 ~
 3 6 2 4 7 0 69632 16385 0 0 0
 36 3 3 36 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 wand splintered~
 The splintered wand has had powerful magic placed into it.
@@ -65,7 +65,7 @@ A no_show animal burrow.~
 ~
 15 1 3 0 7 0 2 0 0 0 0
 15 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 #16405
 key~
 &+La dull iron key&N~
@@ -73,7 +73,7 @@ key~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It has never been polished since the day it was made.  This simple key must fit
@@ -87,7 +87,7 @@ locket necklace~
 ~
 9 24 3 2 7 0 4096 5 0 0 0
 5 2 0 2 0 0 0 0
-1 5500 100
+1 5500 100 100
 E
 locket necklace~
 This beautiful locket contains an enamel inlay of a beautiful woman, the woman
@@ -105,7 +105,7 @@ crate~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 50 0 0 250 0 0 0 0
-0 1 100
+0 1 100 100
 E
 crate~
 The lid for this crate was removed and thrown away a long time ago.  Most of
@@ -120,7 +120,7 @@ plate~
 ~
 8 16 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 plate~
 At one time someone clearly owned a number of these expensive plates.  The
@@ -135,7 +135,7 @@ plates porcelain~
 ~
 13 9 2 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 plates porcelain~
 These shards of porcelain show the high quality of craftsmanship that went into
@@ -148,7 +148,7 @@ silk bolt~
 ~
 8 3 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-50 5000 100
+50 5000 100 100
 E
 silk bolt~
 This heavy bolt of silk was once worth at least several hundred platinum, it
@@ -162,7 +162,7 @@ blankets rugs pile~
 ~
 15 3 3 0 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 blankets rugs pile~
 The rugs and blankets have been dumped in an unceremonious pile in the corner.
@@ -177,7 +177,7 @@ scimitar~
 ~
 5 6 3 10 7 0 12288 8193 0 4165209604 0
 9 1 5 3 0 0 0 0
-2 20000 100
+2 20000 100 100
 E
 scimitar~
 Clearly made and weighted for small halfling or elven hands, this scimitar
@@ -198,7 +198,7 @@ bin manure~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bin manure~
 Filled with stinking manure and rotting compost, this bin has enough fertilizer
@@ -212,7 +212,7 @@ manure pile compost~
 ~
 15 42 3 0 7 0 0 16385 0 0 0
 5 0 0 100 0 0 0 0
-200 1 100
+200 1 100 100
 E
 manure pile compost~
 This foul-smelling mixture is perfect fertilizer for those gardeners with
@@ -225,7 +225,7 @@ ruby~
 ~
 8 31 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 ruby~
 Carefully cut to highlight its brilliance, this large ruby has great value.
@@ -240,7 +240,7 @@ statue marble~
 ~
 13 38 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 statue marble~
 The depiction of a naked woman holding a shell in both hands, her arms raised
@@ -257,7 +257,7 @@ wand~
 ~
 3 6 2 4 7 0 8499200 16385 0 0 0
 36 5 5 85 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 wand~
 This forked wand has no inscriptions on it mentioning a keyword, or a purpose.
@@ -271,7 +271,7 @@ fountain~
 ~
 13 11 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 fountain~
 Vines and bushes growing close to the fountain have enclosed it until the slow
@@ -287,7 +287,7 @@ belt lizard~
 ~
 11 12 3 3 7 0 12288 18433 0 0 0
 0 0 0 5 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 belt lizard~
 Thickly interwoven lizard-like scales make up the body of this extremely
@@ -308,7 +308,7 @@ hooves~
 ~
 9 10 10 0 7 0 12288 65 0 0 0
 6 6 1 3 0 0 0 0
-2 3500 100
+2 3500 100 100
 E
 hooves~
 These hooves have clearly been treated with a powerful magic that allows
@@ -324,7 +324,7 @@ chest stone~
 ~
 15 11 5 50 7 0 8388608 1 0 0 0
 50 29 16422 250 0 0 0 0
-1200 1 100
+1200 1 100 100
 E
 chest stone~
 Made of rough stone, this chest would appear to be a simple affair.  A close
@@ -342,7 +342,7 @@ band metal~
 ~
 18 16 1 1 7 0 8458240 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 band metal~
 There is no clue as to the purpose of this strange band of metal.  It is clear
@@ -359,7 +359,7 @@ coins~
 ~
 20 16 1 0 7 0 0 16385 0 0 0
 0 0 53 29 0 0 0 0
-0 1 100
+0 1 100 100
 #16424
 katana~
 &+Wa &+Bblue steel&N &+Wkatana&N~
@@ -367,7 +367,7 @@ katana~
 ~
 5 16 3 0 10 0 102400 8193 64 4198895524 0
 5 3 6 3 0 0 0 0
-20 25000 100
+20 25000 100 100
 E
 katana~
 Despite having spent untold years immersed in water, this fine weapon has not
@@ -390,7 +390,7 @@ ring topaz~
 ~
 11 26 1 1 13 10 1024 3 0 4197892 0
 0 0 0 0 0 0 0 0
-1 13000 100
+1 13000 100 100
 E
 ring topaz~
 This ring is quite a nice piece of work.  It has been gently carved from a
@@ -409,7 +409,7 @@ bracer bloodstone~
 ~
 9 11 3 3 7 0 1114112 4097 0 0 0
 5 11 1 4 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 bracer bloodstone~
 A skilled stone-worker has created this heavy bracer by carving dark bloodstone
@@ -427,7 +427,7 @@ key~
 ~
 18 16 1 1 7 0 8458240 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 This ornate steel key bears Lord Krimeneha's seal, though what door it might
@@ -440,7 +440,7 @@ desk~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 50 13 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 desk~
 Both ornate and heavy, this sturdy desk has clearly stood here for years, and
@@ -458,7 +458,7 @@ ring seal~
 ~
 11 16 1 1 7 0 69632 3 0 0 0
 0 0 0 2 0 0 0 0
-1 15000 100 536870912 0 0 0
+1 15000 100 100 536870912 0 0 0
 E
 ring seal~
 Though it bears a complex seal, there is something else about the ring that
@@ -475,7 +475,7 @@ flower crystal~
 ~
 8 8 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 flower crystal~
 This intricate crystal replica of a blooming rose has every detail but the
@@ -490,7 +490,7 @@ fountain~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 25 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 fountain~
 Only dust occupies the bowl of this once beautiful fountain, as well as the
@@ -507,7 +507,7 @@ chest~
 ~
 15 6 5 50 7 0 8458240 16385 0 0 0
 50 29 16433 250 0 0 0 0
-100 350 100
+100 350 100 100
 E
 chest~
 Plain in every way except for its lock and the steel bands that reinforce its
@@ -522,7 +522,7 @@ key~
 ~
 18 16 1 1 7 0 8458240 16385 0 0 0
 0 20 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 On the surface it is just a simple, dull iron key that is easy to overlook. A
@@ -539,7 +539,7 @@ bandanna~
 ~
 11 3 0 0 7 0 8192 5 0 4248567899 0
 0 0 0 4 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 bandanna~
 This fine red silk has an extraordinarily tight weave, allowing it to be quite
@@ -559,7 +559,7 @@ belt~
 ~
 9 13 3 3 7 0 4096 2049 0 4165209604 0
 5 10 0 3 0 0 0 0
-0 4500 100
+0 4500 100 100
 E
 belt~
 Thick leather has been stiched together in layers to create an extraodinarily
@@ -578,7 +578,7 @@ key~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 So much magical power has been exerted on this intricate key that the original
@@ -593,7 +593,7 @@ A no_show wardrobe waits for a PC smart enough to search it.~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 50 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 #16438
 gown~
 &+man elegant silk gown&N~
@@ -601,7 +601,7 @@ gown~
 ~
 9 3 8 0 7 0 13312 9 0 4197892 0
 15 3 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 gown~
 Designed for a petite woman, this gown reveals as much as it conceals.  It was
@@ -621,7 +621,7 @@ dresser~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 15 5 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dresser~
 Solid, heavy, hardwoods have been used to create this fine piece.  Intricate
@@ -636,7 +636,7 @@ box~
 ~
 15 6 3 0 7 0 4096 16385 0 0 0
 5 29 16441 100 0 0 0 0
-4 3500 100
+4 3500 100 100
 E
 box~
 This tiny box has been polished to the point that has a faint red sheen to it,
@@ -653,7 +653,7 @@ key~
 ~
 18 16 1 1 7 0 8400896 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 The key itself is a work of art.  A tiny stag has been carved out of the handle
@@ -668,7 +668,7 @@ necklace string pearl pearls~
 ~
 9 10 3 2 12 0 1024 5 0 4197892 0
 6 2 0 3 0 0 0 0
-1 35000 100
+1 35000 100 100
 E
 necklace string pearl pearls~
 All of the pearls that have been placed on this long string are almost of the
@@ -688,7 +688,7 @@ rug~
 ~
 8 3 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-35 25000 100
+35 25000 100 100
 E
 rug~
 Woven of the finest pre-died wool, the carpet alone is worth a great deal of
@@ -703,7 +703,7 @@ vault~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 500 29 16445 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 vault~
 Powerful magic runes cover the door to the vault, making it clear that only the
@@ -720,7 +720,7 @@ key~
 ~
 18 16 1 1 7 0 8388608 16385 64 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 key~
 Few keys are so large and heavy, then again few keys have glowing magical runes
@@ -734,7 +734,7 @@ chain chainmail silver~
 ~
 9 19 3 10 9 0 1118208 9 1 4173708804 0
 20 3 1 4 0 0 0 0
-2 35000 100
+2 35000 100 100
 E
 chain chainmail silver~
 This beautiful silver armor is as light as it is sturdy, and has an elegance
@@ -756,7 +756,7 @@ platinum coins~
 ~
 20 25 1 0 7 0 0 16385 0 0 0
 0 0 0 50 0 0 0 0
-0 1 100
+0 1 100 100
 E
 platinum coins~
 Neatly stacked platinum coins of some ancient mint show that someone was quite
@@ -769,7 +769,7 @@ cloak~
 ~
 9 3 3 8 7 0 0 1025 0 0 0
 8 9 38 4 0 0 0 0
-2 7500 100
+2 7500 100 100
 E
 cloak~
 Even though it has been double layered, the silk of the cloak is light and
@@ -788,7 +788,7 @@ boots~
 ~
 9 16 3 3 7 0 4128 65 0 4165209604 0
 7 6 1 3 0 0 0 0
-1 6500 100
+1 6500 100 100
 E
 boots~
 Reinforced with thin strips of steel, and sporting nasty looking spikes, these
@@ -806,7 +806,7 @@ staff~
 ~
 4 6 3 10 7 0 8597504 16385 0 0 0
 25 1 1 30 0 0 0 0
-4 4000 100
+4 4000 100 100
 E
 staff~
 This staff has had Lord Eckraldu's name carved into it in long looping letters.
@@ -823,7 +823,7 @@ staff fragment~
 ~
 13 6 3 10 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 staff fragment~
 There is something magical and ominous about this fragment of a staff,
@@ -837,7 +837,7 @@ ring~
 ~
 11 16 1 1 7 0 8978432 16387 0 0 0
 0 0 0 2 0 0 0 0
-1 1 100
+1 1 100 100
 E
 ring~
 This small ring bears a family seal to help identify the child that might
@@ -853,7 +853,7 @@ broach~
 ~
 11 16 0 0 7 0 8454144 2113537 0 0 0
 0 0 0 1 0 0 0 0
-1 100 100
+1 100 100 100
 E
 broach~
 This plain tin broach has been decorated with a few small gems, but nothing
@@ -868,7 +868,7 @@ broach~
 ~
 11 22 0 0 7 0 8454144 2113537 0 0 0
 0 0 0 2 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 broach~
 Marked with the seal of the Lord Krimeneha's family, this elegant silver broach
@@ -882,7 +882,7 @@ sword bastard~
 ~
 5 22 3 10 12 0 3145728 8193 1 4198895524 0
 5 4 5 3 0 0 0 0
-20 50000 100
+20 50000 100 100
 E
 sword bastard~
 This fine sword, and its gold-trimmed hilt, is quite heavy, yet it cuts through
@@ -902,7 +902,7 @@ sleeves chainmail~
 ~
 9 22 8 8 12 0 0 257 0 4173708804 0
 7 8 1 3 0 0 0 0
-3 7500 100
+3 7500 100 100
 E
 sleeves chainmail~
 These silver sleeves have been so deeply impregenated with magical spells that
@@ -921,7 +921,7 @@ leggings chainmail~
 ~
 9 22 8 8 12 0 0 33 0 4173708804 0
 7 5 1 3 0 0 0 0
-3 7500 100
+3 7500 100 100
 E
 leggings chainmail~
 The fine links of this beautiful armor have been twisted and spiked around
@@ -937,7 +937,7 @@ bracer silver~
 ~
 9 22 3 3 7 0 5120 4097 0 8515584 0
 3 11 1 3 0 0 0 0
-0 7500 100
+0 7500 100 100
 E
 bracer silver~
 A ring of thin spikes adorns this otherwise plain silver bracer.  There are no
@@ -953,7 +953,7 @@ ring water~
 ~
 11 40 1 1 7 0 12288 3 0 0 0
 0 0 0 8 0 0 0 0
-1 4500 100 2048 0 0 0
+1 4500 100 100 2048 0 0 0
 E
 ring water~
 Magic has been used to force the water to stay together, even when it is set
@@ -970,7 +970,7 @@ mask topaz~
 ~
 9 11 3 3 7 0 33792 262145 64 8499200 0
 5 13 1 3 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 mask topaz~
 Thin layers of gold have been encrusted with a number of small topaz gems to
@@ -989,7 +989,7 @@ earring topaz~
 ~
 11 26 1 1 7 0 33792 524289 0 37883812 0
 0 0 0 10 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 earring topaz~
 Carefully carved from a single large topaz gem, this tiny earring provides an
@@ -1006,7 +1006,7 @@ helm~
 ~
 9 19 3 10 7 0 1024 17 0 87572571 0
 8 4 1 3 0 0 0 0
-4 12000 100
+4 12000 100 100
 E
 helm~
 Strange ridges run along the lateral sides of the helm, one would guess they
@@ -1025,7 +1025,7 @@ earring tooth~
 ~
 11 10 1 1 7 0 2166784 524289 64 4198895524 0
 0 0 0 9 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 earring tooth~
 A strange symbol has been carved into the tooth and filled with gold.  The
@@ -1044,7 +1044,7 @@ dagger dirk gold~
 ~
 5 24 2 1 10 0 69632 24577 0 4194697696 0
 2 1 3 11 0 0 0 0
-1 1 100
+1 1 100 100
 E
 dagger dirk gold~
 Although this dagger was clearly designed to be a well-honed, effective

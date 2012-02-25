@@ -5,7 +5,7 @@ A scrap of parchment is almost totally hidden under a bit of rubble.~
 ~
 12 29 1 1 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 diary entry parchment paper~
 +-------------------------------------------------+
@@ -33,7 +33,7 @@ ornate key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 ornate key~
 The key is fashioned of the finest steel, with a few small gems set in the
@@ -47,7 +47,7 @@ key stone~
 ~
 18 11 1 1 7 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 stone key~
 The key looks as if it had been struck from a sliver of flint; there are
@@ -61,7 +61,7 @@ old key~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 2 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 old key~
 It seems to have been long forgotten, unused and apparently useless.
@@ -73,7 +73,7 @@ key metal~
 ~
 18 16 1 1 7 0 16658464 16385 66 0 0
 2 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 metal key~
 The looping letters inscribed in the key indicate it is from the desert;
@@ -86,7 +86,7 @@ A &+ygolden key&n gleams in the light here.~
 ~
 18 24 1 1 7 0 8388608 16385 0 0 0
 2 100 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 golden key~
 The key isn't simply gold-plated copper; it is 14 carat gold all the way
@@ -100,7 +100,7 @@ key silver~
 ~
 18 22 1 1 7 0 8388608 16385 0 0 0
 2 100 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 silver key~
 This key is a work of art in and of itself; the carefully shaped silver is
@@ -113,7 +113,7 @@ key book~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 book~
 The book's covers have indentations cut into their edges -- and all the
@@ -127,7 +127,7 @@ key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 1 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key~
 The key is fashioned of cast iron and the maker seems to have focused more
@@ -140,7 +140,7 @@ There is a burned and broken wagon pushed off the trail.~
 ~
 15 6 3 0 7 0 0 1 0 0 0
 20 1 -1 100 0 0 0 0
-20000 0 100
+20000 0 100 100
 E
 wreckage wagon wreck~
 It appears the wagon was attacked, which is why it never made it to its
@@ -153,7 +153,7 @@ dung crap offal turd~
 ~
 13 2 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 dung crap offal turd~
 Its crawling with flies, and is nice and moist.  Not to mention the
@@ -166,7 +166,7 @@ An ornate scimitar with a razor keen edge glints in the light here.~
 ~
 5 16 3 10 7 0 0 8193 2 0 0
 9 3 3 3 0 0 0 0
-8 200 100
+8 200 100 100
 E
 sword guardsword~
 A multi-purpose tool, it is presentable and fancy enough to serve as a
@@ -183,7 +183,7 @@ turban~
 ~
 9 3 0 0 7 0 1024 17 64 37883812 0
 7 4 1 3 0 0 0 0
-4 1000 100
+4 1000 100 100
 E
 cloth~
 It appears it could be some sort of headwrap, if tied correctly.
@@ -204,7 +204,7 @@ scepter rod~
 ~
 5 16 2 4 7 0 0 8193 64 0 0
 10 3 4 6 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 scepter rod~
 This scepter is flashy, but deadly.  The rod has an almost palpable magical
@@ -223,7 +223,7 @@ sandstone ring~
 ~
 11 16 1 1 7 0 0 33554435 64 0 0
 0 0 0 1 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 sandstone ring~
 The ring seems to have some sort of inscription on it.
@@ -244,7 +244,7 @@ A pair of well crafted &+rboots &nrest on the ground here.~
 ~
 9 3 3 8 7 0 0 65 64 0 0
 8 6 1 3 0 0 0 0
-3 100 100
+3 100 100 100
 E
 fine boots~
 The footwear is constructed of a strange, sturdy, but supple material.  They
@@ -261,7 +261,7 @@ book bible leather~
 ~
 12 28 2 5 7 0 1 16385 2 0 0
 0 0 0 0 0 0 0 0
-2 50 100 8192 0 0 0
+2 50 100 100 8192 0 0 0
 E
 book bible~
 +--------------------------------------------------------------------------+
@@ -304,7 +304,7 @@ book~
 ~
 12 28 2 5 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 book~
 +------------------------------------------------------------------------+
@@ -344,7 +344,7 @@ book~
 ~
 12 28 2 5 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 book~
 +-------------------------------------------------------------------------+
@@ -385,7 +385,7 @@ book~
 ~
 12 28 2 5 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 book~
 +-------------------------------------------------------------------------+
@@ -416,7 +416,7 @@ bronze sword~
 ~
 5 20 3 10 7 0 0 8193 64 0 0
 5 1 10 11 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 sphinx sword~
 The pommel is the body of the sphinx, the handle the head, and the blade
@@ -434,7 +434,7 @@ cloak shadows shadow~
 ~
 9 1 3 8 7 0 4096 1025 64 0 0
 10 9 1 3 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 cloak shadow shadows~
 Wearing this cloak is like wrapping a piece of the night about your body;
@@ -452,7 +452,7 @@ scepter~
 ~
 5 16 3 0 7 0 0 8193 64 0 0
 10 2 4 3 0 0 0 0
-5 600 100
+5 600 100 100
 E
 scepter~
 The scepter is ancient, and has had a lot of time to absorb power around it.
@@ -468,7 +468,7 @@ copper dagger~
 ~
 5 15 2 3 5 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-2 5 100
+2 5 100 100
 E
 sphinx dagger~
 The pommel is the body of the sphinx, with wings spread.  The handle is
@@ -481,7 +481,7 @@ slime fountain~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 100 100 9 8 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain~
 The beautiful marble structure sends a continuous stream of water dancing
@@ -498,7 +498,7 @@ book~
 ~
 12 28 2 5 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 book~
 there are three pages worth of material that catches your attention -- page1,
@@ -578,7 +578,7 @@ A nasty looking stiletto lies here.~
 ~
 5 16 3 10 7 0 0 24577 0 4198895524 0
 9 2 4 11 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 stiletto blade glass~
 The handle is finely wrought steel, inlaid with gold; a single red ruby is
@@ -596,7 +596,7 @@ A &+ysand&n colored potion has been left here~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 50 1 5 35 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 potion~
 The liquid in the vial swirls as if it was sandy, but a small

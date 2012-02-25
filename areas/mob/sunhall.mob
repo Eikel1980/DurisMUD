@@ -8,8 +8,8 @@ sphinx golem br_c assoc8_n_0 _nobutt_~
 &+Lfor thousands of years. It will only let the worthy enter the pyramid, or
 &+Lfight to death.&N
 ~
-71399498 0 0 8 0 0 0 0 S
-OG 0 32 -1
+71399498 0 0 0 8 0 0 0 0 S
+OG 0 32 0 -1
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -25,8 +25,8 @@ shopkeeper~
 &+ybe a member in one of the desert tribes. Ahash spends his last days in the
 &+ydark sun pyramid selling supplies to the adventurers.&N
 ~
-2122 0 0 33554732 30 0 0 0 S
-PH 0 0 -1
+2122 0 0 0 33554732 30 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -40,8 +40,8 @@ sphinx golem br_c assoc8_n_0 _nobutt_~
 &+Lfor thousands of years. It will only let the worthy enter the pyramid, or
 &+Lfight to death.&N
 ~
-71399498 0 0 8 0 0 0 0 S
-OG 0 1 -1
+71399498 0 0 0 8 0 0 0 0 S
+OG 0 1 0 -1
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -55,8 +55,8 @@ sphinx golem br_c assoc8_n_0 _nobutt_~
 &+Lfor thousands of years. It will only let the worthy enter the pyramid, or
 &+Lfight to death.&N
 ~
-71399498 0 0 8 0 0 0 0 S
-OG 0 512 -1
+71399498 0 0 0 8 0 0 0 0 S
+OG 0 512 0 -1
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0

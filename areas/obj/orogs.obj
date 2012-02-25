@@ -5,7 +5,7 @@ vicious dangerous spear~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 15 3 5 0 0 0 0 0
-7 100000 100
+7 100000 100 100
 A
 18 2
 A
@@ -17,7 +17,7 @@ large mace prayer~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 6 3 6 0 0 0 0 0
-8 100000 100
+8 100000 100 100
 A
 18 2
 A
@@ -29,7 +29,7 @@ statue gruumsh~
 ~
 13 19 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #45803
 bloodstained spear~
 &+La &+rbl&+Roo&+rdst&+Rai&+rn&+Re&+rd &+yspear&n~
@@ -37,7 +37,7 @@ bloodstained spear~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 15 5 2 0 0 0 0 0
-12 100000 100
+12 100000 100 100
 A
 18 3
 A
@@ -49,7 +49,7 @@ orog banner~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orog banner~
 &+L   This banner is simple in design. A pair of &+yspears
@@ -67,7 +67,7 @@ fiery brazier bronze~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 15 4 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 4
 A
@@ -79,7 +79,7 @@ stone warhammer hammer~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 4 4 3 0 0 0 0 0
-12 100000 100
+12 100000 100 100
 A
 18 3
 A
@@ -91,7 +91,7 @@ vicious spear chieftain~
 ~
 5 19 3 0 7 0 37757328 8193 0 0 4026531839
 15 4 6 0 0 0 0 0
-14 0 100 0 0 0 4096
+14 0 100 100 0 0 0 4096
 A
 18 5
 A

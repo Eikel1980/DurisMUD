@@ -5,7 +5,7 @@ staff twin worlds _noquest_~
 ~
 4 1 3 0 15 0 33555529 16385 67 47157156 0
 60 5 5 42 0 0 0 0
-0 150456 100 16 0 0 0
+0 150456 100 100 16 0 0 0
 E
 staff twin worlds~
    &+CThis magical staff swirls in existence through two worlds, granting
@@ -22,7 +22,7 @@ fiery rift~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 78539 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shimmering rift~
    &+LThis large rift shimmers with great magic.  It currently stands open
@@ -35,7 +35,7 @@ fiery rift~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 78420 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shimmering rift~
    &+LThis large rift shimmers with great magic.  It currently stands open
@@ -48,7 +48,7 @@ freezing rift~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 78660 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 freezing rift~
    &+WPeering into this portal reveals a frozen cliffside in a realm
@@ -61,7 +61,7 @@ freezing rift~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 78502 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 freezing rift~
    &+WPeering into this portal reveals a frozen cliffside in a realm
@@ -74,7 +74,7 @@ blazing rift~
 ~
 25 15 3 0 7 0 33554433 0 0 0 0
 78739 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blazing rift~
    &+LThis portal blazes with a green, glowing flame.  Sparks crackle off
@@ -88,7 +88,7 @@ blazing rift~
 ~
 25 15 3 0 7 0 33554433 0 0 0 0
 78462 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blazing rift~
    &+LThis portal blazes with a green, glowing flame.  Sparks crackle off
@@ -102,7 +102,7 @@ rift swirling~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 78792 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rift swirling~
    &+LThis rift swirling in space like a wormhole or tornado would.  Light
@@ -116,7 +116,7 @@ rift swirling~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 78501 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rift swirling~
    &+LThis rift swirling in space like a wormhole or tornado would.  Light
@@ -130,7 +130,7 @@ skeletal remains lizard firelizard _noquest_~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-55 1400 100
+55 1400 100 100
 E
 skeletal remains lizard firelizard~
    &+LThis large skeletal carcass of a Blackrock Mountain firelizard seems
@@ -144,7 +144,7 @@ heart fire~
 ~
 8 27 2 0 12 0 262145 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 19434 100
+1 19434 100 100
 E
 heart fire~
    &+rThis heart of fire came from a fire elemental-kin with a strong
@@ -157,7 +157,7 @@ blackrock ring~
 ~
 9 11 3 0 14 0 0 3 64 0 0
 5 0 0 0 0 0 0 0
-0 68543 100
+0 68543 100 100
 E
 blackrock ring~
    &+LThis tiny blackrock ring has been carved by a master jeweler.  There
@@ -175,7 +175,7 @@ sharp blackrock axe~
 ~
 5 11 3 0 8 0 0 8193 0 0 0
 1 2 4 0 0 0 0 0
-6 15243 100
+6 15243 100 100
 E
 sharp blackrock axe~
    &+LThis blade is made of blackrock ore.
@@ -189,7 +189,7 @@ bloodied blackrock ms morningstar~
 ~
 5 11 3 0 8 0 0 8193 0 0 0
 3 2 4 0 0 0 0 0
-6 15243 100
+6 15243 100 100
 E
 sharp blackrock axe~
    &+LThis blade is made of blackrock ore.
@@ -203,7 +203,7 @@ dragonling wing~
 ~
 13 2 3 0 3 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 5 100
+3 5 100 100
 E
 dragonling wing~
    &+BThis small, broken wing still has the claws.
@@ -215,7 +215,7 @@ some blue dragonscale shoulder guards~
 ~
 9 35 3 0 12 0 0 257 64 0 0
 165 0 0 0 0 0 0 0
-8 134245 100 0 64 0 0
+8 134245 100 100 0 64 0 0
 E
 blue dragonscale mantle~
    &+BThese masterfully-made shoulder guards protect the arms and imbue
@@ -233,7 +233,7 @@ captain's key~
 ~
 18 15 3 0 7 0 4096 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 captain's key~
    &+LHeld by the captain of the Strak'Ash guard, this tiny key is
@@ -246,7 +246,7 @@ massive blackrock hammer searing fist _noquest_~
 ~
 5 15 3 0 7 0 4194576 8193 67 0 0
 4 5 5 0 0 108394 55 35
-0 0 100
+0 0 100 100
 E
 massive blackrock hammer searing fist~
    &+LThis massive hammer is made of pure blackrock, forged to utter
@@ -279,7 +279,7 @@ proc bostas proc1 _noquest_~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 6 6 0 0 110394 55 25
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+YBostas Firebraid suddenly jumps back and starts breathing in, puffing his
@@ -295,7 +295,7 @@ scepter bostas firebraid~
 ~
 8 24 3 0 15 0 4097 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 459685 100
+2 459685 100 100
 E
 scepter bostas firebraid~
    &+YThis solid golden scepter was the personal weapon of the great
@@ -309,7 +309,7 @@ band eldrich fire~
 ~
 9 1 1 0 15 0 1 3 64 0 0
 0 0 0 5 0 0 0 0
-0 145667 100
+0 145667 100 100
 E
 band eldrich fire~
    &+YThis tiny band of burning fire glows magically.
@@ -325,7 +325,7 @@ flaming boots~
 ~
 9 1 3 0 15 0 33554433 65 64 0 0
 55 0 0 3 0 0 0 0
-0 54343 100 536870912 1 0 0
+0 54343 100 100 536870912 1 0 0
 E
 flaming boots~
    &+MThis pair of boots burns with a magical eldrich fire.
@@ -341,7 +341,7 @@ chunk blackrock ore~
 ~
 8 19 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 54545 100
+5 54545 100 100
 E
 chunk blackrock ore~
    &+CThis chunk of blackrock is pure and very heavy.
@@ -353,7 +353,7 @@ tiny endurium earring~
 ~
 9 15 3 0 7 0 0 524289 64 0 0
 5 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny endurium earring~
    &+LThis earring is made of shiny endurium, an extremely rare ore found
@@ -370,7 +370,7 @@ receipt~
 ~
 8 28 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 receipt~
    &+WThis note says:  'I vow that I gave this note to the guy who found me
@@ -384,7 +384,7 @@ blackrock pike~
 ~
 5 11 3 0 10 0 4194304 8193 0 0 0
 8 2 8 0 0 0 0 0
-8 9545 100
+8 9545 100 100
 E
 blackrock pike~
    &+LThis long polearm is made of solid blackrock.
@@ -398,7 +398,7 @@ scimitar frostsharn~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 2 7 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scimitar frostsharn~
    &+COne of the shining blades of the FrostSharn Orcs.
@@ -412,7 +412,7 @@ green orb mystics~
 ~
 8 15 3 0 7 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 E
 green orb mystics~
    &+GThis orb is quite large, yet not very heavy.  It glows with a faint
@@ -427,7 +427,7 @@ scales _noquest_~
 ~
 8 35 5 0 11 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-30 15456 100
+30 15456 100 100
 E
 scales~
    &+LThese scales have been carefully gutted from the hide of the great
@@ -441,7 +441,7 @@ spiked platemail azharul dragons _noquest_~
 ~
 9 35 3 0 7 0 1024 9 64 87736763 0
 155 0 0 5 1 0 0 0
-10 145343 100 134217728 0 0 0
+10 145343 100 100 134217728 0 0 0
 E
 spiked platemail azharul dragons~
    &+LThis spiked platemail is made of the scales of an elder Azharul dragon,
@@ -459,7 +459,7 @@ black duergar eyepatch~
 ~
 9 15 3 0 7 0 0 131073 0 0 0
 10 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black duergar eyepatch~
    &+LThis eyepatch is made of fine duergar thread, stitched to
@@ -478,7 +478,7 @@ shiny black whip~
 ~
 5 3 3 0 8 0 0 8193 0 0 0
 14 3 3 0 8 0 0 0
-1 4564 100
+1 4564 100 100
 E
 shiny black whip~
    &+LThis whip looks quite painful.
@@ -492,7 +492,7 @@ Frozen firmly into the ground, &+Wa snowy-covered skeleton sustains the winds.~
 ~
 13 10 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skeleton~
    &+WThis skeleton was of a massive creature, possibly a dinosaur
@@ -507,7 +507,7 @@ harpy proc proc1 _noquest_~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 4 4 0 0 325 40 9
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+WSuddenly $n opens its &+Csilvery&+W wings and summons a gust of &+Bice!
@@ -521,7 +521,7 @@ harpy proc2~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 4 4 0 0 455 40 10
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+W$n throws a &+Cblast&+W of &+cice &+Wat $N&+W, freezing him &+Cdead on&+W!
@@ -535,7 +535,7 @@ harpy proc3~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 4 4 0 0 111 40 10
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+W$n swirls around and releases hundreds of &+Cpiercing icicles&+W!!
@@ -549,7 +549,7 @@ hunting hat~
 ~
 9 15 3 0 7 0 4096 17 64 0 0
 15 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hunting hat~
    &+gThere is a small tag on the inside of this hat that reads:
@@ -566,7 +566,7 @@ marksman's quiver marksman~
 ~
 9 3 3 0 7 0 0 1048577 64 0 0
 9 0 0 4 0 0 0 0
-1 15454 100
+1 15454 100 100
 E
 marksman's quiver marksman~
    &+LThis quiver has the mark of the &+CFrostSharn Orcs&+L.
@@ -582,7 +582,7 @@ two-handed war axe waraxe~
 ~
 5 22 3 0 9 0 4194304 8193 1 0 0
 1 3 4 0 0 0 0 0
-12 11985 100
+12 11985 100 100
 E
 two-handed war axe waraxe~
    &+CThis silvery war axe of this FrostSharn Orcs has two huge double-edged
@@ -598,7 +598,7 @@ frosty shortsword sword~
 ~
 5 16 3 0 10 0 0 8193 0 0 0
 9 2 5 0 0 0 0 0
-4 9545 100
+4 9545 100 100
 E
 i~
    &+WThis shortsword is covered in a silvery sheen of frost.
@@ -612,7 +612,7 @@ fur-lined fur lined shoulder guards~
 ~
 9 12 3 0 7 0 0 257 0 0 0
 13 0 0 0 0 0 0 0
-6 14343 100
+6 14343 100 100
 A
 26 8
 A
@@ -624,7 +624,7 @@ silver hoop earring~
 ~
 9 22 3 0 10 0 1 524289 64 0 0
 8 0 0 2 0 0 0 0
-0 10454 100
+0 10454 100 100
 E
 silver hoop earring~
    &+CThis tiny earring is made of a thick hoop of silver.
@@ -640,7 +640,7 @@ bloody heart _noquest_~
 ~
 8 2 3 0 6 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bloody heart~
    &+rThis gutted orcish heart still drips with the blood of its fallen owner.
@@ -652,7 +652,7 @@ bloody heart _noquest_~
 ~
 8 2 3 0 6 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bloody heart~
    &+rThis gutted orcish heart still drips with the blood of its fallen owner.
@@ -664,7 +664,7 @@ bloody heart _noquest_~
 ~
 8 2 3 0 6 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bloody heart~
    &+rThis gutted orcish heart still drips with the blood of its fallen owner.
@@ -676,7 +676,7 @@ bloody heart _noquest_~
 ~
 8 2 3 0 6 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bloody heart~
    &+rThis gutted orcish heart still drips with the blood of its fallen owner.
@@ -688,7 +688,7 @@ tribal warlord mask~
 ~
 9 6 3 0 7 0 0 262145 0 0 0
 14 0 0 3 0 0 0 0
-1 15456 100 32768 0 32 0
+1 15456 100 100 32768 0 32 0
 E
 tribal warlord mask~
    &+LThis mask bares the tribal marks of the orcish warlords of Krathmor.
@@ -704,7 +704,7 @@ brenshan harpy feather~
 ~
 8 50 3 0 3 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 4565 100
+0 4565 100 100
 E
 brenshan harpy feather~
    &+WThis feather has been removed from one of the harpies of the Alteran Valley.
@@ -716,7 +716,7 @@ straka harpy feather _noquest_~
 ~
 8 50 3 0 3 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 4565 100
+0 4565 100 100
 E
 brenshan harpy feather~
    &+WThis feather has been removed from one of the harpies of the Alteran Valley.
@@ -728,7 +728,7 @@ necklace frost harpy feathers~
 ~
 9 15 3 0 7 0 0 5 64 0 0
 15 0 0 0 0 0 0 0
-0 0 100 0 92 0 0
+0 0 100 100 0 92 0 0
 E
 necklace frost harpy feathers~
    &+CThis necklace of frosty harpy feathers glows with a chilling presence.
@@ -744,7 +744,7 @@ scouting report~
 ~
 8 28 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 scouting report~
    &+WThis scouting report reads 'Lord Skinjar, there are considerable
@@ -759,7 +759,7 @@ carefully packaged note~
 ~
 8 28 2 0 6 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 carefully packaged note~
    &+yThis note has been packaged carefully in a long wooden tube, corked
@@ -774,7 +774,7 @@ frozen corpse orc~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 15 0 0 15 0 0 0 0
-0 0 100
+0 0 100 100
 E
 frozen corpse orc~
    &+CThis corpse is of an orcish scout of some sort, wearing armor that
@@ -790,7 +790,7 @@ ringmail emblem~
 ~
 9 15 3 0 7 0 1024 9 64 129745339 0
 114 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ringmail emblem~
    &+LA suit of heavy ringmail bearing a sword and axe emblem crest - the
@@ -807,7 +807,7 @@ crown thousand frozen shards~
 ~
 9 16 3 0 7 0 1 17 64 0 0
 15 0 0 0 0 0 0 0
-4 15434 100 4 64 0 0
+4 15434 100 100 4 64 0 0
 E
 crown thousand frozen shards~
    &+lThis crown is made up of a thousand frozen shards, encircling the
@@ -824,7 +824,7 @@ silverleaf~
 ~
 8 30 3 0 13 0 4097 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 6555 100
+0 6555 100 100
 E
 silverleaf~
    &+GThis small &+Csilver&+Gleaf &+Cshimmers &+Gwith a slight, natural magic.
@@ -836,7 +836,7 @@ silverleaf curing potion~
 ~
 10 15 3 0 7 0 1 16385 64 0 0
 50 275 9 141 0 0 0 0
-0 0 100
+0 0 100 100
 E
 silverleaf curing potion~
    &+GThis potion is made of processed silverleaf.  It glows with curing powers.
@@ -848,7 +848,7 @@ half-eaten corpse~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 half-eaten corpse~
    &+rThis corpse has been partially eaten by the wildlife of the Shaeradin
@@ -862,7 +862,7 @@ moongaze longbow bow~
 ~
 6 6 3 0 14 0 4198401 8193 64 0 0
 120 120 0 1 0 0 0 0
-1 34592 100 268435456 0 0 0
+1 34592 100 100 268435456 0 0 0
 E
 moongaze longbow bow~
    &+MThis night elven longbow has been crafted by a master artisan.  It is
@@ -881,7 +881,7 @@ small orog figurine~
 ~
 8 20 1 0 9 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 3459 100
+1 3459 100 100
 E
 small orog figurine~
    &+yThis small bronze figurine is that of an orog head.  However, the eyes
@@ -897,7 +897,7 @@ pirate's key old~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pirate's key old~
    &+RLegend has it this key will open the chest chest of ancient pirates
@@ -910,7 +910,7 @@ sharp ravasaur tooth~
 ~
 5 15 3 0 7 0 4096 8193 0 0 0
 2 1 11 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sharp ravasaur tooth~
    &+WThis sharp tooth was yanked from the jaws of a vicious ravasaur.
@@ -926,7 +926,7 @@ ravasaur tooth necklace~
 ~
 9 15 3 0 7 0 33554432 5 64 0 0
 2 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ravasaur tooth necklace~
    &+LThis necklace is made of six large ravasaur &+Wteeth&+L.  It hum with
@@ -943,7 +943,7 @@ endurium ore~
 ~
 8 25 4 0 11 0 4097 16385 64 0 0
 0 0 0 0 0 0 0 0
-10 114535 100
+10 114535 100 100
 E
 endurium ore~
    &+LThis is some quality endurium ore.
@@ -955,7 +955,7 @@ segmented endurium belt~
 ~
 9 25 3 0 14 0 1 2049 64 0 0
 14 0 0 0 0 0 0 0
-8 54333 100
+8 54333 100 100
 E
 segmented endurium belt~
    &+LThis belt is made of segmented lifegiving endurium.
@@ -971,7 +971,7 @@ void crystal~
 ~
 8 1 2 0 15 0 33554433 8404993 66 0 0
 0 0 0 0 0 0 0 0
-20 248456 100
+20 248456 100 100
 E
 void crystal~
    &+LThis magical crystal posesses a dark energy that is not of this world.
@@ -983,7 +983,7 @@ bloody head thel samar thelsamar~
 ~
 8 2 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 bloody head thel samar thelsamar~
    &+rThis head glistens with fresh blood.
@@ -995,7 +995,7 @@ finely woven crystal bracelet~
 ~
 9 8 3 0 14 0 1024 4097 64 40275940 0
 8 0 0 0 0 0 0 0
-1 15349 100
+1 15349 100 100
 E
 woven crystal bracelet~
    &+WThis bracelet is made of woven white and magenta crystal.  It has a shine
@@ -1012,7 +1012,7 @@ moonstone~
 ~
 8 27 2 0 11 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 143859 100
+0 143859 100 100
 E
 moonstone~
    &+LThis small fist-sized moonstone glows with a dark and powerful magic.
@@ -1024,7 +1024,7 @@ silver elven longsword sword~
 ~
 5 22 3 0 11 0 1 8193 66 0 0
 5 3 4 0 0 0 0 0
-3 46485 100
+3 46485 100 100
 E
 silver elven longsword sword~
    &+CThis elven longsword has been finely crafted from pure elven silver.
@@ -1038,7 +1038,7 @@ saber felwood kings~
 ~
 5 22 3 0 11 0 513 8193 66 0 3084
 5 3 5 0 0 41065 30 35
-3 85945 100
+3 85945 100 100
 E
 saber felwood kings~
    &+CThis legendary silver elven saber has been passed down from generation
@@ -1066,7 +1066,7 @@ golden signet zorana felwood~
 ~
 9 24 3 0 14 0 4096 3 0 0 0
 3 0 0 0 0 0 0 0
-0 264567 100
+0 264567 100 100
 E
 golden signet zorana felwood~
    &+YThis golden ring bares the crest of crest of Lord Zorana Felwood.
@@ -1080,7 +1080,7 @@ huge cudgel diorite~
 ~
 5 11 4 0 9 0 4194304 8193 0 0 0
 10 2 4 0 0 0 0 0
-14 23875 100
+14 23875 100 100
 E
 huge cudgel diorite~
    &+LThis long diorite cudgel is very heavy and very large.
@@ -1094,7 +1094,7 @@ message bottle~
 ~
 8 7 2 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 45 100
+1 45 100 100
 E
 message bottle~
    &+WOne can make out the message in this bottle:
@@ -1111,7 +1111,7 @@ shadowmage band~
 ~
 9 1 1 0 15 0 33554432 3 64 0 0
 8 0 0 0 0 0 0 0
--10 14563 100
+-10 14563 100 100
 E
 shadowmage band~
    &+LThis tiny mage band is made of pure shadows that swirl in and out,
@@ -1128,7 +1128,7 @@ proc thelsamar proc1 _noquest_~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 6 6 0 0 166 55 9
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+LThel'Samar Deathweave releases a black haze of death from his hands!
@@ -1144,7 +1144,7 @@ deathweave shroud ectoplasm~
 ~
 9 1 3 0 15 0 1 9 64 0 0
 60 0 0 0 0 0 0 0
--100 188574 100 2 0 0 0
+-100 188574 100 100 2 0 0 0
 E
 deathweave shroud ectoplasm~
    &+mThis shroud is covered and runes, it is worn like a robe, but the
@@ -1161,7 +1161,7 @@ shadow staff~
 ~
 4 1 3 0 7 0 33554433 16385 64 0 0
 60 7 7 166 0 0 0 0
--10 85456 100
+-10 85456 100 100
 E
 shadow staff~
    &+LThis staff of pure shadow can summon forth the haze of death.
@@ -1173,7 +1173,7 @@ basilisk egg~
 ~
 8 45 2 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 8456 100
+1 8456 100 100
 E
 basilisk egg~
    &+gThis basilisk egg is fresh!
@@ -1185,7 +1185,7 @@ basilisk proc1 proc~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 4 4 0 0 101 51 11
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &N$n &+Glashes out and bites hard into &+W$N&+G!
@@ -1199,7 +1199,7 @@ earth crystal~
 ~
 8 1 3 0 15 0 33554433 16385 64 0 0
 0 0 0 0 0 0 0 0
-2 234995 100
+2 234995 100 100
 E
 earth crystal~
    &+yThis earth crystal glows with the magical forces of this realm.
@@ -1211,7 +1211,7 @@ chest~
 ~
 15 15 3 0 7 0 8392704 16385 0 0 0
 45 29 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
    &+LA large iron lock prevents access into this large chest, property
@@ -1224,7 +1224,7 @@ pair mailed dragoon gloves~
 ~
 9 18 3 0 14 0 0 129 64 0 0
 8 0 0 0 0 0 0 0
-2 33453 100
+2 33453 100 100
 E
 pair mailed dragoon gloves~
    &+rThese dragons bear markings of dwarven design.
@@ -1240,7 +1240,7 @@ red pirate bandana~
 ~
 9 3 3 0 8 0 0 17 0 0 0
 7 0 0 0 0 0 0 0
-0 6554 100
+0 6554 100 100
 E
 red pirate bandana~
    &+RThis red bandana is worn by one of the pirates of Blackbeard's crew.
@@ -1256,7 +1256,7 @@ powerful dwarven brew~
 ~
 10 7 2 0 10 0 0 1 0 0 0
 56 248 248 248 0 0 0 0
-0 15453 100
+0 15453 100 100
 E
 powerful dwarven brew~
    &+YQuaffing this dwarven brew would make anyone feel bigger.
@@ -1268,7 +1268,7 @@ nether ore~
 ~
 8 27 3 0 15 0 33554433 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 85944 100
+5 85944 100 100
 E
 nether crystal~
    &+LThis &+Mcrystal&+L glows with a powerful magic.
@@ -1280,7 +1280,7 @@ nether crystal~
 ~
 8 27 3 0 15 0 33554433 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 156453 100
+5 156453 100 100
 E
 nether crystal~
    &+LThis &+Mcrystal&+L glows with a powerful magic.
@@ -1292,7 +1292,7 @@ plagued skull~
 ~
 8 10 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 645 100
+1 645 100 100
 E
 plagued skull~
    &+WThis skull is covered in a &+Lnasty&+W plagued.  It was removed from
@@ -1305,7 +1305,7 @@ silver cutlass cut~
 ~
 5 22 3 0 7 0 0 8193 0 0 0
 5 3 4 0 0 0 0 0
-0 15455 100
+0 15455 100 100
 E
 silver cutlass~
    &+CThis silver cutlass is long, elegant, and sharpened to a deadly edge.
@@ -1319,7 +1319,7 @@ silver dagger dag~
 ~
 5 22 3 0 11 0 0 8193 0 0 0
 2 2 3 0 0 0 0 0
-0 15456 100
+0 15456 100 100
 E
 silver dagger dag~
    &+LThis &+Csilver &+Ldagger has a deadly curve.
@@ -1333,7 +1333,7 @@ skeletal remains~
 ~
 15 10 3 0 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skeletal remains~
 &+WThese fleshy bones are the only remains left of Captain Blackbeard.
@@ -1345,7 +1345,7 @@ chest~
 ~
 15 15 3 0 7 0 4096 16385 64 0 0
 50 29 78460 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
    &+RThis chest is utterly ancient and contains some sort of treasure.
@@ -1357,7 +1357,7 @@ ether crystal~
 ~
 8 25 3 0 7 0 33554433 16385 64 0 0
 0 0 0 0 0 0 0 0
-3 149558 100
+3 149558 100 100
 E
 ether crystal~
    &+WThis powerful crystal radiates with an immense power of ether.
@@ -1369,7 +1369,7 @@ gremlin claw~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 2 8 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gremlin claw~
    &+LThis claw has been removed from the fingers of a gremlin.
@@ -1383,7 +1383,7 @@ tower key~
 ~
 18 15 3 0 7 0 1 16385 0 0 0
 0 50 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tower key~
 &+LThis small, brittle key opens the doors to the towers of Caer Tannad and
@@ -1396,7 +1396,7 @@ golden githzerai ring~
 ~
 9 24 1 0 12 0 4097 3 64 0 0
 4 0 0 0 0 0 0 0
-0 16556 100
+0 16556 100 100
 E
 golden githzerai ring~
    &+YThis tiny ring has the signet of a githzerai knight guild on it.  The
@@ -1414,7 +1414,7 @@ rucksack sack plane-walking plane walking~
 ~
 15 1 3 0 15 0 1 8404993 64 0 0
 295 5 0 300 0 0 0 0
--200 88564 100
+-200 88564 100 100
 E
 rucksack sack plane-walking plane walking~
    &+LThis glorious rucksack has numerous githzerai runes scrolled across it.
@@ -1426,7 +1426,7 @@ scattered bones~
 ~
 13 10 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scattered bones~
    &+WThese bones are old and dirty.  Some of them have been gnawed on while
@@ -1440,7 +1440,7 @@ debris~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 debris~
    &+LDebris including chunks of wood and cloth as well as shredded, dirty
@@ -1453,7 +1453,7 @@ life shard~
 ~
 8 23 3 0 15 0 4097 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 life shard~
    &+YThis simple shard glows with the life of a powerful hero.
@@ -1465,7 +1465,7 @@ imp proc proc1 _noquest_~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 4 4 0 0 431 46 12
-0 0 100 0 0 0 256
+0 0 100 100 0 0 0 256
 E
 _room_msg~
 &+rSuddenly $n &+ropens its&+r wings and summons a burst of &+Yflame!
@@ -1479,7 +1479,7 @@ blackrock dagger~
 ~
 5 11 3 0 10 0 0 8193 0 0 0
 2 2 3 0 0 0 0 0
-8 9545 100
+8 9545 100 100
 E
 blackrock pike~
    &+LThis long polearm is made of solid blackrock.
@@ -1493,7 +1493,7 @@ seafarers pantaloons~
 ~
 9 3 3 0 7 0 67117056 33 0 0 0
 20 0 0 0 0 0 0 0
-1 14679 100
+1 14679 100 100
 E
 seafarers pantaloons~
 &+gThese elegant silken pants are ballooned and have a nice sheen to them.
@@ -1509,7 +1509,7 @@ hidden crevice~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 78848 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hidden crevice~
 &+LThis hidden crevice lies between two massive moss-covered rocks.
@@ -1523,7 +1523,7 @@ dungeon key~
 ~
 18 15 3 0 7 0 8388609 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dungeon key~
 &+LThis key looks usable, although it is old and cracked...
@@ -1535,7 +1535,7 @@ tail krizzix _noquest_~
 ~
 9 15 3 0 7 0 33554432 33554433 64 0 0
 15 0 0 0 0 0 0 0
-0 0 100 536870912 12480 0 0
+0 0 100 100 536870912 12480 0 0
 E
 tail krizzix~
 &+LThis writhing red and black dragons tail glows with an unholy magic.
@@ -1551,7 +1551,7 @@ krizzix proc1 proc 1 _noquest_~
 ~
 5 15 3 0 7 0 8388610 8192 0 0 0
 10 5 5 0 0 422 55 20
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+L$n &+Rholds his glowing hands up to the portal...
@@ -1565,7 +1565,7 @@ set spiked dragonscale leggings~
 ~
 9 35 3 0 12 0 4096 33 0 0 0
 15 0 0 5 0 0 0 0
-5 15343 100
+5 15343 100 100
 E
 set spiked dragonscale leggings~
    &+LThese spiked leggings are made from the sewn scales of a red dragon.
@@ -1581,7 +1581,7 @@ claw krizzix~
 ~
 5 10 3 0 13 0 4097 8193 64 0 0
 2 2 4 0 0 186 56 35
-2 15653 100
+2 15653 100 100
 E
 claw krizzix~
 &+LThis claw has been removed from the great dragonlord Krizzix.
@@ -1609,7 +1609,7 @@ seal fire dragons~
 ~
 9 1 3 0 12 0 4097 3 64 0 0
 7 0 0 3 0 0 0 0
--10 150000 100 536870912 0 0 4096
+-10 150000 100 100 536870912 0 0 4096
 E
 seal fire dragons~
 &+RThis glorious seal is a mark of honor of the great fire dragon lords.
@@ -1625,7 +1625,7 @@ burning portal~
 ~
 25 15 3 0 7 0 1 0 64 0 0
 15907 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 burning portal~
 &+RFloating here, this portal burns with an otherworldly magic.
@@ -1637,7 +1637,7 @@ set spiked dragonscale arm plates~
 ~
 9 35 3 0 12 0 4096 257 64 0 0
 15 0 0 0 0 0 0 0
-5 15343 100
+5 15343 100 100
 E
 set spiked dragonscale arm plates~
    &+LThese arm plates have been pieced together by the scales of a &+Rred dragon&N.
@@ -1653,7 +1653,7 @@ high boots night elves~
 ~
 9 14 3 0 14 0 0 65 64 0 0
 15 0 0 4 0 0 0 0
-0 26343 100
+0 26343 100 100
 E
 high boots night elves~
    &+MThese masterfully-crafted night elven boots are made of thick, black leather
@@ -1670,7 +1670,7 @@ life shard~
 ~
 8 23 3 0 15 0 4097 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 life shard~
    &+YThis simple shard glows with the life of a powerful hero.
@@ -1682,7 +1682,7 @@ life shard~
 ~
 8 23 3 0 15 0 4097 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 life shard~
    &+YThis simple shard glows with the life of a powerful hero.
@@ -1694,7 +1694,7 @@ life shard~
 ~
 8 23 3 0 15 0 4097 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 life shard~
    &+YThis simple shard glows with the life of a powerful hero.
@@ -1706,7 +1706,7 @@ burning eyes overlord dragon~
 ~
 9 2 2 0 7 0 4097 131073 64 0 0
 5 0 0 1 0 0 0 0
-0 55004 100 8 0 0 0
+0 55004 100 100 8 0 0 0
 E
 burning eyes overlord dragons~
    &+RCarved out of the &+Wskull &+Rof the &+Yfire &+Ldragon &+RKrizzix, &+Lthese
@@ -1724,7 +1724,7 @@ burning crown krizzix~
 ~
 9 8 4 0 15 0 1025 17 64 129626203 0
 15 0 0 3 0 0 0 0
-4 164589 100 16 0 0 0
+4 164589 100 100 16 0 0 0
 E
 burning crown krizzix~
    &+LAlthough quite large, this dragon crystalline crown is not as heavy as
@@ -1743,7 +1743,7 @@ key blackbeard's~
 ~
 18 24 3 0 7 0 8192 1 64 0 0
 0 100 0 0 0 0 0 0
-0 15343 100
+0 15343 100 100
 E
 key blackbeard's~
    &+YThis golden key, held by the fallen wife of Captain Blackbeard, opens the
@@ -1756,7 +1756,7 @@ massive tied-up crate~
 ~
 29 5 3 0 7 0 0 0 0 0 0
 340 78781 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 massive tied-up crate~
    &+yThis massive crate sits here on the far side of the room, much more easily
@@ -1776,7 +1776,7 @@ remains blackbeard's wife bones flesh hair~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 remains blackbeard's wife bones flesh hair~
    &+LThe watery, deathly remains of Blackbeard's wife float here in a pool, at

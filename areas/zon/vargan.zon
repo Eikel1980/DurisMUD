@@ -6,20 +6,20 @@
 *
 *
 D 0 2127 3 0 100 0 0 0
-*     west exit from " Ancient Storeroom" to
-*     " Scrag River" - open
+*     west exit from "Ancient Storeroom" to
+*     "Scrag River" - open
 *
 D 0 2128 1 0 100 0 0 0
-*     east exit from " Scrag River" to
-*     " Ancient Storeroom" - open
+*     east exit from "Scrag River" to
+*     "Ancient Storeroom" - open
 *
 D 0 2151 1 0 100 0 0 0
-*     east exit from " Ancient Passageway" to
-*     " Limestone Cavern" - open
+*     east exit from "Ancient Passageway" to
+*     "Limestone Cavern" - open
 *
 D 0 2152 3 0 100 0 0 0
-*     west exit from " Limestone Cavern" to
-*     " Ancient Passageway" - open
+*     west exit from "Limestone Cavern" to
+*     "Ancient Passageway" - open
 *
 *
 O 0 2126 2 2127 100 0 0 0          * an ancient shoulder plate

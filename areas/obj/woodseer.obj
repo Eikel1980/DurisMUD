@@ -5,7 +5,7 @@ twisted key~
 ~
 18 16 2 0 7 0 8454144 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 twisted key~
 Strange grooves line the twisted key.  Obviously the key was designed for an
@@ -19,7 +19,7 @@ A supple suit of &+Galligatorskin armor&N lies here.~
 ~
 9 13 2 0 7 0 671096832 9 64 4198895524 0
 30 3 1 3 0 0 0 0
-3 80000 100
+3 80000 100 100
 E
 armor alligatorskin~
 Beautiful craftsmanship has gone into the creation of this fine suit of armor.
@@ -37,7 +37,7 @@ A short sword made of &+rreddish&N metal lies here.~
 ~
 5 16 2 0 10 0 0 8193 66 4198895524 0
 9 1 4 3 0 0 0 0
-1 7500 100
+1 7500 100 100
 E
 sword short shortsword~
 An extremely light metal with an odd &+rred tint&N to it has been used to make
@@ -56,7 +56,7 @@ A very sharp, well-polished &+Wshort sword&N lies here.~
 ~
 5 16 2 0 7 0 0 8193 64 4198895524 0
 9 1 6 3 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 sword short shortsword~
 Years of polishing and sharpening have honed this fine weapon to a razor edge
@@ -73,7 +73,7 @@ leather armor~
 ~
 9 13 2 0 7 0 536879104 9 0 4165209604 0
 20 3 1 3 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 leather armor~
 &+yFine soft leather has been carefully stitched together and then hardened&N
@@ -87,7 +87,7 @@ A &+ybrass&N tube full of glass &+Mpr&+Yis&+Rms&N lies here.~
 ~
 12 7 2 0 7 0 262144 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 looking glass~
 This long &+ybrass tube&N has been filled with carefully ordered magical glass
@@ -102,7 +102,7 @@ leather tunic~
 ~
 9 13 2 0 7 0 8192 9 0 4165209604 0
 7 3 1 3 0 0 0 0
-1 300 100
+1 300 100 100
 E
 leather tunic~
 &+yInexpensive common leather has been stitched together to create a small&N
@@ -116,7 +116,7 @@ A small halfling sized pike with a jagged tip lies here.~
 ~
 5 16 3 0 7 0 4194304 8193 0 4198895524 0
 8 2 6 11 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 pike~
 The long thin tip of the pike has a particularily jagged edge to help it pass
@@ -130,7 +130,7 @@ robe robes cloth~
 ~
 11 3 2 0 7 0 1024 9 66 37883812 0
 0 0 0 0 0 0 0 0
-6 20000 100
+6 20000 100 100
 E
 robe robes cloth~
 &+LThese dark magical robes where designed to both protect the judge wearing&N
@@ -149,7 +149,7 @@ A cathedral guard's soft white tunic lies here.~
 ~
 9 3 2 0 7 0 8192 9 2 4173708804 0
 6 3 1 3 0 0 0 0
-0 500 100
+0 500 100 100
 E
 tunic white~
 Brilliant &+Wwhite&N threads have been used to create a very fine linen tunic
@@ -164,7 +164,7 @@ A short club of hardened &+rjodani wood&N lies here.~
 ~
 5 6 3 0 7 0 8192 8193 66 4165209604 0
 10 1 6 6 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 cudgel jodani club~
 The &+rjodani wood&N stick has been specially hardened to make it a powerful
@@ -180,7 +180,7 @@ A mace with a small polished bald ball at the end lies here.~
 ~
 5 16 2 0 7 0 0 8193 66 4165209604 0
 6 1 6 7 0 0 0 0
-5 1500 100
+5 1500 100 100
 E
 mace~
 Unlike many of the wicked looking spiked maces that many warriors and clerics
@@ -194,7 +194,7 @@ robe robes~
 ~
 11 3 2 0 7 0 8192 9 2 0 0
 0 0 0 0 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 robe robes~
 Several different beautiful &+ggreen&N threads have been used in the weaving of
@@ -212,7 +212,7 @@ cloth robe robes~
 ~
 11 3 2 0 7 0 0 9 66 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 cloth robe robes~
 &+WThe cloth is so thin that it is almost transparent.  There is no way this&N
@@ -232,7 +232,7 @@ cloak red~
 ~
 11 3 2 0 7 0 2170880 1025 0 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 cloak red~
 &+RBright blood-red cloth has been used to create a fine cloak with the symbol&N
@@ -250,7 +250,7 @@ blue robe~
 ~
 11 3 2 0 7 0 537927680 9 66 0 0
 0 0 0 0 0 0 0 0
-1 2500 100
+1 2500 100 100
 E
 blue robe~
 &+BBlue silk has been embroidered with a &+Wwhite waterfall&+Bto indicate the&N
@@ -268,7 +268,7 @@ cloak elegant~
 ~
 11 3 3 0 7 0 1056768 1025 64 0 0
 0 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 cloak elegant~
 Soft silken fabric has been carefully embroidered with beautiful patterns of
@@ -286,7 +286,7 @@ muddy boots~
 ~
 9 13 2 0 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-4 3000 100
+4 3000 100 100
 E
 muddy boots~
 Layers of mud cover these plain boots, boots that have obviously seen a great
@@ -303,7 +303,7 @@ A loggers axe lies here waiting to be used.~
 ~
 5 16 2 0 7 0 4194304 8193 0 0 0
 1 1 3 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 axe ax~
 The heavy head of the axe has been designed to cut wood and not for use as a
@@ -322,7 +322,7 @@ An embroidered silk dress lies here.~
 ~
 11 3 2 0 7 0 8192 9 0 0 0
 0 0 0 0 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 silk embroidered~
 Fine silk has been used to create this wonderful dress and the artful
@@ -338,7 +338,7 @@ belt tool~
 ~
 11 13 2 0 7 0 8192 2049 64 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 belt tool~
 Small loops line the thin leather belt, designed to hold a variety of tools
@@ -356,7 +356,7 @@ breastplate white plate~
 ~
 9 16 3 0 7 0 0 9 2 4173708804 0
 12 3 6 3 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 plate white~
 &+WThis fine white breast plate has been highly polished so that it shines in &N
@@ -371,7 +371,7 @@ jodani wood chip~
 ~
 11 6 2 0 7 0 69632 524289 2 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 jodani wood chip~
 &+yThis small &+rjodani&N &+ywood chip has a small tip hanging out of it that&N
@@ -386,7 +386,7 @@ stag~
 ~
 34 6 2 0 7 0 12288 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 stag~
 &+rGorgeous red jodani wood has been carved into the figure of a rearing stag&N
@@ -402,7 +402,7 @@ platinum coins~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 platinum coins~
 A few ordinary platinum coins lie here, discarded by someone with more money
@@ -415,7 +415,7 @@ flute instrument~
 ~
 32 18 2 0 7 0 134480896 16385 64 8487456 0
 184 20 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 flute~
 &+cA careful dwarven script along the side of the flute says 'For Lomar, Friend&N
@@ -432,7 +432,7 @@ mandolin instrument~
 ~
 13 6 3 0 7 0 8400896 1 0 0 0
 0 0 0 0 0 0 0 0
-2 1 25
+2 1 25 100
 E
 mandolin~
 The poor instrument looks forlorn as it has been treated terribly by whatever
@@ -447,7 +447,7 @@ tuxedo black~
 ~
 11 3 2 0 7 0 536870912 9 0 0 0
 0 0 0 0 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 tuxedo black~
 Made of the finest black cloth, this tuxedo is an excellent addition to ones
@@ -462,7 +462,7 @@ silver engraved earring~
 ~
 9 22 2 0 13 20 4096 524289 65 0 0
 5 14 0 3 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 silver engraved earring~
 &+cAn intricate tree has been engraved into the flat sides of the tear-drop&N
@@ -479,7 +479,7 @@ tool~
 ~
 5 16 2 0 7 0 0 8193 64 4194697632 0
 2 1 3 11 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 tool~
 The long thin tool ends in an extremely sharp point that is specifically
@@ -496,7 +496,7 @@ ring dragonbone~
 ~
 9 10 2 0 14 30 136388608 3 0 0 0
 6 1 0 3 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 ring dragonbone~
 One of the finger bones from a dragon's claw has been carved into a small ring
@@ -513,7 +513,7 @@ A well-made short sword with a bone handle lies here.~
 ~
 5 10 2 0 7 0 134250496 8193 64 0 0
 9 1 4 3 0 0 0 0
-3 20000 100
+3 20000 100 100
 E
 short sword bone~
 A carved bone grip melds with the sword to create an artistic, and well-
@@ -531,7 +531,7 @@ An elegantly carved &+Lebonwood&N staff lies here.~
 ~
 4 6 2 0 7 0 4194304 16385 64 0 0
 35 1 1 7 0 0 0 0
-3 200 100
+3 200 100 100
 E
 ebonwood staff~
 Fashioned of hard ebonwood this fine walking stick has received some ornate
@@ -553,7 +553,7 @@ silk cloak~
 ~
 11 3 2 0 7 0 8192 1025 64 0 0
 0 0 0 0 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 silk cloak~
 Made of the finest silk and embroidered with the symbol of a small thin tower,
@@ -572,7 +572,7 @@ bracelet glass~
 ~
 9 19 2 0 13 0 134288384 4097 64 8515584 0
 5 11 1 3 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 bracelet glass~
 The glass was blown in long thin hollow strands that were then woven together
@@ -590,7 +590,7 @@ black stiletto~
 ~
 5 16 2 0 7 0 150996224 8193 64 77824 0
 2 1 3 11 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 black stiletto~
 Thin black steel with a razor's edge forms the blade, and dark black leather
@@ -608,7 +608,7 @@ ivory spear~
 ~
 5 34 3 0 7 0 20971536 8193 64 4198895524 0
 8 1 7 11 0 0 0 0
-4 20000 100
+4 20000 100 100
 E
 ivory spear~
 &+WBeautiful ivory was used to make both the shaft and the blade of this&N
@@ -626,7 +626,7 @@ a &+gtroll-hide cloak&N~
 ~
 9 14 2 0 7 0 134283264 1025 64 4198895524 0
 10 9 1 5 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 cloak troll~
 Rough tanned leather has been made from the hide of a troll and used to make
@@ -643,7 +643,7 @@ A dusty &+yyellow&N linen hat lies here.~
 ~
 11 3 2 0 7 0 110624 17 64 0 0
 0 0 0 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 yellow hat~
 Soft &+Yyellow&N linen was used to make this somewhat beat-up looking hat.
@@ -661,7 +661,7 @@ A perfectly smooth ball of quartz lies here.~
 ~
 11 8 2 0 7 0 134545408 16385 64 0 0
 0 0 0 0 0 0 0 0
-3 20000 100
+3 20000 100 100
 E
 ball sphere quartz~
 This perfect sphere of quartz has obviously been treated with powerful magic.
@@ -678,7 +678,7 @@ wreath crown~
 ~
 11 5 2 0 7 0 2163713 17 0 33685920 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 wreath crown~
 &+gThis wreath of leaves is small enough to be worn as a crown and has clearly&N
@@ -698,7 +698,7 @@ mace ceremonial wood~
 ~
 5 6 2 0 7 0 134292480 8193 64 33685920 0
 6 1 6 6 0 0 0 0
-2 12000 100
+2 12000 100 100
 E
 mace ceremonial wood~
 &+yMade of a light tan wood, this mace is far to light to be very useful in&N
@@ -718,7 +718,7 @@ a pond~
 ~
 17 40 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pond~
 &+bClear blue water fills a shallow depression here creating a small pond&N
@@ -731,7 +731,7 @@ Raw turtle meat lies here waiting to be cooked.~
 ~
 19 2 3 0 7 0 8388608 16385 0 0 0
 4 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 meat turtle raw~
 This raw meat wouldn't really be very tasty until put into a nice soup, or
@@ -744,7 +744,7 @@ A small thin tailfeather lies here.~
 ~
 13 10 3 0 7 0 8462336 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 feather~
 Beautiful and delicate, this thin feather from the tail of a small hummingbird
@@ -757,7 +757,7 @@ honey~
 ~
 19 40 3 0 7 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 honey~
 The thick brown honey would be perfect to use in a glaze, or even to spread
@@ -770,7 +770,7 @@ wax beeswax~
 ~
 13 5 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 wax~
 This small chunk of bees wax can be used in the creation of some wood polishes
@@ -784,7 +784,7 @@ egg bee~
 ~
 13 2 3 0 7 0 8458240 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 egg bee~
 This oblong egg is somewhat translucent.  Through the thin shell a small larvae
@@ -797,7 +797,7 @@ green gem~
 ~
 8 26 3 0 7 0 266240 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 green gem~
 This small green gem glows with a flickering, almost intelligent evil.  Once
@@ -811,7 +811,7 @@ hat yellow~
 ~
 11 3 2 0 7 0 8192 17 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 hat yellow~
    &+YThis bright yellow hat has some ugly &+mviolet&+Yspots on it that&N
@@ -828,7 +828,7 @@ purple boots~
 ~
 11 3 2 0 7 0 8192 65 64 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 purple boots~
    Though light and sturdy enough for heavy traveling, these boots are ugly
@@ -846,7 +846,7 @@ blanket tazten~
 ~
 11 42 2 0 7 0 12288 1025 64 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 blanket tazten~
    The light thin bark of the tazten tree has been woven into a small well-made
@@ -865,7 +865,7 @@ An ordinary garden hoe lies here.~
 ~
 5 16 2 0 7 0 4194304 8193 0 0 0
 8 1 4 6 0 0 0 0
-3 500 100
+3 500 100 100
 E
 hoe garden~
 This ordinary hoe can double as a clumsy weapon for trying to chase pests out
@@ -878,7 +878,7 @@ An old fishing lure lies here.~
 ~
 11 16 2 0 7 0 69632 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 hook lure~
 This small fishing lure has lost all of the color it once had.  Shaped like a
@@ -896,7 +896,7 @@ a light canoe~
 ~
 22 6 2 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-40 23552 100
+40 23552 100 100
 E
 canoe~
 This light canoe was made entirely of a thin bark that was specially treated
@@ -911,7 +911,7 @@ leaves robe~
 ~
 11 3 3 0 7 0 73728 9 64 0 0
 0 0 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 leaves robe~
 &+GLeaves have been intertwined together to create a long flowing robe.&N
@@ -931,7 +931,7 @@ silver owl~
 ~
 8 22 2 0 7 0 4096 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 silver owl~
 This well-crafted silver owl is a bit tarnished but is clearly worth a fair
@@ -945,7 +945,7 @@ moccasins alligatorskin~
 ~
 9 12 2 0 7 0 8192 65 64 4198895524 0
 5 6 1 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 moccasins alligatorskin~
 An incredible amount of work must have gone into the curing of the alligator-
@@ -963,7 +963,7 @@ boots tan~
 ~
 9 13 2 0 7 0 8192 65 64 4165209604 0
 6 6 1 3 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 boots tan~
 These fine boots have been made by the softest and sturdiest of leather.  The
@@ -981,7 +981,7 @@ green belt ornate~
 ~
 9 3 2 0 7 0 73728 2049 0 4198895524 0
 5 10 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 green belt ornate~
 Ornate designs have been burned into the leather to create an extremely
@@ -999,7 +999,7 @@ hat fishing~
 ~
 11 3 2 0 7 0 8192 17 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 hat fishing~
 Made of a light cloth, this hat provides comfortable protection from the sun
@@ -1015,7 +1015,7 @@ green pigment~
 ~
 13 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 green pigment~
 This disgusting green liquid is often used as a pigment for paints and dyes.
@@ -1027,7 +1027,7 @@ chest ivory~
 ~
 15 34 3 0 7 0 0 0 64 0 0
 40 29 16563 250 0 0 0 0
-5000 0 100
+5000 0 100 100
 E
 chest ivory~
 &+WHuge amounts of ivory and &+Ygold&+W went into the creation of this huge&N
@@ -1042,7 +1042,7 @@ ivory key~
 ~
 18 34 2 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ivory key~
 &+WThis ornate ivory key must be for some sort of intricate lock.&N
@@ -1054,7 +1054,7 @@ gold bar~
 ~
 8 24 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-10 3000 100
+10 3000 100 100
 E
 gold bar~
 &+YThis gold bar is heavy enough that it must be worth at least a few platinum.&N
@@ -1066,7 +1066,7 @@ bracelet silver~
 ~
 9 22 2 0 7 0 262144 4097 65 0 0
 5 11 24 2 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 bracelet silver~
 Thin bands of silver weave together to create an elegant loop that is just
@@ -1082,7 +1082,7 @@ ebonwood bracelet~
 ~
 9 6 2 0 7 0 77824 4097 64 0 0
 5 11 24 4 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 ebonwood bracelet~
 This thin bracelet is really a thin wooden serpent that winds around itself
@@ -1100,7 +1100,7 @@ stiletto silver~
 ~
 5 22 2 0 7 0 16909312 8193 1 8515584 0
 2 1 3 11 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 stiletto silver~
 Ornate designs line the thin silver blade of this very costly stiletto.  It is
@@ -1118,7 +1118,7 @@ A torn and rotting robe lies here rotting.~
 ~
 11 3 3 0 7 0 0 9 0 0 0
 0 0 0 0 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 robe torn tattered~
 Huge tears in the robe make it virtually worthless.  The only thing that could
@@ -1135,7 +1135,7 @@ silver earring stud~
 ~
 11 22 3 0 7 0 69632 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 silver earring stud~
 This small silver stud is rather unimpressive, and certain to be easily lost.
@@ -1151,7 +1151,7 @@ greem marble bracelet~
 ~
 9 38 8 0 10 0 4096 4097 64 0 0
 5 11 1 3 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 greem marble bracelet~
 This heavy bracelet is of good, though perhaps not exceptional work.  It would
@@ -1167,7 +1167,7 @@ pink stone earring~
 ~
 11 11 3 0 7 0 65536 524289 64 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 pink stone earring~
 This pink stone has a small stone hook at one end that would allow one to wear
@@ -1183,7 +1183,7 @@ black leg plate plates~
 ~
 9 16 3 0 7 0 0 33 0 4198895524 0
 7 5 1 3 0 0 0 0
-3 3000 100
+3 3000 100 100
 E
 black leg plate plates~
 &+LSmooth black marble has been used to create these thin, but still heavy&N
@@ -1201,7 +1201,7 @@ bracers blue stone~
 ~
 9 11 3 0 7 0 0 257 64 4198895524 0
 7 8 1 3 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 bracers blue stone~
 &+bThin smooth blue stone has been used to create these fine arm protectors.&N
@@ -1219,7 +1219,7 @@ blue stone chip~
 ~
 11 11 3 0 7 0 331776 131073 64 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 blue stone chip~
 &+bThe edges of this blue chip of stone have been smoothed, to keep them from&N
@@ -1237,7 +1237,7 @@ belt green~
 ~
 9 3 2 0 7 0 73728 2049 64 0 0
 5 10 0 3 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 belt green~
 &+gThis thin strip of green linen looks soft yet appears to be quite sturdy.&N
@@ -1255,7 +1255,7 @@ ring wood wooden~
 ~
 11 6 2 0 7 0 8192 3 64 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 ring wood wooden~
 This small wooden ring is of exceptional craftsmanship, a sign of what a
@@ -1272,7 +1272,7 @@ silver dress~
 ~
 11 22 2 0 7 0 8192 9 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 silver dress~
 This small silver dress is perfect for everyday wear.  It is simple and elegant
@@ -1289,7 +1289,7 @@ slippers emerald~
 ~
 11 32 2 0 7 0 9216 65 64 4197892 0
 0 0 0 0 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 slippers emerald~
 &+gThese emerald slippers are made of the finest silk which has been magically&N
@@ -1308,7 +1308,7 @@ A plain flask rests here.~
 ~
 10 7 3 0 7 0 0 16385 0 0 0
 15 1 3 -1 0 0 0 0
-1 750 100
+1 750 100 100
 E
 flask potion~
 This plain flask contains a thick looking liquid which may or may not be safe
@@ -1321,7 +1321,7 @@ emerald cloak~
 ~
 11 32 2 0 7 0 8192 1025 64 0 0
 0 0 0 0 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 emerald cloak~
 &+gA deep emerald-green dye has been used to dye soft tazten bark a deep green.&N
@@ -1340,7 +1340,7 @@ dark hood~
 ~
 11 3 2 0 7 0 1073750016 17 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 dark hood~
 This dark hood helps provide some small amount of protection against the
@@ -1357,7 +1357,7 @@ wood spear~
 ~
 5 6 3 0 7 0 20979712 8193 0 0 0
 8 1 5 11 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 wood spear~
 This wood spear is both sturdy and easy to construct.  It can be used in both
@@ -1371,7 +1371,7 @@ A short spear with an &+Lobsidian&N tip lies here.~
 ~
 5 36 3 0 7 0 20979712 8193 0 0 0
 8 1 5 11 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 spear obsidian~
 This short wooden spear has an extremely sharp &+Lobsidian&N tip specially
@@ -1389,7 +1389,7 @@ pin stag badge~
 ~
 8 22 2 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 pin stag badge~
 This finely crafted silver stag makes a beautiful and stylish pin that will
@@ -1402,7 +1402,7 @@ linen apron~
 ~
 15 3 2 0 7 0 65536 1025 0 0 0
 15 0 0 100 0 0 0 0
--10 1300 100
+-10 1300 100 100
 E
 linen apron~
 This cute white apron is well-designed for cooks of all types.  It contains
@@ -1416,7 +1416,7 @@ A small dog collar lies here.~
 ~
 11 13 2 0 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 collar hunting~
 This small collar has been designed to help restrain hunting dogs to keep them
@@ -1433,7 +1433,7 @@ bracer wood~
 ~
 9 6 2 0 7 0 73728 4097 0 0 0
 3 11 1 2 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 bracer wood~
 This wide bracer has been made of the incredibly sturdy jodani wood that is
@@ -1451,7 +1451,7 @@ red cloak~
 ~
 11 3 2 0 7 0 8192 1025 2 0 0
 0 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 red cloak~
 &+RThis bright red cloak is short and obviously meant more for protection from&N
@@ -1467,7 +1467,7 @@ ring wood ebonwood~
 ~
 11 6 2 0 7 0 8192 3 64 0 0
 0 0 0 0 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 ring wood ebonwood~
 This finely made ring bears the etchings of magical enchantments.  The highly
@@ -1486,7 +1486,7 @@ warhammer huge~
 ~
 5 16 3 0 7 0 4195328 8193 0 87572571 0
 4 1 3 6 0 0 0 0
-20 3000 100
+20 3000 100 100
 E
 warhammer huge~
 This massive hammer has a haft taller than a halfling, and wider than many
@@ -1504,7 +1504,7 @@ silk scarf~
 ~
 11 3 3 0 7 0 73728 5 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 silk scarf~
 This thin strip of silk is strong enough to have many uses, but far to
@@ -1521,7 +1521,7 @@ A dull training sword has been tossed here.~
 ~
 5 16 2 0 7 0 0 8193 0 4198895524 0
 9 1 5 3 0 0 0 0
-2 200 100
+2 200 100 100
 E
 sword training~
 Though it could still be deadly, this sword has dull edges that keep it from
@@ -1537,7 +1537,7 @@ A large heavy shield lies here.~
 ~
 37 16 2 0 7 0 0 513 0 4173708804 0
 2 1 4 85 3 0 0 0
-10 500 100
+10 500 100 100
 E
 shield large~
 Though quite heavy, this shield provides fine protection during battle.  It is
@@ -1551,7 +1551,7 @@ cloak dusty~
 ~
 11 3 2 0 7 0 8192 1025 0 0 0
 0 0 0 0 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 cloak dusty~
 This well-made cloak is long and sturdy enough to wrap around ones entire body
@@ -1570,7 +1570,7 @@ A small steel cap has been tossed here, abandoned due to the heat.~
 ~
 9 16 2 0 7 0 0 17 2 4173708804 0
 5 4 16 3 0 0 0 0
-3 300 100
+3 300 100 100
 E
 steel cap~
 Made of hardened steel, this small cap provides decent protection in battle
@@ -1583,7 +1583,7 @@ helm leather~
 ~
 9 13 2 0 7 0 1073750016 17 0 0 0
 6 4 1 3 0 0 0 0
-2 150 100
+2 150 100 100
 E
 helm leather~
 This full leather helm has been designed to give protection to the entire head.
@@ -1597,7 +1597,7 @@ an ornate fountain~
 ~
 17 11 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-3000 0 100
+3000 0 100 100
 E
 fountain~
 &+gGreen marble has been carefully sculpted into the form of three large fish&N
@@ -1612,7 +1612,7 @@ gloves leather~
 ~
 11 13 2 0 7 0 8192 129 0 0 0
 0 0 0 0 0 0 0 0
-0 200 100
+0 200 100 100
 E
 gloves leather~
 Thin soft leather has been carefully stitched togther to give extra protection
@@ -1629,7 +1629,7 @@ dagger blackened~
 ~
 5 16 2 0 7 0 16 8193 0 0 0
 2 1 3 11 0 0 0 0
-1 500 100
+1 500 100 100
 E
 dagger blackened~
 This small dagger has been carefully blackened to prevent it from reflecting
@@ -1645,7 +1645,7 @@ boots magic~
 ~
 9 13 3 0 7 0 303104 65 64 0 0
 7 6 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 boots magic~
 It is clear from the careful stitching along the sides of these powerful boots
@@ -1665,7 +1665,7 @@ necklace beads wood~
 ~
 11 6 2 0 7 0 134225920 5 64 0 0
 0 0 0 0 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 necklace beads wood~
 Deep magical enchantments run through all of the tightly strung wooden beads.
@@ -1684,7 +1684,7 @@ staff jodani twisted _id_~
 ~
 4 6 2 0 7 0 263168 16385 64 37883812 0
 31 1 1 4 0 0 0 0
-0 12000 100
+0 12000 100 100
 E
 staff jodani twisted~
 Polished to help show the woods bright red sheen, this twisted staff has
@@ -1707,7 +1707,7 @@ gown silk~
 ~
 11 3 2 0 7 0 536879104 9 0 0 0
 0 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 gown silk~
 The finest of silk has gone into the creation of this incredible gown.
@@ -1726,7 +1726,7 @@ mace wind~
 ~
 5 16 3 0 7 0 1410176 8193 64 33685920 0
 6 2 6 6 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 mace wind~
 Heavily inlayed with magical runes this blue steel mace is obviously something
@@ -1744,7 +1744,7 @@ shield embossed~
 ~
 37 16 2 0 7 0 270336 513 64 4173708804 0
 2 1 3 125 3 0 0 0
-5 5000 100
+5 5000 100 100
 E
 shield embossed~
 This shield is one of the finest creations of some of the greatest woodworkers
@@ -1764,7 +1764,7 @@ leather backpack bp~
 ~
 15 13 2 0 7 0 65536 1025 0 0 0
 100 5 0 150 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 leather backpack bp~
 This quaint leather backpack is a travler's best friend.  Though small, it has
@@ -1779,7 +1779,7 @@ axe battle blue~
 ~
 5 16 3 0 7 0 16778624 8193 64 87572571 0
 1 4 3 3 0 0 0 0
-5 7500 100
+5 7500 100 100
 E
 axe battle blue~
 Made of a strang blue steel, this axe is clearly of dwarven craftsmanship.
@@ -1798,7 +1798,7 @@ shoes~
 ~
 11 3 3 0 7 0 0 65 0 0 0
 0 0 0 0 0 0 0 0
-1 700 100
+1 700 100 100
 E
 shoes~
 These fine leather shoes have a thick sole and soft inner padding so that they
@@ -1815,7 +1815,7 @@ fountain pink~
 ~
 17 38 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-3000 0 100
+3000 0 100 100
 E
 fountain pink~
 Thin strips of marble wind together in an elegant pattern.  More than twenty
@@ -1832,7 +1832,7 @@ turtle soup~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 6 0 0 0 0 0 0 0
-0 35 100
+0 35 100 100
 E
 turtle soup~
 This spicy concoction of turtle meat and vegetables is not only healthy, but it
@@ -1845,7 +1845,7 @@ A pile of coins lies here.~
 ~
 20 16 3 0 7 0 0 1 0 0 0
 0 15 15 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 platinum coins~
 Some platinum coins lie here abandoned be someone too wealthy to care.
@@ -1857,7 +1857,7 @@ Some platinum coins have been dropped here.~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 platinum coins~
 Some very new looking platinum coins lie here in a pile.
@@ -1869,7 +1869,7 @@ a marble fountain~
 ~
 17 38 3 0 7 0 0 0 0 0 0
 -1 -1 17 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain~
 A green marble tree is at the center of the fountain.  Carefully carved leaves
@@ -1886,7 +1886,7 @@ A clear vial with a gray metallic potion lies here.~
 ~
 10 7 3 0 7 0 0 16385 64 0 0
 10 1 -1 -1 0 0 0 0
-1 639 100
+1 639 100 100
 E
 gray potion~
 The strange potion inside this clear glass vial swirls with metallic silver
@@ -1907,7 +1907,7 @@ wand _id_~
 ~
 3 6 3 0 7 0 0 16385 0 0 0
 10 4 4 1 0 0 0 0
-2 3500 100
+2 3500 100 100
 E
 wand~
 This thin smooth wand looks like the standard practice material used by
@@ -1930,7 +1930,7 @@ A glass of dwarven ale has been dropped here.~
 ~
 17 9 3 0 7 0 0 1 0 0 0
 1 1 4 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 glass ale~
 Dwarven ale is one of the most popular imports into Woodseer.  Most of the
@@ -1943,7 +1943,7 @@ wine glass~
 ~
 17 7 3 0 7 0 0 1 0 0 0
 1 1 2 0 0 0 0 0
-0 28 100
+0 28 100 100
 E
 wine glass~
 This elegant, but fragile, glass has been specifically designed for the
@@ -1957,7 +1957,7 @@ armor leather black~
 ~
 9 13 2 0 7 0 536870912 9 0 4165209604 0
 20 3 1 3 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 armor leather black~
 This leather armor has been dyed a deep, dark black.  It is clearly made for
@@ -1970,7 +1970,7 @@ Some thin lockpicks lie here.~
 ~
 31 16 2 0 7 0 0 16385 0 0 0
 0 15 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pick picks lockpicks~
 These long thing wires have been bent into various shapes so that they can
@@ -1984,7 +1984,7 @@ black backpack bp~
 ~
 15 13 2 0 7 0 134291456 1025 64 0 0
 100 5 0 150 0 0 0 0
-0 100000 100
+0 100000 100 100
 E
 bp black backpack~
 This small black backpack is the perfect size for a tiny halfling.  Oddly
@@ -1998,7 +1998,7 @@ shield wood~
 ~
 37 6 2 0 7 0 8192 513 64 4165209604 0
 2 1 2 95 4 0 0 0
-2 350 100
+2 350 100 100
 E
 shield wood~
 This light shield has been made entirely of sturdy jodani wood.  Jodani wood
@@ -2013,7 +2013,7 @@ sleeves leather~
 ~
 9 13 2 0 7 0 8192 257 0 4165209604 0
 5 8 1 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 sleeves leather~
 The leather used in the creation of these sleeves is light, but quite sturdy.
@@ -2027,7 +2027,7 @@ leggings leather~
 ~
 9 13 2 0 7 0 8192 33 0 4165209604 0
 5 5 1 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 leggings leather~
 These thin leather leggings have wood studs on the outside to help deflect
@@ -2041,7 +2041,7 @@ boots~
 ~
 11 13 2 0 7 0 8192 65 0 0 0
 0 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 boots~
 Though these boots may not provide quite the protection of heavier boots, they
@@ -2057,7 +2057,7 @@ gloves glove~
 ~
 11 13 2 0 7 0 8192 129 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 gloves glove~
 It is clear that whoever made these gloves was either not at their best or
@@ -2074,7 +2074,7 @@ gauntlets~
 ~
 9 16 2 0 7 0 66560 129 64 87572571 0
 8 7 1 3 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 gauntlets~
 These gauntlets are made of a fine chain mesh that has been lined on the
@@ -2093,7 +2093,7 @@ ale mug~
 ~
 17 9 3 0 7 0 0 1 0 0 0
 1 1 3 0 0 0 0 0
-2 8 100
+2 8 100 100
 E
 ale mug~
 This cheap ale mug was designed to hold the equally inexpensive amber ale that
@@ -2107,7 +2107,7 @@ rations ration travel~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 20 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rations ration travel~
 These rations have been well-salted and packaged so that they are perfect for
@@ -2121,7 +2121,7 @@ water skin waterskin~
 ~
 17 12 3 0 7 0 0 16385 0 0 0
 20 20 0 0 0 0 0 0
-1 20 100
+1 20 100 100
 E
 skin waterskin~
 The bright coloration of this waterskin makes it easy to locate in a crowded
@@ -2135,7 +2135,7 @@ meat lizard~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 E
 meat lizard~
 Though not very appealing in color, this dried lizard meat will last virtually
@@ -2148,7 +2148,7 @@ A well-made short sword has been left behind here.~
 ~
 5 16 2 0 7 0 0 8193 0 4198895524 0
 9 1 6 3 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 sword short~
 This well-made blade has been sharpened to a razor's edge, and is certainly
@@ -2164,7 +2164,7 @@ A thin, sharp dirk lies here.~
 ~
 5 16 2 0 7 0 0 8193 0 4198895524 0
 2 1 4 11 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 dirk~
 This narro dirk is a great back-up weapon.  It is easy to conceal, and light
@@ -2179,7 +2179,7 @@ fish perch fried~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 16 1 1 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 fish perch fried~
 Yellow perch are abundant in Woodseer, and one of the easiest ways to prepare
@@ -2193,7 +2193,7 @@ A long slab of broiled muskie has been dropped here.~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 24 1 1 0 0 0 0 0
-1 18 100
+1 18 100 100
 E
 muskie fish~
 Salt, lemon and several other spices have been pressed into the fish before
@@ -2207,7 +2207,7 @@ steak salmon~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 20 2 2 0 0 0 0 0
-1 120 100
+1 120 100 100
 E
 steak salmon~
 The large freshwater salmon that can be caught in the small lake near Woodseer
@@ -2221,7 +2221,7 @@ bp backpack~
 ~
 15 4 2 0 7 0 65536 1025 0 0 0
 50 5 0 100 0 0 0 0
-1 400 100
+1 400 100 100
 E
 bp backpack~
 Tighly woven tazten bark has been used to create this small but sturdy
@@ -2235,7 +2235,7 @@ sack bark~
 ~
 15 4 2 0 7 0 0 1 0 0 0
 75 1 0 100 0 0 0 0
-1 50 100
+1 50 100 100
 E
 sack bark~
 The thin inner bark of the tazten tree, when woven together properly, is as
@@ -2250,7 +2250,7 @@ apple red~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 apple red~
 This is one of the sweet red apples that comes from the halfling orchards.
@@ -2264,7 +2264,7 @@ apple green~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 E
 apple green~
 One of the better selling fruits among the halflings in Woodseer, this tart
@@ -2277,7 +2277,7 @@ peach yellow~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 peach yellow~
 This soft peach has a fuzzy yellow skin that protects its sweet innards,
@@ -2290,7 +2290,7 @@ A ripe pear has been dropped here.~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pear~
 This ripe pear is crisp to the core, providing a welcome snack to anyone
@@ -2303,7 +2303,7 @@ A bowl of rabbit stew has been tossed here.~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 3 100
+1 3 100 100
 E
 stew rabbit~
 This stew has a healthy dose of vegetables as well as tender rabbit meat
@@ -2316,7 +2316,7 @@ salmon steak blackened~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-0 6 100
+0 6 100 100
 E
 salmon steak blackened~
 Though blackened, this salmon steak isn't really burned.  Spices have been
@@ -2330,7 +2330,7 @@ duck roast~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 30 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 duck roast~
 One of the many ducks that frequents the lakes and ponds of Woodseer has had
@@ -2344,7 +2344,7 @@ belt leather~
 ~
 11 13 2 0 7 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-1 150 100
+1 150 100 100
 E
 belt leather~
 This boring leather belt has been made of thick and sturdy leather.  It isn't
@@ -2360,7 +2360,7 @@ boots leather~
 ~
 11 13 2 0 7 0 0 65 0 0 0
 0 0 0 0 0 0 0 0
-1 150 100
+1 150 100 100
 E
 boots leather~
 The leather used in these boots is thick and a bit stiff.  A few months of
@@ -2376,7 +2376,7 @@ flute steel instrument~
 ~
 32 16 2 0 7 0 1024 16385 0 8487456 0
 184 5 0 1 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 flute steel~
 A great deal of careful craftsmanship has gone into the creation of this fine
@@ -2392,7 +2392,7 @@ A lyre of some plain non-descript wood lies here.~
 ~
 32 6 2 0 7 0 9216 16385 0 8421376 0
 185 5 2 1 0 0 0 0
-1 800 100
+1 800 100 100
 E
 lyre~
 Though made of a plain unadorned wood, this lyre is easy to tune and travels
@@ -2405,7 +2405,7 @@ A plain mandolin has been dropped here.~
 ~
 32 6 2 0 7 0 9216 16385 0 8421376 0
 186 5 2 1 0 0 0 0
-1 300 100
+1 300 100 100
 E
 mandolin~
 This mandolin is obviously made only for bards that are just starting out in
@@ -2420,7 +2420,7 @@ armor leather~
 ~
 9 13 2 0 7 0 8192 9 0 4165209604 0
 10 3 1 3 0 0 0 0
-1 750 100
+1 750 100 100
 E
 armor leather~
 This purple gilded leather armor is a fine example of a piece that is both
@@ -2434,7 +2434,7 @@ leggings silk~
 ~
 11 3 2 0 7 0 8192 33 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 leggings silk~
 These fine silk leggings are brightly colored so that they stand out in a
@@ -2452,7 +2452,7 @@ sleeves silk~
 ~
 11 3 2 0 7 0 8192 257 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 sleeves silk~
 This fine soft silk adds a great deal to anyone's appearance.  Not many can
@@ -2470,7 +2470,7 @@ gloves silk~
 ~
 11 3 2 0 7 0 73728 129 0 4165209604 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 gloves silk~
 These sheer silk gloves do little to protect against the elements, but they
@@ -2487,7 +2487,7 @@ A cloak of tazten bark has been dropped here.~
 ~
 11 4 2 0 7 0 0 1025 0 0 0
 0 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 cloak bark~
 This light cloak looks like many of the others that can be seen in Woodseer.
@@ -2506,7 +2506,7 @@ boots~
 ~
 11 13 2 0 7 0 0 65 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 boots~
 This well-made pair of boots has been lined with a soft silk lining to make
@@ -2524,7 +2524,7 @@ cap leather~
 ~
 11 13 2 0 7 0 8192 17 0 0 0
 0 0 0 0 0 0 0 0
-1 750 100
+1 750 100 100
 E
 cap leather~
 Careful stitching marks this leather cap as something not quite ordinary.
@@ -2543,7 +2543,7 @@ sash silk red~
 ~
 11 3 2 0 7 0 73728 2049 0 0 0
 0 0 0 0 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 sash silk red~
 This exquisite silk sash provides a classy touch to any outfit.  Only the
@@ -2561,7 +2561,7 @@ robe silk~
 ~
 11 3 2 0 7 0 8192 1025 0 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 robe silk~
 This fine silk robe puts all others to shame.  It has been specially designed
@@ -2577,7 +2577,7 @@ caviar tin~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 3 0 0 0 0 0 0 0
-0 70 100
+0 70 100 100
 E
 caviar tin~
 Though salty for many people's tastes, this caviar is often presented at
@@ -2592,7 +2592,7 @@ bottle champagne~
 ~
 17 7 3 0 7 0 0 1 0 0 0
 3 3 23 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 bottle champagne~
 This bottle comes directly from the vinters that create fine wines and
@@ -2607,7 +2607,7 @@ broach gold~
 ~
 8 24 2 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 broach gold~
 Circles intertwined with circles create a delicate design in gold.  This fine
@@ -2621,7 +2621,7 @@ silver collar~
 ~
 11 22 2 0 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 silver collar~
 This plain silver collar is most useful atop a plain, but elegant garment such
@@ -2636,7 +2636,7 @@ eagle pin broach~
 ~
 11 22 2 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 eagle pin broach~
 This finely made silver eagle has small emerald chips for its eyes and a thin
@@ -2651,7 +2651,7 @@ steak alligator~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 30 0 0 0 0 0 0 0
-1 50 100
+1 50 100 100
 E
 steak alligator~
 This alligator steak has been tenderized and then cooked with a great deal of
@@ -2664,7 +2664,7 @@ A plate of sliced duck in white wine sauce has been dropped here.~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 30 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 duck~
 This slow roasted duck has been sliced and served with a thick white wine
@@ -2677,7 +2677,7 @@ A scroll has been dropped here.~
 ~
 2 29 3 0 7 0 0 16385 0 0 0
 20 45 -1 -1 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 identify scroll~
 This heavy vellum has been carefully inscribed with a magical spell marked
@@ -2698,7 +2698,7 @@ armor jodani wood~
 ~
 9 6 2 0 14 20 137568256 9 64 4173708804 0
 30 3 1 5 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 armor jodani wood~
 The polished wooden scales gleam as they reflect light with a faint reddish
@@ -2720,7 +2720,7 @@ scimitar green~
 ~
 5 16 3 0 7 0 134676480 8193 64 4173708804 0
 9 1 5 3 0 0 0 0
-3 20000 100
+3 20000 100 100
 E
 scimitar green~
 Made of a strange green metal this scimitar is truely quite unique.  The
@@ -2739,7 +2739,7 @@ cloak purple mages~
 ~
 11 3 2 0 7 0 204800 1025 64 0 0
 0 0 0 0 0 0 0 0
-2 20000 100
+2 20000 100 100
 E
 cloak purple mages~
 This odd purple cloak is made of several layers of light cloth.  The numerous
@@ -2758,7 +2758,7 @@ plate jodani wood~
 ~
 9 6 2 0 13 10 134414336 9 66 4173708804 0
 18 3 1 3 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 plate jodani wood breast~
 This think heavy plate of jodani wood has been made to withstand a great deal
@@ -2778,7 +2778,7 @@ The lake is here.~
 ~
 17 40 3 0 7 0 8194 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16672
 water waterfall~
 the waterfall~
@@ -2786,7 +2786,7 @@ The waterfall is here.~
 ~
 17 40 3 0 7 0 8194 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16673
 river water~
 the river~
@@ -2794,7 +2794,7 @@ The river flows here.~
 ~
 17 40 3 0 7 0 8194 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16674
 pool water~
 the pool~
@@ -2802,7 +2802,7 @@ The small pool is here.~
 ~
 17 40 3 0 7 0 8194 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16675
 pail bucket~
 a pail~
@@ -2810,7 +2810,7 @@ A pail has been dropped here.~
 ~
 15 16 3 0 7 0 2 0 0 0 0
 5 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #16676
 mask~
 &+ya mask of acorn shells&N~
@@ -2818,7 +2818,7 @@ mask~
 ~
 11 5 2 0 7 0 69632 262145 64 0 0
 0 0 0 0 0 0 0 0
-1 350 100
+1 350 100 100
 E
 mask~
 Exactly who made this strange mask, or why, is unclear.  The tops of
@@ -2837,7 +2837,7 @@ bracer~
 ~
 9 6 2 0 7 0 4096 4097 0 4165209604 0
 5 11 1 3 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 bracer~
 Made of the finest ebonwood by a careful craftsman, this fine bracer
@@ -2856,7 +2856,7 @@ ring~
 ~
 11 16 2 0 7 0 208896 3 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 ring~
 Jodani wood has been carved into the intricate design of a small lizard
@@ -2875,7 +2875,7 @@ sign wooden~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wooden~
                     &+yPainted in red dye are the words:&N
@@ -2894,7 +2894,7 @@ A small sign reads (N connected to 16065) sits here.~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16681
 red worm boots pair~
 &+ra pair of red-worm boots&N~
@@ -2902,7 +2902,7 @@ red worm boots pair~
 ~
 9 3 2 0 7 0 8192 65 64 0 0
 10 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 purple boots~
    Though light and sturdy enough for heavy traveling, these boots are ugly
@@ -2920,7 +2920,7 @@ slender dagger~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 1 6 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 #16900
@@ -2930,7 +2930,7 @@ A very sharp, well-polished &+Wshort sword&N lies here.~
 ~
 5 16 2 0 7 0 0 8193 64 4198895524 0
 9 1 6 3 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 sword short shortsword~
 Years of polishing and sharpening have honed this fine weapon to a razor edge
@@ -2947,7 +2947,7 @@ leather armor~
 ~
 9 13 2 0 7 0 536879104 9 0 0 0
 20 3 1 3 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 leather armor~
 &+yFine soft leather has been carefully stitched together and then hardened&N
@@ -2961,7 +2961,7 @@ A well-made short sword has been left behind here.~
 ~
 5 16 2 0 7 0 0 8193 0 4198895524 0
 9 1 6 3 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 sword short~
 This well-made blade has been sharpened to a razor's edge, and is certainly
@@ -2977,7 +2977,7 @@ ax axe~
 ~
 5 16 3 0 7 0 4096 8193 0 0 0
 1 1 4 3 0 0 0 0
-4 2000 100
+4 2000 100 100
 E
 ax axe battle-axe~
 This bright axe has obviously been left on the ground for a very long time.
@@ -2995,7 +2995,7 @@ corpse warrior~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 8 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse~
 Some poor adventurer made his way in here and was unable to leave.  It isn't
@@ -3010,7 +3010,7 @@ diamond small~
 ~
 8 8 2 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 diamond small~
 Unfortunately, this small circular cut diamond has a small crack in it.  It
@@ -3023,7 +3023,7 @@ skin spotted leopard~
 ~
 9 12 2 0 7 0 73728 5 0 0 0
 5 2 1 3 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 skin spotted leopard~
 This fine soft hide is very useful as a protective cloak.  Water beads off of
@@ -3041,7 +3041,7 @@ skin black leopard~
 ~
 11 12 2 0 7 0 77824 1025 0 0 0
 0 0 0 0 0 0 0 0
-2 2200 100
+2 2200 100 100
 E
 skin black leopard~
 The leopard that this skin came from must have been huge.  It can be used as
@@ -3060,7 +3060,7 @@ skin snake~
 ~
 11 12 2 0 7 0 8192 2049 0 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 skin snake~
 The long thin skin from a giant snake has a mottled coloration to it that is
@@ -3078,7 +3078,7 @@ chain gold golden~
 ~
 11 24 2 0 7 0 4096 4097 0 0 0
 0 0 0 0 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 chain gold golden~
 This tiny gold chain looks as if it were designed to be a necklace of some
@@ -3096,7 +3096,7 @@ crate old broken~
 ~
 15 16 3 0 7 0 0 16385 0 0 0
 100 0 0 100 0 0 0 0
-25 1 100
+25 1 100 100
 E
 crate old broken~
 This old crate was once a sturdy device for storing and transporting goods.
@@ -3111,7 +3111,7 @@ ring metallic small~
 ~
 11 16 2 0 7 0 4096 3 64 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 ring metallic small~
 This small metallic ring makes an odd hollow twang when it is dropped on a
@@ -3129,7 +3129,7 @@ ring gold bent~
 ~
 11 24 2 0 7 0 4096 3 64 0 0
 0 0 0 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 ring gold bent~
 Its strange bent shape makes it difficult to wear, but it is still an
@@ -3145,7 +3145,7 @@ Some rubbish lies here.~
 ~
 15 5 3 0 7 0 2 0 0 0 0
 2 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 garbage rubbish~
 This pile of rubbish stinks of rot and decay.
@@ -3157,7 +3157,7 @@ dagger tiny~
 ~
 5 16 2 0 7 0 4096 8193 0 4194697632 0
 2 1 3 11 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 dagger tiny~
 This tiny dagger isn't long enough to do heavy damage but it is certainly
@@ -3172,7 +3172,7 @@ javelin ebonwood~
 ~
 5 6 3 0 7 0 4194320 8193 0 4198895524 0
 8 1 5 11 0 0 0 0
-2 2200 100
+2 2200 100 100
 E
 javelin ebonwood~
 This light javelin has an extremely sharp point, and is well-balanced for
@@ -3190,7 +3190,7 @@ blood pool~
 ~
 17 2 3 0 7 0 0 0 0 0 0
 -1 -1 13 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood pool~
 It is unclear what died here, for the corpse was dragged away.  All that
@@ -3205,7 +3205,7 @@ A light linen shirt has been dropped here.~
 ~
 11 3 2 0 7 0 8192 9 0 0 0
 0 0 0 0 0 0 0 0
-1 75 100
+1 75 100 100
 E
 shirt linen~
 This light linen shirt is just thick enough to keep some of the sharper jungle
@@ -3221,7 +3221,7 @@ pants canvas~
 ~
 11 12 2 0 7 0 8192 33 0 0 0
 0 0 0 0 0 0 0 0
-1 75 100
+1 75 100 100
 E
 pants canvas~
 These thick canvas pants have leather guards near the shins to help prevent
@@ -3236,7 +3236,7 @@ boots spiked~
 ~
 9 16 2 0 7 0 0 65 0 0 0
 6 6 1 3 0 0 0 0
-3 2000 100
+3 2000 100 100
 E
 boots spiked~
 These spiked boots are designed to help loggers climb up large trees and tree
@@ -3255,7 +3255,7 @@ chain chainmail armor~
 ~
 9 16 2 0 7 0 0 9 64 4173708804 0
 6 3 1 3 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 chain chainmail armor~
 Several layers of light chain overlap with each other to create a strong
@@ -3274,7 +3274,7 @@ tunic ape ape-skin skin~
 ~
 9 12 3 0 7 0 0 9 0 4173708804 0
 10 3 1 3 0 0 0 0
-15 750 100
+15 750 100 100
 E
 tunic ape ape-skin skin~
 This horribly heavy tunic has been made from the uncured hide of a large ape.
@@ -3290,7 +3290,7 @@ armor skin~
 ~
 9 12 3 0 7 0 0 9 0 4173708804 0
 10 3 1 3 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 armor skin gorilla gorilla-skin~
 This heavy gorilla skin has been carefully cured and stiched together to
@@ -3306,7 +3306,7 @@ club wood~
 ~
 5 6 3 0 7 0 8192 8193 0 0 0
 10 1 6 6 0 0 0 0
-8 750 100
+8 750 100 100
 E
 club wood~
 This heavy wood club would certainly damage anything hit with it, if someone
@@ -3323,7 +3323,7 @@ club bone~
 ~
 5 10 2 0 7 0 8192 8193 0 4173708804 0
 10 1 4 6 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 bone tiger thigh~
 The knobby end of this huge thigh bone has several sharpened ridges to make it
@@ -3342,7 +3342,7 @@ feather~
 ~
 11 5 3 0 7 0 266240 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 300 100
+0 300 100 100
 E
 feather~
 Every single vein of this strange feather glows with a bright light.  It is as
@@ -3357,7 +3357,7 @@ A loggers axe lies here waiting to be used.~
 ~
 5 16 3 0 7 0 4194304 8193 0 0 0
 1 3 6 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 axe ax~
 The heavy head of the axe has been designed to cut wood and not for use as a
@@ -3376,7 +3376,7 @@ collar jewel jeweled~
 ~
 9 16 2 0 7 0 3212288 5 64 33685920 0
 8 2 1 3 0 0 0 0
-3 8000 100
+3 8000 100 100
 E
 collar jewel jeweled~
 This collar is studded with &+rrubys&N and &+gemeralds&N and has a deeply
@@ -3395,7 +3395,7 @@ black beetle carapace~
 ~
 9 10 2 0 7 0 12288 9 0 4173708804 0
 12 3 1 3 0 0 0 0
-3 2000 100
+3 2000 100 100
 E
 black beetle carapace~
 Light and extremely hard, this beetle carapace makes a perfect breastplate.
@@ -3411,7 +3411,7 @@ gray plate~
 ~
 9 16 2 0 7 0 0 9 0 0 0
 15 3 1 3 0 0 0 0
-15 8000 100
+15 8000 100 100
 E
 gray plate~
 Bearing the emblem of Woodseer, this platemail was specifically
@@ -3427,7 +3427,7 @@ scimitar~
 ~
 5 16 3 0 7 0 128 8193 0 0 0
 9 1 5 3 0 0 0 0
-3 3000 100
+3 3000 100 100
 E
 scimitar~
 The gray blade and dark gray leather wound around the hilt give this
@@ -3446,7 +3446,7 @@ a sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 The sign has a simple statement upon it;

@@ -5,7 +5,7 @@ A plaque is set in the wall of the Citadel next to the door.~
 ~
 12 15 3 0 7 0 1025 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plaque~
 &+Y+-------------------------------------------------------------+
@@ -21,7 +21,7 @@ A key fashioned of a cold, dark metal floats an inch off the ground.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 nightstone key~
 This key has been fashioned out of a solid nightstone; the cold emanating
@@ -34,7 +34,7 @@ A key embedded with jewels has been left here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 sapphire key~
 This key is fashioned of steel, but made beautiful by the pure blue
@@ -47,7 +47,7 @@ A silver key has been left here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silver key~
 A simple key, it seems unusually strong to be only silver.  Although it
@@ -60,7 +60,7 @@ A key carved from a solid piece of onyx lies here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 onyx key~
 This black tool is a masterpiece; it is thin and delicate, yet not fragile.
@@ -74,7 +74,7 @@ A chest takes up most of the space in this small room.~
 ~
 15 15 3 0 7 0 1024 0 0 0 0
 2000 15 13006 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 chest~
 A small chest.
@@ -86,7 +86,7 @@ A bluish key has been discarded here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bluish key~
 This key is made of a simple metal that seems to have been magically
@@ -99,7 +99,7 @@ A heavy coat has been left here in a heap.~
 ~
 15 15 3 0 7 0 0 1025 0 0 0
 10 0 -1 10 0 0 0 0
-10 100 100
+10 100 100 100
 E
 coat pockets~
 This coat is warm and thick, perfect for wearing when working in cold
@@ -114,7 +114,7 @@ A wondrously crafted lyre has been discarded here.~
 ~
 32 6 3 10 7 0 0 16385 2 0 0
 185 56 0 1 0 0 0 0
-10 20000 100
+10 20000 100 100
 E
 lyre~
 This instrument is old, and obviously magical.  The workmanship is incredible,
@@ -132,7 +132,7 @@ A crystal shard lies in a pool of its own light here.~
 ~
 8 27 3 3 7 0 262145 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 100000 100
+5 100000 100 100
 E
 crystal shard~
 This shard is about six inches long and an inch and a half wide at its widest
@@ -149,7 +149,7 @@ A golden wrist band has been left here.~
 ~
 9 24 3 1 7 0 0 4097 0 0 0
 5 0 0 2 0 0 0 0
-4 1500 100 0 16 0 0
+4 1500 100 100 0 16 0 0
 E
 golden watch~
 Highly decorative, it nevertheless makes one feel more comfortable wearing.
@@ -165,7 +165,7 @@ dagger black~
 ~
 5 16 3 2 7 0 83886336 8193 0 0 0
 2 2 3 11 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 black dagger~
 This slim deadly weapon has a blade a foot long and a pommel six inches long.
@@ -183,7 +183,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -195,7 +195,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -207,7 +207,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -219,7 +219,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -231,7 +231,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -243,7 +243,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -255,7 +255,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -267,7 +267,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -279,7 +279,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -291,7 +291,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -303,7 +303,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -315,7 +315,7 @@ A golden vault key has been thrown away here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 It's a simple key, but it is unique and very fragile.  Don't drop!
@@ -327,7 +327,7 @@ a large pile of coins~
 ~
 20 25 3 10 7 0 4096 1 0 0 0
 0 0 0 500 0 0 0 0
-10 1 100
+10 1 100 100
 E
 platinium coins~
 Some platinium coins.
@@ -339,7 +339,7 @@ An onyx earring almost escapes your attention here.~
 ~
 9 11 3 0 7 0 4096 524289 0 0 0
 1 0 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 onyx earring~
 This is a simple stud fashioned of onyx.
@@ -355,7 +355,7 @@ A katana has been left here.~
 ~
 5 15 3 4 7 0 67109888 8193 2 87651483 2048
 5 2 5 0 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 katana~
 The blade of this sword is a slightly curved one edged length of metal about
@@ -372,7 +372,7 @@ An expressionless white mask has been left here.~
 ~
 9 2 3 0 7 0 0 262145 0 0 0
 10 0 0 2 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 mask phantom~
 This is simply a human face with the eyes cut out, and the rest of the
@@ -389,7 +389,7 @@ A small silver flask glints in the light.~
 ~
 17 15 3 0 7 0 0 8388609 0 0 0
 50 50 17 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 flask~
 This flask is just small enough to fit into a back pocket.
@@ -405,7 +405,7 @@ ring darkstone~
 ~
 9 37 3 0 7 0 4096 3 0 0 0
 1 0 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 ring darkstone~
 This ring is barely visible under any kind of light; some strange property
@@ -423,7 +423,7 @@ A magical paper boat sits here.~
 ~
 22 28 3 1 7 0 262144 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 paper boat~
 This boat is, in its compact form, a paper origami boat.  It can be unfolded to
@@ -441,7 +441,7 @@ A pair of phantom boots relax here.~
 ~
 9 13 3 0 7 0 0 65 0 0 0
 10 0 0 2 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 phantom boots~
 These boots are fashioned of some magically produced material.  They are
@@ -458,7 +458,7 @@ A tiny ruby ring glints redly.~
 ~
 9 15 3 0 7 0 4096 3 0 0 0
 5 0 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 ruby ring~
 This ring is a simple semi-gold ring set with a small two karat ruby.  The
@@ -475,7 +475,7 @@ A pile of papers has been scattered about.~
 ~
 12 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 note notes sheets~
 +----------------------------------------------------------------------+
@@ -495,7 +495,7 @@ the pedestal~
 ~
 15 15 3 0 7 0 1025 0 0 0 0
 100 5 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pedestal case~
 This display case has been engraved with magical runes over every square inch
@@ -508,7 +508,7 @@ A thick reference book lies open on the table here.~
 ~
 12 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 page1~
                                &+Y  *
@@ -561,7 +561,7 @@ diamond large~
 ~
 8 27 3 1 7 0 4096 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 diamond large~
 &+WA large and very expensive diamond.
@@ -573,7 +573,7 @@ A stack of papers is strewn about haphazardly.~
 ~
 12 28 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 papers stack~
 These papers are maps and notes and various datum; they appear to be maps of
@@ -587,7 +587,7 @@ A book bearing the mark of the Bards lies here face down and open.~
 ~
 12 15 3 0 7 0 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book~
 There are a number of different pages in this book.  You can look at the
@@ -660,7 +660,7 @@ A thin, childish looking book has been tossed here.~
 ~
 12 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book~
 There are a number of different pages in this book.  You can look at the
@@ -722,7 +722,7 @@ the pedestal~
 ~
 15 15 3 0 7 0 9 0 0 0 0
 100 15 13041 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pedestal case~
 This display case has been engraved with magical runes over every square inch
@@ -735,7 +735,7 @@ An amber key lies here forgotten.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 10 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 amber key~
 This key is carved out of pure amber and has a ghostly ambience about it.
@@ -747,7 +747,7 @@ A key fashioned of gold and onyx floats an inch off the ground.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 paradox key~
 This key is made of both gold and onyx worked together into a single
@@ -762,7 +762,7 @@ A wonderous golden portal key has been discarded here.~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key golden~
 This key sparkles with golden light no matter how much light there is
@@ -775,7 +775,7 @@ stone key~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key stone~
 Fashioned out of a granite-looking stone, it is much harder than diamonds.
@@ -787,7 +787,7 @@ A comfortable blue robe sheds dim blue light around the area.~
 ~
 9 3 3 1 7 0 262144 1025 0 0 0
 10 0 0 3 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 robe~
 The robe is comfortable, woven of a shimmering blue material that is obviously
@@ -805,7 +805,7 @@ A choker with a silver pendant lies here in a heap.~
 ~
 9 22 3 1 7 0 262144 5 0 0 0
 7 0 0 2 0 0 0 0
-2 35000 100
+2 35000 100 100
 E
 choker pendant~
 A stylish bit of jewelry, the band is adjustable to fit the slimmest lass
@@ -822,7 +822,7 @@ A black cloak with gold runes embroidered in its hems lies here.~
 ~
 9 3 3 2 7 0 0 1025 0 0 0
 15 0 0 3 0 0 0 0
-10 10000 100 0 4096 0 0
+10 10000 100 100 0 4096 0 0
 E
 cloak paradox~
 This cloak is woven of a silk-like material.  It shimmers with a protective
@@ -840,7 +840,7 @@ A well crafted sword belt lies here in a pile.~
 ~
 9 14 3 3 7 0 67108864 2049 0 4165208580 0
 5 0 0 3 1 0 0 0
-5 1000 100
+5 1000 100 100
 E
 belt~
 This belt is heavy, but well crafted.  It has loops perfect for holding a
@@ -857,7 +857,7 @@ Some silken underclothes have been left here.~
 ~
 9 3 3 1 7 0 0 9 0 4227727360 0
 1 0 0 1 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 lingerie underclothes silken~
 The silken underclothes are very sexy, very feminine, and very appealing.
@@ -874,7 +874,7 @@ cloak fur werewolf~
 ~
 9 12 3 4 15 90 2105344 1025 2 416 0
 15 0 0 5 0 0 0 0
-4 289289 100 16777216 0 0 0
+4 289289 100 100 16777216 0 0 0
 A
 32 3
 A
@@ -886,7 +886,7 @@ spectacles golden~
 ~
 9 24 3 1 7 0 0 131073 64 0 0
 5 0 0 3 0 0 0 0
-3 1000 100 8 0 0 0
+3 1000 100 100 8 0 0 0
 E
 spectacles golden~
 These spectacles are lensed with clear crystal that sparkles magically in
@@ -903,7 +903,7 @@ bracer runes~
 ~
 9 36 3 5 11 20 0 4097 64 0 0
 7 0 0 4 0 0 0 0
-2 92049 100
+2 92049 100 100
 A
 18 2
 A
@@ -915,7 +915,7 @@ glyphs tattoo eye~
 ~
 9 15 3 0 5 0 0 131073 0 0 0
 3 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 32 3
 A
@@ -927,7 +927,7 @@ amulet granite~
 ~
 9 37 2 1 5 0 8192 5 0 0 0
 9 0 0 0 0 0 0 0
-1 12928 100
+1 12928 100 100
 A
 18 3
 A
@@ -939,7 +939,7 @@ earring octopus~
 ~
 9 22 3 1 9 0 67108864 524289 0 0 0
 0 0 0 0 0 0 0 0
-4 55020 100
+4 55020 100 100
 A
 24 -3
 A
@@ -951,7 +951,7 @@ necklace shells~
 ~
 9 15 3 0 5 0 0 5 0 0 0
 4 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 15
 A
@@ -963,7 +963,7 @@ wristband band snake~
 ~
 9 15 3 0 5 0 8192 4097 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100 0 8192 0 0
+0 0 100 100 0 8192 0 0
 A
 20 -3
 A
@@ -975,7 +975,7 @@ very small chest~
 ~
 15 15 3 0 7 0 1 0 0 0 0
 100 29 13059 100 0 0 0 0
-0 0 100
+0 0 100 100
 #13059
 very small key~
 &+La very small &+rkey&n~
@@ -983,7 +983,7 @@ very small key~
 ~
 18 15 3 0 7 0 8388609 1 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #13060
 necklace glowing runes~
 &+La &+Mnecklace &+Lof &+mglowing &+Lrunes&n~
@@ -991,7 +991,7 @@ necklace glowing runes~
 ~
 9 15 3 0 7 0 1 5 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 64 0 0 0
+0 0 100 100 64 0 0 0
 A
 33 3
 A
@@ -1003,7 +1003,7 @@ necklace glowing runes~
 ~
 9 15 3 0 7 0 1 5 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 64 0 0 0
+0 0 100 100 64 0 0 0
 A
 34 3
 A
@@ -1015,7 +1015,7 @@ rune wand~
 ~
 3 15 3 0 7 0 1 16385 0 0 0
 51 2 2 269 0 0 0 0
-0 0 100 64 0 0 0
+0 0 100 100 64 0 0 0
 A
 24 3
 A

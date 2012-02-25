@@ -5,7 +5,7 @@ An unoccupied&+L beetle shell &ndents the ground here.~
 ~
 9 10 0 0 7 0 0 9 0 0 0
 8 3 1 3 0 0 0 0
-20 100 100
+20 100 100 100
 E
 shell~
 The black carapace seems surprisingly strong, and is just large enough to
@@ -22,7 +22,7 @@ A chitinous &+Lbeetle mandible &nhas been left here.~
 ~
 5 15 2 0 7 0 0 8193 0 0 0
 3 1 8 6 0 0 0 0
-2 100 100
+2 100 100 100
 E
 mandible~
 The beetle's mandible can be wielded as a weapon or worn on the head, making
@@ -39,7 +39,7 @@ a &+Rfire beetle &+Ylight gland&n~
 ~
 1 2 0 0 7 0 0 16385 0 0 0
 0 0 96 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 gland sac~
 This remarkable bag of organic chemicals sheds light without creating large
@@ -52,7 +52,7 @@ A piece of a &+crhino beetle's head &nhas been left here.~
 ~
 5 10 2 0 7 0 0 8193 0 0 0
 15 1 8 11 0 0 0 0
-5 100 100
+5 100 100 100
 E
 horn piece~
 This is the tip end of the horn that adorns the head of a rhinoceros beetle.
@@ -66,7 +66,7 @@ club stone~
 ~
 5 11 3 8 7 0 0 8193 0 0 0
 10 3 4 6 0 0 0 0
-40 10 100
+40 10 100 100
 E
 club stone~
 It seems more like a natural rock formation than a weapon; it is much too
@@ -84,7 +84,7 @@ book remains~
 ~
 12 28 2 5 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book remains~
 +--------------------------------------------------------------------------+
@@ -111,7 +111,7 @@ book remains~
 ~
 12 28 2 5 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book remains~
 +---------------------------------------------------------------------------+
@@ -135,7 +135,7 @@ book remains~
 ~
 12 28 2 5 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book remains~
 +--------------------------------------------------------------------------+
@@ -165,7 +165,7 @@ book remains~
 ~
 12 28 2 5 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book remains~
 +--------------------------------------------------------------------------+
@@ -194,7 +194,7 @@ book remains~
 ~
 12 28 2 5 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book remains~
 +---------------------------------------------------------------------------+
@@ -225,7 +225,7 @@ a partially ruined book~
 ~
 12 28 2 5 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 book remains~
 This book has been fairly well preserved, due to the dry air and shelter the
@@ -298,7 +298,7 @@ A broken corpse, long exposed to the elements, lies basking in the sun.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 20 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corpse tomak~
 This fellow's pitiable remains have been here for a long time; the scavengers
@@ -313,7 +313,7 @@ The corpse of a large-boned man weathers the brunt of the elements.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 20 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corpse gordas~
 The corpse looks to have been a large and powerful man in life.  Now he is
@@ -326,7 +326,7 @@ A corpse lays sprawled amongst the bracken on the ground here.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 20 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corpse aberden~
 It is missing its head.  The rotten remains of clothes that are still on the
@@ -340,7 +340,7 @@ A twisted and mauled corpse has been deposited here.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 20 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corpse michith~
 The corpse looks half eaten and broken, as if the man became a corpse due to
@@ -353,7 +353,7 @@ A pitiful corpse huddles amongst the rocks at the basin's edge.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 20 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corpse cyril~
 The desiccated remains of a woman almost escapes your attention, huddled as
@@ -366,7 +366,7 @@ A well preserved corpse leans against the wall.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 20 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corpse milton~
 The corpse is fairly well preserved, due to the dry air and the fact the
@@ -381,7 +381,7 @@ potion vial silvery luminous glowing sparkling elixir~
 ~
 10 7 2 4 11 0 20552 8388609 0 0 0
 60 28 28 28 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 potion vial silvery~
 The liquid inside faintly resembles mercury, but is much less dense, with a
@@ -394,7 +394,7 @@ signet ring~
 ~
 11 16 1 1 7 0 856064 3 0 0 0
 0 3 3 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 signet ring~
 The ring is obviously magical, glowing with a bright light as it does.
@@ -411,7 +411,7 @@ potion red glowing~
 ~
 10 7 3 1 7 0 262144 1 64 0 0
 30 108 -1 -1 0 0 0 0
-1 50100 100
+1 50100 100 100
 E
 potion red glowing~
 &+R   A red vial that glows with inner light. The light is so strong it is
@@ -425,7 +425,7 @@ kilt striped red black~
 ~
 9 12 3 0 7 0 3158016 33 0 0 0
 7 5 1 3 0 0 0 0
-4 0 100
+4 0 100 100
 E
 kilt~
 This patchwork flannel cloth is both utilitarian and stylish.
@@ -441,7 +441,7 @@ green dress frayed tattered silk silken~
 ~
 9 3 3 0 7 0 20480 1025 0 0 0
 1 1 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 E
 canteen~
 The drink container is full of holes; it is doubtful it will hold more than
@@ -454,7 +454,7 @@ greatsword sword~
 ~
 5 16 3 0 7 0 4104 8193 0 0 0
 13 2 4 3 0 0 0 0
-12 0 100
+12 0 100 100
 E
 greatsword sword~
 Despite its great age, the sword seems to be in excellent condition.  Its
@@ -471,7 +471,7 @@ water holy oasis~
 ~
 17 40 10 0 15 0 0 0 0 0 0
 9999 9999 17 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 oasis water~
 The waters of this oasis are crystal clear and cold.  It would seem the
@@ -485,7 +485,7 @@ heart stone heartstone _noquest_~
 ~
 11 11 1 0 15 0 3289097 16385 64 0 0
 0 0 0 0 0 0 0 0
-7 0 100 32 28 128 0
+7 0 100 100 32 28 128 0
 E
 stone heart heartstone~
 This object is roughly the size of a large fist.  It pulses with an odd
@@ -503,7 +503,7 @@ potion milky brown~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 41 215 204 201 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 potion milky brown~
 &+yA vial filled with brown liquid, its stink resembling that of rotten eggs.
@@ -515,7 +515,7 @@ vial potion milk milky white~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 30 1 192 141 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 vial potion milk milky white~
 &+WA glass vial looking like a... bottle of milk.
@@ -527,7 +527,7 @@ potion white spotted~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 41 41 -1 -1 0 0 0 0
-1 50100 100
+1 50100 100 100
 E
 potion white spotted~
 &+W   A vial filled with a white liquid, with many &+ybrown dots&+W floating in it.
@@ -539,7 +539,7 @@ ring glowing white whitegold gold~
 ~
 11 24 3 1 7 0 98304 3 64 0 0
 0 0 0 0 0 0 0 0
-5 30000 100
+5 30000 100 100
 E
 ring glowing white whitegold gold~
 &+cA glowing ring made from a white gold. It bears some magical symbols.
@@ -557,7 +557,7 @@ staff gnarled wooden~
 ~
 4 5 3 4 7 0 0 16385 64 0 0
 50 3 3 17 0 0 0 0
-4 2010 100
+4 2010 100 100
 E
 staff gnarled wooden~
 &+yA gnarled wooden staff, magically enchanted.
@@ -569,7 +569,7 @@ strange elixir vial dark magic~
 ~
 10 7 3 0 7 0 4104 8388609 0 0 0
 1 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #34031
 smoldering dragon scale~
 &+ra &+Lsm&+wol&+Lde&+wri&+Lng &+rdragon &+Lscale&n~
@@ -577,4 +577,4 @@ smoldering dragon scale~
 ~
 8 35 3 0 7 0 69632 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

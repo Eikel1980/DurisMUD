@@ -1,11 +1,11 @@
-w#78000
+#78000
 sword bastard massive~
 &+ca &+Lmassive&+c bastard sword~
 &+cAn enormous sword has been dropped here.~
 ~
 5 15 3 0 7 0 4195328 8193 67 85458969 0
 5 1 7 3 0 0 0 0
-10 43050 100
+10 43050 100 100
 E
 sword bastard massive~
 &+cThis gleaming silver sword is very large and cumbersome.  Its edges have
@@ -23,7 +23,7 @@ hammer platinum~
 ~
 5 15 3 0 7 0 20972545 8193 0 85458969 0
 4 7 5 6 0 0 0 0
-16 75000 100
+16 75000 100 100
 E
 hammer platinum~
 &+LBeautiful cannot begin to describe this hammer.  The hammer, which seems
@@ -42,7 +42,7 @@ A spear with a diamond tip awaits a new owner.~
 ~
 5 12 3 0 7 0 4195328 8193 1 87572507 0
 16 3 3 11 0 0 0 0
-6 18500 100
+6 18500 100 100
 E
 spear hunting diamond~
 &+yThis spear has been tipped with a sharp &+Wdiamond&+y for added damage.
@@ -58,7 +58,7 @@ A dagger with a diamond tip awaits a new owner.~
 ~
 5 15 3 0 7 0 16778240 8193 0 87650331 0
 2 1 3 11 0 0 0 0
-2 15500 100
+2 15500 100 100
 E
 dagger diamond~
 &+LThis dagger has been tipped with a small &+Wdiamond&+L, which makes it a very
@@ -75,7 +75,7 @@ A &+Wdiamond &nring rests patiently here waiting for a new owner.~
 ~
 9 27 3 0 7 0 0 3 65 0 0
 3 0 0 3 0 0 0 0
-1 13550 100
+1 13550 100 100
 E
 ring diamond~
 This simple diamond ring seems to glow with a magical aura.
@@ -91,7 +91,7 @@ ring diamond tail~
 ~
 9 15 3 0 7 0 1024 33554433 65 87556227 0
 1 0 0 5 0 0 0 0
-6 18500 100 0 16 0 0
+6 18500 100 100 0 16 0 0
 E
 spear hunting diamond~
 &+yThis spear has been tipped with a sharp &+Wdiamond&+y for added damage.
@@ -107,7 +107,7 @@ key emerald~
 ~
 18 15 3 0 7 0 8392704 1 1 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key emerald~
 &+gThis small emerald key has the emblem of the Oasis village Warriors Tower.
@@ -119,7 +119,7 @@ A key of diamonds glimmers in the light.~
 ~
 18 15 3 0 7 0 8388608 1 1 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 &+WThis small diamond key has the emblem of the Oasis village Warriors Tower.
@@ -131,7 +131,7 @@ key sapphire~
 ~
 18 15 3 0 7 0 8392704 1 1 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key sapphire~
 &+bThis small sapphire key has the emblem of the Oasis village Warriors Tower.
@@ -143,7 +143,7 @@ key golden~
 ~
 18 15 3 0 7 0 8392704 1 1 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key golden~
 &+YThis small golden key has the emblem of the Oasis village Warriors Tower.
@@ -155,7 +155,7 @@ key ruby~
 ~
 18 15 3 0 7 0 8392704 1 1 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key ruby~
 &+rThis small ruby key has the emblem of the Oasis village Warriors Tower.
@@ -167,7 +167,7 @@ key obsidian~
 ~
 18 15 3 0 7 0 8392704 1 1 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key obisidian~
 &+LThis small obsidian key has the emblem of the Oasis village Warriors Tower.
@@ -179,7 +179,7 @@ sword longsword sharp~
 ~
 5 15 3 0 7 0 4195328 8193 1 85458945 0
 5 1 7 3 0 0 0 0
-6 10000 100 8192 0 0 0
+6 10000 100 100 8192 0 0 0
 E
 sword longsword sharp~
 This long sharp sword is not very heavy, strangely enough.  It would stand to
@@ -197,7 +197,7 @@ axe diamondine blood~
 ~
 5 15 3 0 7 0 20972800 8396801 67 87572507 0
 1 2 3 3 0 0 0 0
-10 122050 100
+10 122050 100 100
 E
 axe diamondine blood~
 &+LThis axe blade is made entirely of &+Wdiamonds&+L, and the hilt is made of a dark
@@ -217,7 +217,7 @@ staff plague~
 ~
 4 6 3 0 11 0 5248 16385 65 4197248 0
 50 1 1 186 0 0 0 0
-4 13450 100
+4 13450 100 100
 E
 staff plague~
 &+gThis staff drips with the vile excriment of hundreds of locusts.  Its ghastly
@@ -234,7 +234,7 @@ fungus pungent~
 ~
 8 15 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 fungus pungent~
 &+gThis fungus just plain stinks.  It is hard to imagine anyone finding a use
@@ -249,7 +249,7 @@ potion adrenaline~
 ~
 10 15 3 0 7 0 0 1 0 0 0
 51 66 66 201 10 0 0 0
-1 15000 100
+1 15000 100 100
 E
 potion adrenaline~
 &+yThis strange potion smells EXTREMELY bad.  Drink at your own risk!
@@ -261,7 +261,7 @@ petal rose~
 ~
 8 15 3 0 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 petal rose~
 &+rThis small rose petal smells very nice.
@@ -273,7 +273,7 @@ petal orchid~
 ~
 8 15 3 0 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 petal orchid~
 &+mThis sweet smelling flower is quite beautiful, but not very useful.
@@ -285,7 +285,7 @@ weed strange~
 ~
 8 15 3 0 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 weed strange~
 &+gThis weed appears to glow somewhat, with a hazy aura.
@@ -297,7 +297,7 @@ leggings mantis~
 ~
 9 12 3 0 10 0 4224 33 0 0 0
 6 0 0 2 0 0 0 0
-1 14635 100 0 8192 0 0
+1 14635 100 100 0 8192 0 0
 E
 leggings mantis~
 &+gThese scaly green leggings seem to be made from mantis skin.  The dark green
@@ -314,7 +314,7 @@ skeleton decaying~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-1 2 100
+1 2 100 100
 E
 skeleton decaying~
 This skeleton appears to be clutching something in his hands.
@@ -326,7 +326,7 @@ gloves mantis hide~
 ~
 9 12 3 0 10 0 1152 129 64 4198276 0
 7 0 0 3 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 gloves mantis hide~
 &+gThese gloves seem to be made from stretched mantis skin, and are quite
@@ -343,7 +343,7 @@ sleeves mantis~
 ~
 9 12 3 0 11 0 4224 257 0 0 0
 8 0 0 2 0 0 0 0
-1 14635 100 0 8192 0 0
+1 14635 100 100 0 8192 0 0
 E
 sleeves mantis~
 &+GThese disgusting sleeves come from the skin of a large mantis.
@@ -359,7 +359,7 @@ boomerang titanium dagger~
 ~
 5 15 3 0 7 0 1296 8396801 0 87650307 0
 2 3 6 11 0 0 0 0
-1 74545 100
+1 74545 100 100
 E
 boomerang titanium~
 &+bThis bizarre weapon has been engraved with symbol of the mantis.  This weapon
@@ -378,7 +378,7 @@ cuirass mantis~
 ~
 9 15 3 0 7 0 33555456 9 0 77721690 0
 20 0 0 3 0 0 0 0
-5 99999 100 0 16 0 0
+5 99999 100 100 0 16 0 0
 E
 cuirass mantis~
 &+LThis light armor seems ideal for anyone who wishes to keep full mobility
@@ -396,7 +396,7 @@ emblem mantis royal~
 ~
 18 15 3 0 7 0 41943041 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 emblem mantis royal~
 &+GThis glowing emblem radiates with a green glow, but seems otherwise useless.
@@ -408,7 +408,7 @@ wormhole portal mass black rift~
 ~
 8 15 3 0 7 0 1024 0 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 wormhole portal mass black rift~
 &+LLooking into this strange portal, fantastic images flash before you.  Strange
@@ -423,7 +423,7 @@ agony helmet~
 ~
 9 12 3 0 7 0 33554432 17 64 0 0
 10 0 0 2 0 0 0 0
-1 435000 100 36 0 0 0
+1 435000 100 100 36 0 0 0
 E
 agony helmet~
 &+mThis helmet is crafted of a bizarre alien material which seems to be, in some
@@ -444,7 +444,7 @@ orb swirling translucent~
 ~
 8 1 3 0 13 0 67113985 16385 64 46305188 0
 0 0 0 0 0 0 0 0
-1 72345 100 4 0 0 0
+1 72345 100 100 4 0 0 0
 E
 orb swirling translucent~
 &+CWhen held this bizarre orb seems to invade your mind with the most soothing
@@ -467,7 +467,7 @@ heart mantis queen~
 ~
 8 15 3 0 7 0 8392704 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 1 100 33554432 0 0 0
+5 1 100 100 33554432 0 0 0
 E
 heart mantis queen~
 &+rThis enormous heart remains beating, even after the queen of the mantis has
@@ -482,7 +482,7 @@ mace heavenly~
 ~
 5 18 3 0 12 0 1025 8193 3 100794552 0
 6 5 4 6 0 0 0 0
-4 15000 100 73728 0 0 0
+4 15000 100 100 73728 0 0 0
 E
 mace heavenly~
 This mace has been imbued with the power of the gods.  It glows with a bright
@@ -499,7 +499,7 @@ robe sorcery~
 ~
 9 3 3 0 13 0 1056 9 0 4197888 0
 14 0 0 3 0 0 0 0
-3 80000 100 0 144 0 0
+3 80000 100 100 0 144 0 0
 E
 robe sorcery~
 &+LThese dark robes have been covered with arcane sigils.  The wards which
@@ -518,7 +518,7 @@ axe hand gold~
 ~
 5 15 3 0 7 0 16778496 8193 64 87572483 0
 1 1 5 3 0 0 0 0
-4 27500 100
+4 27500 100 100
 E
 axe hand gold~
 &+LThis small axe has been coated in &+Ygold&+L.  The grip has been carefully
@@ -535,7 +535,7 @@ shield mantis skin~
 ~
 37 12 3 0 11 0 1024 513 0 87638043 0
 1 3 4 193 0 0 0 0
-12 34000 100 0 12288 0 0
+12 34000 100 100 0 12288 0 0
 E
 shield mantis skin~
 Although thin, the mantis skin which has been cured to make this shield is
@@ -553,7 +553,7 @@ A strange earring pulsing with explosive energy lies here.~
 ~
 9 1 3 0 13 0 1024 524289 0 96071707 0
 5 0 0 1 0 0 0 0
-1 45000 100 4 0 0 0
+1 45000 100 100 4 0 0 0
 E
 earring anti matter anti-matter~
 &+LThis dark earring shifts in an out of existence with such speed that it is
@@ -570,7 +570,7 @@ A strange earring pulsing with explosive energy lies here.~
 ~
 9 15 3 0 7 0 1024 524289 0 37883808 0
 5 0 0 1 0 0 0 0
-1 1 100
+1 1 100 100
 E
 earring anti matter anti-matter~
 &+LThis dark earring shifts in an out of existence with such speed that it is
@@ -587,7 +587,7 @@ tome massive~
 ~
 33 29 3 0 7 0 66560 8404993 0 6295042 0
 0 0 250 0 0 0 0 0
-3 16425 100
+3 16425 100 100
 E
 tome massive~
 &+LThis large book seems to have an almost unlimited amount of pages.  The cover
@@ -604,7 +604,7 @@ A set of &+Ygolden &nplatemail gleams in the light.~
 ~
 9 24 3 0 12 0 33555456 9 2 87572507 0
 25 0 0 4 1 0 0 0
-20 145000 100 33562624 4 0 0
+20 145000 100 100 33562624 4 0 0
 E
 platemail golden suit~
 This &+Ygolden suit of platemail&n bears the marks of Bargor the dwarf.  Only
@@ -624,7 +624,7 @@ emerald beautiful~
 ~
 8 15 3 0 7 0 1 1 0 0 0
 0 0 0 0 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 emerald beautiful~
 &+GThis large emerald is perfect in every way.  It weighs an astounding two
@@ -637,7 +637,7 @@ potion green~
 ~
 10 15 3 0 7 0 65536 1 0 0 0
 51 29 213 180 10 0 0 0
-1 17500 100
+1 17500 100 100
 E
 potion green~
 &+gThis hazy green potion looks to be very potent.  Its effects, however, are
@@ -650,7 +650,7 @@ moss glowing patch~
 ~
 8 15 3 0 7 0 8388609 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 moss glowing patch~
 &+gThis growing moss can be found nowhere else in the land of Duris.
@@ -662,7 +662,7 @@ potion swirling~
 ~
 10 15 3 0 7 0 65536 1 0 0 0
 25 4 14 34 100 0 0 0
-1 2 100
+1 2 100 100
 E
 potion swirling~
 &+mmagenta &nand &+rreddish &nswirls dominate this mysterious elixir.
@@ -674,7 +674,7 @@ elixir strange~
 ~
 10 15 3 0 7 0 65536 1 0 0 0
 25 28 39 73 15 0 0 0
-1 2 100
+1 2 100 100
 E
 elixir strange~
 &+cThis strange elixir contains an unknown liquid.
@@ -686,7 +686,7 @@ blossom lotus~
 ~
 8 15 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 blossom lotus~
 &+MThese beautiful narcoleptic blossums are widely reguarded for their beauty
@@ -699,7 +699,7 @@ potion sweet~
 ~
 10 15 3 0 7 0 65536 1 0 0 0
 55 41 106 73 0 0 0 0
-1 2 100
+1 2 100 100
 E
 potion sweet~
 &+MThis strange potion smells very sweet and inviting.
@@ -711,7 +711,7 @@ sleeves iron~
 ~
 9 15 3 0 7 0 0 257 0 0 0
 8 0 0 4 0 0 0 0
-2 14250 100
+2 14250 100 100
 E
 sleeves iron~
 &+LThese thick iron sleeves offer a decent amount of protection for the arms.
@@ -725,7 +725,7 @@ leggings iron~
 ~
 9 15 3 0 7 0 0 33 0 0 0
 8 0 0 4 0 0 0 0
-2 19250 100
+2 19250 100 100
 E
 sleeves iron~
 &+LThese thick iron sleeves offer a decent amount of protection for the arms.
@@ -739,7 +739,7 @@ jerky piece iron~
 ~
 19 48 3 0 7 0 0 1 0 0 0
 12 2 2 0 0 0 0 1
-0 222 100
+0 222 100 100
 E
 jerky piece iron~
 &+yYummmmy.. dried meat
@@ -751,7 +751,7 @@ skin waterskin fish fishgut~
 ~
 17 15 3 0 7 0 0 1 0 0 0
 50 0 0 0 0 0 0 0
-0 1200 100
+0 1200 100 100
 E
 skin waterskin fish fishgut~
 Only a true fisherman could drink from this smelly water container!
@@ -763,7 +763,7 @@ flute platinum instrument~
 ~
 32 15 3 0 7 0 1024 1 65 8421376 0
 184 45 0 6 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 flute platinum~
 &+CThis flute is very well made.  It has a platinum finish, and seems very
@@ -778,7 +778,7 @@ diamond small~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 diamond small~
 &+WAlthough small, this diamond is still quite valuable.
@@ -790,7 +790,7 @@ pickaxe sharp~
 ~
 5 15 3 0 7 0 1024 8193 0 96071707 0
 15 2 3 3 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 pickaxe sharp~
 &+LThis small pickaxe is ideal for hacking into rock walls in search of &+Wdiamonds&+L.
@@ -806,7 +806,7 @@ belt miner diamond~
 ~
 9 15 3 0 7 0 0 2049 65 0 0
 6 0 0 3 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 belt miner diamond~
 &+yThis simple leather belt has been adorned with a small but nearly perfect
@@ -823,7 +823,7 @@ dagger sharp steel~
 ~
 5 15 3 0 7 0 16778368 8193 0 96071707 0
 2 1 3 11 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 dagger sharp steel~
 &+LThis simple steel dagger is sharp and very deadly in capable hands.  It has
@@ -840,7 +840,7 @@ diamond large~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 30000 100
+0 30000 100 100
 E
 diamond large~
 &+WThis diamond is rather large, but not enormous.  It looks to be quite valuable.
@@ -852,7 +852,7 @@ eyepiece diamond~
 ~
 9 27 3 0 11 0 0 131073 64 0 0
 4 0 0 4 0 0 0 0
-2 19500 100
+2 19500 100 100
 E
 eyepiece diamond~
 &+CThis incredible eyepiece has been crafted from a single &+Wdiamond&+C.
@@ -870,7 +870,7 @@ A young girl cowers here, covered in &+Ldirt&n.~
 ~
 8 15 3 0 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-65 1 100
+65 1 100 100
 E
 girl young dirty~
 This young girl looks like she has been stuck in the mines for days.  She is
@@ -886,7 +886,7 @@ sword short diamonds blade~
 ~
 5 27 3 0 7 0 1024 8193 64 96071707 0
 2 1 3 11 0 0 0 0
-1 57000 100
+1 57000 100 100
 E
 sword short diamonds blade~
 &+cThe blade of this short sword is made entirely of &+Wdiamonds&+c.  The handle is
@@ -906,7 +906,7 @@ boots brain golem skin~
 ~
 9 12 3 0 11 0 1152 65 64 4198276 0
 7 0 0 1 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 boots brain golem skin~
 &+mThese strange thin boots seem to be made from the living tissue of an alien
@@ -925,7 +925,7 @@ crown golden gold diamonds~
 ~
 9 24 3 0 12 0 4128 17 64 0 0
 8 0 0 4 0 0 0 0
-4 60000 100
+4 60000 100 100
 E
 petal rose~
 &+rThis small rose petal smells very nice.
@@ -941,7 +941,7 @@ mace demonic spiked~
 ~
 5 19 3 0 11 0 4195457 4202497 0 67108888 0
 7 6 6 6 0 0 0 0
-15 35000 100
+15 35000 100 100
 E
 mace demonic spiked~
 &+LThis large mace is five feet in length, and it has a heavy iron spiked head.
@@ -959,7 +959,7 @@ diamond huge~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 100000 100
+0 100000 100 100
 E
 diamond huge~
 &+WThis diamond is enormous.  It must be worth a small fortune!
@@ -971,7 +971,7 @@ wing demon~
 ~
 8 15 3 0 7 0 41947136 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100 134217728 0 0 0
+5 1 100 100 134217728 0 0 0
 E
 wing demon~
 &+rThis vile appendage of the demon ambassador is proof of its demise.
@@ -983,7 +983,7 @@ hades mask~
 ~
 9 15 3 0 7 0 5249 262145 64 4198276 0
 6 0 0 2 0 0 0 0
-1 3 100 2056 0 0 0
+1 3 100 100 2056 0 0 0
 E
 hades mask~
 &+rThis thin mask once belonged to the god of the underworld.  It has been
@@ -1001,7 +1001,7 @@ bracelet influence~
 ~
 9 15 3 0 7 0 0 4097 66 0 0
 6 0 0 4 0 0 0 0
-1 28524 100 536870912 12480 0 0
+1 28524 100 100 536870912 12480 0 0
 E
 bracelet influence~
 &+bThis bizarre bracelet seems to shift colors depending on the light.  It is
@@ -1016,7 +1016,7 @@ armor diamond suit~
 ~
 9 27 3 0 7 0 33555456 9 64 121259067 0
 30 0 0 5 0 0 0 0
-10 212000 100 4 16 0 0
+10 212000 100 100 4 16 0 0
 E
 armor diamond suit~
 &+CIt is hard to imagine anyone creating a finer suit of armor.  Incredible
@@ -1036,7 +1036,7 @@ cloak vitality~
 ~
 9 15 3 0 7 0 0 1025 64 0 0
 15 0 0 1 0 0 0 0
-1 3 100 0 128 0 0
+1 3 100 100 0 128 0 0
 E
 cloak vitality~
 &+bThis fabulous cloak imbues the wearer with many magical protections, and
@@ -1055,7 +1055,7 @@ ring ruby~
 ~
 9 15 3 0 7 0 0 3 65 0 0
 3 0 0 3 0 0 0 0
-1 18550 100 536870912 0 0 0
+1 18550 100 100 536870912 0 0 0
 E
 ring ruby~
 &+rThis glowing ruby ring seems to give a burst of energy when worn, and it

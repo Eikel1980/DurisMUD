@@ -5,7 +5,7 @@ A notched key lies here.~
 ~
 18 16 1 1 7 0 8392736 16385 0 0 0
 3 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 notched key~
 The key seems to have some notches carved out of it.
@@ -19,7 +19,7 @@ treasury key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-0 12 100
+0 12 100 100
 E
 treasury key~
 This key bears the insignia of Strife, and is made of pure electrum.
@@ -31,7 +31,7 @@ matte black key~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 3 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 matte black key~
 &+LIt appears to be a dull black key.&N
@@ -43,7 +43,7 @@ nebula orb starseed~
 ~
 11 31 1 0 12 0 300192 16385 64 46173700 0
 0 0 0 0 0 0 0 0
-1 36587 100 32 0 0 0
+1 36587 100 100 32 0 0 0
 E
 nebula orb~
 &+C   Folklore says th&+Mere is a &+Btiny univ&+Merse inside &+Cthe orb, but the
@@ -64,7 +64,7 @@ ancient crumbling book text~
 ~
 13 28 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 ancient crumbling book~
    Most of the book is water-damaged beyond readability, however, the
@@ -90,7 +90,7 @@ The key to the Guard's Walk doors lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key~
 This is one of many keys that unlocks the guard's walk doors.
@@ -102,7 +102,7 @@ ancient crumbling book text~
 ~
 13 28 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 ancient crumbling book~
    Most of the book is water-damaged beyond readability, however, the
@@ -128,7 +128,7 @@ falchion gleaming~
 ~
 5 18 3 0 12 0 67109888 8193 64 78246019 0
 5 4 4 0 0 0 0 0
-1 198323 100 73728 28 0 0
+1 198323 100 100 73728 28 0 0
 A
 18 4
 A
@@ -140,7 +140,7 @@ The key to the garden is here, hidden in the dust.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 garden key~
 It's a key!
@@ -152,7 +152,7 @@ gold key~
 ~
 18 24 1 1 7 0 8392736 16385 0 0 0
 3 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 gold key~
 Such a pretty key, made of &+Ypure gold&N.
@@ -164,7 +164,7 @@ key thick black iron~
 ~
 18 15 1 1 7 0 8392704 16385 0 0 0
 3 50 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 key thick black iron~
 The key is somewhat large, made of solid &+Lblack iron&N.
@@ -176,7 +176,7 @@ key frost calamity~
 ~
 18 1 1 0 5 0 8388609 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key frost calamity~
    &+CThis strange &+ckey &+Chas been rumored throughout the mortal
@@ -192,7 +192,7 @@ insignia auril badge~
 ~
 9 8 3 0 12 0 67125249 2097153 64 0 0
 2 0 0 0 0 0 0 0
-0 56784 100 0 64 0 0
+0 56784 100 100 0 64 0 0
 A
 13 5
 A
@@ -204,7 +204,7 @@ robe icicles~
 ~
 9 44 3 0 11 0 28672 9 64 0 0
 35 0 0 0 0 0 0 0
-1 92000 100 40 64 0 0
+1 92000 100 100 40 64 0 0
 A
 18 3
 A
@@ -216,7 +216,7 @@ mace ice~
 ~
 5 44 3 0 14 0 74752 8193 64 37440423 0
 6 4 3 0 0 10 45 25
-1 123454 100
+1 123454 100 100
 E
 mace ice~
    Made out of a solid block of ice from the elemental plane of ice, this
@@ -247,7 +247,7 @@ red earthstone ring~
 ~
 9 15 1 0 5 0 36864 16387 0 0 0
 6 0 0 0 0 0 0 0
-0 5832 100 536870912 0 0 0
+0 5832 100 100 536870912 0 0 0
 A
 13 12
 A
@@ -259,7 +259,7 @@ bloody heart captain~
 ~
 13 2 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97017
 bloody heart strife~
 &+Lthe &+rbloody &+Rheart &+Lof &+CStrife&n~
@@ -267,7 +267,7 @@ bloody heart strife~
 ~
 13 2 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97020
 cloak rhemoraz scales~
 &+ya cloak of &+rrhemoraz &+yscales&N~
@@ -275,7 +275,7 @@ cloak rhemoraz scales~
 ~
 9 35 3 8 7 0 0 1025 64 0 0
 15 9 1 3 0 0 0 0
-10 15000 100 536870912 0 0 0
+10 15000 100 100 536870912 0 0 0
 E
 cloak rhemoraz scalemail~
    The scales of the beast are inherently fireproof, and thus they give
@@ -295,7 +295,7 @@ mail fur lined suit~
 ~
 9 3 0 0 7 0 0 9 64 4173708804 0
 16 3 1 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 mail fur suit~
    The suit is standard mail, if not then slightly higher quality, but it
@@ -313,7 +313,7 @@ mailed boots yeti~
 ~
 9 16 3 8 7 0 0 65 0 0 0
 6 6 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 boots mailed~
    Soft yeti hide boots that would normally offer excellent protection
@@ -333,7 +333,7 @@ A suit of &+Bblue&N and &+Wwhite&N banded mail stands against the wall.~
 ~
 9 16 0 0 7 0 0 9 0 4165287492 0
 15 3 1 3 0 0 0 0
-20 500 100
+20 500 100 100
 E
 banded mail~
    Its simply made of thick pieces of boiled leather bolstered together
@@ -349,7 +349,7 @@ purple silk shawl~
 ~
 9 3 0 0 7 0 0 5 0 0 0
 3 2 1 3 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 purple silk shawl~
    A simple shawl of &+mpurple&N silk, spun in a common fashion.  The only
@@ -366,7 +366,7 @@ onyx pedestal~
 ~
 25 11 0 50 7 0 0 0 0 0 0
 97026 259 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 onyx pedestal~
 &+LThis dark pedestal glows with malevolent power.&N
@@ -378,7 +378,7 @@ a sculpture~
 ~
 13 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sculpture young woman~
    The statue is of a beautiful young lady clothed only in a thin shawl.
@@ -391,7 +391,7 @@ a plaque~
 ~
 13 16 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque sign~
 
@@ -408,7 +408,7 @@ calf skin shoes~
 ~
 9 12 3 8 7 0 0 65 0 0 0
 5 6 1 3 0 0 0 0
-0 10 100
+0 10 100 100
 E
 calf skin shoes~
    A small quaint little pair of shoes probably made somewhere in a
@@ -425,7 +425,7 @@ A &+Llong dangling&N &+cearring&N lies here in a pile.~
 ~
 9 15 1 1 7 0 0 524289 0 0 0
 3 14 0 1 0 0 0 0
-0 3300 100
+0 3300 100 100
 E
 earring long dangling~
    Its just a chain really with a small tear drop shaped object at the
@@ -442,7 +442,7 @@ plate blue white~
 ~
 9 16 0 0 8 0 1024 9 0 87572571 0
 18 3 1 3 0 0 0 0
-30 10000 100
+30 10000 100 100
 E
 plate~
    This is the standard issue plate to all of Strife's guards excepting
@@ -461,7 +461,7 @@ gauntlets blue white~
 ~
 9 16 3 5 7 0 1024 129 0 87572571 0
 7 7 1 3 0 0 0 0
-3 750 100
+3 750 100 100
 E
 gauntlets~
    The gauntlets are standard issue to the castles guards.  They are made
@@ -478,7 +478,7 @@ boots boots blue white~
 ~
 9 16 3 8 7 0 1024 65 0 87572571 0
 8 6 1 3 0 0 0 0
-5 750 100
+5 750 100 100
 E
 boots plate~
    The boots are standard issue to all the guards not in the lowest patrol.
@@ -495,7 +495,7 @@ chefs hat~
 ~
 9 3 3 3 7 0 0 17 0 0 0
 5 4 16 3 0 0 0 0
-1 12 100
+1 12 100 100
 E
 chefs hat~
    Giant it is, its nearly two feet around and three feet tall.  The
@@ -512,7 +512,7 @@ A &+Mpurple&N &+ye&+ma&+rr&+cthstone&N &+mring&N lies hidden under your foot.~
 ~
 9 16 1 1 7 0 36864 3 0 0 0
 5 0 0 10 0 0 0 0
-0 20000 100 32768 0 0 0
+0 20000 100 100 32768 0 0 0
 E
 earthstone purple ring~
    Shades of purple from the deepest to the lightest mix with shades of
@@ -529,7 +529,7 @@ hoop silver~
 ~
 9 22 0 0 7 0 0 4097 0 0 0
 5 0 0 1 0 0 0 0
-0 3300 100
+0 3300 100 100
 E
 silver hoop~
    It seems to be just what it appears, a run of the mill silver hoop
@@ -546,7 +546,7 @@ A &+ya meek brown dress&N lies crumpled in a heap.~
 ~
 9 3 3 8 7 0 536870912 9 0 0 0
 2 3 1 3 0 0 0 0
-0 10 100
+0 10 100 100
 E
 meek brown dress~
    A servants outfit no doubt, its very bland and unattractive.  It has
@@ -559,7 +559,7 @@ broom~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 10 1 4 7 0 0 0 0
-2 10 100
+2 10 100 100
 E
 broom~
    Its got a long wooden handle with a large head of straw to sweep away
@@ -573,7 +573,7 @@ A &+ybrown fur hat&N is here waiting to be worn.~
 ~
 9 3 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-2 10 100
+2 10 100 100
 E
 brown fur hat~
    Its made from a combination of beaver, otter, and snow hare fur.
@@ -588,7 +588,7 @@ A crumpled &+Wnight shirt&N sits in the corner, smelling used.~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 1 3 1 3 0 0 0 0
-0 10 100
+0 10 100 100
 E
 nightshirt~
    Its just a white shirt that someone decided to wear when they went to
@@ -601,7 +601,7 @@ overcoat dark brown~
 ~
 9 3 0 0 7 0 9216 1025 64 4197892 0
 12 9 1 3 0 0 0 0
-4 9000 100
+4 9000 100 100
 E
 dark brown overcoat~
    Thick, yet supple leather from a strange beast was used to make this
@@ -619,7 +619,7 @@ shortened spear~
 ~
 5 6 2 0 7 0 1024 8193 0 8515584 0
 15 3 3 11 0 0 0 0
-3 10 100
+3 10 100 100
 E
 shortened spear~
    Its a regular battle spear that has had the shaft cut down to about a
@@ -637,7 +637,7 @@ grey gnomeskin moccasins~
 ~
 9 12 0 0 7 0 5120 65 0 8515584 0
 6 6 1 3 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 grey gnomeskin moccasins~
    A sickly grey color has come over the skin due to the tanning process,
@@ -657,7 +657,7 @@ leather apron~
 ~
 9 13 3 6 7 0 0 1025 0 4173708804 0
 7 9 1 3 0 0 0 0
-5 10 100
+5 10 100 100
 E
 leather apron~
    Normally stained with blood and food particles, all it has on it now
@@ -673,7 +673,7 @@ warm fur jacket~
 ~
 9 3 0 0 7 0 0 9 0 0 0
 4 3 1 3 0 0 0 0
-2 10 100
+2 10 100 100
 E
 fur jacket~
    A thick layer of yeti hide stuffed and lined with fur makes the jacket
@@ -687,7 +687,7 @@ warm fur pants~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-1 10 100
+1 10 100 100
 E
 fur pants~
    Made from snow hare mostly, with a strong center structure of thick
@@ -702,7 +702,7 @@ half-eaten sandwich~
 ~
 19 48 2 2 7 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 sandwich half-eaten~
    A simple ham and cheese sandwich, though it looks halfway frozen.
@@ -715,7 +715,7 @@ sledge battle iron~
 ~
 5 15 3 0 7 0 0 8193 64 4173708804 0
 4 3 4 6 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 black battle sledge~
    Wrought from the heaviest of leaden iron, it must weight at least 10
@@ -734,7 +734,7 @@ blued steel vambraces~
 ~
 9 16 0 0 7 0 1024 257 64 87650395 0
 10 8 1 3 0 0 0 0
-3 35000 100
+3 35000 100 100
 E
 blued steel vambraces~
    Quenching has brought out some beautiful colors in the steel of the
@@ -753,7 +753,7 @@ blued steel greaves~
 ~
 9 16 0 0 10 0 1024 33 64 87650395 0
 11 5 1 3 0 0 0 0
-6 35000 100
+6 35000 100 100
 E
 blued steel greaves~
    Quenching has brought out some beautiful colors in the steel of the
@@ -772,7 +772,7 @@ main gauche~
 ~
 5 16 2 0 7 0 0 8193 0 4194697632 0
 9 3 3 11 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 main gauche~
    Primarily a defensive weapon of swashbucklers and pirates, more and
@@ -792,7 +792,7 @@ ringmail suit~
 ~
 9 22 3 0 7 0 0 9 0 4165287492 0
 20 3 1 3 0 0 0 0
-12 10000 100
+12 10000 100 100
 E
 suit ringmail~
    Dulled by the passage of time and the neglect of its owner, the suit
@@ -810,7 +810,7 @@ iron gorget~
 ~
 9 15 0 0 7 0 1024 5 0 87572571 0
 7 2 1 3 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 iron gorget~
    A simple round iron clasp for the neck that sweeps out in a wide disc
@@ -828,7 +828,7 @@ skinned hands troll~
 ~
 9 12 3 0 7 0 8192 129 0 4194697632 0
 9 7 1 3 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 troll hands skinned~
    A horrid sight indeed.  Troll hands alone are enough to send chills
@@ -849,7 +849,7 @@ protective eyelets~
 ~
 9 16 2 0 8 0 0 131073 0 0 0
 5 12 2 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 eyelets protective~
    A simple pair of tiny goggles framed in brass designed to keep
@@ -867,7 +867,7 @@ ceremonial war axe~
 ~
 5 16 3 8 9 0 1024 8193 0 33685920 0
 1 3 3 3 0 0 0 0
-5 9500 100
+5 9500 100 100
 E
 axe ceremonial war~
    Strictly for looks and ceremony, its made from steel designed to be
@@ -885,7 +885,7 @@ simple white robe~
 ~
 9 3 3 8 7 0 1024 9 0 37883812 0
 12 3 1 3 0 0 0 0
-6 10 100
+6 10 100 100
 E
 simple white robe~
    Its so simple its almost beyond description.  It doesnt even qualify
@@ -905,7 +905,7 @@ trowel~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 1 4 3 0 0 0 0
-2 10 100
+2 10 100 100
 E
 grout trowel~
    Just a thin piece of sheet metal furnished with a handle for the sole
@@ -918,7 +918,7 @@ overalls~
 ~
 9 16 0 0 7 0 536870912 9 0 0 0
 12 3 1 3 0 0 0 0
-3 120 100
+3 120 100 100
 E
 overalls~
    The overalls are plain brown and covered with tile grout.  A
@@ -931,7 +931,7 @@ brass miniature key~
 ~
 18 17 1 1 7 0 0 1 0 0 0
 3 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 brass key~
    A small shiny brass key with no outstanding features or marks.
@@ -943,7 +943,7 @@ shroud ethereal winds~
 ~
 9 1 0 0 12 0 111648 1025 64 4197892 0
 9 9 1 3 0 0 0 0
-0 75000 100 0 28 0 0
+0 75000 100 100 0 28 0 0
 E
 shroud ethereal winds~
    It moves over the shoulders with a certain grace much like that found
@@ -964,7 +964,7 @@ blue tunic~
 ~
 11 3 0 0 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-2 10 100
+2 10 100 100
 E
 blue tunic~
    A standard tunic with no other purpose than simple clothing.
@@ -978,7 +978,7 @@ ledger thick~
 ~
 33 28 0 0 7 0 16384 8404993 64 0 0
 0 0 225 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 ledger~
    Its full of numbers and book titles all cross-referenced to a location
@@ -993,7 +993,7 @@ green yellow blouse~
 ~
 11 3 0 0 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 blouse~
    A terrible example of bad taste and a sad comment on the fashion of
@@ -1012,7 +1012,7 @@ blue silk balloon pants~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 pants balloon~
    A truly comical attempt at fashion, they are simply silk pants with a
@@ -1030,7 +1030,7 @@ tidy white uniform~
 ~
 11 3 0 0 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 uniform~
    Nice and clean, its a standard issue uniform to all of the castles
@@ -1045,7 +1045,7 @@ white uniform pants~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 pants~
    Much like the uniform they go with, the pants are clean and proper but
@@ -1058,7 +1058,7 @@ brown robe~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 brown robe~
    It's just enough to keep out the chill winter winds, but not enough to
@@ -1076,7 +1076,7 @@ large gold hoop~
 ~
 11 24 0 0 7 0 0 524289 0 0 0
 0 0 0 1 0 0 0 0
-0 3300 100
+0 3300 100 100
 E
 gold hoop~
    Pretty normal as far as earrings go, though this one is very
@@ -1094,7 +1094,7 @@ fancy purple silk shirt~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 purple silk shirt fancy~
    A fine piece of clothing from Lleywer most likely, judging by the
@@ -1108,7 +1108,7 @@ oversized pants~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 0 0 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 pants oversized~
    Gigantic would be the best term to describe their size.  They are
@@ -1121,7 +1121,7 @@ thin sliver adamantite~
 ~
 31 19 1 2 7 0 5120 16385 0 8515584 0
 30 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 sliver adamantite~
    Its long and thin, and very strong.  It appears to have rows of ridges
@@ -1135,7 +1135,7 @@ revolting orange yellow cloak~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 13 3 129 4 0 0 0 0
-1 10 100
+1 10 100 100
 E
 revolting orange yellow cloak~
    A truly tasteless creation with all the wrong colors in all the wrong
@@ -1154,7 +1154,7 @@ large black apron~
 ~
 9 3 3 6 7 0 0 9 0 0 0
 12 3 1 4 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 large black apron~
    It seems to be made of some sort of dyed animal skin, though what
@@ -1172,7 +1172,7 @@ shawl blue white knit~
 ~
 11 3 0 0 7 0 0 5 0 0 0
 0 0 0 4 0 0 0 0
-1 500 100
+1 500 100 100
 E
 blue white knit shawl~
    Knit from cotton and dreamweed, a fiberous plant that grows near the
@@ -1188,7 +1188,7 @@ jumper blue~
 ~
 11 3 0 0 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 500 100
+1 500 100 100
 E
 blue jumper~
    Its a nice outfit, with pockets and frills of white lace.  Its
@@ -1204,7 +1204,7 @@ sash yellow~
 ~
 11 3 3 3 7 0 0 2049 0 0 0
 0 0 0 4 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 billowing yellow sash~
    A nice touch to finish off the outfit.  Its made from a combination of
@@ -1221,7 +1221,7 @@ outfit formal black~
 ~
 11 3 0 0 7 0 0 9 0 0 0
 0 0 0 3 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 formal black outfit~
    A pleasant combination of cloak and robe that gives an air of
@@ -1239,7 +1239,7 @@ robe dark blue~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-2 10 100
+2 10 100 100
 E
 dark blue robe~
    It's made from warm and fuzzy terry cloth with deep pockets and a
@@ -1257,7 +1257,7 @@ blue slippers~
 ~
 11 3 3 6 7 0 0 65 0 0 0
 0 0 0 4 0 0 0 0
-0 10 100
+0 10 100 100
 E
 blue slippers~
    A simple pair of blue slippers with a velvet lining. Not many extras
@@ -1274,7 +1274,7 @@ pile~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 4 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pile~
 &+CThe little pile of coins looks tempting!&N
@@ -1286,7 +1286,7 @@ pile~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 4 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pile~
 &+CThe little pile of coins looks tempting!&N
@@ -1298,7 +1298,7 @@ pile~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 6 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pile~
 &+CThe little pile of coins looks tempting!&N
@@ -1310,7 +1310,7 @@ shield frostmaiden~
 ~
 37 16 3 15 7 0 1024 513 66 87638107 2048
 2 1 3 179 3 0 0 0
-30 20000 100
+30 20000 100 100
 E
 shield frostmaiden~
    It's made of a foreign substance, not quite metal but not organic
@@ -1331,7 +1331,7 @@ silvery war axe~
 ~
 5 22 3 8 7 0 1024 8193 65 95993947 0
 1 3 3 3 0 0 0 0
-5 13000 100
+5 13000 100 100
 E
 silvery war axe~
    The shaft is very long, almost four feet in length.  The head of the
@@ -1350,7 +1350,7 @@ black suit brigandine platemail~
 ~
 9 16 3 25 9 0 0 9 64 4173708804 0
 21 3 1 3 0 0 0 0
-10 30000 100
+10 30000 100 100
 E
 black suit brigandine~
    Made from horizontal iron bands strung together to form plates, it
@@ -1369,7 +1369,7 @@ blackened war axe~
 ~
 5 16 3 8 7 0 0 8193 0 4165209604 0
 1 3 3 3 0 0 0 0
-4 10 100
+4 10 100 100
 E
 blackened war axe~
    Standard issue to all the Upper Echelon.  Its blackened by quenching
@@ -1387,7 +1387,7 @@ buffalo hide shoes~
 ~
 9 12 3 6 7 0 0 65 0 0 0
 5 6 1 4 0 0 0 0
-0 10 100
+0 10 100 100
 E
 buffalo hide shoes~
    Made from the underbelly of a buffalo, the shoes are excellent for
@@ -1404,7 +1404,7 @@ sandstorm mask cloth~
 ~
 9 10 3 3 7 0 32768 262145 0 0 0
 7 13 1 3 0 0 0 0
-0 10 100
+0 10 100 100
 E
 sandstorm mask~
    Its made from the skull of a Calimshan sand worm.  The relative
@@ -1424,7 +1424,7 @@ sandstorm goggles~
 ~
 9 16 3 3 7 0 0 131073 0 0 0
 7 12 2 3 0 0 0 0
-1 10 100 0 2 0 0
+1 10 100 100 0 2 0 0
 E
 sandstorm goggles~
    They are designed to work in near darkness conditions.  The blinding
@@ -1444,7 +1444,7 @@ pile coins~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 0 300 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pile coins~
 &+CLooks pretty valuable!&N
@@ -1456,7 +1456,7 @@ silvery sack~
 ~
 15 22 3 10 11 0 36864 8404993 0 0 0
 600 1 -1 350 0 0 0 0
--200 65000 100
+-200 65000 100 100
 E
 silvery sack~
    Made from a silvery cloth like material, the bag seems relativly
@@ -1470,7 +1470,7 @@ dusty glass ampoule~
 ~
 10 7 2 4 7 0 4096 1 0 0 0
 50 41 36 144 0 0 0 0
-1 1 100
+1 1 100 100
 E
 glass ampoule~
    Its really just a tiny little glass vial with a one use tip that is broken
@@ -1484,7 +1484,7 @@ pile coins~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 3000 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pile coins~
 &+CLooks pretty valuable!&N
@@ -1496,7 +1496,7 @@ fountain basin~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 13 0 0 0 0 0
-10 10 100
+10 10 100 100
 E
 fountain basin~
 It appears to be full of something like &+rblood&N.
@@ -1508,7 +1508,7 @@ fountain basin~
 ~
 12 11 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 10 100
+10 10 100 100
 E
 fountain basin~
 It's a fountain all right.
@@ -1520,7 +1520,7 @@ a plaque~
 ~
 13 16 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque sign~
        /-------------------------------------------------\
@@ -1537,7 +1537,7 @@ a plaque~
 ~
 13 16 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque sign~
         /-----------------------------------------------\
@@ -1554,7 +1554,7 @@ horse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 10 0 -1 100 0 0 0 0
-10 10 100
+10 10 100 100
 E
 horse corpse~
    The horses front leg has a visible compound fracture above the right hoof.
@@ -1572,7 +1572,7 @@ sign~
 ~
 12 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 10 100
+10 10 100 100
 E
 sign directory~
 ------------------------------------------------------------------------------
@@ -1593,7 +1593,7 @@ black leather key sheath~
 ~
 15 13 1 2 7 0 8425472 1 0 0 0
 2 29 97108 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 sheath black leather~
    It's really just a peice of leather folded in half and sewn down the
@@ -1608,7 +1608,7 @@ key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
    It's so tiny it's hard to imagine it opening anything without
@@ -1621,7 +1621,7 @@ pile coins~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 10000 6000 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 pile coins~
 Looks pretty valuable!
@@ -1633,7 +1633,7 @@ map~
 ~
 12 28 1 1 7 0 0 8388609 0 0 0
 0 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 map~
 
@@ -1660,7 +1660,7 @@ a sign~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque sign~
        /---------------------------------------------------\
@@ -1679,7 +1679,7 @@ twisted iron shaft~
 ~
 5 15 3 0 7 0 114688 8193 0 4198895524 0
 15 2 4 11 0 0 0 0
-5 35000 100
+5 35000 100 100
 E
 twisted iron shaft~
    It appears to be nothing more than a shaft of iron heated in a forge
@@ -1697,7 +1697,7 @@ double-edged war axe~
 ~
 5 16 3 8 7 0 1024 8193 0 87572571 0
 1 3 4 3 0 0 0 0
-10 10 100
+10 10 100 100
 E
 axe war~
    Standard issue weapon to many of Strife's forces, its a durable, well
@@ -1715,7 +1715,7 @@ onion~
 ~
 19 48 2 2 7 0 0 1 0 0 0
 75 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 onion~
    The onion was probably shipped up from the south, as nothing so juicy
@@ -1728,7 +1728,7 @@ wakizashi black~
 ~
 5 16 3 10 7 0 0 8193 0 4198895524 0
 5 3 5 3 0 0 0 0
-1 10 100
+1 10 100 100
 E
 wakizashi sword~
    Unlike most swords, the metal of the blade does not extend to the end
@@ -1751,7 +1751,7 @@ dirk straightback~
 ~
 5 16 2 0 7 0 17408 8193 64 8515584 0
 2 3 3 11 0 0 0 0
-1 10 100 32784 0 0 0
+1 10 100 100 32784 0 0 0
 E
 straightback dirk~
    Instead of being double-edged, this knife has a straight back edge.
@@ -1768,7 +1768,7 @@ mask stalkers~
 ~
 9 13 3 3 12 0 49152 262145 0 0 0
 7 0 0 5 0 0 0 0
-1 100000 100 1048576 0 0 0
+1 100000 100 100 1048576 0 0 0
 E
 stalkers mask~
    It appears to be not much more than a pile of silk, until one tries to
@@ -1784,7 +1784,7 @@ a note~
 ~
 16 29 1 1 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 12 100
+1 12 100 100
 E
 note paper~
 &+LMahdrel,
@@ -1807,7 +1807,7 @@ amulet discord~
 ~
 9 15 3 2 10 0 128 5 64 0 0
 9 2 0 3 0 0 0 0
-2 5 100
+2 5 100 100
 E
 amulet discord~
    The amulet is a black snow flake of iron.  It rests on a loop of hemp
@@ -1827,7 +1827,7 @@ belt iron bands~
 ~
 9 15 3 3 7 0 0 2049 64 0 0
 10 10 0 3 0 0 0 0
-5 10 100 67108864 16 0 0
+5 10 100 100 67108864 16 0 0
 E
 belt iron bands~
    It appears to be a leather belt on the inside, with iron bands secured
@@ -1846,7 +1846,7 @@ silver cinch cord~
 ~
 9 22 0 0 7 0 1024 2049 2 37883812 0
 8 10 0 3 0 0 0 0
-1 10 100
+1 10 100 100
 E
 silver cinch cord~
    Its really not much to behold, just a thin cord with silver thread
@@ -1864,7 +1864,7 @@ shield illithid hide~
 ~
 37 12 3 15 7 0 1024 513 64 12619268 0
 2 1 3 171 2 0 0 0
-3 10 100
+3 10 100 100
 E
 shield illithid hide~
    Made from tanned illithid hide, the shield appeals mostly to mages,
@@ -1883,7 +1883,7 @@ wrist pouch~
 ~
 15 13 3 3 7 0 0 4097 0 0 0
 55 15 97064 40 0 0 0 0
--20 10 100
+-20 10 100 100
 E
 wrist pouch~
    An ingenious little device that utilizes some sort of temporal magic
@@ -1905,7 +1905,7 @@ A &+rred&N key lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 1 5 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key red~
 &+rThe key is made of some reddish metal.&N
@@ -1917,7 +1917,7 @@ A &+ggreen&N key lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 1 5 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key green~
 &+gThe key is made out of some green metal.&N
@@ -1929,7 +1929,7 @@ a sign~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 sign~
        /-------------------------------------------------\
@@ -1946,7 +1946,7 @@ a sign~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 sign~
        /-------------------------------------------------\
@@ -1963,7 +1963,7 @@ a plaque~
 ~
 13 16 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque~
        /-------------------------------------------------\
@@ -1980,7 +1980,7 @@ a plaque~
 ~
 13 16 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque~
        /-------------------------------------------------\
@@ -1998,7 +1998,7 @@ throbbing orb~
 ~
 25 16 0 50 7 0 4096 0 0 0 0
 97127 259 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 throbbing orb~
 &+WThe orb keeps pulsing..over and over and over.&N
@@ -2010,7 +2010,7 @@ a plaque~
 ~
 13 16 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 plaque~
        /-------------------------------------------------\
@@ -2026,7 +2026,7 @@ Someone has dropped a &+groot&N &+yvial&N.&N~
 ~
 10 5 2 4 7 0 65536 1 0 0 0
 50 1 3 41 0 0 0 0
-1 10 100
+1 10 100 100
 E
 root vial orange~
    It appears to be a small vial shaped from a root.  Someone just
@@ -2040,7 +2040,7 @@ onion juicy~
 ~
 19 48 2 2 7 0 0 1 0 0 0
 125 0 0 0 0 0 0 0
-10 12 100
+10 12 100 100
 E
 onion~
    The onion was probably shipped up from the south, as nothing so juicy
@@ -2053,7 +2053,7 @@ Someone has tossed aside a piece of paper with some scribbling on it.~
 ~
 16 28 1 2 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 12 100
+0 12 100 100
 E
 notes speech paper scribbling~
                              Speech Notes - 1
@@ -2074,7 +2074,7 @@ Someone has tossed aside a piece of paper with some scribbling on it.~
 ~
 16 28 1 2 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 12 100
+0 12 100 100
 E
 paper scribbling notes speech~
                              Speech Notes - 2
@@ -2093,7 +2093,7 @@ sleeves troll hide~
 ~
 9 12 3 8 7 0 0 257 64 0 0
 6 8 1 3 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 sleeves troll hide~
    The sleeves appear to be made of tanned troll hide, evident by the
@@ -2112,7 +2112,7 @@ mask tribal ebony warmask~
 ~
 9 6 3 3 7 0 8192 262145 64 0 0
 6 13 1 3 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 mask carved ebony tribal~
    The mask is hand carved from the blackest ebony. It sits comfortably
@@ -2131,7 +2131,7 @@ A shiny flask is here, liquid spilling out of it.~
 ~
 17 7 0 0 7 0 0 16385 0 0 0
 70 70 10 0 0 0 0 0
--5 15000 100
+-5 15000 100 100
 E
 shiny flask~
    The flask appears to be steel plated with silver on the inside to
@@ -2147,7 +2147,7 @@ buckskin pack~
 ~
 15 12 3 10 10 0 0 4195329 0 0 0
 225 5 -1 225 0 0 0 0
--50 15000 100
+-50 15000 100 100
 E
 pack buckskin~
    The pack is made from top grade buckskin tanned by a professional and
@@ -2165,7 +2165,7 @@ ring earthstone blue~
 ~
 9 16 1 1 7 0 36864 3 0 0 0
 5 0 0 4 0 0 0 0
-0 12 100 0 192 0 0
+0 12 100 100 0 192 0 0
 E
 earthstone blue ring~
    Shades of blue from the deepest to the lightest mix with shades of
@@ -2184,7 +2184,7 @@ buckskin key pouch~
 ~
 15 16 1 2 7 0 0 16385 0 0 0
 15 5 -1 15 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 key pouch buckskin~
    The key pouch is really a combination of pouch and ring.  The main
@@ -2200,7 +2200,7 @@ cask wooden~
 ~
 17 6 0 0 7 0 0 16385 0 0 0
 23 23 10 0 0 0 0 0
-4 10 100
+4 10 100 100
 E
 cask wooden~
    Pretty standard as far as barrels and casks go. The unit is held
@@ -2214,7 +2214,7 @@ chest black iron~
 ~
 15 15 5 50 7 0 4096 0 0 0 0
 250 15 97010 250 0 0 0 0
-10000 1000 100
+10000 1000 100 100
 E
 chest black iron~
    The chest is made from solid iron plates, forge welded together at the
@@ -2229,7 +2229,7 @@ tooth calimshan sandworm~
 ~
 5 10 2 0 7 0 0 8193 0 0 0
 2 3 7 11 0 0 0 0
-2 12000 100
+2 12000 100 100
 E
 tooth sandworm calimshan~
    Plucked straight from the carcass of a giant sandworm, the teeth are
@@ -2248,7 +2248,7 @@ Someone has tossed aside a piece of paper with some scribbling on it.~
 ~
 16 28 1 2 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 12 100
+0 12 100 100
 E
 paper scribbling notes speech~
                              Speech Notes - 3

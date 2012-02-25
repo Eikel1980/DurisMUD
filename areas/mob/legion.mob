@@ -8,8 +8,8 @@ dirty shopkeeper~
 &+wits members. As you gaze at the pitiful creature, he looks up at you and
 &+wsays, 'What did I do wrong? I unholy worded ...' Pitiful creature indeed.&N
 ~
-28746 0 0 33554732 30 0 0 0 S
-PD 0 0 -1
+28746 0 0 0 33554732 30 0 0 0 S
+PD 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -22,8 +22,8 @@ golem silver br_c _nobutt_ assoc4_n_0~
 &+Wand power. It was created by the masters of this &+BCa&+bst&+Ble&+W to protect them
 &+Wand to deter any unwanted visitors.&N
 ~
-71400011 0 0 301989932 30 0 0 1000 S
-OG 0 512 6
+71400011 0 0 0 301989932 30 0 0 1000 S
+OG 0 512 0 6
 60 0 0 10d10+20000 10d10+30
 0.0.0.0 0
 8 8 0
@@ -36,8 +36,8 @@ golem silver br_c _nobutt_ assoc4_n_0~
 &+Wand power. It was created by the masters of this &+BCa&+bst&+Ble&+W to protect them
 &+Wand to deter any unwanted visitors.&N
 ~
-71400011 0 0 301989932 30 0 0 1000 S
-OG 0 32 6
+71400011 0 0 0 301989932 30 0 0 1000 S
+OG 0 32 0 6
 60 0 0 10d10+20000 10d10+30
 0.0.0.0 0
 8 8 0
@@ -50,8 +50,8 @@ golem ice frost br_c _nobutt_ assoc4_n_0~
 &+Wand power. It was created by the masters of this &+BCa&+bst&+Ble&+W to protect them
 &+Wand to deter any unwanted visitors.&N
 ~
-71400011 0 0 301989932 30 0 0 1000 S
-OG 0 512 6
+71400011 0 0 0 301989932 30 0 0 1000 S
+OG 0 512 0 6
 60 0 0 10d10+20000 10d10+30
 0.0.0.0 0
 8 8 0
@@ -64,8 +64,8 @@ golem ice frost br_c _nobutt_ assoc4_n_0~
 &+Wand power. It was created by the masters of this &+BCa&+bst&+Ble&+W to protect them
 &+Wand to deter any unwanted visitors.&N
 ~
-71400011 0 0 301989932 30 0 0 1000 S
-OG 0 1 6
+71400011 0 0 0 301989932 30 0 0 1000 S
+OG 0 1 0 6
 60 0 0 10d10+20000 10d10+30
 0.0.0.0 0
 8 8 0
@@ -78,8 +78,8 @@ golem ice frost br_c _nobutt_ assoc4_n_0~
 &+Wand power. It was created by the masters of this &+BCa&+bst&+Ble&+W to protect them
 &+Wand to deter any unwanted visitors.&N
 ~
-71400011 0 0 301989932 30 0 0 1000 S
-OG 0 32 6
+71400011 0 0 0 301989932 30 0 0 1000 S
+OG 0 32 0 6
 60 0 0 10d10+20000 10d10+30
 0.0.0.0 0
 8 8 0

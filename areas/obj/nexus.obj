@@ -5,7 +5,7 @@ translucent doubled door~
 ~
 25 23 3 0 15 0 0 0 0 1 0
 57501 7 -1 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 translucent doubled door~
 &+WThis door his gigantic and barely visible. It fades into and out of reality
@@ -19,7 +19,7 @@ mountainkin magical boots mountainkin~
 ~
 9 23 2 0 7 50 1536 65 0 94209 562
 12 2 4 2 0 0 0 0
-5 45000 100
+5 45000 100 100
 E
 boots magical mountainkin kin~
 &+YThese boots must possess great power. It is said that it has been passed down
@@ -38,7 +38,7 @@ A nearly transparent &+Wsilver sphere&n levitates in mid-air.~
 ~
 25 23 4 0 7 0 8192 0 0 0 0
 57500 320 -1 0 0 0 0 0
-99999 1410065407 100
+99999 1410065407 100 100
 E
 silver sphere~
 &+WThis sphere is nearly transparent. If it weren't for the colors spiraling within
@@ -55,7 +55,7 @@ a &+mmo&+yus&+Le &+mco&+ylo&+Lred &+mpo&+yin&+Lty &+mt&+yo&+Lp &+mh&+ya&+Lt~
 ~
 9 3 3 0 7 0 64 17 0 0 0
 10 0 0 2 0 0 0 0
-2 42000 100 0 12 0 0
+2 42000 100 100 0 12 0 0
 E
 mouse colored top hat~
 This top hat looks nearly done in. The only thing holding it together are
@@ -74,7 +74,7 @@ silver medallion rune~
 ~
 18 22 3 0 10 0 4096 16385 0 1 0
 0 0 0 0 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 silver medallion rune~
 This medallion has a rune symbol etched into it. It is said amoung the
@@ -89,7 +89,7 @@ an &+Wa&+Ln&+Wce&+Lst&+br&+Lia&+bl &+blog&+Bgsw&+Lord of &+bst&+Bre&+Lngth~
 ~
 5 19 4 0 14 0 67118080 8193 64 16385 0
 5 3 8 0 0 0 0 0
-5 42000 100
+5 42000 100 100
 E
 ancestrial sword strength~
 This sword has been passed down from generation of generation and whomever
@@ -109,7 +109,7 @@ large cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57582 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large cave~
 &+LThe cave is on the side of the mountain. If it were to run the entire course
@@ -123,7 +123,7 @@ some &+rr&+Ru&+Lne &+rco&+Rve&+Lred &+cel&+Cec&+Wt&+cr&+Cu&+Wm &+csl&+Cee&+Wves~
 ~
 9 18 4 0 14 50 1088 257 64 8421796 0
 15 0 0 4 0 0 0 0
-20 65000 100
+20 65000 100 100
 E
 rune covered sleeves mithril~
 These pair of mithril sleeves are nice. Mithril is one of the strongest
@@ -145,7 +145,7 @@ large cave bright light exit tunnel~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57508 103 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large cave exit bright light~
 The bright light signals the tunnels end. Outside, a forest awaits.
@@ -157,7 +157,7 @@ A pair of magical elven glasses lay here.~
 ~
 11 18 3 0 7 0 1024 131073 64 88113436 0
 0 0 0 0 0 0 0 0
-1 29283 100 4 0 0 1048576
+1 29283 100 100 4 0 0 1048576
 A
 5 6
 A
@@ -169,7 +169,7 @@ giant oak tree~
 ~
 5 6 6 0 7 0 4194304 8193 0 1 0
 10 2 10 7 0 0 0 0
-20 45000 100
+20 45000 100 100
 E
 giant oak tree~
 A giant oak tree uprooted from the ground, by a huge giant.
@@ -181,7 +181,7 @@ an &+banc&+Best&+Wrial &+bpr&+Bay&+Wer &+bb&+Bo&+Wok &nof &+bwi&+Bsd&+Wom~
 ~
 11 50 2 0 14 0 5184 16385 64 32 0
 0 0 0 1 0 0 0 0
-1 34000 100 0 4 0 0
+1 34000 100 100 0 4 0 0
 E
 prayer book wisdom lost~
 This prayer book is an artifact of a lost civilization that has succumbed to
@@ -197,7 +197,7 @@ An &+Lbla&+yck ga&+Lte&n into the &+revil&+L stone tower&n.~
 ~
 25 11 7 0 14 0 0 0 0 0 0
 57515 7 -1 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 magical tower~
 &+LThis tower rises several hundred feet into the air. It is enshrouded in darkness
@@ -211,7 +211,7 @@ a &+rb&+Le&+ra&+rt&+Lin&+rg h&+Le&+ra&+Lr&+rt&n of a &+Lne&+mc&+Lr&+mo&+mma&+Lnc
 ~
 9 31 3 0 14 0 0 5 0 0 0
 10 0 0 3 0 0 0 0
-5 35000 100 268435456 0 0 0
+5 35000 100 100 268435456 0 0 0
 A
 35 2
 #57514
@@ -221,7 +221,7 @@ A &+csilver spring&n flows from the mountain.~
 ~
 17 15 3 0 7 0 0 0 0 1 0
 9999 9999 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 silver spring~
 &+cThis silver spring flows easily here from the mountain into the swamp to the
@@ -234,7 +234,7 @@ a &+Wt&+rra&+Wns&+rl&+Wuc&+re&+Wnt &+Wwh&+rite ro&+Wse~
 ~
 9 7 1 0 14 0 1088 524289 0 16385 0
 2 0 0 1 0 0 0 0
-1 40000 100
+1 40000 100 100
 E
 translucent rose entwined thorns~
 This red rose is entwined with pricky thorns that could draw blood. It seems
@@ -252,7 +252,7 @@ a pair of &+gfin&+Wely &+gwov&+Wen &+gelv&+Wen &+glegg&+Wings~
 ~
 9 5 3 0 14 0 576 33 0 0 12
 15 0 0 3 0 0 0 0
-5 45000 100 536870912 0 0 0
+5 45000 100 100 536870912 0 0 0
 E
 leggings elven~
 These leggings are made of fine elven cloth. The cloth could only be
@@ -269,7 +269,7 @@ a &+Lp&+bu&+Bl&+Ls&+Ba&+bt&+Li&+Bn&+bg &+Lt&+bw&+Lo&n-&+Lh&+ba&+Ln&+bd&+be&+Ld&+
 ~
 5 16 4 0 14 50 20981008 8396801 0 83886105 0
 13 6 6 0 0 0 0 0
-15 122304 100 16 0 0 0
+15 122304 100 100 16 0 0 0
 E
 frosty two-handed longsword~
 &+LThis blade is deadly. It is endowed with great magic and a chill emanates from
@@ -286,7 +286,7 @@ slender steel dagger~
 ~
 5 23 2 0 7 50 64 8193 320 1 0
 2 2 4 11 0 0 0 0
-5 45000 100
+5 45000 100 100
 E
 magical dagger mountainkin~
 &+LA slender steel dagger.
@@ -302,7 +302,7 @@ a &+gsl&+Gim&+Ly te&+Gnta&+gcle~
 ~
 11 47 2 0 14 0 78848 2049 64 85999619 0
 0 0 8 0 0 0 0 0
-2 40505 100 73728 4096 0 0
+2 40505 100 100 73728 4096 0 0
 E
 slimy tentacle~
 A slimy tentacle from the great beast Kraken wrapped around the tentacles of a
@@ -319,7 +319,7 @@ a &+bbar&+Bbar&+Wian &+bsp&+Bir&+Wit &+bw&+Bar&+Wd~
 ~
 9 37 3 0 7 0 1088 5 66 256 0
 10 0 0 3 0 0 0 0
-5 20000 100 8192 0 0 0
+5 20000 100 100 8192 0 0 0
 E
 ancient barbarian spirit ward~
 An ancient barbarian spirit ward.
@@ -333,7 +333,7 @@ a &+bwh&+Bit&+We &+bt&+Big&+Wer &+bw&+Bo&+Wlf &+bp&+Ba&+Ww~
 ~
 9 34 3 0 14 0 1024 129 64 0 0
 6 0 0 0 0 0 0 0
-5 15000 100 0 64 0 0
+5 15000 100 100 0 64 0 0
 E
 bloody wolf paw~
 &+LA bloody wolf skin paw was was made by the barbarians. It is magical
@@ -350,7 +350,7 @@ bag fu ll of silver~
 ~
 8 22 3 0 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-25 1 100
+25 1 100 100
 E
 bag fu ll of silver~
 A bag full of silver.
@@ -362,7 +362,7 @@ silver earring~
 ~
 11 22 1 0 14 0 0 524289 64 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 sparkled silver stud~
 &+WA sparkled silver stud that has been crafted into an illustrious shining earring.
@@ -376,7 +376,7 @@ a&+c bar&+Cbar&+Wian &+cbra&+Cce&+Wlet &nof &+cbr&+Ca&+Wwn~
 ~
 9 19 2 0 14 0 1024 4097 2 16385 0
 5 0 0 3 0 0 0 0
-10 20000 100
+10 20000 100 100
 E
 bracelet barbarian might~
 An ancient barbarian bracelet of might.
@@ -390,7 +390,7 @@ A &+ywooden ch&+yest&n lined with &+gem&+Wer&+gal&+Wds&n and &+mru&+Wbi&+mes&n i
 ~
 15 6 4 0 14 0 0 0 0 0 0
 100 29 57526 100 0 0 0 0
-25 1 100
+25 1 100 100
 E
 large chest~
 A large chest.
@@ -402,7 +402,7 @@ stone key~
 ~
 18 11 1 0 14 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stone key~
 A stone key.
@@ -414,7 +414,7 @@ plate barbarian chiefs~
 ~
 9 18 3 0 15 50 5120 9 64 1 0
 35 0 0 3 0 0 0 0
-5 28322 100 0 64 0 0
+5 28322 100 100 0 64 0 0
 E
 mithril plate grangor~
 &+gThis is the lost plate of the great warchief Grangor. He lead his tribe to
@@ -431,7 +431,7 @@ tasty brew~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 50 34 97 0 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 tasty brew~
 A tasty brew.
@@ -443,7 +443,7 @@ a &+yg&+Yri&+yf&+Yf&+yo&+Yn &+Wc&+yl&+Wa&+yw ring~
 ~
 11 12 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 23222 100
+1 23222 100 100
 E
 crafted well well-crafted griffon claw ring~
 &+yThis ring was crafted from a griffon and posesses great magic. It fits
@@ -460,7 +460,7 @@ stone key~
 ~
 18 11 1 0 14 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silver key~
 A silver key.
@@ -472,7 +472,7 @@ gnomist charged magical boots~
 ~
 9 23 3 0 7 0 1088 65 0 2560 0
 10 0 0 4 0 0 0 0
-10 20000 100
+10 20000 100 100
 E
 pair magical charged boots~
 A pair of gnomish magical boots.
@@ -486,7 +486,7 @@ a &+ms&+Wh&+m&+Mi&+mm&+Wm&+me&+Mr&+mi&+Wn&+mg &+mt&+Mr&+Wa&+mn&+Ms&+Wl&+mu&+ms&+
 ~
 11 1 3 0 7 0 1024 1025 0 3584 0
 0 0 0 0 0 0 0 0
-1 23222 100 0 1 0 0
+1 23222 100 100 0 1 0 0
 E
 cloak shimmering transluscent~
 &+bThis cloak is nearly invisible as it shimmers from dimension to dimension, from this
@@ -503,7 +503,7 @@ magical potion~
 ~
 10 40 3 0 14 0 4096 1 0 0 0
 50 188 188 188 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 potion~
 A magical potion.
@@ -515,7 +515,7 @@ A pair of giant anaconda scales lays here.~
 ~
 8 35 3 0 14 0 4160 1 0 0 0
 0 0 0 0 0 0 0 0
-5 30000 100
+5 30000 100 100
 E
 anaconda scales pair~
 A pair of anaconda scales.&n
@@ -527,7 +527,7 @@ A python scale lays here.~
 ~
 13 15 3 0 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 python scale~
 A python scale.
@@ -539,7 +539,7 @@ A serpent scale lays here.~
 ~
 13 15 3 0 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 python scale~
 A serpent scale.
@@ -551,7 +551,7 @@ Some reptilian snakescales lay here.~
 ~
 9 2 3 0 7 0 1024 33 0 86017 0
 15 0 0 2 0 0 0 0
-5 28383 100 0 8192 0 0
+5 28383 100 100 0 8192 0 0
 E
 snakescales slimy scales~
 Some magically endowed scales granting a powerful enchantment of fortitude to
@@ -568,7 +568,7 @@ a &+Lri&+mng&n of &+Lfad&+ming~
 ~
 11 19 3 0 7 0 33559552 3 64 3584 0
 0 0 0 0 0 0 0 0
-1 23222 100 8 0 0 0
+1 23222 100 100 8 0 0 0
 E
 ring fading~
 &+WThis ring seems magical in nature and endows its wearer with the ability to remain
@@ -583,7 +583,7 @@ magical potion~
 ~
 10 40 3 0 14 0 4096 1 0 0 0
 50 131 131 131 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 potion~
 A magical potion.
@@ -595,7 +595,7 @@ fiery dragon eyes~
 ~
 8 15 2 0 7 0 4096 131073 0 1 0
 0 0 0 0 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 fiery dragon eyes~
 A pair of fire dragon eyes.
@@ -609,7 +609,7 @@ a &+bc&+Bl&+co&+Ca&+Wk&n of &+Ww&+Bhi&+bte &+bra&+Bbb&+Wit f&+Bu&+br~
 ~
 9 50 3 0 7 0 1025 1025 0 86080 0
 10 0 0 1 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 cloak rabbit deer fur~
 &+WThis is a cloak made from rabbit fur, it seems very warm and glows
@@ -626,7 +626,7 @@ some &+Lsha&+bdow&+Ly fo&+brm&n of &+Lmi&+bst~
 ~
 9 19 3 0 5 0 5248 129 64 83886105 0
 12 0 0 3 0 0 0 0
-5 23232 100
+5 23232 100 100
 E
 gloves pair darkness~
 &+LThese gloves come from the underworld and are made of adamantium. They are
@@ -643,7 +643,7 @@ magical potion~
 ~
 10 40 3 0 14 0 4096 1 0 1 0
 50 9 9 9 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 potion~
 A magical potion.
@@ -655,7 +655,7 @@ warm fire~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 warm fire~
 &+rA warm fire roasting some deer meat.
@@ -670,7 +670,7 @@ bear fur snow~
 ~
 8 15 3 0 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bear fur snow~
 &+WA small piece of fur.
@@ -682,7 +682,7 @@ bones piles~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bones piles~
 &+W
@@ -694,7 +694,7 @@ head sasquach~
 ~
 8 15 3 0 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 head sasquach~
 &+WMany bones from fallens warriors of the past.
@@ -706,7 +706,7 @@ parchment~
 ~
 8 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 parchment~
 &+yThis parchment was written by a young barbarian to be given to his father,
@@ -721,7 +721,7 @@ an &+geyeball&n of a &+gtroll~
 ~
 11 2 3 0 7 0 0 131073 64 0 0
 0 0 0 0 0 0 0 0
-1 23339 100
+1 23339 100 100
 A
 54 20
 A
@@ -733,7 +733,7 @@ a &+Cs&+Wh&+Ce&+Ce&+Cps&+Wki&+Cn &+Cb&+We&+Cl&+Wt~
 ~
 11 15 3 0 7 0 64 2049 0 0 0
 100 1 0 100 0 0 0 0
-2 40000 100
+2 40000 100 100
 E
 handy toolbelt sheepskin~
 &+CThis toolbelt is made of sheepskin. It is quite comfortable and fits
@@ -751,7 +751,7 @@ the &+bbarbarian &+Wwarhelmet &nof &+Wch&+bam&+Wp&+bio&+Wns~
 ~
 9 15 3 0 7 0 4160 17 0 0 0
 10 0 0 4 0 0 0 0
-10 69999 100
+10 69999 100 100
 E
 warhelmet helmet war great scippy great~
 &+bThis is the great warhelmet of the great Scippy. Scippy is legendary. If
@@ -769,7 +769,7 @@ whitewashed fountain~
 ~
 17 15 3 0 7 0 0 0 0 1 0
 9999 9999 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 whitewashed fountain~
 &+WA whitewashed fountain.
@@ -781,7 +781,7 @@ a &+Lsi&+rlk bla&+Lck cl&+roa&+Lk&n~
 ~
 9 3 3 0 7 0 1088 1025 64 83902489 0
 8 0 0 1 0 0 0 0
-5 34000 100 0 0 0 536870912
+5 34000 100 100 0 0 0 536870912
 E
 silk black cloak~
 &+LThis cloak comes from within the underworld. It is enchanted with evil power
@@ -796,7 +796,7 @@ ancient twisted skeleton head~
 ~
 9 15 3 0 7 0 4160 2097153 0 1 0
 2 0 0 1 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 ancient twisted skeleton head~
 &+WAn ancient twisted skeleton head.
@@ -812,7 +812,7 @@ tentacle slimy~
 ~
 8 15 3 0 7 0 4160 1 0 1 0
 0 0 0 0 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 tentacle slimy~
 &+GA slimy tentacle from a large flesh eating plant.
@@ -824,7 +824,7 @@ small iron key~
 ~
 18 15 3 0 7 0 4096 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 small iron key~
 &+LA small iron key.
@@ -836,7 +836,7 @@ steel longsword~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 1 8 3 0 0 0 0
-10 38282 100
+10 38282 100 100
 E
 steel longsword~
 &+WA tribal longsword with barbarian markings. It is very sharp.
@@ -848,7 +848,7 @@ a&+W shimmering &+memerald~
 ~
 29 15 3 0 7 0 67112992 0 64 0 0
 320 57507 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 T
 1 0 100 100
 #57559
@@ -858,7 +858,7 @@ quiver snow white~
 ~
 9 50 3 0 7 0 0 1048577 0 1 0
 2 0 0 1 0 0 0 0
-2 20394 100
+2 20394 100 100
 E
 quiver snow white~
 &+WA snow white quiver of a wolf.
@@ -874,7 +874,7 @@ gigantic shield barbarian~
 ~
 37 16 3 0 7 0 67108928 513 64 0 0
 1 3 5 18 5 0 0 0
-20 42294 100
+20 42294 100 100
 E
 gigantic shield barbarian~
 &+bThis shield is of the barbarian warriors of Mugnork. It is very heavy and
@@ -892,7 +892,7 @@ arm sasquach~
 ~
 8 15 3 0 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 arm sasquach~
 &+WA right arm of a sasquach.
@@ -904,7 +904,7 @@ a tiny &+Yg&+yr&+Yif&+yf&+go&+Gn c&+yl&+ya&+Yw~
 ~
 11 15 3 0 7 0 4160 3 0 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 tiny griffon claw~
 &+yA tiny griffon claw.
@@ -920,7 +920,7 @@ fur packwolf pack wolf~
 ~
 13 15 3 0 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 fur packwolf pack wolf~
 &+LSome fur of a snowpack wolf.
@@ -932,7 +932,7 @@ bridge gate key~
 ~
 18 15 3 0 7 0 0 16385 0 1 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bridge gate key~
 &+yA bridge gate key.
@@ -944,7 +944,7 @@ a &+Lt&+Ww&+Lis&+Wted &+Lb&+Won&+Le &+Wr&+Li&+Wng~
 ~
 9 10 3 0 7 0 0 3 64 0 0
 0 0 0 3 0 0 0 0
-5 34292 100 0 0 0 33554432
+5 34292 100 100 0 0 0 33554432
 E
 bone twisted ring~
 &+WThis bone ring was crafted out of an ancient twisted skeleton head. It is
@@ -959,7 +959,7 @@ slimy tentacly~
 ~
 8 2 3 0 7 0 12352 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 23322 100
+1 23322 100 100
 E
 slimy tentacly~
 &+gA slimy tentacle of a kraken.
@@ -971,7 +971,7 @@ a&+W shimmering &+memerald~
 ~
 29 15 3 0 7 0 67112992 0 64 0 0
 320 57663 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 T
 1 15 100 100
 #57568
@@ -981,7 +981,7 @@ A &+cma&+Cgi&+ccal tw&+Cili&+cght&n fills the rune enscribed oval chamber.~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 57570 15 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 magical twilight~
 &+cThis magical twilight fills the room.
@@ -993,7 +993,7 @@ bracelet flaming draco eyes~
 ~
 9 2 3 0 7 0 1024 4097 0 32 0
 2 0 0 2 0 0 0 0
-1 23232 100 536870912 0 0 0
+1 23232 100 100 536870912 0 0 0
 E
 bracelet flaming~
 &+RThis bracelet was crafted from the eyes of a great fire draco by one the most
@@ -1010,7 +1010,7 @@ wolf fur~
 ~
 8 12 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 102838 100
+1 102838 100 100
 E
 wolf fur~
 &+WSome wolf fur.
@@ -1022,7 +1022,7 @@ The damed mask.~
 ~
 9 10 3 0 7 0 1152 262209 96 16778257 0
 10 0 0 3 0 0 0 0
-2 52324 100 536870912 0 0 0
+2 52324 100 100 536870912 0 0 0
 E
 mask damned~
 &+LThis mask was summoned from the underworld by a power lich sorcerer. It
@@ -1039,7 +1039,7 @@ An icy barbarian warlod visor lays here.~
 ~
 9 16 3 0 5 0 0 131073 64 0 0
 10 0 0 3 0 0 0 0
-2 47822 100 32 0 0 0
+2 47822 100 100 32 0 0 0
 E
 icy barbarian warlord visor~
 &+CA visor belonging to a chief of the a barbarian clan.
@@ -1055,7 +1055,7 @@ plaque msyterious~
 ~
 13 7 3 0 5 0 4097 0 64 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plaque msyterious~
 &+WThis plaque reads ..
@@ -1074,7 +1074,7 @@ an &+bi&+Bc&+Wy &+bbar&+Bbar&+Wian &+btr&+Bib&+We &+bin&+Bsig&+Wnia~
 ~
 11 33 3 0 5 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-1 12392 100
+1 12392 100 100
 E
 icy barbarian tribal insignia~
 &+bThis barbarian insignia bears the symbol of &+CMugnork&+b.
@@ -1090,7 +1090,7 @@ a &+bs&+Bn&+Co&+Ww c&+Cov&+Ber&+bed &+bf&+Bo&+Wx &+bf&+Bu&+Wr &+bs&+Bu&+Wit~
 ~
 9 50 3 0 5 0 1024 9 0 86080 0
 15 0 0 2 0 0 0 0
-2 23222 100
+2 23222 100 100
 E
 rabbit suit fur snow~
 &+CThis is a snow covered suit made from rabbit fur. It looks very warm and gives
@@ -1107,7 +1107,7 @@ a &+Rp&+rr&+Gi&+gs&+mm&+Ma&+bt&+Bi&+Cc &+rh&+Ra&+Cl&+co&n of &+Wl&+Gi&+gg&+Ch&+G
 ~
 11 31 3 0 5 0 33558529 17 64 3584 0
 0 0 0 0 0 0 0 0
-1 282938 100 16 0 0 0
+1 282938 100 100 16 0 0 0
 E
 prismatic ball light~
 &+rThis ruby crystal reflects all the colors back. It is an amazing piece that
@@ -1124,7 +1124,7 @@ key~
 ~
 18 15 3 0 5 0 0 16385 0 1 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 &+WA key.
@@ -1136,7 +1136,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 11 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 0 8388608 0 0
+0 0 100 100 0 8388608 0 0
 #57579
 object unnamed~
 &+Ra flame~
@@ -1144,7 +1144,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #57580
 forest path~
 &+ga forest path~
@@ -1152,7 +1152,7 @@ forest path~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 forest path~
 &+gA forest path opens up to the south, it might be the only way through forest.
@@ -1164,7 +1164,7 @@ A &+Wsmall totem&n rises six feet out of the snow.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-999 0 100
+999 0 100 100
 E
 small totem~
 &+WSmall tribal etchings have been chiseled into the totem and the meanings of
@@ -1179,7 +1179,7 @@ The &+Wsn&+yow cov&+Wered te&+Ynt&n of the &+Ldra&+Wgon &+Lfig&+Whter&n is here.
 ~
 25 3 3 0 7 0 0 0 0 0 0
 57692 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #57583
 bracelet tribal barbarian~
 a &+bbar&+Bbar&+Wian &+btri&+Bbal &+bbra&+Bcel&+Wet~
@@ -1187,7 +1187,7 @@ a &+bbar&+Bbar&+Wian &+btri&+Bbal &+bbra&+Bcel&+Wet~
 ~
 11 16 3 0 7 0 1024 4097 64 256 0
 0 0 0 0 0 0 0 0
-2 29292 100
+2 29292 100 100
 A
 35 2
 A
@@ -1199,7 +1199,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #57585
 razor-sharp adamantium longsword razor sharp~
 a &+Wra&+Yzo&+yr-&+Wsh&+Yar&+yp &+Wad&+Yam&+yant&+Wiu&+Ym &+Wlo&+Yng&+ysw&+Yor&+Wd~
@@ -1207,7 +1207,7 @@ a &+Wra&+Yzo&+yr-&+Wsh&+Yar&+yp &+Wad&+Yam&+yant&+Wiu&+Ym &+Wlo&+Yng&+ysw&+Yor&+
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 5 2 8 0 0 0 0 0
-10 292838 100 16 0 0 0
+10 292838 100 100 16 0 0 0
 A
 22 -3
 A

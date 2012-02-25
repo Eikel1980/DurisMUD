@@ -5,7 +5,7 @@ rocks rock~
 ~
 29 15 3 0 5 0 2 0 0 0 0
 270 54506 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rocks rock~
    &+ySeveral rocks seem to be blocking further passage in the tunnel.
@@ -17,7 +17,7 @@ rocks rock~
 ~
 29 15 3 0 5 0 2 0 0 0 0
 270 54507 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rocks rock~
    &+ySeveral rocks seem to be blocking further passage in the tunnel.
@@ -29,7 +29,7 @@ statue cyric destroyer~
 ~
 29 15 3 0 5 0 1 0 0 0 0
 270 54519 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue cyric destroyer~
    &+LThis large statue is crafted of pure diorite and stands nearly eight
@@ -62,7 +62,7 @@ small diorite key~
 ~
 18 15 3 0 5 0 8388609 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small diorite key~
    &+LThis small key is made of scratched diorite.
@@ -74,7 +74,7 @@ runed key~
 ~
 18 11 1 0 5 0 8392705 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 runed key~
    &+LThis key has several &+mdemonic runes &+Lof Cyric the Destroyer.
@@ -86,7 +86,7 @@ dark runed hood~
 ~
 9 15 3 0 5 0 1 17 64 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark runed hood~
    &+LThis cloth hood has been stitched with several glowing runes on it.
@@ -104,7 +104,7 @@ dark silver plaque~
 ~
 13 22 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark silver plaque~
     In some sort of &+rdemonic&N writing...
@@ -128,7 +128,7 @@ large fountain blood~
 ~
 17 15 3 0 5 0 0 0 0 0 0
 50 50 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large fountain blood~
    &+LThis large stone fountain erupts with a tiny spurt of blood every
@@ -141,7 +141,7 @@ bloody sacrimental dagger~
 ~
 5 11 3 0 12 0 0 8193 64 0 0
 2 2 4 0 0 0 0 0
-0 15000 100 0 12 0 0
+0 15000 100 100 0 12 0 0
 A
 22 -3
 A
@@ -153,7 +153,7 @@ wristband suffering~
 ~
 9 15 3 0 5 0 4096 4097 64 0 0
 8 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wristband suffering~
    &+LThis magical wristband is made of some sort of cloth, stitched

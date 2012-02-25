@@ -5,7 +5,7 @@ pants~
 ~
 9 3 2 1 11 0 0 33 0 0 0
 4 5 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pants~
 These jet-black pants are made out of a material similar to silk, but
@@ -23,7 +23,7 @@ stick sword training~
 ~
 5 15 3 4 7 0 8192 8193 0 0 0
 9 1 8 11 0 0 0 0
-2 0 100
+2 0 100 100
 E
 stick sword training~
 Cimmerians normally fight unarmed, but in the earliest stages of their
@@ -42,7 +42,7 @@ bracelet blue~
 ~
 9 43 1 1 9 0 0 4097 0 0 0
 5 11 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 bracelet blue~
 This slip of a bracelet is just a few fibers wound into a circle. Despite its
@@ -58,7 +58,7 @@ bracelet green~
 ~
 9 43 1 1 9 0 0 4097 0 0 0
 5 11 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 bracelet green~
 This bracelet is so insubstantial, it nearly doesn't exist. It consists of
@@ -74,7 +74,7 @@ ring blue bluish~
 ~
 9 15 1 1 9 0 0 3 0 0 0
 3 1 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 ring blue bluish~
 This ring is little more than a slim band of bluish metal. On the inside,
@@ -89,7 +89,7 @@ ring green~
 ~
 9 15 1 1 9 0 0 3 0 0 0
 3 1 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 ring green~
 This ring is little more than a strip of green-hued metal, although etchings
@@ -105,7 +105,7 @@ chain blue~
 ~
 9 15 1 1 10 0 0 5 0 0 0
 3 2 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 chain blue~
 This length of chain, meant to be worn around the neck, is tinted blue and
@@ -120,7 +120,7 @@ chain green~
 ~
 9 15 1 1 10 0 0 5 0 0 0
 3 2 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 chain green~
 It is amazing that mere iron can be worked this finely, but the X-and-O
@@ -136,7 +136,7 @@ earring blue~
 ~
 9 15 1 1 10 0 0 524289 0 0 0
 3 14 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 earring blue~
 This earring is little more than an iron stud, painted blue and marked with
@@ -153,7 +153,7 @@ earring green stud~
 ~
 9 15 1 1 10 0 0 524289 0 0 0
 3 14 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 earring green stud~
 This tiny earring has been tinted green and marked with the X-and-O symbol
@@ -169,7 +169,7 @@ headband black~
 ~
 9 3 2 2 11 0 65857 17 0 32798 0
 3 4 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 headband black~
 It is said that in ancient times the Cimmerians were granted a dozen gifts
@@ -191,7 +191,7 @@ sash black~
 ~
 9 3 2 2 11 0 65857 2049 0 32798 0
 2 10 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 sash black~
 From the X-and-O symbol on the sash, and the strange glowing aura that
@@ -211,7 +211,7 @@ mask winduin~
 ~
 9 15 2 2 12 0 65857 262145 0 32798 0
 6 13 0 2 0 0 0 0
-2 0 100
+2 0 100 100
 E
 mask winduin~
 This mask is legendary among the Cimmerian nomads, having purportedly been
@@ -230,7 +230,7 @@ stick sword training~
 ~
 5 15 3 4 7 0 12288 8193 0 0 0
 9 1 8 11 0 0 0 0
-2 0 100
+2 0 100 100
 E
 stick sword training~
 This simple piece of wood is used to teach young Cimmerian students the
@@ -248,7 +248,7 @@ flask violet~
 ~
 10 7 1 1 7 0 4288 1 0 0 0
 50 192 234 -1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 flask violet~
 This tiny glass flask is filled with a violet liquid that seems very thick,
@@ -261,7 +261,7 @@ journal book~
 ~
 33 14 2 2 7 0 4168 16385 0 0 0
 0 0 108 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 journal book~
 The first two pages of this journal have been written in, and can be read by
@@ -304,7 +304,7 @@ The corpse of Rellius lies here.~
 ~
 15 2 3 45 7 0 4096 0 0 0 0
 1 0 0 0 0 0 0 0
-165 0 100
+165 0 100 100
 E
 corpse rellius~
 Poor Rellius seems to have been the target of a disintegrate spell. That he
@@ -319,7 +319,7 @@ wood shard piece~
 ~
 8 6 1 0 7 0 12353 1 0 0 0
 0 0 0 0 0 0 0 0
-0 24000 100
+0 24000 100 100
 E
 wood shard piece~
 This is little more than a sliver of wood, but it fairly throbs with the
@@ -334,7 +334,7 @@ iron shard piece~
 ~
 8 15 1 0 7 0 12353 1 0 0 0
 0 0 0 0 0 0 0 0
-0 24000 100
+0 24000 100 100
 E
 iron shard piece~
 This is little more than a sliver of iron, but it fairly throbs with the
@@ -349,7 +349,7 @@ head~
 ~
 8 2 2 4 7 0 8916992 1 0 0 0
 0 0 0 0 0 0 0 0
-4 24000 100
+4 24000 100 100
 E
 head~
 This disgusting severed head obviously came from the corpse of an Orc, as
@@ -364,7 +364,7 @@ head~
 ~
 8 2 2 4 7 0 8916992 1 0 0 0
 0 0 0 0 0 0 0 0
-4 24000 100
+4 24000 100 100
 E
 head~
 This disgusting severed head obviously came from the corpse of an Orc, as
@@ -379,7 +379,7 @@ ring~
 ~
 9 27 1 0 12 0 64 3 0 0 0
 5 1 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring~
 Most 'diamond' rings are a band of metal imbedded with one or more small
@@ -400,7 +400,7 @@ crown winduin~
 ~
 9 27 2 3 14 0 321 17 0 0 0
 5 4 0 3 0 0 0 0
-2 113959 100
+2 113959 100 100
 E
 crown winduin~
 This stunning piece of craftsmanship is made of solid diamond. Inlaid in the

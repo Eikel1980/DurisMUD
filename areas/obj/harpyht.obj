@@ -5,7 +5,7 @@ sign~
 ~
 13 6 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+W__________________
@@ -28,7 +28,7 @@ hanging cage~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hanging cage~
 &+LThis cage hangs from a large metal pole that has been planted into
@@ -43,7 +43,7 @@ rope ladder~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 31210 340 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31103
 cage hanging~
 &+La large hanging cage&n~
@@ -51,7 +51,7 @@ cage hanging~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 31240 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cage hanging~
 &+LThis man-sized cage, appears to be unlocked, the rusty door squeaks
@@ -64,7 +64,7 @@ rusted rusty key~
 ~
 18 15 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31105
 wyvern egg~
 &+ya wyvern &+Wegg&n~
@@ -72,7 +72,7 @@ wyvern egg~
 ~
 8 45 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 #31106
 giant golem battle~
 &+wa giant battle golem&n~
@@ -80,7 +80,7 @@ giant golem battle~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 giant golem battle~
 &+wThis mechanical golem appears to have been made ages ago but probably
@@ -95,7 +95,7 @@ barbed whip~
 ~
 5 14 3 0 5 0 1024 8193 0 89656833 0
 14 3 3 0 0 0 0 0
-0 8221 100
+0 8221 100 100
 E
 barbed whip~
 &+yA simple barbed whip, one of the favoured weapons of harpy mages.&n
@@ -111,7 +111,7 @@ ancient dwarven artifact~
 ~
 13 11 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #31109
 small skeleton~
 &+ya small &+Wskeleton&n~
@@ -119,7 +119,7 @@ small skeleton~
 ~
 15 15 3 0 5 0 4096 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #31110
 sign~
 &+Wa sign&n~
@@ -127,7 +127,7 @@ sign~
 ~
 13 6 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+W___________________
@@ -150,7 +150,7 @@ prisoner shackles~
 ~
 13 15 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31112
 storm crow feather~
 &+ca storm &+Lcrow&+c feather&n~
@@ -158,7 +158,7 @@ storm crow feather~
 ~
 8 15 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31113
 feathered ring~
 &+ya feathered ring&n~
@@ -166,7 +166,7 @@ feathered ring~
 ~
 9 15 3 0 5 0 0 3 0 0 0
 3 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 5
 #31114
@@ -176,7 +176,7 @@ feathered hat~
 ~
 9 15 3 0 5 0 0 17 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 #31115
@@ -186,7 +186,7 @@ plans papers~
 ~
 13 29 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #31116
 feathered ornament~
 &+ya feathered ornament&n~
@@ -194,7 +194,7 @@ feathered ornament~
 ~
 9 50 3 0 5 0 0 134217729 0 0 0
 2 0 0 1 0 0 0 0
-0 3999 100
+0 3999 100 100
 A
 19 2
 #31117
@@ -204,7 +204,7 @@ gigasaur tail~
 ~
 8 2 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #31118
 feathered shawl enchanted~
 &+yan &+Yenchanted&+y feathered shawl&n~
@@ -212,7 +212,7 @@ feathered shawl enchanted~
 ~
 9 50 3 0 7 0 8193 5 0 0 0
 12 0 0 3 0 0 0 0
-0 12991 100 0 16 0 0
+0 12991 100 100 0 16 0 0
 A
 13 15
 A

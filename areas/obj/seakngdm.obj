@@ -5,7 +5,7 @@ strange dark pool water~
 ~
 25 15 3 0 7 0 67121152 0 0 0 0
 31536 11 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 strange dark pool water~
    &+bWithin the vasts kingdom waters, this strange dark pool rests
@@ -23,7 +23,7 @@ no_show_teleporter~
 ~
 25 15 3 0 7 0 67117058 0 0 0 0
 31541 6 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31502
 blue thrusting needle~
 &+ba blue &+rthr&+Rust&+Wing &+Bneedle&N~
@@ -31,7 +31,7 @@ blue thrusting needle~
 ~
 5 11 3 0 3 0 67117057 8193 0 0 0
 2 3 5 11 0 0 0 0
-2 15999 100
+2 15999 100 100
 E
 blue slicing needle~
    &+bThis long thin needle has been removed from a &+Bblue needled blowfish.
@@ -50,7 +50,7 @@ shaft~
 ~
 25 15 3 0 7 0 67117058 0 0 0 0
 31545 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31504
 bubble~
 &+ban air bub&+Bb&+Wl&Ne&N~
@@ -58,7 +58,7 @@ bubble~
 ~
 25 15 3 0 7 0 67117058 0 0 0 0
 31547 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31505
 pool~
 &+La dar&+bk p&+Lool&N~
@@ -66,7 +66,7 @@ pool~
 ~
 25 15 3 0 7 0 67117056 0 0 0 0
 31673 264 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool~
    &+LThis larg&+be, dark p&+Lool rests on&+b the very &+Lbottum of &+bthe whirlpool where&+L the
@@ -81,7 +81,7 @@ skull shadows~
 ~
 29 15 3 0 7 0 67117057 0 64 0 0
 32 31566 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skull shadows~
 
@@ -103,7 +103,7 @@ statue~
 ~
 14 15 3 0 7 0 67117058 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 T
 2145 3 1 50
 #31508
@@ -113,7 +113,7 @@ wide key~
 ~
 18 15 3 0 7 0 75509760 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wide key~
    &+bA very strange key indeed.  It seems to be made out of water.. but
@@ -126,7 +126,7 @@ tablets~
 ~
 25 15 3 0 7 0 67117056 0 64 0 0
 31518 122 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tablets~
 
@@ -153,7 +153,7 @@ statue ancient ivory trident~
 ~
 29 15 3 0 7 0 67117057 0 0 0 0
 176 31501 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue ancient ivory trident~
 
@@ -181,7 +181,7 @@ gates door gate gateway doors~
 ~
 29 15 3 0 7 0 67117056 0 0 0 0
 270 31646 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gates door gate gateway doors~
    &+gThese large gates prevent any further passage into the water palace.
@@ -200,7 +200,7 @@ blue orb~
 ~
 29 15 3 0 7 0 67121153 0 0 0 0
 259 31654 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blue orb~
    &+bThis large &+Bbl&+Cu&+Be o&+Cr&+Bb&+b glows with an intense azure light.
@@ -215,7 +215,7 @@ water dagger~
 ~
 5 15 3 0 7 0 67117056 8193 64 0 0
 2 3 3 11 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 3
 #31514
@@ -225,7 +225,7 @@ tsunami trident sea unique~
 ~
 5 34 4 0 15 0 352331032 8193 66 33685920 0
 12 4 8 11 0 0 0 0
-14 0 100 2080 0 16777216 0
+14 0 100 100 2080 0 16777216 0
 E
 tsunami trident sea~
    Tsunami, trident of storms is a three-pronged spear carved out of
@@ -247,7 +247,7 @@ stinger manta ray~
 ~
 4 1 3 0 15 0 100675584 16385 0 0 0
 20 5 5 222 0 0 0 0
-0 60999 100 2048 0 0 0
+0 60999 100 100 2048 0 0 0
 A
 13 20
 A
@@ -259,7 +259,7 @@ staff sea~
 ~
 4 15 3 0 7 0 67118081 16385 0 46305252 0
 55 2 2 85 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 25
 A
@@ -271,7 +271,7 @@ pauldrons tide~
 ~
 9 15 3 0 7 0 67121153 257 0 0 0
 10 0 0 0 0 0 0 0
-1 242 100
+1 242 100 100
 A
 24 -2
 A
@@ -283,7 +283,7 @@ oval seastone~
 ~
 3 15 3 0 7 0 100676608 16385 64 4197892 0
 50 1 1 124 0 0 0 0
-1 3452 100
+1 3452 100 100
 A
 13 18
 A
@@ -295,7 +295,7 @@ nightstone earring~
 ~
 9 11 2 0 7 0 67121152 524289 64 0 0
 5 14 0 1 0 0 0 0
-0 70999 100
+0 70999 100 100
 E
 nightstone earring~
    &+LA &+rsp&+Ri&+rked &+Lpendant of purest &+mnight&+cs&+Lt&+co&+Cn&+ce&+L.  A small sphere rests within
@@ -313,7 +313,7 @@ gloves sea~
 ~
 9 15 3 0 7 0 100675584 129 64 0 0
 10 0 0 0 0 0 0 0
-1 234 100
+1 234 100 100
 A
 13 15
 A
@@ -325,7 +325,7 @@ sash rainweaver~
 ~
 9 15 3 0 7 0 67121152 2049 64 0 0
 10 0 0 0 0 0 0 0
-0 34 100
+0 34 100 100
 A
 13 10
 A
@@ -337,7 +337,7 @@ black visor _id_~
 ~
 9 1 3 0 7 0 67121153 131073 0 0 0
 10 0 0 0 0 0 0 0
-2 68555 100 32 0 0 0
+2 68555 100 100 32 0 0 0
 E
 _id_name_~
 visor darkness
@@ -361,7 +361,7 @@ twisted nightstone fork~
 ~
 5 15 3 0 7 0 67122177 8193 67 96071707 0
 18 5 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 E
 twisted nightstone fork~
    &+LFive equally large &+Gtw&+gis&+Gte&+gd &+rprongs&+L jut out from the base of this
@@ -380,7 +380,7 @@ daemonite whip~
 ~
 5 15 3 0 7 0 67117056 8193 67 0 0
 14 5 5 2 0 0 0 0
-0 0 100 73728 0 0 0
+0 0 100 100 73728 0 0 0
 A
 13 15
 A
@@ -392,7 +392,7 @@ huge pile coins platinum~
 ~
 20 15 3 0 7 0 67121152 1 0 0 0
 0 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 #31526
 amulet creation~
 &Nan &+Yamulet of &+bcreation&N~
@@ -400,7 +400,7 @@ amulet creation~
 ~
 9 15 3 0 7 0 100671488 5 64 0 0
 10 0 0 0 0 0 0 0
-0 0 100 2048 0 0 0
+0 0 100 100 2048 0 0 0
 E
 amulet creation~
    &+YThis amulet is trimmed with the purest gold.  A large oval shaped
@@ -416,7 +416,7 @@ oceanic cloak~
 ~
 9 15 3 0 7 0 67117057 1025 64 0 0
 15 0 0 0 0 0 0 0
-0 0 100 2048 0 0 0
+0 0 100 100 2048 0 0 0
 E
 oceanic cloak~
    &+bThis cloak is a blanket of water, worn about one's body.  It moves
@@ -435,7 +435,7 @@ nightstone spiked bracelet~
 ~
 9 15 3 0 7 0 67121153 4097 0 0 0
 8 0 0 1 0 0 0 0
-1 34 100
+1 34 100 100
 E
 nightstone spiked bracelet~
    &+LThreads of intricate &+mnight&+cs&+Ct&+co&+Ln&+ce&+L, native to the &+BWater Plane&+L, have
@@ -453,7 +453,7 @@ half silver amulet~
 ~
 8 15 3 0 7 0 75505665 16385 65 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 half silver amulet~
    This portion of a silver amulet looks to be the half of what used to
@@ -469,7 +469,7 @@ chest plate blue flame~
 ~
 9 15 3 0 7 0 0 9 64 4165287488 0
 30 3 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest plate blue flame~
    This chest plate has been formed magically from some sort of illusionary
@@ -489,7 +489,7 @@ sapphire eye~
 ~
 9 15 3 0 7 0 67117056 131073 64 0 0
 5 12 0 1 0 0 0 0
-2 243 100 44 0 0 0
+2 243 100 100 44 0 0 0
 A
 5 10
 A
@@ -501,7 +501,7 @@ band morkoth flesh~
 ~
 9 15 3 0 7 0 67121152 3 64 0 0
 7 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 band morkoth flesh~
    &+LThis shining strip of &+rflesh &+Lhas been carefully removed from
@@ -526,7 +526,7 @@ glyph~
 ~
 13 15 3 0 7 0 8193 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glyph~
 
@@ -552,7 +552,7 @@ magical manuscript~
 ~
 13 15 3 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 magical manuscript~
    &+bThis magical manuscript hovers in a two-dimensional state just before
@@ -572,7 +572,7 @@ tiny nightstone key~
 ~
 18 15 3 0 7 0 75509761 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny nightstone key~
    This tiny key is made of naturally formed black nighstone.  It shimmers
@@ -586,7 +586,7 @@ open blue portal~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 31700 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 open blue portal~
          &+B ‹‹‹‹‹‹‹‹‹‹
@@ -615,7 +615,7 @@ platinum brick~
 ~
 8 25 2 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 80000 100
+5 80000 100 100
 E
 platinum brick~
    &+WThis brick is made of pure platinum.  It was created using a fine
@@ -629,7 +629,7 @@ green gem called eye serpent _noquest_~
 ~
 8 26 2 0 15 0 4097 16385 64 0 0
 0 0 0 0 0 0 0 0
--5 125000 100
+-5 125000 100 100
 E
 green gem called eye serpent~
    This amazingly cut green gem glows with a soft magical aura.  It is in
@@ -646,7 +646,7 @@ silverish cutlass~
 ~
 5 22 3 0 9 0 9217 8193 66 96071683 0
 5 3 7 3 0 0 0 0
-5 60999 100
+5 60999 100 100
 E
 silverish cutlass~
    This cutlass is made from a very magical silver compound.  It has a very
@@ -666,7 +666,7 @@ long ivory partisan~
 ~
 5 34 4 0 10 0 71312384 8193 66 96071707 0
 13 1 10 11 0 0 0 0
-25 50999 100
+25 50999 100 100
 E
 long ivory partisan~
    This long ivory partisan is basically a narrow ivory shaft, headed with
@@ -685,7 +685,7 @@ several circular glass windows~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 several circular glass windows~
    These small, circular windows, are about the size, in circumference, as
@@ -702,7 +702,7 @@ two-handed golden broadsword sword~
 ~
 5 24 4 0 14 0 71312384 8193 66 95993883 0
 13 5 5 3 0 0 0 0
-25 49999 100
+25 49999 100 100
 E
 two-handed golden broadsword sword~
     This golden broadsword is nearly seven feet in length and appears to be
@@ -721,7 +721,7 @@ clawed wings dragon phantasmal~
 ~
 9 15 3 0 7 0 4096 1025 0 0 0
 15 0 0 3 0 0 0 0
-0 0 100 134219776 0 0 0
+0 0 100 100 134219776 0 0 0
 E
 clawed wings dragon phantasmal~
    &+cThese misty wings phase in and out of visability.  They grant the
@@ -740,7 +740,7 @@ blue dragonscale tunic~
 ~
 9 35 3 0 15 0 1 9 64 0 0
 25 0 0 5 0 0 0 0
-1 69999 100 64 64 0 0
+1 69999 100 100 64 64 0 0
 E
 blue dragonscale tunic~
    This fine piece of armor is a large shirt which would fit comfortably on
@@ -762,7 +762,7 @@ spiked pair azure leg plates~
 ~
 9 1 3 0 7 0 4096 33 0 4165209604 0
 15 0 0 4 1 0 0 0
-15 65999 100
+15 65999 100 100
 E
 spiked pair azure leg plates~
    These &+Bspiked&N leg plates seem to have been the natural armor plating
@@ -781,7 +781,7 @@ glowing necklace crystal spheres~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 15 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glowing necklace crystal~
    This glowing necklace of crystal gives off a faint magenta glow.  The glow
@@ -800,7 +800,7 @@ huge glimmering portal~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 31677 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge glimmering portal~
    This portal has just opened recently.  It floats within the center deck
@@ -813,7 +813,7 @@ small diamond wand~
 ~
 3 15 3 0 7 0 33555457 16385 64 12619524 0
 55 2 2 112 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small diamond wand~
     &+R __
@@ -843,7 +843,7 @@ glowing necklace _id_~
 ~
 9 1 3 0 7 0 100671489 5 64 0 0
 7 0 0 3 0 0 0 0
--5 1000000 100 2048 32768 0 0
+-5 1000000 100 100 2048 32768 0 0
 E
 glowing necklace~
    &+WThis strange necklace is made from a glimmering crystalline material
@@ -878,7 +878,7 @@ stone obelisk~
 ~
 14 15 3 0 7 0 67117056 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone obelisk~
    &+LThis stone obelisk rests just next to the throne of &+WPoseidon&+L.
@@ -895,7 +895,7 @@ stone obelisk~
 ~
 14 15 3 0 7 0 67117056 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone obelisk~
    &+LThis stone obelisk rests just next to the throne of &+WPoseidon&+L.
@@ -912,7 +912,7 @@ stone obelisk~
 ~
 14 15 3 0 7 0 67117056 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone obelisk~
    &+LThis stone obelisk rests just next to the throne of &+WPoseidon&+L.
@@ -929,7 +929,7 @@ Someone has dropped a red key here.~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #31554
 glowing potion 52potion~
 &+Ya glowing potion~
@@ -937,7 +937,7 @@ glowing potion 52potion~
 ~
 10 7 2 4 15 0 8716289 16385 0 0 0
 52 9 35 56 0 0 0 0
-1 10000000 100
+1 10000000 100 100
 E
 glowing potion~
    &+YA highly sought after commodity, this powerful potion will
@@ -954,7 +954,7 @@ glowing potion~
 ~
 10 15 3 0 7 0 8388609 1 0 0 0
 60 9 56 35 0 0 0 0
-0 0 100
+0 0 100 100
 A
 8 53
 #31556
@@ -964,7 +964,7 @@ something~
 ~
 5 15 3 0 5 0 8916994 8192 0 0 0
 6 5 5 0 0 1374076111 60 13
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+bIn his deep voice, &+WPoseidon &+bsummons forth a great incantation...
@@ -977,4 +977,4 @@ key~
 ~
 18 33 3 0 14 0 8400904 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

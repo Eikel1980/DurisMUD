@@ -5,7 +5,7 @@ sharp stone stick~
 ~
 5 11 3 0 7 0 1024 8193 0 8515584 0
 8 1 8 11 0 0 0 0
-3 4000 100
+3 4000 100 100
 A
 18 1
 A
@@ -17,7 +17,7 @@ dull bone mail~
 ~
 9 10 0 0 7 0 0 9 0 4173708804 0
 15 3 1 3 0 0 0 0
-60 15000 100
+60 15000 100 100
 A
 4 -1
 A
@@ -29,7 +29,7 @@ pet rock~
 ~
 13 11 0 0 7 0 129 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 4261 100
+1 4261 100 100
 E
 pet rock~
 This is the official pet rock of Faang. It has a frown face drawn in guano on
@@ -46,7 +46,7 @@ shirt chain mail~
 ~
 9 16 3 8 7 0 0 9 0 0 0
 5 3 1 3 0 0 0 0
-30 3500 100
+30 3500 100 100
 #15204
 smooth metal club~
 &+La gleaming metal club&N~
@@ -54,7 +54,7 @@ smooth metal club~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 10 1 3 6 0 0 0 0
-8 1200 100
+8 1200 100 100
 #15205
 batskin backpack bp~
 &+La batskin backpack&N~
@@ -62,7 +62,7 @@ batskin backpack bp~
 ~
 15 12 3 10 7 0 0 1025 0 0 0
 120 5 -1 100 0 0 0 0
-4 60 100
+4 60 100 100
 #15206
 spiked wooden club~
 &+ya spiked wooden club&N~
@@ -70,7 +70,7 @@ spiked wooden club~
 ~
 5 6 3 8 7 0 0 8193 0 4173708804 0
 11 1 2 6 0 0 0 0
-7 80 100
+7 80 100 100
 #15207
 batskin bag large~
 &+La large batskin bag&N~
@@ -78,7 +78,7 @@ batskin bag large~
 ~
 15 12 3 10 7 0 0 16385 0 0 0
 40 5 -1 100 0 0 0 0
-2 220 100
+2 220 100 100
 #15208
 tooth ogres~
 &+Wa huge ogres tooth~
@@ -86,7 +86,7 @@ tooth ogres~
 ~
 12 10 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 A
 18 1
 A
@@ -98,7 +98,7 @@ tiny bone ring~
 ~
 9 10 1 1 7 0 0 3 0 0 0
 2 1 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 A
 3 7
 A
@@ -110,7 +110,7 @@ polished bone longsword~
 ~
 5 10 3 10 7 0 262144 8193 0 4198895524 0
 5 1 5 3 0 0 0 0
-20 40000 100
+20 40000 100 100
 #15211
 polished bone bracelet~
 &+Wa polished bone bracelet&N~
@@ -118,7 +118,7 @@ polished bone bracelet~
 ~
 9 10 3 3 7 0 0 4097 0 4165209604 0
 5 11 24 3 0 0 0 0
-2 30000 100
+2 30000 100 100
 A
 19 1
 A
@@ -130,7 +130,7 @@ polished bone leggings~
 ~
 9 10 3 8 7 0 0 33 0 4165209604 0
 8 5 1 3 0 0 0 0
-16 60000 100
+16 60000 100 100
 A
 19 1
 A
@@ -142,7 +142,7 @@ bat tooth necklace~
 ~
 9 10 3 2 7 0 0 5 0 0 0
 5 2 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 2 4
 A
@@ -154,7 +154,7 @@ polished bone armplates~
 ~
 9 10 0 0 7 0 0 257 0 4165209604 0
 8 8 1 3 0 0 0 0
-10 60000 100
+10 60000 100 100
 A
 19 2
 #15215
@@ -164,7 +164,7 @@ bone dagger~
 ~
 5 10 2 3 7 0 0 8193 0 4194697632 0
 2 1 2 11 0 0 0 0
-2 2000 100
+2 2000 100 100
 #15216
 polished bone shield~
 &+Wa polished bone shield&N~
@@ -172,7 +172,7 @@ polished bone shield~
 ~
 37 10 3 15 7 0 0 513 0 4165209604 0
 2 1 3 160 0 0 0 0
-10 45000 100
+10 45000 100 100
 A
 5 2
 A
@@ -184,7 +184,7 @@ batskin eyepatch~
 ~
 9 12 3 2 7 0 0 131073 0 0 0
 4 12 2 3 0 0 0 0
-1 15000 100
+1 15000 100 100
 A
 24 -3
 #15218
@@ -194,7 +194,7 @@ polished bone helm~
 ~
 9 10 3 10 7 0 0 17 0 4198895524 0
 10 4 1 3 0 0 0 0
-4 35000 100
+4 35000 100 100
 A
 1 2
 A
@@ -206,7 +206,7 @@ large fried bat~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 30 0 0 0 0 0 0 0
-1 24 100
+1 24 100 100
 #15220
 huge fried bat~
 &+La huge fried bat&N~
@@ -214,7 +214,7 @@ huge fried bat~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 48 0 0 0 0 0 0 0
-1 293 100
+1 293 100 100
 #15221
 large vulture egg~
 &+Wa large vulture egg~
@@ -222,7 +222,7 @@ large vulture egg~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 64 0 0 0 0 0 0 0
-1 673 100
+1 673 100 100
 #15222
 fried bat wing~
 &+La fried bat wing&N~
@@ -230,7 +230,7 @@ fried bat wing~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 123 100
+1 123 100 100
 #15223
 poached chasm snake~
 &+ra poached chasm snake&N~
@@ -238,7 +238,7 @@ poached chasm snake~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 427 100
+1 427 100 100
 #15224
 small stone dagger~
 &+Wa small stone dagger&N~
@@ -246,7 +246,7 @@ small stone dagger~
 ~
 5 11 2 3 7 0 0 8193 0 4194697632 0
 2 1 2 11 0 0 0 0
-1 15 100
+1 15 100 100
 #15225
 small stone sword~
 &+Wa small stone sword&N~
@@ -254,7 +254,7 @@ small stone sword~
 ~
 5 11 2 10 7 0 0 8193 0 4198895524 0
 9 4 6 3 0 0 0 0
-3 60 100
+3 60 100 100
 #15226
 wooden club~
 &+ya wooden club&N~
@@ -262,7 +262,7 @@ wooden club~
 ~
 5 6 3 8 7 0 0 8193 0 0 0
 10 1 4 7 0 0 0 0
-3 12 100
+3 12 100 100
 #15227
 small batskin bag~
 &+La small batskin bag&N~
@@ -270,7 +270,7 @@ small batskin bag~
 ~
 15 12 3 10 7 0 0 16385 0 0 0
 50 5 -1 100 0 0 0 0
-1 20 100
+1 20 100 100
 #15228
 water bottle~
 &+ya bottle&N~
@@ -278,7 +278,7 @@ water bottle~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 4 0 0 0 0 0 0
-6 78 100
+6 78 100 100
 #15229
 batskin gloves~
 &+La pair of batskin gloves&N~
@@ -286,7 +286,7 @@ batskin gloves~
 ~
 9 12 3 6 7 0 0 129 0 0 0
 3 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 A
 18 2
 #15230
@@ -296,7 +296,7 @@ batskin sleeves~
 ~
 9 12 3 8 7 0 0 257 0 0 0
 2 8 1 3 0 0 0 0
-4 75 100
+4 75 100 100
 A
 5 5
 A
@@ -308,7 +308,7 @@ shield~
 ~
 37 16 3 15 7 0 0 513 0 0 0
 2 1 3 60 0 0 0 0
-3 100 100
+3 100 100 100
 #15232
 batskin cap~
 &+La batskin cap&N~
@@ -316,7 +316,7 @@ batskin cap~
 ~
 9 12 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-3 150 100
+3 150 100 100
 #15233
 batskin jacket~
 &+La batskin jacket&N~
@@ -324,7 +324,7 @@ batskin jacket~
 ~
 9 12 0 0 7 0 0 9 0 4165209604 0
 2 3 1 3 0 0 0 0
-10 200 100
+10 200 100 100
 #15234
 batskin boots~
 &+La pair of batskin boots&N~
@@ -332,7 +332,7 @@ batskin boots~
 ~
 9 12 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-4 1000 100
+4 1000 100 100
 A
 18 2
 #15235
@@ -342,7 +342,7 @@ bronze sleeves~
 ~
 9 20 3 8 7 0 0 257 0 4173708804 0
 6 8 1 3 0 0 0 0
-8 4750 100
+8 4750 100 100
 #15236
 bronze gauntlets~
 &+ya pair of bronze gauntlets&N~
@@ -350,7 +350,7 @@ bronze gauntlets~
 ~
 9 20 0 0 7 0 0 129 0 4173708804 0
 6 7 1 3 0 0 0 0
-8 5750 100
+8 5750 100 100
 #15237
 bronze leggings~
 &+ya pair of bronze leggings&N~
@@ -358,7 +358,7 @@ bronze leggings~
 ~
 9 20 3 8 7 0 0 33 0 4173708804 0
 6 5 1 3 0 0 0 0
-8 8500 100
+8 8500 100 100
 #15238
 bronze helmet~
 &+ya bronze helmet&N~
@@ -366,7 +366,7 @@ bronze helmet~
 ~
 9 20 3 10 7 0 0 17 0 4173708804 0
 6 4 1 3 0 0 0 0
-8 6500 100
+8 6500 100 100
 #15239
 water batskin skin~
 &+La batskin skin&N~
@@ -374,7 +374,7 @@ water batskin skin~
 ~
 17 12 3 8 7 0 0 16385 0 0 0
 16 8 0 0 0 0 0 0
-11 410 100
+11 410 100 100
 #15240
 specialty local bottle~
 &+Ma bottle of the local specialty&N~
@@ -382,7 +382,7 @@ specialty local bottle~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 8 0 0 0 0 0
-11 20 100
+11 20 100 100
 #15241
 ale bottle~
 &+ya bottle of ale&N~
@@ -390,7 +390,7 @@ ale bottle~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 3 0 0 0 0 0
-10 20 100
+10 20 100 100
 #15242
 beer bottle~
 &+Ya bottle of beer&N~
@@ -398,7 +398,7 @@ beer bottle~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 1 0 0 0 0 0
-10 20 100
+10 20 100 100
 #15243
 whiskey bottle~
 &+ya bottle of whiskey&N~
@@ -406,7 +406,7 @@ whiskey bottle~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 5 0 0 0 0 0
-11 50 100
+11 50 100 100
 #15244
 wine glass grape~
 &+ma glass of grape wine&N~
@@ -414,7 +414,7 @@ wine glass grape~
 ~
 17 7 0 0 7 0 0 16385 0 0 0
 2 2 2 0 0 0 0 0
-3 10 100
+3 10 100 100
 #15245
 wine bottle grape~
 &+ma bottle of grape wine&N~
@@ -422,7 +422,7 @@ wine bottle grape~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 2 0 0 0 0 0
-12 70 100
+12 70 100 100
 #15246
 hunk raw meat steak goat~
 &+ra hunk of raw goat meat~
@@ -430,7 +430,7 @@ hunk raw meat steak goat~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 39 100
+1 39 100 100
 #15247
 pooper scooper~
 &+ya pooper scooper~
@@ -438,7 +438,7 @@ pooper scooper~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 10 1 2 7 0 0 0 0
-3 12 100
+3 12 100 100
 #15248
 bronze shield~
 &+ya bronze shield&N~
@@ -446,7 +446,7 @@ bronze shield~
 ~
 37 20 3 15 7 0 0 513 0 4173708804 0
 2 1 2 75 0 0 0 0
-4 8200 100
+4 8200 100 100
 #15249
 bronze breast plate~
 &+ya bronze breast plate&N~
@@ -454,7 +454,7 @@ bronze breast plate~
 ~
 9 20 0 0 7 0 0 9 0 4173708804 0
 6 3 1 3 0 0 0 0
-45 17000 100
+45 17000 100 100
 #15250
 bronze plated boots~
 &+ya pair of bronze plated boots&N~
@@ -462,7 +462,7 @@ bronze plated boots~
 ~
 9 20 3 8 7 0 0 65 0 4173708804 0
 7 6 1 3 0 0 0 0
-30 19630 100
+30 19630 100 100
 #15251
 scroll hide human _id_~
 &+ya tanned human hide scroll&n~
@@ -470,7 +470,7 @@ scroll hide human _id_~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 12 53 53 0 0 0 0 0
-1 2001 100
+1 2001 100 100
 E
 _id_name_~
 scroll identify
@@ -486,7 +486,7 @@ brain~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 427 100
+1 427 100 100
 #15253
 steel grey potion~
 &+La steel grey potion&N~
@@ -494,7 +494,7 @@ steel grey potion~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 30 1 1 1 0 0 0 0
-1 1300 100
+1 1300 100 100
 #15254
 batskin canoe~
 &+Lan ogre sized batskin canoe&N~
@@ -502,7 +502,7 @@ batskin canoe~
 ~
 22 12 4 30 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-40 8000 100
+40 8000 100 100
 #15255
 chipped polished bone collar~
 &+Wa chipped polished bone collar&N~
@@ -510,7 +510,7 @@ chipped polished bone collar~
 ~
 9 10 0 0 7 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-4 20000 100
+4 20000 100 100
 A
 19 1
 A
@@ -522,7 +522,7 @@ arm iggy~
 ~
 5 2 3 8 7 0 4198400 8193 0 4165209604 0
 10 1 4 7 0 0 0 0
-15 5000 100
+15 5000 100 100
 A
 2 -2
 A
@@ -534,7 +534,7 @@ batskin gloves glove smooth~
 ~
 9 12 3 6 7 0 139264 129 0 0 0
 5 7 6 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 18 2
 A
@@ -546,7 +546,7 @@ spine ogres~
 ~
 5 10 3 0 7 0 1024 8193 0 87572571 0
 5 1 6 3 0 0 0 0
-15 9000 100
+15 9000 100 100
 A
 18 2
 A
@@ -558,7 +558,7 @@ batskin headband~
 ~
 9 12 0 0 7 0 8192 17 64 0 0
 5 4 1 3 0 0 0 0
-1 7000 100
+1 7000 100 100
 A
 24 -3
 #15260
@@ -568,7 +568,7 @@ batskin belt~
 ~
 9 12 3 3 7 0 1024 2049 0 37883812 0
 12 10 0 3 0 0 0 0
-6 8453 100
+6 8453 100 100
 A
 4 2
 A
@@ -580,7 +580,7 @@ club stone glowing~
 ~
 5 11 3 8 7 0 4194304 8193 0 4198895524 0
 10 2 1 6 0 0 0 0
-20 9000 100
+20 9000 100 100
 A
 1 2
 A
@@ -592,7 +592,7 @@ batskin mask~
 ~
 9 12 3 3 7 0 0 262145 0 0 0
 10 13 1 3 0 0 0 0
-10 6000 100
+10 6000 100 100
 A
 18 2
 A
@@ -604,7 +604,7 @@ glowing bone bracelet~
 ~
 9 10 3 3 7 0 1024 4097 0 37883812 0
 5 11 24 3 0 0 0 0
-2 40000 100
+2 40000 100 100
 A
 5 3
 A
@@ -616,7 +616,7 @@ bat tooth headband~
 ~
 9 10 0 0 7 0 128 17 0 0 0
 6 4 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 1 1
 A
@@ -628,7 +628,7 @@ skill bat batskull earring~
 ~
 9 10 1 1 7 0 132096 524289 0 37883812 0
 0 14 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 14 5
 A
@@ -640,7 +640,7 @@ bracelet batskin~
 ~
 9 12 3 3 7 0 0 4097 0 0 0
 3 11 24 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 A
 18 2
 A
@@ -652,7 +652,7 @@ turtle shell eyepatch~
 ~
 9 10 3 2 7 0 0 131073 0 0 0
 5 12 2 3 0 0 0 0
-1 6000 100
+1 6000 100 100
 A
 13 10
 #15268
@@ -662,7 +662,7 @@ polished stone bracelet~
 ~
 9 11 3 3 7 0 1025 4097 0 37883812 0
 5 11 24 3 0 0 0 0
-1 6900 100
+1 6900 100 100
 A
 18 1
 A
@@ -674,7 +674,7 @@ river water~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #15270
 lake water~
 &+Ba secluded lake~
@@ -682,7 +682,7 @@ lake water~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #15271
 raw meat~
 &+rsome raw meat~
@@ -690,7 +690,7 @@ raw meat~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 39 100
+1 39 100 100
 #15272
 map cavern faang~
 &+ya map of the Faang cavern&N~
@@ -698,7 +698,7 @@ map cavern faang~
 ~
 12 29 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 11 100
+1 11 100 100
 E
 map cavern faang~
                 to trails    *upper ledge*
@@ -730,7 +730,7 @@ chipped stone collar~
 ~
 9 11 0 0 7 0 262144 5 0 0 0
 3 2 1 3 0 0 0 0
-1 523 100
+1 523 100 100
 #15274
 smooth stone collar~
 &+Ba smooth stone collar~
@@ -738,7 +738,7 @@ smooth stone collar~
 ~
 9 11 0 0 7 0 262144 5 0 0 0
 5 2 1 3 0 0 0 0
-1 823 100
+1 823 100 100
 #15275
 chipped stone bracelet~
 &+ya chipped stone bracelet~
@@ -746,7 +746,7 @@ chipped stone bracelet~
 ~
 9 11 3 3 7 0 262144 4097 0 0 0
 3 11 24 3 0 0 0 0
-1 523 100
+1 523 100 100
 #15276
 smooth stone bracelet~
 &+Ba smooth stone bracelet~
@@ -754,7 +754,7 @@ smooth stone bracelet~
 ~
 9 11 3 3 7 0 0 4097 0 0 0
 5 11 24 3 0 0 0 0
-1 523 100
+1 523 100 100
 #15277
 polished stone collar~
 &+ba polished stone collar~
@@ -762,7 +762,7 @@ polished stone collar~
 ~
 9 11 0 0 7 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-1 823 100
+1 823 100 100
 A
 18 1
 #15278
@@ -772,7 +772,7 @@ limestone bracelet stone~
 ~
 9 39 3 3 7 0 0 4097 0 0 0
 5 11 24 3 0 0 0 0
-1 823 100
+1 823 100 100
 A
 19 1
 #15279
@@ -782,7 +782,7 @@ traveling boots boot~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 5 6 1 3 0 0 0 0
-3 6432 100
+3 6432 100 100
 A
 14 20
 #15280
@@ -792,7 +792,7 @@ a large sign~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 large sign~
 YOU GOT COMPLAINT? YOU GO DOWN TO GET RESPONSE!!
@@ -804,7 +804,7 @@ large boulder~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 274 15411 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 #15282
 large boulder~
 &+ya large boulder&n~
@@ -812,7 +812,7 @@ large boulder~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 274 15393 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 #15283
 rubble pile~
 &+La pile of &+wrubble&n~
@@ -820,7 +820,7 @@ rubble pile~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 15748 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 #15284
 rubble pile~
 &+La pile of &+wrubble&n~
@@ -828,7 +828,7 @@ rubble pile~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 15202 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #15500
 bison~
 cave bison corpse~
@@ -836,7 +836,7 @@ cave bison corpse~
 ~
 13 2 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bison~
 The cave bison is half consumed.
@@ -848,7 +848,7 @@ A tiny barbed spear lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 4194697632 0
 8 1 4 11 0 0 0 0
-1 300 100
+1 300 100 100
 E
 barbed spear~
    This spear is small, but effective.  Four razor sharp barbs follow
@@ -865,7 +865,7 @@ A pouched belt lies here.~
 ~
 15 12 3 3 7 0 0 2049 0 0 0
 40 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pouched belt~
    This belt has three large pouches, a thief's dream.
@@ -879,7 +879,7 @@ A &+gjade amulet &nlies here.~
 ~
 9 11 3 2 7 0 0 5 0 0 0
 6 2 0 3 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 jade amulet~
    This jade amulet is warm to the touch, obviously of a magical
@@ -896,7 +896,7 @@ A sharp cleaver lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 9 1 3 2 0 0 0 0
-2 600 100
+2 600 100 100
 E
 sharp cleaver~
    This cleaver is razor sharp, and wedge shaped for maxinum cutting
@@ -911,7 +911,7 @@ A lizard skin headband lies here.~
 ~
 9 12 3 8 7 0 0 17 0 0 0
 6 4 1 3 0 0 0 0
-0 800 100
+0 800 100 100
 E
 lizard skin headband~
    A simple lizard skin headband.
@@ -923,7 +923,7 @@ A stone club lies here.~
 ~
 5 11 3 8 7 0 0 8193 0 0 0
 10 1 2 6 0 0 0 0
-9 200 100
+9 200 100 100
 E
 stone club~
    A simple stone club, the power in the weight.
@@ -935,7 +935,7 @@ A lizard skin mask lies here.~
 ~
 9 12 3 8 7 0 0 262145 0 0 0
 3 13 1 3 0 0 0 0
-0 400 100
+0 400 100 100
 E
 lizard skin mask~
    A simple lizard skin mask.
@@ -947,7 +947,7 @@ A snake skin belt lies here.~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 7 10 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 snake skin belt~
    This belt is made of coarse layered snake skin, a foot wide strip
@@ -960,7 +960,7 @@ A boulder and chain has been ditched here.~
 ~
 9 16 0 0 7 0 0 65 0 0 0
 1 6 1 3 0 0 0 0
-20 0 100
+20 0 100 100
 E
 boulder chain~
    The boulder is attached to a chain which is attached to an iron
@@ -973,7 +973,7 @@ A lizard skin bracelet lies here.~
 ~
 9 12 3 3 7 0 0 4097 0 0 0
 3 11 24 3 0 0 0 0
-0 100 100
+0 100 100 100
 E
 lizard skin bracelet~
    This bracelet is woven of lizard skin, providing protection but
@@ -988,7 +988,7 @@ Some lizard skin gloves lie here.~
 ~
 9 12 3 8 7 0 0 129 0 0 0
 5 7 6 3 0 0 0 0
-0 100 100
+0 100 100 100
 E
 lizard skin gloves~
    These gloves are woven of lizard skin.
@@ -1000,7 +1000,7 @@ A batskin eyepatch lies here.~
 ~
 9 12 3 2 7 0 0 131073 0 0 0
 2 12 2 3 0 0 0 0
-0 400 100
+0 400 100 100
 E
 batskin eyepatch~
    This eyepatch is made from the skin of a giant bat.
@@ -1014,7 +1014,7 @@ A stone sword lies here.~
 ~
 5 11 3 10 7 0 0 8193 0 0 0
 5 2 2 0 0 0 0 0
-14 500 100
+14 500 100 100
 E
 stone sword~
    This sword is huge, unwieldable by small races.  The edge is
@@ -1029,7 +1029,7 @@ Some gorgon scale leggings lie here.~
 ~
 9 35 3 8 7 0 0 33 0 4173708804 0
 9 5 1 3 0 0 0 0
-6 12000 100
+6 12000 100 100
 E
 gorgon scale leggings~
    These leggings are made of gorgon steel scales, amazing armor.
@@ -1041,7 +1041,7 @@ A sub roc talon lies here.~
 ~
 5 10 3 0 7 0 0 8193 0 4165209604 0
 2 1 3 11 0 0 0 0
-5 900 100
+5 900 100 100
 E
 sub roc talon~
    This sub roc talon is particuliarly large; much blood must have
@@ -1059,7 +1059,7 @@ Some extraordinary black steel armor lies here.~
 ~
 9 35 0 0 7 0 0 9 0 4173708804 0
 19 3 1 3 0 0 0 0
-6 4000 100
+6 4000 100 100
 E
 gorgon scale armor~
    This armor is made of black steel gorgon scales, incredible armor.
@@ -1071,7 +1071,7 @@ Some purple worm skin lies here.~
 ~
 9 12 3 8 7 0 0 9 0 0 0
 8 3 1 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 purple worm skin~
    This worm skin is fashioned as a cloak.  The thick skin would
@@ -1084,7 +1084,7 @@ A purple worm stinger lies here.~
 ~
 5 2 2 0 7 0 65536 8193 0 4194697632 0
 2 1 2 11 0 0 0 0
-4 1100 100
+4 1100 100 100
 E
 purple worm stinger~
    This stinger still courses with life, a gift from a giant purple
@@ -1099,7 +1099,7 @@ An umber hulk skull lies here.~
 ~
 9 10 0 0 7 0 1073742848 17 0 87572571 0
 12 4 1 3 0 0 0 0
-15 600 100
+15 600 100 100
 E
 umber hulk skull~
    This umber hulk skull is fully intact, mandibles and all.  It
@@ -1115,7 +1115,7 @@ Some snake skin sleeves lie here.~
 ~
 9 12 3 8 7 0 0 257 0 0 0
 7 8 1 3 0 0 0 0
-1 800 100
+1 800 100 100
 E
 snake skin belt~
    These sleeves are made of coarse layered snake skin.  It looks
@@ -1130,7 +1130,7 @@ A worm hide shield lies here.~
 ~
 37 12 3 15 7 0 8192 513 0 4173708804 0
 2 1 3 134 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 worm hide shield~
    This shield is of amazing quality, thick worm hide laid over
@@ -1143,7 +1143,7 @@ A crystal amulet was discarded here.~
 ~
 9 8 3 2 7 0 65536 5 0 0 0
 1 2 0 3 0 0 0 0
-1 800 100
+1 800 100 100
 E
 crystal amulet~
    This crystal amulet is warm to the touch, and seems to give
@@ -1160,7 +1160,7 @@ A st&+Wai&nn&+Wl&ness steel sword lies hidden in the rubble.~
 ~
 5 16 3 10 7 0 13312 8193 0 87572571 0
 5 1 7 3 0 0 0 0
-4 1000 100
+4 1000 100 100
 E
 stainless steel sword~
    This sword is of the finest stainless steel, the ultimate in

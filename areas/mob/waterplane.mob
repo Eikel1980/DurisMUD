@@ -11,8 +11,8 @@ elemental water huge~
 &+yappendages &+Bthat resemble columns occasionally erupt from the mass.
 &+BJust as quickly, the &+yappendages &+Bretract back into the mass.
 ~
-36010056 1 0 268470584 192 67108896 100675584 0 S
-ew 0 1 -1
+36010056 1 0 0 268470584 192 67108896 100675584 0 S
+ew 0 1 0 -1
 46 200 -250 1d1+2000 1d1+30
 0.0.0.0 250000
 8 8 0
@@ -27,8 +27,8 @@ sea serpent~
 &+gcould swallow an ogre, if the ogre could get past the four massive fangs
 &+gthat would shred the ogre on its way to &+rdeath&+g.
 ~
-36010056 1 0 335579448 192 67108896 100675584 0 S
-r 0 1 5
+36010056 1 0 0 335579448 192 67108896 100675584 0 S
+r 0 1 0 5
 51 200 -250 1d1+3500 1d1+50
 0.0.0.0 250000
 8 8 0
@@ -38,8 +38,8 @@ merman lizard man~
 &+LA &+gliza&+Grd li&+Lke crea&+Gture &+Lwatching for enemies.
 ~
 ~
-33884364 1 0 268509208 0 0 12288 0 S
-dr 0 8192 3
+33884364 1 0 0 268509208 0 0 12288 0 S
+dr 0 8192 0 3
 54 0 0 1d1+2000 1d20+30
 0.0.0.0 0
 8 8 1

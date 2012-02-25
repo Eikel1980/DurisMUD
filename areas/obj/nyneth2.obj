@@ -5,7 +5,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23015 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23001
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -13,7 +13,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23021 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23002
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -21,7 +21,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23018 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23003
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -29,7 +29,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23005 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23004
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -37,7 +37,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23014 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23005
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -45,7 +45,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23010 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23006
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -53,7 +53,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23005 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23007
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -61,7 +61,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23005 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23008
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -69,7 +69,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23030 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23009
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -77,7 +77,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23025 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23010
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -85,7 +85,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23020 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23011
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -93,7 +93,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23005 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23012
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -101,7 +101,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23024 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23013
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -109,7 +109,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23005 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23014
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -117,7 +117,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23033 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23015
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -125,7 +125,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23032 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23016
 chunk illithite~
 &+ga chunk of illithite&n~
@@ -133,7 +133,7 @@ chunk illithite~
 ~
 13 15 3 2 7 100 1 1 64 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 #23017
 chunk malicite~
 &+La chunk of &+rmalic&+Wite&n~
@@ -141,7 +141,7 @@ chunk malicite~
 ~
 13 15 3 1 7 0 0 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23018
 chunk evilite~
 &+La chunk of &+re&+Lv&+ri&+Ll&+ri&+Lte&n~
@@ -149,7 +149,7 @@ chunk evilite~
 ~
 13 15 3 0 7 0 0 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23019
 chunk perversium~
 &+La chunk of &+gper&+Lvers&+gium&n~
@@ -157,7 +157,7 @@ chunk perversium~
 ~
 13 15 3 1 7 100 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23020
 chunk deathalite~
 &+La chunk of deathalite&n~
@@ -165,7 +165,7 @@ chunk deathalite~
 ~
 13 15 3 1 7 0 0 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23021
 mine key~
 &+La &+ymine &+Lkey&n~
@@ -173,7 +173,7 @@ mine key~
 ~
 18 15 2 1 7 100 8 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23022
 mining cart~
 &+La &+ymining &+Lcart&n~
@@ -181,7 +181,7 @@ mining cart~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 23000 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23023
 small silver delicate key~
 &+ca small &+Wsilver &+ckey&n~
@@ -189,7 +189,7 @@ small silver delicate key~
 ~
 18 22 3 1 11 100 8 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23024
 demons visage horned~
 &+La &+rdemons &+Lvisage&n~
@@ -197,7 +197,7 @@ demons visage horned~
 ~
 13 10 3 0 15 100 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23025
 giant cauldron~
 &+La giant &+mcauldron&n~
@@ -205,7 +205,7 @@ giant cauldron~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23026
 maggot infested corpse~
 &+La &+ymaggot &+Ginfested &+Lcorpse&n~
@@ -213,7 +213,7 @@ maggot infested corpse~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #23027
 key~
 &+ra key to the &+yupper &+munderworld&n~
@@ -221,7 +221,7 @@ key~
 ~
 18 15 3 1 7 100 8 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23028
 key~
 &+BN&+by'&+BN&+beth's &+cportal &+Lroom key&n~
@@ -229,7 +229,7 @@ key~
 ~
 18 15 3 1 7 100 8 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23029
 painting _id_~
 &+La &+gpainting &+Lof the &+yupper &+munderworld&n~
@@ -237,7 +237,7 @@ painting _id_~
 ~
 25 3 3 1 15 100 100671489 0 64 0 0
 23083 7 12 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 painting~
 &+g   This painting depicts a &+cvision &+gof the &+yupper &+munderworld&+g.  It appears to be
@@ -253,7 +253,7 @@ demon skeleton~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 demon skeleton~
 &+W   Although it looks fairly recent, this skeleton has been completely picked
@@ -267,7 +267,7 @@ frozen figure~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 frozen figure~
 &+r   Frozen forever in the grip of &+Ldragonfear&+r, this escaped deep gnome
@@ -280,7 +280,7 @@ magical scroll~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 magical scroll~
 &+BAdventurers,
@@ -300,7 +300,7 @@ pile skulls white~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile skulls white~
 &+W   This gruesome pile of skulls has been constructed with great care, as
@@ -313,7 +313,7 @@ key spine~
 ~
 18 15 3 1 7 100 8 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23035
 drop liquid liquified illithite potion~
 &+ga drop of liquified illithite&n~
@@ -321,7 +321,7 @@ drop liquid liquified illithite potion~
 ~
 10 15 3 0 7 0 1 1 64 0 0
 56 -1 -1 161 0 0 0 0
-0 0 100
+0 0 100 100
 #23036
 badge foreman~
 &+Lthe badge of the &+Bforeman&n~
@@ -329,7 +329,7 @@ badge foreman~
 ~
 11 3 3 1 7 0 0 2097153 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 1
 A
@@ -341,7 +341,7 @@ bandedmail mail reaving armor~
 ~
 9 10 3 1 14 40 0 9 64 0 0
 30 0 0 5 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 40
 A
@@ -353,7 +353,7 @@ chunk brain matter~
 ~
 10 2 3 1 15 30 0 1 64 0 0
 56 158 249 179 0 0 0 0
-1 0 100
+1 0 100 100
 #23039
 vial evil potion liquid~
 &+ra vial of pure &+Lev&+ri&+Ll&n~
@@ -361,7 +361,7 @@ vial evil potion liquid~
 ~
 10 7 3 1 7 40 0 1 64 0 0
 60 81 248 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #23040
 sliver perversium~
 &+La &+gsliver&+L of pure &+gper&+Lvers&+gium&n~
@@ -369,7 +369,7 @@ sliver perversium~
 ~
 3 11 3 1 7 36 0 16385 64 0 0
 60 9 9 197 0 0 0 0
-1 0 100 32768 4096 0 0
+1 0 100 100 32768 4096 0 0
 A
 13 -10
 A
@@ -381,7 +381,7 @@ blade ending thin~
 ~
 5 19 3 2 13 87 16778496 8193 64 8515584 0
 2 2 6 0 0 0 0 0
-3 0 100 4 0 0 0
+3 0 100 100 4 0 0 0
 A
 18 4
 A
@@ -393,7 +393,7 @@ sliver illithite long thin~
 ~
 5 11 3 2 7 50 0 8193 64 0 0
 2 3 5 11 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 3
 A
@@ -405,7 +405,7 @@ orb deathalite pure~
 ~
 4 11 3 1 14 100 1025 16385 64 46370788 0
 60 9 9 99 0 0 0 0
-3 0 100
+3 0 100 100
 A
 13 20
 A
@@ -417,7 +417,7 @@ delicate silver chain~
 ~
 9 15 3 0 7 0 1 5 64 0 0
 8 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 20
 A
@@ -429,7 +429,7 @@ potion bottle slime glass~
 ~
 10 7 3 1 7 40 0 1 64 0 0
 60 180 161 294 0 0 0 0
-1 0 100
+1 0 100 100
 #23046
 vial blood morgus demon~
 &+Lthe &+rblood &+Lof a &+rmorgus &+Ldemon&n~
@@ -437,7 +437,7 @@ vial blood morgus demon~
 ~
 10 7 3 1 7 25 0 1 64 0 0
 60 41 108 227 0 0 0 0
-1 0 100
+1 0 100 100
 #23047
 bracelet master summoner ruby~
 &+Lbracelet &+rof the &+Lmaster &+Rs&+ru&+Rmm&+ron&+Rer&n~
@@ -445,7 +445,7 @@ bracelet master summoner ruby~
 ~
 11 18 3 2 14 50 1024 20481 64 12618496 0
 0 0 0 0 0 0 0 0
-2 0 100 4 0 0 0
+2 0 100 100 4 0 0 0
 A
 28 15
 A
@@ -457,7 +457,7 @@ staff master blackened ash~
 ~
 4 15 3 0 7 0 1025 16385 64 46370724 0
 60 6 6 288 0 0 0 0
-0 0 100 0 28 0 0
+0 0 100 100 0 28 0 0
 A
 13 20
 A
@@ -469,7 +469,7 @@ key~
 ~
 18 15 3 1 13 100 8 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #23050
 potion swirling blood~
 &+La potion of &+cxyyn &+rblood&n~
@@ -477,7 +477,7 @@ potion swirling blood~
 ~
 10 7 3 1 7 20 0 1 64 0 0
 60 56 144 208 0 0 0 0
-1 0 100
+1 0 100 100
 #23051
 horn twisted long~
 &+Lthe &+ytwisted &+Lhorn of an &+yazel &+Ldemon&n~
@@ -485,7 +485,7 @@ horn twisted long~
 ~
 4 10 3 2 15 100 1 16385 64 0 0
 60 19 19 221 0 0 0 0
-2 0 100
+2 0 100 100
 #23052
 malicite greatsword two-handed sword~
 &+La &+rmalic&+Wite &+Lgreatsword&n~
@@ -493,7 +493,7 @@ malicite greatsword two-handed sword~
 ~
 5 11 3 5 13 100 4195328 8193 64 95993883 0
 13 6 4 0 0 0 0 0
-8 0 100
+8 0 100 100
 A
 18 4
 A
@@ -505,7 +505,7 @@ severed eyestalk~
 ~
 3 2 3 1 13 100 1024 16385 64 46370724 0
 60 6 6 112 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 15
 #23054
@@ -515,7 +515,7 @@ wand wizardry~
 ~
 3 6 3 1 15 60 1025 16385 64 12684800 0
 60 9 9 249 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 25
 A
@@ -527,7 +527,7 @@ gauntlets immortality~
 ~
 11 7 3 1 15 100 33554433 129 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 A
 19 4
 A
@@ -539,7 +539,7 @@ bloodblade blade lifereaver sword longsword~
 ~
 5 19 3 5 14 80 33555456 8193 64 96071683 0
 5 3 6 0 0 0 0 0
-5 0 100 536870912 0 0 0
+5 0 100 100 536870912 0 0 0
 A
 18 4
 A
@@ -551,7 +551,7 @@ staff ancient protector~
 ~
 4 18 3 5 13 67 16778496 16385 64 33685920 0
 60 9 9 190 0 0 0 0
-5 0 100
+5 0 100 100
 A
 13 20
 A
@@ -563,7 +563,7 @@ ring illusions~
 ~
 9 1 3 1 13 74 0 3 64 0 0
 4 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 A
 10 -50
 A
@@ -575,7 +575,7 @@ severed eyes~
 ~
 9 15 3 0 7 0 0 131073 64 0 0
 2 0 0 1 0 0 0 0
-0 0 100 536870944 0 0 0
+0 0 100 100 536870944 0 0 0
 A
 20 -3
 A
@@ -587,7 +587,7 @@ sparkling crown blizzard king frost~
 ~
 9 27 3 2 15 100 1 17 64 0 0
 10 0 0 5 0 0 0 0
-3 0 100 0 64 2097152 0
+3 0 100 100 0 64 2097152 0
 A
 19 3
 A
@@ -599,7 +599,7 @@ cloak demonic subterfuge dark~
 ~
 9 1 3 2 15 100 0 5 64 0 0
 6 0 0 1 0 0 0 0
--30 0 100 2 0 0 0
+-30 0 100 100 2 0 0 0
 A
 19 3
 A
@@ -611,7 +611,7 @@ bracelet glowing wizardry~
 ~
 9 19 3 2 13 76 1025 4097 64 12685060 0
 6 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 24 -4
 A
@@ -623,7 +623,7 @@ chain chainmail leggings speed~
 ~
 9 19 3 3 12 64 1024 33 64 46829476 0
 10 0 0 3 0 0 0 0
-1 0 100 16 0 0 0
+1 0 100 100 16 0 0 0
 A
 26 10
 #23064
@@ -633,7 +633,7 @@ ring berserker lord rage~
 ~
 11 19 3 1 15 100 0 3 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100 536870912 1 0 0
+1 0 100 100 536870912 1 0 0
 A
 31 6
 A
@@ -645,7 +645,7 @@ brutal roper tentacle~
 ~
 5 15 3 0 7 0 0 8193 64 0 0
 14 3 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 4
 A
@@ -657,7 +657,7 @@ heart ancient roper bloody~
 ~
 3 2 3 2 14 100 4096 16385 64 0 0
 60 9 9 25 0 0 0 0
-2 0 100 16777248 0 0 0
+2 0 100 100 16777248 0 0 0
 A
 13 40
 A
@@ -669,7 +669,7 @@ shard blackness darkness~
 ~
 5 1 3 2 15 100 50340128 8193 64 0 0
 2 2 8 0 1 0 0 0
-2 234 100 288 2 0 0
+2 234 100 100 288 2 0 0
 A
 18 4
 A
@@ -681,7 +681,7 @@ story jugger golem book~
 ~
 33 11 3 8 15 100 9216 8404993 64 12619264 0
 0 0 450 0 0 0 0 0
-10 0 100 8 0 0 0
+10 0 100 100 8 0 0 0
 A
 13 25
 A
@@ -693,7 +693,7 @@ vial blood wyrm potion~
 ~
 10 7 3 1 7 0 0 1 64 0 0
 60 28 356 293 0 0 0 0
-1 0 100
+1 0 100 100
 #23070
 horn taus devil~
 &+Lthe &+yhorn &+Lof a &+gtaus &+Ldevil&n~
@@ -701,7 +701,7 @@ horn taus devil~
 ~
 4 15 3 0 7 0 4097 16385 64 0 0
 60 9 9 201 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 8
 A
@@ -713,4 +713,4 @@ key third 3rd~
 ~
 12 15 3 0 7 0 8 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

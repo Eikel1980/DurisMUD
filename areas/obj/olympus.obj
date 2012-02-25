@@ -5,7 +5,7 @@ emerald portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99809 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99801
 emerald portal~
 &+Gan emerald portal&n~
@@ -13,7 +13,7 @@ emerald portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99805 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99802
 sapphire portal~
 &+Ma sapphire portal&n~
@@ -21,7 +21,7 @@ sapphire portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99809 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99803
 sapphire portal~
 &+Ma sapphire portal&n~
@@ -29,7 +29,7 @@ sapphire portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99806 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99804
 ruby portal~
 &+Ra ruby portal&n~
@@ -37,7 +37,7 @@ ruby portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99809 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99805
 ruby portal~
 &+Ra ruby portal&n~
@@ -45,7 +45,7 @@ ruby portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99807 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99806
 diamond portal~
 &+Wa diamond portal&n~
@@ -53,7 +53,7 @@ diamond portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99809 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #99807
 diamond portal~
 &+Wa diamond portal&n~
@@ -61,4 +61,4 @@ diamond portal~
 ~
 25 32 3 0 15 0 1 0 64 0 0
 99808 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100

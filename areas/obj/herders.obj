@@ -5,7 +5,7 @@ black gate~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black gate~
 &+LTowering black gates emanate the darkest of magics.  There are a series
@@ -19,7 +19,7 @@ crank~
 ~
 29 15 3 0 7 0 0 0 0 1 0
 340 94303 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crank~
 &+LThis crank, when pulled correctly, opens the black gate.
@@ -31,7 +31,7 @@ crank~
 ~
 29 15 3 0 7 0 0 0 0 1 0
 340 94306 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crank~
 &+LThis crank, when pulled correctly, opens the black gate.
@@ -43,7 +43,7 @@ pool blood~
 ~
 25 15 3 0 7 0 0 0 0 1 0
 94320 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #94304
 bone pile~
 &+Wthe bone pile&N~
@@ -51,7 +51,7 @@ bone pile~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 5000 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bone pile~
    &+WThis large pile of bones has many bones in it that are old brittle
@@ -65,7 +65,7 @@ piece bone fragment~
 ~
 8 10 3 0 7 0 4096 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 piece bone fragment~
    &+WThis is a small piece of a bone fragment.
@@ -77,7 +77,7 @@ large piece bone~
 ~
 8 10 3 0 7 0 4096 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 large piece bone~
    &+WThis is a small piece of a bone fragment.
@@ -89,7 +89,7 @@ aged silver ring~
 ~
 9 22 3 0 6 0 4096 3 0 0 0
 5 0 0 3 0 0 0 0
-0 400 100
+0 400 100 100
 E
 aged silver ring~
    &+LThis ring is very and very worn out and scratched, although it has
@@ -107,7 +107,7 @@ tattered black mage robe~
 ~
 9 3 3 0 7 0 0 9 0 0 0
 9 0 0 2 0 0 0 0
-0 200 100
+0 200 100 100
 E
 tattered black mage robe~
    &+LThis tattered black robe is made for a mage.  It is very old and has
@@ -124,7 +124,7 @@ tiny dragonkin scale~
 ~
 8 35 1 0 7 0 4096 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 tiny dragonkin scale~
    &+LThis tiny dragonkin scale is only about the size of an egg.  It must
@@ -137,7 +137,7 @@ humungous blood twin bladed battleaxe axe~
 ~
 5 22 4 0 11 0 4194560 8193 193 0 0
 13 8 3 3 0 0 0 0
-22 65040 100
+22 65040 100 100
 E
 humungous blood twin bladed battleaxe axe~
    &+LThis axe has splattered of blood all across the blade in many different
@@ -157,7 +157,7 @@ wand black gem~
 ~
 3 15 3 0 7 0 1 16385 0 0 0
 56 5 5 121 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wand black gem~
    &+LThis wand has a black gem on the head of it.
@@ -173,7 +173,7 @@ black-pointed behemoth horns~
 ~
 9 10 3 0 7 0 4096 134217729 0 0 0
 10 0 0 4 0 0 0 0
-2 2200 100
+2 2200 100 100
 A
 19 3
 A
@@ -185,7 +185,7 @@ pile bloody rocks corpses~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 5000 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile bloody rocks corpses~
    &+LBody parts and few discernable pieces of corpses have been thrown here
@@ -199,7 +199,7 @@ bloody skull-headed bone mace~
 ~
 5 10 4 0 5 0 0 8193 0 0 0
 6 3 5 7 0 0 0 0
-9 75395 100
+9 75395 100 100
 E
 bloody skull-headed bone mace~
    &+WA HUGE bone tipped with a bloody skull makes this massive mace.
@@ -215,7 +215,7 @@ torso vestment smeared blood~
 ~
 9 3 3 0 7 0 0 9 0 0 0
 18 0 0 3 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 torso vestment smeared blood~
    &+CA simple leather vestment that is smeared with blood.
@@ -231,7 +231,7 @@ bone sign~
 ~
 8 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bone sign~
    &+WThis bone sign reads:
@@ -247,7 +247,7 @@ blood splattered fur robes~
 ~
 9 3 3 0 8 0 0 1033 0 0 0
 15 0 0 4 0 0 0 0
-3 4000 100
+3 4000 100 100
 E
 blood splattered fur robes~
     &+LThese are heavy fur lined robes, possibly from one of the Northern
@@ -264,7 +264,7 @@ sleeves smeared blood~
 ~
 9 3 3 0 8 0 0 257 0 0 0
 10 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 sleeves smeared blood~
     &+LStandard cloth sleeves, smeared with blood of some sort of &+bmag&+Bical
@@ -281,7 +281,7 @@ leggings smeared blood~
 ~
 9 3 3 0 8 0 0 33 0 0 0
 10 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 leggings smeared blood~
     &+LStandard cloth leggings, smeared with blood of some sort of &+bmag&+Bical
@@ -298,7 +298,7 @@ bone crossbow cbow~
 ~
 6 10 3 0 10 0 0 8193 0 0 0
 1 2 0 2 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 bone crossbow~
    &+WThis crossbow is two-handed and looks to be a good firing device.
@@ -315,7 +315,7 @@ old leather quiver~
 ~
 30 13 3 0 7 0 0 1048577 0 0 0
 35 0 2 0 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 old leather quiver~
     &+LThis old leather quiver holds light crossbow quarrels.
@@ -329,7 +329,7 @@ tipped bone bolt~
 ~
 7 10 2 0 7 0 256 1 0 0 0
 0 10 10 2 0 0 0 0
-0 500 100
+0 500 100 100
 E
 tipped bone bolt~
     &+LA bone crossbow bolt, tipped with rock.
@@ -341,7 +341,7 @@ bone bolt~
 ~
 7 10 2 0 7 0 256 1 0 0 0
 0 8 8 2 0 0 0 0
-0 300 100
+0 300 100 100
 E
 bone bolt~
     &+LA bone crossbow bolt.
@@ -353,7 +353,7 @@ quiver smeared blood~
 ~
 30 13 3 0 10 0 0 1048577 0 0 0
 50 0 2 0 0 0 0 0
--10 12000 100
+-10 12000 100 100
 E
 quiver smeared blood~
    &+LA standard crossbow bolt quiver, smeared with blood.
@@ -369,7 +369,7 @@ ogre-bone ogre bone djembe drum drums~
 ~
 32 10 3 0 12 0 0 16385 0 0 0
 188 56 5 1 0 0 0 0
-1 200000 100
+1 200000 100 100
 E
 ogre-bone ogre bone djembe drum drums~
    &+LThis hand drum is made out of fused ogre bones in an our glass shape,
@@ -387,7 +387,7 @@ drow drow-bone bone flute~
 ~
 32 10 3 0 12 0 1 16385 0 0 0
 184 56 5 1 0 0 0 0
-1 200000 100
+1 200000 100 100
 E
 drow drow-bone bone flute~
    &+LThis flute is made out of a long slender drow bone.  The bone is
@@ -405,7 +405,7 @@ flesh-bound flesh bound bone harp~
 ~
 32 10 3 0 11 0 0 16385 0 0 0
 187 56 5 1 0 0 0 0
-0 200000 100
+0 200000 100 100
 E
 flesh-bound flesh bound bone harp~
    &+WThis long bone harp is bound by flesh and sounds quite beautiful.
@@ -421,7 +421,7 @@ bone-plated bone plated sleeves smeared blood~
 ~
 9 3 3 0 8 0 0 257 0 0 0
 15 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 sleeves smeared blood~
     &+LStandard cloth sleeves, smeared with blood of some sort of &+bmag&+Bical
@@ -438,7 +438,7 @@ bone-plated bone plated leggings smeared blood~
 ~
 9 3 3 0 8 0 0 33 0 0 0
 10 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 leggings smeared blood~
     &+LStandard cloth leggings, smeared with blood of some sort of &+bmag&+Bical
@@ -455,7 +455,7 @@ locathah-bone locathah bone mandolin~
 ~
 32 10 3 0 10 0 1 16385 0 0 0
 186 56 5 0 0 0 0 0
-0 200000 100
+0 200000 100 100
 A
 13 7
 A
@@ -467,7 +467,7 @@ elven bone songhorn horn~
 ~
 32 10 3 0 12 0 0 16385 0 0 0
 189 56 5 0 0 0 0 0
-0 200000 100
+0 200000 100 100
 A
 13 8
 A
@@ -479,7 +479,7 @@ tiny spider earring~
 ~
 9 8 1 0 13 0 1 524289 0 0 0
 4 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 tiny spider earring~
    &+LAn earring shaped like a tiny red spider.
@@ -495,7 +495,7 @@ The &+rbloody head&N of a &+Chuman&N has been skewered onto a &+Wpike&N, warning
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 head pike~
     &+LThis head has been slammed onto a &+Wpike&+L and there is blood
@@ -510,7 +510,7 @@ corpse halfling~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse halfling~
     &+LThis corpse still has some leather on it, which has also been
@@ -527,7 +527,7 @@ small leather eyepatch~
 ~
 9 15 3 0 7 0 4096 131073 0 0 0
 4 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small leather eyepatch~
    &+LThis small leather eyepatch may of once been a prized posession.
@@ -543,7 +543,7 @@ small concealed money pouch~
 ~
 20 15 3 0 7 0 4096 1 0 0 0
 0 0 0 15 0 0 0 0
-0 0 100
+0 0 100 100
 #94337
 collar pyrobeast~
 &+La collar of the &+rpy&+Rr&+Yo&+Lbeast&N~
@@ -551,7 +551,7 @@ collar pyrobeast~
 ~
 9 15 3 0 7 0 4096 5 0 0 0
 6 0 0 3 0 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 E
 collar pyrobeast~
    &+LThis collar, worn by the underworld pyrobeast, is blessed with some
@@ -568,7 +568,7 @@ jagged nightstone ring~
 ~
 9 15 1 0 7 0 4097 134217731 0 0 0
 6 0 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 jagged nightstone ring~
     &+LThis ring is made out of nightstone, native to the &+BSea Kingdom&+L.
@@ -586,7 +586,7 @@ black staff goat skull~
 ~
 5 15 3 0 7 0 17 8193 0 0 0
 12 4 3 7 0 1 0 0
-0 0 100
+0 0 100 100
 E
 black staff goat skull~
     &+LThis weapon is long and glows with an evil aura.  This must of been
@@ -603,7 +603,7 @@ tainted soul viscerith~
 ~
 8 15 2 0 15 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 555555 100
+0 555555 100 100
 #94341
 black dragonkin scaled eyepatch~
 &+La black dra&+rgo&+Lnkin-scaled eyepatch~
@@ -611,7 +611,7 @@ black dragonkin scaled eyepatch~
 ~
 9 15 2 0 14 0 0 131073 0 0 0
 0 0 0 0 0 0 0 0
-0 10999 100 0 12288 0 0
+0 10999 100 100 0 12288 0 0
 E
 black dragonkin scaled eyepatch~
    &+LThis small black leather eyepatch has ten tiny drag&+ron&+Lkin scales
@@ -630,7 +630,7 @@ massive breastplate breast plate polished bone~
 ~
 9 10 4 0 7 0 0 9 0 0 0
 40 0 0 5 0 0 0 0
-4 25000 100 65536 16 0 0
+4 25000 100 100 65536 16 0 0
 E
 massive breastplate breast plate polished bone~
     &+WLarge bones fused together form this breastplate.  It resonates with
@@ -648,7 +648,7 @@ huge bone broadsword sword~
 ~
 5 10 4 0 14 0 4194305 8193 0 0 0
 13 4 4 3 0 0 0 0
-17 60000 100
+17 60000 100 100
 E
 huge bone broadsword sword~
     &+WThis bone broadsword is huge and extremely sharp and deadly looking.
@@ -665,7 +665,7 @@ left half evil mind~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 left half evil mind~
     &+LThis is the left half of the mind of one of the farseer twins.
@@ -677,7 +677,7 @@ right half evil mind~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 right half evil mind _id_~
    &+LThis is the right half of a mind of one of the farseer twins.
@@ -689,7 +689,7 @@ band pure negative energy~
 ~
 9 15 3 0 7 0 67108865 4097 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 band pure negative energy~
     &+LThis band of negative energy swirls like a black viper around one's
@@ -706,7 +706,7 @@ dark rift portal~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 94520 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark rift portal~
     &+LThis dark rift of negative energy is open and fluctuates just over
@@ -719,7 +719,7 @@ negative energy key spires~
 ~
 18 15 3 0 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 negative energy key spires~
    &+LThis key was formed of magic energy, and to the touch of those unable
@@ -732,7 +732,7 @@ arcane cloak sorcerous rage~
 ~
 9 1 3 0 7 0 12288 1025 0 0 0
 15 0 0 0 0 0 0 0
--20 30000 100 32 0 0 0
+-20 30000 100 100 32 0 0 0
 E
 arcane cloak sorcerous rage~
     &+LThis cloak &+BFUMES&+L with dark arcane magic.  The cloak seems
@@ -749,7 +749,7 @@ villainous black cape~
 ~
 9 2 3 0 15 0 33554432 1025 0 0 0
 15 0 0 0 0 0 0 0
--20 50000 100
+-20 50000 100 100
 E
 villainous black cape~
     &+LThis black cape has two huge twisted looking collars on it.  The
@@ -766,7 +766,7 @@ huge bone broadsword sword desecration~
 ~
 5 10 4 0 14 0 4194305 8193 67 8 0
 13 5 4 3 0 330071115 55 30
-3 80000 100 65536 0 0 0
+3 80000 100 100 65536 0 0 0
 E
 huge bone sword broadsword desecration~
     &+WThis bone broadsword is huge and extremely sharp and deadly looking.
@@ -815,7 +815,7 @@ spiked choker war pig~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 8 0 0 3 1 0 0 0
-0 0 100
+0 0 100 100
 E
 spiked choker war pig~
    &+LThis choker has both small and large spikes all over it.
@@ -831,7 +831,7 @@ steel key~
 ~
 18 16 3 0 6 0 0 16385 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 steel key~
    &+LThis steel key unlocks the cells of the prisones to the undead.
@@ -843,7 +843,7 @@ crucified maiden grey elf~
 ~
 8 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crucified maiden grey elf~
    &+LThis &+cgrey elf&+L maiden has been crucified recently, which
@@ -862,7 +862,7 @@ full suit spiked bone platemail~
 ~
 9 15 4 0 12 0 0 9 0 0 0
 35 0 0 4 1 0 0 0
-4 115000 100
+4 115000 100 100
 E
 full suit spiked bone platemail~
    &+LThis bone platemail has many large spikes jutting out of it.
@@ -878,7 +878,7 @@ huge brutal black axe~
 ~
 5 16 5 0 9 0 4194304 8193 0 0 0
 13 4 4 3 0 0 0 0
-11 85403 100
+11 85403 100 100
 E
 huge brutal black axe~
    &+LThis axe has a brutal curve to its huge single blade.  The blade
@@ -897,7 +897,7 @@ inquitous gloves submission~
 ~
 9 1 3 0 15 0 0 129 0 0 0
 6 0 0 0 0 0 0 0
-0 15000 100 0 8192 0 0
+0 15000 100 100 0 8192 0 0
 E
 inquitous gloves submission~
    &+LThese black gloves glow with an unholy evil power.  They
@@ -915,7 +915,7 @@ bloody loincloth cloth loin giants~
 ~
 9 15 3 0 6 0 4096 2049 0 0 0
 8 0 0 0 0 0 0 0
--10 8888 100
+-10 8888 100 100
 E
 bloody loincloth cloth loin giants~
    &+LWo&+rrn&+L by a gia&+rnt, &+Land smeared w&+ri&+Lth the blood of a giant, this
@@ -932,7 +932,7 @@ spring~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spring~
    &+BThis spring bubbles upward within a small pool.  The
@@ -945,7 +945,7 @@ mystical axe undead flame~
 ~
 5 1 3 0 15 0 272 8193 193 0 0
 1 4 3 3 0 0 0 0
-13 65730 100
+13 65730 100 100
 E
 mystical axe undead flame~
    &+RThis axe is made of pure fire.  It burns with the unnatural
@@ -964,7 +964,7 @@ ghastly boots wind energy~
 ~
 9 1 3 0 15 0 67121152 65 0 0 0
 10 0 0 3 0 0 0 0
--60 20000 100 67108864 128 0 0
+-60 20000 100 100 67108864 128 0 0
 E
 ghastly boots wind energy~
    &+WThese boots are formed from the normally unsubstantial elements of
@@ -982,7 +982,7 @@ long dematite lance _lance_~
 ~
 5 11 4 0 13 0 4194304 8193 0 0 0
 16 3 9 11 0 0 0 0
-16 153326 100
+16 153326 100 100
 E
 long dematite lance~
    &+LThis long lance of fine &+rde&+Lma&+rti&+Lte is about six feet
@@ -1001,7 +1001,7 @@ huge bone-spiked bone spiked dematite war shield~
 ~
 37 11 4 0 12 0 0 513 0 0 0
 1 5 5 186 5 1 0 0
-24 15000 100
+24 15000 100 100
 E
 huge bone-spiked bone spiked dematite war shield~
    &+LThis huge shield of dematite is ovular in shape.  Hundreds of tiny
@@ -1021,7 +1021,7 @@ metal key black collar~
 ~
 18 15 2 0 5 0 0 16389 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 metal key black collar~
    &+LLinks of chain connected a small metal key to this black collar.
@@ -1033,7 +1033,7 @@ large runed flail~
 ~
 5 19 3 0 15 0 0 8193 67 0 0
 3 3 4 7 0 0 0 0
-9 45999 100
+9 45999 100 100
 E
 large runed flail~
    &+LThis flail has &+mrunes&+L all up and down it.  These ancient
@@ -1051,7 +1051,7 @@ beaten infant~
 ~
 8 2 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 beaten infant~
    &+LThis &+cgrey elf &+LWinfant&+L has been beaten and is covered
@@ -1064,7 +1064,7 @@ length zombie flesh~
 ~
 9 2 3 0 7 0 4096 4097 0 0 0
 8 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 length zombie flesh~
    &+rThis length of flesh can be pulled around perfectly to fit
@@ -1082,7 +1082,7 @@ huge bloody bone~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 6 1 10 7 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge bloody bone~
    &+WThis bone must of been the femur of a huge creature
@@ -1100,7 +1100,7 @@ spikes~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spikes~
     &+LThese HUGE &+crazor sharp &+Cspikes&+L are located all throughout
@@ -1118,7 +1118,7 @@ decayed corpse~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 decayed corpse~
    &+LThis old body barely has any flesh left on it that has not been
@@ -1132,7 +1132,7 @@ rusty iron shackles~
 ~
 9 15 3 0 7 0 4096 481 0 0 0
 7 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rusty iron shackles~
    &+rThese shackles are very old and extremely rusty.  Corrosion over
@@ -1150,7 +1150,7 @@ clawed hands pit fiend~
 ~
 9 2 4 0 7 0 4096 129 0 0 0
 10 0 0 4 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 clawed hands pit fiend~
    &+LThese large hands have vicious razor sharp and indestructible claws
@@ -1167,7 +1167,7 @@ stone platform~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone platform~
     &+LThis huge stone altar spans about 25 square feet and is just large
@@ -1180,7 +1180,7 @@ vampiric fangs subduction~
 ~
 9 2 1 0 10 0 33554432 262145 0 0 0
 5 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 vampiric fangs subduction~
    &+RThese fangs have been torn from a great vampire warlock.
@@ -1196,7 +1196,7 @@ small bone key~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small bone key~
    &+WThis small key is made of bone.
@@ -1208,7 +1208,7 @@ key diorite~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key diorite~
    &+LThis tiny key is intricately carved of diorite and is very strong.
@@ -1220,7 +1220,7 @@ enchanted diorite key~
 ~
 18 15 3 0 7 0 4097 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 enchanted diorite key~
    &+LThis tiny key looks pretty plain and not too intricately
@@ -1234,7 +1234,7 @@ scales diorite~
 ~
 8 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 scales diorite~
    &+LThese scales look as if they could be used to craft something.
@@ -1246,7 +1246,7 @@ bone reinforced boots diorite~
 ~
 9 11 3 0 14 0 0 65 0 0 0
 12 0 0 4 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 bone reinforced boots diorite~
    &+LThese boots have been made from incredibly smooth scales of
@@ -1265,7 +1265,7 @@ footprints~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 footprints~
    &+LThese footprints are scattered in age, some seem more fresh and
@@ -1280,7 +1280,7 @@ blood chunks~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood chunks~
    &+RBits of decaying flesh have been carelessly dropped throughout
@@ -1293,7 +1293,7 @@ streaks~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 streaks~
    &+RStreaks of sticky blood stretch across the cavern floor.  Many things
@@ -1307,7 +1307,7 @@ boulder~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 94509 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 boulder~
    &+LA huge boulder seems to be blocking passage to the north.
@@ -1319,7 +1319,7 @@ tarnished aged silver stud~
 ~
 9 22 2 0 7 0 4096 524289 0 0 0
 5 0 0 3 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 tarnished aged silver stud~
    &+LThis small earring is made of silver and is extremely old.
@@ -1337,7 +1337,7 @@ lifeforce~
 ~
 8 15 3 0 7 0 8392705 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lifeforce~
    &+MThis flux of &+Wenergy&+M is impossible to grasp, but simply
@@ -1354,7 +1354,7 @@ oval ice crystal~
 ~
 3 15 3 0 7 0 1 16385 0 0 0
 50 1 1 254 0 0 0 0
-0 0 100 0 64 0 0
+0 0 100 100 0 64 0 0
 E
 oval ice crystal~
    &+BThis crystal is shaped like an elongated oval.  It is very cold to
@@ -1373,7 +1373,7 @@ mask draconic deviance~
 ~
 9 35 3 0 7 0 1 262145 0 0 0
 8 0 0 0 0 0 0 0
-0 14000 100 65536 12288 0 0
+0 14000 100 100 65536 12288 0 0
 E
 mask draconic deviance~
    &+LThis mask, made of black dragonscales, empowers the wearer with the
@@ -1390,7 +1390,7 @@ skulls bones~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 200 0 0 200 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skulls bones~
    &+WSeveral hundred of thousands of skulls of all sorts of creatures
@@ -1404,7 +1404,7 @@ skull head zugle~
 ~
 13 15 3 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skull head zugle~
    &+rThis bloody head has been decomposing for many years and is full of
@@ -1418,7 +1418,7 @@ key~
 ~
 18 15 3 0 5 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key~
    &+LThis small key opens the door into the corridor of the royal
@@ -1431,7 +1431,7 @@ block statue~
 ~
 29 15 3 0 5 0 2 0 0 0 0
 270 94615 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 block~
    &+LThis unfinished statue is actually just a large block of diorite
@@ -1444,7 +1444,7 @@ undead beholder central eye~
 ~
 8 2 2 0 5 0 12288 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 150000 100
+0 150000 100 100
 E
 undead beholder central eye~
    &+LThis foul eye of a beholder still flares with an unspeakable evil.
@@ -1460,7 +1460,7 @@ necklace undead beholder eyes~
 ~
 9 2 2 0 15 0 0 5 64 0 0
 6 0 0 3 0 0 0 0
-0 55000 100
+0 55000 100 100
 E
 necklace undead beholder eyes~
    &+LThis foul necklace is simply a string of five undead beholder eyes.
@@ -1476,7 +1476,7 @@ spectral dagger~
 ~
 5 1 2 0 5 0 524288 8193 66 0 0
 2 2 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -1488,7 +1488,7 @@ diorite statue warlord~
 ~
 8 15 3 0 5 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 diorite statue warlord~
    &+LThis small statue is carved into the shape of a great Wight warlord.
@@ -1506,7 +1506,7 @@ cracked bone arm bracers~
 ~
 9 10 3 0 7 0 0 257 0 0 0
 18 0 0 4 0 0 0 0
-7 25000 100
+7 25000 100 100
 E
 cracked bone arm bracers~
    &+WThese cracked bracers have been infused with a great, unholy

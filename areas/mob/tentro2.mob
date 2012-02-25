@@ -9,8 +9,8 @@ warm in the winter and insulates against the heat during the summer.  It has
 a set of long horns that come to a very sharp point.  Its eyes show how stupid
 of an animal this is.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -26,8 +26,8 @@ pesky varmint.  It is a larger than a rat but smaller than a badger.  His beady
 little eyes show more intelligence than they really have.  They are incredibly
 fast for their size.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 13 0 0 1d1+1 1d1+1
 0.0.0.0 0
 6 8 2
@@ -40,8 +40,8 @@ A &+Lfilthy&+r vulture&N flies above you.&N
 uses to pick the flesh off any dead creatures it can find.  Her feathers are
 very sickly looking.  You can see her bloated underbelly as she flies over you.&N
 ~
-133192 0 0 0 0 0 0 -1000 S
-B 0 0 -1
+133192 0 0 0 0 0 0 0 -1000 S
+B 0 0 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -54,8 +54,8 @@ sparrow bird~
 feathers are very clean and well groomed.  Its small yet hard beak is currently
 holding a tasty looking seed.&N
 ~
-133192 0 0 0 0 0 0 0 S
-B 0 0 -1
+133192 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -68,8 +68,8 @@ A field &+Wmouse&N scurries through the grass here.&N
 to be intelligence.  Its white whiskers are used for navigating through the
 very irregular paths in the tall prairie grass.&N
 ~
-2120 0 0 0 0 0 0 0 S
-A 0 0 -1
+2120 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -83,8 +83,8 @@ She is covered with a very thick coat of hair.  Although she is smaller than
 the male, she makes up for that in intelligence.  She looks very content here
 grazing on the lush grasses of the prairie.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -98,8 +98,8 @@ yet thick coat of hair.  Although it is just a young bison, it is still very
 strong.  Its sharp hooves carry its three hundred pound frame over the tall
 grasses of the prairie.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -114,8 +114,8 @@ A small &+Wrabbit&N bounds over the prairie here.&N
 &+Wvery large feet help it bound over the prairie.  Its large hind legs are very
 &+Wpowerful and strong.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -128,8 +128,8 @@ A starving looking &+Lblack wolf&N prowls the prairie here.&N
 &+Lfur is dirty and very sick looking.  It hangs its head low as it hasn't eaten
 &+Lin many days.  It appears to be too old to run down any prey.&N
 ~
-1073743944 0 0 0 0 0 0 0 S
-A 0 0 -1
+1073743944 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -143,8 +143,8 @@ or bridaled by anyone, living its life free and happy.  This wild horse has
 run over the miles of open prairie for days at a time, only stopping to drink
 or eat some &+ggrass.&N
 ~
-134219848 0 0 0 0 0 0 0 S
-AE 0 0 -1
+134219848 0 0 0 0 0 0 0 0 S
+AE 0 0 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -162,8 +162,8 @@ is covered with a thick layer of rippling muscle, a product of his tireless
 travels.  He has explored areas no other man or woman has seen.  He is a ranger
 in the purest sense of the word.&N
 ~
-2120 0 0 285286416 0 0 0 500 S
-P2 0 2 -1
+2120 0 0 0 285286416 0 0 0 500 S
+P2 0 2 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -178,8 +178,8 @@ golden eagle~
 &+yright.  Its talons are sharp and deadly, often used to pick up small animals,
 &+ythey are also quite effective in fighting any creature that would attack it.&N
 ~
-2056 0 0 0 0 0 0 -300 S
-B 0 0 -1
+2056 0 0 0 0 0 0 0 -300 S
+B 0 0 0 -1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -196,8 +196,8 @@ huge stone golem~
 &+Lways slightly less.  It stands silently until something invades its realm.&N
 &+LIt was more than likely bought for a great sum of money.&N
 ~
-67110986 0 0 2056 2184 0 0 -1000 S
-OG 0 1 -1
+67110986 0 0 0 2056 2184 0 0 -1000 S
+OG 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -213,8 +213,8 @@ troglodyte warrior~
 &+LHis eyes are dark and on the sides of his head.  At the ends of his hands and
 &+Lfeet are long and sharp claws.&N
 ~
-67110986 0 0 8 0 0 0 -800 S
-H 0 1 -1
+67110986 0 0 0 8 0 0 0 -800 S
+H 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -235,8 +235,8 @@ troglodyte chieftain chief~
 &+Lin this region of the world and he doesn't have any inclination to let go of
 &+Lthat power.  This&+g tr&+Gog&+glo&+Gdy&+gte &+Lis the chieftain of his underground clan.&N
 ~
-2122 0 0 8 8328 128 0 -1000 S
-H 0 257 -1
+2122 0 0 0 8 8328 128 0 -1000 S
+H 0 257 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -250,8 +250,8 @@ troglodyte princess angry~
 &+Lfeet tall and her weight is hard to discern.  Her long and sharp&+W teeth&+L protrude
 &+Lever so slightly as she shows her sadistic grin.&N
 ~
-2122 1 0 8 0 0 0 -1000 S
-H 0 257 -1
+2122 1 0 0 8 0 0 0 -1000 S
+H 0 257 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -267,8 +267,8 @@ troglodyte female~
 &+Loffspring, but she appears to be past child bearing age.  She smells very bad
 &+Land emits an odor only a &+gtr&+Gog&+glo&+Gdy&+gte&+L could find attractive.&N
 ~
-2124 0 0 8 12 0 0 -800 S
-H 0 1 -1
+2124 0 0 0 8 12 0 0 -800 S
+H 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -284,8 +284,8 @@ sentinel troglodyte guard~
 &+Lon this creature, yet more weapons to do battle with.  This &+gtr&+Gog&+glo&+Gdy&+gte&+L is a
 &+Lsentinel warrior and will fight till it is dead.&N
 ~
-67110986 0 0 8 8 0 0 -890 S
-H 0 1 -1
+67110986 0 0 0 8 8 0 0 -890 S
+H 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -302,8 +302,8 @@ troglodyte mother female~
 &+Lwell as vicious teeth.  She is a formidable opponent, and even more so when
 &+Lher hatchlings are being attacked.&N
 ~
-2122 0 0 8 0 0 0 -900 S
-H 0 1 -1
+2122 0 0 0 8 0 0 0 -900 S
+H 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -319,8 +319,8 @@ body bodyguard guard troglodyte~
 &+Ldownfall could be his age.  He is still very young and agile, but doesnt have
 &+La good deal of experience.&N
 ~
-67110986 0 0 8 24 0 0 -800 S
-H 0 1 -1
+67110986 0 0 0 8 24 0 0 -800 S
+H 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -336,8 +336,8 @@ child troglodyte~
 &+Lbeginnings of its bone crest have begun to form and its tail is now long enough
 &+Lto be considered an extra weapon.&N
 ~
-2122 0 0 8 0 0 0 -500 S
-H 0 0 -1
+2122 0 0 0 8 0 0 0 -500 S
+H 0 0 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -352,8 +352,8 @@ he heard the intriguing tale of the missing children.  His goal was to find out
 the truth in the matter.  He long ago gave up his quest and now has ran out of
 money and cannot return to his home.&N
 ~
-2120 0 0 0 0 0 0 500 S
-PH 0 0 -1
+2120 0 0 0 0 0 0 0 500 S
+PH 0 0 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -369,8 +369,8 @@ always offers a &+Wtale&N for any who ask.  He is currently the best bartender i
 the whole realms by many peoples accounts.  He can serve many drinks but beware
 for they are very strong.&N
 ~
-2122 0 0 0 0 0 0 599 S
-PB 0 1 -1
+2122 0 0 0 0 0 0 0 599 S
+PB 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -384,8 +384,8 @@ rough beard.  He stands at five and a half feet tall and looks to be around one
 hundred and twenty pounds.  His clothes hang loosely on his gaunt frame as it
 looks like he used to be a larger man.  His hair is unkempt and shaggy.&N
 ~
-2122 0 0 0 0 0 0 0 S
-PH 0 0 -1
+2122 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -402,8 +402,8 @@ nothing in particular.  He has a long scar on his face that he claims to have
 come at the hands of a &+gSea Scrag&N but it is safe to assume that he has not
 ever seen the ocean.&N
 ~
-2122 0 0 0 0 0 0 300 S
-PG 0 1 -1
+2122 0 0 0 0 0 0 0 300 S
+PG 0 1 0 -1
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -418,8 +418,8 @@ order to eat or tend to emergencies.  He has grown a long beard and his hair
 has turned bright white from the immense stress.  He wears a simple white tunic
 and a large holy symbol on a chain around his neck.&N
 ~
-2122 0 0 0 0 0 0 600 S
-PH 0 32 -1
+2122 0 0 0 0 0 0 0 600 S
+PH 0 32 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -432,8 +432,8 @@ bum dirty man~
 &+Lhome for at least a decade.  He has seen the shady side of life in this remote
 &+Lmountain village.  He has a long beard and glassy looking eyes.&N
 ~
-2126 0 0 0 0 0 0 -400 S
-PH 0 0 -1
+2126 0 0 0 0 0 0 0 -400 S
+PH 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 8 1
@@ -447,8 +447,8 @@ young, he knows that his dreams would come true if he could go and learn at the
 &+Rbattle &+Yschool.&N  He is only seven or eight years old by the looks of him.  His
 blue eyes shine brightly as you approach him.&N
 ~
-2124 0 0 0 0 0 0 600 S
-PH 0 0 -1
+2124 0 0 0 0 0 0 0 600 S
+PH 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -463,8 +463,8 @@ dwarfing even the otherwise massive&+B barbarians&N of the plains.  A thick head
 auburn hair sways every so slightly as he chuckles.  This man is usually in
 good spirits, trying to preserve the natural order of things.  &N
 ~
-2120 0 0 128 0 0 0 1000 S
-PH 0 8 -1
+2120 0 0 0 128 0 0 0 1000 S
+PH 0 8 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -479,8 +479,8 @@ is short, but powerfully built.  His arms are simply huge and powerful.  He
 wears the armor of his order, a prestigous and respected group of paladins.
 Why this man is in this town is a mystery to all but the paladins themselves.&N
 ~
-2122 0 0 128 0 0 0 1000 S
-PH 0 8 -1
+2122 0 0 0 128 0 0 0 1000 S
+PH 0 8 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -494,8 +494,8 @@ any scars or blemishes.  He is a tall blonde man with a cropped mustache, bushy
 and unique.  His thick eyebrows are a very light color, almost white.  This
 gallant knights image is that of the perfect holy warrior.&N
 ~
-67110984 0 0 128 0 0 0 1000 S
-PH 0 8 -1
+67110984 0 0 0 128 0 0 0 1000 S
+PH 0 8 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -511,8 +511,8 @@ proud man is here to right the wrongs that have been done in this city, to
 avenge those who cannot avenge themselves.  He is a man of integriy and demands
 respect.&N
 ~
-67110984 0 0 128 0 0 0 1000 S
-PH 0 8 -1
+67110984 0 0 0 128 0 0 0 1000 S
+PH 0 8 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -531,8 +531,8 @@ to his cause.  His life has been difficult at times but he is secure, knowing
 that god will reward him for his tireless efforts.  Drummond is not exactly a
 leader, but he is invaluable to the rest of the paladins of his order.&N
 ~
-2120 0 0 128 0 0 0 1000 S
-PH 0 8 -1
+2120 0 0 0 128 0 0 0 1000 S
+PH 0 8 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -552,8 +552,8 @@ well versed in many of the acadamic arts and knows a great deal about the
 doings in his village.  He takes the time to talk to any who would want to talk
 to him.&N
 ~
-2122 0 0 0 0 128 0 500 S
-PH 0 1 -1
+2122 0 0 0 0 0 128 0 500 S
+PH 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -567,8 +567,8 @@ much of the doings in the village as she walks around a lot but her real
 knowledge comes from the gossip she has heard at the &+rbath house&N.  She is quite
 pretty but has little in the way of brains.&N
 ~
-2122 0 0 0 0 0 0 400 S
-PH 0 1 -1
+2122 0 0 0 0 0 0 0 400 S
+PH 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -585,8 +585,8 @@ relatively good life.  This mans arms are rather strong and well muscled.  A
 good deal of this mans life has been spent in happiness, with no real problems
 to bring him down.&N
 ~
-2124 0 0 0 0 0 0 450 S
-PH 0 1 -1
+2124 0 0 0 0 0 0 0 450 S
+PH 0 1 0 -1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -602,8 +602,8 @@ sword is strapped to his hip with a leather binding.  He stands at six feet
 tall and appears to weigh one hundred fifty pounds.  He has a very friendly
 way of doing his duty.&N
 ~
-2122 0 0 24 0 0 0 799 S
-PH 0 1 -1
+2122 0 0 0 24 0 0 0 799 S
+PH 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -615,8 +615,8 @@ a &+ysmall rat&N scurries over the ground here.&N
 &+y   This disgusting rat lives its entire life scavenging for food.  It is
 &+ycovered with a thick coat of fuzzy hair.  It has a long and disgusting tail.&N
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -633,8 +633,8 @@ nose sticks far out from his bearded face, looking very much like a mountain
 peak rising above the forests.  He has traveled far and is weary so he has
 decided to nurse his wounds by drinking.&N
 ~
-2122 0 0 0 0 0 0 500 S
-PM 0 1 -1
+2122 0 0 0 0 0 0 0 500 S
+PM 0 1 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -649,8 +649,8 @@ herself to be a worthy employee.  She stands at five feet tall and weighs a
 slender one hundred and five pounds.  Her long brown hair swishes as she walks.
 As the mayors main assistant, she is a good source of information.&N
 ~
-2122 0 0 8 0 0 0 800 S
-PH 0 0 -1
+2122 0 0 0 8 0 0 0 800 S
+PH 0 0 0 -1
 34 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -664,8 +664,8 @@ bank for many years and has been trusted to take deposits without supervision.
 He stands at an even six feet tall and has been meticulously groomed.  This
 banker knows a great deal about the financial dealings of the village.&N
 ~
-2122 0 0 0 0 0 0 800 S
-PH 0 1 -1
+2122 0 0 0 0 0 0 0 800 S
+PH 0 1 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -679,8 +679,8 @@ trash or garbage.  She is quite filthy as it is near the end of her shift.  She
 would be considered beautiful if she cleaned herself up.  Her dress is simple
 as she is wearing the uniform of the civil servants of &+LT&+Rentr&+Lo&N.&N
 ~
-2124 0 0 0 0 0 0 500 S
-PH 0 0 -1
+2124 0 0 0 0 0 0 0 500 S
+PH 0 0 0 -1
 14 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -695,8 +695,8 @@ shifty troglodyte~
 &+Llike he glows and flashes as he moves.  His hands end in vicious claws, a very
 &+Lformidable weapon.  He is a fierce warrior, not one to be played with.&N
 ~
-2122 0 0 8 0 0 0 -900 S
-H 0 16384 -1
+2122 0 0 0 8 0 0 0 -900 S
+H 0 16384 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -711,8 +711,8 @@ girth.  This fat halfling has a cherbic face making him look very happy and
 pleasant but it is just an illusion.  He is a bitter old halfling that takes no
 pleasure in his profession.&N
 ~
-2122 0 0 8 0 0 0 700 S
-PF 0 0 -1
+2122 0 0 0 8 0 0 0 700 S
+PF 0 0 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -728,8 +728,8 @@ taken care of with little split ends.  Her hazel eyes are beautiful and have
 enticed more than a few drunk noble men.  She was once a sweet girl but is now
 quite callus and difficult to talk to here.&N
 ~
-264266 0 0 8 0 0 0 -200 S
-PH 0 1 -1
+264266 0 0 0 8 0 0 0 -200 S
+PH 0 1 0 -1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -744,8 +744,8 @@ longer than they should be.  He is a man with great vision and insights into
 the world around him.  His skin is dusty and covered with filth from his many
 nights in uncivilized lands.  &N
 ~
-1073743948 0 0 0 0 0 0 300 S
-PH 0 16385 -1
+1073743948 0 0 0 0 0 0 0 300 S
+PH 0 16385 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -759,8 +759,8 @@ the Cathedral.  He is a clean cut and meticulously groomed male.  He walks with
 an agility that is common to rangers and monks.  His kind demeanor and gentle
 tone makes it very easy to listen to his opinions about religion.&N
 ~
-2120 0 0 0 0 0 0 1000 S
-PH 0 32 -1
+2120 0 0 0 0 0 0 0 1000 S
+PH 0 32 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -776,8 +776,8 @@ ran through with your fingers.  His &+Bblue eyes&N pierce you straight to your s
 He has laid with many of the noble women of &+LT&+Rentr&+Lo&N and just as many of the less
 fortunate women out of the kindness of his heart.&N
 ~
-264266 0 0 0 0 0 0 100 S
-PH 0 0 -1
+264266 0 0 0 0 0 0 0 100 S
+PH 0 0 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -794,8 +794,8 @@ His hands are very well taken care of and appear to have recently has a
 manicure.  He heard your approach and looks up at where he thinks you should be
 standing.  He wears a pleasant smile.&N
 ~
-2122 0 0 0 0 0 0 600 S
-PH 0 2 -1
+2122 0 0 0 0 0 0 0 600 S
+PH 0 2 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -810,8 +810,8 @@ explicit gestures to the classier women.  His hair is well cropped but looks
 like a wig.  His eyes have large bags underneath them.  It is safe to say that
 this man is intoxicated by some king of odd pipe weed.&N
 ~
-264264 0 0 0 0 0 0 -100 S
-PH 0 0 -1
+264264 0 0 0 0 0 0 0 -100 S
+PH 0 0 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -826,8 +826,8 @@ he appears to be weathered from the hard elements, his skin is very soft and
 his hands are meticulously taken care of.  His voice contains a kind of mystic
 power, the songs of old are alive in this man.&N
 ~
-2120 0 0 8 0 0 0 400 S
-PH 0 32768 -1
+2120 0 0 0 8 0 0 0 400 S
+PH 0 32768 0 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -841,8 +841,8 @@ wall.  He is a very intelligent looking boy with eyes so blue they could make
 you cry.  His blonde hair is slightly windblown, which is to be expected if one
 stands watch this time of year.&N
 ~
-67110986 0 0 0 0 0 0 350 S
-PH 0 1 -1
+67110986 0 0 0 0 0 0 0 350 S
+PH 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -857,8 +857,8 @@ is rather inexpensive looking but he wears them with class and dignity.  He is
 known well in the realms for his work with rare and unique animals.  His only
 purpose in life is to share these wonderful creatures with the world.&N
 ~
-2120 0 0 67108872 0 0 0 500 S
-PM 0 1 -1
+2120 0 0 0 67108872 0 0 0 500 S
+PM 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -872,8 +872,8 @@ A great and mighty &+ychim&+Lera&N sits upon its haunches here.&N
 &+yserpents.  From its mouth you can see t&+Lendrils of smoke rising up.  This
 &+ycreature is very rare.&N
 ~
-2122 0 0 0 0 0 0 -600 S
-A 0 0 -1
+2122 0 0 0 0 0 0 0 -600 S
+A 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -890,8 +890,8 @@ A large and vicious &+Yman&+Ltic&+Yore&N stands here ready to spring.&N
 &+Yfive hundred pounds.  This&+L creature has been &+Yimprisonned for much to long and
 &+Yis eager to fight back any&+L creature who dares&+Y fight it.&N
 ~
-2122 0 0 0 0 0 0 -245 S
-A 0 0 -1
+2122 0 0 0 0 0 0 0 -245 S
+A 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -906,8 +906,8 @@ A &+Ylamia&N stands here looking like the freak it is.&N
 &+Ythat of a man.  This creature is very unhappy about its appearance.  Nothing
 &+Ycould be happy looking as it does.&N
 ~
-2122 0 0 0 0 0 0 -500 S
-A 0 0 -1
+2122 0 0 0 0 0 0 0 -500 S
+A 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -923,8 +923,8 @@ satyr half-goat half-human half~
 &+Lprisoner has been well taken care &+wof but is covered in its own waste.  Its
 &+Llittle goat hooves are very sharp so&+w one must be catious.&N
 ~
-2122 0 0 8 0 0 0 -500 S
-AA 0 0 -1
+2122 0 0 0 8 0 0 0 -500 S
+AA 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -938,8 +938,8 @@ A &+glarge&+b multi&+M-raced&N animal stands here.&N
 &+bvery healthy looking horse body on w&+Chich grow the wings and tail of a &+mpea&+Gcock&+b.
 &+bIt looks at you stupidly as you ap&+Cproach it.&N
 ~
-2122 0 0 0 0 0 0 -400 S
-CT 0 1 -1
+2122 0 0 0 0 0 0 0 -400 S
+CT 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -953,8 +953,8 @@ A great flightless &+mb&+Lir&+md&N sits here.&N
 &+mbeen captured by a crafty &+Ltrapper who made a nice&+m profit form the deal.  This
 &+mbird is very heavy looking &+Land cannot&+m fly.&N
 ~
-2122 0 0 0 0 0 0 -320 S
-B 0 0 -1
+2122 0 0 0 0 0 0 0 -320 S
+B 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -967,8 +967,8 @@ A large bird-like cat stands here.&N
 it in captivity.  This gryphon must have a spell of controlling on it because
 it rests comfortably and doesn't resist its captivity.&N
 ~
-526474 0 0 0 0 0 0 -600 S
-A 0 0 -1
+526474 0 0 0 0 0 0 0 -600 S
+A 0 0 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -982,8 +982,8 @@ zoo, Nu, out of pity.  Half-kobolds face a great deal of racism from both
 humans and halflings.  He is a short and ugly creature but he can perform his
 duties as dungeon keeper without using much of his brains.&N
 ~
-1140852812 0 0 0 0 0 0 -400 S
-H 0 0 -1
+1140852812 0 0 0 0 0 0 0 -400 S
+H 0 0 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -997,8 +997,8 @@ roc bird~
 &+LIt completely fills its cell with its massive frame.  Its large beak and claws
 &+Lare sharp and dangerous.  This is one big bird.&N
 ~
-67110986 0 0 0 0 0 0 -500 S
-B 0 0 -1
+67110986 0 0 0 0 0 0 0 -500 S
+B 0 0 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1013,8 +1013,8 @@ light of day in years though, for it has remained in captivity for a very long
 time.  Its wings are no longer functional as they have not been used in so
 great a length of time.&N
 ~
-2122 0 0 0 0 0 0 -500 S
-B 0 1 -1
+2122 0 0 0 0 0 0 0 -500 S
+B 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1031,8 +1031,8 @@ phouka horse~
 &+rred&+L, the tell-tale signs of infravi&+Wsion.  The ho&+Lrses muscular form could easily
 &+Lsmash a underestimating opponent.&N
 ~
-2122 0 0 0 0 0 0 -500 S
-AE 0 0 -1
+2122 0 0 0 0 0 0 0 -500 S
+AE 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1045,8 +1045,8 @@ A disgusting &+Ghobyah&N gazes at you hungrily&N
 &+gvery whiney creature that has to be gagged to shut it up.  It smells very bad
 &+gbecause it cares little for its personal hygiene.&N
 ~
-33556558 0 0 0 0 0 0 -300 S
-HG 0 1 -1
+33556558 0 0 0 0 0 0 0 -300 S
+HG 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1060,8 +1060,8 @@ trow troll~
 &+gtall but cannot in this tight cell.  Its eyes glow with deadly rage.  The
 &+gcreature is not a happy camper.&N
 ~
-2122 0 0 0 0 0 0 -309 S
-PT 0 0 -1
+2122 0 0 0 0 0 0 0 -309 S
+PT 0 0 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1076,8 +1076,8 @@ cause.  The ghost appears to be from a former zoo worker.  Its uniform is much
 like the other zoo workers yet it is cut up and in tatters from a savage attack
 from an unknown murderer.  There is a scalpel sticking in one of its eyes.&N
 ~
-1073743944 0 0 135790602 64 0 0 -700 S
-UG 0 512 -1
+1073743944 0 0 0 135790602 64 0 0 -700 S
+UG 0 512 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1092,8 +1092,8 @@ middle-aged man, but the reality is he is more than twenty centuries old at the
 very least and has been the cause of many great plagues and mass deaths.  He
 was summoned here and captured in the magically sealed room. &N
 ~
-2122 1 0 0 0 0 0 -999 S
-Y 0 17 -1
+2122 1 0 0 0 0 0 0 -999 S
+Y 0 17 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1107,8 +1107,8 @@ A vicious &+Lblack dog&N stands here&N
 &+Bprotruding from its dog like head.  Its t&+Leeth and claws are razor sharp and
 &+Balways extended.  It looks at you through&+L fiery eyes as you approach.&N
 ~
-8 1 0 0 0 0 0 -900 S
-CT 0 0 -1
+8 1 0 0 0 0 0 0 -900 S
+CT 0 0 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1123,8 +1123,8 @@ a remote mining community.  They would not let him sit in salt water until he
 had performed an unreal amount of work.  Nu rescued him and brought him here
 but had to keep him in the dungeon after he killed two of the clowns.&N
 ~
-2122 0 0 0 0 0 8192 -450 S
-PT 0 1 -1
+2122 0 0 0 0 0 0 8192 -450 S
+PT 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1138,8 +1138,8 @@ attempted to murder the surgeon of the zoo for no apparent reason.  He was drug
 down here to the dungeon screaming, "Murderer!", over and over.  He looks very
 sad as he sits in his damp cell.&N
 ~
-2122 0 0 0 0 0 0 -500 S
-PG 0 1 -1
+2122 0 0 0 0 0 0 0 -500 S
+PG 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1154,8 +1154,8 @@ beansi bean si shape~
 &+Lwho run this organization.  It stands at over four feet tall and appears to be
 &+Lneither a man nor a woman.&N
 ~
-2122 1 0 1048576 0 0 262144 -700 S
-U 0 16 -1
+2122 1 0 0 1048576 0 0 262144 -700 S
+U 0 16 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1169,8 +1169,8 @@ wax.  Eight long tenticles spread out from its body reaching for you.  In the
 middle of its body is a large and fang filled mouth.  Its eyes glow with a sick
 red color.  It is very large and enshrouded with mist.&N
 ~
-1073875018 1 0 404226314 0 0 0 -1000 S
-BH 0 512 -1
+1073875018 1 0 0 404226314 0 0 0 -1000 S
+BH 0 512 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1184,8 +1184,8 @@ A midget walks here and sells popcorn&N
 tall and is very hairy.  The many bags of&+W po&+Yp&+Wcorn&N he is carrying look edible,
 but i'm sure that the townspeople know better.&N
 ~
-2140 0 0 270008320 0 0 0 670 S
-PF 0 0 -1
+2140 0 0 0 270008320 0 0 0 670 S
+PF 0 0 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1200,8 +1200,8 @@ A &+mboun&+ccing&+r cl&+Yown&N entertains here.&N
 paint.  He stands here selling various balloons for the kids.  This clown is
 enjoying his job of selling balloons.&N
 ~
-2124 0 0 0 0 0 0 1000 S
-H 0 0 -1
+2124 0 0 0 0 0 0 0 1000 S
+H 0 0 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1220,8 +1220,8 @@ The surgeon stands at nearly seven feet tall and is covered with a thick layer
 of muscle.  Keen and intelligent eyes shine in his face, clouded however with
 the bloodlust of insanity.  &N
 ~
-285214794 0 0 0 90 0 0 -1000 S
-PL 0 1041 -1
+285214794 0 0 0 0 90 0 0 -1000 S
+PL 0 1041 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1235,8 +1235,8 @@ An enormous, two-headed &+Let&+Wt&+Lin&N charges at you.&N
 &+Lover fifteen feet tall.  Its arm&+Ws are &+Las large as a full grown mans chest.  Two
 &+Lheads growl at you as you approc&+Wh this&+L creature.&N
 ~
-1073743948 1 0 805306392 0 0 0 -1000 S
-G 0 1 -1
+1073743948 1 0 0 805306392 0 0 0 -1000 S
+G 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1249,8 +1249,8 @@ white steed~
 and white, hanging down far on its neck.  It has powerful legs and shoulders,
 providing a strong mount.  It has some iron horseshoes on its feet.&N
 ~
-134219850 0 0 0 0 0 0 300 S
-AE 0 0 -1
+134219850 0 0 0 0 0 0 0 300 S
+AE 0 0 0 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1268,8 +1268,8 @@ small angular features are hard to read.  This elf is hiding in seclusion for
 some reason.  He appears to be very mad at this moment.  As the elf sits here
 he keeps mumbling something about a mad and daring quest.&N
 ~
-2122 0 0 369098968 1 0 0 1000 S
-PE 0 1 -1
+2122 0 0 0 369098968 1 0 0 1000 S
+PE 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1282,8 +1282,8 @@ An elderly &+glandscaper&N trims the &+gbushes&N here.&N
 afforded only to those born with natural agility.  He is still very muscular
 for an old person.  His white beard shines with a well maintained health.&N
 ~
-2122 0 0 0 0 0 0 400 S
-PH 0 1 -1
+2122 0 0 0 0 0 0 0 400 S
+PH 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1298,8 +1298,8 @@ bumble bee~
 &+Ybee is different&+L from a nor&+Ymal bee in &+Lthe fact tha&+Yt it bites &+Linstead of stings.
 &+LThe scary thing &+Yis it can b&+Lite multipl&+Ye times.&N
 ~
-8 0 0 0 0 0 0 0 S
-I 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+I 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1313,8 +1313,8 @@ bugs to eat.  It is a very nice looking bird, who appears to be both young and
 full of life.  Its small beak is used for cracking nuts and seeds when it can
 find such food.  The bird is really tame and thus easy to kill.&N
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 2 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1328,8 +1328,8 @@ live in and around the farming community.  Often considered to be vermin, this
 creature is often hunted down just for the sake of killing it.  It is not a
 large create; the mouse could probably be held in the palm of a teenagers hand.&N
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1344,8 +1344,8 @@ village.  It is an orange tabby that has lost a great deal of weight.  Its skin
 and fur hangs off it like cloth on a clothesline.  Its bright eyes look around
 for something to eat. &N
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1359,8 +1359,8 @@ tall for her age.  Her skin is fair and smooth as she hasn't seen more than
 a half dozen years.  She has long &+Ygolden hair&N that is curly and bounces as she
 walks.  She has a kind heart and would help almost anyone with their chores.&N
 ~
-8 0 0 0 0 0 0 200 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 200 S
+PH 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1375,8 +1375,8 @@ and is often teased for his red hair.  The boy has rather large ears too making
 him an easy target for childish insults.  He often plays with the stray dogs,
 more often than naught, getting bitten for his efforts.&N
 ~
-8 0 0 0 0 0 0 400 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 400 S
+PH 0 0 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1390,8 +1390,8 @@ he enjoys the freedom of the outdoors.  The dog appears to be part collie and
 part golden retriever, a wild combination to say the least.  The dog is so full
 of energy that it spends its entire day chasing stray cats around.&N
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1406,8 +1406,8 @@ glows when she smiles.  Her long, auburn hair is often pulled by the mean and
 immature younger boys.  She often fantasizes about the older and more handsome
 young men of the village.&N
 ~
-8 0 0 0 0 0 0 200 S
-PH 0 1 -1
+8 0 0 0 0 0 0 0 200 S
+PH 0 1 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1421,8 +1421,8 @@ their food source.  Although many vegetables are eaten, the cow is the main
 source of animal protein for the village.  This cow is rather large and
 stupid looking and it spends all its days eating grass.&N
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 4
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 4
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1437,8 +1437,8 @@ cheap looking.  She has bright eyes but, because of her station in life, she
 has never stepped inside a school room.  It is no matter though, for she walks
 about with a smile on her face.&N
 ~
-8 0 0 0 0 0 0 400 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 400 S
+PH 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1451,8 +1451,8 @@ a &+rgnome&N merchant&N~
 try to make a profit by buying the cheap produce here and reselling it in his
 own shop.  He is a short and sturdy gnome with a long and hairy beard.&N
 ~
-8 0 0 0 0 0 0 200 S
-PG 0 1 -1
+8 0 0 0 0 0 0 0 200 S
+PG 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1466,8 +1466,8 @@ long, hot days in the field.  He spends his days now advising and annoying the
 younger farmers and their workers.  He has a kinda hard but has grown rather
 senile.&N
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1480,8 +1480,8 @@ A &+yyoung&+C farmer&N surveys the crops here.&N
 a lot to learn about the lifestyle, but he has made great progress.  His skin
 has been tanned to a deep golden hue and his hands are full of callouses.&N
 ~
-8 0 0 0 0 0 0 200 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 200 S
+PH 0 0 0 -1
 13 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1495,8 +1495,8 @@ her normal life span.  Her skin is very wrinkly and sags all over.  She is
 quite scary looking at night.  It is safe to say that this woman is more
 powerful than her appearance suggests.&N
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 14 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1510,8 +1510,8 @@ in the fields.  It stands at almost eight feet tall and probably weighs close
 to eight hundred pounds.  Its hooves are sharp and deadly.  The horses mane is
 long and scraggly as it never gets brushed by its owners.&N
 ~
-134217736 0 0 0 0 0 0 0 S
-A 0 0 -1
+134217736 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1525,8 +1525,8 @@ its main body.  It has a large and bloated abdommen that has some black and
 swirling markings.  The ant is entirely red excet for the tell tale markings
 of a dangerous ant species.&N
 ~
-8 0 0 0 0 0 0 -500 S
-I 0 0 -1
+8 0 0 0 0 0 0 0 -500 S
+I 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1540,8 +1540,8 @@ fly effectively.  Its wings look rather rediculous on its massive body.  Its
 legs are badly crippled from the excessive weight that they have had to carry
 around.  The bird is brown and dirty.&N
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 2 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1555,8 +1555,8 @@ massive amount of damage to the health of the &+Wplant&N.  The villagers of Salo
 make it a point to try to remove as many &+Wpotato &N&+rb&+Lu&+rg&+Ls&N from the plants as
 possible in order to optimize the &+gplants &Nhealth.&N
 ~
-10 0 0 0 0 0 0 0 S
-I 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+I 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1572,8 +1572,8 @@ and died in Salol and she intends to do the same.  Even at her advanced age she
 still does her fair share of work in the community.  She is well respected and
 a very kind woman.&N
 ~
-2122 0 0 0 0 0 0 0 S
-PH 0 0 -1
+2122 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1588,8 +1588,8 @@ pot-belly, most likely from the amount of ale he consumes daily.  His light
 colored hair is rather messed up and dirty.  Under his fingernails is a good
 deal of&+L dirt&N.&N
 ~
-8 0 0 0 0 0 0 500 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 500 S
+PH 0 0 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1603,8 +1603,8 @@ troglodyte warrior~
 &+Lthat he lusts for &+Chuman&+L flesh.  His skin is thin and can change color much like
 &+La chameleons skin.  &N
 ~
-67110986 0 0 0 8 0 0 -1000 S
-H 0 1 -1
+67110986 0 0 0 0 8 0 0 -1000 S
+H 0 1 0 -1
 49 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1618,8 +1618,8 @@ seven feet tall which is huge for his race.  His long arms are covered with a
 thick body armor.  His flesh, in places, is rock hard.  He is a very strong
 creature that can, and will, fight until it breathes no more.&N
 ~
-67110984 0 0 0 0 0 0 -1000 S
-H 0 1 -1
+67110984 0 0 0 0 0 0 0 -1000 S
+H 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1637,8 +1637,8 @@ seen pain in his lifetime however, and has several long and garish scars on
 his arms and neck.  A faint smile is present on his face, a testimony to his
 nature.  &N
 ~
-2120 0 0 0 0 0 0 400 S
-PH 0 1 -1
+2120 0 0 0 0 0 0 0 400 S
+PH 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1651,8 +1651,8 @@ A meek looking shaman wanders around here.&N
 more intuned with her body than most male warriors.  She is a fierce and tough
 opponent for anyone.&N
 ~
-2120 0 0 0 0 0 0 400 S
-PB 0 0 -1
+2120 0 0 0 0 0 0 0 400 S
+PB 0 0 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1669,8 +1669,8 @@ snout, which is used to pierce the flesh of its victims.  This creatures eyes
 are many faceted, much like those of a fly or bee.  This creature is always on
 the lookout for fresh &+rblood&N.&N
 ~
-2216 0 0 8 0 0 0 0 S
-I 0 0 -1
+2216 0 0 0 8 0 0 0 0 S
+I 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1686,8 +1686,8 @@ turtle half sheep~
 &+Lthe giant&+g turtle&+L are covered with festering open sores, most of which are
 &+Lleaking a &+Mpurple puss&+L.  This creature is as deadly as it is ugly.&N
 ~
-2120 0 0 0 0 0 0 -1000 S
-A 0 0 -1
+2120 0 0 0 0 0 0 0 -1000 S
+A 0 0 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1705,8 +1705,8 @@ troglodyte male~
 &+Lthe darkest of places.  The &+gtr&+Gog&+glo&+Gdy&+gte&+L has sharp fangs that hang down from its
 &+Lmouth.  The powerful hind legs of this animal are full of strength.&N
 ~
-2122 0 0 8 0 0 0 -350 S
-H 0 1 -1
+2122 0 0 0 8 0 0 0 -350 S
+H 0 1 0 -1
 47 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1721,8 +1721,8 @@ troglodyte berserker~
 &+Land shine with infravision in the darkness.  The creatures hands end in long
 &+Land vicious claws, yet another weapon with which to do battle.&N
 ~
-2124 0 0 8 0 0 0 -1000 S
-H 0 1048576 -1
+2124 0 0 0 8 0 0 0 -1000 S
+H 0 1048576 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1736,8 +1736,8 @@ troglodyte female~
 &+Lback filled with small quill-like spikes used for her protection.  Her face is
 &+Lrather unremarkable but relays the fact that she is a cruel and deadly warrior.&N
 ~
-2124 0 0 8 0 0 0 -900 S
-H 0 1 -1
+2124 0 0 0 8 0 0 0 -900 S
+H 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1753,8 +1753,8 @@ troglodyte assassin~
 &+Lhim the look of a ferocious beast.  This creatures large muscles are the source
 &+Lof his power.&N
 ~
-2252 0 0 524296 0 0 0 -1000 S
-H 0 8192 -1
+2252 0 0 0 524296 0 0 0 -1000 S
+H 0 8192 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1769,8 +1769,8 @@ tall this priest towers over most of the common people of the village.  His
 deep baritone voice is a source of inspiration and calm for those who worship
 in this great church.&N
 ~
-67110990 0 0 0 0 0 0 1000 S
-PH 0 32 -1
+67110990 0 0 0 0 0 0 0 1000 S
+PH 0 32 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1784,8 +1784,8 @@ barbarian merchant shopkeeper~
 merchant is over three hundred pounds of muscle.  He stands at nearly seven
 feet tall, a powerful and imposing presence.&N
 ~
-2122 0 0 0 0 0 0 500 S
-PB 0 1 -1
+2122 0 0 0 0 0 0 0 500 S
+PB 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1800,8 +1800,8 @@ poorly maintained.  He stands at nearly six feet tall, but appears to have lost
 a good deal of weight.  This merchant appears to be quite malnourished and
 close to starving.&N
 ~
-2122 0 0 0 0 0 0 400 S
-PH 0 0 -1
+2122 0 0 0 0 0 0 0 400 S
+PH 0 0 0 -1
 34 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1811,8 +1811,8 @@ member winterhaven militia~
 &+LA &+cmember &+Lof the &+WWinterhaven &+Cmilitia &+Lstands here at guard.&n
 ~
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 1 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1825,8 +1825,8 @@ black essence shadowy creature _ignore_~
 &+Las this shadowy creature. The creature appears to have gathered
 &+Lstrength within this area. It seems otherworldly.
 ~
-1074819082 0 0 0 0 0 0 0 S
-sw 0 36 -1
+1074819082 0 0 0 0 0 0 0 0 S
+sw 0 36 0 -1
 48 0 0 80d80+2500 8d8+60
 0.0.0.0 0
 8 8 0

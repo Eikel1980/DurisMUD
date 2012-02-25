@@ -5,7 +5,7 @@ A &+Mc&+Go&+Ml&+Go&+Mr&+Gf&+Mu&+Gl&n looking cap lies here on the ground.~
 ~
 9 3 2 0 7 0 0 17 0 0 0
 7 0 0 2 0 0 0 0
-1 100 100
+1 100 100 100
 E
 cap clown~
 A clowns cap.
@@ -19,7 +19,7 @@ cowl cowlskin bearfur bear fur skin~
 ~
 9 3 3 0 7 0 0 1025 0 0 0
 7 0 0 3 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 cowl cowlskin bearfur bear fur skin~
 &nA cowlskin that covers about body.
@@ -31,7 +31,7 @@ sharp steel katana~
 ~
 5 16 3 0 11 0 1024 8193 0 85458945 0
 5 3 3 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 razor-sharp razor sharp steel katana~
 &+cA razor sharp weapon, very deadly.&n
@@ -43,7 +43,7 @@ longsword illithid bane~
 ~
 5 19 3 0 13 10 1024 8193 64 87556123 0
 5 3 3 3 0 0 0 0
-10 23922 100
+10 23922 100 100
 E
 longsword~
 &+mIt seems to emit an errie hum, although none is detectable.  It's made of a strong
@@ -60,7 +60,7 @@ arms~
 ~
 8 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 arms~
 &+LArms of a &+gThri-&+ykreen&+L.&n
@@ -72,7 +72,7 @@ orc orc-skin orcskin wrist protector~
 ~
 9 2 3 0 7 0 0 4097 0 0 0
 7 0 0 5 0 0 0 0
-1 1020 100
+1 1020 100 100
 E
 orc orcskin protector wrist orc-skin~
 &+LThis wrist-guard is made of orcskin.&n
@@ -86,7 +86,7 @@ spiked leather sleeves~
 ~
 9 13 3 0 8 0 1024 257 0 85475401 0
 6 8 1 3 1 0 0 0
-5 3040 100
+5 3040 100 100
 E
 spiked leather sleeves~
 &+LThese sleeves are spiked.&n
@@ -100,7 +100,7 @@ elixir potion bottled~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 26 141 1 192 0 0 0 0
-2 6030 100
+2 6030 100 100
 E
 elixir potion bottled~
 &+LA swirling potion.&n
@@ -112,7 +112,7 @@ silver longsword bright~
 ~
 5 16 3 0 7 0 1024 8193 64 87572483 0
 5 2 4 2 1 0 0 0
-9 20 100
+9 20 100 100
 E
 steel sword long longsword~
 &nA steel sword.&n
@@ -128,7 +128,7 @@ long wooden broom~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 4 1 4 7 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 long wooden broom~
 &+LA long broom.&n
@@ -140,7 +140,7 @@ steak grilled~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-2 20 100
+2 20 100 100
 E
 steak grilled~
 &+LThis steak looks very delicious.&n
@@ -152,7 +152,7 @@ delicious onion~
 ~
 19 51 3 0 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-2 2 100
+2 2 100 100
 E
 delicious onion~
 &+wA delicious looking onion.&n
@@ -164,7 +164,7 @@ bottle ale~
 ~
 17 40 3 0 7 0 0 1 0 0 0
 10 10 4 0 0 0 0 0
-2 233 100
+2 233 100 100
 E
 bottle ale~
 &+LA bottle full of ale.&n
@@ -176,7 +176,7 @@ lion fang~
 ~
 5 10 3 0 7 0 1024 8193 0 87650371 0
 2 3 4 11 0 0 0 0
-3 4010 100
+3 4010 100 100
 E
 lion fang~
 &+WA lion's fang that appears very sharp.&n
@@ -192,7 +192,7 @@ sign small~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign small~
 &+MPurchase a ticket and get ready to visit Jindonium!
@@ -204,7 +204,7 @@ eyepatch troll trollskin troll-skin~
 ~
 9 2 3 0 7 0 0 131073 0 0 0
 1 0 0 3 0 0 0 0
-3 23 100
+3 23 100 100
 E
 eyepatch troll trollskin troll-skin~
 &+LAn eyepatch made of trollskin.&n
@@ -220,7 +220,7 @@ donkey ears~
 ~
 9 2 3 0 5 0 4096 17 64 0 0
 2 0 0 2 0 0 0 0
-1 2334 100
+1 2334 100 100
 E
 donkey ears~
 &+LThese ears have come from a donkey it seems.  They are pointy and have brown
@@ -237,7 +237,7 @@ arm scaly reptilian~
 ~
 5 2 3 0 7 0 5120 8193 64 119161145 0
 4 2 6 6 1 0 0 0
-1 202 100
+1 202 100 100
 E
 reptilian arm scaly~
 &+LThis arm seems to have come from a humanoid reptile.
@@ -253,7 +253,7 @@ psionicist power locket~
 ~
 9 23 3 0 10 0 1025 5 64 46305188 0
 6 0 0 1 0 0 0 0
-1 5402 100 0 0 16777216 0
+1 5402 100 100 0 0 16777216 0
 E
 psionicist power locket~
 &+LThis amulet seems to hold immense power.  It's origins are probably the astral
@@ -270,7 +270,7 @@ ticket carnival~
 ~
 25 3 3 0 7 0 0 0 0 0 0
 82062 10 1 0 0 0 0 0
-150 500 100
+150 500 100 100
 E
 ticket carnival~
 &+MA carnival ticket.  One usage only.
@@ -282,7 +282,7 @@ sign small~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 sign small~
 &+G/______ Follow the trail to Jindonium!
@@ -295,7 +295,7 @@ blackened axe~
 ~
 5 16 4 0 14 0 4195328 8193 0 87556123 0
 1 1 6 3 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 blackeded axe~
 &+L   This axe is made of finely polished steel and glimmers in the light and it has  some blood stains on the blade and looks like it could cut a person cleanly in half and the handls is made of bone.
@@ -311,7 +311,7 @@ priestly robes~
 ~
 9 3 8 0 11 0 46080 1025 66 33685984 0
 10 0 0 2 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 black priestly robes~
 &+L   This robe is blue in color with a black inner lining and made of a very thin cloth and looks like it is very comfortable to wear and it has a hood and long sleeves.
@@ -327,7 +327,7 @@ crucifix cross dagger~
 ~
 5 19 9 0 13 0 271632 8193 2 8515584 0
 2 2 3 11 0 0 0 0
-3 1010 100
+3 1010 100 100
 E
 crucifix cross dagger~
 &+W   This is a small sharp dagger in the shape of a crucifix and the blade looks razor sharp.
@@ -343,7 +343,7 @@ blackened altar~
 ~
 15 37 3 10000 15 100 1 0 0 0 0
 50 15 0 50 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 blackened altar~
 &+L   This altar is dark black in color and has several blood stains on its surface and a purple mist surrounds the altar and it glows a purplish color and it looks like a finely made altar made of granite with no distinguishing markings whatsoever.
@@ -357,7 +357,7 @@ splintered club~
 ~
 5 6 9 0 12 0 4195328 8193 0 121241659 0
 11 2 8 6 0 0 0 0
-15 8500 100
+15 8500 100 100
 E
 splintered club~
 &+y   This club is made of hard wood with large sharp spikes embedded in it and it is splintering and looks like it can do a tremendous amount of damage.
@@ -373,7 +373,7 @@ black flaming sword~
 ~
 5 18 3 0 14 0 4203792 8193 0 87556123 0
 13 3 5 3 0 0 0 0
-15 5000 100
+15 5000 100 100
 E
 black flaming sword~
 &+R   The sword is at least six feet in length and the blade is very sharp and a has a black flame that is engulfing the entire blade and the handle is made of tightly woven dragon skin.
@@ -389,7 +389,7 @@ shiny black saddle~
 ~
 9 14 4 0 14 0 368640 16777225 0 0 0
 9 0 0 4 0 0 0 0
-10 4500 100
+10 4500 100 100
 E
 shiny black saddle~
 &+L   This is a finely made saddle made of cured leather and it is dark black and looks like it could fit a horse comfortably and give support to anyone willing to ride the horse.
@@ -403,7 +403,7 @@ sharp serpent fang~
 ~
 5 10 8 0 7 0 41088 8193 0 0 0
 2 1 4 11 0 0 0 0
-5 7500 100
+5 7500 100 100
 E
 serpents fang~
 v&+L   This is a fang from a very large serpent and it looks very sharp and could do  alot of damage.
@@ -419,7 +419,7 @@ large dragon claw~
 ~
 5 10 9 0 7 100 106896 8396801 64 0 0
 1 2 5 7 2 0 0 0
-4 5000 100
+4 5000 100 100
 E
 large dragons claw~
 &+L   This came from the foot of a very large dragon and looks razor sharp and could cut through flesh and bone.
@@ -435,7 +435,7 @@ large swirling whirlpool~
 ~
 25 40 3 10000 7 0 9216 0 0 0 524288
 82065 7 -1 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 large swirling whirlpool~
 &+b   This is a large swirling whirlpool which its powerful mak pulls anything into its suction and drags it down to a watery grave and it is spinning fast in a clockwise motion.
@@ -449,7 +449,7 @@ cracked bone staff~
 ~
 5 10 8 0 10 0 4202496 8193 2 4169527300 0
 12 1 4 6 0 0 0 0
-7 6666 100
+7 6666 100 100
 E
 cracked bone staff~
 &+L   This staff is about 5 feet long and is made of solid bone and cracks are all over the staff and it is white in color and quite a useful weapon that can save your life.
@@ -463,7 +463,7 @@ staff flight~
 ~
 4 20 8 0 15 0 37749760 16385 64 4197888 0
 30 1 1 239 0 0 0 0
-0 1010 100
+0 1010 100 100
 #82033
 golden lockpick~
 &+Ya golden lockpick&N~
@@ -471,7 +471,7 @@ golden lockpick~
 ~
 31 24 8 0 13 0 0 16385 0 0 0
 20 10 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 golden lockpick~
 &+Y   This lockpick is special for it is made of solid gold and fits perfectly in the hands of a skilled lockpicker and is cold to the touch but lightweight.
@@ -483,7 +483,7 @@ A Large two-handed sword rests here.&N~
 ~
 5 19 4 0 15 0 4203520 8193 0 87556123 0
 13 2 9 3 1 0 0 0
-10 5000 100
+10 5000 100 100
 E
 two-handed sword executioner~
 &+L   A massive sword with a blade that is five feet long and looks&N
@@ -500,7 +500,7 @@ wicked spiked yuan-ti whip~
 ~
 5 47 8 0 15 100 8320 8193 2 0 0
 14 2 4 2 0 0 0 0
-0 7000 100
+0 7000 100 100
 E
 wicked spiked yuan-ti whip~
 &+L   This whip has been finely crafted by some Yuan-ti and has embedded&n
@@ -518,7 +518,7 @@ flaming gloves~
 ~
 9 13 3 0 14 0 237569 129 66 4227727364 0
 10 0 0 3 0 0 0 0
-0 9999 100
+0 9999 100 100
 A
 5 5
 A

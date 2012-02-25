@@ -5,7 +5,7 @@ thick cowl caribou hide~
 ~
 9 12 3 0 5 0 0 16389 0 0 0
 4 0 0 4 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 thick cowl caribou hide~
    &+yThis thick cowl appears to be made of several stitched caribou hides.
@@ -21,7 +21,7 @@ etched moorwood bracelet~
 ~
 9 6 3 0 5 0 0 4097 0 0 0
 5 0 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 etched moorwood bracelet~
    &+yThis small moorwood bracele is etched with the symbols of sylvandawn.
@@ -37,7 +37,7 @@ plumed blacksteel steel helm~
 ~
 9 16 3 0 9 0 0 17 0 0 0
 7 0 0 3 0 0 0 0
-4 15000 100
+4 15000 100 100
 E
 plumed blacksteel steel helm~
    &+LThis fine blacksteel helmet is topped with a bright red plume.
@@ -53,7 +53,7 @@ ebonwood shoulder guards~
 ~
 9 6 3 0 11 0 0 257 64 0 0
 10 0 0 4 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 ebonwood shoulder guards~
    &+LThese fine shoulder guards strap over one's upper arms and shoulders
@@ -71,7 +71,7 @@ gem studded eyepiece~
 ~
 9 26 1 0 10 0 0 131073 0 0 0
 4 0 0 0 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 gem studded eyepiece~
    &+WThis small eyepiece has tiny gems studded around it.  The most memorable
@@ -89,7 +89,7 @@ heavy pair mithril boots~
 ~
 9 15 3 0 10 0 0 65 64 0 0
 12 0 0 3 0 0 0 0
-6 15000 100
+6 15000 100 100
 E
 heavy pair mithril boots~
    &+cThese mithril boots are double-plated on all sides with magical
@@ -107,7 +107,7 @@ embroided leather harness~
 ~
 9 13 3 0 11 0 0 16778241 0 0 0
 5 0 0 3 0 0 0 0
-2 15659 100
+2 15659 100 100
 E
 embroided leather harness~
    &+yThis fine leather harness is quite large, and can be strapped across

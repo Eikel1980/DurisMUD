@@ -5,7 +5,7 @@ well fountain water basin~
 ~
 17 37 3 0 6 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 well fountain water basin~
    &+cThe well has been loosely built with large rounded granite
@@ -20,7 +20,7 @@ ration toe food iron~
 ~
 19 2 3 2 7 0 24 8404993 0 0 0
 8 0 0 0 0 0 0 0
-2 278 100
+2 278 100 100
 E
 ration toe food iron~
    &+wA large toe of an &+bOgre&+w has been severed and deep fried to a

@@ -8,8 +8,8 @@ ebriham horselord lord~
 &+wwith dark tanned skin.  His hair is braided for tradition and tied
 &+wwith the tails of a buffalo.&n
 ~
-67110920 256 0 8 0 0 0 1000 S
-PB 0 8 -1
+67110920 256 0 0 8 0 0 0 1000 S
+PB 0 8 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -22,8 +22,8 @@ horse steed mount ebriham~
 &+whorse is magnificent, with strong flanks and a coat of shiny white,
 &+wand truly a prised animal.&n
 ~
-134217738 0 0 0 0 0 0 0 S
-AE 0 1 -1
+134217738 0 0 0 0 0 0 0 0 S
+AE 0 1 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -36,8 +36,8 @@ horseman horse man ebriham~
 &+wHe towers over regular men and his stern face is covered with many
 &+wscars that he has gained over many years of battle.&n
 ~
-1140852746 256 0 8 0 0 0 1000 S
-PB 0 1 -1
+1140852746 256 0 0 8 0 0 0 1000 S
+PB 0 1 0 -1
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -50,8 +50,8 @@ ebriham sentinel guard~
 &+walways alert for the threat of danger that seems far too common here
 &+wwithin the Rogue Plains.&n
 ~
-67110922 32 0 8 0 0 0 1000 S
-PB 0 1 -1
+67110922 32 0 0 8 0 0 0 1000 S
+PB 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -64,8 +64,8 @@ scourge assassin~
 &+LPlains.  It slinks about the area, ready to put a knife into the back
 &+Lof anything living it can take back to its camp.&n
 ~
-1073743880 192 0 1048576 0 0 0 -1000 S
-U 0 8192 -1
+1073743880 192 0 0 1048576 0 0 0 -1000 S
+U 0 8192 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -78,8 +78,8 @@ dingo dog~
 &+ychasing after bugs and small rodents.  Usually quite harmless unless
 &+yprovoked.&n
 ~
-1073743880 0 0 0 0 0 0 -600 S
-A 0 1 -1
+1073743880 0 0 0 0 0 0 0 -600 S
+A 0 1 0 -1
 17 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -92,8 +92,8 @@ dodgehog dodge hog large~
 &+ya hedgehog, only covered with fur instead of spines, and considerably
 &+ylarger.&n
 ~
-1073743880 0 0 0 0 0 0 0 S
-A 0 1 -1
+1073743880 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -107,8 +107,8 @@ stray warg~
 &+yviciously attack the larger buffalo. Gobs of rank drool drop from
 &+ythe maws of this wild beast.&n
 ~
-2056 1 0 0 0 0 0 -1000 S
-A 0 1 -1
+2056 1 0 0 0 0 0 0 -1000 S
+A 0 1 0 -1
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -122,8 +122,8 @@ soldier imposing ebriham~
 &+wlong years of travel and battle and most likely the loss of his loved
 &+wones.&n
 ~
-1073743882 0 0 8 0 0 0 1000 S
-PB 0 2 -1
+1073743882 0 0 0 8 0 0 0 1000 S
+PB 0 2 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -135,8 +135,8 @@ horse steed mount ebriham~
 &+wOne of the strong, proud mounts of the horselords, this steed
 &+whas flanks rippling with muscle, and a coat a shining white.&n
 ~
-134219786 0 0 0 0 0 0 0 S
-AE 0 0 -1
+134219786 0 0 0 0 0 0 0 0 S
+AE 0 0 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -149,8 +149,8 @@ phantom ravager~
 &+Lmoves about with stealth that only the unliving can perform, dark,
 &+Llifeless eyes scanning for intruders.&n
 ~
-1073743880 192 0 8 0 0 0 -1000 S
-UP 0 2097152 -1
+1073743880 192 0 0 8 0 0 0 -1000 S
+UP 0 2097152 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -163,8 +163,8 @@ huge buffalo~
 &+yplains, this large, lumbering buffalo wanders the area to snack on
 &+ythe sparse bits of vegetation.&n
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 0 5
+2056 0 0 0 0 0 0 0 0 S
+A 0 0 0 5
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -177,8 +177,8 @@ lich warlock~
 &+Lonly does it possess some terrifying powers to use against its
 &+Lopponents, but it can also raise its fallen comrades.&n
 ~
-2058 192 0 8 0 0 0 -1000 S
-UL 0 131072 -1
+2058 192 0 0 8 0 0 0 -1000 S
+UL 0 131072 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -191,8 +191,8 @@ apprentice necromancer~
 &+Lthe ranks of the undead, and though he is newer and less skilled, he
 &+Lis still a dangerous foe.&n
 ~
-1073743880 192 0 0 0 0 0 -1000 S
-PH 0 1024 -1
+1073743880 192 0 0 0 0 0 0 -1000 S
+PH 0 1024 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -205,8 +205,8 @@ master necromancer~
 &+Ldead.  He is shrouded in a dark black cloak with a magenta trim, the
 &+Lcolours of the evil order.&n
 ~
-1140852746 192 0 0 0 0 0 -1000 S
-PH 0 1024 -1
+1140852746 192 0 0 0 0 0 0 -1000 S
+PH 0 1024 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -220,8 +220,8 @@ bog beast~
 &+Lthe bog here.  Mostly at least... As it also seems to have no problem
 &+Lfeeding off just about anything else, alive or dead.&n
 ~
-8 1 0 0 0 0 0 -1000 S
-AP 0 1 4
+8 1 0 0 0 0 0 0 -1000 S
+AP 0 1 0 4
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -234,8 +234,8 @@ tribal shaman~
 &+wthe area mending the injured, but maintains vigilance in case of any
 &+wincursion.&n
 ~
-1140852744 32 0 0 0 0 0 1000 S
-PB 0 256 -1
+1140852744 32 0 0 0 0 0 0 1000 S
+PB 0 256 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 6 6 2
@@ -249,8 +249,8 @@ acolyte~
 &+Lenough that he is on the verge. His prayers and rituals are his own
 &+Lway of insuring that after he dies, he will be born again in undeath.&n
 ~
-1140852746 64 0 0 0 0 0 -1000 S
-PH 0 512 -1
+1140852746 64 0 0 0 0 0 0 -1000 S
+PH 0 512 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -263,8 +263,8 @@ ebriham sentinel guard~
 &+walways alert for the threat of danger that seems far too common here
 &+wwithin the Rogue Plains.&n
 ~
-1140852746 32 0 8 0 0 0 1000 S
-PB 0 1 -1
+1140852746 32 0 0 8 0 0 0 1000 S
+PB 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 6 6 1
@@ -276,8 +276,8 @@ tribal shaman~
 &+wThis &+Bshaman&+w wanders the camp keeping an alert eye out for intruders,
 &+wwhile also helping her tribesman as an assistant to the witchdoctors.&n
 ~
-1140852744 32 0 0 0 0 0 1000 S
-PB 0 256 -1
+1140852744 32 0 0 0 0 0 0 1000 S
+PB 0 256 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -290,8 +290,8 @@ flesh fiend~
 &+rpieces of half-decayed corpses and carcasses have come together and
 &+rformed this hideous beast that thrives on flesh.&n
 ~
-1073743882 1 0 1048584 0 0 0 -1000 S
-AC 0 64 4
+1073743882 1 0 0 1048584 0 0 0 -1000 S
+AC 0 64 0 4
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -305,8 +305,8 @@ blood guard bloodguard demon legion~
 &+rinto this occupied area. Utterly ruthless and cunning, the demons make
 &+rthe bloodthirsty undead above look like saints.&n
 ~
-1073743882 1 0 402653208 0 0 536875008 -1000 S
-X 0 1 -1
+1073743882 1 0 0 402653208 0 0 536875008 -1000 S
+X 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -321,8 +321,8 @@ ebriham chieftain chief~
 &+wmany of the &+WEb&+wri&+Wham&+w he wears a look of deep sadness and concern over
 &+wthe welfare his people.&n
 ~
-67110922 32 0 136 0 0 0 1000 S
-PB 0 2 -1
+67110922 32 0 0 136 0 0 0 1000 S
+PB 0 2 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -335,8 +335,8 @@ arch necromancer archnecromancer~
 &+Lother undead warlocks and acolytes by his mastery over the necromantic
 &+Larts. He is as ruthless and as gruesome as they come.&n
 ~
-67110922 8 0 0 0 0 536879104 -1000 S
-UL 0 132096 4
+67110922 8 0 0 0 0 0 536879104 -1000 S
+UL 0 132096 0 4
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -349,8 +349,8 @@ warlock unholy chanting~
 &+Lhaunting voice.  His job is to help assist the archnecromancer and
 &+Lhelp with the assimilation of dark powers.&n
 ~
-1140852746 8 0 0 0 0 0 -1000 S
-UL 0 131072 -1
+1140852746 8 0 0 0 0 0 0 -1000 S
+UL 0 131072 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -363,8 +363,8 @@ sijona young woman~
 &+wShe seems thoughtful and murmurs something about the order before
 &+wturning to say hello.&n
 ~
-18442 0 0 0 0 0 0 0 S
-PH 0 512 -1
+18442 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -378,8 +378,8 @@ blood guard bloodguard demon~
 &+rinto this occupied area. Utterly ruthless and cunning, the demons make
 &+rthe bloodthirsty undead above look like saints.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-X 0 1 -1
+1073743880 1 0 0 0 0 0 0 -1000 S
+X 0 1 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -393,8 +393,8 @@ tribal advisor~
 &+wnot nearly as powerful as the chief himself, the advisor is still not
 &+wone to be trifled with.&n
 ~
-1140852746 32 0 0 0 0 0 1000 S
-PB 0 256 -1
+1140852746 32 0 0 0 0 0 0 1000 S
+PB 0 256 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -407,8 +407,8 @@ horseman horse man ebriham~
 &+wHe towers over regular men and his stern face is covered with many
 &+wscars that he has gained over many years of battle.&n
 ~
-1140852744 256 0 8 0 0 0 1000 S
-PB 0 1 -1
+1140852744 256 0 0 8 0 0 0 1000 S
+PB 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -422,8 +422,8 @@ hell hound hellhound~
 &+Lsmoke rises from its nostrils and the rank of burnt flesh surrounds
 &+Lit.&n
 ~
-1073743912 1 0 0 0 0 0 -1000 S
-EF 0 1 3
+1073743912 1 0 0 0 0 0 0 -1000 S
+EF 0 1 0 3
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -435,8 +435,8 @@ hand~
 &+LGhastly, all this is a floating hand, rising up out of the River
 &+Lof the Dead in an attempt to pull you under.&n
 ~
-10 1 0 1048576 0 0 0 -1000 S
-AP 0 64 2
+10 1 0 0 1048576 0 0 0 -1000 S
+AP 0 64 0 2
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -450,8 +450,8 @@ titan mediator~
 &+wbellows.&n &+W'How the medal of giantkind was lost is no matter,
 &+Wonly that we can get it back somehow.'&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-G 0 256 -1
+1140852746 0 0 0 0 0 0 0 0 S
+G 0 256 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -464,8 +464,8 @@ ebriham sentinel guard~
 &+walways alert for the threat of danger that seems far too common here
 &+wwithin the Rogue Plains.&n
 ~
-67110922 32 0 8 0 0 0 0 S
-PB 0 1 -1
+67110922 32 0 0 8 0 0 0 0 S
+PB 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -479,8 +479,8 @@ mabus general~
 &+rhas the only goal to destroy anything pure and cause chaos and
 &+rdestruction across the higher planes.&n
 ~
-68159498 1 0 0 0 0 0 -1000 S
-Y 0 16 5
+68159498 1 0 0 0 0 0 0 -1000 S
+Y 0 16 0 5
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -494,8 +494,8 @@ stray orc~
 &+wThe orc sighs heavily.
 &+W'I can't leave without taking enough meat back.'
 ~
-1073743884 0 0 8 0 0 0 0 S
-HO 0 256 -1
+1073743884 0 0 0 8 0 0 0 0 S
+HO 0 256 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -508,8 +508,8 @@ witch doctor witchdoctor~
 &+wshamanistic magics.  He is a trained medicine man and is one of the
 &+wsole healers within the Ebriham camp.&n
 ~
-67110922 0 0 0 0 0 0 1000 S
-PB 0 32 -1
+67110922 0 0 0 0 0 0 0 1000 S
+PB 0 32 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -524,8 +524,8 @@ old man sage~
 &+WMy feet ache so... I would almost trade my soul for some good
 &+Wboots.'&n
 ~
-2058 0 0 8 0 0 0 0 S
-PB 0 512 -1
+2058 0 0 0 8 0 0 0 0 S
+PB 0 512 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 5 1
@@ -538,8 +538,8 @@ legion fire bringer firebringer~
 &+rdangerous demons. He stands above the lesser bloodguards next to his
 &+rgeneral, surrounded by an aura of burning flames.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-X 0 512 -1
+2058 1 0 0 0 0 0 0 -1000 S
+X 0 512 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -552,8 +552,8 @@ draco dracolich~
 &+Wstarts to stretch it wings for the first time, howling a terrifying
 &+Wscreech. Its skeletal bones are almost bleach white. &n
 ~
-2058 64 0 8 0 0 0 -1000 S
-UD 0 1 -1
+2058 64 0 0 8 0 0 0 -1000 S
+UD 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -567,8 +567,8 @@ blood guard bloodguard demon~
 &+rinto this occupied area. Utterly ruthless and cunning, the demons make
 &+rthe bloodthirsty undead above look like saints.&n
 ~
-1073743882 1 0 24 0 0 603983872 -1000 S
-X 0 1 -1
+1073743882 1 0 0 24 0 0 603983872 -1000 S
+X 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -581,8 +581,8 @@ witch doctor witchdoctor~
 &+wEbriham camp. Without him and his counterparts many a wounded horseman
 &+wwould have been sent to the afterlife.&n
 ~
-67110920 0 0 0 0 0 0 1000 S
-PB 0 32 -1
+67110920 0 0 0 0 0 0 0 1000 S
+PB 0 32 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -595,8 +595,8 @@ cloud giant~
 &+ctitan mediator sits and listens, obviously nursing a painful headache caused by the entire
 &+csituation.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-G 0 16384 -1
+1140852746 0 0 0 0 0 0 0 0 S
+G 0 16384 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -608,8 +608,8 @@ storm giant~
 &+WThis giant won't stop arguing with the other giant, over silly pointless things no less. By
 &+Wa single look at the mediator, you can tell he wants nothing more than for them to shut up.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-G 0 1 -1
+1140852746 0 0 0 0 0 0 0 0 S
+G 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -622,8 +622,8 @@ lifebane master assassin~
 &+Ldangerous of all the undead assassins. Those that bear the mark of
 &+Llifebane are master killers and extremely dangerous.&n
 ~
-1073743880 0 0 1572880 0 0 0 -1000 S
-U 0 8192 -1
+1073743880 0 0 0 1572880 0 0 0 -1000 S
+U 0 8192 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -633,8 +633,8 @@ soul reaper~
 &+LA &+wsoul&+L reaper stands here, overseeing the &+Wbone yard&+L.
 ~
 ~
-1073743882 0 0 268435466 0 0 0 -1000 S
-UG 0 1536 -1
+1073743882 0 0 0 268435466 0 0 0 -1000 S
+UG 0 1536 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -644,8 +644,8 @@ hill giant~
 &+WA massive &+yhill&+W giant gathers here.&n
 ~
 ~
-1073743880 0 0 8 0 0 0 0 S
-G 0 1 -1
+1073743880 0 0 0 8 0 0 0 0 S
+G 0 1 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -655,8 +655,8 @@ storm giant~
 &+WA huge &+ws&+Wt&+wo&+Wr&+wm&+W giant wanders the summit.&n
 ~
 ~
-1073743880 0 0 8 0 0 0 0 S
-G 0 16384 -1
+1073743880 0 0 0 8 0 0 0 0 S
+G 0 16384 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -666,8 +666,8 @@ cloud giant~
 &+WA huge &+ccloud&+W giant has come here for the gathering.&n
 ~
 ~
-1073743880 0 0 8 0 0 0 0 S
-G 0 1 -1
+1073743880 0 0 0 8 0 0 0 0 S
+G 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -679,8 +679,8 @@ tumble weed tumbleweed~
 &+ySimple a loose ball of vines and weeds, this plant rolls across
 &+ythe plains drifting by the wind.&n
 ~
-8 0 0 0 0 0 0 0 S
-VT 0 1 2
+8 0 0 0 0 0 0 0 0 S
+VT 0 1 0 2
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -693,8 +693,8 @@ phantom ravager~
 &+Lmoves about with stealth that only the unliving can perform, dark,
 &+Llifeless eyes scanning for intruders.&n
 ~
-1073743880 192 0 8 0 0 0 -1000 S
-UG 0 64 -1
+1073743880 192 0 0 8 0 0 0 -1000 S
+UG 0 64 0 -1
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -707,8 +707,8 @@ lich warlock~
 &+Lonly does it possess some terrifying powers to use against its
 &+Lopponents, but it can also raise its fallen comrades.&n
 ~
-67110920 192 0 8 0 0 0 -1000 S
-UL 0 131072 -1
+67110920 192 0 0 8 0 0 0 -1000 S
+UL 0 131072 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -721,8 +721,8 @@ air huge elemental~
 &+celemental of this size. It wanders this strange transit point before
 &+creturning to the plane of air.&n
 ~
-1140852744 0 0 134217728 0 0 0 0 S
-EA 0 1 -1
+1140852744 0 0 0 134217728 0 0 0 0 S
+EA 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -732,8 +732,8 @@ wind sylph~
 &+cA frolicking &+Cwind&+c sylph flies around here.&n
 ~
 ~
-1140852744 0 0 134217736 0 0 0 0 S
-HF 0 512 -1
+1140852744 0 0 0 134217736 0 0 0 0 S
+HF 0 512 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -745,8 +745,8 @@ wind walker windwalker~
 &+cBarely a actual, substantial form, this being wanders the layer of cloudscape in a sort of
 &+cexile from whatever land he comes from. His entire form shimmers with a luminescent glow.&n
 ~
-1140852744 0 0 134217738 0 0 0 0 S
-UG 0 33554432 -1
+1140852744 0 0 0 134217738 0 0 0 0 S
+UG 0 33554432 0 -1
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -756,8 +756,8 @@ majestic griffon~
 &+WA large, ma&+Cjes&+ctic &+Wgrif&+Yfon&+W flies here.&n
 ~
 ~
-1140852744 0 0 134217736 0 0 0 0 S
-D 0 2 4
+1140852744 0 0 0 134217736 0 0 0 0 S
+D 0 2 0 4
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -770,8 +770,8 @@ air elemental~
 &+cit was finished its service for its temporary master, it has come here
 &+cbefore returning back to the plane of air.&n
 ~
-1140852744 0 0 134217728 0 0 0 0 S
-EA 0 1 -1
+1140852744 0 0 0 134217728 0 0 0 0 S
+EA 0 1 0 -1
 44 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -781,8 +781,8 @@ djinn wind talker windtalker~
 &+cA powerful djinn, known as the windtalker, wanders here.&n
 ~
 ~
-1140869640 0 0 135790618 0 0 0 0 S
-EA 0 33554560 4
+1140869640 0 0 0 135790618 0 0 0 0 S
+EA 0 33554560 0 4
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -796,8 +796,8 @@ keva hunter~
 &+gShe spends most her time travelling solo, working always for
 &+gthe cause of balance, very rarely settling down for long.
 ~
-1073760268 0 0 0 0 0 0 0 S
-PH 0 2 -1
+1073760268 0 0 0 0 0 0 0 0 S
+PH 0 2 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2

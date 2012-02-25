@@ -5,7 +5,7 @@ An &+yoaken key lies here.~
 ~
 18 5 1 1 7 0 8388608 16385 64 0 0
 2 0 0 0 0 0 0 0
-2 1 100
+2 1 100 0
 E
 oaken key~
 The key is small, and made from solid oak. It has many tiny runes carved
@@ -18,7 +18,7 @@ ancient desk~
 ~
 15 6 3 0 7 0 0 0 64 0 0
 1000 29 5702 100 0 0 0 0
-1 1 100
+1 1 100 0
 E
 desk~
 The desk is very beautiful, with dozens of intricate designs carved into
@@ -32,7 +32,7 @@ A &+Gtiny green-glowing metallic loop&n lies here.~
 ~
 18 15 1 1 7 0 8388608 16389 64 0 0
 2 0 0 0 0 0 0 0
-2 10 100
+2 10 100 0
 E
 loop green metallic~
 The loop is about an inch around in diameter and shaped into a perfect
@@ -46,7 +46,7 @@ dryad charm~
 ~
 8 15 0 0 7 0 0 5 64 0 0
 0 0 0 0 0 0 0 0
-1 5722 100
+1 5722 100 0
 E
 dryad charm~
 The charm looks like a tiny butterfly attached to a small nose-clip so that
@@ -65,7 +65,7 @@ silver coins~
 ~
 20 22 1 0 7 0 0 1 0 0 0
 0 250 0 0 0 0 0 0
-3 1 100
+3 1 100 0
 #5705
 wooden dresser~
 &+ya wooden dresser~
@@ -73,7 +73,7 @@ wooden dresser~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 5 -1 100 0 0 0 0
-1 1 100
+1 1 100 0
 E
 wooden dresser~
 The dresser is about three feet long and has a large drawer that can
@@ -86,7 +86,7 @@ dryad's garment~
 ~
 9 3 0 0 7 0 8192 9 66 0 0
 6 3 1 3 0 0 0 0
-4 582 100
+4 582 100 0
 E
 dryad's garment~
 This elegant garment is the length of a short dress coming to the knees,
@@ -102,7 +102,7 @@ leather pouch~
 ~
 15 13 3 3 7 0 4096 16385 0 0 0
 25 5 -1 15 0 0 0 0
-2 12 100
+2 12 100 0
 #5708
 tiny ruby~
 &+ra tiny ruby~
@@ -110,7 +110,7 @@ tiny ruby~
 ~
 8 31 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 892 100
+1 892 100 0
 #5709
 water pool~
 &+Ba pool of water.~
@@ -118,7 +118,7 @@ water pool~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 0
 #5710
 old silver long sword~
 &+Wan old silver longsword~
@@ -126,7 +126,7 @@ old silver long sword~
 ~
 5 22 3 10 7 0 0 8193 64 0 0
 5 1 8 3 0 0 0 0
-5 224 100
+5 224 100 0
 #5711
 beautiful forest green dryad's gown~
 &+ga beautiful forest green dryad's gown~
@@ -134,7 +134,7 @@ beautiful forest green dryad's gown~
 ~
 9 3 0 0 7 0 9216 9 66 33685984 0
 12 3 1 3 0 0 0 0
-0 10322 100
+0 10322 100 0
 E
 beautiful forest green dryad's gown~
 The gown is exquisite looking, made from silk-like fibers all sewn together
@@ -153,7 +153,7 @@ wooden club~
 ~
 5 6 3 8 7 0 0 8193 0 0 0
 10 1 8 7 0 0 0 0
-10 82 100
+10 82 100 0
 A
 18 -1
 A
@@ -165,7 +165,7 @@ tiny golden earring~
 ~
 11 24 1 1 7 0 0 524289 64 0 0
 0 0 0 0 0 0 0 0
-1 6221 100
+1 6221 100 0
 E
 tiny golden earring~
 The earring is simply a tiny golden stud with a clip to fit very small ears.
@@ -182,7 +182,7 @@ tiny dagger~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-2 62 100
+2 62 100 0
 A
 18 2
 #5715
@@ -192,7 +192,7 @@ tiny wooden cane~
 ~
 12 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 55 100
+1 55 100 0
 E
 tiny wooden cane~
 It is small, about two feet long, and quite thin. Something about it is
@@ -209,7 +209,7 @@ potion dark _id_~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 50 3 -1 -1 0 0 0 0
-2 2000 100
+2 2000 100 0
 E
 _id_name_~
 potion flying
@@ -225,7 +225,7 @@ potion brown murky _id_~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 1 1 -1 -1 0 0 0 0
-2 644 100
+2 644 100 0
 E
 _id_name_~
 potion armor
@@ -241,7 +241,7 @@ potion blue thick _id_~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 20 16 -1 -1 0 0 0 0
-2 1394 100
+2 1394 100 0
 E
 _id_name_~
 potion curing
@@ -257,7 +257,7 @@ water holy vial~
 ~
 17 40 1 2 7 0 0 1 66 0 0
 5 5 17 0 0 0 0 0
-6 989 100
+6 989 100 0
 #5720
 silverish glowing scimitar~
 &+Ca glowing silverish scimitar~
@@ -265,7 +265,7 @@ silverish glowing scimitar~
 ~
 5 16 3 10 7 0 8192 8193 66 4165209604 0
 9 2 8 3 0 0 0 0
-8 89238 100
+8 89238 100 0
 E
 silverish glowing scimitar~
 The silverish blade makes a gradual curve, and is about three feet in
@@ -284,7 +284,7 @@ decorated leather eyepatch~
 ~
 9 13 3 0 7 10 8192 131073 64 0 0
 1 12 2 3 0 0 0 0
-1 553 100
+1 553 100 0
 A
 18 3
 #5722
@@ -294,7 +294,7 @@ broken cart~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 0
 E
 broken cart~
 The cart looks about a thousand years old, with rotting out wood and
@@ -309,7 +309,7 @@ tiny porous stone~
 ~
 12 11 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 25 100
+1 25 100 0
 E
 porous stone~
 The stone is completely black in color and covered with tiny holes. Its
@@ -324,7 +324,7 @@ water tiny stream~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 0
 E
 tiny stream~
 The stream is small, but its waters look very clear, definitely clean enough
@@ -338,7 +338,7 @@ dresser~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 5 -1 100 0 0 0 0
-1 1 100
+1 1 100 0
 #5726
 beautiful silken dress~
 &+ca beautiful silken dress~
@@ -346,7 +346,7 @@ beautiful silken dress~
 ~
 11 3 3 8 7 0 8192 9 0 0 0
 0 0 0 4 0 0 0 0
-3 822 100
+3 822 100 0
 E
 beautiful silken dress~
 This beautiful dress is full length, made from pure silk woven together
@@ -360,7 +360,7 @@ small silver dagger~
 ~
 5 22 2 3 7 0 0 8193 64 4194697632 0
 2 1 5 11 0 0 0 0
-2 734 100
+2 734 100 0
 A
 18 2
 A
@@ -372,7 +372,7 @@ ale flagon wine~
 ~
 17 9 0 0 7 0 0 16385 0 0 0
 9 9 3 0 0 0 0 0
-12 32 100
+12 32 100 0
 #5729
 muddy boots~
 &+ya pair of muddy boots~
@@ -380,7 +380,7 @@ muddy boots~
 ~
 9 3 3 8 7 0 8192 65 0 0 0
 4 6 1 3 0 0 0 0
-4 82 100
+4 82 100 0
 #5730
 potion clear _id_~
 &+ca clear potion&n~
@@ -388,7 +388,7 @@ potion clear _id_~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 20 43 -1 -1 0 0 0 0
-2 3243 100
+2 3243 100 0
 E
 _id_short_~
 &+ca potion of detect invisibility&n
@@ -404,7 +404,7 @@ A huge helmet lies here, with a extremely long horn protruding from the top.~
 ~
 9 19 4 0 13 75 99328 134217729 64 85458945 0
 6 22 1 4 0 0 0 0
-13 23100 100
+13 23100 100 0
 E
 _id_desc_~
    horned helmet
@@ -422,7 +422,7 @@ a huge battle-axe radiates might and power.~
 ~
 5 19 3 0 11 80 16844040 8193 0 85458945 4096
 1 3 4 3 0 0 0 0
-18 16000 100
+18 16000 100 0
 E
 _id_name_~
 battle-axe
@@ -438,7 +438,7 @@ A longsword lies here.~
 ~
 5 16 3 0 7 40 4195328 8193 0 85458945 0
 13 2 6 3 0 0 0 0
-10 3000 100
+10 3000 100 0
 E
 _id_name_~
 longsword
@@ -450,7 +450,7 @@ Some ceremonial robes lie here.~
 ~
 9 3 4 0 5 30 536870912 1025 0 0 0
 1 9 1 2 0 0 0 0
-4 200 100
+4 200 100 0
 E
 _id_name_~
 robes
@@ -464,7 +464,7 @@ vest fishing~
 ~
 15 15 3 0 7 0 134217728 1025 0 0 0
 100 5 0 100 0 0 0 0
-0 253 100
+0 253 100 0
 A
 17 -3
 #5736
@@ -474,7 +474,7 @@ A huge heap of decomposing carcass, foliage, and crushed bones forms a nest  of 
 ~
 15 30 6 100 2 0 33554433 0 0 0 0
 1000 0 0 1000 0 0 0 0
-500 1 100
+500 1 100 0
 E
 nest heap pile~
    This huge steaming pile of rotting organic material smells incredibly,
@@ -489,7 +489,7 @@ amulet rotting flesh~
 ~
 3 2 8 0 7 0 201396224 8404997 64 0 0
 41 2 2 82 0 0 0 0
-1 500 100
+1 500 100 0
 E
 piece flesh rotting~
    This piece of &+rrotting&+R flesh&n has been formed in the form of an
@@ -506,7 +506,7 @@ potion grey dark~
 ~
 10 7 2 0 7 0 134287360 1 0 0 0
 20 221 -1 -1 0 0 0 0
-1 3000 100
+1 3000 100 0
 E
 potion grey dark~
    A glass ampoule with dark grey bubbling liquid inside. Quaffing it might be not
@@ -519,7 +519,7 @@ potion grey dark~
 ~
 10 7 2 0 7 0 134287360 1 0 0 0
 20 204 -1 -1 0 0 0 0
-1 3000 100
+1 3000 100 0
 E
 potion grey dark~
    A glass ampoule with dark grey bubbling liquid inside. Drinking it might be not
@@ -532,7 +532,7 @@ potion grey dark~
 ~
 10 7 2 0 7 0 134287360 1 0 0 0
 20 4 17 -1 0 0 0 0
-1 3000 100
+1 3000 100 0
 E
 potion grey dark~
    A glass ampoule with dark grey bubbling liquid inside.  It might be not
@@ -545,7 +545,7 @@ potion grey dark~
 ~
 10 7 2 0 7 0 134287360 1 0 0 0
 20 27 93 93 0 0 0 0
-1 3000 100
+1 3000 100 0
 E
 potion grey dark~
    A glass ampoule with dark grey bubbling liquid inside. It might be not
@@ -558,7 +558,7 @@ potion grey dark~
 ~
 10 7 2 0 7 0 134287360 1 0 0 0
 20 243 243 243 0 0 0 0
-1 3000 100
+1 3000 100 0
 E
 potion grey dark~
    A glass ampoule with dark grey bubbling liquid inside. It might be not
@@ -571,7 +571,7 @@ a pool of vomit~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 50 50 9 0 0 0 0 0
-0 0 100
+0 0 100 0
 E
 vomit pool puke~
 &+W   Little chunks of food float serenely through the vomit, happy at having&n
@@ -584,7 +584,7 @@ A carrot peeler lies here forgotten.~
 ~
 5 15 2 1 7 0 0 8193 0 0 0
 2 1 5 11 0 0 0 0
-1 125 100
+1 125 100 0
 E
 peeler carrot~
 An iron carrot peeler, used for peeling carrots of all things.
@@ -596,7 +596,7 @@ A cheese grater lies here abandoned.~
 ~
 5 15 2 1 7 0 0 8193 0 0 0
 18 1 4 3 0 0 0 0
-1 244 100
+1 244 100 0
 E
 grater cheese~
 This iron cheese grater would make a decent weapon in an emergency.
@@ -608,7 +608,7 @@ A crusty ladel lies here, left to rust.~
 ~
 5 15 3 1 7 0 0 8193 0 0 0
 10 1 4 7 0 0 0 0
-1 95 100
+1 95 100 0
 E
 crusty~
 This ladel looks like it hasn't been washed in days.
@@ -620,7 +620,7 @@ A large wooden spoon has been left behind.~
 ~
 5 6 2 1 7 0 0 8193 0 0 0
 10 1 6 6 0 0 0 0
-1 400 100
+1 400 100 0
 E
 spoon large wooden~
 This spoon would probably leave a mean bruise if you were struck with it.
@@ -632,7 +632,7 @@ Some yellow gloves lie here forgotten~
 ~
 9 49 3 3 6 0 0 129 0 0 0
 4 7 0 2 0 0 0 0
-3 450 100
+3 450 100 0
 E
 yellow dish washing gloves dishwashing~
 These gloves keep your hands from getting pruny while you wash dishes.
@@ -646,7 +646,7 @@ a target~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 0
 E
 target bulls-eye red white~
 &+W   This target has many nicks and cuts from having numerous throwing knives and&n
@@ -660,7 +660,7 @@ A waittress's tip jar lies here abandoned.~
 ~
 15 7 2 3 7 0 4096 16385 0 0 0
 15 5 0 15 0 0 0 0
-3 1540 100
+3 1540 100 0
 E
 tip jar waittresses~
 This jar is where the waittress keeps her tips.
@@ -672,7 +672,7 @@ Some polar bear fur underwear lies here abandoned.~
 ~
 9 12 3 4 7 0 0 2049 0 0 0
 2 10 0 3 0 0 0 0
-4 2521 100
+4 2521 100 0
 E
 polar bear fur underwear~
 This underwear would be great on those cooooold nights in bed.
@@ -686,7 +686,7 @@ A crusty loincloth lies here forgotten, and by the way it reeks it'll stay that 
 ~
 9 12 3 3 3 0 0 2049 0 0 0
 2 10 0 1 0 0 0 0
-3 12 100
+3 12 100 0
 E
 crusty loincloth loin cloth~
 Crusty and moldy, with what you probably don't want to know...
@@ -700,7 +700,7 @@ A ceremonial whip lies coiled here.~
 ~
 5 14 3 2 9 0 0 8193 0 0 0
 14 1 6 2 0 0 0 0
-2 24800 100
+2 24800 100 0
 E
 whip ceremonial~
 This whip looks like its used more for ceremony than as an actual weapon.
@@ -714,7 +714,7 @@ A skirt woven of reed lies here~
 ~
 9 42 3 2 7 0 0 33 0 0 0
 2 5 0 1 0 0 0 0
-2 2636 100
+2 2636 100 0
 E
 skirt woven reed reeds~
 This skirt is woven from weeds, probably shouldnt be smoking while you wear it.
@@ -728,7 +728,7 @@ A gold ring has been left here, decorated with rubies~
 ~
 9 24 3 2 12 0 0 3 0 0 0
 2 1 0 2 0 0 0 0
-2 88545 100
+2 88545 100 0
 E
 ring rubies gold~
 This ring is very ornate, with lots of inlaid gems.
@@ -744,7 +744,7 @@ A broom of straw lies here deserted.~
 ~
 5 5 3 5 5 0 0 24577 0 0 0
 10 1 5 7 0 0 0 0
-5 850 100
+5 850 100 0
 E
 broom straw~
 This broom has seen many floors go from dirty to clean.
@@ -756,7 +756,7 @@ A scimitar lies here, blade coloured green.~
 ~
 5 15 3 8 7 0 1024 8193 0 95977499 1
 5 2 6 3 0 0 0 0
-8 23443 100
+8 23443 100 0
 E
 green bladed scimitar green-bladed~
 This scimitars blade is tinted green, perhaps there is a flaw in the iron.
@@ -770,7 +770,7 @@ a sign~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 0
 E
 sign~
 &+y              ___              &n
@@ -789,7 +789,7 @@ A long stiletto made of silver lies here.~
 ~
 5 22 3 5 13 0 16777232 8193 1 4194697696 0
 2 2 4 11 0 0 0 0
-5 65215 100
+5 65215 100 0
 E
 silver stiletto long~
 This stiletto has probably slit more throats than the person wielding it has.
@@ -805,7 +805,7 @@ A pair of dwarf-skin slippers lies here abandoned.~
 ~
 9 12 3 6 9 0 1024 65 0 8515584 0
 1 6 0 3 0 0 0 0
-6 45871 100
+6 45871 100 0
 E
 slippers padded dwarf skin dwarf-skin~
 These slippers are stitched together from pieces of dwarven flesh.
@@ -821,7 +821,7 @@ A pair of blood-red demonskin boots lies here.~
 ~
 9 47 3 8 14 0 4096 65 0 0 0
 10 6 0 5 0 0 0 0
-8 154476 100
+8 154476 100 0
 E
 boots blood red blood-red demonskin~
 These boots fit like a glove, perhaps because of their magical origin.
@@ -837,7 +837,7 @@ A massive iron sledge has been deserted here.~
 ~
 5 15 3 15 12 0 4195328 8193 0 95993883 0
 4 6 4 6 0 0 0 0
-15 86312 100
+15 86312 100 0
 E
 sledge massive iron~
 A person could put a mean hurt on someone with this hammer.
@@ -853,7 +853,7 @@ A large oaken club lies here abandonded.~
 ~
 5 6 3 6 5 0 0 8193 0 0 0
 10 1 10 7 0 0 0 0
-18 4463 100
+18 4463 100 0
 E
 club oaken shillelagh~
 A long piece of wood with a knobbed end.
@@ -867,7 +867,7 @@ Some dark wool robes lie in a heap here.~
 ~
 9 3 3 4 7 0 0 9 0 0 0
 2 3 1 2 0 0 0 0
-8 26451 100
+8 26451 100 0
 E
 dark wool robes~
 These robes are quite warm, they seem to insulate very well.
@@ -881,7 +881,7 @@ Some sleeves of duergar-skin lie here.~
 ~
 9 12 3 5 7 0 0 257 0 0 0
 6 8 54 3 0 0 0 0
-8 18423 100
+8 18423 100 0
 E
 sleeves patched duergar duergar-skin skin~
 An inscription on the sleeves read: 'duergar skinned live and dipped in salt'
@@ -895,7 +895,7 @@ A necklace lies forgotten here.~
 ~
 9 22 3 5 12 0 0 5 1 0 0
 3 2 1 2 0 0 0 0
-5 90254 100
+5 90254 100 0
 E
 silver rope necklace~
 This silver rope necklace probably sells for a lot of money.
@@ -911,7 +911,7 @@ A wire mesh eyepatch has been left behind.~
 ~
 9 15 3 2 7 0 0 131073 0 0 0
 3 12 4 1 0 0 0 0
-2 2464 100
+2 2464 100 0
 E
 wire mesh eyepatch~
 This eyepatch could keep large objects from striking your eyes, but it won't
@@ -926,7 +926,7 @@ An archer's wrist guard has been abandoned here.~
 ~
 9 14 3 4 7 0 0 4097 0 0 0
 4 11 10 3 0 0 0 0
-4 5328 100
+4 5328 100 0
 E
 archer archers wrist guard~
 This archers guard is designed to keep the bowstring from chafing against your
@@ -941,7 +941,7 @@ A fuzzy suede hat has been left to rot.~
 ~
 9 3 3 1 7 0 0 17 0 0 0
 2 4 31 1 0 0 0 0
-1 23423 100
+1 23423 100 0
 E
 fuzzy suede hat~
 Might look nice on a bard, but any self-respecting person would rather wear
@@ -956,7 +956,7 @@ A multi-coloured jersey lies in a heap here.~
 ~
 9 3 3 3 8 0 0 9 0 0 0
 3 3 1 2 0 0 0 0
-5 2632 100
+5 2632 100 0
 E
 multi coloured multi-coloured rugged green blue jersey~
 This jersey is in the team colours of a local rugby team.
@@ -970,7 +970,7 @@ Some fishnet stockings lie here forgotten.~
 ~
 9 3 3 1 7 0 0 33 0 0 0
 1 5 1 1 0 0 0 0
-1 356 100
+1 356 100 0
 E
 fish net fishnet stockings~
 These stockings would make a great emergency fishing kit.
@@ -984,7 +984,7 @@ An earring of jade and emerald lies abandoned.~
 ~
 9 32 3 2 7 0 0 524289 0 0 0
 5 14 0 2 0 0 0 0
-3 45476 100
+3 45476 100 0
 E
 earring jade emerald~
 This beautiful earring will probably sell for quite alot of money.
@@ -996,7 +996,7 @@ A belt of prianha-hide lies here.~
 ~
 9 12 3 2 8 0 0 2049 0 0 0
 5 10 0 3 0 0 0 0
-3 22342 100
+3 22342 100 0
 E
 piranha hide piranha-hide belt~
 Very difficult to acquire, these belts are made from the skin of a dangerous
@@ -1011,7 +1011,7 @@ A dirty ale flagon lies in the dust.~
 ~
 17 7 3 3 5 0 0 8404993 0 0 0
 8 3 5 0 0 0 0 0
-5 634 100
+5 634 100 0
 E
 dirty ale flagon~
 This flagon hasnt been washed in the last few days.
@@ -1023,7 +1023,7 @@ Some dented steel platemail lies here.~
 ~
 9 16 3 12 7 0 0 9 0 4165287492 0
 12 3 1 4 0 0 0 0
-18 22353 80
+18 22353 80 0
 E
 dented steel platemail~
 This platemail looks as if it was enchanted at one time, but that either the
@@ -1038,7 +1038,7 @@ A large pick-axe lies here forgotten.~
 ~
 5 15 3 10 7 0 4195328 1 0 96071707 0
 15 2 5 11 0 0 0 0
-15 5343 100
+15 5343 100 0
 E
 large pick axe pick-axe~
 Great for breaking rock apart, or splitting someones head like a grapefruit.
@@ -1050,7 +1050,7 @@ A steel and silver earring lies here abandoned.~
 ~
 9 16 3 2 7 0 0 524289 1 0 0
 2 14 0 2 0 0 0 0
-3 33325 100
+3 33325 100 0
 E
 steel silver earring~
 This earring looks functional yet decorative.
@@ -1064,7 +1064,7 @@ A mask of sewn burlap lies here.~
 ~
 9 3 3 1 7 0 0 262145 0 0 0
 5 13 1 1 0 0 0 0
-2 254 100
+2 254 100 0
 E
 mask sewn burlap~
 This mask is reserved for people who look better with it covering their face...
@@ -1078,7 +1078,7 @@ A scarf of lizard-skin lies here.~
 ~
 9 47 3 2 7 0 0 5 0 0 0
 3 2 1 2 0 0 0 0
-3 11421 100
+3 11421 100 0
 E
 scarf lizard skin lizard-skin~
 Stylish yet practical, this scarf is a very snazzy item.
@@ -1092,7 +1092,7 @@ A helm lies here, made of spiked wormskin.~
 ~
 9 47 3 5 7 0 0 17 0 0 0
 8 4 254 4 1 0 0 0
-8 23452 100
+8 23452 100 0
 E
 spiked worm skin wormskin helm~
 This helm may work really well, but it stinks like hell!
@@ -1106,7 +1106,7 @@ A can of paint thinner lies here waiting to be picked up.~
 ~
 17 15 3 3 7 0 0 16385 0 0 0
 22 22 27 1 0 0 0 0
-4 4138 100
+4 4138 100 0
 E
 can paint thinner~
 This can of paint thinner is for cleaning up mistakes, or changing the
@@ -1119,7 +1119,7 @@ A paddle for stirring paint lies here.~
 ~
 5 6 3 3 7 0 0 8193 0 0 0
 10 1 7 7 0 0 0 0
-4 3723 100
+4 3723 100 0
 E
 paddle paint stirring~
 This paddle is designed for stirring paint, but it would probably hurt real
@@ -1132,7 +1132,7 @@ A small key lies here, glinting in the light.&n~
 ~
 18 36 10 0 14 10 8454144 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 15000 100
+2 15000 100 0
 E
 _id_short_~
 &+LA key to the upper rooms&n
@@ -1144,7 +1144,7 @@ sword shortsword~
 ~
 5 15 2 0 15 20 1025 24577 2 96059403 16384
 9 3 5 11 0 0 0 0
-4 11233 100
+4 11233 100 0
 A
 18 1
 A
@@ -1156,7 +1156,7 @@ sword obsidian~
 ~
 5 36 3 0 13 10 1025 24577 0 93974545 0
 5 3 4 3 0 0 0 0
-5 10222 100
+5 10222 100 0
 A
 18 2
 A
@@ -1168,7 +1168,7 @@ crimon hilted stiletto~
 ~
 5 19 3 0 14 0 50331648 24577 66 0 0
 2 2 4 11 0 0 0 0
-4 9912 100
+4 9912 100 0
 A
 18 1
 A
@@ -1180,7 +1180,7 @@ An old sign, eroded by years of abandonment lies here covered by &+gwild shrubbe
 ~
 12 15 3 0 7 0 5120 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 0
 E
 sign~
          ________________________________
@@ -1201,7 +1201,7 @@ black wall~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 5940 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 0
 #5789
 white wall~
 &+Wa bright white wall of light~
@@ -1209,7 +1209,7 @@ white wall~
 ~
 25 15 3 0 7 0 263169 0 64 0 0
 5938 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 0
 #5790
 serpent staff~
 the &+Ystaff&N of the &+Gserpent&N~
@@ -1217,7 +1217,7 @@ A long &+Gsnake&N-like object lies here &+Lhissing&N at you.~
 ~
 4 15 3 0 7 0 33563648 16385 64 256 0
 40 1 1 197 0 0 0 0
-5 10000 100
+5 10000 100 0
 E
 serpent staff~
 This object seems to be divided into two parts: the upper half is a coiling,
@@ -1231,7 +1231,7 @@ chamelion dagger~
 ~
 5 22 2 0 11 0 100696096 8193 64 0 0
 2 2 3 11 0 0 0 0
-1 100000 100
+1 100000 100 0
 E
 chamelion dagger~
 &+GThis weapon does it's best to try to elude your vision. Upon contact with
@@ -1249,7 +1249,7 @@ darkened dagger~
 ~
 5 15 2 0 15 0 100663600 8193 0 0 0
 2 2 2 11 0 0 0 0
-0 5347 100
+0 5347 100 0
 E
 darkened dagger~
 &+LThis dagger is darker than any dagger you have ever seen. It seems to
@@ -1264,7 +1264,7 @@ An attractive strip of &+bbluish&+w metal&N lies here wasting away.~
 ~
 8 15 3 0 7 0 8458241 1 0 0 0
 0 0 0 0 0 0 0 0
-0 300 100
+0 300 100 0
 E
 strip metal~
 &+wThis bizarre metal has been well polished and finely crafted. Its perfect
@@ -1278,7 +1278,7 @@ An attractive strip of &+bbluish-&+Ggreen&+w metal&N lies here wasting away.~
 ~
 8 15 3 0 7 0 8458241 1 0 0 0
 0 0 0 0 0 0 0 0
-0 300 100
+0 300 100 0
 E
 strip metal~
 &+wThis bizarre metal has been well polished and finely crafted. Its perfect
@@ -1292,7 +1292,7 @@ An attractive strip of &+Ggreenish&+w metal&N lies here wasting away.~
 ~
 8 15 3 0 7 0 8458241 1 0 0 0
 0 0 0 0 0 0 0 0
-0 300 100
+0 300 100 0
 E
 strip metal~
 &+wThis bizarre metal has been well polished and finely crafted. Its perfect
@@ -1306,7 +1306,7 @@ golden key~
 ~
 18 15 3 0 7 0 8388608 5 0 0 0
 0 0 0 0 0 0 0 0
-0 250 100
+0 250 100 0
 #5797
 broom~
 an old dirty broom~
@@ -1314,7 +1314,7 @@ An old dirty broom lies here, neglected.~
 ~
 13 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 0
 #5798
 panel~
 &+La well concealed panel~
@@ -1322,7 +1322,7 @@ panel~
 ~
 15 15 3 0 7 0 5120 0 0 0 0
 50 29 5796 100 0 0 0 0
-0 1 100
+0 1 100 0
 E
 panel~
 A finely stylized wood comprises the face of this seamless panel. A small
@@ -1335,7 +1335,7 @@ A seemingly empty crystal vial lies here, looking cute.~
 ~
 10 15 3 0 7 0 8454144 1 64 0 0
 50 -1 44 -1 0 0 0 0
-1 2532 100
+1 2532 100 0
 E
 potion vial~
 &+wThe "liquid" swirling inside the vial appears to be more of a thick air
@@ -1349,7 +1349,7 @@ bottle potion oil ethereal~
 ~
 10 15 3 0 7 0 8454144 1 64 0 0
 45 5 -1 -1 3000 0 0 0
-1 10000 100
+1 10000 100 0
 E
 bottle potion~
 &+LThis bottle quivers and strains to contain the minature eruptions within.
@@ -1363,7 +1363,7 @@ stone plate platemail plates~
 ~
 9 11 3 50 7 0 604111872 9 0 85458969 0
 50 3 1 5 0 0 0 0
-30 15000 100
+30 15000 100 0
 E
 stone plate platemail plates~
 &+wWell carved and polished stone plates are attached to high quality
@@ -1378,7 +1378,7 @@ stone shield round~
 ~
 37 11 3 0 7 0 1024 513 0 85458953 0
 2 1 3 144 5 0 0 0
-15 5000 100
+15 5000 100 0
 E
 stone shield round~
 This is a large, round stone shield. There is nothing else of interest
@@ -1391,7 +1391,7 @@ small satchel~
 ~
 15 3 3 0 10 0 102528 2049 0 0 0
 50 5 0 100 0 0 0 0
-1 43364 100
+1 43364 100 0
 A
 10 -10
 A
@@ -1403,7 +1403,7 @@ parchment~
 ~
 13 2 3 0 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 5 100
+0 5 100 0
 E
 parchment~
 &+W   ****************************
@@ -1425,7 +1425,7 @@ A very shiny silverish sword with a blue aura lies here.~
 ~
 5 22 3 5 15 0 4293633 8193 65 95993883 0
 13 4 7 3 0 0 0 0
-3 87645 100
+3 87645 100 0
 A
 18 3
 A
@@ -1437,7 +1437,7 @@ A golden hilt with runic inscriptions lies here.~
 ~
 8 24 3 0 14 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 19337 100
+0 19337 100 0
 E
 golden hilt~
 &+YThis golden hilt is inscribed with runic writing you cannot understand.
@@ -1450,7 +1450,7 @@ A small bulb lies here, slowely trying to bury itself.~
 ~
 15 43 3 0 7 0 8499200 16385 0 0 0
 5 0 0 5 0 0 0 0
-0 5 100
+0 5 100 0
 #5808
 bracelet intricate golden~
 &+Ya golden bracelet e&+Wn&+Yc&+Wr&+Yu&+Ws&+Yt&+We&+Yd with diamonds&n~
@@ -1458,7 +1458,7 @@ bracelet intricate golden~
 ~
 9 24 3 3 7 0 4096 4097 64 0 0
 5 0 24 3 0 0 0 0
-3 4700 100 0 16 0 0
+3 4700 100 100 0 16 0 0
 A
 13 10
 A
@@ -1470,7 +1470,7 @@ portal darkness~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 5973 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 0
 #5810
 portal darkness~
 &+La portal enshrouded in darkness&n~
@@ -1478,7 +1478,7 @@ portal darkness~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 5971 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 0
 #5811
 ghostly sleeves pair~
 &+Wa pa&Nir &+Wof gh&+Wos&Ntly &+Wsl&Nee&+Wves&N~
@@ -1486,7 +1486,7 @@ ghostly sleeves pair~
 ~
 9 1 3 0 7 0 64 257 64 0 0
 8 0 0 0 0 0 0 0
--10 36232 100
+-10 36232 100 0
 E
 ghostly sleeves pair~
    &+WThis mystical pieces of equipment floats in half-transparent limbo.
@@ -1502,7 +1502,7 @@ pair ghostly pants~
 ~
 9 1 3 0 7 0 64 33 64 0 0
 8 0 0 0 0 0 0 0
--10 33294 100
+-10 33294 100 0
 E
 pair ghostly pants~
    &+WThese pants shimmer with a half-transparency.
@@ -1518,7 +1518,7 @@ pair ghostly gloves~
 ~
 9 1 3 0 7 0 64 129 64 0 0
 8 0 0 0 0 0 0 0
--10 46989 100
+-10 46989 100 0
 E
 pair ghostly gloves~
    &+WThese gloves shimmer with a ghostly omnipresence.
@@ -1534,7 +1534,7 @@ ghostly pair boots~
 ~
 9 1 3 0 7 0 64 65 64 0 0
 8 0 0 0 0 0 0 0
--10 30989 100
+-10 30989 100 0
 E
 ghostly pair boots~
    &+WThese ghostly boots shine half the time, and seem to fade into limbo
@@ -1551,7 +1551,7 @@ set jagged blood crystal arm plates~
 ~
 9 26 3 0 14 0 0 257 64 0 0
 25 0 0 5 1 0 0 0
-4 204343 100
+4 204343 100 0
 A
 19 4
 A
@@ -1563,7 +1563,7 @@ spiked blood crystal leg plates~
 ~
 9 26 3 0 14 0 0 33 64 0 0
 25 0 0 5 1 0 0 0
-4 204343 100
+4 204343 100 0
 A
 19 4
 A
@@ -1575,7 +1575,7 @@ razor knuckled blood crystal gloves~
 ~
 9 26 3 0 14 0 0 129 64 0 0
 20 0 0 0 0 0 0 0
-4 289434 100 8192 4 0 0
+4 289434 100 100 8192 4 0 0
 A
 13 15
 A
@@ -1587,7 +1587,7 @@ spurred blood crystal boots~
 ~
 9 26 3 0 14 0 0 65 64 0 0
 22 0 0 5 1 0 0 0
-5 266434 100 65536 8 0 0
+5 266434 100 100 65536 8 0 0
 A
 19 4
 A
@@ -1599,7 +1599,7 @@ durethium lockbox box~
 ~
 15 16 2 0 7 0 4096 16385 64 0 0
 30 13 5820 30 0 0 0 0
-2 23034 100
+2 23034 100 0
 E
 durethium lockbox box~
    &+LThis small &+Wdurethium&+L lockbox is double hinged.
@@ -1611,7 +1611,7 @@ old durethium key~
 ~
 18 16 1 0 7 0 4096 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 232 100
+0 232 100 0
 E
 old durethium key~
    &+LThis small durethium key opens some sort of small lock.  It is quite old.
@@ -1623,7 +1623,7 @@ small pile coins platinum~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 48 0 0 0 0
-0 0 100
+0 0 100 0
 #5822
 magician's wand~
 &+Ya magician's &+Wholy &+Ywand&n~
@@ -1631,7 +1631,7 @@ magician's wand~
 ~
 3 19 2 0 7 0 1 16385 64 0 0
 44 5 5 438 0 0 0 0
-1 16434 100
+1 16434 100 0
 E
 magician's wand~
    &+mThis small adamantium wand glows with a dark, ancient power.
@@ -1643,7 +1643,7 @@ scroll frozen wrath~
 ~
 2 29 2 0 5 0 0 16385 64 0 0
 50 325 10 8 0 0 0 0
-0 3434 100
+0 3434 100 0
 E
 scroll frozen wrath~
    &+LThis scroll contains passages of powerful offensive frost magic.

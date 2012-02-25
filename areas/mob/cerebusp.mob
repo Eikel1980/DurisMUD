@@ -10,8 +10,8 @@ white tiger whitetiger~
 &+Wand kept safe, where here in the &+YSavannah&+W, the poaching of white
 &+Ltigers&+W has increased significantly over the past few years.&n
 ~
-1140852744 0 0 0 0 0 0 0 S
-A 0 1 -1
+1140852744 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -24,8 +24,8 @@ gargoyle angry~
 &+Lthough it would attack just about anyone or anything, its ferocity
 &+Lis magnified by the intrusion on its den.&n
 ~
-1140983818 1 0 128 0 0 0 -1000 S
-Y 0 512 2
+1140983818 1 0 0 128 0 0 0 -1000 S
+Y 0 512 0 2
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -38,8 +38,8 @@ gargoyle young~
 &+Lmonths old. However, despite its young age, it is still quite &+rblood&n
 &+Lthirsty.&n
 ~
-1073872906 1 0 128 0 0 0 -1000 S
-Y 0 1 2
+1073872906 1 0 0 128 0 0 0 -1000 S
+Y 0 1 0 2
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -51,8 +51,8 @@ giraffe tall~
 &+yThis giraffe stands lazily by a area of palms, casually pulling the
 &+yleaves from the trees with its long neck and chewing them slowly.&n
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 0 4
+2056 0 0 0 0 0 0 0 0 S
+A 0 0 0 4
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -64,8 +64,8 @@ giraffe mature~
 &+yThis is an even larger giraffe than the usual ones within the &+YSavannah&+y.
 &+yIt is just about big enough to make a nice meal for an adult &+Wroc&+y.&n
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 0 5
+2056 0 0 0 0 0 0 0 0 S
+A 0 0 0 5
 37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -78,8 +78,8 @@ gargoyle huge~
 &+Lneed a reason to attack, it seems this one is trying to defend its
 &+Lyoung.&n
 ~
-1073872906 1 0 0 0 0 0 -1000 S
-Y 0 1 4
+1073872906 1 0 0 0 0 0 0 -1000 S
+Y 0 1 0 4
 39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -92,8 +92,8 @@ mojo monkey~
 &+yhe needs motivation to craft.
 &+YMojo&+y is so very hungry.&n
 ~
-10 0 0 1048576 0 0 0 1000 S
-AA 0 1 -1
+10 0 0 0 1048576 0 0 0 1000 S
+AA 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -108,8 +108,8 @@ soldier fortune~
 &+ybut it is not uncommon to see them about, wandering the lands in
 &+ysearch of wealth.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1140852746 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -122,8 +122,8 @@ resting mercenary fortune~
 &+ylooks exhausted after a long day of travelling and is looking forward
 &+yto spending some time relaxing by the fire.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1140852746 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 5 1
@@ -137,8 +137,8 @@ soldier ranger~
 &+yonly is their group searching for treasure, but they also make special
 &+yeffort to capture some whitetigers to bring back to &+MMyrabolus&+y with them.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-PH 0 2 -1
+1140852746 0 0 0 0 0 0 0 0 S
+PH 0 2 0 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -151,8 +151,8 @@ tree palm~
 &+ystands roughly eight feet in height with its broad leaves providing
 &+Lshade&+y for the smaller animals.&n
 ~
-2058 0 0 0 0 0 0 0 S
-VT 0 1 4
+2058 0 0 0 0 0 0 0 0 S
+VT 0 1 0 4
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -165,8 +165,8 @@ large zebra~
 &+Wits offspring, however, are having much more fun galloping throughout
 &+Wthe &+YSavannah&+W, carefree and wild.&n
 ~
-67110920 0 0 0 0 0 0 0 S
-A 0 1 -1
+67110920 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -177,8 +177,8 @@ female zebra~
 ~
 &+WThis z&+Le&+Wb&+Lr&+Wa stays close to its mate and grazes in some relative &+Lshade&+W.&n
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 0 -1
+2056 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -190,8 +190,8 @@ young zebra~
 &+WThis young z&+Le&+Wb&+Lr&+Wa gallops through the &+YSavannah&+W happily and carefree.
 &+WIt is striped white and &+Lblack&+W.&n
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 1 -1
+2056 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -204,8 +204,8 @@ large wild dog~
 &+ythis strong male dog sits to protect his young during the day and
 &+ywill hunt during the night.&n
 ~
-1073743882 0 0 0 0 0 0 -1000 S
-A 0 1 3
+1073743882 0 0 0 0 0 0 0 -1000 S
+A 0 1 0 3
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -217,8 +217,8 @@ wild dog pup puppy~
 &+yThis young pup eyes you curiously then begins to yap annoying at
 &+yyour feet.  A shame a swift kick in the snout might anger the parents.&n
 ~
-138 0 0 1048576 0 0 0 -1000 S
-A 0 1 2
+138 0 0 0 1048576 0 0 0 -1000 S
+A 0 1 0 2
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -230,8 +230,8 @@ cactus~
 &+yThis small &+Gcactus&+y flourishes in the sun-baked soil.  The dry air
 &+yalso helps the &+Gcactus&+y to grow.  It is prickly to touch.&n
 ~
-2058 0 0 0 0 0 0 0 S
-VT 0 1 2
+2058 0 0 0 0 0 0 0 0 S
+VT 0 1 0 2
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -244,8 +244,8 @@ myrabolan hunter~
 &+YSavannah&+y. When he captures them he will transport them back to
 &+ythe city where they can live in comfort and safety.&n
 ~
-1140852748 0 0 0 0 0 0 0 S
-PH 0 2 -1
+1140852748 0 0 0 0 0 0 0 0 S
+PH 0 2 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -257,8 +257,8 @@ wild dog~
 &+yThis dog runs through the Savannah happily chasing the birds.
 &+yHe yips and yipes and when hes gets upset he fights.&n
 ~
-1073743880 0 0 0 0 0 0 -1000 S
-A 0 1 3
+1073743880 0 0 0 0 0 0 0 -1000 S
+A 0 1 0 3
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -273,8 +273,8 @@ wemic nomad~
 &+ygood hunting ground for food they will use later when crossing
 &+ythe desert.&n
 ~
-67110922 0 0 0 0 0 0 -1000 S
-H 0 16384 4
+67110922 0 0 0 0 0 0 0 -1000 S
+H 0 16384 0 4
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -288,8 +288,8 @@ sealot chieftan~
 &+ywhenever they make a mistake and let their pray escape.  Around
 &+yhis shoulders is draped a long, sandy, cloak.&n
 ~
-1140852746 0 0 0 0 0 0 -1000 S
-H 0 16384 4
+1140852746 0 0 0 0 0 0 0 -1000 S
+H 0 16384 0 4
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -303,8 +303,8 @@ camel ugly~
 &+yprettiest creatures.  This one ignores everything around it other
 &+ythan the vegetation it is currently chewing on.&n
 ~
-16394 0 0 0 0 0 0 0 S
-A 0 1 4
+16394 0 0 0 0 0 0 0 0 S
+A 0 1 0 4
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -318,8 +318,8 @@ camel ugly~
 &+yprettiest creatures.  This one ignores everything around it other
 &+ythan the vegetation it is currently chewing on.&n
 ~
-18440 0 0 0 0 0 0 0 S
-A 0 1 4
+18440 0 0 0 0 0 0 0 0 S
+A 0 1 0 4
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -333,8 +333,8 @@ camel large~
 &+yprettiest creatures.  This one ignores everything around it other
 &+ythan the vegetation it is currently chewing on.&n
 ~
-16394 0 0 0 0 0 0 0 S
-A 0 1 4
+16394 0 0 0 0 0 0 0 0 S
+A 0 1 0 4
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -348,8 +348,8 @@ huge rock worm rockworm~
 &+ya ugly squeal it tries its best to ramble into the safety of the
 &+yshadows.&n
 ~
-8388620 0 0 8 2 0 0 0 S
-ph 0 1 5
+8388620 0 0 0 8 2 0 0 0 S
+ph 0 1 0 5
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -362,8 +362,8 @@ sleeping gargoyle~
 &+LIt would probably be a good idea not to wake it from its slumber, as
 &+Lgargoyles aren't really known for their good bedside manner.&n
 ~
-1073743880 1 0 1048712 0 0 0 -1000 S
-Y 0 1 3
+1073743880 1 0 0 1048712 0 0 0 -1000 S
+Y 0 1 0 3
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 4 4 1
@@ -377,8 +377,8 @@ nomadic merchant~
 &+yhis stuff at a fairly low price, considering just how important
 &+yhis goods are, especially to &+Ymonkeys&+y.&n
 ~
-1073743880 0 0 0 0 0 0 1000 S
-PH 0 64 -1
+1073743880 0 0 0 0 0 0 0 1000 S
+PH 0 64 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -393,8 +393,8 @@ vampire overseer~
 &+Lcan keep them in line and make sure they don't fight each other that
 &+Lmuch.&n
 ~
-2058 1 0 8 0 0 0 -1000 S
-UV 0 16 -1
+2058 1 0 0 8 0 0 0 -1000 S
+UV 0 16 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -406,8 +406,8 @@ gargoyle feasting~
 &+LThis gargoyle is angered by the interuption of its freshly killed
 &+Lmeal.  It attacks viciously.&n
 ~
-1073872906 1 0 136 0 0 0 -1000 S
-Y 0 1 2
+1073872906 1 0 0 136 0 0 0 -1000 S
+Y 0 1 0 2
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -421,8 +421,8 @@ crafty imp~
 &+Ljust acting fear to achieve some unknown purpose. With a evilly
 &+Lgleeful chirp he works on weaving together some mystery items.&n
 ~
-1073744010 0 0 524312 0 0 0 -1000 S
-Y 0 65536 1
+1073744010 0 0 0 524312 0 0 0 -1000 S
+Y 0 65536 0 1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -435,8 +435,8 @@ gray lion~
 &+wAt one point, countless numbers of them used to live here on the
 &+YSavannah&+w, now, very few remain of this majestic creature.&n
 ~
-1073743946 0 0 8 0 0 0 1000 S
-A 0 1 4
+1073743946 0 0 0 8 0 0 0 1000 S
+A 0 1 0 4
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 4 4 1
@@ -452,8 +452,8 @@ valquin~
 &+wuncommon to see &+WValquin&+w or &+cWicks&+w alone in some dangerous area,
 &+wmost often sent there on a bet by the other one.&n
 ~
-1073743946 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1073743946 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -466,8 +466,8 @@ hatchling gargoyle~
 &+Lout of the &+Wegg&+L for a brief couple of days.  Despite its young age
 &+Lhowever, it is still quite dangerous.&n
 ~
-136 1 0 128 0 0 0 -1000 S
-Y 0 1 1
+136 1 0 0 128 0 0 0 -1000 S
+Y 0 1 0 1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -480,8 +480,8 @@ gargoyle~
 &+Lis scary and as hard as rock, and both its teeth and fangs are
 &+Lextremely sharp.&n
 ~
-1073743880 1 0 128 0 0 0 -1000 S
-Y 0 1 3
+1073743880 1 0 0 128 0 0 0 -1000 S
+Y 0 1 0 3
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -497,8 +497,8 @@ prince seik~
 &+Cgar&+cgoy&+Lles is quite dangerous.  He wears an odd type of black veil
 &+Lover his demonic eyes.&n
 ~
-1073743882 1 0 8 0 0 0 -1000 S
-X 0 512 -1
+1073743882 1 0 0 8 0 0 0 -1000 S
+X 0 512 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -511,8 +511,8 @@ ugly goat~
 &+yexception, in fact it is so ugly and ratty that one can't help but
 &+ypity it.&n
 ~
-2184 0 0 0 0 0 0 0 S
-A 0 1 -1
+2184 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -524,8 +524,8 @@ small goat~
 &+yThis small &+Wgoat&+y wanders the hills in search of anything he can chew
 &+yon.  It never manages to wander too far away from the rest of the herd.&n
 ~
-2184 0 0 0 0 0 0 0 S
-A 0 1 -1
+2184 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -538,8 +538,8 @@ billy goat~
 &+yedible from the rocky soil.  Your presence doesn't seem to alarm him
 &+yat all, if it notices in the first place.&n
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 1 -1
+2056 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -556,8 +556,8 @@ nansuo~
 &+Lhe would not hestitate to plunge a dagger into the back of either
 &+Lthe just &+mMav&+Ler&+miss&+L, or the bloodthirsty master of mayhem, &+bMav&+Ler&+bick.&n
 ~
-1090521224 0 0 24 0 67108864 0 -1000 S
-PH 0 8192 -1
+1090521224 0 0 0 24 0 67108864 0 -1000 S
+PH 0 8192 0 -1
 49 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -571,8 +571,8 @@ pit fiend~
 &+Lreptilian tail.  Though its hideous visage doesn't suggest it, this
 &+rpit&+L fiend is also quite cunning and intelligent.&n
 ~
-2184 1 0 8 0 0 0 -1000 S
-R 0 1 4
+2184 1 0 0 8 0 0 0 -1000 S
+R 0 1 0 4
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -585,8 +585,8 @@ overlord~
 &+Lmust be a distant cousin of the overfiend itself.  Its hideously ugly
 &+Land has an enormous bulk.  It moves slowly but attacks viciously.&n
 ~
-2056 1 0 0 0 0 0 -1000 S
-PO 0 256 -1
+2056 1 0 0 0 0 0 0 -1000 S
+PO 0 256 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -600,8 +600,8 @@ gremlin~
 &+Lother evil relatives the &+ggremlins&+L are still not recommended to be
 &+Ltrifled with.&n
 ~
-2184 1 0 0 0 0 0 -1000 S
-HF 0 512 1
+2184 1 0 0 0 0 0 0 -1000 S
+HF 0 512 0 1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -614,8 +614,8 @@ hellhound hound~
 &+Lare somewhat intelligent, fairly dangerous, and make a great pet for
 &+Lthe overlords and overseers of the Pits of &+rCerberus.&n
 ~
-1073741864 1 0 8 0 0 0 -1000 S
-A 0 1 2
+1073741864 1 0 0 8 0 0 0 -1000 S
+A 0 1 0 2
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -629,8 +629,8 @@ winged imp~
 &+Lthe pits, their smaller stature does not diminish their ferocity and
 &+Ldexterity.&n
 ~
-136 1 0 0 0 0 0 -1000 S
-HF 0 4 1
+136 1 0 0 0 0 0 0 -1000 S
+HF 0 4 0 1
 16 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -648,8 +648,8 @@ overfiend~
 &+Lwill not hesitate to use his hulking body to crush any minor
 &+Lannoyance.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-PO 0 16 -1
+2058 1 0 0 0 0 0 0 -1000 S
+PO 0 16 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -663,8 +663,8 @@ drider~
 &+mdriders within the &+Lpits&+m, though rare, often are in charge of keeping
 &+mthe lesser demons in line.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-AS 0 2 4
+1073743880 1 0 0 0 0 0 0 -1000 S
+AS 0 2 0 4
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -677,8 +677,8 @@ illithid overseer~
 &+wto over see the lesser demons.  He is a brutal and cunning and acts
 &+wquite ruthless towards all the denizens.&n
 ~
-1073874952 0 0 0 0 0 0 -1000 S
-MF 0 262144 -1
+1073874952 0 0 0 0 0 0 0 -1000 S
+MF 0 262144 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -691,8 +691,8 @@ satyr~
 &+Lare usually found working for demonic forces.  They are crafty, sneaky,
 &+Land can be quite dangerous.&n
 ~
-140 1 0 268959752 0 0 0 -1000 S
-L 0 32768 2
+140 1 0 0 268959752 0 0 0 -1000 S
+L 0 32768 0 2
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -705,8 +705,8 @@ granite golem~
 &+Lis undeterminable to imagine what its purpose is, if any.  Its eyes
 &+Lremain fixed ahead, unblinking and inhuman.&n
 ~
-2058 0 0 0 0 0 0 -1000 S
-OG 0 1 5
+2058 0 0 0 0 0 0 0 -1000 S
+OG 0 1 0 5
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -720,8 +720,8 @@ gaia tree~
 &+Gextremely old.  It is hard to understand how such a majestic tree
 &+Gcould flourish so well in such an enviroment.&n
 ~
-2058 0 0 0 0 0 0 1000 S
-VT 0 128 5
+2058 0 0 0 0 0 0 0 1000 S
+VT 0 128 0 5
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -735,8 +735,8 @@ hellhound hound~
 &+Lenjoy having sadistic animals for pets, however, the &+rhell&+Lhound is
 &+La good option.&n
 ~
-1073741866 1 0 8 0 0 0 -1000 S
-A 0 1 2
+1073741866 1 0 0 8 0 0 0 -1000 S
+A 0 1 0 2
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -754,8 +754,8 @@ mastiff minotaur~
 &+Lhis friends with, and is most likely travelling with &+WValquin&+L. He
 &+Lis using a mystic &+Wrod&+L givin to him by Xavier for a lightsource.&n
 ~
-1073743882 0 0 0 0 0 0 0 S
-MT 0 16384 -1
+1073743882 0 0 0 0 0 0 0 0 S
+MT 0 16384 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -770,8 +770,8 @@ spitelan zealot~
 &+LHe delights in torturing the pure hearted &+Cang&+Wels&+L, captured during
 &+Lthese raids.&n
 ~
-18442 1 0 8 1 0 0 -1000 S
-GI 0 16 -1
+18442 1 0 0 8 1 0 0 -1000 S
+GI 0 16 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -787,8 +787,8 @@ angel captive~
 &+Cimportant soldiers who the angels within the Home have themselves
 &+Ccaptured.&n
 ~
-1073741834 0 0 0 0 0 0 1000 S
-AN 0 1 -1
+1073741834 0 0 0 0 0 0 0 1000 S
+AN 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -805,8 +805,8 @@ gregory aid~
 &+wof his duties home in &+MMyrabolus&+w.  He stands here now, waiting for
 &+wsomething, possibly &+rMarkam&+w himself onboard the &+YSu&+Lnwea&+Yver&+w.&n
 ~
-1073743946 0 0 0 0 0 0 1000 S
-PH 0 32 -1
+1073743946 0 0 0 0 0 0 0 1000 S
+PH 0 32 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -819,8 +819,8 @@ crewman man~
 &+ylegendary airship of &+MMyrabolus&+y.  He stands here gazing up at the
 &+ysky, waiting for some unknown sign.&n
 ~
-67111050 0 0 0 0 0 0 1000 S
-PH 0 1 -1
+67111050 0 0 0 0 0 0 0 1000 S
+PH 0 1 0 -1
 37 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -832,8 +832,8 @@ rock worm rockworm~
 &+yThis rockworm is not quite as large as some others, though is still
 &+yquite big.  It just lays curled up in the room, hardley moving at all.&n
 ~
-2058 0 0 0 0 0 0 -1000 S
-SL 0 1 4
+2058 0 0 0 0 0 0 0 -1000 S
+SL 0 1 0 4
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -846,8 +846,8 @@ spider arachant~
 &+Lsilently and completely black, making it blend in well to its
 &+Lsurroundings.&n
 ~
-2184 1 0 8 0 0 0 -1000 S
-AS 0 4 3
+2184 1 0 0 8 0 0 0 -1000 S
+AS 0 4 0 3
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -860,8 +860,8 @@ spider arachant~
 &+Lsilently and completely black, making it blend in well to its
 &+Lsurroundings.&n
 ~
-2184 1 0 1048584 0 0 0 -1000 S
-AS 0 4 3
+2184 1 0 0 1048584 0 0 0 -1000 S
+AS 0 4 0 3
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -874,8 +874,8 @@ ants~
 &+Lacross the &+YSavannah&+L in search of food they will bring back to the
 &+Lcolony.&n
 ~
-2060 0 0 0 0 0 0 -1000 S
-I 0 1 1
+2060 0 0 0 0 0 0 0 -1000 S
+I 0 1 0 1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -890,8 +890,8 @@ gren djinn~
 &+cother highlords avoid him, and let him be on his own to cause
 &+ctrouble within the &+WHome&+C of the &+WDivine&+c.&n
 ~
-2314 1 0 134217736 0 0 0 -1000 S
-EA 0 256 4
+2314 1 0 0 134217736 0 0 0 -1000 S
+EA 0 256 0 4
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -905,8 +905,8 @@ roc~
 &+ycaught in the &+YSavannah&+y below and occasionally screeches, a noise
 &+yso loud it can be heard far across the land.&n
 ~
-1140852746 0 0 8 0 0 0 1000 S
-B 0 1 6
+1140852746 0 0 0 8 0 0 0 1000 S
+B 0 1 0 6
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -919,8 +919,8 @@ imp soldier~
 &+Ltheir size, they are actually quite efficient in battle, especially
 &+Lat slicing the knees and hamstrings of their opponents.&n
 ~
-67110922 0 0 1048586 0 0 0 -1000 S
-Y 0 1 1
+67110922 0 0 0 1048586 0 0 0 -1000 S
+Y 0 1 0 1
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -934,8 +934,8 @@ gorgor ettin dreaded~
 &+bheaded ogre looked meaner than and nastier than the other three
 &+boverlords combined.  He also looks just as dangerous.&n
 ~
-1073743882 1 0 268435464 2048 0 0 -1000 S
-PO 0 1 -1
+1073743882 1 0 0 268435464 2048 0 0 -1000 S
+PO 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -948,8 +948,8 @@ smoke dragon~
 &+won the &+WPlane of Mist&+w.  Though not naturally an evil creature, this
 &+wone has been taught to be vicious and ruthless.&n
 ~
-1048586 1 0 8 0 0 0 -1000 S
-D 0 1 -1
+1048586 1 0 0 8 0 0 0 -1000 S
+D 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -964,8 +964,8 @@ scorn devil~
 &+Lchest with a sharp finger nail, a self-inflicted scar that serves
 &+Las a twisted sort of score chart.&n
 ~
-67110922 1 0 24 0 0 0 -1000 S
-Y 0 64 3
+67110922 1 0 0 24 0 0 0 -1000 S
+Y 0 64 0 3
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -978,8 +978,8 @@ devilish warlord~
 &+Lthe eyes it is obvious it is not.  It is an unfeeling, uncaring soldier
 &+Lof the Pits, whose only purpose is to obey the overlords.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-X 0 1 3
+2058 1 0 0 0 0 0 0 -1000 S
+X 0 1 0 3
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -992,8 +992,8 @@ demonic warmage~
 &+Lthe Pits.  His arcane, dark, magics support the soldiers of the army
 &+Lquite efficiently.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-X 0 1024 4
+2058 1 0 0 0 0 0 0 -1000 S
+X 0 1024 0 4
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1008,8 +1008,8 @@ sultan snakes~
 &+yoddly humanoid, is twisted in an expression of hate.  He holds a
 &+ylong staff-like scepter in his reptilian, clawed hands.&n
 ~
-1140852746 1 0 8 0 0 0 -1000 S
-R 0 1 5
+1140852746 1 0 0 8 0 0 0 -1000 S
+R 0 1 0 5
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1021,8 +1021,8 @@ young roc~
 &+yThe &+Wroc&+y is one of the largest birds in the world, even in its younger
 &+yyears, this &+Wroc&+y could still easily have an elephant for lunch.&n
 ~
-1140852746 0 0 0 0 0 0 1000 S
-B 0 1 4
+1140852746 0 0 0 0 0 0 0 1000 S
+B 0 1 0 4
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1034,8 +1034,8 @@ tiger worm~
 &+yThis worm is considerably larger than a regular worm. It gets its
 &+yname from the &+Lblack&+y and &+Ybrown&+y stripes across its slimy body.&n
 ~
-1140852744 0 0 0 0 0 0 -1000 S
-SL 0 1 3
+1140852744 0 0 0 0 0 0 0 -1000 S
+SL 0 1 0 3
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1050,8 +1050,8 @@ pit wyrm~
 &+ythe soft soil of the tunnel hissing and spitting at just about
 &+yanything.&n
 ~
-2184 1 0 0 0 0 0 -1000 S
-D 0 1 2
+2184 1 0 0 0 0 0 0 -1000 S
+D 0 1 0 2
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1063,8 +1063,8 @@ rock worm rockworm~
 &+yThis rockworm is not quite as large as some others, though is still
 &+yquite big.  It just lays curled up in the room, hardley moving at all.&n
 ~
-2058 0 0 0 0 0 0 -1000 S
-SL 0 1 4
+2058 0 0 0 0 0 0 0 -1000 S
+SL 0 1 0 4
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1076,8 +1076,8 @@ rock worm rockworm~
 &+yThis rockworm is not quite as large as some others, though is still
 &+yquite big.  It just lays curled up in the room, hardley moving at all.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-SL 0 1 4
+2058 1 0 0 0 0 0 0 -1000 S
+SL 0 1 0 4
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1090,8 +1090,8 @@ earth golem~
 &+ywithin the &+Lpit&+y.  Like most golems, it isn't extremely intelligent
 &+yand has no free mind of its own.&n
 ~
-2058 0 0 0 0 0 0 -1000 S
-OG 0 1 5
+2058 0 0 0 0 0 0 0 -1000 S
+OG 0 1 0 5
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1102,8 +1102,8 @@ earth worm~
 ~
 &+yIts squirmy, its squishy, its small. Its a worm.&n
 ~
-2058 0 0 0 0 0 0 -1000 S
-SL 0 1 0
+2058 0 0 0 0 0 0 0 -1000 S
+SL 0 1 0 0
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1116,8 +1116,8 @@ sand viper~
 &+yThey hunt whatever is available and can sometimes grow to quite
 &+ylarge sizes.  The sand &+Lviper&+y has a very aggressive nature.&n
 ~
-67110920 1 0 0 0 0 0 -1000 S
-RS 0 128 1
+67110920 1 0 0 0 0 0 0 -1000 S
+RS 0 128 0 1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1128,8 +1128,8 @@ earth worm~
 ~
 &+yIts slimy. It hard to imagine some people eat these things.&n
 ~
-67110922 0 0 1048576 0 0 0 -1000 S
-SL 0 1 0
+67110922 0 0 0 1048576 0 0 0 -1000 S
+SL 0 1 0 0
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1142,8 +1142,8 @@ huge pit snake~
 &+ygrown so large due to its aggressive nature of attacking and eating
 &+yanything in its path.&n
 ~
-2056 1 0 0 0 0 0 -1000 S
-RS 0 1 5
+2056 1 0 0 0 0 0 0 -1000 S
+RS 0 1 0 5
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1154,8 +1154,8 @@ earth worm~
 ~
 &+yIts squirmy, its squishy, its small. Its a worm.&n
 ~
-2056 0 0 1572864 0 0 0 -1000 S
-SL 0 1 0
+2056 0 0 0 1572864 0 0 0 -1000 S
+SL 0 1 0 0
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1168,8 +1168,8 @@ sand viper large~
 &+yThey hunt whatever is available and can sometimes grow to quite
 &+ylarge sizes.  The sand &+Lviper&+y has a very aggressive nature.&n
 ~
-67110922 1 0 8 0 0 0 -1000 S
-RS 0 128 4
+67110922 1 0 0 8 0 0 0 -1000 S
+RS 0 128 0 4
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1182,8 +1182,8 @@ sand viper~
 &+yThey hunt whatever is available and can sometimes grow to quite
 &+ylarge sizes.  The sand &+Lviper&+y has a very aggressive nature.&n
 ~
-67110922 0 0 1048584 0 0 0 -1000 S
-RS 0 128 1
+67110922 0 0 0 1048584 0 0 0 -1000 S
+RS 0 128 0 1
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1196,8 +1196,8 @@ aid~
 &+yhumanoid, half-reptile, they slither about the room and hiss with
 &+yscaly faces.&n
 ~
-67110922 0 0 0 0 0 0 -1000 S
-RS 0 32 3
+67110922 0 0 0 0 0 0 0 -1000 S
+RS 0 32 0 3
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

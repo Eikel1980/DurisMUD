@@ -5,7 +5,7 @@ black skull-shaped ring skull~
 ~
 9 16 1 1 7 0 69632 3 64 0 0
 0 1 0 3 0 0 0 0
-3 9000 100
+3 9000 100 100
 E
 black skull ring~
 it looks just like a tiny human skull, with one hole cut out in the
@@ -22,7 +22,7 @@ some mist is here on the ground.~
 ~
 15 1 3 8 7 0 102432 1025 64 0 0
 250 5 -1 100 0 0 0 0
--70 90000 100
+-70 90000 100 100
 E
 cloak mists ethereal~
 The cloak is shrouded in a swirling mist that seems to mimic its
@@ -39,7 +39,7 @@ black skull-shaped ring skull~
 ~
 9 16 1 1 7 0 69632 3 64 0 0
 0 1 0 3 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 black skull ring~
 it looks just like a tiny human skull, with one hole cut out in the
@@ -56,7 +56,7 @@ belt transparent ectoplasmatic~
 ~
 9 44 3 0 14 0 4128 2049 0 0 0
 7 10 0 3 0 0 0 0
-1 321333 100
+1 321333 100 100
 A
 33 3
 A
@@ -68,7 +68,7 @@ Some fool has left a very nice looking braid here.&n~
 ~
 9 15 3 0 7 0 0 33554433 64 0 0
 0 20 0 4 0 0 0 0
-0 0 100 32 4 0 0
+0 0 100 100 32 4 0 0
 A
 4 9
 A
@@ -80,7 +80,7 @@ silencer dagger faded-red~
 ~
 5 18 2 3 14 80 8592 8193 66 0 0
 2 3 4 11 0 127 50 30
-1 98000 100
+1 98000 100 100
 E
 silencer dagger~
    Silencer has a intricate design on its blade, the hilt seems to be
@@ -110,7 +110,7 @@ ring nose~
 ~
 9 15 3 0 7 0 0 67108865 0 0 0
 0 21 0 2 0 0 0 0
-0 0 100 65536 0 0 0
+0 0 100 100 65536 0 0 0
 A
 19 3
 A
@@ -122,7 +122,7 @@ horn horns fire~
 ~
 9 15 3 0 14 0 1 134217729 0 0 0
 5 0 0 5 0 0 0 0
-2 43243 100 0 1 0 0
+2 43243 100 100 0 1 0 0
 A
 19 2
 A
@@ -134,7 +134,7 @@ belt leather jera black _id_~
 ~
 9 44 3 0 14 0 0 2049 0 0 0
 7 10 0 3 0 0 0 0
-1 321333 100 524288 0 128 0
+1 321333 100 100 524288 0 128 0
 E
 insignia~
 &+w( &+y* &+w)  &+w(&+y * &+w)
@@ -150,7 +150,7 @@ eyepiece menzellon~
 ~
 13 1 2 0 11 0 0 131073 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 A
 18 -5
 #12410
@@ -160,7 +160,7 @@ The faint outlines of a &+Wportal&n can be seen here in the mists.~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 32632 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 invisible portal outline~
    Peering into this portal, all you can see is the indistinct mists that are
@@ -175,7 +175,7 @@ orb blackened black~
 ~
 4 16 3 10 7 0 1024 16385 64 37883812 0
 36 4 4 28 0 0 0 0
-3 3000 100
+3 3000 100 100
 E
 orb~
    The blackend orb vibrates with energy and a sence of well being comes
@@ -190,7 +190,7 @@ crown sparkling diamonds~
 ~
 9 27 3 8 7 0 1024 17 64 33685920 0
 12 4 16 3 0 0 0 0
-4 6000 100 4 0 0 0
+4 6000 100 100 4 0 0 0
 A
 22 -4
 A
@@ -202,7 +202,7 @@ Someone has left a nice looking mask here.~
 ~
 9 21 3 3 7 0 200864 262145 64 0 0
 8 13 1 3 0 0 0 0
-2 2300 100
+2 2300 100 100
 A
 2 9
 A
@@ -214,7 +214,7 @@ ring violet~
 ~
 9 16 1 1 7 0 4128 3 64 0 0
 0 1 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 30
 A
@@ -226,7 +226,7 @@ ball green mist~
 ~
 3 1 2 4 7 0 0 16385 64 0 0
 30 4 4 118 0 0 0 0
-4 0 100
+4 0 100 100
 E
 ball mist~
 It has a swirling green mist inside.
@@ -242,7 +242,7 @@ leggings green dark~
 ~
 9 16 3 8 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 A
 1 4
 A
@@ -254,7 +254,7 @@ armplates dark green~
 ~
 9 16 0 0 7 0 0 257 0 0 0
 5 8 1 3 0 0 0 0
-5 0 100
+5 0 100 100
 A
 2 -4
 A
@@ -266,7 +266,7 @@ ball sooty smoke~
 ~
 3 6 2 4 7 0 1024 16385 64 37883812 0
 20 4 4 165 0 0 0 0
-4 7000 100
+4 7000 100 100
 A
 19 1
 A
@@ -278,7 +278,7 @@ rift small hole~
 ~
 12 1 0 0 7 0 4096 0 0 0 0
 19702 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift hole small~
    The rift is only about 2 feet in diameter and seems to shimmer.
@@ -293,7 +293,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 4577 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift hole large~
    As you look inside the folds of the rift an image slowly takes form!
@@ -310,7 +310,7 @@ rip huge rift~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 12310 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift rip hole~
 The rift is about 100 feet in diameter and seems to shimmer.
@@ -331,7 +331,7 @@ hole rift rip~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 163372 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift rip hole~
 The rift is about 20 feet in diameter and seems to shimmer.
@@ -346,7 +346,7 @@ pool crimson~
 ~
 12 40 5 50 7 0 0 0 0 0 0
 12401 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pool crimson~
 The pool is about 25 feet in diameter and crimson in color.
@@ -361,7 +361,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 25410 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift hole flaming~
 The rift is about 50 feet in diameter, and flames leap out of its opening.
@@ -376,7 +376,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 23901 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift hole large~
 The rift is about 50 feet in diameter and seems to shimmer.
@@ -390,7 +390,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 24401 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift large hole~
 The rift is about 30 feet in diameter and seems to shimmer.
@@ -403,7 +403,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 23324 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift large~
 The rift is about 25 feet in diameter.
@@ -416,7 +416,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 141971 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift large~
 The rift is about 35 feet in diameter.
@@ -429,7 +429,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 26205 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift large~
 The rift is about 25 feet in diameter.
@@ -442,7 +442,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 141960 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift large~
 The rift is about 25 feet in diameter.
@@ -456,7 +456,7 @@ rift large~
 ~
 12 1 0 0 7 0 0 0 0 0 0
 4082 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 rift large~
 The rift is about 25 feet in diameter.

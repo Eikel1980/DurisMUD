@@ -5,7 +5,7 @@ sword sleek longsword~
 ~
 5 16 3 10 7 0 4195328 8193 0 87556123 0
 5 3 5 3 0 0 0 0
-12 0 100
+12 0 100 100
 A
 19 2
 A
@@ -17,7 +17,7 @@ fountain grand fountain verspin~
 ~
 17 16 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #28102
 meal in a box verspin~
 &+ma Verspin meal-in-a-box&n~
@@ -25,7 +25,7 @@ meal in a box verspin~
 ~
 19 5 2 2 7 0 0 1 0 0 0
 8 0 0 0 0 0 0 0
-1 20 100
+1 20 100 100
 #28103
 water canteen troll-head troll head~
 &+ga troll-head canteen&n~
@@ -33,7 +33,7 @@ water canteen troll-head troll head~
 ~
 17 40 0 0 7 0 0 17 0 0 0
 10 10 0 0 0 0 0 0
-3 450 100
+3 450 100 100
 #28104
 sphere large black orb~
 &+La large black orb&n~
@@ -41,7 +41,7 @@ sphere large black orb~
 ~
 3 16 2 4 7 0 262144 16385 0 0 0
 35 2 2 116 0 0 0 0
-15 15000 100
+15 15000 100 100
 A
 13 10
 #28105
@@ -51,7 +51,7 @@ cane oak twisted odd~
 ~
 5 5 3 0 7 0 263168 8193 0 48402338 0
 10 3 3 7 0 0 0 0
-10 16535 100
+10 16535 100 100
 A
 3 3
 A
@@ -63,7 +63,7 @@ duckpond large duck pond~
 ~
 17 40 0 0 7 0 1 0 0 0 0
 -1 -1 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large duckpond duck pond~
 
@@ -90,7 +90,7 @@ A large suit of armor is here, glittering.~
 ~
 9 16 0 0 7 0 1024 9 0 85475353 0
 26 3 1 3 0 0 0 0
-60 14097 100
+60 14097 100 100
 A
 1 5
 A
@@ -102,7 +102,7 @@ axe large steel~
 ~
 5 16 3 8 7 0 1024 8193 0 87556123 0
 1 3 2 3 0 0 0 0
-14 9052 100
+14 9052 100 100
 A
 18 3
 A
@@ -114,7 +114,7 @@ large wooden stall~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 0 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 #28110
 stall full of apples~
 a stall full of&+r ap&+Rples&n~
@@ -122,7 +122,7 @@ A stall full to the brim of&+r ap&+Rples is here.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 0 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 #28111
 large wooden stall~
 &+Ya large &+ywooden stall&n~
@@ -130,7 +130,7 @@ large wooden stall~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 0 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 #28112
 large plump apple~
 &+ra large plump ap&+Rple&n~
@@ -138,7 +138,7 @@ large plump apple~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 5 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #28113
 large steak bone steak-bone~
 &+Wa large steak-bone&n~
@@ -146,7 +146,7 @@ large steak bone steak-bone~
 ~
 5 2 3 0 7 0 0 8193 0 0 0
 10 1 3 7 0 0 0 0
-4 439 100
+4 439 100 100
 #28114
 collar gold golden lion~
 &+ya gol&+Yde&+yn collar of the lion&n~
@@ -154,7 +154,7 @@ collar gold golden lion~
 ~
 9 24 0 0 7 0 262144 5 0 0 0
 4 2 1 3 0 0 0 0
-4 7534 100
+4 7534 100 100
 A
 18 1
 A
@@ -166,7 +166,7 @@ bottle odd green strange liquid~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 30 4 -1 -1 0 0 0 0
-3 1100 100
+3 1100 100 100
 #28116
 armor pins suit~
 &+ca suit of armor made of pins&n~
@@ -174,7 +174,7 @@ armor pins suit~
 ~
 9 16 0 0 7 0 537134080 9 0 94208 0
 5 3 1 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 A
 19 2
 #28117
@@ -184,7 +184,7 @@ dark leather bag~
 ~
 15 13 3 10 7 0 0 16385 0 0 0
 180 1 0 100 0 0 0 0
-3 235 100
+3 235 100 100
 #28118
 lizard skin backpack~
 &+Ga liz&+gard skin backpack&n~
@@ -192,7 +192,7 @@ lizard skin backpack~
 ~
 15 12 3 8 7 0 0 4194305 0 0 0
 151 1 0 100 0 0 0 0
-6 3535 100
+6 3535 100 100
 A
 18 -1
 #28119
@@ -202,7 +202,7 @@ golden band ogre magis~
 ~
 9 24 1 1 7 0 1048705 4097 0 0 0
 5 11 24 3 0 0 0 0
-3 4932 100
+3 4932 100 100
 A
 3 3
 A
@@ -214,7 +214,7 @@ large thin boat~
 ~
 22 5 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-40 12932 100
+40 12932 100 100
 #28121
 large chest~
 &+Ma large chest&n~
@@ -222,7 +222,7 @@ large chest~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 100 15 0 250 0 0 0 0
-0 0 100
+0 0 100 100
 #28122
 large white sign~
 &+Wa large white sign&n~
@@ -230,7 +230,7 @@ large white sign~
 ~
 13 6 3 10 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large white sign~
 
@@ -259,7 +259,7 @@ small green amulet~
 ~
 9 16 3 2 7 0 0 5 0 0 0
 1 2 0 3 0 0 0 0
-2 24 100
+2 24 100 100
 #28124
 red amulet~
 &+ra glimmering red amulet&n~
@@ -267,7 +267,7 @@ red amulet~
 ~
 9 16 3 2 7 0 1 5 0 0 0
 1 2 0 3 0 0 0 0
-2 23 100
+2 23 100 100
 #28125
 large black amulet~
 &+La large black amulet&n~
@@ -275,7 +275,7 @@ large black amulet~
 ~
 9 16 3 2 7 0 0 5 0 0 0
 1 2 0 3 0 0 0 0
-2 23 100
+2 23 100 100
 #28126
 verspin hammer old~
 &+Ca V&+cerspi&+Cn hammer&n~
@@ -283,7 +283,7 @@ verspin hammer old~
 ~
 5 16 3 8 7 0 4195328 8193 0 121258171 0
 4 3 3 6 0 0 0 0
-8 255 100
+8 255 100 100
 A
 13 5
 A
@@ -295,7 +295,7 @@ suit red steel armor~
 ~
 9 16 0 0 7 0 1024 9 0 85458969 4096
 45 3 1 5 0 0 0 0
-25 12000 100
+25 12000 100 100
 A
 5 7
 A
@@ -307,7 +307,7 @@ black gladius~
 ~
 5 16 3 0 7 0 1024 8193 0 87650331 0
 8 2 3 11 0 0 0 0
-7 3423 100
+7 3423 100 100
 A
 18 1
 A
@@ -319,7 +319,7 @@ knife hunting hunt~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 3 3 11 0 0 0 0
-3 2335 100
+3 2335 100 100
 A
 18 1
 A
@@ -331,7 +331,7 @@ old shield hunt hunting~
 ~
 37 16 3 15 7 0 1024 513 0 85475353 0
 2 1 3 115 0 0 0 0
-20 3535 100
+20 3535 100 100
 A
 19 1
 #28131
@@ -341,7 +341,7 @@ small altar~
 ~
 13 11 0 0 7 0 262145 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small altar~
 
@@ -355,7 +355,7 @@ large water pool~
 ~
 17 40 5 50 7 0 262145 0 0 0 0
 -1 -1 17 0 0 0 0 0
-0 0 100
+0 0 100 100
 #28133
 insignia nomad healers~
 &+can insignia of the &+Cnomad&+c healers&n~
@@ -363,7 +363,7 @@ insignia nomad healers~
 ~
 11 16 0 0 7 0 262144 2097153 0 0 0
 0 0 0 6 0 0 0 0
-1 493 100
+1 493 100 100
 A
 23 -1
 #28134
@@ -373,7 +373,7 @@ sapphire amethyst necklace~
 ~
 9 33 3 0 11 0 0 5 0 0 0
 7 0 0 3 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 sapphire amethyst necklace~
    &+WThis beautiful necklace is set with dozens of segmented &+bsapphires&+W.
@@ -390,7 +390,7 @@ shield studded gold~
 ~
 37 24 3 0 15 0 0 513 0 0 0
 1 3 4 150 5 0 0 0
-25 16100 100
+25 16100 100 100
 E
 shield studded gold~
    &+YThis fine shield has platinum engravings on it.  These engravings contain
@@ -408,7 +408,7 @@ finely crafted gold platinum ring~
 ~
 9 24 3 0 15 0 0 3 0 0 0
 8 0 0 4 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 finely crafted gold platinum ring~
    &+YThis fine ring has &+Wplatinum &+Yengravings on it of swords and shields.
@@ -424,7 +424,7 @@ mesh fencing mask~
 ~
 9 16 3 0 5 0 4096 262145 0 0 0
 10 0 0 4 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 mesh fencing mask~
    &+LThis mask is lined with a thin ring of &+Ygold&+L.  A thick steel
@@ -442,7 +442,7 @@ marble holy symbol~
 ~
 8 38 3 0 11 0 266240 16385 2 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 marble holy symbol~
    &+WThis marble symbol appears to be that one from the Verspin Shrine of the
@@ -455,7 +455,7 @@ pair sparkling eyeglasses glasses~
 ~
 9 15 3 0 5 0 0 131073 0 0 0
 7 0 0 2 0 0 0 0
-0 0 100 0 12 0 0
+0 0 100 100 0 12 0 0
 E
 pair sparkling eyeglasses glasses~
    &+cThese simple eyeglasses never seem to stop sparkling, even in the
@@ -473,7 +473,7 @@ derro skin forearm guard~
 ~
 9 2 3 0 5 0 0 4097 1 0 0
 11 0 0 2 0 0 0 0
-0 6000 100
+0 6000 100 100
 E
 derro skin forearm guard~
    &+yThis forearm guard covers the area just above the wrist up to the elbow.
@@ -492,7 +492,7 @@ platinum linked gem set belt~
 ~
 9 25 2 0 9 0 0 2049 66 0 0
 10 0 0 4 0 0 0 0
-0 25343 100 0 16 0 0
+0 25343 100 100 0 16 0 0
 E
 platinum linked gem set belt~
    &+WThis glorious belt of linked platinum chainlets has exotic &+Mgems&+W
@@ -510,7 +510,7 @@ large steel key~
 ~
 18 16 3 0 5 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 large steel key~
    &+LThis large steel key has a &+CVerspin &+Lsymbol etched onto it.
@@ -522,7 +522,7 @@ sign~
 ~
 8 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+LThis large &+Csteel&+L sign is posted on the northern wall of this portion
@@ -539,7 +539,7 @@ small gnomish totem~
 ~
 34 6 3 0 5 0 4096 16385 0 0 0
 48 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 small gnomish totem~
    &+RThis totem is rather small.  It is made of a variety of natural elements.
@@ -553,7 +553,7 @@ large pair pants~
 ~
 9 3 3 0 14 0 0 33 0 0 0
 15 0 0 2 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 large pair pants~
    &+MThis pair of silken pants is very finely made, but very large!
@@ -569,7 +569,7 @@ large uncut amethyst~
 ~
 8 26 3 0 15 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 150000 100
+1 150000 100 100
 E
 large uncut amethyst~
    &+MThis amethyst is flawless, even though it is uncut!  Any jeweller would
@@ -582,7 +582,7 @@ pair gladiator combat gauntlets~
 ~
 9 15 3 0 10 0 0 129 0 0 0
 15 0 0 4 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 pair gladiator combat gauntlets~
    &+LThese gladiator gauntlets are well-worn, but offer incredible protection.
@@ -598,7 +598,7 @@ icons~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 icons~
    &+LNumerous bits of prayer icons, including scripture, candles, incense,
@@ -612,7 +612,7 @@ boots plated bloodied gladiator~
 ~
 9 16 3 0 10 0 0 65 0 0 0
 20 0 0 5 0 0 0 0
-8 15000 100
+8 15000 100 100
 E
 boots plated bloodied gladiator~
    &+LThis heavily-plated pair of gladiator boots has large spiked
@@ -630,7 +630,7 @@ key~
 ~
 18 15 3 0 5 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key~
  &+LThis small key has markings of the Verspin Gladiator Pit on it.
@@ -642,7 +642,7 @@ pitch-black sash bloodhawk gang~
 ~
 9 15 3 0 5 0 0 2049 0 0 0
 15 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pitch-black sash bloodhawk gang~
    &+LThis pitch-black sash has the notorious marks of the &+rBloodhawk
@@ -660,7 +660,7 @@ wooden beads enlightenment~
 ~
 9 15 3 0 5 0 1 4097 0 0 0
 10 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden beads enlightenment~
 &+yThese wooden beads have a strange ang magical glow to them.  An
@@ -677,7 +677,7 @@ pleasant necklace flowers~
 ~
 9 30 3 0 14 0 0 5 0 0 0
 8 0 0 3 0 0 0 0
--25 25000 100 32 0 0 0
+-25 25000 100 100 32 0 0 0
 E
 pleasant necklace flowers~
    &+WThis majestic necklace is made of beautiful flowers strung together
@@ -694,7 +694,7 @@ Full heal proc weapon for mobs.~
 ~
 5 15 3 0 5 0 2 8192 66 0 0
 10 7 8 0 3 243009 60 6
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+WShinjin, the grand master opens his palms towards you, revealing the
@@ -722,7 +722,7 @@ Incendiary + immolate weapon for mobs.~
 ~
 5 15 3 0 5 0 2 8192 66 0 0
 10 7 8 0 3 110394 60 5
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+WShinjin, the grand master&N smiles politely and raises both hands.
@@ -742,7 +742,7 @@ white healer gloves~
 ~
 9 3 3 0 11 0 0 129 64 0 0
 8 0 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 white healer gloves~
    &+WThese white gloves have clerical stitchings on them and are used

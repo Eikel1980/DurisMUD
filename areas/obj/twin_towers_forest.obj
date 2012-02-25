@@ -5,7 +5,7 @@ a &+Wsign&N~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #13501
 underbrush~
 &+ya pile of underbrush&n~
@@ -13,7 +13,7 @@ underbrush~
 ~
 29 5 0 50 7 0 4096 0 0 0 0
 340 13515 3 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 underbrush~
 The underbrush looks loose, here, as though a good shove might move
@@ -26,7 +26,7 @@ underbrush~
 ~
 15 5 3 0 7 0 2 0 0 0 0
 340 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 underbrush~
 The underbrush is thick and tangled. Better be careful though, as
@@ -39,7 +39,7 @@ The &+WWhite Marble Fountain&N is pouring water from three tiers.~
 ~
 17 38 6 50 7 0 0 0 0 0 0
 1000 1000 16 0 0 0 0 0
-300 0 100
+300 0 100 100
 #13504
 marble bench~
 a beautiful &+Wwhite marble&N bench~
@@ -47,7 +47,7 @@ A &+WWhite Marble Bench&N is placed here for enjoyment of the &+Rgardens&N.~
 ~
 13 38 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-300 0 100
+300 0 100 100
 E
 default~
 ~
@@ -58,7 +58,7 @@ A freshly killed &+rfox&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-10 0 100
+10 0 100 100
 #13506
 fox pup~
 a freshly killed &+rfox pup&n~
@@ -66,7 +66,7 @@ A freshly killed &+rfox pup&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-10 0 100
+10 0 100 100
 #13507
 squirrel~
 a freshly killed &+ysquirrel&n~
@@ -74,7 +74,7 @@ A freshly killed &+ysquirrel&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-10 0 100
+10 0 100 100
 #13508
 wolf~
 a freshly killed wolf~
@@ -82,7 +82,7 @@ A freshly killed wolf is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-15 0 100
+15 0 100 100
 #13509
 wolf pup~
 a freshly killed wolf pup~
@@ -90,7 +90,7 @@ A freshly killed wolf pup is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 3 1 0 0 0 0
-15 0 100
+15 0 100 100
 #13510
 robin~
 a freshly killed &+yrobin&n~
@@ -98,7 +98,7 @@ A freshly killed &+yrobin&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #13511
 rabbit~
 a freshly killed &+Wrabbit&n~
@@ -106,7 +106,7 @@ A freshly killed &+Wrabbit&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 #13512
 chipmunk~
 a freshly killed &+ychipmunk&n~
@@ -114,7 +114,7 @@ A freshly killed &+ychipmunk&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 #13513
 raccoon~
 a freshly killed &+Lr&+ya&+Lc&+yc&+Lo&+yo&+Ln&N~
@@ -122,7 +122,7 @@ A freshly killed &+Lr&+ya&+Lc&+yc&+Lo&+yo&+Ln&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 #13514
 skunk~
 a freshly killed &+Lsk&+Wu&+Lnk&n~
@@ -130,7 +130,7 @@ A freshly killed &+Lsk&+Wu&Lnk&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 #13515
 buck~
 a freshly killed &+ybuck&n~
@@ -138,7 +138,7 @@ A freshly killed &+ybuck&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-25 0 100
+25 0 100 100
 #13516
 deer~
 a freshly killed &+ydeer&n~
@@ -146,7 +146,7 @@ A freshly killed &+ydeer&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-20 0 100
+20 0 100 100
 #13517
 doe~
 a freshly killed &+ydoe&n~
@@ -154,7 +154,7 @@ A freshly killed &+ydoe&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-18 0 100
+18 0 100 100
 #13518
 rattlesnake snake~
 a freshly killed &+yra&+Ytt&+yle&+Ysn&+yake&N~
@@ -162,7 +162,7 @@ A freshly killed &+yra&+Ytt&+yle&+Ysn&+yake&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 #13519
 bluejay~
 a freshly killed &+Bbluejay&n~
@@ -170,7 +170,7 @@ A freshly killed &+Bbluejay&N is lying here.~
 ~
 13 2 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #13520
 corpse~
 &+La rotting corpse of some animal&n~
@@ -178,7 +178,7 @@ corpse~
 ~
 13 2 3 30 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 #13521
 belt~
 &+ya gardner's belt&n~
@@ -186,7 +186,7 @@ Someone has dropped &+ya gardner's belt&N here.~
 ~
 11 12 3 3 7 0 8388608 2049 0 0 0
 0 0 0 5 0 0 0 0
-5 200 100
+5 200 100 100
 E
 belt gardners~
    The belt is made of heavy leather, and has slots for gardening tools to
@@ -201,7 +201,7 @@ jacket buckskin~
 ~
 9 12 0 0 7 0 0 9 0 0 0
 10 3 1 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 jacket buckskin~
    The jacket is made from the tanned hide of a buck.  The quality of the
@@ -219,7 +219,7 @@ boots deerskin~
 ~
 9 12 3 8 7 0 0 65 0 0 0
 6 6 1 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 boots deerskin~
    The boots are made from the tanned hide of a deer.  The quality of the
@@ -237,7 +237,7 @@ Someone has discarded &+ysome doeskin pants&N here.~
 ~
 9 12 3 8 7 0 0 33 0 0 0
 6 5 1 3 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 pants doeskin~
    The pants are made of the soft leather hide of a female deer. They look
@@ -253,7 +253,7 @@ belt snakeskin~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 4 10 0 3 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 belt snakeskin~
    The belt is made from the skin of a rattlesnake. The diamond design shows
@@ -268,7 +268,7 @@ cape fox fur~
 ~
 9 3 0 0 7 0 0 1025 0 0 0
 10 9 1 3 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 cape fox fur~
    The cape is made from the pelts of foxes, excellently sewn together in
@@ -285,7 +285,7 @@ Someone has lost &+ya &+Lr&+ya&+Lc&+yc&+Lo&+yo&+Ln&+y cap&N here.~
 ~
 9 12 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 cap coonskin raccoon~
    The cap is made from a racoon pelt, with the tail hanging down the back
@@ -300,7 +300,7 @@ leaves~
 ~
 15 30 3 0 7 0 2 0 0 0 0
 340 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 leaves~
    A thick blanket of leaves, pine needles, and small twigs covers the ground
@@ -314,7 +314,7 @@ nest~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 340 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 nest~
    The nest is made of soft twigs, tightly entwined together, with bits of
@@ -328,7 +328,7 @@ arrow~
 ~
 7 6 0 3 7 0 4096 16385 0 0 0
 0 1 8 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 arrow~
    The arrow is obviously of high quality, and made by an expert fletcher.
@@ -341,7 +341,7 @@ A venison chop has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13532
 rabbit meat~
 some rabbit meat~
@@ -349,7 +349,7 @@ Some rabbit meat has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13533
 rattlesnake steak~
 a rattlesnake steak~
@@ -357,7 +357,7 @@ A rattlesnake steak has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 8 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13534
 raccoon jerky~
 a strip of raccoon jerky~
@@ -365,7 +365,7 @@ A strip of raccoon jerky has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13535
 fox fillet~
 a fox fillet~
@@ -373,7 +373,7 @@ A fox fillet has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13536
 wolf roast~
 a wolf roast~
@@ -381,7 +381,7 @@ A wolf roast has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 18 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13537
 apple~
 &+Ran apple&N~
@@ -389,7 +389,7 @@ apple~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13538
 carrot~
 &+ra carrot&n~
@@ -397,7 +397,7 @@ carrot~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13539
 lettuce~
 &+Gsome lettuce&n~
@@ -405,7 +405,7 @@ lettuce~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13540
 tomato~
 &+Ra tomato&n~
@@ -413,7 +413,7 @@ tomato~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13541
 broccoli~
 &+gsome broccoli&n~
@@ -421,7 +421,7 @@ broccoli~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 4 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #13542
 tree~
 &+gan &+Rapple&N &+gtree&n~
@@ -429,7 +429,7 @@ tree~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 340 0 0 100 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 tree~
    The apple tree is lush, and covered with apples.
@@ -441,7 +441,7 @@ buckskin hide~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 buckskin hide~
    This is a beautifully tanned hide of a buck. It would make a really
@@ -454,7 +454,7 @@ deerskin hide~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 deerskin hide~
    This is a beautifully tanned hide of a deer. It would make a really
@@ -467,7 +467,7 @@ doeskin hide~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 doeskin hide~
    This is a beautifully tanned hide of a deer. It would make a really
@@ -480,7 +480,7 @@ rabbit pelt~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 rabbit pelt~
    The pelt is very soft and very white.  Many uses could be made of it,
@@ -493,7 +493,7 @@ snakeskin~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 snakeskin~
    This is a beautifully preserved skin of a rattlesnake, nicely displaying
@@ -507,7 +507,7 @@ coonskin~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 coonskin~
    This is a beautifully preserved hide of a raccoon, showing the
@@ -520,7 +520,7 @@ A wolf hide has been discarded here.~
 ~
 13 12 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 wolf hide~
    The wolf hide is very soft, and the silvery color of the gray wolf. The
@@ -534,7 +534,7 @@ fox fur~
 ~
 13 3 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 300 100
+1 300 100 100
 E
 fox fur~
    The fox fur is very soft, and the beautiful auburn color of the red fox.
@@ -548,7 +548,7 @@ A wolfhide backpack has been dropped here.~
 ~
 15 12 3 10 7 0 0 1025 0 0 0
 200 5 0 100 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 backpack bp~
    The backpack is made from the lightweight but durable hide of a gray
@@ -564,7 +564,7 @@ orchid~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 orchid~
    &+mThis beautiful exotic flower, with varying hues of lavender.&N
@@ -578,7 +578,7 @@ orchid sprig~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 orchid sprig~
    &+gThis is a sprig of the beautiful exotic &+Mo&+mrc&+Mhid&N &+gplant.  With proper care,
@@ -591,7 +591,7 @@ rose~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 rose~
    &+rThis is a beautiful flower, with varying hues of red.&N
@@ -605,7 +605,7 @@ rose plant~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 rose plant~
    &+gThis is a small plant of the beautiful climbing &+rr&+Ros&+re &+gvariety.  With
@@ -618,7 +618,7 @@ chrysanthemum mum~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 chrysanthemum mum~
    &+YThe chrysanthemum is a pretty flower with lots of thin petals.&N
@@ -632,7 +632,7 @@ chrysanthemum mum plant~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 chrysanthemum mum plant~
    &+gThis is a small &+Wchr&+Yysa&+Rnth&+Wemu&+Ym&N &+gplant.  With proper care, it could
@@ -645,7 +645,7 @@ tulip~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 tulip~
    &+YThis is a pretty yellow flower shaped like an open barrel, on a long
@@ -660,7 +660,7 @@ tulip bulb~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 tulip bulb~
    &+gThis little bulb almost looks like a piece of tree root.  But with
@@ -673,7 +673,7 @@ iris~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 iris~
    &+BThis is a very pretty blue flower on a long &+ggreen stem&+B, also known
@@ -688,7 +688,7 @@ iris bulb~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 iris bulb~
    &+gThis little bulb almost looks like a piece of tree root.  But with
@@ -701,7 +701,7 @@ sunflower~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 sunflower~
    &+WThis is the largest flower in the garden, spanning at least 12 inches
@@ -717,7 +717,7 @@ sunflower sprout~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 sunflower sprout~
    &+gThis is a sprout of the huge and beautiful &+Wsunf&+Ylo&+Wwer &+gplant. With proper
@@ -730,7 +730,7 @@ pansy~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 pansy~
    &+mThis is the smallest flower in the gargen, very tiny, with a ring of
@@ -745,7 +745,7 @@ pansy seedling~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 pansy seedling~
    &+gThis little seedling is the beginning of life for a little &+mp&+Ma&+bns&+My&N &+gplant.
@@ -759,7 +759,7 @@ daisy~
 ~
 9 30 0 0 7 0 0 8388609 0 0 0
 0 18 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 E
 daisy~
    &+WA &+Wda&+Yi&+Wsy&N &+Wis a smaller version of the sunflower, with a &+Yyellow center&+W,
@@ -774,7 +774,7 @@ daisy plant~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 daisy plant~
    &+gThis little plant is the beginning of life for a patch of &+Wdai&+Ysi&+Wes&N.
@@ -787,7 +787,7 @@ weed~
 ~
 13 30 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 weed~
    &+gThis little weed is growing where it doesn't belong.  It doesn't seem
@@ -800,7 +800,7 @@ arrow~
 ~
 7 6 0 3 7 0 4096 16385 0 0 0
 0 1 8 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 arrow~
    The arrow has a white shaft and green feathers.
@@ -812,7 +812,7 @@ arrow~
 ~
 7 6 0 3 7 0 4096 16385 0 0 0
 0 1 8 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 arrow~
    The arrow has a red shaft and white feathers.
@@ -824,7 +824,7 @@ arrow~
 ~
 7 6 0 3 7 0 4096 16385 0 0 0
 0 1 8 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 arrow~
    The arrow has a yellow shaft and red feathers.
@@ -836,7 +836,7 @@ Someone has dropped a scroll here.~
 ~
 2 29 1 2 7 0 0 1 64 0 0
 30 15 -1 -1 0 0 0 0
-1 2073 100
+1 2073 100 100
 #13573
 jacket buckskin~
 &+ya buckskin jacket lined with &+Wfur&N~
@@ -844,7 +844,7 @@ jacket buckskin~
 ~
 9 12 0 0 7 0 0 9 0 0 0
 6 3 1 3 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 jacket buckskin~
    The jacket looks a bit ragged and worn.
@@ -856,7 +856,7 @@ boots deerskin~
 ~
 9 12 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 boots deerskin~
    The boots look like they've seen better days.
@@ -872,7 +872,7 @@ Someone has discarded &+ysome doeskin pants&N here.~
 ~
 9 12 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 pants doeskin~
    The pants are well-made, but getting old.  There are a few holes at
@@ -885,7 +885,7 @@ belt snakeskin~
 ~
 9 12 3 3 7 0 0 2049 0 0 0
 2 10 0 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 belt snakeskin~
    This belt has seen better days, and the diamond design that marks it
@@ -898,7 +898,7 @@ cape fox fur~
 ~
 9 3 0 0 7 0 0 1025 0 0 0
 7 9 1 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 cape fox fur~
    The cape is made from the pelts of foxes.  The workmanship is quite
@@ -912,7 +912,7 @@ Someone has lost &+ya &+Lr&+ya&+Lc&+yc&+Lo&+yo&+Ln&+y cap&N here.~
 ~
 9 12 3 3 7 0 0 17 0 0 0
 2 4 16 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 cap coonskin raccoon~
    This coonskin cap is just about ready to be replaced.  The tail is
@@ -925,7 +925,7 @@ A wolfhide backpack has been dropped here.~
 ~
 15 12 3 10 7 0 0 17409 0 0 0
 200 5 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 backpack bp~
    This backpack was once very nice, made from the lightweight but durable
@@ -942,7 +942,7 @@ bubbling brook~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 1000 1000 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #13581
 earring~
 &+Ga &+Ybi&+Brd&+Rf&+Ge&+Ra&+Yth&+Ber&N &+Ge&+Yar&+Rri&+Bn&+Yg~
@@ -950,7 +950,7 @@ earring~
 ~
 9 5 1 1 7 0 0 524289 64 0 0
 0 14 0 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring birdfeather~
 This earring seems to be made of the feathers of several different
@@ -968,7 +968,7 @@ A small bag lies discarded here.~
 ~
 11 3 3 10 7 0 36864 16385 64 0 0
 0 0 0 100 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 bag fairy dust~
    This tiny little bag loogs perfectly ordinary, until you look inside.
@@ -987,7 +987,7 @@ wand~
 ~
 3 6 2 4 7 0 10522624 16385 64 0 0
 31 1 1 83 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 wand~
    This little wand seems small and fragile in your hands, and it
@@ -1005,7 +1005,7 @@ yellow feather yellowbird~
 ~
 3 5 2 4 7 0 2129920 16385 64 0 0
 20 1 1 65 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 yellow feather yellowbird~
    This is a &+Ybright yellow birdfeather&N, about eight inches long.
@@ -1022,7 +1022,7 @@ red feather redbird~
 ~
 3 5 2 4 7 0 1081344 16385 64 0 0
 20 1 1 92 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 red feather redbird~
    This is a &+Rbright red birdfeather&N, about eight inches long.
@@ -1039,7 +1039,7 @@ blue feather bluebird~
 ~
 3 5 2 4 7 0 32768 16385 64 0 0
 20 1 1 3 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 blue feather bluebird~
    This is a &+Bbright blue birdfeather&N, about eight inches long.
@@ -1056,7 +1056,7 @@ green feather greenbird~
 ~
 3 5 2 4 7 0 294912 16385 64 0 0
 20 1 1 141 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 green feather greenbird~
    This is a &+Gbright green birdfeather&N, about eight inches long.
@@ -1073,7 +1073,7 @@ earring~
 ~
 9 5 1 1 7 0 0 524289 64 0 0
 4 14 0 3 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 earring birdfeather~
 This earring seems to be made of the feathers of several different
@@ -1089,7 +1089,7 @@ wand~
 ~
 3 6 2 4 7 0 10522624 16385 64 0 0
 31 4 4 84 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 wand~
    This little wand seems small and fragile in your hands, and it
@@ -1105,7 +1105,7 @@ earring~
 ~
 9 5 1 1 7 0 0 524289 64 0 0
 0 14 0 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring birdfeather~
 This earring seems to be made of the feathers of several different
@@ -1121,7 +1121,7 @@ wand~
 ~
 3 5 2 4 7 0 10522624 16385 64 0 0
 31 4 4 189 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 wand~
    This little wand seems small and fragile in your hands, and it
@@ -1137,7 +1137,7 @@ gown~
 ~
 9 3 3 0 7 0 0 9 0 0 0
 10 3 1 3 0 0 0 0
-0 1 100
+0 1 100 100
 A
 3 4
 A
@@ -1149,7 +1149,7 @@ jacket leaves~
 ~
 9 30 0 0 7 0 12156928 9 0 0 0
 12 3 1 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 jacket leaves~
    This jacket has be made of some kind of thick, tough, leaves,
@@ -1165,7 +1165,7 @@ thorn~
 ~
 5 6 2 0 7 0 0 8193 0 0 0
 2 3 3 11 0 0 0 0
-4 3948 100
+4 3948 100 100
 A
 18 1
 A

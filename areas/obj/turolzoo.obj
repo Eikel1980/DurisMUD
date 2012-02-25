@@ -5,7 +5,7 @@ hook~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 340 53019 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hook~
 &+L &N
@@ -17,7 +17,7 @@ saber tooth~
 ~
 13 10 2 0 7 0 4104 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 saber tooth~
 &+WThis is simply the tooth of a tiger.&N
@@ -29,7 +29,7 @@ club wooden~
 ~
 5 6 4 0 1 0 0 8193 0 0 0
 10 1 6 7 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 club wooden~
 &+YThis club has been crudely fashioned from very hard wood. It still has knots
@@ -42,7 +42,7 @@ tooth sharp gorilla~
 ~
 13 10 1 0 7 0 4104 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tooth sharp gorilla~
 &+WThis shiny, red tooth appears to have recently been pulled.&N
@@ -54,7 +54,7 @@ helmet bark~
 ~
 9 4 3 0 13 0 0 17 64 0 0
 10 0 0 3 0 0 0 0
-1 35090 100
+1 35090 100 100
 E
 helmet bark~
 &+yThis helmet has been finely constructed from very thin bark. It is very light
@@ -72,7 +72,7 @@ zebra sleeves~
 ~
 9 12 3 0 10 0 0 257 64 4165209668 0
 8 0 0 3 0 0 0 0
-2 12300 100
+2 12300 100 100
 E
 zebra sleeves~
 &+LThese sleeves have been created from tough zebra hide stretched over metal

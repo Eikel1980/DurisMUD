@@ -5,7 +5,7 @@ key~
 ~
 18 15 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 This key is made from a hard metal and is quite complicated
@@ -17,7 +17,7 @@ skeletal remains~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-30 0 100
+30 0 100 100
 E
 skeletal remains~
 These are the remains of the necromancer that created the undead
@@ -30,7 +30,7 @@ safe~
 ~
 15 15 3 0 7 0 4096 0 0 0 0
 1000 13 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 safe~
 This safe small and probably holds something very valuable.
@@ -45,7 +45,7 @@ broach silver piece jewelry~
 ~
 9 15 3 0 7 0 4097 5 0 0 0
 10 0 0 4 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 broach silver piece jewelry~
 This broach is a beautiful example of the Royal Jewelers Guild's work. It
@@ -62,7 +62,7 @@ ruby small~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 0 0 0 50 0 0 0 0
-0 120000 100
+0 120000 100 100
 E
 ruby small~
 This ruby while small, has been cut and polished extremely well and glints
@@ -75,7 +75,7 @@ crown~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 0 0 0 50 0 0 0 0
-0 140000 100
+0 140000 100 100
 E
 crown~
 This crown looks spectacular, it was probably made for a vain noble or
@@ -89,7 +89,7 @@ table~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table~
 This table is very huge and was probably used for many meetings in the town.
@@ -101,7 +101,7 @@ chest~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1000 13 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
 This chest is very old but the lock appears to be still functioning on it.
@@ -113,7 +113,7 @@ war fork~
 ~
 5 20 3 0 7 0 0 8193 0 0 0
 2 1 7 0 0 0 0 0
-3 7000 100
+3 7000 100 100
 E
 war fork~
 This ruthless weapon of war has a magical enchantment on it which makes
@@ -130,7 +130,7 @@ belt~
 ~
 9 19 3 0 11 0 4097 2049 64 47058500 0
 7 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 belt~
 This belt was one of the cities most powerful artifacts. The adamantium
@@ -149,7 +149,7 @@ shelf~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1000 0 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shelf~
 A wooden shelf full of books
@@ -161,7 +161,7 @@ book~
 ~
 13 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 This book is very thick and detailed. It explains the history of how Mt.Sknak
@@ -176,7 +176,7 @@ chest~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chest~
 This chest was used by guests to store their belongings ages ago. There
@@ -191,7 +191,7 @@ box strongbox~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1000 13 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 box strongbox~
 This box is very small and plain. The lock on it looks quite sturdy however.
@@ -203,7 +203,7 @@ gemstone gem~
 ~
 8 27 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 300000 100
+0 300000 100 100
 E
 gemstone gem~
 This is an extremely large, and rare gemstone. It has been cut by a
@@ -218,7 +218,7 @@ shard metal~
 ~
 5 16 3 0 7 0 0 8193 64 0 0
 2 2 4 11 0 0 0 0
-0 10 100
+0 10 100 100
 E
 shard metal~
     This is an ancient weapon that has decayed over time. At one time it
@@ -236,7 +236,7 @@ potion~
 ~
 10 15 3 0 7 0 0 1 0 0 0
 50 66 14 15 0 0 0 0
-0 10 100
+0 10 100 100
 E
 potion~
 This potion sparkles with a strange ethereal power. Whoever quaffs it will
@@ -249,7 +249,7 @@ hood~
 ~
 9 1 3 0 10 0 66560 17 0 12619268 0
 4 0 0 3 0 0 0 0
-0 40000 100
+0 40000 100 100
 E
 hood~
 This hood is made from a strange ethereal substance. Useful to mages only,
@@ -266,7 +266,7 @@ broadsword sword~
 ~
 5 16 3 0 7 0 1024 8193 0 87572507 0
 5 1 10 0 0 0 0 0
-4 10000 100
+4 10000 100 100
 E
 broadsword sword~
 This weapon is very old and probably isn't as useful as it once was. It
@@ -283,7 +283,7 @@ statue onyx~
 ~
 13 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue onyx~
 This exceptionally crafted statue is hewn from deep black onyx.
@@ -304,7 +304,7 @@ massive bone mace~
 ~
 5 10 3 0 7 0 4194304 8193 0 0 0
 7 4 5 7 0 0 0 0
-13 53530 100
+13 53530 100 100
 E
 massive bone mace~
 This is the bone of some massive animal fashioned into a well designed
@@ -321,7 +321,7 @@ bone breastplate~
 ~
 9 10 3 0 11 0 0 9 0 0 0
 14 0 0 3 0 0 0 0
-10 8000 100
+10 8000 100 100
 E
 bone breastplate~
 This bone breastplate is quite sturdy, and would protect against the user
@@ -334,7 +334,7 @@ bone shin guards~
 ~
 9 10 3 0 10 0 0 33 0 0 0
 6 0 0 3 0 0 0 0
-4 3000 100
+4 3000 100 100
 E
 bone shin guards~
 You see nothing special...
@@ -346,7 +346,7 @@ bone arm guards~
 ~
 9 10 3 0 11 0 0 257 0 0 0
 8 0 0 3 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 bone arm guards~
 This consists of tough animal bones sewn together to make arm guards.
@@ -358,7 +358,7 @@ bronze shield~
 ~
 37 20 3 0 11 0 4096 513 64 13381124 0
 1 3 4 130 3 0 0 0
-5 4000 100
+5 4000 100 100
 E
 bronze shield~
 This sturdy shield could provide adequate protection against any type of
@@ -373,7 +373,7 @@ skeletal remains~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-30 0 100
+30 0 100 100
 E
 skeletal remains~
 These are the remains of the necromancer that created the undead
@@ -386,7 +386,7 @@ skeletal remains~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-30 0 100
+30 0 100 100
 E
 skeletal remains~
 These are the remains of the necromancer that created the undead
@@ -399,7 +399,7 @@ skeletal remains~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-30 0 100
+30 0 100 100
 E
 skeletal remains~
 These are the remains of the necromancer that created the undead
@@ -412,7 +412,7 @@ glowing steel necklace~
 ~
 9 16 3 0 7 0 1 5 0 0 0
 3 0 0 1 0 0 0 0
-0 13000 100
+0 13000 100 100
 E
 necklace~
 This strange necklace enhances the abilities of its wearer.
@@ -428,7 +428,7 @@ metal ring gems encrusted~
 ~
 9 15 3 0 7 0 0 3 0 0 0
 1 0 0 1 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 ring~
 This ring looks like it was designed by an expert craftsman. While
@@ -447,7 +447,7 @@ skeletal remains~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-30 0 100
+30 0 100 100
 E
 skeletal remains~
 These are the remains of the necromancer that created the undead
@@ -460,7 +460,7 @@ ring~
 ~
 9 16 3 0 10 0 0 3 0 0 0
 0 0 0 3 0 0 0 0
-0 5434 100
+0 5434 100 100
 E
 ring~
 Plain in appearance, this ring bestows a great defensive power
@@ -477,7 +477,7 @@ arrow~
 ~
 7 15 3 0 7 0 0 1 0 0 0
 5 3 6 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -489,7 +489,7 @@ mithril plate barding~
 ~
 9 18 3 0 7 0 4608 16777217 64 0 16384
 30 0 0 4 0 0 0 0
-10 80000 100
+10 80000 100 100
 E
 mithril plate barding~
 While originally intended to be worn by a war horse, this barding can be
@@ -507,7 +507,7 @@ ring~
 ~
 11 15 3 0 7 0 4096 3 64 0 0
 0 0 0 0 0 0 0 0
-0 395832 100
+0 395832 100 100
 E
 ring~
 Simple in design, but immense in power. The magical force that radiates
@@ -522,7 +522,7 @@ dagger blade~
 ~
 5 15 3 0 15 0 5120 8193 64 69632 0
 2 2 5 0 0 38 60 30
-0 0 100
+0 0 100 100
 E
 dagger blade~
 Utterly black, this dagger almost seems to absorb the light around it.
@@ -559,7 +559,7 @@ blue diamond~
 ~
 20 15 3 0 7 0 4096 1 0 0 0
 0 0 0 1750 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blue diamond~
 This gem is smaller than a dime, shaped like a cushion, and one of only

@@ -818,17 +818,17 @@ M 0 78515 17 78537 100 0 0 0       * a basilisk
 G 1 78479 17 0 100 0 0 0           *    basilisk proc1
 M 0 78515 17 78537 100 0 0 0       * a basilisk
 G 1 78479 17 0 100 0 0 0           *    basilisk proc1
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
 M 0 78441 11 78538 100 0 0 0       * a giant frost wyrm
 M 0 78441 11 78538 100 0 0 0       * a giant frost wyrm
 M 0 78441 11 78538 100 0 0 0       * a giant frost wyrm
@@ -893,7 +893,7 @@ M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
@@ -902,9 +902,9 @@ M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78441 11 78538 100 0 0 0       * a giant frost wyrm
 M 0 78441 11 78538 100 0 0 0       * a giant frost wyrm
 M 0 78441 11 78538 100 0 0 0       * a giant frost wyrm
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
-M 0 78442 19 78538 100 0 0 0       * A mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
+M 0 78442 19 78538 100 0 0 0       * a mountain yeti
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78436 34 78538 100 0 0 0       * a winter wolf
 M 0 78447 26 78538 100 0 0 0       * an ice hawk
@@ -1258,10 +1258,10 @@ M 0 78447 26 78660 100 0 0 0       * an ice hawk
 M 0 78447 26 78662 100 0 0 0       * an ice hawk
 M 0 78447 26 78662 100 0 0 0       * an ice hawk
 M 0 78447 26 78662 100 0 0 0       * an ice hawk
-M 0 78442 19 78663 100 0 0 0       * A mountain yeti
-M 0 78442 19 78663 100 0 0 0       * A mountain yeti
-M 0 78442 19 78664 100 0 0 0       * A mountain yeti
-M 0 78442 19 78664 100 0 0 0       * A mountain yeti
+M 0 78442 19 78663 100 0 0 0       * a mountain yeti
+M 0 78442 19 78663 100 0 0 0       * a mountain yeti
+M 0 78442 19 78664 100 0 0 0       * a mountain yeti
+M 0 78442 19 78664 100 0 0 0       * a mountain yeti
 M 0 78447 26 78664 100 0 0 0       * an ice hawk
 M 0 78447 26 78667 100 0 0 0       * an ice hawk
 M 0 78447 26 78667 100 0 0 0       * an ice hawk

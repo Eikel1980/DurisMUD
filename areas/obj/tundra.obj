@@ -5,7 +5,7 @@ bookrack book rack books~
 ~
 15 6 2 5 7 0 0 0 0 0 0
 10000000 0 0 100 0 0 0 0
-10000 10000 100
+10000 10000 100 100
 E
 bookrack book rack books~
 This book rack is very old and dusty.
@@ -17,7 +17,7 @@ mirror~
 ~
 29 7 0 50 7 0 0 0 0 0 0
 270 13751 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mirror~
  This mirror seems to take up the whole back wall, and has been polished
@@ -30,7 +30,7 @@ leggings~
 ~
 9 16 3 8 7 0 41088 33 66 4198895524 0
 10 5 1 3 0 0 0 0
-10 9129 100
+10 9129 100 100
 E
 leggings~
 These leggings seem be a raging fire swirling around the wearer's legs.
@@ -48,7 +48,7 @@ mask~
 ~
 9 10 3 3 7 0 2195456 262145 66 0 0
 9 13 1 3 0 0 0 0
-3 9598 100
+3 9598 100 100
 E
 mask~
 This mask seems to have been carved directly out of human skulls, and is
@@ -65,7 +65,7 @@ sign~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+L-------------------------------------------------------------------------
@@ -94,7 +94,7 @@ key fishbones~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #13706
 gloves illithid~
 &+La dark pair of &+millithid gloves&n~
@@ -102,7 +102,7 @@ gloves illithid~
 ~
 9 12 3 6 7 0 111744 129 64 37883812 0
 4 7 6 3 0 0 0 0
-1 5858 100
+1 5858 100 100
 E
 gloves illithid~
 These gloves seem to have been made with the greatest craftsmanship of a
@@ -119,7 +119,7 @@ potion~
 ~
 10 7 2 4 7 0 110593 1 64 0 0
 50 108 26 3 0 0 0 0
-2 59220 100
+2 59220 100 100
 #13708
 book~
 &+yan old book&n~
@@ -127,7 +127,7 @@ book~
 ~
 13 28 2 5 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 23 100
+2 23 100 100
 #13709
 book~
 &+ga dark green book&n~
@@ -135,7 +135,7 @@ book~
 ~
 13 28 2 5 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 24 100
+2 24 100 100
 #13710
 book~
 &+ma dark magenta book&n~
@@ -143,7 +143,7 @@ book~
 ~
 13 28 2 5 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 25 100
+2 25 100 100
 #13711
 book~
 &+La dark black book&n~
@@ -151,7 +151,7 @@ book~
 ~
 13 28 2 5 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 26 100
+2 26 100 100
 #13712
 leggings ice~
 &+La pair of &+Wglowing &+Cice leggings&n~
@@ -159,7 +159,7 @@ leggings ice~
 ~
 9 16 3 8 7 0 99456 33 66 37883812 0
 10 5 1 3 0 0 0 0
-6 1982 100
+6 1982 100 100
 E
 leggings ice forest~
 These leather leggings, seem to have been woven out of hides, and magical
@@ -176,7 +176,7 @@ boots snowy~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 8 6 1 3 0 0 0 0
-6 1056 100
+6 1056 100 100
 E
 boots snowy~
 These boots are made from hides of various animals from the tundra. They
@@ -191,7 +191,7 @@ scales dragon red~
 ~
 8 35 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 4932 100
+2 4932 100 100
 #13715
 scale dragon red armor~
 &+ra suit of spiked red dragon scale armor&n~
@@ -199,7 +199,7 @@ scale dragon red armor~
 ~
 9 35 0 0 7 0 8192 9 64 4165209604 0
 30 3 1 3 0 0 0 0
-20 23599 100 536870912 0 0 0
+20 23599 100 100 536870912 0 0 0
 E
 scale dragon red armor~
 This dragon scale has been made from a master, and is incredibly light weight!
@@ -215,7 +215,7 @@ goggles snow~
 ~
 9 16 3 3 7 0 106496 131073 64 0 0
 3 12 2 3 0 0 0 0
-4 9558 100
+4 9558 100 100
 E
 goggles snow~
 The barbarian leader seems to have saved these goggles from the day he
@@ -232,7 +232,7 @@ A pile of coins lies here.~
 ~
 20 16 1 0 7 0 102400 1 0 0 0
 100 100 100 100 0 0 0 0
-0 0 100
+0 0 100 100
 #13718
 fountain blood~
 &+Ra blood-&+Cfilled fountain&n~
@@ -240,7 +240,7 @@ fountain blood~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain blood~
   This fountain has been carved from a black misty marble and blood pours
@@ -253,7 +253,7 @@ necklace~
 ~
 9 15 3 2 7 0 128 5 64 0 0
 5 2 0 3 0 0 0 0
-1 100 100
+1 100 100 100
 E
 necklace~
 This necklace is a series of ice shards that have been strung around a
@@ -272,7 +272,7 @@ sword tundra~
 ~
 5 16 3 10 7 0 3253249 8193 64 87572571 0
 5 1 6 3 0 10 40 20
-10 1012 100 16 64 0 0
+10 1012 100 100 16 64 0 0
 E
 sword tundra~
   This huge sword seems to be crystal clear, and made of ice. However, it does
@@ -302,7 +302,7 @@ robe golden north~
 ~
 9 3 3 8 7 0 99328 9 64 37785092 0
 12 3 1 3 0 0 0 0
-2 1959 100
+2 1959 100 100
 A
 13 25
 A
@@ -314,7 +314,7 @@ head bloody malinar~
 ~
 13 2 0 0 7 0 8491008 1 0 0 0
 0 0 0 0 0 0 0 0
-20 0 100
+20 0 100 100
 E
 head bloody malinar~
 &+rThis head is the head of Malinar, blood enemy of Eleadora. At one time,
@@ -328,7 +328,7 @@ rations iron~
 ~
 19 15 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-2 40 100
+2 40 100 100
 #13724
 water skin leather~
 &+ya leather waterskin&n~
@@ -336,7 +336,7 @@ water skin leather~
 ~
 17 12 3 8 7 0 0 1 0 0 0
 20 20 0 0 0 0 0 0
-2 110 100
+2 110 100 100
 #13725
 backpack hide back pack bp~
 &+ya large hide backpack&n~
@@ -344,7 +344,7 @@ backpack hide back pack bp~
 ~
 15 12 3 10 7 0 0 1025 0 0 0
 200 5 0 100 0 0 0 0
-1 673 100
+1 673 100 100
 #13726
 potion icy~
 &+Can icy potion&n~
@@ -352,7 +352,7 @@ potion icy~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 30 66 65 64 10 0 0 0
-2 45324 100
+2 45324 100 100
 #13727
 potion cloudy grey~
 a cloudy grey potion~
@@ -360,7 +360,7 @@ A cloudy grey potion lies here~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 50 1 14 43 0 0 0 0
-1 5700 100
+1 5700 100 100
 #13728
 boots giant grey~
 &+La pair of spiked grey boots&n~
@@ -368,7 +368,7 @@ boots giant grey~
 ~
 9 16 3 8 7 0 8192 65 0 4165209604 0
 10 6 1 3 0 0 0 0
-10 45858 100 134217728 0 0 0
+10 45858 100 100 134217728 0 0 0
 E
 boots giant grey~
   These boots seem to have been crafted from a very fine leather, with small
@@ -387,7 +387,7 @@ crown shaman~
 ~
 9 15 3 0 7 0 0 17 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 67108864 0 0 0
+0 0 100 100 67108864 0 0 0
 A
 34 3
 A
@@ -399,7 +399,7 @@ small key wood~
 ~
 18 15 3 0 7 0 4096 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #13755
 earring dangling crystal~
 &+La dangling &+Learring of &+Mcrystal&n~
@@ -407,7 +407,7 @@ earring dangling crystal~
 ~
 9 8 1 1 7 0 106496 524289 64 0 0
 4 0 0 3 0 0 0 0
--1 1294 100
+-1 1294 100 100
 E
 earring dangling crystal~
 This earring seems to have been forged from clear crystal. The crystal has

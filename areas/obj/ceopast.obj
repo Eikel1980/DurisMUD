@@ -5,7 +5,7 @@ water pool~
 ~
 17 11 10 0 15 100 0 0 0 0 0
 100 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water pool~
    This small pool of water bubbles up from the ground,
@@ -21,7 +21,7 @@ lock hair~
 ~
 12 30 8 0 15 100 73728 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 lock hair~
    This lock of hair appears to be from that of a dryad,
@@ -35,7 +35,7 @@ white bell blossom~
 ~
 12 30 8 0 15 100 8433664 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 white bell blossom~
    This pure white bell blossom is almost a light unto
@@ -51,7 +51,7 @@ shard bluestone~
 ~
 12 11 10 0 15 100 45056 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 shard bluestone~
    This small shard of bluestone, appears to have been
@@ -66,7 +66,7 @@ wood wooden tube~
 ~
 10 6 3 0 12 25 106496 16385 64 0 0
 50 28 44 56 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 wood wooden tube~
    This tiny wooden tube shows no sign of workmanship,
@@ -81,7 +81,7 @@ bluestone key~
 ~
 18 11 3 0 15 100 8429568 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 123 100
+1 123 100 100
 E
 bluestone key~
    This small key has been made from carefully crafted
@@ -95,7 +95,7 @@ blood red feather~
 ~
 12 50 3 0 15 100 45056 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 blood red feather~
    This small feather is blood red in color, towards
@@ -109,7 +109,7 @@ vial bluestone~
 ~
 10 11 3 0 12 50 73728 16385 64 0 0
 50 1 28 66 0 0 0 0
-1 35324 100
+1 35324 100 100
 E
 vial bluestone~
    This small vial has been made out of bluestone, its
@@ -122,7 +122,7 @@ black wolf pelt~
 ~
 12 12 3 0 10 100 45056 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 black wolf pelt~
    A deep black pelt, most likely from a wolf.  Its furs
@@ -136,7 +136,7 @@ platemail bluestone dragon past~
 ~
 9 19 3 0 12 50 111616 9 64 121258043 0
 20 0 0 4 0 0 0 0
-10 1212 100 134217728 0 0 0
+10 1212 100 100 134217728 0 0 0
 E
 platemail bluestone dragon past~
    This suprisingly light platemail has been crafted
@@ -158,7 +158,7 @@ bluestone bracelet~
 ~
 9 11 3 0 7 50 12288 20481 64 0 0
 6 0 0 4 0 0 0 0
-3 1212 100 73732 64 0 0
+3 1212 100 100 73732 64 0 0
 E
 bluestone bracelet~
    This small bracelet has been crafted from bluestone.
@@ -177,7 +177,7 @@ portal~
 ~
 25 1 10 0 15 100 1 0 64 0 0
 81400 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal~
    This massive portal rises up from the ground, its
@@ -192,7 +192,7 @@ coins pile~
 ~
 20 25 4 0 15 100 0 1 0 0 0
 0 0 1250 125 0 0 0 0
-1 1 100
+1 1 100 100
 E
 coins pile~
    This large pile of coins must have been gathered
@@ -206,7 +206,7 @@ ring bluestone~
 ~
 9 11 9 0 12 0 3190784 3 64 0 0
 6 0 0 4 0 0 0 0
-3 1212 100
+3 1212 100 100
 E
 ring bluestone~
    This ring has been crafted from bluestone.  It
@@ -225,7 +225,7 @@ white wolf pelt~
 ~
 12 12 3 0 15 100 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 white wolf pelt~
    This pelt is from a white wolf, its coat matted with
@@ -239,7 +239,7 @@ brown wolf pelt~
 ~
 12 12 3 0 15 100 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 brown wolf pelt~
    Taken from a brown wolf this pelt is in good
@@ -253,7 +253,7 @@ staff illumination~
 ~
 3 1 9 0 12 0 3584000 16385 64 0 0
 60 3 3 9 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 staff illumination~
    This brightly glowing staff is pure white, it casts
@@ -270,7 +270,7 @@ key obsidian~
 ~
 18 36 3 0 13 100 8401024 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key obsidian~
    This tiny key has been made from obsidian, its glossy
@@ -283,7 +283,7 @@ key bone~
 ~
 18 10 3 0 14 100 8400896 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key bone~
    This tiny bone key has been carefully made using the
@@ -296,7 +296,7 @@ skull winter wolf~
 ~
 11 10 3 0 13 50 3256320 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 35492 100 0 128 0 0
+5 35492 100 100 0 128 0 0
 E
 skull winter wolf~
    This large skull emits a strange cold, it appears to
@@ -313,7 +313,7 @@ winter wolf maw mask~
 ~
 9 10 3 0 14 50 3154944 262145 64 87572507 0
 6 0 0 4 0 0 0 0
-2 1212 100 32 0 0 0
+2 1212 100 100 32 0 0 0
 E
 winter wolf maw mask~
    This maw of large wolf has been blackened, leaving a
@@ -330,7 +330,7 @@ leggings rhemoraz scale~
 ~
 9 47 3 0 14 50 2109440 33 64 0 0
 12 0 0 4 0 0 0 0
-5 1212 100
+5 1212 100 100
 E
 leggings rhemoraz scale~
    These leggings have been made from the scales of a
@@ -348,7 +348,7 @@ bluestone bracelet~
 ~
 9 11 9 0 7 20 12288 20481 64 0 0
 6 0 0 4 0 0 0 0
-3 1212 100 0 64 0 0
+3 1212 100 100 0 64 0 0
 E
 bluestone bracelet~
    This small bracelet has been crafted from bluestone.
@@ -367,7 +367,7 @@ tiara circlet~
 ~
 11 36 2 0 12 0 2097153 17 0 0 0
 0 0 0 0 0 0 0 0
-1 376239 100
+1 376239 100 100
 E
 tiara circlet~
 &+L   This dully glowing tiara has been blackened from extended contact
@@ -386,7 +386,7 @@ bracer blackened~
 ~
 11 11 2 0 12 0 1049601 4097 0 46567332 0
 0 0 0 0 0 0 0 0
-1 262326 100
+1 262326 100 100
 E
 bracer blackened~
 &+L   This bracer, made of magical&N &+bblu&+Besto&+bne&N &+Lhums lightly,

@@ -5,7 +5,7 @@ rubble pile debris~
 ~
 13 11 3 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 #97801
 vortex egress~
 &+wthe egress&n~
@@ -13,7 +13,7 @@ vortex egress~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 0 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97820
 copse trees~
 &+ga c&+yo&+Yp&+ys&+ge of &+Gtrees&n~
@@ -21,7 +21,7 @@ copse trees~
 ~
 13 6 3 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 #97821
 timber stand trees~
 &+Ga &+yti&+Ymb&+yer &+Gstand&n~
@@ -29,4 +29,4 @@ timber stand trees~
 ~
 13 6 3 0 7 0 8192 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100

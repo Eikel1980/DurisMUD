@@ -5,7 +5,7 @@ A marital aid made of bronze is lying here.~
 ~
 18 20 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 dildo key bronze aid marital~
 This dildo takes freudian analysis to a new level, as it has been fashioned
@@ -18,7 +18,7 @@ A key of black metal lies here.~
 ~
 18 16 1 2 7 0 8912896 16385 0 0 0
 0 50 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key black metal adamantine~
 This large key must be to a heavy door of some sort.
@@ -30,7 +30,7 @@ great fountain arachdrathos~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-10000 56756 100
+10000 56756 100 100
 E
 great fountain arachdrathos~
 This fountain is absoluetley beautiful, made of softly marbled basalt it has
@@ -46,7 +46,7 @@ large table~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 4395793 100
+1000 4395793 100 100
 E
 large table~
 This table is made of solid oak and is from the overworld. It has a high
@@ -61,7 +61,7 @@ ledger book~
 ~
 13 28 2 5 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ledger book~
 This ledger is used to regulate the official business of House Slin. It
@@ -75,7 +75,7 @@ helmet strange spikes~
 ~
 9 16 3 10 7 0 0 17 0 0 0
 9 4 1 3 0 0 0 0
-9 3000 100
+9 3000 100 100
 A
 3 5
 A
@@ -87,7 +87,7 @@ pendant spider obsidian~
 ~
 11 36 3 2 7 0 65536 16389 0 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 spider pendant obsidian~
 This silver necklace is highlighted by a fragile obsidian spider crawling
@@ -105,7 +105,7 @@ idol basalt spider~
 ~
 12 11 0 0 7 0 65536 16385 64 0 0
 0 0 0 0 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 basalt spider idol~
 This idol is shaped like a large spider made of basalt. It has been roughly
@@ -123,7 +123,7 @@ earring dangling silver spider chain~
 ~
 9 22 1 1 7 0 1114112 524289 0 0 0
 5 0 0 1 0 0 0 0
-1 1 100
+1 1 100 100
 A
 3 5
 A
@@ -135,7 +135,7 @@ seal violet badge ilith~
 ~
 27 16 0 50 7 0 524288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 #36410
 seal badge irridescent olipth~
 &+Cthe irridescent seal of Olipth&N~
@@ -143,7 +143,7 @@ seal badge irridescent olipth~
 ~
 27 16 0 50 7 0 524288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 #36411
 seal badge bone sa'zarn~
 &+Wthe bone seal of Sa'Zarn&N~
@@ -151,7 +151,7 @@ seal badge bone sa'zarn~
 ~
 27 10 0 50 7 0 524288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 #36412
 seal bronze badge zarbonesti~
 &+ythe bronze seal of Zarbonesti&N~
@@ -159,7 +159,7 @@ seal bronze badge zarbonesti~
 ~
 27 20 0 50 7 0 524288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 #36413
 seal ochre badge slin~
 &+gthe ochre seal of Slin&N~
@@ -167,7 +167,7 @@ seal ochre badge slin~
 ~
 27 16 0 50 7 0 524288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 #36414
 seal blood badge zochra~
 &+rthe blood seal of Zochra&N~
@@ -175,7 +175,7 @@ seal blood badge zochra~
 ~
 27 16 0 50 7 0 524288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 #36415
 wand midnight lightless~
 &+La midnight wand&N~
@@ -183,7 +183,7 @@ wand midnight lightless~
 ~
 3 16 2 4 7 0 0 16385 64 0 0
 20 1 1 25 0 0 0 0
-2 54382 100
+2 54382 100 100
 E
 midnight wand lightless~
 This heavy black wand reflects no light. It is totally and wholly dead and
@@ -196,7 +196,7 @@ potion vial black~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 30 36 22 -1 0 0 0 0
-1 29393 100
+1 29393 100 100
 #36417
 shadow dragon tiny miniature~
 &+La miniature shadow dragon&N~
@@ -204,7 +204,7 @@ shadow dragon tiny miniature~
 ~
 12 11 2 4 7 0 66560 16385 64 4197892 0
 0 1 1 0 0 0 0 0
-1 25000 100
+1 25000 100 100
 A
 1 5
 A
@@ -216,7 +216,7 @@ wand ice~
 ~
 3 16 2 4 7 0 1024 16385 64 4197892 0
 20 2 2 10 0 0 0 0
-1 87392 100
+1 87392 100 100
 #36419
 potion fiery ampoule red~
 &+Ra fiery red potion&N~
@@ -224,7 +224,7 @@ potion fiery ampoule red~
 ~
 10 7 2 4 7 0 65536 16385 64 0 0
 35 41 -1 -1 0 0 0 0
-1 58372 100
+1 58372 100 100
 #36420
 contract paper rolled~
 &+Wa contract&N~
@@ -232,7 +232,7 @@ contract paper rolled~
 ~
 16 28 1 2 7 0 524288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 200000 100
+0 200000 100 100
 E
 paper rolled contract~
 This contract is a receipt from house Slin guaranteeing the extermination of
@@ -245,7 +245,7 @@ backpack silk bp~
 ~
 15 3 3 10 7 0 0 17409 0 0 0
 70 1 0 100 0 0 0 0
-3 250 100
+3 250 100 100
 E
 silk backpack bp~
 This backpack has been made form cavefisher silk and is very strong. It has
@@ -258,7 +258,7 @@ a rothe steak~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 30 0 0 0 0 0 0 0
-1 30 100
+1 30 100 100
 E
 bloody meat rothe steak~
 this choice cut of rothe meat looks incredibly filling.
@@ -270,7 +270,7 @@ water skin black silk~
 ~
 17 3 3 8 7 0 0 16385 0 0 0
 8 8 0 0 0 0 0 0
-1 70 100
+1 70 100 100
 E
 waterksin black silk~
 This waterskin has been finely woven of spidersilk and waterproofed with
@@ -283,7 +283,7 @@ heavy crossbow quiver~
 ~
 30 14 2 0 7 0 0 1048577 0 0 0
 25 0 3 0 0 0 0 0
-7 1252 100
+7 1252 100 100
 E
 heavy crossbow quiver~
 &+r   This heavy quiver holds the quarrels for Drow-made crossbows.&N
@@ -295,7 +295,7 @@ boots adamantine black metal~
 ~
 9 16 3 8 7 0 0 65 0 4173708804 0
 8 6 1 3 0 0 0 0
-2 25000 100
+2 25000 100 100
 #36426
 leggings adamantine~
 &+Lsome adamantine leggings&N~
@@ -303,7 +303,7 @@ leggings adamantine~
 ~
 9 19 3 8 7 0 134217728 33 0 4173708804 0
 8 5 1 1 0 0 0 0
-2 20000 100
+2 20000 100 100
 #36427
 sleeves adamantine~
 &+Lsome adamantine sleeves&N~
@@ -311,7 +311,7 @@ sleeves adamantine~
 ~
 9 19 3 8 7 0 134217728 257 0 4173708804 0
 8 8 1 1 0 0 0 0
-5 18000 100
+5 18000 100 100
 #36428
 armor plate adamantine~
 &+La suit of adamantine plate&N~
@@ -319,7 +319,7 @@ armor plate adamantine~
 ~
 9 19 3 0 7 0 134217728 9 0 4173708804 0
 14 3 1 1 0 0 0 0
-14 34000 100
+14 34000 100 100
 #36429
 helm adamantine black~
 &+Lan adamantine helm&N~
@@ -327,7 +327,7 @@ helm adamantine black~
 ~
 9 19 3 10 7 0 134217728 17 0 4173708804 0
 8 4 1 1 0 0 0 0
-2 13500 100
+2 13500 100 100
 #36430
 visor black metal adamantine~
 &+Lan adamantine visor&N~
@@ -335,7 +335,7 @@ visor black metal adamantine~
 ~
 9 16 0 0 7 0 0 131073 0 0 0
 4 12 2 3 0 0 0 0
-1 10300 100
+1 10300 100 100
 #36431
 gauntlets gloves adamantine black~
 &+La pair of adamantine gauntlets&N~
@@ -343,7 +343,7 @@ gauntlets gloves adamantine black~
 ~
 9 19 3 5 7 0 134217728 129 0 4173708804 0
 8 7 6 1 0 0 0 0
-2 25000 100
+2 25000 100 100
 #36432
 shield adamantine black piece~
 &+Lan adamantine shield&N~
@@ -351,7 +351,7 @@ shield adamantine black piece~
 ~
 37 19 3 15 7 0 134217728 513 0 4173708804 0
 2 1 3 77 1 0 0 0
-5 35000 100
+5 35000 100 100
 #36433
 dirk adamantine black knife~
 &+Lan adamantine dirk&N~
@@ -359,7 +359,7 @@ dirk adamantine black knife~
 ~
 5 19 2 3 7 0 0 8193 0 0 0
 2 1 5 11 0 0 0 0
-1 2300 100
+1 2300 100 100
 #36434
 knife curved sacrificial~
 &+La sacrificial knife&N~
@@ -367,7 +367,7 @@ knife curved sacrificial~
 ~
 5 16 2 3 7 0 0 8193 0 4165209604 0
 2 1 6 3 0 0 0 0
-3 5500 100
+3 5500 100 100
 #36435
 longsword long sword black~
 &+Lan adamantine longsword&N~
@@ -375,7 +375,7 @@ longsword long sword black~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 9 3 0 0 0 0
-9 9500 100
+9 9500 100 100
 #36436
 claymore huge sword~
 &+Lan adamantine claymore&N~
@@ -383,7 +383,7 @@ claymore huge sword~
 ~
 5 16 3 15 7 0 4195328 8193 0 87572571 0
 13 3 8 3 0 0 0 0
-14 25000 100
+14 25000 100 100
 A
 19 1
 A
@@ -395,7 +395,7 @@ sword bastard serrated~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 2 6 3 0 0 0 0
-11 16430 100
+11 16430 100 100
 A
 19 1
 #36438
@@ -405,7 +405,7 @@ ring absorption~
 ~
 11 16 1 1 7 0 1024 3 64 12619268 0
 0 0 0 0 0 0 0 0
-2 19200 100
+2 19200 100 100
 E
 ring absorption glowing~
 &+mThis small glowing magenta ring seems to take on a swirling pattern
@@ -422,7 +422,7 @@ crossbow hand~
 ~
 6 6 0 2 7 0 0 24577 0 0 0
 60 60 0 2 0 0 0 0
-1 1000 100
+1 1000 100 100
 #36440
 bolt crossbow drow~
 &+La drow crossbow bolt&N~
@@ -430,7 +430,7 @@ bolt crossbow drow~
 ~
 7 6 2 2 7 0 0 16385 0 0 0
 1 1 8 2 0 0 0 0
-1 100 100
+1 100 100 100
 #36441
 crossbow heavy~
 &+ra heavy crossbow&N~
@@ -438,7 +438,7 @@ crossbow heavy~
 ~
 6 6 0 2 7 0 4194304 24577 0 0 0
 70 60 0 3 0 0 0 0
-1 100000 100
+1 100000 100 100
 #36442
 bolt heavy~
 &+ra heavy crossbow bolt&N~
@@ -446,7 +446,7 @@ bolt heavy~
 ~
 7 6 2 3 7 0 0 16385 0 0 0
 2 2 8 3 0 0 0 0
-1 100 100
+1 100 100 100
 #36443
 quiver crossbow~
 &+La crossbow quiver&N~
@@ -454,4 +454,4 @@ quiver crossbow~
 ~
 30 6 2 12 7 0 0 1048577 0 0 0
 30 0 2 0 0 0 0 0
-10 1000 100
+10 1000 100 100

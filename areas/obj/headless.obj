@@ -5,7 +5,7 @@ sign oaken wooden rotten~
 ~
 12 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign oaken wooden rotten~
 &+y  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&n
@@ -24,7 +24,7 @@ gleaming white guillotine~
 ~
 12 15 3 1000 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-1000 20000 100
+1000 20000 100 100
 E
 gleaming white guillotine~
 &+W   Made of beautifully worked mithril, this device is for killing people.&n
@@ -40,7 +40,7 @@ key virtue~
 ~
 18 15 3 1 7 0 8650752 1 0 1 0
 0 100 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 key virtue~
 &+Y   This type of key was once used to lock chastity belts, although its&n
@@ -53,7 +53,7 @@ corpse elven battered~
 ~
 15 15 3 1000 7 0 0 0 0 1 0
 100 0 0 100 0 0 0 0
-1000 100 100
+1000 100 100 100
 E
 corpse elven battered~
 &+c   Battered, smashed and broken, this grey elf was captured on a raid and&n
@@ -67,7 +67,7 @@ soul writhing demon lord~
 ~
 12 1 3 1 7 0 33555520 16385 0 4197888 0
 0 0 0 0 0 0 0 0
-1 125000 100
+1 125000 100 100
 E
 soul writhing demon lord~
 &+L   Trapped in a small glass shell, this soul writhes about furiously.  A&n
@@ -85,7 +85,7 @@ ears murf elven pair~
 ~
 12 15 3 1 7 0 8392704 16385 4096 1 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 ears murf elven pair~
 &+C   These lobe-less elven ears once belonged to a mighty elven warrior named&n
@@ -98,7 +98,7 @@ griefmaker serrated mithril long sword longsword~
 ~
 5 18 3 4 14 0 1024 8193 66 2117635 0
 5 2 5 3 0 0 0 0
-6 125000 100 16 0 0 0
+6 125000 100 100 16 0 0 0
 E
 griefmaker serrated mithril long sword longsword~
 &+C   An ancient weapon created by a master dwarven smith, this longsword has&n
@@ -115,7 +115,7 @@ gleaming dragon bone dragonbone plate mail platemail beveled~
 ~
 9 35 3 15 14 0 1024 9 0 87572539 0
 40 3 1 5 0 0 0 0
-15 175000 100 268435456 0 0 0
+15 175000 100 100 268435456 0 0 0
 E
 gleaming dragon bone dragonbone plate mail platemail beveled~
 &+W   This platemail is made of the finest material possible, the bone and&n
@@ -134,7 +134,7 @@ pair xorn hide xorn-hide cured gauntlets~
 ~
 9 46 3 3 12 0 0 129 0 0 0
 10 7 1 5 0 0 0 0
-3 85000 100
+3 85000 100 100
 E
 pair xorn hide xorn-hide cured gauntlets~
 &+c   Made from the hide of a full-grown xorn, these gauntlets provide the&n
@@ -152,7 +152,7 @@ brittle collar glowing glass~
 ~
 9 7 3 1 11 0 4096 5 0 0 0
 2 2 1 1 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 brittle collar glowing glass~
 &+W   This collar is magically imbued with a strange type of magic.  The&n
@@ -170,7 +170,7 @@ light pair winged sandals~
 ~
 9 14 3 1 13 0 262144 65 0 0 0
 2 6 1 1 0 0 0 0
-1 110000 100 134217728 0 0 0
+1 110000 100 100 134217728 0 0 0
 E
 light pair winged sandals~
 &+y   Constructed of durable leather, these sandals each have a small pair of&n
@@ -186,7 +186,7 @@ shimmering gold weave gold-weave greaves~
 ~
 9 24 3 4 13 0 1024 33 0 87609435 0
 8 5 1 2 0 0 0 0
-4 300000 100
+4 300000 100 100
 E
 shimmering gold weave gold-weave greaves~
 &+y   Woven from very fine strands of golden thread, these greaves are also&n
@@ -205,7 +205,7 @@ terrified carved face frozen fear~
 ~
 9 2 3 2 7 0 0 262145 0 0 0
 5 13 1 1 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 terrified carved face frozen fear~
 &+y   A result of the powerful headless animation proedure has halted the decay&n
@@ -224,7 +224,7 @@ feathered hood black velvet~
 ~
 9 3 3 2 10 0 0 17 0 0 0
 10 4 1 2 0 0 0 0
-2 75000 100
+2 75000 100 100
 E
 feathered hood black velvet~
 &+W   Made of soft black velvet, this hood is also covered in feathers.  The&n
@@ -240,7 +240,7 @@ spiked whip elven scourge~
 ~
 5 14 3 2 14 0 0 8193 0 0 1036
 14 3 7 2 0 0 0 0
-2 100000 100
+2 100000 100 100
 E
 spiked whip elven scourge~
 &+r   Created by a master weaponsmith of the drow for use against the surface&n
@@ -259,7 +259,7 @@ thick belt braided human hair~
 ~
 9 15 3 2 7 0 0 2049 0 0 0
 10 10 0 2 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 thick belt braided human hair~
 &+c   Made from coarse, thick strands of human hair, this belt is now in&n
@@ -277,7 +277,7 @@ thick ring rusted wire braid~
 ~
 9 15 3 2 4 0 0 3 0 0 0
 2 1 0 3 0 0 0 0
-2 8000 100
+2 8000 100 100
 E
 thick ring rusted wire braid~
 &+m   This ring is made from two coils of rusted wire, wrapped one around the&n
@@ -293,7 +293,7 @@ mithril token malra~
 ~
 9 15 3 2 7 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 mithril token malra~
 &+W   This shiny mithril badge is affixed to a small chain, and is made to be&n
@@ -309,7 +309,7 @@ adamantium token kaan~
 ~
 9 19 3 2 7 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-2 100000 100
+2 100000 100 100
 E
 adamantium token kaan~
 &+r   Made of thick adamantium, this token is used to prove ones allegiance to&n
@@ -325,7 +325,7 @@ rusted iron key~
 ~
 18 15 3 1 7 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 rusted iron key~
 &+L   A small black iron key.&n
@@ -337,7 +337,7 @@ gleaming mithril key~
 ~
 18 18 3 1 7 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 gleaming mithril key~
 &+W   Made of pure mithril this key undoubtedly unlocks something important.&n
@@ -349,7 +349,7 @@ cloak albatross~
 ~
 9 50 3 2 14 0 0 1025 0 0 0
 10 9 1 2 0 0 0 0
-2 125000 100 67108868 0 0 0
+2 125000 100 100 67108868 0 0 0
 E
 cloak albatross~
 &+g   Woven from the feathers of an albatross, this cloak is incredibly light&n
@@ -363,7 +363,7 @@ crimson braid rank~
 ~
 9 3 3 1 7 0 64 4097 0 0 0
 6 11 1 2 0 0 0 0
-1 45000 100
+1 45000 100 100
 E
 crimson braid rank~
 &+r   This finely woven braid denotes rank within the headless naval community.&n
@@ -377,7 +377,7 @@ silver belt sextant embossed~
 ~
 9 22 3 3 10 0 64 2049 1 0 0
 10 10 0 3 0 0 0 0
-3 125000 100
+3 125000 100 100
 E
 silver belt sextant embossed~
 &+W   This beautiful belt has a large buckle with an outline of a sextant &n
@@ -395,7 +395,7 @@ shriveled rotting human head~
 ~
 12 2 3 5 7 0 66560 16385 0 4197888 0
 0 0 0 0 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 shriveled rotting human head~
 &+c   This shrunken and shriveled human head once belonged to a mighty human&n
@@ -414,7 +414,7 @@ heavy gloves thick adamantium~
 ~
 9 19 3 4 13 0 64 129 0 0 0
 12 7 1 5 0 0 0 0
-4 100000 100
+4 100000 100 100
 E
 heavy gloves thick adamantium~
 &+m   These thick gloves are designed with facets in mind.  The idea behind&n
@@ -431,7 +431,7 @@ heavy pair xorn hide boots xorn-hide~
 ~
 9 35 3 2 7 0 0 65 0 0 0
 10 6 1 4 0 0 0 0
-2 100000 100
+2 100000 100 100
 E
 heavy pair xorn hide boots xorn-hide~
 &+c   Made from the skin of a mature xorn, these boots are very comfortable to&n
@@ -449,7 +449,7 @@ emerald braid rank~
 ~
 9 3 3 1 10 0 0 4097 0 0 0
 6 11 1 2 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 emerald braid rank~
 &+G   Used as a badge of rank within the headless military, this braid is&n
@@ -467,7 +467,7 @@ stiff mithril rapier~
 ~
 5 18 3 4 7 0 64 8193 0 57374 0
 2 2 4 11 0 0 0 0
-4 100000 100
+4 100000 100 100
 E
 stiff mithril rapier~
 &+W   This rapier is made of mithril, crafted by the dwarven artisans.  While&n
@@ -484,7 +484,7 @@ massive black white kite shield~
 ~
 37 15 3 10 7 0 0 513 64 32798 0
 1 7 5 15 5 0 0 0
-25 75000 100 32 128 0 0
+25 75000 100 100 32 128 0 0
 E
 massive black white kite shield~
 &+W   This shield is made of checkered black and white sections of laminated&n
@@ -500,7 +500,7 @@ green hued green-hued rusty cutlass~
 ~
 5 15 3 5 7 0 0 8193 0 0 0
 9 2 4 3 0 0 0 0
-5 8000 100
+5 8000 100 100
 E
 green hued green-hued rusty cutlass~
 &+B   This cutlass is starting to rust from exposure to the salty air.&n
@@ -516,7 +516,7 @@ bill lading~
 ~
 12 42 3 1 7 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 bill lading~
 &+y----------------------------------------&n
@@ -542,7 +542,7 @@ small astrolabe mithril~
 ~
 12 18 3 3 14 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 250000 100
+3 250000 100 100
 E
 small astrolabe mithril~
 &+b   This fascinating device is used by the naval forces to determine the&n
@@ -559,7 +559,7 @@ well polished well-polished mithril halberd~
 ~
 5 15 3 5 7 0 4194304 8193 0 4571108 0
 13 2 10 3 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 well polished well-polished mithril halberd~
 &+W   The main weapon used by the headless is this mithril halberd, designed&n
@@ -578,7 +578,7 @@ purchase requisition~
 ~
 12 15 3 1 7 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 purchase requisition~
 &+y--------------------------------------------&n
@@ -608,7 +608,7 @@ scales sea serpent~
 ~
 12 35 3 5 15 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 scales sea serpent~
 &+G   These scales off of the sea serpent are incredibly strong, and look to&n
@@ -622,7 +622,7 @@ large sickle midnight plague~
 ~
 5 15 3 8 7 0 4194304 8193 0 32798 0
 17 4 5 3 0 0 0 0
-8 10000 100
+8 10000 100 100
 E
 large sickle midnight plague~
 &+g   This sickle is alot different from those commonly used to reap wheat.&n
@@ -640,7 +640,7 @@ tarnished copper key~
 ~
 18 15 3 1 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 tarnished copper key~
 &+Y   This key undoubtedly opens something important.&n
@@ -652,7 +652,7 @@ pleated red green kilt~
 ~
 9 3 3 3 10 0 262144 33 0 0 0
 6 5 1 2 0 0 0 0
-3 45000 100
+3 45000 100 100
 E
 pleated red green kilt~
 &+b   This kilt is made in a vry unusual way.  The pleating involved in the&n
@@ -668,7 +668,7 @@ massive claymore~
 ~
 5 15 3 8 7 0 4194304 8193 0 34156516 0
 13 3 6 3 0 0 0 0
-8 10000 100
+8 10000 100 100
 E
 massive claymore~
 &+c   A massive instrument of warfare, this laymore is just over five feet&n
@@ -686,7 +686,7 @@ badge force commander elite guard~
 ~
 12 15 3 1 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 badge force commander elite guard~
 &+g   This badge is the insignia of the current force commander.  On the rear&n
@@ -704,7 +704,7 @@ pile scales xorn~
 ~
 12 15 3 10 7 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 pile scales xorn~
 &+c   These scales are from the skin of a newly born xorn, however even now&n
@@ -717,7 +717,7 @@ studded xorn hide xorn-hide sleeves~
 ~
 9 12 3 4 7 0 262208 257 0 0 0
 10 8 1 5 0 0 0 0
-4 20000 100
+4 20000 100 100
 E
 studded xorn hide xorn-hide sleeves~
 &+c   Made from the hide of a xorn, these sleeves are studded with razorsharp&n
@@ -735,7 +735,7 @@ pure adamantium key~
 ~
 18 15 3 1 7 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 pure adamantium key~
 &+m   Made of pure adamantium, this key undoutedly unlocks something important.&n
@@ -747,7 +747,7 @@ rusty iron scimitar~
 ~
 5 15 3 6 7 0 0 8193 0 32798 0
 5 2 6 3 0 0 0 0
-6 10000 100
+6 10000 100 100
 E
 rusty iron scimitar~
 &+W   Made from iron, this scimitar has not een taken care of very well.  The&n
@@ -764,7 +764,7 @@ long barbed trident~
 ~
 5 15 3 8 7 0 4194304 8193 0 57374 0
 18 3 3 11 0 0 0 0
-8 8000 100
+8 8000 100 100
 E
 long barbed trident~
 &+g   This trident is designed for battle.  Its long shaft is reinforced with&n
@@ -781,7 +781,7 @@ razor sharp razorsharp iron short sword shortsword~
 ~
 5 15 3 5 7 0 0 8193 0 32798 0
 9 2 4 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 razor sharp razorsharp iron short sword shortsword~
 &+g   Not quite as versatile as the standard issue swords, these shortswords&n
@@ -800,7 +800,7 @@ scales queen xorn~
 ~
 12 35 3 5 7 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-5 100000 100
+5 100000 100 100
 E
 scales queen xorn~
 &+c   These scales are taken from the queen xorn herself, and are unmatched&n
@@ -813,7 +813,7 @@ gears cogs assembly clockwork~
 ~
 12 15 3 10 7 0 8392704 1 0 1 0
 0 0 0 0 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 gears cogs assembly clockwork~
 &+W   A strange contraption of gears and cogs, this fanciful assembly is&n
@@ -828,7 +828,7 @@ jeweled claw demon lord~
 ~
 5 1 3 3 14 0 459904 8193 0 20480 0
 2 2 4 11 0 0 0 0
-3 175000 100
+3 175000 100 100
 E
 jeweled claw demon lord~
 &+C   This claw is enameled in fine-cut jewels, a king's ransom alone.  The&n
@@ -847,7 +847,7 @@ shattered soul fallen force commander~
 ~
 12 1 3 2 7 0 262144 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 225000 100
+2 225000 100 100
 E
 shattered soul fallen force commander~
 &+g   The souls of each of the force commanders are kept by the religious&n
@@ -864,7 +864,7 @@ massive obsidian bladed obsidian-bladed claymore~
 ~
 5 36 3 8 7 0 4195392 8193 64 83902489 0
 13 5 8 3 0 0 0 0
-8 160000 100
+8 160000 100 100
 E
 massive obsidian bladed obsidian-bladed claymore~
 &+L   Carved from a single slab of obsidian, this sword is extremely sharp.&n
@@ -883,7 +883,7 @@ earring fiber woven mandrake~
 ~
 9 43 3 1 13 0 65536 524289 0 0 0
 3 14 0 1 0 0 0 0
-1 125000 100
+1 125000 100 100
 E
 earring fiber woven mandrake~
 &+Y   This earring is woven from tiny strands of mandrake root, a powerful and&n
@@ -901,7 +901,7 @@ vest thick xorn hide xorn-hide~
 ~
 9 35 3 3 7 0 0 9 0 0 0
 15 3 1 4 0 0 0 0
-3 100000 100
+3 100000 100 100
 E
 vest thick xorn hide xorn-hide~
 &+c   This vest is very protective, yet retains excellent movement abilites&n
@@ -918,7 +918,7 @@ plate mail platemail sea serpent~
 ~
 9 35 3 8 7 0 0 9 0 0 0
 25 3 1 5 0 0 0 0
-8 125000 100 2048 0 0 0
+8 125000 100 100 2048 0 0 0
 E
 plate mail platemail sea serpent~
 &+g   Made from the scales of a sea serpent, this armor is undoubtedly&n
@@ -936,7 +936,7 @@ magnificent plate mail platemail enchanted xorn hide xorn-hide _noquest_~
 ~
 9 35 3 5 7 0 65600 9 0 0 0
 40 3 1 5 0 0 0 0
-5 250000 100 32 0 0 0
+5 250000 100 100 32 0 0 0
 E
 magnificent plate mail platemail enchanted xorn hide xorn-hide~
 &+c   This platemail is made from the hide of the queen xorn, and as such is&n
@@ -955,7 +955,7 @@ heavy square cut square-cut emerald set circlet gold~
 ~
 9 24 3 1 12 0 0 3 0 0 0
 2 1 0 3 0 0 0 0
-1 200000 100
+1 200000 100 100
 E
 heavy square cut square-cut emerald set circlet gold~
 &+Y   Stolen by the headless on a raid into elven territory, it is sure to&n

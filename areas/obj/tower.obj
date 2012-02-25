@@ -5,7 +5,7 @@ key tower sorcerer's~
 ~
 18 15 3 0 7 0 8388608 16385 64 0 0
 0 15 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 key tower sorcerer's~
 &+L   This strange looking key seems like it will open up a lock.&N
@@ -17,7 +17,7 @@ key prison~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 key prison~
 &+L   This key seems like it will open up a cell door of some sort.&N
@@ -29,7 +29,7 @@ staff wizard's light~
 ~
 4 23 3 0 10 33 100934656 16385 0 4328964 0
 53 3 3 131 0 0 0 0
-3 81818 100
+3 81818 100 100
 E
 staff wizard's light~
 &+L   This is a staff about 7' long with a small glowing bulb at its tip.  The&N
@@ -44,7 +44,7 @@ dagger silver jewel studded~
 ~
 5 22 2 0 12 44 8192 8193 66 0 0
 2 2 3 11 0 0 0 0
-4 111111 100
+4 111111 100 100
 E
 dagger silver jewel studded~
 &+L   This is a small &+csilver &+Ldagger with many fine &+Rj&+re&+Rw&+rels &+Lembedded in it.&N
@@ -60,7 +60,7 @@ bracelet emerald glowing~
 ~
 9 23 2 0 10 44 33563649 4097 0 4197892 0
 8 0 0 4 0 0 0 0
-1 54545 100
+1 54545 100 100
 E
 bracelet emerald glowing~
 &+L   This is a large &+Gg&+glo&+Gw&+gin&+Gg &+Lbracelet which has been magically enchanted by the&N
@@ -77,7 +77,7 @@ robe black long flowing~
 ~
 9 43 3 0 15 76 8192 1033 0 0 0
 30 5 0 4 0 0 0 0
-5 88888 100
+5 88888 100 100
 E
 robe black long flowing~
 &+L   This is a long &+wf&+Llo&+ww&+Lin&+wg &+Lblack robe which covers your upper torso region.  It&N
@@ -94,7 +94,7 @@ wand ornate~
 ~
 3 1 1 0 9 18 33816576 16385 0 0 0
 46 3 3 26 0 0 0 0
-3 44444 100
+3 44444 100 100
 E
 wand ornate~
 &+L   This is a long wand with many designs covering the length of it.&N
@@ -106,7 +106,7 @@ eyes charming~
 ~
 9 1 2 0 10 44 3284992 131073 0 0 0
 8 0 4 0 0 0 0 0
-1 69696 100
+1 69696 100 100
 E
 eyes charming~
 &+L   These &+Re&+ry&+Re&+rs &+Lstare into your inner &+Cs&+co&+Cu&+cl &+Land you feel mesmerized by their&N
@@ -123,7 +123,7 @@ cloak silken black~
 ~
 9 43 3 0 10 85 8192 1025 0 0 0
 15 0 0 4 0 0 0 0
-1 33333 100 536938496 192 0 0
+1 33333 100 100 536938496 192 0 0
 E
 cloak silken black~
 &+L   This is a very well made cloak from a fine black silky material.  This cloak&N
@@ -140,7 +140,7 @@ bracelet platinum tarnished~
 ~
 9 25 3 0 11 53 1 4097 0 4198895524 0
 6 0 0 4 0 0 0 0
-1 34242 100
+1 34242 100 100
 E
 bracelet platinum tarnished~
 &+L   This is a bracelet made from solid pure &+Wplatinum &+Lmetal.  Although it looks&N
@@ -157,7 +157,7 @@ curved stained sword warrior's~
 ~
 5 18 3 0 11 81 8192 8193 66 0 0
 5 2 3 3 0 0 0 0
-3 44444 100
+3 44444 100 100
 E
 sword warrior's~
 &+L   This is a very large bladed sword crafted for a great warrior.&N
@@ -173,7 +173,7 @@ platemail warrior's shining mail plate~
 ~
 9 15 3 0 7 0 1024 9 0 96071707 0
 25 0 0 4 0 0 0 0
-10 600 100
+10 600 100 100
 E
 platemail warrior's shining mail plate~
 &+L   This is a very large suit of well-made &+Cp&+cl&+Ca&+ct&+Ce&+cm&+Ca&+ci&+Cl &+Larmor.  It &+Cs&+ch&+Ci&+cn&+Ce&+cs &+Las though&N
@@ -191,7 +191,7 @@ wand absorption old black~
 ~
 3 15 3 0 10 53 33570881 16385 0 0 0
 53 4 4 25 0 0 0 0
-5 53342 100
+5 53342 100 100
 E
 wand absorption old black~
 &+L   This is an old black wand which radiates a very &+revil &+Laura.&N
@@ -203,7 +203,7 @@ potion brown~
 ~
 10 15 3 0 10 33 0 1 64 0 0
 53 1 3 201 0 0 0 0
-1 22222 100
+1 22222 100 100
 E
 potion brown~
 &+L   This is a small clear bottle filled with a &+ybrown &+Lliquid.&N
@@ -215,7 +215,7 @@ elixir white~
 ~
 10 15 3 0 10 34 0 1 64 0 0
 53 318 43 35 0 0 0 0
-2 29429 100
+2 29429 100 100
 E
 elixir white~
 &+L   This is a small bottle filled with a pure &+Wwhite &+Lliquid.&N
@@ -227,7 +227,7 @@ vial strange blood~
 ~
 10 2 2 0 10 43 16384 1 64 0 0
 53 36 33 71 0 0 0 0
-1 76767 100
+1 76767 100 100
 E
 vial strange blood~
 &+L   This is a small vial filled with the red &+rblood &+Lof a &+Chuman &+Lyou think.&N
@@ -239,7 +239,7 @@ ruby dagger mage's~
 ~
 5 31 3 0 10 42 33817600 8193 0 4328964 0
 2 2 3 11 0 0 0 0
-2 24295 100
+2 24295 100 100
 E
 ruby dagger mage's~
 &+L   This twisted dagger has been crafted from a rather fine grade of &+Rr&+ru&+Rb&+ry&+L.&N
@@ -255,7 +255,7 @@ mace disruption~
 ~
 5 23 3 0 14 76 1025 8193 66 33685920 0
 6 2 3 7 0 0 0 0
-12 23333 100
+12 23333 100 100
 E
 mace disruption~
 &+L   This is a large heavy mace which looks like it could 'disrupt' one's own by&N
@@ -272,7 +272,7 @@ scroll strange~
 ~
 2 43 3 0 10 43 8192 1 64 0 0
 24 81 85 104 0 0 0 0
-2 24242 100
+2 24242 100 100
 E
 scroll strange~
 &+L   This is an old-looking &+yscroll &+Lwhich has strange inscriptions on it.&N
@@ -284,7 +284,7 @@ cloak runed~
 ~
 9 43 3 0 10 69 8193 1025 64 0 0
 15 0 0 4 0 0 0 0
-1 19283 100
+1 19283 100 100
 E
 cloak runed~
 &+L   This is a large bodycloak with many different types of &+mr&+Mu&+mn&+Me&+ms &+Lembroidered&N
@@ -301,7 +301,7 @@ longsword sword tarnished crude~
 ~
 5 15 3 0 10 44 0 8193 0 0 0
 5 2 5 3 0 0 0 0
-15 11111 100
+15 11111 100 100
 E
 longsword sword crude tarnished~
 &+L   This is a stock training sword issued to all tower guards.&N
@@ -317,7 +317,7 @@ platemail suit mail plate~
 ~
 9 15 3 0 9 29 0 9 0 0 0
 13 0 0 3 0 0 0 0
-26 18181 100
+26 18181 100 100
 E
 platemail suit mail plate~
 &+L   This is a heavy suit of &+wtarnished &+Lplatemail issued to all tower guards.&N
@@ -333,7 +333,7 @@ platemail heavy suit guard's mail plate~
 ~
 9 18 3 0 10 58 0 9 0 0 0
 16 0 0 4 0 0 0 0
-20 21212 100
+20 21212 100 100
 E
 platemail heavy suit guard's mail plate~
 &+L   This is a rather heavy suit of armormed plate mail issued to all barrack&N
@@ -350,7 +350,7 @@ longsword sword fine~
 ~
 5 18 3 0 11 76 24832 8193 0 0 0
 5 3 2 3 0 0 0 0
-8 33333 100
+8 33333 100 100
 E
 longsword sword fine~
 &+c   This is a &+Cl&+co&+Cn&+cg&+Cs&+cw&+Co&+cr&+Cd &+cmade from a shiny fine metal which is unknown to you.&N
@@ -366,7 +366,7 @@ shield fine~
 ~
 37 23 3 0 10 88 8193 513 0 0 0
 1 2 4 143 0 0 0 0
-26 53232 100
+26 53232 100 100
 E
 shield fine~
 &+L   This is a very nice armored shield made from a &+cmetal &+Lunknown to you.  The&N
@@ -383,7 +383,7 @@ amulet satanic~
 ~
 9 35 3 0 14 81 3153920 16389 64 0 0
 10 0 0 5 0 0 0 0
-0 18100 100
+0 18100 100 100
 E
 amulet satanic~
 &+L   This is a small amulet which radiates &+revil&+L.  It looks as though it were&N
@@ -400,7 +400,7 @@ boots heavy iron heavy~
 ~
 9 18 3 0 10 76 8192 65 0 0 0
 12 0 0 5 0 0 0 0
-9 44444 100
+9 44444 100 100
 E
 boots heavy iron plated~
 &+L   This is a large pair of heavy iron boots.  They have been well plated and&N
@@ -417,7 +417,7 @@ gauntlets strange~
 ~
 9 18 3 0 15 81 8192 129 64 0 0
 9 0 0 3 0 0 0 0
-5 66666 100
+5 66666 100 100
 E
 gauntlets strange~
 &+L   This pair of gauntlets have been made into a strange odd shape you are&N
@@ -434,7 +434,7 @@ A &+rsin&+List&+rer &+Llooking dagger has been pitched on the ground here.&N~
 ~
 5 23 3 0 11 44 13312 8193 66 8515584 0
 2 2 4 11 0 0 0 0
-0 44444 100
+0 44444 100 100
 E
 sinister dagger rogue's~
 &+L   This is a large dagger crafted by a mischeivious rogue.  The &+rblade &+Lis made&N
@@ -451,7 +451,7 @@ dragonslayer sword~
 ~
 5 18 3 0 11 81 9216 8193 67 87572507 0
 5 5 4 3 0 0 0 0
-4 63636 100
+4 63636 100 100
 E
 dragonslayer sword~
 &+L   This mighty sword seems like it is a fabled dragonslayer &+Lthat demonic spun&N
@@ -468,7 +468,7 @@ egg silver dragon~
 ~
 15 45 2 0 11 53 12288 8404993 64 0 0
 777 0 0 777 0 0 0 0
-8 88888 100
+8 88888 100 100
 E
 egg silver dragon~
 &+L   This is a large &+Cs&+ci&+Cl&+cv&+Ce&+cr &+Ce&+cg&+Cg &+Lbelonging to a mother &+Cs&+ci&+Cl&+cv&+Ce&+cr &+Cd&+cr&+Ca&+cg&+Co&+cn&+L.  It looks&N
@@ -485,7 +485,7 @@ bracelet satanic~
 ~
 9 35 3 0 11 75 3286016 4097 64 89685781 0
 13 0 0 5 0 0 0 0
-1 33333 100
+1 33333 100 100
 E
 bracelet satanic~
 &+L   This is a small bracelet made from a very &+revil &+Lsubstance forged by satan.&N
@@ -501,7 +501,7 @@ longsword sword magic~
 ~
 5 15 3 0 9 34 0 8193 66 0 0
 5 2 5 3 0 0 0 0
-12 7777 100
+12 7777 100 100
 E
 longsword sword magic~
 &+b   This is a very nice sword made from a magical steel.&N
@@ -517,7 +517,7 @@ quarterstaff staff~
 ~
 5 15 3 0 8 32 0 8193 64 0 0
 12 6 2 7 0 0 0 0
-8 6666 100
+8 6666 100 100
 E
 quarterstaff staff~
 &+y   This crude staff seems like it was fashioned from sub par material.&N
@@ -533,7 +533,7 @@ longsword golden sword~
 ~
 5 24 3 0 11 76 25984 8193 1 87572635 0
 5 4 4 3 0 0 0 0
-8 6666 100
+8 6666 100 100
 E
 longsword golden sword~
 &+y   This is a very long huge sword forged from pure solid gold.&N
@@ -549,7 +549,7 @@ boots golden shiny~
 ~
 9 24 3 0 11 59 8192 65 0 0 0
 8 0 0 4 0 0 0 0
-5 22222 100
+5 22222 100 100
 E
 boots golden shiny~
 &+y   This is a beautiful pair of boots.  Forged from solid gold the boots keep&N
@@ -567,7 +567,7 @@ a &+rstrange red key~
 ~
 18 15 3 0 7 0 8918016 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 key strange red~
 &+r   This strange red key seems like it was made from a weird metal.&N
@@ -579,7 +579,7 @@ key brittle small~
 ~
 18 15 3 0 7 0 8389632 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 10 1
+1 10 1 100
 E
 key brittle small~
 &+y   This brittle key has been crafted from a crude sort of metal.&N
@@ -591,7 +591,7 @@ water fountain~
 ~
 17 15 3 0 10 81 1152 16385 0 0 0
 -1 -1 0 1 0 0 0 0
-2000 666666 0
+2000 666666 0 100
 E
 fountain~
 You see a small stream of clear fluid coming up out of the center of the
@@ -605,7 +605,7 @@ shield buletteshield bulette~
 ~
 37 35 3 0 15 81 9216 513 0 0 0
 1 1 3 160 5 0 0 0
-24 24000 10000
+24 24000 10000 100
 E
 shield~
 &+b   The shield looks well-built and very strong.  It is made up of several&N
@@ -622,7 +622,7 @@ belt uglybelt ugly green~
 ~
 9 35 3 0 14 53 139392 2049 64 0 0
 7 0 0 3 0 0 0 0
-1 14141 100
+1 14141 100 100
 E
 belt~
 &+g   The belt is a disgusting &+Gm&+goss green c&+Go&+gl&+Go&+gr with random &+ybrown &+gstains along the&N
@@ -639,7 +639,7 @@ crimson sword of armonder~
 ~
 5 15 3 0 15 81 70262912 8193 66 0 0
 5 3 6 3 0 0 0 0
-3 33333 100
+3 33333 100 100
 E
 sword crimson~
 &+r   This large red metal sword is forged by group of &+bmater &+rwizards, being&N
@@ -657,7 +657,7 @@ dagger dull chipped~
 ~
 5 11 2 0 10 33 1024 8193 67 28672 0
 2 2 3 11 0 0 0 0
-1 16661 100
+1 16661 100 100
 E
 dagger dull chipped~
 &+L   This dull &+wchipped &+Ldagger seems like it was crafted from some sort of stone.&N
@@ -673,7 +673,7 @@ robe high priest xlorkortor~
 ~
 9 43 3 0 15 53 8192 9 0 0 0
 13 0 0 5 0 0 0 0
-0 13333 100
+0 13333 100 100
 E
 robe high priest xlorkortor~
 &+L   This is a robe that is from the &+Gh&+gi&+Gg&+gh &+Gp&+gr&+Gi&+ge&+Gs&+gt &+Lknown as &+GX&+gl&+Go&+gr&+Gk&+go&+Gr&+gt&+Go&+gr&+L.  Foreboding&N
@@ -691,7 +691,7 @@ mask high priest xlorkortor~
 ~
 9 43 3 0 15 53 8192 262145 0 0 0
 7 0 0 5 0 0 0 0
-0 13333 100
+0 13333 100 100
 E
 mask xlorkortor~
 &+L   This is a mask that is from the &+Gh&+gi&+Gg&+gh &+Gp&+gr&+Gi&+ge&+Gs&+gt &+Lknown as &+GX&+gl&+Go&+gr&+Gk&+go&+Gr&+gt&+Go&+gr&+L.  Foreboding&N
@@ -709,7 +709,7 @@ leggings tattered~
 ~
 9 15 3 0 7 0 8192 33 0 0 0
 9 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 leggings tattered~
 &+L   These leggings seem like they have been stiched together from several kinds&N
@@ -727,7 +727,7 @@ helm flesh~
 ~
 9 2 3 0 10 33 0 17 0 0 0
 6 0 0 3 0 0 0 0
-0 16661 100
+0 16661 100 100
 E
 helm flesh~
 &+L   This disgusting looking helm has been spun from several slabs of vile rotted&N
@@ -744,7 +744,7 @@ bracer demonic runed~
 ~
 9 35 3 0 11 69 8192 4097 0 4171612362 0
 9 0 0 5 0 0 0 0
-0 33333 100
+0 33333 100 100
 E
 bracer demonic runed~
 &+L   This &+rd&+Re&+rm&+Ro&+rn&+Lic &+rr&+Ru&+rn&+Re&+rd &+Lbracer seems like it was not forged in this world of&N
@@ -761,7 +761,7 @@ sleeves demonic runed~
 ~
 9 35 3 0 11 69 8192 257 0 4171595978 0
 9 0 0 5 0 0 0 0
-0 33333 100
+0 33333 100 100
 E
 sleeves demonic runed~
 &+L   These &+rd&+Re&+rm&+Ro&+rn&+Lic &+rr&+Ru&+rn&+Re&+rd &+Lsleeves seems like they were not forged in this world&N
@@ -778,7 +778,7 @@ crown sapphire sparkling~
 ~
 9 33 3 0 15 76 9216 17 64 4197892 0
 9 0 0 5 0 0 0 0
-0 66666 100
+0 66666 100 100
 E
 crown sapphire sparkling~
 &+L   This sparkling &+bc&+Br&+bo&+Bw&+bn &+Lhas been crafted from a very fine grade of &+bs&+Ba&+bp&+Bp&+bh&+Bi&+br&+Be&+L.&N
@@ -795,7 +795,7 @@ boots strange glowing sabatons~
 ~
 9 43 3 0 10 76 8192 65 0 0 0
 8 0 0 0 0 0 0 0
-0 19991 100
+0 19991 100 100
 E
 boots strange glowing sabatons~
 &+L   These strange &+Gg&+glo&+Gw&+gin&+Gg &+Lsabatons seem like they were crafted from a mysterious&N
@@ -813,7 +813,7 @@ jagged ring~
 ~
 9 26 2 0 12 43 8192 3 0 0 0
 7 0 0 3 0 0 0 0
-0 77777 100
+0 77777 100 100
 E
 jagged ring~
 &+L   This &+gj&+La&+gg&+Lg&+ge&+Ld &+gr&+Li&+gn&+Lg &+Lhas been crafted from what seems to be some sort of crude&N
@@ -831,7 +831,7 @@ deformed eyepatch dreadful~
 ~
 9 43 2 0 11 53 8192 131073 0 0 0
 5 0 0 3 0 0 0 0
-0 22222 100
+0 22222 100 100
 E
 deformed eyepatch dreadful~
 &+L   This is a strange dreadful rather &+Rdeformed &+Llooking eyepatch.  The make of it&N
@@ -849,7 +849,7 @@ jagged deformed helmet~
 ~
 9 11 3 0 11 53 0 17 0 0 0
 8 0 0 3 0 0 0 0
-0 44444 100
+0 44444 100 100
 E
 helmet deformed jagged~
 &+L   This is a strange foreboding rather &+Rdeformed &+Llooking helmet.  The make of it&N
@@ -867,7 +867,7 @@ rancid deformed amulet~
 ~
 9 43 2 0 11 53 8192 5 0 0 0
 6 0 0 3 0 0 0 0
-0 33333 100
+0 33333 100 100
 E
 rancid deformed amulet~
 &+L   This is a diabolical rancid rather &+Rdeformed &+Llooking amulet.  The make of it&N
@@ -885,7 +885,7 @@ emerald large stone~
 ~
 8 32 3 0 15 76 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 111111 100
+0 111111 100 100
 E
 emerald large~
 &+L   The large &+Ge&+gm&+Ge&+gr&+Ga&+gl&+Gd &+Lsparkles in a way that you have never quite seen before in&N
@@ -903,7 +903,7 @@ moldy robe foul~
 ~
 9 43 3 0 12 69 8192 9 0 0 0
 18 0 0 5 0 0 0 0
-0 39393 100
+0 39393 100 100
 E
 moldy robe foul~
 &+L   This &+gm&+Go&+gl&+Gd&+gy &+Lrobe shows many signs that it has been used quite heavily.  Some&N
@@ -922,7 +922,7 @@ skeletal scimitar sword~
 ~
 5 22 3 0 11 53 8192 8193 67 0 0
 5 3 3 3 0 0 0 0
-1 12345 100
+1 12345 100 100
 E
 skeletal scimitar sword~
 &+L   This strange &+Ws&+wk&+We&+wl&+We&+wt&+Wa&+wl &+Lscimitar seems like it was crafted from a mysterious&N
@@ -940,7 +940,7 @@ skeletal shield~
 ~
 37 22 3 0 11 76 8192 513 67 0 0
 1 6 3 135 4 0 0 0
-26 23456 100
+26 23456 100 100
 E
 skeletal shield~
 &+L   This strange &+Ws&+wk&+We&+wl&+We&+wt&+Wa&+wl &+Lshield seems like it was crafted from a mysterious&N
@@ -958,7 +958,7 @@ skeletal helmet~
 ~
 9 22 3 0 11 76 9216 17 67 89751061 0
 9 0 0 5 0 0 0 0
-1 23456 100
+1 23456 100 100
 E
 skeletal helmet~
 &+L   This strange &+Ws&+wk&+We&+wl&+We&+wt&+Wa&+wl &+Lhelmet seems like it was crafted from a mysterious&N
@@ -976,7 +976,7 @@ goblin spine~
 ~
 29 10 3 0 10 10 2 0 0 0 0
 340 9372 1 0 0 0 0 0
-30 1030 100
+30 1030 100 100
 E
 goblin spine~
 &+L   This vile spine seems like it comes from a &+Ggoblin&+L.&N
@@ -988,7 +988,7 @@ skull~
 ~
 29 10 3 0 10 10 2 0 0 0 0
 340 9353 3 0 0 0 0 0
-30 1030 100
+30 1030 100 100
 E
 skull~
 &+L   This vile skull seems like it comes from a &+gTroll&+L.&N
@@ -1000,7 +1000,7 @@ weird water amulet~
 ~
 9 33 3 0 14 81 1056768 5 0 0 0
 8 0 0 4 0 0 0 0
-0 33333 100
+0 33333 100 100
 E
 weird water amulet~
 &+b   This weird amulet seems like it was crafted from water.  How this is possibe&N
@@ -1018,7 +1018,7 @@ trident mysterious kraken~
 ~
 5 22 3 0 15 81 19932416 8193 67 85471233 0
 2 3 3 11 0 0 0 0
-2 11506 100
+2 11506 100 100
 E
 trident mysterious kraken~
 &+b   This mysterious &+Ltrident &+bseems like it comes from a vile kraken.  Stains from&N
@@ -1035,7 +1035,7 @@ dagger hard stone~
 ~
 5 11 2 0 12 69 9216 8193 67 12288 0
 2 2 5 11 0 0 0 0
-1 34343 100
+1 34343 100 100
 E
 dagger hard stone~
 &+b   This hard &+Lstone &+bdagger seems like it was crafted from some sort of rock.&N
@@ -1051,7 +1051,7 @@ eye kraken~
 ~
 8 8 3 0 11 34 28672 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 22222 100
+1 22222 100 100
 E
 eye kraken~
 &+b   This seems like it is the eye from a diabolical infernal kraken.&N
@@ -1067,7 +1067,7 @@ scale kraken~
 ~
 8 8 3 0 11 34 28672 8929281 0 0 0
 0 0 0 0 0 0 0 0
-1 22222 100
+1 22222 100 100
 E
 scale kraken~
 &+b   This seems like it is a scale from a diabolical infernal kraken.&N
@@ -1083,7 +1083,7 @@ skiff strange~
 ~
 22 1 3 0 15 81 70316033 8404993 66 0 0
 0 0 0 0 0 0 0 0
-0 111111 100
+0 111111 100 100
 E
 skiff strange~
 &+L   This strange skiff seems like it can easily support the weight of at least&N
@@ -1100,7 +1100,7 @@ a &+bsapphire &+bbracelet&n~
 ~
 9 33 3 0 15 76 8192 4097 64 4171612618 24576
 9 0 0 5 0 0 0 0
-0 99999 100
+0 99999 100 100
 E
 bracelet sapphire sparkling~
 &+L   This sparkling &+bb&+Br&+ba&+Bc&+bl&+Be&+bt &+Lhas been crafted from a very fine grade of &+bs&+Ba&+bp&+Bp&+bh&+Bi&+br&+Be&+L.&N
@@ -1117,7 +1117,7 @@ mask kraken scale~
 ~
 9 35 2 0 15 81 8192 262145 0 0 0
 8 0 0 4 0 0 0 0
-3 181818 100
+3 181818 100 100
 E
 mask kraken scale~
 &+B   This mask seems like it was forged from the scale of a rather large &+bkraken&+B.&N
@@ -1134,7 +1134,7 @@ longsword sword well polished~
 ~
 5 22 3 0 10 76 0 8193 67 0 0
 5 2 5 3 0 0 0 0
-5 81818 100
+5 81818 100 100
 E
 longsword sword well polished~
 &+L   This is a well polished sword issued to only the best tower guards.&N
@@ -1150,7 +1150,7 @@ longsword sword magic fine~
 ~
 5 23 3 0 11 63 8192 8193 66 0 0
 5 2 5 3 0 0 0 0
-3 23333 100
+3 23333 100 100
 E
 longsword sword magic~
 &+b   This is a very fine sword made from a magical steel.&N
@@ -1166,7 +1166,7 @@ quarterstaff staff diamond mystical~
 ~
 5 27 3 0 12 54 8192 8193 66 0 0
 12 2 2 6 0 0 0 0
-3 33333 100
+3 33333 100 100
 E
 quarterstaff staff diamond mystical~
 &+L   This strange staff seems like it was fashioned from a fine grade of &+Wdiamond&+L.&N
@@ -1182,7 +1182,7 @@ ring kraken~
 ~
 9 33 3 0 12 63 8192 3 0 0 0
 5 0 0 4 0 0 0 0
-0 66666 100
+0 66666 100 100
 E
 ring kraken~
 &+B   This strange ring has what seems like an &+beye of a kraken &+Bmounted into it.&N
@@ -1199,7 +1199,7 @@ necklace seaweed weed~
 ~
 9 47 3 0 12 58 8192 5 0 0 0
 7 0 0 5 0 0 0 0
-1 99999 100
+1 99999 100 100
 E
 necklace seaweed weed~
 &+b   This once flawless necklace is now covered in nasty looking sea&+gweed&+b.  Still&N
@@ -1216,7 +1216,7 @@ ear stud mysterious earring~
 ~
 9 35 2 0 15 81 8192 524289 0 0 0
 6 0 0 3 0 0 0 0
-0 44444 100
+0 44444 100 100
 E
 ear stud mysterious earring~
 &+L   This &+Gm&+gy&+Gs&+gt&+Ge&+gr&+Gi&+go&+Gu&+gs &+Lear stud seems like it was crafted from a diabolical &+Gg&+glo&+Gw&+gin&+Gg&N
@@ -1234,7 +1234,7 @@ mysterious pearl~
 ~
 8 52 3 0 15 33 8193 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 66666 100
+1 66666 100 100
 E
 mysterious pearl~
 &+b   This mysterious &+Wpearl &+bseems like it came from a creature spawned by wizard&N

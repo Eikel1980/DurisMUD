@@ -2,7 +2,7 @@
 Home of the Enlightened~
 34488 1 0 20 25 1
 *
-* Zone edited with dikuEdit v2.98f
+* Zone edited with durisEdit v2.99de
 *
 *
 D 0 34400 3 5 100 0 0 0
@@ -342,8 +342,8 @@ O 0 34416 14 34482 100 0 0 0       * The bones
 O 0 34406 1 34487 100 0 0 0        * The bed
 O 0 34408 1 34487 100 0 0 0        * A steel chest
 P 1 34409 1 34408 100 0 0 0        *   A Demon skin vest
-P 1 34410 1 34408 100 0 0 0        *   A leather sack
 P 1 34412 1 34408 100 0 0 0        *   A pile of coins
+P 1 34410 1 34408 100 0 0 0        *   A leather sack
 P 1 34411 1 34410 100 0 0 0        *     An assortment of Gems
 *
 M 0 34409 9 34402 100 0 0 0        * An evil hound

@@ -5,7 +5,7 @@ huge fountain bubble~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #93601
 hide armor~
 &+ya suit of hide armor~
@@ -13,7 +13,7 @@ hide armor~
 ~
 9 12 0 0 7 0 0 9 0 0 0
 11 0 0 3 0 0 0 0
-1 1229 100
+1 1229 100 100
 E
 hide armor~
   This is some furry animals tanned hide, streted and fitted to someone.
@@ -25,7 +25,7 @@ rugged outdoors boots~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 0 0 3 0 0 0 0
-3 1239 100
+3 1239 100 100
 A
 14 5
 #93603
@@ -35,7 +35,7 @@ A wicked looking collar lies here.~
 ~
 9 13 0 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-2 1230 100
+2 1230 100 100
 A
 18 1
 #93604
@@ -45,7 +45,7 @@ pants silk tight~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 3 0 0 3 0 0 0 0
-1 1234 100
+1 1234 100 100
 A
 13 5
 #93605
@@ -55,7 +55,7 @@ leather bag holes~
 ~
 9 13 3 10 7 0 0 262145 0 0 0
 3 0 0 3 0 0 0 0
-4 2222 100
+4 2222 100 100
 #93606
 sleeves worn leather~
 &+ya pair of worn leather sleeves~
@@ -63,7 +63,7 @@ sleeves worn leather~
 ~
 13 13 3 8 7 0 0 257 0 0 0
 0 0 0 0 0 0 0 0
-4 2234 100
+4 2234 100 100
 #93607
 cloak leather studded~
 &+ya studded leather cloak~
@@ -71,7 +71,7 @@ cloak leather studded~
 ~
 9 13 3 8 7 0 0 1025 0 0 0
 4 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 #93608
 gloves black leather~
 &+La pair of studded black leather gloves~
@@ -79,7 +79,7 @@ gloves black leather~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 5 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 1
 A
@@ -91,7 +91,7 @@ silk white gown~
 ~
 9 3 0 0 7 0 0 9 0 0 0
 12 0 0 3 0 0 0 0
-1 5595 100
+1 5595 100 100
 A
 28 10
 #93610
@@ -101,7 +101,7 @@ tickler elven~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 10 1 1 2 0 0 0 0
-2 2349 100
+2 2349 100 100
 #93611
 condom~
 &+ma large condom~
@@ -109,4 +109,4 @@ condom~
 ~
 8 6 0 0 7 0 1048576 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 3948 100
+1 3948 100 100

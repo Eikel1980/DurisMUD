@@ -5,7 +5,7 @@ helmet helm studs studded~
 ~
 9 15 3 0 8 0 8192 17 0 0 0
 3 0 0 3 0 0 0 0
-6 0 100
+6 0 100 100
 E
 helm helmet banded~
 &NThis is a helmet studded sloppily yet effectively enough to protect one's&n
@@ -20,7 +20,7 @@ key stubby~
 ~
 18 21 3 0 7 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key stubby~
 &NThis key is a short fat uninteresting key.&N
@@ -32,7 +32,7 @@ axe ax hand-axe hand-ax hand~
 ~
 5 15 3 0 6 0 0 8193 0 4198764512 0
 1 2 6 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 axe ax hand-axe hand-ax hand~
 &+yThis rusty axe is ugly, yet useful to the common soldier.&N
@@ -44,7 +44,7 @@ iron cuff chains chain cuffs~
 ~
 9 15 3 0 7 0 128 4097 0 0 0
 1 0 0 4 0 0 0 0
-1 0 100
+1 0 100 100
 E
 iron cuff chains chain~
 &+LThese iron cuffs are used to restrain people.&N
@@ -60,7 +60,7 @@ longsword sword bent~
 ~
 5 15 3 0 7 0 0 8193 0 4198764516 0
 5 2 6 3 0 0 0 0
-6 0 100
+6 0 100 100
 E
 longsword sword bent~
 &NThis longsword is bent every so slightly, yet enough to limit the damage&n
@@ -77,7 +77,7 @@ sword claymore obsidian~
 ~
 5 36 3 0 12 0 4195329 8193 0 87585051 0
 13 4 6 3 0 0 0 0
-12 0 100
+12 0 100 100
 E
 sword claymore obsidian~
 &+LThis large sword has a jagged edge that can utterly maim an opponent.&N
@@ -93,7 +93,7 @@ tentacle piece long severed~
 ~
 13 2 3 0 9 0 12296 8404993 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 tentacle piece long severed~
 &+yThis long tentacle came from an &+Millithid's&+y head and appears to have been&n
@@ -106,7 +106,7 @@ crystal broadsword sword broad~
 ~
 5 8 3 0 10 0 1056769 8193 64 4198764512 0
 5 3 4 3 0 0 0 0
-7 0 100
+7 0 100 100
 E
 crystal broadsword broad sword~
 &+cThis crystal broadsword is the standard issue for many of the most&n
@@ -123,7 +123,7 @@ string gnome feet~
 ~
 9 2 3 0 9 0 262144 5 64 0 0
 1 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 string gnome feet~
 &+yLarge and sickening, this necklace consists of shriveled &+Rgnome&+y feet.&n
@@ -140,7 +140,7 @@ key gold crooked~
 ~
 18 24 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key gold crooked~
 &NThis &+Ykey&N, while made of precious material still was ill formed.&N
@@ -152,7 +152,7 @@ key squarish sapphire~
 ~
 18 33 3 0 10 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key squarish sapphire~
 &NThis key is &+bsapphire&n and shaped rather fancifully out of the material.&N
@@ -164,7 +164,7 @@ hide dracolich bracelet band~
 ~
 9 2 3 0 11 0 36864000 4097 64 0 0
 2 0 0 1 0 0 0 0
-1 0 100 2 0 0 0
+1 0 100 100 2 0 0 0
 E
 flesh dracolich bracelet~
 &+LThis bracelet was made from the hide of a powerful dracolich, it could&n
@@ -181,7 +181,7 @@ crystalized crystal gloves pair~
 ~
 9 8 3 0 11 0 33555457 129 0 4197888 0
 4 0 0 2 0 0 0 0
-4 0 100 0 64 0 0
+4 0 100 100 0 64 0 0
 E
 crystalized gloves pair crystal~
 &NThese &+Cgloves&n are made from a clear, very cold to the touch, crystal&n
@@ -198,7 +198,7 @@ goggles bloody battle~
 ~
 9 44 3 0 9 0 1024 131073 0 42370208 0
 1 0 0 3 0 0 0 0
-2 0 100 0 4 0 0
+2 0 100 100 0 4 0 0
 E
 goggles battle bloody~
 &NThese &+rgoggles&N are worn by the fearsome to keep &+rblood&n from stinging their&n
@@ -215,7 +215,7 @@ pantaloons runed runes cloth~
 ~
 9 3 3 0 8 0 1024 33 64 4460036 0
 5 0 0 2 0 0 0 0
-3 0 100 268435456 0 0 0
+3 0 100 100 268435456 0 0 0
 E
 pantaloons runed runes cloth~
 &NThis pair of pants is covered with magical &+rrunes&n.&N
@@ -231,7 +231,7 @@ corpse man handsome drow~
 ~
 15 2 3 0 2 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-100 0 100
+100 0 100 100
 E
 corpse man handsome drow~
 &n   This handsome &+mdrow&n has been brutally destroyed.  His handsome features&n
@@ -247,7 +247,7 @@ ring promise secret~
 ~
 9 22 3 0 9 0 4096 3 0 0 0
 1 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring promise secret~
 &n   This ring &+Wglitters&n impressivly.  While it is but silver it is obvious&N
@@ -267,7 +267,7 @@ token torg favor~
 ~
 13 24 3 0 12 0 8 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token torg favor~
 &n   This &+Ygolden&n token proves that in some way the bearer had served the&N
@@ -281,7 +281,7 @@ key official~
 ~
 18 15 3 0 7 0 8392712 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key official~
 &nThis official looking key, bears &+rT&+gor&+rg&N's symbol and a military precisness&n
@@ -294,7 +294,7 @@ barbed javelin~
 ~
 5 15 3 0 9 0 135169 8193 64 0 0
 8 2 6 11 0 0 0 0
-12 0 100
+12 0 100 100
 E
 barbed javelin~
 &nThis &+Lbarbed&n javelin is extremely mean looking, and appears as though&n
@@ -311,7 +311,7 @@ slab obsidian shield~
 ~
 37 36 3 0 6 0 1024 513 0 85475329 0
 1 3 5 25 5 0 0 0
-15 0 100 0 0 0 33554432
+15 0 100 100 0 0 0 33554432
 E
 slab obsidian shield~
 &nThis slab of &+Lobsidian&n stone is basically a large slab of rock with&n
@@ -328,7 +328,7 @@ obsidian circle ring circlet~
 ~
 9 36 3 0 8 0 1024 33554435 64 8515584 0
 1 0 0 2 0 0 0 0
-2 0 100 65536 0 0 0
+2 0 100 100 65536 0 0 0
 E
 obsidian circle ring circlet~
 &nFormed from &+Lobs&+Widi&+Lan&n this circlet appears to pulsate with stony vitality.&n
@@ -344,7 +344,7 @@ scrap paper note~
 ~
 13 28 3 0 7 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 scrap paper note~
 &NREMINDER:  When prisoners are brought before you, you must send them directly&n
@@ -359,7 +359,7 @@ dracolich hide strip~
 ~
 13 2 3 0 3 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 dracolich hide strip~
 &nThis fine strip of rare &+Ldracolich&n &+rhide&n is a commodity of itself.&n
@@ -372,7 +372,7 @@ cured dracolich hide~
 ~
 13 2 3 0 9 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 cured dracolich hide~
 &+LThis cured strip of flesh is perfectly treated.  It looks as though it&n
@@ -385,7 +385,7 @@ whip three tailed~
 ~
 5 16 3 0 9 0 16777472 8193 64 0 0
 14 3 7 2 0 0 0 0
-5 0 100
+5 0 100 100
 E
 whip three tailed~
 &nThis wicked looking whip is barbed and ready to snap viciously with all&n
@@ -402,7 +402,7 @@ blood inscribed bracer~
 ~
 9 19 3 0 7 0 0 4097 64 4198894500 0
 6 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 blood inscribed bracer~
 &nThis bracer is inscribed and dripping with &+rblood&n from many many slain&n
@@ -419,7 +419,7 @@ corpse battered dwarf~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse battered dwarf~
 &n   A poor &+Ydwarf&n appears to have been trying to serve his people, and found&N
@@ -434,7 +434,7 @@ rock fake~
 ~
 15 37 3 0 7 0 4096 0 0 0 0
 30 13 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 rock fake~
 &nThis &+Lrock&n appears to have been laid with a purpose.  A small lock is&N
@@ -447,7 +447,7 @@ bloody note paper~
 ~
 13 29 3 0 3 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 bloody note paper~
 &N   &+rI have tried my best to find out Torg's intentions and his strength's.&N
@@ -467,7 +467,7 @@ laurel medallion~
 ~
 18 43 3 0 3 0 8388608 16389 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 laurel medallion~
 &+g   This medallion is the only means of freedom from the Colloseum.  Using it&N
@@ -482,7 +482,7 @@ sapphire star~
 ~
 9 33 3 0 7 0 0 524289 64 0 0
 5 0 0 1 0 0 0 0
-1 0 100 0 16 0 0
+1 0 100 100 0 16 0 0
 E
 sapphire star~
 &+b   Sapphire&n and beautiful this is a small earring worth a lot of money on&n
@@ -500,7 +500,7 @@ tree sculpted~
 ~
 12 6 3 0 7 0 1024 16385 64 38145956 0
 0 0 0 0 0 0 0 0
-0 0 100 16777216 0 0 0
+0 0 100 100 16777216 0 0 0
 E
 tree sculpted~
 &+g   This tree has been sculpted in a careful likeness of the fabled tree of&n
@@ -518,7 +518,7 @@ pool glimmering~
 ~
 25 40 3 0 7 0 0 0 0 0 0
 29065 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool glimmering~
 &n   This pool of color glimmers and shimmers.  During the calmest moments of&N
@@ -532,7 +532,7 @@ lake glimmering portal~
 ~
 25 40 3 0 7 0 0 0 0 0 0
 29064 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lake glimmering portal~
 &n   This large body of shifting colors is the central method of travel for&n
@@ -548,7 +548,7 @@ limestone circle ring~
 ~
 9 39 3 0 7 0 1024 3 64 87572507 0
 1 0 0 3 0 0 0 0
-0 0 100 67108864 0 0 0
+0 0 100 100 67108864 0 0 0
 E
 limestone circle ring~
 &nThis small &+gci&+Wrc&+gle&n is made of a beautiful form of limestone.  Its careful&n
@@ -565,7 +565,7 @@ swift bamboo blade~
 ~
 5 41 3 0 7 0 34866176 8193 64 8515584 0
 2 2 6 11 0 0 0 0
-4 0 100 16 0 0 0
+4 0 100 100 16 0 0 0
 E
 swift bamboo blade~
 &n   This quick looking blade has been crafted for the deadly art of military&n
@@ -583,7 +583,7 @@ gem studded foil~
 ~
 5 26 3 0 7 0 263168 8193 0 13106692 0
 2 3 5 11 0 0 0 0
-1 0 100
+1 0 100 100
 E
 gem studded foil~
 &n   This foil is decorated especially on the pommel very elaborately with
@@ -601,7 +601,7 @@ secret promise ring~
 ~
 9 22 3 0 7 0 4096 3 0 0 0
 1 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 secret promise ring~
 &n   This ring is the second of the pair.  &+mZillra&n bound herself to her lover&N
@@ -620,7 +620,7 @@ glowing key~
 ~
 18 25 3 0 7 0 8388617 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 glowing key~
 &nGlowing this rich &+Wplatinum&n key permits entry into the singular most&n
@@ -633,7 +633,7 @@ tiny gold locket chain~
 ~
 9 24 3 0 10 0 4104 5 0 0 0
 1 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 tiny gold locket chain~
 &n   This looks like a wonderful locket held by a loved one.  Within it one&n
@@ -653,7 +653,7 @@ marbled coiling serpents marble~
 ~
 9 38 3 0 7 0 1152 257 64 85475329 0
 8 0 0 3 0 0 0 0
-8 0 100
+8 0 100 100
 E
 marbled coiling serpents marble~
 &+L   These marble snakes are an extremely surprising piece of equipment.  While&N
@@ -672,7 +672,7 @@ silk twined rope belt~
 ~
 9 3 3 0 7 0 33792 2049 64 4198148 0
 5 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 silk twined rope belt~
 &n   This well made &+csilk&n rope is used for a belt.  While ropes are not&N
@@ -690,7 +690,7 @@ silverthorn corsage~
 ~
 9 30 3 0 7 0 1 2097153 64 0 0
 2 0 0 3 0 0 0 0
-1 0 100
+1 0 100 100
 E
 silverthorn corsage~
 &nThis &+Wsilv&+cer&+Wthor&+Wn&n corsage is valuable for the rareness and beauty of the&n
@@ -705,7 +705,7 @@ cleaned skull symbol llznixor~
 ~
 13 10 3 0 7 0 1 2097153 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 cleaned skull symbol~
 &nThis skull is the terrifying symbol of &+MLLznixor&n.&n
@@ -717,7 +717,7 @@ dorn steel forehead plate~
 ~
 13 16 3 0 7 0 0 17 0 0 0
 0 0 0 0 0 0 0 0
-8 0 100
+8 0 100 100
 E
 dorn steel forehead plate~
 &nThis &+Lsteel&n headbutting plate is for &+bDorn's&n forehead.&n
@@ -729,7 +729,7 @@ tibor tankard~
 ~
 13 7 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 tibor tankard~
 &nThis tankard is the legendary drinking vessel of &+YTibor.&n
@@ -741,7 +741,7 @@ elirandel ball flame~
 ~
 13 1 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 elirandel ball flame~
 &NThis ball of flame shifts and changes without any outside force emnating&n
@@ -754,7 +754,7 @@ jonxin magic cards card deck~
 ~
 13 28 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 jonxin magic cards card deck~
 &nThis deck of magical cards are legendarily associated with &+RJonxin&n.&n
@@ -766,7 +766,7 @@ smurp boot knife~
 ~
 5 15 3 0 7 0 0 8193 64 0 0
 2 3 3 11 1 0 0 0
-4 0 100
+4 0 100 100
 E
 smurp boot knife~
 &nSmall, this boot knife could only have been crafted for &+ySmurp&n the&n
@@ -783,7 +783,7 @@ kulnon brass knuckles~
 ~
 9 17 3 0 7 0 1 129 0 0 0
 1 0 0 5 0 0 0 0
-5 0 100
+5 0 100 100
 E
 kulnon brass knuckles~
 &NThe are worn upon the hands of &+gKul&+Lnon&n the legendary warrior.&N
@@ -795,7 +795,7 @@ lanom medallion purity~
 ~
 13 18 3 0 7 0 262145 5 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 lanom medallion purity~
 &nPure and true this medallion came straight from the chest of &+cLanom&n the&n
@@ -808,7 +808,7 @@ pool glimmering~
 ~
 25 40 3 0 7 0 0 0 0 0 0
 29117 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool glimmering~
 &n   This pool of color glimmers and shimmers.  During the calmest moments of&N
@@ -822,7 +822,7 @@ key spear skull impaled~
 ~
 18 10 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key spear skull impaled~
 &NThis key is an exact replica of the symbol of &+rT&+gor&+rg&n.&N
@@ -834,7 +834,7 @@ curtain elemental fire sheet~
 ~
 9 1 3 0 14 0 36864000 1025 64 0 0
 12 0 0 1 0 0 0 0
-6 0 100 537395200 1 536870912 0
+6 0 100 100 537395200 1 536870912 0
 E
 curtain elemental fire sheet~
 &n  This is a curtain of &+rfire&n which seems to not have any substance&n
@@ -847,7 +847,7 @@ perfect magic rose~
 ~
 13 30 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 perfect magic rose~
 &n   This is a rose created and enhanced by magical illusion.  Special and&n
@@ -860,7 +860,7 @@ horned golden helm horn~
 ~
 9 24 3 0 7 0 1024 17 64 87650395 0
 8 0 0 5 0 0 0 0
-3 0 100 96 0 0 0
+3 0 100 100 96 0 0 0
 E
 horned golden helm horn~
 &+YGolden&n fantastic craftsmanship makes this helm intimidating and&n
@@ -877,7 +877,7 @@ fountain gurgling red hued~
 ~
 17 11 3 0 7 0 0 0 0 0 0
 -1 -1 13 0 0 0 0 0
-100 0 100
+100 0 100 100
 E
 fountain gurgling red hued~
 &n   This fountain gurgles with a sickening fullness.  Here &+rT&+gor&+rg&n's people drink&N
@@ -893,7 +893,7 @@ meat centaur haunch~
 ~
 19 2 3 0 7 0 0 8404993 0 0 0
 48 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 meat centaur haunch~
 &nSome poor &+gCen&+Ltaur&n has become a meal for the next hungry mouth that&n
@@ -906,7 +906,7 @@ chisel tiny jewler jeweler's intricate~
 ~
 13 36 3 0 10 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 chisel tiny intricate jeweler jeweler's~
 &n Made for intricate work, this chisel is designed for a jeweler's sure&N
@@ -920,7 +920,7 @@ war gauntlets torg~
 ~
 9 36 3 0 15 0 36701184 129 64 87572571 0
 12 0 0 5 0 0 0 0
-2 0 100 8 0 0 0
+2 0 100 100 8 0 0 0
 E
 war gauntlets torg~
 &nThese gauntlets bear the power of the war giant &+rT&+gor&+rg&n.  His power imbued here&n
@@ -937,7 +937,7 @@ boots war giant torg~
 ~
 9 36 3 0 15 0 33554432 65 64 0 0
 8 0 0 5 0 0 0 0
-2 0 100 134217728 0 0 0
+2 0 100 100 134217728 0 0 0
 E
 boots war giant torg~
 &nThese &+bboots&n are large and extremely sharply cut.  Their fit is generally
@@ -954,7 +954,7 @@ block obsidian blood torg~
 ~
 13 36 3 0 7 0 0 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 block obsidian blood torg~
 &n   This block of obsidian is glowing with some sort of unknown magic.&N
@@ -969,7 +969,7 @@ kharma mind beads~
 ~
 9 8 3 0 10 0 0 5 64 0 0
 3 0 0 1 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 E
 kharma mind beads~
 &n   These &+gbeads&n are worn to enhance the knowledge of those with high&N
@@ -987,7 +987,7 @@ meat halfling belly~
 ~
 19 2 3 0 7 0 0 8404993 0 0 0
 32 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 meat halfling belly~
 &nDisgusting and fat, this belly of a &+yHalfling&n is well cut.&n
@@ -999,7 +999,7 @@ meat rib barbarian~
 ~
 19 2 3 0 7 0 0 8404993 0 0 0
 32 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 meat rib barbarian~
 &nRipped from a rather large &+BBarbarian&n this rib looks uncomfortably tasty.&n
@@ -1011,7 +1011,7 @@ column bloodsoaked obsidian pillar~
 ~
 5 36 3 0 9 0 4195328 8193 0 119144505 1
 12 8 6 6 0 0 0 0
-20 0 100
+20 0 100 100
 E
 column bloodsoaked obsidian pillar~
 &nThis is the legendary &+Lcolumn&n which &+rT&+gor&+rg&n used to help storm the caves&n
@@ -1028,7 +1028,7 @@ barbed mail battle rager battlerager king suit~
 ~
 9 19 3 0 7 0 33554432 9 64 4167384646 0
 20 0 0 5 0 0 0 0
-12 0 100 285212672 0 0 0
+12 0 100 100 285212672 0 0 0
 E
 barbed mail battle rager battlerager king suit~
 &n   This barbed mail was made by the most renowned armorer in &+YTibornor's&n
@@ -1046,7 +1046,7 @@ half moon half-moon battle ax axe battleaxe~
 ~
 5 19 3 0 10 0 0 8193 64 0 0
 1 4 5 3 0 0 0 0
-4 0 100 0 28 0 0
+4 0 100 100 0 28 0 0
 E
 half moon half-moon battle ax axe battleaxe~
 &nDeadly and unadorned this axe is a standard weapon amongst the dwarven&n
@@ -1063,7 +1063,7 @@ sharp spike stone~
 ~
 5 11 3 0 9 0 0 8193 64 0 0
 2 3 5 11 0 0 0 0
-2 0 100 0 28 0 0
+2 0 100 100 0 28 0 0
 E
 sharp spike stone~
 &nThis spike of &+Lstone&n is specifically designed not to glint and alert&n
@@ -1080,7 +1080,7 @@ bag wonderous depth~
 ~
 15 3 3 0 10 0 0 8388609 64 0 0
 1000 5 0 1000 0 0 0 0
-2 0 100
+2 0 100 100
 E
 bag wonderous depth~
 &n   This bag was originally designed to hold the boundless instruments of a
@@ -1093,7 +1093,7 @@ horn curved finely~
 ~
 32 17 3 0 13 0 1025 16385 0 8421376 0
 189 56 0 1 0 0 0 0
-0 0 100 524288 0 0 0
+0 0 100 100 524288 0 0 0
 E
 horn curved finely~
 &nThis &+Yhorn&n is the instrument of a master musician.&n
@@ -1109,7 +1109,7 @@ ultrathin thin ultra robes robe probability~
 ~
 9 1 3 0 15 0 1025 9 64 38146020 0
 12 0 0 1 0 0 0 0
-0 0 100 0 12288 0 33554432
+0 0 100 100 0 12288 0 33554432
 E
 ultrathin robes probability~
 &+Y   These robes seem to be a figment of imagination.  How anything could be&n
@@ -1127,7 +1127,7 @@ obsidian buckle rage unique~
 ~
 9 36 3 0 15 0 302096393 8388609 64 0 0
 1 0 0 5 0 0 0 0
-3 0 100
+3 0 100 100
 E
 obsidian buckle rage~
 &n   "&+RRage&n" is a buckle forged from the vile dark power of &+rT&+gor&+rg&n and the&n
@@ -1146,7 +1146,7 @@ luxurious chair~
 ~
 13 6 3 0 12 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-50 0 100
+50 0 100 100
 E
 luxurious chair~
 &n   This luxurious &+ychair&n appears to have been made especially for the&n
@@ -1159,7 +1159,7 @@ couches pair~
 ~
 13 6 3 0 12 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-50 0 100
+50 0 100 100
 E
 pair couches couch~
 &n   These &+Bcouches&n have been provided for those who come to visit the &+BLor&+Ge&n
@@ -1173,7 +1173,7 @@ key cell~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key cell~
 &+LThis is a key to a prison cell.&n
@@ -1185,7 +1185,7 @@ diamond bloody blood stud earring~
 ~
 9 27 3 0 14 0 4097 524289 64 0 0
 3 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 E
 diamond bloody blood stud earring~
 &nThis earring has been ripped forcibly from the dead corpse of the master&n
@@ -1202,7 +1202,7 @@ stony granite face mask~
 ~
 9 11 3 0 11 0 4097 262145 64 4198763172 0
 7 0 0 5 0 0 0 0
-4 0 100
+4 0 100 100
 E
 stony granite face~
 &+LStony&n this &+ygranite&n face appears to have been ripped directly from some poor
@@ -1219,7 +1219,7 @@ braid war beads~
 ~
 9 43 3 0 10 0 0 33554433 64 0 0
 4 0 0 2 0 0 0 0
-1 0 100 0 16 0 0
+1 0 100 100 0 16 0 0
 E
 braid war beads~
 &nThis braid of &+rwar&n beads appears to have been taken from one of the many&n
@@ -1236,7 +1236,7 @@ head dwarven dwarf lord~
 ~
 13 2 3 0 7 0 128 1 0 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 E
 head dwarven dwarf lord~
 &n   This &+rhead&n is quite disturbing.  Its former owner was a lord who was&n
@@ -1251,7 +1251,7 @@ twisted hoop twisting obsidian~
 ~
 9 36 3 0 13 0 33555456 524289 64 42371556 0
 5 0 0 1 0 0 0 0
-1 0 100 0 0 0 536870912
+1 0 100 100 0 0 0 536870912
 E
 twisted hoop twisting obsidian~
 &+LThis twisted hoop was crafted from magical stone, and radiates darkness.&n
@@ -1267,7 +1267,7 @@ unholy chisel shaping~
 ~
 13 36 3 0 7 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 E
 unholy chisel shaping~
 &n   This chisel is imbued with an &+Lunholy&n strength which is designed with&N
@@ -1285,7 +1285,7 @@ robe cloth vecna piece~
 ~
 13 3 3 0 12 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 vecna cloth robe piece~
 &nThis grubby piece of cloth has somehow been retrieved from &+LVecna's&n very&n
@@ -1298,7 +1298,7 @@ piece scale shaving shave bahamut dragon~
 ~
 13 35 3 0 15 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 piece scale shaving shave bahamut dragon~
 &nThis small portion of an old scale of &+WBahamut's&n is worth its weight&n
@@ -1311,7 +1311,7 @@ hand elven prodigy~
 ~
 13 2 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 hand elven prodigy~
 &nSomehow this hand has been removed from a prodigy of immense power.  From&n
@@ -1324,7 +1324,7 @@ sword blaze humming~
 ~
 5 18 3 0 12 0 33554432 8193 64 4203119076 0
 5 5 5 3 0 47223 40 200
-5 0 100 4 0 0 0
+5 0 100 100 4 0 0 0
 E
 sword blaze humming~
 &+WThis sword &+rb&+ml&+ga&+bz&+ce&+rs&+W with intensity.&N
@@ -1352,7 +1352,7 @@ collar firestones fire stones~
 ~
 9 11 3 0 14 0 0 5 64 0 0
 6 0 0 3 0 0 0 0
-3 0 100 536870912 0 0 0
+3 0 100 100 536870912 0 0 0
 E
 collar firestones fire stones~
 &+LThis sturdy collar is filled with &+rfi&+Rer&+Yy&+L stones.&N
@@ -1368,7 +1368,7 @@ cloak multi-colored multi colored beads sheet~
 ~
 9 8 3 0 13 0 1 1025 64 0 0
 7 0 0 3 0 0 0 0
-2 0 100 268435456 0 0 0
+2 0 100 100 268435456 0 0 0
 E
 cloak multi-colored colored beads sheet multi~
 &+gMany beads are wrapped together in twine to form this oddly comfortable cloak.&n
@@ -1384,7 +1384,7 @@ scorched fingers~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 E
 scorched fingers~
 &+LThis bundle of rotting fingers appears to have been forcefully removed from&n
@@ -1397,7 +1397,7 @@ eyes ripped~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 eyes ripped~
 &+rA set of loose &+We&+gye&+Wba&+gl&+Wls&+r is here rolling away from whoever&n
@@ -1410,7 +1410,7 @@ mug mead broken~
 ~
 13 7 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 mug mead broken~
 &+YLying here is a broken mug of mead thrown down by some vicious spectator.&n
@@ -1422,7 +1422,7 @@ key staging~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key staging~
 &NThis is a very heavy looking key.&n
@@ -1434,7 +1434,7 @@ key fence~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key fence~
 &NThis is a very used key.&n
@@ -1446,7 +1446,7 @@ key hatch~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 key hatch~
 &+LThis is a very used and rusty key.&n
@@ -1458,7 +1458,7 @@ charm dwarf bone~
 ~
 9 10 3 0 13 0 8192 5 0 0 0
 5 0 0 4 0 0 0 0
-2 0 100
+2 0 100 100
 E
 charm dwarf bone~
 &+LThis ugly &+gcharm&+L has been carved from the &+Wskull&+L of a &+Ydwarf&+L.&N
@@ -1474,7 +1474,7 @@ mask iron bloodhounds blood hound~
 ~
 9 15 3 0 7 0 1 262145 0 0 0
 8 0 0 5 1 0 0 0
-0 0 100 0 16 0 0
+0 0 100 100 0 16 0 0
 E
 mask iron bloodhounds blood hound~
 &+LThis heavily spiked mask belongs to a member of the infamous iron &+rbloodhounds.&N
@@ -1490,7 +1490,7 @@ lanella heart~
 ~
 13 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lanella heart~
 &N&+LThis &N&+rheart&N&+L still drips vile dark blood that seeps constantly through&N
@@ -1504,7 +1504,7 @@ lanella heart broken split~
 ~
 13 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lanella heart split broken~
 &N&+LThis &N&+rheart&N&+L no longer drips the malice it once did.  Instead&n
@@ -1519,4 +1519,4 @@ key mithril~
 ~
 18 15 3 0 7 0 540672 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

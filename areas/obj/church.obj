@@ -5,7 +5,7 @@ scroll reed dried~
 ~
 2 42 3 1 5 0 0 1 0 1 0
 21 102 15 3 0 0 0 0
-1 6574 100
+1 6574 100 100
 E
 scroll reed dried~
 A scroll of dried reed, could probably roll it and smoke it too ..
@@ -17,7 +17,7 @@ scroll leaf pressed~
 ~
 2 42 3 1 5 0 0 1 0 1 0
 26 29 4 18 0 0 0 0
-1 5255 100
+1 5255 100 100
 E
 scroll leaf pressed~
 A small imprint on the scroll reads: RJ Reynolds and Co
@@ -29,7 +29,7 @@ scroll woven flax~
 ~
 2 42 3 1 7 0 0 1 0 1 0
 21 12 140 23 0 0 0 0
-1 3543 100
+1 3543 100 100
 E
 scroll woven flax~
 This scroll is woven of flax.
@@ -41,7 +41,7 @@ case metal large~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 180 29 87824 180 0 0 0 0
-0 0 100
+0 0 100 100
 E
 case metal large~
 &+c   This large case is where the most powerful scrolls of the church are&n
@@ -54,7 +54,7 @@ small iron key~
 ~
 18 15 3 1 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 2342 100
+1 2342 100 100
 E
 small iron key~
 A small key, perhaps it unlocks something!
@@ -66,7 +66,7 @@ scroll rotting parchment~
 ~
 2 3 3 1 7 0 0 1 0 1 0
 45 95 19 141 0 0 0 0
-1 1352 100
+1 1352 100 100
 E
 scroll rotting parchment~
 This parchment looks as if it's about to fall apart.
@@ -78,7 +78,7 @@ needle knitting blue tinted blue-tinted~
 ~
 5 15 3 2 9 0 0 8193 0 0 0
 2 2 3 11 0 0 0 0
-4 16346 100
+4 16346 100 100
 E
 needle knitting blue tinted blue-tinted~
 I bet a person could knit some kickass socks with this.
@@ -94,7 +94,7 @@ band shriveled human flesh~
 ~
 9 2 3 2 4 0 0 4097 0 0 0
 4 11 31 2 0 0 0 0
-2 12421 100
+2 12421 100 100
 E
 band shriveled human flesh~
 A long length of human flesh, twisted and knotted into a wristwear.
@@ -110,7 +110,7 @@ mask rusted iron~
 ~
 9 15 3 2 7 0 0 262145 0 0 0
 5 13 1 3 0 0 0 0
-3 12521 100
+3 12521 100 100
 E
 mask rusted iron~
 Some fool left this mask out in the rain to rust.
@@ -124,7 +124,7 @@ thick wire bound wire-bound tome~
 ~
 12 28 3 2 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 23356 100
+4 23356 100 100
 E
 thick wire bound wire-bound tome~
 This tome has listings of all the visitors for the last four years.
@@ -140,7 +140,7 @@ mallet thick walnut~
 ~
 5 6 3 4 7 0 0 8193 0 0 0
 4 1 6 7 0 0 0 0
-4 42564 100
+4 42564 100 100
 E
 mallet thick walnut~
 This mallet would probably leave a good-sized bruise if someone started
@@ -157,7 +157,7 @@ damp woolen cowl~
 ~
 9 3 3 2 7 0 1024 17 0 87052379 0
 4 4 254 2 0 0 0 0
-3 47325 100
+3 47325 100 100
 E
 damp woolen cowl~
 This cowl is damp with what appears to fresh blood!
@@ -173,7 +173,7 @@ spiked pair ostrich skin ostrich-skin boots~
 ~
 9 12 3 2 12 0 0 65 0 0 0
 2 6 1 3 1 0 0 0
-3 95102 100
+3 95102 100 100
 E
 spiked pair ostrich skin ostrich-skin boots~
 These boots are quite fashionable, and would definitely make an interesting
@@ -188,7 +188,7 @@ pair greasy trousers~
 ~
 9 43 3 2 7 0 0 33 0 0 0
 9 5 1 2 0 0 0 0
-3 2312 100
+3 2312 100 100
 E
 pair greasy trousers~
 These trousers are made of thick, rough material, and aren't very stylish.
@@ -204,7 +204,7 @@ spike shouldered spike-shouldered leather jacket~
 ~
 9 14 3 3 7 0 0 9 0 0 0
 13 3 1 3 1 0 0 0
-4 64531 100
+4 64531 100 100
 E
 spike shouldered spike-shouldered leather jacket~
 This jacket gives one a mean look, just like the one most thugs and ruffians
@@ -221,7 +221,7 @@ steel toed steel-toed pair work boots~
 ~
 9 14 3 2 7 0 0 65 0 0 0
 8 6 1 3 0 0 0 0
-3 14251 100
+3 14251 100 100
 E
 steel toed steel-toed pair work boots~
 These were made standard work-gang issue after someone lost a toe when a
@@ -238,7 +238,7 @@ pair work thick gloves~
 ~
 9 13 3 2 7 0 0 129 0 0 0
 7 7 1 3 0 0 0 0
-3 2321 100
+3 2321 100 100
 E
 pair work thick gloves~
 These work gloves became necesarry after someone suffered a really nasty
@@ -255,7 +255,7 @@ leather lifting harness~
 ~
 9 13 3 2 7 0 0 1048577 0 0 0
 3 17 0 1 0 0 0 0
-3 15234 100
+3 15234 100 100
 E
 leather lifting harness~
 This harness became part of the standard gear after one of the work-gang
@@ -270,7 +270,7 @@ ribbed iron hard hat hard-hat~
 ~
 9 15 3 0 7 0 0 17 0 0 0
 8 4 30 4 0 0 0 0
-3 25251 100
+3 25251 100 100
 E
 ribbed iron hard hat hard-hat~
 This hat became necesary after a large iron anvil fell from the heavens,
@@ -285,7 +285,7 @@ magical time keeping time-keeping device~
 ~
 9 19 3 1 7 0 64 4097 0 0 0
 1 11 24 1 0 0 0 0
-1 75125 100
+1 75125 100 100
 E
 magical time keeping time-keeping device~
 This fascinating device keeps time, unfortunately it does a very poor job
@@ -302,7 +302,7 @@ emerald iron band thin~
 ~
 9 32 3 1 7 0 128 3 0 0 0
 1 1 0 1 0 0 0 0
-1 79164 100
+1 79164 100 100
 E
 emerald iron band thin~
 Interesting that someone would place such a beautiful emerald on a thin
@@ -317,7 +317,7 @@ thin length twisted cord~
 ~
 9 43 3 1 7 0 0 2049 0 0 0
 4 10 0 1 0 0 0 0
-1 25224 100
+1 25224 100 100
 E
 thin length twisted cord~
 A thin length of twisted cord, used as a crude belt.
@@ -331,7 +331,7 @@ set copper wire coils~
 ~
 9 21 3 2 7 0 0 5 0 0 0
 1 2 0 1 0 0 0 0
-2 11243 100
+2 11243 100 100
 E
 set copper wire coils~
 These coils of wire have been shaped to slide over a minotaur's horns.
@@ -347,7 +347,7 @@ massive ivory bladed ivory-bladed claymore~
 ~
 5 34 3 4 7 0 1024 8193 64 24 0
 13 4 5 3 0 0 0 0
-8 85154 100
+8 85154 100 100
 E
 massive ivory bladed ivory-bladed claymore~
 A blade of ivory, honed magically to razor sharpness.
@@ -363,7 +363,7 @@ spiral woven smoke~
 ~
 9 1 3 0 7 0 0 524289 0 0 0
 1 14 0 1 0 0 0 0
-0 72915 100
+0 72915 100 100
 E
 spiral woven smoke~
 This spiral of smoke seems to somehow hold its shape!
@@ -377,7 +377,7 @@ glowing pair diamond gauntlets~
 ~
 9 27 3 2 7 0 1 129 0 0 0
 10 7 1 5 0 0 0 0
-3 215415 100
+3 215415 100 100
 E
 glowing pair diamond gauntlets~
 These gauntlets are made of the hardest naturally occuring substance known,
@@ -392,7 +392,7 @@ badge holy patronage~
 ~
 12 15 3 1 7 0 262144 2097153 0 0 0
 0 0 0 0 0 0 0 0
-1 23523 100 0 4 0 0
+1 23523 100 100 0 4 0 0
 E
 badge holy patronage~
 This badge signifies that the holy gods endorse the wearer in whatever
@@ -407,7 +407,7 @@ stiff mithril collar~
 ~
 9 18 3 2 7 0 0 5 0 0 0
 5 2 1 4 0 0 0 0
-3 64532 100
+3 64532 100 100
 E
 stiff mithril collar~
 This collar is made by dwarven smiths of a fabulous magical metal.
@@ -423,7 +423,7 @@ monocle emerald rimmed emerald-rimmed glass~
 ~
 9 7 3 1 7 0 0 131073 0 0 0
 2 12 8 2 0 0 0 0
-1 52109 100
+1 52109 100 100
 E
 monocle emerald rimmed emerald-rimmed glass~
 This monocle allows people a bit more clarity of vision, and is great
@@ -440,7 +440,7 @@ red white striped body cloak bodycloak~
 ~
 9 3 3 2 7 0 131072 1025 0 0 0
 4 9 1 1 0 0 0 0
-2 23463 100
+2 23463 100 100
 E
 red white striped body cloak bodycloak~
 This cloak is extremely colourful, probably maskes pretty lousy camoflauge
@@ -455,7 +455,7 @@ tight golden chain~
 ~
 9 24 3 2 7 0 0 5 0 0 0
 6 2 1 1 0 0 0 0
-4 85105 100
+4 85105 100 100
 E
 tight golden chain~
 Made of gold, this chain probably sells for alot of cash.
@@ -471,7 +471,7 @@ An unusually coloured peacock feather lies here.&n~
 ~
 21 50 3 0 7 1 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 34624 100
+1 34624 100 100
 E
 steel tipped steel-tipped peacock feather~
 This feather was once sharp enough to write with, but when the feather
@@ -488,7 +488,7 @@ rusted iron tower shield~
 ~
 37 15 3 5 4 0 0 513 0 0 0
 1 3 4 12 4 0 0 0
-15 15105 100
+15 15105 100 100
 E
 rusted iron tower shield~
 What was once a really nice shield is now rusted and corroded, however it
@@ -505,7 +505,7 @@ heavy spike edged spike-edged ring~
 ~
 9 16 3 1 7 0 0 3 0 0 0
 6 1 0 2 1 0 0 0
-3 23421 100
+3 23421 100 100
 E
 heavy spike edged spike-edged ring~
 This heavy ring has spikes that curl out from the side and upward, and would
@@ -522,7 +522,7 @@ sleeves scrolled intricate runes~
 ~
 9 49 3 2 7 0 1024 257 0 4197888 0
 8 8 1 1 0 0 0 0
-3 55108 100
+3 55108 100 100
 E
 sleeves scrolled intricate runes~
 These sleeves have been enchanted to provide some extra protection.
@@ -538,7 +538,7 @@ mask charred flesh~
 ~
 9 2 3 2 7 0 0 262145 0 0 0
 4 13 1 1 0 0 0 0
-3 14915 100
+3 14915 100 100
 E
 mask charred flesh~
 This mask is utterly revolting, a mask of flesh thats been charred and
@@ -555,7 +555,7 @@ book dark hyms~
 ~
 12 28 3 1 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 14134 100
+4 14134 100 100
 E
 book dark hyms~
 This book is filled with some really morbid songs.
@@ -569,7 +569,7 @@ crown unholy saints~
 ~
 9 17 3 2 7 0 1024 17 0 33554848 0
 2 4 30 2 0 0 0 0
-4 125874 100
+4 125874 100 100
 E
 crown unholy saints~
 An aura of darkness seems to radiate from this crown ..
@@ -585,7 +585,7 @@ magnificent silver tomahawk~
 ~
 5 22 3 3 7 0 263168 8193 65 2117635 0
 1 3 3 3 0 0 0 0
-6 145950 100
+6 145950 100 100
 E
 magnificent silver tomahawk~
 This magnificent weapon has been wrought from pure silver!
@@ -601,7 +601,7 @@ staff swirling smoke flame~
 ~
 4 1 3 0 7 0 263168 16385 0 4197888 0
 50 3 3 95 0 0 0 0
-8 150945 100
+8 150945 100 100
 E
 staff swirling smoke flame~
 This staff is composed of two ribbons, one of smoke, one of flame, that swirl
@@ -616,7 +616,7 @@ food splattered apron food-splattered~
 ~
 9 3 3 1 7 0 0 2049 0 0 0
 2 10 0 1 0 0 0 0
-2 13421 100
+2 13421 100 100
 E
 food splattered apron food-splattered~
 So much food to taste.. and this apron has seen it all.
@@ -630,7 +630,7 @@ pleated red blue kilt~
 ~
 9 3 3 2 12 0 0 33 0 0 0
 8 5 54 2 0 0 0 0
-4 95105 100
+4 95105 100 100
 E
 pleated red blue kilt~
 Now you have the answer to that old question about what one wears under
@@ -647,7 +647,7 @@ ink covered ink-covered steel bracer~
 ~
 9 16 3 4 7 0 0 4097 0 0 0
 5 11 1 4 0 0 0 0
-5 13452 100
+5 13452 100 100
 E
 ink covered ink-covered steel bracer~
 This bracer is covered in ink from the printing press.
@@ -663,7 +663,7 @@ dark sash spun wire~
 ~
 9 15 3 3 7 0 0 2049 0 0 0
 8 10 0 4 0 0 0 0
-4 32135 100
+4 32135 100 100
 E
 dark sash spun wire~
 A coarse cable used as a crude belt.
@@ -677,7 +677,7 @@ mask opaque coloured glass~
 ~
 9 7 3 2 7 0 0 262145 0 0 0
 4 13 1 4 0 0 0 0
-4 24143 100
+4 24143 100 100
 E
 mask opaque coloured glass~
 This glass mask is really quite beautiful.
@@ -691,7 +691,7 @@ shredded leather flail~
 ~
 5 13 3 2 7 0 0 8193 0 0 0
 3 4 2 2 0 0 0 0
-3 45105 100
+3 45105 100 100
 E
 shredded leather flail~
 The leather straps on this flail have been shredded even further, probably
@@ -708,7 +708,7 @@ thin leather cord~
 ~
 9 14 3 1 7 0 0 5 0 0 0
 4 2 0 1 0 0 0 0
-2 67245 100
+2 67245 100 100
 E
 thin leather cord~
 This leather cord has a loop and hook at the ends, so that it can be placed
@@ -725,7 +725,7 @@ Obsidian platemail lies here forgotten.~
 ~
 9 36 3 30 14 0 1024 9 0 1065017 0
 30 3 1 5 0 0 0 0
-40 145915 100
+40 145915 100 100
 E
 obsidian platemail plate mail embossed silver crest~
 This platemail appears quite solid, although it must weigh a ton.
@@ -741,7 +741,7 @@ dark iron key~
 ~
 18 15 3 1 7 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-1 145 100
+1 145 100 100
 E
 dark iron key~
 A key forged from dark iron.
@@ -753,7 +753,7 @@ A skull lies here, the spine still attached.~
 ~
 12 10 3 5 7 0 8491008 16385 0 1 0
 0 0 0 0 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 skull spine~
 A human skull, with the spine still attached.
@@ -765,7 +765,7 @@ ears troll~
 ~
 13 15 3 1 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 ears troll~
 &+g   These ears are long, and quite sickly looking.  The battle scars on them&n
@@ -778,7 +778,7 @@ skull ogre~
 ~
 13 15 3 1 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 skull ogre~
 &+b   This skull is enormous, no doubt being from an ogre.&n
@@ -790,7 +790,7 @@ shriveled hand duergar~
 ~
 13 15 3 1 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 shriveled hand duergar~
 &+r   The flesh on this hand has shrunken considerably, giving the item a very&n
@@ -803,7 +803,7 @@ hastily scribbled note~
 ~
 12 15 3 1 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 hastily scribbled note~
 &+L   Written hastily in thick black ink:&n
@@ -829,7 +829,7 @@ mask purest crystal~
 ~
 9 15 3 1 7 0 0 262145 0 0 0
 4 13 1 2 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 mask purest crystal~
 &+W   Wrought of the purest crystal, this mask is comfortably light, and&n

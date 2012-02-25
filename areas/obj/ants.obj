@@ -5,7 +5,7 @@ broken ant leg~
 ~
 19 2 2 0 7 0 4096 16385 0 0 0
 48 0 0 0 0 0 0 0
-3 4 100
+3 4 100 100
 E
 broken ant leg~
 &+r  Rather hard, this broken off ant leg has been gnawed at, most likely&n
@@ -18,7 +18,7 @@ corpse~
 ~
 29 15 3 0 7 0 4096 0 0 0 0
 53 10904 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse~
 &+L   This corpse has been severly mutilated.  Its eyes have been torn out,&n
@@ -35,7 +35,7 @@ Handprint trigger to open wall in room 16~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 320 10915 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 handprint print~
 Trigger
@@ -47,7 +47,7 @@ crown frost~
 ~
 9 40 3 0 14 80 4096 17 64 4227727360 17154
 5 4 16 2 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 crown frost~
 &+W   Made of some supernatural ice, this tiny crown would fit any mid to small&n

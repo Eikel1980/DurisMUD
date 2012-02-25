@@ -9,8 +9,8 @@ ahead. Tendrils of &+Lb&+bl&+Lu&+be&+Li&+bs&+Lh &+Bm&+bis&+Bt &nwisp around the 
 seems oddly insubstancial. Though the creature does not move, it appears to
 be able to whip into action instantly, and probably fatally.
 ~
-71400011 0 0 301990188 30 0 0 0 S
-OG 0 512 6
+71400011 0 0 0 301990188 30 0 0 0 S
+OG 0 512 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -22,8 +22,8 @@ merchant~
 A man clad in &+bblue &nand &+Ldark grey &nputters about busily. When he
 notices your presence, he turns and says, "How can I help you today?"
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

@@ -5,7 +5,7 @@ insignia badge cresent moon~
 ~
 9 15 3 0 7 0 0 2097153 0 0 0
 1 0 0 1 0 0 0 0
-0 290 100
+0 290 100 100
 E
 insignia badge cresent moon~
 &+WThis badge appears to belong to a member off the &+MMyrabolan&+W militia.&n
@@ -19,7 +19,7 @@ pixie mask~
 ~
 9 15 3 0 7 0 263184 262145 64 46305188 0
 6 0 0 2 0 0 0 0
-0 1222 100
+0 1222 100 100
 E
 pixie mask~
 &+cThis mystical mask seems to fit only a tiny face, but when placed on
@@ -36,7 +36,7 @@ key bone~
 ~
 18 10 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key bone~
 &+WThis bone has been eerily carved from a living being's bone, most
@@ -49,7 +49,7 @@ sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+W   |----------------------|
@@ -64,7 +64,7 @@ coal furnace~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22647 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 coal furnace~
 &+LThis black furance is quite hot to the touch.  It is contructed of
@@ -77,7 +77,7 @@ coal furnace~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22641 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 coal furnace~
 &+LThis pitch-black coal furance seems to be a little broken, it is hot
@@ -90,7 +90,7 @@ angelic blade~
 ~
 5 34 3 0 13 0 4457472 8193 64 67108888 0
 13 3 2 3 0 0 0 0
-0 9222 100 8192 0 0 0
+0 9222 100 100 8192 0 0 0
 E
 angelic blade~
 &+cThis blade, once held by a bounty hunter sent from the &+Whea&+Cvens,&n
@@ -108,7 +108,7 @@ war sword iron~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 9 2 4 3 0 0 0 0
-11 2901 100
+11 2901 100 100
 E
 war sword iron~
 &+LThis sword is only about a foot in length and quite broad. It
@@ -122,7 +122,7 @@ pirate parrot~
 ~
 9 50 3 0 7 0 33554432 4097 0 0 0
 7 0 0 2 0 0 0 0
-0 900 100
+0 900 100 100
 E
 pirate parrot~
 &+gThe parrot is a pirates favorite pet.  Among being good company
@@ -140,7 +140,7 @@ coal furnace~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1000 29 22611 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 coal furnace~
 &+LThis coal furance, built from solid iron, warms the area quite nicely.&n
@@ -152,7 +152,7 @@ pile coal~
 ~
 13 11 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 192 100
+0 192 100 100
 E
 pile coal~
 &+LA regular pile of coal, the same kind santa gives to bad children.&n
@@ -164,7 +164,7 @@ key iron~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key iron~
 &+LThis key is black as coal and is forged from a solid lump of iron.&n
@@ -176,7 +176,7 @@ valve furnance~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1902 100
+0 1902 100 100
 E
 valve furnance~
 &+LThis appears to be a solid iron casket from an coal furance.  It
@@ -189,7 +189,7 @@ ticket travel~
 ~
 8 29 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 11000 100
+0 11000 100 100
 E
 ticket travel~
 &+yThis ticket is good for one free ride on the Empyrean Drifter. Maybe.&n
@@ -201,7 +201,7 @@ gladius iron hurricane~
 ~
 5 15 3 0 7 0 1024 8193 0 96071683 0
 9 3 3 3 0 0 0 0
-7 21003 100
+7 21003 100 100
 E
 gladius iron hurricane~
 &+wThis is a extremely heavy and powerful gladius.  The usual gladius'
@@ -220,7 +220,7 @@ sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+W   |----------------------|
@@ -236,7 +236,7 @@ gale combat vest~
 ~
 9 13 3 0 7 0 0 9 0 0 0
 11 0 0 2 0 0 0 0
-0 5011 100
+0 5011 100 100
 E
 gale combat vest~
 &+LThis vest has been made by finely stitched leather.  The crest on
@@ -251,7 +251,7 @@ rope ladder~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22640 5 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rope ladder~
 &+yThis ladder leads up to the &+WEm&+Ypy&+wrean &+cDri&+Cft&+cer&+y, the airship floating
@@ -264,7 +264,7 @@ rope ladder~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 22631 6 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rope ladder~
 &+yThis ladder leads back down from the &+WEm&+Ypy&+wrean &+cDri&+Cft&+cer&+y, into the
@@ -277,7 +277,7 @@ storm quiver~
 ~
 30 15 3 0 7 0 0 1048577 0 0 0
 40 5 1 0 0 0 0 0
-0 4892 100
+0 4892 100 100
 E
 storm quiver~
 &+LThis is a simple black leather quiver.  The mark of the &+Wstorm&+L on it
@@ -290,7 +290,7 @@ razor tipped arrow~
 ~
 7 16 3 0 7 0 0 16385 0 0 0
 4 3 5 1 0 0 0 0
-0 288 100
+0 288 100 100
 E
 razor tipped arrow~
 &+LThis arrow have an extremely sharp tip.  The wood the shaft is made
@@ -303,7 +303,7 @@ masters helm~
 ~
 9 19 3 0 14 0 1 17 0 0 0
 14 0 0 4 1 0 0 0
-0 19900 100
+0 19900 100 100
 E
 masters helm~
 &+WThis helm is part of the fabled &+RMaster's&+W collection.  It is quite
@@ -320,7 +320,7 @@ packet sea maps~
 ~
 8 29 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 902 100
+0 902 100 100
 E
 packet sea maps~
 &+yThis bundle of maps is used by naval captains for plotting courses by
@@ -333,7 +333,7 @@ ghostly shimmering armor~
 ~
 9 1 3 0 7 0 4129 9 0 0 0
 25 0 0 2 0 0 0 0
-0 29022 100 32 0 0 0
+0 29022 100 100 32 0 0 0
 E
 ghostly shimmering armor~
 &+cThis set of armor shimmers vaguely and appears nearly transparent,
@@ -350,7 +350,7 @@ headdress celestial outlaws~
 ~
 9 50 3 0 12 0 1073742848 17 64 94208 0
 14 0 0 2 0 0 0 0
-0 22331 100 16 0 0 0
+0 22331 100 100 16 0 0 0
 E
 headdress celestial outlaws~
 &+cThis &+Cheaddress&+c covers the entire head.  Its powers to enhance
@@ -366,7 +366,7 @@ globe majesty~
 ~
 15 31 3 0 10 0 0 8404993 64 0 0
 50 5 0 50 0 0 0 0
-0 19229 100 536870912 0 0 0
+0 19229 100 100 536870912 0 0 0
 E
 globe majesty~
 &+cThis an almost perfect &+rruby&+c sphere. It is warm to the touch
@@ -384,7 +384,7 @@ polished pewter greeves~
 ~
 9 36 3 0 11 0 263168 33 0 87650331 0
 5 0 0 3 0 0 0 0
-0 19022 100
+0 19022 100 100
 E
 polished pewter greeves~
 &+LThese greeves fasten around the legs tightly.  Being made of
@@ -402,7 +402,7 @@ shoes sprinting purple~
 ~
 9 3 3 0 7 0 1 65 64 0 0
 9 0 0 2 0 0 0 0
-0 9221 100
+0 9221 100 100
 E
 shoes sprinting purple~
 &+mThese shoes seems to be made of the run of the mill, everyday, dyed
@@ -420,7 +420,7 @@ sleek dagger hunter killer~
 ~
 5 36 3 0 7 0 1024 8193 0 93974529 0
 2 2 4 11 0 0 0 0
-5 22445 100
+5 22445 100 100
 E
 sleek dagger hunter killer~
 &+LThis dagger has been used by one of the elite in the group of the
@@ -437,7 +437,7 @@ steel war warhelm helm~
 ~
 9 16 3 0 7 0 0 17 0 0 0
 18 0 0 5 0 0 0 0
-0 33883 100
+0 33883 100 100
 E
 steel war warhelm helm~
 &+cThis warhelm is gigantic, it looks like it could hardley fit properly.
@@ -454,7 +454,7 @@ bracer unsubstance~
 ~
 9 1 3 0 7 0 33 4097 0 0 0
 8 0 0 2 0 0 0 0
-0 28832 100
+0 28832 100 100
 E
 bracer unsubstance~
 &+wThis bracer wavers in an out of reality.  It is hard to tell if one
@@ -472,7 +472,7 @@ mage boots maelstrom~
 ~
 9 1 3 0 7 0 0 65 0 0 0
 9 0 0 3 0 0 0 0
-0 19222 100 134217728 0 0 0
+0 19222 100 100 134217728 0 0 0
 E
 mage boots maelstrom~
 &+wThese boots are obviously extremely mystic in nature.  This waver
@@ -488,7 +488,7 @@ skin eye giant~
 ~
 9 2 3 0 5 0 12320 1025 0 0 0
 20 0 0 2 0 0 0 0
-0 8000 100 32 0 0 0
+0 8000 100 100 32 0 0 0
 A
 13 20
 #22633
@@ -498,4 +498,4 @@ treasure key~
 ~
 18 24 3 0 5 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100

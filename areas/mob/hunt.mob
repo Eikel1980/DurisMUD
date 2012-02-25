@@ -10,8 +10,8 @@ them both into joining the &+LSoldiers Of &+YFortune&n but they always refuse,
 sure that they don't need to be in a special group to have a good time
 and make money.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1140852746 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -26,8 +26,8 @@ although enjoying himself a great deal being around all the famaliar
 faces. Both &+cWicks&n and &+WValquin&n were called to this &+Gforest&n by &+WRol&+Land,
 the huntsmaster.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1140852746 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -42,8 +42,8 @@ The &+Ycata&+ypult&n engineer, &+gShi&+Gx&n, wanders the &+Gforest.&n
 &+gin different roads of life. He is a strong fighter and adept at
 &+gmechanics.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-PH 0 1 -1
+1140852746 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -58,8 +58,8 @@ mastiff minotaur~
 &+Lstops for this campaign, recruiting most all of the people he considers
 &+Lto be great fighters and &+rMas&+Ltiff surely is a great fighter.&n
 ~
-1140852746 0 0 0 0 0 0 0 S
-MT 0 1 -1
+1140852746 0 0 0 0 0 0 0 0 S
+MT 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -74,8 +74,8 @@ country. He has both assisted and been assisted by the &+LSoldiers of
 &+YClo&+Wnd&n has gathered many of his band's best warriors to come to
 the battle but as now, they have yet to arrive.
 ~
-1073743880 0 0 0 0 0 0 0 S
-CT 0 2 -1
+1073743880 0 0 0 0 0 0 0 0 S
+CT 0 2 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -90,8 +90,8 @@ Beaming with happiness, &+yDrimble&n frolicks around his friends.&n
 &+ysecond. He skips around the &+Mparty&+y happily and stays as far away
 &+yfrom the ale as possible.
 ~
-2078 0 0 0 0 0 0 0 S
-PF 0 65536 -1
+2078 0 0 0 0 0 0 0 0 S
+PF 0 65536 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -108,8 +108,8 @@ laughs with his soldiers and his friends, knowing quite well that
 when this &+Mparty&n ends, the battle of a life time will begin, and it
 could possibly be the last time he sees his friends again.
 ~
-1140852744 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1140852744 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -123,8 +123,8 @@ help the cause.  The are valiant and brave and confident the outcome
 of the battle will be positive.  Their secondary motive is fairly
 obvious as they always ask, &+W'Think we'll get hazard pay for this?'&n
 ~
-2056 0 0 0 0 0 0 -500 S
-PH 0 16384 -1
+2056 0 0 0 0 0 0 0 -500 S
+PH 0 16384 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -141,8 +141,8 @@ learned within the borders of the &+gJade Empire&n.  He calmly talks to
 his friends he hasn't seen for some time and will spend an hour before
 they all enter the &+Lcaverns&n in quiet meditation.
 ~
-1073743882 0 0 0 0 0 0 0 S
-PH 0 64 -1
+1073743882 0 0 0 0 0 0 0 0 S
+PH 0 64 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -158,8 +158,8 @@ nemesis was hiding here, aided by a &+rdevil &+Lgeneral&n, he rounded up as
 many of his friends as he could and made the journey to meet &+LMa&+mver&+Liss
 and engage their common foe together.&n
 ~
-67110922 0 0 0 0 0 0 0 S
-PH 0 2 -1
+67110922 0 0 0 0 0 0 0 0 S
+PH 0 2 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -175,8 +175,8 @@ much as a favor to the &+gHunters&n but as to an understanding of just
 how great the threat to the world, he has brought his band of crewmen
 to aid the rest of the force here in the fight.&n
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 1 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -194,8 +194,8 @@ maveriss hunter~
 &+mmulticolours.  When he sees you he br&+Lushes the hair from his eyes
 &+Land gives a slight nod. &n
 ~
-1073743946 0 0 0 0 0 0 0 S
-PH 0 1 -1
+1073743946 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -211,8 +211,8 @@ xavier hunter~
 &+Lin the &+Gforest glade&+L, speaking to the legendary &+CDragon Queen&+L in hopes
 &+Lof gaining new knowledge that will help him reach his goal.&n
 ~
-1073743882 0 0 0 0 0 0 0 S
-PH 0 512 -1
+1073743882 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -230,8 +230,8 @@ The &+CDragon Queen&n rests peacefully in her secluded &+ggrove&n.
 &+cevil invading her home and teaches &+LXavier&+c all she knows about the
 &+bmystic arts&+c, including the amazing powers of &+Wcosmocy.&n
 ~
-2058 0 0 268435584 0 0 0 1000 S
-D 0 8 -1
+2058 0 0 0 268435584 0 0 0 1000 S
+D 0 8 0 -1
 59 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -243,8 +243,8 @@ A frustrated m&+Lon&nk, grumbles about the &+Mparty&n outside.
 This m&+Lon&nk just seems to wander the &+Wtemple&n grumbling. He hasn't quite
 lost his &+rtemper&n yet but he seems very close.
 ~
-2056 0 0 0 0 0 0 750 S
-PH 0 64 -1
+2056 0 0 0 0 0 0 0 750 S
+PH 0 64 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -258,8 +258,8 @@ any intruder with a rather un-m&+Lon&nk-like &+rrage&n.  The &+Mparty&n outside 
 really be bothering him, even though in the end it will be for his
 own good.
 ~
-1140852808 0 0 0 0 0 0 750 S
-PH 0 64 -1
+1140852808 0 0 0 0 0 0 0 750 S
+PH 0 64 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -272,8 +272,8 @@ This poor m&+Lon&nk has decided that grumbling or screaming won't do much
 good any more so he has decided to emerge himself in his prayers. Of
 course disturbing now him could quite easily push him over the edge.
 ~
-1140850698 0 0 0 0 0 0 750 S
-PH 0 64 -1
+1140850698 0 0 0 0 0 0 0 750 S
+PH 0 64 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -288,8 +288,8 @@ all. Instead, he has found an &+Waltar&n dedicated to his father hiddin
 in a quiet thicket.  As he kneels in silent &+Wprayer&n, asking for
 the strength to continue, he wonders what will be in store for him.
 ~
-1073743882 0 0 0 0 0 0 0 S
-PH 0 1 -1
+1073743882 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 5 1
@@ -305,8 +305,8 @@ Ce&+Wci&nl's vampiric soldier, &+mBere&+Llain&n, stays in the &+Lshade.&n
 &+Lnot lost his soul.  The others at the &+Mparty&+L call him by his codename:
 &+L'Odin'
 ~
-1073743946 0 0 0 0 0 0 0 S
-UV 0 512 -1
+1073743946 0 0 0 0 0 0 0 0 S
+UV 0 512 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -319,8 +319,8 @@ The A&+Lbb&not is much less composed than the Ar&+Lchdea&ncon. He seems to attac
 more in &+rfrustration&n than defense.  The &+rfrustration&n seems to stemmed
 more from keeping his colleagues in line than the &+Mparty&n outside.
 ~
-10 1 0 0 0 0 0 1000 S
-PH 0 64 -1
+10 1 0 0 0 0 0 0 1000 S
+PH 0 64 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -333,8 +333,8 @@ The leader of this &+Wtemple&n, almost cult-like in nature still remains
 &+Wcalm&n and &+Wcool&n. However, he does not allow any intrusion into his
 &+Lvault&n room and will defend it vehemently.
 ~
-10 1 0 0 0 0 0 1000 S
-PH 0 32 -1
+10 1 0 0 0 0 0 0 1000 S
+PH 0 32 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -348,8 +348,8 @@ for Ce&+Wci&nl for very long, but already has gained much respect. She
 seems more worried about the number of drunken men around more
 than she is than the upcoming battle.
 ~
-1140852808 0 0 0 0 0 0 0 S
-PH 0 512 -1
+1140852808 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -364,8 +364,8 @@ sailing the seas, stealing loot from any other ships he and his men
 could find.  As the member of &+LSoldiers of &+YFortune&n now he still sails
 although instead of looting he gets paid legit. &n
 ~
-1073743882 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+1073743882 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -377,8 +377,8 @@ fluffy bunny~
 It seems unlikely this &+Wfluffy bunny&n will transform into a nightmarish
 demon. You never know, though.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -390,8 +390,8 @@ proud stag~
 &+yThis stag wanders the forest, oblivious of the threat hiding in
 &+ycaverns just a short distance away.&n
 ~
-2120 0 0 0 0 0 0 0 S
-A 0 0 -1
+2120 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -403,8 +403,8 @@ bald-eagle bald eagle~
 This &+Leagle&n floats on a current of air not far over head. It squawks
 loudly at some unseen disturbance.
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -419,8 +419,8 @@ maverick~
 &+Lanswered him, mentoring him into a descent into madness yet leaving
 &+Lhim with the power to fufill his darkest fantasies.
 ~
-1090537482 1 0 268509224 2048 67108864 4195328 -1000 S
-PH 0 2 3
+1090537482 1 0 0 268509224 2048 67108864 4195328 -1000 S
+PH 0 2 0 3
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -436,8 +436,8 @@ abbadon general~
 &+rof causing his unique style of lawful chaos, to tutor this man, known
 &+ras &+LMa&+bver&+Lick&+r, and see just how much havoc they could wreak upon the globe.
 ~
-16777226 1 0 268435608 2048 2097152 0 -1000 S
-Y 0 131584 -1
+16777226 1 0 0 268435608 2048 2097152 0 -1000 S
+Y 0 131584 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -453,8 +453,8 @@ endosa orc~
 &+Lwill have no reports to fill or advisements to make then, he will do
 &+Lsimply as he is told to do.
 ~
-2058 1 0 8 0 0 0 -1000 S
-HO 0 16 -1
+2058 1 0 0 8 0 0 0 -1000 S
+HO 0 16 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -469,8 +469,8 @@ major orc~
 &+Lsome extremely strong and deadly orcs. Of those, a handful are selected
 &+Lby Endosa to become majors in the army.&n
 ~
-1073743882 1 0 8 0 0 0 -1000 S
-HO 0 1 -1
+1073743882 1 0 0 8 0 0 0 -1000 S
+HO 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -484,8 +484,8 @@ orc soldier~
 &+Lalthough not as deadly as an &+bogre&+L or mage their population more than
 &+Lmakes up for it.&n
 ~
-1073743880 1 0 8 0 0 0 -1000 S
-HO 0 1 -1
+1073743880 1 0 0 8 0 0 0 -1000 S
+HO 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -498,8 +498,8 @@ sentry orc~
 &+Lhowever, though when the army begins its rampage upon the surface, this
 &+Lorc will either be left behind to guard the caves or givin menial jobs.&n
 ~
-2058 1 0 8 0 0 0 -1000 S
-HO 0 1 -1
+2058 1 0 0 8 0 0 0 -1000 S
+HO 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -513,8 +513,8 @@ misty blue sentinel~
 &+Bbeen replaced with something else, or this creature has been summoned
 &+bby some powerful force to patrol the area.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-EA 0 4 -1
+1073743880 1 0 0 0 0 0 0 -1000 S
+EA 0 4 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -527,8 +527,8 @@ orc resting soldier~
 &+Lmilitary campaign. He is taking a break to catch up on some much needed
 &+Lsleep.&n
 ~
-8 1 0 8 0 0 0 -750 S
-HO 0 1 -1
+8 1 0 0 8 0 0 0 -750 S
+HO 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 5 5 1
@@ -542,8 +542,8 @@ priest orc~
 &+Larrived. However they do get their spells, though, is not really the
 &+Lproblem, the unholy &+Wwrath&+L of a god blazing from their hands is...&n
 ~
-1073743880 1 0 8 0 0 0 -1000 S
-HO 0 32 -1
+1073743880 1 0 0 8 0 0 0 -1000 S
+HO 0 32 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -555,8 +555,8 @@ pikachu~
 &+YThis pikachu scampers through the forest playfully. He happily
 &+Ycommunicates in his 'pika pi' manner. &n
 ~
-8 0 0 0 0 0 0 0 S
-A 0 256 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 256 0 -1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -570,8 +570,8 @@ battle mage orc~
 &+Lthe caves, summoning &+bmystical&+L creatures to aid them in the fight.
 &+LThey can be fearsome advasaries.&n
 ~
-1073743880 1 0 8 0 0 0 -1000 S
-HO 0 512 -1
+1073743880 1 0 0 8 0 0 0 -1000 S
+HO 0 512 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -586,8 +586,8 @@ The High &+rMagistrate&n of &+MMyrabolus&n pilots his &+Yspell&+Ljammer.&n
 &+cthe survivors towards the stern of the ship where a second &+yrope ladder
 &+cwill lead down.  His smile of pride seems as radiant as the &+Ysun.&n
 ~
-1140852810 0 0 268435612 0 0 0 0 S
-PH 0 1 -1
+1140852810 0 0 0 268435612 0 0 0 0 S
+PH 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -602,8 +602,8 @@ troll berserker~
 &+gto strike their kin's cities and outposts give them a stronger urge
 &+gand impatience to begin the campaign immediately.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-PT 0 1048576 -1
+1073743880 1 0 0 0 0 0 0 -1000 S
+PT 0 1048576 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -620,8 +620,8 @@ troll battle master~
 &+gafter all, and the thought of human killing more than makes up for
 &+gtheir doubts.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-PT 0 1 -1
+1073743880 1 0 0 0 0 0 0 -1000 S
+PT 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -635,8 +635,8 @@ wyvern adult~
 &+ycontent to stay where it has nested for decades and nurse its young
 &+ywhich the orcs seem to take great interest in.
 ~
-10 1 0 0 0 0 0 -1000 S
-DK 0 1 -1
+10 1 0 0 0 0 0 0 -1000 S
+DK 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -649,8 +649,8 @@ young wyvern~
 &+ynear its mother but the &+Lorc&+y tamer is always looking for a way to
 &+ysnatch them and put them to use.&n
 ~
-1073743882 1 0 0 0 0 0 -1000 S
-DK 0 1 -1
+1073743882 1 0 0 0 0 0 0 -1000 S
+DK 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -665,8 +665,8 @@ orc trainer chowza~
 &+Lit can be alot of work to grab the hatchlings before she realizes
 &+Lwhat is happening.&n
 ~
-10 1 0 8 2048 0 0 -1000 S
-HO 0 16384 -1
+10 1 0 0 8 2048 0 0 -1000 S
+HO 0 16384 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -681,8 +681,8 @@ arch angel archangel~
 &+Wpurposes they wander the &+cair&+W plane or secluded areas on the material
 &+Wplane alone.&n
 ~
-2058 1 0 8 0 0 0 -1000 S
-AN 0 2 4
+2058 1 0 0 8 0 0 0 -1000 S
+AN 0 2 0 4
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -696,8 +696,8 @@ beholder small~
 &+Ldeadly, each one of th&+we ten eyestalks capable of a dif&+Lferent and powerful&n
 &+wattack.&n
 ~
-2058 1 0 8 0 0 0 -1000 S
-BH 0 1 -1
+2058 1 0 0 8 0 0 0 -1000 S
+BH 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -710,8 +710,8 @@ enslaved fire elemental~
 &+Rprotect a tunnel which hold&+rs the speciality creatu&+Rres of the army&n
 &+rof &+Rarmage&+rddon.&n
 ~
-10 1 0 0 0 0 0 -1000 S
-EF 0 1 -1
+10 1 0 0 0 0 0 0 -1000 S
+EF 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -727,8 +727,8 @@ battle mage orc~
 &+Lopponents while they begin their synchronized meteor swarms upon the
 &+Lcities of both the surface and the underdark.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-HO 0 512 -1
+2058 1 0 0 0 0 0 0 -1000 S
+HO 0 512 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -743,8 +743,8 @@ thief lord orc veannan~
 &+Lnow stripped of most of his power, still waits in the caves hoping for
 &+Lthe chance to kill his enemies ruthlessly.&n
 ~
-1073743880 1 0 8 0 0 0 -1000 S
-HO 0 8192 -1
+1073743880 1 0 0 8 0 0 0 -1000 S
+HO 0 8192 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -758,8 +758,8 @@ ogre assault soldier~
 &+bsomething with it.  His mass and overwhelming strength is quite
 &+bvaluable to the dark army. &n
 ~
-67110920 0 0 8 0 0 0 -1000 S
-PO 0 1 -1
+67110920 0 0 0 8 0 0 0 -1000 S
+PO 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -776,8 +776,8 @@ slave master orc grue~
 &+Lhim control to kill or beat whomever he wishes and told the rest of
 &+Lthe army to just stay as far away from him as possible. &n
 ~
-10 1 0 8 0 0 0 -1000 S
-HO 0 16384 -1
+10 1 0 0 8 0 0 0 -1000 S
+HO 0 16384 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -791,8 +791,8 @@ An &+menslaved &+Bbarbarian&n prays for rescue.
 &+Bgives a barbarian shout of freedom and walks off looking for a way
 &+Bout.&n
 ~
-1073743880 0 0 0 0 0 0 500 S
-PB 0 1 -1
+1073743880 0 0 0 0 0 0 0 500 S
+PB 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -806,8 +806,8 @@ ragged and obviously been beaten for quite awhile.  He still holds his
 head high though and when he sees you he manages a determined smile,
 thankful for the rescue.
 ~
-1073743880 0 0 0 0 0 0 500 S
-PH 0 16384 -1
+1073743880 0 0 0 0 0 0 0 500 S
+PH 0 16384 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -820,8 +820,8 @@ grey elf enslaved~
 &+chow long ago.  He appears to be beaten, but not severely enough for him
 &+cto loose his defiance against his captors.&n
 ~
-1073743880 0 0 0 0 0 0 1000 S
-PE 0 128 -1
+1073743880 0 0 0 0 0 0 0 1000 S
+PE 0 128 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -835,8 +835,8 @@ golem sentinel~
 &+bskin almost as hard of &+Lstone&+b. Its large, unblinking eyes constantly
 &+bscan the caves for any threats.&n
 ~
-10 1 0 136 0 0 0 -1000 S
-OG 0 1 -1
+10 1 0 0 136 0 0 0 -1000 S
+OG 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -851,8 +851,8 @@ shock troop orc~
 &+Lregular infantry had engaged. Now they will be used to hit the&n &+gHunters
 &+Lhead on should they enter the caves.&n
 ~
-67108874 1 0 268501016 0 0 0 -1000 S
-HO 0 1 -1
+67108874 1 0 0 268501016 0 0 0 -1000 S
+HO 0 1 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -867,8 +867,8 @@ behemoth~
 &+mthe few remaining giant creatures serves the battle-mages in the
 &+mmilitary campaign.&n
 ~
-2058 1 0 24 0 0 0 -1000 S
-D 0 1 -1
+2058 1 0 0 24 0 0 0 -1000 S
+D 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -881,8 +881,8 @@ hazy blue overlord mist~
 &+Bcreatures that drift through this descending spiral, leading to&n
 &+bbelieve that it is much more deadly than its smaller kin.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-EA 0 4 -1
+1073743880 1 0 0 0 0 0 0 -1000 S
+EA 0 4 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -898,8 +898,8 @@ krazzi drow~
 &+Lat striking back at the forces of &+cParanel &+Land &+MMyrabolus&+L once
 &+Land for all.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-PL 0 2048 -1
+2058 1 0 0 0 0 0 0 -1000 S
+PL 0 2048 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -913,8 +913,8 @@ bat~
 &+Lintolerance and hatred that flows from the soldiers of &+rarmageddon&n
 &+Linside these caverns.&n
 ~
-10 1 0 1048576 0 0 0 -1000 S
-UV 0 1 -1
+10 1 0 0 1048576 0 0 0 -1000 S
+UV 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -927,8 +927,8 @@ goblin windlord~
 &+cin the arts of air and shamanistic magic.  The are not extremely
 &+cdangerous alone but can cause problems when they attack in groups.&n
 ~
-2056 1 0 8 0 0 0 -1000 S
-HG 0 256 -1
+2056 1 0 0 8 0 0 0 -1000 S
+HG 0 256 0 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -940,8 +940,8 @@ cave viper~
 &+LThis viper is a common sight within the &+ycaves&+L.  It is a fair-sized
 &+Lrock snake that is incredibly vicious.&n
 ~
-2056 1 0 0 0 0 0 -1000 S
-R 0 0 -1
+2056 1 0 0 0 0 0 0 -1000 S
+R 0 0 0 -1
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -955,8 +955,8 @@ lieutenant orc renatta~
 &+Lserving Endosa faithfully, yet training his shock troops to obey him
 &+Lto the end.&n
 ~
-67110922 1 0 8 0 0 0 -1000 S
-HO 0 1 -1
+67110922 1 0 0 8 0 0 0 -1000 S
+HO 0 1 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -972,8 +972,8 @@ orc priest high graiven~
 &+Lstill &+Lanswered when he asks his dieties to curse and blind and
 &+Ldestroy &+Lhis opponents.&n
 ~
-67110922 1 0 8 0 0 0 -1000 S
-HO 0 32 -1
+67110922 1 0 0 8 0 0 0 -1000 S
+HO 0 32 0 -1
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -986,8 +986,8 @@ rock rockworm worm huge~
 &+Las mounts for the orc warriors.  The are hostile to almost everyone
 &+Lother than their current riders.&n
 ~
-134219786 1 0 0 0 0 0 -1000 S
-RS 0 1 6
+134219786 1 0 0 0 0 0 0 -1000 S
+RS 0 1 0 6
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1001,8 +1001,8 @@ blicatch flind~
 &+Lat a costly price, as he doesn't ally himself with anyone. He uses
 &+Lonly the most rare and precious items to craft.&n
 ~
-1073743882 0 0 0 0 0 0 -1000 S
-L 0 512 -1
+1073743882 0 0 0 0 0 0 0 -1000 S
+L 0 512 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1016,8 +1016,8 @@ greeef ogre~
 &+Lhabit of controlling his temper and is known for not only fighting
 &+Lwith the orcs and &+gtrolls&+L within the army but his own troops as well.
 ~
-2058 1 0 8 0 0 0 -1000 S
-PO 0 1 -1
+2058 1 0 0 8 0 0 0 -1000 S
+PO 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1030,8 +1030,8 @@ flind guardian~
 &+Lmost of the transport of the prisoners deepers into the caverns as
 &+Lwell as executions that will eventually be used as undead for &+mArgophel.&n
 ~
-67110920 1 0 0 0 0 0 -1000 S
-L 0 1 -1
+67110920 1 0 0 0 0 0 0 -1000 S
+L 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1045,8 +1045,8 @@ rat wererat~
 &+yrodent&+L in its body. It is a fearsome creature that lives within the
 &+Lcaves, serving no one, and hunting for food.&n
 ~
-2056 1 0 1572864 0 0 0 -1000 S
-L 0 1 -1
+2056 1 0 0 1572864 0 0 0 -1000 S
+L 0 1 0 -1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1060,8 +1060,8 @@ zeelnar mage~
 &+Lall the soldiers of balance, as their dark, twisted magic can destroy
 &+Lsquads of men in mere seconds.&n
 ~
-67110922 1 0 8 0 0 0 -1000 S
-HO 0 512 -1
+67110922 1 0 0 8 0 0 0 -1000 S
+HO 0 512 0 -1
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1075,8 +1075,8 @@ carrion beast~
 &+rcarrion &+Lcrawler still always have the common nessecity of feeding
 &+Loff the dead.&n
 ~
-1073743880 0 0 0 0 0 0 -1000 S
-AC 0 0 5
+1073743880 0 0 0 0 0 0 0 -1000 S
+AC 0 0 0 5
 39 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1091,8 +1091,8 @@ orc soldier young elite~
 &+LEndosa&+L himself.  Viewing each of them full of enough promise to be
 &+Lworth the extra effort.&n
 ~
-1073743882 1 0 268435480 0 0 0 -1000 S
-HO 0 1 -1
+1073743882 1 0 0 268435480 0 0 0 -1000 S
+HO 0 1 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1107,8 +1107,8 @@ fanatic gremlin~
 &+gof &+rguts&+g and &+rfire&+g, taking with them as many as their enemies as
 &+gpossible when they die.&n
 ~
-12 0 0 1572872 0 0 0 -1000 S
-HG 0 1 -1
+12 0 0 0 1572872 0 0 0 -1000 S
+HG 0 1 0 -1
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1123,8 +1123,8 @@ warg~
 &+Lof &+rarmageddon&+y, seem unaffected by the tight, dark, surroundings and
 &+yact even more vicious than their surface dwelling kin.&n
 ~
-134219786 1 0 0 0 0 0 -1000 S
-AC 0 1 -1
+134219786 1 0 0 0 0 0 0 -1000 S
+AC 0 1 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1139,8 +1139,8 @@ crusader valiant paladin~
 &+wand slashing at the &+Lorcs&+w who continue to charge at him, corpses
 &+wpiling up at his feet.&n
 ~
-2058 0 0 8 0 0 0 1000 S
-PH 0 4 -1
+2058 0 0 0 8 0 0 0 1000 S
+PH 0 4 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1154,8 +1154,8 @@ jigoog goblin~
 &+cwhen the sadistic general leads the army across the underdark,
 &+cconquering one and all.&n
 ~
-1073760264 1 0 8 0 0 0 -1000 S
-HG 0 256 -1
+1073760264 1 0 0 8 0 0 0 -1000 S
+HG 0 256 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1170,8 +1170,8 @@ rakshasa elite wizard~
 &+Lto worm their way into the army of &+rarmageddon&+L. Though there isn't
 &+Lmany, they are still quite deadly.&n
 ~
-1073743880 1 0 0 0 0 0 -1000 S
-RA 0 4194304 -1
+1073743880 1 0 0 0 0 0 0 -1000 S
+RA 0 4194304 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1184,8 +1184,8 @@ cave beetle~
 &+Lconsiderbly which also lowered their insect cowardice, resulting in
 &+La fairly dangerous cave bug for the unwary.&n
 ~
-2056 1 0 1573000 0 0 0 -1000 S
-I 0 4 -1
+2056 1 0 0 1573000 0 0 0 -1000 S
+I 0 4 0 -1
 16 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1198,8 +1198,8 @@ rotting golem~
 &+bundead &+Lgolems&+b, raised from a corpse to create a dead-eyed monster
 &+bwith skin as strong as &+Lstone.&n
 ~
-2058 1 0 128 0 0 0 -1000 S
-U 0 1 -1
+2058 1 0 0 128 0 0 0 -1000 S
+U 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1214,8 +1214,8 @@ maximas dark knight~
 &+Lfollowers have been outcast, and now seek to destroy most of the
 &+Lhumans who have sent them here.&n
 ~
-2058 1 0 268435480 0 67108864 8389120 -1000 S
-PH 0 16 -1
+2058 1 0 0 268435480 0 67108864 8389120 -1000 S
+PH 0 16 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1228,8 +1228,8 @@ orc deadly assassin~
 &+Lwith the more tactical issues of combat, like eliminating enemy
 &+Lleaders quickly and efficiently.&n
 ~
-1073744008 1 0 1572874 0 0 0 -1000 S
-HO 0 8192 -1
+1073744008 1 0 0 1572874 0 0 0 -1000 S
+HO 0 8192 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1243,8 +1243,8 @@ mercenary~
 &+cthe &+Lorcs&+c and &+Ggoblins&+c away in a frenzied assault.  The movement
 &+cof his weapon is quickly turning into desperation.&n
 ~
-2058 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+2058 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1259,8 +1259,8 @@ wyvern adult~
 &+yeven with the low &+Lcavern&+y ceiling the flight of the creature
 &+ystill prooves useful.&n
 ~
-134219786 1 0 0 0 0 0 -1000 S
-DK 0 1 -1
+134219786 1 0 0 0 0 0 0 -1000 S
+DK 0 1 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -1274,8 +1274,8 @@ argophel necromancer human~
 &+Lminions to collect the bodies of the fallen and bring them back here.
 &+LOrc or &+chuman&+L, he cares little, they all will serve him in the afterlife.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-PH 0 1024 -1
+2058 1 0 0 0 0 0 0 -1000 S
+PH 0 1024 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1288,8 +1288,8 @@ soldier maximas~
 &+Lpowers of the mage knight.  As quite chaotic humans their mage
 &+Lknight skills focus on the dark element of &+rfire.&n
 ~
-67110920 1 0 268435480 0 67108864 0 -1000 S
-PH 0 16 -1
+67110920 1 0 0 268435480 0 67108864 0 -1000 S
+PH 0 16 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1302,8 +1302,8 @@ flind guard~
 &+La warrior in any means he still will work magic to heal the
 &+Lslave master if any harm comes to him.&n
 ~
-67110922 1 0 8 0 0 0 -1000 S
-L 0 1 -1
+67110922 1 0 0 8 0 0 0 -1000 S
+L 0 1 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1316,8 +1316,8 @@ orc grunt~
 &+wusually are the first to attack and the first to die, and usually
 &+waren't that well trained.&n
 ~
-67110920 0 0 8 0 0 0 -1000 S
-HO 0 1 -1
+67110920 0 0 0 8 0 0 0 -1000 S
+HO 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1331,8 +1331,8 @@ hackzen troll ragelord~
 &+Lhe was appointed as a leader not for his tactical insight or intelli-
 &+Lgence, but for his sheer size.&n
 ~
-2058 1 0 8 0 0 0 -1000 S
-PT 0 1048576 -1
+2058 1 0 0 8 0 0 0 -1000 S
+PT 0 1048576 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1346,8 +1346,8 @@ troll captain~
 &+Lpossess a far ammount of skill in the shamanic arts and is best to
 &+Lbe left alone.&n
 ~
-1073743882 1 0 8 0 0 0 -1000 S
-PT 0 16384 -1
+1073743882 1 0 0 8 0 0 0 -1000 S
+PT 0 16384 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1359,8 +1359,8 @@ huge grizzly bear~
 &+LThis huge gri&+wzz&+Lly bear wanders through the forest, chasing after
 &+Lsmall, electric rat pokemon like &+Ypikachu&+L, so he can eat it.&n
 ~
-2120 0 0 0 0 0 0 0 S
-A 0 1 -1
+2120 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1373,8 +1373,8 @@ orc grunt~
 &+wusually are the first to attack and the first to die, and usually
 &+waren't that well trained.&n
 ~
-67110922 0 0 0 0 0 0 -1000 S
-HO 0 1 -1
+67110922 0 0 0 0 0 0 0 -1000 S
+HO 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1388,8 +1388,8 @@ captain guard elite~
 &+Lfrom a station deep within the caves beyond the barracks and is
 &+Lprotected by several loyal &+rsoldiers.&n
 ~
-67110922 0 0 0 0 0 0 -1000 S
-HO 0 1 -1
+67110922 0 0 0 0 0 0 0 -1000 S
+HO 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1402,8 +1402,8 @@ cave spider~
 &+Lcaverns.  They have grown quite large over the years and developed
 &+La shell as hard as rock.&n
 ~
-67111048 1 0 1573002 0 0 0 -1000 S
-AS 0 1 -1
+67111048 1 0 0 1573002 0 0 0 -1000 S
+AS 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1417,8 +1417,8 @@ veteran half orc~
 &+Ltimes during the war of &+bSto&+Brm &+WPort&+L, where he was but a regular soldier
 &+Lis the local militia, many years ago.&n
 ~
-2058 1 0 0 0 0 0 -1000 S
-H2 0 1 -1
+2058 1 0 0 0 0 0 0 -1000 S
+H2 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1432,8 +1432,8 @@ priest orc~
 &+Larrived. However they do get their spells, though, is not really the
 &+Lproblem, the unholy &+Wwrath&+L of a god blazing from their hands is...&n
 ~
-2058 1 0 8 0 0 0 -1000 S
-HO 0 32 -1
+2058 1 0 0 8 0 0 0 -1000 S
+HO 0 32 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1

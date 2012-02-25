@@ -5,7 +5,7 @@ adamantite key~
 ~
 18 15 3 0 7 0 1 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite key~
    &+LThis small key is black and has a nice shine.
@@ -17,7 +17,7 @@ wrinkled parchment paper~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wrinkled parchment~
 &+L               _
@@ -37,7 +37,7 @@ adamantite sign~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite sign~
        &+L[&+W_&N_&+L]                &+L[&N_&+W_&+L]
@@ -57,7 +57,7 @@ adamantite locker~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 500 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite locker~
    &+LThis locker sits in the northeast corner of the hallway. A large keyhole
@@ -72,7 +72,7 @@ shortsword sword adamantite~
 ~
 5 19 3 0 7 0 1024 8193 64 96071683 0
 9 2 4 3 0 0 0 0
-5 15496 100
+5 15496 100 100
 E
 shortsword sword adamantite~
    &+LThis shortsword is made of the same adamantite throughout the entire
@@ -89,7 +89,7 @@ adamantite sign~
 ~
 12 15 3 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite sign~
        &+L[&+W_&N_&+L]                &+L[&N_&+W_&+L]
@@ -109,7 +109,7 @@ adamantite sign~
 ~
 12 15 3 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite sign~
        &+L[&+W‹&N‹&+L]                &+L[&N‹&+W‹&+L]
@@ -129,7 +129,7 @@ sword adamantite claymore~
 ~
 5 19 3 0 7 0 4195328 8193 64 93896729 0
 13 3 8 3 0 0 0 0
-14 15987 100
+14 15987 100 100
 E
 sword adamantite claymore~
    &+LThis sword is about five feet in length, but is incredibly wide.
@@ -145,7 +145,7 @@ adamantite bracelet~
 ~
 9 15 3 0 7 0 0 4097 64 0 0
 2 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite bracelet~
    &+LThis small adamantite bracelet has a soft magical aura to it.
@@ -161,7 +161,7 @@ adamantite bracelet polished~
 ~
 9 15 3 0 7 0 1 4097 64 0 0
 10 11 31 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite bracelet polished~
    &+LThis adamantite bracelet looks quite common in shape and craftsmanship,
@@ -178,7 +178,7 @@ sword adamantite broadsword two-handed~
 ~
 5 15 3 0 7 0 4195328 8193 64 93896729 0
 13 3 8 3 0 0 0 0
-0 15987 100
+0 15987 100 100
 E
 sword adamantite broadsword two-handed~
    &+LThis two-handed adamantite broadsword is nearly seven inches thick at
@@ -196,7 +196,7 @@ serrated adamantite dirk~
 ~
 5 19 3 0 7 0 1025 8193 64 96071683 0
 2 3 3 11 0 0 0 0
-6 15496 100
+6 15496 100 100
 E
 serrated adamantite dirk~
     &+C ‹ ‹
@@ -228,7 +228,7 @@ cracked key~
 ~
 18 15 3 0 7 0 8392704 16385 64 0 0
 0 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cracked key~
    This small &+Ladamantite&N key has a large &+Rcra&+cck&N running down it.
@@ -240,7 +240,7 @@ black hooded robes runes~
 ~
 9 15 3 0 7 0 0 9 64 0 0
 5 3 225 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black hooded robes runes~
    &+LThese long billowing black robes are loose fitting and have a small
@@ -259,7 +259,7 @@ gloves plated adamantite~
 ~
 9 15 3 0 7 0 1 129 64 4165287428 0
 13 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gloves plated adamantite~
    &+LThese black-leather gloves are plated with large, spiked pieces of
@@ -276,7 +276,7 @@ unholy black turban~
 ~
 9 15 3 0 7 0 1025 17 64 37883696 0
 4 0 0 0 0 0 0 0
-0 0 100 65536 8 0 0
+0 0 100 100 65536 8 0 0
 E
 unholy black turban~
    &+LThis &+mmaro&+ron &+Lturban has several tiny &+Crunes&+L etched onto it.
@@ -294,7 +294,7 @@ black bodycloak cloak _id_~
 ~
 9 15 3 0 7 0 1025 1025 64 46305252 0
 15 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 _id_name_~
 midnight cloak bodycloak
@@ -318,7 +318,7 @@ spiked boots adamantite military~
 ~
 9 15 3 0 7 0 1024 65 64 87572507 0
 10 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spiked boots adamantite military~
    &+LThese military boots are standard size for one who is a medium sized
@@ -335,7 +335,7 @@ blood~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood~
    &+rYep, it's blood alright.
@@ -347,7 +347,7 @@ blood~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood~
    &+rYep, it's blood alright.
@@ -359,7 +359,7 @@ kris~
 ~
 5 1 3 0 7 0 1025 8193 0 12713472 0
 2 2 6 11 0 0 0 0
-0 25666 100
+0 25666 100 100
 E
 kris~
 
@@ -393,7 +393,7 @@ stiletto~
 ~
 5 1 3 0 7 0 1025 8193 0 12713472 0
 2 1 8 11 0 0 0 0
-0 25666 100
+0 25666 100 100
 E
 stiletto~
 
@@ -430,7 +430,7 @@ heart dark githyanki~
 ~
 8 15 3 0 7 0 4097 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 73728 12 0 0
+0 0 100 100 73728 12 0 0
 E
 heart dark githyanki~
    &+LThis &+mve&+Ri&+mn&+My &+Lblack &+Rhe&+a&+Rrt&+L seers with the
@@ -447,7 +447,7 @@ headband spikes adamantite embedded~
 ~
 9 14 3 0 7 0 0 17 0 0 0
 10 0 0 0 0 0 0 0
-0 5232 100
+0 5232 100 100
 E
 headband spikes adamantite embedded~
    &+LThis is a standard &+yleather &+Lheadband.  It has several tiny
@@ -464,7 +464,7 @@ spiked knuckles _id_~
 ~
 9 15 3 0 7 0 0 129 64 0 0
 6 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spiked knuckles~
    &+LThese knuckles have several small straps banded together which
@@ -497,7 +497,7 @@ chipped adamantite key~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 2 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chipped adamantite key~
    &+LThis tiny adamantite key has a large &Nchip&+L missing from it.
@@ -509,7 +509,7 @@ wormhole mass limbo~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 44473 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wormhole mass limbo~
    &+LThis rift in space crackles and fluctuates, feeding off of energy
@@ -522,7 +522,7 @@ zerthimonian necklace~
 ~
 9 15 3 0 7 0 33558528 5 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 zerthimonian necklace~
    &+LWorn by the disciples of the githzerai savior &+MZ&+merthimon&+L, this
@@ -540,7 +540,7 @@ scalp githyanki~
 ~
 8 15 3 0 7 0 4096 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scalp githyanki~
    &+LThis scalp is nearly &+cdry&+L but still has the moist feeling of
@@ -554,7 +554,7 @@ skull githyanki~
 ~
 9 15 3 0 7 0 4097 8405009 0 0 0
 15 4 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skull githyanki~
    &+LThis &+Wsk&Nul&+Wl &+L has been freshly cut out of the head of a &+WGith&+Gyanki&+L.
@@ -571,7 +571,7 @@ silver two-handed githyanki bastard sword~
 ~
 5 22 4 0 14 0 4195328 8193 67 85475355 0
 13 3 7 0 0 0 0 0
-16 65000 100
+16 65000 100 100
 E
 silver two-handed githyanki bastard sword~
    &+LThis &+Wrare&+L sword is the standard of a high &+GGith&+Wyanki&+L Knight.  It
@@ -588,7 +588,7 @@ krazakan katana slayer~
 ~
 5 1 3 0 15 0 16777489 8193 65 0 0
 5 3 8 3 0 164156 60 20
-0 50654 100 0 16 0 0
+0 50654 100 100 0 16 0 0
 E
 krazakan katana~
  &+b       ∞∞            &+LHanded down through many centuries of the
@@ -637,7 +637,7 @@ wormhole mass prime~
 ~
 25 15 3 0 7 0 1 0 64 0 0
 44467 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wormhole mass limbo~
    &+LThis rift in space crackles and fluctuates, feeding off of energy
@@ -650,7 +650,7 @@ chainmail universe~
 ~
 9 1 3 0 7 0 1025 9 64 46305188 0
 50 3 0 1 0 0 0 0
-5 399999 100
+5 399999 100 100
 E
 chainmail universe~
    &+CThis beautiful suit of chainmail seems to be very light.  Just holding
@@ -671,7 +671,7 @@ first relic chaos~
 ~
 8 15 3 0 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 relic chaos~
    &+LThis symbol has a plain looking &+Rpentogram&+L on it.
@@ -683,7 +683,7 @@ pitch black scimitar pitch-black _id_~
 ~
 5 15 3 0 7 0 1 8193 64 0 0
 9 3 3 3 0 0 0 0
-0 0 100 2 0 0 0
+0 0 100 100 2 0 0 0
 E
 pitch black scimitar pitch-black~
    &+LThis sword is pitch black, and seems to draw in all light around it.
@@ -711,7 +711,7 @@ red slaadi hide~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 red slaadi hide~
    &+LThis large piece of flesh was removed from the back of a red &+RSlaad&+L.
@@ -723,7 +723,7 @@ green slaadi hide~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 green slaadi hide~
    &+LThis hide has been cut off of the back from a large green &+GSlaad&+L.
@@ -735,7 +735,7 @@ leggings green slaadi hide~
 ~
 9 15 3 0 7 0 0 33 64 0 0
 20 0 0 1 0 0 0 0
-3 345 100 0 12288 0 0
+3 345 100 100 0 12288 0 0
 E
 leggings green slaadi hide~
    &+LThese &+Wleggings&+L have been carefully stitched from the durable and
@@ -752,7 +752,7 @@ helmet visored red slaadi hide~
 ~
 9 15 3 0 7 0 1 17 0 0 0
 20 0 0 0 0 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 E
 helmet visored red slaadi hide~
    &+LThe hide from a &+Rre&+d Sla&+rad&+L has been hardened and enchanted
@@ -769,7 +769,7 @@ red slaadi hide~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 red slaadi hide~
    &+LA few scraps of &+Rred Slaad hide&+L.
@@ -781,7 +781,7 @@ green slaadi hide~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 green slaadi hide~
    &+LA few scraps of &+Ggreen &+gslaad &+Yhide&N.
@@ -793,7 +793,7 @@ spacial boots limbo~
 ~
 9 1 3 0 15 0 32 16449 64 0 0
 10 0 0 0 0 0 0 0
--20 99444 100
+-20 99444 100 100
 E
 boots traveller~
    &+LThese boots have been rumored to aid the wearer in flight and movement.
@@ -809,7 +809,7 @@ glowing eye argos~
 ~
 9 2 3 0 7 0 1 147457 64 0 0
 5 0 0 0 0 0 0 0
-0 10000 100 8 0 0 0
+0 10000 100 100 8 0 0 0
 E
 glowing eye argos~
 
@@ -834,7 +834,7 @@ second relic chaos~
 ~
 8 15 3 0 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 relic chaos~
    &+LThis &+Rpentogram&N has a deep &+rred&+M glow&+L to it.
@@ -846,7 +846,7 @@ emerald green scimitar emerald-green _id_~
 ~
 5 15 3 0 7 0 1 8193 64 0 0
 9 3 3 3 0 0 0 0
-0 0 100 33554432 0 0 0
+0 0 100 100 33554432 0 0 0
 E
 _id_name_~
 emerald scimitar speed
@@ -870,7 +870,7 @@ heartstone stone heart zerthimon~
 ~
 8 15 3 0 7 0 33558529 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 heartstone stone heart zerthimon~
    &+LThis &+Wst&No&+Lne is shaped and colored like a heart.  It holds the
@@ -883,7 +883,7 @@ pendant chaotic savior~
 ~
 9 15 3 0 7 0 1 16389 64 0 0
 15 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pendant chaotic savior~
    &+LThis pendant is maid from a &+Rfl&+ram&+Ri&+Yn&+Wg&+L ch&+ca&+Wi&Nn&+L.  From it hangs
@@ -901,7 +901,7 @@ third relic chaos~
 ~
 8 15 3 0 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 relic chaos~
    &+LThis &+Rpentogram&+L is ablaze is &+Bbl&+cu&+Ce &+Wf&+Bla&+Cm&+be&N.  &+LIt also
@@ -914,7 +914,7 @@ blackened bone longsword sword~
 ~
 5 15 3 0 7 0 1 8193 66 0 0
 5 4 4 3 0 0 0 0
-0 0 100 0 16 0 0
+0 0 100 100 0 16 0 0
 E
 blackened bone longsword sword~
    &+LThis longsword is made out of the carefully polished bone of a former
@@ -933,7 +933,7 @@ black knife~
 ~
 5 1 3 0 10 0 0 8193 64 0 0
 2 1 5 11 0 0 0 0
--5 69999 100
+-5 69999 100 100
 E
 shadow knife~
    &+LThis fierce-looking black knife is almost completely &+Ctra&+cns&+Lparent&+L to all
@@ -946,7 +946,7 @@ gloves shadows~
 ~
 9 15 3 0 7 0 33554432 129 64 0 0
 15 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gloves shadows~
    &+LThese gloves totally conceal the hands and forearms of the wearer as
@@ -963,7 +963,7 @@ shadows crown~
 ~
 9 15 3 0 7 0 33554432 17 64 0 0
 15 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shadows crown~
    &+LThis odd black circlet rests on the wearers brow and wraps them in
@@ -980,7 +980,7 @@ black githzerai sash rank~
 ~
 9 15 3 0 7 0 0 2049 0 0 0
 7 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black githzerai sash rank~
    &+LThis thick black sash is quite lustrous.  It shines even in the darkest
@@ -996,7 +996,7 @@ blood-red scimitar blood red _id_~
 ~
 5 15 3 0 7 0 0 8193 64 0 0
 9 3 3 3 0 0 0 0
-8 0 100 268435456 0 0 0
+8 0 100 100 268435456 0 0 0
 E
 _id_short_~
 &+rthe blood-red scimitar of awareness&N
@@ -1020,7 +1020,7 @@ deep blue scimitar deep-blue _id_~
 ~
 5 15 3 0 7 0 0 8193 64 0 0
 9 3 3 3 0 0 0 0
-9 0 100 134217728 0 0 0
+9 0 100 100 134217728 0 0 0
 E
 _id_name_~
 blue scimitar flight
@@ -1044,7 +1044,7 @@ long adamantite key~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 long adamantite key~
    &+LThis key is almost five inches long, made from pure black adamantite.
@@ -1056,7 +1056,7 @@ spiked arm plates polished adamantite~
 ~
 9 15 3 0 7 0 0 257 64 4165209604 0
 10 8 0 0 1 0 0 0
-0 0 100
+0 0 100 100
 E
 spiked arm plates polished adamantite~
    &+LThese heavy black adamantite arm plates completely cover one's entire
@@ -1074,7 +1074,7 @@ statue zerthimon~
 ~
 13 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue zerthimon~
    &+WThis towering statue of the githzerai God, Zerthimon, rests here in the
@@ -1092,7 +1092,7 @@ huge curved adamantite sword~
 ~
 5 19 3 0 7 0 4195328 8193 0 85475353 0
 13 5 5 3 0 0 0 0
-30 100999 100
+30 100999 100 100
 E
 huge curved adamantite sword~
    &+LThis massive two-handed sword has been curved when it was made to allow
@@ -1110,7 +1110,7 @@ githyanki skin mask~
 ~
 9 2 3 0 11 0 4096 262145 64 0 0
 6 13 0 0 0 0 0 0
-0 96999 100 0 12 0 0
+0 96999 100 100 0 12 0 0
 E
 githyanki skin mask~
    &+rThis mask has a very dark red tone to it; it is almost black in color.
@@ -1131,7 +1131,7 @@ red ring hardened blood~
 ~
 9 1 3 0 7 0 4096 3 64 4198895524 0
 6 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 red ring hardened blood~
    &+rThis tiny ring is rather disgusting.  It is incredible how such a
@@ -1150,7 +1150,7 @@ glowing adamantite key~
 ~
 18 15 3 0 7 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glowing adamantite key~
    &+LThis adamantite key has been &+Wenc&+Ghanted&+L for some reason.
@@ -1162,7 +1162,7 @@ potion blood _id_~
 ~
 10 15 3 0 7 0 4096 16385 64 0 0
 55 41 293 1 50 0 0 0
-1 345 100
+1 345 100 100
 E
 _id_name_~
 potion dazzle
@@ -1182,7 +1182,7 @@ potion blood dark _id_~
 ~
 10 15 3 0 7 0 4096 16385 64 0 0
 55 321 134 318 50 0 0 0
-0 0 100
+0 0 100 100
 E
 _id_name_~
 potion beyond grave
@@ -1202,7 +1202,7 @@ trapitem~
 ~
 14 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 trap_item~
 (Undescribable)
@@ -1216,7 +1216,7 @@ belt wisdom githzerai~
 ~
 9 15 3 0 7 0 1024 2049 64 33685920 0
 10 10 0 0 0 0 0 0
-0 150434 100
+0 150434 100 100
 E
 belt wisdom githzerai~
    &+LThis belt has been rumored to make one much &+Wwi&+Cse&+cr&+L.
@@ -1232,7 +1232,7 @@ holy githzerai bible~
 ~
 8 15 3 0 7 0 5121 16385 64 33685920 0
 0 0 0 0 0 0 0 0
-0 0 100 67108898 0 0 0
+0 0 100 100 67108898 0 0 0
 E
 holy githzerai bible~
    &+LEven though this wide tome is bound in adamantite, it is still
@@ -1250,7 +1250,7 @@ satchel bag components~
 ~
 15 3 2 0 7 0 4096 13647873 0 0 0
 750 1 750 0 0 0 0 0
--350 32449 100
+-350 32449 100 100
 E
 black leather satchel components~
    &+LEven though this small satchel looks like it can only contain
@@ -1268,7 +1268,7 @@ swirling hood negative vapors~
 ~
 9 1 3 0 15 0 33555456 17 0 47091620 0
 15 4 0 4 0 0 0 0
-5 195000 100 73728 12416 0 0
+5 195000 100 100 73728 12416 0 0
 E
 swirling hood negative vapors~
    &+LThis dark hood seems to swirl about the wearers head, constantly
@@ -1286,7 +1286,7 @@ tiny azure bottle poison~
 ~
 17 15 3 0 7 0 4097 8404993 64 0 0
 6 6 27 7 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny azure bottle poison~
 
@@ -1309,7 +1309,7 @@ switch glowing huge~
 ~
 29 15 3 0 7 0 1 0 0 0 0
 340 44587 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 switch glowing huge~
    &+LThis &+Whuge&+L switch has been &+Rcrafted into the &+Ywall&+L.
@@ -1321,7 +1321,7 @@ adamantite key shaped sword~
 ~
 18 15 3 0 7 0 4096 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite key shaped sword~
    &+LThis tiny adamantite key is shaped like a sword.
@@ -1333,7 +1333,7 @@ cloak blood~
 ~
 9 15 3 0 7 0 4097 1025 64 0 0
 10 0 0 0 0 0 0 0
--10 66789 100 73728 12 0 0
+-10 66789 100 100 73728 12 0 0
 E
 cloak blood~
    &+LThis long magnificent cloak seems to have a life of its own!  It is
@@ -1354,7 +1354,7 @@ heavy bone khopesh~
 ~
 5 15 3 0 7 0 1025 8193 64 96071707 0
 5 2 8 3 0 0 0 0
-15 43333 100
+15 43333 100 100
 E
 heavy bone khopesh~
    &+LThis thick, &+Wbo&Nn&+We&+L sword is very easy to swing and is enchanted
@@ -1371,7 +1371,7 @@ blood armor krang~
 ~
 9 15 3 0 7 0 1025 9 64 85475353 0
 40 3 0 0 0 0 0 0
-20 205555 100
+20 205555 100 100
 E
 blood armor krang~
    &+LThis sacred &+RBlood&+L armor contains the &+Ylife&+Wfo&Nrce&+L of &+bKraang&+L.
@@ -1392,7 +1392,7 @@ black visor warvisor death knight~
 ~
 9 15 3 0 7 0 0 131073 64 0 0
 9 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black warvisor visor death knight~
    &+LThis black warvisor is basically a circlet that is worn around the head,
@@ -1411,7 +1411,7 @@ crystalline statue~
 ~
 25 8 5 0 15 0 0 0 64 0 0
 44726 98 -1 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 crystalline statue~
    &+WThis massive statue stands nearly thirty feet tall.  It rests on a
@@ -1428,7 +1428,7 @@ spiked leg plates polished adamantite~
 ~
 9 15 3 0 7 0 0 33 64 4165209604 0
 10 5 0 0 1 0 0 0
-0 0 100
+0 0 100 100
 E
 spiked leg plates polished adamantite~
    &+LThese heavy adamantite leg plates have a small layer of cured black
@@ -1447,7 +1447,7 @@ switch glowing huge~
 ~
 29 15 3 0 7 0 1 0 0 0 0
 340 44586 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 switch glowing huge~
    &+LThis huge &+Mglowing&+L switch&N has been made onto the &+Rwall.
@@ -1459,7 +1459,7 @@ crown might~
 ~
 9 15 3 0 7 0 0 17 64 0 0
 20 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 helm leadership~
    &+rThis ancient crown bares royal runes of an ancestral Githzerai
@@ -1479,7 +1479,7 @@ platemail sacred strength~
 ~
 9 15 3 0 7 0 33558528 9 64 4173708868 0
 30 0 0 4 0 0 0 0
-0 0 100 73728 0 0 0
+0 0 100 100 73728 0 0 0
 E
 platemail sacred strength~
    &+LThis sacred platemail, when worn, seems to shake violently and enhance
@@ -1497,7 +1497,7 @@ adamantite hammer~
 ~
 5 19 3 0 7 0 1 8193 64 0 0
 4 2 8 6 0 0 0 0
-0 15678 100
+0 15678 100 100
 E
 adamantite hammer~
    &+LThis adamantine hammer has a four foot long shaft with a two foot head.
@@ -1514,7 +1514,7 @@ durithalite bracelet~
 ~
 9 15 3 0 7 0 1 4097 64 0 0
 8 11 0 4 0 0 0 0
-1 2345 100
+1 2345 100 100
 E
 durithalite bracelet~
    &+rThis bracelet was taken from one of the corpses of many of the
@@ -1533,7 +1533,7 @@ eye beholder guardian magenta~
 ~
 9 15 3 0 7 0 33558528 147457 64 0 0
 2 0 0 1 0 0 0 0
-2 345422 100
+2 345422 100 100
 E
 eye beholder guardian magenta~
    &+LThis &+Meye&+L is roughly the size of a ripe grape fruit.  The iris
@@ -1554,7 +1554,7 @@ eye sapphire beholder guardian~
 ~
 9 15 3 0 7 0 33558528 147457 64 0 0
 2 0 0 1 0 0 0 0
-2 33333 100 33554432 0 0 0
+2 33333 100 100 33554432 0 0 0
 E
 eye sapphire beholder guardian~
    &+LThis deep &+bblue&+L eye, although dead and lifeless, still seems always
@@ -1575,7 +1575,7 @@ strange glowing rift~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 44720 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 strange glowing rift~
    &+LThis dark rift strangely &+mglows&+L with a deep and unholy
@@ -1590,7 +1590,7 @@ circlet blood~
 ~
 9 2 3 0 7 0 4096 17 64 0 0
 15 4 0 1 0 0 0 0
-0 109555 100
+0 109555 100 100
 E
 circlet blood~
    &+rThis intensely &+mmagi&+Mcal&+r crown is like a continuous strip of
@@ -1610,7 +1610,7 @@ Teleports to 44768~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 44768 5 -1 0 0 0 0 0
-2 25999 100
+2 25999 100 100
 #44489
 tiny intricate adamantite key~
 &+La tiny, intricate adamantite key&N~
@@ -1618,7 +1618,7 @@ tiny intricate adamantite key~
 ~
 18 15 3 0 7 0 4096 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny intricate adamantite key~
    &+LThis tiny adamantite key has several incredibly detailed notches and
@@ -1631,7 +1631,7 @@ warhammer blazing hammer~
 ~
 5 11 3 0 7 0 5121 8193 64 33685920 0
 4 2 6 7 0 0 0 0
-0 15000 100 536870912 0 0 0
+0 15000 100 100 536870912 0 0 0
 E
 hammer warhammer blazing~
    &+rWielded by the legendary battle clerics of the githzerai, this
@@ -1651,7 +1651,7 @@ robe githzeraian mages~
 ~
 9 3 3 0 7 0 1025 9 64 15240708 0
 20 3 0 1 0 0 0 0
-2 345 100 4 0 0 0
+2 345 100 100 4 0 0 0
 E
 robe githzeraian mages~
    &+LThis &+cpower&+Mful ro&+mbe&+L carries with it the abilities of the
@@ -1668,7 +1668,7 @@ belt blood warriors~
 ~
 9 15 3 0 7 0 1024 2049 64 96071707 0
 10 0 0 0 0 0 0 0
-0 69555 100
+0 69555 100 100
 E
 belt blood warriors~
    &+LThis belt is made of a thin strip of adamantite that has been looped
@@ -1686,7 +1686,7 @@ huge mirror~
 ~
 25 7 3 0 7 0 1 0 64 0 0
 44768 139 -1 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 huge mirror~
 &+c       This m&+Cassive glass &+cmirror
@@ -1713,7 +1713,7 @@ fierce blade doom~
 ~
 5 18 3 0 7 0 1 8193 64 0 0
 2 3 5 0 0 326 50 30
-2 20000 100
+2 20000 100 100
 E
 fierce blade~
 &+r       ‹‹
@@ -1758,7 +1758,7 @@ black bracer _id_~
 ~
 9 15 3 0 7 0 33555456 4097 64 8515584 0
 10 0 0 0 0 0 0 0
-0 0 100 268435456 0 0 0
+0 0 100 100 268435456 0 0 0
 E
 _id_name_~
 bracer thievery
@@ -1782,7 +1782,7 @@ dagger ripping~
 ~
 5 15 3 0 7 0 1 8193 64 0 0
 2 3 3 11 0 0 0 0
-3 345 100 0 16 0 0
+3 345 100 100 0 16 0 0
 E
 dagger ripping~
    &+LThis &+Wda&Ngg&+Ler of the &+Ggith&+yzerai&+L has odd runes covering it with several
@@ -1800,7 +1800,7 @@ glowing potion blood _id_~
 ~
 10 15 3 0 7 0 4097 16385 64 0 0
 55 481 227 3 50 0 0 0
-0 2345 100
+0 2345 100 100
 E
 _id_name_~
 potion elements
@@ -1820,7 +1820,7 @@ mysterious blue orb~
 ~
 25 15 3 0 7 0 1 0 64 0 0
 44585 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mysterious blue orb~
    &+LA large blue orb glowing with an intense blue light floats just
@@ -1835,7 +1835,7 @@ black-bladed dagger _id_~
 ~
 5 15 3 0 7 0 1024 8193 66 9039872 0
 2 2 6 11 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black bladed dagger~
 &+L              ∞
@@ -1882,7 +1882,7 @@ switch glowing huge~
 ~
 29 15 3 0 7 0 1 0 0 0 0
 340 44546 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 switch glowing huge~
    &+WThis huge switch is set on the northern wall.
@@ -1894,7 +1894,7 @@ eternal shadow _id_~
 ~
 18 15 3 0 7 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 eternal shadow~
    &+LThis tiny piece of darkness floats about, almost pulling shadows into
@@ -1919,7 +1919,7 @@ altar~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 179 44589 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
    &+LA large, admantite altar rests behind the githzerai throne.  An unholy
@@ -1935,7 +1935,7 @@ the &+Lshadow wings&N of &+bever&+Lnight&N~
 ~
 9 1 3 0 7 0 4096 1025 64 0 0
 20 9 0 0 0 0 0 0
--200 299999 100 134217728 128 0 0
+-200 299999 100 100 134217728 128 0 0
 E
 wings darkness~
    &+LThese mighty wings have an end-to-end span of about two hundred feet.
@@ -1955,7 +1955,7 @@ gold adamantite lockpick pick picks~
 ~
 31 19 3 0 10 0 4096 16385 64 0 0
 30 7 0 0 0 0 0 0
--1 5444 100
+-1 5444 100 100
 E
 gold adamantite lockpick pick picks~
    &+LThis finely crafted lockpick looks as if it may be valuable too.
@@ -1967,7 +1967,7 @@ thick black ring _id_~
 ~
 9 15 3 0 7 0 4097 3 64 0 0
 20 1 0 0 0 0 0 0
-0 105444 100
+0 105444 100 100
 E
 ring ultimate protection~
    &+LWorn by the ancient &+ygith&+bzerai &+Lthis fabled ring is
@@ -1997,7 +1997,7 @@ fold~
 ~
 25 15 3 0 7 0 33554433 0 64 0 0
 44473 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fold~
    &+LA large portion of the spacial atmosphere seems to be folded over onto
@@ -2010,7 +2010,7 @@ shadow mask _id_~
 ~
 9 1 3 0 7 0 33554432 262145 64 0 0
 15 13 0 5 0 0 0 0
--10 993444 100 4 28 0 0
+-10 993444 100 100 4 28 0 0
 E
 mask~
    &+LThis mask is a swirling shadow, stabled so it wraps about one's face
@@ -2042,7 +2042,7 @@ crystalized angel tear~
 ~
 9 15 3 0 7 0 1 524289 64 0 0
 5 0 0 4 0 0 0 0
-0 0 100 8192 76 0 0
+0 0 100 100 8192 76 0 0
 E
 crystalized angel tear~
    This &+Wte&+Ca&+cr&N of an &+Wan&+Lg&Nel&N has been encased in crystal.  A small wire
@@ -2059,7 +2059,7 @@ pile adamantite coins~
 ~
 8 19 3 0 15 0 4096 1 64 0 0
 0 0 0 0 0 0 0 0
-0 55999 100
+0 55999 100 100
 E
 pile adamantite coins~
    &+LThis is a pile of adamantite coins.  They look quite valuable if they
@@ -2072,7 +2072,7 @@ pile coins~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 200 80 40 20 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
    &+LThis is a pile of &+Wcoins&+L.
@@ -2084,7 +2084,7 @@ potion smoking black _id_~
 ~
 10 15 3 0 7 0 4096 16385 64 0 0
 50 -1 -1 206 0 0 0 0
-0 0 100
+0 0 100 100
 E
 _id_name_~
 potion invisibility
@@ -2104,7 +2104,7 @@ violet potion~
 ~
 10 15 3 0 7 0 4097 16385 64 0 0
 50 66 66 -1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 violet potion~
    &+LIn a &Nclear&+L vial is a thick &+Mvio&+mlet&+L potion.
@@ -2116,7 +2116,7 @@ flaming pentagram~
 ~
 9 1 1 0 15 0 4097 524289 64 4163109002 0
 7 14 0 1 0 0 0 0
--10 25999 100 65536 0 0 0
+-10 25999 100 100 65536 0 0 0
 E
 flaming pentogram~
    &+rEven without any &+mdetection magic&+r, one can obviously infer from
@@ -2134,7 +2134,7 @@ polished bone githzerai longsword sword~
 ~
 5 10 3 0 12 0 1024 8193 66 96071707 0
 5 3 3 3 0 0 0 0
-10 15999 100
+10 15999 100 100
 E
 polished bone githzerai longsword sword~
 
@@ -2165,7 +2165,7 @@ badge insignia githzerai patrol~
 ~
 9 15 3 0 7 0 0 2097153 64 0 0
 5 16 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 badge insignia githzerai patrol~
 
@@ -2184,7 +2184,7 @@ master key~
 ~
 18 15 3 0 7 0 4097 8404993 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 master key~
    &+LThis is a thin key of pure adamantite.  It is uniquely carved and
@@ -2198,7 +2198,7 @@ teleports to 44613~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 44613 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #44518
 wizard's staff _id_~
 &+La &+mwi&+Mzar&+md's &+bst&+Baff&N~
@@ -2206,7 +2206,7 @@ wizard's staff _id_~
 ~
 4 1 3 0 15 0 33559553 16385 64 12619268 0
 50 5 5 62 0 0 0 0
--50 12000000 100
+-50 12000000 100 100
 E
 _id_name_~
 arcane staff striking
@@ -2228,7 +2228,7 @@ pitch-black mindstone bracelet~
 ~
 9 1 3 0 15 0 0 4097 64 0 0
 5 0 0 3 0 0 0 0
-0 65999 100
+0 65999 100 100
 E
 pitch-black mindstone bracelet~
    &+LThis magical bracelet is made of some unknown pitch-black material.
@@ -2246,7 +2246,7 @@ swirling magenta potion _id_~
 ~
 10 1 1 0 10 0 4097 8404993 64 0 0
 60 79 0 66 0 0 0 0
-0 90555 100
+0 90555 100 100
 E
 swirling magenta potion~
    &+LThis sma&+mll via&+Ml co&+mntains a p&+Lotion of m&+many ble&+Mnds o&+mf magenta.  The co&+Llors
@@ -2273,7 +2273,7 @@ potion~
 ~
 10 15 3 0 5 0 8388617 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 8 52
 #44522
@@ -2283,7 +2283,7 @@ teleports to 44495~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 44495 2 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #44523
 path~
 &+Lthe path of the &+Wchosen &+Lone&N~
@@ -2291,7 +2291,7 @@ path~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 44500 1 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 path~
    &+LAlthough this room and the surrounding area seems extraordinarily
@@ -2314,7 +2314,7 @@ path~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 44500 2 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 path~
    &+LAlthough this room and the surrounding area seems extraordinarily
@@ -2337,7 +2337,7 @@ path~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 44500 3 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 path~
    &+LAlthough this room and the surrounding area seems extraordinarily
@@ -2360,7 +2360,7 @@ path~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 44500 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 path~
    &+LAlthough this room and the surrounding area seems extraordinarily
@@ -2383,7 +2383,7 @@ teleports to 44617~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 44617 2 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #44528
 shadowy rift~
 &+La shadowy rift&N~
@@ -2391,7 +2391,7 @@ shadowy rift~
 ~
 25 15 3 0 5 0 0 0 64 0 0
 44514 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shadowy rift~
 &+L      This very dark
@@ -2420,7 +2420,7 @@ going north teleports to 44552&N~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 44552 1 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #44530
 animated spellbook book~
 &+Wan animated spellbook&N~
@@ -2428,7 +2428,7 @@ animated spellbook book~
 ~
 33 12 2 0 8 0 33562624 8404993 64 0 0
 0 0 250 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 animated spellbook book~
    &+WThis spellbook seems to float near its master and carry with it
@@ -2441,7 +2441,7 @@ large glowing key~
 ~
 18 11 1 0 9 0 4097 16385 0 0 0
 0 100 0 0 0 0 0 0
-5 5 100
+5 5 100 100
 E
 large glowing key~
    This large key &+Mglows&N brilliantly with a &+Ldark&N and &+revil&N magic.
@@ -2453,7 +2453,7 @@ steward key~
 ~
 18 1 2 0 5 0 4097 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 steward key~
    &+LThis strange key is made of some sort of shaft dark and
@@ -2471,7 +2471,7 @@ adamantite plaque~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite plaque~
 
@@ -2491,7 +2491,7 @@ adamantite pillar~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 adamantite pillar~
    &+LThis smooth adamantite pillar has various &+mrunes&+L and
@@ -2505,7 +2505,7 @@ small prayer idol~
 ~
 25 11 2 0 12 0 0 0 64 0 0
 44648 176 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small prayer idol~
    &+WThis small prayer idol rests at the very top of the &+Ladamantite &+Wshrine
@@ -2523,7 +2523,7 @@ fountain fist blood~
 ~
 17 15 3 0 5 0 0 0 0 0 0
 -1 -1 13 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain fist blood~
    &+LA large fist, carved from adamantite, stands erect in the
@@ -2543,7 +2543,7 @@ dark red plaque~
 ~
 12 19 3 0 5 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark red plaque~
 &+L    <\________________/>
@@ -2562,7 +2562,7 @@ fiery flames plaque~
 ~
 12 19 3 0 5 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fiery flames plaque~
 
@@ -2586,7 +2586,7 @@ key chaplain study~
 ~
 18 19 2 0 5 0 4097 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 key chaplain study~
    &+LThis small adamantite key has several engravings signifying that
@@ -2599,7 +2599,7 @@ deep red key~
 ~
 18 31 2 0 15 0 4097 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 deep red key~
    &+LThis small adamantite key has a &+rdeep red&+L hue to it.  It appears
@@ -2613,7 +2613,7 @@ sacred altar runed~
 ~
 25 15 3 0 5 0 1 0 0 0 0
 44650 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sacred altar runed~
    &+WThis massive altar is quite possibly one of the only
@@ -2635,7 +2635,7 @@ small inscription~
 ~
 12 19 2 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small inscription~
 &+c     ______________________________________
@@ -2656,7 +2656,7 @@ small plaque~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small plaque~
 &+L   \\//__________________\\//
@@ -2677,7 +2677,7 @@ key war chamber~
 ~
 18 31 2 0 14 0 4096 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 key war chamber~
    &+LThis small adamantite key has a small inscription of a pair of
@@ -2691,7 +2691,7 @@ chest~
 ~
 15 15 3 0 5 0 4096 0 0 0 0
 500 29 44546 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
    &+LThe amount of ware on the hinges of this chest
@@ -2705,7 +2705,7 @@ green key~
 ~
 18 8 1 0 12 0 4096 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 green key~
    &+LThis small key appears to be made of some sort of &+ggreen &+Lcrystal.
@@ -2717,7 +2717,7 @@ small adamantite key~
 ~
 18 19 2 0 8 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 small adamantite key~
    &+LThis small adamantite key is finely crafted and looks to be
@@ -2730,7 +2730,7 @@ massive adamantite statue~
 ~
 12 15 3 0 5 0 1 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 massive adamantite statue~
    This monstrous statue depicts a massive Githzerai &+Ldeath knight&N
@@ -2762,7 +2762,7 @@ massive adamantite statue~
 ~
 12 15 3 0 5 0 1 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 massive adamantite statue~
    This massive &+Ladamantite&N statue is of a frighteningly vicious-
@@ -2798,7 +2798,7 @@ zerthimonian ring~
 ~
 9 8 3 0 10 0 33558528 3 0 0 0
 5 0 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 zerthimonian ring~
    &+LThis precious ring holds a strange crystal, elevating the mind-powers
@@ -2815,7 +2815,7 @@ huge bone lever~
 ~
 29 15 3 0 5 0 4097 0 0 0 0
 340 44704 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge bone lever~
    &+LThis strange &+Wbone&+L lever purtrudes from a giant crack in the
@@ -2828,7 +2828,7 @@ blood armor kraange~
 ~
 9 10 4 0 15 0 1024 9 64 87605275 0
 40 0 0 0 0 0 0 0
-20 205555 100 0 32768 0 0
+20 205555 100 100 0 32768 0 0
 E
 blood armor kraange~
    &+rThis diabolical suit of armor has been worn by the great
@@ -2848,7 +2848,7 @@ huge bloody lever~
 ~
 29 15 3 0 5 0 4097 0 0 0 0
 340 44705 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge bloody leaver~
    &+LThis huge &+rbloody&+L lever purtrudes from a large crack in
@@ -2861,7 +2861,7 @@ swirling portal~
 ~
 25 15 3 0 5 0 1 0 64 0 0
 44706 7 -1 44706 0 0 0 0
-0 0 100
+0 0 100 100
 E
 swirling portal~
    &+WThis huge portal swirls with bright white energy.
@@ -2873,7 +2873,7 @@ swirling portal~
 ~
 25 15 3 0 5 0 1 0 64 0 0
 44569 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 swirling portal~
    &+WThis huge portal swirls with bright white energy.
@@ -2885,7 +2885,7 @@ small inscription~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small inscription~
 &+L|\/\___/\___/\/\______/\/\___/\___/\
@@ -2905,7 +2905,7 @@ shard rrakkma~
 ~
 18 19 2 0 5 0 1 16385 0 0 0
 0 100 0 0 0 0 0 0
-4 158 100
+4 158 100 100
 E
 shard rrakkma~
    &+LThis adamantite shard appears to be some sort of &+Wkey&+L.
@@ -2925,7 +2925,7 @@ pile coins~
 ~
 20 15 3 0 5 0 0 1 0 0 0
 0 0 0 2000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins~
    &+WThis is a pile of platinum coins.
@@ -2937,7 +2937,7 @@ bone key~
 ~
 18 10 2 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-5 5 100
+5 5 100 100
 E
 bone key~
    &+WThis small key appears to have been masterfully carved from
@@ -2950,7 +2950,7 @@ ancient adamantite plaque~
 ~
 12 15 3 0 5 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ancient adamantite plaque~
    &+LThis strange and &+yancient &+Lplaque is masterfully carved into
@@ -2976,7 +2976,7 @@ huge adamantite sarcophagus~
 ~
 15 19 5 0 5 0 1 0 0 0 0
 500 5 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge adamantite sarcophagus~
    &+LThis huge &+ysarcophagus &+Lis made of pure adamantite and has been
@@ -2994,7 +2994,7 @@ remains~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #44563
 signet ring kingly crest~
 &+Ya signet ring with a &+ckingly &+Ycrest&N~
@@ -3002,7 +3002,7 @@ signet ring kingly crest~
 ~
 9 15 3 0 5 0 4097 3 64 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 signet ring kingly crest~
    &+YJudging by the &+Wcrest &+Yon this ancient signet ring, it appears to
@@ -3018,7 +3018,7 @@ remains~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #44565
 huge blood stained blood-stained morningstar star morning~
 &+La huge &+rblo&+Lo&+rd&+L-sta&+ri&+Ln&+re&+Ld morningstar&N~
@@ -3026,7 +3026,7 @@ huge blood stained blood-stained morningstar star morning~
 ~
 5 19 5 0 11 0 1024 8193 66 123437499 0
 3 3 4 0 1 0 0 0
-4 15092 100
+4 15092 100 100
 E
 huge blood stained blood-stained morningstar star morning~
    &+LThis huge adamantite morningstar is made up of a long, narrow handle,
@@ -3045,7 +3045,7 @@ barbed bloody black whip~
 ~
 5 13 3 0 14 0 0 8193 66 0 0
 14 3 5 0 2 0 0 0
-2 35992 100
+2 35992 100 100
 E
 barbed bloody black whip~
    &+LThis long black whip seems to be &+cblessed&+L, or &+rcursed&+L, with some sort
@@ -3065,7 +3065,7 @@ ghostly scripture~
 ~
 12 15 3 0 5 0 1 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ghostly scripture~
    &+LThis strange manuscript has appeared &+bmagically&+L, hovering just
@@ -3084,7 +3084,7 @@ lever~
 ~
 29 1 2 0 5 0 0 0 64 0 0
 340 44760 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lever~
    &+LThis strange &Nghostly&+L lever floats here within the tomb.
@@ -3096,7 +3096,7 @@ lever~
 ~
 29 1 2 0 5 0 0 0 64 0 0
 340 44761 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lever~
    &+LThis strange &Nghostly&+L lever floats here within the tomb.
@@ -3108,7 +3108,7 @@ lever~
 ~
 29 1 2 0 5 0 0 0 64 0 0
 340 44762 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lever~
    &+LThis strange &Nghostly&+L lever floats here within the tomb.
@@ -3120,7 +3120,7 @@ lever~
 ~
 29 1 2 0 5 0 0 0 64 0 0
 340 44763 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lever~
    &+LThis strange &Nghostly&+L lever floats here within the tomb.
@@ -3132,7 +3132,7 @@ bright marble key~
 ~
 18 15 3 0 5 0 1 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bright marble key~
    This key is crafted out of a very fine marble.  It also seems
@@ -3145,7 +3145,7 @@ huge mirror~
 ~
 25 7 3 0 7 0 4097 0 64 0 0
 44767 139 -1 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 huge mirror~
 &+c       This m&+Cassive glass &+cmirror
@@ -3172,7 +3172,7 @@ something~
 ~
 5 15 3 0 5 0 8916994 8192 0 0 0
 5 5 5 0 0 432 55 20
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &n$n's &+Lbody glows with a &+rcha&+Ro&+rtic &+Lmaelstrom...
@@ -3189,7 +3189,7 @@ fiery key vortex~
 ~
 18 15 3 0 5 0 33558528 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fiery key vortex~
    &+rThis key is composed of chaotic energy, stretched into a length of
@@ -3202,7 +3202,7 @@ small engraving~
 ~
 12 19 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small engraving~
    &+LThree small steps lead up to the adamantite door to the north.
@@ -3224,7 +3224,7 @@ tiny mindstone ear clasp earring~
 ~
 9 15 3 0 5 0 0 524289 64 0 0
 0 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny mindstone ear clasp earring~
    &+LThis magical ear clasp is made of some unknown pitch-black material.
@@ -3242,7 +3242,7 @@ something~
 ~
 5 15 3 0 5 0 8916994 8192 0 0 0
 5 5 5 0 0 374378 55 20
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &n$n &+Lsummons the ancient and archaic powers of the githzerai into a powerful storm of unholy &+blightning &+Land &+bnegative energy!&N
@@ -3258,7 +3258,7 @@ something~
 ~
 5 15 3 0 5 0 8916994 8192 0 0 0
 5 5 5 0 0 1287433264 55 12
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &n$n &+Lraises his &+Bstaff &+Lup high... causing all &+bmagic &+Lin the room to &+Lfocus around him...
@@ -3275,7 +3275,7 @@ wicked piece metal torture implement~
 ~
 5 15 3 0 7 0 65664 1 0 0 0
 15 5 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -3287,7 +3287,7 @@ blood blood-stained beads githyanki~
 ~
 3 27 3 0 7 0 3145736 16389 0 0 0
 62 10 10 371 0 0 0 0
-0 0 100 0 0 64 0
+0 0 100 100 0 0 64 0
 A
 34 3
 A

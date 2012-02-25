@@ -5,7 +5,7 @@ emblem mysterious~
 ~
 13 15 3 0 7 0 0 10485761 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29001
 spam can~
 &+Ca can of spam~
@@ -13,7 +13,7 @@ spam can~
 ~
 19 15 3 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29002
 portal glowing~
 &+Wa glowing portal&n~
@@ -21,7 +21,7 @@ portal glowing~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 29010 7 -1 0 0 0 0 12
-0 0 100
+0 0 100 100
 #29003
 portal glowing~
 &+Wa glowing portal&n~
@@ -29,4 +29,4 @@ portal glowing~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 29007 7 -1 0 0 0 0 12
-0 0 100
+0 0 100 100

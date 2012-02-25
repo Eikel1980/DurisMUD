@@ -5,7 +5,7 @@ mushroom stalk~
 ~
 13 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mushroom stalk~
 &+m This appears to be one of the landmarks within the mushroom forest,
@@ -20,7 +20,7 @@ spine ogre~
 ~
 5 10 5 0 8 0 0 8193 0 0 0
 13 3 4 6 0 0 0 0
-8 2958 100
+8 2958 100 100
 A
 18 3
 A
@@ -32,7 +32,7 @@ gloves batskin bat skin smooth~
 ~
 9 12 4 0 7 0 131072 129 0 0 0
 6 0 0 2 0 0 0 0
-1 1258 100
+1 1258 100 100
 A
 18 2
 A
@@ -44,7 +44,7 @@ collar bone~
 ~
 9 10 5 0 7 0 0 5 0 0 0
 10 0 0 3 0 0 0 0
-10 1284 100
+10 1284 100 100
 A
 19 1
 A
@@ -56,7 +56,7 @@ longsword mithril~
 ~
 5 18 3 0 10 0 140289 8193 0 87572507 0
 5 1 3 3 0 0 0 0
-5 12000 100
+5 12000 100 100
 A
 19 3
 A
@@ -68,7 +68,7 @@ statue dragon~
 ~
 34 11 3 0 12 0 140297 16385 0 46305188 0
 48 0 0 0 0 0 0 0
-2 13000 100 67108864 0 0 0
+2 13000 100 100 67108864 0 0 0
 A
 13 0
 A
@@ -80,7 +80,7 @@ shrine~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shrine~
 &+m  This shrine portrays the classical view of the goddess Lolth,

@@ -5,7 +5,7 @@ A small brittle key lies here.~
 ~
 18 15 3 0 1 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 This small brittle key appears to be made out of the same black-steel ore
@@ -19,7 +19,7 @@ bracer diamond~
 ~
 9 15 3 0 7 0 0 4097 64 0 0
 5 11 1 3 0 0 0 0
-1 40295 100
+1 40295 100 100
 E
 bracer diamond~
 This small metal bracer has little diamond embedded in it.
@@ -35,7 +35,7 @@ skins~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 25 3 1 3 0 0 0 0
-4 20249 100
+4 20249 100 100
 E
 skins~
 Someone has skinned several mountain lions and made
@@ -52,7 +52,7 @@ scarlet ring~
 ~
 9 15 3 0 7 0 0 3 64 0 0
 5 1 0 3 0 0 0 0
-1 20494 100
+1 20494 100 100
 E
 scarlet ring~
    This beautiful scarlet ring appears to be of fine quality, probably
@@ -69,7 +69,7 @@ sleeves~
 ~
 9 15 3 0 7 0 0 257 0 0 0
 8 8 1 3 0 0 0 0
-2 29258 100
+2 29258 100 100
 E
 sleeves~
    These sleeves appear to be made out of trolls, alligators, and whatever
@@ -87,7 +87,7 @@ armor leather suit~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 20 3 1 3 0 0 0 0
-8 10099 100
+8 10099 100 100
 E
 armor leather suit~
 Someone has painted a suit of leather armor blood-red.
@@ -101,7 +101,7 @@ collar blood~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-1 10292 100
+1 10292 100 100
 E
 collar blood~
   This collar appears to be quiet large, and is most likely used
@@ -119,7 +119,7 @@ rod punisher~
 ~
 5 15 3 0 7 0 139265 8193 0 0 0
 2 1 8 11 0 0 0 0
-1 10292 100 65536 0 0 0
+1 10292 100 100 65536 0 0 0
 E
 rod punisher~
   This slender black rod appears to have a very pointy end, good for
@@ -137,7 +137,7 @@ bracelet roots~
 ~
 9 15 3 0 7 0 1 4097 0 0 0
 5 11 1 3 0 0 0 0
-1 28259 100
+1 28259 100 100
 E
 bracelet roots~
 This magical twisted root fits nicely around one's wrist.
@@ -153,7 +153,7 @@ plate mail platemail~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 20 3 1 5 0 0 0 0
-5 15928 100
+5 15928 100 100
 E
 plate mail platemail~
 This suit of black platemail is tattered and worn from extensive use.
@@ -167,7 +167,7 @@ robe black~
 ~
 9 15 3 0 7 0 1025 1025 0 4197888 0
 10 9 1 3 0 0 0 0
-2 50292 100
+2 50292 100 100
 E
 robe black~
    This dark robe, almost pitch-black in color, has small woven streaks of
@@ -184,7 +184,7 @@ bracelet flesh hooks~
 ~
 9 15 3 0 7 0 0 4097 64 0 0
 5 11 1 2 0 0 0 0
-2 10929 100
+2 10929 100 100
 E
 bracelet flesh hooks~
 Some seriously disturbed person has cut the flesh off someone, hardened it
@@ -201,7 +201,7 @@ gloves web~
 ~
 9 15 3 0 7 0 33554432 129 0 0 0
 8 7 1 2 0 0 0 0
-1 50933 100
+1 50933 100 100
 E
 gloves web~
    These gloves were made out of a magical spider web, and formed to fit
@@ -218,7 +218,7 @@ ring ruby~
 ~
 9 15 3 0 7 0 1024 3 0 37883812 0
 5 1 0 2 0 0 0 0
-1 28200 100
+1 28200 100 100
 E
 ring ruby~
    This small ring has a glowing ruby set in it.
@@ -232,7 +232,7 @@ helmet wooden~
 ~
 9 15 3 0 7 0 0 17 0 0 0
 4 4 1 4 0 0 0 0
-1 1922 100
+1 1922 100 100
 E
 helmet wooden~
 This helmet is covered with different leaves from a swamp.
@@ -248,7 +248,7 @@ longsword sword _id_~
 ~
 5 15 3 0 7 0 1536 8193 0 2215963 134911229
 5 2 6 3 0 0 0 0
-2 28289 100 16 16 0 0
+2 28289 100 100 16 16 0 0
 E
 _id_short_~
 &+ca slender longsword named &+C'Glimmer'&n
@@ -272,7 +272,7 @@ mask deception _id_~
 ~
 9 15 3 0 7 0 0 262145 0 0 0
 7 13 1 2 0 0 0 0
-1 28290 100 0 4096 0 0
+1 28290 100 100 0 4096 0 0
 E
 _id_short_~
 &+mthe mask of deception&n
@@ -297,7 +297,7 @@ earring diamond~
 ~
 9 15 3 0 7 0 4097 524289 0 0 0
 5 14 0 2 0 0 0 0
-1 30492 100
+1 30492 100 100
 E
 earring diamond~
 This diamond earring is quite small, and has been cut in the form of a small
@@ -314,7 +314,7 @@ helmet bone faced~
 ~
 9 15 3 0 7 0 0 17 0 0 0
 10 4 1 5 0 0 0 0
-5 109292 100
+5 109292 100 100
 E
 helmet bone face~
 Someone has gutted an extremely large skull, possibly a dragon, and formed
@@ -331,7 +331,7 @@ ring black~
 ~
 9 15 3 0 7 0 0 3 0 0 0
 5 1 0 2 0 0 0 0
-1 10929 100
+1 10929 100 100
 E
 ring amethyst~
    Someone has taken a pure piece of amethyst, enchanted it, and melded it
@@ -348,7 +348,7 @@ wings~
 ~
 9 15 3 0 7 0 12289 1025 0 0 0
 15 9 1 5 0 0 0 0
-9 59282 100 134217728 0 0 0
+9 59282 100 100 134217728 0 0 0
 E
 wings~
    These magical wings are from a shadow dragon.  They aren't quite the size
@@ -367,7 +367,7 @@ illusionary key~
 ~
 18 1 3 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 #11322
 adamantium key~
 &+man adamantium key&N~
@@ -375,4 +375,4 @@ adamantium key~
 ~
 18 19 3 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

@@ -5,7 +5,7 @@ boots drow~
 ~
 9 2 3 0 7 0 33792 65 64 96059419 0
 10 0 0 3 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 boots drow~
 &+L A pair of boots carefully sewn of &+mDrow&n &+Lskin, worn in places
@@ -22,7 +22,7 @@ gleaming dagger~
 ~
 5 18 3 0 10 0 16819584 8193 64 85540865 0
 2 1 6 11 1 0 0 0
-5 1212 100
+5 1212 100 100
 E
 dagger soulreaper~
 &+L A small dagger made of pure mithril, it has blood dried on the blade.
@@ -41,7 +41,7 @@ bp backpack eagle feather~
 ~
 15 50 3 0 7 0 303104 4194305 64 0 0
 200 1 0 200 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 bp backpack~
 &+y A large backpack made completely from Eagle feathers carefully placed
@@ -55,7 +55,7 @@ muffin blueberry~
 ~
 19 48 3 0 7 0 0 1 0 0 0
 5 0 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 muffin blueberry~
 &+Y A freshly baked blueberry muffin, still warm from the oven looks
@@ -68,7 +68,7 @@ torch~
 ~
 1 41 3 0 7 0 262144 8404993 64 0 0
 0 0 999 0 0 0 0 0
-2 500 100
+2 500 100 100
 E
 torch~
 &+g A torch composed of reeds from a nearby pond have been magically pressed
@@ -81,7 +81,7 @@ leggings squirrel~
 ~
 9 14 3 0 7 0 0 33 64 4246499417 0
 6 0 0 3 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 leggings squirrel~
 &+y A pair of leggings composed of cured squirrel hides, carefully stitched
@@ -98,7 +98,7 @@ bone shard~
 ~
 5 10 3 0 7 0 8320 8193 0 0 0
 2 2 2 11 1 0 0 0
-5 100 100
+5 100 100 100
 E
 bone shard~
 &+W A large piece of leg bone, has been sharpened to a fine point. Making
@@ -115,7 +115,7 @@ staff half-elf~
 ~
 5 22 3 0 7 0 73856 8193 64 0 0
 6 2 2 6 0 0 0 0
-2 1212 100
+2 1212 100 100
 E
 staff half-elf~
 &+Y A staff composed of a hard dark wood, with &+Wsilver&n &+Ymagically
@@ -134,7 +134,7 @@ spring water~
 ~
 17 7 3 0 7 0 0 0 0 0 0
 20 20 17 0 0 0 0 0
-3 2000 100
+3 2000 100 100
 E
 spring water~
 &+c A small glass bottle containing spring water.
@@ -146,7 +146,7 @@ platemail silver gleaming suit~
 ~
 9 22 3 0 13 0 33792 9 64 87650331 0
 20 0 0 4 0 0 0 0
-15 1212 100
+15 1212 100 100
 E
 armor leather~
 &+L A suit mostly made from leather, the breastplate has been composed of
@@ -165,7 +165,7 @@ wine mulberry~
 ~
 17 7 3 0 7 0 0 16385 0 0 0
 4 4 2 0 0 0 0 0
-1 50 100
+1 50 100 100
 E
 wine mulberry~
 &+y A glass of &+rred wine&n &+yfilled to the rim.
@@ -177,7 +177,7 @@ ale dark~
 ~
 17 4 3 0 7 0 0 16385 0 0 0
 4 4 4 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 ale dark~
 &+y A wooden mug filled to the top with a dark ale.
@@ -189,7 +189,7 @@ potion cyan~
 ~
 10 8 3 0 10 0 0 1 0 0 0
 30 1 65 141 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 potion cyan~
 &+C A small crystal vial, it contains a liquid almost the same color.
@@ -201,7 +201,7 @@ fountain white marble~
 ~
 17 38 3 0 11 0 1 0 0 0 0
 100 -1 0 0 0 0 0 0
-1000 1212 100
+1000 1212 100 100
 E
 fountain~
 &+W A large fountain rests here, made of pure marble. The carvings that line
@@ -217,7 +217,7 @@ sword bastard~
 ~
 5 22 3 0 7 0 1024 8193 66 87650331 0
 9 2 4 3 0 0 0 0
-7 1212 100
+7 1212 100 100
 E
 sword bastard~
 &+W A sword composed of pure silver, it has a leather hilt with silver cross
@@ -236,7 +236,7 @@ steel chest~
 ~
 15 15 3 0 7 0 36864 0 64 0 0
 500 15 0 500 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 steel chest~
 &+L A large steel chest rests in the corner, bolted to the wall. Large
@@ -251,7 +251,7 @@ coins~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 9999 0 0 0 0 0 0 0
-1 9999 100
+1 9999 100 100
 E
 coins~
 &+W A pile of platinum coins.
@@ -263,7 +263,7 @@ scalp ogre~
 ~
 8 2 3 0 7 0 8433672 1 0 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 scalp ogre~
 &+L The &+Rbloody&n &+Lscalp of an ogre.
@@ -275,7 +275,7 @@ gloves thin~
 ~
 9 12 3 0 7 0 1024 129 0 4198148 0
 7 0 0 4 0 0 0 0
-1 2121 100
+1 2121 100 100
 E
 gloves thin~
 &+Y A pair of thin leather gloves, cured long ago from some animal. They
@@ -292,7 +292,7 @@ cane~
 ~
 5 6 3 0 7 0 9344 8193 0 12618244 0
 10 2 4 6 0 0 0 0
-5 1500 100
+5 1500 100 100
 E
 cane~
 &+y A rather large walking stick, its composed of some sort of dried wood.
@@ -310,7 +310,7 @@ scarf~
 ~
 9 3 3 0 7 0 304128 5 66 33685920 0
 10 0 0 3 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 scarf~
 &+W A scarf tightly knit from yarn, looks to be rather warm. The seams are
@@ -327,7 +327,7 @@ twisted staff~
 ~
 4 15 3 0 7 0 1057 16385 0 37882528 0
 40 1 1 23 0 0 0 0
-5 212 100
+5 212 100 100
 E
 twisted staff~
 &+L A large staff composed of 2 steel bars seemingly intertwined. Its been
@@ -341,7 +341,7 @@ platemail plate~
 ~
 9 15 3 0 7 0 1024 9 64 4197892 0
 10 0 0 3 0 0 0 0
-5 1212 100
+5 1212 100 100
 E
 platemail plate~
 &+L Dented and scratched from years of use, it still looks quite durable.
@@ -357,7 +357,7 @@ key rusty~
 ~
 18 15 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key rusty~
 &+y A key that has not seen much action recently, it rusts away.
@@ -369,7 +369,7 @@ An unwanted old sword sits on the ground here.~
 ~
 5 15 3 0 7 0 9216 8193 64 87638043 0
 5 1 8 3 0 0 0 0
-1 10 100
+1 10 100 100
 A
 1 2
 A
@@ -381,7 +381,7 @@ An unwanted broom sits here.~
 ~
 13 15 3 0 7 0 40960 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #82226
 fountain white marble~
 &+Wa white marble fountain&N~
@@ -389,7 +389,7 @@ fountain white marble~
 ~
 17 38 3 0 11 0 1 0 0 0 0
 100 -1 0 0 0 0 0 0
-1000 1212 100
+1000 1212 100 100
 #82227
 glass orcish brew~
 &+ya glass of &+bOrcish brew&N~
@@ -397,7 +397,7 @@ glass orcish brew~
 ~
 17 7 3 0 7 0 0 16385 0 0 0
 4 4 2 0 0 0 0 0
-1 50 100
+1 50 100 100
 #82228
 scarf green~
 &+ga green scarf&N~
@@ -405,7 +405,7 @@ scarf green~
 ~
 9 3 3 0 7 0 304128 5 66 33685920 0
 5 0 0 3 0 0 0 0
-1 1212 100
+1 1212 100 100
 A
 4 2
 A
@@ -417,7 +417,7 @@ An cap of the fool sits here.~
 ~
 9 15 3 0 7 0 1 17 0 0 0
 5 0 0 3 0 0 0 0
-1 21 100
+1 21 100 100
 A
 2 3
 A
@@ -429,7 +429,7 @@ An unwanted diaper sits on the ground here.~
 ~
 9 3 3 0 7 0 1 2049 64 0 0
 6 0 0 4 0 0 0 0
-2 10 100
+2 10 100 100
 A
 3 3
 A

@@ -5,7 +5,7 @@ altar~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 44290 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
 This majestic altar is suitable only for a king's worship.
@@ -17,7 +17,7 @@ a beautiful &+Ygolden&N key~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 key gold~
 This beautiful key emits a golden glow. Looking closely, flames appear to
@@ -32,7 +32,7 @@ key wooden~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key wooden~
 A sturdy key made of strong wood.
@@ -44,7 +44,7 @@ key flaming~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key flaming~
 This key is detailed with the carvings of flames.
@@ -56,7 +56,7 @@ A few coins lie here.~
 ~
 8 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 coins~
 This is just a small pile of coins.
@@ -70,7 +70,7 @@ emblem knowledge~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem knowledge~
 This small emblem represents the waves of the mind.
@@ -86,7 +86,7 @@ emblem strength~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem strength~
 This emblem is in the design of a muscle.
@@ -100,7 +100,7 @@ emblem charming~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem charming~
 This small emblem represents charisma.
@@ -114,7 +114,7 @@ emblem luck~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem luck~
 This emblem is in the shape of a 4 leaf clover
@@ -128,7 +128,7 @@ emblem agility~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem agility~
 A small emblem depicting agility
@@ -142,7 +142,7 @@ emblem meditation~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem meditation~
 This small emblem represents the importance of intelligence.
@@ -158,7 +158,7 @@ emblem prayer~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem prayer~
 This emblem represents wisdom and common sense.
@@ -172,7 +172,7 @@ emblem dexterity~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem dexterity~
 This emblem represents the deftness of hand.
@@ -186,7 +186,7 @@ emblem empowering~
 ~
 9 33 3 0 11 0 0 2097153 0 0 0
 7 0 0 1 0 0 0 0
-1 50000 100 536870912 64 0 0
+1 50000 100 100 536870912 64 0 0
 E
 emblem empowering~
 This beautiful emblem emits a soft glow.
@@ -202,7 +202,7 @@ emblem life~
 ~
 9 34 3 0 7 0 0 2097153 0 0 0
 5 0 0 1 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 emblem life~
 The emblem of life represents constitution.
@@ -218,7 +218,7 @@ shard fire~
 ~
 5 7 3 0 7 0 4097 24577 0 0 0
 2 3 4 11 0 0 0 0
-2 50000 100 536870912 0 0 0
+2 50000 100 100 536870912 0 0 0
 E
 shard fire~
 This long shard seems to be made entirely of flames.
@@ -234,7 +234,7 @@ shard wind~
 ~
 5 7 3 0 7 0 12289 24577 0 0 0
 2 2 6 11 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 shard wind~
 This light shard seems to float in the air, almost as if weighing nothing.
@@ -250,7 +250,7 @@ shard stone~
 ~
 5 11 3 0 7 0 4097 24577 0 0 0
 2 2 8 11 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 shard stone~
 This hard shard has been fashioned out of stone.
@@ -266,7 +266,7 @@ shard water~
 ~
 5 1 3 0 13 0 4097 24577 0 0 0
 2 3 3 11 0 0 0 0
-2 50000 100 2048 0 0 0
+2 50000 100 100 2048 0 0 0
 E
 shard water~
 This shard appears to be made from hardened water.
@@ -282,7 +282,7 @@ royal dagger gold~
 ~
 5 24 3 0 11 0 16778497 8193 0 8515584 0
 2 2 4 11 0 0 0 0
-2 75000 100
+2 75000 100 100
 E
 royal dagger gold~
 This beautiful dagger was crafted out of the finest gold, and honed to a very
@@ -302,7 +302,7 @@ royal dagger silver~
 ~
 5 22 3 0 11 0 16778497 8193 1 8515584 0
 2 3 3 11 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 royal dagger silver~
 This elegant dagger was made of the finest silver, to be wielded only by those
@@ -321,7 +321,7 @@ armor elements~
 ~
 9 35 3 0 12 0 1 9 0 0 0
 30 0 0 3 0 0 0 0
-8 70000 100 536870912 12480 0 0
+8 70000 100 100 536870912 12480 0 0
 E
 armor elements~
 This beautiful suit of armor was designed with the needs of an elemental
@@ -339,7 +339,7 @@ delicate glass key~
 ~
 8 7 3 0 12 0 8392737 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 delicate glass key~
 This beautiful key was carefully crafted by a skilled glassblower.
@@ -351,7 +351,7 @@ clover leaf necklace~
 ~
 9 30 3 0 10 0 0 8388613 0 0 0
 1 0 0 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 clover leaf necklace~
 &+gA four-leaf clover&N, attached to a small chain.
@@ -367,7 +367,7 @@ mirrored bracelet~
 ~
 9 7 3 0 7 0 1 4097 0 0 0
 5 0 0 3 0 0 0 0
-1 40000 100
+1 40000 100 100
 E
 mirrored bracelet~
 The reflective surface of this stunning mirrored bracelet bounces light
@@ -384,7 +384,7 @@ mirrored leggings~
 ~
 9 7 3 0 12 0 262144 33 0 4248584219 0
 11 0 0 2 0 0 0 0
-2 90000 100
+2 90000 100 100
 E
 mirrored leggings~
 This remarkable pair of leggings have such a smooth finish, it is possible to
@@ -402,7 +402,7 @@ earring power~
 ~
 9 33 3 0 10 0 32 524289 0 0 0
 7 0 0 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 earring power~
 &+bA stunning sapphire earring.
@@ -418,7 +418,7 @@ earring courage~
 ~
 9 31 3 0 10 0 0 524289 0 0 0
 7 0 0 1 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 earring courage~
 A small heart attached to a hook.
@@ -434,7 +434,7 @@ earring deftness~
 ~
 9 52 3 0 12 0 0 524289 0 0 0
 7 0 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring deftness~
 This small earring is in the shape of an open-palmed hand hanging from a hook.
@@ -450,7 +450,7 @@ earring meditation~
 ~
 9 18 3 0 11 0 1 524289 0 0 0
 7 0 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring meditation~
 A small glowing earring.
@@ -466,7 +466,7 @@ earring prayer~
 ~
 9 23 3 0 11 0 1 524289 0 0 0
 7 0 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring prayer~
 Two hands clasp together to form this remarkable earring.
@@ -482,7 +482,7 @@ earring nimbleness~
 ~
 9 38 3 0 11 0 1 524289 0 0 0
 7 0 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring nimbleness~
 This small earring is crafted of very fine marble.
@@ -498,7 +498,7 @@ earring luck~
 ~
 9 32 3 0 7 0 1 524289 0 0 0
 6 0 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring luck~
 &+gAn earring in the shape of a four-leaf clover
@@ -514,7 +514,7 @@ earring charisma~
 ~
 9 19 3 0 11 0 1 524289 0 0 0
 6 0 0 1 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 earring charisma~
 This beautiful earring has a reflective surface, allowing one to see oneself
@@ -531,7 +531,7 @@ earring life~
 ~
 9 24 3 0 12 0 1 524289 0 0 0
 6 0 0 1 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 earring life~
 This stunning golden earring glows radiantly.
@@ -547,7 +547,7 @@ earring krahns~
 ~
 9 31 3 0 13 0 1 524289 0 0 0
 8 0 0 1 0 0 0 0
-1 75000 100
+1 75000 100 100
 E
 earring krahns~
 This astonishing earring is of remarkable quality. It was magically crafted
@@ -564,7 +564,7 @@ spiked tower shield~
 ~
 37 36 4 0 11 0 1024 513 0 87572483 0
 1 4 4 168 4 1 0 0
-17 30000 100
+17 30000 100 100
 E
 spiked tower shield~
 This large tower shield is finely made from the scales of a dragon.
@@ -580,7 +580,7 @@ scythe long~
 ~
 5 16 3 0 10 0 1024 8193 0 87572507 0
 17 2 6 3 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 scythe~
 A long steel scythe, good for chopping peoples heads off.
@@ -596,7 +596,7 @@ royal sword silver~
 ~
 5 22 3 0 12 0 16782592 8193 1 87572507 0
 5 2 8 3 0 0 0 0
-3 50000 100
+3 50000 100 100
 E
 royal sword silver~
 &+bThis long, silver sword was made for royalty.
@@ -612,7 +612,7 @@ chunk~
 ~
 5 11 4 10 4 0 4195328 8193 0 87572507 0
 4 6 5 6 0 0 0 0
-18 1000 100
+18 1000 100 100
 E
 chunk wall~
 This huge chunk of a stone wall looks like it would really hurt to get hit
@@ -629,7 +629,7 @@ royal copper dagger~
 ~
 5 21 3 0 11 0 16782593 8193 0 96071707 0
 2 2 3 11 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 royal copper dagger~
 A very sharp dagger, forged of copper.
@@ -645,7 +645,7 @@ jagged stone shard~
 ~
 5 11 3 0 10 0 16777216 8396801 0 0 0
 2 2 4 11 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 jagged stone shard~
 This sharp shard was carved from solid stone, with jagged edges capable of
@@ -662,7 +662,7 @@ stone~
 ~
 5 11 3 0 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 stone~
 &+LA piece of stone with a sharp edge
@@ -678,7 +678,7 @@ glowing stone~
 ~
 5 11 3 0 11 0 16778497 8193 64 8515584 0
 2 3 3 11 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 glowing stone~
 This plain sharp piece of stone emits a very bright glow.
@@ -694,7 +694,7 @@ standard sword~
 ~
 5 15 3 0 9 0 0 8193 0 0 0
 5 3 3 3 0 0 0 0
-2 2000 100
+2 2000 100 100
 E
 standard sword~
 This sword was standard issue equipment for most of the guards of the temple.
@@ -710,7 +710,7 @@ magical steel sword~
 ~
 5 15 3 0 12 0 16777233 8193 64 0 0
 5 4 4 3 0 0 0 0
-2 30000 100
+2 30000 100 100
 E
 magical steel sword~
 This standard issue sword has been magically enhanced!
@@ -726,7 +726,7 @@ royal scimitar~
 ~
 5 15 3 0 9 0 1024 8193 0 87572507 0
 5 3 3 3 0 0 0 0
-3 2000 100
+3 2000 100 100
 E
 royal scimitar~
 This scimitar was issued to all the Royal Guards of the temple.
@@ -742,7 +742,7 @@ magical scimitar~
 ~
 5 15 3 0 11 0 16778497 8396801 64 87572507 0
 5 4 3 3 0 0 0 0
-3 30000 100
+3 30000 100 100
 E
 magical scimitar~
 This once plain scimitar now has a magical glow to it.
@@ -758,7 +758,7 @@ claymore~
 ~
 5 15 3 0 7 0 4195328 4202497 0 85458969 0
 13 6 3 3 0 0 0 0
-14 5000 100
+14 5000 100 100
 E
 claymore~
 This sharp claymore is so large, it must be wielded with two hands.
@@ -774,7 +774,7 @@ magical claymore~
 ~
 5 15 3 0 11 0 20972801 4202497 64 85458969 0
 13 6 4 3 0 0 0 0
-16 30000 100
+16 30000 100 100
 E
 magical claymore~
 This large 2-handed claymore glows softly.
@@ -790,7 +790,7 @@ sleeves arkannon arkan'non~
 ~
 9 43 3 0 12 0 4128 16641 64 0 0
 10 0 0 2 0 0 0 0
-2 40000 100
+2 40000 100 100
 E
 sleeves arkannon arkan'non~
 These magnificent sleeves glow magically upon the person that wears them.
@@ -807,7 +807,7 @@ leggings arkannon arkan'non~
 ~
 9 43 3 0 12 0 4128 33 64 0 0
 10 0 0 2 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 leggings arkannon arkan'non~
 These finely woven leggings have a magical aura about them that make them not
@@ -824,7 +824,7 @@ glistening bracelet~
 ~
 9 23 3 0 10 0 0 4097 0 0 0
 5 0 0 2 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 glistening bracelet~
 This shiny electrum bracelet glistens in the light.
@@ -840,7 +840,7 @@ magical glistening bracelet~
 ~
 9 23 3 0 12 0 0 4097 64 0 0
 10 0 0 2 0 0 0 0
-2 40000 100
+2 40000 100 100
 E
 magical glistening bracelet~
 This shiny bracelet has been magically altered to better aid your cause.
@@ -856,7 +856,7 @@ snowflake~
 ~
 9 8 3 0 7 0 4096 16385 0 0 0
 1 0 0 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 snowflake~
 &+WA small snowflake, which never seems to melt.
@@ -872,7 +872,7 @@ solidified drop water~
 ~
 9 40 3 0 7 0 4096 16385 64 0 0
 1 0 0 2 0 0 0 0
-1 10000 100 2048 128 0 0
+1 10000 100 100 2048 128 0 0
 E
 solidified drop water~
 This droplet of water has turned solid on the outside, yet the water inside
@@ -889,7 +889,7 @@ ray light~
 ~
 9 24 3 0 7 0 4097 16385 0 0 0
 1 0 0 1 0 0 0 0
-1 10000 100 73728 0 0 0
+1 10000 100 100 73728 0 0 0
 E
 ray light~
 This beam of light is solid, and can light up just about any room.
@@ -905,7 +905,7 @@ flame burning~
 ~
 9 31 3 0 7 0 4097 16385 0 0 0
 1 0 0 1 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 flame burning~
 This small flame seems to burn forever, without ever dying down. Where it gets
@@ -922,7 +922,7 @@ weathered shard~
 ~
 9 7 3 0 12 0 0 16385 64 0 0
 4 0 0 2 0 0 0 0
-2 80000 100 536944640 192 0 0
+2 80000 100 100 536944640 192 0 0
 E
 weathered shard~
 This amazing shard is of the clearest glass, and inside the glass can be seen
@@ -939,7 +939,7 @@ royal sword gold~
 ~
 5 24 3 0 11 0 16778497 8193 0 87572507 0
 5 3 5 3 0 0 0 0
-12 10000 100
+12 10000 100 100
 E
 royal sword gold~
 This golden sword was forged for the King and no other.
@@ -957,7 +957,7 @@ royal sword platinum~
 ~
 5 25 3 0 11 0 16782592 4202497 0 87572507 0
 5 4 4 3 0 0 0 0
-13 40000 100
+13 40000 100 100
 E
 royal sword platinum~
 This long shining sword was forged from platinum, for the King himself!
@@ -975,7 +975,7 @@ royal dagger platinum~
 ~
 5 25 3 0 10 0 16781568 8396801 0 0 0
 2 4 2 11 0 0 0 0
-2 40000 100
+2 40000 100 100
 E
 royal dagger platinum~
 This shining platinum dagger has a blade sharp enough to easily slit your
@@ -994,7 +994,7 @@ A small pile of coins.~
 ~
 8 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 500000 100
+1 500000 100 100
 E
 coins pile~
 A small, but expensive pile of coins.
@@ -1008,7 +1008,7 @@ cloak kings~
 ~
 9 33 3 0 13 0 4096 1025 0 0 0
 15 0 0 2 0 0 0 0
-2 65000 100 32 0 0 0
+2 65000 100 100 32 0 0 0
 E
 cloak kings~
 This elegant cloak is studded with many sapphires, making it shimmer and
@@ -1028,7 +1028,7 @@ magical orb insanity~
 ~
 3 8 3 0 13 0 33558529 16385 64 0 0
 51 3 3 255 0 0 0 0
-2 100000 100 268435456 0 0 0
+2 100000 100 100 268435456 0 0 0
 E
 magical orb insanity~
 This magical orb hums with insane power. In the right hands, anyone with
@@ -1049,7 +1049,7 @@ altar~
 ~
 15 38 3 0 14 0 1024 0 0 0 0
 500 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
 This large marble altar stands about 6 feet high, almost touching the ceiling
@@ -1062,7 +1062,7 @@ magical royal dagger~
 ~
 5 18 3 0 12 0 16777472 8396801 64 0 0
 2 3 3 11 0 0 0 0
-2 50000 100 32 0 64 0
+2 50000 100 100 32 0 64 0
 E
 magical royal dagger~
 This brilliant mithril dagger glows with a magical light
@@ -1078,7 +1078,7 @@ magical royal sword~
 ~
 5 18 3 0 12 0 16778496 4202497 64 87572507 0
 5 4 4 3 0 0 0 0
-3 50000 100 0 0 64 0
+3 50000 100 100 0 0 64 0
 E
 magical royal sword~
 This large mithril blade is a great tool for chopping off the heads of your
@@ -1095,7 +1095,7 @@ cloak madman~
 ~
 9 33 3 0 13 0 0 1025 64 0 0
 20 0 0 2 0 0 0 0
-2 100000 100 134217736 0 0 0
+2 100000 100 100 134217736 0 0 0
 E
 cloak madman~
 This sapphire-studded cloak glows with insane power after being merged with
@@ -1112,7 +1112,7 @@ emblem madman badge~
 ~
 9 43 3 0 13 0 0 2097153 64 0 0
 5 0 0 1 0 0 0 0
-1 40000 100 8 0 0 0
+1 40000 100 100 8 0 0 0
 E
 emblem madman~
 Only the truely insane would wear this badge.
@@ -1128,7 +1128,7 @@ armor madman~
 ~
 9 35 3 0 15 0 0 9 64 0 0
 30 0 0 3 0 0 0 0
-13 150000 100 1048576 0 0 0
+13 150000 100 100 1048576 0 0 0
 E
 armor madman~
 This glow from this magical dragonscale armor is enough to drive a man mad.
@@ -1144,7 +1144,7 @@ earring madman~
 ~
 9 31 3 0 13 0 0 524289 64 0 0
 10 0 0 2 0 0 0 0
-1 40000 100
+1 40000 100 100
 E
 earring madman~
 This sparkling ruby earring emits a maddening glow.
@@ -1160,7 +1160,7 @@ spiked shield madman~
 ~
 37 19 4 0 13 0 0 513 0 4165209668 0
 1 3 5 200 5 1 0 0
-15 50000 100 536870976 8384 0 0
+15 50000 100 100 536870976 8384 0 0
 E
 spiked shield madman~
 This large tower shield has sharp spikes jutting from its adamantium core.
@@ -1176,7 +1176,7 @@ sleeves madman~
 ~
 9 43 3 0 13 0 0 257 64 0 0
 15 0 0 2 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 sleeves madman~
 These amazing sleeves woven from magical hemp have the power to make you go
@@ -1193,7 +1193,7 @@ leggings madman~
 ~
 9 43 3 0 14 0 0 33 64 0 0
 15 0 0 3 0 0 0 0
-2 50000 100 0 0 128 0
+2 50000 100 100 0 0 128 0
 E
 leggings madman~
 Woven very finely from the best magically-enhanced hemp, these leggings
@@ -1210,7 +1210,7 @@ glistening bracelet madman~
 ~
 9 7 3 0 13 0 9216 4097 2 100794808 0
 10 0 0 2 0 0 0 0
-1 50000 100 4 0 0 0
+1 50000 100 100 4 0 0 0
 E
 glistening bracelet madman~
 This shiny magical bracelet emits a maddening hum.
@@ -1226,7 +1226,7 @@ weathered shard insanity~
 ~
 11 7 3 0 14 0 1024 16385 64 46305188 0
 0 0 0 2 0 0 0 0
-2 100000 100 536946688 12480 0 0
+2 100000 100 100 536946688 12480 0 0
 E
 weathered shard insanity~
 This intense shard magically contains all the elements within its crystal clear
@@ -1243,7 +1243,7 @@ madman stabber~
 ~
 5 18 3 0 13 0 16777488 8193 64 4248567899 0
 2 2 6 11 0 25 50 30
-2 60000 100 32 0 0 0
+2 60000 100 100 32 0 0 0
 E
 madman stabber~
 This insanely sharp dagger can gut and disembowl anything with 1 swift motion.
@@ -1271,7 +1271,7 @@ madman slasher~
 ~
 5 18 3 0 13 0 16777472 8193 66 0 0
 5 4 3 3 0 93 57 30
-3 80000 100 0 16 0 0
+3 80000 100 100 0 16 0 0
 E
 madman slasher~
 The long blade on this sword glows magically, and stays forever shining, no
@@ -1300,7 +1300,7 @@ madman slicer mangler~
 ~
 5 19 4 0 13 0 20972816 4202497 64 24 0
 13 3 7 3 0 0 0 0
-4 100000 100
+4 100000 100 100
 E
 madman slicer mangler~
 This immense two-handed sword is extremely fearsome looking. With sharp, jagged
@@ -1317,7 +1317,7 @@ lizard eye~
 ~
 9 7 3 0 9 0 4096 131073 0 4198895524 0
 5 0 0 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 lizard eye~
 The red eye of a dead lizard.
@@ -1333,7 +1333,7 @@ mask burning flesh~
 ~
 9 2 3 0 9 0 4096 262145 2 0 0
 5 0 0 2 0 0 0 0
-2 10000 100 536870912 0 0 0
+2 10000 100 100 536870912 0 0 0
 E
 mask burning flesh~
 The burning flesh of a humans face makes the room stink.
@@ -1349,7 +1349,7 @@ snowshoes~
 ~
 9 43 3 0 9 0 4096 65 0 0 0
 5 0 0 3 0 0 0 0
-2 10000 100 0 64 0 0
+2 10000 100 100 0 64 0 0
 E
 snowshoes~
 This white pair of snowshoes helps you move more freely in the winter.
@@ -1365,7 +1365,7 @@ sharkskin belt~
 ~
 9 12 3 0 9 0 4096 2049 0 0 0
 5 0 0 3 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 sharkskin belt~
 This belt was tanned from the hide of a shark.
@@ -1381,7 +1381,7 @@ rack~
 ~
 15 6 3 0 7 0 1026 0 0 0 0
 200 13 44189 200 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rack~
 This rack was used to hold the guards' weapons.
@@ -1393,7 +1393,7 @@ yellow vial~
 ~
 10 15 3 0 7 0 4096 1 0 0 0
 40 28 28 66 0 0 0 0
-1 120000 100
+1 120000 100 100
 E
 yellow vial~
 A vial filled with a yellow liquid
@@ -1405,7 +1405,7 @@ cot~
 ~
 15 15 3 0 7 0 1026 0 0 0 0
 200 0 0 200 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cot~
 These cots are where the guards would sleep.
@@ -1417,7 +1417,7 @@ tome magical~
 ~
 33 28 3 0 10 0 4096 16385 64 0 0
 0 0 200 0 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 tome magical~
 This tome glows with a magical aura, and has the ability to store numerous
@@ -1434,7 +1434,7 @@ mace mentality~
 ~
 5 19 3 0 13 0 0 8193 0 0 0
 6 3 4 6 0 0 0 0
-14 50000 100 0 192 0 0
+14 50000 100 100 0 192 0 0
 E
 mace mentality~
 This insane mace hums with a power unmatched by any. The wielder of such a
@@ -1452,7 +1452,7 @@ key gems gold~
 ~
 18 24 3 0 9 0 8400896 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 key gems gold~
      &+YThis valuable looking key has been made with great skill,
@@ -1465,7 +1465,7 @@ lights array~
 ~
 25 1 3 0 14 0 2 0 64 0 0
 43704 7 -1 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 lights array~
      &+MThe almost blinding pattern of lights is so dense, it seems to
@@ -1479,7 +1479,7 @@ ring madman~
 ~
 9 52 3 0 15 0 0 3 64 0 0
 10 0 0 3 0 0 0 0
-1 90000 100 0 32768 0 0
+1 90000 100 100 0 32768 0 0
 E
 ring madman~
 &+BThis mighty ring fills you with sensations of power from just
@@ -1497,7 +1497,7 @@ necklace sapphire insanity~
 ~
 9 33 3 0 15 0 3284993 5 66 0 0
 12 0 0 3 0 0 0 0
-5 90000 100 4 4252 0 0
+5 90000 100 100 4 4252 0 0
 E
 necklace sapphire insanity~
 &+BThis beautiful sapphire necklace emanates raw power.  You feel
@@ -1514,7 +1514,7 @@ mage's journal~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-99999 1 100
+99999 1 100 100
 #44194
 boots madman~
 &+rthe &+Rboots &+rof a &+RMaDMaN&N~
@@ -1522,7 +1522,7 @@ boots madman~
 ~
 9 1 2 0 12 0 4097 65 0 0 0
 15 0 0 2 0 0 0 0
-1 822326 100 0 2048 0 0
+1 822326 100 100 0 2048 0 0
 E
 boots madman~
 These boots are quite odd, but glow with an enticing aura.
@@ -1536,7 +1536,7 @@ frayed ends sanity belt strands~
 ~
 9 1 2 0 13 0 4096 2049 64 0 0
 10 0 0 2 0 0 0 0
-0 26238 100 0 16 0 0
+0 26238 100 100 0 16 0 0
 E
 frayed ends sanity belt~
 Subtle, slight, insubstantial yet fully visible, these strands seem
@@ -1553,7 +1553,7 @@ helm mystic mysticism~
 ~
 9 33 2 0 14 0 4097 17 0 0 0
 15 0 0 0 0 0 0 0
-1 863782 100
+1 863782 100 100
 E
 helm mystic mysticism~
 This helm hovers lightly above the ground, the mystic powers contained

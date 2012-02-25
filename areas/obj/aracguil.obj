@@ -5,7 +5,7 @@ tiny brass key~
 ~
 18 17 1 1 7 0 8392704 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny brass key~
 This small key is made of brass and has many teeth sticking out in all
@@ -18,7 +18,7 @@ tiny sable key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny sable key~
 This small key is made of sable stone and has many teeth sticking out in all
@@ -31,7 +31,7 @@ tiny ivory key~
 ~
 18 34 1 1 7 0 8388608 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny ivory key~
 This small key is made of ivory and has many teeth sticking out in all
@@ -44,7 +44,7 @@ tiny mirrored key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny mirrored key~
 This small key is made of silver glass and has many teeth sticking out in all
@@ -57,7 +57,7 @@ tiny crimson key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny crimson key~
 This small key is made of crimson metal and has many teeth sticking out in all
@@ -70,7 +70,7 @@ small brass key~
 ~
 18 17 1 1 7 0 8388608 16385 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny brass key~
 This small key is made of brass and has many teeth sticking out in all
@@ -83,7 +83,7 @@ brass plumed helm~
 ~
 9 17 3 10 7 0 2097152 17 64 0 0
 10 4 1 4 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 brass plumed helm~
 This helm is made of a single piece of brass shaped into a perfect bowl for
@@ -101,7 +101,7 @@ serrated longsword jagged~
 ~
 5 16 3 10 7 0 0 8193 0 4165209604 0
 5 2 6 3 0 0 0 0
-8 14000 100
+8 14000 100 100
 E
 serrated longsword~
 This longsword has sharp jagged edges perfect for ripping flesh and rending
@@ -118,7 +118,7 @@ armor racks~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 armor racks~
 These armor racks are big and heavy, made of treated mushroom stalks. They
@@ -131,7 +131,7 @@ weapon racks~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 weapon racks~
 These weapon racks are big and heavy, made of treated mushroom stalks. They
@@ -144,7 +144,7 @@ brass shield~
 ~
 37 17 3 15 7 0 0 513 0 4173708804 0
 2 1 4 136 4 0 0 0
-8 18000 100
+8 18000 100 100
 E
 brass shield~
 This smooth brass shield is polished to a brilliant shine. It has spidersilk
@@ -161,7 +161,7 @@ brass boots~
 ~
 9 17 3 8 7 0 0 65 0 0 0
 12 6 1 3 0 0 0 0
-4 12000 100
+4 12000 100 100
 E
 brass boots~
 These boots are made of polished smooth brass. They have a rotheskin lining.
@@ -177,7 +177,7 @@ mallet woden tenderizer meat~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 4 2 3 7 0 0 0 0
-5 13000 100
+5 13000 100 100
 E
 mallet woden tenderizer meat~
 This hammer has a face of little pyramids and a long heavy wooden handle.
@@ -193,7 +193,7 @@ fluted dagger brass~
 ~
 5 17 2 3 7 0 128 8193 0 0 0
 2 2 5 11 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 fluted dagger brass~
 This dagger has two wicked fluted edges perfect for draining a victim's
@@ -210,7 +210,7 @@ shadow spider lolth pendant pestilent~
 ~
 9 1 3 2 13 0 139392 5 0 0 0
 8 2 1 2 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 shadow spider lolth pendant pestilent~
 This pendant was a gift from Lolth to the Arch-Cleric of House Zarbonesti on
@@ -229,7 +229,7 @@ arachdrathos cloak spider silk~
 ~
 9 3 3 8 11 0 2236416 1025 64 0 0
 6 9 1 2 0 0 0 0
-1 10000 100 32 0 0 0
+1 10000 100 100 32 0 0 0
 E
 arachdrathos cloak spider silk~
 This cloak is spun form the silk of the great black widow Arachdra herself.
@@ -246,7 +246,7 @@ sliver spine shadow~
 ~
 5 1 3 0 7 0 1056896 8193 0 0 0
 2 2 4 11 0 0 0 0
-0 12000 100
+0 12000 100 100
 E
 sliver spine shadow~
 This piece of shadow is razor sharp with a keen point. The entire shard is
@@ -264,7 +264,7 @@ the mystical &+Lacid&N curtain~
 ~
 14 1 4 50 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 70
+0 0 70 100
 E
 acid curtain~
 Shimmering drops of very potent acid trickle down the walls.
@@ -278,7 +278,7 @@ dagger jagged serrated~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 2 5 11 0 0 0 0
-2 3000 100
+2 3000 100 100
 E
 dagger jagged serrated~
 This fine brass dagger has viciously serrated edges and a fine rotheskin
@@ -295,7 +295,7 @@ brass chest mushroom~
 ~
 15 17 5 50 7 0 65536 0 0 0 0
 200 5 0 250 0 0 0 0
-0 0 50
+0 0 50 100
 T
 516 0 50 50
 #36720
@@ -305,7 +305,7 @@ shortsword sword adamantine~
 ~
 5 19 2 10 7 0 0 8193 0 0 0
 9 3 3 11 0 0 0 0
-3 10000 100
+3 10000 100 100
 A
 18 3
 A
@@ -317,7 +317,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36737 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36722
 switch massive mysterious~
 &+Ra massive switch&N~
@@ -325,7 +325,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36747 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36723
 switch massive mysterious~
 &+Ra massive switch&N~
@@ -333,7 +333,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36754 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36724
 switch massive mysterious~
 &+Ra massive switch&N~
@@ -341,7 +341,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36768 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36725
 switch massive mysterious~
 &+Ra massive switch&N~
@@ -349,7 +349,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36719 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36726
 bracelet glowing durithalite~
 &+ra durithalite bracelet&N~
@@ -357,7 +357,7 @@ bracelet glowing durithalite~
 ~
 9 31 3 3 7 0 163841 4097 64 0 0
 5 0 0 3 0 0 0 0
-1 40000 100 0 8192 0 0
+1 40000 100 100 0 8192 0 0
 E
 bracelet glowing durithalite~
 This bracelet glows softly as it pulsates in harmony with the rich
@@ -374,7 +374,7 @@ necklace resilience black shiny~
 ~
 9 36 3 2 7 0 0 5 64 0 0
 8 0 0 3 0 0 0 0
-1 60000 100
+1 60000 100 100
 E
 necklace resilience black shiny~
 This shiny black necklace seems to repel anything falling on it, be it
@@ -391,7 +391,7 @@ robe mages azure~
 ~
 9 3 3 8 7 0 9216 9 64 12619588 0
 20 0 0 3 0 0 0 0
-3 40000 100 0 16 0 0
+3 40000 100 100 0 16 0 0
 E
 robe mages azure~
 This robe was woven on the loom of Dzara and enchanted by the great seers of
@@ -408,7 +408,7 @@ key black metal~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 0 10 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36730
 longsword sword adamantine~
 &+La huge curved adamantine sword&N~
@@ -416,7 +416,7 @@ longsword sword adamantine~
 ~
 5 19 4 10 7 0 4195328 8193 0 87572507 0
 13 4 5 3 0 0 0 0
-20 10000 100
+20 10000 100 100
 A
 18 5
 A
@@ -428,7 +428,7 @@ shiny adamantine key~
 ~
 18 19 1 1 7 0 8388608 1 0 0 0
 0 10 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36732
 switch massive mysterious~
 &+Ya massive switch&N~
@@ -436,7 +436,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36770 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36733
 switch massive mysterious~
 &+Ya massive switch&N~
@@ -444,7 +444,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36771 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36734
 switch massive mysterious~
 &+Ya massive switch&N~
@@ -452,7 +452,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36772 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36735
 switch massive mysterious~
 &+Ya massive switch&N~
@@ -460,7 +460,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36773 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36736
 switch massive mysterious~
 &+Ya massive switch&N~
@@ -468,7 +468,7 @@ switch massive mysterious~
 ~
 29 16 0 50 7 0 1 0 64 0 0
 270 36774 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36737
 locker weapons adamantine~
 &+Lthe Zochra Weapons Locker&N~
@@ -476,7 +476,7 @@ locker weapons adamantine~
 ~
 15 19 3 0 7 0 65536 0 0 0 0
 200 5 0 100 0 0 0 0
-0 0 50
+0 0 50 100
 T
 516 0 99 50
 #36738
@@ -486,7 +486,7 @@ shiny adamantine key~
 ~
 18 19 1 1 7 0 8388608 1 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36739
 longsword sword adamantine~
 &+Lan adamantine longsword&N~
@@ -494,7 +494,7 @@ longsword sword adamantine~
 ~
 5 19 3 10 7 0 0 8193 0 0 0
 5 2 5 11 0 0 0 0
-7 10000 100
+7 10000 100 100
 A
 18 1
 A
@@ -506,7 +506,7 @@ lever~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 36730 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #36741
 helm crimson leadership~
 &+Rthe helm of leadership&N~
@@ -514,7 +514,7 @@ helm crimson leadership~
 ~
 9 19 3 10 14 0 0 17 64 0 0
 15 0 0 3 0 0 0 0
-3 50000 100 268435456 0 0 0
+3 50000 100 100 268435456 0 0 0
 E
 helm crimson leadership~
 This helm is made of a strange kind of adamantine mined only on the 43rd
@@ -532,7 +532,7 @@ barbed tol-kendar miniature~
 ~
 5 16 3 0 7 0 1024 8193 0 96071707 0
 9 3 3 11 0 0 0 0
-9 3000 100
+9 3000 100 100
 E
 barbed tol-kendar miniature~
 Copied from the Daemons of Tarterus's favorite weapon, this miniature version
@@ -553,7 +553,7 @@ shield disk energy~
 ~
 37 35 3 15 15 75 1048577 513 64 0 0
 2 5 5 161 5 0 0 0
-3 3000 100 0 128 0 0
+3 3000 100 100 0 128 0 0
 E
 shield disk energy~
 This shield is made of pure energy of the stars. It is about three feet in
@@ -570,7 +570,7 @@ sword longsword rod energy~
 ~
 5 23 3 4 7 0 1025 8193 64 87670811 0
 5 3 5 3 0 0 0 0
-8 30000 100 0 128 0 8192
+8 30000 100 100 0 128 0 8192
 E
 sword longsword rod energy~
 Forged in a cosmic maelstorm with energies from a nova, this sword is made
@@ -588,7 +588,7 @@ stalkwood key mushroom stalks~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 0 1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36746
 spider chain hook earring~
 &+La dangling &+rspider &+Learring&N~
@@ -596,7 +596,7 @@ spider chain hook earring~
 ~
 9 8 0 0 7 0 3145728 67633153 64 0 0
 5 0 0 1 0 0 0 0
-1 20000 100 73728 0 0 0
+1 20000 100 100 73728 0 0 0
 E
 spider chain hook~
 This earring is marvelously carved and very lifelike. Each ridge on the
@@ -613,7 +613,7 @@ gown spidersilk white~
 ~
 9 3 0 0 7 0 0 9 64 0 0
 15 3 1 3 0 0 0 0
-2 3000 100
+2 3000 100 100
 E
 gown spidersilk white~
 Spun from pure spider silk of the spawn of Arachdra, this beautiful gown is
@@ -631,7 +631,7 @@ hammer adamantine black~
 ~
 5 19 3 0 7 0 128 8193 64 4165209604 0
 4 2 8 6 0 0 0 0
-8 20000 100
+8 20000 100 100
 E
 hammer adamantine black~
 This hammer is made of adamantine and finely balanced, making it an
@@ -648,7 +648,7 @@ slippers silk white~
 ~
 9 3 3 6 7 0 0 65 0 4248567899 0
 5 6 1 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 slippers silk white~
 These white slippers are spun from the silk of the spawn of Arachdra.
@@ -664,7 +664,7 @@ stalkwood key~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 0 3 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36751
 meat cleaver stained~
 &+Ma stained meat cleaver&N~
@@ -672,7 +672,7 @@ meat cleaver stained~
 ~
 5 16 3 0 7 0 0 8193 64 4198895524 0
 9 3 2 3 0 0 0 0
-3 30000 75 0 8192 0 0
+3 30000 75 100 0 8192 0 0
 E
 meat cleaver stained~
 This meat cleaver is coated with persistent magenta blood that is hot to
@@ -689,7 +689,7 @@ ripping dagger adamantine~
 ~
 5 19 2 3 7 0 0 8193 0 0 0
 2 3 3 11 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 ripping dagger adamantine~
 This dagger has hooked teeth on its edges and a huge cutlass handle to allow
@@ -707,7 +707,7 @@ boots speed ochre~
 ~
 9 12 3 8 7 0 0 65 64 0 0
 10 6 1 3 0 0 0 0
-2 12000 100
+2 12000 100 100
 E
 boots speed ochre~
 These boots are made of an otherworld metal that is ochre in color and
@@ -724,7 +724,7 @@ sliver spine tentamort~
 ~
 5 10 3 0 7 0 16912768 8193 0 0 0
 9 3 3 11 0 0 0 0
-6 9332 100
+6 9332 100 100
 E
 sliver spine tentamort~
 This spine has thousands of little jagged edges perfect for ripping with.
@@ -740,7 +740,7 @@ sleeves bone white~
 ~
 9 10 3 8 7 0 0 257 64 0 0
 10 8 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 13 10
 A
@@ -752,7 +752,7 @@ pants bone white~
 ~
 9 10 3 8 7 0 0 33 64 0 0
 10 5 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 13 10
 A
@@ -764,7 +764,7 @@ robe bone white~
 ~
 9 3 3 8 7 0 0 9 64 0 0
 15 3 1 3 0 0 0 0
-2 5000 100
+2 5000 100 100
 A
 20 -4
 A
@@ -776,7 +776,7 @@ key bone white~
 ~
 18 10 1 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36759
 cloak spidersilk ancient~
 &+Wan ancient spidersilk cloak&N~
@@ -784,7 +784,7 @@ cloak spidersilk ancient~
 ~
 9 3 3 8 7 0 164864 1025 64 6327808 0
 10 9 1 3 0 0 0 0
-1 5000 100 73736 4096 0 0
+1 5000 100 100 73736 4096 0 0
 A
 33 4
 A
@@ -796,7 +796,7 @@ jewel globe~
 ~
 5 26 2 0 7 0 36865 8193 64 0 0
 10 4 4 6 0 0 0 0
-8 50000 100 32804 4096 0 0
+8 50000 100 100 32804 4096 0 0
 E
 jewel globe~
 This globe of pure darkness has been cut like a very precious gemstone. It
@@ -816,7 +816,7 @@ sliver spine tentamort~
 ~
 5 10 3 0 7 0 200832 8193 0 0 0
 2 2 5 11 0 0 0 0
-5 3000 100 32768 0 0 1048576
+5 3000 100 100 32768 0 0 1048576
 E
 sliver spine tentamort~
 This spine has thousands of little jagged edges perfect for ripping with.
@@ -832,7 +832,7 @@ sliver heart nothingess nothing~
 ~
 18 2 1 1 7 0 8392704 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #36764
 amulet negative shadow~
 &+Lthe amulet of the negative planes&N~
@@ -840,7 +840,7 @@ amulet negative shadow~
 ~
 9 44 3 2 13 0 32768 5 64 0 0
 15 2 0 3 0 0 0 0
-3 84732 100 0 16 0 0
+3 84732 100 100 0 16 0 0
 E
 amulet negative shadow~
 This amulet looks like a miniature black hole on a chain as no light can
@@ -857,7 +857,7 @@ might platemail~
 ~
 9 19 3 20 14 25 32769 9 64 4174364612 0
 35 3 1 5 0 0 0 0
-15 90000 100 536870912 0 0 0
+15 90000 100 100 536870912 0 0 0
 E
 might platemail~
 This massive set of platemail is forged of a special kind of admantine found
@@ -876,7 +876,7 @@ pool black obsidian~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 36730 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #36767
 eyeball eye shadow~
 &+Lthe&N &+Be&+Gy&+Leb&+Ra&+Gl&+Bl&N &+Lof a shadow dr&+Ra&+rgo&+Wn&N~
@@ -884,7 +884,7 @@ eyeball eye shadow~
 ~
 9 40 3 3 12 0 4096 540673 64 0 0
 8 0 0 3 0 0 0 0
-1 20000 100 4 0 0 0
+1 20000 100 100 4 0 0 0
 E
 eyeball shadow~
      &+BThis colorful eyeball has been scooped out of its previous

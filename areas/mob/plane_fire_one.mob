@@ -6,8 +6,8 @@ efreeti guard gate~
 This efreeti is dressed all in brass armor, with the royal
 symbol of the Sultan upon his breast plate.
 ~
-100796490 1 0 671088824 12481 0 0 -750 S
-E 0 1 -1
+100796490 1 0 0 671088824 12481 0 0 -750 S
+E 0 1 0 -1
 60 -10 -142 60d143+6300 7d6+35
 0.0.0.0 243000
 8 8 1
@@ -19,8 +19,8 @@ elite guard palace treasure~
 This mighty efreeti warrior keeps watch over the sultan's treasure room, keeping
 intruders out.  He is over forty feet tall and glows with flames of blue light.
 ~
-67139660 0 0 939598044 14556 0 0 0 S
-HO 0 1 5
+67139660 0 0 0 939598044 14556 0 0 0 S
+HO 0 1 0 5
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -32,8 +32,8 @@ cleric priest efreeti slave~
 This slave has been captured by the efreeti and during the course of its
 captivity has become quite insane and attacks any and all who come near it.
 ~
-1073743882 1 0 536871080 45249 0 0 800 S
-EF 0 32 -1
+1073743882 1 0 0 536871080 45249 0 0 800 S
+EF 0 32 0 -1
 59 -7 -138 59d132+6136 7d6+35
 0.0.0.0 238950
 8 8 1
@@ -45,8 +45,8 @@ efreeti guard palace~
 This efreeti guard is dressed in brass mail armor, with
 the royal symbol of the Sultan on emblazed on the breast plate.
 ~
-2126 1 0 671088824 12481 0 0 -750 S
-e 0 1 -1
+2126 1 0 0 671088824 12481 0 0 -750 S
+e 0 1 0 -1
 60 -7 -138 59d143+6195 7d6+35
 0.0.0.0 238950
 8 8 1
@@ -58,8 +58,8 @@ efreeti guard~
 &+yThis efreeti guard is dressed in brass mail armor, with
 &+ythe royal symbol of the Sultan emblazoned on his breast plate.&N
 ~
-33556556 1 0 402653244 2049 0 0 -1000 S
-e 0 1 6
+33556556 1 0 0 402653244 2049 0 0 -1000 S
+e 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -72,8 +72,8 @@ This huge efreeti guard is dressed in full brass plate mail armor
 with a royal red cloak over his shoulders.  He peers down at you
 with hate in his eyes.
 ~
-2190 1 0 536871080 0 0 0 -1000 S
-e 0 16384 -1
+2190 1 0 0 536871080 0 0 0 -1000 S
+e 0 16384 0 -1
 60 -7 -135 58d143+6090 7d6+35
 0.0.0.0 234900
 8 8 1
@@ -85,8 +85,8 @@ efreeti guard palace~
 This efreeti guard is dressed in brass mail armor, with
 the royal symbol of the Sultan on emblazed on the breast plate.
 ~
-100665374 1 0 536870968 12481 0 0 -750 S
-e 0 1 -1
+100665374 1 0 0 536870968 12481 0 0 -750 S
+e 0 1 0 -1
 60 -5 -121 55d131+4675 7d6+30
 0.0.0.0 222750
 8 8 1
@@ -99,8 +99,8 @@ The Sultan of all the efreeti Shadam Quilen is here sitting on his great
 throne of brass.  Shadam is well over fifty feet tall emulated in flames
 and does not seem to happy to see you here.
 ~
-1124206635 1 0 671613112 47296 0 512 -1000 S
-E 0 320 -1
+1124206635 1 0 0 671613112 47296 0 512 -1000 S
+E 0 320 0 -1
 60 -10 -152 25000d1+500 7d7+45
 6.6.9.22 1000000
 8 8 1
@@ -113,8 +113,8 @@ The Arch-Magi of all the efreeti is surrounded in green fire that seems
 to weave odd patterns around his form.  His eyes are aflame and his
 gaze strikes fear into the hearts of all who look upon him.
 ~
-1174538254 1 0 537919658 276673 0 0 -1000 S
-E 0 512 -1
+1174538254 1 0 0 537919658 276673 0 0 -1000 S
+E 0 512 0 -1
 60 -10 -142 60d96+6180 7d6+35
 0.0.0.0 243000
 8 8 1
@@ -127,8 +127,8 @@ The High Priest of all the efreeti glows with bright lights and flames
 of searing fire.  He is well over forty feet tall and looks to have the
 strength of a storm giant.
 ~
-1107298382 1 0 536871080 309441 0 0 -1000 S
-E 0 32 -1
+1107298382 1 0 0 536871080 309441 0 0 -1000 S
+E 0 32 0 -1
 61 -10 -142 60d132+6240 7d6+35
 0.0.0.0 243000
 8 8 1
@@ -141,8 +141,8 @@ These mighty efreeti warriors are the personal body guards of
 the sultan.  They are well over forty feet tall and glow with flames
 of blue white light.  They will defend the sultan to the death.
 ~
-100796426 1 0 671088824 47296 0 0 -1000 S
-e 0 1 -1
+100796426 1 0 0 671088824 47296 0 0 -1000 S
+e 0 1 0 -1
 60 -10 -142 60d143+6300 7d6+35
 0.0.0.0 243000
 8 8 1
@@ -154,8 +154,8 @@ cleric priest efreeti~
 This efreeti is devoted to the worship of his god and will surely smite
 anyone whom he considers an abomination to his glory....like a human.
 ~
-1073743882 1 0 536871080 45249 0 0 -800 S
-e 0 32 -1
+1073743882 1 0 0 536871080 45249 0 0 -800 S
+e 0 32 0 -1
 59 -7 -138 59d132+6136 7d6+35
 0.0.0.0 238950
 8 8 1
@@ -168,8 +168,8 @@ This efreeti magi is surrounded is scorching green and blue flames.
 He does not look at all happy to see you here, and points his finger
 at you and starts to chant.
 ~
-1174538254 1 0 536870922 276673 0 0 -800 S
-e 0 512 -1
+1174538254 1 0 0 536870922 276673 0 0 -800 S
+e 0 512 0 -1
 57 -7 -127 57d96+5871 7d6+35
 0.0.0.0 230850
 8 8 1

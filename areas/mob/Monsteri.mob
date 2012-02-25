@@ -11,8 +11,8 @@ massive undead ghoul golem~
 &+rred&+L.  He peers out into the darkness, just waiting for unwanted
 &+Lguests to arrive.&n
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 512 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -28,8 +28,8 @@ decaying flesh golem~
 &+Lanything other than battle in the immediate area.  Its hulking form requires
 &+Lone to think twice about doing anything drastic nearby.&n
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 32 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 32 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -48,8 +48,8 @@ putrid ape zombie golem~
 &+Lits own, unlike most other&n &+yun&+gd&+mea&+gd &+Lcreatures you have encountered.  The
 &+Lsheer &+Lh&+ro&+Rrr&+ro&+Lr of its appearance makes you cower.&n
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 512 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -65,8 +65,8 @@ furious lich golem~
 &+Lwafts from his devilish &+Ge&+Ly&+Ge &+Lsockets, suggesting possesion of extremely
 &+Lpowerful m&+ma&+bg&+mi&+Lc.  You hesitate at the thought of crossing his path.
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 512 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

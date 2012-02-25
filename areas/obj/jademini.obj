@@ -5,7 +5,7 @@ money bag coin purse~
 ~
 8 3 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 money bag coin purse~
 &+yThis purse seems to have been accidentally swallowed by one of the large
@@ -19,7 +19,7 @@ sprite jar~
 ~
 34 7 3 0 5 0 0 16385 0 0 0
 19 0 0 0 0 0 0 0
-0 8988 100
+0 8988 100 100
 E
 sprite jar~
 &+WThis is a little glass jar that has had a tiny &+ywood&+g sprite
@@ -35,7 +35,7 @@ plank~
 ~
 25 6 3 0 5 0 0 0 0 0 0
 77242 264 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plank~
 &+yThis long plank is used for bridging the gaps on ships, and sometimes
@@ -48,7 +48,7 @@ plank~
 ~
 25 6 3 0 5 0 0 0 0 0 0
 77253 264 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plank~
 &+yThis long plank is used for bridging the gaps on ships, and sometimes
@@ -62,7 +62,7 @@ set keys~
 ~
 18 15 3 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 set keys~
 &+LSeveral iron keys, maybe for handcuffs or shackles of some sort
@@ -75,7 +75,7 @@ token jade royalty~
 ~
 8 8 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 token jade royalty~
 &+mThis token is the highest symbol one could own to proof themselves
@@ -88,7 +88,7 @@ cutlass blacksteel~
 ~
 5 16 3 0 5 0 0 8193 0 0 0
 5 3 3 0 0 0 0 0
-0 7881 100
+0 7881 100 100
 E
 cutlass blacksteel~
 &+LA simple cutlass, used mostly by sailors, and forged from blacksteel.&n
@@ -104,7 +104,7 @@ electrum rapier~
 ~
 5 15 3 0 5 0 0 8193 0 0 0
 9 2 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 1
 #77208
@@ -114,7 +114,7 @@ silver skull ring~
 ~
 9 16 3 0 5 0 0 3 0 0 0
 8 0 0 3 0 0 0 0
-0 8900 100
+0 8900 100 100
 A
 19 2
 A
@@ -126,7 +126,7 @@ torn treasure map~
 ~
 13 28 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 torn treasure map~
 &+WThis map seems to be in horrible shape, and has been torn in several place,
@@ -141,7 +141,7 @@ treasure chest~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 29 22633 1000 0 0 0 0
-500 0 100
+500 0 100 100
 #77211
 jeweled flippers~
 &+bsome &+Gjeweled&+b flippers&N~
@@ -149,7 +149,7 @@ jeweled flippers~
 ~
 9 15 3 0 5 0 1 65 0 0 0
 12 0 0 0 0 0 0 0
-0 0 100 2048 0 0 0
+0 0 100 100 2048 0 0 0
 A
 22 -2
 A
@@ -161,7 +161,7 @@ coins pile treasure~
 ~
 20 25 3 0 5 0 0 1 0 0 0
 0 0 500 500 0 0 0 0
-0 0 100
+0 0 100 100
 #77213
 scepter jeweled~
 &+Ya glittering &+Gjeweled&+Y scepter&n~
@@ -169,7 +169,7 @@ scepter jeweled~
 ~
 5 24 3 0 13 0 1 8193 0 0 0
 11 1 4 0 0 0 0 0
-0 10999 100 73728 0 0 0
+0 10999 100 100 73728 0 0 0
 A
 34 3
 A
@@ -181,7 +181,7 @@ golden jeweled gauntlets~
 ~
 9 24 3 0 13 0 1 129 0 0 0
 9 0 0 3 1 0 0 0
-0 22111 100 4 0 0 0
+0 22111 100 100 4 0 0 0
 A
 24 3
 A

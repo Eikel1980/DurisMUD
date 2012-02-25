@@ -5,7 +5,7 @@ galleon wargalleon~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49567 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 galleon wargalleon~
 &+yA galleon of war.
@@ -17,7 +17,7 @@ elven passenger ship~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49211 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 elven passenger ship~
 &+gAn elven passenger ship.
@@ -29,7 +29,7 @@ merchantman~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 merchantman~
 &+yA merchantman carrying large amounts of cargo.
@@ -41,7 +41,7 @@ oasis~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 9999 9999 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fresh water oasis~
 &+bA fresh water oasis.
@@ -53,7 +53,7 @@ a s&+yp&+got&nt&+ge&nd &+ypa&+gt&+ych&+ge&nd &nc&+Ll&no&+Lak~
 ~
 9 3 3 0 7 0 0 1025 0 0 0
 1 0 0 1 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 spotted cloak patched~
 &+gThis is a spotted cloak with many patches. It is used by the commoners of the
@@ -68,7 +68,7 @@ a &+Mr&+mu&+Mb&+my&+b hilted&+C st&+Le&+ce&+Ll&n &+Ll&+con&+Lgs&+Cwo&+Lrd~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 5 3 3 0 0 0 0
-10 100000 100
+10 100000 100 100
 E
 ruby hilted longsword steel~
 &+LA longsword with a ruby embedded into the hilt. It is razor sharp.&n
@@ -84,7 +84,7 @@ long steel scythe~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 2 5 3 0 0 0 0
-10 34933 100
+10 34933 100 100
 E
 long steel scythe~
 &+YThis is a long steel scythe used by the sultan's guard. It is a crude weapon
@@ -97,7 +97,7 @@ dust covered tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49151 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dust covered tent~
 &+yThis tent is covered with dust.
@@ -109,7 +109,7 @@ a &+Gc&+go&+yl&+Yo&+Rr&+rf&+mu&+Ml&n &+gp&+ya&nt&+gc&+yh&n of&+y rags~
 ~
 9 3 3 0 7 0 0 17 0 0 0
 2 0 0 1 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 colorful patch rags~
 &+yA colorful patch of rags that one can use as clothing.
@@ -125,7 +125,7 @@ large bonfire~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large bondfire~
 &+rThis large bondfire was set some time ago. There are lumps of logs and ashes
@@ -138,7 +138,7 @@ square tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49152 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 square tent~
 &+yA square tent that is dark inside.
@@ -150,7 +150,7 @@ a &+Ww&+Gr&+gi&+bs&+Bt&+gb&+Ya&+bn&+gd &nmade of &+rc&+Wa&+bm&+yel&+Le&+mo&+Mn &
 ~
 9 2 3 0 7 0 0 4097 0 0 0
 2 0 0 2 0 0 0 0
-2 48300 100
+2 48300 100 100
 E
 wristband camelon skin~
 &+gA wristband that fits snugly over the wrist.
@@ -166,7 +166,7 @@ large boulder~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 49154 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large boulder~
 &+yA large boulder that has rope tied around it. It seems a part of some sort of rescue
@@ -180,7 +180,7 @@ metal shack~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49153 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 metal shack~
 &+LA large metal shack.
@@ -192,7 +192,7 @@ A large &+ybarrel&n of &+cwater&n rests here.&n~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 9999 9999 0 0 0 0 0 0
-999 0 100
+999 0 100 100
 E
 barrel large water~
 A large barrel of water.
@@ -204,7 +204,7 @@ an &+Lex&+bqui&+Ls&+bite &+cga&+crn&+Let ri&+cng~
 ~
 11 15 1 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 48594 100
+1 48594 100 100
 E
 exquisite garnet ring~
 &+WAn exquisite garnet ring.
@@ -220,7 +220,7 @@ a&+L black &+bsilk &+Bsash~
 ~
 11 15 3 0 7 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 black silk sash~
 &+LA black silk sash.
@@ -236,7 +236,7 @@ rocks debris~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rocks debris~
 &+LThe cave above seems to have collapsed. There is a dire need to enter the cave
@@ -249,7 +249,7 @@ pile mining tools~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile mining tools~
 &+yThese tools were dropped by the miners in a quick attempt to flee the mines.
@@ -261,7 +261,7 @@ A heavy iron malok rests here.&n~
 ~
 5 15 3 0 7 0 4096 8193 0 0 0
 13 2 8 3 0 0 0 0
-15 10200 100
+15 10200 100 100
 E
 heavy iron malok~
 &+yThis iron malok rests to the side.&n
@@ -275,7 +275,7 @@ A worn pair of traveling boots lay here.~
 ~
 9 13 3 0 7 0 0 65 0 0 0
 2 0 0 2 0 0 0 0
-5 43928 100
+5 43928 100 100
 E
 worn traveling boots~
 &+gThese boots look to have seen better days, they are worn. They still provide comfort
@@ -292,7 +292,7 @@ A pair of smelly britches lay here.~
 ~
 9 15 3 0 7 0 0 33 0 0 0
 4 0 0 2 0 0 0 0
-5 43922 100
+5 43922 100 100
 E
 britches smelly pair~
 These britches smell and have stains all over them.
@@ -308,7 +308,7 @@ river flowing~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49005 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 river flowing~
 &+bThis is a long flowing river. One could enter it and head up or downstream.
@@ -320,7 +320,7 @@ river flowing~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49200 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 river flowing~
 &+bThis is a long flowing river. One could enter it and head up or down stream.
@@ -332,7 +332,7 @@ A leather vest lays upon the ground.&n~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 20 0 0 3 0 0 0 0
-5 59303 100
+5 59303 100 100
 E
 black leather vest~
 &+LThis is a black mining vest. It provides protection for the miners against
@@ -349,7 +349,7 @@ a &+Gs&+bp&+ge&+Bc&+Gk&+bl&+ge&+Bd &+Wcrystal &+gball&n~
 ~
 11 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 25000 100
+5 25000 100 100
 E
 crystal speckled ball~
 &+WThis speckled ball seems magical. It emits a soft glow.
@@ -365,7 +365,7 @@ A pair of hearty work gloves lay here.&n~
 ~
 9 15 3 0 7 0 0 129 0 0 0
 10 0 0 3 0 0 0 0
-5 49292 100
+5 49292 100 100
 E
 work gloves~
 &+LThese gloves provide a lot of protection for any miner.
@@ -381,7 +381,7 @@ a &+Lw&+cr&+gi&+bt&+ch&+gi&+Ln&+cg &+Weyeball&n of a &+rwy&+rrm~
 ~
 11 15 3 0 7 0 4096 524289 0 0 0
 0 0 0 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 eyeball writhing wyrm~
 &+WThis is a writhing eye of a fire wyrm.
@@ -395,7 +395,7 @@ solid steel key~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 solid steel key~
 &+WA solide steel key.
@@ -407,7 +407,7 @@ silver embroided cloak~
 ~
 9 15 3 0 7 0 0 1025 0 0 0
 4 0 0 1 0 0 0 0
-1 23233 100
+1 23233 100 100
 E
 silver embroided cloak~
 &+WThis cloak has been emvroided with silver. Its owner must be in distress
@@ -424,7 +424,7 @@ a &+bblue&n-&+bhued&n &+Bbarbarian &+Lt&+Wr&+gi&+Lb&+We longsword~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 4 3 3 0 0 0 0
-12 37373 100
+12 37373 100 100
 E
 barbarian blue hued longsword tribe~
 &+bThis longsword was brought into the city of Venan Trut by one of the clansman
@@ -443,7 +443,7 @@ a &+Rgnomish &+cli&+Cfe&+Wgi&+Cvi&+cng &+cwr&+Cis&+Wtb&+Ca&+cnd&n~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 3 0 0 2 0 0 0 0
-5 25000 100
+5 25000 100 100
 E
 gnome wristband~
 &+WThis wristband was made by a gnome. Gnomes as we know are intelligent creatures who
@@ -461,7 +461,7 @@ dining room table rectangular~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dining room table rectangular~
 &+yThis dining room table is huge. It must sit plenty of guests.
@@ -473,7 +473,7 @@ a &+Ygo&+Wld&+Yen&n cloak of &+Bba&+br&+Bb&+bar&+Bi&+ba&+Ln&n &+Lk&+Bi&+bn&+Lgs&
 ~
 9 15 3 0 7 0 0 1025 0 0 0
 3 0 0 2 0 0 0 0
-1 23212 100
+1 23212 100 100
 E
 golden cloak barbarian kings~
 &+BA golden cloak of the barbarians. It was worn by the barbarian tribal lord
@@ -490,7 +490,7 @@ a &+Yflaring torch&n~
 ~
 13 5 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flaring torch~
 &+YA flaring torch.
@@ -502,7 +502,7 @@ A &+rroasting fire&n cooks some meat.&n~
 ~
 13 15 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 roasting fire~
 &+rA roasting fire.
@@ -514,7 +514,7 @@ caravan large~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49279 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 caravan large~
 &+yThis is a large caravan.
@@ -526,7 +526,7 @@ A &+bmucky pond&n rests easy in the open desert.&n~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pond mucky~
 &+bThis is a mucky pond.
@@ -538,7 +538,7 @@ a &+gnecklace&n of &+gh&+ye&+br&+rb&+ms &nand &+Gs&+Yp&+Bi&+Rc&+Me&+Ls~
 ~
 9 15 3 0 7 0 0 5 64 0 0
 3 0 0 2 0 0 0 0
-1 45000 100
+1 45000 100 100
 E
 necklace herbs spices~
 This necklace has many herbs and spices attached to it. It stinks because of the
@@ -555,7 +555,7 @@ An &+boasis&n is here for all to drink.&n~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 9999 9999 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 oasis~
 &+BA large oasis filled with drinking water.
@@ -567,7 +567,7 @@ An arrow of elven make lays here.&n~
 ~
 7 15 3 0 7 0 67117056 1 0 0 0
 2 3 2 1 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 arrow elven ancestry~
 &+rThis arrow comes from the lands of the elves. It is embued with the magical
@@ -580,7 +580,7 @@ An ancient longbow of the elves lays here.&n~
 ~
 6 5 3 0 7 0 4194304 24577 0 0 0
 70 60 0 1 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 longbow elves ancient~
 &+yThis longbow comes from the high elves. It is embued with great magic and
@@ -593,7 +593,7 @@ a &+rc&+Lo&+rp&+Lpe&+rr &+Lm&+Re&+Lda&+Rl&+Ll&+Ri&+Lon&n of a &+rs&+Re&+rrp&+Re&
 ~
 9 21 3 0 7 0 0 5 0 0 0
 10 0 0 3 0 0 0 0
-1 23439 100
+1 23439 100 100
 E
 copper medallion serpent~
 &+LThis medallion is of a serpent. It shoots flames from its mouth.
@@ -609,7 +609,7 @@ A thin steel dagger lays on the ground.&n~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 2 3 11 0 0 0 0
-2 12322 100
+2 12322 100 100
 E
 think steel dagger~
 &+cA thin steel dagger.
@@ -621,7 +621,7 @@ rope ladder~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rope ladder~
 &+yA rope ladder.
@@ -633,7 +633,7 @@ a &+Ygolde&+yn n&+yec&+Yklace&n of the &+Ygyp&+ysy ki&+Yng~
 ~
 9 24 3 0 7 0 1 5 0 0 0
 5 0 0 2 0 0 0 0
-5 13220 100
+5 13220 100 100
 E
 golden necklace gypsy king~
 &+YThis is a golden necklace that once belonged to the gypsy king. It is made
@@ -650,7 +650,7 @@ huge pool phosphoric acid~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge pool phosphoric acid~
 &+gThis pool is filled with phosphoric acid. It has collected over the years
@@ -663,7 +663,7 @@ gold necklace~
 ~
 8 24 3 0 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-1 25010 100
+1 25010 100 100
 E
 gold necklace~
 &+GA necklace made of gold.
@@ -675,7 +675,7 @@ gold ring~
 ~
 13 24 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-0 30100 100
+0 30100 100 100
 E
 gold ring~
 &+GThis is a gold necklace.
@@ -687,7 +687,7 @@ wickedly barbed dagger~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-1 10002 100
+1 10002 100 100
 E
 wickedly barbed dagger~
 &+LThis is a wicked looking barbed dagger.
@@ -703,7 +703,7 @@ a &+rblo&+Lod stai&+rne&+Ld clo&+rak~
 ~
 9 15 3 0 7 0 0 1025 0 0 0
 8 0 0 2 0 0 0 0
-0 23220 100
+0 23220 100 100
 E
 leather cloak~
 &+yThis is a bloodstained cloak used by the auctioneer of the slave markets.
@@ -717,7 +717,7 @@ a &+gra&+yg&+gg&+re&+Yd &+gbag&n of a &+ypeasant&n~
 ~
 15 15 3 0 7 0 4096 0 0 0 0
 500 1 0 500 0 0 0 0
-1 10102 100
+1 10102 100 100
 E
 ragged bag~
 &+gA patched bag.
@@ -729,7 +729,7 @@ A lantern made of gold rests here.&n~
 ~
 11 24 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 182822 100
+1 182822 100 100
 E
 golden lantern~
 &+GA golden lantern.
@@ -745,7 +745,7 @@ symbol elven ancestry~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 5 0 0 2 0 0 0 0
-1 2322 100
+1 2322 100 100
 E
 symbol elven ancestry~
 &+gThis is an ancient symbol of elven ancestry. It fits loosely around the neck
@@ -760,7 +760,7 @@ longsword steel~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 2 5 3 0 0 0 0
-2 19000 100
+2 19000 100 100
 E
 longsword steel~
 &+WA steel longsword.
@@ -776,7 +776,7 @@ a &+Lbl&+ba&+Lc&+bk &+br&+Lo&+bb&+Le &nwith many &+rbl&+Ro&+ro&+md&+rs&+Rt&+ma&+
 ~
 9 15 3 0 7 0 0 9 0 0 0
 20 0 0 3 0 0 0 0
-4 20192 100
+4 20192 100 100
 E
 black robe pouches~
 &+LThis black robe has many pouches. It fits loosely around the body and provides
@@ -793,7 +793,7 @@ longsword granite sword long~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 2 8 3 0 0 0 0
-5 39494 100
+5 39494 100 100
 E
 longsword granite sword long~
 &+WThis longsword is made of granite. It can cut through flesh easily.
@@ -809,7 +809,7 @@ compass~
 ~
 13 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 compass~
 &+yA compass. It is dusty but works fine.
@@ -821,7 +821,7 @@ a &+gpa&+Gle &+gtou&+Grma&+gline &+Gmeda&+gll&+Gion~
 ~
 9 32 3 0 7 0 0 5 0 0 0
 8 0 0 2 0 0 0 0
-2 28222 100
+2 28222 100 100
 E
 pale medallion tourmaline~
 &+GThis valuable medallion is worth a great deal. It sparkles brilliantly and
@@ -838,7 +838,7 @@ thin steel dagger~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 3 3 3 0 0 0 0
-5 23222 100
+5 23222 100 100
 E
 thin steel dagger~
 &+cA this steel dagger.
@@ -854,7 +854,7 @@ small post~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small post~
 ...some words are barely legible, written in common.
@@ -868,7 +868,7 @@ bloody elephant ear~
 ~
 11 15 3 0 7 0 0 524289 0 0 0
 0 0 0 0 0 0 0 0
-2 12322 100
+2 12322 100 100
 E
 bloody elephant ear~
 &+rA bloody elephant ear. It stinks.
@@ -884,7 +884,7 @@ rope ladder~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49556 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rope ladder~
 &+yA rope ladder that has been tossed overboard from the ship. It is used to climb
@@ -897,7 +897,7 @@ royal garb~
 ~
 9 15 3 0 7 0 1 1025 0 0 0
 5 0 0 1 0 0 0 0
-1 23322 100
+1 23322 100 100
 E
 royal garb~
 &+LThis is a royal garb that was used by the thri-kreen queen. It is lined with
@@ -914,7 +914,7 @@ a &+Lscrat&+yched &+ycopp&+Ler ri&+yng~
 ~
 11 21 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 12828 100
+1 12828 100 100
 E
 copper ring~
 &+yThis is a scratched copper ring. There isn't much value to it.
@@ -930,7 +930,7 @@ a pair of &+Lcop&+yper &+yleg&+Lgings~
 ~
 9 21 3 0 7 0 0 33 0 0 0
 8 0 0 2 0 0 0 0
-2 12029 100
+2 12029 100 100
 E
 copper leggings~
 &+yThis is a set of copper leggings that provide a good deal of protection to
@@ -947,7 +947,7 @@ a &+ycop&+Lper wri&+yst prote&+Lctor~
 ~
 9 21 3 0 7 0 0 4097 0 0 0
 4 0 0 2 0 0 0 0
-1 12928 100
+1 12928 100 100
 E
 copper wrist protector~
 &+yThis is a copper wrist protector that provides a lot of protection to its
@@ -964,7 +964,7 @@ a small &+ycop&+Lper hel&+ymet&n~
 ~
 9 21 3 0 7 0 0 17 0 0 0
 5 0 0 1 0 0 0 0
-1 8928 100
+1 8928 100 100
 E
 small copper helmet~
 &+yThis is a small copper helmet that provides a great deal of protection to
@@ -981,7 +981,7 @@ small potion~
 ~
 10 40 3 0 7 0 0 16385 0 0 0
 21 1 0 0 0 0 0 0
-1 4329 100
+1 4329 100 100
 E
 small potion~
 &+YA small potion. Once quaffed it might provide some resistance to damage.
@@ -993,7 +993,7 @@ small white potion~
 ~
 10 40 3 0 7 0 0 16385 0 0 0
 21 3 0 0 0 0 0 0
-1 4332 100
+1 4332 100 100
 E
 small blue potion~
 &+BA small blue potion, once quaffed could help with aiming.
@@ -1005,7 +1005,7 @@ small glowing potion~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 21 66 66 66 0 0 0 0
-2 38449 100
+2 38449 100 100
 E
 small potion~
 &+gA small potion that once quaffed could energize a person.
@@ -1017,7 +1017,7 @@ large potion~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 21 16 16 16 0 0 0 0
-1 4483 100
+1 4483 100 100
 E
 large potion~
 &+GThis small potion is etched with runes. Once quaffed it might cure a person of
@@ -1030,7 +1030,7 @@ large potion~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 21 57 57 57 0 0 0 0
-1 17928 100
+1 17928 100 100
 E
 large potion~
 &+mA small magenta potion. It could cure a person of serious injuries.
@@ -1042,7 +1042,7 @@ small potion~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 21 34 81 0 0 0 0 0
-1 3929 100
+1 3929 100 100
 E
 small potion~
 &+MA small glowing potion that could protect the drinker from the vileness and
@@ -1055,7 +1055,7 @@ glowing potion~
 ~
 10 15 3 0 7 0 0 1 0 0 0
 21 83 0 0 0 0 0 0
-1 5202 100
+1 5202 100 100
 E
 glowing potion~
 &+WA small potion that will grant the bearer insight into the heart of people.
@@ -1067,7 +1067,7 @@ earthen bark staff~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 21 1 1 141 0 0 0 0
-1 15403 100
+1 15403 100 100
 E
 earthen bark staff~
 &+yThis staff could grant extra armor from the nature.
@@ -1079,7 +1079,7 @@ tribal wand~
 ~
 3 18 3 0 7 0 0 16385 0 0 0
 21 5 5 191 0 0 0 0
-1 15292 100
+1 15292 100 100
 E
 tribal wand~
 &+mThis is a tribal wand of a minotaur shaman. It must possess the magic of the
@@ -1092,7 +1092,7 @@ magical staff ice~
 ~
 4 20 3 0 7 0 0 16385 0 0 0
 31 1 1 192 0 0 0 0
-2 15928 100
+2 15928 100 100
 E
 magical staff ice~
 &+cThis staff could grant everyone strength to carry on with the journey.
@@ -1104,7 +1104,7 @@ long steel dagger~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-2 14929 100
+2 14929 100 100
 E
 long steel dagger~
 &+gA long steel dagger that could do alot of damage if used with precision.
@@ -1116,7 +1116,7 @@ A smuggled piece of contraband is here.~
 ~
 8 43 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 123822 100
+1 123822 100 100
 E
 smuggled piece of contraband~
 This is a smuggled piece of contraband. To an ordinary person this isn't worth
@@ -1130,7 +1130,7 @@ some black &+Lmining &+ygoggles~
 ~
 9 15 3 0 7 0 0 131073 0 0 0
 6 0 0 2 0 0 0 0
-1 49038 100
+1 49038 100 100
 E
 miner goggles~
 &+LA fine pair of miner goggles. These goggles provide alot of protection for
@@ -1147,7 +1147,7 @@ long flowing silk robe~
 ~
 9 3 3 0 7 0 1 1025 0 0 0
 10 0 0 2 0 0 0 0
-4 23234 100
+4 23234 100 100
 E
 long flowing silk robe~
 &+WThis is a long flowing silk robe. It fits nicely around one's body and seems
@@ -1165,7 +1165,7 @@ large tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49338 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large tent~
 &+yA large tent that can be entered.
@@ -1177,7 +1177,7 @@ dusty boots~
 ~
 9 15 3 0 7 0 0 65 0 0 0
 10 0 0 3 0 0 0 0
-2 12392 100
+2 12392 100 100
 E
 dusty boots~
 &+YA pair of dusty boots. These boots have seen better days but are wearable and
@@ -1194,7 +1194,7 @@ tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49681 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tent~
 &+yA tent that can be entered.
@@ -1206,7 +1206,7 @@ a &+mnice pair &nof &+Wsilk sleeves&n~
 ~
 9 3 3 0 7 0 0 257 0 0 0
 6 0 0 2 0 0 0 0
-3 12938 100
+3 12938 100 100
 E
 silk sleeves nice pair~
 &+mA nice pair of silk sleeves that give style to the bearer and warmth as well.
@@ -1220,7 +1220,7 @@ leggings wolf fur~
 ~
 9 15 3 0 7 0 1 33 0 0 0
 15 0 0 2 0 0 0 0
-1 2322 100
+1 2322 100 100
 E
 leggings wolf fur~
 &+BA pair of wolf leggings that give great warmth to the wearer in the late nite
@@ -1237,7 +1237,7 @@ tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49682 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tent~
 &+yA smelly tent that can be entered.
@@ -1249,7 +1249,7 @@ a &+Wtharnadian longsword&n dubbed &n'&+rSLaSheR&n'&n~
 ~
 5 15 3 0 14 0 67117056 8193 0 0 0
 5 5 3 3 0 0 0 0
-15 38223 100
+15 38223 100 100
 E
 huge tharnadian longsword slasher~
 &+WThis longsword was crafted in Tharnadia by a great blacksmith. It is endowed
@@ -1267,7 +1267,7 @@ wormhide skins~
 ~
 9 15 3 0 7 0 4096 257 0 0 0
 15 0 0 3 0 0 0 0
-4 12323 100
+4 12323 100 100
 E
 wormhide skins~
 &+mA pair of worm skins that fit easily over the arms. They seem to grant the
@@ -1282,7 +1282,7 @@ a pair of &+ycop&+Lper slee&+yves~
 ~
 9 21 3 0 7 0 0 257 0 0 0
 12 0 0 3 0 0 0 0
-10 8292 100
+10 8292 100 100
 E
 copper sleeves pair~
 &+yA pair of copper sleeves that provide a great deal of protection to the
@@ -1299,7 +1299,7 @@ razor-sharp sharp razor longsword sword steel~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 3 5 3 0 0 0 0
-9 34929 100
+9 34929 100 100
 E
 razor-sharp sharp razor longsword sword steel~
 &+LThis is a razor-sharp steel longsword. Crafted and sold in Venan Trut, it
@@ -1314,7 +1314,7 @@ dented iron helmet~
 ~
 9 15 3 0 7 0 0 17 0 0 0
 12 0 0 4 0 0 0 0
-5 12933 100
+5 12933 100 100
 E
 dented iron helmet~
 &+LThis is a dented iron helmet. It has seen better days but has saved its
@@ -1332,7 +1332,7 @@ a &+cpolished &+cs&+Cil&+Wver med&+Call&+ci&+Co&+Wn~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-5 23922 100
+5 23922 100 100
 E
 medallion polished~
 &+WThis is a polished silver medallion. It adds style points to anyone who wears
@@ -1350,7 +1350,7 @@ A long, &+Ldark spear&n lays on the ground here.&n~
 ~
 5 36 4 30 9 0 4194304 24577 0 0 0
 15 2 6 11 0 0 0 0
-20 10000 100
+20 10000 100 100
 E
 pitch black dark long spear~
 &+LA chipped black spear.
@@ -1366,7 +1366,7 @@ A &+Llongsword&n with a particular &+csp&+Car&+ckl&+Ce&n lies here.~
 ~
 5 16 3 15 9 0 1 24577 0 0 0
 5 1 8 3 0 0 0 0
-5 17382 100
+5 17382 100 100
 E
 magical longsword cold steel~
 &+LThis longsword was forged from white hot steel. Now it is cold as night.
@@ -1381,7 +1381,7 @@ A small &+rrubber&n &+Bball&n rolls along the ground here.~
 ~
 7 49 1 0 5 0 8192 24577 64 0 0
 0 1 1 5 0 0 0 0
-0 3 100
+0 3 100 100
 E
 small rubber ball~
 This is a small rubber ball. It can be thrown great distances.
@@ -1393,7 +1393,7 @@ A &+Gmean&n looking shortsword lays here.~
 ~
 5 16 10 5 11 0 0 8193 65 0 24576
 9 3 3 11 0 0 0 0
-5 45000 100
+5 45000 100 100
 E
 sword shortsword narggles star mean~
 &+WThis is the pride and joy of the beloved barkeeper Narggle. Narggle greets
@@ -1411,7 +1411,7 @@ A cold bluesteel ring lays here.~
 ~
 11 15 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 cold blue bluesteel ring~
 &+bThis is a cold bluesteel ring. It is strong and fits loosely around the fingers.
@@ -1426,7 +1426,7 @@ leather studded mining belt~
 ~
 9 13 3 0 7 0 0 2049 0 0 0
 8 0 0 3 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 leather studded mining belt~
 &+LThis belt is made of leather and studded with a thicker harder type of leather.
@@ -1441,7 +1441,7 @@ a large &+rbloody &+Lb&+ru&+Ltc&+rh&+re&+L&+Rr&+Ls b&+Rl&+ra&+rd&+Le~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 1 3 8 3 0 0 0 0
-5 58888 100
+5 58888 100 100
 E
 large butchers blade~
 &+LA large butchers blade that can inflict heavy damage to flesh.
@@ -1455,7 +1455,7 @@ A dusty cloak lays here.&n~
 ~
 9 15 3 0 7 0 0 1025 0 0 0
 5 0 0 2 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 dusty cloak traveling~
 &+yThis cloak is very dusty. It is used for traveling these lonely desert lands
@@ -1471,7 +1471,7 @@ A rag of a crazy  man lays here.~
 ~
 9 12 3 0 7 0 0 2097153 0 0 0
 1 0 0 1 0 0 0 0
-1 23 100
+1 23 100 100
 E
 incredibly slimy snot rag crazy man~
 &+LThis is a snot rag from a crazy man. There is dried up snot all over it and
@@ -1488,7 +1488,7 @@ an &+ye&+Lyep&+yatch&n of a &+Lc&+gR&+Laz&+GY &+LM&+Ba&+LN&n~
 ~
 9 15 3 0 7 0 0 131073 0 0 0
 5 0 0 3 0 0 0 0
-2 8293 100
+2 8293 100 100
 E
 crazy man eyepathc~
 &+LThis is an eyepatch of a crazy man. It is made of leather and smells of raw
@@ -1505,7 +1505,7 @@ desert nomad~
 ~
 5 15 3 0 7 0 4194304 8193 0 0 0
 13 4 5 3 0 0 0 0
-15 66392 100
+15 66392 100 100
 E
 desert nomad~
 &+YThis is a heavy two-handed sword. It was wielded by a desert nomad from Venan
@@ -1522,7 +1522,7 @@ A badge of the captain lays here.~
 ~
 11 3 3 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-1 23222 100
+1 23222 100 100
 E
 badge captain~
 &+YThis is a badge of a captain of the sultan's militia. You must be a strong
@@ -1537,7 +1537,7 @@ key iron~
 ~
 18 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 11 100
+1 11 100 100
 E
 key iron~
 &+LAn iron key.
@@ -1549,7 +1549,7 @@ small key~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 111 100
+1 111 100 100
 E
 small key~
 &+YA small key.
@@ -1561,7 +1561,7 @@ broken wagon~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 10 0 0 10 0 0 0 0
-1 1 100
+1 1 100 100
 E
 broken wagon~
 &+yThis wagon is broken down. Inspecting it might be beneficial since there are
@@ -1574,7 +1574,7 @@ a pair of &+Lcharred black leggings~
 ~
 9 13 3 0 7 0 0 33 0 0 0
 8 0 0 3 0 0 0 0
-5 232 100
+5 232 100 100
 E
 leggings charred black~
 &+LThese leggings are made of leather. They have been heavily burnt but still
@@ -1591,7 +1591,7 @@ An iron barbarian warhelmet lays here.~
 ~
 9 15 3 0 8 0 0 17 0 0 0
 10 0 0 3 0 0 0 0
-5 12939 100
+5 12939 100 100
 E
 iron barbarian warhelmet~
 &+BA barbarian warhelmet that seems to spell battle legacy. This helmet has had
@@ -1609,7 +1609,7 @@ pile refuse~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 10 0 0 10 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile refuse~
 &+LA pile of refuse.
@@ -1621,7 +1621,7 @@ stinking plaque sultan~
 ~
 13 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 139292 100
+1 139292 100 100
 E
 stinking plaque sultan~
 &+LThis is a stinking plaque of the sultan. It must have been laying in the trash
@@ -1636,7 +1636,7 @@ a&+L dark &+Wreligious&+b bracer~
 ~
 9 19 3 0 7 0 0 4097 0 0 0
 8 0 0 2 0 0 0 0
-2 12982 100
+2 12982 100 100
 E
 dark amulet religious~
 &+LA dark religious amulet that serves as a source of power for the dark art.
@@ -1653,7 +1653,7 @@ razor sharp razor-sharp longsword long sword blue steel~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 2 6 3 0 0 0 0
-7 18392 100
+7 18392 100 100
 E
 razor sharp razor-sharp longsword long sword blue steel~
 &+LA razor-sharp longsword of cold steel. It can slice and dice as well as any.
@@ -1667,7 +1667,7 @@ razor-sharp razor sharp battle axe~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 1 2 8 3 0 0 0 0
-10 24920 100
+10 24920 100 100
 E
 razor-sharp razor sharp battle axe~
 &+LA razor-sharp battleaxe. It is heavy and can inflict great damage.
@@ -1681,7 +1681,7 @@ wooden handled battle mace~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 6 2 5 0 0 0 0 0
-5 13922 100
+5 13922 100 100
 E
 wooden handled battle mace~
 &+LA wooden handled battlemace.
@@ -1697,7 +1697,7 @@ a &+mmagical drow&+M amulet&n of &+Ldarkness&n~
 ~
 9 19 3 0 7 0 1 16389 0 0 0
 2 0 0 2 0 0 0 0
-2 23223 100
+2 23223 100 100
 E
 magical drow amulet~
 &+LThis amulet is of drow kind. It is endowed with the dark art of the drow and
@@ -1714,7 +1714,7 @@ a &+bje&+Bw&+Ce&+Bl&+bed &+bge&+Bm&+Cs&+Bto&+bne r&+Bi&+bn&+Bg~
 ~
 11 26 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-2 15232 100
+2 15232 100 100
 E
 jeweled gemstone ring~
 &+bA jeweled ring that is cold to the touch. It looks pleasing to the eye and
@@ -1731,7 +1731,7 @@ an &+madama&+Mnti&+mum ri&+Mng&+mmai&+Ml suit~
 ~
 9 19 3 0 7 0 0 9 0 0 0
 25 0 0 5 0 0 0 0
-10 12039 100
+10 12039 100 100
 E
 adamantium ringmail suit~
 &+mAn adamantium ringmail suit that provides a great deal of protection for the
@@ -1746,7 +1746,7 @@ an &+madama&+Mnti&+mum br&+Mac&+mer&n~
 ~
 9 19 3 0 7 0 0 4097 0 0 0
 8 0 0 4 0 0 0 0
-5 8238 100
+5 8238 100 100
 E
 adamantium bracer~
 &+mAn adamantium bracer that provides a great deal of protection.
@@ -1762,7 +1762,7 @@ a pair of&+m adama&+Mnti&+mum leg&+Mgin&+mgs&n~
 ~
 9 19 3 0 7 0 0 33 0 0 0
 18 0 0 4 0 0 0 0
-5 6928 100
+5 6928 100 100
 E
 adamantium leggings pair~
 &+mAn adamantium set of leggings that provides a great deal of protection.
@@ -1776,7 +1776,7 @@ a pair of &+madama&+Mnti&+mum sl&+Meev&+mes&n~
 ~
 9 15 3 0 11 0 0 257 0 0 0
 15 0 0 3 0 0 0 0
-5 3493 100
+5 3493 100 100
 E
 pair adamantium sleeves~
 &+mAdamantium sleeves that provide alot of protection to their bearer.
@@ -1790,7 +1790,7 @@ an &+madama&+Mnti&+mum he&+Mlm&+met&n~
 ~
 9 19 3 0 7 0 0 17 0 0 0
 12 0 0 4 0 0 0 0
-10 5928 100
+10 5928 100 100
 E
 adamantium helmet~
 &+mAn adamantium helmet that provides alot of protection to its wearer.
@@ -1806,7 +1806,7 @@ an &+madama&+Mnti&+mum sh&+Mie&+mld&n~
 ~
 37 19 3 0 7 0 0 513 0 0 0
 1 2 4 120 5 0 0 0
-5 8293 100
+5 8293 100 100
 E
 adamantium shield~
 &+mAn adamantium shield that protects its wearer from attacks.
@@ -1820,7 +1820,7 @@ A jeweled adamantium ring lays here.~
 ~
 11 19 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-2 18232 100
+2 18232 100 100
 E
 jeweled adamantium ring~
 &+MA jeweled gemstone ring that is magical in nature. It is different from all
@@ -1837,7 +1837,7 @@ a pair of &+madama&+Mnti&+mum bo&+Mot&+ms&n~
 ~
 9 19 3 0 7 0 0 65 0 0 0
 10 0 0 4 0 0 0 0
-10 12039 100
+10 12039 100 100
 E
 adamantium boots~
 &+mA pair of adamantium boots.
@@ -1851,7 +1851,7 @@ an &+madama&+Mnti&+mum nec&+Mkla&+mce&n~
 ~
 9 19 3 0 7 0 0 5 0 0 0
 5 0 0 4 0 0 0 0
-5 6702 100
+5 6702 100 100
 E
 adamantium necklace~
 &+mAn adamantium necklace that provides little protection.
@@ -1865,7 +1865,7 @@ a &+Ldark obsidian &+mpendant~
 ~
 9 19 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-2 16929 100
+2 16929 100 100
 E
 dark obsidian pendant~
 &+LA dark pendant that seems to be endowed with darkness. It probably grants its
@@ -1880,7 +1880,7 @@ a&+m rune enscribed&+M adamantium &+mring~
 ~
 11 19 3 0 7 0 1 3 0 0 0
 0 0 0 0 0 0 0 0
-1 23212 100
+1 23212 100 100
 E
 adamantium ring~
 &+mThis ring is has many runes enscribed upon it. It serves a purpose greater
@@ -1898,7 +1898,7 @@ a&+m t&+ri&+mn&+My &+ma&+Mm&+me&+rt&+Mh&+Ry&+ms&+Mt &+mri&+Mn&+mg~
 ~
 11 44 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 12938 100
+1 12938 100 100
 E
 tiny amethyst ring~
 &+mThis ring is tiny but fits nicely over the finger. It seems magical in nature
@@ -1915,7 +1915,7 @@ a &+Bsmall &+Wdi&+Ba&+Cm&+Bo&+Cn&+Wd &+Cencrusted r&+Wi&+Cn&+Wg~
 ~
 11 27 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-1 12932 100
+1 12932 100 100
 E
 small diamond encrusted ring~
 &+WA small diamond encrusted ring that must be worth a small fortune. It seems
@@ -1932,7 +1932,7 @@ A nice pair of Tharnadian &+Lboots &nlay here&n.~
 ~
 9 16 3 0 7 0 0 65 0 0 0
 12 0 0 4 0 0 0 0
-5 24938 100
+5 24938 100 100
 E
 tharnadian boots blue-steeled blue steeled~
 &+WThis fine pair of tharnadian boots are cold but provide a great deal of
@@ -1949,7 +1949,7 @@ a &+Ls&+gm&+La&+Ll&+Ll &+Lsq&+gu&+Lar&+Le b&+go&+Lx&n~
 ~
 15 15 3 0 7 0 0 16385 0 0 0
 300 1 0 300 0 0 0 0
-10 12392 100
+10 12392 100 100
 E
 small square box~
 &+LA small square box used for storage.
@@ -1961,7 +1961,7 @@ a &+bfine &+Bpair&n of &+Ydwarven sleeves~
 ~
 9 22 3 0 7 0 0 257 0 0 0
 15 0 0 3 0 0 0 0
-5 23222 100
+5 23222 100 100
 E
 dwarven sleeves fine pair~
 &+YA fine pair of dwarven sleeves. They wear crafted by a master dwarf and
@@ -1976,7 +1976,7 @@ a &+Llost token &nof the &+Cmines &nof &+WKhul'Lor&n~
 ~
 9 22 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-3 13928 100
+3 13928 100 100
 E
 lost token~
 &+CThis lost silver token from the mines of Khul'Lor is very valuable. It weighs
@@ -1993,7 +1993,7 @@ some &+ywo&+Llf&n &+yhi&+Lde &+rsle&+Leves~
 ~
 9 2 3 0 7 0 0 257 0 0 0
 15 0 0 3 0 0 0 0
-5 23943 100
+5 23943 100 100
 E
 minotaur sleeves~
 &+LThese sleeves keep the arms warm and are endowed with some sort of minotaur
@@ -2010,7 +2010,7 @@ a pair of &+Ydwarven &+Wmithril&n boots&n~
 ~
 9 18 3 0 7 0 0 65 0 0 0
 12 0 0 4 0 0 0 0
-5 23423 100
+5 23423 100 100
 E
 mithril boots dwarven pair~
 &+YThese boots were crafted by a master dwarf and endowed with strong magic.
@@ -2026,7 +2026,7 @@ some &+Rgnom&+rish&n &+Wsleeves&+c&n of&+g &+cin&+Cge&+Wnu&+Cit&+cy~
 ~
 9 23 3 0 10 0 0 257 0 0 0
 10 0 0 3 0 0 0 0
-5 43853 100
+5 43853 100 100
 E
 gnomish sleeves ingenuity~
 &+rThese sleeves are endowed with the ingenuity of the gnomish race. The magic
@@ -2043,7 +2043,7 @@ a &+Ygo&+Ll&+Yd&+Le&+Yn&+Y c&+Wr&+Yo&+Ww&+Yn &nof the &+YSultan&n~
 ~
 9 24 3 0 14 0 4096 17 0 0 0
 15 0 0 3 0 0 0 0
-5 59293 100
+5 59293 100 100
 E
 golden crown sultan~
 &+YThis crown once belonged to the Sultan of Venan Trut. It is made of pure gold
@@ -2060,7 +2060,7 @@ A long staff of raven feathers lays here.~
 ~
 4 4 3 0 7 0 0 16385 0 0 0
 31 1 1 238 0 0 0 0
-5 35939 100
+5 35939 100 100
 E
 long staff raven feathers~
 &+yThis staff will grant additional speed to those who need it.
@@ -2072,7 +2072,7 @@ small jaded crystal bracer~
 ~
 9 44 3 0 14 0 0 4097 0 1006501888 65420
 12 0 0 4 0 0 0 0
-5 58322 100
+5 58322 100 100
 E
 small jaded crystal bracer~
 &+gThis bracer is used by the chitter race of the land. It is a very powerful
@@ -2089,7 +2089,7 @@ sword master swordmaster gloves pair~
 ~
 9 43 3 0 12 0 0 129 0 0 0
 8 0 0 3 0 0 0 0
-5 23422 100
+5 23422 100 100
 E
 sword master swordmaster gloves pair~
 &+cA fine pair of gloves used by swordmasters. They grant additional strengths
@@ -2106,7 +2106,7 @@ A pair of &+mfinely made&n sleeves lay here.&n~
 ~
 9 15 3 0 7 0 0 257 0 0 0
 12 0 0 3 0 0 0 0
-1 3849 100
+1 3849 100 100
 E
 finely made sleeves~
 &+MA nice pair of sleeves from the great city tharnadia.
@@ -2122,7 +2122,7 @@ A pair of&+m finely made&n leggings lay here.&n~
 ~
 9 15 3 0 7 0 0 33 0 0 0
 15 0 0 3 0 0 0 0
-1 5932 100
+1 5932 100 100
 E
 finely leggings pair~
 &+mA nice pair of leggings.
@@ -2136,7 +2136,7 @@ dented dog collar~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 6 0 0 3 0 0 0 0
-5 232 100
+5 232 100 100
 E
 dented dog collar~
 &+LA dented dog collar.
@@ -2152,7 +2152,7 @@ religious amulet~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-2 12938 100
+2 12938 100 100
 E
 religious amulet~
 &+WThis religious amulet must possess some sort of magic endowed by some sort
@@ -2169,7 +2169,7 @@ a&+y sand covered &+Ychain-linked&n &+ys&+yu&+Yit&n~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 30 0 0 3 0 0 0 0
-15 39283 100
+15 39283 100 100
 E
 chain chainlinked linked chain-linked suit~
 &+yThis is a sand covered chain-linked suit. It is made of a steel mesh.
@@ -2185,7 +2185,7 @@ a &+Lsig&+cn&+Ce&+Wt r&+Ci&+Cn&+Lg &nof &+LVernadad &+rLo'Ushuur&n~
 ~
 11 16 3 0 7 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-3 53922 100
+3 53922 100 100
 E
 signet ring~
 &+LThis is the signet ring of Vernadad Lo'Ushuur, the count in charge of the
@@ -2202,7 +2202,7 @@ a &+Wbrilliant &+madamantium longsword~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 5 3 5 3 0 0 0 0
-5 19303 100
+5 19303 100 100
 E
 adamantium longsword long sword brilliant~
 &+mThis longsword is made of adamantium. Adamantium is the strongest metal and
@@ -2215,7 +2215,7 @@ A razor-sharp battleaxe lays here.~
 ~
 5 18 3 0 7 0 0 8193 0 0 0
 1 1 8 3 0 0 0 0
-10 23482 100
+10 23482 100 100
 E
 razor-sharp sharp razor battle battleaxe axe battle~
 &+bThis razor-sharp battleaxe is lightweight. It can't inflict much damage to
@@ -2231,7 +2231,7 @@ a tiny &+mcurved dagger &+Letched &nwith&+m runes~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 2 4 0 0 0 0 0
-3 12933 100
+3 12933 100 100
 E
 tiny curved dagger~
 &+mThis dagger is curved slightly and etched with runes. The runes must grant
@@ -2246,7 +2246,7 @@ a &+Cgleaming &ntwo-handed &+Wmithril &+Lbattleaxe~
 ~
 5 19 3 0 7 0 4194304 8193 0 0 0
 13 4 5 3 0 0 0 0
-17 25928 100
+17 25928 100 100
 E
 battleaxe axe battle~
 &+WThis battleaxe is made of mithril. It can chop a person's head off no problem.
@@ -2263,7 +2263,7 @@ a long &+gelven &+ywooden st&+ga&+yf&+gf~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 12 1 4 7 0 0 0 0
-5 2939 100
+5 2939 100 100
 E
 long elven wooden staff~
 &+gThis is a long wooden staff. It is used as a weapon by the less strong, the
@@ -2280,7 +2280,7 @@ a &+Wbrilliant &+mmithril&+W plate&n~
 ~
 9 15 3 0 7 0 0 9 0 0 0
 30 0 0 4 0 0 0 0
-10 18292 100
+10 18292 100 100
 E
 brilliant mithril plate~
 &+mThis plate is made of mithril. It is finely crafted and provides unparallel
@@ -2297,7 +2297,7 @@ a &+cwell&n-&+Cworn &+Wwarrior&+b helm~
 ~
 9 15 3 0 7 0 0 17 0 0 0
 15 0 0 3 0 0 0 0
-5 22392 100
+5 22392 100 100
 E
 well used well-used warrior helm~
 &+cThis helm is well worn, however, it still provides great protection to th ose
@@ -2314,7 +2314,7 @@ A fine pair of dwarven chainmail leggings lay here.&n~
 ~
 9 22 3 0 7 0 0 33 0 0 0
 16 0 0 4 0 0 0 0
-12 22322 100
+12 22322 100 100
 E
 leggings chainmail dwarven~
 &+YThese leggings were crafted by the dwarves. Undoubtably they are strong and
@@ -2329,7 +2329,7 @@ a &+Wpolished&n &+csteel bracer~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 8 0 0 3 0 0 0 0
-4 12392 100
+4 12392 100 100
 E
 polished steel bracer~
 &+cThis bracer is a standard bracer used by the nobles of these lands. It is
@@ -2346,7 +2346,7 @@ gnomish mesh gloves~
 ~
 9 15 3 0 7 0 0 129 0 0 0
 12 0 0 3 0 0 0 0
-2 12928 100
+2 12928 100 100
 E
 gnomish mesh gloves~
 &+cThese gloves were designed by the gnomes. They seem to fit snugly around
@@ -2363,7 +2363,7 @@ a pair of &+Ydwarven mining &+Lgoggles~
 ~
 9 15 3 0 7 0 0 131073 0 0 0
 4 0 0 3 0 0 0 0
-5 15922 100
+5 15922 100 100
 E
 dwarven mining goggles~
 &+LThese goggles are used by the miners for protection.
@@ -2379,7 +2379,7 @@ brilliant longsword~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 1 8 3 0 0 0 0
-5 1323 100
+5 1323 100 100
 E
 brilliant longsword~
 &+WThis longsword shines brightly.
@@ -2391,7 +2391,7 @@ some &+mstretched&n &+mdrow&n-&+mskin sleeves~
 ~
 9 15 3 0 7 0 1 257 0 0 0
 8 0 0 3 0 0 0 0
-5 12039 100
+5 12039 100 100
 E
 drow-skin skin drow sleeves fine pair~
 &+mThese sleeves are made of drow-skin. They provide great warmth and might
@@ -2408,7 +2408,7 @@ holy sacrimental religious cloak~
 ~
 9 15 3 0 7 0 67117057 1025 0 0 0
 8 0 0 3 0 0 0 0
-2 15029 100
+2 15029 100 100
 E
 holy sacrimental religious cloak~
 &+WThis cloak belonged to a holyman at one time. It must have been worn with
@@ -2425,7 +2425,7 @@ golden chest~
 ~
 15 24 3 0 7 0 0 0 0 0 0
 2999 29 49165 2999 0 0 0 0
-10923 2382828 100
+10923 2382828 100 100
 E
 golden chest~
 &+GThis chest is made of gold.
@@ -2437,7 +2437,7 @@ an &+rab&+Rla&+Yz&+Wed&+Y gold &+Yring&n of &+rfi&+Rr&+Ye~
 ~
 11 24 3 0 7 0 0 3 2 0 0
 0 0 0 0 0 0 0 0
-2 49583 100
+2 49583 100 100
 E
 golden signet ring~
 &+YThis ring is afire. There are flames shooting out of an opal shape hole. It
@@ -2452,7 +2452,7 @@ golden key~
 ~
 18 24 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 34939 100
+1 34939 100 100
 E
 golden key~
 &+GThis key is made of gold.
@@ -2464,7 +2464,7 @@ white rose beautiful~
 ~
 11 4 3 0 7 0 0 524289 0 0 0
 0 0 0 0 0 0 0 0
-2 54349 100
+2 54349 100 100
 E
 white rose beautiful~
 &+WThis white rose belonged to the great prophet Deraisem. He travels the lands
@@ -2478,7 +2478,7 @@ eerie silver medallion~
 ~
 9 22 3 0 7 0 0 5 0 0 0
 5 0 0 3 0 0 0 0
-2 22932 100
+2 22932 100 100
 E
 eerie silver medallion~
 &+LThis medallion seems to possess great magical power. It seems to vibrate
@@ -2496,7 +2496,7 @@ large warehouse~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49382 7 -1 0 0 0 0 0
-2323 0 100
+2323 0 100 100
 E
 large warehouse~
 &+yThis is a large warehouse. It looks ready to fall over though.
@@ -2508,7 +2508,7 @@ scaled earring~
 ~
 11 47 3 0 7 0 4096 524289 0 0 0
 0 0 0 0 0 0 0 0
-1 32029 100
+1 32029 100 100
 E
 scaled earring~
 &+mThis earring is made of fish scales. It stinks but seems magical in nature.
@@ -2524,7 +2524,7 @@ glowing runestone~
 ~
 11 38 3 0 7 0 100663296 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 39292 100
+1 39292 100 100
 E
 glowing runestone~
 &+WThis runestone is magical in nature and seems to give off a slight hum. The
@@ -2541,7 +2541,7 @@ dusty signet ring~
 ~
 13 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2323 100
+1 2323 100 100
 E
 dusty signet ring~
 &+MThis dusty signet ring is of no great importance. It belongs to a fat merchant
@@ -2554,7 +2554,7 @@ a used &+mdenin &+Minstrument &+msack&n~
 ~
 15 13 3 0 7 0 0 1048577 0 0 0
 100 5 0 100 0 0 0 0
-5 23223 100
+5 23223 100 100
 E
 used denin instrument sack~
 &+mThis sack is made of denin and looks to have alot of space for storage.
@@ -2568,7 +2568,7 @@ an &+gelvish &+yhunter&+g meda&+yllion~
 ~
 9 5 3 0 7 0 0 5 64 0 0
 6 0 0 3 0 0 0 0
-2 12929 100
+2 12929 100 100
 E
 elvish hunter medallion~
 &+gThis medallion belonged to an elf at one time. He was a hunter. He died
@@ -2585,7 +2585,7 @@ glowing runestone~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49396 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glowing runestone~
 &+YThis runestone is magical in nature. It is impossible to ascertain how it
@@ -2599,7 +2599,7 @@ glowing runestone~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49023 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glowing runestone~
 &+GThis runestone glows. It beckons.
@@ -2611,7 +2611,7 @@ a &+ylarge &+Ytent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 49787 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large tent~
 &+yA large tent hosting a celebration of some sort.
@@ -2623,7 +2623,7 @@ silver lognsword~
 ~
 5 22 3 0 12 0 0 8193 0 0 0
 5 2 6 3 0 0 0 0
-10 87282 100
+10 87282 100 100
 E
 silver lognsword~
 &+cThis is a finely crafted longsword. It weighs a great deal but is a fine
@@ -2640,7 +2640,7 @@ brilliant adamantium bracer~
 ~
 9 19 3 0 7 0 1 4097 0 0 0
 15 0 0 4 0 0 0 0
-5 24929 100
+5 24929 100 100
 E
 brilliant adamantium bracer~
 &+mThis is a war bracer made of adamantium. It is finely crafted and used by
@@ -2657,7 +2657,7 @@ map venan trut~
 ~
 13 3 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1292 100
+1 1292 100 100
 E
 map vernan trut~
 
@@ -2703,7 +2703,7 @@ warboots boots adamantium pair~
 ~
 9 19 3 0 7 0 0 65 0 0 0
 15 0 0 4 0 0 0 0
-12 19282 100
+12 19282 100 100
 E
 warboots boots adamantium pair~
 &+mThese boots must weigh a ton. They provide great protection and are finely
@@ -2720,7 +2720,7 @@ A pair of &+mruby slippers&n lay here.~
 ~
 9 31 3 0 7 0 1 65 0 0 0
 5 0 0 1 0 0 0 0
-4 18282 100
+4 18282 100 100
 E
 ruby slippers~
 &+mThese slippers are fine. They are made of ruby and must be worth a great deal.
@@ -2736,7 +2736,7 @@ a &+gtroll&n-&+gskin&n &+rw&+gr&+bi&+gs&+yt protector~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 6 0 0 2 0 0 0 0
-2 8272 100
+2 8272 100 100
 E
 troll-skin wrist guard troll skin~
 &+gThis troll-skin guard must be magical in nature. It belonged to a warrior at
@@ -2753,7 +2753,7 @@ a &+yfo&+rul &+rsmell&+ying &+rr&+yat e&+rar~
 ~
 11 2 3 0 7 0 16 524289 0 0 0
 0 0 0 0 0 0 0 0
-1 2828 100
+1 2828 100 100
 E
 foul smelling rat ear~
 &+rThis foul smelling piece of flesh stinks. It is an ear of a rat.
@@ -2767,7 +2767,7 @@ shiny platinum medallion~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 5 0 0 2 0 0 0 0
-2 12121 100
+2 12121 100 100
 E
 shiny platinum medallion~
 &+WThis shiny platinum piece comes from the lands of the great city Tharnadia.
@@ -2784,7 +2784,7 @@ large sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
              &+yThis way to the Lone Desert Star!
@@ -2797,7 +2797,7 @@ a pair of &+Ymesh gloves~
 ~
 9 16 3 0 5 0 0 129 0 0 0
 10 0 0 2 0 0 0 0
-5 18392 100
+5 18392 100 100
 E
 mesh gloves~
 &+YA fine pair of mesh gloves.
@@ -2816,7 +2816,7 @@ A pair of sleeves lay here.~
 ~
 9 32 3 0 5 0 0 257 0 0 0
 12 0 0 2 0 0 0 0
-4 120292 100
+4 120292 100 100
 E
 emerald embedded sleeves~
 &+GA fine pair of sleeves with emeralds embedded into them.
@@ -2832,7 +2832,7 @@ a &+Ygol&+Wde&+Yn &+ypair &nof &+Ysc&+Wouti&+Yng boots~
 ~
 9 24 3 0 5 0 1 65 0 0 0
 8 0 0 4 0 0 0 0
-5 23222 100
+5 23222 100 100
 E
 pair golden boots~
 &+YThese finely crafted boots are unlike anything else. They must weigh a ton but
@@ -2849,7 +2849,7 @@ a &+Mswirling potion~
 ~
 10 52 3 0 7 0 0 16385 0 0 0
 31 179 0 0 0 0 0 0
-2 9282 100
+2 9282 100 100
 #49190
 warning sign~
 &+ya warning &+R'Sign'&n~
@@ -2857,7 +2857,7 @@ warning sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 warning sign~
 &+yTurn Back or Face Sudden Death
@@ -2869,7 +2869,7 @@ tattered old scroll~
 ~
 2 29 3 0 7 0 0 16385 0 0 0
 50 45 0 0 0 0 0 0
-1 1029 100
+1 1029 100 100
 #49192
 an ancient glyph enscribed scroll~
 &+yan ancient glyph enscribed scroll~
@@ -2877,7 +2877,7 @@ an ancient glyph enscribed scroll~
 ~
 2 29 3 0 7 0 0 16385 0 0 0
 51 26 0 0 0 0 0 0
-1 15029 100
+1 15029 100 100
 #49193
 holy scroll~
 &+ya holy scroll~
@@ -2885,4 +2885,4 @@ holy scroll~
 ~
 2 29 3 0 7 0 0 16385 0 0 0
 31 15 57 16 0 0 0 0
-1 12092 100
+1 12092 100 100

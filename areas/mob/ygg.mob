@@ -6,8 +6,8 @@ ratatoskr~
 &+L   Looking up from sorting all the stuff here the &+ysqui&+Yr&+yr&+Ye&+yl &+Lgrunts and
 &+Lsqueaks&+w, "What do you want I am a little busy here."
 ~
-28746 128 0 60 30 0 0 1000 S
-H 0 0 3
+28746 128 0 0 60 30 0 0 1000 S
+H 0 0 0 3
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -19,8 +19,8 @@ norn golem urd br_c assoc5_n_0 _nobutt_~
 &+w   Urd&+L seems rather preoccupied.  She appears to be discussing what
 &+Ldestiny they should give to a newly born hero of the lands.
 ~
-104954443 0 0 301990188 30 0 0 0 S
-OG 0 512 6
+104954443 0 0 0 301990188 30 0 0 0 S
+OG 0 512 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 2
@@ -33,8 +33,8 @@ goat heidrun golem br_c assoc5_n_0 _nobutt_~
 &+wfood.  Heidrun looks everywhere for anything that could be considered
 &+wedible.
 ~
-104954443 0 0 301990188 30 0 0 1000 S
-OG 0 1 6
+104954443 0 0 0 301990188 30 0 0 1000 S
+OG 0 1 0 6
 60 0 0 10d10+30000 10d7+50
 0.0.0.0 0
 8 8 1
@@ -49,8 +49,8 @@ A &+gF&+Gor&+gest S&+Gpi&+grit &+Gwe&+gari&+Gn&+gg &+Yg&+Gr&+Ye&+Ge&+Yn &+gl&+Ge
 &+gwith its suroundings. As all Djinns do, you recon this one possesses enormous
 &+gpowers and it would be wise not to act aggresively near it.
 ~
-104954443 0 0 301990188 30 0 0 0 S
-OG 0 512 6
+104954443 0 0 0 301990188 30 0 0 0 S
+OG 0 512 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -65,8 +65,8 @@ A &+gF&+Gor&+gest S&+Gpi&+grit &+Gwe&+gari&+Gn&+gg &+yb&+rr&+yo&+rw&+yn &+gl&+Ge
 &+gradiating out from it and for a second you could almost swear you did see a
 &+gfaint shimmering light around it.
 ~
-104954443 0 0 301990188 30 0 0 1000 S
-OG 0 32 6
+104954443 0 0 0 301990188 30 0 0 1000 S
+OG 0 32 0 6
 60 0 0 10d10+30000 7d7+40
 0.0.0.0 0
 8 8 0
@@ -79,8 +79,8 @@ A &+gF&+Gor&+gest S&+Gpi&+grit &+Gwe&+gari&+Gn&+gg &+Rr&+re&+Rd &+gl&+Ge&+ga&+Gf
 &+gIts sparkling eyes follows your every move with caution. Althoug it has very
 &+gthin long arms and legs, you can clearly see it possesses a massive strength.
 ~
-104954443 0 0 301990188 30 0 0 0 S
-OG 0 1 6
+104954443 0 0 0 301990188 30 0 0 0 S
+OG 0 1 0 6
 60 0 0 10d10+30000 10d7+50
 0.0.0.0 0
 8 8 0

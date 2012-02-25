@@ -52,10 +52,10 @@ M 0 42911 7 42905 100 0 0 0        * a short and stocky raxian
 M 0 42924 7 42905 100 0 0 0        * a large mobat
 M 0 42925 7 42905 100 0 0 0        * a beaten and bruised raxian slave
 M 0 42908 8 42906 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42909 6 42906 100 0 0 0        * a raxian guard
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 M 0 42919 4 42907 100 0 0 0        * a scrawny looking raxian
 M 0 42920 4 42907 100 0 0 0        * a smelly raxian
 M 0 42955 9 42907 100 0 0 0        * a gabber shrum
@@ -69,7 +69,7 @@ M 0 42919 4 42909 100 0 0 0        * a scrawny looking raxian
 M 0 42922 5 42909 100 0 0 0        * a pudgy raxian
 M 0 42901 4 42910 100 0 0 0        * a crazed raxian
 M 0 42908 8 42910 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42927 4 42910 100 0 0 0        * a baby raxian
 M 0 42928 8 42910 100 0 0 0        * some strange ooze
@@ -136,10 +136,10 @@ M 0 42948 1 42919 100 0 0 0        * a raxian pit fighter
 M 0 42923 4 42920 100 0 0 0        * a skinny raxian
 M 0 42917 5 42920 100 0 0 0        * a rather massive looking raxian
 M 0 42908 8 42921 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42909 6 42921 100 0 0 0        * a raxian guard
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 M 0 42912 1 42922 100 0 0 0        * Drustl, The Great Raxian Hunter
 E 1 42913 1 16 100 0 0 0           *   a curved silver longsword
 E 1 42914 1 17 100 0 0 0           *   a gleaming obsidian longsword
@@ -163,7 +163,7 @@ M 0 42928 8 42924 100 0 0 0        * some strange ooze
 M 0 42920 4 42924 100 0 0 0        * a smelly raxian
 M 0 42924 7 42924 100 0 0 0        * a large mobat
 M 0 42908 8 42924 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42955 9 42924 100 0 0 0        * a gabber shrum
 M 0 42926 6 42924 100 0 0 0        * a rabid cave bat
@@ -176,27 +176,27 @@ M 0 42910 7 42926 100 0 0 0        * a raxian warrior
 E 1 42909 999 16 100 0 0 0         *   a crude rock club
 M 0 42920 4 42926 100 0 0 0        * a smelly raxian
 M 0 42909 6 42927 100 0 0 0        * a raxian guard
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 M 0 42921 3 42927 100 0 0 0        * a disfigured raxian
 M 0 42926 6 42927 100 0 0 0        * a rabid cave bat
 M 0 42955 9 42927 100 0 0 0        * a gabber shrum
 M 0 42916 6 42928 100 0 0 0        * a shady looking raxian
 M 0 42909 6 42928 100 0 0 0        * a raxian guard
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 M 0 42955 9 42928 100 0 0 0        * a gabber shrum
 M 0 42903 1 42929 100 0 0 0        * Trosat, The Witch Doctor
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42923 1 18 100 0 0 0           *   a soulstone totem
 M 0 42910 7 42930 100 0 0 0        * a raxian warrior
 E 1 42909 999 16 100 0 0 0         *   a crude rock club
 M 0 42911 7 42930 100 0 0 0        * a short and stocky raxian
 M 0 42928 8 42931 100 0 0 0        * some strange ooze
 M 0 42909 6 42931 100 0 0 0        * a raxian guard
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 M 0 42955 9 42931 100 0 0 0        * a gabber shrum
 M 0 42901 4 42932 100 0 0 0        * a crazed raxian
 M 0 42908 8 42932 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42938 1 42933 100 0 0 0        * Dravkult, The Ancient One
 E 1 42943 1 3 100 0 0 0            *   a twisted wolf pendant
@@ -206,7 +206,7 @@ M 0 42916 6 42934 100 0 0 0        * a shady looking raxian
 M 0 42917 5 42934 100 0 0 0        * a rather massive looking raxian
 M 0 42916 6 42935 100 0 0 0        * a shady looking raxian
 M 0 42909 6 42936 100 0 0 0        * a raxian guard
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 M 0 42910 7 42936 100 0 0 0        * a raxian warrior
 E 1 42909 999 16 100 0 0 0         *   a crude rock club
 M 0 42924 7 42936 100 0 0 0        * a large mobat
@@ -215,7 +215,7 @@ M 0 42955 9 42936 100 0 0 0        * a gabber shrum
 M 0 42920 4 42937 100 0 0 0        * a smelly raxian
 M 0 42928 8 42937 100 0 0 0        * some strange ooze
 M 0 42908 8 42937 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42924 7 42938 100 0 0 0        * a large mobat
 M 0 42908 8 42938 100 0 0 0        * a raxian champion
@@ -224,7 +224,7 @@ M 0 42955 9 42938 100 0 0 0        * a gabber shrum
 M 0 42911 7 42939 100 0 0 0        * a short and stocky raxian
 M 0 42917 5 42940 100 0 0 0        * a rather massive looking raxian
 M 0 42908 8 42941 100 0 0 0        * a raxian champion
-E 1 42904 14 16 100 0 0 0          *   a primative rock club
+E 1 42904 14 16 100 0 0 0          *   a primitive rock club
 E 1 42909 999 17 100 0 0 0         *   a crude rock club
 M 0 42917 5 42942 100 0 0 0        * a rather massive looking raxian
 M 0 42924 7 42944 100 0 0 0        * a large mobat

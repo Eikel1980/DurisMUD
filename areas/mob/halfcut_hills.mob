@@ -7,8 +7,8 @@ An old, grizzled looking dwarf stands here.
 his face is almost hidden under a thick covering of steel-grey hair.
 The wrinkles on his face and body tell of many years of hard work.
 ~
-264202 0 0 33554440 0 0 0 400 S
-PM 0 0 -1
+264202 0 0 0 33554440 0 0 0 400 S
+PM 0 0 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 6 6 1
@@ -21,8 +21,8 @@ A dwarf lies here wounded.
 sheets and rags, his face half covered by a blood-soaked towel.  His
 eyes flicker open at your approach.
 ~
-264202 0 0 33554440 0 0 0 400 S
-PM 0 0 -1
+264202 0 0 0 33554440 0 0 0 400 S
+PM 0 0 0 -1
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -35,8 +35,8 @@ A dwarf stand in the &+Bstream&N here.
 cloth cut-off breeches.  He bends over the stream, peering down into it
 intently.
 ~
-264202 0 0 33554440 0 0 0 400 S
-PM 0 0 -1
+264202 0 0 0 33554440 0 0 0 400 S
+PM 0 0 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -49,8 +49,8 @@ A dwarf stands here, &+rwarming&N himself by the campire.
 campfire.  Lines around his facial features show his age, as well as
 the hardships his life have brought upon him.
 ~
-264202 0 0 33554440 0 0 0 400 S
-PM 0 1 -1
+264202 0 0 0 33554440 0 0 0 400 S
+PM 0 1 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -61,8 +61,8 @@ A dwarf stands here, looking bored.
 ~
    This dwarf stands, leaning on his pike here, looking fairly bored.
 ~
-264202 0 0 33554440 0 0 0 400 S
-PM 0 1 -1
+264202 0 0 0 33554440 0 0 0 400 S
+PM 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -75,8 +75,8 @@ A &+rkobold&N crouches here, eyes darting back and forth.
 snarl escapes over his fanged teeth as you gaze at him.  His tough,
 leathery hide has a slightly redish tint to it.
 ~
-264204 1 0 34078720 0 0 0 -800 S
-HG 0 0 -1
+264204 1 0 0 34078720 0 0 0 -800 S
+HG 0 0 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -89,8 +89,8 @@ A &+rkobold&N stands here, watching the area.
 snarl escapes over his fanged teeth as you gaze at him.  His tough,
 leathery hide has a slightly redish tint to it.
 ~
-264206 1 0 34078728 0 0 0 -800 S
-HG 0 0 -1
+264206 1 0 0 34078728 0 0 0 -800 S
+HG 0 0 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -103,8 +103,8 @@ A &+rkobold&N stands here glaring.
 snarl escapes over his fanged teeth as you gaze at him.  His tough,
 leathery hide has a slightly redish tint to it.
 ~
-264204 1 0 34078720 0 0 0 -800 S
-HG 0 0 -1
+264204 1 0 0 34078720 0 0 0 -800 S
+HG 0 0 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -117,8 +117,8 @@ A &+rkobold&N crouches here.
 snarl escapes over his fanged teeth as you gaze at him.  His tough,
 leathery hide has a slightly redish tint to it.
 ~
-264207 1 0 34078720 0 0 0 -800 S
-HG 0 1 -1
+264207 1 0 0 34078720 0 0 0 -800 S
+HG 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -131,8 +131,8 @@ kobold krinda~
 tall.  His leathery hide is tough, and scarred from many years of
 conflict.  A large &+Lgrey&N mane of hair flows off his neck and back.
 ~
-1074006030 1 0 34078728 0 0 0 -1000 S
-HG 0 1 -1
+1074006030 1 0 0 34078728 0 0 0 -1000 S
+HG 0 1 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -146,8 +146,8 @@ attire.  Some craftsmanship has gone into their make.  Though small,
 his eyes &+rburn&N with the same evilness of all other kobolds.  The hatred
 and urge to kill is apparent as he snarls at you.
 ~
-1074006028 1 0 34144264 0 0 0 -400 S
-HG 0 256 -1
+1074006028 1 0 0 34144264 0 0 0 -400 S
+HG 0 256 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -160,8 +160,8 @@ kobold grindor~
 snarl escapes over his fanged teeth as you gaze at him.  His tough,
 leathery hide has a slightly redish tint to it.
 ~
-33818638 1 0 302514184 0 0 0 -400 S
-HG 0 512 -1
+33818638 1 0 0 302514184 0 0 0 -400 S
+HG 0 512 0 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -174,8 +174,8 @@ An elite &+rkobold&N guard stands at the kings side.
 armor, seemingly held together by the matts in its fur.  It sneers at
 you in contempt.
 ~
-67373070 1 0 34078720 0 0 0 -400 S
-HG 0 16384 -1
+67373070 1 0 0 34078720 0 0 0 -400 S
+HG 0 16384 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -189,8 +189,8 @@ he views himself.  He stands an impressive four and a half feet tall,
 but the decorative bits of bone and fur woven into his fuzzy mane make
 him appear slightly taller.
 ~
-264206 1 0 34078744 0 0 0 -400 S
-HG 0 1 -1
+264206 1 0 0 34078744 0 0 0 -400 S
+HG 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -203,8 +203,8 @@ A huge ape stands here, barely holding in its berserk frenzy.
 from leaving the room, but it looks as if it will rip your &+rarms&N from
 their sockets if you stand here long!
 ~
-2058 1 0 34078720 0 0 0 0 S
-AA 0 0 -1
+2058 1 0 0 34078720 0 0 0 0 S
+AA 0 0 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -217,8 +217,8 @@ kobold slurg~
 stream of spittle drips from the edge of his mouth, and his eyes glint
 evilly as he turns to you.
 ~
-264206 1 0 34078728 0 0 0 -400 S
-HG 0 16384 -1
+264206 1 0 0 34078728 0 0 0 -400 S
+HG 0 16384 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -231,8 +231,8 @@ kobold falu~
 his leathery hide, making him appear almost &+rrust&N colored.  His face
 breaks into a pointy, menacing grin as you glance at him.
 ~
-264206 1 0 34078728 0 0 0 -400 S
-HG 0 16384 -1
+264206 1 0 0 34078728 0 0 0 -400 S
+HG 0 16384 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -245,8 +245,8 @@ kobold ragget~
 stream of spittle drips from the edge of his mouth, and his eyes glint
 evilly as he turns to you.
 ~
-264207 0 0 34078728 0 0 0 -400 S
-HG 0 16384 -1
+264207 0 0 0 34078728 0 0 0 -400 S
+HG 0 16384 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -259,8 +259,8 @@ kobold karfoc~
 stream of spittle drips from the edge of his mouth, and his eyes glint
 evilly as he turns to you.
 ~
-1107560460 0 0 303562760 0 0 0 -1000 S
-HG 0 4096 -1
+1107560460 0 0 0 303562760 0 0 0 -1000 S
+HG 0 4096 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -274,8 +274,8 @@ natural mutation, or by some dark magics, &+WKrimors&N horns grow much
 larger than the typical stubs of kobolds.  Coming out of his head
 almost minotaur like, they give him a very fierce appearance indeed.
 ~
-1074006028 1 0 34078728 0 0 0 -400 S
-HG 0 1 -1
+1074006028 1 0 0 34078728 0 0 0 -400 S
+HG 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -288,8 +288,8 @@ A &+rkobold&N crouches here.
 snarl escapes over his fanged teeth as you gaze at him.  His tough,
 leathery hide has a slightly redish tint to it.
 ~
-264207 1 0 34078720 0 0 0 -800 S
-HG 0 1 -1
+264207 1 0 0 34078720 0 0 0 -800 S
+HG 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -302,8 +302,8 @@ A giant &+Lspider&N raises its mandibles to attack!
 its long, spindly legs.  Its jaws click evilly, and a baleful light
 shines from its many-faceted &+Yeyes&N.
 ~
-2056 1 0 33554432 0 0 0 -500 S
-AS 0 0 6
+2056 1 0 0 33554432 0 0 0 -500 S
+AS 0 0 0 6
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -315,8 +315,8 @@ a carrion crawler~
    This arachnid is almost 6 feet long.  At the base of its head many
 long tentacles wave about, looking for some poor adventurer to devour.
 ~
-2057 1 0 33554432 0 0 0 -400 S
-AS 0 0 3
+2057 1 0 0 33554432 0 0 0 -400 S
+AS 0 0 0 3
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -328,8 +328,8 @@ A large &+Ytiger&N stands here, ready to pounce.
    This tigers teeth protude from its muzzle almost a foot in length.
 It stalks along the trail cautionsly, looking for prey.
 ~
-2056 0 0 33554432 0 0 0 0 S
-A 0 0 3
+2056 0 0 0 33554432 0 0 0 0 S
+A 0 0 0 3
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -343,8 +343,8 @@ tough grey hide is dusty, and its enormous head swishes back and
 forth, trying to pick up the scent of its prey.  Suddenly, it catches
 wind of you, and attacks!
 ~
-2056 1 0 33554432 0 0 0 0 S
-A 0 1 5
+2056 1 0 0 33554432 0 0 0 0 S
+A 0 1 0 5
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -357,8 +357,8 @@ A &+rkobold&N sneaks along here warily.
 ground for tracks.  He is dressed in plain &+yleather&N tunic and breeches,
 and has a large, straw hat shielding his eyes from the sun.
 ~
-2056 0 0 33554432 0 0 0 -400 S
-HG 0 2 -1
+2056 0 0 0 33554432 0 0 0 -400 S
+HG 0 2 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -371,8 +371,8 @@ a hill giant~
 coveres yards as he strides towards you, his massive arms swinging a
 club over his head.  He bellows loudly "Aaaaough".
 ~
-2056 1 0 33554432 0 0 0 -300 S
-G 0 0 -1
+2056 1 0 0 33554432 0 0 0 -300 S
+G 0 0 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -385,8 +385,8 @@ goblin~
 you approach.  He squints his beedy eyes, and the green skin on his
 forehead wrinkles nervously.
 ~
-2056 1 0 33554432 0 0 0 0 S
-A 0 0 -1
+2056 1 0 0 33554432 0 0 0 0 S
+A 0 0 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -399,8 +399,8 @@ ghoul~
 force.  Scavenging for carrion, or live meat, its existence is a plague
 to those still blessed with life.
 ~
-1073743885 1 0 34144264 262144 0 0 -1000 S
-U 0 0 -1
+1073743885 1 0 0 34144264 262144 0 0 -1000 S
+U 0 0 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -413,8 +413,8 @@ wight~
 exists fueled by a hatred for all living things.  Its wicked claws
 bared, and a eery hiss of air escapes between its tattered lips.
 ~
-2057 1 0 33554432 0 0 0 0 S
-U 0 0 -1
+2057 1 0 0 33554432 0 0 0 0 S
+U 0 0 0 -1
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -428,8 +428,8 @@ typical wood skunk.  Black fur, with twin white stripes covers its
 body, and its nose quivers as it detects your scent.  It looks up at
 you curiously.
 ~
-2057 0 0 33554432 0 0 0 0 S
-A 0 0 4
+2057 0 0 0 33554432 0 0 0 0 S
+A 0 0 0 4
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -442,8 +442,8 @@ remi threepockets~
 wears show her to be a woman of some strong faith.  She smiles warmly
 at your approach.
 ~
-1073743881 0 0 301990046 2050 0 0 1000 S
-PG 0 128 -1
+1073743881 0 0 0 301990046 2050 0 0 1000 S
+PG 0 128 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -457,8 +457,8 @@ breastplate shines with his crest of the &+rBlazing Bovine&N.  Well known
 for his adventures in the underdark, he seems out of place in an area
 as tame as the &+yHalfcut&N Hills.
 ~
-1073743881 0 0 301990046 2050 0 0 300 S
-PH 0 1 -1
+1073743881 0 0 0 301990046 2050 0 0 300 S
+PH 0 1 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -471,8 +471,8 @@ a'den aden bard~
 and has a charming gleam in his eye.  Very sure of himself, he nods at
 your approach.
 ~
-1073743881 0 0 301990046 2050 0 0 300 S
-PE 0 32768 -1
+1073743881 0 0 0 301990046 2050 0 0 300 S
+PE 0 32768 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -485,8 +485,8 @@ silverlinks assassin~
 moves almost catlike around the area, suspicion in her every move.  Her
 pale skin flashes in the light as she passes you by.
 ~
-1073743881 0 0 303562910 2050 0 0 300 S
-PE 0 8192 -1
+1073743881 0 0 0 303562910 2050 0 0 300 S
+PE 0 8192 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -499,8 +499,8 @@ ape carnivorous~
 dark brown fur, and its yellow fangs show it to be a carnivore.  It
 stands to its full height and lets out a thunderous ROAR.
 ~
-2056 1 0 33554432 0 0 0 0 S
-A 0 0 4
+2056 1 0 0 33554432 0 0 0 0 S
+A 0 0 0 4
 22 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -513,8 +513,8 @@ leucrotta~
 five feet tall at the shoulder.  Its body is lean and strong, and a
 wicked intellegence flashes in its &+reyes&N.
 ~
-2056 1 0 33554432 0 0 0 0 S
-A 0 0 4
+2056 1 0 0 33554432 0 0 0 0 S
+A 0 0 0 4
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -527,8 +527,8 @@ A fierce &+Bmanticore&N stands here, growling at you.
 long tail, with a hard, spikey tip twitches nervously over its head.
 It looks at you evilly, and roars to attack!
 ~
-2058 1 0 33554432 0 0 0 0 S
-AC 0 0 5
+2058 1 0 0 33554432 0 0 0 0 S
+AC 0 0 0 5
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -541,8 +541,8 @@ A fierce &+Bmanticore&N stands here, growling at you.
 long tail, with a hard, spikey tip twitches nervously over its head.
 It looks at you evilly, and roars to attack!
 ~
-2056 1 0 33554432 0 0 0 0 S
-AC 0 0 5
+2056 1 0 0 33554432 0 0 0 0 S
+AC 0 0 0 5
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -555,8 +555,8 @@ A &+rHUGE&N &+bmanticore&N stands here glaring at you.
 long tail, with a hard, spikey tip twitches nervously over its head.
 It looks at you evilly, and roars to attack!
 ~
-2056 1 0 33554432 0 0 0 0 S
-AC 0 0 5
+2056 1 0 0 33554432 0 0 0 0 S
+AC 0 0 0 5
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -569,8 +569,8 @@ A fierce &+Bmanticore&N stands here, growling at you.
 long tail, with a hard, spikey tip twitches nervously over its head.
 It looks at you evilly, and roars to attack!
 ~
-2056 1 0 33554432 0 0 0 0 S
-AC 0 0 5
+2056 1 0 0 33554432 0 0 0 0 S
+AC 0 0 0 5
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -583,8 +583,8 @@ A fierce &+bmanticore&N rests on its haunchers here.
 long tail, with a hard, spikey tip twitches nervously over its head.
 It looks at you evilly, and roars to attack!
 ~
-2058 1 0 33554432 0 0 0 0 S
-AC 0 0 5
+2058 1 0 0 33554432 0 0 0 0 S
+AC 0 0 0 5
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -597,8 +597,8 @@ A fierce &+Bmanticore&N rests on its haunches here.
 long tail, with a hard, spikey tip twitches nervously over its head.
 It looks at you evilly, and roars to attack!
 ~
-2058 1 0 33554432 0 0 0 0 S
-AC 0 0 5
+2058 1 0 0 33554432 0 0 0 0 S
+AC 0 0 0 5
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -611,8 +611,8 @@ An evil &+Rharpy&N perches on a branch here.
 bird.  By the look of the entrails splattered around its perch, it
 feeds on flesh, both living and dead.
 ~
-2056 1 0 33554432 0 0 0 0 S
-B 0 0 3
+2056 1 0 0 33554432 0 0 0 0 S
+B 0 0 0 3
 23 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -625,8 +625,8 @@ An evil &+Rharpy&N perches on a branch here.
 bird.  By the look of the entrails splattered around its perch, it
 feeds on flesh, both living and dead.
 ~
-2056 1 0 33554432 0 0 0 0 S
-B 0 0 3
+2056 1 0 0 33554432 0 0 0 0 S
+B 0 0 0 3
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1

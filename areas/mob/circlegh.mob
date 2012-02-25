@@ -6,8 +6,8 @@ ratatoskr store squirrel~
 &+L   Looking up from sorting all the stuff here the &+ysqui&+Yr&+yr&+Ye&+yl &+Lgrunts and
 &+Lsqueaks&+w, "What do you want I am a little busy here."
 ~
-8266 128 0 0 0 0 0 1000 S
-A 0 0 3
+8266 128 0 0 0 0 0 0 1000 S
+A 0 0 0 3
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -19,8 +19,8 @@ norn golem urd guardian _nobutt_ assoc2_n_0~
 &+w   Urd&+L seems rather preoccupied.  She appears to be discussing what
 &+Ldestiny they should give to a newly born hero of the lands.
 ~
-74975050 65536 0 268443704 0 0 0 0 S
-OG 0 512 7
+74975050 65536 0 0 268443704 0 0 0 0 S
+OG 0 512 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -32,8 +32,8 @@ norn golem skuld guardian _nobutt_ assoc2_n_0~
 &+L   &+wSkuld &+Llooks to be ignoring her sisters, and appears to more
 &+Lintersted in looking into the past for signs of the future.
 ~
-71327818 0 4194304 469770328 0 0 0 0 S
-OG 0 32 7
+71327818 0 4194304 0 469770328 0 0 0 0 S
+OG 0 32 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -46,8 +46,8 @@ norn golem verdandi guardian _nobutt_ assoc2_n_0~
 &+Lrather personaly as she is here screaming trying to get her sister to
 &+Lagree with her.
 ~
-71311946 0 0 469770360 0 0 0 0 S
-OG 0 512 7
+71311946 0 0 0 469770360 0 0 0 0 S
+OG 0 512 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -60,8 +60,8 @@ goat heidrun golem guardian _nobutt_ assoc2_n_0~
 &+wfood.  Heidrun looks everywhere for anything that could be considered
 &+wedible.
 ~
-4194890 0 0 469762104 0 0 0 1000 S
-OG 0 1 7
+4194890 0 0 0 469762104 0 0 0 1000 S
+OG 0 1 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -76,8 +76,8 @@ golem sunbean _nobutt_ assoc2_n_0 br_c~
 &+Yis be&+Wn&+Cev&+Yolent.  B&+Wu&+Yt to th&+Wo&+Yse who have m&+Wad&+Ye themselves an &+Men&+me&+Mmy,&+Y it is a&n
 &+Yfears&+Wom&+Ye crea&+Wt&+Yure indeed.
 ~
-113261131 0 0 939597884 14556 0 0 0 S
-OG 0 512 7
+113261131 0 0 0 939597884 14556 0 0 0 S
+OG 0 512 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -92,8 +92,8 @@ golem moonbeam _nobutt_ br_c assoc2_n_0~
 &+wwelc&+Wo&+wme most th&+Wa&+wt enter th&+We a&+wrea it pr&+Wote&+wcts, it will &+rfi&+yerc&+rel&+yy at&+rta&+yck&+w any that&n
 &+whave m&+Wad&+we the&+Wms&+Welves &+Men&+memi&+Me&+ms.&n
 ~
-113277515 0 0 939597884 14556 0 0 0 S
-OG 0 512 7
+113277515 0 0 0 939597884 14556 0 0 0 S
+OG 0 512 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -110,8 +110,8 @@ golem willow weeping _nobutt_ assoc2_n_0 br_c~
 &+beyes &+gfilled wi&+Gth &+Yw&+gisd&+Gom &+Gand c&+Yo&+Gmp&+gassion show. Th&+Gen &+rri&+Rght&+reous &+Rfu&+rry &+gat unwanted&n
 &+gint&+yru&+Gd&+gers a&+ylso f&+Gil&+Yl&+gs her g&+yi&+gant &+beyes.&n
 ~
-113277515 0 0 939597884 47324 0 0 1000 S
-OG 0 32 7
+113277515 0 0 0 939597884 47324 0 0 1000 S
+OG 0 32 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -127,8 +127,8 @@ golem cypress br_c _nobutt_ assoc2_n_0~
 &+gfor him to w&+ya&+gtch o&+gver t&+ghe area a&+Yn&+gd when he s&+Yp&+gots &+Men&+mem&+Mie&+ms,&+g he imme&+Yd&+giately moves&n
 &+gto pro&+Yte&+gct th&+Gose &+gin his care.&n
 ~
-113277515 0 0 939598012 14556 0 0 0 S
-OG 0 1 7
+113277515 0 0 0 939598012 14556 0 0 0 S
+OG 0 1 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -146,8 +146,8 @@ golem wolf snow br_c assoc2_n_0 _nobutt_~
 &+whigh &+ymountains&+w chasi&+Wn&+wg prey, i&+Wt&+w is content he&+Wr&+we, standing a vi&+Wg&+wilant wat&+Wch&n
 &+Wwa&+wtch over the &+Wo&+wthers.&n
 ~
-113277515 0 0 939597852 14556 0 0 0 S
-OG 0 1 6
+113277515 0 0 0 939597852 14556 0 0 0 S
+OG 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -162,8 +162,8 @@ snow snowy owl golem br_c _nobutt_ assoc2_n_0~
 &+Wwith a few bars of &+Lblack&+w near t&+Wh&+we wing tips.  Its &+yclaws&+w and &+ybeak&+w are hu&+Wg&+we and&n
 &+wvery sha&+Wr&+wp, able to easily rip apart a&+Wn&+wy who would fi&+Wgh&+wt it.&n
 ~
-113277515 0 0 939597852 47324 0 0 1000 S
-OG 0 32 6
+113277515 0 0 0 939597852 47324 0 0 1000 S
+OG 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -180,8 +180,8 @@ golem pine tree br_c _nobutt_ assoc2_n_0~
 &+gwearing warm enough cl&+Go&+gthing.  Though its many branch&+G&+g have a thick coatin&+Gg&n
 &+gof &+Gp&+gi&+Gne needles,&+g none have fa&+Gll&+gen to coat the floor.&n
 ~
-113277515 0 0 939597852 14556 0 0 0 S
-OG 0 512 6
+113277515 0 0 0 939597852 14556 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -197,8 +197,8 @@ golem moss mossy boulder br_c _nobutt_ assoc2_n_0~
 &+yof the &+rr&+yock face un&+gt&+yil it moves.  It al&+rs&+yo has two flat, &+Lblack eyes&+y that open&n
 &+ywhen i&+gt&+y moves &+ra&+ybout.&n
 ~
-113277515 0 0 939597852 14556 0 0 0 S
-OG 0 512 6
+113277515 0 0 0 939597852 14556 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

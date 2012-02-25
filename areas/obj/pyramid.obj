@@ -5,7 +5,7 @@ A small section of wood lays comfortably here.~
 ~
 12 6 1 0 7 0 8486920 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 50 100
+1 50 100 100
 E
 wood section~
    This small piece of &+ywood&n appears to be a piece of a larger object,
@@ -18,7 +18,7 @@ A sarcophagus rests on the floor here.~
 ~
 15 11 4 0 11 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sarcophagus~
    This &+Lstone&n sarcophagus is incredibly heavy, with a thick stone lid. It
@@ -31,7 +31,7 @@ A bird's nest rests in a tree here.~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 2 0 0 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 nest~
    This small nest seems to have been abandoned temporarily. Who knows when the
@@ -44,7 +44,7 @@ A &+Ls&+Wp&+Le&+Wc&+Lk&+Wl&+Le&+Wd&n egg rests here.~
 ~
 12 45 1 0 7 0 8454152 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 egg~
    This mostly &+Wwhite&n egg has small &+Lblack&n specks all over it.
@@ -56,7 +56,7 @@ A &+Bblue&n egg rests here.~
 ~
 12 45 1 0 7 0 8454152 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 egg~
    This egg has a light &+Bblue&n hue to it.
@@ -68,7 +68,7 @@ A &+Wwhite&n egg rests here.~
 ~
 12 45 1 0 7 0 8454152 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 egg~
    This egg is a milky &+Wwhite&n color.
@@ -80,7 +80,7 @@ A &+ybrown&n egg rests here.~
 ~
 12 45 1 0 7 0 8454152 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 egg~
    This egg is &+ybrown&n in color.
@@ -92,7 +92,7 @@ An &+Liron&n skillet lies on the floor here, discarded.~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 10 1 6 7 0 0 0 0
-5 1500 100
+5 1500 100 100
 E
 skillet~
    This looks like a plain &+Liron&n cooking skillet, but wow would it hurt if
@@ -105,7 +105,7 @@ A hunting knife sits here, with the blade in the ground.~
 ~
 5 16 2 0 7 0 16778240 8193 0 96071707 0
 2 2 3 11 0 0 0 0
-1 500 100
+1 500 100 100
 E
 knife hunting~
    This knife is razor sharp on the cutting side of the blade. It is precisely
@@ -118,7 +118,7 @@ A &+Mglowing&n gypsy bracelet lies here.~
 ~
 9 11 2 0 11 0 8192 4097 64 0 0
 5 11 1 3 0 0 0 0
-0 11000 100
+0 11000 100 100
 E
 bracelet~
    A small &+Mglow&n surrounds the otherwise ordinary-looking bracelet.
@@ -134,7 +134,7 @@ A small hammer lies discarded here.~
 ~
 5 11 3 0 7 0 0 8193 0 0 0
 4 2 4 7 0 0 0 0
-8 2000 100
+8 2000 100 100
 E
 hammer~
    This small hammer appears to have been carved from a single piece of &+Lstone&n.
@@ -147,7 +147,7 @@ A wooden spear lies discarded here.~
 ~
 5 6 3 0 7 0 4195328 8193 0 96071707 0
 8 2 6 11 0 0 0 0
-6 8000 100
+6 8000 100 100
 E
 spear~
    This normal &+ywooden&n spear has been made a little more deadly with the
@@ -160,7 +160,7 @@ A sharp looking steel spike lies here.~
 ~
 5 16 3 0 10 0 0 8193 64 4194697696 0
 2 2 5 11 0 0 0 0
-2 6700 100
+2 6700 100 100
 E
 spike steel~
    This spike has jagged edges down all sides of it, terminating at a single
@@ -175,7 +175,7 @@ A small piece of &+Lblack stone&n lies here.~
 ~
 9 11 1 0 10 0 0 524289 64 0 0
 1 14 0 2 0 0 0 0
-0 9230 100
+0 9230 100 100
 E
 stone earring~
    This small piece of &+Lstone&n has a &+Csteel&n post so it can be worn as an earring.
@@ -189,7 +189,7 @@ A small torch is here, burning a &+Bblue&n flame.~
 ~
 12 6 2 0 7 0 262144 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 torch~
    This normal-looking piece of &+ywood&n burns with a soft &+Bblue&n light.
@@ -201,7 +201,7 @@ An axe lies here, covered in &+Cfrost&n.~
 ~
 5 22 3 0 12 0 4195344 8193 67 87556123 0
 1 3 8 3 0 0 0 0
-10 27343 100
+10 27343 100 100
 E
 axe~
    This heavy, two-handed axe is warm to the touch on the handle, yet a thick
@@ -218,7 +218,7 @@ a small piece of &+Lstone&n lies on the ground here.~
 ~
 5 11 3 0 4 0 0 8193 0 4194697696 0
 2 1 2 11 0 0 0 0
-2 1 100
+2 1 100 100
 E
 piece stone~
    This small &+Lstone&n chip looks just big enough to use as a weapon.
@@ -230,7 +230,7 @@ A small ring lies here.~
 ~
 9 8 1 0 8 0 0 3 64 0 0
 3 1 0 2 0 0 0 0
-0 5700 100 8192 0 0 0
+0 5700 100 100 8192 0 0 0
 E
 ring~
    This small ring is infinately adjustable so it can fit over any size finger.
@@ -244,7 +244,7 @@ A twisted staff lies here, looking for a new owner.~
 ~
 4 6 3 0 12 0 106505 16385 64 0 0
 40 1 1 28 0 0 0 0
-2 28000 100
+2 28000 100 100
 E
 staff~
    This staff appears to have been constructed from three smaller pieces of
@@ -257,7 +257,7 @@ An apology letter lies discarded here.~
 ~
 16 28 1 0 7 0 8912904 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 letter~
    This is a letter written to Goar from his father, Krodn, apologizing for
@@ -270,7 +270,7 @@ A small &+Csteel&n chest sits in the corner.~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 20 5 0 20 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chest~
    Krodn uses this small chest to hold his personal belongings.
@@ -282,7 +282,7 @@ A chunk of deer meat lies discarded here.~
 ~
 19 2 2 0 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 meat deer~
    This large piece of deer meat looks very tasty.
@@ -294,7 +294,7 @@ band light~
 ~
 9 1 3 0 5 0 262145 3 0 0 0
 5 0 0 0 0 0 0 0
--10 5000 100
+-10 5000 100 100
 E
 band light~
    &+WThis band of light is blazing with brightness.

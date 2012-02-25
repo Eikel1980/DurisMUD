@@ -103,7 +103,7 @@ qc_action 80~
 ~
 M
 fish artsy items trade~
-&+BBom&n says, "I am a great lover of the art they do around here 
+&+BBom&n says, "I am a great lover of the art they do around here
 but my talents lie in my fishing skills. I would trade you some
 fish I caught for something nice to hang in my cabin."
 ~
@@ -112,7 +112,7 @@ hi hello~
 Bom nods at you, "Hi there. Lovely day we're having."
 ~
 Q
-"Oh what a nice painting this is!" &+BBom&n sets the picture aside and takes out some fish and hands them to you. "Now these will help your 
+"Oh what a nice painting this is!" &+BBom&n sets the picture aside and takes out some fish and hands them to you. "Now these will help your
 health some, make sure you eat them soon ok?"
 ~
 R I 318
@@ -158,7 +158,7 @@ S
 #29454
 M
 qc_action 56~
-The &+GLeprechaun&n takes a puff of his pipe and says, "Ye bring me a pot of 
+The &+GLeprechaun&n takes a puff of his pipe and says, "Ye bring me a pot of
 &+Ygold&n and I'll give you a lucky clover."
 ~
 Q

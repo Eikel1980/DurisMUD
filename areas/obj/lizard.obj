@@ -5,7 +5,7 @@ a &+Lnecklace of dangling &+yrat&+W skulls&n~
 ~
 9 10 4 0 15 90 64 5 0 0 0
 6 0 0 3 0 0 0 0
-5 8157 100
+5 8157 100 100
 E
 necklace skulls rat~
 &+L   Bound by a string of brown &+yleather&+L, three rat &+Wskulls&+L form the bulk of this
@@ -24,7 +24,7 @@ the &+Cshi&+celd&+L of the &+GCl&+ga&+Gv&+gik&+Go&+grd&n~
 ~
 37 10 3 0 7 0 0 513 0 0 0
 1 1 3 120 4 1 0 0
-15 1858 100 65536 0 0 0
+15 1858 100 100 65536 0 0 0
 E
 shield clavikord~
 &+L   The &+Cshi&+celd&+L of the &+GCl&+ga&+Gv&+gi&+Gko&+grd&+L was crafted by the revenant blacksmith &+rJiktar&+L,
@@ -44,7 +44,7 @@ a &+Lwormrotted &+ysign&n~
 ~
 5 6 3 0 7 0 0 8193 0 2013167618 3983
 10 2 6 7 0 0 0 0
-20 0 100
+20 0 100 100
 E
 sign large~
 &+y                                     ,--.
@@ -64,7 +64,7 @@ the &+cshar&+Ck&+Wbone&+L bracelet of the &+wwight&n~
 ~
 9 10 3 0 7 0 3236544 4097 0 268504848 0
 5 0 0 3 0 0 0 0
-3 122955 100
+3 122955 100 100
 E
 bracelet sharkbone wight worked~
 &+L   Formed from fused &+cshar&+Ck&+W ribs&+L, this &+Wbracelet&+L has been worked by the skilled
@@ -84,7 +84,7 @@ a pair of &+Lspiked &+wstone&+L boots&n~
 ~
 9 11 3 0 7 0 16384 65 0 0 267
 15 0 0 3 0 0 0 0
-15 1 100
+15 1 100 100
 E
 boots stone spiked~
 &+L   Made of carved &+wstone&+L, these odd looking boots don't look very comfortable,
@@ -101,7 +101,7 @@ the &+rbl&+Ro&+ro&+Rdy&+L head of &+WBemon&n~
 ~
 12 2 3 0 15 0 4096 8404993 0 0 0
 0 0 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 head bloody severed bemon~
 &+L   His proud &+yeyes&+L loose in their focus, and his once intelligent &+Rto&+rn&+Rg&+rue&+L now
@@ -116,7 +116,7 @@ an &+rensanguined&+L leather eyepatch&n~
 ~
 9 13 3 0 7 0 65536 131073 0 0 0
 3 0 0 3 0 0 0 0
-2 1275 100
+2 1275 100 100
 E
 eyepatch leather ensanguined bloody~
 &+L   This leather eyepatch is covered in &+Rbl&+ro&+Ro&+rd&+L.  Who's &+Rbl&+ro&+Ro&+rd&+L you do not know, but
@@ -131,7 +131,7 @@ a &+Lbracelet of &+msh&+Ma&+md&+Mow&+ms&n~
 ~
 9 1 3 0 7 0 213056 4097 0 268558336 0
 5 0 0 3 0 0 0 0
-5 1 100
+5 1 100 100
 E
 bracelet shadows~
 &+L   Crafted from &+msh&+Ma&+md&+Mow&+ms&+L, this bracelet seems to be contained by &+mmagic&+L and bent
@@ -149,7 +149,7 @@ the &+Rse&+rv&+Re&+rre&+Rd&+L head of &+gSslith&n~
 ~
 12 2 3 0 15 0 4096 8404993 0 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 head severed sslith~
 &+L   Its eyes locked in a ferocious glare even in death, this severed li&+wz&+La&+wrd&+Lman
@@ -163,7 +163,7 @@ a &+Lbracelet of &+cli&+Cg&+ch&+Cts&n~
 ~
 9 1 3 0 7 0 0 4097 0 1073741824 0
 5 0 0 3 0 0 0 0
-5 1 100
+5 1 100 100
 E
 bracelet lights~
 &+L   Crafted from &+cli&+Cg&+ch&+Cts&+L, this bracelet seems to be contained by &+cmagic&+L and bent
@@ -181,7 +181,7 @@ sslithian pool~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 6103 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sslithian pool~
    &+gThis large pool is made of a murky &+Ggreen&+g liquid that is &+Lthick
@@ -195,7 +195,7 @@ sslithian pool~
 ~
 25 15 3 0 7 0 1 0 0 0 0
 6102 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sslithian pool~
    &+gThis large pool is made of a murky &+Ggreen&+g liquid that is &+Lthick
@@ -209,7 +209,7 @@ tako skull witchdoctor's totem~
 ~
 34 15 3 0 7 0 1 16385 64 0 0
 51 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tako skull witchdoctor's totem~
    &+LThis tako skull has been mounted onto a wooden shaft, and blessed by the lizardman
@@ -226,7 +226,7 @@ snapjaw-shell snapjaw shell arm plates~
 ~
 9 15 3 0 7 0 0 257 0 0 0
 10 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 snapjaw-shell snapjaw shell arm plates~
    &+LThese armplates have been made with the salved shells of some snapjaw turtles.

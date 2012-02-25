@@ -5,7 +5,7 @@ shiny plaque~
 ~
 12 16 3 0 7 0 12288 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 25
+0 0 25 100
 E
 shiny plaque~
 ²²²²²²²²²²²²²²±±±±±±±±±
@@ -29,7 +29,7 @@ rusty lever~
 ~
 29 15 3 0 7 0 4128 0 0 0 0
 340 77721 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rusty lever~
 Made of forged steel, this rusted lever was concealed under a pile of
@@ -42,7 +42,7 @@ tiny ring magical platinum _id_~
 ~
 9 25 3 1 13 30 0 3 66 0 0
 10 1 0 3 0 0 0 0
-0 14920 100
+0 14920 100 100
 E
 _id_short_~
 &+Wa &+bma&+Bgic&+bal&+W ring of war&n
@@ -63,7 +63,7 @@ bag torn canvas dirty _id_~
 ~
 15 3 0 1 7 0 4128 8388609 0 0 0
 200 5 0 200 0 0 0 0
-1 8000 35
+1 8000 35 100
 E
 _id_short_~
 &+CA ritual bag&n
@@ -81,7 +81,7 @@ pile dust~
 ~
 13 1 3 0 7 0 524288 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pile dust~
    &+LJust an old pile of dust.&n
@@ -93,7 +93,7 @@ hook steel~
 ~
 5 16 3 0 7 0 8392704 8193 0 0 0
 17 2 3 3 0 0 0 0
-0 20250 100
+0 20250 100 100
 E
 hook steel~
    &+CINCREDIBLY sharp, this hook could slice a thin hair down the&n
@@ -110,7 +110,7 @@ A bunch of razor sharp hooks are here, obstructing safe passage.~
 ~
 14 16 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hooks~
    This is to be a decent damage dealing trap.
@@ -124,7 +124,7 @@ wooden table~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden table~
 &+y   Well, it's made of wood, and consists of four legs and a flat circular&n
@@ -137,7 +137,7 @@ dark circlet stone granite~
 ~
 9 37 3 4 12 0 164864 5 64 87556123 0
 10 0 0 5 0 0 0 0
-10 45000 100 0 64 0 0
+10 45000 100 100 0 64 0 0
 E
 dark circlet stone granite~
 &+L   Smoothed to a perfect finish, this mirror-polished granite circlet can be&n
@@ -155,7 +155,7 @@ A small fireplace is embedded within the far wall.~
 ~
 15 11 3 0 7 0 1024 0 0 0 0
 600 0 0 600 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small fireplace~
    Made of silver covered bricks, this is a very nice fireplace indeed.  It
@@ -171,7 +171,7 @@ pile soot~
 ~
 13 1 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pile soot~
 &+L   This soot is DIRTY!  Get rid of it!&n
@@ -183,7 +183,7 @@ book _id_~
 ~
 12 28 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1248 15
+0 1248 15 100
 E
 _id_name_~
 ancient diary book
@@ -237,7 +237,7 @@ tiny steel necklace _id_~
 ~
 12 16 3 0 15 0 0 5 64 0 0
 0 0 0 0 0 0 0 0
-0 30000 100
+0 30000 100 100
 E
 _id_name_~
 mechanical chain
@@ -257,7 +257,7 @@ bag~
 ~
 13 3 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 123 100
+0 123 100 100
 E
 bag~
   Well, it's a bag, and it's full of gorgon scales.
@@ -269,7 +269,7 @@ the entrance to the waterfall~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 77813 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 waterfall~
    No-show, this is just here to actuate the enter WATERFALL command.
@@ -281,7 +281,7 @@ mask watery ice~
 ~
 9 40 3 0 7 0 9216 262145 2 3272770 16640
 10 0 0 5 0 0 0 0
-0 20000 100 0 64 0 0
+0 20000 100 100 0 64 0 0
 E
 mask watery ice~
 &+C   Magical in nature, this mask is _extremely_ cold.  Much like a disc&n
@@ -298,7 +298,7 @@ feather fire~
 ~
 9 50 3 0 7 0 168960 524289 0 384 0
 8 14 0 1 0 0 0 0
-0 20000 100 536870912 0 0 0
+0 20000 100 100 536870912 0 0 0
 E
 feather fire~
 &+r   This wonderful feather is warm to the touch.  It glows with the prettiest&n
@@ -315,7 +315,7 @@ razor sharp seashell~
 ~
 5 10 3 0 7 0 1049601 8193 0 77824 0
 2 2 4 11 0 0 0 0
-0 423 100
+0 423 100 100
 E
 razor sharp seashell~
 &+W   Glimmering violently in the light, this pretty seashell has been&n
@@ -332,7 +332,7 @@ amulet neogi~
 ~
 9 22 3 0 7 0 0 5 67 0 0
 5 0 0 5 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 amulet neogi~
 &+W   Made of a thick silver, this polished amulet has the drawing of four&n
@@ -349,7 +349,7 @@ shiny chunk glowing ore rock~
 ~
 3 19 2 1 7 0 4097 16385 0 0 0
 60 1 1 221 0 0 0 0
-2 14290 100
+2 14290 100 100
 E
 shiny chunk glowing ore~
    &+MGlowing &+msoftly, this magical ore comes from comets that have struck&n
@@ -366,7 +366,7 @@ book tome seaweed small _id_~
 ~
 12 28 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 23 100
+1 23 100 100
 E
 book tome~
 &+W   This book is entirely covered with seaweed, and its cover and pages are&n
@@ -385,7 +385,7 @@ glyph trap~
 ~
 14 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glyph trap~
 Just a para trap that will stun the players when they walk up into the fight.
@@ -399,7 +399,7 @@ ring~
 ~
 9 22 3 0 7 0 1 3 0 0 0
 5 0 0 3 0 0 0 0
-0 48093 100 32 0 0 0
+0 48093 100 100 32 0 0 0
 E
 ring~
 &+L   Magnificently crafted, this ring has an inlain &+geme&+Grald&+L, somewhere along&n
@@ -417,7 +417,7 @@ A scintillant set of gloves were dropped on the floor here.~
 ~
 9 44 3 0 13 0 3146753 129 2 2207810 0
 15 0 0 3 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 gloves~
    These gloves were forged from a rare ore called glassteel.  Often melded
@@ -435,7 +435,7 @@ tiny shard ivory~
 ~
 12 34 3 0 7 0 4096 1 0 0 0
 0 2 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tiny shard ivory~
 &+W   This shard must have come from a fairly large piece of ebony, as the grain&n
@@ -448,7 +448,7 @@ silence dagger white~
 ~
 5 19 3 0 15 0 263424 8193 64 2191360 16640
 2 3 4 11 0 127 60 30
-0 250000 100
+0 250000 100 100
 E
 silence dagger white~
 &+b   Moulded from one of the rarest steels in the multiverse, this vorpal&n
@@ -468,7 +468,7 @@ plain dagger stone~
 ~
 5 11 3 0 7 0 0 8193 0 0 0
 2 2 4 11 1 0 0 0
-2 31 100
+2 31 100 100
 E
 plain dagger stone~
 &+LJust as plain as a dagger gets really.&n
@@ -484,7 +484,7 @@ crystal lockpick shard~
 ~
 31 8 3 0 7 0 0 16385 0 0 0
 45 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 crystal lockpick shard~
 &+c   Quite pretty, this lockpick is made of one of the most durable &+Ccrystals&n
@@ -497,7 +497,7 @@ tiny key~
 ~
 18 11 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 tiny key~
 &+W   This pretty little key seems rougly made, but judging by the way its teeth&n
@@ -510,7 +510,7 @@ glowing bangle dreamer~
 ~
 9 27 3 0 7 0 1052672 4097 64 0 0
 8 11 0 3 0 0 0 0
-0 4903 100
+0 4903 100 100
 E
 glowing bangle dreamer~
 &+c   This bangle is somewhat soft to the touch, and glows blue when its holder&n
@@ -528,7 +528,7 @@ blood red axe _id_~
 ~
 5 31 3 6 14 0 4203520 8193 2 87556099 24576
 1 2 5 3 0 0 0 0
-15 40000 100
+15 40000 100 100
 E
 blood red axe~
 &+r   This axe must be one of the more frightening manifestations of paranormal&n
@@ -551,7 +551,7 @@ glyph trap 2~
 ~
 14 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 glyph trap 2~
 Will hopefully sleep some of the players when they walk in.
@@ -565,7 +565,7 @@ tiny shard ebony~
 ~
 12 22 3 0 7 0 8392832 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 3 100
+1 3 100 100
 E
 tiny shard ebony~
 &+c   It seems that this minuscule shard of silver was broken off from a smooth&n
@@ -578,7 +578,7 @@ remnants snapped key silver~
 ~
 18 22 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 remnants snapped key silver~
 &+c   This tiny key was a failed attempt at making a skeleton key for some type&n
@@ -591,7 +591,7 @@ aan sacred stone claws~
 ~
 9 11 3 0 7 0 65568 129 66 0 0
 6 0 0 5 0 0 0 0
-5 20000 100 128 0 0 0
+5 20000 100 100 128 0 0 0
 E
 claws giant sacred~
 &+L   Made of rugged stone, these claws are a reproduction of the legendary&n
@@ -610,7 +610,7 @@ crown demon~
 ~
 9 2 2 4 15 100 160 17 64 0 0
 10 0 0 2 1 0 0 0
-1 1 100 403177472 0 0 0
+1 1 100 100 403177472 0 0 0
 E
 crown demon~
 &+L   A tiny flesh-woven circlet, most likely used as ring for the greater demons&n
@@ -629,7 +629,7 @@ rusty old key~
 ~
 18 15 3 0 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rusty old key~
 &+r   Well, made of steel, this key must have been forgotten for quite a while&n
@@ -642,7 +642,7 @@ swirling vortex~
 ~
 25 51 3 0 7 0 2 0 0 0 0
 77894 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 swirling vortex~
 a teleport that takes them to Aan
@@ -654,7 +654,7 @@ sword blade giant humming~
 ~
 5 19 3 0 15 100 272704513 8193 66 87048219 0
 13 5 5 3 0 0 0 0
-0 1 100 16 0 0 0
+0 1 100 100 16 0 0 0
 E
 sword sharpness~
 &+c   This giant two-handed sword must be one of the most magnificently crafted
@@ -683,7 +683,7 @@ key tiny silver~
 ~
 18 22 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-1 30 100
+1 30 100 100
 E
 key tiny silver~
 &+c   Originally chiseled from a shard of silver, this key has a huge weld&n
@@ -697,7 +697,7 @@ eye~
 ~
 11 27 3 1 12 100 5121 131073 0 46305188 0
 0 0 0 0 0 0 0 0
-1 20000 100 8 0 0 0
+1 20000 100 100 8 0 0 0
 E
 eye~
 &+b    Oval shaped and hard as rock, this large eye must have close to seven&n
@@ -719,7 +719,7 @@ ring~
 ~
 12 24 3 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 ring~
 &+y   A small golen ring with the inscription 'I l ve y o' etched inside the&n
@@ -732,7 +732,7 @@ coiled wire _id_~
 ~
 12 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 coiled wire~
 &+c   Well, it's a wire spun into a cylindrical spiraling shape.  No clue what&n
@@ -749,7 +749,7 @@ paper letter~
 ~
 12 28 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 paper letter~
 &+WHelp,
@@ -764,7 +764,7 @@ bar steel~
 ~
 12 16 3 4 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-4 15 100
+4 15 100 100
 E
 bar steel~
 &+c   Moulded as such by a blacksmith, this bar was probably made to eventually&n
@@ -777,7 +777,7 @@ bar steel magical~
 ~
 12 16 3 2 7 20 0 1 64 0 0
 0 0 0 0 0 0 0 0
-2 120 100
+2 120 100 100
 E
 bar steel magical~
 &+c   A glowing bar of steel, branded with the seal of the archmages.&n
@@ -789,7 +789,7 @@ plate platemail awe~
 ~
 9 7 3 14 13 80 1088 9 66 25 16777472
 20 3 1 5 0 0 0 0
-2 1 100 0 0 0 2048
+2 1 100 100 0 0 0 2048
 E
 plate platemail awe~
 &+W   Somewhat transparent, this armor is surely made of some magical type&n
@@ -808,7 +808,7 @@ lock hair~
 ~
 13 2 3 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 lock hair~
 &+L   It is what it's called, a few pieces of hair clumped together, nicely&n
@@ -821,7 +821,7 @@ ring gear _id_~
 ~
 12 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 ring~
 &+cIt does look like a ring, but the hole is way to small to fit a finger!&n
@@ -838,7 +838,7 @@ A glowing belt floats above the surface of the ground here.~
 ~
 9 38 3 0 7 0 73729 2049 1 0 0
 20 10 0 5 0 0 0 0
-0 1 100 536944768 12480 0 0
+0 1 100 100 536944768 12480 0 0
 E
 jadem magical device~
    This transparent belt is rather cold to the touch, it has a series of
@@ -858,7 +858,7 @@ flask potion~
 ~
 10 7 3 0 7 0 1 1 0 0 0
 60 44 -1 -1 0 0 0 0
-1 1239 100
+1 1239 100 100
 E
 flask potion~
 &+Y   This clear flask contains a shimmering yellow liquid.  The label "genius"&n
@@ -871,7 +871,7 @@ huge key~
 ~
 18 15 3 0 7 0 8388608 1 0 0 0
 0 100 0 0 0 0 0 0
-10 1 100
+10 1 100 100
 E
 huge key~
 &+LIt's a large black key, most easily the largest one you have ever seen.  It
@@ -884,7 +884,7 @@ coins pile~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 5000 0 0 0 0
-0 1 100
+0 1 100 100
 E
 coins pile~
 &+WShiny!&n

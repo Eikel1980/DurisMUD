@@ -5,7 +5,7 @@ sword long longsword basalt~
 ~
 5 11 3 4 7 0 128 8193 0 0 0
 5 5 4 3 0 0 0 0
-4 80000 100
+4 80000 100 100
 A
 18 4
 A
@@ -17,7 +17,7 @@ halter blue~
 ~
 9 3 3 1 14 75 0 9 0 4227727360 80882
 14 3 138 4 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 halter blue~
 This shimmering gauzy blue halter seems to have been made of fine spidersilk
@@ -34,7 +34,7 @@ skirt blue~
 ~
 9 3 3 1 14 75 0 33 0 4227727360 80882
 9 5 129 4 0 0 0 0
-1 11000 100
+1 11000 100 100
 E
 skirt blue~
 This shimmering gauzy blue skirt seems to have been made of fine spidersilk
@@ -51,7 +51,7 @@ squidbane mace~
 ~
 5 19 3 4 14 50 400 8193 0 0 0
 7 4 4 6 0 0 0 0
-8 60000 100
+8 60000 100 100
 E
 squidbane mace~
 Squidbane is a mighty mace that has been used to slay Illithids for
@@ -68,7 +68,7 @@ longsword mazzolin~
 ~
 5 15 3 0 7 0 1024 8193 0 96071707 256
 5 3 3 3 0 0 0 0
-0 4000 100
+0 4000 100 100
 A
 18 1
 A
@@ -80,7 +80,7 @@ disruption staff rod blue~
 ~
 4 44 3 4 12 0 4260864 16385 0 33685536 131067
 25 1 1 76 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 disruption staff rod blue~
    The staff of disruption aided the Mazzolin in the defeat of the Illithids
@@ -98,7 +98,7 @@ altar~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21307
 dagger~
 &+La dagger&N~
@@ -106,7 +106,7 @@ dagger~
 ~
 5 19 2 0 7 0 0 8193 0 4227727360 768
 2 2 2 11 0 0 0 0
-0 3000 100
+0 3000 100 100
 A
 18 1
 A
@@ -118,7 +118,7 @@ sphere hematite globe~
 ~
 25 44 3 0 11 0 75497472 16385 0 0 0
 21300 150 1 0 0 0 0 0
-0 1 100
+0 1 100 100
 #21309
 hematite liquid shard~
 &+La hematite shard&N~
@@ -126,7 +126,7 @@ hematite liquid shard~
 ~
 13 15 3 0 7 0 33587200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hematite liquid iron~
    This shard looks like it was broken off of a larger piece of hematite. It
@@ -139,7 +139,7 @@ hematite liquid shard~
 ~
 13 15 3 0 7 0 33587200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hematite liquid iron~
    This shard looks like it was broken off of a larger piece of hematite. It
@@ -152,7 +152,7 @@ hematite liquid shard~
 ~
 13 15 3 0 7 0 33587200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hematite liquid iron~
    This shard looks like it was broken off of a larger piece of hematite. It
@@ -165,7 +165,7 @@ hematite liquid shard~
 ~
 13 15 3 0 7 0 33587200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hematite liquid iron~
    This shard looks like it was broken off of a larger piece of hematite. It
@@ -178,7 +178,7 @@ hematite liquid shard~
 ~
 13 15 3 0 7 0 33587200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hematite liquid iron~
    This shard looks like it was broken off of a larger piece of hematite. It
@@ -191,7 +191,7 @@ longsword blue~
 ~
 5 16 3 4 7 0 1024 8193 0 95993883 0
 5 2 6 3 0 0 0 0
-7 1500 100
+7 1500 100 100
 A
 18 2
 A
@@ -203,7 +203,7 @@ platemail blue~
 ~
 9 16 3 10 7 0 0 1025 0 4165287492 768
 14 3 1 4 0 0 0 0
-10 5000 100
+10 5000 100 100
 A
 19 2
 #21316
@@ -213,7 +213,7 @@ zephyrs sleeves arm coverings~
 ~
 9 46 3 5 15 80 67272713 257 0 0 0
 13 8 1 5 0 0 0 0
-1 100000 100 134217728 28 0 0
+1 100000 100 100 134217728 28 0 0
 E
 zephyrs sleeves arm coverings~
 These sleeves are strange indeed, though very thick and heavy in appearance
@@ -230,7 +230,7 @@ pool tar~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 21300 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21318
 pool acid~
 &+La pool of acid&N~
@@ -238,7 +238,7 @@ pool acid~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 21421 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21319
 hematite orb~
 &+La hematite orb&N~
@@ -246,7 +246,7 @@ hematite orb~
 ~
 25 15 3 0 7 0 33558529 0 0 0 0
 21302 259 -1 0 0 0 0 0
-9999 1 100
+9999 1 100 100
 E
 hematite orb~
 &+L   The orb here seems to vibrate with some hidden energy, and anyone entering the room
@@ -259,4 +259,4 @@ wand spider queen~
 ~
 3 15 3 0 7 0 8192 256 0 0 0
 45 4 4 167 0 0 0 0
-0 0 100
+0 0 100 100

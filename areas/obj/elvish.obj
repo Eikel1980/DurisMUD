@@ -5,7 +5,7 @@ oven~
 ~
 15 15 3 99999 7 0 425984 0 0 0 0
 100 0 0 100 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 oven~
 &+LThis &+woven&+L has been used countless times over the century and millenia to cook and serve food for all who enter the hall.
@@ -17,7 +17,7 @@ statue lloth spider queen~
 ~
 25 19 4 999999 15 100 196617 0 64 0 0
 35800 183 -1 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 statue lloth queen spider~
 &+wThis statue seems almost lifelike, the craftsmanship that has been wrot to make such a work is hardly
@@ -33,7 +33,7 @@ fountain pool water~
 ~
 17 19 3 99999 15 100 9 0 64 0 0
 1000 1000 28 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 fountain pool water~
 &+b The water seems &+gmurky&+b and &+Bcloudy&+b though the waters look clean enough to drink yet you can't help but think that these wa&+Bt&+bers give off and &+revil&+b presence.
@@ -45,7 +45,7 @@ statue corellon~
 ~
 25 23 6 99999 15 100 34046985 0 66 0 0
 35800 197 -1 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 statue corellon~
 &+CThe humble and mighty &+YProtector&+C of the &+gElves&+C stand here forged
@@ -67,7 +67,7 @@ solonar statue~
 ~
 25 38 3 99999 14 100 229385 0 66 0 0
 30648 139 -1 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 solonar statue~
 &+GThe &+wstatue to the "&+mKeen&+Y-&+bEye&+G" &+gSolonar is very well carved and
@@ -85,7 +85,7 @@ clear water basin tears tear~
 ~
 17 8 2 99999 14 100 98313 0 66 0 0
 1000 1000 17 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 clear water basin tears tear~
 &+BThe &+bwater&+B that flows down the side of &+CCorellon's &+Bface collects
@@ -99,7 +99,7 @@ weapons rack~
 ~
 15 15 3 9999 4 100 229376 0 0 0 0
 100 5 0 100 0 0 0 0
-9999 0 45
+9999 0 45 100
 E
 weapons rack~
 &+yThis &+Lweapons &+yrack is what used to store the garrison &+Lweapons &+yfor &+rbattle &+yreadiness, it has over time started to break down an start to rust.
@@ -111,7 +111,7 @@ sword warsword bladed forked~
 ~
 5 18 3 4 11 0 67437568 8193 66 96071699 0
 5 4 3 3 0 0 0 0
-4 10000 50
+4 10000 50 100
 E
 sword bladed forked warsword~
 &+WThis &+Lblade &+Wstill seems to be in good shape even though all the &+rbattles&+W it's lived through.
@@ -127,7 +127,7 @@ illithid hide backsheath sheath harness~
 ~
 30 2 2 1 7 0 67112960 9437185 66 0 0
 20 1 1 0 0 0 0 0
-1 99999 100
+1 99999 100 100
 E
 illithid hide backsheath sheath~
 &+mThe hide of an old slayen Illithid make up the most of this sheath, it has been cured and cultured though so it hold strong against the sands of time.
@@ -141,7 +141,7 @@ longbow bow ash~
 ~
 6 5 3 2 7 0 274432 4202497 0 0 0
 70 60 0 1 0 0 0 0
-3 1234 100
+3 1234 100 100
 E
 longbow bow ash~
 &+mMagical &+MRunes &+yrun up and down the shaft of the bow, they seem to &+yglow&+y and &+Wflicker &+yas you turn it from side to side in the &+Ysunlight&+y.
@@ -157,7 +157,7 @@ venison leg~
 ~
 19 2 3 1 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 venison leg~
 &+yThe leg seems to be completely cooked and ready to be served the smell coming from it is just mouth watering.
@@ -169,7 +169,7 @@ brazier burnt~
 ~
 17 44 2 1 11 0 12289 8404993 64 0 0
 100 100 0 0 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 brazier burnt~
 &+YThis &+rold br&+Razier &+Lseems to have been forged from glassteel in a very intricate way, the base of it where one could hold onto has the vistage of a &+rred dragon&+L and its mouth opens up to hold where the &+rfire wou&+Rld be &+Yli&+Wt.
@@ -185,7 +185,7 @@ egg spider eggs~
 ~
 19 45 1 1 5 0 4096 1 0 0 0
 2 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 egg spider~
 &+LThis appears to be an egg of some sort of spider, it has a &+Wstrip&+L down the middle of the edge it appears to be moving slightly.
@@ -197,7 +197,7 @@ vial golden gold dragon statue~
 ~
 10 7 1 1 7 0 237569 8388609 2 0 0
 41 132 -1 -1 0 0 0 0
-1 5324 100
+1 5324 100 100
 E
 vial golden gold~
 &+gThe &+Ygolden vial &+gswishes and slushes around as you moved it around, at the bottom of the vial has &+rspa&+Rrkl&+Yin&+Wg &+gflecks and seems to be very thick in places.
@@ -209,7 +209,7 @@ vial red blood manticore glass~
 ~
 10 7 1 1 7 0 237569 8388609 0 0 0
 36 35 29 -1 0 0 0 0
-1 3456 100
+1 3456 100 100
 E
 vial red blood~
 &+rA the vial looks as if it is not just a potion but maybe it is blood itself, it is thick and viscous and seems somewhat gelicous.
@@ -221,7 +221,7 @@ warsword forked blade sword~
 ~
 5 19 3 5 13 100 308225 8193 66 91828739 2336
 5 4 4 3 0 0 0 0
-5 10243 100
+5 10243 100 100
 E
 warsword forked blade sword~
 &+LThis strangly bladed sword seems to be &+rbattleworn&+L yet holds strong as the day it was forged, it has many notches along side of the blade where it might have cut deep into a foes armor. The hilt has a spi&+md&+Ler-like body at the butt.
@@ -237,7 +237,7 @@ vial blue serpent sea statue~
 ~
 10 7 1 1 7 0 237569 1 0 0 0
 31 15 356 1 0 0 0 0
-1 12452 100
+1 12452 100 100
 E
 vial blue~
 &+gThe &+bblue liquid inside the vial seems to be &+Bcloudy &+bat one time to almost completely &+Lopaque &+bat the next as it phases back an forth in between the two.
@@ -249,7 +249,7 @@ robin feather tail~
 ~
 8 50 0 0 5 0 262145 8929281 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 robin feather tail~
 &+bThe feather of this robin is still in very good condition and has been well kept, the bird must have been a very clean animal.
@@ -263,7 +263,7 @@ leaf ivy~
 ~
 9 30 1 0 5 0 40961 8929281 64 0 0
 2 0 0 1 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 leaf ivy~
 &+gThe leaf has some &+mstrange lights&+g that seem to run through what can best be described as &+rveins &+gin the leaf, the light seems to be almost as if the leaf is still alive in some &+mstrange &+gway.
@@ -277,7 +277,7 @@ drow skin weapon sheath harness~
 ~
 15 2 2 1 14 0 262153 13631489 66 0 0
 10 1 0 10 0 0 0 0
-1 34 100
+1 34 100 100
 E
 drow skin weapon sheath~
 &+bThe &+Ldrow &+mskin&+b that has been used for this sheath has been well cured and preserved with &+rspells &+band otherwise, there is a strap that can be either attached to ones back or to the belt to hold a weapon or so.
@@ -291,7 +291,7 @@ key spider~
 ~
 18 19 1 0 14 0 8560641 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 key spider~
 &+LThis key looks exactly like a spi&+md&+Ler if you didn't know any better you'd think it was truely a live spider as it seems to move a bit along any surface it is placed apon.
@@ -303,7 +303,7 @@ chest runed~
 ~
 15 19 3 0 15 0 167936 0 64 0 0
 300 29 35820 300 0 0 0 0
-50 1452 100
+50 1452 100 100
 E
 chest runed~
 &+LThe &+ychest&+L has &+cancient &+Land &+bpowerful &+Bglyphs &+Lof the &+cancient &+gElven &+Cgods &+gin&+Gsc&+Yrib&+ye &+Lupon the outside of it, the &+madamantium &+Lused was taken from the bodies of the dead drow from the great wars and forged to keep all of those that would try from opening and stealing it contents at bay.
@@ -315,7 +315,7 @@ coins treasure~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 10 10 10 10 0 0 0 0
-0 1 100
+0 1 100 100
 E
 coins treasure~
 &+YGold &+gand &+Wsilver &+g lie here in a heap.
@@ -327,7 +327,7 @@ spider spidersilk girth belt long~
 ~
 9 19 1 1 8 0 45057 2049 0 0 0
 2 0 0 1 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 spider spidersilk cloak long~
 &+LThis long &+bflowing&+L cloak is made from the finest spi&+md&+Lersilk &+wwoven &+Lby the spi&+md&+Lers themself. Then gently sewn together to and &+yreinforced &+Lwith &+madamantium &+Lto give it a strong padding and make hardly &+rpenetrable&+L.
@@ -343,7 +343,7 @@ key spider~
 ~
 18 19 1 0 14 0 8560641 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 key spider~
 &+LThis key looks exactly like a spi&+md&+Ler if you didn't know any better you'd think it was truely a live spider as it seems to move a bit along any surface it is placed apon.
@@ -355,7 +355,7 @@ pouch belt crafted well~
 ~
 15 35 2 0 7 0 266249 8390657 64 0 0
 60 9 35820 60 0 0 0 0
-5 3465 100
+5 3465 100 100
 E
 pouch belt crafted well~
 &+mThis belt attachable pouch is been made from &+Lspi&+md&+Lersilk &+mand &+Yembroidered &+Lwith &+Mmagically &+Ygolden&+m-&+Lthread &+mand &+benchanted &+mwith &+cmagical runes&+m.
@@ -371,7 +371,7 @@ spellbook spellcase golden charred burnt~
 ~
 33 23 2 1 15 0 13312 8404993 64 4197888 0
 0 0 80 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 spellbook spellcase golden chared burnt~
 &+cVast &+mmagical &+Mrunes &+con the side of the book dance and form a strong binding around it almost impossible to open, &+c without the right keyword or &+mmagical &+Lkey.
@@ -387,7 +387,7 @@ armguards arm guards armguard drow illithid skin~
 ~
 9 2 2 1 15 50 4097 257 64 0 0
 2 0 0 2 1 0 0 0
-1 10000 100
+1 10000 100 100
 E
 armguards arm guards armguard drow illithid skin~
 &+mThese armguards seem to have been well crafted in the art of magic and seem to give off a great &+Yglow&+W of bright&+m light that almost resembles that of the sun.

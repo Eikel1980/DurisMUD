@@ -5,7 +5,7 @@ key brass brittle~
 ~
 18 17 3 0 7 0 4096 8404993 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70501
 key brass brittle~
 &+ya br&+wit&+ytle &+Ybrass &+ykey&N~
@@ -13,7 +13,7 @@ key brass brittle~
 ~
 18 17 3 0 7 0 4096 8404993 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70502
 chest dusty iron~
 &+ya &+Ldusty &+wi&+Lr&+won-bou&+Ln&+wd &+ychest&N~
@@ -21,7 +21,7 @@ chest dusty iron~
 ~
 15 15 3 0 7 0 8 0 0 0 0
 500 17 70500 500 0 0 0 0
-0 0 100
+0 0 100 100
 #70503
 chest dusty iron~
 &+ya &+Ldusty &+wi&+Lr&+won-bou&+Ln&+wd &+ychest&N~
@@ -29,7 +29,7 @@ chest dusty iron~
 ~
 15 15 3 0 7 0 8 0 0 0 0
 5000 17 70501 5000 0 0 0 0
-0 0 100
+0 0 100 100
 #70505
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -37,7 +37,7 @@ fragment sword godquest~
 ~
 5 19 3 0 14 0 8397064 8413185 64 0 0
 2 2 2 11 0 0 0 0
-0 0 100
+0 0 100 100
 #70506
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -45,7 +45,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70507
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -53,7 +53,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8462344 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70508
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -61,7 +61,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8400904 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70509
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -69,7 +69,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70510
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -77,7 +77,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70511
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -85,7 +85,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70512
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -93,7 +93,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70513
 letter godquest~
 &+Wa letter to Jyarl&N~
@@ -101,7 +101,7 @@ letter godquest~
 ~
 12 28 3 0 7 0 8462344 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 letter godquest~
 &+WOld Friend Jyarl,
@@ -123,7 +123,7 @@ letter godquest~
 ~
 12 28 3 0 7 0 8462344 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 letter godquest~
 &+G Honorable Lyle,
@@ -144,7 +144,7 @@ letter godquest~
 ~
 12 28 3 0 7 0 8527880 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 letter godquest~
   You are unable to make out most of the words for very few of them are
@@ -162,7 +162,7 @@ gadget strange odd godquest~
 ~
 9 1 3 0 7 0 8200 16389 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 5
 #70517
@@ -172,7 +172,7 @@ head wolf white bloody godquest~
 ~
 17 2 3 0 7 0 77832 8404993 0 0 0
 5 5 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70518
 yoyo yo-yo godquest~
 &+Wa &+Gyo&+C-&+Gyo&N~
@@ -180,7 +180,7 @@ yoyo yo-yo godquest~
 ~
 5 49 3 0 7 0 16851208 24577 0 0 0
 6 1 1 6 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 #70519
@@ -190,7 +190,7 @@ skin dragonskin dragon godquest~
 ~
 12 35 3 0 7 0 77832 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70520
 letter godquest~
 &+Ma letter to Lyle&N~
@@ -198,7 +198,7 @@ letter godquest~
 ~
 12 28 3 0 7 0 8462344 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 letter godquest~
 &+M   Lyle, we have the scepter, give them the worthless sword fragment.
@@ -213,7 +213,7 @@ horn godquest~
 ~
 5 10 3 0 7 0 73992 8413185 0 0 0
 2 2 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 #70522
 horn godquest~
 &+wa &+rs&+Rev&+rere&+Rd &+yan&+Yte&+ylope &+yh&+Lo&+yr&+Ln&N~
@@ -221,7 +221,7 @@ horn godquest~
 ~
 5 10 3 0 7 0 73992 8413185 0 0 0
 2 2 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 #70523
 horn godquest~
 &+wa &+rs&+Rev&+rere&+Rd &+yan&+Yte&+ylope &+yh&+Lo&+yr&+Ln&N~
@@ -229,7 +229,7 @@ horn godquest~
 ~
 5 10 3 0 7 0 73992 8413185 0 0 0
 2 2 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 #70524
 horn godquest~
 &+wa &+rs&+Rev&+rere&+Rd &+yan&+Yte&+ylope &+yh&+Lo&+yr&+Ln&N~
@@ -237,7 +237,7 @@ horn godquest~
 ~
 5 10 3 0 7 0 73992 8413185 0 0 0
 2 2 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 #70525
 hilt sword humming godquest~
 &+La h&+wu&+Wmmi&+wn&+Lg sword hilt&N~
@@ -245,7 +245,7 @@ hilt sword humming godquest~
 ~
 12 19 3 0 7 0 42016776 8404993 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70526
 note scrawled godquest~
 &+ca scrawled note&N~
@@ -253,7 +253,7 @@ note scrawled godquest~
 ~
 12 29 3 0 7 0 8462344 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 note scrawled godquest~
 &+RTo whomever finds this note...
@@ -273,7 +273,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70528
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -281,7 +281,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70529
 fragment sword godquest~
 &+Wa sword fragment&N~
@@ -289,7 +289,7 @@ fragment sword godquest~
 ~
 9 19 3 0 7 0 8396808 8404993 64 0 0
 0 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #70530
 large gemstone godquest~
 &+Ra &+Gl&+Ba&+Cr&+Yg&+Me &+Wg&+Re&+Gm&+Bs&+Ct&+Yo&+Mn&+We&N~
@@ -297,7 +297,7 @@ large gemstone godquest~
 ~
 8 26 3 0 7 0 73736 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70531
 small gemstone godquest~
 &+Ga &+Rs&+Bm&+Wa&+Cl&+Yl &+Mg&+Ge&+Rm&+Bs&+Wt&+Co&+Yn&+Me&N~
@@ -305,7 +305,7 @@ small gemstone godquest~
 ~
 8 26 3 0 7 0 73736 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70532
 chest~
 &+ya dirt covered chest&N~
@@ -313,7 +313,7 @@ chest~
 ~
 15 15 3 0 7 0 8495112 0 0 0 0
 1000 17 70533 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #70533
 key dirty brittle~
 &+ya dirty key&N~
@@ -321,7 +321,7 @@ key dirty brittle~
 ~
 18 15 3 0 7 0 8466440 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70534
 chest iron heavy~
 &+La h&+we&+Lavy ir&+wo&+Ln che&+ws&+Lt&N~
@@ -329,7 +329,7 @@ chest iron heavy~
 ~
 15 15 3 0 7 0 8454152 0 0 0 0
 1000 17 70535 1000 0 0 0 0
-0 0 100
+0 0 100 100
 T
 512 9 1 15
 #70535
@@ -339,7 +339,7 @@ key heavy iron~
 ~
 18 15 3 0 7 0 8462344 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70536
 scepter royal godquest~
 &+Ya &+Rr&+Mo&+Ry&+Ma&+Rl &+Ysc&+Wept&+Yer&N~
@@ -347,7 +347,7 @@ scepter royal godquest~
 ~
 5 24 3 0 13 0 12552 8413185 64 0 0
 6 5 2 6 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 A
@@ -359,7 +359,7 @@ ring dragonbone bone godquest thick~
 ~
 9 15 3 0 7 0 8192 16387 64 4198895524 0
 -7 0 0 5 1 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -371,7 +371,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 9 35 3 0 7 0 8192 16449 64 4198895524 0
 -9 0 0 5 1 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 A
 18 3
 A
@@ -383,7 +383,7 @@ heart dragon godquest~
 ~
 17 2 3 0 7 0 9216 16385 64 37883812 0
 30 30 0 0 0 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 A
 13 20
 A
@@ -395,7 +395,7 @@ book spellbook dragonscale scale godquest~
 ~
 33 35 3 0 7 0 9216 8404993 64 4197888 0
 0 0 150 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 3 6
 A
@@ -407,7 +407,7 @@ key rusty iron~
 ~
 18 15 3 0 7 0 12296 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70542
 mask dragonscale scale godquest~
 &+La &+gdr&+Gag&+gon&+Gs&+gc&+La&+gle &+Lmask&N~
@@ -415,7 +415,7 @@ mask dragonscale scale godquest~
 ~
 9 35 3 0 7 0 9216 278529 64 37949348 0
 -7 0 0 5 1 0 0 0
-0 0 100
+0 0 100 100
 A
 13 13
 A
@@ -427,7 +427,7 @@ fang bloody godquest~
 ~
 5 10 3 0 7 0 16916736 8413185 64 4198895524 0
 2 4 5 11 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 2
 A
@@ -439,7 +439,7 @@ bracelet dragonbone dragon bone godquest~
 ~
 9 10 3 0 7 0 9216 20481 64 37883812 0
 -6 0 0 5 1 0 0 0
-0 0 100
+0 0 100 100
 A
 13 15
 A
@@ -451,7 +451,7 @@ ring dragonbone bone godquest thin~
 ~
 9 10 3 0 7 0 9216 16387 64 37883812 0
 -4 0 0 5 1 0 0 0
-0 0 100
+0 0 100 100
 A
 13 15
 A
@@ -463,7 +463,7 @@ key heavy wooden~
 ~
 18 6 3 0 7 0 12296 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70547
 key bent mangled~
 &+La bent and mangled key&N~
@@ -471,7 +471,7 @@ key bent mangled~
 ~
 18 17 3 0 7 0 12296 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70548
 key small steel~
 &+wa small steel key&N~
@@ -479,7 +479,7 @@ key small steel~
 ~
 18 17 3 0 7 0 12296 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70549
 circlet light glowing diety kfun story quest~
 &+Wa c&+Yir&+Rc&+Yle&+Wt of pure li&+Cgh&+Wt&n~
@@ -487,7 +487,7 @@ circlet light glowing diety kfun story quest~
 ~
 11 1 2 0 15 0 335873 28689 2 0 0
 0 0 0 0 0 0 0 0
-0 0 100 2550669564 32768 67633280 4194304
+0 0 100 100 2550669564 32768 67633280 4194304
 E
 circlet light glowing diety kfun story quest _id_~
 &+WThis circlet appears to be magically formed by some power beyond&n
@@ -506,7 +506,7 @@ sword broadsword dragonslayer godquest unique~
 ~
 5 19 3 0 15 0 323100928 24577 66 0 0
 13 6 4 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 4
 A
@@ -518,7 +518,7 @@ key small brass~
 ~
 18 17 3 0 7 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70552
 pile bones~
 &+wa &+Whuge&+w pile of b&+Wo&+wn&+We&+ws&N~
@@ -526,7 +526,7 @@ pile bones~
 ~
 15 10 3 0 7 0 8495112 0 0 0 0
 10000 0 0 10000 0 0 0 0
-0 0 100
+0 0 100 100
 T
 1536 12 -1 60
 #70553
@@ -536,7 +536,7 @@ key bone small~
 ~
 13 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70554
 scimitar~
 &+WLo&+wng &+LJo&+whn &+WSilver's Sc&+wim&+Litar&N~
@@ -544,7 +544,7 @@ scimitar~
 ~
 5 15 3 0 7 0 16949528 24577 66 0 0
 5 3 8 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 5
 A
@@ -556,7 +556,7 @@ compass broken~
 ~
 12 17 3 0 7 0 33559560 8404997 0 12619268 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 24 -5
 A
@@ -568,7 +568,7 @@ rapier thin long~
 ~
 5 16 3 0 7 0 16777472 24577 0 0 0
 5 1 8 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 A
@@ -580,7 +580,7 @@ falchion heavy~
 ~
 5 16 3 0 7 0 16785664 8413185 66 0 0
 5 3 6 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 4
 A
@@ -592,7 +592,7 @@ scimitar large~
 ~
 5 19 3 0 7 0 8201 24577 64 0 0
 5 5 5 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 5
 A
@@ -604,7 +604,7 @@ handle rudder broken~
 ~
 12 6 3 0 7 0 9225 8404993 64 33685920 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 24 -2
 A
@@ -616,7 +616,7 @@ orb crystal~
 ~
 3 15 3 0 7 0 16789761 16385 0 0 0
 50 10 10 19 0 0 0 0
-0 0 100 32 0 0 0
+0 0 100 100 32 0 0 0
 A
 13 20
 A
@@ -628,7 +628,7 @@ crate broken~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70562
 spiked ring~
 &+La darkly gleaming spiked ring&n~
@@ -636,7 +636,7 @@ spiked ring~
 ~
 9 15 3 0 7 0 129 100663299 0 0 0
 8 0 0 4 1 0 0 0
-0 0 100 0 192 0 0
+0 0 100 100 0 192 0 0
 A
 19 3
 #70563
@@ -646,7 +646,7 @@ black iron shackles~
 ~
 11 15 3 0 7 0 4224 28673 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 A
 18 -10
 A
@@ -658,7 +658,7 @@ large storage chest~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 0 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70565
 pouch ingredients small~
 &+La &+wsmall &+yi&+rn&+bg&+gr&+we&+md&+ci&+ye&+rn&+bt&+gs &+Lpouch&N~
@@ -666,7 +666,7 @@ pouch ingredients small~
 ~
 15 3 3 0 7 0 12288 8404993 64 0 0
 800 1 0 800 0 0 0 0
--350 0 100
+-350 0 100 100
 A
 13 27
 A
@@ -678,7 +678,7 @@ alchy assoc badge membership~
 ~
 11 22 1 0 11 0 8192 2113537 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 5
 A
@@ -690,7 +690,7 @@ potion small glowing~
 ~
 10 8 3 0 7 0 12289 16385 0 0 0
 30 107 364 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70568
 rod summoning~
 &+La &+wrod&+L of &+rsu&+Lmm&+ron&+win&+rg&N~
@@ -698,7 +698,7 @@ rod summoning~
 ~
 5 1 3 0 7 0 16785672 8413185 64 0 0
 6 4 5 6 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -710,7 +710,7 @@ dagger rusty short~
 ~
 5 16 3 0 7 0 16785664 8413185 64 0 0
 2 2 7 11 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -722,7 +722,7 @@ wood jagged small piece~
 ~
 5 6 3 0 7 0 0 24577 0 0 0
 2 4 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 A
@@ -734,7 +734,7 @@ ribcage rib cage~
 ~
 9 15 3 0 7 0 8192 16393 0 0 0
 -45 0 0 5 1 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 A
 13 20
 A
@@ -746,7 +746,7 @@ skull large dragons dragon~
 ~
 9 10 3 0 7 0 2142241 16401 64 0 0
 30 0 0 5 0 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 A
 18 2
 #70573
@@ -756,7 +756,7 @@ coins plat pile~
 ~
 20 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #70574
 aged parchment scroll~
 &+yan aged par&+Lchm&+yent&n~
@@ -764,7 +764,7 @@ aged parchment scroll~
 ~
 2 15 3 0 7 0 4104 16385 0 0 0
 50 2 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70575
 leather rucksack bp~
 &+ra br&+Right&+rly p&+Ra&+Mi&+Wn&+Mt&+Re&+rd leather rucksack&n~
@@ -772,7 +772,7 @@ leather rucksack bp~
 ~
 15 13 4 0 11 0 12288 29376513 0 0 0
 100 1 0 100 0 0 0 0
-2 0 100
+2 0 100 100
 A
 28 5
 #70576
@@ -782,7 +782,7 @@ black leather buccaneer boots~
 ~
 9 13 3 0 9 0 4096 65 0 0 0
 15 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 2
 A
@@ -794,7 +794,7 @@ scarlet silk sash~
 ~
 11 3 2 0 10 0 4096 2049 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 10
 A
@@ -806,7 +806,7 @@ coins copper pile~
 ~
 20 21 3 0 7 0 4096 1 0 0 0
 5000 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70579
 smuggled goods~
 &+ysome smuggled goods&n~
@@ -814,7 +814,7 @@ smuggled goods~
 ~
 8 20 4 0 11 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 850000 100
+0 850000 100 100
 #70580
 skull crossbones brooch~
 &+La s&+Wkul&+Ll and cr&+Wos&+Lsb&+Won&+Les brooch&n~
@@ -822,7 +822,7 @@ skull crossbones brooch~
 ~
 11 10 1 0 11 0 4096 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 2
 A
@@ -834,7 +834,7 @@ black leather eyepatch~
 ~
 11 15 3 0 7 0 0 147457 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 32 0 0 0
+0 0 100 100 32 0 0 0
 A
 18 1
 A
@@ -846,7 +846,7 @@ crumpled note scroll~
 ~
 2 28 2 0 11 0 4104 16385 0 0 0
 50 1 3 192 0 0 0 0
-0 0 100
+0 0 100 100
 #70583
 bottle rum~
 &+wan aged bottle of s&+cailor&+ws &+yrum&n~
@@ -854,7 +854,7 @@ bottle rum~
 ~
 17 15 3 0 7 0 4096 16385 0 0 0
 10 10 8 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70584
 rat droppings~
 &+Lsome rat droppings&n~
@@ -862,7 +862,7 @@ rat droppings~
 ~
 7 48 1 0 7 0 4096 16385 0 0 0
 4 2 5 5 0 0 0 0
-0 0 100
+0 0 100 100
 #70585
 gold mound coins~
 &+Ya huge mound of gold coins&n~
@@ -870,7 +870,7 @@ gold mound coins~
 ~
 20 24 5 0 7 0 4096 1 0 0 0
 0 0 5000 0 0 0 0 0
-0 0 100
+0 0 100 100
 #70586
 flaxen sack~
 &+ya threadbare f&+gl&+ya&+gx&+yen sack&n~
@@ -878,7 +878,7 @@ flaxen sack~
 ~
 9 42 3 0 9 0 4096 17 0 0 0
 20 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 A
 28 -10
 A
@@ -890,7 +890,7 @@ leg wooden~
 ~
 34 6 3 0 7 0 9224 16385 0 33685920 0
 42 0 0 0 0 0 0 0
-0 0 100 36 0 0 0
+0 0 100 100 36 0 0 0
 A
 34 4
 A
@@ -902,7 +902,7 @@ hook large~
 ~
 5 19 3 0 7 0 16785664 8413185 0 0 0
 2 3 7 11 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 5
 A
@@ -914,7 +914,7 @@ a rusty telescope~
 ~
 11 15 3 0 7 0 33555464 16385 0 12619268 0
 0 0 0 0 0 0 0 0
-0 0 100 44 28 0 0
+0 0 100 100 44 28 0 0
 A
 33 4
 A
@@ -926,7 +926,7 @@ ancient harp instrument~
 ~
 32 15 3 0 7 0 9216 12607489 2 8421376 0
 187 50 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 32 2
 A
@@ -938,7 +938,7 @@ tiara pearls rose~
 ~
 11 15 3 0 7 0 12288 17 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 A
 34 3
 A
@@ -950,7 +950,7 @@ parrot feather earring~
 ~
 11 15 3 0 7 0 8192 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 67108896 0 0 0
+0 0 100 100 67108896 0 0 0
 A
 20 -4
 A
@@ -962,7 +962,7 @@ ruffled white pirate shirt~
 ~
 9 15 3 0 7 0 4096 9 0 0 0
 10 0 0 2 0 0 0 0
-0 0 100 0 12288 0 0
+0 0 100 100 0 12288 0 0
 A
 33 3
 A
@@ -974,7 +974,7 @@ golden gold hoop earring~
 ~
 11 15 3 0 7 0 4096 67633153 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 31 2
 A
@@ -986,7 +986,7 @@ blue silk striped bandana~
 ~
 11 15 3 0 7 0 8192 20501 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 8 0 0 0
+0 0 100 100 8 0 0 0
 A
 20 -5
 A
@@ -998,7 +998,7 @@ gauntlets~
 ~
 11 15 3 0 7 0 270336 16513 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 3
 A
@@ -1010,7 +1010,7 @@ penguin pissed psychic bp backpack~
 ~
 15 2 10 0 14 0 8200 4210689 0 0 0
 5000 1 0 5000 0 0 0 0
-0 0 100
+0 0 100 100
 #70598
 penguin sedated psychic bp backpack~
 &+La sedated &+wpsyc&+Whic peng&+wuin&N~
@@ -1018,4 +1018,4 @@ penguin sedated psychic bp backpack~
 ~
 15 2 10 0 7 0 8200 4210689 0 0 0
 160 5 0 160 0 0 0 0
-0 0 100
+0 0 100 100

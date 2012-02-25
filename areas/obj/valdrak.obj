@@ -5,7 +5,7 @@ water underground spring~
 ~
 17 40 3 0 15 100 8192 0 0 0 0
 9000 9000 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water underground spring~
 &+B   The water of this &+bspring &+Bappears to be cool and refreshing.&N
@@ -17,7 +17,7 @@ purple fungus~
 ~
 19 48 1 0 15 0 0 2113537 0 0 0
 33 0 0 0 0 0 0 0
-0 9 100
+0 9 100 100
 E
 purple fungus~
 &+mTh&+Mi&+ms f&+Mu&+mng&+Mu&+ms c&+Mo&+mns&+Mi&+msts &+Mo&+mf &+Ma &+ml&+Ma&+mrg&+Me &+mc&+Ma&+mp, th&+Me &+mb&+Mo&+mtt&+Mo&+mm &+Mo&+mf th&+Me &+mc&+Ma&+mp &+Mi&+ms &+Ma &+ml&+Mo&+mv&+Me&+mly sh&+Ma&+md&+Me&N
@@ -31,7 +31,7 @@ large moss covered stone~
 ~
 8 11 3 0 15 100 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-666 69000 100
+666 69000 100 100
 E
 large moss covered stone~
 &+L   This is a large &+Gm&+goss&+G-&+gc&+Go&+gv&+Ge&+gred &+Lstone.&N
@@ -43,7 +43,7 @@ moss covered stone~
 ~
 8 11 3 0 15 9 8192 16385 66 0 0
 0 0 0 0 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 moss covered stone~
 &+L   Blackness is cloaked by a blanket of &+Gm&+goss&+L, forming this stone.&N
@@ -59,7 +59,7 @@ moss covered bracer~
 ~
 9 11 3 0 15 50 8192 4097 2 0 0
 5 0 0 5 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 moss covered bracer~
 &+L   This bracer is &+gc&+Go&+gv&+Ge&+gred &+Lin a thick layer of &+Gm&+goss&+L.&N
@@ -75,7 +75,7 @@ speckled fungus~
 ~
 19 48 1 0 15 0 0 2113537 0 0 0
 43 0 0 0 0 0 0 0
-0 3 100
+0 3 100 100
 E
 speckled fungus~
 &+m   Th&+Mi&+ms f&+Mu&+mnky f&+Mu&+mng&+Mu&+ms &+Mi&+ms sp&+Me&+mckl&+Me&+md by str&+Ma&+mng&+Me &+mm&+Ma&+mg&+Me&+mnt&+Ma &+msp&+Mo&+mts th&+Ma&+mt s&+Mee&+mm t&+Mo &+msw&+Mi&+mft&N
@@ -89,7 +89,7 @@ magenta potion~
 ~
 10 44 3 0 11 9 4096 8404993 66 0 0
 50 1 3 43 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 magenta potion~
 &+L   This potion has the words "Those of The Unlight" &+retched &+Linto it.&N
@@ -101,7 +101,7 @@ scroll knowledge~
 ~
 2 43 3 0 13 18 4096 8404993 66 0 0
 50 45 -1 -1 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 scroll knowledge~
 &+L   This scroll has the words "&+RHe who seeks knowledge needs only to ask&+L"&N
@@ -113,7 +113,7 @@ blood soaked longsword sword~
 ~
 5 36 3 0 11 69 8192 8193 66 0 0
 5 2 6 3 0 0 0 0
-0 18000 100
+0 18000 100 100
 E
 blood soaked longsword sword~
 &+L   This blackened longsword's blade comes to a slight curve at the end.  It is&N
@@ -131,7 +131,7 @@ moss covered ring~
 ~
 9 11 3 0 15 9 8192 3 66 0 0
 5 0 0 4 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 moss covered ring~
 &+g   Th&+Gi&+gs &+Lring &+Gi&+gs &+gc&+Go&+gv&+Ge&+gred &+Gw&+gi&+Gth &+ga &+Gt&+ghi&+Gc&+gk &+Gl&+gay&+Ge&+gr &+Go&+gf &+Gm&+goss&+L. &+GY&+gou n&+Go&+gt&+Gi&+gc&+Ge &+gth&+Ga&+gt &+Ga &+gw&+Go&+grd h&+Gas&N
@@ -148,7 +148,7 @@ curved blade dagger raptor~
 ~
 5 22 3 0 12 76 16785680 8193 67 0 0
 2 2 4 11 0 0 0 0
-0 44000 100
+0 44000 100 100
 E
 curved blade dagger raptor~
 &+L   Dots of &+rb&+Rl&+ro&+Ro&+rd &+Lreside upon a blade of abysmal blackness.  A twisted blade to&N
@@ -168,7 +168,7 @@ gleaming suit chainmail~
 ~
 9 19 3 0 14 70 8192 9 66 4173696580 192
 18 0 0 5 0 0 0 0
-3 9000 100
+3 9000 100 100
 E
 gleaming suit chainmail~
 &+L   This armor has been forged form a fine grade of metal.  It is very light and&N
@@ -186,7 +186,7 @@ boots black leather~
 ~
 9 13 3 0 9 45 8192 65 0 0 0
 6 0 0 3 0 0 0 0
-0 6000 100
+0 6000 100 100
 E
 boots black leather~
 &+L   These boots have been crafted from a very light weight grade of leather.&N
@@ -202,7 +202,7 @@ backpack bp black leather~
 ~
 15 13 3 0 15 50 8192 4194305 0 0 0
 333 0 0 333 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 backpack bp black leather~
 &+L   This backpack has be crafted from a fine grade of leather.&N
@@ -216,7 +216,7 @@ leather black sleeves~
 ~
 9 13 3 0 9 18 8192 257 0 0 0
 8 0 0 3 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 leather black sleeves~
 &+L   These sleeves have been crafted from a fine grade of leather.&N
@@ -232,7 +232,7 @@ obsidian helm~
 ~
 9 19 3 0 11 70 9216 17 66 87585051 2240
 8 0 0 5 1 0 0 0
-1 8000 100
+1 8000 100 100
 E
 obsidian helm~
 &+L   This helm has been forged from a fine grade of adamantium.  You notice it&N
@@ -249,7 +249,7 @@ moss covered belt~
 ~
 9 13 3 0 15 9 8192 2049 66 0 0
 7 0 0 3 0 0 0 0
-0 13000 100
+0 13000 100 100
 E
 moss covered belt~
 &+L   This black belt has been &+gc&+Go&+gv&+Ge&+gred &+Lby a thick layer of &+Gm&+goss&+L.  You notice that&N
@@ -266,7 +266,7 @@ sword blood stained claymore~
 ~
 5 19 3 0 11 55 4203520 8193 66 87572507 0
 13 4 7 3 0 0 0 0
-0 33000 100
+0 33000 100 100
 E
 sword claymore~
 &+L   This claymore is dotted with marks of a deep &+Rcrimson &+Lsubstance.  It seems to&N
@@ -285,7 +285,7 @@ heart~
 ~
 8 2 2 0 15 69 61440 8404993 64 0 0
 0 0 0 0 0 0 0 0
-2 6000 100
+2 6000 100 100
 E
 heart~
 &+L   This heart of living da&+brkne&+Lss beats on even without any body.  The evil of&N

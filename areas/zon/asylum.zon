@@ -238,18 +238,18 @@ O 0 9248 1 9202 100 0 0 0          * an onyx pool
 O 0 9240 2 9205 100 0 0 0          * a broom
 O 0 9241 2 9205 100 0 0 0          * a pail
 O 0 9242 1 9212 100 0 0 0          * a tapestry
-O 0 9243 1 9216 100 0 0 0          * a bed
+O 0 9243 1 9216 100 0 0 0          * several beds
 O 0 9240 2 9221 100 0 0 0          * a broom
 O 0 9241 2 9221 100 0 0 0          * a pail
-O 0 9247 1 9232 100 0 0 0          * a bed
-O 0 9244 1 9232 100 0 0 0          * a desk
+O 0 9247 1 9232 100 0 0 0          * several beds
+O 0 9244 1 9232 100 0 0 0          * several desks
 O 0 9212 1 9244 100 0 0 0          * a bone toothpick
 O 0 9200 1 9249 100 0 0 0          * a long metal table
 O 0 9245 1 9285 100 0 0 0          * a frozen pond
 O 0 9246 1 9285 100 0 0 0          * a rough, wooden bench
 *
 M 0 9209 1 9201 100 0 0 0          * the head priestess
-E 1 9206 1 10 100 0 0 0            *   some irridecent silk sleeves
+E 1 9206 1 10 100 0 0 0            *   some irridescent silk sleeves
 E 1 9207 1 15 100 0 0 0            *   a coiling serpent
 E 1 9227 1 21 100 0 0 0            *   a black pearl earring
 E 1 9208 1 16 100 0 0 0            *   a serpentine lash
@@ -341,7 +341,7 @@ M 0 9201 5 9242 100 0 0 0          * a raving lunatic
 M 0 9206 7 9246 100 0 0 0          * a priestess
 M 0 9202 5 9246 100 0 0 0          * a leper
 E 1 9211 7 16 100 0 0 0            *   a diseased rat's tooth
-G 1 9234 2 0 100 0 0 0             *    a pair of rotted pants
+G 1 9234 2 0 100 0 0 0             *    a pair of rotten pants
 M 0 9201 5 9248 100 0 0 0          * a raving lunatic
 E 1 9211 7 16 100 0 0 0            *   a diseased rat's tooth
 M 0 9210 1 9249 100 0 0 0          * an unconcious patient
@@ -353,7 +353,7 @@ E 1 9235 1 16 100 0 0 0            *   a skull drill
 M 0 9206 7 9251 100 0 0 0          * a priestess
 M 0 9202 5 9252 100 0 0 0          * a leper
 E 1 9211 7 16 100 0 0 0            *   a diseased rat's tooth
-G 1 9234 2 0 100 0 0 0             *    a pair of rotted pants
+G 1 9234 2 0 100 0 0 0             *    a pair of rotten pants
 M 0 9202 5 9255 100 0 0 0          * a leper
 E 1 9211 7 16 100 0 0 0            *   a diseased rat's tooth
 M 0 9201 5 9257 100 0 0 0          * a raving lunatic

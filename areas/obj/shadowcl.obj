@@ -5,7 +5,7 @@ boots forest~
 ~
 9 13 3 8 7 0 0 65 64 0 0
 5 6 1 3 0 0 0 0
-3 1234 100
+3 1234 100 100
 A
 26 3
 A
@@ -17,7 +17,7 @@ badge insignia shadow circle~
 ~
 9 1 1 2 7 0 0 2097153 64 0 0
 0 16 0 3 0 0 0 0
-1 4311 100
+1 4311 100 100
 A
 4 2
 #93902
@@ -27,7 +27,7 @@ mask beast~
 ~
 9 15 3 3 7 0 65536 262145 64 0 0
 4 13 1 3 0 0 0 0
-2 4102 100
+2 4102 100 100
 A
 24 -1
 A
@@ -39,7 +39,7 @@ bracelet earth~
 ~
 9 9 3 3 7 0 0 4097 64 0 0
 0 11 24 3 0 0 0 0
-2 12324 100
+2 12324 100 100
 A
 17 -5
 A
@@ -51,7 +51,7 @@ staff wanderer~
 ~
 5 6 3 10 7 0 1024 8193 64 37883812 0
 12 1 4 7 0 0 0 0
-15 3992 100
+15 3992 100 100
 A
 14 7
 A
@@ -63,7 +63,7 @@ ring hierophant~
 ~
 9 16 1 1 7 0 1024 3 64 37883812 0
 0 1 0 3 0 0 0 0
-0 1832 100
+0 1832 100 100
 A
 13 10
 A
@@ -75,7 +75,7 @@ sickle lunar~
 ~
 5 16 2 0 7 0 0 8193 64 0 0
 17 1 6 3 0 0 0 0
-9 12354 100
+9 12354 100 100
 A
 24 -2
 A
@@ -87,7 +87,7 @@ cudgel heartwood~
 ~
 5 6 3 0 7 0 1 8193 64 4248567899 0
 10 1 6 7 0 0 0 0
-4 23334 100
+4 23334 100 100
 A
 19 1
 A
@@ -99,7 +99,7 @@ earring long beast~
 ~
 9 16 1 1 7 0 0 524289 64 4248567899 0
 2 14 0 3 0 0 0 0
-2 4555 100
+2 4555 100 100
 A
 4 3
 A
@@ -111,7 +111,7 @@ trout dead~
 ~
 8 2 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 #93911
 fur animal~
 some animal fur~
@@ -119,7 +119,7 @@ Some animal fur lies on the ground here.~
 ~
 8 3 0 0 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #93912
 animal clippers~
 some animal clippers~
@@ -127,7 +127,7 @@ Some animal clippers lie here~
 ~
 8 16 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 #93913
 fishing pole~
 a fishing pole~
@@ -135,7 +135,7 @@ A small fishing pole lies here on a rock~
 ~
 8 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-8 0 100
+8 0 100 100
 #93914
 potion bubbling brown~
 &+ya bubbling brown potion&n~
@@ -143,7 +143,7 @@ potion bubbling brown~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 20 141 -1 -1 0 0 0 0
-4 8888 100
+4 8888 100 100
 #93915
 potion dark misty~
 &+La dark misty potion&n~
@@ -151,7 +151,7 @@ A potion lies here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 26 56 -1 -1 0 0 0 0
-2 9999 100
+2 9999 100 100
 #93916
 potion fizzing purple~
 &+ma fizzing purple potion&n~
@@ -159,4 +159,4 @@ A fizzing potion lies here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 26 16 43 -1 0 0 0 0
-8 10000 100
+8 10000 100 100

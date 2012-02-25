@@ -5,7 +5,7 @@ wooden trapdoor~
 ~
 25 6 3 0 7 0 4096 0 0 0 0
 6600 7 -1 0 0 0 0 0
-500 0 100
+500 0 100 100
 #6501
 swirling maelstrom~
 &+Wa sw&+Cir&+Wl&+Ci&+Wng m&+Cae&+Wlstr&+Co&+Wm&n~
@@ -13,7 +13,7 @@ swirling maelstrom~
 ~
 25 40 3 0 7 0 8192 0 0 0 0
 6548 7 -1 0 0 0 0 0
-20000 0 100
+20000 0 100 100
 #6502
 ring citizenship~
 &+La &+Cring &+Lof &+Wcitizenship&n~
@@ -21,7 +21,7 @@ ring citizenship~
 ~
 11 10 3 0 11 0 0 3 64 0 0
 0 0 0 0 0 0 0 0
-3 8510 100
+3 8510 100 100
 A
 5 8
 A
@@ -33,7 +33,7 @@ fishing net~
 ~
 15 42 3 0 11 0 0 1 0 0 0
 500 0 0 500 0 0 0 0
-2 13949 100
+2 13949 100 100
 #6504
 hunting bracer~
 &+La &+Rh&+runtin&+Rg &+Wbracer&n~
@@ -41,7 +41,7 @@ hunting bracer~
 ~
 9 10 3 0 7 0 0 4097 64 0 0
 5 0 0 3 0 0 0 0
-4 6552 100
+4 6552 100 100
 A
 26 5
 A
@@ -53,7 +53,7 @@ potion herbs~
 ~
 10 7 3 0 7 0 0 1 0 0 0
 25 43 -1 -1 0 0 0 0
-2 3556 100
+2 3556 100 100
 #6506
 necklace dead frogs~
 &+La &+Wnecklace &+Lof dead &+gfrogs&n~
@@ -61,7 +61,7 @@ necklace dead frogs~
 ~
 11 2 3 0 3 0 0 8388613 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 A
 1 5
 A
@@ -73,7 +73,7 @@ bracer hunting~
 ~
 9 10 3 0 9 0 0 4097 0 0 0
 4 0 0 3 0 0 0 0
-2 9502 100
+2 9502 100 100
 A
 14 15
 A
@@ -85,7 +85,7 @@ brew snake eyes potion~
 ~
 10 7 3 0 11 0 0 1 0 0 0
 51 204 208 -1 0 0 0 0
-1 2000 100
+1 2000 100 100
 #6509
 heart constrictor~
 &+Lthe &+rheart &+Lof a &+Wconstrictor&n~
@@ -93,7 +93,7 @@ heart constrictor~
 ~
 13 2 3 0 11 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 13000 100
+1 13000 100 100
 #6510
 potion constrictor blood~
 &+La &+cpotion &+Lof &+Wconstrictor &+rblood&n~
@@ -101,7 +101,7 @@ potion constrictor blood~
 ~
 10 7 3 0 11 0 0 1 0 0 0
 60 200 208 -1 0 0 0 0
-1 10000 100
+1 10000 100 100
 #6511
 potion greater constrictor blood~
 &+La &+cpotion &+Lof &+ygreater &+Wconstrictor &+rblood&n~
@@ -109,7 +109,7 @@ potion greater constrictor blood~
 ~
 10 7 3 0 11 0 0 1 0 0 0
 60 200 225 227 0 0 0 0
-1 10000 100
+1 10000 100 100
 #6512
 potion crushed teeth extract~
 &+La &+cpotion &+Lof &+munderworld &+ybear &+Wextract&n~
@@ -117,7 +117,7 @@ potion crushed teeth extract~
 ~
 10 7 3 0 11 0 0 1 0 0 0
 60 209 56 179 0 0 0 0
-1 10000 100
+1 10000 100 100
 #6513
 potion swirling darkness essence~
 &+La &+cpotion &+Lof &+Lpanther &+Wessence&n~
@@ -125,4 +125,4 @@ potion swirling darkness essence~
 ~
 10 7 3 0 11 0 0 1 0 0 0
 60 201 66 84 0 0 0 0
-1 10000 100
+1 10000 100 100

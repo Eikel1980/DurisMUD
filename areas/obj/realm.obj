@@ -5,7 +5,7 @@ elvish sword great antiquity _noquest_~
 ~
 5 16 3 10 7 0 1024 8193 66 96071707 0
 5 1 5 3 0 0 0 0
-17 200000 100 8208 4 0 0
+17 200000 100 100 8208 4 0 0
 E
 elvish sword antiquity~
 The sword is extremely large, yet possess an uncanny balance to it, like it
@@ -24,7 +24,7 @@ water reflecting pool~
 ~
 17 40 5 50 7 0 0 0 66 0 0
 -1 -1 0 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 #14003
 skull~
 a cracked skull covered with mud~
@@ -32,7 +32,7 @@ A skull, cracked and caked with layers of mud sticks out from the mud.~
 ~
 13 10 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 skull~
 This poor fellow didn't quite make it through this area... will you be
@@ -45,7 +45,7 @@ pile bones~
 ~
 13 10 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-12 1 100
+12 1 100 100
 E
 bones pile~
 The pile is huge and looks like it has amounted over time from the
@@ -58,7 +58,7 @@ large boulder~
 ~
 17 40 0 0 7 0 0 0 64 0 0
 -1 -1 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 boulder spring~
 It looks like you could drink the water from the boulder.
@@ -70,7 +70,7 @@ bag bottomless tinker tinkers~
 ~
 15 3 3 10 7 0 0 17409 64 0 0
 500 1 -1 200 0 0 0 0
-0 7213492 100
+0 7213492 100 100
 E
 bottomless bag tinker~
 This bag of Tinkers is profoundly the ugliest thing you have ever laid
@@ -93,7 +93,7 @@ demonic crown~
 ~
 9 22 3 8 12 0 4128 17 3 0 0
 12 4 16 4 0 0 0 0
-15 40000 100
+15 40000 100 100
 A
 20 -3
 A
@@ -105,7 +105,7 @@ silver pot tinker~
 ~
 15 22 0 0 7 0 0 16385 0 0 0
 75 0 0 75 0 0 0 0
-2 500 100
+2 500 100 100
 A
 24 -1
 #14009
@@ -115,7 +115,7 @@ garish tinker robe~
 ~
 9 3 3 8 7 0 8192 1025 0 0 0
 5 0 0 3 0 0 0 0
-3 8000 100
+3 8000 100 100
 E
 garish robe~
 The robe is fairly loose and flows well with you.  Too bad it is such
@@ -132,7 +132,7 @@ vial glowing lavender~
 ~
 10 7 2 4 7 0 128 16385 64 0 0
 55 9 -1 -1 0 0 0 0
-3 93218 100
+3 93218 100 100
 E
 glowing lavender vial~
 The vial glows with an inner power.  Just holding the vial makes your
@@ -147,7 +147,7 @@ faerie goggles sight~
 ~
 9 52 3 3 10 0 0 131073 64 0 0
 5 12 2 3 0 0 0 0
-2 13932 100 8 28 0 0
+2 13932 100 100 8 28 0 0
 E
 goggles sight~
 The lenses of the goggles are made of a crystal which has been magically
@@ -165,7 +165,7 @@ Guhan's large oaken desk sits here, surprisingly with no color.~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 800 15 14013 100 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 oaken desk~
 The desk is a massive worked piece of oak.  You notice that there is a drawer
@@ -178,7 +178,7 @@ A little, bronze key is lying here.~
 ~
 18 20 1 1 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 15 100
+1 15 100 100
 #14014
 note~
 a note~
@@ -186,7 +186,7 @@ A note in flowing script is lying here.~
 ~
 13 29 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 note script~
 The note is written to Guhan, written by Mab, Queen of the Seelie Court.
@@ -208,7 +208,7 @@ campfire fire~
 ~
 15 1 3 0 7 0 0 0 0 0 0
 100 0 -1 100 0 0 0 0
-25 1 100
+25 1 100 100
 E
 campfire~
 This fire cracks and pops and burns with a warm and bright light.  You
@@ -221,7 +221,7 @@ glowing stick~
 ~
 1 6 0 0 7 0 4096 16385 64 0 0
 0 0 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 A
 12 5
 #14017
@@ -231,7 +231,7 @@ A huge flagon which reeks of powerful whisky is here killing the plantlife.~
 ~
 17 9 0 0 7 0 0 16385 64 0 0
 96 96 5 0 0 0 0 0
-40 10000 100
+40 10000 100 100
 E
 bandors flagon~
 This flask looks like it could hold more liquid than possible.  It must
@@ -246,7 +246,7 @@ ring faerie glowing~
 ~
 9 25 3 0 7 0 0 3 0 0 0
 0 2 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 2
 A
@@ -258,7 +258,7 @@ potion glowing amber~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 55 36 56 53 0 0 0 0
-2 65000 100
+2 65000 100 100
 #14020
 potion quicksilver~
 &+Wa quicksilver potion~
@@ -266,7 +266,7 @@ potion quicksilver~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 50 41 66 84 0 0 0 0
-3 45000 100
+3 45000 100 100
 E
 potion silver~
 This potion is said to be behind a Tinkers ability to flee from trouble
@@ -279,7 +279,7 @@ A gleeman's cloak lies here in a colorful heap of attractive patches.~
 ~
 9 3 3 8 9 0 1024 5 0 4197892 0
 8 0 0 3 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 gleemans cloak~
 The gleeman's cloak is made up of a multitude of bright, colorful patches,
@@ -297,7 +297,7 @@ A small stack of &+Wplatinum coins&n lies here in the drawer of the desk.~
 ~
 20 25 1 0 7 0 0 1 0 0 0
 0 0 0 52 0 0 0 0
-6 75000 100
+6 75000 100 100
 #14023
 gigantic sword power~
 &+Ba gigantic, steel-blue sword of power&N~
@@ -305,7 +305,7 @@ gigantic sword power~
 ~
 5 16 4 10 7 0 4194304 8193 66 4198895524 0
 13 1 6 3 0 0 0 0
-18 100 100
+18 100 100 100
 E
 gigantic sword~
 This sword is forged of metals unknown, possessing a keen edge and perfect
@@ -324,7 +324,7 @@ diamond shield~
 ~
 37 27 3 15 11 0 262145 513 64 0 0
 2 1 3 160 4 0 0 0
-9 28000 100
+9 28000 100 100
 E
 shield diamond~
 This shield is a powerful looking piece of protection.  The shield is made
@@ -344,7 +344,7 @@ green stone ring~
 ~
 9 11 1 1 7 0 0 3 0 0 0
 3 1 0 3 0 0 0 0
-1 2111 100
+1 2111 100 100
 E
 green stone ring~
 The ring is crafted from beaten metal and inset with sharply cut green
@@ -359,7 +359,7 @@ tiara silver amethyst~
 ~
 9 22 0 0 7 0 0 17 66 0 0
 11 4 1 3 0 0 0 0
-4 12873 100
+4 12873 100 100
 A
 2 5
 A
@@ -371,7 +371,7 @@ collar black pearls~
 ~
 8 52 0 0 7 0 65536 5 0 0 0
 0 0 0 0 0 0 0 0
-3 35848 100
+3 35848 100 100
 A
 22 -2
 A
@@ -383,7 +383,7 @@ walnut~
 ~
 13 5 0 50 7 0 0 16385 0 0 0
 0 0 1 0 0 0 0 0
-3 10 100
+3 10 100 100
 #14029
 herbs~
 &+ga bunch of dried herbs&N~
@@ -391,7 +391,7 @@ herbs~
 ~
 19 5 2 2 7 0 0 1 0 0 0
 2 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #14030
 bread waybread~
 &+Ya loaf of faerie waybread&N~
@@ -399,7 +399,7 @@ bread waybread~
 ~
 19 5 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 #14031
 basket~
 &+ya large basket of bread&N~
@@ -407,7 +407,7 @@ basket~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 200 0 -1 100 0 0 0 0
-200 1 100
+200 1 100 100
 #14032
 honey jar~
 &+ya honey jar&N~
@@ -415,7 +415,7 @@ honey jar~
 ~
 19 9 2 2 7 0 0 1 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #14033
 apron~
 &+Wa white apron&N~
@@ -423,7 +423,7 @@ apron~
 ~
 11 3 3 6 7 0 0 2049 0 0 0
 0 0 0 4 0 0 0 0
-2 100 100
+2 100 100 100
 E
 apron~
 The apron looks like it would protect you from a the deadly monsters
@@ -440,7 +440,7 @@ key metal white~
 ~
 18 16 1 1 7 0 8388640 16385 0 0 0
 14095 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 #14035
 slime water stagnant pool~
 &+Ga stagnant pool of water&N~
@@ -448,7 +448,7 @@ slime water stagnant pool~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 9 2 0 0 0 0
-1000 1 100
+1000 1 100 100
 #14036
 ring signet finn~
 &+YFinn's signet ring&N~
@@ -456,7 +456,7 @@ ring signet finn~
 ~
 9 24 4 1 12 0 4096 16387 64 0 0
 8 0 0 3 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 signet ring~
 It is a large and heavy looking ring with the symbol of a dragon
@@ -478,7 +478,7 @@ key mammoth finn~
 ~
 18 15 5 1 7 0 8425600 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 mammoth key~
 The key is enormous in size, the thickness of it about the size of
@@ -492,7 +492,7 @@ amulet tree~
 ~
 18 6 3 1 7 0 8388608 16389 64 0 0
 0 0 0 0 0 0 0 0
-3 7321 100
+3 7321 100 100
 E
 amulet tree~
 The amulet glows with a fiery green power, imbued with the life magic
@@ -509,7 +509,7 @@ rotted corpse~
 ~
 15 2 3 30 7 0 0 1 0 0 0
 100 0 -1 100 0 0 0 0
-120 1 100
+120 1 100 100
 E
 corpse rotted~
 This corpse looks like it's been down in these tunnels for a long time.
@@ -525,7 +525,7 @@ rusty dagger~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 7 11 0 0 0 0
-5 7 100
+5 7 100 100
 A
 18 1
 #14041
@@ -535,7 +535,7 @@ A large map lies rolled up on the ground, looking a little soggy.~
 ~
 13 28 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 map faerie realm~
 % == ruins                              Anna's Cottage
@@ -568,7 +568,7 @@ A corroded chainmail shirt is here in a heap.~
 ~
 9 16 3 8 7 0 128 9 0 0 0
 11 3 1 3 0 0 0 0
-10 984 100
+10 984 100 100
 E
 corroded chainmail shirt~
 The chainmail shirt has been damaged severely by time and the powerful
@@ -586,7 +586,7 @@ A fizzing and popping flask of liquid sits here curiously.~
 ~
 10 40 2 4 7 0 0 16385 0 0 0
 40 84 15 15 0 0 0 0
-1 5000 100
+1 5000 100 100
 #14044
 potion crystalline blue~
 &+Ba potion in an crystalline flask&N~
@@ -594,7 +594,7 @@ potion crystalline blue~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 40 79 141 -1 0 0 0 0
-3 5000 100
+3 5000 100 100
 #14045
 belt black sapphires~
 &+La belt encrusted with black sapphires&N~
@@ -602,7 +602,7 @@ belt black sapphires~
 ~
 9 26 3 3 12 0 32 2049 64 0 0
 9 10 0 3 0 0 0 0
-5 40000 100
+5 40000 100 100
 E
 belt black sapphires~
 The belt is huge, made of some unknown material, and posses some of
@@ -619,7 +619,7 @@ cuendillar heartstone disk stone~
 ~
 12 11 3 10 7 0 9216 16385 64 4196868 0
 0 0 0 0 0 0 0 0
-3 17431 100
+3 17431 100 100
 E
 cuendillar heartstone disk stone~
 The disk pulses with a strange magical power; it seems to have been the
@@ -637,7 +637,7 @@ staff mahogany~
 ~
 4 6 3 10 7 0 0 16385 64 0 0
 50 1 1 12 0 0 0 0
-6 67829 100
+6 67829 100 100
 A
 18 1
 #14048
@@ -647,7 +647,7 @@ orb mysterious~
 ~
 25 16 0 50 7 0 8192 0 64 0 0
 14002 320 -1 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 orb mysterious~
 The orb is a giant globe of swirling colors and humming magical energy.
@@ -661,7 +661,7 @@ water pitcher earthenware~
 ~
 17 40 0 0 7 0 0 1 0 0 0
 50 50 0 0 0 0 0 0
-60 100 100
+60 100 100 100
 #14050
 immense stone oven~
 an immense oven of stone~
@@ -669,7 +669,7 @@ An immense oven made entirely of stone is here radiating heat.~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 300 5 -1 100 0 0 0 0
-20000 1 100
+20000 1 100 100
 #14051
 gooseberry pie~
 &+ma steaming hot, gooseberry pie&N~
@@ -677,7 +677,7 @@ gooseberry pie~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 3 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 #14052
 gloves elfskin~
 &+Wsome elfskin gloves&N~
@@ -685,7 +685,7 @@ gloves elfskin~
 ~
 9 12 3 6 7 0 0 129 0 0 0
 4 7 6 2 0 0 0 0
-3 5000 100
+3 5000 100 100
 A
 3 5
 A
@@ -697,7 +697,7 @@ A leather mantle embedded with sharp spikes is here on the ground.~
 ~
 9 13 0 0 7 0 0 1025 0 0 0
 7 9 1 3 0 0 0 0
-10 7000 100
+10 7000 100 100
 E
 spiked leather mantle~
 The mantle is heavy and well worn; meant to be used as damage-armor in
@@ -714,7 +714,7 @@ An &+yancient tree amulet&n lies here.~
 ~
 9 15 3 0 5 0 0 5 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 20 -3
 A
@@ -726,7 +726,7 @@ A steel shortsword lies among the rubble, dully reflecting the light.~
 ~
 5 16 3 10 7 0 4096 8193 64 4198895524 0
 9 1 4 3 0 0 0 0
-12 1000 100
+12 1000 100 100
 #14056
 dirk bronze~
 &+ya bronze dirk&N~
@@ -734,7 +734,7 @@ dirk bronze~
 ~
 5 20 2 0 7 0 5120 8193 64 8515584 0
 2 1 4 11 0 0 0 0
-7 1000 100
+7 1000 100 100
 A
 18 1
 A
@@ -746,7 +746,7 @@ hammer holy~
 ~
 5 16 3 8 7 0 5120 8193 64 33685920 0
 4 1 6 6 0 0 0 0
-9 1000 100
+9 1000 100 100
 A
 18 1
 #14059
@@ -756,7 +756,7 @@ bag snatching~
 ~
 15 3 3 10 7 0 0 16385 0 0 0
 65 0 0 100 0 0 0 0
-7 1000 100
+7 1000 100 100
 #14060
 buckler hide animal~
 &+yan animal hide buckler&N~
@@ -764,7 +764,7 @@ buckler hide animal~
 ~
 37 12 3 15 7 0 0 513 0 0 0
 1 1 2 6 3 0 0 0
-5 500 100
+5 500 100 100
 A
 18 1
 #14061
@@ -774,7 +774,7 @@ glowing stick~
 ~
 1 6 0 0 7 0 0 16385 64 0 0
 0 0 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 A
 13 6
 #14062
@@ -784,7 +784,7 @@ A mountainous heap of junk lies spread out over the entire room.~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 50000 0 -1 100 0 0 0 0
-50000 1 100
+50000 1 100 100
 E
 mountainous heap junk~
 There is so much stuff in this heap it would take a long time to search
@@ -799,7 +799,7 @@ A bit of useless string is here among the other junk.~
 ~
 13 3 0 0 7 0 4096 16387 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 A
 22 1
 #14064
@@ -809,7 +809,7 @@ A broken pocket-watch lies here among the heap of other stuff.~
 ~
 13 16 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #14065
 dead rat~
 a very dead rat~
@@ -817,7 +817,7 @@ A stiff and very, very dead rat is here attracting maggots.~
 ~
 5 2 2 0 7 0 4096 24577 0 0 0
 10 1 1 7 0 0 0 0
-2 1 100
+2 1 100 100
 E
 rat dead~
 The rat is stiff and very dead.  A sugestive odor rises from it in a
@@ -832,7 +832,7 @@ A wand of thunderous rage is here glittering evilly.~
 ~
 3 5 2 4 7 0 4096 16385 0 0 0
 30 3 3 72 0 0 0 0
-1 5000 100
+1 5000 100 100
 #14067
 moldy loaf bread~
 &+ga moldy loaf of bread&N~
@@ -840,7 +840,7 @@ moldy loaf bread~
 ~
 19 2 2 2 7 0 4096 1 0 0 0
 5 0 0 5 0 0 0 0
-2 1 100
+2 1 100 100
 #14068
 stone tablet~
 an ancient stone tablet~
@@ -848,7 +848,7 @@ An ancient stone tablet is here poking out of the pile of stuff.~
 ~
 13 11 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-8 1 100
+8 1 100 100
 E
 stone tablet~
 The stone tablet seems to be an ancient record of arms made.  The
@@ -867,7 +867,7 @@ torch pitch~
 ~
 1 7 3 8 7 0 0 16385 0 0 0
 0 0 48 0 0 0 0 0
-1 1 100
+1 1 100 100
 #14070
 forest cloak shadows~
 &+ga cloak of &+Lforest shadows&N~
@@ -875,7 +875,7 @@ forest cloak shadows~
 ~
 11 3 3 8 7 0 0 1025 0 0 0
 0 0 0 4 0 0 0 0
-3 3947 100
+3 3947 100 100
 E
 forest cloak shadows~
 They cloak seems to fade in with its surroundings making it hard to
@@ -894,7 +894,7 @@ pixie wand~
 ~
 3 16 2 4 7 0 0 16385 64 4248567899 0
 1 1 1 32 0 0 0 0
-1 800 100
+1 800 100 100
 #14072
 tunic umber~
 &+Gan umber tunic of&N &+gforest colors&N~
@@ -902,7 +902,7 @@ tunic umber~
 ~
 9 3 0 0 7 0 0 9 0 0 0
 10 3 1 3 0 0 0 0
-4 1000 100
+4 1000 100 100
 A
 14 8
 #14073
@@ -912,7 +912,7 @@ bracelet woven ivy leaves~
 ~
 11 30 3 3 7 0 0 4097 64 0 0
 0 0 0 3 0 0 0 0
-1 800 100
+1 800 100 100
 A
 2 4
 A
@@ -924,7 +924,7 @@ tail fox silver~
 ~
 13 22 0 0 7 0 262144 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 70 100
+2 70 100 100
 #14075
 leggings silvermesh~
 &+Wsome silvermesh leggings&N~
@@ -932,7 +932,7 @@ leggings silvermesh~
 ~
 9 15 3 8 7 0 0 33 64 0 0
 5 5 1 3 0 0 0 0
-1 1 100
+1 1 100 100
 A
 5 4
 #14076
@@ -942,7 +942,7 @@ A wand made of polished &+yo&+ga&+yk&N lies here on the ground.~
 ~
 3 6 2 4 7 0 270336 16385 0 0 0
 50 4 4 28 0 0 0 0
-6 10000 100
+6 10000 100 100
 E
 wand celriyas~
 Celriya's wand is a thin rod of carved wood, made from a tree which
@@ -955,7 +955,7 @@ slender wooden spear~
 ~
 5 6 4 0 7 0 4194304 8193 0 0 0
 8 1 6 11 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 slender wooden spear~
 A light weapon made for quick stabs at your opponent.
@@ -971,7 +971,7 @@ smooth horn protection~
 ~
 9 10 0 0 8 0 262144 8404993 66 0 0
 4 18 0 3 0 0 0 0
-4 5212 100
+4 5212 100 100
 E
 smooth horn~
 This is a horn of some beast of which you can't identify.  It is
@@ -990,7 +990,7 @@ cloak traveling~
 ~
 15 3 3 8 7 0 0 1025 0 0 0
 120 5 -1 120 0 0 0 0
-5 3948 100
+5 3948 100 100
 E
 cloak traveling~
 Finn's traveling cloak has been through a lot, and has still served him
@@ -1008,7 +1008,7 @@ key dark steel~
 ~
 18 16 1 1 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #14082
 little green cap~
 &+Ga little, green cap&N~
@@ -1016,7 +1016,7 @@ little green cap~
 ~
 9 3 3 3 7 0 0 17 0 0 0
 5 4 16 3 0 0 0 0
-2 500 100
+2 500 100 100
 E
 little green cap~
 This little cap is so tiny it might slip off your head if you aren't
@@ -1031,7 +1031,7 @@ A broken column of stone lies across the ground here.~
 ~
 13 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-100000 1 100
+100000 1 100 100
 E
 broken column stone~
 This is some stone column support from an ancient building which has
@@ -1044,7 +1044,7 @@ A marble bench perfect to sit on and enjoy the splendor or the garden is here.~
 ~
 13 38 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-5000 1 100
+5000 1 100 100
 E
 marble bench~
 This marble bench has been placed here conveniently for anyone to sit on
@@ -1057,7 +1057,7 @@ An old and weathered statue stands here in the garden of the temple grounds.~
 ~
 13 11 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 weathered statue~
 This statue looks like at one point it could have been a elvish maiden,
@@ -1070,7 +1070,7 @@ A curious looking &+Lt&+wo&+La&+wd&+Ls&+wt&+Lo&+wo&+Ll&N is growing off to the s
 ~
 19 2 2 2 7 0 0 1 0 0 0
 3 0 0 8 0 0 0 0
-1 1 100
+1 1 100 100
 E
 toadstool~
 This toadstool seems to be pretty large for a poisonous mushroom.  It
@@ -1084,7 +1084,7 @@ A chest covered with thick layers of dust is here making you sneeze.~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 4900 15 14034 250 0 0 0 0
-5000 1 100
+5000 1 100 100
 E
 dusy chest~
 This chest looks like it's been sitting around, with no real use for
@@ -1097,7 +1097,7 @@ A scroll yellowed with much age is lying here in the dust.~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 30 35 12 -1 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 _id_short_~
 &+Ya scroll of curse-removing food creation&n
@@ -1113,7 +1113,7 @@ A scroll crinkled and rolled up very sloppily sits here in the dust.~
 ~
 2 29 1 2 7 0 0 1 0 0 0
 30 67 83 -1 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 _id_short_~
 a scroll of levitating invisibility dispellation
@@ -1129,7 +1129,7 @@ wand rose~
 ~
 3 6 2 4 7 0 0 16385 0 0 0
 8 1 1 1 0 0 0 0
-1 1000 100
+1 1000 100 100
 #14091
 wreath rose~
 &+ra wreath of &+Rentwined roses&N~
@@ -1137,7 +1137,7 @@ wreath rose~
 ~
 9 5 0 0 7 0 0 17 0 0 0
 3 4 1 3 0 0 0 0
-3 1 100
+3 1 100 100
 E
 rose wreath~
 The wreath is made of roses woven together to form a weave of
@@ -1154,7 +1154,7 @@ wand violet~
 ~
 3 16 2 4 7 0 0 16385 0 0 0
 6 1 1 3 0 0 0 0
-1 1000 100
+1 1000 100 100
 #14093
 bright orange azalea~
 &+Ra bright, orange azalea&N~
@@ -1162,7 +1162,7 @@ bright orange azalea~
 ~
 13 5 0 0 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 E
 bright orange azalea~
 This large flower makes you feel better just holding it.  Perhaps it's
@@ -1177,7 +1177,7 @@ daisy flower~
 ~
 13 5 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 daisy flower~
 This little daisy would make the perfect gift for that special someone...
@@ -1191,7 +1191,7 @@ buttercup flower~
 ~
 13 5 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 buttercup flower~
 This little, yellow buttercup gives you a warm fuzzy feeling inside.
@@ -1205,7 +1205,7 @@ silvery saber~
 ~
 5 22 3 0 7 0 262144 8193 64 4194697632 0
 9 2 6 3 0 0 0 0
-12 4321 100
+12 4321 100 100
 E
 silvery saber~
 This wicked looking saber reflects light so well it almost seems to glow.
@@ -1223,7 +1223,7 @@ Rocks bonded together to form a staff lies here on the ground.~
 ~
 4 6 3 10 7 0 0 16385 64 0 0
 46 3 3 23 0 0 0 0
-23 2000 100
+23 2000 100 100
 #14098
 sack large cloth~
 &+ya large, cloth sack&N~
@@ -1231,7 +1231,7 @@ A large, cloth sack lies here neatly folded up in a bundle here.~
 ~
 15 3 3 8 7 0 0 16385 0 0 0
 125 5 -1 100 0 0 0 0
-9 981 100
+9 981 100 100
 #14099
 radiant opal~
 &+Ba radiant &+Wopal&N~
@@ -1239,7 +1239,7 @@ radiant opal~
 ~
 1 26 0 0 7 0 5120 16385 64 87572571 0
 0 0 -1 0 0 0 0 0
-2 7541 100
+2 7541 100 100
 A
 5 4
 A
@@ -1251,7 +1251,7 @@ golden rod~
 ~
 1 24 2 4 7 0 5120 16385 64 37883812 0
 0 0 -1 0 0 0 0 0
-3 2113 100
+3 2113 100 100
 E
 golden rod~
 This little rod sparkles with a magical power all of its own.
@@ -1265,7 +1265,7 @@ glowing red feather~
 ~
 1 5 1 1 7 0 5120 16385 64 8515584 0
 0 0 -1 0 0 0 0 0
-1 3487 100
+1 3487 100 100
 A
 2 4
 A
@@ -1277,7 +1277,7 @@ A jar of beans which jump around with their own inner magic is here.~
 ~
 8 7 0 0 7 0 128 1 64 0 0
 0 0 0 0 0 0 0 0
-21 5321 100
+21 5321 100 100
 E
 jar magic beans~
 This large jar is filled with a handful of strange beans jumping around
@@ -1291,7 +1291,7 @@ staff rowan faerie sages~
 ~
 5 6 3 10 7 0 263168 8193 66 33685920 0
 12 2 9 7 0 0 0 0
-10 13832 100
+10 13832 100 100
 E
 staff rowan sages~
 The staff isn't terribly large but it is balanced just right to make it
@@ -1309,7 +1309,7 @@ robe flowing white~
 ~
 9 3 3 8 10 0 1024 9 64 46305252 0
 10 3 1 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 A
 12 20
 A
@@ -1321,7 +1321,7 @@ cudgel stonewood~
 ~
 5 6 3 0 7 0 0 8193 64 0 0
 10 1 4 6 0 0 0 0
-14 4632 100
+14 4632 100 100
 E
 cudgel stonewood~
 This blunt, short club is made from a special type of wood which is hard
@@ -1339,7 +1339,7 @@ water silver pool~
 ~
 17 22 5 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 silver pool~
 The pool sparkles in the sunlight, clear and clean.  Little fish can be
@@ -1356,7 +1356,7 @@ A key made of carved rowan wood.~
 ~
 18 6 1 1 7 0 8392704 1 64 0 0
 14032 0 0 0 0 0 0 0
-2 1000 100
+2 1000 100 100
 #14108
 iron plated armor~
 &+Wan iron-plated set of body armor&N~
@@ -1364,7 +1364,7 @@ iron plated armor~
 ~
 9 15 0 0 7 0 0 9 0 4165209924 0
 15 3 1 3 0 0 0 0
-34 2000 100
+34 2000 100 100
 E
 iron plated armor~
 This hefty set of armor looks like it can offer quite a bit of protection,
@@ -1381,7 +1381,7 @@ A long bow made of polished wood is lying here on the ground.~
 ~
 6 6 3 4 7 0 0 24577 0 0 0
 60 60 0 1 0 0 0 0
-11 500 100
+11 500 100 100
 A
 18 1
 #14111
@@ -1391,7 +1391,7 @@ shield fianna~
 ~
 37 16 3 15 7 0 0 513 66 0 0
 2 1 3 135 3 0 0 0
-9 20000 100
+9 20000 100 100
 E
 shield fianna~
 The shield is large and decorated in beautiful silverwork.  It has a balanced
@@ -1410,7 +1410,7 @@ A scroll has carelessly been left here.~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 12 45 -1 -1 0 0 0 0
-1 2001 100
+1 2001 100 100
 E
 _id_name_~
 scroll identify
@@ -1426,7 +1426,7 @@ dancing knife jivbo~
 ~
 5 16 2 3 7 0 1024 8193 64 12713476 0
 2 1 4 11 0 0 0 0
-11 600000 100
+11 600000 100 100
 E
 dancing knife jivbo~
 The knife has been made to fit perfectly with Jivbo's fighting style: quick
@@ -1444,7 +1444,7 @@ A potion in a leather skin sits here, slowly tipping over.~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 40 44 -1 -1 0 0 0 0
-3 9124 100
+3 9124 100 100
 #14115
 oberon mantle _noquest_~
 &+ythe ancient mantle of &+YOberon&+y, the elven king&n~
@@ -1452,7 +1452,7 @@ oberon mantle _noquest_~
 ~
 11 5 3 0 14 0 33554432 1025 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 A
 14 25
 #14116
@@ -1462,7 +1462,7 @@ quiver oberon _noquest_~
 ~
 30 5 3 0 14 0 33554432 1048577 0 0 0
 100 0 0 0 0 0 0 0
-0 0 100 0 8192 0 0
+0 0 100 100 0 8192 0 0
 A
 22 -4
 A
@@ -1474,7 +1474,7 @@ belt oberon _noquest_~
 ~
 11 5 3 0 14 0 33554432 2049 0 0 0
 0 0 0 2 0 0 0 0
-0 0 100 0 64 0 0
+0 0 100 100 0 64 0 0
 A
 19 2
 A
@@ -1486,7 +1486,7 @@ arm plates oberon _noquest_~
 ~
 11 5 3 0 14 0 33554432 257 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 134217728 4096 0 0
+0 0 100 100 134217728 4096 0 0
 A
 18 -2
 A
@@ -1498,7 +1498,7 @@ bracelet oberon _noquest_~
 ~
 11 5 3 0 14 0 33554432 4097 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 8192 0 0 0
+0 0 100 100 8192 0 0 0
 A
 31 4
 #14120
@@ -1508,7 +1508,7 @@ bracelet oberon _noquest_~
 ~
 11 15 3 0 5 0 33554432 4097 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 0 4 0 0
+0 0 100 100 0 4 0 0
 A
 1 -4
 A
@@ -1520,7 +1520,7 @@ heat forge blazing _noquest_~
 ~
 1 1 3 0 15 0 33943561 1 64 0 0
 0 0 10000 0 0 0 0 0
-1 0 100
+1 0 100 100
 #14122
 billowing wind forge _noquest_~
 &+Lthe &+Wbillowing &+Cwind &+Lof a &+rforge&n~
@@ -1528,7 +1528,7 @@ billowing wind forge _noquest_~
 ~
 12 1 3 0 15 0 33943561 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #14123
 earthen hammer forge forging _noquest_~
 &+Lthe &+yearthen &+Lhammer &+yof &+rforging&n~
@@ -1536,7 +1536,7 @@ earthen hammer forge forging _noquest_~
 ~
 5 11 2 0 15 0 33943625 8193 64 0 0
 4 3 3 0 0 0 0 0
-5 0 100
+5 0 100 100
 A
 18 3
 A
@@ -1548,7 +1548,7 @@ forge astral _noquest_~
 ~
 8 1 3 0 15 0 33943625 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #14125
 copper basin water forge _noquest_~
 &+La &+ycopper basin &+Lof &+Bw&+bat&+Ber&n~
@@ -1556,7 +1556,7 @@ copper basin water forge _noquest_~
 ~
 15 21 3 0 15 0 33943625 1 64 0 0
 10 0 0 10 0 0 0 0
-10 0 100
+10 0 100 100
 #14126
 scroll fix _noquest_~
 &+ya tightly wrapped vellum scroll named '&+LFix&+y'&n~
@@ -1564,4 +1564,4 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 2 15 3 0 7 0 8773705 1 64 0 0
 62 595 0 0 0 0 0 0
-0 0 100
+0 0 100 100

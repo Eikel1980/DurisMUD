@@ -7,8 +7,8 @@ golem iron clad temple sentry assoc9_n_0 br_c~
 &+cas he stands boldly to the task at hand. His armor is heavy and
 &+ccumbersome, yet he does not seem to be weighed down one bit.
 ~
-113277515 0 0 939598014 12508 0 0 0 S
-OG 0 512 6
+113277515 0 0 0 939598014 12508 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -20,8 +20,8 @@ elder elderly priest man~
 &+w   This man is aged well and has the look of wisdom in his eyes. He was
 &+wlikely to have been here to see the temple when it was first built.
 ~
-26 0 0 0 0 0 0 0 S
-PH 0 0 -1
+26 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1000d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -34,8 +34,8 @@ golem iron clad temple sentry assoc9_n_0 br_c~
 &+cas he stands boldly to the task at hand. His armor is heavy and
 &+ccumbersome, yet he does not seem to be weighed down one bit.
 ~
-113277515 0 0 939598014 45276 0 0 1000 S
-OG 0 32 6
+113277515 0 0 0 939598014 45276 0 0 1000 S
+OG 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

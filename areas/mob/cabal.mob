@@ -8,8 +8,8 @@ dark figure golem br_c _nobutt_ assoc12_n_0~
 &+Lany unwanted visitors, and examines every intruder for ill
 &+Lintentions.
 ~
-113277515 0 0 939597852 14556 0 0 0 S
-OG 0 512 6
+113277515 0 0 0 939597852 14556 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -23,8 +23,8 @@ odif yltsaeb~
 &+Gthis strange creature is ready to sell or buy any goods for
 &+Gthe intrepid traveller.
 ~
-74 0 0 0 0 0 0 0 S
-PH 0 0 -1
+74 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -38,8 +38,8 @@ dark figure golem br_c _nobutt_ assoc12_n_0~
 &+Lany unwanted visitors, and examines every intruder for ill
 &+Lintentions.
 ~
-113277515 0 0 939597852 14556 0 0 1000 S
-OG 0 32 6
+113277515 0 0 0 939597852 14556 0 0 1000 S
+OG 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

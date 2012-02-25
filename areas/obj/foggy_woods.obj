@@ -5,7 +5,7 @@ runes book~
 ~
 23 28 2 5 7 0 32768 16385 2 0 0
 0 0 0 0 0 0 0 0
-8 1000 100
+8 1000 100 100
 E
 runes book~
 A thick book, bound in a strange animal hide you are not familiar with,
@@ -23,7 +23,7 @@ spear ashen~
 ~
 5 6 3 0 7 0 0 8193 66 0 0
 8 3 3 11 0 0 0 0
-17 700000 100 0 0 0 4096
+17 700000 100 100 0 0 0 4096
 E
 spear ashen~
 This spear is made of a polished ashen colored wood and has arcane runes
@@ -42,7 +42,7 @@ boots northlands~
 ~
 9 14 3 8 7 0 8192 65 64 0 0
 8 6 1 3 0 0 0 0
-7 40173 100 0 64 0 0
+7 40173 100 100 0 64 0 0
 A
 35 1
 A
@@ -54,7 +54,7 @@ skin black silken panther~
 ~
 9 3 3 8 7 0 0 1025 0 0 0
 8 9 1 3 0 0 0 0
-6 15000 100 32 0 0 0
+6 15000 100 100 32 0 0 0
 E
 skin black panther silken~
 A beautiful hide of a large black panther, the skin gives off a brilliant
@@ -73,7 +73,7 @@ star ruby monocle~
 ~
 11 31 0 0 7 0 13312 131073 0 37883812 0
 2 0 0 1 0 0 0 0
-1 25000 100
+1 25000 100 100
 A
 24 -1
 A
@@ -85,7 +85,7 @@ a mangled dog corpse~
 ~
 15 2 3 30 7 0 8421376 1 0 0 0
 10 0 -1 100 0 0 0 0
-145 1 100
+145 1 100 100
 #90006
 spiked mastiff collar~
 &+La spiked mastiff collar&N~
@@ -93,7 +93,7 @@ spiked mastiff collar~
 ~
 9 16 0 0 7 0 4096 5 0 0 0
 4 2 1 3 0 0 0 0
-2 2500 100
+2 2500 100 100
 A
 19 1
 A
@@ -105,7 +105,7 @@ egg speckled hawk~
 ~
 19 45 2 2 7 0 524288 16385 0 0 0
 1 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #90008
 hawk's nest~
 a hawk's nest~
@@ -113,7 +113,7 @@ a hawk's nest~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 10 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 #90009
 torch~
 a gigantic torch~
@@ -121,7 +121,7 @@ a gigantic torch~
 ~
 1 16 3 8 7 0 0 0 0 0 0
 0 0 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 #90010
 torch~
 a gigantic torch~
@@ -129,7 +129,7 @@ a gigantic torch~
 ~
 29 16 0 50 7 0 65536 0 0 0 0
 270 90207 2 0 0 0 0 0
-1 1 100
+1 1 100 100
 #90011
 gold ore~
 &+Ysome gold ore&N~
@@ -137,7 +137,7 @@ gold ore~
 ~
 20 24 1 0 7 0 4096 1 0 0 0
 0 0 100 0 0 0 0 0
-1 1 100
+1 1 100 100
 #90012
 wooden crate~
 &+ya heavy wooden crate&N~
@@ -145,7 +145,7 @@ wooden crate~
 ~
 15 6 5 50 7 0 0 1 0 0 0
 1000 5 0 250 0 0 0 0
-200 10 100
+200 10 100 100
 #90013
 wooden crate~
 &+ya heavy wooden crate&N~
@@ -153,7 +153,7 @@ wooden crate~
 ~
 15 6 5 50 7 0 0 1 0 0 0
 1000 5 0 250 0 0 0 0
-200 10 100
+200 10 100 100
 #90014
 silvery net~
 a woven silvery net~
@@ -161,7 +161,7 @@ A woven net of thick silvery-colored rope lies in a bundle.~
 ~
 9 22 0 0 7 0 1024 9 0 87572571 0
 5 3 1 3 0 0 0 0
-10 29 100
+10 29 100 100
 A
 23 -2
 A
@@ -173,7 +173,7 @@ A large basket woven of silver sits here.~
 ~
 15 22 3 0 7 0 0 1 0 0 0
 100 13 0 100 0 0 0 0
-25 10000 100
+25 10000 100 100
 E
 silvermesh basket~
 This large basket is made of finely woven silver strands. It has a lid
@@ -186,7 +186,7 @@ flask dwarven ale~
 ~
 17 9 0 0 7 0 0 16385 0 0 0
 1 1 4 0 0 0 0 0
-1 5 100
+1 5 100 100
 #90017
 bottle wine~
 a bottle of cheap white wine~
@@ -194,7 +194,7 @@ A bottle of cheap white wine sits here.~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 5 5 2 0 0 0 0 0
-2 1 100
+2 1 100 100
 #90018
 studded dragon scalemail~
 &+Wa silver-studded suit of white dragon scalemail~
@@ -202,7 +202,7 @@ A white suit of scalemail with silver studs lies here.~
 ~
 9 16 3 21 7 0 0 9 0 0 0
 26 3 1 3 0 0 0 0
-15 45000 100
+15 45000 100 100
 A
 18 4
 A
@@ -214,7 +214,7 @@ A necklace with several polished silver beads lies in a pile.~
 ~
 11 22 3 2 7 0 1056 5 2 37883812 0
 0 0 0 1 0 0 0 0
-3 10000 100
+3 10000 100 100
 A
 13 11
 A
@@ -226,7 +226,7 @@ stone club~
 ~
 5 11 3 8 7 0 4194304 8193 0 0 0
 10 2 8 6 0 0 0 0
-20 5 100
+20 5 100 100
 A
 14 -10
 A
@@ -238,7 +238,7 @@ A silver ring engraved with nature scenes lies here.~
 ~
 9 22 1 1 7 0 0 3 0 0 0
 6 1 0 3 0 0 0 0
-1 100 100
+1 100 100 100
 A
 18 4
 #90022
@@ -248,7 +248,7 @@ a mineral encrusted chest~
 ~
 15 11 5 50 7 0 4096 1 0 0 0
 250 13 90023 250 0 0 0 0
-30 1 100
+30 1 100 100
 #90023
 mineral brass key~
 &+Ya mineral covered brass key&N~
@@ -256,7 +256,7 @@ mineral brass key~
 ~
 18 17 1 1 7 0 8392704 16385 0 0 0
 13 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #90024
 huge wooden key~
 &+ya huge wooden key&N~
@@ -264,7 +264,7 @@ huge wooden key~
 ~
 18 6 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 #90025
 water scroll~
 &+ba water logged scroll&N~
@@ -272,7 +272,7 @@ water scroll~
 ~
 13 29 1 2 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 scroll water~
 &+bThe Runes of the Fr(smear)nts are complex and rather difficult (smear)
@@ -298,7 +298,7 @@ gold coins~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 50 0 0 0 0 0
-1 1 100
+1 1 100 100
 #90027
 flannel jacket~
 &+ra warm flannel jacket&N~
@@ -306,7 +306,7 @@ flannel jacket~
 ~
 11 3 0 0 7 0 8192 1025 0 0 0
 0 30 0 4 0 0 0 0
-4 60 100
+4 60 100 100
 A
 5 1
 A
@@ -318,7 +318,7 @@ ash tree blood~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 tree ash blood~
 The tree is splattered with dried blood from roots to branches! It looks as
@@ -332,7 +332,7 @@ yellow chrysoberyl ring~
 ~
 9 16 1 1 7 0 4096 3 64 4031024644 0
 5 1 0 3 0 0 0 0
-1 1000 100 67108864 0 0 0
+1 1000 100 100 67108864 0 0 0
 A
 20 -3
 A
@@ -344,7 +344,7 @@ griffon helm visor~
 ~
 9 16 3 10 7 0 4096 17 0 4173708804 0
 5 4 1 3 0 0 0 0
-6 30000 100 134217728 0 0 0
+6 30000 100 100 134217728 0 0 0
 E
 griffon helm visor~
 This helm is made for a human sized wearer. It is made of a highly
@@ -362,7 +362,7 @@ wooden sign~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden sign~
    &+yThe wooden sign reads:
@@ -376,7 +376,7 @@ moorwood sign~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 moorwood sign~
       &+LThe sign reads:

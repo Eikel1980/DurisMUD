@@ -5,7 +5,7 @@ A &+Lblack &+ybelt&n &+Lis lying on the ground, partially hidden.&N~
 ~
 9 13 3 3 10 49 8192 2049 0 0 0
 13 0 0 4 1 0 0 0
-3 3102 100
+3 3102 100 100
 E
 minotaur belt~
 &+L   This heavy spiked &+ybelt &+Lis crafted from the hide of a once mighty &+Lmino&+rtaur&+L.&n
@@ -21,7 +21,7 @@ bat wing~
 ~
 19 2 2 2 9 9 8192 2097153 0 0 0
 6 0 0 12 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 bat wing~
 &+w   This &+Lgrayish bat wing &+wdoesn't smell too good, but it might be edible.&N
@@ -35,7 +35,7 @@ tuft sasquatch hair~
 ~
 13 2 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 tuft sasquatch hair~
 &+y   This tuft of sasquatch hair smells rather foul.  Obviously this big hairy&N
@@ -48,7 +48,7 @@ beetle shell~
 ~
 12 10 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 500 100
+3 500 100 100
 E
 beetle shell~
 &+L   This &+wcr&+La&+wck&+Led shell &+Lwas once part of a rather large beetle most likely.&N
@@ -60,7 +60,7 @@ fish scale scales~
 ~
 12 4 0 0 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-1 230 100
+1 230 100 100
 E
 fish scale scales~
 &+B   These scales are rather tough-looking, and may be useful.&N
@@ -72,7 +72,7 @@ poison sac~
 ~
 17 2 0 0 7 0 4096 16385 0 0 0
 1 1 27 1103 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 poison sac~
 &+L   This bulbous &+Gsac &+Lcame from a deadly giant spider.  It pulsates as it it were&N
@@ -85,7 +85,7 @@ patch red moss~
 ~
 19 30 2 2 7 0 4096 16385 64 0 0
 10 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 patch red moss~
 &+r   This patch of red moss looks like you may be able to eat it.&N
@@ -99,7 +99,7 @@ patch blue moss~
 ~
 19 30 2 2 7 0 4096 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 patch blue moss~
 &+b   This foul patch of blue moss looks like it might be edible.&N
@@ -113,7 +113,7 @@ patch green moss~
 ~
 19 30 2 2 7 0 4096 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 patch green moss~
 &+g   This foul smelling pile of green moss seems like it is edible.&N
@@ -127,7 +127,7 @@ patch black moss~
 ~
 19 30 2 2 7 0 4096 16385 0 0 0
 5 0 0 6 0 0 0 0
-1 200 100
+1 200 100 100
 E
 patch black moss~
 &+L   This foreboding patch of black moss looks like it might be edible.&N
@@ -139,7 +139,7 @@ glow sac~
 ~
 8 2 0 0 7 0 270336 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 405 100
+1 405 100 100
 E
 glow sac~
 &+c   This &+ggreen&+L-&+Cglowing &+csac probably came from a &+Cglow &+cworm.&N
@@ -155,7 +155,7 @@ piece calcite~
 ~
 8 11 0 0 10 24 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 23000 100
+3 23000 100 100
 E
 calcite piece~
 &+L   This rock is made out of pure &+ccalcite&+L, and &+Cglows &+Lwith a &+Cp&+ch&+Co&+cs&+Cp&+ch&+Co&+cr&+Ce&+cs&+Cc&+ce&+Cn&+ct &+Laura.&N
@@ -172,7 +172,7 @@ stone tablet~
 ~
 2 11 1 2 8 8 4096 16385 64 0 0
 53 53 84 318 0 0 0 0
-4 22222 100
+4 22222 100 100
 E
 stone tablet~
 &+L   The tablet is carved out of &+wstone&+L, and is very heavy. Scrawls of ancient&N
@@ -185,7 +185,7 @@ ring earth~
 ~
 9 36 1 1 14 76 0 3 64 0 0
 6 0 0 4 0 0 0 0
-3 44000 100
+3 44000 100 100
 E
 ring earth~
 &+y   This odd-looking ring does not look very valuable, as it is tarnished and&N
@@ -202,7 +202,7 @@ dusty map~
 ~
 12 29 1 1 10 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 dusty map~
 I've written down the directions that lead from the entrance of
@@ -228,7 +228,7 @@ standard ration~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 24 0 0 0 0 0 0 0
-1 7777 100
+1 7777 100 100
 #5016
 water flask~
 &+ca large &+Cflask&n~
@@ -236,7 +236,7 @@ water flask~
 ~
 8 8 0 0 14 42 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 63333 100
+2 63333 100 100
 E
 flask crystal~
 &+c   This flask has been crafted from pure &+Ccrystal&+c, it might be of some value.&N
@@ -248,7 +248,7 @@ diamond earring sparkling~
 ~
 9 27 1 0 12 80 241664 524289 64 0 0
 10 0 0 4 0 0 0 0
-1 82482 100
+1 82482 100 100
 E
 earring sparking diamond~
 &+L   This unique earring is made of a dazzling &+Wdiamond&+L, well-cut, and extremely&N
@@ -265,7 +265,7 @@ chunk rothe meat~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 35 4 4 0 0 0 0 1
-2 3333 100
+2 3333 100 100
 E
 chunk rothe meat~
 &+y   This piece of meat came from a healthy and trim rothe. It looks very juicy,&N
@@ -278,7 +278,7 @@ spider web~
 ~
 15 1 3 0 7 81 0 0 0 0 0
 1500 0 0 100 0 0 0 0
-200 181000 100
+200 181000 100 100
 E
 spider web~
 &+L   This gigantic &+wweb &+Lis the work of a giant queen spider. There are many dry&N
@@ -291,7 +291,7 @@ piece spider web~
 ~
 12 1 0 0 7 0 24704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 piece spider web~
 &+L   This piece of spider &+wweb &+Llooks very strong and sticky, despite how tiny its&N
@@ -308,7 +308,7 @@ cape entrapment~
 ~
 15 3 3 0 11 55 45184 1025 64 0 0
 222 0 0 222 0 0 0 0
-5 35000 100
+5 35000 100 100
 E
 cape entrapment~
 &+L   This cape is made out of a sticky material, or perhaps it has been coated&N
@@ -325,7 +325,7 @@ crown saint saints~
 ~
 9 18 3 0 13 81 12288 17 66 4173696516 2048
 13 0 0 5 0 0 0 0
-1 120 100 32 0 0 0
+1 120 100 100 32 0 0 0
 E
 crown saint saints~
 &+L   This is a mighty silver &+Rc&+rr&+Ro&+rw&+Rn&+L, encrusted with emeralds and rubies along the&N
@@ -342,7 +342,7 @@ rusty longsword~
 ~
 5 16 3 10 7 0 0 8193 0 0 0
 5 1 5 3 0 0 0 0
-10 18181 100
+10 18181 100 100
 E
 rusty longsword~
 &+r   This longsword has been rusted beyond usefulness, although at one time it&N
@@ -359,7 +359,7 @@ rotten boots~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 2 0 0 3 0 0 0 0
-10 19191 100
+10 19191 100 100
 E
 rotten boots~
 &+y   This pair of &+Lrotten boots &+yare in really bad shape, and probably has outlived&N
@@ -376,7 +376,7 @@ vial dolomite~
 ~
 10 7 2 4 7 0 1 16385 64 0 0
 53 36 1 3 0 0 0 0
-4 33000 100
+4 33000 100 100
 E
 vial dolomite~
 &+L   This vial of dolomite is made of stunning green-and-white stone, and the&N
@@ -389,7 +389,7 @@ staff dolomite~
 ~
 4 6 3 10 7 0 0 16385 64 0 0
 36 1 1 78 0 0 0 0
-8 66600 100
+8 66600 100 100
 E
 staff dolomite~
 &+L   This long piece of dolomite is composed of brilliant crimson-and-black&N
@@ -402,7 +402,7 @@ chest plate dolomite~
 ~
 9 16 5 50 10 55 0 9 64 4173708804 0
 26 3 1 4 0 0 0 0
-9 85000 100
+9 85000 100 100
 E
 chest plate dolomite~
 &+L   Although heavy and bulky, this chest plate looks as though it would provide&N
@@ -419,7 +419,7 @@ arm plate plates dolomite~
 ~
 9 16 3 8 10 44 0 257 64 4173708804 0
 10 0 0 4 0 0 0 0
-2 8888 100
+2 8888 100 100
 E
 arm plate plates dolomite~
 &+L   This set of arm plates looks very protective, as the dolomite is very hard&N
@@ -436,7 +436,7 @@ leg plate plates dolomite~
 ~
 9 11 3 0 14 58 0 33 64 4173708804 0
 15 0 0 4 1 0 0 0
-3 3443 100
+3 3443 100 100
 E
 leg plate plates dolomite~
 &+L   This set of leg plates looks very protective, as the dolomite is very hard&N
@@ -453,7 +453,7 @@ mantle dolomite~
 ~
 9 36 3 0 14 53 0 1025 64 0 0
 25 0 0 4 1 0 0 0
-9 44222 100
+9 44222 100 100
 E
 mantle dolomite~
 &+L   This mantle is fashioned out of yellow-and-black streaked dolomite, and can&N
@@ -470,7 +470,7 @@ sigil standard golden flame~
 ~
 9 24 1 0 12 45 3416064 16389 66 4173708804 0
 14 0 0 5 1 0 0 0
-1 53422 100 536879104 0 0 0
+1 53422 100 100 536879104 0 0 0
 E
 sigil standard golden flame~
 &+L   This tiny &+Wsigil &+Lis made of a &+Ygolden &+Lmetal, and bears the emblem of the&N
@@ -489,7 +489,7 @@ shield golden flame~
 ~
 37 24 3 0 11 77 262144 513 66 4173708804 0
 2 1 3 166 4 0 0 0
-18 77777 100
+18 77777 100 100
 E
 shield golden flame~
 &+L   This large &+Wshield &+Lis made of a &+Ygolden &+Lmetal, and bears the emblem of the&N
@@ -508,7 +508,7 @@ sword claymore golden flame~
 ~
 5 24 3 0 14 73 4457472 8193 66 87572507 0
 13 3 6 3 1 0 0 0
-8 42542 100
+8 42542 100 100
 E
 sword claymore golden flame~
 &+L   This is the &+Wholy &+Lweapon of the &+Wknights &+Lof the &+YGolden &+RFlame&+L.  Longer than an&N
@@ -525,7 +525,7 @@ chest plate golden flame~
 ~
 9 24 3 0 10 50 262144 9 66 4173708804 0
 27 0 0 4 0 0 0 0
-10 77777 100
+10 77777 100 100
 E
 chest plate golden flame~
 &+L   This marvelously constructed chest plate is made out of fine &+Ygolden &+Lmetal,&N
@@ -543,7 +543,7 @@ small diamond tattoo~
 ~
 9 8 1 0 7 0 4096 2097153 0 0 0
 4 0 0 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 small diamond~
 &+L   This small &+Wdiamond &+Lis well-cut and shines with brilliance.&N
@@ -559,7 +559,7 @@ small emerald ring~
 ~
 9 32 1 0 11 42 4096 3 0 0 0
 7 0 0 4 0 0 0 0
-1 42000 100
+1 42000 100 100
 E
 small emerald ring~
 &+L   This small &+Ge&+gm&+Ge&+gr&+Ga&+gl&+Gd &+Lis well-cut, and could be valuable.&N
@@ -575,7 +575,7 @@ tiny ruby~
 ~
 8 31 0 0 11 53 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 69000 100
+1 69000 100 100
 E
 tiny ruby~
 &+L   This tiny &+Rr&+ru&+Rb&+ry &+Rg&+rlo&+Rw&+rs &+La crimson red, and may prove to be worth something.&N
@@ -587,7 +587,7 @@ black sapphire earring~
 ~
 9 33 1 0 7 0 4096 524289 0 0 0
 10 0 0 3 0 0 0 0
-1 17000 100 0 4096 0 0
+1 17000 100 100 0 4096 0 0
 E
 black sapphire earring~
 &+L   This black sapphire is smooth and round, and slighly cool to the touch.&N
@@ -603,7 +603,7 @@ skull~
 ~
 8 10 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 8888 100
+1 8888 100 100
 E
 skull~
 &+L   This &+Wskull &+Lonce belonged to a humanoid, probably &+Ydwarven&+L...maybe even&N
@@ -620,7 +620,7 @@ pile bones bone~
 ~
 8 10 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 7777 100
+1 7777 100 100
 E
 pile bones bone~
 &+L   This is a hodgepodge of &+Wbones &+Lfrom various creatures, some humanoid, some&N
@@ -637,7 +637,7 @@ guano crap dropings pile~
 ~
 13 2 0 0 9 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 guano dropings pile~
 &+y   God that smells horrible! What kind of &+Lbat &+ywould produce this heaping mound&N
@@ -650,7 +650,7 @@ stone lever~
 ~
 29 11 0 50 7 0 0 0 0 0 0
 340 5276 0 0 0 0 0 0
-40 0 100
+40 0 100 100
 E
 stone lever~
 &+w   Built out of &+Lstone&+w, this lever can be pulled up and down and is well made.&N
@@ -662,7 +662,7 @@ stone lever~
 ~
 29 11 0 50 7 0 0 0 0 0 0
 340 5235 1 0 0 0 0 0
-40 0 100
+40 0 100 100
 E
 stone lever~
 &+L   Built out of &+wstone&+L, this lever can be pulled up and down and is well made.&N
@@ -674,7 +674,7 @@ stone lever~
 ~
 29 11 0 50 7 0 0 0 0 0 0
 340 5002 1 0 0 0 0 0
-40 0 100
+40 0 100 100
 E
 stone lever~
 &+g   Built out of &+wstone&+g, this &+Llever &+gcan be pulled up and down and is well made.&N
@@ -686,7 +686,7 @@ tail giant salamander~
 ~
 9 2 2 0 14 55 270336 33570817 66 0 0
 15 0 0 3 0 0 0 0
-1 99999 100
+1 99999 100 100
 E
 tail giant salamander~
 &+L   This tail seems like it came from a giant &+wcolorless &+Lsalamander.&N
@@ -702,7 +702,7 @@ stone~
 ~
 29 11 3 0 7 0 0 0 0 0 0
 270 5134 3 0 0 0 0 0
-2 100 100
+2 100 100 100
 E
 stone~
 &+L   A large crack is in the wall there.  From the crack in the wall, it appears&N
@@ -715,7 +715,7 @@ strange moss~
 ~
 29 43 3 0 7 0 1 0 0 0 0
 10 5134 0 0 0 0 0 0
-2 100 100
+2 100 100 100
 E
 moss strange~
 &+g   Strange moss can be seen growing here, parts bleeding in via a crack in the&N
@@ -728,7 +728,7 @@ eyes salamander~
 ~
 9 2 3 0 11 53 434176 131073 66 0 0
 10 0 0 4 0 0 0 0
-1 88888 100
+1 88888 100 100
 E
 eyes salamander~
 &+L   These &+rbl&+Ro&+ro&+Rd &+Lred &+reyes &+Lseem like they came from a rather large salamander.&N
@@ -744,7 +744,7 @@ horn caps blood covered~
 ~
 9 10 3 0 10 59 172032 134217729 66 0 0
 10 0 0 5 1 0 0 0
-1 55555 100
+1 55555 100 100
 E
 horn caps blood covered~
 &+L   These &+Whorn &+Lcaps are covered in the &+rblood &+Lof fallen forgotten foes.&N
@@ -760,7 +760,7 @@ spiked leggings chainmail~
 ~
 9 19 3 0 13 76 40960 33 66 0 0
 12 0 0 5 1 0 0 0
-3 32323 100
+3 32323 100 100
 E
 spiked leggings chainmail~
 &+m   These ch&+Mainm&+mail &+mleggings are &+Lspiked &+mand show some sings of past battles.&N
@@ -776,7 +776,7 @@ war ribbon blood soaked~
 ~
 9 43 2 0 14 81 172032 33554433 66 0 0
 5 0 0 3 0 0 0 0
-2 66666 100
+2 66666 100 100
 E
 war ribbon blood soaked~
 &+L   This &+Wwar &+Lribbon has become &+Rs&+ro&+Ra&+rk&+Re&+rd &+Lin the &+rbl&+Ro&+ro&+Rd &+Lof fallen feeble foes.&N
@@ -792,7 +792,7 @@ ring nose stained~
 ~
 9 36 3 0 9 53 0 67108865 0 0 0
 6 0 0 4 0 0 0 0
-1 9999 100
+1 9999 100 100
 E
 ring nose stained~
 &+L   This nose ring seems like it has been crafted from a rather hard stone.  It&N
@@ -809,7 +809,7 @@ bloody heart~
 ~
 8 2 3 0 15 53 28672 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 4444 100
+1 4444 100 100
 E
 bloody heart~
 &+L   This is a foul &+rbl&+Ro&+ro&+Rd&+ry &+rheart &+Lof a once mighty &+Lmino&+rtaur&+L, it no longer beats.&N
@@ -825,7 +825,7 @@ gauntlets diamondine~
 ~
 9 27 3 0 15 76 3305472 129 0 0 0
 12 0 0 5 0 0 0 0
-2 78181 100
+2 78181 100 100
 E
 gauntlets diamondine~
 &+L   These gauntlets have been crafted from a very good grade of &+Wdiamond&+Line.  Not&N
@@ -842,7 +842,7 @@ leggings diamondine~
 ~
 9 27 3 0 15 76 12288 33 0 0 0
 12 0 0 5 0 0 0 0
-2 76761 100
+2 76761 100 100
 E
 leggings diamondine~
 &+L   These leggings have been crafted from a very good grade of &+Wdiamond&+Line.  Not&N
@@ -859,7 +859,7 @@ platemail diamondine~
 ~
 9 27 3 0 15 76 3305472 9 0 4173708868 0
 25 0 0 5 0 0 0 0
-5 78181 100
+5 78181 100 100
 E
 platemail diamondine~
 &+L   This platemail has been crafted from a rather fine grade of &+Wdiamond&+Line.  Not&N
@@ -876,7 +876,7 @@ key diamondine~
 ~
 18 27 3 0 15 42 8400904 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 42422 100
+1 42422 100 100
 E
 key diamondine~
 &+L   This sparkling heavy key has been crafted from pure &+Wdiamond&+Line.&N
@@ -888,7 +888,7 @@ eye minotaur bloody~
 ~
 8 2 2 0 11 34 12288 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 10104 100
+0 10104 100 100
 E
 eye minotaur bloody~
 &+L   This &+rbloody &+Leye most likely came from some sort of vile &+revil &+Lmino&+rtaur&+L.&N
@@ -904,7 +904,7 @@ eyepatch blood soaked~
 ~
 9 43 2 0 14 81 3317760 131073 66 0 0
 5 0 0 3 0 0 0 0
-0 24000 100
+0 24000 100 100
 E
 eyepatch blood soaked~
 &+L   This &+weye&+Lpatch has become &+Rs&+ro&+Ra&+rk&+Re&+rd &+Lin the &+rbl&+Ro&+ro&+Rd &+Lof past fallen feeble foes.&N
@@ -920,7 +920,7 @@ battleaxe blood soaked axe~
 ~
 5 23 4 0 14 81 24290560 8193 67 121258299 16384
 1 5 5 3 0 0 0 0
-9 81000 100
+9 81000 100 100
 E
 battleaxe axe blood soaked~
 &+L   This b&+wa&+Lt&+wt&+Ll&+we&+Laxe has become &+Rs&+ro&+Ra&+rk&+Re&+rd &+Lin the &+rbl&+Ro&+ro&+Rd &+Lof past fallen feeble foes.&N
@@ -936,7 +936,7 @@ tail severed minotaur~
 ~
 8 2 3 0 11 35 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 12912 100
+0 12912 100 100
 E
 tail severed minotaur~
 &+L   This is a severed tail of a once mighty &+Lmino&+rtaur&+L.&N
@@ -952,7 +952,7 @@ grim necklace blood soaked~
 ~
 9 43 2 0 14 81 24576 5 66 0 0
 8 0 0 3 0 0 0 0
-0 24000 100
+0 24000 100 100
 E
 grim necklace blood soaked~
 &+L   This grim necklace has become &+Rs&+ro&+Ra&+rk&+Re&+rd &+Lin the &+rbl&+Ro&+ro&+Rd &+Lof past fallen foes.&N
@@ -968,7 +968,7 @@ helm stone~
 ~
 9 36 3 0 10 66 0 17 0 0 0
 11 0 0 5 1 0 0 0
-2 44444 100
+2 44444 100 100
 E
 helm stone spiked~
 &+L   This spiked helm has been crafted from a very fine grade of obsidian.  Not&N
@@ -985,7 +985,7 @@ bracer stone~
 ~
 9 36 3 0 10 66 0 4097 0 0 0
 11 0 0 5 1 0 0 0
-2 44444 100
+2 44444 100 100
 E
 bracer stone spiked~
 &+L   This spiked bracer has been crafted from a very fine grade of obsidian.  Not&N
@@ -1002,7 +1002,7 @@ chipped stone talisman~
 ~
 9 36 3 0 10 66 0 5 0 0 0
 11 0 0 5 0 0 0 0
-2 44444 100
+2 44444 100 100
 E
 chipped stone talisman~
 &+L   This chipped &+wstone &+Ltalisman has been crafted from a fine grade of obsidian.&N
@@ -1019,7 +1019,7 @@ tarnished bloody longsword~
 ~
 5 22 3 0 14 83 9216 8193 0 96071707 0
 5 4 4 3 0 0 0 0
-1 48848 100
+1 48848 100 100
 E
 tarnished bloody longsword~
 &+L   This longsword shows many stains from past &+rblood &+Lspun battles.&N
@@ -1035,7 +1035,7 @@ sack mold~
 ~
 15 43 3 0 14 44 8192 8404993 0 0 0
 444 0 0 444 0 0 0 0
-0 12421 100
+0 12421 100 100
 E
 sack mold~
 &+L   This well made &+Gh&+ge&+Gm&+gp&+Gs&+gp&+Gu&+gn &+Lsack has become covered with &+Gm&+go&+Gl&+gd&+L.&N
@@ -1051,7 +1051,7 @@ tarnished belt~
 ~
 9 22 3 0 14 83 8192 2049 0 0 0
 7 0 0 5 0 0 0 0
-1 24424 100
+1 24424 100 100
 E
 tarnished belt~
 &+L   This t&+wa&+Lrn&+wi&+Lsh&+we&+Ld belt shows many stains from past &+rblood &+Lspun battles.&N
@@ -1067,7 +1067,7 @@ quiver dolomite~
 ~
 30 36 2 0 14 81 8192 1048577 64 0 0
 181 0 1 0 0 0 0 0
-0 22222 100
+0 22222 100 100
 E
 quiver dolomite~
 &+L   This quiver is fashioned out of yellow-and-black streaked dolomite, and can&N
@@ -1084,7 +1084,7 @@ glowing crystal ball tiny~
 ~
 8 8 3 0 14 81 3153920 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 81818 100 4 0 0 0
+0 81818 100 100 4 0 0 0
 E
 glowing crystal ball tiny~
 &+C   T&+ch&+Cis &+Ltiny &+Cg&+clo&+Cw&+cin&+Cg &+cc&+Cr&+cy&+Cs&+ct&+Ca&+cl &+Lball &+cs&+Cee&+cms &+Cli&+cke &+Ci&+ct h&+Ca&+cs &+Cb&+ce&+Ce&+cn &+Cc&+cr&+Caft&+ced &+Cfro&+cm &+Ca &+cr&+Cath&+ce&+Cr&N
@@ -1103,7 +1103,7 @@ cloak vadatorn despair~
 ~
 9 35 3 0 14 81 139264 17409 0 0 0
 30 0 0 4 0 0 0 0
-3 81000 100 65536 28 0 4096
+3 81000 100 100 65536 28 0 4096
 E
 cloak vadatorn despair~
 &+L   This diabolical &+Rd&+re&+Rs&+rp&+Ra&+ri&+Rr &+Lcloak of &+wVada&+Ltorn has been crafted from a very hard&N
@@ -1122,7 +1122,7 @@ crown despair~
 ~
 9 31 3 0 15 81 3284992 16401 0 0 0
 25 0 0 4 0 0 0 0
-2 81000 100 536936448 16 0 0
+2 81000 100 100 536936448 16 0 0
 E
 crown despair~
 &+L   This &+rc&+Rr&+ro&+Rw&+rn &+Lof &+Rd&+re&+Rs&+rp&+Ra&+ri&+Rr &+Lseems like it has been crafted from the finest grade&N
@@ -1140,7 +1140,7 @@ robe tattered~
 ~
 9 43 3 0 11 44 8192 16393 0 0 0
 12 0 0 4 0 0 0 0
-0 18181 100
+0 18181 100 100
 E
 robe tattered~
 &+L   This robe has become &+wt&+La&+wt&+Lt&+we&+Lr&+we&+Ld by the rigors of age, at one time it was a&N
@@ -1157,7 +1157,7 @@ scale insect cracked~
 ~
 8 46 3 0 10 34 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 18181 100
+0 18181 100 100
 E
 scale insect cracked~
 &+L   This giant insect scale has become &+wcr&+La&+wck&+Led, most likely as result of a nasty&N
@@ -1174,7 +1174,7 @@ jagged stone~
 ~
 8 36 3 0 10 53 4096 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 76660 100
+1 76660 100 100
 E
 stone jagged~
 &+L   This jagged &+wstone &+Lseems like it might of been part of a stone golem at one&N
@@ -1191,7 +1191,7 @@ scale insect cracked~
 ~
 8 46 3 0 10 33 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 33333 100
+0 33333 100 100
 E
 scale insect cracked~
 &+L   This giant insect scale has become &+wcr&+La&+wck&+Led, most likely as result of a nasty&N

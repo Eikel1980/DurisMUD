@@ -5,7 +5,7 @@ obelisk gray stone~
 ~
 13 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 obelisk gray stone~
 The gray stone is shadowy and has a strange magical sheen to it.  Runes along
@@ -23,7 +23,7 @@ throne~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 10 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 throne~
 Massive thorns, clearly taken from the largest of trees and bushes in the
@@ -39,7 +39,7 @@ crown~
 ~
 9 6 3 4 7 0 12288 17 0 0 0
 5 4 16 3 0 0 0 0
-0 550 100
+0 550 100 100
 E
 crown~
 Though the sharp thorns used to create this odd crown are hard and unyielding
@@ -58,7 +58,7 @@ bone bones~
 ~
 13 10 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bone bones~
 Several of the bones are quite large, as well as twisted and broken.  It is
@@ -73,7 +73,7 @@ blood~
 ~
 13 2 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood~
 The droplets have been splashed around as if there was a huge battle here, yet
@@ -88,7 +88,7 @@ well~
 ~
 17 11 0 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 well~
 Although the water within it appears to be safe and pure, the well itself
@@ -104,7 +104,7 @@ The corpse of an adventurer continues its slow decay.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse adventurer~
 This corpse has been here long enough to begin a slow decay into the soil.
@@ -119,7 +119,7 @@ barrel~
 ~
 17 6 3 10 7 0 0 0 0 0 0
 20 20 17 0 0 0 0 0
-25 0 75
+25 0 75 100
 E
 barrel~
 This barrel won't last very much longer.  Its inner casing is still in good
@@ -134,7 +134,7 @@ collar bone~
 ~
 9 10 0 0 7 0 0 5 0 0 0
 1 2 1 3 0 0 0 0
-1 450 100
+1 450 100 100
 E
 collar bone~
 One of the natural defenses possed by the mighty thorn-bears of the Twisted
@@ -149,7 +149,7 @@ mane~
 ~
 11 3 0 0 7 0 1073741824 17 0 0 0
 0 0 0 5 0 0 0 0
-3 500 100
+3 500 100 100
 E
 mane~
 This thick mane is soft on the inside making it comfortable enough to wear
@@ -167,7 +167,7 @@ club~
 ~
 5 6 3 8 7 0 0 8193 0 4165209604 0
 10 1 6 6 0 0 0 0
-3 25 100
+3 25 100 100
 E
 club~
 Someone has ripped the branch off of one of the thorny trees of the Twisted
@@ -181,7 +181,7 @@ bracelet~
 ~
 11 16 3 3 7 0 1024 4097 0 37883812 0
 0 0 0 2 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 bracelet~
 Fashioned by some strange substance known only to faeries, this iridescent
@@ -200,7 +200,7 @@ sword shortsword~
 ~
 5 16 2 10 7 0 4096 8193 0 4194697632 0
 9 1 3 11 0 0 0 0
-3 3500 100
+3 3500 100 100
 E
 sword shortsword~
 Made of some strange faerie substance, this purple sword gleams in the light.
@@ -218,7 +218,7 @@ collar~
 ~
 9 16 0 0 7 0 2162688 5 0 0 0
 5 2 1 3 0 0 0 0
-0 45000 100
+0 45000 100 100
 E
 collar~
 This glowing purple band contains a powerful magic that is beyond definition.
@@ -236,7 +236,7 @@ armor ebonwood wood~
 ~
 9 6 0 0 7 0 536879104 9 0 4173708804 0
 25 3 1 3 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 armor ebonwood wood~
 It is clear that this armor has been constructed by some of the best halfling
@@ -256,7 +256,7 @@ scimitar~
 ~
 5 16 2 10 7 0 0 8193 0 4198895524 0
 9 2 4 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 scimitar~
 This weapon was clearly made for the small hands of a halfling or gnome.  The
@@ -275,7 +275,7 @@ warhammer~
 ~
 5 16 3 0 7 0 4194304 8193 0 4173708804 0
 4 3 6 6 0 0 0 0
-12 2300 100
+12 2300 100 100
 E
 warhammer~
 Bearing a flat end on one side of its massive head and a rounded spike on the
@@ -293,7 +293,7 @@ totem lion~
 ~
 34 6 2 2 7 0 8192 16385 0 0 0
 1 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 totem lion~
 This odd figurine has been inlayed with several different woods in the form of
@@ -309,7 +309,7 @@ feather~
 ~
 11 3 1 1 7 0 0 524289 0 0 0
 0 0 0 5 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 feather~
 This simple feather has had its quill bent and shaped so that it can be
@@ -325,7 +325,7 @@ ring thornwood~
 ~
 11 16 1 1 7 0 8320 3 0 0 0
 0 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 ring thornwood~
 This small thornwood ring was rapidly carved from one of the many thornwood
@@ -344,7 +344,7 @@ a human warrior's corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 corpse warrior~
 Odd puncture wounds line the arms and legs of the corpse as well as the body.
@@ -360,7 +360,7 @@ sword~
 ~
 5 16 3 10 7 0 0 8193 0 4198895524 0
 5 1 8 3 0 0 0 0
-3 2300 100
+3 2300 100 100
 E
 sword~
 This ancient weapon bears the coat of arms of what must once have been a proud
@@ -379,7 +379,7 @@ shield~
 ~
 37 16 3 15 7 0 8192 513 0 4165209604 0
 2 1 3 89 2 0 0 0
-2 45 100
+2 45 100 100
 E
 shield~
 This wooden shield has been constructed from the interwoven branches of some
@@ -393,7 +393,7 @@ bracer~
 ~
 9 16 3 3 7 0 0 4097 0 0 0
 3 11 1 3 0 0 0 0
-3 300 100
+3 300 100 100
 E
 bracer~
 Poor maintenance has left this bracer dull and lifeless.  Only a master
@@ -407,7 +407,7 @@ bracelet~
 ~
 11 6 3 3 7 0 0 4097 0 0 0
 0 0 0 3 0 0 0 0
-1 45 100
+1 45 100 100
 E
 bracelet~
 Any halfling child could create a better bracelet than this crude piece.  Even
@@ -424,7 +424,7 @@ boots~
 ~
 11 13 3 8 7 0 0 65 0 0 0
 0 0 0 4 0 0 0 0
-2 750 100
+2 750 100 100
 E
 boots~
 An extremely thick blue canvas has been layered and stitched together to
@@ -443,7 +443,7 @@ cloak~
 ~
 11 3 3 8 7 0 0 1025 0 0 0
 0 0 0 4 0 0 0 0
-0 1 100
+0 1 100 100
 E
 cloak~
 Made of a thick canvas thick enough to withstand the elements and abuse of
@@ -460,7 +460,7 @@ dagger~
 ~
 5 16 2 3 7 0 0 8193 0 4194697632 0
 2 1 2 11 0 0 0 0
-1 750 100
+1 750 100 100
 E
 dagger~
 This simple dagger has three wicked prongs that have all been sharpened to a
@@ -480,7 +480,7 @@ scalemail armor~
 ~
 9 16 3 21 7 0 0 9 0 4173708804 0
 12 3 1 3 0 0 0 0
-3 3000 100
+3 3000 100 100
 E
 scalemail armor~
 Cleary of dwarven make, this fine armor has been splattered with huge amounts
@@ -494,7 +494,7 @@ A helm with massive dents in it has been dropped here.~
 ~
 9 16 3 10 7 0 0 17 0 4173708804 0
 5 4 1 3 0 0 0 0
-2 500 100
+2 500 100 100
 E
 helm~
 It is clear this helm has seen years of hard use.  Though it has clearly saved
@@ -508,7 +508,7 @@ belt~
 ~
 15 3 3 3 7 0 0 2049 0 0 0
 5 5 0 100 0 0 0 0
-1 350 100
+1 350 100 100
 E
 belt~
 Made of thick canvas, this sturdy belt has many uses.  Not only is it somewhat
@@ -522,7 +522,7 @@ spear~
 ~
 5 6 3 0 7 0 4202496 8193 0 4198895524 0
 8 2 4 11 0 0 0 0
-2 40 100
+2 40 100 100
 E
 spear~
 Made of a long, bent thornwood branch, this spear can't be thrown more than a
@@ -536,7 +536,7 @@ club~
 ~
 5 16 3 8 7 0 8192 8193 0 4165209604 0
 10 1 3 6 0 0 0 0
-4 40 100
+4 40 100 100
 E
 club~
 This wicked club has been made from the knarled limb of a thornwood tree.  A
@@ -551,7 +551,7 @@ a dessicated corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 corpse~
 Thousands of small puncture wounds line every visible spot on the corpse.
@@ -565,7 +565,7 @@ emerald~
 ~
 8 32 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 emerald~
 There might be smaller emeralds that are still large enough to have some sort
@@ -580,7 +580,7 @@ choker~
 ~
 11 24 0 0 7 0 0 5 0 0 0
 3 0 0 2 0 0 0 0
-1 2300 100
+1 2300 100 100
 E
 choker~
 This thin gold chain has been shortened to fit tightly against one's neck when
@@ -600,7 +600,7 @@ blood troll claw~
 ~
 5 2 3 0 7 0 77824 24577 0 0 0
 11 1 4 6 0 0 0 0
--2 1 100
+-2 1 100 100
 E
 blood troll claw~
 The sharp talons of the claw top the long, severed leg.  Something has

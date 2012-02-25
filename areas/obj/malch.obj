@@ -5,7 +5,7 @@ a &+Lfilthy&N fountain~
 ~
 17 11 3 0 7 0 8 0 0 1 0
 -1 -1 0 0 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 fountain~
 &N   This fountain is filled with some very dirty water.  It appears to be
@@ -18,7 +18,7 @@ bookcase~
 ~
 15 6 3 0 3 0 2 0 0 1 0
 50 0 0 30 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 bookcase~
 &+L   This bookcase is filled with old tomes and manuscripts.&N
@@ -30,7 +30,7 @@ a small book~
 ~
 33 29 3 0 3 0 8 16385 0 1 0
 0 0 40 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 book~
 &+y   This book has fourty pages in it.&N
@@ -42,7 +42,7 @@ bp backpack~
 ~
 15 12 3 0 4 0 0 4194305 0 1 0
 200 1 0 200 0 0 0 0
-4 1434 100
+4 1434 100 100
 E
 bp backpack~
 &N   This backpack was made by a &+ggoblin&+L.
@@ -54,7 +54,7 @@ quill~
 ~
 21 41 3 0 2 0 8 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 8 100
+1 8 100 100
 E
 quill~
 &N   This quill is made from stolen bamboo.&N
@@ -66,7 +66,7 @@ a spellbook lies upon the ground here&N~
 ~
 33 28 3 0 3 0 8 16385 0 1 0
 0 0 80 0 0 0 0 0
-3 456 100
+3 456 100 100
 E
 book spell spellbook~
 &N   This spell book contains eighty pages.&N
@@ -78,7 +78,7 @@ a &+ybrown&N dagger lies here&N~
 ~
 5 15 3 0 2 0 0 8193 0 1 0
 2 1 3 2 0 0 0 0
-4 1000 100
+4 1000 100 100
 E
 dirk dagger~
 &N   This dirk is used for stabbing things.&N
@@ -94,7 +94,7 @@ desk~
 ~
 15 5 3 0 3 0 8 0 0 1 0
 100 15 0 100 0 0 0 0
-99999 0 100
+99999 0 100 100
 E
 desk~
 &N   This desk is used to store things.  It is a guildmasters desk so one should
@@ -109,7 +109,7 @@ a white piece of bone lies here forgotten&N~
 ~
 31 34 3 0 9 0 4224 524289 0 24576 0
 33 3 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 shard ivory~
 &+W   This small piece of ivory is long and thin.&N
@@ -121,7 +121,7 @@ skin waterskin~
 ~
 17 13 3 0 3 0 8 8404993 0 1 0
 5 0 0 0 0 0 0 0
-2 454 100
+2 454 100 100
 E
 skin waterskin~
 &N  This waterskin was made in &+gMalch'hor Ganl&+L.
@@ -133,7 +133,7 @@ a small chunk of silver lies upon the ground here&N~
 ~
 34 22 3 0 4 0 8 16385 1 256 0
 8 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 silver totem~
 &N   This totem is used to call upon the powers of the elements of this realm
@@ -146,7 +146,7 @@ a chunk of &+Bsapphire&N lies here looking lonely and forelorn&N~
 ~
 34 33 3 0 4 0 8 16385 0 256 0
 4 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 amethyst totem~
 &N  This totem is a very simple link to the elemental forces of nature.&N
@@ -158,7 +158,7 @@ a &+gmoldy&N totem lies here forgotten by its owner&N~
 ~
 34 4 3 0 5 0 8 16385 0 256 0
 16 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 E
 moldy totem~
 &N  This totem is used to harness the powers of the lesser spirits.&N
@@ -170,7 +170,7 @@ stone totem~
 ~
 34 11 3 0 3 0 8 16385 0 256 0
 1 0 0 0 0 0 0 0
-7 0 100
+7 0 100 100
 E
 stone totem~
 &+L   This is a totem.  It has been crafted into the shape of a panther.  It is
@@ -183,7 +183,7 @@ fried mushroom iron~
 ~
 19 48 3 0 2 0 8 16385 0 1 0
 1 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 fried mushroom iron~
 &+L   This fried mushroom looks good to eat.&N
@@ -195,7 +195,7 @@ A long and thin dagger lies on the ground here.&N~
 ~
 5 22 3 0 9 0 128 8193 1 0 0
 2 2 3 2 0 0 0 0
-4 0 100
+4 0 100 100
 E
 silver dagger~
 &N  This dagger is sharp and deadly.&N
@@ -209,7 +209,7 @@ half-buried sack coins~
 ~
 20 15 3 0 7 0 4096 16385 0 0 0
 0 160 90 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 half-buried sack coins~
    &+yA large sack of coins has been unearthed.
@@ -221,7 +221,7 @@ small sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small sign~
 &+LThis small sign reads:
@@ -235,7 +235,7 @@ huge round rock~
 ~
 29 11 3 420 7 0 0 0 0 0 0
 270 23758 0 1 0 0 0 0
-420 420 100
+420 420 100 100
 E
 huge round rock~
 &+LThis huge round rock rests here, easily rolled across the tunnel
@@ -248,7 +248,7 @@ tapestry~
 ~
 29 3 3 0 7 0 0 0 0 0 0
 270 23759 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
    &+CThis lavish silken tapestry has obviously been comissioned
@@ -267,7 +267,7 @@ torch~
 ~
 8 5 2 0 7 0 262144 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 4565 100
+0 4565 100 100
 E
 torch~
    &+YThis torch burns with a soft everlasting flame.
@@ -279,7 +279,7 @@ eyepatch bloodstone~
 ~
 9 15 3 0 7 0 1 131073 0 0 0
 4 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 eyepatch bloodstone~
    &+rA tiny bloodstone is nested into the leather of a simple black
@@ -296,7 +296,7 @@ threzik one pirate hat~
 ~
 9 3 3 0 11 0 8392704 17 0 0 0
 10 0 0 0 0 0 0 0
-0 14534 100
+0 14534 100 100
 E
 threzik one pirate hat~
    &+rThis hat is finely stitched and very well made.   Something about this

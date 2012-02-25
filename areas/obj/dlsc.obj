@@ -5,7 +5,7 @@ a &+Chuman &+Wspine&n~
 ~
 29 10 3 0 7 0 2 0 0 0 0
 340 36801 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spine human~
 &+L   Each &+Wvertebrae&+L is held to each other through uncomprehensible magicks.&n
@@ -17,7 +17,7 @@ a &+Chuman &+Wskull&n~
 ~
 29 10 3 0 7 0 2 0 0 0 0
 340 36802 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skull human~
 &+L   This &+Wskull &+Ldoes not seem like it has been left here by accident.&n
@@ -29,7 +29,7 @@ a &+Ldr&+re&+Lad&+rv&+Le&+ri&+Ll &+Lhe&+rl&+Lm&n~
 ~
 9 16 3 0 14 75 3154944 17 66 127660081 65536
 13 4 158 5 0 0 0 0
-3 22000 100
+3 22000 100 100
 E
 helm dreadveil~
 &+L   This helm is made of chained steel, formed to hang over the entire head
@@ -46,7 +46,7 @@ a &+Ldurethium nose &+Wring&n~
 ~
 11 16 4 0 7 10 0 67108865 0 4227727360 65535
 0 0 0 0 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 ring nose durethium~
 &+L   Strange sigils are craved into the dark metal of this hoop.&n
@@ -62,7 +62,7 @@ a &+Ldurethium &+Waxe&n~
 ~
 5 16 3 0 9 33 20972544 8396801 66 87572507 0
 1 2 5 3 0 0 0 0
-5 6666 100
+5 6666 100 100
 E
 axe durethium~
 &+L   Two serrated durethium axe-blades are set into a solid &+Wsteel&+L handle, its
@@ -79,7 +79,7 @@ a &+Ltorn &+Wf&+Bro&+Ws&+Bt &+Lcloak&n~
 ~
 9 13 3 0 11 50 8192 1025 0 0 0
 15 9 46 3 0 0 0 0
-4 8000 100 0 64 0 0
+4 8000 100 100 0 64 0 0
 E
 cloak torn frost~
 &+L   Crafted from a deep &+Bblue&+L leather, this cloak is covered in three inch
@@ -96,7 +96,7 @@ tunic belialian crimson fabric~
 ~
 9 43 3 0 11 50 8192 16393 0 0 0
 9 0 0 5 0 0 0 0
-4 8000 100
+4 8000 100 100
 E
 tunic belialian~
 &+L   This simple tunic is sewn from &+Rblood &+Rred &+Lcloth, with a symbol of Belial
@@ -113,7 +113,7 @@ hangman noose hangman's~
 ~
 9 43 3 0 11 33 8192 18437 0 0 0
 5 0 0 4 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 hangman noose~
 &+L   This &+yh&+re&+ymp&+L rope has been tied in a hangman's noose.&n
@@ -129,7 +129,7 @@ some &+Chuman &+mb&+Mr&+ma&+Min&+ms&n~
 ~
 19 2 3 0 7 0 0 8404993 0 0 0
 48 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 brains human~
 &+L   These &+Mb&+mra&+Mi&+mns&+L consist of two spongy blue-grey hemispheres and a long neural
@@ -142,7 +142,7 @@ some &+Chuman &+Mb&+mr&+Ma&+min&+Ms&n~
 ~
 19 2 3 0 7 0 33554432 8404993 0 0 0
 48 0 0 9 0 0 0 0
-1 100 100
+1 100 100 100
 E
 brains human~
 &+L   These &+Mb&+mra&+Mi&+mns&+L consist of two spongy blue-grey hemispheres and a long neural
@@ -155,7 +155,7 @@ an &+Millithid&+m-skin &+Lsack&n~
 ~
 15 2 3 0 7 0 8193 8404993 64 0 0
 666 0 0 666 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 sack illithid skin~
 &+L   This sack is crafted from sewn &+Millithid&+L skin.&N
@@ -171,7 +171,7 @@ belt dragonscale fine~
 ~
 9 35 3 0 15 88 12288 2049 0 0 0
 13 0 0 5 0 0 0 0
-4 18000 100
+4 18000 100 100
 E
 belt dragonscale~
 &+L   This belt has been crafted from a fine grade of &+Cdr&+Wa&+Cg&+Wo&+Cnsc&+Wa&+Cl&+We&+L.  There are no&N
@@ -189,7 +189,7 @@ quiver dematite tarnished~
 ~
 30 18 3 0 15 53 8192 9437185 0 0 0
 69 1 1 0 0 0 0 0
-1 18000 100
+1 18000 100 100
 E
 tarnished dematite quiver~
 &+L   This tarnished quiver has been crafted from solid &+rde&+Lm&+ra&+Lti&+rte &+Land shows several&N
@@ -206,7 +206,7 @@ a &+Ltwisted &+Wbone&+L key&n~
 ~
 18 10 3 0 7 0 8388608 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key bone twisted~
 &+L   This key is crafted from lizard &+Wbones&+L and is held together as if by magic.&n
@@ -218,7 +218,7 @@ some &+Rbloodstains&n~
 ~
 17 2 3 0 7 0 0 0 0 0 0
 -1 -1 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood bloodstains stain stains~
 
@@ -241,7 +241,7 @@ a &+Rredsplint&+L dirk&n~
 ~
 5 10 2 0 9 18 0 8396801 0 0 0
 2 3 3 11 0 0 0 0
-3 8000 100
+3 8000 100 100
 E
 dirk redsplint~
 &+L   The worked shaft of a &+mdrow &+Wtibia&+L, this dirk is covered in strange glyphs.&n
@@ -257,7 +257,7 @@ halberd bloodstained large~
 ~
 5 15 4 0 9 50 4203520 8396801 66 121258043 240
 8 3 6 6 0 0 0 0
-5 18000 100
+5 18000 100 100
 E
 halberd bloodstained~
 &+L   Crafted from iron, this halberd is knicked from its years of use.&n
@@ -273,7 +273,7 @@ a &+Wspl&+Rin&+rt &+Lsword&n~
 ~
 5 10 3 0 7 9 1024 8396801 0 96071707 0
 9 1 8 3 0 0 0 0
-2 9000 100
+2 9000 100 100
 E
 sword splint longsword~
 &+L   This weapon's blade is handcrafted from the &+Wclavicle&+L of a black dragon and
@@ -290,7 +290,7 @@ leggings polished blasbain~
 ~
 9 23 3 0 11 81 8192 33 64 4227727360 549312
 12 6 1 5 0 0 0 0
-3 33000 100
+3 33000 100 100
 E
 blasbain leggings~
 &+L   These leggings are made from a substance similar to &+mmithril&+L, except in its&N
@@ -307,7 +307,7 @@ a &+ybookshelf&n~
 ~
 15 5 3 0 14 0 0 0 0 0 0
 300 0 0 300 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookshelf shelf~
 &+L   This &+yoak&+L bookshelf is very rare in the underdark, having been imported from
@@ -320,7 +320,7 @@ sleeves dagon polished~
 ~
 9 23 3 0 14 69 8192 257 0 0 0
 9 0 0 4 0 0 0 0
-3 44000 100
+3 44000 100 100
 E
 sleeves dagon polished~
 &+L   The polished sleeves have been crafted from a rather light weight substance.&N
@@ -338,7 +338,7 @@ a &+Ltome of &+Cunhuman&+L flesh&n~
 ~
 33 2 3 0 7 0 67113984 8404993 64 12619264 0
 0 0 181 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 tome book unhuman flesh~
 &+L   This spellbook is made from the flesh of some non-human race, which one you
@@ -354,7 +354,7 @@ a &+Lbook entitled '&+RDomain of Souls&+L'~
 ~
 12 28 3 0 7 0 77824 8404993 64 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 book domain souls~
 
@@ -459,7 +459,7 @@ a&+L stone washbasin&n~
 ~
 17 11 3 0 7 0 0 0 0 0 0
 50 50 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water washbasin basin stone~
 &+L   This stone basin is filled with stagnant &+bwater&+L that looks as if it is
@@ -472,7 +472,7 @@ onyx bloody ear stud~
 ~
 9 36 3 0 15 75 8192 524289 66 4227727360 24576
 5 0 0 4 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 onyx ear stud~
 &+L   This &+rbl&+Ro&+ro&+Rd&+ry &+Lonyx ear stud seems to be rather well made and shows almost no&N
@@ -489,7 +489,7 @@ a &+Rdevil's &+Wtooth&+L key&n~
 ~
 18 10 3 0 7 0 8388608 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 key tooth devil's devil~
 &+L   This four inch long canine &+Wtooth&+L comes from the mouth of a red &+Rabashai&+L, and
@@ -504,7 +504,7 @@ a &+Lfull-length &+Cmirror&N~
 ~
 25 44 3 0 7 0 0 0 0 0 0
 36801 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mirror full-length~
 &+L   This full-length &+Cmirror&+L is framed with platinum worked with images of naked
@@ -517,7 +517,7 @@ a &+Ldistinctive &+Rbloodstain&n~
 ~
 17 2 3 0 7 0 0 0 0 0 0
 -1 -1 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood bloodstain stain distinctive~
 &+R
@@ -548,7 +548,7 @@ a &+Lburnt and &+Rbloodied&+L corpse&n~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 400 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse burnt bloodied~
 &+L   This unlucky adventurer met with one of the keep's darker secrets, and
@@ -566,7 +566,7 @@ a &+Ldurethium &+Whelm&n~
 ~
 9 16 3 0 7 10 0 17 0 4165209604 65536
 8 4 1 3 0 0 0 0
-3 100 100
+3 100 100 100
 E
 helm durethium~
 &+L   This &+whelm&+L is made from a dark metallic substance and is carved with many
@@ -583,7 +583,7 @@ some &+Ldurethium &+Wboots&n~
 ~
 9 16 3 0 9 10 0 65 0 4165209604 90112
 8 6 1 3 0 0 0 0
-3 3000 100
+3 3000 100 100
 E
 boots durethium~
 &+L   These heavy &+Wboots&+L are crafted from bands of a dark ebon metallic substance. &n
@@ -599,7 +599,7 @@ a &+Ltwo-handed durethium &+Wwarhammer&n~
 ~
 5 16 4 0 11 10 4194304 4202497 0 4173708868 0
 4 2 9 7 0 0 0 0
-16 53000 100
+16 53000 100 100
 E
 warhammer hammer durethium~
 &+L    This &+Wwarhammer&+L was crafted with exquisite care.  Runes spiral down the
@@ -616,7 +616,7 @@ a &+Lsuit of durethium &+rch&+Ra&+rinm&+Rai&+rl&n~
 ~
 9 16 3 0 11 60 0 9 0 4165209604 8192
 18 3 1 3 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 chainmail chain mail durethium~
 &+L   This suit of &+rch&+Ra&+rinm&+Rai&+rl&+L is crafted from worked durethium and lined with fine
@@ -633,7 +633,7 @@ a &+Lheavily &+ydecayed&+L mace&n~
 ~
 5 15 3 0 6 0 128 8193 0 4165209668 0
 6 2 4 7 0 0 0 0
-3 18000 45
+3 18000 45 100
 E
 mace decayed handle~
 &+L   This &+Wmace&+L has seen better days.  It looks as if it has been used to damn
@@ -648,7 +648,7 @@ a &+Ltorn ebon cloak&n~
 ~
 11 3 3 0 8 0 8192 1025 0 0 0
 0 0 0 0 0 0 0 0
-0 3000 81
+0 3000 81 100
 E
 cloak ebon torn~
 &+L   This ratty piece of cloth has been torn and tattered in various places.&n
@@ -664,7 +664,7 @@ a &+Wsoul &+Csc&+cyt&+Che&n~
 ~
 5 16 3 0 7 10 4203792 8396801 67 96071707 0
 17 3 5 3 0 0 0 0
-10 15500 100
+10 15500 100 100
 E
 scythe soul~
 &+L   A foot-long &+ywooden&+L handle connects to a sharp curved &+Cmi&+cthr&+Cil&+L blade.  This
@@ -681,7 +681,7 @@ a &+Ldagger called '&+rSubmission&+L'&n~
 ~
 5 19 2 0 15 75 9216 8396801 66 93974529 0
 2 2 4 11 0 128 50 30
-3 100000 100
+3 100000 100 100
 E
 dagger submission~
 &+L   Worked in the forges of hell, this dagger was specifically crafted for the
@@ -712,7 +712,7 @@ a &+Ldagger called '&+RDomination&+L'&n~
 ~
 5 19 2 0 15 75 132096 8396801 66 93974529 0
 2 3 3 11 0 129 50 30
-3 100000 100
+3 100000 100 100
 E
 dagger domination~
 &+L   A &+Gsnake&+L has been painstakingly carved into the &+cad&+Cama&+cnti&+Cum&+L of the blade, its
@@ -742,7 +742,7 @@ a &+Ygolden &+Lstatue of an &+Rerinyes&n~
 ~
 34 24 3 0 11 0 9217 16385 66 256 0
 60 0 0 0 0 0 0 0
-1 50000 100 4 0 0 0
+1 50000 100 100 4 0 0 0
 E
 statue golden~
 &+L   About half a foot in hieght, this statue of an &+Rerinyes&+L has been crafted
@@ -761,7 +761,7 @@ a &+Rbloodied &+Bic&+Wepi&+wck&n~
 ~
 5 22 2 0 10 24 16785424 8396801 67 4194697696 0
 2 2 3 11 0 0 0 0
-0 81000 100
+0 81000 100 100
 E
 icepick bloodied pick ice~
 &+L   This icepick has been used recently, but not on &+Wice&+L.  It is covered in a
@@ -778,7 +778,7 @@ some &+Lfootprints&n~
 ~
 12 1 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dust footprints footprint~
 &+L   Disrupting the soft &+Wwhite&+L layer of dust that has accumulated on the floor,
@@ -792,7 +792,7 @@ an &+Lexquisite &+Bwell&n~
 ~
 17 37 3 0 7 0 0 0 0 0 0
 -1 -1 17 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water well exquisite decorated~
 &+L   This beautiful well is crafted from blocks of &+csarsen&+L, its sides laden with
@@ -809,7 +809,7 @@ a &+ynatural&+B pool&N~
 ~
 25 37 10 0 7 0 0 0 0 0 0
 36883 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool natural spring~
 &+L   The architects of this keep have somehow figured out how to harness the
@@ -822,7 +822,7 @@ a &+Gvine&+L covered &+Wangel&n~
 ~
 12 11 3 0 7 50 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 column angel~
 &+L   This beautiful woman is nude, her detail almost perfect, you think she
@@ -841,7 +841,7 @@ a &+ctarnished &+Wsilver&+L vial&n~
 ~
 17 22 3 0 7 0 5120 8404993 0 12288 0
 9 9 27 1101 0 0 0 0
-1 69000 100
+1 69000 100 100
 E
 vial silver tarnished~
 &+L   This small &+Wsilver&+L vial has &+ctarnished&+L with time, its finely detailed lid
@@ -854,7 +854,7 @@ an &+Lonyx &+Wvial&n~
 ~
 17 11 3 0 7 0 5120 8404993 0 12288 0
 5 5 27 1103 0 0 0 0
-2 81000 100
+2 81000 100 100
 E
 vial onyx~
 &+L   This small &+Wvial&+L is made of smoothed and polished onyx, its surface so
@@ -867,7 +867,7 @@ a &+Rmino&+Ltaur &+Whorn&+L key&n~
 ~
 18 10 3 0 7 0 8388608 8404993 0 4227727360 65536
 0 0 0 0 0 0 0 0
-1 12 100
+1 12 100 100
 E
 key horn minotaur~
 &+L   This one foot &+Whorn&+L is carved with intricate runes, all of which, when
@@ -880,7 +880,7 @@ some &+Ldurethium &+Gs&+gc&+Ga&+gl&+Ge&+gm&+Ga&+gi&+Gl&n~
 ~
 9 18 3 0 11 10 128 9 64 4173696580 10240
 20 3 186 3 0 0 0 0
-15 25000 100
+15 25000 100 100
 E
 scalemail scale mail durethium~
 &+L   This scalemail is formed from small plates of durethium woven together over
@@ -897,7 +897,7 @@ a &+Wserrated &+Ldurethium &+rgl&+Rad&+Yiu&+Ws&n~
 ~
 5 16 3 0 8 10 9216 8396801 67 96071707 0
 9 2 3 3 0 0 0 0
-3 18000 100
+3 18000 100 100
 E
 gladius serrated durethium sword~
 &+L   This two-foot blade is serrated on one of its edges, the dark durethium
@@ -914,7 +914,7 @@ a &+Ldurethium &+Wmace&n~
 ~
 5 16 3 0 8 10 0 8396801 0 0 0
 6 2 6 7 0 0 0 0
-5 18000 100
+5 18000 100 100
 E
 mace durethium~
 &+L    This &+Wmace&+L was crafted with exquisite care.  Runes spiral down the
@@ -931,7 +931,7 @@ a &+Bfr&+Wo&+Bs&+Wt&+L ring covered in &+Rblood&n~
 ~
 9 15 3 0 13 15 73856 3 64 0 0
 5 1 0 1 0 0 0 0
-9 10 100
+9 10 100 100
 E
 ring blood frost~
 &+L   This ring is elegant, carved from living &+Wice&+L and carved with the images of
@@ -946,7 +946,7 @@ a &+Ltwo-handed durethium &+Wcudgel&+L covered in &+Rblood&n~
 ~
 5 16 4 0 11 50 4203520 8396801 66 85475353 0
 6 3 6 6 0 0 0 0
-15 18000 100
+15 18000 100 100
 E
 cudgel durethium~
 &+L    This &+Wcudgel&+L was crafted with exquisite care.  Runes spiral down the
@@ -963,7 +963,7 @@ dangling lizardskull nose ring~
 ~
 9 10 3 0 11 33 3153920 67108865 0 0 0
 3 0 0 3 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 dangling lizardskull nose ring~
 &+L   This &+Gl&+giz&+Ga&+grd&+Wskull&+L is suspended by a silver chain and a small silver hoop.&n
@@ -979,7 +979,7 @@ a &+Wmask&+L called '&+WFr&+Bo&+Ws&+Bt&+L'&n~
 ~
 9 8 3 0 15 63 40960 262145 66 4165209668 0
 10 13 1 5 0 0 0 0
-2 35500 100 0 64 0 0
+2 35500 100 100 0 64 0 0
 E
 mask frost crystal ivory~
 
@@ -1011,7 +1011,7 @@ a&+W ring&+L of &+Rde&+rsp&+Ra&+rir&n~
 ~
 9 18 3 0 11 54 8192 3 64 4165209604 8192
 5 1 0 3 0 0 0 0
-0 60000 100
+0 60000 100 100
 E
 ring spikes despair~
 &+L   This &+Rblood&+L red ring is covered in sharp spikes, each of which is capable
@@ -1028,7 +1028,7 @@ an &+Millithid &+mtentacle &+Lmask&n~
 ~
 9 2 3 0 9 15 8192 262145 0 0 0
 5 13 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 mask illithid tentacle~
 &+L   Skinned off the skull of an unlucky &+Millithid&+L during on of its enslavement
@@ -1046,7 +1046,7 @@ a &+Rdemonic &+Wcontract&n~
 ~
 12 2 3 0 7 0 98305 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 contract demonic parchment drow~
                   &+W     ______________________________
@@ -1083,7 +1083,7 @@ crown baal gems studded~
 ~
 9 31 3 0 14 50 140288 17 66 46305188 65536
 13 4 28 3 0 0 0 0
-2 100000 100
+2 100000 100 100
 E
 crown baal gems studded~
 &+L   This is a &+Rcr&+ro&+Rwn&+L of &+rB&+Ra&+ra&+Rl&+L, Lord of the Flies, keeper of the nine domains
@@ -1100,7 +1100,7 @@ a &+rc&+Rl&+Yo&+Ra&+rk &+Lof &+rE&+Rl&+Yd&+Rr&+ro&+Ys&n~
 ~
 9 35 3 0 15 90 8192 1025 66 0 0
 18 0 0 5 0 0 0 0
-2 255000 100 671088640 0 0 0
+2 255000 100 100 671088640 0 0 0
 E
 cloak eldros living fire~
 &+L   The heavy leather of this cloak seems to be alive, the fabric flowing
@@ -1119,7 +1119,7 @@ a &+Gs&+ge&+Grp&+ge&+gn&+Gt&+gi&+Gn&+ge&+L &+Lring&n~
 ~
 9 19 3 0 15 69 2097152 3 64 0 0
 5 1 0 3 0 0 0 0
-1 666000 100
+1 666000 100 100
 E
 ring snake snakes serpentine~
 &+L   This ring was crafted in the visage of two &+Gsn&+ga&+Gk&+ges&+L waging mortal combat,
@@ -1138,7 +1138,7 @@ a &+Wplatinum &+Gce&+gl&+Gt&+gic&+L wedding band&n~
 ~
 9 25 3 0 7 15 0 3 2 0 0
 5 1 0 3 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 ring platinum celtic wedding~
 &+L   This round band of &+Wplatinum&+L is decorated with &+Gc&+gel&+Gti&+gc &+Lknotwork along its
@@ -1156,7 +1156,7 @@ a &+Rblood &+rencrusted &+Whorn &+Lcap&n~
 ~
 9 16 3 0 10 24 0 134217729 0 0 0
 5 0 0 3 0 0 0 0
-0 58000 100
+0 58000 100 100
 E
 horn blood cap~
 &+L   These caps are crafted from sharpened and tempered &+Wsteel&+L, which has long
@@ -1173,7 +1173,7 @@ the &+Wsword&+L of &+BAzaz'lberith&n~
 ~
 5 22 3 0 15 35 7513088 8396801 67 16 0
 13 4 5 3 0 0 0 0
-17 45000 100 32768 0 0 0
+17 45000 100 100 32768 0 0 0
 E
 sword azaz'lberith two handed~
 &+L   This &+Wsword&+L was forged in &+rHe&+Rll&+Yfi&+Wre &+Land awarded to the githyanki death Lord,
@@ -1190,7 +1190,7 @@ some &+Ldurethium &+Warmplates&n~
 ~
 9 16 3 0 12 63 8192 257 0 0 0
 12 8 1 3 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 armplates durethium arm plates~
 &+L   These heavy durethium &+Warmplates&+L consist of medium-sized plates sewn within
@@ -1207,7 +1207,7 @@ a &+Lsquid's &+mte&+Mn&+mta&+Mcl&+me&+L &+Wbone&n~
 ~
 5 10 3 0 10 69 13584 8396801 66 8515584 0
 2 2 4 11 0 0 0 0
-3 50000 100
+3 50000 100 100
 E
 bone tentacle squid spear~
    &+LThis spiny bone comes from one of the two piercer &+mtentacles&+L of the &+Mb&+mra&+Mi&+mn
@@ -1224,7 +1224,7 @@ a &+Lsunken &+ychest&n~
 ~
 15 6 3 0 7 50 8192 0 0 0 0
 150 29 36872 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest sunken~
 
@@ -1246,7 +1246,7 @@ tarnished marble medallion~
 ~
 9 38 3 0 11 33 8192 5 64 0 0
 4 0 0 5 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 tarnished marble medallion~
 &+L   This &+Wm&+wa&+Lr&+wb&+Wle &+wm&+We&+Ld&+wa&+Wl&+Ll&+wi&+Lo&+Wn &+Lhas been crafted by the finest grade you have ever&N
@@ -1278,7 +1278,7 @@ an &+Lelaborate &+Mt&+ma&+Mpe&+mst&+Mr&+my&n~
 ~
 9 3 3 0 10 0 0 16794625 0 0 0
 15 0 0 0 0 0 0 0
-8 50000 35
+8 50000 35 100
 E
 tapestry elaborate decayed~
 &+L   This tapestry appears top be four to five hundred years old, and is covered
@@ -1296,7 +1296,7 @@ an &+yoak &+Ltable&n~
 ~
 8 5 3 0 9 24 1024 1 0 0 0
 0 0 0 0 0 0 0 0
-250 81000 100
+250 81000 100 100
 E
 table oak~
    &+LThis huge &+ytable&+L is well worn and abused after centuries of neglect.  Its
@@ -1309,7 +1309,7 @@ an &+Lancient &+Wmap&n~
 ~
 8 43 3 0 7 18 8192 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 66000 100
+0 66000 100 100
 E
 map ancient~
 &+W    __________________________________
@@ -1331,7 +1331,7 @@ a &+Lde&+rm&+La&+rti&+Lte &+Bwell&n~
 ~
 17 18 3 0 7 20 0 0 0 0 0
 -1 -1 28 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water well dematite~
 &+L   This beautiful well is crafted from blocks of &+rdematite&+L, its sides laden
@@ -1347,7 +1347,7 @@ an &+Wivory &+Lstatue of &+BTavril&n~
 ~
 12 34 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tavril statue ivory~
 &+L   This statue is carved in the likeness of an anthropomorphic diety who
@@ -1373,7 +1373,7 @@ a &+Ykey&+L of &+munderworld&+L kind&n~
 ~
 18 2 3 0 7 0 8925192 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 666000 100
+0 666000 100 100
 E
 key underworld kind mushroom~
 &+L   This key closely resembles a small underground &+Mmushroom&+L, its pasty flesh is
@@ -1386,7 +1386,7 @@ a &+Rbloodstained &+Lserrated &+wshark&+W tooth&n~
 ~
 5 10 3 0 7 0 12288 8396801 66 0 0
 2 2 5 11 0 0 0 0
-4 69000 100
+4 69000 100 100
 E
 tooth shark serrated bloodstained~
 &+L   This eight inch &+Wtooth&+L is covered in jagged edges, the enamel being quite
@@ -1403,7 +1403,7 @@ a &+yrusted &+Wsteel&+L ladder&n~
 ~
 12 16 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ladder rusted steel~
 &+L   This &+Wsteel&+L ladder has &+yrusted&+L from years of exposure to the &+Bmoisture&+L in the
@@ -1416,7 +1416,7 @@ a &+Lcloak secured by a &+Gce&+gl&+Gt&+gic&+y knot&+W broach&n~
 ~
 9 14 3 0 7 50 8192 5 64 0 0
 10 2 1 3 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 cloak celtic knot broach~
 &+L   This cloak is made of studded black leather, and is secured around the neck
@@ -1433,7 +1433,7 @@ a &+Wplatinum &+Ycrown&+L encrusted with &+Gemeralds&n~
 ~
 9 24 3 0 7 0 0 16401 64 0 0
 10 0 0 4 0 0 0 0
-2 50000 100
+2 50000 100 100
 E
 crown emeralds encrusted platinum~
 &+L   This &+Wplatinum &+Ycrown&+L has been encrusted with large pear-cut &+Gemeralds&+L.&n
@@ -1449,7 +1449,7 @@ some &+Rblood&+L armor of &+rKvasir&n~
 ~
 9 19 3 0 15 75 9216 9 64 119161265 0
 30 3 1 5 0 0 0 0
-9 50000 100 65536 0 0 0
+9 50000 100 100 65536 0 0 0
 E
 blood armor kvasir plate~
 &+L   This armor is forged of a dark &+rred&+L steel found only in areas close to
@@ -1467,7 +1467,7 @@ some &+Ldurethium &+Wgauntlets&n~
 ~
 9 16 3 0 7 10 0 129 0 4173708868 0
 9 7 1 3 0 0 0 0
-9 15000 100
+9 15000 100 100
 E
 gauntlets durethium~
 &+L   These &+Wgauntlets&+L are made from banded durethium.&n
@@ -1483,7 +1483,7 @@ a pair of &+mb&+Mla&+msb&+Ma&+min&+L boots&n~
 ~
 9 18 3 0 7 25 8192 65 64 4198895524 90112
 12 6 1 3 0 0 0 0
-3 30000 100
+3 30000 100 100
 E
 boots blasbain~
 &+L   These boots are made of a substance very similar to &+mmithril&+L, except in its
@@ -1500,7 +1500,7 @@ a &+Rblood &+Wsword &+Lof &+rKvasir&n~
 ~
 5 19 3 0 15 75 4203520 4202497 66 85475353 0
 13 3 6 3 0 0 0 0
-14 50000 100
+14 50000 100 100
 E
 sword kvasir blood~
 &+L   Its blade forged in &+Gd&+gra&+Ggo&+gn&+rf&+Ri&+Yr&+We&+L and cooled in the &+Rblood&+L of a &+Cvestal &+Wvirgin&+L,
@@ -1518,7 +1518,7 @@ a &+mbl&+Ma&+ms&+Mba&+min &+Lhelm&n~
 ~
 9 18 3 0 13 69 9216 17 64 87572507 65536
 12 4 1 5 0 0 0 0
-0 9990 100
+0 9990 100 100
 E
 helm blasbain~
 &+L   This &+whelm&+L is made from a dark metallic substance and is carved with many
@@ -1535,7 +1535,7 @@ a &+Lshield of &+rKvasir&n~
 ~
 37 16 3 0 15 75 12288 8389121 64 4173708868 0
 1 6 4 179 5 0 0 0
-24 35000 100 0 8192 0 0
+24 35000 100 100 0 8192 0 0
 E
 shield kvasir~
 &+L   This round &+csteel&+L shield bears the symbol of a &+Wskull&+L within a &+Rblood
@@ -1552,7 +1552,7 @@ a &+wshark&+L engraved &+Wbone &+Lring&n~
 ~
 11 10 3 0 10 0 8192 3 2 0 0
 0 0 0 0 0 0 0 0
-0 35000 100 2048 0 0 0
+0 35000 100 100 2048 0 0 0
 E
 ring bone shark engraved~
 &+L   This &+Wbone&+L ring is engraved with tiny &+wsharks&+L, which seem to swim in
@@ -1569,7 +1569,7 @@ a &+Lsacrificial &+Rblood&+L dagger of &+rKvasir&n~
 ~
 5 19 2 0 13 81 16786704 8396801 67 8515584 0
 2 2 4 11 9 0 0 0
-0 81000 100
+0 81000 100 100
 E
 dagger blood sacrificial kvasir~
 &+L   This dagger's blade is wickedly serrated, and curves slightly, making it
@@ -1592,7 +1592,7 @@ some &+Wangel &+wfeather&+L leggings&n~
 ~
 9 50 3 0 15 75 8192 33 66 4227727360 90112
 10 5 1 2 0 0 0 0
-3 50000 100
+3 50000 100 100
 E
 leggings feather angel~
 &+L   These leggings are made from &+Wangel &+wwings&+L which have been sewn together and
@@ -1609,7 +1609,7 @@ an &+Leyepatch of &+RD&+ragon&n~
 ~
 11 2 3 0 15 60 139264 131073 64 0 0
 0 0 0 0 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 eyepatch dagon~
 &+L   This eyepatch appears to be made from the flesh of a humanoid creature.&n
@@ -1625,7 +1625,7 @@ a &+Ldangling &+rde&+Lm&+ra&+Lti&+rte&+L earring&n~
 ~
 9 18 3 0 13 25 8192 524289 0 0 0
 5 0 0 5 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 earring dematite dangling~
 &+L   A small round ball of &+rde&+Lm&+ra&+Lti&+rte&+L is suspended from a thin linked &+Wchain
@@ -1642,7 +1642,7 @@ some &+Lgauntlets of &+Rre&+rn&+Rdi&+rng&n~
 ~
 9 19 3 0 15 80 13312 129 66 121270331 0
 13 7 1 5 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 gauntlets rending~
 &+L   These gauntlets are made of banded strips of &+Rm&+ret&+Ra&+rl&+L, each of which has large
@@ -1659,7 +1659,7 @@ a &+Lring of &+GSe&+gk&+Gh&+gme&+Gt&n~
 ~
 9 10 3 0 12 50 4096 3 0 0 0
 5 0 0 3 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 ring sekhmet pinky~
 &+L   Crafted of a worked &+Chuman&+W vertebrae&+L, this bone bears the eye of &+GS&+gek&+Ghm&+ge&+Gt&+L and
@@ -1678,7 +1678,7 @@ a &+Lsuit of &+mdrow &+wch&+Wa&+winm&+Wai&+wl&n~
 ~
 9 18 3 0 14 25 512 9 66 0 3183629
 16 3 1 3 0 0 0 0
-5 35000 100
+5 35000 100 100
 E
 chainmail chain mail drow~
 &+L   This suit of &+wch&+Wa&+winm&+Wai&+wl&+L is crafted from worked mithril and lined with fine
@@ -1695,7 +1695,7 @@ braid legacy ihsahn hair~
 ~
 11 2 1 0 11 8 12288 11536385 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 braid legacy ihsahn hair~
 &+L   This &+Wbraid&+L was won in combat with &+RIhsahn&+L, the reknowned &+mdrow &+Mswashbuckler&+L.&n
@@ -1711,7 +1711,7 @@ a &+Ltwisted &+Rstone&+L key&n~
 ~
 18 11 3 0 9 0 8388608 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key stone twisted~
 &+L   This key is caeved from a dark red &+Rstone&+L.&n
@@ -1723,7 +1723,7 @@ the &+Larmor of &+rHe&+Rll&+Yfi&+Wre&N~
 ~
 9 35 3 0 15 100 9225 9 2 85475345 24576
 36 3 1 5 0 0 0 0
-9 100000 100 536936448 24 0 0
+9 100000 100 100 536936448 24 0 0
 E
 armor hellfire~
 &+L   This platemail vest looks as if it is &+rbu&+Rrn&+Yin&+Wg&+L, but oddly enough the flames
@@ -1740,7 +1740,7 @@ a &+Lhuge double-bladed axe called '&+WSkull &+RSplitter&+L'&n~
 ~
 5 19 4 0 15 88 7480320 8396801 67 85475345 0
 1 4 4 3 0 0 0 0
-16 50000 100 536969216 4112 0 0
+16 50000 100 100 536969216 4112 0 0
 E
 axe huge skull splitter~
 &+L   Two serrated axe-blades are set into a gigantic solid &+Wsteel&+L handle, its
@@ -1757,7 +1757,7 @@ an &+Weye&+Lpatch of &+rd&+Res&+rp&+Ra&+rir&n~
 ~
 9 2 3 0 13 76 8192 131073 66 4165209604 0
 5 0 0 2 0 0 0 0
-2 30000 100
+2 30000 100 100
 E
 eyepatch despair~
 &+L   This eyepatch appears to be made from the flesh of a humanoid creature.&n
@@ -1773,7 +1773,7 @@ a &+Lcloak of &+rErebus&n~
 ~
 9 19 3 0 15 100 8192 1025 66 0 0
 15 9 1 4 0 0 0 0
-2 255000 100 4 0 0 0
+2 255000 100 100 4 0 0 0
 E
 cloak erebus crimson~
 &+L   This heavy leather cloak is woven of a strange&+R crimson &+Lfabric, it is unable
@@ -1790,7 +1790,7 @@ a &+Wsymbol&+L of &+rBaphomet&n~
 ~
 9 19 3 0 15 95 8192 5 64 0 0
 15 2 1 3 0 0 0 0
-3 250000 100 65536 0 0 0
+3 250000 100 100 65536 0 0 0
 E
 baphomet symbol necklace~
 &+L   This necklace is comprised of a small &+Wplatinum&+L disk, upon which is engraven
@@ -1811,7 +1811,7 @@ a &+Wsoul &+Cs&+cce&+Cpt&+cr&+Ce&+L~
 ~
 5 25 3 0 14 60 1025 8396801 66 37883684 0
 12 3 3 6 0 0 0 0
-4 300000 100 32 0 0 0
+4 300000 100 100 32 0 0 0
 E
 sceptre soul~
 &+L   This &+Cs&+cce&+Cpt&+cr&+Ce&+L is crafted from a metal strange to this plane.&n
@@ -1827,7 +1827,7 @@ the &+Rh&+rea&+Rr&+rt&+L of &+WKyeril&n~
 ~
 12 2 4 0 14 50 12288 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 heart kyeril~
 &+L   This four chamber &+Wdragon's &+Rh&+rea&+Rr&+rt&+L is somehow still alive even though it has

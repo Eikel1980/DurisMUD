@@ -5,7 +5,7 @@ steel longsword~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 1 8 3 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 steel longsword~
 &+wA steel longsword.
@@ -17,7 +17,7 @@ battle axe~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 1 10 3 0 0 0 0
-15 2000 100
+15 2000 100 100
 E
 battle axe~
 &+wA steel battle axe.
@@ -29,7 +29,7 @@ steel dagger~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-5 1500 100
+5 1500 100 100
 E
 steel dagger~
 &+wA steel dagger.
@@ -41,7 +41,7 @@ wooden hammer~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 4 2 3 6 0 0 0 0
-10 2000 100
+10 2000 100 100
 E
 wooden hammer~
 &+wA large wooden hammer.
@@ -53,7 +53,7 @@ throwing dagger~
 ~
 5 15 3 0 7 0 16 8193 0 0 0
 2 1 4 11 0 0 0 0
-5 1500 100
+5 1500 100 100
 E
 throwing dagger~
 &+wA throwing dagger.
@@ -65,7 +65,7 @@ flail steel~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 3 2 3 6 0 0 0 0
-10 1040 100
+10 1040 100 100
 E
 flail steel~
 &+wA steel flail.
@@ -81,7 +81,7 @@ A small &+bstream&n provides fresh water for all.~
 ~
 17 40 3 0 7 0 0 0 0 0 0
 9999 9999 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stream small~
 A stream providing fresh water.
@@ -93,7 +93,7 @@ venison strips~
 ~
 19 2 3 0 7 0 0 1 0 0 0
 6 2 0 0 0 0 0 0
-0 913 100
+0 913 100 100
 E
 venison strips~
 A venison strip ration.
@@ -105,7 +105,7 @@ iron ration~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 12 0 0 0 0 0 0 0
-0 46 100
+0 46 100 100
 E
 iron ration~
 &+LAn iron ration.
@@ -117,7 +117,7 @@ A sausage lays upon the floor.~
 ~
 19 2 3 0 7 0 0 16385 0 0 0
 8 1 0 0 0 0 0 0
-0 922 100
+0 922 100 100
 E
 sasauge~
 A sausage.
@@ -129,7 +129,7 @@ Some iron-clad sleeves lay here.~
 ~
 9 15 3 0 8 0 0 257 0 0 0
 6 0 0 4 0 0 0 0
-10 2050 100
+10 2050 100 100
 E
 iron-clad iron clad sleeves~
 Sleeves with iron clad to them.
@@ -145,7 +145,7 @@ flowing long robe~
 ~
 9 3 3 0 10 0 0 1025 0 0 0
 4 0 0 2 0 0 0 0
-10 4000 100
+10 4000 100 100
 E
 flowing long robe~
 &+gA long flowing robe.
@@ -161,7 +161,7 @@ long thin steel dagger~
 ~
 5 16 3 0 8 0 0 8193 0 0 0
 2 3 2 11 0 0 0 0
-5 23040 100
+5 23040 100 100
 E
 long thin steel dagger~
 &+LA long thin steel dagger.
@@ -175,7 +175,7 @@ jagged iron dagger~
 ~
 5 15 3 0 8 0 0 8193 0 0 0
 2 3 3 11 0 0 0 0
-5 7790 100
+5 7790 100 100
 E
 long thin steel dagger~
 &+LA jagged iron dagger.
@@ -189,7 +189,7 @@ short steel dagger~
 ~
 5 16 3 0 8 0 0 8193 0 0 0
 2 3 2 11 0 0 0 0
-5 7990 100
+5 7990 100 100
 E
 long thin steel dagger~
 &+LA short steel dagger.
@@ -203,7 +203,7 @@ battle axe two two-handed handed~
 ~
 5 16 3 0 9 0 4194304 8193 0 0 0
 5 4 4 3 0 0 0 0
-10 14040 100
+10 14040 100 100
 E
 two handed two-handed axe battle~
 &+LA two-handed battle axe.
@@ -217,7 +217,7 @@ broad sword~
 ~
 5 16 3 0 9 0 0 8193 0 0 0
 5 2 4 3 0 0 0 0
-10 6890 100
+10 6890 100 100
 E
 broad sword~
 &+LA long broadsword.
@@ -233,7 +233,7 @@ long leather whip~
 ~
 5 13 3 0 10 0 0 8193 0 0 0
 14 1 7 2 0 0 0 0
-5 5060 100
+5 5060 100 100
 E
 long leather whip~
 &+LA long leather whip.
@@ -247,7 +247,7 @@ longsword blue steel~
 ~
 5 16 3 0 9 0 0 8193 0 0 0
 5 1 8 3 0 0 0 0
-10 25200 100
+10 25200 100 100
 E
 longsword long sword steel~
 &+LA blue hued steel longsword.
@@ -261,7 +261,7 @@ iron warhammer iron hammer~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 4 2 3 6 0 0 0 0
-15 9440 100
+15 9440 100 100
 E
 iron warhammer iron hammer~
 &+LAn iron warhammer.
@@ -275,7 +275,7 @@ hard oak war warhammer hammer~
 ~
 5 6 3 0 7 0 0 8193 0 0 0
 4 2 3 6 0 0 0 0
-15 12300 100
+15 12300 100 100
 E
 iron warhammer iron hammer~
 &+LA large oak warhammer.
@@ -291,7 +291,7 @@ two two-handed handed long sword longsword large~
 ~
 5 16 3 0 9 0 4194304 8193 0 0 0
 5 3 4 3 0 0 0 0
-10 15400 100
+10 15400 100 100
 E
 two handed two-handed axe battle~
 &+LA two-handed longsword.
@@ -307,7 +307,7 @@ steel dagger~
 ~
 5 16 3 0 8 0 0 8193 0 0 0
 2 2 3 11 0 0 0 0
-5 6220 100
+5 6220 100 100
 E
 long thin steel dagger~
 &+LA steel dagger.
@@ -321,7 +321,7 @@ leather waterskin skin~
 ~
 17 13 3 0 7 0 0 1 0 0 0
 20 20 0 0 0 0 0 0
-10 120 100
+10 120 100 100
 E
 leather waterskin skin~
 &+yA leather waterskin.
@@ -333,7 +333,7 @@ large oak barrel~
 ~
 17 6 3 0 7 0 0 16385 0 0 0
 35 35 0 0 0 0 0 0
-20 1030 100
+20 1030 100 100
 E
 large oak barrel~
 &+yA large oak barrel.
@@ -345,7 +345,7 @@ Some iron-clad leggings lay here.~
 ~
 9 15 3 0 8 0 0 257 0 0 0
 7 0 0 4 0 0 0 0
-10 2050 100
+10 2050 100 100
 E
 iron-clad iron clad sleeves~
 Leggings with iron clad to them.
@@ -357,7 +357,7 @@ mossy pool~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 100 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mossy pool~
 A mossy pool.
@@ -369,7 +369,7 @@ ebony boulder~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 37855 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ebony boulder~
 &+LAn ebony boulder. From the looks of it has rested here for some time. The
@@ -382,7 +382,7 @@ ebony boulder~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 37847 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ebony boulder~
 &+LAn ebony boulder. From the looks of it has rested here for some time. The
@@ -395,7 +395,7 @@ tower~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 37940 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tower~
 &+LThis tower rises well over thirty feet. What wonders it could behold are left
@@ -408,7 +408,7 @@ obsidian shard~
 ~
 5 36 3 0 7 0 1024 8193 0 85475329 0
 2 2 4 11 0 0 0 0
-5 12928 100
+5 12928 100 100
 E
 obsidian shard~
 &+LAn obsidian shard.
@@ -422,7 +422,7 @@ obsidian bracer~
 ~
 9 36 3 0 7 0 1024 4097 0 85458944 0
 3 0 0 3 0 0 0 0
-5 19282 100
+5 19282 100 100
 E
 obsidian bracer~
 &+LAn obsidian bracer.
@@ -438,7 +438,7 @@ obsidian sleeves~
 ~
 9 36 3 0 7 0 1024 257 0 16448 0
 5 0 0 3 0 0 0 0
-10 21933 100
+10 21933 100 100
 E
 obsidian sleeves~
 &+LA pair of obsidian sleeves.
@@ -454,7 +454,7 @@ obsidian belt~
 ~
 9 36 3 0 7 0 1024 2049 0 85475329 0
 3 0 0 2 0 0 0 0
-5 3403 100
+5 3403 100 100
 E
 obsidian belt~
 &+LAn obsidian belt.
@@ -470,7 +470,7 @@ earring obsidian~
 ~
 9 36 3 0 7 0 1024 524289 0 85475329 0
 4 0 0 3 0 0 0 0
-1 21020 100
+1 21020 100 100
 E
 leggings obsidian~
 &+LAn obsidian earring.
@@ -486,7 +486,7 @@ obsidian horn ring~
 ~
 9 36 3 0 7 0 1024 134217729 0 85475329 0
 5 0 0 1 0 0 0 0
-1 28291 100
+1 28291 100 100
 E
 obsidian horn ring~
 &+LAn obsidian horn ring.
@@ -502,7 +502,7 @@ obsidian nose ring~
 ~
 9 36 3 0 7 0 1024 67108865 0 85475329 0
 5 0 0 1 0 0 0 0
-1 21828 100
+1 21828 100 100
 E
 obsidian nose ring~
 &+LAn obsidian nose ring.
@@ -518,7 +518,7 @@ obsidian pendant~
 ~
 9 36 3 0 7 0 1024 5 0 85475329 0
 2 0 0 1 0 0 0 0
-5 21928 100
+5 21928 100 100
 E
 obsidian pendant~
 &+LAn obsidian pendant.
@@ -534,7 +534,7 @@ large boulders two~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large boulders two~
 &+yTwo large boulders anchoring a rope bridge.
@@ -546,7 +546,7 @@ crystal ball wand~
 ~
 3 8 3 0 7 0 0 16385 64 0 0
 31 11 11 32 0 0 0 0
-5 11029 100
+5 11029 100 100
 E
 crystal ball wand~
 &+WA wand with a crystal upon he shaft.
@@ -558,7 +558,7 @@ wand ice~
 ~
 3 19 3 0 7 0 0 16385 64 0 0
 31 4 4 325 0 0 0 0
-5 25020 100
+5 25020 100 100
 E
 wand ice~
 &+CA wand made of ice.
@@ -570,7 +570,7 @@ exit tower~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 37923 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tower~
 &+LAn exit to the tower.
@@ -582,7 +582,7 @@ liquid potion~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 31 1 192 141 0 0 0 0
-1 23220 100
+1 23220 100 100
 E
 liquid potion~
 &+CA liquid potion.
@@ -594,7 +594,7 @@ black magic potion~
 ~
 10 40 3 0 7 0 0 1 64 0 0
 41 221 3 204 0 0 0 0
-1 15220 100
+1 15220 100 100
 E
 liquid potion~
 &+LA black magic potion.
@@ -606,7 +606,7 @@ elixir cloudy~
 ~
 10 40 3 0 7 0 0 1 64 0 0
 56 356 0 0 0 0 0 0
-1 25020 100
+1 25020 100 100
 E
 liquid potion~
 &+BA bottled elixir.
@@ -618,7 +618,7 @@ heavy iron-plate plate iron~
 ~
 9 15 4 0 8 0 1024 9 0 85475329 0
 20 0 0 4 0 0 0 0
-20 12410 100
+20 12410 100 100
 E
 heavy iron-plate plate iron~
 &+LA heavy iron plate.
@@ -634,7 +634,7 @@ steel linked chainmail~
 ~
 9 16 4 0 8 0 1024 9 0 85475329 0
 15 0 0 4 0 0 0 0
-20 25230 100
+20 25230 100 100
 E
 heavy iron-plate plate iron~
 &+LSome steel linked chainmail.
@@ -646,7 +646,7 @@ large wooden shield~
 ~
 37 6 4 0 8 0 0 513 0 0 0
 1 3 4 76 0 0 0 0
-10 12040 100
+10 12040 100 100
 E
 large wooden shield~
 &+LA large wooden shield.
@@ -658,7 +658,7 @@ steel linked gloves chain~
 ~
 9 16 3 0 7 0 1024 129 0 85475329 0
 6 0 0 3 0 0 0 0
-10 12035 100
+10 12035 100 100
 E
 gloves steel linked~
 &+LSome steel linked chain gloves.
@@ -670,7 +670,7 @@ dented iron bracer~
 ~
 9 15 3 0 8 0 0 4097 0 0 0
 4 0 0 4 0 0 0 0
-5 12032 100
+5 12032 100 100
 E
 dented iron bracer~
 &+LA dented iron bracer lays here.
@@ -682,7 +682,7 @@ blue steel longsword sword~
 ~
 5 16 3 0 9 0 0 8193 0 0 0
 5 1 8 0 0 0 0 0
-10 12554 100
+10 12554 100 100
 E
 blue steel hued longsword sword~
 &+LA razor sharp blue steel hued longsword.
@@ -696,7 +696,7 @@ battle sword two two-handed handed~
 ~
 5 16 3 0 9 0 4194304 8193 0 0 0
 5 2 6 0 0 0 0 0
-10 17090 100
+10 17090 100 100
 E
 two handed sword battle two-handed~
 &+LA two-handed battle sword.
@@ -712,7 +712,7 @@ steel war hammer warhammer~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 4 1 4 0 0 0 0 0
-15 25670 100
+15 25670 100 100
 E
 steel warhammer war hammer~
 &+LA steel warhammer.
@@ -726,7 +726,7 @@ steel longsword~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 5 1 6 0 0 0 0 0
-10 1230 100
+10 1230 100 100
 E
 steel longsword~
 &+LA steel longsword.
@@ -738,7 +738,7 @@ steel dagger~
 ~
 5 16 3 0 8 0 0 8193 0 0 0
 2 2 2 0 0 0 0 0
-5 3434 100
+5 3434 100 100
 E
 long thin steel dagger~
 &+LA steel dagger.
@@ -750,7 +750,7 @@ insignia minotaur elite~
 ~
 13 5 3 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-1 12 100
+1 12 100 100
 E
 insignia minotaur elite~
    &+LThis badge bears the insignia of the town's minotaur elite guard.&N
@@ -762,7 +762,7 @@ ring tail silver~
 ~
 9 22 3 1 7 0 0 33554433 1 0 0
 3 0 0 3 0 0 0 0
-1 900 100
+1 900 100 100
 E
 ring tail silver~
    &+cThis ring is roughly made, constructed of a fair grade of silver.&N
@@ -778,7 +778,7 @@ ring tail gold~
 ~
 9 24 3 0 7 0 0 33554433 0 0 0
 4 0 0 3 0 0 0 0
-1 30000 100
+1 30000 100 100
 E
 ring tail gold~
    &+YThis ring seems to be a silver and gold mesh.  It is quite smooth
@@ -793,7 +793,7 @@ horns iron~
 ~
 9 15 3 3 7 0 0 134217729 0 0 0
 5 0 0 4 0 0 0 0
-4 1800 100
+4 1800 100 100
 E
 horns iron~
    &+LQuite a sturdy set of iron minotaur horn sheaths!  They look like
@@ -806,7 +806,7 @@ sheath sheaths horn~
 ~
 9 16 3 3 9 0 0 134217729 0 0 0
 7 0 0 4 0 0 0 0
-5 35000 100
+5 35000 100 100
 E
 sheath sheaths horn~
    &+CThese steel horns look like they'll guard a minotaur's horns quite
@@ -821,7 +821,7 @@ ring nose copper~
 ~
 9 21 3 1 7 0 0 67108865 0 0 0
 4 0 0 3 0 0 0 0
-2 1900 100
+2 1900 100 100
 E
 ring nose copper~
    &+yIt comes complete with fasteners on each end, one of them being very
@@ -836,7 +836,7 @@ ring nose ruby~
 ~
 9 31 3 1 10 0 0 67108865 0 0 0
 6 0 0 3 0 0 0 0
-2 40000 100
+2 40000 100 100
 E
 ring nose ruby~
    &+rThe ring has one very sharp end, in case the owner decides to pierce

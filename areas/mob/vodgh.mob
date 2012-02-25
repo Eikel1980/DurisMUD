@@ -9,8 +9,8 @@ enormous golem assoc11_n_0 _nobutt_~
 &+Lprotects.  The stare of its dark&+r eyes&+L induce a state of&n
 &+Lpanic upon all it gazes.&n
 ~
-67205707 0 0 301990188 30 0 0 -1000 S
-OG 0 512 6
+67205707 0 0 0 301990188 30 0 0 -1000 S
+OG 0 512 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -26,8 +26,8 @@ hermit fleybon~
 &+gkept in check only by his safe living conditions.&n
 &+WFleybon asks you in orc 'Can I help you?'&n
 ~
-8417355 0 0 301990188 30 0 0 0 S
-HO 0 0 -1
+8417355 0 0 0 301990188 30 0 0 0 S
+HO 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -42,8 +42,8 @@ enormous golem assoc11_n_0 _nobutt_~
 &+Lprotects.  The stare of its dark&+r eyes&+L induce a state of&n
 &+Lpanic upon all it gazes.&n
 ~
-67205707 0 0 301990188 30 0 0 -1000 S
-OG 0 32 6
+67205707 0 0 0 301990188 30 0 0 -1000 S
+OG 0 32 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -58,8 +58,8 @@ enormous golem br_c assoc11_n_0 _nobutt_~
 &+Lprotects.  The stare of its dark&+r eyes&+L induce a state of&n
 &+Lpanic upon all it gazes.&n
 ~
-71399499 0 0 301990188 30 0 0 -1000 S
-OG 0 512 6
+71399499 0 0 0 301990188 30 0 0 -1000 S
+OG 0 512 0 6
 60 0 0 10d10+15000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -74,8 +74,8 @@ enormous golem br_c assoc11_n_0 _nobutt_~
 &+Lprotects.  The stare of its dark&+r eyes&+L induce a state of&n
 &+Lpanic upon all it gazes.&n
 ~
-71399499 0 0 301990188 30 0 0 -1000 S
-OG 0 32 6
+71399499 0 0 0 301990188 30 0 0 -1000 S
+OG 0 32 0 6
 51 0 0 10d10+15000 7d7+30
 0.0.0.0 0
 8 8 0

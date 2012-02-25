@@ -5,8 +5,8 @@ eye of the deep~
 ~
 This huge monster eats everything in sight...and he has amazing sight.
 ~
-1074530312 1 0 2104 32768 0 0 0 S
-EW 0 512 -1
+1074530312 1 0 0 2104 32768 0 0 0 S
+EW 0 512 0 -1
 55 -5 -121 55d88+4565 7d6+30
 0.0.0.0 222750
 8 8 0
@@ -18,8 +18,8 @@ water elemental~
 &+bThis being, composed of pure water, and seems to be a bit upset at your intrustion
 &+bin its homeland.
 ~
-1074006024 1 0 2104 32768 0 0 0 S
-EW 0 1 -1
+1074006024 1 0 0 2104 32768 0 0 0 S
+EW 0 1 0 -1
 45 -1 -79 45d107+2025 6d6+12
 0.0.0.0 109350
 8 8 0
@@ -31,8 +31,8 @@ large water elemental~
 &+bThis huge elemental, some fifteen feet high seems to want to wash you
 &+baway with his mighty fits of water.
 ~
-1074006024 1 0 2104 32768 0 0 0 S
-EW 0 1 -1
+1074006024 1 0 0 2104 32768 0 0 0 S
+EW 0 1 0 -1
 55 -5 -121 55d131+4675 7d6+30
 0.0.0.0 222750
 8 8 0
@@ -44,8 +44,8 @@ marid noble~
 &+bThis most powerful of all genie kind, hates those who invade his homeland,
 &+band moves to attack you at once!
 ~
-1074006024 1 0 1640698 32768 0 0 -1000 S
-EW 0 32 -1
+1074006024 1 0 0 1640698 32768 0 0 -1000 S
+EW 0 32 0 -1
 58 -7 -135 58d132+6032 7d6+35
 0.0.0.0 234900
 8 8 1
@@ -56,8 +56,8 @@ triton~
 ~
 &+gThis large green skined murman striks fast with his mighty fist!
 ~
-1074006024 1 0 2104 32768 0 0 -1000 S
-EW 0 256 -1
+1074006024 1 0 0 2104 32768 0 0 -1000 S
+EW 0 256 0 -1
 50 -3 -105 50d110+2700 6d6+25
 0.0.0.0 121500
 8 8 1
@@ -70,8 +70,8 @@ olhydra _nobutt_ _ignore_ _nosneak_~
 &+bwho she does combat with.  Standing over 30 feet tall, the wave crest seems to
 &+bflow and redefine her shape at will.
 ~
-1090847388 1 0 957942010 34816 786560 68169728 -1000 S
-EW 0 128 -1
+1090847388 1 0 0 957942010 34816 786560 68169728 -1000 S
+EW 0 128 0 -1
 61 -10 -500 60d120+19000 7d30+80
 0.0.0.0 243000
 8 8 2
@@ -83,8 +83,8 @@ elemental whale _nosneak_ _ignore_ _nobutt_~
 &+LThis huge whale is over 200 feet long, and can swallow you in one bite and
 &+Lnot even notice.
 ~
-1074035720 1 0 2104 268732544 67371136 34615296 -1000 S
-EW 0 1 -1
+1074035720 1 0 0 2104 268732544 67371136 34615296 -1000 S
+EW 0 1 0 -1
 60 -10 -500 60d143+6300 7d20+50
 0.0.0.0 243000
 8 8 0

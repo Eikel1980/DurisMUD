@@ -5,7 +5,7 @@ clump grass~
 ~
 13 30 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 clump grass~
 &+yThis little clump of &+ggrass&+y is trying hard to grow and survive in this
@@ -19,7 +19,7 @@ potion gold silk water~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 50 97 98 104 0 0 0 0
-0 51000 100
+0 51000 100 100
 E
 potion gold silk water~
 &+cThis vial contains a strange mixture of liquid spun silk that shimmers
@@ -32,7 +32,7 @@ potion liquid steel~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 50 36 0 0 0 0 0 0
-0 268100 100
+0 268100 100 100
 E
 potion liquid steel~
 &+wThis vial contains a strange liquid that flows like a melted metal.&n
@@ -44,7 +44,7 @@ ampoule moonrock moon~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 50 158 179 141 0 0 0 0
-0 48900 100
+0 48900 100 100
 E
 ampoule moonrock moon~
 &+wThis glass globe with a cork stopper has been filled with a strange mix
@@ -58,7 +58,7 @@ spiked stone club~
 ~
 5 11 3 0 6 0 0 8193 0 0 0
 11 2 8 0 0 0 0 0
-15 3771 100
+15 3771 100 100
 E
 spiked stone club~
 &+yA giant club from a tree branch with a head of spiked mountain rock.&n
@@ -74,7 +74,7 @@ cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57103 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cave~
 &+LIt is hard to see what is on the other side of the cave entrance as it
@@ -87,7 +87,7 @@ cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57102 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cave~
 &+LIt is hard to see what is on the other side of the cave entrance as it
@@ -100,7 +100,7 @@ cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57101 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cave~
 &+LIt is hard to see what is on the other side of the cave entrance as it
@@ -113,7 +113,7 @@ candle~
 ~
 13 51 3 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 candle~
 &+yThis ornamental &+Ycandle&+y hangs from the walls of the monestary, lighting the
@@ -126,7 +126,7 @@ fiery bubbling potion~
 ~
 10 40 3 0 7 0 0 1 0 0 0
 50 47 0 0 0 0 0 0
-0 100000 100
+0 100000 100 100
 E
 fiery bubbling potion~
 &+rThis potion bubbles with what appears to almost be magma leaving one to
@@ -139,7 +139,7 @@ fire elemental figurine~
 ~
 3 31 3 0 7 0 1 8193 0 0 0
 50 4 4 492 0 0 0 0
-0 32231 100 0 1 0 0
+0 32231 100 100 0 1 0 0
 E
 fire elemental figurine~
 &+rThis small statuette has been carved in the likeness of a large fire
@@ -156,7 +156,7 @@ massive greatsword tribal sword~
 ~
 5 11 3 0 12 0 37748736 8193 66 0 0
 13 6 4 0 0 0 0 0
-14 45533 100
+14 45533 100 100
 A
 18 3
 A
@@ -168,7 +168,7 @@ cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57033 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cave~
 &+LAn opening in the cavern here leads back out to the mountainside.
@@ -180,7 +180,7 @@ slender shard meteorite~
 ~
 5 11 3 0 7 0 4097 8193 0 0 0
 2 2 5 0 0 0 0 0
-0 7822 100
+0 7822 100 100
 E
 slender shard meteorite~
 &+LThis is a shard from a burning &+rmeteorite&+L. Its edges have been chipped
@@ -197,7 +197,7 @@ cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57028 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cave~
 &+LAn opening in the cavern here leads back out to the mountainside.
@@ -209,7 +209,7 @@ cave~
 ~
 25 11 3 0 7 0 0 0 0 0 0
 57029 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cave~
 &+LAn opening in the cavern here leads back out to the mountainside.
@@ -221,7 +221,7 @@ shield meteorite~
 ~
 37 11 3 0 7 0 4097 513 0 0 0
 1 2 4 20 3 0 0 0
-10 8229 100
+10 8229 100 100
 #57017
 meteorite visor~
 &+La &+Rme&+rtor&+Rite&+L visor&n~
@@ -229,7 +229,7 @@ meteorite visor~
 ~
 9 11 3 0 7 0 4097 131073 0 0 0
 9 0 0 3 0 0 0 0
-0 8999 100
+0 8999 100 100
 A
 13 15
 A
@@ -241,7 +241,7 @@ casket~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 1000 1 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 casket~
 &+LThis is an ornamental casket, carved from black mountain rock to honour
@@ -255,7 +255,7 @@ skeleton key~
 ~
 18 10 3 0 7 0 8400896 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skeleton key~
 &+WThis key appears to be carved from bone. Like most all skeleton keys it
@@ -269,7 +269,7 @@ dying samurai~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 #57021
 gamehawker glove hawker~
 &+ya &+Ygamehawker&n~
@@ -277,7 +277,7 @@ gamehawker glove hawker~
 ~
 9 14 3 0 7 0 0 129 0 0 0
 11 0 0 4 0 0 0 0
-0 22333 100
+0 22333 100 100
 E
 gamehawker glove hawker~
 &+yThis glove has wonderful soft yet strong hide and is bound on the cuff
@@ -292,7 +292,7 @@ simple straw hut~
 ~
 25 42 3 0 7 0 0 0 0 0 0
 57133 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 simple straw hut~
 &+yA simple hut has been set up here by the local tribesman to use as a
@@ -306,7 +306,7 @@ pile coins~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 250 0 0 0 0
-0 250000 100
+0 250000 100 100
 E
 pile coins~
 &+yA pile of &+Wplatinum&+y coins covered in ages of dust.
@@ -318,7 +318,7 @@ tarnished royal signet ring~
 ~
 8 17 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 tarnished royal signet ring~
 &+yThis ring bears the royal symbol of the trakkian tribes. It appears to
@@ -331,7 +331,7 @@ tiny orb obsidian~
 ~
 9 36 3 0 7 0 0 524289 64 0 0
 5 0 0 3 0 0 0 0
-0 8811 100 0 16 0 0
+0 8811 100 100 0 16 0 0
 E
 tiny orb~
 &+LThis small orb has a tiny hook attached on it. It seems to be carved from
@@ -348,7 +348,7 @@ stone lever~
 ~
 29 11 3 0 7 0 0 0 0 0 0
 340 57119 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone lever~
 This lever is the length and width of a mans arm and carved from stone.
@@ -360,7 +360,7 @@ stone lever~
 ~
 29 11 3 0 7 0 0 0 0 0 0
 340 57134 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone lever~
 This lever is the length and width of a mans arm and carved from stone.
@@ -372,7 +372,7 @@ candle~
 ~
 29 51 3 0 7 0 262144 0 0 0 0
 340 57001 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 candle~
 &+yThis ornamental &+Ycandle&+y hangs from the walls of the monestary, lighting the
@@ -385,7 +385,7 @@ drum skin stitched~
 ~
 32 2 3 0 7 0 0 16385 0 0 0
 188 50 0 36 0 0 0 0
-0 9222 100
+0 9222 100 100
 A
 22 -2
 A
@@ -397,7 +397,7 @@ bag abduction~
 ~
 15 3 3 0 7 0 0 8404993 0 0 0
 1500 5 0 1500 0 0 0 0
--10 9111 100
+-10 9111 100 100
 E
 bag abduction~
 &+WThis strange, black bag radiates some sort of twisted dark magic. Indeed
@@ -412,7 +412,7 @@ ancient tribal coif~
 ~
 9 20 3 0 12 0 0 17 0 0 0
 13 0 0 4 0 0 0 0
-0 13311 100
+0 13311 100 100
 A
 31 4
 A
@@ -424,7 +424,7 @@ magma club~
 ~
 5 37 3 0 7 0 1 8193 0 0 0
 11 2 8 0 0 0 0 0
-15 11022 100
+15 11022 100 100
 E
 magma club~
 &+rThis is nothing more than really a thick lump of cooled magma. Though
@@ -442,7 +442,7 @@ satyr pitchfork fork~
 ~
 5 15 3 0 7 0 16777488 8193 64 0 0
 18 3 5 0 0 0 0 0
-11 9111 100
+11 9111 100 100
 E
 satyr pitchfork fork~
 &+LThough rather small, this little pitchfork can be quite dangerous if
@@ -460,7 +460,7 @@ chrome circle circlet~
 ~
 9 22 3 0 10 0 0 4097 0 0 0
 7 0 0 4 0 0 0 0
-0 12333 100
+0 12333 100 100
 E
 chrome circle circlet~
 &+LThis hoop of &+cchrome metal&+L can fit easily around one's wrist. It shines
@@ -477,7 +477,7 @@ chrome horn~
 ~
 9 22 3 0 9 0 0 134217729 0 0 0
 5 0 0 4 1 0 0 0
-0 13322 100
+0 13322 100 100
 E
 chrome horn~
 &+LThis is the horn from a &+cchrome &+Ldragon. It is large and curved and though
@@ -494,7 +494,7 @@ chrome dragon eye~
 ~
 34 22 3 0 10 0 12288 16385 0 0 0
 51 0 0 0 0 0 0 0
-0 9110 100
+0 9110 100 100
 E
 chrome dragon eye~
 &+LThis is the eye from a great &+cchrome&+L dragon. It is larger than a man's
@@ -513,7 +513,7 @@ mantis nest~
 ~
 15 42 3 0 7 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mantis nest~
 &+gThis is a fairly large-sized mantis nest, made up of various types of
@@ -526,7 +526,7 @@ royal trakkian crown~
 ~
 9 11 3 0 12 0 8193 17 64 0 0
 12 0 0 4 0 0 0 0
-0 21111 100
+0 21111 100 100
 E
 royal trakkian crown~
 &+yThis bronzed crown is decorated with numerous etchings and sigils from ages
@@ -545,7 +545,7 @@ cowl sasquatch~
 ~
 9 12 3 0 7 0 4096 9 0 0 0
 16 0 0 2 0 0 0 0
-0 19912 100
+0 19912 100 100
 E
 cowl sasquatch~
 &+yThis is the long hide of a large hairy sasquatch. It easily draps over
@@ -562,7 +562,7 @@ grangle root~
 ~
 12 42 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 grangle root~
 &+yThis is a long grangle root. The grangle bush grows deep underground
@@ -575,7 +575,7 @@ strange gem~
 ~
 18 26 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 strange gem~
 &+CThis gem is about the size of one's fist. It has strange tribal markings
@@ -589,7 +589,7 @@ magma drake scale~
 ~
 8 35 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1222 100
+0 1222 100 100
 #57043
 cloak enternal anguish~
 &+Lthe cloak of &+wenternal&+L anguish&n~
@@ -597,7 +597,7 @@ cloak enternal anguish~
 ~
 9 1 3 0 12 0 8193 1025 64 0 0
 30 0 0 2 0 0 0 0
-0 32234 100 0 262146 0 0
+0 32234 100 100 0 262146 0 0
 A
 22 -2
 A
@@ -609,7 +609,7 @@ goat hides filthy~
 ~
 9 12 3 0 7 0 0 9 0 0 0
 1 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 goat hides filthy~
 &+yThese hides appear to be made up of several now deceased goats. They are
@@ -622,7 +622,7 @@ meteorite orb~
 ~
 9 11 3 0 7 0 1 524289 0 0 0
 7 0 0 4 0 0 0 0
-0 11122 100
+0 11122 100 100
 A
 18 3
 A
@@ -634,7 +634,7 @@ basilisk claw~
 ~
 5 10 3 0 7 0 0 0 64 0 0
 7 2 5 0 0 0 0 0
-7 32211 100 33554432 0 0 0
+7 32211 100 100 33554432 0 0 0
 A
 18 3
 A
@@ -646,7 +646,7 @@ trakkian tribal greaves~
 ~
 9 11 3 0 10 0 0 33 0 0 0
 13 0 0 3 0 0 0 0
-0 11222 100
+0 11222 100 100
 A
 18 3
 A
@@ -658,7 +658,7 @@ queen mantis eye~
 ~
 5 2 3 0 9 0 0 24577 64 0 0
 6 4 4 0 0 0 0 0
-0 21333 100 0 12288 0 0
+0 21333 100 100 0 12288 0 0
 A
 13 25
 A
@@ -670,7 +670,7 @@ ancient ring spellweaving~
 ~
 9 25 3 0 11 0 0 3 64 0 0
 7 0 0 2 0 0 0 0
-0 33221 100 4 0 0 0
+0 33221 100 100 4 0 0 0
 A
 3 15
 A
@@ -682,7 +682,7 @@ embroidered trakkian belt tribal~
 ~
 9 43 3 0 7 0 0 2049 0 0 0
 12 0 0 3 0 0 0 0
-0 9113 100
+0 9113 100 100
 A
 4 10
 A
@@ -694,7 +694,7 @@ bronze trakkian breastplate plate~
 ~
 9 20 3 0 11 0 0 1025 0 0 0
 23 0 0 4 0 0 0 0
-0 42111 100 0 32768 0 0
+0 42111 100 100 0 32768 0 0
 A
 1 15
 A
@@ -706,7 +706,7 @@ tribal mask~
 ~
 9 20 3 0 7 0 0 262145 0 0 0
 9 0 0 3 0 0 0 0
-0 13944 100 0 12 0 0
+0 13944 100 100 0 12 0 0
 A
 30 12
 A
@@ -718,7 +718,7 @@ shepards staff~
 ~
 4 6 3 0 7 0 0 24577 64 0 0
 46 3 3 139 0 0 0 0
-0 21333 100
+0 21333 100 100
 E
 shepards staff~
 &+yAt first glance it appears to be nothing more than an old, knotted stick
@@ -736,7 +736,7 @@ tormented soul khan aspuru~
 ~
 13 15 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #57055
 hellstone key~
 &+La solid &+rhell&+Lstone key&n~
@@ -744,7 +744,7 @@ hellstone key~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #57056
 stone flat large~
 &+LA flat &+ystone&n~
@@ -752,4 +752,4 @@ A &+Llarge flat &+ystone &+Llies &nhere.~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 57136 1 0 0 0 0 0
-0 0 100
+0 0 100 100

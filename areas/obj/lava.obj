@@ -5,7 +5,7 @@ spring lava~
 ~
 25 15 3 0 7 0 110592 0 0 0 0
 99746 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lava spring~
 &+rThis is a small lava spring filled with molten lava.&n
@@ -17,7 +17,7 @@ badge flesh rotten~
 ~
 11 15 3 0 7 0 12288 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 302 100
+0 302 100 100
 E
 badge flesh rotten~
 &+gThis is a small badge made of rotten flesh.&n
@@ -31,7 +31,7 @@ potion clear heal~
 ~
 10 15 3 0 7 0 4096 16385 0 0 0
 31 1 -1 -1 0 0 0 0
-0 2359 100
+0 2359 100 100
 E
 potion clear heal~
 &+CThis is a small clear potion of healing power.&n
@@ -43,7 +43,7 @@ illithid illithids jeweled belt~
 ~
 9 15 3 0 7 0 8192 2049 0 0 0
 8 0 0 3 0 0 0 0
-0 10000 100 73728 0 0 0
+0 10000 100 100 73728 0 0 0
 E
 helm domination~
 &+mThis is a remarkable
@@ -59,7 +59,7 @@ spring lava~
 ~
 25 15 3 0 7 0 110592 0 0 0 0
 99741 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spring lava~
 &+rThis is a lava spring filled with molten lava&n.
@@ -71,7 +71,7 @@ chunk cinder~
 ~
 8 15 3 0 7 0 8499200 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chunk cinder~
 &+rThis is a small chunk of red hot cinder&n.
@@ -83,7 +83,7 @@ sword longsword cinder~
 ~
 5 15 3 0 7 0 1024 8193 0 87572507 0
 5 3 4 3 1 195 50 50
-11 9235 100 0 16 0 0
+11 9235 100 100 0 16 0 0
 E
 sword longsword cinder~
 &+rThis is a fine crafted sword made of cinders.  It has the word cinder
@@ -100,7 +100,7 @@ red bp backpack~
 ~
 15 15 3 0 7 0 69633 4210689 0 0 0
 150 1 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 red bp backpack~
 &+rThis is a bright red backpack that seems to be glowing&n.
@@ -114,7 +114,7 @@ spring lava~
 ~
 25 15 3 0 7 0 110592 0 0 0 0
 99752 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lava spring~
 &+rThis is a small lava spring filled with molten lava&n.
@@ -126,7 +126,7 @@ spring lava~
 ~
 25 15 3 0 7 0 110592 0 0 0 0
 99751 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lava spring~
 &+rThis is a small lava spring filled with molten lava&n.
@@ -138,7 +138,7 @@ blue key~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blue key~
 &+bThis is a basic blue glass key&n.
@@ -150,7 +150,7 @@ rotten corpse~
 ~
 15 15 3 0 7 0 36864 0 0 0 0
 100 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rotten corpse~
 &+yThis is a smelly rotten corpse that has been discarded&n.
@@ -162,7 +162,7 @@ necklace deus power~
 ~
 9 15 3 0 7 0 8192 5 0 0 0
 5 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 necklace deus power~
 &+YThis is a small&n &+Ctranslucent&n &+Ynecklace with holy powers&n.
@@ -178,7 +178,7 @@ flaming bracer hell fire hellfire~
 ~
 9 15 3 0 7 0 77824 4097 0 0 0
 5 0 0 5 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 flaming bracer hell fire hellfire~
 You see nothing special...
@@ -194,7 +194,7 @@ steel knife~
 ~
 5 15 3 0 7 0 32768 8193 0 0 0
 2 2 3 11 0 0 0 0
-0 1 100
+0 1 100 100
 E
 steel knife~
 &+LThis is a simple solid steel knife.  There is a bit of dried &+rblood&+L
@@ -207,7 +207,7 @@ rotten corpse~
 ~
 15 15 3 0 7 0 32768 0 0 0 0
 100 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rotten corpse~
 &+yThis is a smelly rotten corpse that has been abandon&n.
@@ -219,7 +219,7 @@ dirty key~
 ~
 18 15 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirty key~
 &+yThis is a small dirty key made of iron.
@@ -231,7 +231,7 @@ spring lava~
 ~
 25 15 3 0 7 0 110592 0 0 0 0
 99715 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spring lava~
 &+rThis is a lava spring filled with molten lava&n.
@@ -243,7 +243,7 @@ spring lava~
 ~
 25 15 3 0 7 0 110592 0 0 0 0
 99771 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spring lava~
 &+rThis is a lava spring filled with molten lava&n.
@@ -255,7 +255,7 @@ jewel~
 ~
 8 15 3 0 7 0 110592 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 jewel~
 &+MThis is a dull looking purple jewel&n.
@@ -267,7 +267,7 @@ sleeves arm bloodly~
 ~
 9 15 3 0 7 0 110592 257 0 0 0
 10 0 0 3 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sleeves arm bloody~
 You see nothing special...

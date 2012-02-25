@@ -5,7 +5,7 @@ jade pommel longsword jaguar jaguar's handled sword~
 ~
 5 11 4 0 10 45 2098176 8193 0 87834635 16252928
 5 4 4 3 0 0 0 0
-6 45453 100
+6 45453 100 100
 E
 jade pommel longsword jaguar jaguar's handled sword~
 &nThis exquisitely tempered sword is obviously highly valued, as its handle
@@ -23,7 +23,7 @@ jaguar claw armor claws~
 ~
 9 10 4 0 8 20 1056 265 64 119161257 15728640
 25 0 0 4 0 0 0 0
-7 16532 100
+7 16532 100 100
 E
 jaguar claw armor claws~
 &nSeveral dozen &+Lj&+Ga&+Lgu&+Ga&+Lr &nclaws have been fitted together to make unbelievably
@@ -40,7 +40,7 @@ large emerald~
 ~
 11 26 2 1 12 40 4224 33570817 0 0 0
 0 0 0 0 0 0 0 0
-1 285432 100
+1 285432 100 100
 E
 large emerald~
 &nThis &+Gemerald &nis the size of a robin's egg. It is well faceted and glimmers
@@ -57,7 +57,7 @@ shimmering staff~
 ~
 5 7 3 0 9 35 0 8193 64 4179362821 0
 12 3 4 6 0 0 0 0
-2 8653 100
+2 8653 100 100
 E
 shimmering staff~
 &nThis staff almost seems to be made out of opaque glass, or it has been
@@ -75,7 +75,7 @@ tiger fur boots pair~
 ~
 9 12 2 1 10 45 1048576 65 64 0 0
 5 0 0 3 0 0 0 0
-2 6532 100
+2 6532 100 100
 E
 tiger fur boots pair~
 &nThese boots have been made by what appears to be tufts of hair snipped from
@@ -91,7 +91,7 @@ dark blue crystal crown~
 ~
 9 8 2 2 11 57 0 17 0 4165275268 16285696
 3 0 0 4 0 0 0 0
-1 12536 100
+1 12536 100 100
 E
 dark blue crystal crown~
 &nThis rather large and thick circlet has been crafted from a &+bdark blue
@@ -108,7 +108,7 @@ light blue crystal crown~
 ~
 9 8 2 2 11 69 0 17 64 0 0
 3 0 0 4 0 0 0 0
-1 15623 100
+1 15623 100 100
 E
 light blue crystal crown~
 &nThis thin circlet has been made from a &+Blight blue &ncrystal. It feels rather
@@ -126,7 +126,7 @@ jade jaguar statue oddly shaped~
 ~
 18 11 1 0 11 32 4096 16385 0 4227335172 16285696
 0 90 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 jade jaguar statue oddly shaped~
 &nThis oddly shaped jaguar statue has been carved from jade with a great deal
@@ -143,7 +143,7 @@ A &+CM&+cer&+Cm&+cai&+Cd s&+cc&+Ca&+cl&+Ce n&+cec&+Ckl&+cac&+Ce &nhas been dropp
 ~
 9 44 2 1 9 78 262144 5 64 0 0
 3 0 0 3 0 0 0 0
-1 9546 95
+1 9546 95 100
 E
 mermaid scale necklace~
 &nThis beautiful necklace has been fashioned with scales interwoven so
@@ -160,7 +160,7 @@ A &+LT&+Yr&+Li&+Yd&+Le&+Yn&+Lt &nlies discarded here.&n~
 ~
 5 11 3 3 9 78 16908288 8193 0 4161090580 0
 18 1 6 11 0 0 0 0
-3 15643 90
+3 15643 90 100
 E
 black gold trident fork~
 &nThis trident has been made from a black stone pelted with gold flecks. It
@@ -177,7 +177,7 @@ A &+yb&+Ya&+ymb&+Yo&+yo belt &nhas been tossed to the side here.&n~
 ~
 9 41 2 1 8 70 0 2049 0 0 0
 10 0 0 2 0 0 0 0
-1 1002 95
+1 1002 95 100
 E
 bamboo belt~
 &nThis belt is made from bamboo leaves and dried strips of bark tied together
@@ -194,7 +194,7 @@ A &+LBlacksteel Sword &nhas been flung here.&n~
 ~
 5 11 4 4 9 75 4195328 8193 0 87572507 0
 5 2 5 3 0 0 0 0
-5 9765 98
+5 9765 98 100
 E
 black steel blacksteel sword~
 &nThis sword has been tempered from the finest blacksteel. The handle has
@@ -207,7 +207,7 @@ A &+GJ&+gad&+Ge &nKey has been dropped here.&n~
 ~
 18 11 1 0 15 0 1282048 1 0 0 0
 0 90 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key tiny jade~
 &nThis tiny jade key has one prong in a conical shape. It almost looks like
@@ -220,7 +220,7 @@ A plaque made of &+Gj&+Gad&+Ge &nlies abandoned here.&n~
 ~
 8 11 2 2 15 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 25100 100
+3 25100 100 100
 E
 ancient jade plaque~
 &nThis plaque has words in some ancient language carved into it. The base is
@@ -234,7 +234,7 @@ ebony cloak bodycloak~
 ~
 9 3 3 2 10 80 0 1025 64 4161078276 2048
 15 0 0 4 0 0 0 0
-2 6542 98
+2 6542 98 100
 E
 ebony cloak bodycloak~
 &nThis cloak feels softer than velvet though it is thicker and more solid
@@ -253,7 +253,7 @@ An ancient druidic scroll has rolled to the side here.&n~
 ~
 8 29 2 0 11 20 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1526 100
+0 1526 100 100
 E
 scroll ancient druidic~
 &nThis scroll is obviously very old, as the parchment it has been written
@@ -266,7 +266,7 @@ A &+Lr&+Yi&+Ln&+Yg &nmade of &+Gj&+gad&+Ge &nhas been flung down here.&n~
 ~
 11 11 2 0 14 75 263296 3 64 107088890 0
 0 0 0 0 0 0 0 0
-0 13526 100
+0 13526 100 100
 E
 ring jade~
 &nThis ring has been cut from a good piece of jade. It is large for a ring,
@@ -283,7 +283,7 @@ A &+Gj&+gad&+Ge green c&+go&+Gll&+ga&+Gr &nwith &+wivory &nstuds has fallen here
 ~
 9 11 3 1 11 75 0 5 64 4165303812 0
 3 0 0 5 0 0 0 0
-1 6235 100
+1 6235 100 100
 E
 collar jade studded ivory~
 &nThis collar has been made from jade. It has an exceptionally soft black

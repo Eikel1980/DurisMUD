@@ -5,7 +5,7 @@ A small key made out of &+Wanimal bone&n lies here.~
 ~
 18 10 3 0 7 0 8491080 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97901
 table wooden~
 &+ya wooden table~
@@ -13,7 +13,7 @@ table wooden~
 ~
 29 6 3 0 7 0 0 0 0 0 0
 340 97903 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table wooden~
 &+yThis sturdy wooden table is absolutely covered with &+rbloody
@@ -26,7 +26,7 @@ unnamed object~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97903
 recipe granular potion~
 &+wa &+yre&+wci&+ype &+wfor a &+ygr&+wanul&+yar &+wpotion&n~
@@ -34,7 +34,7 @@ recipe granular potion~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97904
 birdfeather headdress~
 &+ba bi&+Brdf&+beath&+Be&+br hea&+Bddre&+bss&n~
@@ -42,7 +42,7 @@ birdfeather headdress~
 ~
 9 50 3 0 7 0 0 16 0 0 0
 0 0 0 0 0 0 0 0
-0 0 18
+0 0 18 100
 #97905
 woven neberihide necklace~
 &+ba wo&+Bve&+bn ne&+Bb&+berih&+Bi&+bde ne&+Bckl&+bace&n~
@@ -50,7 +50,7 @@ woven neberihide necklace~
 ~
 9 12 3 0 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-0 0 12
+0 0 12 100
 #97906
 straw bed~
 &+ya &+Ystraw&+y-covered &+Wbed&n~
@@ -58,7 +58,7 @@ straw bed~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97907
 bubbling spring~
 &+ba &+Cbu&+bbb&+Cli&+bng &+Csp&+bri&+Cng&n~
@@ -66,7 +66,7 @@ bubbling spring~
 ~
 13 40 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bubbling spring~
 &+b   This bubbling spring is the &+Clife&+b-giver to the plants
@@ -83,7 +83,7 @@ coconut palm~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97909
 gnomish telescope~
 &+La &+RGn&+romi&+Rsh &+Ltelescope&n~
@@ -91,7 +91,7 @@ gnomish telescope~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97910
 elixir pyro-mage pyro mage~
 &+ran &+Yelixir&+r of the &+Yp&+Ry&+rro-&+mmage&N~
@@ -99,7 +99,7 @@ elixir pyro-mage pyro mage~
 ~
 10 7 3 0 7 0 1 8404993 64 0 0
 56 492 108 233 100 0 0 0
-0 100434 100
+0 100434 100 100
 E
 elixir pyro-mage pyro mage~
    &+rThis extremely &+Ypotent &+rgoblin elixir has the seal of Gleb Shnieebly, &+rthe &+YP&+Ry&+rro-&+mmage&+L.
@@ -111,7 +111,7 @@ huge rocks~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 98000 4 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge rocks~
    &+WThese huge rocks lie here piled up in a way that makes reaching the landing
@@ -124,7 +124,7 @@ fur-cuffed cured leather boots~
 ~
 9 14 3 0 6 0 0 65 0 0 0
 8 0 0 0 0 0 0 0
-0 9438 100
+0 9438 100 100
 E
 fur-cuffed cured leather boots~
    &+yThis fine piece of cured leather clothing has white fur stitched along
@@ -141,7 +141,7 @@ fur-cuffed cured leather gloves~
 ~
 9 14 3 0 6 0 0 129 0 0 0
 8 0 0 0 0 0 0 0
-0 9438 100
+0 9438 100 100
 E
 fur-cuffed cured leather boots~
    &+yThis fine piece of cured leather clothing has white fur stitched along
@@ -158,7 +158,7 @@ cured leather tunic lined fur~
 ~
 9 14 3 0 7 0 0 9 0 0 0
 20 0 0 0 0 0 0 0
-2 16958 100
+2 16958 100 100
 E
 cured leather tunic lined fur~
    &+yThis tunic made of fine cured fur, stitched very well into an over-the
@@ -175,7 +175,7 @@ ram's horn ram bugle~
 ~
 32 10 2 0 6 0 0 16385 0 0 0
 189 50 1 1 0 0 0 0
-0 16589 100
+0 16589 100 100
 E
 ram's horn ram bugle~
    &+yThis &+Yram's &+yhorn has been hollowed out and &+Lpitted &+yinto a musical instrument.
@@ -191,7 +191,7 @@ elven sword shortsword~
 ~
 5 22 3 0 12 0 0 8193 64 0 0
 9 3 3 0 0 0 0 0
-5 21458 100
+5 21458 100 100
 E
 elven sword shortsword~
    &+CExcellently balanced, this elven blade was clearly made by an excellent
@@ -208,7 +208,7 @@ elven cloak~
 ~
 9 3 3 0 13 0 0 1025 0 0 0
 10 0 0 3 0 0 0 0
--50 16549 100
+-50 16549 100 100
 E
 elven cloak~
    &+gThis fine elven cloak has been stitched of double-threaded silk.  Magical
@@ -226,7 +226,7 @@ _id_ fang fangs necklace~
 ~
 11 10 2 0 11 0 2097153 33570821 64 0 0
 0 0 0 0 0 0 0 0
-1 100000 100 32768 0 0 0
+1 100000 100 100 32768 0 0 0
 E
 _id_name_~
 fang
@@ -242,7 +242,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 3 15 3 0 7 0 1 8404993 0 0 0
 56 3 3 371 0 0 0 0
-0 0 100
+0 0 100 100
 #97920
 lesser wand healing~
 &+Wthe &+Clesser &+Wwand of &+Chealing&n~
@@ -250,7 +250,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 3 15 3 0 7 0 1 8404993 0 0 0
 35 3 3 190 0 0 0 0
-0 0 100
+0 0 100 100
 #97921
 pulsating sphere energy~
 &+La &+Mpulsating &+Lsphere of &+Yenergy&n~
@@ -258,7 +258,7 @@ pulsating sphere energy~
 ~
 4 15 3 0 7 0 0 16385 0 0 0
 50 1 1 121 0 0 0 0
-0 0 100
+0 0 100 100
 A
 24 -4
 A
@@ -270,7 +270,7 @@ ultimate wand life~
 ~
 3 15 3 0 7 0 65 8404993 0 0 0
 56 1 1 373 0 0 0 0
-0 0 100
+0 0 100 100
 #97923
 wand plane elements~
 &+Lthe &+Wwand &+Lof the &+Rel&+Cem&+Yen&+Bts&n~
@@ -278,7 +278,7 @@ wand plane elements~
 ~
 8 15 3 0 7 0 1 8404993 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wand plane elements~
 &+WThe wand of the &+Rel&+Cem&+Yen&+Bts &+Wbeckons you to &+Lrub &+Wit.
@@ -290,7 +290,7 @@ wand plane water~
 ~
 3 15 3 0 7 0 1 8404993 64 0 0
 50 8 8 424 0 0 0 0
-0 0 100
+0 0 100 100
 #97925
 wand plane fire~
 &+Lthe &+Wwand &+Lof the &+rPlane of Fire&n~
@@ -298,7 +298,7 @@ wand plane fire~
 ~
 3 15 3 0 7 0 1 8404993 64 0 0
 50 3 3 59 0 0 0 0
-0 0 100
+0 0 100 100
 #97926
 wand plane air~
 &+Lthe &+Wwand &+Lof the &+CPlane of Air&n~
@@ -306,7 +306,7 @@ wand plane air~
 ~
 3 15 3 0 7 0 1 8404993 64 0 0
 50 3 3 462 0 0 0 0
-0 0 100
+0 0 100 100
 #97927
 wand plane earth~
 &+Lthe &+Wwand &+Lof the &+gThe Ethereal Plane&n~
@@ -314,7 +314,7 @@ wand plane earth~
 ~
 3 15 3 0 7 0 1 8404993 64 0 0
 50 3 3 529 0 0 0 0
-0 0 100
+0 0 100 100
 #97928
 wand plane astral~
 &+Lthe &+Wwand &+Lof the &+gThe Astral Plane&n~
@@ -322,7 +322,7 @@ wand plane astral~
 ~
 3 15 3 0 7 0 1 8404993 64 0 0
 50 4 4 241 0 0 0 0
-0 0 100
+0 0 100 100
 #97929
 wand plane earth~
 &+Lthe &+Wwand &+Lof the &+yPlane of Earth&n~
@@ -330,7 +330,7 @@ wand plane earth~
 ~
 3 15 3 0 7 0 1 8404993 64 0 0
 50 3 3 226 0 0 0 0
-0 0 100
+0 0 100 100
 #97930
 foul smelling potion~
 &+ma &+gfoul &+msmelling &+Mpotion&n~
@@ -338,7 +338,7 @@ foul smelling potion~
 ~
 10 15 3 0 7 0 0 8404993 64 0 0
 40 201 355 356 0 0 0 0
-0 0 100
+0 0 100 100
 #97931
 collar infinite flames~
 &+Lthe &+rco&+Rll&+rar &+Lof &+rInf&+Rin&+rite &+rFl&+Ram&+res&n~
@@ -346,7 +346,7 @@ collar infinite flames~
 ~
 9 15 3 0 7 0 1 16389 64 0 0
 0 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 collar infinite flames~
 &+rAs you look at the collar, you are amazed to find that it is composed
@@ -363,7 +363,7 @@ collar perpetual frost~
 ~
 9 15 3 0 7 0 1 16389 64 0 0
 0 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 collar perpetual frost~
 &+bAs you look at the collar, you are amazed to see that is composed entirely
@@ -380,7 +380,7 @@ milky potion _id_~
 ~
 10 10 2 0 11 0 2097153 8404993 64 0 0
 41 9 1 3 0 0 0 0
-1 100000 100 32768 0 0 0
+1 100000 100 100 32768 0 0 0
 #97934
 potion thick green sludge~
 &+ga potion of thick &+Ggreen &+gsludge&n~
@@ -388,7 +388,7 @@ potion thick green sludge~
 ~
 10 10 2 0 11 0 0 8404993 64 0 0
 46 161 356 294 0 0 0 0
-1 100000 100 32768 0 0 0
+1 100000 100 100 32768 0 0 0
 #97935
 vial strange time~
 &+La &+mvi&+Mal &+Lof liquid &+mti&+Mme&n~
@@ -396,7 +396,7 @@ vial strange time~
 ~
 10 10 2 0 11 0 0 8404993 64 0 0
 56 2 9 2 0 0 0 0
-1 100000 100 32768 0 0 0
+1 100000 100 100 32768 0 0 0
 #97936
 staff broken time~
 &+Lthe &+msta&+Mff &+Lof broken &+mti&+Mme&n~
@@ -404,7 +404,7 @@ staff broken time~
 ~
 4 23 2 0 11 0 0 16385 64 0 0
 46 10 10 102 0 0 0 0
-1 100000 100 16 0 0 0
+1 100000 100 100 16 0 0 0
 A
 24 -5
 A
@@ -416,7 +416,7 @@ elixir potent drugs~
 ~
 10 15 3 0 7 0 0 8388609 0 0 0
 41 355 201 0 0 0 0 0
-0 0 100
+0 0 100 100
 #97938
 potion cleansing~
 &+Wa potion of &+ccleansing&n~
@@ -424,7 +424,7 @@ potion cleansing~
 ~
 10 15 3 0 7 0 8192 2049 64 0 0
 35 200 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 #97939
 golden saddle studded aquamarines~
 &+Ya golden saddle &N&+ys&Nt&N&+yu&Ndd&+ye&Nd with &+Caqua&+Bmar&+Cines&N~
@@ -432,7 +432,7 @@ golden saddle studded aquamarines~
 ~
 9 24 4 0 11 0 0 16777217 64 0 0
 10 0 0 4 0 0 0 0
-2 108223 100
+2 108223 100 100
 E
 golden saddle studded aquamarines~
    &+YThis excellently-made golden saddle has several large &+Caquamarines
@@ -449,7 +449,7 @@ glorious quiver heavenly flight~
 ~
 30 50 2 0 7 0 67379201 1048577 66 0 0
 120 5 1 5 0 0 0 0
-0 233220 100 134217728 0 0 0
+0 233220 100 100 134217728 0 0 0
 E
 glorious quiver heavenly flight~
    &+WThis glorious white quiver is covered in brilliant angel feathers.
@@ -466,7 +466,7 @@ arrow heavenly light~
 ~
 6 6 3 0 15 0 262145 16385 66 0 0
 4 3 6 1 0 0 0 0
-0 6999 100
+0 6999 100 100
 E
 arrow heavenly light~
    &+WThis brilliant white arrow has a &+Yburning tip &+Wand rests on a tiny

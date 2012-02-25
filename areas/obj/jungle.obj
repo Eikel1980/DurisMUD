@@ -5,7 +5,7 @@ harrier egg~
 ~
 8 2 0 0 7 0 13312 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1000 100
+2 1000 100 100
 #67001
 black opal gem~
 &+La black opal&n~
@@ -13,7 +13,7 @@ black opal gem~
 ~
 27 26 0 50 7 0 5120 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 black opal gem~
 &+LThe black opal is really a very dark &+ggreen&n &+Lmottled with black and
@@ -26,7 +26,7 @@ black sapphire gem insight~
 ~
 27 33 0 50 7 0 5120 16385 64 0 0
 0 0 0 0 0 0 0 0
-2 10000 100
+2 10000 100 100
 A
 3 4
 A
@@ -38,7 +38,7 @@ round brown agate luckstone~
 ~
 27 11 0 50 7 0 5120 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 A
 30 5
 #67004
@@ -48,7 +48,7 @@ bronze circlet~
 ~
 9 20 0 0 7 0 9216 17 0 0 0
 3 4 1 3 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 bronze circlet~
 &+YThis bronze circlet is a thin strip of bronze set with a large topaz.&n

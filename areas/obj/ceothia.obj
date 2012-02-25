@@ -5,7 +5,7 @@ water fountain ceothia~
 ~
 17 38 10 0 15 100 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 water fountain ceothia~
    This large fountiain is filled with clear water.
@@ -20,7 +20,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -35,7 +35,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -50,7 +50,7 @@ eyepatch leather platinum~
 ~
 9 14 9 0 12 20 1155072 147457 64 0 0
 4 0 0 5 1 0 0 0
-1 2323 100
+1 2323 100 100
 E
 eyepatch leather platinum~
    Made by a skilled artisan, and ambued with a
@@ -71,7 +71,7 @@ dagger black steel~
 ~
 5 16 3 0 7 15 8192 8193 0 0 0
 2 1 5 11 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 dagger black steel~
    This small dagger is made from steel, its surface
@@ -89,7 +89,7 @@ badge moonstone~
 ~
 11 16 9 0 10 50 8433664 2113537 64 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 badge moonstone~
    This badge indicates the leaders rank amounst his
@@ -102,7 +102,7 @@ badge jade wyrm~
 ~
 11 16 9 0 10 50 8433664 2113537 64 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 badge jade wyrm~
    This badge indicates a leader to the rest of the
@@ -115,7 +115,7 @@ sword bluestone~
 ~
 5 11 9 0 13 10 4202496 24577 64 0 0
 13 2 7 3 0 0 0 0
-10 1212 100
+10 1212 100 100
 E
 sword bluestone~
    Carved from bluestone, this great sword has been
@@ -134,7 +134,7 @@ sword longsword steel~
 ~
 5 16 3 0 8 0 8192 24577 0 0 0
 5 1 8 3 0 0 0 0
-5 1212 100
+5 1212 100 100
 E
 sword longsword steel~
    This steel sword has been blackened using some type
@@ -153,7 +153,7 @@ chain golden pendant bluestone~
 ~
 9 24 9 0 13 50 2105344 16389 64 0 0
 10 0 0 3 1 0 0 0
-2 1212 100
+2 1212 100 100
 E
 chain golden pendant bluestone~
    This finely crafted gold chain supports a bluestone
@@ -171,7 +171,7 @@ badge red shadow~
 ~
 11 16 9 0 10 50 8433664 2113537 64 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 badge moonstone~
    This badge indicates the leaders rank amounst his
@@ -184,7 +184,7 @@ badge violet death~
 ~
 11 16 9 0 10 50 8433664 2113537 64 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 badge moonstone~
    This badge indicates the leaders rank amounst his
@@ -197,7 +197,7 @@ pipes reed instrument~
 ~
 32 42 3 0 12 50 3153920 16385 64 0 0
 184 56 1000 40 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 pipes reed~
    Made from reeds these pipes have been polished into
@@ -217,7 +217,7 @@ badge thief ceothian~
 ~
 9 16 10 0 10 25 40960 2113537 64 0 0
 1 0 0 3 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 badge thief ceothian~
    This dark colored badge signifies a member of the
@@ -235,7 +235,7 @@ bracelet black leather~
 ~
 9 14 9 0 12 10 1089536 20481 64 0 0
 5 0 0 4 1 0 0 0
-0 1212 100
+0 1212 100 100
 E
 bracelet black leather~
    This thick bit of leather has been dyed black, itself
@@ -254,7 +254,7 @@ key bluestone~
 ~
 18 11 10 0 15 100 8429568 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key bluestone~
    This key has been carved from bluestone, its use
@@ -267,7 +267,7 @@ portal shimmering~
 ~
 25 1 10 0 15 100 1 0 64 0 0
 81100 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal shimmering~
    This shimmering portal rises up the ground, yet does
@@ -282,7 +282,7 @@ belt black leather ruby buckle~
 ~
 9 14 9 0 12 20 2138112 18433 64 0 0
 10 0 0 4 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 belt black leather ruby buckle~
    This rather unremarkable black leather belt, has been
@@ -300,7 +300,7 @@ boots black leather gold~
 ~
 9 14 9 0 12 20 1056768 16449 64 0 0
 10 0 0 5 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 boots black leather gold~
    This pair of black leather boots have been made
@@ -319,7 +319,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -334,7 +334,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -349,7 +349,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -364,7 +364,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -379,7 +379,7 @@ sign~
 ~
 13 6 3 0 7 100 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    Made from a sturdy wood, this sign hangs in the air,
@@ -394,7 +394,7 @@ wagon merchant~
 ~
 15 6 10 0 7 100 0 0 0 0 0
 10000 15 80827 10000 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 wagon merchant~
    A large wooden wagon used to transport various
@@ -411,7 +411,7 @@ wooden cudgel~
 ~
 5 6 9 0 9 5 4202496 8193 64 0 0
 10 2 8 6 0 0 0 0
-5 342 100
+5 342 100 100
 E
 wooden cudgel~
    This wooden club is used to deal with those who are
@@ -430,7 +430,7 @@ crate oaken~
 ~
 12 15 4 0 7 1 8396800 1 0 0 0
 0 0 0 0 0 0 0 0
-50 1 100
+50 1 100 100
 E
 crate oaken~
    This large wooden crate has been constructed from
@@ -444,7 +444,7 @@ key tiny iron~
 ~
 18 15 9 0 7 10 8392704 16385 0 0 0
 0 15 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key tiny iron~
    This tiny key is made from iron, most likely fitting
@@ -457,7 +457,7 @@ copper curved dagger~
 ~
 5 21 3 0 8 10 16789776 8193 64 0 0
 2 2 4 11 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 copper curved dagger~
    This strange curved dagger has two sharp edges,
@@ -474,7 +474,7 @@ minotaur blackened eyepatch patch~
 ~
 9 15 3 0 7 100 3158016 131073 64 0 0
 5 0 0 5 1 0 0 0
-1 1212 100 536870912 0 0 0
+1 1212 100 100 536870912 0 0 0
 E
 minotaur blackened eyepatch patch~
    Worn as a sign of dominance, this eyepatch is granted
@@ -493,7 +493,7 @@ sword bluestone _noquest_~
 ~
 5 11 9 0 15 100 20979984 24577 64 0 0
 13 4 7 3 0 0 0 0
-1 1212 100 2 0 0 0
+1 1212 100 100 2 0 0 0
 E
 sword bluestone~
    Carved from bluestone, this great sword has been
@@ -512,7 +512,7 @@ glowing potion 53potion~
 ~
 10 15 3 0 7 0 8388609 1 0 0 0
 60 9 56 35 0 0 0 0
-0 0 100
+0 0 100 100
 A
 8 53
 #80832
@@ -522,7 +522,7 @@ key glowing~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key glowing~
 ~

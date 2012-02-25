@@ -5,7 +5,7 @@ A staff with a dark overwhelming sense of death and decay is here.~
 ~
 1 6 3 10 7 0 0 16385 64 0 0
 0 0 -1 0 0 0 0 0
-5 5000 100
+5 5000 100 100
 E
 shadow staff~
 This the staff of the kobold shaman from Gwark's settlement.  What
@@ -20,7 +20,7 @@ An enchanted ki-rin's horn is here collecting dust.~
 ~
 5 1 2 0 7 0 0 8193 0 0 0
 15 1 5 11 0 0 0 0
-6 20000 100
+6 20000 100 100
 E
 horn~
 The horn looks very much like a Ki-Rin's horn and glows softly with
@@ -38,7 +38,7 @@ A pair of strange boots sit on the floor rather correctly.~
 ~
 9 14 3 8 7 0 0 65 64 0 0
 10 6 1 3 0 0 0 0
-2 15000 100
+2 15000 100 100
 E
 strange boots~
 This is an odd pair of boots made from a black material.  There are
@@ -55,7 +55,7 @@ A loaf of dark bread lies here giving off a mouth-watering aroma.~
 ~
 19 5 2 2 7 0 0 16385 0 0 0
 28 0 0 0 0 0 0 0
-1 111 100
+1 111 100 100
 #1404
 cloak mottled brown~
 &+ya mottled brown cloak&n~
@@ -63,7 +63,7 @@ A mottled brown cloak has been left here.~
 ~
 9 3 3 8 7 0 1024 1025 64 37883812 0
 7 9 1 3 0 0 0 0
-3 18000 100
+3 18000 100 100
 E
 cloak mottled brown~
 The cloak is worn and discolored from the test of time.  It looks like
@@ -80,7 +80,7 @@ A ring made of &+Wdazling, clear crystal&n has been left here.~
 ~
 11 8 1 1 7 0 0 16387 64 0 0
 0 0 0 0 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 ring crystal~
 The ring looks delicate, made completely of a natural, clear crystal.
@@ -98,7 +98,7 @@ A sword made of bronze, crafted with much care, lies here.~
 ~
 5 20 3 10 7 0 0 8193 0 4198895524 0
 9 1 8 3 0 0 0 0
-14 650 100
+14 650 100 100
 E
 bronze sword~
 The sword is fairly small yet broad, with a thick leather handle.  It
@@ -113,7 +113,7 @@ A bracelet made of &+csilver&n strands woven together lies here on the ground.~
 ~
 9 22 3 3 7 0 0 4097 64 0 0
 2 11 24 3 0 0 0 0
-1 23000 100
+1 23000 100 100
 E
 finely woven bracelet silver~
 The bracelet is made of very thin strands of silver woven about
@@ -131,7 +131,7 @@ A large girth of thick rawhide lies here on the ground.~
 ~
 9 13 3 0 7 0 0 2049 0 0 0
 5 0 0 3 0 0 0 0
-4 1000 100
+4 1000 100 100
 E
 rawhide girth~
 It's a girth of sturdy rawhide which looks like it would fit
@@ -144,7 +144,7 @@ A tiny dagger has been tossed here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 3 11 0 0 0 0
-3 400 100
+3 400 100 100
 E
 dagger tiny~
 This looks like an ordinary dagger only with a small blade and wood handle.
@@ -158,7 +158,7 @@ A chicken egg lies here slightly rolled over on its side.~
 ~
 19 5 2 2 7 0 0 1 0 0 0
 5 0 0 0 0 0 0 0
-1 23 100
+1 23 100 100
 #1411
 hammer black adamantite~
 &+La hammer of black adamantite~
@@ -166,7 +166,7 @@ A hammer made of a solid looking metal lies here gleaming wickedly.~
 ~
 5 19 3 8 7 0 4194304 8193 64 4165209604 0
 4 2 8 6 0 0 0 0
-12 10000 100
+12 10000 100 100
 E
 hammer black adamantite~
 The hammer looks powerfully strong, but unwieldy as a weapon.
@@ -185,7 +185,7 @@ A bottle of amber liquid sits here waiting to be picked up.~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 10 10 5 0 0 0 0 0
-1 39 100
+1 39 100 100
 E
 bottle kobold whiskey~
 This is the finest whiskey of the settlement: Grumbiter's black label.
@@ -198,7 +198,7 @@ A cup of dark liquid that smells positively vile sits here.~
 ~
 17 9 0 0 7 0 0 1 0 0 0
 10 10 11 1 0 0 0 0
-1 33 100
+1 33 100 100
 E
 cup marshwater tea~
 This cup of tea is favored by the kobolds, but its bubbling contents may
@@ -212,7 +212,7 @@ A pair of boots which have an oily surface to them sit here.~
 ~
 22 40 3 8 7 0 0 65 64 0 0
 0 0 0 0 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 boots water walking~
 The boots have a slick, oily like surface to them, and possess some
@@ -229,7 +229,7 @@ A key made entirely of quartz lies here on the ground, shining in the light.~
 ~
 18 16 1 1 7 0 8425504 1 64 0 0
 1457 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 quartz key~
 The key was made by some magical force, carefully crafting a piece of
@@ -242,7 +242,7 @@ A large desk, unadorned and fairly free of clutter, sits here.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 4000 15 1417 100 0 0 0 0
-4000 1 100
+4000 1 100 100
 #1417
 bonefinger key~
 &+Wa bonefinger key&n~
@@ -250,7 +250,7 @@ A key made out of the finger of a humanoid bone lies here.~
 ~
 18 16 1 1 7 0 8425472 1 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #1418
 stack gold coins~
 a stack of &+ygold&n coins~
@@ -258,7 +258,7 @@ A stack of gold coins glitters here, catching the light of the room.~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 12 0 0 0 0 0
-20 1 100
+20 1 100 100
 #1419
 iron key~
 &+La key made of heavy iron~
@@ -266,7 +266,7 @@ A heavy-looking iron key lies here on the floor.~
 ~
 18 15 1 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-3 100 100
+3 100 100 100
 E
 iron key~
 The key is made of crudely formed iron, but is fairly thick, and quite heavy
@@ -279,7 +279,7 @@ A &+Ygiant wooden fence&n stands here, blocking travel to the north.~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 wooden fence~
 The fence is made out of trunks of trees bound together with heavy
@@ -297,7 +297,7 @@ A &+Ygiant wooden fence&n stands here, blocking travel to the north.~
 ~
 29 6 0 50 7 0 0 0 0 0 0
 341 1463 0 1 0 0 0 0
-1001 10 100
+1001 10 100 100
 E
 wooden fence~
 The fence is made out of trunks of trees bound together with heavy
@@ -320,7 +320,7 @@ A &+Ywobbly sign&n is planted here, barely standing up by a thin wooden pole.~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 wobbly sign~
 The sign barely reads in common:
@@ -353,7 +353,7 @@ A rusty saw lies here slowly corroding away to the elements.~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 9 1 2 3 0 0 0 0
-2 10 100
+2 10 100 100
 E
 saw~
 The saw is rusty and looks to have zero value to you.  Just leave it alone.
@@ -367,7 +367,7 @@ A big flashy sign!~
 ~
 13 15 3 10 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 flashy sign~
 
@@ -380,7 +380,7 @@ A &+Ygiant wooden fence&n stands here, blocking travel to the south.~
 ~
 29 6 0 50 7 0 0 0 0 0 0
 341 1469 2 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 plank~
 It looks loose enough to tug off.  One good tug would rip the
@@ -403,7 +403,7 @@ A &+rtorch&n is here fastened to the tunnel wall, &+yflickering&n in the dark.~
 ~
 13 6 3 8 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 torch flickering~
 The torch is made out of wood with a thick coating of wood pitch on the
@@ -417,7 +417,7 @@ A &+rtorch&n is here fastened to the tunnel wall, &+yflickering&n in the dark.~
 ~
 29 6 0 50 7 0 0 0 0 0 0
 340 1449 1 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 torch flickering~
 The torch is made out of wood with a thick coating of wood pitch on
@@ -433,7 +433,7 @@ A shiny loop of beaten gold lies here on the ground.~
 ~
 9 24 0 0 7 0 0 524289 64 0 0
 1 14 0 3 0 0 0 0
-1 34000 100
+1 34000 100 100
 E
 gold loop~
 The loop of gold looks like it would fit perfectly through a pierced
@@ -450,7 +450,7 @@ A dagger carved from the thighbone of some humanoid lies here.~
 ~
 5 10 2 3 7 0 0 8193 0 4194697632 0
 2 1 5 11 0 0 0 0
-3 1 100
+3 1 100 100
 E
 carved bone dagger~
 The dagger looks positively evil.  Part of a thigh bone of some humanoid
@@ -467,7 +467,7 @@ A jerkin of shoddily cured leather lies here on the ground.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 6 3 1 3 0 0 0 0
-2 300 100
+2 300 100 100
 #1431
 red gem jeweled eyes demon~
 &+Rthe gem eyes of the demon statue&n~
@@ -475,7 +475,7 @@ A pair of &+Rred gems&n lie here on the ground.~
 ~
 8 26 0 0 7 0 4096 131073 64 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 red gem gems eyes demon~
 The gems are a sparkling, deep red.  They are all that remains of the
@@ -490,7 +490,7 @@ A pair of &+csilver&n spectacles, fitted with lenses of &+Rred gems&n lie here.~
 ~
 11 22 0 0 7 0 0 131073 64 0 0
 0 0 0 1 0 0 0 0
-1 59000 100
+1 59000 100 100
 E
 silver gemmed spectacles specs~
 The spectacles seem to have a magical power about them.  The thin
@@ -508,7 +508,7 @@ The &+csilver wire frames&n of some broken pair of spectacles lie here.~
 ~
 13 22 0 0 7 0 0 131073 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silver wire frames specs spectacles~
 Well, the lens busted on them.  They're broken and more than a bit
@@ -522,7 +522,7 @@ A key made of crumbly stone lies here among the dustballs.~
 ~
 18 11 1 1 7 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 #1435
 stone sarcophagus~
 a stone sarcophagus~
@@ -530,7 +530,7 @@ The stone sarcophagus of Tyxru lies here on a raised platform.~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 10000 15 1434 100 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 sarcophagus~
 The sarcophagus is a gigantic coffin of stone lying in the center of
@@ -543,7 +543,7 @@ A &+Wstone tablet&n with strange writing lies here on the ground.~
 ~
 13 11 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-20 1 100
+20 1 100 100
 E
 ancient stone tablet~
 The ancient tablet reads, in symbols which you cannot readily understand:
@@ -574,7 +574,7 @@ A large, leatherbound writing book lies here face down on its spine.~
 ~
 13 28 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 100 100
+3 100 100 100
 E
 journal language kobold~
 There isn't much left readible of the journal.  Most of the pages have
@@ -603,7 +603,7 @@ A pile of crumbled stone lies here in a large heap.~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 1000 0 -1 100 0 0 0 0
-200 1 100
+200 1 100 100
 #1439
 crumpled note~
 a crumpled note~
@@ -611,7 +611,7 @@ A crumpled piece of paper sits here on the floor.~
 ~
 13 29 1 1 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 crumpled note~
 The note reads in sketchily written common:
@@ -629,7 +629,7 @@ A crisp piece of parchment lies here on the floor.~
 ~
 13 29 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 crisp parchment~
 The parchment reads in chicken-scratch common:
@@ -646,7 +646,7 @@ A pair of bright silver plated leg plates lie here on the ground.~
 ~
 9 22 3 8 7 0 0 33 0 4165209604 0
 5 5 1 3 0 0 0 0
-7 30000 100
+7 30000 100 100
 E
 silver plated leg plates~
 Shiny leg plates, imbued with magical powers of the kobold priest.
@@ -662,7 +662,7 @@ Some silver-plated arm plates lie here scattered on the ground.~
 ~
 9 22 3 8 7 0 0 257 0 4165209604 0
 6 8 1 3 0 0 0 0
-7 30200 100
+7 30200 100 100
 E
 silver plated arm plates~
 Shiny arm plates, imbued with magical powers of the kobold priest.
@@ -678,7 +678,7 @@ A black death mask of the high kobold priest lies here on the ground.~
 ~
 9 15 3 3 7 0 0 262145 64 0 0
 2 13 1 3 0 0 0 0
-2 20000 100
+2 20000 100 100
 E
 mask death black~
 Worn by the high kobold priest of the dark temple, it is used during
@@ -696,7 +696,7 @@ A &+ygolden&n &+rring&n which has a lustrous &+Rred shine&n to it lies here on t
 ~
 9 24 1 1 7 0 32 3 64 0 0
 5 1 0 3 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 lustrous golden red ring~
 The ring is made out of gold but for some reason when the light hits it
@@ -715,7 +715,7 @@ A beaten copper bowl of steaming &+Rblood&n stands here on a tripod.~
 ~
 17 21 0 0 7 0 0 1 0 0 0
 30 30 13 1 0 0 0 0
-30 1000 100
+30 1000 100 100
 #1446
 treasure~
 the treasure of Tyxru's tomb~
@@ -723,7 +723,7 @@ The treasure of Tyxru lies here scattered within the coffin.~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 435 239 136 29 0 0 0 0
-200 1 100
+200 1 100 100
 #1447
 nugget silver~
 a small nugget of &+csilver&n~
@@ -731,7 +731,7 @@ A small nugget of silver lies here glittering.~
 ~
 8 22 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-2 90 100
+2 90 100 100
 E
 nugget silver~
 The nugget of silver is pretty small, but might fetch a fair price if
@@ -744,7 +744,7 @@ A large block of natural silver lies here at your feet.~
 ~
 8 22 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-20 1990 100
+20 1990 100 100
 E
 large block silver~
 The block of natural silver is quite massive.  If given to the right
@@ -758,7 +758,7 @@ An ironshod mining cart sits here on the tracks of the tunnel.~
 ~
 15 15 3 0 7 0 0 1 0 0 0
 1000 0 -1 100 0 0 0 0
-1200 1 100
+1200 1 100 100
 E
 ironshod mining cart~
 The cart looks extremely old, and extremely heavy.
@@ -770,7 +770,7 @@ A pile of mining equipment lies here scattered on the earthen floor.~
 ~
 13 15 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-100 1 100
+100 1 100 100
 E
 pile junk~
 The pile of mining equipment is one big mess.  No one has taken the time
@@ -785,7 +785,7 @@ A &+Cshiny, silver shield&n lies here on the ground attracting your attention.~
 ~
 37 22 3 15 7 0 0 513 64 4165209604 0
 2 1 3 135 3 0 0 0
-11 20000 100
+11 20000 100 100
 E
 silver plated shield~
 The shield is plated in a shiny coat of silver... bonded with forge
@@ -805,7 +805,7 @@ A large talon lies here on the ground, &+mglowing&n with an errie light.~
 ~
 9 16 0 0 7 0 397440 16513 64 0 0
 5 7 1 3 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 clawed talon demon tako~
 The talon is a glovelike sheath which can either be worn or held with
@@ -823,7 +823,7 @@ A large golden rod lies here on the ground.~
 ~
 5 16 3 4 7 0 4464640 8193 64 0 0
 10 1 8 6 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 rod rulership tyxru~
 The rod is a massive pole of golden steel with many runes running up
@@ -842,7 +842,7 @@ A piece from the rod of rulership, broken at both ends, lies here.~
 ~
 8 16 2 4 7 0 262144 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 rod piece~
 The piece of the rod is approximately a foot and a half in length.  The
@@ -859,7 +859,7 @@ A piece from the rod of rulership, broken at both ends, lies here.~
 ~
 8 16 2 4 7 0 262144 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 rod piece~
 The piece of the rod is approximately a foot and a half in length.  The
@@ -876,7 +876,7 @@ A broken off end piece of the rod of rulership, lies here.~
 ~
 8 16 2 4 7 0 262144 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 rod piece~
 The piece of the rod is approximately a foot and a half in length.  The
@@ -893,7 +893,7 @@ A broken off end piece of the rod of rulership, lies here.~
 ~
 8 16 2 4 7 0 262144 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 rod piece~
 The piece of the rod is approximately a foot and a half in length.  The
@@ -910,7 +910,7 @@ A small orb sits here, glowing with a bright light.~
 ~
 1 16 1 2 7 0 8193 16385 64 0 0
 0 0 -1 0 0 0 0 0
-2 1000 100
+2 1000 100 100
 A
 18 2
 A
@@ -922,7 +922,7 @@ A &+Wstone tablet&n with strange writing lies here on the ground.~
 ~
 13 11 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-20 1 100
+20 1 100 100
 E
 ancient stone tablet~
 The tablet is broken off at the top cleanly, as if cracked in half.
@@ -952,7 +952,7 @@ scattered bones~
 ~
 13 10 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scattered bones~
    &+WA few large bones as well as numerous scattered bits lie here, left aging in this
@@ -965,7 +965,7 @@ torn drow chainmail shirt~
 ~
 9 22 3 0 10 0 0 9 64 0 0
 15 0 0 0 0 0 0 0
-1 15434 100
+1 15434 100 100
 E
 torn drow chainmail shirt~
    &+LAlthough aged signifigantly and long-since torn, this once-glorious
@@ -982,7 +982,7 @@ dull spider bracelet~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dull spider bracelet~
    &+LThis bracelet is in the shape of a large spider with legs wrapping
@@ -1000,7 +1000,7 @@ a freshly slain human corpse~
 ~
 15 2 3 50 4 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-100 1 40
+100 1 40 100
 E
 corpse remains~
 &+LThis corpse is rather fresh - no older than three days - and the decomposition
@@ -1014,7 +1014,7 @@ a weapon rack~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 50 5 0 50 0 0 0 0
-30 1 100
+30 1 100 100
 E
 rack~
 &+cAn iron rack for holding weapons - a standard equipment in a smithy.&n
@@ -1026,7 +1026,7 @@ large runestone~
 ~
 13 11 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large runestone~
 &+yThis very large runestone has some extremely odd markings on it. Unfortunately, most

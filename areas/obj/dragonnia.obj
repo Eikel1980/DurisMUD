@@ -5,7 +5,7 @@ nothing~
 ~
 13 1 0 0 7 0 8 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 nothing~
    This looks like a whole lot of nothing.
@@ -17,7 +17,7 @@ A key with red and yellow ornamentations has been dropped here.~
 ~
 18 16 1 1 7 0 8392744 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red green~
 It looks like an old heavy key with beautiful ornaments on it.
@@ -29,7 +29,7 @@ A key with black and blue ornamentations has been dropped here.~
 ~
 18 16 1 1 7 0 8392744 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red green~
 It looks like an old heavy key with beautiful ornaments on it.
@@ -41,7 +41,7 @@ A key with black and white ornamentations has been dropped here.~
 ~
 18 16 1 1 7 0 8392744 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red green~
 It looks like an old heavy key with beautiful ornaments on it.
@@ -53,7 +53,7 @@ A key with white and blue ornamentations has been dropped here.~
 ~
 18 16 1 1 7 0 8392744 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red green~
 It looks like an old heavy key with beautiful ornaments on it.
@@ -65,7 +65,7 @@ A key with black and blue ornamentations has been dropped here.~
 ~
 18 16 1 1 7 0 8392744 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red green~
 It looks like an old heavy key with beautiful ornaments on it.
@@ -77,7 +77,7 @@ A plate made of &+gdragon scale &nhas been dropped here.~
 ~
 9 35 0 0 7 0 8192 9 0 0 0
 27 3 1 3 0 0 0 0
-15 50000 100
+15 50000 100 100
 E
 plate scale~
 This is a plate made of dragon scales. It's used to fight against them as
@@ -94,7 +94,7 @@ cloak bodycloak dragon scale~
 ~
 9 35 3 8 7 0 8192 1025 0 0 0
 15 9 1 3 0 0 0 0
-9 18750 100
+9 18750 100 100
 E
 cloak scale~
 This is a cloak entirely made of dragon scales tied together as a sort of
@@ -111,7 +111,7 @@ The &+Wclaw of a &+gdemodragon &nhas been dropped here.~
 ~
 5 10 3 5 7 0 8192 8193 0 0 0
 2 4 4 3 0 0 0 0
-18 19000 100
+18 19000 100 100
 E
 claw demodragon's demodragon~
 This is a large claw with 5 VERY pointed nails large enough to cut anyone
@@ -128,7 +128,7 @@ staff lead dispel~
 ~
 4 16 3 10 7 0 8 16385 64 0 0
 24 1 1 22 0 0 0 0
-10 3000 100
+10 3000 100 100
 E
 staff lead dispel~
 This staff is entirely made of lead and looks very heavy. It's too big for
@@ -145,7 +145,7 @@ staff copper~
 ~
 4 21 3 10 7 0 8 16385 64 0 0
 15 1 1 27 0 0 0 0
-2 4000 100
+2 4000 100 100
 E
 copper staff harm~
 The bright red color of this staff tells you it is made of copper.  It's
@@ -162,7 +162,7 @@ claw brotherhood~
 ~
 5 10 3 5 10 0 8192 8193 64 0 0
 2 2 3 11 0 0 0 0
-15 15000 100
+15 15000 100 100
 E
 claw brotherhood~
 This is a large claw with large nails sharp enough to cut you to pieces.
@@ -178,7 +178,7 @@ claw master~
 ~
 5 10 3 5 7 0 8192 8193 64 0 0
 19 4 5 3 0 0 0 0
-22 30000 100
+22 30000 100 100
 E
 claw master~
 This is a huge claw with five pointed nails and looks like a dangerous and
@@ -195,7 +195,7 @@ A bracelet made of &+Wma&+Lr&+Wbl&+Le&n has been dropped here.~
 ~
 9 38 3 3 7 0 0 4097 64 0 0
 10 11 24 3 0 0 0 0
-4 19000 100
+4 19000 100 100
 E
 marble bracelet~
 This bracelet feels as if it were made exactly for your wrist.  It is made
@@ -212,7 +212,7 @@ whip black shiny~
 ~
 5 13 3 0 7 0 0 8193 66 0 0
 14 5 4 2 0 0 0 0
-10 20000 100
+10 20000 100 100
 E
 black whip~
 This whip is made of no element you have known.  It's totally black and
@@ -229,7 +229,7 @@ fang dragon~
 ~
 5 10 3 0 10 0 9216 8193 66 8515584 0
 2 2 8 11 0 0 0 0
-11 35000 100
+11 35000 100 100
 E
 fang dragon~
 It's made of ivory and seeing how big it is you can imagine how big the
@@ -246,7 +246,7 @@ trident tooth~
 ~
 5 10 3 0 7 0 9216 8193 66 8515584 0
 18 3 5 0 0 0 0 0
-15 19000 100 524288 0 0 0
+15 19000 100 100 524288 0 0 0
 E
 trident tooth~
 It is made of ivory and was carved from the teeth of a huge dragon.
@@ -262,7 +262,7 @@ helmet spiked bronze~
 ~
 9 20 3 10 7 0 8320 17 2 0 0
 12 4 1 4 1 0 0 0
-9 20000 100
+9 20000 100 100
 E
 spiked helmet bronze~
 This helmet is made of pure bronze with many wicked-looking spikes coming
@@ -279,7 +279,7 @@ plates arm spiked bronze~
 ~
 9 20 3 8 7 0 0 257 0 0 0
 12 8 1 3 1 0 0 0
-11 20000 100
+11 20000 100 100
 E
 plates arm spiked bronze~
 These arm plates are made from pure bronze and have many spikes on them.
@@ -295,7 +295,7 @@ stone magma~
 ~
 8 11 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 30000 100
+3 30000 100 100
 E
 magma stone~
 This stone was taken out of the living fire.  It has quite a few colors
@@ -312,7 +312,7 @@ belt golden~
 ~
 9 24 3 3 7 0 33792 2049 0 37883812 0
 8 0 0 3 0 0 0 0
-6 20000 100
+6 20000 100 100
 E
 belt golden~
 This belt is made from tiny golden rings linked together.
@@ -328,7 +328,7 @@ plate golden breast~
 ~
 9 24 0 0 7 0 1024 9 64 96071707 0
 75 3 1 3 0 0 0 0
-10 100000 100 36 0 0 0
+10 100000 100 100 36 0 0 0
 E
 plate golden breast~
 This is a beautiful piece of armor made from solid pure gold.  Although it
@@ -346,7 +346,7 @@ bracelet golden polished~
 ~
 9 24 3 3 7 0 0 4097 66 0 0
 9 11 24 3 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 bracelet golden polished~
 This is a bracelet made of pure gold.  It has been polished to perfection and
@@ -363,7 +363,7 @@ totem ancient~
 ~
 34 35 3 10 15 100 268436480 16385 64 256 0
 63 0 0 0 0 0 0 0
-3 68000 100 524288 0 0 0
+3 68000 100 100 524288 0 0 0
 E
 totem~
 The staff is made of magnesium.  It's about 3 feet long and you notice a word
@@ -380,7 +380,7 @@ wand steel~
 ~
 3 16 2 4 7 0 0 16385 64 0 0
 51 1 1 263 0 0 0 0
-5 3000 100
+5 3000 100 100
 E
 steel wand fire fireball~
 This wand is a long stick about 5 feet long.  You see a symbol on it it
@@ -400,7 +400,7 @@ bracelet chrome~
 ~
 9 16 3 3 7 0 0 4097 64 0 0
 15 11 24 3 0 0 0 0
-4 19000 100
+4 19000 100 100
 E
 chrome bracelet~
 This is a bracelet made from pure chrome.  It is a beautiful ornament for
@@ -417,7 +417,7 @@ A dragon scale robe has been dropped here by someone.~
 ~
 9 3 3 8 7 0 8192 1025 0 0 0
 10 9 1 3 0 0 0 0
-9 10000 100
+9 10000 100 100
 E
 robe~
 This is a robe made from large dragon scales joined together by a red belt.
@@ -433,7 +433,7 @@ longsword sword sentinel~
 ~
 5 16 3 10 7 0 9216 8193 66 87556123 0
 5 2 6 3 0 0 0 0
-9 15000 100 32 0 0 0
+9 15000 100 100 32 0 0 0
 E
 longsword sword sentinel~
 This is a heavy longsword of a sentinel dragon or a chief of the dragons.
@@ -450,7 +450,7 @@ boots winged~
 ~
 9 2 3 8 7 0 8192 65 64 0 0
 9 6 1 3 0 0 0 0
-9 25000 100 134217728 0 0 0
+9 25000 100 100 134217728 0 0 0
 E
 winged boots~
 This is a very strange pair of boots with a small wing on the side of each
@@ -468,7 +468,7 @@ A &+rcolorful&N &+gstone&N has been dropped on the ground here.~
 ~
 8 11 2 0 8 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-9 9000 100
+9 9000 100 100
 E
 red green stone~
 This stone is a beautiful ornament for your hand.
@@ -484,7 +484,7 @@ plates leg spiked bronze~
 ~
 9 20 3 8 7 0 0 33 64 0 0
 8 5 1 3 0 0 0 0
-9 19000 100
+9 19000 100 100
 E
 plates leg spiked bronze~
 These plates are made from pure bronze have very sharp spikes on them and
@@ -501,7 +501,7 @@ axe mystic dragonkind~
 ~
 5 35 3 8 15 100 301990168 8193 64 0 0
 1 5 5 3 0 0 0 0
-2 9000000 100
+2 9000000 100 100
 E
 mystic axe~
 This is a long heavy axe made from magic elements that makes it a very
@@ -519,7 +519,7 @@ cloak white shimmering~
 ~
 9 3 3 8 7 0 8192 1025 0 0 0
 14 9 1 3 0 0 0 0
-9 12000 100 0 0 0 83886080
+9 12000 100 100 0 0 0 83886080
 E
 cloak white shimmering~
 This is a fine cloak made of a material known only to the dragons of
@@ -536,7 +536,7 @@ mace black dull~
 ~
 5 16 3 8 7 0 1032 8193 0 33685924 0
 6 6 3 6 0 0 0 0
-16 9000 100
+16 9000 100 100
 E
 mace black dull~
 This is an entirely black mace with six tentacles tied together. It has a
@@ -553,7 +553,7 @@ treasure golden~
 ~
 20 24 1 0 7 0 4096 1 0 0 0
 0 0 7500 1000 0 0 0 0
-10 900000 100
+10 900000 100 100
 E
 golden treasure~
 It looks very valuable.
@@ -565,7 +565,7 @@ A strange warhammer has been tossed on the ground here.~
 ~
 5 11 3 8 7 0 1024 24577 0 33685920 0
 4 2 5 6 0 0 0 0
-7 9000 100
+7 9000 100 100
 E
 warhammer strange war hammer~
 This is a warhammer with a strange form.  It is made entirely from stone
@@ -582,7 +582,7 @@ A &+Wgleaming &nplatinum ring has been dropped here carelessly.~
 ~
 9 25 1 1 7 0 1024 3 64 46305188 0
 10 1 0 3 0 0 0 0
-9 190000 100
+9 190000 100 100
 E
 platinum ring~
 This is a very large ring especially for a human.  It is made from solid
@@ -599,7 +599,7 @@ hammer black~
 ~
 5 16 3 8 7 0 1024 8193 0 33685920 0
 4 3 4 6 0 0 0 0
-9 9000 100
+9 9000 100 100
 E
 black hammer~
 A large hammer as black as the night and as cold as ice.
@@ -615,7 +615,7 @@ A key with red and green ornamentations has been dropped here.~
 ~
 18 16 1 1 7 0 8388616 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red green~
 It looks like an old heavy key with beautiful ornaments on it.
@@ -627,7 +627,7 @@ emerald~
 ~
 8 32 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 100000 100
+3 100000 100 100
 E
 emerald~
 It looks like a fine jewel.
@@ -639,7 +639,7 @@ sapphire~
 ~
 8 33 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 60000 100
+3 60000 100 100
 E
 sapphire~
 It looks like a fine jewel.
@@ -651,7 +651,7 @@ diamond~
 ~
 8 8 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 70000 100
+3 70000 100 100
 E
 diamond~
 It looks like a fine jewel.
@@ -663,7 +663,7 @@ A key of white marble and gold has been dropped here.~
 ~
 18 24 1 1 7 0 8392712 16385 0 0 0
 6838 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key gold white~
 This is a key made of gold and white marble.
@@ -675,7 +675,7 @@ chest golden goldenchest~
 ~
 15 24 5 50 7 0 8 0 0 0 0
 2000 29 6837 250 0 0 0 0
-1000 10000 100
+1000 10000 100 100
 E
 golden chest~
 It is a big chest made of pure gold and a strange white marble lock.
@@ -687,7 +687,7 @@ belt dragon scale~
 ~
 9 35 3 3 12 0 8192 2049 2 0 0
 10 10 0 3 0 0 0 0
-7 25000 100
+7 25000 100 100
 E
 belt dragon scale~
 It is a belt made of dragon scales tied together.
@@ -703,7 +703,7 @@ rod cleric's clerical~
 ~
 5 16 3 4 7 0 13312 8193 64 33685920 0
 10 3 4 6 0 0 0 0
-15 9000 100
+15 9000 100 100
 E
 rod~
 This is a cleric dragon rod which is a large stick of 6 feet long made of
@@ -720,7 +720,7 @@ A club made of steel is here.~
 ~
 5 16 3 8 7 0 0 8193 64 0 0
 10 3 3 6 0 0 0 0
-15 30000 100
+15 30000 100 100
 E
 club steel~
 This is a short stick of 1 feet long made of light steel. It looks like
@@ -737,7 +737,7 @@ The pole of the Bishop dragon is lying here.~
 ~
 5 16 3 0 7 0 1032 8193 64 33685924 0
 10 4 2 6 0 0 0 0
-19 19000 100
+19 19000 100 100
 E
 pole cleric's cleric~
 This is the largest pole you have seen in your life.  It is about 8 feet
@@ -754,7 +754,7 @@ shirt banded mail~
 ~
 9 16 3 8 7 0 8192 9 2 0 0
 18 3 1 3 0 0 0 0
-9 40000 100
+9 40000 100 100
 E
 mail shirt~
 This is a sleeveless shirt made of small bands tied together.  It looks like a
@@ -771,7 +771,7 @@ chalice teviros~
 ~
 8 24 0 0 12 0 270345 8404993 64 0 0
 0 0 0 0 0 0 0 0
--17 80000 100
+-17 80000 100 100
 E
 chalice teviros~
 This is a holy artifact for the dragons.  It was given to them by the god
@@ -788,7 +788,7 @@ ciborium teviros~
 ~
 8 16 0 0 12 0 270345 8404993 66 0 0
 0 0 0 0 0 0 0 0
--20 50000 100
+-20 50000 100 100
 E
 teviros ciborium~
 This is a holy artifact for the dragons.  It was given to them by the god
@@ -805,7 +805,7 @@ ring onyx~
 ~
 9 11 1 1 7 0 0 33554435 0 0 0
 7 0 0 3 0 0 0 0
-9 150000 100
+9 150000 100 100
 E
 ring onyx~
 This is a white onyx stone set in a polished golden ring with many strange
@@ -820,7 +820,7 @@ gloves golden~
 ~
 9 24 3 6 7 0 0 129 64 0 0
 5 7 6 3 0 0 0 0
-5 30000 100
+5 30000 100 100
 E
 golden gloves~
 These gloves have been forged by the dragons of Dragonnia from pure solid
@@ -838,7 +838,7 @@ A small green key has been dropped here.~
 ~
 18 16 1 1 7 0 8388616 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key green~
 It is a little key made of an unknown material.
@@ -850,7 +850,7 @@ candlestick ceremonial candle stick~
 ~
 1 22 0 0 10 0 8 16385 1 0 0
 0 0 -1 0 0 0 0 0
-4 25000 100
+4 25000 100 100
 E
 candlestick ceremonial candle stick~
 This is a simple candlestick made of quartz and it shines with its own light.
@@ -866,7 +866,7 @@ bracelet brass~
 ~
 9 17 3 3 7 0 0 4097 64 0 0
 9 11 24 3 0 0 0 0
-9 30000 100
+9 30000 100 100
 E
 bracelet brass~
 This is a beautiful solid brass bracelet with beautiful ornaments on it.
@@ -883,7 +883,7 @@ bracelet quartz~
 ~
 9 11 3 3 7 0 0 4097 64 4198895524 0
 10 11 24 4 0 0 0 0
-9 30000 100 0 28 0 0
+9 30000 100 100 0 28 0 0
 E
 quartz bracelet~
 This is a pearly quartz bracelet.  It looks quite old but still usable.
@@ -899,7 +899,7 @@ A big and heavy red key is lying here.~
 ~
 18 16 1 1 7 0 8388616 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key red~
 Its a very big key made of a red material that you can't identify.
@@ -911,7 +911,7 @@ A strange snake-headed white whip is lying on the ground.~
 ~
 5 13 3 0 7 0 8 8193 64 0 0
 14 4 3 3 0 0 0 0
-12 45000 100
+12 45000 100 100
 E
 white whip~
 This is a strange whip with six snake heads you realize that it is able
@@ -928,7 +928,7 @@ cloak red ornate~
 ~
 9 3 3 8 7 0 9216 1025 64 100794808 0
 10 9 1 3 0 0 0 0
-9 28000 100
+9 28000 100 100
 E
 cloak red ornate~
 This is an extravagantly ornate red cloak only made by the cleric dragons
@@ -945,7 +945,7 @@ key sanctum~
 ~
 18 16 1 1 7 0 8388616 16385 0 0 0
 6859 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key sanctum~
 This is the key to the Teviros sacred sanctum.  It is made of mystical
@@ -958,7 +958,7 @@ robe brown monk~
 ~
 9 3 3 5 14 0 9217 1025 64 9470016 0
 10 9 1 3 0 0 0 0
-1 36000 100 16 0 0 0
+1 36000 100 100 16 0 0 0
 E
 monk robe~
 This is a robe designed for the monk dragons.  It has the symbol of the
@@ -975,7 +975,7 @@ A shining metallic key has been dropped here.~
 ~
 18 16 1 1 7 0 8388616 16385 0 0 0
 2 0 0 0 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 key metallic shining~
 This is a shining key made of unknown materials.
@@ -987,7 +987,7 @@ bracelet golden glittering~
 ~
 9 24 3 3 7 0 1152 4097 64 46305252 0
 9 11 24 3 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 bracelet golden glittering~
 This bracelet is made of pure solid gold.  It shines as much as a lantern
@@ -1004,7 +1004,7 @@ sanctum sacred~
 ~
 15 16 3 0 7 0 8 0 0 0 0
 1000 15 6855 100 0 0 0 0
-500 10000 100
+500 10000 100 100
 E
 sanctum sacred teviros~
 This is the container where the most sacred items for the dragons are kept.
@@ -1018,7 +1018,7 @@ A big tree is here with a inscription on it.~
 ~
 12 6 5 0 7 0 8 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 inscription~
                ****       ****
@@ -1042,7 +1042,7 @@ A small unremarkable stone has been dropped here.~
 ~
 25 11 0 50 7 0 4096 16385 66 0 0
 6836 259 1 0 0 0 0 0
-18 10 100
+18 10 100 100
 E
 stone magical glowing~
 This is a small stone that irradiates a strong magical aura.

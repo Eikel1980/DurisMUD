@@ -4,8 +4,8 @@ pirate tough~
 &+wA &+rtough &+wlooking &+Lpirate&+w paces back and forth guarding the ship.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 1 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 1 0 -1
 55 0 0 1d1+14000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -15,8 +15,8 @@ pirate tough~
 &+wA &+btough &+wlooking &+Lpirate&+w paces back and forth guarding the ship.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 1 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 1 0 -1
 55 0 0 1d1+14000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -26,8 +26,8 @@ redbeard pirate admiral~
 &+rRe&+Rdbea&+rrd &+wthe &+Lpirate&+w charges to attack!&N
 ~
 ~
-1141254154 1 0 704749596 14528 0 0 0 S
-PT 0 256 -1
+1141254154 1 0 0 704749596 14528 0 0 0 S
+PT 0 256 0 -1
 60 0 0 1d1+28000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -37,8 +37,8 @@ bluebeard pirate~
 &+bBl&+Buebea&+brd &+wthe &+Lpirate&+w scratches his hook against the wall!&N
 ~
 ~
-1141254154 1 0 706322460 14528 0 0 0 S
-PT 0 8192 -1
+1141254154 1 0 0 706322460 14528 0 0 0 S
+PT 0 8192 0 -1
 60 0 0 1d1+28000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -48,8 +48,8 @@ war-hardened war hardened pirate~
 &+wA &+rwar&+w-&+rhardened &+Lpirate &+wstands guard here.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 1 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 1 0 -1
 56 0 0 1d1+18000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -59,8 +59,8 @@ war-hardened war hardened pirate~
 &+wA &+bwar&+w-&+bhardened &+Lpirate &+wstands guard here.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 1 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 1 0 -1
 56 0 0 1d1+18000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -70,8 +70,8 @@ commander pirate rough tall~
 &+wA tall &+rrough &+Lpirate&+w stands here planning his attack.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 256 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 256 0 -1
 59 0 0 1d1+20000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -81,8 +81,8 @@ commander pirate rough tall~
 &+wA tall &+brough &+Lpirate&+w stands here planning his attack.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 256 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 256 0 -1
 59 0 0 1d1+20000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -92,8 +92,8 @@ captain pirate tough~
 &+wA &+rtough &+wlooking &+Lpirate &+wstands here going over the ships logs.&N
 ~
 ~
-1141254154 1 0 704749596 14528 0 0 0 S
-PT 0 1 -1
+1141254154 1 0 0 704749596 14528 0 0 0 S
+PT 0 1 0 -1
 60 0 0 1d1+28000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -103,8 +103,8 @@ captain pirate tough~
 &+wA &+btough &+wlooking &+Lpirate &+wstands here going over the ships logs.&N
 ~
 ~
-1141254154 1 0 704749596 14528 0 0 0 S
-PT 0 1 -1
+1141254154 1 0 0 704749596 14528 0 0 0 S
+PT 0 1 0 -1
 60 0 0 1d1+28000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -114,8 +114,8 @@ pirate evil lieutenant~
 &+wA &+Lpirate &+wstands here with an &+revil &+wlook in his eye.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 256 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 256 0 -1
 59 0 0 1d1+20000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -125,8 +125,8 @@ pirate evil lieutenant~
 &+wA &+Lpirate &+wstands here with an &+revil &+wlook in his eye.&N
 ~
 ~
-67512330 1 0 704749596 14528 0 0 0 S
-PT 0 256 -1
+67512330 1 0 0 704749596 14528 0 0 0 S
+PT 0 256 0 -1
 59 0 0 1d1+20000 1d1+1
 0.0.0.0 0
 8 8 1
@@ -138,8 +138,8 @@ mysterious sage~
 &+c   This sage has wandered the realms, gathering various tidbits of information
 &+cwhich he then barters away in trade for more information and items.
 ~
-1073760458 0 0 839493788 47324 2097152 1056768 0 S
-PG 0 8704 4
+1073760458 0 0 0 839493788 47324 2097152 1056768 0 S
+PG 0 8704 0 4
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -150,8 +150,8 @@ An &+MIllithid&N stands here.
 ~
 &+M   This Illithid is big bad buff and doesn't like you.
 ~
-1141917770 1 0 2986942620 2050 22544384 8192 0 S
-MF 0 4 -1
+1141917770 1 0 0 2986942620 2050 22544384 8192 0 S
+MF 0 4 0 -1
 61 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -162,8 +162,8 @@ An &+MIllithid&N stands here.
 ~
 &+M   This guy is small but ohhhhh he hates you.
 ~
-1140869322 1 0 2986942620 2048 22544384 0 0 S
-MF 0 4 -1
+1140869322 1 0 0 2986942620 2048 22544384 0 0 S
+MF 0 4 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -173,8 +173,8 @@ warthehr ngolahn cleric~
 &+CWar&+cthe&+Lhr &+CNg&+cola&+Lhn &+cthe ancient dragonslayer eyes you curiously.&N
 ~
 ~
-33990730 384 0 268435464 0 0 0 0 S
-PH 0 32 -1
+33990730 384 0 0 268435464 0 0 0 0 S
+PH 0 32 0 -1
 61 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -184,8 +184,8 @@ telrar dwarf swordsmith~
 &+YTelrar the great dwarven swordsmith stands here looking at Tuktukr's wares.&N
 ~
 ~
-2122 384 0 12 14556 0 0 0 S
-PM 0 1 -1
+2122 384 0 0 12 14556 0 0 0 S
+PM 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -195,8 +195,8 @@ thief frail prisoner inmate~
 &+cA frail thief huddles here in the corner, fearing the old inmate.&N
 ~
 ~
-2188 0 0 524288 0 0 0 -1000 S
-PH 0 65536 -1
+2188 0 0 0 524288 0 0 0 -1000 S
+PH 0 65536 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -206,8 +206,8 @@ patron~
 &+LAn &+Wauction &+Whouse &+wpatron &+Lstands here bidding on items of interest.&N
 ~
 ~
-2074 0 0 8 0 0 0 0 S
-PH 0 1 -1
+2074 0 0 0 8 0 0 0 0 S
+PH 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -217,8 +217,8 @@ young man son~
 &+YA young man tinkers with a piece of metal here.&N
 ~
 ~
-2058 0 0 24 0 0 0 0 S
-PH 0 1 -1
+2058 0 0 0 24 0 0 0 0 S
+PH 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -228,8 +228,8 @@ spider gigantic~
 &+yA gigantic spider crawls here guarding his treasure.&N
 ~
 ~
-1073744078 1 0 8 0 0 0 0 S
-AS 0 1 6
+1073744078 1 0 0 8 0 0 0 0 S
+AS 0 1 0 6
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -239,8 +239,8 @@ tinkerer gartham~
 &+gA tall slim gartham stands here tinkering with some object.&N
 ~
 ~
-2122 1 0 0 0 0 0 0 S
-H 0 512 -1
+2122 1 0 0 0 0 0 0 0 S
+H 0 512 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -250,8 +250,8 @@ milerg druid~
 &+gMilerg, Grelim's brother, stands here.&N
 ~
 ~
-1174800394 0 0 0 0 0 0 1000 S
-CT 0 128 -1
+1174800394 0 0 0 0 0 0 0 1000 S
+CT 0 128 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -261,8 +261,8 @@ wolf white great~
 &+wA great &+Wwhite&+w wolf growls at you!&N
 ~
 ~
-1073752266 1 0 0 0 0 0 -1000 S
-A 0 1 -1
+1073752266 1 0 0 0 0 0 0 -1000 S
+A 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -272,8 +272,8 @@ ogre gnome ogre-gnome ogregnome~
 &+LAn impossible &+bOgre&+Y-&+RGnome&+L cross-breed stands here.
 ~
 ~
-2058 0 0 8 0 0 8192 0 S
-PO 0 0 4
+2058 0 0 0 8 0 0 8192 0 S
+PO 0 0 0 4
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -283,8 +283,8 @@ leper~
 &+YA &+Wleper&+Y stands here rotting away, playing with a yo-yo.&N
 ~
 ~
-2250 1 0 0 0 0 0 0 S
-PH 0 1 -1
+2250 1 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -294,8 +294,8 @@ derimous hunter master~
 &+mDeri&+Mmous&+m the king's master hunter&N stands here chatting with Ramous.
 ~
 ~
-33978443 128 0 8 0 0 0 1000 S
-PH 0 3 -1
+33978443 128 0 0 8 0 0 0 1000 S
+PH 0 3 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -305,8 +305,8 @@ antelope horned giant four four-horned fourhorned~
 &+wA &+Wgiant &+cfour&+w-&+yh&+Lo&+yr&+Ln&+ye&+Ld &+yan&+Ytel&+yope&N
 ~
 ~
-33831112 1 0 268435456 0 262144 0 -1000 S
-TK 0 8193 6
+33831112 1 0 0 268435456 0 262144 0 -1000 S
+TK 0 8193 0 6
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -316,8 +316,8 @@ lyle assistant~
 &+gLyle, Robyn's assistant stands here.&N
 ~
 ~
-401434 0 0 0 0 0 0 1000 S
-PL 0 128 -1
+401434 0 0 0 0 0 0 0 1000 S
+PL 0 128 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -327,8 +327,8 @@ abal apprentice~
 &+YAbal, Keen's apprentice stands here.&N
 ~
 ~
-8218 0 0 0 0 0 0 1000 S
-PL 0 2048 -1
+8218 0 0 0 0 0 0 0 1000 S
+PL 0 2048 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -338,8 +338,8 @@ jyarl truesteel~
 &+WJyarl Truesteel&+B stands guard next to his brother.&N
 ~
 ~
-405530 0 0 0 0 0 0 1000 S
-PB 0 8 -1
+405530 0 0 0 0 0 0 0 1000 S
+PB 0 8 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -349,8 +349,8 @@ ghalasax daughter dragon baby~
 &+GGha&+glas&+Gax, &+gdaughter of &+rAgh&+Ralha&+rssax &+gstands here growling.&N
 ~
 ~
-403562 1 0 40 0 0 0 -1000 S
-D 0 1 -1
+403562 1 0 0 40 0 0 0 -1000 S
+D 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -360,8 +360,8 @@ barbarian warrior hunter~
 &+BA tall barbarian warrior dragon hunter stands here against the wall.&N
 ~
 ~
-405594 0 0 3137972668 310493 85721216 43525160 1000 S
-PB 0 1 -1
+405594 0 0 0 3137972668 310493 85721216 43525160 1000 S
+PB 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -371,8 +371,8 @@ gnomish gnome mage hunter~
 &+RA short gnomish mage dragon hunter floats in the middle of the room.&N
 ~
 ~
-405594 0 0 3137972668 310493 85721216 43525160 1000 S
-PG 0 1 -1
+405594 0 0 0 3137972668 310493 85721216 43525160 1000 S
+PG 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -382,8 +382,8 @@ dwarven priest hunter dwarf~
 &+CA stocky dwarven priest dragon hunter squats to one side.&N
 ~
 ~
-405594 0 0 3137972668 310493 85721216 43525160 1000 S
-PM 0 1 -1
+405594 0 0 0 3137972668 310493 85721216 43525160 1000 S
+PM 0 1 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -393,8 +393,8 @@ soul long john silver~
 &+LThe undead &+rsoul &+Lof &+WLo&+wng &+LJo&+whn &+WSilver &+Lstands here protecting his booty.&N
 ~
 ~
-1175679050 1 1 974757950 14558 85196928 43000832 -1000 S
-UG 0 1569 -1
+1175679050 1 1 0 974757950 14558 85196928 43000832 -1000 S
+UG 0 1569 0 -1
 60 0 -100 10d10+25000 10d7+30
 0.0.0.500 800000
 8 8 1
@@ -404,8 +404,8 @@ wraith tortured pirate~
 &+LThe &+rto&+Rrt&+rur&+Re&+rd &+Wwraith&+L of a pirate has been summoned here.&N
 ~
 ~
-1174894664 1 0 973711678 276702 0 0 -1000 S
-UG 0 513 -1
+1174894664 1 0 0 973711678 276702 0 0 -1000 S
+UG 0 513 0 -1
 55 0 -100 10d10+8000 7d7+40
 0.0.0.0 300000
 8 8 0
@@ -415,8 +415,8 @@ captain guard skeletal remains~
 &+LThe &+wsk&+We&+wle&+Wt&+wal &+Lremains of the &+Rcap&+Rtain&+L of the guard stands here planning strategies.&N
 ~
 ~
-1141254222 1 0 524348 0 0 0 -1000 S
-U 0 17 -1
+1141254222 1 0 0 524348 0 0 0 -1000 S
+U 0 17 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -426,8 +426,8 @@ lieutenant vampire~
 &+LThe &+wva&+rmp&+wire&+L of a &+Rlieutenant&+L stands here guarding the area.&N
 ~
 ~
-100673610 1 0 268435484 0 0 0 -1000 S
-UV 0 513 -1
+100673610 1 0 0 268435484 0 0 0 -1000 S
+UV 0 513 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -437,8 +437,8 @@ guard spectre pirate~
 &+LThe &+Wspe&+wc&+Wtre &+Lof a pirate &+Bguard&+L stands here watching the ship.&N
 ~
 ~
-1140852808 1 0 60 0 0 0 -1000 S
-UG 0 64 -1
+1140852808 1 0 0 60 0 0 0 -1000 S
+UG 0 64 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -448,8 +448,8 @@ guard zombie pirate~
 &+LThe &+wzombie &+Lof a pirate &+Bguard &+Lstands here watching the ship.&N
 ~
 ~
-1073883144 1 0 60 0 0 0 -1000 S
-U 0 2048 -1
+1073883144 1 0 0 60 0 0 0 -1000 S
+U 0 2048 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -459,8 +459,8 @@ pirate skeletal~
 &+LA &+wsk&+We&+wle&+Wt&+wal &+Lpirate wanders the ship.&N
 ~
 ~
-10376 1 0 0 0 0 0 -1000 S
-U 0 1 -1
+10376 1 0 0 0 0 0 0 -1000 S
+U 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -473,8 +473,8 @@ parrot skeletal friendly~
 &+gthe undead inhabitants. White bones of the parrots skeleton can&n
 &+gbe seen in large patches within its feathery plumage.&n
 ~
-8 0 0 8 0 0 0 -1000 S
-U 0 0 -1
+8 0 0 0 8 0 0 0 -1000 S
+U 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -484,8 +484,8 @@ lich guard hulking~
 &+LThe hulking &+Blich&+L of a &+Rguard&+L stands here watching the storage room.&N
 ~
 ~
-1076234314 1 0 62 0 0 0 -1000 S
-U 0 515 -1
+1076234314 1 0 0 62 0 0 0 -1000 S
+U 0 515 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -495,8 +495,8 @@ alchemist spirit overworked~
 &+LThe &+Bspirit &+Lof an overworked &+calchemist&+L stands here guarding his goods.&N
 ~
 ~
-556874 1 0 1040296254 276702 0 0 -1000 S
-U 0 4 -1
+556874 1 0 0 1040296254 276702 0 0 -1000 S
+U 0 4 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -506,8 +506,8 @@ lookout undead~
 &+LThe &+rundead &+Llookout stands here keeping an eye out for danger.&N
 ~
 ~
-12298 1 0 0 0 0 0 -1000 S
-U 0 1536 -1
+12298 1 0 0 0 0 0 0 -1000 S
+U 0 1536 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -517,8 +517,8 @@ dragon skeletal huge~
 &+LA &+Whuge &+wsk&+We&+wle&+Wt&+wal &+Ld&+rr&+Lag&+ro&+Ln charges to attack!&N
 ~
 ~
-104414986 1 0 974760382 14494 67371200 8396800 -1000 S
-D 0 545 7
+104414986 1 0 0 974760382 14494 67371200 8396800 -1000 S
+D 0 545 0 7
 56 0 -100 10d10+16000 10d7+50
 0.0.0.0 0
 8 8 0
@@ -528,8 +528,8 @@ assassin soulless~
 &+LA soulless assassin hides in the shadows.&N
 ~
 ~
-1107458126 1 0 974760252 14558 262144 1057792 -1000 S
-U 0 8192 4
+1107458126 1 0 0 974760252 14558 262144 1057792 -1000 S
+U 0 8192 0 4
 57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -539,8 +539,8 @@ guard captains~
 &+LThe &+Ccaptain&+L's guard stands here watching the area.&N
 ~
 ~
-1107374152 1 0 12 0 0 0 -1000 S
-U 0 1 4
+1107374152 1 0 0 12 0 0 0 -1000 S
+U 0 1 0 4
 60 0 0 10d10+10000 8d10+40
 0.0.0.0 0
 8 8 0
@@ -555,8 +555,8 @@ skeletal remains bard~
 &+cship patron spends its neverending days trying to regain his&n
 &+cformer heraldic skills.&n
 ~
-8 1 0 0 0 0 0 -1000 S
-U 0 32768 3
+8 1 0 0 0 0 0 0 -1000 S
+U 0 32768 0 3
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -566,8 +566,8 @@ slave~
 &+LA thin weary slave crouches in the corner here.&N
 ~
 ~
-33583240 0 0 1572866 0 0 0 -1000 S
-U 0 65536 -1
+33583240 0 0 0 1572866 0 0 0 -1000 S
+U 0 65536 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -577,8 +577,8 @@ wraith pirate merchant~
 &+cThe w&+wrait&+ch of a &+Lmerchant&+c studies the pages of a b&+woo&+ck.&n
 ~
 ~
-8 1 0 0 0 0 0 -1000 S
-U 0 2048 -1
+8 1 0 0 0 0 0 0 -1000 S
+U 0 2048 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -593,8 +593,8 @@ lich cabin boy~
 &+yfreely through the ship collecting what treasures are left&n
 &+yand bringing them back to store within his chosen haunt.&n
 ~
-8 0 0 0 0 0 0 -1000 S
-U 0 32 -1
+8 0 0 0 0 0 0 0 -1000 S
+U 0 32 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -604,8 +604,8 @@ visitor vampire pissed~
 &+rAn angry va&+Rmpi&+rre of a visitor to the ship howls its displeasure.&n
 ~
 ~
-8 1 0 0 0 0 0 -1000 S
-U 0 16 -1
+8 1 0 0 0 0 0 0 -1000 S
+U 0 16 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -619,8 +619,8 @@ pirate female buxom imaje~
 &+mdown her still lush undead body, and it is difficult to remember&n
 &+mthat she would rather consume your soul than cherish your body.&n
 ~
-8 1 0 0 0 0 0 -1000 S
-U 0 128 -1
+8 1 0 0 0 0 0 0 -1000 S
+U 0 128 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -630,8 +630,8 @@ pilot remains animated~
 &+LThe&+w ani&+Wmat&+wed &+Lremains of the &+Gpilot&+L stand here guiding the ship.&N
 ~
 ~
-292938 1 0 0 0 0 0 -1000 S
-U 0 260 7
+292938 1 0 0 0 0 0 0 -1000 S
+U 0 260 0 7
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -641,8 +641,8 @@ navigator spirit~
 &+LThe &+wspirit &+Lof the &+Wnavigator&+L stands here finding a better route.
 ~
 ~
-12298 1 0 62 0 0 0 -1000 S
-U 0 1024 -1
+12298 1 0 0 62 0 0 0 -1000 S
+U 0 1024 0 -1
 54 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -652,8 +652,8 @@ rat skeletal huge~
 &+LA &+WHUGE &+Lskeletal &+yrat&+L scurries about here.&N
 ~
 ~
-72 1 0 0 0 0 0 -1000 S
-U 0 0 -1
+72 1 0 0 0 0 0 0 -1000 S
+U 0 0 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -663,8 +663,8 @@ gnoll scared~
 &+LA scared &+ggnoll&+L hides here.&N
 ~
 ~
-12488 0 0 1572910 0 0 0 -1000 S
-U 0 65536 -1
+12488 0 0 0 1572910 0 0 0 -1000 S
+U 0 65536 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -674,8 +674,8 @@ slave pain~
 &+LA &+rslave &+Lstands here in eternal &+Rpain&+L.&N
 ~
 ~
-1073744076 0 0 0 0 0 0 -1000 S
-U 0 1 -1
+1073744076 0 0 0 0 0 0 0 -1000 S
+U 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -685,8 +685,8 @@ stowaway zombie~
 &+LThe &+wzombie&+L of a stowaway stands here hiding.&N
 ~
 ~
-12428 0 0 1572910 0 0 0 -1000 S
-U 0 65536 -1
+12428 0 0 0 1572910 0 0 0 -1000 S
+U 0 65536 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -696,8 +696,8 @@ pirate ghostly ghost~
 &+LA &+wghostly &+Lpirate hovers here.&N
 ~
 ~
-1107325066 1 0 62 0 0 0 -1000 S
-UG 0 512 -1
+1107325066 1 0 0 62 0 0 0 -1000 S
+UG 0 512 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -707,8 +707,8 @@ bastard~
 &+LAn &+runk&+Rilla&+rble &+Lbastard stands here annoying the crap out of you.&N
 ~
 ~
-42037259 0 0 0 0 0 0 0 S
-PH 0 0 7
+42037259 0 0 0 0 0 0 0 0 S
+PH 0 0 0 7
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

@@ -5,7 +5,7 @@ two-handed black minotaur axe~
 ~
 5 16 3 0 10 0 4194305 8193 64 0 0
 1 3 4 0 0 77 5 50
-10 20000 100
+10 20000 100 100
 E
 _room_msg~
 &+LThe wicked battle-axe of the &+rMino&+Ltaur begins to &+Mhum&+L...&n
@@ -29,7 +29,7 @@ pile crates large~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile crates large~
 &+y   These crates take up an amazing amount of space, and seem to filled
@@ -45,7 +45,7 @@ wooden cabin~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 97906 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500003
 flaming ring prophet~
 &+rthe &+RFlaming &+rring of the &+RProphet&n~
@@ -53,7 +53,7 @@ flaming ring prophet~
 ~
 8 15 3 0 7 0 1 3 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500004
 bloody head grtak gr'tak raider~
 &+rthe bloody head of Gr'Tak the Raider&N~
@@ -61,7 +61,7 @@ bloody head grtak gr'tak raider~
 ~
 8 2 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-14 1 100
+14 1 100 100
 E
 bloody head grtak gr'tak raider~
    &+rThis head drips with blood.
@@ -73,7 +73,7 @@ hunting arm bracer~
 ~
 9 15 3 0 7 0 0 4097 64 0 0
 6 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hunting arm bracer~
    &+LThis orcish bracer is worn on the forearm.
@@ -89,7 +89,7 @@ bloody head krekish vicefang~
 ~
 8 2 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-14 1 100
+14 1 100 100
 E
 bloody head grtak gr'tak raider~
    &+rThis head drips with blood.
@@ -101,7 +101,7 @@ chainlinked chain raiders raider bracelet~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 10 0 0 0 0 0 0 0
-2 15434 100
+2 15434 100 100
 E
 chain-linked chain link raiders bracelet~
 &+LThis iron bracelet is made of seperate links with a single lion's tooth
@@ -118,7 +118,7 @@ gaseous bracelet~
 ~
 9 20 2 0 7 0 0 4097 64 0 0
 6 0 0 0 0 0 0 0
-1 90434 100 0 4096 0 0
+1 90434 100 100 0 4096 0 0
 E
 gaseous bracelet~
    &+gThis bracelet is a simple &+Ybronze-colored bracer&+g imbued with
@@ -135,7 +135,7 @@ tharnadian long longsword sword~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 3 3 0 0 0 0 0
-12 0 100
+12 0 100 100
 E
 winterhaven longsword sword~
    &+WThis simple steel longsword bares the crest of Winterhaven on the hilt.
@@ -147,7 +147,7 @@ tharnadian shield crest~
 ~
 37 16 3 0 9 0 0 513 0 0 0
 1 1 3 120 3 0 0 0
-15 14343 100
+15 14343 100 100
 E
 winterhaven shield~
    &+WThis steel shield bares the Winterhaven crest.
@@ -163,7 +163,7 @@ grenadier proc~
 ~
 5 15 3 0 7 0 8389122 8192 0 0 128
 6 1 2 0 0 167 50 10
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &n$n &nhurls a large stick of &+Rgnomish &+rdynamite &Ntowards $N!
@@ -179,7 +179,7 @@ gnomish flamethrower flame thrower~
 ~
 3 7 2 0 7 0 513 16385 64 0 655488
 50 3 3 277 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 gnomish flamethrower~
    &+WThis small glass mechanism is full of a flammable liquid, which is pumped up
@@ -195,7 +195,7 @@ tiny faerie potion~
 ~
 10 7 1 0 7 0 1 16385 64 0 0
 50 19 91 90 0 0 0 0
-0 15434 100
+0 15434 100 100
 E
 tiny faerie potion~
    &+GThis tiny potion glows with a bright magic.
@@ -207,7 +207,7 @@ huge silver claymore~
 ~
 5 22 4 0 11 0 4194304 8193 0 0 0
 13 4 6 0 0 0 0 0
-10 88343 100
+10 88343 100 100
 E
 huge silver claymore~
    &+CThis sword is quite large and thick.  Entirely made of silver, it is
@@ -220,7 +220,7 @@ heart sa'dah~
 ~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500016
 heart jorl'gan~
 &+Lthe still &+rbeating &+Lheart of &+gJorl'gan&n~
@@ -228,7 +228,7 @@ heart jorl'gan~
 ~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500017
 heart cho'van~
 &+Lthe still &+rbeating &+Lheart of &+CCho'van&n~
@@ -236,7 +236,7 @@ heart cho'van~
 ~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500018
 pulsing darkness throbbing merrova~
 &+Lthe &+mpulsing &+Ldarkness of &+MMerrova&n~
@@ -244,7 +244,7 @@ pulsing darkness throbbing merrova~
 ~
 13 1 3 0 7 0 8392713 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500019
 heart thorne~
 &+Lthe still &+rbeating &+Lheart of &+BThorne&n~
@@ -252,7 +252,7 @@ heart thorne~
 ~
 13 2 3 0 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500020
 nightcrawler claw~
 &+La n&+bi&+Lght&+bcr&+Lawler c&+bl&+Law&N~
@@ -260,7 +260,7 @@ nightcrawler claw~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 2 1 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 nightcrawler claw~
    &+LThis nasty claw has a black, poisonous edges.
@@ -276,7 +276,7 @@ insignia kimordril mountaineers~
 ~
 9 15 3 0 7 0 0 2097153 0 0 0
 1 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 insignia kimordril mountaineers~
    &+LThis insignia bares an emblem of a hammer wielded by a mighty fist.
@@ -292,7 +292,7 @@ bloody paw grey fang~
 ~
 8 2 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 bloody paw grey fang~
    &+rThis huge, clawed paw has been removed from the corpse of Grey Fang - the
@@ -305,7 +305,7 @@ frosty white potion~
 ~
 10 7 3 0 7 0 1 16385 0 0 0
 50 131 232 293 0 0 0 0
-0 15343 100
+0 15343 100 100
 E
 frosty white potion~
    &+WThis small potion has a &+Cfrosty &+Wsheen.
@@ -317,7 +317,7 @@ lizardman totem elemental~
 ~
 34 6 3 0 7 0 1 16385 64 0 0
 12 0 0 0 0 0 0 0
-4 15343 100
+4 15343 100 100
 E
 lizardman totem elemental~
    &+LThis large wooden totem has strange icons and tiny skulls of swamp critters
@@ -334,7 +334,7 @@ huge blood crystal~
 ~
 8 26 3 0 15 0 8388609 16385 64 0 0
 0 0 0 0 0 0 0 0
-15 35000 100
+15 35000 100 100
 E
 huge blood crystal~
    &+rThis heavy red crystal glows with an evil aura.
@@ -346,7 +346,7 @@ wyvern egg~
 ~
 19 45 3 0 15 0 8388608 16385 0 0 0
 100 0 0 0 0 0 0 0
-1 15656 100
+1 15656 100 100
 E
 wyvern egg~
    &+yThis large &+Wegg&+y looks ready to hatch at any minute.
@@ -358,7 +358,7 @@ blood crystal wand~
 ~
 3 23 3 0 7 0 1 16385 64 0 0
 51 4 4 25 0 0 0 0
-0 64343 100
+0 64343 100 100
 E
 blood crystal wand~
    &+rThis blood crystal wand glows with a vampiric power.
@@ -370,7 +370,7 @@ crumbling locket fire~
 ~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crumbling locket fire~
 &+L   This ornate locket is covered with strange &+mrunes &+Land &+minscriptions
@@ -394,7 +394,7 @@ crumbling locket water~
 ~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crumbling locket water~
 &+L   This ornate locket is covered with strange &+mrunes &+Land &+minscriptions
@@ -418,7 +418,7 @@ crumbling locket earth~
 ~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crumbling locket earth~
 &+L   This ornate locket is covered with strange &+mrunes &+Land &+minscriptions
@@ -442,7 +442,7 @@ crumbling locket fire~
 ~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crumbling locket air~
 &+L   This ornate locket is covered with strange &+mrunes &+Land &+minscriptions
@@ -466,7 +466,7 @@ strange powerful mystical book tomorrows~
 ~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500033
 mystical sash netherworld~
 &+Lthe &+mmy&+rst&+mic&+ral &+Lsash of the Netherworld&n~
@@ -474,7 +474,7 @@ mystical sash netherworld~
 ~
 9 15 3 0 7 0 1 2049 64 0 0
 0 0 0 5 0 0 0 0
-0 0 100 16 2048 0 33554432
+0 0 100 100 16 2048 0 33554432
 A
 24 -5
 A
@@ -486,7 +486,7 @@ mystical key~
 ~
 13 15 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500035
 gnomish observatory~
 &+La &+RGn&+romi&+Rsh &+Lobservatory&n~
@@ -494,7 +494,7 @@ gnomish observatory~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 97952 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crumbling locket fire~
 &+L   This ornate locket is covered with strange &+mrunes &+Land &+minscriptions
@@ -518,7 +518,7 @@ impaled halfling~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 impaled halfling~
    &+yThe body of a dead halfling has been impaled onto a large minotaur war pike.  This
@@ -531,7 +531,7 @@ huge sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge sign~
 &+y+-----------------+
@@ -553,7 +553,7 @@ large sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large sign~
 &+y+-----------------+
@@ -574,7 +574,7 @@ sign~
 ~
 13 5 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+y+----------------------+
@@ -593,7 +593,7 @@ snow-covered sign~
 ~
 8 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 snow-covered sign~
 &+W+-------------------------+
@@ -612,7 +612,7 @@ old sign~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 old sign~
 &+y+----------------------+
@@ -631,7 +631,7 @@ frozen sign~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 frozen sign~
 &+C+-------------------+
@@ -651,7 +651,7 @@ old sign~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 old sign~
 &+y+-----------------+
@@ -669,7 +669,7 @@ sign small~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign small~
 &+y   .--.
@@ -692,7 +692,7 @@ sign~
 ~
 8 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+y+-----------------+
@@ -709,7 +709,7 @@ frosty ring prophet~
 ~
 8 15 3 0 7 0 1 3 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500047
 head prophet fire~
 &+Lthe &+rhead &+Lof the &+RProphet &+rof &+RFire&n~
@@ -717,7 +717,7 @@ head prophet fire~
 ~
 3 15 3 0 7 0 0 16385 64 0 0
 50 5 5 277 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 25
 A
@@ -729,7 +729,7 @@ head prophet ice~
 ~
 3 15 3 0 7 0 0 16385 64 0 0
 50 5 5 325 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 25
 A
@@ -741,7 +741,7 @@ potion living flames~
 ~
 10 15 3 0 7 0 0 16385 64 0 0
 52 492 144 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500050
 potion blistering cold~
 &+Lthe &+bpotion &+Lof &+Cblistering &+bcold&n~
@@ -749,7 +749,7 @@ potion blistering cold~
 ~
 10 15 3 0 7 0 0 16385 64 0 0
 52 56 411 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500051
 gnomish laboratory~
 &+La &+RGn&+romi&+Rsh &+LLaboratory&n~
@@ -757,7 +757,7 @@ gnomish laboratory~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 98016 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500052
 small shabby hut~
 &+yA Small and Shabby &+gHut&n~
@@ -765,7 +765,7 @@ small shabby hut~
 ~
 25 5 3 0 7 0 0 0 0 0 0
 98017 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500053
 tundra hunter's necklace fangs~
 &+Ca tundra &+Chunter's &N&+ynecklace of &+Wfangs&N~
@@ -773,7 +773,7 @@ tundra hunter's necklace fangs~
 ~
 9 10 2 0 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-0 11223 100
+0 11223 100 100
 E
 tundra hunter's necklace fangs~
    &+WThis necklace has been strong of several large tundra panther fangs,
@@ -793,7 +793,7 @@ large chunk flamewood~
 ~
 13 6 3 0 7 0 8388617 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500103
 large chunk spiritwood~
 &+ya large chunk of &+Wsp&+Cir&+Wit&+ywood&n~
@@ -801,7 +801,7 @@ large chunk spiritwood~
 ~
 13 6 3 0 7 0 8388617 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #500104
 bracelet bronze _id_~
 &+ya thick bronze bracelet&n~
@@ -809,7 +809,7 @@ bracelet bronze _id_~
 ~
 9 20 3 3 7 0 1024 4097 64 37883812 0
 4 11 24 3 0 0 0 0
-3 3702 100
+3 3702 100 100
 E
 bracelet bronze~
 &+yThick and bronze, this appears to be a bracelet.  Runes line the inside
@@ -838,7 +838,7 @@ chainmail armor suit chain~
 ~
 9 16 3 10 7 0 1024 9 0 87572571 0
 17 3 1 3 0 0 0 0
-20 7120 100
+20 7120 100 100
 E
 chainmail armor suit chain~
 &+cThis suit of chainmail looks much like any other, only smaller and
@@ -855,7 +855,7 @@ shield embossed cross iron~
 ~
 37 15 3 15 7 0 1024 513 0 87572571 0
 2 1 3 120 4 0 0 0
-15 2530 100
+15 2530 100 100
 E
 shield embossed cross iron~
 &+cA simple iron shield with a white cross embossed on the surface, it
@@ -872,7 +872,7 @@ A small prayer book lies here, discarded.~
 ~
 12 28 2 5 7 0 0 16385 2 0 0
 0 0 0 0 0 0 0 0
-1 1230 100
+1 1230 100 100
 E
 book prayer small~
 This tiny book contains just the most minimal of prayers needed to
@@ -889,7 +889,7 @@ longsword sword long wicked black~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 3 4 3 0 0 0 0
-13 9312 100
+13 9312 100 100
 E
 longsword sword long wicked black~
 &+LAbout three feet long, this longsword has a "snake" shape, curving first
@@ -906,7 +906,7 @@ boots moss _id_~
 ~
 9 30 3 8 7 0 0 65 64 0 0
 8 6 1 3 0 0 0 0
-2 2392 100
+2 2392 100 100
 E
 boots moss~
 &+gSeemingly made of moss, this pair of boots is extremely light.
@@ -934,7 +934,7 @@ gloves leather simple _id_~
 ~
 9 13 3 6 7 0 0 129 64 4173708804 0
 4 7 6 3 0 0 0 0
-1 2319 100
+1 2319 100 100
 E
 gloves leather simple~
 &+cMade of leather, these gloves are so simple, it's scary.
@@ -960,7 +960,7 @@ cloak bodycloak silken silk long~
 ~
 9 3 3 8 7 0 1024 1025 64 37883812 0
 6 9 1 3 0 0 0 0
-1 3212 100
+1 3212 100 100
 E
 cloak bodycloak silken silk long~
 &+mMade of a purple silken material and long enough to stretch from your
@@ -977,7 +977,7 @@ sleeves horsehide horse hide short _id_~
 ~
 9 12 3 8 7 0 9216 257 64 37883812 0
 7 8 1 3 0 0 0 0
-3 4193 100
+3 4193 100 100
 E
 sleeves horsehide horse hide short~
 &+yShorter than your average sleeves, the horsehair feels strangely
@@ -1006,7 +1006,7 @@ ring black tiny _id_~
 ~
 11 16 1 1 7 0 1024 3 64 4197892 0
 0 0 0 0 0 0 0 0
-0 3921 100
+0 3921 100 100
 E
 ring black tiny~
 &+LMade from blackened steel, this ring barely fits over your finger.
@@ -1034,7 +1034,7 @@ loop tube twine hollow necklace _id_~
 ~
 9 15 3 2 7 0 1024 5 64 37883812 0
 3 2 0 3 0 0 0 0
-3 3291 100
+3 3291 100 100
 E
 loop tube twine hollow necklace~
 &+yA loop of dirty twine with a hollow tube on it, it must have some
@@ -1063,7 +1063,7 @@ eyeglasses glasses gold rimmed~
 ~
 9 24 0 0 7 0 1024 131073 0 8515584 0
 2 12 12 3 0 0 0 0
-0 4913 100
+0 4913 100 100
 E
 eyeglasses glasses gold rimmed~
 &+cMade from small glass rims, these glasses seem very effective.
@@ -1079,7 +1079,7 @@ dagger steel thin~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 3 2 11 0 0 0 0
-2 4912 100
+2 4912 100 100
 E
 dagger steel thin~
 &+cShort and narrow, this dagger appears surprisingly effective.
@@ -1095,7 +1095,7 @@ leggings shin guards wooden soot shinguards~
 ~
 9 6 3 8 7 0 8192 33 0 4165209604 0
 4 5 1 3 0 0 0 0
-3 3921 100
+3 3921 100 100
 E
 leggings shin guards wooden soot shinguards~
 &+yMade from type of wood and covered with soot, these leggings don't
@@ -1112,7 +1112,7 @@ lyre wooden simple instrument~
 ~
 32 6 3 15 7 0 8192 16385 0 0 0
 185 13 2 15 0 0 0 0
-4 3291 100
+4 3291 100 100
 E
 lyre wooden simple~
 &+cWith but three strings, this lyre is simple indeed.
@@ -1124,7 +1124,7 @@ ale goblet golden~
 ~
 17 24 0 0 7 0 0 16385 64 0 0
 30 30 3 0 0 0 0 0
--3 5843 100
+-3 5843 100 100
 E
 ale goblet golden~
 Constructed of pure gold, this goblet gleams lustrously with an inner fire all
@@ -1139,7 +1139,7 @@ robes black~
 ~
 11 3 3 8 7 0 1024 9 64 4197892 0
 0 0 0 4 0 0 0 0
-8 2993 100
+8 2993 100 100
 E
 robes black~
 Thick and black, this set of robes was once worn by a great drow necromancer.  Now,
@@ -1156,7 +1156,7 @@ staff stonewood _id_~
 ~
 4 6 3 10 7 0 1024 16385 64 4197892 0
 41 5 5 36 0 0 0 0
-12 9832 100
+12 9832 100 100
 E
 staff stonewood~
 This heavy staff has runes inscribed on its head.  It appears newly constructed.
@@ -1184,7 +1184,7 @@ dagger iron~
 ~
 5 15 2 3 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-3 947 100
+3 947 100 100
 E
 dagger iron~
 Small and sharp, this six-inch blade looks fairly deadly.
@@ -1198,7 +1198,7 @@ A &+cbracer&n of &+Luntapped&n &+Mpower&n lies here humming.~
 ~
 9 15 3 0 5 0 8193 4097 2 67108864 0
 0 0 0 0 0 0 0 0
-0 8666 100
+0 8666 100 100
 E
 bracer untapped power~
 &+cThis bracer is enchanted with an unknown amount of power and will aid&n

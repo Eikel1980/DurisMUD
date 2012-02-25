@@ -5,7 +5,7 @@ an unholy chalice~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #30201
 waterfall statue~
 a statue with water~
@@ -13,7 +13,7 @@ a statue with water~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue waterfall~
 &+bPure clean water streams out of a sandstone statue and lands in a small
@@ -27,7 +27,7 @@ sarcophagus~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 30302 99 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sarcophagus~
 This half opened sarcophagus lies in the center of the dark tomb. It is made
@@ -42,7 +42,7 @@ meatballs~
 ~
 19 15 3 0 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 meatballs~
 &+yThese meatballs are made with a special spicy flavor. They are a rarity amongs
@@ -57,7 +57,7 @@ pendant badge sun~
 ~
 11 15 3 0 7 0 0 2097153 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 pendant badge sun~
 &+rThe pendant is made from &+Lscorched &+Ysanstone&N &+rthat glows as the

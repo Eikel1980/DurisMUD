@@ -5,7 +5,7 @@ map newbie note~
 ~
 16 29 1 0 7 0 8912904 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 map newbie note~
 
@@ -48,7 +48,7 @@ silver flute instrument~
 ~
 32 22 1 1 12 0 8192 16385 1 0 0
 184 15 1000 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 silver flute instrument~
 &+WThe tiny instrument is incredibly well crafted, made from fine si&+wlv&+Wer&n
@@ -67,7 +67,7 @@ leather drum instrument~
 ~
 32 13 2 2 11 0 8192 16385 0 0 0
 188 15 1000 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 leather drum instrument~
 &+yThe leather drum has been crudely constructed from what looks to be&n
@@ -87,7 +87,7 @@ jug wine mulled jar~
 ~
 17 7 2 1 5 0 0 16385 0 0 0
 5 5 2 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 mulled wine jar~
 &+rPopping open the lid of a rather plain glass jar, the warm aroma of&n
@@ -100,7 +100,7 @@ crystal water decanter~
 ~
 17 7 1 1 11 0 0 16385 66 0 0
 4 4 17 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 crystal water decanter~
 &+wThe tiny crystal decanter radiates magic in a subtle deep blue glow&n
@@ -116,7 +116,7 @@ tome black glowing bone book _id_~
 ~
 33 29 2 0 12 0 9 8404993 64 0 0
 0 0 200 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 tome book black bone~
   &+LA dark glow seems to emanate from the black leather of the tome cover,&n
@@ -134,7 +134,7 @@ some &+mflowing deep purple robes&n~
 ~
 11 3 3 0 11 0 8396808 9 2 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 purple robes~
 &+mLong flowing robes of an intensely deep purple drape softly in folds&n
@@ -154,7 +154,7 @@ leather chest~
 ~
 15 13 2 500 7 0 4096 0 0 0 0
 500 4 0 500 0 0 0 0
-10 0 100
+10 0 100 100
 E
 leather chest~
 &+yHalf hidden in the rubble of the collapsed storage crates, this small&n
@@ -169,7 +169,7 @@ bow warbow oak oaken~
 ~
 6 5 4 10 11 0 8388616 24577 0 0 0
 150 150 0 1 0 0 0 0
-5 0 100
+5 0 100 100
 E
 bow warbow oak oaken~
 &+gThis massive bow is made from a single section of taut and flexible&n
@@ -186,7 +186,7 @@ fish gurnard~
 ~
 19 2 3 2 7 0 0 16385 0 0 0
 20 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 fish gurnard~
 &+yThe gurnard is a particularly ugly looking r&+re&+yd, b&+rro&+ywn fish from the&n
@@ -201,7 +201,7 @@ pickled herring fish~
 ~
 19 2 2 1 5 0 0 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pickled herring fish~
 &+CThe bright silver-blue herring has taken on a greenish tinge from the&n
@@ -217,7 +217,7 @@ flax basket~
 ~
 15 42 3 5 5 0 8192 12599297 0 0 0
 150 1 0 150 0 0 0 0
-1 0 100
+1 0 100 100
 E
 flax basket~
 &+gThick yellow-green, strips of flax have been cut in neat even lengths,&n
@@ -234,7 +234,7 @@ hat fish scales~
 ~
 9 47 3 2 5 0 8192 16401 0 0 0
 5 0 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 E
 hat fish scales~
 &+gThe green and gold colored fish scales gleam in the light, giving off&n
@@ -252,7 +252,7 @@ statue dionysus~
 ~
 15 11 6 1000 15 0 0 0 66 0 0
 500 0 0 500 0 0 0 0
-2000 0 100
+2000 0 100 100
 E
 statue dionysus~
 &+rA gleaming statue of the god Dionysus rises from the green forest&n
@@ -269,7 +269,7 @@ dry bread crust~
 ~
 19 48 1 1 5 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 dry bread crust~
 &+wSpots of dull green mold form in spots around the edges of this small&n
@@ -284,7 +284,7 @@ wet dishrag dish rag~
 ~
 5 3 2 1 5 0 0 8193 0 0 0
 14 1 4 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 wet dishrag dish rag~
 &+cOld food and alcohol stains cover nearly every surface of the tattered&n
@@ -300,7 +300,7 @@ armory stall~
 ~
 15 6 3 500 5 0 0 0 0 0 0
 300 0 0 300 0 0 0 0
-500 0 100
+500 0 100 100
 E
 armory stall~
 &+yA huge, sturdy, hard wood polished table is braced and setup along the&n
@@ -316,7 +316,7 @@ vegetable broth mug food~
 ~
 19 48 2 1 5 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 vegetable broth mug food~
 &+gPeas and a variety of unidentifiable colorful chopped vegetables&n
@@ -330,7 +330,7 @@ steak kidney pie food~
 ~
 19 48 3 1 5 0 0 16385 0 0 0
 5 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 steak kidney pie food~
 &+yGolden brown flakey pastry is formed in a small oval shape with a&n
@@ -345,7 +345,7 @@ salt box wood wooden~
 ~
 19 6 1 5 5 0 4096 16385 0 0 0
 1 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 salt box wood wooden~
 &+yThis small wooden box is aged with time, yet is still sturdy and upon&n
@@ -359,7 +359,7 @@ vial red tear tears basilisk~
 ~
 17 7 1 5 5 0 4096 16385 0 0 0
 2 2 14 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 salt box wood wooden~
 &+yThis small wooden box is aged with time, yet is still sturdy and upon&n
@@ -373,7 +373,7 @@ marbled potion red white magic~
 ~
 10 7 1 5 7 0 0 16385 0 0 0
 21 92 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 salt box wood wooden~
 &+yThis small wooden box is aged with time, yet is still sturdy and upon&n
@@ -387,7 +387,7 @@ disc charity green seal~
 ~
 8 8 2 0 12 0 40969 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 charity green seal disc~
 &+gPerfectly circular in shape, this beautiful green disc appears to be&n
@@ -403,7 +403,7 @@ wooden earth totem~
 ~
 34 6 2 0 11 0 271360 16385 0 256 0
 15 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 wooden earth totem~
 &+yThis small totem glows with an inner light of power from the earth&n
@@ -422,7 +422,7 @@ dagger blood black~
 ~
 5 16 2 0 9 0 256 8396801 0 0 0
 2 1 3 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 dagger blood black~
 &+rThis dark dagger is balanced expertly, light and responsive to the&n
@@ -437,7 +437,7 @@ elven ship lilynswift~
 ~
 25 6 7 0 12 0 8193 0 2 0 0
 29237 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 elven ship lilynswift~
 
@@ -462,7 +462,7 @@ bank sign notice~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bank sign notice~
 &+LWelcome to the Ailvio Savings Bank for all your Financial Needs&n
@@ -481,7 +481,7 @@ stable sign notice~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stables sign notice~
 &+y     Welcome to our Stables, we have a range of beasts for sale&n
@@ -497,7 +497,7 @@ delicate rose flower red~
 ~
 8 30 2 0 7 0 270336 10502145 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 delicate rose flower red~
 &+rThe delicate deep, dark red rose seems to have been either freshly&n
@@ -513,7 +513,7 @@ black leather whip~
 ~
 5 13 2 0 5 0 8192 8193 0 0 0
 14 2 3 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 black leather whip~
 &+LThe small leather whip is made from exquisite leathers, soft and oiled&n
@@ -528,7 +528,7 @@ warm woolen blanket~
 ~
 11 3 3 0 5 0 8192 16778241 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 warm woolen blanket~
 &+yThe woolen blanket is of great quality, tightly woven with fine and&n
@@ -544,7 +544,7 @@ flax skiff boat~
 ~
 22 42 4 0 5 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 111 100
+5 111 100 100
 E
 flax skiff boat~
 &+gLayers upon layers of young flax reeds are tightly woven and bound&n
@@ -559,7 +559,7 @@ colorful silk coat~
 ~
 9 3 3 0 5 0 0 9 0 0 0
 10 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 colorful silk coat~
 &+BLooking closer you see that this colorful silk coat is actually made&n
@@ -577,7 +577,7 @@ spiked metal collar~
 ~
 9 15 2 0 7 0 0 5 0 0 0
 5 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 spiked metal collar~
 &+LA very wide collar of hard glossy metal provides the base for rows&n
@@ -598,7 +598,7 @@ shining mithril longsword sword~
 ~
 5 18 3 0 10 0 0 8193 0 0 0
 5 2 4 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 shining mithril longsword sword~
 &+CLightweight and balanced to perfection this longsword is one of the&n
@@ -615,7 +615,7 @@ archway arch portal~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 22800 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 archway arch portal~
 &+YA misty haze swirls within the archway of the portal, occasionally&n
@@ -632,7 +632,7 @@ dagger bounty hunter~
 ~
 5 15 3 0 5 0 67372032 24577 0 16384 0
 2 2 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 A
@@ -644,7 +644,7 @@ A pile of mysterious &+md&+Lar&+mk&n &+Lstones&n~
 ~
 8 15 2 1 7 0 4097 1 64 0 0
 0 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 stones~
   The dark stones look ordinary but they give off a magical glow. By the
@@ -657,7 +657,7 @@ A &+mveil of &+Lsh&+wado&+Lws&n lies here hidden.~
 ~
 9 15 3 0 5 0 67372033 262145 64 4194304 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 3 5
 A
@@ -669,7 +669,7 @@ tree log stump~
 ~
 15 15 3 0 5 0 69632 0 0 0 0
 30 0 0 30 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tree stump log~
 A half rotted fallen tree lies here, after time there is no telling
@@ -682,7 +682,7 @@ eyes bullfrog~
 ~
 13 15 3 1 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 11 100
+1 11 100 100
 #29242
 pile corpses _id_~
 &+La pile of em&nbalm&+Led&n &+Lcorpses&n~
@@ -690,7 +690,7 @@ pile corpses _id_~
 ~
 13 2 3 0 5 0 65536 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 corpses pile~
 &+RA pile of corpses brought from the morgue, There are several&n
@@ -704,7 +704,7 @@ A &+yholy avenger of paladins&n is here.~
 ~
 5 15 3 0 5 0 38273032 8193 10 0 0
 13 2 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -716,7 +716,7 @@ A polished silver p&+Ylate&nmail with &+cetched&n crosses.~
 ~
 9 22 3 0 11 0 262144 9 3 0 0
 15 0 0 3 0 0 0 0
-5 0 100
+5 0 100 100
 A
 1 10
 A
@@ -728,7 +728,7 @@ A &+Cra&+cz&+Cor&n sharp &+Cgythka&n lies here.~
 ~
 5 22 3 0 5 0 256 8193 1 0 0
 8 2 4 0 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 1
 A
@@ -740,7 +740,7 @@ An ancient looking &+Wbone&n longbow lies discarded here.~
 ~
 6 15 3 0 5 0 4259856 8193 2 0 0
 60 60 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -752,7 +752,7 @@ A &+yleather&n sa&+Ldd&nle &+cetched&n with &+Lruins&n~
 ~
 9 15 3 0 5 0 8192 16777217 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -764,7 +764,7 @@ Simple &+Wwhite&n robes lie here on the ground.~
 ~
 9 3 3 0 5 0 0 1025 2 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 A
 2 6
 A
@@ -776,7 +776,7 @@ A very &+rsharp&n dagger of &+Ldeath&n lies here.~
 ~
 5 16 3 1 5 0 16 8193 0 0 0
 2 1 4 0 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 dagger~
   A sharp dagger that has seen its share of battle. Kept sharp by
@@ -794,7 +794,7 @@ A sturdy &+Lweapon's rack&n holds a variety of daggers.~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 rack~
   A tall sturdy rack that rests against the wall. It holds a variety
@@ -814,7 +814,7 @@ A &+csharp&n &+rbloody&n dagger is stuck into the &+Lwall&n.~
 ~
 5 16 3 1 5 0 0 0 0 0 0
 2 1 4 0 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 dagger~
   &+rA sharp dagger that has seen its share of battle. Kept sharp by&n
@@ -832,7 +832,7 @@ A &+Cglass&n &+Bflute&n lies here unplayed.~
 ~
 32 22 1 1 12 0 8192 16385 65 0 0
 184 15 1000 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 silver flute instrument~
 &+WThe tiny instrument is incredibly well crafted, made from fine si&+wlv&+Wer&n
@@ -851,7 +851,7 @@ A simple &+yleather& &+Gpouch&n lays here.~
 ~
 15 13 3 0 5 0 8192 8388609 0 0 0
 100 1 100 0 0 0 0 0
-0 2333 100
+0 2333 100 100
 E
 leather pouch~
   A smooth leather pouch with fine stitching. Very durable for all the
@@ -865,7 +865,7 @@ A silky &+cfl&nowi&+cng&n &+Cgown&n lies here.~
 ~
 9 3 3 0 5 0 0 1025 2 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 A
 2 6
 A
@@ -877,7 +877,7 @@ A &+Gbu&+gbb&+Gling&n vial of &+Cliquid&n lies here leaking.~
 ~
 13 40 1 0 5 0 65537 1 2 0 0
 0 0 0 0 0 0 0 0
-0 1233 100
+0 1233 100 100
 #29256
 crown leaf leaves~
 a &+Gl&+ge&+Ga&+gf-made&n &+Ccrown&n~
@@ -885,7 +885,7 @@ A &+Ccr&no&+Cwn&n made of &+Gle&+gav&+Ges&n lies here&n~
 ~
 9 30 3 0 5 0 8192 134217729 0 0 0
 0 0 0 0 0 0 0 0
-0 3222 100
+0 3222 100 100
 A
 4 8
 A
@@ -897,7 +897,7 @@ A finely woven &+Gcent&+Laur&n &+yblanket&n lies here.&n~
 ~
 9 15 3 0 5 0 8192 16777217 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 10
 A
@@ -909,7 +909,7 @@ A pair of &+ygold&+Ye&+yn &+Yearrings&n lie here.~
 ~
 9 15 3 0 5 0 1 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 14 8
 A
@@ -921,7 +921,7 @@ A &+ywalking&n stick full of knots and bends.~
 ~
 5 6 3 0 9 0 9216 8193 2 128 0
 12 4 5 0 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 20
 A
@@ -933,7 +933,7 @@ A &+Lcross&n attached to some &+Bprayer beads&n lie here.~
 ~
 9 7 3 0 5 0 3416065 5 2 0 0
 0 0 0 0 0 0 0 0
-0 1234 100
+0 1234 100 100
 A
 4 5
 A
@@ -945,7 +945,7 @@ A &+Yholy&n book of &+Cprayers&n lie here in the dust.~
 ~
 2 15 3 0 5 0 3407873 16385 2 0 0
 20 3 356 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 5
 A
@@ -957,7 +957,7 @@ An &+year&n lays bleeding here.~
 ~
 13 2 3 0 5 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29263
 scalp~
 a recently &+csevered&n &+yscalp&n~
@@ -965,7 +965,7 @@ A recently &+csevered&n &+yscalp&n lies here &+Rbleeding&n~
 ~
 13 2 3 0 5 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29264
 grubby toe~
 a &+ggrubby&n &+ytoe&n~
@@ -973,7 +973,7 @@ A &+ggrubby&n &+toe&n lies here.~
 ~
 13 2 3 0 5 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29265
 sword hands justice~
 the &+ctwo hands&n of &+Yj&+Wu&+Ys&+Wt&+Yi&+Wc&+Ye&n~
@@ -981,7 +981,7 @@ the &+ctwo hands&n of &+Yj&+Wu&+Ys&+Wt&+Yi&+Wc&+Ye&n~
 ~
 5 15 3 0 8 0 71573513 8193 10 0 0
 13 4 3 0 0 0 0 0
-20 0 100
+20 0 100 100
 A
 18 2
 A
@@ -993,7 +993,7 @@ A &+Cbe&+cac&+Con&n of &+Ycourage&n lies here.~
 ~
 9 3 3 0 5 0 67371009 2097153 2 0 0
 0 0 0 0 0 0 0 0
-0 2312 100
+0 2312 100 100
 A
 18 2
 #29267
@@ -1003,7 +1003,7 @@ A &+Lpiece&n of &+ystoned&n &+Lskin&n lies here.&n~
 ~
 13 11 4 0 5 0 4608 1 0 1 0
 0 0 0 0 0 0 0 0
-40 0 100
+40 0 100 100
 #29268
 warrior sword strength warriors~
 a &+Bwarrior's&n sword of &+cstrength&n~
@@ -1011,7 +1011,7 @@ A &+BWarrior's&n sword of &+cStrength&n lies here.~
 ~
 5 16 3 5 5 0 9216 8193 0 67108865 0
 5 1 6 0 0 0 0 0
-5 1345 100
+5 1345 100 100
 A
 18 1
 A
@@ -1023,7 +1023,7 @@ a no-show coffin~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 29317 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29270
 warriors sword strength~
 a &+Bwarrior's &+Csword of strength&n~
@@ -1031,7 +1031,7 @@ A &+Bwarrior's&n &+Csword of strength&n lies here&n~
 ~
 5 15 3 0 5 0 9216 8193 0 67108865 0
 5 1 7 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -1043,7 +1043,7 @@ A &+mwing&n of a &+Cdra&+cgon&+Cfly&n lies here.~
 ~
 8 47 1 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 111 100
+0 111 100 100
 #29272
 eyes bullfrog frog~
 the &+beyes&n of a &+Gbu&+gll&+Gfr&+gog&n~
@@ -1051,7 +1051,7 @@ Some &+beyes&n of a &+Gbu&+gll&+Gfr&+gog&n lie here.~
 ~
 8 2 1 0 5 0 8392704 1 0 0 0
 0 0 0 0 0 0 0 0
-0 121 100
+0 121 100 100
 #29273
 bow longbow ranger~
 the &+Bbow&n of the &+gra&+Gng&+ger&n~
@@ -1059,7 +1059,7 @@ The &+Blongbow&n of the &+gRa&+Gng&+ger&n lies here.~
 ~
 6 15 3 0 5 0 4195328 8193 2 2 0
 100 80 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -1071,7 +1071,7 @@ The &+Lp&+ma&+Lw&n belonging to a &+Lblack wolf.&n~
 ~
 8 2 2 1 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 3000 100
+1 3000 100 100
 #29275
 spotted wolfskin skin~
 a &+Lsp&+wott&+Led &+Lwolfskin&n~
@@ -1079,7 +1079,7 @@ A &+Lsp&+wott&+Led wolfskin&n lies here.~
 ~
 9 12 3 1 5 0 4096 17409 0 0 0
 0 0 0 0 0 0 0 0
-1 3453 100
+1 3453 100 100
 A
 13 5
 A
@@ -1091,7 +1091,7 @@ A &+Wsharp&n &+Ctooth&n belonging to a &+Lwolf.&n~
 ~
 8 10 3 1 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 123 100
+1 123 100 100
 #29277
 robe robes monk~
 &+ysome apprentice &+Lm&+won&+Lk&n &+yrobes&n~
@@ -1099,7 +1099,7 @@ Some &+yrobes&n worn by a &+Lm&+won&+Lk&n &+Yapprentice.&n~
 ~
 9 3 3 1 5 0 67371008 1025 2 0 0
 0 0 0 0 0 0 0 0
-1 5633 100
+1 5633 100 100
 A
 13 10
 A
@@ -1111,7 +1111,7 @@ A &+bcloak&n of &+Bst&+beal&+Bth&n lies here.~
 ~
 9 3 3 0 5 0 0 1025 0 0 0
 0 0 0 0 0 0 0 0
-0 4777 100
+0 4777 100 100
 A
 14 15
 A
@@ -1123,7 +1123,7 @@ stunning jewel bludgeoning~
 ~
 8 15 3 0 5 0 41943041 1 64 0 0
 0 0 0 0 0 0 0 0
-0 30000 100
+0 30000 100 100
 A
 13 10
 A
@@ -1135,7 +1135,7 @@ glowing ring~
 ~
 9 8 1 1 5 0 262145 3 64 0 0
 0 0 0 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 A
 13 20
 A
@@ -1147,7 +1147,7 @@ A &+Bsea&+Cshell&n &+yha&nircom&+yb&n lies here.~
 ~
 9 52 2 1 5 0 8193 17 64 0 0
 0 0 0 0 0 0 0 0
-1 3400 100
+1 3400 100 100
 A
 24 -2
 A
@@ -1159,7 +1159,7 @@ acorn~
 ~
 13 15 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29283
 tree branch _id_~
 a &+Lbroken&n &+gtree branch&n~
@@ -1167,7 +1167,7 @@ A &+Lbroken&n &+gtree branch&n has fallen here.~
 ~
 13 15 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 branch~
 A tree branch that has fallen here from one of the tall trees overhead.
@@ -1179,7 +1179,7 @@ A &+rred&n &+Lfeather&n belonging to a &+Rro&+rb&+Rin&n.~
 ~
 13 15 3 0 5 0 4096 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 5
 A
@@ -1191,7 +1191,7 @@ A fat &+rred &+Rro&+rbi&+rn&n flutters low to the ground as it sings.~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29286
 walking stick gnarly~
 a &+ggnarly&n walking &+ystick&n~
@@ -1199,7 +1199,7 @@ A &+ywalking&n stick full of knots and bends.~
 ~
 5 6 3 0 8 0 67372032 8193 66 128 0
 12 3 4 0 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 9
 A
@@ -1211,7 +1211,7 @@ A handwritten note from the grandmother.~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 note letter~
   Dear Rosh,
@@ -1227,7 +1227,7 @@ wizard wizards staff~
 ~
 4 33 3 0 14 0 33562625 24577 64 0 0
 20 2 2 87 0 0 0 0
-1 23444 100
+1 23444 100 100
 #29289
 robe robes black~
 &+La long flowing robe&n~
@@ -1235,7 +1235,7 @@ robe robes black~
 ~
 11 3 3 0 11 0 8396808 9 2 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 robe robes~
 &+mLong flowing robes of an intensely deep black drape softly in folds&n
@@ -1255,7 +1255,7 @@ ice~
 ~
 12 40 1 1 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 ice~
 &+CIce has fallen all around from a shaman's iceball spell. It is best
@@ -1268,7 +1268,7 @@ magical jar~
 ~
 8 7 1 0 14 0 8193 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 11222 100
+0 11222 100 100
 A
 5 0
 #29292
@@ -1278,7 +1278,7 @@ bard flute delicate~
 ~
 32 22 3 1 5 0 67371009 16385 1 0 0
 184 30 0 1 0 0 0 0
-1 2311 100
+1 2311 100 100
 A
 28 5
 A
@@ -1290,7 +1290,7 @@ tome magical spellbook~
 ~
 33 29 3 0 5 0 262145 8404993 64 0 0
 0 0 120 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 10
 #29294
@@ -1300,7 +1300,7 @@ The &+ybroken&n half of an &+Camulet&n lies here.~
 ~
 8 22 2 0 5 0 8409088 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 half amulet~
   A small uninteresting broken half of an amulet. Only a trained eye would
@@ -1313,7 +1313,7 @@ dagger thief thieves~
 ~
 5 15 3 0 5 0 67372032 8193 0 126976 0
 2 1 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 1
 A
@@ -1325,7 +1325,7 @@ A &+Lpile&n &+Wbones&n belonging to an &+Yacolyte&n are here.~
 ~
 12 10 3 0 5 0 8392704 16385 2 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile bones acolyte~
   The bones that belonged to a person of a holy nature. His spirit the only
@@ -1339,7 +1339,7 @@ A &+rblood&n-stained &+Wskull&n of &+Ld&ne&+La&nt&+Lh&n lies here starting back 
 ~
 4 10 3 0 5 0 9216 16385 4 1024 0
 25 5 2 82 0 0 0 0
-0 0 100
+0 0 100 100
 E
 death skull~
   A blood-stained skull that has been embued with powerful dark powers.
@@ -1357,7 +1357,7 @@ A shining shield lies discarded here.~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29299
 magical orb~
 &+ma ma&+Mgica&+ml &+Mglowing&n &+Co&+cr&+Cb&n~
@@ -1365,7 +1365,7 @@ magical orb~
 ~
 25 8 3 0 15 0 33562625 0 64 0 0
 29305 320 -1 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 magical orb~
  &+BA beautiful shining orb of magic that floats here. It is embued with&n
@@ -1380,7 +1380,7 @@ A &+Ldagger&n named "&+mPain&n" lies here.~
 ~
 5 15 3 0 5 0 67118080 24577 0 45056 0
 2 1 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dagger~
 A very sharp dagger that hurts all it touches.
@@ -1396,7 +1396,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
     &+y ////////////////////&n
@@ -1416,7 +1416,7 @@ An &+Cemblem of &+Ch&+cea&+Cling&n lies here.~
 ~
 11 3 3 0 5 0 67109888 2097153 2 32 0
 0 0 0 0 0 0 0 0
-0 1122 100
+0 1122 100 100
 A
 13 10
 #29303
@@ -1426,7 +1426,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
      &+y////////////////////&n
@@ -1445,7 +1445,7 @@ mirror portal _id_~
 ~
 25 15 3 0 5 0 33562624 0 64 0 0
 29232 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 _id_name_~
 ~
@@ -1461,7 +1461,7 @@ tome elegant spellbook~
 ~
 33 15 3 0 5 0 8193 0 64 0 0
 0 0 80 0 0 0 0 0
-0 734 100
+0 734 100 100
 #29306
 quill~
 a &+Lplain&n quill~
@@ -1469,7 +1469,7 @@ a &+Lplain&n quill~
 ~
 21 50 3 1 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 234 100
+0 234 100 100
 E
 quill~
   A standard writing quill for first year students. This is used to
@@ -1482,7 +1482,7 @@ An &+Badvanced&n &+rTome of Knowledge&n~
 ~
 33 2 3 0 5 0 8193 8404993 64 0 0
 0 0 150 0 0 0 0 0
-0 3445 100
+0 3445 100 100
 #29308
 totem _id_~
 a &+gha&+Gndcarv&+ged&n &+ytotem&n~
@@ -1490,7 +1490,7 @@ A &+gha&+Gndcarv&+ged&n &+yt&+Yo&+ytem&n reaches to the &+Whea&+Cve&+cns.&n~
 ~
 12 6 3 200 5 0 0 0 2 0 0
 0 0 0 0 0 0 0 0
-200 0 100
+200 0 100 100
 E
 totem~
  &+g A tall totem carved with elaborate disigns of past shaman that have&n
@@ -1504,7 +1504,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
      &+y////////////////////&n
@@ -1525,7 +1525,7 @@ A &+yhefty&n &+rb&+Ra&+rg&n decorated with &+gl&+Geave&+gs.&n~
 ~
 15 30 3 0 5 0 9216 4210689 0 524288 0
 300 5 0 300 0 0 0 0
-0 1233 100
+0 1233 100 100
 A
 14 10
 A
@@ -1537,7 +1537,7 @@ A &+yhandm&+Yad&+ye&n &+Ba&+brr&+Bow&n of the &+Rranger&n.~
 ~
 7 15 3 0 5 0 8704 16385 8 2 0
 2 2 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 arrow~
 &+GAn arrow made from the hands of a talented craftsman. This arrow can hit&n
@@ -1550,7 +1550,7 @@ quiver~
 ~
 30 4 3 0 5 0 1024 1064961 0 2 0
 20 0 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 26 5
 #29313
@@ -1560,7 +1560,7 @@ unseen locker teleporter~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 29308 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29314
 chest~
 &+ya storage chest&n~
@@ -1568,7 +1568,7 @@ chest~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 500 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 #29315
 sign _id_~
 a sign~
@@ -1576,7 +1576,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
      ////////////////////
@@ -1597,7 +1597,7 @@ A large dusty &+Lbookcase&n sits here full of &+ybooks&n.~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookcase~
   A large bookcase full of very old books of magic, some dusty and some
@@ -1610,7 +1610,7 @@ stone slab~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 274 29228 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 slab stone~
   A large stone slab that appears to be very heavy and is big enough
@@ -1624,7 +1624,7 @@ A long solid &+yworkbench&n used in mixing potions and crafting.&n~
 ~
 15 6 3 300 5 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-300 0 100
+300 0 100 100
 #29319
 letter note~
 note letter~
@@ -1632,7 +1632,7 @@ note letter~
 ~
 16 28 3 1 5 0 8 16385 2 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 letter note~
      &+yDear Teacher or Instructor:&n
@@ -1651,7 +1651,7 @@ couch~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 couch~
   A very soft and comfortable fluffy blue couch. Several beings can enjoy the good
@@ -1664,7 +1664,7 @@ An ornate &+Cmarble&n &+Bf&+bount&+Bain&n is here.&n~
 ~
 17 15 3 0 5 0 0 0 0 0 0
 1000 1000 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29322
 sign~
 a sign~
@@ -1672,7 +1672,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
      &+y////////////////////&n
@@ -1693,7 +1693,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
      &+y////////////////////&n
@@ -1713,7 +1713,7 @@ a sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
      &+y////////////////////&n
@@ -1736,7 +1736,7 @@ corpse black warg~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 1 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #29326
 information stand wooden~
 &+Ythe info&+yr&+wmat&+Wion&N &+ystand&N~
@@ -1744,7 +1744,7 @@ information stand wooden~
 ~
 13 6 2 0 10 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-50 0 100
+50 0 100 100
 E
 wooden stand information~
 &+yA qaint small wooden stand rests here displaying maps and other trinkets.
@@ -1757,7 +1757,7 @@ a sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
     &+y////////////////////&n
@@ -1780,7 +1780,7 @@ burbul map object~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29329
 object chyron search~
 chyron_search_obj~
@@ -1788,7 +1788,7 @@ chyron_search_obj~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29330
 sliver metal fragment meteor _id_~
 &+La &+rmet&+Re&+ror &+Lfragment~
@@ -1796,7 +1796,7 @@ sliver metal fragment meteor _id_~
 ~
 8 1 0 0 15 0 33566729 8404993 64 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 meteor fragment~
 &+LAn unusually warm piece of metal which seems to be glowing.
@@ -1808,7 +1808,7 @@ chainmail elements _id_~
 ~
 9 15 3 0 10 0 8193 9 64 33422943 0
 15 0 0 0 0 0 0 0
-10 15000 100
+10 15000 100 100
 E
 elements chainmail suit~
 This obvious suit of chainmail is incomplete. If worn it will still provide
@@ -1825,7 +1825,7 @@ slender sword vapor~
 ~
 5 1 2 0 7 0 8921096 8192 0 0 0
 9 2 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 #29333
@@ -1835,4 +1835,4 @@ vine thick frayed stalk~
 ~
 13 42 1 0 7 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

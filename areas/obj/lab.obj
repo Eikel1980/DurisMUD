@@ -5,7 +5,7 @@ note necklace attached~
 ~
 13 15 3 0 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 attached note~
 &+yThe note beared by the necklace reads ...
@@ -20,7 +20,7 @@ misty pond~
 ~
 25 36 3 0 7 0 1 0 0 0 0
 82330 7 -1 0 0 0 0 0
-999 1 100
+999 1 100 100
 E
 misty pond~
 &+GThis pond is totally covered in algae and various retilian and amphibian
@@ -34,7 +34,7 @@ tree burden hole~
 ~
 25 6 3 0 7 0 0 0 0 0 0
 82313 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tree burden~
 &+YA huge tree with humanoid features.
@@ -46,7 +46,7 @@ tree wisdom hole huge~
 ~
 25 6 3 0 7 0 0 0 0 0 0
 82318 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tree burden~
 &+MA huge tree with humanoid features.
@@ -58,7 +58,7 @@ tree burden hole~
 ~
 25 6 3 0 7 0 67108864 0 0 0 0
 82312 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tree burden~
 &+YA huge tree with humanoid features.
@@ -70,7 +70,7 @@ key large~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key large~
 &+WA large key.
@@ -82,7 +82,7 @@ gleaming battle longsword~
 ~
 5 18 4 0 12 0 1 8193 64 0 0
 5 2 9 3 1 0 0 0
-15 9000 100
+15 9000 100 100
 E
 mithril gleaming longsword~
 &+WA beautiful mithril longsword was designed by a skilled blacksmith.
@@ -98,7 +98,7 @@ huge battle shield~
 ~
 37 18 3 0 12 4 3150848 513 64 87572507 0
 1 3 5 190 4 0 0 0
-15 12000 100 134217728 0 0 0
+15 12000 100 100 134217728 0 0 0
 E
 mithril shield huge~
 &+WThis mithril shield has been crafted by an excellent artisan.
@@ -114,7 +114,7 @@ tree burden wisdom huge~
 ~
 25 6 3 0 7 0 0 0 0 0 0
 82311 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tree burden~
 &+MA huge tree exit.
@@ -126,7 +126,7 @@ long white feather~
 ~
 9 50 2 0 7 0 1 524289 64 0 0
 4 0 0 1 0 0 0 0
-1 7000 100
+1 7000 100 100
 E
 long white feather~
 &+WA long white feather.
@@ -142,7 +142,7 @@ iron key~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 iron key~
 &+LA large iron key.
@@ -154,7 +154,7 @@ dragon scale~
 ~
 9 35 3 0 7 0 4097 16385 64 0 0
 12 0 0 5 0 0 0 0
-5 12000 100 4 0 0 0
+5 12000 100 100 4 0 0 0
 E
 dragon scale~
 &+WA scale from a magical dragon.
@@ -168,7 +168,7 @@ ancient mansion~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 82325 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ancient mansion~
 &+LAn ancient mansion that has nearly succumbed to the treacherous swamp.
@@ -180,7 +180,7 @@ ancient mansion~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 82324 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ancient mansion~
 &+LAn exit from the large mansion.
@@ -192,7 +192,7 @@ slime dried~
 ~
 9 43 3 0 5 0 131072 262145 64 0 0
 10 0 0 2 0 0 0 0
-1 11000 100
+1 11000 100 100
 E
 slime dried~
 &+GSome dried up slime along with some vines and moss.  It seems to resemble a
@@ -209,7 +209,7 @@ flaming athame~
 ~
 5 23 3 0 12 3 5120 8193 64 46304928 0
 2 3 4 11 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 flaming athame~
 &+LA flaming dagger.
@@ -225,7 +225,7 @@ fire fireplace place~
 ~
 15 37 3 0 10 0 262144 0 0 0 0
 10 0 0 10 0 0 0 0
-999 1 100
+999 1 100 100
 E
 fire fireplace place~
 &+LA magically lit fireplace that illuminates the room.
@@ -237,7 +237,7 @@ green feather~
 ~
 9 50 3 0 7 0 0 524289 64 0 0
 3 0 0 1 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 green feather~
 &+GA long green feather.
@@ -253,7 +253,7 @@ sphere energy positive~
 ~
 15 23 3 0 15 0 0 0 0 0 0
 20 29 82319 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 sphere energy~
 &+CThis sphere spews out its energy without restraint.  It's warm to the touch,
@@ -266,7 +266,7 @@ sphere negative energy~
 ~
 18 23 3 0 15 0 8392705 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 charge negative~
 &+LThis eletric charge spews out negative energy.
@@ -278,7 +278,7 @@ large stone key~
 ~
 18 11 3 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 large stone key~
 &+YA large stone key.
@@ -290,7 +290,7 @@ spellbook arcane magic~
 ~
 33 3 3 0 15 2 5121 16385 64 37883552 0
 5 0 250 3 0 0 0 0
-5 13000 100
+5 13000 100 100
 E
 arcane spellbook~
 &+WThis large book is three inches thick.  Within it lies the secrets of the
@@ -307,7 +307,7 @@ smooth cube marble~
 ~
 9 38 3 0 7 0 1025 540673 64 4214660 0
 3 0 0 3 0 0 0 0
-5 13000 100 0 16 0 0
+5 13000 100 100 0 16 0 0
 E
 smooth cube marble~
 &+WThis marble cube has a strange aura too it.  It glows softly and must have
@@ -324,7 +324,7 @@ an old &+ywooden&n sign is here nailed to a post.~
 ~
 16 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wooden~
    &+WFood for werewolf?  Go north!&n  -Chief MunChelf

@@ -186,7 +186,7 @@ E 1 120011 20 16 100 0 0 0         *   a heavy mithril dwarven hammer
 E 1 120009 14 5 100 0 0 0          *   a full suit of well-polished mithril platemail
 M 0 120022 5 121219 100 0 0 0      * a halfling traveler
 M 0 120027 5 121219 100 0 0 0      * a duergar dwarf
-M 0 120035 1 121220 100 0 0 0      * A gnome eyeglasses merchant
+M 0 120035 1 121220 100 0 0 0      * a gnome eyeglasses merchant
 G 1 120016 1 0 100 0 0 0           *    a pair of blue-tinted gnomish eyeglasses
 G 1 120014 999 0 100 0 0 0         *    a pair of gnomish eyeglasses
 G 1 120015 999 0 100 0 0 0         *    a pair of pink-tinted gnomish eyeglasses

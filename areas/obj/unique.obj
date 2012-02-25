@@ -5,7 +5,7 @@ mask bahamut vigor unique~
 ~
 8 25 10 0 15 0 335651849 278529 65 67108888 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mask bahamut vigor unique~
 &+W                        /\             /\
@@ -36,7 +36,7 @@ platemail dragon horde unique~
 ~
 9 1 10 1 15 0 268443657 16393 64 0 0
 50 0 0 5 0 0 0 0
-20 0 100 524288 0 0 0
+20 0 100 100 524288 0 0 0
 A
 13 50
 A
@@ -48,7 +48,7 @@ boots inertia unique~
 ~
 9 19 10 0 15 0 335586305 16449 64 67108888 0
 0 0 0 5 0 0 0 0
-0 0 100 0 0 524288 0
+0 0 100 100 0 0 524288 0
 E
 boots inertia unique~
 &+W  These adamant&+wium boot&+Ls seem to be&+b like none othe&+rr.  Th&+Le magic
@@ -64,7 +64,7 @@ unique vapor swirling haze green~
 ~
 9 1 10 0 15 0 335655049 33 64 0 0
 10 0 0 5 0 0 0 0
-1 345 100
+1 345 100 100
 E
 unique vapor green haze swirling~
 &+LYou gaze at the green vapor swirling before your eyes.  Ever twisting
@@ -91,7 +91,7 @@ tendrils shadow misty wisps darkness unique~
 ~
 9 1 10 0 15 100 268443649 16393 64 0 0
 40 0 0 5 1 0 0 0
-1 0 100 16 0 0 0
+1 0 100 100 16 0 0 0
 E
 tendrils shadowy mist unique~
 Wisps of streaming darkness swirl and intertwine with the light, creating
@@ -107,7 +107,7 @@ blade ether ethereal unique~
 ~
 5 1 10 0 15 0 268443904 8396801 64 0 0
 5 5 5 3 0 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -124,7 +124,7 @@ scimitar wicked unique~
 ~
 5 1 10 0 15 0 285222144 8413185 64 87572483 0
 5 3 8 3 0 0 0 0
-0 0 100 80 0 0 0
+0 0 100 100 80 0 0 0
 A
 18 6
 A
@@ -136,7 +136,7 @@ staff air swirling magic unique~
 ~
 4 1 10 0 15 0 286401793 16385 64 2048 0
 12 1 6 6 0 0 0 0
-5 0 100 524288 0 0 0
+5 0 100 100 524288 0 0 0
 E
 staff air swirling magic~
 &+cThis staff appears to be a &+Ws&+Cw&+Bi&+brling&+c cloud of &+Cair &+Ws&+Cp&+Bi&+bralling &+caround an
@@ -155,7 +155,7 @@ totem three pronged three-pronged naga queen unique~
 ~
 34 40 10 0 15 0 268444672 16385 64 131328 0
 63 0 0 0 0 0 0 0
-0 0 100 524288 0 0 0
+0 0 100 100 524288 0 0 0
 A
 13 25
 A
@@ -167,7 +167,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -180,7 +180,7 @@ orb fire flame elemental unique~
 ~
 11 31 10 0 15 0 268444673 16385 64 33685920 0
 0 0 0 0 0 0 0 0
-0 0 100 536870912 32768 0 0
+0 0 100 100 536870912 32768 0 0
 E
 orb fire flame elemental unique~
 &+rThis small &+Mglowing&+r orb gives off an aura of great power.&N
@@ -196,7 +196,7 @@ token token unique~
 ~
 13 1 10 0 15 0 268541953 8404993 64 0 0
 15 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -209,7 +209,7 @@ dragonbone eternity bow longbow carved unique~
 ~
 6 10 3 5 14 0 272900097 8193 66 47058852 0
 140 140 40 1 0 0 0 0
-6 86273 100 268435472 0 0 0
+6 86273 100 100 268435472 0 0 0
 E
 dragonbone eternity bow longbow carved~
 &+yCarved from the &+Wspine&+y of a venerable &+Rred&+y dragon, and
@@ -229,7 +229,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -242,7 +242,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -255,7 +255,7 @@ belt iron solidarity unique~
 ~
 9 15 10 0 15 0 268443648 18433 64 0 0
 7 0 0 5 0 0 0 0
-0 0 100 2147483648 0 0 0
+0 0 100 100 2147483648 0 0 0
 #67216
 token token unique~
 &+Wa shimmering &+Ygolden token&N~
@@ -263,7 +263,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -276,7 +276,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -289,7 +289,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -302,7 +302,7 @@ heart dark black unique~
 ~
 37 6 10 0 15 0 268444161 16897 64 4219732032 470155276
 1 5 3 5 4 0 0 0
-30 0 100 536870912 80 0 0
+30 0 100 100 536870912 80 0 0
 E
 heart dark black unique~
 &+LA pulsating slab of darkest wood. An aura of confusion and
@@ -320,7 +320,7 @@ chunk shaped golem unique~
 ~
 9 15 10 0 7 0 268443649 16393 64 0 0
 10 0 0 5 0 0 0 0
-0 0 100 0 1024 0 0
+0 0 100 100 0 1024 0 0
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -333,7 +333,7 @@ cloak transparent tri lord tri-lord~
 ~
 9 1 10 0 15 0 8192 17409 64 0 0
 15 0 0 1 0 0 0 0
-0 0 100 134217728 0 0 0
+0 0 100 100 134217728 0 0 0
 A
 13 20
 #67222
@@ -343,7 +343,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -356,7 +356,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -369,7 +369,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -382,7 +382,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -395,7 +395,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -408,7 +408,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -421,7 +421,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -434,7 +434,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -447,7 +447,7 @@ eyes mindflayer unique~
 ~
 11 2 10 0 15 0 268443649 147457 64 4160749568 2048
 0 0 0 0 0 0 0 0
-0 0 100 44 28 0 83886080
+0 0 100 100 44 28 0 83886080
 E
 eyes mindflayer unique~
 &+L  Torn from the corpse of an &+Millithid&+L and bound by magical energies, this
@@ -463,7 +463,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -476,7 +476,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -489,7 +489,7 @@ some &+Wp&+Ll&+Wa&+Lt&+We&+Lm&+Wa&+Li&+Wl &+gof &Ncolorless &+gsalamander &+Gs&+
 ~
 9 47 10 0 15 0 268443648 16393 64 0 0
 20 0 0 4 0 0 0 0
-0 0 100 0 2048 0 0
+0 0 100 100 0 2048 0 0
 A
 13 40
 A
@@ -501,7 +501,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -514,7 +514,7 @@ robe lost souls unique~
 ~
 9 3 10 0 15 0 268444672 17417 64 12619268 0
 15 0 0 1 0 0 0 0
-4 0 100 524288 0 0 0
+4 0 100 100 524288 0 0 0
 E
 robe lost souls unique~
 &+L  Throughout the ages, &+WEuronymous&+L, &+RDevil &+rPrince&+L of Anti-paladins has
@@ -533,7 +533,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -546,7 +546,7 @@ blade serpent unique~
 ~
 5 47 10 0 15 0 285222144 8396801 64 16384 0
 2 4 4 11 0 0 0 0
-0 0 100 16 4096 0 0
+0 0 100 100 16 4096 0 0
 A
 18 4
 A
@@ -558,7 +558,7 @@ sleeves platinum life unique~
 ~
 9 25 10 0 15 0 268444672 16641 64 95993947 0
 10 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 50
 A
@@ -570,7 +570,7 @@ door large gold rimmed gold-rimmed church unique~
 ~
 37 6 10 0 15 0 268445184 16897 64 16385 50397958
 1 3 5 250 5 0 0 0
-30 0 100 16 0 0 0
+30 0 100 100 16 0 0 0
 E
 door large gold rimmed gold-rimmed church unique~
 &+Y        Ripped off         &N
@@ -609,7 +609,7 @@ dragon sakaslan skull unique~
 ~
 9 35 10 0 15 0 268447744 17 64 0 0
 -40 0 0 0 0 0 0 0
-0 0 100 0 0 1048576 0
+0 0 100 100 0 0 1048576 0
 E
 dragon sakaslan skull unique~
 &+LThis is the remains of the skull of the great dragon, Sakaslan.  Imbued
@@ -628,7 +628,7 @@ ball ice crystal unique~
 ~
 11 8 10 1 15 0 268477440 16385 64 37883808 0
 0 0 0 0 0 0 0 0
-1 98696 100 524292 0 0 0
+1 98696 100 100 524292 0 0 0
 E
 ice crystal ball~
    &+gSaid to be formed from the &+Ldying &+Cbreath &+gof an &+Wancient white wyrm, &+gthis &+Cice
@@ -646,7 +646,7 @@ spine twisted staff lich lord unique~
 ~
 5 10 10 0 15 0 268477440 24577 64 1024 0
 12 5 5 6 0 0 0 0
-5 0 100 16 0 0 0
+5 0 100 100 16 0 0 0
 E
 staff twisted spine skull lich unique~
  &+LThis powerful weapon is the &+rcharred &+ws&+Lp&+wi&+Ln&+we &+Lof the Li&+mc&+Lh L&+mo&+Lrd
@@ -668,7 +668,7 @@ necroplasm plasm blob~
 ~
 9 1 10 0 15 0 268444704 1 64 37752708 256
 10 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blob necroplasm unique~
 &+LThis mass of dark ooze pulses with a life of its own.&N
@@ -682,7 +682,7 @@ band emerald flames unique~
 ~
 9 1 10 0 15 0 268444672 20481 64 13405700 0
 11 0 0 2 0 0 0 0
-0 0 100 536870912 0 0 0
+0 0 100 100 536870912 0 0 0
 A
 20 -3
 #67245
@@ -692,7 +692,7 @@ lightning rod unique~
 ~
 5 1 10 0 15 0 335586313 24577 64 46305188 0
 10 4 4 7 0 0 0 0
-0 1 100 536870948 16 0 0
+0 1 100 100 536870948 16 0 0
 E
 lightning rod unique~
 &+W  This humming shaft of pure &+Bmagic &+Wis surrounded by &+bblue &+Ccrackling &+Blightning&+W.
@@ -710,7 +710,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -723,7 +723,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -736,7 +736,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -749,7 +749,7 @@ dirk vigor unique~
 ~
 5 19 10 0 15 0 285222152 8413185 64 77825 0
 2 4 4 11 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dirk vigor unique~
 &+L   The Dirk of &+gVigor&+L has a razor sharp blade 18 inches long crafted from jet
@@ -767,7 +767,7 @@ songbird charm gilded unique~
 ~
 9 24 10 2 15 0 335590409 20481 64 12619268 0
 15 0 0 3 0 0 0 0
-1 826232 100 36 0 0 0
+1 826232 100 100 36 0 0 0
 E
 gilded songbird charm unique~
 &+W   Dangling from a thick entertwined chain of &+Ygold &+Wand &+csilver&+W,
@@ -794,7 +794,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -807,7 +807,7 @@ A &+cfr&+Wost&+c-co&+Cver&+ced &+Cbrai&+cde&+Cd ne&+cck&+Clac&+ce&n lies here.~
 ~
 11 40 10 0 15 0 268443656 16389 65 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 necklace braided frost ice unique~
 This &+Cneck&+clac&+Ce&n appears to have been created from
@@ -824,7 +824,7 @@ instrument lyrical mastery box unique~
 ~
 32 6 10 0 15 0 268444680 16385 64 42107424 0
 184 56 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 machine music halfling~
 &+yThis small garish device was created by the Tinytoes clan to teach&N
@@ -846,7 +846,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -859,7 +859,7 @@ A pair of &+gsleeves&n made from the tough &+Ghide&n of a &+Ggar&+gtha&+Gm&n lie
 ~
 9 12 10 0 15 0 268443656 16641 64 0 0
 5 0 0 3 0 0 0 0
-5 0 100
+5 0 100 100
 E
 gartham sleeves unique~
      Made from tough &+Ggart&+gha&+Gm hide&n, this set of &+gsle&+Gev&+ges&n is
@@ -877,7 +877,7 @@ cloak unique~
 ~
 9 1 10 0 15 0 268443657 16389 65 0 0
 15 0 0 1 0 0 0 0
-0 0 100 32 0 0 0
+0 0 100 100 32 0 0 0
 E
 unique cloak~
 Thousands of tiny crystals have been encrusted into the fabric of this small
@@ -897,7 +897,7 @@ totem sacred minthka unique~
 ~
 34 1 10 0 15 100 268477449 16385 66 256 0
 63 0 0 0 0 0 0 0
-1 1 100 0 16 0 0
+1 1 100 100 0 16 0 0
 E
 sacred totem minthka unique~
 &+LThe totem is carved from a obsidian and depicts one of the
@@ -917,7 +917,7 @@ saber unique icicle sword~
 ~
 5 22 10 0 15 0 285352200 8193 65 0 0
 5 5 4 3 0 8 40 20
-3 0 100 0 64 0 0
+3 0 100 100 0 64 0 0
 E
 unique saber icicle sword~
 &+cThis silver saber is 5 feet long and has &+Wice&+c clinging to the blade.  It
@@ -946,7 +946,7 @@ A pair of gloves lies here.~
 ~
 9 2 10 0 15 0 268476424 16513 64 0 0
 0 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 25
 A
@@ -958,7 +958,7 @@ splinter wagon unique~
 ~
 11 6 10 0 15 0 268443657 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 2 20
 #67261
@@ -968,7 +968,7 @@ armor crabshell unique~
 ~
 9 47 10 0 15 0 268444680 16393 64 77824 0
 15 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 5
 A
@@ -980,7 +980,7 @@ mace wonderous watery unique~
 ~
 5 40 10 0 15 0 268706824 24577 64 37883808 0
 6 3 5 7 0 0 0 0
-0 0 100
+0 0 100 100
 A
 4 5
 A
@@ -992,7 +992,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -1005,7 +1005,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -1018,7 +1018,7 @@ ring skull raven unique~
 ~
 11 10 10 0 15 0 268444680 16387 64 33685920 0
 0 0 0 0 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 E
 ring skull raven unique~
 &+L       The small &+Wivory skull &+Lof some bird is threaded into a circle
@@ -1040,7 +1040,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -1053,7 +1053,7 @@ face zarbon twisted tormented unique~
 ~
 11 2 10 0 15 0 268443656 278529 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 5 12
 A
@@ -1065,7 +1065,7 @@ cord umbilical pregnant unique~
 ~
 11 2 10 0 15 0 268443656 20481 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cord umbilical pregnant unique~
 &+rThe slimy tissue still pulses with the lifeforce of the Duergar&N
@@ -1082,7 +1082,7 @@ unique tentacle earring severed~
 ~
 9 15 10 0 15 0 335589385 524289 64 0 0
 1 0 0 1 0 0 0 0
-0 826231 100
+0 826231 100 100
 E
 token token unique~
 &+w   This earring seems to have been crafted from a dried &+rtentacle &+wof
@@ -1101,7 +1101,7 @@ bracelet snake scales poisonous unique~
 ~
 11 47 10 0 15 0 268443656 20481 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 20 -2
 A
@@ -1113,7 +1113,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -1126,7 +1126,7 @@ visage face dranum unique~
 ~
 9 2 10 0 15 0 268443648 278529 64 0 0
 15 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 visage face dranum unique~
 &+LDranum's &+Rterrifying &+rvisagew &+Lis enough to make his enemies cower in fear.&N
@@ -1142,7 +1142,7 @@ face wailing drow banshee unique~
 ~
 11 2 10 0 15 0 268444672 278529 64 4196864 0
 0 0 0 0 0 0 0 0
-0 0 100 0 32896 0 0
+0 0 100 100 0 32896 0 0
 E
 face wailing drow banshee unique~
 &+LThis mask is of the shocked &+mface &+Lof a &+MDrow Banshee &+Lwhose&N
@@ -1161,7 +1161,7 @@ the &+Lblackened &+ystaff &nof &+rNet&+whe&+rril&n~
 ~
 5 8 10 0 15 0 268444673 8193 64 4197888 134217728
 12 4 5 3 0 0 0 0
-2 0 100
+2 0 100 100
 E
 staff blackened netheril~
   Shortly before the fall of the great Netherse empire, a powerful, but paranoid
@@ -1194,7 +1194,7 @@ corpse roper petrified unique~
 ~
 5 11 10 0 15 0 272639232 24577 64 85458945 3783933
 10 3 25 6 0 0 0 0
-30 0 100
+30 0 100 100
 A
 18 -5
 A
@@ -1206,7 +1206,7 @@ a slender &+Wsword&n seems to &+Cw&+ch&+Ci&+cr&+Cl&n as it rests on the ground.&
 ~
 5 1 3 4 15 0 285213953 8193 64 87572483 0
 5 5 5 3 0 0 0 0
-10 826238 100 33554448 0 0 0
+10 826238 100 100 33554448 0 0 0
 A
 18 5
 A
@@ -1220,7 +1220,7 @@ token token unique~
 ~
 8 15 10 0 7 0 335646729 8388609 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 token token unique~
 &+WThis is a unique item token. Petition to the gods when&N
@@ -1233,7 +1233,7 @@ soulsword soul sword unique~
 ~
 5 16 3 4 15 0 33563648 8193 66 87572483 0
 5 3 6 3 0 219 41 40
-7 1 100
+7 1 100 100
 E
 soulsword soul sword unique~
 &+WBy harnessing the powers of cosmocy, this &+Yblade&+W has been infused
@@ -1263,7 +1263,7 @@ A pistol lies in the muck here.~
 ~
 12 15 3 0 7 0 73736 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #67280
 death ring tezcatlipoca unique~
 &+La death ring of &+bT&+Le&+bz&+bc&+La&+bt&+Ll&+bi&+Lp&+bo&+Lc&+ba&n~
@@ -1271,7 +1271,7 @@ death ring tezcatlipoca unique~
 ~
 9 35 3 0 15 70 268443656 100663299 64 4160749568 0
 8 0 0 5 0 0 0 0
-0 33330 100 128 0 0 0
+0 33330 100 100 128 0 0 0
 E
 death ring tezcatlipoca unique~
 &+L   This ring seems to be constructed from living nightmares.  Spikes of
@@ -1295,7 +1295,7 @@ cloak stalker unique~
 ~
 11 3 3 0 7 100 268443680 1025 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100 1572868 0 0 0
+1 1 100 100 1572868 0 0 0
 E
 cloak stalker unique~
 &+L   This cloak is made of magically imbued cloth which enables its wearer to
@@ -1313,7 +1313,7 @@ The orb lie here.~
 ~
 12 8 3 0 15 0 69672 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 8 0 0 0
+0 0 100 100 8 0 0 0
 A
 34 4
 A

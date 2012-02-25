@@ -5,7 +5,7 @@ wagon _id_~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wagon~
    &+yThis wagon is truely in a bad state. It looks as if a
@@ -23,7 +23,7 @@ ladder~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ladder~
 &+c   This iron ladder is covered with rust due to the constant
@@ -38,7 +38,7 @@ pool water~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 24102 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #24104
 pool water~
 &+ma &+bpool &+mof water&n~
@@ -46,7 +46,7 @@ pool water~
 ~
 25 15 3 0 5 0 8192 0 0 0 0
 24108 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
 Entrance into this pool of water appears possible, however, the current
@@ -59,7 +59,7 @@ chain~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chain~
     The chain is quite thick, each link two feet long and one foot wide.
@@ -74,7 +74,7 @@ The &+rcurved claw of a &+Ldemon&n lies here.&n~
 ~
 5 15 3 0 5 0 4104 8193 0 0 0
 5 3 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 3
 A
@@ -86,7 +86,7 @@ river lava~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #24108
 pool lake~
 &+ra pool from demon lake to the river&n~
@@ -94,7 +94,7 @@ pool lake~
 ~
 25 15 3 0 5 0 2 0 0 0 0
 24229 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #24109
 pool lake~
 &+ra pool from river to demon lake&n~
@@ -102,4 +102,4 @@ pool lake~
 ~
 25 15 3 0 5 0 8194 0 0 0 0
 24218 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100

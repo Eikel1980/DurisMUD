@@ -5,7 +5,7 @@ fountain~
 ~
 17 11 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-3000 0 100
+3000 0 100 100
 E
 fountain~
 Strangely enough, this fountain seem almost as old as the ancient trees
@@ -23,7 +23,7 @@ the corpse of a doe~
 ~
 13 2 3 30 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 doe corpse~
 There is no sign of what killed this poor animal, it seems to have
@@ -37,7 +37,7 @@ the corpse of a sparrow~
 ~
 13 2 3 30 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sparrow corpse~
 This small corpse has begun rotting already, it is impossible to
@@ -51,7 +51,7 @@ the corpse of a logger~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 logger corpse~
 It is clear that whatever killed the logger was incredibly poweful.
@@ -69,7 +69,7 @@ ax axe~
 ~
 13 16 3 8 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 ax axe~
 The thick haft of this huge logging ax was snapped into two pieces,
@@ -83,7 +83,7 @@ A &+Rred&N and &+Lblack&N &+Lch&+Rec&+Lke&+Rred&N shirt has been dropped here.~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-0 75 100
+0 75 100 100
 E
 shirt~
 This red and black checkered shirt has enough brilliant color to it
@@ -99,7 +99,7 @@ pants~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 0 0 4 0 0 0 0
-1 75 100
+1 75 100 100
 E
 pants~
 Made of a thick durable canvas, these dark pants protect from thorns
@@ -115,7 +115,7 @@ ax axe~
 ~
 5 16 3 8 7 0 0 8193 0 4198895524 0
 1 1 3 3 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 ax axe~
 The weight of the heavy blade increases the momentum and the force of
@@ -132,7 +132,7 @@ robe~
 ~
 11 3 3 8 7 0 536879104 9 0 0 0
 0 0 0 4 0 0 0 0
-3 2500 100
+3 2500 100 100
 E
 robe~
 Deep purple dyes have soaked into every thread of this elegant robe.
@@ -151,7 +151,7 @@ oak bear totem~
 ~
 34 5 2 2 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-1 350 100
+1 350 100 100
 E
 oak bear~
 This beautifully carved bear has been well cared for.  By carving with
@@ -168,7 +168,7 @@ onyx totem~
 ~
 34 11 2 2 7 0 0 16385 0 0 0
 20 0 0 0 0 0 0 0
-1 550 100
+1 550 100 100
 E
 onyx totem~
 This sacred totem has been worn smooth from years of use, but the
@@ -187,7 +187,7 @@ tusk totem~
 ~
 34 10 2 2 7 0 0 16385 0 0 0
 5 0 0 0 0 0 0 0
-1 550 100
+1 550 100 100
 E
 tusk totem~
 Strange runes have been carved into every surface of this thin tusk.
@@ -205,7 +205,7 @@ staff~
 ~
 5 6 3 10 7 0 262144 24577 0 0 0
 12 1 8 7 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 staff~
 One of the staple tools of the traveling mage, this staff is more of a
@@ -223,7 +223,7 @@ sword~
 ~
 5 16 3 10 7 0 4195328 8193 0 87572571 0
 5 4 8 3 0 0 0 0
-15 25000 100 65536 8 0 0
+15 25000 100 100 65536 8 0 0
 E
 sword~
 No normal metal has such an evil hue.  This sword gleams with a
@@ -245,7 +245,7 @@ plate platemail armor~
 ~
 9 16 3 25 7 0 163840 9 0 4173708804 0
 25 3 1 3 1 0 0 0
-25 35000 100
+25 35000 100 100
 E
 plate platemail armor~
 Symbols of dark gods and goddesses have been etched onto every possible
@@ -266,7 +266,7 @@ scale dragon gold~
 ~
 37 35 3 0 10 0 134283264 513 0 4173708804 0
 2 1 3 15 5 0 0 0
-15 45000 100 8192 0 0 0
+15 45000 100 100 8192 0 0 0
 E
 scale dragon~
 This golden scale is harder than any metal, and yet isn't really a
@@ -288,7 +288,7 @@ A broken mithral lance has been tossed here.~
 ~
 13 18 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 lance~
 Once a fine weapon, this horseman's lance has been cleanly snapped in
@@ -304,7 +304,7 @@ mask feathers~
 ~
 11 50 3 3 7 0 8192 262145 0 0 0
 0 0 0 0 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 mask~
 White owl feathers have been carefully arranged to create a mask that
@@ -322,7 +322,7 @@ hood~
 ~
 11 3 8 0 7 0 1073741824 17 0 0 0
 0 0 0 5 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 hood~
 The skin of the head of a giant hawk was peeled away and treated so
@@ -342,7 +342,7 @@ bear skin~
 ~
 11 12 3 8 7 0 4096 1025 0 0 0
 0 0 0 5 0 0 0 0
-3 750 100
+3 750 100 100
 E
 bear skin~
 This extremely thick and sturdy skin can be made into a sturdy
@@ -360,7 +360,7 @@ bear skin~
 ~
 11 12 3 8 7 0 4096 1025 0 0 0
 0 0 0 5 0 0 0 0
-3 750 100
+3 750 100 100
 E
 bear skin black~
 This huge black hide can be used as a traveling cloak, or even as a
@@ -378,7 +378,7 @@ bear skin~
 ~
 11 12 3 8 7 0 0 1025 0 0 0
 0 0 0 5 0 0 0 0
-5 1 100
+5 1 100 100
 E
 bear skin huge~
 This skin is so large that it can't be used for much of anything
@@ -396,7 +396,7 @@ bobcat skin~
 ~
 9 12 3 8 7 0 0 17 0 0 0
 3 4 1 3 0 0 0 0
-1 250 100
+1 250 100 100
 E
 bobcat skin~
 Careful skinning of a bobcat creates a beautiful spotted skin that can
@@ -410,7 +410,7 @@ wolverine claws~
 ~
 9 10 3 5 7 0 65536 129 0 0 0
 3 7 1 3 0 0 0 0
-1 250 100
+1 250 100 100
 E
 wolverine claws~
 The razor sharp claws make dangerous weapons when properly used.  If
@@ -426,7 +426,7 @@ badger pelt~
 ~
 13 12 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 badger pelt~
 This fine soft skin, with its layer of coarse hair, has an attractive
@@ -441,7 +441,7 @@ fox pelt~
 ~
 11 12 0 0 7 0 0 2049 0 0 0
 0 0 0 5 0 0 0 0
-1 200 100
+1 200 100 100
 E
 fox pelt~
 The fine soft fur of the red fox is highly valued in many major cities,
@@ -459,7 +459,7 @@ fur~
 ~
 11 3 3 0 7 0 0 1025 0 0 0
 0 0 0 5 0 0 0 0
-10 1350 100
+10 1350 100 100
 E
 fur~
 It isn't clear what beast this strange fur came from, but it is clearly
@@ -478,7 +478,7 @@ circlet pine~
 ~
 11 6 10 0 7 0 12288 4097 64 0 0
 0 0 0 3 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 circlet pine~
 This strange circlet of wood comes from the interior of an ancient,
@@ -498,7 +498,7 @@ pine ring~
 ~
 11 6 10 1 7 0 77824 3 0 0 0
 0 0 0 3 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 pine ring~
 This small ring of pine is far harder than one would expect.  The pale
@@ -518,7 +518,7 @@ spruce globe~
 ~
 11 6 2 0 7 0 77824 16385 0 0 0
 0 0 0 3 0 0 0 0
-2 3000 100
+2 3000 100 100
 E
 spruce globe~
 This odd wooden globe is perfectly smooth, a perfection that could have
@@ -537,7 +537,7 @@ heart pine~
 ~
 11 6 10 0 7 0 12288 16385 0 0 0
 0 0 0 8 0 0 0 0
-2 45000 100
+2 45000 100 100
 E
 heart pine~
 This strange pulsing globe was once the heart of an ancient red pine.
@@ -556,7 +556,7 @@ plate mithral~
 ~
 9 18 8 0 9 0 0 9 0 4173708804 0
 18 3 1 4 0 0 0 0
-8 6500 100
+8 6500 100 100
 E
 plate~
 This fine mithral plate bears the clear sign of dwarven workmanship, as
@@ -571,7 +571,7 @@ mace~
 ~
 5 16 3 8 7 0 0 8193 0 0 0
 6 1 3 7 0 0 0 0
-8 3500 100
+8 3500 100 100
 E
 mace~
 Whatever metal it is made of is surprisingly heavy.  Though it doesn't
@@ -589,7 +589,7 @@ chain chainmail~
 ~
 9 16 8 10 9 0 0 9 64 4173708804 0
 12 3 1 3 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 chain~
 Deep green coloration has been added to this fine suit of elven chain
@@ -604,7 +604,7 @@ scimitar~
 ~
 5 16 3 10 7 0 128 8193 0 4165209604 0
 9 2 5 3 0 0 0 0
-3 3500 100
+3 3500 100 100
 E
 scimitar~
 Strange markings have been engraved into this fine blade, though what
@@ -624,7 +624,7 @@ An unadorned long sword has been dropped here.~
 ~
 5 16 3 10 7 0 1114112 8193 0 4198895524 0
 5 2 6 3 0 0 0 0
-4 2500 100
+4 2500 100 100
 E
 sword~
 This otherwise plain blade has an unmistakably sharp edge and fine
@@ -642,7 +642,7 @@ bracelet~
 ~
 11 30 10 3 7 0 4096 4097 0 0 0
 0 0 0 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 bracelet~
 Fresh green pine needles have been woven together to form an odd
@@ -661,7 +661,7 @@ robe~
 ~
 11 3 8 8 7 0 8192 1025 0 0 0
 0 0 0 4 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 robe~
 Fresh green pine needles have been intertwined in a complex pattern to
@@ -678,7 +678,7 @@ ring gold signet~
 ~
 9 24 1 1 8 0 4096 3 0 0 0
 5 0 0 2 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 ring~
 Heavy gold has been used to create a thick ring that bears a complex
@@ -695,7 +695,7 @@ ring~
 ~
 11 16 1 1 7 0 0 3 0 0 0
 0 0 0 1 0 0 0 0
-0 2300 100
+0 2300 100 100
 E
 ring~
 Made of some base, weak metal, this ring has not stood up well to abuse.
@@ -713,7 +713,7 @@ boots plate~
 ~
 9 16 3 8 7 0 0 65 0 0 0
 8 6 1 3 0 0 0 0
-14 3500 100
+14 3500 100 100
 E
 boots~
 These strange heavy boots have been constructed with overlapping plates
@@ -729,7 +729,7 @@ ax~
 ~
 5 16 3 0 7 0 0 8193 0 4198895524 0
 1 1 8 3 0 0 0 0
-14 1000 100
+14 1000 100 100
 E
 ax~
 This ax once had a fine sharp blade but its most recent owner was too
@@ -747,7 +747,7 @@ boots~
 ~
 9 13 3 8 7 0 0 65 0 4165209604 0
 5 6 1 3 0 0 0 0
-2 1500 100
+2 1500 100 100
 E
 boots~
 These boots are still new, the stiff leather hasn't had time to soften
@@ -766,7 +766,7 @@ dress slinky~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-0 500 100
+0 500 100 100
 E
 dress slinky~
 The tight-fitting sheer fabric is designed to show more than it
@@ -782,7 +782,7 @@ dress yellow~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 0 0 4 0 0 0 0
-1 300 100
+1 300 100 100
 E
 dress yellow~
 Despite its bright coloration this is a simple dress like those worn by
@@ -797,7 +797,7 @@ necklace~
 ~
 11 2 3 2 7 0 65664 5 0 0 0
 0 0 0 5 0 0 0 0
-1 20 100
+1 20 100 100
 E
 necklace~
 This necklace is the creation of a demented mind.  Rotting hawk feet
@@ -816,7 +816,7 @@ hat~
 ~
 11 3 3 3 7 0 0 17 0 0 0
 0 0 0 4 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 hat~
 A small emblem on the inner part of the hat indicates that its owner
@@ -834,7 +834,7 @@ sack~
 ~
 15 3 3 10 7 0 0 16385 0 0 0
 50 5 0 100 0 0 0 0
-1 35 100
+1 35 100 100
 E
 sack~
 This shapeless sack is large enough to hold a great deal.  It has no
@@ -848,7 +848,7 @@ jacket~
 ~
 9 13 8 0 9 0 8192 9 0 0 0
 14 3 1 5 0 0 0 0
-15 3500 100
+15 3500 100 100
 E
 jacket~
 Skin from the arms and legs of several brown bears has been carefully
@@ -865,7 +865,7 @@ leggings~
 ~
 9 12 8 8 9 0 0 33 0 0 0
 5 5 0 5 0 0 0 0
-4 2000 100
+4 2000 100 100
 E
 leggings~
 Whoever made these leggings was clearly saving the larger part of the
@@ -882,7 +882,7 @@ coat~
 ~
 15 12 3 8 7 0 0 1025 0 0 0
 10 0 0 100 0 0 0 0
-8 3500 100
+8 3500 100 100
 E
 coat~
 This fine coat could be worn by anyone of any status.  The lush thick
@@ -899,7 +899,7 @@ boots~
 ~
 9 12 8 8 9 0 8192 65 0 0 0
 5 6 0 3 0 0 0 0
-2 1300 100
+2 1300 100 100
 E
 boots~
 These odd boots have been made of well-tanned badgerskin.  The teeth
@@ -916,7 +916,7 @@ stole~
 ~
 11 12 3 0 7 0 0 5 0 0 0
 0 0 0 5 0 0 0 0
-0 100 100
+0 100 100 100
 E
 stole~
 The tails of a number of red foxes have been stitched together to
@@ -935,7 +935,7 @@ ring~
 ~
 11 16 1 1 7 0 0 3 0 0 0
 0 0 0 2 0 0 0 0
-0 2500 100
+0 2500 100 100
 E
 ring~
 The carefully inscribed and colored emblem of a &+rred hawk&N on the surface
@@ -953,7 +953,7 @@ bracelet~
 ~
 9 19 10 3 10 0 69632 4097 0 0 0
 3 11 1 4 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 bracelet~
 Made of fine blue steel, this plain bracelet will last for thousands of
@@ -970,7 +970,7 @@ diaper~
 ~
 13 3 2 0 7 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 diaper~
 This diaper was clearly left on some small child for WAY too much time.
@@ -984,7 +984,7 @@ khopesh sword~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 5 3 0 0 0 0
-20 5000 100
+20 5000 100 100
 E
 khopesh sword~
 This sword has a wide, heavy blade that has been designed to cut
@@ -1002,7 +1002,7 @@ whip~
 ~
 5 13 3 0 7 0 0 8193 0 4198895524 0
 14 1 3 2 0 0 0 0
-2 750 100
+2 750 100 100
 E
 whip~
 Small sharp stones have been wound into the ends of this horrible whi
@@ -1020,7 +1020,7 @@ a duergar corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 corpse duergar~
 This poor slave was whipped and beaten so badly that he just couldn't
@@ -1034,7 +1034,7 @@ chains iron~
 ~
 11 15 0 0 7 0 65664 4097 0 0 0
 0 0 0 1 0 0 0 0
-10 350 100
+10 350 100 100
 E
 chains iron~
 These heavy chains could keep anyone under control.  Loops of chain are
@@ -1052,7 +1052,7 @@ key~
 ~
 18 16 1 1 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 The weight and design of this key shows that it must open a very sturdy
@@ -1065,7 +1065,7 @@ key~
 ~
 18 16 1 1 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 key~
 This dull black iron key must fit a large lock of some sort, its very
@@ -1080,7 +1080,7 @@ A pc killing trap lies here.~
 ~
 13 16 0 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 trap~
 Hey, its a trap, pc's can't see it so who cares?
@@ -1094,7 +1094,7 @@ bin ore~
 ~
 15 16 4 0 7 0 0 0 0 0 0
 1000 1 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bin ore~
 This heavy looking bin has a closing lid that can be locked when it is
@@ -1108,7 +1108,7 @@ well~
 ~
 17 11 0 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 well~
 The plain stone of the well is like many other things in the village.
@@ -1124,7 +1124,7 @@ hammer~
 ~
 5 16 3 8 7 0 65536 8193 0 4173708804 0
 4 1 3 7 0 0 0 0
-8 2300 100
+8 2300 100 100
 E
 hammer~
 This heavy hammer has a smooth flat head on one side used to flatten
@@ -1143,7 +1143,7 @@ plate platemail armor~
 ~
 9 19 3 25 10 0 0 9 0 4173708804 0
 16 3 1 4 1 0 0 0
-12 10000 100
+12 10000 100 100
 E
 plate armor platemail~
 Made of pure &+Bblue steel&N, this well-crafted suit of armor is a piece
@@ -1160,7 +1160,7 @@ ax battle-ax~
 ~
 5 19 3 0 10 0 0 8193 0 4198895524 0
 1 1 5 3 0 0 0 0
-5 2300 100
+5 2300 100 100
 E
 ax battle-ax~
 This ax has been made of the finest &+Bblue steel&N, and the twin edges have
@@ -1179,7 +1179,7 @@ mace~
 ~
 5 19 3 8 10 0 0 8193 0 4173708804 0
 6 1 4 6 0 0 0 0
-5 3500 100
+5 3500 100 100
 E
 mace~
 Twelve sharp spikes surround the head of the mace, all spaced equal
@@ -1197,7 +1197,7 @@ A plain miner's pick lies here.~
 ~
 5 16 3 2 7 0 0 8193 0 4198895524 0
 15 1 4 11 0 0 0 0
-2 350 100
+2 350 100 100
 E
 pick~
 This plain pick is the standard tool of miner's throughout the world.
@@ -1210,7 +1210,7 @@ skull~
 ~
 15 10 3 0 7 0 65536 16385 0 0 0
 3 0 0 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 skull~
 This is clearly the skull of someone unlucky enough to stumble upon the
@@ -1225,7 +1225,7 @@ marble eye~
 ~
 11 38 0 0 7 0 4096 131073 0 0 0
 0 0 0 8 0 0 0 0
-0 3000 100
+0 3000 100 100
 E
 marble eye~
 This strange oblong green stone has a strange magical glow to it,
@@ -1245,7 +1245,7 @@ desk~
 ~
 15 11 4 0 7 0 0 0 0 0 0
 80 13 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk~
 Carved out of the stone walls when this room was hollowed out, this
@@ -1264,7 +1264,7 @@ A hidden spear trap is here to kill people.~
 ~
 15 16 5 50 7 0 2 0 0 0 0
 1 5 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 wall secret trap~
 This is a spear trap for outside the door into the duergar hideout.
@@ -1278,7 +1278,7 @@ sword longsword~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 6 3 0 0 0 0
-20 65000 100
+20 65000 100 100
 E
 sword longsword~
 This sword looks like something that was once extremely powerful.  Misuse
@@ -1293,7 +1293,7 @@ horn~
 ~
 5 10 3 0 7 0 135274496 8193 0 4194697632 0
 15 1 6 11 0 0 0 0
-8 65000 100 536870912 12480 0 0
+8 65000 100 100 536870912 12480 0 0
 E
 horn~
 The long, thin horn from an ancient dragon's head has as much value as a weapon
@@ -1316,7 +1316,7 @@ scale gold~
 ~
 13 35 0 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 scale~
 The edges of the scale have a greenish tint to them, the sign of a fairly young
@@ -1331,7 +1331,7 @@ scale~
 ~
 13 35 0 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 scale~
 This scale is from a dragon so old that it has taken on a brownish cast.
@@ -1347,7 +1347,7 @@ choker necklace emerald~
 ~
 9 32 3 2 7 0 134222848 5 0 37883812 0
 8 2 0 3 0 0 0 0
-1 35000 100 0 16 0 0
+1 35000 100 100 0 16 0 0
 E
 choker necklace~
 There is a magical quality to the small emeralds that have been so carefully
@@ -1367,7 +1367,7 @@ mace~
 ~
 5 16 3 8 7 0 4194304 8193 0 4173708804 0
 6 1 3 6 0 0 0 0
-30 35000 100 0 20 0 0
+30 35000 100 100 0 20 0 0
 E
 mace~
 Though one would expect a dragon to easily wield such a weapon in one hand,
@@ -1388,7 +1388,7 @@ totem~
 ~
 34 6 2 2 7 0 78848 16385 0 33685920 0
 48 0 0 0 0 0 0 0
-2 23000 100
+2 23000 100 100
 A
 17 -5
 #16081
@@ -1398,7 +1398,7 @@ dagger~
 ~
 5 24 2 3 7 0 150996240 8193 0 8486912 0
 2 1 3 11 0 0 0 0
-1 45000 100 536870912 0 64 0
+1 45000 100 100 536870912 0 64 0
 E
 dagger~
 This golden dagger has been made of some strange gold alloy.  The metal gleams
@@ -1416,7 +1416,7 @@ earring dragonscale~
 ~
 9 35 1 1 7 0 262144 524289 64 0 0
 5 14 0 3 0 0 0 0
-0 40000 100
+0 40000 100 100
 E
 earring dragonscale~
 Someone has broken off a fragment of a dragonscale and created a wonderful
@@ -1434,7 +1434,7 @@ hammer warhammer~
 ~
 5 16 3 8 7 0 4326400 8193 64 87556123 0
 4 1 3 6 0 0 0 0
-20 45000 100
+20 45000 100 100
 E
 hammer~
 Though quite massive, the hammer isn't really quite as heavy as it looks.  It
@@ -1452,7 +1452,7 @@ collar dragonscale~
 ~
 9 35 0 0 7 0 134217728 5 0 0 0
 10 2 1 3 0 0 0 0
-1 40000 100 0 8192 0 0
+1 40000 100 100 0 8192 0 0
 E
 collar dragonscale~
 Made of the toughest dragonscale around, this magical collar has far more
@@ -1469,7 +1469,7 @@ sword blessed~
 ~
 5 18 3 10 14 0 33792 8193 64 87572507 0
 5 1 5 3 0 0 0 0
-20 65000 100 8192 0 0 0
+20 65000 100 100 8192 0 0 0
 E
 sword~
 This beautifully crafted weapon has faint engravings along both sides of

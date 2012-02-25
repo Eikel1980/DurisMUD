@@ -5,7 +5,7 @@ a &+Ygold plaque&n~
 ~
 12 24 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gold plaque sign~
 &+Y .   .. ________________________________________________________________ ..   .
@@ -42,7 +42,7 @@ a &+Wplatinum&+L water basin&n~
 ~
 17 25 0 0 7 0 0 0 0 0 0
 -1 -1 17 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 platinum water basin~
    A holy water basin stands to the right of the entrance to the temple.  It
@@ -57,7 +57,7 @@ A heavy &+rSc&+Ror&+Ypi&+Won &+Lballista&n is here.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scorpion ballista~
 &+W   The &+Lballista&+W resembles a huge crossbow, except that this one has a huge
@@ -72,7 +72,7 @@ water ivory fountain~
 ~
 17 34 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-12019 0 100
+12019 0 100 100
 E
 fountain water ivory~
 &+w   A gigantic &+Wivory &+Bfountain &+wis settled in the middle of the room.  A &+Lstatue&N
@@ -121,7 +121,7 @@ an &+Lonyx plaque&n~
 ~
 12 11 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 onyx plaque~
 &+L .  .. ___________________                             __________________ .. .
@@ -161,7 +161,7 @@ the &+Wstatue&n on the left~
 ~
 12 11 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue lord kaynor noble man~
 &+W   Standing eight feet in height, this statue flanks the left side of the
@@ -188,7 +188,7 @@ the &+Wstatue&n on the right~
 ~
 12 11 6 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue lady tharnadia regal woman~
 &+W   Standing eight feet in height, this statue flanks the right side of the
@@ -213,7 +213,7 @@ a piece of &+Lfried &+ymutton&n~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 fried mutton~
    This succulent piece of mutton has been fried in Kiernar's special sauce:
@@ -227,7 +227,7 @@ a &+rsucculent &+Rroast&n~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 200 100
+1 200 100 100
 E
 succulent roast~
    Dripping with blood, this well marinated roast looks to be very good.
@@ -239,7 +239,7 @@ a light &+celvish &+Wpastry&n~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-0 50 100
+0 50 100 100
 E
 fluffy light elvish pastry~
    Made from a light batter and a heavy cream-like filling, this pastry is
@@ -252,7 +252,7 @@ an &+Liron stove&n~
 ~
 15 15 3 0 7 0 1 0 0 0 0
 25 1 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 iron wood-burning stove~
    This heavy iron stove has a small hatch in its front, through which wood
@@ -266,7 +266,7 @@ a &+Lstone &+rhearth&n~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 25 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone hearth~
    Made of hewn sarsen, this fireplace is set into the wall, its chimney
@@ -279,7 +279,7 @@ a &+Lstone &+Wdual &+rhearth&n~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone hearth dual~
    Made of hewn sarsen, this dual stove is set into the wall, its chimney
@@ -293,7 +293,7 @@ an &+Liron maiden&n~
 ~
 13 15 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wicked coffin iron maiden~
    This large iron maiden is filled with sharp stakes, each meant to pierce
@@ -307,7 +307,7 @@ a &+ywooden&n &+Wstall&n~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden stall~
    This small wooden stall stands about eight-feet tall, and is capped in a
@@ -321,7 +321,7 @@ a thick &+Lv&+wi&+Ws&+Yc&+Ri&+rd&+B potion&n~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 6 1 3 -1 0 0 0 0
-2 2500 100
+2 2500 100 100
 E
 viscid potion blue vial~
    Filled with a thick viscid fluid, this blue bottle-necked vial is slightly
@@ -342,7 +342,7 @@ A &+Wclear&n vial filled with &+Rcrimson&n fluid, has been left here.~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 6 16 -1 -1 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 clear vial crimson potion~
    This clear vial is filled with a crimson fluid, the glass blown into the
@@ -364,7 +364,7 @@ a &+Gs&+Yp&+Ge&+Yc&+Gk&+Yl&+Ge&+Yd &+ggreen&+W potion&n~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 21 35 -1 -1 0 0 0 0
-1 8567 100
+1 8567 100 100
 E
 bizarre vial speckled green potion~
    This strange-shaped vial is filled with a green liquid that has small
@@ -386,7 +386,7 @@ the &+Wlighthouse &+Rbeacon&n~
 ~
 12 16 1 2 7 0 262144 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orb vermillion beacon stand~
    The sphere is about a foot around in diameter, and securely held in place
@@ -401,7 +401,7 @@ a &+Wmap&+L of &+WTharnadia&n~
 ~
 12 28 1 1 10 0 270336 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 tourism map tharnadia~
     Northern
@@ -432,7 +432,7 @@ a &+Lbla&+wckst&+Weel &+Bcuirass&n~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 7 3 6 3 0 0 0 0
-50 2300 100
+50 2300 100 100
 E
 blacksteel cuirass breastplate~
    This upperbody plate is crafted from a mixture of steel and crushed onyx,
@@ -449,7 +449,7 @@ some &+Bvo&+cr&+Chi&+Wde &+Lleggings&n~
 ~
 9 16 3 8 7 0 0 33 0 4173696900 0
 6 5 1 3 0 0 0 0
-5 1103 100
+5 1103 100 100
 E
 chainmail vorhide leggings~
    Thick azure strips of vor hide have been bound to steel chainmail, creating
@@ -466,7 +466,7 @@ a &+Lbla&+wckst&+Weel &+Bcoif&n~
 ~
 9 16 3 10 7 0 0 17 0 4173708804 0
 6 4 1 3 0 0 0 0
-8 2500 100
+8 2500 100 100
 E
 chainmail blacksteel coif~
    This padded chainmail hood fits snuggly over the neck and head, leaving the
@@ -482,7 +482,7 @@ some &+Bvo&+cr&+Chi&+Wde &+Larmplates&n~
 ~
 9 13 0 0 7 0 0 257 0 4173696900 0
 7 8 1 3 0 0 0 0
-5 2740 100
+5 2740 100 100
 E
 vorhide armplates~
    The steel plates, that make up these sleeves, are covered in the thick blue
@@ -501,7 +501,7 @@ a heavy &+rf&+Ro&+Yr&+Wge &+Lhammer&n~
 ~
 5 16 3 8 7 0 1025 8193 64 87572571 0
 4 3 7 7 0 0 0 0
-20 10000 100
+20 10000 100 100
 E
 forge hammer~
    This heavy hammer is made from tempered adamantite, its head emblazoned
@@ -516,7 +516,7 @@ a &+yfishing pole&n~
 ~
 12 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 fishing pole~
    This fishing pole consists of a long treebranch with a thin rope and hook.
@@ -529,7 +529,7 @@ a &+Lloose brick&n~
 ~
 29 11 0 50 7 0 4096 0 0 0 0
 270 132619 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 loose brick~
    A previous prisoner must have spent many months loosening this brick, and
@@ -542,7 +542,7 @@ a &+Wst&+Ce&+cel &+Rcuirass&+L emblazoned with the insignia of &+WTharnadia&n~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 9 3 6 3 0 0 0 0
-50 11300 100
+50 11300 100 100
 E
 steel cuirass breastplate~
    This upperbody plate is crafted from a mixture of steel and crushed onyx,
@@ -557,7 +557,7 @@ a pair of &+Lbla&+wckst&+Weel&+L boots&n~
 ~
 9 16 3 8 7 0 0 65 0 4173708804 0
 6 6 1 3 0 0 0 0
-7 4300 100
+7 4300 100 100
 E
 boots blacksteel~
    These boots are made out of leather, with quarter-inch thick blacksteel
@@ -571,7 +571,7 @@ some &+Wspiked &+Lleather armor&n~
 ~
 9 13 0 0 7 0 8192 9 0 4165209604 0
 3 3 1 3 0 0 0 0
-20 500 100
+20 500 100 100
 E
 suit armor spiked leather~
 Made from thick leathers that have been boiled in oils then molded to a human
@@ -584,7 +584,7 @@ some &+Lleather leggings&n~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-4 300 100
+4 300 100 100
 E
 leggings leather~
    Made from thick leathers that have been boiled in oil for strength, these
@@ -600,7 +600,7 @@ a pair of &+Lhigh-soft leather boots&n~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 E
 boots leather soft high~
    Made of soft pantherhide, these boots come up just above the knees.  Laced
@@ -616,7 +616,7 @@ some &+Wspiked &+Lleather armor bearing the insignia of &+WTharnadia&n~
 ~
 9 13 0 0 10 18 8192 9 0 4165209604 0
 4 3 1 3 0 0 0 0
-8 3212 100
+8 3212 100 100
 E
 suit armor spiked leather~
 Made from thick leathers that have been boiled in oils then molded to a human
@@ -635,7 +635,7 @@ a &+Bfreshwater spring&n~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 freshwater spring pool water~
 &+B   Clear and cool to the touch, a freshwater spring bubbles up from through
@@ -648,7 +648,7 @@ a &+gvine &nentangled &+yrock&n~
 ~
 12 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 boulder rock stone~
 &+y   You can barely make out the &+Bb&+cl&+Cu&+Westone&+y of this boulder, through the &+gvines
@@ -663,7 +663,7 @@ the &+cCarnihern &+CCircle&n~
 ~
 12 34 0 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 carnihern circle stones~
 &+g  Jutting out of the lush &+Ggrasses&+g are fifteen, perfectly hewn, stone blocks.
@@ -702,7 +702,7 @@ a stack of &+ycoffins&n~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 stack coffins~
    Premeasured and precut to fit any executional occassion, these coffins are
@@ -715,7 +715,7 @@ a beautiful &+mjewelled &+Wnecklace&n~
 ~
 8 16 3 2 7 0 0 16389 0 0 0
 0 0 0 0 0 0 0 0
-3 3800 100
+3 3800 100 100
 E
 necklace jeweled~
 &+W   Several &+mpurple&+W gemstones are set within a white &+Ygold&+W necklace.  This piece
@@ -728,7 +728,7 @@ A &+Wdiamond &+Yearring&n lies here.~
 ~
 9 8 1 1 7 0 0 540673 0 0 0
 3 0 0 0 0 0 0 0
-1 2275 100
+1 2275 100 100
 E
 diamond earring~
 &+L   This four karat &+Wdiamond&+L swings from the end of a fourteen karat &+Ygold&+L chain.
@@ -746,7 +746,7 @@ a rare &+Lebon &+Rruby&n~
 ~
 8 31 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 576 100
+1 576 100 100
 E
 rare stone ebon ruby~
 &+W   Although not truly &+Lebon&+W, this &+Rruby&+W is darker than its contemporaries due to
@@ -760,7 +760,7 @@ A fine &+Mviolet&n jewel~
 ~
 8 26 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 253 100
+1 253 100 100
 E
 jewel fine violet~
 &+M   This violet gem is carved in a pair cut, its many facets trapping and
@@ -773,7 +773,7 @@ a common &+rgemstone&n~
 ~
 8 26 0 0 7 0 128 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 276 100
+1 276 100 100
 E
 gem gemstone common~
 &+r   This dull looking &+Rred&+r gemstone is quite common amongst the &+yhills&+r and &+Yshores&n
@@ -786,7 +786,7 @@ a vibrant &+Bsapphire&n~
 ~
 8 33 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 896 100
+1 896 100 100
 E
 sapphire vibrant~
 &+B   This brilliant blue gemstone has meny facets, each one almost without
@@ -799,7 +799,7 @@ a finely cut &+Wdiamond&n~
 ~
 8 8 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 376 100
+1 376 100 100
 E
 diamond~
 &+L   The hardest of all stones, this &+Wdiamond&+L has been expertly crafted into a
@@ -812,7 +812,7 @@ a &+ywooden bat&n~
 ~
 5 6 3 0 7 0 4202496 8193 0 4173708804 0
 10 3 5 6 0 0 0 0
-1 0 100
+1 0 100 100
 E
 wooden bat~
 &+y   Made of oak, this bat was hnd carved for the bartender of the &+rBlood&+Wmoon&n
@@ -830,7 +830,7 @@ a &+Wglass&n~
 ~
 17 7 0 0 7 0 0 16385 0 0 0
 4 4 0 0 0 0 0 0
-5 30 100
+5 30 100 100
 E
 water glass~
    A simplistic looking glass with a deep throat and shallow stem.
@@ -842,7 +842,7 @@ a &+Ybottle&n~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 8 8 3 0 0 0 0 0
-10 20 100
+10 20 100 100
 E
 ale bottle~
                         &+W  ___________________
@@ -866,7 +866,7 @@ a &+ybottle&n~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 1 0 0 0 0 0
-10 15 100
+10 15 100 100
 E
 beer bottle~
                           &+W  ___________________
@@ -890,7 +890,7 @@ a &+rfir&+Rebr&+Yeat&+Wher&n~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 7 0 0 0 0 0
-11 50 100
+11 50 100 100
 E
 firebreather bottle~
 &+R   This bottle has a picture of a drunken &+ysatyr &+Rspewwing &+rflames&+R from his
@@ -905,7 +905,7 @@ a &+Bbottle&n~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 8 0 0 0 0 0
-11 20 100
+11 20 100 100
 E
 local bottle~
 &+W   This bottle is clearly marked, '&+BFrom The Moonshiner's Association for the
@@ -919,7 +919,7 @@ a &+Lbla&+wckst&+Weel&+B polearm&n~
 ~
 5 16 4 0 7 0 4195328 8193 66 87572571 0
 8 2 6 3 0 0 0 0
-12 1548 100
+12 1548 100 100
 E
 polearm pole blacksteel black steel~
 &+B   This wepon is crafted from high quality &+Lbla&+wckst&+Weel&+B.  It consists of a long
@@ -933,7 +933,7 @@ a &+Wdouble-bladed&+L battle axe&n~
 ~
 5 16 3 8 7 0 1024 8193 0 87572571 0
 1 1 9 3 0 0 0 0
-15 4874 100
+15 4874 100 100
 E
 battleaxe axe~
    Two sharp steel blades protrude from a wooden shaft.  Each blade is set
@@ -951,7 +951,7 @@ a loaf of &+ybread&n~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 bread~
 &+y   Made from hand-ground wheat and cooked to perfection, this bread is fluffy
@@ -964,7 +964,7 @@ a &+yhalfling &+Wpastry&n~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 halfling pastry~
 &+W   This pastry is made in the tradition fashion passed down by halflings from
@@ -977,7 +977,7 @@ a &+Lstygian &+mmagenta&+L potion&n~
 ~
 10 7 2 4 7 0 0 1 66 0 0
 21 43 -1 -1 0 0 0 0
-2 3891 100
+2 3891 100 100
 E
 potion stygian magenta~
    &+WThis thin vial is filled with a &+Lmurky &+mmagenta&+W fluid.&n
@@ -997,7 +997,7 @@ a small &+Wsword&N~
 ~
 5 16 2 10 7 0 0 8193 0 4198895524 0
 9 1 4 11 0 0 0 0
-3 60 100
+3 60 100 100
 E
 sword small~
                 &+Y _
@@ -1015,7 +1015,7 @@ a &+ywooden &+Lclub&n~
 ~
 5 6 3 8 7 0 0 8193 0 4173708804 0
 10 1 6 7 0 0 0 0
-3 12 100
+3 12 100 100
 E
 club wooden~
    &+yThis club is actually just a small thick tree branch, gnarled and
@@ -1028,7 +1028,7 @@ a &+Rwar&+Lhammer~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 4 1 6 7 0 0 0 0
-6 50 100
+6 50 100 100
 E
 warhammer hammer~
 &+W   Crafted for use in battle, this medium sized hammer has a square steel
@@ -1041,7 +1041,7 @@ a &+Lfl&+wa&+ci&+Cl&n~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 3 1 7 7 0 0 0 0
-6 625 100
+6 625 100 100
 E
 flail large~
 &+L   This flail consists of a long rod with three chainlinks and a spiked ball
@@ -1056,7 +1056,7 @@ a &+yleather skin&n~
 ~
 17 12 3 8 7 0 0 19457 0 0 0
 20 20 0 0 0 0 0 0
-2 100 100
+2 100 100 100
 E
 water skin leather~
    This waterskin is crafted from the tanned bladder of an ox.  It has a long
@@ -1069,7 +1069,7 @@ a &+Wcha&+winm&+Lail &+Cshirt&n~
 ~
 9 16 3 8 7 0 0 9 0 4173708804 0
 5 3 1 3 0 0 0 0
-30 1000 100
+30 1000 100 100
 E
 chain mail shirt~
    Made of thousands upon thousands of small chainlinks, this shirt offers
@@ -1082,7 +1082,7 @@ a &+ywooden &+Lshield&n~
 ~
 37 6 3 15 7 0 0 513 0 4165209604 0
 2 1 2 2 0 0 0 0
-3 100 100
+3 100 100 100
 E
 shield wooden~
 &+y   Wood&+W slats, bound by a &+Lsteel&+W rim, make up this buckler.  An image of the
@@ -1096,7 +1096,7 @@ a &+clea&+Cth&+Wer &+Ljacket&n~
 ~
 9 13 0 0 7 0 0 9 0 4165209604 0
 3 3 1 3 0 0 0 0
-10 200 100
+10 200 100 100
 E
 jacket soft leather~
 &+L   Made from the soft underbelly of a &+cv&+Co&+Wr&+L, this leather jacket offers minimal
@@ -1111,7 +1111,7 @@ a &+cscale &+Cmail &+cjacket&n~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 4 3 1 3 0 0 0 0
-40 800 100
+40 800 100 100
 E
 jacket scale mail~
 &+C   This is a coat of soft leather covered with overlapping pieces of metal,
@@ -1124,7 +1124,7 @@ a &+Cmithril &+Lbreast plate&n~
 ~
 9 18 3 0 7 0 134217728 9 0 4173708804 0
 12 3 6 1 0 0 0 0
-45 45000 100
+45 45000 100 100
 E
 mithril breast plate~
    This suit consists of a chainmail shirt, with large mithril plates covering
@@ -1138,7 +1138,7 @@ a &+Lsuit of &+Wchainmail&+L armor&n~
 ~
 9 16 3 10 7 0 0 9 0 4173708804 0
 15 3 1 3 0 0 0 0
-30 12500 100
+30 12500 100 100
 E
 suit chain chainmail~
 &+W   This suit of armor is comprised of many small metal links, each woven
@@ -1155,7 +1155,7 @@ a &+Lshield&+B emblazoned with the insignia of &+WTharnadia&n~
 ~
 37 16 3 15 7 0 0 513 0 4198895524 0
 2 1 3 4 0 0 0 0
-5 2100 100
+5 2100 100 100
 E
 shield round~
 &+L   Forged from bla&+wckst&+Weel&+L, this shield was crafted for the militia of the city
@@ -1169,7 +1169,7 @@ an &+goak &+yraft&n~
 ~
 22 5 4 30 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-75 400 100
+75 400 100 100
 E
 oak raft~
 &+y   This raft was carved from the dead trunk of an &+goak &+Gtree&+y, the inside having
@@ -1182,7 +1182,7 @@ a &+Wdeerskin &+ycanoe&n~
 ~
 22 13 4 30 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-70 2394 100
+70 2394 100 100
 E
 canoe deerskin~
 &+y   Crafted from the hide of a &+Wdeer&+y, this canoe is meant to be fairly light.
@@ -1196,7 +1196,7 @@ a &+Ltwo-handed &+Wclay&+Cmo&+cre&n~
 ~
 5 16 4 15 7 0 4195328 8193 0 87572571 0
 13 2 8 3 0 0 0 0
-5 7582 100
+5 7582 100 100
 E
 two handed claymore~
 &+L   This &+Wclay&+Cmo&+cre&+L is a six-foot, cross-hilted sword consisting of a straight,
@@ -1214,7 +1214,7 @@ die ten sided~
 ~
 13 34 3 0 7 0 134217728 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 538 100
+1 538 100 100
 E
 die ten sided _ignore_~
 Made of ivory, this die is perfectly balanced.
@@ -1226,7 +1226,7 @@ a &+Wtally sheet&n~
 ~
 12 28 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-99 0 100
+99 0 100 100
 E
 tally sheet~
 &+L   It is clearly labeled is property of the &+WTharnadian&+L jail, and includes a
@@ -1239,7 +1239,7 @@ a &+Lhooded &+rl&+Ra&+Yn&+Wt&+Ye&+Rr&+rn&n~
 ~
 1 16 0 0 7 0 0 16385 0 0 0
 0 0 192 0 0 0 0 0
-3 138 100
+3 138 100 100
 E
 lantern hooded~
 &+W   This lantern has angled &+Cglass&+W sides, and a vented &+Lsteel&+W top.  A small wood
@@ -1253,7 +1253,7 @@ a pair of &+Cmithril &+Lgauntlets&n~
 ~
 9 18 3 5 7 0 134217728 129 0 4173708804 0
 7 7 1 1 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 gauntlets mithril~
 &+L   These gauntlets are fashioned of &+Cmithril &+cbands&+L, each well oiled so as to
@@ -1271,7 +1271,7 @@ a pair of &+cvo&+Crhi&+Wde &+Lfingers&n~
 ~
 9 13 0 0 7 0 0 129 0 0 0
 3 7 1 3 0 0 0 0
-3 75 100
+3 75 100 100
 E
 fingers vorhide~
 &+L   These gloves are made of soft cured &+cvo&+Crhi&+Wde&+L.  They cover the two middle
@@ -1288,7 +1288,7 @@ a &+Cmithril &+Lhelmet&n~
 ~
 9 18 3 10 7 0 134217728 17 0 4173708804 0
 7 4 1 1 0 0 0 0
-8 15000 100
+8 15000 100 100
 E
 helmet mithril~
 &+L   Made of &+Cmithril&+L, this helm covers most of the head, save the face and neck.
@@ -1302,7 +1302,7 @@ a &+Lleather cap&n~
 ~
 9 13 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-3 150 100
+3 150 100 100
 E
 cap leather~
 &+L   This leather cap has swooping wings that come to a sharp point at the
@@ -1317,7 +1317,7 @@ an &+Lorcskin &+cforearm&+L guard&n~
 ~
 11 13 0 0 7 0 0 4097 64 0 0
 0 0 0 5 0 0 0 0
-2 4845 100
+2 4845 100 100
 E
 orcskin forearm guard~
 &+c   This wide girth of &+Lorc&+rfl&+Res&+Wh&+c straps around the forearm, extending from the
@@ -1333,7 +1333,7 @@ a pair of &+Cmithril &+Lleggings&n~
 ~
 9 18 3 8 7 0 134217728 33 0 4173708804 0
 6 5 1 1 0 0 0 0
-8 15000 100
+8 15000 100 100
 E
 leggings mithril~
 &+L   These leggings are made of tight-fitted &+Cmithril&+L bands, that bend along with
@@ -1348,7 +1348,7 @@ a pair of &+Lleather pants&n~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-8 150 100
+8 150 100 100
 E
 pants leather~
 &+L   A tight pair of leather pants sort of like the type that singer Mim
@@ -1361,7 +1361,7 @@ a pair of &+Lsteel &+Wgauntlets&n~
 ~
 9 16 3 5 7 0 0 129 64 4173708804 0
 8 7 1 3 0 0 0 0
-3 3257 100
+3 3257 100 100
 E
 gauntlets steel~
 &+W   These heavy gauntlets are forged of steel bands, and lined with fur.&n
@@ -1377,7 +1377,7 @@ the &+ycounter&n~
 ~
 12 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign counter wooden~
              &+W  . .._______________________________________.. .
@@ -1393,7 +1393,7 @@ the &+Lchest&n~
 ~
 15 15 5 50 7 0 4096 0 0 0 0
 200 13 0 250 0 0 0 0
-1 100 100
+1 100 100 100
 E
 chest iron~
 &+L   This chest stands about two-feet, and is made entirely of iron.&n
@@ -1405,7 +1405,7 @@ a pile of &+Ygold&n coins~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 50 0 0 0 0 0
-1 0 100
+1 0 100 100
 #132584
 chest wood iron~
 an &+Lironbound &+ychest&n~
@@ -1413,7 +1413,7 @@ an &+Lironbound &+ychest&n~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 250 13 0 250 0 0 0 0
-1 100 100
+1 100 100 100
 E
 chest wood iron~
    &+LThis chest is made of wood slats, and framed with iron.&n
@@ -1427,7 +1427,7 @@ some &+Ygold &+Wcoins&n~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 #132586
 dagger polished steel~
 a &+Wpolished &+Lsteel &+Wdagger&n~
@@ -1435,7 +1435,7 @@ a &+Wpolished &+Lsteel &+Wdagger&n~
 ~
 5 16 2 3 7 0 0 8193 0 4194697632 0
 2 2 5 11 0 0 0 0
-3 500 100
+3 500 100 100
 E
 dagger polished steel~
    &+WThis small dagger has a six-inch &+Lblade&+W and a &+ywooden&+W grip.&n
@@ -1451,7 +1451,7 @@ some &+Liron &+yrations&n~
 ~
 19 15 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 32 100
+1 32 100 100
 E
 iron rations~
    &+LThis &+ypaper-wrapped&+L packet contains &+Rmeats&+L that have been &+Wsalted&+L for travel.&n
@@ -1463,7 +1463,7 @@ an &+rapple&n~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 3 0 0 0 0 0 0 0
-0 4 100
+0 4 100 100
 E
 apple ripe~
    &+rA fist-sized chunk of fruitatious pleasure.&n
@@ -1475,7 +1475,7 @@ poison skull vial bottle green~
 ~
 17 7 1 2 7 0 65536 16385 0 4198895524 0
 10 10 27 5 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 poison skull vial~
 &+L   This small vial is shaped like a grinning &+Wskull&+L, two crossed daggers in
@@ -1488,7 +1488,7 @@ a &+Wpolished &+Lsteel &+Lbracelet&n~
 ~
 9 16 3 3 7 0 0 4097 64 0 0
 0 11 24 3 0 0 0 0
-2 1427 100
+2 1427 100 100
 E
 bracelet polished steel~
    &+LThis &+Wbracelet&+L is snake shaped, and curls up the rist like a serpent on the
@@ -1505,7 +1505,7 @@ a &+Lsteel &+ydog collar&n~
 ~
 9 16 0 0 7 0 0 5 0 0 0
 0 2 1 3 0 0 0 0
-2 817 100
+2 817 100 100
 A
 17 -5
 #132592
@@ -1515,7 +1515,7 @@ a &+Lwicked &+Wdagger&n~
 ~
 5 16 2 3 7 0 0 8193 64 4194697632 0
 2 2 4 11 0 0 0 0
-7 4782 100
+7 4782 100 100
 E
 dagger wicked~
    &+LThis dagger has two dual blades attached at their center by a bleeder bar.&n
@@ -1531,7 +1531,7 @@ a &+Lblack &+rassassin's &+Wdagger&n~
 ~
 5 16 2 3 7 0 1024 8193 0 8515584 0
 2 1 5 11 0 0 0 0
-3 800 100
+3 800 100 100
 E
 dagger black~
 &+L   It is a fine weapon, made from blackened duranium steel that will not rust.
@@ -1544,7 +1544,7 @@ a set of &+Wbone picks&n~
 ~
 31 10 1 2 7 0 1024 16385 0 8515584 0
 20 49 -1 -1 0 0 0 0
-2 45 100
+2 45 100 100
 #132595
 sword venom belialian~
 a &+LBelialian &+Wsword&+L of &+Gvenom&n~
@@ -1552,7 +1552,7 @@ a &+LBelialian &+Wsword&+L of &+Gvenom&n~
 ~
 5 16 3 10 9 33 0 8193 0 4198895524 0
 5 3 3 3 0 0 0 0
-1 2158 100
+1 2158 100 100
 E
 sword~
 &+L   The sword is typical of a fine looking short &+Wsword&+L, except in that at it's
@@ -1570,7 +1570,7 @@ a &+Lleather cloak&n~
 ~
 11 13 3 8 7 0 0 1025 64 0 0
 0 0 0 5 0 0 0 0
-5 1426 100
+5 1426 100 100
 E
 cloak leather~
    The cloak is exceptional fine workmanship, made from the finest hides sewn
@@ -1588,7 +1588,7 @@ a &+Gmoldy &+Ystraw&n bed&n~
 ~
 12 42 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 moldy bed straw~
 &+Y   This straw bed is where some of the perverse action, in this room, takes
@@ -1603,7 +1603,7 @@ a &+Wpool of cum&n~
 ~
 17 40 5 50 7 0 98304 0 0 0 0
 4 4 8 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cum pool~
 &+W   Little milky white pool, filled with millions of round headed swimming
@@ -1616,7 +1616,7 @@ the &+yrack&n~
 ~
 13 16 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rack~
    This machine is set up like a craftmatic adjustable bed, except that it has
@@ -1637,7 +1637,7 @@ a &+Whooking ticket&n~
 ~
 12 28 0 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 150 100
+0 150 100 100
 E
 hooking ticket~
              &+W  ______________________________
@@ -1654,7 +1654,7 @@ a &+cvor&+Csk&+Win &+Ypenis &+Wsheath&n~
 ~
 12 13 0 0 7 0 8192 18449 0 0 0
 0 0 0 0 0 0 0 0
-0 2000 100
+0 2000 100 100
 E
 ribbed vorskin penis sheath~
   &+LWrap it or slap it.  Ribbed for her pleasure, cause you don't really
@@ -1667,7 +1667,7 @@ a bad case of &+Gherpes simplex&n~
 ~
 12 1 0 0 7 0 524417 264323 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 herpes simplex bacteria~
   You can hear your mother now, '&+gHow &+GMANY&+g times do I have to tell you to keep
@@ -1684,7 +1684,7 @@ a &+Lgladius&+W called '&+LBac&+wks&+Wta&+Rbb&+rer&+W'&n~
 ~
 5 16 3 10 7 0 16777488 8193 64 4198895524 0
 9 2 7 3 0 0 0 0
-3 10000 100
+3 10000 100 100
 E
 gladius blacksteel shortsword~
    A refined version of the shortsword, the gladius has a double-edged blade
@@ -1704,7 +1704,7 @@ backpack bp ermineskin~
 ~
 15 13 3 10 7 0 0 4194305 0 0 0
 120 5 0 100 0 0 0 0
-5 1500 100
+5 1500 100 100
 E
 ermineskin bp backpack~
 &+L   This backpack is made from the fur of the ellusive &+Wermine&+L, its smooth fur
@@ -1717,7 +1717,7 @@ a &+Lleather bag&n~
 ~
 15 13 3 10 7 0 0 16385 0 0 0
 40 5 0 100 0 0 0 0
-1 500 100
+1 500 100 100
 E
 leather bag~
    &+LJust your average every day leather bag.&n
@@ -1729,7 +1729,7 @@ a &+Lr&+Wa&+Lc&+Wc&+Lo&+Wo&+Lnskin bag&n~
 ~
 15 13 3 10 7 0 0 16385 0 0 0
 30 5 0 100 0 0 0 0
-2 540 100
+2 540 100 100
 E
 racoonskin bag coon~
    &+LThis bag is fashioned from racoon hides, and looks quite nice.&n
@@ -1741,7 +1741,7 @@ rose beautiful~
 ~
 12 6 0 0 7 0 73728 2113537 0 0 0
 0 0 0 0 0 0 0 0
-1 1231 100
+1 1231 100 100
 E
 rose beautiful~
    This rose smells as if it was just picked, and it never seems to wilt.
@@ -1755,7 +1755,7 @@ a &+ybroom&n~
 ~
 5 6 3 0 7 0 8192 24577 0 0 0
 10 1 6 7 0 0 0 0
-4 10 100
+4 10 100 100
 E
 broom~
    &+yA wide bristle broom, used for sweeping streets or large buildings.&n
@@ -1767,7 +1767,7 @@ die six sided~
 ~
 13 34 3 0 7 0 134217728 16385 0 0 0
 6 0 0 0 0 0 0 0
-1 538 100
+1 538 100 100
 E
 die six sided _ignore_~
 Made of ivory, this die is perfectly balanced.
@@ -1779,7 +1779,7 @@ die twenty sided~
 ~
 13 34 3 0 7 0 134217728 16385 0 0 0
 20 0 0 0 0 0 0 0
-1 538 100
+1 538 100 100
 E
 die twenty sided~
 Made of ivory, this die is perfectly balanced.
@@ -1791,7 +1791,7 @@ A well crafted longbow has been left here.~
 ~
 6 6 3 0 7 0 4194304 24577 64 0 0
 70 60 0 1 0 0 0 0
-1 20142 100
+1 20142 100 100
 E
 longbow well crafted~
 This longbow is finely crafted of a very thin but sturdy wood.
@@ -1803,7 +1803,7 @@ A longbow has been left here.~
 ~
 6 6 3 0 7 0 4194304 24577 0 0 0
 60 60 0 1 0 0 0 0
-1 4321 100
+1 4321 100 100
 #132613
 arrow well crafted~
 &+ya well crafted arrow&n~
@@ -1811,7 +1811,7 @@ An arrow has been left here.~
 ~
 7 6 3 0 9 0 0 16385 0 0 0
 4 3 5 1 0 0 0 0
-1 821 100
+1 821 100 100
 #132614
 arrow crude crudely~
 &+La crudely made arrow&n~
@@ -1819,7 +1819,7 @@ arrow crude crudely~
 ~
 7 6 3 0 3 0 0 16385 0 0 0
 2 1 8 1 0 0 0 0
-1 521 100
+1 521 100 100
 #132615
 quiver well crafted~
 &+ya well crafted quiver&n~
@@ -1827,7 +1827,7 @@ quiver well crafted~
 ~
 30 6 2 12 9 0 0 5259265 0 0 0
 30 1 1 0 0 0 0 0
-2 491 100
+2 491 100 100
 #132616
 mysterious sleeves~
 &+Lsome &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Lsleeves&N~
@@ -1835,7 +1835,7 @@ mysterious sleeves~
 ~
 9 31 3 0 11 69 8192 257 0 0 0
 8 0 0 4 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 mysterious sleeves~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Litem seems like it was crafted from a fine grade material.&N
@@ -1854,7 +1854,7 @@ mysterious leggings~
 ~
 9 31 3 0 11 69 8192 33 0 0 0
 8 0 0 4 0 0 0 0
-0 13333 100
+0 13333 100 100
 E
 mysterious leggings~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Litem seems like it was crafted from a fine grade material.&N
@@ -1873,7 +1873,7 @@ mysterious boots~
 ~
 9 31 3 0 11 69 8192 65 0 0 0
 8 0 0 4 0 0 0 0
-0 11111 100
+0 11111 100 100
 E
 mysterious boots~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Lpair of boots was crafted from a very fine grade material.&N
@@ -1892,7 +1892,7 @@ mysterious robe~
 ~
 9 31 3 0 11 69 8192 1033 0 0 0
 8 0 0 4 0 0 0 0
-0 12345 100
+0 12345 100 100
 E
 mysterious robe~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Litem seems like it was crafted from a fine grade material.&N
@@ -1911,7 +1911,7 @@ spellbook mysterious tome book~
 ~
 33 31 3 0 11 69 8192 8404993 0 0 0
 0 0 131 0 0 0 0 0
-0 4444 100
+0 4444 100 100
 E
 spellbook tome book~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Ltome seems like it was crafted from a fine grade material.&N
@@ -1929,7 +1929,7 @@ bookshelf shelf glowing~
 ~
 15 23 3 0 15 81 0 0 0 0 0
 5000 0 0 100 0 0 0 0
-666 33333 100
+666 33333 100 100
 E
 bookshelf shelf glowing~
 &+c   Th&+Ci&+cs &+Cs&+ct&+Cr&+ca&+Cn&+cg&+Ce &+cb&+Co&+co&+Ck&+cs&+Ch&+ce&+Cl&+cf s&+Cee&+cms l&+Ci&+ck&+Ce i&+ct w&+Ca&+cs cr&+Ca&+cft&+Ce&+cd fr&+Co&+cm &+Ca &+cf&+Ci&+cn&+Ce &+cgr&+Ca&+cd&+Ce o&+cf &+Cm&+cy&+Cs&+ct&+Ci&+cc&N
@@ -1943,7 +1943,7 @@ spellbook book~
 ~
 33 43 3 0 11 18 8192 8404993 0 0 0
 0 0 81 0 0 0 0 0
-0 1458 100
+0 1458 100 100
 E
 spellbook book~
 &+L   This &+yspellbook &+Lseems like it was crafted from a very &+gp&+Go&+gt&+Lent grade of &+Gh&+ge&+Gm&+gp&+L.&N
@@ -1959,7 +1959,7 @@ quill glowing~
 ~
 21 50 3 0 10 9 8193 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 8 100
+0 8 100 100
 E
 quill glowing~
 &+L   This &+Cg&+clo&+Cw&+cin&+Cg &+Lquill seems like it comes from some sort of &+Cm&+cy&+Cs&+ct&+Ci&+cc&+Ca&+cl &+Lbird.&N
@@ -1975,7 +1975,7 @@ crumpled note~
 ~
 13 43 3 0 10 8 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 crumpled note~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Lcrumpled up &+wnote &+Lhas a symbol of a &+wgoat &+Lthat has been burned&N
@@ -1989,7 +1989,7 @@ portal glowing magical gate~
 ~
 25 1 0 50 7 0 0 0 64 0 0
 132501 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 portal glowing gate magical~
 &+L   The &+M&+cp&+Co&+cr&+Ct&+ca&+Cl &+Lshimmers with magical energy as you inspect it.  All around its&N
@@ -2005,7 +2005,7 @@ portal glowing magical gate~
 ~
 25 1 0 50 7 0 0 0 64 0 0
 132919 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 portal glowing gate magical~
 &+L   The &+M&+cp&+Co&+cr&+Ct&+ca&+Cl &+Lshimmers with magical energy as you inspect it.  All around its&N
@@ -2021,7 +2021,7 @@ oakshingle~
 ~
 13 6 3 0 14 81 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 oakshingle~
 &+L   This &+yshingle &+Llooks like it was crafted from a rather fine grade of &+yoak &+Lwood.&N
@@ -2033,7 +2033,7 @@ largesign~
 ~
 13 6 3 0 10 69 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 largesign~
 &+L   This large &+ysign &+Lseems like it was crafted from a fine grade of &+yoak &+Lwood.&N
@@ -2045,7 +2045,7 @@ robe flowing illusions~
 ~
 9 43 3 0 15 76 8192 9 0 0 0
 13 0 0 5 0 0 0 0
-0 18181 100
+0 18181 100 100
 E
 robe flowing illusions~
 &+L   This long flowing robe of &+Wil&+Clu&+csi&+Con&+Ws &+Lshifts into and out of this reality of&N
@@ -2063,7 +2063,7 @@ potion glowing strange~
 ~
 10 7 3 0 11 9 8193 8404993 0 0 0
 53 204 141 192 0 0 0 0
-0 26000 100
+0 26000 100 100
 E
 potion glowing~
 &+L   This &+Cg&+clo&+Cw&+cin&+Cg &+Lpotion seems like it comes from some sort of &+Cm&+cy&+Cs&+ct&+Ci&+cc&+Ca&+cl &+Lworld.&N
@@ -2079,7 +2079,7 @@ stained glass window~
 ~
 12 7 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stained glass window~
 &+L   This &+Bstained glass &+Wwindow &+Lseems like it was made from a very fine grade of&N
@@ -2098,7 +2098,7 @@ spell spellbook arcane _id_~
 ~
 33 31 3 0 11 69 134225920 8404993 0 0 0
 0 0 400 0 0 0 0 0
-0 477640 100
+0 477640 100 100
 E
 spellbook tome book~
 &+L   This &+rm&+Ry&+rs&+Rt&+re&+Rr&+ri&+Ro&+ru&+Rs &+Ltome seems like it was crafted from a fine grade material.&N
@@ -2112,7 +2112,7 @@ board ferry schedule~
 ~
 13 6 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132634
 deposit box list~
 &+ya deposit box&n~
@@ -2120,7 +2120,7 @@ deposit box list~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 deposit box list~
 &+yThis box is used for hiring out the mercenaries. It is a fairly automated
@@ -2140,7 +2140,7 @@ packet tharnadia vellum maps map~
 ~
 12 29 1 1 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 page2 2~
     Northern
@@ -2279,7 +2279,7 @@ A heavy &+rSc&+Ror&+Ypi&+Won &+Lballista&n remains ready, here.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 scorpion ballista~
 &+W   The &+Lballista&+W resembles a huge crossbow, except that this one has a huge
@@ -2294,7 +2294,7 @@ a &+Bvo&+cr&+Chi&+Wde &+Lbelt&n~
 ~
 9 13 3 3 7 0 0 2049 0 4227727488 0
 4 10 0 3 0 0 0 0
-3 5994 100
+3 5994 100 100
 E
 vorhide belt~
 &+L   This belt is fashioned from a wide strip of tanned and padded &+cvor&+Chi&+Wde&+L.  A
@@ -2310,7 +2310,7 @@ chainmail coif rogue's leather~
 ~
 9 13 3 10 7 0 73728 17 0 4198895524 0
 10 4 1 3 0 0 0 0
-3 1500 100
+3 1500 100 100
 E
 chainmail rogue's coif leather~
 &+L   This hood is made of thick leather, with a chainmail mesh that just covers
@@ -2329,7 +2329,7 @@ a &+Bvo&+cr&+Chi&+Wde &+Ldock worker's loincloth&n~
 ~
 9 13 0 0 7 0 0 2049 0 0 0
 8 10 0 3 0 0 0 0
-2 1200 100
+2 1200 100 100
 E
 vorhide loincloth dock worker's~
 &+LMade of vorhide, this loincloth bears the insignia of the &+WTharnadian&+L Dock
@@ -2346,7 +2346,7 @@ a &+Wcuirass&+m emblazoned with the insignia of &+LCaer Tannad&n~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 9 3 6 3 0 0 0 0
-50 18000 100
+50 18000 100 100
 E
 steel cuirass breastplate~
    This upperbody plate is crafted from a mixture of steel and crushed onyx,
@@ -2361,7 +2361,7 @@ a pair of &+Lg&+wa&+Wr&+ws&+Lk&+wi&+Wn&+L boots&n~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-5 3350 100
+5 3350 100 100
 E
 boots garskin~
 &+L   Similar to snakeskin boots, these boots are made from the scaled flesh of
@@ -2375,7 +2375,7 @@ some &+Lleather leggings&n~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-4 300 100
+4 300 100 100
 E
 leggings leather~
    Made from thick leathers that have been boiled in oil for strength, these
@@ -2391,7 +2391,7 @@ a pair of &+Lhigh-soft leather boots&n~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 E
 boots leather soft high~
    Made of soft pantherhide, these boots come up just above the knees.  Laced
@@ -2405,7 +2405,7 @@ some &+Wspiked &+Lleather&+m armor bearing the emblem of &+LCaer Tannad&n~
 ~
 9 13 0 0 11 26 8192 9 0 4165209604 0
 4 3 1 3 0 0 0 0
-9 3212 100
+9 3212 100 100
 E
 suit armor spiked leather~
    Made from thick leathers that have been boiled in oils then molded to a
@@ -2424,7 +2424,7 @@ a &+Lbla&+wckst&+Weel&+B polearm&n~
 ~
 5 16 4 0 7 0 4195328 8193 66 87572571 0
 8 2 6 3 0 0 0 0
-12 1548 100
+12 1548 100 100
 E
 polearm pole blacksteel black steel~
 &+B   This wepon is crafted from high quality &+Lbla&+wckst&+Weel&+B.  It consists of a long
@@ -2438,7 +2438,7 @@ a &+LTannadian&+W rapier&n~
 ~
 5 16 3 0 7 0 0 8193 64 4198895524 0
 9 2 4 3 0 0 0 0
-5 4874 100
+5 4874 100 100
 E
 tannadian rapier~
    &+WThis rapier is a light weapon with a straight, double-edged, pointed blade.
@@ -2454,7 +2454,7 @@ a short &+Wsword&N~
 ~
 5 16 2 10 7 0 0 8193 0 4198895524 0
 9 1 6 3 0 0 0 0
-3 60 100
+3 60 100 100
 E
 sword short~
                 &+Y _
@@ -2472,7 +2472,7 @@ a &+ywooden &+Lknobkerrie&n~
 ~
 5 6 2 0 7 0 0 8193 0 4173708804 0
 10 1 5 7 0 0 0 0
-3 12 100
+3 12 100 100
 E
 knobkerrie wooden~
 &+y   This unussual weapon is similiar to a wooden hammer.  Handcarved, this
@@ -2491,7 +2491,7 @@ a &+Rwar&+Lhammer~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 4 1 6 7 0 0 0 0
-6 50 100
+6 50 100 100
 E
 warhammer hammer~
 &+W   Crafted for use in battle, this medium sized hammer has a square steel
@@ -2504,7 +2504,7 @@ a &+Lfl&+wa&+ci&+Cl&n~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 3 1 7 7 0 0 0 0
-6 625 100
+6 625 100 100
 E
 flail large~
 &+L   This flail consists of a long rod with three chainlinks and a spiked ball
@@ -2517,7 +2517,7 @@ a &+LCaer Tannad&+m militia &+Lshield&n~
 ~
 37 16 3 15 7 0 1024 513 0 87572571 0
 1 1 2 4 0 0 0 0
-5 2100 100
+5 2100 100 100
 E
 shield militia~
 &+L   Forged from bla&+wckst&+Weel&+L, this shield was crafted for the militia of the city
@@ -2531,7 +2531,7 @@ a &+Ljailkey&n~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-30 50 100
+30 50 100 100
 E
 jailkey key~
    &+LThis small skeleton key is made of steel, and weighs a ton.&n
@@ -2543,7 +2543,7 @@ an &+cironbound &+Wchest&n~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 250 13 0 250 0 0 0 0
-1 100 100
+1 100 100 100
 E
 chest wood iron~
    &+LThis chest is made of wood slats, and framed with iron.&n
@@ -2555,7 +2555,7 @@ some &+Ygold &+Wcoins&n~
 ~
 20 24 1 0 7 0 45056 1 0 0 0
 50 50 25 25 0 0 0 0
-0 0 100
+0 0 100 100
 #132655
 dagger jagged steel~
 a &+Wjagged &+Lsteel &+Wdagger&n~
@@ -2563,7 +2563,7 @@ a &+Wjagged &+Lsteel &+Wdagger&n~
 ~
 5 16 2 3 7 0 241664 8193 66 4198895524 0
 2 2 5 11 0 0 0 0
-3 500 100
+3 500 100 100
 E
 dagger jagged steel~
    &+WThis small dagger has a six-inch &+Lblade&+W and a &+ywooden&+W grip.  The blade
@@ -2581,7 +2581,7 @@ the &+Bpond&n~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water pond pool~
 &+B   This pond is thirty feet in diameter, its cool waters clear down to the
@@ -2595,7 +2595,7 @@ a &+ymahogany desk&n~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 35 1 0 100 0 0 0 0
-45 23 100
+45 23 100 100
 E
 mahogany desk~
 &+y   This elegant desk has scores of nude nymphs carved into its wood, the whole
@@ -2609,7 +2609,7 @@ a &+Ggrounds&+g bag&n~
 ~
 15 3 3 10 7 0 0 19457 64 0 0
 60 5 0 100 0 0 0 0
-3 10 100
+3 10 100 100
 E
 grounds bag~
 &+g   This large bag is carried by the grounds keepers of &+LCaer Tannad&+g, and has an
@@ -2623,7 +2623,7 @@ a &+Bstained glass &+Wwindow&n~
 ~
 12 7 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stained glass window~
    &+BThis window is at least five centuries old, and depicts a much different
@@ -2640,7 +2640,7 @@ a &+Bstained glass &+Wwindow&n~
 ~
 12 7 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stained glass window~
 &+B   This window is nearly three elfspans old, its lead framing tarnished and
@@ -2657,7 +2657,7 @@ the &+Bpond&n~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 99999999 99999999 17 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water pond pool~
 &+B   This ten foot round pond is well kept, its pristine waters devoid of algae
@@ -2670,7 +2670,7 @@ a &+yrock&n~
 ~
 12 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rock small~
 
@@ -2711,7 +2711,7 @@ A huge bookshelf stands here, nearly twenty feet tall.~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 5000 0 0 100 0 0 0 0
-1 1 100
+1 1 100 100
 #132664
 magical book text~
 a &+rmag&+Ric&+Wal &+Ltext book&n~
@@ -2719,7 +2719,7 @@ a &+rmag&+Ric&+Wal &+Ltext book&n~
 ~
 12 28 2 5 7 0 65536 16385 64 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 magical book text~
    This book is filled with numerous exercises on how to sharpen your mind
@@ -2736,7 +2736,7 @@ the &+Rglowing &+Lportal&n~
 ~
 25 1 0 50 7 0 0 0 64 0 0
 133019 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 portal gate magical~
 The portal continuously crackles with energy in a random fashion.
@@ -2748,7 +2748,7 @@ the &+Wglowing &+Mportal&n~
 ~
 25 1 0 50 7 0 0 0 64 0 0
 133018 7 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 portal gate magical~
 &+L   The &+Mportal &+Lshimmers with magical energy as you inspect it.  All around its&N
@@ -2764,7 +2764,7 @@ a &+Ldaedalian fountain&n~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water fountain daedalian onyx~
 &+L   This bi-level fountain was created shortly after the construction of the
@@ -2788,7 +2788,7 @@ An unwanted pair of leggings sits here.~
 ~
 9 16 3 8 7 0 237568 33 66 0 0
 8 5 1 3 0 0 0 0
-2 9852 100
+2 9852 100 100
 A
 5 4
 A
@@ -2800,7 +2800,7 @@ An unwanted amulet sits on the ground here.~
 ~
 9 24 3 2 7 0 372736 5 66 0 0
 5 2 0 3 0 0 0 0
-3 3456 100
+3 3456 100 100
 E
 golden amulet tharnadia~
 Forged by the skilled smiths of Tharnadia, this amulet is composed
@@ -2817,7 +2817,7 @@ An unwanted wand sits on the ground here.~
 ~
 3 6 2 4 7 0 368640 16385 66 0 0
 40 3 3 84 0 0 0 0
-2 3234 100
+2 3234 100 100
 #132671
 jeweled jade bracelet~
 &+ga jeweled jade bracelet&N~
@@ -2825,7 +2825,7 @@ An unwanted bracelet sits here.~
 ~
 9 11 3 3 7 0 106496 4097 66 0 0
 3 11 24 3 0 0 0 0
-3 2321 100
+3 2321 100 100
 A
 19 1
 #132672
@@ -2835,7 +2835,7 @@ A sphere sits here.~
 ~
 15 16 3 0 7 0 237569 18433 66 0 0
 500 5 0 100 0 0 0 0
--350 7777777 100
+-350 7777777 100 100
 #132673
 old leather suit~
 &+yan old leather suit&N~
@@ -2843,7 +2843,7 @@ An unwanted leather suit sits here.~
 ~
 9 13 0 0 7 0 106496 9 0 0 0
 13 3 1 3 0 0 0 0
-4 3234 100
+4 3234 100 100
 A
 1 3
 A
@@ -2855,7 +2855,7 @@ An unwanted suit rests here.~
 ~
 9 16 3 10 7 0 368640 9 2 0 0
 18 3 1 3 0 0 0 0
-3 7346 100
+3 7346 100 100
 A
 13 7
 A
@@ -2867,7 +2867,7 @@ An unwanted desk key sits here.~
 ~
 18 16 1 1 7 0 8495104 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 32 100
+1 32 100 100
 #132676
 shiny magical boots~
 &+Wa pair of&N &+Yshiny&N &+rmag&+mica&+rl &+Wboots&N~
@@ -2875,7 +2875,7 @@ An pair of unwanted boots sits here.~
 ~
 9 16 3 8 7 0 106496 65 66 0 0
 7 6 1 3 0 0 0 0
-2 2345 100
+2 2345 100 100
 A
 23 -1
 A
@@ -2887,7 +2887,7 @@ A giant map of the surrounding countryside lies on the desk here.~
 ~
 13 29 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 giant map parchment gc paper~
 &+y|            &+g.&-g&+l**&+g....&+L++++++&+g........&+y^^MM^^&+g.&+y^^&+g..&+y^MM^^M^^&+g....&+L+
@@ -2963,7 +2963,7 @@ A sharp two-handed sword lies here.~
 ~
 5 15 3 0 5 0 4195328 8193 0 67108872 0
 13 2 9 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sharp two-handed sword~
 This basic two-handed sword appears to have been sharpenned by someone with obvious skill.
@@ -2979,7 +2979,7 @@ A thick iron sword with sharp edges lies here.~
 ~
 5 15 3 0 5 0 1024 8193 0 96071707 0
 5 1 7 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 thick sharp sword~
 This sword is one of thousands city armories make for its new recruits.  The speed needed to make such a large amount usually means little time is available to give them a sharp edge, but this one seems to have been redone, giving it a polished and sharp edge.
@@ -2995,7 +2995,7 @@ A thin, yet sharp, steel dagger lies here.~
 ~
 5 15 3 0 5 0 0 8193 0 0 0
 2 3 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 thin sharp steel dagger~
 This basic steel dagger has been sharpenned to an incredibly fine edge.
@@ -3011,7 +3011,7 @@ a long steel sword is here in the dirt.~
 ~
 5 15 3 0 5 0 1024 8193 0 87572483 0
 5 1 8 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sharpened long steel sword~
 this basic sword given to new recruits has been sharpenned by someone with noticeable skill.  It is sure to do some damage on the field.
@@ -3027,7 +3027,7 @@ A small flute made from a hollowed reed lies here.~
 ~
 32 42 3 0 2 0 1024 16385 0 32768 0
 184 5 0 0 0 0 0 0
-0 23 100
+0 23 100 100
 #132683
 small clumsily made mandolin instrument~
 A small clumsily made &+ymandolin&n~
@@ -3035,7 +3035,7 @@ A small mandolin that looks to have been hastily carved out of driftwood lies he
 ~
 32 5 3 0 1 0 1024 16385 0 32768 0
 186 5 0 0 0 0 0 0
-0 28 100
+0 28 100 100
 #132684
 small bamboo lyre instrument~
 a small &+ybamboo&n lyre~
@@ -3043,7 +3043,7 @@ A lyre made out of a set of bamboo stalks lies here.~
 ~
 32 41 3 0 5 0 1024 16385 0 32768 0
 185 5 0 0 0 0 0 0
-0 25 100
+0 25 100 100
 #132685
 large blank book~
 a large blank book~
@@ -3051,7 +3051,7 @@ A large blank book lies here.~
 ~
 13 29 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132686
 spellbook book spell~
 &+yan autographed spellbook&n~
@@ -3059,7 +3059,7 @@ A spellbook with some illegible name scribbled on the cover lies here.~
 ~
 33 29 3 0 5 0 0 8404993 0 0 0
 0 0 80 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spellbook book spell~
 &+yL&+Ye&+Wo&+yd&+Yra&n
@@ -3071,7 +3071,7 @@ A pair of boots made out of a durable material lie here.~
 ~
 9 12 3 0 5 0 0 65 0 0 0
 4 0 0 0 0 0 0 0
-0 432 100
+0 432 100 100
 A
 26 1
 A
@@ -3083,7 +3083,7 @@ large burlap sack~
 ~
 15 14 3 0 5 0 0 0 0 0 0
 100 5 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 #132689
 small wooden lyre instrument~
 a small &+ywooden&n lyre~
@@ -3091,7 +3091,7 @@ A small wooden lyre lies here.~
 ~
 32 5 3 0 5 0 4096 16385 0 0 0
 185 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132690
 small wooden horn instrument~
 a small &+ywooden&n horn~
@@ -3099,7 +3099,7 @@ A small wooden horn lies here.~
 ~
 32 5 3 0 5 0 4096 16385 0 0 0
 189 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132691
 small wooden drum instrument~
 a small &+ywooden&n drum~
@@ -3107,7 +3107,7 @@ A small wooden drum lies here.~
 ~
 32 5 3 0 5 0 4096 16385 0 0 0
 188 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132692
 small wooden mandolin instrument~
 a small &+ywooden&n mandolin~
@@ -3115,7 +3115,7 @@ A small wooden mandolin lies here.~
 ~
 32 5 3 0 5 0 4096 16385 0 0 0
 186 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132693
 small wooden harp instrument~
 a small &+ywooden&n harp~
@@ -3123,7 +3123,7 @@ A small wooden harp lies here.~
 ~
 32 5 3 0 5 0 4096 16385 0 0 0
 187 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132694
 clump nightshade plant~
 &+ma clump of &+Lnightshade&n~
@@ -3131,7 +3131,7 @@ A group of plants lie here.~
 ~
 13 30 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132695
 batch mandrake roots small~
 a small&+g batch&n of &+ymandrake roots&n~
@@ -3139,7 +3139,7 @@ A clump of gnarly roots lie here.~
 ~
 13 4 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132696
 sap sacred yew~
 some &+ysap&n from a &+gsacred&n &+yyew&n~
@@ -3147,7 +3147,7 @@ A thick syrup slowly seeps into the ground.~
 ~
 10 40 3 0 5 0 0 16385 0 0 0
 13 294 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132697
 vial thick maroon liquid potion medicine~
 a vial filled with a thick &+rmaroon &+cl&+Ci&+cq&+Cui&+cd&n~
@@ -3155,7 +3155,7 @@ A vial filled with a brick-colored liquid lies here.~
 ~
 10 40 3 0 5 0 0 16385 0 0 0
 11 16 16 16 0 0 0 0
-0 0 100
+0 0 100 100
 #132698
 small black pouch~
 &+La small black pouch&n~
@@ -3163,7 +3163,7 @@ A small black pouch lies here.~
 ~
 15 3 3 0 5 0 0 8404993 0 0 0
 50 5 0 25 0 0 0 0
-0 3 100
+0 3 100 100
 E
 small black pouch~
 This pouch is empty!  You've been swindled!
@@ -3175,7 +3175,7 @@ A large golden pendant glints in the light here.~
 ~
 9 24 3 0 11 0 0 5 0 0 0
 3 0 0 0 0 0 0 0
-2 2343 100
+2 2343 100 100
 A
 13 6
 #132700
@@ -3185,7 +3185,7 @@ A little black ball of fur is curled up taking a nap.~
 ~
 13 2 1 0 15 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 small wolf pup black fur furry~
 This incredibly tiny wolf pup is curled up and resting peacefully, and even when picked up isn't disturbed from his slumber.  It is no wonder that he was able to escape his master's room so easily, he could almost be confused for a rabbit because of his small size.  There is little doubt that he will one day grow into a large and powerful hunter however.
@@ -3197,7 +3197,7 @@ A strip of cured leather lies here.~
 ~
 9 14 3 0 5 0 0 2049 0 0 0
 4 0 0 0 0 0 0 0
-0 34 100
+0 34 100 100
 A
 26 2
 #132702
@@ -3207,7 +3207,7 @@ A cloak made out of a thick green material lies here.~
 ~
 9 43 3 0 5 0 0 1025 0 0 0
 6 0 0 0 0 0 0 0
-2 343 100
+2 343 100 100
 A
 13 5
 #132703
@@ -3217,7 +3217,7 @@ A small wand lies here.~
 ~
 3 5 3 0 5 0 1024 16385 0 49188774 0
 25 5 5 32 0 0 0 0
-0 23 100
+0 23 100 100
 A
 3 1
 #132704
@@ -3227,7 +3227,7 @@ A small wooden flute lies here.~
 ~
 32 5 3 0 5 0 4096 16385 0 0 0
 184 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132705
 map copy countryside gc tharnadia _id_~
 A copy of &+bIthilin's&n GC map~
@@ -3235,7 +3235,7 @@ A map of the Tharnadian countryside lies here.~
 ~
 13 28 2 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 map gc countryside tharnadia copy ithilin~
 &+y|            &+g.&-g&+l**&+g....&+L++++++&+g........&+y^^MM^^&+g.&+y^^&+g..&+y^MM^^M^^&+g....&+L+

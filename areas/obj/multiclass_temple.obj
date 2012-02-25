@@ -5,7 +5,7 @@ ball flux energy~
 ~
 25 15 3 0 5 0 33554432 0 0 0 0
 52918 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ball flux energy~
    A pale white light radiates from the core of this sphere. Small pieces
@@ -19,4 +19,4 @@ key ice~
 ~
 18 15 3 0 7 0 8192 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

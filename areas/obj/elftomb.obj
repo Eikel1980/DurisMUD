@@ -5,7 +5,7 @@ token swanmay swanmay's band _id_~
 ~
 2 22 1 0 13 0 9216 33554435 65 0 0
 50 3 -1 -1 0 0 0 0
-1 10248 100
+1 10248 100 100
 E
 swanmay swanmay's token~
 &+wThis band is made out of silver and has silvery-white feathers embossed around
@@ -26,7 +26,7 @@ token swanmay swanmay's band _id_~
 ~
 11 22 1 0 13 0 8320 33 65 0 0
 0 0 0 0 0 0 0 0
-1 10248 100
+1 10248 100 100
 E
 _id_short_~
 &+wa &+Wswanmay's &+wtoken
@@ -38,7 +38,7 @@ meat bloody~
 ~
 19 2 1 0 5 0 532480 1 0 0 0
 12 0 0 0 0 0 0 0
-1 12 100
+1 12 100 100
 #20603
 skulls pile~
 &+Wa pile of skulls~
@@ -46,7 +46,7 @@ skulls pile~
 ~
 15 10 2 0 3 0 1024 0 0 0 0
 100 1 0 0 0 0 0 0
-25 1 100
+25 1 100 100
 E
 skulls pile~
 &+wDozens of &+Wskulls &+wof &+celves &+wand &+Lorcs &+wmake up this grusome monument.  Who built
@@ -59,7 +59,7 @@ eye glass~
 ~
 9 7 1 0 7 0 4096 131073 0 0 0
 5 0 0 3 0 0 0 0
-1 531 100
+1 531 100 100
 A
 13 5
 #20605
@@ -69,7 +69,7 @@ chest dark wood~
 ~
 15 6 2 0 10 0 0 0 0 0 0
 10 13 20606 10 0 0 0 0
-50 0 100
+50 0 100 100
 E
 chest dark wood~
 &+yPlanks of &+Ldark &+yhardwood have been ornately engraved and fitted together
@@ -83,7 +83,7 @@ key iron wrought wrought-iron~
 ~
 18 15 1 0 10 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 #20607
 coins pile~
 &+Wa pile of coins~
@@ -91,7 +91,7 @@ coins pile~
 ~
 20 22 1 0 7 0 8 1 0 0 0
 100 50 25 0 0 0 0 0
-0 3100 100
+0 3100 100 100
 #20608
 desk dark wood~
 &+La desk of dark wood~
@@ -99,7 +99,7 @@ desk dark wood~
 ~
 13 6 3 0 10 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-50 10000 100
+50 10000 100 100
 E
 desk dark wood~
 &+wThis is a large writing desk, well made of a &+Ldark wood.  &+wNumerous dents and
@@ -112,7 +112,7 @@ metal pile scrap~
 ~
 13 15 2 0 2 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 125 100
+0 125 100 100
 #20610
 metal jagged piece~
 &+wa &+Wj&+wa&+Wg&+wg&+We&+wd piece of &+cmetal~
@@ -120,7 +120,7 @@ metal jagged piece~
 ~
 5 15 1 0 5 0 0 8193 0 4194697704 0
 2 2 4 11 0 0 0 0
-3 4853 100
+3 4853 100 100
 E
 metal jagged piece~
 &+wThis jagged piece of metal has had leather wrapped around one end so it can be
@@ -137,7 +137,7 @@ boots metal studded~
 ~
 9 3 2 0 5 0 0 65 0 0 0
 6 0 0 3 0 0 0 0
-5 796 100
+5 796 100 100
 A
 19 1
 #20612
@@ -147,7 +147,7 @@ gloves spiked~
 ~
 9 3 1 0 5 0 0 129 0 0 0
 5 0 0 2 0 0 0 0
-2 532 100
+2 532 100 100
 A
 18 2
 A
@@ -159,7 +159,7 @@ helm iron rusty~
 ~
 9 15 2 0 5 0 0 17 0 4173708868 0
 8 0 0 4 0 0 0 0
-10 1248 100
+10 1248 100 100
 A
 19 1
 #20614
@@ -169,7 +169,7 @@ cloak elven tattered~
 ~
 9 3 2 0 13 0 0 1025 64 0 0
 5 0 0 1 0 0 0 0
-0 1250 100
+0 1250 100 100
 A
 18 1
 #20615
@@ -179,7 +179,7 @@ amulet blood-eye blood eye~
 ~
 11 3 1 0 9 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-0 568 100
+0 568 100 100
 A
 14 30
 A
@@ -191,7 +191,7 @@ key glowing wooden~
 ~
 18 5 1 0 13 0 8400905 1 0 0 0
 0 0 0 0 0 0 0 0
-0 10488 100
+0 10488 100 100
 #20617
 coffin hardwood~
 &+ya coffin~
@@ -199,7 +199,7 @@ coffin hardwood~
 ~
 15 6 4 0 13 0 0 0 0 0 0
 200 5 0 200 0 0 0 0
-100 50000 100
+100 50000 100 100
 E
 coffin hardwood~
 &+yThis coffin has been carved from a single piece of a chestnut tree and embossed
@@ -213,7 +213,7 @@ corpse elf~
 ~
 13 2 3 0 7 0 8388616 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse elf~
 &+cEven in &+Ldeath &+cthis elf has a &+mregal &+cbearing, his sculptered muscles are
@@ -227,7 +227,7 @@ head bloody~
 ~
 13 2 1 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #20620
 corpse warhorse horse~
 &+Wthe corpse of a warhorse~
@@ -235,7 +235,7 @@ corpse warhorse horse~
 ~
 13 2 4 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse warhorse horse~
 &+cIn life this would have been a fine mount indeed, though small she is very well
@@ -249,7 +249,7 @@ barding elven chainmail~
 ~
 9 18 3 0 13 0 4096 16778241 66 0 0
 8 0 0 2 0 0 0 0
-10 12532 100
+10 12532 100 100
 E
 barding elven~
 &+wThis fine suit of chainmail is obviously of &+gelven &+wmake, it is designed to
@@ -266,7 +266,7 @@ boots living forest~
 ~
 9 5 1 0 13 0 45056 65 64 0 0
 5 0 0 3 0 0 0 0
-2 12536 100
+2 12536 100 100
 E
 boots living forest~
 &+gThis set of boots has been carefully woven of &+ytwigs &+gand &+Gleaves.  &+gFar from
@@ -283,7 +283,7 @@ leggings thorn~
 ~
 9 5 2 0 10 0 12288 33 2 0 0
 7 0 0 2 0 0 0 0
-3 4350 100
+3 4350 100 100
 E
 leggings thorn~
 &+yThese leggings have been woven using a thorny vine and give a leather lining.
@@ -300,7 +300,7 @@ chainmail elven~
 ~
 9 19 2 0 13 0 4097 9 64 4165209668 0
 20 0 0 3 0 0 0 0
-10 25452 100
+10 25452 100 100
 E
 chainmail elven~
 &+wThis suit of chainmail has been well crafted using tiny ring of mithril,
@@ -317,7 +317,7 @@ sapphire blue gem~
 ~
 4 33 1 0 7 0 0 16385 0 0 0
 60 4 4 1 0 0 0 0
-0 25000 100
+0 25000 100 100
 A
 3 10
 A
@@ -329,7 +329,7 @@ vial green liquid~
 ~
 10 7 1 0 5 0 69760 16385 0 0 0
 25 65 -1 -1 20 0 0 0
-0 10532 100
+0 10532 100 100
 E
 vial green liquid~
 &+g   More then one liquid is in this vial, each a different shade of &+Ggreen.  &+gThe
@@ -343,7 +343,7 @@ longsword sword elven~
 ~
 5 18 2 0 13 0 5121 8193 64 95993883 0
 5 3 5 3 0 0 0 0
-8 21596 100
+8 21596 100 100
 A
 18 4
 A

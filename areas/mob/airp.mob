@@ -8,8 +8,8 @@ invisible stalker being outline air elemental~
 &+Cbe seen at all is the thin outline of a being that resembles a man but is
 &+Clarger.
 ~
-1073879208 0 0 135790618 0 0 0 -410 S
-EA 0 15 -1
+1073879208 0 0 0 135790618 0 0 0 -410 S
+EA 0 15 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -24,8 +24,8 @@ david golden monadoc deva being~
 &+Ythen anything else, and a small nimbus of power flays about his head as he
 &+Ylooks around.
 ~
-268568616 0 0 134226074 35012 0 0 1000 S
-X 0 4 -1
+268568616 0 0 0 134226074 35012 0 0 1000 S
+X 0 4 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -40,8 +40,8 @@ blue smoke humanoid aerial servant air large~
 &+Cmouth is a simple slit. Finally its hands are long and four fingered. It looks
 &+Cvery imposing actually and definitely not to be triffaled with.
 ~
-1140987944 0 0 134217754 12352 0 0 0 S
-EA 0 1 -1
+1140987944 0 0 0 134217754 12352 0 0 0 S
+EA 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -56,8 +56,8 @@ woman beautiful slyph air~
 &+Cconceals her body from any prying eyes. Her eyes also seem to have to
 &+Cprismatic color to them.
 ~
-1073874984 0 0 134217882 0 0 0 0 S
-EA 0 12 -1
+1073874984 0 0 0 134217882 0 0 0 0 S
+EA 0 12 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -72,8 +72,8 @@ a &+Rsl&+Yy&+bph~
 &+Cvisible. Her clothes are almost transparent, but just cover enough that they
 &+Chide her body from any prying eyes.
 ~
-1073874984 0 0 134217754 192 0 0 0 S
-EA 0 10 -1
+1073874984 0 0 0 134217754 192 0 0 0 S
+EA 0 10 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -86,8 +86,8 @@ tempest whirlwind living storm~
 &+Ctornado. It seems to be stationed here to feed any air elementals and aerial
 &+Cservants that come in here.
 ~
-1275074570 0 0 402653208 12480 0 0 0 S
-EA 0 2 -1
+1275074570 0 0 0 402653208 12480 0 0 0 S
+EA 0 2 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -102,8 +102,8 @@ air elemental living tornado large~
 &+Cin the air. Finally it seems to be slightly dark and might be ready for a
 &+Cstorm.
 ~
-1140983848 0 0 58 12480 0 0 0 S
-EA 0 1 -1
+1140983848 0 0 0 58 12480 0 0 0 S
+EA 0 1 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -117,8 +117,8 @@ being veri'throck ultraloth demon shadows~
 &+Labout him that sucks up all light and denies to any that might be searching
 &+Lfor him.
 ~
-1073744040 0 0 941162682 47297 0 0 -1000 S
-X 0 5 -1
+1073744040 0 0 0 941162682 47297 0 0 -1000 S
+X 0 5 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -132,8 +132,8 @@ huge air elemental~
 &+Cand lightning seem to cascade through it at any moment. All about it lighting
 &+Cseems to jump out to strike anything or anyone that closes in with it.
 ~
-1140852777 0 0 134217786 12480 0 0 0 S
-EA 0 1 -1
+1140852777 0 0 0 134217786 12480 0 0 0 S
+EA 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -148,8 +148,8 @@ djinni warrior~
 &+Cblue silk belt. His top is totally uncovered so as to show off his ripiling
 &+Cmuscles.
 ~
-1677855272 0 0 134225946 14336 0 0 400 S
-G 0 1 -1
+1677855272 0 0 0 134225946 14336 0 0 400 S
+G 0 1 0 -1
 47 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -163,8 +163,8 @@ mist dragon vaprothax friend~
 &+Cwhite mustache made of heavy mist and air on its nose. However even though
 &+Cit doesn't look exceptionally mean, he really doesn't look happy to see you.
 ~
-1140996138 0 0 940572682 2176 0 0 -351 S
-D 0 9 -1
+1140996138 0 0 0 940572682 2176 0 0 -351 S
+D 0 9 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -178,8 +178,8 @@ elemental air noble si'ciltron _nofear_~
 &+Cand fading winds and fog. Even as mist is musculature is well defined and
 &+Cmagic seems to play about his body, this is one that is best left alone.
 ~
-1073879080 0 0 134217918 2240 0 0 -849 S
-UG 0 9 -1
+1073879080 0 0 0 134217918 2240 0 0 -849 S
+UG 0 9 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -194,8 +194,8 @@ energy elemental negitave large evil power~
 &+Las they stand here. Even spells to some degree lose there power when used
 &+Lon these creatures and only the most powerful of spells even bother them.
 ~
-1073879082 0 0 671088648 309440 0 0 -1000 S
-EA 0 1 -1
+1073879082 0 0 0 671088648 309440 0 0 -1000 S
+EA 0 1 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -209,8 +209,8 @@ verthor representitive elemental~
 &+Lthe flowers in the room, but that really doesn't seem to bother him, he tends
 &+Lto like dead things a lot.
 ~
-1073879210 0 0 134283288 262208 0 0 -1000 S
-UV 0 10 -1
+1073879210 0 0 0 134283288 262208 0 0 -1000 S
+UV 0 10 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -225,8 +225,8 @@ djinni mage~
 &+Cear. He seems happy though and regardless of the situation has a wide smile on
 &+Chis face.
 ~
-1677855304 0 0 671088698 0 0 0 500 S
-G 0 10 -1
+1677855304 0 0 0 671088698 0 0 0 500 S
+G 0 10 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -244,8 +244,8 @@ al'hajib son caliph djinni~
 &+Wand Ruler of the Fortress of Steel and Ice sends me to look for her, have you
 &+Wnews??
 ~
-1140983820 0 0 134225978 14528 0 0 800 S
-X 0 2 -1
+1140983820 0 0 0 134225978 14528 0 0 800 S
+X 0 2 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -263,8 +263,8 @@ north wind man old~
 &+Wlady came with her four nobles. I remember when not even &+BSi&+C'Ciltron existed!
 &+C    At this point he sighs and hangs his ethreal head low.
 ~
-1073885320 0 0 134217754 12480 0 0 0 S
-EA 0 10 -1
+1073885320 0 0 0 134217754 12480 0 0 0 S
+EA 0 10 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -279,8 +279,8 @@ dragon maelthron cloud~
 &+CHe has long scales are pale in color and have the color of morning dew on
 &+Cthem. He himself has long sharp claws and seems very imposing.
 ~
-1140987948 0 0 134217786 14528 0 0 -450 S
-D 0 12 -1
+1140987948 0 0 0 134217786 14528 0 0 -450 S
+D 0 12 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -295,8 +295,8 @@ aurilium lord lightning _nofear_~
 &+Clightning and barely able to move as he is pummaled with the power of an
 &+Centire plane.
 ~
-137226 0 0 134217882 14528 0 0 500 S
-UG 0 10 -1
+137226 0 0 0 134217882 14528 0 0 500 S
+UG 0 10 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -310,8 +310,8 @@ ixteal illithid mindflayer~
 &+Mprodtruding tenticles and a moth that is sunk back into its head. Its hands
 &+Mare small little tenticles as well, but seem adept at manual dexterity.
 ~
-1107429544 0 0 2281701416 14530 0 0 -1000 S
-MF 0 3 -1
+1107429544 0 0 0 2281701416 14530 0 0 -1000 S
+MF 0 3 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -325,8 +325,8 @@ something yan yan-c-bin spirit~
 &+Ca melebolent evil and a mindless need for bloodlust since it cannot seem to
 &+Cfind those who were responsible for its true death.
 ~
-1073887272 0 0 939598014 309440 0 0 -1000 S
-UG 0 9 -1
+1073887272 0 0 0 939598014 309440 0 0 -1000 S
+UG 0 9 0 -1
 57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -340,8 +340,8 @@ githyanki darthikya hunter~
 &+Ccinch belt and a short robe over his upper body. He seems to be intently
 &+Clooking for something and almost looks right through you.
 ~
-1677854760 0 0 2281701386 0 0 0 -693 S
-GI 0 3 -1
+1677854760 0 0 0 2281701386 0 0 0 -693 S
+GI 0 3 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -355,8 +355,8 @@ air mephit puff wind~
 &+Care not quite in the right place. It seems fairly small, and annoying but
 &+Ccould still possibly be a threat.
 ~
-1073879228 0 0 135790618 12480 0 0 -390 S
-EA 0 13 -1
+1073879228 0 0 0 135790618 12480 0 0 -390 S
+EA 0 13 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -370,8 +370,8 @@ a long scar down his face. His eyes are a piercing blue and he seems to have
 a purpose about the way he moves. He has appearantly come here to kill his
 old master Ixteal, who he has heard is having dealings with Si'Caltrin.
 ~
-335677480 0 0 134217728 0 0 0 892 S
-PH 0 10 -1
+335677480 0 0 0 134217728 0 0 0 892 S
+PH 0 10 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -385,8 +385,8 @@ barbarian edrick~
 &+Bto much time in the snow. He wears varius pelts and furs about his body and
 &+Bhas a massive sort strapped to his back.
 ~
-1342310440 0 0 8 64 0 0 893 S
-PB 0 1 -1
+1342310440 0 0 0 8 64 0 0 893 S
+PB 0 1 0 -1
 43 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -400,8 +400,8 @@ grandor dwarf~
 &+Ybraided and has symbols of death in them. His eys are blue and he seems to
 &+Ylook at everyone with a mingled look of hope and distrust.
 ~
-1409419304 0 0 671096872 45276 0 0 1000 S
-PM 0 6 -1
+1409419304 0 0 0 671096872 45276 0 0 1000 S
+PM 0 6 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -417,8 +417,8 @@ druid half-elf aurilyia~
 &+Cclothes are made of plain leather, but she wields the Ironwood cudgel of the
 &+CEarthmother in her hand against all evil.
 ~
-1409419304 0 0 687865864 12480 0 0 250 S
-P2 0 8 -1
+1409419304 0 0 0 687865864 12480 0 0 250 S
+P2 0 8 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -433,8 +433,8 @@ looks like the same color as spring and where he walks the air smells faintly
 of vanilla. He is wearing some studden armor and he has the elven sword
 'Kel-Lithion' in his hand.
 ~
-1409419304 0 0 404234426 2076 0 0 895 S
-PE 0 2 -1
+1409419304 0 0 0 404234426 2076 0 0 895 S
+PE 0 2 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -448,8 +448,8 @@ troll gorthos mercenary~
 &+gichor as he moves along here. However on his left arm is the admantium
 &+gshield of Dargos.
 ~
-1677854760 0 0 134283288 0 0 0 -958 S
-PT 0 1 -1
+1677854760 0 0 0 134283288 0 0 0 -958 S
+PT 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -463,8 +463,8 @@ drow everhate~
 &+mon the other side a mask made of admantium hides whatever may have happened
 &+mto it.
 ~
-1677854760 0 0 134217756 17 0 0 -893 S
-PL 0 10 -1
+1677854760 0 0 0 134217756 17 0 0 -893 S
+PL 0 10 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -479,8 +479,8 @@ drow myria~
 &+mlovers. She wields the five headed whip of Lolth in her hand with evident
 &+mease and experience.
 ~
-1677854760 0 0 671154208 45276 0 0 -1000 S
-PL 0 6 -1
+1677854760 0 0 0 671154208 45276 0 0 -1000 S
+PL 0 6 0 -1
 47 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -494,8 +494,8 @@ lord galzron _nofear_~
 &+Lstill well defined and his gaze seems to penitrate everything. He is dressed
 &+Lin battle armor that that is glossless and seems to radiate power.
 ~
-1073887274 0 0 939598012 14365 0 0 -953 S
-UG 0 10 -1
+1073887274 0 0 0 939598012 14365 0 0 -953 S
+UG 0 10 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -510,8 +510,8 @@ lilia efreeti whore mistress~
 &n&+rit seems to take on the glint of a live fire itself sometimes as it nestles
 &n&+rgently around her neck.
 ~
-1073874986 0 0 671154232 14337 0 0 -592 S
-EF 0 10 -1
+1073874986 0 0 0 671154232 14337 0 0 -592 S
+EF 0 10 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -525,8 +525,8 @@ fire giant maugly~
 &+Lnothing he would like to do more then to just go to sleep. His muscles are
 &+Ltaught against his chest and he looks like he has just run a marathon.
 ~
-1073743914 0 0 536871064 0 0 0 -845 S
-G 0 1 -1
+1073743914 0 0 0 536871064 0 0 0 -845 S
+G 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -540,8 +540,8 @@ halla'al' ziiflan ambassador sultarn brass~
 &n&+rburn with an unholy fervor as he paces around the room. He seems to be
 &n&+rfidgeting a lot and looks ver yowrried over something.
 ~
-1073748008 0 0 402653192 14337 0 0 -928 S
-EF 0 10 -1
+1073748008 0 0 0 402653192 14337 0 0 -928 S
+EF 0 10 0 -1
 46 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -558,8 +558,8 @@ zieflia daughter caliph~
 &+Bas she sees you looking at them she says, &+W'Please find the key, I will reward
 &+Wyou if you will, please I beg you!!'
 ~
-1073875082 0 0 402661434 14528 0 0 839 S
-G 0 9 -1
+1073875082 0 0 0 402661434 14528 0 0 839 S
+G 0 9 0 -1
 42 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -574,8 +574,8 @@ ecthius lord master _nofear_~
 &+Wthat seems to extend to anything that he can see. He radiates an aura of evil
 &+Wseems to wilt all life.
 ~
-1082267688 0 0 402718910 47296 0 0 -988 S
-UG 0 10 -1
+1082267688 0 0 0 402718910 47296 0 0 -988 S
+UG 0 10 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -590,8 +590,8 @@ fearfrost giant champion~
 &+Cjust becuse at his side he has the skulls of many a creture that he has killed
 &+Cin the survice of his two masters.
 ~
-1073743914 0 0 402718744 192 0 0 -1000 S
-G 0 5 -1
+1073743914 0 0 0 402718744 192 0 0 -1000 S
+G 0 5 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -606,8 +606,8 @@ marid giant kalzock~
 &+bis a slight blue color and he is dressed in shimmering clothes that leave his
 &+bchest uncovered sothat everyone can see his rippling muscles.
 ~
-1074006058 0 0 402655272 2240 0 0 -1000 S
-EW 0 5 -1
+1074006058 0 0 0 402655272 2240 0 0 -1000 S
+EW 0 5 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -624,8 +624,8 @@ eblon caption frost~
 &+BQuasi-Eemental Plane of Ice. How ice can be burned is a mystery but it has
 &+Bhappened to him.
 ~
-1140987944 0 0 268435512 14528 0 0 -300 S
-EA 0 15 -1
+1140987944 0 0 0 268435512 14528 0 0 -300 S
+EA 0 15 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -639,8 +639,8 @@ air elemental snobby~
 &+Cthere, one hand at a sort of cock, and his head tilted gazing out, waiting
 &+Cfor the elite of this Plane toenter, he seems to take his job much to seriously
 ~
-1140865066 0 0 134217786 12480 0 0 -249 S
-EA 0 1 -1
+1140865066 0 0 0 134217786 12480 0 0 -249 S
+EA 0 1 0 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -654,8 +654,8 @@ air elemental gigantic~
 &+Wdestroy. It seems to be guarding this area somehow and an intelligence glints
 &+Win its glowing eyes from the middle of the tornado.
 ~
-1140996136 0 0 939524286 14556 0 0 -100 S
-OG 0 1 -1
+1140996136 0 0 0 939524286 14556 0 0 -100 S
+OG 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -670,8 +670,8 @@ lilianti sylph duchess~
 &+Wseems to move with an effortless grace throughout the area. Her face seems
 &+Wto shine with light as smiles on all the guests and her mouth runs incessantly.
 ~
-1073879080 0 0 402661434 14528 0 0 450 S
-HF 0 8 -1
+1073879080 0 0 0 402661434 14528 0 0 450 S
+HF 0 8 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -686,8 +686,8 @@ sylph handmaiden lady~
 &+Cair born. She is absolutly breath taking with blonde hair that goes down to
 &+Cher waist and a set of flowers that are entwined in her clothes.
 ~
-1140987944 0 0 134742074 14528 0 0 500 S
-HF 0 10 -1
+1140987944 0 0 0 134742074 14528 0 0 500 S
+HF 0 10 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -702,8 +702,8 @@ gogal knight banoret mephit gogol~
 &+Con his ugly little face. He seems to be fiddling with his robes of office a
 &+Clot becuse they are to big for him.
 ~
-1073879224 0 0 672661566 14556 0 0 -450 S
-EA 0 13 -1
+1073879224 0 0 0 672661566 14556 0 0 -450 S
+EA 0 13 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -716,8 +716,8 @@ calthon baron stalker invisible minister internal~
 &+Cslide off him for some reason. At most there is only a barely visible outline
 &+Cthat can be seen at all.
 ~
-1140988072 0 0 135790654 12508 0 0 -560 S
-EA 0 15 -1
+1140988072 0 0 0 135790654 12508 0 0 -560 S
+EA 0 15 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -731,8 +731,8 @@ aerial servant verves duke~
 &+Wthe backbone of the army for Queen Akadi. He himself is dressed in phantom
 &+Wmilitary dress and wears a his blade at his side, always ready for battle.
 ~
-1140987944 0 0 134217758 12480 0 0 -150 S
-EA 0 1 -1
+1140987944 0 0 0 134217758 12480 0 0 -150 S
+EA 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -751,8 +751,8 @@ emmissary da'jilia calpih djinni~
 &+Wfather. He is VERY upset. He even mentioned sending out his son to find
 &+Wher...'
 ~
-1073874952 0 0 134217784 12492 0 0 859 S
-G 0 10 -1
+1073874952 0 0 0 134217784 12492 0 0 859 S
+G 0 10 0 -1
 48 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -767,8 +767,8 @@ akadi queen air~
 &+Cher being totally changeable at any second. She can disappear into her
 &+Celement completely any time she wishes and vanish completely.
 ~
-1073879210 0 0 941170878 14556 0 0 -875 S
-EA 0 16777477 -1
+1073879210 0 0 0 941170878 14556 0 0 -875 S
+EA 0 16777477 0 -1
 62 180 -100 1d100+30000 7d8+70
 0.0.0.0 1000000
 8 8 2

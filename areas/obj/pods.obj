@@ -5,7 +5,7 @@ A &+Wskeleton&n lies here, partially covered by &+Gmoss.&n~
 ~
 15 10 3 5 2 0 8 0 0 1 0
 5 0 0 4 0 0 0 0
-8 1 100
+8 1 100 100
 E
 skeleton~
    This &+Wskeleton&n appears to be from a &+Chuman,&n or some type of human-like being.
@@ -20,7 +20,7 @@ tree fallen toppled~
 ~
 15 6 6 500 7 0 8192 0 0 0 0
 100 0 0 100 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 tree fallen toppled~
 &+g   This was once a &+Gmajestic tree,&n&+g standing high above most of the other &+Gtrees&n
@@ -38,7 +38,7 @@ The remains of a large &+ystump&n dominate the area.~
 ~
 15 6 3 200 7 0 0 0 0 0 0
 50 5 0 50 0 0 0 0
-750 1 100
+750 1 100 100
 E
 stump tree shattered remains~
    This &+ystump&n is all that remains of one great &+gtree&n that would have towered
@@ -55,7 +55,7 @@ heartwood wood sliver totem~
 ~
 34 6 2 1 10 0 33566720 8404993 0 0 0
 3 0 0 0 0 0 0 0
-1 8921 100
+1 8921 100 100
 E
 heartwood wood~
    This &+ys&+rli&+Wv&n&+yer of wood &+Mhums&n as it is held, emanating a feeling of power trapped
@@ -74,7 +74,7 @@ skeleton small~
 ~
 15 10 2 5 1 0 8192 0 0 0 0
 5 0 0 5 0 0 0 0
-10 1 50
+10 1 50 100
 E
 skeleton small~
 &+g   The &+Wskeleton&n&+g lying here comes from either a child, or an adult of a small&n
@@ -91,7 +91,7 @@ bird stick~
 ~
 5 6 2 3 9 50 33566720 8193 64 0 0
 9 2 5 11 0 0 0 0
-5 5456 100
+5 5456 100 100
 E
 bird stick~
    A small, &+Rco&+Ylor&+Gfu&+Bl &+Rbi&+Yr&+Rd&n has been securely strapped to a &+yhardwood stick&n that
@@ -112,7 +112,7 @@ tree shimmering~
 ~
 15 6 6 500 10 60 16384 0 0 0 0
 50 0 0 50 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 tree blossom blossoms shimmering~
 &+g   This tree almost hides among the other trees as the vegetation grows very&n
@@ -127,7 +127,7 @@ handful blossom blossoms shimmering~
 ~
 8 30 2 1 9 0 12288 176181249 0 0 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 E
 handful blossom blossoms shimmering~
 &+y   Though it has not been woven into any shape, this handful of &+Msh&n&+mi&+Mmm&n&+meri&+Mng&n
@@ -146,7 +146,7 @@ tree shimmering~
 ~
 15 6 6 500 10 70 16384 0 0 0 0
 50 0 0 50 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 tree shimmering~
 &+g   The other trees would obscure the sight of this one, except the &+Bsh&n&+bi&+Bmm&n&+beri&+Bng&n
@@ -161,7 +161,7 @@ tree shimmering~
 ~
 15 6 6 500 10 70 16384 0 0 0 0
 50 0 0 50 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 tree shimmering~
 &+g   This tree would be lost among the other trees in the thick vegetation if it&n
@@ -177,7 +177,7 @@ tree shimmering~
 ~
 15 6 6 500 10 70 16384 0 0 0 0
 50 0 0 50 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 tree shimmering~
 &+g   This tree stands among the thick vegetation in the swamp, but not even the&n
@@ -192,7 +192,7 @@ blossom blossoms shimmering red~
 ~
 8 30 2 1 10 50 12288 176181249 0 1 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 E
 blossom blossoms shimmering red~
 &+y   These &+Rb&n&+rl&+Ro&n&+rss&+Roms sh&n&+ri&+Rmm&n&+rer&+y in the light, catching the eye as their irridesence&n
@@ -211,7 +211,7 @@ handful blossom blossoms yellow white~
 ~
 8 30 2 1 10 50 28672 176181249 0 0 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 E
 handful blossom blossoms yellow white~
 &+g   Someone has dropped a handful of &+Ysh&+Wi&+Ymm&+Weri&+Yng b&+Wl&+Yo&+Wss&+Yoms&n&+g on the ground. Though&n
@@ -230,7 +230,7 @@ handful blossom blossoms shimmering blue~
 ~
 11 30 2 1 10 50 12288 176181249 0 0 0
 0 0 0 0 0 0 0 0
-1 500 100
+1 500 100 100
 E
 handful blossom blossoms shimmering blue~
 &+g   A handful of &+Bsh&n&+bi&+Bmm&n&+beri&+Bng b&n&+bl&+Bo&n&+bss&+Boms&n&+g lies on the ground, but despite being in&n
@@ -250,7 +250,7 @@ vine vines~
 ~
 29 43 5 100 10 80 2 0 0 0 0
 340 28603 1 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 vine vines~
 &+g   These &+wvines&+g grow thick both on and between the trees, blocking the way past&n
@@ -265,7 +265,7 @@ flower delicate crystal~
 ~
 11 30 2 1 11 50 33820672 10489873 0 0 0
 0 0 0 0 0 0 0 0
-1 800 100
+1 800 100 100
 E
 flower delicate crystal~
 &+m   This flo&+Yw&+mer seems like it &+Mw&+mould be easily crushed, bu&+Mt&+m it is much tougher&n
@@ -285,7 +285,7 @@ vine vines~
 ~
 29 43 4 100 10 80 2 0 0 0 0
 340 28605 2 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28517
 leaves wad~
 &+gso&+Gm&+ge ti&+Gghtl&+gy wr&+Gapp&+ged le&+Gav&+ges&n~
@@ -293,7 +293,7 @@ leaves wad~
 ~
 17 30 2 1 10 40 8192 8404993 0 0 0
 30 30 0 0 0 0 0 0
-3 504 100
+3 504 100 100
 E
 leaves wad~
 &+g   These leaves have been carefully constructed into layers that are &+ccemented&n
@@ -309,7 +309,7 @@ meat masticated food~
 ~
 19 2 1 1 7 0 33562624 8404993 0 0 0
 12 3 3 0 0 0 0 1
-1 1 100
+1 1 100 100
 E
 meat masticated food~
 &+r   This lump of meat has been chewed to the point that its origin cannot be&n
@@ -322,7 +322,7 @@ serrated blade~
 ~
 5 18 4 15 11 60 34078792 8193 0 0 0
 8 4 5 3 0 0 0 0
-15 1 100
+15 1 100 100
 E
 serrated blade~
    This huge blade could only be wielded by the monstrous gartham.  The handle
@@ -340,7 +340,7 @@ tattered robes robe silk~
 ~
 9 3 3 1 11 20 8256 1033 0 0 0
 -10 0 0 1 0 0 0 0
-1 205975 100 67108864 0 0 0
+1 205975 100 100 67108864 0 0 0
 E
 tattered robes robe silk~
 &+m   Thou&+rg&+mh ta&+rtte&+mred a&+rr&+mound the h&+re&+mm, th&+ris r&+mob&+re st&+mill sho&+rw&+ms fine wo&+rrkm&+manship and&n
@@ -359,7 +359,7 @@ bow longbow carved~
 ~
 6 6 3 2 9 25 33566784 5267457 0 0 0
 0 2 0 1 0 0 0 0
-8 2500 100
+8 2500 100 100
 E
 bow longbow carved~
 &+y   This bow has been made by an expert craftsman.  It is strong but flexible,&n
@@ -378,7 +378,7 @@ quiver fringed~
 ~
 30 14 3 5 9 25 274432 9437185 0 1 0
 50 1 1 45 0 0 0 0
-5 1600 100
+5 1600 100 100
 E
 quiver fringed~
 &+y   This quiver has been made from the hide of an unidentifiable creature. The&n
@@ -397,7 +397,7 @@ A set of no-show shelves sits here~
 ~
 15 6 4 1000 11 50 10 0 0 0 0
 1000 0 0 1000 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28524
 vine thorn thorny~
 &+Ga thorny vine&n~
@@ -405,7 +405,7 @@ vine thorn thorny~
 ~
 29 42 3 0 7 0 4098 0 0 0 0
 29 28706 1 0 0 0 0 0
-0 1 100
+0 1 100 100
 #28525
 vine vines thorn thorny~
 &+ga thorny vine&n~
@@ -413,7 +413,7 @@ vine vines thorn thorny~
 ~
 29 43 3 0 7 0 4098 0 0 0 0
 270 28707 3 1 0 0 0 0
-0 1 100
+0 1 100 100
 #28526
 vial plant essence~
 &+ga vial of p&+Yi&+Gtc&+gher p&+Yl&+ga&+Gnt e&+gss&+Ye&+gnce&n~
@@ -421,7 +421,7 @@ vial plant essence~
 ~
 19 48 0 1 8 0 0 8404993 0 0 0
 24 0 0 0 0 0 0 0
-1 4 100
+1 4 100 100
 E
 vial plant essence~
    This thin vial contains a green-tinted liquid that is distilled from the
@@ -435,7 +435,7 @@ wrapped plant leaves~
 ~
 17 30 1 1 10 25 0 8404993 0 0 0
 20 20 11 0 0 0 0 0
-3 869 100
+3 869 100 100
 E
 wrapped plant leaves~
 &+g   Leaves from a larger p&+Yi&+gtch&+Ge&+gr p&+Yl&+Gan&+gt have been somehow glued together in&n
@@ -451,7 +451,7 @@ den entrance underbrush~
 ~
 15 5 6 10000 7 0 0 0 0 0 0
 10000 0 0 10000 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 den entrance underbrush~
 &+g   The tangled underbrush has been forced into a somewhat cylindrical shape as&n
@@ -467,7 +467,7 @@ mottled cloak~
 ~
 9 47 3 5 9 25 1077312 1025 0 0 0
 -15 0 0 2 0 0 0 0
-7 75558 100
+7 75558 100 100
 E
 mottled cloak~
 &+g   This c&+Gl&+goak is made of ov&+we&+grla&+Gp&+gping sca&+Gl&+ges from the li&+wz&+gards that grow in this&n
@@ -486,7 +486,7 @@ egg~
 ~
 19 48 2 1 7 0 0 1 0 1 0
 48 0 0 0 0 0 0 0
-0 505 100
+0 505 100 100
 E
 egg~
 &+g   This e&+wg&+gg at one time was nestled in the &+ynest&+g with the other e&+wg&+ggs of the&n
@@ -501,7 +501,7 @@ A no-show lair is hidden here~
 ~
 15 5 4 1000 7 0 2 0 0 0 0
 100 1 0 100 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28532
 pile bones~
 &+Wa pile of gnawed bones&n~
@@ -509,7 +509,7 @@ pile bones~
 ~
 15 10 3 25 4 0 8192 0 0 0 0
 25 0 0 25 0 0 0 0
-25 1 100
+25 1 100 100
 E
 pile bones~
 &+g   This pile of &+Wbones&+g has been collecting for some time in front of the lair.&n
@@ -522,7 +522,7 @@ tooth~
 ~
 5 34 1 1 8 20 12288 8396801 0 0 0
 2 2 6 11 0 0 0 0
-1 250 100
+1 250 100 100
 E
 tooth~
 &+g   This &+Wtooth&+g is still very sharp even though it has been broken out of the&n
@@ -541,7 +541,7 @@ A hidden wall blocks access here~
 ~
 29 11 4 1000 11 50 2 0 0 0 0
 340 28774 0 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28535
 stone stones~
 &+wa crum&+Wb&+wlin&+Wg &+wst&+Wo&+wne wa&+Wl&+wl&n~
@@ -549,7 +549,7 @@ A no-show wall blocks the way here.~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28775 2 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28536
 stone stones~
 &+wa c&+Wr&+wum&+Wb&+wlin&+Wg&+w s&+Wt&+wone w&+Wa&+wll&n~
@@ -557,7 +557,7 @@ A no-show wall blocks passage here.~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28777 0 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28537
 stone stones~
 &+wa c&+Wr&+wum&+Wbl&+wing s&+Wt&+wone w&+Wa&+wll&n~
@@ -565,7 +565,7 @@ A no-show wall blocks passage here.~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28794 2 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28538
 stone stones~
 &+wa c&+Wr&+wum&+Wbl&+wing s&+Wt&+wone w&+Wa&+wll&n~
@@ -573,7 +573,7 @@ A no-show wall blocks passage here~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28793 1 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28539
 vine vines~
 &+gso&+Gm&+ge t&+Ga&+gng&+yle&+gd v&+Gi&+gnes&n~
@@ -581,7 +581,7 @@ A no-show vine blocks progress.~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28563 3 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28540
 stone stones~
 &+wa cr&+Wu&+wm&+Wbl&+wing s&+Wto&+wne w&+Wa&+wll&n~
@@ -589,7 +589,7 @@ A no-show wall blocks the passageway.~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28806 1 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28541
 stone stones~
 &+wa c&+Wr&+wum&+Wbl&+win&+Wg st&+wone w&+Wa&+wll&n~
@@ -597,7 +597,7 @@ A no-show wall blocks progress here.~
 ~
 29 11 4 1000 10 50 2 0 0 0 0
 340 28818 3 1 0 0 0 0
-1000 1 100
+1000 1 100 100
 #28542
 mandible~
 &+yan a&+rnt m&+yan&+rdi&+yble&n~
@@ -605,7 +605,7 @@ mandible~
 ~
 5 46 2 3 9 20 33579008 8193 0 0 0
 5 2 5 3 0 0 0 0
-2 4502 100
+2 4502 100 100
 E
 mandible~
    This large &+rm&+yan&+rdi&+yble&n from an &+ya&+rnt&n keeps its sharp edge regardless of the blow
@@ -625,7 +625,7 @@ stinger~
 ~
 5 46 2 1 9 20 24576 8396801 0 0 0
 2 2 4 11 0 0 0 0
-1 3100 100
+1 3100 100 100
 E
 stinger~
    This &+rs&+ytin&+rger&n from a very large &+ya&+rnt&n fits well in any hand.  It can be used
@@ -645,7 +645,7 @@ totem butterfly wood~
 ~
 34 6 1 1 11 40 8257 8404993 0 0 0
 1 0 0 0 0 0 0 0
-1 331 100
+1 331 100 100
 E
 totem butterfly wood~
    Someone has taken a piece of &+yw&+Yo&+ro&+yd&n from the &+ytw&+ri&+yste&+rd &+ytr&+re&+yes&n that grow in the
@@ -664,7 +664,7 @@ totem neberi wood~
 ~
 34 6 1 1 11 40 33562625 8404993 0 0 0
 3 0 0 0 0 0 0 0
-1 6500 100
+1 6500 100 100
 E
 totem neberi~
    Someone has taken a &+ypi&+bece o&+yf da&+brk w&+yood&n and carved it expertly, creating an
@@ -683,7 +683,7 @@ totem sandstone bird~
 ~
 34 11 1 1 11 40 8257 8404993 0 0 0
 4 0 0 0 0 0 0 0
-1 331 100
+1 331 100 100
 E
 totem sandstone bird~
    Someone has taken a &+ypie&+Wc&+ye of &+Ws&+yands&+Wt&+yone&n and carefully etched in the picture
@@ -703,7 +703,7 @@ totem marble skexis~
 ~
 34 38 1 1 11 40 33562689 8404993 0 0 0
 12 0 0 0 0 0 0 0
-1 6500 100
+1 6500 100 100
 E
 totem marble skexis~
    Someone has taken a &+Wpi&+ge&+Wce o&+gf &+Wm&+gar&+Wble&n that is &+Wwhi&+gt&+We wi&+gt&+Wh &+ggr&+We&+gen s&+Wt&+greaks,&n using
@@ -722,7 +722,7 @@ totem crystal face~
 ~
 34 8 1 1 11 40 8257 8404993 0 0 0
 16 0 0 0 0 0 0 0
-1 331 100
+1 331 100 100
 E
 totem crystal face~
    Someone has taken a piece of &+Mro&+mse-co&+Mlo&+mred cr&+Myst&+mal&n and expertly carved it
@@ -741,7 +741,7 @@ totem ivory elfling~
 ~
 34 34 1 1 11 40 33562689 8404993 0 0 0
 48 0 0 0 0 0 0 0
-1 6500 100
+1 6500 100 100
 E
 totem ivory elfling~
    Someone has taken a piece of &+Wiv&+wor&+Wy&n and used acid to etch a delicate picture
@@ -760,7 +760,7 @@ arrow twisted~
 ~
 7 6 1 1 10 20 0 8388609 0 0 0
 1 2 3 1 0 0 0 0
-1 900 100
+1 900 100 100
 E
 arrow twisted~
 &+y   This &+ya&+rrro&+yw has been carved from the w&+roo&+yd of one of the tw&+ris&+yted &+gtr&+ye&+ges&+y that&n
@@ -774,7 +774,7 @@ A &+bqu&+Bive&+Br&n made of &+bwo&+Bve&+bn ne&+Berih&+Bi&+bde&n lies here.~
 ~
 30 14 2 2 10 20 24576 9437185 0 0 0
 50 1 1 0 0 0 0 0
-3 1500 100
+3 1500 100 100
 E
 quiver~
    This &+bqu&+Bive&+br&n has been made from &+bne&+Bb&+berih&+Bi&+bde&n that was woven together to form
@@ -792,7 +792,7 @@ birdfeather headdress~
 ~
 9 50 2 8 10 20 33562624 17 64 0 0
 -5 0 0 1 0 0 0 0
-6 8500 100 2048 0 0 0
+6 8500 100 100 2048 0 0 0
 E
 birdfeather headdress~
    A gifted artisan took &+Bf&+beath&+Be&+brs&n and &+bne&+Bb&+berih&+Bi&+bde&n and created this marvelous
@@ -811,7 +811,7 @@ neberihide necklace~
 ~
 9 14 2 4 10 20 33562624 5 0 0 0
 -5 0 0 2 0 0 0 0
-3 8450 100 2048 0 0 0
+3 8450 100 100 2048 0 0 0
 E
 neberihide necklace~
    A skilled artisan has taken strips of &+bne&+Bb&+berih&+Bi&+bde&n and created a &+bne&+Bckl&+bace,&n
@@ -828,7 +828,7 @@ feather~
 ~
 13 50 1 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 feather~
    This &+bfeather&n has fallen from one of the &+bdark birds&n in the &+gswamp.&n
@@ -840,7 +840,7 @@ neberihide strip~
 ~
 13 15 1 0 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 neberihide strip~
    This &+bst&+Br&+bip of ne&+Bb&+berih&+Bi&+bde&n was removed from the poor &+bne&+Bb&+beri&n during a fight.
@@ -852,7 +852,7 @@ neberi roast~
 ~
 19 2 2 3 7 0 0 8404993 0 0 0
 24 0 0 0 0 0 0 0
-5 3 100
+5 3 100 100
 E
 neberi roast~
 &+y   A ba&+Bb&+by ne&+Bb&+beri &+ywas caught and roasted to satisfy someone's appetite.&n
@@ -864,7 +864,7 @@ vial essence~
 ~
 10 8 1 1 9 15 33562688 0 0 0 0
 21 28 -1 -1 0 0 0 0
-1 50676 100
+1 50676 100 100
 E
 vial essence~
 &+y   Someone has taken the essences from creatures, and distilled it into this&n
@@ -879,7 +879,7 @@ vial eyes~
 ~
 10 8 1 1 9 15 33562689 8404993 0 0 0
 46 19 -1 -1 0 0 0 0
-1 102556 100
+1 102556 100 100
 E
 vial eyes~
 &+g   This &+wv&+yia&+rl&+g contains the &+yj&+rui&+yc&+wes&+g from the &+we&+rye&+ys &+gof&+w l&+yand st&+wri&+yd&+wers.&+g  For what&n
@@ -892,7 +892,7 @@ vial red dragonfly blood~
 ~
 10 8 1 1 9 15 33562689 8404993 0 0 0
 41 96 -1 -1 0 0 0 0
-1 75250 100
+1 75250 100 100
 E
 vial red dragonfly blood~
 &+g   The &+rblo&+yo&+rd&+g of a &+rred dra&+yg&+ronf&+yl&+ry&+g has been captured in this &+rvia&+yl&+g in such a way&n
@@ -905,7 +905,7 @@ vial white dragonfly blood~
 ~
 10 8 1 1 9 15 33562689 8404993 256 0 0
 41 97 -1 -1 0 0 0 0
-1 75250 100
+1 75250 100 100
 E
 vial white dragonfly blood~
 &+g   This&+w via&+Wl&+g contains the &+wblo&+Wo&+wd&+g of a &+wwhi&+Wt&+we dra&+Wg&+wonf&+Wl&+wy.&+g  It has been harvested&n
@@ -918,7 +918,7 @@ vial blue dragonfly blood~
 ~
 10 8 1 1 9 15 33562689 8404993 0 0 0
 41 98 -1 -1 0 0 0 0
-1 75250 100
+1 75250 100 100
 E
 vial blue dragonfly blood~
 &+g   This &+Bvia&+Yl&+g contains the &+Bblo&+Yo&+Bd&+g from a &+Bb&+Yl&+bue dra&+Yg&+Bonf&+Yl&+By.&+g  It has been carefully&n
@@ -931,7 +931,7 @@ tongue neberi hollow hollowed~
 ~
 17 14 2 3 10 20 33562624 8404993 0 0 0
 25 25 13 0 0 0 0 0
-5 650 100
+5 650 100 100
 E
 tongue neberi hollow hollowed~
 &+y   The tongue has been removed from a large &+bne&+Bb&+beri&+y and carefully hollowed out&n
@@ -945,7 +945,7 @@ A no-show splotch of water for ppl to drink in watery rooms is here.~
 ~
 17 15 3 0 7 0 2 0 0 0 0
 1000 1000 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #28564
 water spring~
 &+Ba spring of clear water&n~
@@ -953,7 +953,7 @@ water spring~
 ~
 17 40 2 1000 7 0 0 0 0 0 0
 1000 1000 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 water spring~
 &+y   Contained by a circle of large rounded stones,&+B clear water&+y bubbles up from&n
@@ -969,7 +969,7 @@ carcass~
 ~
 13 2 3 10 4 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 carcass~
 &+g   Something large has killed a big cat, but has eaten only part of it.  Most&n
@@ -986,7 +986,7 @@ vial waterbreathing~
 ~
 10 8 1 1 11 30 33562688 8404993 0 0 0
 42 85 -1 -1 0 0 0 0
-1 18545 100
+1 18545 100 100
 E
 vial waterbreathing~
 &+g   This &+Mv&+mia&+Ml&+g is created from &+Mcr&+my&+Mstal&+g and contains a murky, oily liquid.  It is&n
@@ -1000,7 +1000,7 @@ stick sharp sharpened~
 ~
 5 11 2 1 10 15 33562625 8396801 128 0 0
 2 2 3 11 0 0 0 0
-3 2525 100
+3 2525 100 100
 E
 stick sharp sharpened~
 &+y   Someon&+we&+y has taken a sh&+wo&+yrt, straight s&+wt&+yick and pla&+wn&+yed down the end until it&n
@@ -1019,7 +1019,7 @@ branch blade~
 ~
 5 11 2 3 10 25 33562625 8193 0 0 0
 5 2 6 3 0 0 0 0
-6 10750 100
+6 10750 100 100
 E
 branch blade~
 &+y   Someone took a br&+wa&+ynch and cr&+we&+yated a wooden blade &+ww&+yith a fine, se&+wr&+yra&+wt&+yed edge&n
@@ -1037,7 +1037,7 @@ carved stone skeleton~
 ~
 13 11 2 20 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 carved stone skeleton~
    &+wC&+La&+wrve&+Ld&+g on an &+wu&+Lp&+wrig&+Lh&+wt s&+Lt&+wone&+g are the words, "&+wI de&+Ls&+wpair of e&+Lv&+wer ge&+Ltt&+wing out of&n
@@ -1056,7 +1056,7 @@ sticks arrow~
 ~
 13 6 2 5 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 sticks arrow~
 &+g   Someone has taken several &+ysticks&+g and carefully laid them in the shape of an&n
@@ -1071,7 +1071,7 @@ moss vine arrow~
 ~
 13 43 2 8 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 moss vine arrow~
 &+g   Som&+we&+gone has t&+ww&+gisted vin&+we&+gs around &+wmos&+gs to create an arrow s&+wh&+gape and attached&n
@@ -1085,7 +1085,7 @@ stomach pig waterskin~
 ~
 17 2 2 5 11 40 0 9453569 0 0 0
 15 15 6 0 0 0 0 0
-5 565 100
+5 565 100 100
 E
 stomach pig waterskin~
 &+g   This stomach has been finely cured to last a very long time.  It has no&n
@@ -1102,7 +1102,7 @@ lamp feather~
 ~
 11 17 1 1 11 60 33824769 8405009 0 0 0
 0 0 0 0 0 0 0 0
-1 1500 100
+1 1500 100 100
 E
 lamp feather~
 &+g   Someone has taken a &+Rfe&+ra&+Rthe&+rr&+g that &+Rg&+Yl&+Rows&+g with a &+Rbri&+Yg&+Rht, f&+Yl&+Ricke&+Yr&+Ring r&+re&+Rd l&+Yi&+Rght&n
@@ -1120,7 +1120,7 @@ fused spine~
 ~
 11 10 1 1 12 50 270344 8929281 0 0 0
 0 0 0 0 0 0 0 0
-1 1488 100 256 0 0 1048576
+1 1488 100 100 256 0 0 1048576
 E
 fused spine~
 &+w   The t&+gi&+wny spi&+gn&+we &+Gf&+gro&+wm&+g a s&+Gwa&+gmp m&+gi&+gte&+w has been ta&+Gk&+wen and&+g fus&+wed into a &+gs&+Go&+gli&+wd mass&n
@@ -1140,7 +1140,7 @@ mummy mummified dwarf~
 ~
 15 14 3 25 10 30 33579073 0 64 0 0
 200 15 28598 20 0 0 0 0
-200 1 100
+200 1 100 100
 E
 mummy mummified dwarf~
 &+y   A mum&+Ym&+yifi&+Ye&+yd &+Ydwa&+yr&+Yf&+y sits in a cur&+Yl&+yed p&+Yo&+ysition on the floo&+Yr&+y.  T&+Yh&+yough he is a&n
@@ -1157,7 +1157,7 @@ tome skulls spellbook book~
 ~
 33 10 2 2 12 60 33579008 8404993 0 0 0
 0 0 200 0 0 0 0 0
-5 185000 100
+5 185000 100 100
 E
 tome skulls spellbook book~
 &+w   Tiny skulls from s&+mm&+wal&+Wl&+w cre&+ma&+wtures have bee&+mn&+w laced &+Wt&+wogether with m&+Wi&+wthral to&n
@@ -1177,7 +1177,7 @@ chunk neberi~
 ~
 12 2 1 0 7 0 33845249 10502145 0 0 0
 0 0 0 0 0 0 0 0
-0 12555 100 2048 0 0 0
+0 12555 100 100 2048 0 0 0
 E
 chunk neberi~
 &+B   Thoug&+bh&+B this seems to just be a chunk of flesh that h&+ba&+Bs been torn fr&+bo&+Bm the&n
@@ -1194,7 +1194,7 @@ asparagas~
 ~
 19 48 2 1 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 asparagas~
    There are several &+ga&+ys&+gpara&+yg&+gas p&+yl&+gants&n growing together, ranging from young,
@@ -1209,7 +1209,7 @@ A very sharp piece of &+mc&+Mrys&+mt&+Mal&n lies here.~
 ~
 5 8 2 1 12 80 33566784 10493953 256 0 0
 2 2 4 11 0 0 0 0
-1 50885 100 33554432 16 2097152 0
+1 50885 100 100 33554432 16 2097152 0
 E
 crystal shard~
 &+m   This piece of c&+Mrys&+mt&+Mal&+m has had &+Mth&+mick &+yleather&+m wra&+Mp&+mped around one end so that&n
@@ -1230,7 +1230,7 @@ serrated blade~
 ~
 5 18 3 2 13 80 64 4202497 0 0 0
 5 4 6 3 0 0 0 0
-8 25000 100
+8 25000 100 100
 E
 serrated blade~
 &+r   This &+wbl&+rade was mad&+we&+r by a master.  It is raz&+yor&+r sharp, and fits w&+ye&+rll in any&n
@@ -1250,7 +1250,7 @@ amulet green jade~
 ~
 9 22 2 0 9 0 8192 5 64 0 0
 -5 0 0 0 0 0 0 0
-0 5201 100
+0 5201 100 100
 A
 30 3
 A
@@ -1262,7 +1262,7 @@ scale leggings overlap~
 ~
 9 46 3 0 10 0 33562624 33 0 0 0
 -10 0 0 0 0 0 0 0
-2 8585 100 67108864 0 0 0
+2 8585 100 100 67108864 0 0 0
 E
 scale leggings overlap~
 &+gThis set of l&+begg&+gin&+bgs &+gwas made here in the &+Gswamp&n&+g as the &+bs&+gcale&+bs&+g have come&n
@@ -1281,7 +1281,7 @@ boot boots neberi neberihide~
 ~
 9 14 2 0 12 0 8193 65 64 0 0
 -6 0 0 0 0 0 0 0
-1 7865 100 2048 0 0 0
+1 7865 100 100 2048 0 0 0
 E
 boot boots neberi neberihide~
 &+bThese b&+Boo&n&+bts have been made from layers of ne&+Bb&n&+berihide pressed together, but
@@ -1299,7 +1299,7 @@ lashed shield~
 ~
 9 46 2 0 11 0 33562624 513 64 0 0
 -7 0 0 0 0 0 0 0
-2 9530 100
+2 9530 100 100
 E
 lashed shield~
 &+gThis oval &+rs&+bhie&+rld&+g has been created by lashing &+rshe&+bll&+rs&+g from &+bwa&+Bte&n&+brbee&+Bt&n&+bles&+g and&n
@@ -1319,7 +1319,7 @@ cap feather feathered~
 ~
 9 14 2 0 10 0 33562624 17 64 0 0
 -5 0 0 0 0 0 0 0
-1 6000 100
+1 6000 100 100
 E
 cap feather feathered~
 &+yThis cap is made of supple leather with small slits where &+Yfe&+Ga&n&+rth&+bers&+y have been&n
@@ -1339,7 +1339,7 @@ sleeves woven leaf~
 ~
 9 6 3 0 10 0 270337 257 64 0 0
 -10 0 0 0 0 0 0 0
-2 11000 100
+2 11000 100 100
 E
 sleeves woven leaf~
 &+GMetic&n&+gulous wo&+Grk has gone &n&+ginto creating &+Gthis set of &n&+gsl&+Geeve&n&+gs.  Lea&+Gves f&n&+grom an&n
@@ -1358,7 +1358,7 @@ chest chestplate plate glitter glittering~
 ~
 9 18 3 0 11 0 33562625 9 64 0 0
 -15 0 0 0 0 0 0 0
-5 11887 100
+5 11887 100 100
 E
 chest chestplate plate glitter glittering~
 &+CIt is clear that a skilled &n&+cmetal&+Cworker has made this piece of armor, despite&n
@@ -1378,7 +1378,7 @@ belt vine twisted~
 ~
 9 42 2 0 10 0 33562624 2049 64 0 0
 -5 0 0 0 0 0 0 0
-1 5555 100
+1 5555 100 100
 E
 belt vine twisted~
 &+yVi&+Gn&n&+ges of va&+yrious widths h&+gave been t&+Gwi&n&+yst&+ged and b&+Gra&n&+yided t&+gogether to form a very&n
@@ -1396,7 +1396,7 @@ vial green ooze enlarge~
 ~
 10 9 1 0 7 0 8193 8404993 64 0 0
 46 39 0 0 0 0 0 0
-0 55555 100
+0 55555 100 100
 E
 vial green ooze~
 &+GAn ac&n&+grid odor floa&+Gts up fr&n&+gom this via&+Gl of bubb&n&+gling gre&+Gen l&n&+giquid, making it
@@ -1409,7 +1409,7 @@ vial red liquid reduce~
 ~
 10 9 1 0 7 0 33562624 0 64 0 0
 46 44 0 0 0 0 0 0
-0 55555 100
+0 55555 100 100
 E
 vial red liquid reduce~
 &+ROnce the s&n&+rtop&+Rper has been re&n&+rmoved from the vi&+Ral, t&n&+rhe re&+Rd l&n&+riquid contained in&n
@@ -1423,7 +1423,7 @@ ring bone rough~
 ~
 11 15 3 0 7 0 8193 3 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring bone rough~
 &+wThis &+Wr&n&+wing has been made &+Wfrom a sec&n&+wtion sliced from the &+Wb&n&+wone of a large an&+Wimal&n
@@ -1441,7 +1441,7 @@ amulet feathered~
 ~
 9 10 2 0 11 0 100671488 5 0 0 0
 -5 0 0 0 0 0 0 0
-0 7555 100
+0 7555 100 100
 E
 amulet feathered~
 &+ySomeone has taken a slice of &+Wb&n&+wone&+y and attached &+Yfe&+Ga&+Bth&+Yers&n&+y to it by wrapping a&n
@@ -1460,7 +1460,7 @@ woven sack~
 ~
 15 14 2 0 10 0 33562624 8404993 64 0 0
 250 1 0 500 0 0 0 0
-1 6766 100 0 28 0 0
+1 6766 100 100 0 28 0 0
 E
 woven sack~
 &+yThis wondrous s&+gac&+yk has bee&+gn made from s&+ypecially t&+grea&+yted leat&+ghe&+yr and vin&+ges&n
@@ -1474,7 +1474,7 @@ earring butterfly coral~
 ~
 11 26 0 0 11 40 270337 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 22500 100 0 0 64 0
+0 22500 100 100 0 0 64 0
 E
 earring butterfly coral~
 &+yThis &+Mea&n&+mrr&+Ming&n&+y has been created by clear gemstones strung on a sturdy polished&n
@@ -1493,7 +1493,7 @@ neberi stomach backpack bp~
 ~
 15 35 2 0 12 0 33562624 4195329 64 0 0
 200 1 0 200 0 0 0 0
-3 20000 100 536870912 64 0 0
+3 20000 100 100 536870912 64 0 0
 E
 neberi stomach backpack bp~
 &+ySomehow several &+bne&+Bb&n&+beri st&+Bom&n&+bachs&+y have been stacked up together and combined&n
@@ -1512,7 +1512,7 @@ wove vine earring~
 ~
 9 43 1 0 10 0 270336 524289 64 0 0
 -5 0 0 0 0 0 0 0
-0 150 100
+0 150 100 100
 E
 wove vine earring~
 &+g     This &+ye&+garri&+yn&+gg has been made by taking small vi&+yne&+gs and weaving them into an&n
@@ -1530,7 +1530,7 @@ gloves neberi neberihide~
 ~
 9 14 2 0 11 0 8193 129 0 0 0
 -8 0 0 0 0 0 0 0
-1 800 100
+1 800 100 100
 E
 gloves neberi neberihide~
 &+g     The thick hide of the &+bn&+Be&+bber&+Bi&+g has been wrought into a pair of &+bg&+Bl&+boves&+g by an&n
@@ -1549,4 +1549,4 @@ A dismembered tongue wriggles about on the floor here.&n~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

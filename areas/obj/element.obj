@@ -5,7 +5,7 @@ A key fashioned of melded gravel lies here.~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 gravel key~
 The key is essentially hundreds of tiny stones melded together and shaped
@@ -18,7 +18,7 @@ key slate~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key slate~
 It appears to be a bit of slate naturally grown into its shape; there are
@@ -31,7 +31,7 @@ key seashell~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 seashell key~
 A collection of oddly shaped sea shells have been attached together to form
@@ -44,7 +44,7 @@ key coral~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 coral key~
 The key is living coral, grown naturally into the form of a key.
@@ -56,7 +56,7 @@ key igneous~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 igneous key~
 The key looks as if it was made by someone pouring molten rock into a mold.
@@ -68,7 +68,7 @@ key magma~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 magma key~
 The key IS magma ... soft to the touch and blazing hot ... but somehow it
@@ -81,7 +81,7 @@ key glass~
 ~
 18 7 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 glass key~
 A beautiful key, it is lightweight and catches the light beautifully.
@@ -93,7 +93,7 @@ key~
 ~
 18 16 1 1 7 0 8396800 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 crystal key~
 The key is beautifully crafted of the purest crystal; no bubbles mar its
@@ -106,7 +106,7 @@ A somewhat amorphous key sits here oddly.~
 ~
 18 16 1 1 7 0 8400896 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 cloudy key~
 The material is strange and light and not quite solid ... but it holds its
@@ -119,7 +119,7 @@ A black key just about escapes your attention here.~
 ~
 18 16 1 1 7 0 8400896 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 black key~
 This key is fashioned of some unidentifiable black substance.  It is
@@ -132,7 +132,7 @@ plaque stone~
 ~
 18 11 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stone plaque~
 The plaque is about six inches long,
@@ -153,7 +153,7 @@ plaque silver~
 ~
 18 22 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silver plaque~
 The plaque is about six inches long, two and a half inches wide, and a
@@ -173,7 +173,7 @@ plaque gold~
 ~
 18 24 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 gold plaque~
 The plaque is about six inches long, two and a half inches wide, and a
@@ -193,7 +193,7 @@ plaque crystal~
 ~
 18 8 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 crystal plaque~
 The plaque is about six inches long, two and a half inches wide, and a
@@ -213,7 +213,7 @@ A flat plaque fashioned of some cloudy material has been left here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 cloudy plaque~
 The plaque is about six inches long, two and a half inches wide, and a
@@ -233,7 +233,7 @@ plaque black~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 black plaque~
 The plaque is about six inches long, two and a half inches wide, and a
@@ -253,7 +253,7 @@ sword bastard flaming~
 ~
 5 16 4 10 7 0 4195328 8193 0 87572571 0
 13 3 6 3 0 0 0 0
-20 5000 100 536870912 0 0 0
+20 5000 100 100 536870912 0 0 0
 E
 sword bastard flaming~
 The massive thing is as well crafted a weapon as was ever made; it is,
@@ -270,7 +270,7 @@ wand black obsidian~
 ~
 3 36 2 4 7 0 4096 8404993 0 0 0
 50 3 3 77 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 wand black obsidian~
 &+LA rod of black obsidian, covered with magical runes.&n
@@ -286,7 +286,7 @@ the pedestal~
 ~
 15 11 5 50 7 0 1 0 0 0 0
 100 5 -1 250 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pedestal case~
 This display case has been engraved with magical runes over every square
@@ -299,7 +299,7 @@ the pedestal~
 ~
 15 11 5 50 7 0 1 0 0 0 0
 100 5 -1 250 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pedestal case~
 This display case is black and barren and plain.
@@ -311,7 +311,7 @@ A gleaming horn lies here shedding light.~
 ~
 9 10 3 0 7 0 262144 134217729 2 0 0
 6 2 6 3 1 0 0 0
-5 800 100
+5 800 100 100
 E
 horn~
 The beautiful golden horn is about an inch around at its base, then tapers
@@ -329,7 +329,7 @@ A tiny circlet of grass lies forgotten here.~
 ~
 9 16 1 1 7 0 524288 3 0 0 0
 1 1 0 3 0 0 0 0
-1 100 100
+1 100 100 100
 E
 ring grass~
 It's a simple little trifle, the work of bored fingers.  The fingers that
@@ -344,7 +344,7 @@ A small pouch full of a glistening material lies here.~
 ~
 9 3 3 3 7 0 0 5 0 0 0
 2 2 1 3 0 0 0 0
-1 200 100
+1 200 100 100
 E
 pouch~
 There is not enough magical powder within the pouch to endow flight upon a
@@ -361,7 +361,7 @@ A loose fitting, well crafted forest-colored shirt been discarded here.~
 ~
 11 3 3 8 7 0 0 9 0 0 0
 0 3 1 3 0 0 0 0
-10 100 100
+10 100 100 100
 E
 shirt~
 The shirt is fashioned of cleverly woven grasses and fibers that have been
@@ -378,7 +378,7 @@ A teeny tiny cap has been left here, probably overlooked.~
 ~
 9 3 3 3 7 0 0 17 0 0 0
 5 4 16 3 0 0 0 0
-1 50 100
+1 50 100 100
 E
 cap~
 The thing is small.  Very small.  It would fit comfortably on an apple.
@@ -394,7 +394,7 @@ Some BA forrestal has left his leggings here.~
 ~
 11 3 3 8 7 0 0 33 0 0 0
 0 5 1 3 0 0 0 0
-10 100 100
+10 100 100 100
 E
 leggings~
 A pair of linen leggings.
@@ -410,7 +410,7 @@ A pair of sturdy boots have been abandoned here.~
 ~
 11 13 3 8 7 0 0 65 0 0 0
 0 6 1 3 0 0 0 0
-4 100 100
+4 100 100 100
 E
 boots~
 A pair of sturdy boots, excellent for forest running.
@@ -426,7 +426,7 @@ A cloak the color the deep of the forest has been left here.~
 ~
 9 3 3 8 7 0 0 1025 0 0 0
 10 9 1 3 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 cloak~
 A marvelous lightweight garment, it is woven of some strange material that
@@ -443,7 +443,7 @@ A sturdy and well made belt lies here in a roll.~
 ~
 12 13 3 3 7 0 0 2049 0 0 0
 0 10 0 3 0 0 0 0
-3 100 100
+3 100 100 100
 E
 blet~
 The leather is old and has been worked to the point where it is comfortably
@@ -460,7 +460,7 @@ A bracelet of woven leaves lies here happily.~
 ~
 11 30 3 3 7 0 0 4097 0 0 0
 0 11 24 3 0 0 0 0
-1 100 100
+1 100 100 100
 E
 bracelet~
 A cunningly wrought little thing, it cannot help but invoke feelings of
@@ -477,7 +477,7 @@ A greenstone on a golden chain lies here winking in the sunlight.~
 ~
 11 11 1 1 7 0 0 524289 0 0 0
 0 0 0 10 0 0 0 0
-1 500 100 536870912 0 0 0
+1 500 100 100 536870912 0 0 0
 E
 earring~
 The greenstone is a wondrous artifact, fashioned from the heart of a
@@ -495,7 +495,7 @@ A cube sheds a faint amount of light here.~
 ~
 12 1 0 0 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 1000 100
+5 1000 100 100
 E
 cube~
 The cube appears to be some sort of container.  When shaken, it sounds as
@@ -509,7 +509,7 @@ cube black~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 200 5 0 100 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 cube black~
 This cube is made of some very strange metal which hums and vibrates
@@ -523,7 +523,7 @@ dagger obsidian jagged~
 ~
 5 36 2 3 7 0 12288 8193 64 4198895524 0
 2 2 4 11 0 0 0 0
-1 16002 100
+1 16002 100 100
 E
 dagger obsidian jagged~
 This large dagger has been carved from some massive chunk of obsidian,
@@ -547,7 +547,7 @@ gown shimmering gossamer~
 ~
 9 3 0 0 7 0 9248 1033 66 46305188 0
 10 3 1 3 0 0 0 0
-4 10000 100
+4 10000 100 100
 E
 gown shimmering gossamer~
 This fine gown shimmers softly as light reflects from its fine fabrics.
@@ -565,7 +565,7 @@ slime lump ooze~
 ~
 9 2 3 1 7 50 69760 67108865 64 0 0
 5 0 0 2 0 0 0 0
-1 1 100
+1 1 100 100
 E
 slime lump ooze~
 &+gThis oozing lump of green smile smells so bad its almost unbearable. It is
@@ -585,7 +585,7 @@ dagger steel long~
 ~
 5 16 3 1 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-2 100 100
+2 100 100 100
 E
 dagger steel long~
 A long steel dagger, perfect for causing deep wounds.
@@ -599,7 +599,7 @@ seashell shell blue~
 ~
 9 52 3 0 7 33 12288 33554433 2 0 0
 6 10 5 1 0 0 0 0
-0 1200 100 2048 0 0 0
+0 1200 100 100 2048 0 0 0
 E
 seashell shell blue~
 &+bA beautiful blue seashell hanging on a tiny silver chain.

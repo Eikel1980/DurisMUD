@@ -7,8 +7,8 @@ old man hermit withered~
 &+wwhite garments, which has seen years of wear and tear. His finger nails
 &+whave grown out a couple of inches and weigh his shriveled hand down.
 ~
-24650 0 0 24 0 0 8192 0 S
-H 0 1 3
+24650 0 0 0 24 0 0 8192 0 S
+H 0 1 0 3
 5 0 -80 4000d1+1000 10d2+5
 0.0.0.0 0
 8 8 1
@@ -20,8 +20,8 @@ vapor figure golem guardian _nobutt_ assoc4_n_0~
    &+LA fine mist gathers together to form this looming entity which patrols
 &+Labout here. It seems to have no particular purpose nor cause.
 ~
-113277515 0 0 285212828 0 0 0 0 S
-OG 0 1 6
+113277515 0 0 0 285212828 0 0 0 0 S
+OG 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -33,8 +33,8 @@ vapor figure golem guardian _nobutt_ assoc4_n_0~
    &+LA fine mist gathers together to form this looming entity which patrols
 &+Labout here. It seems to have no particular purpose nor cause.
 ~
-113277515 0 0 285212828 0 0 0 1000 S
-OG 0 32 6
+113277515 0 0 0 285212828 0 0 0 1000 S
+OG 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -46,8 +46,8 @@ vapor figure golem guardian _nobutt_ assoc4_n_0~
    &+LA fine mist gathers together to form this looming entity which patrols
 &+Labout here. It seems to have no particular purpose nor cause.
 ~
-113277547 0 0 285212828 0 0 0 0 S
-OG 0 512 6
+113277547 0 0 0 285212828 0 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -59,8 +59,8 @@ vapor figure golem guardian _nobutt_ assoc4_n_0~
    &+LA fine mist gathers together to form this looming entity which patrols
 &+Labout here. It seems to have no particular purpose nor cause.
 ~
-113277515 0 0 285212828 0 0 0 0 S
-OG 0 512 6
+113277515 0 0 0 285212828 0 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

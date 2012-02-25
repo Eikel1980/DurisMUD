@@ -5,7 +5,7 @@ A bastard sword lies here.~
 ~
 5 36 3 0 14 75 9216 8193 64 87572507 0
 5 4 4 3 0 0 0 0
-8 100000 100 8 0 0 0
+8 100000 100 100 8 0 0 0
 E
 truth sword bastard~
 This magnificent heirloom of Grindlor's
@@ -23,7 +23,7 @@ shortsword fine sword~
 ~
 5 36 2 0 14 75 9216 8193 64 96071707 0
 9 3 3 11 0 0 0 0
-5 25000 100
+5 25000 100 100
 E
 shortsword fine sword~
 This short sword was crafted from the
@@ -41,7 +41,7 @@ fountain~
 ~
 17 25 7 0 15 0 65537 0 64 0 0
 -1 -1 17 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 fountain~
 Drink and ye shall be granted magic sight.
@@ -53,7 +53,7 @@ cabinet wood small~
 ~
 15 6 3 0 14 0 1 0 64 0 0
 100 5 0 100 0 0 0 0
-200 0 100
+200 0 100 100
 E
 cabinet wood small~
 Just a plain wooden cabinet like the one
@@ -68,7 +68,7 @@ sleeves dragonskin gold~
 ~
 9 35 3 0 14 75 8192 257 64 0 0
 10 8 1 5 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 sleeves dragonskin gold~
 These sleeves were made from the scales of
@@ -85,7 +85,7 @@ blindfold sight~
 ~
 9 3 3 0 14 75 8192 131073 64 0 0
 5 12 0 2 0 0 0 0
-1 10000 100 40 0 0 0
+1 10000 100 100 40 0 0 0
 E
 blindfold sight~
 Strangely enough, the material of this
@@ -103,7 +103,7 @@ acorn~
 ~
 8 4 3 0 14 75 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 50000 100 32 0 0 0
+1 50000 100 100 32 0 0 0
 E
 acorn~
 This acorn seems to have just recently
@@ -120,7 +120,7 @@ bastard sword stalker~
 ~
 5 36 3 0 14 75 9216 8193 64 87572507 0
 5 4 3 3 0 77 20 30
-15 100000 100
+15 100000 100 100
 E
 bastard sword stalker~
 Engraved on the pomel of this magnificent
@@ -149,7 +149,7 @@ crystal sphere~
 ~
 8 8 3 0 14 75 9216 16385 64 46305252 0
 0 0 0 0 0 0 0 0
-1 50000 100 16 0 0 0
+1 50000 100 100 16 0 0 0
 E
 crystal sphere~
 This small sphere seems to fade in and out
@@ -164,7 +164,7 @@ shard bone~
 ~
 5 10 2 0 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 shard bone~
 This was obviously once of an extremely
@@ -181,7 +181,7 @@ dagger bloodfeast granite unique~
 ~
 5 37 2 0 15 75 285222160 8193 64 10612736 0
 2 4 4 11 0 0 0 0
-10 100000 100 268435472 0 0 0
+10 100000 100 100 268435472 0 0 0
 E
 dagger bloodfeast granite~
 This dagger is covered all over with the
@@ -198,7 +198,7 @@ flaming whip mrinlor~
 ~
 5 12 3 0 14 75 8192 8193 64 4173708868 0
 14 3 5 2 0 0 0 0
-20 100000 100 536870912 1 0 0
+20 100000 100 100 536870912 1 0 0
 E
 flaming whip mrinlor~
 Although the whip is covered with burning
@@ -215,7 +215,7 @@ amulet wisdom~
 ~
 9 35 3 0 14 60 8192 5 64 0 0
 10 2 1 5 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 amulet wisdom~
 This amulet makes you feel wiser just
@@ -232,7 +232,7 @@ boots traveler~
 ~
 9 35 3 0 14 75 139264 65 64 0 0
 15 6 1 5 0 0 0 0
-1 100000 100 134217728 0 0 0
+1 100000 100 100 134217728 0 0 0
 E
 boots traveler~
 These boots are surpisingly comfortable for
@@ -249,7 +249,7 @@ gypsum throne~
 ~
 12 38 7 0 15 0 1 0 2 0 0
 0 0 0 0 0 0 0 0
-1000 100000 100
+1000 100000 100 100
 E
 gypsum throne~
 This throne is HUGE and imposing.
@@ -263,7 +263,7 @@ brass ring~
 ~
 9 17 3 0 14 75 8192 3 64 0 0
 5 1 0 3 0 0 0 0
-1 25000 100 536870912 64 0 0
+1 25000 100 100 536870912 64 0 0
 E
 brass ring~
 There's nothing particularly special or
@@ -282,7 +282,7 @@ gauntlets bronze heavy~
 ~
 9 20 3 0 14 75 8192 129 64 4165210052 0
 10 7 1 5 0 0 0 0
-5 100000 100 268435456 0 0 0
+5 100000 100 100 268435456 0 0 0
 E
 gauntlets bronze heavy~
 These gauntlets look and feel extremely
@@ -299,7 +299,7 @@ earring tiny copper~
 ~
 9 21 3 0 14 75 8192 524289 64 0 0
 5 14 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 earring tiny copper~
 The earring is plain looking yet has
@@ -316,7 +316,7 @@ mask dragonscale~
 ~
 9 35 3 0 14 75 8192 262145 64 0 0
 10 13 0 3 0 0 0 0
-1 10000 100 0 16 0 0
+1 10000 100 100 0 16 0 0
 E
 mask dragonscale~
 Anyone would look ten times more
@@ -333,7 +333,7 @@ helm dragonlords~
 ~
 9 35 3 0 15 75 8192 17 64 0 0
 15 4 1 5 0 0 0 0
-2 100000 100 128 0 0 0
+2 100000 100 100 128 0 0 0
 E
 helm dragonlords~
 The helm emits a faint humming sound.
@@ -349,7 +349,7 @@ cloak yochlol hide~
 ~
 9 12 3 0 14 75 8192 1025 64 0 0
 20 9 1 5 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 cloak yochlol hide~
 There's still disgusting globs of some
@@ -367,7 +367,7 @@ cloak dragonkind~
 ~
 9 35 3 0 14 75 9216 1025 64 4197892 0
 15 9 1 4 0 0 0 0
-1 100000 100 134217728 0 0 0
+1 100000 100 100 134217728 0 0 0
 E
 cloak dragonkind~
 This cloak of dragonscales shimmers
@@ -385,7 +385,7 @@ rod sanctity glorious~
 ~
 5 36 3 0 14 75 16786704 8193 64 33685920 0
 12 5 5 6 0 0 0 0
-5 100000 100 0 32768 0 0
+5 100000 100 100 0 32768 0 0
 E
 rod sanctity glorious~
 The rod has a distinctly warm feel to it.
@@ -402,7 +402,7 @@ plate platemail dragonlord~
 ~
 9 35 3 0 15 75 268443648 9 64 13614660 0
 50 3 1 5 0 0 0 0
-10 1000000 100 671088656 14528 0 4096
+10 1000000 100 100 671088656 14528 0 4096
 E
 plate platemail dragonlord~
 This is the platemail you've heard legends
@@ -416,7 +416,7 @@ key glowing~
 ~
 18 15 3 0 7 0 8388608 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key glowing~
 This is just like any other key you've
@@ -429,7 +429,7 @@ spiked dragonskin leggings~
 ~
 9 35 3 0 14 75 8192 33 64 0 0
 10 5 1 5 0 0 0 0
-1 100000 100 32 0 0 0
+1 100000 100 100 32 0 0 0
 E
 spiked dragonskin leggings~
 These beautiful leggings made of dragonscale
@@ -446,7 +446,7 @@ spiked bracelet dragonskin~
 ~
 9 35 3 0 14 75 8192 4097 64 0 0
 5 11 1 3 0 0 0 0
-1 100000 100 4 0 0 0
+1 100000 100 100 4 0 0 0
 E
 spiked bracelet dragonskin~
 This bracelet is covered with dangerously
@@ -463,7 +463,7 @@ ring dragonlords~
 ~
 9 35 3 0 14 75 8192 3 64 0 0
 5 1 0 3 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 ring dragonlords~
 These rings are commonly worn by all
@@ -480,7 +480,7 @@ halo flaming~
 ~
 9 1 3 0 14 75 8192 17 64 0 0
 10 4 1 3 0 0 0 0
-1 10000 100 536870912 1 0 0
+1 10000 100 100 536870912 1 0 0
 E
 halo flaming~
 This halo is ringed with live flames, but
@@ -497,7 +497,7 @@ belt black dragon scales~
 ~
 9 35 3 0 14 75 8192 2049 64 0 0
 10 10 0 3 0 0 0 0
-2 100000 100 134217728 0 0 0
+2 100000 100 100 134217728 0 0 0
 E
 belt black dragon scales~
 This belt is made from the scales of the
@@ -514,7 +514,7 @@ thin rune bracelet jade~
 ~
 9 38 3 0 14 75 9728 4097 64 85458945 533078016
 10 11 1 4 0 0 0 0
-1 100000 100 0 64 0 0
+1 100000 100 100 0 64 0 0
 E
 thin rune bracelet jade~
 This otherwise unremarkable jade bracelet
@@ -532,7 +532,7 @@ book~
 ~
 33 35 3 0 14 75 8192 8404993 64 0 0
 0 0 500 0 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 book~
 This spellbook seems to have nearly unlimited
@@ -549,7 +549,7 @@ sword claymore mist~
 ~
 5 1 3 0 14 75 4203536 8193 64 87572507 0
 13 6 4 3 0 110 50 30
-15 100000 100
+15 100000 100 100
 E
 sword claymore mist~
 This mace feels almost weightless in your
@@ -579,7 +579,7 @@ pouch many pockets _ignore_~
 ~
 15 1 3 0 14 75 134225920 8388609 64 0 0
 500 5 0 500 0 0 0 0
--200 100000 100
+-200 100000 100 100
 E
 pouch many pockets~
 This pouch has so many secret pockets, it can hold
@@ -592,7 +592,7 @@ bronze key~
 ~
 18 15 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bronze key~
 A small key made of bronze.
@@ -604,7 +604,7 @@ stiletto vanquishing~
 ~
 5 36 3 0 14 75 9216 8193 64 96071707 0
 2 3 4 11 0 0 0 0
-5 50000 100
+5 50000 100 100
 E
 stiletto vanquishing~
 This stiletto looks like it can do some
@@ -621,7 +621,7 @@ key platinum~
 ~
 18 15 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key platinum~
 This is your every day average key.
@@ -634,7 +634,7 @@ key golden~
 ~
 18 24 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 key golden~
 This key is made of pure gold.
@@ -646,7 +646,7 @@ key scorched silver~
 ~
 18 22 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 key scorched silver~
 Somebody burned this key very badly.
@@ -658,7 +658,7 @@ black key iron~
 ~
 18 36 3 0 7 0 8396800 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 black key iron~
 This key is made of pure obsidian.
@@ -670,7 +670,7 @@ key bronze~
 ~
 18 20 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key bronze~
 This key was pounded out from bronze.
@@ -682,7 +682,7 @@ key brass shiny~
 ~
 18 15 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 key brass shiny~
 Whoever made this key was kind enough to
@@ -695,7 +695,7 @@ key elders~
 ~
 18 15 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key elders~
 This key looks extremely important.
@@ -707,7 +707,7 @@ key small bark~
 ~
 18 4 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key small bark~
 This key was carved from some sort of
@@ -720,7 +720,7 @@ gorget dragonscale bronze~
 ~
 9 35 3 0 14 75 8192 5 64 0 0
 10 2 1 3 0 0 0 0
-1 100000 100 0 64 0 0
+1 100000 100 100 0 64 0 0
 E
 gorget dragonscale bronze~
 This collar was made from some poor
@@ -737,7 +737,7 @@ sunlash whip injustice pain barbed unique~
 ~
 5 43 4 0 15 100 271720456 8193 64 0 0
 14 6 4 3 0 0 0 0
-20 1000000 100 536870912 0 0 0
+20 1000000 100 100 536870912 0 0 0
 E
 sunlash whip injustice pain barbed~
    One of the most fabled and powerful weapons found in the lands of Duris, the
@@ -761,7 +761,7 @@ key mist~
 ~
 18 1 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key mist~
 You have to concentrate extremely hard
@@ -774,7 +774,7 @@ brass bell~
 ~
 9 17 3 0 14 75 8192 33554433 64 0 0
 10 22 0 3 0 0 0 0
-1 75000 100 268435456 0 0 0
+1 75000 100 100 268435456 0 0 0
 E
 brass bell~
 This bell looks like can be worn on
@@ -792,7 +792,7 @@ crystal key~
 ~
 18 8 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 crystal key~
 This key is made of pure white crystal.
@@ -804,7 +804,7 @@ key virtue~
 ~
 18 15 3 0 7 0 8396800 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key virtue~
 This key has been blessed by the
@@ -817,7 +817,7 @@ horn ki-rin majestic~
 ~
 34 34 3 0 15 100 8192 16385 64 0 0
 63 0 0 0 0 0 0 0
-3 100000 100
+3 100000 100 100
 E
 horn ki-rin majestic~
   &+WThis rare ivory ki-rin's horn is truly a spectacular sight to behold.
@@ -833,7 +833,7 @@ robe long supple silk~
 ~
 9 3 3 0 14 75 9216 9 64 37883876 0
 25 3 1 2 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 robe long supple silk~
 Purple may not be your color, but this
@@ -851,7 +851,7 @@ longsword fine sword~
 ~
 5 22 3 0 14 75 9216 8193 64 87572507 0
 5 3 3 3 0 0 0 0
-8 100000 100
+8 100000 100 100
 E
 longsword fine sword~
 This is a beautifully made longsword.
@@ -867,7 +867,7 @@ longbow green ash bow~
 ~
 6 6 3 4 14 75 71311360 8193 66 0 0
 130 110 0 1 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 longbow green ash bow~
 &+GThis majestic longbow is beyond description. The dark green wood
@@ -886,7 +886,7 @@ staff chamberlain~
 ~
 4 24 3 0 14 50 8192 16385 64 0 0
 60 5 5 144 0 0 0 0
-2 1000000 100
+2 1000000 100 100
 E
 staff chamberlain~
 This staff positively vibrates with
@@ -903,7 +903,7 @@ scale earring chain platinum~
 ~
 9 35 2 0 14 75 8192 524289 64 0 0
 5 14 0 3 0 0 0 0
-1 25000 100 73728 0 0 0
+1 25000 100 100 73728 0 0 0
 E
 scale earring chain platinum~
 This earring is almost too pretty to wear.
@@ -919,7 +919,7 @@ amulet lordly~
 ~
 9 35 3 0 14 75 8192 5 64 0 0
 20 2 7 5 0 0 0 0
-1 50000 100 0 32768 0 0
+1 50000 100 100 0 32768 0 0
 E
 amulet lordly~
 This amulet provides the wearer with the
@@ -937,7 +937,7 @@ quiver holding~
 ~
 30 35 3 0 14 75 8192 1048577 64 0 0
 200 5 1 0 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 quiver holding~
 This quiver can hold quite a few arrows.
@@ -953,7 +953,7 @@ arrow slaying~
 ~
 7 36 3 3 15 90 8192 16385 64 0 0
 10 3 4 1 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 arrow slay evil~
 These arrows are practically weightless.
@@ -969,7 +969,7 @@ potion glowing power 55potion~
 ~
 10 1 2 0 14 75 8396801 16385 64 0 0
 55 9 35 56 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 potion 55~
 This is a level 55 potion. CHEER!
@@ -985,7 +985,7 @@ seal personal~
 ~
 13 15 3 0 7 0 8400896 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 seal personal~
 Bahamut's very own seal, perhaps this will somehow gain you

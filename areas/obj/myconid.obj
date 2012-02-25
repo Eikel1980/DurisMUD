@@ -5,7 +5,7 @@ mushroom flask~
 ~
 10 7 2 4 7 0 8192 1 0 0 0
 15 44 65 -1 0 0 0 0
-1 33 100
+1 33 100 100
 E
 mushroom flask~
    &+yThis small flask made of mushroom flesh contains a light brown
@@ -18,7 +18,7 @@ glowing green spore~
 ~
 18 2 1 1 7 0 8925185 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 A
 23 -1
 A
@@ -30,7 +30,7 @@ red mushroom wide~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 10 13 2301 100 0 0 0 0
-20 1 100
+20 1 100 100
 #2303
 brass ring~
 &+Ya bright brass ring&n~
@@ -38,7 +38,7 @@ brass ring~
 ~
 9 17 1 1 7 0 0 3 0 0 0
 3 1 0 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 brass ring~
    &+YThis small brass ring looks rather plain and unordinary.&N
@@ -50,7 +50,7 @@ scarlet fungi~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 2 0 0 1 0 0 0 0
-0 10 100
+0 10 100 100
 #2305
 purple mushrooms~
 &+Ma handful of violet mushrooms&n~
@@ -58,7 +58,7 @@ purple mushrooms~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 3 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 #2306
 crimson mushrooms~
 &+ra handful of crimson mushrooms&n~
@@ -66,7 +66,7 @@ crimson mushrooms~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 3 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 #2307
 rotten leather armor~
 &+ysome rotten leather armor&n~
@@ -74,7 +74,7 @@ rotten leather armor~
 ~
 9 13 3 0 7 0 0 9 0 0 0
 2 3 1 3 0 0 0 0
-0 100 100
+0 100 100 100
 #2308
 battered helm~
 &+Ya battered helm&n~
@@ -82,7 +82,7 @@ battered helm~
 ~
 9 16 3 10 7 0 0 17 0 0 0
 2 4 1 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 #2309
 tattered pants pair~
 &+ya pair of tattered pants&n~
@@ -90,7 +90,7 @@ tattered pants pair~
 ~
 9 3 3 8 7 0 0 33 0 0 0
 1 5 1 3 0 0 0 0
-1 900 100
+1 900 100 100
 #2310
 sparkling purple potion~
 &+Ma sparkling purple potion&n~
@@ -98,7 +98,7 @@ sparkling purple potion~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 1 1 -1 -1 0 0 0 0
-0 2000 100
+0 2000 100 100
 #2311
 dark blue potion~
 &+ba dark blue potion&n~
@@ -106,7 +106,7 @@ dark blue potion~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 1 3 141 -1 0 0 0 0
-0 5000 100
+0 5000 100 100
 #2312
 azure pool water~
 &+Ban azure pool&n~
@@ -114,7 +114,7 @@ azure pool water~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 azure pool water~
    A limpid &+Bazure pool&n lies at the base of the waterfall. One
@@ -129,7 +129,7 @@ large mushroom~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 2392 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #2314
 large mushroom~
 &+La large &+mmushroom&n~
@@ -137,4 +137,4 @@ large mushroom~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 2374 1 0 0 0 0 0
-0 0 100
+0 0 100 100

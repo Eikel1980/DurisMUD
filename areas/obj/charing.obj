@@ -5,7 +5,7 @@ mermaid large fountain beautiful~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 100 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #45001
 water fountain marble~
 a huge marble fountain~
@@ -13,7 +13,7 @@ a huge marble fountain~
 ~
 17 38 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45002
 halberd elven~
 &+yan elven halberd&n~
@@ -21,7 +21,7 @@ halberd elven~
 ~
 5 16 4 0 7 0 4195328 8193 0 87572571 0
 8 2 8 3 0 0 0 0
-15 5000 100
+15 5000 100 100
 #45003
 staff woodlands~
 &+gthe staff of the woodlands&n~
@@ -29,7 +29,7 @@ staff woodlands~
 ~
 4 6 3 0 7 0 271488 24577 64 33685920 0
 30 3 3 141 0 0 0 0
-3 5000 100
+3 5000 100 100
 A
 13 15
 A
@@ -41,7 +41,7 @@ a runed key with elven symbols on it lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45005
 tiara diamond~
 &+Wa diamond tiara&n~
@@ -49,7 +49,7 @@ a beautiful diamond tiara has been left here~
 ~
 9 8 2 0 7 0 262144 17 0 0 0
 10 0 0 4 0 0 0 0
-4 12345 100
+4 12345 100 100
 E
 tiara~
 This beautiful tiara is studded with diamonds all arouond its
@@ -66,7 +66,7 @@ someone has left a &+Lpitch black key&n here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45007
 elven sheaf arrow~
 &+Wan elven sheaf arrow&N~
@@ -74,7 +74,7 @@ elven sheaf arrow~
 ~
 7 6 2 3 7 0 0 16385 0 0 0
 1 1 8 1 0 0 0 0
-1 100 100
+1 100 100 100
 #45008
 water fountain marble~
 a huge marble fountain~
@@ -82,7 +82,7 @@ a huge marble fountain~
 ~
 17 38 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45009
 quiver elven~
 &+gan elven quiver&N~
@@ -90,7 +90,7 @@ quiver elven~
 ~
 30 6 2 12 7 0 0 1048577 0 0 0
 30 0 1 0 0 0 0 0
-4 1000 100
+4 1000 100 100
 #45010
 elven flight arrow~
 &+gan elven flight arrow&N~
@@ -98,7 +98,7 @@ elven flight arrow~
 ~
 7 6 2 3 7 0 0 16385 0 0 0
 3 1 8 1 0 0 0 0
-1 100 100
+1 100 100 100
 #45011
 elven magic arrow~
 &+Ban elven magic arrow&N~
@@ -106,7 +106,7 @@ elven magic arrow~
 ~
 7 6 2 3 7 0 0 16385 0 0 0
 4 3 5 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 #45012
 arrow of slaying~
 &+Lan arrow of slaying~
@@ -114,7 +114,7 @@ arrow of slaying~
 ~
 7 6 2 3 7 0 134217729 16385 64 0 0
 4 4 6 1 0 0 0 0
-1 500000 100
+1 500000 100 100
 #45013
 staff magi~
 the staff of the magi~
@@ -122,7 +122,7 @@ the staff of the arch-magi lies here~
 ~
 4 6 3 10 7 0 1024 16385 64 4197892 0
 50 1 1 10 0 0 0 0
-4 5000 100
+4 5000 100 100
 A
 24 -2
 A
@@ -134,7 +134,7 @@ A slim silver dagger is resting here.~
 ~
 5 22 2 3 7 0 0 8193 0 4194697632 0
 2 1 4 11 0 0 0 0
-3 100 100
+3 100 100 100
 A
 14 10
 A
@@ -146,7 +146,7 @@ a wooden practice sword has been left here~
 ~
 5 6 3 10 7 0 0 8193 0 0 0
 9 1 1 3 0 0 0 0
-1 5 100
+1 5 100 100
 #45016
 staff healing~
 a staff of healing~
@@ -154,7 +154,7 @@ a staff of healing lies here~
 ~
 4 6 3 10 7 0 1024 16385 64 33685920 0
 50 1 1 28 0 0 0 0
-10 50000 100
+10 50000 100 100
 A
 4 1
 A
@@ -166,7 +166,7 @@ an emerald longsword has been left here.~
 ~
 5 32 3 10 7 0 1024 8193 0 87572571 0
 5 2 6 3 0 0 0 0
-10 50000 100 16 0 0 0
+10 50000 100 100 16 0 0 0
 A
 18 2
 A
@@ -178,7 +178,7 @@ dagger small~
 ~
 5 16 2 3 7 0 0 8193 0 4194697632 0
 2 1 4 11 0 0 0 0
-3 500 100
+3 500 100 100
 #45019
 prayer beads~
 &+Ba set of prayer beads&n~
@@ -186,7 +186,7 @@ prayer beads~
 ~
 9 10 3 2 7 0 1024 5 0 33685920 0
 5 0 0 3 0 0 0 0
-4 500 100
+4 500 100 100
 A
 3 7
 A
@@ -198,7 +198,7 @@ longbow bow~
 ~
 6 6 0 4 7 0 4194304 24577 0 0 0
 60 60 0 1 0 0 0 0
-1 1023 100
+1 1023 100 100
 #45021
 longbow bow magic~
 &+Ban elvish magic longbow&n~
@@ -206,7 +206,7 @@ longbow bow magic~
 ~
 6 6 0 4 7 0 4464640 24577 64 0 0
 70 60 0 1 0 0 0 0
-1 21851 100
+1 21851 100 100
 #45022
 longsword sword elvish~
 &+Wan elven longsword&n~
@@ -214,7 +214,7 @@ longsword sword elvish~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 6 3 0 0 0 0
-10 500 100
+10 500 100 100
 #45023
 leather dog collar~
 &+ya leather dog collar&n~
@@ -222,7 +222,7 @@ leather dog collar~
 ~
 9 13 0 0 7 0 0 5 0 0 0
 5 2 1 3 0 0 0 0
-5 50 100
+5 50 100 100
 #45024
 golden scimitar~
 &+ya golden scimitar&n~
@@ -230,7 +230,7 @@ golden scimitar~
 ~
 5 24 3 10 7 0 0 8193 0 4165209604 0
 9 2 3 3 0 0 0 0
-5 500 100
+5 500 100 100
 A
 4 2
 A
@@ -242,7 +242,7 @@ pearl ring~
 ~
 9 16 1 1 7 0 0 3 0 0 0
 4 1 0 3 0 0 0 0
-5 5000 100
+5 5000 100 100
 A
 13 5
 A
@@ -254,7 +254,7 @@ an &+Wopal key&n has been left here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45027
 boots elven~
 &+ga pair of elven boots&n~
@@ -262,7 +262,7 @@ boots elven~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 7 0 0 3 0 0 0 0
-3 10000 100
+3 10000 100 100
 A
 14 10
 A
@@ -274,7 +274,7 @@ someone has left a &+Gglowing emerald key&n here.~
 ~
 18 32 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45029
 mystic key glowing~
 a &+Wglowing mystic key~
@@ -282,7 +282,7 @@ a &+Wglowing mystic key&n is on the floor here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45030
 tally sheet~
 &+Wa tally sheet&n~
@@ -290,7 +290,7 @@ tally sheet~
 ~
 12 28 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-99 0 100
+99 0 100 100
 E
 tally sheet~
 This tally, clearly marked Property of Charing Jail, shows the names
@@ -303,7 +303,7 @@ An unwanted cloak sits on the ground here.~
 ~
 9 14 3 0 7 0 0 5 0 0 0
 6 0 0 3 0 0 0 0
-1 1234 100
+1 1234 100 100
 A
 2 3
 A
@@ -315,7 +315,7 @@ An unwanted hat sits here.~
 ~
 9 3 3 0 7 0 0 17 0 0 0
 5 0 0 3 0 0 0 0
-2 123 100
+2 123 100 100
 A
 13 10
 A
@@ -327,7 +327,7 @@ water holy glowing moon pool~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 17 0 0 0 0 0
-1 1 100
+1 1 100 100
 #45034
 lockpicks lock picks~
 &+La set of lockpicks&N~
@@ -335,7 +335,7 @@ lockpicks lock picks~
 ~
 31 16 1 2 7 0 0 16385 0 0 0
 0 10 0 0 0 0 0 0
-2 50 100
+2 50 100 100
 E
 lock pick picks lockpicks~
 these picks seem to be able to pick at least a few locks.
@@ -347,7 +347,7 @@ A &+Wdouble flute&N is lying here, waiting to be played.~
 ~
 32 16 3 15 7 0 2097152 16385 0 0 0
 184 3 15 1 0 0 0 0
-3 1000 100
+3 1000 100 100
 E
 flute double fipple~
    This tiny flute has one one mouth piece but is split like a two-pronged
@@ -361,7 +361,7 @@ horn song songhorn instrument~
 ~
 32 16 3 15 7 0 0 16385 0 0 0
 189 2 7 1 0 0 0 0
-3 675 100
+3 675 100 100
 E
 horn songhorn~
    This type of horn is specially suited for playing beautiful songs in the
@@ -375,7 +375,7 @@ A carefully stained hand drum lies here.~
 ~
 32 5 3 15 7 0 0 16385 0 0 0
 188 5 10 1 0 0 0 0
-3 800 100
+3 800 100 100
 E
 oak~
    Well made of solid oak and bleached animal skin, the handsome little
@@ -389,7 +389,7 @@ yarting standard mandolin instrument~
 ~
 32 16 3 15 7 0 0 16385 0 0 0
 186 3 7 1 0 0 0 0
-3 980 100
+3 980 100 100
 E
 yarting standard~
    A well crafted little gem on an instrument, it is not especially spectac-
@@ -403,7 +403,7 @@ A practical and well made lyre is lying here.~
 ~
 32 6 3 15 7 0 0 16385 0 0 0
 185 2 5 1 0 0 0 0
-3 700 100
+3 700 100 100
 E
 lovely elven lyre~
    Simple, but elegantly made, this lyre is of the finest quality no matter
@@ -417,7 +417,7 @@ A harp of delicate elven construction lies here.~
 ~
 32 16 3 15 7 0 0 16385 0 0 0
 187 6 20 1 0 0 0 0
-3 680 100
+3 680 100 100
 E
 harp~
    Made of a fine bronz and silver mesh, this harp rings true to any bard's
@@ -431,7 +431,7 @@ chitarrone instrument~
 ~
 32 16 3 15 7 0 4194304 16385 64 0 0
 185 14 1 1 0 0 0 0
-28 15065 100
+28 15065 100 100
 E
 chitarrone~
    &+gResembling a double necked lute, this instrument has two necks and
@@ -452,7 +452,7 @@ A steaming cup of tea rests here.~
 ~
 17 9 0 0 7 0 0 1 0 0 0
 2 2 11 0 0 0 0 0
-1 17 100
+1 17 100 100
 #45043
 nelanna nelannas special brew~
 &+YNelanna's&+w special brew~
@@ -460,7 +460,7 @@ A bottle of special spirits is lying here.~
 ~
 17 9 0 0 7 0 0 16385 0 0 0
 8 8 8 0 0 0 0 0
-2 176 100
+2 176 100 100
 E
 bottle nelanna nelannas special brew~
    Created using some sort of formula (held top secret by the employees)
@@ -474,7 +474,7 @@ honey bread honeybread~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-2 970 100
+2 970 100 100
 #45045
 love muffin~
 &+ma sweet little &+Mlove&+m muffin~
@@ -482,7 +482,7 @@ A disgustingly cute little muffin is lying here.~
 ~
 19 48 2 0 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-1 12 100
+1 12 100 100
 E
 love muffin~
    This frightfully cute little pastry is just perfect for that certain
@@ -495,7 +495,7 @@ leather armor suit~
 ~
 9 13 0 0 7 0 536879112 9 0 4165209604 0
 6 3 1 3 0 0 0 0
-5 4620 100
+5 4620 100 100
 A
 18 1
 #45047
@@ -505,7 +505,7 @@ A handy little knife is lying here, forgotten.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-2 12 100
+2 12 100 100
 #45048
 tankard hardwood~
 a hardwood tankard~
@@ -513,7 +513,7 @@ A sturdy looking tankard has been carelessly tossed away and is lying here.~
 ~
 17 6 0 0 7 0 0 16385 0 0 0
 25 25 8 0 0 0 0 0
-5 11 100
+5 11 100 100
 #45049
 silverish greenwood mandolin instrument~
 &+ga &+Wsilverish,&+g greenwood mandolin&N~
@@ -521,7 +521,7 @@ silverish greenwood mandolin instrument~
 ~
 32 6 3 15 7 0 0 16385 64 0 0
 186 10 1 1 0 0 0 0
-5 25664 100
+5 25664 100 100
 E
 silverish greenwood mandolin~
    &+gMade of some far and exotic wood and inscribed with glowing, &+Wsilverish
@@ -539,7 +539,7 @@ long purple robe~
 ~
 9 3 3 0 7 0 128 1025 66 0 0
 10 0 0 4 0 0 0 0
-3 2 100
+3 2 100 100
 A
 14 15
 A
@@ -551,7 +551,7 @@ prayer beads~
 ~
 9 10 3 0 7 0 1024 5 0 33685920 0
 5 0 0 3 0 0 0 0
-4 500 100
+4 500 100 100
 A
 3 3
 A
@@ -563,7 +563,7 @@ large chest~
 ~
 15 6 3 0 12 0 0 0 0 0 0
 500 5 0 500 0 0 0 0
-1000 1 100
+1000 1 100 100
 #45053
 spectacles oracle~
 &+ythe spectacles of the oracle&N~
@@ -571,7 +571,7 @@ An unwanted pair of eyeglasses sits here.~
 ~
 9 6 3 0 7 0 262272 131073 0 0 0
 4 0 0 3 0 0 0 0
-2 1234 100
+2 1234 100 100
 A
 4 3
 A
@@ -583,7 +583,7 @@ A slim silver dagger is resting here.~
 ~
 5 22 2 3 7 0 0 8193 0 4194697632 0
 2 2 4 11 0 0 0 0
-3 100 100
+3 100 100 100
 A
 19 2
 A
@@ -595,7 +595,7 @@ An unwanted crown sits on the ground here.~
 ~
 9 24 3 0 12 0 262144 17 0 0 0
 10 0 0 3 0 0 0 0
-2 1234 100
+2 1234 100 100
 A
 13 30
 A
@@ -607,7 +607,7 @@ An unwanted golden stud sits on the ground here.~
 ~
 9 24 3 0 7 0 262144 524289 0 0 0
 5 0 0 2 0 0 0 0
-1 1234 100
+1 1234 100 100
 A
 26 3
 A
@@ -619,7 +619,7 @@ An unwanted shield sits on the ground here.~
 ~
 37 15 3 0 7 0 0 513 0 0 0
 2 1 3 170 4 0 0 0
-1 1234 100
+1 1234 100 100
 A
 1 7
 A

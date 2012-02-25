@@ -9,8 +9,8 @@ centaur trentloss~
 &+gHe has been at his post for a long time without hearing from anyone within&N
 &+gthe temple but he is not able to leave and determine what has happened.&N
 ~
-2058 0 0 16777384 2048 0 0 0 S
-CT 0 128 -1
+2058 0 0 0 16777384 2048 0 0 0 S
+CT 0 128 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -26,8 +26,8 @@ The spirit of the oak wails in agony.&N
 &+wpurpose.  If the &+Yessence of the sun &+wcould be found and restored to its&N
 &+wproper place the temple and the &+gforest &+wmight be cure of this plague.&N
 ~
-2058 0 0 128 34816 0 0 1000 S
-ug 0 32 -1
+2058 0 0 0 128 34816 0 0 1000 S
+ug 0 32 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -42,8 +42,8 @@ spirit pine~
 &+Lreplaced the normal spirit of this pine with this evil being in order to&N
 &+Lweaken the spirit of the woods.&N
 ~
-2058 1 0 136 34816 0 0 -1000 S
-ug 0 16 -1
+2058 1 0 0 136 34816 0 0 -1000 S
+ug 0 16 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -56,8 +56,8 @@ bear~
 &+Lher claws are barely stubs.  Tufts of fur have fallen off as the animal has&N
 &+Ltried to rub away at the rock closing off the entrance.&N
 ~
-2120 1 0 8 262144 0 0 -750 S
-A 0 1 -1
+2120 1 0 0 8 262144 0 0 -750 S
+A 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -72,8 +72,8 @@ gnome pelakra~
 &+gdruidic &+writuals have failed to dispel this evil so help has been called in&N
 &+wfrom all around the realm.&N
 ~
-2058 0 0 268435594 2048 0 0 750 S
-PG 0 512 -1
+2058 0 0 0 268435594 2048 0 0 750 S
+PG 0 512 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -86,8 +86,8 @@ assistant~
 &+wsearch to determine the cause of the problems in the forest.  Each assistant&N
 &+whas been given a tome to locate and scan for an ancient incantation.&N
 ~
-1140852744 0 0 0 0 0 0 750 S
-PE 0 1 -1
+1140852744 0 0 0 0 0 0 0 750 S
+PE 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -102,8 +102,8 @@ demon enraged~
 &+Lwill lash out at anyone who disturbs him.  The last fool who disturbed him&N
 &+rwas quickly devoured.&N
 ~
-1073772616 1 0 154 2048 0 0 -1000 S
-X 0 256 7
+1073772616 1 0 0 154 2048 0 0 -1000 S
+X 0 256 0 7
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -116,8 +116,8 @@ grentkas centaur~
 &+gmagic and has the ability to enchant items with powerful magics.  If he is&N
 &+gprovided with the proper materials he can produce for you exquisite items.&N
 ~
-8 0 0 0 0 0 0 759 S
-CT 0 1 -1
+8 0 0 0 0 0 0 0 759 S
+CT 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -131,8 +131,8 @@ bard human frolikk~
 &+gwastes of the underdark and after playing to a group of tone deaf ogres&N
 &+gdecided that he needed a vacation.&N
 ~
-2122 0 0 0 0 0 0 750 S
-PH 0 32768 -1
+2122 0 0 0 0 0 0 0 750 S
+PH 0 32768 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -147,8 +147,8 @@ goblin gruntto~
 &+gdaily basis.  He is starting to run out of meat though as the amount of cold&N
 &+gstorage is small and much of the remaining meat has spoiled.&N
 ~
-2058 1 0 24 0 0 0 -750 S
-HG 0 256 2
+2058 1 0 0 24 0 0 0 -750 S
+HG 0 256 0 2
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -162,8 +162,8 @@ root~
 &+gof the vines so that friendly workers may pass while invaders will be&N
 &+gattacked on sight.&N
 ~
-1140852810 1 0 0 0 0 0 -1000 S
-VT 0 1 4
+1140852810 1 0 0 0 0 0 0 -1000 S
+VT 0 1 0 4
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -178,8 +178,8 @@ guard~
 &+gthe reserves he has been on many menial missions and longs for the thrill of&N
 &+gbattle once again.&N
 ~
-1073743946 1 0 0 0 0 0 -750 S
-PT 0 256 5
+1073743946 1 0 0 0 0 0 0 -750 S
+PT 0 256 0 5
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -193,8 +193,8 @@ druid llentor~
 &+gthe temple.  Knowing of his weakness for gold and enchanted items he was&N
 &+geasily turned to their cause.&N
 ~
-2122 1 0 285212808 2048 0 0 -100 S
-PE 0 128 -1
+2122 1 0 0 285212808 2048 0 0 -100 S
+PE 0 128 0 -1
 52 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -208,8 +208,8 @@ apprentice troll~
 &+gPurple splotches mottle their greenish skin and occasionally juice splatters&N
 &+minto their eyes and mouth.&N
 ~
-1073743882 1 0 8 2048 0 0 -750 S
-PT 0 1 -1
+1073743882 1 0 0 8 2048 0 0 -750 S
+PT 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -222,8 +222,8 @@ apprentice troll~
 &+gare then corked and sent to the wine cellar to age.  This process requires&N
 &+ga gentle touch to prevent the bottles from shattering while they are corked.&N
 ~
-1073743882 1 0 136 2048 0 0 -759 S
-PT 0 256 -1
+1073743882 1 0 0 136 2048 0 0 -759 S
+PT 0 256 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -236,8 +236,8 @@ troll drunk~
 &+gOcassionly his foot will twitch in the middoe of a dream about chasing&N
 &+yhalflings &+gand popping them on the head.&N
 ~
-2056 0 0 0 0 0 0 -750 S
-PT 0 1 -1
+2056 0 0 0 0 0 0 0 -750 S
+PT 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 4 4 1
@@ -251,8 +251,8 @@ alchemist troll~
 &+mare processed in a consistant manner.  His temper is well known and the&N
 &+mapprentices are alert when he is suppervising them.&N
 ~
-1073743880 1 0 136 2049 0 0 -750 S
-PT 0 524288 -1
+1073743880 1 0 0 136 2049 0 0 -750 S
+PT 0 524288 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -265,8 +265,8 @@ ogre fat~
 &+bof the temple.  He is in a semi conscious state because of the amount of&N
 &+bfatty meat he has eaten over the last few days.&N
 ~
-1073743946 1 0 152 2 0 0 -750 S
-PO 0 256 -1
+1073743946 1 0 0 152 2 0 0 -750 S
+PO 0 256 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -282,8 +282,8 @@ centaur platakas~
 &+Wrest before heading further into the underdark to slay the enemies of light.&N
 &+WLittle does he know that the enemy is already close by.&N
 ~
-2122 128 0 134226072 2050 0 0 1000 S
-CT 0 8 -1
+2122 128 0 0 134226072 2050 0 0 1000 S
+CT 0 8 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -298,8 +298,8 @@ troll lumpy~
 &+Lis to patrol the hallways and keep the guests inside their rooms.  He is&N
 &+gvigilant in his task.&N
 ~
-1073743944 1 0 152 2 0 0 -750 S
-PT 0 1 -1
+1073743944 1 0 0 152 2 0 0 -750 S
+PT 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -313,8 +313,8 @@ troll hungry~
 &+gfood to notice you but if you disturb her she might decide you would make&N
 &+ga nice lunch.&N
 ~
-1073743948 0 0 0 0 0 0 -750 S
-PT 0 1 -1
+1073743948 0 0 0 0 0 0 0 -750 S
+PT 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -328,8 +328,8 @@ ogre young~
 &+bpass who is not authorize.  His yellowish eyes are gleaming with glee and he&N
 &+bhopes he will live long and be able to slay many inferior foes.&N
 ~
-1073743944 1 0 8 2 0 0 -750 S
-PO 0 1 -1
+1073743944 1 0 0 8 2 0 0 -750 S
+PO 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -343,8 +343,8 @@ ogre fat~
 &+bpoint of gluttony.  Saliva dribbles down his chin as he turns towards you and&N
 &+broars.&N
 ~
-2120 1 0 152 2 0 0 -750 S
-PO 0 1 -1
+2120 1 0 0 152 2 0 0 -750 S
+PO 0 1 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -358,8 +358,8 @@ shaman rantah~
 &+ramuzed by any disturbance.  He quickly puts the gold he was counting in his&N
 &+rpockets and turns his full attention towards you.&N
 ~
-2058 1 0 152 2050 0 0 -750 S
-PO 0 256 -1
+2058 1 0 0 152 2050 0 0 -750 S
+PO 0 256 0 -1
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -374,8 +374,8 @@ golden statue~
 &+YOne wonders if some strange magic was used to bypass this guardian and then&N
 &+Yreplace her without her knowledge.&N
 ~
-2122 0 0 152 2 0 0 1000 S
-OG 0 512 7
+2122 0 0 0 152 2 0 0 1000 S
+OG 0 512 0 7
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -390,8 +390,8 @@ troll lanky~
 &+gladders are needed for the upper shelves.  He does have problems however with&N
 &+gthe lower shelves.&N
 ~
-2120 1 0 0 0 0 0 -750 S
-PT 0 1 -1
+2120 1 0 0 0 0 0 0 -750 S
+PT 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -404,8 +404,8 @@ bear baby~
 &+LHis ribs are showing and his fur has lost its luster.  His mother has been&N
 &+Lgone for quite some time.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -418,8 +418,8 @@ buck deer~
 &+ymost deer he will fight it threatened instead of just running for the trees.&N
 &+yHe had a few scars on his flank to show he has been in a few battles before.&N
 ~
-1140852808 0 0 8 0 0 0 0 S
-A 0 1 -1
+1140852808 0 0 0 8 0 0 0 0 S
+A 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -433,8 +433,8 @@ doe deer~
 &+yfind.  Occasionally she will suppliment her diet with some produce from the&N
 &+ygardens when she can slip past the farmers.&N
 ~
-1073743944 0 0 0 0 0 0 0 S
-A 0 1 -1
+1073743944 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -448,8 +448,8 @@ halfling farmer~
 &+ybelt and a small water bucket with fertilizers.  A smile twinkles in his eye&N
 &+yand he hums silently to himself as he walks down the rows of plants.&N
 ~
-1073743944 0 0 8 2 0 0 750 S
-PF 0 1 -1
+1073743944 0 0 0 8 2 0 0 750 S
+PF 0 1 0 -1
 27 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -463,8 +463,8 @@ farmer centaur~
 &+gplow harness and till the soil very affectively.  Occasionally he also gets&N
 &+gto fertilize the soil.&N
 ~
-1073743944 0 0 8 0 0 0 750 S
-CT 0 1 -1
+1073743944 0 0 0 8 0 0 0 750 S
+CT 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -478,8 +478,8 @@ elf snooty grey~
 &+cto insure the grapes are properly watered and fertilized during the short&N
 &+cgrowing season.&N
 ~
-1073743880 0 0 8 0 0 0 759 S
-PE 0 1 -1
+1073743880 0 0 0 8 0 0 0 759 S
+PE 0 1 0 -1
 29 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1

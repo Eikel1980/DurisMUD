@@ -5,7 +5,7 @@ blue flaming portal gate flame flames~
 ~
 25 1 3 0 7 0 1 0 0 1 0
 87505 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blue flaming portal gate flame flames~
 &+rBurning &+bbrightly&+R this &+rportal&+b leads&+R elsewhere.&N
@@ -17,7 +17,7 @@ hole fabric universe portal gate~
 ~
 25 1 3 0 7 0 0 0 0 1 0
 87504 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hole fabric universe portal gate~
 &+rSomehow &+Rthis &+bhole &+rhas &+Rbeen&+b ripped&+r in &+Rthe&+b fabric &+rof&+R the &+buniverse.&N
@@ -29,7 +29,7 @@ invisible jail cell key prison~
 ~
 18 10 3 0 7 0 8388640 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 invisible jail cell key prison~
 &+wThis prison key prevents anybody from entering the &+Winvisible&+w prison.&N
@@ -41,7 +41,7 @@ prison master key~
 ~
 18 10 3 0 7 0 8388609 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 prison master key~
 &+LThis &+Wkey&+L is the master key for opening all cells in the prison of Jubilex.&n
@@ -53,7 +53,7 @@ neck clamp dark-mithril dark mithril~
 ~
 9 18 3 0 7 0 8454272 5 0 1 0
 2 0 0 5 0 0 0 0
-0 0 100 0 1024 0 0
+0 0 100 100 0 1024 0 0
 E
 neck clamp dark-mithril dark mithril~
 &+L  This &+mneck clamp&+L appears to have been forged from a very rare element known&N
@@ -73,7 +73,7 @@ flaming purple blade equalizer sword~
 ~
 5 34 3 0 14 0 37748736 8193 80 32794 0
 13 8 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flaming purple blade equalizer sword~
 &+LThis sword constantly is swathed in &+mpurple flames&+L, burning without smoke.&N
@@ -89,7 +89,7 @@ portal wobbling unstable unstably wobble gate~
 ~
 25 1 3 0 14 0 0 0 0 1 0
 87589 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal wobbling unstable unstably wobble gate~
 &+BThis &+bstrange &+Bportal&+b wobbles &+Bin &+ban&+B unstable&+b way.&N
@@ -101,7 +101,7 @@ cage glass~
 ~
 15 7 3 0 12 0 0 0 0 1 0
 100 29 87513 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cage glass~
 &+WThis cage contains a very angry little &+Lumber hulk&+W.&N
@@ -113,7 +113,7 @@ magical zooox zooox's machine portals~
 ~
 15 15 3 0 15 0 0 0 0 1 0
 20 29 87513 20 0 0 0 0
-0 0 100
+0 0 100 100
 E
 magical zooox zooox's machine portals~
 &+LThis strange machine keeps on shooting out &+Bblue flashes&+L which become&N
@@ -127,7 +127,7 @@ tiny umber hulk little~
 ~
 13 2 3 0 5 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny umber hulk~
 &+LThis tiny umber hulk screams what could only be described as obscenities&N
@@ -141,7 +141,7 @@ chrystal power source pulsate pulsating crystal~
 ~
 13 8 3 0 14 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chrystal power source pulsate pulsating crystal~
 &+bThis crystal simply pulsates with energy.&N
@@ -153,7 +153,7 @@ ring blue shooting shoot sparks~
 ~
 9 23 3 0 10 0 0 134217731 0 0 0
 5 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring blue shooting shoot sparks~
 &+BThis blue ring &+Ysparks &+Bwith energy.&N
@@ -169,7 +169,7 @@ brain zooox clone mind rainbows rainbow~
 ~
 13 2 3 0 12 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 brain zooox clone mind rainbows rainbow~
 &+mThis &+Mbrain&+m might be valuable to the right person.&N
@@ -181,7 +181,7 @@ key keys chain filled fill~
 ~
 18 15 3 0 5 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key keys chain filled fill~
 &+wThis chain with many keys is used to unlock everything in the Clone's house.&N
@@ -193,7 +193,7 @@ wand summer winter staff key~
 ~
 18 7 3 0 11 0 1 16385 0 1 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wand summer winter staff key~
 &+LThis &+wwand&+L has a very &+rr&+Re&+rd&+L tip on the end which fluctuates between &+rhot&+L and&N
@@ -206,7 +206,7 @@ key slime puddle~
 ~
 18 40 3 0 10 0 8388608 1 0 1 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key slime puddle~
 &+cThis is a strange key made of &+Gslime&+c.&N
@@ -218,7 +218,7 @@ large green switch~
 ~
 29 15 3 0 3 0 4096 0 0 1 0
 270 87606 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large green switch~
 &+gThis large green switch appears to open the door on this level.  One must&N
@@ -231,7 +231,7 @@ cleansed clean lake slime~
 ~
 25 40 3 0 11 0 0 0 0 1 0
 87624 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cleansed clean lake slime~
 &+GIf one enters this lake, it's possible it might take them elsewhere.&N
@@ -243,7 +243,7 @@ cleansed clean lake slime~
 ~
 25 40 3 0 11 0 0 0 0 1 0
 87609 7 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cleansed clean lake slime~
 &+GIf one enters this lake, it's possible it might take them elsewhere.&N
@@ -255,7 +255,7 @@ hastily created wormhole worm hole gate portal~
 ~
 25 1 3 0 7 0 1 0 0 1 0
 87598 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hastily created wormhole worm hole gate portal~
 &+LThis wormhole was created by &+GJ&+gu&+Wb&+ri&+Wl&+ge&+Gx&+L for escape.&N
@@ -267,7 +267,7 @@ circular circle seal pattern key~
 ~
 18 11 3 0 14 0 41943040 16385 0 1 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 circular circle seal pattern key~
 &+LThis seal opens the vault of the demon prince Jubilex.&N
@@ -279,7 +279,7 @@ heart spitting spit acid~
 ~
 5 2 3 0 15 0 16789505 24577 64 1 0
 10 1 20 0 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 E
 heart spitting spit acid~
 &+rThis &+Rheart&+r of the great worm of the abyss, spits its &+gacidic&+r blood everywhere.&N
@@ -296,7 +296,7 @@ prison door key jail~
 ~
 18 10 3 0 7 0 8388608 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 prison door key jail~
 &+LThis key opens the main doors of the prison of Jubilex.&N
@@ -308,7 +308,7 @@ bloody eyes eye eyeballs sinew string circle mess~
 ~
 9 2 3 0 14 0 5120 4101 0 85983234 0
 10 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bloody eyes eye eyballs sinew string circle mess~
 &+LThese &+We&+gye&+rba&+gll&+Ws&+L are tied together in a circle by a &+ysinew&+L.&N
@@ -324,7 +324,7 @@ transparent sheen slime~
 ~
 9 40 3 0 14 0 8192 184684837 0 0 0
 4 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 transparent sheen slime~
 &+LThis&+w sheen&+L of &+Gslime&+L looks as though it could cover any variety of things.&N
@@ -340,7 +340,7 @@ two cubes cube protection quiver~
 ~
 9 40 3 0 13 0 33554432 193 0 1 0
 15 0 0 5 0 0 0 0
-0 0 100 65536 0 0 0
+0 0 100 100 65536 0 0 0
 E
 two cubes cube protection quiver~
 &+GThese&+g cubes &+Gof &+gprotection&+G are &+gvery &+Glarge &+gand &+Gbulbous&+g bubbles&+G of &+gslime.&N
@@ -356,7 +356,7 @@ slightly digested body arianna~
 ~
 13 2 3 0 5 0 8388608 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 slightly digested body arianna~
 &+yThis body of the once beautiful Arianna has been fed to the mighty Jubilex.&N
@@ -370,7 +370,7 @@ slightly digested body sassumo~
 ~
 13 2 3 0 5 0 8388608 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sassumo slightly digested body~
 &+yThis is the body of the once mighty monk Sassumo.  His fists were renowned&N
@@ -385,7 +385,7 @@ circles circle bloodletting blood bloody~
 ~
 9 19 3 0 15 0 33554432 2049 0 0 1
 15 0 0 5 1 0 0 0
-5 0 100
+5 0 100 100
 E
 circles circle bloodletting blood bloody~
 &+LThese spiked circles seem to float strangely and eerily around any body part&N
@@ -404,7 +404,7 @@ bracelet emeralds emerald wrist~
 ~
 9 32 3 0 12 0 1024 4097 0 4230656 0
 0 0 0 0 0 0 0 0
-0 0 100 16777216 0 0 0
+0 0 100 100 16777216 0 0 0
 E
 bracelet emeralds emerald wrist~
 &+cOnce belonging to a powerful wizardress this &+Wbracelet&+c is studded with&N
@@ -421,7 +421,7 @@ blue-tinted blue tinted chainmail leggings legging leg pants~
 ~
 9 15 3 0 13 0 3162112 33 0 0 0
 8 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blue-tinted blue tinted chainmail leggings legging leg pants~
 &+LThese chainmail leggings have an unnatural and iridescent &+bblue&+L sheen to them.&N
@@ -437,7 +437,7 @@ serrated longtooth dagger knife~
 ~
 5 10 3 0 9 0 0 8193 0 1 0
 2 3 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 serrated longtooth dagger knife~
 &+LThis very long dagger looks as though it could pierce straight through.&N
@@ -453,7 +453,7 @@ map blood stained bloodstained~
 ~
 13 28 3 0 3 0 0 8388609 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 map blood stained bloodstained~
 &+yThis strange map has obviously been pulled from some unfortunate adventurer&N
@@ -468,7 +468,7 @@ sleeves imp impskin skin sleeve~
 ~
 9 2 3 0 12 0 0 257 0 0 0
 3 0 0 3 0 0 0 0
-0 0 100 8 0 0 0
+0 0 100 100 8 0 0 0
 E
 sleeves imp impskin skin sleeve~
 &+LThese disgusting sleeves appear to be what is left of an impudent &+Mimp&+L.&N
@@ -484,7 +484,7 @@ chain skull illithid disgusting~
 ~
 9 10 3 0 10 0 0 34078721 0 0 0
 4 0 0 5 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 E
 chain skull illithid disgusting~
 &+LA disgusting cleaned &+Millithid&+W skull&+L has a chain roughly slammed right through&N
@@ -501,7 +501,7 @@ splintered broken dragon scale mask~
 ~
 9 35 3 0 11 0 0 262145 0 1 0
 5 0 0 4 0 0 0 0
-0 0 100 2 0 0 0
+0 0 100 100 2 0 0 0
 E
 splintered broken dragon scale mask~
 &+wThis &+gdragon&+W scale&+w is splintered in just the right way so that it can fit onto&N
@@ -518,7 +518,7 @@ scale elder golden wyrm shield~
 ~
 37 35 3 0 13 0 0 513 0 0 0
 1 3 3 5 3 0 0 0
-30 0 100 536870912 64 0 0
+30 0 100 100 536870912 64 0 0
 E
 scale elder golden wyrm shield~
 &+YThis scale from an elder golden wyrm looks as though it would protect well.&N
@@ -534,7 +534,7 @@ totem coated slime carved~
 ~
 34 6 3 0 11 0 1025 16385 0 256 0
 63 0 0 0 0 0 0 0
-0 0 100 0 32768 0 0
+0 0 100 100 0 32768 0 0
 E
 totem coated slime carved~
 &+yThis totem looks to have been coated in a thick layer of &+Gslime&+y.&N
@@ -550,7 +550,7 @@ power infused bracelet dark-mithril mithril dark~
 ~
 9 18 3 0 12 0 0 4097 0 0 0
 7 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 power infused bracelet dark-mithril mithril dark~
 &+rThis bracelet has been infused with power by some unknown source enhancing&N
@@ -567,7 +567,7 @@ mask stone form boulder~
 ~
 9 11 3 0 5 0 100664320 262145 0 37752740 0
 0 0 0 5 0 0 0 0
-0 0 100 0 1048576 0 0
+0 0 100 100 0 1048576 0 0
 E
 mask stone form boulder~
 &+wThis very strange looking &+ymask&+w occasionally gains a very &+Lhard&+w look to it.&N
@@ -583,7 +583,7 @@ slippers slipper rot decay~
 ~
 9 30 3 0 15 0 8192 65 0 1 0
 20 0 0 4 0 0 0 0
-0 0 100 32768 12288 32 0
+0 0 100 100 32768 12288 32 0
 E
 slippers slipper rot decay~
 &+gThese &+Yslippers&+g are made from the essence of Jubilex.  They spread poison and&N
@@ -602,7 +602,7 @@ fiery hexagon earring~
 ~
 9 16 3 0 11 0 0 524289 0 0 0
 5 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fiery hexagon earring~
 &+LThis hexagon is &+rf&+Yi&+Re&+rr&+Yy &+Land hot to the touch.&N
@@ -618,7 +618,7 @@ ring angel feathers feather angelic~
 ~
 9 50 3 0 13 0 1024 3 0 33685920 0
 7 0 0 1 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 E
 ring angel feathers feather angelic~
 &+WThis ring is made of a &+Yseraphim's&+W wondrous wing feathers.&N
@@ -634,7 +634,7 @@ blindfold blind fold devil devilish insight eye~
 ~
 9 3 3 0 14 0 262144 131073 0 0 0
 8 0 0 3 0 0 0 0
-0 0 100 32 0 0 0
+0 0 100 100 32 0 0 0
 E
 blindfold blind fold devil devilish insight eye~
 &NThis &+Lblindfold&+r looks as though it knows more than many a being walking the&N
@@ -651,7 +651,7 @@ larvae nonorga devil~
 ~
 13 2 3 0 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 larvae nonorga devil~
 &+rThis larvae of the once powerful devil &+LNonorga&+r, might be valuable to somebody&N
@@ -664,7 +664,7 @@ saddle xalandro's nightmare runes rune night mare horse~
 ~
 9 14 3 0 12 0 8192 16777217 0 0 0
 10 0 0 4 1 0 0 0
-0 0 100
+0 0 100 100
 E
 saddle xalandro nightmare horse~
 &+LThis &+ysaddle&+L looks tough and it hums with powerful &+mrunes&+L.&N
@@ -680,7 +680,7 @@ mask wildmagic wild unique~
 ~
 9 1 3 0 11 0 268436480 262145 0 37752228 0
 5 0 0 1 0 0 0 0
-0 0 100 0 0 0 2147483648
+0 0 100 100 0 0 0 2147483648
 E
 mask wildmagic wild magic~
 &+MDerived &+Bfrom &+Ythe &+Gpowers&+M of &+Ba&+Y great &+Gwildmage&+M this&+B mask&+Y is&+G the &+Mincarnation&+B of&+Y the&N
@@ -697,7 +697,7 @@ portal wobbling unstable unstably wobble gate~
 ~
 25 1 3 0 14 0 0 0 0 1 0
 87659 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal wobbling unstable unstably wobble gate~
 &+BThis &+bstrange &+Bportal&+b wobbles &+Bin &+ban&+B unstable&+b way.&N
@@ -709,7 +709,7 @@ bracer uz uz's alliance bracelet~
 ~
 9 11 3 0 12 0 1081344 4097 0 0 0
 10 0 0 5 1 0 0 0
-0 0 100
+0 0 100 100
 E
 bracer us uz's alliance bracelet~
 &+yThis bracer symbolizes the abyssal &+ralliance&+y forged by those encamped with
@@ -726,7 +726,7 @@ translucent belt anger~
 ~
 9 1 3 0 13 0 0 2049 0 1 0
 4 0 0 1 0 0 0 0
-0 0 100 0 0 64 0
+0 0 100 100 0 0 64 0
 E
 translucent belt anger~
 &+LThis belt shimmers even as it sits still.  As anybody nears it however their&N
@@ -743,7 +743,7 @@ emblem chain fealty orcus dead~
 ~
 9 21 3 0 12 0 0 4097 0 1 0
 3 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 emblem chain fealty orcus dead~
 &+yThis powerful charm belongs to a follower of the mighty demon prince &+LO&+wr&+Wc&+wu&+Ls.&N
@@ -759,7 +759,7 @@ medallion demonic protection demon necklace~
 ~
 13 24 3 0 11 0 0 5 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 medallion demonic protection demon necklace~
 &+LThis strange &+Ymedallion&+L offers protection against the demons who walk this&N
@@ -772,7 +772,7 @@ badge tiefling guardian~
 ~
 9 23 3 0 14 0 0 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 32 0 0 0
+0 0 100 100 32 0 0 0
 E
 badge tiefling guardian~
 &+LThis &+Ybadge&+L indicates the wearer is bound to protect all &+mtieflings&+L.&N
@@ -788,7 +788,7 @@ head lost wildmage wild mage space time~
 ~
 13 2 3 0 5 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 head lost wildmage wild mage space time~
 &+LThis is the decapitated &+rhead&+L of a lost &+Wwi&+Lld&+Wma&+Lge&+L.&N
@@ -800,7 +800,7 @@ head lost wildmage wild mage elements element~
 ~
 13 2 3 0 5 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 head lost wildmage wild mage elements element~
 &+LThis is the decapitated &+rhead&+L of a lost &+rwil&+Cdm&+yage&+L.&N
@@ -812,7 +812,7 @@ head lost wildmage wild mage great~
 ~
 13 2 3 0 5 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 head lost wildmage wild mage great~
 &+LThis is the decapitated &+rhead&+L of a lost great &+Cw&+Bi&+Cl&+Bd&+Cm&+Ba&+Cg&+Be&+L.&N
@@ -824,7 +824,7 @@ head lost wildmage wild mage creatures creature~
 ~
 13 2 3 0 5 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 head lost wildmage wild mage creatures creature~
 &+LThis is the decapitated &+rhead&+L of a lost &+Bwildmage&+L.&N
@@ -836,7 +836,7 @@ holy symbol pakar holiness~
 ~
 9 15 3 0 15 0 0 16385 0 1 0
 4 0 0 4 0 0 0 0
-0 0 100 0 2 0 0
+0 0 100 100 0 2 0 0
 E
 holy symbol pakar holiness~
 &+WThis holy symbol is not quite as pure as it might &+rseem&+W.&N
@@ -852,7 +852,7 @@ head lost wildmage wild mage nature~
 ~
 13 2 3 0 5 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 head lost wildmage wild mage nature~
 &+LThis is the decapitated &+rhead&+L of a lost &+gwildmage&+L.&N
@@ -864,7 +864,7 @@ furs fur snow plains~
 ~
 9 12 3 0 12 0 0 9 0 0 0
 22 0 0 5 0 0 0 0
-0 0 100 67108864 0 64 0
+0 0 100 100 67108864 0 64 0
 E
 furs fur snow plains~
 &+wThese &+yfurs&+w belong to one of the most dangerous &+Bbarbarian&+w women to ever
@@ -881,7 +881,7 @@ bloody skirts skirt power~
 ~
 9 3 3 0 10 0 0 33 0 1 0
 15 0 0 3 0 0 0 0
-0 0 100 0 0 64 0
+0 0 100 100 0 0 64 0
 E
 bloody skirts skirt power~
 &+LThis &+rbloody&+L skirt obviously is infused with power.&N
@@ -897,7 +897,7 @@ necklace wildmage scalps wild mage neck~
 ~
 9 2 3 0 14 0 33555456 5 0 4197888 0
 10 0 0 5 0 0 0 0
-0 0 100 0 0 0 4096
+0 0 100 100 0 0 0 4096
 E
 necklace wildmage scalps wild mage neck~
 &+LThis is a &+ynecklace&+L made from just the tops of &+Bw&+Mi&+Yl&+Gd&+Wm&+Ra&+mg&+ge&+L heads.&N
@@ -913,7 +913,7 @@ gloves madness anger glove gauntlets~
 ~
 9 8 3 0 10 0 128 129 0 0 0
 8 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gloves madness anger glove gauntlets~
 &+LThese &+Wgloves&+L are imbued with a strange madness.&N
@@ -929,7 +929,7 @@ gloves glove gauntlets irritation~
 ~
 9 8 3 0 11 0 128 129 0 1 0
 8 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gloves glove gauntlets irritation~
 &+LThese &+Wgloves&+L are imbued with the power to &+Rirritate&+L.&N
@@ -945,7 +945,7 @@ quiver ages age~
 ~
 9 33 3 0 13 0 0 1048577 0 0 0
 2 0 0 1 0 0 0 0
-0 0 100 0 262144 0 0
+0 0 100 100 0 262144 0 0
 E
 quiver ages age~
 &+LThis is a &+mq&+ru&+mi&+rv&+me&+rr&+L of legendary power.&N
@@ -961,7 +961,7 @@ gloves placation calm calmness placate gauntlets glove~
 ~
 9 8 3 0 13 0 1024 129 0 34079140 0
 8 0 0 2 0 0 0 0
-0 0 100 0 8388608 0 0
+0 0 100 100 0 8388608 0 0
 E
 gloves glove gauntlets placation~
 &+LThese &+Wgloves&+L are imbued with the power to &+Gcalm&+L.&N
@@ -973,7 +973,7 @@ gauntlets spiderkind spider~
 ~
 9 31 3 0 15 0 1024 129 0 87666715 0
 5 0 0 5 0 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 E
 gauntlets spiderkind spider~
 &+LThese &+ygauntlets&+L are embedded with the spider emblem of general &+yM&+Li&+ys&+Lk&+ya&+L.&N
@@ -989,7 +989,7 @@ pipes protection pipe~
 ~
 32 41 3 0 11 0 1 16385 0 1 0
 184 60 0 0 0 0 0 0
-0 0 100 73728 0 0 0
+0 0 100 100 73728 0 0 0
 E
 pipes protection pipe~
 &+wThese &+Ypipes&+w emit a peaceful almost protective tune.&N
@@ -1005,7 +1005,7 @@ mandolin hills soulful mand~
 ~
 32 41 3 0 12 0 0 16385 0 1 0
 186 60 0 0 0 0 0 0
-0 0 100 16777218 0 0 0
+0 0 100 100 16777218 0 0 0
 E
 mandolin hills soulful mand~
 &+WThis &+ymandolin&+W belongs to a bard who once traveled the &+ghills &+Wrather than&N
@@ -1022,7 +1022,7 @@ twined rope balance belt~
 ~
 9 43 3 0 14 0 1024 2049 0 87052411 0
 5 0 0 2 0 0 0 0
-0 0 100 0 32768 0 0
+0 0 100 100 0 32768 0 0
 E
 twined rope balance belt~
 &+WThis &+Lrope&+W blends&+L black&+W and&+L white &+Wto&+L a &+Wbalance.&N
@@ -1038,7 +1038,7 @@ prison key jail cell special quality~
 ~
 18 10 3 0 7 0 8388609 1 0 1 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 prison key jail cell special quality~
 &+LThis &+Wkey&+L leads to an area where only extremely powerful prisoners are kept.&N
@@ -1050,7 +1050,7 @@ used wand summer winter staff key~
 ~
 13 7 3 0 11 0 1 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wand summer winter staff key~
 &+LThis &+wwand&+L has a very &+rr&+Re&+rd&+L tip on the end which fluctuates &+Lbetween &+rhot&+L and&N
@@ -1063,7 +1063,7 @@ tiny wriggling wriggle worm acid~
 ~
 13 40 3 0 10 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny wriggling wriggle worm acid~
 &+rThis tiny worm of acid looks to be an offshoot of a gargantuan worm made of&N
@@ -1077,7 +1077,7 @@ platinum facemask mask scale dragon~
 ~
 9 35 3 0 14 0 1024 262145 0 87052377 0
 10 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 platinum facemask mask scale dragon~
 &+wThis &+Wplatinum&+L facemask&+w is little more than a glorified dragon scale.&N
@@ -1093,7 +1093,7 @@ zorobabi circular stone ring~
 ~
 9 11 3 0 11 0 0 33554435 0 0 0
 2 0 0 2 0 0 0 0
-0 0 100 268435456 0 0 0
+0 0 100 100 268435456 0 0 0
 E
 zorobabi circular stone ring~
 &+LThis &+ycircular&+L stone &+Rri&+Yng &+Lbelonged to a rakshasa.&N
@@ -1109,7 +1109,7 @@ strip black pudding studded stones stone~
 ~
 9 40 3 0 12 0 4096 2049 0 0 0
 3 0 0 2 0 0 0 0
-0 0 100 0 0 0 1048576
+0 0 100 100 0 0 0 1048576
 E
 strip black pudding studded stones stone~
 &+wThis strip of &+Lblack pudding&+w has been embedded with strange stones from all&N
@@ -1127,7 +1127,7 @@ monocle damnation damned~
 ~
 9 7 3 0 14 0 1 131073 0 0 0
 5 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 monocle damnation damned~
 &+LThis looks to be a simple looking &+Wmonocle&+L.  However, when anybody looks deeply
@@ -1144,7 +1144,7 @@ arms arm digested demonic demon mostly~
 ~
 13 2 3 0 5 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 arms arm digested demonic demon mostly~
 &+LThese &+Marms&+L of a once powerful demon look as though they've been somewhat&N
@@ -1157,7 +1157,7 @@ torso digested demonic demon~
 ~
 13 2 3 0 5 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 torso digested demonic demon~
 &+LThis demon's &+Mtorso&+L has been detached from the rest of its being, and has&N
@@ -1170,7 +1170,7 @@ legs leg undigested demonic demon~
 ~
 13 2 3 0 5 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 legs leg undigested demonic demon~
 &+LThese demonic &+Mlegs&+L haven't yet been digested.  They must have come from a&N
@@ -1183,7 +1183,7 @@ grotesque demonic demon head~
 ~
 13 2 3 0 5 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 grotesque demonic demon head~
 &+LLying here is a grotesque and detached demonic &+Mhead&+L.  Obviously the former&n
@@ -1196,7 +1196,7 @@ boots death incarnate deathdealer~
 ~
 9 27 3 0 12 0 1024 65 0 87052377 0
 8 0 0 5 1 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 E
 boots death incarnate deathdealer~
 &+wLying here are a pair of &+Lboots&+w.  On the heel of the left boot a symbol&N
@@ -1214,7 +1214,7 @@ mass great darkness lokpan dark~
 ~
 13 2 3 0 15 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mass great darkness lokpan dark~
 &+LThis mass of darkness once was the great other world overlord Lokpan.  His&N
@@ -1229,7 +1229,7 @@ dagger otherworldly world worldly lokpan knife~
 ~
 5 36 3 0 15 0 1 8193 0 130842 29884416
 2 5 3 0 0 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 E
 dagger otherworldly world worldly lokpan knife~
 &+LThis dagger looks to be from a completely other world, and bears a symbol that&N
@@ -1246,7 +1246,7 @@ cloak body control~
 ~
 9 3 3 0 9 0 33554432 1025 0 1 0
 5 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cloak body control~
 &+LThis cloak is decorated with all sorts of patterns.  Each one only has&N
@@ -1263,7 +1263,7 @@ saddle unicorn divine smiting smite~
 ~
 9 14 3 0 13 0 8192 16777217 0 0 0
 10 0 0 4 1 0 0 0
-0 0 100
+0 0 100 100
 E
 saddle unicorn divine smiting smite~
 &+WThis &+Yunicorn&+W saddle looks to be studded with spikes.  Not all unicorns are&N
@@ -1280,7 +1280,7 @@ clump glowing fuzz fuz badge~
 ~
 9 5 3 0 9 0 0 2097153 0 1 0
 2 0 0 1 0 0 0 0
-0 0 100 0 12 0 67108864
+0 0 100 100 0 12 0 67108864
 E
 clump glowing fuzz fuz badge~
 &+LThis &+Yclump&+L of strange &+yfuzz &+Lseems to be a disgusting mix of hair and slime.&N
@@ -1292,7 +1292,7 @@ essence demon galnor galnor's~
 ~
 13 1 3 0 15 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 essence demon galnor galnor's~
 &+WThis is the essence of the &+Rdemon&+L Galnor&+W.  He abandoned his master in a time&N
@@ -1306,7 +1306,7 @@ essence demon dinok dinok's~
 ~
 13 1 3 0 15 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 essence demon dinok dinok's~
 &+WThis is the essence of the &+Rdemon&+L Dinok&+W.  He abandoned his master in a time&N
@@ -1320,7 +1320,7 @@ essence demon kriben kriben's~
 ~
 13 1 3 0 15 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 essence demon kriben kriben's~
 &+WThis is the essence of the &+Rdemon&+L Kriben&+W.  He abandoned his master in a time&N
@@ -1334,7 +1334,7 @@ essence demon blaxor blaxor's~
 ~
 13 1 3 0 15 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 essence demon blaxor blaxor's~
 &+WThis is the essence of the &+Rdemon&+L Blaxor&+W.  He abandoned his master in a time&N
@@ -1348,7 +1348,7 @@ ghostly armor flickering abyssal lords lord set~
 ~
 9 1 3 0 14 0 33554432 9 0 0 0
 30 0 0 5 1 0 0 0
-0 0 100 524320 2 0 0
+0 0 100 100 524320 2 0 0
 E
 ghostly armor flickering abyssal lords lord set~
 &+LThis &+Wghostly&+L armor flickers in and out of reality.  One might wonder whether&N
@@ -1367,7 +1367,7 @@ pants pair black white legs leggings~
 ~
 9 3 3 0 11 0 0 33 0 0 0
 12 0 0 3 0 0 0 0
-0 0 100 0 1 0 0
+0 0 100 100 0 1 0 0
 E
 pants black white legs leggings pair~
 &+wThis pair of pants is very strange indeed.  One &+Wleg&+w is pure white and&N
@@ -1384,7 +1384,7 @@ bracer inscribed orcus blood bracelet~
 ~
 9 11 3 0 14 0 1 4097 0 131002 13131776
 5 0 0 4 0 0 0 0
-0 0 100 40960 0 0 0
+0 0 100 100 40960 0 0 0
 E
 bracer inscribed orcus blood bracelet~
 &+LThis &+wbracer&+L is an extremely rare object indeed.  Only the demon prince's chosen
@@ -1402,7 +1402,7 @@ troll fez true clarity~
 ~
 9 3 3 0 11 0 0 17 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100 134217728 0 0 0
+0 0 100 100 134217728 0 0 0
 E
 troll fez true clarity~
 &+yThis &+Yfez&+y allows a &+gtroll&+y to think truly &+Wclearly&+y in the midst of chaos.&N
@@ -1418,7 +1418,7 @@ runed runes sleeves orcus dark intent~
 ~
 9 36 3 0 12 0 0 257 0 1 0
 8 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 runed runes sleeves orcus dark intent~
 &+LThese sleeves are given by O&+wr&+Wc&+wu&+Ls to his li&+mch&+Les to improve their prowess in the&N
@@ -1435,7 +1435,7 @@ pair powerful pit fiend wings~
 ~
 9 2 3 0 14 0 263168 1025 0 87052379 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pair powerful pit fiend wings~
 &+rThese &+Rwings&+r have been torn from the very back of a powerful &+Rfiend&+r.&N
@@ -1451,7 +1451,7 @@ necklet necklace neck tiefling superiority~
 ~
 9 18 3 0 13 0 131072 5 0 1 0
 3 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 necklet necklace neck tiefling superiority~
 &+LThis &+Wnecklet&+L appears to be the finest &+mtiefling&+L hands have ever made.&N
@@ -1467,7 +1467,7 @@ tiefling seal ring~
 ~
 9 32 3 0 9 0 0 3 0 1 0
 2 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiefling seal ring~
 &+LThis seal represents the leadership of the &+mtieflings&+L.&N
@@ -1483,7 +1483,7 @@ prison neptune neptune's soul being case tiny~
 ~
 13 1 3 0 15 0 33554433 1 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny prison neptune neptune's being case prison tiny soul~
 &+wThis is a small case that somehow contains the soul of a &+bg&+Bo&+bd&+w.&N
@@ -1495,7 +1495,7 @@ vambrace vambraces braces ebb sleeves~
 ~
 9 40 3 0 15 0 1025 257 0 87576667 0
 12 0 0 5 1 0 0 0
-0 0 100
+0 0 100 100
 E
 vambrace vambraces braces ebb sleeves~
 &+bGiven by the god &+BN&+be&+Bp&+bt&+Bu&+bn&+Be&+b himself, these &+Bvambraces&+b are very powerful.&N
@@ -1511,7 +1511,7 @@ amulet named flow~
 ~
 9 40 3 0 15 0 33555456 5 0 34079136 0
 3 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 amulet named flow~
 &+BThis &+bamulet&+B is given by the god &+BN&+be&+Bp&+bt&+Bu&+bn&+Be&+B to the worthy.&N
@@ -1527,7 +1527,7 @@ will waves puddle water cloak~
 ~
 9 40 3 0 13 0 33554433 1025 0 0 0
 20 0 0 5 0 0 0 0
-0 0 100 268961792 0 0 0
+0 0 100 100 268961792 0 0 0
 E
 will waves puddle water cloak~
 &+BN&+be&+Bp&+bt&+Bu&+bn&+Be&+b's will is a reality in this cloak.&N
@@ -1543,7 +1543,7 @@ plain shard stone dagger~
 ~
 5 10 3 0 9 0 0 8193 0 1 0
 0 5 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plain shard stone dagger~
 &+LThis very plain shard of stone looks sharp.&N
@@ -1559,7 +1559,7 @@ lolth lolth's mandibles jaw jaws~
 ~
 9 2 3 0 15 0 36701184 17 0 47136676 0
 0 0 0 0 0 0 0 0
-0 0 100 0 262144 0 0
+0 0 100 100 0 262144 0 0
 E
 lolth lolth's mandibles jaw jaws~
 &+m  The jaws of the demon Queen are here bloody and connected by a sinew which could&N
@@ -1576,7 +1576,7 @@ graz'zt graz grazzt essence allure graz'zt's~
 ~
 9 1 3 0 15 0 33554432 262145 0 0 0
 -30 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 graz'zt graz grazzt essence allure graz'zt's~
 &+LThis essence emnates the pressence of the &+rDar&+Lk Prin&+rce&+L.&n
@@ -1592,7 +1592,7 @@ body gigantic ferret marvin~
 ~
 13 15 7 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #87607
 tuft madman hair~
 &+wa &+ytuft&+w of &+RMADMAN'S&+y hair&n~
@@ -1600,7 +1600,7 @@ tuft madman madman's hair~
 ~
 9 15 3 0 7 0 1 5 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 0 0 0 4096
+0 0 100 100 0 0 0 4096
 A
 22 -5
 A
@@ -1612,7 +1612,7 @@ ferret marvin's marvin blessing~
 ~
 9 15 3 0 7 0 1025 16385 64 38309796 0
 0 0 0 0 0 0 0 0
-0 0 100 0 0 0 50331648
+0 0 100 100 0 0 0 50331648
 A
 40 12
 A
@@ -1624,7 +1624,7 @@ leash ferret marvin~
 ~
 13 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ferret leash marvin~
 &+LThis looks like it was once the leash for the ferret &+w"&+YMarvin&+w"&+L.  Perhaps&n
@@ -1637,7 +1637,7 @@ leash ferret marvin~
 ~
 13 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ferret leash marvin~
 &+LThis looks like it was once the leash for the ferret &+w"&+YMarvin&+w"&+L.  Perhaps&n
@@ -1650,4 +1650,4 @@ The jubilex grid mob generator hums here quietly.~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

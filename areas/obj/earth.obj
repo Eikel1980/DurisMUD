@@ -5,7 +5,7 @@ a silk tapestry~
 ~
 13 1 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry embroidered embroider richly~
 &+gBarely visible is the following diagram:&n
@@ -30,7 +30,7 @@ a duergar corpse~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skeletal corpse duergar~
 &+LStill wearing its mithril armor, these skeletal remains of a duergar lie
@@ -45,7 +45,7 @@ wheel wooden~
 ~
 29 6 3 0 5 0 0 0 0 0 0
 340 43594 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43503
 book red~
 &+La &+rred &+Lbook&n~
@@ -53,7 +53,7 @@ book red~
 ~
 29 13 3 0 7 0 4096 0 0 0 0
 270 43601 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 book red~
 &+rThis thick red book hangs slightly off the edge of the shelf. All the other
@@ -70,7 +70,7 @@ sign wooden wood~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wooden wood~
 &+yA flat piece of bark about a foot in length is connected to a thin mithril
@@ -88,7 +88,7 @@ gold plaque~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gold plaque~
 This small gold plaque displays the following warning:
@@ -118,7 +118,7 @@ rune~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 43594 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rune~
 &+yCharacters having no known form or reciting any known language have been
@@ -137,7 +137,7 @@ golden plate~
 ~
 13 15 3 0 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 golden plate~
 &+YThis small golden plate is covered with a thick dust. In the center of the
@@ -152,7 +152,7 @@ book charred~
 ~
 15 15 3 0 7 0 8425480 16385 0 0 0
 10 5 0 10 0 0 0 0
-2 1 100
+2 1 100 100
 E
 book charred~
 &+LBound in black leather, this thick book appears to have not been opened in
@@ -166,7 +166,7 @@ rune dial~
 ~
 29 24 3 0 7 0 8421384 16385 0 0 0
 280 43610 3 0 0 0 0 0
-2 99 100
+2 99 100 100
 E
 rune dial~
 &+CThis small dial is covered with strange runes. The runes having been engraved
@@ -181,7 +181,7 @@ eyepatch patch~
 ~
 9 1 3 0 15 0 102400 131073 64 0 0
 10 0 0 2 0 0 0 0
-1 100000 100 73732 0 0 0
+1 100000 100 100 73732 0 0 0
 E
 eyepatch patch~
 &+LA thin gold band about a foot in length is connected to a silk eyepatch.
@@ -199,7 +199,7 @@ golem statue~
 ~
 13 11 3 0 14 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 golem statue~
 &+yCarved from a single slab of solid stone, this large statue depicts a
@@ -216,7 +216,7 @@ desk~
 ~
 15 6 3 0 12 0 2 0 0 0 0
 1000 5 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk~
 &+gThis sturdy desk appears to be reinforced with chiseled slabs of black
@@ -233,7 +233,7 @@ key rubies gold golden~
 ~
 18 24 3 0 12 1 8491016 1 64 0 0
 0 100 0 0 0 0 0 0
-3 11 100
+3 11 100 100
 E
 key rubies gold golden~
 &+yFormed by a bright yellow gold that can only be found deep within the core of
@@ -248,7 +248,7 @@ sword granite~
 ~
 5 11 3 0 9 0 0 8193 0 3040 0
 5 1 6 3 0 0 0 0
-3 2222 100
+3 2222 100 100
 E
 sword granite~
 &+LChiseled from a long peice of granite, this sword is magically embued with a
@@ -266,7 +266,7 @@ bloodrune blood rune~
 ~
 25 2 3 0 7 0 0 0 64 0 0
 43652 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bloodrune blood rune~
 &+rA magic long lost through the centuries, a bloodrune, a portal opened to
@@ -283,7 +283,7 @@ staff decay bonestaff bone~
 ~
 4 10 3 0 13 0 33816 8193 64 4197888 978
 50 3 3 270 2 0 0 0
-6 60000 100
+6 60000 100 100
 E
 staff decay bonestaff bone~
 &+LThis large staff appears to be from the leg bone of a young dragon. A thin
@@ -299,7 +299,7 @@ ring damned bone~
 ~
 9 10 3 0 13 0 99336 3 64 67109272 10084352
 0 0 0 9 0 0 0 0
-2 100000 100 0 12496 0 0
+2 100000 100 100 0 12496 0 0
 E
 ring damned bone~
 &+LThis small ring is forged from pieces of bone from fallen anti-paladins.
@@ -319,7 +319,7 @@ a bloody mass of flesh~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bloody mass flesh~
 &+yAs one looks closer they quickly realize that lying in a heap on the ground is
@@ -335,7 +335,7 @@ horn jeweled~
 ~
 5 10 3 0 15 0 106776 8193 64 0 0
 2 2 6 11 0 0 0 0
-5 100000 100 536870912 0 0 0
+5 100000 100 100 536870912 0 0 0
 E
 horn jeweled~
 &+LThis small horn is finely set into a thick base of gold. Diamonds and rubies
@@ -354,7 +354,7 @@ key granite~
 ~
 18 11 3 0 10 0 8425472 1 64 0 0
 0 100 0 0 0 0 0 0
-10 99 100
+10 99 100 100
 E
 key granite~
 &+LA long narrow piece of granite with small grooves. The overall shape of the
@@ -367,7 +367,7 @@ stone club~
 ~
 5 11 3 0 12 0 4195608 8193 0 85458961 10007759
 11 3 4 7 0 0 0 0
-8 9999 100
+8 9999 100 100
 E
 stone club~
 &+LThis long narrow slab of rock has a large knotted end.&n
@@ -383,7 +383,7 @@ a rotted corpse in hydra lair~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse rotted~
 &+LPartially submerged beneath the water, this rotted corpse appears to be that
@@ -399,7 +399,7 @@ chest wooden~
 ~
 15 6 3 0 10 0 4096 0 0 0 0
 50000 15 0 50000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
 &+LNarrow planks of wood and stone are bound together with large flat strips of
@@ -417,7 +417,7 @@ corpses in hydra lair~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 999 0 0 999 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpses corpse pile~
 &+LThrown against the far corner of the room, these corpses lie rotting atop one
@@ -433,7 +433,7 @@ badge~
 ~
 13 3 3 0 7 0 8 2097153 64 0 0
 0 0 0 0 0 0 0 0
-0 99999 100
+0 99999 100 100
 E
 badge~
 &+rPartially ripped and splattered with blood, this small cloth badge appears to
@@ -447,7 +447,7 @@ stone dagger~
 ~
 5 11 3 0 7 0 16842752 8193 0 0 0
 2 2 4 11 0 0 0 0
-3 9999 100
+3 9999 100 100
 E
 stone dagger~
 &+yCarved from a long sliver of granite, this stone dagger, although crude, is
@@ -465,7 +465,7 @@ an altar in the cathedral~
 ~
 12 11 3 0 14 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
 &+yRising from the center of the room, this large stone takes the shape of a
@@ -484,7 +484,7 @@ rune runes~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 43536 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rune runes~
 &+CEtched into the wall is a flowing rune of various letters. The small
@@ -500,7 +500,7 @@ key mithril~
 ~
 18 18 3 0 7 0 8491016 1 64 0 0
 0 100 0 0 0 0 0 0
-0 99 100
+0 99 100 100
 E
 key mithril~
 &+CA small key shaped from a piece of mithril.&n
@@ -512,7 +512,7 @@ button metallic silver plaque~
 ~
 29 15 3 0 7 0 4096 0 64 0 0
 270 43532 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 button silver plaque~
 &+gA large silver plaque sits mounted a quarter way up the side wall. In the
@@ -528,7 +528,7 @@ armor might elemental~
 ~
 9 11 3 0 14 0 37888 9 64 49188772 0
 15 0 0 5 0 0 0 0
-5 99999 100 536870912 64 0 0
+5 99999 100 100 536870912 64 0 0
 E
 armor might elemental~
 &+yLarge plates of stone are linked together by fine metal threads. The plates
@@ -546,7 +546,7 @@ a dwarf corpse in the cavern~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse mountain dwarf~
 &+yIf not for the long haggard beard, one would barely recognize this corpse as
@@ -561,7 +561,7 @@ small indention _id_~
 ~
 13 15 3 0 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small indention~
 &+cBarely visible for it resembles the natural formations of the stone is a small
@@ -576,7 +576,7 @@ symbol sun~
 ~
 29 15 3 0 7 0 8425512 1 64 0 0
 270 43518 0 0 0 0 0 0
-0 99 100
+0 99 100 100
 E
 sun symbol~
 &+yFormed of a low grade mithril, this metal pole is only about a foot in length.
@@ -591,7 +591,7 @@ purple vial potion frothing~
 ~
 10 7 3 0 7 0 593922 1 0 0 0
 51 36 56 28 0 0 0 0
-0 9999 100
+0 9999 100 100
 E
 purple vial potion frothing~
 &+LA small glass vial surrounded by a stone casing. The purple liquid inside the
@@ -604,7 +604,7 @@ veil silk~
 ~
 9 15 3 0 7 0 4096 262145 64 0 0
 15 0 0 3 0 0 0 0
-0 999 100 16777216 0 0 0
+0 999 100 100 16777216 0 0 0
 E
 veil silk~
 &+mConnected to a thin gold circular band is a long flowing silk veil. The silk
@@ -622,7 +622,7 @@ a corpse in the abandoned temple~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpses human humans~
 &+cLittered throughout the area are the corpses of human paladins. The way in
@@ -639,7 +639,7 @@ a paladin's corpse in the temple~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 199 0 0 199 0 0 0 0
-0 0 100
+0 0 100 100
 E
 body corpse slain paladin~
 &+LWearing a battered suit of platemail that is splotted with blood, this lone
@@ -657,7 +657,7 @@ band silver~
 ~
 9 15 3 0 7 0 4128 3 1 0 0
 5 0 0 3 0 0 0 0
-0 8954 100
+0 8954 100 100
 E
 band silver~
 &+WThis small band, which would appear to be worn on ones index finger, is
@@ -678,7 +678,7 @@ bone jagged sword two-handed~
 ~
 5 10 3 0 13 0 4195336 8193 64 67108889 0
 13 4 6 3 2 0 0 0
-5 99999 100 32 0 0 0
+5 99999 100 100 32 0 0 0
 E
 bone jagged sword two-handed~
 &+LThis large bone has a serrated edge as someone has cut slivers from the
@@ -697,7 +697,7 @@ eye eyepatch negative~
 ~
 9 1 3 0 15 0 5120 131073 64 4197892 0
 10 0 0 4 0 0 0 0
-2 98756 100
+2 98756 100 100
 E
 eye eyepatch negative~
 &+LSwirling vapor encircles a single piece of rock from the negative material
@@ -716,7 +716,7 @@ sliver flesh~
 ~
 13 2 3 0 0 0 8388648 1 0 0 0
 0 0 0 0 0 0 0 0
-5 99 100
+5 99 100 100
 E
 sliver blood rune bloodrune~
 &+LThis small sliver appears to have come from a bloodrune. As one hold the
@@ -731,7 +731,7 @@ a hanging corpse in the rune room~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 human corpse~
 &+LHanging from thick mithril chains, this human paladin is suspended from the
@@ -747,7 +747,7 @@ egg speckled~
 ~
 13 45 3 0 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-0 99 100
+0 99 100 100
 E
 egg speckled~
 &+LAbout the size of a small dog, this egg is speckled with small black dots. The
@@ -761,7 +761,7 @@ head in hydra lair~
 ~
 13 2 3 0 7 0 8 0 0 0 0
 0 0 0 0 0 0 0 0
-0 99 100
+0 99 100 100
 E
 head~
 &+LFloating atop the water is the severed head of a duergar warrior. The head
@@ -778,7 +778,7 @@ gauntlets mist~
 ~
 9 1 3 0 15 0 5152 129 64 77824 0
 15 0 0 5 0 0 0 0
-4 99999 100 73730 0 0 0
+4 99999 100 100 73730 0 0 0
 E
 gauntlets mist~
 &+LA pair of seemingly normal leather gauntlets with a single large black stone
@@ -798,7 +798,7 @@ golden plaque~
 ~
 13 15 3 0 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plaque~
 &+LThis small golden plaque appears to be some sort of warning message. The
@@ -816,7 +816,7 @@ dagger shadow mist~
 ~
 5 1 3 0 7 0 272 8193 64 4194697696 0
 2 2 5 11 0 0 0 0
-2 67843 100
+2 67843 100 100
 E
 dagger shadow mist~
 &+LA long thin blade fully engulfed in a black mist. The shadow dagger is the
@@ -836,7 +836,7 @@ ring mists flowing~
 ~
 9 15 3 0 10 0 36864 100663297 64 0 524683264
 25 0 0 5 0 0 0 0
-2 99999 100 671088640 0 0 0
+2 99999 100 100 671088640 0 0 0
 E
 ring mists flowing~
 &+cA large circular ring of thin mithril is surrounding by a silvery mist. The
@@ -855,7 +855,7 @@ shield negative energy~
 ~
 37 1 3 0 13 0 36864 513 64 0 0
 1 3 4 180 0 0 0 0
-3 100000 100 32 0 0 536875008
+3 100000 100 100 32 0 0 536875008
 E
 shield negative energy~
 &+LPulsating energy fans out in a circular shape about three feet in diameter.
@@ -871,7 +871,7 @@ armor suit bonemail bone mail~
 ~
 9 10 3 0 13 0 103456 9 64 83902489 0
 25 0 0 5 0 0 0 0
-4 200000 100 0 4252 0 0
+4 200000 100 100 0 4252 0 0
 E
 armor suit bonemail bone mail~
 &+LCrafted from the bones of humans and dwarves, this suit of armor is held
@@ -893,7 +893,7 @@ sword two-handed famine demon~
 ~
 5 19 3 0 14 0 4195328 8193 64 85458969 0
 13 4 6 3 0 0 0 0
-8 200000 100
+8 200000 100 100
 E
 sword large two two-handed pestilence~
 &+LThe blade extends about five feet from its golden hilt. Both edges of the
@@ -917,7 +917,7 @@ spiked horncaps horn caps cap~
 ~
 9 18 3 0 11 0 36864 134217729 64 0 0
 10 0 0 4 0 0 0 0
-3 99999 100 2 0 0 0
+3 99999 100 100 2 0 0 0
 E
 spiked horncaps horn~
 &+LSmall mithril caps with jagged barbs on their tops. The barbs positioned so as
@@ -935,7 +935,7 @@ eyepatch eye patch celestial order~
 ~
 9 10 3 0 15 0 102400 131073 64 0 0
 6 0 0 2 0 0 0 0
-2 99999 100
+2 99999 100 100
 E
 eyepatch eye patch celestial order~
 &+CA large patch fastened by a thin string of spun mithril. The patch itself
@@ -954,7 +954,7 @@ great axe mithril~
 ~
 5 18 3 0 9 0 1024 8193 0 96071707 0
 1 3 4 3 0 0 0 0
-5 9999 100
+5 9999 100 100
 E
 great axe mithril~
 &+LCrafted from a single piece of mithril, this large axe has been sharpened
@@ -971,7 +971,7 @@ tentacle illithid~
 ~
 9 2 3 0 15 0 46080 524289 64 8421380 0
 14 0 0 1 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 tentacle illithid~
 &+LA small piece of an illithids tentacle is embedded onto a golden clasp. The
@@ -991,7 +991,7 @@ a pile of useless rocks~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rocks pile black~
 &+LHaving fallen from the ceiling above, these black rocks are stacked against
@@ -1005,7 +1005,7 @@ bp backpack~
 ~
 15 1 3 0 14 0 1150984 4194305 64 0 0
 350 5 0 350 0 0 0 0
-0 99999 100
+0 99999 100 100
 E
 bp backpack~
 &+WFlowing mists gather at a single point taking the shape of a large backpack.
@@ -1025,7 +1025,7 @@ corpse illithid~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 300 0 0 300 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse illithid~
 &+MIts body crushed against against two flat rocks, this illithid was unfortunate
@@ -1041,7 +1041,7 @@ A small vial sits here.~
 ~
 9 7 3 0 7 0 627744 8388609 64 0 0
 5 0 0 2 0 0 0 0
-1 65478 100
+1 65478 100 100
 E
 vial pulsating energy~
 &+MA small glass vial containing a purple liquid. The liquid boils and froths and
@@ -1060,7 +1060,7 @@ vial blood~
 ~
 10 7 3 0 7 0 0 1 0 0 0
 50 28 36 291 0 0 0 0
-5 87543 100
+5 87543 100 100
 E
 vial blood~
 &+rA small glass vial containing the dark blood of an elite necromancer. The vial
@@ -1074,7 +1074,7 @@ shield melkivar~
 ~
 37 22 3 0 15 0 9224 4194817 67 119210169 0
 2 2 2 180 3 0 0 0
-4 87654 100 536870912 12352 0 0
+4 87654 100 100 536870912 12352 0 0
 E
 shield torm~
 &+WThis large silver shield bears the crest of a mailed fist clasping three
@@ -1094,7 +1094,7 @@ stone ring elemental might~
 ~
 9 11 3 0 15 0 13344 3 64 37916164 0
 12 0 0 4 0 0 0 0
-0 23412 100 4 0 0 0
+0 23412 100 100 4 0 0 0
 E
 stone ring elemental might~
 &+yA small black stone, polished until its surface is as smooth and reflective as
@@ -1114,7 +1114,7 @@ totem planes~
 ~
 34 1 3 0 15 0 41992 8404993 64 416 0
 40 0 0 0 0 0 0 0
-3 98765 100
+3 98765 100 100
 E
 totem planes~
 &+yAbout two feet in length, this strange totem appears to be divided into two
@@ -1133,7 +1133,7 @@ rope hydra scale key~
 ~
 18 35 3 0 7 0 8495112 16385 64 0 0
 0 100 0 0 0 0 0 0
-4 333 100
+4 333 100 100
 E
 rope hydra scale~
 &+YThis large bluish-green scale is attached to a thin leather rope. The scales
@@ -1149,7 +1149,7 @@ shield spirits ancestral~
 ~
 37 15 3 0 15 0 1057800 513 64 256 0
 1 3 4 195 0 0 0 0
-15 9999 100 2048 32768 128 33554432
+15 9999 100 100 2048 32768 128 33554432
 E
 shield spirits ancestral~
 &+yA thin stone slab etched with intricate runes. A thin wire of mithril attached
@@ -1170,7 +1170,7 @@ stones stone~
 ~
 13 36 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 60 100
+0 60 100 100
 E
 stones stone~
 &+yA band of druids using this spot for their holy rituals have left behind the
@@ -1185,7 +1185,7 @@ mace granite~
 ~
 5 37 3 0 7 6 0 8193 0 0 0
 6 3 4 6 0 0 0 0
-3 50000 100
+3 50000 100 100
 E
 mace granite~
 &+yCarved from a short but thick piece of granite, this mace has a large gnarled
@@ -1204,7 +1204,7 @@ ball negative energy~
 ~
 11 1 2 0 12 5 268500992 268435457 64 0 0
 0 0 0 0 0 0 0 0
-2 90000 100 536870944 0 0 536870912
+2 90000 100 100 536870944 0 0 536870912
 E
 ball negative energy~
 &+LPulsating with a bright energy this small ball only measures a few inches in
@@ -1225,7 +1225,7 @@ leggings brimstone~
 ~
 9 11 3 0 13 75 65536 33 64 0 0
 10 0 0 4 0 0 0 0
-2 9999 100 16 12416 0 0
+2 9999 100 100 16 12416 0 0
 E
 leggings brimstone~
 &+gForged from a solid sheet of brimstone taken from the third layer of Avernus,
@@ -1245,7 +1245,7 @@ suit golden platemail~
 ~
 9 24 3 0 7 0 1024 9 64 129744953 0
 25 0 0 5 0 0 0 0
-3 999999 100 536870912 12480 0 0
+3 999999 100 100 536870912 12480 0 0
 E
 suit golden platemail~
 &+YIntricately carved with mystical runes, this suit of golden platemail
@@ -1266,7 +1266,7 @@ belt bones linked~
 ~
 9 10 3 0 7 0 1086472 2049 64 100795832 0
 13 0 0 5 0 0 0 0
-3 99999 100 524288 0 0 0
+3 99999 100 100 524288 0 0 0
 E
 belt bones linked~
 &+LSmall fingers are severed at the base of their knuckles and are joined
@@ -1285,7 +1285,7 @@ bracer scales~
 ~
 9 35 3 0 7 0 2142248 4097 64 0 0
 7 0 0 5 0 0 0 0
-0 99999 100
+0 99999 100 100
 E
 bracer scales~
 &+yThick white and grey scales form this protective bracer. As one places it on
@@ -1304,7 +1304,7 @@ key gore~
 ~
 18 15 3 0 7 0 8392704 1 64 0 0
 0 100 0 0 0 0 0 0
-1 22 100
+1 22 100 100
 E
 key gore~
 &+gCovered with gore and blood, this key appears to be crafted from iron. The
@@ -1322,7 +1322,7 @@ wooden sign~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden sign~
 &+y         /////////////////////////////////
@@ -1351,7 +1351,7 @@ corpse skeletal remains human~
 ~
 13 10 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse skeletal remains human~
 &+wSprawled out along the ground are the skeletal remains of some unfortunate
@@ -1367,7 +1367,7 @@ shield mind domination~
 ~
 9 19 3 0 15 0 3212352 513 64 262148 0
 75 0 0 0 0 0 0 0
-0 0 100 268435456 0 16777216 0
+0 0 100 100 268435456 0 16777216 0
 A
 20 -5
 A
@@ -1379,7 +1379,7 @@ lance dragon _id_~
 ~
 5 15 3 0 7 0 0 8193 64 83886104 0
 16 3 8 0 0 0 0 0
-0 0 100 2 0 0 0
+0 0 100 100 2 0 0 0
 E
 lance demon~
 &+LForged from within the depths of the abyss, this large lance is
@@ -1397,7 +1397,7 @@ scroll _id_~
 ~
 2 29 3 0 7 0 0 16385 0 95547487 0
 51 245 0 0 0 0 0 0
-2 9900 100
+2 9900 100 100
 E
 scroll ancient~
 &+yThis ancient scroll is surrounded by elven runes. Its parchment
@@ -1410,7 +1410,7 @@ rift portal _id_~
 ~
 25 1 4 0 7 0 0 0 0 0 0
 43502 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rift portal~
 &+LA shimmering rift of blackness hovers a few inches from the ground. The
@@ -1423,7 +1423,7 @@ wand mystic _id_~
 ~
 3 6 3 0 7 0 0 1 0 0 0
 40 2 2 112 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wand~
 &+LA strange wood was carefully cut to form this wand. As one holds it they
@@ -1437,7 +1437,7 @@ mirror _id_~
 ~
 25 7 5 0 7 0 0 0 0 0 0
 43502 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mirror green~
 &+gAs one stares at this mirror they see that it is really a portal as
@@ -1452,7 +1452,7 @@ bloodrune blood rune~
 ~
 25 2 3 0 7 0 0 0 64 0 0
 43611 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bloodrune blood rune~
 &+rA magic long lost through the centuries, a bloodrune, a portal opened to
@@ -1469,7 +1469,7 @@ You love this glorious switch object of doom!~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 340 43550 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43585
 limestone~
 &+ga limestone button&n~
@@ -1477,7 +1477,7 @@ limestone~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 43550 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43586
 obsidian~
 &+Lan obsidian button&n~
@@ -1485,7 +1485,7 @@ obsidian~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 43550 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43587
 granite~
 &+ra granite button&n~
@@ -1493,7 +1493,7 @@ granite~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 43550 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43588
 adamantite~
 &+can adamantite button&n~
@@ -1501,7 +1501,7 @@ adamantite~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 43550 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43589
 jade~
 &+Ga jade button&n~
@@ -1509,7 +1509,7 @@ jade~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 340 43550 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43590
 limestonebutton~
 &+ga limestone button&n~
@@ -1517,7 +1517,7 @@ limestonebutton~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43591
 obsidianbutton~
 &+Lan obsidian button&n~
@@ -1525,7 +1525,7 @@ obsidianbutton~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43592
 granitebutton~
 &+ra granite button&n~
@@ -1533,7 +1533,7 @@ granitebutton~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43593
 adamantitebutton~
 &+can adamantite button&n~
@@ -1541,7 +1541,7 @@ adamantitebutton~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #43594
 jadebutton~
 &+Ga jade button&n~
@@ -1549,4 +1549,4 @@ jadebutton~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

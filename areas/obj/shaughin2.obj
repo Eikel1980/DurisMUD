@@ -5,7 +5,7 @@ wooden trapdoor~
 ~
 25 6 3 0 11 0 4096 0 0 0 0
 6504 7 -1 0 0 0 0 0
-500 0 100
+500 0 100 100
 #6601
 opening falls~
 &+Lan &+Wopening &+Lin the &+bf&+Bal&+bls&n~
@@ -13,7 +13,7 @@ opening falls~
 ~
 25 40 3 0 11 0 8192 0 0 0 0
 6535 7 -1 0 0 0 0 0
-500 0 100
+500 0 100 100
 #6602
 strange mushroom~
 &+La &+Gstrange &+Lglowing &+Wmushroom&n~
@@ -21,7 +21,7 @@ strange mushroom~
 ~
 13 42 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #6603
 campfire~
 &+La &+rcampfire&n~
@@ -29,7 +29,7 @@ campfire~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6604
 roaring campfire~
 &+La &+rcampfire&n~
@@ -37,7 +37,7 @@ roaring campfire~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6605
 skeleton adventurer~
 &+LThe &+Wskeleton &+Lof some long &+cforgotten &+Ladventurer&n~
@@ -45,7 +45,7 @@ skeleton adventurer~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6606
 bloody carcass~
 &+La &+rbloody &+Lcarcass&n~
@@ -53,7 +53,7 @@ bloody carcass~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #6607
 huge bones~
 &+La &+cscattering &+Lof huge &+Wbones&+L~
@@ -61,7 +61,7 @@ huge bones~
 ~
 13 10 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #6608
 footprints massive~
 &+Lsome &+Wmassive &+Lclawed &+gfootprints&n~
@@ -69,7 +69,7 @@ footprints massive~
 ~
 13 9 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #6609
 pitted charred skeleton~
 &+La &+gpitted &+Land &+rcharred &+Lskeleton&n~
@@ -77,7 +77,7 @@ pitted charred skeleton~
 ~
 13 2 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6610
 skull~
 &+La single &+wskull&n~
@@ -85,7 +85,7 @@ skull~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6611
 shattered mushroom~
 &+La recently &+gshattered &+Wmushroom&n~
@@ -93,7 +93,7 @@ shattered mushroom~
 ~
 13 42 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #6612
 blood spatters~
 &+Lsome &+rblood &+cspatters&n~
@@ -101,7 +101,7 @@ blood spatters~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6613
 tooth great bear~
 &+Lthe &+Wtooth &+Lof a &+Wgreat &+ybear&n~
@@ -109,7 +109,7 @@ tooth great bear~
 ~
 13 10 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6614
 paw mighty panther~
 &+Lthe paw of a &+Wmighty &+Lpanther&n~
@@ -117,7 +117,7 @@ paw mighty panther~
 ~
 13 10 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6615
 cold blooded cold-blooded constrictor heart~
 &+La &+Bcold-&+bblooded &+Wconstrictor &+rheart&n~
@@ -125,7 +125,7 @@ cold blooded cold-blooded constrictor heart~
 ~
 13 2 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #6616
 hunting sandals~
 &+Lsome &+Rh&+runtin&+Rg &+ysandals&n~
@@ -133,7 +133,7 @@ hunting sandals~
 ~
 9 14 3 0 11 0 0 65 0 0 0
 5 0 0 3 0 0 0 0
-1 13000 100
+1 13000 100 100
 A
 13 15
 A
@@ -145,7 +145,7 @@ fingerless hunting gloves~
 ~
 9 14 3 0 11 0 0 129 0 0 0
 5 0 0 3 0 0 0 0
-1 13000 100
+1 13000 100 100
 A
 13 15
 A
@@ -157,7 +157,7 @@ magical severed leg~
 ~
 4 2 3 0 7 0 0 16385 64 0 0
 51 19 19 201 0 0 0 0
-1 39000 100
+1 39000 100 100
 A
 13 15
 A
@@ -169,7 +169,7 @@ sample trolls blood~
 ~
 10 7 3 0 7 0 0 1 64 0 0
 51 294 356 -1 0 0 0 0
-1 39000 100
+1 39000 100 100
 #6620
 bone wand~
 &+La &+Wbone &+Lcoated in &+ccube &+Gslime&n~
@@ -177,7 +177,7 @@ bone wand~
 ~
 3 10 3 0 7 0 0 16385 64 87048283 0
 51 3 3 428 0 0 0 0
-1 39000 100
+1 39000 100 100
 #6621
 dirty crumpled map~
 &+La &+ydirty &+Land &+ycrumpled &+Wmap&n~
@@ -185,7 +185,7 @@ dirty crumpled map~
 ~
 4 14 3 0 11 0 0 65 0 0 0
 5 29 29 53 0 0 0 0
-1 13000 100
+1 13000 100 100
 A
 13 15
 A
@@ -197,7 +197,7 @@ bone skinning knife~
 ~
 5 10 3 0 11 0 256 8193 64 0 0
 2 1 4 0 0 0 0 0
-1 19000 100
+1 19000 100 100
 A
 13 20
 A

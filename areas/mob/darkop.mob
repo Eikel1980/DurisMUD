@@ -7,8 +7,8 @@ golem iron clad temple sentry assoc9_n_0 br_c~
 &+cas he stands boldly to the task at hand. His armor is heavy and
 &+ccumbersome, yet he does not seem to be weighed down one bit.
 ~
-113277514 0 0 939598014 12508 0 0 0 S
-OG 0 512 7
+113277514 0 0 0 939598014 12508 0 0 0 S
+OG 0 512 0 7
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -21,8 +21,8 @@ golem iron clad temple sentry assoc9_n_0 br_c~
 &+cas he stands boldly to the task at hand. His armor is heavy and
 &+ccumbersome, yet he does not seem to be weighed down one bit.
 ~
-113277514 0 0 939598014 45276 0 0 1000 S
-OG 0 32 -1
+113277514 0 0 0 939598014 45276 0 0 1000 S
+OG 0 32 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -34,8 +34,8 @@ green golem assoc9_n_0~
    &+CA Very large specimen, even for golems, stares straight ahead looking&n
 &+Cfor any danger that may come to his guild&n
 ~
-71400010 0 0 301990188 30 0 0 0 S
-OG 0 1 6
+71400010 0 0 0 301990188 30 0 0 0 S
+OG 0 1 0 6
 60 0 0 10d10+30000 10d7+70
 0.0.0.0 0
 8 8 0
@@ -47,8 +47,8 @@ green demon assoc9_n_0~
    &+WThe demon's eyes &+Rglow red&n &+Wwith hatred for all. It is has been forced&n
 &+Wto stay here by magic far greater than he.&n
 ~
-71400010 0 0 301990188 30 0 0 0 S
-OG 0 512 -1
+71400010 0 0 0 301990188 30 0 0 0 S
+OG 0 512 0 -1
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -58,8 +58,8 @@ an unnamed mob~
 An unnamed mob stands here, looking lonely and forelorn.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -71,8 +71,8 @@ ice devil green assoc9_n_0~
    &+WThe &+Ggreen&n &+Wdevil glares around looking for something to kill. It&n
 &+Wsees you and starts to grin.&N
 ~
-71400010 0 0 301990188 30 0 0 0 S
-OG 0 32 6
+71400010 0 0 0 301990188 30 0 0 0 S
+OG 0 32 0 6
 60 0 0 10d10+30000 7d7+40
 0.0.0.0 0
 8 8 0
@@ -84,8 +84,8 @@ ice golem assoc9_n_0 _nobutt_ br_c~
    &+CA Very large specimen, even for golems, stares straight ahead looking&n
 &+Cfor any danger that may come to his guild&n
 ~
-71400010 0 0 301990188 30 0 0 0 S
-OG 0 1 6
+71400010 0 0 0 301990188 30 0 0 0 S
+OG 0 1 0 6
 60 0 0 10d10+30000 10d7+50
 0.0.0.0 0
 8 8 0
@@ -97,8 +97,8 @@ ice demon assoc9_n_0 _nobutt_ br_c~
    &+WThe demon's eyes &+Rglow red&n &+Wwith hatred for all. It is has been forced&n
 &+Wto stay here by magic far greater than he.&n
 ~
-71400010 0 0 301990188 30 0 0 0 S
-OG 0 512 6
+71400010 0 0 0 301990188 30 0 0 0 S
+OG 0 512 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -108,8 +108,8 @@ an unnamed mob~
 An unnamed mob stands here, looking lonely and forelorn.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -121,8 +121,8 @@ ice devil br_c _nobutt_ assoc9_n_0~
    &+WThe &+CIce Devil&+W glares around looking for something to kill. It&n
 &+Wsees you and starts to grin.&N
 ~
-71400010 0 0 301990188 30 0 8192 0 S
-OG 0 32 6
+71400010 0 0 0 301990188 30 0 8192 0 S
+OG 0 32 0 6
 60 0 0 10d10+30000 7d7+40
 0.0.0.0 0
 8 8 0
@@ -134,8 +134,8 @@ golem spectre girl br_c assoc9_n_0 _nobutt_~
 &+L   This spectre has the appearance of a child yet the power of one who has
 &+L  lived the land above.  With innocent &+Rred&+L eyes she looks through you.
 ~
-113277514 0 0 939597884 14556 0 0 0 S
-PH 0 1 6
+113277514 0 0 0 939597884 14556 0 0 0 S
+PH 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -148,8 +148,8 @@ boy golem skeleton br_c assoc9_n_0 _nobutt_~
 &+L  them is muscular and young for just a moment hope springs... no the hope is
 &+L  gone and now instead you stare into an empty &+Wskull&+L.
 ~
-113277514 0 0 939597852 14556 0 0 0 S
-PH 0 1 6
+113277514 0 0 0 939597852 14556 0 0 0 S
+PH 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -162,8 +162,8 @@ child wraith golem br_c assoc9_n_0 _nobutt_~
 &+L  slaughtered this child like countless others and now d&+ma&+Lrk&+me&+Lr magic binds the
 &+L  tired soul to &+ge&+ya&+gr&+yt&+Lh.
 ~
-113277514 0 0 0 14556 0 0 0 S
-PH 0 512 6
+113277514 0 0 0 0 14556 0 0 0 S
+PH 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -175,8 +175,8 @@ angel death golem assoc9_n_0 br_c _nobutt_~
 &+L   Summoned by the l&+ba&+cu&+Lgh&+bt&+ce&+Lr of children, the &+WA&+Lngel of D&+weat&+Lh resides here, his
 &+L  work is being carried out by the residents of this Outpost.
 ~
-113277514 0 0 939597852 47324 0 0 1000 S
-PH 0 32 6
+113277514 0 0 0 939597852 47324 0 0 1000 S
+PH 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -187,8 +187,8 @@ golem heart knave br_c _nobutt_ assoc9_n_0~
 ~
 &+LA K&+bn&+La&+bv&+Le of &+rH&+Lear&+rt&+Ls says in old-english 'What business here do you have?&n
 ~
-113277514 0 0 939597852 14556 0 0 0 S
-OG 0 1 6
+113277514 0 0 0 939597852 14556 0 0 0 S
+OG 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -199,8 +199,8 @@ golem ace club br_c _nobutt_ assoc9_n_0~
 ~
 &+LAn &+WA&+wc&+Le of Clubs says in old-english 'You looking at me?'&n
 ~
-113277514 0 0 939597852 14556 0 0 0 S
-OG 0 1 6
+113277514 0 0 0 939597852 14556 0 0 0 S
+OG 0 1 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -212,8 +212,8 @@ golem seven diamond br_c _nobutt_ assoc9_n_0~
 &+LA S&+ge&+Lv&+ge&+Ln of &+WD&+Li&+Ra&+Lm&+Ro&+Ln&+Wd&+Ls says in old-english 'I liked it better painting roses...'&n
 &N
 ~
-113277514 0 0 939597852 14556 0 0 0 S
-OG 0 512 6
+113277514 0 0 0 939597852 14556 0 0 0 S
+OG 0 512 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -224,8 +224,8 @@ golem queen spade br_c _nobutt_ assoc9_n_0~
 ~
 &+LA Qu&+cee&+Ln of S&+wp&+La&+wd&+Les says in old-english 'I'm not for sale get out!'&n
 ~
-113277514 0 0 939597852 47324 0 0 1000 S
-OG 0 32 6
+113277514 0 0 0 939597852 47324 0 0 1000 S
+OG 0 32 0 6
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0

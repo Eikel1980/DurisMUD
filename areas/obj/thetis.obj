@@ -5,7 +5,7 @@ A treasure chest sits here.~
 ~
 15 24 3 0 7 5 262144 0 1 0 0
 200 29 38019 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 treasure chest~
    This treasure chest is crafted out of the finest silver.
@@ -20,7 +20,7 @@ A &+Rco&+rra&+Rl &nearring has been tossed here.~
 ~
 11 1 10 0 7 0 0 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 20 100
+0 20 100 100
 E
 earring~
    &+WThis &+Rcoral &+Wearring once belonged to one of the
@@ -33,7 +33,7 @@ A &+Rco&+rra&+Rl &nnecklace has been left here.~
 ~
 9 46 3 0 11 0 1152 5 0 100794536 0
 5 0 0 3 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 necklace~
    &+WThis &+Rcoral &+Wnecklace was once warn by a beautiful queen.
@@ -51,7 +51,7 @@ A finely crafted eyepatch has been tossed here.~
 ~
 11 8 3 0 7 0 0 131073 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 eyepatch~
    This eyepatch is made of the hardest crystal and
@@ -67,7 +67,7 @@ A unwanted mask lays here.~
 ~
 11 7 10 0 7 0 1024 262145 64 71371272 0
 0 0 0 0 0 0 0 0
-0 7000 100
+0 7000 100 100
 E
 mask~
    This mask is made of clear glass and is used to breath under water.
@@ -85,7 +85,7 @@ A sword has been left here to rust.~
 ~
 5 16 4 0 7 0 0 8193 2 0 0
 5 2 8 0 0 0 0 0
-4 28650 100
+4 28650 100 100
 E
 sword silver~
    This sword is silver in color and made of the finest steel.
@@ -102,7 +102,7 @@ A staff has been left here.~
 ~
 4 24 3 0 11 0 32 24577 64 0 0
 20 1 1 47 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 staff~
    This staff is has been passed down from the old mages
@@ -116,7 +116,7 @@ A spellbook has been tossed here.~
 ~
 33 12 3 0 7 0 238592 8388609 64 6295042 0
 0 0 200 0 0 0 0 0
-2 12121 100
+2 12121 100 100
 E
 book~
    This book is made of &+beel-sk&+bin hide&n &+wand has 300 pages in it.
@@ -133,7 +133,7 @@ A crown has been tossed here.~
 ~
 9 24 3 0 11 0 503809 17 66 4203119072 0
 10 0 0 5 0 0 0 0
-3 9923 100 0 4112 0 0
+3 9923 100 100 0 4112 0 0
 E
 crown~
    This crown is made of sold &+Ygold &+wand has six
@@ -152,7 +152,7 @@ A trident lays here.~
 ~
 5 11 4 0 9 0 16778496 8193 66 0 0
 15 3 4 0 0 0 0 0
-4 35025 100
+4 35025 100 100
 E
 trident spear~
    This trident is long and has 3 prongs on the top of it.
@@ -169,7 +169,7 @@ A belt has been discarded here.~
 ~
 9 18 3 0 11 0 1 2049 0 0 0
 9 0 0 3 0 0 0 0
-3 15518 100
+3 15518 100 100
 E
 belt~
    This belt is made of &+Ccoral &+Wand is magical.
@@ -188,7 +188,7 @@ A unwanted mask lays here.~
 ~
 9 19 3 0 9 0 67110024 262145 64 4260352 0
 5 0 0 3 0 0 0 0
-0 2323 100
+0 2323 100 100
 E
 mask~
    This mask is magical and the wearer will find it
@@ -206,7 +206,7 @@ A vest lays here discarded.~
 ~
 9 29 3 0 7 0 3153952 1025 0 0 0
 10 0 0 2 0 0 0 0
-2 2020 100
+2 2020 100 100
 E
 kelp vest~
    This &+gKelp Vest &+wis weaved tightly to keep the wearer safe
@@ -223,7 +223,7 @@ A headband has been left here.~
 ~
 9 1 3 0 7 0 0 17 64 0 0
 5 0 0 4 0 0 0 0
-0 5783 100
+0 5783 100 100
 E
 flowered head band~
    This &+Rf&+Yl&+Go&+Bw&+Me&+Yr&+Ce&+Wd &+Rheadband is very special to those
@@ -241,7 +241,7 @@ A key has been tossed here.~
 ~
 13 15 10 0 7 0 8388616 1 0 0 0
 0 0 0 0 0 0 0 0
-0 2 100
+0 2 100 100
 E
 iron key~
   This iron key is small in size. It is finely
@@ -256,7 +256,7 @@ A ring has been dropped here.~
 ~
 11 32 3 0 7 0 4096 3 2 0 0
 0 0 0 0 0 0 0 0
-0 251 100
+0 251 100 100
 E
 ring~
   This &+gemerald &+rring &+wis part of a lost treasure
@@ -273,7 +273,7 @@ A &+Ygolden chain &+Wwas dropped here.~
 ~
 11 24 2 0 8 0 4112 5 0 0 0
 0 0 0 0 0 0 0 0
-0 1152 100
+0 1152 100 100
 E
 chain~
    This &+Ygolden chain &+Wis finely weaved.
@@ -288,7 +288,7 @@ A crown has been left here.~
 ~
 9 22 3 0 7 0 332800 17 67 100794600 0
 5 0 0 5 0 0 0 0
-2 1761 100
+2 1761 100 100
 E
 crown~
    This crown of silver has &+rred rubies &+Won it.
@@ -306,7 +306,7 @@ A &+Cblue gem &+Bhas been tossed here.&N~
 ~
 10 26 10 0 7 0 0 1 64 0 0
 1 85 -1 -1 0 0 0 0
-0 50 100
+0 50 100 100
 E
 blue gem~
    &+wThis &+Cblue gem &+whas a special power.
@@ -321,7 +321,7 @@ A &+Ygolden key &+wlays here.~
 ~
 18 24 3 0 7 0 8388616 1 0 0 0
 0 100 0 0 0 0 0 0
-2 5 100
+2 5 100 100
 E
 key~
    This &+Ygolden key &+wis hand carved and has many
@@ -334,7 +334,7 @@ A &+mp&+Mur&+mple potion &+whas been left here.~
 ~
 10 8 10 0 7 0 69640 1 64 0 0
 20 36 -1 -1 0 0 0 0
-0 2 100
+0 2 100 100
 E
 stone~
    This &+mpurple stone &+whas magical powers.
@@ -348,7 +348,7 @@ A skelelton key has been tossed here.~
 ~
 18 10 10 0 7 0 8388616 1 64 0 0
 0 100 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 key~
    This skeleton key has been made from a bone
@@ -362,7 +362,7 @@ A &+gK&+we&+gl&+wp Backpack lays here.~
 ~
 15 42 10 0 7 0 262144 4211713 64 0 0
 50 5 0 100 0 0 0 0
-0 22222 100
+0 22222 100 100
 E
 backpack~
    This &+gk&+we&+gl&+wp backpack has been carefully weaved
@@ -376,7 +376,7 @@ A &+mp&+Mur&+mple barrel &nwhas been tossed here.~
 ~
 17 6 10 0 7 0 0 16385 0 0 0
 15 15 0 0 0 0 0 0
-0 124 100
+0 124 100 100
 E
 barrel~
    This &+mpurple barrel &+wis from the &+ysunken ships
@@ -390,7 +390,7 @@ A &+gk&+we&+gl&+wp burger is here.~
 ~
 19 2 10 0 7 0 8 1 0 0 0
 1 0 0 0 0 0 0 0
-0 3 100
+0 3 100 100
 E
 burger kelp~
    This &+gk&+we&+gl&+wp burger was prepared by the finest
@@ -404,7 +404,7 @@ A &+Ytorch lays here brightly lit.~
 ~
 1 6 10 0 7 0 262145 16385 64 0 0
 0 0 2 0 0 0 0 0
-0 500 100
+0 500 100 100
 E
 torch~
    Unlike the regular torches you find in the realms, this torch
@@ -417,7 +417,7 @@ A sharp lance lies here.~
 ~
 5 16 3 0 7 0 0 8193 2 0 0
 16 2 10 0 0 0 0 0
-0 23450 100
+0 23450 100 100
 E
 lance spear~
    A fine weapon and craftmanship for anyone to use, this
@@ -431,7 +431,7 @@ A spellbook lays here discarded.~
 ~
 33 12 3 0 7 0 8 8404993 0 0 0
 0 0 80 0 0 0 0 0
-0 4531 100
+0 4531 100 100
 E
 book~
    This spellbook is covered with dyed &+mPurple hide.
@@ -446,7 +446,7 @@ A &+Cblue &+cpotion &+wis discarded here~
 ~
 10 7 10 0 7 0 8388616 16385 64 0 0
 1 85 -1 -1 0 0 0 0
-0 1500 100
+0 1500 100 100
 E
 potion~
    This &+Cblue potion &+wis considered a life saving potion
@@ -460,7 +460,7 @@ A sash has been discarded here.~
 ~
 9 3 3 0 9 0 0 2049 2 0 0
 10 0 0 3 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 sash~
    This &+Ggreen sash &+whas been hand crafted and
@@ -478,7 +478,7 @@ A &+Gdragon scale leggings &+whas been tossed here.~
 ~
 9 47 10 0 9 0 131104 33 0 0 0
 6 0 0 4 0 0 0 0
-0 2232 100
+0 2232 100 100
 E
 leggings~
    These &+Gdragon scale leggings &+whave been passed down
@@ -496,7 +496,7 @@ A shell sits here.~
 ~
 11 46 3 0 7 0 110592 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1212 100
+0 1212 100 100
 A
 30 10
 A
@@ -508,7 +508,7 @@ An unwanted pearl sits here. Pick it up!~
 ~
 9 46 3 0 8 0 110721 5 2 0 0
 7 0 0 5 0 0 0 0
-1 232 100
+1 232 100 100
 A
 3 7
 A
@@ -520,7 +520,7 @@ A red key sits here.~
 ~
 18 15 3 0 7 0 8421376 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #38034
 treasure chest~
 a &+ywooden&N treasure chest~
@@ -528,7 +528,7 @@ A &+ywooden&N-treasure chest sits here.~
 ~
 15 24 3 0 7 5 262144 1 1 0 0
 300 29 38033 0 0 0 0 0
-50 40233 100
+50 40233 100 100
 E
 treasure chest~
    This treasure chest is crafted out of the finest silver.
@@ -543,7 +543,7 @@ A green key sits here.~
 ~
 18 9 3 0 7 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 6 100
+1 6 100 100
 #38036
 treasure chest iron~
 an &+Liron&N chest~
@@ -551,7 +551,7 @@ An old &+Lir&+won&N chest sits here.~
 ~
 15 36 3 0 7 5 262144 0 1 0 0
 200 29 38035 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 treasure chest~
    This treasure chest is crafted out of the finest silver.
@@ -566,7 +566,7 @@ deep sea spade~
 ~
 18 16 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #38038
 large blue trident~
 &+ba large, &+Bblue&+b, trident&n~
@@ -574,7 +574,7 @@ large blue trident~
 ~
 5 16 3 0 10 0 4194305 8193 0 0 0
 18 4 6 0 0 0 0 0
-11 70102 100 0 128 0 0
+11 70102 100 100 0 128 0 0
 A
 18 2
 A

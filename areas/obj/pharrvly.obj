@@ -5,7 +5,7 @@ scarecrow~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 1000 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 scarecrow~
 The scarecrow really isn't very scary.  It's not doing too good a
@@ -18,7 +18,7 @@ A small, beaten-up looking chest has been left here.~
 ~
 15 6 5 50 7 0 0 1 0 0 0
 200 15 40203 250 0 0 0 0
-5 100 100
+5 100 100 100
 E
 chest~
 nThe chest is simple and functional, large enough to hold a small
@@ -31,7 +31,7 @@ A &+Ysmall key &nhas been left here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 8 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
 The key is about the size of your thumb, and just by looking at it
@@ -44,7 +44,7 @@ A beautiful decorative &+Cdisplay case &nis set in the wall here.~
 ~
 15 7 5 50 7 0 0 0 0 0 0
 10 5 -1 250 0 0 0 0
-1 1 100
+1 1 100 100
 E
 case display~
 The display is simply but elegantly crafted.  Something of some
@@ -57,7 +57,7 @@ junk~
 ~
 13 15 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #40206
 corn~
 &+Ysome corn&n~
@@ -65,7 +65,7 @@ A tall stalk of &+Ycorn &ngrows here, ready to be harvested.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 5 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 corn~
 This is white corn, the sweet variety.  It's very good, and very
@@ -78,7 +78,7 @@ A &+Gpeapod &nhangs from a vine here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 pea pod peapod~
 ~
@@ -89,7 +89,7 @@ An &+Rapple &nhas fallen from a tree here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 5 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 apple~
 A beautiful ruby red apple.  Just the thing for an old farmer.
@@ -101,7 +101,7 @@ An &+yorange &nhas fallen from a tree here.~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 5 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 orange~
 A beautiful orange. It looks tasty and juicy.
@@ -113,7 +113,7 @@ A pair of crows have built a love nest here.~
 ~
 15 5 3 0 7 0 0 1 0 0 0
 10 5 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 E
 nest~
 Made of sticks and twigs and other stringy things, this is the place
@@ -126,7 +126,7 @@ A wadded up ball of paper has been discarded here.~
 ~
 12 28 1 2 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 paper wad~
 You unwad the ball of paper and carefully smooth it out to read it.
@@ -147,7 +147,7 @@ A spring is here, shooting up from the floor.~
 ~
 17 40 0 0 7 0 2 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 clear spring~
 &+BA clear spring is here, looking clean and refreshing.&n
@@ -159,7 +159,7 @@ carapace gartham shell~
 ~
 37 10 0 0 7 0 4096 513 0 4173708804 0
 2 1 2 5 0 0 0 0
-7 200 100
+7 200 100 100
 A
 14 -10
 A
@@ -171,7 +171,7 @@ rock flat~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 40223 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #40215
 wrought iron chest~
 &+La &+cwrought &+Ciron &+Lchest of the &+YNorth&+Wshore &+LPirates~
@@ -179,7 +179,7 @@ wrought iron chest~
 ~
 15 15 3 0 7 0 1 0 0 0 0
 566262 29 40220 20 0 0 0 0
-0 0 100
+0 0 100 100
 #40216
 sturdy silver chest~
 &+La sturdy &+Csilver &+Lchest of the &+BT&+bw&+Bi&+bl&+Bi&+bg&+Bh&+bt &+rCove &+LBuccaaners&n~
@@ -187,7 +187,7 @@ sturdy silver chest~
 ~
 15 22 3 0 7 0 1 0 0 0 0
 2315267 29 40221 1352153 0 0 0 0
-0 0 100
+0 0 100 100
 #40217
 golden chest~
 &+La &+Ygolden &+Lchest of the &+cFo&+Cur &+wWi&+Wnds&n~
@@ -195,7 +195,7 @@ golden chest~
 ~
 15 24 3 0 7 0 1 0 0 0 0
 2414515 29 40222 151515 0 0 0 0
-0 0 100
+0 0 100 100
 #40218
 cargo hold~
 &+Lthe cargo hold of the Dark &+ySun&n~
@@ -203,7 +203,7 @@ cargo hold~
 ~
 15 15 3 0 7 0 1 0 0 0 0
 124515151 29 40223 3215235 0 0 0 0
-0 0 100
+0 0 100 100
 #40219
 smoldering chest adamantium~
 &+La chest of &+rsm&+Ro&+rld&+Re&+rr&+Ri&+rng &+madamantium&n~
@@ -211,7 +211,7 @@ smoldering chest adamantium~
 ~
 15 19 3 0 7 0 1 0 0 0 0
 125616 29 40224 352662 0 0 0 0
-0 0 100
+0 0 100 100
 T
 516 2 1 56
 #40220
@@ -221,7 +221,7 @@ key cache~
 ~
 18 10 3 0 7 0 524289 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #40221
 key bone~
 &+Lthe &+mkey &+Lto the &+BT&+bw&+Bi&+bl&+Bi&+bg&+Bh&+bt &+rCove &+Lchest&n~
@@ -229,7 +229,7 @@ key bone~
 ~
 18 15 3 0 7 0 524288 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #40222
 key slender treasure~
 &+Lthe key of the &+cFo&+Cur &+wWi&+Wnds &+Ytreasure&n~
@@ -237,7 +237,7 @@ key slender treasure~
 ~
 18 15 3 0 7 0 524288 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #40223
 key strong~
 &+La key to the Dark &+ySun &+Lcargo hold&n~
@@ -245,7 +245,7 @@ key strong~
 ~
 18 15 3 0 7 0 524288 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #40224
 fiery key~
 &+La &+rfi&+Re&+rry &+Lkey of the &+rSci&+Rons&n~
@@ -253,7 +253,7 @@ fiery key~
 ~
 18 1 3 0 7 0 524289 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #40225
 key heavy bronze~
 &+La heavy &+ybronze key &+Lengraved with &+mglowing &+Lrunes~
@@ -261,7 +261,7 @@ key heavy bronze~
 ~
 18 20 3 0 7 0 1 1 0 0 0
 0 100 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 #40226
 wooden crate~
 &+ya large wooden crate&N~
@@ -269,4 +269,4 @@ wooden crate~
 ~
 13 5 3 0 7 0 8192 0 1024 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

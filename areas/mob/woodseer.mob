@@ -7,8 +7,8 @@ Despite his friendly grin, the jailer looks tough and immovable.  Like all the
 halfling guards he takes great pride in his work, and the fact that HE is the
 one trusted with the only key to the jail door.
 ~
-100665422 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+100665422 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -24,8 +24,8 @@ sunburst tattoo that is rumored to give them the ability to see even invisible
 and sneaking thieves.  This guard may not be as burly as some of his friends
 but it is certain that one swift cry will bring many more.
 ~
-1174407244 672 0 8232 0 0 0 1000 S
-PF 0 1 -1
+1174407244 672 0 0 8232 0 0 0 1000 S
+PF 0 1 0 -1
 36 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -41,8 +41,8 @@ sunburst tattoo that is rumored to give them the ability to see even invisible
 and sneaking thieves.  This guard may not be as burly as some of his friends
 but it is certain that one swift cry will bring many more.
 ~
-1174407246 672 0 0 0 0 0 1000 S
-PF 0 1 -1
+1174407246 672 0 0 0 0 0 0 1000 S
+PF 0 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -58,8 +58,8 @@ the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-1140852812 672 0 8 0 0 0 1000 S
-PF 0 1 -1
+1140852812 672 0 0 8 0 0 0 1000 S
+PF 0 1 0 -1
 45 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -75,8 +75,8 @@ the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-1174407246 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+1174407246 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -91,8 +91,8 @@ Woodseer and his adventuring in the nearby jungle.  His alligatorskin armor is
 a sign of his status among the guards.  Such armor is expensive, the Woodseer
 Council must value his service a great deal.
 ~
-1174407244 672 0 0 0 0 0 1000 S
-PF 0 1 -1
+1174407244 672 0 0 0 0 0 0 1000 S
+PF 0 1 0 -1
 40 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -107,8 +107,8 @@ Woodseer and his adventuring in the nearby jungle.  His alligatorskin armor is
 a sign of his status among the guards.  Such armor is expensive, the Woodseer
 Council must value his service a great deal.
 ~
-1174407244 672 0 0 0 0 0 1000 S
-PF 0 1 -1
+1174407244 672 0 0 0 0 0 0 1000 S
+PF 0 1 0 -1
 46 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -125,8 +125,8 @@ jarus halfling guard~
 &+Wtimes.  He bears the scars of battle, and even though he is but a halfling, he
 &+Whas amassed an impressive collection of wins upon the battlefield.&N
 ~
-1174407180 672 0 8 0 0 0 1000 S
-PF 0 1 -1
+1174407180 672 0 0 8 0 0 0 1000 S
+PF 0 1 0 -1
 58 -7 -114 56d143+5880 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -143,8 +143,8 @@ her eyes everytime she laughs or smiles making her somehow both beautiful and
 maternal at the same time.  Despite her gentle demeanor it would be unwise to
 insult her fine products.
 ~
-33556554 0 0 0 0 0 0 200 S
-PF 0 0 -1
+33556554 0 0 0 0 0 0 0 200 S
+PF 0 0 0 -1
 45 -1 -69 45d90+1935 6d6+12
 5.9.8.4 109350
 8 8 2
@@ -160,8 +160,8 @@ and the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-33589322 0 0 0 0 0 0 0 S
-PF 0 4096 -1
+33589322 0 0 0 0 0 0 0 0 S
+PF 0 4096 0 -1
 45 -1 -69 45d90+1935 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -177,8 +177,8 @@ happier, and somehow more trustworthy.  Every customer is treated with respect
 and a smile making all who keep their money here satisfied that they are doing
 the best thing.
 ~
-2122 0 0 0 0 0 0 500 S
-PF 0 1 -1
+2122 0 0 0 0 0 0 0 500 S
+PF 0 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -194,8 +194,8 @@ can be easily overcome.  His face shows his youth and a certain amount of
 innocence, but his arms show the strength that got him the job in the first
 place.
 ~
-1140852810 672 0 8232 0 0 0 1000 S
-PF 0 1 -1
+1140852810 672 0 0 8232 0 0 0 1000 S
+PF 0 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 1
@@ -211,8 +211,8 @@ halfling judge~
 &+Cthe legal experts in Woodseer.  Though kindly looking, one can be assured that&N
 &+Cthe law, and punishments for breaking it, shall be followed to the letter.&N
 ~
-100665422 640 0 8232 0 0 0 0 S
-PF 0 32 -1
+100665422 640 0 0 8232 0 0 0 0 S
+PF 0 32 0 -1
 45 -1 -69 45d99+1980 6d6+12
 5.9.8.4 109350
 6 6 2
@@ -227,8 +227,8 @@ here to pay tribute to his own god.  He wears a beautiful white tunic that
 glows with a holy magic, but still looks to flimsy to provide any real
 protection.
 ~
-1174407242 672 0 8192 0 0 0 1000 S
-PF 7 1 -1
+1174407242 672 0 0 8192 0 0 0 1000 S
+PF 7 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 1
@@ -245,8 +245,8 @@ cudgel looks to have seen a great deal of use at some time in the distant past
 but it is obvious that layers of polish now cover the old gouges and dents in
 the wood.
 ~
-1140852810 0 0 8192 0 0 0 1000 S
-PF 7 1 -1
+1140852810 0 0 0 8192 0 0 0 1000 S
+PF 7 1 0 -1
 18 13 42 18d35+126 3d4+2
 9.7.3.0 8748
 8 8 2
@@ -261,8 +261,8 @@ makes no secret of his faith and the strength it has brought him.  His soft
 features and clear eyes show that, though wrinkled, his faith has kept him
 young.
 ~
-1073743946 0 0 8192 0 0 0 1000 S
-PF 7 32 -1
+1073743946 0 0 0 8192 0 0 0 1000 S
+PF 7 32 0 -1
 21 11 32 21d44+189 3d5+3
 4.0.5.0 18711
 6 6 1
@@ -276,8 +276,8 @@ commands attention.  She proudly wears the robes of her goddess and is happy
 to step forward and discuss her views.  When she does begin to speak her
 features become animated and seem to light up the room.
 ~
-1073743946 0 0 8192 0 0 0 1000 S
-PF 7 32 -1
+1073743946 0 0 0 8192 0 0 0 1000 S
+PF 7 32 0 -1
 26 8 16 26d60+312 3d6+4
 7.2.6.1 23166
 8 8 2
@@ -290,8 +290,8 @@ His calm face is lined with fatigue caused by many long hours praying and
 studying in the cathedral.  It is nothing a year or two of sleep wouldn't
 cure.
 ~
-2120 0 0 0 0 0 0 1000 S
-PF 7 32 -1
+2120 0 0 0 0 0 0 0 1000 S
+PF 7 32 0 -1
 16 13 48 16d33+96 3d4+2
 8.6.2.0 7776
 4 8 1
@@ -305,8 +305,8 @@ the noise in the cathedral.  Fatigue and calmness seem to seep from her body
 into the room.  She wears the rumpled robes of her god as if she has been in
 the same clothes for quite some time.
 ~
-2120 0 0 0 0 0 0 1000 S
-PF 7 32 -1
+2120 0 0 0 0 0 0 0 1000 S
+PF 7 32 0 -1
 11 15 64 11d25+55 2d5+2
 5.4.1.0 5346
 4 8 2
@@ -323,8 +323,8 @@ halflings have constructed here.  Elves love to see buildings constructed in
 harmony with nature, they just hate to see lesser races do such a good job of
 it.
 ~
-2120 0 0 0 0 0 0 100 S
-PE 4 512 -1
+2120 0 0 0 0 0 0 0 100 S
+PE 4 512 0 -1
 12 15 61 12d18+48 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -341,8 +341,8 @@ many years outside in the wind and sun, none of which have been able to slow
 her down.  Despite the serene smile on her face, her eyes bear a haunting,
 lonely quality.
 ~
-2120 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2120 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 2
@@ -358,8 +358,8 @@ and then looks down at his own grubby work clothes, obviously feeling out-of-
 place here.  An ax is clung over his shoulder, seemingly forgotten as he looks
 at everything around him.
 ~
-1073743944 0 0 8192 0 0 0 400 S
-PF 7 2 -1
+1073743944 0 0 0 8192 0 0 0 400 S
+PF 7 2 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -375,8 +375,8 @@ all the different statues in the beautiful cathedral.  Straw colored hair
 frames her rather plain features.  Her silk dress does a good job of high-
 lighting her more beautiful qualities and downplaying her more plain features.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 0 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 0 0 -1
 6 18 80 6d18+21 2d3+1
 3.2.0.0 777
 6 6 2
@@ -393,8 +393,8 @@ callouses and scars from his work.  When he actually notices someone looking
 at him he smiles a greeting in their direction but is otherwise quite silent
 and introspective for a halfling.
 ~
-1073743944 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+1073743944 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 8 18 74 8d21+44 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -409,8 +409,8 @@ human warrior paladin~
 &+Wcertainly has involved many difficult battles which have left him with many&N
 &+Wscars.&N
 ~
-1174407240 160 0 8192 0 0 0 1000 S
-PH 0 8 -1
+1174407240 160 0 0 8192 0 0 0 1000 S
+PH 0 8 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -426,8 +426,8 @@ loss of his vision he is still able to carve beautiful animals by touch alone.
 Though he can no longer see, within his own home he moves gracefully and
 without any of the hesitations that one might expect.
 ~
-2122 0 0 8208 0 0 0 400 S
-PF 7 1 -1
+2122 0 0 0 8208 0 0 0 400 S
+PF 7 1 0 -1
 7 18 77 7d21+38 2d3+1
 3.2.0.0 907
 8 8 1
@@ -442,8 +442,8 @@ store has to offer.  Though she openly shows her wealth, she is quite safe here
 for nobody would be foolish enough to try to rob anyone with so many guards
 around.
 ~
-2248 0 0 0 0 0 0 1000 S
-PF 7 0 -1
+2248 0 0 0 0 0 0 0 1000 S
+PF 7 0 0 -1
 6 18 80 6d18+21 2d3+1
 3.2.0.0 777
 8 8 2
@@ -460,8 +460,8 @@ halfling bartender~
 &+bfavoritism toward anyone, even the 'regulars', and goes about his business&N
 &+bwith speed and dedication.&N
 ~
-2122 0 0 8192 0 0 0 0 S
-PF 7 1 -1
+2122 0 0 0 8192 0 0 0 0 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -477,8 +477,8 @@ halfling bard~
 &+mbut most times he just smiles pleasantly or even laughs as the instruments&N
 &+mare sold back to him.&N
 ~
-34890 0 0 0 0 0 0 0 S
-PF 7 32768 -1
+34890 0 0 0 0 0 0 0 0 S
+PF 7 32768 0 -1
 45 -1 -69 45d99+1980 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -499,8 +499,8 @@ lomar halfling bard~
 &+Mfaerie realms have altered his life force and unnaturally extended his life
 &+Mfar beyond normal.&N
 ~
-1107331144 0 0 0 0 0 0 0 S
-PF 7 32768 -1
+1107331144 0 0 0 0 0 0 0 0 S
+PF 7 32768 0 -1
 50 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -517,8 +517,8 @@ obvious that he is used to playing some sort of instrument as he sings
 because his hands strum at empty air.  Why he has decided not to play his
 instrument today is a mystery for he certainly seems to miss it.
 ~
-2122 0 0 0 0 0 0 0 S
-P2 0 32768 -1
+2122 0 0 0 0 0 0 0 0 S
+P2 0 32768 0 -1
 10 18 67 10d19+45 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -532,8 +532,8 @@ to sway even when the music has stopped and seems barely capable of standing
 on her own.  The young halfling woman is in good spirits, certainly here to
 celebrate something.
 ~
-2250 0 0 0 0 0 0 350 S
-PF 7 0 -1
+2250 0 0 0 0 0 0 0 350 S
+PF 7 0 0 -1
 6 18 80 6d18+21 2d3+1
 3.2.0.0 777
 8 8 2
@@ -548,8 +548,8 @@ but he seems intent on drinking himself into oblivion.  Soon, one would guess,
 he will not be sober enough to protect himself or his money and will find his
 purse quite empty.
 ~
-2138 0 0 0 0 0 0 0 S
-PF 7 16384 -1
+2138 0 0 0 0 0 0 0 0 S
+PF 7 16384 0 -1
 5 20 83 5d17+27 1d5+0
 3.1.0.0 648
 8 8 1
@@ -563,8 +563,8 @@ up in his own private thoughts and completely ignores everything that is going
 on around him.  It is hard to imagine anything that would make a halfing so
 pensive and withdrawn, but it seems best to just leave him to his ale.
 ~
-1107298378 0 0 0 0 0 0 350 S
-PF 7 1 -1
+1107298378 0 0 0 0 0 0 0 350 S
+PF 7 1 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -578,8 +578,8 @@ poor fellow has had far more to drink than he should have and has lost the
 battle against the sleep the alcohol has dragged him into.  What is even more
 surprising is that the bartender hasn't thrown him out.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 16384 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 16384 0 -1
 4 20 87 4d17+22 1d5+0
 2.1.0.0 518
 4 4 1
@@ -593,8 +593,8 @@ ale.  Exactly what or who gave him the idea he should attempt to sing is
 criminal.  It is quite fortunate that people in the area are also drunk enough
 to think his vain attempts are funny, otherwise he may have been hurt by now.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 16384 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 16384 0 -1
 7 18 77 7d21+38 2d3+1
 3.2.0.0 907
 8 8 1
@@ -609,8 +609,8 @@ half-elf bard maiden~
 &+Genergy into her songs.  She tosses her head about sending her long hair into&N
 &+Gthe breeze and attracting the attention of everybody that passes by.&N
 ~
-34890 0 0 0 0 0 0 0 S
-P2 7 32768 -1
+34890 0 0 0 0 0 0 0 0 S
+P2 7 32768 0 -1
 12 15 61 12d25+60 2d5+2
 6.4.2.0 5832
 8 8 2
@@ -625,8 +625,8 @@ halfling woman bard~
 &+mthat she adds music and dance to her songs.  Her dark eyes watch the crowd&N
 &+mtrying to appraise what types of songs they might like the most.&N
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 32768 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 32768 0 -1
 7 18 77 7d19+31 2d3+1
 3.2.0.0 907
 8 8 2
@@ -641,8 +641,8 @@ created the strong aroma or if it is the vendor himself due to his constant
 exposure to them.  He smiles happily at everyone that comes by, and it is
 plain to see that he is quite well-liked, and that his fish sell quite well.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -657,8 +657,8 @@ she stands here selling the fresh fruit from the nearby farms.  It would appear
 that the children prefer the apples that she practically gives away to keep
 them from running too quickly through the market.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 2
@@ -674,8 +674,8 @@ enthusiasm has carried over to his work as well, the belts and boots he is
 selling have no added touches to them, the minimum amunt of work to create
 functional items has gone into their creation and nothing more.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -691,8 +691,8 @@ might be due to his age, it is easy to understand that he might not want to
 have to clean up after people once they leave, but the food he sells could
 easily be served in a fine, expensive restaurant.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -707,8 +707,8 @@ to take a nap in the corner before the next rush of customers.  Her features
 are wrinkled, and her hair is gray, but the smile she wears as she sleeps is
 one of a playful child.
 ~
-2122 0 0 0 0 0 0 350 S
-PF 7 0 -1
+2122 0 0 0 0 0 0 0 350 S
+PF 7 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 4 4 2
@@ -724,8 +724,8 @@ handsome as some bards, mostly due to his large friendly smile.  He has
 retired from collecting rewards to work here at Karuna's supply shop making
 certain that anyone that goes out on a job is properly equiped.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 16384 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 16384 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -740,8 +740,8 @@ halfling mage~
 &+Yis also clear that much of the respect she has received is due to her prowess&N
 &+Yin creating and casting spells.&N
 ~
-2122 0 0 0 0 0 0 500 S
-PF 7 512 -1
+2122 0 0 0 0 0 0 0 500 S
+PF 7 512 0 -1
 46 -3 -72 46d80+2438 6d6+25
 6.0.9.4 111780
 8 8 2
@@ -761,8 +761,8 @@ buzzle halfling~
 &+Rseen wandering Woodseer.  It would be more than unwise to try to steal from&N
 &+Rhim, in fact, it would probably be deadly.&N
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -779,8 +779,8 @@ halfling warrior leelon~
 &+rthat many feel it is more economical to make a trek to one of the human or&N
 &+rdwarven towns to try to purchase armor there.&N
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -796,8 +796,8 @@ the ugly worms.  Dirt is ingrained underneath his fingernails from too
 many years of catching and selling worms.  His face is marked with wrinkles
 and eyebrows that stick out of a permanently furrowed brow.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 1 0 -1
 30 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -814,8 +814,8 @@ surprising that Syune would take such a young apprentice, specially considering
 the rumours that are told of his temper, but this young halfling seems
 extremely happy here.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 4096 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 4096 0 -1
 45 -1 -69 45d90+1935 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -833,8 +833,8 @@ jrev halfling~
 &+Lthat comes in, instantly determining if they are ready to buy, or just
 &+Lexamining his goods.&n
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 16384 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 16384 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -850,8 +850,8 @@ Even though he is kind and friendly, it is obvious that he looks down on the
 poorer patrons that can only afford to come here infrequently and that he
 fawns on the wealthier regular customers.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 16384 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 16384 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -866,8 +866,8 @@ they wait for their tables in the restaurant upstairs and he does a very good
 job of it.  He does make it obvious to anyone he serves that there is a tip jar
 at the end of the bar, and that he expects something to be put in it.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -884,8 +884,8 @@ none of the furniture gets damaged here.  An ugly burn scar marks his left
 arm and several other strange scars mark his right hand.  It is clear that
 any fights here will be met with the most aggressive force.
 ~
-2122 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -901,8 +901,8 @@ that Karuna has authorized him to KILL anyone caught fighting in his bar,
 and, quite frankly nobody is known to have tested this yet.  Cold calculating
 eyes watch everyone in the bar, insuring all is peaceful and calm.
 ~
-33556554 0 0 8 0 0 0 0 S
-PF 7 16384 -1
+33556554 0 0 0 8 0 0 0 0 S
+PF 7 16384 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -918,8 +918,8 @@ hair.  Customers who stay at the inn expect and receive only the finest
 service, and this gorgeous halfling woman is the one that insures that nothing
 goes wrong.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 0 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 0 0 -1
 45 -1 -69 45d90+1935 6d6+12
 5.9.8.4 109350
 8 8 2
@@ -935,8 +935,8 @@ jewelry.  His brow narrows in concentration when he does some of the fine
 etching that has become one of his trademarks, and he ignores almost everything
 that goes on around him.
 ~
-1107298380 0 0 0 0 0 0 500 S
-PF 7 512 -1
+1107298380 0 0 0 0 0 0 0 500 S
+PF 7 512 0 -1
 46 -3 -72 46d80+2438 6d6+25
 6.0.9.4 111780
 8 8 1
@@ -956,8 +956,8 @@ graeme halfling warrior~
 &+Rclear he could hit most opponents three times before being hit even once
 &+Rhimself.&N
 ~
-1073776712 672 0 16 0 0 0 0 S
-PF 7 1 -1
+1073776712 672 0 0 16 0 0 0 0 S
+PF 7 1 0 -1
 56 -7 -114 56d143+5880 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -972,8 +972,8 @@ eruffu halfling councilor~
 &+rpeople, however.  Known as one of the most wise and learned halflings in
 &+rthe area, he is still sought out for advice.&n
 ~
-1140852808 0 0 0 0 0 0 1000 S
-PF 7 512 -1
+1140852808 0 0 0 0 0 0 0 1000 S
+PF 7 512 0 -1
 40 2 -28 40d64+840 4d7+10
 3.3.3.3 51840
 8 8 1
@@ -992,8 +992,8 @@ ctenmir halfling thief~
 &+Lthief of all time.  How he has lived this long is as mysterious as his activities
 &+Loutside the city.&N
 ~
-1107331144 0 0 1572904 0 0 0 0 S
-PF 7 4096 -1
+1107331144 0 0 0 1572904 0 0 0 0 S
+PF 7 4096 0 -1
 50 -3 -95 50d100+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -1009,8 +1009,8 @@ that he once collected a bounty on someone that was trying to hide out with
 the trolls, an unlikely story but quite impressive, if true.  Light brown hair
 highlights his tawny form, making him look more like a lion than a halfling.
 ~
-1174407244 640 0 1048608 0 0 0 0 S
-PF 7 16384 -1
+1174407244 640 0 0 1048608 0 0 0 0 S
+PF 7 16384 0 -1
 56 -7 -114 56d143+5880 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -1029,8 +1029,8 @@ Rumors that she has taken to summoning demons in order to learn more about
 the inner workings of magical spells have frightened all but the heartiest of
 mages away from her private chambers.
 ~
-1073743880 0 0 0 2048 0 0 0 S
-PF 7 512 -1
+1073743880 0 0 0 0 2048 0 0 0 S
+PF 7 512 0 -1
 56 -7 -114 56d96+5768 7d6+35
 1.3.8.6 226800
 8 8 2
@@ -1051,8 +1051,8 @@ rumors and fear will force Azoum to send him back.  Until he is freed he has
 no choice but to serve his summoner, though nobody said he had to be happy about
 it.
 ~
-67110988 0 0 1638400 2048 0 0 -1000 S
-X 0 32 -1
+67110988 0 0 0 1638400 2048 0 0 -1000 S
+X 0 32 0 -1
 54 -5 -122 54d121+4914 7d6+30
 9.1.0.9 328050
 8 8 1
@@ -1070,8 +1070,8 @@ halfling belarr cleric~
 &+bwith holiness and a quiet calm, disturbing his prayers would not only anger&N
 &+bhim but most likely the gods as well.&N
 ~
-1174407246 0 0 8224 32768 0 0 1000 S
-PF 7 32 -1
+1174407246 0 0 0 8224 32768 0 0 1000 S
+PF 7 32 0 -1
 56 -7 -114 56d132+5824 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -1085,8 +1085,8 @@ and flower petals that are tossed about in the breeze.  Only a few months old,
 the cute kitten enjoys baring its teeth and claws at anything that is willing
 to play with it.
 ~
-2248 0 0 0 0 0 0 0 S
-A 0 0 -1
+2248 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -1098,8 +1098,8 @@ duck duckling~
 &+WDowny feathers keep this cute little duckling afloat and safe from the water&N
 &+Was he wanders about looking for food, and trying to keep up with his mother.&N
 ~
-264392 0 0 0 0 0 0 0 S
-B 0 0 -1
+264392 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 1
@@ -1113,8 +1113,8 @@ to see among the reeds.  Her poor young ducklings are such a bright fuzzy
 &+Wwhite&N that they are easy prey for the turtles and large fish that are
 waiting for her to stop paying attention to her young.
 ~
-1074006088 0 0 0 0 0 0 0 S
-B 0 0 -1
+1074006088 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 2
@@ -1127,8 +1127,8 @@ This calm &+ybrown mother duck&N serenely watches over her young, snapping
 her beak occasionally in the direction of the halfling youths that are teasing
 them with sticks.
 ~
-264264 0 0 0 0 0 0 0 S
-B 0 0 -1
+264264 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 2
@@ -1140,8 +1140,8 @@ A young duck searches for food here.
 Though no longer a duckling, this cute duck is still quite young and needs to
 be quite cautious to avoid becoming somebody's dinner.
 ~
-264392 0 0 0 0 0 0 0 S
-B 0 0 -1
+264392 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 1
@@ -1154,8 +1154,8 @@ This duck is certainly no duckling, yet she is still not old enough to have
 had her own ducklings yet, but it is obvious that she is looking over the young
 male ducks trying to choose for when the time comes.
 ~
-264392 0 0 0 0 0 0 0 S
-B 0 0 -1
+264392 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 2
@@ -1168,8 +1168,8 @@ His bright &+Ggreen&N head defines him as one of the showy males of the species.
 It is clear that, though he watches the ducklings, he doesn't really do much
 to help them with anything.
 ~
-1074006088 0 0 0 0 0 0 0 S
-B 0 0 -1
+1074006088 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 1
@@ -1181,8 +1181,8 @@ turtle box~
 The small box turtle can't move quickly enough to catch any of the ducklings
 by the pool so he must remain satisfied with anything else he can catch.
 ~
-1074006088 0 0 0 1024 0 0 0 S
-R 0 0 -1
+1074006088 0 0 0 0 1024 0 0 0 S
+R 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 1
@@ -1198,8 +1198,8 @@ snapping turtle~
 &+ghe is rarely bothered by anyone, not even the halfling children want to&N
 &+gchance his jaws.&N
 ~
-264264 0 0 0 1024 0 0 0 S
-R 0 0 -1
+264264 0 0 0 0 1024 0 0 0 S
+R 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 1
@@ -1213,8 +1213,8 @@ wings so quickly it is hard to tell what those colors are, or sometimes even
 where the bird is.  It is easiest to see when it hovers near a flower sucking
 up some nectar, otherwise it just moves too quickly.
 ~
-2248 0 0 16 0 0 0 0 S
-B 0 0 -1
+2248 0 0 0 16 0 0 0 0 S
+B 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 0
@@ -1228,8 +1228,8 @@ generally unfriendly beast like this one to roam the park.  A single sting
 from this yellow monstrousity could make a small halfling sick for days,
 perhaps even killing them.
 ~
-1073875018 0 0 0 0 0 0 0 S
-I 0 0 -1
+1073875018 0 0 0 0 0 0 0 0 S
+I 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 0
@@ -1243,8 +1243,8 @@ probably put there by the gods to warn other creatures of its awful sting.
 The stinger looks almost as long as most halfling's arms and has wicked barbs
 at its end.
 ~
-1073875016 0 0 0 0 0 0 0 S
-I 0 0 -1
+1073875016 0 0 0 0 0 0 0 0 S
+I 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 0
@@ -1256,8 +1256,8 @@ red salamander~
 &+RBright red with &+ggreen&+R speckles, this small salamander has a hard
 &+Rtime hiding.  Only the brightly colored flowers give him any assistance.&N
 ~
-264392 0 0 0 0 0 0 0 S
-R 0 0 -1
+264392 0 0 0 0 0 0 0 0 S
+R 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 0
@@ -1272,8 +1272,8 @@ fighters and will NEVER abandon a battle once it has begun.  Fortunately,
 this bird is intelligent enough to know that attacking any of the visitors to
 the park will get it hunted down and killed.
 ~
-1073875016 0 0 134217744 0 0 0 0 S
-B 0 0 -1
+1073875016 0 0 0 134217744 0 0 0 0 S
+B 0 0 0 -1
 8 18 74 8d18+28 2d3+1
 0.0.0.0 1036
 8 8 0
@@ -1287,8 +1287,8 @@ close to 'pretty'.  Ugly bubbles in his skin look make him look like some sort
 of toad, and his eyes are a sickly yellow color that make one wonder how
 healthy he is.
 ~
-264264 0 0 0 0 0 0 0 S
-R 0 0 -1
+264264 0 0 0 0 0 0 0 0 S
+R 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 1
@@ -1302,8 +1302,8 @@ try to run.  The childs features are so delicate and fine that it is difficult
 to say whether it is a boy or a girl, but what is certain is that the child
 just loves to play, with anything or anyone.
 ~
-2248 0 0 0 0 0 0 0 S
-PF 7 0 -1
+2248 0 0 0 0 0 0 0 0 S
+PF 7 0 0 -1
 2 20 93 2d15+7 1d5+0
 1.0.0.0 259
 8 8 0
@@ -1316,8 +1316,8 @@ This badger looks tough enough to bring down even a hearty barbarian, and even
 less likely to flee from one.  Sharp teeth fill an oversized mouth that looks
 designed to do quite a bit of rending.
 ~
-2122 1 0 0 0 0 0 0 S
-A 0 0 -1
+2122 1 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 5 5 1
@@ -1331,8 +1331,8 @@ and flowers collecting nectar for the hive.  It is amazing that its small wings
 can move its huge body through the air.  This bee is just a worker bee and only
 has a very small stinger, and it looks like it would rather run than fight.
 ~
-133320 0 0 134217728 0 0 0 0 S
-I 0 0 -1
+133320 0 0 0 134217728 0 0 0 0 S
+I 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 0
@@ -1345,8 +1345,8 @@ This giant bee has obviously been bread for only one purpose, to fight for and
 defend the hive.  It is clear that this bee will never surrender, nor will it
 die easily.
 ~
-1073875018 0 0 134217728 0 0 0 0 S
-I 0 0 -1
+1073875018 0 0 0 134217728 0 0 0 0 S
+I 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 1
@@ -1359,8 +1359,8 @@ Her huge bloated abdomen is certain to slow her down, but it is clear that she
 is quite ferocious and will defend her hive as well as she can.  She is in
 her home here and it is certain that she will defend it well.
 ~
-1073743882 0 0 134217728 0 0 0 0 S
-I 0 0 -1
+1073743882 0 0 0 134217728 0 0 0 0 S
+I 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 0.0.0.0 907
 8 8 2
@@ -1372,8 +1372,8 @@ larvae larval bee~
 The huge ugly maggots shall someday become giant bees which will hover through
 the park collecting nectar and helping fertilize the flowers.
 ~
-2122 0 0 0 0 0 0 0 S
-I 0 0 -1
+2122 0 0 0 0 0 0 0 0 S
+I 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -1386,8 +1386,8 @@ Ugly mandibles search for prey as this creature zips around on its many legs.
 The centipede exudes a faint carrion-like odor, making it as unpleasant to
 smell as to look at.
 ~
-2122 0 0 0 0 0 0 -700 S
-I 0 0 -1
+2122 0 0 0 0 0 0 0 -700 S
+I 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 0
@@ -1401,8 +1401,8 @@ rocks and rubble looking for something to eat.  It appears to be blinded by
 the light but can most certainly put up a good fight.  An awful rotting stench
 seems to seep out of it into the room, making the room almost unbearable.
 ~
-2120 0 0 0 0 0 0 -700 S
-I 0 0 -1
+2120 0 0 0 0 0 0 0 -700 S
+I 0 0 0 -1
 6 18 80 6d18+21 2d3+1
 0.0.0.0 777
 8 8 0
@@ -1415,8 +1415,8 @@ This giant spider cleverly hides itself among the ruined walls as it waits for
 foolish prey to walk underneath it.  Long fangs hang down from its mandibles
 indicating that once it captures something, its prey doesn't last long.
 ~
-1073743944 0 0 1572864 0 0 0 -700 S
-AS 0 0 -1
+1073743944 0 0 0 1572864 0 0 0 -700 S
+AS 0 0 0 -1
 8 18 74 8d18+28 2d3+1
 0.0.0.0 1036
 8 8 0
@@ -1432,8 +1432,8 @@ tremendous creature could possible occur naturally.  The strange green of its
 abdomen and legs suggest that magic or some strange potion must have given it
 its color also.
 ~
-2122 0 0 1572864 0 0 0 -900 S
-AS 0 0 -1
+2122 0 0 0 1572864 0 0 0 -900 S
+AS 0 0 0 -1
 12 15 61 12d23+48 2d5+2
 0.0.0.0 5832
 8 8 0
@@ -1447,8 +1447,8 @@ is actually fairly docile, and would rather run than fight.  Its mouth is
 quite dangerous though, full of teeth sharp enough to cut apples and pears
 to pieces.
 ~
-133192 0 0 134217728 0 0 0 0 S
-A 0 0 -1
+133192 0 0 0 134217728 0 0 0 0 S
+A 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -1461,8 +1461,8 @@ This small fluffy bunny is one of the banes of farming.  The fields provide
 a wonderful supply of food and are relatively free of predators, other than
 farmers that is.
 ~
-200 0 0 0 0 0 0 0 S
-A 0 0 -1
+200 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -1475,8 +1475,8 @@ This jackrabbit is a bit large due to all the easy food it has been eating in
 the fields, but it is also quite stupid.  Sometimes it is even lazy enough that
 it just stands still while farm children throw rocks at it.
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -1490,8 +1490,8 @@ raven crow bird~
 &+Lsteal out of farmers homes and from the other thieving pests that run&N
 &+Lrampant in the fields.&N
 ~
-133192 0 0 134217728 0 0 0 0 S
-B 0 0 -1
+133192 0 0 0 134217728 0 0 0 0 S
+B 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -1505,8 +1505,8 @@ allowed to eat what it catches, this cat has been able to catch enough to
 keep it very well-fed.  Even so, the fields still team with pests that steal
 as much of the crops as they can.
 ~
-1073743944 0 0 0 0 0 0 0 S
-A 0 0 -1
+1073743944 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 0
@@ -1520,8 +1520,8 @@ motion as she struggles to keep this large home clean.  The sheer number of
 halflings that lives here must make it extremely difficult but it is clear
 that she is up to it.
 ~
-2250 0 0 0 0 0 0 400 S
-PF 7 0 -1
+2250 0 0 0 0 0 0 0 400 S
+PF 7 0 0 -1
 6 18 80 6d18+21 2d3+1
 3.2.0.0 777
 8 8 2
@@ -1535,8 +1535,8 @@ too hard outside.  He is taking a break from his wild antics in the fields,
 and the rabbits and birds are sure to be relieved.  Soon, he will regain his
 almost boundless energy and head back out to play.
 ~
-67110986 0 0 0 0 0 0 400 S
-PF 7 0 -1
+67110986 0 0 0 0 0 0 0 400 S
+PF 7 0 0 -1
 4 20 87 4d15+14 1d5+0
 2.1.0.0 518
 5 5 1
@@ -1552,8 +1552,8 @@ makes it clear that it is a game for him as well.  He is playing so hard
 that his light colored hair is dark with sweat and clings to his head in a
 wet mess.
 ~
-2120 0 0 0 0 0 0 400 S
-PF 7 1 -1
+2120 0 0 0 0 0 0 0 400 S
+PF 7 1 0 -1
 4 20 87 4d17+22 1d5+0
 2.1.0.0 518
 8 8 1
@@ -1570,8 +1570,8 @@ than whether or not they are beautiful, or whether they look good together.
 The kindest explanation is that he is colorblind, but even that can't explain
 it all.
 ~
-2122 0 0 0 0 0 0 0 S
-PF 7 4096 -1
+2122 0 0 0 0 0 0 0 0 S
+PF 7 4096 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -1585,8 +1585,8 @@ making a small doll out of corn husks.  Her deft weaving shows how skilled at
 weaving she will be someday, but for now she is just making a small doll to
 play with.
 ~
-2252 0 0 0 0 0 0 400 S
-PF 7 0 -1
+2252 0 0 0 0 0 0 0 400 S
+PF 7 0 0 -1
 4 20 87 4d15+14 1d5+0
 2.1.0.0 518
 6 6 2
@@ -1600,8 +1600,8 @@ and wind have etched their way into his skin leaving a permanent mark.  Several
 scars mark his arms and a single thin scar runs down his right cheek, how he
 got those scars is hard to determine, perhaps he wasn't always just a farmer.
 ~
-1073743948 0 0 0 0 0 0 300 S
-PF 7 16384 -1
+1073743948 0 0 0 0 0 0 0 300 S
+PF 7 16384 0 -1
 7 18 77 7d21+38 2d3+1
 3.2.0.0 907
 4 4 1
@@ -1617,8 +1617,8 @@ jars that have been sealed with wax.  It is clear that whatever she is
 searching for has something to do with the wilted recipe that she keeps
 glancing at as she looks through the cupboards.
 ~
-2122 0 0 0 0 0 0 400 S
-PF 7 0 -1
+2122 0 0 0 0 0 0 0 400 S
+PF 7 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 8 8 2
@@ -1632,8 +1632,8 @@ through the fields trying to scare off the birds and rabbits.  A deep tan
 from being outdoors all of the time colors him almost as dark as the soil
 he tills.
 ~
-1140852812 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+1140852812 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 7 18 77 7d21+38 2d3+1
 3.2.0.0 907
 8 8 1
@@ -1649,8 +1649,8 @@ but not enough to really affect the quality of the harvest.  A slight touch
 of gray is coming in on his sideburns, but it is clear that he has many years
 of farming left in him.
 ~
-1140852812 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+1140852812 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 9 18 71 9d21+49 2d3+1
 4.3.0.0 1166
 8 8 1
@@ -1663,8 +1663,8 @@ Yellow lines along the sides of its sleek body give this small fish its name.
 Though not very large, yellow perch are very tasty and are fairly easy to
 catch.
 ~
-264264 0 0 2048 0 0 0 0 S
-F 0 0 -1
+264264 0 0 0 2048 0 0 0 0 S
+F 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -1679,8 +1679,8 @@ it looks far to bony to be worth the fight for the food.  It ponders
 everything that wanders into its part of the lake with intelligent and wary
 eyes.  This fish does NOT want to be caught.
 ~
-1074006088 0 0 2048 0 0 0 0 S
-F 0 0 -1
+1074006088 0 0 0 2048 0 0 0 0 S
+F 0 0 0 -1
 12 15 61 12d23+48 2d5+2
 0.0.0.0 5832
 8 8 0
@@ -1692,8 +1692,8 @@ A large muskie swims slowly through the water.
 This large toothy fish has enough succulent meat on it to make it a fine catch,
 if it can be caught that is.
 ~
-1074006088 0 0 2048 0 0 0 0 S
-F 0 0 -1
+1074006088 0 0 0 2048 0 0 0 0 S
+F 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 0.0.0.0 907
 8 8 0
@@ -1707,8 +1707,8 @@ many others of his kind.  Rumor has it that several of these tasty fish were
 planted into the lake many years ago so that there would always be a supply of
 large tasty fish.
 ~
-264264 0 0 2048 0 0 0 0 S
-F 0 0 -1
+264264 0 0 0 2048 0 0 0 0 S
+F 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 0
@@ -1723,8 +1723,8 @@ and patiently waiting for something to grab the bait and become his dinner.
 Odd markings along his forearm would seem to indicate some sort of affiliation
 with a guild of some sort.
 ~
-1073743944 0 0 0 0 0 0 500 S
-PF 7 1 -1
+1073743944 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -1740,8 +1740,8 @@ harvests wood from the beautiful jodani trees.  Sap from the fresh wood gives
 him a fresh woodsy smell on top of the sweat from the hard work he has been
 doing.
 ~
-67110986 128 0 0 0 0 0 500 S
-PF 7 1 -1
+67110986 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -1757,8 +1757,8 @@ elf half-elf druid~
 &+gwith them.  Every movement she makes is graceful and lends to her beauty,&N
 &+ga beauty that seems as much a part of the forest as she is.&N
 ~
-1073743944 128 0 8192 0 0 0 0 S
-P2 0 128 -1
+1073743944 128 0 0 8192 0 0 0 0 S
+P2 0 128 0 -1
 45 -1 -69 45d99+1980 6d6+12
 5.9.8.4 109350
 8 8 2
@@ -1772,8 +1772,8 @@ eat.  It is clear that it is not used to intrusions, nor does it show much fear
 of anything it meets.  This inquisitive squirrel doesn't even fear the loggers
 that walk through the grove.
 ~
-1073743944 0 0 0 0 0 0 0 S
-A 0 0 -1
+1073743944 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 0
@@ -1787,8 +1787,8 @@ When he concentrates, he squeezes his eyes together highlighting the wrinkles
 that already line his face.  Despite his age his hands move swiftly as he cuts
 and stiches leather together.
 ~
-2122 128 0 0 0 0 0 400 S
-PF 7 4096 -1
+2122 128 0 0 0 0 0 0 400 S
+PF 7 4096 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -1803,8 +1803,8 @@ and belts, but those he makes are of exceptional quality.  His bright blue
 eyes dart from what he is doing to watch the other more experienced leather-
 workers in the room, learning by watchin what they are doing.
 ~
-2122 128 0 0 0 0 0 500 S
-PF 7 1 -1
+2122 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 6 18 80 6d21+33 2d3+1
 3.2.0.0 777
 8 8 1
@@ -1818,8 +1818,8 @@ He is clearly in charge of the work that is going on here, but does little in
 the way of giving orders.  It is his responsibility to acquire all the
 materials and contracts, as well as selling everything that is made.
 ~
-1107298378 128 0 0 0 0 0 500 S
-PF 7 1 -1
+1107298378 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 50 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -1832,8 +1832,8 @@ This halfling lies on his bed with his hat drawn down over his eyes trying to
 get a bit of rest.  His shoes lie on the ground beside him as he hangs his bare
 feet over the edge of the bed.
 ~
-2120 128 0 0 0 0 0 200 S
-PF 7 1 -1
+2120 128 0 0 0 0 0 0 200 S
+PF 7 1 0 -1
 6 18 80 6d21+33 2d3+1
 3.2.0.0 777
 4 4 1
@@ -1847,8 +1847,8 @@ social skills.  His eyes are wide as he glares about raving about pigments.
 Unkempt hair and paint speckled all over his clothing create the image of
 a madman who is more than a little bit unstable.
 ~
-33556554 0 0 0 0 0 0 0 S
-PF 7 512 -1
+33556554 0 0 0 0 0 0 0 0 S
+PF 7 512 0 -1
 5 20 83 5d12+17 1d5+0
 3.1.0.0 648
 8 8 1
@@ -1861,8 +1861,8 @@ This gigantic dragonfly has a faint green belly that seems to shimmer in the
 light.  It seems able to fly in any direction at will, making it very difficult
 to catch.
 ~
-133192 0 0 134217744 0 0 0 0 S
-I 0 0 -1
+133192 0 0 0 134217744 0 0 0 0 S
+I 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 0
@@ -1876,8 +1876,8 @@ red robes go well with his dark eyes and hair, giving him a mysterious, yet
 somehow trustworthy air.  Several of his mannerisms indicate that he has
 traveled widely and wants people to know it.
 ~
-1073743944 128 0 0 0 0 0 0 S
-PF 7 512 -1
+1073743944 128 0 0 0 0 0 0 0 S
+PF 7 512 0 -1
 26 8 16 26d44+286 3d6+4
 7.2.6.1 23166
 8 8 1
@@ -1892,8 +1892,8 @@ ANYWHERE, and is happy to let people know it.  Though such arrogance is
 annoying, it is hard to argue with him, his work is some of the finest that
 can be found anywhere in the world.
 ~
-1107298376 128 0 0 0 0 0 500 S
-PF 7 1 -1
+1107298376 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -1908,8 +1908,8 @@ and the mountains while his wife is away shopping in the market.  His dark hair
 is highlighted by silver streaks that seem to add a distinguished look to his
 already handsome features.
 ~
-1107298378 128 0 0 0 0 0 300 S
-PF 7 4096 -1
+1107298378 128 0 0 0 0 0 0 300 S
+PF 7 4096 0 -1
 25 11 19 25d40+200 3d5+3
 6.2.6.1 22275
 6 6 1
@@ -1923,8 +1923,8 @@ to spend most of his day sitting and meditating, and the rest of the day
 bouncing around in some sort of odd dance that sends his hands and feet flying
 through the air.
 ~
-1073776712 160 0 16 0 0 0 0 S
-PH 0 64 -1
+1073776712 160 0 0 16 0 0 0 0 S
+PH 0 64 0 -1
 20 13 35 20d35+140 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -1939,8 +1939,8 @@ grivling young~
 &+Lmust be fairly young because it isn't even able to make its stony face&N
 &+Llook like anything but flat rock.&N
 ~
-33556684 0 0 537919616 12480 0 0 0 S
-OG 0 1 -1
+33556684 0 0 0 537919616 12480 0 0 0 S
+OG 0 1 0 -1
 17 13 45 17d35+119 3d4+2
 8.6.2.0 8262
 8 8 0
@@ -1956,8 +1956,8 @@ grivling~
 &+LThese heavy stone creatures are easy to mistake for golems, but they are far&N
 &+Lto artistic and intelligent to be mere automatons.&N
 ~
-33556558 0 0 537919616 12480 0 0 0 S
-OG 0 1 -1
+33556558 0 0 0 537919616 12480 0 0 0 S
+OG 0 1 0 -1
 20 13 35 20d35+140 3d4+2
 0.9.3.0 9720
 8 8 0
@@ -1973,8 +1973,8 @@ grivling large~
 &+Lis also one of the largest of the grivlings that live here, though quite&N
 &+Lquiet and shy, he would certainly be a ferocious opponent if angered.&N
 ~
-33556558 0 0 537919616 12480 0 0 0 S
-OG 0 1 -1
+33556558 0 0 0 537919616 12480 0 0 0 S
+OG 0 1 0 -1
 22 11 29 22d47+220 3d5+3
 4.0.5.0 19602
 8 8 0
@@ -1987,8 +1987,8 @@ A number of different stones have been blended together to create this somewhat
 odd looking statue.  So much work and magic have gone into it that it almost
 seems to be alive.
 ~
-33556554 0 0 536871056 12480 0 0 0 S
-OG 0 0 -1
+33556554 0 0 0 536871056 12480 0 0 0 S
+OG 0 0 0 -1
 15 15 51 15d23+60 2d5+2
 7.6.2.0 7290
 8 8 0
@@ -2004,8 +2004,8 @@ weth halfling~
 &+yforest for many years, and this soft bouncey step looks more like the gait&N
 &+yof a cat than a halfling.&N
 ~
-1174407244 672 0 16 0 0 0 800 S
-PF 7 1 -1
+1174407244 672 0 0 16 0 0 0 800 S
+PF 7 1 0 -1
 40 2 -28 40d95+920 4d7+10
 3.3.3.3 51840
 8 8 1
@@ -2020,8 +2020,8 @@ and demonstrates his abilities to all that see him.  As he works he continually
 mutters to himself, as he mumbles words such as "polish", "stain" and "grain"
 can be made out.
 ~
-2126 128 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 8 18 74 8d21+44 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -2037,8 +2037,8 @@ halfling mage librarian~
 &+gmages to the spells she can, and sometimes can send them to others that&N
 &+gcan help with the spells she has no knowledge of.&N
 ~
-33589326 0 0 0 0 0 0 1000 S
-PF 7 512 -1
+33589326 0 0 0 0 0 0 0 1000 S
+PF 7 512 0 -1
 14 15 55 14d18+56 2d5+2
 7.5.2.0 6804
 8 8 2
@@ -2052,8 +2052,8 @@ many years and has mastered enough magic that now he has to spend most of his
 time teaching.  This is one of the few times that he has time to study on his
 own.
 ~
-1073743948 0 0 0 0 0 0 500 S
-PF 7 512 -1
+1073743948 0 0 0 0 0 0 0 500 S
+PF 7 512 0 -1
 26 8 16 26d44+286 3d6+4
 7.2.6.1 23166
 8 8 1
@@ -2068,8 +2068,8 @@ practice their spells and work on making potions and wands.  She does her job
 with a quiet smile but it is clear she would rather be doing some studying of
 her own.
 ~
-1073743948 0 0 0 0 0 0 1000 S
-PF 7 512 -1
+1073743948 0 0 0 0 0 0 0 1000 S
+PF 7 512 0 -1
 26 8 16 26d44+286 3d6+4
 7.2.6.1 23166
 8 8 2
@@ -2083,8 +2083,8 @@ curious eyes and then returns to his studies whenever someone walks by.  Though
 he has a great deal of promise, it will take many years of study before this
 one will be able to go out on his own.
 ~
-1073743948 0 0 0 0 0 0 800 S
-PF 7 512 -1
+1073743948 0 0 0 0 0 0 0 800 S
+PF 7 512 0 -1
 6 18 80 6d14+21 2d3+1
 3.2.0.0 777
 6 6 1
@@ -2098,8 +2098,8 @@ very nasty looking fireballs and lightning bolts.  His face is a visage of grim
 determination, it is clear that he intends to master everything he can before
 he leaves the tower.
 ~
-2126 0 0 0 0 0 0 600 S
-PF 7 512 -1
+2126 0 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 16 13 48 16d24+80 3d4+2
 8.6.2.0 7776
 8 8 1
@@ -2115,8 +2115,8 @@ concentration each time she gets ready to cast a spell, and she is rarely seen
 to miss.  She is practicing her cold spells, throwing icy blasts at the wall
 which absorbs the impact with no visible effect.
 ~
-2126 0 0 0 0 0 0 600 S
-PF 7 512 -1
+2126 0 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 16 13 48 16d24+80 3d4+2
 8.6.2.0 7776
 8 8 2
@@ -2131,8 +2131,8 @@ about it.  His bright green eyes seem focused far away as he contemplates the
 next step.  He probably needs a break, his robes are stained and dirty and he
 smells as if he needs a bath.
 ~
-2126 0 0 0 0 0 0 600 S
-PF 7 512 -1
+2126 0 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 12 15 61 12d18+48 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -2148,8 +2148,8 @@ a thin smooth wand of jodani wood.  Her tiny frame contains volumes of power
 that she has not even begun to tap, surely someday she will be one of the most
 powerful mages in the land.
 ~
-2126 128 0 0 0 0 0 600 S
-PF 7 512 -1
+2126 128 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 21 11 32 21d32+168 3d5+3
 4.0.5.0 18711
 8 8 2
@@ -2164,8 +2164,8 @@ and then return to study some more.  Like many mages, she exhibits a drive to
 learn, and to succeed, but her sun-bleached hair and tan skin show that she
 also prefers to be outside rather than studying indoors.
 ~
-2120 0 0 0 0 0 0 600 S
-PF 7 512 -1
+2120 0 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 8 18 74 8d14+28 2d3+1
 4.2.0.0 1036
 6 6 2
@@ -2179,8 +2179,8 @@ sides.  Long hours of spell-casting have left this poor mage completely spent.
 He is taking some time here to rest and recuperate before going back to his
 studies.
 ~
-2248 0 0 0 0 0 0 600 S
-PF 7 512 -1
+2248 0 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 16 13 48 16d24+80 3d4+2
 8.6.2.0 7776
 5 5 1
@@ -2195,8 +2195,8 @@ the tower, marking him as a guard as well as a mage.  His stern eyes and grim
 face are a reminder that he has all the power and authority of one of the
 regular guards, and is more than capable of doing his job.
 ~
-1174407244 672 0 0 0 0 0 1000 S
-PF 7 1 -1
+1174407244 672 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 40 2 -28 40d95+920 4d7+10
 3.3.3.3 51840
 8 8 1
@@ -2212,8 +2212,8 @@ through it searching with dark brown eyes for something that must be missing.
 Ofcourse, as unkempt as he and his home are, it isn't surprising that he can't
 find what he is searching for.
 ~
-2126 0 0 0 0 0 0 600 S
-PF 7 512 -1
+2126 0 0 0 0 0 0 0 600 S
+PF 7 512 0 -1
 10 18 67 10d14+35 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -2228,8 +2228,8 @@ brown hair has long streaks of white that somehow seem to highlight her high
 cheekbones making her look elegant rather than old.  Still beautiful now, she
 was certainly quite a wonder in her younger days.
 ~
-2124 0 0 0 0 0 0 100 S
-PF 7 32768 -1
+2124 0 0 0 0 0 0 0 100 S
+PF 7 32768 0 -1
 10 18 67 10d19+45 2d3+1
 5.3.0.0 1296
 6 6 2
@@ -2242,8 +2242,8 @@ This tiny chipmunk tends to run and hide whenever anybody is nearby.  It is
 digging through the flowers here searching for something to eat, and trying
 to avoid being seen by anything that might eat it.
 ~
-2248 0 0 0 0 0 0 0 S
-A 0 0 -1
+2248 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -2258,8 +2258,8 @@ design and make are also revealing, they show that he can only be a mage.
 Mages like this are both feared and respected, and are often quite cautious
 when they travel.
 ~
-1073743948 0 0 0 0 0 0 500 S
-PF 7 512 -1
+1073743948 0 0 0 0 0 0 0 500 S
+PF 7 512 0 -1
 12 15 61 12d18+48 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -2274,8 +2274,8 @@ and exotic look.  She makes certain to demonstrate her in depth knowledge of
 the business, and who is best for which contract, so that customers realize
 that she is not just a pretty face.
 ~
-33556558 0 0 0 0 0 0 300 S
-PF 7 16384 -1
+33556558 0 0 0 0 0 0 0 300 S
+PF 7 16384 0 -1
 40 2 -28 40d95+920 4d7+10
 3.3.3.3 51840
 8 8 2
@@ -2289,8 +2289,8 @@ as he stares morosely into his ale.  Bounty-hunting is both dangerous and
 thankless, nobody wants a bounty-hunter around unless they need to hire one
 to solve a problem, that is why so many quit after a few years.
 ~
-2126 0 0 0 0 0 0 300 S
-PF 7 16384 -1
+2126 0 0 0 0 0 0 0 300 S
+PF 7 16384 0 -1
 7 18 77 7d21+38 2d3+1
 3.2.0.0 907
 5 5 1
@@ -2305,8 +2305,8 @@ criminals in impossible places.  His bloodshot eyes survey the room as he
 speaks, daring anyone to challenge or attack him.  Most of the patrons simply
 ignore him, which doesn't seem to bother him a bit.
 ~
-1073743950 0 0 0 1024 0 0 300 S
-PF 7 16384 -1
+1073743950 0 0 0 0 1024 0 0 300 S
+PF 7 16384 0 -1
 9 18 71 9d21+49 2d3+1
 4.3.0.0 1166
 8 8 1
@@ -2321,8 +2321,8 @@ a youthful innocence that will soon depart, if he survives long that is.  Hair
 the color of the wooden spear he holds has been tied back behind his head to
 keep it out of his way.
 ~
-1073743948 640 0 0 0 0 0 300 S
-PF 7 16384 -1
+1073743948 640 0 0 0 0 0 0 300 S
+PF 7 16384 0 -1
 5 20 83 5d17+27 1d5+0
 3.1.0.0 648
 8 8 1
@@ -2338,8 +2338,8 @@ that sometime soon they won't have such a bright outlook on life.  Something
 about having to hunt down and deal with criminals tends to make anybody a
 cynic.
 ~
-1073743948 640 0 0 0 0 0 300 S
-PF 7 16384 -1
+1073743948 640 0 0 0 0 0 0 300 S
+PF 7 16384 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -2355,8 +2355,8 @@ she watches the others practice, it is clear that though one of only a few
 halfling woman to ever take up bounty-hunting, she is one of the finest bounty-
 hunters that money can buy.
 ~
-1073743948 640 0 0 0 0 0 1000 S
-PF 7 1 -1
+1073743948 640 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 2
@@ -2371,8 +2371,8 @@ wrist adds to the mystery that seems to surround him.  He is perfectly calm
 and pleased with himself, and all of the things that he has accomplished in
 his life.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 1
@@ -2386,8 +2386,8 @@ some cookies for her husband.  The number of cookies she is baking suggests
 that she may be expecting more company, and the twinkle in her deep green eyes
 implies that she enjoys company, and baking.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 7 18 77 7d18+24 2d3+1
 3.2.0.0 907
 8 8 2
@@ -2402,8 +2402,8 @@ A dusty cloak lies on the floor beside him along with a pair of muddy boots
 showing that when he finally got home he just took off his clothes and
 collapsed.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 8 18 74 8d21+44 2d3+1
 4.2.0.0 1036
 4 4 1
@@ -2417,8 +2417,8 @@ that can be heard echoing off the mountains.  This small dog appears barely
 capable of restraining itself as it waits for its master to come take it for
 a walk.  Its training has prevailed though, so it does not run off.
 ~
-2120 0 0 0 0 0 0 0 S
-A 0 1 -1
+2120 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 2 20 93 2d17+11 1d5+0
 0.0.0.0 1036
 8 8 1
@@ -2432,8 +2432,8 @@ eyes focus so intently on what he is doing that he doesn't even notice when
 people come and go.  His hands move over the wood with a smooth precision that
 can only be admired, and his work has a wonderful artistic quality to it.
 ~
-1073743950 0 0 0 0 0 0 500 S
-PF 7 16384 -1
+1073743950 0 0 0 0 0 0 0 500 S
+PF 7 16384 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -2448,8 +2448,8 @@ outside and that he may come home tired.  Dirt stains his clothing in various
 spots and there is a muddy smudge above his left eye, but nothing seems
 capable of slowing him down.
 ~
-2120 0 0 0 0 0 0 500 S
-PF 7 1 -1
+2120 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 4 20 87 4d17+22 1d5+0
 2.1.0.0 518
 8 8 1
@@ -2463,8 +2463,8 @@ such excess that nothing but drinking must matter any longer.  His filthy
 clothing stinks of old liquor and vomit, and fresh vomit is pooled under his
 face.  It is no wonder that he is shunned by all who see him.
 ~
-2252 0 0 0 0 0 0 0 S
-PF 7 0 -1
+2252 0 0 0 0 0 0 0 0 S
+PF 7 0 0 -1
 4 20 87 4d15+14 1d5+0
 2.1.0.0 518
 4 4 1
@@ -2478,8 +2478,8 @@ even further and creating small laugh lines around her dark blue eyes.  She
 is obviously in an excellent mood and is very content to simply stand and
 observe all the creatures and flowers around her.
 ~
-2252 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2252 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 8 8 2
@@ -2494,8 +2494,8 @@ vigilant air to him, his blue eyes constantly scanning the other patrons in
 the bar.  There is no weapon visible on his person so he obviously doesn't
 anticipate any trouble.
 ~
-67110990 672 0 8232 0 0 0 1000 S
-PF 7 1 -1
+67110990 672 0 0 8232 0 0 0 1000 S
+PF 7 1 0 -1
 20 13 35 20d35+140 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -2511,8 +2511,8 @@ halflings that surround him.  If he weren't sitting down it would be impossible
 to see his deeply set pale green eyes.  In fact, the color of his eyes alone
 detracts from the ferocious appearance that he wants to portray.
 ~
-2142 128 0 0 0 0 0 300 S
-PB 0 1 -1
+2142 128 0 0 0 0 0 0 300 S
+PB 0 1 0 -1
 17 13 45 17d35+119 3d4+2
 8.6.2.0 8262
 8 8 1
@@ -2525,8 +2525,8 @@ This suave dark-haired woman has a quiet charm about her that makes her tales
 quite believable.  Her light brown eyes scan the room, looking for people that
 might supply her with information to send her off on another quest.
 ~
-2126 128 0 0 0 0 0 500 S
-PH 0 1 -1
+2126 128 0 0 0 0 0 0 500 S
+PH 0 1 0 -1
 16 13 48 16d35+112 3d4+2
 8.6.2.0 7776
 8 8 2
@@ -2539,8 +2539,8 @@ This stout warrior is a bit clumsy and clearly needs to practice a bit more
 before trying to go out on his own.  His light brown eyes match his sweat-
 soaked hair and he has the muscles that go with long hours of practice.
 ~
-2126 128 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 8 18 74 8d21+44 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -2553,8 +2553,8 @@ This pale halfling warrior needs to spend a bit more time in the sun.  His
 pasty skin and pale green eyes contrast strongly with the callouses on his
 hands and the scars he has received in training.
 ~
-2126 128 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 7 18 77 7d21+38 2d3+1
 3.2.0.0 907
 8 8 1
@@ -2568,8 +2568,8 @@ has already seen more of the world than most in this city will see during their
 entire lives.  His brown eyes have a slightly yellow tint and survey the
 surroundings with a vague hint of amusement.
 ~
-2124 128 0 0 0 0 0 500 S
-PF 7 1 -1
+2124 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -2583,8 +2583,8 @@ town.  Blue eyes with green flecks observe everything he passes by, it is clear
 from his attitude that he is in search of some hint of adventure, or a simple
 excuse to fight something.
 ~
-1073743948 128 0 0 0 0 0 500 S
-PF 7 1 -1
+1073743948 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -2597,8 +2597,8 @@ His mood seems as dark as his clothing.  His hair has been dyed to match his
 dark clothing, but the dye hasn't taken well and his true pale hair color is
 begining to show through.
 ~
-1073743948 0 0 0 0 0 0 0 S
-PF 7 4096 -1
+1073743948 0 0 0 0 0 0 0 0 S
+PF 7 4096 0 -1
 12 15 61 12d23+48 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -2615,8 +2615,8 @@ collect the bounty on his head.  It is clear that he will have to leave here
 soon though, as more find out he is here, sooner or later someone will come
 hunting him.
 ~
-2126 0 0 0 0 0 0 -800 S
-PH 0 4096 -1
+2126 0 0 0 0 0 0 0 -800 S
+PH 0 4096 0 -1
 30 8 3 30d55+330 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -2630,8 +2630,8 @@ dark brown.  A small green smudge over her left eye shows which dye she has
 used most recently.  Though fairly old and quite tired-looking she still finds
 the energy to hum while she works.
 ~
-2126 0 0 0 0 0 0 800 S
-PF 7 512 -1
+2126 0 0 0 0 0 0 0 800 S
+PF 7 512 0 -1
 10 18 67 10d14+35 2d3+1
 5.3.0.0 1296
 8 8 2
@@ -2645,8 +2645,8 @@ very hard to help keep Woodseer safe.  He is getting some well-deserved sleep
 now before his next shift.  It is odd to note that he has already bathed so
 that he can begin duty as soon as he wakes and puts on his clothes.
 ~
-1140852812 672 0 8232 0 0 0 1000 S
-PF 7 1 -1
+1140852812 672 0 0 8232 0 0 0 1000 S
+PF 7 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 4 4 1
@@ -2661,8 +2661,8 @@ something unintelligible though, probably associated with his dreams.  He has
 locked all of his weapons away, and sleeps naked certain nobody would be
 foolish enough to bother him.
 ~
-1140852812 672 0 536879144 0 0 0 1000 S
-PF 7 1 -1
+1140852812 672 0 0 536879144 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 4 4 1
@@ -2675,8 +2675,8 @@ Light blond hair frames an oval face that is highlighted by pale green eyes.
 She is out on the town shopping and sightseeing, and generally just walking
 around in a good mood.
 ~
-2252 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2252 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 7 18 77 7d18+24 2d3+1
 3.2.0.0 907
 8 8 2
@@ -2690,8 +2690,8 @@ his goods through the market to deliver them to the vendors.  He appears to
 enjoy being here, his nostrils flare as he takes deep breaths of the heavily
 scented air.
 ~
-2124 128 0 0 0 0 0 500 S
-PF 7 0 -1
+2124 128 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -2706,8 +2706,8 @@ approachable, which certainly improves his appeal.  Exactly what the source of
 his wealth is isn't really clear, he must make quite a bit of money somehow
 though.
 ~
-67110990 128 0 0 0 0 0 800 S
-PF 7 512 -1
+67110990 128 0 0 0 0 0 0 800 S
+PF 7 512 0 -1
 36 2 -15 36d64+756 4d7+10
 0.1.2.2 46656
 8 8 1
@@ -2721,8 +2721,8 @@ though, that she has seen quite a few years go by.  Her long hair is tinged
 with gray and wrinkles tug at the skin around her eyes.  She is obviously
 a wealthy and important woman, simply based upon her clothing alone.
 ~
-2126 0 0 0 0 0 0 1000 S
-PF 7 32 -1
+2126 0 0 0 0 0 0 0 1000 S
+PF 7 32 0 -1
 16 13 48 16d33+96 3d4+2
 8.6.2.0 7776
 4 4 2
@@ -2736,8 +2736,8 @@ let alone be one of the councilors of Woodseer.  It is clear from the way she
 holds herself that she is used to being respected, and her bright smile would
 suggest that she does not avoid the duties that her job entails.
 ~
-2126 128 0 8320 0 0 0 1000 S
-PF 7 32 -1
+2126 128 0 0 8320 0 0 0 1000 S
+PF 7 32 0 -1
 46 -3 -72 46d110+2484 6d6+25
 6.0.9.4 111780
 8 8 2
@@ -2753,8 +2753,8 @@ protect the people of Woodseer.  He carries a shield with the symbol of
 Woodseer as well as a sturdy short sword.  Despite his friendly smile, his coal
 black eyes are clear and hard and study everyone that enters the room.
 ~
-100665422 672 0 8248 0 0 0 1000 S
-PF 7 1 -1
+100665422 672 0 0 8248 0 0 0 1000 S
+PF 7 1 0 -1
 40 2 -28 40d95+920 4d7+10
 3.3.3.3 51840
 8 8 1
@@ -2768,8 +2768,8 @@ a councilor.  He is probably here to ask for help of some sort, and, though
 he is likely to receive it, he is embarrassed at his need.  His head hangs
 down and his eyes never seem to look up from the floor.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 9 18 71 9d21+49 2d3+1
 4.3.0.0 1166
 8 8 1
@@ -2784,8 +2784,8 @@ there might be something exciting to do.  Her bright green eyes have odd
 yellow flecks that make them seem to twinkle in the light, adding to her good
 humored pose.
 ~
-1073743950 0 0 0 0 0 0 500 S
-PF 7 1 -1
+1073743950 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 2
@@ -2799,8 +2799,8 @@ beside her eyes crinkle when she smiles.  She has been one of Woodseer's
 council members for quite some time and is quite happy she is going to retire
 soon, but until that time she intends to serve her people well.
 ~
-33556558 128 0 0 0 0 0 1000 S
-PF 7 512 -1
+33556558 128 0 0 0 0 0 0 1000 S
+PF 7 512 0 -1
 36 2 -15 36d64+756 4d7+10
 0.1.2.2 46656
 8 8 2
@@ -2815,8 +2815,8 @@ bushy black eyebrows and a black mane that stretches down past his shoulders.
 This halfling has clearly seen his share of battles and parties, and seems
 equally ready for either.
 ~
-100665422 128 0 8192 0 0 0 1000 S
-PF 7 1 -1
+100665422 128 0 0 8192 0 0 0 1000 S
+PF 7 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -2831,8 +2831,8 @@ possible that he is one of those that feels it is best to fish in the early
 morning hours just before the sun has risen, but even then he should still
 have to spend some time in the sun.
 ~
-1073743948 0 0 0 0 0 0 500 S
-PF 7 0 -1
+1073743948 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 7 18 77 7d18+24 2d3+1
 3.2.0.0 907
 5 5 1
@@ -2848,8 +2848,8 @@ Woodseer wear the same sneer when they see large stone buildings, they believe
 he didn't have a sneer twisting the left side of his face into an almost
 brutal grimace.
 ~
-2252 0 0 0 0 0 0 0 S
-PH 0 1 -1
+2252 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 8 18 74 8d21+44 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -2865,8 +2865,8 @@ money.  It is clear that this gentleman has plenty of money, he even has REAL
 gold painted on his fingernails.  Despite all he has been drinking he is thin
 and scrawny, and would have a difficult time beating up an alley cat.
 ~
-2126 0 0 0 0 0 0 1000 S
-PF 7 1 -1
+2126 0 0 0 0 0 0 0 1000 S
+PF 7 1 0 -1
 4 20 87 4d17+22 1d5+0
 2.1.0.0 518
 8 8 1
@@ -2881,8 +2881,8 @@ gotten a bit windblown on the way here.  Her beauty seems to have more to do
 with her posture and smile than her features which are really rather plain.
 Ofcourse, her rich silk clothing doesn't hurt either.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 512 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 512 0 -1
 8 18 74 8d14+28 2d3+1
 4.2.0.0 1036
 8 8 2
@@ -2895,8 +2895,8 @@ One of the many halflings that doesn't receive any special treatment at the
 Quivering Leaf, this poor woman has to wait in the bar with the "rabble".  Her
 dark eyes have a brooding quality that is misplaced in her young, round face.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 8 8 1
@@ -2912,8 +2912,8 @@ occasions.  Even though he has been here before his green eyes are wide open
 as he gawks at the finery of the restaurant, astonished at the money that must
 have gone into its creation.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -2930,8 +2930,8 @@ her physical beauty.  She smiles at her husband, and glows when he returns her
 smile.  Part of her beauty must come from the deep satisfaction she has with
 her life, which is made more clear with everything she says and does.
 ~
-2126 0 0 0 0 0 0 200 S
-PF 7 32768 -1
+2126 0 0 0 0 0 0 0 200 S
+PF 7 32768 0 -1
 10 18 67 10d19+45 2d3+1
 5.3.0.0 1296
 8 8 2
@@ -2945,8 +2945,8 @@ back the rare and valuable woods.  He looks extremely tough, yet has a patience
 about him that is difficult to fathom.  Clearly, whatever he does, he has
 enough money to drink at the most expensive bar in town.
 ~
-2126 128 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 128 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -2961,8 +2961,8 @@ skill to afford such fine clothing, but he also has excellent taste.  His
 blue silk shirt matches his eyes perfectly and plays a fine counterpart to his
 raven black hair.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 1
@@ -2977,8 +2977,8 @@ seems quite interested in tasting halfling high cuisine.  Her eyes are almost
 golden and her hair is thin and pale, and, though short, she is still taller
 than the halflings that surround her.
 ~
-1073743950 0 0 0 0 0 0 800 S
-PE 0 2 -1
+1073743950 0 0 0 0 0 0 0 800 S
+PE 0 2 0 -1
 16 13 48 16d35+112 3d4+2
 8.6.2.0 7776
 8 8 2
@@ -2994,8 +2994,8 @@ be is difficult to say.  Her rosy cheeks have been pleasantly colored by the
 sun and wind, and her light brown hair slowly curls its way past her shoulders,
 bouncing with every step she takes.
 ~
-2252 0 0 0 0 0 0 500 S
-PF 7 0 -1
+2252 0 0 0 0 0 0 0 500 S
+PF 7 0 0 -1
 8 18 74 8d18+28 2d3+1
 4.2.0.0 1036
 8 8 2
@@ -3012,8 +3012,8 @@ maitre d' winces everytime another bowl is ordered.  Thin worry lines are form
 on his brow with every order, whatever is worrying him has something to do with
 the turtle soup.
 ~
-2126 0 0 0 0 0 0 500 S
-PF 7 1 -1
+2126 0 0 0 0 0 0 0 500 S
+PF 7 1 0 -1
 30 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -3030,8 +3030,8 @@ here so it would be unwise to disturb it.  The water that flows over it from
 above and in the pool here that surrounds it seem to feed it and give it
 strength.
 ~
-33556558 160 0 537921536 0 0 0 0 S
-EW 0 1 -1
+33556558 160 0 0 537921536 0 0 0 0 S
+EW 0 1 0 -1
 55 -5 -121 55d131+4675 7d6+30
 0.0.0.0 222750
 8 8 0
@@ -3049,8 +3049,8 @@ the criminals that try to use magic to sneak by.  His grim green eyes survey
 everything that goes by, it is hard to believe that such a vigilant guard
 would even need magical assistance to help keep watch.
 ~
-100665418 160 0 8 0 0 0 1000 S
-PF 7 1 -1
+100665418 160 0 0 8 0 0 0 1000 S
+PF 7 1 0 -1
 50 -7 -114 56d143+5880 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -3066,8 +3066,8 @@ dark eyes and the way he carefully examines every customer.  He is of an
 average build, but he has a smooth even gait that is closer to the stride of
 a cat than a halfling.
 ~
-33556558 0 0 0 0 0 0 0 S
-PF 7 4096 -1
+33556558 0 0 0 0 0 0 0 0 S
+PF 7 4096 0 -1
 45 -1 -69 45d90+1935 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -3086,8 +3086,8 @@ tattoos that all of the guards possess are clearly shown on his forehead and,
 though they may be marred by a scar through them, they certainly retain their
 power.
 ~
-1174407246 672 0 0 2048 0 0 1000 S
-PF 7 512 -1
+1174407246 672 0 0 0 2048 0 0 1000 S
+PF 7 512 0 -1
 50 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -3105,8 +3105,8 @@ into a tight pony tail to keep from blocking her view of the world.  Though
 she wears a constant smile, it is clear that she is more than capable of doing
 anything she is required to do.
 ~
-1174407246 672 0 0 0 0 0 1000 S
-PF 7 32 -1
+1174407246 672 0 0 0 0 0 0 1000 S
+PF 7 32 0 -1
 50 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -3122,8 +3122,8 @@ proper tithe.  Despite the huge amounts of money he takes in, he is dressed in
 the simplest of robes, looking poorer than many beggars.  Clear blue eyes
 survey visitors to the cathedral searching out those in need of his aid.
 ~
-1073743946 0 0 184 34816 0 0 1000 S
-PF 7 32 -1
+1073743946 0 0 0 184 34816 0 0 1000 S
+PF 7 32 0 -1
 56 -7 -114 56d132+5824 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -3140,8 +3140,8 @@ as more a sign of his dedication than lack of cleanliness.  Constantly ready
 to take and deliver messages, he has saved many merchants from ruin with his
 quick deliveries.
 ~
-2122 0 0 184 2048 0 0 1000 S
-PF 7 1 -1
+2122 0 0 0 184 2048 0 0 1000 S
+PF 7 1 0 -1
 60 -10 -148 65d143+6825 7d6+35
 1.0.2.8 263250
 8 8 1
@@ -3156,8 +3156,8 @@ He speaks quickly as he cajoles people into making higher bids, yet somehow
 is always understandable.  Despite his age, he has the air of someone that
 has seen a great deal of the world, it would be unwise to try to bother him.
 ~
-1073743946 0 0 184 2048 0 0 1000 S
-PF 7 1 -1
+1073743946 0 0 0 184 2048 0 0 1000 S
+PF 7 1 0 -1
 60 -10 -132 60d143+6300 7d6+35
 6.6.9.7 243000
 8 8 1
@@ -3171,8 +3171,8 @@ clerk justice~
 &+cHe hold in one hand a large book bound with iron and in the other a beautiful
 &+ceagle quill. He is here to take care of all the justice paper work.
 ~
-67110987 0 0 168 2077 0 0 0 S
-PH 1 32 -1
+67110987 0 0 0 168 2077 0 0 0 S
+PH 1 32 0 -1
 50 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -3189,8 +3189,8 @@ scattered through her pale green eyes, eyes which seem to absorb every
 detail around her.  She gives every customer a smile, but pays special
 attention to those that clearly care for their animals well.
 ~
-100665422 128 0 553689276 12480 0 0 1000 S
-PF 7 1 -1
+100665422 128 0 0 553689276 12480 0 0 1000 S
+PF 7 1 0 -1
 56 -7 -114 56d143+5880 7d6+35
 1.3.8.6 226800
 8 8 2
@@ -3206,8 +3206,8 @@ pet a wild creature like this makes.  A small piece of leather has been
 laid over its back making it clear that someone uses this beast as a
 mount.
 ~
-134219800 0 0 0 0 0 0 0 S
-A 0 1 -1
+134219800 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 15 15 51 15d27+90 2d5+2
 0.0.0.0 7290
 8 8 1
@@ -3222,8 +3222,8 @@ for travels outside woodseer.  Though not well-suited for traveling into
 the jungle near where it has been bred, it is a sturdy beast and can
 travel long distances.
 ~
-2072 0 0 0 0 0 0 0 S
-AE 0 0 -1
+2072 0 0 0 0 0 0 0 0 S
+AE 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -3235,8 +3235,8 @@ A postal clerk awaits the next shipment of mail.
 The halfling mail clerk looks extremely bored as he awaits a new shipment of
 mail to the office.
 ~
-2059 0 0 0 0 0 0 750 S
-PF 7 0 -1
+2059 0 0 0 0 0 0 0 750 S
+PF 7 0 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -3252,8 +3252,8 @@ the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-1174407244 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+1174407244 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 30 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -3268,8 +3268,8 @@ practice their spells and work on making potions and wands.  He does his job
 with a quiet smile but it is clear he would rather be doing some studying of
 his own.
 ~
-1073776718 0 0 0 0 0 0 1000 S
-PF 7 4194304 -1
+1073776718 0 0 0 0 0 0 0 1000 S
+PF 7 4194304 0 -1
 56 8 16 26d44+286 3d6+4
 7.2.6.1 23166
 8 8 2
@@ -3283,8 +3283,8 @@ pwem halfling~
 &+mmixed.   She was trained by the great sisters of Sevenoaks.   She looks up
 &+mfrom her work and acknowledges your presence in the room with a smile.&n
 ~
-2147518538 0 0 0 0 0 0 500 S
-PF 0 524288 -1
+2147518538 0 0 0 0 0 0 0 500 S
+PF 0 524288 0 -1
 46 -3 -72 46d80+2438 6d6+25
 6.0.9.4 111780
 8 8 2
@@ -3300,8 +3300,8 @@ the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-1174407242 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+1174407242 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 50 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -3317,8 +3317,8 @@ sunburst tattoo that is rumored to give them the ability to see even invisible
 and sneaking thieves.  This guard may not be as burly as some of his friends
 but it is certain that one swift cry will bring many more.
 ~
-1174407246 672 0 8232 0 0 0 1000 S
-PF 0 1 -1
+1174407246 672 0 0 8232 0 0 0 1000 S
+PF 0 1 0 -1
 41 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -3336,8 +3336,8 @@ the criminals that try to use magic to sneak by.  His grim green eyes survey
 everything that goes by, it is hard to believe that such a vigilant guard
 would even need magical assistance to help keep watch.
 ~
-100665418 160 0 536879292 2048 0 0 1000 S
-PF 7 1 -1
+100665418 160 0 0 536879292 2048 0 0 1000 S
+PF 7 1 0 -1
 56 -7 -114 56d143+5880 7d6+35
 1.3.8.6 226800
 8 8 1
@@ -3352,8 +3352,8 @@ Woodseer and his adventuring in the nearby jungle.  His alligatorskin armor is
 a sign of his status among the guards.  Such armor is expensive, the Woodseer
 Council must value his service a great deal.
 ~
-1174407244 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+1174407244 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 50 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -3369,8 +3369,8 @@ the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-1174407244 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+1174407244 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 60 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -3386,8 +3386,8 @@ the strange tattoo on his forehead is supposed to allow him to see both
 invisible and sneaking thieves as well as helping detect whether or not any
 particular individual has any evil intentions.
 ~
-1174407242 672 0 536879144 12480 0 0 1000 S
-PF 0 1 -1
+1174407242 672 0 0 536879144 12480 0 0 1000 S
+PF 0 1 0 -1
 40 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -3401,8 +3401,8 @@ minotaur guard mercenary _spec1_~
 &+yA most mercenaries groups, there are a wide variety of skills and
 &+Yexpertise.
 ~
-1073969226 128 0 939524152 4 0 67121152 0 S
-mt 0 16384 -1
+1073969226 128 0 0 939524152 4 0 67121152 0 S
+mt 0 16384 0 -1
 51 0 -250 50d50+2000 10d10+60
 0.0.0.0 0
 8 8 1
@@ -3416,8 +3416,8 @@ minotaur guard wizard _spec1_ _nosneak_~
 &+yA most mercenaries groups, there are a wide variety of skills and
 &+Yexpertise.
 ~
-1073969226 128 0 939524152 4 0 67121152 0 S
-mt 0 512 -1
+1073969226 128 0 0 939524152 4 0 67121152 0 S
+mt 0 512 0 -1
 51 0 0 50d50+1000 8d8+20
 0.0.0.0 0
 8 8 1
@@ -3427,8 +3427,8 @@ dwarf mercenary guard _nosneak_~
 &+YA dwarf mercenary stands guard over the halflings&n
 ~
 ~
-1107785866 128 0 941096986 4 0 101724160 0 S
-pm 0 8192 -1
+1107785866 128 0 0 941096986 4 0 101724160 0 S
+pm 0 8192 0 -1
 46 0 0 50d50+1000 8d10+40
 0.0.0.0 0
 8 8 2
@@ -3443,8 +3443,8 @@ is also responsible for keeping the path along the cliffs clear of jungle
 growth.  The happy smile on his face shows that he is quite content with his
 job, and that he enjoys the outdoors.
 ~
-1073743948 672 0 0 0 0 0 1000 S
-PF 0 1 -1
+1073743948 672 0 0 0 0 0 0 1000 S
+PF 0 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -3461,8 +3461,8 @@ caravans that come to visit it.  He seems to have the strange ability to
 blend in with his surroundings, probably by the way he stands so perfectly
 still as he keeps watch.
 ~
-1140852812 672 0 0 0 0 0 1000 S
-PF 0 1 -1
+1140852812 672 0 0 0 0 0 0 1000 S
+PF 0 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -3475,8 +3475,8 @@ This odd fungus has large sharp looking thorns all around its outer edge.  It
 has clearly developed these thorns and even the light coating of spores that
 coats them as some sort of protectant from other creatures in the jungle.
 ~
-2122 0 0 0 0 0 0 -500 S
-A 0 0 -1
+2122 0 0 0 0 0 0 0 -500 S
+A 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -3490,8 +3490,8 @@ vine uses to impale its victims and suck their blood.  Clearly this strange
 vine is a horrible mutation of some sort, but it has certainly done a good
 job of surviving.
 ~
-2122 0 0 0 262144 0 0 -800 S
-VT 0 0 -1
+2122 0 0 0 0 262144 0 0 -800 S
+VT 0 0 0 -1
 3 20 90 3d15+41 1d5+0
 0.0.0.0 388
 8 8 0
@@ -3505,8 +3505,8 @@ vine uses to impale its victims and suck their blood.  Clearly this strange
 vine is a horrible mutation of some sort, but it has certainly done a good
 job of surviving.
 ~
-2122 0 0 0 262144 0 0 -800 S
-VT 0 0 -1
+2122 0 0 0 0 262144 0 0 -800 S
+VT 0 0 0 -1
 2 20 93 2d15+27 1d5+0
 0.0.0.0 259
 8 8 0
@@ -3520,8 +3520,8 @@ vine uses to impale its victims and suck their blood.  Clearly this strange
 vine is a horrible mutation of some sort, but it has certainly done a good
 job of surviving.
 ~
-2122 0 0 0 262144 0 0 -800 S
-VT 0 0 -1
+2122 0 0 0 0 262144 0 0 -800 S
+VT 0 0 0 -1
 3 20 90 3d15+41 1d5+0
 0.0.0.0 388
 8 8 0
@@ -3534,8 +3534,8 @@ This yellow flower is carefully avoided by most of the animals that travel
 through the area.  Exactly why is unclear, unlike most things in the jungle
 this flower is completely harmless.
 ~
-74 0 0 0 0 0 0 0 S
-A 0 0 -1
+74 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -3549,8 +3549,8 @@ This tiny beetle is as devious as it is vicious.  It has evolved a fine
 try to pick it up.  Then it uses its long mandibles to latch onto the victim
 and begin sucking their blood.
 ~
-2122 0 0 0 0 0 0 -500 S
-I 0 0 -1
+2122 0 0 0 0 0 0 0 -500 S
+I 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -3562,8 +3562,8 @@ a &+Yb&+Rr&+Gi&+Mg&+Yh&+Rt&+Gl&+My&N colored parrot~
 Brilliant colors line all the feathers of this magificent creature.  It is no
 wonder that its feathers are so highly prized, and that it is heavily hunted.
 ~
-133192 0 0 0 0 0 0 0 S
-B 0 0 -1
+133192 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 0.0.0.0 907
 8 8 0
@@ -3577,8 +3577,8 @@ the creature has, combined with its sharp talons and wicked beak make it a
 very tough customer indeed.  This bird is obviously more used to making other
 creatures its meal rather than the other way around.
 ~
-1073875018 0 0 16 0 0 0 -400 S
-B 0 0 -1
+1073875018 0 0 0 16 0 0 0 -400 S
+B 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 0
@@ -3591,8 +3591,8 @@ This magificent creature moves with a grace and cunning that puts all other
 creatures to shame.  There are few creatures as beautiful and deadly as this
 calm predator, though in this jungle she is no where close to being queen.
 ~
-1073743946 0 0 0 0 0 0 -350 S
-A 0 1 -1
+1073743946 0 0 0 0 0 0 0 -350 S
+A 0 1 0 -1
 12 15 61 12d27+72 2d5+2
 0.0.0.0 5832
 8 8 0
@@ -3606,8 +3606,8 @@ and his strong body and sharp claws make him a formidable foe.  His pale
 &+Bblue&N eyes make him look less dangerous than he truely is, but few in the
 jungle would dare to come near him, if they seem him that is.
 ~
-1073743944 0 0 524288 0 0 0 -400 S
-A 0 1 -1
+1073743944 0 0 0 524288 0 0 0 -400 S
+A 0 1 0 -1
 14 15 55 14d27+84 2d5+2
 0.0.0.0 6804
 8 8 0
@@ -3620,8 +3620,8 @@ This giant snake has a mottled green skin.  Its coloration is perfect for
 blending in with the jungle plants and leaves that it hides among while it
 patiently waits for prey.
 ~
-1073743946 0 0 0 0 0 0 -400 S
-RS 0 0 -1
+1073743946 0 0 0 0 0 0 0 -400 S
+RS 0 0 0 -1
 10 18 67 10d18+35 2d3+1
 0.0.0.0 1296
 8 8 0
@@ -3635,8 +3635,8 @@ dark jungle, yet no creature has dared to try to kill and eat it.  It is
 likely that they recognize its bright color doesn't mean that it is
 dangerous, just highly poisonous to eat.
 ~
-1073743880 0 0 0 0 0 0 -400 S
-RS 0 0 -1
+1073743880 0 0 0 0 0 0 0 -400 S
+RS 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 0
@@ -3652,8 +3652,8 @@ has a mischevious grin on its face as it watches everything going on around it
 with great interest.  Though still quite young, it would not be wise to
 underestimate this small creature's abilities.
 ~
-1073875016 128 0 134217728 0 0 0 0 S
-DK 0 512 -1
+1073875016 128 0 0 134217728 0 0 0 0 S
+DK 0 512 0 -1
 16 13 38 16d24+192 3d4+2
 8.6.4.0 7776
 8 8 0
@@ -3666,8 +3666,8 @@ This small snake-like creature has specifically adopted ambush as its favored
 hunting tactic.  There is a dark and evil intelligence behind its evil eyes,
 and its heavily coiled body looks ready to spring into action at any time.
 ~
-2122 0 0 1048576 0 0 0 -750 S
-RS 0 0 -1
+2122 0 0 0 1048576 0 0 0 -750 S
+RS 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 0
@@ -3681,8 +3681,8 @@ hunting tactic.  Its particularily long fangs show that it has gotten very good
 at killing by surprise, perhaps by being smart enough to know when to hold back
 and leave a particularily dangerous target alone.
 ~
-2122 0 0 1048576 0 0 0 -750 S
-RS 0 0 -1
+2122 0 0 0 1048576 0 0 0 -750 S
+RS 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 0.0.0.0 907
 8 8 0
@@ -3698,8 +3698,8 @@ and begin sucking its blood.  This creature is truely one of the most dangerous
 around.  Adventurers have been known to go to bed on what they thought was a
 soft bed of moss never to awake again.
 ~
-33556554 0 0 0 262144 0 0 -900 S
-A 0 0 -1
+33556554 0 0 0 0 262144 0 0 -900 S
+A 0 0 0 -1
 6 18 80 6d18+21 2d3+1
 0.0.0.0 777
 8 8 0
@@ -3715,8 +3715,8 @@ used for a lot more if needed.  Fortuneatly, this creature is quite near-
 sighted and the jungle stench and lack of a breeze conceal most movements from
 it.
 ~
-1073743944 0 0 0 0 0 0 -400 S
-A 0 1 -1
+1073743944 0 0 0 0 0 0 0 -400 S
+A 0 1 0 -1
 12 15 61 12d27+72 2d5+2
 0.0.0.0 5832
 8 8 0
@@ -3730,8 +3730,8 @@ sharp pincers could easily cut right through most types of armor and its hard
 chiton looks tougher than some types of plate mail.  It is very fortunate that
 this ill-tempered creature doesn't go out of its way to pick any fights.
 ~
-1073743946 0 0 0 0 0 0 -400 S
-I 0 1 -1
+1073743946 0 0 0 0 0 0 0 -400 S
+I 0 1 0 -1
 14 15 55 14d27+84 2d5+2
 0.0.0.0 6804
 8 8 0
@@ -3747,8 +3747,8 @@ seems dark to its core.  The talons, beak, eyes, and feathers all have a
 darkness that seems light when compared to the darkness that seems to seep out
 of it from within.
 ~
-133320 0 0 134217728 0 0 0 -750 S
-B 0 0 -1
+133320 0 0 0 134217728 0 0 0 -750 S
+B 0 0 0 -1
 8 18 74 8d18+28 2d3+1
 0.0.0.0 1036
 8 8 0
@@ -3762,8 +3762,8 @@ older than the other monkeys in this group.  To get this old he must be quite
 adept at both fighting and running away.  His dark eyes haven't lost any power
 though, they are like evil orbs constantly watching everything.
 ~
-1073742030 0 0 0 0 0 0 -600 S
-A 0 1 -1
+1073742030 0 0 0 0 0 0 0 -600 S
+A 0 1 0 -1
 10 18 67 10d21+55 2d3+1
 0.0.0.0 1296
 8 8 1
@@ -3777,8 +3777,8 @@ calm and docile otherwise.  There is something dark and sinister about her
 though, it is as if some deep evil within the jungle has seeped into her, as
 well as into the other animals that can be seen throughout the area.
 ~
-2126 0 0 0 0 0 0 -400 S
-A 0 0 -1
+2126 0 0 0 0 0 0 0 -400 S
+A 0 0 0 -1
 7 18 77 7d18+24 2d3+1
 0.0.0.0 907
 8 8 2
@@ -3792,8 +3792,8 @@ darkness about it.  There is something evil about it, normally such small young
 creatures would be considered 'cute' but there is something about this one that
 makes it unapproachable.
 ~
-74 0 0 0 0 0 0 -400 S
-A 0 0 -1
+74 0 0 0 0 0 0 0 -400 S
+A 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 0
@@ -3808,8 +3808,8 @@ aura that seems to surround him.  How and why this creature has obtained this
 dark taint to its soul is unclear, perhaps it has something to do with the
 jungle.
 ~
-2126 0 0 0 0 0 0 -400 S
-A 0 0 -1
+2126 0 0 0 0 0 0 0 -400 S
+A 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 0.0.0.0 648
 8 8 0
@@ -3824,8 +3824,8 @@ protecting its group, everything else is secondary.  Something about the
 jungle, or perhaps just this part of it, has an evil about it that is so
 powerful it has been able to taint the soul of even this simple creature.
 ~
-1073743950 0 0 0 0 0 0 -600 S
-A 0 1 -1
+1073743950 0 0 0 0 0 0 0 -600 S
+A 0 1 0 -1
 9 18 71 9d21+49 2d3+1
 0.0.0.0 1166
 8 8 1
@@ -3842,8 +3842,8 @@ that provide such fine lumber to the craftsmen of Woodseer.  Confidently
 walking through the jungle with his hands on his axe, he has been left alone by
 creatures that would otherwise threaten most people foolish enough to be here.
 ~
-2124 128 0 0 0 0 0 0 S
-PF 7 1 -1
+2124 128 0 0 0 0 0 0 0 S
+PF 7 1 0 -1
 20 13 35 20d35+140 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -3859,8 +3859,8 @@ in by tales of lost  cities and hidden treasures.  One can only hope this
 beautiful halfling woman fares better than most of the others foolish enough to
 trek into the jungle.
 ~
-1073743950 128 0 0 0 0 0 0 S
-PF 7 16384 -1
+1073743950 128 0 0 0 0 0 0 0 S
+PF 7 16384 0 -1
 18 13 42 18d35+126 3d4+2
 9.7.3.0 8748
 8 8 2
@@ -3875,8 +3875,8 @@ humanoid has huge bulbous eyes that enable it to see even in the smallest
 amount of light. Though as small as a halfling, it has a ferocious look about
 it that dares anything to be foolish enough to challenge it.
 ~
-1073743946 0 0 33554432 0 0 0 -700 S
-H 0 1 -1
+1073743946 0 0 0 33554432 0 0 0 -700 S
+H 0 1 0 -1
 12 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 0
@@ -3892,8 +3892,8 @@ strange &+Yyellow&N bulbous eyes to be quite repulsive.  His skin glistens with
 the moisture of the jungle, which is good, for this amphibian needs to stay
 warm and wet.
 ~
-1073743950 0 0 33554432 0 0 0 -700 S
-H 0 1 -1
+1073743950 0 0 0 33554432 0 0 0 -700 S
+H 0 1 0 -1
 20 13 35 20d35+140 3d4+2
 0.9.3.0 9720
 8 8 0
@@ -3912,8 +3912,8 @@ its neck, but it is hard to imagine anyone actually being able to tame such a
 tremendous beast.  Perhaps there is something more to this creature than meets
 the eye.
 ~
-1107298378 160 0 1573052 2048 0 0 1000 S
-AC 0 128 -1
+1107298378 160 0 0 1573052 2048 0 0 1000 S
+AC 0 128 0 -1
 54 -5 -107 54d121+4536 7d6+30
 9.1.7.6 218700
 8 8 1
@@ -3929,8 +3929,8 @@ help threaten anything that might attempt to harm him.  The best protection
 though are his mottled brown feathers which help him fade into the shadows and
 hide in the event of real danger.
 ~
-1073875018 0 0 0 0 0 0 -400 S
-H 0 4096 -1
+1073875018 0 0 0 0 0 0 0 -400 S
+H 0 4096 0 -1
 16 13 48 16d30+80 3d4+2
 8.6.2.0 7776
 8 8 1
@@ -3947,8 +3947,8 @@ to Woodseer.  He is marked with the tattos of the halfing guards,
 tattoos that enable him to find any sneaky criminals that try to stalk
 through the shadows unseen.
 ~
-1174407246 672 0 8232 0 0 0 1000 S
-PF 0 1 -1
+1174407246 672 0 0 8232 0 0 0 1000 S
+PF 0 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 1
@@ -3962,8 +3962,8 @@ seems content to prance nimbly through the mountains looking for food.
 Despite its small size, mountain trails are often narrow enough that it
 can certainly be a nuisance.
 ~
-2248 0 0 0 0 0 0 0 S
-A 0 1 -1
+2248 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 7 18 77 7d21+38 2d3+1
 0.0.0.0 907
 8 8 0
@@ -3977,8 +3977,8 @@ looks more than capable of using them.  Exactly what it is hunting, or
 even if it is hunting is unclear.  What is obvious though, is that
 nobody in their right mind wants to attack or anger it.
 ~
-1073875016 0 0 134217744 0 0 0 0 S
-B 0 1 -1
+1073875016 0 0 0 134217744 0 0 0 0 S
+B 0 1 0 -1
 14 15 55 14d27+84 2d5+2
 0.0.0.0 6804
 8 8 0

@@ -5,7 +5,7 @@ potion thick cyan _id_~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 22 56 -1 -1 0 0 0 0
-2 8742 100
+2 8742 100 100
 E
 _id_name_~
 potion vitality
@@ -21,7 +21,7 @@ potion recharging~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 9 65 -1 -1 0 0 0 0
-1 2734 100
+1 2734 100 100
 #2802
 suit armor leather~
 &+ya full suit of leather armor&N~
@@ -29,7 +29,7 @@ suit armor leather~
 ~
 9 13 0 0 7 0 536879104 9 0 4165209604 0
 20 3 1 3 0 0 0 0
-1 3212 100
+1 3212 100 100
 #2803
 leggings leather~
 &+ysome leather leggings&N~
@@ -37,7 +37,7 @@ leggings leather~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-4 1534 100
+4 1534 100 100
 #2805
 boots leather soft high~
 &+ya pair of high-soft leather boots&N~
@@ -45,7 +45,7 @@ boots leather soft high~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-3 1276 100
+3 1276 100 100
 #2806
 sandwich beef~
 a beef sandwich~
@@ -53,7 +53,7 @@ A beef sandwich lies here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-2 21 100
+2 21 100 100
 #2807
 sandwich roast pork~
 a pork roast sandwich~
@@ -61,7 +61,7 @@ A pork roast sandwich lies here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-2 28 100
+2 28 100 100
 #2808
 map~
 an old map~
@@ -69,7 +69,7 @@ An old looking map lies here.~
 ~
 12 28 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 4237 100
+1 4237 100 100
 E
 map old~
 
@@ -101,7 +101,7 @@ An gray map lies here.~
 ~
 12 28 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 4237 100
+1 4237 100 100
 E
 map gray~
 
@@ -133,7 +133,7 @@ vial poison~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 20 57 -1 -1 0 0 0 0
-2 5498 100
+2 5498 100 100
 #2811
 gloves black leather~
 &+La pair of black leather gloves&n~
@@ -141,7 +141,7 @@ gloves black leather~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 4 7 6 3 0 0 0 0
-4 2138 100
+4 2138 100 100
 #2812
 cup soup~
 a cup of soup~
@@ -149,7 +149,7 @@ A cup of soup lies here.~
 ~
 19 9 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 #2813
 ribs delicious~
 &+Rsome delicious ribs&N~
@@ -157,7 +157,7 @@ ribs delicious~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 36 0 0 0 0 0 0 0
-2 172 100
+2 172 100 100
 #2814
 ale pint~
 a pint~
@@ -165,7 +165,7 @@ A pint of ale lies here.~
 ~
 17 16 0 0 7 0 0 16385 0 0 0
 4 4 3 0 0 0 0 0
-5 82 100
+5 82 100 100
 #2815
 bbq sandwich~
 &+Ra delicious BBQ sandwich&N~
@@ -173,7 +173,7 @@ bbq sandwich~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 36 0 0 0 0 0 0 0
-2 172 100
+2 172 100 100
 #2816
 sleeves steel~
 &+Wsome steel sleeves&n~
@@ -181,7 +181,7 @@ sleeves steel~
 ~
 9 16 3 8 7 0 0 257 0 4173708804 0
 6 8 1 3 0 0 0 0
-4 9345 100
+4 9345 100 100
 #2817
 steel leggings~
 &+Wsome steel leggings&n~
@@ -189,7 +189,7 @@ steel leggings~
 ~
 9 16 3 8 7 0 0 33 0 4173708804 0
 6 5 1 3 0 0 0 0
-4 1122 100
+4 1122 100 100
 #2818
 buckler silver rimed~
 &+Wa silver rimmed buckler&n~
@@ -197,7 +197,7 @@ buckler silver rimed~
 ~
 37 22 3 15 7 0 0 513 0 4165209604 0
 1 1 2 6 0 0 0 0
-4 1827 100
+4 1827 100 100
 #2819
 bracelet polished steel~
 &+Wa polished steel bracelet&N~
@@ -205,7 +205,7 @@ bracelet polished steel~
 ~
 9 16 3 3 7 0 0 4097 64 0 0
 0 11 24 3 0 0 0 0
-2 1427 100
+2 1427 100 100
 A
 17 -5
 #2820
@@ -215,7 +215,7 @@ torch magical~
 ~
 1 16 3 8 7 0 0 65537 64 0 0
 0 0 -1 0 0 0 0 0
-2 1221 100
+2 1221 100 100
 #2821
 steel dog collar~
 &+Wa steel dog collar&N~
@@ -223,7 +223,7 @@ steel dog collar~
 ~
 9 16 0 0 7 0 0 5 64 0 0
 0 2 1 3 0 0 0 0
-2 817 100
+2 817 100 100
 A
 17 -5
 #2822
@@ -233,7 +233,7 @@ wicked dagger~
 ~
 5 16 2 3 7 0 0 8193 64 4194697632 0
 2 1 4 11 0 0 0 0
-7 4782 100
+7 4782 100 100
 E
 dagger wicked~
 This dagger does not look like it came from an excellent fantasy film with
@@ -250,7 +250,7 @@ dagger black assassin~
 ~
 5 16 2 3 7 0 1024 8193 0 8515584 0
 2 1 4 11 0 0 0 0
-3 800 100
+3 800 100 100
 E
 dagger black~
 It is a fine weapon, made from blackened duranium steel that will not
@@ -263,7 +263,7 @@ vial sleep poison~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 15 68 -1 -1 0 0 0 0
-2 4728 100
+2 4728 100 100
 #2825
 vial poison~
 &+La vial of poison&N~
@@ -271,7 +271,7 @@ vial poison~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 15 33 -1 -1 0 0 0 0
-2 1728 100
+2 1728 100 100
 #2827
 potion stealth~
 &+Ma potion of stealth&n~
@@ -279,7 +279,7 @@ potion stealth~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 13 73 -1 -1 0 0 0 0
-2 22872 100
+2 22872 100 100
 #2828
 sword venom~
 &+La sword of venom&n~
@@ -287,7 +287,7 @@ sword venom~
 ~
 5 16 3 10 7 0 0 8193 0 4198895524 0
 9 1 4 0 0 0 0 0
-8 2158 100
+8 2158 100 100
 E
 sword~
 The sword is typical of a fine looking short sword, except in that at its tip,
@@ -301,7 +301,7 @@ cloak leather~
 ~
 9 13 3 8 7 0 0 1025 64 0 0
 0 9 1 3 0 0 0 0
-5 1426 100
+5 1426 100 100
 E
 cloak leather~
 The cloak is exceptional fine workmanship, made from the finest hides
@@ -319,7 +319,7 @@ ring tiny silver~
 ~
 9 22 1 1 7 0 0 3 64 0 0
 0 1 0 3 0 0 0 0
-1 4227 100
+1 4227 100 100
 E
 ring silver tiny~
 The ring a very beautiful, making a small loop.
@@ -335,7 +335,7 @@ water fountain~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #2832
 water fountain~
 &+ba small fountain&n~
@@ -343,7 +343,7 @@ water fountain~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #2833
 crate wooden~
 &+ya wooden crate&n~
@@ -351,7 +351,7 @@ crate wooden~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 1000 5 -1 250 0 0 0 0
-1 100 100
+1 100 100 100
 #2834
 pile trash~
 a pile of trash~
@@ -359,7 +359,7 @@ A pile of trash lies here.~
 ~
 13 5 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 #2835
 sword broken~
 a broken sword~
@@ -367,7 +367,7 @@ A broken sword lies here, abandoned and useless.~
 ~
 5 16 3 10 7 0 0 8193 0 0 0
 9 1 1 3 0 0 0 0
-4 1 100
+4 1 100 100
 #2836
 rotting clothes~
 some rotting clothes~
@@ -375,7 +375,7 @@ Some rotting clothes lay here in a heap.~
 ~
 13 3 3 8 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 #2837
 garbage mound~
 a mound of garbage~
@@ -383,7 +383,7 @@ A mound of garbage lies here, emitting a cloud of horrible odor.~
 ~
 13 5 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-500 0 100
+500 0 100 100
 #2838
 door secret~
 &+La secret door&n~
@@ -391,7 +391,7 @@ door secret~
 ~
 12 5 0 0 7 0 12288 0 0 0 0
 2943 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #2839
 door secret~
 &+La secret door&n~
@@ -399,7 +399,7 @@ door secret~
 ~
 12 5 0 0 7 0 12288 0 0 0 0
 2942 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #2840
 wall panel secret~
 a secret wall panel~
@@ -407,7 +407,7 @@ The wall panel was very cleverly hidden.~
 ~
 12 5 5 50 7 0 12288 0 0 0 0
 2951 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #2841
 wall panel secret~
 a secret wall panel~
@@ -415,7 +415,7 @@ The wall panel was very cleverly hidden.~
 ~
 12 5 5 50 7 0 12288 0 0 0 0
 2951 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #2842
 safe huge~
 a huge safe~
@@ -423,7 +423,7 @@ A huge safe is mounted in the back wall here.~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 1000 15 2846 100 0 0 0 0
-0 100 100
+0 100 100 100
 #2843
 planks pile wooden~
 &+ya pile of wooden planks&n~
@@ -431,7 +431,7 @@ planks pile wooden~
 ~
 13 6 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-500 0 100
+500 0 100 100
 #2844
 water fountain old~
 &+ban old fountain&n~
@@ -439,7 +439,7 @@ water fountain old~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2845
 water well large~
 a large well~
@@ -447,7 +447,7 @@ A large well is here.~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2846
 key safe~
 a safe key~
@@ -455,7 +455,7 @@ A safe key lies here.~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 2 0 0 0 0 0 0 0
-2 572 100
+2 572 100 100
 #2847
 potion red _id_~
 &+ra dark red potion&n~
@@ -463,7 +463,7 @@ potion red _id_~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 20 43 -1 -1 0 0 0 0
-2 427 100
+2 427 100 100
 E
 _id_name_~
 potion curing
@@ -479,7 +479,7 @@ Some makup lies here.~
 ~
 15 15 3 0 7 0 0 16385 0 0 0
 1 5 0 100 0 0 0 0
-1 127 100
+1 127 100 100
 #2849
 coins gold~
 &+Ya pile of gold coins~
@@ -487,7 +487,7 @@ coins gold~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 12 0 0 0 0 0
-1 0 100
+1 0 100 100
 #2850
 dress sleezy~
 &+ra very revealing sleezy dress&N~
@@ -495,7 +495,7 @@ dress sleezy~
 ~
 11 3 3 8 7 0 0 5 0 0 0
 0 0 0 4 0 0 0 0
-2 17 100
+2 17 100 100
 #2997
 potion invisibility~
 &+La potion of invisibility&n~
@@ -503,7 +503,7 @@ potion invisibility~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 5 189 -1 -1 0 0 0 0
-2 28333 100
+2 28333 100 100
 #2998
 tower clock huge~
 &+Wthe clock tower&N~
@@ -511,7 +511,7 @@ tower clock huge~
 ~
 12 16 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 clock tower huge~
 The tower stands at least fifty feet high, and is made of small stone bricks.
@@ -528,7 +528,7 @@ key verzanan city~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 #3000
 water glass~
 a glass~
@@ -536,7 +536,7 @@ A water glass has been left here.~
 ~
 17 7 0 0 7 0 0 1 0 0 0
 4 4 0 0 0 0 0 0
-5 30 100
+5 30 100 100
 #3001
 beer bottle~
 &+ya bottle&N~
@@ -544,7 +544,7 @@ beer bottle~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 8 8 1 0 0 0 0 0
-10 20 100
+10 20 100 100
 #3002
 ale bottle~
 a bottle~
@@ -552,7 +552,7 @@ A dark bottle of ale has been left here.~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 3 0 0 0 0 0
-10 15 100
+10 15 100 100
 #3003
 firebreather bottle~
 &+ra firebreather&n~
@@ -560,7 +560,7 @@ firebreather bottle~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 7 0 0 0 0 0
-11 50 100
+11 50 100 100
 #3004
 local bottle~
 a bottle~
@@ -568,7 +568,7 @@ A dark bottle has been left here.~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 8 0 0 0 0 0
-11 20 100
+11 20 100 100
 #3008
 polearm pole steel~
 &+Wa long steel polearm&n~
@@ -576,7 +576,7 @@ polearm pole steel~
 ~
 5 16 4 0 7 0 4195328 8193 66 87572571 0
 8 2 6 3 0 0 0 0
-12 1548 100
+12 1548 100 100
 #3009
 battleaxe axe~
 &+Wa double-bladed battle axe&N~
@@ -584,7 +584,7 @@ a double-bladed battle axe lies on the ground here.~
 ~
 5 16 3 8 7 0 1024 8193 66 87572571 0
 1 1 9 3 0 0 0 0
-15 4874 100
+15 4874 100 100
 #3010
 bread~
 &+ya loaf of bread&N~
@@ -592,7 +592,7 @@ A loaf of bread has been left here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #3011
 danish pastry~
 a danish pastry~
@@ -600,7 +600,7 @@ A nice looking delicious danish pastry has been placed here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 6 0 0 0 0 0 0 0
-1 5 100
+1 5 100 100
 #3012
 ale bottle~
 a bottle~
@@ -608,7 +608,7 @@ A bottle lies here.~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 4 3 0 0 0 0 0
-6 78 100
+6 78 100 100
 #3013
 scroll teleport teleportation~
 a scroll of teleportation~
@@ -616,7 +616,7 @@ A scroll lies here.~
 ~
 2 29 1 2 7 0 0 16385 66 0 0
 9 1 -1 -1 0 0 0 0
-1 781 100
+1 781 100 100
 #3014
 wand missiles magic~
 &+Ya wand of missiles&N~
@@ -624,7 +624,7 @@ wand missiles magic~
 ~
 3 16 2 4 7 0 1024 16385 66 4197892 0
 1 3 3 32 0 0 0 0
-1 3271 100
+1 3271 100 100
 #3015
 potion posion cure~
 &+ma potion of poison curing&n~
@@ -632,7 +632,7 @@ potion posion cure~
 ~
 10 7 2 4 7 0 0 1 66 0 0
 21 43 -1 -1 0 0 0 0
-2 3891 100
+2 3891 100 100
 #3016
 darkale pitcher~
 &+ya pitcher&n~
@@ -640,7 +640,7 @@ darkale pitcher~
 ~
 17 9 0 0 7 0 0 16385 0 0 0
 20 20 4 0 0 0 0 0
-30 189 100
+30 189 100 100
 #3017
 symbol holy platinum~
 &+Wa platinum holy symbol&N~
@@ -648,7 +648,7 @@ symbol holy platinum~
 ~
 8 25 3 2 7 0 8 16385 66 4173708804 0
 0 0 0 0 0 0 0 0
-4 7981 100
+4 7981 100 100
 E
 holy symbol platinum~
 Shaped in an elegantly curving anhk made from pure platinum, this
@@ -670,7 +670,7 @@ water holy vial~
 ~
 17 40 1 2 7 0 0 16385 66 0 0
 1 1 17 0 0 0 0 0
-1 7015 100
+1 7015 100 100
 #3021
 sword small~
 &+Wa small sword&N~
@@ -678,7 +678,7 @@ A small sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 4198895524 0
 9 1 4 11 0 0 0 0
-3 60 100
+3 60 100 100
 E
 sword small~
 The small sword seems to have an inscription of some sort.
@@ -694,7 +694,7 @@ A simple looking wooden club is here.~
 ~
 5 6 3 8 7 0 0 8193 0 4173708804 0
 10 1 4 7 0 0 0 0
-3 12 100
+3 12 100 100
 #3024
 warhammer hammer~
 a warhammer~
@@ -702,7 +702,7 @@ A medium sized warhammer is here.~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 4 1 6 7 0 0 0 0
-6 50 100
+6 50 100 100
 #3025
 flail large~
 a flail~
@@ -710,7 +710,7 @@ A large flail is here.~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 3 1 7 7 0 0 0 0
-6 625 100
+6 625 100 100
 #3029
 water skin leather~
 &+ya leather skin&N~
@@ -718,7 +718,7 @@ water skin leather~
 ~
 17 12 3 8 7 0 0 1 0 0 0
 20 20 0 0 0 0 0 0
-23 100 100
+23 100 100 100
 #3033
 box~
 a box~
@@ -726,7 +726,7 @@ A small box.~
 ~
 15 5 3 0 7 0 0 16385 0 0 0
 10 0 0 100 0 0 0 0
-5 50 100
+5 50 100 100
 #3034
 umbrella brolly~
 an umbrella~
@@ -734,7 +734,7 @@ A large umbrella has been unceremoniously dumped here.~
 ~
 11 6 0 0 7 0 0 16385 0 0 0
 0 -100 -10 3 0 0 0 0
-6 30 100
+6 30 100 100
 #3035
 diamond tiny~
 &+Wa tiny diamond&N~
@@ -742,7 +742,7 @@ diamond tiny~
 ~
 8 8 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 4875 100
+1 4875 100 100
 #3036
 ruby tiny~
 &+ra tiny ruby&n~
@@ -750,7 +750,7 @@ ruby tiny~
 ~
 8 31 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 5575 100
+1 5575 100 100
 #3037
 sapphire tiny~
 &+ba tiny sapphire&n~
@@ -758,7 +758,7 @@ sapphire tiny~
 ~
 8 33 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 6875 100
+1 6875 100 100
 #3038
 emerald beautiful~
 &+ga beautiful emerald&n~
@@ -766,7 +766,7 @@ emerald beautiful~
 ~
 8 32 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 7428 100
+1 7428 100 100
 #3039
 opal shining~
 &+Ba shining opal&n~
@@ -774,7 +774,7 @@ opal shining~
 ~
 8 26 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1842 100
+1 1842 100 100
 #3040
 breast steel plate~
 &+Wa steel breast plate&n~
@@ -782,7 +782,7 @@ breast steel plate~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 7 3 1 3 0 0 0 0
-50 18000 100
+50 18000 100 100
 #3041
 chain mail shirt~
 &+Wa chain mail shirt&N~
@@ -790,7 +790,7 @@ A chain mail shirt is lying on the ground.~
 ~
 9 16 3 8 7 0 0 9 0 4173708804 0
 5 3 1 3 0 0 0 0
-30 2500 100
+30 2500 100 100
 #3042
 shield~
 a shield~
@@ -798,7 +798,7 @@ A small wooden shield is lying on the ground.~
 ~
 37 16 3 15 7 0 0 513 0 4165209604 0
 1 1 2 2 0 0 0 0
-3 100 100
+3 100 100 100
 #3043
 jacket soft leather~
 &+ya leather jacket&N~
@@ -806,7 +806,7 @@ jacket soft leather~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 2 3 1 3 0 0 0 0
-10 200 100
+10 200 100 100
 #3044
 jacket studded~
 &+ya studded leather jacket&N~
@@ -814,7 +814,7 @@ jacket studded~
 ~
 9 13 0 0 7 0 0 9 0 4165209604 0
 3 3 1 3 0 0 0 0
-20 500 100
+20 500 100 100
 #3045
 jacket scale mail~
 a scale mail jacket~
@@ -822,7 +822,7 @@ A scale mail jacket is lying on the ground.~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 4 3 1 3 0 0 0 0
-40 800 100
+40 800 100 100
 #3046
 bronze breast plate~
 &+ya bronze breast plate&n~
@@ -830,7 +830,7 @@ bronze breast plate~
 ~
 9 20 0 0 7 0 0 9 0 4173708804 0
 6 3 1 3 0 0 0 0
-45 7000 100
+45 7000 100 100
 #3047
 beef dried~
 &+ysome dried beef&n~
@@ -838,7 +838,7 @@ beef dried~
 ~
 19 3 2 2 7 0 0 1 0 0 0
 18 0 0 0 0 0 0 0
-1 24 100
+1 24 100 100
 #3049
 water cup~
 a cup~
@@ -846,7 +846,7 @@ A cup of water lies here.~
 ~
 17 40 0 0 7 0 0 1 0 0 0
 2 2 0 0 0 0 0 0
-3 12 100
+3 12 100 100
 #3050
 scroll vellum _id_~
 &+ya tightly rolled vellum scroll&n~
@@ -854,7 +854,7 @@ A scroll has carelessly been left here.~
 ~
 2 29 1 2 7 0 0 16385 64 0 0
 12 45 -1 -1 0 0 0 0
-1 2001 100
+1 2001 100 100
 E
 scroll vellum~
 The scroll has a magic formula drawn upon it:
@@ -880,7 +880,7 @@ staff _id_~
 ~
 4 29 3 10 7 0 1024 16385 0 4197892 0
 12 1 1 38 0 0 0 0
-7 5000 100
+7 5000 100 100
 E
 staff~
 The staff is made of old oak, and is around five feet long. It fits
@@ -908,7 +908,7 @@ A staff had carelessly been left here.~
 ~
 4 6 3 10 7 0 1024 16385 0 33685920 0
 10 5 5 16 0 0 0 0
-7 8500 100
+7 8500 100 100
 E
 staff~
 The staff is made of metals unknown to you.
@@ -920,7 +920,7 @@ Some dried fruit lies here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 17 100
+1 17 100 100
 #3058
 suit chain chainmail~
 &+Wa suit of chainmail armor&N~
@@ -928,7 +928,7 @@ A suit of chainmail armor lies here.~
 ~
 9 16 3 10 7 0 0 9 0 4173708804 0
 6 3 1 3 0 0 0 0
-30 20000 100
+30 20000 100 100
 A
 2 1
 #3059
@@ -938,7 +938,7 @@ A round shield lies here.~
 ~
 37 16 3 15 7 0 0 513 0 4198895524 0
 2 1 3 4 0 0 0 0
-5 2100 100
+5 2100 100 100
 #3060
 raft~
 &+ya raft&n~
@@ -946,7 +946,7 @@ raft~
 ~
 22 6 4 30 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-75 400 100
+75 400 100 100
 E
 raft~
 The raft looks very primitive.
@@ -958,7 +958,7 @@ canoe~
 ~
 22 6 4 30 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-32 1000 100
+32 1000 100 100
 E
 canoe~
 The canoe is fairly light.
@@ -970,7 +970,7 @@ A magic carpet is lying here, obviously left lying around by some idiot!~
 ~
 23 3 2 5 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-50 3000 100
+50 3000 100 100
 E
 carpet~
 This carpet is a very finely woven thick rug. It looks...relatively safe...
@@ -982,7 +982,7 @@ Some chainmail leggings lie here.~
 ~
 9 16 3 8 7 0 0 33 0 4173708804 0
 5 5 1 3 0 0 0 0
-4 1894 100
+4 1894 100 100
 #3064
 plates arm bronze~
 &+ysome bronze arm plates&n~
@@ -990,7 +990,7 @@ plates arm bronze~
 ~
 9 20 3 8 7 0 0 257 0 4173708804 0
 7 8 1 3 0 0 0 0
-4 5879 100
+4 5879 100 100
 #3066
 sword bastard~
 &+Wa fine bastard sword&N~
@@ -998,7 +998,7 @@ A fine bastard sword lies here.~
 ~
 5 16 3 10 7 0 4195328 8193 64 87572571 0
 5 2 8 3 0 0 0 0
-10 7582 100
+10 7582 100 100
 A
 18 1
 A
@@ -1010,7 +1010,7 @@ A key, obviously important, has been discarded here.~
 ~
 18 16 1 1 7 0 8388608 1 0 0 0
 3067 0 0 0 0 0 0 0
-30 50 100
+30 50 100 100
 #3068
 tally sheet~
 a tally sheet~
@@ -1018,7 +1018,7 @@ A tally sheet can be seen tacked to the wall, just outside the cell.~
 ~
 12 28 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-99 0 100
+99 0 100 100
 E
 tally sheet~
 It is clearly labeled is property of the Verzanan jail, and includes
@@ -1031,7 +1031,7 @@ lantern bullseye~
 ~
 1 16 0 0 7 0 0 16385 0 0 0
 0 0 192 0 0 0 0 0
-3 138 100
+3 138 100 100
 #3070
 gauntlets bronze~
 &+ya pair of bronze gauntlets&n~
@@ -1039,7 +1039,7 @@ gauntlets bronze~
 ~
 9 20 3 5 7 0 0 129 0 4173708804 0
 6 7 1 3 0 0 0 0
-8 1750 100
+8 1750 100 100
 #3071
 gloves leather~
 &+ya pair of leather gloves&N~
@@ -1047,7 +1047,7 @@ gloves leather~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 3 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #3075
 helmet bronze~
 &+ya bronze helmet&n~
@@ -1055,7 +1055,7 @@ helmet bronze~
 ~
 9 20 3 10 7 0 0 17 0 4173708804 0
 6 4 1 3 0 0 0 0
-8 3500 100
+8 3500 100 100
 #3076
 cap leather~
 &+ya leather cap&N~
@@ -1063,7 +1063,7 @@ cap leather~
 ~
 9 13 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-3 150 100
+3 150 100 100
 #3077
 bracelet bronze~
 &+ya bronze bracelet&n~
@@ -1071,7 +1071,7 @@ bracelet bronze~
 ~
 12 20 3 3 7 0 0 4097 64 0 0
 0 0 0 0 0 0 0 0
-2 4845 100
+2 4845 100 100
 A
 18 1
 #3078
@@ -1081,7 +1081,7 @@ The deadly looking ballista must weight hundreds of pounds.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #3080
 leggings bronze~
 &+ya pair of bronze leggings&n~
@@ -1089,7 +1089,7 @@ leggings bronze~
 ~
 9 20 3 8 7 0 0 33 0 4173708804 0
 6 5 1 3 0 0 0 0
-8 3500 100
+8 3500 100 100
 #3081
 pants leather~
 &+ya pair of leather pants&N~
@@ -1097,7 +1097,7 @@ pants leather~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-8 150 100
+8 150 100 100
 #3082
 catapult heavy~
 a heavy catapult~
@@ -1105,7 +1105,7 @@ The heavy catapult must weigh hundreds of pounds.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #3083
 boulder catapult~
 a heavy catapult boulder~
@@ -1113,7 +1113,7 @@ A heavy catapult boulder lies here.~
 ~
 5 11 5 0 7 0 0 1 0 0 0
 4 25 25 6 0 0 0 0
-125 1 100
+125 1 100 100
 #3084
 rack missile~
 a ballista missile rack~
@@ -1121,7 +1121,7 @@ A ballista missile rack rests here.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 5000 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 #3085
 sleeves bronze~
 &+ya pair of bronze sleeves&n~
@@ -1129,7 +1129,7 @@ sleeves bronze~
 ~
 9 20 3 8 7 0 0 257 0 4173708804 0
 6 8 1 3 0 0 0 0
-8 1750 100
+8 1750 100 100
 #3087
 rack missile~
 a catapult missile rack~
@@ -1137,7 +1137,7 @@ A catapult missile rack rests here.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 5000 0 -1 100 0 0 0 0
-1 1 100
+1 1 100 100
 #3088
 water fountain huge~
 &+Ba huge fountain&N~
@@ -1145,7 +1145,7 @@ water fountain huge~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #3089
 water fountain~
 a fountain~
@@ -1153,7 +1153,7 @@ A small circular fountain rests here.~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #3090
 purse small leather~
 &+ya small leather purse&N~
@@ -1161,7 +1161,7 @@ purse small leather~
 ~
 15 13 3 0 7 0 0 16385 0 0 0
 20 5 -1 100 0 0 0 0
-1 125 100
+1 125 100 100
 #3091
 wine bottle~
 a bottle~
@@ -1169,7 +1169,7 @@ A bottle lies here.~
 ~
 17 7 1 2 7 0 0 16385 0 0 0
 8 8 2 0 0 0 0 0
-10 54 100
+10 54 100 100
 #3092
 staff mages mystical~
 &+Bthe mystical staff of mages&N~
@@ -1177,7 +1177,7 @@ staff mages mystical~
 ~
 12 6 3 10 7 0 271360 16385 66 4197892 0
 0 0 -1 0 0 0 0 0
-2 578235 100
+2 578235 100 100
 E
 staff mages~
 The staff of mages is seven feet long, looking very gnarled and old.  A small
@@ -1195,7 +1195,7 @@ sword bastard steel glowing~
 ~
 5 16 3 10 7 0 1024 8193 66 87572571 0
 5 2 5 3 0 0 0 0
-18 434543 100
+18 434543 100 100
 #3097
 counter~
 &+ythe counter&n~
@@ -1203,7 +1203,7 @@ counter~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign counter wooden~
 Welcome to the Bank.   You may DEPOSIT <value>,
@@ -1217,7 +1217,7 @@ A cup has been set here.~
 ~
 17 9 0 0 7 0 0 1 0 0 0
 1 1 11 0 0 0 0 0
-1 5 100
+1 5 100 100
 E
 cup~
 It is a small simple cup.
@@ -1229,7 +1229,7 @@ potion invisibility smokey~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 21 29 -1 -1 0 0 0 0
-2 423 100
+2 423 100 100
 #3102
 potion yellow~
 &+Ya yellow potion of see invisible&n~
@@ -1237,7 +1237,7 @@ potion yellow~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 22 19 -1 -1 0 0 0 0
-1 26333 100
+1 26333 100 100
 E
 potion yellow~
 The potion has a small label 'Detect The Invisible'.
@@ -1249,7 +1249,7 @@ wand~
 ~
 3 16 2 4 7 0 1024 16385 0 4197892 0
 12 1 1 29 0 0 0 0
-2 4000 100
+2 4000 100 100
 E
 wand~
 The wand is an old dark stick. You notice a small symbol etched at the
@@ -1266,7 +1266,7 @@ The key to the jail cel lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 7100 100
+1 7100 100 100
 #3201
 stove iron~
 &+Lan iron stove&n~
@@ -1274,7 +1274,7 @@ stove iron~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 250 5 -1 100 0 0 0 0
-1 100 100
+1 100 100 100
 #3202
 cart huge~
 the huge cart~
@@ -1282,7 +1282,7 @@ The cart is quite sizeable.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 2500 0 -1 100 0 0 0 0
-1 100 100
+1 100 100 100
 #3203
 chest~
 &+Lthe chest&n~
@@ -1290,7 +1290,7 @@ chest~
 ~
 15 6 5 50 7 0 4096 0 0 0 0
 200 13 0 250 0 0 0 0
-1 100 100
+1 100 100 100
 #3204
 coins gold~
 &+Ya pile of gold coins~
@@ -1298,7 +1298,7 @@ coins gold~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 50 0 0 0 0 0
-1 0 100
+1 0 100 100
 #3205
 shield steel~
 &+Wa steel shield&n~
@@ -1306,7 +1306,7 @@ shield steel~
 ~
 37 16 3 15 7 0 0 513 64 4173708804 0
 2 1 3 5 0 0 0 0
-5 15344 100
+5 15344 100 100
 A
 18 1
 A
@@ -1318,7 +1318,7 @@ The gambling table is covered in soft velvet.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #3207
 desk oak~
 an oak desk~
@@ -1326,7 +1326,7 @@ The desk is made from solid oak.~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 500 13 0 100 0 0 0 0
-1 100 100
+1 100 100 100
 #3208
 water fountain circular~
 &+bthe large fountain&n~
@@ -1334,7 +1334,7 @@ water fountain circular~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #3209
 rack armor~
 the armor rack~
@@ -1342,7 +1342,7 @@ The armor racks are very large.~
 ~
 15 16 3 0 7 0 0 0 0 0 0
 3000 0 -1 100 0 0 0 0
-1 100 100
+1 100 100 100
 #3210
 water pond~
 &+bthe pond&n~
@@ -1350,7 +1350,7 @@ water pond~
 ~
 17 40 0 0 7 0 8192 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #3211
 desk~
 the desk~
@@ -1358,7 +1358,7 @@ The desk is polished to a glossy sheen.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 250 13 0 100 0 0 0 0
-1 100 100
+1 100 100 100
 #3212
 secret hatch~
 &+Lthe secret hatch&n~
@@ -1366,7 +1366,7 @@ secret hatch~
 ~
 12 6 0 0 7 0 4096 0 64 0 0
 3309 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 hatch secret~
 The hatch is about two feet square, barely large enough for one person
@@ -1381,7 +1381,7 @@ secret hatch~
 ~
 12 6 0 0 7 0 4096 0 64 0 0
 3305 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 hatch secret~
 The hatch is about two feet square, barely large enough for one person
@@ -1396,7 +1396,7 @@ A pile of trash lies here.~
 ~
 12 5 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #3215
 scum pond~
 &+gsome pond scum&n~
@@ -1404,7 +1404,7 @@ scum pond~
 ~
 19 2 2 2 7 0 8192 1 0 0 0
 0 0 0 4 0 0 0 0
-1 1 100
+1 1 100 100
 #3216
 chest iron~
 &+Lan iron chest&n~
@@ -1412,7 +1412,7 @@ chest iron~
 ~
 15 15 5 50 7 0 4096 0 0 0 0
 250 15 3218 250 0 0 0 0
-1 100 100
+1 100 100 100
 #3217
 gauntlets steel~
 &+Wa pair of steel gauntlets&n~
@@ -1420,7 +1420,7 @@ gauntlets steel~
 ~
 9 16 3 5 7 0 0 129 64 4173708804 0
 8 7 1 3 0 0 0 0
-3 3257 100
+3 3257 100 100
 #3218
 key bronze~
 &+ya bronze key&n~
@@ -1428,7 +1428,7 @@ key bronze~
 ~
 18 20 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #3219
 key small~
 a small key~
@@ -1436,7 +1436,7 @@ A small key lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 #3220
 potion speckled~
 &+ra&+g s&+Yp&+me&+Rc&+Wk&+Ml&+Ge&+cd&n potion~
@@ -1444,7 +1444,7 @@ A speckled potion lies here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 12 98 97 96 0 0 0 0
-3 7000 100
+3 7000 100 100
 #3221
 note~
 a note~
@@ -1452,7 +1452,7 @@ A note lies here.~
 ~
 16 29 1 1 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 note~
 .                                                                            .
@@ -1471,7 +1471,7 @@ gold coins~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 #3223
 necklace jeweled~
 &+Ma beautiful jeweled necklace&N~
@@ -1479,7 +1479,7 @@ necklace jeweled~
 ~
 8 16 3 2 7 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-3 7800 100
+3 7800 100 100
 #3224
 earring diamond~
 &+Wa diamond earring&N~
@@ -1487,7 +1487,7 @@ earring diamond~
 ~
 8 8 1 1 7 0 0 17 0 0 0
 0 0 0 0 0 0 0 0
-1 4275 100
+1 4275 100 100
 #3225
 deck card cards~
 a deck of cards~
@@ -1495,7 +1495,7 @@ A deck of cards lies here in a pile.~
 ~
 12 29 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 127 100
+2 127 100 100
 #3226
 dice pair~
 a pair of dice~
@@ -1503,7 +1503,7 @@ A pair of dice lie here.~
 ~
 12 34 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 118 100
+1 118 100 100
 A
 18 1
 #3227
@@ -1513,7 +1513,7 @@ red robe~
 ~
 9 3 3 8 7 0 1024 1025 64 4197892 0
 0 9 1 3 0 0 0 0
-5 17453 100
+5 17453 100 100
 A
 17 -4
 #3228
@@ -1523,7 +1523,7 @@ boots soft black~
 ~
 9 13 3 8 7 0 9216 65 64 8515584 0
 5 6 1 3 0 0 0 0
-5 5900 100
+5 5900 100 100
 #3230
 dagger polished steel~
 &+Wa polished steel dagger&N~
@@ -1531,7 +1531,7 @@ dagger polished steel~
 ~
 5 16 2 3 7 0 0 8193 64 4194697632 0
 2 1 4 11 0 0 0 0
-3 500 100
+3 500 100 100
 #3231
 sword small polished steel~
 a small polished-steel short sword~
@@ -1539,7 +1539,7 @@ A small steel short sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 64 4198895524 0
 9 1 7 3 0 0 0 0
-5 600 100
+5 600 100 100
 #3232
 beef dried salty~
 some salty dried beef~
@@ -1547,7 +1547,7 @@ Some salty dried beef lies here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 12 0 0 0 0 0 0 0
-1 18 100
+1 18 100 100
 #3233
 collar dog silver~
 &+Wa silver dog collar&N~
@@ -1555,7 +1555,7 @@ collar dog silver~
 ~
 9 22 0 0 7 0 0 5 64 0 0
 0 2 1 3 0 0 0 0
-2 84 100
+2 84 100 100
 A
 17 -2
 #3234
@@ -1565,7 +1565,7 @@ A pair of bronze boots lies here.~
 ~
 9 20 3 8 7 0 0 65 64 4173708804 0
 6 6 1 3 0 0 0 0
-7 12800 100
+7 12800 100 100
 #3235
 tape measuring~
 a measuring tape~
@@ -1573,7 +1573,7 @@ A measuring tape lies here.~
 ~
 12 15 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 24 100
+1 24 100 100
 #3236
 potion steel gray~
 &+La steel gray potion&n~
@@ -1581,7 +1581,7 @@ potion steel gray~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 1 1 -1 -1 0 0 0 0
-2 781 100
+2 781 100 100
 #3237
 ring endurance~
 &+ca ring of endurance&N~
@@ -1589,7 +1589,7 @@ ring endurance~
 ~
 9 16 1 1 7 0 0 3 64 0 0
 0 1 0 3 0 0 0 0
-1 14781 100
+1 14781 100 100
 A
 14 15
 #3239
@@ -1599,7 +1599,7 @@ potion violet~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 21 35 -1 -1 0 0 0 0
-2 4327 100
+2 4327 100 100
 #3242
 stone rare peleneski~
 &+Wa rare peleneski stone&N~
@@ -1607,7 +1607,7 @@ stone rare peleneski~
 ~
 8 11 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1276 100
+1 1276 100 100
 #3243
 jewel fine violet~
 &+ma fine viloet jewel&n~
@@ -1615,7 +1615,7 @@ jewel fine violet~
 ~
 8 26 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 253 100
+1 253 100 100
 #3244
 gem gemstone common~
 &+ra common gemstone&N~
@@ -1623,7 +1623,7 @@ gem gemstone common~
 ~
 8 26 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 276 100
+1 276 100 100
 #3245
 sapphire vibrant~
 &+Ba vibrant sapphire&n~
@@ -1631,7 +1631,7 @@ sapphire vibrant~
 ~
 8 33 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 896 100
+1 896 100 100
 #3246
 diamond~
 &+Wa finely cut diamond&N~
@@ -1639,7 +1639,7 @@ diamond~
 ~
 8 8 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1276 100
+1 1276 100 100
 #3247
 canoe leather~
 &+ya leather canoe&N~
@@ -1647,7 +1647,7 @@ canoe leather~
 ~
 22 13 4 30 7 0 8192 1 0 0 0
 0 0 0 0 0 0 0 0
-32 1000 100
+32 1000 100 100
 #3250
 roast~
 a wonderous roast~
@@ -1655,7 +1655,7 @@ A wonderous looking piece of meat lies here.~
 ~
 19 2 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 142 100
+1 142 100 100
 #3251
 collar dog leather~
 &+ya leather dog collar&N~
@@ -1663,7 +1663,7 @@ collar dog leather~
 ~
 9 13 0 0 7 0 0 5 64 0 0
 0 2 1 3 0 0 0 0
-2 84 100
+2 84 100 100
 A
 17 -1
 #3252
@@ -1673,7 +1673,7 @@ collar dog bronze~
 ~
 9 20 0 0 7 0 0 5 64 0 0
 0 2 1 3 0 0 0 0
-2 84 100
+2 84 100 100
 A
 17 -3
 #3253
@@ -1683,7 +1683,7 @@ diamond~
 ~
 8 8 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1276 100
+1 1276 100 100
 #3254
 wood pile~
 &+ya small pile of wood&n~
@@ -1691,7 +1691,7 @@ wood pile~
 ~
 12 6 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-3 100 100
+3 100 100 100
 #3255
 note small~
 a small note~
@@ -1699,7 +1699,7 @@ A small note lies here.~
 ~
 12 29 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 note small~
 The note reads:
@@ -1719,7 +1719,7 @@ iron maiden~
 ~
 12 15 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 iron maiden~
 This device is used to execute victims by driving spikes through their body.
@@ -1731,7 +1731,7 @@ stack coffins~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 stack coffins~
 Justice is swift in Verzanan.

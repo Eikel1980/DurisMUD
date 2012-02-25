@@ -5,7 +5,7 @@ A dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 4194697632 0
 2 1 3 11 0 0 0 0
-1 951 100
+1 951 100 100
 E
 dagger stout~
 This is a short, wide-bladed dagger that looks to be useful for most any kind
@@ -20,7 +20,7 @@ Someone has tossed a belt pouch here.~
 ~
 15 13 3 3 7 0 0 18433 0 0 0
 15 1 0 0 0 0 0 0
-2 133 100
+2 133 100 100
 E
 belt pouch~
 This small belt pouch is attached to a thin belt that can be worn about the
@@ -36,7 +36,7 @@ A drinking &+Rboda&N lies here.~
 ~
 17 9 0 0 7 0 0 17409 0 0 0
 25 20 2 0 0 0 0 0
-3 72 100
+3 72 100 100
 E
 drinking boda~
 This oblong wineskin has a braided leather strap that allows it to be worn
@@ -52,7 +52,7 @@ A sword lies here.~
 ~
 5 16 3 10 7 0 1024 8193 0 95993883 0
 5 1 4 3 0 0 0 0
-15 43994 100
+15 43994 100 100
 E
 obsidian steel broad sword broadsword~
 This well-polished sword is comprised of obsidian enameled on steel. The hilt
@@ -70,7 +70,7 @@ A pair of &+Bsharskin&N gloves lies here.~
 ~
 9 12 3 8 7 0 1024 16513 0 95994139 0
 7 7 6 3 0 0 0 0
-3 11252 100
+3 11252 100 100
 E
 shark skin sharkskin gloves pair~
 These gloves are made from the cured skin of a shark. The scales run towards
@@ -88,7 +88,7 @@ An &+Lobsidian&N and &+Wsteel&N dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 4194697440 0
 2 2 4 11 0 0 0 0
-2 2034 100
+2 2034 100 100
 E
 obsidian steel dagger~
 This well-polished dagger is comprised of obsidian enameled on steel. The
@@ -107,7 +107,7 @@ An &+Lobsidian&N and &+Wsteel&N cuirass lies here.~
 ~
 9 16 0 0 7 0 0 16641 0 4165209668 0
 8 0 0 3 0 0 0 0
-10 23500 100
+10 23500 100 100
 E
 obsidian steel cuirass~
 This well-polished cuirass is comprised of obsidian enameled on steel.  The
@@ -124,7 +124,7 @@ An &+Lobsidian&N and &+Wsteel&N shield lies here.~
 ~
 37 16 3 15 7 0 0 513 0 0 0
 2 1 3 105 0 0 0 0
-15 33500 100
+15 33500 100 100
 E
 obsidian steel shield~
 This well-polished shield is comprised of obsidian enameled on steel.  The
@@ -142,7 +142,7 @@ A set of &+Lobsidian&N and &+Wsteel&N greaves lies here.~
 ~
 9 16 0 0 7 0 0 16417 0 4173708804 0
 8 0 0 3 0 0 0 0
-10 23500 100
+10 23500 100 100
 E
 obsidian steel greaves~
 This well-polished set of greaves is comprised of obsidian enameled on steel.
@@ -159,7 +159,7 @@ An &+Lobsidian&N and &+Wsteel&N helm lies here.~
 ~
 9 16 3 10 7 0 0 16401 0 4173708804 0
 8 4 1 3 0 0 0 0
-5 13500 100
+5 13500 100 100
 E
 obsidian steel helm~
 This well-polished helmet is comprised of obsidian enameled on steel.  Thick
@@ -175,7 +175,7 @@ A pair of &+Lobsidian&N and &+Wsteel&N gauntlets lies here.~
 ~
 9 16 3 5 7 0 0 16513 0 4173708804 0
 6 0 0 3 0 0 0 0
-4 13500 100
+4 13500 100 100
 E
 obsidian steel gauntlets~
 This well-polished pair of gauntlets is comprised of obsidian enameled on
@@ -193,7 +193,7 @@ A pair of &+Lobsidian&N and &+Wsteel&N boots lies here.~
 ~
 9 16 3 8 7 0 0 16449 0 4173708804 0
 7 0 0 3 0 0 0 0
-7 33500 100
+7 33500 100 100
 E
 obsidian steel boots~
 This well-polished pair of boots is comprised of obsidian enameled on steel.
@@ -212,7 +212,7 @@ An &+Lobsidian&N and &+Wsteel&N breast plate lies here.~
 ~
 9 16 0 0 7 0 0 16393 0 4165209668 0
 12 0 0 3 0 0 0 0
-17 125000 100
+17 125000 100 100
 E
 obsidian steel breast plate~
 This well-polished breast plate is comprised of obsidian enameled on steel.
@@ -229,7 +229,7 @@ An &+Lobsidian&N and &+Wsteel&N ring lies here.~
 ~
 9 16 1 1 7 0 0 16387 0 0 0
 4 0 0 3 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 obsidian steel ring~
 This ring is one solid piece of obsidian, with a thin lines engraved along
@@ -246,7 +246,7 @@ An &+Lobsidian&N and &+Wsteel&N earring lies here.~
 ~
 9 16 1 1 7 0 0 540673 0 0 0
 2 0 0 3 0 0 0 0
-1 2400 100
+1 2400 100 100
 E
 obsidian steel earring~
 This earring has small polished steel bar hanging from an obsidian teardrop
@@ -274,7 +274,7 @@ An &+Lobsidian&N and &+Wsteel&N wrist guard lies here.~
 ~
 9 16 0 0 7 0 0 20481 0 4173708804 0
 4 0 0 3 0 0 0 0
-2 15500 100
+2 15500 100 100
 E
 obsidian steel wrist guard~
 This well-polished wrist guard is comprised of obsidian enameled on steel.
@@ -292,7 +292,7 @@ A &+Lblack&N and &+Wsilver&N eyepatch lies here.~
 ~
 9 22 3 2 7 0 0 131073 0 0 0
 2 0 0 3 0 0 0 0
-1 13500 100
+1 13500 100 100
 E
 black silver eyepatch~
 This eyepatch is made from a thick black cloth. The heraldic representation
@@ -309,7 +309,7 @@ An &+Lobsidian&N and &+Wsteel&N mask lies here.~
 ~
 9 16 3 3 7 0 0 278529 0 4173708804 0
 4 0 0 3 0 0 0 0
-1 23500 100
+1 23500 100 100
 E
 obsidian steel face mask~
 This well-polished face mask is comprised of obsidian enameled on steel.
@@ -327,7 +327,7 @@ An &+Lobsidian&N and &+Wsteel&N beaded necklace lies here.~
 ~
 9 16 3 2 7 0 128 16389 64 0 0
 7 0 0 3 0 0 0 0
-1 723500 100
+1 723500 100 100
 E
 obsidian steel beads necklace~
 This necklace is made up of alternating steel and obsidian beads. The steel
@@ -346,7 +346,7 @@ A &+Lblack leather&N cloak lies here.~
 ~
 9 13 3 8 7 0 0 17409 64 0 0
 7 0 0 3 0 0 0 0
-4 30000 100
+4 30000 100 100
 E
 black leather cloak~
 This supple black leather cloak is made from the skin of some unknown
@@ -365,7 +365,7 @@ A &+Lblack&N and &+Wsilver&N belt lies here.~
 ~
 9 22 3 3 7 0 128 18433 64 0 0
 4 0 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 black silver belt~
 This sturdy leather belt has no buckle; rather, it has a large silver hoop
@@ -383,7 +383,7 @@ A suit of &+Lobsidian&N and &+Wsteel&N platemail lies here.~
 ~
 9 16 3 25 7 0 536871936 16393 0 87572507 0
 40 0 0 3 0 0 0 0
-50 325500 100
+50 325500 100 100
 E
 obsidian steel platemail plate mail~
 This well-polished suit of armor is comprised of obsidian enameled on steel.
@@ -402,7 +402,7 @@ An &+Lobsidian&N and &+Wsteel&N barrel helm lies here.~
 ~
 9 16 3 10 7 0 1073741824 16401 0 4165275204 1024
 18 0 0 3 0 0 0 0
-10 50250 100
+10 50250 100 100
 E
 obsidian steel barrel helm~
 This well-polished helmet is comprised of obsidian enameled on steel.  The
@@ -421,7 +421,7 @@ An &+Lobsidian&N and &+Wsteel&N two-handed sword lies here.~
 ~
 5 16 3 10 7 0 4260864 24577 64 87572507 0
 13 2 5 3 0 0 0 0
-25 100500 100
+25 100500 100 100
 E
 obsidian steel sword~
 This well-polished two-handed sword is comprised of obsidian enameled on
@@ -441,7 +441,7 @@ A &+Lblack&N and &+Wsilver&N badge lies here.~
 ~
 9 22 1 2 7 0 0 2113537 0 0 0
 5 0 0 3 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 black silver badge~
 This favor is used by the Sarmiz'Duul Peackeepers to identify themselves to the
@@ -455,7 +455,7 @@ An &+Lobsidian&N and &+Wsteel&N goblet has been tossed here.~
 ~
 17 16 0 0 7 0 0 16385 0 0 0
 14 14 4 0 0 0 0 0
-1 23500 100
+1 23500 100 100
 E
 obsidian steel goblet~
 This goblet has a carved obsidian base and stem mounted to a large polished
@@ -468,7 +468,7 @@ An &+Lobsidian&N and &+Wsteel&N staff lies here.~
 ~
 4 16 3 10 7 0 1024 16385 64 4197892 0
 26 4 4 36 0 0 0 0
-8 223500 100
+8 223500 100 100
 E
 obsidian steel staff~
 This is a length of layered obsidian with thin connecting strips of steel.
@@ -482,7 +482,7 @@ An &+Lobsidian&N and &+Wsteel&N wand lies here.~
 ~
 3 16 2 4 7 0 1024 16385 64 4197892 0
 3 1 1 150 0 0 0 0
-3 15000 100
+3 15000 100 100
 E
 obsidian steel wand~
 This steel wand has a small uncut knub of obsidian at its tip. The length
@@ -497,7 +497,7 @@ A &+Lblack&N potion has been lost here.~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 9 1 141 102 0 0 0 0
-2 20393 100
+2 20393 100 100
 E
 black potion~
 This black potion gives off an earthy smell, with a trace of something that
@@ -510,7 +510,7 @@ A &+Wsilvery&N potion lies here, forgotten.~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 11 3 39 1 0 0 0 0
-1 7583 100
+1 7583 100 100
 E
 silvery potion~
 This silvery potion gives off no odor whatsoever.  There seems to be actual
@@ -523,7 +523,7 @@ A scroll lies here.~
 ~
 2 29 1 2 7 0 0 16385 0 0 0
 20 74 -1 -1 0 0 0 0
-1 13000 100
+1 13000 100 100
 E
 scroll~
 The scroll is completely imcomprehensible.
@@ -535,7 +535,7 @@ A set of &+Wsteel&N lockpicks lies here.~
 ~
 31 16 1 2 7 0 1024 16385 0 8515584 0
 10 25 0 0 0 0 0 0
-2 11500 100
+2 11500 100 100
 E
 steel lockpicks picks~
 This set of lockpicks is made up of steel wires and slats, all with obsidian
@@ -548,7 +548,7 @@ An &+Lobsidian&N and &+Wsteel&N lantern lies here.~
 ~
 1 16 0 0 7 0 0 16385 0 0 0
 0 0 96 0 0 0 0 0
-5 2500 100
+5 2500 100 100
 E
 obsidian steel lantern~
 This steel lantern is held together at the seams by thin, wide bands of
@@ -562,7 +562,7 @@ An &+Lobsidian&N and &+Wsteel&N longsword lies here.~
 ~
 5 16 3 10 7 0 0 24577 0 4198895524 0
 5 1 4 3 0 0 0 0
-10 20500 100
+10 20500 100 100
 E
 obsidian steel longsword~
 This well-polished sword is comprised of obsidian enameled on steel. The hilt
@@ -580,7 +580,7 @@ An &+Lobsidian&N and &+Wsteel&N sledge lies here.~
 ~
 5 16 0 0 7 0 0 24577 0 4165209668 0
 4 4 4 7 0 0 0 0
-15 23000 100
+15 23000 100 100
 E
 obsidian steel sledge~
 This well-polished sledge is comprised of obsidian enameled on steel. The
@@ -599,7 +599,7 @@ An &+Wsteel&N and &+Lblack leather&N backpack lies here.~
 ~
 15 13 3 10 7 0 0 17409 0 0 0
 250 1 0 100 0 0 0 0
-5 12321 100
+5 12321 100 100
 E
 steel leather backpack~
 This is a sturdy leather backpack that has hollowed steel supports.  There
@@ -616,7 +616,7 @@ An &+Lobsidian&N sword lies here.~
 ~
 5 36 3 10 7 0 4293632 8193 64 87572507 0
 5 7 4 3 0 71 50 20
-12 123500 100
+12 123500 100 100
 E
 obsidian sword chaos~
 This 3 foot length of pure obsidian has been somehow carved into a wicked-
@@ -646,7 +646,7 @@ A &+Lblack&N and &+Wsilver&N robe lies here.~
 ~
 9 3 3 8 7 0 1024 16393 64 4460036 0
 10 0 0 3 0 0 0 0
-4 450000 100
+4 450000 100 100
 E
 black silver robe~
 This robe looks to have been recently mangled.  Large, wide claw marks run
@@ -665,7 +665,7 @@ Someone has lost a &+Wbelt of skulls&N.~
 ~
 9 10 3 3 7 0 0 18433 64 0 0
 3 0 0 3 0 0 0 0
-1 43500 100
+1 43500 100 100
 E
 belt skulls~
 This belt is made from the skulls of various humanoids.  The skulls are held
@@ -684,7 +684,7 @@ An &+Lblack&N and &+Wsilver&N spellbook lies here.~
 ~
 33 13 2 5 7 0 8192 16385 0 0 0
 0 0 150 0 0 0 0 0
-1 2143 100
+1 2143 100 100
 E
 spellbook book black silver leather~
 This spellbook is bound with well-cured black leather.  Silver-filled
@@ -698,7 +698,7 @@ An &+Lobsidian&N and &+Wsteel&N totem lies here.~
 ~
 34 16 2 2 7 0 1024 16385 0 33685920 0
 21 0 0 0 0 0 0 0
-2 5829 100
+2 5829 100 100
 E
 obsidian steel totem~
 This rough-hewn totem is made from a piece of obsidian mounted on a steel
@@ -713,7 +713,7 @@ An &+Lobsidian&N key lies here.~
 ~
 18 36 1 1 7 0 8486912 16385 0 0 0
 0 25 0 0 0 0 0 0
-3 232 100
+3 232 100 100
 E
 obsidian key~
 This is a large key made from obsidian.
@@ -725,7 +725,7 @@ A &+mdecomposing &+rheart&N lies here.~
 ~
 13 2 0 0 7 0 8519680 16385 64 0 0
 8 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 demon heart~
 This heart has been torn from a demon's chest. It gives off an acrid odor.
@@ -737,7 +737,7 @@ box donation~
 ~
 15 6 0 0 7 0 0 0 0 0 0
 1000 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 box donation~
    This small box holds the donations to the temple.
@@ -751,7 +751,7 @@ statue tavril~
 ~
 12 11 6 50 7 0 65537 0 66 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue tavril~
 This statue is an incredible likeness of the God, Tavril. Many hours have
@@ -764,7 +764,7 @@ a dragons stomach~
 ~
 15 2 0 0 7 0 8912896 1 0 0 0
 10 0 0 0 0 0 0 0
-7 15390 100
+7 15390 100 100
 E
 stomach dragon~
 This is the bloody, oozing stomach from a freshly killed dragon. It is
@@ -777,7 +777,7 @@ boots corroded adamantium~
 ~
 9 19 3 8 7 0 128 16449 64 4173708864 770
 12 0 0 3 0 0 0 0
-10 5330 100
+10 5330 100 100
 E
 boots corroded~
 These boots are strangely shaped, almost as if they were made for use by an
@@ -795,7 +795,7 @@ A simple &+ywooden&N staff lies here.~
 ~
 5 16 3 10 7 0 33792 24577 66 4197892 0
 12 6 4 6 0 26026 30 20
-5 739765 100 8 0 0 0
+5 739765 100 100 8 0 0 0
 E
 staff power~
 This gnarled staff at first glance appears to be one of many of its kind,
@@ -826,7 +826,7 @@ rock obsidian fragment~
 ~
 13 36 0 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 493 100
+3 493 100 100
 #9449
 silver dagger~
 &+Wan ornate &Nsilver &+Wdagger&N~
@@ -834,7 +834,7 @@ silver dagger~
 ~
 5 22 2 3 7 0 524288 24577 0 0 0
 2 1 5 11 0 0 0 0
-3 4930 100
+3 4930 100 100
 #9450
 scroll magical~
 &+ya scroll covered with magical formulas&n~
@@ -842,7 +842,7 @@ scroll magical~
 ~
 2 29 1 2 7 0 8912896 16385 0 0 0
 26 15 15 -1 0 0 0 0
-2 392 100
+2 392 100 100
 #9451
 potion sparkling blue~
 &+ba sparkling blue potion&N~
@@ -850,7 +850,7 @@ potion sparkling blue~
 ~
 13 7 1 2 7 0 525312 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 393 100
+2 393 100 100
 #9452
 ancient fragile sword~
 &+Yan ancient, fragile sword&N~
@@ -858,7 +858,7 @@ ancient fragile sword~
 ~
 5 16 3 10 7 0 525312 24577 0 87572507 0
 5 3 5 3 0 0 0 0
-9 9392 100
+9 9392 100 100
 A
 18 2
 A
@@ -870,7 +870,7 @@ bag dust~
 ~
 12 2 3 10 7 0 8913920 16385 0 0 0
 0 0 0 0 0 0 0 0
-4 4933 100
+4 4933 100 100
 A
 3 4
 #9454
@@ -880,7 +880,7 @@ A leather flask lies here.~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 20 36 131 -1 0 0 0 0
-3 56987 100
+3 56987 100 100
 #9455
 letter wax~
 &+ya letter sealed in wax&n~
@@ -888,7 +888,7 @@ letter wax~
 ~
 13 28 0 0 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 932 100
+1 932 100 100
 #9456
 scroll doeskin~
 &+ya scroll made from doeskin&n~
@@ -896,7 +896,7 @@ A scroll lies here.~
 ~
 2 29 1 2 7 0 1024 16385 0 0 0
 26 66 66 -1 0 0 0 0
-0 0 100
+0 0 100 100
 #9457
 staff power~
 &+ra &+bsta&+Bff&+W of &+Bpo&+bwer&N~
@@ -904,7 +904,7 @@ A simple &+ywooden&N staff lies here.~
 ~
 5 6 3 10 7 0 33792 24577 66 37883808 818
 12 3 4 6 0 0 0 0
-5 739765 100
+5 739765 100 100
 E
 staff power~
 This gnarled staff at first glance appears to be one of many of its kind,
@@ -923,7 +923,7 @@ A small &+Wsilver&N key lies discarded here.~
 ~
 18 22 2 0 8 0 8388616 16385 1 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silver key~
 A small silver key.. what more do you want?
@@ -935,7 +935,7 @@ a beautiful &+Lobsidian&n badge lies here.~
 ~
 9 15 3 0 5 0 1318912 2097153 0 0 0
 0 0 0 2 0 0 0 0
-0 0 100 0 2 0 0
+0 0 100 100 0 2 0 0
 E
 badge obsidian~
    At first glance this badge apperas to bear no markings. Only by
@@ -951,7 +951,7 @@ ring oval blackness legendary hunter~
 ~
 11 10 0 1 14 0 36905025 3 64 0 0
 0 0 0 0 0 0 0 0
-1 150111 100 16 0 0 0
+1 150111 100 100 16 0 0 0
 A
 24 -1
 A

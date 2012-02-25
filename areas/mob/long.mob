@@ -9,8 +9,8 @@ giant hideous deformed male fomorian~
 &+LThree arms flail back in forth in eager excitement as he
 &+Lwatches you intently
 ~
-2058 0 0 33554432 1024 0 0 -700 S
-G 0 0 -1
+2058 0 0 0 33554432 1024 0 0 -700 S
+G 0 0 0 -1
 30 3 55 15d25+112 2d6+1
 88.73.1.0 4500
 8 8 1
@@ -26,8 +26,8 @@ fomorian giant female three~
 &+mgrins at you stupidly with excitement.  &+YYellowish&+y-brown&+m drool
 &+mbegins to froth about her fat lips.
 ~
-2124 0 0 0 1024 0 0 -700 S
-G 0 0 -1
+2124 0 0 0 0 1024 0 0 -700 S
+G 0 0 0 -1
 15 3 55 15d25+112 2d6+1
 74.60.2.0 4500
 8 8 2
@@ -42,8 +42,8 @@ guard fomorian elite~
 &+Lstream of &+wdrool&+L trickles down his chin and splatters upon the
 &+Lrocky earth below him.
 ~
-67110922 0 0 33554432 0 0 0 -1000 S
-G 0 1 -1
+67110922 0 0 0 33554432 0 0 0 -1000 S
+G 0 1 0 -1
 38 14 16 28d55+420 3d6+4
 96.72.12.1 18200
 8 8 1
@@ -58,8 +58,8 @@ chieftain giant fomorian~
 &+bhis kind.  His two eyes have been well developed, while his
 &+bdeformed ears hang loosely down to the edge of his shoulders.
 ~
-2058 0 0 8 32768 0 0 -1000 S
-G 0 1 -1
+2058 0 0 0 8 32768 0 0 -1000 S
+G 0 1 0 -1
 38 15 7 31d70+620 4d6+7
 79.69.23.2 27900
 8 8 1
@@ -74,8 +74,8 @@ scout fomorian giant~
 &+yarms ripple as he supports himself on his three legs.  A slight
 &+ygelatinous matter trickles from his mouth and drips down his chin.
 ~
-65546 1 0 33554436 0 0 0 -700 S
-G 0 16384 -1
+65546 1 0 0 33554436 0 0 0 -700 S
+G 0 16384 0 -1
 20 5 40 20d30+200 2d6+2
 72.62.5.0 6000
 8 8 0
@@ -90,8 +90,8 @@ guard fomorian deformed giant~
 &+Lmajority of his body as a small stream of &+wdrool&+L trickles down
 &+Lhis chin and splatters upon the rocky earth below him.
 ~
-67110986 0 0 33554432 0 0 0 -700 S
-G 0 1 6
+67110986 0 0 0 33554432 0 0 0 -700 S
+G 0 1 0 6
 21 10 37 21d40+262 3d6+3
 61.74.10.0 13650
 8 8 0
@@ -107,8 +107,8 @@ guard giant fomorian malformed~
 &+msmall stream of &+wdrool&+m trickles down his chin and splatters
 &+mupon the rocky earth below him.
 ~
-67110922 0 0 33554432 0 0 0 -700 S
-G 0 1 6
+67110922 0 0 0 33554432 0 0 0 -700 S
+G 0 1 0 6
 27 8 49 17d30+170 2d6+2
 100.63.3.0 5100
 8 8 0
@@ -126,8 +126,8 @@ woman enchantress~
 &+Wintently.  A small tattoo depicting the symbol of The
 &+rBloodstone &+LBarony&+W can be seen on her left arm.
 ~
-2122 0 0 0 0 0 0 -1000 S
-PL 0 512 -1
+2122 0 0 0 0 0 0 0 -1000 S
+PL 0 512 0 -1
 37 6 19 27d55+270 3d6+4
 63.100.9.1 17550
 8 8 2
@@ -143,8 +143,8 @@ advisor barony royal~
 &+Bacross his thin frame of bone and muscle.  He proudly wears
 &+Ba skull-cup emblazoned with the symbol of the &+rbarony&+B on his head.
 ~
-67110990 0 0 524288 0 0 0 -1000 S
-PH 0 8192 -1
+67110990 0 0 0 524288 0 0 0 -1000 S
+PH 0 8192 0 -1
 33 13 19 27d55+270 3d6+4
 77.71.11.1 17550
 8 8 1
@@ -159,8 +159,8 @@ knight barony bloodied~
 &+Ldespite his otherwise flawlessly shaven face.  Powerful muscles
 &+Lripple with each of his movements.
 ~
-1073743946 0 0 65536 32776 0 0 -1000 S
-PH 0 16 -1
+1073743946 0 0 0 65536 32776 0 0 -1000 S
+PH 0 16 0 -1
 41 14 13 29d55+290 3d6+4
 61.56.14.1 18850
 8 8 1
@@ -175,8 +175,8 @@ giant deformed elder fomorian old~
 &+wA stream of thick clear fluids froths about his &+lthick lips
 &+was he sits within a pool of drool.
 ~
-10 0 0 0 0 0 0 -1000 S
-G 0 0 -1
+10 0 0 0 0 0 0 0 -1000 S
+G 0 0 0 -1
 29 7 13 29d55+435 3d6+4
 47.99.11.1 18850
 8 8 1
@@ -192,8 +192,8 @@ malformed giant tanner~
 &+breaches down and tears off a small child's arm and begins
 &+bto chew on it.  It seems he has not even noticed your presence.
 ~
-2058 0 0 0 0 0 0 -1000 S
-G 0 1 -1
+2058 0 0 0 0 0 0 0 -1000 S
+G 0 1 0 -1
 31 10 37 21d40+262 3d6+3
 61.74.10.0 13650
 8 8 1
@@ -209,8 +209,8 @@ fomorian giant child boy~
 &+Yof &+rblood&+Y-filled saliva drips down his chin and splatters on
 &+Ythe ground.
 ~
-136 0 0 0 0 0 0 -1000 S
-G 0 0 -1
+136 0 0 0 0 0 0 0 -1000 S
+G 0 0 0 -1
 17 2 67 11d25+82 2d6+1
 78.50.1.0 3300
 8 8 1
@@ -227,8 +227,8 @@ fomorian child giant girl~
 &+ystream of &+Rblood&+y-filled saliva to drip down her chin and
 &+ysplatters on the ground.
 ~
-136 0 0 0 0 0 0 -1000 S
-G 0 0 -1
+136 0 0 0 0 0 0 0 -1000 S
+G 0 0 0 -1
 12 3 64 12d25+90 2d6+1
 76.42.2.0 3600
 8 8 2
@@ -244,8 +244,8 @@ fomorian giant shaman tribal~
 &+cgently massages his brow as he stares at some sort of rough
 &+csketch on the cavern wall.
 ~
-2058 0 0 10 0 128 0 -1000 S
-G 0 256 -1
+2058 0 0 0 10 0 128 0 -1000 S
+G 0 256 0 -1
 30 5 40 20d30+200 2d6+2
 86.75.4.0 6000
 8 8 1
@@ -261,8 +261,8 @@ giant hideous fomorian~
 &+ghis body as a small stream of &+wdrool&+g trickles down his chin
 &+gand splatters upon the rocky earth below him.
 ~
-2058 0 0 0 0 0 0 -1000 S
-G 0 0 6
+2058 0 0 0 0 0 0 0 -1000 S
+G 0 0 0 6
 31 5 37 21d40+262 3d6+3
 75.87.9.0 13650
 8 8 1
@@ -277,8 +277,8 @@ rolane priest high~
 &+Bburn with a bright blue intensity.  His body is perfectly
 &+Bdefined by both muscle definition and skin tone.
 ~
-2058 0 0 67117064 0 0 0 500 S
-PH 0 32 -1
+2058 0 0 0 67117064 0 0 0 500 S
+PH 0 32 0 -1
 38 7 10 30d55+300 3d6+4
 52.87.13.1 19500
 8 8 1
@@ -294,8 +294,8 @@ solar selune~
 &+Bbrillant blue&+Y settles upon you.  He has sharp facial features
 &+Yand thin lips.
 ~
-1174435850 0 0 973086744 47296 1140850816 0 1000 S
-Y 0 8 -1
+1174435850 0 0 0 973086744 47296 1140850816 0 1000 S
+Y 0 8 0 -1
 59 14 -127 59d120+7080 7d6+35
 6.4.22.21 147500
 8 8 1
@@ -310,8 +310,8 @@ priestess~
 &+Land worry for her people.  A light &+wscar&+L is barely visible
 &+Lalong her left cheek.
 ~
-2058 0 0 8200 4 0 0 750 S
-PH 0 32 -1
+2058 0 0 0 8200 4 0 0 750 S
+PH 0 32 0 -1
 26 4 46 18d30+90 2d6+2
 102.55.4.0 5400
 8 8 2
@@ -326,8 +326,8 @@ acolyte~
 &+Wmany wounds of the townspeople.  His short &+rred&+W hair and
 &+Wfair skin accentuates his sharp facial features.
 ~
-2058 0 0 8192 0 0 0 1000 S
-PH 0 32 -1
+2058 0 0 0 8192 0 0 0 1000 S
+PH 0 32 0 -1
 19 3 61 13d25+32 2d6+1
 88.61.1.0 3900
 8 8 1
@@ -344,8 +344,8 @@ templar guard~
 &+wfrom beneath his helmet, while he prepares himself for
 &+wthe onslaught of the town's enemies.
 ~
-67110922 0 0 8192 0 0 0 1000 S
-PH 0 8 -1
+67110922 0 0 0 8192 0 0 0 1000 S
+PH 0 8 0 -1
 25 9 43 19d30+95 2d6+2
 84.69.4.0 5700
 8 8 1
@@ -362,8 +362,8 @@ templar guard~
 &+whelmet, while she prepares herself for the onslaught of the
 &+wtown's enemies.
 ~
-67110922 0 0 8192 0 0 0 1000 S
-PH 0 8 -1
+67110922 0 0 0 8192 0 0 0 1000 S
+PH 0 8 0 -1
 26 10 37 21d40+157 3d6+3
 117.98.8.0 13650
 8 8 2
@@ -378,8 +378,8 @@ man young~
 &+wbeen wetted with sweat, which sticks to his neck and face
 &+wlike a veil.
 ~
-2062 0 0 0 0 0 0 500 S
-PH 0 0 -1
+2062 0 0 0 0 0 0 0 500 S
+PH 0 0 0 -1
 19 3 64 12d25+30 2d6+1
 62.57.1.0 3600
 8 8 1
@@ -394,8 +394,8 @@ woman young~
 &+won coming army.  A strange birthmark can been seen on her
 &+wleft shoulder.
 ~
-138 0 0 0 0 0 0 375 S
-PH 0 0 -1
+138 0 0 0 0 0 0 0 375 S
+PH 0 0 0 -1
 10 2 70 10d20+10 1d6+0
 98.31.0.0 1000
 8 8 2
@@ -409,8 +409,8 @@ small child~
 &+wrecently experienced.  His eyes are &+rred&+w from crying as
 &+wstreams of mucus flows from his nose.
 ~
-138 0 0 0 0 0 0 1000 S
-PH 0 0 -1
+138 0 0 0 0 0 0 0 1000 S
+PH 0 0 0 -1
 8 2 76 8d20+8 1d6+0
 98.23.0.0 800
 8 8 2
@@ -425,8 +425,8 @@ wounded templar guard~
 &+wnext to him, as his &+bblue&+w eyes roll back into his head as
 &+whe experiences the pain and suffering of his deep wounds.
 ~
-90 0 0 16384 0 0 0 1000 S
-PH 0 8 -1
+90 0 0 0 16384 0 0 0 1000 S
+PH 0 8 0 -1
 28 9 46 18d30+90 2d6+2
 116.82.2.0 5400
 4 4 1
@@ -442,8 +442,8 @@ nightmare horse mare~
 &+Lthe beast's nose with each snort as te&+Rndr&+Lils of &+Rflame
 &+Lwrithe about the creature's hooves.
 ~
-134219786 0 0 65544 8 0 0 -1000 S
-AE 0 1 -1
+134219786 0 0 0 65544 8 0 0 -1000 S
+AE 0 1 0 -1
 28 9 43 19d30+95 2d6+2
 0.0.0.0 5700
 8 8 1
@@ -458,8 +458,8 @@ zombie blacksmith undead~
 &+Rblood&+W and &+wooze&+W.  Its eyes have been cakes over with a
 &+Wtranslucent white fluid.
 ~
-67110922 0 0 8 0 0 0 -1000 S
-U 0 1 -1
+67110922 0 0 0 8 0 0 0 -1000 S
+U 0 1 0 -1
 34 7 58 14d25+35 2d6+1
 0.0.0.0 4200
 8 8 0
@@ -474,8 +474,8 @@ mage necromancer man~
 &+Lalmost skeleton like in nature.  His thin lips adds an to
 &+Lhis eerie expressionless face.
 ~
-67110922 0 0 0 0 0 0 -1000 S
-PH 0 1024 -1
+67110922 0 0 0 0 0 0 0 -1000 S
+PH 0 1024 0 -1
 25 3 55 15d25+37 2d6+1
 88.73.1.0 4500
 8 8 1
@@ -489,8 +489,8 @@ horse skeletal skeleton undead~
 &+Lin place.  The horse's mane has been shriveled and burned
 &+Lwith from the intense heat from the fire.
 ~
-1207959562 0 0 33554440 64 0 0 -1000 S
-U 0 1 -1
+1207959562 0 0 0 33554440 64 0 0 -1000 S
+U 0 1 0 -1
 28 6 64 12d25+30 2d6+1
 0.0.0.0 3600
 8 8 0
@@ -508,8 +508,8 @@ raider fomorian giant~
 &+Lsplatters upon the ground.  Light thin hair has grown in
 &+Lpatches about the majority of his body.
 ~
-2060 0 0 524288 0 0 0 -1000 S
-G 0 1 -1
+2060 0 0 0 524288 0 0 0 -1000 S
+G 0 1 0 -1
 31 5 40 20d30+200 2d6+2
 86.89.3.0 6000
 8 8 1
@@ -527,8 +527,8 @@ scout fomorian giant~
 &+Lstream of &+Rblood&+L filled drool trickles down his chin and
 &+Lsplatters upon the ground.
 ~
-2058 1 0 33554436 0 0 0 -700 S
-G 0 16384 -1
+2058 1 0 0 33554436 0 0 0 -700 S
+G 0 16384 0 -1
 23 4 49 17d30+170 2d6+2
 72.79.2.0 5100
 8 8 1
@@ -545,8 +545,8 @@ raider deformed fomorian giant guard~
 &+Lof &+Rblood&+L filled drool trickles down his chin. He casually chews
 &+Lon a leg bone as he gazes at you.
 ~
-67110986 0 0 33554432 0 0 0 -700 S
-G 0 1 -1
+67110986 0 0 0 33554432 0 0 0 -700 S
+G 0 1 0 -1
 31 7 55 15d25+112 2d6+1
 88.45.3.0 4500
 8 8 1
@@ -560,8 +560,8 @@ flame fire grue~
 &+Rbeautiful being composed of &+Ggreen&+R, &+Yyellow&+R, and red
 &+Rtendrils of flame.
 ~
-2122 0 0 536870928 129 0 0 -400 S
-EF 0 1 -1
+2122 0 0 0 536870928 129 0 0 -400 S
+EF 0 1 0 -1
 15 3 45 15d12+18 2d6+1
 0.0.0.0 4500
 8 8 0
@@ -577,8 +577,8 @@ woman wife~
 &+Wtears run down her cheeks as her oval eyes tell the tale of
 &+Wher horror.
 ~
-10 0 0 16384 0 0 0 600 S
-PH 0 0 -1
+10 0 0 0 16384 0 0 0 600 S
+PH 0 0 0 -1
 12 3 64 12d25+30 2d6+1
 90.55.1.0 3600
 8 8 2
@@ -593,8 +593,8 @@ worg giant~
 &+Yextremely pointy canines.  Bits of &+wflesh&+Y and &+rmeat&+Y hang from
 &+Yits lower jaw.
 ~
-1207959562 0 0 32 0 0 0 -700 S
-AC 0 1 -1
+1207959562 0 0 0 32 0 0 0 -700 S
+AC 0 1 0 -1
 22 6 64 12d25+30 2d6+1
 0.0.0.0 3600
 8 8 2
@@ -610,8 +610,8 @@ orc raider~
 &+gbelow.  His massive arms ripple with strength as his &+Lblackish
 &+geyes watch the area intently looking for his next victim.
 ~
-2060 0 0 268959744 0 0 1048576 -700 S
-HO 0 16384 -1
+2060 0 0 0 268959744 0 0 1048576 -700 S
+HO 0 16384 0 -1
 27 8 52 16d30+80 2d6+2
 126.55.3.0 4800
 8 8 1
@@ -625,8 +625,8 @@ orc~
 &+yrough &+ggreen hide&+y.  His massive arms ripple with strength
 &+yas his &+Lblackish&+y eyes watch the area intently.
 ~
-2120 0 0 524288 0 0 1048576 -600 S
-HO 0 1 -1
+2120 0 0 0 524288 0 0 1048576 -600 S
+HO 0 1 0 -1
 22 7 58 14d25+35 2d6+1
 62.55.2.0 4200
 8 8 1
@@ -641,8 +641,8 @@ harv man scared~
 &+wHis high cheekbones and semi-pointy ears heavily define
 &+whis almost cat-like facial features.
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 35 8 -5 35d70+525 4d6+7
 5.82.23.3 31500
 8 8 1
@@ -658,8 +658,8 @@ priest dark~
 &+Lof a blazing &+Wwhite skull&+L adorns the back of his head as two
 &+Rflame&+L designs wrap around and flare right beneath his eyes.
 ~
-2058 0 0 24 0 0 0 -1000 S
-PH 0 32 -1
+2058 0 0 0 24 0 0 0 -1000 S
+PH 0 32 0 -1
 27 4 49 17d30+85 2d6+2
 86.78.2.0 5100
 8 8 1
@@ -674,8 +674,8 @@ squire~
 &+wone of his legs.  The &+rbloodstone&+L Barony Symbol&+w has been
 &+wbranded into his left hand.
 ~
-67110926 0 0 65536 0 0 0 -1000 S
-PH 0 16 -1
+67110926 0 0 0 65536 0 0 0 -1000 S
+PH 0 16 0 -1
 24 7 58 14d25+35 2d6+1
 90.53.2.0 4200
 8 8 1
@@ -690,8 +690,8 @@ woodsman~
 &+gpulled to the back of his head and tied off with a thin
 &+gleather strap.
 ~
-1073743882 0 0 1572864 0 0 0 0 S
-PH 0 2 -1
+1073743882 0 0 0 1572864 0 0 0 0 S
+PH 0 2 0 -1
 31 10 37 21d40+157 3d6+3
 89.100.8.0 13650
 8 8 1
@@ -706,8 +706,8 @@ cook~
 &+wfew bits of sauce left on them from his meal.  His hair
 &+whas been cut very short, almost to the point of baldness.
 ~
-2058 0 0 0 1024 0 0 390 S
-PH 0 1 -1
+2058 0 0 0 0 1024 0 0 390 S
+PH 0 1 0 -1
 32 12 28 24d40+180 3d6+3
 106.55.9.1 15600
 8 8 1
@@ -721,8 +721,8 @@ man trapper~
 &+yhe sports a full bead.  His skin is rough and has worn
 &+yfrom the effects of weather and time.
 ~
-2062 0 0 32 0 0 0 600 S
-PH 0 2 -1
+2062 0 0 0 32 0 0 0 600 S
+PH 0 2 0 -1
 35 4 49 17d30+85 2d6+2
 0.0.0.0 5100
 8 8 1
@@ -736,8 +736,8 @@ man trader~
 &+yjaw-bone structure.  His nose is quite large while his
 &+yeyes are small and beady.
 ~
-2058 0 0 0 0 0 0 -300 S
-PH 0 0 -1
+2058 0 0 0 0 0 0 0 -300 S
+PH 0 0 0 -1
 28 11 34 22d40+165 3d6+3
 100.72.2.0 14300
 8 8 1
@@ -752,8 +752,8 @@ mayor man~
 &+rgore&+W while droplets of his life fluid flows down his chin
 &+Wand drips upon the ground.
 ~
-1073743946 0 0 268443768 34820 1140850688 0 1000 S
-PH 0 72 -1
+1073743946 0 0 0 268443768 34820 1140850688 0 1000 S
+PH 0 72 0 -1
 60 13 22 26d55+260 3d6+4
 100.67.10.1 16900
 8 8 1
@@ -768,8 +768,8 @@ witch woman~
 &+Walabaster flesh&+L stretches across a frame of defined muscle.
 &+LA small diamond shaped tattoo can be seen on her left breast.
 ~
-67119114 0 0 536944664 14529 128 0 0 S
-PH 0 256 -1
+67119114 0 0 0 536944664 14529 128 0 0 S
+PH 0 256 0 -1
 59 29 -112 59d120+9000 7d6+35
 6.4.22.21 147500
 8 8 2
@@ -783,8 +783,8 @@ cat familiar~
 &+Lon its own.  His ears are very pointy and he has unusually
 &+Llong whiskers.
 ~
-1140877322 0 0 268959800 128 0 1048576 0 S
-AC 0 1 -1
+1140877322 0 0 0 268959800 128 0 1048576 0 S
+AC 0 1 0 -1
 48 20 -20 40d80+2800 4d6+10
 0.0.0.0 36000
 8 8 2
@@ -799,8 +799,8 @@ bird red redbird~
 &+Rits size.  A crimson shimmering radiance seems to ebb from its
 &+Roddly colored beak of deep &+Mmauve&+R.
 ~
-8 0 0 134217728 0 0 1048576 0 S
-B 0 0 -1
+8 0 0 0 134217728 0 0 1048576 0 S
+B 0 0 0 -1
 10 2 70 10d20+10 1d6+0
 0.0.0.0 1000
 8 8 0
@@ -815,8 +815,8 @@ blackbird black bird~
 &+Lfor its size.  An orange shimmering radiance seems to ebb from
 &+Lits oddly colored beak of deep &+Yyellow&+L.
 ~
-8 0 0 134217744 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 134217744 0 0 0 0 S
+B 0 0 0 -1
 5 2 70 10d20+10 1d6+0
 0.0.0.0 1000
 8 8 0
@@ -831,8 +831,8 @@ yellowbird bird yellow~
 &+Yfor its size.  A &+Bblue&+Y shimmering radiance seems to ebb from
 &+Yits oddly colored beak of turquoise.
 ~
-8 0 0 134217728 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 134217728 0 0 0 0 S
+B 0 0 0 -1
 5 2 70 10d20+10 1d6+0
 0.0.0.0 1000
 8 8 0
@@ -847,8 +847,8 @@ A &+Rred&N and &+Lblack&N snake is sunning itself here.
 &+wof its mouth feeling the surrounding for its prey.  It is
 &+wvery beautiful.
 ~
-10 0 0 34078752 12 0 0 0 S
-RS 0 0 -1
+10 0 0 0 34078752 12 0 0 0 S
+RS 0 0 0 -1
 5 2 73 9d20+9 1d6+0
 0.0.0.0 900
 8 8 0
@@ -862,8 +862,8 @@ viper snake diamond~
 &+LIt scales are a rough gray.  Pieces of skin hang loosely
 &+Lalong its body from the recent shedding of its skin.
 ~
-10 0 0 524288 0 0 0 0 S
-RS 0 0 -1
+10 0 0 0 524288 0 0 0 0 S
+RS 0 0 0 -1
 5 2 70 10d20+10 1d6+0
 0.0.0.0 1000
 8 8 0
@@ -878,8 +878,8 @@ stripes seem to alternate between, &+Ggreen&N, &+Bblue&N, &+Yyellow&N, &+Rred&N,
 and purple as it swims.  Its large &+Lblack&N eyes twitch and
 rotate sporadically as it takes in its surroundings.
 ~
-8 0 0 0 0 0 0 0 S
-F 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+F 0 0 0 -1
 10 3 64 12d25+30 2d6+1
 0.0.0.0 3600
 8 8 0
@@ -895,8 +895,8 @@ turtle alligator~
 &+Gthe brook.  Its deep &+Lblack eyes&+G are very stunning when
 &+Gcontrasted with its brownish green color.
 ~
-2122 0 0 33554432 12 0 0 0 S
-R 0 0 -1
+2122 0 0 0 33554432 12 0 0 0 S
+R 0 0 0 -1
 17 7 55 15d25+37 2d6+1
 0.0.0.0 4500
 8 8 0
@@ -911,8 +911,8 @@ A small &+Bblue gilled&N fish darts about here.
 &+bvery small fins and its small mouth houses an array of
 &+bvery sharp teeth.
 ~
-10 0 0 2064 0 0 0 0 S
-F 0 0 -1
+10 0 0 0 2064 0 0 0 0 S
+F 0 0 0 -1
 10 2 76 8d20+8 1d6+0
 0.0.0.0 800
 8 8 0
@@ -926,8 +926,8 @@ bird flightless~
 &+ywings furiously as it plays around in its surroundings.
 &+yIts eyes seem to glow with a light amber hue.
 ~
-134219976 0 0 16 0 0 0 0 S
-A 0 0 -1
+134219976 0 0 0 16 0 0 0 0 S
+A 0 0 0 -1
 18 3 61 13d25+32 2d6+1
 0.0.0.0 3900
 8 8 0
@@ -941,8 +941,8 @@ hare large~
 &+ythe area.  Two large &+Wwhite teeth&+y protrude beneath its
 &+ysmall mouth.
 ~
-136 0 0 0 0 0 0 0 S
-A 0 0 -1
+136 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 4 2 76 8d20+8 1d6+0
 0.0.0.0 800
 8 8 0
@@ -957,8 +957,8 @@ coyote~
 &+ywith &+Rblood&+y.  Two small patches of &+wwhite&+y adorn the fur,
 &+yyet still stained heavily with &+Rblood&+y.
 ~
-1073744008 0 0 524320 0 0 0 0 S
-AC 0 0 -1
+1073744008 0 0 0 524320 0 0 0 0 S
+AC 0 0 0 -1
 18 6 61 13d25+32 2d6+1
 0.0.0.0 3900
 8 8 2
@@ -973,8 +973,8 @@ panther black~
 &+Ltail flicks from side to side as she rolls her large
 &+Ltongue across her fur in an attempt to clean herself.
 ~
-1073743880 0 0 35127312 0 0 0 -400 S
-AC 0 1 -1
+1073743880 0 0 0 35127312 0 0 0 -400 S
+AC 0 1 0 -1
 21 9 46 18d30+90 2d6+2
 0.0.0.0 5400
 8 8 2
@@ -989,8 +989,8 @@ sabertooth tiger~
 &+ybeen matted from the dry weather.  The beast scans the area
 &+ylooking for something to eat.
 ~
-1073743880 0 0 524304 0 0 0 -450 S
-AC 0 1 -1
+1073743880 0 0 0 524304 0 0 0 -450 S
+AC 0 1 0 -1
 27 10 40 20d30+100 2d6+2
 0.0.0.0 6000
 8 8 1
@@ -1004,8 +1004,8 @@ stallion horse wild~
 &+wwith his sparkling crystal &+Bblue&+w eyes.  Its &+Mindigo&+w mane and
 &+wtail flare from side sparkling like glitter.
 ~
-134217864 0 0 0 0 0 0 0 S
-AE 0 1 -1
+134217864 0 0 0 0 0 0 0 0 S
+AE 0 1 0 -1
 24 8 49 17d30+85 2d6+2
 0.0.0.0 5100
 8 8 1
@@ -1019,8 +1019,8 @@ horse mare~
 &+ywith her sparkling &+Mviolet&+y eyes.  Her mane and tail
 &+yflare from side to side, sparkling like glitter.
 ~
-134217866 0 0 0 0 0 0 0 S
-AE 0 1 -1
+134217866 0 0 0 0 0 0 0 0 S
+AE 0 1 0 -1
 19 3 58 14d25+35 2d6+1
 0.0.0.0 4200
 8 8 0
@@ -1034,8 +1034,8 @@ bullfrog frog bull~
 &+gemitting from its surroundings.  &+RBright red&+g streaks run up
 &+gand down its tiny body, oozing a faint glowing liquid.
 ~
-8 0 0 0 0 0 0 0 S
-R 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+R 0 0 0 -1
 8 3 64 12d25+30 2d6+1
 0.0.0.0 3600
 8 8 0
@@ -1049,8 +1049,8 @@ frog tree treefrog~
 &+ylarge for its size.  &+YGlowing yellow&+y dust sizzles and
 &+ycrackles as the frog's skin emits small puffs of spores.
 ~
-10 0 0 0 0 0 0 0 S
-R 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+R 0 0 0 -1
 5 2 76 8d20+8 1d6+0
 0.0.0.0 800
 8 8 0
@@ -1064,8 +1064,8 @@ raccoon~
 &+Lblack&+w fur covers his entire eye section.  Small spots
 &+wof &+Wwhite&+w adorn his fur, especially his underbelly.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 10 2 70 10d20+10 1d6+0
 0.0.0.0 1000
 8 8 0
@@ -1078,8 +1078,8 @@ fox red~
 &+rof red fur.  Its puffy &+Wwhite&+r tail wags back in forth as it
 &+reyes the surrounding area for some food.
 ~
-1073741898 0 0 1572864 0 0 0 0 S
-AC 0 0 2
+1073741898 0 0 0 1572864 0 0 0 0 S
+AC 0 0 0 2
 14 6 61 13d25+32 2d6+1
 0.0.0.0 3900
 8 8 1
@@ -1093,8 +1093,8 @@ swarm bee~
 &+Ltranslucent wings buzz loudly, sending a sound of terror
 *+Lthroughout the land.
 ~
-1073741832 1 0 16 0 0 0 0 S
-I 0 0 -1
+1073741832 1 0 0 16 0 0 0 0 S
+I 0 0 0 -1
 8 2 76 8d20+8 1d6+0
 0.0.0.0 800
 8 8 0
@@ -1108,8 +1108,8 @@ owl giant~
 &+Lclaws tense up and relax in anticipation.  Large oval
 &+Yyellow&+L eyes carefully scan the area.
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 15 3 55 15d25+50 2d6+1
 0.0.0.0 4500
 8 8 0
@@ -1123,8 +1123,8 @@ bat giant~
 &+Lbright &+Rcrimson&+L light.  Two huge &+wfangs&+L protrude from its
 &+Lpetite maw.  It screeches loudly hovering over your head.
 ~
-131080 0 0 0 0 0 0 0 S
-B 0 0 -1
+131080 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 13 3 61 13d25+50 2d6+1
 0.0.0.0 3900
 8 8 0
@@ -1137,8 +1137,8 @@ cricket~
 &+gIt legs seem to shimmer with an odd greenish glow as it rubs
 &+gthem back in forth making an eerie musical sound.
 ~
-136 0 0 35127296 0 0 0 0 S
-I 0 0 -1
+136 0 0 0 35127296 0 0 0 0 S
+I 0 0 0 -1
 2 2 76 1d20+8 1d6+0
 0.0.0.0 800
 8 8 0
@@ -1152,8 +1152,8 @@ beetle fire giant~
 &+LIt mandibles look quite deadly as it scuttles across the
 &+Lland.
 ~
-2056 0 0 0 0 0 0 0 S
-A 0 0 -1
+2056 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 18 3 58 14d25+35 2d6+1
 0.0.0.0 4200
 8 8 0
@@ -1167,8 +1167,8 @@ boobrie bird gigantic~
 &+MIts beak is rather larger for even its huge size.  Its
 &+Mfeathers are bright pink in color and its legs are &+Yyellow&+M.
 ~
-2056 0 0 0 0 0 0 0 S
-B 0 0 -1
+2056 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 19 4 43 19d30+95 2d6+2
 0.0.0.0 5700
 8 8 2
@@ -1182,8 +1182,8 @@ vulture giant~
 &+Lits lazy &+wgray eyes&+L scan the surface of the area for remains
 &+Lof prey to scavenge from.
 ~
-2056 0 0 0 0 0 0 0 S
-B 0 0 -1
+2056 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 22 4 52 16d30+80 2d6+2
 0.0.0.0 4800
 8 8 0
@@ -1197,8 +1197,8 @@ otter~
 &+Lits tiny hand like paws across its stomach.  It eyes keep constant
 &+Lwatch of his surroundings.
 ~
-10 0 0 0 0 0 0 0 S
-A 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 8 2 76 8d20+8 1d6+0
 0.0.0.0 800
 8 8 0
@@ -1213,8 +1213,8 @@ dragazhar bat large~
 &+Lwith a &+Ybright yellow&+L intensity as it scans the land for
 &+Lfruit and prey.
 ~
-2056 0 0 167772164 0 0 0 0 S
-B 0 0 -1
+2056 0 0 0 167772164 0 0 0 0 S
+B 0 0 0 -1
 19 9 43 19d30+95 2d6+2
 0.0.0.0 5700
 8 8 0
@@ -1228,8 +1228,8 @@ elven girl~
 &+cCrystal &+Ggreen&+c eyes flash with a inner light. She is obviously
 &+cat home here in the open air of the night.
 ~
-136 0 0 524288 0 0 0 1000 S
-PE 0 0 -1
+136 0 0 0 524288 0 0 0 1000 S
+PE 0 0 0 -1
 12 3 59 12d25+30 2d6+1
 118.53.1.0 3600
 8 8 2

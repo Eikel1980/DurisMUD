@@ -5,7 +5,7 @@ dream light~
 ~
 25 1 3 0 7 0 67108864 0 0 1 0
 31302 15 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dream light~
 &+cYou start to enter &+ca &+Cd&+Wr&+cea&+Cm state of mind.&n
@@ -17,7 +17,7 @@ reality life light~
 ~
 25 15 3 0 7 0 0 0 0 1 0
 31301 15 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 reality life light~
 &+WPeering into the light you begin to drift back into conscious state of mind.&n
@@ -29,7 +29,7 @@ bed fluffy~
 ~
 25 3 3 0 7 0 0 0 0 1 0
 31334 44 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bed fluffy~
 &+wStaring at the bed, you have second thoughts about the enchantresses advances.&n
@@ -41,7 +41,7 @@ cliff~
 ~
 25 15 3 0 7 0 0 0 0 1 0
 31311 264 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cliff~
 &+yWith no escape, do you have faith to leap off the cliff?&n
@@ -53,7 +53,7 @@ key static~
 ~
 18 1 3 0 7 0 67133568 1 0 1 0
 0 100 0 0 0 0 0 0
-1 23 100
+1 23 100 100
 E
 key static~
 &+wThe odd key seems to be made of &+Lst&+wa&+Wt&+wi&+Lc&+w el&+Wec&+Ltric&+Wit&+wy.&n
@@ -65,7 +65,7 @@ halo golden~
 ~
 9 24 3 0 7 0 8448 17 0 1073741825 0
 -8 0 0 0 0 0 0 0
-1 5512 100
+1 5512 100 100
 E
 halo golden~
 &+YThis golden hoop appears to be a tiny halo.&n
@@ -81,7 +81,7 @@ golden blade prophets~
 ~
 5 24 3 0 7 0 7529736 8396801 0 67108865 0
 13 7 4 3 0 0 0 0
-5 64422 100 8192 4 0 0
+5 64422 100 100 8192 4 0 0
 E
 golden blade prophets~
 &+YThis might blade has been blessed by &+WP&+wa&+Lst &+WPro&+wphe&+Lts&+Y.&n
@@ -97,7 +97,7 @@ golden platemail past prophets~
 ~
 9 24 3 0 7 0 36889600 9 0 67108865 0
 -35 0 0 0 0 0 0 0
-10 19893 100 4 0 0 0
+10 19893 100 100 4 0 0 0
 E
 golden platemail past prophets~
 &+YThis golden platemail has been blessed by the souls of past prophets.&n
@@ -113,7 +113,7 @@ sinister horns~
 ~
 9 10 3 0 7 0 25088 142606353 0 1 0
 -5 0 0 0 0 0 0 0
-3 2323 100
+3 2323 100 100
 E
 sinister horns~
 &+rThe pair of demonic horns contain &+Lpure evil&+r.&n
@@ -129,7 +129,7 @@ purge demonic blade~
 ~
 5 19 3 0 7 0 7528968 8396801 0 1 0
 13 6 6 6 0 0 0 0
-5 25651 100 65536 8 0 0
+5 25651 100 100 65536 8 0 0
 E
 purge demonic blade~
 &+rThe demonic blade is made out of adamantium and labled &+w'&+LPurge&+w'&+r.&n
@@ -145,7 +145,7 @@ purge blood platemail plate~
 ~
 9 19 3 0 7 0 25600 9 0 67108865 0
 35 0 0 0 0 0 0 0
-10 31442 100 32 0 0 0
+10 31442 100 100 32 0 0 0
 A
 19 3
 A
@@ -157,7 +157,7 @@ eyepatch inner vision~
 ~
 9 27 3 0 7 0 67137536 131073 0 0 0
 5 0 0 0 0 0 0 0
-2 12622 100 268435456 0 0 0
+2 12622 100 100 268435456 0 0 0
 E
 eyepatch inner vision~
 &+LThe eyepatch helps consoled your I&+wnn&+Ler &+YVision&+L.&N
@@ -173,7 +173,7 @@ earring sound advice~
 ~
 9 8 3 0 7 0 28672 524289 0 0 0
 5 0 0 0 0 0 0 0
-1 8932 100 0 0 64 0
+1 8932 100 100 0 0 64 0
 E
 earring sound advice~
 &+CThe earring taps into some &+WSound&+w Advice&+C.&n
@@ -187,7 +187,7 @@ necklace will force~
 ~
 9 19 3 0 7 0 28672 5 0 0 0
 10 0 0 0 0 0 0 0
-2 14332 100
+2 14332 100 100
 E
 necklace will force~
 &+WThe necklace envokes a strong&+w Will &+YForce&+w.&n
@@ -203,7 +203,7 @@ granite helm~
 ~
 9 37 3 0 7 0 24576 17 0 0 0
 15 0 0 0 0 0 0 0
-4 14225 100
+4 14225 100 100
 E
 granite helm~
 &+LThis ganite helm has a jagged shape.&n
@@ -219,7 +219,7 @@ life band~
 ~
 9 49 3 0 7 0 24576 4097 0 1 0
 7 0 0 0 0 0 0 0
-1 8321 100
+1 8321 100 100
 E
 life band~
 &+WThe wristband is made of rubber.&n
@@ -235,7 +235,7 @@ bear face mask~
 ~
 9 2 3 0 7 0 28672 262145 0 0 0
 5 0 0 0 0 0 0 0
-1 3991 100
+1 3991 100 100
 E
 bear face mask~
 &+yThe face of a bear has been skinned to make this mask.&n
@@ -251,7 +251,7 @@ snake eyed ring~
 ~
 9 2 3 0 7 0 24576 3 0 0 0
 5 0 0 0 0 0 0 0
-1 4352 100 32768 0 0 0
+1 4352 100 100 32768 0 0 0
 E
 snake eyed ring~
 &+LThe &+Ye&+Ly&+Ye&+Ls of a snake have been mounted on a black finger band.&n
@@ -267,7 +267,7 @@ wand anti energy~
 ~
 3 36 3 0 7 0 28672 8404993 0 0 0
 51 3 3 25 0 0 0 0
-1 5335 100
+1 5335 100 100
 E
 wand anti energy~
 &+LThe wand consists of &+wanti-&+Yenergy&+L.&n
@@ -279,7 +279,7 @@ spiked leather grip~
 ~
 9 13 3 0 7 0 24576 129 0 0 0
 10 0 0 0 0 0 0 0
-1 18821 100
+1 18821 100 100
 E
 spiked leather grip~
 &+LFour large spikes&+y are mounted to a leather buckle strap.&n
@@ -295,7 +295,7 @@ battle scar~
 ~
 9 2 3 0 7 0 24576 2097153 0 0 0
 5 0 0 0 0 0 0 0
-0 3321 100
+0 3321 100 100
 E
 battle scar~
 &+y./\_/~~\/\_/'&n
@@ -309,7 +309,7 @@ sleeves shadows shifting~
 ~
 9 1 3 0 7 0 24576 257 0 0 0
 5 0 0 0 0 0 0 0
-2 5533 100
+2 5533 100 100
 E
 sleeves shadows shifting~
 &+LThe sleeves seems to&+L of s&+wh&+Wi&+wf&+Lt in and &+wout&+L of the shadows&n
@@ -325,7 +325,7 @@ wrap abandonment~
 ~
 9 3 3 0 7 0 24576 1025 0 0 0
 15 0 0 0 0 0 0 0
-3 17728 100
+3 17728 100 100
 E
 wrap abandonment~
 &+mThe cloak slowly &+Wfades into something &+wthat can be felt &+Lbut not seen.&n
@@ -341,7 +341,7 @@ belt allure faeries~
 ~
 9 26 3 0 7 0 24576 2049 0 0 0
 10 0 0 0 0 0 0 0
-2 5532 100
+2 5532 100 100
 E
 belt allure faeries~
 &+MThis mystic belt was crafted by faeries.&n
@@ -357,7 +357,7 @@ torn cloth stockings~
 ~
 9 3 3 0 7 0 24576 33 0 0 0
 5 0 0 0 0 0 0 0
-1 5352 100
+1 5352 100 100
 E
 torn cloth stockings~
 &+LThe cloth &+rl&+we&+rg st&+woc&+rkings&+L have many holes.&n
@@ -373,7 +373,7 @@ glowing sapphire totem~
 ~
 34 33 3 0 7 0 24576 16385 0 0 0
 34 0 0 0 0 0 0 0
-2 5483 100
+2 5483 100 100
 E
 glowing sapphire totem~
 &+bThe sapphire totem &+Cglows&+b from within.&n
@@ -387,7 +387,7 @@ thin shawl~
 ~
 9 3 3 0 7 0 24576 17 0 0 0
 8 0 0 0 0 0 0 0
-1 533 100
+1 533 100 100
 E
 thin shawl~
 &+CThe shawl is made from a thin cloth.&n
@@ -403,7 +403,7 @@ wad paper letter illusionists~
 ~
 8 28 3 0 7 0 24576 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 letter illusionists~
 &+wDear &+MPrin&+Wcess&+w,
@@ -423,7 +423,7 @@ kiss princess~
 ~
 8 2 3 0 7 0 24576 1 0 1 0
 0 0 0 0 0 0 0 0
-1 42323 100
+1 42323 100 100
 #31330
 rose~
 &+ga long stem &+rrose&n~
@@ -431,7 +431,7 @@ rose~
 ~
 8 30 3 0 7 0 28672 8404993 0 1 0
 0 0 0 0 0 0 0 0
-1 2334 100
+1 2334 100 100
 E
 rose~
 &+r@&+G}&+g--'-,--&n
@@ -443,7 +443,7 @@ invitation invite~
 ~
 18 8 3 0 7 0 28672 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1544 100
+1 1544 100 100
 #31332
 crate~
 &+ya small crate&n~
@@ -451,7 +451,7 @@ crate~
 ~
 15 6 3 0 7 0 24576 0 0 1 0
 1000 5 0 1000 0 0 0 0
-15 1 100
+15 1 100 100
 E
 crate~
 &+yThe old wooden crate has some empty bottles stacked on it and a layer of
@@ -464,7 +464,7 @@ ghostly liquid vial~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 261 0 0 0 0 0 0
-1 60332 100
+1 60332 100 100
 E
 ghostly liquid~
 &+wA sw&+Wir&+wl&+Win&+wg m&+Wis&+wt is encased in the vial.&n
@@ -476,7 +476,7 @@ dark potion~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 36 161 0 0 0 0 0
-1 53221 100
+1 53221 100 100
 E
 dark potion~
 &+LThe liquid in the potion is pitch black.&n
@@ -488,7 +488,7 @@ red potion~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 134 41 0 0 0 0 0
-1 34551 100
+1 34551 100 100
 E
 red potion~
 &+rThe red liquid bubbles inside the potion.&n
@@ -500,7 +500,7 @@ potion fire ice~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 277 254 0 0 0 0 0
-1 73221 100
+1 73221 100 100
 E
 potion fire ice~
 &+wThe top of the &+Cchunk of ice&+w is &+rfl&+Ram&+Ying&+w.&n
@@ -512,7 +512,7 @@ sapphire vial~
 ~
 10 40 3 0 7 0 94208 8404993 0 1 0
 51 2 0 0 25 0 0 0
-1 51511 100
+1 51511 100 100
 E
 sapphire vial~
 &+bThe small vial is filled with a sapphire liquid.&n
@@ -524,7 +524,7 @@ elemental brew~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 104 105 98 0 0 0 0
-1 83220 100
+1 83220 100 100
 E
 elemental brew~
 &+cThe potion is a concoction of several elements.&n
@@ -536,7 +536,7 @@ green elixir~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 39 215 177 0 0 0 0
-1 92251 100
+1 92251 100 100
 E
 green elixir~
 &+GThe elixirs ooze is bright green.&n
@@ -548,7 +548,7 @@ stamina concoction potion~
 ~
 10 40 3 0 7 0 90112 8404993 0 1 0
 51 66 355 0 0 0 0 0
-1 72621 100
+1 72621 100 100
 #31341
 angelic wings~
 &+csome &+Wan&+wgel&+Cic wings&N~
@@ -556,7 +556,7 @@ angelic wings~
 ~
 9 50 3 0 7 0 25664 1025 0 0 0
 10 0 0 0 0 0 0 0
--10 19034 100 8192 4 0 0
+-10 19034 100 100 8192 4 0 0
 E
 angelic wings~
 &+CThis pair of wings once belonged to an &+Wan&+wgel&+C.
@@ -572,7 +572,7 @@ pitchfork fork~
 ~
 4 37 3 0 7 0 25088 8413185 0 1 0
 50 2 2 62 0 0 0 0
-1 3452 100
+1 3452 100 100
 E
 pitchfork fork~
 &+rThis sturdy pitch-fork has three prongs attached.&n
@@ -588,7 +588,7 @@ platinum platemail past prophets~
 ~
 9 25 3 0 7 0 36889856 9 0 70271067 0
 35 0 0 0 0 0 0 0
-7 42230 100 0 6 0 0
+7 42230 100 100 0 6 0 0
 E
 platinum platemail past prophets~
 &+WThis platemails curse has been lifted by the past prophets blessing.&n
@@ -604,7 +604,7 @@ purge blood platemail plate~
 ~
 9 19 3 0 7 0 24576 9 0 0 0
 35 0 0 0 0 0 0 0
-7 97222 100 0 8 0 262144
+7 97222 100 100 0 8 0 262144
 A
 20 -2
 A
@@ -616,7 +616,7 @@ necklace wooden cross +~
 ~
 9 6 3 0 7 0 286720 5 0 1 0
 5 0 0 0 0 0 0 0
-1 5423 100
+1 5423 100 100
 E
 necklace wooden cross +~
 &+yThis wooden necklace is made of beads and a simple cross.&n
@@ -632,7 +632,7 @@ holy white robe robes~
 ~
 9 3 3 0 7 0 24576 9 0 0 0
 20 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 holy white robe robes~
 &+WThese simple robes once belonged to a holy man.&n
@@ -648,7 +648,7 @@ shard granite~
 ~
 5 37 3 0 7 0 24576 8193 0 1 0
 2 3 3 11 0 0 0 0
-2 923 100
+2 923 100 100
 E
 shard granite~
 &+LThis slice of granite has a razor sharp tip.&n
@@ -664,7 +664,7 @@ smoky duffelbag bag bp~
 ~
 15 3 4 0 7 0 24576 12599297 0 1 0
 500 29 31349 700 0 0 0 0
--150 9452 100
+-150 9452 100 100
 E
 smoky duffelbag bag bp~
 &+wThe ta&+Ltt&+wer&+Led&+w bag is covered in &+Lsoot&+w.&n
@@ -676,7 +676,7 @@ tiny key~
 ~
 18 37 3 0 7 0 28672 8388609 0 1 0
 0 0 0 0 0 0 0 0
-1 321 100
+1 321 100 100
 E
 tiny key~
 &+wThe basic key is made of granite.&n
@@ -688,7 +688,7 @@ treasure loot coins~
 ~
 20 24 3 0 7 0 0 1 0 1 0
 13 100 84 66 0 0 0 0
-1 0 100
+1 0 100 100
 #31351
 strapped leather sandals~
 &+ysome strapped leather sandals&n~
@@ -696,7 +696,7 @@ strapped leather sandals~
 ~
 9 14 3 0 7 0 24576 65 0 0 0
 5 0 0 0 0 0 0 0
--10 338 100
+-10 338 100 100
 E
 strapped leather sandals~
 &+yThe sandals seem to be made of cured leather.&n
@@ -712,7 +712,7 @@ wooden leggings leg plates~
 ~
 9 6 3 0 7 0 24576 33 0 0 0
 7 0 0 0 0 0 0 0
-3 4121 100
+3 4121 100 100
 E
 wooden leggings leg plates~
 &+yThe wooden leg plates are attached by a leather straps.&n
@@ -728,7 +728,7 @@ dusty loincloth~
 ~
 9 12 3 0 7 0 24576 2049 0 0 0
 7 0 0 0 0 0 0 0
-2 7720 100
+2 7720 100 100
 E
 dusty loincloth~
 &+yThe foul loincloth is made of leather.&n
@@ -744,7 +744,7 @@ skull bones badge~
 ~
 9 10 3 0 7 0 24576 2097153 0 0 0
 5 0 0 0 0 0 0 0
-1 4213 100
+1 4213 100 100
 E
 skull bones badge~
 &+LThe badge shows a &+wskull&+L with two crossed&+w bones&+L.&n

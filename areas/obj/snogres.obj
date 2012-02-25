@@ -5,7 +5,7 @@ arm ogre torn detached _id_ _noquest_~
 ~
 5 2 4 0 10 0 72 8193 76 0 0
 11 5 5 0 0 0 0 0
-18 0 100 536870912 64 0 4096
+18 0 100 100 536870912 64 0 4096
 E
 arm ogre torn detached~
 &+rThis is the bloody, detached arm of a snow ogre berserker.  There are
@@ -23,7 +23,7 @@ skin skull leggings flayed _noquest_ unique~
 ~
 9 2 5 0 15 0 268435976 33 0 0 16843008
 12 0 0 0 0 0 0 0
-8 0 100 536870928 2112 0 0
+8 0 100 100 536870928 2112 0 0
 E
 skin skull leggings flayed~
 &+rThis is a fine pair of flayed skin leggings which have been crafted for a
@@ -43,7 +43,7 @@ cold iron vambraces frost _noquest_~
 ~
 9 15 4 0 15 0 0 257 64 0 0
 18 0 0 0 0 0 0 0
-0 0 100 8 64 0 0
+0 0 100 100 8 64 0 0
 E
 cold iron vambraces frost~
 &+cCold bands of iron serve to protect the unidentifiable material beneath from
@@ -62,7 +62,7 @@ volgue blacksteel black steel ash~
 ~
 5 16 4 0 14 0 4194304 8193 64 0 0
 16 3 8 0 0 0 0 0
-14 0 100 536870912 64 0 0
+14 0 100 100 536870912 64 0 0
 E
 volgue blacksteel black steel ash~
 &+LThis spear-like weapon has a thin coating of ash across its entire length.
@@ -81,7 +81,7 @@ cyclops eyes string gory _noquest_~
 ~
 11 2 3 0 13 0 3284992 5 64 0 0
 0 0 0 0 0 0 0 0
-3 0 100 44 28 0 83886080
+3 0 100 100 44 28 0 83886080
 E
 cyclops eyes string gory~
 &+WSeveral cyclops eyes of varying colors have been combined to create this
@@ -98,7 +98,7 @@ illithid face lord flesh _noquest_~
 ~
 9 2 3 0 8 0 8200 262145 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100 536870912 12480 0 0
+2 0 100 100 536870912 12480 0 0
 E
 gnome face tanned flesh~
 &+yRaggedly torn from the skull of a deceased &+RGnome&+y, this chunk of
@@ -117,7 +117,7 @@ hourglass intricate strange _noquest_~
 ~
 3 24 2 0 14 0 3153952 8404993 64 0 0
 60 3 3 88 0 0 0 0
-1 55000 100
+1 55000 100 100
 E
 hourglass intricate strange~
 &+YIntricate designs and patterns swirl about the gold which encases the
@@ -136,7 +136,7 @@ chains hooks flesh array _noquest_~
 ~
 9 16 3 0 7 0 0 2049 0 0 0
 8 0 0 0 1 0 0 0
-4 12000 100 268509184 0 0 4096
+4 12000 100 100 268509184 0 0 4096
 E
 chains hooks flesh array~
 &+rVarious hooks of different &+Cshapes and sizes&+r have been attached to
@@ -154,7 +154,7 @@ minotaur skull gleaming~
 ~
 3 10 4 0 4 0 8 8404993 0 0 0
 51 1 1 483 0 0 0 0
-7 0 100
+7 0 100 100
 E
 minotaur skull gleaming~
 &+WThis is the highly polished skull of a former Minotaur.  The horns are still
@@ -171,7 +171,7 @@ entrails woven soul pile~
 ~
 11 2 3 0 10 0 0 2049 0 0 0
 0 0 0 0 0 0 0 0
-4 0 100 73728 0 0 0
+4 0 100 100 73728 0 0 0
 E
 entrails woven soul pile~
 &+YThe &+rwoven entrails &+mleave much to be desired &+Yin the way of
@@ -188,7 +188,7 @@ claymore onyx iron cold _id_ _noquest_~
 ~
 5 15 4 0 15 0 4235272 8193 80 0 0
 13 8 3 0 0 0 0 0
-18 0 100 0 0 0 1024
+18 0 100 100 0 0 0 1024
 E
 claymore onyx cold iron~
 &+wA strangely milky sheen shimmers along the entire length of this claymore's
@@ -207,7 +207,7 @@ greatsword sword onyx cold iron _id_ _noquest_~
 ~
 5 15 4 0 15 0 4202504 8193 80 0 0
 13 5 4 0 0 0 0 0
-15 0 100 0 0 0 4096
+15 0 100 100 0 0 0 4096
 E
 greatsword onyx cold iron sword~
 &+LA great silvery blade extends out from an onyx hilt where the tang must
@@ -225,7 +225,7 @@ waraxe axe hellfire onyx wicked _id_ _noquest_~
 ~
 5 18 3 0 15 0 3155224 8193 64 2113539 0
 1 4 4 0 0 0 0 0
-15 0 100 16 0 0 8192
+15 0 100 100 16 0 0 8192
 E
 waraxe axe hellfire onyx wicked~
 &+m   Delicate violet runes pulse rhythmically along the inner edges of the
@@ -262,7 +262,7 @@ crystal green shard _noquest_~
 ~
 12 8 1 0 11 0 98312 8404993 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #87714
 robe gold _noquest_~
 &+La &+wthreadbare &+Ygold&+L-&+Ytrimmed &+Lblack robe&N~
@@ -270,7 +270,7 @@ robe gold _noquest_~
 ~
 11 3 3 0 15 0 42056 1025 64 4197888 0
 0 0 0 0 0 0 0 0
-2 0 100 2 0 0 0
+2 0 100 100 2 0 0 0
 E
 robe black gold~
 &+LThere are places upon this robe where the material has stretched so thin
@@ -290,7 +290,7 @@ bleeding eye astereater _noquest_~
 ~
 13 2 2 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #87716
 severed head hydra ice _noquest_~
 &+ca severed head from an &+bice hydra&N~
@@ -298,7 +298,7 @@ severed head hydra ice _noquest_~
 ~
 12 2 3 0 0 0 36936 8388609 0 0 0
 0 0 0 0 0 0 0 0
-20 0 30
+20 0 30 100
 #87717
 long writhing illithid tentacle _noquest_~
 &+ma long, writhing &+Millithid &+mtentacle&N~
@@ -306,7 +306,7 @@ long writhing illithid tentacle _noquest_~
 ~
 12 2 1 0 7 0 36936 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #87718
 large black scale dragon swamp _noquest_~
 &+La scale from an elder &+wswamp &+Ldragon&N~
@@ -314,7 +314,7 @@ large black scale dragon swamp _noquest_~
 ~
 12 35 1 0 7 0 36872 1 0 0 0
 0 0 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 #87719
 plant stalk sundew chunk _noquest_~
 &+Ga chunk of stalk from a &+mmutated &+Ysun&+Gdew&N~
@@ -322,7 +322,7 @@ plant stalk sundew chunk _noquest_~
 ~
 12 5 1 0 7 0 36872 1 0 0 0
 0 0 0 0 0 0 0 0
-6 0 100
+6 0 100 100
 #87720
 long shard obsidian totem volcano _noquest_~
 &+ran &+Lobsidian totem &+rof the &+Lv&+rol&+Rc&+ran&+Lo &+rshamans&N~
@@ -330,7 +330,7 @@ long shard obsidian totem volcano _noquest_~
 ~
 4 36 4 0 12 0 98312 16385 0 0 0
 45 5 5 394 0 0 0 0
-9 0 100
+9 0 100 100
 #87721
 crystalline totem glacier long shard _noquest_~
 &+ca &+Ccrystalline totem &+cof the &+wgl&+ca&+Cc&+ci&+wer &+cshamans&N~
@@ -338,7 +338,7 @@ crystalline totem glacier long shard _noquest_~
 ~
 4 8 4 0 12 0 98312 16385 0 0 0
 45 5 5 111 0 0 0 0
-9 0 100
+9 0 100 100
 #87722
 long shard sandstone totem desert _noquest_~
 &+wa &+ysandstone totem &+wof the d&+ye&+Yse&+yr&+wt shamans&N~
@@ -346,7 +346,7 @@ long shard sandstone totem desert _noquest_~
 ~
 4 11 4 0 12 0 98312 16385 0 0 0
 45 5 5 223 0 0 0 0
-9 0 100
+9 0 100 100
 #87723
 long shard dark iron squall totem _noquest_~
 &+La &+bdark&+L-&+biron totem &+Lof the &+bs&+Bq&+cua&+Bl&+bl &+Lshamans&N~
@@ -354,7 +354,7 @@ long shard dark iron squall totem _noquest_~
 ~
 4 15 4 0 12 0 98312 16385 0 0 0
 45 5 5 465 0 0 0 0
-9 0 100
+9 0 100 100
 #87724
 whip roper tentacles coils _noquest_~
 &+ma whip &+Lcrafted from &+msevered &+Groper &+mtentacles&N~
@@ -362,7 +362,7 @@ whip roper tentacles coils _noquest_~
 ~
 5 2 2 0 11 0 0 8193 0 0 0
 14 3 5 0 0 0 0 0
-6 0 100
+6 0 100 100
 A
 18 4
 A
@@ -374,7 +374,7 @@ remorhaz hide chunk large bleached _noquest_~
 ~
 12 2 3 0 2 0 36872 1 0 0 0
 0 0 0 0 0 0 0 0
-20 0 100
+20 0 100 100
 #87726
 crude note parchment _id_ _noquest_~
 &+ya crude note&N~
@@ -382,7 +382,7 @@ crude note parchment _id_ _noquest_~
 ~
 16 28 0 0 4 0 36872 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 note crude dirty~
 
@@ -400,7 +400,7 @@ emerald disc bone _id_~
 ~
 11 10 0 0 15 0 3145728 524289 64 0 0
 0 0 0 0 0 0 0 0
-0 1250000 100 268435456 0 0 0
+0 1250000 100 100 268435456 0 0 0
 E
 emerald disc bone~
 &+gA smooth, circular piece of bone has been dyed emerald green for use
@@ -419,7 +419,7 @@ vambraces remorhaz hide magical white _id_ _noquest_~
 ~
 9 46 3 0 15 0 3187720 257 64 33554848 0
 25 0 0 0 1 0 0 0
-8 5500000 100 0 2048 0 0
+8 5500000 100 100 0 2048 0 0
 E
 remorhaz greaves hide magical white~
 &+WThe large plates of chitin taken from the hide of a polar worm, also known
@@ -442,7 +442,7 @@ halfling head shrunken platinum chain _id_ _noquest_~
 ~
 11 25 1 0 12 0 3178496 5 0 0 0
 0 0 0 0 0 0 0 0
-1 2500000 100 0 0 0 16777216
+1 2500000 100 100 0 0 0 16777216
 E
 halfling head shrunken platinum chain~
 &+yA platinum chain has been strung through the ears of a shrunken halfling head
@@ -460,7 +460,7 @@ yellow shard crystal _noquest_~
 ~
 12 8 1 0 11 0 32776 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #87731
 blue shard crystal~
 &+Ba blue shard of &+Ccrystal&N~
@@ -468,7 +468,7 @@ blue shard crystal~
 ~
 12 8 1 0 11 0 32776 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #87732
 pyramid prismatic delicate crystal colors _noquest_~
 &+ma p&+Br&+Ri&+Ys&+Gm&+Ca&+Wt&+Li&+Mc &+Lpyramid &+mof delicate &+Ccrystal&N~
@@ -476,7 +476,7 @@ pyramid prismatic delicate crystal colors _noquest_~
 ~
 4 8 1 0 11 0 67142728 16385 0 33554848 0
 60 10 10 88 0 0 0 0
-1 0 100 16 0 0 4096
+1 0 100 100 16 0 0 4096
 #87733
 dread scimitar serrated night _noquest_~
 &+La dread serrated scimitar of the blackest night&N~
@@ -484,7 +484,7 @@ dread scimitar serrated night _noquest_~
 ~
 5 36 5 0 15 0 33652864 8192 124 0 0
 5 4 8 0 0 0 0 0
-30 0 100 16 0 0 0
+30 0 100 100 16 0 0 0
 A
 58 -1
 A
@@ -496,7 +496,7 @@ This should be a NO SHOW object.~
 ~
 5 15 3 0 7 0 2 8193 0 0 0
 2 3 12 0 0 71 56 25
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+LAn intense &+bsurge &+Lof negative energy suddenly amasses between
@@ -518,7 +518,7 @@ the grotto switch object is not being shown here!~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 87717 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #87736
 no show phylactery~
 no show phylactery~
@@ -526,7 +526,7 @@ no show phalactery~
 ~
 11 15 3 0 7 0 2 4 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 0 0 17563648 8401408
+0 0 100 100 0 0 17563648 8401408
 A
 56 91
 A
@@ -538,4 +538,4 @@ pile disgusting entrails organs~
 ~
 12 15 3 0 7 0 65536 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

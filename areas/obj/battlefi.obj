@@ -5,7 +5,7 @@ dead rat~
 ~
 19 15 3 0 7 0 0 8404993 0 0 0
 24 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 dead rat~
 &+LThe idea that a halfling would keep his dead pet rat, is beyond the halfling
@@ -19,7 +19,7 @@ golden shell~
 ~
 37 24 3 0 7 1 5120 513 0 85475329 0
 1 1 4 175 3 0 0 0
-10 382022 100
+10 382022 100 100
 E
 golden shell~
 &+YFrom a dragon egg, this circular shell seems to emit a powerful aura.
@@ -35,7 +35,7 @@ marble sign~
 ~
 12 15 3 0 7 0 1056 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 marble sign~
 &+C _____________________________________________________________________________
@@ -70,7 +70,7 @@ spiraling portal~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 66450 7 -1 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 spiraling portal~
 &+WA marvelous array of colors.
@@ -82,7 +82,7 @@ portal spiraling sphere~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 66543 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal spiraling~
 &+WIt hovers in mid air.
@@ -94,7 +94,7 @@ crystal bracer solid~
 ~
 9 15 3 0 7 0 5120 4097 64 85475329 0
 5 0 0 3 0 0 0 0
-5 2000 100
+5 2000 100 100
 E
 crystal bracer solid~
 &+WIt hums softly and is totally transparent.
@@ -110,7 +110,7 @@ solid crystal sleeves~
 ~
 9 15 3 0 7 0 5120 257 64 85475329 0
 10 0 0 3 0 0 0 0
-5 203 100
+5 203 100 100
 E
 solid crystal sleeves~
 &+WNearly tansparent, yet strong as steel.
@@ -126,7 +126,7 @@ collar solid crystal~
 ~
 9 15 3 0 7 0 4096 5 64 0 0
 7 0 0 3 0 0 0 0
-5 2020 100
+5 2020 100 100
 E
 collar solid crystal~
 &+WNearly totally transparent, yet strong as steel.
@@ -142,7 +142,7 @@ key steel~
 ~
 18 16 3 0 7 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key steel~
 &+cA key made of steel.&n
@@ -154,7 +154,7 @@ solid solid-steel steel leggings~
 ~
 9 15 3 0 7 0 1024 33 0 87572571 0
 10 0 0 5 0 0 0 0
-10 3040 100
+10 3040 100 100
 E
 solid solid-steel steel leggings~
 &+LThese leggings look like they can take a beating.
@@ -170,7 +170,7 @@ table circular~
 ~
 13 15 3 0 7 0 1024 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table circular~
 Many plans are sprawled upon it.
@@ -182,7 +182,7 @@ sword broad~
 ~
 5 15 3 0 7 0 1024 8193 0 87650395 0
 5 1 8 3 0 0 0 0
-5 10 100
+5 10 100 100
 E
 sword broad~
 Used the guards to kick some ass.
@@ -194,7 +194,7 @@ swirling potion~
 ~
 10 7 3 0 7 0 4096 1 64 0 0
 30 1 15 141 0 0 0 0
-3 1020 100
+3 1020 100 100
 E
 swirling potion~
 &+WIt swirls in its center.
@@ -206,7 +206,7 @@ charge static chest~
 ~
 15 23 3 0 7 0 1024 0 0 0 0
 99 13 66414 99 0 0 0 0
-9999 1 100
+9999 1 100 100
 E
 charge static~
 &+LThe charge seems to form a chest of some sort.  It's perfectly square and has
@@ -220,7 +220,7 @@ key electric~
 ~
 18 23 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 2030 100
+1 2030 100 100
 E
 key electric~
 It's nearly transparent.
@@ -232,7 +232,7 @@ swirling mist~
 ~
 8 1 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 293 100
+1 293 100 100
 E
 swirling mist~
 It seems to be a cloud of vapor.
@@ -244,7 +244,7 @@ holy cross~
 ~
 8 38 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-5 2030 100
+5 2030 100 100
 E
 holy cross~
 &+WThis cross is nothing special, however, it seems to emit an aura.  There's
@@ -258,7 +258,7 @@ abominable cloth~
 ~
 8 23 3 0 7 0 70656 129 64 87650371 0
 0 0 0 2 0 0 0 0
-5 202 100 0 16 0 0
+5 202 100 100 0 16 0 0
 E
 shimmering gloves~
 &+CThese gloves shimmer inbetween the state of visibility and transparency.  With
@@ -273,7 +273,7 @@ book truth~
 ~
 16 28 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 2938 100
+1 2938 100 100
 E
 book truth~
  Indeed our time had come, our strength   from our former homeland.  For there
@@ -302,7 +302,7 @@ a &+Wholy gleaming longsword &+L'&+WRi&+wg&+ch&+Ct&+ce&+wo&+Wus&+L'~
 ~
 5 23 3 0 15 10 1024 8193 66 87572483 0
 5 5 3 0 0 0 0 0
-15 282832 100 536879136 12480 0 0
+15 282832 100 100 536879136 12480 0 0
 E
 skull flail blood zerker~
 &+WThe upper portion of the sword consists of a strange mist and looks to be
@@ -330,7 +330,7 @@ sheathe belt~
 ~
 9 12 3 0 7 0 0 2049 0 0 0
 5 0 0 3 0 0 0 0
-5 2019 100
+5 2019 100 100
 E
 sheathe belt~
 It should fit loosely about one's waste.
@@ -346,7 +346,7 @@ leather studded sentry boots~
 ~
 9 13 3 0 7 0 1024 65 64 87572491 0
 4 0 0 4 0 0 0 0
-5 430 100
+5 430 100 100
 E
 leather studded sentry boots~
 &+LThese boots were manufactored with care, for they are the boots of a soldier.
@@ -364,7 +364,7 @@ horn ring~
 ~
 9 44 3 0 7 0 0 134217729 64 0 0
 5 0 0 3 0 0 0 0
-2 2030 100
+2 2030 100 100
 E
 horn ring~
 &+YFrom the looks of it, this ring fits to a horn of some shape.  It's made of a
@@ -381,7 +381,7 @@ drow longsword two two-handed handed~
 ~
 5 15 4 0 7 0 4195328 8193 0 67108888 0
 13 4 6 3 0 0 0 0
-15 2030 100
+15 2030 100 100
 E
 drow longsword two two-handed handed~
 &+LThis is a finely crafted two-handed longsword specially made for a drow.  Since
@@ -396,7 +396,7 @@ drow earring unholy~
 ~
 9 38 3 0 10 0 512 524289 64 0 12
 1 0 0 2 0 0 0 0
-1 203 100 33554432 0 0 0
+1 203 100 100 33554432 0 0 0
 E
 drow earring unholy~
 &+mThis earring is in a shape of a skull.  Drow are a sinister race, so they have
@@ -414,7 +414,7 @@ skull~
 ~
 8 15 3 0 7 0 4097 1 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 skull~
 &+WThis skull seems belonged to a halfling.  It seems to be magical in nature, for
@@ -427,7 +427,7 @@ snakeskin vest~
 ~
 9 2 3 0 7 0 0 1025 0 0 0
 8 0 0 2 0 0 0 0
-5 2939 100
+5 2939 100 100
 E
 snakeskin vest~
 &+LThis vest covers the upper torso, and is made of snakeskin.
@@ -443,7 +443,7 @@ snakeskin~
 ~
 8 2 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-5 5 100
+5 5 100 100
 E
 snakeskin~
 &+LSome snakeskin.
@@ -455,7 +455,7 @@ orb crystal~
 ~
 9 23 2 0 12 0 1024 16385 64 46305188 0
 5 0 0 2 0 0 0 0
-5 2020 100 4 0 0 0
+5 2020 100 100 4 0 0 0
 E
 orb crystal~
 &+WThis transparent crystal orb swirls from within.  A strange mist spirals in
@@ -471,7 +471,7 @@ a &+yhalfling&+Y captain&+y eye&+Ypatch&n~
 ~
 9 15 3 0 7 0 1 131073 64 0 0
 4 0 0 3 0 0 0 0
-3 2020 100
+3 2020 100 100
 E
 eyepatch halfling~
 &+GThis eyepatch has been in the captain's family for generations and generations.
@@ -491,7 +491,7 @@ The scalp of a soldiers lays here.~
 ~
 8 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-4 1 100
+4 1 100 100
 E
 scalp~
 Scalp of an orc.
@@ -503,7 +503,7 @@ longsword long sword razor~
 ~
 5 15 3 0 7 0 1024 8193 64 87572483 0
 5 2 5 3 0 0 0 0
-15 4040 100
+15 4040 100 100
 E
 longsword long sword razor~
 &+bThis longsword looks sharper than most blades.  It seems magic in nature, and
@@ -520,7 +520,7 @@ board~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 board~
 &+YMost posts are illegible save a few ..
@@ -559,7 +559,7 @@ old posted sign~
 ~
 13 15 3 5 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 old posted sign~
 &+YIt reads ...
@@ -574,7 +574,7 @@ battered war helm warhelm~
 ~
 9 15 4 0 12 0 1024 17 64 85475353 0
 12 0 0 4 0 0 0 0
-10 5050 100
+10 5050 100 100
 E
 battered war helm warhelm~
 &+LThis helm looks to have seen better days, it's a wonder it's still wearable.
@@ -593,7 +593,7 @@ stone drawbridge~
 ~
 13 15 3 0 7 0 9216 0 0 0 0
 0 0 0 0 0 0 0 0
-9999 1 100
+9999 1 100 100
 E
 stone drawbridge~
 &+LThis bridge is made of stone.  It allows passage to and from the keep
@@ -606,7 +606,7 @@ spear wooden~
 ~
 5 15 3 0 7 0 1024 8193 0 87572483 0
 8 2 4 11 0 0 0 0
-15 3030 100
+15 3030 100 100
 E
 spear wooden~
 &+LA long wooden polearm.
@@ -618,7 +618,7 @@ mask lazy~
 ~
 9 15 3 0 7 0 0 262145 64 0 0
 6 0 0 2 0 0 0 0
-3 1234 100
+3 1234 100 100
 E
 mask lazy~
 &+MThis mask if very thin, very fragile.  It has the design of a clown upon it,
@@ -633,7 +633,7 @@ white fur gloves skin~
 ~
 9 2 3 0 7 0 1024 129 64 87572571 0
 8 0 0 5 0 0 0 0
-5 1234 100
+5 1234 100 100
 E
 white fur gloves skin~
 &+LThese gloves come from the fur of a white ape.  These apes are urban legends
@@ -649,7 +649,7 @@ linin badge~
 ~
 9 3 3 0 7 0 0 2097153 64 0 0
 1 0 0 2 0 0 0 0
-5 1234 100
+5 1234 100 100
 E
 badge linin~
 &+YA badge of the keep guard.
@@ -663,7 +663,7 @@ transparent ring~
 ~
 9 52 3 0 7 0 0 3 64 0 0
 5 0 0 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 transparent ring~
 It fades in and out of reality, and appears to be made of electrum.
@@ -677,7 +677,7 @@ statue lord demon~
 ~
 25 15 3 0 7 0 0 0 64 0 0
 66537 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 demon lord~
 &+LThis statue is of pure granite, and a master piece of art. There is no doubt
@@ -694,7 +694,7 @@ serpent fang~
 ~
 9 10 3 0 7 0 4096 2097153 64 0 0
 1 0 0 1 0 0 0 0
-1 1234 100
+1 1234 100 100
 E
 serpent fang~
 This is a serpent fang, it measures a couple inches in length, and is rather
@@ -709,7 +709,7 @@ altar life death~
 ~
 25 15 3 9999 7 0 1024 0 0 0 0
 66467 320 -1 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 altar life death~
 &+LThere is nothing normal about this altar.  From the skull heads on one side,
@@ -723,7 +723,7 @@ beam light~
 ~
 25 15 3 0 7 0 1024 0 0 0 0
 66467 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 beem light~
 &+WA beautiful white light that shines vertically.
@@ -735,7 +735,7 @@ orb cosmic~
 ~
 25 23 3 0 7 0 1024 0 0 0 0
 66467 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fiery pit lava cosmic orb~
 &+LAn orb that holds the many galaxies within our universe.  The galaxies can be
@@ -748,7 +748,7 @@ vortex temporal~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 66564 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 vortex temporal~
 &+WThis bright light glows a brilliant blue, and is in the center of the nexus.
@@ -760,7 +760,7 @@ python eye~
 ~
 9 2 3 1 7 0 5120 131073 0 87572571 0
 1 0 0 1 0 0 0 0
-0 2010 100
+0 2010 100 100
 E
 python eye~
 &+LAn eye of a python, it is blood red.
@@ -776,7 +776,7 @@ demon lord statue~
 ~
 25 15 3 0 7 0 1024 0 64 0 0
 66536 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 demon lord statue~
 &+LThis statue is of pure granite, and a master piece of art.   There is no doubt
@@ -793,7 +793,7 @@ shimmering crystal~
 ~
 9 15 3 0 7 0 1 16385 64 0 0
 1 0 0 1 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 shimmering shawl~
 &+CThis crystal glows with a white aura.  It is impossible to discern its origin
@@ -810,7 +810,7 @@ broad broadsword sword long~
 ~
 5 15 3 0 7 0 128 8193 0 0 0
 5 1 8 3 0 0 0 0
-5 3939 100
+5 3939 100 100
 E
 broad broadsword sword long~
 A very old longsword.
@@ -822,7 +822,7 @@ book magic black~
 ~
 8 3 3 0 15 0 1 1 0 0 0
 0 0 0 0 0 0 0 0
-1 3029 100
+1 3029 100 100
 E
 book black magic~
 &+LThe black magic book belonging to the demon lord Minanupoli.  Its cover is
@@ -836,7 +836,7 @@ white magic book~
 ~
 9 15 3 0 7 0 1025 16385 64 100794872 0
 1 0 0 3 0 0 0 0
-4 9090 100
+4 9090 100 100
 E
 white magic book~
 &+WIts cover is laced with gold.  The book is very thick, and must contain many
@@ -853,7 +853,7 @@ unholy crystal medallion~
 ~
 8 15 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 4929 100
+1 4929 100 100
 E
 unholy crystal medallion~
 &+LThis medallion is in the shape of an octagon, resembling a flat prism in every
@@ -866,7 +866,7 @@ holy crystal medallion~
 ~
 9 23 3 1 7 0 1 5 64 0 0
 7 0 0 1 0 0 0 0
-0 2939 100
+0 2939 100 100
 E
 holy crystal medallion~
 &+WA blessed crystal medallion.  It's in the shape of an octagon and resembles a
@@ -883,7 +883,7 @@ hammer large~
 ~
 5 19 3 0 7 0 4194304 8193 64 0 0
 4 3 4 0 0 0 0 0
-20 2999 100
+20 2999 100 100
 E
 large hammer~
 &+LA large adamantium hammer.
@@ -899,7 +899,7 @@ skullsplitter skull splitter hammer huge~
 ~
 5 19 5 0 7 0 20972801 8193 64 87048635 0
 4 5 3 6 0 0 0 0
-20 190282 100 16 28 0 0
+20 190282 100 100 16 28 0 0
 E
 goblinsmasher hammer goblin smasher huge~
 &+gThis large hammer is about the same size as a goblin.  In any instance that it
@@ -917,7 +917,7 @@ black ring etched runes~
 ~
 9 19 3 0 7 0 4096 33554433 64 0 0
 5 0 0 1 0 0 0 0
-1 2039 100
+1 2039 100 100
 E
 black ring etched runes~
 &+MThis ring is made of adamantium.  It is, however, too big for any finger.  It
@@ -935,7 +935,7 @@ bloody scalp~
 ~
 9 2 3 0 7 0 0 17 64 0 0
 5 0 0 1 0 0 0 0
-1 1234 100
+1 1234 100 100
 E
 bloody scalp~
 &+rFrom a donated scalp from some third party, this combination of flesh and hair
@@ -953,7 +953,7 @@ battle axe razor razor-edged edged~
 ~
 5 16 3 0 7 0 1024 8193 64 87572483 0
 1 4 3 3 0 0 0 0
-15 28382 100
+15 28382 100 100
 E
 battle axe razor razor-edged edged~
 &+bThis battle axe looks sharper than steel.  Perhaps by magical means it has
@@ -971,7 +971,7 @@ etched adamantium~
 ~
 9 19 3 0 7 0 0 5 0 0 0
 5 0 0 1 0 0 0 0
-1 1234 100
+1 1234 100 100
 E
 adamantium etched~
 &+MA large hole on the upper portion of this adamantium has a string running
@@ -990,7 +990,7 @@ two two-handed handed longsword~
 ~
 5 15 3 0 7 0 4194304 8193 0 0 0
 13 3 5 3 0 0 0 0
-15 2939 100
+15 2939 100 100
 E
 longsword two two-handed handed~
 This longsword is made of iron, and needs two very strong hands to wield it.
@@ -1002,7 +1002,7 @@ halfling quilt halfling-made made soft~
 ~
 9 3 3 0 7 0 1536 16777217 64 87556227 533086208
 10 0 0 2 0 0 0 0
-3 2030 100
+3 2030 100 100
 E
 halfling quilt halfling-made made soft~
 &+bThis quilt would fit comfortably on the back of a horse.&n

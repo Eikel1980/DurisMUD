@@ -10,8 +10,8 @@ guard giant golem br_c _nobutt_ assoc10_n_0~
 &+WHe wields nothing, but is equipped with a iron claws, and seems to
 &+Walso posses the ability to cast.
 ~
-71400011 0 0 301990188 30 0 0 0 S
-OG 0 512 6
+71400011 0 0 0 301990188 30 0 0 0 S
+OG 0 512 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0
@@ -21,8 +21,8 @@ ilixctthu illithid~
 &+MIlixctthu&n stands here to buy your goods.
 ~
 ~
-10 0 0 0 0 0 0 0 S
-PH 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -38,8 +38,8 @@ guard giant golem br_c _nobutt_ assoc10_n_0~
 &+WHe wields nothing, but is equipped with a iron claws, and seems to
 &+Walso posses the ability to cast.
 ~
-71400011 0 0 301990188 30 0 0 -1000 S
-OG 0 32 6
+71400011 0 0 0 301990188 30 0 0 -1000 S
+OG 0 32 0 6
 60 0 0 10d10+30000 7d7+30
 0.0.0.0 0
 8 8 0

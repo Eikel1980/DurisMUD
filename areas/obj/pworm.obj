@@ -5,7 +5,7 @@ hide worm~
 ~
 13 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #42501
 axe battle battleaxe~
 &+La huge &+mbloodstained&n &+Lbattleaxe&n~
@@ -13,7 +13,7 @@ A huge axe covered in purple worm blood lies here.~
 ~
 5 15 3 0 7 0 4194305 8193 0 38682596 0
 13 4 5 3 0 0 0 0
-15 27578 100
+15 27578 100 100
 E
 axe battle battleaxe~
 This huge battle axe is stained with purple worm blood.
@@ -29,7 +29,7 @@ amulet~
 ~
 13 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-2 2 100
+2 2 100 100
 E
 amulet~
 This is the family amulet of Drakhov, Draknahov's brother.
@@ -41,7 +41,7 @@ corpse~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 0 0 0 10000 0 0 0 0
-0 2 100
+0 2 100 100
 #42504
 leggings drider skin~
 &+La pair of &+mdrider skin &+Lleggings&n~
@@ -49,7 +49,7 @@ Some leggings lie here.&n~
 ~
 9 15 3 0 7 0 0 33 0 0 0
 10 0 0 5 0 0 0 0
-0 234 100
+0 234 100 100
 A
 18 3
 A
@@ -61,7 +61,7 @@ armor hide purple suit~
 ~
 9 15 3 0 7 0 139272 9 0 0 0
 35 0 0 3 0 0 0 0
-2 2 100
+2 2 100 100
 E
 armor hide purple suit~
 This hide turns out to make a VERY durable and well protective armor.
@@ -77,7 +77,7 @@ sword jaws~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 6 2 3 0 0 0 0
-0 2 100
+0 2 100 100
 A
 18 3
 A
@@ -89,7 +89,7 @@ A dragonbone lies here.~
 ~
 9 15 3 0 7 0 9216 4097 0 93974545 0
 6 0 0 5 0 0 0 0
-2 2 100
+2 2 100 100
 E
 bracelet dragonbone dragon bone~
 A large hollowed-out dragonbone has been made into a bracelet.
@@ -105,7 +105,7 @@ sword bone~
 ~
 5 15 3 0 7 0 0 8193 0 0 0
 5 3 4 3 0 0 0 0
-10 2 100
+10 2 100 100
 E
 sword bone~
 Tis nothing more than a large pointy bone with jagged edges.
@@ -121,7 +121,7 @@ stiletto~
 ~
 5 15 3 0 7 0 1025 8193 0 8515584 0
 2 2 5 11 0 0 0 0
-1 2 100 268435456 0 0 0
+1 2 100 100 268435456 0 0 0
 E
 stiletto~
 This small dagger-like weapon has so many jagged edges, one could
@@ -138,7 +138,7 @@ stiletto~
 ~
 5 15 3 0 7 0 1 8193 0 0 0
 2 2 4 11 0 0 0 0
-1 2 100 36 0 0 0
+1 2 100 100 36 0 0 0
 E
 stiletto~
 This dagger-like weapon is blood-stained and has small jagged edges
@@ -156,7 +156,7 @@ boots cavern~
 ~
 9 15 3 0 7 0 8192 65 64 0 0
 3 0 0 3 0 0 0 0
-1 2 100
+1 2 100 100
 A
 32 4
 A
@@ -168,7 +168,7 @@ cloak shadow dragon~
 ~
 9 15 3 0 7 0 143360 17409 64 0 0
 10 0 0 5 0 0 0 0
-1 2 100
+1 2 100 100
 E
 cloak shadow dragon~
 This cloak is made out of the finest shadow dragon scales in the world
@@ -186,7 +186,7 @@ earring bat tooth~
 ~
 9 15 3 0 7 0 12288 524289 0 0 0
 5 0 0 3 0 0 0 0
-1 2 100
+1 2 100 100
 E
 earring tiny golden~
 This earring is nothing more than a small golden stud with a faint
@@ -201,7 +201,7 @@ ring sapphire~
 ~
 9 15 3 0 7 0 4096 3 0 0 0
 5 0 0 3 0 0 0 0
-1 2 100
+1 2 100 100
 E
 ring titanium~
 This shiny metal ring fits onto one's finger with easy, making the

@@ -6,8 +6,8 @@ golem iron guardian _no_move_~
 This twenty foot tall iron golem stands here glowing with power, he seems
 to be almost statue like until you try to enter the city.
 ~
-33556587 1 0 671154424 309441 0 0 0 S
-G 0 256 -1
+33556587 1 0 0 671154424 309441 0 0 0 S
+G 0 256 0 -1
 60 -10 -122 60d132+6540 7d6+35
 6.6.9.7 243000
 8 8 0
@@ -19,8 +19,8 @@ fire elemental~
 This being, composed of pure fire seems to be a bit upset at your intrustion
 in his lands.
 ~
-133324 1 0 134807608 0 0 0 0 S
-EF 0 4096 -1
+133324 1 0 0 134807608 0 0 0 0 S
+EF 0 4096 0 -1
 55 -3 -88 48d100+2544 6d6+25
 0.0.0.0 116640
 8 8 0
@@ -32,8 +32,8 @@ large fire elemental~
 This huge elemental, some fifteen feet high seems to want to flash fry
 you as soon as he sees you!
 ~
-133324 1 0 134807608 0 0 0 0 S
-EF 0 4096 -1
+133324 1 0 0 134807608 0 0 0 0 S
+EF 0 4096 0 -1
 60 -1 -79 45d90+1935 6d6+12
 0.0.0.0 109350
 8 8 0
@@ -45,8 +45,8 @@ efreeti scout~
 This efreeti is out scouting the fire plane for slaves for his masters in
 the city of brass.
 ~
-133324 1 0 134807608 0 0 0 -1000 S
-EF 0 512 -1
+133324 1 0 0 134807608 0 0 0 -1000 S
+EF 0 512 0 -1
 51 -1 -79 45d90+1935 6d6+12
 0.0.0.0 109350
 8 8 1
@@ -58,8 +58,8 @@ flame salamander~
 This huge fire red snake like being carries a huge flaming spear and glows
 with a bright orange flame.
 ~
-2284 1 0 0 0 0 0 -1000 S
-EF 0 1 -1
+2284 1 0 0 0 0 0 0 -1000 S
+EF 0 1 0 -1
 51 -3 -82 46d100+2438 6d6+25
 0.0.0.0 111780
 8 8 0
@@ -71,8 +71,8 @@ imix prince elemental _nobutt_~
 Imix appears as an 18' high pillar of fire.  He radiates amazing heat from his
 body even standing near him causes great pain, despite your magical protection.
 ~
-1124141164 1 0 135856378 309441 0 0 -1000 S
-EF 0 256 -1
+1124141164 1 0 0 135856378 309441 0 0 -1000 S
+EF 0 256 0 -1
 61 -10 -142 60d132+15240 7d6+35
 0.0.0.0 243000
 8 8 1
@@ -83,8 +83,8 @@ magman~
 ~
 This huge man-like monster, closely resembles the mudmen of the prime plane.
 ~
-2252 1 0 0 0 0 0 -1000 S
-EF 0 1 -1
+2252 1 0 0 0 0 0 0 -1000 S
+EF 0 1 0 -1
 52 -1 -79 45d107+2025 6d6+12
 0.0.0.0 109350
 8 8 1

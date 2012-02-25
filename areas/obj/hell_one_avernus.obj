@@ -5,7 +5,7 @@ A nothing is lying here.~
 ~
 13 1 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #51002
 stinger poison~
 &+Ga poison stinger~
@@ -13,7 +13,7 @@ stinger poison~
 ~
 5 2 3 0 7 0 69760 8193 0 0 0
 2 1 1 11 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 5
 T
@@ -25,7 +25,7 @@ staff hellspawn~
 ~
 4 16 3 10 7 0 41985 16385 64 4197892 0
 51 2 2 143 0 0 0 0
-5 100000 100
+5 100000 100 100
 A
 13 10
 A
@@ -37,7 +37,7 @@ potion glowing 51potion~
 ~
 10 7 2 4 7 0 8486921 16385 64 0 0
 51 9 35 56 0 0 0 0
-1 1000000000 100
+1 1000000000 100 100
 A
 8 51
 A
@@ -49,7 +49,7 @@ sword death rider deathrider blood red unique~
 ~
 5 19 3 0 15 0 272638977 8193 64 16 0
 13 6 6 3 0 0 0 0
-15 125315325 100 65552 32776 0 16781312
+15 125315325 100 100 65552 32776 0 16781312
 E
 sword death rider deathrider blood red~
 &+rA blood red sword extends outwards from a deeply black hilt of some
@@ -68,7 +68,7 @@ tiamat stinger tail poison~
 ~
 5 35 3 0 15 100 271594496 8193 64 8515584 0
 2 5 5 11 0 0 0 0
-10 1000000 100 268992528 14336 0 0
+10 1000000 100 100 268992528 14336 0 0
 E
 tiamat stringer tail poison~
 &+LOver a foot long, and dripping with poison, this tail

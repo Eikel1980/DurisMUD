@@ -5,7 +5,7 @@ a small &+Lpile&N of &+ydust~
 ~
 13 10 2 0 7 0 67162120 1 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 dust pile~
 &+yThe dust is old.  As you sift it through your hands you find tiny chips
@@ -18,7 +18,7 @@ piece item green~
 ~
 11 15 1 0 4 0 49160 1 0 0 0
 13 0 0 3 0 0 0 0
-2 1 100
+2 1 100 100
 E
 piece item~
 &+GThis is a green piece of a Powerful Item.
@@ -30,7 +30,7 @@ piece red item~
 ~
 11 16 1 0 3 0 49160 1 0 0 0
 0 85 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 piece item~
 &+MThis is a red piece of a Powerful Item.
@@ -42,7 +42,7 @@ piece yellow item~
 ~
 11 18 1 0 5 0 49160 1 0 0 0
 0 85 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 piece item~
 &+YThis is a yellow piece of a Powerful Item.
@@ -54,7 +54,7 @@ pentagram intelligence fiery~
 ~
 9 35 3 0 14 90 36831232 5 0 0 0
 9 6 6 2 0 0 0 0
-3 108154 100 536870912 8 0 0
+3 108154 100 100 536870912 8 0 0
 E
 pentagram fiery~
 &+LA heavy pentagram which seems to absorb all the &+Wlight &+Laround it. It is
@@ -71,7 +71,7 @@ A mediocre pile of &+Wplatinum &ncoins lie here in the middle of the room.~
 ~
 20 25 5 0 7 0 67407873 1 0 0 0
 0 0 0 10 0 0 0 0
-12 1 100
+12 1 100 100
 E
 pile coins~
 &+YThis treasure was once obviously valuable. Many years of looting and theft have resulted it in being of such a small size. At the bottom, you can clearly make out a small note. It reads:
@@ -85,7 +85,7 @@ a long &+yrusted&+L knife~
 ~
 5 15 3 0 4 35 0 8193 0 0 0
 2 1 5 11 0 0 0 0
-5 1387 100
+5 1387 100 100
 E
 knife long~
 This knife is &+yrusted&n, but the &+yrust&N only adds to the wickedness of this blade.
@@ -97,7 +97,7 @@ A flat dirk made of chipped &+Lobsidian&N lies here.~
 ~
 5 36 2 0 8 60 0 8193 0 0 0
 2 3 2 11 0 0 0 0
-6 901 100
+6 901 100 100
 E
 dirk obsidian~
 &+LThe dirk is formed from solid stone, chipped and carved to perfection,
@@ -110,7 +110,7 @@ Some fine looking drums made of &+Ygold&n and &+Wsilver&N lie here.~
 ~
 32 24 2 0 13 85 2097153 16385 0 0 0
 188 52 0 1 0 0 0 0
-5 37150 100 8192 0 0 0
+5 37150 100 100 8192 0 0 0
 E
 drum drums instrument~
 &+WThe drums has entwined bands of &+Ygold &+Wand &+Csilver&+W.
@@ -126,7 +126,7 @@ lyre instrument~
 ~
 32 6 3 0 14 90 8193 16385 0 0 0
 185 50 0 1 0 0 0 0
-4 41620 100 65536 0 0 0
+4 41620 100 100 65536 0 0 0
 E
 lyre instrument~
 &+YThe lyre depicting &+Rfire&+Y, &+bwater&+Y, &+Blightning&+Y, &+yearth&+Y, and &+Wair&+Y.
@@ -142,7 +142,7 @@ brutal hammer warhammer~
 ~
 5 16 4 0 15 99 67109888 8396801 64 4246225337 0
 4 3 4 3 0 0 0 0
-8 42618 100 536870912 12480 0 0
+8 42618 100 100 536870912 12480 0 0
 E
 brutal hammer warhammer~
   &+LThe hammer is forged from a strange &+Csilvery iron&+L. It barely measures and inch
@@ -160,7 +160,7 @@ a &+gstaff&N with &+gdruidic &+rmarks~
 ~
 3 5 4 0 11 0 17408 16385 64 41976224 0
 45 2 2 413 0 0 0 0
-7 1816449 100
+7 1816449 100 100
 E
 staff~
 &+gJudging from the signs inscripted on the staff, you gather it must have belonged
@@ -177,7 +177,7 @@ A very large &+Wpearl&N-like &+Msphere&N is in the center of this room.~
 ~
 3 23 4 0 15 99 100663296 16385 0 4248137819 0
 60 5 5 407 0 0 0 0
-5 1782450 100
+5 1782450 100 100
 E
 sphere large~
 &+MThis is indeed a &+Cmysterious &+Msphere. It is &+Ldark black &+Mat the base but has four
@@ -194,7 +194,7 @@ potion blue neon~
 ~
 10 7 1 0 11 20 0 16385 0 1 0
 51 41 144 -1 0 0 0 0
-1 2017356 100
+1 2017356 100 100
 E
 potion blue neon~
 &+CA gift to the mortal world from the Duris Gods.
@@ -206,7 +206,7 @@ mask evil symbol~
 ~
 9 44 2 0 15 99 36847616 262145 0 0 0
 22 15 15 3 0 0 0 0
-6 183634 100 4 0 0 0
+6 183634 100 100 4 0 0 0
 E
 mask evil~
 &+LThe mask is made from a strange black metal the likes of which you have
@@ -223,7 +223,7 @@ some &+cwire rimmed spectacles~
 ~
 9 16 1 0 12 75 0 131073 0 0 0
 8 15 15 1 0 0 0 0
-2 61419 100
+2 61419 100 100
 E
 spectacles wire~
 &+yThey are very heavy, made from &+Liron &+yand &+Csteel &+ywire.
@@ -239,7 +239,7 @@ chunk quiver decaying leather~
 ~
 30 14 3 0 9 60 0 1048577 0 0 0
 600 1 1 199 0 0 0 0
-8 30815 100 134217728 0 0 0
+8 30815 100 100 134217728 0 0 0
 E
 quiver decaying~
 &+yThe ancient quiver is barely intact. All of the leather has cracked and dried
@@ -254,7 +254,7 @@ earring bone~
 ~
 9 10 1 0 8 0 16384 524289 0 0 0
 4 0 0 4 0 0 0 0
-2 14947 100 0 128 0 0
+2 14947 100 100 0 128 0 0
 E
 earring bone~
 &+MA circular, &+Wglowing &+Mearring radiates a &+Ybright &+Maura around it is made from
@@ -271,7 +271,7 @@ a&+L stone &+ysarcophagus~
 ~
 15 11 4 0 3 0 16384 0 0 0 0
 150 29 94023 150 0 0 0 0
-1000 10 77
+1000 10 77 100
 E
 stone sarcophagus lid~
 &+LA well crafted, &+ydusty &+Land ancient home for the afterworld. Several markings
@@ -286,7 +286,7 @@ a &+Ygolden key to the &+LCatacomb~
 ~
 18 24 4 0 11 0 67108865 1 0 0 0
 0 0 0 0 0 0 0 0
-5 32732 100
+5 32732 100 100
 E
 key yellow golden~
 &+YOne of those traditional old lock type keys... except huge, golden and
@@ -301,7 +301,7 @@ the polished c&+Cr&Ny&+Cs&Nt&+Ca&Nl rose~
 ~
 9 8 2 0 15 0 540673 2097153 0 0 0
 1 0 0 3 0 0 0 0
-3 147352 100
+3 147352 100 100
 E
 rose crystal~
 &+WThis rose is carved from a single piece of &+Cblue &+Wcrystal. It is about five feet
@@ -316,7 +316,7 @@ On the floor you see the armplates made of crystal.~
 ~
 9 8 3 0 14 0 278528 257 64 0 0
 15 0 0 3 0 0 0 0
-6 82635 100 4 0 0 0
+6 82635 100 100 4 0 0 0
 E
 armplates crystal~
 &+WThe armplates are made of a pile of crystals. The crystals are covered with
@@ -333,7 +333,7 @@ key small black~
 ~
 18 24 4 0 4 0 67125248 1 0 0 0
 0 100 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 key small black~
 &+LNeat you have the key to the stone &+ysarcophagus&+L... it is a soft &+Ygold &+Lcolor and
@@ -346,7 +346,7 @@ finger bloody~
 ~
 13 2 2 0 1 0 16392 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 65
+1 1 65 100
 E
 finger bloody~
 &+rSicky! Here is someone's finger covered with flesh blood!
@@ -358,7 +358,7 @@ a c&+Cr&Ny&+Cs&Nt&+Ca&Nl wrist band~
 ~
 12 15 3 0 5 0 0 4097 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 0 12 0 0
+0 0 100 100 0 12 0 0
 E
 band wrist crystal~
 &+WThe band is made of a large chunk of crystal. Its glowing with alien light!

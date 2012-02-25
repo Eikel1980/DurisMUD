@@ -5,7 +5,7 @@ a  no-show teleporter to room 16220~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16220 1 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16201
 strange blue prism~
 a strange blue prism~
@@ -13,7 +13,7 @@ a strange blue prism~
 ~
 25 16 0 50 7 0 0 0 0 0 0
 16228 139 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 strange blue prism~
 This strange blue prism seems to bend light in many different
@@ -29,7 +29,7 @@ teleport to 16256~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16256 3 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16203
 book~
 &+YThe book of Light and Illusion&N~
@@ -37,7 +37,7 @@ book~
 ~
 25 28 2 5 7 0 65537 0 64 0 0
 16240 63 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 book~
 Glowing with a strange inner light this book has a magical aura that fills the
@@ -55,7 +55,7 @@ teleporter to hell, rm 16271~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16271 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16205
 obelisk purple~
 &+ma Purple obelisk&N~
@@ -63,7 +63,7 @@ obelisk purple~
 ~
 25 11 0 50 7 0 1 0 0 0 0
 16228 32 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 obelisk purple~
 &+mThe purple of the obelisk is so deep and perfect that it is impossible for it&N
@@ -79,7 +79,7 @@ teleport to 16228~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16228 2 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16207
 teleporter~
 teleport to 16263~
@@ -87,7 +87,7 @@ teleport to 16263~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16263 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16208
 pedestal~
 &+ga twisting green pedestal&N~
@@ -95,7 +95,7 @@ pedestal~
 ~
 25 11 0 50 7 0 0 0 0 0 0
 16228 53 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pedestal~
 &+gThis strange pedestal has a cupped bowl, very similar to a bird bath, that&N
@@ -110,7 +110,7 @@ teleport to 16212~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16212 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16210
 skin eel eel-skin~
 &+Lthe skin of a shadow eel&N~
@@ -118,7 +118,7 @@ skin eel eel-skin~
 ~
 11 12 3 8 7 0 12288 2049 0 0 0
 0 0 0 5 0 0 0 0
-1 3500 100
+1 3500 100 100
 E
 skin eel eel-skin~
 This strange gray skin seems to absorb and twist light.  In bright light
@@ -137,7 +137,7 @@ collar green mist~
 ~
 9 1 10 0 13 0 12288 5 0 0 0
 8 2 1 3 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 collar~
 Made of some sort of solid green material, the colors of the collar swirl and
@@ -154,7 +154,7 @@ sword long green~
 ~
 5 19 3 10 13 0 9216 8193 0 87572507 0
 5 3 7 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 long sword~
 The blade of this fantastic weapon has been fashioned from an extremely thin
@@ -172,7 +172,7 @@ bracelet purple mist~
 ~
 9 1 3 3 13 0 12288 4097 0 4165209604 0
 7 11 24 2 0 0 0 0
-0 30000 100
+0 30000 100 100
 E
 purple bracelet~
 Formed of mist so light that it is barely able to hold together, this
@@ -190,7 +190,7 @@ spear mist yellow~
 ~
 5 19 3 0 13 0 4203520 8193 0 8486912 0
 2 1 6 11 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 spear~
 Swirling yellow mist runs up and down the shaft and blade of the spear like a
@@ -208,7 +208,7 @@ mace red mist~
 ~
 5 19 3 8 13 0 9216 8193 64 38932389 0
 6 4 5 6 0 0 0 0
-0 20000 100
+0 20000 100 100
 E
 mace~
 The smooth head of this feather-light mace is formed by a ball of continously
@@ -225,7 +225,7 @@ ring gray mist~
 ~
 9 19 2 1 13 0 12288 3 0 0 0
 5 1 0 3 0 0 0 0
-0 100000 100 0 12288 0 0
+0 100000 100 100 0 12288 0 0
 E
 ring~
 Mist follows itself as it swirls in a small circle forming this strange and
@@ -244,7 +244,7 @@ belt blood~
 ~
 9 2 3 3 13 0 45056 2049 0 0 0
 7 10 0 3 0 0 0 0
-1 60000 100
+1 60000 100 100
 E
 belt blood~
 The belt has a strange magical quality to it, formed of blood somehow remains
@@ -263,7 +263,7 @@ boots mist purple hazy~
 ~
 9 1 3 8 13 0 0 65 0 0 0
 7 6 1 3 0 0 0 0
-0 55000 100
+0 55000 100 100
 E
 boots~
 These boots have an odd hazy quality to them due to the fact that they appear
@@ -281,7 +281,7 @@ club shadows~
 ~
 5 19 3 8 13 0 9216 8193 0 37883876 0
 10 3 5 6 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 club~
 This massive club has been created from shadows so deep and dark that they
@@ -299,7 +299,7 @@ horn~
 ~
 5 10 2 0 13 0 12288 8193 0 4198895524 0
 2 1 6 11 0 0 0 0
-0 70000 100 32 0 0 0
+0 70000 100 100 32 0 0 0
 E
 horn~
 Shadows swirl in a spiral from the base of the horn to its impossibly sharp
@@ -318,7 +318,7 @@ mane~
 ~
 9 19 3 0 13 0 13312 1025 0 33685920 0
 13 9 1 3 0 0 0 0
-1 35000 100 40 0 0 0
+1 35000 100 100 40 0 0 0
 E
 mane~
 Despite its shadowy and translucent appearance, this strange item appears to
@@ -337,7 +337,7 @@ plate plates leg~
 ~
 9 19 3 8 13 0 4096 33 0 4165221892 0
 10 5 1 3 0 0 0 0
-1 5000 100 0 8192 0 0
+1 5000 100 100 0 8192 0 0
 E
 leg plates plate~
 Almost lighter than air, these odd plates appear to hover just above the
@@ -355,7 +355,7 @@ plate plates arm~
 ~
 9 19 3 8 13 0 4096 257 0 4173708804 0
 10 8 1 3 0 0 0 0
-1 5000 100 0 8192 0 0
+1 5000 100 100 0 8192 0 0
 E
 arm plates plate~
 Though they seem drawn downward toward the ground, the plates are quite light
@@ -374,7 +374,7 @@ visor foggy~
 ~
 9 19 3 0 13 0 12288 131073 0 0 0
 5 12 12 3 0 0 0 0
-0 5000 100 36 0 0 0
+0 5000 100 100 36 0 0 0
 E
 visor~
 One would expect a visor such as this to impair one's vision, yet there is a
@@ -392,7 +392,7 @@ dagger~
 ~
 5 19 2 3 13 0 0 8193 0 4198895524 0
 2 2 4 11 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 dagger~
 Made of an odd red stone this thin dagger looks far more fragile than it
@@ -412,7 +412,7 @@ halberd~
 ~
 5 19 4 0 13 0 4195328 8193 0 87638107 0
 8 2 8 3 0 0 0 0
-20 25000 100
+20 25000 100 100
 E
 halberd~
 Brutal serrations line the black steel blade, this weapon, unlike many
@@ -430,7 +430,7 @@ fork~
 ~
 5 19 3 0 13 0 4194304 8193 0 4198895524 0
 8 2 10 11 0 0 0 0
-10 5000 100
+10 5000 100 100
 E
 fork~
 It would be best to be on the users end of this finely made piece.  Sharp,
@@ -448,7 +448,7 @@ sword bastard jagged~
 ~
 5 19 3 10 13 0 197632 8193 0 85475417 0
 5 4 6 3 0 0 0 0
-25 5000 100
+25 5000 100 100
 E
 sword~
 This massive sword's jagged edge is not a sign of poor workmanship, in fact
@@ -466,7 +466,7 @@ club jagged~
 ~
 5 19 3 8 13 0 4195328 8193 0 119160889 2240
 10 5 7 6 0 0 0 0
-20 5000 100
+20 5000 100 100
 E
 club~
 This club has been made from a sturdy shard of stone and jagged, broken teeth
@@ -483,7 +483,7 @@ whip~
 ~
 5 14 3 0 7 0 0 8193 0 4198895524 0
 14 3 3 2 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 whip~
 Made from the tough leathery hide of a devil, long sharp rocks have been
@@ -500,7 +500,7 @@ ring gold golden~
 ~
 11 19 2 1 14 0 128 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 ring~
 Far to large to be worn on anyone's finger, this golden ring has been
@@ -518,7 +518,7 @@ robe purple stars~
 ~
 9 3 3 8 14 20 9216 9 0 37883812 0
 24 3 1 3 0 0 0 0
-5 5000 100 0 128 0 0
+5 5000 100 100 0 128 0 0
 E
 robe~
 This beautiful robe has been fashioned of the finest linen.  The white stars
@@ -536,7 +536,7 @@ mask mist blue~
 ~
 9 19 3 3 13 0 8192 262145 0 0 0
 8 13 1 3 0 0 0 0
-0 5000 100 301989888 0 0 0
+0 5000 100 100 301989888 0 0 0
 E
 mask~
 Light and and brightly colored, this mask of swirling colors makes a
@@ -555,7 +555,7 @@ armor blue mist~
 ~
 9 35 10 0 14 10 536949760 9 0 87572507 0
 55 3 1 5 1 0 0 0
-1 5000 100
+1 5000 100 100
 E
 blue armor~
 Nothing can adequately describe the beauty and mystery of this fine suit of
@@ -576,7 +576,7 @@ mask hatred~
 ~
 9 19 3 3 14 0 45184 262145 0 0 0
 8 13 1 3 0 0 0 0
-2 40000 100
+2 40000 100 100
 E
 mask~
 Lit from within by the swirling, tormented souls that have been trapped
@@ -594,7 +594,7 @@ dust~
 ~
 13 1 1 0 7 0 69633 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dust~
 Most likely from a great and powerful book that has decayed over time, this
@@ -609,7 +609,7 @@ No_show bookshelves~
 ~
 15 6 2 5 7 0 2 0 0 0 0
 20 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 #16238
 book~
 an ancient book~
@@ -617,7 +617,7 @@ An ancient book has been left here to suffer the ravages of time.~
 ~
 13 28 2 5 7 0 69633 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 book~
 Though it may contain secrets lost to time, this ancient book has only barely
@@ -633,7 +633,7 @@ desk~
 ~
 15 38 3 0 7 0 0 0 0 0 0
 100 29 16246 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 desk~
 A desk of this quality and material would cost a king's ransom, and may have.
@@ -649,7 +649,7 @@ An ugly spear trap is hidden here.~
 ~
 13 16 0 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 T
 5 7 1 100
 #16241
@@ -659,7 +659,7 @@ scepter~
 ~
 11 19 3 0 15 0 134287392 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 100000 100 0 28 0 0
+0 100000 100 100 0 28 0 0
 E
 scepter~
 This odd scepter is clearly one of the most powerful items to have touched
@@ -678,7 +678,7 @@ mace light darkness~
 ~
 5 19 3 10 15 0 268607488 8193 64 0 0
 6 5 6 3 0 0 0 0
-20 50000 100 144 28 0 0
+20 50000 100 100 144 28 0 0
 E
 mace~
 There is far more to this mace than a simple weapon.  Both the head and the
@@ -698,7 +698,7 @@ gloves misty pale~
 ~
 9 1 3 6 15 0 41984 129 2 8486912 0
 8 7 6 3 0 0 0 0
-0 100000 100 1572866 0 0 0
+0 100000 100 100 1572866 0 0 0
 E
 gloves~
 Feeling almost lighter than air, these gloves almost hum with the power
@@ -716,7 +716,7 @@ helm light~
 ~
 9 19 3 10 13 0 262144 17 0 4181553219 0
 10 4 1 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 helm~
 A purity comes from within this helm, not the purity of goodness, or even
@@ -736,7 +736,7 @@ gauntlets obsidian~
 ~
 9 36 3 5 13 0 1024 129 0 87572571 0
 8 7 1 4 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 gauntlets~
 Made of dark obsidian, the insides of these gauntlets have been worn smooth
@@ -755,7 +755,7 @@ key~
 ~
 18 16 1 1 7 0 8454144 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 Made of the finest marble, this intricately carved key looks so fragile that
@@ -770,7 +770,7 @@ bracelet bones bone~
 ~
 9 10 3 3 11 0 5120 4097 0 4198148 0
 6 11 24 3 0 0 0 0
-0 75000 100 32 0 0 0
+0 75000 100 100 32 0 0 0
 E
 bracelet bone bones~
 Bones from a variety of fingers, both large and small, have been drilled so
@@ -789,7 +789,7 @@ earring blood~
 ~
 11 19 1 1 14 0 4096 524289 0 4198895524 0
 0 0 0 0 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 earring blood~
 Some sick creature has added a small hook to this congealed drop of blood,
@@ -808,7 +808,7 @@ plate chest~
 ~
 9 1 3 50 14 0 9216 9 0 87638107 0
 20 3 1 3 0 0 0 0
-0 50000 100 0 4096 0 0
+0 50000 100 100 0 4096 0 0
 E
 plate~
 Strange shadows swirl within this odd chest plate.  Powerful magic has made it
@@ -827,7 +827,7 @@ chair~
 ~
 15 3 4 0 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 chair~
 Overstuffed cushions make this chair look comfortable and inviting.  It is
@@ -841,7 +841,7 @@ sofa~
 ~
 15 3 3 0 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sofa~
 A strong black hardwood of some sort has been used for the legs and back of
@@ -858,7 +858,7 @@ key~
 ~
 13 16 1 2 7 0 8458240 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 50
+1 1 50 100
 E
 key~
 This once intricate key has been broken by forces unknown.  Marble, though
@@ -873,7 +873,7 @@ gem stone gemstone yellow~
 ~
 8 26 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 gem stone gemstone yellow~
 It is hard to determine exactly what type of stone this is, but its beauty is
@@ -889,7 +889,7 @@ a drab sofa~
 ~
 15 3 3 0 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sofa~
 Once upholstered in a bright fabric with many flowers throughout its design,
@@ -905,7 +905,7 @@ an ancient guest bed~
 ~
 15 3 3 0 7 0 0 0 0 0 0
 15 0 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 bed~
 Magificent carvings line the head and foot of the bed, but the mist that
@@ -920,7 +920,7 @@ amulet dead~
 ~
 3 16 2 4 7 0 4096 16389 0 0 0
 56 3 1 58 0 0 0 0
-1 50000 100
+1 50000 100 100
 E
 amulet~
    Beautiful white enamel skeletons have been painted on a black enamel
@@ -938,7 +938,7 @@ Another teleporter to 16228 rests here~
 ~
 25 16 0 50 7 0 2 0 0 0 0
 16228 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16258
 key~
 &+Ca key made of mist&N~
@@ -946,7 +946,7 @@ key~
 ~
 18 16 1 1 7 0 8912896 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key~
 Though clearly a key of some sort, it is also clear that the mist it is made
@@ -961,7 +961,7 @@ rations~
 ~
 19 2 2 2 7 0 0 0 0 0 0
 2 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 rations~
    Though they aren't poisonous, the rations are quite stale and unappetising.
@@ -974,7 +974,7 @@ A teleporter to room 16298~
 ~
 25 16 0 50 7 0 1026 0 0 0 0
 16298 4 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16261
 desk~
 &+yan elegant wooden desk&N~
@@ -982,7 +982,7 @@ desk~
 ~
 15 6 3 0 7 0 1024 0 0 0 0
 100 29 0 100 0 0 0 0
-0 1 100
+0 1 100 100
 E
 desk~
    The floral motif that has been carved into all surfaces of the desk matches
@@ -998,7 +998,7 @@ globe shadows~
 ~
 11 1 10 0 15 25 268543008 16385 64 1024 0
 0 0 0 0 0 0 0 0
-0 500000 100 524290 0 0 266240
+0 500000 100 100 524290 0 0 266240
 E
 globe shadows~
    This globe appears to contain the trapped soul of a necromancer.  It hums
@@ -1018,7 +1018,7 @@ crumpled note~
 ~
 13 28 3 0 14 0 8388608 1 0 0 0
 3 0 0 2 0 0 0 0
-1 1 100
+1 1 100 100
 E
 crumpled note~
 *Sorry* *So Sorry* *So So Sorry*
@@ -1032,7 +1032,7 @@ token~
 ~
 13 16 0 0 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 badge~
    This pale purple badge has strange runes on both faces that seem to
@@ -1045,7 +1045,7 @@ potion glowing~
 ~
 10 7 2 4 7 0 98305 16385 64 0 0
 53 9 35 56 0 0 0 0
-2 49393 100
+2 49393 100 100
 E
 potion glowing~
 &+WIt glows with an unholy light..  Mmm mmm mmmmm.
@@ -1057,7 +1057,7 @@ blade sword amber _id_~
 ~
 5 19 3 0 14 20 13312 8193 64 96071707 0
 5 3 4 3 0 0 0 0
-2 1000 100 536870912 64 0 0
+2 1000 100 100 536870912 64 0 0
 E
 blade sword amber~
 This strange sword is extremely light, yet carefully balanced and
@@ -1087,7 +1087,7 @@ ball mist yellow~
 ~
 11 1 3 0 14 10 1024 16385 0 46305188 0
 0 0 0 0 0 0 0 0
-1 40000 100 536870912 64 0 0
+1 40000 100 100 536870912 64 0 0
 E
 ball mist yellow~
 The mist swirls in a tight ball.  It appears to have a life of its own,
@@ -1106,7 +1106,7 @@ Some dirty trash is here.~
 ~
 13 16 3 0 14 0 8913920 1 0 96071707 0
 1 0 0 2 0 0 0 0
-20 1 100
+20 1 100 100
 E
 wire steel~
 This small circle of steel wire was clearly designed to be worn on one's wrist.
@@ -1120,7 +1120,7 @@ cloak green tight~
 ~
 9 3 3 0 13 15 45056 1025 0 0 0
 15 9 1 2 0 0 0 0
-1 90000 100 134217736 0 0 0
+1 90000 100 100 134217736 0 0 0
 E
 cloak green~
 The fabric, though thin, is woven of some magical fiber that seems to
@@ -1136,7 +1136,7 @@ wire steel~
 ~
 9 16 3 0 14 0 33793 4097 64 96071707 0
 3 0 0 2 0 0 0 0
-0 100000 100 0 12416 0 0
+0 100000 100 100 0 12416 0 0
 E
 wire steel~
 This small circle of steel wire was clearly designed to be worn on one's wrist.
@@ -1154,7 +1154,7 @@ warped key~
 ~
 18 15 3 0 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16272
 key swirling mist~
 &+Wa swirling key of mist~
@@ -1162,7 +1162,7 @@ key swirling mist~
 ~
 18 15 3 0 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #16273
 misty blue mask gauze~
 &+ba &+Cmisty blue &+bmask of gauze&N~
@@ -1170,7 +1170,7 @@ misty blue mask gauze~
 ~
 9 19 2 3 11 0 8192 262145 0 0 0
 8 0 0 3 0 0 0 0
-0 186648 100 33554432 0 0 0
+0 186648 100 100 33554432 0 0 0
 E
 misty blue mask gauze~
 &+b   This small mask made of pure adamantium has been imbued with the powers of
@@ -1187,7 +1187,7 @@ wooden sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden sign~
 

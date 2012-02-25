@@ -5,7 +5,7 @@ blood onyx tub~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130202 327 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood onyx tub~
    Constructed of pure onyx, this tub would make a lavish addition to
@@ -22,7 +22,7 @@ pillar granite~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130208 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pillar granite~
    Constructed of a fine grade of granite, this pillar hands palm
@@ -36,7 +36,7 @@ mass~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130226 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mass~
    This mass of inky blackness draws at your soul, daring you to enter.
@@ -48,7 +48,7 @@ mass~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130217 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mass~
    This mass of inky blackness draws at your soul, daring you to enter.
@@ -60,7 +60,7 @@ pillar granite~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130215 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pillar granite~
    Constructed of a fine grade of granite, this pillar hands palm
@@ -74,7 +74,7 @@ statue earthen hulk~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130270 139 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue earthen hulk~
    This statue is hulking and earthy, it looks like an earthen hulk
@@ -88,7 +88,7 @@ statue earthen hulk~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130261 139 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue earthen hulk~
    This statue is hulking and earthy, it looks like an earthen hulk
@@ -102,7 +102,7 @@ statue ogremoch~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130269 197 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue ogremoch~
    The ultimate lord of the elemental plane of earth, the power of
@@ -115,7 +115,7 @@ statue ogremoch~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130280 197 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue ogremoch~
    The ultimate lord of the elemental plane of earth, the power of
@@ -128,7 +128,7 @@ ball fire~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130273 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ball fire~
    This flickering ball of fire sizzles and pops, yet something deep
@@ -141,7 +141,7 @@ ball fire~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130274 320 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ball fire~
    This flickering ball of fire sizzles and pops, yet something deep
@@ -154,7 +154,7 @@ phoenix blazing~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130254 32 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 phoenix blazing~
    Piercing SCREAMS seem to echo from an eternity frozen.
@@ -166,7 +166,7 @@ phoenix blazing~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130263 32 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 phoenix blazing~
    Piercing SCREAMS seem to echo from an eternity frozen.
@@ -178,7 +178,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130214
 key~
 &+La key bearing the rite of passage&n~
@@ -186,7 +186,7 @@ A key is here.&n~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130215
 key second~
 &+Wthe white limestone gate key&n~
@@ -194,7 +194,7 @@ The second key is here.&n~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130216
 key third~
 &+Lthe &+rN&+Re&+rx&+Ru&+rs &+LTower key&n~
@@ -202,7 +202,7 @@ The third key is here.&n~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130217
 key fourth~
 &+Lthe key to the Reliquary &+rN&+Re&+rx&+Ru&+rs &+Lof &+Wth&+re De&+Wad&n~
@@ -210,7 +210,7 @@ The fourth key is here.&n~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #130218
 mirror onyx~
 &+La lavish onyx mirror&n~
@@ -218,4 +218,4 @@ mirror onyx~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 130201 139 -1 0 0 0 0 0
-0 0 100
+0 0 100 100

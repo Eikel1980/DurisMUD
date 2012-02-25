@@ -5,7 +5,7 @@ shard freeze bluestone~
 ~
 5 11 10 0 13 50 16790800 24577 64 94367745 0
 2 3 4 11 1 10 45 35
-1 1212 100 0 64 2097152 0
+1 1212 100 100 0 64 2097152 0
 E
 shard freeze bluestone~
    This shard of bluestone has been finely polished
@@ -37,7 +37,7 @@ steel club crusher~
 ~
 5 16 3 0 12 50 20979984 8193 66 0 0
 11 3 6 6 0 404 50 100
-10 1212 100
+10 1212 100 100
 E
 steel club crusher~
    This huge club has been made of steel, yet is color has
@@ -68,7 +68,7 @@ sleeves flaming demonic~
 ~
 9 19 3 0 14 50 33566720 257 64 0 0
 12 0 0 4 0 0 0 0
-1 1212 100 536870912 0 0 0
+1 1212 100 100 536870912 0 0 0
 E
 sleeves flaming demonic~
    This pair of blackened sleeves are covered in flames,
@@ -87,7 +87,7 @@ dagger steel~
 ~
 5 16 9 0 10 10 8192 8193 2 0 0
 2 2 4 11 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 dagger steel~
    This light-weight and well balanced dagger, has been
@@ -105,7 +105,7 @@ charcoal lump totem~
 ~
 34 37 3 0 14 50 74753 16385 64 256 0
 63 0 0 0 0 0 0 0
-8 1212 100
+8 1212 100 100
 E
 charcole lump totem~
    What appears to be a lump of charcole that is still
@@ -124,7 +124,7 @@ wand ebony~
 ~
 3 10 3 0 14 50 33566720 16385 64 0 0
 50 3 3 77 0 0 0 0
-2 1212 100
+2 1212 100 100
 E
 wand ebony~
    This glossy black wand is streaked with silver.
@@ -136,7 +136,7 @@ shard key bluestone~
 ~
 18 11 10 0 13 100 8400896 16385 66 0 0
 0 100 0 0 0 0 0 0
-1 359219 100
+1 359219 100 100
 E
 shard freeze bluestone~
    This shard of bluestone has been finely polished
@@ -150,7 +150,7 @@ bluestone vial~
 ~
 10 11 3 0 15 0 8400896 16385 64 0 0
 60 1 28 36 0 0 0 0
-2 1212 100
+2 1212 100 100
 E
 bluestone vial~
    This small bluestone vial contains a mysterious liquid.
@@ -162,7 +162,7 @@ demon spiked cloak haze~
 ~
 9 1 3 0 14 50 13313 17409 64 33685920 0
 10 0 0 4 0 0 0 0
-1 1212 100 8 0 0 0
+1 1212 100 100 8 0 0 0
 E
 demon spiked cloak haze~
    This dead black cloak seems to harden and soften, in
@@ -181,7 +181,7 @@ platemail bluestone dragon~
 ~
 9 11 3 0 15 50 13312 9 64 87572507 0
 30 0 0 4 0 0 0 0
-10 1212 100 536870912 12480 0 0
+10 1212 100 100 536870912 12480 0 0
 E
 platemail bluestone dragon~
    A powerful aura of magic surrounds this armor, its
@@ -200,7 +200,7 @@ dragon horn~
 ~
 4 34 3 0 15 100 12288 16385 64 0 0
 60 1 1 288 0 0 0 0
-10 1212 100
+10 1212 100 100
 E
 dragon horn~
    This large dragon horn seems to flicker in and out of
@@ -213,7 +213,7 @@ black key mist~
 ~
 18 1 3 0 15 100 8400896 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 black key mist~
    This key has been made from some sort of black mist.
@@ -225,7 +225,7 @@ bone key~
 ~
 18 10 3 0 15 100 8400896 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bone key~
    This key has been carved from a shattered bone.
@@ -237,7 +237,7 @@ portal shimmering~
 ~
 25 1 3 0 15 100 0 0 64 0 0
 80980 7 -1 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 portal shimmering~
    Rising up from the ground, this shimmering portal
@@ -250,7 +250,7 @@ greaves bluestone~
 ~
 9 11 3 0 12 0 140289 16417 0 100794424 0
 15 0 0 4 0 0 0 0
-2 262962 100 0 32768 0 0
+2 262962 100 100 0 32768 0 0
 E
 greaves bluestone~
 &+W   Cracked shards of &+bblu&+Besto&+bne&N &+Whave been formed
@@ -270,7 +270,7 @@ bracelet frost dragon~
 ~
 9 15 2 0 14 100 3286016 4097 0 46567332 0
 10 0 0 4 0 0 0 0
-1 897452 100 0 64 0 0
+1 897452 100 100 0 64 0 0
 E
 bracelet frost dragon~
    A swirling bracelet of dragons breath emits a
@@ -287,7 +287,7 @@ black vial demonic~
 ~
 17 15 3 0 7 100 13313 16385 0 77824 0
 20 20 27 10 0 0 0 0
-1 1212 100
+1 1212 100 100
 E
 black vial demonic~
    This small black vial radiates the smell of death and decay.
@@ -301,7 +301,7 @@ mace bluestone~
 ~
 5 11 3 0 12 0 8193 8193 0 0 0
 7 3 4 7 0 0 0 0
-2 1212 100
+2 1212 100 100
 E
 mace bluestone~
 &+L    This mace, made of magical&N &+bblu&+Besto&+bne&N &+Lappears to
@@ -318,7 +318,7 @@ shield bluestone~
 ~
 37 11 3 0 12 0 1025 8389121 0 46567332 0
 1 3 4 200 0 0 0 0
-3 1212 100 536944640 12480 0 0
+3 1212 100 100 536944640 12480 0 0
 E
 shield bluestone~
 &+L   This small shield has been fashioned out of magical
@@ -336,7 +336,7 @@ mask future~
 ~
 9 35 2 0 12 0 4097 262145 0 0 0
 5 0 0 3 0 0 0 0
-1 1212 100 4 0 0 0
+1 1212 100 100 4 0 0 0
 E
 mask future~
 &+L   The mask here has been fashioned from a discarded scale of the
@@ -354,7 +354,7 @@ ring past~
 ~
 11 35 2 0 12 0 1 3 64 0 0
 0 0 0 0 0 0 0 0
-1 1212 100 2 0 0 0
+1 1212 100 100 2 0 0 0
 E
 ring past~
 &+L   This small ring is carved out of dragonscale, glittering slightly
@@ -371,7 +371,7 @@ armplates present arm~
 ~
 9 35 3 0 12 0 8705 257 0 0 524464
 10 0 0 4 0 0 0 0
-2 1212 100
+2 1212 100 100
 E
 armplates present arm~
 &+L   Someone has taken the time to collect the scales of the dragon of
@@ -388,7 +388,7 @@ portal shimmering~
 ~
 25 1 3 0 15 100 0 0 64 0 0
 81676 7 -1 0 0 0 0 0
-10000 1 100
+10000 1 100 100
 E
 portal shimmering~
    Rising up from the ground, this shimmering portal
@@ -401,7 +401,7 @@ thread~
 ~
 13 15 3 0 7 0 77824 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #81424
 white suit shimmers disco~
 &+Wa white suit&N~
@@ -409,7 +409,7 @@ white suit shimmers disco~
 ~
 9 3 3 0 4 0 3145729 9 0 0 0
 30 0 0 3 0 0 0 0
-1 1 100 64 0 0 0
+1 1 100 100 64 0 0 0
 E
 white suit shimmers disco~
    &+WThis suit seems to be made of some oddly shimmering material.  It is light
@@ -426,7 +426,7 @@ feathered headdress~
 ~
 9 50 2 0 3 0 8193 17 0 0 0
 10 0 0 3 0 0 0 0
-1 1 100
+1 1 100 100
 E
 feathered headdress~
    &+YThis headdress resembles nothing more than the plumage of some arcane

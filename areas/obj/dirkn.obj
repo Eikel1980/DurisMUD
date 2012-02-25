@@ -5,7 +5,7 @@ A smelly pile of &+mbat guano&n smokes against the western wall.~
 ~
 15 48 3 0 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 guano scat dung crap~
    Warm to the touch, the pile of guano steams in the cooler air of the tunnel
@@ -19,7 +19,7 @@ A dual-headed &+Wbone&n axe lies tossed aside here.~
 ~
 5 16 3 8 7 0 5120 8193 64 87572571 0
 1 2 4 3 0 0 0 0
-20 1000 100
+20 1000 100 100
 E
 axe cleaver~
    This large axe was crafted from the femer and clavicles of a drow warrior.
@@ -35,7 +35,7 @@ Tattered and forgotten, a small strip of paper lies crumpled in the corner.~
 ~
 12 28 1 2 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tattered paper silk map~
   &+mDarg ----
@@ -70,7 +70,7 @@ A thong of dried scalps rests in a pile here.~
 ~
 9 12 3 3 7 0 4096 2049 0 0 0
 4 10 0 3 0 0 0 0
-2 200 100
+2 200 100 100
 E
 scalps belt~
    Fashioned from thin strips of drow scalp, tethered together by metal
@@ -85,7 +85,7 @@ an &+Binviting pool&n~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 -1 -1 16 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
    The pristine waters of this pool look inviting to drink.
@@ -97,7 +97,7 @@ a &+ylarge boulder&n~
 ~
 27 11 0 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-9090 0 100
+9090 0 100 100
 E
 boulder~
    This large boulder is made from a different mineral than the granite walls
@@ -111,7 +111,7 @@ a &+Wskeleton&n~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 50 0 0 100 0 0 0 0
-50 0 100
+50 0 100 100
 E
 skeleton corpse~
 &+W   The skeletal remains of some humanoid, the bones are bound to each other by
@@ -124,7 +124,7 @@ a &+Ypool of urine&n~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 100 100 14 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 urine pool piss~
    This small pool of urine gives off a distasteful odor.
@@ -136,7 +136,7 @@ a &+Glizard's bladder flask&n~
 ~
 17 12 1 4 7 0 0 17409 0 0 0
 15 7 5 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 skin bladder flask~
    Fashioned from the bladder of an underdark reptile, this crude flask has
@@ -149,7 +149,7 @@ a &+Cmithril sign&n~
 ~
 27 18 0 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign mithril~
 
@@ -174,7 +174,7 @@ A key crafted of &+mbloodstone&n and &+Lonyx&n lies here.~
 ~
 18 16 1 1 7 0 8388608 16385 64 0 0
 0 5 0 0 0 0 0 0
-3 0 100
+3 0 100 100
 E
 bloodstone key~
    Crafted from a solid block of bloodstone mixed with onyx veins, this key
@@ -187,7 +187,7 @@ an &+Lonyx sign&n~
 ~
 27 11 0 50 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 onyx sign~
                  &+L    . ..______________________.. .&n
@@ -205,7 +205,7 @@ a &+bdw&+Bar&+Wve&+Bn a&+blb&n~
 ~
 9 3 3 8 7 0 1024 9 2 33685920 0
 8 3 1 3 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 dwarven alb robe~
    Woven from azure roper webbing, its fabric so fine as to make a light yet
@@ -221,7 +221,7 @@ a &+yleather harness&n~
 ~
 9 13 0 0 7 0 0 1025 0 0 0
 6 9 1 3 0 0 0 0
-2 450 100
+2 450 100 100
 E
 leather harness~
 &+y   The halter is an assortment of straps that hook around the thighs and &n
@@ -238,7 +238,7 @@ a &+cm&+Ca&+Wil&+Ce&+cd &+Bfist&n~
 ~
 5 16 2 5 7 0 1024 8193 64 33685920 0
 10 2 5 7 0 0 0 0
-7 1000 100
+7 1000 100 100
 E
 mailed fist~
    &+WThis gauntlet consists of large overlapping solid steel plates, which are&n
@@ -254,7 +254,7 @@ A &+Wsteel reinforced&+L granite chest&n leans casually against the north wall.~
 ~
 15 16 5 50 7 0 0 0 0 0 0
 50 13 0 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest granite steel~
    The joints of this chest are reinforced by steel strips that are rivited to
@@ -267,7 +267,7 @@ a &+csvirfneblin hide rug&n~
 ~
 12 12 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rug svirfneblin~
    This miserable creature has been skinned and turned into a prostitute's
@@ -281,7 +281,7 @@ a &+Ypile of coins&n~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 0 0 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 coins coin money~
    The coins are neatly stacked in four separate piles.
@@ -293,7 +293,7 @@ A desk made from dried &+Bmushr&+Moomsta&+Blks&n stands here.~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 30 13 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk mushroomstalk~
    Highly polished, this desk is made from the bluepurple stalks of an elder
@@ -307,7 +307,7 @@ a &+Mplu&+msh co&+Much&n~
 ~
 15 3 3 0 7 0 0 0 0 0 0
 10 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 couch~
    A six foot plush couch rests here.  Someone has covered it in gaudy magenta
@@ -321,7 +321,7 @@ some loose change~
 ~
 20 16 1 0 7 0 4096 1 0 0 0
 0 20 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 coins change~
    These coins are heaped haphazardly in a small pile.
@@ -333,7 +333,7 @@ a &+Wwater basin&n~
 ~
 17 34 0 0 7 0 0 0 0 0 0
 -1 -1 17 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 basin ivory water holy~
    &+WA small ivory waterbasin etched with an anvil being smashed my a mailed
@@ -346,7 +346,7 @@ an &+Waltar&n~
 ~
 27 6 0 50 7 0 0 0 64 0 0
 0 197 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
 &+B   Raised upon an &+Lonyx &+Bdais, this &+Wivory&+B altar is covered in strange runes and
@@ -361,7 +361,7 @@ a &+cchasuble of initiation&n~
 ~
 11 16 0 0 7 0 1024 1025 0 33685920 0
 0 0 0 4 0 0 0 0
-1 350 100
+1 350 100 100
 E
 vest chasuble~
 &+c   This chasuble is woven from fine roper silk, and has the emblem of
@@ -378,7 +378,7 @@ Covered in &+gs&+Gl&+gi&+Gm&+ge&n this &+Lwell&n looks almost uninviting.~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 9 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 well water bucket~
    A small stone &+Lwell&n sticks out of the ground here, a rope and bucket
@@ -393,7 +393,7 @@ a &+Gmo&+gss ma&+Gsk&n~
 ~
 9 30 3 3 7 0 0 262145 0 4198895524 0
 4 13 1 3 0 0 0 0
-2 600 100
+2 600 100 100
 E
 moss mask~
 &+G   Crafted from a thick &+gemerald&+G moss, this mask covers the entire face with
@@ -412,7 +412,7 @@ a &+Wsilver-rimmed &+Bt&+Mo&+Bwer s&+Mhi&+Beld&n~
 ~
 37 16 3 15 7 0 1024 513 0 87572571 0
 2 1 3 170 0 0 0 0
-12 2300 100
+12 2300 100 100
 E
 shield tower~
 &+B   This shield is crafted out of stiffened &+Mmushroomstalks&+B which have been
@@ -428,7 +428,7 @@ A pile of &+rt&+mr&+ya&+gs&+ch&n is lying here, undisturbed.~
 ~
 13 15 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-10 0 100
+10 0 100 100
 E
 trash garbage waste~
    Vomit covered boots, torn shirts, an empty can, and three pounds of crap.
@@ -441,7 +441,7 @@ a &+rdumpster&n~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 75 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dumpster~
 &+R   A huge &+rvermillion&+R steel dumpster, its square sides semi-collapsed with age,
@@ -454,7 +454,7 @@ a &+Lpolished obsidian earring&n~
 ~
 11 36 1 1 7 0 0 524289 0 4165209604 0
 0 0 0 10 0 0 0 0
-1 950 100
+1 950 100 100
 E
 ring polished obsidian~
    Crafted from a solid piece of obsidian, this earring is carved in the shape
@@ -471,7 +471,7 @@ A dingy old toothbrush was tossed aside, here.~
 ~
 12 6 0 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 45 100
+0 45 100 100
 E
 toothbrush~
    Made from the blue bone of a subterranean lizard fitted with rag strips,
@@ -488,7 +488,7 @@ a &+Wscat-filled toilet&n~
 ~
 15 9 3 0 7 0 0 0 0 0 0
 6 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 toilet~
    Filled almost to capacity, this toilet reeks of Gartuk's bean barritos.
@@ -500,7 +500,7 @@ a &+Ldark obsidian band&n~
 ~
 11 36 1 1 7 0 4096 3 0 4248567899 0
 0 0 0 10 0 0 0 0
-3 800 100
+3 800 100 100
 E
 band ring obsidian~
 &+L   A dark semi-clear band of black obsidian etched with small skulls and
@@ -517,7 +517,7 @@ a &+Ghig&+ghbor&+Gn &+Cclaymore&n~
 ~
 5 16 4 15 7 0 4195328 8193 0 87572571 0
 5 3 5 6 0 0 0 0
-12 500 100
+12 500 100 100
 E
 claymore sword highborn~
 &+L   The &+GHi&+gghb&+Gorn&+c Claymore&+L is a large, cross-hilted sword consisiting of a
@@ -536,7 +536,7 @@ a &+wderro &+bk&+Bi&+ml&+Mt&n~
 ~
 9 3 0 0 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-1 40 100
+1 40 100 100
 E
 kilt dwarven~
 &+W   This woolen cloth kilt is dyed with the tartan of the warrior brigade of
@@ -549,7 +549,7 @@ b'ardingol foe hammer _noquest_~
 ~
 5 16 3 8 7 0 1024 8193 66 4247797819 128
 4 4 3 6 0 27188 40 35
-15 4500 100
+15 4500 100 100
 E
 b'ardingol foe hammer~
    &+LB'&+war&+Wdi&+wng&+Lol&n, &+CThe Foe Hammer&n is a large dual headed warhammer that the &+cBurrow
@@ -579,7 +579,7 @@ A pair of boots, crafted from dried and taunt drowhide, lie here.~
 ~
 9 12 3 8 7 0 1024 65 0 87572571 0
 10 6 1 3 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 drowhide military boots~
    Crafted from the dried and drawn skin of a &+mdrow elf&n, these military boots
@@ -594,7 +594,7 @@ a &+Lserrated &+Rdurithalite &+Lda&+wg&+Wger&n~
 ~
 5 16 2 3 7 0 0 8193 0 4194697632 0
 2 1 5 11 0 0 0 0
-2 560 100
+2 560 100 100
 E
 dagger durithalite serrated~
 &+c   This dagger's blade is crafted from &+Rdurithalite&+c, its edges serrated so as
@@ -610,7 +610,7 @@ a &+ytr&+Yogl&+Wodyt&+Yesk&+yin&+L eyepatch&n~
 ~
 9 12 3 2 7 0 1024 131073 0 87572571 0
 2 12 2 3 0 0 0 0
-1 600 100
+1 600 100 100
 E
 troglodyteskin eyepatch~
 &+c   The dried flesh of a &+ytrog&+Ylod&+Wyte&+c has been sewn together into a band that
@@ -627,7 +627,7 @@ a &+Rpool of blood&n~
 ~
 17 2 5 50 7 0 0 0 0 0 0
 -1 -1 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood pool pools~
 &+r   Large pools of blood have formed around the room, the gruesome remains of a
@@ -642,7 +642,7 @@ a &+rragged blindfold&n~
 ~
 9 3 0 0 7 0 524416 131073 0 0 0
 7 12 2 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tattered blindfold~
 &+r   A torn and tattered piece of red clothe, this blindfold serves one purpose.
@@ -660,7 +660,7 @@ A snakeskull, attached to a small metal chain, lies here.~
 ~
 11 10 1 1 7 0 0 524289 0 0 0
 0 0 0 9 0 0 0 0
-1 45 100
+1 45 100 100
 E
 tarnished snakeskull earring~
    &+wA small polished &+gsn&+Gak&+Ye&+Wskull&+w dangles from an old &+Ltar&+wni&+cshed &+Wsteel&+w chain.&n
@@ -674,7 +674,7 @@ an &+Wivory &+Bpool&n~
 ~
 17 1 5 50 7 0 0 0 0 0 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool basin~
 &+L   This basin was carved from the &+Wivory&+L tusks of an underdark &+mdragon&+L, its
@@ -689,7 +689,7 @@ a &+Lscarab&+W of &+GG&+ghore&n~
 ~
 11 16 0 0 7 0 0 2097153 64 0 0
 0 0 0 1 0 0 0 0
-1 500 100
+1 500 100 100
 E
 broach scarab ghore~
 &+L   This broach is made of a deep &+Gjade&+L, its depths shrouded in a dark &+wgrey&+L mist
@@ -703,7 +703,7 @@ a &+wbox of &+WQuestos &+LCereal&n~
 ~
 19 5 2 2 7 0 0 1 0 0 0
 24 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 cereal questos~
                                &+WQuestos &+LCereal
@@ -726,7 +726,7 @@ a &+Rsealed&+W document&n~
 ~
 12 28 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 sealed document~
    Bound in a &+Rcrimson&n silk band and sealed with the &+Mwax&n insignia of the most

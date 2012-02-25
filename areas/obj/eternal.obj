@@ -5,7 +5,7 @@ crown naga overlord~
 ~
 11 27 2 0 12 0 0 17 64 0 0
 0 0 0 0 0 0 0 0
-0 5000000 100
+0 5000000 100 100
 E
 crown~
 &+mThis crown comes from a Kingdom of Naga, and is a symbol that any naga will
@@ -24,7 +24,7 @@ ring nagakind~
 ~
 11 15 1 0 10 0 0 3 64 0 0
 0 0 0 0 0 0 0 0
-1 640000 100
+1 640000 100 100
 E
 ring nagakind~
 &+MThe ring of Nagakind is an old ancient ring that yuan-ti of the Fanged Kingdom
@@ -42,7 +42,7 @@ tongue _id_~
 ~
 11 15 3 0 7 0 136 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 200000 100
+0 200000 100 100
 E
 tongue~
 &+LThis tongue is forked like a serpent and was severed in a battle with what
@@ -63,7 +63,7 @@ platemail suit~
 ~
 9 19 3 0 10 0 0 9 192 0 0
 100 0 0 2 1 0 0 0
-4 4599999 100
+4 4599999 100 100
 E
 platemail suit~
 &+LThis suit of platemail has been designed by yuan-ti blacksmiths so that the wearer can
@@ -82,7 +82,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 9 15 2 0 13 0 8192 131073 64 0 0
 25 0 0 3 0 0 0 0
-1 799999 100
+1 799999 100 100
 E
 eyepatch~
 &+LThis eyepatch was forged on the Demi-Plane of Shadows. It's made of ethereal silk,
@@ -102,7 +102,7 @@ stilletto trainted kiss~
 ~
 5 19 3 0 10 0 17047808 8193 192 0 0
 2 4 5 0 0 0 0 0
-3 688880 100
+3 688880 100 100
 E
 stilletto trainted kiss~
 &+bThis dagger is of high craftmanship, made of mithril and dark mithril.
@@ -120,7 +120,7 @@ lance~
 ~
 5 16 3 0 10 0 37756928 8193 64 0 0
 16 2 20 0 0 0 0 0
-5 609990 100
+5 609990 100 100
 E
 lance~
 &+LThis lance was designed for yuan-ti pure-bloods and yuan-ti half-blood knights
@@ -138,7 +138,7 @@ bracelet star sapphire eyes~
 ~
 9 33 2 0 7 0 8192 4097 64 0 0
 25 0 0 3 0 0 0 0
-2 3000000 100
+2 3000000 100 100
 E
 bracelet star sapphire eyes~
 &+mThis bracelet is made of gold, chased with platinum serpents and
@@ -156,7 +156,7 @@ ring~
 ~
 11 27 1 0 11 0 1 3 64 0 0
 0 0 0 0 0 0 0 0
-1 600999 100
+1 600999 100 100
 E
 ring~
 &+LThis beautiful ring is beautiful to behold, a gold band with with white gold
@@ -174,7 +174,7 @@ circlet~
 ~
 9 18 3 0 11 0 33562625 4097 64 0 0
 15 0 0 4 0 0 0 0
-4 2565650 100
+4 2565650 100 100
 E
 circlet~
 &+LThis circlet is the symbol of anyone wearing it that they have been blessed
@@ -193,7 +193,7 @@ necklace crowns skulls kings~
 ~
 9 15 2 0 13 0 67379200 5 64 0 0
 20 0 0 2 0 0 0 0
-1 7909000 100
+1 7909000 100 100
 E
 necklace crowns skulls kings~
 &+rThis necklace is horrifying to look upon. Connected by linked mithril chains,
@@ -214,7 +214,7 @@ crown witch king~
 ~
 9 18 2 0 13 0 0 17 0 0 0
 25 0 0 1 0 0 0 0
-1 6060609 100
+1 6060609 100 100
 E
 crown witch king~
 &+LThis crown is made of mithril, chased through with gold and white gold.
@@ -234,7 +234,7 @@ gown witch queen~
 ~
 9 1 3 0 13 0 67117057 9 64 0 0
 60 0 0 2 0 0 0 0
-0 4070700 100
+0 4070700 100 100
 E
 gown witch queen~
 &+LThis gown is made of swirling shadows and ethereal mist. Whenever
@@ -252,7 +252,7 @@ onslaught weapon slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -264,7 +264,7 @@ onslaught warhammer slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -276,7 +276,7 @@ onslaught mace slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -288,7 +288,7 @@ onslaught vorpal sword slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -300,7 +300,7 @@ onslaught claws slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -312,7 +312,7 @@ onslaught staff slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -324,7 +324,7 @@ onslaught dagger slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -336,7 +336,7 @@ onslaught pick hammer slaazh kingslayer~
 ~
 5 15 3 0 7 0 88350992 8193 192 0 0
 4 5 10 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 6
 A
@@ -348,7 +348,7 @@ coils death serpent~
 ~
 9 2 2 0 12 0 67117216 257 64 0 0
 45 0 0 1 0 0 0 0
-1 3656500 100
+1 3656500 100 100
 E
 coils death serpent~
 &+LAn insidious serpent of death and living dead is the creed of these twin
@@ -366,7 +366,7 @@ head shrunken illithidlich illithid lich~
 ~
 11 2 1 0 5 0 12416 8388609 0 0 0
 0 0 0 0 0 0 0 0
-1 2609000 100
+1 2609000 100 100
 E
 head shrunken illithidlich illithid lich~
 &+mThis is the severed head of an illithidlich. the head doesnt appear to
@@ -384,7 +384,7 @@ gloves~
 ~
 9 2 1 0 8 0 8192 129 64 0 0
 20 0 0 1 0 0 0 0
-1 4600000 100
+1 4600000 100 100
 E
 gloves~
 &+mThese gloves are made from the mauve skin of an mindflayer who has been skinned
@@ -402,7 +402,7 @@ gloves~
 ~
 9 1 1 0 14 0 101851168 129 64 0 0
 30 0 0 1 0 0 0 0
-1 7900000 100
+1 7900000 100 100
 E
 gloves~
 &+gThese gloves were forged upon the astral-plane. Mainly made up of
@@ -420,7 +420,7 @@ spellfire scroll case~
 ~
 9 1 1 0 12 0 100671488 5242881 64 0 0
 20 0 0 1 0 0 0 0
-1 2800000 100
+1 2800000 100 100
 E
 spellfire scroll case~
 &+mThis scrollcase is highly prized by any spellcaster whom practice in the
@@ -438,7 +438,7 @@ ethereal prism~
 ~
 9 7 0 0 13 0 100937760 8388609 64 0 0
 15 0 0 1 0 0 0 0
-0 2300000 100
+0 2300000 100 100
 E
 ethereal prism~
 &+LThis prism is diamond shaped and made of glass, in its heart is a pusling power
@@ -456,7 +456,7 @@ visage mask doppleganger face~
 ~
 9 2 2 0 6 0 1048576 262145 64 0 0
 30 0 0 1 0 0 0 0
-1 9560000 100
+1 9560000 100 100
 E
 visage mask doppleganger~
 &+mThis is the visage of someone who has seen too much. The face of
@@ -477,7 +477,7 @@ horns vaprak god~
 ~
 9 15 4 0 11 0 33824768 16777217 64 0 0
 45 0 0 5 1 0 0 0
-3 7890000 100
+3 7890000 100 100
 E
 horns vaprak god~
 &+rWhile not the actual horns of Vaprak, the God of Minotaurs, these
@@ -495,7 +495,7 @@ eye sseth~
 ~
 3 2 2 0 10 0 100929537 8404993 64 0 0
 45 6 6 409 0 0 0 0
-1 5900000 100
+1 5900000 100 100
 E
 eye set~
 &+gThe all-seeing Eye of Set, the God of Serpents. The eye has a serpent
@@ -513,7 +513,7 @@ ivy horn unicorn~
 ~
 3 15 1 0 14 0 33554497 1064961 64 0 0
 31 3 3 2 0 0 0 0
-1 3500000 100
+1 3500000 100 100
 E
 ivy horn unicorn~
 &+CThis beautiful wand was fashioned to look like the twisted horn of
@@ -531,7 +531,7 @@ key~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135432
 totem dark naga~
 &+Lthe &nt&+Wote&nm&+L of the &+md&+Ma&+Lrk n&+Mag&+La~
@@ -539,7 +539,7 @@ totem dark naga~
 ~
 34 12 2 0 10 0 8193 24577 64 0 0
 34 0 0 0 0 0 0 0
-1 2340000 100
+1 2340000 100 100
 E
 totem dark naga~
 &+mThis totem has a serpentine look to it, coiling around a wooden handle,
@@ -556,7 +556,7 @@ tail bone naga rattle~
 ~
 11 15 2 0 9 0 4224 33554433 64 0 0
 0 0 0 0 0 0 0 0
-1 1900000 100
+1 1900000 100 100
 E
 tail bone naga rattle~
 &+LThis is the tail of an undead bone naga. It has a rattle end to it
@@ -573,7 +573,7 @@ mithril belt buckle brute strength~
 ~
 9 18 2 0 7 0 0 8388609 0 0 0
 30 0 0 4 0 0 0 0
-1 1800000 100
+1 1800000 100 100
 E
 mithril belt buckle brute strength~
 &+mThis belt buckle is made of mithril and plated with dark mithril.
@@ -591,7 +591,7 @@ arquebuse gond wonderbringer~
 ~
 5 19 2 0 14 0 8192 8193 192 0 0
 10 2 20 0 0 0 0 0
-1 2000000 100
+1 2000000 100 100
 E
 arquebuse gond wonderbringer~
 &+LThe design for this smokepowdered weapon could have only come from
@@ -613,7 +613,7 @@ dreamsinger moon elven sword~
 ~
 5 15 3 0 15 0 104210689 8396801 66 0 0
 5 3 10 0 0 0 0 0
-1 9090000 100
+1 9090000 100 100
 E
 dreamsinger moon elven sword~
 &+LThis magnificent blade tingles with strong ancient &+bm+Lagi&+bc&+L, &nbl&+Wossomi&nng
@@ -636,7 +636,7 @@ A alchemist book with a strange design of a smoke powderweapon has been left her
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135438
 book~
 the Wonderbring book titled 'Muskets and Arquebuses'~
@@ -644,7 +644,7 @@ A book with the holy symbol of Gond, the Wonderbringer has been left here.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135439
 book~
 a battle-forgers book titled 'Smokepowder'~
@@ -652,7 +652,7 @@ A book with mithril bindings and a battle-forgers sigil has been left here.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135440
 object unnamed~
 the hide of Kezef, the Chaos Hound~
@@ -660,7 +660,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135441
 object unnamed~
 the corpse of an elf Moon Warrior~
@@ -668,7 +668,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135442
 visage dendar~
 the visage of Dendar, the Elder Eternal Evil~
@@ -676,7 +676,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135443
 scimitar~
 &+La &nse&+Wrpent&nine &+Ltwo-handed yu&na&+Cn&+L-ti scimitar~
@@ -684,7 +684,7 @@ scimitar~
 ~
 5 19 3 0 7 0 4194304 8193 0 0 0
 13 2 6 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 scimitar~
 &+LThis huge sword was crafted by a yuan-ti, with its curvy serpentine look, the
@@ -701,7 +701,7 @@ scimitar~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 5 2 6 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 scimitar~
 &+LThis huge sword was crafted by a yuan-ti, with its curvy serpentine look, the
@@ -718,7 +718,7 @@ dagger~
 ~
 5 19 3 0 7 0 0 8193 0 0 0
 2 2 6 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 scimitar~
 &+LThis huge sword was crafted by a yuan-ti, with its curvy serpentine look, the
@@ -735,7 +735,7 @@ lance~
 ~
 5 19 3 0 7 0 4194304 8193 0 0 0
 16 2 6 0 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 scimitar~
 &+LThis huge sword was crafted by a yuan-ti, with its curvy serpentine look, the
@@ -752,7 +752,7 @@ shield~
 ~
 9 19 3 0 7 0 0 513 0 0 0
 40 0 0 4 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 platemail~
 &+LThis armor is standard issued kits for yuan-ti protecting the
@@ -766,7 +766,7 @@ platemail~
 ~
 9 19 3 0 7 0 0 9 0 0 0
 40 0 0 4 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 platemail~
 &+LThis armor is standard issued kits for yuan-ti protecting the
@@ -780,7 +780,7 @@ viser helmet~
 ~
 9 19 3 0 7 0 0 17 0 0 0
 40 0 0 4 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 platemail~
 &+LThis armor is standard issued kits for yuan-ti protecting the
@@ -794,7 +794,7 @@ platemail~
 ~
 9 19 3 0 7 0 0 9 0 0 0
 40 0 0 4 0 0 0 0
-2 25000 100
+2 25000 100 100
 E
 platemail~
 &+LThis armor is standard issued kits for yuan-ti protecting the
@@ -808,7 +808,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135452
 object unnamed~
 the scale of the Night Serpent~
@@ -816,7 +816,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135453
 object unnamed~
 the scale of the Shadow Serpent~
@@ -824,7 +824,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135454
 object unnamed~
 the scale of the Emerald Serpent~
@@ -832,7 +832,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135455
 standard vaprak~
 &+Lthe &+Wstandard&+L of &+rVap&+Lrak&+L, the &nG&+Wo&nd&+L of &+rMino&+Ltaurs&n~
@@ -840,7 +840,7 @@ standard vaprak~
 ~
 13 15 3 0 7 0 8728577 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 standard vaprak~
 &+rThis waving flag is drenched in blood. The flag appears to never
@@ -855,7 +855,7 @@ switch naga~
 ~
 29 15 3 0 10 0 100937729 0 64 0 0
 340 135523 1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 staff spirit naga~
 &+LThis staff is shaped into a serpent with a humanoid head. Shaped into
@@ -869,7 +869,7 @@ switch shadow~
 ~
 29 15 3 0 10 0 100937729 0 64 0 0
 340 135515 3 0 0 0 0 0
-1 3999000 100
+1 3999000 100 100
 E
 staff spirit naga~
 &+LThis staff is shaped into a serpent with a humanoid head. Shaped into
@@ -883,7 +883,7 @@ key~
 ~
 18 15 3 0 7 0 8462336 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #135459
 key elder eternal evil~
 &+Lthe &nk&+We&ny&+L of the El&nd&+Ce&+Lr Eter&nn&+Ca&+Ll E&nv&+Ci&+Ll~
@@ -891,7 +891,7 @@ A key of everlasting darkness and eternal evil floats here in mid-air.~
 ~
 18 15 3 0 7 0 75563008 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135460
 key emerald~
 &+gthe &nk&+We&ny&+g of the &+yEm&+Yera&+yld &+gSe&+Grpe&+gnt&n~
@@ -899,7 +899,7 @@ key emerald~
 ~
 18 15 3 0 7 0 75501568 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135461
 circle seven serpent~
 the circlet of the seven serpents~
@@ -907,7 +907,7 @@ A circlet that resembles serpent of intwined snakes devouring each other has bee
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135462
 object unnamed~
 &+W'&+wDe&+Wathga&+wze&+W'&+L the &+WV&+wiso&+Wr&+L of the &+rA&+Rb&+Lyssal Ravag&+Re&+rr&n~
@@ -915,7 +915,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135463
 object unnamed~
 &+ma&+Ln &+ma&+Mm&+Lethys&+Mt&+ms e&+Ma&+Lrri&+Mn&+mg &+Lnamed &+M'&+mM&+Lagi&+mk&+M'&n~
@@ -923,7 +923,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135464
 object unnamed~
 &+La &+Wc&+wloa&+Wk&+L of &+rl&+Ri&+Lvi&+Rn&+rg &+Yf&+La&+we&+Wr&+Yi&+Le &+rf&+Rl&+Le&+Rs&+rh&n~
@@ -931,7 +931,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135465
 object unnamed~
 &+La &+Wf&+woo&+Wt&+L long &+Ws&+we&+Wr&+wr&+Wa&+wt&+We&+wd &+Wun&+Cico&+Wrn &+Ch&+Wor&+Cn&n~
@@ -939,7 +939,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #135466
 object unnamed~
 &+Lan &+ma&+Mn&+Lcie&+Mn&+mt n&+Me&+Lckla&+Mc&+me&+L of dangling &+ms&+Mh&+Lam&+Ma&+mn r&+Mu&+Ln&+Me&+ms~
@@ -947,4 +947,4 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

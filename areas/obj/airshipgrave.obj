@@ -5,7 +5,7 @@ gold key~
 ~
 18 24 3 0 5 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 gold key~
 &+YThis key, heavy enough to be pure gold, is etched with strange runes
@@ -19,7 +19,7 @@ statue~
 ~
 8 24 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
 &+YA typically self-righteous statue of some ancient High-Elf warrior in
@@ -33,7 +33,7 @@ golden falchion~
 ~
 5 24 3 0 5 0 4194304 8193 2 0 0
 8 1 4 0 0 0 0 0
-0 19999 100
+0 19999 100 100
 E
 golden falchion~
 &+yThis polearm has a hard wooden shaft and is tipped with a blade of pure
@@ -51,7 +51,7 @@ spear lancet barbed lance~
 ~
 5 6 3 0 5 0 4194304 8193 2 0 0
 15 2 4 0 0 0 0 0
-0 1922 100
+0 1922 100 100
 E
 spear lancet barbed lance~
 &+yA favoured weapon of the harpy matadors, this lancet is about three
@@ -69,7 +69,7 @@ treasure chest~
 ~
 15 6 3 0 5 0 0 0 0 0 0
 1000 13 0 1000 0 0 0 0
-50000 0 100
+50000 0 100 100
 E
 treasure chest~
 &+yThis chest is enormous, it would take great strength to attempt to drag
@@ -85,7 +85,7 @@ armlet destiny~
 ~
 9 24 3 0 5 0 8921216 4352 0 0 0
 12 0 0 3 1 0 0 0
-0 24111 100
+0 24111 100 100
 A
 39 5
 A
@@ -97,7 +97,7 @@ astral greatsword sword~
 ~
 5 1 3 0 5 0 4194305 8193 96 0 0
 13 2 5 0 0 0 0 0
-0 59900 100
+0 59900 100 100
 A
 18 4
 A
@@ -109,7 +109,7 @@ fossil crystal~
 ~
 8 8 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 fossil crystal~
 &+WA large chunk of &+Gcrystal&+W that appears to be eons old. Must be quite
@@ -122,7 +122,7 @@ cargo crate~
 ~
 15 6 3 0 5 0 4096 0 0 0 0
 1000 13 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cargo crate~
 &+yThis crate is barely noticeable as it is covered with so much debris from
@@ -136,7 +136,7 @@ wooden splinter~
 ~
 5 6 3 0 5 0 8912896 8193 0 0 0
 2 1 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 2
 A
@@ -148,7 +148,7 @@ statue~
 ~
 8 24 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
 ~
@@ -159,7 +159,7 @@ feathered talisman~
 ~
 9 11 3 0 5 0 0 5 0 0 0
 7 0 0 3 0 0 0 0
-0 3444 100
+0 3444 100 100
 E
 feathered talisman~
 &+yThis talisman has been adorned with numerous feathers, a tradition with-
@@ -177,7 +177,7 @@ nest rockworm rock worm larvae~
 ~
 13 15 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 nest rockworm rock worm larvae~
 &+yA large handful of squirming, living rockworm larvae. Each one of the
@@ -191,7 +191,7 @@ vial liquid black~
 ~
 10 40 3 0 5 0 1024 1 0 524288 0
 40 461 0 0 0 0 0 0
-0 29999 100
+0 29999 100 100
 E
 vial liquid black~
 &+LThis vial is filled with a dark, unholy liquid. Whatever it holds it
@@ -204,7 +204,7 @@ vial liquid sunlight~
 ~
 10 40 3 0 5 0 1024 1 0 524288 0
 40 124 0 0 0 0 0 0
-0 29999 100
+0 29999 100 100
 E
 vial liquid sunlight~
 &+YThis small vial contains some sort of liquid that shines extremely
@@ -217,7 +217,7 @@ armlet destiny~
 ~
 9 24 3 0 13 0 8192 4353 0 0 0
 12 0 0 3 1 0 0 0
-0 24111 100
+0 24111 100 100
 E
 armlet destiny~
 &+yThis armlet is obviously quite a powerful object of revered status. It
@@ -236,7 +236,7 @@ hunter bow hunters~
 ~
 13 6 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hunter bow hunters~
 &+yThis is the favoured longbow of High-Elven hunters, however it has become
@@ -249,7 +249,7 @@ museum key~
 ~
 18 24 3 0 9 0 8929280 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 museum key~
 &+yThis key appears to be used by the patrol guards of the museum, as it
@@ -263,7 +263,7 @@ gold plated crossbow cross bow~
 ~
 6 24 3 0 11 0 0 8193 64 0 0
 90 100 0 3 0 0 0 0
-0 12000 100
+0 12000 100 100
 E
 gold plated crossbow cross bow~
 &+yThis is a finely made hard-wood crossbow, with most of the latches,
@@ -280,7 +280,7 @@ gold plated holster quiver~
 ~
 30 14 3 0 5 0 0 8388609 0 0 0
 50 5 3 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 gold plated holster quiver~
 &+yThis is a small holster for use for carrying multiple crossbow bolts.
@@ -294,7 +294,7 @@ gate elf~
 ~
 25 24 3 0 5 0 0 0 0 0 0
 522469 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 gate elf~
 &+yObviously a transportion device for the local &+YHigh-Elves&+y, though it is
@@ -309,7 +309,7 @@ gold portrait~
 ~
 8 24 3 0 11 0 0 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 50000 100
+0 50000 100 100
 E
 gold portrait~
 &+yThis painting depicts some epic battle in ancient High-Elf lands. It
@@ -325,7 +325,7 @@ collection sparkling stones~
 ~
 8 11 3 0 5 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 collection sparkling stones~
 &+yThese &+Lstones&+y could be quite valuable to the right collector, however
@@ -339,7 +339,7 @@ handful rock dust~
 ~
 8 11 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 handful rock dust~
 &+yThis rock powder can be quite dangerous is used correctly. It is a mix
@@ -354,7 +354,7 @@ device explosive detonator small~
 ~
 8 9 3 0 10 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 device explosive detonator small~
 &+yFlint, tinder, combustable chemicals all bundled up together to create a
@@ -370,7 +370,7 @@ thick tome high-elven high elf~
 ~
 33 28 3 0 12 0 0 16385 0 0 0
 0 0 400 0 0 0 0 0
-0 50011 100
+0 50011 100 100
 E
 thick tome high-elven high elf~
 &+yThis is heavy spellbook with many pages of fresh parchment. The cover
@@ -385,7 +385,7 @@ totem naga queen mystic~
 ~
 34 33 3 0 11 0 0 16385 0 0 0
 51 0 0 0 0 0 0 0
-0 43122 100
+0 43122 100 100
 E
 totem naga queen mystic~
 &+bA tiny statuette that serves as a mystical shamanistic totem. It seems to
@@ -404,7 +404,7 @@ capital spire key~
 ~
 18 24 3 0 11 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 capital spire key~
 &+yQuite large for a key, due to the size of the keyhole in the capital
@@ -417,7 +417,7 @@ webspinner spinning spinner claws~
 ~
 9 1 3 0 10 0 0 129 0 0 0
 12 0 0 3 0 0 0 0
-0 22220 100 32768 8192 0 0
+0 22220 100 100 32768 8192 0 0
 E
 webspinner spinning spinner claws~
 &+mThese appear to be the claws of some massive arachnid. Venom drips from
@@ -435,7 +435,7 @@ cursed githzerai dagger~
 ~
 5 1 3 0 7 0 16777360 8193 96 0 0
 2 1 3 0 0 0 0 0
-0 19001 100
+0 19001 100 100
 E
 cursed githzerai dagger~
 &+LThis blade seems almost perfectly balanced and even though it is
@@ -455,7 +455,7 @@ coins pile~
 ~
 20 25 3 0 5 0 4096 1 0 0 0
 0 0 500 200 0 0 0 0
-0 250000 100
+0 250000 100 100
 E
 coins pile~
 &+WA large pile of platinum and gold coins.&n
@@ -467,7 +467,7 @@ scholars fountain pen~
 ~
 21 6 3 0 5 0 0 8388609 0 0 0
 0 0 0 0 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 scholars fountain pen~
 &+yThis pen is the same as those used by &+YHigh-Elven&+y scholars, it is quite
@@ -482,7 +482,7 @@ rod sunshine~
 ~
 3 15 3 0 5 0 262144 16385 0 0 0
 50 10 10 124 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rod sunshine~
 &+yAn elegant and ornate golden wand that seems to shine with inner
@@ -497,7 +497,7 @@ thick heavy cargo gloves~
 ~
 9 12 3 0 7 0 1 129 0 0 0
 20 0 0 5 0 0 0 0
-0 7899 100
+0 7899 100 100
 E
 thick heavy cargo gloves~
 &+yIt would certainly take good craftsmanship and very strong leather to
@@ -517,7 +517,7 @@ gold golden shield dawndale~
 ~
 37 24 3 0 12 0 0 513 0 0 0
 0 0 0 168 4 0 0 0
-30 67711 100
+30 67711 100 100
 E
 gold golden shield dawndale~
 &+yThis shield bears the royal goverment mark of the high chancellor of
@@ -536,7 +536,7 @@ signet ring dawndale~
 ~
 9 24 3 0 12 0 0 3 0 0 0
 8 0 0 3 0 0 0 0
-0 30001 100 64 0 0 0
+0 30001 100 100 64 0 0 0
 E
 signet ring dawndale~
 &+yThis gold ring has been marked with the seal of the&+Y Dawndale&+y goverment.
@@ -553,7 +553,7 @@ thick drider webbing web harp~
 ~
 32 3 3 0 7 0 0 16385 0 0 0
 187 50 0 30 0 0 0 0
-0 8911 100
+0 8911 100 100
 E
 thick drider webbing web harp~
 &+WLayers of thick webbing have been strung together to form a makeshift
@@ -572,7 +572,7 @@ chiseled naga spine~
 ~
 5 10 3 0 7 0 0 8193 64 0 0
 7 5 4 0 0 0 0 0
-0 8001 100
+0 8001 100 100
 E
 chiseled naga spine~
 &+WOnly the backbone of a &+bnaga&+W would appear as that of a humanoid at the
@@ -592,7 +592,7 @@ chunk solid electrum~
 ~
 8 23 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 chunk solid electrum~
 &+CThis is a large piece of electrum, the rarer alloy made from silver and
@@ -607,7 +607,7 @@ gate key elven gold~
 ~
 18 24 3 0 5 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 11 100
+0 11 100 100
 E
 gate key elven gold~
 &+yA small intricate key, made of solid &+Ygold&+y and etched with mystical elven
@@ -620,7 +620,7 @@ noshow rocks trigger~
 ~
 29 15 3 0 5 0 2 0 0 0 0
 270 77542 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #77542
 rocks stones~
 noshow rocks~
@@ -628,7 +628,7 @@ noshow rocks trigger~
 ~
 29 15 3 0 5 0 2 0 0 0 0
 270 77634 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 #77543
 tattoo northwind tribe dye~
 &+ca &+Ctattoo&+c of the &+Cnorthwind&+c tribe&n~
@@ -636,7 +636,7 @@ tattoo northwind tribe dye~
 ~
 9 2 3 0 5 0 524288 2097153 0 0 0
 0 0 0 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 tattoo northwind tribe dye~
 &+cThis tattoo is the symbol of the of the barbarian northwind tribe. It
@@ -651,7 +651,7 @@ captive firbolg~
 ~
 15 2 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 captive firbolg~
 &+yThis firbolg writhes on the rock in anger. His mouth has been gagged and
@@ -665,7 +665,7 @@ club mountain rock~
 ~
 5 11 3 0 5 0 4194304 8193 0 0 0
 10 4 4 0 0 0 0 0
-50 9011 100
+50 9011 100 100
 E
 club mountain rock~
 &+yThis club is quite large and heavy, rendering it useless for most all
@@ -683,7 +683,7 @@ dark altar~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 1000 5 0 1000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark altar~
 &+LThis altar appears to have been here an extremely long time. The crew
@@ -699,7 +699,7 @@ sack plunder~
 ~
 15 12 3 0 5 0 0 8388609 0 0 0
 100 5 0 100 0 0 0 0
-0 801 100
+0 801 100 100
 E
 sack plunder~
 &+yA rather plain, albiet extremely large sack made from burlap and then
@@ -712,7 +712,7 @@ lost blade astral dancer ender~
 ~
 5 1 3 0 5 0 1025 8193 0 2097155 0
 5 2 6 0 0 103 50 30
-0 42231 100
+0 42231 100 100
 E
 lost blade astral dancer ender~
 &+LThis blade glows with the unnatural power of the undead. Its power reaches beyond that of the living and into
@@ -741,7 +741,7 @@ shamanistic rune stones~
 ~
 8 11 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 81 100
+0 81 100 100
 E
 shamanistic rune stones~
 &+yThese are mystical stones that &+Cshamans&+y use to invoke magic. Unless one
@@ -756,7 +756,7 @@ coins treasure pile~
 ~
 8 24 3 0 5 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 250000 100
+0 250000 100 100
 E
 coins treasure~
 &+YThis is a fairly large pile of treasure including coins of various types,
@@ -769,7 +769,7 @@ study guide witchcraft book~
 ~
 23 29 3 0 5 0 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1222 100
+0 1222 100 100
 E
 study guide witchcraft~
 &+yThis thick book is filled with information on potions, curses, inflictions,
@@ -823,7 +823,7 @@ wrap drow chainmail mail~
 ~
 9 16 3 0 10 0 0 1025 0 38571524 0
 13 0 0 2 0 0 0 0
-0 21123 100 65540 0 0 0
+0 21123 100 100 65540 0 0 0
 A
 13 15
 #77553
@@ -833,7 +833,7 @@ mantle warchief chief~
 ~
 9 12 3 0 5 0 0 1025 0 0 655552
 9 0 0 4 1 0 0 0
-0 67711 100
+0 67711 100 100
 E
 mantle warchief chief~
 &+yThis mantle is large enough to completely envelope a gnome or goblin. It is
@@ -852,7 +852,7 @@ earring lloth~
 ~
 9 18 3 0 11 0 0 524289 0 0 0
 5 0 0 2 0 0 0 0
-0 22112 100
+0 22112 100 100
 A
 27 12
 A
@@ -864,7 +864,7 @@ leather blindfold fold blind~
 ~
 9 13 3 0 5 0 4096 131073 0 0 0
 0 0 0 2 0 0 0 0
-0 1 100
+0 1 100 100
 E
 leather blindfold fold blind~
 &+yA leather blindfold, to wrap around someones eyes and make them blind.
@@ -879,7 +879,7 @@ bucket water~
 ~
 17 40 3 0 5 0 4096 16385 0 0 0
 5 5 7 1 0 0 0 0
-0 299 100
+0 299 100 100
 E
 bucket water~
 &+yCleaning the &+bnaga&+B pool&+y is one of the duties of the patrol guards in the
@@ -895,7 +895,7 @@ clump cave monkey fur~
 ~
 8 2 3 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 clump cave monkey fur~
 &+yA fist-sized clump of fur that is scraggly and knotted enough to only
@@ -909,7 +909,7 @@ spirit helm dlalargava~
 ~
 9 1 3 0 11 0 1 17 0 0 0
 10 0 0 3 0 0 0 0
-0 54991 100 4 2 0 0
+0 54991 100 100 4 2 0 0
 A
 18 2
 A
@@ -921,7 +921,7 @@ longhollow moonstone for refugee quest~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #77560
 office key~
 &+ythe office key&n~
@@ -929,7 +929,7 @@ office key~
 ~
 18 24 3 0 5 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 office key~
 &+yThis small gold key has been etched with the markings of the &+YDawndale&+y's
@@ -942,7 +942,7 @@ golden monocle dawndale~
 ~
 9 24 3 0 11 0 0 131073 0 0 0
 8 0 0 3 0 0 0 0
-0 32211 100 36 16 0 0
+0 32211 100 100 36 16 0 0
 A
 18 3
 #77562
@@ -952,7 +952,7 @@ storm port medallion~
 ~
 9 16 3 0 5 0 0 5 0 0 0
 6 0 0 3 0 0 0 0
-0 3441 100
+0 3441 100 100
 A
 18 3
 A
@@ -964,7 +964,7 @@ backpack bp longhollow~
 ~
 15 14 3 0 9 0 0 4210689 0 0 0
 600 5 0 600 0 0 0 0
-0 23001 100
+0 23001 100 100
 #77564
 naga bone whetstone~
 &+Wa rough &+bnaga&+W bone&n~
@@ -972,7 +972,7 @@ naga bone whetstone~
 ~
 12 10 3 0 11 0 64 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 8111 100
+0 8111 100 100
 E
 naga bone whetstone~
 &+WThis bone has quite a fine-grain to it, almost like a rough sandpaper. Might be useful for something.
@@ -984,7 +984,7 @@ bolt~
 ~
 7 24 3 0 5 0 0 16385 0 0 0
 4 2 9 4 0 0 0 0
-0 1000 100
+0 1000 100 100
 #77566
 immaculately forged lens~
 &+yan &+Yimmaculately &+yforged &+Wlens&n~
@@ -992,4 +992,4 @@ immaculately forged lens~
 ~
 13 7 3 0 7 0 8 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

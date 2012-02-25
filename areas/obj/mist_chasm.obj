@@ -5,7 +5,7 @@ a &+Lgranite head&n~
 ~
 29 37 6 50 15 0 0 0 0 0 0
 46 15029 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 granite head ancient~
 &+L   A fourteen foot tall &+wgranite&+L head has been erected here.  Its stone visage
@@ -21,7 +21,7 @@ a &+Bsmall spring&n~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water small spring~
 &+B   Bubbling up through a carved hole in the floor, this spring empties into
@@ -34,7 +34,7 @@ an &+Lancient well&n~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 -1 -1 16 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 water well~
 &+L   Made from granite slabs, this well was crafted ages ago by a people that
@@ -48,7 +48,7 @@ a &+Lgranite head&n~
 ~
 12 37 0 0 11 0 0 0 0 0 0
 46 30 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 granite head~
 &+L   A monstrous &+wgranite&+L head pokes through the vine covered &+Gjungle&+L floor,
@@ -67,7 +67,7 @@ some &+Lruins&n~
 ~
 12 11 0 0 7 0 0 0 2 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ruins structure ruin~
 &+L   Stone &+wcolumns&+L poke up through the surface of the &+bwater&+L, some erect while
@@ -83,7 +83,7 @@ a pair of &+Wbone&+L razored talons&n~
 ~
 9 10 3 5 9 23 13312 129 0 93974609 0
 8 0 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 bone razored claws~
 &+L   These claws have been chopped off of a mud dweller, the bone razors that
@@ -101,7 +101,7 @@ a &+Wbone &+Lrazored skull&n~
 ~
 9 10 0 0 10 18 12288 17 0 0 0
 12 0 0 3 0 0 0 0
-2 8000 100
+2 8000 100 100
 E
 bone razored skull~
 &+L   The &+Wskull&+L of a matron &+ymud dweller&+L, this strange item looks large enough to
@@ -118,7 +118,7 @@ an &+yoak&n &+gvine&n-&+Lbar&n~
 ~
 5 6 4 0 8 9 4202496 8193 0 0 0
 10 3 6 6 0 0 0 0
-2 24000 100
+2 24000 100 100
 E
 oak vine bar vine-bar~
 &+L  This weapon is made from two smoothed &+yoaken&+L branches, linked by a strip of
@@ -135,7 +135,7 @@ a &+mviscid &+Lebon&+m potion&n~
 ~
 10 7 2 4 10 33 65536 16385 64 0 0
 50 83 35 43 0 0 0 0
-0 3333 100
+0 3333 100 100
 E
 ebon dusty potion vial~
 &+L   This ancient vial is made of a peculiar &+mclay&+L, and contains a viscid black
@@ -148,7 +148,7 @@ some &+Ll&+gi&+Gz&+ga&+Lrd&+gh&+Gi&+gd&+Le&+L robes&n~
 ~
 9 47 3 8 12 33 1122304 1033 0 4163108938 0
 11 0 0 3 0 0 0 0
-4 18000 100
+4 18000 100 100
 E
 lizard hide robes lizardhide~
 &+L   Made from the skins of the immense &+Gforest &+Lsalamander, these robes are
@@ -165,7 +165,7 @@ a &+Lburial&+y casket&n~
 ~
 15 38 4 0 11 33 0 1 0 0 0
 250 5 15024 0 0 0 0 0
-333 181000 100
+333 181000 100 100
 E
 burial casket coffin~
 &+L   This casket is carved from fine &+ymaple&+L, and plated in a thin layer of &+Ygold&+L.
@@ -179,7 +179,7 @@ a &+Wskeletal &+Lcorpse&n~
 ~
 12 2 3 30 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-25 0 100
+25 0 100 100
 E
 skeletal corpse skeleton~
 &+L   Stiff and dried &+rligaments&+L keep these &+Wbones&+L connected.&n
@@ -191,7 +191,7 @@ a &+Llive &+Gsnake&+L necklace&n~
 ~
 9 2 3 2 15 21 1257472 5 0 4171595850 0
 9 0 0 5 0 0 0 0
-1 24000 100
+1 24000 100 100
 E
 live snake necklace~
 &+L   This snake has been forced to feast upon its own tail, either by magics or
@@ -209,7 +209,7 @@ necklace drow testicles leather~
 ~
 9 2 1 1 10 18 8192 5 64 0 0
 8 0 0 3 0 0 0 0
-0 21000 100
+0 21000 100 100
 E
 necklace drow testicles leather~
 &+L   This necklace is comprised of seven &+mdrow&+L testicles connected by a &+yleather
@@ -227,7 +227,7 @@ a &+Lspider &+Rglobule&n~
 ~
 17 2 1 10 7 0 5120 16385 0 8515584 0
 1 1 27 5 0 0 0 0
-1 18000 100
+1 18000 100 100
 E
 poison spider globule sack~
 &+L   This organic sack is made of a transparent fleshlike substance, and
@@ -240,7 +240,7 @@ bone hilted sabre~
 ~
 5 22 2 0 14 33 83964177 8193 65 0 0
 9 1 5 3 0 0 0 0
-2 33000 100 98304 16 0 0
+2 33000 100 100 98304 16 0 0
 E
 sabre hilted bone~
 &+L   This peculiar weapon has a wide sweeping &+Cblade&+L that curves forward at a
@@ -258,7 +258,7 @@ flowers~
 ~
 29 43 3 0 12 81 2 0 0 0 0
 320 15004 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flowers~
    The forest floor is covered in tropical flowers and vines.  The petals of
@@ -272,7 +272,7 @@ small scale salamander jade~
 ~
 8 47 3 0 9 33 12288 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 scale~
 &+L   This small &+gscale &+Lseems like it came from some sort of salamander.&N
@@ -284,7 +284,7 @@ large scale salamander jade~
 ~
 8 47 3 0 10 44 12288 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 scale~
 &+L   This large &+Gscale &+Lseems like it came from some sort of salamander.&N
@@ -296,7 +296,7 @@ scale shield salamander~
 ~
 37 47 3 0 12 81 8192 8389121 0 4167307210 0
 1 2 4 176 0 0 0 0
-24 9000 100
+24 9000 100 100
 E
 shield scale~
 &+L   This shield has been well crafted from hard salamander &+Gs&+gc&+Ga&+gl&+Ge&+gs&+L.  The object&N
@@ -314,7 +314,7 @@ scale mask salamander~
 ~
 9 47 3 0 14 81 8192 262145 0 0 0
 5 0 0 5 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 mask scale~
 &+L   This mask has been well crafted from hard salamander &+Gs&+gc&+Ga&+gl&+Ge&+gs&+L.  The object&N
@@ -332,7 +332,7 @@ scale boots salamander~
 ~
 9 47 3 0 14 81 8192 65 0 0 0
 8 0 0 5 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 boots scale~
 &+L   These boots have been well crafted from hard salamander &+Gs&+gc&+Ga&+gl&+Ge&+gs&+L.  The object&N
@@ -350,7 +350,7 @@ stone mace ancient~
 ~
 5 11 3 0 9 9 0 8193 0 0 0
 10 1 8 6 0 0 0 0
-2 35000 100
+2 35000 100 100
 E
 stone mace~
 &+L   This ancient rigid mace shows the rigors of time.  Still the &+wstone &+Lis of a&N
@@ -367,7 +367,7 @@ flowers~
 ~
 29 43 3 0 12 81 2 0 0 0 0
 320 15087 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flowers~
    The forest floor is covered in tropical flowers and vines.  The petals of
@@ -381,4 +381,4 @@ key bone skeletal~
 ~
 18 15 3 0 5 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100

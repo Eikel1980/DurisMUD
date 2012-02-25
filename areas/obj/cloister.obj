@@ -5,7 +5,7 @@ small tablet adamantite~
 ~
 8 19 3 0 7 0 8392705 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 9555 100
+1 9555 100 100
 E
 small tablet adamantite~
 
@@ -29,7 +29,7 @@ formally hand-written note~
 ~
 13 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 formally hand-written note~
 &+W   Dear Father,
@@ -49,7 +49,7 @@ bloody head bakarakh~
 ~
 13 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #67103
 vial poison~
 &+Ya vial of poison&N~
@@ -57,7 +57,7 @@ vial poison~
 ~
 17 15 3 0 7 0 4097 16385 0 0 0
 4 4 27 1101 0 0 0 0
-0 0 100
+0 0 100 100
 E
 vial poison~
    &+YThis vial has a thick yellow fluid inside it.  It hasn't been used
@@ -73,7 +73,7 @@ glowing jade earring~
 ~
 9 15 3 0 7 0 1 524289 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100 73728 0 0 0
+0 0 100 100 73728 0 0 0
 E
 glowing jade earring~
 &+g   Thi&+Gs be&+gauti&+Gful ja&+gde &+Gear&+gri&+Gng has th&+ge insc&+Gripti&+gon of Fat&+Gher Tel.&+g  Th&+Ge ja&+gde
@@ -91,7 +91,7 @@ khildarak~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 17 67140 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #67106
 long adamantite spear~
 &+La long adamantite spear&N~
@@ -99,7 +99,7 @@ long adamantite spear~
 ~
 5 19 2 0 9 0 4195328 8193 0 85553177 0
 8 4 4 11 0 0 0 0
-25 24000 70
+25 24000 70 100
 A
 19 2
 #67107
@@ -109,7 +109,7 @@ black key~
 ~
 18 15 3 0 7 0 8916992 16385 0 0 0
 0 40 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #67108
 bucket~
 &Nsomething~
@@ -117,7 +117,7 @@ bucket~
 ~
 15 15 3 0 7 0 2 0 0 0 0
 20 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bucket~
    &+LThis small, &+ywooden&+L bucket is lying next to the desk of
@@ -130,7 +130,7 @@ clear vial _id_~
 ~
 10 15 3 0 7 0 4097 16385 0 0 0
 50 15 15 66 0 0 0 0
-0 0 100
+0 0 100 100
 E
 _id_name_~
 vial cure
@@ -150,7 +150,7 @@ green potion _id_~
 ~
 10 15 3 0 7 0 4096 16385 64 0 0
 51 73 73 73 0 0 0 0
-0 0 100
+0 0 100 100
 E
 _id_name_~
 potion dexterity
@@ -170,7 +170,7 @@ rib bone~
 ~
 18 15 3 0 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rib bone~
    &+WOne of Khildarak's preserved rib bones.
@@ -182,7 +182,7 @@ thin key~
 ~
 18 15 3 0 7 0 8392705 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #67113
 ring elder~
 &+Lthe ring of &+ra duergar elder&N~
@@ -190,7 +190,7 @@ ring elder~
 ~
 9 15 3 0 7 0 4097 3 0 0 0
 4 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ring elder~
    &+LThis ring is made from beautiful and priceless &+rcrimson coral.&+L It
@@ -212,7 +212,7 @@ statue~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 67152 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
    Several small statues of duergar warlord's are carved into the walls.
@@ -226,7 +226,7 @@ boulder~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 67164 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 boulder~
    &+LA very large boulder rests on the western wall.
@@ -238,7 +238,7 @@ black dragon egg~
 ~
 8 15 3 0 7 0 69633 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100 0 4096 0 0
+0 0 100 100 0 4096 0 0
 E
 black dragon egg~
    &+LThis egg has a very hard, black shell.  It is roughly the size and
@@ -256,7 +256,7 @@ bone key~
 ~
 18 15 3 0 7 0 8912896 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #67118
 podium~
 &+La podium&N~
@@ -264,7 +264,7 @@ podium~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 50 29 67117 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 podium~
    &+LThis large podium stands about three and a half feet tall, just barely
@@ -289,7 +289,7 @@ slender crimson dagger~
 ~
 5 15 3 0 7 0 4096 8193 66 0 0
 2 2 3 11 0 0 0 0
-4 0 100
+4 0 100 100
 A
 18 3
 A
@@ -301,7 +301,7 @@ tapestry~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 270 67149 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
    &+yA tapestry depicting Lord Khildarak, swinging his war hammer,
@@ -314,7 +314,7 @@ stone case~
 ~
 15 15 3 0 7 0 1 0 0 0 0
 50 29 67111 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone case~
    &+WThis large stone case rests in the center of the altar in this
@@ -331,7 +331,7 @@ battle helmet khildarak~
 ~
 9 15 3 0 7 0 1024 17 64 96071707 0
 20 0 0 0 0 0 0 0
-0 0 100 536870912 12480 0 0
+0 0 100 100 536870912 12480 0 0
 E
 battle helmet khildarak~
    &+LThe mighty helmet of &+rKhildarak&+L.  This faceless helmet straps
@@ -352,7 +352,7 @@ small candle~
 ~
 3 15 3 0 7 0 262145 16385 64 0 0
 40 3 3 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small candle~
    This small candle is made of a pale white wax that is almost invisible
@@ -371,7 +371,7 @@ black fighting gown~
 ~
 9 3 3 0 7 0 0 9 0 0 0
 9 0 0 0 0 0 0 0
--15 9768 100
+-15 9768 100 100
 E
 black fighting gown~
    &+LThis black gown fits very loosely, and very comfortably.  It is in
@@ -389,7 +389,7 @@ bracers defense~
 ~
 9 15 3 0 7 0 4096 257 64 4165209604 0
 15 0 0 0 0 0 0 0
--15 6598 100
+-15 6598 100 100
 E
 bracers defense~
    &+LThese &+mmagical&+L bracers are placed on the arms.  Each one has
@@ -407,7 +407,7 @@ black boots _id_~
 ~
 9 15 3 0 7 0 5120 65 64 87572571 0
 7 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 black boots~
    &+LThese black boots are very light and extremely flexible.  They also
@@ -438,7 +438,7 @@ mystical blue sash~
 ~
 9 15 3 0 7 0 4097 2049 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mystical blue sash~
    &+LThis &+bblue&+L sash is made of a silky dark blue material, and is very
@@ -458,7 +458,7 @@ large stone oven~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 300 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large stone oven~
    &+LThis large stone oven is very hot at the moment, and almost glows with
@@ -473,7 +473,7 @@ holy collar priests~
 ~
 9 3 3 0 5 0 0 5 0 0 0
 5 0 0 2 0 0 0 0
-0 3991 100 0 0 0 16777216
+0 3991 100 100 0 0 0 16777216
 A
 13 10
 #67130
@@ -483,7 +483,7 @@ black leather belt crimson coral buckle~
 ~
 9 13 3 0 9 0 0 2049 0 0 0
 5 0 0 0 0 0 0 0
-1 11228 100 32 0 0 0
+1 11228 100 100 32 0 0 0
 E
 black leather belt crimson coral buckle~
    &+LThis fine black leather belt is double-stitched and polished to an admirable

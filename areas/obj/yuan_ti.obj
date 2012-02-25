@@ -5,7 +5,7 @@ idol serpentine~
 ~
 15 11 3 0 7 0 1 0 0 0 0
 100 0 0 100 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 idol serpentine~
 The idol rises up from a snakes body to flow into the torso of a snarling
@@ -21,7 +21,7 @@ khopesh sword~
 ~
 5 16 3 10 7 0 0 8193 0 0 0
 5 2 3 3 0 0 0 0
-20 9000 100
+20 9000 100 100
 E
 khopesh sword~
 This massive sword is heavy by any standards, the thick blade has a number
@@ -39,7 +39,7 @@ belt snakeskin~
 ~
 9 12 3 3 9 0 1061888 2049 0 37883812 0
 8 10 0 3 0 0 0 0
-1 35000 100
+1 35000 100 100
 E
 belt snakeskin~
 This fine belt has been made from the specially treated skin of a red
@@ -58,7 +58,7 @@ earring fang~
 ~
 9 10 1 1 7 0 8192 524289 0 0 0
 5 14 0 3 0 0 0 0
-0 5000 100 0 4096 0 0
+0 5000 100 100 0 4096 0 0
 E
 earring fang~
 This hollow fang clearly came from some immense snake, its size alone
@@ -78,7 +78,7 @@ bench~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 500 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bench~
 This stone bench has been carefully constructed from diamond-shaped green
@@ -94,7 +94,7 @@ a serpent demon idol~
 ~
 13 11 0 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 idol demon serpent~
    This horrible figure shows a reptilian face, full of evil and hatred,
@@ -112,7 +112,7 @@ bench~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 50 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bench~
 This plain stone bench has a storage area of some sort in the seat,
@@ -126,7 +126,7 @@ bench~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bench~
    The wood of this bench is light and frail, only the thickness of the
@@ -141,7 +141,7 @@ collar snakeskin~
 ~
 9 12 2 0 8 0 8192 5 0 0 0
 8 2 1 5 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 collar snakeskin~
    Though collars made of snakeskin are quite popular among the Yuan-ti,
@@ -161,7 +161,7 @@ collar snakebone~
 ~
 9 10 0 0 8 0 0 5 0 0 0
 7 2 1 3 0 0 0 0
-2 20000 100
+2 20000 100 100
 E
 collar snakebone~
   The bones from the spinal column of a large snake have been melded
@@ -180,7 +180,7 @@ club granite~
 ~
 5 37 3 8 8 0 4195328 8193 0 119144889 542912
 10 7 3 6 0 0 0 0
-28 15000 100
+28 15000 100 100
 E
 club granite~
    This monstrous weapon was clearly designed for only those of almost
@@ -199,7 +199,7 @@ collar snakeskin~
 ~
 9 12 3 0 7 0 131072 5 0 4198895524 0
 10 2 1 5 1 0 0 0
-1 15000 100
+1 15000 100 100
 E
 collar snakeskin~
    This strange red snakeskin has a strength and power to it that can't be
@@ -219,7 +219,7 @@ katana sword~
 ~
 5 22 3 10 13 0 262144 8193 0 4198895524 0
 5 2 6 3 0 0 0 0
-20 20000 100
+20 20000 100 100
 E
 katana sword~
    This fine blade bears the mark of an elven blacksmith on its blade ,
@@ -241,7 +241,7 @@ knife bone~
 ~
 5 10 2 3 7 0 0 8193 0 4194697632 0
 2 2 3 11 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 knife bone~
    Made from some mysterious bone, this knife has a wicked edge full of
@@ -261,7 +261,7 @@ leg dragon~
 ~
 5 2 4 8 7 0 1024 8193 0 33685920 0
 10 2 3 6 0 0 0 0
-15 30000 100 0 4096 0 0
+15 30000 100 100 0 4096 0 0
 E
 leg dragon~
    This severed leg comes from a small green dragon, one so young that the
@@ -280,7 +280,7 @@ pendant silver serpent~
 ~
 9 22 3 2 7 0 1024 5 65 33685920 0
 7 2 1 3 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 pendant silver serpent~
    Incredible detailing make this pendant quite noticeable, and attractive.
@@ -299,7 +299,7 @@ flask potion~
 ~
 10 7 2 4 7 0 266240 16385 0 0 0
 50 2 28 -1 0 0 0 0
-1 45000 100
+1 45000 100 100
 E
 flask potion~
    The thick fluid inside the flask swirls back and forth, glowing with a
@@ -312,7 +312,7 @@ bench~
 ~
 15 11 3 0 7 0 0 0 0 0 0
 50 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bench~
    Huge quantities of expensive bloodstone have gone into the creation of
@@ -328,7 +328,7 @@ a snake idol~
 ~
 13 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 idol snake~
    This simple idol has been made of dull gray granite.  It depicts a long
@@ -345,7 +345,7 @@ idol statue~
 ~
 15 11 6 50 7 0 0 0 0 0 0
 80 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 idol statue~
    Made of a beautiful violet stone from some mysterious source, this idol
@@ -361,7 +361,7 @@ skull~
 ~
 13 10 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 skull~
    Someone has left this rotting skull as an offering to some strange god.
@@ -375,7 +375,7 @@ orchid flower~
 ~
 13 42 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orchid flower~
    This small, but beautiful, flower is one of the many epiphytic flowers
@@ -390,7 +390,7 @@ table~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 500 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table~
    This table has been made from thick and sturdy wood, and has been quite
@@ -407,7 +407,7 @@ corpse~
 ~
 13 2 3 30 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse~
    The rigor of death makes this worm-laden corpse even foul and
@@ -424,7 +424,7 @@ vial water~
 ~
 17 40 1 2 7 0 0 16385 0 0 0
 15 15 28 0 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 vial water~
    &+GThis greenish water bubbles with effervescence.  It has a musty
@@ -437,7 +437,7 @@ vial~
 ~
 17 40 1 2 7 0 0 16385 0 0 0
 15 15 27 10 0 0 0 0
-1 12000 100
+1 12000 100 100
 E
 vial~
    &+GThe liquid seems to bubble and hiss on its own.  It has a bitter odor
@@ -450,7 +450,7 @@ band snakeskin~
 ~
 9 12 1 1 7 0 3159040 3 64 37883812 0
 8 1 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 band snakeskin~
    The skin from a small snake has been folded over several times to
@@ -470,7 +470,7 @@ dagger~
 ~
 5 18 2 3 12 10 16790960 8193 64 8515584 0
 2 2 3 11 0 0 0 0
-1 45000 100 2048 0 0 0
+1 45000 100 100 2048 0 0 0
 E
 dagger~
    Some sort of strange, powerful, magical field has been used to hold
@@ -488,7 +488,7 @@ totem snake figurine~
 ~
 34 32 2 2 7 0 70656 16385 64 256 0
 51 0 0 0 0 0 0 0
-1 75000 100 32768 0 0 0
+1 75000 100 100 32768 0 0 0
 E
 totem snake figurine~
    This mysterious and magical figurine has been carefully carved from a
@@ -506,7 +506,7 @@ hood cobra~
 ~
 9 12 0 0 7 0 143360 17 64 0 0
 7 4 1 3 0 0 0 0
-3 60000 100 32768 0 0 0
+3 60000 100 100 32768 0 0 0
 E
 hood cobra~
    This cobra-skin almost has a life of its own.  The size alone is
@@ -525,7 +525,7 @@ altar~
 ~
 13 6 0 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 altar~
    This bloody mess might, or might not be a beautiful altar, it is
@@ -541,7 +541,7 @@ mural tile~
 ~
 13 9 0 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mural tile~
    Made from tiles of varying shades of green, this massive mural covers
@@ -559,7 +559,7 @@ chest ebonwood~
 ~
 15 6 5 50 7 0 0 0 64 0 0
 300 29 80533 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest ebonwood~
    The gold trim on this finely made chest shows an elegance that is just
@@ -578,7 +578,7 @@ key ebonwood~
 ~
 18 16 1 1 7 0 8400896 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 key ebonwood~
    The key's beautiful carving and gold trim almost cover the fact that
@@ -592,7 +592,7 @@ painting~
 ~
 8 12 0 0 13 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-30 170000 100
+30 170000 100 100
 E
 painting~
    This painting shows a huge three-masted ship being tossed about on a
@@ -609,7 +609,7 @@ painting~
 ~
 8 12 0 0 13 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-45 200000 100
+45 200000 100 100
 E
 painting~
    This simple painting has an elegance and beauty that marks it as
@@ -626,7 +626,7 @@ coins~
 ~
 20 24 3 0 7 0 0 16385 0 0 0
 0 0 1500 84 0 0 0 0
-5 1 100
+5 1 100 100
 E
 coins~
    &+YThese coins sure do look valuable!&N
@@ -638,7 +638,7 @@ belt feathers~
 ~
 9 50 3 3 11 0 12288 2049 64 0 0
 7 11 24 3 0 0 0 0
-1 50000 100 134217728 0 0 0
+1 50000 100 100 134217728 0 0 0
 E
 belt feathers~
    This beautiful belt has been made from the brightly colored birds of a
@@ -659,7 +659,7 @@ scepter~
 ~
 5 24 3 0 8 20 1024 8193 64 102908346 0
 10 4 3 6 0 0 0 0
-20 35000 100
+20 35000 100 100
 E
 scepter~
    This scepter curves slightly along its length, ending with a fanged
@@ -679,7 +679,7 @@ robe~
 ~
 9 12 3 8 11 0 8192 1025 64 4248567899 0
 6 9 1 3 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 robe~
    Careful inspection reveals that this strange robe has been made
@@ -698,7 +698,7 @@ coins gold silver~
 ~
 20 22 1 0 7 0 0 16385 0 0 0
 0 1000 500 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 coins gold silver~
    The coins have been spread out on the floor like offerings or tribute.
@@ -710,7 +710,7 @@ ruby~
 ~
 8 31 0 0 14 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 300000 100
+3 300000 100 100
 E
 ruby~
    This tiny ruby has been carefully cut, all of the many facets are
@@ -725,7 +725,7 @@ sapphire~
 ~
 8 33 0 0 13 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 200000 100
+3 200000 100 100
 E
 sapphire~
    This beautiful blue stone has been cut so well that it shimmers when
@@ -740,7 +740,7 @@ sapphire~
 ~
 8 33 0 0 13 0 4096 540673 0 0 0
 0 0 0 0 0 0 0 0
-3 100000 100
+3 100000 100 100
 E
 sapphire~
    This finely cut stone has been wrapped in a thin net of solid gold so
@@ -758,7 +758,7 @@ key serpent~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key serpent~
    This sturdy an intricate key has certainly been made for a complex
@@ -773,7 +773,7 @@ rug~
 ~
 8 12 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-150 25 100
+150 25 100 100
 E
 rug~
    Thick and heavy to begin with, this rug has the added weight of wet
@@ -788,7 +788,7 @@ brazier~
 ~
 13 16 0 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 brazier~
    The large flat surface has been coated with a number of small leaves
@@ -806,7 +806,7 @@ statue~
 ~
 8 34 6 50 7 0 294912 16385 0 0 0
 0 0 0 0 0 0 0 0
-350 80000 100
+350 80000 100 100
 E
 statue~
    Carved from a massive single piece of ivory, this fine statue portrays
@@ -823,7 +823,7 @@ chest~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 200 13 0 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
    Once an incredibly beautiful piece, this chest is now of no protection
@@ -839,7 +839,7 @@ a iron banded chest~
 ~
 15 16 5 50 7 0 0 0 0 0 0
 400 13 0 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
    This heavy chest is clearly some sort of plunder, it has been brutally
@@ -855,7 +855,7 @@ chest~
 ~
 15 16 5 50 7 0 0 0 0 0 0
 500 31 80551 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest~
    This iron chest is where the chief priest stores his most important
@@ -869,7 +869,7 @@ key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 key~
    This heavy iron key has been shaped into the form of a serpent, but the
@@ -883,7 +883,7 @@ Some &+Ygold&N and &+csilver&N coins have been piled here.&N~
 ~
 20 22 3 0 7 0 0 16385 0 0 0
 0 876 1000 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 coins gold silver~
    &+CThis shiny pile of coins looks quite valuable!&N
@@ -895,7 +895,7 @@ bar platinum~
 ~
 8 25 4 0 11 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 100000 100
+10 100000 100 100
 E
 bar platinum~
    The bar bears a strange marking in its upper surface.  The marking
@@ -911,7 +911,7 @@ mask snakeskin~
 ~
 9 12 3 3 14 20 3159040 262145 0 8515584 0
 7 13 1 3 0 0 0 0
-2 65000 100 4 16 0 0
+2 65000 100 100 4 16 0 0
 E
 mask snakeskin~
    Made from a collection of different dark green snakeskins, this mask
@@ -932,7 +932,7 @@ Some &+Ygold&N and &+Wplatinum&N coins have been piled here.~
 ~
 20 24 4 80 7 0 0 16385 0 0 0
 0 0 1046 50 0 0 0 0
-80 1 100
+80 1 100 100
 E
 coins gold platinum~
    &+YA nice little collection of coins!&N
@@ -944,7 +944,7 @@ hammer drowcrusher~
 ~
 5 19 3 8 13 0 6296576 8193 64 87572571 0
 4 2 4 6 0 0 0 0
-15 85000 100
+15 85000 100 100
 E
 hammer drowcrusher~
    Its size and weight certainly don't seem to match each other.  It looks
@@ -965,7 +965,7 @@ cloak elfskin~
 ~
 9 12 3 8 7 0 12288 1025 0 0 0
 12 9 1 3 0 0 0 0
-3 25000 100
+3 25000 100 100
 E
 cloak elfskin~
    The thin, pale skins used to create this foul cloak could only have
@@ -983,7 +983,7 @@ scepter~
 ~
 5 19 3 0 7 0 0 8193 64 0 0
 10 2 3 6 0 0 0 0
-25 20000 100 32768 0 0 0
+25 20000 100 100 32768 0 0 0
 E
 scepter~
    This large golden scepter is covered with strange serpentine sigils,
@@ -1002,7 +1002,7 @@ headband fangs~
 ~
 9 10 3 0 7 0 45056 17 64 0 0
 10 4 1 5 0 0 0 0
-1 5000 100 32768 12416 0 0
+1 5000 100 100 32768 12416 0 0
 E
 headband~
    A number of well-preserved snake fangs have been woven together in a
@@ -1020,7 +1020,7 @@ key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key~
    This plain wooden key is splintered and worn from heavy use.  It is
@@ -1034,7 +1034,7 @@ amulet dragon~
 ~
 18 15 1 1 7 0 8486912 16389 0 0 0
 0 0 0 0 0 0 0 0
-2 1 100
+2 1 100 100
 E
 amulet dragon~
    Despite its intricate workmanship, it is clear this dragon amulet is
@@ -1052,7 +1052,7 @@ mosaic yellow~
 ~
 13 3 0 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 mosaic yellow~
    The tiles on the floor have been shaped into a glyph of some sort,
@@ -1066,7 +1066,7 @@ a large, rough stone~
 ~
 13 11 0 0 7 0 1 0 64 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 stone~
    Humming with an inner, almost sentient, malevolence, the stone takes up
@@ -1081,7 +1081,7 @@ shield granite~
 ~
 37 37 3 15 7 0 163840 513 64 4173708804 0
 2 1 4 186 5 0 0 0
-20 20000 100 536870912 0 0 0
+20 20000 100 100 536870912 0 0 0
 E
 shield granite~
    A huge piece of granite has been carved into a sturdy, but heavy,
@@ -1101,7 +1101,7 @@ tapestry~
 ~
 8 3 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-600 45000 100
+600 45000 100 100
 E
 tapestry~
    This once beautiful tapestry has been left to basically rot.  The
@@ -1117,7 +1117,7 @@ silk bolt~
 ~
 8 3 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-30 15000 100
+30 15000 100 100
 E
 silk bolt~
    Some of the finest silk one can find.  It is clear that it has been
@@ -1131,7 +1131,7 @@ mace~
 ~
 5 16 3 8 7 0 1024 8193 64 37883812 0
 6 2 3 6 0 0 0 0
-20 55000 100
+20 55000 100 100
 E
 mace~
    Rubys, sapphires and other gems stud the head, and even the shaft of
@@ -1151,7 +1151,7 @@ amulet wind fire~
 ~
 9 19 3 2 14 25 12320 5 64 0 0
 8 2 2 3 0 0 0 0
-1 100000 100 268435456 192 0 0
+1 100000 100 100 268435456 192 0 0
 E
 amulet~
    There is nothing ordinary about this amulet, the magic that hums within
@@ -1171,7 +1171,7 @@ plate platemail armor~
 ~
 9 19 3 20 13 0 1024 9 64 87572507 256
 35 3 1 3 0 0 0 0
-40 100000 100 536870912 64 0 0
+40 100000 100 100 536870912 64 0 0
 E
 plate platemail armor~
    This heavy armor has been treated with powerful magic in a vain effort
@@ -1192,7 +1192,7 @@ blood~
 ~
 13 2 1 0 7 0 8396800 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 blood~
    This is the thick, foul blood of the Yuan-ti god Skrentherlog.  Though
@@ -1205,7 +1205,7 @@ coins pile~
 ~
 20 25 5 30 7 0 0 16385 0 0 0
 0 0 0 1500 0 0 0 0
-50 1 100
+50 1 100 100
 E
 coins pile~
    These coins have clearly been piled here for many years, some of the
@@ -1218,7 +1218,7 @@ scimitar~
 ~
 5 19 3 10 7 0 33793 8193 64 87572571 0
 9 2 5 3 0 0 0 0
-20 100000 100 16 0 0 0
+20 100000 100 100 16 0 0 0
 E
 scimitar~
    Elven runes line the curving, silvery blade.  Something about the sword
@@ -1235,7 +1235,7 @@ amulet silvery~
 ~
 9 22 3 2 7 0 1025 5 65 37883812 0
 8 2 0 3 0 0 0 0
-0 35000 100
+0 35000 100 100
 E
 amulet~
    An abstract design has been engraved into this magical, silvery metal.
@@ -1254,7 +1254,7 @@ boots ether~
 ~
 9 1 3 8 14 0 13312 65 64 46305188 0
 10 6 1 3 0 0 0 0
-0 30000 100
+0 30000 100 100
 E
 boots~
    Only the gods, or some power near to the gods could have fashioned
@@ -1273,7 +1273,7 @@ leggings poisonous~
 ~
 9 12 3 8 14 0 9216 33 64 96071707 0
 10 5 1 3 0 0 0 0
-1 25000 100 0 8192 0 0
+1 25000 100 100 0 8192 0 0
 E
 leggings~
    These light and airy leggings have been created out of poisonous gas by
@@ -1291,7 +1291,7 @@ sleeves poisonous~
 ~
 9 12 3 8 14 0 9216 257 64 96071707 0
 8 8 1 3 0 0 0 0
-1 25000 100 32 8192 0 0
+1 25000 100 100 32 8192 0 0
 E
 sleeves~
    These weightless sleeves have been made of poisonous gas, held together
@@ -1310,7 +1310,7 @@ wand kinked~
 ~
 3 6 2 4 7 0 73728 16385 0 0 0
 59 3 3 107 0 0 0 0
-1 35000 100
+1 35000 100 100
 E
 wand kinked~
    Along the kinked wand are the words, "For when all else fails."  It is
@@ -1323,7 +1323,7 @@ staff stone~
 ~
 4 11 3 10 7 0 0 16385 64 0 0
 60 5 5 111 0 0 0 0
-65 25000 100
+65 25000 100 100
 E
 staff stone~
    There are no markings on the heavy stone staff to determine what it
@@ -1336,7 +1336,7 @@ hammer squelcher~
 ~
 5 24 3 8 14 0 13313 8193 64 87572507 0
 4 2 5 6 0 0 0 0
-15 100000 100 0 12 0 0
+15 100000 100 100 0 12 0 0
 E
 hammer squelcher~
    The heavy gold has been alloyed with some magical metal to make it hard
@@ -1357,7 +1357,7 @@ a sign made from skulls~
 ~
 13 13 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 sign skull skulls~
 Individual words have been carved into each separate skull, and the skulls
@@ -1375,4 +1375,4 @@ key bone~
 ~
 18 10 3 0 7 0 8392712 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100

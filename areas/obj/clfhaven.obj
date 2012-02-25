@@ -5,7 +5,7 @@ A strong looking &+Gvine&n hangs here~
 ~
 25 43 3 0 7 0 0 0 0 0 0
 21511 65 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 strong vine~
      This strong &+Gvine&n looks as though it could carry a large amount of
@@ -19,7 +19,7 @@ a &+ynest&n~
 ~
 13 15 3 0 7 0 1024 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 nest~
 &n   This &+ynest&n has been made from a pile of fallen &+yleaves&n by a family
@@ -35,7 +35,7 @@ a &+Lstone dais&n~
 ~
 13 15 3 0 7 0 1024 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone dais~
 &n   This ancient &+Lstone dais&n has probably sat here unused for ages, yet it
@@ -51,7 +51,7 @@ a &+Lstatue&n~
 ~
 13 15 3 0 7 0 1024 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue~
 &n   This statue of a &+gforest T&+ro&+gr&n sits here before the stone dais in
@@ -69,7 +69,7 @@ crystal clear spring~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 -1 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21505
 sign wooden~
 &+Ga wooden sign&n~
@@ -77,7 +77,7 @@ sign wooden~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wooden~
 &n  ---------------------------------------------------
@@ -99,7 +99,7 @@ A &+glifting &+Lplatform&n ferries supplies up and down.~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 21661 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 lifting platform~
 &n   This &+yloading &+Lplatform&n looks very sturdy, and is very large.  Even
@@ -114,7 +114,7 @@ a &+rwarning sign&n~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign warning~
 &n             &+RWARNING!  &+rTurn back now!
@@ -130,7 +130,7 @@ junk~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 junk~
 &n   Most of it seems to be... junk.  There is something interesting here,
@@ -144,7 +144,7 @@ The &+rcorpse&n of a &+yragged &+CHuman&n lies forgotten.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse human~
 &n   This &+CHuman&n lies face down on the side of the path, a hideous claw
@@ -161,7 +161,7 @@ bottle spirits~
 ~
 17 7 2 1 4 0 1024 16385 64 8515584 0
 20 12 27 3 0 0 0 0
-1 0 100
+1 0 100 100
 #21511
 dead hopper~
 &+Wa dead hopper&n~
@@ -169,7 +169,7 @@ A strangled &+Whopper&n has been &+rimpaled&n on a stake here.~
 ~
 13 15 3 0 7 0 1024 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dead hopper~
 &n  Obviously set here as some kind of warning, or ward, this poor fluffy
@@ -184,7 +184,7 @@ A &+rsevered&n &+Ginsect leg&n lies here leaking &+Gooze&n.~
 ~
 19 15 3 0 7 0 1024 0 0 0 0
 10 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 severed insect leg~
 &n   This &+rsevered&n limb looks roughly the size of a &+Chumans&n leg, only it
@@ -197,7 +197,7 @@ a &+yweathered sign&n~
 ~
 13 15 3 0 7 0 1024 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+y*********************************
@@ -215,7 +215,7 @@ pool~
 ~
 25 40 3 0 7 0 0 0 0 0 0
 21623 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21515
 wall malevolent undergrowth~
 &+Lma&+rl&+Levo&+rl&+Lent&n &+gundergrowth&n~
@@ -223,7 +223,7 @@ A wall of &+Lma&+rl&+Levo&+rl&+Lent &+gundergrowth&n.~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 21645 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wall malevolent undergrowth~
 &n   It looks as though a person could enter the undergrowth, and pass beyond.
@@ -235,7 +235,7 @@ A wall of &+Lma&+rl&+Levo&+rl&+Lent&n &+gundergrowth&n.~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 21646 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wall malevolent undergrowth~
 &n   It looks like a person could enter the &+gundergrowth&n, and pass through.
@@ -247,7 +247,7 @@ chute~
 ~
 25 15 3 0 7 0 98304 0 0 0 0
 21559 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21518
 brass longsword sword~
 &+ya brass longsword&n~
@@ -255,7 +255,7 @@ brass longsword sword~
 ~
 5 17 3 1 5 0 0 8193 0 0 0
 5 1 10 3 0 0 0 0
-4 3251 100
+4 3251 100 100
 A
 18 1
 #21519
@@ -265,7 +265,7 @@ archers longbow~
 ~
 6 5 3 2 10 0 0 8193 0 0 0
 70 60 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 1
 A
@@ -277,7 +277,7 @@ steel rapier~
 ~
 5 16 3 1 11 0 0 8193 0 0 0
 9 1 7 11 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 2
 A
@@ -289,7 +289,7 @@ steel hoop earring~
 ~
 11 15 3 0 7 0 0 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 20 -2
 A
@@ -301,7 +301,7 @@ masters rapier master~
 ~
 5 18 2 2 14 0 0 8193 64 0 0
 9 3 5 11 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 4
 A
@@ -313,7 +313,7 @@ smooth branch prime~
 ~
 3 15 3 0 7 0 1025 16385 0 46305188 0
 30 3 3 386 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 15
 A
@@ -325,7 +325,7 @@ belt leather pouch~
 ~
 15 14 2 1 10 0 0 8388609 64 0 0
 100 1 0 100 0 0 0 0
-1 45 100
+1 45 100 100
 #21525
 scroll leaf warding~
 &+Ca scroll of&+W warding&n~
@@ -333,7 +333,7 @@ scroll leaf warding~
 ~
 2 30 2 1 7 0 0 16385 64 0 0
 25 192 141 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #21526
 potion warding~
 &+Ca potion of&+W warding&n~
@@ -341,7 +341,7 @@ potion warding~
 ~
 10 7 3 2 6 0 0 16385 64 0 0
 20 188 -1 -1 0 0 0 0
-2 0 100
+2 0 100 100
 #21527
 huge wooden mallet~
 &+ga huge&+y wooden&+g mallet&n~
@@ -349,7 +349,7 @@ huge wooden mallet~
 ~
 5 6 5 10 6 0 4195328 8193 0 85458969 0
 4 2 10 7 0 0 0 0
-10 0 100
+10 0 100 100
 A
 18 -4
 A
@@ -361,7 +361,7 @@ mask face half-rotted rotted bark~
 ~
 9 5 3 2 7 0 0 262145 64 0 0
 10 0 0 2 0 0 0 0
-2 0 100
+2 0 100 100
 A
 28 -10
 A
@@ -373,7 +373,7 @@ A &+mworthless&n but pretty looking necklace lies here.~
 ~
 9 22 3 1 4 0 0 16389 0 0 0
 2 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 5
 #21530
@@ -383,7 +383,7 @@ studded dog collar~
 ~
 9 13 2 2 7 0 0 5 64 0 0
 2 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 14 8
 #21531
@@ -393,7 +393,7 @@ candle human flesh~
 ~
 9 51 2 2 14 0 1024 16385 64 46305184 0
 4 0 0 1 0 0 0 0
-2 0 100 0 16 0 0
+2 0 100 100 0 16 0 0
 A
 24 -2
 A
@@ -405,7 +405,7 @@ club trash~
 ~
 5 15 3 3 2 0 0 8193 0 0 0
 10 3 3 6 0 0 0 0
-3 0 100
+3 0 100 100
 A
 28 -20
 A
@@ -417,7 +417,7 @@ potion yellow~
 ~
 10 7 3 3 7 0 0 16385 64 0 0
 50 44 -1 -1 0 0 0 0
-2 0 100
+2 0 100 100
 #21534
 cloak protection cold~
 &+Ba cloak of&+W protection &+Bfrom&+C cold&n~
@@ -425,7 +425,7 @@ cloak protection cold~
 ~
 9 3 3 3 7 0 1536 1025 64 85458945 536223744
 1 0 0 1 0 0 0 0
-1 0 100 0 64 0 0
+1 0 100 100 0 64 0 0
 A
 19 1
 A
@@ -437,7 +437,7 @@ boots leaves~
 ~
 9 30 3 0 4 0 0 65 0 0 0
 3 0 0 3 0 0 0 0
-2 34 100
+2 34 100 100
 A
 14 5
 A
@@ -449,7 +449,7 @@ paladin war platemail paladin's~
 ~
 9 18 3 7 12 0 1024 9 0 87572491 0
 20 0 0 5 0 0 0 0
-15 333 100
+15 333 100 100
 A
 18 1
 #21537
@@ -459,7 +459,7 @@ jug purple liquid leafwine potion~
 ~
 10 7 2 0 5 0 0 16385 64 0 0
 30 43 -1 -1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 28 4
 #21538
@@ -469,7 +469,7 @@ sleeves leaves elegant~
 ~
 9 30 3 2 9 0 0 257 64 0 0
 2 0 0 1 0 0 0 0
-2 345 100
+2 345 100 100
 A
 13 3
 A
@@ -481,7 +481,7 @@ potion heroism~
 ~
 10 7 3 0 5 0 0 16385 64 0 0
 30 204 -1 -1 0 0 0 0
-0 0 100
+0 0 100 100
 #21540
 stained cooking apron~
 &+ya &+rstained &+ycooking apron&n~
@@ -489,7 +489,7 @@ stained cooking apron~
 ~
 9 14 3 3 12 0 0 2049 64 0 0
 10 0 0 1 0 0 0 0
-3 0 100
+3 0 100 100
 E
 stained cooking apron~
 &n   This &+yapron&n looks like it has been made to withstand a large amount of
@@ -504,7 +504,7 @@ fallen lightning bolt~
 ~
 5 1 3 7 15 0 1 24577 64 0 0
 16 1 4 11 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 1
 A
@@ -516,7 +516,7 @@ assassins armband black blue~
 ~
 9 10 3 2 9 0 0 4097 0 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 14 15
 A
@@ -528,7 +528,7 @@ protective goggles~
 ~
 9 7 2 1 12 0 0 131073 0 0 0
 10 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 1
 #21544
@@ -538,7 +538,7 @@ poisoned fang~
 ~
 5 10 3 2 7 0 0 8193 0 0 0
 2 3 3 11 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 2
 A
@@ -550,7 +550,7 @@ black fighting fighters robe robes~
 ~
 9 3 3 6 11 0 0 1025 64 0 0
 2 0 0 2 0 0 0 0
-3 0 100
+3 0 100 100
 A
 19 1
 #21546
@@ -560,7 +560,7 @@ globe stars~
 ~
 5 27 3 1 11 0 50332929 24577 0 46305188 0
 4 4 4 6 0 0 0 0
-3 0 100
+3 0 100 100
 A
 13 20
 A
@@ -572,7 +572,7 @@ war axe battleaxe battlereavers~
 ~
 5 15 3 6 7 0 4195328 8193 0 85475353 0
 1 3 4 3 0 0 0 0
-6 0 100
+6 0 100 100
 A
 18 2
 A
@@ -584,7 +584,7 @@ ring weretor sparkling~
 ~
 9 19 3 1 14 0 1 3 64 0 0
 3 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 A
 19 3
 A
@@ -596,7 +596,7 @@ A tankard of &+gleaf&+mwine&n has been set down here.~
 ~
 10 7 3 2 7 0 0 1 64 0 0
 30 65 -1 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #21550
 merchants bag green red~
 &+ga&+r merchants&+g bag&n~
@@ -604,7 +604,7 @@ merchants bag green red~
 ~
 15 3 3 5 7 0 0 16385 64 0 0
 100 0 0 100 0 0 0 0
-2 0 100
+2 0 100 100
 #21551
 longsword steel shiny sword~
 &+Wa longsword &+gof the Aravne &+Wguards&n~
@@ -612,7 +612,7 @@ longsword steel shiny sword~
 ~
 5 16 3 5 9 0 0 8193 0 0 0
 5 2 8 3 0 0 0 0
-5 0 100
+5 0 100 100
 A
 18 1
 #21552
@@ -622,7 +622,7 @@ steel carving gauntlets~
 ~
 9 16 3 2 7 0 0 129 0 0 0
 8 0 0 2 0 0 0 0
-3 0 100
+3 0 100 100
 A
 13 5
 A
@@ -634,7 +634,7 @@ training whistle~
 ~
 9 13 3 1 5 0 0 5 64 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 8
 A
@@ -646,7 +646,7 @@ broken bottle~
 ~
 5 7 3 3 2 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-3 0 100
+3 0 100 100
 A
 19 2
 #21555
@@ -656,7 +656,7 @@ long thin razor dagger~
 ~
 5 16 2 1 8 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 2
 A
@@ -668,7 +668,7 @@ assassins cloth mask~
 ~
 9 3 3 5 7 0 0 262145 64 0 0
 2 0 0 2 0 0 0 0
-1 0 100
+1 0 100 100
 A
 14 15
 A
@@ -680,7 +680,7 @@ imperceptable shroud stars shadows shadow~
 ~
 9 15 3 0 7 0 33563681 16393 64 46305188 0
 3 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 30
 A
@@ -692,7 +692,7 @@ two-handed sword stars~
 ~
 5 19 3 10 15 0 4195329 8193 64 87572507 0
 13 5 8 3 0 0 0 0
-20 0 100
+20 0 100 100
 A
 18 3
 A
@@ -704,7 +704,7 @@ key glowing stars~
 ~
 18 15 3 0 7 0 1 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #21560
 crown stars~
 &+La crown of&+c stars&n~
@@ -712,7 +712,7 @@ crown stars~
 ~
 9 1 3 1 15 0 33554433 17 64 0 0
 8 0 0 4 0 0 0 0
-1 0 100
+1 0 100 100
 A
 14 30
 A
@@ -724,7 +724,7 @@ lords blade two-handed sword~
 ~
 5 1 3 2 11 0 4194304 8193 64 0 0
 13 2 8 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 2
 A
@@ -736,7 +736,7 @@ t shirt t-shirt beer ugly~
 ~
 11 3 3 1 7 0 0 8389633 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21563
 ball chain heavy~
 &+La ball and chain&n~
@@ -744,7 +744,7 @@ ball chain heavy~
 ~
 9 15 3 5 7 0 0 20545 0 0 0
 2 0 0 5 0 0 0 0
-20 0 100
+20 0 100 100
 A
 14 -30
 A
@@ -756,7 +756,7 @@ shank wooden~
 ~
 5 6 2 1 4 0 8 8193 0 0 0
 2 1 6 11 0 0 0 0
-1 0 100
+1 0 100 100
 A
 18 1
 A
@@ -768,7 +768,7 @@ trackers visor tracker's~
 ~
 9 3 3 3 7 0 0 131073 0 0 0
 8 0 0 1 0 0 0 0
-3 1000 100
+3 1000 100 100
 A
 14 10
 #21566
@@ -778,7 +778,7 @@ heart~
 ~
 8 6 3 5 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 A
 13 10
 #21567
@@ -788,7 +788,7 @@ thin quiver hunters~
 ~
 30 3 3 4 7 0 0 1048577 0 0 0
 30 0 1 0 0 0 0 0
-4 0 100
+4 0 100 100
 A
 18 1
 A
@@ -800,7 +800,7 @@ elixir bubbling wellness potion~
 ~
 10 7 2 2 7 0 0 1 64 0 0
 20 15 -1 -1 0 0 0 0
-2 0 100
+2 0 100 100
 #21569
 kings king tag~
 &+ythe kings tag&n~
@@ -808,7 +808,7 @@ kings king tag~
 ~
 9 3 2 1 7 0 0 2097153 0 0 0
 8 0 0 1 0 0 0 0
-1 0 100
+1 0 100 100
 #21570
 trappers cloak patched green~
 &+ga &+Ltrappers&+g cloak&n~
@@ -816,7 +816,7 @@ trappers cloak patched green~
 ~
 9 3 3 4 4 0 0 1025 0 0 0
 7 0 0 3 0 0 0 0
-4 0 100
+4 0 100 100
 A
 14 5
 A
@@ -828,7 +828,7 @@ six bladed mace six-bladed~
 ~
 5 15 3 3 7 0 0 8193 64 0 0
 6 2 5 6 0 0 0 0
-5 0 100
+5 0 100 100
 A
 18 2
 A
@@ -840,7 +840,7 @@ heavily spiked breastplate breast plate~
 ~
 9 15 3 4 7 50 0 9 0 0 0
 20 0 0 3 1 0 0 0
-10 0 100
+10 0 100 100
 A
 19 1
 #21573
@@ -850,7 +850,7 @@ wooden shield~
 ~
 37 6 3 5 7 10 0 513 0 0 0
 1 1 1 65 3 0 0 0
-5 0 100
+5 0 100 100
 #21574
 smugglers black leather belt~
 &+La smugglers &+ybelt&n~
@@ -858,7 +858,7 @@ smugglers black leather belt~
 ~
 9 3 3 2 7 0 0 2049 0 0 0
 4 0 0 3 0 0 0 0
-4 0 100
+4 0 100 100
 A
 14 10
 A
@@ -870,7 +870,7 @@ battered bloody iron knuckles~
 ~
 9 15 3 1 7 20 0 129 0 0 0
 6 0 0 4 0 0 0 0
-1 0 100
+1 0 100 100
 A
 19 1
 #21576
@@ -880,7 +880,7 @@ milky swirling potion protection~
 ~
 10 7 2 2 7 0 0 1 64 0 0
 50 1 -1 -1 0 0 0 0
-2 0 100
+2 0 100 100
 #21577
 earring black rose~
 &+Lan earring of the black &+rrose&n~
@@ -888,7 +888,7 @@ earring black rose~
 ~
 9 19 2 1 10 40 0 524289 64 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 18 1
 A
@@ -900,7 +900,7 @@ seductive whore whore's stockings~
 ~
 9 3 3 2 2 0 0 33 0 0 0
 7 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 26 5
 #21579
@@ -910,7 +910,7 @@ brass tail ring~
 ~
 9 17 3 2 7 0 0 33554433 64 0 0
 4 0 0 3 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 5
 A
@@ -922,7 +922,7 @@ notice official sign~
 ~
 12 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 notice official sign~
 &+g************************************
@@ -942,7 +942,7 @@ belt furs fur smelly~
 ~
 9 12 3 3 2 0 0 2049 64 0 0
 5 0 0 3 0 0 0 0
-3 0 100
+3 0 100 100
 A
 2 3
 A
@@ -954,7 +954,7 @@ halberd long heavy~
 ~
 5 15 3 8 10 0 4195328 8193 0 87572507 0
 8 3 3 3 0 0 0 0
-10 12500 100
+10 12500 100 100
 A
 18 -3
 A
@@ -966,7 +966,7 @@ lance long slender steel~
 ~
 5 16 3 5 10 0 16778240 8193 0 4160765977 0
 16 2 5 11 0 0 0 0
-5 11650 100
+5 11650 100 100
 A
 18 1
 A
@@ -978,7 +978,7 @@ lamp~
 ~
 1 7 3 3 8 0 262144 8404993 0 0 0
 0 0 500 0 0 0 0 0
-3 5100 100
+3 5100 100 100
 #21585
 sack herbs pot weed~
 &+ga sack of strange herbs&n~
@@ -986,7 +986,7 @@ sack herbs pot weed~
 ~
 11 43 3 2 8 0 0 8404993 64 0 0
 0 0 0 0 0 0 0 0
-2 500 100
+2 500 100 100
 A
 4 5
 #21586
@@ -996,7 +996,7 @@ looters bag magical large~
 ~
 15 3 3 0 13 0 1 8404993 64 0 0
 100 0 0 100 0 0 0 0
-0 500000 100
+0 500000 100 100
 #21587
 wooden armguards arm wood~
 &+ysome wooden armguards&n~
@@ -1004,7 +1004,7 @@ wooden armguards arm wood~
 ~
 9 6 3 4 7 0 0 257 0 0 0
 7 0 0 2 0 0 0 0
-2 5150 100
+2 5150 100 100
 A
 13 1
 #21588
@@ -1014,7 +1014,7 @@ steel spiked bracer~
 ~
 9 16 3 3 11 0 0 4097 0 0 0
 5 0 0 3 1 0 0 0
-3 3620 100
+3 3620 100 100
 A
 5 2
 #21589
@@ -1024,7 +1024,7 @@ wooden buckler shield~
 ~
 37 6 2 5 9 0 0 513 0 0 0
 2 2 3 55 2 0 0 0
-3 2116 100
+3 2116 100 100
 A
 2 2
 #21590
@@ -1034,7 +1034,7 @@ heavy steel shield~
 ~
 37 16 4 6 10 0 0 513 0 0 0
 1 3 3 85 4 0 0 0
-1 9215 100
+1 9215 100 100
 A
 13 5
 #21591
@@ -1044,7 +1044,7 @@ fencing sword long thin~
 ~
 5 16 3 2 9 0 0 8193 0 0 0
 5 2 4 2 0 0 0 0
-4 5416 100
+4 5416 100 100
 A
 18 1
 #21592
@@ -1054,7 +1054,7 @@ jagged claymore sword~
 ~
 5 16 3 6 10 0 4194304 8193 0 0 0
 13 3 5 3 0 0 0 0
-10 9215 100
+10 9215 100 100
 A
 18 -2
 A
@@ -1066,7 +1066,7 @@ wide bladed wide-bladed shortsword sword~
 ~
 5 15 3 3 10 0 0 8193 0 0 0
 9 1 9 11 0 0 0 0
-5 7210 100
+5 7210 100 100
 A
 18 1
 #21594
@@ -1076,7 +1076,7 @@ ring power~
 ~
 9 44 2 1 7 0 0 3 64 0 0
 2 0 0 1 0 0 0 0
-2 21500 100
+2 21500 100 100
 A
 12 5
 A
@@ -1088,7 +1088,7 @@ strange ring dexterity~
 ~
 9 44 3 1 7 0 0 3 64 0 0
 3 0 0 1 0 0 0 0
-1 21500 100
+1 21500 100 100
 A
 2 2
 #21596
@@ -1098,7 +1098,7 @@ ring strength~
 ~
 9 44 3 1 7 0 0 3 64 0 0
 2 0 0 1 0 0 0 0
-1 21500 100
+1 21500 100 100
 A
 1 3
 #21597
@@ -1108,7 +1108,7 @@ ring agility strange~
 ~
 9 44 3 1 7 0 0 3 64 0 0
 2 0 0 1 0 0 0 0
-1 21500 100
+1 21500 100 100
 A
 26 3
 #21598
@@ -1118,7 +1118,7 @@ potion mending swirling green~
 ~
 10 7 3 2 7 0 0 16385 64 0 0
 20 234 121 -1 0 0 0 0
-2 19550 100
+2 19550 100 100
 #21599
 purple potion bubbling displacement~
 &+ma potion of displacement&n~
@@ -1126,7 +1126,7 @@ purple potion bubbling displacement~
 ~
 10 7 3 2 7 0 0 16385 64 0 0
 30 15 15 15 0 0 0 0
-2 90214 100
+2 90214 100 100
 #21600
 potion sparks clear~
 &+Wa potion of sparks&n~
@@ -1134,7 +1134,7 @@ potion sparks clear~
 ~
 10 7 3 2 7 0 0 16385 64 0 0
 50 21 -1 -1 0 0 0 0
-2 36250 100
+2 36250 100 100
 #21601
 forge hammer~
 &+La &+rforge&+L hammer&n~
@@ -1142,7 +1142,7 @@ forge hammer~
 ~
 5 19 3 5 11 80 1025 8193 64 121258019 0
 4 2 9 7 0 0 0 0
-10 51430 100
+10 51430 100 100
 A
 18 2
 A
@@ -1154,7 +1154,7 @@ moneychangers belt~
 ~
 9 13 3 4 7 0 0 2049 64 0 0
 8 0 0 1 0 0 0 0
-3 0 100
+3 0 100 100
 A
 13 8
 A
@@ -1166,7 +1166,7 @@ light wooden armplates~
 ~
 9 6 3 2 7 0 0 257 64 0 0
 6 0 0 2 0 0 0 0
-4 0 100
+4 0 100 100
 A
 18 1
 A
@@ -1178,7 +1178,7 @@ sparkling earring~
 ~
 9 23 3 1 9 50 1 524289 64 0 0
 1 0 0 1 0 0 0 0
-2 14545 100
+2 14545 100 100
 A
 13 3
 #21605
@@ -1188,7 +1188,7 @@ pathfinders boots leaves~
 ~
 9 30 3 3 10 0 0 65 64 0 0
 2 0 0 3 0 0 0 0
-4 0 100
+4 0 100 100
 A
 26 3
 A
@@ -1200,7 +1200,7 @@ horned jaw brace~
 ~
 9 10 3 2 6 0 0 262145 64 0 0
 5 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 19 1
 #21607
@@ -1210,7 +1210,7 @@ manticore stinger~
 ~
 5 46 3 2 7 0 0 8193 64 0 0
 2 1 9 11 3 0 0 0
-4 0 100
+4 0 100 100
 A
 18 2
 A
@@ -1222,7 +1222,7 @@ harpy claw~
 ~
 9 15 3 0 7 0 0 16513 64 0 0
 6 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 A
 13 5
 #21609
@@ -1232,7 +1232,7 @@ elven chain chainmail vest~
 ~
 9 18 3 5 10 90 0 9 64 0 0
 10 0 0 3 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 15
 #21610
@@ -1242,7 +1242,7 @@ vial life leech blood~
 ~
 10 7 3 2 7 0 1 16385 64 0 0
 51 25 -1 -1 0 0 0 0
-2 0 100
+2 0 100 100
 #21611
 old worn sign notice~
 &+yan old sign&n~
@@ -1250,7 +1250,7 @@ old worn sign notice~
 ~
 13 6 3 10 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 old worn sign notice~
 &+W~~~~~~~~~~~~~~~~~~~~~~
@@ -1277,7 +1277,7 @@ greatsword sword great peacemaker~
 ~
 5 19 4 5 14 80 37749760 8193 64 85475353 0
 13 3 8 3 0 0 0 0
-15 0 100
+15 0 100 100
 A
 18 6
 A
@@ -1289,7 +1289,7 @@ old key~
 ~
 18 15 3 1 7 100 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21614
 eyes undead fire~
 &+Lthe &+reyes&+L of undead &+rfire&n~
@@ -1297,7 +1297,7 @@ eyes undead fire~
 ~
 9 44 3 2 14 75 1 131073 64 0 0
 3 0 0 1 0 0 0 0
-0 2345 100
+0 2345 100 100
 A
 19 2
 A
@@ -1309,7 +1309,7 @@ bone wand berbrathus~
 ~
 3 10 2 1 7 50 1025 16385 64 12619652 0
 51 3 3 25 0 0 0 0
-2 16888 100
+2 16888 100 100
 E
 bone wand berbrathus~
   &+WThe ancient bone wand of &N&+bBerbrathus&+W, the fabled once-living femur
@@ -1327,7 +1327,7 @@ sunsteel sun steel bracer~
 ~
 11 16 3 3 10 30 1 4097 64 0 0
 0 0 0 0 0 0 0 0
-4 0 100
+4 0 100 100
 A
 13 10
 A
@@ -1339,7 +1339,7 @@ sun ring sunsteel~
 ~
 11 16 3 1 7 30 1 3 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 18
 A
@@ -1351,7 +1351,7 @@ lance sunsteel steel sun _lance_~
 ~
 5 16 3 4 10 60 1 8193 64 0 0
 16 2 9 11 0 0 0 0
-4 0 100
+4 0 100 100
 A
 18 4
 A
@@ -1363,7 +1363,7 @@ potion sunlight~
 ~
 10 7 3 2 7 0 1 1 64 0 0
 20 41 -1 -1 0 0 0 0
-2 0 100
+2 0 100 100
 #21620
 key sun~
 &+Ya sun key&n~
@@ -1371,7 +1371,7 @@ key sun~
 ~
 18 16 3 1 7 0 8388608 8404993 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21621
 greater sun staff~
 &+Ya &+Wgreater&+Y sun staff&n~
@@ -1379,7 +1379,7 @@ greater sun staff~
 ~
 4 6 3 3 14 80 1025 16385 64 37883812 0
 51 2 2 247 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 15
 #21622
@@ -1389,7 +1389,7 @@ sun halo~
 ~
 9 44 3 1 15 100 1 17 64 0 0
 7 0 0 1 0 0 0 0
-1 233 100
+1 233 100 100
 A
 13 20
 A
@@ -1401,7 +1401,7 @@ chunk sun~
 ~
 11 1 3 1 15 100 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 A
 13 35
 A
@@ -1413,7 +1413,7 @@ steel club~
 ~
 5 16 3 4 5 0 0 8193 0 0 0
 10 1 9 7 0 0 0 0
-8 0 100
+8 0 100 100
 A
 18 1
 A
@@ -1425,7 +1425,7 @@ spiked heavy breastplate~
 ~
 9 15 3 5 9 0 0 9 0 0 0
 10 0 0 5 0 0 0 0
-15 0 100
+15 0 100 100
 A
 13 10
 A
@@ -1437,7 +1437,7 @@ emerald amulet~
 ~
 9 32 3 2 12 0 0 5 64 0 0
 3 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 10
 A
@@ -1449,7 +1449,7 @@ minor sun staff~
 ~
 3 6 3 2 9 0 1024 16385 64 37883812 0
 50 1 1 36 0 0 0 0
-2 0 100
+2 0 100 100
 A
 13 5
 #21628
@@ -1459,7 +1459,7 @@ acrobats ring plain metal~
 ~
 9 15 3 1 7 0 0 3 64 0 0
 6 0 0 3 0 0 0 0
-1 0 100
+1 0 100 100
 A
 2 4
 A
@@ -1471,7 +1471,7 @@ light travellers spellbook book~
 ~
 33 29 3 5 11 50 1024 16385 64 14716418 0
 0 0 80 0 0 0 0 0
-5 0 100
+5 0 100 100
 #21630
 human human-skin skin mask~
 &+La &+chuman&+L-skin mask&n~
@@ -1479,7 +1479,7 @@ human human-skin skin mask~
 ~
 9 2 3 2 3 0 0 262145 64 0 0
 2 0 0 5 0 0 0 0
-2 0 100
+2 0 100 100
 A
 19 1
 A
@@ -1491,7 +1491,7 @@ steel earring plain~
 ~
 9 16 3 1 7 0 0 524289 64 0 0
 3 0 0 1 0 0 0 0
-3 0 100
+3 0 100 100
 A
 18 2
 A
@@ -1503,7 +1503,7 @@ gladiators sword blade~
 ~
 5 16 3 4 14 0 1 8193 64 0 0
 5 3 8 3 0 0 0 0
-6 0 100
+6 0 100 100
 A
 18 5
 A
@@ -1515,7 +1515,7 @@ giant gladiators blade sword~
 ~
 5 16 3 8 14 0 37748736 8193 64 0 0
 13 4 9 3 0 0 0 0
-20 0 100
+20 0 100 100
 A
 18 3
 A
@@ -1527,7 +1527,7 @@ gladiators vambraces~
 ~
 11 16 3 2 14 0 0 257 64 0 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 A
 18 2
 A
@@ -1539,7 +1539,7 @@ gladiators leg plates~
 ~
 11 16 3 3 14 0 1 33 64 0 0
 0 0 0 0 0 0 0 0
-6 0 100
+6 0 100 100
 A
 18 2
 A
@@ -1551,7 +1551,7 @@ key sigil~
 ~
 18 15 3 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21637
 darksteel rapier~
 &+La dark&+msteel &+Lrapier&n~
@@ -1559,7 +1559,7 @@ darksteel rapier~
 ~
 5 16 3 4 15 100 16777473 8193 64 0 0
 9 5 4 2 0 0 0 0
-4 0 100
+4 0 100 100
 A
 18 4
 A
@@ -1571,7 +1571,7 @@ darksteel steel chain chainmail shirt~
 ~
 9 16 3 5 15 0 1 9 64 0 0
 10 0 0 3 0 0 0 0
-5 0 100
+5 0 100 100
 A
 13 20
 A
@@ -1583,7 +1583,7 @@ diamond bracelet~
 ~
 11 27 3 3 7 0 0 4097 64 0 0
 0 0 0 0 0 0 0 0
-6 0 100
+6 0 100 100
 A
 13 20
 A
@@ -1595,7 +1595,7 @@ diamond necklace~
 ~
 11 27 3 3 7 0 0 5 64 0 0
 0 0 0 0 0 0 0 0
-6 0 100
+6 0 100 100
 A
 13 20
 A
@@ -1607,7 +1607,7 @@ crown aravne royal~
 ~
 9 25 3 3 15 0 0 17 64 0 0
 6 0 0 4 0 0 0 0
-4 124 100
+4 124 100 100
 A
 13 20
 A
@@ -1619,7 +1619,7 @@ shield platinum aravne royal~
 ~
 37 25 3 7 15 0 0 513 64 0 0
 1 4 4 190 5 0 0 0
-20 34555 100
+20 34555 100 100
 A
 19 5
 A
@@ -1631,7 +1631,7 @@ The royal platemail of Aravne lies here.~
 ~
 9 25 3 8 15 0 1025 9 64 121258043 0
 25 0 0 4 0 0 0 0
-10 11111 100 0 12 0 0
+10 11111 100 100 0 12 0 0
 A
 13 40
 A
@@ -1643,7 +1643,7 @@ emerald platinum scepter aravne royal~
 ~
 4 25 3 5 15 0 33554432 16385 64 0 0
 56 1 1 87 0 0 0 0
-8 949482 100
+8 949482 100 100
 A
 13 35
 A
@@ -1655,7 +1655,7 @@ ring sparkling platinum aravne royal~
 ~
 9 25 3 2 15 0 1 3 64 0 0
 10 0 0 1 0 0 0 0
-2 3332 100
+2 3332 100 100
 A
 13 35
 #21646
@@ -1665,7 +1665,7 @@ potion dark power liquid~
 ~
 10 7 3 1 15 0 0 1 64 0 0
 56 36 -1 -1 0 0 0 0
-1 0 100
+1 0 100 100
 #21647
 elixir demonic power blood sizzling~
 &+Lelixir of &+rdemonic &+Lpower&n~
@@ -1673,7 +1673,7 @@ elixir demonic power blood sizzling~
 ~
 10 7 3 1 15 0 0 1 64 0 0
 56 158 215 209 0 0 0 0
-1 234 100
+1 234 100 100
 #21648
 shroud hatred~
 &+Lthe shroud of &+rhatred&n~
@@ -1681,7 +1681,7 @@ shroud hatred~
 ~
 9 1 3 1 15 100 33554433 1025 64 0 0
 2 0 0 1 0 0 0 0
-1 22 100
+1 22 100 100
 A
 35 4
 A
@@ -1693,7 +1693,7 @@ heart enzekail~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21650
 heart female~
 &+rthe heart of the female weretor&n~
@@ -1701,7 +1701,7 @@ heart female~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21651
 heart male~
 &+rthe heart of the male weretor&n~
@@ -1709,7 +1709,7 @@ heart male~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21652
 heart auruos~
 &+rthe heart of auruos&n~
@@ -1717,7 +1717,7 @@ heart auruos~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21653
 heart solos~
 &+rthe heart of solos&n~
@@ -1725,7 +1725,7 @@ heart solos~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21654
 heart berbrathus~
 &+rthe heart of Berbrathus&n~
@@ -1733,7 +1733,7 @@ heart berbrathus~
 ~
 13 2 3 1 7 100 8392704 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21655
 heart grgak~
 &+rthe heart of Grgak&n~
@@ -1741,7 +1741,7 @@ heart grgak~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21656
 heart akethis~
 &+rthe heart of Akethis&n~
@@ -1749,7 +1749,7 @@ heart akethis~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21657
 heart akiniere~
 &+rthe heart of Akiniere&n~
@@ -1757,7 +1757,7 @@ heart akiniere~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21658
 heart cacazar~
 &+rthe heart of Cacazar&n~
@@ -1765,7 +1765,7 @@ heart cacazar~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21659
 heart elan'atol~
 &+rthe heart of Elan'Atol&n~
@@ -1773,7 +1773,7 @@ heart elan'atol~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21660
 heart king~
 &+rThe heart of the King&n~
@@ -1781,7 +1781,7 @@ heart king~
 ~
 13 2 3 1 7 100 8916992 1 64 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #21661
 king's blade aravne sword king~
 &+Lthe &+rKing's&+L blade of &+gAravne&n~
@@ -1789,7 +1789,7 @@ king's blade aravne sword king~
 ~
 5 19 3 5 15 100 33555456 8193 64 95993883 0
 5 5 5 3 0 1177176163 20 30
-5 0 100 8 0 0 0
+5 0 100 100 8 0 0 0
 E
 kings blade aravne sword~
   This legendary blade of King Aravne himself was lost when the devils warped
@@ -1811,7 +1811,7 @@ gauntlets lifestealer~
 ~
 9 19 3 4 15 100 1 129 64 0 0
 10 0 0 3 0 0 0 0
-5 0 100 536870912 12480 0 0
+5 0 100 100 536870912 12480 0 0
 A
 19 4
 A
@@ -1823,7 +1823,7 @@ key~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key~
 This key should lead you the King of Aravne's throne room.
@@ -1835,7 +1835,7 @@ pile fine sand~
 ~
 13 11 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile fine sand~
 &+yThis small pile of &+Ysand &+ylooks to be fantastic for

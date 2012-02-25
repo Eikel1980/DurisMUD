@@ -5,7 +5,7 @@ a &+ggoblin&N knife&N~
 ~
 5 15 3 0 9 0 64 8193 0 122880 0
 2 3 3 11 0 0 0 0
-3 0 100
+3 0 100 100
 E
 goblin knife dagger~
 &N   This nice was made in the&+g goblin&N city of&+g Malch'hor Ganl&N.  It is a fine
@@ -22,7 +22,7 @@ table butcher~
 ~
 15 6 3 0 7 0 0 0 0 1 0
 50 0 0 50 0 0 0 0
--1 0 100
+-1 0 100 100
 E
 table butcher~
 &N   This&+y butcher table&N is made out of some very &+yhard wood &Ntaken from a &+gforest&N
@@ -38,7 +38,7 @@ meat pack bundle bp backpack~
 ~
 15 3 3 0 4 0 0 4194305 0 1 0
 100 1 0 100 0 0 0 0
-2 0 100
+2 0 100 100
 E
 meat pack bundle~
 &N   This bundle of cloth was used by the &+ggoblins&N to carry &+rmeat&N to their city.&N
@@ -50,7 +50,7 @@ meat chothe iron~
 ~
 19 2 3 0 7 0 0 16385 0 1 0
 5 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 meat chothe iron~
 &N   This bit of meat has been hacked off the animal.  Looks very tasty.&N
@@ -62,7 +62,7 @@ pootata meat iron~
 ~
 19 2 3 0 7 0 0 16385 0 1 0
 5 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 pootata meat iron~
 &N   This looks like a tasty piece of meat.&N
@@ -74,7 +74,7 @@ symbol badge malch'hor ganl&n~
 ~
 9 15 3 0 7 0 0 2097153 0 1 0
 1 0 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 symbol badge malch'hor ganl&n~
 &N   This small insignia is the symbol of &+gMalch'hor Ganl&N.&N
@@ -88,7 +88,7 @@ chothe hide strip~
 ~
 13 2 3 0 7 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 chothe hide~
 &N   This strip of hide comes from a &+Ycho&+ythe&N.&N
@@ -100,7 +100,7 @@ leather shoes pair~
 ~
 9 14 3 0 9 0 0 65 0 1 0
 3 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 E
 leather shoes pair~
 &N   These leather shoes are very nice.&N
@@ -114,7 +114,7 @@ shirt leather~
 ~
 9 13 3 0 7 0 0 9 0 1 0
 10 0 0 1 0 0 0 0
-6 0 100
+6 0 100 100
 E
 shirt leather~
 &N   This leather shirt has the symbol of &+gMalch'hor Ganl&N on it.&N
@@ -128,7 +128,7 @@ chothe hide bp backpack~
 ~
 15 14 3 0 10 0 0 4194305 0 1 0
 300 1 0 300 0 0 0 0
-1 0 100
+1 0 100 100
 E
 chothe hide bp backpack~
 &N   This backpack is very sturdy and can carry a great load.&N
@@ -144,7 +144,7 @@ goblin gloves~
 ~
 9 14 3 0 7 0 0 129 0 1 0
 8 0 0 1 0 0 0 0
-6 0 100
+6 0 100 100
 E
 goblin gloves~
 &N   This pair of leather gloves is covered with little metal spikes making it
@@ -159,7 +159,7 @@ chothe bone~
 ~
 13 10 3 0 2 0 8392712 16385 0 1 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 chothe bone~
 &N   This large bone looks as if i could be used for something.  Who know what.&N
@@ -171,7 +171,7 @@ bone blade sword~
 ~
 5 10 3 0 10 0 0 8193 0 32798 0
 5 3 8 3 0 0 0 0
-10 0 100
+10 0 100 100
 E
 bone blade sword~
 &N   This blade is made entirely out of bone.  The handle is too made out of
@@ -188,7 +188,7 @@ flesh strip pootata~
 ~
 13 2 3 0 4 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-5 0 100
+5 0 100 100
 E
 flesh strip pootata~
 &N   This strip of flesh has come from an animal.&N
@@ -200,7 +200,7 @@ goblin earring~
 ~
 9 10 3 0 10 0 1 524289 0 1 0
 2 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 E
 goblin earring~
 &N   This earring was made by a &+ggoblin&N.&N

@@ -5,7 +5,7 @@ shrub small frozen~
 ~
 15 5 3 0 7 0 4096 0 0 0 0
 10 0 0 100 0 0 0 0
-100 10 100
+100 10 100 100
 #75201
 berry small~
 &+Ma small frozen berry&N~
@@ -13,7 +13,7 @@ berry small~
 ~
 19 5 2 2 7 0 12288 16385 0 0 0
 12 0 0 0 0 0 0 0
-1 25 100
+1 25 100 100
 #75202
 sign small~
 &+Wa small sign&N~
@@ -21,7 +21,7 @@ sign small~
 ~
 13 5 3 10 7 0 4096 0 0 0 0
 0 0 0 0 0 0 0 0
-100 12 100
+100 12 100 100
 E
 sign small~
 &+W-----------------------------------------&N
@@ -39,7 +39,7 @@ An unwanted long sword collects among the rubble here.~
 ~
 5 16 3 10 7 0 8192 8193 0 4173708804 0
 5 1 8 3 0 0 0 0
-4 300 100
+4 300 100 100
 A
 18 1
 #75204
@@ -49,7 +49,7 @@ An unwanted shield collects among the rubble here.~
 ~
 37 16 3 15 7 0 8192 513 64 4165209604 0
 2 1 3 138 0 0 0 0
-4 500 100
+4 500 100 100
 A
 30 4
 #75205
@@ -59,7 +59,7 @@ An unwanted pair of gloves collects among the rubble here.~
 ~
 9 13 3 6 7 0 12288 129 0 4248567899 0
 3 7 6 3 0 0 0 0
-2 500 100
+2 500 100 100
 A
 26 4
 A
@@ -71,7 +71,7 @@ hay golden pile~
 ~
 13 24 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 10 100
+1000 10 100 100
 #75207
 necklace human bones small~
 &+Wa small necklace of human bones&N~
@@ -79,7 +79,7 @@ An unwanted necklace collects among the rubble here.~
 ~
 9 10 3 2 7 0 8192 5 64 0 0
 3 2 0 3 0 0 0 0
-4 309 100
+4 309 100 100
 A
 13 4
 #75208
@@ -89,7 +89,7 @@ An unwanted leather whip collects among the rubble here.~
 ~
 5 13 3 0 7 0 8192 8193 66 4160749568 0
 14 1 5 2 0 0 0 0
-9 999 100
+9 999 100 100
 A
 18 1
 A
@@ -101,7 +101,7 @@ An unwanted tusk waits for a new owner here.~
 ~
 5 34 3 0 7 0 8192 24577 0 4194697632 0
 2 1 4 11 0 0 0 0
-9 500 100
+9 500 100 100
 A
 19 1
 #75210
@@ -111,7 +111,7 @@ bookcase old~
 ~
 15 6 3 0 7 0 8192 0 0 0 0
 100 0 0 100 0 0 0 0
-100 10 100
+100 10 100 100
 #75211
 staff fiery skies~
 &+Ra staff of fiery skies&N~
@@ -119,7 +119,7 @@ An unwanted staff collects among the rubble here.~
 ~
 4 16 3 10 7 0 271360 16385 66 37883812 0
 30 1 1 47 0 0 0 0
-4 999 100
+4 999 100 100
 A
 4 2
 A
@@ -131,7 +131,7 @@ An unwanted pair of leggings collects among the rubble here.&N~
 ~
 9 3 3 8 7 0 9216 33 0 37883812 0
 4 5 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 A
 2 5
 A
@@ -143,7 +143,7 @@ An unwanted orb collects among the rubble here.~
 ~
 5 8 3 2 7 0 9216 8193 66 37883812 0
 10 2 4 7 0 0 0 0
-5 1000 100
+5 1000 100 100
 A
 19 1
 A
@@ -155,7 +155,7 @@ An unwanted vial collects among the rubble here.~
 ~
 9 7 1 2 7 0 12288 5 66 4169510912 0
 4 2 1 3 0 0 0 0
-6 999 100
+6 999 100 100
 A
 13 3
 A
@@ -167,7 +167,7 @@ An unwanted amulet collects dust amongst the rubble here.~
 ~
 9 16 3 2 7 0 8192 5 66 0 0
 7 0 0 4 0 0 0 0
-1 987 100
+1 987 100 100
 A
 19 2
 A
@@ -179,7 +179,7 @@ An unwanted human skull glows in the room here.~
 ~
 8 10 0 0 7 0 274432 16401 64 4169510912 0
 0 0 0 0 0 0 0 0
-10 500 100
+10 500 100 100
 A
 19 1
 A
@@ -191,7 +191,7 @@ An old skeletal bracer waits for a new owner here.~
 ~
 9 10 3 3 7 0 8193 4097 66 0 0
 5 11 1 3 0 0 0 0
-7 500 100
+7 500 100 100
 A
 19 1
 A
@@ -203,7 +203,7 @@ An unwanted egg looks for a new owner here.~
 ~
 15 2 3 0 7 0 8320 16385 66 0 0
 100 5 0 30 0 0 0 0
-10 450 100
+10 450 100 100
 A
 14 5
 A
@@ -215,7 +215,7 @@ An unwanted leaf lies tossed on the ground here.~
 ~
 10 30 2 4 7 0 12288 16385 0 0 0
 20 1 -1 -1 0 0 0 0
-1 1000 100
+1 1000 100 100
 #75220
 large marble fountain~
 &+Wa large marble fountain&N~
@@ -223,7 +223,7 @@ large marble fountain~
 ~
 17 38 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #75221
 suit platemail tekan~
 &+Wa suit of &+MTekan&N &+Wplatemail&N~
@@ -231,7 +231,7 @@ An unwanted platemail collects among the rubble here.~
 ~
 9 16 3 25 7 0 8192 9 66 4173708804 0
 16 3 1 3 0 0 0 0
-30 1500 100
+30 1500 100 100
 A
 19 1
 A
@@ -243,7 +243,7 @@ An unwanted sword collects among the rubble here.~
 ~
 5 16 3 10 7 0 9216 8193 66 87572571 0
 5 2 4 3 0 0 0 0
-11 999 100
+11 999 100 100
 A
 19 1
 #75223
@@ -253,7 +253,7 @@ An unwanted dagger beckons for a new owner here.~
 ~
 5 24 2 3 7 0 8192 8193 66 4194697632 0
 2 1 6 11 0 0 0 0
-5 999 100
+5 999 100 100
 A
 19 1
 A
@@ -265,7 +265,7 @@ An unwanted mace collects among the rubble here.~
 ~
 5 11 3 8 7 0 0 8193 66 4173708804 0
 6 1 6 7 0 0 0 0
-11 200 100
+11 200 100 100
 #75225
 vial golden~
 &+Ya golden vial&N~
@@ -273,7 +273,7 @@ An unwanted golden vial sits on the ground here.~
 ~
 10 24 2 4 7 0 12288 16385 0 0 0
 10 1 -1 -1 0 0 0 0
-1 399 100
+1 399 100 100
 #75226
 apron spotted~
 &+Wa s&+Rp&No&+Wt&+Rt&Ne&+Wd apron&N~
@@ -281,7 +281,7 @@ A spotted apron collects among the rubble here.~
 ~
 9 3 3 6 7 0 8192 2049 66 0 0
 4 10 0 3 0 0 0 0
-2 777 100
+2 777 100 100
 A
 13 3
 A
@@ -293,7 +293,7 @@ An unwanted platemail collects among the dust here.~
 ~
 9 16 3 25 7 0 12288 9 2 0 0
 5 3 1 3 0 0 0 0
-6 666 100
+6 666 100 100
 A
 1 4
 A
@@ -305,7 +305,7 @@ An unwanted dagger collects among the rubble of the room.~
 ~
 5 16 2 3 7 0 8192 8193 66 4194697632 0
 2 1 4 11 0 0 0 0
-4 676 100
+4 676 100 100
 A
 18 1
 #75229
@@ -315,7 +315,7 @@ An unwanted bag sits on the ground here.~
 ~
 15 12 3 8 7 0 8192 16385 64 0 0
 75 5 0 120 0 0 0 0
-20 345 100
+20 345 100 100
 #75230
 pair talons jagged~
 &+Ga pair of jagged talons&N~
@@ -323,7 +323,7 @@ An unwanted pair of talons collects among the rubble here.~
 ~
 9 10 0 0 7 0 8192 129 64 0 0
 5 7 1 3 0 0 0 0
-4 678 100
+4 678 100 100
 A
 19 1
 #75231
@@ -333,7 +333,7 @@ An unwanted pair of leggings collects among the rubble here.~
 ~
 9 3 3 8 7 0 533504 33 0 87572571 0
 3 5 1 3 0 0 0 0
-3 34 100
+3 34 100 100
 #75232
 book old sylvandawn elves~
 &+Gan old book of the Sylvandawn elves&N~
@@ -341,7 +341,7 @@ An unwanted book collects among the rubble here.~
 ~
 4 28 3 10 7 0 8192 16385 66 0 0
 28 2 2 23 0 0 0 0
-4 565 100
+4 565 100 100
 A
 4 1
 A
@@ -353,7 +353,7 @@ A sharp blade waits for a new owner here.~
 ~
 5 8 3 10 7 0 8192 24577 66 4165209604 0
 2 3 2 3 0 0 0 0
-3 345 100
+3 345 100 100
 A
 19 1
 #75234
@@ -363,7 +363,7 @@ An unwanted mask collects among the rubble here.~
 ~
 9 16 3 3 7 0 8192 262145 66 4173708804 0
 3 13 1 3 0 0 0 0
-3 565 100
+3 565 100 100
 A
 19 1
 A
@@ -375,7 +375,7 @@ An unwanted helm collects among the rubble here.~
 ~
 9 11 3 10 7 0 8320 17 66 4173708804 0
 10 4 1 3 0 0 0 0
-20 787 100
+20 787 100 100
 A
 19 1
 #75236
@@ -385,7 +385,7 @@ An unwanted scale shield sits on the ground here collecting dirt.~
 ~
 37 11 3 15 7 0 8192 513 66 4165209604 0
 2 1 2 135 0 0 0 0
-15 777 100
+15 777 100 100
 A
 19 1
 A
@@ -397,7 +397,7 @@ An unwanted orb pulses in energy here.~
 ~
 5 16 3 2 7 0 9344 24577 66 4197892 0
 10 2 4 7 0 0 0 0
-10 1999 100
+10 1999 100 100
 A
 19 1
 A
@@ -409,7 +409,7 @@ A golden eyepatch sits on the ground here.~
 ~
 9 24 3 2 7 0 3284992 131073 66 4169510912 0
 5 12 2 3 0 0 0 0
-10 2098 100
+10 2098 100 100
 A
 19 1
 #75239
@@ -419,7 +419,7 @@ An unwanted cape sits on the ground here.~
 ~
 9 12 3 8 7 0 8192 5 66 0 0
 5 2 1 3 0 0 0 0
-4 235 100
+4 235 100 100
 A
 2 3
 A
@@ -431,7 +431,7 @@ An unwanted pair of boots sits here.~
 ~
 9 35 3 8 7 0 270336 65 66 4203196832 0
 4 6 1 3 0 0 0 0
-7 777 100
+7 777 100 100
 A
 2 4
 A
@@ -443,7 +443,7 @@ A small flame burns brightly here.~
 ~
 1 1 0 0 7 0 12288 16385 66 0 0
 0 0 -1 0 0 0 0 0
-3 323 100
+3 323 100 100
 #75242
 flame yellow small~
 &+Ya bright yellow flame&N~
@@ -451,7 +451,7 @@ A small flame burns brightly here.~
 ~
 1 1 0 0 7 0 12288 16385 66 0 0
 0 0 -1 0 0 0 0 0
-5 323 100
+5 323 100 100
 A
 19 1
 A
@@ -463,7 +463,7 @@ An unwanted amulet rests on the ground here.~
 ~
 9 16 3 2 7 0 8193 16389 66 4169510912 0
 4 2 0 3 0 0 0 0
-3 456 100
+3 456 100 100
 A
 24 -1
 A
@@ -475,7 +475,7 @@ bones large pile~
 ~
 15 10 3 0 7 0 8192 0 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #75245
 ogre skull~
 &+Yan ogre's skull&N~
@@ -483,7 +483,7 @@ An old skull ages with time here.~
 ~
 9 10 0 0 7 0 12288 16401 66 4173708804 0
 3 4 1 3 0 0 0 0
-4 111 100
+4 111 100 100
 #75246
 tooth dragon large~
 &+Wa large dragon's tooth&N~
@@ -491,7 +491,7 @@ An unwanted tooth sits on the ground here.~
 ~
 5 10 3 0 7 0 12288 24577 0 0 0
 2 1 5 11 0 0 0 0
-4 444 100
+4 444 100 100
 #75247
 bone orc femur small~
 &+Ra small orc femur&N~
@@ -499,7 +499,7 @@ An unwanted bone sits on the ground here.~
 ~
 13 10 0 0 7 0 12288 1 0 0 0
 0 0 0 0 0 0 0 0
-5 1 100
+5 1 100 100
 #75248
 stone ring jeweled~
 &+Wa &+Rj&Ne&+Cw&Ne&+Rl&+We&Nd &+Wstone ring&N~
@@ -507,7 +507,7 @@ An unwanted ring sits on the ground here.~
 ~
 9 11 1 1 7 0 40960 3 66 0 0
 3 1 0 3 0 0 0 0
-10 100 100
+10 100 100 100
 A
 24 -1
 A
@@ -519,7 +519,7 @@ frozen fish~
 ~
 19 2 2 2 7 0 0 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 #75250
 mug pewter~
 &+La pewter mug&N~
@@ -527,7 +527,7 @@ An unwanted mug collects among the rubble here.~
 ~
 17 16 0 0 7 0 0 16385 0 0 0
 2 2 1 0 0 0 0 0
-2 25 100
+2 25 100 100
 #75251
 red sphere~
 &+Ra red sphere&N~
@@ -535,7 +535,7 @@ An old sphere sits on the ground here.~
 ~
 5 16 2 0 7 0 12288 8193 66 0 0
 10 2 3 7 0 0 0 0
-2 2500 100
+2 2500 100 100
 A
 3 2
 A
@@ -547,7 +547,7 @@ An old scroll lies tossed on the ground here.~
 ~
 8 29 1 2 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #75253
 shrub frozen small~
 &+Ga small frozen shrub&N~
@@ -555,7 +555,7 @@ shrub frozen small~
 ~
 15 6 3 0 7 0 4096 0 0 0 0
 10 0 0 100 0 0 0 0
-15 10 100
+15 10 100 100
 E
 shrub frozen small~
 This small shrub is frozen over by the weather. It sits in the forest
@@ -569,7 +569,7 @@ blueberry frozen blue berry~
 ~
 19 2 2 2 7 0 12288 16385 0 0 0
 10 0 0 0 0 0 0 0
-1 15 100
+1 15 100 100
 #75255
 eyepatch eclipsed sun~
 &+Yan eyepatch of the eclipsed sun&N~
@@ -577,7 +577,7 @@ An unwanted eyepatch collects among the rubble here.~
 ~
 9 13 3 2 7 0 8192 131073 66 0 0
 3 12 2 3 0 0 0 0
-2 555 100
+2 555 100 100
 A
 1 4
 A
@@ -589,7 +589,7 @@ An unwanted mace collects among the rubble here.~
 ~
 5 24 3 8 7 0 8192 8193 66 4173708804 0
 6 1 7 7 0 0 0 0
-4 999 100
+4 999 100 100
 A
 19 1
 #75257
@@ -599,7 +599,7 @@ An unwanted sword hides among the rubble here.~
 ~
 5 16 3 10 7 0 8192 8193 66 4198895524 0
 5 1 6 3 0 0 0 0
-5 999 100
+5 999 100 100
 A
 19 1
 A
@@ -611,7 +611,7 @@ An unwanted robe collects among the rubble here.~
 ~
 9 3 3 8 7 0 9216 1025 66 42201504 0
 5 9 1 3 0 0 0 0
-4 1002 100
+4 1002 100 100
 A
 24 -2
 A
@@ -623,7 +623,7 @@ shield ruzdo~
 ~
 37 16 3 15 7 0 8320 513 66 4173708804 0
 2 1 3 140 0 0 0 0
-5 999 100
+5 999 100 100
 A
 24 -2
 A
@@ -635,7 +635,7 @@ An unwanted amulet collects among the rubble here.~
 ~
 9 16 3 2 7 0 8193 5 66 0 0
 4 2 0 3 0 0 0 0
-3 2302 100
+3 2302 100 100
 A
 1 4
 A
@@ -647,7 +647,7 @@ An unwanted sword collects among the rubble here.~
 ~
 5 16 2 10 7 0 8192 8193 0 4198895524 0
 9 2 3 3 0 0 0 0
-4 234 100
+4 234 100 100
 A
 18 1
 A
@@ -659,7 +659,7 @@ An unwanted scarf collects among the rubble here.~
 ~
 9 3 3 3 7 0 8192 5 66 0 0
 4 2 1 3 0 0 0 0
-3 777 100
+3 777 100 100
 A
 30 4
 A
@@ -671,7 +671,7 @@ An unwanted mace sits on the ground here.~
 ~
 5 11 3 8 7 0 4464640 8193 66 0 0
 6 2 6 6 0 0 0 0
-10 666 100
+10 666 100 100
 A
 19 1
 A
@@ -683,7 +683,7 @@ A small short sword lies here.~
 ~
 5 16 2 10 7 0 8192 8193 0 4198895524 0
 9 1 4 3 0 0 0 0
-3 30 100
+3 30 100 100
 A
 1 3
 #75265
@@ -693,7 +693,7 @@ A green earring sits here.~
 ~
 9 16 1 1 7 0 8192 524289 66 0 0
 2 14 0 3 0 0 0 0
-1 100 100
+1 100 100 100
 A
 14 2
 #75267
@@ -703,7 +703,7 @@ An unwanted tail sits on the ground here.~
 ~
 9 2 0 0 7 0 8192 8388609 0 0 0
 1 18 0 3 0 0 0 0
-3 99 100
+3 99 100 100
 A
 30 2
 #75268
@@ -713,7 +713,7 @@ A dragon's heart sits on the ground here.~
 ~
 13 2 0 0 7 0 12288 16385 66 0 0
 0 0 0 0 0 0 0 0
-15 100 100
+15 100 100 100
 #75269
 talons pair spiked~
 &+Ba pair of spiked talons&N~
@@ -721,7 +721,7 @@ An unwanted pair of talons sits on the ground here.~
 ~
 9 10 0 0 7 0 8192 129 66 0 0
 4 7 1 3 0 0 0 0
-4 565 100
+4 565 100 100
 A
 19 2
 A
@@ -733,7 +733,7 @@ An unwanted earring collects among the rubble here.~
 ~
 9 9 1 1 7 0 8192 524289 66 0 0
 3 14 0 3 0 0 0 0
-2 667 100
+2 667 100 100
 A
 24 -2
 A
@@ -745,7 +745,7 @@ A lonley green scale sits on the ground here.~
 ~
 37 15 0 0 7 0 274560 513 66 4169510912 0
 2 1 2 148 0 0 0 0
-7 777 100
+7 777 100 100
 A
 23 -2
 #75272
@@ -755,7 +755,7 @@ An unwanted mask of snow sits on the ground here.~
 ~
 9 2 3 3 7 0 532480 262145 0 0 0
 2 13 1 3 0 0 0 0
-5 250 100
+5 250 100 100
 A
 13 2
 A
@@ -767,7 +767,7 @@ An unwanted dagger sits on the ground here.~
 ~
 5 16 2 3 7 0 270464 8193 66 0 0
 2 1 4 11 0 0 0 0
-8 450 100 32768 0 0 0
+8 450 100 100 32768 0 0 0
 A
 19 1
 A
@@ -779,7 +779,7 @@ A golden vial sits on the ground here.~
 ~
 13 24 1 2 7 0 12288 16385 0 0 0
 0 0 0 0 0 0 0 0
-20 10 100
+20 10 100 100
 #75275
 shimmering ebony suit~
 a &+Ys&Nh&+Yi&Nm&+Ym&Ne&+Yr&Ni&+Yn&Ng &+Lebony&N &+Ysuit&N~
@@ -787,7 +787,7 @@ An unwanted suit sits here.~
 ~
 9 6 0 0 7 0 8192 9 66 4173708804 0
 24 3 1 3 0 0 0 0
-22 500 100
+22 500 100 100
 A
 20 -2
 #75276
@@ -797,7 +797,7 @@ A golden whip rests in the rubble here.~
 ~
 5 24 3 0 7 0 8193 8193 66 4169510912 0
 14 1 6 2 0 0 0 0
-10 500 100
+10 500 100 100
 A
 19 1
 A
@@ -809,7 +809,7 @@ A long leathery whip rests on the ground here.~
 ~
 5 13 3 0 7 0 8192 8193 66 4248567899 0
 14 2 4 2 0 0 0 0
-10 500 100
+10 500 100 100
 A
 26 2
 A
@@ -821,7 +821,7 @@ An unwanted amulet sits on the ground here.~
 ~
 9 9 3 2 7 0 9216 5 66 37883812 0
 4 2 0 3 0 0 0 0
-3 250 100
+3 250 100 100
 A
 3 3
 A
@@ -833,7 +833,7 @@ A shiny earring collects among the rubble here.~
 ~
 9 8 1 1 7 0 41089 524289 66 0 0
 15 0 0 5 0 0 0 0
-5 500 100
+5 500 100 100
 A
 13 10
 A
@@ -845,7 +845,7 @@ A small note sits on the ground here.~
 ~
 8 29 1 1 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-2 3 100
+2 3 100 100
 E
 small note~
 ________________________________________
@@ -865,7 +865,7 @@ A small bottle sits on the ground here.~
 ~
 13 2 0 0 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-7 10 100
+7 10 100 100
 #75282
 spiked platemail teka~
 &+Ga spiked platemail of &+MTeka&N~
@@ -873,7 +873,7 @@ An unwanted platemail collects among the rubble here.~
 ~
 9 16 3 25 7 0 13312 9 66 33685920 0
 18 3 1 3 0 0 0 0
-24 500 100
+24 500 100 100
 A
 24 -2
 A

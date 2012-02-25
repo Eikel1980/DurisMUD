@@ -5,7 +5,7 @@ large rock moss~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 94714 1 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large rock moss~
    &+LThis large rock is covered with a thick layer of &+gmoss&+L.  At
@@ -20,7 +20,7 @@ braid black blue fur~
 ~
 9 12 3 0 5 0 4096 4097 64 0 0
 8 0 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 braid black blue fur~
    &+LThis small braid of fur appears to have been the skinned hide of
@@ -37,7 +37,7 @@ huge tropical tree~
 ~
 15 6 3 0 5 0 0 0 0 0 0
 500 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge tropical tree~
    &+LThis huge, tropical &+gtree &+Lgrows from the dark rocky ground of
@@ -52,7 +52,7 @@ silver plaque~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 silver plaque~
 &+c   /---------------------\
@@ -71,7 +71,7 @@ obsidian plaque~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 obsidian plaque~
 &+L   /--------------------------\
@@ -90,7 +90,7 @@ portal~
 ~
 25 15 3 0 5 0 1 0 0 0 0
 94772 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal~
    &+LThis huge &+mportal&+L swirls with dark magenta and black colors.
@@ -105,7 +105,7 @@ portal~
 ~
 25 15 3 0 5 0 1 0 0 0 0
 94771 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal~
    &+LThis huge &+mportal&+L swirls with dark magenta and black colors.
@@ -120,7 +120,7 @@ small obsidian sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small obsidian sign~
 &+L  +----------------------------+
@@ -139,7 +139,7 @@ rubble~
 ~
 29 15 3 0 5 0 4096 0 0 0 0
 270 94785 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 rubble~
    &+LThis large pile of rubble appears to have been from a collapsed
@@ -153,7 +153,7 @@ obsidian lever~
 ~
 29 11 3 0 5 0 4096 0 0 0 0
 340 94780 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 obsidian lever~
    &+LThis &+yancient&+L obsidian l&+re&+Lv&+re&+Lr was located below huge rocks
@@ -169,7 +169,7 @@ sign bone~
 ~
 12 10 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign bone~
 
@@ -189,7 +189,7 @@ moss~
 ~
 12 30 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 moss~
    &+gThick moss covers everything in this portion of the tunnel.
@@ -204,7 +204,7 @@ small marble sign~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small marble sign~
 &+W /------------------------\
@@ -222,7 +222,7 @@ huge pile rocks debris~
 ~
 29 15 3 0 5 0 4096 0 0 0 0
 270 94840 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge pile rocks debris~
    &+yThis massive pile of rubble has toppled here.  Something has caused
@@ -239,7 +239,7 @@ huge pile rocks debris~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 94842 4 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge pile rocks debris~
    &+yThis massive pile of rubble has toppled here.  Something has caused
@@ -256,7 +256,7 @@ signet ring~
 ~
 9 15 3 0 5 0 4096 3 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 signet ring~
    &+YThis signet ring bears the crest of a noble titan family.  It is
@@ -270,7 +270,7 @@ small marble key~
 ~
 18 38 3 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small marble key~
    &+WThis tiny, magical key has been carefully crafted of polished marble.
@@ -282,7 +282,7 @@ moonwell well~
 ~
 25 1 3 0 5 0 262144 0 64 0 0
 94821 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 moonwell well~
    &+WThis magnificent pool of glistening &+csilver &+Wcolor floats here,
@@ -295,7 +295,7 @@ moonwell well~
 ~
 25 1 3 0 5 0 262144 0 64 0 0
 94820 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 moonwell well~
    &+WThis magnificent pool of glistening &+csilver &+Wcolor floats here,
@@ -308,7 +308,7 @@ blazing portal~
 ~
 25 15 3 0 5 0 1 0 0 0 0
 94847 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blazing portal~
    &+WThis huge portal &+Yblazing&+W with a radiant light as bright as a
@@ -322,7 +322,7 @@ bits bones~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bits bones~
    &+WSmall bits of bones of all sizes, including those of
@@ -338,7 +338,7 @@ exotic tropical flower~
 ~
 8 30 1 0 5 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 exotic tropical flower~
    &+gThis small tropical &+Rflower&+g has bright petals of &+Yyellow&+g,&+R red&+g, and
@@ -358,7 +358,7 @@ exotic tropical flower~
 ~
 3 30 1 0 5 0 4104 16385 64 0 0
 25 7 7 116 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 exotic tropical flower~
    &+gThis small tropical &+Rflower&+g has bright petals of &+Yyellow&+g,&+R red&+g, and
@@ -379,7 +379,7 @@ spore ascomid fibers~
 ~
 8 46 1 0 5 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 spore ascomid fibers~
    &+LThis small &+mspore&+L is made up of many fibers of the &+mascomid&+L fungus,
@@ -394,7 +394,7 @@ key truth~
 ~
 18 38 3 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 5 100
+0 5 100 100
 E
 key truth~
    &+WThis tiny key has tiny images of &+Yholy symbols &+Wencrusted onto it.
@@ -406,7 +406,7 @@ ivory altar~
 ~
 8 34 3 0 5 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 ivory altar~
    &+WThis massive altar has been crafted out of ivory on the western
@@ -422,7 +422,7 @@ spectral holy sybmol berronar truesilver _noquest_~
 ~
 9 15 3 0 5 0 0 5 0 99974663 0
 6 0 0 3 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spectral holy symbol~
    &+WThis holy symbol seems to fade in and out of reality, much like a spectre or wraith
@@ -440,7 +440,7 @@ potion fiery protection~
 ~
 10 7 2 0 5 0 1 1 0 0 0
 30 294 108 233 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 potion fiery protection~
    &+LThis tiny potion swirling with a warm &+rred blaze&+L in a
@@ -458,7 +458,7 @@ bone splinter stiletto~
 ~
 5 10 3 0 5 0 4096 8193 0 0 0
 2 2 4 0 4 0 0 0
-2 15000 100
+2 15000 100 100
 E
 bone splinter stiletto~
    &+WA large humanoid bone has been broken into this very fine, but
@@ -476,7 +476,7 @@ small metal key~
 ~
 18 15 3 0 5 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small metal key~
    &+LThis small metal key has been fit with a simple pattern.
@@ -488,7 +488,7 @@ small coin pouch~
 ~
 20 15 3 0 5 0 0 1 0 0 0
 0 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 #94731
 harpy claws~
 &+ysome harpy claws&N~
@@ -496,7 +496,7 @@ harpy claws~
 ~
 9 10 3 0 5 0 4096 129 0 0 0
 5 0 0 3 0 0 0 0
-2 3000 100
+2 3000 100 100
 E
 harpy claws~
    &+yThese claws have been removed from a harpy.  The claws have
@@ -513,7 +513,7 @@ belt thri carapace~
 ~
 9 47 3 0 9 0 8192 2049 0 0 0
 8 0 0 3 0 0 0 0
-3 14000 100
+3 14000 100 100
 E
 belt thri carapace~
    &+gThis belt has been crafted of scales taken from a thri-kreen
@@ -531,7 +531,7 @@ feathered stone axe~
 ~
 5 11 3 0 5 0 0 8193 0 0 0
 1 2 4 0 0 0 0 0
-4 15000 100
+4 15000 100 100
 E
 feathered stone axe~
    &+LThis crude axe has been made from a larger slab of stone that has been
@@ -549,7 +549,7 @@ moss fungus-covered fungus sleeves~
 ~
 9 30 3 0 5 0 4096 257 64 0 0
 8 0 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 moss fungus-covered fungus sleeves~
    &+gThese sleeves are made of the hardened husk of many types of
@@ -566,7 +566,7 @@ ivory titan holy cross~
 ~
 9 34 3 0 7 0 0 5 64 0 0
 5 0 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 A
 13 9
 A
@@ -578,7 +578,7 @@ magnificent white marble shield~
 ~
 37 38 3 0 7 0 0 513 64 0 0
 1 2 5 170 5 0 0 0
-20 15000 100
+20 15000 100 100
 A
 5 6
 A
@@ -590,7 +590,7 @@ marble ivory bracer~
 ~
 9 38 3 0 7 0 0 4097 64 0 0
 8 0 0 5 0 0 0 0
-0 15000 100
+0 15000 100 100
 A
 13 6
 A
@@ -602,7 +602,7 @@ rare fire opal~
 ~
 8 8 3 0 7 0 4097 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 85000 100
+0 85000 100 100
 E
 rare fire opal~
    &+rThis rare gem is hot with a fire that burns inside.
@@ -618,7 +618,7 @@ thick bloodstained cowl~
 ~
 9 15 3 0 7 0 0 5 0 0 0
 7 0 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 thick bloodstained cowl~
    &+LThis thick, furred cowl may have once offered protection from the elements, but has
@@ -635,7 +635,7 @@ harpy feather mask~
 ~
 9 50 3 0 11 0 0 262145 0 0 0
 6 0 0 3 0 0 0 0
-0 9000 100
+0 9000 100 100
 E
 harpy feather mask~
    &+yThis fine mask has been excellently stitched together with
@@ -652,7 +652,7 @@ dark swirling portal~
 ~
 25 15 3 0 5 0 1 0 0 0 0
 94792 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal dark swirling~
    &+LThis portal seems to be a pocket of nothingness. Light seems
@@ -666,7 +666,7 @@ dark swirling portal~
 ~
 25 15 3 0 5 0 4097 0 0 0 0
 94791 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal dark swirling~
    &+LThis portal seems to be a pocket of nothingness. Light seems
@@ -680,7 +680,7 @@ blazing portal~
 ~
 25 15 3 0 5 0 4097 0 0 0 0
 94846 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blazing portal~
    &+WThis huge portal &+Yblazing&+W with a radiant light as bright as a

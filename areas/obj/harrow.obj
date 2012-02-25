@@ -5,7 +5,7 @@ A &+ydurable&n &+ga&+Gl&+gc&+Gh&+ge&+Gm&+gi&+Gs&+gt&n &+ysack&n lies here.~
 ~
 15 15 3 0 11 0 0 12582913 0 0 0
 200 1 0 200 0 0 0 0
-0 3200 100
+0 3200 100 100
 A
 30 10
 #29401
@@ -15,7 +15,7 @@ bag big _id_~
 ~
 15 13 4 0 12 0 262144 12582913 0 1 0
 150 1 0 150 0 0 0 0
-0 3400 100
+0 3400 100 100
 E
 bag~
 A BIG BIG sack for very small people!
@@ -33,7 +33,7 @@ Some &+Wf&na&+We&nr&+Wi&ne &+ydust&n lies here.~
 ~
 12 1 2 1 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 cloth~
 A scrap of cloth to learn to sew on.
@@ -45,7 +45,7 @@ An &+Wivory&n handled &+cdagger&n lies here.~
 ~
 5 34 3 4 7 0 1280 8193 0 94208 0
 2 1 6 11 0 0 0 0
-4 8554 100
+4 8554 100 100
 A
 18 4
 A
@@ -57,7 +57,7 @@ A &+ydurable&n &+ga&+Gl&+gc&+Gh&+ge&+Gm&+gi&+Gs&+gt&n &+ysack&n lies here.~
 ~
 15 15 3 0 11 0 0 8388609 0 0 0
 600 1 0 600 0 0 0 0
-0 8000 100
+0 8000 100 100
 A
 30 10
 A
@@ -69,7 +69,7 @@ A special &+Bsap&+bph&+Bire r&ni&+Bng&n lies here.~
 ~
 8 33 3 0 11 0 4104 3 0 0 0
 0 0 0 0 0 0 0 0
-2 2343 100
+2 2343 100 100
 E
 ring special sapphire~
  &+bA small ring barely large enough to fit on a child's finger. It is &n
@@ -86,7 +86,7 @@ A &+rtoken&n in the shape of a &+Rh&+rear&+Rt&n lies here.~
 ~
 8 9 3 0 7 0 262472 2113537 0 1 0
 0 0 0 0 0 0 0 0
-3 5767 100
+3 5767 100 100
 E
 token~
   &+rA ceramic token with a &+Rheart&n &+rpainted on it.&n
@@ -98,7 +98,7 @@ A &+csty&+Clish&n &+Yh&+Wo&+Yrn&n lies here.~
 ~
 32 15 3 0 7 0 0 16385 0 0 0
 189 16 0 0 0 0 0 0
-4 3455 100
+4 3455 100 100
 E
 horn stylish~
   &+CA polished handcrafted horn that is in perfect condition. The metal&n
@@ -115,7 +115,7 @@ A &+mthick&n &+Lsketchbook&n lies here.~
 ~
 33 28 2 1 7 0 0 8404993 0 1 0
 0 0 100 0 0 0 0 0
-1 4500 100
+1 4500 100 100
 E
 sketchbook~
   &+LA thick sketchbook with a hefty cover. It has a notch off the spine &n
@@ -128,7 +128,7 @@ A &+Cbolt&n of &+Wcloth&n lies here.~
 ~
 12 15 3 20 7 0 8 16385 0 0 0
 0 0 0 0 0 0 0 0
-20 3400 100
+20 3400 100 100
 E
 bolt cloth~
   &+cA heavy bolt of cloth used for sewing clothes and other items.&n
@@ -140,7 +140,7 @@ a small piece of &+Lspider&n &+Ws&+Ci&+Wl&+Ck&n lies here.~
 ~
 9 3 3 0 7 0 4096 17 0 0 0
 -10 0 0 300 0 0 0 0
-0 2300 100
+0 2300 100 100
 E
 web~
   The silk spun from a spider.
@@ -156,7 +156,7 @@ A hand &+Wcrafted&n &+yl&+Ye&+ya&+Yt&+yh&+Ye&+yr&n &+Lsa&+rdd&+Lle&n lies here.~
 ~
 9 14 3 20 11 0 17825792 16777217 0 0 0
 14 0 0 3 0 0 0 0
-20 4300 100
+20 4300 100 100
 E
 leather saddle~
   &+yThe saddle is made from the best leather hides. Crafted into the &n
@@ -169,7 +169,7 @@ A handcrafted &+yleather&n &+Lbelt&n lies here.~
 ~
 9 15 3 0 7 0 0 2049 0 0 0
 10 0 0 0 0 0 0 0
-3 4434 100
+3 4434 100 100
 A
 1 5
 A
@@ -181,7 +181,7 @@ A small &+ypiece&n of &+Wcloth&n lies here.~
 ~
 12 3 2 1 7 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 cloth~
   &+WA scrap of cloth to learn to sew on. This piece has many attemps &n
@@ -194,7 +194,7 @@ a &+cjagged&n piece of &+Cglass&n lies here.~
 ~
 8 7 2 1 7 0 4096 1 0 1 0
 0 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 glass~
   &+CA sharp piece of glass, most likely a left over from one of the objects&n
@@ -207,7 +207,7 @@ A &+msimple& &+crobe&n made of a bluish satin.&n~
 ~
 9 3 2 1 7 0 0 1025 0 0 0
 9 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 robe~
   &+MA simple long flowing robe made of fine materials.&n
@@ -223,7 +223,7 @@ A unique &+mrose&n &+Mcolored&n &+Cglass&n horn lies here.~
 ~
 32 7 3 5 13 0 3416064 8404993 0 65536 0
 189 40 0 12 0 0 0 0
-5 10232 100
+5 10232 100 100
 E
 horn~
   An exquisite &+MRose&n colored horn made of fragile glass. The sound &n
@@ -240,7 +240,7 @@ A breathtaking &+Brobe&n of &+Gmany&n &+Rcolors lies here.&n~
 ~
 9 3 3 10 13 20 3153920 1025 0 0 0
 20 0 0 0 0 0 0 0
-10 6754 100
+10 6754 100 100
 E
 robe colors~
   This multi-colored robe is made of the finest fabrics available to &n
@@ -257,7 +257,7 @@ A &+Mmagical &+Bswirl&+bing &+cstaff&n of &+Clight&n lies here shining.~
 ~
 3 44 3 10 14 0 131136 16385 0 0 0
 36 3 3 460 0 0 0 0
-10 12433 100
+10 12433 100 100
 A
 13 20
 A
@@ -269,7 +269,7 @@ A simple &+mdoll&n with a pretty &+Bblue&n dress~
 ~
 8 3 3 0 7 0 4352 4210689 0 0 0
 0 0 0 0 0 0 0 0
-3 3999 100
+3 3999 100 100
 E
 pretty doll~
   &+mA handsewn doll made from patches of left over fabric. The hair is &n
@@ -286,7 +286,7 @@ a &+Rp&+ya&+Yi&+Gn&+Bt&n &+mset&n~
 ~
 12 41 2 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 2300 100
+5 2300 100 100
 #29421
 stud platinum~
 a &+Wplatinum&n &+cs&+Ct&+cud&n~
@@ -294,7 +294,7 @@ A &+Wplatinum&n &+cs&+Ct&+cud&n lies here.~
 ~
 9 25 1 1 7 0 266240 524289 0 0 0
 3 0 0 3 0 0 0 0
-1 3322 100
+1 3322 100 100
 A
 5 5
 A
@@ -306,7 +306,7 @@ A &+rp&+Ri&+rn cush&+Rio&+rn&n lies here gathering dust.~
 ~
 9 3 1 0 7 0 0 20481 0 0 0
 0 0 0 0 0 0 0 0
-2 234 100
+2 234 100 100
 A
 4 8
 A
@@ -320,7 +320,7 @@ A &+csp&+Car&+ckl&+Cing&n &+Bf&+bou&+Bntain&n is here.~
 ~
 17 15 3 0 5 0 0 0 0 0 0
 1000 1000 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain~
 &+CThis glo&N&+crious fountain of &+Csparkling cry&N&+cstal-clear water
@@ -335,7 +335,7 @@ A &+Rgnomish&n &+Lear&n &+camp&+Clif&+cier&n lies here twitching.~
 ~
 9 16 3 0 5 0 8192 524289 64 0 0
 3 0 0 3 0 0 0 0
-0 124444 100
+0 124444 100 100
 E
 gnomish ear amplifier~
   You &+Rtap&n on the amplifier a few times, and it &+cwh&+Cir&+cls&n into action.
@@ -351,7 +351,7 @@ no_show waterfall~
 ~
 25 15 3 0 5 0 8194 0 0 0 0
 29470 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29426
 necklace daisy~
 a &+Wd&+Ya&+Wi&+Ys&+Wy&n &+gnecklace&n~
@@ -359,7 +359,7 @@ A &+Wd&+Ya&+Wi&+Ys&+Wy&n &+gnecklace&n lies here.~
 ~
 9 15 3 0 5 0 262144 5 0 0 0
 7 0 0 3 0 0 0 0
-0 4888 100
+0 4888 100 100
 A
 13 5
 A
@@ -371,7 +371,7 @@ A &+mleather collar&n with a &+Yshiny tag.&n~
 ~
 9 15 3 0 5 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 collar leather~
   A shiny tag that reads: &+C*80*&n
@@ -383,7 +383,7 @@ A &+yleather&n crafters &+Lapron&n lies here.~
 ~
 15 15 3 0 5 0 0 9 0 0 0
 100 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 apron~
   &+yA thick leather apron specially made with the crafter in mind. Several&n
@@ -400,7 +400,7 @@ A &+mcap&n of &+Gst&+gor&+Gytell&+gin&+Gg&n lies here.~
 ~
 9 15 3 0 5 0 3145728 17 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cap storytelling~
   &+MA velvet hat of many colors that has been handed down through many&n
@@ -418,7 +418,7 @@ teleporter portal~
 ~
 25 1 3 0 5 0 0 0 0 0 0
 29471 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 teleporter portal~
   A narrow portal that leads through to the observatory.
@@ -430,7 +430,7 @@ portal teleporter~
 ~
 25 15 3 0 5 0 0 0 0 0 0
 29440 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 portal teleporter~
   &+LA small narrow portal that will allow you to climb through and return&n
@@ -443,7 +443,7 @@ A &+Rgnomish&n &+ytoolbox&n lies here.~
 ~
 15 6 3 0 5 0 0 4210689 0 0 0
 100 0 0 100 0 0 0 0
-0 4533 100
+0 4533 100 100
 E
 gnomish toolbox~
   A solid wood box used for tools of all sorts most commonly used by the
@@ -457,7 +457,7 @@ A near finished &+Rpainting&n resting on an &+Yaisle&n.~
 ~
 8 29 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 3499 100
+0 3499 100 100
 #29434
 spyglass~
 a &+Cmagical&n &+cspyglass&n~
@@ -465,7 +465,7 @@ A &+cspyglass&n full of &+Cmagical&n powers lies here.~
 ~
 9 15 2 0 5 0 0 147457 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 4 0 0 0
+0 0 100 100 4 0 0 0
 #29435
 sewing needle~
 &+ysewing&n &+cneedle&n~
@@ -473,7 +473,7 @@ A sharp &+ysewing&n &+cneedle&n lies here.~
 ~
 5 16 3 0 5 0 0 8193 0 0 0
 2 3 5 0 0 0 0 0
-0 2455 100
+0 2455 100 100
 A
 18 3
 A
@@ -485,7 +485,7 @@ a &+csewing&n &+Lcontraption&n~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29437
 goggle goggles tinkerer~
 &+wgo&+Cgg&+wles &+Lof the &+wt&+ri&+Rn&+rk&+Re&+rr&+Re&+rr&n~
@@ -493,7 +493,7 @@ Some &+wgo&+Cgg&+wles&n belonging to a &+wT&+ri&+Rn&+rk&+Re&+rr&+Re&+rr&n lie he
 ~
 9 16 3 0 5 0 1 131073 0 0 0
 0 0 0 0 0 0 0 0
-0 7888 100
+0 7888 100 100
 A
 13 13
 A
@@ -505,7 +505,7 @@ Some &+Rani&+rmat&+Red&n &+gb&+Gai&+gt&n lies here.~
 ~
 19 15 3 0 5 0 128 16385 0 0 0
 20 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 5 0
 #29439
@@ -515,7 +515,7 @@ A &+Bcollapsable&n &+gf&+Gishi&+gng&n &+ypole&n lies here.~
 ~
 5 15 3 0 5 0 8192 24577 0 0 0
 8 4 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 4
 #29440
@@ -525,7 +525,7 @@ A &+Bpainting&n near completion.~
 ~
 8 29 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 5023 100
+0 5023 100 100
 E
 painting picture art~
   This is one of the first finished paintings from this artist. He is proud
@@ -542,7 +542,7 @@ A &+Rbrightly&n &+Gcol&+gor&+Ged&n &+Yf&+yi&+Ys&+yh&n &+Bbowl&n is here on a nig
 ~
 25 15 3 0 5 0 1 0 0 0 0
 29472 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29442
 fish bowl water fishbowl~
 &+binside a bowl of &+Bwater&n~
@@ -550,7 +550,7 @@ fish bowl water fishbowl~
 ~
 25 15 3 0 5 0 8194 0 0 0 0
 29443 264 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29443
 yo yo-yo~
 a &+rh&+Ran&+rd&+c-&+rc&+Rar&+rved&n &+yy&+Yo&n-&+yy&+Yo&n~
@@ -558,7 +558,7 @@ A &+ywood&n carved &+yY&+yo&n-&+yY&+yo&n lies here unplayed.~
 ~
 5 6 2 0 5 0 134218000 8413185 0 0 0
 10 2 2 0 0 0 0 0
-0 5777 100
+0 5777 100 100
 A
 18 3
 A
@@ -570,7 +570,7 @@ A small &+Lpot&n of &+Ygold&n sits here.~
 ~
 8 15 3 0 5 0 8193 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29445
 stall merchandise~
 &+ya stall&n~
@@ -578,7 +578,7 @@ stall merchandise~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29446
 wet potion~
 &+ba wet&n &+Bpotion&n~
@@ -586,7 +586,7 @@ wet potion~
 ~
 10 7 3 0 5 0 0 16385 0 0 0
 30 85 274 0 0 0 0 0
-0 5222 100
+0 5222 100 100
 #29447
 wooden toy box toybox~
 a &+yw&+Yoo&+yden&n &+gt&+Go&+gy&n &+gb&+Go&+gx&n~
@@ -594,7 +594,7 @@ a small &+yw&+Yoo&+yden&n &+gt&+Go&+gy&n &+gb&+Go&+gx&n with a lid.~
 ~
 15 6 2 0 13 0 8192 16385 0 0 0
 150 1 0 150 0 0 0 0
-0 12888 100
+0 12888 100 100
 A
 14 15
 #29448
@@ -604,7 +604,7 @@ A durable &+bs&nail&+blb&noa&+bt&n with a &+Rred&n sail.~
 ~
 22 15 3 0 5 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100
+0 6888 100 100
 A
 26 6
 #29449
@@ -614,7 +614,7 @@ A &+ych&+Yise&+yled&n statue of &+LTiamat&n the &+gDr&+Ga&+ggon &+rRuler&n is he
 ~
 12 6 2 0 13 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 8766 100
+0 8766 100 100
 A
 23 -3
 #29450
@@ -624,7 +624,7 @@ A &+Rsc&+rarl&+Ret&n &+bcav&+Bal&+bier's&n &+Lcl&+wo&+Lak&n is here.~
 ~
 9 3 3 0 13 0 0 1025 0 0 0
 0 0 0 0 0 0 0 0
-0 12455 100
+0 12455 100 100
 E
 scarlet cavalier cloak~
   Sewn from the finest deep scarlet cashmere, the cloak displays excellent
@@ -642,7 +642,7 @@ scarf~
 ~
 9 3 2 0 13 0 0 5 0 0 0
 0 0 0 0 0 0 0 0
-0 7888 100
+0 7888 100 100
 A
 28 5
 #29452
@@ -652,7 +652,7 @@ A &+Cpale blue&n watered silk &+Wvest&n edged with tiny hammered &+wsilver&n dis
 ~
 9 3 3 0 5 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-0 7888 100
+0 7888 100 100
 A
 13 8
 A
@@ -664,7 +664,7 @@ A &+gfour leaf &+Gcl&+go&+Gver&n lies here feeling &+Yunlucky&n.~
 ~
 9 15 3 0 5 0 2105344 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 30 4
 #29454
@@ -674,7 +674,7 @@ A handcarved wooden &+ypipe&n that is &+Lsmoking&n.~
 ~
 8 6 2 0 5 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 7777 100
+0 7777 100 100
 #29455
 hat tam o'shanter shanter~
 &Nan old and frayed &+Gtam o'shanter~
@@ -682,7 +682,7 @@ A very frayed &+Gtam o'shanter&n sits here.~
 ~
 9 3 2 0 12 0 8192 17 64 0 0
 0 0 0 0 0 0 0 0
-0 23443 100
+0 23443 100 100
 A
 30 10
 A
@@ -694,7 +694,7 @@ A &+Ygold&n ring with &+Wd&+wi&+Wa&+wm&+Wo&+wn&+Wd&+ws&n lies here.~
 ~
 9 15 3 0 5 0 262144 3 0 0 0
 0 0 0 0 0 0 0 0
-0 8666 100
+0 8666 100 100
 A
 13 5
 A
@@ -706,7 +706,7 @@ A &+wsilver&n band with&+B bl&+bu&+Be&n &+Lstones&n lies here.~
 ~
 9 22 2 0 5 0 0 4097 1 0 0
 0 0 0 0 0 0 0 0
-0 6888 100 0 128 0 0
+0 6888 100 100 0 128 0 0
 A
 5 6
 #29458
@@ -716,7 +716,7 @@ A pair of &+wsilver&n &+cearrings&n with &+Rred r&+rubies&n lie here.~
 ~
 9 22 3 0 5 0 137363456 524289 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100 0 4 0 0
+0 6888 100 100 0 4 0 0
 A
 14 8
 #29459
@@ -726,7 +726,7 @@ A &+Lchoker&n with &+Rred&n, &+Wwhite&n and a &+Bblue&n gems lies here.~
 ~
 9 8 3 0 13 0 0 5 2 0 0
 3 0 0 3 0 0 0 0
-0 8999 100
+0 8999 100 100
 A
 4 6
 A
@@ -738,7 +738,7 @@ Some small particles of &+gfish food&n lie here.~
 ~
 19 48 3 0 5 0 8192 16385 0 0 0
 2 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29461
 telescope~
 &+ca telescope for &+Yst&+Wa&+Yrgazing&n~
@@ -746,7 +746,7 @@ A &+ctelescope&n used for &+Yst&+Wa&+Yrgazing&n is sitting here.~
 ~
 12 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 telescope~
   &+cThis telescope is used by Alorka and anyone else who has permission, to &n
@@ -761,7 +761,7 @@ A plate of &+Leel&n &+Ws&+gu&+Ws&+gh&+Wi&n lies here.~
 ~
 19 48 3 0 5 0 0 16385 0 0 0
 10 3 3 0 0 0 3 0
-0 1456 100
+0 1456 100 100
 #29463
 stew pork~
 a &+ypork&n &+yh&+Ya&+yr&+Yv&+ye&+Ys&+yt&n &+bstew&n~
@@ -769,7 +769,7 @@ Some &+ypork&n &+yh&+Ya&+yr&+Yv&+ye&+Ys&+yt&n &+bstew&n lies here~
 ~
 19 48 3 0 5 0 0 16385 0 0 0
 10 3 4 0 0 0 0 0
-0 2556 100
+0 2556 100 100
 #29464
 cornish pastry pie~
 a &+Gcornish&n &+ymeat&n &+Ypie&n~
@@ -777,7 +777,7 @@ A &+Gcornish&n &+ymeat&n &+Ypie&n lies here uneaten.~
 ~
 19 48 3 0 5 0 0 16385 0 0 0
 3 4 4 0 2 0 0 0
-0 2367 100
+0 2367 100 100
 #29465
 honey sticks~
 &+mfresh&n &+Gclover&n &+yhoney sticks&n~
@@ -785,7 +785,7 @@ Some &+mfresh&n &+Gclover&n &+yhoney sticks&n lie here.~
 ~
 19 48 3 0 5 0 0 1 0 0 0
 6 5 4 0 0 4 0 0
-0 4003 100
+0 4003 100 100
 #29466
 fungi salad~
 &+ga&n &+Wgourmet&n &+yfu&+gn&+rgu&+ys&n &+gsalad&n~
@@ -793,7 +793,7 @@ fungi salad~
 ~
 19 48 3 0 5 0 0 1 0 0 0
 10 3 3 0 2 2 2 0
-0 7245 100
+0 7245 100 100
 #29467
 snake~
 a &+Lpitch black&n snake~
@@ -801,7 +801,7 @@ A coiled up &+Lblack colored snake&n.~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #29468
 mask ceramic~
 a &+cceramic&n mask painted like a &+yt&+Yi&+yg&+ye&+Yr&n~
@@ -809,7 +809,7 @@ A &+cceramic&n mask painted like a &+yt&+Yi&+yg&+ye&+Yr&n lies here.~
 ~
 9 9 2 0 5 0 0 262145 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100
+0 6888 100 100
 #29469
 flower flowers violets vase~
 a &+Mvase&n filled with &+mv&+bi&+mo&+bl&+me&+bt&+ms&n~
@@ -817,7 +817,7 @@ A &+Mvase&n filled with &+mv&+bi&+mo&+bl&+me&+bt&+ms&n lies here.~
 ~
 12 7 2 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 3500 100
+0 3500 100 100
 #29470
 vase daisies flower flowers~
 a &+Bvase&n filled with &+Yd&+Wa&+Yi&+Ws&+Yi&+We&+Ys&n~
@@ -825,7 +825,7 @@ A &+Bvase&n filled with &+Yd&+Wa&+Yi&+Ws&+Yi&+We&+Ys&n lies here.~
 ~
 12 7 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 3500 100
+0 3500 100 100
 #29471
 flower lowers vase roses~
 a &+Gvase&n filled with &+Mr&+mo&+Ms&+me&+Ms&n~
@@ -833,7 +833,7 @@ A &+Gvase&n filled with &+Mr&+mo&+Ms&+me&+Ms&n lies here.~
 ~
 12 7 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 3500 100
+0 3500 100 100
 #29472
 flower violet~
 a single &+mv&+bi&+mo&+bl&+me&+bt&n~
@@ -841,7 +841,7 @@ A single &+mv&+bi&+mo&+bl&+me&+bt&n lies here.~
 ~
 12 7 3 0 5 0 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 #29473
 flower rose~
 a single &+Mr&+mo&+Ms&+me&n~
@@ -849,7 +849,7 @@ A single &+Mr&+mo&+Ms&+me&n lies here.~
 ~
 12 7 3 0 5 0 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 #29474
 flower daisy~
 a single &+Yd&+Wa&+Yi&+Ws&+Yy&n~
@@ -857,7 +857,7 @@ A single &+Yd&+Wa&+Yi&+Ws&+Yy&n lies here.~
 ~
 12 7 3 0 5 0 0 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 1500 100
+0 1500 100 100
 #29475
 mask ceramic~
 a &+cceramic&n mask painted with &+Mf&+gl&+Mo&+gw&+Me&+gr&n designs~
@@ -865,7 +865,7 @@ A &+cceramic&n mask painted with &+Mf&+gl&+Mo&+gw&+Me&+gr&n designs lies here.~
 ~
 9 9 2 0 5 0 0 262145 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100
+0 6888 100 100
 #29476
 mask ceramic ogre~
 a &+cceramic&n mask painted to resemble an &+bogre&n~
@@ -873,7 +873,7 @@ A &+cceramic&n mask painted to resemble an &+bogre&n lies here.~
 ~
 9 9 2 0 5 0 0 262145 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100
+0 6888 100 100
 #29477
 mask ceramic kitten~
 a &+cceramic&n mask&n painted to resemble a &+Lk&ni&+Lt&nt&+Le&nn~
@@ -881,7 +881,7 @@ A &+cceramic&n mask&n painted to resemble a &+Lk&ni&+Lt&nt&+Le&nn lies here.~
 ~
 9 9 2 0 5 0 0 262145 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100
+0 6888 100 100
 #29478
 ceramic mask faerie~
 a &+cceramic&n mask painted like a &+Mfa&+mer&+Mie&n~
@@ -889,7 +889,7 @@ A &+cceramic&n mask painted like a &+Mfa&+mer&+Mie&n lies here.~
 ~
 9 9 2 0 5 0 0 262145 0 0 0
 0 0 0 0 0 0 0 0
-0 6888 100
+0 6888 100 100
 #29479
 flute multi-colored harmony~
 &+Rmu&+ylt&+Yi-c&+gol&+bor&+med&n &+Cglass&n &+cflute&n of &+Yharmony&n~
@@ -897,7 +897,7 @@ a &+Rmu&+ylt&+Yi-c&+gol&+bor&+med&n &+Cglass&n &+cflute&n of &+Yharmony&n lies h
 ~
 32 7 3 0 13 0 3153920 16385 64 0 0
 184 50 0 10 0 0 0 0
-0 8666 100
+0 8666 100 100
 #29480
 horn dragonslayer~
 the &+ghorn&n of the &+Rdra&+rgonsla&+Ryer&n~
@@ -905,7 +905,7 @@ The &+ghorn&n of the &+Rdra&+rgonsla&+Ryer&n lies here.~
 ~
 32 15 3 0 5 0 8192 8404993 0 0 0
 189 50 0 10 0 0 0 0
-0 8666 100
+0 8666 100 100
 #29481
 mandolin sight~
 the &+ymand&no&+ylin&n of &+csight&n~
@@ -913,7 +913,7 @@ The &+ymand&no&+ylin&n of &+csight&n lies here.~
 ~
 32 15 3 0 5 0 8192 8404993 0 0 0
 186 55 0 40 0 0 0 0
-0 8666 100
+0 8666 100 100
 #29482
 leather apron~
 &+La&n &+yl&+Ye&+ya&+Yt&+yh&+Ye&+yr&n &+Lapron&n~
@@ -921,7 +921,7 @@ leather apron~
 ~
 9 15 3 0 5 0 0 9 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 2 6
 A
@@ -933,7 +933,7 @@ A weird &+ggreen&n bottle sits here.~
 ~
 10 7 3 0 5 0 4096 16385 0 0 0
 30 43 0 0 0 0 0 0
-0 3455 100
+0 3455 100 100
 #29484
 moss patch~
 &+ga patch of moss&n~
@@ -941,7 +941,7 @@ A patch of &+gmoss&n lies here along the rocks.~
 ~
 15 30 3 0 5 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 moss~
   &+GA large tangle of moss where something could easily be hidden.&n
@@ -953,7 +953,7 @@ many-pocked many pocketed garden trousers~
 ~
 15 3 2 0 9 0 0 33 0 0 0
 400 0 0 400 0 0 0 0
--200 11332 100
+-200 11332 100 100
 E
 many-pocked many pocketed garden trousers~
    &+yThese soft pants have been finely stitched with intricate gnomish
@@ -971,7 +971,7 @@ sign~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
   |\ _________________________________________________\
@@ -999,7 +999,7 @@ black skirt~
 ~
 9 3 3 0 5 0 0 33 0 0 0
 0 0 0 0 0 0 0 0
-0 5333 100
+0 5333 100 100
 A
 13 8
 A

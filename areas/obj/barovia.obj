@@ -5,7 +5,7 @@ sign wooden~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign wooden~
    &+LThis sign, crafted from Svalich Wood, reads '&+GWelcome to the
@@ -18,7 +18,7 @@ wooden sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden sign~
    &+yThis wooden sign is scrolled with a deep magenta inking agent and it
@@ -33,7 +33,7 @@ small dirty key~
 ~
 18 15 3 0 7 0 0 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small dirty key~
    &+WThis small dirty key is cacked with dirty and fingerprints.
@@ -45,7 +45,7 @@ battered wooden sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 battered wooden sign~
    &+yThis battered wooden sign looks to have been painted very well with
@@ -63,7 +63,7 @@ half-buried coffin~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 500 5 500 50 0 0 0 0
-0 0 83
+0 0 83 100
 E
 half-buried coffin~
    &+LThis coffin made of pure Svalich wood, a hard and excellent source of
@@ -78,7 +78,7 @@ remnants carcass~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 500 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 remnants corpse~
    &+LChunks of rotting flesh of a freshly killed victim of Barovia rests
@@ -94,7 +94,7 @@ slender wooden baton _id_~
 ~
 3 6 3 0 7 0 4096 16385 64 0 0
 50 62 48 58 0 0 0 0
-0 50555 100
+0 50555 100 100
 E
 slender wooden baton~
    &+yEngraved onto the side of this small wooden baton are the words:
@@ -124,7 +124,7 @@ gem studded gold cufflinks~
 ~
 8 24 3 0 14 0 4096 20481 0 0 0
 0 0 0 0 0 0 0 0
-0 1888000 100
+0 1888000 100 100
 E
 gem studded gold cufflinks~
    &+YSimple gem-studded gold cufflinks from afar, but up close the intricacies
@@ -141,7 +141,7 @@ stone grave marker~
 ~
 29 15 3 0 7 0 4096 0 0 0 0
 270 91126 5 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 stone grave marker~
    &+LThis square stone marker is the same as all of the rest in the
@@ -158,7 +158,7 @@ sign~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
 &+L'Arcana -
@@ -174,7 +174,7 @@ dead body kolyan indirovich~
 ~
 15 2 3 0 7 0 0 16385 0 0 0
 400 0 0 50 0 0 0 0
-150 1 97
+150 1 97 100
 E
 dead body kolyan indirovich~
    &+WThis body is about one hundred and fifty pounds heavy, quite light
@@ -191,7 +191,7 @@ small journal symbol pelor~
 ~
 33 28 3 0 11 0 4096 8404993 0 0 0
 0 0 187 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 small journal symbol pelor~
    &+WLatest Entry (Before the Invasion):
@@ -223,7 +223,7 @@ overturned wagon~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 overturned wagon~
    &+yThis wagon lies here, overturned in the mud.  The horses that
@@ -238,7 +238,7 @@ debris limbs~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 500 0 0 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 blood chunks limbs~
    &+LChunks of rotting flesh of a freshly killed victim of Barovia rests
@@ -254,7 +254,7 @@ carcass eater proc 1~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 4 4 0 7 1000428365 57 20
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+L$n suddenly unhinges its massive, drooping &+rjaws&+L as its face screws
@@ -282,7 +282,7 @@ silver horse shoe~
 ~
 8 22 3 0 10 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 55000 100
+1 55000 100 100
 E
 silver horse shoe~
    &+CThis silver horse shoe looks like a perfect fit for any riding horse.
@@ -296,7 +296,7 @@ holy bible scribbled notes book~
 ~
 33 28 3 0 9 0 0 8404993 0 0 0
 0 0 100 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 page3~
 
@@ -367,7 +367,7 @@ church altar~
 ~
 15 34 3 0 11 0 0 0 0 0 0
 100 5 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 church altar~
    &+WThis altar rests here facing the pews and congregation seating area
@@ -383,7 +383,7 @@ gold chalice~
 ~
 8 24 3 0 14 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 855000 100
+1 855000 100 100
 E
 gold chalice~
    &+YThis golden chalice is adorned with fine gems and crystals.  The chalice
@@ -397,7 +397,7 @@ bottle healing salve~
 ~
 10 15 3 0 7 0 0 16385 0 0 0
 50 438 438 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bottle healing salve~
    &+WThis tiny glass bottle is filled with glorious &+Chealing salve&+W.
@@ -409,7 +409,7 @@ lightbringer bracelet pelor~
 ~
 9 25 3 0 12 0 0 4097 66 0 0
 7 0 0 5 0 0 0 0
-2 55000 100
+2 55000 100 100
 E
 lightbringer bracelet pelor~
    &+WThis platinum bracelet is encrusted with a magical holy symbol
@@ -427,7 +427,7 @@ bloody holy symbol brooch~
 ~
 9 27 3 0 11 0 4096 2113537 64 0 0
 1 0 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 bloody holy symbol brooch~
    &+WThis small brooch is actually that of a holy symbol.  It is of the
@@ -443,7 +443,7 @@ note~
 ~
 8 28 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 note~
    &+WIsmark,
@@ -465,7 +465,7 @@ blood-soaked cleaver~
 ~
 5 16 3 0 9 0 0 8193 0 0 0
 1 3 5 0 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 blood-soaked cleaver~
    &+rThis cleaver is completely drenched in blood, from handle to blade.
@@ -477,7 +477,7 @@ wrecked cart~
 ~
 29 6 3 0 7 0 0 0 0 0 0
 270 91099 8 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wrecked cart~
    &+yThis large cart has a set of supports with a massive covering
@@ -496,7 +496,7 @@ pulsing orb~
 ~
 1 7 3 0 7 0 67117057 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pulsing orb~
    &+BWhen one gazes into this orb, they are overcome with dizzyness.
@@ -514,7 +514,7 @@ rare electrum coin~
 ~
 8 23 3 0 12 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 rare electrum coin~
    &+CThis rare coin has ancient engravings on it.  Back when electrum
@@ -530,7 +530,7 @@ diamond engagement ring~
 ~
 9 27 3 0 12 0 4096 3 0 0 0
 5 0 0 3 0 0 0 0
-0 352582 100
+0 352582 100 100
 E
 diamond engagement ring~
    &+WThis glorious engagement ring has a massive, perfectly cut
@@ -544,7 +544,7 @@ tiny diorite ear stud~
 ~
 9 11 3 0 11 0 0 524289 64 0 0
 8 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 tiny diorite ear stud~
    &+LExquisitely carved, this tiny diorite ear stud is of a
@@ -562,7 +562,7 @@ tiny diorite ear stud~
 ~
 9 11 3 0 11 0 0 524289 64 0 0
 8 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 tiny diorite ear stud~
    &+LExquisitely carved, this tiny diorite ear stud is of a
@@ -580,7 +580,7 @@ carved diorite bracer~
 ~
 9 11 3 0 11 0 0 4097 64 0 0
 8 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 carved diorite bracer~
    &+LThis small bracer is carved of intricate d&+rio&+Lr&+ri&+Lte.
@@ -596,7 +596,7 @@ carved diorite bracer~
 ~
 9 11 3 0 11 0 0 4097 64 0 0
 8 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 carved diorite bracer~
    &+LThis small bracer is carved of intricate d&+rio&+Lr&+ri&+Lte.
@@ -612,7 +612,7 @@ serpentine diorite band~
 ~
 9 11 3 0 11 0 0 3 64 0 0
 5 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 serpentine diorite band~
    &+LThis small diorite band has been crafted with an incredible
@@ -629,7 +629,7 @@ spider-shaped diorite ring~
 ~
 9 11 3 0 11 0 0 3 64 0 0
 5 0 0 4 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 spider-shaped diorite ring~
    &+LThis tiny ring has been intricately carved, possibly with
@@ -648,7 +648,7 @@ hammer-headed wand~
 ~
 3 15 3 0 7 0 1 16385 64 0 0
 60 11 11 413 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hammer-headed wand~
    &+BThis simple blue wand has a large hammer on the head of it.
@@ -664,7 +664,7 @@ stone tablet liber blaspheme~
 ~
 4 6 3 0 2 0 33554560 16385 64 0 0
 60 7 7 143 0 0 0 0
-10 5000 100
+10 5000 100 100
 E
 stone tablet liber blaspheme~
    &+LThis ancient stone tablet has markings of great evil and
@@ -682,7 +682,7 @@ heart blaspheme~
 ~
 8 2 3 0 7 0 8392705 16385 64 0 0
 0 0 0 0 0 0 0 0
-5 10 100
+5 10 100 100
 E
 heart blaspheme~
    &+LThis is the dark heart of Doru, son of Danovich.  Doru, raised
@@ -698,7 +698,7 @@ gate key barovia~
 ~
 18 11 3 0 8 0 134217728 16385 0 0 0
 0 100 0 0 0 0 0 0
-2 10 100
+2 10 100 100
 E
 gate key barovia~
    &+LThis key to the gate of Barovia is cracked, and seems like it
@@ -712,7 +712,7 @@ note plan ambush~
 ~
 8 28 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 153 100
+0 153 100 100
 E
 note plan~
    &+WHossa,
@@ -734,7 +734,7 @@ hazy green gloves~
 ~
 9 3 3 0 11 0 1 129 64 0 0
 10 0 0 4 0 0 0 0
-1 18953 100 2 12288 0 0
+1 18953 100 100 2 12288 0 0
 E
 hazy green gloves~
    &+GThese gloves sparkle with a unique magic essence.  The gloves
@@ -752,7 +752,7 @@ utility belt poisoning agents~
 ~
 9 3 3 0 11 0 67117056 2049 0 0 0
 10 0 0 3 0 0 0 0
-0 35009 100 536944640 12480 0 0
+0 35009 100 100 536944640 12480 0 0
 E
 utility belt poisoning agents~
    &+LThis utility belt has numerous bottles of poisoning agents
@@ -770,7 +770,7 @@ bandedmail crest mail~
 ~
 9 35 3 0 11 0 67118080 9 0 45793723 0
 47 0 0 4 0 0 0 0
-5 109568 100 524288 0 0 0
+5 109568 100 100 524288 0 0 0
 E
 bandedmail crest mail~
    &+LThis &+Wbandedmail &+Lis exquisitely made, worn by the highest level
@@ -790,7 +790,7 @@ golden wrench~
 ~
 8 24 3 0 11 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 159233 100
+1 159233 100 100
 E
 golden wrench~
    &+YThis golden wrench is masterfully crafted out of the purest gold.
@@ -802,7 +802,7 @@ golden compass locket~
 ~
 8 24 3 0 10 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 154382 100
+1 154382 100 100
 E
 golden compass locket~
    &+YThis fine golden locket is made with incredible percision.
@@ -814,7 +814,7 @@ small delicate bell blue~
 ~
 8 16 3 0 11 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 15049 100
+0 15049 100 100
 E
 small delicate bell blue~
    &+BThis small blue bell is made of a magical metal and seems to
@@ -827,7 +827,7 @@ thin adamantium hair pin~
 ~
 9 15 3 0 7 0 4097 2097153 0 0 0
 1 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 thin adamantium hair pin~
    &+MThis hair pin is a thin sliver of adamantium.
@@ -841,7 +841,7 @@ silver spoon~
 ~
 8 22 3 0 10 0 4096 16385 1 0 0
 0 0 0 0 0 0 0 0
-1 8454 100
+1 8454 100 100
 E
 silver spoon~
    &+CThis small spoon is crafted very nicely by hand.
@@ -853,7 +853,7 @@ time warp mask~
 ~
 9 1 3 0 15 0 33554496 262145 0 0 0
 10 0 0 5 0 0 0 0
--10 185424 100 16 0 0 0
+-10 185424 100 100 16 0 0 0
 E
 time warp mask~
    &+LThis 'mask' is more like a chunk of space-time.  When worn, the
@@ -872,7 +872,7 @@ wyrm scale leggings blood-stained~
 ~
 9 15 3 0 7 0 0 33 64 0 0
 15 0 0 5 0 0 0 0
-0 0 100 134217728 28 0 0
+0 0 100 100 134217728 28 0 0
 A
 23 -4
 A
@@ -884,7 +884,7 @@ vistani dagger~
 ~
 5 15 3 0 5 0 67117056 8193 67 0 0
 2 2 6 0 0 0 0 0
-1 15000 100
+1 15000 100 100
 E
 vistani dagger~
    &+LThis small black dagger bares the cloak and dagger symbol
@@ -901,7 +901,7 @@ diorite shard seeker~
 ~
 5 15 3 0 5 0 67118080 8193 67 9302048 0
 2 4 3 0 4 71 53 30
-1 15000 100
+1 15000 100 100
 E
 vistani dagger~
    &+LThis small black dagger bares the cloak and dagger symbol
@@ -930,7 +930,7 @@ diorite cross wrapped skin~
 ~
 9 11 3 0 11 0 4096 524289 64 0 0
 4 0 0 4 0 0 0 0
-1 15049 100 0 64 0 0
+1 15049 100 100 0 64 0 0
 E
 diorite cross wrapped skin~
    &+LThis small diorite earring has been wrapped in skin.
@@ -946,7 +946,7 @@ carcass eater proc 2~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 5 5 0 7 439 57 22
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+L$n &+Lsuddenly leaps upon &N$N&+L, biting down with its &+Wmassive jaw&+L!
@@ -969,7 +969,7 @@ entomber proc~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 5 5 0 7 246 57 19
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+LWithout warning, $n &+Ldrives its skeletal &+mundead&+L arms
@@ -989,7 +989,7 @@ vargouille proc~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 5 5 0 7 1101101100 58 10
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &+W$n &+Wstares into the eyes of $N!&N
@@ -1009,7 +1009,7 @@ zombie proc1~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 5 5 0 7 33186 57 11
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &N$n &Nlunges forward, &+rbiting &N$N viciously!&N
@@ -1029,7 +1029,7 @@ zombie proc2~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 5 5 0 7 71033 57 10
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &N$n &Nsavagely &+Rbites &N$N&N, &+Wfuming&N with an unsatable hunger!&N
@@ -1049,7 +1049,7 @@ zombie proc3~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 5 5 0 7 103033 57 10
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &N$n &+Ldescends &Nupon $N, viciously &+rbiting&N and snarling!&N
@@ -1070,7 +1070,7 @@ massive blood-stained holy avenger~
 ~
 5 16 4 0 5 0 4194304 8193 75 0 0
 13 4 6 0 0 0 0 0
-10 15000 100
+10 15000 100 100
 A
 18 5
 A
@@ -1082,7 +1082,7 @@ danovich proc~
 ~
 5 15 3 0 7 0 2 8192 0 0 0
 6 7 5 0 0 121009 57 12
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &N$n &+Wshouts '&-L&+WBegone $N!!&+W'&n
@@ -1098,7 +1098,7 @@ vargouille blood bottle~
 ~
 10 15 3 0 5 0 0 16385 0 0 0
 60 407 0 0 77 0 0 0
-0 0 100
+0 0 100 100
 E
 vargouille blood bottle~
    &+rThe blood of a disgusting &+yvargouille&+L.
@@ -1110,7 +1110,7 @@ bloody black steel rapier~
 ~
 5 16 3 0 11 0 0 8193 67 0 0
 5 2 4 0 0 0 0 0
-2 15004 100
+2 15004 100 100
 E
 bloody black steel rapier~
    &+LThis long, thin sword is very light but deathly sharp.  It is still
@@ -1128,7 +1128,7 @@ studded dragonscale neck guard neckguard~
 ~
 9 35 3 0 12 0 67117056 5 2 0 0
 18 0 0 0 0 0 0 0
-0 23424 100 536870912 0 0 0
+0 23424 100 100 536870912 0 0 0
 E
 studded dragonscale neck guard neckguard~
    &+LThis neckguard has been made of dozens of &+rred &+Ldragon scales,
@@ -1145,7 +1145,7 @@ suit platinum plate crest pelor~
 ~
 9 15 3 0 5 0 1024 9 64 101335481 0
 130 0 0 4 0 0 0 0
-0 0 100 512 32768 0 0
+0 0 100 100 512 32768 0 0
 E
 suit platinum plate crest pelor~
 &+WThis brilliant white platemail is worn by the glorious white
@@ -1164,7 +1164,7 @@ hidden opening~
 ~
 25 15 3 0 7 0 4096 0 0 0 0
 91163 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 hidden opening~
 &+LThis hidden opening has been revealed through the bottom of the
@@ -1179,7 +1179,7 @@ grim visage mad woman madwoman~
 ~
 9 2 3 0 14 0 103817408 262145 64 0 0
 40 0 0 4 0 0 0 0
--50 15034 100 524288 0 0 0
+-50 15034 100 100 524288 0 0 0
 E
 grim visage mad woman madwoman~
    &+gThis frozen expression is that of &+MMad Mary&N&+g, an old mother of Barovia.

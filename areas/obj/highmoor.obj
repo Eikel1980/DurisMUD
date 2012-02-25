@@ -5,7 +5,7 @@ hide saliva leucrotta~
 ~
 9 12 0 0 7 0 0 1025 0 0 0
 8 9 1 3 0 0 0 0
-3 8500 100
+3 8500 100 100
 E
 hide saliva leucrotta~
 &+y   This hide seems to have been treated by the original owner with its
@@ -23,7 +23,7 @@ maple tree blue blueleaf~
 ~
 12 6 0 0 7 0 262144 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 maple tree blue blueleaf~
 &+B   Barely visible beneath the growing &+Gmoss&+B and &+ydirt&+B, are carved the initials
@@ -37,7 +37,7 @@ snapper saw berry~
 ~
 19 2 2 2 7 0 8192 20485 0 0 0
 8 0 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 berry greenish-white~
 &+W   This edible berry is just smaller than a sling rock, and smells
@@ -50,7 +50,7 @@ beetle shell molted~
 ~
 9 10 0 0 7 0 0 9 2 4169510912 0
 20 3 1 3 0 0 0 0
-11 1000 100
+11 1000 100 100
 E
 beetle shell molted~
 &+L   This shell is made of a very tough protein-based composite, and
@@ -63,7 +63,7 @@ crown yingin deepearth~
 ~
 9 5 3 8 10 0 131072 17 66 0 0
 8 4 16 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 crown yingin deepearth~
 &+W   This magnificent crown is an elaborate helmet-like item of &+Ygold&+W and
@@ -81,7 +81,7 @@ suit cloth forest-green~
 ~
 9 3 3 8 7 0 0 9 0 0 0
 15 3 1 3 0 0 0 0
-5 2500 100
+5 2500 100 100
 E
 duit cloth forest-green~
 &+g   This cloth suit is one commonly worn by young rangers, forest druids, and
@@ -98,7 +98,7 @@ A thick, &+ybark&n bounded book with an inverted cross lies here.&n~
 ~
 13 4 2 5 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-6 0 100
+6 0 100 100
 E
 book bark thick~
 &+W
@@ -124,7 +124,7 @@ Buried among the books lies a &+Lwrinkled&n journal made of &+Ypapaya&n leaves.&
 ~
 13 29 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 wrinkled papaya journal~
 &+W                               ...
@@ -158,7 +158,7 @@ patch wovynn~
 ~
 9 6 0 0 7 0 8192 4097 2 0 0
 6 11 24 3 0 0 0 0
-2 440 100
+2 440 100 100
 E
 patch wovynn~
 &+Y   This patch is composed of a conglomerate of earthen materials, held loosely
@@ -175,7 +175,7 @@ clay shard petrified~
 ~
 5 9 3 0 7 0 0 24577 0 0 0
 2 2 6 11 0 0 0 0
-13 2000 100
+13 2000 100 100
 E
 clay shard petrified~
 &+L   This extremely sharp piece of petrified clay could probably pierce through
@@ -192,7 +192,7 @@ shrine driftwood bone~
 ~
 15 10 3 0 7 0 1 0 0 0 0
 100 16 19111 100 0 0 0 0
-500 0 100
+500 0 100 100
 E
 shrine driftwood bone~
 &+wThis shrine, oddly constructed of cured &+Ydrift&+ywood &+w and broke, sometimes
@@ -207,7 +207,7 @@ key driftwood bone~
 ~
 18 10 1 1 7 0 8388609 16385 64 0 0
 0 10 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key driftwood bone~
 &+wThis key has engraved into the side of it a symbol of the &+Bserpent&+w.&n
@@ -219,7 +219,7 @@ scale banded copperhead~
 ~
 37 12 0 0 7 0 8192 513 2 4165209604 0
 2 1 3 8 3 0 0 0
-3 23000 100
+3 23000 100 100
 E
 scale banded copperhead~
 &+rThis scale was a piece of an ancient banded copperhead snake, one of the
@@ -237,7 +237,7 @@ hoorgash troll head~
 ~
 9 2 0 0 7 0 65664 17 0 4173708804 0
 10 4 1 3 0 0 0 0
-5 21500 100
+5 21500 100 100
 E
 head hoorgash troll~
 &+gThis semi-animated head of &+Gtroll&+g will allow its wearer to be much more
@@ -254,7 +254,7 @@ hide mottled troll skin~
 ~
 9 12 3 8 7 0 0 1025 0 0 0
 12 9 1 3 0 0 0 0
-3 22000 100
+3 22000 100 100
 E
 hide mottled troll skin~
 &+WThis skin seems to have been ripped from the body of a large ettin.&n
@@ -270,7 +270,7 @@ boulder rock~
 ~
 5 11 3 0 7 0 0 8193 66 0 0
 10 4 4 6 0 0 0 0
-6 4300 100
+6 4300 100 100
 E
 boulder rock~
 &+YThis small boulder has 5 somewhat large holes carved into it that you think
@@ -288,7 +288,7 @@ sign~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 sign~
 &+Y .-"-._,-'_`-._,-'_`-._,-'_`-._,-'_`-,_,-'_`-,_,-'_`-,_,-'_`-,_,-'_`-,
@@ -317,7 +317,7 @@ well quartz stone~
 ~
 17 11 0 0 7 0 262144 0 0 0 0
 10 10 27 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 well quartz stone~
 &+wThe well is made up of smooth, &+Ldark&+w stone and tiny pieces of &+Gbright green&n
@@ -332,7 +332,7 @@ polearm guisarme voulge~
 ~
 5 16 4 0 7 0 4194304 8193 64 4198895524 0
 8 3 8 3 0 0 0 0
-20 20000 100
+20 20000 100 100
 E
 polearm guisarme voulge~
 &+Y   Attached to the end of a six-foot long wooden staff is a curved axe-head.
@@ -350,7 +350,7 @@ inverted cross cloak~
 ~
 9 3 3 8 7 0 8192 1025 64 0 0
 7 9 1 3 0 0 0 0
-0 14000 100 65536 8 0 0
+0 14000 100 100 65536 8 0 0
 E
 inverted cross cloak~
 &+L   This cloak carries the impression that it is used to worship a god that
@@ -368,7 +368,7 @@ branch oak gnarled~
 ~
 5 5 3 0 7 0 0 24577 0 0 0
 10 5 1 7 0 0 0 0
-4 120 100
+4 120 100 100
 E
 branch oak gnarled~
 &+y   This branch is sufficiently heavy enough to be swung at a victim to cause
@@ -385,7 +385,7 @@ bamboo tube~
 ~
 9 41 0 0 7 0 8320 16389 66 0 0
 7 2 1 3 0 0 0 0
-3 12140 100
+3 12140 100 100
 E
 bamboo tube~
 &+Y   This bamboo tube looks like it is used to carry notes and messages and
@@ -402,7 +402,7 @@ An extremely sharp talon digs into the floor here, looking large for its type.&n
 ~
 5 10 3 0 7 0 0 8193 0 4248567899 0
 2 3 4 11 0 0 0 0
-2 32300 100
+2 32300 100 100
 E
 overgrown talon~
 &+w   This talon must have been used as an extremely effective weapon by its
@@ -421,7 +421,7 @@ key triangle moss~
 ~
 18 30 1 1 7 0 8486912 16385 0 0 0
 0 20 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key triangle moss~
 &+gThis triangular looking shape looks as if its meant to fit into an object,
@@ -434,7 +434,7 @@ vest bleached bone~
 ~
 9 10 0 0 7 0 128 9 0 0 0
 11 3 1 3 0 0 0 0
-6 9500 100
+6 9500 100 100
 E
 vest bleached bone~
 &+w   This vest is comprised of what looks to be many &+Wrib bones&+w tied together with
@@ -449,7 +449,7 @@ spear martyr's dual-shafted~
 ~
 5 16 4 0 7 0 8320 8193 64 0 0
 8 3 3 11 0 0 0 0
-11 2100 100
+11 2100 100 100
 E
 spear martyr's dual-shafted~
 &+W   This spear has two long shafts that are molded together and attached to
@@ -465,7 +465,7 @@ vial paste granite~
 ~
 10 37 2 4 7 0 102400 16385 64 0 0
 31 1 141 36 0 0 0 0
-1 30000 100
+1 30000 100 100
 E
 vial paste granite~
 &+L   This vial is made of a solid piece of dark rock, carved to a smooth finish
@@ -478,7 +478,7 @@ copper shield~
 ~
 37 21 3 15 7 0 0 513 0 0 0
 2 1 3 158 3 0 0 0
-9 1200 100
+9 1200 100 100
 E
 copper shield~
 &+LThis round piece of &+Ycopper&+L makes for a nice shield once you strap your
@@ -495,7 +495,7 @@ swirl rocks sand~
 ~
 5 11 3 0 7 0 8320 8193 64 0 0
 10 5 4 6 0 0 0 0
-6 100 100
+6 100 100 100
 E
 swirl rocks sand~
 &+WThis swirling, animated mass of &+Yrock&+W and &+ysand&+W can cause serious damage to
@@ -512,7 +512,7 @@ vial red liquid~
 ~
 10 40 2 4 7 0 73729 16385 66 0 0
 50 108 -1 -1 0 0 0 0
-10 50000 100
+10 50000 100 100
 E
 vial red liquid~
 &+rThis vial vibrates with a hurried magical energy, both forceful and fleeting.&n
@@ -524,7 +524,7 @@ pile equipment writings~
 ~
 15 16 3 0 7 0 8421376 0 0 0 0
 100 0 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 E
 pile equipment writings~
 &+L   Broken flasks, spilled containers housing &+Ybody parts&+L of all shapes and
@@ -538,7 +538,7 @@ large cage solid~
 ~
 15 16 3 0 7 0 8421376 0 0 0 0
 100 1 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 E
 large cage solid~
 &+W   This cage is built of 3/4 inch steel rods welded together every four
@@ -553,7 +553,7 @@ crack~
 ~
 15 11 3 0 7 0 2 0 0 0 0
 5 0 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 E
 crack~
 &+LThe crack is very narrow, but you think that there is a &+Wshiny&+L piece of &+wshell
@@ -566,7 +566,7 @@ shell river fire-treated~
 ~
 18 10 1 1 7 0 8388608 1 64 0 0
 0 25 0 0 0 0 0 0
-1 100 100
+1 100 100 100
 E
 shell river fire-treated~
 &+wThis shell has been &+rfire-treated&+w by a very high temperature &+Rflame&+w.  A curious
@@ -580,7 +580,7 @@ mahogany key~
 ~
 18 16 1 1 7 0 8429600 16385 0 0 0
 0 10 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 mahogany key~
 &+y   This key is made of a very high grade of colonial &+rmah&+yoga&+rny&+y, and contains
@@ -594,7 +594,7 @@ wood waxed smoldering~
 ~
 4 6 3 10 7 0 368640 16385 66 0 0
 56 1 1 47 0 0 0 0
-3 19000 100
+3 19000 100 100
 E
 wood waxed smoldering~
 &+Y   This short but thick piece of &+ywood&+Y slowly hums with excitement in your
@@ -612,7 +612,7 @@ hexagon ethereal life-force~
 ~
 9 1 0 0 7 0 128 2097153 66 0 0
 8 16 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 hexagon ethereal life-force~
 &+L  This hexagon gives off a felling of wellness despite its evil looking
@@ -627,7 +627,7 @@ surgical scalpel~
 ~
 5 16 2 0 7 0 128 8193 64 4194697632 0
 2 2 7 11 0 0 0 0
-3 1200 100
+3 1200 100 100
 E
 surgical scalpel~
 &+mBent from overuse, this scalpel is still VERY sharp to the touch.&n
@@ -643,7 +643,7 @@ canoe ship long slender~
 ~
 22 6 0 50 7 0 8192 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 4352 100
+5 4352 100 100
 E
 canoe ship long slender~
 &+Y   This canoe is clearly designed to be a quick and easy way to enter an
@@ -658,7 +658,7 @@ fire flaming~
 ~
 1 1 0 0 7 0 8650752 0 0 0 0
 0 0 40 0 0 0 0 0
-500 0 100
+500 0 100 100
 E
 fire flaming~
 &+rThis fire provides a welcomed warmth against the &+bcold breeze&+r coming in off
@@ -671,7 +671,7 @@ sword weed scarab~
 ~
 5 16 3 10 7 0 8320 8193 0 4198895524 0
 5 3 3 3 0 0 0 0
-5 1900 100
+5 1900 100 100
 E
 sword weed scarab~
 &+g   This sword is nothing more than a whole &+Gscarab &+Yweed&+g, a plant that
@@ -690,7 +690,7 @@ tin key concave~
 ~
 18 16 1 1 7 0 8421536 16385 0 0 0
 0 10 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 tin key concave~
 &+w   This thin piece of metal is bent in a peculiar shape, and looks like it is
@@ -704,7 +704,7 @@ species sack holding~
 ~
 15 3 3 10 7 0 73728 18433 0 0 0
 500 1 0 100 0 0 0 0
-1 9900 100
+1 9900 100 100
 E
 species sack holding~
 &+mThis sack can hold quite alot considering it is meant to normally contain
@@ -721,7 +721,7 @@ spiked net capture~
 ~
 3 12 2 4 7 0 41088 16385 64 4248567899 0
 36 2 2 101 1 0 0 0
-1 32000 100
+1 32000 100 100
 E
 spiked net capture~
 &+YIt looks like this net could probably be used to make a captured creature
@@ -738,7 +738,7 @@ paladin corpse decaying~
 ~
 15 2 3 30 7 0 8192 0 0 0 0
 100 0 0 100 0 0 0 0
-500 0 100
+500 0 100 100
 E
 paladin corpse decaying~
    The fallen paladin hasn't been here for too long, perhaps 2 months, and
@@ -751,7 +751,7 @@ poker flaming~
 ~
 5 16 3 0 10 0 263297 8193 64 8515584 0
 8 2 8 11 0 0 0 0
-3 23000 100
+3 23000 100 100
 E
 poker flaming~
 &+rThis rod is actually a flame that stays stiff and when deposited in another
@@ -768,7 +768,7 @@ eye gorgimera xiizhaha~
 ~
 9 2 0 0 7 0 41089 147457 66 0 0
 5 18 0 3 0 0 0 0
-4 10000 100 32 8 0 0
+4 10000 100 100 32 8 0 0
 E
 eye gorgimera xiizhaha~
 &+r   This eye is composed of the very essence of both the &+Lastral&+r and &+Lethereal&n
@@ -785,7 +785,7 @@ script passage scroll~
 ~
 2 29 1 2 7 0 65664 2097153 66 0 0
 50 -1 -1 -1 0 0 0 0
-1 34000 100
+1 34000 100 100
 E
 script passage scroll~
 &+w   This parchment is decorated with symbols that are quite hard to comprehend.
@@ -801,7 +801,7 @@ skull wax-filled~
 ~
 1 10 0 0 7 0 262144 0 0 0 0
 0 0 30 0 0 0 0 0
-500 0 100
+500 0 100 100
 E
 skull wax-filled~
 &+w   Whether used to intimidate, or simply as a convenient substitute to
@@ -815,7 +815,7 @@ rock key emerald~
 ~
 18 32 1 1 7 0 8454153 16385 64 0 0
 0 5 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 rock key emerald~
 &+y   This bright &+Ggreen emerald&+y has &+Lrock&+y encrusted on it in such a manner
@@ -828,7 +828,7 @@ leg plates chitaneous~
 ~
 9 5 3 8 7 0 32768 33 64 0 0
 10 5 1 3 0 0 0 0
-6 12000 100
+6 12000 100 100
 E
 leg plates chitaneous~
 &+g   These leg plates still contain raw &+Yflesh&+g on the inside edges, and
@@ -843,7 +843,7 @@ mandible sharpened~
 ~
 5 10 3 0 7 0 8320 8193 0 4165209604 0
 2 3 4 3 0 0 0 0
-7 5500 100
+7 5500 100 100
 E
 mandible sharpened~
 &+y   This mandible once faithfully served its original owner as a sure means
@@ -860,7 +860,7 @@ exoskeleton key~
 ~
 18 16 1 1 7 0 8388736 16385 64 0 0
 0 20 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 exoskeleton key~
 &+W   This key is actually the &+Wexoskeleton&+W of some past creature, and gives
@@ -873,7 +873,7 @@ necklace teeth ground~
 ~
 9 10 3 2 7 0 8421377 5 66 0 0
 5 2 0 3 0 0 0 0
-3 11000 100
+3 11000 100 100
 E
 necklace teeth ground~
 &+r   This necklace is a collection of flattened, wide &+Wteeth&+r, the ends of
@@ -890,7 +890,7 @@ glass vial bubble~
 ~
 10 7 2 4 7 0 73728 16385 64 0 0
 40 61 66 -1 0 0 0 0
-2 13000 100
+2 13000 100 100
 E
 glass vial bubble~
 &+mThis &+Wglass&+m bubble has an inscription of some foreign language unfamiliar to you.&n
@@ -902,7 +902,7 @@ stalk eyes three~
 ~
 13 2 2 0 7 0 1082138656 17 2 0 0
 0 0 0 0 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 stalk eyes three~
    &+GThis three-eyed juicy eyestalk flips and flops in your hands, the
@@ -915,7 +915,7 @@ silver mandibles inlaid~
 ~
 5 22 3 0 7 0 4268161 8193 0 0 0
 2 4 5 3 0 0 0 0
-5 20000 100 16 0 0 0
+5 20000 100 100 16 0 0 0
 E
 silver mandibles inlaid~
 &+W   These mandibles are so beautifully inlaid with &+wsilver&+W that it would
@@ -930,7 +930,7 @@ feathered token~
 ~
 9 3 0 0 7 0 33792 2097153 64 33685920 0
 3 16 0 3 0 0 0 0
-2 19000 100
+2 19000 100 100
 E
 feathered token~
 &+W   This token is composed of a strange &+Ygold symbol&+W and a nicely arranged
@@ -948,7 +948,7 @@ vaporous cloak crimson death~
 ~
 9 1 3 8 7 0 270464 1025 0 0 0
 12 9 1 3 0 0 0 0
-1 20000 100 4 0 0 0
+1 20000 100 100 4 0 0 0
 E
 vaporous cloak crimson death~
 &+m   This cloak, by sight alone, makes one fear its wearer for the creature that
@@ -965,7 +965,7 @@ shell dragon turtle~
 ~
 9 10 0 0 7 0 106497 9 66 0 0
 20 3 1 3 0 0 0 0
-33 4200 100
+33 4200 100 100
 E
 shell dragon turtle~
 &+g   This shell, although a bit heavy on the person, seems it could withstand
@@ -982,7 +982,7 @@ lava chunk rock~
 ~
 5 11 3 3 7 0 0 24577 0 0 0
 2 3 3 11 0 0 0 0
-3 3000 100
+3 3000 100 100
 E
 lava chunk~
    &+LSomeone took this chunk of lava and sharpened it to a razor edge.
@@ -1000,7 +1000,7 @@ boots species tracking~
 ~
 9 12 3 0 10 0 8192 65 64 0 0
 10 0 0 3 0 0 0 0
-5 18000 100
+5 18000 100 100
 E
 boots species tracking~
    &+mThese boots are finely constructed of a very strong and smooth animal

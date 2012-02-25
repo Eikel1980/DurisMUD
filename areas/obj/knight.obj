@@ -5,7 +5,7 @@ A &+Wspeed key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70901
 green key~
 a &+Ggreen key&N~
@@ -13,7 +13,7 @@ A &+Ggreen key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70902
 blue key~
 a &+Bblue key&N~
@@ -21,7 +21,7 @@ A &+Bblue key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 19 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70903
 yellow key~
 a &+Yyellow key&N~
@@ -29,7 +29,7 @@ A &+Yyellow key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 20 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70904
 light red key~
 a &+Rlight red key&N~
@@ -37,7 +37,7 @@ A &+Rlight red key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 21 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70905
 crimson key~
 a &+rcrimson key&N~
@@ -45,7 +45,7 @@ A &+rcrimson key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 22 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70906
 grey key~
 a grey key~
@@ -53,7 +53,7 @@ A grey key lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 23 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70907
 assassin's assassin key~
 an &+Lassassin's key&N~
@@ -61,7 +61,7 @@ An &+Lassassin's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 28 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70908
 truth key~
 a &+Wtruth key&N~
@@ -69,7 +69,7 @@ A &+Wtruth key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 29 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70909
 paladin's paladin key~
 a &+Wpaladin's key&N~
@@ -77,7 +77,7 @@ A &+Wpaladin's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 30 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70910
 shaman's shaman key~
 a &+Wshaman's key&N~
@@ -85,7 +85,7 @@ A &+Wshaman's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 31 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70911
 cleric's cleric key~
 a &+Wcleric's key&N~
@@ -93,7 +93,7 @@ A &+Wcleric's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 32 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70912
 resilience key~
 a &+Mkey of resilience&N~
@@ -101,7 +101,7 @@ A &+Mkey of resilience&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 33 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70913
 conjurer's conjurer key~
 a &+Yconjurer's key&N~
@@ -109,7 +109,7 @@ A &+Yconjurer's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 34 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70914
 steel key~
 a &+Wsteel key&N~
@@ -117,7 +117,7 @@ A &+Wsteel key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 35 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70915
 necromancer's necromancer key~
 a &+Bnecromancer's key&N~
@@ -125,7 +125,7 @@ A &+Bnecromancer's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 36 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70916
 sorcerer's sorcerer key~
 a &+Bsorcerer's key&N~
@@ -133,7 +133,7 @@ A &+Bsorcerer's key&N lies here, unused.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 37 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 #70917
 covergence key~
 a &+Wkey of convergence&N~
@@ -141,7 +141,7 @@ A &+Wkey of convergence&N lies here, unused.~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 38 100 0 0 0 0 0 0
-20 5000 100
+20 5000 100 100
 E
 key convergence converge~
 The key is very large. On the round part of the key, there are
@@ -165,7 +165,7 @@ A &+Wglow-white mace&N lies here.~
 ~
 5 16 3 8 7 0 0 8193 64 4165209604 0
 6 2 8 6 0 0 0 0
-6 3000 100
+6 3000 100 100
 E
 _id_short_~
 &+Wa glowing-white mace of purity&n
@@ -181,7 +181,7 @@ A &+Ggreen axe&N lies here, unused.~
 ~
 5 16 3 8 7 0 1024 8193 0 87572571 0
 1 3 4 3 0 0 0 0
-7 3000 100
+7 3000 100 100
 E
 _id_short_~
 a &+Gforest-green &+ylumber &+Gaxe&n
@@ -197,7 +197,7 @@ The &+Rflaming &+Ysword of the sun&N lies here.~
 ~
 5 16 3 10 7 0 4194304 8193 0 4198895524 0
 13 3 7 3 0 0 0 0
-25 4000 100 0 1 0 0
+25 4000 100 100 0 1 0 0
 A
 19 4
 A
@@ -209,7 +209,7 @@ A &+rfaded red morningstar&N lies here.~
 ~
 5 16 3 8 7 0 4194304 8193 64 4165209604 0
 3 3 4 6 0 0 0 0
-12 5000 100
+12 5000 100 100
 E
 _id_short_~
 &+La vicious &+rfaded-red morningstar&n
@@ -225,7 +225,7 @@ A &+Rcrimson halberd&N lies here.~
 ~
 5 16 4 0 7 0 4195328 8193 0 87572571 0
 8 4 5 3 0 0 0 0
-24 2000 100
+24 2000 100 100
 E
 _id_short_~
 &+Ra crimson halberd &+rcaked in blood&n
@@ -241,7 +241,7 @@ A &+Wjagged edge&N of &+Bglass&N lies here.~
 ~
 5 7 3 0 7 0 1024 8193 0 8515584 0
 2 2 3 11 0 0 0 0
-1 1050 100
+1 1050 100 100
 A
 19 2
 A
@@ -253,7 +253,7 @@ Some fool has left &+yLobos' &+Lleather coat&N here.~
 ~
 9 13 3 8 13 0 1057792 9 64 8515584 0
 15 0 0 4 0 0 0 0
-10 5000 100 0 2048 0 0
+10 5000 100 100 0 2048 0 0
 A
 13 30
 A
@@ -265,7 +265,7 @@ A &+Rthroatcutter&N lies here.~
 ~
 5 16 2 0 7 0 1024 8193 0 12713476 0
 2 1 4 11 0 0 0 0
-1 200 100
+1 200 100 100
 A
 18 1
 A
@@ -277,7 +277,7 @@ A &+ysleek leather suit&N lies crumpled here.~
 ~
 9 13 0 0 7 0 536871936 9 0 8515584 0
 15 0 0 3 0 0 0 0
-5 2000 100
+5 2000 100 100
 #70927
 small blue piercer _id_~
 a &+bsmall blue piercer&N~
@@ -285,7 +285,7 @@ a &+bsmall blue piercer&N lies here.~
 ~
 5 16 2 0 7 0 0 8193 0 4198895524 0
 2 2 4 11 0 0 0 0
-4 3000 100
+4 3000 100 100
 E
 _id_short_~
 &+Ma vibrating &+bsmall blue piercer&n
@@ -301,7 +301,7 @@ A &+Wsmall cap&N lies here.~
 ~
 11 3 3 3 7 0 0 17 0 0 0
 0 0 0 0 0 0 0 0
-1 40 100
+1 40 100 100
 #70929
 small garb~
 a &+Wsmall garb&N~
@@ -309,7 +309,7 @@ A &+Wsmall garb&N lies here.~
 ~
 9 3 0 0 7 0 0 9 64 0 0
 7 0 0 3 0 0 0 0
-8 300 100
+8 300 100 100
 #70930
 bopper~
 a &+Wbopper&N~
@@ -317,7 +317,7 @@ A &+Wbopper&N lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 4165209604 0
 10 1 5 7 0 0 0 0
-3 400 100
+3 400 100 100
 #70931
 stabber~
 a &+Wstabber&N~
@@ -325,7 +325,7 @@ a &+Wstabber&N lies here.~
 ~
 5 16 3 0 7 0 0 8193 0 4194697632 0
 2 2 4 11 0 0 0 0
-1 300 100
+1 300 100 100
 #70932
 lyre harm instrument _id_~
 a &+Ylyre of harm&N~
@@ -333,7 +333,7 @@ A &+Ylyre of harm&N lies here, unplayed, and unsung.~
 ~
 32 6 3 15 7 0 9216 16385 0 8421376 0
 185 22 0 11 0 0 0 0
-0 4000 100 32 0 0 0
+0 4000 100 100 32 0 0 0
 E
 _id_short_~
 &+Ythe mystical lyre of &+Rharm&n
@@ -349,7 +349,7 @@ A &+Yc&+Ro&+Bl&+Wo&+Rr&+Mf&+Cu&+Gl &+Wcloak&N lies here.~
 ~
 11 3 3 8 7 0 2097153 1025 0 0 0
 0 0 0 0 0 0 0 0
-2 2000 100 0 2048 0 0
+2 2000 100 100 0 2048 0 0
 E
 _id_short_~
 a &+Yc&+Ro&+Bl&+Wo&+Rr&+Mf&+Cu&+Gl &+Cbard's cloak&N
@@ -363,7 +363,7 @@ A &+Mmusical dagger&N lies here.~
 ~
 5 16 2 3 7 0 128 8193 0 4194697632 0
 2 2 4 11 0 0 0 0
-4 1000 100
+4 1000 100 100
 E
 _id_short_~
 &+Mthe musical dagger &+mof Love&n
@@ -379,7 +379,7 @@ A &+Bsinger's lyre&N lies here.~
 ~
 32 6 3 15 7 0 1024 16385 0 8421376 0
 185 38 0 11 0 0 0 0
-3 300 100
+3 300 100 100
 #70936
 bowman's adamantium wristband band~
 &+ra bowman's &+Ladamantium&n &+rwristband&n~
@@ -387,7 +387,7 @@ bowman's adamantium wristband band~
 ~
 9 19 0 0 7 0 0 4097 64 0 0
 5 0 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 18 3
 A
@@ -399,7 +399,7 @@ Fists of steel lie here.~
 ~
 9 16 2 0 7 0 1024 129 0 8515648 0
 7 0 0 3 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 _id_short_~
 &+Lthe claws of the &+CSoulrender&n
@@ -415,7 +415,7 @@ A &+Wnecklace of human teeth&N lies here.~
 ~
 9 10 3 2 7 0 1024 5 64 4197892 0
 7 0 0 3 0 0 0 0
-0 4000 100
+0 4000 100 100
 E
 _id_short_~
 &+yan eloquent necklace of &+Wpearly-white human teeth&n
@@ -431,7 +431,7 @@ A &+bdark-blue robe of &+Wstars &+band &+Ymoons&N lies here.~
 ~
 9 3 3 8 13 0 33555456 1025 64 46567332 0
 10 0 0 4 0 0 0 0
-9 5000 100 64 0 0 0
+9 5000 100 100 64 0 0 0
 E
 _id_short_~
 &+bthe dark-blue robe of &+Wthe heavens&n
@@ -447,7 +447,7 @@ The &+Bbag of impossibilities&N lies crumpled here.~
 ~
 15 3 3 0 13 0 8192 8404993 0 0 0
 700 1 0 500 0 0 0 0
--150 5000 100
+-150 5000 100 100
 #70941
 sharp blade dripping blood dagger _id_~
 a &+Wsharp blade dripping with &+Rblood&N~
@@ -455,7 +455,7 @@ A &+Wsharp blade dripping with &+Rblood&N lies here.~
 ~
 5 16 3 10 7 0 0 8193 0 4198895524 0
 2 3 4 3 0 0 0 0
-7 2500 100
+7 2500 100 100
 E
 _id_short_~
 &+Wa sharpened-bone dagger &+rstained with blood&n
@@ -471,7 +471,7 @@ The &+Rmighty hammer of volheru&N lies here.~
 ~
 5 18 3 0 13 0 4195456 8193 0 87572571 0
 4 4 8 6 0 0 0 0
-7 3000 100
+7 3000 100 100
 A
 18 6
 A
@@ -483,7 +483,7 @@ The &+Wgauntlets of pounding&N lie here.~
 ~
 9 16 3 5 7 0 1025 129 0 87572571 0
 12 0 0 5 0 0 0 0
-2 3000 100
+2 3000 100 100
 E
 _id_short_~
 &+Btitanium gauntlets, made for pounding&n
@@ -499,7 +499,7 @@ The &+Wshell sword of &+mshock&N lies here.~
 ~
 5 10 3 10 7 0 4202496 8193 0 4198895524 0
 13 3 7 3 0 0 0 0
-15 2400 100
+15 2400 100 100
 A
 19 2
 A
@@ -511,7 +511,7 @@ A &+Wbard's axe&N lies here.~
 ~
 5 16 3 8 12 0 1024 8396801 0 8421376 0
 1 3 3 3 0 0 0 0
-2 2500 100
+2 2500 100 100
 A
 19 2
 A
@@ -523,7 +523,7 @@ The &+Mlyrical lyre&N lies here, still magically playing tunes.~
 ~
 32 6 3 15 7 0 1024 16385 64 8421376 0
 185 100 0 11 0 0 0 0
-0 4000 100
+0 4000 100 100
 A
 2 10
 A
@@ -535,7 +535,7 @@ The &+LSoulrender&N lies here.~
 ~
 5 16 3 0 14 0 5248 8193 0 8515584 0
 2 2 9 11 0 103008 51 30
-14 1000 100
+14 1000 100 100
 E
 _char_msg~
 As $p contacts $N's skin, a blue burst of magical energy explodes from its tip, sapping $S strength!
@@ -559,7 +559,7 @@ The &+Wblade of &+Lpain&N lies here.~
 ~
 5 16 2 3 7 0 1152 8193 64 8515584 0
 2 3 4 11 0 0 0 0
-6 5000 100
+6 5000 100 100
 A
 19 4
 A
@@ -571,7 +571,7 @@ The &+Mgem of the aerie&N lies here.~
 ~
 11 26 2 0 12 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 13 20
 A
@@ -583,7 +583,7 @@ the &+Lvampire vanquisher hammer&N lies here.~
 ~
 5 16 3 8 12 0 1024 8193 2 33685920 0
 4 2 8 6 0 0 0 0
-2 5000 100
+2 5000 100 100
 A
 4 10
 A
@@ -595,7 +595,7 @@ a &+Wwarm light&N lies here lit.~
 ~
 1 1 0 0 7 0 262144 16385 64 0 0
 0 0 -1 0 0 0 0 0
-1 100 100
+1 100 100 100
 A
 14 40
 #70952
@@ -605,7 +605,7 @@ The &+Gcha&+Lotic &+Gneck&+Llace&N lies here.~
 ~
 9 16 3 2 12 0 0 5 0 0 0
 5 2 0 3 0 0 0 0
-1 666 100
+1 666 100 100
 A
 19 2
 A
@@ -617,7 +617,7 @@ The &+Worb of fear&N lies here.~
 ~
 1 16 1 2 7 0 0 16385 64 0 0
 0 0 -1 0 0 0 0 0
-1 5000 100
+1 5000 100 100
 A
 24 -5
 A
@@ -629,7 +629,7 @@ The &+Gchameleon suit of transformation&N lies camoflaged here.~
 ~
 9 16 0 0 12 0 2097152 9 0 4198895524 0
 10 0 0 3 0 0 0 0
-10 2000 100
+10 2000 100 100
 A
 36 9
 A
@@ -641,7 +641,7 @@ The &+Lstaff of lost souls&N lies here.~
 ~
 4 6 3 10 7 0 1024 16385 64 12750340 0
 50 2 2 283 0 0 0 0
-4 5000 100
+4 5000 100 100
 #70956
 wand guardian~
 the &+Bwand of the guardian&N~
@@ -649,7 +649,7 @@ The &+Bwand of the guardian&N lies here.~
 ~
 3 6 2 4 7 0 1024 16385 64 4197892 0
 46 1 1 77 0 0 0 0
-1 3000 100
+1 3000 100 100
 #70957
 orb disaster~
 the &+Worb of &+Rdisaster&N~
@@ -657,7 +657,7 @@ The &+Worb of &+Rdisaster&N lies here.~
 ~
 4 16 1 2 12 0 0 16385 64 0 0
 50 1 1 17 0 0 0 0
-1 4000 100
+1 4000 100 100
 A
 19 2
 A
@@ -669,7 +669,7 @@ The &+Rring of the mad mage&N lies here.~
 ~
 9 16 1 1 12 0 1024 3 64 4591108 0
 5 0 0 3 0 0 0 0
-0 1000 100
+0 1000 100 100
 A
 13 30
 A
@@ -681,7 +681,7 @@ The &+Wstaff of superiority&N lies here.~
 ~
 4 6 3 10 12 0 4195456 8193 64 4591108 0
 48 1 1 102 0 0 0 0
-4 5000 100
+4 5000 100 100
 A
 18 3
 A
@@ -693,7 +693,7 @@ The &+Revil sword of anti-paladins&N lies here.~
 ~
 5 16 3 0 12 0 4195456 8193 0 87572571 0
 13 4 6 3 0 0 0 0
-15 2000 100
+15 2000 100 100
 A
 18 4
 A
@@ -705,7 +705,7 @@ The &+Wholy sword of slashing&N lies here.~
 ~
 5 16 3 8 12 0 1024 8193 2 87572571 0
 5 4 4 3 0 0 0 0
-15 5000 100
+15 5000 100 100
 A
 18 4
 A
@@ -717,7 +717,7 @@ A &+Gbreastplate melded with drowidian metal&N lies here.~
 ~
 9 16 3 0 12 0 8192 9 64 4198895524 0
 18 0 0 3 0 0 0 0
-15 5000 100
+15 5000 100 100
 E
 _id_short_~
 &+mthe breastplate of the &+GDrow Ghost King&n
@@ -733,7 +733,7 @@ A huge twitching claymore has been dropped here.~
 ~
 5 16 4 15 12 0 4203520 8193 64 87572571 0
 13 4 6 3 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 pathfinder claymore clay~
 On the hilt of the sword is an ornately carved handle that hums
@@ -757,7 +757,7 @@ The &+Rberzerker double-edged axe&N lies here.~
 ~
 5 16 3 8 12 0 71304328 8193 0 87572571 0
 1 4 4 3 0 0 0 0
-9 3300 100
+9 3300 100 100
 E
 _id_short_~
 &+Bthe shiny axe of the &+RBerserkers&n
@@ -773,7 +773,7 @@ A &+Wtransparent sword&N lies here.~
 ~
 5 16 3 0 12 0 160 8193 64 4198895396 0
 5 3 4 3 0 0 0 0
-9 900 100 2 0 0 0
+9 900 100 100 2 0 0 0
 E
 _id_short_~
 &+ba faded-blue &+Wcrystal longsword&n
@@ -789,7 +789,7 @@ A &+gsmall green dagger&N lies here.~
 ~
 5 16 2 0 7 0 0 8193 64 0 0
 2 1 4 11 0 0 0 0
-1 400 100
+1 400 100 100
 A
 19 1
 A
@@ -801,7 +801,7 @@ The &+Gdagger of Athernon&N lies here.~
 ~
 5 16 2 0 11 0 128 8193 64 0 0
 2 3 2 11 0 0 0 0
-4 800 100 0 28 0 0
+4 800 100 100 0 28 0 0
 A
 2 10
 A
@@ -813,7 +813,7 @@ The &+Bgloves of magic fingertips&N lie here.~
 ~
 9 1 2 6 12 0 1024 129 64 4591108 0
 15 0 0 3 0 0 0 0
-1 400 100
+1 400 100 100
 A
 13 15
 A
@@ -825,7 +825,7 @@ A &+Bsmall spout of water flows over some rocks here&N.~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 1000 -1 16 0 0 0 0 0
-300 0 100
+300 0 100 100
 #70970
 wand life~
 the &+Wwand of &+YLife&N~
@@ -833,7 +833,7 @@ The &+Wwand of &+YLife&N lies here emanating a soothing aura.~
 ~
 3 16 2 4 14 0 12288 16385 64 0 0
 56 1 1 88 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 life wand~
 Carved on the widest part of the wand are these words:
@@ -862,7 +862,7 @@ A &+Rbloody dagger&N lies here.~
 ~
 5 16 2 3 7 0 1024 8193 0 8515584 0
 2 2 3 11 0 0 0 0
-3 4000 100
+3 4000 100 100
 A
 18 2
 A
@@ -874,7 +874,7 @@ A &+Wring of barriers&N lies here.~
 ~
 9 16 1 1 12 0 1024 3 64 46567332 0
 5 0 0 3 0 0 0 0
-0 3200 100 0 8192 0 0
+0 3200 100 100 0 8192 0 0
 E
 _id_short_~
 &+Ca mystical ring &+Wof barriers&n
@@ -890,7 +890,7 @@ A &+Wstar-shaped club&N lies here.~
 ~
 5 16 3 8 12 0 1024 8193 66 33685920 0
 10 3 4 7 0 0 0 0
-4 5000 100
+4 5000 100 100
 A
 19 2
 A
@@ -902,7 +902,7 @@ A &+Bmace of cleansing&N lies here.~
 ~
 5 16 3 0 12 0 1024 8193 66 33685920 0
 6 3 4 7 0 0 0 0
-8 1000 100
+8 1000 100 100
 E
 _id_short_~
 &+Bthe mace of &+Csoul&+B-&+Ccleansing&n
@@ -918,7 +918,7 @@ A &+Rbrimstone staff&N lies here.~
 ~
 4 16 3 10 12 0 1024 16385 64 4591108 0
 45 4 4 47 0 0 0 0
-4 4000 100
+4 4000 100 100
 E
 _id_short_~
 &+Ythe conjurer's &+Rbrimstone staff&n
@@ -930,7 +930,7 @@ The &+Wboots of the winds&N levitate here.~
 ~
 9 16 3 8 12 0 1024 65 64 12619268 0
 4 0 0 3 0 0 0 0
-1 2000 100 134217728 0 0 0
+1 2000 100 100 134217728 0 0 0
 E
 _id_short_~
 &+cthe mystical boots of &+Wthe four winds&n
@@ -946,7 +946,7 @@ A &+Lblack crooked wand&N lies here.~
 ~
 3 16 2 4 12 0 1024 16385 64 4197892 0
 51 1 1 25 0 0 0 0
-1 5000 100
+1 5000 100 100
 #70978
 long sword crimson _id_~
 &+ra crimson long sword&n~
@@ -954,7 +954,7 @@ A crimson long sword has been left here.~
 ~
 5 16 3 10 12 0 1024 8193 64 87572507 0
 5 4 4 0 0 0 0 0
-4 1324 100
+4 1324 100 100
 E
 _id_short_~
 &+Ca flawless &+rcrimson longsword&n
@@ -970,7 +970,7 @@ Someone has left some sleeves here.~
 ~
 9 13 3 0 14 0 32800 257 64 4207919012 0
 12 0 0 3 0 0 0 0
-1 1 100 0 0 0 1024
+1 1 100 100 0 0 0 1024
 A
 26 5
 A
@@ -982,7 +982,7 @@ Someone has dropped the crown of lords here.~
 ~
 9 15 3 0 12 0 0 17 64 0 0
 7 0 0 3 0 0 0 0
-1 3 100 32 0 0 0
+1 3 100 100 32 0 0 0
 A
 14 40
 A
@@ -994,7 +994,7 @@ A glowing book lies here.~
 ~
 33 13 3 0 14 0 33555488 8404993 0 14716418 0
 0 0 300 0 0 0 0 0
-2 2 100
+2 2 100 100
 A
 1 5
 A
@@ -1006,7 +1006,7 @@ totem ancient shaman spirits~
 ~
 34 6 2 0 14 0 2098177 16385 0 256 0
 63 0 0 0 0 0 0 0
-2 82627 100
+2 82627 100 100
 E
 totem ancient shaman spirits~
 &+y   This ancient totem has been imbued with the spirits of the ancients,

@@ -5,7 +5,7 @@ gem cage soul~
 ~
 12 1 10 1 15 100 42173441 16385 66 100794424 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 soul~
 &+YSomewhat insubstantial, it still is tangible by some magical means.&N
@@ -21,7 +21,7 @@ fire mail armor~
 ~
 9 18 3 20 15 30 33661953 9 66 67108888 0
 30 3 1 5 1 0 0 0
-20 10000 100
+20 10000 100 100
 E
 fire mail~
 &+WThis mail seems to glow with a surreal power that our minds cannot&N
@@ -39,7 +39,7 @@ a finely crafted blade lies here, prey to the elements.~
 ~
 5 18 4 25 15 30 6333441 8396801 64 67108888 0
 13 5 7 3 0 27 50 30
-20 10000 100 0 32768 0 0
+20 10000 100 100 0 32768 0 0
 E
 holy avenger sword~
 &+WAwe inspiring, this blade is the defender of right, the fatal flaw of&N
@@ -68,7 +68,7 @@ An old blade lies here, its sight tells of ages long past.~
 ~
 5 22 3 3 5 0 66560 8193 1 95993883 0
 5 2 5 3 0 0 0 0
-5 30000 90
+5 30000 90 100
 E
 blade sword~
 The leather strapping on the hilt decaying, tarnished and obviously ancient,&N
@@ -86,7 +86,7 @@ sign fallen~
 ~
 12 6 4 40 7 0 164864 0 0 0 0
 0 0 0 0 0 0 0 0
-100 0 40
+100 0 40 100
 E
 sign fallen~
 &+y                ²±°    &n
@@ -120,7 +120,7 @@ well~
 ~
 13 11 5 1000 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 well~
 This well is old, and bears the stains of water marks all about its basin.
@@ -135,7 +135,7 @@ A &+Lstone &nar&+Wch&+Rer&+ry t&+Rar&+Wge&nt is solidified with the&+g forest&n 
 ~
 13 5 3 150 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-200 0 100
+200 0 100 100
 E
 target~
 Though petrified, the&+r concentric&+W circles&n are discernable through different&n
@@ -148,7 +148,7 @@ locket golden~
 ~
 15 24 3 5 12 0 8392704 5 2 0 0
 4 5 0 4 0 0 0 0
-5 8765 100
+5 8765 100 100
 E
 locket golden~
 &+YThis beautiful golden locket must have been close to someone's heart at&n
@@ -163,7 +163,7 @@ pool water~
 ~
 17 40 3 0 7 0 0 0 0 0 0
 1000 1000 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
 &+bThe leftovers of perhaps what might have been a basin of water from which&n
@@ -177,7 +177,7 @@ dagger well~
 ~
 5 36 2 2 13 45 0 8193 64 0 0
 2 2 5 11 1 0 0 0
-4 99345 100
+4 99345 100 100
 E
 dagger well~
 &+LThis dagger's hilt has the carvings of claws and eyes embedded all&n
@@ -194,7 +194,7 @@ A tattered piece of paper lies here, soaked with excrement.~
 ~
 12 28 3 1 0 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 note~
 &+LTasks:
@@ -213,7 +213,7 @@ A rolled piece of paper lay here on the ground, it stinks!~
 ~
 2 28 3 1 7 0 1 1 64 0 0
 40 33 17 38 0 0 0 0
-1 2421 100
+1 2421 100 100
 E
 scroll rolled paper foul~
 &+GThis scroll is tainted with a profound stench of sickness.  Your stomach turns
@@ -234,7 +234,7 @@ A damaged picture lay here on the ground.~
 ~
 13 28 3 3 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-2 1 45
+2 1 45 100
 E
 damaged picture~
 It is the picture of a man standing before an armory or weapon lined wall
@@ -247,7 +247,7 @@ an old marble fountain~
 ~
 17 38 4 10000 11 0 0 0 0 0 0
 100 100 0 1 0 0 0 0
-10000 0 100
+10000 0 100 100
 E
 fountain basin~
 Obviously old, this must have once been a wonderfully crafted fountain indeed.
@@ -260,7 +260,7 @@ old wooden table~
 ~
 29 6 3 100 7 0 0 0 0 0 0
 270 18371 5 0 0 0 0 0
-70 0 100
+70 0 100 100
 E
 old wooden table~
 With four legs and a flat top, it is pretty much a run-of-the-mill, average
@@ -273,7 +273,7 @@ steel chest~
 ~
 15 15 3 0 7 100 0 0 0 0 0
 500 9 18316 500 0 0 0 0
-0 0 100
+0 0 100 100
 E
 steel chest~
 &+CMade of some reinforced steel, this chest seems to have endured the long&n
@@ -286,7 +286,7 @@ steel key~
 ~
 18 16 3 1 7 0 8392704 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 steel key~
 &+CJust a small steel key&n
@@ -298,7 +298,7 @@ ring flames~
 ~
 9 51 3 2 14 100 229409 3 64 0 0
 10 1 0 2 0 0 0 0
-2 60000 100
+2 60000 100 100
 E
 ring flames~
 &+RIt is a small band, it is aglow with a burning fire that doesn't burn&n
@@ -315,7 +315,7 @@ wooden boat~
 ~
 22 6 5 3000 7 0 270336 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 wooden boat~
 &+yMade of wooden planks nailed together, this boat had a lantern tied to the&n
@@ -329,7 +329,7 @@ drain latch~
 ~
 29 15 3 0 7 0 4096 0 0 0 0
 340 18405 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 drain latch~
 &+BThis thing is seriously stuck.  &+rRus&+yted&+B at its base, a little
@@ -342,7 +342,7 @@ arm severed~
 ~
 5 2 3 12 0 0 65536 8193 0 0 0
 6 2 8 7 0 0 0 0
-15 2345 100
+15 2345 100 100
 E
 arm severed~
 &+RSeverely rotten, this limb juices rancid liquids as you grasp its base.&N
@@ -356,7 +356,7 @@ broom~
 ~
 5 1 3 0 7 0 4456576 8193 0 0 0
 12 6 3 6 0 0 0 0
-0 1425 100
+0 1425 100 100
 E
 broom~
 &+WWell, it looks like a real broom, yet seems to be made of some stange,&n
@@ -371,7 +371,7 @@ yellow dagger~
 ~
 5 24 2 3 8 0 173072 8193 0 12288 0
 2 2 4 11 0 0 0 0
-2 1234 100
+2 1234 100 100
 E
 yellow dagger~
 &+YThis cute little dagger is pretty much of the run-of-the-mill variety,&n
@@ -386,7 +386,7 @@ blade sword ethereal~
 ~
 5 18 3 0 7 10 172033 8396801 66 0 0
 5 3 4 3 0 0 0 0
-0 92142 100
+0 92142 100 100
 E
 blade~
 &+WA beautifully smithed item.  It is cold to the touch and emits a wondrous&n
@@ -403,7 +403,7 @@ green token coin~
 ~
 8 32 2 1 9 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 green token coin~
 &+GIt's a green coin with runes engraved on both of its sides.  Their purpose&n
@@ -416,7 +416,7 @@ wooden sword blue~
 ~
 5 6 3 16 7 0 4195328 8193 0 85458945 0
 13 3 5 3 0 0 0 0
-12 2345 100
+12 2345 100 100
 E
 wooden sword blue~
 &+bWhatever this sword is made of, it's quite large and really &+Bblue.&n
@@ -430,7 +430,7 @@ a basin of water~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 60 60 28 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 basin water~
 Mounted on the wall here, this basin still has some water in it.  Most likely
@@ -445,7 +445,7 @@ mirror~
 ~
 25 22 4 0 7 0 0 0 64 0 0
 18432 139 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mirror~
 &+LWonderfully crafted from some precious metals, this mirror has some strange&n
@@ -458,7 +458,7 @@ ball glass globe lit~
 ~
 8 7 8 0 13 0 262144 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 42343 100
+0 42343 100 100
 E
 ball glass globe lit~
 &+WWonderfully brilliant, this globe seems to contain a swirling mass of&n
@@ -473,7 +473,7 @@ backside~
 ~
 25 22 4 0 7 0 0 0 0 0 0
 18431 139 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mirror~
 &+cDull and without reflection, one could swear this things was somehow made&n
@@ -486,7 +486,7 @@ altar~
 ~
 12 15 5 0 7 0 33554432 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 object altar~
 &+WWonderfully carved of white Tharnadian marble, this magnificent altar,&n
@@ -503,7 +503,7 @@ wooden statue dragon~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 320 18506 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 wooden statue dragon~
 &+yCarved of wood, this is the representation of a fiercely stanced dragon.  His&n
@@ -517,7 +517,7 @@ blunted smashed cleaver~
 ~
 5 16 3 0 8 0 4194304 8193 0 0 0
 4 5 6 3 0 0 0 0
-0 23457 100
+0 23457 100 100
 E
 shiny cleaver large knife~
 &+CHuge, shiny, and sharp, this VERY big knife speaks for itself.&n
@@ -533,7 +533,7 @@ ebony harpsichord~
 ~
 12 6 5 8000 10 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 1000000 100
+10000 1000000 100 100
 E
 ebony harpsichord~
 &+LA beautiful instrument indeed, though dusty, it is still astounding.  It&n
@@ -547,7 +547,7 @@ lute instrument lyre~
 ~
 32 25 3 25 13 0 67208192 16385 2 8421376 0
 185 45 0 1 0 0 0 0
-25 142528 100
+25 142528 100 100
 E
 lute~
 &+cMade entirely of platinum, this instrument has quite a particular resonance&n
@@ -567,7 +567,7 @@ throne~
 ~
 12 24 3 500 15 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-400 11110000 100
+400 11110000 100 100
 E
 throne~
 &+MAs you walk around it, examining it, it seems that the seat always faces&n
@@ -581,7 +581,7 @@ ring wedding band~
 ~
 9 24 3 0 7 0 8388608 3 0 0 0
 5 1 0 1 0 0 0 0
-0 2534 100
+0 2534 100 100
 E
 ring wedding band~
 &+YHow sweet...love forever is &+Linscribed &+Yinside of it.&n
@@ -595,7 +595,7 @@ A vial rests here, bathed in light.~
 ~
 10 15 3 0 7 0 0 8388609 0 0 0
 50 56 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #18339
 hammer stonecrusher~
 &+La stonecrusher~
@@ -603,7 +603,7 @@ hammer stonecrusher~
 ~
 5 37 3 50 3 0 4239360 8193 0 0 0
 4 4 8 6 0 0 0 0
-70 123 100
+70 123 100 100
 E
 hammer stonecrusher~
 &+LA HUGE stone hammer with a very long handle.  Quite terribly made at that.&n
@@ -619,7 +619,7 @@ sword black steel~
 ~
 5 16 3 20 11 0 4457472 8193 64 96071707 256
 13 4 7 3 0 0 0 0
-25 32345 100
+25 32345 100 100
 E
 sword black steel~
 &+LObviously made by a skilled blacksmith, this wonderful sword is most likely&n
@@ -636,7 +636,7 @@ crown~
 ~
 9 36 3 3 14 0 66561 17 64 1024 0
 15 4 16 2 0 0 0 0
-6 84256 100
+6 84256 100 100
 E
 crown~
 &+LIt is a wonderfully crafted crown, it reflects a deep black from the light&n
@@ -653,7 +653,7 @@ tome book~
 ~
 33 28 3 10 10 0 4225 8404993 64 0 0
 0 0 200 0 0 0 0 0
-10 12324 100
+10 12324 100 100
 E
 tome book~
 &+LThis has to be one of the biggest books on Duris.  This tome is covered with&n
@@ -667,7 +667,7 @@ white marble mace~
 ~
 5 38 3 0 7 0 1024 8193 0 121241643 0
 6 1 9 7 0 0 0 0
-0 6421 100
+0 6421 100 100
 E
 white marble mace~
 Its hilt and ball shaped end carved from the same piece of marble, this
@@ -684,7 +684,7 @@ white shield~
 ~
 37 38 3 15 8 0 0 513 0 0 0
 1 1 2 135 3 0 0 0
-20 8232 100
+20 8232 100 100
 E
 white shield~
 This shield is beautiful indeed, with a celtic cross carved on the center
@@ -697,7 +697,7 @@ ring~
 ~
 9 36 2 2 7 0 131073 3 0 0 0
 8 1 0 1 0 0 0 0
-3 23432 100
+3 23432 100 100
 E
 ring~
 &+LThis ring has a series of demons and other beings of &+rhell&+L's denizens carved&n
@@ -712,7 +712,7 @@ mask~
 ~
 9 19 3 6 11 0 67449888 262145 0 100795692 0
 10 13 1 2 0 0 0 0
-12 56324 100
+12 56324 100 100
 E
 mask~
 &+CThis beautiful mask moulds about your face when placed upon it, it is&n
@@ -729,7 +729,7 @@ transparent sandals~
 ~
 9 27 3 0 7 0 0 65 0 0 0
 12 6 4 1 0 0 0 0
-0 43523 100
+0 43523 100 100
 E
 golden sandals~
 &+WThere are really cute, they have a golden strap that crosses over the top of&n
@@ -747,7 +747,7 @@ silk robe veil~
 ~
 9 3 3 5 11 60 8192 9 0 0 0
 10 3 1 1 0 0 0 0
-2 74634 100
+2 74634 100 100
 E
 robe silk veil~
 &+WThis beautiful set of robes gives off a feeling of happiness and love that&n
@@ -765,7 +765,7 @@ flames~
 ~
 13 1 3 0 7 0 67117058 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 flames~
 &+RYYYEEEEEEOOOUUUCCCHHHH! THOSE BURN!&n
@@ -779,7 +779,7 @@ pool~
 ~
 13 15 3 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool~
 &+rOUCH! That burns!&n
@@ -793,7 +793,7 @@ necklace~
 ~
 9 19 3 1 13 0 33554433 5 0 0 0
 9 2 1 2 0 0 0 0
-1 52152 100
+1 52152 100 100
 E
 necklace~
 &+BAstonishingly rendered, this necklace emits a low pitch hum that is barely&n
@@ -810,7 +810,7 @@ bracelet small~
 ~
 9 19 3 0 13 0 5120 4097 64 113411752 0
 10 11 1 2 0 0 0 0
-0 87923 100
+0 87923 100 100
 E
 bracelet small~
 &+BThe steel that this bracelet is made of doesn't seem to reflect light.&n
@@ -828,7 +828,7 @@ badge holy crest~
 ~
 9 19 2 1 10 0 1 3 0 0 0
 1 1 0 2 0 0 0 0
-1 34142 100
+1 34142 100 100
 E
 badge holy crest~
 &+CIt is a small cross, made of a very dense and shiny&+M material&+C.&n

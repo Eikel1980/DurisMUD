@@ -5,7 +5,7 @@ A battered cuirass of ancient mail lies forgotten here.~
 ~
 9 16 3 10 7 0 0 9 0 4173708804 0
 16 3 1 3 0 0 0 0
-5 2500 100
+5 2500 100 100
 E
 ancient mail chain chainmail cuirass~
 This ancient cuirass is probably older than any mortal alive today.
@@ -23,7 +23,7 @@ An old rusty sword is corroding on the ground.~
 ~
 5 16 3 10 7 0 0 8193 0 4173708804 0
 5 2 5 3 0 0 0 0
-10 20 70
+10 20 70 100
 E
 long sword rusted rusty old phallicsymbol~
 This old sword appears to be pure iron, not steel.  Runic markings on it
@@ -41,7 +41,7 @@ A Golden staff has been dropped on the ground here.~
 ~
 4 24 3 10 10 0 304129 16385 66 37883812 0
 30 1 1 28 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 staff golden holy ancient~
 This holy staff shimmers as when put into the light, and seems to glow
@@ -59,7 +59,7 @@ altar broken ancient~
 ~
 13 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-10000 10 5
+10000 10 5 100
 E
 altar broken ancient~
 This altar is rather old and has a bunch of caked blood on it.  Also, much
@@ -72,7 +72,7 @@ A dark phallic symbol lies on the ground.~
 ~
 5 16 3 2 7 0 40961 8193 64 4173708804 0
 5 2 4 3 0 0 0 0
-5 50000 100
+5 50000 100 100
 E
 scimitar sword malevolent phallic~
 This scimitar is seems to be forged from adamantium.  The temper of the blade
@@ -92,7 +92,7 @@ potion bottle puce~
 ~
 10 7 2 4 7 0 4096 1 0 0 0
 45 66 66 66 0 0 0 0
-0 45000 100
+0 45000 100 100
 E
 potion bottle puce~
 This bottle has an awful baby-crap greenish brown color to the liquid in it,
@@ -105,7 +105,7 @@ A huge femur has been left here.~
 ~
 5 10 3 8 7 0 0 8193 0 0 0
 10 2 6 6 0 0 0 0
-12 10 100
+12 10 100 100
 E
 club femur bone sturdy~
 This bone apears to be the femur of some sort of giant.  It is a lot tougher
@@ -122,7 +122,7 @@ A sharp, pitch black shard lies here.~
 ~
 12 1 0 0 7 0 4096 1 64 0 0
 0 0 0 0 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 shard shadow small~
 This item is a fragment of shadow material from the negative plane.
@@ -135,7 +135,7 @@ A circular, pitch black item lies here...~
 ~
 9 16 3 3 7 0 1081344 4097 0 0 0
 6 11 24 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 shadow bracelet malevolent steel shadowsteel~
 This bracelet is made of magically stabilized negative plane material.
@@ -156,7 +156,7 @@ spring water~
 ~
 17 40 0 0 7 0 0 0 0 0 0
 100000 100000 13 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spring water~
 This spring smells and looks odd.. but it should be pure...but why the resident in this cave would want a NORMAL spring is beyond you...
@@ -168,7 +168,7 @@ A large obsidian kite shield lies here, rejected.~
 ~
 37 36 3 15 7 0 0 513 64 4173708804 0
 2 1 3 148 4 0 0 0
-15 10000 100
+15 10000 100 100
 E
 kite shield obsidian~
 This large obsidian kite shield has a skull emblem on the front.  It is sturdy
@@ -185,7 +185,7 @@ A flanged mace has been left here.~
 ~
 5 36 3 8 7 0 0 8193 64 0 0
 6 4 3 7 0 0 0 0
-15 10000 100
+15 10000 100 100
 E
 flanged obsidian mace club~
 This obsidian mace has 8 flanges along its head.  It has an overall length
@@ -202,7 +202,7 @@ unholy water fountain old~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 3 3 28 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain water unholy old~
 The fountain is mostly empty, with only a few cups of water on the bottom of
@@ -215,7 +215,7 @@ coffin casket sarcophagous~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-350 10 100
+350 10 100 100
 E
 coffin casket sarcophagous~
 Dating from hundreds of years ago, this oak coffin has survive the tests of
@@ -228,7 +228,7 @@ A signet ring set with a garnet has been left here.~
 ~
 9 16 1 1 9 0 4096 3 0 0 0
 4 1 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 tiny signet ring garnets garnet~
 This tiny signet ring, made of gold, is set with an intricate garnet design
@@ -245,7 +245,7 @@ A potion lies here, with a small note attached.~
 ~
 10 7 2 4 7 0 0 1 64 0 0
 45 103 25 56 0 0 0 0
-0 100 100
+0 100 100 100
 E
 potion~
 Intersting.. this potion has a note attached that says "drink me".
@@ -257,7 +257,7 @@ A strange gadget has been left here.~
 ~
 12 16 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 10 100
+5 10 100 100
 E
 strange odd gadget~
 This strange box has a variety of wholes.  It seems to gyrate slightly as it is moved. Something about it is... strange.
@@ -271,7 +271,7 @@ shadowsteel stiletto shadow steel~
 ~
 5 16 3 0 7 0 32768 8193 0 4194697632 0
 2 2 3 11 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 shadowsteel stiletto shadow steel~
 This stiletto makes both a stylish ornament to be worn, and a nasty weapon
@@ -291,7 +291,7 @@ An very small anomolous shadow is here.~
 ~
 12 1 0 0 7 0 4096 1 64 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 shadow minuscule shard small~
 This small fragment, only three inches in length, half an inch wide
@@ -304,7 +304,7 @@ A ShadowSteel ring lays here, forgotten.~
 ~
 9 16 1 1 7 0 1081344 3 64 0 0
 3 1 0 3 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 shadowsteel ring shadow steel~
 This ring, forged of stabilized negative plane material, makes one shiver
@@ -324,7 +324,7 @@ An oddly shaped shadow lies here.~
 ~
 12 1 0 0 7 0 4096 1 64 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 shard shadow large~
 This shard is EXTREMELY cold to the touch, and seems to drain strength and
@@ -339,7 +339,7 @@ A pair of jet black boots are here.~
 ~
 9 16 3 8 7 0 163840 65 64 0 0
 8 6 1 3 0 0 0 0
-5 500000 100
+5 500000 100 100
 E
 shadowsteel boots steel black jet~
 These boots are superbly crafted from a magically stabilized piece of material
@@ -358,7 +358,7 @@ bookshelf~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 2000 0 0 100 0 0 0 0
-500 10 100
+500 10 100 100
 E
 bookshelf~
 Glancing at the bookshelf yields nothing useful.  Perhaps a more thorough
@@ -371,7 +371,7 @@ A small sheet of ancient parchment lies here.~
 ~
 12 29 1 1 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 parchment note small~
 This sheet of ancient paper reads, in archaic drow,
@@ -384,7 +384,7 @@ A small book is on the ground.~
 ~
 12 28 2 5 7 0 4096 1 64 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 E
 small book~
 This small book seems to have an infinate amount of pages.  As it is paged
@@ -433,7 +433,7 @@ A scroll is here.~
 ~
 2 29 1 2 7 0 4096 1 0 0 0
 50 132 -1 -1 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 scroll translation~
 This scroll grants the user an understanding of other languages.
@@ -445,7 +445,7 @@ A red potion has been discarded here.~
 ~
 10 7 2 4 7 0 4096 1 64 0 0
 40 1 39 39 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 potion battle prowess red~
 This crimson colored potion gives physical power to anyone who drinks it.
@@ -457,7 +457,7 @@ small key~
 ~
 18 16 1 1 7 0 8388608 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 small key~
 This is a generic looking small key.  It has a complex series of points
@@ -471,7 +471,7 @@ A black torc has been left here.~
 ~
 9 16 0 0 7 0 0 5 64 0 0
 9 2 1 4 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 torc shadow steel shadowsteel~
 This small torc seems to fit snugly to any neck, regardless of size.
@@ -489,7 +489,7 @@ holy sword white benevolence~
 ~
 5 16 3 10 11 0 4621313 8193 66 67108888 0
 13 6 6 3 0 0 0 0
-10 50000 100 8196 0 0 0
+10 50000 100 100 8196 0 0 0
 E
 holy sword white benevolence~
 This sword seems to radiate "goodness".  Evil individuals are sure to find
@@ -508,7 +508,7 @@ key ancient antique~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 key ancient antique~
 This ancient key is made of gold, which would account for why it hasnt
@@ -522,7 +522,7 @@ keystone stone citadel~
 ~
 27 11 0 50 7 0 8192 1 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 keystone stone citadel~
 This massive keystone rises up to the surface, under the heart of the citadel.
@@ -537,7 +537,7 @@ a small &+Wiron&n-&+Lbound &+ychest&n~
 ~
 15 15 5 50 7 0 0 0 0 0 0
 300 15 75631 250 0 0 0 0
-100 100 100
+100 100 100 100
 E
 small iron bound iron-bound chest~
 This small chest has bands of iron on it.  It looks quite sturdy, as the wood
@@ -552,7 +552,7 @@ A small, black dagger is here.~
 ~
 5 16 2 3 7 0 0 8193 0 4194697632 0
 2 2 3 11 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 dagger black shadow steel shadowsteel~
 Although this dagger is most likely very old, it shows no signs of aging.
@@ -570,7 +570,7 @@ armory key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 armory key~
 This small brass key opens the armory in The Obsidian Citadel
@@ -582,7 +582,7 @@ wooden wood padded helm large~
 ~
 9 6 3 10 7 0 4096 17 0 0 0
 5 4 1 3 0 0 0 0
-4 7500 75
+4 7500 75 100
 E
 wooden wood padded helm large~
 This helm will fit just about any size humanoid as it has a massive amount
@@ -601,7 +601,7 @@ A small aqua-marine potion has been discarded here.~
 ~
 10 7 2 4 7 0 0 16385 64 0 0
 35 15 135 43 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 aqua marine aqua-marine potion~
 This bottle contains a potion that is uniformly aqua-marine.
@@ -614,7 +614,7 @@ A small iron-bound book has been left here.~
 ~
 33 15 2 5 7 0 8192 8404993 66 0 0
 0 0 200 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 small iron-bound iron bound book spellbook spell~
 This spellbook is identical to the typical spellbook in most respects.
@@ -627,7 +627,7 @@ A small scroll has been left here~
 ~
 2 29 1 2 7 0 0 16385 64 0 0
 40 116 116 -1 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 scroll acid blast blasting~
 This scroll contains the energy necessary to deliver a bolt of acid to a foe.
@@ -639,7 +639,7 @@ A belt has been left here.~
 ~
 9 16 3 3 7 0 0 2049 0 0 0
 6 10 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 obsidian belt shadow steel shadowsteel~
 This belt consists of obsidian panels linked together with shadowsteel pins.
@@ -656,7 +656,7 @@ A forgotten key rests here.~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 key cell livestock~
 The key is a sturdy obsidian key that opens the doors to the various
@@ -669,7 +669,7 @@ A kite shield has been left here.~
 ~
 37 16 3 15 7 0 0 513 64 0 0
 2 1 3 158 3 0 0 0
-10 10000 100
+10 10000 100 100
 E
 kite shield rolart~
 This kite shield was once one of the few belongings of the noble paladin
@@ -687,7 +687,7 @@ A small ring has been left here~
 ~
 9 16 1 1 7 0 1024 3 64 85458945 0
 7 1 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 ring signet rolart~
 This ring bears the coat of arms of Rolart, the great paladin.  The metalwork
@@ -706,7 +706,7 @@ a small chest~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 100 29 75656 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small chest~
 This small chest contains something powerfull as it seems to radiate darkness,
@@ -720,7 +720,7 @@ An old key has been discarded here.~
 ~
 18 16 1 1 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key old shadowsteel~
 This small key is forged in shadowsteel and looks very old.
@@ -732,7 +732,7 @@ an enormous chest~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 10000 29 75644 250 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest enormous~
 This enormous chest looks like it could hold massive amounts.  Seeing as it
@@ -746,7 +746,7 @@ A set of green chainmail has been left here.~
 ~
 9 16 3 10 7 0 139264 9 64 0 0
 25 3 1 3 0 0 0 0
-6 450000 100
+6 450000 100 100
 E
 elven green chainmail chain mail full suit~
 This chainmail suit is of the highest quality, and it is no doubt that Lord
@@ -767,7 +767,7 @@ A small earring has been left here.~
 ~
 9 8 1 1 7 0 1 524289 0 0 0
 4 14 0 3 0 0 0 0
-1 250000 100
+1 250000 100 100
 E
 pulsating small diamond earring~
    This earring had a large diamond of around 15 carats attached to a fine
@@ -784,7 +784,7 @@ A dark potion has been left here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 50 36 163 179 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 potion battle readyness small dark~
    This potion is something that some warriors would die to have.  Although it
@@ -798,7 +798,7 @@ A smity's hammer has been left here.~
 ~
 5 16 3 8 7 0 0 8193 64 0 0
 4 3 5 7 0 0 0 0
-7 10000 100
+7 10000 100 100
 E
 hammer shadowsteel shadow steel smithy smithy's~
 This smithy's hammer is forged from shadowsteel and as a result is extremely
@@ -815,7 +815,7 @@ A massive flamberge has been dropped here.~
 ~
 5 16 3 0 7 0 4194304 8193 64 0 0
 13 3 4 3 0 0 0 0
-15 100000 100
+15 100000 100 100
 E
 flamberge skeletal warlord massive~
 This massive flamberge is of ancient make.  It has a metal with an odd
@@ -834,7 +834,7 @@ A black helm has been dropped here.~
 ~
 9 16 3 10 7 0 0 17 64 0 0
 8 4 1 3 0 0 0 0
-5 25000 100
+5 25000 100 100
 E
 helm shadow steel shadowstell black~
 Forged of shadowsteel, this helm is extremely tough and also conveys some
@@ -851,7 +851,7 @@ egg shadow dragon shadowdragon black~
 ~
 9 45 0 0 7 0 0 3 64 0 0
 2 1 0 3 0 0 0 0
-0 25000 100
+0 25000 100 100
 E
 egg shadow dragon shadowdragon black~
 This egg is the spawn of the ShadowDragon Kaketkralix.  Fortunately for
@@ -868,7 +868,7 @@ An odd earring has been dropped here.~
 ~
 9 16 1 1 7 0 0 524289 64 0 0
 4 14 0 3 0 0 0 0
-0 300000 100 64 0 0 0
+0 300000 100 100 64 0 0 0
 E
 earring chaos odd~
 This intersting earring is of odd aesthetic proportions.  Although a wealthy of
@@ -887,7 +887,7 @@ first floor key~
 ~
 18 16 1 1 7 0 8388608 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 first floor key~
 This key opens the doors on the first floor of the central spire of the
@@ -900,7 +900,7 @@ A longsword has been left here~
 ~
 5 16 3 10 7 0 0 8193 64 0 0
 5 4 2 3 0 0 0 0
-0 8000 100
+0 8000 100 100
 E
 shadow steel shadowsteel longsword~
 This sturdy longsword is forged from shadowsteel.  The quality isn't especially
@@ -918,7 +918,7 @@ small key~
 ~
 18 16 1 1 7 0 8388608 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 small key~
 This is a generic looking small key.  It has a complex series of points
@@ -932,7 +932,7 @@ A bat guano potion has been left here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 50 28 36 108 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 bat guano potion~
 This disgusting potion is most likely extremely difficult to quaff.
@@ -945,7 +945,7 @@ A whip has been left here.~
 ~
 5 13 3 0 7 0 0 8193 0 0 0
 14 2 10 2 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 whip agony~
 This whip is constructed from the pubic hair of demons from hell, and is
@@ -962,7 +962,7 @@ hands shadowsteel golem hand~
 ~
 9 16 3 0 11 0 135168 129 0 4165209604 0
 8 7 1 3 0 0 0 0
-3 20000 100 32 0 0 0
+3 20000 100 100 32 0 0 0
 E
 hands shadowsteel golem hand~
 This shell of the hands of the shadowgolem is extremely tough and
@@ -979,7 +979,7 @@ bookshelf~
 ~
 25 6 0 50 7 0 0 0 0 0 0
 75762 26 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookshelf~
 This bookshelf looks somewhat odd, and along one of the shelves are the words,
@@ -992,7 +992,7 @@ orb black~
 ~
 25 16 0 50 7 0 0 0 0 0 0
 75768 26 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 orb black~
 This black orb hovers here for no apparent reason...
@@ -1004,7 +1004,7 @@ A strange object, similar to a dagger, has been left here.~
 ~
 5 16 3 3 7 0 0 8193 0 4198895524 0
 2 3 3 11 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 madhu dagger~
 The madhu is a bizzare weapon.  Consisting of a buckler shield sized basket
@@ -1027,7 +1027,7 @@ A long dagger has been left here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 long narrow dwarven forged dagger~
 This dagger is of dwarven manufacture, and it shows.  The quality is superb.
@@ -1046,7 +1046,7 @@ A lockpick has been left here.~
 ~
 31 16 1 2 7 0 0 16385 0 0 0
 20 10 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 lockpick steel~
 Produced by the thieves guild, this lockpick is of superb quality.
@@ -1062,7 +1062,7 @@ diamond large~
 ~
 8 8 0 0 7 0 1 1 0 0 0
 0 0 0 0 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 diamond large~
 This diamond glistens with an inner light.
@@ -1074,7 +1074,7 @@ ruby large~
 ~
 8 31 4 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 90000 100
+1 90000 100 100
 E
 ruby large~
 This ruby is the purest red color.
@@ -1086,7 +1086,7 @@ coins large pile~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 5879 1041 171 80 0 0 0 0
-0 1 100
+0 1 100 100
 E
 coins large pile~
    &+YThis pile of coins must have been hoarded for some time, since it's
@@ -1099,7 +1099,7 @@ A ring has been left here.~
 ~
 9 16 1 1 7 0 131072 3 64 0 0
 5 1 0 3 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 ring calon calon's signet~
 This signet ring once belonged to the vampire Calon.  Calon was a rather
@@ -1118,7 +1118,7 @@ A scroll has been left here.~
 ~
 2 29 1 2 7 0 0 16385 64 0 0
 50 10 10 -1 0 0 0 0
-0 10000 100
+0 10000 100 100
 E
 scroll cone cold~
 This small scroll has the the magic energy required to cast cone of cold.

@@ -5,7 +5,7 @@ rusty small sword~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 2 11 0 0 0 0
-4 1 100
+4 1 100 100
 #10302
 steel scimitar~
 &+ya fine steel scimitar&N~
@@ -13,7 +13,7 @@ steel scimitar~
 ~
 5 16 3 10 7 0 0 8193 0 4165209604 0
 9 1 3 3 0 0 0 0
-4 571 100
+4 571 100 100
 #10303
 steel broadaxe axe~
 a broadaxe~
@@ -21,7 +21,7 @@ a steel broadaxe is here on the ground.~
 ~
 5 16 3 8 7 0 1024 8193 0 87572571 0
 1 1 8 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10304
 sword bastard~
 a fine bastard sword~
@@ -29,7 +29,7 @@ a fine bastard sword lies here.~
 ~
 5 16 3 10 7 0 1024 8193 0 87572571 0
 5 1 8 3 0 0 0 0
-10 582 100
+10 582 100 100
 A
 19 2
 #10305
@@ -39,7 +39,7 @@ earring platinum~
 ~
 1 25 1 1 7 0 0 524289 0 0 0
 0 0 -1 0 0 0 0 0
-1 10 100
+1 10 100 100
 A
 1 -1
 A
@@ -51,7 +51,7 @@ earring wooden~
 ~
 1 6 1 1 7 0 0 524289 0 0 0
 0 0 -1 0 0 0 0 0
-1 100 100
+1 100 100 100
 A
 14 -5
 #10307
@@ -61,7 +61,7 @@ earring golden~
 ~
 1 24 1 1 7 0 0 524289 0 0 0
 0 0 -1 0 0 0 0 0
-1 500 100
+1 500 100 100
 A
 19 1
 A
@@ -73,7 +73,7 @@ earring silver~
 ~
 1 22 1 1 7 0 0 524289 0 0 0
 0 0 -1 0 0 0 0 0
-1 100 100
+1 100 100 100
 A
 18 1
 #10309
@@ -83,7 +83,7 @@ earring dull platinum~
 ~
 1 25 1 1 7 0 0 524289 0 0 0
 0 0 -1 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 A
 1 1
 A
@@ -95,7 +95,7 @@ There is a long pike here on the ground.~
 ~
 5 16 3 0 7 0 1024 8193 0 87572571 0
 8 1 8 3 0 0 0 0
-5 100 100
+5 100 100 100
 #10311
 suit armor leather~
 &+ya full suit of leather armor&N~
@@ -103,7 +103,7 @@ a suit of leather armor lies here.~
 ~
 9 13 0 0 7 0 536879104 9 0 4165209604 0
 16 3 1 3 0 0 0 0
-1 322 100
+1 322 100 100
 #10312
 leggings leather~
 &+ysome leather leggings&N~
@@ -111,7 +111,7 @@ Some leather leggings lie here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-4 534 100
+4 534 100 100
 #10314
 boots leather soft high~
 &+ya pair of high-soft leather boots&N~
@@ -119,7 +119,7 @@ a pair of leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-3 276 100
+3 276 100 100
 #10315
 gloves black leather~
 &+La pair of black leather gloves&N~
@@ -127,7 +127,7 @@ a pair of gloves there.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 4 7 6 3 0 0 0 0
-4 238 100
+4 238 100 100
 #10316
 jacket studded~
 &+ya studded &+Yleather jacket&N~
@@ -135,7 +135,7 @@ A studded leather jacket is lying on the ground.~
 ~
 9 13 0 0 7 0 0 9 0 4165209604 0
 3 3 1 3 0 0 0 0
-20 500 100
+20 500 100 100
 #10317
 jacket scale mail~
 &+Ba scale mail jacket&N~
@@ -143,7 +143,7 @@ A scale mail jacket is lying on the ground.~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 4 3 1 3 0 0 0 0
-40 800 100
+40 800 100 100
 #10318
 gloves leather~
 &+ya pair of leather gloves&N~
@@ -151,7 +151,7 @@ A pair of leather gloves is lying on the ground.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 3 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10319
 cap leather~
 &+ya leather cap&N~
@@ -159,7 +159,7 @@ A leather cap is lying on the ground.~
 ~
 9 13 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10320
 bracelet bronze~
 &+ya bronze bracelet&N~
@@ -167,7 +167,7 @@ A bronze bracelet lies here.~
 ~
 12 20 3 3 7 0 0 4097 64 0 0
 0 0 0 0 0 0 0 0
-2 845 100
+2 845 100 100
 A
 18 1
 #10321
@@ -177,7 +177,7 @@ A pair of bronze leggings is lying on the ground.~
 ~
 9 20 3 8 7 0 0 33 0 4173708804 0
 6 5 1 3 0 0 0 0
-8 500 100
+8 500 100 100
 #10322
 pants leather~
 &+ya pair of leather pants&N~
@@ -185,7 +185,7 @@ A pair of leather pants is lying on the ground.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-8 150 100
+8 150 100 100
 #10323
 sleeves bronze~
 &+ya pair of bronze sleeves&N~
@@ -193,7 +193,7 @@ A pair of bronze sleeves is lying on the ground.~
 ~
 9 20 3 8 7 0 0 257 0 4173708804 0
 6 8 1 3 0 0 0 0
-8 750 100
+8 750 100 100
 #10325
 purse small leather~
 &+ya small leather purse&N~
@@ -201,7 +201,7 @@ A small leather purse lies here.~
 ~
 15 13 3 0 7 0 0 16385 0 0 0
 20 5 -1 100 0 0 0 0
-1 125 100
+1 125 100 100
 #10327
 collar neck leather~
 &+ya leather neck collar&N~
@@ -209,7 +209,7 @@ a leather neck collar lies here.~
 ~
 9 13 0 0 7 0 0 5 64 0 0
 0 2 1 3 0 0 0 0
-2 84 100
+2 84 100 100
 A
 17 -3
 #10328
@@ -219,7 +219,7 @@ a studded leather collar lies here.~
 ~
 9 13 0 0 7 0 0 5 64 0 0
 0 2 1 3 0 0 0 0
-2 84 100
+2 84 100 100
 A
 17 -4
 #10329
@@ -229,7 +229,7 @@ field plate~
 ~
 9 16 0 0 7 0 0 9 0 4165209604 0
 11 3 1 3 0 0 0 0
-28 1700 100
+28 1700 100 100
 #10330
 ringmail ring mail~
 &+ya suit of ringmail&N~
@@ -237,7 +237,7 @@ A suit of ringmail lies here.~
 ~
 9 16 1 1 7 0 0 9 0 4165209604 0
 10 3 1 3 0 0 0 0
-36 380 100
+36 380 100 100
 A
 12 -20
 #10331
@@ -247,7 +247,7 @@ A suit of splintmail armor lies here.~
 ~
 9 16 0 0 7 0 0 9 0 4165209604 0
 9 3 1 3 0 0 0 0
-45 1590 100
+45 1590 100 100
 #10332
 wooden shield~
 &+ya wooden shield&N~
@@ -255,7 +255,7 @@ A wooden shield lies here~
 ~
 37 6 3 15 7 0 0 513 0 4165209604 0
 2 1 2 60 0 0 0 0
-1 50 100
+1 50 100 100
 #10333
 splinted shield~
 &+ya splinted shield&N~
@@ -263,7 +263,7 @@ A splinted shield lies here.~
 ~
 37 16 3 15 7 0 0 513 0 4165209604 0
 2 1 2 55 0 0 0 0
-8 625 100
+8 625 100 100
 #10334
 buckler shield~
 &+ya buckler&N~
@@ -271,7 +271,7 @@ A buckler lies here.~
 ~
 37 16 3 15 7 0 0 513 0 4165209604 0
 1 1 2 53 0 0 0 0
-6 25 100
+6 25 100 100
 #10335
 jacket leather~
 &+ya leather jacket&N~
@@ -279,7 +279,7 @@ A leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 5 3 1 3 0 0 0 0
-6 200 100
+6 200 100 100
 #10337
 cap leather~
 &+ya leather cap&N~
@@ -287,7 +287,7 @@ A leather cap lies here~
 ~
 9 13 3 3 7 0 0 17 0 0 0
 3 4 16 3 0 0 0 0
-2 100 100
+2 100 100 100
 #10338
 leather pants~
 &+ya pair of leather pants&N~
@@ -295,7 +295,7 @@ A pair of leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-2 100 100
+2 100 100 100
 #10339
 leather gloves~
 &+ya pair of leather gloves&N~
@@ -303,7 +303,7 @@ A pair of leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 3 7 6 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10340
 padded leather boots~
 &+ya pair of padded leather boots&N~
@@ -311,7 +311,7 @@ A pair of padded leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 3 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10341
 studded leather jacket~
 &+ya studded &+yleather jacket&N~
@@ -319,7 +319,7 @@ A studded leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 4 3 1 3 0 0 0 0
-10 500 100
+10 500 100 100
 #10343
 studded leather pants~
 &+ya pair of studded &+yleather pants&N~
@@ -327,7 +327,7 @@ A pair of studded leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10344
 studded leather gloves~
 &+ya pair of studded &+yleather gloves&N~
@@ -335,7 +335,7 @@ A pair of studded leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 4 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10345
 leather shield~
 &+ya leather shield&N~
@@ -343,7 +343,7 @@ A leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 1 1 3 60 0 0 0 0
-3 75 100
+3 75 100 100
 #10346
 rotted leather jacket~
 &+La rotted leather jacket&N~
@@ -351,7 +351,7 @@ A rotted leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 2 3 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10347
 rotted leather boots~
 &+La pair of rotted leather boots&N~
@@ -359,7 +359,7 @@ A pair of rotted leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 2 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10348
 rotted leather sleeves~
 &+La pair of rotted leather sleeves&N~
@@ -367,7 +367,7 @@ A pair of rotted leather sleeves lies here.~
 ~
 9 13 3 8 7 0 0 257 0 0 0
 2 8 1 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10349
 rotted leather pants~
 &+La pair of rotted leather pants&N~
@@ -375,7 +375,7 @@ A pair of rotted leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 2 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10350
 rotted leather skirt~
 &+La rotted leather skirt&N~
@@ -383,7 +383,7 @@ A rotted leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 2 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10351
 rotted leather gloves~
 &+La pair of rotted leather gloves&N~
@@ -391,7 +391,7 @@ A pair of rotted leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 2 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10352
 rotted leather shield~
 &+La rotted leather shield&N~
@@ -399,7 +399,7 @@ A rotted leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 1 1 3 55 0 0 0 0
-3 75 100
+3 75 100 100
 #10353
 raw leather jacket~
 &+Ya raw leather jacket&N~
@@ -407,7 +407,7 @@ A raw leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 3 3 1 3 0 0 0 0
-3 135 100
+3 135 100 100
 #10354
 raw leather boots~
 &+Ya pair of raw leather boots&N~
@@ -415,7 +415,7 @@ A pair of raw leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 3 6 1 3 0 0 0 0
-2 20 100
+2 20 100 100
 #10355
 raw leather sleeves~
 &+Ya pair of raw leather sleeves&N~
@@ -423,7 +423,7 @@ A pair of raw leather sleeves lies here.~
 ~
 9 13 3 8 7 0 0 257 0 0 0
 3 8 1 3 0 0 0 0
-3 35 100
+3 35 100 100
 #10356
 raw leather pants~
 &+Ya pair of raw leather pants&N~
@@ -431,7 +431,7 @@ A pair of raw leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-3 110 100
+3 110 100 100
 #10357
 raw leather skirt~
 &+Ya raw leather skirt&N~
@@ -439,7 +439,7 @@ A raw leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 3 5 1 3 0 0 0 0
-3 120 100
+3 120 100 100
 #10358
 raw leather gloves~
 &+Ya pair of raw leather gloves&N~
@@ -447,7 +447,7 @@ A pair of raw leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 3 7 6 3 0 0 0 0
-3 42 100
+3 42 100 100
 #10359
 raw leather shield~
 &+Ya raw leather shield&N~
@@ -455,7 +455,7 @@ A raw leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 1 1 2 55 0 0 0 0
-3 26 100
+3 26 100 100
 #10360
 studded leather jacket~
 &+ya studded &+yleather jacket&N~
@@ -463,7 +463,7 @@ A studded leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 4 3 1 3 0 0 0 0
-3 300 100
+3 300 100 100
 #10361
 studded leather boots~
 &+ya pair of studded &+yleather boots&N~
@@ -471,7 +471,7 @@ A pair of studded leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 4 6 1 3 0 0 0 0
-2 30 100
+2 30 100 100
 #10363
 studded leather pants~
 &+ya pair of studded &+yleather pants&N~
@@ -479,7 +479,7 @@ A pair of studded leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10364
 studded leather skirt~
 &+ya studded &+yleather skirt&N~
@@ -487,7 +487,7 @@ A studded leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 4 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10365
 studded leather gloves~
 &+ya pair of studded &+yleather gloves&N~
@@ -495,7 +495,7 @@ A pair of studded leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 4 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10366
 studded leather shield~
 &+ya studded &+yleather shield&N~
@@ -503,7 +503,7 @@ A studded leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 1 1 3 70 0 0 0 0
-3 75 100
+3 75 100 100
 #10367
 fine leather jacket~
 &+ya fine leather jacket&N~
@@ -511,7 +511,7 @@ A fine leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 5 3 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10368
 fine leather boots~
 &+ya pair of fine leather boots&N~
@@ -519,7 +519,7 @@ A pair of fine leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 5 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10369
 fine leather sleeves~
 &+ya pair of fine leather sleeves&N~
@@ -527,7 +527,7 @@ A pair of fine leather sleeves lies here.~
 ~
 9 13 3 8 7 0 0 257 0 0 0
 5 8 1 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10370
 fine leather pants~
 &+ya pair of fine leather pants&N~
@@ -535,7 +535,7 @@ A pair of fine leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10371
 fine leather skirt~
 &+ya fine leather skirt&N~
@@ -543,7 +543,7 @@ A fine leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 5 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10372
 fine leather gloves~
 &+ya pair of fine leather gloves&N~
@@ -551,7 +551,7 @@ A pair of fine leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 5 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10373
 fine leather shield~
 &+ya fine leather shield&N~
@@ -559,7 +559,7 @@ A fine leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 2 1 3 78 0 0 0 0
-3 75 100
+3 75 100 100
 #10374
 fine studded leather jacket~
 &+ya fine studded &+yleather jacket&N~
@@ -567,7 +567,7 @@ A fine studded leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 6 3 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10375
 fine studded leather boots~
 &+ya pair of fine studded &+yleather boots&N~
@@ -575,7 +575,7 @@ A pair of fine studded leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 6 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10376
 fine studded leather sleeves~
 &+ya pair of fine studded &+yleather sleeves&N~
@@ -583,7 +583,7 @@ A pair of fine studded leather sleeves lies here.~
 ~
 9 13 3 8 7 0 0 257 0 0 0
 6 8 1 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10377
 fine studded leather pants~
 &+ya pair of fine studded &+yleather pants&N~
@@ -591,7 +591,7 @@ A pair of fine studded leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 6 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10378
 fine studded leather skirt~
 &+ya fine studded &+yleather skirt&N~
@@ -599,7 +599,7 @@ A fine studded leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 6 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10379
 fine studded leather gloves~
 &+ya pair of fine studded &+yleather gloves&N~
@@ -607,7 +607,7 @@ A pair of fine studded leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 6 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10380
 fine studded leather shield~
 &+ya fine studded &+yleather shield&N~
@@ -615,7 +615,7 @@ A fine studded leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 2 1 3 80 0 0 0 0
-3 75 100
+3 75 100 100
 #10381
 well crafted leather jacket~
 &+ya well crafted leather jacket&N~
@@ -623,7 +623,7 @@ A well crafted leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 6 3 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10382
 well crafted leather boots~
 &+ya pair of well crafted leather boots&N~
@@ -631,7 +631,7 @@ A pair of well crafted leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 6 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10383
 well crafted leather sleeves~
 &+ya pair of well crafted leather sleeves&N~
@@ -639,7 +639,7 @@ A pair of well crafted leather sleeves lies here.~
 ~
 9 13 3 8 7 0 0 257 0 0 0
 6 8 1 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10384
 well crafted leather pants~
 &+ya pair of well crafted leather pants&N~
@@ -647,7 +647,7 @@ A pair of well crafted leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 6 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10385
 well crafted leather skirt~
 &+ya well crafted leather skirt&N~
@@ -655,7 +655,7 @@ A well crafted leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 6 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10386
 well crafted leather gloves~
 &+ya pair of well crafted leather gloves&N~
@@ -663,7 +663,7 @@ A pair of well crafted leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 6 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10387
 well crafted leather shield~
 &+ya well crafted leather shield&N~
@@ -671,7 +671,7 @@ A well crafted leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 2 1 3 82 0 0 0 0
-3 75 100
+3 75 100 100
 #10388
 unique brown leather jacket~
 &+ya unique brown leather jacket&N~
@@ -679,7 +679,7 @@ A unique brown leather jacket lies here.~
 ~
 9 13 0 0 7 0 0 9 0 0 0
 8 3 1 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10389
 unique brown leather boots~
 &+ya pair of unique brown leather boots&N~
@@ -687,7 +687,7 @@ A pair of unique brown leather boots lies here.~
 ~
 9 13 3 8 7 0 0 65 0 0 0
 8 6 1 3 0 0 0 0
-2 50 100
+2 50 100 100
 #10390
 unique brown leather sleeves~
 &+ya pair of unique brown leather sleeves&N~
@@ -695,7 +695,7 @@ A pair of unique brown leather sleeves lies here.~
 ~
 9 13 3 8 7 0 0 257 0 0 0
 8 8 1 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10391
 unique brown leather pants~
 &+ya pair of unique brown leather pants&N~
@@ -703,7 +703,7 @@ A pair of unique brown leather pants lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 8 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10392
 unique brown leather skirt~
 &+ya unique brown leather skirt&N~
@@ -711,7 +711,7 @@ A unique brown leather skirt lies here.~
 ~
 9 13 3 8 7 0 0 33 0 0 0
 8 5 1 3 0 0 0 0
-3 150 100
+3 150 100 100
 #10393
 unique brown leather gloves~
 &+ya pair of unique brown leather gloves&N~
@@ -719,7 +719,7 @@ A pair of unique brown leather gloves lies here.~
 ~
 9 13 3 6 7 0 0 129 0 0 0
 8 7 6 3 0 0 0 0
-3 75 100
+3 75 100 100
 #10394
 unique brown leather shield~
 &+ya unique brown leather shield&N~
@@ -727,7 +727,7 @@ A unique brown leather shield lies here.~
 ~
 37 13 3 15 7 0 0 513 0 0 0
 2 1 3 87 0 0 0 0
-3 75 100
+3 75 100 100
 #10395
 cloak leather fine~
 &+ya fine leather cloak&N~
@@ -735,7 +735,7 @@ A fine leather cloak lies here.~
 ~
 9 13 3 8 7 0 0 1025 0 0 0
 6 9 1 3 0 0 0 0
-5 476 100
+5 476 100 100
 E
 cloak leather~
 The cloak is exceptional fine workmanship, made from the finest hides
@@ -749,7 +749,7 @@ A dark black leather cloak lies here.~
 ~
 9 13 3 8 7 0 0 1025 64 0 0
 7 9 1 3 0 0 0 0
-5 476 100
+5 476 100 100
 E
 cloak leather~
 The cloak is exceptional fine workmanship, made from the finest hides
@@ -765,7 +765,7 @@ A raw leather cloak lies here.~
 ~
 9 13 3 8 7 0 0 1025 64 0 0
 5 9 1 3 0 0 0 0
-5 826 100
+5 826 100 100
 E
 cloak leather~
 The cloak is exceptional fine workmanship, made from the finest hides
@@ -779,7 +779,7 @@ A rotted leather cloak lies here.~
 ~
 9 13 3 8 7 0 0 1025 64 0 0
 2 9 1 3 0 0 0 0
-5 126 100
+5 126 100 100
 #10399
 cloak leather studded~
 &+ya leather cloak&N~
@@ -787,7 +787,7 @@ A leather cloak lies here.~
 ~
 9 13 3 8 7 0 0 1025 64 0 0
 4 9 1 3 0 0 0 0
-5 726 100
+5 726 100 100
 E
 cloak leather~
 The cloak is exceptional fine workmanship, made from the finest hides
@@ -803,7 +803,7 @@ A rusty steel dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10401
 dull dagger steel~
 &+La dull steel dagger&N~
@@ -811,7 +811,7 @@ A dull steel dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 3 4 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10402
 long dagger steel~
 a long steel dagger~
@@ -819,7 +819,7 @@ A long steel dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10403
 sharp dagger steel~
 a sharp steel dagger~
@@ -827,7 +827,7 @@ A sharp steel dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 2 4 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10404
 long sharp dagger steel~
 a long sharp steel dagger~
@@ -835,7 +835,7 @@ A long sharp steel dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 3 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10405
 dull black dagger steel~
 &+La dull black steel dagger&N~
@@ -843,7 +843,7 @@ A dull black steel dagger lies here.~
 ~
 5 16 2 3 7 0 0 8193 0 0 0
 2 1 4 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10406
 rusty short sword steel~
 &+ra rusty steel short sword&N~
@@ -851,7 +851,7 @@ A rusty steel short sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 5 11 0 0 0 0
-3 350 100
+3 350 100 100
 #10407
 dull short sword steel~
 a dull steel short sword~
@@ -859,7 +859,7 @@ A dull steel short sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 5 3 0 0 0 0
-3 400 100
+3 400 100 100
 #10408
 thin short sword steel~
 a thin steel short sword~
@@ -867,7 +867,7 @@ A thin steel short sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 4 3 0 0 0 0
-3 450 100
+3 450 100 100
 #10409
 sharp short sword steel~
 a sharp steel short sword~
@@ -875,7 +875,7 @@ A sharp steel short sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 3 3 0 0 0 0
-3 550 100
+3 550 100 100
 #10410
 well polished short sword steel~
 &+Wa well polished steel short sword&N~
@@ -883,7 +883,7 @@ A well polished steel short sword lies here.~
 ~
 5 16 2 10 7 0 0 8193 0 0 0
 9 1 5 3 0 0 0 0
-3 600 100
+3 600 100 100
 #10412
 polished long sword steel~
 &+Wa polished steel long sword&N~
@@ -891,7 +891,7 @@ a polished steel long sword lies here.~
 ~
 5 16 3 10 7 0 262144 8193 0 4198895524 0
 5 1 7 3 0 0 0 0
-3 500 100
+3 500 100 100
 #10413
 dull black long sword steel~
 &+Ldull black steel long sword&N~
@@ -899,7 +899,7 @@ a dull black steel long sword lies here.~
 ~
 5 16 3 10 7 0 262144 8193 0 4198895524 0
 5 1 6 3 0 0 0 0
-3 550 100
+3 550 100 100
 #10414
 thin polished long sword steel~
 a thin polished steel long sword~
@@ -907,7 +907,7 @@ a thin polished steel long sword lies here.~
 ~
 5 16 3 10 7 0 262144 8193 0 4198895524 0
 5 1 7 3 0 0 0 0
-3 600 100
+3 600 100 100
 #10415
 thin steel spike~
 a thin steel spike~
@@ -915,7 +915,7 @@ a thin steel spike is dropped here.~
 ~
 5 16 2 0 7 0 262144 8193 0 4194697632 0
 2 3 4 11 0 0 0 0
-3 500 100
+3 500 100 100
 A
 18 1
 A
@@ -927,7 +927,7 @@ a steel war is resting here.~
 ~
 5 16 3 8 7 0 0 8193 2 4173708804 0
 4 1 4 7 0 0 0 0
-3 500 100
+3 500 100 100
 A
 18 1
 A
@@ -939,7 +939,7 @@ a polished steel war is resting here.~
 ~
 5 16 3 8 7 0 0 8193 2 4173708804 0
 4 3 6 7 0 0 0 0
-3 500 100
+3 500 100 100
 A
 18 1
 A
@@ -951,7 +951,7 @@ a dull black steel war is blanced here.~
 ~
 5 16 3 8 7 0 0 8193 2 4173708804 0
 4 1 4 7 0 0 0 0
-3 600 100
+3 600 100 100
 A
 18 2
 A
@@ -963,7 +963,7 @@ a dull steel war is blanced here.~
 ~
 5 16 3 8 7 0 0 8193 2 4173708804 0
 4 1 3 7 0 0 0 0
-3 700 100
+3 700 100 100
 #10420
 steel chain~
 &+ya steel chain&N~
@@ -971,7 +971,7 @@ a steel chain is coiled here.~
 ~
 5 16 3 0 7 0 0 8193 0 4165209604 0
 3 1 4 2 0 0 0 0
-3 1000 100
+3 1000 100 100
 A
 18 1
 #10421
@@ -981,7 +981,7 @@ water fountain small~
 ~
 17 40 6 50 7 0 0 0 0 0 0
 -1 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 fountain~
    This wonderful fountian is filled with cool and refreshing water.
@@ -994,7 +994,7 @@ a portion of trail ration is left here.~
 ~
 19 2 2 2 7 0 8388608 16385 0 0 0
 12 2 2 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 trail ration~
 This trail mix is light and easy to carry.
@@ -1006,7 +1006,7 @@ a small slab of meat is left here.~
 ~
 19 2 2 2 7 0 8388608 16385 0 0 0
 2 3 3 0 1 1 0 0
-1 1 100
+1 1 100 100
 #10425
 food large slab meat~
 a large slab of meat~
@@ -1014,7 +1014,7 @@ a large slab of meat is left here.~
 ~
 19 2 2 2 7 0 8388608 16385 0 0 0
 10 3 3 0 1 1 0 0
-1 1 100
+1 1 100 100
 #10426
 food slab orc meat~
 a slab of orc meat~
@@ -1022,7 +1022,7 @@ a slab of orc meat is left here.~
 ~
 19 2 2 2 7 0 8388608 16385 0 0 0
 5 3 3 0 1 1 0 0
-1 1 100
+1 1 100 100
 #10427
 food slab rotten meat~
 a rotten slab of meat~
@@ -1030,7 +1030,7 @@ a rotten slab of meat is left here.~
 ~
 19 2 2 2 7 0 8388608 16385 0 0 0
 36 -1 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #10428
 small rock~
 a small rock~
@@ -1038,7 +1038,7 @@ a small rock lies here.~
 ~
 13 11 0 50 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #10429
 large rock~
 a large rock~
@@ -1046,7 +1046,7 @@ a large rock lies here.~
 ~
 13 11 0 50 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-10 100 100
+10 100 100 100
 #10430
 huge rock~
 a huge rock~
@@ -1054,7 +1054,7 @@ a huge rock lies here.~
 ~
 13 11 0 50 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-30 100 100
+30 100 100 100
 #10431
 rock~
 a rock~
@@ -1062,7 +1062,7 @@ a rock lies here.~
 ~
 13 11 0 50 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 10 100
+3 10 100 100
 #10432
 small stick~
 a small stick~
@@ -1070,7 +1070,7 @@ a small stick lays discarded here.~
 ~
 12 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #10433
 large stick~
 a large stick~
@@ -1078,7 +1078,7 @@ a large stick lays discarded here.~
 ~
 12 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-3 1 100
+3 1 100 100
 #10434
 tree branch~
 a tree branch~
@@ -1086,7 +1086,7 @@ a tree branch lies here broken from a tree.~
 ~
 12 6 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #10435
 ace card playing shades~
 an ace of shades~
@@ -1094,7 +1094,7 @@ an ace of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 12 0 0 0 0
-1 10 100
+1 10 100 100
 #10436
 king card playing shades~
 a king of shades~
@@ -1102,7 +1102,7 @@ a king of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 1 0 0 0 0
-1 10 100
+1 10 100 100
 #10437
 queen card playing shades~
 a queen of shades~
@@ -1110,7 +1110,7 @@ a queen of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 3 0 0 0 0
-1 10 100
+1 10 100 100
 #10438
 jack card playing shades~
 a jack of shades~
@@ -1118,7 +1118,7 @@ a jack of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 4 0 0 0 0
-1 10 100
+1 10 100 100
 #10439
 ten card playing shades~
 a ten of shades~
@@ -1126,7 +1126,7 @@ a ten of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 13 0 0 0 0
-1 10 100
+1 10 100 100
 #10440
 nine card playing shades~
 a nine of shades~
@@ -1134,7 +1134,7 @@ a nine of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 14 0 0 0 0
-1 10 100
+1 10 100 100
 #10441
 eight card playing shades~
 an eight of shades~
@@ -1142,7 +1142,7 @@ an eight of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 15 0 0 0 0
-1 10 100
+1 10 100 100
 #10442
 seven card playing shades~
 a seven of shades~
@@ -1150,7 +1150,7 @@ a seven of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 16 0 0 0 0
-1 10 100
+1 10 100 100
 #10443
 six card playing shades~
 a six of shades~
@@ -1158,7 +1158,7 @@ a six of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 29 0 0 0 0
-1 10 100
+1 10 100 100
 #10444
 five card playing shades~
 a five of shades~
@@ -1166,7 +1166,7 @@ a five of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 22 0 0 0 0
-1 10 100
+1 10 100 100
 #10445
 four card playing shades~
 a four of shades~
@@ -1174,7 +1174,7 @@ a four of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 23 0 0 0 0
-1 10 100
+1 10 100 100
 #10446
 three card playing shades~
 a three of shades~
@@ -1182,7 +1182,7 @@ a three of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 27 0 0 0 0
-1 10 100
+1 10 100 100
 #10447
 two card playing shades~
 a two of shades~
@@ -1190,7 +1190,7 @@ a two of shades is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 28 0 0 0 0
-1 10 100
+1 10 100 100
 #10448
 ace card playing clubs~
 an ace of clubs~
@@ -1198,7 +1198,7 @@ an ace of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 34 0 0 0 0
-1 10 100
+1 10 100 100
 #10449
 king card playing clubs~
 a king of clubs~
@@ -1206,7 +1206,7 @@ a king of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 35 0 0 0 0
-1 10 100
+1 10 100 100
 #10450
 queen card playing clubs~
 a queen of clubs~
@@ -1214,7 +1214,7 @@ a queen of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 37 0 0 0 0
-1 10 100
+1 10 100 100
 #10451
 jack card playing clubs~
 a jack of clubs~
@@ -1222,7 +1222,7 @@ a jack of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 44 0 0 0 0
-1 10 100
+1 10 100 100
 #10452
 ten card playing clubs~
 a ten of clubs~
@@ -1230,7 +1230,7 @@ a ten of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 62 0 0 0 0
-1 10 100
+1 10 100 100
 #10453
 nine card playing clubs~
 a nine of clubs~
@@ -1238,7 +1238,7 @@ a nine of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 63 0 0 0 0
-1 10 100
+1 10 100 100
 #10454
 eight card playing clubs~
 an eight of clubs~
@@ -1246,7 +1246,7 @@ an eight of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 66 0 0 0 0
-1 10 100
+1 10 100 100
 #10455
 seven card playing clubs~
 a seven of clubs~
@@ -1254,7 +1254,7 @@ a seven of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 167788545 0 37883812 0
 20 1 1 1 0 0 0 0
-1 10 100
+1 10 100 100
 #10456
 six card playing clubs~
 a six of clubs~
@@ -1262,7 +1262,7 @@ a six of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 29 0 0 0 0
-1 10 100
+1 10 100 100
 #10457
 five card playing clubs~
 a five of clubs~
@@ -1270,7 +1270,7 @@ a five of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 22 0 0 0 0
-1 10 100
+1 10 100 100
 #10458
 four card playing clubs~
 a four of clubs~
@@ -1278,7 +1278,7 @@ a four of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 23 0 0 0 0
-1 10 100
+1 10 100 100
 #10459
 three card playing clubs~
 a three of clubs~
@@ -1286,7 +1286,7 @@ a three of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 27 0 0 0 0
-1 10 100
+1 10 100 100
 #10460
 two card playing clubs~
 a two of clubs~
@@ -1294,7 +1294,7 @@ a two of clubs is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 28 0 0 0 0
-1 10 100
+1 10 100 100
 #10461
 ace card playing hearts~
 an ace of hearts~
@@ -1302,7 +1302,7 @@ an ace of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 34 0 0 0 0
-1 10 100
+1 10 100 100
 #10462
 king card playing hearts~
 a king of hearts~
@@ -1310,7 +1310,7 @@ a king of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 35 0 0 0 0
-1 10 100
+1 10 100 100
 #10463
 queen card playing hearts~
 a queen of hearts~
@@ -1318,7 +1318,7 @@ a queen of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 37 0 0 0 0
-1 10 100
+1 10 100 100
 #10464
 jack card playing hearts~
 a jack of hearts~
@@ -1326,7 +1326,7 @@ a jack of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 44 0 0 0 0
-1 10 100
+1 10 100 100
 #10465
 ten card playing hearts~
 a ten of hearts~
@@ -1334,7 +1334,7 @@ a ten of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 62 0 0 0 0
-1 10 100
+1 10 100 100
 #10466
 nine card playing hearts~
 a nine of hearts~
@@ -1342,7 +1342,7 @@ a nine of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 63 0 0 0 0
-1 10 100
+1 10 100 100
 #10467
 eight card playing hearts~
 an eight of hearts~
@@ -1350,7 +1350,7 @@ an eight of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 66 0 0 0 0
-1 10 100
+1 10 100 100
 #10468
 seven card playing hearts~
 a seven of hearts~
@@ -1358,7 +1358,7 @@ a seven of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 42 0 0 0 0
-1 10 100
+1 10 100 100
 #10469
 six card playing hearts~
 a six of hearts~
@@ -1366,7 +1366,7 @@ a six of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 29 0 0 0 0
-1 10 100
+1 10 100 100
 #10470
 five card playing hearts~
 a five of hearts~
@@ -1374,7 +1374,7 @@ a five of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 22 0 0 0 0
-1 10 100
+1 10 100 100
 #10471
 four card playing hearts~
 a four of hearts~
@@ -1382,7 +1382,7 @@ a four of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 23 0 0 0 0
-1 10 100
+1 10 100 100
 #10472
 three card playing hearts~
 a three of hearts~
@@ -1390,7 +1390,7 @@ a three of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 27 0 0 0 0
-1 10 100
+1 10 100 100
 #10473
 two card playing hearts~
 a two of hearts~
@@ -1398,7 +1398,7 @@ a two of hearts is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 28 0 0 0 0
-1 10 100
+1 10 100 100
 #10474
 ace card playing diamonds~
 an ace of diamonds~
@@ -1406,7 +1406,7 @@ an ace of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 12 0 0 0 0
-1 10 100
+1 10 100 100
 #10475
 king card playing diamonds~
 a king of diamonds~
@@ -1414,7 +1414,7 @@ a king of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 1 0 0 0 0
-1 10 100
+1 10 100 100
 #10477
 jack card playing diamonds~
 a jack of diamonds~
@@ -1422,7 +1422,7 @@ a jack of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 4 0 0 0 0
-1 10 100
+1 10 100 100
 #10478
 ten card playing diamonds~
 a ten of diamonds~
@@ -1430,7 +1430,7 @@ a ten of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 13 0 0 0 0
-1 10 100
+1 10 100 100
 #10479
 nine card playing diamonds~
 a nine of diamonds~
@@ -1438,7 +1438,7 @@ a nine of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 14 0 0 0 0
-1 10 100
+1 10 100 100
 #10480
 eight card playing diamonds~
 an eight of diamonds~
@@ -1446,7 +1446,7 @@ an eight of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 15 0 0 0 0
-1 10 100
+1 10 100 100
 #10481
 seven card playing diamonds~
 a seven of diamonds~
@@ -1454,7 +1454,7 @@ a seven of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 16 0 0 0 0
-1 10 100
+1 10 100 100
 #10482
 six card playing diamonds~
 a six of diamonds~
@@ -1462,7 +1462,7 @@ a six of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 29 0 0 0 0
-1 10 100
+1 10 100 100
 #10483
 five card playing diamonds~
 a five of diamonds~
@@ -1470,7 +1470,7 @@ a five of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 22 0 0 0 0
-1 10 100
+1 10 100 100
 #10484
 four card playing diamonds~
 a four of diamonds~
@@ -1478,7 +1478,7 @@ a four of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 23 0 0 0 0
-1 10 100
+1 10 100 100
 #10485
 three card playing diamonds~
 a three of diamonds~
@@ -1486,7 +1486,7 @@ a three of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 27 0 0 0 0
-1 10 100
+1 10 100 100
 #10486
 two card playing diamonds~
 a two of diamonds~
@@ -1494,7 +1494,7 @@ a two of diamonds is hidden here.~
 ~
 4 28 3 10 7 0 1024 16385 0 37883812 0
 20 1 1 28 0 0 0 0
-1 10 100
+1 10 100 100
 #10487
 potion light green _id_~
 &+ga light green potion&n~
@@ -1502,7 +1502,7 @@ a light green potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 1 -1 -1 0 0 0 0
-1 700 100
+1 700 100 100
 E
 _id_name_~
 potion armor
@@ -1518,7 +1518,7 @@ a light blue potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 1 3 -1 0 0 0 0
-1 700 100
+1 700 100 100
 E
 _id_name_~
 potion protection blessed
@@ -1534,7 +1534,7 @@ a light red potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 1 3 16 0 0 0 0
-1 700 100
+1 700 100 100
 E
 _id_name_~
 potion blessed protection healing
@@ -1550,7 +1550,7 @@ a light orange potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 15 -1 -1 0 0 0 0
-1 700 100
+1 700 100 100
 #10491
 potion light brown~
 &+ya light brown potion&n~
@@ -1558,7 +1558,7 @@ a light brown potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 15 1 3 0 0 0 0
-1 700 100
+1 700 100 100
 #10492
 potion light yellow~
 &+Ya light yellow potion&n~
@@ -1566,7 +1566,7 @@ a light yellow potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 57 -1 -1 0 0 0 0
-1 700 100
+1 700 100 100
 #10493
 potion blur clear~
 &+La blur clear potion&n~
@@ -1574,7 +1574,7 @@ a blur clear potion is laying here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 15 41 56 83 0 0 0 0
-1 700 100
+1 700 100 100
 #10494
 potion warrior~
 a warrior's potion~
@@ -1582,7 +1582,7 @@ a warrior's potion is dropped here.~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 50 36 61 56 0 0 0 0
-1 700 100
+1 700 100 100
 #10495
 potion protection _id_~
 &+ma purple potion&n~
@@ -1590,7 +1590,7 @@ potion protection _id_~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 50 34 1 -1 0 0 0 0
-1 700 100
+1 700 100 100
 E
 _id_name_~
 potion protection evil
@@ -1606,7 +1606,7 @@ a plain brown chair sits here.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 brown chair~
 This wooden chair look uncomfortable.
@@ -1618,7 +1618,7 @@ a long operating table is here.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 table~
 This long wooden tables has trovels for blood and fluid drainage.
@@ -1630,7 +1630,7 @@ a large feather bed rest comfortable on the floor.~
 ~
 12 6 1 1 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 feather bed~
 This wonderful looking would give anything a good nights rest.
@@ -1642,4 +1642,4 @@ This is version (1.1) of Split Shield object file.~
 ~
 16 6 1 1 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100

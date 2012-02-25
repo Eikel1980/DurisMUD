@@ -5,7 +5,7 @@ dwarven battle-axe axe~
 ~
 5 15 3 0 5 0 0 8193 0 0 0
 1 2 5 0 0 0 0 5
-12 0 100
+12 0 100 100
 E
 dwarven battle-axe axe~
    This battle-axe has two stout mithril blades and is made by the dwarves.
@@ -21,7 +21,7 @@ tarnished copper ring~
 ~
 9 15 3 0 5 0 4096 3 0 0 0
 4 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tarnished copper ring~
    &+yThis copper ring is old and tarnished.
@@ -37,7 +37,7 @@ silver longsword sword~
 ~
 5 22 3 0 5 0 0 8193 0 0 0
 5 2 6 0 0 0 0 0
-12 5000 100
+12 5000 100 100
 E
 silver longsword sword~
    &+cThis longsword is extremely well balanced and sharp.
@@ -53,7 +53,7 @@ giant wooden club~
 ~
 5 6 6 0 5 0 0 8193 0 0 0
 10 2 6 0 0 0 0 0
-15 500 100
+15 500 100 100
 E
 giant wooden club~
    &+yThis wooden club is the size of a small tree, and twice as heavy.
@@ -71,7 +71,7 @@ small wooden sign~
 ~
 13 15 3 0 5 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small wooden sign~
 &+y  -------------------------
@@ -91,7 +91,7 @@ studded leather eyepatch~
 ~
 9 15 3 0 5 0 0 131073 0 0 0
 4 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 studded leather eyepatch~
    &+yThis small leather eyepatch has &+Liron studs&+y in a circular
@@ -108,7 +108,7 @@ pair chainmail gloves~
 ~
 9 16 3 0 5 0 4096 129 0 0 0
 6 0 0 3 0 0 0 0
-2 5000 100
+2 5000 100 100
 E
 pair chainmail gloves~
    &+WThese gloves are quite old and made of a steel chainmail.
@@ -124,7 +124,7 @@ A decayed skeleton of a long dead humanoid is propped up in the corner.~
 ~
 15 15 3 0 5 0 0 0 0 0 0
 5 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 skeleton~
    This skeletal corpse is extremely old and most of it has already decayed.
@@ -138,7 +138,7 @@ iron key~
 ~
 18 15 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 iron key~
    &+LThis small key is crudely made of iron.
@@ -150,7 +150,7 @@ black crow feather~
 ~
 9 50 1 0 5 0 4096 2621441 0 0 0
 2 0 0 1 0 0 0 0
-0 1000 100
+0 1000 100 100
 E
 black crow feather~
    &+LThis crow feather is black and ugly.  It seems like it could be worn
@@ -167,7 +167,7 @@ sack coins~
 ~
 20 15 3 0 5 0 0 16385 0 0 0
 25 15 5 3 0 0 0 0
-0 0 100
+0 0 100 100
 #53611
 filthy hide loincloth loin cloth~
 &+ya &+Lfilthy&+y hide loincloth&N~
@@ -175,7 +175,7 @@ filthy hide loincloth loin cloth~
 ~
 9 12 3 0 3 0 0 2049 0 0 0
 4 0 0 0 0 0 0 0
-2 400 100
+2 400 100 100
 E
 filthy hide loincloth loin cloth~
   &+yThis loincloth is filthy, but strong.
@@ -191,7 +191,7 @@ giant boulder~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 53717 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 giant boulder~
    &+LThis giant boulder seems to be blocking the mountain pass from any
@@ -205,7 +205,7 @@ giant boulder~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 53718 2 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 giant boulder~
    &+LThis giant boulder seems to be blocking the mountain pass from any
@@ -219,7 +219,7 @@ dark staff necromancy~
 ~
 4 15 3 0 5 0 9 16385 0 87060571 0
 35 2 2 268 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dark staff necromancy~
    &+LThis black staff is headed with a &+Wskull&+L and seems very evil.
@@ -235,7 +235,7 @@ inverted cross earring~
 ~
 9 15 3 0 5 0 4096 524289 64 0 0
 5 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 inverted cross earring~
   &+LThe evil coming from this earring is unimaginable.
@@ -251,7 +251,7 @@ necklace rusty steel~
 ~
 9 15 3 0 5 0 0 5 0 0 0
 4 0 0 0 0 0 0 0
-1 12227 100
+1 12227 100 100
 A
 19 2
 #53617
@@ -261,7 +261,7 @@ A dragonbone ring lies here.~
 ~
 9 15 3 3 5 0 0 3 0 0 0
 0 0 0 0 0 0 0 0
-3 18292 100
+3 18292 100 100
 A
 19 2
 A
@@ -273,7 +273,7 @@ key~
 ~
 18 15 3 0 5 0 8912904 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53619
 feather roc~
 &+Wa majestic feather &+yof a roc&n~
@@ -281,7 +281,7 @@ A large feather lies here.~
 ~
 9 15 3 0 5 0 0 5 0 0 0
 8 0 0 0 0 0 0 0
-0 28282 100
+0 28282 100 100
 A
 36 2
 A
@@ -293,7 +293,7 @@ mask ceremonial shady grove~
 ~
 9 15 3 1 5 0 0 262145 0 0 0
 4 0 0 0 0 0 0 0
-1 82820 100
+1 82820 100 100
 A
 18 2
 A
@@ -305,7 +305,7 @@ wooden raft~
 ~
 22 6 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 wooden raft~
    &+yThis wooden raft is made of hardwood and is bounded together
@@ -318,7 +318,7 @@ bright eagle feather~
 ~
 8 15 3 0 5 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bright eagle feather~
    &+yThis single feather is bright and long.
@@ -332,7 +332,7 @@ mask eagle feathers~
 ~
 9 50 3 0 5 0 0 262145 0 0 0
 5 0 0 0 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 mask eagle feathers~
    &+WThis brilliant white mask has been crafted from several bright
@@ -349,7 +349,7 @@ small campfire camp fire~
 ~
 15 5 3 0 5 0 262145 0 0 0 0
 5 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 small campfire camp fire~
    &+RThis small campfire burns softly.  The embers used to create this
@@ -362,7 +362,7 @@ ember dark moor~
 ~
 8 6 3 0 5 0 266240 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 ember dark moor~
    &+RThis small burning ember glows brilliantly as it never seems to
@@ -378,7 +378,7 @@ blacksteel bracelet~
 ~
 9 16 3 0 5 0 0 4097 0 0 0
 5 0 0 0 0 0 0 0
-1 4000 100
+1 4000 100 100
 E
 blacksteel bracelet~
    &+LThis bracelet made of dyed black steel is quite heavy, but strong.
@@ -394,7 +394,7 @@ knotted fur hide~
 ~
 9 12 4 0 5 0 4096 1025 0 0 0
 10 0 0 0 0 0 0 0
-4 5000 100
+4 5000 100 100
 E
 knotted fur hide~
    &+WThis heavy pelt seems to protect and keep its wearer warm.
@@ -410,7 +410,7 @@ etched druidic staff~
 ~
 5 6 3 0 5 0 0 8193 66 0 0
 12 2 3 0 0 0 0 0
-5 15000 100
+5 15000 100 100
 E
 etched druidic staff~
    &+yThis druidic staff is etched with several small runes.
@@ -426,7 +426,7 @@ burnt wagon~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 53996 1 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 burnt wagon~
    &+yAn old wooden wagon has been abandoned on this bridge.  The
@@ -441,7 +441,7 @@ pile rubble blocks~
 ~
 29 15 3 0 5 0 0 0 0 0 0
 270 53997 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile rubble blocks~
    &+yThis large pile of rubble contains both blasted chunks
@@ -456,7 +456,7 @@ plumed obsidian helm~
 ~
 9 15 3 0 5 0 4096 17 64 0 0
 10 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plumed obsidian helm~
    &+LThis ancient obsidian helm has a plume of red feathers flowing
@@ -473,7 +473,7 @@ spiked rock climbing boots~
 ~
 9 15 3 0 5 0 0 65 0 0 0
 8 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spiked rock climbing boots~
    &+LThese sturdy black leather boots seem to be made with an
@@ -491,7 +491,7 @@ sign crystal~
 ~
 13 15 3 0 5 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign crystal~
    &+WMade of a fine high elven &+Ccrystal&+W, this sign reads:
@@ -505,7 +505,7 @@ sign crystal~
 ~
 13 15 3 0 5 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign crystal~
    &+WMade of a fine high elven &+Ccrystal&+W, this sign reads:
@@ -519,7 +519,7 @@ sheladrieth sunwell~
 ~
 25 15 3 0 5 0 262144 0 64 0 0
 54086 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sheladrieth sunwell~
    &+YComparable to a druidic &Nmoonwell&+Y, this great &+Wsunwell&+Y is
@@ -535,7 +535,7 @@ larethian sunwell~
 ~
 25 15 3 0 5 0 262144 0 64 0 0
 54084 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 larethian sunwell~
    &+YResembling an ocean that has been set on fire, this great
@@ -553,7 +553,7 @@ beautiful crystal bracelet~
 ~
 9 8 3 0 11 0 0 4097 64 0 0
 8 0 0 4 0 0 0 0
-0 10666 100
+0 10666 100 100
 E
 beautiful crystal bracelet~
    &+WThis crystal bracelet was made with a beautiful, high elven design.
@@ -569,7 +569,7 @@ crystal spurred boots~
 ~
 9 8 3 0 11 0 0 65 64 0 0
 10 0 0 5 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 crystal spurred boots~
    &+WThese crystal boots are excellently made with high elven design.
@@ -585,7 +585,7 @@ elven cloak fine silk~
 ~
 9 3 3 0 11 0 0 1025 64 0 0
 10 0 0 3 0 0 0 0
-0 15000 100
+0 15000 100 100
 E
 elven cloak fine silk~
    &+CThis fine cloak has been hand-crafted in superior high elven design.
@@ -601,7 +601,7 @@ elven priestess sash~
 ~
 9 3 3 0 11 0 0 2049 64 0 0
 10 0 0 3 0 0 0 0
-0 10999 100
+0 10999 100 100
 E
 elven priestess sash~
    &+WThis blessed sash bares with it high elven runes of the priestess,
@@ -618,7 +618,7 @@ mithril gold earring~
 ~
 9 18 3 0 10 0 0 524289 0 0 0
 7 0 0 3 0 0 0 0
-0 20555 100
+0 20555 100 100
 E
 mithril gold earring~
    &+WThis fine earring appears to be dwarven in origin.
@@ -634,7 +634,7 @@ crystal dagger~
 ~
 5 8 3 0 11 0 0 8193 2 0 0
 2 2 4 0 2 0 0 0
-0 15000 100
+0 15000 100 100
 E
 crystal dagger~
    &+gThis dagger has been carved of fine crystal.  It looks quite valuable.
@@ -648,7 +648,7 @@ bloody head aventi~
 ~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53644
 bloody head itneva~
 &+Lthe &+rbl&+Roo&+rdy &+Lhead of &+GItneva&n~
@@ -656,7 +656,7 @@ bloody head itneva~
 ~
 13 2 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53645
 bloody head ahanz~
 &+Lthe &+rbl&+Roo&+rdy &+Lhead of &+mAhanz&n~
@@ -664,7 +664,7 @@ bloody head ahanz~
 ~
 13 15 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53646
 unfinished wand shadow stalker~
 &+Lthe &+runf&+Rinis&+rhed &+Lwand of the Shadow Stalker&n~
@@ -672,7 +672,7 @@ unfinished wand shadow stalker~
 ~
 8 15 3 0 7 0 1 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53647
 misty haze key~
 &+Ga misty haze shaped like a key&n~
@@ -680,7 +680,7 @@ misty haze key~
 ~
 18 15 3 0 7 0 8392712 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53648
 key bones~
 &+La key made of &+Wbones&n~
@@ -688,7 +688,7 @@ key bones~
 ~
 18 15 3 0 7 0 8392712 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53649
 key damned~
 &+Lthe &+rkey &+Lof the &+rda&+Rmn&+red&n~
@@ -696,7 +696,7 @@ key damned~
 ~
 18 15 3 0 7 0 8388616 1 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53650
 shadowy staff damnation~
 &+Lthe handle of the shadowy &+mstaff &+Lof &+rda&+Rmn&+rat&+Rio&+rn&n~
@@ -704,7 +704,7 @@ shadowy staff damnation~
 ~
 8 15 3 0 7 0 0 8193 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 134217728 0 0 262144
+0 0 100 100 134217728 0 0 262144
 #53651
 shell crown damnation shadowy~
 &+Lthe shell of the shadowy &+mcrown &+Lof &+rda&+Rmn&+rat&+Rio&+rn&n~
@@ -712,7 +712,7 @@ shell crown damnation shadowy~
 ~
 8 15 3 0 7 0 0 17 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 32 0 0 0
+0 0 100 100 32 0 0 0
 #53652
 shadowy platemail damnation~
 &+Lthe chest piece of the shadowy &+mplatemail &+Lof &+rda&+Rmn&+rat&+Rio&+rn&n~
@@ -720,7 +720,7 @@ shadowy platemail damnation~
 ~
 8 15 3 0 7 0 0 9 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 134217728 0 0 0
+0 0 100 100 134217728 0 0 0
 #53653
 pile rocks~
 &+La pile of &+wrocks&n~
@@ -728,7 +728,7 @@ pile rocks~
 ~
 29 15 3 0 7 0 4096 0 0 0 0
 270 54193 5 0 0 0 0 0
-0 0 100 134217768 0 0 262144
+0 0 100 100 134217768 0 0 262144
 #53654
 bloated decaying corpse~
 &+La &+gbloated &+Land &+gdecaying &+Lcorpse&N~
@@ -736,7 +736,7 @@ bloated decaying corpse~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 54194 5 1 0 0 0 0
-0 0 100 134217768 0 0 262144
+0 0 100 100 134217768 0 0 262144
 E
 bloated decaying corpse~
 This corpse is _enormous_.  In fact, it appears you can push this corpse
@@ -750,7 +750,7 @@ large crack~
 ~
 25 15 3 0 7 0 4098 0 0 0 0
 54218 7 -1 0 0 0 0 0
-0 0 100 134217768 0 0 262144
+0 0 100 100 134217768 0 0 262144
 #53656
 large crack~
 &+La large crack&n~
@@ -758,7 +758,7 @@ large crack~
 ~
 25 15 3 0 7 0 4098 0 0 0 0
 54217 7 -1 0 0 0 0 0
-0 0 100 134217768 0 0 262144
+0 0 100 100 134217768 0 0 262144
 #53657
 spider web~
 &+La spider &+Wweb&n~
@@ -766,7 +766,7 @@ spider web~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 0 4 0 1 0 0 0 0
-0 0 100 134217768 0 0 262144
+0 0 100 100 134217768 0 0 262144
 #53658
 large wooden chest~
 &+La large &+ywooden &+Lchest&n~
@@ -774,7 +774,7 @@ large wooden chest~
 ~
 15 15 3 0 7 0 4096 0 0 0 0
 0 4 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 #53659
 claw~
 carcass beetle claw not for players~
@@ -782,7 +782,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 5 15 3 0 7 0 524290 8192 0 0 0
 2 4 4 0 0 0 0 0
-0 0 100
+0 0 100 100
 #53660
 ring netherworld~
 &+Lthe &+mri&+Mng &+Lof the Netherworld&n~
@@ -790,7 +790,7 @@ ring netherworld~
 ~
 9 15 3 0 7 0 8193 3 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100 16 0 0 0
+0 0 100 100 16 0 0 0
 A
 35 4
 A
@@ -802,7 +802,7 @@ shadowy staff damnation~
 ~
 5 1 3 0 7 0 9473 8193 64 4591108 0
 12 3 4 0 0 0 0 0
-7 0 100 0 0 65664 0
+7 0 100 100 0 0 65664 0
 A
 35 6
 A
@@ -814,7 +814,7 @@ shadowy crown damnation~
 ~
 9 15 3 0 7 0 9216 17 64 33685920 0
 0 0 0 0 0 0 0 0
-0 0 100 524288 0 64 0
+0 0 100 100 524288 0 64 0
 A
 35 6
 A
@@ -826,7 +826,7 @@ shadowy platemail damnation~
 ~
 9 15 3 0 7 0 9473 9 64 87158875 0
 0 0 0 0 0 0 0 0
-0 0 100 64 0 0 16777216
+0 0 100 100 64 0 0 16777216
 A
 35 6
 A
@@ -838,7 +838,7 @@ wicked wand shadow stalker~
 ~
 3 15 3 0 7 0 1 16385 64 0 0
 53 6 6 417 0 0 0 0
-0 0 100
+0 0 100 100
 #53665
 large tent~
 &+La large &N&+ytent&N~
@@ -846,7 +846,7 @@ large tent~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 54240 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large tent~
 &+yThis large tent is covered with a layer of thick hides - severan skins
@@ -860,7 +860,7 @@ tent flap~
 ~
 25 15 3 0 7 0 0 0 0 0 0
 559633 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tent flap~
 &+LThis large tent &N&+yflap &+Lopens up to the fiord dock.
@@ -872,7 +872,7 @@ bowl seafood bisque~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 35 8 8 0 0 6 0 0
-0 5 100
+0 5 100 100
 E
 bowl seafood bisque~
 &+rThis steaming bowl of soup is filled with large chunks of
@@ -885,7 +885,7 @@ bowl seafood bisque~
 ~
 19 48 3 0 7 0 0 16385 0 0 0
 35 8 8 0 4 4 0 0
-0 5 100
+0 5 100 100
 E
 bowl seafood bisque~
 &+rThis steaming bowl of soup is filled with large chunks of
@@ -898,7 +898,7 @@ shaledrieth moonwell~
 ~
 25 1 3 0 7 0 1 0 64 0 0
 43268 7 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shaledrieth moonwell~
    &+cSeveral huge stones are arranged in a large circular pattern, about twenty

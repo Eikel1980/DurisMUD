@@ -5,7 +5,7 @@ A &+Ltiny black key&n lies here.~
 ~
 18 16 1 1 7 0 8392704 1 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key tiny black~
 This is remarkably small key and it is pitch black in color.
@@ -17,7 +17,7 @@ axe battle~
 ~
 5 16 3 8 7 0 1024 8193 0 87572571 0
 1 2 8 3 0 0 0 0
-5 217 100
+5 217 100 100
 E
 axe battle~
      &+LA simple black axe, it seems made well enough to cause more
@@ -34,7 +34,7 @@ elven holy relic~
 ~
 9 7 0 0 12 0 1025 5 66 100794808 0
 8 0 0 3 0 0 0 0
-1 20000 100
+1 20000 100 100
 E
 elven holy relic~
      &+CMade of fine elven craftsmanship, this pendant radiates a
@@ -51,7 +51,7 @@ pool color glowing magenta~
 ~
 12 40 5 50 7 0 1 0 0 0 0
 4610 200 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 #4404
 pool color glowing magenta~
 &+Ma magenta-colored pool&n~
@@ -59,7 +59,7 @@ pool color glowing magenta~
 ~
 12 40 5 50 7 0 1 0 0 0 0
 4609 200 0 0 0 0 0 0
-10000 0 100
+10000 0 100 100
 #4405
 bodycloak cloak green dark _noquest_~
 &+ga dark-green bodycloak&n~
@@ -67,7 +67,7 @@ A dark-green cloak has been strewn on the floor here.~
 ~
 9 3 3 8 7 0 8200 1025 64 0 0
 15 9 1 3 0 0 0 0
-10 25000 100 536870928 0 0 0
+10 25000 100 100 536870928 0 0 0
 E
 bodycloak cloak green dark~
 This is a cloak that covers your entire body.  It has a deep dark green color
@@ -80,7 +80,7 @@ A &+Bsapphire key&n has been left here.~
 ~
 18 33 1 1 7 0 8388608 16385 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key sapphire~
 This is a large key carved from pure sapphires.  It looks valuable.
@@ -92,7 +92,7 @@ trident long~
 ~
 5 16 4 0 7 0 4194304 8193 0 0 0
 8 4 6 11 0 0 0 0
-1 10 100
+1 10 100 100
 E
 trident long~
 This is a long pitchfork type weapon with sharp spikes and barbs on the tips.
@@ -108,7 +108,7 @@ A &+Gjade stone key&n has been tossed away here.~
 ~
 18 11 1 1 7 0 8388608 16385 64 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key stone jade~
 This is a large stone key with jade pieces embedded in it.
@@ -120,7 +120,7 @@ hammer battle~
 ~
 5 16 3 8 7 0 0 8193 64 0 0
 4 3 5 6 0 0 0 0
-1 8 100
+1 8 100 100
 E
 hammer battle~
 This is a large hammer made from the wood of a pine tree.
@@ -136,7 +136,7 @@ gem green sparkling~
 ~
 8 26 0 0 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 gem green sparkling~
 This is a very beautiful treasure that sparkles brightly in the light.
@@ -152,7 +152,7 @@ A &+glarge green key lies here covered in slime.~
 ~
 18 16 1 1 7 0 8388736 16385 64 0 0
 2 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key slimy green~
 This is a large green key covered in slime. *bleh*
@@ -164,7 +164,7 @@ orb green small~
 ~
 1 7 1 2 7 0 0 16385 64 0 0
 0 0 -1 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 orb green small~
 This is a small spherical object you can use as a light source.
@@ -178,7 +178,7 @@ a &+gsmall green orb&n lies here.~
 ~
 18 7 1 1 7 0 8392736 16385 64 0 0
 2 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 orb small green~
 This is a small spherical object that looks like it can be used as a key.
@@ -190,7 +190,7 @@ A small black hammer has been pitched here.~
 ~
 5 16 3 8 7 0 0 8193 0 0 0
 4 2 6 7 0 0 0 0
-10 1 100
+10 1 100 100
 E
 hammer smithy~
 This is a small black hammer a smithy uses while ironworking.
@@ -206,7 +206,7 @@ A &+Cshiny mithril key&n has been tossed away here.~
 ~
 18 18 1 1 7 0 8392704 1 0 0 0
 2 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #4470
 rug dwarven~
 &+Ba duergar rug&N~
@@ -214,7 +214,7 @@ rug dwarven~
 ~
 8 3 0 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-10 1500 100
+10 1500 100 100
 E
 rug dwarven~
 The rug is about ten feet square and expensive looking.  There
@@ -228,7 +228,7 @@ Several lines of text have been carved into a large boulder here.~
 ~
 16 11 1 1 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 text boulder large~
 The message is written in three languages one of them being a very
@@ -250,7 +250,7 @@ hammer mithril handed dwarven _noquest_~
 ~
 5 18 4 8 7 0 20979969 8193 64 4173708804 0
 4 2 8 6 0 0 0 0
-18 35000 100 0 128 0 0
+18 35000 100 100 0 128 0 0
 E
 hammer mithril handed dwarven~
 This is an enormous two-handed hammer.  It looks well used by the former
@@ -268,7 +268,7 @@ Someone has left a beautiful girdle here.~
 ~
 9 13 3 3 7 0 0 2049 64 0 0
 8 0 0 3 0 0 0 0
-4 25000 100
+4 25000 100 100
 E
 girdle giant strength~
 This is a wonderful piece of armor.  Hand crafted by the duergar the girdle
@@ -285,7 +285,7 @@ A suit of black chain mail lies here unattended.~
 ~
 9 19 0 0 7 0 0 9 0 4173708804 0
 12 3 1 3 0 0 0 0
-40 3300 100
+40 3300 100 100
 E
 chain mail adamantite elven~
 This is an absolutely beautiful piece of armor.  Made from pure adamantite
@@ -303,7 +303,7 @@ An amulet made from rotting plants is decaying here.~
 ~
 9 42 3 2 7 0 128 5 64 0 0
 3 0 0 3 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 amulet plants rotting~
 This is a disgusting amulet.  Rotted pieces of plants cover the entire length
@@ -320,7 +320,7 @@ A torch burning blue flames is resting here.~
 ~
 1 15 3 10 7 0 1024 16385 64 4197892 0
 0 0 -1 0 0 0 0 0
-1 3300 100
+1 3300 100 100
 E
 torch burning flames~
 This is a rather large torch with a medium sized iron handle.  The flames
@@ -338,7 +338,7 @@ A small buckler lies here on the ground.~
 ~
 37 15 3 15 7 0 128 513 66 0 0
 1 1 2 105 3 0 0 0
-5 2500 100
+5 2500 100 100
 E
 buckler drow~
 This is a small shield-type piece of armor that is made from a metal unknown
@@ -355,7 +355,7 @@ A small black ring lies on the ground here.~
 ~
 11 11 1 1 7 0 128 3 64 0 0
 0 0 0 10 0 0 0 0
-1 1 100
+1 1 100 100
 E
 ring stone black~
 It looks rather unbecoming.  You feel shivers run up and down your spine.
@@ -371,7 +371,7 @@ dagger black wicked~
 ~
 5 16 2 3 7 0 0 8193 64 4165209604 0
 2 1 4 11 0 0 0 0
-3 9483 100
+3 9483 100 100
 E
 dagger black wicked~
 This is a very nice looking weapon.  The entire blade of this dagger has a
@@ -389,7 +389,7 @@ A green wand has been tossed on the ground here.~
 ~
 3 38 2 4 7 0 0 16385 64 0 0
 50 3 4 41 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 wand dark green~
 This is a medium sized wand with a dark green color.  It glows with magic.
@@ -401,7 +401,7 @@ A very large purplish bladder is lying here.~
 ~
 17 3 1 4 7 0 0 1 0 0 0
 100 0 1 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 water bladder purple~
 Although rather grotesque it looks like it would make a large drink container.
@@ -413,7 +413,7 @@ ring green glowing~
 ~
 9 32 2 1 11 0 128 3 64 0 0
 6 0 0 3 0 0 0 0
-1 25000 100 0 8 0 0
+1 25000 100 100 0 8 0 0
 E
 ring green glowing~
 This is a small quite ugly ring.  It feels like it irradiates evil.
@@ -429,7 +429,7 @@ gold coins~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 25 0 0 0 0 0
-3 1 100
+3 1 100 100
 #4620
 chest small iron~
 a small iron chest~
@@ -437,7 +437,7 @@ A small iron chest lies here secured to the ground.~
 ~
 15 15 5 50 7 0 4128 0 64 0 0
 800 13 0 250 0 0 0 0
-100 1 100
+100 1 100 100
 E
 chest small iron~
 It is rather small and made of solid cast iron.
@@ -449,7 +449,7 @@ A small gray stone has been dropped here.~
 ~
 11 11 0 0 7 0 4096 16385 66 0 0
 0 0 0 10 0 0 0 0
-5 2500 100
+5 2500 100 100
 A
 3 10
 A
@@ -461,7 +461,7 @@ A small blue potion has been tossed here.~
 ~
 10 7 2 4 7 0 1 16385 66 0 0
 50 1 56 1 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 potion dark blue~
 This is a small bottle with a dark-blue liquid in it.
@@ -473,7 +473,7 @@ A light-blue potion has been thrown away here.~
 ~
 10 7 2 4 7 0 4096 1 64 0 0
 50 28 28 43 0 0 0 0
-1 1 100
+1 1 100 100
 E
 potion light blue~
 This is a large bottle with a strange light-blue liquid in it.
@@ -485,7 +485,7 @@ A suit of dwarven armor lies here in a pile.~
 ~
 9 16 0 0 7 0 0 9 64 4165287428 0
 14 3 1 3 0 0 0 0
-10 8500 100
+10 8500 100 100
 E
 mail scale dwarven~
 This suit of armor is very unique.  Made by dwarves this armor can withstand
@@ -500,7 +500,7 @@ bracelet mithril shiny~
 ~
 9 18 3 3 7 0 0 4097 64 0 0
 9 11 24 3 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bracelet mithril shiny~
 This is a small metal bracelet that fits well on your wrist.  It has been
@@ -517,7 +517,7 @@ A small green staff is lying here covered with slime.~
 ~
 4 6 3 10 7 0 128 16385 64 0 0
 45 1 1 32 0 0 0 0
-1 1 100
+1 1 100 100
 E
 staff slimy green~
 This is a staff about 4' long green and totally covered in a slimy ooze.
@@ -529,7 +529,7 @@ The large wooden crate is very old looking.~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 1000 5 0 250 0 0 0 0
-100 1 100
+100 1 100 100
 E
 crate large wooden~
 The crate is made of heavy wooden planks that are connected together with
@@ -542,7 +542,7 @@ The table is very old looking.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table wooden small~
 The table stands about four feet tall supported by thin delicate looking legs.
@@ -554,7 +554,7 @@ The desk looks warped in a few places.~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 350 13 0 100 0 0 0 0
-100 1 100
+100 1 100 100
 E
 desk wooden large~
 The desk is made of pine or another soft wood that has been stained dark
@@ -568,7 +568,7 @@ gold coins~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 250 0 0 0 0 0
-3 1 100
+3 1 100 100
 #4700
 desk oaken oak large~
 a large oaken desk~
@@ -576,7 +576,7 @@ The desk is very old and elegant looking with a single large drawer.~
 ~
 15 5 3 0 7 0 0 0 0 0 0
 300 13 0 100 0 0 0 0
-100 1 100
+100 1 100 100
 E
 desk oaken oak large~
 The desk stands four feet tall and five feet wide with swirling patterns
@@ -590,7 +590,7 @@ A small crumpled note lies here.~
 ~
 16 29 1 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 note crumpled~
 The note reads :
@@ -608,7 +608,7 @@ A small note lies on the ground here.~
 ~
 16 29 1 1 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 note small~
 The note reads:
@@ -622,7 +622,7 @@ The table has a polished surface.~
 ~
 12 16 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table large~
 The table is ovular eight feet by five feet in size.  It looks like the
@@ -636,7 +636,7 @@ table short wide~
 ~
 12 5 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table short wide~
 The table is made from stone and very sturdy looking.  Its legs and
@@ -649,7 +649,7 @@ block ore mithril~
 ~
 8 18 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 10000 100
+1000 10000 100 100
 E
 ore block mithril~
 The block is very shiny and extremely heavy looking.  This ore looks as
@@ -664,7 +664,7 @@ rack large liquor~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 1000 0 -1 100 0 0 0 0
-100 1 100
+100 1 100 100
 E
 rack large liquor~
 The rack is constructed from overlapping layers of wooden planks running
@@ -677,7 +677,7 @@ A bottle of dwarven mead is resting here.~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 6 6 4 0 0 0 0 0
-9 1 100
+9 1 100 100
 #4760
 ale bottle~
 a bottle of ale~
@@ -685,7 +685,7 @@ A bottle of ale lies has been left here.~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 5 5 3 0 0 0 0 0
-7 1 100
+7 1 100 100
 #4770
 firebreather bottle whisky dwarven~
 a bottle of dwarven whisky~
@@ -693,7 +693,7 @@ A bottle of dwarven whisky has been dropped here.~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 5 5 7 0 0 0 0 0
-7 1 100
+7 1 100 100
 #4780
 firebreather bottle evil dwarven whisky~
 a bottle of evil looking dwarven whisky~
@@ -701,7 +701,7 @@ A bottle of evil whisky lies here.~
 ~
 17 7 1 2 7 0 0 1 0 0 0
 3 3 7 1 0 0 0 0
-4 1 100
+4 1 100 100
 #4790
 table large~
 a large table~
@@ -709,7 +709,7 @@ The table looks very old and quite warped.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table~
 The table looks very much like a meeting table of some kind.
@@ -721,7 +721,7 @@ tiny spider ring~
 ~
 9 19 1 1 7 0 66560 3 64 33685920 0
 4 0 0 2 0 0 0 0
-2 7830 100
+2 7830 100 100
 E
 ruby ring tiny~
 &+rThis beautiful ring is composed of what looks like a tiny black spider with
@@ -738,7 +738,7 @@ monolyth huge black~
 ~
 12 11 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 monolyth huge black~
 &+LThis large stone slam is shaped like a perfect rectangle, and it totaly

@@ -5,7 +5,7 @@ corpse illithid~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 corpse illithid~
 &+L   This battered and beaten corpse looks to have been preserved
@@ -19,7 +19,7 @@ key skull shaped~
 ~
 18 10 3 0 7 0 8396801 1 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132002
 silvery key imbued power~
 &+La &+Csilvery &+Lkey &+Bi&+bm&+Bb&+bu&+Be&+bd &+Lwith &+Mpower&n~
@@ -27,7 +27,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 18 15 3 0 7 0 1 1 0 0 0
 0 100 0 0 0 0 0 0
-0 123 100
+0 123 100 100
 #132003
 key gate large~
 &+ca large gate key&n~
@@ -35,7 +35,7 @@ key gate large~
 ~
 18 15 3 0 7 0 0 1 0 0 0
 0 100 0 0 0 0 0 0
-0 725 100 2 0 0 0
+0 725 100 100 2 0 0 0
 #132004
 statue lich queen gith~
 &+La statue of &+GVlaakith&n~
@@ -43,7 +43,7 @@ statue lich queen gith~
 ~
 13 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 statue lich queen gith~
 &+L   Standing fifteen feet tall, this statue depicts &+GVlaakith I&+L. Known
@@ -61,7 +61,7 @@ altar blood splattered~
 ~
 13 15 3 0 7 0 1 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132006
 silverish githyanki gauntlets~
 &+ca pair of silverish githyanki gauntlets&n~
@@ -69,7 +69,7 @@ silverish githyanki gauntlets~
 ~
 9 22 3 0 11 0 8192 16513 65 0 0
 10 0 0 0 0 0 0 0
-0 782 100
+0 782 100 100
 A
 18 4
 A
@@ -81,7 +81,7 @@ staff silvery githyanki arch mage arch-mage~
 ~
 5 25 3 0 12 0 0 8193 0 0 0
 12 3 4 0 0 0 0 0
-0 14634 100
+0 14634 100 100
 A
 33 2
 A
@@ -93,7 +93,7 @@ key glowing rune silver~
 ~
 18 22 3 0 7 0 1 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 24 100
+0 24 100 100
 #132009
 key inner study~
 &+La key to the inner study&n~
@@ -101,7 +101,7 @@ key inner study~
 ~
 18 15 3 0 7 0 4096 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 1678 100
+0 1678 100 100
 #132010
 silver obsidian longsword~
 &+La &+csilver &+Land ob&+ws&+Lid&+wi&+Lan longsword&n~
@@ -109,7 +109,7 @@ silver obsidian longsword~
 ~
 5 15 3 0 7 0 1 24577 1 0 0
 5 2 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 18 2
 A
@@ -121,7 +121,7 @@ wooden desk long~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 100000 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132012
 training dummy~
 &+ya battered and beaten training dummy&n~
@@ -129,7 +129,7 @@ training dummy~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132013
 corpse flayed illithid mindflayer~
 &+Lthe c&+go&+Lrp&+gs&+Le of a &+rf&+Rl&+ray&+Re&+rd &+Millithid&n~
@@ -137,7 +137,7 @@ corpse flayed illithid mindflayer~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 1412541 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132014
 large slab blood stained stone~
 &+La large slab of &+rb&+Rloo&+rd &+Lst&+wai&+Lned &+cstone&n~
@@ -145,7 +145,7 @@ large slab blood stained stone~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132015
 severed illithid tentacle~
 &+La severed &+Millithid &+Ltentacle&n~
@@ -153,7 +153,7 @@ severed illithid tentacle~
 ~
 9 2 3 0 7 0 4096 8404993 0 0 0
 0 0 0 0 0 0 0 0
-0 2546 100
+0 2546 100 100
 A
 37 4
 A
@@ -165,7 +165,7 @@ smoldering shackles~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132017
 icy shackles~
 &+Lsome &+Ci&+Wc&+Cy &+Lshackles&n~
@@ -173,7 +173,7 @@ icy shackles~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132018
 desk bound fused illithid bones~
 &+La desk of magicaly &+gb&+Go&+gu&+Gn&+gd &+Land &+bf&+Bu&+bs&+Be&+bd &+millithid &+Lb&+wo&+Ln&+we&+Ls&n~
@@ -181,7 +181,7 @@ desk bound fused illithid bones~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 123515 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132019
 astral forge anvil~
 &+Lan &+castral &+rforged &+Lanvil&n~
@@ -189,7 +189,7 @@ astral forge anvil~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #132020
 flayed illithid hide flesh leggings~
 &+La pair of &+wf&+Ll&+wa&+Ly&+we&+Ld &+Millithid &+Lh&+gi&+Ld&+ge &+Lleggings&n~
@@ -197,7 +197,7 @@ flayed illithid hide flesh leggings~
 ~
 9 2 3 0 14 0 8193 33 0 0 0
 -10 0 0 0 0 0 0 0
-2 15155 100
+2 15155 100 100
 A
 37 3
 A
@@ -209,7 +209,7 @@ pulsing star crystal shard~
 ~
 8 44 3 0 7 0 1 1 0 0 0
 0 0 0 0 0 0 0 0
-0 310634 100
+0 310634 100 100
 #132022
 holy warhammer war hammer discipline~
 &+Lthe &+Wholy &+Lwarhammer '&+rDiscipline&+L'&n~
@@ -217,7 +217,7 @@ holy warhammer war hammer discipline~
 ~
 5 18 3 0 13 0 8448 8193 0 0 0
 4 4 5 0 0 325 50 25
-4 17732 100
+4 17732 100 100
 E
 _room_msg~
 &N $n's $q &+mpu&+Ml&+mses &+Lwith a &+Yholy &+Wenergy &+Las a blast of &+bfr&+Bee&+bz&+Bi&+bng &+Cc&+Wo&+Cld &+Lis called forth to purge the &+ressence &+Lof $N!
@@ -241,7 +241,7 @@ razor steel razorsteel wings angel~
 ~
 9 15 3 0 7 0 1 1025 0 0 0
 15 0 0 0 0 0 0 0
-0 0 100 134217728 0 0 0
+0 0 100 100 134217728 0 0 0
 A
 18 3
 A
@@ -253,7 +253,7 @@ threads astral projection~
 ~
 9 1 3 0 14 0 1 2049 0 0 0
 5 0 0 0 0 0 0 0
-0 0 100 0 0 0 262144
+0 0 100 100 0 0 0 262144
 A
 27 6
 A

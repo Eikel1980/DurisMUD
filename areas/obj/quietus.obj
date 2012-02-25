@@ -5,7 +5,7 @@ sign~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign~
    The sign has been carved from a large slab of obsidian with the letters
@@ -26,7 +26,7 @@ badge darvanu~
 ~
 15 15 3 0 7 0 0 2113537 0 1 0
 2 13 0 0 0 0 0 0
-1 10 100
+1 10 100 100
 E
 badge darvanu~
 The badge is made of a dark metal and inscribed with a red "D" that
@@ -41,7 +41,7 @@ rapier~
 ~
 5 15 3 0 7 0 64 24577 0 122910 0
 5 3 4 3 0 0 0 0
-3 1 100
+3 1 100 100
 E
 rapier~
 The fine, thin blade is designed for use in close quarters, its tip can
@@ -60,7 +60,7 @@ crate wood large wooden~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 500 13 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 crate wood large wooden~
 This heavy wooden crate closes with a simple lock and is designed to hold
@@ -73,7 +73,7 @@ armor leather~
 ~
 9 15 3 0 7 0 536870912 9 0 0 0
 35 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 armor leather~
 Powerful magic has been used to make this armor far lighter and sturdier
@@ -93,7 +93,7 @@ ale tankard mug glass~
 ~
 17 15 3 0 7 0 0 16385 0 1 0
 1 1 3 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 ale tankard mug glass~
 The stone tankard is large, heavy, and difficult to walk away with, and
@@ -106,7 +106,7 @@ fountain granite stone green~
 ~
 17 15 3 0 7 0 0 0 0 1 0
 -1 -1 28 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain granite stone green~
 The fountain is a simple affair, water spouts out of the top of a fluted
@@ -122,7 +122,7 @@ cot bed simple metal~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 cot bed simple metal~
 A thin mattress stuffed with straw tops this simple metal cot.  The wire
@@ -136,7 +136,7 @@ chest ebonwood~
 ~
 15 15 3 0 7 0 12288 0 0 1 0
 200 25 1709 200 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest ebonwood~
 This chest has been made of the finest ebonwood, and decorated with
@@ -153,7 +153,7 @@ key ebonwood~
 ~
 18 15 3 0 7 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 #1710
 oven stone solid~
 &+ga solid stone oven&N~
@@ -161,7 +161,7 @@ oven stone solid~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 300 5 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 oven stone solid~
 The oven is constructed of heavy stone and is large enough to cook vast
@@ -176,7 +176,7 @@ chair leather~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chair leather~
 Fine soft lambskin has been stuffed and bolted to a sturdy wooden frame to
@@ -190,7 +190,7 @@ painting~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 painting~
 The painting is small but intricately detailed.  It depicts a shiip full
@@ -207,7 +207,7 @@ rug red carpet~
 ~
 8 15 3 0 7 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-15 35000 100
+15 35000 100 100
 E
 rug red carpet~
 This small rug appears to be more of a prayer mat than an actual carpet.
@@ -223,7 +223,7 @@ belt linen red cloth~
 ~
 9 15 3 0 7 0 12288 2049 0 0 0
 5 0 0 0 0 0 0 0
-1 4531 100
+1 4531 100 100
 E
 belt linen red cloth~
 The thick cloth has been folded over several times to make it sturdy and
@@ -241,7 +241,7 @@ A glass flask containing a &+Yyellow&N and &+ybrown&N potion lies here.~
 ~
 10 15 3 0 7 0 0 16385 0 1 0
 20 3 1 0 0 0 0 0
-1 2839 100
+1 2839 100 100
 E
 potion flask yellow~
 The flask contains a viscous yellow liquid with brown stripes.  The liquid
@@ -255,7 +255,7 @@ The flask contains a thin, &+gdark green&N liquid with odd &+Lblack chunks&N.~
 ~
 10 15 3 0 7 0 0 16385 0 1 0
 40 221 204 215 0 0 0 0
-1 953 100
+1 953 100 100
 E
 potion flask green~
 Ugly black chunks stir about in the dark green liquid within the flask.
@@ -270,7 +270,7 @@ Some no_show rubble lies here waiting to be explored.~
 ~
 15 15 3 0 7 0 2 0 0 1 0
 200 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #1718
 bracer ruby~
 &+ra ruby-studded bracer&N~
@@ -278,7 +278,7 @@ bracer ruby~
 ~
 9 15 3 0 7 0 20480 4097 0 1 0
 3 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bracer ruby~
 Ruby studs surround the entire breadth of this wide bracelet, turning it
@@ -297,7 +297,7 @@ table ebonwood~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 table ebonwood~
 The table is quite low, meant for holding drinks and bowls of snacks
@@ -315,7 +315,7 @@ sofa couch~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sofa couch~
 Fine linen covers the smooth, even stuffing that has been used to pack the
@@ -330,7 +330,7 @@ chair~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chair~
 Fine leather has been embroidered with intricate, abstract designs that
@@ -347,7 +347,7 @@ painting abstract~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 painting abstract~
 This odd painting consists mostly of yellow lines against an ivory
@@ -361,7 +361,7 @@ painting volcano~
 ~
 13 15 3 0 7 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 painting volcano~
 The mouth of the fiery volcano is spewing flaming rocks and magma that
@@ -379,7 +379,7 @@ desk ebonwood~
 ~
 15 15 3 0 7 0 0 0 0 1 0
 100 13 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 desk ebonwood~
 The solid desk has been made of thick, heavily polished ebonwood.  The
@@ -394,7 +394,7 @@ key gold golden~
 ~
 18 15 3 0 7 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key gold golden~
 The teeth on this golden key suggest that it fits a very complex lock.
@@ -408,7 +408,7 @@ chest gold~
 ~
 15 15 3 0 7 0 8392768 16385 0 1 0
 100 27 1725 100 0 0 0 0
-30 1 100
+30 1 100 100
 E
 chest gold~
 This solid gold chest is of exquisite craftsmanship.  The gold is very
@@ -423,7 +423,7 @@ necklace jade~
 ~
 9 15 3 0 7 0 69736 5 0 1 0
 4 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 necklace jade~
 Magically hardened jade chain links have been formed into a thick
@@ -441,7 +441,7 @@ coins platinum~
 ~
 20 15 3 0 7 0 0 16385 0 1 0
 0 0 0 90 0 0 0 0
-1 1 100
+1 1 100 100
 E
 coins platinum~
 The coins shine with the gleam of polished, pure platinum.
@@ -453,7 +453,7 @@ A no_show dresser stands here.~
 ~
 15 15 3 0 7 0 2 0 0 1 0
 500 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 #1730
 stone bloodstone~
 &+rQuietus' bloodstone&N~
@@ -461,7 +461,7 @@ stone bloodstone~
 ~
 11 15 3 0 7 0 8458248 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 2 100
+1 2 100 100
 E
 stone bloodstone~
 This bloody ruby would appear to be the bloodstone of an ancient vampire.
@@ -479,7 +479,7 @@ bracer rank lieutenant darvanu~
 ~
 9 15 3 0 7 0 72 4097 0 1 0
 5 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 bracer rank lieutenant darvanu~
 The bracer has been made of the finest adamantium and bears the well-known
@@ -497,7 +497,7 @@ A piece of paper has been dropped here.~
 ~
 12 15 3 0 7 0 8388608 16385 0 1 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 note paper~
 Message to Gr'Zz'Lien:
@@ -518,7 +518,7 @@ pool water~
 ~
 17 15 3 0 7 0 0 0 0 1 0
 -1 -1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
 Water has soaked its way through the earth and stone of the mountains that
@@ -533,7 +533,7 @@ flute steel instrument~
 ~
 32 15 3 0 7 0 0 16385 0 1 0
 184 5 1 1 0 0 0 0
-1 3000 100
+1 3000 100 100
 E
 flute steel instrument~
 Although the flute is simple in design, its steel construction makes it
@@ -546,7 +546,7 @@ lyre bone carved instrument~
 ~
 32 15 3 0 7 0 0 16385 0 0 0
 185 100 1 1 0 0 0 0
-1 800 100
+1 800 100 100
 E
 lyre bone carved instrument~
 Carved bones have been carefully fitted together to create a fine frame to
@@ -560,7 +560,7 @@ mandolin instrument~
 ~
 32 15 3 0 7 0 0 16385 0 1 0
 186 5 1 1 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 mandolin instrument~
 The body of the mandolin is fairly old, and in need of a new coat of
@@ -574,7 +574,7 @@ harp brass instrument~
 ~
 32 15 3 0 7 0 0 16385 0 1 0
 187 5 1 1 0 0 0 0
-2 1000 100
+2 1000 100 100
 E
 harp brass instrument~
 This simple brass harp is the sort purchased by wealthy merchants for
@@ -589,7 +589,7 @@ drum drums purple instrument~
 ~
 32 15 3 0 7 0 0 16385 0 1 0
 188 100 2 1 0 0 0 0
-3 1450 100
+3 1450 100 100
 E
 drum drums purple instrument~
 A cheap, light-weight wood has been used for the body of the drum.  The
@@ -603,7 +603,7 @@ horn dent dented brass instrument~
 ~
 32 15 3 0 7 0 0 16385 0 1 0
 189 5 2 1 0 0 0 0
-3 2300 100
+3 2300 100 100
 E
 horn dent dented brass instrument~
 The horn sounds ok, despite the odd, head-shaped dent in the bell.  The
@@ -617,7 +617,7 @@ shrine~
 ~
 13 15 3 0 7 0 4096 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shrine~
 Layers of bat dung have covered the shrine so deeply that is virtually
@@ -632,7 +632,7 @@ stone pulsating~
 ~
 8 15 3 0 7 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 stone pulsating~
 This magical stone was taken from a strange, magical bat.  What it really
@@ -647,7 +647,7 @@ key gold~
 ~
 18 15 3 0 7 0 8392712 16385 0 1 0
 0 3 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key gold~
 The gold is soft and pure, and would be very easy to damage.  Whatever
@@ -660,7 +660,7 @@ chest wood wooden~
 ~
 15 15 3 0 7 0 4096 0 0 1 0
 200 29 1742 200 0 0 0 0
-0 0 100
+0 0 100 100
 E
 chest wood wooden~
 A lock made of pure, soft gold adorns this otherwise simple, heavy chest.
@@ -674,7 +674,7 @@ buckler shield mithril~
 ~
 37 15 3 0 7 0 86080 513 0 2 0
 1 1 1 12 3 0 0 0
-4 2000 100 8 28 0 0
+4 2000 100 100 8 28 0 0
 E
 buckler shield mithril~
 Strange runes cover the entire surface of the shield, both the outside and
@@ -689,7 +689,7 @@ globe smoke~
 ~
 8 15 3 0 7 0 4160 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 8000 100
+1 8000 100 100
 E
 globe smoke~
 Although the swirling smoke glows with a powerful magic, it is impossible
@@ -705,7 +705,7 @@ head aresliean~
 ~
 13 15 3 0 7 0 8392704 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 head aresliean~
 The job of detaching the head from the body was rather neatly done, though
@@ -719,7 +719,7 @@ dagger mithril sleek~
 ~
 5 15 3 0 7 0 0 8193 64 0 0
 2 3 4 4 0 0 0 0
-1 1 100
+1 1 100 100
 E
 dagger mithril sleek~
 This sleek dagger bears the emblem of the Darvanu mercenary house on the
@@ -738,7 +738,7 @@ necklace obsidian~
 ~
 9 15 3 0 7 0 3162176 5 0 0 0
 8 0 0 0 0 0 0 0
-1 15434 100
+1 15434 100 100
 E
 necklace obsidian~
 Small spheres of obsidian have been linked together on an obsidian chain.
@@ -754,7 +754,7 @@ bracer obsidian~
 ~
 9 15 3 0 7 0 0 4097 0 0 0
 5 0 0 0 0 0 0 0
-1 15434 100 0 28 0 0
+1 15434 100 100 0 28 0 0
 E
 bracer obsidian~
 A single piece of obsidian has been carved into a beautiful, and
@@ -773,7 +773,7 @@ sword mithril massive large _noquest_~
 ~
 5 15 3 0 7 0 4341824 8193 0 0 0
 13 5 6 3 0 0 0 0
-20 1 100 16 0 0 0
+20 1 100 100 16 0 0 0
 E
 sword mithril massive large~
 The symbol of the Darvanu mercenary house has been placed on the blade
@@ -794,7 +794,7 @@ cloak silk~
 ~
 9 15 3 0 7 0 67150912 1025 0 4267520 0
 12 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 cloak silk~
 The cloak is virtually weightless, floating in the air all on its own.
@@ -811,7 +811,7 @@ amulet red blood pulsating~
 ~
 9 15 3 0 7 0 3276800 5 0 0 0
 8 0 0 0 0 0 0 0
-1 15434 100 0 12288 0 0
+1 15434 100 100 0 12288 0 0
 E
 amulet red blood pulsating~
 The amulet glows and pulsates like some sort of living creature, but if it
@@ -830,7 +830,7 @@ earring gold horn~
 ~
 9 15 3 0 7 0 0 524289 0 0 0
 5 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 earring gold horn~
 This intricate little earring has been shaped like a tiny horn.  The
@@ -849,7 +849,7 @@ ring black strange~
 ~
 9 15 3 0 7 0 131072 3 0 0 0
 5 0 0 0 0 0 0 0
-0 1343 100
+0 1343 100 100
 E
 ring black strange~
 Rather than being black, it would be better to say that the ring is

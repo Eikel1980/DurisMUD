@@ -5,7 +5,7 @@ A dagger with a vicious &+gserpentine &+wshape lies here.~
 ~
 5 16 2 3 7 0 41088 8193 64 4198895524 0
 2 2 3 11 0 0 0 0
-1 2000 100
+1 2000 100 100
 E
 dagger serpentine~
    It has a serpentine shape to it and the handle has the shape of a
@@ -23,7 +23,7 @@ A suit of scuffed and worn &+Lblack leather armor &+wlies here~
 ~
 9 13 0 0 7 0 536880128 9 64 8515584 0
 19 3 1 3 0 0 0 0
-10 2500 100
+10 2500 100 100
 E
 leather suit armor~
    This armor is &+yscuffed and worn &+was if it has been used for a long
@@ -42,7 +42,7 @@ A &+yrusty metal club &+wlies here~
 ~
 5 16 3 8 7 0 4194304 8193 0 4165209604 0
 10 1 8 6 0 0 0 0
-13 100 100
+13 100 100 100
 E
 club rusty~
    It is &+yrusted and corroded. &+wA firm hit on a solid surface could probably
@@ -57,7 +57,7 @@ A &+Lblack sword lies here covered in &+rbarbs~
 ~
 5 16 3 10 7 0 1024 8193 64 87572571 0
 5 2 3 3 0 0 0 0
-15 1200 100
+15 1200 100 100
 E
 jagged sword~
 It looks incredibly &+Levil &+wsince the &+rbarbs &+wlook very dangerous
@@ -75,7 +75,7 @@ A &+Lblack spiked helm &Nlies on the ground gathering dust~
 ~
 9 16 3 10 7 0 1073741824 17 0 4173708804 0
 6 4 1 3 0 0 0 0
-9 8000 100
+9 8000 100 100
 E
 black helm spiked helmet~
 Its pitch &+Lblack &Nwith a small slit for your eyes to see through. It
@@ -92,7 +92,7 @@ A &+Lblack steel &Nbreastplate lies on the ground gathering dust~
 ~
 9 16 0 0 7 0 0 9 0 4173708804 0
 15 3 6 3 0 0 0 0
-20 10000 100
+20 10000 100 100
 E
 black breastplate plate steel~
    It is pitch &+Lblack &Nand made of an extremely tough substance. It has
@@ -107,7 +107,7 @@ A small &+ybrass figurine &Nof a Tiger lies here almost invisible~
 ~
 8 17 0 0 7 0 1 1 0 0 0
 0 0 0 0 0 0 0 0
-0 600 100
+0 600 100 100
 E
 brass figurine~
    It's nothing more than an old looking &+ybrass figurine&+w. It seems to &+mglow
@@ -120,7 +120,7 @@ A &+mshining &+Bblue &+bsho&+Brtsw&+bord &+wlies here humming away softly~
 ~
 5 16 2 10 7 0 73729 8396801 64 4165209604 0
 9 1 5 11 0 0 0 0
-9 1200 100
+9 1200 100 100
 E
 short sword blue~
    This weapon looks very powerful indeed. The &+Bblue&n light is so bright you
@@ -138,7 +138,7 @@ The &+gdragon's &+yhoard &+wof treasure lies here on a huge pile~
 ~
 8 25 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1000 100
+1000 1000 100 100
 E
 hoard pile~
    This is what the &+RRed &+gDragon &+wwas protecting. To your surprise you see that
@@ -152,7 +152,7 @@ A large &+ciron &+bchest &+wlies partially hidden.~
 ~
 15 15 5 50 7 0 0 0 0 0 0
 50 29 93016 250 0 0 0 0
-30 800 100
+30 800 100 100
 E
 chest iron~
 Just a plain &+ciron &+bchest&+w. What could it hold?
@@ -164,7 +164,7 @@ A primitive looking &+yclub lies here~
 ~
 5 6 3 8 7 0 0 8193 0 4173708804 0
 10 2 3 7 0 0 0 0
-6 400 100
+6 400 100 100
 E
 club wooden~
    It looks like a thick branch of a &+ytree &+wcut off and stripped of
@@ -178,7 +178,7 @@ Some &+mornate &+yhide &+wlies here~
 ~
 8 12 0 0 7 0 129 9 0 0 0
 0 0 0 0 0 0 0 0
-50 8000 100
+50 8000 100 100
 E
 gem studded dragon hide~
    Although this would provide little protection it looks like a great
@@ -191,7 +191,7 @@ apron~
 ~
 9 3 3 6 7 0 0 2049 0 4169510912 0
 5 10 0 3 0 0 0 0
-5 900 100
+5 900 100 100
 E
 apron~
    It looks like an apron a cook might wear with a hardened leather front
@@ -204,7 +204,7 @@ symbol unholy~
 ~
 9 16 3 2 7 0 1 5 0 0 0
 3 2 1 3 0 0 0 0
-2 5 100
+2 5 100 100
 E
 unholy symbol~
    It is made from steel and has a leather cord attached to it with which
@@ -220,7 +220,7 @@ morningstar morning star~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 3 2 4 7 0 0 0 0
-7 1000 100
+7 1000 100 100
 E
 morning star morningstar~
    &+rThis weapon consists of a stick with a chain attached to it and at
@@ -238,7 +238,7 @@ trident steel~
 ~
 5 16 4 0 7 0 0 8193 64 4165209604 0
 8 3 3 11 0 0 0 0
-6 1400 100
+6 1400 100 100
 E
 trident~
 A surprisingly light trident with 3 sharp prongs on the end makes a
@@ -255,7 +255,7 @@ key iron~
 ~
 18 15 1 1 7 0 8388608 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key iron~
 You see nothing special...
@@ -267,7 +267,7 @@ shelf~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 90 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shelf~
 &+yIt's a shelf with lots of weird potions on it free for the taking.
@@ -279,7 +279,7 @@ potion green murky~
 ~
 10 7 2 4 7 0 0 1 0 0 0
 30 43 -1 -1 0 0 0 0
-2 1291 100
+2 1291 100 100
 E
 potion murky~
 You see nothing special...
@@ -291,7 +291,7 @@ spiked club~
 ~
 5 16 3 8 7 0 0 8193 0 4173708804 0
 11 3 3 6 0 0 0 0
-20 400 100
+20 400 100 100
 E
 spiked club~
 It's really huge about 4 feet in length and it has a tooth of a dragon
@@ -306,7 +306,7 @@ bracelet dull iron~
 ~
 9 15 3 3 7 0 0 4097 64 0 0
 5 11 24 3 0 0 0 0
-1 600 100
+1 600 100 100
 E
 dull iron bracelet~
    Although it looks plain and cheap a strange magical force seems to
@@ -321,7 +321,7 @@ shiny metallic shield~
 ~
 37 16 3 15 7 0 0 513 0 4173708804 0
 2 1 3 60 4 0 0 0
-5 600 100
+5 600 100 100
 E
 shiny metallic shield~
    Although rather plain looking it can protect well in combat.
@@ -333,7 +333,7 @@ ringmail~
 ~
 9 16 0 0 7 0 0 9 0 4165209604 0
 7 3 1 3 0 0 0 0
-10 1000 100
+10 1000 100 100
 E
 ringmail~
 This mail looks very old and useless.
@@ -345,4 +345,4 @@ vines~
 ~
 29 15 3 0 7 0 2 0 0 0 0
 340 93002 5 1 0 0 0 0
-0 0 100
+0 0 100 100

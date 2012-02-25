@@ -5,7 +5,7 @@ A purple potion has been dropped here.~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 17 14 36 33 0 0 0 0
-1 500 100
+1 500 100 100
 E
 potion purple~
 It looks rather strange.
@@ -17,7 +17,7 @@ a ring made of &+Gsnake skin&n~
 ~
 9 47 3 0 7 0 4096 33554433 0 0 0
 5 20 0 2 0 0 0 0
-0 5000 100
+0 5000 100 100
 E
 ring snake~
 The ring is made up of the skin of an old snake, it does not look like
@@ -34,7 +34,7 @@ A red robe lies strewn on the ground here.~
 ~
 9 3 3 8 7 0 1024 9 0 4197892 0
 5 3 1 3 0 0 0 0
-5 500 100
+5 500 100 100
 E
 robe red flowing~
 This is a long flowing red robe made from a beautiful silky material.  It
@@ -51,7 +51,7 @@ A stone key has been dropped here by someone.~
 ~
 18 11 1 1 7 0 8388608 16385 0 0 0
 2 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key stone~
 This is a small key carved out of pure stone rock.
@@ -63,7 +63,7 @@ a bronze scepter lies on the ground here.~
 ~
 5 20 3 0 7 0 0 8193 0 4173708804 0
 10 2 5 7 0 0 0 0
-10 1 100
+10 1 100 100
 E
 scepter bronze~
 This is a weapon with a 5' bronze shaft and blunted on both ends.
@@ -79,7 +79,7 @@ A large thigh bone lays on the ground here.~
 ~
 5 10 4 8 7 0 0 8193 0 4173708804 0
 10 1 10 0 0 0 0 0
-10 10000 100
+10 10000 100 100
 E
 club huge thigh thighbone bone bleached~
 &+WThis is a bleached thigh bone of some large humanoid - ogre maybe - formed
@@ -96,7 +96,7 @@ a purple potion lays on the ground here.~
 ~
 10 7 2 4 7 0 0 16385 0 0 0
 17 33 1 -1 0 0 0 0
-1 500 100
+1 500 100 100
 E
 potion purple~
 It looks rather strange.
@@ -108,7 +108,7 @@ There is a large picnic table here that looks like it could seat ten easily.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 0 100
+1000 0 100 100
 E
 table picnic~
 The picnic table is very large with small bones and bits of food
@@ -122,7 +122,7 @@ a moldy sack lays in the corner here smelling wreched.~
 ~
 15 3 3 10 7 0 0 1 0 0 0
 10 0 -1 100 0 0 0 0
-2 1 100
+2 1 100 100
 E
 sack moldy~
 The sack is about a foot in size and smells horrible.  Patches of mold and
@@ -135,7 +135,7 @@ axe battleaxe double~
 ~
 5 16 3 8 7 0 1024 8193 66 87572571 0
 1 2 6 3 0 0 0 0
-8 5000 100
+8 5000 100 100
 E
 axe battleaxe double~
 This is a long axe with a wood shaft and a double blade at its top.
@@ -151,7 +151,7 @@ There is a table here that looks like it weighs hundreds of pounds.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 table long~
 The table is obviosuly used for cooking on with bits of food
@@ -165,7 +165,7 @@ A very old card table is here with one of its legs broken in half.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 table small~
 The table is very unremarkable and looks to be about a hundred years old.
@@ -177,7 +177,7 @@ A large wooden table sits here with scratches all over its top.~
 ~
 12 6 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-500 1 100
+500 1 100 100
 E
 table wooden wood~
 The wooden table is sizeable.  About five feet square sitting on short
@@ -190,7 +190,7 @@ Some gloves that appear that they might be useful are here.~
 ~
 9 13 3 6 7 0 1024 129 0 87572571 0
 4 7 6 3 0 0 0 0
-1 150 100
+1 150 100 100
 E
 gloves warriors warrior's pair~
 These are a very nice pair of gloves.  They fit your hands perfectly.
@@ -206,7 +206,7 @@ There is a wooden crate here that looks very old.~
 ~
 15 6 5 50 7 0 0 0 0 0 0
 1100 0 -1 250 0 0 0 0
-100 1 100
+100 1 100 100
 E
 crate wooden~
 The crate is very unremarkable looking constructed of very old
@@ -219,7 +219,7 @@ bracelet silver polished~
 ~
 9 22 3 3 7 0 4096 4097 64 0 0
 8 11 24 3 0 0 0 0
-2 10000 100
+2 10000 100 100
 E
 bracelet silver polished~
 This is a very fine thin bracelet made from solid silver.  It has been
@@ -236,7 +236,7 @@ bracelet amber~
 ~
 9 5 3 3 7 0 0 4097 64 0 0
 6 11 24 3 0 0 0 0
-2 50 100
+2 50 100 100
 E
 bracelet amber~
 A bracelet made of polished amber. In dark area, it seems
@@ -253,7 +253,7 @@ A small pile of gold lies on scattered about on the ground here.~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 10 0 0 0 0 0
-5 1 100
+5 1 100 100
 E
 gold coins~
 &+YA pile of gold coins.
@@ -265,7 +265,7 @@ A huge pile of gold coins is stacked in the middle of the room here.~
 ~
 20 24 1 0 7 0 0 1 0 0 0
 0 0 200 200 0 0 0 0
-2 1 100
+2 1 100 100
 E
 gold coins~
 &+YA pile of gold coins.
@@ -277,7 +277,7 @@ There is a skeletal corpse propped up against the western wall.~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 300 0 -1 100 0 0 0 0
-1000 1 100
+1000 1 100 100
 E
 corpse skeletal~
 There is a very large hole in its leather armor and several cracked ribs
@@ -291,7 +291,7 @@ A tiny silver disc lies here.~
 ~
 12 22 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silver disc~
 A small silver disc, its origin and purpose unknown.
@@ -303,7 +303,7 @@ A tiny platinum disc lies here.~
 ~
 12 25 0 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 platinum disc~
 A small platinum disc, its origins and purpose unknown.
@@ -315,7 +315,7 @@ A strange looking vial lies here.~
 ~
 10 7 2 4 7 0 4096 1 0 0 0
 50 28 75 41 0 0 0 0
-2 10 100
+2 10 100 100
 E
 vial strange~
 A glass vial of unusual shape, filled with a greenish liquid.
@@ -328,7 +328,7 @@ platinum coins~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 0 0 0 200 0 0 0 0
-0 200000 100
+0 200000 100 100
 E
 platinum coins~
 &+WA large pile of platinum coins.
@@ -340,7 +340,7 @@ A bracelet made from engraved bones has been left here.~
 ~
 9 10 3 0 7 0 0 4097 0 0 0
 5 0 0 3 0 0 0 0
-1 5000 100
+1 5000 100 100
 E
 bracelet engraved~
 &+cThis bracelet is made from polished and then engraved human bones, linked
@@ -358,7 +358,7 @@ cape flowing white~
 ~
 9 3 3 0 9 0 0 1029 64 0 0
 5 0 0 2 0 0 0 0
-1 25000 100
+1 25000 100 100
 E
 cape flowing white~
 &+WA white cape of bleached silk, it flows with even the slightest of wind gusts.
@@ -374,7 +374,7 @@ A large rock sits here next to the path.~
 ~
 25 11 3 0 7 0 2 0 0 0 0
 4153 555 -1 0 0 0 0 0
-5000 0 100
+5000 0 100 100
 E
 rock~
 &+yA large rock protrudes here next to the path, its face rough and uneven.
@@ -387,7 +387,7 @@ arm armplates ogrebone bone spiked~
 ~
 9 10 3 0 7 0 0 257 64 0 0
 10 0 0 4 1 0 0 0
-4 20000 100
+4 20000 100 100
 E
 arm armplates ogrebone bone~
 &+bA pair of thick armplates made of spiked ogrebone carved into
@@ -404,7 +404,7 @@ leggings frozen icy ice~
 ~
 9 23 3 0 14 0 0 33 0 0 0
 9 0 0 1 0 0 0 0
-1 100000 100 0 64 2097152 0
+1 100000 100 100 0 64 2097152 0
 E
 leggings frozen icy ice~
 &+WA set of leggings woven of thin white thread. An aura of cold surrounds them.
@@ -421,7 +421,7 @@ mask copper~
 ~
 9 21 3 0 7 0 0 262145 0 0 0
 5 0 0 3 0 0 0 0
-5 11000 100
+5 11000 100 100
 E
 mask copper~
 &+yA mask made of linked copper plates. It should provide a decent protection
@@ -438,7 +438,7 @@ belt trollhide hide thick~
 ~
 9 14 4 0 9 0 8192 2049 64 0 0
 13 0 0 5 0 0 0 0
-3 60000 100
+3 60000 100 100
 E
 belt trollhide hide thick~
 &+gA thick strap of cured troll-hide, joint together by a large copper buckle.

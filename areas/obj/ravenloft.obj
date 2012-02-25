@@ -5,7 +5,7 @@ book ferrik chronicles~
 ~
 25 28 3 0 7 0 4096 0 64 0 0
 58325 63 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 book ferrik chronicles~
    &+rThis thick, leather-bound book has the mark of the Ravenloft Archives
@@ -20,7 +20,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #58302
 tapestry curtain~
 &+Ma &+mt&+Ca&+mp&+Ce&+ms&+Ct&+mr&+Cy &+Mcurtain&N~
@@ -28,7 +28,7 @@ tapestry curtain~
 ~
 29 15 3 0 7 0 4096 0 0 0 0
 270 58397 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry curtain~
 &+W      <->
@@ -63,7 +63,7 @@ no-show teleport to Obox-ob grid~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 58413 6 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #58304
 teleport~
 teleport to top of hightower~
@@ -71,7 +71,7 @@ no-show teleport to top of hightower~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 58426 3 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #58305
 golden yuan-ti idol relic~
 &+Ya golden yuan-ti idol&N~
@@ -79,7 +79,7 @@ golden yuan-ti idol relic~
 ~
 29 24 3 0 7 0 4096 0 64 0 0
 259 58449 8 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 golden yuan ti relic~
    &+YThis golden relic is of a powerful two-headed yuan-ti wizard, most
@@ -102,7 +102,7 @@ golden ophidian relic idol~
 ~
 29 24 3 0 7 0 4096 0 64 0 0
 259 58446 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 golden ophidian relic~
    &+YThis flawlessly crafted of a large, hunched over, bipedal ophidian
@@ -123,7 +123,7 @@ tapestry~
 ~
 29 3 3 0 7 0 0 0 0 0 0
 270 58442 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 &+c|\_____________________________/|
@@ -156,7 +156,7 @@ tapestry~
 ~
 13 3 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 &+c __________________________________________
@@ -190,7 +190,7 @@ tapestry~
 ~
 29 3 3 0 7 0 0 0 0 0 0
 270 58440 3 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 &+c ____________________________________________________
@@ -221,7 +221,7 @@ tapestry~
 ~
 13 3 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 &+c ____________________________________________________
@@ -252,7 +252,7 @@ tapestry~
 ~
 13 3 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tapestry~
 
@@ -283,7 +283,7 @@ no-show teleport to Zionyn grid~
 ~
 25 15 3 0 7 0 2 0 0 0 0
 58407 6 -1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #58313
 map cosmos~
 &+Wa map of the co&+Ysm&+Wos&N~
@@ -291,7 +291,7 @@ map cosmos~
 ~
 8 28 3 0 7 0 4096 8404993 64 0 0
 0 0 0 0 0 0 0 0
-0 666420 100
+0 666420 100 100
 E
 map cosmos~
 &+c********************************************************
@@ -321,7 +321,7 @@ stone claw~
 ~
 5 15 3 0 7 0 524288 8193 66 0 0
 1 5 3 0 0 0 0 0
-0 0 100
+0 0 100 100
 A
 19 4
 #58315
@@ -331,7 +331,7 @@ huge key ring single key~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge key ring single key~
 &+LThis large jailer's keyring is quite large and heavy.  It is made of
@@ -344,7 +344,7 @@ greatsword sword~
 ~
 5 22 3 0 9 0 4194304 8193 67 0 0
 13 4 6 0 0 0 0 0
-20 15343 100
+20 15343 100 100
 E
 greatsword sword~
    &+CThis greatsword is magical in nature and can really do some damage.
@@ -360,7 +360,7 @@ chain~
 ~
 5 15 3 0 2 0 0 8193 66 0 0
 14 4 5 0 0 0 0 0
-0 5 66
+0 5 66 100
 A
 19 5
 #58318
@@ -370,7 +370,7 @@ poisoned fang poison~
 ~
 5 45 2 0 5 0 0 8193 64 0 0
 2 3 4 0 5 0 0 0
-5 4343 100
+5 4343 100 100
 E
 poisoned fang poison~
    &+LThis small poison cheliceras fang secretes a deadly poison.
@@ -386,7 +386,7 @@ blood-red bastard sword~
 ~
 5 16 4 0 11 0 0 8193 66 0 0
 5 4 4 0 0 0 0 0
-11 43434 100
+11 43434 100 100
 E
 blood-red bastard sword~
    &+LThis fine &+Csteel&+L sword has been dyed &+rblood red&+L from its victims.
@@ -402,7 +402,7 @@ flailing stalk webbing~
 ~
 5 1 3 0 1 0 524288 8193 64 0 0
 14 6 5 0 6 0 0 0
-5 0 68
+5 0 68 100
 #58321
 writhing arm~
 &+ra &+Rwrithing &+rarm&N~
@@ -410,7 +410,7 @@ writhing arm~
 ~
 5 2 3 0 8 0 0 8193 0 0 0
 10 2 9 0 0 0 0 0
-10 2 30
+10 2 30 100
 E
 writhing arm~
    &+rA swollen, bloody human arm..
@@ -424,7 +424,7 @@ Humming with life, &+ra &+Wdracolich-bone bracelet lies here.~
 ~
 9 10 2 0 5 0 33558528 4097 64 0 0
 8 0 0 4 0 0 0 0
-2 3232 100 0 0 0 33554432
+2 3232 100 100 0 0 0 33554432
 E
 dracolich-bone dracolich bone bracelet~
    &+WThis bracelet is made of the forged undead bone of the dracolich.
@@ -440,7 +440,7 @@ shark bone sword longsword~
 ~
 5 10 4 0 7 0 0 8193 0 0 0
 5 4 4 0 0 0 0 0
-10 14343 100
+10 14343 100 100
 E
 shark bone sword longsword~
    &+WThis heavy bone longsword has been sharpened to a precise degree.
@@ -454,7 +454,7 @@ necklace bones relics~
 ~
 9 10 4 0 9 0 33554496 5 64 0 0
 6 0 0 0 0 0 0 0
-6 34233 100 0 4160 536870944 0
+6 34233 100 100 0 4160 536870944 0
 E
 necklace bones relics~
    &+LThis large heavy necklace is made of thick twined &+gvines&+L, rope used
@@ -475,7 +475,7 @@ blood mahweeistardala~
 ~
 10 2 2 0 7 0 1 8404993 64 0 0
 60 180 263 286 60 0 0 0
-1 19433 100
+1 19433 100 100
 E
 blood mahweeistardala~
    &+rThis small jar of blood looks like it can be quaffed like a potion.
@@ -488,7 +488,7 @@ two statues~
 ~
 13 11 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 94
+0 0 94 100
 E
 two statues~
    &+WTwo massive statues stand before the northern arch into the head
@@ -503,7 +503,7 @@ comfy sofa comfortable~
 ~
 15 3 5 0 7 0 0 0 0 0 0
 50 0 0 20 0 0 0 0
-0 1 100
+0 1 100 100
 E
 comfy sofa comfortable~
    &+MAlthough this sofa is quite old and the rotting framework is
@@ -518,7 +518,7 @@ fireplace~
 ~
 15 11 3 0 7 0 262145 0 0 0 0
 30 0 0 30 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fireplace~
    &+LThis large stone fireplace is made of thick brickwork.  A
@@ -532,7 +532,7 @@ tables chairs table chair~
 ~
 13 6 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tables chairs table chair~
    &+yTwo chairs with fine stitched cushioned seats and backing sit here
@@ -547,7 +547,7 @@ tiny bag~
 ~
 15 3 3 0 7 0 528384 16385 0 0 0
 10 5 0 10 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tiny bag~
    &+LThis tiny velvet bag looks about the right size to hold a small
@@ -560,7 +560,7 @@ tigers eye gem tiger tiger's~
 ~
 8 26 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 943438 100
+0 943438 100 100
 E
 tigers eye tiger's~
    &+gA rare tiger's eye gem looks like the eye of a tiger when held in the light.
@@ -572,7 +572,7 @@ aquamarine~
 ~
 8 26 1 0 15 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 400322 100
+0 400322 100 100
 E
 aquamarine~
    &+CThis aquamarine is nearly flawless.
@@ -584,7 +584,7 @@ topaz~
 ~
 8 26 1 0 13 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 343409 100
+0 343409 100 100
 E
 topaz~
    &+yThis topaz is nearly flawless.
@@ -596,7 +596,7 @@ opal~
 ~
 8 26 1 0 14 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 634839 100
+0 634839 100 100
 E
 opal~
    &+LThis black opal is very large and perfectly sphereical, a rarity.
@@ -608,7 +608,7 @@ change coins~
 ~
 20 22 3 0 7 0 0 1 0 0 0
 9 14 7 8 0 0 0 0
-0 0 100
+0 0 100 100
 E
 change coins~
    &+YSome coins lay scattered here, having been recently dropped.
@@ -620,7 +620,7 @@ change coins~
 ~
 20 22 3 0 7 0 4096 1 0 0 0
 16 44 39 43 0 0 0 0
-0 0 100
+0 0 100 100
 E
 change coins~
    &+YSome coins lay scattered here, having been recently dropped.
@@ -632,7 +632,7 @@ ever-watching eye ever watching~
 ~
 9 15 3 0 7 0 100675585 2097153 0 0 0
 3 0 0 0 0 0 0 0
-0 0 100 268435492 0 0 67108864
+0 0 100 100 268435492 0 0 67108864
 E
 ever-watching eye ever watching~
    &+WThis eye has been yanked from the socket of an ancient beholder.
@@ -648,7 +648,7 @@ bookshelf~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookshelf~
    &+yThis large, tall bookshelf lines the entire western wall.
@@ -661,7 +661,7 @@ bookshelf svalich wood short~
 ~
 15 6 3 0 7 0 0 0 0 0 0
 50 0 0 50 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bookshelf svalich wood short~
    &+LThis bookshelf is very old and detailed as there has been careful
@@ -674,7 +674,7 @@ old desk~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 100 15 58362 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 old desk~
    &+WThis old desk is made of rich white pine.  It hasn't rotted, however
@@ -687,7 +687,7 @@ solid gold claw~
 ~
 5 24 4 0 7 0 0 8193 64 0 0
 2 3 4 0 0 0 0 0
-6 23343 100
+6 23343 100 100
 E
 solid gold claw~
    &+YThis magnificent dragon claw has four huge razor-sharp claws.
@@ -699,7 +699,7 @@ mound gold coins~
 ~
 20 15 3 0 7 0 0 1 0 0 0
 0 0 20000 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 mound gold coins~
    &+YThis mound of gold coins sparkles in the light.
@@ -711,7 +711,7 @@ ancient plaque~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 plaque~
 &+L---------------------
@@ -727,7 +727,7 @@ ancient cracked altar~
 ~
 15 39 3 0 7 0 0 0 0 0 0
 50 0 0 20 0 0 0 0
-0 0 31
+0 0 31 100
 E
 ancient cracked altar~
    &+WThis huge limestone and marble-topped altar rests at the center of the
@@ -747,7 +747,7 @@ humanoid body~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 10 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 humanoid body~
    &+WThis humanoid body appears to be that of an adventurer wearing VERY old
@@ -769,7 +769,7 @@ crystal statue raven idol ravenloft~
 ~
 8 8 1 0 14 0 33554433 16385 66 0 0
 0 0 0 0 0 0 0 0
-1 2009123 100
+1 2009123 100 100
 E
 crystal statue raven idol ravenloft~
    &+CThis flawless crystal statue, the idol of Ravenloft, was originally a gift
@@ -789,7 +789,7 @@ scroll embalming~
 ~
 2 29 2 0 5 0 4096 16385 0 0 0
 60 338 338 338 0 0 0 0
-0 14343 100
+0 14343 100 100
 E
 scroll embalming~
    &+LThis ancient scroll is scribed in some mysterious tongue about &+rmass embalming.
@@ -801,7 +801,7 @@ scroll word recall~
 ~
 2 29 1 0 7 0 4097 16385 64 0 0
 60 42 0 0 0 0 0 0
-0 14343 100
+0 14343 100 100
 #58349
 torch~
 &+Ya torch&N~
@@ -809,7 +809,7 @@ torch~
 ~
 29 6 2 0 3 0 262144 0 0 0 0
 340 58521 0 0 0 0 0 0
-0 0 77
+0 0 77 100
 E
 torch~
    &+YThis small torch is sconced with a rather large metal mechanism to the
@@ -823,7 +823,7 @@ silver key~
 ~
 18 15 3 0 7 0 4096 16385 66 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 silver key~
    &+CThis small silver key on it has mystical runes of &+Bchanneling &+Cinscribed
@@ -836,7 +836,7 @@ shimmering chain linked chain-linked belt~
 ~
 9 16 4 0 2 0 4097 18433 64 0 0
 15 0 0 5 0 0 0 0
-13 439 100 0 128 0 0
+13 439 100 100 0 128 0 0
 E
 shimmering chain linked chain-linked belt~
    &+CThis massive belt is made of dozens of jagged and barbed chains in one long
@@ -854,7 +854,7 @@ torn chain shirt~
 ~
 9 16 3 0 7 0 0 9 0 0 0
 45 0 0 0 0 0 0 0
-15 15343 100
+15 15343 100 100
 E
 torn chain shirt~
    &+LThis heavy steel chain shirt has a large tear running down the top left of
@@ -871,7 +871,7 @@ flapping cloak of scarlet~
 ~
 9 3 3 0 10 0 100671488 1025 64 0 0
 9 0 0 2 0 0 0 0
-1 84232 100 0 16 0 0
+1 84232 100 100 0 16 0 0
 E
 flapping cloak of scarlet~
    &+RThis incredibly-comfortable cloak is scarlet red and reeks of undeath.
@@ -887,7 +887,7 @@ droplet blackest shadow potion~
 ~
 10 1 0 0 7 0 0 16385 64 0 0
 60 302 411 336 0 0 0 0
-0 15938 100
+0 15938 100 100
 E
 droplet blackest shadow potion~
    &+LThis tiny droplet of shadow swirls with a malevolent darkness.
@@ -899,7 +899,7 @@ thick iron sword~
 ~
 5 15 3 0 4 0 0 8193 64 0 0
 5 3 4 0 0 0 0 0
-12 84 42
+12 84 42 100
 E
 thick iron sword~
    &+cThis battered and dinged up iron sword is still quite heavy, and from
@@ -916,7 +916,7 @@ iron shiv~
 ~
 5 15 1 0 0 0 0 8193 0 0 0
 2 2 6 0 0 0 0 0
-1 3 100
+1 3 100 100
 E
 iron shiv~
    &+cSimply an iron splinter with a bit of hide tightly wrapped on the broader end
@@ -933,7 +933,7 @@ red cap~
 ~
 9 3 2 0 9 0 0 17 64 0 0
 5 0 0 0 0 0 0 0
-0 1099 100
+0 1099 100 100
 E
 red cap~
    &+rThis small red cap fits atop the average humanoids skull.  Worn by the tribe
@@ -950,7 +950,7 @@ hefty iron boots~
 ~
 9 15 3 0 5 0 0 65 0 0 0
 14 0 0 5 0 0 0 0
-15 5343 87
+15 5343 87 100
 E
 hefty iron boots~
    &+cThese boots are quite large and awkward.  Huge iron plates sewn across
@@ -967,7 +967,7 @@ loose brick~
 ~
 29 11 3 0 7 0 4096 0 0 0 0
 340 58457 1 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 loose brick~
    &+LThis old stone brick seems to have been recently loosened in this aged old cell.
@@ -979,7 +979,7 @@ old desk~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 100 5 100 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 old desk~
    &+WThis old desk is made of rich white pine.  It hasn't rotted, however
@@ -992,7 +992,7 @@ fang inhabitation~
 ~
 4 10 0 0 7 0 0 16389 64 0 0
 6 16 16 159 0 0 0 0
-0 15343 100 8192 0 0 0
+0 15343 100 100 8192 0 0 0
 E
 fang inhabitation~
    &+LThis four-inch &+rdevil's &+Wfang&+L is attached to a bit of string.
@@ -1012,7 +1012,7 @@ small key~
 ~
 18 15 0 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 small key~
    &+LSmall small &Nkey&+L is old and dusty.
@@ -1027,7 +1027,7 @@ demonic broadsword sword~
 ~
 5 16 4 0 7 0 37748736 8193 67 0 0
 13 4 6 0 0 0 0 0
-14 16434 100 0 0 0 262144
+14 16434 100 100 0 0 0 262144
 E
 demonic broadsword sword~
    &+LThis broadsword is quite large. It appears to have been a mundane
@@ -1045,7 +1045,7 @@ stitched sleeves knights raven~
 ~
 9 3 3 0 14 0 0 257 64 0 0
 10 0 0 0 0 0 0 0
-0 45332 100
+0 45332 100 100
 E
 stitched sleeves knights raven~
    &+LThese sleeves are stitched very finely of silk in the pattern of the Knights of
@@ -1062,7 +1062,7 @@ stitched leggings knights raven~
 ~
 9 3 3 0 14 0 0 33 64 0 0
 10 0 0 0 0 0 0 0
-0 45332 100
+0 45332 100 100
 E
 stitched leggings knights raven~
    &+LThese leggings have been stitched of the finest silks with magical threads.
@@ -1080,7 +1080,7 @@ baby guts~
 ~
 15 2 2 0 8 0 0 8404993 0 0 0
 20 1 0 20 0 0 0 0
--10 2 100
+-10 2 100 100
 E
 baby guts~
    &+mThese disgusting, pale &+rbloody &+Mbaby guts &+mmake your stomach churn.
@@ -1096,7 +1096,7 @@ embroidered tunic knights raven~
 ~
 9 3 3 0 14 0 0 9 64 0 0
 40 0 0 4 0 0 0 0
-0 238343 100
+0 238343 100 100
 A
 35 5
 A
@@ -1108,7 +1108,7 @@ document abyssal~
 ~
 2 29 1 0 7 0 69632 16385 64 0 0
 60 380 0 0 0 0 0 0
-0 6132 66
+0 6132 66 100
 E
 document abyssal scroll~
 &+yThis ancient parchment is written in &+LAbyssal&+y, a twisted language with
@@ -1124,7 +1124,7 @@ document ravenloft indulgence scroll~
 ~
 8 29 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 25432 100
+0 25432 100 100
 E
 document ravenloft indulgence scroll~
    &+yThis well-kept document is entitled &+r'Ravenloft Indulgence'&N
@@ -1140,7 +1140,7 @@ document ravenloft lenience~
 ~
 8 29 1 0 7 0 4096 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 600 100
+0 600 100 100
 E
 document ravenloft lenience~
    &+yThis wordy, aged document purports to be a &+cLenience of Ravenloft
@@ -1154,7 +1154,7 @@ poisonous claw~
 ~
 5 10 3 0 7 0 524288 8193 64 0 0
 17 3 5 0 6 0 0 0
-9 600 100
+9 600 100 100
 E
 poisonous claw~
    &+LThis poisonous claw has been uprooted from a demon.
@@ -1168,7 +1168,7 @@ old battered chest~
 ~
 15 15 3 0 7 0 4096 0 0 0 0
 80 5 0 20 0 0 0 0
-0 0 100
+0 0 100 100
 E
 old battered chest~
    &+LThis old battered chest has been overturned and the lock &+Cbusted&+L open.
@@ -1182,7 +1182,7 @@ boots thundering might~
 ~
 9 15 3 0 7 0 33558528 65 64 0 0
 10 0 0 0 0 0 0 0
-0 0 100 134217728 0 0 0
+0 0 100 100 134217728 0 0 0
 A
 19 4
 A
@@ -1194,7 +1194,7 @@ small heap coins~
 ~
 20 22 3 0 7 0 0 1 0 0 0
 22 31 19 44 0 0 0 0
-0 0 100
+0 0 100 100
 E
 change coins~
    &+YSome coins lay scattered here, having been recently dropped.
@@ -1206,7 +1206,7 @@ candle melted skull~
 ~
 1 51 3 0 7 0 262145 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 candle melted skull~
    &+WThe eyes of this skull &+Rburn &+Wa bit hotter then the candle atop.
@@ -1220,7 +1220,7 @@ old jade raven~
 ~
 8 8 3 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 82
+0 0 82 100
 E
 old jade raven~
    &+LThis old &+Gjade &+Lstatue has &+Cfrozen &+Lblue eyes.
@@ -1234,7 +1234,7 @@ porcelain cat~
 ~
 8 15 3 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-2 0 100
+2 0 100 100
 E
 porcelain cat~
    &+WThis simple porcelain statue of a cat stands in a prowling position.
@@ -1251,7 +1251,7 @@ polished silver charm bracelet~
 ~
 9 22 2 0 14 0 1025 4097 64 37916576 0
 40 0 0 4 0 0 0 0
-0 45343 100 536944640 8384 32 0
+0 45343 100 100 536944640 8384 32 0
 E
 polished silver charm bracelet~
    &+CThis bracelet has numerous small charms on tiny chains.  Overall, the entire
@@ -1269,7 +1269,7 @@ oathstone pendant~
 ~
 9 11 1 0 3 0 33554432 5 64 0 0
 6 0 0 3 0 0 0 0
-0 1543 100 32 0 128 0
+0 1543 100 100 32 0 128 0
 E
 oathstone pendant~
    &+LThis small, &+rhumming &+Lstone hangs from a thin &+Ygolden &+Lchain.
@@ -1285,7 +1285,7 @@ gold band two-fingered focusing~
 ~
 9 24 3 0 11 0 1 3 64 0 0
 5 0 0 0 0 0 0 0
-0 82330 100 268435456 0 0 0
+0 82330 100 100 268435456 0 0 0
 E
 gold band two-fingered focusing~
    &+LThis excellently-crafted two-fingered band has a warm strange &+Cgem &+Lset
@@ -1302,7 +1302,7 @@ prismatic wand colors~
 ~
 3 44 1 0 15 0 1 16385 64 0 0
 56 6 6 364 0 0 0 0
-0 15343 100
+0 15343 100 100
 E
 prismatic wand colors~
    &+LThis magical &+Cmetal &+Lwand shines with vibrant &+rc&+Ro&+Yl&+Go&+Cr&+Bs&N.
@@ -1316,7 +1316,7 @@ skull-headed skull headed staff _id_~
 ~
 4 6 2 0 7 0 33554432 16385 64 0 0
 60 6 6 358 0 0 0 0
-0 132343 100 0 0 0 33554432
+0 132343 100 100 0 0 0 33554432
 E
 skull-headed skull headed staff~
    &+yA closer inspection of this staff reveals it to actually be made of
@@ -1348,7 +1348,7 @@ chunk materialized wraith bone~
 ~
 3 10 3 0 7 0 1 16385 64 0 0
 51 4 4 269 0 0 0 0
-0 45349 100
+0 45349 100 100
 E
 chunk materialized wraith bone~
    &+BThis half-visible chunk of bone has materialized into a tangible bit of undeath's
@@ -1361,7 +1361,7 @@ suit wickedly-barbed wickedly barbed devil hide~
 ~
 9 12 3 0 14 0 33555456 9 64 42332160 0
 50 0 0 5 1 0 0 0
-4 12943 100
+4 12943 100 100
 E
 suit wickedly-barbed wickedly barbed devil hide~
    &+mThis suit of hide is covered in throbbing barbs, jutting out like little razors.
@@ -1377,7 +1377,7 @@ barbed sleeves oozing slime~
 ~
 9 10 4 0 4 0 4096 257 64 0 0
 15 0 0 5 1 0 0 0
-1 16534 100 8 0 0 0
+1 16534 100 100 8 0 0 0
 E
 barbed sleeves oozing slime~
    &+LThese &+rbarbed &+Lsleeves are hollowed out demon arms, remaining as dangling
@@ -1394,7 +1394,7 @@ shokurung'otaghe'rakag'onk'rakag axe ill repute~
 ~
 5 19 4 0 7 0 0 8193 64 0 0
 1 5 3 0 0 1406255004 56 31
-11 200343 100
+11 200343 100 100
 E
 shokurung'otaghe'rakag'onk'rakag axe ill repute~
 &+YShokurung'otaghe'rakag'onk'rakag&+W is a legendary axe of ill repute.  Originally
@@ -1440,7 +1440,7 @@ destruction holo gogs goggles holo-gogs~
 ~
 9 8 3 0 14 0 1 131073 64 0 0
 10 0 0 3 0 0 0 0
-0 151940 100 32 0 0 1024
+0 151940 100 100 32 0 0 1024
 E
 destruction holo gogs goggles holo-gogs~
    &+MThese nearly-transparent bright crystal goggles glow with a magical flame.
@@ -1458,7 +1458,7 @@ drop living stone~
 ~
 10 15 3 0 7 0 1 16385 0 0 0
 60 36 134 44 0 0 0 0
-0 0 100
+0 0 100 100
 E
 drop living stone~
    &+LThis droplet of stone has a strange &+Rlife &+Lto it.
@@ -1470,7 +1470,7 @@ pek'nasisk venom lash~
 ~
 5 2 3 0 1 0 33554432 8193 64 0 0
 14 5 3 0 5 1116365428 50 20
-7 15343 100 32768 8192 0 0
+7 15343 100 100 32768 8192 0 0
 E
 pek'nasisk venom lash~
 &N$q &+Lis the vicious whip, weapon, and &+rtorture &+Ldevice of the
@@ -1503,7 +1503,7 @@ slimy key~
 ~
 18 11 3 0 7 0 0 16385 64 0 0
 0 100 0 0 0 0 0 0
-0 6 100
+0 6 100 100
 E
 slimy key~
    &+LThis small blackrock key drips with a viscid green &+Gslime&+L.
@@ -1515,7 +1515,7 @@ sharp shard stone~
 ~
 5 11 3 0 7 0 0 8193 0 0 0
 2 4 4 0 0 0 0 0
-4 6 100
+4 6 100 100
 E
 sharp shard stone~
    &+LThis sharp shard of stone could be used as a deadly weapon, if intended.
@@ -1531,7 +1531,7 @@ dirty beds bed~
 ~
 15 3 3 0 7 0 0 0 0 0 0
 50 0 0 40 0 0 0 0
-0 1 100
+0 1 100 100
 E
 dirty beds bed~
    &+LThese dirty bunk beds lie scattered about this hall.  One of the bunks has been
@@ -1545,7 +1545,7 @@ abyssal essence~
 ~
 8 1 0 0 15 0 4097 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 abyssal essence~
    &+LThis floating essence of evil resonantes with a connection to the &+babyss&+L.
@@ -1557,7 +1557,7 @@ jagged bone sword~
 ~
 5 10 3 0 7 0 0 8193 64 0 0
 5 4 4 0 0 0 0 0
-9 0 100
+9 0 100 100
 E
 jagged bone sword~
    &+WThis jagged sword is made out of a strange tanar'ri bone.
@@ -1571,7 +1571,7 @@ potion soulripping~
 ~
 10 7 0 0 7 0 1 16385 64 0 0
 50 321 467 163 0 0 0 0
-0 16943 100
+0 16943 100 100
 E
 potion soulripping~
    &+WThis small vile continues an acrid, &nmilky &+Wsubstance.
@@ -1583,7 +1583,7 @@ eladrin spear~
 ~
 8 22 3 0 7 0 1 0 64 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 eladrin spear~
    &+LThis magical spear has been socketed deep into the otherwise impenetrably-tough
@@ -1599,7 +1599,7 @@ dracolich skull~
 ~
 4 10 3 0 7 0 4097 16385 64 0 0
 56 1 1 380 0 0 0 0
-0 15343 100
+0 15343 100 100
 E
 dracolich skull~
    &+WThis huge dracolich skull radiates a deathly evil with immense power.
@@ -1615,7 +1615,7 @@ vorpal blade~
 ~
 5 22 3 0 7 0 33554432 8193 67 0 0
 5 4 4 0 0 0 0 0
-12 16459 100
+12 16459 100 100
 E
 vorpal blade~
     &+CThis shining silver blade glows with a powerful magic.
@@ -1631,7 +1631,7 @@ multi-phased phased fish bone earring~
 ~
 9 10 0 0 3 0 33554432 524289 64 0 0
 6 0 0 0 0 0 0 0
-0 200334 100 0 2048 0 0
+0 200334 100 100 0 2048 0 0
 E
 multi-phased phased fish bone earring~
    &+LThis earring is made of the frail skeleton of a fish, dangling from a small
@@ -1649,7 +1649,7 @@ vorpal sword shimmer~
 ~
 5 22 3 0 14 0 33555456 8193 67 119664667 0
 9 4 4 0 0 0 0 0
-10 165499 100
+10 165499 100 100
 E
 vorpal sword shimmer~
    &+cThis glorious &+Cvorpal &+csword hums with perfection
@@ -1675,7 +1675,7 @@ fiery-eyed skull buckled black leather belt~
 ~
 9 13 3 0 10 0 1 2049 64 0 0
 8 0 0 3 0 0 0 0
-4 45789 100
+4 45789 100 100
 E
 fiery-eyed skull buckled black leather belt~
    &+LThis black leather belt is fastened by a large belt buckle made of a small
@@ -1691,7 +1691,7 @@ An unnamed object lies here, looking lonely and forelorn.~
 ~
 15 15 3 0 7 0 0 8404993 64 0 0
 1200 5 0 650 0 0 0 0
--2850 0 100
+-2850 0 100 100
 #58403
 vial sorrow potion~
 &+La vial of &+Wso&Nrr&+Low&N~
@@ -1699,7 +1699,7 @@ vial sorrow potion~
 ~
 10 15 3 0 7 0 0 16385 64 0 0
 60 318 136 99 0 0 0 0
-0 0 100
+0 0 100 100
 E
 vial sorrow potion~
    &+LThis bottle moans with souls of a thousand dead children.
@@ -1711,7 +1711,7 @@ tanar'ri blood bleeding altar blood~
 ~
 29 38 3 0 7 0 0 0 0 0 0
 179 58556 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 tanar'ri blood bleeding altar blood~
    &+WThis ancient altar stands at least ten feet high, sized for a tanar'ri.
@@ -1730,7 +1730,7 @@ tanar'ri mace fire acid~
 ~
 5 11 5 0 7 0 37748736 8193 98 0 0
 6 6 6 0 0 277428 50 60
-8 106554 100 536870912 8192 0 0
+8 106554 100 100 536870912 8192 0 0
 E
 tanar'ri mace fire acid~
    &+LThis large, spiked mace is covered in burning hot spikes that are also
@@ -1761,7 +1761,7 @@ bone throne slime~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 270 58560 9 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bone throne slime~
    &+LThis massive &+Wbone &+Lthrone took dozens of different tanar'ri's corpses
@@ -1785,7 +1785,7 @@ zionyn essence~
 ~
 8 1 0 0 15 0 67121153 16385 64 0 0
 0 0 0 0 0 0 0 0
-0 10 100
+0 10 100 100
 E
 zionyn essence~
    &+LThis essence sucks in all light and causes any touch a harmful withering.
@@ -1797,7 +1797,7 @@ key ravenloft royal courtyard~
 ~
 18 15 3 0 7 0 134217728 16385 0 0 0
 0 100 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 key ravenloft royal courtyard~
    &+LThis &+Ckey&+L bares the same &+rmark&+L as the gates of the royal courtyard.
@@ -1809,7 +1809,7 @@ vial mindripper~
 ~
 10 7 3 0 7 0 0 16385 0 0 0
 60 163 392 182 33 0 0 0
-0 1654 100
+0 1654 100 100
 E
 vial mindripper~
    &+LThis tiny vial contains the unending evil of the mindripper, a tanar'ri
@@ -1822,7 +1822,7 @@ dayheart~
 ~
 8 2 3 0 15 0 1 16385 66 0 0
 0 0 0 0 0 0 0 0
-0 234987 100
+0 234987 100 100
 E
 dayheart~
    &+YThis magical pulsing &+yheart&+Y is said to be the immortalized heart
@@ -1837,7 +1837,7 @@ long barbed key shaped ravens talon~
 ~
 18 24 3 0 7 0 134217728 16385 64 0 0
 0 100 0 0 0 0 0 0
-2 69 100
+2 69 100 100
 E
 long barbed key shaped ravens talon~
    &+LThis key is shaped like an elongated talon of a raven.  Three toes, each
@@ -1856,7 +1856,7 @@ gertruda~
 ~
 8 2 2 0 7 0 4194304 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 69000 49
+0 69000 49 100
 E
 gertruda~
    &+MAfter some hesitation, this girl eventually introduces herself as Gertruda, but
@@ -1870,7 +1870,7 @@ huge copper bell~
 ~
 12 21 5 0 7 0 0 0 64 0 0
 0 0 0 0 0 0 0 0
-600 20 94
+600 20 94 100
 E
 huge copper bell~
    &+yThis massive copper &+Cbell &+ystands in relatively good condition.  It
@@ -1885,7 +1885,7 @@ sharpened black dagger~
 ~
 5 16 2 0 7 0 0 8193 0 0 0
 2 2 6 0 0 0 0 0
-1 5549 100
+1 5549 100 100
 E
 sharpened black dagger~
    &+LThis black dagger has been sharpened to an amazing &+Cedge&+L.
@@ -1901,7 +1901,7 @@ treasury key~
 ~
 18 22 3 0 7 0 0 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 treasury key~
    &+CThis small silver key has the &+rRavenloft &+Ccrest over a bar of &+Ygold&+C.
@@ -1913,7 +1913,7 @@ hastily-written note hastily written~
 ~
 8 28 0 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hastily-written note hastily written~
 &+WUrik,
@@ -1932,7 +1932,7 @@ band parting prevented~
 ~
 9 10 0 0 7 0 1025 3 64 47091620 0
 10 0 0 3 0 0 0 0
-0 16539 100 0 0 0 33554432
+0 16539 100 100 0 0 0 33554432
 E
 band parting prevented~
    &+LThis &+Ygold band&+L glows with a &Nsoft &+Lmagic essence.   A closer inspection
@@ -1953,7 +1953,7 @@ spectral lance _lance_~
 ~
 5 1 3 0 7 0 4194304 8193 64 0 0
 16 3 8 0 0 0 0 0
--10 1 100
+-10 1 100 100
 A
 18 5
 A
@@ -1965,7 +1965,7 @@ old key ravenloft catacombs~
 ~
 18 11 3 0 7 0 8388608 16385 64 0 0
 0 100 0 0 0 0 0 0
-1 69 69
+1 69 69 100
 E
 old key ravenloft catacombs~
    &+LThis key is quite old and brittle.
@@ -1977,7 +1977,7 @@ silver key ring~
 ~
 15 22 3 0 9 0 4096 16385 0 0 0
 5 0 0 4 0 0 0 0
-0 16545 100
+0 16545 100 100
 E
 silver key ring~
    &+LThis simple key ring is made of a thick &+Csilver &+Lband.
@@ -1989,7 +1989,7 @@ large gold key~
 ~
 18 24 2 0 5 0 0 5 0 0 0
 0 100 0 0 0 0 0 0
-2 1690 100
+2 1690 100 100
 E
 large gold key~
    &+YThis simple, gold key radiates a faint bit of magic.  It sits on a simple
@@ -2002,7 +2002,7 @@ pile coins platinum curiously arranged~
 ~
 29 15 3 0 7 0 0 0 0 0 0
 10 58563 5 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pile coins platinum curiously arranged~
    &+WThis pile of platinum coins is arranged in stacks to resemble a skull.
@@ -2014,7 +2014,7 @@ huge pile platinum coins~
 ~
 20 25 3 0 7 0 0 1 0 0 0
 0 0 0 5000 0 0 0 0
-0 0 100
+0 0 100 100
 E
 huge pile platinum coins~
    &+WThis massive mound of platinum coins sits at the center of the treasury.
@@ -2028,7 +2028,7 @@ tome strahd~
 ~
 33 28 2 0 7 0 1 8404993 64 0 0
 0 0 1000 0 0 0 0 0
-0 149349 100
+0 149349 100 100
 A
 33 3
 A
@@ -2040,7 +2040,7 @@ elixir moonstalker potion~
 ~
 10 7 1 0 7 0 0 16385 64 0 0
 60 393 171 204 23 0 0 0
-0 5948 100
+0 5948 100 100
 E
 elixir moonstalker potion~
    &+LThis small bottled potion reeks of &+Ldeath&+y, plague&+L, and &+Rpain.
@@ -2052,7 +2052,7 @@ sword scourging~
 ~
 5 19 4 0 7 0 37748736 8193 66 0 0
 13 4 6 0 0 327016 56 25
-11 44930 100 0 0 0 536870912
+11 44930 100 100 0 0 0 536870912
 E
 _room_msg~
 &+L$n's $q &+L&+bflares up with negative energy.
@@ -2080,7 +2080,7 @@ glorious copper mallet~
 ~
 5 21 5 0 6 0 4194305 8193 64 0 0
 4 2 6 0 0 0 0 0
-8 1534 100
+8 1534 100 100
 E
 glorious copper mallet~
    &+RThis heavy copper mallet has a huge rubber head.  It appears to be made
@@ -2097,7 +2097,7 @@ bright magical sword case~
 ~
 15 25 3 0 11 0 262144 0 64 0 0
 20 5 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bright magical sword case~
    &+WThis case stands almost six feet tall - standing hilt-to-eye with your above-
@@ -2111,7 +2111,7 @@ bright magical sword case~
 ~
 15 15 3 0 7 0 0 0 0 0 0
 20 29 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 bright magical sword case~
    &+WThis case stands almost six feet tall - standing hilt-to-eye with your above-
@@ -2125,7 +2125,7 @@ sword case~
 ~
 15 25 3 0 11 0 262144 0 64 0 0
 20 29 0 4 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sword case~
    This sword case is quite plain, although pretty massive.  The blade within
@@ -2139,7 +2139,7 @@ wisp total utter blackness~
 ~
 9 1 1 0 7 0 4097 4097 64 0 0
 40 0 0 3 0 0 0 0
--100 154349 100 2 0 0 536870912
+-100 154349 100 100 2 0 0 536870912
 E
 wisp total utter blackness~
    &+LThis wisp of blackness exists as an external embodiment of Strahd
@@ -2156,7 +2156,7 @@ vial boiling blood~
 ~
 10 7 3 0 7 0 1 16385 0 0 0
 51 255 215 321 0 0 0 0
-0 1043 100
+0 1043 100 100
 E
 vial boiling blood~
    &+rThis vial of blood bubbles with its own rage!
@@ -2168,7 +2168,7 @@ strange granite head~
 ~
 8 11 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 T
 257 7 5 200
 #58434
@@ -2178,7 +2178,7 @@ proc 2~
 ~
 5 15 3 0 7 0 2 8193 110 0 0
 2 6 6 0 11 343186439 56 25
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &N$n &+Rtears &Nand &N&+rclaws &Nat $N with his sharp &N&+rvampiric claws.
@@ -2198,7 +2198,7 @@ proc 1~
 ~
 5 15 3 0 7 0 2 8193 110 0 0
 2 6 6 0 11 120121119 56 30
-0 0 100
+0 0 100 100
 E
 _room_msg~
 &n$n suddenly grabs $N by the throat, looks &+Ldeep&N into their eyes and says &+r'Die $N.'&N
@@ -2218,7 +2218,7 @@ crown rat bones~
 ~
 9 10 3 0 7 0 1 17 64 0 0
 10 0 0 2 0 0 0 0
-0 340 100 0 8194 0 0
+0 340 100 100 0 8194 0 0
 E
 crown rat bones~
    &+LThis simple crown is made up of hundreds of tiny &+Wrat bones &+Lall fused
@@ -2235,7 +2235,7 @@ torch~
 ~
 1 6 2 0 3 0 262144 0 0 0 0
 0 0 -1 0 0 0 0 0
-0 0 77
+0 0 77 100
 E
 torch~
 &+YThis wood and flax torch sits in a sconce, which i screwed into a block
@@ -2248,7 +2248,7 @@ spiked ring bloody retribution~
 ~
 9 11 2 0 7 0 0 3 64 0 0
 5 0 0 3 1 0 0 0
-0 14331 100 268435488 0 0 0
+0 14331 100 100 268435488 0 0 0
 E
 spiked ring bloody retribution~
    &+LThis stone ring is actually quite large, barely fitting over a medium-
@@ -2267,7 +2267,7 @@ eladrin bone crown obyriths~
 ~
 9 10 4 0 15 0 100671488 17 64 0 0
 5 0 0 5 0 0 0 0
-3 200431 100 536944640 12480 0 570425344
+3 200431 100 100 536944640 12480 0 570425344
 E
 eladrin bone crown obyriths~
    &+LThis large crown is made of the celestial bones of the &+GEladrin&+L, a

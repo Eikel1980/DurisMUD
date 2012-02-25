@@ -5,7 +5,7 @@ one handed one-handed sword longsword~
 ~
 5 16 4 0 7 0 0 8193 0 0 0
 5 3 4 0 0 0 0 0
-10 29982 100
+10 29982 100 100
 E
 longsword two two-handed handed sword~
 &+LThe longsword of the Valoisian guard.&N
@@ -21,7 +21,7 @@ fountain circular~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 9999 9999 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 fountain circular~
 &+LThis fountain spouts water straight into the air.  It provides drinking water
@@ -34,7 +34,7 @@ a &+bsci&+Bm&+Wi&+Bt&+bar&n of&+b Oakencrest&N~
 ~
 5 16 4 0 7 0 1024 8193 64 87572483 0
 5 3 6 0 0 0 0 0
-15 43324 100
+15 43324 100 100
 E
 scimitar oakencrest~
 &+bThe scimitar has the seal of the &+gOakencrest&+b family.&N
@@ -48,7 +48,7 @@ lifegiving life giving gadget gnomish~
 ~
 9 15 3 0 7 0 1 16385 64 0 0
 1 0 0 1 0 0 0 0
-5 9030 100
+5 9030 100 100
 E
 lifegiving life giving gadget gnomish~
 &+WThis gadget has many mechanical parts to it.  For some mysterious reason, it
@@ -63,7 +63,7 @@ large mithril battle-axe battleaxe axe battle~
 ~
 5 18 3 0 7 0 1024 8193 64 87572483 0
 1 3 4 0 0 0 0 0
-15 39439 100
+15 39439 100 100
 E
 mithril battle-axe battleaxe axe~
 &+WThis battle axe is made of mithril, and has seen many battles.  Only a true
@@ -80,7 +80,7 @@ a pair of&+b royal&+L black&+bsmith glo&+Lves&N~
 ~
 9 15 3 0 7 0 0 129 64 0 0
 8 0 0 5 0 0 0 0
-10 4000 100
+10 4000 100 100
 E
 gloves black smith blacksmith work~
 &+LThese gloves seem to be magical in nature, however, just what magic could
@@ -97,7 +97,7 @@ key steel~
 ~
 18 16 3 0 10 0 8392704 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 2343 100
+1 2343 100 100
 E
 key steel~
 &+WThis key opens a castle gate.&N
@@ -109,7 +109,7 @@ key ancient~
 ~
 18 15 1 0 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-1 2323 100
+1 2323 100 100
 E
 key ancient~
 &+LAn onyx key that seems very ancient.&N
@@ -121,7 +121,7 @@ steel broadsword broad sword~
 ~
 5 16 3 0 7 0 4194304 8193 0 0 0
 13 2 10 0 0 0 0 0
-10 4 100
+10 4 100 100
 E
 steel broadsword broad sword~
 &+LOne of the king's specially made swords for his soldiers.&N
@@ -133,7 +133,7 @@ pole polearm huge~
 ~
 5 16 3 0 7 0 4194304 8193 0 0 0
 8 3 7 0 0 0 0 0
-25 20004 100
+25 20004 100 100
 E
 pole pole arm huge~
 &+CA huge pole arm, it looks as though it would require ten men to carry it.&N
@@ -145,7 +145,7 @@ battle mace~
 ~
 5 16 3 0 7 0 0 8193 0 0 0
 6 3 4 0 0 0 0 0
-10 25000 100
+10 25000 100 100
 E
 battle mace~
 &+LThis mace looks to be battle ready, and in the hands of a skilled warrior can
@@ -158,7 +158,7 @@ a pair of &+broyal &+Lblack&+bsmith slee&+Lves&N~
 ~
 9 16 4 0 7 0 0 257 64 0 0
 16 0 0 4 0 0 0 0
-10 2323 100
+10 2323 100 100
 E
 smithy sleeves~
 &+LThese sleeves look as though they could withstand the heat of hell.&N
@@ -174,7 +174,7 @@ leather armor leather-studded studded~
 ~
 9 13 3 0 7 0 0 9 0 0 0
 12 0 0 3 0 0 0 0
-10 2000 100
+10 2000 100 100
 E
 leather armor leather-studded studded~
 &+yThis body armor was created for the foot soldiers of the army, and looks to
@@ -191,7 +191,7 @@ steel sleeves~
 ~
 9 15 3 0 7 0 0 257 0 0 0
 5 0 0 3 0 0 0 0
-13 4000 100
+13 4000 100 100
 E
 steel sleeves~
 &+cThese sleeves were made for the foot soldiers, and they appear adequate for
@@ -208,7 +208,7 @@ steel leggings~
 ~
 9 15 3 0 7 0 0 33 0 0 0
 4 0 0 3 0 0 0 0
-10 3000 100
+10 3000 100 100
 E
 steel leggings~
 &+cThese leggings look to provide adequate protection against any assault.&N
@@ -224,7 +224,7 @@ oakencrest ring seal emblem~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 oakencrest ring seal emblem~
 &+WA ring with the seal of lord &+gOakencrest&+W.&N
@@ -236,7 +236,7 @@ del lord du'kel seal ring~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 du kel seal lord~
 &+WA ring with the seal of &+rDu'kel&+W upon it.&N
@@ -248,7 +248,7 @@ lord berani signet ring~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 lord berani seal~
 &+WThis ring has the seal of lord &+LBerani&+W upon it.&N
@@ -260,7 +260,7 @@ boots black winged dragon~
 ~
 9 35 3 0 7 0 1 65 64 0 0
 10 0 0 4 0 0 0 0
-10 13000 100 67108864 0 0 0
+10 13000 100 100 67108864 0 0 0
 E
 boots black winged dragon~
 &+WThese boots look to have been made of dragon scales.
@@ -276,7 +276,7 @@ bracelet woven leafs~
 ~
 9 4 3 0 7 0 0 4097 64 0 0
 5 0 0 1 0 0 0 0
-1 6000 100
+1 6000 100 100
 E
 woven leaves bracelet~
 &+GThis bracelet looks to have been woven from leaves from some sort of elven tree.&N
@@ -292,7 +292,7 @@ leggings clan crunch head~
 ~
 9 19 4 0 11 0 1025 33 64 87638043 0
 10 0 0 4 0 0 0 0
-15 13000 100
+15 13000 100 100
 E
 leggings crunch head~
 &+YThese leggings are made of adamantium, and seem adequate to defend one's legs
@@ -309,7 +309,7 @@ ebony dagger~
 ~
 5 15 3 0 7 0 1024 8193 0 65536 0
 2 1 4 0 0 0 0 0
-1 1323 100
+1 1323 100 100
 E
 ebony dagger~
 &+LThis black dagger can be easily concealed, for it is very tiny.&N
@@ -321,7 +321,7 @@ a &+rma&+Rgi&+rca&+rl p&+roi&+Rn&+rty t&+Ro&+rp &+What&N~
 ~
 9 3 3 0 7 0 65537 17 64 0 0
 10 0 0 2 0 0 0 0
-1 38282 100
+1 38282 100 100
 E
 top hat magical pointy~
 &+MThis top hat has many stars and moons woven into it. It looks magical in
@@ -338,7 +338,7 @@ a &+Wfu&+cr&+C sk&+cin&+W clo&+cak&n of the &+Ctun&+cdra&n~
 ~
 9 50 3 0 7 0 0 1025 64 0 0
 10 0 0 3 0 0 0 0
-5 12000 100
+5 12000 100 100
 E
 furry bearskin skin bear~
 &+CThis furry skin looks like it was made in the icy tundra region of the barbarians.
@@ -357,7 +357,7 @@ bottled wine~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-5 200 100
+5 200 100 100
 E
 wine bottled~
 &+mSome bottled wine.&N
@@ -369,7 +369,7 @@ dinner plate~
 ~
 13 48 3 0 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 dinner plate~
 &+YSome dinner to be served to the queen ...
@@ -381,7 +381,7 @@ an &+yol&+Ld &+yro&+Lbe&n of an &+yas&+Ytute&+y mo&+Ynk~
 ~
 9 3 3 0 7 0 1537 9 64 524772 33801
 20 0 0 2 0 0 0 0
-1 84728 100
+1 84728 100 100
 E
 old robe~
 &+YThis old robe is nearly seven feet in length and looks very comfortable.
@@ -397,7 +397,7 @@ pond~
 ~
 17 15 3 0 7 0 0 0 0 0 0
 1 1 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 large pond~
 &+WThis is a large pond in the center of the maze. There are toys of all sorts
@@ -410,7 +410,7 @@ a &+mroyal &+Mtoken&n of &+LV&+Ca&+clo&+Ci&+Ls&N~
 ~
 9 19 3 0 10 0 1 5 64 0 0
 5 0 0 2 0 0 0 0
-5 10000 100
+5 10000 100 100
 E
 token valoisian~
 &+MThis is token from the Valoisian chest.  It is a sacred family relic of their
@@ -427,7 +427,7 @@ key vineyard~
 ~
 18 15 3 0 7 0 8392704 16385 0 0 0
 0 100 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 key vineyard~
 &+MA key to a vineyard.&N
@@ -439,7 +439,7 @@ seal prince~
 ~
 8 15 3 0 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 seal prince~
 &+WThis ring has the seal of the prince on top of it.&N
@@ -451,7 +451,7 @@ seal princess~
 ~
 8 15 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 seal princess~
 &+WThis ring has the seal of the princess placed on top of it.&N
@@ -463,7 +463,7 @@ serrated dagger~
 ~
 5 16 3 0 10 0 0 8193 64 0 0
 2 2 6 0 0 0 0 0
-5 42000 100
+5 42000 100 100
 E
 serrated dagger~
 &+WThis slender dagger has been magically enhanced.  Its razor edge has magic
@@ -480,7 +480,7 @@ silver ring~
 ~
 9 22 3 0 7 0 0 3 64 0 0
 3 0 0 1 0 0 0 0
-1 48299 100
+1 48299 100 100
 E
 silver embroided ring~
 &+CThis bring is made of silver, a powerful hum seems to come from it.&N
@@ -496,7 +496,7 @@ exquisite silk sash~
 ~
 9 50 3 0 7 0 0 2049 64 0 0
 7 0 0 2 0 0 0 0
-1 10 100
+1 10 100 100
 E
 exquisite silk sash~
 &+CThis sash is part of a custom for a dancer, and is rarely seen on those who
@@ -513,7 +513,7 @@ gem gemstone earring~
 ~
 9 15 3 0 7 0 1 524289 64 0 0
 3 0 0 1 0 0 0 0
-1 10 100 536870912 0 0 0
+1 10 100 100 536870912 0 0 0
 E
 gem gemstone earring~
 &+YThis earring is made of gemstone.  Its long, dangling, and seems magical.&N
@@ -527,7 +527,7 @@ flowing mist necklace~
 ~
 9 44 3 0 7 0 0 5 64 0 0
 8 0 0 3 0 0 0 0
-1 9000 100 32 0 0 0
+1 9000 100 100 32 0 0 0
 E
 necklace flowing mist~
 &+GA crystal has a band placed around it, with this band it's possible for it
@@ -545,7 +545,7 @@ tundra tribe totem~
 ~
 34 36 3 0 7 0 0 16385 64 0 0
 40 0 0 0 0 0 0 0
-1 10000 100
+1 10000 100 100
 E
 tundra tribe totem~
 &+WComing from the lands of the barbarians, this totem must have been endowed with
@@ -562,7 +562,7 @@ A note lies upon the floor.~
 ~
 13 3 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 elvish note~
 A note written in elven concerning logistics.
@@ -574,7 +574,7 @@ an &+menchanted &+gelven &+Weyepatch&n '&+LOp&+Wti&+Lcl&+Wud&+Le&n'~
 ~
 9 13 3 0 11 0 0 131073 64 0 0
 5 0 0 3 0 0 0 0
-5 12000 100 32 28 0 0
+5 12000 100 100 32 28 0 0
 E
 leather eyepatch opticlude~
 &+LThis is a relic from the elven civilization.  Opticlude was the eyepatch worn
@@ -591,7 +591,7 @@ a &+mmagical &+Mmaple&+G leaf&N~
 ~
 9 30 3 0 7 0 0 262145 64 0 0
 5 0 0 2 0 0 0 0
-1 9000 100
+1 9000 100 100
 E
 maple leaf~
 &+LThis leaf has come from the regions near the tropical jungles of Woodseer.  It
@@ -609,7 +609,7 @@ rod flaming~
 ~
 5 15 3 0 12 0 1024 8193 64 41979556 0
 6 3 4 0 0 0 0 0
-5 52000 100
+5 52000 100 100
 E
 rod flaming~
 &+rThis long rod is has been set ablaze by magical means, and the blaze covers the
@@ -627,7 +627,7 @@ beautiful roses~
 ~
 8 30 3 0 5 0 0 1 0 1 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 beautiful roses~
 &+rSome beautiful roses.&N
@@ -639,7 +639,7 @@ merchant caravan~
 ~
 13 15 3 0 5 0 0 0 0 1 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 merchant caravan~
 &+yThis caravan shoppe has been setup here.&N
@@ -651,7 +651,7 @@ glowing bard sack~
 ~
 30 3 3 0 5 0 1 1064961 0 0 0
 100 5 1 0 0 0 0 0
-1 12121 100
+1 12121 100 100
 E
 glowing bard sack~
 &+mThis bard sack is glowing.  It must be endowed with magical power.&N
@@ -667,7 +667,7 @@ a &+Ydwar&+yven hel&+Ymet &nof &+yk&+Yn&+yo&+Yck&+ying&N~
 ~
 9 15 3 0 5 0 0 17 64 0 0
 12 0 0 5 0 0 0 0
-0 0 100
+0 0 100 100
 E
 dwarven helmet knocking~
 &+yThis helmet is very thick. It was designed to knock people out by way of
@@ -684,7 +684,7 @@ a &+Wbril&+cliant two&+w-&+Whanded long&+csword&N~
 ~
 5 15 3 0 5 0 4194304 8193 64 67092454 0
 13 4 5 0 0 0 0 0
-15 64822 100
+15 64822 100 100
 E
 two-handed brilliant two handed long longsword~
 &+WThis brilliant two-handed sword has been polished and shined. It is razor-sharp
@@ -701,7 +701,7 @@ a &+Gserpentine &+gmedallion&N~
 ~
 9 15 3 0 5 0 1 5 0 0 0
 8 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 serpentine medallion~
 &+GThis medallion has the design of a serpent in it.&N
@@ -717,7 +717,7 @@ crimson hued longsword steel sword~
 ~
 5 16 3 0 5 0 0 8193 64 1 0
 5 3 4 0 0 0 0 0
-5 49030 100
+5 49030 100 100
 E
 crimson hued longsword steel sword~
 &+rA blade stained red.&N
@@ -731,7 +731,7 @@ a &+Btri&+bbal neck&+Blace &nof &+broy&+Bal aut&+bhority&N~
 ~
 9 15 3 0 5 0 1 5 0 1 0
 6 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 barbarian token~
 &+BThis token comes from the great barbarian nation. It was given to protect the
@@ -748,7 +748,7 @@ an &+gelv&+Gen br&+gacelet &nof &+gprecis&+Gion&N~
 ~
 9 15 3 0 5 0 0 4097 64 0 0
 7 0 0 2 0 0 0 0
-0 0 100
+0 0 100 100
 E
 elven bracelet caretaking~
 &+gThis bracelet is endowed with the magical power of the elves.&N
@@ -764,7 +764,7 @@ a &+Ww&+wh&+Wit&+we &+Wr&+wo&+Wse&N~
 ~
 11 30 3 0 5 0 0 2097153 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 white rose~
 &+WA white rose.&N
@@ -776,7 +776,7 @@ golden signet ring~
 ~
 11 24 3 0 5 0 0 3 0 1 0
 0 0 0 0 0 0 0 0
-1 102932 100
+1 102932 100 100
 E
 golden signet rnig~
 &+YA golden signet ring.&N
@@ -788,7 +788,7 @@ a &+Ygold s&+Ltu&+Yd&+Ld&+Ye&+Ld&+L horse &+ysaddle&N~
 ~
 9 24 3 0 5 0 0 16777217 0 0 0
 12 0 0 4 0 0 0 0
-2 2131 100
+2 2131 100 100
 E
 gold studded horse saddle~
 &+yThis horse saddle is fitted with golden studs.&N
@@ -802,7 +802,7 @@ crimson key~
 ~
 18 15 3 0 5 0 0 16385 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 crimson key~
 &+rA crimson key.&N
@@ -814,7 +814,7 @@ silk panties~
 ~
 11 0 3 0 5 0 0 8650753 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 silk panties~
 &+bThese panties are made of silk. They smell tantalizing.&N
@@ -830,7 +830,7 @@ thick book~
 ~
 11 3 3 0 5 0 0 8404993 0 1 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 thick book~
 &+MThis thick book has written in it all the secrets a man could want to know

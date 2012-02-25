@@ -5,7 +5,7 @@ Pets~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pets~
 Theurgist Pets:
@@ -31,7 +31,7 @@ Innates~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 innates~
 Requiem (Mummify):	
@@ -56,7 +56,7 @@ Spells~
 ~
 13 15 3 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 spells~
 	Return Soul (Unmaking):

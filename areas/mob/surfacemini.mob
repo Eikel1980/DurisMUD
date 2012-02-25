@@ -10,8 +10,8 @@ the few &+yscraps&n of clothing that he wears. Several necklaces
 made of small bits of animals are stretched to the breaking point
 around his corpulent neck.
 ~
-10318 0 0 0 0 0 0 -1000 S
-HG 0 256 -1
+10318 0 0 0 0 0 0 0 -1000 S
+HG 0 256 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -25,8 +25,8 @@ humble man hermit~
 &+ysays hi to you as you are looking at him. Only a rude man would
 &+ynot return the favor.
 ~
-2058 0 0 24 0 0 0 0 S
-PH 0 256 -1
+2058 0 0 0 24 0 0 0 0 S
+PH 0 256 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -42,8 +42,8 @@ large sand lion~
 &+ypair of claws, it has evolved a set of four arms that serve
 &+yas snares for when prey wanders into it's trap.&n
 ~
-2058 1 0 1048584 0 0 0 0 S
-tk 0 1 -1
+2058 1 0 0 1048584 0 0 0 0 S
+tk 0 1 0 -1
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -58,8 +58,8 @@ desert vulture~
 &+yand has developed an amazing sense of sight, allowing it to spot
 &+yhelpless victims from miles away.&n
 ~
-8 0 0 0 0 0 0 0 S
-b 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+b 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -77,8 +77,8 @@ sand monkey~
 &+yenough to know that playing with the local sand lions is
 &+ydangerous.&n
 ~
-1073743880 0 0 0 0 0 0 0 S
-aa 0 1 -1
+1073743880 0 0 0 0 0 0 0 0 S
+aa 0 1 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -95,8 +95,8 @@ translucent sand scorpion~
 &+ywants to conserve its energy, but during the night, this
 &+yscorpion becomes quite the hunter.&n
 ~
-1073743880 5 0 0 0 0 0 0 S
-as 0 1 -1
+1073743880 5 0 0 0 0 0 0 0 S
+as 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -112,8 +112,8 @@ sun beetle~
 &+ythe sun. On its back, the beetle has a red spot that
 &+yresembles a burning sun, hence its name.&n
 ~
-1073743880 0 0 0 0 0 0 0 S
-i 0 1 -1
+1073743880 0 0 0 0 0 0 0 0 S
+i 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -128,8 +128,8 @@ gnomish cosmomancer~
 &+Lthrough all four &+yplanes &+Land towards the outermost reaches of our
 &+Lworld.&n
 ~
-10 0 0 0 0 0 0 0 S
-pg 0 33554432 -1
+10 0 0 0 0 0 0 0 0 S
+pg 0 33554432 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -144,8 +144,8 @@ gleb shnieebly goblin pyro mage pyro-mage~
 &+Gwith a deep magical fire.  He currently investigates the area,
 &+Gunintimidated by the local threats.
 ~
-1073743882 0 0 1048600 0 0 0 -1000 S
-HG 0 512 2
+1073743882 0 0 0 1048600 0 0 0 -1000 S
+HG 0 512 0 2
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -161,8 +161,8 @@ strange old hermit~
 &+gEither way, this strange man sits reading a book patiently, grasping a large
 &+gbird's wing bones between the toes of his foot, raising it to his gnashing teeth.
 ~
-2058 0 0 8 0 0 0 222 S
-PH 0 1 3
+2058 0 0 0 8 0 0 0 222 S
+PH 0 1 0 3
 16 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -174,8 +174,8 @@ cave fisher~
    &+LThis cave-dwelling insect sits in this cave, spending countless hours awaiting
 &+Lthe next adventurer to stumble into this cave.
 ~
-2058 1 0 1048576 0 0 0 -420 S
-i 0 1 1
+2058 1 0 0 1048576 0 0 0 -420 S
+i 0 1 0 1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -187,8 +187,8 @@ glorious eagle~
    &+WThis glorious eagle is quite large.  It has keen eyes and a bald head.
 &+WWhite and &+ybrown &+Wfur cover its muscular, and agile body.
 ~
-2120 0 0 0 0 0 0 -2 S
-b 0 1 -1
+2120 0 0 0 0 0 0 0 -2 S
+b 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -200,8 +200,8 @@ young nestling eagle baby~
    &+yThis young eagle has no &+chair &+yand can barely open its eyes.  It
 &+ysquacks and opens its mouth for its mother.
 ~
-2122 0 0 0 0 0 0 -2 S
-b 0 1 -1
+2122 0 0 0 0 0 0 0 -2 S
+b 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -213,8 +213,8 @@ mother eagle~
    &+WThis glorious eagle is quite large.  It has keen eyes and a bald head.
 &+WWhite and &+ybrown &+Wfur cover its muscular, and agile body.
 ~
-2122 0 0 0 0 0 0 -2 S
-b 0 1 -1
+2122 0 0 0 0 0 0 0 -2 S
+b 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -226,8 +226,8 @@ rock beetle~
    &+LThis large black and brown beetle is shaped like a stone of the Eagle Ridge
 &+Lmountains.  This beetle has beedey eyes and large sharp mandibles.
 ~
-2120 0 0 0 0 0 0 -2 S
-i 0 1 -1
+2120 0 0 0 0 0 0 0 -2 S
+i 0 1 0 -1
 16 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -240,8 +240,8 @@ magnificent griffon~
 &+Won its grizzled face.  This griffon has sharp teeth and bright eyes.  Huge wings
 &+Wspread forth from its lion body, and an eagle head on its neck.
 ~
-1074137096 0 0 402653208 0 0 0 777 S
-an 0 67108864 4
+1074137096 0 0 0 402653208 0 0 0 777 S
+an 0 67108864 0 4
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -257,8 +257,8 @@ mountain farseer~
 &+Wmountain peaks, keeping a keen &+Beye&+W on the horizon for pirates or
 &+Wgunboat seige ships.
 ~
-1073743944 128 0 24 0 0 0 421 S
-pe 0 2 -1
+1073743944 128 0 0 24 0 0 0 421 S
+pe 0 2 0 -1
 41 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -268,8 +268,8 @@ strange being~
 &+LA &+mstrange &+Lbeing stands here, a hulking mass of squirming &+Mtentacles&+L.&n
 ~
 ~
-268435466 0 0 16 268437504 4194304 0 0 S
-mf 0 262144 -1
+268435466 0 0 0 16 268437504 4194304 0 0 S
+mf 0 262144 0 -1
 60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -280,8 +280,8 @@ small ice elemental~
 ~
 &+cThis small &+Cice &+celemental seems to be made of a solid block of &+Cice&+c.&n
 ~
-8 0 0 0 0 0 0 0 S
-ew 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+ew 0 1 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -292,8 +292,8 @@ large ice elemental~
 ~
 &+cThis small &+Cice &+celemental seems to be made of a solid block of &+Cice&+c.&n
 ~
-8 0 0 0 0 0 0 0 S
-ew 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+ew 0 1 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -306,8 +306,8 @@ mugflog shaman~
 &+gvery hairy shoulders. He wears very little. In fact, only a small scarf
 &+gbarely covers his over-sized genitals. He grumbles at you.&n
 ~
-2058 0 0 8 0 0 0 -1000 S
-pt 0 256 -1
+2058 0 0 0 8 0 0 0 -1000 S
+pt 0 256 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -317,8 +317,8 @@ ishaz frost giant~
 &+cIshaz, the &+CFrost &+cGiant stands here, watching you closely.&n
 ~
 ~
-8 0 0 0 0 0 0 0 S
-g 0 256 -1
+8 0 0 0 0 0 0 0 0 S
+g 0 256 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -332,8 +332,8 @@ powerful armored griffon~
 &+Yby the others in its roost, this griffon moves with pride
 &+Yprotecting its flock.
 ~
-1140983882 0 0 134217736 0 0 0 1000 S
-ct 0 67108864 5
+1140983882 0 0 0 134217736 0 0 0 1000 S
+ct 0 67108864 0 5
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -346,8 +346,8 @@ vibrant female griffon~
 &+Wtoe.  It is a wonder why the &+Ygr&N&+yiff&+Won race are so rare, partly due
 &+Wto the fact that the egg-laying females are so sparse throughout &N&+rDuris&+W.
 ~
-133194 0 0 134217752 0 0 0 1000 S
-an 0 8 5
+133194 0 0 0 134217752 0 0 0 1000 S
+an 0 8 0 5
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -362,8 +362,8 @@ beautiful seraphim~
 &+Wbeaming smile graces her flawless face as two eyes stare forth
 &+Wshining with a &+Ygolden &+Wbrilliance.
 ~
-1073764424 0 0 134217752 0 0 0 1000 S
-an 0 33554432 -1
+1073764424 0 0 0 134217752 0 0 0 1000 S
+an 0 33554432 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2

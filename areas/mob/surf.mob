@@ -8,8 +8,8 @@ somewhat akin to an elf maiden. She has high cheek bones and violet
 eyes, with golden-red hair that seems to almost sparkle. Her light-tan
 skin is dotted with a greenish tint.
 ~
-205 0 0 4194336 0 0 0 0 S
-H 0 0 -1
+205 0 0 0 4194336 0 0 0 0 S
+H 0 0 0 -1
 20 13 35 20d30+100 3d4+2
 0.9.3.0 9720
 8 8 2
@@ -23,8 +23,8 @@ half-elf in appearance. He has blackish hair and striking violet eyes, and
 stands about six feet tall. From his appearance, this rangers definitely
 knows his way about these forests.
 ~
-1074006092 0 0 148 0 0 0 1000 S
-H 0 2 -1
+1074006092 0 0 0 148 0 0 0 1000 S
+H 0 2 0 -1
 30 8 3 30d65+390 3d6+4
 0.5.7.1 26730
 8 8 1
@@ -38,8 +38,8 @@ long grey hair and wrinkled skin.  Dressed in a loose fitting grey robe wearing
 leather sandals he looks rather unimposing except for power that seems to
 radiate from the man.
 ~
-1107429448 0 0 570433576 2048 0 0 0 S
-PH 0 512 -1
+1107429448 0 0 0 570433576 2048 0 0 0 S
+PH 0 512 0 -1
 50 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -53,8 +53,8 @@ thin fingers is wearing just a simple lite-blue robe with a small belt and
 buckle.  He is a merchant and like all of his race deals only in magical items
 and potions.
 ~
-1107364040 0 0 570425512 2112 0 0 0 S
-G 0 512 -1
+1107364040 0 0 0 570425512 2112 0 0 0 S
+G 0 512 0 -1
 60 -3 -95 50d80+25000 6d6+25
 0.3.1.5 121500
 6 5 1
@@ -67,8 +67,8 @@ a &+Lpatrol &+Wleader&n~
 &+Lman seem to be one with nature. He bears the insignia of the &+WTharnadian
 &+RPatrol Leader&+L upon his &+Lchainmail.&n
 ~
-67110920 384 0 24 0 0 0 1000 S
-PH 1 2 -1
+67110920 384 0 0 24 0 0 0 1000 S
+PH 1 2 0 -1
 30 -5 -100 60d119+2750 6d6+25
 0.3.1.5 151500
 8 8 1
@@ -82,8 +82,8 @@ a &+Lpatrol &+Wleader&n~
 &+Lmake a lot of person think twice before raising there sword against him. He
 &+Lbears the insignia of the &+WTharnadian&+R Patrol Leader&+L upon his platemail.&n
 ~
-1073743880 384 0 24 0 0 67108864 1000 S
-PH 1 8 -1
+1073743880 384 0 0 24 0 0 67108864 1000 S
+PH 1 8 0 -1
 31 -5 -100 60d119+2750 6d6+25
 0.3.1.5 151500
 8 8 1
@@ -96,8 +96,8 @@ a &+Lpatrol &+Wguard&n~
 &+gtree&+L, this guard is all business. He bears the insignia of the &+WTharnadian
 &+RPatrol&+L upon his &+Lbreastplate.&n
 ~
-67110987 2432 0 8 0 0 0 750 S
-PH 1 1 -1
+67110987 2432 0 0 8 0 0 0 750 S
+PH 1 1 0 -1
 20 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -110,8 +110,8 @@ hellaranin nomad~
 He wears a lot of snakeskin clothes and hasn't shaved in years. He is quite
 old.
 ~
-1073743944 0 0 0 0 0 0 0 S
-PH 0 2 -1
+1073743944 0 0 0 0 0 0 0 0 S
+PH 0 2 0 -1
 36 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -124,8 +124,8 @@ a &+Lpatrol &+Wleader&n~
 &+Lman seem to be one with nature. He bears the insignia of the &+WTharnadian
 &+RPatrol Leader&+L upon his &+Lchainmail.&n
 ~
-67110987 2432 0 268435608 0 0 0 1000 S
-PH 1 8 -1
+67110987 2432 0 0 268435608 0 0 0 1000 S
+PH 1 8 0 -1
 30 -5 -100 60d119+2750 6d6+25
 0.3.1.5 151500
 8 8 1
@@ -138,8 +138,8 @@ a &+Lpatrol &+Wguard&n~
 &+gtree&+L, this guard is all business. He bears the insignia of the &+WTharnadian
 &+RPatrol&+L upon his &+Lbreastplate.&n
 ~
-67110987 2432 0 152 0 0 0 750 S
-PH 1 1 -1
+67110987 2432 0 0 152 0 0 0 750 S
+PH 1 1 0 -1
 25 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -152,8 +152,8 @@ human paladin soldier guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-PH 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+PH 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -166,8 +166,8 @@ barbarian hunter soldier guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-PB 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+PB 0 1 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -180,8 +180,8 @@ gnomish soldier guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-PG 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+PG 0 1 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -194,8 +194,8 @@ soldier woodseer patrol guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-PF 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+PF 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -208,8 +208,8 @@ dwarven soldier guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-PM 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+PM 0 1 0 -1
 24 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -222,8 +222,8 @@ elven soldier guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-PE 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+PE 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -236,8 +236,8 @@ soldier marigot guard~
 &+wStern and competant, this soldier is eager to face off against the
 &+wforces of evil.&n
 ~
-67110984 2432 0 134217728 0 0 0 1000 S
-CT 0 1 -1
+67110984 2432 0 0 134217728 0 0 0 1000 S
+CT 0 1 0 -1
 32 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -250,8 +250,8 @@ tharnadian soldier elite guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PH 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PH 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -264,8 +264,8 @@ soldier elite ugta guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PB 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PB 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -278,8 +278,8 @@ soldier woodseer patrol guard elite~
 &+wintruders.  He seems eager to jump into battle, and quite adept with
 &+wat combat.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PF 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PF 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -292,8 +292,8 @@ elite gnomish soldier guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PG 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PG 0 1 0 -1
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -306,8 +306,8 @@ elite dwarven soldier guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PM 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PM 0 1 0 -1
 28 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -321,8 +321,8 @@ captain guard tharnadia tharnadian~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PH 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PH 0 1 0 -1
 33 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -336,8 +336,8 @@ captain guard ugta~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PB 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PB 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -351,8 +351,8 @@ guard captain gnomish ashrumite~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PG 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PG 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -366,8 +366,8 @@ captain guard woodseer~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PF 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PF 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -381,8 +381,8 @@ captain guard warrior dwarven kimordril~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PM 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PM 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -395,8 +395,8 @@ tharnadian soldier elite guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PH 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PH 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -409,8 +409,8 @@ tharnadian soldier elite guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PH 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PH 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -424,8 +424,8 @@ captain guard warrior tharnadia tharnadian~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PH 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PH 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -439,8 +439,8 @@ captain guard warrior tharnadia tharnadian~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PH 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PH 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -453,8 +453,8 @@ elite gnomish soldier guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PG 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PG 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -468,8 +468,8 @@ guard captain gnomish ashrumite warrior~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PG 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PG 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -483,8 +483,8 @@ captain guard warrior ugta~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PB 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PB 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -497,8 +497,8 @@ soldier elite ugta guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PB 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PB 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -512,8 +512,8 @@ captain guard woodseer warrior~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PF 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PF 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -526,8 +526,8 @@ soldier woodseer patrol guard elite~
 &+wintruders.  He seems eager to jump into battle, and quite adept with
 &+wat combat.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PF 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PF 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -540,8 +540,8 @@ elite dwarven soldier guard~
 &+wHe is much more experienced than the younger guards that wander the
 &+wcountryside, and quite adept at battling against the tides of evil.&n
 ~
-1140852810 2432 0 134217736 0 0 0 1000 S
-PM 0 1 -1
+1140852810 2432 0 0 134217736 0 0 0 1000 S
+PM 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -555,8 +555,8 @@ captain guard warrior dwarven kimordril~
 &+wfor signs of trouble for when he will be called to protect and serve
 &+wthe lesser people.&n
 ~
-1140852810 2432 0 134217788 0 0 0 1000 S
-PM 0 1 -1
+1140852810 2432 0 0 134217788 0 0 0 1000 S
+PM 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -567,8 +567,8 @@ graelma necromancer~
 ~
 &+LThis darkly cloaked necromancer wanders the countryside, the stench of death surrounding him.&n
 ~
-1107429449 0 0 570433576 2048 0 0 -1000 S
-PH 0 1024 -1
+1107429449 0 0 0 570433576 2048 0 0 -1000 S
+PH 0 1024 0 -1
 52 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -580,8 +580,8 @@ ghiran teacher sorcerer~
 &+bObviously a very aged man, this great sorcerer has dedicated his life
 &+bto teaching others his great magics.
 ~
-43020 384 0 570499176 12480 0 0 632 S
-PH 0 512 -1
+43020 384 0 0 570499176 12480 0 0 632 S
+PH 0 512 0 -1
 55 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -594,8 +594,8 @@ surak dwarf warrior teacher~
 &+ysomething, he may be an egomaniac, but at least he knows what he's
 &+ytalking about.
 ~
-43020 384 0 973185148 12480 0 0 397 S
-PM 0 1 -1
+43020 384 0 0 973185148 12480 0 0 397 S
+PM 0 1 0 -1
 60 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -607,8 +607,8 @@ valyn teacher elf ranger~
 &+gLong versed in the way of the elven ranger, Valyn is just the man to
 &+glearn from.
 ~
-43020 384 0 973152380 12480 0 0 981 S
-PE 0 2 -1
+43020 384 0 0 973152380 12480 0 0 981 S
+PE 0 2 0 -1
 56 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -620,8 +620,8 @@ alana teacher paladin~
 &+WHaving fought in hundreds of holy battles, Alana is just the woman to
 &+Wspeak to if you're interested in the holy profession's skills yourself.
 ~
-67151884 384 0 973152380 12480 0 0 1000 S
-PH 0 8 -1
+67151884 384 0 0 973152380 12480 0 0 1000 S
+PH 0 8 0 -1
 60 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -633,8 +633,8 @@ steed horse white mount~
 &+WStanding at least seven feet high to the shoulder, this horse is quite
 &+Wfearsome indeed.  Tangle with it, if you dare..
 ~
-134227980 0 0 570499176 12480 0 0 0 S
-AE 0 0 -1
+134227980 0 0 0 570499176 12480 0 0 0 S
+AE 0 0 0 -1
 40 2 -28 40d80+840 4d7+10
 0.0.0.0 51840
 8 8 1
@@ -647,8 +647,8 @@ alanae antipaladin teacher~
 &+Ljust the person to talk to if you're interested in learning some of
 &+Lthe dark skills yourself.
 ~
-43020 128 0 570499196 12480 0 0 -1000 S
-PH 0 16 -1
+43020 128 0 0 570499196 12480 0 0 -1000 S
+PH 0 16 0 -1
 50 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -660,8 +660,8 @@ steed horse black mount~
 &+LStanding at least seven feet high to the shoulder, this horse is quite
 &+Lfearsome indeed.  Tangle with it, if you dare..
 ~
-134227980 0 0 570499176 12480 0 0 0 S
-AE 0 0 -1
+134227980 0 0 0 570499176 12480 0 0 0 S
+AE 0 0 0 -1
 40 2 -28 40d80+840 4d7+10
 0.0.0.0 51840
 8 8 1
@@ -674,8 +674,8 @@ benali cleric teacher~
 &+yfor his goodwill to races everywhere.  He is also reknowned for his
 &+yteaching abilities..  Perhaps he could teach you a little something..?
 ~
-43020 384 0 570499176 12480 0 0 1000 S
-PH 0 32 -1
+43020 384 0 0 570499176 12480 0 0 1000 S
+PH 0 32 0 -1
 51 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -689,8 +689,8 @@ mu monk teacher~
 &+ymore humble than the lowest slave.  However, if approached, he will
 &+ygladly teach a bit of the martial arts..
 ~
-43020 384 0 570499176 12480 0 0 713 S
-PH 0 64 -1
+43020 384 0 0 570499176 12480 0 0 713 S
+PH 0 64 0 -1
 55 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -703,8 +703,8 @@ perin druid teacher~
 &+ghas an eagle eye admired from Verzanan to Sylvandawn.  He will gladly
 &+gteach anyone some druid skills, for a price..
 ~
-43020 384 0 570499176 12480 0 0 789 S
-P2 0 128 -1
+43020 384 0 0 570499176 12480 0 0 789 S
+P2 0 128 0 -1
 50 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -717,8 +717,8 @@ mugtogg shaman barbarian teacher~
 &+mthis shaman is great indeed.  He may even teach you a little something,
 &+mif requested..
 ~
-43020 384 0 570499176 12480 0 0 473 S
-PB 0 256 -1
+43020 384 0 0 570499176 12480 0 0 473 S
+PB 0 256 0 -1
 60 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -732,8 +732,8 @@ kralim necromancer necro teacher~
 &+Lnecromancer.  He is extroverted enough, however, to teach people
 &+Lhere and there.  Guess he's just a nice guy at heart.
 ~
-43020 128 0 570499176 12480 0 0 -985 S
-PH 0 1024 -1
+43020 128 0 0 570499176 12480 0 0 -985 S
+PH 0 1024 0 -1
 55 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -747,8 +747,8 @@ suri conjurer conjuress teacher~
 &+Ycasters hands down.  Bored of adventuring, she now wanders the byways
 &+Yof the world, occasionally dispensing tidbits of information.
 ~
-43020 384 0 570499176 12480 0 0 493 S
-PG 0 2048 -1
+43020 384 0 0 570499176 12480 0 0 493 S
+PG 0 2048 0 -1
 55 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -761,8 +761,8 @@ favin halfling thief teacher~
 &+Lthief.  Lucky for you he has given up killing others for fun and
 &+Lprofit and instead now educates them.
 ~
-43148 384 0 570499176 12480 0 0 -732 S
-PF 0 65536 -1
+43148 384 0 0 570499176 12480 0 0 -732 S
+PF 0 65536 0 -1
 50 -3 -95 50d100+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -775,8 +775,8 @@ nivaf assassin teacher~
 &+reye somehow tells you he could kill you right now without thinking,
 &+rbut that he simply doesn't want to waste the time.
 ~
-43148 384 0 570499176 12480 0 0 -999 S
-PH 0 8192 -1
+43148 384 0 0 570499176 12480 0 0 -999 S
+PH 0 8192 0 -1
 50 -3 -95 50d100+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -789,8 +789,8 @@ jaer mercenary teacher~
 &+ymoney.  However, he has called it quits, teaching many students in the
 &+yname of money instead.
 ~
-43020 384 0 973152380 12480 0 0 -329 S
-PH 0 16384 -1
+43020 384 0 0 973152380 12480 0 0 -329 S
+PH 0 16384 0 -1
 55 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -804,8 +804,8 @@ kortril bard teacher elf~
 &+mhappy you almost want to choke him after a while.  But hey, if you're
 &+ma bard yourself, he'll be more than happy to enlist his help.
 ~
-43020 384 0 570499176 12480 0 0 913 S
-PE 0 32768 -1
+43020 384 0 0 570499176 12480 0 0 913 S
+PE 0 32768 0 -1
 56 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -817,8 +817,8 @@ draknah drow conjurer teacher~
 &+mTall and slender, this handsome drow is quite the lady killer and is
 &+mknown for his wild drinking binges (perhaps related?).
 ~
-33597448 64 0 0 0 0 0 -1000 S
-PL 3 2048 -1
+33597448 64 0 0 0 0 0 0 -1000 S
+PL 3 2048 0 -1
 55 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -833,8 +833,8 @@ sodolum drow necromancer necro teacher~
 &+Lthose less knowledgeable than herself, her mind seems to be on
 &+Lbigger, better tasks.
 ~
-33597448 64 0 0 0 0 0 -1000 S
-PL 3 1024 -1
+33597448 64 0 0 0 0 0 0 -1000 S
+PL 3 1024 0 -1
 55 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -847,8 +847,8 @@ ofnil sorcerer drow teacher~
 &+gabout.  Wizened by his experiences, Ofnil is almost civil to even his
 &+Gmost dimwitted students.
 ~
-33597448 64 0 0 0 0 0 -1000 S
-PL 3 512 -1
+33597448 64 0 0 0 0 0 0 -1000 S
+PL 3 512 0 -1
 55 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -862,8 +862,8 @@ Ashrumite Village and Tharnadia, maybe you can help her find them.  Her
 dark hair has fallen from its braid and she has begun to look a bit
 disheveled.
 ~
-133128 768 0 134742144 0 0 0 0 S
-PG 0 2048 1
+133128 768 0 0 134742144 0 0 0 0 S
+PG 0 2048 0 1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -875,8 +875,8 @@ barbarian tribesman~
    &+BA stout barbarian man stands here scouting the
 &+Barea.
 ~
-8 0 0 0 0 0 0 0 S
-PB 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PB 0 0 0 -1
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -887,8 +887,8 @@ peasant~
 ~
    &+CA small stout man stands here trying to find his way home.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -899,8 +899,8 @@ gnome~
 ~
    &+RA small gnome stands here scouting for food.
 ~
-8 0 0 0 0 0 0 0 S
-PG 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PG 0 0 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -911,8 +911,8 @@ arcane initiate mage~
 ~
    &+bHands waving about, this mage practices his spells.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 512 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -923,8 +923,8 @@ centaur scout~
 ~
    &+gA centaur stands here looking angry.
 ~
-8 0 0 0 0 0 0 0 S
-CT 0 2 -1
+8 0 0 0 0 0 0 0 0 S
+CT 0 2 0 -1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -935,8 +935,8 @@ bard travelling~
 ~
    &+WA human bard stands here singing songs of triumph and glory.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 32768 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 32768 0 -1
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -948,8 +948,8 @@ working prostitute~
    &+mWearing torn and ripped clothes, this woman looks to
 &+mknow her profession well.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -961,8 +961,8 @@ kobold commoner~
    &+cThis kobold looks to have seen better days, dressed in
 &+ca ragged garb.
 ~
-8 0 0 0 0 0 0 0 S
-H 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+H 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -972,8 +972,8 @@ noble~
 &+CA nobleman travels home with good news.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -985,8 +985,8 @@ thief sneaky bandit small~
    &+LThis small evil looking man waits for you to look away so
 &+Lthat he may steal your coins.
 ~
-8 0 0 0 0 0 0 -1000 S
-PH 0 4096 -1
+8 0 0 0 0 0 0 0 -1000 S
+PH 0 4096 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -997,8 +997,8 @@ young cleric~
 ~
    &+cA young cleric stands here praying to his gods for protection.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 32 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 32 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1009,8 +1009,8 @@ stout dwarven warrior~
 ~
    &+YThis small dwarf looks around for thieves and invaders.
 ~
-8 0 0 0 0 0 0 0 S
-PM 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+PM 0 1 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1021,8 +1021,8 @@ human merchant~
 ~
    &+CThis small human offers you some basic supplies.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1033,8 +1033,8 @@ peasant farmer~
 ~
    &+yThis poor farmer wishes of days long past.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1046,8 +1046,8 @@ merchant chubby man~
   &+MThis chubby man is traveling, selling his goods to support
 &+Mhis family.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1058,8 +1058,8 @@ patrol guard~
 ~
    &+cThis fearsome warrior scouts for invaders.
 ~
-8 128 0 0 0 0 0 0 S
-PM 0 1 -1
+8 128 0 0 0 0 0 0 0 S
+PM 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1069,8 +1069,8 @@ young warrior~
 &+BA young warrior stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1080,8 +1080,8 @@ young necromancer~
 &+mA young necromancer stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 1024 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 1024 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1091,8 +1091,8 @@ young bard~
 &+gA young bard stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 32768 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 32768 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1102,8 +1102,8 @@ young conjurer~
 &+YA young conjurer stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 2048 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 2048 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1113,8 +1113,8 @@ young mercenary~
 &+yA young mercenary stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1124,8 +1124,8 @@ young paladin~
 &+WA young paladin stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 8 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 8 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1135,8 +1135,8 @@ young shaman~
 &+CA young shaman stands here practicing his skills
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 256 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 256 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1146,8 +1146,8 @@ young thief~
 &+RA young thief stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 4096 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 4096 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1157,8 +1157,8 @@ young assassin~
 &+rA young assassin stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 8192 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 8192 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1168,8 +1168,8 @@ young druid~
 &+gA young druid stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 128 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 128 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1179,8 +1179,8 @@ young anti-paladin anti paladin~
 &+LA young anti-paladin stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 16 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 16 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1190,8 +1190,8 @@ young ranger~
 &+GA young ranger stands here honing his skills.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 2 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 2 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1201,8 +1201,8 @@ hill giant~
 &+yA huge giant stands here wondering about.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-G 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+G 0 1 0 -1
 16 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1212,8 +1212,8 @@ mountain yeti~
 &+WA mountain yeti wonders about.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-HG 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+HG 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1223,8 +1223,8 @@ mountain dwarf small~
 &+YA small mountain dwarf wonders the area.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PM 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+PM 0 1 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1234,8 +1234,8 @@ small orc short~
 &+LA small orc wonders about the mountain side.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-HO 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+HO 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1245,8 +1245,8 @@ elven ranger~
 &+gA small elven ranger scouts the area.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PE 0 2 -1
+8 0 0 0 0 0 0 0 0 S
+PE 0 2 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1256,8 +1256,8 @@ ugly grell~
 &+yA ugly grell walks around here.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1267,8 +1267,8 @@ robin~
 &+rA robin flies around here.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1278,8 +1278,8 @@ small su-monster su monster~
 &+gA small&+r su-&+gmonster scouts the area.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-H 0 4096 -1
+8 0 0 0 0 0 0 0 0 S
+H 0 4096 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1289,8 +1289,8 @@ large black bear~
 &+LA large black bear roars at you.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 16 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1300,8 +1300,8 @@ mob unnamed~
 small deer
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1311,8 +1311,8 @@ orc~
 &+LA lone orc stands here waiting for backup.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-HO 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+HO 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1322,8 +1322,8 @@ hungry dog~
 &+yA hungry dog looks around for food.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1333,8 +1333,8 @@ large black wolf~
 &+LA large black wolf looks for its prey.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1344,8 +1344,8 @@ small black spider~
 &+LA small black spider rests here.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-AS 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+AS 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1355,8 +1355,8 @@ large egal~
 &+WA large eagle soars about above.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1366,8 +1366,8 @@ small fox~
 &+rA small fox runs around looking for scraps.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1377,8 +1377,8 @@ lost sheep~
 &+WA lost sheep has wondered away from the farm.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1388,8 +1388,8 @@ small squirrel~
 &+yA small squirrel walks about the plains.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1399,8 +1399,8 @@ mob unnamed~
 &+yA ox wonders around grazing on the plains.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1410,8 +1410,8 @@ wild horse~
 &+LA wild horse gallops about the area.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1421,8 +1421,8 @@ small raccoon~
 &+yA small raccoon forages for food.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1432,8 +1432,8 @@ young mare~
 &+LA young mare wonders about the area, grazing.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1443,8 +1443,8 @@ small lizard~
 &+yA small lizard scampers about.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1454,8 +1454,8 @@ snake~
 &+yA snake slithers around the desert.
 ~
 ~
-8 0 0 0 0 0 0 0 S
-RS 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+RS 0 0 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1466,8 +1466,8 @@ rabbit furry white~
 ~
 &+WThis is a small, white rabbit with very soft fur.&N
 ~
-72 0 0 0 0 0 0 200 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 200 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 1
@@ -1478,8 +1478,8 @@ squirrel brown~
 ~
 &+yThis is a tiny, brown squirrel with a bushy tail.&N
 ~
-72 0 0 0 0 0 0 200 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 200 S
+A 0 0 0 -1
 2 20 93 2d15+7 1d5+0
 0.0.0.0 259
 8 8 1
@@ -1490,8 +1490,8 @@ sparrow tiny bird~
 ~
 &+yThis is a very beautiful, tiny bird with brown body and wings.&N
 ~
-72 0 0 0 0 0 0 300 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 300 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 2
@@ -1502,8 +1502,8 @@ rodent small~
 ~
 &+yThis is a small, brown rodent that looks almost like a mouse.&N
 ~
-72 0 0 0 0 0 0 0 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 1 20 96 1d15+4 1d5+0
 0.0.0.0 129
 8 8 1
@@ -1514,8 +1514,8 @@ wolf white~
 ~
 &+WThis is a very beautiful, majestic looking wolf with snow white fur.&N
 ~
-72 1 0 0 0 0 0 -1000 S
-A 0 0 -1
+72 1 0 0 0 0 0 0 -1000 S
+A 0 0 0 -1
 8 18 74 8d18+28 2d3+1
 0.0.0.0 1036
 8 8 1
@@ -1526,8 +1526,8 @@ owl wise old~
 ~
 &+yThis is a very large owl with brown feathers and&N &+Ybright yellow eyes.&N
 ~
-72 0 0 0 0 0 0 500 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 500 S
+A 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 1
@@ -1538,8 +1538,8 @@ bandit sneaky~
 ~
 &+LThis is a small man dressed in black leather and a mask to hide his identity.
 ~
-2120 0 0 524288 0 0 0 -500 S
-H 0 4096 -1
+2120 0 0 0 524288 0 0 0 -500 S
+H 0 4096 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 8 8 1
@@ -1551,8 +1551,8 @@ gypsy wandering~
 &+LThis is an old, scruffy woman with strangly, grey hair.  She is trying to get
 &+Lyou to give her money to tell you your fortune.&N
 ~
-2120 0 0 0 0 0 0 0 S
-H 0 0 -1
+2120 0 0 0 0 0 0 0 0 S
+H 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 2.1.0.0 518
 8 8 1
@@ -1564,8 +1564,8 @@ A seasoned warrior is travelling here, looking for adventure.
 This is a scruffy human dressed in leather.  He looks like he has travelled a
 long way, and looks tired.
 ~
-2120 0 0 0 0 0 0 100 S
-H 0 1 -1
+2120 0 0 0 0 0 0 0 100 S
+H 0 1 0 -1
 6 18 80 6d21+33 2d3+1
 3.2.0.0 777
 8 8 1
@@ -1576,8 +1576,8 @@ A young cleric is here looking lost.
 ~
 He smiles at you and says, 'Do you know the way to the town of Verzanan?'.
 ~
-2056 0 0 0 0 0 0 500 S
-H 0 32 -1
+2056 0 0 0 0 0 0 0 500 S
+H 0 32 0 -1
 4 20 87 4d16+18 1d5+0
 2.1.0.0 518
 8 8 1
@@ -1588,8 +1588,8 @@ magician evil~
 ~
 &+LHe growls at you, 'What are you looking at?!?!?!'.&N
 ~
-72 0 0 0 0 0 0 -500 S
-H 0 2048 -1
+72 0 0 0 0 0 0 0 -500 S
+H 0 2048 0 -1
 4 20 87 4d12+14 1d5+0
 2.1.0.0 518
 8 8 1
@@ -1600,8 +1600,8 @@ A wise, old man is here telling stories of old.
 ~
 He says, 'Did I tell you the story about when I slayed a dragon bare-handed?'.
 ~
-2120 0 0 0 0 0 0 0 S
-H 0 0 -1
+2120 0 0 0 0 0 0 0 0 S
+H 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 2.1.0.0 388
 8 8 1
@@ -1612,8 +1612,8 @@ deer~
 ~
 &+yThis is a large, beautiful deer with soft brown and grey fur.&N
 ~
-72 0 0 0 0 0 0 300 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 300 S
+A 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 0.0.0.0 518
 8 8 1
@@ -1624,8 +1624,8 @@ fox grey small~
 ~
 &+LThis is a small fox with grey fur and small&N &+Wwhite blotches&N &+Laround its eyes.
 ~
-72 0 0 0 0 0 0 150 S
-A 0 0 -1
+72 0 0 0 0 0 0 0 150 S
+A 0 0 0 -1
 3 20 90 3d15+11 1d5+0
 0.0.0.0 388
 8 8 1
@@ -1636,8 +1636,8 @@ A merchant is travelling here, and selling his wares.
 ~
 This is a tall, human merchant trying to earn an honest living.
 ~
-2120 0 0 0 0 0 0 400 S
-H 0 0 -1
+2120 0 0 0 0 0 0 0 400 S
+H 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 2.1.0.0 518
 8 8 1
@@ -1648,8 +1648,8 @@ A &+yvillage poor man&N is here begging for money.
 ~
 He looks like he hasn't eaten in days. 'Please have pity on me!', he says.
 ~
-2056 0 0 0 0 0 0 300 S
-H 0 0 -1
+2056 0 0 0 0 0 0 0 300 S
+H 0 0 0 -1
 4 20 87 4d15+14 1d5+0
 2.1.0.0 518
 8 8 1
@@ -1663,8 +1663,8 @@ his master uses belts for a collar -- the normal dog collar type things
 just don't work since they're too small.  His teeth are sharp and pointed
 and his breath is worse than his bite is worse than his bark.
 ~
-10 1 0 0 0 0 0 0 S
-A 0 0 -1
+10 1 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 20 13 35 20d30+100 3d4+2
 0.0.0.0 9720
 8 8 1
@@ -1679,8 +1679,8 @@ giant hill~
 &+ytree, and some hides from animals or people he has killed during
 &+yhis journeys across the land.
 ~
-8 0 0 0 0 0 0 0 S
-G 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+G 0 1 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1695,8 +1695,8 @@ ranger elven~
 &+cand a shortsword.  He appears to go around the forest, visiting the
 &+cdruids and payign homage to the other rangers of the area.
 ~
-8 0 0 0 0 0 0 0 S
-PE 0 2 -1
+8 0 0 0 0 0 0 0 0 S
+PE 0 2 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1711,8 +1711,8 @@ orc raider~
 &+Lshady grove.  He appears to have many large scars from his
 &+Lencounters with illithids and the opposing villagers.
 ~
-8 64 0 0 0 0 0 -1000 S
-HO 0 1 -1
+8 64 0 0 0 0 0 0 -1000 S
+HO 0 1 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1728,8 +1728,8 @@ barbarian tribesman~
 &+Bto come closer south to look for new furs and food for him and his
 &+Bfollowers.
 ~
-8 0 0 0 0 0 0 1000 S
-PB 0 1 -1
+8 0 0 0 0 0 0 0 1000 S
+PB 0 1 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1740,8 +1740,8 @@ A filthy peasant wollows in its filth here.
 ~
   He looks like he hasn't been fed in days, which he probably hasn't.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1753,8 +1753,8 @@ gnome~
    This gnome has decided to leave his small house and travel to another
 town in search of adventure.
 ~
-8 0 0 0 0 0 0 0 S
-PG 0 512 -1
+8 0 0 0 0 0 0 0 0 S
+PG 0 512 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1768,8 +1768,8 @@ his previous master.  He seems enraged with a peculiar kind of bloodlust
 that only an elemental shows when he no longer is under the influence
 of a conjurer.
 ~
-8 1 0 0 0 0 0 0 S
-EE 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+EE 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1782,8 +1782,8 @@ elemental air~
 the area in a fierce wirlwind looking for his previous master.  He seems
 to have broken his charm that had summoned him to this plane.
 ~
-8 1 0 0 0 0 0 0 S
-EA 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+EA 0 1 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1796,8 +1796,8 @@ elemental water~
 fiercly ravages the country side looking for its former master, who's
 charm has failed.
 ~
-8 1 0 0 0 0 0 0 S
-EW 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+EW 0 1 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1811,8 +1811,8 @@ fire elemental~
 &+rside as it burns along here.  Its red hot flames stand at least
 &+rseven feet in the air, and it leaves a burn mark wherever it goes.
 ~
-8 1 0 0 0 0 0 0 S
-EF 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+EF 0 1 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1826,8 +1826,8 @@ rather lost.  It is a huge tentacled brain that wields many spears.
 Its body is rather slimy and seems very unhappy to be out in the
 wilderness, and would rather be back in its cave.
 ~
-8 1 0 16 0 0 0 0 S
-TK 0 1 -1
+8 1 0 0 16 0 0 0 0 S
+TK 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1840,8 +1840,8 @@ robin bird~
 &+rblack feathers to match.  It flies through the air here looking
 &+rfor fresh worms. It chirps as it flies buy.
 ~
-8 0 0 0 0 0 0 0 S
-B 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 0 0 -1
 2 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1854,8 +1854,8 @@ aarakocra~
 a human sized vulture with a huge beak and huge wings.  It has
 magenta colored feathers and seems to remain mostly in the mountains.
 ~
-8 1 0 0 0 0 0 0 S
-HF 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+HF 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1869,8 +1869,8 @@ civilized areas. Unlike most of the arcanes, this one is just an
 initiate and has not yet found his wealth in magical items and spelljamming.
 He wears some simple blue robes, and smiles whenever anyone comes near.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 512 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 512 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1884,8 +1884,8 @@ looking for various things to eat or maybe to start a nest.  It has long,
 toothy jaws, and huge gazing eyes that are rumored to even gaze into the
 Ethereal or Astral planes.
 ~
-8 0 0 0 0 0 0 0 S
-R 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+R 0 0 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1898,8 +1898,8 @@ bear~
 Standing on its hind legs, it might reach ten feet tall.  For the most part
 it sleeps a lot and scavenges the forest for things to eat.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1913,8 +1913,8 @@ brownie~
 &+yattired with bright garments.  It seems to have a few gold teeth and
 &+ymaybe even some golden clothing.
 ~
-8 0 0 0 0 0 0 0 S
-PF 0 4096 -1
+8 0 0 0 0 0 0 0 0 S
+PF 0 4096 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1928,8 +1928,8 @@ a good seven feet tall and can pick a fight with the best of them.  He
 appears to be roaming the countryside in search of merchants to loot or
 animals to catch.
 ~
-8 0 0 0 0 0 0 0 S
-PO 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+PO 0 1 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1942,8 +1942,8 @@ bulette~
 This thing is looked down upon by almost every form of life on the planet
 Duris, and a bulette hide can go a long way on the Ghore or Ugta markets.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1957,8 +1957,8 @@ to see who is romping through, however in this case, a centaur scout
 appears to have come out to see who is about and to see if they pose
 any threat to his glade or his family.
 ~
-8 640 0 0 0 0 0 1000 S
-CT 0 2 -1
+8 640 0 0 0 0 0 0 1000 S
+CT 0 2 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -1972,8 +1972,8 @@ looking for whomever and whatever it wants to eat.  It is about the size
 of a large chicken and has the head and body of a chicken with two bat-like
 wings, and a tail of a lizard, which has feathers at the end of it.
 ~
-8 1 0 0 0 0 0 0 S
-B 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+B 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -1987,8 +1987,8 @@ water, but appears to have come out to see who has come to feed it.  He
 has very large claws, and an even bigger set of teeth, along with a powerful
 tail that could take down some of the strongest ogres of the realm.
 ~
-8 1 0 0 0 0 0 0 S
-R 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+R 0 1 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2002,8 +2002,8 @@ normally they try to avoid human contact, however, this one has come out
 to see who is disturbing it.  Much like one of the great cats, this displacer
 beast has two huge tentacles growing from its shoulders.
 ~
-8 1 0 0 0 0 0 0 S
-A 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2017,8 +2017,8 @@ of Duris and roams the countryside gnawing at whatever corpse it can find
 and scavenging whatever it can.  It has huge vicious teeth and a rough
 coat.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 2 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2032,8 +2032,8 @@ wilderness here.  It looks like a huge lion body, with a torso of
 man and a huge cat like head.  It is normally seen with some kind of
 crude weapon and a shield.  It is much larger than any human.
 ~
-8 0 0 0 0 0 0 0 S
-G 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+G 0 1 0 -1
 8 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2047,8 +2047,8 @@ and muscular ape that roams the hill and mountains and most of the time
 the more colder of areas.  Mostly, these creatures will not attack
 humans or humanoids, but primarly prey on the herd animals of Duris.
 ~
-8 0 0 0 0 0 0 0 S
-G 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+G 0 1 0 -1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2061,8 +2061,8 @@ A lost wraith of some poor soul stands here.
 world in forever torment.  It appears to be in pain constantly and feeds
 off the life of others around it.
 ~
-8 1 0 0 0 0 0 -1000 S
-U 0 512 -1
+8 1 0 0 0 0 0 0 -1000 S
+U 0 512 0 -1
 14 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2075,8 +2075,8 @@ A lost zombie roams the hillside here.
 is and only knows that it won't be happy until he finds it again.  He
 wanders around aimlessly, hitting anyone he sees.
 ~
-8 1 0 0 0 0 0 -1000 S
-U 0 1 -1
+8 1 0 0 0 0 0 0 -1000 S
+U 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2090,8 +2090,8 @@ here, draining the blood of others and growing stronger.  He wears nothing
 but black, and hides out in caves in the mountains during the night.  He
 has huge fangs when he is fully ready to suck blood.
 ~
-8 0 0 0 0 0 0 0 S
-UV 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+UV 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2104,8 +2104,8 @@ wyvern~
 or people.  It looks like a minerature of a dragon, except a little
 fatter.  It has two horns and huge wings, along with a fearsome tail.
 ~
-8 1 0 0 0 0 0 0 S
-D 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+D 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2118,8 +2118,8 @@ wolf~
 &+Lthis one might be alone right now, his brothers and sisters will soon
 &+Lbe right behind him as the pack scavenges for more food.
 ~
-8 1 0 0 0 0 0 0 S
-PH 0 0 -1
+8 1 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2132,8 +2132,8 @@ wight~
 but as one gets closer, it is obvious it is a hideous form of undead
 that roams the more disgusting places of the earth.
 ~
-8 1 0 0 0 0 0 0 S
-U 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+U 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2148,8 +2148,8 @@ got too close to it.  Unicorns are just like normal horses except
 for a large shiny horn on their forehead.  It also has a silvery
 white coat.
 ~
-8 128 0 0 0 0 0 1000 S
-AE 0 1 -1
+8 128 0 0 0 0 0 0 1000 S
+AE 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2162,8 +2162,8 @@ bard~
 sings his songs to the people around him as he travels the world in
 search of the best audience.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 32768 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 32768 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2177,8 +2177,8 @@ has taken it upon herself to leave Vella's for a time and to go make
 money by herself a while.  She cat walks around here looking for the
 newest customer.  She isn't exactly unnatractive, but she seems dirty.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -2191,8 +2191,8 @@ A kobold commoner wanders about here.
 kind of a mission to trade the valuable ore that the kobold miners mine.
 He wears nothing but simple rags, and looks rather feeble.
 ~
-8 8 0 0 0 0 0 0 S
-H 0 1 -1
+8 8 0 0 0 0 0 0 0 S
+H 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2205,8 +2205,8 @@ su monster~
 savage animal.  It looks like a rather large monkey with an exceptionally
 large head and bloody claws.
 ~
-8 0 0 0 0 0 0 0 S
-H 0 4 -1
+8 0 0 0 0 0 0 0 0 S
+H 0 4 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2220,8 +2220,8 @@ are one of the many insects that one could encounter out in the
 wilderness.  It seems to be looking for someone to drain, or something
 to eat.
 ~
-8 1 0 0 0 0 0 0 S
-A 0 0 -1
+8 1 0 0 0 0 0 0 0 S
+A 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2235,8 +2235,8 @@ wilderness of Duris, creating their own societies.  They appear
 attired in very small sets of noblish clothes and usually wielding
 some sort of spear.
 ~
-8 0 0 0 0 0 0 0 S
-HF 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+HF 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2250,8 +2250,8 @@ He wears huge smelly hides and carries a big two-handed club.  He
 seems to have a clueless expression on his face, and normally
 communicates through obscene gestures and grunts.
 ~
-8 64 0 0 0 0 0 0 S
-PO 0 1 -1
+8 64 0 0 0 0 0 0 0 S
+PO 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2265,8 +2265,8 @@ capturing people and bringing them back to whoever pays the
 highest price.  He carries large amounts of ropes, throwing
 daggers, swords, and nets for capturing his bounties.
 ~
-8 0 0 0 0 0 0 0 S
-PB 0 16384 -1
+8 0 0 0 0 0 0 0 0 S
+PB 0 16384 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2279,8 +2279,8 @@ snake~
 &+glooking for small rodents or maybe a small animal to eat.  It
 &+ghas beautiful scales and slithers in an S formation.
 ~
-8 0 0 0 0 0 0 0 S
-RS 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+RS 0 1 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2293,8 +2293,8 @@ lamia~
 roams through the plains and desert, offten with the wemics.  It
 prefers to hang around in the ruined cities of Duris.
 ~
-8 1 0 0 0 0 0 0 S
-H 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+H 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -2308,8 +2308,8 @@ looks rather weird to most people.  It usually travells with followers
 that it has charmed.  It also carries with it some sort of container
 which to hold its magical set of pipes.
 ~
-8 0 0 0 0 0 0 0 S
-H 0 32768 -1
+8 0 0 0 0 0 0 0 0 S
+H 0 32768 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2322,8 +2322,8 @@ troll~
 against the good races of Duris.  He is equipped with little but
 a bone shard and a cowl.  He has many scars from his previous attempts.
 ~
-8 64 0 0 0 0 0 -1000 S
-PT 0 1 -1
+8 64 0 0 0 0 0 0 -1000 S
+PT 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2336,8 +2336,8 @@ spider~
 It is of normal size, and scurries away from someone when they
 come near to its web.
 ~
-136 0 0 0 0 0 0 0 S
-I 0 1 -1
+136 0 0 0 0 0 0 0 0 S
+I 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2351,8 +2351,8 @@ still on its mission against the good races of Duris.  He wears
 some thick magenta robes and hold a crystal ball. He also has a
 set of gold teeth.
 ~
-8 0 0 0 0 0 0 -1000 S
-PL 0 512 -1
+8 0 0 0 0 0 0 0 -1000 S
+PL 0 512 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2365,8 +2365,8 @@ sparrow~
 excitable.  It has brown feathers, with a set of white feathers
 on its underside.
 ~
-8 0 0 0 0 0 0 0 S
-B 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 1 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2378,8 +2378,8 @@ deer~
      Standing a good four feet in the air, this deer has a nice
 white tail and hops through the forest here.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2393,8 +2393,8 @@ has the inability to fly, either by an accident or just by nature.
 In either case, it spends its entire life on the ground, hiding
 and trying to avoid predators.
 ~
-8 0 0 0 0 0 0 0 S
-B 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 1 0 -1
 2 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2408,8 +2408,8 @@ bandit~
 &+Lobviously hasn't shaved in a while.  He has an eyepatch over his
 &+Lleft eye, with a large scar.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2422,8 +2422,8 @@ cleric~
 country for adventure.  He is dressed in white robes and holds
 a holy symbol high and proud.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 32 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 32 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2437,8 +2437,8 @@ dressed in ceremonial platmeail of Kimordril, sits here polishing
 his mithril shield and his mithril sword.  He also appears to have
 a silverstone hammer, just like General Kimordril.
 ~
-8 0 0 0 0 0 0 1000 S
-PM 0 1 -1
+8 0 0 0 0 0 0 0 1000 S
+PM 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2451,8 +2451,8 @@ firelizard lizard~
 fire.  It doesn't have much power, but it sure can start fires in the
 area. There is rumored to be a large naga that hunts this lizard.
 ~
-40 0 0 0 0 0 0 0 S
-D 0 512 -1
+40 0 0 0 0 0 0 0 0 S
+D 0 512 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2466,8 +2466,8 @@ the deepest and darkest parts of the forest.  It doesn't look too
 friendly, even to other snakes.  It seems larger than any other snake
 in the area as well.
 ~
-8 0 0 0 0 0 0 -1000 S
-RS 0 1 -1
+8 0 0 0 0 0 0 0 -1000 S
+RS 0 1 0 -1
 14 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2480,8 +2480,8 @@ eagle~
 appears to be on its way back to its nest.  In its large claws, it
 carries twigs and worms for its young ones.
 ~
-8 0 0 0 0 0 0 1000 S
-B 0 1 -1
+8 0 0 0 0 0 0 0 1000 S
+B 0 1 0 -1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2494,8 +2494,8 @@ bear~
 bigger than a brown bear and slightly smaller than a polar bear.
 It also has pitch-black fur, and a large pink tongue.
 ~
-8 1 0 0 0 0 0 0 S
-A 0 1 -1
+8 1 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2509,8 +2509,8 @@ the area, looking for all sorts of things to kill and eat.  He appears
 mostly harmless, but has a sharp set of teeth and claws to defend himself
 with if need be.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2524,8 +2524,8 @@ here frozen stiff out of fear that a fox or something might come along
 and take it and eat it.  It has rather nice fur for a sheep that has
 been sepereated from its herd.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 2 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2538,8 +2538,8 @@ dragonfly dragon~
 buzzes about frantically above the water, catching other insects and
 eating them.  It has a hard green exoskeleton.
 ~
-8 0 0 0 0 0 0 0 S
-I 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+I 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2552,8 +2552,8 @@ bat~
 and large ears.  Its fur is short and black.  For the most part,
 it looks like a big flying rat.
 ~
-8 0 0 0 0 0 0 0 S
-B 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+B 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2567,8 +2567,8 @@ several of the ideal items of the nearby lands to take to another part of
 the continent to sell for a prophit.  He doesn't appear to be very
 wealthy, but just trying to make a living for his family.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2581,8 +2581,8 @@ illithid~
 Astral plane, this mind flayer seems to be raiding the wilderness and
 draining the brains out of the peasants.
 ~
-8 1 0 0 0 0 0 -1000 S
-MF 0 4 -1
+8 1 0 0 0 0 0 0 -1000 S
+MF 0 4 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2595,8 +2595,8 @@ bluejay~
 &+bat home with nature.  It has a sharp golden beak and golden claws.
 &+bIt also has some lightly colored grey under side feathers.
 ~
-8 0 0 0 0 0 0 350 S
-B 0 1 -1
+8 0 0 0 0 0 0 0 350 S
+B 0 1 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2610,8 +2610,8 @@ walls of a nearby town.  It is rather large and has brown and black fur.
 In addition, it has a set of huge teeth and claws with a disgusting
 tail.  It is very unclean.
 ~
-8 0 0 0 0 0 0 -304 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 -304 S
+A 0 1 0 -1
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2625,8 +2625,8 @@ it is part of both it is outcast from both Shady Grove and Tharnadia.
 It looks rather sad that it is hated from both sides.  It looks a litte
 bit more orcish than human, and is wearing black armor.
 ~
-8 0 0 0 0 0 0 0 S
-HO 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+HO 0 1 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2639,8 +2639,8 @@ A small squirrel climbs a tree here.
 It doesn't look afraid of very many people due to the fact of the high
 population around this area.
 ~
-8 0 0 0 0 0 0 500 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 500 S
+A 0 1 0 -1
 9 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2653,8 +2653,8 @@ squirrel~
 like it, except it seems a little more playful and has brown fur
 instead of grey fur.
 ~
-8 0 0 0 0 0 0 585 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 585 S
+A 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2667,8 +2667,8 @@ buffalo~
 by, but will defend itself against any attacker.  It just sits around
 all day eating, sleeping, and going to the bathroom.
 ~
-8 0 0 0 0 0 0 300 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 300 S
+A 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2681,8 +2681,8 @@ An ox grazes on the grass in the area.
 its owner not far off. It has a big leather collar strapped around its
 neck, and a large plow pulling apartus strapped to its back.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2696,8 +2696,8 @@ He is wearing the traditional farmer's apparel and has a bandanna
 going across his forehead.  He holds a plow in his right hand and
 a whip in the left.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2711,8 +2711,8 @@ He isn't wearing any on body armor, most likely because it is impossible
 for such a creature to wear on body armor. However he is wielding several
 swords at once.
 ~
-8 0 0 16 0 0 0 -300 S
-TK 0 1 -1
+8 0 0 0 16 0 0 0 -300 S
+TK 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2725,8 +2725,8 @@ A merchant from another town is here trying to sell his warez.
 clothing unfamiliar to these parts. He brings with him spices and rare
 clothing to try and sell in the local markets.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2739,8 +2739,8 @@ horse wild~
 It grazes here peaceful with its herd.  It has long dark brown hair and
 is rather smelly.
 ~
-8 0 0 0 0 0 0 0 S
-AE 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+AE 0 1 0 -1
 25 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2754,8 +2754,8 @@ by climbing trees in this area and looking for bugs and plants to
 eat.  He has sharp claws and even sharper teeth to defend anyone
 that would disturb him.
 ~
-8 0 0 0 0 0 0 200 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 200 S
+A 0 1 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2768,8 +2768,8 @@ cow~
      a coat and stands around here all day grazing under the
      supervision of his master.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 6 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2783,8 +2783,8 @@ probably only a few weeks old.  It has short brown
 hair and long legs.  It has a golden brown tail that
 swats at the flies that come by
 ~
-8 0 0 0 0 0 0 300 S
-AE 0 1 -1
+8 0 0 0 0 0 0 0 300 S
+AE 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -2798,8 +2798,8 @@ white with huge beautiful spread wings
 that cast a big shadow on the ground as
 it flies by overhead.
 ~
-8 0 0 0 0 0 0 1000 S
-B 0 1 -1
+8 0 0 0 0 0 0 0 1000 S
+B 0 1 0 -1
 13 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2813,8 +2813,8 @@ A row of spikes run down his back and down his tail.
 He probably weighs a good fifty pounds and is almost
 four feet long!
 ~
-8 0 0 0 0 0 0 250 S
-R 0 1 -1
+8 0 0 0 0 0 0 0 250 S
+R 0 1 0 -1
 11 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2829,8 +2829,8 @@ trates of a normal lizard except
 that he stands upright and has a
 thumb and hands.
 ~
-8 0 0 0 0 0 0 -500 S
-H 0 1 -1
+8 0 0 0 0 0 0 0 -500 S
+H 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2844,8 +2844,8 @@ and appears quite wimpy in appearence.  It seems that
 the town has started to recruit the peasant farmers
 for their protection.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 4 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2858,8 +2858,8 @@ warrior young~
  warrior doesn't look very tough compared to some of the Legends
  that are spread around Duris of great warriors.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2873,8 +2873,8 @@ left on the world of Duris and is garnished in very simple robes.
 He sits here meditating and pondering on what adventure to go on
 next.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 64 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 64 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2887,8 +2887,8 @@ necromancer necro young~
 is wandering around the wilderness dressed in his robes trying
 to raise a corpse or two.
 ~
-8 0 0 0 0 0 0 -1000 S
-PH 0 1024 -1
+8 0 0 0 0 0 0 0 -1000 S
+PH 0 1024 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2901,8 +2901,8 @@ bard young~
 singing alloud for all of Duris to hear. She has long golden
 hair and is wearing some bright clothes from woodseer.
 ~
-8 0 0 0 0 0 0 1000 S
-PH 0 32768 -1
+8 0 0 0 0 0 0 0 1000 S
+PH 0 32768 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -2915,8 +2915,8 @@ conjurer young~
 finished his begining apprenticeship and is trying to
 raise a few elemental of his own.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 2048 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 2048 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2930,8 +2930,8 @@ he intently searches for the tracks of his very
 first victim.  He appears to be a rather young
 lad from one of the surrounding villages.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 16384 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2944,8 +2944,8 @@ paladin young~
 who probably just came from his temple is standing
 here trying to summon his very first ever warhorse.
 ~
-8 0 0 0 0 0 0 1000 S
-PH 0 8 -1
+8 0 0 0 0 0 0 0 1000 S
+PH 0 8 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -2958,8 +2958,8 @@ shaman~
 apprenticeship of being a shaman, and has her first set
 of totems out and ready to invoke the spirit.
 ~
-8 0 0 0 0 0 0 -1000 S
-PB 0 256 -1
+8 0 0 0 0 0 0 0 -1000 S
+PB 0 256 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -2972,8 +2972,8 @@ thief~
 young lad looks like just like one of the normal
 peasants of one of the nearby villages.
 ~
-8 0 0 0 0 0 0 -1000 S
-PH 0 4096 -1
+8 0 0 0 0 0 0 0 -1000 S
+PH 0 4096 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -2987,8 +2987,8 @@ dagger that he is trying to conceal, but isn't doing
 a very good job.  Truthfully, the only thing he has
 killed so far was a cow.
 ~
-8 0 0 0 0 0 0 -1000 S
-PH 0 8192 -1
+8 0 0 0 0 0 0 0 -1000 S
+PH 0 8192 0 -1
 1 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3002,8 +3002,8 @@ druid sits here communing with nature. He
 has a piece of holly which he holds up as his
 holy symbol.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 128 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 128 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3017,8 +3017,8 @@ quality, this young anti-paladin rides his
 first summoned nightmare here, and is looking
 for a paladin to smight.
 ~
-8 0 0 0 0 0 0 -1000 S
-PH 0 16 -1
+8 0 0 0 0 0 0 0 -1000 S
+PH 0 16 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3033,8 +3033,8 @@ of track.  Unfortunately, he isn't having
 very much luck as he can only barely
 track a cow.
 ~
-8 0 0 0 0 0 0 1000 S
-PH 0 2 -1
+8 0 0 0 0 0 0 0 1000 S
+PH 0 2 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -3047,8 +3047,8 @@ rodent small~
 is, but as it appears, it is just your average rodent with
 big teeth and brown fur.
 ~
-8 0 0 0 0 0 0 0 S
-A 0 1 -1
+8 0 0 0 0 0 0 0 0 S
+A 0 1 0 -1
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3063,8 +3063,8 @@ from his forehead down the left side of his face
 and all the way down his neck.  He has a tattoo
 of what appears to be a bear on his arm.
 ~
-8 0 0 0 0 0 0 -1000 S
-H 0 16384 -1
+8 0 0 0 0 0 0 0 -1000 S
+H 0 16384 0 -1
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3078,8 +3078,8 @@ a hard day's work and is completely and
 totally exhausted.  It's a wonder if this
 peasant will just collapse right here.
 ~
-8 0 0 0 0 0 0 0 S
-PH 0 0 -1
+8 0 0 0 0 0 0 0 0 S
+PH 0 0 0 -1
 13 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -3093,8 +3093,8 @@ under side.  He wades through the marshy
 land here looking for bugs or small fish
 to eat.
 ~
-8 0 0 0 0 0 0 300 S
-R 0 1 -1
+8 0 0 0 0 0 0 0 300 S
+R 0 1 0 -1
 13 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3107,8 +3107,8 @@ ogre half half-ogre~
 captured slave.  He is neither accepted in Faang or Tharnadia, but
 is banished to the wilderness forever.
 ~
-8 0 0 0 0 0 0 -1000 S
-PO 0 1 -1
+8 0 0 0 0 0 0 0 -1000 S
+PO 0 1 0 -1
 13 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3120,8 +3120,8 @@ kobold commoner~
    &+cThis kobold looks to have seen better days, dressed in
 &+ca ragged garb.
 ~
-2056 1 0 33554688 0 0 0 0 S
-H 0 1 -1
+2056 1 0 0 33554688 0 0 0 0 S
+H 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -3131,8 +3131,8 @@ small orc short~
 &+LA small orc wonders about the mountain side.
 ~
 ~
-2056 1 0 33554688 0 0 0 0 S
-HO 0 1 -1
+2056 1 0 0 33554688 0 0 0 0 S
+HO 0 1 0 -1
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3142,8 +3142,8 @@ orc~
 &+LA lone orc stands here waiting for backup.
 ~
 ~
-8 1 0 33554688 0 0 0 0 S
-HO 0 1 -1
+8 1 0 0 33554688 0 0 0 0 S
+HO 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3158,8 +3158,8 @@ orc raider~
 &+Lshady grove.  He appears to have many large scars from his
 &+Lencounters with illithids and the opposing villagers.
 ~
-8 64 0 33554688 0 0 0 -1000 S
-HO 0 1 -1
+8 64 0 0 33554688 0 0 0 -1000 S
+HO 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -3173,8 +3173,8 @@ his previous master.  He seems enraged with a peculiar kind of bloodlust
 that only an elemental shows when he no longer is under the influence
 of a conjurer.
 ~
-2056 1 0 33554816 0 0 0 0 S
-EE 0 1 -1
+2056 1 0 0 33554816 0 0 0 0 S
+EE 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3187,8 +3187,8 @@ elemental air~
 the area in a fierce wirlwind looking for his previous master.  He seems
 to have broken his charm that had summoned him to this plane.
 ~
-133128 1 0 167772426 0 0 0 0 S
-EA 0 1 -1
+133128 1 0 0 167772426 0 0 0 0 S
+EA 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3201,8 +3201,8 @@ elemental water~
 fiercly ravages the country side looking for its former master, who's
 charm has failed.
 ~
-264200 1 0 33556736 0 0 0 0 S
-EW 0 1 -1
+264200 1 0 0 33556736 0 0 0 0 S
+EW 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3216,8 +3216,8 @@ fire elemental~
 &+rside as it burns along here.  Its red hot flames stand at least
 &+rseven feet in the air, and it leaves a burn mark wherever it goes.
 ~
-2056 1 0 570425600 1 0 0 0 S
-EF 0 1 -1
+2056 1 0 0 570425600 1 0 0 0 S
+EF 0 1 0 -1
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3230,8 +3230,8 @@ A lost wraith of some poor soul stands here.
 world in forever torment.  It appears to be in pain constantly and feeds
 off the life of others around it.
 ~
-133128 1 0 134217992 0 0 0 -1000 S
-U 0 512 -1
+133128 1 0 0 134217992 0 0 0 -1000 S
+U 0 512 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3244,8 +3244,8 @@ A lost zombie roams the hillside here.
 is and only knows that it won't be happy until he finds it again.  He
 wanders around aimlessly, hitting anyone he sees.
 ~
-33556488 32 0 0 0 0 0 -1000 S
-U 0 1 -1
+33556488 32 0 0 0 0 0 0 -1000 S
+U 0 1 0 -1
 17 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3259,8 +3259,8 @@ here, draining the blood of others and growing stronger.  He wears nothing
 but black, and hides out in caves in the mountains during the night.  He
 has huge fangs when he is fully ready to suck blood.
 ~
-133128 1 0 167772424 262144 0 0 0 S
-UV 0 1 -1
+133128 1 0 0 167772424 262144 0 0 0 S
+UV 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3274,8 +3274,8 @@ He wears huge smelly hides and carries a big two-handed club.  He
 seems to have a clueless expression on his face, and normally
 communicates through obscene gestures and grunts.
 ~
-2056 1 0 33554688 0 0 0 0 S
-PO 0 1 -1
+2056 1 0 0 33554688 0 0 0 0 S
+PO 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3288,8 +3288,8 @@ troll~
 against the good races of Duris.  He is equipped with little but
 a bone shard and a cowl.  He has many scars from his previous attempts.
 ~
-2056 1 0 33554688 0 0 0 -1000 S
-PT 0 1 -1
+2056 1 0 0 33554688 0 0 0 -1000 S
+PT 0 1 0 -1
 19 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3303,8 +3303,8 @@ still on its mission agains the good races of Duris.  He wears
 some thick magenta robes and hold a crystal ball. He also has a
 set of gold teeth.
 ~
-2056 1 0 167772424 0 0 0 -1000 S
-PL 0 512 -1
+2056 1 0 0 167772424 0 0 0 -1000 S
+PL 0 512 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -3317,8 +3317,8 @@ bat~
 and large ears.  Its fur is short and black.  For the most part,
 it looks like a big flying rat.
 ~
-131080 1 0 167772416 0 0 0 0 S
-B 0 1 -1
+131080 1 0 0 167772416 0 0 0 0 S
+B 0 1 0 -1
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3331,8 +3331,8 @@ illithid~
 Astral plane, this mind flayer seems to be raiding the wilderness and
 draining the brains out of the peasants.
 ~
-2056 1 0 167772424 0 0 0 -1000 S
-MF 0 4 -1
+2056 1 0 0 167772424 0 0 0 -1000 S
+MF 0 4 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3342,8 +3342,8 @@ hook horror~
 &+yA hook horror stands here.&N
 ~
 ~
-2056 1 0 33554688 0 0 0 0 S
-H 0 1 -1
+2056 1 0 0 33554688 0 0 0 0 S
+H 0 1 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3353,8 +3353,8 @@ lizard large~
 &+GA large lizard roams here&N
 ~
 ~
-134217736 64 0 34079008 0 0 0 0 S
-R 0 0 4
+134217736 64 0 0 34079008 0 0 0 0 S
+R 0 0 0 4
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3364,8 +3364,8 @@ roper~
 &+gA roper stands here, looking for food&N
 ~
 ~
-2056 1 0 33554696 0 0 0 0 S
-TK 0 1 -1
+2056 1 0 0 33554696 0 0 0 0 S
+TK 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3375,8 +3375,8 @@ duergar small~
 &+rA small duergar stands here&N
 ~
 ~
-2056 1 0 35127552 0 0 0 0 S
-PD 0 32 -1
+2056 1 0 0 35127552 0 0 0 0 S
+PD 0 32 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3386,8 +3386,8 @@ drow warrior~
 &+mA drow warrior stands here&N
 ~
 ~
-2056 1 0 100663560 0 0 0 0 S
-PL 0 1 -1
+2056 1 0 0 100663560 0 0 0 0 S
+PL 0 1 0 -1
 35 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3397,8 +3397,8 @@ troll angry~
 &+GAn angry troll stands here&N
 ~
 ~
-2056 1 0 33554688 0 0 0 0 S
-PT 0 1 -1
+2056 1 0 0 33554688 0 0 0 0 S
+PT 0 1 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3408,8 +3408,8 @@ dryder~
 &+BA dryder stands here&N
 ~
 ~
-1073743880 1 0 33554704 0 0 0 0 S
-PL 0 16384 -1
+1073743880 1 0 0 33554704 0 0 0 0 S
+PL 0 16384 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3419,8 +3419,8 @@ xorn~
 &+yA xorn stands here, sniffing the earth&N
 ~
 ~
-2056 1 0 33554816 0 0 0 0 S
-EE 0 1 -1
+2056 1 0 0 33554816 0 0 0 0 S
+EE 0 1 0 -1
 38 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3430,8 +3430,8 @@ githyanki~
 &+gA githyanki stands here&N
 ~
 ~
-133128 1 0 167772416 0 0 0 0 S
-GI 0 1024 -1
+133128 1 0 0 167772416 0 0 0 0 S
+GI 0 1024 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3441,8 +3441,8 @@ githyanki warrior~
 &+gA githyanki warrior stands here&N
 ~
 ~
-2056 1 0 33554696 0 0 0 -1000 S
-GI 0 16 -1
+2056 1 0 0 33554696 0 0 0 -1000 S
+GI 0 16 0 -1
 36 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3452,8 +3452,8 @@ fire lizard~
 &+fA fire lizard roams around here.&N
 ~
 ~
-2056 1 0 35127552 1 0 0 0 S
-R 0 0 -1
+2056 1 0 0 35127552 1 0 0 0 S
+R 0 0 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3463,8 +3463,8 @@ roth large~
 &+YA large rothe is grazing here&N
 ~
 ~
-134217736 0 0 33554688 0 0 0 0 S
-AE 0 0 -1
+134217736 0 0 0 33554688 0 0 0 0 S
+AE 0 0 0 -1
 21 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3474,8 +3474,8 @@ spider large~
 &+LA large spider is making is web here&N
 ~
 ~
-1073741832 1 0 35127584 0 0 0 0 S
-AS 0 0 4
+1073741832 1 0 0 35127584 0 0 0 0 S
+AS 0 0 0 4
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3485,8 +3485,8 @@ orc cloaked~
 &+LA cloaked orc stands here&N
 ~
 ~
-2056 1 0 33554696 0 0 0 0 S
-HO 0 64 -1
+2056 1 0 0 33554696 0 0 0 0 S
+HO 0 64 0 -1
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3496,8 +3496,8 @@ snake large~
 &+gA large snake hiss at you&N
 ~
 ~
-2056 1 0 34078976 0 0 0 0 S
-RS 0 0 -1
+2056 1 0 0 34078976 0 0 0 0 S
+RS 0 0 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3510,8 +3510,8 @@ It stands no taller than two feet in height, and looks extremely nimble.
 They resemble small elves with brown hair and bright blue eyes, which
 twinkle with mischief.
 ~
-205 0 0 524304 0 0 0 900 S
-H 0 0 -1
+205 0 0 0 524304 0 0 0 900 S
+H 0 0 0 -1
 15 15 51 15d23+60 2d5+2
 7.6.2.0 7290
 8 8 0
@@ -3524,8 +3524,8 @@ It stands about a foot high and is extremely agile. Its long brown hair
 and flashing blue eyes are filled with fun and trouble. It laughs and
 plays and dances about the area with not a care in the world..
 ~
-205 0 0 524304 0 0 0 1000 S
-H 0 0 -1
+205 0 0 0 524304 0 0 0 1000 S
+H 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 8 8 0
@@ -3538,8 +3538,8 @@ His features and dress are indicative of authority and importance amongst
 the brownie community, and streaks of grey line his deep brown hair. He
 has stunningly blue eyes that are filled with both intelligence and mischief.
 ~
-131276 0 0 786448 0 0 0 900 S
-H 0 2048 -1
+131276 0 0 0 786448 0 0 0 900 S
+H 0 2048 0 -1
 20 13 35 20d24+100 3d4+2
 0.9.3.0 9720
 8 8 0
@@ -3553,8 +3553,8 @@ brown hair and deep blue eyes that hold an ancient wisdom. His size and
 age make him look extremely fragile. Even though he is old, he still looks
 extremely quick and agile.
 ~
-143 0 0 1835226 0 0 0 1000 S
-H 0 32 -1
+143 0 0 0 1835226 0 0 0 1000 S
+H 0 32 0 -1
 55 -5 -111 55d121+4620 7d6+30
 0.2.7.6 222750
 8 8 1
@@ -3564,8 +3564,8 @@ Scarlock~
 Scarlock the assassin, appears to be looking for someone.
 ~
 ~
-33560778 1 0 1572880 0 0 0 -1000 S
-PH 0 8192 -1
+33560778 1 0 0 1572880 0 0 0 -1000 S
+PH 0 8192 0 -1
 50 -3 -95 50d100+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -3580,8 +3580,8 @@ male leucrotta~
 &+Lbadger, with sharp jagged bony ridges used as teeth.  Its eyes glow with a
 &+Lferal red light.&n
 ~
-1073743944 1 0 33554472 0 0 0 -500 S
-A 0 0 -1
+1073743944 1 0 0 33554472 0 0 0 -500 S
+A 0 0 0 -1
 25 15 51 15d23+60 2d5+2
 0.0.0.0 7290
 8 8 1
@@ -3596,8 +3596,8 @@ dragon red chromatic~
 &+Rnostrels and one can hear the rumble deep within its body of the fiery flames
 &+Rthat are given birth there.
 ~
-33622126 1 0 33554488 12504 0 0 -1000 S
-D 0 1 -1
+33622126 1 0 0 33554488 12504 0 0 -1000 S
+D 0 1 0 -1
 60 -10 -152 60d143+10900 7d6+35
 6.6.9.22 486000
 8 8 1
@@ -3612,8 +3612,8 @@ trates of a normal lizard except
 that he stands upright and has a
 thumb and hands.
 ~
-72 1 0 0 0 0 0 -500 S
-H 0 1 -1
+72 1 0 0 0 0 0 0 -500 S
+H 0 1 0 -1
 18 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3624,8 +3624,8 @@ a &+Lgiant spider&n~
 ~
    This spider is almost ten feet across, with sword sized fangs.
 ~
-1073741896 1 0 33554440 0 0 0 0 S
-AS 0 0 -1
+1073741896 1 0 0 33554440 0 0 0 0 S
+AS 0 0 0 -1
 28 18 74 8d18+28 2d3+1
 0.0.0.0 1036
 8 8 0
@@ -3635,8 +3635,8 @@ roving hellbeast hell beast~
 &+rA roving hell&+Lbeast&+r travels the wasteland in a pack.&n
 ~
 ~
-1073743912 1 0 0 1 0 0 -1000 S
-AC 0 1 -1
+1073743912 1 0 0 0 1 0 0 -1000 S
+AC 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3646,8 +3646,8 @@ roving hellbeast hell beast~
 &+rA roving hell&+Lbeast&+r travels the wasteland in a pack.&n
 ~
 ~
-1073743914 1 0 0 1 0 0 -1000 S
-AC 0 1 -1
+1073743914 1 0 0 0 1 0 0 -1000 S
+AC 0 1 0 -1
 30 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3657,8 +3657,8 @@ magnus archlich arch lich~
 &+LThe archlich viscount, Magnus, travels the wastelands.&n
 ~
 ~
-1074174024 0 0 402653212 262144 0 0 -1000 S
-U 0 512 4
+1074174024 0 0 0 402653212 262144 0 0 -1000 S
+U 0 512 0 4
 55 170 -100 10d10+25000 5d10+20
 0.0.0.100 150000
 8 8 0
@@ -3668,8 +3668,8 @@ high magus styge~
 &+YThe high magus, Styge, stands here.&n
 ~
 ~
-1074174024 0 0 402653212 262144 0 0 -1000 S
-U 0 2048 4
+1074174024 0 0 0 402653212 262144 0 0 -1000 S
+U 0 2048 0 4
 55 170 -100 10d10+25000 5d10+20
 0.0.0.100 150000
 8 8 0
@@ -3679,8 +3679,8 @@ skeleton skeletal knight~
 &+WA dangerous looking skeleton shambles about here.&n
 ~
 ~
-1074141257 1 0 402653240 1 0 0 -1000 S
-U 0 1 5
+1074141257 1 0 0 402653240 1 0 0 -1000 S
+U 0 1 0 5
 55 0 0 10d10+25000 5d10+30
 0.0.0.100 0
 8 8 0
@@ -3690,8 +3690,8 @@ powerful figure lich~
 &+LA powerful looking figure wanders the land.&n
 ~
 ~
-1074141257 1 0 402653212 262144 0 0 -1000 S
-U 0 512 4
+1074141257 1 0 0 402653212 262144 0 0 -1000 S
+U 0 512 0 4
 50 170 -100 10d10+25000 5d10+20
 0.0.0.100 150000
 8 8 0
@@ -3701,8 +3701,8 @@ shade form~
 &+LAn outline of a humanoid form can barely be seen here.&n
 ~
 ~
-1074137417 1 0 403177500 0 69206016 0 -1000 S
-U 0 8192 4
+1074137417 1 0 0 403177500 0 69206016 0 -1000 S
+U 0 8192 0 4
 50 170 -100 10d10+20000 5d10+30
 0.0.0.100 200000
 8 8 0
@@ -3712,8 +3712,8 @@ charon boatman~
 &+WCharon, the boatman of the &+LRiver Styx&+W awaits his cargo.&n
 ~
 ~
-34043979 0 0 402653228 262144 67108864 0 0 S
-U 0 20 3
+34043979 0 0 0 402653228 262144 67108864 0 0 S
+U 0 20 0 3
 60 190 -100 10d10+29000 10d10+50
 0.0.0.0 1000000
 8 8 0
@@ -3723,8 +3723,8 @@ undead behemoth~
 &+LA monsterous undead behemoth prowls the wastelands.&n
 ~
 ~
-1107695692 1 0 296 2 0 0 -1000 S
-AC 0 1 5
+1107695692 1 0 0 296 2 0 0 -1000 S
+AC 0 1 0 5
 60 0 0 6d143+9900 6d6+30
 0.0.0.0 0
 8 8 0
@@ -3734,8 +3734,8 @@ zombie warrior~
 &+LA large zombie shambles around looking for things to kill!&N
 ~
 ~
-1107695692 1 0 296 2 0 0 -1000 S
-U 0 16384 5
+1107695692 1 0 0 296 2 0 0 -1000 S
+U 0 16384 0 5
 60 0 0 6d143+9900 6d6+30
 0.0.0.0 0
 8 8 0
@@ -3745,8 +3745,8 @@ ustrel wight warrior~
 &+rA mighty &+RWight&+r warlord wanders the wasteland.&n
 ~
 ~
-1073776648 0 0 0 0 0 0 -1000 S
-UW 0 1 -1
+1073776648 0 0 0 0 0 0 0 -1000 S
+UW 0 1 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -3756,8 +3756,8 @@ dracolich~
 &+LA monsterous dracolich flies across the land of undeath.&n
 ~
 ~
-1073874952 1 0 0 0 0 0 -1000 S
-UD 0 1 -1
+1073874952 1 0 0 0 0 0 0 -1000 S
+UD 0 1 0 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3767,8 +3767,8 @@ bog wyrm~
 &+gA hideous bog wyrm hunts through the marshes.&n
 ~
 ~
-1073747976 1 0 0 0 0 0 -1000 S
-DK 0 1 -1
+1073747976 1 0 0 0 0 0 0 -1000 S
+DK 0 1 0 -1
 58 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -3781,8 +3781,8 @@ drider~
 &+Ltall.  The spider body is black, with eight large spindly legs.  It is a
 &+Lrevolting looking creature, with puffed out cheeks and glowing red eyes.
 ~
-78 1 0 56 2 0 0 -1000 S
-H 0 0 -1
+78 1 0 0 56 2 0 0 -1000 S
+H 0 0 0 -1
 23 11 26 23d40+184 3d5+3
 5.1.6.0 20493
 8 8 0
@@ -3794,8 +3794,8 @@ zorta drow cleric~
 &+LThis drow cleric, older then most seems to be REALLY upset
 &+Lthat someone has disturbed his eternal resting place.
 ~
-33564683 0 0 65784 14537 0 0 -1000 S
-PE 0 32 -1
+33564683 0 0 0 65784 14537 0 0 -1000 S
+PE 0 32 0 -1
 60 -10 -132 60d132+6240 7d6+35
 6.6.9.7 243000
 8 8 2
@@ -3807,8 +3807,8 @@ kuo-toan kuo toan man guardian~
 This kuo-toan is quite large, standing about eight feet tall.  It has a
 humanoid body with a frog's head, and dark green scaly skin.
 ~
-67371022 1 0 33554600 0 0 0 -850 S
-H 0 1 -1
+67371022 1 0 0 33554600 0 0 0 -850 S
+H 0 1 0 -1
 50 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 0
@@ -3821,8 +3821,8 @@ drider~
 &+Ltall.  The spider body is black, with eight large spindly legs.  It is a
 &+Lrevolting looking creature, with puffed out cheeks and glowing red eyes.
 ~
-76 1 0 56 2 0 0 -1000 S
-H 0 1 -1
+76 1 0 0 56 2 0 0 -1000 S
+H 0 1 0 -1
 30 11 26 23d40+184 3d5+3
 5.1.6.0 20493
 8 8 0
@@ -3835,8 +3835,8 @@ The hook horror resembles a huge bear that stands upright, except that this
 one has a bony exo-skeleton.  It has two large pinchers for grabbing and
 crushing prey with.
 ~
-2120 1 0 33554432 0 0 0 0 S
-A 0 16384 -1
+2120 1 0 0 33554432 0 0 0 0 S
+A 0 16384 0 -1
 15 -3 -78 48d119+2640 6d6+25
 0.0.0.0 116640
 8 8 0
@@ -3849,8 +3849,8 @@ lizard massive reptile~
 &+rquickly. The thick scales on its hide must be very hard to penetrate
 &+rand the sharp claws on it make attacking this creature very dangerous.
 ~
-2120 0 0 0 0 0 0 0 S
-R 0 1 -1
+2120 0 0 0 0 0 0 0 0 S
+R 0 1 0 -1
 50 8 7 29d55+319 3d6+4
 0.0.0.0 25839
 8 8 0
@@ -3863,8 +3863,8 @@ lizard massive reptile~
 &+Land the sharp claws on it make attacking this creature very dangerous.
 &+LThis could only be the king of its kind.
 ~
-67110984 0 0 24 0 0 0 0 S
-R 0 1 -1
+67110984 0 0 0 24 0 0 0 0 S
+R 0 1 0 -1
 60 8 7 29d55+319 3d6+4
 0.0.0.0 25839
 8 8 0
@@ -3877,8 +3877,8 @@ xorn~
 &+Lmouth at its top.  The eyes placed around its top gives the xorn 360 degree
 &+Lvision.  Its skin resembles a turtles shell, except that it is stone.
 ~
-2058 1 0 168 0 0 0 -350 S
-EE 0 1 -1
+2058 1 0 0 168 0 0 0 -350 S
+EE 0 1 0 -1
 58 15 41 15d27+90 2d5+2
 0.0.0.0 7290
 8 8 0
@@ -3890,8 +3890,8 @@ water weird~
 &+bThe water weird resembles a large snake made from pure water, rising up
 &+bout of the river about five feet into the air.
 ~
-262216 1 0 1048616 0 0 0 -300 S
-EW 0 0 -1
+262216 1 0 0 1048616 0 0 0 -300 S
+EW 0 0 0 -1
 35 11 9 25d40+200 3d5+3
 0.0.0.0 22275
 8 8 0
@@ -3904,8 +3904,8 @@ shambling mound~
 &+gvegetation.  Its shape is vaguely humanoid, with great arms the size of
 &+gtree trunks for striking out at prey.
 ~
-76 1 0 33554472 0 0 0 -500 S
-VT 0 1 -1
+76 1 0 0 33554472 0 0 0 -500 S
+VT 0 1 0 -1
 45 -1 -69 45d107+2475 6d6+12
 0.0.0.0 109350
 8 8 0
@@ -3919,8 +3919,8 @@ drow cleric~
 &+Lmuscle in his arms and the many scars on his face indicate that this one knows
 &+Lhow to fight, and pray.
 ~
-2248 1 0 16 2 0 0 -1000 S
-PL 0 32 -1
+2248 1 0 0 16 2 0 0 -1000 S
+PL 0 32 0 -1
 50 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -3932,8 +3932,8 @@ rock worm~
 The rock worm is big, being about ten feet in length and at least a foot
 thick.
 ~
-72 1 0 33554472 0 0 0 -500 S
-A 0 0 -1
+72 1 0 0 33554472 0 0 0 -500 S
+A 0 0 0 -1
 35 6 -22 35d70+525 4d6+7
 0.0.0.0 45360
 8 8 0
@@ -3945,8 +3945,8 @@ human rogue~
 The rogue is dressed in black with long brown hair and wicked looking black
 pupiless eyes.  His skin is very pale and marked with dozens of scars.
 ~
-2062 1 0 524288 0 0 0 -1000 S
-H 0 8192 -1
+2062 1 0 0 524288 0 0 0 -1000 S
+H 0 8192 0 -1
 44 -1 -65 44d72+1892 6d6+12
 4.9.8.3 106920
 8 8 0
@@ -3959,8 +3959,8 @@ The spider is about two feet tall, with a rounded back that looks suited for
 riding on.  The spider has strap marks across its belly, indicating that is
 probably used for riding by small humanoids.
 ~
-10 1 0 33554464 0 0 0 -800 S
-I 0 0 -1
+10 1 0 0 33554464 0 0 0 -800 S
+I 0 0 0 -1
 18 13 42 18d30+90 3d4+2
 0.0.0.0 8748
 8 8 0
@@ -3973,8 +3973,8 @@ The worm is mammoth, standing twenty feet high and eighty feet long.  With a
 great maw of razor sharp teeth, it looks as though this beast could swallow
 just about anything.
 ~
-1082392653 1 0 33554728 0 0 0 -1000 S
-G 0 0 -1
+1082392653 1 0 0 33554728 0 0 0 -1000 S
+G 0 0 0 -1
 60 -3 -85 5d100+8900 7d5+35
 0.3.1.5 150000
 8 8 0
@@ -3986,8 +3986,8 @@ A &+Mbaby&N &+mpurple worm&N is here, scrounging around the cavern for food.
 This dragon is much smaller, only about five feet high and twenty feet in
 length.
 ~
-262220 1 0 33554472 0 0 0 -800 S
-I 0 0 -1
+262220 1 0 0 33554472 0 0 0 -800 S
+I 0 0 0 -1
 25 11 19 25d40+200 3d5+3
 0.0.0.0 22275
 8 8 0
@@ -4000,8 +4000,8 @@ The hook horror resembles a huge bear that stands upright, except that this
 one has a bony exo-skeleton.  It has two large pincers for grabbing and
 crushing prey with.
 ~
-2120 1 0 33554432 0 0 0 0 S
-A 0 16384 -1
+2120 1 0 0 33554432 0 0 0 0 S
+A 0 16384 0 -1
 48 -3 -78 48d119+2640 6d6+25
 0.0.0.0 116640
 8 8 0
@@ -4013,8 +4013,8 @@ huge earth elemental~
 The elemental is large, standing fifteen feet tall and at least five feet
 in width.  It has a humanoid shape, and looks very dangerous.
 ~
-1107691596 1 0 33563048 2 0 0 0 S
-H 0 1 5
+1107691596 1 0 0 33563048 2 0 0 0 S
+H 0 1 0 5
 60 -10 -111 5d131+9675 7d5+35
 0.2.7.6 250000
 8 8 0
@@ -4026,8 +4026,8 @@ huge earth elemental~
 The elemental is large, standing fifteen feet tall and at least five feet
 in width.  It has a humanoid shape, and looks very dangerous.
 ~
-1107691596 1 0 33562792 2 0 0 0 S
-EE 0 1 -1
+1107691596 1 0 0 33562792 2 0 0 0 S
+EE 0 1 0 -1
 55 -5 -111 55d131+4675 7d6+30
 0.2.7.6 250000
 8 8 0
@@ -4040,8 +4040,8 @@ The roper looks like a short, fat tree with a dozen or so rope-like tentacles
 protruding out of its body on all sides.  It has two small black eyes in its
 torso and a large mouth or sharp teeth in its midsection.
 ~
-1107695692 1 0 296 2 0 0 -1000 S
-AC 0 1 5
+1107695692 1 0 0 296 2 0 0 -1000 S
+AC 0 1 0 5
 60 0 0 6d143+9900 6d6+30
 0.0.0.0 0
 8 8 0
@@ -4053,8 +4053,8 @@ piercer stalactite huge~
 The piercer greatly resembles a mammoth stalactite, except that it has two
 small black eyes near its top.
 ~
-131145 0 0 35127336 0 0 0 0 S
-EA 0 0 -1
+131145 0 0 0 35127336 0 0 0 0 S
+EA 0 0 0 -1
 30 11 9 25d40+200 3d5+3
 0.0.0.0 22275
 8 8 0
@@ -4066,8 +4066,8 @@ kuo-toan kuo toan man commoner~
 Kuo-Toans resemble frog men in many respects, except that they have humanoid
 bodies with frog-like heads.  Their skin is green and scaly.
 ~
-264268 1 0 33554472 0 0 0 -700 S
-H 0 0 -1
+264268 1 0 0 33554472 0 0 0 -700 S
+H 0 0 0 -1
 37 15 55 14d23+56 2d5+2
 7.5.2.0 6804
 8 8 0
@@ -4079,8 +4079,8 @@ kuo-toan kuo toan man warrior~
 The kuo-toan warrior resembles a frog man in some respects, with a humanoid
 body and a frog's head.  It has green scaly skin and large black eyes.
 ~
-264268 1 0 33554472 0 0 0 -800 S
-H 0 1 -1
+264268 1 0 0 33554472 0 0 0 -800 S
+H 0 1 0 -1
 43 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 0
@@ -4092,8 +4092,8 @@ kuo-toan kuo toan man hatchling~
 The kuo-toan child has bright green skin, and large black eyes.  It resembles
 a frog man in many respects, with a humanoid's body and a frog's head.
 ~
-262286 0 0 32 0 0 0 -400 S
-H 0 0 -1
+262286 0 0 0 32 0 0 0 -400 S
+H 0 0 0 -1
 13 15 58 13d23+52 2d5+2
 6.5.2.0 6318
 8 8 0
@@ -4105,8 +4105,8 @@ kuo-toan kuo toan man guardian~
 This kuo-toan is quite large, standing about eight feet tall.  It has a
 humanoid body with a frog's head, and dark green scaly skin.
 ~
-67373070 1 0 33554616 0 0 0 -850 S
-H 0 1 -1
+67373070 1 0 0 33554616 0 0 0 -850 S
+H 0 1 0 -1
 60 -10 -132 60d143+6300 7d6+35
 6.6.9.7 243000
 8 8 0
@@ -4118,8 +4118,8 @@ kuo-toan kuo toan man fisherman~
 This kuo-toan is lean, and stands about five feet tall.  Its humanoid body
 and frog are head is slimy.  It has large webbed hands and green scaly skin.
 ~
-262158 1 0 33554472 0 0 0 -800 S
-H 0 0 -1
+262158 1 0 0 33554472 0 0 0 -800 S
+H 0 0 0 -1
 30 13 45 17d30+85 3d4+2
 8.6.2.0 8262
 8 8 0
@@ -4131,8 +4131,8 @@ kuo-toan kuo toan man noble~
 This kuo-toan looks a bit older and wiser than the other kuo-toans in this
 village.   It stands about six feet tall and has green scaly skin.
 ~
-262344 1 0 33554472 0 0 0 -900 S
-H 0 16384 -1
+262344 1 0 0 33554472 0 0 0 -900 S
+H 0 16384 0 -1
 51 -5 -98 51d131+4335 7d6+30
 6.9.4.6 206550
 8 8 0
@@ -4144,8 +4144,8 @@ kuo-toan kuo toan man shaman~
 This kuo-toan must stand eight and a half feet high, with dark green skin
 and large black eyes.  It is dressed in green robes that look somewhat slimy.
 ~
-264206 1 0 33554600 0 0 0 -1000 S
-H 0 256 -1
+264206 1 0 0 33554600 0 0 0 -1000 S
+H 0 256 0 -1
 45 2 -21 38d88+836 4d7+10
 1.2.2.2 49248
 8 8 0
@@ -4158,8 +4158,8 @@ kuo-toan kuo toan man high priestess~
 head.
 &+GIts skin is so dark a shade of green, that it is almost black.
 ~
-100993038 1 0 100737272 14539 0 0 -1000 S
-X 0 256 -1
+100993038 1 0 0 100737272 14539 0 0 -1000 S
+X 0 256 0 -1
 60 -10 -147 6d6+29000 7d6+35
 6.6.4.10 364500
 8 8 2
@@ -4170,8 +4170,8 @@ duergar dwarf dark child~
 ~
 The child is only about two feet tall, and very stocky.
 ~
-204 0 0 33554464 0 0 0 -400 S
-H 0 0 -1
+204 0 0 0 33554464 0 0 0 -400 S
+H 0 0 0 -1
 13 15 58 13d23+52 2d5+2
 6.5.2.0 6318
 8 8 1
@@ -4183,8 +4183,8 @@ duergar dwarf dark commoner~
 The duergar stands four feet tall, and has a long beard.  His dark gray skin
 and grin expression show that he is not to be messed with.
 ~
-2124 1 0 33554472 0 0 0 -800 S
-H 0 1 -1
+2124 1 0 0 33554472 0 0 0 -800 S
+H 0 1 0 -1
 35 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 1
@@ -4196,8 +4196,8 @@ A &+rduergar warrior&N &+Lis standing here, ready to rip someone's head off.&N
 This duergar is very hardy looking, with dozens of scars that indicate is
 great battle prowess.  He stands four and a half feet in height.
 ~
-2124 1 0 33554600 0 0 0 -900 S
-H 0 1 -1
+2124 1 0 0 33554600 0 0 0 -900 S
+H 0 1 0 -1
 44 15 61 12d27+72 2d5+2
 6.4.2.0 5832
 8 8 1
@@ -4209,8 +4209,8 @@ A &+Lsoot-covered&N &+rduergar&N &+Lblacksmith&N is standing here, working furio
 This duergar is covered in black soot from head to toe, with rippling
 muscles and almost no hair.  He looks very menacing.
 ~
-2062 1 0 33554472 0 0 0 -750 S
-H 0 1 -1
+2062 1 0 0 33554472 0 0 0 -750 S
+H 0 1 0 -1
 40 13 45 17d35+119 3d4+2
 8.6.2.0 8262
 8 8 1
@@ -4223,8 +4223,8 @@ The war master's dozen scars and fierce glare indicate that he has
 survived many a battle.  He stands four and a half feet tall, and has
 only a very small beard.
 ~
-2062 1 0 33554600 0 0 0 -1000 S
-H 0 1 -1
+2062 1 0 0 33554600 0 0 0 -1000 S
+H 0 1 0 -1
 60 -10 -132 60d143+6300 7d6+35
 6.6.9.7 243000
 8 8 1
@@ -4236,8 +4236,8 @@ duergar dwarf dark high cleric~
 This duergar is dressed in white robes, and looks very old.  Even though she
 is a mere four feet tall, this one looks like a powerful cleric indeed.
 ~
-100796426 1 0 33620136 12490 0 0 -1000 S
-H 0 32 -1
+100796426 1 0 0 33620136 12490 0 0 -1000 S
+H 0 32 0 -1
 59 -7 -125 58d132+6032 7d6+35
 3.4.8.6 234900
 8 8 1
@@ -4250,8 +4250,8 @@ The king stands four and a half feet tall with long white hair and a beard
 that covers half of his chest.  He wears regal looking robes, and has no
 hair what so ever.  He is older looking, but carries himself with pride.
 ~
-100665358 1 0 855711992 14531 0 0 -1000 S
-PD 0 1 -1
+100665358 1 0 0 855711992 14531 0 0 -1000 S
+PD 0 1 0 -1
 60 -10 -132 60d143+6300 7d6+35
 6.6.9.7 243000
 8 8 1
@@ -4263,8 +4263,8 @@ A &+Chuman slave&N is standing here.
 The human looks very mal-nourished and pathetic.  He has probably been
 down here a long time.
 ~
-204 0 0 0 0 0 0 1000 S
-H 0 0 -1
+204 0 0 0 0 0 0 0 1000 S
+H 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
 8 8 1
@@ -4277,8 +4277,8 @@ This dwarf is much more scarred and beaten up looking than the others,
 indicating that he must have seen alot of battle in his day, and lived to
 tell the tale.
 ~
-2062 1 0 33554600 0 0 0 -1000 S
-H 0 16384 -1
+2062 1 0 0 33554600 0 0 0 -1000 S
+H 0 16384 0 -1
 44 2 -24 39d95+897 4d7+10
 2.2.3.2 50544
 8 8 1
@@ -4292,8 +4292,8 @@ lizard massive reptile~
 &+gits hide must be very hard to penetrate and the sharp claws on it make
 &+gattacking this creature very dangerous.
 ~
-2120 0 0 0 0 0 0 0 S
-R 0 1 -1
+2120 0 0 0 0 0 0 0 0 S
+R 0 1 0 -1
 45 8 7 29d55+319 3d6+4
 0.0.0.0 25839
 8 8 0
@@ -4307,8 +4307,8 @@ zailaus ethermancer ether master~
 &+ymagics, and has since become nomadic, travelling the countryside willing&n
 &+yto teach those he finds worthy his knowledge in the power of storms.&n
 ~
-3288336456 0 0 301990160 2049 0 0 0 S
-MH 0 33554432 -1
+3288336456 0 0 0 301990160 2049 0 0 0 S
+MH 0 33554432 0 -1
 56 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1

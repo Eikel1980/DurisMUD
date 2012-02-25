@@ -5,7 +5,7 @@ troll corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #33501
 corpse ogre~
 &+ba corpse of a old ogre&n~
@@ -13,7 +13,7 @@ corpse ogre~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 #33502
 coins money treasure~
 &+Ysome coins&n~
@@ -21,7 +21,7 @@ coins money treasure~
 ~
 20 16 1 0 7 0 0 1 0 0 0
 12 23 57 2 0 0 0 0
-0 0 100
+0 0 100 100
 #33503
 bracelet intricate golden~
 &+Ya golden bracelet e&+Wn&+Yc&+Wr&+Yu&+Ws&+Yt&+We&+Yd with diamonds&n~
@@ -29,7 +29,7 @@ bracelet intricate golden~
 ~
 9 24 3 3 7 0 4096 4097 64 0 0
 5 0 24 3 0 0 0 0
-3 4700 100 0 16 0 0
+3 4700 100 100 0 16 0 0
 A
 13 10
 A
@@ -41,7 +41,7 @@ ring copper~
 ~
 9 21 1 1 7 0 0 3 2 0 0
 0 1 0 3 0 0 0 0
-1 2700 100
+1 2700 100 100
 A
 18 1
 A
@@ -53,7 +53,7 @@ leather old belt~
 ~
 9 13 3 3 7 0 0 2049 0 0 0
 3 10 0 3 0 0 0 0
-3 0 100
+3 0 100 100
 A
 5 4
 #33506
@@ -63,7 +63,7 @@ A cloudy vial rests on the ground.~
 ~
 10 7 2 4 7 0 128 16385 0 0 0
 27 3 1 0 0 0 0 0
-0 0 100
+0 0 100 100
 #33507
 scales dragon red~
 &+Rthe scales from a red dragon&n~
@@ -71,7 +71,7 @@ scales dragon red~
 ~
 37 35 0 0 7 0 69632 513 66 4173708804 0
 2 1 3 17 0 0 0 0
-4 2597 100 536870912 0 0 0
+4 2597 100 100 536870912 0 0 0
 A
 23 -5
 A
@@ -83,7 +83,7 @@ A small broken down shelf rests against the wall here.~
 ~
 15 6 3 0 7 0 2 0 0 0 0
 200 0 0 100 0 0 0 0
-0 0 100
+0 0 100 100
 E
 shelf cabinet~
 &+y   Various potions and scrolls can be seen resting in a haphazard manner in the
@@ -96,7 +96,7 @@ green potion~
 ~
 10 7 2 4 7 0 65536 16385 0 0 0
 41 4 33 0 0 0 0 0
-1 0 100
+1 0 100 100
 #33510
 elixir black~
 &+La black elixir&n~
@@ -104,7 +104,7 @@ elixir black~
 ~
 10 7 2 4 7 0 65536 16385 0 0 0
 30 17 38 0 0 0 0 0
-0 0 100
+0 0 100 100
 #33511
 blue potion~
 &+Ba bright blue potion&n~
@@ -112,7 +112,7 @@ blue potion~
 ~
 10 7 2 4 7 0 65536 16385 0 0 0
 33 28 35 0 0 0 0 0
-0 0 100
+0 0 100 100
 #33512
 scroll torn~
 &+ya torn and tattered scroll&n~
@@ -120,7 +120,7 @@ scroll torn~
 ~
 2 29 1 2 7 0 70656 16385 0 37883812 0
 17 4 2 0 0 0 0 0
-0 0 100
+0 0 100 100
 #33513
 rusty key old~
 &+yan old rusty key&n~
@@ -128,7 +128,7 @@ rusty key old~
 ~
 18 16 1 1 7 0 4096 16385 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 #33514
 brooch eye hags~
 &+ra brooch made with a hags eye&n~
@@ -136,7 +136,7 @@ brooch eye hags~
 ~
 11 16 0 0 7 0 66688 5 64 37883812 0
 0 0 0 1 0 0 0 0
-2 0 100
+2 0 100 100
 A
 17 -7
 A
@@ -148,7 +148,7 @@ sign old~
 ~
 13 6 3 10 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 sign old~
 &+y     _____________________________________________________________
@@ -170,7 +170,7 @@ pool water~
 ~
 17 40 5 50 7 0 0 0 0 0 0
 99999 99999 0 1 0 0 0 0
-0 0 100
+0 0 100 100
 E
 pool water~
    The water looks a little murky and small insects can be seen swimming around
@@ -183,7 +183,7 @@ robe black frayed~
 ~
 11 3 3 8 7 0 1056 9 64 37883812 0
 0 0 0 4 0 0 0 0
-3 5000 100
+3 5000 100 100
 E
 frayed black robe~
    This well used looking cloak looks useable and warm.

@@ -5,7 +5,7 @@ A sticky web hangs tree to tree.~
 ~
 13 3 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 web~
 A sticky and very strong web.
@@ -17,7 +17,7 @@ A web lies over a hole in the ground.~
 ~
 13 3 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 web~
 A sticky and very strong web.
@@ -29,7 +29,7 @@ mistletoe~
 ~
 12 42 0 0 7 0 0 2113537 0 0 0
 0 0 0 0 0 0 0 0
-0 100 100
+0 100 100 100
 E
 mistletoe~
 &+gA fresh spring of mistletoe.
@@ -41,7 +41,7 @@ corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 corpse body carcass~
 &+gA well preserved corpse hangs here from a web.
@@ -53,7 +53,7 @@ corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 corpse body carcass~
 &+gAn almost completely digested corpse of medium-sized humanoid.
@@ -65,7 +65,7 @@ corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 corpse body carcass~
 &+gThis poor fellow must have died not so long ago...
@@ -77,7 +77,7 @@ corpse~
 ~
 15 2 3 30 7 0 0 0 0 0 0
 200 0 0 100 0 0 0 0
-1 0 100
+1 0 100 100
 E
 corpse body carcass goo~
 &+gA disgusting remains of a humanoid, possibly an orc.
@@ -89,7 +89,7 @@ raging fire~
 ~
 13 1 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 fire flame~
 The ring of flames.
@@ -101,7 +101,7 @@ smoke~
 ~
 13 1 0 0 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1 0 100
+1 0 100 100
 E
 smoke~
 Thick smoke.
@@ -113,7 +113,7 @@ The poison filled sac from a spider lies here.~
 ~
 17 2 3 1 7 0 524288 8404993 0 0 0
 5 5 27 10 0 0 0 0
-1 20 100
+1 20 100 100
 E
 poison sac sack gland~
 &+gA piece of spider carcass, filled with poison.
@@ -125,7 +125,7 @@ a teleport all trap shall catch them all!~
 ~
 13 16 0 0 7 0 2 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 100
+0 0 100 100
 E
 trap~
 A trap supposed to teleport poor fellas around...
@@ -139,7 +139,7 @@ A &+Lblack morningstar&N lies on the ground here.~
 ~
 5 16 3 4 7 0 16777216 8193 2 4165208644 0
 3 2 8 7 0 0 0 0
-6 1000 100
+6 1000 100 100
 E
 star morningstar~
 This appears to be the great morningstar once wielded by the cleric
@@ -157,7 +157,7 @@ elfdawn longsword sword~
 ~
 5 16 3 10 7 0 98304 8193 64 4198894180 0
 5 3 3 3 0 0 0 0
-4 50000 100
+4 50000 100 100
 E
 elfdawn longsword~
 &+gAn ancient sword of elven origin. There must be some magic imbued into it...
@@ -173,7 +173,7 @@ fade drusus black~
 ~
 5 16 3 1 7 0 98304 8193 64 4198894180 0
 2 2 5 11 10 0 0 0
-3 50000 100
+3 50000 100 100
 E
 fade drusus black~
 &+LThis black-bladed drusus seems to fade in and out...
@@ -189,7 +189,7 @@ magebane falchion~
 ~
 5 22 3 2 7 0 17109264 8193 65 12619652 0
 9 3 4 11 0 0 0 0
-8 50000 100
+8 50000 100 100
 E
 magebane falchion~
 &+CThis silvery falchion has been enchanted to help in repelling magical attacks.
@@ -205,7 +205,7 @@ lightning two-handed sword bolt massive~
 ~
 5 16 4 15 7 0 4293632 8193 64 87573659 0
 13 4 6 3 0 0 0 0
-15 50000 100
+15 50000 100 100
 E
 lightning two-handed sword bolt massive~
 &+cThis massive two-handed sword has been magically enchanted.
@@ -222,7 +222,7 @@ a &+Yscimitar named&N &+W'Woundhealer'&N~
 ~
 5 16 3 10 7 0 98304 8193 66 4165208580 0
 5 3 4 3 0 0 0 0
-4 100000 100
+4 100000 100 100
 E
 woundhealer scimitar~
 &+WAn ancient scimitar with healing runes inscribed on its blade.
@@ -238,7 +238,7 @@ sword blade golden flame~
 ~
 5 16 2 0 7 0 65536 8193 66 4194697316 0
 5 4 3 3 0 0 0 0
-0 100000 100
+0 100000 100 100
 E
 sword shortsword golden flame~
 &+cThe blade of this shortsword seems to be made from a dancing &+Ygolden &+rflame&+c.
@@ -255,7 +255,7 @@ The &+WBlade of Paladins&N lies upon the ground here.~
 ~
 5 16 3 10 7 0 4555776 8193 66 87572571 0
 5 4 4 3 0 0 0 0
-10 60000 100
+10 60000 100 100
 E
 blade paladins~
 &+WA two handed blade blessed by paladins deity.
@@ -269,7 +269,7 @@ A vellum scroll appears to have been left behind.~
 ~
 16 29 1 2 7 0 0 16385 0 0 0
 1 0 0 0 0 0 0 0
-0 50 100
+0 50 100 100
 E
 scroll velum~
 
@@ -314,7 +314,7 @@ hide strip xort~
 ~
 13 12 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 hide strip xort~
 &+WA strap of hide carved from dead Xort beast.
@@ -326,7 +326,7 @@ circle throns thorn~
 ~
 11 42 3 0 7 0 0 67633153 0 0 0
 0 0 0 0 0 0 0 0
-0 700 100
+0 700 100 100
 E
 circle throns thorn~
 &+gA small circlet made from interwinned pointy thorns.
@@ -342,7 +342,7 @@ the face of Mythra~
 ~
 13 2 3 1 7 0 0 1 0 0 0
 0 0 0 0 0 0 0 0
-1 1 100
+1 1 100 100
 E
 face mythra~
 A torn face of an old witch.
@@ -354,7 +354,7 @@ girdle cold steel~
 ~
 9 16 3 6 7 0 0 2049 64 0 0
 8 0 0 3 0 0 0 0
-3 3100 100 0 64 0 0
+3 3100 100 100 0 64 0 0
 E
 girdle cold steel~
 An icy steel girdle. It seems to protect well from cold and freezing effects.
@@ -370,7 +370,7 @@ staff ebony~
 ~
 5 6 3 5 7 0 0 8193 0 0 0
 12 2 4 7 0 0 0 0
-2 100 100
+2 100 100 100
 E
 staff ebony~
 A long staff made from ebonwood. Not the best of weapons, but still a decent
@@ -385,7 +385,7 @@ pool mercury~
 ~
 25 1 3 100 7 0 4096 0 0 0 0
 42166 7 -1 0 0 0 0 0
-200 1 100
+200 1 100 100
 E
 pool mercury~
 &+b   A shimmering pool of mercury. Staring in its surface you can see a distant
@@ -398,7 +398,7 @@ pool mercury~
 ~
 25 1 3 100 7 0 4096 0 0 0 0
 42179 7 -1 0 0 0 0 0
-200 1 100
+200 1 100 100
 E
 pool mercury~
 &+b   A shimmering pool of mercury. Staring in its surface you can see a distant
@@ -413,7 +413,7 @@ stick charcoal short~
 ~
 4 11 3 2 7 0 5120 16385 64 46370724 0
 50 1 1 25 0 0 0 0
-2 100000 100
+2 100000 100 100
 E
 stick charcoal short~
 &+LA short stick made from charcoal. It emits a strong evil radiation.
@@ -429,7 +429,7 @@ potion black vial steaming~
 ~
 10 7 3 1 7 0 4096 8388609 0 0 0
 50 144 1 19 0 0 0 0
-1 100000 100
+1 100000 100 100
 E
 potion black vial steaming~
 &+LA black and evil looking vial.
@@ -443,7 +443,7 @@ scroll light dark darkness~
 ~
 2 3 3 0 7 0 12288 8388609 0 0 0
 60 123 122 -1 0 0 0 0
-0 150000 100
+0 150000 100 100
 E
 scroll light dark darkness~
 A peculiar scroll, all green and covered with light and black runes.
@@ -457,7 +457,7 @@ token satanic evil object~
 ~
 11 36 3 2 13 0 3284992 8404997 64 0 0
 0 0 1 5 0 0 0 0
-2 120000 100
+2 120000 100 100
 E
 token satanic~
 &+rA satanic token, creation of the Great Devil that lives on the outter rim of
@@ -474,7 +474,7 @@ robes priestly black set~
 ~
 9 3 3 7 7 0 0 1033 2 0 0
 6 2 4 2 0 0 0 0
-4 1500 100
+4 1500 100 100
 E
 robes priestly black set~
 &+LA set of black priestly robes, thick and somehow hindering movement.
@@ -490,7 +490,7 @@ cracked wooden sign~
 ~
 13 6 3 999 7 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-9999 1 75
+9999 1 75 100
 E
 cracked wooden sign~
 &+y   This old sign was placed here many years ago by a concerned
@@ -511,7 +511,7 @@ A tiny key made of bone had been tossed aside here.~
 ~
 18 10 3 0 7 0 8392704 1 0 0 0
 0 100 0 0 0 0 0 0
-0 1 100
+0 1 100 100
 E
 key bone tiny~
 A tiny key made from dragon bone.
@@ -523,7 +523,7 @@ a bone casket~
 ~
 15 10 3 0 7 0 0 0 0 0 0
 15 13 42166 15 0 0 0 0
-10 1 100
+10 1 100 100
 E
 casket bone~
    This casket is made from smoothly connected pieces of dragon ribs, with
@@ -536,7 +536,7 @@ gloves black wet evil~
 ~
 9 51 0 0 12 0 12416 129 64 0 0
 3 0 0 1 0 0 0 0
-1 72020 100
+1 72020 100 100
 E
 gloves wet black evil~
 &+L   This bizzare pair of black gloves is made from an unknown silk-like
@@ -554,7 +554,7 @@ leggings hellfire flexible fire~
 ~
 9 51 10 3 14 100 12289 33 64 0 0
 7 0 0 3 1 0 0 0
-1 140000 100 536870912 0 0 0
+1 140000 100 100 536870912 0 0 0
 E
 leggings hellfire flexible fire~
 &+R   These leggins are made from fire held together by some powerful magic.
@@ -574,7 +574,7 @@ suit red dragon scale mail~
 ~
 9 35 3 15 12 0 0 16777225 64 4165208580 0
 35 0 0 5 0 0 0 0
-10 55600 100 536870912 0 0 0
+10 55600 100 100 536870912 0 0 0
 E
 suit red dragon scale mail~
 &+r   This suit is made from red dragon scales, held together by delicate but
@@ -594,7 +594,7 @@ suit blue dragon scale mail~
 ~
 9 35 3 15 12 0 0 16777225 64 4165208580 0
 35 0 0 5 0 0 0 0
-10 55600 100 0 128 0 0
+10 55600 100 100 0 128 0 0
 E
 suit blue dragon scale mail~
 &+b   This suit is made from blue dragon scales, held together by delicate but
@@ -614,7 +614,7 @@ a huge pile of platinum coins~
 ~
 20 25 3 0 7 0 4096 1 0 0 0
 0 0 0 256 0 0 0 0
-30 666000 100
+30 666000 100 100
 E
 coins pile platinum~
    This pile of platinum coins looks really impressive.
@@ -626,7 +626,7 @@ a huge pile of gold coins~
 ~
 20 24 3 0 7 0 0 1 0 0 0
 0 0 1610 0 0 0 0 0
-30 561000 100
+30 561000 100 100
 E
 coins pile gold~
    This huge pile of gold coins looks really impressive.
@@ -638,7 +638,7 @@ a corpse of unfortunate adventurer~
 ~
 15 2 3 0 7 0 0 0 0 0 0
 200 0 0 200 0 0 0 0
-200 1 100
+200 1 100 100
 E
 corpse unfortunate~
 &+m   This unfortunate adventuer must have slipped in the tunnel and fall down
@@ -652,7 +652,7 @@ mask black _id_~
 ~
 9 15 9 5 14 0 67178496 262145 64 0 0
 3 0 0 3 1 0 0 0
-2 35000 100
+2 35000 100 100
 E
 _id_name_~
 mask black pain death
@@ -681,7 +681,7 @@ eyepatch lightning~
 ~
 9 1 8 0 13 0 67112960 131073 64 0 0
 3 0 0 2 0 0 0 0
-0 46010 100 0 128 0 0
+0 46010 100 100 0 128 0 0
 E
 eyepatch lightning~
 &+Y   This magical eyepatch is made from a piece of lightning trapped and shaped
@@ -699,7 +699,7 @@ suit white dragon scale mail~
 ~
 9 35 3 15 12 0 0 16777225 64 4165209604 0
 30 0 0 5 0 0 0 0
-10 55600 100 0 64 0 0
+10 55600 100 100 0 64 0 0
 E
 suit white dragon scale mail~
 &+W   This suit is made from white dragon scales, held together by delicate but
@@ -719,7 +719,7 @@ key golden~
 ~
 18 24 3 1 7 0 0 16385 64 0 0
 0 0 0 0 0 0 0 0
-1 1000 100
+1 1000 100 100
 E
 key golden~
 A small golden key
