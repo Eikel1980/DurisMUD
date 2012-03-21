@@ -6023,13 +6023,16 @@ void spell_heal(int level, P_char ch, char *arg, int type, P_char victim, P_obj 
   
   if(GET_SPEC(ch, CLASS_CLERIC, SPEC_HEALER))
   {
-    if(level >= 33)
+    if(level >= 26)
+      num_dice += 2;
+
+    if(level >= 31)
       num_dice += 1;
 
-    if(level >= 39)
+    if(level >= 36)
       num_dice += 1;
 
-    if(level >= 43)
+    if(level >= 41)
       num_dice += 1;
 
     if(level >= 51)
@@ -6045,7 +6048,7 @@ void spell_heal(int level, P_char ch, char *arg, int type, P_char victim, P_obj 
   else
   {
     if(level >= 26)
-      num_dice += 1;
+      num_dice += 2;
 
     if(level >= 31)
       num_dice += 1;
