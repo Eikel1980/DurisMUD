@@ -2604,7 +2604,7 @@ P_char read_mobile(int nr, int type)
     bar = MIN(foo, 60);
   }
 
-  if (foo > bar)
+  if (foo > bar && GET_VNUM(mob) > 1200)
   {
     foo = bar;
     logit(LOG_MOB, "FYI - no changes made to MOB: %d has _RIDICULOUS_ damage. %dd%d + %d (%d to %d) check mob code, stats and racial stats.",
