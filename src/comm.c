@@ -3195,7 +3195,7 @@ void act(const char *str, int hide_invisible, P_char ch, P_obj obj,
     }
   }
 
-  if (!to)
+  if (!to || !AWAKE(to))
     return;                     /* if a tree falls in the forest... */
 
   for (; to; to = to->next_in_room)

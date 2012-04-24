@@ -4042,6 +4042,7 @@ void reset_char(P_char ch)
   ch->followers = 0;
   ch->following = 0;
   ch->carrying = 0;
+  ch->specials.z_cord = 0;
 #ifdef REALTIME_COMBAT
   ch->specials.combat = 0;
 #else

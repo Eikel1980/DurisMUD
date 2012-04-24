@@ -280,12 +280,9 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
     switch (rand)
     {
     case 1:                    // FIRE BREATH
-      act
-        ("&+rYour veins pulse with dragon blood...\n&+LYour &+Rfire breath&+L fills the area!",
-         0, ch, obj, 0, TO_CHAR);
-      act
-        ("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+Rbreathes fire&+L, filling the surrounding area!",
-         1, ch, obj, 0, TO_ROOM);
+      act("&+rYour veins pulse with dragon blood...\n&+LYour &+Rfire breath&+L fills the area!", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+Rbreathes fire&+L, filling the surrounding area!",
+         FALSE, ch, obj, 0, TO_ROOM);
       for (vict = world[ch->in_room].people; vict; vict = temp)
       {
         temp = vict->next_in_room;
@@ -293,17 +290,14 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
         {
           if (vict->group && (vict->group == ch->group) || vict == ch)
             continue;
-          spell_fire_breath(50, ch, NULL, 0, vict, 0);
+          spell_fire_breath(46, ch, NULL, 0, vict, 0);
         }
       }
       return TRUE;
     case 2:                    //// FROST BREATH
-      act
-        ("&+rYour veins pulse with dragon blood...\n&+LYour &+Bfrost breath&+L fills the area!",
-         0, ch, obj, 0, TO_CHAR);
-      act
-        ("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+Bbreathes frost&+L, filling the surrounding area!",
-         1, ch, obj, 0, TO_ROOM);
+      act("&+rYour veins pulse with dragon blood...\n&+LYour &+Bfrost breath&+L fills the area!", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+Bbreathes frost&+L, filling the surrounding area!",
+           FALSE, ch, obj, 0, TO_ROOM);
       for (vict = world[ch->in_room].people; vict; vict = temp)
       {
         temp = vict->next_in_room;
@@ -311,17 +305,14 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
         {
           if (vict->group && (vict->group == ch->group) || vict == ch)
             continue;
-          spell_frost_breath(50, ch, NULL, 0, vict, 0);
+          spell_frost_breath(46, ch, NULL, 0, vict, 0);
         }
       }
       return TRUE;
     case 3:                    //GAS BREATH
-      act
-        ("&+rYour veins pulse with dragon blood...\n&+LYour &+ggaseous breath&+L fills the area!",
-         0, ch, obj, 0, TO_CHAR);
-      act
-        ("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+gbreathes gas&+L, filling the surrounding area!",
-         1, ch, obj, 0, TO_ROOM);
+      act("&+rYour veins pulse with dragon blood...\n&+LYour &+ggaseous breath&+L fills the area!", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+gbreathes gas&+L, filling the surrounding area!",
+           FALSE, ch, obj, 0, TO_ROOM);
       for (vict = world[ch->in_room].people; vict; vict = temp)
       {
         temp = vict->next_in_room;
@@ -329,17 +320,14 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
         {
           if (vict->group && (vict->group == ch->group) || vict == ch)
             continue;
-          spell_gas_breath(50, ch, NULL, 0, vict, 0);
+          spell_gas_breath(46, ch, NULL, 0, vict, 0);
         }
       }
       return TRUE;
     case 4:                    //ACID BREATH
-      act
-        ("&+rYour veins pulse with dragon blood...\n&+LYour &+Gacid breath&+L fills the area!",
-         0, ch, obj, 0, TO_CHAR);
-      act
-        ("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+Gbreathes acid&+L, filling the surrounding area!",
-         1, ch, obj, 0, TO_ROOM);
+      act("&+rYour veins pulse with dragon blood...\n&+LYour &+Gacid breath&+L fills the area!", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+Gbreathes acid&+L, filling the surrounding area!",
+           FALSE, ch, obj, 0, TO_ROOM);
       for (vict = world[ch->in_room].people; vict; vict = temp)
       {
         temp = vict->next_in_room;
@@ -347,7 +335,7 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
         {
           if (vict->group && (vict->group == ch->group) || vict == ch)
             continue;
-          spell_acid_breath(50, ch, NULL, 0, vict, 0);
+          spell_acid_breath(46, ch, NULL, 0, vict, 0);
         }
       }
       return TRUE;
@@ -361,12 +349,10 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
     {
       P_char   tch, tch_next;
 
-      act
-        ("$n's $q &+Lsummons forth a visage of a &+gDRAGON\n&+LThe &+gdragon&+L visage of the &+Waxe&+L lashes out with its mighty tail!",
-         TRUE, ch, obj, NULL, TO_ROOM);
-      act
-        ("Your $q &+Lsummons forth a visage of a &+gDRAGON\n&+LThe &+gdragon&+L visage of the &+Waxe&+L lashes out with its mighty tail!",
-         TRUE, ch, obj, vict, TO_CHAR);
+      act("$n's $q &+Lsummons forth a visage of a &+gDRAGON\n"
+          "&+LThe &+gdragon&+L visage of the &+Waxe&+L lashes out with its mighty tail!", FALSE, ch, obj, NULL, TO_ROOM);
+      act("Your $q &+Lsummons forth a visage of a &+gDRAGON\n"
+          "&+LThe &+gdragon&+L visage of the &+Waxe&+L lashes out with its mighty tail!", FALSE, ch, obj, vict, TO_CHAR);
 
       for (tch = world[ch->in_room].people; tch; tch = tch_next)
       {
@@ -387,11 +373,9 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
             /* fall down, go boom */
             SET_POS(tch, POS_SITTING + GET_STAT(tch));
             CharWait(tch, PULSE_VIOLENCE * 2);
-            act("The powerful sweep sends you crashing to the ground!",
-                FALSE, tch, 0, 0, TO_CHAR);
+            act("The powerful sweep sends you crashing to the ground!", FALSE, tch, 0, 0, TO_CHAR);
             act("$n crashes to the ground!", FALSE, tch, 0, 0, TO_ROOM);
-            /* don't want to kill them with it, but can mess them up BAD! */
-            damage(ch, tch, MIN(dice(2, (GET_LEVEL(ch) / 5)) + 5, GET_HIT(tch) + 8), TYPE_UNDEFINED);
+            damage(ch, tch, MIN(dice(2, 25), GET_HIT(tch) + 8), TYPE_UNDEFINED);
           }
           else
           {
@@ -414,13 +398,10 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
 */
     if (!number(0, 27))
     {
-
-      act
-        ("&+rYour veins pulse with dragon blood...\n&+LYour &+RROAR&+L fills your victims with sheer terror!",
-         0, ch, obj, 0, TO_CHAR);
-      act
-        ("$n &+Lpulses with the power of &+rdragons&+L...\n&+L$n &+RROARS&+L, filling your heart with sheer terror!",
-         1, ch, obj, 0, TO_ROOM);
+      act("&+rYour veins pulse with dragon blood...\n"
+          "&+LYour &+RROAR&+L fills your victims with sheer terror!", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n &+Lpulses with the power of &+rdragons&+L...\n"
+          "&+L$n &+RROARS&+L, filling your heart with sheer terror!", FALSE, ch, obj, 0, TO_ROOM);
 
       for (tchar1 = world[ch->in_room].people; tchar1; tchar1 = tchar2)
       {
@@ -429,14 +410,13 @@ int dragonkind(P_obj obj, P_char ch, int cmd, char *arg)
         if (ch == tchar1)
           continue;
 
-        if( !IS_ALIVE(tchar1) )
+        if(!IS_ALIVE(tchar1))
           continue;
 
         /* transparent tower stone blocks roar */
         if (!IS_DRAGON(tchar1) && !IS_TRUSTED(tchar1) &&
             (tchar1->specials.z_cord == ch->specials.z_cord))
         {
-
           if (GET_LEVEL(tchar1) < (GET_LEVEL(ch) / 2))
             do_flee(tchar1, 0, 2);      /* panic flee, no save */
           if (GET_RACE(tchar1) == RACE_CENTAUR && !fear_check(tchar1))
@@ -467,7 +447,6 @@ int lightning(P_obj obj, P_char ch, int cmd, char *arg)
 {
   int      current_time = time(NULL), dam = cmd / 1000;
   P_char   vict;
-
 
   /*
      check for periodic event calls
@@ -1449,7 +1428,7 @@ int piercer(P_char ch, P_char pl, int cmd, char *arg)
       }
       if (vict && (ch->in_room == vict->in_room))
       {
-        dam = dice(GET_LEVEL(ch), 5) + GET_LEVEL(ch);
+        dam = (dice(GET_LEVEL(ch), 5) + GET_LEVEL(ch)) / 4;
         /*
            this is NOT a backstab per se, but awareness gives them a save of
            sorts.
@@ -2231,7 +2210,7 @@ int tiamat(P_char ch, P_char pl, int cmd, char *arg)
         
         CharWait(vict, PULSE_VIOLENCE * 2);
         
-        melee_damage(ch, vict, dice(50, 50) + 5, 0, &msgs);
+        melee_damage(ch, vict, number(5, 50) + 5, 0, &msgs);
       }
       else
       {
@@ -2264,7 +2243,7 @@ int tiamat(P_char ch, P_char pl, int cmd, char *arg)
           msgs.attacker, msgs.victim, msgs.room
         };
 
-        melee_damage(ch, vict, dice(10, 30), PHSDAM_NOREDUCE, &msgs);
+        melee_damage(ch, vict, dice(2, 30), PHSDAM_NOREDUCE, &msgs);
 
         if(IS_ALIVE(vict))
         {
@@ -2400,23 +2379,21 @@ int tiamat(P_char ch, P_char pl, int cmd, char *arg)
                 "&+RThe burst of flame causes your bark-like skin to catch fire!",
                 "$N &+Rcatches on fire!"
               };
-              spell_damage(ch, vict, dice(5, 20), SPLDAM_FIRE,
-                           SPLDAM_NODEFLECT | SPLDAM_NOSHRUG, &msgs);
+              spell_damage(ch, vict, number(5, 20), SPLDAM_FIRE, SPLDAM_NODEFLECT | SPLDAM_NOSHRUG, &msgs);
             }
             break;
           case 2:
             if (IS_AFFECTED(vict, AFF_HASTE))
             {
               struct damage_messages msgs = {
-                "$N's&+B face turns a shade of blue, as $s heart stops for a moment!",
+                "$N's&+B face turns a shade of blue, as $S heart stops for a moment!",
                 "&+BBetween your spell of haste and &+LTiamat's &+Belectrical discharge, your heart cracks under the strain!",
-                "$N's&+B face turns a shade of blue, as $s heart stops for a moment!",
-                "$N's&+B face turns a shade of blue, as $s heart stops for a moment!",
+                "$N's&+B face turns a shade of blue, as $S heart stops for a moment!",
+                "$N's&+B face turns a shade of blue, as $S heart stops for a moment!",
                 "&+BBetween your spell of haste and &+LTiamat's &+Belectrical discharge, your heart cracks under the strain!",
-                "$N's&+B face turns a shade of blue, as $s heart stops for a moment!"
+                "$N's&+B face turns a shade of blue, as $S heart stops for a moment!"
               };
-              spell_damage(ch, vict, dice(20, 20), SPLDAM_LIGHTNING,
-                           SPLDAM_NODEFLECT | SPLDAM_NOSHRUG, &msgs);
+              spell_damage(ch, vict, dice(2, 20), SPLDAM_LIGHTNING, SPLDAM_NODEFLECT | SPLDAM_NOSHRUG, &msgs);
             }
             break;
           case 3:
@@ -2430,12 +2407,11 @@ int tiamat(P_char ch, P_char pl, int cmd, char *arg)
                 "&+WThe intense coldness cracks your stone-like skin!",
                 "$N &+Wscreams in pain as $S stone-like skin cracks under the intense cold!"
               };
-              spell_damage(ch, vict, dice(5, 100), SPLDAM_COLD,
-                           SPLDAM_NODEFLECT | SPLDAM_NOSHRUG, &msgs);
+              spell_damage(ch, vict, number(5, 50), SPLDAM_COLD, SPLDAM_NODEFLECT | SPLDAM_NOSHRUG, &msgs);
             }
             break;
           case 4:
-          if (!number(0, 5))
+          if(!number(0, 5) && !IS_TRUSTED(vict))
           {
             {
               act("&+LTiamat &+RROARS &+Lloudly, and her tailsweep sends you crashing into the wall!",
@@ -4143,7 +4119,7 @@ int sevenoaks_longsword(P_obj obj, P_char ch, int cmd, char *arg)
   }
 
   if(!number(0, 32) &&
-    spell_damage(ch, vict, dice(10, 24), SPLDAM_COLD,
+    spell_damage(ch, vict, dice(10, 6), SPLDAM_COLD,
       SPLDAM_NOSHRUG | SPLDAM_NODEFLECT | RAWDAM_NOKILL, &messages) == DAM_NONEDEAD)
   {
     return true;
@@ -4307,16 +4283,11 @@ int tendrils(P_obj obj, P_char ch, int cmd, char *arg)
   if (GET_STAT(vict) == STAT_DEAD)
     return FALSE;
 
-  act("$n sidesteps $N's lunge only to slam $s face with an elbow!", TRUE,
-      ch, 0, vict, TO_NOTVICT);
-  act
-    ("$n completely sidesteps your lunge only to slam $s elbow into your face!",
-     TRUE, ch, 0, vict, TO_VICT);
-  act
-    ("You completely sidestep $N's lunge, only to slam your elbow into $s face!",
-     TRUE, ch, 0, vict, TO_CHAR);
+  act("$n sidesteps $N's lunge only to slam $s face with an elbow!", FALSE, ch, 0, vict, TO_NOTVICT);
+  act("$n completely sidesteps your lunge only to slam $s elbow into your face!", FALSE, ch, 0, vict, TO_VICT);
+  act("You completely sidestep $N's lunge, only to slam your elbow into $s face!", FALSE, ch, 0, vict, TO_CHAR);
 
-  if ((damage(ch, vict, dice(5, 20), TYPE_UNDEFINED) != DAM_NONEDEAD))
+  if((damage(ch, vict, number(5, 20), TYPE_UNDEFINED) != DAM_NONEDEAD))
   {
     return TRUE;
   }
@@ -4331,7 +4302,7 @@ int tendrils(P_obj obj, P_char ch, int cmd, char *arg)
         "$N spasms in &+Rpain as tiny &+Bbolts of &+Blight surge through $S body!", FALSE, ch, 0, vict, TO_CHAR);
     spell_stone_skin(60, ch, 0, 0, ch, 0);
     Stun(vict, ch, PULSE_VIOLENCE * 2, TRUE);
-    damage(ch, vict, dice(10, 45), TYPE_UNDEFINED);
+    damage(ch, vict, number(45, 85), TYPE_UNDEFINED);
   }
   return FALSE;
 }

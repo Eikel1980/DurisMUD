@@ -1234,7 +1234,7 @@ struct char_special_data {
 
   byte x_cord;                  /* Sub-coordinate of large room            */
   byte y_cord;
-  byte z_cord;                  /* hieght for flyers                       */
+  byte z_cord;                  /* height for flyers                       */
 
   ubyte position;               /* posture and status                      */
   unsigned int act;             /* flags for NPC behavior                  */
