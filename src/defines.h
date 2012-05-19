@@ -1283,7 +1283,7 @@ struct material_data {
 #define FIND_AND_ASK   2
 
 #define RANDOM_ZONES 1 // Set to 1 to enable
-
+#define wipe2011 1 // enabled
 #define MAX_AC_APPLY 30 // used to cap benefit from items that use APPLY_AC
 
 // Tiamat stuff - OBJECT_FIRESWORN procs load leader + 4 followers 

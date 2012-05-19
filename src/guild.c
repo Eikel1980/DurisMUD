@@ -135,7 +135,6 @@ void update_skills(P_char ch)
   }
 }
 
-#define wipe2011 1
 int notch_skill(P_char ch, int skill, int chance)
 {
   int intel, t, lvl, l, slvl, percent_chance;
@@ -171,12 +170,12 @@ int notch_skill(P_char ch, int skill, int chance)
     ch->only.pc->skills[skill].learned = t;
     return 0;
   }
-
+#if wipe2011
   //  The following addition is for wipe 2011, where intelligence will help determine
   //  chance to notch a skill, thus making it a partially important stat for rockhead melee
   //  characters - Jexni 6/5/11  
   intel = BOUNDED(0, 100 - GET_C_INT(ch), 50);
-  chance = chance + (intel / 5);
+  chance = chance + (intel / 2);
 
   /* skills can be no higher than level * 2.5 + 5 */
   /* level 1, max = 7 (adjusted to 20), level 10, max = 30, level 30, max = 80 */
@@ -217,7 +216,8 @@ int notch_skill(P_char ch, int skill, int chance)
     chance = chance << 2;
   }
   
-  chance = chance * (l / t); // the higher the skill, the tougher to notch and vice versa
+  chance = chance * (1. + ((float)l / t)); // the higher the skill, the tougher to notch and vice versa
+#endif
   
 #if !defined(CHAOS_MUD) || (CHAOS_MUD == 0)
   if(number(0, chance))
@@ -244,7 +244,7 @@ int notch_skill(P_char ch, int skill, int chance)
 
   return 1;
 }
-#undef wipe2011
+
 
 int SpellCopyCost(P_char ch, int spell)
 {

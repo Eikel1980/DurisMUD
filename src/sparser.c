@@ -831,18 +831,18 @@ int SpellCastTime(P_char ch, int spl)
 {
   int      dura;
 
-  dura = (int)skills[spl].beats;
-  dura = (dura * spell_pulse_data[GET_RACE(ch)]);
-  dura = (dura + get_property("spellcast.pulse.racial.All", 1.000)); // Affects all racial modifiers.
-  dura = (dura * (12.0 + ch->points.spell_pulse) / 12);
+  dura = (float)skills[spl].beats;
+  dura = ((float)dura * spell_pulse_data[GET_RACE(ch)]);
+  dura = ((float)dura * get_property("spellcast.pulse.racial.All", 1.000)); // Affects all racial modifiers.
+  dura = ((float)dura * (12.0 + ch->points.spell_pulse) / 12);
 
   if (IS_AFFECTED2(ch, AFF2_FLURRY))
   {
-    dura = (dura * .3);
+    dura = ((float)dura * .4);
   }
   else if (IS_AFFECTED(ch, AFF_HASTE))
   {
-    dura = (dura * .8);
+    dura = ((float)dura * .8);
   }
   
   return MAX(1, dura);
@@ -1774,9 +1774,9 @@ void do_will(P_char ch, char *argument, int cmd)
   {
       int chant_bonus = MAX(0, GET_CHAR_SKILL(ch, SKILL_SPATIAL_FOCUS) / 40 + number(-1,1));
       if (chant_bonus > 1)
-        send_to_char("&+MFocusing your mind, you bend reality a lot more easily...&n\n", ch);
+        send_to_char("&+MFocusing your mind, you bend reality more easily...\r\n", ch);
       else
-        send_to_char("&+MFocusing your mind, you bend reality a bit more easily...&n\n", ch);
+        send_to_char("&+MFocusing your mind, you bend reality more easily...\r\n", ch);
 
       if (chant_bonus == 3) {
         CharWait(ch, 1);
@@ -2185,13 +2185,13 @@ void do_cast(P_char ch, char *argument, int cmd)
       IS_SET(skills[spl].targets, TAR_INSTACAST))
     dura = 1;
   else if ((GET_CLASS(ch, CLASS_DRUID) && !IS_MULTICLASS_PC(ch)) ||
-           (IS_NPC(ch) && !number(0, 62 - GET_LEVEL(ch))) ||
+           //(IS_NPC(ch) && !number(0, 62 - GET_LEVEL(ch))) ||  no instacasting for wipe2011 - Jexni 5/6/12
            ((!is_tank || number(0, 1)) &&
             (IS_SET(ch->specials.act2, PLR2_QUICKCHANT)) &&
             (notch_skill(ch, SKILL_QUICK_CHANT, get_property("skill.notch.quickChant", 100)) ||
              (GET_CHAR_SKILL(ch, SKILL_QUICK_CHANT) > number(1, 100)))))
   {
-    dura >>= 1;
+    dura >> 1;
   }
 
   tmp_spl.timeleft = dura;
