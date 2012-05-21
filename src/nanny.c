@@ -1851,7 +1851,7 @@ void enter_game(P_desc d)
   {
     REMOVE_BIT(ch->specials.act, PLR_ANONYMOUS);
   }
-  
+#if 0 // may have nixed the need for this with the skill system update - Jexni 5/21/12  
   memset(&af1, 0, sizeof(af1));
   af1.type = TAG_SKILL_TIMER;
   af1.flags = AFFTYPE_STORE | AFFTYPE_SHORT;
@@ -1862,7 +1862,7 @@ void enter_game(P_desc d)
 
   af1.modifier = TAG_PHYS_SKILL_NOTCH;
   affect_to_char(ch, &af1);
-  
+#endif
   initialize_logs(ch, true);
 
   send_offline_messages(ch);
