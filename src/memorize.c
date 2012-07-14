@@ -1147,15 +1147,14 @@ void handle_memorize(P_char ch)
       else
       {
 #if !defined(CHAOS_MUD) || (CHAOS_MUD != 1)
-        //if(book_class(ch) &&
-        //  !(SpellInSpellBook(ch, af->modifier, SBOOK_MODE_IN_INV +
-        //                                       SBOOK_MODE_AT_HAND + 
-        //                                       SBOOK_MODE_ON_BELT)))
-        //{
-        //  send_to_char("You have managed to misplace your spellbook!\n", ch);
-        //  show_stop_memorizing(ch);
-        //  return;
-        //}
+        if(book_class(ch) &&
+          !(SpellInSpellBook(ch, af->modifier, SBOOK_MODE_IN_INV +
+            SBOOK_MODE_AT_HAND + SBOOK_MODE_ON_BELT + SBOOK_MODE_ON_GROUND)))
+        {
+          send_to_char("You have managed to misplace your spellbook!\n", ch);
+          show_stop_memorizing(ch);
+          return;
+        }
 #endif
         if(meming_class(ch))
         {
@@ -1656,7 +1655,8 @@ void do_memorize(P_char ch, char *argument, int cmd)
 
   if(book_class(ch))
   {
-    sbook = SpellInSpellBook(ch, spl, SBOOK_MODE_IN_INV + SBOOK_MODE_AT_HAND + SBOOK_MODE_ON_BELT);
+    sbook = SpellInSpellBook(ch, spl, SBOOK_MODE_IN_INV + 
+      SBOOK_MODE_AT_HAND + SBOOK_MODE_ON_BELT + SBOOK_MODE_ON_GROUND );
   }
 
   circle = get_spell_circle(ch, spl);
@@ -1679,13 +1679,13 @@ void do_memorize(P_char ch, char *argument, int cmd)
       return;
     }
   }
- /* else if(!sbook && book_class(ch))
+  else if(!sbook && book_class(ch))
   {
     send_to_char
       ("Sorry, but you haven't got that spell in any available spellbooks!\n",
        ch);
     return;
-  }*/
+  }
   else if( !SKILL_DATA_ALL(ch, spl).maxlearn[0] && !SKILL_DATA_ALL(ch, spl).maxlearn[ch->player.spec] )
 #else
   if( !SKILL_DATA_ALL(ch, spl).maxlearn[0] && !SKILL_DATA_ALL(ch, spl).maxlearn[ch->player.spec] )
