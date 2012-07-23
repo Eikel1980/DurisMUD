@@ -4956,8 +4956,8 @@ if((GET_RACE(victim) == RACE_OGRE) && ch_size < vict_size)
 
   percent_chance =
     (int) (percent_chance *
-           ((GET_POS(victim) == POS_PRONE) ? 0.10 :
-           (GET_POS(victim) != POS_STANDING) ? 0.20 :
+           ((GET_POS(victim) == POS_PRONE) ? 0.00 :
+           (GET_POS(victim) != POS_STANDING) ? 0.00 :
            1));
   
   if(!IS_PC_PET(ch))
