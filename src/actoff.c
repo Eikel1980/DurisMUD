@@ -5108,6 +5108,12 @@ if((GET_RACE(victim) == RACE_OGRE) && ch_size < vict_size)
     {
       CharWait(victim, PULSE_VIOLENCE * 1);
     }
+//TODO
+    else if(GET_SPEC(ch, CLASS_WARRIOR, SPEC_GUARDIAN))
+    {
+	 CharWait(victim, (int) (PULSE_VIOLENCE * 2.5));
+    }
+
     else
     {
       CharWait(victim, (int) (PULSE_VIOLENCE * 2));
@@ -5115,12 +5121,25 @@ if((GET_RACE(victim) == RACE_OGRE) && ch_size < vict_size)
     
     if(melee_damage(ch, victim, MAX(1, dmg), PHSDAM_TOUCH, 0) == DAM_NONEDEAD)
     {
-      act("Your bash knocks $N to the ground!",
-        FALSE, ch, 0, victim, TO_CHAR);
-      
-      if(!LEGLESS(ch))
+      //act("Your bash knocks $N to the ground!",
+      //  FALSE, ch, 0, victim, TO_CHAR);
+      //TODO
+      if(GET_SPEC(ch, CLASS_WARRIOR, SPEC_GUARDIAN))
+	{
+		act("Your skillful bash knocks $N to the ground!",
+        	FALSE, ch, 0, victim, TO_CHAR);
+		act("You are knocked to the ground by $n's skillful bash!",
+         	 FALSE, ch, 0, victim, TO_VICT);
+       	 act("$N is knocked to the ground by $n's skillful bash!",
+         	 FALSE, ch, 0, victim, TO_NOTVICT);
+        	set_short_affected_by(ch, SKILL_BASH, (int) (2.8 * PULSE_VIOLENCE));
+         }
+
+	else if(!LEGLESS(ch))
       {
-        act("You are knocked to the ground by $n's mighty bash!",
+       act("Your bash knocks $N to the ground!",
+        FALSE, ch, 0, victim, TO_CHAR); 
+	act("You are knocked to the ground by $n's mighty bash!",
           FALSE, ch, 0, victim, TO_VICT);
         act("$N is knocked to the ground by $n's mighty bash!",
           FALSE, ch, 0, victim, TO_NOTVICT);
@@ -5128,7 +5147,9 @@ if((GET_RACE(victim) == RACE_OGRE) && ch_size < vict_size)
       }
       else
       {
-        act("$n's mass &+rslams&n into you, knocking you to the &+yground!&n",
+       act("Your bash knocks $N to the ground!",
+        FALSE, ch, 0, victim, TO_CHAR); 
+	act("$n's mass &+rslams&n into you, knocking you to the &+yground!&n",
           FALSE, ch, 0, victim, TO_VICT);
         act("$n's mass &+rslams&n into $N, knocking $M to the &+yground!&n",
           FALSE, ch, 0, victim, TO_NOTVICT);
@@ -5167,9 +5188,10 @@ if((GET_RACE(victim) == RACE_OGRE) && ch_size < vict_size)
               ch->equipment[WIELD], victim, TO_CHAR);
           act("$n dives at $N skewering $M with $s $q.", FALSE, ch,
               ch->equipment[WIELD], victim, TO_NOTVICT);
-          if(melee_damage(ch, victim, dice(20, 10), 0, 0) == DAM_NONEDEAD)
+          //codemod dice(20, 10) - changed to make skewer do more damage instead of lag user longer
+		if(melee_damage(ch, victim, dice(45, 10), 0, 0) == DAM_NONEDEAD)
           {
-            CharWait(victim, (int) (PULSE_VIOLENCE * 2.5));
+            CharWait(victim, (int) (PULSE_VIOLENCE * 2.0));
           }
         }
       }

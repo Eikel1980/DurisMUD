@@ -182,7 +182,7 @@ const char *stat_names3[13] = {
   "formidable",                 /* * 136-145 */
   "excellent",                  /* * 146-155 */
   "awesome",                    /* * 156-165 */
-  "incredible"                  /* * 166+ */
+  "incredible"                  /* * 166-280 */
 };
 
 const char *stat_outofrange[2] = {
