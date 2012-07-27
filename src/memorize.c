@@ -37,7 +37,7 @@
    CLASS_ILLUSIONIST | CLASS_BARD |\
    CLASS_RANGER | CLASS_REAVER | CLASS_THEURGIST))
 #define IS_PRAYING_CLASS(cls) ( (cls) &\
-  (CLASS_CLERIC | CLASS_PALADIN | CLASS_ANTIPALADIN | CLASS_AVENGER | CLASS_CABALIST))
+  (CLASS_CLERIC | CLASS_PALADIN | CLASS_ANTIPALADIN | CLASS_AVENGER | CLASS_ETHERMANCER | CLASS_CABALIST))
 #define IS_MEMING_CLASS(cls) (IS_BOOK_CLASS(cls) || ((cls) & CLASS_SHAMAN))
 
 
@@ -485,7 +485,7 @@ void show_stop_memorizing(P_char ch)
     act("$n moans loudly in confusion as $s contact with &+Ldark powers&n is disturbed.", FALSE, ch, 0, 0, TO_ROOM);
     CharWait(ch, WAIT_SEC * 2);
   }
-  else if (IS_HARPY(ch) || GET_CLASS(ch, CLASS_ETHERMANCER))
+  else if (IS_HARPY(ch))
   {
     send_to_char("Your tupor has been disturbed!\n"
        "&+CThe interr&n&+cupted lin&+Wk with the st&+Corm spirits leav&n&+ces you in sho&+Wck.\r\n", ch);
@@ -862,7 +862,6 @@ void handle_undead_mem(P_char ch)
         is_wearing_necroplasm(ch) ||
         IS_PUNDEAD(ch) ||
         IS_HARPY(ch) ||
-        GET_CLASS(ch, CLASS_ETHERMANCER) ||
 	IS_ANGEL(ch)) &&
         IS_AFFECTED2(ch, AFF2_MEMORIZING)))
   {
@@ -895,8 +894,7 @@ void handle_undead_mem(P_char ch)
       sprintf(gbuf, "&+LYou feel infused by %d%s circle DARK powers!\n",
               i, i == 1 ? "st" : (i == 2 ? "nd" : (i == 3 ? "rd" : "th")));
     }
-    else if(IS_HARPY(ch) ||
-           GET_CLASS(ch, CLASS_ETHERMANCER))
+    else if(IS_HARPY(ch))
     {
       sprintf(gbuf, "&+WEthereal e&+Cssences flo&+cw into you, " 
 		      "res&+Ctoring your %d%s&+c &+Wcircle powers!\n",
@@ -955,7 +953,7 @@ void handle_undead_mem(P_char ch)
       send_to_char
         ("The assimilation process leaves you momentarily shocked.\n", ch);
     }
-    else if (IS_HARPY(ch) || GET_CLASS(ch, CLASS_ETHERMANCER))
+    else if (IS_HARPY(ch))
     {
       send_to_char
         ("&+CThe spir&n&+cits reced&+We, leaving y&+Cou in a m&n&+comentary stat&+We of lethargy.&n\n",
@@ -1113,7 +1111,6 @@ void event_memorize(P_char ch, P_char victim, P_obj obj, void *data)
      IS_PUNDEAD(ch) ||
      USES_COMMUNE(ch) ||
      IS_HARPY(ch) ||
-     GET_CLASS(ch, CLASS_ETHERMANCER) ||
      IS_UNDEADRACE(ch) ||
      is_wearing_necroplasm(ch) ||
      USES_FOCUS(ch) ||
@@ -1147,7 +1144,7 @@ void do_assimilate(P_char ch, char *argument, int cmd)
     send_to_char("&+GThe forces of nature ignore you...\n", ch);
     return;
   }
-  else if (cmd == CMD_TUPOR && !(IS_HARPY(ch) || GET_CLASS(ch, CLASS_ETHERMANCER)))
+  else if (cmd == CMD_TUPOR && !(IS_HARPY(ch)))
   {
     send_to_char("You have no idea how to even begin.\n", ch);
     return;
@@ -1283,7 +1280,6 @@ void do_memorize(P_char ch, char *argument, int cmd)
   else if(cmd == CMD_MEMORIZE &&
          (IS_PUNDEAD(ch) ||
           IS_HARPY(ch) ||
-          GET_CLASS(ch, CLASS_ETHERMANCER)||
           !meming_class(ch) ||
           IS_UNDEADRACE(ch) ||
           is_wearing_necroplasm(ch)) ||
@@ -2421,7 +2417,6 @@ void spell_mordenkainens_lucubration(int level, P_char ch, char *arg, int type, 
      !GET_CLASS(ch, CLASS_WARLOCK) &&
      !(IS_PUNDEAD(ch) ||
        IS_HARPY(ch) ||
-       GET_CLASS(ch, CLASS_ETHERMANCER) ||
        IS_UNDEADRACE(ch) |
        is_wearing_necroplasm(ch)) ||
      !USES_FOCUS(ch))
