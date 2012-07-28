@@ -14,7 +14,7 @@ endif
 LDFLAGS += -L/usr/lib/mysql -L./ships
 
 OPTS    = -O2
-
+ 
 CFLAGS = -g -Wno-write-strings
 #CFLAGS += -D__NO_MYSQL__
 CFLAGS += -DTEST_MUD
