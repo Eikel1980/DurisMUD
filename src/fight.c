@@ -3529,7 +3529,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
       FALSE, ch, 0, victim, TO_VICT);
     act("$N&+R absorbs&n $n's&+R spell!",
       FALSE, ch, 0, victim, TO_NOTVICT);
-    vamp(victim,  dam / 4, GET_MAX_HIT(victim) * 1.3);
+    vamp(victim,  dam / 4, GET_MAX_HIT(victim) * 1.1);
     
     // Solving issue of fire elementals not unmorting after vamping from fire spell
     update_pos(victim);
@@ -3549,7 +3549,7 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
       FALSE, ch, 0, victim, TO_VICT);
     act("$N&+C absorbs&n $n's &+Cspell!",
       FALSE, ch, 0, victim, TO_NOTVICT);
-    vamp(victim, dam / 4, GET_MAX_HIT(victim) * 1.3); 
+    vamp(victim, dam / 4, GET_MAX_HIT(victim) * 1.1); 
 
     update_pos(victim);
     if (IS_NPC(victim))
@@ -7862,10 +7862,10 @@ int parrySucceed(P_char victim, P_char attacker, P_obj wpn)
 
   // Attackers are easier to parry when they are not standing.
   if(!MIN_POS(attacker, POS_STANDING + STAT_NORMAL))
-    learnedattacker = (int) (learnedattacker * 0.75);
+    learnedattacker = (int) (learnedattacker * 0.65); //old 0.75
 
   if(IS_AFFECTED5(victim, AFF5_DAZZLEE))
-    learnedvictim = (int) (learnedvictim * 0.90);
+    learnedvictim = (int) (learnedvictim * 0.80);
 
   if(affected_by_spell(victim, SKILL_GAZE))
     learnedvictim = (int) (learnedvictim * 0.80);
