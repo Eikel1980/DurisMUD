@@ -94,7 +94,7 @@ katana sword~
 &+wa &+ckatana&n &+wbearing markings of the&n &+cCrane Clan&n~
 &+wA long-bladed katana bearing the markings of the&n &+cCrane Clan&n &+whas been dropped.&n~
 ~
-5 16 3 0 8 0 0 8193 0 122910 0
+5 16 3 0 8 0 1024 8193 0 122975 0
 5 2 5 3 0 0 0 0
 7 10000 100
 E
@@ -200,7 +200,7 @@ tunic imperial watch~
 &+ca tunic bearing the insignia of the&n &+CImperial Watch&n~
 &+cA dull blue tunic lies in a pile on the ground.&n~
 ~
-9 3 3 0 8 0 0 9 0 1 0
+9 3 3 0 8 0 0 9 0 0 0
 1 0 0 2 0 0 0 0
 2 45000 100
 E
@@ -247,7 +247,7 @@ blue eye dragon's teardrop pendant~
 &+La&n &+Bblue&n &+Ldragon's eye pendant&n~
 &+LA small pendant, shaped like a&n &+Bblue teardrop&n&+L, lies on the ground.&n~
 ~
-9 26 3 0 10 0 0 5 0 1 0
+9 26 3 0 10 0 0 5 0 0 0
 15 0 0 1 0 0 0 0
 0 25000 100
 E
@@ -350,7 +350,7 @@ leather chest plate~
 &+ya chest plate bearing the insignia of&n &+YClan Rat&n~
 &+yA chest plate made of reinforced leather has been left behind.&n~
 ~
-9 13 3 0 7 0 0 16393 0 123390 0
+9 13 3 0 7 0 1024 16393 0 123391 0
 6 0 0 3 0 0 0 0
 10 10101 100
 E
@@ -386,7 +386,7 @@ katana sword~
 &+ya &+Ykatana&n &+ybearing markings of the&n &+YRat Clan&n~
 &+yA long-bladed katana bearing the markings of the&n &+YRat Clan&n &+yhas been dropped.&n~
 ~
-5 16 3 0 8 0 0 8193 0 122910 0
+5 16 3 0 8 0 1024 8193 0 122911 0
 5 2 5 3 0 0 0 0
 7 10101 100
 E
@@ -405,9 +405,9 @@ dagger blade double~
 &+La double-bladed dagger&n~
 &+LA dagger with two blades, shaped like an "H", has been dropped.&n~
 ~
-5 16 3 0 9 0 64 8193 0 122910 0
+5 16 3 0 9 0 1088 8193 0 122911 0
 2 4 3 11 0 0 0 0
-3 101 100
+3 9010 100
 E
 dagger blade double~
 This wicked looking weapon is shaped like an "H", with a pair of blades
@@ -423,7 +423,7 @@ jitte fork steel~
 &+Wa &+Csteel&n&+L jitte&n~
 &+LAn oversized, three-pronged fork-type weapon has been left behind.&n~
 ~
-5 16 3 0 8 0 0 8193 0 1 0
+5 16 3 0 8 0 0 8193 0 0 0
 2 3 2 11 0 0 0 0
 2 999 100
 E
@@ -441,9 +441,9 @@ knife black~
 &+Ba &+Lblack-bladed&n&+B throwing knife&n~
 &+LA black-bladed knife, made for throwing, has been dropped.&n~
 ~
-5 15 3 0 6 0 0 24577 0 130622 0
+5 15 3 0 6 0 1024 24577 0 130623 0
 2 3 2 11 0 0 0 0
-0 1500 100
+0 10000 100
 E
 knife black~
 This short black-bladed knife was made to be thrown.  As a wielded weapon,
@@ -617,7 +617,7 @@ kimono~
 &+ca guardsman's &+Ck&+cimo&+Cno&n~
 &+cAn informal kimono, bearing marks of the Imperial Watch, lies here.&n~
 ~
-9 3 3 0 13 0 0 9 0 1 0
+9 3 3 0 13 0 0 9 0 0 0
 2 0 0 2 0 0 0 0
 3 999 100
 E
@@ -633,9 +633,9 @@ blue potion~
 &+ba &+Wpotion&n&+B of&n &+Bha&+brmo&+Bny&n~
 &+bA blue potion&n &+Bsparkles&n &+bfrom a spot on the ground.&n~
 ~
-10 40 3 0 7 0 65600 16385 0 1 0
+10 40 3 0 7 0 65600 16385 0 0 0
 31 16 16 16 0 0 0 0
-1 1 100
+1 15000 100
 E
 blue potion~
 This small clear glass vial contains a blue liquid that catches the light
@@ -648,7 +648,7 @@ green potion~
 ~
 10 40 3 0 7 0 64 16385 0 1 0
 21 3 39 1 0 0 0 0
-1 1 100
+1 15000 100
 E
 green potion~
 This small clear glass vial contains a green liquid that catches the light
@@ -661,7 +661,7 @@ scroll inner strength~
 ~
 2 29 3 0 7 0 64 16385 0 1 0
 31 215 177 193 0 0 0 0
-1 1 100
+1 35000 100
 E
 scroll inner strength~
 This magic scroll is made of a thin sheet of parchment covered in flowing
@@ -674,7 +674,7 @@ dark green potion~
 ~
 10 40 3 0 7 0 64 16385 0 1 0
 21 66 34 53 0 0 0 0
-1 1 100
+1 50000 100
 E
 green potion~
 This small clear glass vial contains a green liquid that catches the light
@@ -685,9 +685,9 @@ ring steel bluish~
 &+ca r&+Cin&+cg of&n &+Cco&+cntemplati&+Con&n~
 &+cA steel ring with a distinct bluish tint lies on the ground.&n~
 ~
-9 16 3 0 14 0 320 3 0 1 0
+9 16 3 0 14 0 66 3 0 0 0
 15 0 0 1 0 0 0 0
-1 1 100
+1 50000 100
 E
 ring steel bluish~
 This small ring radiates a certain vibrancy, an effect that can't be felt
@@ -891,9 +891,9 @@ chain whip whipping kau sin ke~
 &+La &+Wk&+Lau &+rs&+Rin &n&+Wk&+Le &+Ww&+Lhipping&n &+Wc&+Lhain&n~
 &+LA long chain-like weapon has been tossed aside.&n~
 ~
-5 15 3 0 9 0 16384 24577 0 123006 0
+5 15 3 0 9 0 17408 8193 0 10608767 0
 14 4 6 0 0 0 0 0
-5 465 100
+5 35000 100
 E
 chain whip whipping kau sin ke~
 This long-length of thin iron chain is suitable for use as a whip-style
@@ -1059,9 +1059,9 @@ dagger assassin~
 &+La long-bladed a&n&+rs&n&+Ls&n&+ra&n&+Ls&n&+rs&n&+Li&n&+rn&n&+L's dagger&n~
 &+LThere is a long-bladed dagger lying on the ground here.&n~
 ~
-5 16 3 0 12 0 16448 24577 128 130974 0
+5 16 3 0 12 0 17408 8193 192 130975 0
 2 3 2 11 0 0 0 0
-2 10101 100
+2 20101 100
 E
 dagger assassin~
 This long-bladed dagger has been blackened by some means so that it's dull,
@@ -1076,9 +1076,9 @@ robes shadowwalker~
 &+Lrobes of the sh&n&+wad&n&+Low&n&+wwa&n&+Llk&n&+wer&n~
 &+LSome pitch black robes have been discarded.&n~
 ~
-9 3 3 0 14 0 536952896 16393 0 16384 0
+9 3 3 0 14 0 536952896 9 0 0 0
 12 0 0 2 0 0 0 0
-3 1010 100 524288 0 0 0
+3 1010 100
 E
 robes shadowwalker~
 These robes have a strange feel to them, a warmth generated by the fabric
@@ -1089,15 +1089,15 @@ disorientation and dizziness.
 A
 20 -2
 A
-26 6
+26 8
 #138267
 katana sword shadows breath~
 &+ca katana called '&n&+LShadows Breath&n&+c'&n~
 &+cThe magical katana '&n&+LShadows Breath&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 81984 24577 0 32774 0
+5 16 3 0 15 0 83008 8193 0 2211843 0
 5 3 4 3 0 0 0 0
-8 99880 100 32 0 0 0
+8 19880 100
 E
 katana sword shadows breath~
 This magical sword is called 'Shadows Breath', and it is one of the seven
@@ -1119,9 +1119,9 @@ katana sword north wind~
 &+ca katana called '&n&+WThe North Wind&n&+c'&n~
 &+cThe magical katana '&n&+WThe North Wind&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 81984 24577 0 32774 0
+5 16 3 0 15 0 83008 24577 0 2195459 0
 5 3 4 3 0 0 0 0
-8 95555 100 8 0 0 0
+8 15555 100
 E
 katana sword north wind~
 This magical sword is called 'North Wind', and it is one of the seven
@@ -1143,9 +1143,9 @@ katana sword divine fury~
 &+ca katana called '&n&+CDivine Fury&n&+c'&n~
 &+cThe magical katana '&n&+CDivine Fury&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 81984 24577 0 32774 0
+5 16 3 0 15 0 83008 8193 0 2195459 0
 5 3 4 3 0 0 0 0
-8 95666 100 4 0 0 0
+8 15666 100
 E
 katana sword divine fury~
 This magical sword is called 'Divine Fury', and it is one of the seven
@@ -1167,9 +1167,9 @@ katana sword lotus blossom~
 &+ca katana called '&n&+mThe Lotus Bl&n&+Moss&n&+mom&+c'&n~
 &+cThe magical katana '&n&+mThe Lotus Bl&n&+Moss&n&+mom&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 81984 24577 0 32774 0
+5 16 3 0 15 0 83008 8193 0 2195459 0
 5 3 4 3 0 0 0 0
-8 98888 100
+8 18888 100
 E
 katana sword lotus blossom~
 This magical sword is called 'The Lotus Blossom', and it is one of the seven
@@ -1191,9 +1191,9 @@ katana sword celestial dragon~
 &+ca katana called '&n&+BCelestial Dragon&n&+c'&n~
 &+cThe magical katana '&n&+BCelestial Dragon&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 81984 24577 0 32774 0
+5 16 3 0 15 0 83008 8193 0 2195459 0
 5 3 4 3 0 0 0 0
-8 101010 100 67108864 0 0 0
+8 24010 100
 E
 katana sword celestial dragon~
 This magical sword is called 'Celestial Dragon', and it is one of the seven
@@ -1215,9 +1215,9 @@ katana sword torrential rain~
 &+ca katana called '&n&+bTorrential Rain&n&+c'&n~
 &+cThe magical katana '&n&+bTorrential Rain&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 81984 24577 0 32774 0
+5 16 3 0 15 0 83008 8193 0 2195459 0
 5 3 4 3 0 0 0 0
-8 90000 100
+8 19000 100
 E
 katana sword torrential rain~
 This magical sword is called 'Torrential Rain', and it is one of the seven
@@ -1338,9 +1338,9 @@ katana sword retribution~
 &+La &+Wk&+Latana &+Wc&+Lalled &+C'&n&+LRet&n&+rribut&n&+Lion&n&+C'&n~
 &+cThe magical katana '&n&+LRet&n&+rribut&n&+Lion&n&+c' has been mistakenly dropped.&n~
 ~
-5 16 3 0 15 0 16384 24577 1 32774 0
-5 4 5 3 0 115015015 30 25
-8 100000 100 268435456 0 0 0
+5 16 3 0 15 0 17408 24577 65 32774 0
+5 4 5 3 0 216015015 30 25
+8 200000 100 0 0 0 33554432
 E
 katana sword retribution~
 This magical sword is called 'Retribution', and it is one of the seven
