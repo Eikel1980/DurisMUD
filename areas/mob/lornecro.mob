@@ -96,8 +96,8 @@ maltheas angel master~
 &+L   One of the dark heroes from the Wars of Light and Shadow, he has been
 &+Lreanimated to serve Zrack. He stands here ready to destroy anything.
 ~
-1073875020 1 0 0 805372088 193 0 0 -1000 S
-an 0 16777216 1 4
+1073875020 1 0 0 805372088 268437697 67109056 0 -1000 S
+uv 0 16777216 1 4
 53 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -489,7 +489,7 @@ iron golem br_a~
 &+Lfor over a thousand years now. Its body is made of stone and it seems to be
 &+Lstanding here waiting for any intruders.
 ~
-1107364938 1 0 0 805372056 276673 0 0 0 S
+1107299402 1 0 0 805372056 276673 0 0 0 S
 OG 0 1 1 -1
 55 0 0 1d1+1 1d1+1
 0.0.0.0 0

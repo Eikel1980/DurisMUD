@@ -148,7 +148,7 @@ blade molten sword fury burning demon demons~
 &n&+ra b&+Rur&+Yn&+Rin&n&+rg &+Cblade &n&+rcalled &+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&N~
 &n&+rA sword of contained molten metal lays on the ground, steaming.&N~
 ~
-5 19 3 0 15 0 75513929 8193 3104 32798 0
+5 19 3 0 15 0 75513929 8193 2080 32798 0
 5 5 5 3 0 390521277 56 25
 10 50000 100 536870928 0 67109056 100663296
 E
@@ -377,7 +377,7 @@ iron small key~
 &+La small iron key&N~
 A small iron key lies on the floor, dicarded.&N~
 ~
-12 13 3 0 7 0 0 16385 0 0 0
+12 13 3 0 7 0 4096 1 0 0 0
 0 0 0 0 0 0 0 0
 1 952 100
 E
@@ -1152,18 +1152,12 @@ _victim_msg~
 &+LAn &+Cunseen &+Wvoice&+L of pure &+rma&+Rlevolen&+rce &+Cwhispers&+L a single word of &+rd&+Remoni&+rc p&+Ro&+rw&+Re&+rr.&n
 &+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&+L is wreathed in &+rde&+Rmon&+ric &+rf&+Rl&+Ya&+Wm&+Ye&+Rs&+L of the &+WAb&+wy&+Lss.&n
 ~
-E
-_room_msg~
-&+LA wave of &+wsup&+Wern&+watural &+wf&+We&+wa&+Wr&+L washes over you as the sickening awareness of an &+wov&+Wer-whelmi&+wng&+L presence ripples into being.&n
-&+LAn &+Cunseen &+Wvoice&+L of pure &+rma&+Rlevolen&+rce &+Cwhispers&+L a single word of &+rd&+Remoni&+rc p&+Ro&+rw&+Re&+rr.&n
-&+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&+L is wreathed in &+rde&+Rmon&+ric &+rf&+Rl&+Ya&+Wm&+Ye&+Rs&+L of the &+WAb&+wy&+Lss.&n
-~
 A
 18 4
 A
 19 4
 T
-2 2 1 60
+2 2 0 60
 #138964
 warhammer molten hammer fury burning demon demons~
 &n&+ra b&+Rur&+Yn&+Rin&n&+rg &+Cwarhammer &n&+rcalled &+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&N~
@@ -1205,26 +1199,18 @@ _victim_msg~
 &+LAn &+Cunseen &+Wvoice&+L of pure &+rma&+Rlevolen&+rce &+Cwhispers&+L a single word of &+rd&+Remoni&+rc p&+Ro&+rw&+Re&+rr.&n
 &+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&+L is wreathed in &+rde&+Rmon&+ric &+rf&+Rl&+Ya&+Wm&+Ye&+Rs&+L of the &+WAb&+wy&+Lss.&n
 ~
-E
-_room_msg~
-&+LA wave of &+wsup&+Wern&+watural &+wf&+We&+wa&+Wr&+L washes over you as the sickening awareness of an &+wov&+Wer-whelmi&+wng&+L presence ripples into being.&n
-&+LAn &+Cunseen &+Wvoice&+L of pure &+rma&+Rlevolen&+rce &+Cwhispers&+L a single word of &+rd&+Remoni&+rc p&+Ro&+rw&+Re&+rr.&n
-&+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&+L is wreathed in &+rde&+Rmon&+ric &+rf&+Rl&+Ya&+Wm&+Ye&+Rs&+L of the &+WAb&+wy&+Lss.&n
-~
 A
 18 4
 A
 19 4
-T
-2 2 1 60
 #138965
 broken weapon demonic fury burning demon demons~
 &n&+ra &+cbroken &+rde&+Rmon&+ric &+Cweapon &n&+rcalled &+L'&n&+rThe Fury of &+WDe&+Cm&no&+Lns'&N~
 &n&+rA dagger of contained molten metal lays on the ground, steaming.&N~
 ~
-5 19 3 0 15 0 75518017 1 66 268320766 0
-2 3 5 3 0 390521 1 30
-10 300000 100
+5 19 3 0 15 0 75518017 16385 66 268320766 0
+5 3 5 3 0 0 0 0
+1 300000 100
 E
 blade molten sword fury angel angels burning~
 &+r   The sword's hilt is fairly normal, steel with a large crystal in the hilt,
@@ -1250,5 +1236,3 @@ A
 18 4
 A
 19 4
-T
-6 12 20 60

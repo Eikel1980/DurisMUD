@@ -425,6 +425,8 @@ le ming lady crone woman poison~
 &+gheavy black shawl.  A sharp nose and beady eyes give her the look of a
 &+gpredator, even considering her age.  Her wits certainly haven't been hampered
 &+gby the years as she seems to sum up your worth with a simple glance.
+&+W"Sorry, we are closed until some idiot fixes the new system for applying different
+&+Wtypes of poisons to dagger!"
 ~
 67110986 0 0 0 301989932 0 0 0 -300 S
 PH 0 10 0 -1
@@ -611,7 +613,7 @@ shadowwalker assassin raven~
 &+Lto become members of the Imperial assassins.
 ~
 1140852808 0 0 0 302514216 28 0 0 -600 S
-PH 0 14 0 -1
+PH 0 4096 1 -1
 45 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -648,9 +650,9 @@ employed by Clan Raven.
 Because of his ambition and intelligence, Kawasawa is feared by many of
 the other Clan leaders.
 ~
-67119178 0 0 0 301990040 2076 67108864 270336 0 S
-PH 0 1048576 0 -1
-56 0 0 1d1+1 1d1+1
+67119178 4 0 0 301990040 2076 67108864 8192 0 S
+ag 0 18 0 -1
+57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #138239
@@ -674,9 +676,9 @@ has served the Empire without fault for hundreds of years, one small
 comment by some worthless functionary has put this Lord's clan in a difficult
 situation.
 ~
-67119178 0 0 0 301990040 2076 67108864 270336 0 S
-PH 0 64 2 -1
-56 0 0 1d1+1 1d1+1
+67119178 4 0 0 301990040 2076 67108864 270336 0 S
+ag 0 16777224 0 -1
+57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #138240
@@ -698,8 +700,8 @@ skills and abilities, and the battle-clerics of the Clan have won many
 a battle.
 ~
 67119178 0 0 0 301990040 2076 67108864 270336 0 S
-PH 0 33554432 2 -1
-56 0 0 1d1+1 1d1+1
+ag 0 1 0 -1
+57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #138241
@@ -718,9 +720,9 @@ Clan Crane.  Fear of the wu-jen spellmasters of the Clan keep many
 would-be upstart Clans in their place.  Even the dangerous Lord Kawasawa
 of the Raven Clan stays out of Crane business.
 ~
-67119178 0 0 0 301990040 2076 67108864 0 0 S
-PH 0 16384 0 -1
-56 0 0 1d1+1 1d1+1
+10314 4 0 0 301990040 2076 67108864 0 0 S
+ag 0 17825793 0 -1
+57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #138242
@@ -740,9 +742,9 @@ be a thinker and not a fighter, although combat training is an integral
 part to the Order of Purity's teachings, which strives for both mental and
 physical harmony.
 ~
-67119178 0 0 0 301990040 28 67108864 270336 750 S
-PH 0 8 0 -1
-56 0 0 1d1+1 1d1+1
+67119178 4 0 0 301990040 28 67108864 270336 0 S
+ag 0 67108872 0 -1
+57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
 #138243
@@ -764,9 +766,9 @@ Known to be calculating and devious, Lady Kitsuro keeps her foes off balance
 with a mixture of feigned innocence, because she's a woman, and backstabbing
 ruthlessness.
 ~
-67119178 0 0 0 301990040 262172 67108864 270336 0 S
-PH 0 1 3 -1
-56 0 0 1d1+1 1d1+1
+10314 4 0 0 301990040 262172 67108864 270336 0 S
+ag 0 2097152 1 -1
+57 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
 #138244
