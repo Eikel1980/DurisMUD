@@ -241,11 +241,6 @@ M 0 138254 34 138317 100 0 0 0     * a yakuza agent
 M 0 138254 34 138317 100 0 0 0     * a yakuza agent
 M 0 138254 34 138317 100 0 0 0     * a yakuza agent
 M 0 138224 1 138318 100 0 0 0      * Le Ming, the Lady of Poison
-G 1 138249 999 0 100 0 0 0         *    a vial labelled Ajida
-G 1 138250 999 0 100 0 0 0         *    a vial labelled Askume
-G 1 138251 999 0 100 0 0 0         *    a vial labelled Assassin Bug Toxin
-G 1 138252 999 0 100 0 0 0         *    a vial labelled Barba Amarilla
-G 1 138253 999 0 100 0 0 0         *    a vial labelled Harvestman Poison
 M 0 138225 1 138318 100 0 0 0      * Shukenha, the dwarf
 M 0 138203 5 138320 100 0 0 0      * a bushi warrior
 E 1 138274 2 16 100 0 0 0          *   a long-shafted yari
