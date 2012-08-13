@@ -329,7 +329,7 @@ const mcname multiclass_names[] = {
   {CLASS_ROGUE, CLASS_BARD,              "&+bGr&+Lift&+ber"},
   {CLASS_ROGUE, CLASS_MINDFLAYER,        "Sly Wave"},
   {CLASS_ROGUE, CLASS_BERSERKER,         "Sly Maul"},
-  {CLASS_ROGUE, CLASS_REAVER,            "Sly Blend"},
+  {CLASS_ROGUE, CLASS_REAVER,            "&+LSh&+wado&+Lw R&+Wea&+Lv&+We&+Lr&n"},
   {CLASS_ROGUE, CLASS_ILLUSIONIST,       "Sly Secret"},
   {CLASS_ROGUE, CLASS_DREADLORD,         "Sly Dread"},
   {CLASS_ROGUE, CLASS_ETHERMANCER,       "Sly Sky"},
