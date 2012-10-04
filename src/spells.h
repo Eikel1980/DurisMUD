@@ -934,7 +934,45 @@
 #define SKILL_TIGER_PALM             1263
 #define SKILL_DIAMOND_SOUL           1264
 
-#define LAST_SKILL                   SKILL_DIAMOND_SOUL
+#ifndef SKILLPOINTS
+  #define LAST_SKILL                   SKILL_DIAMOND_SOUL
+#endif
+
+// New skills for skill points.
+#define SKILL_BASEWARR               1265
+#define SKILL_BASEROGUE              1266
+#define SKILL_BASEPRIEST             1267
+#define SKILL_BASEMAGE               1268
+#define SKILL_1HCOMBAT               1269
+#define SKILL_2HCOMBAT               1270
+#define SKILL_BAREHANDEDCOMBAT       1271
+#define SKILL_TAKEDOWNS              1272
+#define SKILL_DEFENSIVETRAINING      1273
+#define SKILL_CHANTS                 1274
+#define SKILL_NATURALMAGIC           1275
+#define SKILL_OCCULTMAGIC            1276
+#define SKILL_HOLYMAGIC              1277
+#define SKILL_RAGETACTICS            1278
+#define SKILL_ENHANCEDMELEE          1279
+#define SKILL_RESCUEALL              1280
+#define SKILL_ENHANCEDBASH           1281
+#define SKILL_GROUNDFIGHTING         1282
+#define SKILL_MELEE_MASTERY          1283
+#define SKILL_TRAMPLE                1284
+#define SKILL_HANDCONTROL            1285
+#define SKILL_BODYCONTROL            1286
+#define SKILL_ONEWITHMIND            1287
+#define SKILL_ONEWITHBODY            1288
+#define SKILL_CELLADJUSTMENT         1289
+#define SKILL_NATURESPROTECTIONS     1290
+#define SKILL_PROTECT_FROM_EVIL      1291
+#define SKILL_NATURESSENSES          1292
+
+#ifdef SKILLPOINTS
+#define WHITE_SKILL                  -1
+#define BLUE_SKILL                   -2
+#define LAST_SKILL                   SKILL_NATURESSENSES
+#endif
 
 #define FIRST_SECONDARY_SKILL        1501
 

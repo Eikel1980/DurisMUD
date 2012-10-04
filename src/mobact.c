@@ -582,6 +582,9 @@ bool MobCastSpell(P_char ch, P_char victim, P_obj object, int spl, int lvl)
   int      circle = 0, duration = 0;
   char     buf[MAX_STRING_LENGTH];
 
+// PREVENTING MOBS FROM CASTING UNTIL AFTER SPELLS REIMPLEMENTED - Lohrr
+//return FALSE; Dear god man! As this got pushed live and everyone's killing !casting mobs! - Drannak
+
   if(!(ch && (victim || object)))
   {
     logit(LOG_EXIT, "MobCastSpell() bogus parms");

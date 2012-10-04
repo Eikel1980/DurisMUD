@@ -4951,6 +4951,7 @@ void init_char(P_char ch)
 
   ch->only.pc->poofIn = 0;
   ch->only.pc->poofOut = 0;
+  ch->only.pc->skillpoints = 0;
 }
 
 int      accept_mode = 0;       /* whether to have need to accept new players or not */
