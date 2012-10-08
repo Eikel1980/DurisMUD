@@ -406,7 +406,7 @@ const char *where[] = {
   "<third weapon>       ",
   "<fourth weapon>      ",
   "<worn on back>       ",
-  "<attached to belt>   ",
+  "<worn on belt buckle>",
   "<attached to belt>   ",
   "<attached to belt>   ",
   "<worn on lower arms> ",

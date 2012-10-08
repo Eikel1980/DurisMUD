@@ -1431,7 +1431,8 @@ void all_affects(P_char ch, int mode)
     {
       continue;
     }
-    if( (i == WEAR_ATTACH_BELT_1 || i == WEAR_ATTACH_BELT_2 ||
+    //allowing first normal beltable item to grant stats. 10/8/12 Drannak
+    if( (i == WEAR_ATTACH_BELT_2 ||
       i == WEAR_ATTACH_BELT_3 || i == WEAR_BACK) &&
       !IS_ARTIFACT(ch->equipment[i]) )
     {
