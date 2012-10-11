@@ -1416,7 +1416,7 @@ void spell_wither(int level, P_char ch, char *arg, int type, P_char victim,
     
   int save = victim->specials.apply_saving_throw[SAVING_SPELL];
 
-  int percent = (int) (GET_C_POW(ch) - GET_C_POW(victim));
+  int percent = (int) (GET_C_INT(ch) - GET_C_INT(victim));
   
   percent += (int) (GET_LEVEL(ch) - GET_LEVEL(victim));
 
