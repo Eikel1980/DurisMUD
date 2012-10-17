@@ -8903,6 +8903,11 @@ if(affected_by_spell(ch, SPELL_MIELIKKI_VITALITY))
     return;
   }
 
+  if(affected_by_spell(ch, SPELL_ESHABALAS_VITALITY))
+  {
+    send_to_char("&+rThe blessings of the vitality spell are denied by Eshabala!\r\n", victim);
+    return;
+  }
       
   if(!IS_PC(ch) &&
      !IS_PC(victim))
