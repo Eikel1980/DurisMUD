@@ -8897,13 +8897,13 @@ void spell_vitality(int level, P_char ch, char *arg, int type, P_char victim,
      GET_VNUM(victim) == IMAGE_REFLECTION_VNUM)
       return;
 
-if(affected_by_spell(ch, SPELL_MIELIKKI_VITALITY))
+if(affected_by_spell(victim, SPELL_MIELIKKI_VITALITY))
   {
     send_to_char("&+GThe Goddess Mielikki is aiding your health, and prevents the vitality spell from functioning...\r\n", victim);
     return;
   }
 
-  if(affected_by_spell(ch, SPELL_ESHABALAS_VITALITY))
+  if(affected_by_spell(victim, SPELL_ESHABALAS_VITALITY))
   {
     send_to_char("&+rThe blessings of the vitality spell are denied by Eshabala!\r\n", victim);
     return;
