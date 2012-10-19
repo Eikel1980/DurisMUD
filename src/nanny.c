@@ -2571,6 +2571,46 @@ void enter_game(P_desc d)
   initialize_logs(ch, true);
 
   send_offline_messages(ch);
+//make sure existing chars have base stats 80 - Drannak
+if(d->character->base_stats.Str < 80)
+  {
+  d->character->base_stats.Str = 80;
+  }
+if(d->character->base_stats.Agi < 80)
+  {
+  d->character->base_stats.Agi = 80;
+  }
+if(d->character->base_stats.Dex < 80)
+  {
+  d->character->base_stats.Dex = 80;
+  }
+if(d->character->base_stats.Con < 80)
+  {
+  d->character->base_stats.Con = 80;
+  }
+if(d->character->base_stats.Luck < 80)
+  {
+  d->character->base_stats.Luck = 80;
+  }
+if(d->character->base_stats.Pow < 80)
+  {
+  d->character->base_stats.Pow = 80;
+  }
+if(d->character->base_stats.Int < 80)
+  {
+  d->character->base_stats.Int = 80;
+  }
+if(d->character->base_stats.Wis < 80)
+  {
+  d->character->base_stats.Wis = 80;
+  }
+ 
+
+ if(d->character->base_stats.Cha < 80)
+  {
+  d->character->base_stats.Cha = 80;
+  }
+
 
 /*
 if(d->character->player.time.played <  10000000  && !IS_TRUSTED(d->character))
