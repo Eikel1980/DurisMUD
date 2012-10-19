@@ -1087,17 +1087,21 @@ bool DragonCombat(P_char ch, int awe)
        * fail casting check?  Ok, let's add a sweep with the tail 1
        * in 6
        */
-      if (!number(0, 2))
-      {
-        if (!isname("br_f", GET_NAME(ch)) && !isname("br_c", GET_NAME(ch)) &&
+      if(!number(0, 3))
+  	{
+    	 if (!isname("br_f", GET_NAME(ch)) && !isname("br_c", GET_NAME(ch)) &&
         !isname("br_g", GET_NAME(ch)) && !isname("br_a", GET_NAME(ch)) &&
         !isname("br_l", GET_NAME(ch)) && !isname("br_s", GET_NAME(ch)) &&
-        !isname("br_b", GET_NAME(ch))) {
-          act("$n lashes out with $s mighty tail!", FALSE, ch, 0, 0, TO_ROOM);
-          SweepAttack(ch);
+        !isname("br_b", GET_NAME(ch)))
+    	  {
+          if (IS_TITAN(ch) || IS_AVATAR(ch))
+	   StompAttack(ch);
+          else
+	   SweepAttack(ch);
           return TRUE;
+         }
         }
-      }
+      
       /*
        * failing all that, they do nothing special 3 in 4, else they
        * breathe
