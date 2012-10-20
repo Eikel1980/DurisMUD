@@ -1312,7 +1312,7 @@ void initialize_skills()
                 TAR_SELF_ONLY | TAR_NOCOMBAT,
                 spell_mielikki_vitality, "&+GMielikki's blessing fades.&n");
   SPELL_ADD(CLASS_DRUID, 7);
-  SPELL_ADD(CLASS_RANGER, 8);
+  //SPELL_ADD(CLASS_RANGER, 8);
   
   SPELL_CREATE_MSG("bless", SPELL_BLESS, PULSE_SPELLCAST,
                 TAR_OBJ_INV | TAR_OBJ_EQUIP | TAR_CHAR_ROOM | TAR_NOCOMBAT,
@@ -3016,7 +3016,7 @@ SPELL_ADD(CLASS_NONE, 1);
   SPELL_CREATE_MSG("eshabalas vitality", SPELL_ESHABALAS_VITALITY, PULSE_SPELLCAST,
                 TAR_SELF_ONLY,
                 spell_eshabalas_vitality, "&+mYou feel a bit worn out now that Eshabala has left you.&n");
-  SPELL_ADD(CLASS_REAVER, 9);
+  //SPELL_ADD(CLASS_REAVER, 9);
 
   SPELL_CREATE_MSG("cegilunes searing blade", SPELL_CEGILUNE_BLADE, PULSE_SPELLCAST * 4 / 3,
                 TAR_SELF_ONLY | TAR_NOCOMBAT,
@@ -3974,7 +3974,8 @@ SPELL_ADD(CLASS_NONE, 1);
 
   SKILL_CREATE("2h flaying", SKILL_2H_FLAYING, TAR_PHYS);
   SKILL_ADD(CLASS_MERCENARY, 1, 100);
-  SKILL_ADD(CLASS_BERSERKER, 1, 40);//Changed from 100 9/25/2008 Zion
+  SPEC_SKILL_ADD(CLASS_BERSERKER, 1, 100, SPEC_RAGELORD);
+  SKILL_ADD(CLASS_BERSERKER, 1, 70);
   SKILL_ADD(CLASS_WARRIOR, 1, 60);
   SPEC_SKILL_ADD(CLASS_WARRIOR, 0, 0, SPEC_SWASHBUCKLER);
   SPEC_SKILL_ADD(CLASS_REAVER, 1, 90, SPEC_FLAME_REAVER);

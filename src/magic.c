@@ -1079,7 +1079,7 @@ void spell_life_leech(int level, P_char ch, char *arg, int type,
   else
   {
     if(!IS_AFFECTED4(victim, AFF4_NEG_SHIELD) &&
-       !IS_UNDEADRACE(victim)))
+       !IS_UNDEADRACE(victim))
     {
       if(IS_PC(ch) || 
          IS_PC_PET(ch))
@@ -1167,7 +1167,7 @@ void spell_energy_drain(int level, P_char ch, char *arg, int type,
   else
   {
     if(!IS_AFFECTED4(victim, AFF4_NEG_SHIELD) &&
-       !IS_UNDEADRACE(victim)))
+       !IS_UNDEADRACE(victim))
     {
       if(IS_PC(ch) || 
          IS_PC_PET(ch))
@@ -1420,7 +1420,7 @@ void spell_wither(int level, P_char ch, char *arg, int type, P_char victim,
   
   percent += (int) (GET_LEVEL(ch) - GET_LEVEL(victim));
 
-  if(NewSaves(victim, SAVING_SPELL, 0))
+  if(NewSaves(victim, SAVING_FEAR, 0))
     percent = (int) percent * .75;
 
   percent = BOUNDED(0, percent, 100);
@@ -7655,12 +7655,14 @@ void spell_sleep(int level, P_char ch, char *arg, int type, P_char victim,
   int      i;
 
   if(GET_STAT(ch) == STAT_DEAD)
+   send_to_char("They are already... quite... asleep... for good.&n\n", ch);
     return;
 
   if(IS_AFFECTED(ch, AFF_INVISIBLE) || IS_AFFECTED2(ch, AFF2_MINOR_INVIS))
     appear(ch);
 
   if(resists_spell(ch, victim))
+   send_to_char("Your victim resists your attempt to make them sleep.&n\n", ch);
     return;
 
   if(level > 0)
@@ -7669,7 +7671,7 @@ void spell_sleep(int level, P_char ch, char *arg, int type, P_char victim,
       if(victim->equipment[i] &&
           IS_SET(victim->equipment[i]->extra_flags, ITEM_NOSLEEP))
       {
-        send_to_char("&+CYou failed!\n", ch);
+        send_to_char("&+CYour target appears to be protected against sleeping!\n", ch);
         if(IS_PC(victim))
           send_to_char("You stifle a yawn.\n", victim);
         if(IS_NPC(victim) && CAN_SEE(victim, ch))
@@ -7677,6 +7679,7 @@ void spell_sleep(int level, P_char ch, char *arg, int type, P_char victim,
           remember(victim, ch);
           if(!IS_FIGHTING(victim))
             MobStartFight(victim, ch);
+	send_to_char("Your victim does not want to sleep right now!&n\n", ch);
         }
         return;
       }
@@ -7716,6 +7719,7 @@ void spell_sleep(int level, P_char ch, char *arg, int type, P_char victim,
     remember(victim, ch);
     if(!IS_FIGHTING(victim))
       MobStartFight(victim, ch);
+   send_to_char("Your victim does not want to sleep right now!&n\n", ch);
   }
 }
 
@@ -8892,6 +8896,18 @@ void spell_vitality(int level, P_char ch, char *arg, int type, P_char victim,
   if(IS_NPC(victim) &&
      GET_VNUM(victim) == IMAGE_REFLECTION_VNUM)
       return;
+
+if(affected_by_spell(victim, SPELL_MIELIKKI_VITALITY))
+  {
+    send_to_char("&+GThe Goddess Mielikki is aiding your health, and prevents the vitality spell from functioning...\r\n", victim);
+    return;
+  }
+
+  if(affected_by_spell(victim, SPELL_ESHABALAS_VITALITY))
+  {
+    send_to_char("&+rThe blessings of the vitality spell are denied by Eshabala!\r\n", victim);
+    return;
+  }
       
   if(!IS_PC(ch) &&
      !IS_PC(victim))
@@ -20900,6 +20916,13 @@ void spell_mielikki_vitality(int level, P_char ch, char *arg, int type, P_char v
     send_to_char("&+GThe blessings of the Goddess Mielikki are denied!\r\n", victim);
     return;
   }
+
+if(affected_by_spell(ch, SPELL_VITALITY))
+  {
+    send_to_char("&+GThe Goddess Mielikki cannot further bless your vitality...\r\n", victim);
+    return;
+  }
+
 
   if(affected_by_spell(ch, SPELL_MIELIKKI_VITALITY))
   {

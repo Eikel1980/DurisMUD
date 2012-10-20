@@ -932,7 +932,7 @@ void do_rage(P_char ch, char *argument, int cmd)
   memset(&af, 0, sizeof(struct affected_type));
   af.type = SKILL_RAGE;
   af.flags = AFFTYPE_SHORT;
-  //af.bitvector2 = AFF2_FLURRY; Removing flurry from rage, and lets try just making it increase their damage output instead.
+  af.bitvector2 = AFF2_FLURRY;
   af.duration = dura;
   affect_to_char(ch, &af);
 

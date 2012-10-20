@@ -4,7 +4,7 @@
  *  Usage: Commands that mainly manipulate objects.
  *  Copyright  1990, 1991 - see 'license.doc' for complete information.
  *  Copyright 1994 - 2008 - Duris Systems Ltd.
- *
+ * 
  * ***************************************************************************
  */
 
