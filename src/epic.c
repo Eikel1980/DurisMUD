@@ -2252,8 +2252,8 @@ void do_epic_reset(P_char ch, char *arg, int cmd)
   P_char t_ch = ch;
 
 // Disabling for equipment wipe - re-enable at a later time - Drannak 8/9/2012
-  send_to_char("&+YEpic point resetting has been temporarily &+Rdisabled &+Ywhile we equipment wipe.&n\r\n", ch);
-  return;
+//  send_to_char("&+YEpic point resetting has been temporarily &+Rdisabled &+Ywhile we equipment wipe.&n\r\n", ch);
+//  return;
 // end disable
   
   if(IS_TRUSTED(ch) && strlen(buff3))
