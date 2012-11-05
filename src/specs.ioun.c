@@ -219,7 +219,8 @@ int ioun_warp(P_obj obj, P_char ch, int cmd, char *argument)
       obj->value[5]++;
       if (obj->value[5] > 10)
         obj->value[5] == 10;
-      if (obj->value[5] == 5)
+    /* 
+     if (obj->value[5] == 5)
       {
         send_to_char("Uhoh, your stone seems unhappy...\r\n", ch);
         return FALSE;
@@ -253,7 +254,7 @@ int ioun_warp(P_obj obj, P_char ch, int cmd, char *argument)
         extract_obj(obj, TRUE);
         return FALSE;
       }
-
+    */
       target = get_char_vis(ch, Gbuf2);
       if (target && target != ch && IS_PC(target) && !IS_TRUSTED(target))
       {
