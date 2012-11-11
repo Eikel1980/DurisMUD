@@ -2312,15 +2312,16 @@ void die(P_char ch, P_char killer)
 //   {
     if(check_random_drop(killer, ch, 0))
     {
-      if(!number(0, 25) &&
-        (GET_LEVEL(ch) > 51))
+      if(!number(0, 25))// &&
+       // (GET_LEVEL(ch) > 51))
       {
         tempobj = create_stones(ch);
       }
       else
       {
         //if(GET_LEVEL(ch) < 30 || GET_LEVEL(killer) < 20) //removing level restriction, adding racewar check goods only - drannak
-       if(GET_RACEWAR(ch) == 1)
+       if(GET_RACEWAR(killer) == 1)
+
 	{
         tempobj = create_random_eq_new(killer, ch, -1, -1);
        }
