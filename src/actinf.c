@@ -1402,14 +1402,14 @@ void show_char_to_char(P_char i, P_char ch, int mode)
                     race_names_table[(int) GET_RACE(i)].ansi,
                     size_types[GET_ALT_SIZE(i)]);
         }
-          
+        //Backrank display - Drannak  
         /*
 				if (i->group && !IS_BACKRANKED(i))
           strcat(buffer, "(&+RF&n)");
 
         if (i->group && IS_BACKRANKED(i))
           strcat(buffer, "(&+BB&n)");
-				*/
+		*/		
 
         if (IS_PC(i) && i->desc && i->desc->olc)
           strcat(buffer, " (&+MOLC&N)");

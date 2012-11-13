@@ -2313,7 +2313,7 @@ void die(P_char ch, P_char killer)
     
  // if(GET_LEVEL(ch) < 30 || GET_LEVEL(killer) < 20)
 //   {
-    if(check_random_drop(killer, ch, 0))
+    if(check_random_drop(killer, ch, 1))
     {
       if(!number(0, 25))// &&
        // (GET_LEVEL(ch) > 51))
@@ -2323,14 +2323,15 @@ void die(P_char ch, P_char killer)
       else
       {
         //if(GET_LEVEL(ch) < 30 || GET_LEVEL(killer) < 20) //removing level restriction, adding racewar check goods only - drannak
-       if(GET_RACEWAR(killer) == 1)
-
+       if(GET_RACEWAR(killer) == RACEWAR_GOOD)
 	{
         tempobj = create_random_eq_new(killer, ch, -1, -1);
+        send_to_char("It appears you were able to salvage a piece of equipment from your enemy.\n", killer);
        }
 	else
 	{
 	tempobj = create_material(killer, ch);
+       send_to_char("It appears you were able to salvage a piece of material from your enemy.\n", killer);
 	}
       }
       if(tempobj &&
@@ -2339,11 +2340,10 @@ void die(P_char ch, P_char killer)
         obj_to_char(tempobj, ch);
       }
     }
-
-    if(check_random_drop(killer, ch, 1))
+    if(check_random_drop(killer, ch, 0))
     {
-      if(!number(0, 25) &&
-        (GET_LEVEL(ch) > 51))
+      if(!number(0, 25))// &&
+       // (GET_LEVEL(ch) > 51))
       {
         tempobj = create_stones(ch);
       }
@@ -4133,8 +4133,11 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags,
 	//send_to_char("&+Rdamage output halved\r\n", ch);
 	}
 */
-	if (has_innate(victim, MAGIC_VULNERABILITY))
-        dam *= 1.30;   
+	if (has_innate(victim, MAGIC_VULNERABILITY) && (GET_RACE(victim) == RACE_OGRE))
+        dam *= 1.20;
+
+       if(has_innate(victim, MAGIC_VULNERABILITY) && (GET_RACE(victim) == RACE_FIRBOLG))
+        dam *= 1.15;   
  
     if((af = get_spell_from_char(victim, SPELL_ELEM_AFFINITY)) &&
        ELEMENTAL_DAM(type))
