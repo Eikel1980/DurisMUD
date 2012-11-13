@@ -1578,8 +1578,8 @@ int buy_weapon(P_char ch, P_ship ship, char* arg1, char* arg2)
     set_weapon(ship, slot, w, arc);
     int buildtime = weapon_data[w].weight * 75;
     int pvp = false;
-	pvp = ocean_pvp_state();
-        if (pvp) buildtime *= 4;
+	//pvp = ocean_pvp_state();
+       // if (pvp) buildtime *= 4;
     send_to_char_f(ch, "Thank you for your purchase, it will take %d hours to install the part.\r\n", (int) (buildtime / 75));
     if (!IS_TRUSTED(ch) && BUILDTIME)
         ship->timer[T_MAINTENANCE] += buildtime;
@@ -1779,7 +1779,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
             buildtime = 75 * (oldclass / 2 - ship->m_class / 3);
     int pvp = false;
     pvp = ocean_pvp_state();
-        if (pvp) buildtime *= 4;
+        if (pvp) buildtime *= 5;
 
 
         send_to_char_f(ch, "Thanks for your business, it will take %d hours to complete this upgrade.\r\n", buildtime / 75);
