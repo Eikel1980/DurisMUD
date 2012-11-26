@@ -3485,7 +3485,8 @@ void retitle_member(P_char member, P_char titlee, char *title)
     return;
   }
   /* only seniors or higher can set new titles */
-  if (!IS_GOD(dummy1) && !IS_LEADER(dummy1))    /* &&
+  if (!IS_GOD(dummy1) && (IS_DEPUTY(dummy1) || IS_OFFICER(dummy1)))
+/*!IS_LEADER(dummy1) &&
                                                    (!((titlee == member) && (IS_DEPUTY(dummy1) || IS_OFFICER(dummy1))))) */
   {
     send_to_char("Maybe one day you will be trusted enough to do that.\r\n",
