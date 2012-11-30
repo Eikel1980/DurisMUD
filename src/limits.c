@@ -638,7 +638,7 @@ void advance_level(P_char ch)
   if (IS_PC(ch) && (ch->only.pc->highest_level < GET_LEVEL(ch)))
     ch->only.pc->highest_level = GET_LEVEL(ch);
 
-  if (GET_LEVEL(ch) == get_property("exp.maxExpLevel", 45)) {
+  if ((GET_LEVEL(ch) == get_property("exp.maxExpLevel", 45)) && !IS_HARDCORE(ch)) {
     char buf[512];
     sprintf(buf, 
         "You are now level %d and are considered among "
@@ -1334,13 +1334,28 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
 
   if (XP_final > 0)
   { 
-    for (int i = GET_LEVEL(ch) + 1;
+    if (IS_HARDCORE(ch) && (GET_LEVEL(ch) <= 55)) //Hardcores should level via exp only. - Drannak 11/30/12
+    {
+	  
+  	int i;
+     
+     	for (i = GET_LEVEL(ch) + 1;i <= 56 && (new_exp_table[i] <= GET_EXP(ch)); i++)
+  	{
+    	GET_EXP(ch) -= new_exp_table[i];
+    	advance_level(ch);
+  	}
+
+    }
+  else
+   {
+	for (int i = GET_LEVEL(ch) + 1;
         (i <= get_property("exp.maxExpLevel", 46)) && 
         (new_exp_table[i] <= GET_EXP(ch)); i++)
     {
       GET_EXP(ch) -= new_exp_table[i];
       advance_level(ch);
     }
+   }
   }
   else
   {
