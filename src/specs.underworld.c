@@ -4220,7 +4220,7 @@ int tendrils(P_obj obj, P_char ch, int cmd, char *arg)
       ch = obj->loc.carrying;
     else
       return FALSE;
-
+   /* Evils now have monks
     w_align = (RACE_EVIL(ch) && !(GET_RACE(ch) == RACE_PHANTOM)) ? 0 :
       RACE_PUNDEAD(ch) ? 0 : GET_CLASS(ch, CLASS_MONK) ? 3 : 2;
     if (w_align == 2)
@@ -4293,7 +4293,7 @@ int tendrils(P_obj obj, P_char ch, int cmd, char *arg)
             FALSE, ch, obj, vict, TO_VICT);
       }
       return TRUE;
-    }
+    }*/
 
   }
 
