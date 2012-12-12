@@ -4601,9 +4601,10 @@ void do_wear(P_char ch, char *argument, int cmd)
           }
         } // End Inner Loop
         // Give a Message that the ch has Equiped itself Fully.
-        act("$n fully equips $mself.", TRUE, ch, 0, 0, TO_ROOM);
-        act("You fully equip yourself.", FALSE, ch, 0, 0, TO_CHAR);
+
     } // End Outer Loop
+           act("$n fully equips $mself.", TRUE, ch, 0, 0, TO_ROOM);
+        act("You fully equip yourself.", FALSE, ch, 0, 0, TO_CHAR);
   }
   /*
    * added by DTS 5/18/95 to solve light bug
