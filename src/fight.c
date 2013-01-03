@@ -5033,8 +5033,9 @@ void check_vamp(P_char ch, P_char victim, double fdam, uint flags)
     temp_dam = 0;
     temp_dam = number(1, (int) (temp_dam));
     
-    if(IS_PC(ch) &&
-       GET_LEVEL(ch) >= 46)
+    if(IS_PC(ch))
+	// &&
+       //GET_LEVEL(ch) >= 46)
     {
       temp_dam = dam * get_property("vamping.self.battleEcstasy", 0.150);
       //vamp(ch, temp_dam, GET_MAX_HIT(ch) * get_property("vamping.BTX.self.HP.PC", 1.10));
