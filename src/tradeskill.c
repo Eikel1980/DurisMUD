@@ -1431,8 +1431,6 @@ void do_bandage(P_char ch, char *arg, int cmd)
 //Drannak Stuff
 static FILE *recipefile;
 
-
-
 void create_recipes_file(const char *dir, char *name)
 {
   char     buf[256], *buff;
@@ -1443,28 +1441,26 @@ void create_recipes_file(const char *dir, char *name)
   buff = buf;
   for (; *buff; buff++)
     *buff = LOWER(*buff);
-  sprintf(Gbuf1, "%s/%c/%s", dir, buf[0], buf);
+  sprintf(Gbuf1, "%s/%c/%s.crafting", dir, buf[0], buf);
   f = fopen(Gbuf1, "w");
   fclose(f);
 }
-
 
 void create_recipes_name(char *name)
 {
   create_recipes_file("Players/Tradeskills", name);
 }
 
-
 int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
 {
-/*
-  char     filename[1024];
+
+
   char     buf[256], *buff;
-  char     Gbuf1[MAX_STRING_LENGTH];
-*/
+  char     Gbuf1[MAX_STRING_LENGTH], *c;
   FILE    *f;
-  FILE    *fraglist;
-  char     fraglist_file[1024];
+  FILE    *recipelist;
+  int recipenumber = obj->value[6];
+
   P_char temp_ch;
 
   if(!ch)
@@ -1481,34 +1477,43 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
   if(ch != temp_ch)
     return FALSE;
 
-  //check if tradeskill file exists for player
-  //recipefile = fopen("Players/Tradeskills/%s", GET_NAME(ch));
-  //if(!player_recipe_exists("Players/Tradeskills", GET_NAME(ch))
-  //strcpy(buf, name);
-  //sprintf(Gbuf1, "Players/Tradeskills/%s", GET_NAME(ch));
-  
-  //if (!(recipefile = fopen("Players/Tradeskills/d/duris", "rt")))
-  //do creation of file here
-/* if(0, 1)
-  {*/
- 
-
-  fraglist = fopen("Players/Tradeskills/d/duris", "rt");
-  if (!fraglist)
+    if (recipenumber == 0)
   {
- 
-    send_to_char("You have'nt yet learned any recipes... lets fix that...\r\n", ch);
+   send_to_char("This item is useless!\r\n", ch);
+   return FALSE;
+  }
+
+  //Create buffers for name
+  strcpy(buf, GET_NAME(ch));
+  buff = buf;
+  for (; *buff; buff++)
+    *buff = LOWER(*buff);
+  //buf[0] snags first character of name
+  sprintf(Gbuf1, "Players/Tradeskills/%c/%s.crafting", buf[0], buf);
+
+  /*just a debug test
+  send_to_char(Gbuf1, ch);*/
+
+  //check if tradeskill file exists for player
+  recipelist = fopen(Gbuf1, "rt");
+
+  if (!recipelist)
+  {
+    send_to_char("As you examine the recipe, small &+mm&+Mag&+Wi&+Mca&+ml &+Wmists&+w begin to form...\r\n", ch);
+    send_to_char("...without warning, a &+Ltome &+yof &+Ycraf&+ytsman&+Lship&n appears in your hands.\r\n", ch);
     create_recipes_name(GET_NAME(ch));
   }
-  
- // }
-  //recipefile = fopen("Players/Tradeskills/%s", GET_NAME(ch));
-  recipefile = fopen("Players/Tradeskills/d/duris", "a");
-  fprintf(recipefile, "%d\n", obj->value[6]);
-  send_to_char("You take out your &+Ltome &+yof &+Lcraftsmanship&n and write down the recipe.\r\n", ch);
-  //fprintf(recipefile, "blah\n");
-  //fflush(recipefile);
-   fclose(recipefile);
-   return TRUE;
+
+  recipefile = fopen(Gbuf1, "a");
+  fprintf(recipefile, "%d\n", recipenumber);
+  act("$n opens their &+Ltome &+yof &+Ycraf&+ytsman&+Lship&n and begins scribing the &+yrecipe&n...\n"
+  "As they finish the last entry of the &+yrecipe&n, a &+Mbri&+mgh&+Wt &nflash of &+Clight&n appears,\n"
+  "quickly consuming $p, which vanishes from sight.\r\n", FALSE, ch, obj, 0, TO_ROOM);
+  act("You open your &+Ltome &+yof &+Ycraf&+ytsman&+Lship&n and begin scribing the recipe...\n"
+  "As you finish the last entry of the &+yrecipe&n, a &+Mbri&+mgh&+Wt &nflash of &+Clight&n appears,\n"
+  "quickly consuming $p, which vanishes from sight.\r\n", FALSE, ch, obj, 0, TO_CHAR);   
+  fclose(recipefile);
+  extract_obj(obj, !IS_TRUSTED(ch));
+  return TRUE;
 }
 

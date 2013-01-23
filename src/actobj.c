@@ -4862,6 +4862,9 @@ void do_salvage(P_char ch, char *argument, int cmd)
   P_obj    temp;
   char     Gbuf4[MAX_STRING_LENGTH];
   int	rolled;
+  
+  int reciperoll = (number(1, 10000));
+  int playerroll = (GET_C_LUCK(ch) + (GET_LEVEL(ch)*2) + GET_CHAR_SKILL(ch, SKILL_CRAFT));
 
   one_argument(argument, Gbuf4);
 
@@ -4874,7 +4877,8 @@ void do_salvage(P_char ch, char *argument, int cmd)
     return;
   }
   */
- 
+
+
 
 
   if(GET_CHAR_SKILL(ch, SKILL_CRAFT) < 1)
@@ -4882,6 +4886,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
     send_to_char("Only &+ycrafters&n have the necessary &+yskill&n to break down &+Witems&n.\n", ch);
     return;
   }
+
 
   if (!(temp = get_obj_in_list_vis(ch, Gbuf4, ch->carrying)))
   {
@@ -4898,7 +4903,9 @@ void do_salvage(P_char ch, char *argument, int cmd)
   if (temp->extra_flags == ITEM_NOSELL)
     {
 	 act("There is apparently no &+Yworth &nto that item.", FALSE, ch, 0, 0, TO_CHAR); 
+        return;
 	}
+
   if (temp->type == ITEM_FOOD)
    {
     act("Why would you want to salvage anything from your &+Ydinner&n?", FALSE, ch, 0, 0, TO_CHAR);
@@ -4935,6 +4942,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
 	byte objmat = temp->material;
 	byte objcft = temp->craftsmanship; //0-16 value
 	int matvnum;
+       
     int rand1 = number(1, 16);
 	int rand2 = number(1, 3);
 	int objchance = (objcft * 7 / 2 + GET_CHAR_SKILL(ch, SKILL_CRAFT) / 2 - rand1); //better skill and better quality yields better chance for good material
@@ -5721,10 +5729,55 @@ void do_salvage(P_char ch, char *argument, int cmd)
 		act("&+w...and you only came up with a single piece of &+ymaterial&n.", FALSE, ch, 0, 0, TO_CHAR);
 		obj_to_char(read_object(matvnum, VIRTUAL), ch);
 		}
-	extract_obj(temp, !IS_TRUSTED(ch));
+      
+              
+      if((reciperoll < playerroll) && IS_TRUSTED(ch))
+      {
+       /***RECIPE CREATE***/
+       P_obj objrecipe;
+       char buffer[256], old_name[256];
+       char *c;
+       int recipenumber = obj_index[temp->R_num].virtual_number;
+       
+       if(obj_index[temp->R_num].virtual_number == 1252)
+	{
+         extract_obj(temp, !IS_TRUSTED(ch));
+	  return;
+	}
+       
+	objrecipe = read_object(400210, VIRTUAL);
+       SET_BIT(objrecipe->value[6], recipenumber);
+       strcpy(old_name, objrecipe->short_description);
+       sprintf(buffer, "%s %s&n", old_name, temp->short_description);
+
+
+        if ((objrecipe->str_mask & STRUNG_DESC2) && objrecipe->short_description)
+         FREE(objrecipe->short_description);
+
+       objrecipe->short_description = str_dup(buffer);
+
+       objrecipe->str_mask |= STRUNG_DESC2;
+       obj_to_char(objrecipe, ch);
+       act("As $n breaks down their $p, they are suddenly &+Yenlightened&n!\n"
+  	"$n quickly grabs a quill and &+yvellum paper&n and starts to write down the &+Cdetailed&n\n"
+  	"intricacies surrounding $p.\r\n", FALSE, ch, temp, 0, TO_ROOM);
+  	act("As you break down your $p, you are suddenly &+Yenlightened&n!\n"
+  	"You quickly grab a quill and &+yvellum paper&n and start to write down the &+Cdetailed&n\n"
+  	"intricacies surrounding $p.\r\n", FALSE, ch, temp, 0, TO_CHAR);  
+       act("$n has created $p!\r\n", FALSE, ch, objrecipe, 0, TO_ROOM); 
+       act("You have created $p!\r\n", FALSE, ch, objrecipe, 0, TO_CHAR);
+
+      /***END RECIPE CREATE***/
+      }
+     statuslog(ch->player.level,
+        "&+ySalvage:&n (%s&n) just salvaged [%d] (%s&n) at [%d]!",
+          GET_NAME(ch),
+          obj_index[temp->R_num].virtual_number,
+          temp->short_description,
+          (ch->in_room == NOWHERE) ? -1 : world[ch->in_room].number);
 	char_light(ch);
 	room_light(ch->in_room, REAL);
-	//endif	
+	extract_obj(temp, !IS_TRUSTED(ch));
   } 
   //end do_salvage
 }
