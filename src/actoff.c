@@ -4400,6 +4400,7 @@ void event_sneaky_strike(P_char ch, P_char victim, P_obj obj, void *data)
   }
   /* notch_skill(ch, SKILL_SNEAKY_STRIKE,
               get_property("skill.notch.offensive", 15)); */
+   notch_skill(ch, SKILL_SNEAKY_STRIKE, 20);
   dam *= 2;
 
   dam += str_app[STAT_INDEX(GET_C_STR(ch))].todam + GET_C_DEX(ch) / 4;
