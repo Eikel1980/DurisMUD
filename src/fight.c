@@ -8465,20 +8465,20 @@ int calculate_attacks(P_char ch, int attacks[])
   }
 
   //dex and dex max now grants extra attacks.
-  if(GET_C_DEX(ch) >= 150)
+  if(GET_C_DEX(ch) >= 155)
     {
      send_to_char("&nYour &+gsuper&+Gbly dext&+gerous movements allow you to throttle your enemy with attacks!&n\n\r", ch);
      ADD_ATTACK(PRIMARY_WEAPON);
      ADD_ATTACK(PRIMARY_WEAPON);
      ADD_ATTACK(PRIMARY_WEAPON);
     }
-  else if(GET_C_DEX(ch) >=135)
+  else if(GET_C_DEX(ch) >=140)
     {
      send_to_char("&nYour &+Gimproved &+gdexterity&n allows you to easily attack your enemy!&n\n\r", ch);
      ADD_ATTACK(PRIMARY_WEAPON);
      ADD_ATTACK(PRIMARY_WEAPON);
     }
-  else if(GET_C_DEX(ch) >=120)
+  else if(GET_C_DEX(ch) >=125)
     {
      send_to_char("&nYour heightened &+gdexterity&n allows you to swiftly attack your enemy!&n\n\r", ch);
      ADD_ATTACK(PRIMARY_WEAPON);
