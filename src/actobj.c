@@ -5823,14 +5823,11 @@ void do_salvage(P_char ch, char *argument, int cmd)
   		 newcost = 200; //20 s starting point
 		modifier = GET_OBJ_VNUM(salvaged) - 399999;
   		newcost = newcost * modifier; //since the vnum's are sequential, the greatest rarity gets a 1.3 modifier, lowest gets 100% of value.
- 		  sprintf(dbug, "1 Current newcost value: %d\r\n", newcost);
- 		  send_to_char(dbug, ch);
+ 		  
  		  newcost = (newcost * GET_LEVEL(ch)) / 56;
- 		  sprintf(dbug, "2 Current newcost value: %d\r\n", newcost);
- 		  send_to_char(dbug, ch);
+ 		  
      		 newcost = (newcost * GET_CHAR_SKILL(ch, SKILL_SALVAGE) / 100);
-		sprintf(dbug, "3 Current newcost value: %d\r\n", newcost);
- 		  send_to_char(dbug, ch);
+		
  		  if(GET_OBJ_VNUM(salvaged) < 400140)
  		   {
   		   newcost = (newcost * 8) / 10; //anything less than gold gets a little bit of a reduction in price
@@ -5838,8 +5835,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
 
 
 
-		sprintf(dbug, "4 Current newcost value: %d\r\n", newcost);
- 		  send_to_char(dbug, ch);
+		
       		if(number(80, 140) < GET_C_LUCK(ch))
   		 {
   		   newcost *= 1.3;
