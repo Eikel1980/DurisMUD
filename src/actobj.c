@@ -45,6 +45,7 @@ extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;
 extern int top_of_zone_table;
 extern P_index mob_index;
+extern const int new_exp_table[];
 
 extern void obj_affect_remove(P_obj, struct obj_affect *);
 
@@ -2671,8 +2672,31 @@ void do_eat(P_char ch, char *argument, int cmd)
     return;
   }
 
+    /* special handling: value[5] specifies special functions for epic food */
+  int oaffect;
+  oaffect = (temp->value[5]);
+  if(oaffect > 0)
+  {
+    if(oaffect == 1337) //+1 level mushroom
+    {
+      if(GET_LEVEL(ch) > 45)
+	{
+	  send_to_char("&+GYou are much too powerful for the magic of this item&n.\r\n", ch);
+	  return;
+	}
+      send_to_char("&+gAs you eat the &+GMushroom&+g, a &+Mmagical&+g essence surrounds you and you suddenly feel more &+Gexperienced!&n\r\n", ch);
+      advance_level(ch);
+      //GET_EXP(ch) = exp_table[(GET_LEVEL(ch) - 1)] ;
+      GET_EXP(ch) -= new_exp_table[GET_LEVEL(ch) + 1];
+      extract_obj(temp, TRUE);
+      return;
+    }
+  }
+
   act("$n eats $p.", TRUE, ch, temp, 0, TO_ROOM);
   act("You eat the $q.", FALSE, ch, temp, 0, TO_CHAR);
+
+  
 
   if (temp->type == ITEM_FOOD)
   {

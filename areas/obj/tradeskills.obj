@@ -1698,3 +1698,35 @@ magic essence magical salvaged~
 8 15 2 0 15 0 270337 8404993 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
+#400212
+vial crystalline living blood~
+&+ca &+ccry&+Cstall&+Wine &+Cvial &+cof &+rliving &+Rblood&n~
+&+cA vial of &+Rblood&+c is lying here.&n~
+~
+10 8 2 0 15 0 9 16385 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#400213
+mushroom green magical~
+&+ga &+gM&+Ga&+Wg&+Gi&+gc&+Ga&+Wl &+GGreen &+gMu&+Gshro&+gom from the &+GSylvan &+yWoods&n~
+&+gSome fool has dropped a magic mushroom here&n~
+~
+19 43 1 0 15 0 9 16385 0 0 0
+0 0 0 0 0 1337 0 0
+0 0 100
+#400214
+gnomish item restring contract~
+&+ya &+RGnomish&n &+yitem &+Yrestring &+ycontract&n~
+&+yA signed contract lies here&n~
+~
+2 29 2 0 15 0 270345 16385 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+#400215
+pulsating piece illithid brain~
+&+ma &+Mp&+mu&+Ml&+ms&+Ma&+mt&+Mi&+mn&+Mg &+mpiece of &+MIllithid&+m brain&n~
+&+mwhat the... a piece of illithi brain is here trying to escape&n~
+~
+19 2 1 0 15 0 33554440 16385 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100

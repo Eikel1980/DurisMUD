@@ -2583,6 +2583,7 @@ void assign_rooms(void)
   /* Tradeskills */
   mob_index[real_mobile0(132674)].func.mob = learn_tradeskill;
   mob_index[real_mobile0(97606)].func.mob = learn_tradeskill;
+  mob_index[real_mobile0(400000)].func.mob = epic_store;
 
   /* Bronze Citadel */ 
   obj_index[real_object0(32486)].func.obj = bel_sword;

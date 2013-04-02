@@ -3391,6 +3391,19 @@ void do_quaff(P_char ch, char *argument, int cmd)
   if(equipped)
     unequip_char(ch, HOLD);
 
+    /* value[5] specifies special functions for epic potions */
+/*
+  //make sure to add default spell to potion.
+  if(temp->value[5] > 0)
+  {
+    if(temp->value[5] == 1337)
+    {
+      advance_level(ch);
+      extract_obj(temp, TRUE);
+      return;
+    }
+  }
+*/
   /* value[4] specifies damage player takes from potion - considered non-magical */
 
   if(temp->value[4] > 0)

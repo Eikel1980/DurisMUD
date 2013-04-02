@@ -1758,6 +1758,34 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
   return TRUE;
 }
 
+int epic_store(P_char ch, P_char pl, int cmd, char *arg)
+{
+  char buffer[MAX_STRING_LENGTH];
+  char     buf[256], *buff;
+  char     Gbuf1[MAX_STRING_LENGTH], *c;
+
+  if(cmd == CMD_LIST)
+  {//iflist
+      if(!arg || !*arg)
+   {//ifnoarg
+      // practice called with no arguments
+      sprintf(buffer,
+              "&+WKannard&+L slowly lifts his hood and smiles.'\n"
+	       "&+WKannard&+L &+wsays 'Welcome adventurer. I offer exotic items from the far reaches beyond our own realm in exchange for &+cepic points&n.'\n"
+	       "&+WKannard&+L &+wsays 'Please refer to my &+ysign&n for an explanation of each of these items and their affects.'\n"
+              "&+y=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+              "&+y|&+W 1) &+ga M&+Ga&+Wg&+Gi&+gc&+Ga&+Wl &+GGreen &+gMu&+Gshro&+gom from the &+GSylvan &+yWoods&n		&+c125		&+y|\n"
+              "&+y=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+		"\n");
+      send_to_char(buffer, pl);
+      return TRUE;
+    }//endifnoarg
+
+
+  }//endiflist
+  return FALSE;
+}
+
 int learn_tradeskill(P_char ch, P_char pl, int cmd, char *arg)
 {
   char buffer[MAX_STRING_LENGTH];

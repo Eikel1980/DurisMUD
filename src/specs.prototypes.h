@@ -840,6 +840,7 @@ int elvenkind_cloak(P_obj, P_char, int, char*);
 int deflect_ioun(P_obj, P_char, int, char*);
 int epic_teacher(P_char, P_char, int, char *);
 int learn_tradeskill(P_char, P_char, int, char *);
+int epic_store(P_char, P_char, int, char *);
 int epic_familiar(P_char, P_char, int, char *);
 int smith(P_char, P_char, int, char *);
 
