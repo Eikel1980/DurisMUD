@@ -2262,7 +2262,7 @@ void do_open(P_char ch, char *argument, int cmd)
       //special proc for bag of random goodness - drannak 4/3/2013
 	if (obj_index[obj->R_num].virtual_number == 400217)
 	{
-	 send_to_char("&+mAs you open the &+Mbag&+m, a magical mist &+rex&+Rpl&+Mod&+Wes&+m from the bag!\r\n", ch);
+	 send_to_char("&+mAs you open the &+Mbag&+m, a magical mist &+rex&+Rpl&+Mod&+Wes&+m covering everything!\r\n", ch);
 	 char buf[MAX_STRING_LENGTH];
 	 P_obj robj;
 	 long robjint;
@@ -2279,16 +2279,18 @@ void do_open(P_char ch, char *argument, int cmd)
 		 {
 		  validobj = 0;
 		 }
-		else if(!IS_SET(robj->wear_flags, ITEM_TAKE) || robj->type == ITEM_KEY || IS_SET(robj->extra_flags, ITEM_ARTIFACT))
+		else if(!IS_SET(robj->wear_flags, ITEM_TAKE) || robj->type == ITEM_KEY || IS_SET(robj->extra_flags, ITEM_ARTIFACT) || IS_SET(robj->extra_flags, ITEM_NORENT) || IS_SET(robj->extra_flags, ITEM_NOSHOW) || IS_SET(robj->extra_flags, ITEM_TRANSIENT))
 		 {
 		  validobj = 0;
                 extract_obj(robj, FALSE);
 		 }
 
 	  }
-       act("&+mWhen at last it clears, the &+Mbag&+m is gone, and all that remains is &n$p&+m!\r\n", FALSE, ch, robj, 0, TO_CHAR);
-	 
-	obj_to_char(read_object(robjint, VIRTUAL), ch);       
+       act("&+mWhen at last it clears the &+Mbag&+m is gone, and all that remains is &n$p&+m!\r\n", FALSE, ch, robj, 0, TO_CHAR);
+	 P_obj reward;
+	reward = read_object(robjint, VIRTUAL);
+	REMOVE_BIT(reward->extra_flags, ITEM_SECRET);
+	obj_to_char(reward, ch);       
 	obj_from_char(obj, TRUE);
 	 statuslog(ch->player.level,
         "&+MFaerie Bag:&n (%s&n) just got [%d] (%s&n) at [%d]!",
