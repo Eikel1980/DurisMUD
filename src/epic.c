@@ -879,14 +879,14 @@ void epic_stone_level_char(P_obj obj, P_char ch)
       ch->only.pc->epics >= epics_for_level) || (GET_EXP(ch) >= new_exp_table[GET_LEVEL(ch)+1] && ch->only.pc->epics >= nostone_epics_for_level))
   {
     GET_EXP(ch) -= new_exp_table[GET_LEVEL(ch) + 1];
+    ch->only.pc->epics -= epics_for_level;
     advance_level(ch);//, TRUE); wipe2011
 	wizlog(56, "%s has attained epic level &+W%d&n!",
            GET_NAME(ch),
            GET_LEVEL(ch));
-    if(GET_LEVEL(ch) > 50)
-    {
-    ch->only.pc->epics -= ch->only.pc->epics;
-    }
+
+
+    
   }
   
 }
