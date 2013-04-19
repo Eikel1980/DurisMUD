@@ -8385,17 +8385,16 @@ int calculate_attacks(P_char ch, int attacks[])
 		   case 1:
 		   bzero(&af, sizeof(af));
 		   int bonus;
-		   bonus = (300 - GET_C_STR(ch));
-		   af.duration = 30;
+                 if(GET_C_STR(ch) >= 300)
+                 bonus = 0;
+                 else
+                 bonus = number(5, 10);
+		   af.duration = 50;
 		   af.location = APPLY_STR_MAX;
 		   af.modifier = bonus;
 		   af.flags = AFFTYPE_SHORT;
 		   affect_to_char(ch, &af);
-	          bonus = (120 - GET_DAMROLL(ch));
-		   af.location = APPLY_DAMROLL;
-		   af.modifier = bonus;
-		   af.flags = AFFTYPE_SHORT;
-		   affect_to_char(ch, &af);
+
 		   act("&nThe power of your &+Wgod&n suddenly fills your body and you feel &+BMUCH&n stronger!&n",
            FALSE, ch, 0, 0, TO_CHAR);
 		   act("&n$n gasps suddenly as their body is &+Benhanced&n by some &+Wother-worldly &npower!&n",

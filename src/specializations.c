@@ -56,6 +56,7 @@ struct allowed_race_spec_struct {
 	{RACE_HUMAN, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_HUMAN, CLASS_MONK,        SPEC_ALL},
 	{RACE_HUMAN, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_HUMAN, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Human Options */
 
 	/* Start Barbarian Options */
@@ -81,6 +82,7 @@ struct allowed_race_spec_struct {
 	{RACE_BARBARIAN, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_BARBARIAN, CLASS_MONK,        SPEC_ALL},
 	{RACE_BARBARIAN, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_BARBARIAN, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Barbarian Options */
 
 	/* Start Drow Elf Options */
@@ -130,6 +132,7 @@ struct allowed_race_spec_struct {
 	{RACE_GREY, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_GREY, CLASS_MONK,        SPEC_ALL},
 	{RACE_GREY, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_GREY, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Grey Elf Options */
 
 	/* Start Mountain Dwarf Options */
@@ -155,6 +158,7 @@ struct allowed_race_spec_struct {
 	{RACE_MOUNTAIN, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_MOUNTAIN, CLASS_MONK,        SPEC_ALL},
 	{RACE_MOUNTAIN, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_MOUNTAIN, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Mountain Dwarf Options */
 
 	/* Start Duergar Dwarf Options */
@@ -204,6 +208,7 @@ struct allowed_race_spec_struct {
 	{RACE_HALFLING, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_HALFLING, CLASS_MONK,        SPEC_ALL},
 	{RACE_HALFLING, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_HALFLING, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Halfling Options */
 
 	/* Start Gnome Options */
@@ -229,6 +234,7 @@ struct allowed_race_spec_struct {
 	{RACE_GNOME, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_GNOME, CLASS_MONK,        SPEC_ALL},
 	{RACE_GNOME, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_GNOME, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Gnome Options */
 
 	/* Start Ogre Options */
@@ -348,6 +354,7 @@ struct allowed_race_spec_struct {
 	{RACE_CENTAUR, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_CENTAUR, CLASS_MONK,        SPEC_ALL},
 	{RACE_CENTAUR, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_CENTAUR, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Centaur Options */
 
        /* Start Firbolg Options */
@@ -373,6 +380,7 @@ struct allowed_race_spec_struct {
 	{RACE_FIRBOLG, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_FIRBOLG, CLASS_MONK,        SPEC_ALL},
 	{RACE_FIRBOLG, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_FIRBOLG, CLASS_PSIONICIST,  SPEC_ALL},
 
 	/* Start Githyanki Options */
 	{RACE_GITHYANKI, CLASS_WARRIOR,   SPEC_GUARDIAN},
@@ -401,11 +409,23 @@ struct allowed_race_spec_struct {
 	/* Start Minotaur Options */
 	{RACE_MINOTAUR, CLASS_WARRIOR,   SPEC_GUARDIAN},
 	{RACE_MINOTAUR, CLASS_WARRIOR,   SPEC_SWORDSMAN},
-	{RACE_MINOTAUR, CLASS_SHAMAN,    SPEC_ALL},
-	{RACE_MINOTAUR, CLASS_SORCERER, SPEC_ALL},
-	{RACE_MINOTAUR, CLASS_BERSERKER, SPEC_ALL},
-       {RACE_MINOTAUR, CLASS_MERCENARY, SPEC_ALL},
-	/* End Minotaur Options */
+	{RACE_MINOTAUR, CLASS_ANTIPALADIN,   SPEC_ALL},
+       {RACE_MINOTAUR, CLASS_DRUID,         SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_CLERIC,        SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_SHAMAN,        SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_PSIONICIST,      SPEC_ALL},
+       {RACE_MINOTAUR, CLASS_SORCERER,      SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_CONJURER,      SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_ROGUE,         SPEC_THIEF},
+	{RACE_MINOTAUR, CLASS_ROGUE,         SPEC_ASSASSIN},
+	{RACE_MINOTAUR, CLASS_MERCENARY,     SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_BARD,          SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_BERSERKER,     SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_ETHERMANCER,   SPEC_ALL},
+	{RACE_MINOTAUR, CLASS_NECROMANCER,   SPEC_ALL},
+       {RACE_MINOTAUR, CLASS_MONK, 	    SPEC_ALL},
+       {RACE_MINOTAUR, CLASS_ILLUSIONIST,   SPEC_ALL},
+   	/* End Minotaur Options */
 
 	/* Start Goblin Options */
 	{RACE_GOBLIN, CLASS_WARRIOR,   SPEC_GUARDIAN},
@@ -462,6 +482,7 @@ struct allowed_race_spec_struct {
 	{RACE_GITHZERAI, CLASS_THEURGIST,   SPEC_ALL},
  	{RACE_GITHZERAI, CLASS_MONK,        SPEC_ALL},
 	{RACE_GITHZERAI, CLASS_NECROMANCER, SPEC_ALL},
+       {RACE_GITHZERAI, CLASS_PSIONICIST,  SPEC_ALL},
 	/* End Githzerai Options */
 
 	/* Start Drider Options */
