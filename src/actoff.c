@@ -3452,11 +3452,11 @@ bool kick(P_char ch, P_char victim)
     
     if(csize <= (vsize - 2))
     {
-      takedown_chance = (vsize - csize) * 3 ; // This was 5 per level.
+      takedown_chance = (vsize - csize) * 4 ; // This was 5 per level.
     }
     else if(csize >= (vsize + 2))
     {
-      takedown_chance = (csize - vsize) * 3 ; // This was 5 per level.
+      takedown_chance = (csize - vsize) * 4 ; // This was 5 per level.
     }
     else 
     {
@@ -3471,7 +3471,7 @@ bool kick(P_char ch, P_char victim)
 
     if(IS_CENTAUR(ch) && !IS_NPC(ch))
     {
-      takedown_chance = (int) (takedown_chance * 1.2);
+      takedown_chance = (int) (takedown_chance * 1.4);
     }
 
     takedown_chance = takedown_check(ch, victim, takedown_chance, SKILL_KICK,
@@ -3531,7 +3531,7 @@ bool kick(P_char ch, P_char victim)
             victim, TO_VICT);
         act("$n's mighty kick sends $N crashing into the wall!", FALSE, ch, 0,
             victim, TO_NOTVICT);
-        SET_POS(victim, POS_SITTING + GET_STAT(victim));
+        SET_POS(victim, POS_PRONE + GET_STAT(victim));
         
         if(!number(0, 24) &&
            !IS_STUNNED(victim))

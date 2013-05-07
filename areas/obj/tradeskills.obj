@@ -1856,3 +1856,27 @@ E
 box gnomish crafting tools~
 &+rThis box contains small tools used in the process of crafting items.&n
 ~
+#400225
+dirk pain suffering pvpitem~
+&+ra &+Ld&+ri&+Lr&+rk of &+Ru&+Ln&+Re&+Ln&+Rd&+Li&+Rn&+Lg&+r P&+Rai&+rN and S&+Rufferin&+rG&n~
+&+rSome moron has left an amazing dirk here!&n~
+~
+5 15 3 0 7 0 8537 8193 64 0 0
+2 2 10 0 0 0 0 0
+0 0 100 2 0 0 0
+A
+36 4
+A
+19 6
+#400226
+scythe nameless reapers~
+&+ra &+Rscythe &+rof the &+RNa&+mme&+Mle&+rss &+LRe&+wap&+Wers&n~
+&+rA blood splattered scythe lies here.&n~
+~
+5 15 3 0 7 0 33562697 8193 0 0 0
+5 5 5 0 0 0 0 0
+0 0 100 16 0 0 0
+A
+32 4
+A
+19 6

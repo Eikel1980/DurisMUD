@@ -842,10 +842,9 @@ extern unsigned int game_locked;
 #define CMD_SOULBIND    815
 #define CMD_ACHIEVEMENTS 816
 #define CMD_SALVATION   817
-#define CMD_DRANDEBUG   818
-#define CMD_REFINE	   819
-#define CMD_DREADNAUGHT 820
-#define CMD_DICE	   821
+#define CMD_REFINE	   818
+#define CMD_DREADNAUGHT 819
+#define CMD_DICE	   820
 
 /* cmds below are not real commands, they are
                 used in item special procedures to identify
@@ -861,6 +860,7 @@ extern unsigned int game_locked;
 #define CMD_DECAY       -200
 #define CMD_FOUND       -201
 #define CMD_DISPEL      -202
+
 
 #define CMD_MOB_COMBAT  0
 #define CMD_MOB_MUNDANE 0

@@ -3134,7 +3134,8 @@ void do_dice(P_char ch, char *arg, int cmd)
 
 int assoc_founder(P_char ch, P_char victim, int cmd, char *arg)
 {
-  char buffer[MAX_STRING_LENGTH];
+  char buffer[MAX_STRING_LENGTH] = "";
+  char buffer2[MAX_STRING_LENGTH], bufbug[256], buf[MAX_STRING_LENGTH];
   int qend;
 
   if(cmd == CMD_LIST)
@@ -3192,25 +3193,55 @@ int assoc_founder(P_char ch, P_char victim, int cmd, char *arg)
          victim);
        return TRUE;
      }
-     sprintf(buffer, "You selected %s\r\n", arg);
-     send_to_char(buffer, victim);
-     return TRUE;
-     /*
-        Locate the last quote && lowercase the magic words (if any)
-      */
-  /*
-     for (qend = 1; *(arg + qend) && (*(arg + qend) != '\''); qend++)
-       *(arg + qend) = LOWER(*(arg + qend));
-  
+       int i = 0;
+       sprintf(bufbug, arg);
+       int times = 0;
+       while(times < 2)
+       {
+          char blinkcheck[256]; //we'll use this to make sure they dont use -L for blinking ansi
+          int x = i +1;
+          sprintf(buffer2, "%c", bufbug[i]);
+          sprintf(blinkcheck, "%c", bufbug[x]);
+          if(strstr(buffer2, "-") && strstr(blinkcheck, "L"))
+          {
+           send_to_char("You may not have blinking ansi in a guild name.\r\n", victim);
+           return TRUE;
+          }
+          if(!strstr(buffer2, "'"))
+          {
+          strcat(buffer, buffer2);
+          }
+          else
+          times++;
+          i++;
+       }
 
-     if (*(arg + qend) != '\'')
-     {
-       send_to_char
-        ("The guild name must be enclosed in 'apostrophes'.\n",
-         victim);
-       return TRUE;
-     }
-    */
+     if(strstr(buffer, "shit") ||
+        strstr(buffer, "fuck") ||
+        strstr(buffer, "ass")  ||
+        strstr(buffer, "nigger") ||
+        strstr(buffer, "nazi") ||
+        strstr(buffer, "bitch") ||
+        strstr(buffer, "pussy") ||
+        strstr(buffer, "cunt"))
+       {
+        send_to_char("No curse words. Violations will be met with ban.\r\n", victim);
+        return TRUE;
+       }
+
+      strcat(buffer, "&n"); //no ansi bleed
+     sprintf(bufbug, "&+RNO racist, hate speech, or curse words will be tolerated in guild names. Violations will be met with a ban.\r\n");
+     sprintf(buffer2, "You have selected: %s for your guild name, is this correct? (y/n)", buffer, victim);  
+     send_to_char(bufbug, victim);   
+     send_to_char(buffer2, victim);
+     char makeit[MAX_INPUT_LENGTH];
+     sprintf(makeit, buffer);
+
+     strcpy(victim->desc->last_command, makeit);
+     strcpy(victim->desc->client_str, "found_asc");
+     victim->desc->confirm_state = CONFIRM_AWAIT;
+     return TRUE;
    }
   return FALSE;
 }
+

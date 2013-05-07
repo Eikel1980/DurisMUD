@@ -3699,13 +3699,13 @@ void do_nchat(P_char ch, char *argument, int cmd)
         sprintf(Gbuf2, "undefined ");
 
 
-      sprintf(Gbuf1, "&+wYou racewar chat to %s'&+w%s&n&+w'\n", Gbuf2,
+      sprintf(Gbuf1, "&+mYou racewar chat to %s'&+w%s&n&+w'\n", Gbuf2,
               argument);
       send_to_char(Gbuf1, ch, LOG_PRIVATE);
     }
     else if(IS_SET(ch->specials.act, PLR_ECHO) || IS_NPC(ch))
     {
-      sprintf(Gbuf1, "&+wYou tell your racewar '&+W%s&n&+w'\n", argument);
+      sprintf(Gbuf1, "&+mYou tell your racewar '&+W%s&n&+w'\n", argument);
       send_to_char(Gbuf1, ch);
     }
     else
@@ -3745,7 +3745,7 @@ void do_nchat(P_char ch, char *argument, int cmd)
       
     if(IS_TRUSTED(i->character))
     {
-      sprintf(Gbuf1, "&+W%s&n&+w newbie-chats (%s&+w): '&+Y%s&n&+w'\n",
+      sprintf(Gbuf1, "&+W%s&n&+m racewar-chats (%s&+w): '&+Y%s&n&+w'\n",
               PERS(ch, i->character, FALSE), Gbuf2, language_CRYPT(ch,
                                                                    i->
                                                                    character,
@@ -3753,7 +3753,7 @@ void do_nchat(P_char ch, char *argument, int cmd)
     }
     else
     {
-      sprintf(Gbuf1, "&+W%s&n&+w tells your racewar: '&+w%s&n&+w'\n",
+      sprintf(Gbuf1, "&+W%s&n&+m tells your racewar: '&+w%s&n&+w'\n",
               PERS(ch, i->character, FALSE), language_CRYPT(ch, i->character,
                                                             argument));
     }

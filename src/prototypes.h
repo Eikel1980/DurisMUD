@@ -340,6 +340,7 @@ void do_refine(P_char ch, char *arg, int cmd);
 int itemvalue(P_char ch, P_obj obj);
 void do_dice(P_char ch, char *arg, int cmd);
 
+
 /* actoff.c */
 bool CheckMultiProcTiming(P_char);
 bool single_stab(P_char ch, P_char victim, P_obj weapon);
@@ -986,7 +987,7 @@ void checkHallOfFame(P_char ch, char thekiller[1024]);
 void writeHallOfFame(P_char ch, char thekiller[1024]);
 
 /* leaderboard.c */
-int getLeaderBoardPts(P_char);
+long getLeaderBoardPts(P_char);
 void deleteLeaderEntry(char names[15][MAX_STRING_LENGTH], int frags[15], int pos, char killer[15][MAX_STRING_LENGTH]);
 void insertLeaderEntry(char names[15][MAX_STRING_LENGTH], int frags[15], char *name, int newFrags, int pos, char killer[15][MAX_STRING_LENGTH], char *killername);
 void checkLeaderBoard(P_char ch, char thekiller[1024]);

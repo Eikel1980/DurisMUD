@@ -1064,7 +1064,6 @@ const char *command[] = {
   "soulbind",
   "achievements",
   "salvation",
-  "drandebug",
   "refine",
   "dreadnaught",
   "dice",
@@ -1213,6 +1212,28 @@ void do_confirm(P_char ch, int yes)
   /*
    * they said yes, so do it
    */
+  //Guild creation - Drannak
+  if (strstr(ch->desc->client_str, "found_asc"))
+   {
+    char guildinfo[MAX_INPUT_LENGTH];
+    if(GET_MONEY(ch) < 5000000)
+    {
+      send_to_char("You dont have enough money!\r\n", ch);
+    ch->desc->confirm_state = CONFIRM_DONE;
+    strcpy(ch->desc->client_str, "");
+    return;
+
+    }
+
+    sprintf(guildinfo, ch->desc->last_command);
+    int x = found_asc(ch, ch, "n", guildinfo);
+    if(x)
+    SUB_MONEY(ch, 5000000, 0);
+    ch->desc->confirm_state = CONFIRM_DONE;
+    strcpy(ch->desc->client_str, "");
+    return;
+   }
+  
   ch->desc->confirm_state = CONFIRM_DONE;
   command_interpreter(ch, ch->desc->last_command);
 }
@@ -2249,6 +2270,8 @@ void assign_command_pointers(void)
   CMD_Y(CMD_BERSERK, STAT_NORMAL + POS_STANDING, do_berserk, 0);
   CMD_CNF_N(CMD_SUICIDE, STAT_DEAD, do_suicide, 1);
 
+  
+
   /*
    * level restricted commands
    */
@@ -2338,7 +2361,6 @@ void assign_command_pointers(void)
   CMD_N(CMD_LEADERBOARD, STAT_DEAD + POS_PRONE, displayLeader, 0);
   CMD_N(CMD_SOULBIND, STAT_DEAD + POS_PRONE, do_soulbind, 0);
   CMD_N(CMD_SALVATION, STAT_DEAD + POS_PRONE, do_salvation, 0);
-  CMD_N(CMD_DRANDEBUG, STAT_DEAD + POS_PRONE, do_drandebug, 0);
   CMD_N(CMD_REFINE, STAT_DEAD + POS_PRONE, do_refine, 0);
   CMD_N(CMD_ACHIEVEMENTS, STAT_DEAD + POS_PRONE, display_achievements, 0);
 //  CMD_N(CMD_RELIC, STAT_DEAD + POS_PRONE, displayRelic, 0);

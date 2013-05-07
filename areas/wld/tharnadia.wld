@@ -14134,10 +14134,19 @@ D5
 S
 #133073
 &+LThe &+yHall &+Lof &+gGuilds&n~
+This room is filled with documents of all sorts: Combat Scenarios,
+Battle Treaties, Governing Documents. A tall &+CHuman&n stands behind
+a &+ywooden&n counter, twirling his &+ymoustache&n and eyeing you.
 ~
 1325 142639176 0 0
 D1
 ~
 ~
 0 0 133071
+E
+default~
+This room is filled with documents of all sorts: Combat Scenarios,
+Battle Treaties, Governing Documents. A tall &+CHuman&n stands behind
+a &+ywooden&n counter, twirling his &+ymoustache&n and eyeing you.
+~
 S

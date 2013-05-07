@@ -572,10 +572,6 @@ E
 mask stone form boulder~
 &+wThis very strange looking &+ymask&+w occasionally gains a very &+Lhard&+w look to it.&N
 ~
-A
-13 25
-A
-1 15
 #87540
 slippers slipper rot decay~
 &+gthe &+Yslippers &+gof &+Lrot &+gand &+Ldecay&N~
@@ -583,7 +579,7 @@ slippers slipper rot decay~
 ~
 9 30 3 0 15 0 8192 65 0 1 0
 20 0 0 4 0 0 0 0
-0 0 100 32768 12288 32 0
+0 0 100 536911872 12288 32 0
 E
 slippers slipper rot decay~
 &+gThese &+Yslippers&+g are made from the essence of Jubilex.  They spread poison and&N
@@ -594,7 +590,7 @@ slippers slipper rot decay~
 A
 20 -4
 A
-35 10
+35 6
 #87541
 fiery hexagon earring~
 &+wa &+rf&+Yi&+Re&+rr&+Yy &+Lhexagon&N~
@@ -664,15 +660,11 @@ saddle xalandro's nightmare runes rune night mare horse~
 ~
 9 14 3 0 12 0 8192 16777217 0 0 0
 10 0 0 4 1 0 0 0
-0 0 100
+0 0 100 524288 0 0 0
 E
 saddle xalandro nightmare horse~
 &+LThis &+ysaddle&+L looks tough and it hums with powerful &+mrunes&+L.&N
 ~
-A
-13 25
-A
-24 -5
 #87546
 mask wildmagic wild unique~
 &+Gthe &+Mmask&+Y of&+B wildmagic&n~
@@ -1263,16 +1255,16 @@ saddle unicorn divine smiting smite~
 ~
 9 14 3 0 13 0 8192 16777217 0 0 0
 10 0 0 4 1 0 0 0
-0 0 100
+0 0 100 524288 0 0 0
 E
 saddle unicorn divine smiting smite~
 &+WThis &+Yunicorn&+W saddle looks to be studded with spikes.  Not all unicorns are&N
 &+Wjust pretty.&N
 ~
 A
-18 3
+35 5
 A
-19 3
+36 5
 #87586
 clump glowing fuzz fuz badge~
 &+La clump of &+Yglowing&+y fuzz&N~
@@ -1501,9 +1493,7 @@ vambrace vambraces braces ebb sleeves~
 &+bGiven by the god &+BN&+be&+Bp&+bt&+Bu&+bn&+Be&+b himself, these &+Bvambraces&+b are very powerful.&N
 ~
 A
-5 -10
-A
-24 3
+5 5
 #87601
 amulet named flow~
 &+Bthe &+bamulet&+B named &+b"&+LFlow&+b"&N~

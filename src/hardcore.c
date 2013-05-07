@@ -304,10 +304,10 @@ void checkHallOfFame(P_char ch, char killer[1024])
 }
 
 
-int getLeaderBoardPts(P_char ch)
+long getLeaderBoardPts(P_char ch)
 {
   
- int hardcorepts =
+ long hardcorepts =
        (GET_LEVEL(ch) * 1000) + (ch->points.curr_exp / 10000) +
              (ch->only.pc->frags * 100) - (ch->only.pc->numb_deaths * 25);
   /*
@@ -462,7 +462,8 @@ void writeLeaderBoard(P_char ch, char thekiller[1024])
   char     highPlayerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH],
     lowPlayerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH], change = FALSE;
   int      highHardcore[MAX_HALLOFFAME_SIZE],
-    lowHardcore[MAX_HALLOFFAME_SIZE], phalloffames, i;
+    lowHardcore[MAX_HALLOFFAME_SIZE], i;
+  long    phalloffames;
   char     killerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH];
   char     halloffamelist_file[1024];
   char     buffer[1024], *ptr;
@@ -490,10 +491,10 @@ void writeLeaderBoard(P_char ch, char thekiller[1024])
   }  
 
   if (isname(thekiller, "NotDead"))
-    phalloffames = getHardCorePts(ch);
+    phalloffames = getLeaderBoardPts(ch);
   else
     phalloffames =
-      getHardCorePts(ch) + 100;
+      getLeaderBoardPts(ch) + 100;
   *thekiller = toupper(*thekiller);
   /* read ten highest */
  

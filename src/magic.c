@@ -6792,6 +6792,7 @@ void spell_natures_touch(int level, P_char ch, char *arg, int type,
     af.modifier = SECS_PER_MUD_HOUR * WAIT_SEC / duration * healpoints;
     af.bitvector4 = AFF4_REGENERATION;
     affect_to_char(victim, &af);
+    update_achievements(ch, victim, healpoints, 1);
     
     if(IS_FIGHTING(victim))
     {

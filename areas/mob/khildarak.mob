@@ -3550,11 +3550,11 @@ HG 0 84 0 1
 #17265
 zurg guildmaster~
 &+LZ&+gu&+Grg&n~
-&+LZ&+gu&+Grg&+L, the &+gguildmaster&n stands here eating some &+rbbq &+HHuman&+L.
+&+LZ&+gu&+Grg&+L, the &+gguildmaster&n stands here eating some &+rbbq &+CHuman&+L.
 ~
 ~
-74 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
-1 0 0 1d1+1 1d1+1
+424010 0 0 0 40 0 0 0 0 S
+pt 0 1 2 -1
+60 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
