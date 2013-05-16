@@ -2766,11 +2766,20 @@ void cast_bloodstone(int level, P_char ch, char *arg, int type, P_char victim, P
     return;
   }
 
-  if(NewSaves(victim, SAVING_FEAR, random))
+ /* if(NewSaves(victim, SAVING_PARA, 5))
   {
     return;
-  }
+  } This now uses percent of health to determine duration - save is not needed. Drannak */
   
+
+  float duration = ((float)GET_HIT(victim) / (float)GET_MAX_HIT(victim));
+  debug("duration %f", duration);
+  duration = 1 - duration;
+  debug("duration %f", duration);
+  duration *= 100;
+  debug("duration %f", duration);
+  int dur = duration;
+  debug("duration: %f, dur: %d", duration, dur);  
   if (affected_by_spell(victim, SPELL_BLOODSTONE))
   {
     send_to_char("Their blood is already made of stone!\n", ch);
@@ -2782,8 +2791,8 @@ void cast_bloodstone(int level, P_char ch, char *arg, int type, P_char victim, P
   GET_VITALITY(victim) -= 2;
   StartRegen(victim, EVENT_MOVE_REGEN);
 
-  af.duration = 1;
-
+  af.duration = dur;
+  af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL;
   affect_to_char(victim, &af);
 
   act("You feel as if though your blood starts to flow slower in your veins.",

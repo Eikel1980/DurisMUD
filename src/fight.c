@@ -2753,7 +2753,7 @@ void kill_gain(P_char ch, P_char victim)
     update_achievements(ch, victim, 0, 2);//this is for all kinds of kill-type quests
     if(GET_LEVEL(victim) > 30)
 	{
-	  if(number(1, 5000) < GET_C_LUCK(ch))
+	    if((number(1, 5000) < GET_C_LUCK(ch)) || (GET_RACE(victim) == RACE_DRAGON && (GET_VNUM(victim) > 10) && (GET_LEVEL(victim) > 49)))
 	   {
 		send_to_char("&+cAs your body absorbs the &+Cexperience&+c, you seem to feel a bit more epic!\r\n", ch);
 		ch->only.pc->epics += 1;
@@ -2831,7 +2831,7 @@ void kill_gain(P_char ch, P_char victim)
     update_achievements(ch, victim, 0, 2);//this is for all kinds of kill-type quests
     if(GET_LEVEL(victim) > 30)
 	{
-	  if(number(1, 5000) < GET_C_LUCK(ch))
+	  if((number(1, 5000) < GET_C_LUCK(ch)) || (GET_RACE(victim) == RACE_DRAGON && (GET_VNUM(victim) > 10) && (GET_LEVEL(victim) > 49)))
 	   {
 		send_to_char("&+cAs your body absorbs the &+Cexperience&+c, you seem to feel a bit more epic!\r\n", ch);
 		ch->only.pc->epics += 1;

@@ -6578,7 +6578,28 @@ void spell_full_heal(int level, P_char ch, char *arg, int type, P_char victim,
 
   int healpoints = 250 + dice(num_dice, 20);
 
-  if(type == SPELL_TYPE_SPELL)
+
+  if(GET_SPEC(ch, CLASS_CLERIC, SPEC_HOLYMAN) && ((GET_RACEWAR(ch) != GET_RACEWAR(victim) && !IS_PC_PET(victim)) || (IS_NPC(victim) && !IS_PC_PET(victim))))
+ {
+    struct damage_messages messages = {
+    "&+cYou call upon the &+Cmight&+c of your &+Wgod &+cto &+rde&+Rst&+Wroy &+cthe &+rbody &+cof $N&+c, who stumbles from the &+Cimpact&+c!",
+    "&+cThe &+Cmight&+c of &n$n's&+W god &+cis thrust upon your &+rbody&+c, causing massive &+Cdamage&+c!",
+    "&+cThe &+Cmight&+c of &n$n's&+W god &+cis thrust upon &n$N&+c, causing massive &+Cdamage&+c!",
+    "&+cYou &+Cdestroy &+cwhat little there is left of &n$N's &+cbody, leaving only a pool of &+rblood &+cand &+ysinew&+c!",
+    "&+cThe &+Cpower &+cof &n$n's&+W god&+c is the last thing your &+rbody &+cfeels before &+Cexploding &+cinto chunky bits.",
+    "&+cThe &+Cpower &+cof &n$n's&+W god&+c destroys &n$N's &+rbody&+c which explodes, leaving only a pool of &+rblood &+cand &+ysinew&+c!", 0  };
+
+  int dam = 10 * level + number(1, 25);
+
+  if(!NewSaves(victim, SAVING_SPELL, 0))
+    dam = (int) (dam * 2.0);
+
+  spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
+
+ }
+ else
+ {
+     if(type == SPELL_TYPE_SPELL)
   {
     if( GET_CHAR_SKILL(ch, SKILL_ANATOMY) &&
         ( (GET_CHAR_SKILL(ch, SKILL_ANATOMY) + 5) / 10 ) > number(0, 100) )
@@ -6590,7 +6611,7 @@ void spell_full_heal(int level, P_char ch, char *arg, int type, P_char victim,
       healpoints += number(10, 2 * GET_CHAR_SKILL(ch, SKILL_ANATOMY));
     }
   }
-
+  
   if( ch == victim )
   {
     act("&+WA torrent of divine energy flows into your body, and your wounds begin to heal!",
@@ -6610,7 +6631,7 @@ void spell_full_heal(int level, P_char ch, char *arg, int type, P_char victim,
   spell_cure_blind(level, ch, NULL, SPELL_TYPE_SPELL, victim, obj);
   grapple_heal(victim);
   heal(victim, ch, healpoints, GET_MAX_HIT(victim) - number(1, 4));
-  update_pos(victim);
+  update_pos(victim);  }
 }
 
 void spell_heal(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
@@ -6665,6 +6686,25 @@ void spell_heal(int level, P_char ch, char *arg, int type, P_char victim, P_obj 
   
   healpoints = 100 + dice(num_dice, 5);
 
+  if(GET_SPEC(ch, CLASS_CLERIC, SPEC_HOLYMAN) && ((GET_RACEWAR(ch) != GET_RACEWAR(victim) && !IS_PC_PET(victim)) || (IS_NPC(victim) && !IS_PC_PET(victim))))
+ {
+    struct damage_messages messages = {
+    "&+cYou call upon the &+Cmight&+c of your &+Wgod &+cto &+rde&+Rst&+Wroy &+cthe &+rbody &+cof $N&+c, who stumbles from the &+Cimpact&+c!",
+    "&+cThe &+Cmight&+c of &n$n's&+W god &+cis thrust upon your &+rbody&+c, causing massive &+Cdamage&+c!",
+    "&+cThe &+Cmight&+c of &n$n's&+W god &+cis thrust upon &n$N&+c, causing massive &+Cdamage&+c!",
+    "&+cYou &+Cdestroy &+cwhat little there is left of &n$N's &+cbody, leaving only a pool of &+rblood &+cand &+ysinew&+c!",
+    "&+cThe &+Cpower &+cof &n$n's&+W god&+c is the last thing your &+rbody &+cfeels before &+Cexploding &+cinto chunky bits.",
+    "&+cThe &+Cpower &+cof &n$n's&+W god&+c destroys &n$N's &+rbody&+c which explodes, leaving only a pool of &+rblood &+cand &+ysinew&+c!", 0  };
+
+  int dam = 10 * level + number(1, 25);
+
+  if(!NewSaves(victim, SAVING_SPELL, 0))
+    dam = (int) (dam);
+
+  spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
+ }
+else
+ {
   if(type == SPELL_TYPE_SPELL)
   {
     if(GET_CHAR_SKILL(ch, SKILL_ANATOMY) &&
@@ -6698,6 +6738,7 @@ void spell_heal(int level, P_char ch, char *arg, int type, P_char victim, P_obj 
   grapple_heal(victim);
   heal(victim, ch, healpoints , GET_MAX_HIT(victim) - number(1, 4));
   update_pos(victim);
+ }
   
   return;
 }
