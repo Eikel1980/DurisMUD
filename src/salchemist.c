@@ -1071,8 +1071,10 @@ void do_fix(P_char ch, char *argument, int cmd)
    {
     sprintf(gbuf1, "You must have %s in your inventory to repair that item.\r\n", needed->short_description);
     send_to_char(gbuf1, ch);
+    extract_obj(needed, TRUE);
     return;
    }
+    extract_obj(needed, TRUE);
   //endmaterial check
 
   if(skill > number(0, 105))
@@ -1082,7 +1084,6 @@ void do_fix(P_char ch, char *argument, int cmd)
         TO_ROOM);
     act("You fiddle with $p, fixing it quickly!", TRUE, ch, item, 0, TO_CHAR);
     item->condition = 100 - number(0, 10);
-    obj_from_char(needed, TRUE);
   }
   else
   {
@@ -1100,9 +1101,22 @@ void do_fix(P_char ch, char *argument, int cmd)
       act("You fiddle with $p, but you fail, breaking it even more!", TRUE, ch,
           item, 0, TO_CHAR);
     }
-    //notch_skill(ch, SKILL_FIX, 15);
-    obj_from_char(needed, TRUE);
   }
+    int done;
+ while(done < 1)
+    {
+     for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
+     {
+      nextobj = t_obj->next_content;
+  
+       if(GET_OBJ_VNUM(t_obj) == imat)
+       {
+         obj_from_char(t_obj, TRUE);
+         done++;
+       }
+
+      }
+    }
 }
 
 P_obj check_furnace(P_char ch)

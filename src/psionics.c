@@ -2528,14 +2528,16 @@ void spell_enrage(int level, P_char ch, char *arg, int type, P_char victim,
 
   appear(ch);
 
+  int attdiff = ((GET_C_POW(ch) - GET_C_POW(victim)) / 2);
+
   if ((ch != victim) &&
-      StatSave(victim, APPLY_POW, 0) /* || NewSaves(victim, SAVING_SPELL, 3) */ )
+      NewSaves(victim, SAVING_SPELL, number(0, attdiff)))
   {                             /* made save */
     send_to_char("You feel a brief bit of anger, but it passes.\r\n", victim);
     return;
   }
 
-  berserk(victim, 2 * PULSE_VIOLENCE);  /* flag to start regardless of skill */
+  berserk(victim, (attdiff * 2 * WAIT_SEC));  /* flag to start regardless of skill */
   return;
 }
 

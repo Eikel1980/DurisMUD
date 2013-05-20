@@ -14445,22 +14445,35 @@ void spell_pword_blind(int level, P_char ch, char *arg, int type,
   if(has_innate(victim, INNATE_EYELESS) ||
      IS_TRUSTED(victim))
         return;
+ int mindpower;
+ mindpower = ((GET_C_POW(ch) - GET_C_POW(victim)) / 2);
+  //save = victim->specials.apply_saving_throw[SAVING_SPELL];
+  save = NewSaves(victim, SAVING_SPELL, mindpower);
 
-  save = victim->specials.apply_saving_throw[SAVING_SPELL];
-  
   debug("PWB: (%s) saving throw is (%d).", J_NAME(victim), save);
 
+  if(NewSaves(victim, SAVING_SPELL, number(0, mindpower)))
+   {
+    send_to_char("Your victim has saved against your spell!\r\n", ch);
+    send_to_char("You have saved against your attacker's spell!\r\n", ch);
+    return;
+   }
+
+/*
   if(save < 0)
     save = (int) (save * 1.5);
 
   percent = BOUNDED( 0, (GET_C_POW(ch) - GET_C_POW(victim) + save + (GET_LEVEL(ch) - GET_LEVEL(victim))), 100);
+*/
+
+  percent = BOUNDED( 0, (GET_C_POW(ch) - GET_C_POW(victim) + (GET_LEVEL(ch) - GET_LEVEL(victim))), 100);
 
   if(IS_PC_PET(ch))
     percent = (int)(percent * 0.5);
 
   debug("PWB: (%s) casted pwb at (%s) percent (%d).",
     GET_NAME(ch), GET_NAME(victim), percent);
-
+/*
   if(percent < 10)
   {
     send_to_char("They are too powerful to blind this way!\n", ch);
@@ -14486,6 +14499,16 @@ void spell_pword_blind(int level, P_char ch, char *arg, int type,
 
   else
     blind(ch, victim, number(5, 10) * WAIT_SEC);
+*/
+  act("$N gropes around, blinded after hearing $n's powerful word!",
+      FALSE, ch, 0, victim, TO_NOTVICT);
+    act("&+rSuddenly, the world goes &+Lblack!",
+      FALSE, ch, 0, victim, TO_VICT);
+    act("$N won't be seeing much in the near future...",
+      TRUE, ch, 0, victim, TO_CHAR);
+   percent = BOUNDED(2, ((mindpower * 2) / 10), 10);
+   blind(ch, victim, (percent * 2 * WAIT_SEC));
+
 }
 
 /* rocking spell now, stun is extremely unpleasant */

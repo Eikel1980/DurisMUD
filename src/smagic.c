@@ -1354,6 +1354,8 @@ void earthen_grasp(int level, P_char ch, P_char victim,
     send_to_char("As if one fist isn't enough?!\n", ch);
     return;
   }
+  int attdiff = ((GET_C_STR(ch) - GET_C_STR(victim)) / 2);
+  attdiff = number(0, attdiff);
 
   if(IS_NPC(victim) && IS_SET(victim->specials.act, ACT_IMMUNE_TO_PARA))
   {
@@ -1363,7 +1365,7 @@ void earthen_grasp(int level, P_char ch, P_char victim,
   {
     effect = EG_LONG;
   }
-  else if(!NewSaves(victim, SAVING_PARA, 5))
+  else if(!NewSaves(victim, SAVING_PARA, attdiff))
   {
     effect = EG_SHORT;
   }
@@ -2128,7 +2130,7 @@ void spell_molevision(int level, P_char ch, char *arg, int type,
     send_to_char("Nothing new seems to happen.\n", ch);
     return;
   }
-  
+
   percent = shaman_wis_save_result(ch, victim);
   
   if(IS_NPC(victim) &&
