@@ -2834,7 +2834,8 @@ void kill_gain(P_char ch, P_char victim)
 	  if((number(1, 5000) < GET_C_LUCK(ch)) || (GET_RACE(victim) == RACE_DRAGON && (GET_VNUM(victim) > 10) && (GET_LEVEL(victim) > 49)))
 	   {
 		send_to_char("&+cAs your body absorbs the &+Cexperience&+c, you seem to feel a bit more epic!\r\n", ch);
-		gl->ch->only.pc->epics += 1;
+              P_char recipient = gl->ch;
+		recipient->only.pc->epics += 1;
 	   } 
 	}
 
