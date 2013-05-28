@@ -2590,6 +2590,9 @@ spell_cannibalize(int level, P_char ch, char *arg, int type, P_char victim,
 {
   struct affected_type af;
 
+  if (IS_NPC(ch)) //quick fix for mobs draining pcs
+  return;
+
   if (!(victim && ch))
   {
     logit(LOG_EXIT, "assert: bogus params in cannibalize");
