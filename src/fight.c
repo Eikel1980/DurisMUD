@@ -383,7 +383,7 @@ bool rapier_dirk(P_char victim, P_char attacker)
   {
     if(number(0, 1))
      {
-      if(GET_CLASS(victim, CLASS_BARD))
+      if(GET_CLASS(victim, CLASS_BARD) || GET_SPEC(victim, CLASS_ROGUE, SPEC_THIEF))
     {
       act("$n's $q &=LCflashes&n into the path of $N's attack, then $n delivers a graceful counter-attack!",
         TRUE, victim, wep1, attacker, TO_NOTVICT);

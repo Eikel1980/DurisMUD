@@ -4291,7 +4291,7 @@ bool rapier_dirk_check(P_char ch)
 
   if((has_innate(ch, INNATE_RAPIER_DIRK) &&
     (weapon = ch->equipment[PRIMARY_WEAPON]) && IS_SWORD(weapon) &&
-    (weapon = ch->equipment[SECONDARY_WEAPON]) && IS_DIRK(weapon) ) || (GET_CLASS(ch, CLASS_BARD)))
+    (weapon = ch->equipment[SECONDARY_WEAPON]) && IS_DIRK(weapon) ) || (GET_CLASS(ch, CLASS_BARD) || (GET_SPEC(ch, CLASS_ROGUE, SPEC_THIEF))))
   {
     return true;
   }
