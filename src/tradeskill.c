@@ -557,12 +557,14 @@ void do_forge(P_char ch, char *argument, int cmd)
     material2 = read_object(startmat + ((int)difference - 1), VIRTUAL);
     char matbuf[MAX_STRING_LENGTH];
 
+  int affcount = has_affect(tobj);
+
 
   P_obj t_obj, nextobj;
-  int i = 0;
-  int o = 0;
-  int x = 0;
-  int y = 0;
+  int i = 0; //highest mat value
+  int o = 0; //lowest mat value
+  int x = 0; //magical essence
+  int y = 0; //flux
   for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
   {
     nextobj = t_obj->next_content;
@@ -603,31 +605,34 @@ void do_forge(P_char ch, char *argument, int cmd)
  //drannak - make the item
    int obj1 = startmat + 4;
    int obj2 = (startmat + ((int)difference -1));
-   y = 1;
+   y = 0;
+   i = 0;
+   z = 0;
+   y = 0;
 
    for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
      {
     nextobj = t_obj->next_content;
 
-	if((GET_OBJ_VNUM(t_obj) == obj1) && (i > 0) )
+	if((GET_OBJ_VNUM(t_obj) == obj1) && (i < fullcount) )
          {
 	   obj_from_char(t_obj, TRUE);
-          i--;
+          i++;
          }
-       if((GET_OBJ_VNUM(t_obj) == obj2) && (o > 0))
+       if((GET_OBJ_VNUM(t_obj) == obj2) && (o > difference))
          {
 	   obj_from_char(t_obj, TRUE);
-          o--;
+          o++;
          }
-       if((GET_OBJ_VNUM(t_obj) == 400211) && (z > 0))
+       if((GET_OBJ_VNUM(t_obj) == 400211) && (z < affcount))
          {
 	   obj_from_char(t_obj, TRUE);
-          x--;
+          z++;
          }
-       if((GET_OBJ_VNUM(t_obj) == 400223) && (y > 0))
+       if((GET_OBJ_VNUM(t_obj) == 400223) && (y < 1))
          {
 	   obj_from_char(t_obj, TRUE);
-          x--;
+          y++;
          }
       }
 

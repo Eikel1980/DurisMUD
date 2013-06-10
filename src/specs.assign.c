@@ -2365,11 +2365,11 @@ void assign_rooms(void)
   world[real_room0(67710)].funct = inn;
 
   /* Khildarak */
-  world[real_room0(17075)].funct = duergar_guild;
+  /*world[real_room0(17075)].funct = duergar_guild;
   world[real_room0(17223)].funct = duergar_guild;
   world[real_room0(17554)].funct = duergar_guild;
   world[real_room0(17720)].funct = duergar_guild;
-  world[real_room0(17724)].funct = duergar_guild;
+  world[real_room0(17724)].funct = duergar_guild;*/
   world[real_room0(17302)].funct = pet_shops;
   world[real_room0(17591)].funct = pet_shops;
   world[real_room0(17087)].funct = inn;

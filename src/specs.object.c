@@ -4046,7 +4046,7 @@ int dranum_mask(P_obj obj, P_char ch, int cmd, char *arg)
   if (IS_FIGHTING(ch) && !number(0, 9) && cmd == 0)
   {
     vict = ch->specials.fighting;
-    if (IS_NPC(vict))
+    if (IS_NPC(vict) && !number(1, 24))
       return FALSE;             // no cheesing mobs
     act("$p &+Rscares &N&+rthe &+Rliving &+LSHIT &N&+rout of $N!&N", TRUE, ch,
         obj, vict, TO_CHAR);

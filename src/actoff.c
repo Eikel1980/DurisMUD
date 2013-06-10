@@ -4290,6 +4290,52 @@ void do_headbutt(P_char ch, char *argument, int cmd)
   }
 }
 
+void event_garroteproc(P_char ch, P_char victim, P_obj obj, void *data)
+{
+  int dam;
+  int count = *((int*)data);
+  int rand1 = number(1, 100);
+
+  dam = dice(3, 6);
+
+  if ((GET_HIT(ch) - dam) > 0)
+  {
+    GET_HIT(ch) -= dam;
+    if(rand1 > 50)
+    {
+    send_to_char("&+rYour bl&+Rood spl&+ratte&+Rrs as it hits the ground.&N\n", ch);
+    act("$n&+r's blo&+Rod spla&+rtter&+Rs as it hits the ground.&N", TRUE, ch, NULL, NULL,
+        TO_NOTVICT);
+    make_bloodstain(ch);
+    if(!number(0, 9) &&
+       !IS_GREATER_RACE(ch) &&
+       !IS_ELITE(ch))
+          StopCasting(ch);
+    }
+    else
+    {
+    send_to_char("&+rYour wound gushes &+Rblood &+rall over the surrounding area.&N\n", ch);
+    act("$n&+r's wound gushes &+Rblood &+rall over the surrounding area.", TRUE, ch, NULL, NULL,
+        TO_NOTVICT);
+    make_bloodstain(ch);
+    if(!number(0, 9) &&
+       !IS_GREATER_RACE(ch) &&
+       !IS_ELITE(ch))
+          StopCasting(ch);
+    }
+  }
+
+  if (count >= 0)
+  {
+    count--;
+    add_event(event_garroteproc, PULSE_VIOLENCE, ch, 0, 0, 0, &count, sizeof(count));
+  }
+  else
+  {
+    send_to_char("&+rYour bleeding appears to have stopped.&N\n", ch);
+  }
+}
+
 void event_bleedproc(P_char ch, P_char victim, P_obj obj, void *data)
 {
   int dam;
@@ -4307,6 +4353,7 @@ void event_bleedproc(P_char ch, P_char victim, P_obj obj, void *data)
     act("$n&+r's blo&+Rod spla&+rtter&+Rs as it hits the ground.&N", TRUE, ch, NULL, NULL,
         TO_NOTVICT);
     make_bloodstain(ch);
+
     }
     else
     {
@@ -4314,6 +4361,7 @@ void event_bleedproc(P_char ch, P_char victim, P_obj obj, void *data)
     act("$n&+r's wound gushes &+Rblood &+rall over the surrounding area.", TRUE, ch, NULL, NULL,
         TO_NOTVICT);
     make_bloodstain(ch);
+
     }
   }
 
@@ -10030,5 +10078,65 @@ void do_shadowstep(P_char ch, char *, int)
     act("$n makes an attempt to step into the &+Lsha&+wdo&+Wws&n, but fails horribly!&n", FALSE, ch, 0, 0, TO_ROOM);
     set_short_affected_by(ch, SKILL_SHADOWSTEP, dur);
     notch_skill(ch, SKILL_SHADOWSTEP, 15);
+
+}
+
+void do_garrote(P_char ch, char *argument, int cmd)
+{
+  P_char   victim = NULL;
+
+  if(!(ch) ||
+    !IS_ALIVE(ch))
+  {
+    return;
+  }
+  
+  if(affected_by_spell(ch, SKILL_GARROTE))
+  {
+    send_to_char("You must wait before attempting to &+rgarrote&n again.\r\n", ch);
+	return;
+  }
+
+  victim = ParseTarget(ch, argument);
+  
+  if (GET_CHAR_SKILL(ch, SKILL_GARROTE) < 1)
+  {
+	send_to_char("Sure! You'll probably cut yourself trying!&n\r\n", ch);
+	return;
+  }
+  
+  if(!(victim) ||
+     !IS_ALIVE(victim))
+  {
+    //CharWait(ch, (int)(0.5 * PULSE_VIOLENCE));
+    send_to_char("Who's throat would you like to &+rcut&n?\n", ch);
+    return;
+  }
+
+  int success = GET_CHAR_SKILL(ch, SKILL_GARROTE);
+  notch_skill(ch, SKILL_SHADOWSTEP, 15);
+  if(number(1, 105) > success)
+  {
+    act("&+LYou try to slip behind &n$N&+L, but they notice the attempt and block your advance!",
+    FALSE, ch, 0, victim, TO_CHAR); 
+	act("&+LYou notice &n$n &+Lattempting to sneak behind you, but quickly block their advance!",
+    FALSE, ch, 0, victim, TO_VICT);
+    act("$N &+Ladeptly notices &n$n's attempt to &+rgarrote&+L them and blocks the attempt!",
+    FALSE, ch, 0, victim, TO_NOTVICT);
+    set_short_affected_by(ch, SKILL_GARROTE, (int) (2.8 * PULSE_VIOLENCE));
+    CharWait(ch, (int)(0.5 * PULSE_VIOLENCE));
+	return;
+  }
+  
+    act("&+LYou skillfully slip behind&n $N &+Land &+rslit &+Ltheir &+rth&+Rro&+rat&+L resulting in a &+Rmist &+Lof &+rblood&+L!&n",
+    FALSE, ch, 0, victim, TO_CHAR); 
+	act("&+rOUCH! &n$n &+Lsuddenly appears behind you and makes a &+rslashing &+Lmotion at your &+rth&+Rro&+rat&+L!",
+    FALSE, ch, 0, victim, TO_VICT);
+    act("$N &+Lsuddenly stumbles, grasping at their &+rneck&+L as &n$n &+Lstands behind them grinning!",
+    FALSE, ch, 0, victim, TO_NOTVICT);
+    set_short_affected_by(ch, SKILL_GARROTE, (int) (2.8 * PULSE_VIOLENCE));
+	int	numb = number(5, 8);
+    CharWait(ch, (int)(0.5 * PULSE_VIOLENCE));
+	add_event(event_garroteproc, PULSE_VIOLENCE, victim, 0, 0, 0, &numb, sizeof(numb));
 
 }
