@@ -63,6 +63,7 @@ extern struct message_list fight_messages[];
 extern struct str_app_type str_app[];
 extern struct time_info_data time_info;
 extern struct zone_data *zone_table;
+extern P_obj quest_item_reward(P_char ch);
 extern int find_map_place();
 
 void set_surname(P_char ch, int num)
@@ -691,4 +692,90 @@ int equipped_value(P_char ch)
 		total += itemvalue(ch, temp_obj);
 	  }
 	  return total;
+}
+
+void create_recipe(P_char ch, P_obj temp)
+{
+    /***RECIPE CREATE***/
+       P_obj objrecipe;
+       char buffer[256], old_name[256];
+       char *c;
+       int recipenumber = obj_index[temp->R_num].virtual_number;
+
+ if ((temp->type == ITEM_CONTAINER ||
+       temp->type == ITEM_STORAGE) && temp->contains)
+   {
+    return;
+   }
+
+  if (IS_SET(temp->extra_flags, ITEM_NOSELL))
+    {
+        return;
+	}
+
+  if(GET_OBJ_VNUM(temp) == 366)
+   {
+    return;
+   }
+
+  if (temp->type == ITEM_FOOD)
+   {
+    return;
+   }
+  if (temp->type == ITEM_TREASURE || temp->type == ITEM_POTION || temp->type == ITEM_MONEY || temp->type == ITEM_KEY)
+   {
+    return;
+   }
+  if (IS_OBJ_STAT2(temp, ITEM2_STOREITEM))
+   {
+    return;
+   }
+  if (IS_SET(temp->extra_flags, ITEM_ARTIFACT))
+  {
+    return;
+  }
+       
+
+       
+	objrecipe = read_object(400210, VIRTUAL);
+       SET_BIT(objrecipe->value[6], recipenumber);
+       strcpy(old_name, objrecipe->short_description);
+       sprintf(buffer, "%s %s&n", old_name, temp->short_description);
+
+
+        if ((objrecipe->str_mask & STRUNG_DESC2) && objrecipe->short_description)
+         FREE(objrecipe->short_description);
+
+       objrecipe->short_description = str_dup(buffer);
+
+       objrecipe->str_mask |= STRUNG_DESC2;
+       obj_to_char(objrecipe, ch);
+}
+
+void random_recipe(P_char ch, P_char victim)
+{
+ int chance = 1;
+ 
+ if(IS_PC(victim))
+ return;
+
+ if(IS_PC_PET(victim))
+ return;
+
+ chance += GET_LEVEL(victim) * 2;
+
+ if(IS_ELITE(victim))
+ chance *= 5;
+
+ int result = number(1, 5000);
+
+ if(result < chance)
+ {
+  P_obj reward = quest_item_reward(ch);
+  create_recipe(victim, reward);
+  extract_obj(reward, TRUE); 
+ }
+
+ return; 
+
 }

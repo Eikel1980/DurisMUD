@@ -626,14 +626,14 @@ void advance_level(P_char ch)
 
   update_racial_skills(ch);
 
-
+/*
   if (GET_LEVEL(ch) == 21 && !IS_NEWBIE(ch) ) {
     REMOVE_BIT(ch->specials.act2, PLR2_NCHAT);
-  }
+  }*/
 
   if (GET_LEVEL(ch) == 35) {
     REMOVE_BIT(ch->specials.act2, PLR2_NEWBIE);
-    REMOVE_BIT(ch->specials.act2, PLR2_NCHAT);
+ //   REMOVE_BIT(ch->specials.act2, PLR2_NCHAT);
   }
 
   if (IS_PC(ch) && IS_GITHYANKI(ch) && (GET_LEVEL(ch) == 50) &&

@@ -6013,7 +6013,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
       int scitools = vnum_in_inv(ch, 400227);
       if(scitools > 0)
       {
-	send_to_char("&+LYou make sure to utilize your &+cset of &+rLantan &+CScientific &+LTools &+yduring the extraction process...\r\n", ch);
+	send_to_char("&+LYour &+cset of &+rLantan &+CScientific &+LTools &+yallows you to delicately extract material without harming your item...\r\n", ch);
        reciperoll *= .5;
        playerroll *= 2;
        vnum_from_inv(ch, 400227, 1);
@@ -6067,6 +6067,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
           (ch->in_room == NOWHERE) ? -1 : world[ch->in_room].number);
 	char_light(ch);
 	room_light(ch->in_room, REAL);
+       if(scitools < 1)
 	extract_obj(temp, !IS_TRUSTED(ch));
   } 
   //end do_salvage

@@ -793,6 +793,7 @@ void create_alias_file(const char *dir, char *name);
 void create_alias_name(char *name);
 int equipped_value(P_char ch);
 void newbie_reincarnate(P_char ch);
+void random_recipe(P_char ch, P_char victim);
 
 
 /* editor.c */

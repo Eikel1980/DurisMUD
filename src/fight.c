@@ -2332,6 +2332,8 @@ void die(P_char ch, P_char killer)
      obj_to_char(tempobj, ch);
   }
 
+    random_recipe(killer, ch); //possibility to find a recipe for the items in the zone.
+
   // object code - Normal kills.  Kvark
   if((IS_PC(killer) ||
       IS_PC_PET(killer)) &&
@@ -2482,7 +2484,7 @@ void die(P_char ch, P_char killer)
         ch->only.pc->numb_deaths++;
       }
       // Hardcore chars die after 5 deaths.
-      if((ch->only.pc->numb_deaths > 4) &&
+      if((ch->only.pc->numb_deaths > 0) &&
         IS_HARDCORE(ch))
       {
         update_pos(ch);
@@ -2763,6 +2765,7 @@ void kill_gain(P_char ch, P_char victim)
   {
     send_to_char("You receive your share of experience.\r\n", ch);
     gain_exp(ch, victim, gain, EXP_KILL);
+
     update_achievements(ch, victim, 0, 2);//this is for all kinds of kill-type quests
     if((GET_LEVEL(victim) > 30) && !IS_PC(victim))
 	{

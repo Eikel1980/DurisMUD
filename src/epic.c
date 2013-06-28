@@ -532,6 +532,7 @@ void gain_epic(P_char ch, int type, int data, int amount)
     return;
   }
 
+
   if(IS_AFFECTED4(ch, AFF4_EPIC_INCREASE))
   {
     send_to_char("You feel the &+cblessing&n of the &+WGods&n wash over you.\n", ch);
