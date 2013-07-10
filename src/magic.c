@@ -2001,6 +2001,12 @@ void spell_conjour_elemental(int level, P_char ch, char *arg, int type,
     sum = number(0, 3);
   }
 
+  if(IS_SPECIALIZED(ch) && GET_CLASS(ch, CLASS_CONJURER) && (IS_PC(ch) || IS_PC_PET(ch)))
+  {
+   send_to_char("Specialized &+Yconjurers&n use the &+cconjure&n command to manage their minions.\r\n", ch);
+   return;
+  }
+
   mob = read_mobile(real_mobile(summons[sum].mob_number), REAL);
   
   if(!mob)
@@ -2681,6 +2687,12 @@ void spell_conjour_greater_elemental(int level, P_char ch, char *arg,
   {
     send_to_char("You may not control more HUGE elementals!\n", ch);
     return;
+  }
+
+  if(IS_SPECIALIZED(ch) && GET_CLASS(ch, CLASS_CONJURER) && (IS_PC(ch) || IS_PC_PET(ch)))
+  {
+   send_to_char("Specialized &+Yconjurers&n use the &+cconjure&n command to manage their minions.\r\n", ch);
+   return;
   }
 
   if(GET_CLASS(ch, CLASS_CONJURER) &&
@@ -19286,16 +19298,17 @@ void event_acidimmolate(P_char ch, P_char vict, P_obj obj, void *data)
     {
       acidburntime++;
     }
-    dam = (int) (GET_LEVEL(ch) * 2);
+    //dam = (int) (GET_LEVEL(ch) * 2);
+    dam = 1; //this is now just a pulling spell.
 
-    if(acidburntime >= 3)
+  /*  if(acidburntime >= 3)
     {
       dam = (int) (GET_LEVEL(ch) * 2 - number(4, 20));
     }
     if(acidburntime >= 4)
     {
       dam = (int) GET_LEVEL(ch) + number(4, 12);
-    }
+    }*/
     if(IS_ALIVE(vict) &&
       !number(0, 4) && (spell_damage(ch, vict, dam, SPLDAM_ACID, SPLDAM_NODEFLECT |
       SPLDAM_NOSHRUG, &messages) == DAM_NONEDEAD))

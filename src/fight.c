@@ -1434,7 +1434,7 @@ P_obj make_corpse(P_char ch, int loss)
    * added by DTS 8/1/95 - ghosts and wraiths shouldn't leave corpses...
    * just dump contents of corpse to room and extract corpse
    */
- if (IS_NPC(ch) && IS_NOCORPSE(ch))
+ if (IS_NPC(ch) && (IS_NOCORPSE(ch) || IS_PC_PET(ch)))
   {
     if (corpse->contains)
     {
@@ -2793,7 +2793,7 @@ void kill_gain(P_char ch, P_char victim)
 	}
     change_alignment(ch, victim);
 
-   if(!IS_PC(victim) && affected_by_spell(victim, SPELL_CONTAIN_BEING) && GET_CLASS(ch, CLASS_CONJURER))
+   if(!IS_PC(victim) && affected_by_spell(victim, SPELL_CONTAIN_BEING) && GET_CLASS(ch, CLASS_CONJURER) && IS_SPECIALIZED(ch) && IS_PC(ch))
   {
    int chance = GET_C_CHA(ch);
    chance -= GET_LEVEL(victim);
@@ -2808,7 +2808,7 @@ void kill_gain(P_char ch, P_char victim)
      return;
     }
     else
-     if(number(1, GET_C_INT(ch)) < chance)
+     if((number(1, GET_C_INT(ch)) < chance) && (GET_VNUM(victim) != 1255))
      learn_conjure_recipe(ch, victim);
    
   }
@@ -2894,7 +2894,7 @@ void kill_gain(P_char ch, P_char victim)
 
       change_alignment(gl->ch, victim);
 
-   if(!IS_PC(victim) && affected_by_spell(victim, SPELL_CONTAIN_BEING) && GET_CLASS(gl->ch, CLASS_CONJURER))
+   if(!IS_PC(victim) && affected_by_spell(victim, SPELL_CONTAIN_BEING) && GET_CLASS(gl->ch, CLASS_CONJURER) && IS_SPECIALIZED(gl->ch) && IS_PC(gl->ch))
   {
    int chance = GET_C_CHA(gl->ch);
    chance -= GET_LEVEL(victim);
@@ -2909,7 +2909,7 @@ void kill_gain(P_char ch, P_char victim)
      return;
     }
     else
-     if(number(1, GET_C_INT(gl->ch)) < chance)
+     if((number(1, GET_C_INT(gl->ch)) < chance) && (GET_VNUM(victim) != 1255))
      learn_conjure_recipe(gl->ch, victim);
    
   }
@@ -7207,6 +7207,9 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   if (GET_CLASS(ch, CLASS_PALADIN) && holy_weapon_proc(ch, victim))
     return true;
 
+  if ((GET_RACE(ch) == RACE_MINOTAUR) && minotaur_race_proc(ch, victim))
+  return true;
+
 
   if (affected_by_spell(ch, ACH_YOUSTRAHDME) && ((GET_RACE(victim) == RACE_UNDEAD) || 
 	(GET_RACE(victim) == RACE_VAMPIRE) ||
@@ -8518,6 +8521,17 @@ int calculate_attacks(P_char ch, int attacks[])
 	{
 	  ADD_ATTACK(PRIMARY_WEAPON);
 	}
+
+   //loop through affects - Drannak
+  struct affected_type *findaf, *next_af;  //initialize affects
+
+  for(findaf = ch->affected; findaf; findaf = next_af)
+  {
+    next_af = findaf->next;
+    if(findaf && findaf->type == TAG_MINOTAUR_RAGE)
+       ADD_ATTACK(PRIMARY_WEAPON);
+  }
+
 
     if(GET_SPEC(ch, CLASS_ANTIPALADIN, SPEC_VIOLATOR))
 	{

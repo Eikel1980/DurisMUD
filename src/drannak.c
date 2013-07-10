@@ -52,6 +52,7 @@ extern char debug_mode;
 extern const char *race_types[];
 extern const int exp_table[];
 
+
 extern const struct stat_data stat_factor[];
 extern float fake_sqrt_table[];
 extern int pulse;
@@ -521,6 +522,64 @@ bool lightbringer_weapon_proc(P_char ch, P_char victim)
   */
 }
 
+bool minotaur_race_proc(P_char ch, P_char victim)
+{
+  int num, room = ch->in_room, save, pos;
+  int class_chance = 0;
+
+  switch(ch->player.m_class)
+  {
+    case CLASS_REAVER:
+    class_chance = 30;
+    case CLASS_RANGER:
+    class_chance = 30;
+    case CLASS_MONK:
+    class_chance = 20;
+    case CLASS_SORCERER:
+    class_chance = 6;
+    case CLASS_CONJURER:
+    class_chance = 6;
+    case CLASS_WARRIOR:
+    class_chance = 10;
+    default:
+    class_chance = 15;
+    break;
+  }
+
+   if (!IS_FIGHTING(ch) ||
+      !(victim = ch->specials.fighting) ||
+      !IS_ALIVE(victim) ||
+      !(room) ||
+      number(0, class_chance)) // 3%(15)
+      return false; 
+
+  struct affected_type af;
+
+
+  act("&+LAs you strike $N&+L, the power of your &+rance&+Lstor&+rs&+L fill you with &+rR&+RAG&+RE&+L!&n",
+    TRUE, ch, 0, victim, TO_CHAR);
+  act("&+LAs $n strikes $N&+L, the power of $n's &+rance&+Lstor&+rs&+L fill them with &+rR&+RAG&+RE&+L!&n",
+    TRUE, ch, 0, victim, TO_NOTVICT);
+
+  memset(&af, 0, sizeof(af));
+  af.type = TAG_MINOTAUR_RAGE;
+  af.location = APPLY_COMBAT_PULSE;
+  af.modifier = -1;
+  af.duration = 130;
+  af.flags = AFFTYPE_SHORT;
+  affect_to_char(ch, &af);
+
+  memset(&af, 0, sizeof(af));
+  af.type = TAG_INNATE_TIMER;
+  af.location = APPLY_SPELL_PULSE;
+  af.modifier = -1;
+  af.duration = 130;
+  af.flags = AFFTYPE_SHORT;
+  affect_to_char(ch, &af);
+
+
+}
+
 static FILE *aliaslist;
 
 char get_alias(P_char ch, char *argument)
@@ -978,7 +1037,13 @@ void do_conjure(P_char ch, char *argument, int cmd)
      return;
     }
 
-    
+    if(affected_by_spell(ch, SPELL_CONJURE_ELEMENTAL))
+    {
+     send_to_char("You must wait a short time before calling another &+Yminion&n into existence.\r\n", ch);
+    extract_char(tobj);
+     return;
+    }
+      struct affected_type af;
 	if(GET_MAX_HIT(tobj) > 8000)
 	GET_MAX_HIT(tobj) = 8000;
 	 
@@ -1002,6 +1067,13 @@ void do_conjure(P_char ch, char *argument, int cmd)
       duration += number(1,10);
       add_event(event_pet_death, (duration+1) * 60 * 4, tobj, NULL, NULL, 0, NULL, 0);
     }
+
+  memset(&af, 0, sizeof(af));
+  af.type = SPELL_CONJURE_ELEMENTAL;
+  af.duration = 100;
+  af.flags = AFFTYPE_SHORT;
+  affect_to_char(ch, &af);
+
 	
   }
 }
@@ -1029,7 +1101,7 @@ bool new_summon_check(P_char ch, P_char selected)
 {
   struct follow_type *k;
   P_char   victim;
-  int i, j, desired = 0;
+  int i, j, count = 0, desired = 0;
   
   desired = GET_LEVEL(selected);
 
@@ -1038,8 +1110,12 @@ bool new_summon_check(P_char ch, P_char selected)
     victim = k->follower;
 
     i += GET_LEVEL(victim);
+    count++;
   }
   i += desired;
+
+  if(count >= 4)
+  return FALSE;
 
   if(GET_LEVEL(ch) <= 35 && i > 45)
   return FALSE;

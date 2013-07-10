@@ -788,6 +788,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
            (GET_RACE(ch) == RACE_CARNIVORE) || \
            (GET_RACE(ch) == RACE_PARASITE) || \
            (GET_RACE(ch) == RACE_REPTILE) || \
+           (GET_RACE(ch) == RACE_DRAGONKIN) || \
            (GET_RACE(ch) == RACE_SNAKE) || \
            (GET_RACE(ch) == RACE_ARACHNID) || \
            (GET_RACE(ch) == RACE_INSECT))

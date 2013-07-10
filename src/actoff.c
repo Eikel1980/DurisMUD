@@ -1400,7 +1400,7 @@ void do_charge(P_char ch, char *argument, int cmd)
     
     return;
   }
-  if(get_takedown_size(victim) < (get_takedown_size(ch) - 3))
+  if(get_takedown_size(victim) < (get_takedown_size(ch) - 4))
   {
     act("$n topples over $mself as $e tries to charge into $N.",
       FALSE, ch, 0, victim, TO_ROOM);
@@ -1436,14 +1436,14 @@ void do_charge(P_char ch, char *argument, int cmd)
 
   percent_chance = (int) (percent_chance * ((double) BOUNDED(60, 100 + (GET_LEVEL(ch) - GET_LEVEL(victim)) * 2, 145)) / 100);
   
-  percent_chance = (int) (percent_chance * ((double) BOUNDED(60, 100 + (GET_C_DEX(ch) - GET_C_AGI(victim)) / 4, 145)) / 100);
+  percent_chance = (int) (percent_chance * ((double) BOUNDED(60, 100 + (GET_C_STR(ch) - GET_C_AGI(victim)) / 4, 145)) / 100);
   
-  percent_chance = (int) (percent_chance * ((double) BOUNDED(60, 100 + (get_takedown_size(victim) - get_takedown_size(ch)) * 5, 145)) / 100);
+ // percent_chance = (int) (percent_chance * ((double) BOUNDED(60, 100 + (get_takedown_size(victim) - get_takedown_size(ch)) * 5, 145)) / 100);
   
   percent_chance = (int) (percent_chance * ((GET_POS(victim) == POS_PRONE) ? 0.05 : (GET_POS(victim) != POS_STANDING) ? 0.15 : 1));
 
   if(IS_AFFECTED(victim, AFF_AWARE))
-    percent_chance = (int) (percent_chance * 0.50);
+    percent_chance = (int) (percent_chance * 0.80);
   
   if(affected_by_spell(victim, SPELL_GUARDIAN_SPIRITS))
   {
