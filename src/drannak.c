@@ -1242,7 +1242,7 @@ void do_dismiss(P_char ch, char *argument, int cmd)
 {
   struct follow_type *k;
   struct follow_type *x;
-  P_char   victim;
+  P_char   victim, next_vict;
   int i, j, count = 0, desired = 0;
 
   if(GET_CLASS(ch, CLASS_BARD))
@@ -1251,25 +1251,21 @@ void do_dismiss(P_char ch, char *argument, int cmd)
    return;
   }
   
-  return;
 
-  for (k = ch->followers, i = 0, j = 0; k; k = k->next)
-  {
-    victim = k->follower;
-
-    if(!victim)
-    break;
-
-    if(!IS_PC(victim))
+    for (k = ch->followers; k; k = x)
     {
+      x = k->next;
+      
+      if(!IS_PC(k->follower))
+      {
     act("$n makes a &+Mmagical &+mgesture&n, sending $N back to the &+Lnether plane&n.", TRUE, ch, 0,
-        victim, TO_ROOM);
+        k->follower, TO_ROOM);
     act("You make a &+Mmagical &+mgesture&n, sending $N back to the &+Lnether plane&n.", TRUE, ch, 0,
-        victim, TO_CHAR);
-     extract_char(victim);
+        k->follower, TO_CHAR);
+     extract_char(k->follower);
     count++;
+      }
     }
-  }
 
 
   if(count == 0)
