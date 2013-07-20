@@ -569,6 +569,8 @@ void do_feign_death(P_char ch, char *arg, int cmd)
                HAS_MEMORY(tch))
             {
               debug("FEIGN: (%s) feigned death and mob (%s) removed.", GET_NAME(ch), J_NAME(tch));
+              if(!ch || !tch)
+              return;
               forget(tch, ch);
             }
           }

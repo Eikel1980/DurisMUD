@@ -231,6 +231,9 @@ void spell_spirit_walk(int level, P_char ch, char *arg, int type,
   if(!ch || !victim)
     return;
 
+  if(IS_NPC(ch))
+  return;
+
   // check npc/consent
   if(IS_NPC(victim) || !is_linked_to(ch, victim, LNK_CONSENT))
   {

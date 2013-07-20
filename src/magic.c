@@ -15370,6 +15370,9 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
     return;
   }
 
+  if(IS_NPC(ch))
+  return;
+
   if(GET_CHAR_SKILL(ch, SKILL_DEVOTION) <= 20 &&
     !IS_TRUSTED(ch) ||
     (GET_CLASS(ch, CLASS_SHAMAN) &&
