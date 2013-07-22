@@ -1827,13 +1827,13 @@ int do_simple_move_skipping_procs(P_char ch, int exitnumb, unsigned int flags)
         !NumAttackers(k->follower) &&
         CAN_SEE(k->follower, ch))
       {
-        if((IS_NPC(k->follower) &&
+       /* if((IS_NPC(k->follower) &&
           k->follower->group &&
           (k->follower->group->ch != ch)))
         {
           act("You can't follow $N!", FALSE, k->follower, 0, ch, TO_CHAR);
-        }
-        else if(affected_by_spell(ch, SPELL_DELIRIUM) &&
+        }*/
+        if(affected_by_spell(ch, SPELL_DELIRIUM) &&
                !number(0, 2))
         {
           cmd2 = number(1, 6);

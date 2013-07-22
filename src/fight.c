@@ -2145,6 +2145,9 @@ void die(P_char ch, P_char killer)
   {
     return;
   }
+
+  if(IS_PC(ch) && GET_CLASS(ch, CLASS_CONJURER))
+  do_dismiss(ch, NULL, NULL);
   
 #if defined(CTF_MUD) && (CTF_MUD == 1)
   if (affected_by_spell(ch, TAG_CTF))

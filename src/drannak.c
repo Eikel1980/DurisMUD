@@ -977,6 +977,7 @@ void do_conjure(P_char ch, char *argument, int cmd)
     {
       REMOVE_BIT(tobj->specials.affected_by, AFF4_DEFLECT);
     }
+    REMOVE_BIT(tobj->specials.act, ACT_PATROL);
    REMOVE_BIT(tobj->specials.act, ACT_SPEC); 
    REMOVE_BIT(tobj->specials.act, ACT_BREAK_CHARM);
 
@@ -1241,10 +1242,8 @@ void do_dismiss(P_char ch, char *argument, int cmd)
 
 
   if(count == 0)
-   {
-    send_to_char("You have no followers to dismiss.\r\n", ch);
     return;
-    }
+
 
 }
 

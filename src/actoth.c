@@ -3418,6 +3418,19 @@ void do_quaff(P_char ch, char *argument, int cmd)
     }
   }
 
+  if(affected_by_spell(ch, TAG_POTION_TIMER))
+  {
+    send_to_char("Your body cannot yet handle another jolt of magical influence!\r\n", ch);
+    return;
+  }
+
+  struct affected_type af;
+  memset(&af, 0, sizeof(af));
+  af.type = TAG_POTION_TIMER;
+  af.duration = 6;
+  affect_to_char(ch, &af);
+
+
   act("$n &+yquaffs&n $p.", TRUE, ch, temp, 0, TO_ROOM);
   act("As you quaff $p, the vial disappears in a bright &+Wflash of light!&n",
       FALSE, ch, temp, 0, TO_CHAR);

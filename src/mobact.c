@@ -10307,6 +10307,9 @@ void forget(P_char ch, P_char victim)
   if(!(curr = ch->only.npc->memory))
     return;
 
+  if(ch == victim)
+  return;
+
   while (curr && (curr->pcID != GET_PID(victim)))
   {
     prev = curr;
