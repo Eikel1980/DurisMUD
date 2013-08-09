@@ -723,6 +723,7 @@ void assign_mobiles(void)
 
   mob_index[real_mobile0(132593)].func.mob = janitor;
   mob_index[real_mobile0(132519)].func.mob = money_changer;
+  mob_index[real_mobile0(98718)].func.mob = money_changer;
   mob_index[real_mobile0(132501)].func.mob = tharn_tall_merchant;
   mob_index[real_mobile0(132509)].func.mob = tharn_beach_guard;
   mob_index[real_mobile0(132510)].func.mob = tharn_male_commoner;
