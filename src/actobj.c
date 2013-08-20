@@ -5083,6 +5083,16 @@ void do_salvage(P_char ch, char *argument, int cmd)
     return;
    }
 
+  if(GET_OBJ_VNUM(temp) == 352)
+  {
+    act("$n &+Ltries to break down their $p &+Lbut suddenly &+rDrannak&+L appears from the skies!", TRUE, ch, temp, 0, TO_ROOM);
+    act("You attempt to break down your $p but suddenly &+rDrannak&n appears from the skies!", FALSE, ch, temp, 0, TO_CHAR);
+    act("&+rDrannak&n makes a strange gesture, causing a large brick of &+Ycheese&n the size of a whale to suddenly fall on $n, crushing them completely!", TRUE, ch, temp, 0, TO_ROOM);
+    act("&+rDrannak&n makes a strange gesture, causing a large brick of &+Ycheese&n the size of a whale to suddenly fall on you, crushing you completely!", FALSE, ch, temp, 0, TO_CHAR);
+    die(ch, ch);
+    return;
+  }
+
 //make sure its not food or container
   if ((temp->type == ITEM_CONTAINER ||
        temp->type == ITEM_STORAGE) && temp->contains)
