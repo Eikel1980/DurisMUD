@@ -531,7 +531,7 @@ int race_size(int race);
 
 #define CAN_CARRY_W(ch) (str_app[STAT_INDEX(GET_C_STR(ch))].carry_w + (IS_TRUSTED(ch)? 20000: 0))
 
-#define CAN_CARRY_N(ch) (IS_TRUSTED(ch)? 3000: (STAT_INDEX(GET_C_DEX(ch)) / 3) + (IS_NPC(ch)? 12: 6))
+#define CAN_CARRY_N(ch) (IS_TRUSTED(ch)? 3000: (STAT_INDEX(GET_C_DEX(ch)) / 3) + (IS_NPC(ch)? 12: 6)) 
 
 #define IS_CARRYING_W(ch)  \
 ((ch)->specials.carry_weight + COIN_WEIGHT(GET_COPPER(ch), GET_SILVER(ch), GET_GOLD(ch), GET_PLATINUM(ch)))

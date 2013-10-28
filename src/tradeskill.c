@@ -622,21 +622,25 @@ void do_forge(P_char ch, char *argument, int cmd)
 	if((GET_OBJ_VNUM(t_obj) == obj1) && (i < fullcount) )
          {
 	   obj_from_char(t_obj, TRUE);
+	   extract_obj(t_obj, TRUE);
           i++;
          }
        if((GET_OBJ_VNUM(t_obj) == obj2) && (o < difference))
          {
 	   obj_from_char(t_obj, TRUE);
+	   extract_obj(t_obj, TRUE);
           o++;
          }
        if((GET_OBJ_VNUM(t_obj) == 400211) && (z < affcount))
          {
 	   obj_from_char(t_obj, TRUE);
+	   extract_obj(t_obj, TRUE);
           z++;
          }
        if((GET_OBJ_VNUM(t_obj) == 400223) && (y < 1))
          {
 	   obj_from_char(t_obj, TRUE);
+	   extract_obj(t_obj, TRUE);
           y++;
          }
       }

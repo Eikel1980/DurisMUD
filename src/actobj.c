@@ -504,7 +504,9 @@ void do_get(P_char ch, char *argument, int cmd)
            if (check_get_disarmed_obj(ch, o_obj->last_to_hold, o_obj))
            continue; */
 
-        if ((IS_CARRYING_N(ch) + 1) <= CAN_CARRY_N(ch))
+        if ((IS_CARRYING_N(ch) + 1) <= CAN_CARRY_N(ch)  ||   
+           ((GET_OBJ_VNUM(o_obj) > 400000) &&
+	   (GET_OBJ_VNUM(o_obj) < 400211) ))
         {
           if ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <= CAN_CARRY_W(ch))
           {
@@ -567,7 +569,9 @@ void do_get(P_char ch, char *argument, int cmd)
        return;
        */
 
-      if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch))
+      if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch) ||   
+           ((GET_OBJ_VNUM(o_obj) > 400000) &&
+	   (GET_OBJ_VNUM(o_obj) < 400211) ))
       {
         if ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <= CAN_CARRY_W(ch))
         {
@@ -695,7 +699,9 @@ void do_get(P_char ch, char *argument, int cmd)
            */
           if (CAN_SEE_OBJ(ch, o_obj))
           {
-            if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch))
+            if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch) ||   
+           ((GET_OBJ_VNUM(o_obj) > 400000) &&
+	   (GET_OBJ_VNUM(o_obj) < 400211) ))
             {
               if (((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <
                    CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj))
@@ -920,7 +926,9 @@ void do_get(P_char ch, char *argument, int cmd)
           o_obj = get_obj_in_list_vis(ch, arg1, s_obj->contains);
         if (o_obj)
         {
-          if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch))
+          if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch) ||   
+           ((GET_OBJ_VNUM(o_obj) > 400000) &&
+	   (GET_OBJ_VNUM(o_obj) < 400211) ))
           {
             if (((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <
                  CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj))
