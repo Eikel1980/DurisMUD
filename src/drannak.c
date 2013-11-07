@@ -1121,7 +1121,7 @@ while (i < 2)
 		}
  	   else
 		{  
-	  	 SET_BIT(obj->bitvector, AFF2_DETECT_MAGIC);
+	  	 SET_BIT(obj->bitvector2, AFF2_DETECT_MAGIC);
   	 	 send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
                sprintf(emsg, " &+Lof &+mmagic &+Ldetection&n");
 		}
@@ -1154,7 +1154,7 @@ while (i < 2)
 		}
  	   else
 		{  
-	  	 SET_BIT(obj->bitvector, AFF2_DETECT_MAGIC);
+	  	 SET_BIT(obj->bitvector2, AFF2_DETECT_MAGIC);
   	 	 send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
                sprintf(emsg, " &+Lof &+mmagic &+Ldetection&n");
 		}
@@ -1187,7 +1187,7 @@ while (i < 2)
 		}
  	   else
 		{  
-	  	 SET_BIT(obj->bitvector, AFF2_DETECT_MAGIC);
+	  	 SET_BIT(obj->bitvector2, AFF2_DETECT_MAGIC);
   	 	 send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
                sprintf(emsg, " &+Lof &+mmagic &+Ldetection&n");
 		}
@@ -1252,6 +1252,9 @@ void do_conjure(P_char ch, char *argument, int cmd)
   int choice = 0;  
 
   if(!ch)
+  return;
+
+  if(IS_NPC(ch))
   return;
 
 
