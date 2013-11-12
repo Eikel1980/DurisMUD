@@ -11,11 +11,11 @@ ifdef USE_SHARED
 LDFLAGS += -rdynamic
 endif
 
-LDFLAGS += -L/usr/lib/mysql -L./ships
+LDFLAGS += -L/usr/lib/mysql -L./ships -fno-stack-protector
 
 OPTS    = -O2
 
-CFLAGS = -g -Wno-write-strings -fpermissive
+CFLAGS = -g -Wno-write-strings -fpermissive -fno-stack-protector
 #CFLAGS += -D__NO_MYSQL__
 CFLAGS += -DTEST_MUD
 
