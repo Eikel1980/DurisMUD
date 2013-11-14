@@ -5003,7 +5003,8 @@ void select_class(P_desc d, char *arg)
   GET_ORIG_BIRTHPLACE(d->character) = home;
 
   /* Krov: didn't get hometown choice either, roll the stats */
-  STATE(d) = CON_BONUS1;
+  //STATE(d) = CON_BONUS1;
+  STATE(d) = CON_REROLL;
   roll_basic_abilities(d->character, 0);
   display_characteristics(d);
 
