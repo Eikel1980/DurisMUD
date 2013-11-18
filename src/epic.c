@@ -559,7 +559,7 @@ void gain_epic(P_char ch, int type, int data, int amount)
   if(GET_RACEWAR(ch) == RACEWAR_EVIL)
     amount = amount * (float)get_property("epic.gain.modifier.evil", 1.000);
 
-  wipe2013 - Drannak
+  //wipe2013 - Drannak
   amount = (int) (amount / 2);
   
   // add guild prestige
