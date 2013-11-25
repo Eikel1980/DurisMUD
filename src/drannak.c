@@ -2109,7 +2109,7 @@ int get_progress(P_char ch, int ach, uint required)
   }
 
   if(prog < 0)
-  prog = 0;
+  return 1;
 
  return percentage;
 }
