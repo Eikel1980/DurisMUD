@@ -2123,6 +2123,8 @@ int get_progress(P_char ch, int ach, uint required)
 void thanksgiving_proc(P_char ch)
 {
   P_char mob;
+  if(!ch)
+  return;
   char buff[MAX_STRING_LENGTH];
   sprintf(buff, " %s 86", GET_NAME(ch));
   act("&+YSuddenly and without warning, a &+rPlump &+yTurkey &+Yappears out of no where, seemly attracted to the freshly spilled &+Rblood&n!", TRUE, ch, 0, 0, TO_CHAR);
@@ -2132,5 +2134,5 @@ void thanksgiving_proc(P_char ch)
   if(!mob)
   return;
  obj_to_char(read_object(400232, VIRTUAL), mob);
- char_to_room(mob, ch->in_room, -2);
+ char_to_room(mob, ch->in_room, 0);
 }
