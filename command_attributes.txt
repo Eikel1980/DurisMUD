@@ -242,6 +242,9 @@ GET_C_LUK(vi
 rush
 ~
 search
+GET_C_INT(ch
+GET_C_WIS(ch
+GET_C_LUK(ch
 ~
 shadow
 GET_C_INT(sh
