@@ -13,8 +13,11 @@ GET_C_DEX(ch
 GET_C_INT(ch
 ~
 backstab
+GET_C_DEX(ch
+GET_C_STR(ch
 GET_C_LUK(ch
-GET_C_LUK(vi
+GET_C_INT(vi
+GET_C_AGI(ch
 ~
 barrage
 GET_C_LUK(ch
@@ -166,6 +169,11 @@ GET_C_WIS(ch
 kick
 GET_C_STR(ch
 ~
+lance charge
+GET_C_LUK(ch
+GET_C_LUK(vi
+GET_C_LUK(ch
+~
 lay hands
 GET_C_CHA(ch
 ~
@@ -240,6 +248,16 @@ GET_C_LUK(ch
 GET_C_LUK(vi
 ~
 rush
+~
+salvage
+GET_C_LUK(ch
+GET_C_LUK(ch
+GET_C_LUK(ch
+GET_C_LUK(ch
+GET_C_LUK(ch
+GET_C_LUK(ch
+GET_C_LUK(ch
+GET_C_LUK(ch
 ~
 search
 GET_C_INT(ch

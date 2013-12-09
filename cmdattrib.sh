@@ -59,7 +59,7 @@ FUNCTIONNAME="void do_awareness"
 parsefile
 
 echo "backstab" >> command_attributes.txt
-FUNCTIONNAME="bool backstab"
+FUNCTIONNAME="bool single_stab"
 parsefile
 
 echo "barrage" >> command_attributes.txt
@@ -242,6 +242,10 @@ echo "kick" >> command_attributes.txt
 FUNCTIONNAME="void kick"
 parsefile
 
+echo "lance charge" >> command_attributes.txt
+FUNCTIONNAME="void lance_charge"
+parsefile
+
 echo "lay hands" >> command_attributes.txt
 FUNCTIONNAME="void do_layhand"
 parsefile
@@ -328,6 +332,10 @@ parsefile
 
 echo "rush" >> command_attributes.txt
 FUNCTIONNAME="void rush"
+parsefile
+
+echo "salvage" >> command_attributes.txt
+FUNCTIONNAME="void do_salvage"
 parsefile
 
 echo "search" >> command_attributes.txt
