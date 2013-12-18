@@ -7,11 +7,18 @@
 #include "comm.h"
 #include "prototypes.h"
 #include "ships.h"
+#include "spells.h"
+#include <string.h>
+
 extern P_room world;
+extern int top_of_objt;
 
 int adjacent_room_nesw(P_char ch, int num_rooms );
 P_ship leviathan_find_ship( P_char leviathan, int room, int num_rooms );
-void explode_ammo( P_char ch, P_obj ammo, int in_room );
+void explode_ammo( P_char ch, P_obj ammo );
+bool is_siege( P_obj weapon );
+void damage_siege( P_obj siege, int damage, P_obj ammo );
+P_obj get_siege_room( P_char ch, char *arg );
 
 // This is an old proc for Lohrr's eq..
 void proc_lohrr( P_obj obj, P_char ch, int cmd, char *argument )
@@ -32,7 +39,7 @@ void proc_lohrr( P_obj obj, P_char ch, int cmd, char *argument )
          break;
    }
    // obj is not worn !  This must be a bug if true.
-   if( locwearing = MAX_WEAR )
+   if( locwearing == MAX_WEAR )
       return;
 
    switch( locwearing )
@@ -45,6 +52,7 @@ void proc_lohrr( P_obj obj, P_char ch, int cmd, char *argument )
       break;
    }
 }
+
 /*
 // It's a percentage chance to make them attack a few extra times.
 // It's size dependdent: < medium = 10, medium/large = 6, > large = 4
@@ -87,11 +95,7 @@ void dagger_of_wind( P_obj obj, P_char ch, int cmd, char *argument )
    }
 }
 */
-// Alright, so... I made a first attempt at trying to hack some code together and
-//  wanted to see if I did it correct. I'm going to cut/paste the proc I put together.
-// Basicly, what I was intending, is for a proc that works on command, with a cooldown
-//  (yea, the current cooldown is to fast for this item, but i can tweak)... lemme know
-//  if it looks right, or what needs to change...
+
 int sphinx_prefect_crown( P_obj obj, P_char ch, int cmd, char *arg )
 {
    int curr_time;
@@ -130,7 +134,7 @@ int sphinx_prefect_crown( P_obj obj, P_char ch, int cmd, char *arg )
    }
 
    // Send a message (once) to the char when the crown becomes usable again.
-   if (cmd == CMD_PERIODIC && obj->timer[0] + 300 <= curr_time && obj->timer[1] == 0 )
+   if(cmd == CMD_PERIODIC && obj->timer[0] + 300 <= curr_time && obj->timer[1] == 0 )
    {
       act("&+LYour legendary &+ycrown &+Lof the &+Ys&+yp&+Yh&+yi&+Yn&+yx &+Gp&+gr&+Ge&+gf&+Ge&+gc&+Gt&+gs &+Cglows &+Lwith an unearthly &+Wlight &+Land starts to &+mpulse &+Lgently in time to your &+rheartbeat&+L.&n",
          TRUE, obj->loc.wearing, obj, 0, TO_CHAR);
@@ -274,7 +278,7 @@ P_ship leviathan_find_ship( P_char leviathan, int room, int num_rooms )
    return NULL;
 }
 
-// Dependent on ch's weight and str.  Pretty simple atm.
+// Dependent on ch's str and weight.  Pretty simple atm.
 int siege_move_wait( P_char ch )
 {
   // Base: 100 str, 100 weight, 2 secs
@@ -339,6 +343,7 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
   P_obj  ammo;
   int    dir;
   P_char vict;
+  P_obj  target;
 
   if( cmd == CMD_SET_PERIODIC )
     return TRUE;
@@ -346,8 +351,7 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
   {
     // Parse argument.
     argument_interpreter(arg, arg1, arg2);
-    if(  isname( arg1, "ballista" )
-      || isname( arg1, obj->name ) )
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) == obj )
     {
       dir = -1;
       // Figure out what direction.
@@ -385,8 +389,11 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
       return TRUE;
     }
   }
-  else if ( cmd == CMD_RELOAD )
+  else if( cmd == CMD_RELOAD )
   {
+    argument_interpreter(arg, arg1, arg2);
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) != obj ) 
+      return FALSE;
     if( obj->value[2] > 0 )
       act( "$p is already loaded.", FALSE, ch, obj, NULL, TO_CHAR );
     else
@@ -403,12 +410,10 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
   else if( cmd == CMD_FIRE )
   {
     // Parse argument.
-    half_chop(arg, arg1, arg);
-    half_chop(arg, arg2, arg);
-    half_chop(arg, arg3, arg);
+    half_chop(arg, arg1, arg3);
+    half_chop(arg3, arg2, arg3);
 
-    if(  isname( arg1, "ballista" )
-      || isname( arg1, obj->name ) )
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) == obj )
     {
       dir = -1;
 
@@ -452,20 +457,36 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
         }
         // Load exploded ammo into the room.
         ammo = read_object(real_object(178), REAL);
+        if( !ammo )
+        {
+          logit(LOG_DEBUG, "ballista: couldn't load ammo.");
+          return FALSE;
+        }
         obj->value[2] = 0;
         obj_to_room( ammo, in_room );
         vict = NULL;
+        target = NULL;
         // Fire the weapon 3x spaces to the dir. Hits walls.
         for( num_rooms = 0;num_rooms<3;num_rooms++)
         {
           ch_room = ch->in_room;
           ch->in_room = in_room;
           // Impale the target!
-          if( !vict && (vict = get_char_room_vis(ch, arg2)) )
+          if( num_rooms > 0 && !vict && (vict = get_char_room_vis(ch, arg2)) )
           {
             act( "$p impales $n!", TRUE, vict, ammo, 0, TO_ROOM );
             act( "$p impales YOU!", TRUE, vict, ammo, 0, TO_CHAR );
             char_from_room( vict );
+          }
+          // If we hit target siege object.
+          if( num_rooms > 0 && !vict && (target = get_siege_room( ch, arg2)) )
+          {
+            sprintf( buf, "%s slams into $p", ammo->short_description );
+            act( buf, TRUE, NULL, target, 0, TO_ROOM );
+            act( buf, TRUE, ch, target, 0, TO_CHAR );
+            damage_siege( target, 50, ammo );
+            ch->in_room = ch_room;
+            return TRUE;
           }
           ch->in_room = ch_room;
           // If we hit a wall.
@@ -494,6 +515,13 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
           act( "$p slams into the ground with $n impaled upon it.", TRUE, vict, ammo, NULL, TO_ROOM );
           act( "You hit the ground and bounce off of $p.", TRUE, vict, ammo, NULL, TO_CHAR );
         }
+        else if( target = get_siege_room( ch, arg2) )
+        {
+          sprintf( buf, "%s slams into $p", ammo->short_description );
+          act( buf, TRUE, NULL, target, 0, TO_ROOM );
+          act( buf, TRUE, ch, target, 0, TO_CHAR );
+          damage_siege( target, 50, ammo );
+        }
         // If victim in final room...
         else if( (vict = get_char_room_vis(ch, arg2)) != NULL )
         {
@@ -516,10 +544,11 @@ int ballista( P_obj obj, P_char ch, int cmd, char *arg )
 // This proc is for a battering ram(OBJ # 462).
 int battering_ram( P_obj obj, P_char ch, int cmd, char *arg )
 {
-  char arg1[MAX_STRING_LENGTH];
-  char arg2[MAX_STRING_LENGTH];
-  char buf[MAX_STRING_LENGTH];
-  int dir;
+  char  arg1[MAX_STRING_LENGTH];
+  char  arg2[MAX_STRING_LENGTH];
+  char  buf[MAX_STRING_LENGTH];
+  int   dir;
+  P_obj target;
 
   if( cmd == CMD_SET_PERIODIC )
     return TRUE;
@@ -527,8 +556,7 @@ int battering_ram( P_obj obj, P_char ch, int cmd, char *arg )
   {
     // Parse argument.
     argument_interpreter(arg, arg1, arg2);
-    if(  isname( arg1, "battering ram" )
-      || isname( arg1, obj->name ) )
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) == obj )
     {
       dir = -1;
       // Figure out what direction.
@@ -566,6 +594,35 @@ int battering_ram( P_obj obj, P_char ch, int cmd, char *arg )
       return TRUE;
     }
   }
+  else if( cmd == CMD_THRUST )
+  {
+    argument_interpreter(arg, arg1, arg2);
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) == obj )
+    {
+      if( (target = get_siege_room( ch, arg2)) != NULL )
+      {
+        if( obj == target )
+        {
+          act( "You push $p around in circles.", FALSE, ch, target, NULL, TO_CHAR );
+          act( "$n pushes $p around in circles.", FALSE, ch, target, NULL, TO_ROOM );
+          return TRUE;
+        }
+
+        // Yes, this lags you to stop you from spamming.
+        CharWait(ch, siege_move_wait(ch) / 2 );
+
+        sprintf( buf, "You thrust %s at $p!", obj->short_description );
+        act( buf, FALSE, ch, target, NULL, TO_CHAR );
+        sprintf( buf, "$n thrusts %s at $p!", obj->short_description );
+        act( buf, FALSE, ch, target, NULL, TO_ROOM );
+
+        damage_siege( target, 50, obj );
+      }
+      else
+        act( "Thrust $p at what?", FALSE, ch, obj, NULL, TO_CHAR );
+      return TRUE;
+    }
+  }
   return FALSE;
 }
 
@@ -586,8 +643,7 @@ int catapult( P_obj obj, P_char ch, int cmd, char *arg )
   {
     // Parse argument.
     argument_interpreter(arg, arg1, arg2);
-    if(  isname( arg1, "catapult" )
-      || isname( arg1, obj->name ) )
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) == obj )
     {
       dir = -1;
       // Figure out what direction.
@@ -625,8 +681,11 @@ int catapult( P_obj obj, P_char ch, int cmd, char *arg )
       return TRUE;
     }
   }
-  else if ( cmd == CMD_RELOAD )
+  else if( cmd == CMD_RELOAD )
   {
+    argument_interpreter(arg, arg1, arg2);
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) != obj )
+      return FALSE;
     if( obj->value[2] > 0 )
       act( "$p is already loaded.", FALSE, ch, obj, NULL, TO_CHAR );
     else
@@ -644,8 +703,7 @@ int catapult( P_obj obj, P_char ch, int cmd, char *arg )
   {
     // Parse argument.
     argument_interpreter(arg, arg1, arg2);
-    if(  isname( arg1, "catapult" )
-      || isname( arg1, obj->name ) )
+    if( get_obj_in_list_vis(ch, arg1, world[ch->in_room].contents) == obj )
     {
       dir = -1;
 
@@ -698,7 +756,7 @@ int catapult( P_obj obj, P_char ch, int cmd, char *arg )
           if(  !VIRTUAL_EXIT(in_room, dir)
             || !VIRTUAL_EXIT(in_room, dir)->to_room )
           {
-            sprintf( buf, "A huge rock slams into the %s wall.", dirs[dir] );
+            sprintf( buf, "$p slams into the %s wall.", dirs[dir] );
             act( buf, TRUE, NULL, ammo, 0, TO_ROOM );
             return TRUE;
           }
@@ -707,17 +765,15 @@ int catapult( P_obj obj, P_char ch, int cmd, char *arg )
             in_room = VIRTUAL_EXIT(in_room, dir)->to_room;
             obj_from_room(ammo);
             obj_to_room(ammo, in_room);
-            act( "A huge rock flies overhead", TRUE, NULL, ammo, 0, TO_ROOM );
+            act( "$p flies overhead..", TRUE, NULL, ammo, 0, TO_ROOM );
           }
         }
         // Ammo lands in to_room.. BOOM, SPLAT!
-        act( "A huge rock explodes overhead", TRUE, NULL, ammo, 0, TO_ROOM );
-        explode_ammo( ch, ammo, in_room );
+        act( "$p explodes overhead!", TRUE, NULL, ammo, 0, TO_ROOM );
+        explode_ammo( ch, ammo );
         return TRUE;
       }
     }
-    else
-        send_to_char( "Fire what?\n", ch );
   }
   return FALSE;
 }
@@ -753,13 +809,98 @@ void event_move_engine(P_char ch, P_char victim, P_obj obj, void *data)
 }
 
 // This will probably want an update with ammo types.
-void explode_ammo( P_char ch, P_obj ammo, int in_room )
+void explode_ammo( P_char ch, P_obj ammo )
 {
   P_char vict, next_vict;
+  P_obj obj, next_obj;
 
-  for( vict = next_vict = world[ammo->loc.room].people;vict;vict = next_vict )
+  // Splat ppl!
+  for( vict = world[ammo->loc.room].people;vict;vict = next_vict )
   {
-    next_vict = next_vict->next_in_room;
-    damage(ch, vict, 50, MSG_CRUSH );
+    next_vict = vict->next_in_room;
+    damage(ch, vict, 50, TYPE_UNDEFINED );
   }
+
+  // Splat other siege weapons.
+  for( obj = world[ammo->loc.room].contents;obj;obj = next_obj )
+  {
+    next_obj = obj->next_content;
+    if( is_siege( obj ) )
+      damage_siege( obj, 50, ammo );
+  }
+}
+
+// Returns TRUE iff weapon is a siege weapon.
+bool is_siege( P_obj weapon )
+{
+  if( !weapon )
+    return FALSE;
+
+  if( weapon->R_num < 0 || weapon->R_num > top_of_objt )
+    return FALSE;
+
+  switch( obj_index[weapon->R_num].virtual_number )
+  {
+  case 461:
+  case 462:
+  case 463:
+    return TRUE;
+  default:
+    return FALSE;
+  }
+}
+
+void damage_siege( P_obj siege, int damage, P_obj ammo )
+{
+  char  buf[MAX_STRING_LENGTH];
+  bool  destroy = FALSE;
+  P_obj scraps;
+
+  siege->condition -= damage;
+  if( siege->condition <= 0 )
+    destroy = TRUE;
+
+  sprintf(buf, "$q %s", destroy ? "is completely destroyed!" :
+                                  "is damaged from the blow!" );
+  act(buf, TRUE, NULL, siege, 0, TO_ROOM);
+
+  if( destroy )
+  {
+    act("$p collapses into scraps.", TRUE, NULL, siege, 0, TO_ROOM);
+    scraps = read_object(9, VIRTUAL);
+    if( !scraps )
+      return;
+    sprintf(buf, "Scraps from %s&n lie in a pile here.",
+      siege->short_description);
+    scraps->description = str_dup(buf);
+    sprintf(buf, "a pile of scraps from %s", siege->short_description);
+    scraps->short_description = str_dup(buf);
+    sprintf(buf, "%s scraps pile", siege->name);
+    scraps->name = str_dup(buf);
+    scraps->str_mask = STRUNG_DESC1 | STRUNG_DESC2 | STRUNG_KEYS;
+    set_obj_affected(scraps, 400, TAG_OBJ_DECAY, 0);
+    obj_to_room(scraps, siege->loc.room);
+    extract_obj( siege, TRUE );
+  }
+}
+
+// Find a siege object in ch's room.
+P_obj get_siege_room( P_char ch, char *arg )
+{
+  P_obj obj;
+  char *temp = arg;
+  int   howmany;
+  int   count = 0;
+
+  // Need to handle 2.siege.
+  howmany = get_number( &temp );
+
+  for( obj = world[ch->in_room].contents; obj; obj = obj->next_content )
+  {
+    // If it is a siege weapon, and matches name, and matches amount..
+    if( is_siege( obj ) && isname( temp, obj->name ) && howmany == ++count )
+        return obj;
+  }
+
+  return NULL;
 }
