@@ -31,7 +31,7 @@
 #include "weather.h"
 #include "sound.h"
 #include "ships.h"
-
+#include "hardcore.h"
 
 /*
  * external variables
@@ -79,35 +79,24 @@ void writeHallOfFame(P_char ch, char thekiller[1024])
 {
   FILE    *halloffamelist;
   char     highPlayerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH],
-    lowPlayerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH], change = FALSE;
+           lowPlayerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH];
+  bool     change = FALSE;
   int      highHardcore[MAX_HALLOFFAME_SIZE],
-    lowHardcore[MAX_HALLOFFAME_SIZE], phalloffames, i;
+           lowHardcore[MAX_HALLOFFAME_SIZE], phalloffames, i;
   char     killerName[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH];
-  char     halloffamelist_file[1024];
   char     buffer[1024], *ptr;
+  int      actualrecords = 0;
 
-  if (!ch)
+  if( !ch )
     return;
 
-  sprintf(halloffamelist_file, "lib/information/hardcore_hall_of_fame");
+  halloffamelist = fopen(halloffamelist_file, "r");
 
-/* This does nothing.  See above ^^^^
-  ptr = halloffamelist_file;
-  for (ptr = halloffamelist_file; *ptr != '\0'; ptr++)
-  {
-    *ptr = LOWER(*ptr);
-    if (*ptr == ' ')
-      *ptr = '_';
-  }
-*/
-
-  halloffamelist = fopen(halloffamelist_file, "rt");
-
-  if (!halloffamelist)
+  if( !halloffamelist )
   {
     logit(LOG_DEBUG, "writeHallOfFame(): Could not open file '%s'.", halloffamelist_file );
-    sprintf(buffer, "Couldn't open halloffamelist: %s\r\n", halloffamelist_file);
-    send_to_char(buffer, ch);
+    if( ch )
+      send_to_char("Couldn't open Hall of Fame! Tell a god.\r\n", ch);
     return;
   }
 
@@ -117,55 +106,50 @@ void writeHallOfFame(P_char ch, char thekiller[1024])
     phalloffames = getHardCorePts(ch) + 100;
   *thekiller = toupper(*thekiller);
 
-  /* read highest */
-  for (i = 0; i < MAX_HALLOFFAME_SIZE; i++)
-  {
-    // If end of file.
-    if (feof(halloffamelist))
-    {
-      logit(LOG_DEBUG, "writeHallOfFame(): list terminated prematurely." );
-      // send_to_char("error: halloffame list terminated prematurely.\r\n", ch);
-      fclose(halloffamelist);
-      return;
-    }
-
-    fscanf(halloffamelist, "%s %d %s\n", highPlayerName[i], &highHardcore[i],
-           killerName[i]);
-  }
+  // Read in the hall of fame list from file.
+  while( (fscanf(halloffamelist, "%s %d %s\n", highPlayerName[actualrecords], 
+            &highHardcore[actualrecords], killerName[actualrecords]) != EOF)
+         && actualrecords < MAX_HALLOFFAME_SIZE )
+    actualrecords++;
 
   fclose(halloffamelist);
 
-/* check if player already has an entry and is higher than somebody else
-    (including his previous entry) - if so, delete it.  if they end up at
-    the end of the list (higher than nobody after deleted), stick em there
-    here */
-
-  for( i = 0; i < MAX_HALLOFFAME_SIZE; i++ )
+  // Delete their entry if they have one.
+  for( i = 0; i < actualrecords; i++ )
   {
     // Check for player already on list.
     if( !str_cmp(ch->player.name, highPlayerName[i]) )
     {
       deleteHallEntry(highPlayerName, highHardcore, i, killerName);
+      actualrecords--;
       break;
     }
   }
 
   /* see if player has beaten anybody currently on the list */
-  for( i = 0; i < MAX_HALLOFFAME_SIZE; i++ )
+  for( i = 0; i < actualrecords; i++ )
   {
     if( phalloffames > highHardcore[i] )
     {
       insertHallEntry(highPlayerName, highHardcore, ch->player.name,
                       phalloffames, i, killerName, thekiller);
-
+      actualrecords++;
       change = TRUE;
       break;
     }
   }
 
+  // If new entry:
+  if( !change && actualrecords < MAX_HALLOFFAME_SIZE )
+  {
+    insertHallEntry(highPlayerName, highHardcore, ch->player.name,
+                      phalloffames, actualrecords++, killerName, thekiller);
+    change = TRUE;
+  }
+
   if( change )
   {
-    halloffamelist = fopen(halloffamelist_file, "wt");
+    halloffamelist = fopen(halloffamelist_file, "w");
     if( !halloffamelist )
     {
       logit(LOG_DEBUG, "writeHallOfFame(): Could not open file '%s' for writing.", halloffamelist_file );
@@ -173,7 +157,7 @@ void writeHallOfFame(P_char ch, char thekiller[1024])
       return;
     }
 
-    for( i = 0; i < MAX_HALLOFFAME_SIZE; i++ )
+    for( i = 0; i < actualrecords; i++ )
       fprintf(halloffamelist, "%s %d %s\n", highPlayerName[i],
               highHardcore[i], killerName[i]);
     fclose(halloffamelist);
@@ -186,10 +170,13 @@ void deleteHallEntry(char names[MAX_HALLOFFAME_SIZE][MAX_STRING_LENGTH],
 {
   int      i;
 
-  if (pos >= MAX_HALLOFFAME_SIZE)
+  if( pos >= MAX_HALLOFFAME_SIZE )
+  {
+    logit(LOG_DEBUG, "deleteHallEntry(): pos too big: '%d'.", pos );
     return;
+  }
 
-  for (i = pos; i < MAX_HALLOFFAME_SIZE; i++)
+  for( i = pos; i < MAX_HALLOFFAME_SIZE-1; i++ )
   {
     strcpy(names[i], names[i + 1]);
     halloffames[i] = halloffames[i + 1];
@@ -242,14 +229,12 @@ void displayHardCore(P_char ch, char *arg, int cmd)
   int      halloffames;
   char     i;
   float    pts = 0;
-  char     filename[1024];
 
-  sprintf(filename, "lib/information/hardcore_hall_of_fame");
-
-  if (!(halloffameList = fopen(filename, "rt")))
+  if( !(halloffameList = fopen(halloffamelist_file, "r")) )
   {
-   /* sprintf(name, "Couldn't open halloffamelist: %s\r\n", filename);
-    send_to_char(name, ch); */
+    logit(LOG_DEBUG, "displayHardCore(): could not open file '%s'.", halloffamelist_file );
+    if( ch )
+      send_to_char("Couldn't open Hall of Fame! Tell a god.\r\n", ch);
     return;
   }
 
@@ -259,7 +244,9 @@ void displayHardCore(P_char ch, char *arg, int cmd)
   strcat(buf, tempbuf);
   for (i = 0; i < MAX_HALLOFFAME_SIZE; i++)
   {
-    fscanf(halloffameList, "%s %d %s\n", name, &halloffames, killer);
+    // Less than full hall of fame list?
+    if( fscanf(halloffameList, "%s %d %s\n", name, &halloffames, killer) == EOF )
+      break;
     name[0] = toupper(name[0]);
     pts = halloffames;
     pts /= 100.0;
@@ -356,9 +343,11 @@ void insertLeaderEntry(char names[MAX_LEADERBOARD_SIZE][MAX_STRING_LENGTH],
   halloffames[pos] = newHardcore;
 }
 
-void newLeaderBoard(P_char ch, char *arg, int cmd)
+// Copies leaderboard file to leaderboardprod and resets leaderboard.
+// Returns TRUE iff leaderboard is reset.
+bool newLeaderBoard(P_char ch, char *arg, int cmd)
 {
-  FILE    *halloffamelist, *f, *newleaderlist;
+  FILE    *leaderboardlist, *f, *newleaderlist;
   char     highPlayerName[MAX_LEADERBOARD_SIZE][MAX_STRING_LENGTH],
            lowPlayerName[MAX_LEADERBOARD_SIZE][MAX_STRING_LENGTH];
   char     name[MAX_STRING_LENGTH];
@@ -368,40 +357,47 @@ void newLeaderBoard(P_char ch, char *arg, int cmd)
   int      halloffames, x;
   long     phalloffames;
   float    pts = 0;
-  char     halloffamelist_file[1024], newleader_file[1024], buf2[MAX_STRING_LENGTH];
-  char     buffer[1024], *ptr;
+  char     buf[MAX_STRING_LENGTH], buffer[1024], *ptr;
 
  
-  sprintf(halloffamelist_file, "lib/information/leaderboard");
-  sprintf(newleader_file, "lib/information/leaderboardprod");
-
-  newleaderlist = fopen(newleader_file, "wt");
+  newleaderlist = fopen(newleader_file, "w");
   if( !newleaderlist )
   {
-    send_to_char("error: couldn't open newleaderlist for writing.\r\n", ch);
-    return;
+    if( ch )
+      send_to_char("error: couldn't open newleaderlist for writing.\r\n", ch);
+    logit(LOG_DEBUG, "newLeaderBoard(): Could not open file '%s'.", newleader_file );
+    return FALSE;
   }
 	
-  halloffamelist = fopen(halloffamelist_file, "rt");
-  if( !halloffamelist )
+  leaderboardlist = fopen(leaderboard_file, "r");
+  if( !leaderboardlist )
   {
-    send_to_char("error: couldn't open oldhalloffamelist for writing.\r\n", ch);
+    if( ch )
+      send_to_char("error: couldn't open oldhalloffamelist for writing.\r\n", ch);
+    logit(LOG_DEBUG, "newLeaderBoard(): Could not open file '%s'.", leaderboard_file );
     fclose(newleaderlist);
-    return;
+    return FALSE;
   }
 
-  while( fscanf(halloffamelist, "%s %d\n", name, &halloffames) != EOF )
+  while( fscanf(leaderboardlist, "%s %d\n", name, &halloffames) != EOF )
   {
     pts = halloffames;
-  /*  pts /= 100.0;*/
     if(!strcmp(name, "none"))
       break;
-    sprintf(buf2, "%s %d\t\r\n", name, (int)pts);
-    fprintf(newleaderlist, buf2);
+    sprintf(buf, "%s %d\t\r\n", name, (int)pts);
+    fprintf(newleaderlist, buf);
   }
 
-  fclose(halloffamelist);
+  fclose(leaderboardlist);
   fclose(newleaderlist);
+
+  // Erase the file and recreate it via touch.
+  sprintf( buf, "rm -f %s", leaderboard_file );
+  system( buf );
+  sprintf( buf, "touch %s", leaderboard_file );
+  system( buf );
+
+  return TRUE;
 }
   
 
@@ -414,20 +410,26 @@ void displayLeader(P_char ch, char *arg, int cmd)
   int      halloffames, x;
   char     i;
   float    pts = 0;
-  char     filename[1024];
+
+  one_argument( arg, name );
+  // If !ch then !IS_TRUSTED(ch)
+  if( name[0] != '\0' && is_abbrev( name, "reset" ) && IS_TRUSTED( ch ) )
+  {
+    send_to_char( "Resetting leader board...\n", ch );
+    if( newLeaderBoard( ch, arg, cmd ) )
+      send_to_char( "Leader board reset!\n", ch );
+    else
+      send_to_char( "Leader board reset failed!\n", ch );
+    return;
+  }
 
   update_shipfrags();
 
-  
-  sprintf(filename, "lib/information/leaderboard");
-
-  if (!(halloffameList = fopen(filename, "rt")))
+  if (!(halloffameList = fopen(leaderboard_file, "r")))
   {
-    /*
-    sprintf(name, "Couldn't open leaderboard: %s\r\n", filename);
-    send_to_char(name, ch);
-    */
-    logit(LOG_DEBUG, "displayLeader(): Could not open file '%s'.", filename );
+    if( ch )
+      send_to_char("Couldn't open leaderboard! Tell a god.\r\n", ch);
+    logit(LOG_DEBUG, "displayLeader(): Could not open file '%s'.", leaderboard_file );
     return;
   }
 
@@ -439,10 +441,10 @@ void displayLeader(P_char ch, char *arg, int cmd)
   }
   fclose(halloffameList);
 
-  halloffameList = fopen(filename, "rt");
+  halloffameList = fopen(leaderboard_file, "r");
   if (!halloffameList)
   {
-    logit(LOG_DEBUG, "displayLeader(): 2nd Could not open file '%s'.", filename );
+    logit(LOG_DEBUG, "displayLeader(): 2nd Could not open file '%s'.", leaderboard_file );
     return;
   }
 
@@ -485,43 +487,40 @@ void checkLeaderBoard( P_char ch )
 
 void writeLeaderBoard( P_char ch )
 {
-  FILE    *halloffamelist, *f;
+  FILE    *halloffamelist;
   char     highPlayerName[MAX_LEADERBOARD_SIZE][MAX_STRING_LENGTH],
-    lowPlayerName[MAX_LEADERBOARD_SIZE][MAX_STRING_LENGTH], change = FALSE;
+           lowPlayerName[MAX_LEADERBOARD_SIZE][MAX_STRING_LENGTH];
+  bool     change = FALSE;
   int      highHardcore[MAX_LEADERBOARD_SIZE],
-    lowHardcore[MAX_LEADERBOARD_SIZE], i;
-  long    phalloffames;
-  char     halloffamelist_file[1024];
+           lowHardcore[MAX_LEADERBOARD_SIZE], i;
+  long     phalloffames;
   char     buffer[1024], *ptr;
+  int      highx, actualrecords=0;
+  char     namex[MAX_STRING_LENGTH];
 
   if( !ch )
     return;
 
-  sprintf(halloffamelist_file, "lib/information/leaderboard");
+  halloffamelist = fopen(leaderboard_file, "r");
 
-  halloffamelist = fopen(halloffamelist_file, "rt");
-
-  if (!halloffamelist)
+  if( !halloffamelist )
   {
-    logit(LOG_DEBUG, "writeLeaderBoard(): Could not open file '%s'.", halloffamelist_file );
+    logit(LOG_DEBUG, "writeLeaderBoard(): Could not open file '%s'.", leaderboard_file );
     return;
   }  
 
   phalloffames = getLeaderBoardPts(ch);
  
-  int highx, actualrecords=0;
-  char namex[MAX_STRING_LENGTH], debugbuf[MAX_STRING_LENGTH];
-
   // Count the number of records.  
-  while((fscanf(halloffamelist, "%s %d\n", namex, &highx)) != EOF && actualrecords < MAX_HALLOFFAME_SIZE)
+  while((fscanf(halloffamelist, "%s %d\n", namex, &highx)) != EOF && actualrecords < MAX_LEADERBOARD_SIZE)
     actualrecords++;
 
   fclose(halloffamelist);
 
-  halloffamelist = fopen(halloffamelist_file, "rt");
+  halloffamelist = fopen(leaderboard_file, "r");
   if( !halloffamelist )
   {
-    logit(LOG_DEBUG, "writeLeaderBoard(): 2nd Could not open file '%s'.", halloffamelist_file );
+    logit(LOG_DEBUG, "writeLeaderBoard(): 2nd Could not open file '%s'.", leaderboard_file );
     return;
   }
 
@@ -569,10 +568,10 @@ void writeLeaderBoard( P_char ch )
 
   if( change )
   {
-    halloffamelist = fopen(halloffamelist_file, "wt");
+    halloffamelist = fopen(leaderboard_file, "w");
     if( !halloffamelist )
     {
-      logit(LOG_DEBUG, "writeLeaderBoard(): Could not open file '%s' for writing.", halloffamelist_file );
+      logit(LOG_DEBUG, "writeLeaderBoard(): Could not open file '%s' for writing.", leaderboard_file );
       return;
     }
 

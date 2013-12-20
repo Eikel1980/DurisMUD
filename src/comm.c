@@ -54,6 +54,7 @@
 #include "outposts.h"
 #include "boon.h"
 #include "ctf.h"
+#include "hardcore.h"
 
 /* external variables */
 
@@ -329,6 +330,7 @@ void run_the_game(int port)
   int      s;
   long     time_before = 0;
   long     time_after = 0;
+  char     buf[MAX_STRING_LENGTH];
 
   descriptor_list = NULL;
 
@@ -393,8 +395,13 @@ void run_the_game(int port)
   fprintf(stderr, "-- Loading town data\r\n");
   load_towns();
 
-  fprintf(stderr, "-- Updating leaderboard\r\n");
-  newLeaderBoard(NULL, NULL, NULL);
+  // This guarentees that files exist for reading.
+  fprintf(stderr, "-- Touching leaderboard\r\n");
+  sprintf( buf, "touch %s", leaderboard_file );
+  system( buf );
+  fprintf(stderr, "-- Touching hall of fame\r\n");
+  sprintf( buf, "touch %s", halloffamelist_file );
+  system( buf );
   
   init_ctf();
 
