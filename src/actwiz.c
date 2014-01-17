@@ -10213,11 +10213,11 @@ void load_towns()
         (*town)->zone = &(zone_table[i]);
 
         fgets( line, sizeof line, town_file );
-        (*town)->resources = atoi( line );
+        sscanf(line, "%i %i %i\n", &((*town)->offense), &((*town)->defense), &((*town)->resources));
         fgets( line, sizeof line, town_file );
-        (*town)->defense = atoi( line );
+        (*town)->deploy_guard = !strcmp( line, "TRUE\n" ) ? TRUE : FALSE;
         fgets( line, sizeof line, town_file );
-        (*town)->offense = atoi( line );
+        sscanf(line, "%i %i %i\n", &((*town)->guard_vnum), &((*town)->guard_max), &((*town)->guard_load_room));
 
 //        logit(LOG_DEBUG, "Town loaded: '%s'", zone_table[i].filename);
 
@@ -10258,9 +10258,9 @@ void save_towns()
   {
     // Save the info.
     fprintf(town_file, "%s\n", town->zone->filename);
-    fprintf(town_file, "%d\n", town->resources);
-    fprintf(town_file, "%d\n", town->defense);
-    fprintf(town_file, "%d\n", town->offense);    
+    fprintf(town_file, "%d %d %d\n", town->offense, town->defense, town->resources);
+    fprintf(town_file, "%s\n", town->deploy_guard?"TRUE":"FALSE");
+    fprintf(town_file, "%d %d %d\n", town->guard_vnum, town->guard_max, town->guard_load_room);
   }
   fclose(town_file);
 }
@@ -10277,11 +10277,13 @@ void list_town( P_char ch, P_town town )
 
   if( town->zone )
     // Show town name: level, off, def.
-    sprintf( buf, "Town '%s': Resources %d, Offense %d, Defense %d.\n",
-      town->zone->name, town->resources, town->offense, town->defense );
+    sprintf( buf, "Town '%s': Resources %d, Offense %d, Defense %d, Guards: %s: %d %d %d.\n",
+      town->zone->name, town->resources, town->offense, town->defense,
+      town->deploy_guard ? "YES" : "NO", town->guard_max, town->guard_vnum, town->guard_load_room );
   else
-    sprintf( buf, "Town 'Unknown': Level %d, Offense %d, Defense %d.\n",
-      town->resources, town->offense, town->defense );
+    sprintf( buf, "Town 'Unknown': Level %d, Offense %d, Defense %d, Guards: %s: %d %d %d.\n",
+      town->resources, town->offense, town->defense, town->deploy_guard ? "YES" : "NO",
+      town->guard_max, town->guard_vnum, town->guard_load_room );
   send_to_char( buf, ch );
 }
 

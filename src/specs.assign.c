@@ -1177,6 +1177,7 @@ void assign_mobiles(void)
   obj_index[real_object0(461)].func.obj = ballista;
   obj_index[real_object0(462)].func.obj = battering_ram;
   obj_index[real_object0(463)].func.obj = catapult;
+  obj_index[real_object0(464)].func.obj = castlewall;
 
   /*
      torg

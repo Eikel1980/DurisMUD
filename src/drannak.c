@@ -84,11 +84,18 @@ void set_surname(P_char ch, int num)
   */
 
  if((num == 0 && !IS_SET(ch->specials.act3, PLR3_NOSUR)) || num == 1 )
-  {
+ {
   int points = getLeaderBoardPts(ch);
   points *= .01;
   //debug("points: %d", points);
   clear_surname(ch);
+
+  if( IS_TRUSTED( ch ) )
+  {
+  SET_BIT(ch->specials.act3, PLR3_SURKING);
+  return;
+  }
+
   if(points < 200)
   {
   SET_BIT(ch->specials.act3, PLR3_SURSERF);

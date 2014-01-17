@@ -15,7 +15,6 @@ extern P_room world;
 extern int top_of_objt;
 extern bool has_skin_spell(P_char);
 extern P_town towns;
-extern void save_towns();
 
 int adjacent_room_nesw(P_char ch, int num_rooms );
 P_ship leviathan_find_ship( P_char leviathan, int room, int num_rooms );
@@ -24,6 +23,8 @@ bool is_siege( P_obj weapon );
 bool is_loading( P_obj siege );
 void damage_siege( P_obj siege, P_obj ammo );
 P_obj get_siege_room( P_char ch, char *arg );
+void save_towns();
+void apply_zone_modifier(P_char ch);
 
 // This is an old proc for Lohrr's eq..
 int proc_lohrr( P_obj obj, P_char ch, int cmd, char *argument )
@@ -874,16 +875,23 @@ void explode_ammo( P_char ch, P_obj ammo )
   }
 }
 
-// Returns TRUE iff weapon is a siege weapon.
-bool is_siege( P_obj weapon )
+// This is the proc for castle walls.  Just a placeholder atm.
+int castlewall( P_obj obj, P_char ch, int cmd, char *arg )
 {
-  if( !weapon )
+  return FALSE;
+}
+
+// Returns TRUE iff weapon is a siege object.
+bool is_siege( P_obj object )
+{
+  if( !object )
     return FALSE;
 
   // If the object proc is ballista/battering_ram/catapult..
-  if(  obj_index[weapon->R_num].func.obj == ballista
-    || obj_index[weapon->R_num].func.obj == battering_ram
-    || obj_index[weapon->R_num].func.obj == catapult )
+  if(  obj_index[object->R_num].func.obj == ballista
+    || obj_index[object->R_num].func.obj == battering_ram
+    || obj_index[object->R_num].func.obj == catapult
+    || obj_index[object->R_num].func.obj == castlewall )
     return TRUE;
 
   return FALSE;
@@ -1102,31 +1110,38 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
     }
 
     // List town's name, offense, defense, and resrources..
-    sprintf( buf, "'%s'\nOffense:   %4d\nDefense:   %4d\nResources: %4d\n\n",
-                  town->zone->name, town->offense, town->defense, town->resources );
+    sprintf( buf, "'%s'\nOffense:     %9d\nDefense:     %9d\nResources:   %9d\n"
+                  "Town Guards: %s\n\n",
+                  town->zone->name, town->offense, town->defense, town->resources, 
+                  town->deploy_guard ? " Deployed" : "Not Deployed" );
     send_to_char( buf, pl );
+    if( IS_TRUSTED( pl ) )
+    {
+      sprintf( buf, "Guards: %d deployed of %d max, vnum %d, load in room %d.\n\n", 
+        mob_index[real_mobile(town->guard_vnum)].number, town->guard_max, town->guard_vnum, 
+        town->guard_load_room );
+      send_to_char( buf, pl );
+    }
 
-    if( IS_SET( ch->specials.act3, PLR3_NOSUR ) )
+    if( IS_SET( pl->specials.act3, PLR3_NOSUR ) )
     {
       do_say(ch, "Get out of here whelp! Earn a title before you come to me", CMD_SAY);
       return TRUE;
     }
-    if( IS_SET( ch->specials.act3, PLR3_SURSERF ) )
+
+    send_to_char( "You can donate an item to increase resources.\n", pl );
+    if( IS_SET( pl->specials.act3, PLR3_SURSERF ) )
       return TRUE;
-    send_to_char( "Sorry, no actions for commoners or above atm.\n", pl );
-    if( IS_SET( ch->specials.act3, PLR3_SURCOMMONER ) )
+    if( IS_SET( pl->specials.act3, PLR3_SURCOMMONER ) )
       return TRUE;
-    send_to_char( "Sorry, no actions for knights or above atm.\n", pl );
-    if( IS_SET( ch->specials.act3, PLR3_SURKNIGHT ) )
+    if( IS_SET( pl->specials.act3, PLR3_SURKNIGHT ) )
       return TRUE;
-    send_to_char( "Sorry, no actions for nobles or above atm.\n", pl );
-    if( IS_SET( ch->specials.act3, PLR3_SURNOBLE ) )
+    if( IS_SET( pl->specials.act3, PLR3_SURNOBLE ) )
       return TRUE;
-    send_to_char( "Sorry, no actions for lords or above atm.\n", pl );
-    if( IS_SET( ch->specials.act3, PLR3_SURLORD ) )
+    send_to_char( "You can deploy guards/stop deployment with the deploy command.\n", pl );
+    if( IS_SET( pl->specials.act3, PLR3_SURLORD ) )
       return TRUE;
-    send_to_char( "Sorry, no actions for kings or above atm.\n", pl );
-    if( IS_SET( ch->specials.act3, PLR3_SURKING ) )
+    if( IS_SET( pl->specials.act3, PLR3_SURKING ) )
       return TRUE;
 
     return TRUE;
@@ -1155,6 +1170,67 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
     save_towns();
     return TRUE;
   }
-
+  if( cmd == CMD_DEPLOY )
+  {
+    // These guys can't deploy guards.. 
+    if( IS_SET( pl->specials.act3, PLR3_SURSERF ) )
+      return FALSE;
+    if( IS_SET( pl->specials.act3, PLR3_SURCOMMONER ) )
+      return FALSE;
+    if( IS_SET( pl->specials.act3, PLR3_SURKNIGHT ) )
+      return FALSE;
+    if( IS_SET( pl->specials.act3, PLR3_SURNOBLE ) )
+      return FALSE;
+    town = gettown( ch );
+    if( !town )
+    {
+      logit(LOG_DEBUG, "warmaster: called outside of town.");
+      return FALSE;
+    }
+    // Toggle deploy guard and save
+    if( town->deploy_guard )
+    {
+      send_to_char( "Town guards will now not be deployed.\n", pl );
+      town->deploy_guard = FALSE;
+    }
+    else
+    {
+      send_to_char( "Town guards will now be deployed.\n", pl );
+      town->deploy_guard = TRUE;
+    }
+    save_towns();
+    return TRUE;
+  }
   return FALSE;
+}
+
+void check_deploy( struct zone_data *zone )
+{
+  P_town town = towns;
+  P_char mob;
+  int i, vnum, rnum;
+  char buf[MAX_STRING_LENGTH];
+
+  // Search for town data corresponding to zone.
+  while( town && town->zone != zone )
+    town = town->next_town;
+  // If no town data, or not set to deploy.
+  if( !town || !town->deploy_guard )
+    return;
+
+  rnum = real_mobile( town->guard_vnum );
+
+  sprintf( buf, "Mob: %d '%s': Current load: %d, Max load: %d in room: %d.",
+    town->guard_vnum, mob_index[rnum].desc2, mob_index[rnum].number,
+    mob_index[rnum].limit, town->guard_load_room );
+  wizlog( 60, buf );
+
+  // Deploy guards if necessary..
+  for( i = mob_index[rnum].number;
+    i < mob_index[rnum].limit; i++ )
+  {
+    mob = read_mobile(rnum, REAL);
+    apply_zone_modifier(mob);
+    char_to_room(mob, real_room(town->guard_load_room), -1);
+  }
 }

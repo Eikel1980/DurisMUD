@@ -1073,6 +1073,7 @@ const char *command[] = {
   "dismiss",
   "enhance",
   "add",
+  "deploy",
   "\n"                          /* MAX_CMD_LIST is now 1000 */
 };
 
@@ -2489,7 +2490,6 @@ void assign_command_pointers(void)
   CMD_N(CMD_INFUSE, STAT_NORMAL, do_infuse, 0);
   CMD_N(CMD_GATHER, STAT_NORMAL, do_gather, 0);
   CMD_N(CMD_AREA, STAT_RESTING + POS_PRONE, do_area, 0);
-
   /*
    * normal commands (allowed while fighting)
    */
@@ -2688,6 +2688,7 @@ void assign_command_pointers(void)
   //CMD_TRIG(CMD_SPECIALIZE, 0);
   CMD_TRIG(CMD_HARVEST, 0);
   CMD_TRIG(CMD_BATTLERAGER, 0);
+  CMD_TRIG(CMD_DEPLOY, 0);
 
   /*
    * socials (all call do_action, rather than a specific func)

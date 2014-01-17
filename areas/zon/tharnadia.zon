@@ -1825,6 +1825,7 @@ G 1 132507 999 0 100 0 0 0         *    a piece of fried mutton
 M 0 400000 1 133072 100 0 0 0      * (mob type not in this .mob file)
 M 0 132675 1 133073 100 0 0 0      * Kotil
 M 0 400001 1 133074 100 0 0 0      * (mob type not in this .mob file)
-M 0 132676 3 132618 100 0 0 0      * a warmaster
+M 0 132676 1 132618 100 0 0 0      * a warmaster
+M 0 132677 20 132618 0 0 0 0      * a Tharnadian Militia Guard
 *
 S

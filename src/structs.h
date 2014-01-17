@@ -662,9 +662,13 @@ struct zone_data {
 };
 
 struct town {
-  int resources;
-  int defense;
-  int offense;
+  int  resources;
+  int  defense;
+  int  offense;
+  bool deploy_guard;
+  int  guard_vnum;
+  int  guard_max;
+  int  guard_load_room;
 
   struct zone_data *zone;
 
