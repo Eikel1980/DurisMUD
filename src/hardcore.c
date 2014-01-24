@@ -419,11 +419,11 @@ void displayLeader(P_char ch, char *arg, int cmd)
   // If !ch then !IS_TRUSTED(ch)
   if( name[0] != '\0' && is_abbrev( name, "reset" ) && IS_TRUSTED( ch ) )
   {
-    send_to_char( "Resetting leader board...\n", ch );
+    send_to_char( "Updating leader board for mortals...\n", ch );
     if( newLeaderBoard( ch, arg, cmd ) )
-      send_to_char( "Leader board reset!\n", ch );
+      send_to_char( "Leader board updated!\n", ch );
     else
-      send_to_char( "Leader board reset failed!\n", ch );
+      send_to_char( "Leader board update failed!\n", ch );
     return;
   }
 
@@ -445,7 +445,7 @@ void displayLeader(P_char ch, char *arg, int cmd)
     {
       if( ch )
         send_to_char("Couldn't open leaderboard! Tell a god.\r\n", ch);
-      logit(LOG_DEBUG, "displayLeader(): Could not open file '%s'.", leaderboard_file );
+      logit(LOG_DEBUG, "displayLeader(): Could not open file '%s'.", mort_leader_file );
       return;
     }
   }
@@ -465,7 +465,10 @@ void displayLeader(P_char ch, char *arg, int cmd)
 
   if (!halloffameList)
   {
-    logit(LOG_DEBUG, "displayLeader(): 2nd Could not open file '%s'.", leaderboard_file );
+    if( IS_TRUSTED( ch ) )
+      logit(LOG_DEBUG, "displayLeader(): 2nd Could not open file '%s'.", leaderboard_file );
+    else
+      logit(LOG_DEBUG, "displayLeader(): 2nd Could not open file '%s'.", mort_leader_file );
     return;
   }
 
