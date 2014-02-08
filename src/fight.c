@@ -2395,7 +2395,7 @@ void die(P_char ch, P_char killer)
   }
 
   if(IS_NPC(ch) && (GET_LEVEL(ch) > 51) && !IS_PC_PET(ch) && !affected_by_spell(ch, TAG_CONJURED_PET)) //soul shard - Drannak
-   {
+  {
     int dchance = 5;
 
     if(IS_ELITE(ch))
@@ -2403,16 +2403,16 @@ void die(P_char ch, P_char killer)
     
     if(number(1, 250) < dchance)
     {
-	P_obj teobj = read_object(400230, VIRTUAL);
-       obj_to_char(teobj, ch);
-       act("&+LAs &+R$n &+Lfalls to the ground, a small shard of their &+rlifeforce&n manifests&+L.&N",
-           FALSE, ch, 0, 0, TO_ROOM);
+      P_obj teobj = read_object(400230, VIRTUAL);
+      obj_to_char(teobj, ch);
+      act("&+LAs &+R$n &+Lfalls to the ground, a small shard of their &+rlifeforce&n manifests&+L.&N",
+        FALSE, ch, 0, 0, TO_ROOM);
     }
+  }
 
-   }
-
-    if(IS_PC(killer))
-    random_recipe(killer, ch); //possibility to find a recipe for the items in the zone.
+  //possibility to find a recipe for the items in the zone.
+  if(IS_PC(killer) && !IS_PC_PET(ch))
+    random_recipe(killer, ch);
 
   // object code - Normal kills.  Kvark
   if((IS_PC(killer) ||
