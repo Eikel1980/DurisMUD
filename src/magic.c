@@ -385,8 +385,11 @@ void spell_single_prismatic_ray(int level, P_char ch, char *arg, int type,
     spell_minor_paralysis(level, ch, NULL, 0, victim, NULL);
     break;
   case RAY_INDIGO:
-    show_ray_messages("&+bindigo&n", ch, victim);
+    /*show_ray_messages("&+bindigo&n", ch, victim);
     spell_feeblemind(level, ch, NULL, 0, victim, NULL);
+    break; -This is crashing us and I cant figure out why - Drannak 3/19/14*/
+    show_ray_messages("&+Yyellow&n", ch, victim);
+    spell_minor_paralysis(level, ch, NULL, 0, victim, NULL);
     break;
   case RAY_GREEN:
     show_ray_messages("&+Ggreen&n", ch, victim);
