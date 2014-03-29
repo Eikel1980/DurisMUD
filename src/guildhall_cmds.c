@@ -1387,7 +1387,7 @@ bool guildhall_map_check(P_char ch)
       world[rroom].sector_type == SECT_FIELD ||
       IS_UD_MAP(rroom))*/
   if(((IS_SET(hometowns[VNUM2TOWN(world[ch->in_room].number)-1].flags, JUSTICE_EVILHOME)) || (IS_SET(hometowns[VNUM2TOWN(world[ch->in_room].number)-1].flags, JUSTICE_GOODHOME)))
-	&& (world[rroom].sector_type == SECT_CITY || world[rroom].sector_type == SECT_INSIDE))
+	&& (world[rroom].sector_type == SECT_CITY || world[rroom].sector_type == SECT_INSIDE || world[rroom].sector_type == SECT_UNDRWLD_CITY))
   {
     return TRUE;
   }

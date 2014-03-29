@@ -3427,6 +3427,7 @@ void reset_zone(int zone, int force_item_repop)
               }
               if (mob)
               {
+                randomizeitem(mob, obj); //Drannak trying out item stat randomization 3/28/14
                 obj_to_char(obj, mob);
                 obj->timer[3] = time(NULL) + 1290600;
                 last_cmd = 1;
@@ -3497,6 +3498,8 @@ void reset_zone(int zone, int force_item_repop)
               obj->timer[3] = time(NULL) + 1290600;
               if (mob && (ZCMD.arg3 > 0) && (ZCMD.arg3 <= CUR_MAX_WEAR))
               {
+              if(!IS_ARTIFACT(obj))  
+		randomizeitem(mob, obj); //Drannak trying out item stat randomization 3/28/14
                 if (mob->equipment[ZCMD.arg3])
                   unequip_char(mob, ZCMD.arg3);
                 equip_char(mob, obj, ZCMD.arg3, 1);
