@@ -180,8 +180,6 @@ int race_size(int race)
     case RACE_REPTILE:
     case RACE_SNAKE:
     case RACE_FAERIE:
-    case RACE_GNOME:
-    case RACE_KOBOLD:
       return SIZE_TINY;
       break;
       
@@ -190,6 +188,8 @@ int race_size(int race)
     case RACE_GOBLIN:
     case RACE_ANIMAL:
     case RACE_SHADE:
+    case RACE_GNOME:
+    case RACE_KOBOLD:
       return SIZE_SMALL;
       break;
       

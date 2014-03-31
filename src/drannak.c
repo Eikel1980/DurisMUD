@@ -824,11 +824,15 @@ void randomizeitem(P_char ch, P_obj obj)
 
 while (i < 2)
  {
+	//no randomization of items with combat/spell pulse
+	if(obj->affected[i].location == APPLY_COMBAT_PULSE || obj->affected[i].location == APPLY_SPELL_PULSE)
+	return;
+
 	//Get current a0/1 value
 	if(obj->affected[i].location != 0)
 	//debug("obj->affected[i].location: %d\r\n", obj->affected[i].location);
 	{
-	 luckroll = (number(1, GET_C_LUK(ch)));
+	 luckroll = (number(1, 110));
          
 	    //initialize workingvalue
 	 workingvalue = 0;
@@ -2034,7 +2038,7 @@ void enhance(P_char ch, P_obj source, P_obj material)
 	SUB_MONEY(ch, cost, 0);
        send_to_char("Your pockets feel &+Wlighter&n.\r\n", ch);
 
-       randomizeitem(ch, robj);
+       //randomizeitem(ch, robj);
 
       	act("&+BYour enhancement is a success! You now have &n$p&+B!\r\n", FALSE, ch, robj, 0, TO_CHAR);
        //debug("search count: %d\r\n", searchcount);
@@ -2109,6 +2113,13 @@ void do_enhance(P_char ch, char *argument, int cmd)
           send_to_char("&+YWeapons&+y can only enhance other &+Yweapons&n!\r\n", ch);
           return;
         }
+
+  if(itemvalue(ch, source) > (GET_LEVEL(ch) * 1.5))
+        {
+          send_to_char("&+YYou must gain a higher level in order to enhance that item!&n\r\n", ch);
+          return;
+        }
+
  if(GET_OBJ_VNUM(material) > 400237 && GET_OBJ_VNUM(material) < 400259)
  modenhance(ch, source, material);
  else
