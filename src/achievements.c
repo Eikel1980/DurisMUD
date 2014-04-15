@@ -166,6 +166,13 @@ void update_achievements(P_char ch, P_char victim, int cmd, int ach)
   if (IS_NPC(ch))
     return;
 
+  if( !IS_ALIVE(ch) )
+  {
+    // some achievements depend on data objects that are freed up when a PC is killed, so if they are no longer
+    // alive when update_achievements() is called, just skip it
+    return;
+  }
+
   //assign accumulation affects if missing and ach is of type.
   if ((ach == 1) && !affected_by_spell(ch, AIP_MAYIHEALSYOU) && !affected_by_spell(ch, ACH_MAYIHEALSYOU))
     apply_achievement(ch, AIP_MAYIHEALSYOU);
