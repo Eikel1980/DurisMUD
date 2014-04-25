@@ -47,6 +47,7 @@ struct epic_zone_completion
   int delta;
 };
 
+void create_epic_skills();
 void epic_initialization();
 void do_epic(P_char ch, char *arg, int cmd);
 void do_epic_trophy(P_char ch, char *arg, int cmd);
