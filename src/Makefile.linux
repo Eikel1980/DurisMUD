@@ -153,8 +153,8 @@ OBJS	=  \
 				 skills.o \
 				 smagic.o \
 				 salchemist.o \
-				 siege.o \
 				 sillusionist.o \
+				 siege.o \
 				 sound.o \
 				 sparser.o \
 				 specials.o \

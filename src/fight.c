@@ -9268,7 +9268,9 @@ void perform_violence(void)
     else
     {
       ch->specials.combat_tics = ch->specials.base_combat_round;
+#ifdef SIEGE_ENABLED
       multihit_siege( ch );
+#endif
     }
   }
 

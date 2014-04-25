@@ -1140,16 +1140,20 @@ bool check_reincarnate(P_char ch)
       	}
       }
       
-
       if (CAN_SPEAK(ch))
       {
          death_cry(ch);
       }
 
       if (ch->specials.fighting)
+      {
         stop_fighting(ch);
+      }
+      
       if( IS_DESTROYING(ch) )
+      {
         stop_destroying(ch);
+      }
 
       for (t = world[ch->in_room].people; t; t = t_next)
       {

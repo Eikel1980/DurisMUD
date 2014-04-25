@@ -394,11 +394,13 @@ void run_the_game(int port)
   fprintf(stderr, "-- Loading alliances\r\n");
   load_alliances();
 
+#ifdef SIEGE_ENABLED
   fprintf(stderr, "-- Loading town data\r\n");
   init_towns();
 
   fprintf(stderr, "-- Loading siege data\r\n");
-  init_siege_list();
+  init_siege();
+#endif
 
   // This guarentees that files exist for reading.
   fprintf(stderr, "-- Touching leaderboard\r\n");
