@@ -85,14 +85,13 @@ void get(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
   P_event  e1 = NULL;
   bool     slip = FALSE;
 
-  if (!o_obj || 
-      !(ch))
+  if( !o_obj || !ch )
   {
     logit(LOG_EXIT, "call to get with NULL obj or ch");
     raise(SIGSEGV);
   }
 
-  if(o_obj->condition <= 0) 
+  if(o_obj->condition <= 0)
   {
     MakeScrap(ch, o_obj);
     return;
@@ -179,7 +178,7 @@ void get(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
         OBJ_INSIDE(o_obj) ? o_obj->loc.inside->name :
         OBJ_CARRIED(o_obj) ? GET_NAME(o_obj->loc.carrying) :
         GET_NAME(o_obj->loc.wearing));
-      
+
       wizlog(MINLVLIMMORTAL, "%s (%d) got %s from %s.",
         J_NAME(ch), world[ch->in_room].number, 
         coin_stringv(total_value),
@@ -278,7 +277,6 @@ void get(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
     // this call to writeCharacter is a Bad Thing.  Whatever is calling
     // get() should be writing the character.  Calling it here results in
     // screwed up pointers in do_get() if there's an event on the writeCharacter
-    
     // writeCharacter(ch, 1, ch->in_room);
 
     /* update player corpse file  (if needed) */
@@ -506,13 +504,8 @@ void do_get(P_char ch, char *argument, int cmd)
         {
           if ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <= CAN_CARRY_W(ch))
           {
-            if(ch && o_obj)
-            {
-              if(IS_NPC(ch) && (o_obj->type == ITEM_TELEPORT ||  !IS_SET(o_obj->wear_flags, ITEM_TAKE)))
-                return;
-            }
-
-            if( CAN_WEAR(o_obj, ITEM_TAKE) || GET_LEVEL(ch) >= 60 )
+            if( CAN_WEAR(o_obj, ITEM_TAKE)
+              || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
             {
               get(ch, o_obj, 0, TRUE);
               if( IS_ARTIFACT( o_obj ) )
@@ -583,7 +576,8 @@ void do_get(P_char ch, char *argument, int cmd)
       {
         if( (IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <= CAN_CARRY_W(ch) )
         {
-          if( CAN_WEAR(o_obj, ITEM_TAKE) || (GET_LEVEL(ch) >= 60) )
+          if( CAN_WEAR(o_obj, ITEM_TAKE)
+            || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
           {
             if( (GET_ITEM_TYPE(o_obj) == ITEM_CORPSE) && IS_SET(o_obj->value[1], PC_CORPSE) )
             {
@@ -718,7 +712,8 @@ void do_get(P_char ch, char *argument, int cmd)
               if (((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <
                    CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj))
               {
-                if (CAN_WEAR(o_obj, ITEM_TAKE) || (GET_LEVEL(ch) >= 60))
+                if( CAN_WEAR(o_obj, ITEM_TAKE)
+                  || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
                 {
                   if ((GET_ITEM_TYPE(o_obj) == ITEM_CORPSE) &&
                       IS_SET(o_obj->value[1], PC_CORPSE))
@@ -950,9 +945,8 @@ void do_get(P_char ch, char *argument, int cmd)
             if (((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <
                  CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj))
             {
-              if (CAN_WEAR(o_obj, ITEM_TAKE) || (GET_LEVEL(ch) == 60 &&
-                                                 GET_ITEM_TYPE(o_obj) !=
-                                                 ITEM_CORPSE))
+              if( CAN_WEAR(o_obj, ITEM_TAKE)
+                || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
               {
                 /*
                  * SAM 7-94 log corpse looting of
