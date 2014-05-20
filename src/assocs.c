@@ -1557,6 +1557,10 @@ void update_member(P_char member, int full)
   /* test for MIN_LEVEL */
   level_check(member);
 
+  // If not guilded, return.
+  if( asc_number <= 0 )
+    return;
+
   sprintf(Gbuf1, "%sasc.%u", ASC_DIR, asc_number);
   f = fopen(Gbuf1, "r");
   if (!f)
