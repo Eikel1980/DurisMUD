@@ -3779,7 +3779,7 @@ void do_nchat(P_char ch, char *argument, int cmd)
     else if(IS_SET(ch->specials.act, PLR_ECHO) || IS_NPC(ch))
     {
       sprintf(Gbuf1, "&+mYou tell your racewar '&+W%s&n&+w'\n", argument);
-      send_to_char(Gbuf1, ch);
+      send_to_char( Gbuf1, ch, LOG_PRIVATE );
     }
     else
       send_to_char("Ok.\n", ch);
