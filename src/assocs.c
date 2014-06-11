@@ -1105,7 +1105,7 @@ void do_society(P_char member, char *argument, int cmd)
 
     send_to_char("No you dont. You actually love him..\r\n", member);
           return;
-          
+
     ostracize_enemy(member, second);
     break;
     /* set hometown to guild room you are in */
@@ -1132,21 +1132,20 @@ void do_society(P_char member, char *argument, int cmd)
         send_to_char("You can only home inside of your guildhall!\r\n", member);
         return;
       }
-        
+
       if( !IS_MEMBER(GET_A_BITS(member)) || GET_A_NUM(member) != gh->assoc_id )
       {
         send_to_char("You can only home inside of YOUR guildhall!\r\n", member);
         return;
       }
-        
+
       int inn_vnum = gh->inn_vnum();
-        
       if(!inn_vnum)
       {
         send_to_char("Your guildhall doesn't have an inn!\r\n", member);
         return;
       }
-        
+
       sprintf(buf, "char %s home %d", J_NAME(member), inn_vnum);
       do_setbit(member, buf, CMD_SETHOME);
       sprintf(buf, "char %s orighome %d", J_NAME(member), inn_vnum);
@@ -1218,8 +1217,9 @@ void do_society(P_char member, char *argument, int cmd)
   {
     if ((victim = get_char_online(second)) != NULL)
       update_member(victim, full);
-    else
-      send_to_char( "Couldn't update member.  Tell a God.\n", member );
+// Just because a member isn't online doesn't mean there's a bug.
+//    else
+//      send_to_char( "Couldn't update member.  Tell a God.\n", member );
   }
   if (test > 1)
     update_asc(member, GET_A_NUM(member), full);
