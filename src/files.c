@@ -1660,7 +1660,8 @@ int writeCharacter(P_char ch, int type, int room)
   ADD_INT(buf, (int) 0);
   size_off = buf;
   ADD_INT(buf, (int) 0);
-
+  // Surname
+  ADD_INT( buf, (ch->specials.act3) );
   /*
    * starting room (VIRTUAL)
    */
@@ -2779,6 +2780,9 @@ int restorePasswdOnly(P_char ch, char *name)
        ch);
     return -2;
   }
+  // Surname
+  if( b_savevers > 4 )
+    GET_INTE(buf);
   room = GET_INTE(buf);         /*
                                  * virtual room they saved/rented in
                                  */
@@ -2829,7 +2833,7 @@ int restoreCharOnly(P_char ch, char *name)
 #ifndef _PFILE_
   char     buff[SAV_MAXSIZE];
   char    *buf = buff;
-  int      skill_off, affect_off, item_off;
+  int      skill_off, affect_off, item_off, surname;
 #endif
   int      start, size, csize, type, room;
   int      witness_off;
@@ -2924,6 +2928,10 @@ int restoreCharOnly(P_char ch, char *name)
        ch);
     return -2;
   }
+  if( b_savevers > 4 )
+    surname = GET_INTE(buf);
+  ch->specials.act3 = surname;
+
   room = GET_INTE(buf);         /*
                                  * virtual room they saved/rented in
                                  */
