@@ -1706,7 +1706,9 @@ int writeCharacter(P_char ch, int type, int room)
   /*
    * if they are staying in game, re-equip them
    */
-  if ((type != RENT_INN) && (type != RENT_LINKDEAD) && (type != RENT_CAMPED) && (type != RENT_DEATH))
+  if( (type != RENT_INN) && (type != RENT_LINKDEAD) && (type != RENT_CAMPED) && (type != RENT_DEATH)
+    && (type != RENT_POOFARTI) && (type != RENT_SWAPARTI) )
+// PENIS
   {
     for (i = 0; i < MAX_WEAR; i++)
       if (save_equip[i])

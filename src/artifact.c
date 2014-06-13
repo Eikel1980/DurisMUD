@@ -43,6 +43,7 @@ extern char *artilist_mortal_ioun;
 void poof_arti( P_char ch, char *arg );
 void swap_arti( P_char ch, char *arg );
 void set_timer_arti( P_char ch, char *arg );
+void save_artifact_data( P_char owner, P_obj artifact );
 
 //
 // setupMortArtiList : copies everything over from 'real' arti list, to
@@ -286,15 +287,7 @@ void UpdateArtiBlood(P_char ch, P_obj obj, int mod)
     }
     else
     {
-      f = fopen(fname, "wt");
-      if (!f)
-      {
-        statuslog(56, "could not open arti file %s for writing", fname);
-        return;
-      }
-      fprintf(f, "%s %d %lu 0 %lu", GET_NAME(ch), GET_PID(ch), time(NULL), obj->timer[3]);
-      fclose(f);
-//                wizlog(56, "Artifact timer reset: %s now owns %s (#%d).", GET_NAME(ch), name, vnum);
+      save_artifact_data( ch, obj );
     }
   }
 }
@@ -381,14 +374,7 @@ void feed_artifact(P_char ch, P_obj obj, int feed_seconds, int bypass)
   }
   else
   {
-    f = fopen(fname, "wt");
-    if (!f)
-    {
-      statuslog(56, "could not open arti file %s for writing", fname);
-      return;
-    }
-    fprintf(f, "%s %d %lu 0 %lu", GET_NAME(ch), GET_PID(ch), time(NULL), obj->timer[3]);
-    fclose(f);
+    save_artifact_data( ch, obj );
   }
 
 }
@@ -858,7 +844,8 @@ void event_artifact_poof(P_char ch, P_char victim, P_obj obj, void *data)
   else
     goto reschedule;
 
-  if (!IS_TRUSTED(ch) && obj->timer[3] + (5 * 24 * 60 * 60) < time(NULL))
+  // Important that this is <= and not just <.
+  if (!IS_TRUSTED(ch) && obj->timer[3] + (5 * 24 * 60 * 60) <= time(NULL))
   {
     act("Your $p vanishes with a bright flash of light!", FALSE, ch,
         obj, 0, TO_CHAR);
@@ -950,7 +937,7 @@ void poof_arti( P_char ch, char *arg )
   struct dirent *dire;
   int vnum = 0;
   int t_id, t_tu, i;
-  long unsigned t_last_time, t_blood;
+  long t_last_time, t_blood;
   one_argument( arg, buf );
 
   send_to_char( "\n\r | ", ch );
@@ -1079,7 +1066,6 @@ void poof_arti( P_char ch, char *arg )
     }
 
     // Free memory
-    owner->in_room = NOWHERE;
     extract_char( owner );
   }
   else
@@ -1178,6 +1164,7 @@ void swap_arti( P_char ch, char *arg )
     return;
   }
 
+  // Now we know arti2 is not in the game or on a pfile.
   // Find arti1 in game or save file.
   // Check for artifact in game:
   arti1 = object_list;
@@ -1194,8 +1181,8 @@ void swap_arti( P_char ch, char *arg )
       break;
     arti1 = arti1->next;
   }
-  // If not found, check save files
   vnum = 0;
+  // If not found in game, check save files
   if( !arti1 )
   {
     dir = opendir(ARTIFACT_DIR);
@@ -1222,6 +1209,7 @@ void swap_arti( P_char ch, char *arg )
       arti1 = NULL;
     }
   }
+  // If !arti1 and !vnum then nothing to swap.
   // If vnum then arti is on pfile.
   if( vnum )
   {
@@ -1374,6 +1362,7 @@ void swap_arti( P_char ch, char *arg )
         act( "$p suddenly tranforms in a bright flash of light!", FALSE,
           ch, arti1, 0, TO_CHAR );
         obj_from_char( arti1, TRUE );
+        extract_obj( arti1, TRUE );
         obj_to_char( arti2, owner );
       }
       else
@@ -1400,6 +1389,7 @@ void swap_arti( P_char ch, char *arg )
     // If not found, send error not found and return.
     sprintf( buf, "Could not find artifact '%s'.\r\n", arti1name );
     send_to_char( buf, ch );
+    // If vnum then owner was loaded, but not sent to room.
     if( vnum )
     {
       owner->in_room = NOWHERE;
@@ -1411,7 +1401,6 @@ void swap_arti( P_char ch, char *arg )
   if( vnum )
   {
     writeCharacter( owner, RENT_SWAPARTI, owner->in_room );
-    owner->in_room = NOWHERE;
     extract_char( owner );
   }
 }
@@ -1523,7 +1512,7 @@ void set_timer_arti( P_char ch, char *arg )
     owner->next = character_list;
     character_list = owner;
     setCharPhysTypeInfo( owner );
-    // Find/Poof arti
+    // Find arti
     for( i = 0; i < MAX_WEAR; i++ )
     {
       if( !owner->equipment[i] )
@@ -1552,11 +1541,12 @@ void set_timer_arti( P_char ch, char *arg )
     else
     {
       obj->timer[3] = time(NULL) - ARTIFACT_BLOOD_DAYS * 86400 + 60 * timer;
+      // Update the artifact file.
+      save_artifact_data( owner, obj );
       writeCharacter( owner, RENT_INN, owner->in_room );
     }
 
     // Free memory
-    owner->in_room = NOWHERE;
     extract_char( owner );
   }
   else
@@ -1662,11 +1652,30 @@ void event_check_arti_poof( P_char ch, P_char vict, P_obj obj, void * arg )
         writeCharacter( owner, RENT_POOFARTI, owner->in_room );
       }
       // Free memory
-      owner->in_room = NOWHERE;
       extract_char( owner );
     }
   }
 
   // 3600 = 60sec * 60min => Repeat every one hour (not too important to have it sooner).
   add_event( event_check_arti_poof, 3600 * WAIT_SEC, ch, vict, obj, 0, arg, 0 );
+}
+
+void save_artifact_data( P_char owner, P_obj artifact )
+{
+  int   vnum = obj_index[artifact->R_num].virtual_number;
+  char  fname[256];
+  FILE *f;
+
+  sprintf(fname, ARTIFACT_DIR "%d", vnum);
+  f = fopen(fname, "wt");
+
+  if (!f)
+  {
+    statuslog(56, "could not open arti file %s for writing", fname);
+    return;
+  }
+
+  fprintf(f, "%s %d %lu 0 %lu", GET_NAME(owner), GET_PID(owner), time(NULL), artifact->timer[3]);
+
+  fclose(f);
 }
