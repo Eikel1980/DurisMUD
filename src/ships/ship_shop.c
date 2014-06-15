@@ -1695,9 +1695,11 @@ int buy_equipment(P_char ch, P_ship ship, char* arg1)
     SUB_MONEY(ch, cost, 0);
     set_equipment(ship, slot, e);
     
+/* Unused variable weight. - Lohrr
     int weight = equipment_data[e].weight;
     if (e == E_RAM) weight = eq_ram_weight(ship);
     if (e == E_LEVISTONE) weight = eq_levistone_weight(ship);
+*/
     int buildtime = equipment_data[e].weight * 75;
     int pvp = false;
     pvp = ocean_pvp_state();
