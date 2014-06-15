@@ -434,9 +434,9 @@ int race_size(int race);
 
 #define EXP_NOTCH(ch) (GET_LEVEL(ch) <= MAXLVLMORTAL ? MAX(new_exp_table[GET_LEVEL(ch) + 1] / 10, 1) : 1)
 
-#define GET_HEIGHT(ch)  (IS_AFFECTED3(ch, AFF3_ENLARGE) ? ((ch)->player.height * 1.5) : \
+#define GET_HEIGHT(ch)  ((ush_int) ((IS_AFFECTED3(ch, AFF3_ENLARGE) ? ((ch)->player.height * 1.5) : \
                          IS_AFFECTED3(ch, AFF3_REDUCE) ? ((ch)->player.height / 1.5) : \
-                         (ch)->player.height)
+                         (ch)->player.height)))
 
 #define GET_WEIGHT(ch)  (IS_AFFECTED3(ch, AFF3_ENLARGE) ? ((ch)->player.weight * 2) : \
                          IS_AFFECTED3(ch, AFF3_REDUCE) ? ((ch)->player.weight / 2) : \

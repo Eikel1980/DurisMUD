@@ -914,7 +914,7 @@ void do_encrust(P_char ch, char *argument, int cmd)
 
   sprintf(buf1, "%s with %s", str_dup(item->short_description), str_dup(jewel->short_description));
   set_short_description(new_item, buf1);
-  sprintf(buf1, str_dup(item->description));
+  sprintf(buf1, "%s", str_dup(item->description));
   set_long_description(new_item, buf1);
   sprintf(buf1, "%s %s", item->name, "encrust");
   set_keywords(new_item, buf1);

@@ -587,7 +587,7 @@ void manual_log(P_char ch)
   
   mysql_str(buf2, log_sql);
 
-  sprintf(a, "%d%d", rand(), time(NULL));
+  sprintf(a, "%d%ld", rand(), time(NULL));
   sprintf(b, "%s", CRYPT(a,ch->player.name));
   
   db_query("INSERT INTO MANUAL_LOG VALUES( 0, '%s', '%s', %d, 0, NOW() )", log_sql, b, GET_PID(ch));

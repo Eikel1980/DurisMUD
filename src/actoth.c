@@ -5918,7 +5918,10 @@ void ascend_theurgist(P_char ch)
 
   send_to_char("You feel a chill and realize that you are naked.\r\n", ch);
   generate_desc(ch);
-  GET_AGE(ch) = 500;
+
+  // GET_AGE does not return a changeable variable.
+  ch->player.time.birth = time(NULL) - 500 * SECS_PER_MUD_YEAR;
+
   GET_VITALITY(ch) =  GET_MAX_VITALITY(ch) = 120;
   forget_spells(ch, -1);
   ch->player.spec = 0;
@@ -6023,7 +6026,8 @@ void do_ascend(P_char ch, char *arg, int cmd)
     GET_SIZE(ch) = SIZE_MEDIUM;
     GET_RACE(ch) = RACE_AGATHINON;
     generate_desc(ch);
-    GET_AGE(ch) = 500;
+    // GET_AGE does not return a changeable variable.
+    ch->player.time.birth = time(NULL) - 500 * SECS_PER_MUD_YEAR;
     ch->player.m_class = CLASS_AVENGER;
     do_start(ch, 1);
     ch->only.pc->epics = MAX(0, ch->only.pc->epics - (int) get_property("ascend.epicCost", 250));
@@ -6459,7 +6463,8 @@ void do_old_descend(P_char ch, char *arg, int cmd)
     }
     send_to_char("You feel a chill and realize that you are naked.\r\n", ch);
     generate_desc(ch);
-    GET_AGE(ch) = 1;
+    // GET_AGE does not return a changeable variable.
+    ch->player.time.birth = time(NULL) - 1 * SECS_PER_MUD_YEAR;
     GET_VITALITY(ch) =  GET_MAX_VITALITY(ch) = 120;
     forget_spells(ch, -1);
     ch->player.spec = 0;

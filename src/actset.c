@@ -766,16 +766,16 @@ static void setbit_ship(P_char ch, char *name, char *flag, char *val,
     {"money", OFFSET(money), NULL, ac_intCopy},
     {"frags", OFFSET(frags), NULL, ac_intCopy},
     // entries below are just for help, they arent used in parsetable
-    {"maxspeed", NULL, NULL, ac_intCopy},
-    {"capacity", NULL, NULL, ac_intCopy},
-    {"air", NULL, NULL, ac_intCopy},
-    {"crew", NULL, NULL, ac_intCopy},
-    {"chief", NULL, NULL, ac_intCopy},
-    {"clearchiefs", NULL, NULL, ac_intCopy},
-    {"sailskill", NULL, NULL, ac_intCopy},
-    {"gunskill", NULL, NULL, ac_intCopy},
-    {"repairskill", NULL, NULL, ac_intCopy},
-    {"stamina", NULL, NULL, ac_intCopy},
+    {"maxspeed", 0, NULL, ac_intCopy},
+    {"capacity", 0, NULL, ac_intCopy},
+    {"air", 0, NULL, ac_intCopy},
+    {"crew", 0, NULL, ac_intCopy},
+    {"chief", 0, NULL, ac_intCopy},
+    {"clearchiefs", 0, NULL, ac_intCopy},
+    {"sailskill", 0, NULL, ac_intCopy},
+    {"gunskill", 0, NULL, ac_intCopy},
+    {"repairskill", 0, NULL, ac_intCopy},
+    {"stamina", 0, NULL, ac_intCopy}
   };
 
 

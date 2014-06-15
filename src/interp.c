@@ -1248,7 +1248,7 @@ void do_confirm(P_char ch, int yes)
 
     }
 
-    sprintf(guildinfo, ch->desc->last_command);
+    sprintf(guildinfo, "%s", ch->desc->last_command);
     int x = found_asc(ch, ch, "n", guildinfo);
     if(x)
     SUB_MONEY(ch, 5000000, 0);

@@ -2586,18 +2586,16 @@ void do_stat(P_char ch, char *argument, int cmd)
       fragnum = 0;
     fragnum /= 100;
 
-    sprintf(buf, "&+YPulse: &N%4d&+Y  Current Pulse: &N%4d&+Y  "
-            "Dam Multiplier: &N%1.2f  &+YFrags:&n %+.02f\n",
-            k->specials.base_combat_round,
-            k->specials.combat_tics,
-            k->specials.damage_mod);
+    sprintf(buf, "&+YPulse: &N%4d&+Y  Current Pulse: &N%4d&+Y  Dam Multiplier: &N%1.2f  &+YFrags:&n %+.02f\n",
+      k->specials.base_combat_round, k->specials.combat_tics,
+      k->specials.damage_mod, fragnum );
     strcat(o_buf, buf);
 
     strcat(o_buf, "\n");
     
     if(IS_PC(k))
     {
-      sprintf(buf, "&+YEpic points: &n%u&+Y  Epic skill points: &n%u\n", k->only.pc->epics, k->only.pc->epic_skill_points);
+      sprintf(buf, "&+YEpic points: &n%ld&+Y  Epic skill points: &n%ld\n", k->only.pc->epics, k->only.pc->epic_skill_points);
       strcat(o_buf, buf);
 
       sprintf(buf,
@@ -2633,14 +2631,14 @@ void do_stat(P_char ch, char *argument, int cmd)
     for (i = 0, i3 = 0; i < MAX_WEAR; i++)
       if(k->equipment[i])
         i3++;
-    i2 = (int) (GET_HEIGHT(k));
-    i = (int) (i2 / 12);
+    i2 = GET_HEIGHT(k);
+    i =  i2 / 12;
     i2 -= i * 12;
 
+// PENIS
     sprintf(buf,
             "&+YStr: &n%3d&+Y (&n%3d&+Y)    Pow: &n%3d&+Y (&n%3d&+Y)    Height: &n%3d&+Y\' &n%2d&+Y\" (&n%d&+Yin)\n",
-            GET_C_STR(k), k->base_stats.Str, GET_C_POW(k), k->base_stats.Pow,
-            i, i2, GET_HEIGHT(k));
+            GET_C_STR(k), k->base_stats.Str, GET_C_POW(k), k->base_stats.Pow, i, i2, GET_HEIGHT(k));
     strcat(o_buf, buf);
 
     sprintf(buf,
@@ -4054,9 +4052,9 @@ void timedShutdown(P_char ch, P_char, P_obj, void *data)
 
       if(secs > 60)
 //        sprintf(buf, "&+R*** Scheduled %s in %d minutes ***&n\n", type, secs/60, shutdownData.IssuedBy);
-        sprintf(buf, "&+R*** Scheduled %s in %d minutes ***&n\n", type, secs/60);
+        sprintf(buf, "&+R*** Scheduled %s in %ld minutes ***&n\n", type, secs/60);
       else
-        sprintf(buf, "&+R*** Scheduled &-L%s&n&+R in %d seconds ***&n\n", type, secs);
+        sprintf(buf, "&+R*** Scheduled &-L%s&n&+R in %ld seconds ***&n\n", type, secs);
       send_to_all(buf);
       // and set when the next warning should occur..
 
@@ -4098,9 +4096,9 @@ void displayShutdownMsg(P_char ch)
     type = "SHUTDOWN";
 
   if(secs > 60)
-    sprintf(buf, "&+R*** Scheduled %s in %d minute%s***&n\n", type, secs/60, (secs >= 120) ? "s " : " ");
+    sprintf(buf, "&+R*** Scheduled %s in %ld minute%s***&n\n", type, secs/60, (secs >= 120) ? "s " : " ");
   else
-    sprintf(buf, "&+R*** Scheduled &-L%s&n&+R in %d seconds ***&n\n", type, secs);
+    sprintf(buf, "&+R*** Scheduled &-L%s&n&+R in %ld seconds ***&n\n", type, secs);
   send_to_char(buf, ch);
 }
 
@@ -6888,8 +6886,8 @@ void do_money_supply(P_char ch, char *argument, int cmd)
              fgets(buff, MAX_STR_NORMAL, f);
           }
 
-          fscanf(f, "%i %i %i %i\n", &p, &g, &s, &c);
-          sprintf(buff, "%s: &+W%d p &+Y%d g &+w%d s &+y%d c\r\n", guild_name, p, g, s, c);
+          fscanf(f, "%ld %ld %ld %ld\n", &p, &g, &s, &c);
+          sprintf(buff, "%s: &+W%ld p &+Y%ld g &+w%ld s &+y%ld c\r\n", guild_name, p, g, s, c);
           send_to_char(buff, ch);
           total_p += p;
           total_g += g;
@@ -6933,7 +6931,7 @@ void do_money_supply(P_char ch, char *argument, int cmd)
              c = GET_COPPER(tch) + GET_BALANCE_COPPER(tch);
              if(((1000*p) + (100*g) + (10*s) + (c)) >= 10000000)
              {
-                sprintf(buff, "%s: &+W%d p &+Y%d g &+w%d s &+y%d c\r\n", GET_NAME(tch), p, g, s, c);
+                sprintf(buff, "%s: &+W%ld p &+Y%ld g &+w%ld s &+y%ld c\r\n", GET_NAME(tch), p, g, s, c);
                 send_to_char(buff, ch);
              }
 
@@ -6946,7 +6944,7 @@ void do_money_supply(P_char ch, char *argument, int cmd)
        fclose(flist);
     }
     system("rm -f temp_letterfile");
-    sprintf(buff, "\r\nTotal money in game: &+W%d platinum, &+Y%d gold, &+w%d silver, &+y%d copper\r\n", total_p, total_g, total_s, total_c);
+    sprintf(buff, "\r\nTotal money in game: &+W%ld platinum, &+Y%ld gold, &+w%ld silver, &+y%ld copper\r\n", total_p, total_g, total_s, total_c);
     send_to_char(buff, ch);
 }
 

@@ -375,7 +375,7 @@ int inn(int room, P_char ch, int cmd, char *arg)
       }
       
 	if(GET_CLASS(ch, CLASS_CONJURER))
-       do_dismiss(ch, NULL, NULL);
+       do_dismiss(ch, NULL, 0);
       
       GET_HOME(ch) = world[ch->in_room].number;
       

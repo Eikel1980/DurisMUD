@@ -363,7 +363,8 @@ void do_forge(P_char ch, char *argument, int cmd)
   FILE    *recipelist;
   int line, recfind;
   unsigned long	linenum = 0;
-  long recnum, choice2;
+  int recnum;
+  long choice2;
   long selected = 0;
   P_obj tobj;
  
@@ -1984,8 +1985,8 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
   char     Gbuf1[MAX_STRING_LENGTH], *c;
   FILE    *f;
   FILE    *recipelist;
-  long recipenumber = obj->value[6];
-  long recnum;
+  int recipenumber = obj->value[6];
+  int recnum;
 
   P_char temp_ch;
 
@@ -3284,7 +3285,7 @@ int assoc_founder(P_char ch, P_char victim, int cmd, char *arg)
        return TRUE;
      }
        int i = 0;
-       sprintf(bufbug, arg);
+       sprintf(bufbug, "%s", arg);
        int times = 0;
        while(times < 2)
        {
@@ -3325,7 +3326,7 @@ int assoc_founder(P_char ch, P_char victim, int cmd, char *arg)
      send_to_char(bufbug, victim);   
      send_to_char(buffer2, victim);
      char makeit[MAX_INPUT_LENGTH];
-     sprintf(makeit, buffer);
+     sprintf(makeit, "%s", buffer);
 
      strcpy(victim->desc->last_command, makeit);
      strcpy(victim->desc->client_str, "found_asc");

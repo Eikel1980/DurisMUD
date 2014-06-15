@@ -1913,7 +1913,7 @@ int boon_display(P_char ch, char *argument)
 	}
       case BTYPE_EXP:
 	{
-	  sprintf(bufftype, boon_types[type].desc);
+	  sprintf(bufftype, "%s", boon_types[type].desc);
 	  break;
 	}
       case BTYPE_EXPM:
@@ -1972,7 +1972,7 @@ int boon_display(P_char ch, char *argument)
 	    sprintf(bufftype, "Error, type is invalid.");
 	    break;
 	  }
-	  sprintf(bufftype, boon_types[type].desc);
+	  sprintf(bufftype, "%s", boon_types[type].desc);
 	  break;
 	}
     }
@@ -2087,7 +2087,7 @@ int boon_display(P_char ch, char *argument)
 	    sprintf(buffoption, "Error, option is invalid.");
 	    break;
           }
-	  sprintf(buffoption, boon_options[option].desc);
+	  sprintf(buffoption, "%s", boon_options[option].desc);
 	  break;
 	}
     }

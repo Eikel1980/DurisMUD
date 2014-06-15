@@ -53,7 +53,7 @@ void display_exp_table(P_char ch, char *arg, int cmd)
   for( int i = 0; i < 63; i++ )
   {
     char buff[128];
-    sprintf(buff, "%d: %d\n", i, new_exp_table[i]);
+    sprintf(buff, "%d: %ld\n", i, new_exp_table[i]);
     send_to_char(buff, ch);
   }  
 }

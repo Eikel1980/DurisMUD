@@ -2438,7 +2438,8 @@ void event_revenant_crown(P_char ch, P_char victim, P_obj obj, void *data)
   {
     ch->player.race = af->modifier;
     affect_remove(ch, af);
-    GET_AGE(ch) = racial_data[(int) GET_RACE(ch)].base_age*2;
+    ch->player.time.birth = time(NULL) - racial_data[(int) GET_RACE(ch)].base_age*2;
+//    GET_AGE(ch) = racial_data[(int) GET_RACE(ch)].base_age*2;
     send_to_char
       ("The curse of the dark powers fade and your soul restores the body.\r\n",
        ch);
@@ -2520,7 +2521,8 @@ int revenant_helm(P_obj obj, P_char ch, int cmd, char *arg)
           FALSE, temp_ch, obj, 0, TO_CHAR);
 
       temp_ch->player.race = RACE_REVENANT;
-      GET_AGE(temp_ch) += racial_data[RACE_REVENANT].base_age*2;
+      ch->player.time.birth = time(NULL) - racial_data[RACE_REVENANT].base_age*2;
+//      GET_AGE(temp_ch) += racial_data[RACE_REVENANT].base_age*2;
       return TRUE;
 
     }
@@ -2587,7 +2589,8 @@ void event_dragonlord_check(P_char ch, P_char victim, P_obj obj, void *data)
   {
     ch->player.race = af->modifier;
     affect_remove(ch, af);
-    GET_AGE(ch) = racial_data[(int) GET_RACE(ch)].base_age*2;
+    ch->player.time.birth = time(NULL) - racial_data[(int) GET_RACE(ch)].base_age*2;
+//    GET_AGE(ch) = racial_data[(int) GET_RACE(ch)].base_age*2;
     send_to_char
       ("The curse of the dark powers fade and your soul restores the body.\r\n",
        ch);
@@ -2682,7 +2685,8 @@ int dragonlord_plate_old(P_obj obj, P_char ch, int cmd, char *arg)
 
       temp_ch->player.race = RACE_DRAGONKIN;
 
-      GET_AGE(temp_ch) += racial_data[RACE_DRAGONKIN].base_age * 2;
+      ch->player.time.birth = time(NULL) - racial_data[RACE_DRAGONKIN].base_age*2;
+//      GET_AGE(temp_ch) += racial_data[RACE_DRAGONKIN].base_age * 2;
     
       return TRUE;
     }
@@ -11931,7 +11935,7 @@ int blood_stains(P_obj obj, P_char ch, int cmd, char *argument)
     if ( (obj->timer[0] < (time(NULL) - 180)) && 
          (obj->value[1] == BLOOD_FRESH) )
     {
-      sprintf(buf, long_desc_reg[obj->value[0]]);
+      sprintf(buf, "%s", long_desc_reg[obj->value[0]]);
       obj->description = str_dup(buf);
       obj->value[1] = BLOOD_REG;
       return TRUE;
@@ -11941,7 +11945,7 @@ int blood_stains(P_obj obj, P_char ch, int cmd, char *argument)
     if ( (obj->timer[0] < (time(NULL) - 420)) &&
          (obj->value[1] == BLOOD_REG) )
     {
-      sprintf(buf, long_desc_dry[obj->value[0]]);
+      sprintf(buf, "%s", long_desc_dry[obj->value[0]]);
       obj->description = str_dup(buf);
       obj->value[1] = BLOOD_DRY;
       return TRUE;

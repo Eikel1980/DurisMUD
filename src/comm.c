@@ -3620,11 +3620,13 @@ void act(const char *str, int hide_invisible, P_char ch, P_obj obj,
   }
 }
 
+// This function will have to be fixed if sound re-enabled. - Lohrr
+// Right now, we're overwriting a const string.
 const char *delete_doubledollar(const char *string)
 {
   char    *read1, *write1;
 
-  if ((write1 = strchr(string, '$')) == NULL)
+//  if ((write1 = strchr(string, '$')) == NULL)
     return string;
 
   read1 = write1;

@@ -529,7 +529,7 @@ void load_event_names()
 
   if (f)
   {
-    while (fscanf(f, "%x %c %s", &func, &c, func_name) == 3 && i < MAX_FUNCTIONS)
+    while (fscanf(f, "%p %c %s", &func, &c, func_name) == 3 && i < MAX_FUNCTIONS)
     {
       function_names[i].func = func;
       function_names[i].func_name = str_dup(func_name);
@@ -574,7 +574,8 @@ void show_world_events(P_char ch, const char* arg)
           if((strlen(buf)+80) < sizeof(buf))
           {
             sprintf(buf + strlen(buf),
-                    "    %-5d | %-5d | %-12.12s | %-12.12s | %-8d | 0x%08.8x\n",
+//                    "    %-5d | %-5d | %-12.12s | %-12.12s | %-8d | 0x%08.8x\n",
+                    "    %-5d | %-5d | %-12.12s | %-12.12s | %-8d | %p\n",
                     ev->element,
                     ev->timer,
                     ev->ch ? GET_NAME(ev->ch) : "   none",
