@@ -5403,12 +5403,14 @@ void update_racial_skills(P_char ch)
 {
 	int currrace;
   currrace = GET_RACE(ch);
+/*
   if(GET_SPEC(ch, CLASS_SORCERER, SPEC_WIZARD))
   {
 		ch->only.pc->skills[SKILL_SPELL_PENETRATION].taught = BOUNDED(10, GET_LEVEL(ch) *2, 100);
 		ch->only.pc->skills[SKILL_SPELL_PENETRATION].learned = BOUNDED(10, GET_LEVEL(ch) *2, 100);
 		do_save_silent(ch, 1); // racial skills require a save.
   }
+*/
 	  switch (currrace)
 		 {
 			case RACE_GNOME:
@@ -5510,8 +5512,10 @@ void update_racial_skills(P_char ch)
 
 void reset_racial_skills(P_char ch)
 {
+/*
   ch->only.pc->skills[SKILL_SPELL_PENETRATION].taught = 0;
   ch->only.pc->skills[SKILL_SPELL_PENETRATION].learned = 0;
+*/
   ch->only.pc->skills[SKILL_FIX].taught = 0;
   ch->only.pc->skills[SKILL_FIX].learned = 0;
   ch->only.pc->skills[SKILL_EXPERT_PARRY].taught = 0;
