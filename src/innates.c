@@ -3781,7 +3781,7 @@ int get_innate_resistance(P_char ch)
     } 
   //  debug("after: %d", res);
   }
-  debug("resistance: %d", res);
+//  debug("resistance: %d", res);
   return (res >= 100) ? 100 : res;
 }
 
