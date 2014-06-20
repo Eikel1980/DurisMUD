@@ -44,6 +44,7 @@
 #include "outposts.h"
 #include "ctf.h"
 #include "achievements.h"
+#include "alliances.h"
 
 /*
  * external variables
@@ -11403,18 +11404,32 @@ bool check_item_teleport(P_char ch, char *arg, int cmd)
     }
     // Now find a group member or ch that is in the assoc. or fail.
     struct group_list *tgroup = ch->group;
+    struct alliance_data *alliance;
     // If ch is not in the proper guild,
     if( GET_A_NUM(ch) != guild_id )
     {
-      // Check all group members
-      while( tgroup && (GET_A_NUM(tgroup->ch) != guild_id
-        || IS_APPLICANT(GET_A_BITS(tgroup->ch))) )
-        tgroup = tgroup->next;
-      // If no guildie-group member found..
-      if( !tgroup )
+      alliance = get_alliance(GET_A_NUM(ch));
+      if( !(alliance && (alliance->forging_assoc_id == guild_id
+        || alliance->joining_assoc_id == guild_id)) )
       {
-        send_to_char( "The vortex repels your cheesy butt.\n", ch );
-        return TRUE;
+        // Check all group members
+        while( tgroup && (GET_A_NUM(tgroup->ch) != guild_id
+          || IS_APPLICANT(GET_A_BITS(tgroup->ch))) )
+        {
+          alliance = get_alliance(GET_A_NUM(tgroup->ch));
+          if( alliance && (alliance->forging_assoc_id == guild_id
+            || alliance->joining_assoc_id == guild_id) )
+          {
+            break;
+          }
+          tgroup = tgroup->next;
+        }
+        // If no guildie-group member found..
+        if( !tgroup && !IS_TRUSTED(ch) )
+        {
+          send_to_char( "The vortex repels your cheesy butt.\n", ch );
+          return TRUE;
+        }
       }
     }
   }
