@@ -672,7 +672,7 @@
 #define SPELL_CORPSE_PORTAL	         623
 #define SPELL_CONTAIN_BEING		       624
 /* Blighter spells */
-#define SPELL_THORNSKIN              624
+#define SPELL_THORNSKIN              625
 #define LAST_SPELL  SPELL_THORNSKIN
 
 #define FIRST_SKILL                  1000  /* should be a decent split point */
