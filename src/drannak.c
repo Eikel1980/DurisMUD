@@ -2344,15 +2344,15 @@ void modenhance(P_char ch, P_obj source, P_obj material)
       break;
     case 400254:
       if (source->affected[2].location == APPLY_HIT)
-        loctype = 1; 
+        loctype = 1;
       else
         source->affected[2].location = APPLY_HIT;
       sprintf(modstring, "&+wof &+Rhealth&n");
-      mod = 1;
+      mod = 3;
       break;
     case 400255:
       if (source->affected[2].location == APPLY_HITROLL)
-        loctype = 1; 
+        loctype = 1;
       else
         source->affected[2].location = APPLY_HITROLL;
       sprintf(modstring, "&+wof &+yprecision&n");
@@ -2395,8 +2395,6 @@ void modenhance(P_char ch, P_obj source, P_obj material)
     else
     {
       send_to_char( "Your enhancement was a failure.  Too much magic.\n", ch );
-      obj_from_char(material, TRUE);
-      extract_obj(material, FALSE);
       return;
     }
   }
