@@ -5025,7 +5025,14 @@ int melee_damage(P_char ch, P_char victim, double dam, int flags,
       BOUNDED(-100, BOUNDED(-100, GET_AC(victim), 100),
       100))) / 800), (int) ((dam - 1)));
       */
-    dam = dam  + (dam * (0.10 * calculate_ac(victim) / 100.00)); //-drannak
+    if( get_spell_from_char(ch, SKILL_FIST_OF_DRAGON) )
+    {
+      dam = dam  + (dam * (0.10 * MAX( 0, calculate_ac(victim)) / 100.00)); //-drannak
+    }
+    else
+    {
+      dam = dam  + (dam * (0.10 * calculate_ac(victim) / 100.00)); //-drannak
+    }
 
     if(has_innate(victim, INNATE_TROLL_SKIN))
       dam *= dam_factor[DF_TROLLSKIN];

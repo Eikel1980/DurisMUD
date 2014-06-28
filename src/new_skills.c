@@ -1398,7 +1398,7 @@ void chant_tiger_palm(P_char ch, char *arg, int cmd)
 
  if (!affect_timer(ch,
        WAIT_SEC * get_property("timer.secs.monkTigerPalm", 30),
-       SKILL_FIST_OF_DRAGON))
+       SKILL_TIGER_PALM))
   {
     send_to_char("Yer not in proper mood for that right now!\r\n", ch);
     return;
