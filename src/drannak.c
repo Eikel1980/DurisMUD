@@ -596,7 +596,7 @@ char get_alias(P_char ch, char *argument)
   bufx = buf;
   for (; *bufx; bufx++)
     *bufx = LOWER(*bufx);
-  sprintf(gbuf1, "Players/%c/%s.aliases", buf[0], buf);
+  sprintf(gbuf1, "%s/%c/%s.aliases", SAVE_DIR, buf[0], buf);
 
   aliaslist = fopen(gbuf1, "rt");
   if(!aliaslist)
@@ -1326,7 +1326,7 @@ void do_conjure(P_char ch, char *argument, int cmd)
   for (; *buff; buff++)
     *buff = LOWER(*buff);
   //buf[0] snags first character of name
-  sprintf(Gbuf1, "Players/%c/%s.spellbook", buf[0], buf);
+  sprintf(Gbuf1, "%s/%c/%s.spellbook", SAVE_DIR, buf[0], buf);
   recipelist = fopen(Gbuf1, "r");
   if (!recipelist)
   {
@@ -1563,7 +1563,7 @@ void create_spellbook_file(P_char ch)
   buff = buf;
   for (; *buff; buff++)
     *buff = LOWER(*buff);
-  sprintf(Gbuf1, "Players/%c/%s.spellbook", buf[0], buf);
+  sprintf(Gbuf1, "%s/%c/%s.spellbook", SAVE_DIR, buf[0], buf);
   f = fopen(Gbuf1, "w");
   fclose(f);
   f = fopen(Gbuf1, "a");
@@ -1759,7 +1759,7 @@ void learn_conjure_recipe(P_char ch, P_char victim)
   for (; *buff; buff++)
     *buff = LOWER(*buff);
   //buf[0] snags first character of name
-  sprintf(Gbuf1, "Players/%c/%s.spellbook", buf[0], buf);
+  sprintf(Gbuf1, "%s/%c/%s.spellbook", SAVE_DIR, buf[0], buf);
 
   /*just a debug test
     send_to_char(Gbuf1, ch);*/

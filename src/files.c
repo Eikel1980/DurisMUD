@@ -1941,12 +1941,22 @@ int deleteCharacter(P_char ch, bool bDeleteLocker)
   }
   // Delete file containing conjurable mobs.
   sprintf( Gbuf1, "%s/%c/%s.spellbook", SAVE_DIR, LOWER(*ch->player.name), name);
-  sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
-  system( Gbuf2 );
+  // If file exists.
+  if( FILE *f = fopen( Gbuf1, "r" ) )
+  {
+    fclose( f );
+    sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
+    system( Gbuf2 );
+  }
   // Delete file containing crafting/forging recipe list.
   sprintf(Gbuf1, "%s/Tradeskills/%c/%s.crafting", SAVE_DIR, LOWER(*ch->player.name), name);
-  sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
-  system( Gbuf2 );
+  // If file exists.
+  if( FILE *f = fopen( Gbuf1, "r" ) )
+  {
+    fclose( f );
+    sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
+    system( Gbuf2 );
+  }
 
   return TRUE;
 }
