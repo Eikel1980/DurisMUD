@@ -877,18 +877,18 @@ int remove_mine_content(P_obj mine)
 int random_ore(int mine_quality)
 {
   int x = number(1, 99 + mine_quality * 9);
-    
+
   if(x >= 98 + mine_quality * 8)
     return LARGE_MITHRIL_ORE;
-  if(x >= 96 + mine_quality * 7) 
-    return MEDIUM_MITHRIL_ORE;	
+  if(x >= 96 + mine_quality * 7)
+    return MEDIUM_MITHRIL_ORE;
   if(x >= 94 + mine_quality * 6)
     return SMALL_MITHRIL_ORE;
 
   if(x >= 91 + mine_quality * 5)
-    return LARGE_PLATINUM_ORE; 
+    return LARGE_PLATINUM_ORE;
   if(x >= 88 + mine_quality * 4)
-    return MEDIUM_PLATINUM_ORE; 
+    return MEDIUM_PLATINUM_ORE;
   if(x >= 85 + mine_quality * 3)
     return SMALL_PLATINUM_ORE;
 
@@ -927,7 +927,9 @@ P_obj get_ore_from_mine(P_char ch, int mine_quality)
   int ore_type = random_ore(mine_quality);
   ore = read_object(ore_type, VIRTUAL);
   if(!ore)
+  {
     return NULL;
+  }
   ore->value[4] = time(NULL);
   return ore;
 }
@@ -1136,8 +1138,10 @@ void event_fish_check(P_char ch, P_char victim, P_obj, void *data)
 int mine(P_obj obj, P_char ch, int cmd, char *arg)
 {
   if( cmd == CMD_SET_PERIODIC )
+  {
     return TRUE;
-  
+  }
+
   if( cmd == CMD_PERIODIC )
   {
     if( obj->value[0] <= 0 )
@@ -1146,43 +1150,45 @@ int mine(P_obj obj, P_char ch, int cmd, char *arg)
       return TRUE;
     }
   }
-  
+
   if( cmd == CMD_MINE )
   {
-    if( !ch || !IS_PC(ch) )
+    if( !ch || !IS_PC(ch) || !IS_ALIVE(ch) )
+    {
       return FALSE;
-    
+    }
+
     if( GET_CHAR_SKILL(ch, SKILL_MINE) == 0 )
     {
       send_to_char("You don't know how to mine.\n", ch);
-      return TRUE;      
+      return TRUE;
     }
-    
+
     if( get_scheduled(ch, event_mine_check) )
     {
       send_to_char("You're already mining!\n", ch);
       return TRUE;
     }
-    
-    if (!MIN_POS(ch, POS_STANDING + STAT_NORMAL))
+
+    if( !MIN_POS(ch, POS_STANDING + STAT_NORMAL) )
     {
       send_to_char("You're too relaxed to mine.\n", ch);
       return TRUE;
     }
-    
+
     P_obj pick = get_pick(ch);
     if( !pick )
     {
       send_to_char("You need to be wielding a suitable mining pick.\n", ch);
-      return TRUE;      
+      return TRUE;
     }
-    
+
     if( get_mine_content(obj) <= 0 )
     {
       send_to_char("This area has been completely deplenished!\n", ch);
-      return TRUE;      
+      return TRUE;
     }
-    
+
     // start mining
     send_to_char("You begin to mine...\n", ch);
 
@@ -1192,102 +1198,102 @@ int mine(P_obj obj, P_char ch, int cmd, char *arg)
     data.mine_quality = obj->value[1];
 
     remove_mine_content(obj);
-    
+
     if( get_mine_content(obj) <= 0 )
     {
       send_to_char("There is very little left, but you keep digging one more time!\n", ch);
       extract_obj(obj, TRUE);
     }
-    
+
     add_event( event_mine_check, PULSE_VIOLENCE, ch, 0, 0, 0, &data, sizeof(struct mining_data));
     return TRUE;
   }
-  
+
   return FALSE;
 }
 
-void event_mine_check(P_char ch, P_char victim, P_obj, void *data)
+void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
 {
   struct mining_data *mdata = (struct mining_data*)data;
   P_obj ore, pick;
   char  buf[MAX_STRING_LENGTH], dbug[MAX_STRING_LENGTH];
-  
+
   pick = get_pick(ch);
 
-  if (!ch->desc ||
-      IS_FIGHTING(ch) ||
-      IS_DESTROYING(ch) ||
-      (ch->in_room != mdata->room) ||            
-      !MIN_POS(ch, POS_STANDING + STAT_NORMAL) ||                    
-      IS_SET(ch->specials.affected_by, AFF_HIDE) ||
-      IS_IMMOBILE(ch) ||
-      !AWAKE(ch) ||
-      IS_STUNNED(ch) ||
-      IS_CASTING(ch) ||
-      IS_AFFECTED2(ch, AFF2_CASTING))
+  if( !ch || !IS_ALIVE(ch) )
   {
-    send_to_char("You stop mining.\n", ch);
-    return;  
+    logit( LOG_DEBUG, "event_mine_check: bad ch (%d)", ch );
+    return;
   }
 
-  if (IS_DISGUISE(ch))
+  if( !ch->desc || IS_FIGHTING(ch) || IS_DESTROYING(ch)
+    || (ch->in_room != mdata->room) || !MIN_POS(ch, POS_STANDING + STAT_NORMAL)
+    || IS_SET(ch->specials.affected_by, AFF_HIDE) || IS_IMMOBILE(ch)
+    || !AWAKE(ch) || IS_STUNNED(ch) || IS_CASTING(ch) || IS_AFFECTED2(ch, AFF2_CASTING) )
+  {
+    send_to_char("You stop mining.\n", ch);
+    return;
+  }
+
+  if( IS_DISGUISE(ch) )
   {
     send_to_char("Mining will ruin your disguise!\r\n", ch);
     return;
   }
 
 
-  if(!pick)
+  if( !pick )
   {
     send_to_char("How are you supposed to mine when you don't have anything ready to mine with?\n", ch);
     return;
   }
-  
+
   if (mdata->counter == 0 )
-   if(ch)//debugging
   {
     ore = get_ore_from_mine(ch, mdata->mine_quality);
-    
-    if(!ore)
+
+    if( !ore )
     {
       wizlog(56, "Problem with ore item");
       return;
     }
 
-   //Dynamic pricing - Drannak 3/21/2013
-   float newcost = 80000; //80 p starting point
-   float charskil = (GET_CHAR_SKILL(ch, SKILL_MINE));
-   newcost = (newcost * ((float)GET_LEVEL(ch) / (float)56));
-    newcost = (newcost * ((charskil / (float)100)));
+    //Dynamic pricing - Drannak 3/21/2013
+    // 100 p starting point
+    float newcost = 100000;
+    float charskil = (GET_CHAR_SKILL(ch, SKILL_MINE));
+    newcost *= (float)GET_LEVEL(ch) / 56.0;
+    newcost *= charskil / 100.0;
 
-
-   if(GET_OBJ_VNUM(ore) < 223)
+    // Anything less than gold gets a little bit of a reduction in price.
+    if(GET_OBJ_VNUM(ore) < SMALL_GOLD_ORE)
     {
-     newcost = (newcost * .6); //anything less than gold gets a little bit of a reduction in price
-        
+      newcost *= .6;
     }
 
-   newcost = (newcost * ((float)GET_OBJ_VNUM(ore) / (float)230)); //since the vnum's are sequential, the greatest rarity gets a 1.3 modifier, lowest gets 83% of value.
- 
-  if(number(80, 140) < GET_C_LUK(ch))
-   {
-     newcost *= 1.3;
-     send_to_char("&+yYou &+Ygently&+y break the &+Lore &+yfree from the &+Lrock&+y, preserving its natural form.&n\r\n", ch);
-          
-   }
-     
+    // The greatest rarity gets a 233/230 modifier.
+    // The lowest gets a 194/230 modifier.
+    newcost *= (float)GET_OBJ_VNUM(ore) / 230.0;
+
+    if(number(80, 140) < GET_C_LUK(ch))
+    {
+      newcost *= 1.3;
+      send_to_char("&+yYou &+Ygently&+y break the &+Lore &+yfree from the &+Lrock&+y, preserving its natural form.&n\r\n", ch);
+    }
+
     act("Your mining efforts turn up $p&n!", FALSE, ch, ore, 0, TO_CHAR);
     act("$n finds $p&n!", FALSE, ch, ore, 0, TO_ROOM);
-     gain_exp(ch, NULL, (GET_CHAR_SKILL(ch, SKILL_MINE) * 4), EXP_BOON);
-    //SET_BIT(ore->cost, newcost);
+
+    gain_exp(ch, NULL, (GET_CHAR_SKILL(ch, SKILL_MINE) * 4), EXP_BOON);
     ore->cost = newcost;
     obj_to_room(ore, ch->in_room);
     return;
   }
-    
-  if (get_property("halloween", 0.000) &&
-      (number(0, 100) < get_property("halloween.zombie.chance", 5.000)))
+
+  if( get_property("halloween", 0.000) && (number(0, 100) < get_property("halloween.zombie.chance", 5.000)))
+  {
     halloween_mine_proc(ch);
+  }
 
   if (GET_VITALITY(ch) < 10)
   {
@@ -1299,16 +1305,19 @@ void event_mine_check(P_char ch, P_char victim, P_obj, void *data)
       !number(0, (GET_CHAR_SKILL(ch, SKILL_MINE) * 2) ))
   {
     send_to_char("You thought you found something, but it was just worthless rock.\n", ch);  
-    return; 
+    return;
   }
 
   if(!number(0, 999))
-    create_parchment(ch); 
+  {
+    create_parchment(ch);
+  }
 
-  if(!number(0,4) &&
-     (GET_OBJ_VNUM(pick) != 83318) &&
-     DamageOneItem(ch, 1, pick, false))
+  // If pick breaks, return.
+  if(!number(0,4) && (GET_OBJ_VNUM(pick) != 83318) && DamageOneItem(ch, 1, pick, false))
+  {
     return;
+  }
 
   send_to_char("You continue mining...\n", ch);
   notch_skill(ch, SKILL_MINE, 40);
@@ -1319,27 +1328,26 @@ void event_mine_check(P_char ch, P_char victim, P_obj, void *data)
 
   //noise distance calc
   for (P_desc i = descriptor_list; i; i = i->next)
-    {
-      if( i->connected != CON_PLYNG ||
-          ch == i->character ||
-          i->character->following == ch ||
-          world[i->character->in_room].zone != world[ch->in_room].zone ||
-          ch->in_room == i->character->in_room ||
-          ch->in_room == real_room(i->character->specials.was_in_room) ||
-          real_room(ch->specials.was_in_room) == i->character->in_room )
-      {
-        continue;
-      }
-      
-      int dist = calculate_map_distance(ch->in_room, i->character->in_room);
-
-  if(dist <= 550 && (number(1, 12) < 3))
   {
-  zone_spellmessage(ch->in_room,
-    "&+yThe sound of &+wmetal &+yhewing &+Lrock&+y can be heard in the distance...&n\r\n",
-    "&+yThe sound of &+wmetal &+yhewing &+Lrock&+y can be heard in the distance to the %s...&n\r\n");
+    if( i->connected != CON_PLYNG || ch == i->character
+      || i->character->following == ch
+      || world[i->character->in_room].zone != world[ch->in_room].zone
+      || ch->in_room == i->character->in_room
+      || ch->in_room == real_room(i->character->specials.was_in_room)
+      || real_room(ch->specials.was_in_room) == i->character->in_room )
+    {
+      continue;
+    }
+
+    int dist = calculate_map_distance(ch->in_room, i->character->in_room);
+
+    if(dist <= 550 && (number(1, 12) < 3))
+    {
+      zone_spellmessage(ch->in_room,
+      "&+yThe sound of &+wmetal &+yhewing &+Lrock&+y can be heard in the distance...&n\r\n",
+      "&+yThe sound of &+wmetal &+yhewing &+Lrock&+y can be heard in the distance to the %s...&n\r\n");
+    }
   }
- }
 }
 
 int smith(P_char ch, P_char pl, int cmd, char *arg)
