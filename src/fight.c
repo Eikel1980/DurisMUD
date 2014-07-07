@@ -2376,12 +2376,22 @@ void die(P_char ch, P_char killer)
     loss = gain_exp(ch, NULL, 0, EXP_DEATH);
   }
 
+/*
+  for (i = GET_LEVEL(ch) + 1; i > minlvl && (new_exp_table[i] <= GET_EXP(ch)); i++)
+  {
+    GET_EXP(ch) -= new_exp_table[i];
+    advance_level(ch);
+  }
+*/
   if(IS_PC(ch) && (GET_RACE(ch) == RACE_PLICH))
   {
     if((oldlev <= GET_LEVEL(ch)) && (GET_RACE(ch) == RACE_PLICH))
     {
+      int tmp = GET_EXP(ch);
       lose_level(ch);
-      GET_EXP(ch) = 1;
+      // This is complicated because 10M exp at 51 is not the same as 10M exp at 50/52/etc.
+      tmp = (tmp * new_exp_table[GET_LEVEL(ch)]) / new_exp_table[GET_LEVEL(ch)+1];
+      GET_EXP(ch) = MAX( 1, tmp );
     }
   }
 
