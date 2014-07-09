@@ -3734,6 +3734,11 @@ void spell_earthquake(int level, P_char ch, char *arg, int type,
             act("&+WYou fall and injure yourself!&n", FALSE, ch, 0, tch, TO_VICT);
             act("$n&n &+Wcrashes to the ground!&n", TRUE, tch, 0, 0, TO_ROOM);
             dam = (int) (dice(1, 30) + level);
+            if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+            {
+              dam = (int) (dam * 1.25);
+            }
+
             if(spell_damage(ch, tch, dam, SPLDAM_GENERIC, SPLDAM_NOSHRUG | SPLDAM_NODEFLECT, 0) == DAM_NONEDEAD);
             {
               SET_POS(tch, number(0, 2) + GET_STAT(tch));
@@ -3905,6 +3910,11 @@ void spell_flamestrike(int level, P_char ch, char *arg, int type,
   if( !NewSaves(victim, SAVING_SPELL, 0) )
     dam = (int) (dam * 2);
 
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
+
   spell_damage(ch, victim, (dam / 2), SPLDAM_HOLY, RAWDAM_NOKILL, 0);
   if(IS_ALIVE(victim))
   {
@@ -4060,6 +4070,11 @@ void spell_destroy_undead(int level, P_char ch, char *arg, int type,
   if(saves_spell(victim, SAVING_SPELL))
     dam >>= 1;
 
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
+
   spell_damage(ch, victim, dam, SPLDAM_HOLY, 0,
                IS_CLERIC(ch) ? &messages : &notcleric_msgs);
 }
@@ -4083,6 +4098,11 @@ void spell_harm(int level, P_char ch, char *arg, int type, P_char victim,
   else
     dam = 200;
 
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
+
   spell_damage(ch, victim, dam, SPLDAM_HOLY, RAWDAM_NOKILL, &messages);
 }
 
@@ -4100,6 +4120,11 @@ void spell_full_harm(int level, P_char ch, char *arg, int type, P_char victim,
     dam = (level / 3 * 11);
   if( !NewSaves(victim, SAVING_SPELL, 0) )
     dam = (dam * 2);
+
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
 
   spell_damage(ch, victim, dam, SPLDAM_HOLY, RAWDAM_NOKILL, &messages);
 }
@@ -13303,6 +13328,11 @@ void spell_cause_light(int level, P_char ch, char *arg, int type,
 
   dam = 4 * dice(1, 8);
 
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
+
   spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
 }
 
@@ -13320,6 +13350,11 @@ void spell_cause_serious(int level, P_char ch, char *arg, int type,
   };
 
   dam = 4 * dice(2, 8);
+
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
 
   spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
 }
@@ -13392,6 +13427,11 @@ void spell_cause_critical(int level, P_char ch, char *arg, int type,
   };
 
   dam = dice(12, 8) + 40;
+
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    dam = (int) (dam * 1.25);
+  }
 
   spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
 }
@@ -14025,6 +14065,12 @@ if(IS_NPC(victim) && IS_AFFECTED4(victim, AFF4_HELLFIRE))
     int dam = level * 3 + 20;
     dam = GET_RACE(victim) == RACE_GITHZERAI ? (int) (dam * 1.5) : dam;
     dam = dam * get_property("spell.area.damage.factor.unholyWord", 1.000);
+
+    if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+    {
+      dam = (int) (dam * 1.25);
+    }
+
     if(spell_damage(ch, victim, dam, SPLDAM_HOLY, 0, &messages) == DAM_NONEDEAD)
     {
       if(lev < (level / 2 + 2))        /* 14-27 blind */
@@ -14186,8 +14232,13 @@ void single_holy_word(int level, P_char ch, char *arg, int type,
   {
     int dam = level * 3 + 20;
     dam = GET_RACE(victim) == RACE_GITHYANKI ? (int) (dam * 1.5) : dam;
+    if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+    {
+      dam = (int) (dam * 1.25);
+    }
+
     if(spell_damage(ch, victim, dam, SPLDAM_HOLY, 0, &messages) == DAM_NONEDEAD)
-    {      
+    {
        if(lev < (level / 2 + 2))        /* 14-27 blind */
           spell_blindness(level, ch, 0, 0, victim, NULL);      /* no save */
        if(lev < (level / 2 - 3))        /* 9-22 para */
@@ -14246,7 +14297,7 @@ void spell_holy_word(int level, P_char ch, char *arg, int type, P_char victim,
   {
     return;
   }
-  
+
   if(GET_LEVEL(ch) < MINLVLIMMORTAL)
   {
     if(GET_ALIGNMENT(ch) < 0 && IS_PC(ch))
@@ -14276,7 +14327,7 @@ void spell_holy_word(int level, P_char ch, char *arg, int type, P_char victim,
        cast_as_damage_area(ch, single_holy_word, level, victim,
                       get_property("spell.area.minChance.holyWord", 60),
                       get_property("spell.area.chanceStep.holyWord", 20));
-                      
+
 }
 
 void spell_solar_flare(int level, P_char ch, char *arg, int type,
@@ -19796,29 +19847,32 @@ void spell_single_banish(int level, P_char ch, char *arg, int type, P_char victi
   {
     chance = 95;
   }
-  
+
+  if( GET_SPEC(ch, CLASS_CLERIC, SPEC_ZEALOT) )
+  {
+    chance = (int) (chance * 1.25);
+  }
+
   if(IS_GREATER_DRACO(victim) || IS_GREATER_AVATAR(victim))
   {
     chance = (int) (chance * 1 / 3);
   }
-  
+
   chance = BOUNDED(1, chance, 95);
-  
+
   debug("(%s) attempts to banish (%s) with (%d) chance.", GET_NAME(ch), GET_NAME(victim), chance);
-  
+
   if(chance > number(1,100))
   {
-  
-    if(IS_UNDEADRACE(victim) ||
-	IS_ANGEL(victim))
+    if(IS_UNDEADRACE(victim) ||	IS_ANGEL(victim))
     {
       act("You break the binding energies and watch as $N crumbles to dust.", FALSE, ch, 0, victim, TO_CHAR);
       act("$N &+Lsuddenly becomes lifeless once more and crumbles to dust.&n", FALSE, ch, 0, victim, TO_NOTVICT);
       check_saved_corpse(victim);
       extract_char(victim);
       return;
-    }   
-    
+    }
+
     switch (GET_RACE(victim))
     {
       case RACE_W_ELEMENTAL:
@@ -19861,65 +19915,65 @@ void spell_single_banish(int level, P_char ch, char *arg, int type, P_char victi
 
 bool can_banish(P_char ch, P_char victim)
 {
-  if(!ch) // Something is amiss. 
+  if(!ch) // Something is amiss.
   {
     logit(LOG_EXIT, "can_banish called in magic.c with no ch");
     raise(SIGSEGV);
   }
-  
+
   if(IS_NPC(victim))
   {
     if(mob_index[GET_RNUM(victim)].virtual_number == 250 || 
        mob_index[GET_RNUM(victim)].virtual_number == 63)
     {
-      return true;
+      return TRUE;
     }
-    
+
     if(GET_RACE(victim) == RACE_E_ELEMENTAL &&
        world[victim->in_room].sector_type == SECT_EARTH_PLANE)
     {
       send_to_char("This is the earth plane. Your banish spell fails!", ch);
-      return false;
+      return FALSE;
     }
 
     if(GET_RACE(victim) == RACE_F_ELEMENTAL | RACE_EFREET &&
        world[victim->in_room].sector_type == SECT_FIREPLANE)
     {
       send_to_char("This is the fire plane. Your banish spell fails!", ch);
-      return false;
+      return FALSE;
     }
-      
+
     if(GET_RACE(victim) == RACE_A_ELEMENTAL &&
        world[victim->in_room].sector_type == SECT_AIR_PLANE)
     {
       send_to_char("This is the air plane. Your banish spell fails!", ch);
-      return false;
+      return FALSE;
     }
-    
+
     if(GET_RACE(victim) == RACE_W_ELEMENTAL &&
        world[victim->in_room].sector_type == SECT_WATER_PLANE)
     {
       send_to_char("This is the water plane. Your banish spell fails!", ch);
-      return false;
+      return FALSE;
     }
-    
+
     if(IS_ANGEL(victim))
     {
       if(world[victim->in_room].sector_type == SECT_ETHEREAL)
-      {      
+      {
         send_to_char("This is the ethereal plane. Your banish spell fails!", ch);
-        return false;
+        return FALSE;
       }
       else
       {
-        return true;
+        return TRUE;
       }
     }
-    
+
     if(IS_UNDEADRACE(victim))
     {
       if(world[victim->in_room].sector_type == SECT_NEG_PLANE)
-      {      
+      {
         send_to_char("This is the negative plane. Your banish spell fails!", ch);
         return false;
       }
@@ -19928,7 +19982,7 @@ bool can_banish(P_char ch, P_char victim)
         return true;
       }
     }
-    
+
     switch (GET_RACE(victim))
     {
       case RACE_E_ELEMENTAL:
@@ -19936,7 +19990,7 @@ bool can_banish(P_char ch, P_char victim)
       case RACE_EFREET:
       case RACE_A_ELEMENTAL:
       case RACE_W_ELEMENTAL:
-	  case RACE_I_ELEMENTAL:
+  	  case RACE_I_ELEMENTAL:
         return TRUE;
       default:
         return FALSE;
