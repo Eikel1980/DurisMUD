@@ -644,7 +644,7 @@ void spell_implosion(int level, P_char ch, char *arg, int type, P_char victim, P
   {
     dam = (dam * 112) / 100;
   }
-  spell_damage(ch, victim, dam, SPLDAM_GENERIC, 0, &messages);
+  spell_damage(ch, victim, dam, SPLDAM_NEGATIVE, 0, &messages);
 
 }
 

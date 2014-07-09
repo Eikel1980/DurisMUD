@@ -11815,25 +11815,22 @@ void spell_entangle(int level, P_char ch, char *arg, int type, P_char victim,
   int      skl_lvl;
   int      chance;
 
-  chance = 5;                   // chance of bound
+  chance = 5;
   skl_lvl = MAX(1, ((level / 10) - 1));
 
-  /* spell now just does major para (for duraction 1) to the victim.
-     short_affect_update will have it cause 20 hps damage every call
-     while the affect is active.  If the victim saves, this just does
-     the same as a "slow" spell for a duration of 1.  save is vs para */
-
-  if(!OUTSIDE(ch))
+  if( !IS_OUTSIDE(ch->in_room) )
   {
     send_to_char("Not too much to entangle yer opponent with here..\n", ch);
     return;
   }
-/*
-  if(resists_spell(ch, victim) || IS_TRUSTED(victim))
+
+  if( !IS_ALIVE(victim) || IS_TRUSTED(victim) )
+  {
     return;
-*/
-  if(affected_by_spell(victim, SPELL_ENTANGLE) &&
-      IS_AFFECTED2(victim, AFF2_MINOR_PARALYSIS))
+  }
+
+  if( affected_by_spell(victim, SPELL_ENTANGLE)
+    || IS_AFFECTED2(victim, AFF2_MINOR_PARALYSIS) )
   {
     send_to_char("Nothing happens.\n", ch);
     return;
@@ -11851,64 +11848,46 @@ if( (!(IS_NPC(victim)) && (world[ch->in_room].sector_type == SECT_FOREST)  && (C
 }
 */
 
-// if( (world[ch->in_room].sector_type == SECT_FOREST) ) {
-
   bzero(&af, sizeof(af));
 
-  af.location = APPLY_NONE;
-  af.modifier = 0;
-
-  if(!NewSaves(victim, SAVING_PARA, (-3 + skl_lvl)) &&
-      (!(IS_NPC(victim) && IS_SET(victim->specials.act, ACT_IMMUNE_TO_PARA))))
+  if( !NewSaves(victim, SAVING_PARA, skl_lvl)
+    && !(IS_NPC(victim) && IS_SET(victim->specials.act, ACT_IMMUNE_TO_PARA)) )
   {
-    af.type = SPELL_ENTANGLE;
-    af.duration = 1;
+    send_to_char("&+GVegetation bursts out of the ground, entangling you to the point of paralysis.&N\n", victim);
+    act("&+GVegetation bursts out of the ground, entangling $n!&N", TRUE, victim, 0, 0, TO_ROOM);
 
-    af.bitvector2 = AFF2_MINOR_PARALYSIS;
-    send_to_char
-      ("&+GVegetation bursts out of the ground, entangling you to the point of paralysis.&N\n",
-       victim);
-    act("&+GVegetation bursts out of the ground, entangling $n!&N", TRUE,
-        victim, 0, 0, TO_ROOM);
-
-    if(IS_FIGHTING(victim))
+    if( IS_FIGHTING(victim) )
+    {
       stop_fighting(victim);
-    if(IS_DESTROYING(victim))
+    }
+    if( IS_DESTROYING(victim) )
+    {
       stop_destroying(victim);
-    
+    }
     StopMercifulAttackers(victim);
 
-    if((world[ch->in_room].sector_type == SECT_FOREST))
+    if( world[ch->in_room].sector_type == SECT_FOREST
+      && number(1, 120) < chance )
     {
-      if((number(1, 120)) < chance)
-      {
-        act("&+GThe vegetation closes tightly, completely entangling $n!",
-            TRUE, victim, 0, 0, TO_ROOM);
-        send_to_char
-          ("&+GThe vegetation closes tightly, completely entangling you!\n",
-           victim);
-        SET_BIT(victim->specials.affected_by, AFF_BOUND);
-      }
+      act("&+GThe vegetation closes tightly, completely entangling $n!", TRUE, victim, 0, 0, TO_ROOM);
+      send_to_char("&+GThe vegetation closes tightly, completely entangling you!\n", victim);
+      SET_BIT(victim->specials.affected_by, AFF_BOUND);
     }
-    //  #if 0
-  }
-  else
-  {
-    af.type = SPELL_ENTANGLE;
-    af.duration = GET_LEVEL(ch);
-    af.flags = AFFTYPE_SHORT | AFFTYPE_NOSHOW;
-    af.bitvector2 = AFF2_SLOW;
-    send_to_char
-      ("&+gVegetation &+Gbursts&+g from the ground, impeding your progress.&N\n",
-       victim);
-    act("&+gVegetation &+Gbursts&+g from the ground, impeding $n.&N", TRUE,
-        victim, 0, 0, TO_ROOM);
-    //#endif
-  }
+    else
+    {
+      af.type = SPELL_ENTANGLE;
+      af.duration = WAIT_SEC * GET_LEVEL(ch)/4;
+      af.flags = AFFTYPE_SHORT | AFFTYPE_NOSHOW;
+      af.bitvector2 = AFF2_MINOR_PARALYSIS;
+//      af.bitvector2 = AFF2_SLOW;
+      af.location = APPLY_NONE;
+      af.modifier = 0;
 
-  affect_to_char(victim, &af);
-  // }   // end if forest
-
+      send_to_char("&+gVegetation &+Gbursts&+g from the ground, impeding your progress.&N\n", victim);
+      act("&+gVegetation &+Gbursts&+g from the ground, impeding $n.&N", TRUE, victim, 0, 0, TO_ROOM);
+      affect_to_char(victim, &af);
+    }
+  }
 }
 
 void spell_vampiric_touch(int level, P_char ch, char *arg, int type,
