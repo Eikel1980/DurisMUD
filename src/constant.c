@@ -92,36 +92,35 @@ const attr_names_struct attr_names[] = {
 
 extern const int allowed_secondary_classes[CLASS_COUNT + 1][5];
 const int allowed_secondary_classes[CLASS_COUNT + 1][5] = {
- {-1}, 
- 
-  {CLASS_MERCENARY, CLASS_CLERIC, -1},      /* War */
+  {-1},
+  {CLASS_MERCENARY, CLASS_CLERIC, -1},            /* War */
   {CLASS_WARRIOR, CLASS_DRUID, CLASS_ROGUE, CLASS_PSIONICIST, -1},              /* Ran */
   {-1},                         		              /* Psi */
-  {CLASS_WARRIOR, -1},          		      /* Pal */
+  {CLASS_WARRIOR, -1},          		              /* Pal */
   {CLASS_WARRIOR, -1},          		              /* APa */
   {CLASS_DRUID, CLASS_BARD, CLASS_WARRIOR, CLASS_SHAMAN, -1}, /* Cle */
   {-1},                        	 		              /* Mon */
-  {CLASS_CLERIC, -1},                                                 /* Dru */
-  {CLASS_CONJURER, CLASS_DRUID, CLASS_CLERIC, -1},    	      /* Sha */
+  {CLASS_CLERIC, -1},                             /* Dru */
+  {CLASS_CONJURER, CLASS_DRUID, CLASS_CLERIC, -1},/* Sha */
   {CLASS_CONJURER, -1},         		              /* Sor */
   {-1},                         		              /* Nec */
-  {CLASS_SORCERER, CLASS_SHAMAN, -1},                   	              /* Con */
-  {CLASS_BARD, CLASS_MERCENARY, -1},            /* Rog */
+  {CLASS_SORCERER, CLASS_SHAMAN, -1},             /* Con */
+  {CLASS_BARD, CLASS_MERCENARY, -1},              /* Rog */
   {-1},                       /* Assassin not currently in game      */
-  {CLASS_ROGUE, CLASS_WARRIOR, -1},                           /* Mer */
-  {CLASS_SORCERER, CLASS_ROGUE, CLASS_ILLUSIONIST, CLASS_CONJURER, -1},       /* Bar */
+  {CLASS_ROGUE, CLASS_WARRIOR, -1},               /* Mer */
+  {CLASS_SORCERER, CLASS_ROGUE, CLASS_ILLUSIONIST, CLASS_CONJURER, -1}, /* Bar */
   {-1},    	             /* Thief not currently in game          */
   {-1},                      /* Warlock not currently in game        */
   {-1},                         		              /* MnF */
   {-1},                         		              /* Alc */
   {-1},                         		              /* Ber */
-  {CLASS_SORCERER, CLASS_ROGUE, CLASS_PSIONICIST, -1},                          /* Rea */
+  {CLASS_SORCERER, CLASS_ROGUE, CLASS_PSIONICIST, -1}, /* Rea */
   {-1},                         		              /* Ilu */
-  {-1},                                                       /* Cab */
-  {-1},                                  	              /* Dre */
-  {CLASS_SORCERER, CLASS_SHAMAN, -1},                         /* Eth */
-  {-1},                                                       /* Ave */
-  {-1}                                                        /* The */
+  {CLASS_CLERIC, -1},                             /* Bli */
+  {-1},                                  	        /* Dre */
+  {CLASS_SORCERER, CLASS_SHAMAN, -1},             /* Eth */
+  {-1},                                           /* Ave */
+  {-1}                                            /* The */
 };
 
 // class names for particular multiclass combos
