@@ -16,6 +16,7 @@
 #include "prototypes.h"
 #include "structs.h"
 #include "utils.h"
+#include "utility.h"
 #include "comm.h"
 #include "mm.h"
 #include "spells.h"
@@ -281,9 +282,8 @@ void UpdateArtiBlood(P_char ch, P_obj obj, int mod)
 
       if ((id != GET_PID(ch)) && !uo)
       {
-        statuslog(56,
-                  "tried to track arti vnum #%d on %s when already tracked on %s.",
-                  vnum, GET_NAME(ch), name);
+        statuslog(56, "UpdateArtiBlood: tried to track arti vnum #%d on %s when already tracked on %s.",
+          vnum, GET_NAME(ch), name);
       }
 
       fclose(f);
@@ -368,9 +368,8 @@ void feed_artifact(P_char ch, P_obj obj, int feed_seconds, int bypass)
 
     if ((id != GET_PID(ch)) && !uo)
     {
-      statuslog(56,
-                "tried to track arti vnum #%d on %s when already tracked on %s.",
-                vnum, GET_NAME(ch), name);
+      statuslog(56, "feed_artifact: tried to track arti vnum #%d on %s when already tracked on %s.",
+        vnum, GET_NAME(ch), name);
     }
 
     fclose(f);
@@ -417,9 +416,8 @@ int add_owned_artifact(P_obj arti, P_char ch, long unsigned blood)
 
     if ((id != GET_PID(ch)) && !uo)
     {
-      statuslog(56,
-                "tried to track arti vnum #%d on %s when already tracked on %s.",
-                vnum, GET_NAME(ch), name);
+      statuslog(56, "add_owned_artifact: tried to track arti vnum #%d on %s when already tracked on %s.",
+        vnum, GET_NAME(ch), name);
 
       fclose(f);
 
@@ -1831,7 +1829,8 @@ void hunt_for_artis( P_char ch, char *arg )
     {
       if( owner->equipment[wearloc] != NULL && IS_ARTIFACT(owner->equipment[wearloc]) )
       {
-        sprintf( buf, "'%s' has arti %s (%d) : ", J_NAME(owner), owner->equipment[wearloc]->short_description,
+        sprintf( buf, "'%s' has arti %s (%d) : ", J_NAME(owner),
+          pad_ansi(owner->equipment[wearloc]->short_description, 35).c_str(),
           obj_index[owner->equipment[wearloc]->R_num].virtual_number );
         send_to_char( buf, ch );
         if( (pid = is_tracked( owner->equipment[wearloc] )) == -1 )
@@ -1849,7 +1848,7 @@ void hunt_for_artis( P_char ch, char *arg )
         }
         else
         {
-          sprintf( buf, "On another char! PID: %d\n", pid );
+          sprintf( buf, "&+ROn another char:&N %s\n", get_player_name_from_pid(pid) );
           send_to_char( buf, ch );
         }
       }
@@ -1859,7 +1858,8 @@ void hunt_for_artis( P_char ch, char *arg )
     {
       if( IS_ARTIFACT( arti ) )
       {
-        sprintf( buf, "'%s' has arti %s (%d) : ", J_NAME(owner), arti->short_description,
+        sprintf( buf, "'%s' has arti %s (%d) : ", J_NAME(owner),
+          pad_ansi(arti->short_description, 35).c_str(),
           obj_index[arti->R_num].virtual_number );
         send_to_char( buf, ch );
         if( (pid = is_tracked( arti )) == -1 )
@@ -1877,7 +1877,7 @@ void hunt_for_artis( P_char ch, char *arg )
         }
         else
         {
-          sprintf( buf, "On another char! PID: %d\n", pid );
+          sprintf( buf, "&+ROn another char:&N %s\n", get_player_name_from_pid(pid) );
           send_to_char( buf, ch );
         }
       }
