@@ -22,6 +22,7 @@ extern const struct race_names race_names_table[];
 bool isCarved(P_obj corpse);
 
 int CheckFor_remember(P_char ch, P_char victim);
+P_obj get_globe( P_char ch );
 
 struct undead_description
 {
@@ -198,10 +199,9 @@ int setup_pet(P_char mob, P_char ch, int duration, int flag)
   af.type = SPELL_CHARM_PERSON;
   af.duration = IS_PC(ch) ? duration : -1;
 
-  globe = ch->equipment[HOLD];
+  globe = get_globe( ch );
 
-  if( has_innate(ch, INNATE_UNHOLY_ALLIANCE)
-    || (globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM)) )
+  if( has_innate(ch, INNATE_UNHOLY_ALLIANCE) || globe )
   {
     af.duration = -1;
   }
@@ -461,9 +461,9 @@ void raise_undead(int level, P_char ch, P_char victim, P_obj obj,
     return;
   }
 
-  globe = ch->equipment[HOLD];
+  globe = get_globe( ch );
 
-  if( globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  if( globe )
   {
     act("&+LYour $q &+Lpulses with evil energy, infusing part of its malevolence into your undead abomination!&N",
           FALSE, ch, globe, 0, TO_CHAR);
@@ -1023,9 +1023,9 @@ void spell_call_titan(int level, P_char ch, char *arg, int type, P_char victim, 
     return;
   }
    
-  globe = ch->equipment[HOLD];
+  globe = get_globe( ch );
 
-  if( globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  if( globe )
   {
      act("&+LYour $q &+Lpulses with evil energy, infusing part of its malevolence into your titan!&N",
           FALSE, ch, globe, 0, TO_CHAR);
@@ -1304,9 +1304,9 @@ void spell_create_dracolich(int level, P_char ch, char *arg, int type, P_char vi
     return;
   }
    
-  globe = ch->equipment[HOLD];
+  globe = get_globe( ch );
 
-  if( globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  if( globe )
   {
      act("&+LYour $q &+Lpulses with evil energy, infusing part of its malevolence into your abomination!&N",
           FALSE, ch, globe, 0, TO_CHAR);
@@ -1581,8 +1581,8 @@ void create_golem(int level, P_char ch, P_char victim, P_obj obj,
     return;
   }
 
-  globe = ch->equipment[HOLD];
-  if( globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  globe = get_globe( ch );
+  if( globe )
   {
     act("&+LYour $q &+Lpulses with evil energy, infusing part of it's malevolence into your undead abomination!&N",
           FALSE, ch, globe, 0, TO_CHAR);
@@ -1761,9 +1761,9 @@ void spell_call_avatar(int level, P_char ch, char *arg, int type,
     return;
   }
 
-  globe = ch->equipment[HOLD];
+  globe = get_globe( ch );
   
-  if( globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  if( globe )
   {
     act("&+LYour $q &+Lpulses with evil energy, infusing part of it's malevolence into your undead abomination!&N",
           FALSE, ch, globe, 0, TO_CHAR);
@@ -1995,9 +1995,9 @@ void spell_create_greater_dracolich(int level, P_char ch, char *arg, int type,
     return;
   }
 
-  globe = ch->equipment[HOLD];
+  globe = get_globe( ch );
   
-  if( globe && (obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  if( globe )
   {
     act("&+LYour $q &+Lpulses with evil energy, infusing part of it's malevolence into your undead abomination!&N",
           FALSE, ch, globe, 0, TO_CHAR);
@@ -2758,7 +2758,22 @@ void spell_eyes_death(int level, P_char ch, char *arg, int type, P_char victim, 
 }
 */
 
+// Checks both hands for artifact globe of shadows.  If found, returns 
+//   a pointer to globe.  If not, returns NULL.
+P_obj get_globe( P_char ch )
+{
+  P_obj globe;
 
-
-
-
+  // Check left hand.
+  globe = ch->equipment[HOLD];
+  if( !globe || !(obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+  {
+    // If not left, check right hand.
+    globe = ch->equipment[WIELD];
+    if( !globe || !(obj_index[globe->R_num].virtual_number == GLOBE_SHADOWS_VNUM) )
+    {
+      globe = NULL;
+    }
+  }
+  return globe;
+}
