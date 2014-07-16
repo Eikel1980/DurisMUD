@@ -771,17 +771,17 @@ void create_recipe(P_char ch, P_obj temp)
   }
 
   // No recipes for high end equipment.
-  if( IS_SET(obj->bitvector, (AFF_STONE_SKIN | AFF_BIOFEEDBACK | AFF_SNEAK | AFF_HIDE ))
-    || IS_SET(obj->bitvector2, ( AFF2_EARTH_AURA | AFF2_WATER_AURA | AFF2_FIRE_AURA | AFF2_AIR_AURA | AFF2_FLURRY ))
-    || IS_SET(obj->bitvector3, ( AFF3_ENLARGE | AFF3_REDUCE | AFF3_INERTIAL_BARRIER | AFF3_BLUR ))
-    || IS_SET(obj->bitvector4, ( AFF4_VAMPIRE_FORM | AFF4_HOLY_SACRIFICE | AFF4_BATTLE_ECSTASY | AFF4_SANCTUARY | AFF4_HELLFIRE | AFF4_ICE_AURA | AFF4_WILDMAGIC )) )
+  if( IS_SET(temp->bitvector, (AFF_STONE_SKIN | AFF_BIOFEEDBACK | AFF_SNEAK | AFF_HIDE ))
+    || IS_SET(temp->bitvector2, ( AFF2_EARTH_AURA | AFF2_WATER_AURA | AFF2_FIRE_AURA | AFF2_AIR_AURA | AFF2_FLURRY ))
+    || IS_SET(temp->bitvector3, ( AFF3_ENLARGE | AFF3_REDUCE | AFF3_INERTIAL_BARRIER | AFF3_BLUR ))
+    || IS_SET(temp->bitvector4, ( AFF4_VAMPIRE_FORM | AFF4_HOLY_SACRIFICE | AFF4_BATTLE_ECSTASY | AFF4_SANCTUARY | AFF4_HELLFIRE | AFF4_ICE_AURA | AFF4_WILDMAGIC )) )
   {
     return;
   }
   for( int i = 0;i < MAX_OBJ_AFFECT;i++ )
   {
-    if( (obj->affected[i].location == APPLY_COMBAT_PULSE)
-      || (obj->affected[i].location == APPLY_SPELL_PULSE) )
+    if( (temp->affected[i].location == APPLY_COMBAT_PULSE)
+      || (temp->affected[i].location == APPLY_SPELL_PULSE) )
     {
       return;
     }
