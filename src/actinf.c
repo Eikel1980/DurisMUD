@@ -6889,6 +6889,7 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
   bool     found;
   char     tempbuf[MAX_STRING_LENGTH];
   P_obj    t_obj, wpn;
+  int      free_hands;
   int      wear_order[] =
     { 41, 24, 40, 6, 19, 21, 22, 20, 39, 3, 4, 5, 35, 12, 27, 42, 37, 23, 13, 28,
     29, 30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1, 2, 16, 17, 25, 26, 18, 7,
@@ -6897,13 +6898,14 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
 
   buf[0] = '\0';
   found = FALSE;
+  free_hands = get_numb_free_hands(ch);
   if (!list_only)
   {
     strcpy(buf, "You are using:\n");
   }
   else if( list_only == 2 )
   {
-    strcpy(buf, "Your eq slots are (beta):\n");
+    strcpy(buf, "Your available eq slots are:\n");
   }
 
   for (j = 0; wear_order[j] != -1; j++)
@@ -7038,10 +7040,14 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
     }
     else if( list_only == 2 )
     {
-      if( has_eq_slot( ch, wear_order[j] ) )
+      if( free_hands || !(wear_order[j] == HOLD || wear_order[j] == WIELD || wear_order[j] == WIELD2
+        || wear_order[j] == WIELD3 || wear_order[j] == WIELD4 || wear_order[j] == WEAR_SHIELD) )
       {
-        strcat( buf, where[wear_order[j]] );
-        strcat( buf, "\n" );
+        if( has_eq_slot( ch, wear_order[j] ) )
+        {
+          strcat( buf, where[wear_order[j]] );
+          strcat( buf, "\n" );
+        }
       }
     }
   }
