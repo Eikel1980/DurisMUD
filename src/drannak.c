@@ -2225,11 +2225,13 @@ void do_enhance(P_char ch, char *argument, int cmd)
     return;
   }
 
+  /* Removing this.  There's a cap in void enhance(..).
   if(itemvalue(ch, source) > (GET_LEVEL(ch) * 1.5))
   {
     send_to_char("&+YYou must gain a higher level in order to enhance that item!&n\r\n", ch);
     return;
   }
+  */
 
   if(GET_OBJ_VNUM(material) > 400237 && GET_OBJ_VNUM(material) < 400259)
     modenhance(ch, source, material);
