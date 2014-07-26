@@ -481,33 +481,32 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
   struct affected_type af;
   struct follow_type *followers;
 
-  if (!(ch))
+  if( !(ch) )
   {
     logit(LOG_EXIT, "assert: bogus parms");
     raise(SIGSEGV);
   }
 
-  if(!victim)
+  if( !victim )
   {
     send_to_char("You must have a target!\r\n", ch);
     return;
   }
 
-  if(!IS_ALIVE(ch) ||
-    !IS_ALIVE(victim) ||
-    IS_TRUSTED(victim))
-      return;
+  if( !IS_ALIVE(ch) || !IS_ALIVE(victim) || IS_TRUSTED(victim) )
+  {
+    return;
+  }
 
   for (followers = ch->followers; followers; followers = followers->next)
-  { 
+  {
     if(affected_by_spell(followers->follower, SPELL_CHARM_PERSON))
     {
       num++;
       total_levels += GET_LEVEL(followers->follower);
     }
-    
-    if(!IS_TRUSTED(ch) &&
-      num >= 5)
+
+    if( !IS_TRUSTED(ch) && num >= 5 )
     {
       send_to_char("You are unable to handle more followers.\r\n", ch);
       return;
@@ -533,7 +532,7 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
 
     max_level = BOUNDED(5, max_level, 56);
   }
-  else if(IS_TRUSTED(ch))
+  else if( IS_TRUSTED(ch) )
   {
     max_total_levels = 500;
     max_level = 65;
@@ -544,17 +543,18 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
     max_level = BOUNDED(5, level - 10, 36);
   }
 
-  if(circle_follow(victim, ch))
+  if( circle_follow(victim, ch) )
+  {
     return;
-  
+  }
+
   appear(ch);
 
-  if(IS_NPC(victim) && 
-    !GET_MASTER(victim))
+  if( IS_NPC(victim) && !GET_MASTER(victim) )
   {
 //    debug("Max level: %d Max_total_levels %d Victim level %d",
 //    max_level, max_total_levels, GET_LEVEL(victim));
-    
+
     if(total_levels + GET_LEVEL(victim) >= max_total_levels ||
       GET_LEVEL(victim) > max_level)
     {
@@ -567,7 +567,6 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
           ch, 0, victim, TO_NOTVICT);
         set_fighting(victim, ch);
       }
-      
       return;
     }
 
@@ -585,26 +584,25 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
 
     // Awe save is psi's power versus victim's int adjusted by level difference.
     // There is a chance for critical success or critical failure.
-      
-      int save = BOUNDED(5, 
-        GET_C_POW(ch) + level - GET_C_INT(victim) - GET_LEVEL(victim),
-        95);
-      
-      if(save < number(0, 100) && !IS_TRUSTED(victim) &&
-        !IS_FIGHTING(victim) && !IS_DESTROYING(victim))
-        {
-          set_fighting(victim, ch);
-          return;
-        }
-        
-      else if(!victim->following &&
-              !IS_TRUSTED(victim))
+      int save = BOUNDED(5, GET_C_POW(ch) + level - GET_C_INT(victim) - GET_LEVEL(victim), 95);
+
+      if( save < number(0, 100) && !IS_TRUSTED(victim)
+        && !IS_FIGHTING(victim) && !IS_DESTROYING(victim) )
+      {
+        set_fighting(victim, ch);
+        return;
+      }
+      else if( !victim->following && !IS_TRUSTED(victim) )
       {
         send_to_char("&+MYou dominate it!&n\n", ch);
         add_follower(victim, ch);
+//debug( "spell_awe: ch: '%s', victim: '%s', level: %d, setup_pet '%d'.", J_NAME(ch), J_NAME(victim), level,
         setup_pet(victim, ch, level, 0);
         act("&+MYour will is &+Ydominated!&n &+RUh oh...&n.", FALSE, ch, 0, victim, TO_VICT);
-          
+        if( IS_SET(victim->specials.act, ACT_BREAK_CHARM) )
+        {
+          send_to_char( "&+mYou get a funny feeling about this one.\n\r", ch );
+        }
         if(IS_FIGHTING(victim))
         {
           stop_fighting(victim);
@@ -618,7 +616,6 @@ void spell_awe(int level, P_char ch, char *arg, int type, P_char victim, P_obj o
     {
       send_to_char("&+MYou are unable to dominate the mind of this strange creature!&n\n", ch);
     }
-    
     return;
   }
 }
