@@ -72,7 +72,6 @@ extern const flagDef affected4_bits[];
 extern const flagDef affected5_bits[];
 extern const char *item_types[];
 extern const struct stat_data stat_factor[];
-extern const int exp_table[];
 extern int rev_dir[];
 extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];

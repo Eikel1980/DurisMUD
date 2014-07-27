@@ -51,7 +51,6 @@ extern struct dex_app_type dex_app[52];
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
-extern const int exp_table[];
 
 #define ZONE_GREAT_SHABOATH  129
 #define GREAT_SHABOATH_START 32800

@@ -30,7 +30,6 @@ extern const char *dirs[];
 extern const char *short_dirs[];
 extern const struct race_names race_names_table[];
 extern const int track_limit[];
-extern const int exp_table[][52];
 extern int top_of_world;
 extern struct zone_data *zone_table;
 extern struct sector_data *sector_table;

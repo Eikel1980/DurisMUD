@@ -53,7 +53,6 @@ extern const flagDef extra_bits[];
 extern const flagDef anti_bits[];
 extern const char *item_types[];
 extern const struct stat_data stat_factor[];
-extern const int exp_table[];
 extern const char *dirs[], *dirs2[];
 extern const int rev_dir[];
 extern int avail_hometowns[][LAST_RACE + 1];

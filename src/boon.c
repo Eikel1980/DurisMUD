@@ -58,7 +58,7 @@ extern const flagDef affected2_bits[];
 extern const flagDef affected3_bits[];
 extern const flagDef affected4_bits[];
 extern const flagDef affected5_bits[];
-extern int new_exp_table[];
+extern const int new_exp_table[];
 extern struct ctfData ctfdata[];
 
 struct boon_types_struct boon_types[] = {

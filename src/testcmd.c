@@ -13,6 +13,7 @@ extern const char *sector_symbol[];
 extern mapSymbolInfo color_symbol[];
 extern P_index mob_index;
 extern int count_classes( P_char mob );
+extern long new_exp_table[];
 
 void display_map(P_char ch, int n, int show_map_regardless);
 
@@ -48,16 +49,14 @@ void disproom(P_char ch, int x, int y)
   send_to_char(buff, ch);
 }
 
-extern long      new_exp_table[];
-
 void display_exp_table(P_char ch, char *arg, int cmd)
 {
-  for( int i = 0; i < 63; i++ )
+  for( int i = 0; i < TOTALLVLS; i++ )
   {
     char buff[128];
     sprintf(buff, "%d: %ld\n", i, new_exp_table[i]);
     send_to_char(buff, ch);
-  }  
+  }
 }
 
 void do_test_room(P_char ch, char *arg, int cmd)

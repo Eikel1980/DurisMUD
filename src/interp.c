@@ -62,7 +62,6 @@ extern struct weather_data weather_info;
 extern P_desc descriptor_list;
 
 extern char debug_mode;
-extern const int exp_table[];
 extern int hometown[];
 extern int no_specials;
 extern int pulse;               /*

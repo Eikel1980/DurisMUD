@@ -26,7 +26,6 @@
 extern P_char character_list;
 extern P_room world;
 extern char *coin_names[];
-extern const int exp_table[];
 extern const struct stat_data stat_factor[];
 extern int top_of_zone_table;
 extern struct int_app_type int_app[];

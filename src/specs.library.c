@@ -53,7 +53,6 @@ extern struct dex_app_type dex_app[52];
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
-extern const int exp_table[];
 
 P_nevent get_scheduled(P_obj obj, event_func func);
 

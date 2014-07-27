@@ -65,7 +65,6 @@ extern P_event current_event;
 extern P_room world;
 extern const char *command[];
 extern const char *dirs[];
-extern const int exp_table[];
 extern const struct stat_data stat_factor[];
 extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;

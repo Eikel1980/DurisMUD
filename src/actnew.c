@@ -42,7 +42,6 @@ extern P_room world;
 extern char *command[];
 extern char *dirs2[];
 extern int hometown_arena[][3];
-extern const int exp_table[61];
 extern const struct stat_data stat_factor[];
 extern struct command_info cmd_info[];
 extern struct dex_app_type dex_app[];

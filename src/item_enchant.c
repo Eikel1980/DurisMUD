@@ -48,7 +48,6 @@ extern const char *extra_bits[];
 extern const char *anti_bits[];
 extern const char *item_types[];
 extern const struct stat_data stat_factor[];
-extern const int exp_table[];
 extern int rev_dir[];
 extern int avail_hometowns[][TOTALRACE];
 extern int current_spell_being_cast;

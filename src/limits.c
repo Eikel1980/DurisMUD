@@ -42,7 +42,6 @@ extern P_char character_list;
 extern P_desc descriptor_list;
 extern P_obj object_list;
 extern P_room world;
-extern const int exp_table[TOTALLVLS];
 extern const struct stat_data stat_factor[];
 extern const struct max_stat max_stats[];
 extern const struct racial_data_type racial_data[];
@@ -58,7 +57,7 @@ extern P_index mob_index;
 struct mm_ds *dead_trophy_pool = NULL;
 extern struct race_names race_names_table[];
 
-long      new_exp_table[TOTALLVLS];
+long     new_exp_table[TOTALLVLS];
 long     global_exp_limit;
 
 void     checkPeriodOfFame(P_char ch, char killer[1024]);

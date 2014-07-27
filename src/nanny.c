@@ -81,8 +81,6 @@ extern char *greetinga3;
 extern char *greetinga4;
 extern int top_of_mobt;
 extern P_index mob_index;
-extern int exp_table[];
-extern int new_exp_table[];
 extern void assign_racial_skills(P_char ch);
 extern void reset_racial_skills(P_char ch);
 

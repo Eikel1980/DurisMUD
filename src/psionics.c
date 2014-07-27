@@ -33,7 +33,6 @@ extern const char *apply_types[];
 extern const char *command[];
 extern const flagDef extra_bits[];
 extern const char *item_types[];
-extern const int exp_table[];
 extern const struct stat_data stat_factor[];
 extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];

@@ -52,7 +52,6 @@ extern P_obj object_list;
 extern P_room world;
 extern char debug_mode;
 extern const char *race_types[];
-extern const int exp_table[];
 
 
 extern const struct stat_data stat_factor[];

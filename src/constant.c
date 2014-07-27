@@ -759,6 +759,7 @@ const char *fullness[] = {
  * 0-56
  */
 // TOTALLVLS is the range of levels (0-62) = 63
+/* After all that work making columns, I find there's a "new_exp_table". Sigh.
 extern const int exp_table[];
 const int exp_table[TOTALLVLS] = {                    0,
           1,      2000,      4000,      7000,     10000,
@@ -775,7 +776,7 @@ const int exp_table[TOTALLVLS] = {                    0,
   150000000, 170000000, 190000000, 220000000, 300000000,
   600000000, 600000000
 };
-
+*/
 
 const char *player_bits[] = {
   "BRIEF",

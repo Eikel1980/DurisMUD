@@ -51,7 +51,6 @@ extern const char *dirs[];
 extern const char *sector_types[];
 extern const char *shot_types[];
 extern const int shot_damage[];
-extern const int exp_table[];
 extern const struct stat_data stat_factor[];
 extern int forced_command;
 extern int rev_dir[];
@@ -67,7 +66,7 @@ extern P_index obj_index;
 extern char *specdata[][MAX_SPEC];
 extern P_char character_list;
 extern Skill skills[];
-extern int new_exp_table[];
+extern const int new_exp_table[];
 
 
 /*

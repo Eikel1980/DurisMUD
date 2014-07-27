@@ -39,7 +39,6 @@ extern char *coin_names[];
 extern char *command[];
 extern const char *dirs[];
 extern const char rev_dir[];
-extern const int exp_table[][52];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];

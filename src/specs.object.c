@@ -61,7 +61,6 @@ extern struct dex_app_type dex_app[52];
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
-extern const int exp_table[];
 extern void event_bleedproc(P_char ch, P_char victim, P_obj obj, void *data);
 extern const struct racial_data_type racial_data[];
 int      do_simple_move_skipping_procs(P_char, int, unsigned int);

@@ -54,7 +54,6 @@ extern struct dex_app_type dex_app[52];
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
-extern const int exp_table[];
 extern bool has_skin_spell(P_char);
 
 int vecna_bubble_room(int room, P_char ch, int cmd, char *arg)

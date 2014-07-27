@@ -78,7 +78,6 @@ extern const char *player_prompt[];
 extern flagDef weapon_types[];
 extern const char *weekdays[];
 extern const char *where[];
-extern const int exp_table[];
 extern const int rev_dir[];
 extern const long boot_time;
 extern const struct stat_data stat_factor[];
@@ -114,7 +113,7 @@ extern long sentbytes;
 extern long recivedbytes;
 extern const struct race_names race_names_table[];
 extern Skill skills[];
-extern int new_exp_table[];
+extern const int new_exp_table[];
 extern const mcname multiclass_names[];
 extern void displayShutdownMsg(P_char);
 extern void map_look_room(P_char ch, int room, int show_map_regardless);
@@ -7565,6 +7564,8 @@ void do_levels(P_char ch, char *argument, int cmd)
       {
         if (LOWER(*(arg + 1)) == 'a')
           which = CLASS_BARD;
+        else if (LOWER(*(arg + 1)) == 'l')
+          which = CLASS_BLIGHTER;
         else
           which = ch->player.m_class;
         break;
@@ -7611,7 +7612,14 @@ void do_levels(P_char ch, char *argument, int cmd)
       }
     case 's':
       {
-        which = CLASS_SHAMAN;
+        if (LOWER(*(arg + 1)) == 'o')
+          which = CLASS_SORCERER;
+        else if (LOWER(*(arg + 1)) == 'h')
+          which = CLASS_SHAMAN;
+        else if (LOWER(*(arg + 1)) == 'u')
+          which = CLASS_SUMMONER;
+        else
+          which = ch->player.m_class;
         break;
       }
     default:
@@ -7632,11 +7640,11 @@ void do_levels(P_char ch, char *argument, int cmd)
   {
     sprintf(buf + strlen(buf), "[%2d %2s] %9d-%-9d\n",
       i, class_names_table[flag2idx(which)].ansi,
-      exp_table[i], exp_table[i + 1] - 1);
+      new_exp_table[i], new_exp_table[i + 1] - 1);
   }
   // i == MAXLVLMORTAL.  Imms don't use exp.
   sprintf(buf + strlen(buf), "[%2d %2s] %9d+\n",
-    i, class_names_table[flag2idx(which)].ansi, exp_table[i]);
+    i, class_names_table[flag2idx(which)].ansi, new_exp_table[i]);
 
   page_string(ch->desc, buf, 1);
 }

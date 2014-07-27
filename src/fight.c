@@ -63,7 +63,6 @@ extern P_obj object_list;
 extern P_room world;
 extern char debug_mode;
 extern const struct race_names race_names_table[];
-extern const int exp_table[];
 extern void set_long_description(P_obj t_obj, const char *newDescription);
 extern void set_short_description(P_obj t_obj, const char *newDescription);
 extern void event_wait(P_char ch, P_char victim, P_obj obj, void *data);
@@ -81,7 +80,7 @@ extern struct time_info_data time_info;
 extern struct zone_data *zone_table;
 extern const int class_tohit_mod[];
 extern Skill skills[];
-extern int new_exp_table[];
+extern const int new_exp_table[];
 extern struct wis_app_type wis_app[];
 
 int      pv_common(P_char, P_char, const P_obj);
