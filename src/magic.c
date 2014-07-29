@@ -19652,13 +19652,13 @@ void spell_acidimmolate(int level, P_char ch, char *arg, int type,
   }
 }
 
-#define RIPPLE_STUN BIT_1
-#define RIPPLE_BLIND BIT_2
+#define RIPPLE_STUN     BIT_1
+#define RIPPLE_BLIND    BIT_2
 #define RIPPLE_FIREBALL BIT_3
 #define RIPPLE_TENTACLE BIT_4
-#define RIPPLE_PARA BIT_5
-#define RIPPLE_SWITCH BIT_6
-#define RIPPLE_BOLTS BIT_7
+#define RIPPLE_PARA     BIT_5
+#define RIPPLE_SWITCH   BIT_6
+#define RIPPLE_BOLTS    BIT_7
 
 void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
                           P_char victim, P_obj obj)
@@ -19673,7 +19673,7 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
     "$n's&n &+Cr&+ci&+Cp&+cp&+Cl&+ce&+Cs&n &+Lof&n &+RCh&+rA&+Ro&+rT&+Ri&+rC energy&n &+Lengulf&n $N &+Lblasting the life from $S body!",
     0
   };
-  if(!ch)
+  if( !ch )
   {
     logit(LOG_EXIT, "spell_chaotic_ripple called in magic.c with no ch");
     raise(SIGSEGV);
@@ -19685,7 +19685,7 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
   messages.room =
     "$n &+Lshatters the fabric of reality\n&+Lsending&n &+Cr&+ci&+Cp&+cp&+Cl&+ce&+Cs&n &+Lof&n &+RCh&+rA&+Ro&+rT&+Ri&+rC energy &+Lflowing into&n $N.";
 
-  dam = 330 + 10 * MAX(1, level - 50) + number(1, 40);
+  dam = 370 + 30 * MAX(1, level - 50) + number(1, 40);
 
   if(spell_damage(ch, victim, dam, SPLDAM_GENERIC, SPLDAM_NODEFLECT |
     SPLDAM_NOSHRUG, &messages) != DAM_NONEDEAD)
@@ -19695,27 +19695,27 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
   ray_flag = 0;
   rays = number(2, 4);
 
-  while (rays > 0)
+  while( rays > 0 )
   {
     int ray_type;
 
-    if(!char_in_list(victim))
+    if( !char_in_list(victim) )
     {
       break;
     }
     ray_type = 1 << number(0, 6);
-    if(ray_flag & ray_type)
+    // If ray already used..
+    if( ray_flag & ray_type )
     {
       continue;
     }
     rays--;
     ray_flag |= ray_type;
     memset(&af, 0, sizeof(struct affected_type));
-    switch (ray_type)
+    switch( ray_type )
     {
     case RIPPLE_STUN:
-      if(!IS_GREATER_RACE(victim) &&
-         !IS_ELITE(victim))
+      if(!IS_GREATER_RACE(victim) && !IS_ELITE(victim))
       {
         act
           ("&+wClutching $S head $N tries to escape the\n&+rm&+wa&+rd&+wd&+re&+wn&+ri&+wn&+rg&n &+wimages circling $M.&n",
@@ -19723,7 +19723,7 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
         act
           ("&+wClutching your head you try to escape the\n&+rm&+wa&+rd&+wd&+re&+wn&+ri&+wn&+rg&n &+Wimages circling you!&n",
            TRUE, victim, 0, victim, TO_CHAR);
-        Stun(victim, ch, PULSE_VIOLENCE, FALSE);
+        Stun(victim, ch, PULSE_VIOLENCE / 2, FALSE);
       }
       break;
     case RIPPLE_BLIND:
@@ -19733,7 +19733,7 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
       act
         ("&+LDarkness&n flows from the rift encasing you in an impenetrable shell!&n",
          TRUE, victim, 0, victim, TO_CHAR);
-      blind(ch, victim, 2 * PULSE_VIOLENCE);
+      blind(ch, victim, PULSE_VIOLENCE);
       break;
     case RIPPLE_FIREBALL:
       messages.attacker = messages.room =
@@ -19747,7 +19747,7 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
       }
       break;
     case RIPPLE_TENTACLE:
-      if(GET_C_AGI(victim) > number(0, 200))
+      if(GET_C_AGI(victim) < number(0, 200))
       {
        act("&+LA tentacle of &+Wsolified m&+wi&+Wst &+Lcoils&n itself around $N\ntossing $M to the ground.", TRUE, victim, 0, victim, TO_ROOM);
        act("&+LA tentacle of &+Wsolified m&+wi&+Wst &+Lcoils&n itself around you\ntossing you to the ground.", TRUE, victim, 0, victim, TO_CHAR);
@@ -19774,13 +19774,12 @@ void spell_chaotic_ripple(int level, P_char ch, char *arg, int type,
         af.type = SPELL_MAJOR_PARALYSIS;
         af.flags = AFFTYPE_SHORT;
         af.bitvector2 = AFF2_MAJOR_PARALYSIS;
-        af.duration = PULSE_VIOLENCE;
+        af.duration = PULSE_VIOLENCE/2;
         affect_to_char(victim, &af);
       }
       break;
     case RIPPLE_SWITCH:
-      if(IS_PC(victim) ||
-         IS_PC_PET(victim))
+      if(IS_PC(victim) || IS_PC_PET(victim))
       {
         tch = get_random_char_in_room(victim->in_room, victim, DISALLOW_SELF);
         if(tch && on_front_line(tch) && victim->group == tch->group)
