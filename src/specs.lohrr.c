@@ -269,6 +269,11 @@ int leviathan( P_char ch, P_char pl, int cmd, char *arg )
       }
    }
 
+   if( cmd == CMD_PERIODIC && ch->in_room == GET_BIRTHPLACE(ch) )
+   {
+      do_flee( ch, "", CMD_FLEE );
+   }
+
    return FALSE;
 }
 
