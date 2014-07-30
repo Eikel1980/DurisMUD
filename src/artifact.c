@@ -1851,26 +1851,53 @@ int is_tracked( P_obj artifact )
   return id;
 }
 
+void event_hunt_for_artis(P_char ch, P_char victim, P_obj obj, void *data)
+{
+  if( !IS_ALIVE(ch) || !data )
+  {
+    statuslog( 56, "event_hunt_for_artis: bad arg: ch '%s', data '%s'", ch ? J_NAME(ch) : "NULL", data != NULL ? (char *)data : "NULL" );
+    debug( "event_hunt_for_artis: bad arg: ch '%s', data '%s'", ch ? J_NAME(ch) : "NULL", data != NULL ? (char *)data : "NULL" );
+    return;
+  }
+
+  hunt_for_artis( ch, (char *)data );
+}
+
 // Searches through all pfiles with initial *arg for artis.
 void hunt_for_artis( P_char ch, char *arg )
 {
   char  buf[MAX_STRING_LENGTH];
   char  dname[256];
   char  fname[256];
-  int   wearloc;
-  int   pid;
+  char  initial;
+  int   wearloc, pid, count;
   DIR  *dir;
   P_obj arti;
   P_char owner;
   struct dirent *dire;
 
+  if( atoi(arg) == 1 )
+  {
+    // Search for a without delay.
+    hunt_for_artis( ch, "a" );
+    // For the rest of the letters search for them with an incremented delay to prevent lag.
+    for( initial = 'b', count = 1;initial <= 'z';initial++, count++ )
+    {
+      sprintf( buf, "%c", initial );
+      add_event(event_hunt_for_artis, count, ch, NULL, NULL, 0, &buf, sizeof(buf));
+    }
+    return;
+  }
   if( !*arg || !isalpha(*arg) )
   {
-    send_to_char( "Arti hunt needs a letter for which initial to hunt for.\n", ch );
+    send_to_char( "Arti hunt needs a letter for which initial to hunt for, or 1 to search all pfiles.\n", ch );
     send_to_char( "Arti hunt will then search all pfiles with said initial for artifacts, and add them to the arti list if necessary.\n", ch );
     return;
   }
-  *arg = LOWER( *arg );
+  if( *arg >= 'A' && *arg <= 'Z' )
+  {
+    *arg = *arg + 'a' - 'A';
+  }
 
   // Read & loop through the directory..
   // Open the directory!
