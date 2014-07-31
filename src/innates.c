@@ -383,7 +383,7 @@ const struct innate_data
   {"call of the grave", do_call_grave},
   {"sacrilegious power", 0}, // Vampire innate
   {"blur", 0}, // Not passive, but no supporting func anymore.
-  {"swashbuckling", 0}, // Swashbuckler
+  {"rapier and dirk", 0}, // Swashbuckler
   {"elemental body", 0},
   {"amorphous body", 0},
   {"engulf", do_engulf},
@@ -409,6 +409,7 @@ const struct innate_data
   {"giant avoidance", 0},
   {"seadog", 0},
   {"aura_of_spell_protection", do_aura_spell_protection},
+  {"vision of the dead", 0}
 };
 
 string list_innates(int race, int cls, int spec)
@@ -962,6 +963,8 @@ void assign_innates()
   ADD_CLASS_INNATE(INNATE_AURA_HEALING, CLASS_PALADIN, 30, 0);
   ADD_CLASS_INNATE(INNATE_AURA_BATTLELUST, CLASS_PALADIN, 45, 0);
 
+  ADD_CLASS_INNATE(INNATE_VISION_OF_THE_DEAD, CLASS_NECROMANCER, 31, SPEC_NECROLYTE);
+  ADD_CLASS_INNATE(INNATE_VISION_OF_THE_DEAD, CLASS_THEURGIST, 31, SPEC_TEMPLAR);
   ADD_CLASS_INNATE(INNATE_UNHOLY_ALLIANCE, CLASS_NECROMANCER, 31, SPEC_NECROLYTE);
   ADD_CLASS_INNATE(INNATE_UNHOLY_ALLIANCE, CLASS_THEURGIST, 31, SPEC_TEMPLAR);
   ADD_CLASS_INNATE(INNATE_MUMMIFY, CLASS_NECROMANCER, 41, SPEC_DIABOLIS);

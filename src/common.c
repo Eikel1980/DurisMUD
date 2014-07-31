@@ -18,7 +18,7 @@ using namespace std;
 
 const char *specdata[][MAX_SPEC] = {
   {"", "", "", ""},                                                                               //None
-  {"&+BSwordsman", "&+yGuardian", "&+bCon&+Bqui&+Wsta&+Bdor&n", ""},                              //Warrior
+  {"&+BSwordsman", "&+yGuardian", "&+bSwa&+Bsh&+Wbuc&+Bkler&n", ""},                              //Warrior
   {"&+cBlademaster", "&+gHuntsman", "&+gMa&+yrsha&+gll&n", ""},                                   //Ranger
   {"&+rPyr&+Rokine&+rtic", "&+MEn&+mslav&+Mer", "&+bPsyche&+Lporter", ""},                        //Psionicist
   {"&+wCrusa&+Wder", "&+WCavalier", "", ""},                                                      //Paladin

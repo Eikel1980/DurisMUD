@@ -1617,7 +1617,7 @@ string list_spells( int cls, int spec )
 
   if( *buf1 == '\0' )
   {
-    strcat( buf1, "None." );
+    strcat( buf1, "\nNone." );
   }
   strcat(buf1, "\n");
   return string(buf1);
@@ -1653,9 +1653,35 @@ string list_skills( int cls, int spec )
   oldskllvl = 0;
   found = FALSE;
   /* finally, show it */
+  // First, hunt for lost skills:
   for( skl = 0; skl < i; skl++ )
   {
-    int skill = skill_list[skl].spell;
+    skill = skill_list[skl].spell;
+    skllvl = skill_list[skl].circle;
+    if( skllvl < 1)
+    {
+      if( !found )
+      {
+        sprintf( buf, "\n&+BSkills lost:&N &+c%s&n", skills[skill].name);
+        strcat(buf1, buf);
+        found = TRUE;
+      }
+      else
+      {
+        sprintf(buf, ", &+c%s&n", skills[skill].name);
+        strcat(buf1, buf);
+      }
+    }
+    else
+    {
+      break;
+    }
+  }
+  // Second, show gained skills.
+  found = FALSE;
+  for( ; skl < i; skl++ )
+  {
+    skill = skill_list[skl].spell;
     skllvl = skill_list[skl].circle;
 
     // If they don't have the spell..
@@ -1682,7 +1708,7 @@ string list_skills( int cls, int spec )
 
   if( *buf1 == '\0' )
   {
-    strcat( buf1, "None." );
+    strcat( buf1, "\nNone." );
   }
   strcat(buf1, "\n");
   return string(buf1);

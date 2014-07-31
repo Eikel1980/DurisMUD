@@ -737,7 +737,7 @@ string wiki_spells( string title )
 
   if( !found )
   {
-    return_str += "No entries found.\n";
+    return_str += "\nNo entries found.\n";
     return return_str;
   }
 
@@ -788,7 +788,7 @@ string wiki_skills( string title )
 
   if( !found )
   {
-    return_str += "No entries found.\n";
+    return_str += "\nNo entries found.\n";
     return return_str;
   }
 

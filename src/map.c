@@ -361,10 +361,8 @@ int whats_in_maproom(P_char ch, int room, int distance, int show_regardless)
       }
       else if (obj->type == ITEM_CORPSE)
       {
-        if ((!str_cmp(ch->player.name, obj->action_description) ||
-            IS_TRUSTED(ch) ||
-            GET_SPEC(ch, CLASS_NECROMANCER, SPEC_NECROLYTE) ||
-	    GET_SPEC(ch, CLASS_THEURGIST, SPEC_TEMPLAR)))
+        if( !str_cmp(ch->player.name, obj->action_description)
+          || IS_TRUSTED(ch) || has_innate(ch, INNATE_VISION_OF_THE_DEAD) )
         {
           val = MIN(val, CONTAINS_CORPSE);
         }
