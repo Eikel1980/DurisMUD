@@ -1719,6 +1719,7 @@ string list_songs( int cls, int spec )
   int      sng, song, snglvl, i, oldsnglvl, lvlending;
   char     buf[MAX_STRING_LENGTH], buf1[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH];
   struct spl_list song_list[LAST_SONG - FIRST_SONG + 1 ];
+  struct spl_list instrument_list[LAST_INSTRUMENT - FIRST_INSTRUMENT + 1];
   bool     found;
 
   *buf = '\0';
@@ -1804,6 +1805,95 @@ string list_songs( int cls, int spec )
     strcat( buf1, "\nNone." );
   }
   strcat(buf1, "\n");
+
+  if( spec == 0 )
+  {
+    strcat(buf1, "\n==Instruments==");
+  }
+  else
+  {
+    strcat(buf1, "\n==Additional Instruments==");
+  }
+  // first, build a list of all the instrument skills for this class/spec.
+  memset( instrument_list, 0, sizeof(spl_list) * (LAST_INSTRUMENT - FIRST_INSTRUMENT + 1) );
+  i = 0;
+  for( sng = FIRST_INSTRUMENT; sng <= LAST_INSTRUMENT; sng++ )
+  {
+    // Instruments are skills.
+    snglvl = get_skill_level(cls, spec, sng);
+
+    if( snglvl < MAXLVLMORTAL + 1 )
+    {
+      instrument_list[i].circle = snglvl;
+      instrument_list[i++].spell = sng;
+    }
+  }
+  /* then sort the list... (Can use spell_cmp although we're doing instruments and levels not spells and circles). */
+  qsort(instrument_list, i, sizeof(struct spl_list), spell_cmp);
+
+  oldsnglvl = 0;
+  found = FALSE;
+  /* finally, show it */
+  // First, hunt for lost instruments:
+  for( sng = 0; sng < i; sng++ )
+  {
+    song = instrument_list[sng].spell;
+    snglvl = instrument_list[sng].circle;
+    // Don't think this will be the case ever, but...
+    if( snglvl < 1)
+    {
+      if( !found )
+      {
+        sprintf( buf, "\n&+BInstruments lost:&N &+c%s&n", skills[song].name);
+        strcat(buf1, buf);
+        found = TRUE;
+      }
+      else
+      {
+        sprintf(buf, ", &+c%s&n", skills[song].name);
+        strcat(buf1, buf);
+      }
+    }
+    else
+    {
+      break;
+    }
+  }
+  // Second, show gained skills.
+  found = FALSE;
+  for( ; sng < i; sng++ )
+  {
+    song = instrument_list[sng].spell;
+    snglvl = instrument_list[sng].circle;
+
+    // If they don't have the song..
+    if( !(skills[song].m_class[cls-1]).maxlearn[spec] )
+    {
+      continue;
+    }
+    if( !sng || snglvl != oldsnglvl )
+    {
+      // Lvls 4-20 get "th", rest get the st/nd/rd or th.
+      lvlending = (snglvl > 3 && snglvl < 21) ? 4 : snglvl % 10;
+      sprintf( buf, "\n&+B%d%s Level:&N", snglvl,
+        lvlending == 1 ? "st" : lvlending == 2 ? "nd" : lvlending == 3 ? "rd" : "th" );
+      strcat( buf1, buf );
+      oldsnglvl = snglvl;
+      found = FALSE;
+    }
+    strcpy(buf2, " ");
+
+    sprintf(buf, "%s&+c%s&n", found ? ", " : " ", skills[song].name);
+    found = TRUE;
+    strcat(buf1, buf);
+  }
+
+  // Don't think this will ever be the case either (A bard with no instrument skills?).
+  if( !found )
+  {
+    strcat( buf1, "\nNone." );
+  }
+
   return string(buf1);
 }
 
