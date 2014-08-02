@@ -490,7 +490,7 @@ bool intercept_defensiveproc(P_char merc, P_char hitter)
   int num2 = number(1, 800);
 
   // Approx 1/8 chance for 100 luck, but really random.
-  debug("intercept_defensiveproc: merc: '%s', num1: %d, hitter: '%s', num2: %d", J_NAME(merc), num1, J_NAME(hitter), num2);
+//  debug("intercept_defensiveproc: merc: '%s', num1: %d, hitter: '%s', num2: %d", J_NAME(merc), num1, J_NAME(hitter), num2);
 
   if( num1 < num2 )
   {
