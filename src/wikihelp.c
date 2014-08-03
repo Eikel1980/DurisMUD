@@ -89,6 +89,8 @@ string wiki_help(string str)
   if( mysql_num_rows(res) < 1 )
   {
     mysql_free_result(res);
+    // Log bad help file requests.
+    logit( LOG_HELP, str.c_str() );
     return string("&+GSorry, but there are no help topics that match your search.");
   }
 
