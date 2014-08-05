@@ -47,10 +47,10 @@ D 0 26 2 1 100 0 0 0
 *
 D 0 18 2 1 100 0 0 0
 *     south exit from "Bright White Corridor" to
-*     "Behind the Inn of the Howling" - closed
+*     "Behind the Inn of the Howling (Drow HT bottom)" - closed
 *
 D 0 27 0 1 100 0 0 0
-*     north exit from "Behind the Inn of the Howling" to
+*     north exit from "Behind the Inn of the Howling (Drow HT bottom)" to
 *     "Bright White Corridor" - closed
 *
 D 0 19 0 1 100 0 0 0
@@ -87,10 +87,10 @@ D 0 23 0 1 100 0 0 0
 *
 D 0 21 0 1 100 0 0 0
 *     north exit from "Bright White Corridor" to
-*     "Behind The Sharkbait Inn" - closed
+*     "Behind The Sharkbait Inn (Quietus Quay)" - closed
 *
 D 0 31 2 1 100 0 0 0
-*     south exit from "Behind The Sharkbait Inn" to
+*     south exit from "Behind The Sharkbait Inn (Quietus Quay)" to
 *     "Bright White Corridor" - closed
 *
 D 0 21 2 1 100 0 0 0
@@ -111,10 +111,10 @@ D 0 34 2 1 100 0 0 0
 *
 D 0 22 2 1 100 0 0 0
 *     south exit from "Bright White Corridor" to
-*     "Behind The Immense and Antiquated Cavern of Sschindylryn" - closed
+*     "Behind Inn of the Twisted Spine (Goblin HT)" - closed
 *
 D 0 35 0 1 100 0 0 0
-*     north exit from "Behind The Immense and Antiquated Cavern of Sschindylryn" to
+*     north exit from "Behind Inn of the Twisted Spine (Goblin HT)" to
 *     "Bright White Corridor" - closed
 *
 *

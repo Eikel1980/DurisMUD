@@ -290,7 +290,7 @@ D2
 1 0 18
 S
 #27
-&+LBehind the &+RInn of the Howling~
+&+LBehind the &+RInn of the Howling&n (Drow HT bottom)~
 Drow Inn
 ~
 1 138444800 0
@@ -344,7 +344,7 @@ D2
 1 0 20
 S
 #31
-&+LBehind &+bThe Sharkbait Inn&n~
+&+LBehind &+bThe Sharkbait Inn&n (Quietus Quay)~
 QQ
 ~
 1 0 0
@@ -397,7 +397,8 @@ D2
 1 0 22
 S
 #35
-&+LBehind &+mThe Immense and Antiquated Cavern of Sschindylryn~
+&+LBehind Inn &+bof the &+LTwisted &+rSpine&n (Goblin HT)~
+This is the God fast track room to Goblin HT.
 ~
 1 0 0
 D0
@@ -407,7 +408,7 @@ D0
 D2
 ~
 ~
-0 0 350066
+0 0 70175
 S
 #36
 &+bA Rift in the &+BOcean &+LFloor&n~
