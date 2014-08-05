@@ -3220,45 +3220,46 @@ int can_summon_beast(P_char ch, int level)
   struct follow_type *k;
   int i, j, room, charisma = GET_C_CHA(ch);
   P_char   victim;
-  
-  if(!(ch) ||
-     !IS_ALIVE(ch) ||
-     !(ch->in_room))
-      return false;
-  
-  if(CHAR_IN_SAFE_ZONE(ch))
+
+  if( !IS_ALIVE(ch) || !(ch->in_room) || IS_PC_PET(ch) )
+  {
+    return FALSE;
+  }
+
+  if( CHAR_IN_SAFE_ZONE(ch) )
   {
     send_to_char("A mysterious force blocks your conjuring!\n", ch);
-    return false;
+    return FALSE;
   }
-  
-  for (k = ch->followers, i = 0, j = 0; k; k = k->next)
+
+  for( k = ch->followers, i = 0, j = 0; k; k = k->next )
   {
     victim = k->follower;
-    
-    if(IS_ELEMENTAL(victim) ||
-       IS_UNDEADRACE(victim))
+
+    if( IS_ELEMENTAL(victim) || IS_UNDEADRACE(victim) )
     {
       send_to_char("You must fully attune yourself to the animal spirit. Abandon your otherworldly creatures.\r\n", ch);
-      return false;
+      return FALSE;
     }
   }
 
-  for (k = ch->followers, i = 0; k; k = k->next)
+  for( k = ch->followers, i = 0; k; k = k->next )
   {
-    if(k->follower)
+    if( k->follower )
     {
-      if(IS_NPC(k->follower) &&
+      if( IS_NPC(k->follower) &&
         ((GET_VNUM(k->follower) >= 1051 && GET_VNUM(k->follower) <= 1062 ) ||
-         (GET_VNUM(k->follower) >= 19 && GET_VNUM(k->follower) <= 29 )))
+        (GET_VNUM(k->follower) >= 19 && GET_VNUM(k->follower) <= 29 )))
+      {
         i++;
+      }
     }
   }
-  
-  if(GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST))
+
+  if( GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) )
     charisma += level;
 
-  if(i > MAX(1, (int)(charisma / 30)))
+  if( i > MAX(1, (int)(charisma / 30)) )
   {
     return FALSE;
   }
@@ -3279,22 +3280,22 @@ P_char summon_beast_common(int mobnumb, P_char ch, int max_summon,
   {
     return NULL;
   }
-  
+
   if(CHAR_IN_SAFE_ZONE(ch))
   {
     send_to_char("A mysterious force blocks your summoning!\n", ch);
     return NULL;
   }
 
-  if(!can_summon_beast(ch, level))
+  if( !can_summon_beast(ch, level) )
   {
     send_to_char("You cannot bind any more creatures to your control.\n", ch);
     return NULL;
   }
 
   mob = read_mobile(real_mobile(mobnumb), REAL);
-  
-  if(!mob)
+
+  if( !mob )
   {
     logit(LOG_DEBUG, "summon_beast_common(): mob %d not loadable", mobnumb);
     send_to_char("Bug in summon_beast_common.  Tell a god!\n", ch);
@@ -3303,39 +3304,53 @@ P_char summon_beast_common(int mobnumb, P_char ch, int max_summon,
 
   char_to_room(mob, ch->in_room, 0);
 
-  if(GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) ||
-     IS_ELITE(ch))
+  if( GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) || IS_ELITE(ch) )
   {
-    if(is_greater)
+    if( is_greater )
+    {
       sum = dice(level, 16) + (life * 5);
+    }
     else
+    {
       sum = dice(level, 12) + (life * 2);
+    }
   }
-  else if(is_greater)
-    sum = (int)((dice(level, 16) + (life * 5)) * 0.66);
-  else
-    sum = (int)((dice(level, 12) + (life * 2)) * 0.66);
-
-  if(!is_greater)
+  else if( is_greater )
   {
-    while (mob->affected)
-      affect_remove(mob, mob->affected);
+    sum = (int)((dice(level, 16) + (life * 5)) * 0.66);
   }
-  
-  if(is_greater && IS_ANIMALIST(ch))
+  else
+  {
+    sum = (int)((dice(level, 12) + (life * 2)) * 0.66);
+  }
+
+  if( !is_greater )
+  {
+    while( mob->affected )
+    {
+      affect_remove(mob, mob->affected);
+    }
+  }
+
+  if( is_greater && IS_ANIMALIST(ch) )
   {
     sum = (int)(sum * 1.75);
     mob->player.level = GET_LEVEL(mob) + (int)(GET_LEVEL(ch) / 10 + life / 10 + number(0, 5));
     SET_BIT(mob->specials.affected_by, AFF_HASTE);
   }
-  else if(is_greater && life)
+  else if( is_greater && life )
+  {
     mob->player.level = GET_LEVEL(mob) + (int)(life / 15) + number(0, 2);
-  else if(life)
+  }
+  else if( life )
+  {
     mob->player.level = GET_LEVEL(mob) + (int)(life / 20) + number(0, 2);
-    
+  }
 
-  if(!IS_SET(mob->specials.act, ACT_MEMORY))
+  if( !IS_SET(mob->specials.act, ACT_MEMORY) )
+  {
     clearMemory(mob);
+  }
 
   GET_MAX_HIT(mob) = GET_HIT(mob) = mob->points.base_hit = sum;
 
@@ -3344,8 +3359,8 @@ P_char summon_beast_common(int mobnumb, P_char ch, int max_summon,
   GET_SILVER(mob) = 0;
   GET_COPPER(mob) = 0;
 
-  if(GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) || IS_ELITE(ch))
-  {  
+  if( GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) || IS_ELITE(ch) )
+  {
     mob->points.base_hitroll = mob->points.hitroll = (int)(GET_LEVEL(mob) / 1.2);
     mob->points.base_damroll = mob->points.damroll = (int)(GET_LEVEL(mob) / 1.2);
   }
@@ -3354,25 +3369,25 @@ P_char summon_beast_common(int mobnumb, P_char ch, int max_summon,
     mob->points.base_hitroll = mob->points.hitroll = (int)(GET_LEVEL(mob) / 2.5);
     mob->points.base_damroll = mob->points.damroll = (int)(GET_LEVEL(mob) / 2.5);
   }
-  
-  MonkSetSpecialDie(mob); 
-  
-  if(GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) || IS_ELITE(ch))
+
+  MonkSetSpecialDie(mob);
+
+  if( GET_SPEC(ch, CLASS_SHAMAN, SPEC_ANIMALIST) || IS_ELITE(ch) )
+  {
     ch->points.damsizedice = (int)(1.5 * ch->points.damsizedice);
-  
+  }
+
   GET_EXP(mob) = 0;
 
-  if((mobnumb == 1060) ||
-     (mobnumb == 1053) ||
-     (mobnumb == 1054) ||
-     (mobnumb == 1060) ||
-     (mobnumb == 19) ||
-     (mobnumb == 27))
+  if( (mobnumb == 1060) || (mobnumb == 1053) || (mobnumb == 1054)
+    || (mobnumb == 1060) || (mobnumb == 19) || (mobnumb == 27) )
   {
     if(!IS_SET(mob->specials.act, ACT_MOUNT))
+    {
       SET_BIT(mob->specials.act, ACT_MOUNT);
+    }
   }
-  
+
   balance_affects(mob);
 
   act(appears, FALSE, ch, 0, ch, TO_ROOM);
@@ -3389,84 +3404,73 @@ void spell_summon_beast(int level, P_char ch, char *arg, int type,
 {
   int rand = number(1, 3), maxsumm = (level / 15) + 1, dur = 20 + (level / 5);
 
-  if(!ch)
+  if( !IS_ALIVE(ch) )
+  {
     return;
-    
+  }
   if(IS_ANIMALIST(ch))
+  {
     dur += GET_LEVEL(ch);
+  }
 
   /* summon beast based on sector type.. */
-
-  switch (world[ch->in_room].sector_type)
+  switch( world[ch->in_room].sector_type )
   {
   case SECT_FIELD:
     switch (rand)
     {
-      /* antelope */
-
     case 1:
+      /* antelope */
       summon_beast_common(1051, ch, maxsumm, dur,
                           "&+yAn antelope from a nearby field ambles up to you.",
                           "&+yAn antelope from a nearby field ambles up to $N.",
                           (level / 3) + 2, FALSE);
       return;
-
-      /* buffalo */
-
     case 2:
+      /* buffalo */
       summon_beast_common(1052, ch, maxsumm, dur,
                           "&+yA buffalo from a nearby field plods up to you.",
                           "&+yA buffalo from a nearby field plods up to $N.",
                           (level / 3) + 3 + dice(2, 2), FALSE);
       return;
-
-      /* wild horse */
-
     case 3:
+      /* wild horse */
       summon_beast_common(1053, ch, maxsumm, dur,
                           "&+yA horse from a nearby field gallops up to you.",
                           "&+yA horse from a nearby field gallops up to $N.",
                           (level / 3) + dice(1, 2), FALSE);
       return;
-
     default:
-      send_to_char("something nutty..\n", ch);
+      send_to_char("Your attempt to summon a beast results in something nutty. Tell a God.\n", ch);
       return;
     }
-
   case SECT_FOREST:
   case SECT_SWAMP:
     switch (rand)
     {
-      /* bear (gasp) */
-
     case 1:
+      /* bear (gasp) */
       summon_beast_common(1054, ch, maxsumm, dur,
                           "&+LA bear, tearing through nearby underbrush, appears by your side.",
                           "&+LA bear, tearing through nearby underbrush, appears by $N's side.",
                           (level / 3) + 4 + dice(2, 2), FALSE);
       return;
-
-      /* wolf */
-
     case 2:
+      /* wolf */
       summon_beast_common(1055, ch, maxsumm, dur,
                           "&+yA wolf, appearing from the nearby underbrush, walks up to your side.",
                           "&+yA wolf, appearing from the nearby underbrush, walks up to $N's side.",
                           (level / 3) + 1 + dice(1, 3), FALSE);
       return;
-
-      /* chipmunk - snicker */
-
     case 3:
+      /* chipmunk - snicker */
       summon_beast_common(1056, ch, maxsumm, dur,
                           "&+yA cute little chipmunk climbs down from a tree and stands beside you.",
                           "&+yA cute little chipmunk climbs down from a tree and stands beside $N.",
                           3 + (level / 10), FALSE);
       return;
-
     default:
-      send_to_char("nuttiness.\n", ch);
+      send_to_char("Your attempt to summon a beast results in some nuttiness. Tell a God.\n", ch);
       return;
     }
 
@@ -3474,38 +3478,31 @@ void spell_summon_beast(int level, P_char ch, char *arg, int type,
   case SECT_MOUNTAIN:
     switch (rand)
     {
-      /* mountain goat */
-
     case 1:
+      /* mountain goat */
       summon_beast_common(1057, ch, maxsumm, dur,
                           "&+WA mountain goat ambles up to you.",
                           "&+WA mountain goat ambles up to $N's side.",
                           (level / 3) + dice(1, 2), FALSE);
       return;
-
-      /* cougar */
-
     case 2:
+      /* cougar */
       summon_beast_common(1058, ch, maxsumm, dur,
                           "&+YA well-muscled cougar silently pads up alongside you.",
                           "&+YA well-muscled cougar silently pads up to $N's side.",
                           (level / 3) + 2 + dice(2, 3), FALSE);
       return;
-
-      /* a rock lizard - YES! */
-
     case 3:
+      /* a rock lizard - YES! */
       summon_beast_common(1059, ch, maxsumm, dur,
                           "&+LA little &n&+rrock lizard&+L flits from a nearby rock and stops near your foot.",
                           "&+LA little &n&+rrock lizard&+L flits from a nearby rock, stopping near $N's foot.",
                           2 + (level / 25), FALSE);
       return;
-
     default:
-      send_to_char("oddness!  nutty!\n", ch);
+      send_to_char("Your attempt to summon a beast results in some oddness. Tell a God.\n", ch);
       return;
     }
-
   case SECT_UNDERWATER:
   case SECT_UNDERWATER_GR:
   case SECT_UNDRWLD_WATER:
@@ -3515,44 +3512,34 @@ void spell_summon_beast(int level, P_char ch, char *arg, int type,
   case SECT_OCEAN:
     send_to_char("Not too many water beasts about...\n", ch);
     return;
-
   case SECT_INSIDE:
   case SECT_CITY:
   case SECT_ROAD:
-    send_to_char
-      ("You are not close enough to the wilderness to summon a wild beast.\n",
-       ch);
+    send_to_char("You are not close enough to the wilderness to summon a wild beast.\n", ch);
     return;
-
     /* since so much of the underworld is defined incorrectly anyway..  just let
        them summon wherever they want */
-
   case SECT_UNDRWLD_CITY:
   case SECT_UNDRWLD_INSIDE:
   case SECT_UNDRWLD_WILD:
-    switch (rand)
+    switch( rand )
     {
-      /* spider */
-
     case 1:
+      /* spider */
       summon_beast_common(1060, ch, maxsumm, dur,
                           "&+LA huge &n&+mcave spider&+L silently walks up beside you.",
                           "&+LA huge &n&+mcave spider&+L silently walks up beside $N.",
                           (level / 3) + 2, FALSE);
       return;
-
-      /* cave lizard */
-
     case 2:
+      /* cave lizard */
       summon_beast_common(1061, ch, maxsumm, dur,
                           "&+gA large &+Gcave lizard&n&+g, stepping out of the shadows, stands by your side.",
                           "&+gA large &+Gcave lizard&n&+g, stepping out of the shadows, stands next to $N.",
                           (level / 3) + dice(2, 2), FALSE);
       return;
-
-      /* purple worm */
-
     case 3:
+      /* purple worm */
       summon_beast_common(1062, ch, maxsumm, dur,
                           "&+mA &+Mpurple worm&n&+m burrows out of the ground and slithers up to your leg.",
                           "&+mA &+Mpurple worm&n&+m burrows out of the ground, slithering up to $N.",
@@ -3560,23 +3547,19 @@ void spell_summon_beast(int level, P_char ch, char *arg, int type,
       return;
 
     default:
-      send_to_char("something nutty..\n", ch);
+      send_to_char("Your attempt to summon a beast results in something really nutty. Tell a God.\n", ch);
       return;
     }
-
   case SECT_UNDRWLD_NOGROUND:
   case SECT_NO_GROUND:
-    send_to_char
-      ("Summoning something here may prove fatal to its health.\n", ch);
+    send_to_char("Summoning something here may prove fatal to its health.\n", ch);
     return;
-
   case SECT_AIR_PLANE:
   case SECT_FIREPLANE:
   case SECT_WATER_PLANE:
   case SECT_EARTH_PLANE:
     send_to_char("Summoning beasts from an elemental plane?  Hmm.\n", ch);
     return;
-
   default:
     send_to_char("No beast respond to your summons!\n", ch);
     return;
@@ -3588,48 +3571,43 @@ void spell_greater_summon_beast(int level, P_char ch, char *arg, int type,
 {
   int rand = number(1, 3), maxsumm = (level / 15) + 1, dur = level + 10;
 
-  if(!(ch))
+  if( !IS_ALIVE(ch) )
     return;
-  
-  if(IS_ANIMALIST(ch))
-    dur += GET_LEVEL(ch);
-  
-  /* summon beast based on sector type.. */
 
+  if(IS_ANIMALIST(ch))
+  {
+    dur += GET_LEVEL(ch);
+  }
+
+  /* summon beast based on sector type.. */
   switch (world[ch->in_room].sector_type)
   {
   case SECT_FIELD:
-    switch (rand)
+    switch( rand )
     {
-      /* warg */
-
     case 1:
+      /* warg */
       summon_beast_common(19, ch, maxsumm, dur,
                           "&+yA warg from a nearby field prowl up to your side.&n",
                           "&+yA warg from a nearby field prowl up to $N's side.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* eagle */
-
     case 2:
+      /* eagle */
       summon_beast_common(20, ch, maxsumm, dur,
                           "&+yA majestic eagle soars down and lands on your shoulder.&n",
                           "&+yA majestic eagle soars down and lands on $N's shoulder.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* buffalo */
-
     case 3:
+      /* buffalo */
       summon_beast_common(21, ch, maxsumm, dur,
                           "&+yA buffalo from a nearby field plods up to you.",
                           "&+yA buffalo from a nearby field plods up to $N.",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
     default:
-      send_to_char("something nutty..\n", ch);
+      send_to_char("Your attempt to summon a beast results in something nutty. Tell a God.\n", ch);
       return;
     }
 
@@ -3637,27 +3615,23 @@ void spell_greater_summon_beast(int level, P_char ch, char *arg, int type,
   case SECT_SWAMP:
     switch (rand)
     {
-      /* owlbear */
-
     case 1:
     case 2:
+      /* owlbear */
       summon_beast_common(29, ch, maxsumm, dur,
                           "&+LAn owlbear, tearing through nearby underbrush, appears by your side.&n",
                           "&+LAn owlbear, tearing through nearby underbrush, appears by $N's side.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* treant */
-
     case 3:
+      /* treant */
       summon_beast_common(28, ch, maxsumm, dur,
                           "&+yA huge treant, crashing through the nearby underbrush, walks up to your side.&n",
                           "&+yA huge treant, crashing through the nearby underbrush, walks up to $N's side.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
     default:
-      send_to_char("nuttiness.\n", ch);
+      send_to_char("Your attempt to summon a beast results in some nuttiness. Tell a God.\n", ch);
       return;
     }
 
@@ -3665,38 +3639,31 @@ void spell_greater_summon_beast(int level, P_char ch, char *arg, int type,
   case SECT_MOUNTAIN:
     switch (rand)
     {
-      /* rock beetle */
-
     case 1:
+      /* rock beetle */
       summon_beast_common(25, ch, maxsumm, dur,
                           "&+wA swarm of rock beetles scurry up to you from under a nearby rock.&n",
                           "&+wA swarm of rock beetles scurry up to $N from under a nearby rock.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* mountain lion */
-
     case 2:
+      /* mountain lion */
       summon_beast_common(26, ch, maxsumm, dur,
                           "&+YA well-muscled mountain lion silently pads up alongside you.&n",
                           "&+YA well-muscled mountain lion silently pads up alongside $N.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* wyvern */
-
     case 3:
+      /* wyvern */
       summon_beast_common(27, ch, maxsumm, dur,
                           "&+LA wyvern emerges from a nearby cavern glaring at you.&n",
                           "&+LA wyvern emerges from a nearby cavern glaring at $N.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
     default:
-      send_to_char("oddness!  nutty!\n", ch);
+      send_to_char("Your attempt to summon a beast results in some oddness. Tell a God.\n", ch);
       return;
     }
-
   case SECT_UNDERWATER:
   case SECT_UNDERWATER_GR:
   case SECT_UNDRWLD_WATER:
@@ -3706,52 +3673,41 @@ void spell_greater_summon_beast(int level, P_char ch, char *arg, int type,
   case SECT_OCEAN:
     send_to_char("Not too many water beasts about...\n", ch);
     return;
-
   case SECT_INSIDE:
   case SECT_CITY:
   case SECT_ROAD:
-    send_to_char
-      ("You are not close enough to the wilderness to summon a wild beast.\n",
-       ch);
+    send_to_char("You are not close enough to the wilderness to summon a wild beast.\n", ch);
     return;
-
     /* since so much of the underworld is defined incorrectly anyway..  just let
        them summon wherever they want */
-
   case SECT_UNDRWLD_CITY:
   case SECT_UNDRWLD_INSIDE:
   case SECT_UNDRWLD_WILD:
     switch (rand)
     {
-      /* tunnel worm */
-
     case 1:
+      /* tunnel worm */
       summon_beast_common(22, ch, maxsumm, dur,
                           "&+mA &+Mhuge tunnel worm&+m burrows out of the ground near you.&n",
                           "&+mA &+Mhuge tunnel worm&+m burrows out of the ground near $N.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* hook horror */
-
     case 2:
+      /* hook horror */
       summon_beast_common(23, ch, maxsumm, dur,
                           "&+LA &+wghastly &+Lhook horror skulks up to you.&n",
                           "&+LA &+wghastly &+Lhook horror skulks up to $N.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
-      /* roper */
-
     case 3:
+      /* roper */
       summon_beast_common(24, ch, maxsumm, dur,
                           "&+gA small &+Groper &+g, tentacles flailing, slithers toward you.&n",
                           "&+gA small &+Groper &+g, tentacles flailing, slithers toward $N.&n",
                           (level / 2) + 3 + dice(4, 3), TRUE);
       return;
-
     default:
-      send_to_char("something nutty..\n", ch);
+      send_to_char("Your attempt to summon a beast results in something nutty. Tell a God.\n", ch);
       return;
     }
 
@@ -3760,7 +3716,6 @@ void spell_greater_summon_beast(int level, P_char ch, char *arg, int type,
     send_to_char
       ("Summoning something here may prove fatal to its health.\n", ch);
     return;
-
   case SECT_AIR_PLANE:
   case SECT_FIREPLANE:
   case SECT_WATER_PLANE:
@@ -3778,6 +3733,7 @@ void spell_summon_spirit(int level, P_char ch, char *arg, int type,
                          P_char victim, P_obj obj)
 {
   send_to_char("This spell is not yet implemented.\n", ch);
+  send_to_char( "&+gLohr pops up and goes, \"Eee Hee!\"!&n", ch );
 }
 
 void spell_wellness(int level, P_char ch, char *arg, int type, P_char victim,
