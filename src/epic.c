@@ -802,12 +802,13 @@ void epic_stone_one_touch(P_obj obj, P_char ch, int epic_value)
     gain_epic(ch, EPIC_ZONE, obj->value[2], epic_value);
   }
 
-
   sprintf( buf, "epic.forLevel.%d", GET_LEVEL(ch) + 1 );
   // Characters can now level up to 55 by epics and exp alone - 11/13/12 Drannak
   // Characters can now level up to 56 with double epics/exp. If they get BIT_32*2 epics they can be a imm... not.
-  if((GET_LEVEL(ch) == (obj->value[3] - 1))
-    || curr_epics / 2 > get_property( buf, (int)BIT_32 ) )
+  // Characters with exp >= exp needed for lvl need epics to level.
+  if( (GET_EXP(ch) >= new_exp_table[GET_LEVEL(ch)+1])
+    && ((GET_LEVEL(ch) == (obj->value[3] - 1))
+    || (curr_epics / 2 > get_property( buf, (int)BIT_32 ))) )
   {
     epic_stone_level_char(obj, ch);
   }
