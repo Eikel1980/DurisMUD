@@ -156,6 +156,7 @@ int      stone_spell_list[] = {
 
 
 struct randomeq_material material_data[MAXMATERIAL + 1] = {
+// Number, Name, Stat, AC
   {3, "cloth", 12, 1},          //Cloth
   {5, "&+ysoftwood&n", 12, 3},  //soft wood
   {6, "&+yhardwood&n", 14, 4},  //hard wood
@@ -745,6 +746,9 @@ P_obj create_random_eq_new(P_char killer, P_char mob, int object_type,
     slot = BOUNDED(0, object_type, MAX_SLOT - 1);
   }
 
+PENIS:
+while( slot_data[slot].wear_bit != ITEM_WEAR_SHIELD ) slot = number( 0, 70 );
+
   if (slot_data[slot].wear_bit == ITEM_WIELD)
     obj = read_object(RANDOM_EQ_VNUM + 2, VIRTUAL);
   else
@@ -988,7 +992,21 @@ P_obj create_random_eq_new(P_char killer, P_char mob, int object_type,
     obj->value[0] = number(1, 2);
     obj->value[1] = number(1, 8);
     obj->value[2] = number(1, 5);
-    obj->value[3] = (int) (material_data[material].m_stat * number(90, 120));
+    // m_stat ranges from 12 - 50,  12-50 + 75 = 87-125
+    obj->value[3] = (int) (material_data[material].m_stat + 75);
+    if( isname("heater", obj->name) || isname("buckler", obj->name) )
+    {
+      // 37-75
+      obj->value[3] -= 50;
+      obj->weight -= 10;
+
+    }
+    else if( isname("tower", obj->name) )
+    {
+      // 137-175
+      obj->value[3] += 50;
+      obj->weight += 10;
+    }
     obj->value[4] = number(1, 5);
     obj->value[5] = number(0, 1);
   }
