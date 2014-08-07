@@ -14,26 +14,26 @@ extern P_index obj_index;
 extern P_obj object_list;
 extern P_room world;
 
-#define TRAP_DAM_SLEEP		0
-#define TRAP_DAM_TELEPORT 	1
-#define TRAP_DAM_FIRE      	2
-#define TRAP_DAM_COLD       	3
-#define TRAP_DAM_ACID  		4
-#define TRAP_DAM_ENERGY   	5
-#define TRAP_DAM_BLUNT   	6
-#define TRAP_DAM_PIERCE 	7
-#define TRAP_DAM_SLASH 		8
+#define TRAP_DAM_SLEEP      0
+#define TRAP_DAM_TELEPORT   1
+#define TRAP_DAM_FIRE       2
+#define TRAP_DAM_COLD       3
+#define TRAP_DAM_ACID       4
+#define TRAP_DAM_ENERGY     5
+#define TRAP_DAM_BLUNT      6
+#define TRAP_DAM_PIERCE     7
+#define TRAP_DAM_SLASH      8
 
-#define TRAP_EFF_MOVE       1   /* trigger on movement */
-#define TRAP_EFF_OBJECT     2   /* trigger on get or put */
-#define TRAP_EFF_ROOM       4   /* affect all in room */
-#define TRAP_EFF_NORTH      8   /* movement in this direction */
-#define TRAP_EFF_EAST       16
-#define TRAP_EFF_SOUTH      32
-#define TRAP_EFF_WEST       64
-#define TRAP_EFF_UP         128
-#define TRAP_EFF_DOWN       256
-#define TRAP_EFF_OPEN       512 /* trigger on open */
+#define TRAP_EFF_MOVE       BIT_1   /* trigger on movement */
+#define TRAP_EFF_OBJECT     BIT_2   /* trigger on get or put */
+#define TRAP_EFF_ROOM       BIT_3   /* affect all in room */
+#define TRAP_EFF_NORTH      BIT_4   /* movement in this direction */
+#define TRAP_EFF_EAST       BIT_5
+#define TRAP_EFF_SOUTH      BIT_6
+#define TRAP_EFF_WEST       BIT_7
+#define TRAP_EFF_UP         BIT_8
+#define TRAP_EFF_DOWN       BIT_9
+#define TRAP_EFF_OPEN       BIT_10  /* trigger on open */
 
 void do_trapremove(P_char ch, char *argument, int cmd)
 {
@@ -42,13 +42,20 @@ void do_trapremove(P_char ch, char *argument, int cmd)
 
   argument = one_argument(argument, arg1);
 
-  if (!(obj = get_obj_vis(ch, argument)))
+  if( !(obj = get_obj_vis(ch, arg1)) )
   {
     send_to_char("That is not here!\r\n", ch);
     return;
   }
-  obj->trap_charge = 0;
-  send_to_char("Trap removed.\r\n", ch);
+  if( obj->trap_charge != 0 )
+  {
+    obj->trap_charge = 0;
+    send_to_char("Trap disarmed.\r\n", ch);
+  }
+  else
+  {
+    send_to_char( "Trap has no charges.\r\n", ch );
+  }
   return;
 }
 
@@ -71,9 +78,9 @@ void do_trapstat(P_char ch, char *argument, int cmd)
   }
   else
   {
-    send_to_char("That object in not registered as a trap.\r\n", ch);
+    send_to_char("That object is not registered as a trap.\r\n", ch);
   }
-  switch (obj->trap_dam)
+  switch( obj->trap_dam )
   {
   case TRAP_DAM_SLEEP:
     send_to_char("Damage type is sleep.\r\n", ch);
@@ -175,25 +182,19 @@ void do_trapset(P_char ch, char *argument, int cmd)
   if (arg1[0] == '\0' || arg2[0] == '\0')
   {
     send_to_char("Syntax: trapset <object> <field> <value>\r\n", ch);
-    send_to_char
-      ("Field: move, object(get and put), room, open, damage, charge\r\n",
-       ch);
-    send_to_char
-      ("Values: Move> north, south, east, west, up, down, and all.\r\n", ch);
-    send_to_char
-      ("        Damage> sleep, teleport, fire, cold, acid, energy,\r\n", ch);
+    send_to_char("Field: move, object(get and put), room, open, damage, charge\r\n", ch);
+    send_to_char("Values: Move> north, south, east, west, up, down, and all.\r\n", ch);
+    send_to_char("        Damage> sleep, teleport, fire, cold, acid, energy,\r\n", ch);
     send_to_char("                blunt, pierce, slash.\r\n", ch);
     send_to_char("        Object, open, room> no values\r\n", ch);
     return;
   }
-  if (!
-      (bits =
-       generic_find(arg1, FIND_OBJ_INV | FIND_OBJ_ROOM, ch, &dummy, &obj)))
+  if( !(bits = generic_find(arg1, FIND_OBJ_INV | FIND_OBJ_ROOM, ch, &dummy, &obj)) )
   {
     send_to_char("Nothing like that here!\r\n", ch);
     return;
   }
-  if (!obj->trap_eff)
+  if( !obj->trap_eff )
     obj->trap_eff = 1;
 
   if (!str_cmp(arg2, "move"))

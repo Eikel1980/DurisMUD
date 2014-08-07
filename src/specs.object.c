@@ -13042,23 +13042,27 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
   {
     act("You succesfully disarmed $p hidden here.", FALSE, ch, obj, 0,
         TO_CHAR);
-    ClearObjEvents(obj);
+      ClearObjEvents(obj);
     obj->value[0] = 0;
     return TRUE;
   }
 
-  if (number(0, 2) && IS_SET(obj->extra_flags, ITEM_SECRET) &&
-      cmd_to_exitnumb(cmd) != -1 && obj->value[0] && obj->loc_p == LOC_ROOM &&
-      (IS_PC(ch) && obj->value[0] != GET_PID(ch)) && !IS_TRUSTED(ch))
+  if( number(0, 2) && IS_SET(obj->extra_flags, ITEM_SECRET)
+    && cmd_to_exitnumb(cmd) != -1 && obj->value[0] && obj->loc_p == LOC_ROOM
+    && (IS_PC(ch) && obj->value[0] != GET_PID(ch)) && !IS_TRUSTED(ch) )
   {
 
     for (tch = character_list; tch; tch = tch->next)
+    {
       if (IS_PC(tch) && GET_PID(tch) == obj->value[0])
+      {
         break;
+      }
+    }
 
     if (item == 54)
     {
-      if (tch != NULL && ch->in_room != tch->in_room && !grouped(ch, tch))
+      if( tch != NULL && ch->in_room != tch->in_room && !grouped(ch, tch) )
       {
         sprintf(buf, "$N has trespassed in %s!", world[ch->in_room].name);
         act(buf, FALSE, tch, 0, ch, TO_CHAR);
@@ -13066,41 +13070,36 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
         obj->value[0] = 0;
         ClearObjEvents(obj);
 
-        if (number(0, 120) < GET_C_INT(ch))
-          act("You notice you just broke a &+Wthin string&n attached to $p!",
-              FALSE, ch, obj, 0, TO_CHAR);
-
+        if( number(0, 120) < GET_C_INT(ch) )
+        {
+          act("You notice you just broke a &+Wthin string&n attached to $p!", FALSE, ch, obj, 0, TO_CHAR);
+        }
         extract_obj(obj, TRUE);
       }
 
       return FALSE;
     }
 
-    if (item == 77)
+    if( item == 77 )
     {
-
-      if (tch != NULL && ch->in_room != tch->in_room && !grouped(ch, tch))
+      if( tch != NULL && ch->in_room != tch->in_room && !grouped(ch, tch) )
       {
-
         REMOVE_BIT(obj->extra_flags, ITEM_SECRET);
         obj->value[0] = 0;
         ClearObjEvents(obj);
 
+        // PHSDAM_NOREDUCE -> 5d5 damage total.
         dam = dice(5, 5);
-        dam = dam << 2;
 
-        act
-          ("Without warning, a hidden trap sends a flurry of tiny &+Lblack&n darts piercing $n's &+rflesh&n.",
-           FALSE, ch, obj, 0, TO_NOTVICT);
-        act
-          ("Without warning, a hidden trap sends a flurry of tiny &+Lblack&n darts piercing your &+rflesh&n.",
-           FALSE, ch, obj, 0, TO_CHAR);
+        act("Without warning, a hidden trap sends a flurry of tiny &+Lblack&n darts piercing $n's &+rflesh&n.",
+          FALSE, ch, obj, 0, TO_NOTVICT);
+        act("Without warning, a hidden trap sends a flurry of tiny &+Lblack&n darts piercing your &+rflesh&n.",
+          FALSE, ch, obj, 0, TO_CHAR);
 
-        GET_HIT(ch) -= dam;
+        melee_damage(tch, ch, dam, PHSDAM_NOREDUCE | PHSDAM_NOSHIELDS | PHSDAM_NOPOSITION | PHSDAM_NOENGAGE, 0);
 
         extract_obj(obj, TRUE);
       }
-
       return FALSE;
     }
 
@@ -13116,19 +13115,22 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
         ClearObjEvents(obj);
 
         if (number(0, 120) < GET_C_INT(ch))
-          act("You notice you just broke a &+Wthin string&n attached to $p!",
-              FALSE, ch, obj, 0, TO_CHAR);
-			  
-    memset(&af, 0, sizeof(af));
-	
-    af.type = TAG_CRIPPLED;
-    af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL ;
-    af.duration = 40;
-	affect_to_char(ch, &af);
-	    act("&+ROUCH!!&+y Without warning, a &+rrusty &+yclamp suddenly tears at your legs!&n", FALSE, ch, 0, 0, TO_CHAR);
-    act("$n &+ywinces in &+ragony &+yas a &+rrusty &+yclamp suddenly tears at their legs!&n", FALSE, ch, 0, 0, TO_ROOM);
-			int	numb = number(6, 10);
-			add_event(event_bleedproc, PULSE_VIOLENCE, ch, 0, 0, 0, &numb, sizeof(numb));
+        {
+          act("You notice you just broke a &+Wthin string&n attached to $p!", FALSE, ch, obj, 0, TO_CHAR);
+        }
+
+        memset(&af, 0, sizeof(af));
+
+        af.type = TAG_CRIPPLED;
+        af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL ;
+        af.duration = 40;
+        affect_to_char(ch, &af);
+        act("&+ROUCH!!&+y Without warning, a &+rrusty &+yclamp suddenly tears at your legs!&n", FALSE, ch, 0, 0, TO_CHAR);
+        act("$n &+ywinces in &+ragony &+yas a &+rrusty &+yclamp suddenly tears at their legs!&n", FALSE, ch, 0, 0, TO_ROOM);
+
+        // 3-7 * ~5 damage = 15-35 damage total.
+        int	numb = number(3, 7);
+        add_event(event_bleedproc, PULSE_VIOLENCE, tch, ch, 0, 0, &numb, sizeof(numb));
         extract_obj(obj, TRUE);
       }
      return FALSE;
@@ -13136,20 +13138,16 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
 
     if (item == 73)
     {
-
       if (tch != NULL && ch->in_room != tch->in_room && !grouped(ch, tch))
       {
-
         REMOVE_BIT(obj->extra_flags, ITEM_SECRET);
         obj->value[0] = 0;
         ClearObjEvents(obj);
 
-        act
-          ("Without warning, a hidden trap injects a large dose of &+gpoison&n into $n's &+rflesh&n.",
-           FALSE, ch, obj, 0, TO_NOTVICT);
-        act
-          ("Without warning, a hidden trap injects a large dose of &+gpoison&n into your &+rflesh&n.",
-           FALSE, ch, obj, 0, TO_CHAR);
+        act("Without warning, a hidden trap injects a large dose of &+gpoison&n into $n's &+rflesh&n.",
+          FALSE, ch, obj, 0, TO_NOTVICT);
+        act("Without warning, a hidden trap injects a large dose of &+gpoison&n into your &+rflesh&n.",
+          FALSE, ch, obj, 0, TO_CHAR);
 
         spell_poison(56, ch, 0, 0, ch, NULL);
 

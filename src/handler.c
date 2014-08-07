@@ -3070,22 +3070,28 @@ P_obj get_obj_in_list_vis(P_char ch, char *name, P_obj list)
   char     tmpname[MAX_STRING_LENGTH];
   char    *tmp;
 
-  if (!name || !*name)
+  if( !name || !*name )
     return (0);
 
   strcpy(tmpname, name);
   tmp = tmpname;
-  if (!(k = get_number(&tmp)))
+  if( !(k = get_number(&tmp)) )
+  {
     return (0);
-
+  }
   for (i = list, j = 1; i && (j <= k); i = i->next_content)
-    if (isname(tmp, i->name))
+  {
+    if( isname(tmp, i->name)
+      || (IS_PC(ch) && IS_TRUSTED(ch) && atoi(name) > 0 && atoi(name) == GET_OBJ_VNUM(i)) )
+    {
       if (CAN_SEE_OBJ(ch, i) || IS_NOSHOW(i))
       {
         if (j == k)
           return (i);
         j++;
       }
+    }
+  }
   return (0);
 }
 
@@ -3325,8 +3331,7 @@ P_obj create_money(int copper, int silver, int gold, int platinum)
  * which target was found.
  */
 
-int generic_find(char *arg, int bitvector, P_char ch, P_char * tar_ch,
-                 P_obj * tar_obj)
+int generic_find(char *arg, int bitvector, P_char ch, P_char * tar_ch, P_obj * tar_obj)
 {
   int      i;
   char     name[MAX_INPUT_LENGTH];
@@ -3346,19 +3351,30 @@ int generic_find(char *arg, int bitvector, P_char ch, P_char * tar_ch,
   /*
    * * Eliminate spaces and "ignore" words
    */
-  while (*arg && !found)
+  while( *arg && !found )
   {
-    for (; *arg == ' '; arg++) ;
+    while( *arg == ' ' )
+    {
+      ++arg;
+    }
 
-    for (i = 0; (name[i] = *(arg + i)) && (name[i] != ' '); i++) ;
+    for(i = 0; (name[i] = *(arg + i)) && (name[i] != ' '); i++)
+    {
+      ;
+    }
+
     name[i] = 0;
     arg += i;
-    if (search_block(name, ignore, TRUE) > -1)
+    if( search_block(name, ignore, TRUE) > -1 )
+    {
       found = TRUE;
+    }
   }
 
-  if (!name[0])
+  if( !name[0] )
+  {
     return (0);
+  }
 
 /*
    *tar_ch = 0;
@@ -3404,8 +3420,7 @@ int generic_find(char *arg, int bitvector, P_char ch, P_char * tar_ch,
   }
   if (IS_SET(bitvector, FIND_OBJ_ROOM) && world[ch->in_room].contents)
   {
-    if ((*tar_obj =
-         get_obj_in_list_vis(ch, name, world[ch->in_room].contents)))
+    if( (*tar_obj = get_obj_in_list_vis(ch, name, world[ch->in_room].contents)) )
     {
       return (FIND_OBJ_ROOM);
     }
