@@ -1187,7 +1187,7 @@ boots death incarnate deathdealer~
 &+LThis pair of &+Lb&+mo&+Lo&+mt&+Ls&+L awaits a deathdealer.&N~
 ~
 9 27 3 0 12 0 1024 65 0 87052377 0
-8 0 0 5 1 0 0 0
+10 0 0 5 1 0 0 0
 0 0 100 16 0 0 0
 E
 boots death incarnate deathdealer~
@@ -1196,9 +1196,9 @@ boots death incarnate deathdealer~
 &+windicating the &+mgr&+Lim reap&+mer&+w walking the earth.&N
 ~
 A
-18 8
+18 5
 A
-19 8
+19 5
 #87582
 mass great darkness lokpan dark~
 &+Lthe mass of darkness that was Lokpan&N~
