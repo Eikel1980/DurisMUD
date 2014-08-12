@@ -1044,32 +1044,30 @@ int teleporting_pool(P_obj obj, P_char ch, int cmd, char *arg)
 {
   int      to_room;
 
-  /*
-     Check for the periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
+  {
     return TRUE;
+  }
 
-  /*
-     Check to see if someone is trying to enter the pool
-   */
-
-  if (cmd == CMD_ENTER)
+  // Check to see if someone is trying to enter the pool
+  if( cmd == CMD_ENTER )
+  {
     return magic_pool(obj, ch, cmd, arg);
+  }
 
-  if (!ch)
+  if( !ch )
   {
 
     /*
        Random chance of 6%-first number that came to mind ;) of teleporting.
        This might be a bit much, change if needed.
      */
-    if (number(1, 250) > 15)
+    if( number(1, 250) > 15 )
+    {
       return FALSE;
+    }
 
-    /*
-       Randomly pick a room in the zone
-     */
+    // Randomly pick a room in the zone
     do
     {
       to_room = (number(zone_table[world[obj->loc.room].zone].real_bottom,
@@ -1078,67 +1076,60 @@ int teleporting_pool(P_obj obj, P_char ch, int cmd, char *arg)
     while (IS_SET(world[to_room].room_flags, PRIVATE) ||
            IS_SET(world[to_room].room_flags, NO_MOB));
 
-    act("$p &+Lslowly vanishes away into nothingness.&N", TRUE, NULL, obj,
-        NULL, TO_ROOM);
+    act("$p &+Lslowly vanishes away into nothingness.&N", TRUE, NULL, obj, NULL, TO_ROOM);
     obj_from_room(obj);
     obj_to_room(obj, to_room);
-    act("$p &+Lslowly forms in front of you.&N", TRUE, NULL, obj, NULL,
-        TO_ROOM);
+    act("$p &+Lslowly forms in front of you.&N", TRUE, NULL, obj, NULL, TO_ROOM);
     return TRUE;
   }
-  else
-    return FALSE;
+  return FALSE;
 }
 
 
 int teleporting_map_pool(P_obj obj, P_char ch, int cmd, char *arg)
 {
-  int      to_room;
+  int to_room;
 
-  /*
-     Check for the periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
-    return TRUE;
-
-  /*
-     Check to see if someone is trying to enter the pool
-   */
-
-  if (cmd == CMD_ENTER)
-    return magic_map_pool(obj, ch, cmd, arg);
-
-  if (!ch)
+  if( cmd == CMD_SET_PERIODIC )
   {
+    return TRUE;
+  }
 
+  if( cmd == CMD_ENTER )
+  {
+    return magic_map_pool(obj, ch, cmd, arg);
+  }
+
+  if( !ch )
+  {
     /*
        Random chance of 6%-first number that came to mind ;) of teleporting.
        This might be a bit much, change if needed.
      */
-    if (number(1, 250) > 15)
+    if( number(1, 250) > 15 )
+    {
       return FALSE;
+    }
 
-    /*
-       Randomly pick a room in the zone
-     */
+    // Randomly pick a room in the zone
     do
     {
       to_room = (number(zone_table[world[obj->loc.room].zone].real_bottom,
-                        zone_table[world[obj->loc.room].zone].real_top));
+        zone_table[world[obj->loc.room].zone].real_top));
     }
-    while (IS_SET(world[to_room].room_flags, PRIVATE) ||
-           IS_SET(world[to_room].room_flags, NO_MOB));
+    while( IS_SET(world[to_room].room_flags, PRIVATE)
+      || IS_SET(world[to_room].room_flags, NO_MOB) );
 
-    act("$p &+Lslowly vanishes away into nothingness.&N", TRUE, NULL, obj,
-        NULL, TO_ROOM);
+    act("$p &+Lslowly vanishes away into nothingness.&N", TRUE, NULL, obj, NULL, TO_ROOM);
     obj_from_room(obj);
     obj_to_room(obj, to_room);
-    act("$p &+Lslowly forms in front of you.&N", TRUE, NULL, obj, NULL,
-        TO_ROOM);
+    act("$p &+Lslowly forms in front of you.&N", TRUE, NULL, obj, NULL, TO_ROOM);
     return TRUE;
   }
   else
+  {
     return FALSE;
+  }
 }
 
 int ring_elemental_control(P_obj obj, P_char ch, int cmd, char *arg)

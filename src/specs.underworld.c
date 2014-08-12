@@ -1541,21 +1541,22 @@ int magic_pool(P_obj obj, P_char ch, int cmd, char *arg)
   int      dam = obj->value[1];
   char     Gbuf1[MAX_STRING_LENGTH];
 
-  /*
-     check for periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
+  {
     return FALSE;
+  }
 
-  if (!obj || !ch || !arg)
-    return (FALSE);
-
-  if (cmd != CMD_ENTER)
-    return (FALSE);
+  if( cmd != CMD_ENTER || !OBJ_ROOM(obj) || !IS_ALIVE(ch) || !arg )
+  {
+    return FALSE;
+  }
 
   one_argument(arg, Gbuf1);
-  if (!isname(Gbuf1, obj->name))
-    return (FALSE);
+  // If not the right portal..
+  if( obj != get_obj_in_list(Gbuf1, world[ch->in_room].contents) )
+  {
+    return FALSE;
+  }
 
   if (real_room(obj->value[0]) == NOWHERE)
   {
@@ -1594,64 +1595,61 @@ int magic_pool(P_obj obj, P_char ch, int cmd, char *arg)
   return (TRUE);
 }
 
-
+// For the gate to ardgral spell.
 int magic_map_pool(P_obj obj, P_char ch, int cmd, char *arg)
 {
   int      dam = obj->value[1];
   char     Gbuf1[MAX_STRING_LENGTH];
   int      target_room;
-  /*
-     check for periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
+
+  if( cmd == CMD_SET_PERIODIC )
+  {
     return FALSE;
+  }
 
-  if (!obj || !ch || !arg)
-    return (FALSE);
-
-  if (cmd != CMD_ENTER)
-    return (FALSE);
+  if( cmd != CMD_ENTER || !IS_ALIVE(ch) || !arg || !OBJ_ROOM(obj) )
+  {
+    return FALSE;
+  }
 
   one_argument(arg, Gbuf1);
-  if (!isname(Gbuf1, obj->name))
-    return (FALSE);
+  // If not the right portal..
+  if( obj != get_obj_in_list(Gbuf1, world[ch->in_room].contents) )
+  {
+    return FALSE;
+  }
 
   target_room = real_room(random_map_room());
 
-  while (world[target_room].sector_type == SECT_MOUNTAIN ||
-         world[target_room].sector_type == SECT_INSIDE ||
-         world[target_room].sector_type == SECT_OCEAN ) {
+  while( world[target_room].sector_type == SECT_MOUNTAIN
+    || world[target_room].sector_type == SECT_INSIDE
+    || world[target_room].sector_type == SECT_OCEAN )
+  {
     target_room = real_room(random_map_room());
   }
 
 
-  if (target_room == NOWHERE)
+  if( target_room == NOWHERE )
   {
-    send_to_char
-      ("Hmm...  Looks like it's busted.  Might wanna notify a god.\n", ch);
-    return (FALSE);
+    debug( "magic_map_pool: Target room is NOWHERE for char '%s'.", J_NAME(ch) );
+    send_to_char("Hmm...  Looks like it's busted.  Might wanna notify a god.\n", ch);
+    return FALSE;
   }
 
-  act("As you step into the $o, there is a blinding flash of light!", FALSE,
-      ch, obj, 0, TO_CHAR);
-  act
-    ("You are ripped through a dark and star-filled void, pain sears through",
-     FALSE, ch, obj, 0, TO_CHAR);
-  act("your body!  When you again open your eyes, you are elsewhere...",
-      FALSE, ch, obj, 0, TO_CHAR);
+  act("As you step into the $o, there is a blinding flash of light!", FALSE, ch, obj, 0, TO_CHAR);
+  act("You are ripped through a dark and star-filled void, pain sears through", FALSE, ch, obj, 0, TO_CHAR);
+  act("your body!  When you again open your eyes, you are elsewhere...", FALSE, ch, obj, 0, TO_CHAR);
   act("$n vanishes into the $o.", FALSE, ch, obj, 0, TO_ROOM);
 
-  if (!IS_TRUSTED(ch))
+  if( !IS_TRUSTED(ch) )
   {
-    if (GET_HIT(ch) > dam)
-      GET_HIT(ch) -= dam;
-    else
-      GET_HIT(ch) = 1;
+    // Tighter like this.
+    GET_HIT(ch) = (GET_HIT(ch) > dam) ? GET_HIT(ch) - dam : 1;
     StartRegen(ch, EVENT_HIT_REGEN);
   }
   teleport_to(ch, target_room, 0);
 
-  return (TRUE);
+  return TRUE;
 }
 
 int random_map_room()
