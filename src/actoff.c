@@ -1577,15 +1577,13 @@ void do_kill(P_char ch, char *argument, int cmd)
     raise(SIGSEGV);
   }
 
-  if(GET_LEVEL(ch) < MAXLVL ||
-    IS_NPC(ch) ||
-    ch->equipment[WIELD] ||
-    ch->equipment[SECONDARY_WEAPON])
+  if( GET_LEVEL(ch) < MINLVLIMMORTAL || IS_NPC(ch) || ch->equipment[WIELD] ||
+    ch->equipment[SECONDARY_WEAPON] )
   {
     do_hit(ch, argument, CMD_HIT);
     return;
   }
-  
+
   one_argument(argument, Gbuf1);
 
   if(!*Gbuf1)
