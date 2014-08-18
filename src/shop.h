@@ -1,13 +1,12 @@
 /*
  * ***************************************************************************
- * *  File: shop.h                                             Part of Duris 
- * *  Usage: Defines and structs for handling shops and shopkeepers.                       
- * *  Copyright  1990, 1991 - see 'license.doc' for complete information.      
- * *  Copyright 1994 - 2008 - Duris Systems Ltd.                             
+ * *  File: shop.h                                             Part of Duris
+ * *  Usage: Defines and structs for handling shops and shopkeepers.
+ * *  Copyright  1990, 1991 - see 'license.doc' for complete information.
+ * *  Copyright 1994 - 2008 - Duris Systems Ltd.
  * ***************************************************************************
  */
 
-#define NOTHING 0
 #define SHOP_FUNC(i)         (shop_index[(i)].func)
 #define SHOP_NUM(i)   (shop_index[(i)].virtual)
 #define SHOP_KEEPER(i)    (shop_index[(i)].keeper)
@@ -32,9 +31,7 @@
 #define MSG_CANT_KILL_KEEPER  "Get out of here before I call the guards!"
 #define BUY_TYPE(i)   ((i).type)
 #define BUY_WORD(i)   ((i).keywords)
-#define MAX_SHOP_OBJ  100	/*
-				 * "Soft" maximum for list maximums 
-				 */
+#define MAX_SHOP_OBJ  100 // "Soft" maximum for list maximums
 #define END_OF(buffer)    ((buffer) + strlen((buffer)))
 #define S_DATA(stack, index)  ((stack)->data[(index)])
 #define S_LEN(stack)    ((stack)->len)

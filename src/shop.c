@@ -60,7 +60,7 @@ int topp(struct stack_data *stack)
   if (S_LEN(stack) > 0)
     return (S_DATA(stack, S_LEN(stack) - 1));
   else
-    return (NOTHING);
+    return 0;
 }
 
 int pop(struct stack_data *stack)
@@ -93,7 +93,7 @@ int find_oper_num(char token)
   for (i = 0; i <= MAX_OPER; i++)
     if (strchr(operator_str[i], token))
       return (i);
-  return (NOTHING);
+  return 0;
 }
 
 int evaluate_expression(P_obj obj, char *expr)
@@ -113,10 +113,10 @@ int evaluate_expression(P_obj obj, char *expr)
       ptr++;
     else
     {
-      if ((temp = find_oper_num(*ptr)) == NOTHING)
+      if( (temp = find_oper_num(*ptr)) == 0 )
       {
         end = ptr;
-        while (*ptr && !isspace(*ptr) && (find_oper_num(*ptr) == NOTHING))
+        while( *ptr && !isspace(*ptr) && (find_oper_num(*ptr) == 0) )
           ptr++;
         strncpy(name, end, (unsigned) (ptr - end));
         name[ptr - end] = 0;
@@ -150,10 +150,10 @@ int evaluate_expression(P_obj obj, char *expr)
       }
     }
   }
-  while (topp(&ops) != NOTHING)
+  while( topp(&ops) != 0 )
     evaluate_operation(&ops, &vals);
   temp = pop(&vals);
-  if (topp(&vals) != NOTHING)
+  if( topp(&vals) != 0 )
   {
     logit(LOG_DEBUG, "Extra operands left on shop keyword expression stack");
     return (FALSE);
@@ -360,7 +360,7 @@ int trade_with(P_obj item, int shop_nr, char repairing)
       IS_OBJ_STAT(item, ITEM_TRANSIENT))
     return (OBJECT_NOTOK);
 
-  for (counter = 0; SHOP_BUYTYPE(shop_nr, counter) != NOTHING; counter++)
+  for (counter = 0; SHOP_BUYTYPE(shop_nr, counter) != 0; counter++)
   {
     if (SHOP_BUYTYPE(shop_nr, counter) == (item)->type)
     {
@@ -1392,39 +1392,34 @@ int shop_keeper(P_char keeper, P_char ch, int cmd, char *arg)
   return (FALSE);
 }
 
+// Returns 1 iff there's an error, and 0 if it's ok.
 int add_to_list(struct shop_buy_data *list, int type, int *len, int *val)
 {
-  if (*val >= 0)
-    if (*len < MAX_SHOP_OBJ)
+  if( *val > 0 )
+  {
+    if( *len < MAX_TRADE )
     {
-      if (type == LIST_PRODUCE)
+      if( type == LIST_PRODUCE )
+      {
         *val = real_object(*val);
-      if (*val >= 0)
+      }
+      if( *val >= 0 )
       {
         BUY_TYPE(list[*len]) = *val;
         BUY_WORD(list[(*len)++]) = 0;
       }
       else
+      {
         *val = 0;
-      return (FALSE);
+      }
+      return 0;
     }
     else
-      return (TRUE);
-  return (FALSE);
-}
-
-int end_read_list(struct shop_buy_data *list, int len, int error)
-{
-  char     buf[MAX_STRING_LENGTH];
-
-  if (error)
-  {
-    sprintf(buf, "Raise MAX_SHOP_OBJ constant in shop.h to %d", len + error);
-    logit(LOG_DEBUG, buf);
+    {
+      return 1;
+    }
   }
-  BUY_WORD(list[len]) = 0;
-  BUY_TYPE(list[len++]) = NOTHING;
-  return (len);
+  return 0;
 }
 
 int read_type_list(FILE * shop_f, struct shop_buy_data *list, int max)
@@ -1435,7 +1430,9 @@ int read_type_list(FILE * shop_f, struct shop_buy_data *list, int max)
   bzero(buf, MAX_STRING_LENGTH);
   do
   {
+    // Read a line.
     fgets( buf, MAX_STRING_LENGTH - 1, shop_f );
+    // Put a 0 (?) at the end of the line/at the ;.
     if( (ptr = strchr(buf, ';')) != NULL )
     {
       *ptr = 0;
@@ -1444,8 +1441,10 @@ int read_type_list(FILE * shop_f, struct shop_buy_data *list, int max)
     {
       *(END_OF(buf) - 1) = 0;
     }
-
-    for( i = 0, num = NOTHING; *item_types[i] != '\n'; i++ )
+    num = 0;
+    // Walk through the list of item_types (WEAPON/SCROLL/etc).
+/* This seems to do nothing, as we list shop types by # not name ..
+    for( i = 0; *item_types[i] != '\n'; i++ )
     {
       if( !strn_cmp(item_types[i], buf, strlen(item_types[i])) )
       {
@@ -1454,24 +1453,26 @@ int read_type_list(FILE * shop_f, struct shop_buy_data *list, int max)
         break;
       }
     }
+*/
+
     ptr = buf;
-    if( num == NOTHING )
+    if( num == 0 )
     {
       sscanf(buf, "%d", &num);
-      while (!isdigit(*ptr))
+      while( !isdigit(*ptr) )
       {
         ptr++;
       }
-      while (isdigit(*ptr))
+      while( isdigit(*ptr) )
       {
         ptr++;
       }
     }
-    while (isspace(*ptr))
+    while( isspace(*ptr) )
     {
       ptr++;
     }
-    while (isspace(*(END_OF(ptr) - 1)))
+    while( isspace(*(END_OF(ptr) - 1)) )
     {
       *(END_OF(ptr) - 1) = 0;
     }
@@ -1482,7 +1483,16 @@ int read_type_list(FILE * shop_f, struct shop_buy_data *list, int max)
     }
   }
   while( num > 0 );
-  return end_read_list(list, len, error);
+
+  if( error )
+  {
+    sprintf(buf, "Raise MAX_TRADE constant in shop.h to %d", len + error);
+    logit(LOG_DEBUG, buf);
+  }
+
+  BUY_WORD(list[len]) = 0;
+  BUY_TYPE(list[len++]) = 0;
+  return len;
 }
 
 /*
@@ -1541,7 +1551,7 @@ void boot_the_shops(void)
       for (count = 0; count < MAX_PROD; count++)
       {
         fscanf(shop_f, "%d \n", &temp);
-        if (temp > 0)
+        if( temp > 0 )
         {
           shop_index[number_of_shops].producing[count] = real_object(temp);
         }
@@ -1549,6 +1559,17 @@ void boot_the_shops(void)
         {
           shop_index[number_of_shops].number_items_produced = count;
           break;
+        }
+      }
+      // Here's a bug catch.. need to wipe 'extra' objects in sell list over max.
+      if( count == MAX_PROD && temp > 0 )
+      {
+        shop_index[number_of_shops].number_items_produced = MAX_PROD;
+        fscanf(shop_f, "%d \n", &temp);
+        while( temp > 0 )
+        {
+          fprintf(stderr, "boot_the_shops: Shop '%s' has too many items: Item %d.\n\r", buf, temp);
+          fscanf(shop_f, "%d \n", &temp);
         }
       }
 
@@ -1601,7 +1622,6 @@ void boot_the_shops(void)
        * now, the reason for t_buy and t_sell, if we had to 'adjust' the
        * buy/sell %, then we yell about it
        */
-// PENIS: This is a lotta crap heheh.. needs fixing.
       if ((shop_index[number_of_shops].sell_percent != t_sell) ||
           (shop_index[number_of_shops].buy_percent != t_buy))
       {
@@ -1612,7 +1632,6 @@ void boot_the_shops(void)
       /*
        * Load in the types that this shop trades in
        */
-// PENIS: Something funky here..
       temp = read_type_list(shop_f, list, MAX_TRADE);
       CREATE(shop_index[number_of_shops].type, shop_buy_data, (unsigned) temp, MEM_TAG_SHOPBUY);
       for( count = 0; count < temp; count++ )
@@ -1637,6 +1656,7 @@ void boot_the_shops(void)
       shop_index[number_of_shops].temper2 = tmp;
       fscanf(shop_f, "%d \n", &shop_index[number_of_shops].keeper);
 
+      //logit(LOG_DEBUG, "Loaded shop '%d' list..", shop_index[number_of_shops].keeper); For debugging.
       shop_index[number_of_shops].keeper =
         real_mobile(shop_index[number_of_shops].keeper);
 

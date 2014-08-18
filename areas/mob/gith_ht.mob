@@ -8,8 +8,8 @@ githyanki anti-paladin guard knight~
 &+Llooks like he could be a formidable opponent, and anyone foolish enough to
 &+Lmess with him, would find his head rolling along the ground.
 ~
-1174411338 33554776 4194319 268468280 0 0 0 -1000 S
-GI 0 16 -1
+1174411338 33554776 4194319 0 268468280 0 0 0 -1000 S
+GI 0 16 0 -1
 50 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -22,8 +22,8 @@ wraith githzerai~
 &+Land it shoots a glare at you with its feral eyes. It stands about six feet
 &+Ltall and looks extreamly dangerous.
 ~
-2058 24 0 268435498 0 0 0 -1000 S
-U 0 512 -1
+2058 24 0 0 268435498 0 0 0 -1000 S
+U 0 512 0 -1
 35 6 -12 35d56+525 4d6+7
 0.0.0.0 45360
 8 8 0
@@ -37,8 +37,8 @@ spectre human~
 &+Lmovement. He looks however to be very dangerous, and one would be foolish to
 &+Lmess with him.
 ~
-2058 24 0 268959800 0 0 0 -1000 S
-U 0 8192 -1
+2058 24 0 0 268959800 0 0 0 -1000 S
+U 0 8192 0 -1
 35 6 -12 35d70+525 4d6+7
 0.0.0.0 45360
 8 8 0
@@ -52,8 +52,8 @@ golem flesh~
 &+Llooks as if it may fall apart at any moment, there is no doubt that this
 &+Lcreature can handle any situation that may arise.
 ~
-78 0 0 268435456 0 0 0 -1000 S
-OG 0 0 -1
+78 0 0 0 268435456 0 0 0 -1000 S
+OG 0 0 0 -1
 35 6 -12 35d70+525 4d6+7
 9.9.1.2 45360
 8 8 0
@@ -67,8 +67,8 @@ mage high~
 &+Lgithyanki, and his eyes tell you that he would destroy you with not so much
 &+Las a twitch.
 ~
-100698122 0 0 0 0 0 0 -1000 S
-GI 0 512 -1
+100698122 0 0 0 0 0 0 0 -1000 S
+GI 0 512 0 -1
 31 13 35 20d24+100 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -81,8 +81,8 @@ sorcerer young~
 &+Lsorcerer. He looks eager to learn, but is still very weak, but could, in time
 &+Lprove to be a powerful mage.
 ~
-67110922 0 0 0 0 0 0 -1000 S
-GI 0 512 -1
+67110922 0 0 0 0 0 0 0 -1000 S
+GI 0 512 0 -1
 16 13 48 16d24+80 3d4+2
 8.6.2.0 7776
 8 8 1
@@ -96,8 +96,8 @@ lord githyanki~
 &+Lbuild. He is a deadly opponent, but his banded mail and two-handed sword make
 &+Lhim even more deadly.
 ~
-1174407178 24 0 268435480 2048 0 0 -1000 S
-GI 0 16 -1
+1174407178 24 0 0 268435480 2048 0 0 -1000 S
+GI 0 16 0 -1
 59 -7 -128 59d143+6195 7d6+35
 4.5.9.6 238950
 8 8 1
@@ -110,8 +110,8 @@ warrior githyanki~
 &+gfortress. He stands average height for a githyanki, and wears the standard
 &+gbanded mail of the githyanki.
 ~
-33556490 64 0 16 0 0 0 -1000 S
-GI 0 1 -1
+33556490 64 0 0 16 0 0 0 -1000 S
+GI 0 1 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -124,8 +124,8 @@ warrior githyanki~
 &+cfor invasions into the githyanki fortress. His piercing eyes regard you
 &+cbriefly, and he goes back to his watch.
 ~
-1174407246 64 0 16 0 0 0 -1000 S
-GI 0 1 -1
+1174407246 64 0 0 16 0 0 0 -1000 S
+GI 0 1 0 -1
 45 -1 -69 45d107+2025 6d6+12
 5.9.8.4 109350
 8 8 1
@@ -137,8 +137,8 @@ commoner githyanki~
   Typical of the githyanki, this commoner stands about 5 feet 7, and is of
 medium build. He glares at you briefly and goes back to his business.
 ~
-1073743884 0 0 16 0 0 0 -1000 S
-GI 0 1 -1
+1073743884 0 0 0 16 0 0 0 -1000 S
+GI 0 1 0 -1
 10 18 67 10d18+35 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -151,8 +151,8 @@ psionicist githyanki~
 &+gon his surroundings for anyone that would do harm to him and the guild's
 &+ginhabitants.
 ~
-67108874 0 0 268435464 0 0 0 -1000 S
-GI 0 4 -1
+67108874 0 0 0 268435464 0 0 0 -1000 S
+GI 0 4 0 -1
 40 2 -28 40d88+880 4d7+10
 3.3.3.3 51840
 8 8 1
@@ -165,8 +165,8 @@ psionicist githyanki~
 &+Gregards you with a bit of disdain, as he knows he's the master's favorite
 &+Gpupil.
 ~
-2058 88 0 268435464 0 0 0 -1000 S
-GI 0 4 -1
+2058 88 0 0 268435464 0 0 0 -1000 S
+GI 0 4 0 -1
 17 13 45 17d33+102 3d4+2
 8.6.2.0 8262
 8 8 1
@@ -179,8 +179,8 @@ master psionicist~
 &+Lyou with extremely intelligent eyes. Although she couldn't win a physical
 &+Lbattle, her mental abilities could overwhelm any opponent.
 ~
-3321923594 88 0 24 0 0 0 -1000 S
-GI 0 4 -1
+3321923594 88 0 0 24 0 0 0 -1000 S
+GI 0 4 0 -1
 50 -3 -95 50d110+2700 6d6+25
 0.3.1.5 121500
 8 8 2
@@ -192,8 +192,8 @@ master necromancer~
 &+L   This sickly looking githyanki reeks of chemicals and solvents. He looks at
 &+Lyou with a twisted grin, and turns back to preparing another corpse to raise.
 ~
-1073776650 72 0 268435464 0 0 0 -1000 S
-GI 0 1024 -1
+1073776650 72 0 0 268435464 0 0 0 -1000 S
+GI 0 1024 0 -1
 31 13 35 20d24+100 3d4+2
 0.9.3.0 9720
 8 8 1
@@ -206,8 +206,8 @@ knight githyanki~
 &+Lyet can jump into action at any moment. He wears the standard banded mail,
 &+Land a religious pendant hangs around his neck.
 ~
-1073743882 72 0 24 0 0 0 -1000 S
-GI 0 16 -1
+1073743882 72 0 0 24 0 0 0 -1000 S
+GI 0 16 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -221,8 +221,8 @@ master anti-paladin knight~
 &+Lbeat most warriors in combat, and come up dead even with the master warrior.
 &+LOne would be wise to steer clear of this man.
 ~
-1073776650 72 0 8 0 0 0 -1000 S
-GI 0 16 -1
+1073776650 72 0 0 8 0 0 0 -1000 S
+GI 0 16 0 -1
 50 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -235,8 +235,8 @@ warrior~
 &+Lguarding the Warriors Guild. He is very muscular, and looks to be in good
 &+Lhealth.
 ~
-1073743882 64 0 24 0 0 0 -1000 S
-GI 0 1 -1
+1073743882 64 0 0 24 0 0 0 -1000 S
+GI 0 1 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -250,8 +250,8 @@ master warrior~
 &+Lgithyanki standards, and his eyes regard you with great intelligence. He
 &+Lglances at you briefly and goes back to his planning.
 ~
-1140885514 64 0 268435480 0 0 0 -1000 S
-GI 0 1 -1
+1140885514 64 0 0 268435480 0 0 0 -1000 S
+GI 0 1 0 -1
 50 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -264,8 +264,8 @@ anti-paladin githyanki~
 &+Lyet can jump into action at any moment. He wears the standard banded mail,
 &+Land wears a religious pendant around his neck.
 ~
-4106 64 0 16 0 0 0 -1000 S
-GI 0 16 -1
+4106 64 0 0 16 0 0 0 -1000 S
+GI 0 16 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -278,8 +278,8 @@ warrior~
 &+Lguarding the warriors guild. He is very muscular, and looks to be in good
 &+Lhealth.
 ~
-10 0 0 16 0 0 0 -1000 S
-GI 0 1 -1
+10 0 0 0 16 0 0 0 -1000 S
+GI 0 1 0 -1
 35 6 -12 35d83+595 4d6+7
 9.9.1.2 45360
 8 8 1
@@ -291,8 +291,8 @@ commoner githyanki~
 &+L  Typical of the githyanki, this commoner stands about 5 feet 7, and is of
 &+Lmedium build. He glares at you briefly and goes back to his business.
 ~
-1073743950 0 0 268435480 0 0 0 -1000 S
-GI 0 0 -1
+1073743950 0 0 0 268435480 0 0 0 -1000 S
+GI 0 0 0 -1
 10 18 67 10d18+35 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -306,8 +306,8 @@ elder githyanki~
 &+Lwrinkled, he has seen and done many things, and would still prove to be a
 &+Ldifficult foe.
 ~
-1140852810 64 0 268435480 0 0 0 -1000 S
-GI 0 512 -1
+1140852810 64 0 0 268435480 0 0 0 -1000 S
+GI 0 512 0 -1
 50 -3 -95 50d80+2650 6d6+25
 0.3.1.5 121500
 8 8 1
@@ -320,8 +320,8 @@ young githyanki~
 &+Lthe younger githyanki, he instead listens to the elder githyanki for a bit
 &+Lof advice for when he gets older.
 ~
-67110922 64 0 268435464 0 0 0 -1000 S
-GI 0 1 -1
+67110922 64 0 0 268435464 0 0 0 -1000 S
+GI 0 1 0 -1
 25 11 19 25d47+250 3d5+3
 6.2.6.1 22275
 8 8 0
@@ -334,8 +334,8 @@ guard~
 &+Ltake from the prime plane. Not as strong as warriors and anti-paladins, but
 &+Lstrong enough to watch over the prisoners.
 ~
-1140852810 64 0 8 0 0 0 -1000 S
-GI 0 1 -1
+1140852810 64 0 0 8 0 0 0 -1000 S
+GI 0 1 0 -1
 15 15 51 15d27+90 2d5+2
 7.6.2.0 7290
 8 8 1
@@ -348,8 +348,8 @@ A &+CHuman &nfrom &+MTharnadia&n rests here, looking pitiful.
 &+LFrail and weak, she seems to understand her plight, and doesn't put much of
 &+La struggle.
 ~
-10 0 0 0 0 0 0 -1000 S
-PH 0 1 -1
+10 0 0 0 0 0 0 0 -1000 S
+PH 0 1 0 -1
 5 20 83 5d17+27 1d5+0
 3.1.0.0 648
 5 5 2
@@ -361,8 +361,8 @@ A &+mDrow Elf&n stands here chained to the wall.
 &+L   Fiesty still after being captured, this drow elf looks like he could put
 &+Lup a fight.
 ~
-10 0 0 0 0 0 0 -1000 S
-PL 0 32 -1
+10 0 0 0 0 0 0 0 -1000 S
+PL 0 32 0 -1
 16 13 48 16d33+96 3d4+2
 8.6.2.0 7776
 8 8 2
@@ -374,8 +374,8 @@ A &+GGith&+yzerai &nfights against his captors.
   Looking much like a githyanki, he stands here wrestling with his bonds in
 order to free himself. He looks at you with pure hatred.
 ~
-10 0 0 0 0 0 0 -1000 S
-GI 0 16 -1
+10 0 0 0 0 0 0 0 -1000 S
+GI 0 16 0 -1
 10 18 67 10d21+55 2d3+1
 5.3.0.0 1296
 8 8 1
@@ -387,8 +387,8 @@ A &+RGnome&n from Ashrumite Village stands here, looking brave.
 &+L   Looking extremely brave for his diminutive size, he looks at you and spits
 &+Lin your face in an act of defiance.
 ~
-10 0 0 0 0 0 0 -1000 S
-PG 0 512 -1
+10 0 0 0 0 0 0 0 -1000 S
+PG 0 512 0 -1
 21 11 32 21d32+168 3d5+3
 4.0.5.0 18711
 8 8 2
@@ -402,8 +402,8 @@ the githyanki lord from any person that would do harm to his ward. He stands
 approximately six feet tall, and is thin. However, one would be wise to steer
 clear of this knight.
 ~
-100665354 72 0 268501176 262154 0 0 -1000 S
-GI 0 16 -1
+100665354 72 0 0 268501176 262154 0 0 -1000 S
+GI 0 16 0 -1
 51 -5 -98 51d131+4335 7d6+30
 6.9.4.6 206550
 8 8 1
@@ -421,8 +421,8 @@ minstrel bard~
 &+mand one can almost see the scenes he sings about so very eloquently.
 &+mThis bard is a master of his craft, indeed!
 ~
-1107298376 64 0 524312 2048 0 0 -1000 S
-GI 0 32768 3
+1107298376 64 0 0 524312 2048 0 0 -1000 S
+GI 0 32768 0 3
 51 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -435,8 +435,8 @@ bard student~
 &+mnoise of the practice room swirls around him.  He peers down at his paper,
 &+mquill poised as he prepares to inscribe another line of music.
 ~
-2122 64 0 524320 0 0 0 -1000 S
-GI 0 32768 3
+2122 64 0 0 524320 0 0 0 -1000 S
+GI 0 32768 0 3
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -449,8 +449,8 @@ young bard student~
 &+mhe watches the activity around him.  He's brand new to the craft, his skills
 &+mas yet untested, yet his will to learn is obvious in the set of his shoulders.
 ~
-2186 0 0 0 0 0 0 -1000 S
-GI 0 32768 3
+2186 0 0 0 0 0 0 0 -1000 S
+GI 0 32768 0 3
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -462,8 +462,8 @@ bard apprentice~
 &+m     This young man has apprenticed himself to the Master Bard, and works
 &+mhard to improve his skills for the Master's approval.
 ~
-2186 64 0 268435504 0 0 0 -1000 S
-GI 0 32768 3
+2186 64 0 0 268435504 0 0 0 -1000 S
+GI 0 32768 0 3
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -478,8 +478,8 @@ master bard~
 &+mresounds through the room, and the balalaika in his hand has seen many
 &+myears' use in his travels through the realms.
 ~
-1107331150 64 0 268959800 2056 0 0 -1000 S
-GI 0 32768 3
+1107331150 64 0 0 268959800 2056 0 0 -1000 S
+GI 0 32768 0 3
 31 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -493,8 +493,8 @@ lazy guard~
 &+minstead continue their conversation about the fortress' Lord's latest
 &+mraiding trips to the prime plane.
 ~
-33556622 64 0 268435496 0 0 0 -1000 S
-GI 0 32769 3
+33556622 64 0 0 268435496 0 0 0 -1000 S
+GI 0 32769 0 3
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -506,8 +506,8 @@ young shadow daemon~
 &+L     A young shadow daemon, captured and brought here as future breeding
 &+Lstock, struggles to escape the corral surrounding it.
 ~
-2186 1 0 32 0 0 0 -1000 S
-AC 0 513 3
+2186 1 0 0 32 0 0 0 -1000 S
+AC 0 513 0 3
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -519,8 +519,8 @@ adolescent smoke elemental~
 &+L     This adolescent smoke elemental floats serenely around the corral until
 &+Lit catches sight of you.  Then..... it charges to attack!
 ~
-2058 1 0 0 0 0 0 -1000 S
-EE 0 1 4
+2058 1 0 0 0 0 0 0 -1000 S
+EE 0 1 0 4
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -533,8 +533,8 @@ juvenile succubus~
 &+rfor any opportunity to practice her skills.  Perhaps you would be good for
 &+rthat... ?
 ~
-1073743946 0 0 0 0 0 0 -1000 S
-X 0 1 3
+1073743946 0 0 0 0 0 0 0 -1000 S
+X 0 1 0 3
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -546,8 +546,8 @@ shadow daemon~
 &+L     This shadow daemon has escaped its pen, running wildly now through
 &+Lthe fortress as it searches for a way to the Astral Plane.
 ~
-2248 1 0 268435456 0 0 0 -1000 S
-AC 0 513 4
+2248 1 0 0 268435456 0 0 0 -1000 S
+AC 0 513 0 4
 15 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -559,8 +559,8 @@ storekeeper shopkeeper herkol~
 &+L     Herkol stands in his store, fiddling with anything that appears out
 &+Lof place as he waits for you to decide on your purchases.
 ~
-33556554 64 0 268435512 0 0 0 -1000 S
-PF 0 48 -1
+33556554 64 0 0 268435512 0 0 0 -1000 S
+PF 0 48 0 -1
 59 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -573,8 +573,8 @@ mewling shadow daemon cub~
 &+Lwarmth and sustenance.  One could guess that it is only a few days old
 &+Lfrom its tiny size and appearance.
 ~
-138 64 0 0 0 0 0 -1000 S
-AC 0 1 2
+138 64 0 0 0 0 0 0 -1000 S
+AC 0 1 0 2
 5 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -587,8 +587,8 @@ infant succubus~
 &+raround the breeding pen.  Her hair is still downy, features not yet formed
 &+rinto the alluring and seductive expressions that come with maturity.
 ~
-2058 0 0 0 0 0 0 -1000 S
-AC 0 1 2
+2058 0 0 0 0 0 0 0 -1000 S
+AC 0 1 0 2
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -601,8 +601,8 @@ dour receptionist githyanki~
 &+cmore wrinkled face than most others of his kind.  He barely responds as
 &+cyou ask for a room.
 ~
-2058 0 0 268435496 0 0 0 -1000 S
-GI 0 1 3
+2058 0 0 0 268435496 0 0 0 -1000 S
+GI 0 1 0 3
 20 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -614,8 +614,8 @@ shadow daemon~
 &+L     This shadow daemon has escaped its pen, running wildly now through
 &+Lthe fortress as it searches for a way to the Astral Plane.
 ~
-2248 1 0 268435456 0 0 0 -1000 S
-AC 0 513 4
+2248 1 0 0 268435456 0 0 0 -1000 S
+AC 0 513 0 4
 3 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 0
@@ -627,8 +627,8 @@ young githyanki trainee~
 &+c     The trainee holds his weapon awkwardly, glad that he is simply here
 &+cfor instruction in warcraft, not in the art of torture.&N
 ~
-10 64 0 0 0 0 0 -1000 S
-GI 0 1 3
+10 64 0 0 0 0 0 0 -1000 S
+GI 0 1 0 3
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -642,8 +642,8 @@ githyanki instructor~
 &+Lit is obvious that he also practices the art of torture.  One look at his
 &+Lvictims proves his skill.
 ~
-10 0 0 268435464 0 0 0 -1000 S
-GI 0 4096 4
+10 0 0 0 268435464 0 0 0 -1000 S
+GI 0 4096 0 4
 40 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -657,8 +657,8 @@ barbarian~
 &+Bfrom him, by force if necessary.  Such force is obvious by the blood that
 &+Bsmears him from head to toe.
 ~
-72 0 0 268451840 0 0 0 0 S
-PB 0 256 4
+72 0 0 0 268451840 0 0 0 0 S
+PB 0 256 0 4
 12 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -672,8 +672,8 @@ ogre~
 &+bHis hide is still unmarked, and only his wrists and ankles show signs of
 &+bharm by the thick iron chains holding him to the wall.
 ~
-74 0 0 0 0 0 0 -1000 S
-PO 0 1 5
+74 0 0 0 0 0 0 0 -1000 S
+PO 0 1 0 5
 10 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -687,8 +687,8 @@ grey elf~
 &+cpractice their dagger-craft on, once they figured out she had no information
 &+cto impart.
 ~
-74 0 0 0 0 0 0 1000 S
-PE 0 512 3
+74 0 0 0 0 0 0 0 1000 S
+PE 0 512 0 3
 7 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 2
@@ -702,8 +702,8 @@ lazy guard reaver~
 &+winstead continue their conversation about the fortress' Lord's latest
 &+wraiding trips to the prime plane.
 ~
-33556622 64 0 268435496 0 0 0 -1000 S
-GI 0 2097152 3
+33556622 64 0 0 268435496 0 0 0 -1000 S
+GI 0 2097152 0 3
 50 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -718,8 +718,8 @@ githyanki reaver student~
 &+Ltesting criteria, or simply terrified of taking place in the raids on the
 &+Lprime and limbo plane.
 ~
-1073743946 0 0 0 0 0 0 -1000 S
-gi 19 2097152 -1
+1073743946 0 0 0 0 0 0 0 -1000 S
+gi 19 2097152 0 -1
 26 0 0 1d1+1 1d1+1
 0.0.0.0 0
 8 8 1
@@ -733,8 +733,8 @@ master reaver githyanki~
 &+Llength of his face, and one of his eyeballs is a pallid white. He eyes
 &+Lyou with scrutiny as you approach.
 ~
-1140885514 64 0 268435480 0 0 0 -1000 S
-GI 0 2097152 -1
+1140885514 64 0 0 268435480 0 0 0 -1000 S
+GI 0 2097152 0 -1
 51 -3 -95 50d119+2750 6d6+25
 0.3.1.5 121500
 8 8 1

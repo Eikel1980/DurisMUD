@@ -2287,7 +2287,6 @@ void shopping_kill(char *arg, P_char ch, P_char keeper, int shop_nr);
 void shopping_repair(char *arg, P_char ch, P_char keeper, int shop_nr);
 int shop_keeper(P_char keeper, P_char ch, int cmd, char *arg);
 int add_to_list(struct shop_buy_data *list, int type, int *len, int *val);
-int end_read_list(struct shop_buy_data *list, int len, int error);
 int read_type_list(FILE *shop_f, struct shop_buy_data *list, int max);
 void boot_the_shops(void);
 void assign_the_shopkeepers(void);
