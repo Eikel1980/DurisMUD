@@ -6854,6 +6854,12 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   wpn_skill_num = required_weapon_skill(weapon);
   wpn_skill = (IS_PC(ch) || IS_AFFECTED(ch, AFF_CHARM)) ?
     GET_CHAR_SKILL(ch, wpn_skill_num) : MIN(100, GET_LEVEL(ch) * 2);
+  // Thieves only get 1h slash for shortswords.
+  if( wpn_skill_num == SKILL_1H_SLASHING && GET_SPEC(ch, CLASS_ROGUE, SPEC_THIEF)
+    && weapon->value[0] != WEAPON_SHORTSWORD )
+  {
+    wpn_skill = 0;
+  }
   to_hit = chance_to_hit(ch, victim, wpn_skill, weapon);
 
   diceroll = number(1, 100);
@@ -6881,10 +6887,11 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   {
     sic = -1;
   }
-  else if( diceroll < 96 ) //fumble
+  else if( diceroll < 96 )
   {
     sic = 0;
   }
+  // Fumble
   else
   {
     sic = 1;
@@ -6908,18 +6915,20 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
 
   wpn_skill = BOUNDED(GET_LEVEL(ch) / 2, wpn_skill, 95);
 
+  // Crit to miss if they fail a weaponskill + luck check
   if( sic == -1 && number(30, 101) > wpn_skill + (GET_C_LUK(ch) / 4) &&
     !GET_CLASS(ch, CLASS_MONK) )
   {
     sic = 0;
   }
+  // Fumble to miss if they make a weaponskill + agi check.
   if( sic == 1 && number(1, 101) <= wpn_skill + (GET_C_AGI(ch) / 2) )
   {
     sic = 0;
   }
 
+  // Quickstep stops crits if victim can respond
   bool bIsQuickStepMiss = FALSE;
-
   if( sic == -1 && !IS_AFFECTED2(victim, AFF2_STUNNED)
     && !IS_IMMOBILE(victim)
     && (notch_skill(victim, SKILL_QUICK_STEP, get_property("skill.notch.criticalAttack", 10))

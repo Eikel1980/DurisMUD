@@ -4245,9 +4245,8 @@ int wear(P_char ch, P_obj obj_object, int keyword, int showit)
     }
     else
     {
-      if (!ch->equipment[HOLD] || !ch->equipment[WIELD])
-        equip_char(ch, obj_object, ch->equipment[HOLD] ? WIELD : HOLD,
-                   !showit);
+      if( !ch->equipment[HOLD] || !ch->equipment[WIELD] )
+        equip_char(ch, obj_object, ch->equipment[HOLD] ? WIELD : HOLD, !showit);
       else
       {
         obj_to_char(obj_object, ch);
@@ -4805,8 +4804,8 @@ void do_grab(P_char ch, char *argument, int cmd)
     {
      if (obj_index[obj_object->R_num].virtual_number == 400218 && IS_MULTICLASS_PC(ch))
       {
-	send_to_char("&nThe power of this item is too great for a multiclassed character!&n\r\n", ch);
-	return;
+        send_to_char("&nThe power of this item is too great for a multiclassed character!&n\r\n", ch);
+        return;
       }
       if(IS_OBJ_STAT2(obj_object, ITEM2_SOULBIND) &&
       !isname(GET_NAME(ch), obj_object->name))
