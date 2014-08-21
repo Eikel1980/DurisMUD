@@ -1079,7 +1079,7 @@ int parse_boon_args(P_char ch, BoonData *bdata, char *argument)
     if (bdata->option == BOPT_RACE)
     {
       argument = setbit_parseArgument(argument, arg);
-      if( !*arg || (atoi(arg) < 1 && atoi(arg) > LAST_RACE) )
+      if( !*arg )
       {
         send_to_char_f(ch, "&+W'%s' is not a valid race.  Please enter a race name or corresponding number.&n\r\n", arg);
         return FALSE;
@@ -1090,26 +1090,34 @@ int parse_boon_args(P_char ch, BoonData *bdata, char *argument)
       }
       else
       {
-        // check for exact match first
-        for (i = 0; i <= LAST_RACE; i++)
+        bdata->criteria2 = 0;
+        // check for exact match first, skip RACE_NONE
+        for( i = 1; i <= LAST_RACE; i++ )
         {
-          if( !isname(arg, race_names_table[i].normal) )
+          // isname doesn't work here 'cause some races have 2-word name (ie Aquatic Animal comes before Animal).
+          if( !strcmp(arg, race_names_table[i].normal) )
           {
             bdata->criteria2 = i;
             break;
           }
         }
         // otherwise check for abbreviation
-        if( i == LAST_RACE+1 )
+        if( bdata->criteria2 == 0 )
         {
           for( i = 0; i <= LAST_RACE; i++ )
           {
             if( is_abbrev(arg, race_names_table[i].normal) )
             {
               bdata->criteria2 = i;
+              break;
             }
           }
         }
+      }
+      if( bdata->criteria2 == 0 )
+      {
+        send_to_char_f(ch, "&+W'%s' is not a valid race.  Please enter a race name or corresponding number.&n\r\n", arg);
+        return FALSE;
       }
     }
 

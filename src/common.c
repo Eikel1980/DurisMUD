@@ -60,102 +60,102 @@ const char *specdata[][MAX_SPEC] = {
  */
 extern const struct race_names race_names_table[LAST_RACE + 2];
 const struct race_names race_names_table[LAST_RACE + 2] = {
-  {"None", "None", "Unknown Race", "NO"},
+  {"None", "None", "Unknown Race", "NO"},                   // 0
   {"Human", "Human", "&+CHuman&n", "PH"},
   {"Barbarian", "Barbarian", "&+BBarbarian&n", "PB"},
   {"Drow Elf", "DrowElf", "&+mDrow Elf&n", "PL"},
   {"Grey Elf", "GreyElf", "&+cGrey Elf&n", "PE"},
-  {"Mountain Dwarf", "MountainDwarf", "&+YDwarf&n", "PM"},
+  {"Mountain Dwarf", "MountainDwarf", "&+YDwarf&n", "PM"},  // 5
   {"Duergar Dwarf", "DuergarDwarf", "&+rDuergar&n", "PD"},
   {"Halfling", "Halfling", "&+yHalfling&n", "PF"},
   {"Gnome", "Gnome", "&+RGnome&n", "PG"},
   {"Ogre", "Ogre", "&+bOgre&n", "PO"},
-  {"Troll", "Troll", "&+gTroll&n", "PT"},
+  {"Troll", "Troll", "&+gTroll&n", "PT"},                   // 10
   {"Half-Elf", "Half-Elf", "&+CHalf&+c-Elf&n", "P2"},
   {"Illithid", "Illithid", "&+MIllithid&n", "MF"},
   {"Orc", "Orc", "&+LOrc&n", "HO"},
   {"Thri-Kreen", "Thri-Kreen", "&+GThri-&+YKreen&n", "TK"},
-  {"Centaur", "Centaur", "&+gCen&+Ltaur&n", "CT"},
+  {"Centaur", "Centaur", "&+gCen&+Ltaur&n", "CT"},          // 15
   {"Githyanki", "Githyanki", "&+GGith&+Wyanki&n", "GI"},
   {"Minotaur", "Minotaur", "&+LMino&+rtaur&n", "MT"},
   {"Shade", "Shade", "&+LShade&n", "SH"},
   {"Revenant", "Revenant", "&+cRevenant&n", "RE"},
-  {"Goblin", "Goblin", "&+GGoblin&n", "HG"},
+  {"Goblin", "Goblin", "&+GGoblin&n", "HG"},                // 20
   {"Lich", "Lich", "&+LL&+mic&+Lh&n", "UL"},
   {"Vampire", "Vampire", "&+RVam&+rpi&+Rre&n", "UM"},
   {"Death Knight", "DeathKnight", "&+LDeath &+bKnight&n", "UK"},
   {"Shadow Beast", "ShadowBeast", "&+LShadow &+rBeast&n", "US"},
-  {"Storm Giant", "StormGiant", "&+wSt&+Wor&+wm G&+Wia&+wnt&n", "SG"},
+  {"Storm Giant", "StormGiant", "&+wSt&+Wor&+wm G&+Wia&+wnt&n", "SG"},// 25
   {"Wight", "Wight", "&+RW&+ri&+Rg&+rh&+Rt&n", "UW"},
   {"Phantom", "Phantom", "&+WPha&+Lntom&n", "UP"},
   {"Harpy", "Harpy", "&+yHarpy&n", "MH"},
   {"Orog", "Orog", "&+LOr&+yo&+Lg&n", "OR"},
-  {"Githzerai", "Githzerai", "&+WGith&+Gzerai&n", "GZ"},
+  {"Githzerai", "Githzerai", "&+WGith&+Gzerai&n", "GZ"},    // 30
   {"Drider", "Drider", "&+mDri&+Lder&n", "DR"},
   {"Kobold", "Kobold", "&+LKobold&n", "KB"},
   {"Planetbound Illithid", "Pillithid", "&+MIllithid&n", "PI"},
   {"Kuo Toa", "KuoToa", "&+GKu&+Lo T&+Goa&n", "KT"},
-  {"Wood Elf", "WoodElf", "&+gW&+Goo&+gd E&+Glf&n", "WE"},
+  {"Wood Elf", "WoodElf", "&+gW&+Goo&+gd E&+Glf&n", "WE"},  // 35
   {"Firbolg", "Firbolg", "&+yFir&+cbolg&n", "FB"},
   {"Agathinon", "Agathinon", "&+WAga&+Yt&+Whin&+Yo&+Wn&n", "AG"},
   {"Eladrin", "Eladrin", "&+cE&+Cl&+Wadr&+Ci&+cn&n", "EL"},
   {"Gargoyle", "Gargoyle", "&+LGar&+wgo&+Lyle&n", "MG"},
-  {"Fire Elemental", "FireElemental", "&+rFire Elemental&n", "EF"},
+  {"Fire Elemental", "FireElemental", "&+rFire Elemental&n", "EF"}, // 40
   {"Air Elemental", "AirElemental", "&+CAir Elemental&n", "EA"},
   {"Water Elemental", "WaterElemental", "&+BWater Elemental&n", "EW"},
   {"Earth Elemental", "EarthElemental", "&+yEarth Elemental&n", "EE"},
   {"Demon", "Demon", "&+LD&+we&+Lm&+wo&+Ln&n", "X"},
-  {"Devil", "Devil", "&+RD&+re&+Rv&+ri&+Rl&n", "Y"},
+  {"Devil", "Devil", "&+RD&+re&+Rv&+ri&+Rl&n", "Y"},        // 45
   {"Undead ", "Undead", "&+LUn&+wdead&n", "U"},
   {"Vampire", "Vampire", "&+rV&+Ra&+rm&+Rp&+ri&+Rr&+re&n", "UV"},
   {"Ghost", "Ghost", "&+WG&+wh&+Wo&+ws&+Wt&n", "UG"},
   {"Lycanthrope", "Lycanthrope", "&+LL&+yy&+Lc&+ya&+Ln&+yt&+Lh&+yr&+Lo&+yp&+Le&n", "L"},
-  {"Giant", "Giant", "&+yGiant&n", "G"},
+  {"Giant", "Giant", "&+yGiant&n", "G"},                    // 50
   {"Half Orc", "HalfOrc", "&+wHalf &+LOrc&n", "H2"},
   {"Golem", "Golem", "&+yGolem&n", "OG"},
   {"Faerie", "Faerie", "&+MFa&+mer&+Mie&n", "HF"},
   {"Dragon", "Dragon", "&+LDragon&n", "D"},
-  {"Dragonkin", "Dragonkin", "&+LDra&+wgon&+Lkin&n", "DK"},
+  {"Dragonkin", "Dragonkin", "&+LDra&+wgon&+Lkin&n", "DK"}, // 55
   {"Reptile", "Reptile", "&+GR&+ge&+Gp&+gt&+Gi&+gl&+Ge&n", "R"},
   {"Snake", "Snake", "&+gS&+Gn&+ga&+Gk&+ge&n", "RS"},
   {"Insect", "Insect", "&+wI&+Ln&+ws&+Le&+wc&+Lt&n", "I"},
   {"Arachnid", "Arachnid", "&+wA&+Lr&+wa&+Lc&+wh&+Ln&+wi&+Ld&n", "AS"},
-  {"Aquatic Animal", "Aquatic Animal", "&+bAquatic Animal&n", "F"},
+  {"Aquatic Animal", "Aquatic Animal", "&+bAquatic Animal&n", "F"}, // 60
   {"Winged Animal", "Winged Animal", "&+WWinged Animal&n", "B"},
   {"Quadruped", "Quadruped", "&+yQuadruped&n", "AE"},
   {"Primate", "Primate", "&+yP&+Lr&+yi&+Lm&+ya&+Lt&+ye&n", "AA"},
   {"Humanoid", "Humanoid", "&+LH&+yu&+Lm&+ya&+Ln&+yo&+Li&+yd&n", "H"},
-  {"Animal", "Animal", "&+yAnimal&n", "A"},
+  {"Animal", "Animal", "&+yAnimal&n", "A"},                 // 65
   {"Plant", "Plant", "&+gPlant&n", "VT"},
   {"Herbivore", "Herbivore", "&+GH&+ge&+Gr&+gb&+Gi&+gv&+Go&+gr&+Ge&n", "AH"},
   {"Carnivore", "Carnivore", "&+rC&+Ra&+rr&+Rn&+ri&+Rv&+ro&+Rr&+re&n", "AC"},
   {"Parasite", "Parasite", "&+LP&+wa&+Lr&+wa&+Ls&+wi&+Lt&+we&n", "AP"},
-  {"Beholder", "Beholder", "&+mBe&+Lho&+mld&+Ler&n", "BH"},
+  {"Beholder", "Beholder", "&+mBe&+Lho&+mld&+Ler&n", "BH"}, // 70
   {"Dracolich", "Dracolich", "&+LDr&+wa&+Lc&+wo&+Ll&+wi&+Lch&n", "UD"},
   {"Slime", "Slime", "&+GSlime&n", "SL"},
   {"Angel", "Angel", "&+WA&+Cng&+Wel&n", "AN"},
   {"Rakshasa", "Rakshasa", "&+rRaks&+Yhasa&n", "RA"},
-  {"Construct", "Construct", "&+LC&+won&+Lstr&+wuc&+Lt&n", "CN"},
+  {"Construct", "Construct", "&+LC&+won&+Lstr&+wuc&+Lt&n", "CN"},// 75
   {"Efreet", "Efreet", "&+rEf&+Rre&n&+ret&n", "E"},
   {"Snow Ogre", "SnowOgre", "&+WSnow &n&+bOgre&n", "SO"},
   {"Beholderkin", "Beholderkin", "&+mBeholderkin&n", "BK"},
   {"Zombie", "Zombie", "&+GZo&+gmbie&n", "ZO"},
-  {"Spectre", "Spectre", "&+wSpe&+Wctre&n", "SP"},
+  {"Spectre", "Spectre", "&+wSpe&+Wctre&n", "SP"},          // 80
   {"Skeleton", "Skeleton", "&+wSkeleton&n", "SK"},
   {"Wraith", "Wraith", "&+LWr&+wai&+Lth&n", "WR"},
   {"Shadow", "Shadow", "&+LShadow&n", "SW"},
   {"Purple Worm", "PurpleWorm", "&+mPurple &+LWorm&n", "PW"},
-  {"Void Elemental", "VoidElemental", "&+LVoi&+wd Elemen&+Ltal&n", "VE"},
+  {"Void Elemental", "VoidElemental", "&+LVoi&+wd Elemen&+Ltal&n", "VE"}, // 85
   {"Ice Elemental", "IceElemental", "&+CIc&+We Ele&+cme&+Wnt&+Cal&n", "IE"},
   {"Phoenix", "Phoenix", "&+rP&+Rh&+Yo&+We&+Yn&+Ri&+rx&n", "PX"},
   {"Archon", "Archon", "&+WA&+Rrch&+Wo&+Rn&n", "AR"},
   {"Asura", "Asura", "&+YA&+Rs&+Yu&+Rra&n", "AU"},
-  {"Titan", "Titan", "&+CT&+Wi&+Ct&+Wa&+Cn&n", "TT"},
+  {"Titan", "Titan", "&+CT&+Wi&+Ct&+Wa&+Cn&n", "TT"},       // 90
   {"Avatar", "Avatar", "&+cAv&+Ca&+Wt&+Ca&+cr&n", "AV"},
   {"Ghaele", "Ghaele", "&+cGh&+Cae&+cle&n", "GH"},
   {"Bralani", "Bralani", "&+cBr&+ra&+cl&+ra&+cn&+ri&n", "BR"},
   {"Whiner", "Whiner", "&+MW&+Wh&+Min&+We&+Mr&n", "WH"},
-  {"Incubus", "Incubus", "&+BIn&+bcub&+Bus&n", "IN"},
+  {"Incubus", "Incubus", "&+BIn&+bcub&+Bus&n", "IN"},       // 95
   {"Succubus", "Succubus", "&+LS&+ru&+Rcubb&+ru&+Ls&n", "SU"},
   {"Fire Giant", "FireGiant", "&+rFi&+Rre Gia&+rnt&n", "FG"},
   {"Frost Giant", "FrostGiant", "&+cFro&+Cst Gi&+cant&n", "IG"},
