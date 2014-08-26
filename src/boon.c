@@ -196,20 +196,25 @@ struct BoonRandomStandards random_std[] = {
 
 bool check_boon_combo(int type, int option, int random)
 {
-  for (int i = 0; boon_data[i].type; i++)
+  for( int i = 0; boon_data[i].type; i++ )
   {
-    if (boon_data[i].type == type &&
-	boon_data[i].option == option)
+    if( boon_data[i].type == type && boon_data[i].option == option )
     {
-      if (random)
+      if( random )
       {
-	if (boon_data[i].level)
-	  return FALSE;
-	else
-	  return TRUE;
+        if( boon_data[i].level )
+        {
+          return FALSE;
+        }
+        else
+        {
+          return TRUE;
+        }
       }
       else
-	return TRUE;
+      {
+        return TRUE;
+      }
     }
   }
   return FALSE;
@@ -1850,7 +1855,7 @@ int boon_display(P_char ch, char *argument)
 	(*player ? player : ""),
 	(*player ? ") " : ""));
   //debug(dbqry);
-  if (!qry(dbqry))
+  if( !qry(dbqry) )
   {
     debug("boon_display() can't read from db");
     return -1;
@@ -2318,92 +2323,87 @@ void boon_notify(int id, P_char ch, int action)
     debug("boon_nofity() called with invalid id");
     return;
   }
-  
+
   for (d = descriptor_list; d; d = d->next)
   {
-    if (!d->connected && d->character &&
-        IS_SET(d->character->specials.act2, PLR2_BOON) &&
-	(IS_TRUSTED(d->character) ||
-	(!bdata.racewar || (GET_RACEWAR(d->character) == bdata.racewar)) &&
-	(!bdata.pid || (bdata.pid == GET_PID(d->character)))))
+    if( !d->connected && d->character && IS_SET(d->character->specials.act2, PLR2_BOON)
+      && (IS_TRUSTED(d->character) || (!bdata.racewar || (GET_RACEWAR(d->character) == bdata.racewar))
+      && (!bdata.pid || (bdata.pid == GET_PID(d->character)))) )
     {
       if (ch && ch != d->character)
-	continue;
-      
+      {
+        continue;
+      }
       switch (action)
       {
-	case BN_CREATE: // Might become annoying
-	  {
-	    sprintf(buff, "&+CYou qualify for a new boon (#%d) that has been created.&n\r\n", bdata.id);
-	    break;
-	  }
-	case BN_REACTIVATE:
-	  {
-	    sprintf(buff, "&+CYou qualify for a boon (#%d) that has been reactivated.&n\r\n", bdata.id);
-	    break;
-	  }
-	case BN_EXTEND:
-	  {
-	    sprintf(buff, "&+CThe duration for Boon # %d has been extended.&n\r\n", bdata.id);
-	    break;
-	  }
-	case BN_NOTCH: // Progress notification
-	  {
-	    BoonProgress bpg;
-	    if (!get_boon_progress_data(bdata.id, GET_PID(d->character), &bpg))
-	      return;
-	    if (bdata.option == BOPT_RACE)
-	    {
-	      char tmp[MAX_STRING_LENGTH];
-	      if ((int)bdata.criteria2 < 0 || (int)bdata.criteria2 > LAST_RACE)
-		sprintf(tmp, "Invalid Race");
-	      else
-		sprintf(tmp, "%s", race_names_table[(int)bdata.criteria2].ansi);
-	      sprintf(buff, "&+CYou have killed %d of %d %s&+C(s) for boon # %d.&n\r\n", (int)bpg.counter, (int)bdata.criteria, race_names_table[(int)bdata.criteria2].ansi, bdata.id);
-	    }
-	    if (bdata.option == BOPT_MOB)
-	    {
-	      int r_num = 0;
-	      char tmp[MAX_STRING_LENGTH];
-	      P_char mob;
-	      if ((int)bdata.criteria2 > 0 &&
-		  (r_num = real_mobile((int)bdata.criteria2)) > 0 &&
-		  (mob = read_mobile(r_num, REAL)))
-	      {
-		sprintf(tmp, "%s", J_NAME(mob));
-	        extract_char(mob);
-	      }
-	      else
-		sprintf(tmp, "Invalid Mob");
-	      sprintf(buff, "&+CYou have killed %d of %d %s&+C(s) for boon # %d.&n\r\n", (int)bpg.counter, (int)bdata.criteria, tmp, bdata.id);
-	    }
-	    if (bdata.option == BOPT_FRAGS)
-	      sprintf(buff, "&+CYou have obtained %.2f out of %.2f frags for boon # %d.&n\r\n", bpg.counter, bdata.criteria, bdata.id);
-	    if (bdata.option == BOPT_NONE) // neverending progression
-	      sprintf(buff, "&+CYou gain some bonus experience.&n\r\n");
-	    break;
-	  }
-	case BN_COMPLETE: // Completion notification
-	  {
-	    sprintf(buff, "&+CYou have completed boon # %d.&n\r\n", bdata.id);
-	    break;
-	  }
-	case BN_VOID: // boon_remove()
-	  {
-	    sprintf(buff, "&+CBoon # %d is no longer available.&n\r\n", bdata.id);
-	    break;
-	  }
-	case BN_EXPIRE: // Expired notification
-	  {
-	    // Might just make this only if you have a progress entry for it.
-	    // or if you're currently in the zone
-	    // or if you're currently in the nexus
-	    // etc...
-	    sprintf(buff, "&+CBoon # %d has expired.&n\r\n", bdata.id);
-	    break;
-	  }
-	default:
-	  break;
+      case BN_CREATE: // Might become annoying
+        sprintf(buff, "&+CYou qualify for a new boon (#%d) that has been created.&n\r\n", bdata.id);
+        break;
+      case BN_REACTIVATE:
+  	    sprintf(buff, "&+CYou qualify for a boon (#%d) that has been reactivated.&n\r\n", bdata.id);
+	      break;
+      case BN_EXTEND:
+        sprintf(buff, "&+CThe duration for Boon # %d has been extended.&n\r\n", bdata.id);
+        break;
+      case BN_NOTCH: // Progress notification
+        BoonProgress bpg;
+        if (!get_boon_progress_data(bdata.id, GET_PID(d->character), &bpg))
+        {
+          return;
+        }
+        if( bdata.option == BOPT_RACE )
+        {
+          char tmp[MAX_STRING_LENGTH];
+          if( (int)bdata.criteria2 < 0 || (int)bdata.criteria2 > LAST_RACE )
+          {
+            sprintf(tmp, "Invalid Race");
+          }
+          else
+          {
+            sprintf(tmp, "%s", race_names_table[(int)bdata.criteria2].ansi);
+          }
+          sprintf(buff, "&+CYou have killed %d of %d %s&+C(s) for boon # %d.&n\r\n", (int)bpg.counter, (int)bdata.criteria, race_names_table[(int)bdata.criteria2].ansi, bdata.id);
+        }
+        else if( bdata.option == BOPT_MOB )
+        {
+          int r_num = 0;
+          char tmp[MAX_STRING_LENGTH];
+          P_char mob;
+
+          if( (int)bdata.criteria2 > 0 && (r_num = real_mobile((int)bdata.criteria2)) > 0
+            && (mob = read_mobile(r_num, REAL)) )
+	        {
+            sprintf(tmp, "%s", J_NAME(mob));
+            extract_char(mob);
+  	      }
+          else
+          {
+            sprintf(tmp, "Invalid Mob");
+          }
+          sprintf(buff, "&+CYou have killed %d of %d %s&+C(s) for boon # %d.&n\r\n", (int)bpg.counter, (int)bdata.criteria, tmp, bdata.id);
+        }
+        else if( bdata.option == BOPT_FRAGS )
+        {
+          sprintf(buff, "&+CYou have obtained %.2f out of %.2f frags for boon # %d.&n\r\n", bpg.counter, bdata.criteria, bdata.id);
+        }
+        else if( bdata.option == BOPT_NONE ) // neverending progression
+        {
+          sprintf(buff, "&+CYou gain some bonus experience.&n\r\n");
+        }
+        break;
+      case BN_COMPLETE: // Completion notification
+        sprintf(buff, "&+CYou have completed boon # %d.&n\r\n", bdata.id);
+        break;
+      case BN_VOID: // boon_remove()
+        sprintf(buff, "&+CBoon # %d is no longer available.&n\r\n", bdata.id);
+        break;
+      case BN_EXPIRE: // Expired notification
+        // TODO: Might just make this only if you have a progress entry for it.
+        // or if you're currently in the zone, or if you're currently in the nexus, etc...
+        sprintf(buff, "&+CBoon # %d has expired.&n\r\n", bdata.id);
+        break;
+      default:
+        break;
       }
       send_to_char(buff, d->character);
     }
@@ -2414,6 +2414,7 @@ void boon_notify(int id, P_char ch, int action)
 void boon_randomize(P_char ch, char *argument)
 {
   send_to_char_f(ch, "Randomizing boon list with argument: %s.\r\n", argument);
+  send_to_char_f(ch, "Under construction.\r\n" );
   return;
 }
 
@@ -2626,58 +2627,79 @@ int boon_get_random_zone(int std)
 // bottom of boon_maintenance().
 void check_boon_completion(P_char ch, P_char victim, double data, int option)
 {
-  if (IS_NPC(ch))
-    return;
-
   BoonData bdata;
+  BoonShop bshop;
   char buff[MAX_STRING_LENGTH];
   char dbqry[MAX_STRING_LENGTH];
   int i;
   int id[MAX_BOONS];
 
-  if (!ch ||
-      option < 0 ||
-      option >= MAX_BOPT)
+  // We don't use IS_ALIVE just in case "Die 5 times" boon or something.
+  if( !ch || IS_NPC(ch) || option < 0 || option >= MAX_BOPT )
+  {
     return;
+  }
 
-  for (i = 0; i < MAX_BOONS; i++)
+  if( !IS_SET(ch->specials.act2, PLR2_BOON) )
+  {
+    return;
+  }
+
+  for( i = 0; i < MAX_BOONS; i++ )
+  {
     id[i] = 0;
+  }
 
   *buff = '\0';
   // Modify the SQL search based on the option
-  if (option == BOPT_NONE)
+  if( option == BOPT_NONE )
+  {
     sprintf(buff, " AND (criteria = '%d')", ROOM_ZONE_NUMBER(ch->in_room));
-  else if (option == BOPT_ZONE)
+  }
+  else if( option == BOPT_ZONE )
+  {
     sprintf(buff, " AND (criteria = '%d')", (int)data);
-  else if (option == BOPT_LEVEL)
+  }
+  else if( option == BOPT_LEVEL )
+  {
     sprintf(buff, " AND (criteria = '%d' OR criteria = '0')", GET_LEVEL(ch));
-  else if (option == BOPT_MOB)
+  }
+  else if( option == BOPT_MOB )
   {
-    if (IS_NPC(victim) && !IS_PC_PET(victim))
+    if( IS_NPC(victim) && !IS_PC_PET(victim) )
+    {
       sprintf(buff, " AND (criteria2 = '%d')", GET_VNUM(victim));
+    }
     else
+    {
       return;
+    }
   }
-  else if (option == BOPT_RACE)
+  else if( option == BOPT_RACE )
   {
-    if (IS_NPC(victim) && !IS_PC_PET(victim) || racewar(ch, victim))
+    if( IS_NPC(victim) && !IS_PC_PET(victim) || racewar(ch, victim) )
+    {
       sprintf(buff, " AND (criteria2 = '%d')", GET_RACE(victim));
+    }
     else
+    {
       return;
+    }
   }
-  else if (option == BOPT_FRAG)
+  else if( option == BOPT_FRAG )
+  {
     sprintf(buff, " AND (criteria <= '%f')", data);
+  }
   //else if (option == BOPT_FRAGS) // No need for this, we check below in progress
   //else if (option == BOPT_GH) // not imped
-  else if (option == BOPT_OP ||
-           option == BOPT_NEXUS ||
-	   option == BOPT_CTF ||
-	   option == BOPT_CTFB)
+  else if( option == BOPT_OP || option == BOPT_NEXUS || option == BOPT_CTF || option == BOPT_CTFB )
+  {
     sprintf(buff, " AND (criteria = '%d')", (int)data);
+  }
 
   // Perform the search
   sprintf(dbqry, "SELECT id FROM boons WHERE opt = '%d' AND active = '1' AND (racewar = '0' OR racewar = '%d') AND (pid = '0' OR pid = '%d')%s", option, GET_RACEWAR(ch), GET_PID(ch), buff);
-  if (!qry(dbqry))
+  if( !qry(dbqry) )
   {
     debug("check_boon_completion(): can't read from db");
     debug(dbqry);
@@ -2687,29 +2709,30 @@ void check_boon_completion(P_char ch, P_char victim, double data, int option)
   MYSQL_RES *res = mysql_store_result(DB);
 
   // Nothing found, oh well
-  if (mysql_num_rows(res) < 1)
+  if( mysql_num_rows(res) < 1 )
   {
     mysql_free_result(res);
     return;
   }
 
   MYSQL_ROW row;
-  
+
   i = 0;
   while (row = mysql_fetch_row(res))
   {
     id[i++] = atoi(row[0]);
   }
-  
+
   mysql_free_result(res);
 
   // Run through results and apply bonuses!
-  for (i = 0; id[i]; i++)
+  for( i = 0; id[i]; i++ )
   {
     zero_boon_data(&bdata);
     get_boon_data(id[i], &bdata);
 
-    if (bdata.option != option)
+    // This should never happen, but..
+    if( bdata.option != option )
     {
       debug("check_boon_completion(): bdata.option != option");
       continue;
@@ -2720,37 +2743,45 @@ void check_boon_completion(P_char ch, P_char victim, double data, int option)
     int counter = 0;
 
     // try and get the entry for the player for this boon id
-    if (!get_boon_progress_data(bdata.id, GET_PID(ch), &bpg))
+    if( !get_boon_progress_data(bdata.id, GET_PID(ch), &bpg) )
     {
       // it doesn't exist, we create one, for anyone...
       // this is for tracking purposes for if the option is repeatable or not.
-      if (bdata.option == BOPT_FRAGS)
-	counter = data;
-      else if (bdata.option == BOPT_RACE ||
-	       bdata.option == BOPT_MOB)
-	counter = 1;
+      if( bdata.option == BOPT_FRAGS )
+      {
+        counter = data;
+      }
+      else if( bdata.option == BOPT_RACE || bdata.option == BOPT_MOB )
+      {
+        counter = 1;
+      }
       // else counter = 0 to pass it's first completion.
       bpg.id = 0;
       bpg.boonid = bdata.id;
       bpg.pid = GET_PID(ch);
       bpg.counter = counter;
       // and create...
-      if (!create_boon_progress(&bpg))
+      if( !create_boon_progress(&bpg) )
       {
-	debug("check_boon_completion(): failed to create bpg DB entry");
-	send_to_char("Failed to create a progress entry, please contact an Immortal.\r\n", ch);
-	continue;
+        debug("check_boon_completion(): failed to create bpg DB entry");
+        logit(LOG_DEBUG, "check_boon_completion(): failed to create bpg DB entry: id: %d|%d, pid: %d|%d, counter: %d|%d.",
+          bpg.id, 0, bpg.boonid, bdata.id, bpg.pid, GET_PID(ch), bpg.counter, counter );
+        send_to_char("Failed to create a boon progress entry, please contact an Immortal.\r\n", ch);
+        continue;
       }
     }
     // otherwise, we've found the boon, if we're dealing with progression
-    else if (boon_options[option].progress && bpg.counter != -1)
+    else if( boon_options[option].progress && bpg.counter != -1 )
     {
       // let's notch up their counter appropriately
-      if (!qry("UPDATE boons_progress SET counter = '%f' WHERE id = '%d'", (bpg.counter+(bdata.option == BOPT_FRAGS ? data : 1.0)), bpg.id))
+      if( !qry("UPDATE boons_progress SET counter = '%f' WHERE id = '%d'", (bpg.counter+(bdata.option == BOPT_FRAGS ? data : 1.0)), bpg.id) )
       {
-	debug("check_boon_completion(): failed to update bpg DB entry");
-	send_to_char("Failed to update your progress entry for this boon, please contact an Immortal.\r\n", ch);
-	continue;
+        debug("check_boon_completion(): failed to update bpg DB entry: counter: %f, id: %d.",
+          bpg.counter+(bdata.option == BOPT_FRAGS ? data : 1.0), bpg.id );
+        logit(LOG_DEBUG, "check_boon_completion(): failed to update bpg DB entry: counter: %f, id: %d.",
+          bpg.counter+(bdata.option == BOPT_FRAGS ? data : 1.0), bpg.id );
+        send_to_char("Failed to update your progress entry for this boon, please contact an Immortal.\r\n", ch);
+        continue;
       }
       bpg.counter += (bdata.option == BOPT_FRAGS ? data : 1.0);
     }
@@ -2758,244 +2789,236 @@ void check_boon_completion(P_char ch, P_char victim, double data, int option)
     else
     {
       // They've completed this non repeatable boon before, so no bonuses for them!
-      if (bpg.counter == -1)
-	continue;
+      if( bpg.counter == -1 )
+      {
+        continue;
+      }
     }
-      
     // and notify if its a progression boon option
     if (boon_options[option].progress)
     {
       boon_notify(bdata.id, ch, BN_NOTCH);
       if (bpg.counter < bdata.criteria)
-	continue;
+      {
+        continue;
+      }
       else
-	qry("UPDATE boons_progress SET counter = '%d' WHERE id = '%d'", (bdata.repeat ? 0 : -1), bpg.id);
+      {
+        qry("UPDATE boons_progress SET counter = '%d' WHERE id = '%d'", (bdata.repeat ? 0 : -1), bpg.id);
+      }
     }
     else
       qry("UPDATE boons_progress SET counter = '%d' WHERE id = '%d'", (bdata.repeat ? 0 : -1), bpg.id);
 
-    
     // OK, if we've made it here, they successfully completed a boon
-    
     // Apply bonuses
     switch (bdata.type)
     {
       case BTYPE_EXPM:
-	{
-	  //boon_notify(id, BN_NOTCH);
-	  // If we make this work only for kill exp and not all exp gains, we could notify
-	  // otherwise it's just too spammy to be practiacl.
-	  gain_exp(ch, victim, (int)(data * bdata.bonus), EXP_BOON);
-	  break;
-	}
+        //boon_notify(id, BN_NOTCH);
+        // If we make this work only for kill exp and not all exp gains, we could notify
+        // otherwise it's just too spammy to be practical.
+        gain_exp(ch, victim, (int)(data * bdata.bonus), EXP_BOON);
+        break;
       case BTYPE_EXP:
-	{
-	  boon_notify(bdata.id, ch, BN_COMPLETE);
-	  gain_exp(ch, victim, (int)bdata.bonus, EXP_BOON);
-	  break;
-	}
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        gain_exp(ch, victim, (int)bdata.bonus, EXP_BOON);
+        break;
       case BTYPE_EPIC:
-	{
-	  boon_notify(bdata.id, ch, BN_COMPLETE);
-	  gain_epic(ch, EPIC_BOON, GET_PID(ch), bdata.bonus);
-	  break;
-	}
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        gain_epic(ch, EPIC_BOON, GET_PID(ch), bdata.bonus);
+        break;
       case BTYPE_CASH:
-	{
-	  boon_notify(bdata.id, ch, BN_COMPLETE);
-	  send_to_char_f(ch, "Your bank receives a deposit of %s&n.\r\n", coin_stringv(bdata.bonus));
-	  GET_BALANCE_PLATINUM(ch) += (bdata.bonus / 1000);
-	  GET_BALANCE_GOLD(ch) += (((int)bdata.bonus % 1000) / 100);
-	  GET_BALANCE_SILVER(ch) += ((((int)bdata.bonus % 1000) % 100) / 10);
-	  GET_BALANCE_COPPER(ch) += ((((int)bdata.bonus % 1000) % 100) % 10);
-	  break;
-	}
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        send_to_char_f(ch, "Your bank receives a deposit of %s&n.\r\n", coin_stringv(bdata.bonus));
+        GET_BALANCE_PLATINUM(ch) += (bdata.bonus / 1000);
+        GET_BALANCE_GOLD(ch) += (((int)bdata.bonus % 1000) / 100);
+        GET_BALANCE_SILVER(ch) += ((((int)bdata.bonus % 1000) % 100) / 10);
+        GET_BALANCE_COPPER(ch) += ((((int)bdata.bonus % 1000) % 100) % 10);
+        break;
       case BTYPE_LEVEL:
-	{
-	  boon_notify(bdata.id, ch, BN_COMPLETE);
-	  if ((GET_LEVEL(ch)+1) > (int)bdata.bonus)
-	  {
-	    send_to_char("&+WWell done, unfortionately you've already surpassed the max level this boon will grant.&n\r\n", ch);
-	    continue;
-	  }
-	  if ((int)bdata.bonus2)
-	  {
-	    //bypass epics
-	    GET_EXP(ch) -= new_exp_table[GET_LEVEL(ch) + 1];
-	    advance_level(ch);
-	  }
-	  else
-	    // We'll give them a free level, so long as they have the epics for it.
-	    epic_free_level(ch);
-	  break;
-	}
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        if ((GET_LEVEL(ch)+1) > (int)bdata.bonus)
+        {
+          send_to_char("&+WWell done, unfortionately you've already surpassed the max level this boon will grant.&n\r\n", ch);
+          continue;
+        }
+        if( (int)bdata.bonus2 )
+        {
+          //bypass epics
+          GET_EXP(ch) -= new_exp_table[GET_LEVEL(ch) + 1];
+          advance_level(ch);
+        }
+        else
+        {
+          // We'll give them a free level, so long as they have the epics for it.
+          epic_free_level(ch);
+        }
+        break;
       case BTYPE_POWER:
-	{
-	  struct affected_type af;
-	  bzero(&af, sizeof(af));
-	  af.type = TAG_BOON;
-	  af.duration = 60;
-	  *buff = '\0';
-	  if ((int)bdata.bonus == 1)
-	  {
-	    sprintf(buff, "%s", affected1_bits[(int)bdata.bonus2].flagLong);
-	    af.bitvector = 1 << (int)bdata.bonus2;
-	  }
-	  if ((int)bdata.bonus == 2)
-	  {
-	    sprintf(buff, "%s", affected2_bits[(int)bdata.bonus2].flagLong);
-	    af.bitvector2 = 1 << (int)bdata.bonus2;
-	  }
-	  if ((int)bdata.bonus == 3)
-	  {
-	    sprintf(buff, "%s", affected3_bits[(int)bdata.bonus2].flagLong);
-	    af.bitvector3 = 1 << (int)bdata.bonus2;
-	  }
-	  if ((int)bdata.bonus == 4)
-	  {
-	    sprintf(buff, "%s", affected4_bits[(int)bdata.bonus2].flagLong);
-	    af.bitvector4 = 1 << (int)bdata.bonus2;
-	  }
-	  if ((int)bdata.bonus == 5)
-	  {
-	    sprintf(buff, "%s", affected5_bits[(int)bdata.bonus2].flagLong);
-	    af.bitvector5 = 1 << (int)bdata.bonus2;
-	  }
-	  if (!*buff)
-	    sprintf(buff, "Undefined");
-	  affect_to_char_with_messages(ch, &af, "&+CYour bonus power fa&+cdes away...&n\r\n", NULL);
-	  boon_notify(bdata.id, ch, BN_COMPLETE);
-	  send_to_char_f(ch, "You have been granted the power of %s for a while.\r\n", buff);
-	  break;
-	}
+        struct affected_type af;
+        bzero(&af, sizeof(af));
+        af.type = TAG_BOON;
+        af.duration = 60;
+        *buff = '\0';
+        if( (int)bdata.bonus == 1 )
+        {
+          sprintf(buff, "%s", affected1_bits[(int)bdata.bonus2].flagLong);
+          af.bitvector = 1 << (int)bdata.bonus2;
+        }
+        if( (int)bdata.bonus == 2 )
+        {
+          sprintf(buff, "%s", affected2_bits[(int)bdata.bonus2].flagLong);
+          af.bitvector2 = 1 << (int)bdata.bonus2;
+        }
+        if( (int)bdata.bonus == 3 )
+        {
+          sprintf(buff, "%s", affected3_bits[(int)bdata.bonus2].flagLong);
+          af.bitvector3 = 1 << (int)bdata.bonus2;
+        }
+        if( (int)bdata.bonus == 4 )
+        {
+          sprintf(buff, "%s", affected4_bits[(int)bdata.bonus2].flagLong);
+          af.bitvector4 = 1 << (int)bdata.bonus2;
+        }
+        if( (int)bdata.bonus == 5 )
+        {
+          sprintf(buff, "%s", affected5_bits[(int)bdata.bonus2].flagLong);
+          af.bitvector5 = 1 << (int)bdata.bonus2;
+        }
+        if (!*buff)
+        {
+          sprintf(buff, "Undefined");
+        }
+        affect_to_char_with_messages(ch, &af, "&+CYour bonus power fa&+cdes away...&n\r\n", NULL);
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        send_to_char_f(ch, "You have been granted the power of %s for a while.\r\n", buff);
+        break;
       case BTYPE_SPELL:
-	  {
-	    boon_notify(bdata.id, ch, BN_COMPLETE);
-	    ((*skills[(int)bdata.bonus].spell_pointer) (56, ch, NULL, SPELL_TYPE_SPELL, ch, NULL));
-	    break;
-	  }
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        ((*skills[(int)bdata.bonus].spell_pointer) (56, ch, NULL, SPELL_TYPE_SPELL, ch, NULL));
+        break;
       case BTYPE_STAT:
-	  {
-	    boon_notify(bdata.id, ch, BN_COMPLETE);
-	    if (bdata.bonus == STR)
-	    {
-	      ch->base_stats.Str = BOUNDED(0, ch->base_stats.Str+1, 100);
-	      send_to_char("You feel stronger!\r\n", ch);
-	    }
-	    if (bdata.bonus == DEX)
-	    {
-	      ch->base_stats.Dex = BOUNDED(0, ch->base_stats.Dex+1, 100);
-	      send_to_char("You feel more dextrous!\r\n", ch);
-	    }
-	    if (bdata.bonus == AGI)
-	    {
-	      ch->base_stats.Agi = BOUNDED(0, ch->base_stats.Agi+1, 100);
-	      send_to_char("You feel more agile!\r\n", ch);
-	    }
-	    if (bdata.bonus == CON)
-	    {
-	      ch->base_stats.Con = BOUNDED(0, ch->base_stats.Con+1, 100);
-	      send_to_char("You feel ten years younger!\r\n", ch);
-	    }
-	    if (bdata.bonus == POW)
-	    {
-	      ch->base_stats.Pow = BOUNDED(0, ch->base_stats.Pow+1, 100);
-	      send_to_char("Your mind suddenly feels ten times as powerful!\r\n", ch);
-	    }
-	    if (bdata.bonus == INT)
-	    {
-	      ch->base_stats.Int = BOUNDED(0, ch->base_stats.Int+1, 100);
-	      send_to_char("You feel smarter! Man, you were a real dumbass before.\r\n", ch);
-	    }
-	    if (bdata.bonus == WIS)
-	    {
-	      ch->base_stats.Wis = BOUNDED(0, ch->base_stats.Wis+1, 100);
-	      send_to_char("You feel wiser!\r\n", ch);
-	    }
-	    if (bdata.bonus == CHA)
-	    {
-	      ch->base_stats.Cha = BOUNDED(0, ch->base_stats.Cha+1, 100);
-	      send_to_char("Suddenly one of the pimples on your face dissapears!\r\n", ch);
-	    }
-	    if (bdata.bonus == LUCK)
-	    {
-	      ch->base_stats.Luck = BOUNDED(0, ch->base_stats.Luck+1, 100);
-	      send_to_char("You feel as if you could roll Triple Tiamat's at the slots...\r\n", ch);
-	    }
-	    if (bdata.bonus == KARMA)
-	    {
-	      ch->base_stats.Karma = BOUNDED(0, ch->base_stats.Karma+1, 100);
-	      send_to_char("You feel strange.\r\n", ch);
-	    }
-
-	    affect_total(ch, TRUE);
-	    break;
-	  }
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        if( bdata.bonus == STR )
+        {
+          ch->base_stats.Str = BOUNDED(0, ch->base_stats.Str+1, 100);
+          send_to_char("You feel stronger!\r\n", ch);
+        }
+        else if( bdata.bonus == DEX )
+        {
+          ch->base_stats.Dex = BOUNDED(0, ch->base_stats.Dex+1, 100);
+          send_to_char("You feel more dextrous!\r\n", ch);
+        }
+        else if( bdata.bonus == AGI )
+        {
+          ch->base_stats.Agi = BOUNDED(0, ch->base_stats.Agi+1, 100);
+          send_to_char("You feel more agile!\r\n", ch);
+        }
+        else if( bdata.bonus == CON )
+        {
+          ch->base_stats.Con = BOUNDED(0, ch->base_stats.Con+1, 100);
+          send_to_char("You feel ten years younger!\r\n", ch);
+        }
+        else if( bdata.bonus == POW )
+        {
+          ch->base_stats.Pow = BOUNDED(0, ch->base_stats.Pow+1, 100);
+          send_to_char("Your mind suddenly feels ten times as powerful!\r\n", ch);
+        }
+        else if( bdata.bonus == INT )
+        {
+          ch->base_stats.Int = BOUNDED(0, ch->base_stats.Int+1, 100);
+          send_to_char("You feel smarter! Man, you were a real dumbass before.\r\n", ch);
+        }
+        else if( bdata.bonus == WIS )
+        {
+          ch->base_stats.Wis = BOUNDED(0, ch->base_stats.Wis+1, 100);
+          send_to_char("You feel wiser!\r\n", ch);
+        }
+        else if( bdata.bonus == CHA )
+        {
+          ch->base_stats.Cha = BOUNDED(0, ch->base_stats.Cha+1, 100);
+          send_to_char("Suddenly one of the pimples on your face dissapears!\r\n", ch);
+        }
+        else if( bdata.bonus == LUCK )
+        {
+          ch->base_stats.Luck = BOUNDED(0, ch->base_stats.Luck+1, 100);
+          send_to_char("You feel as if you could roll Triple Tiamat's at the slots...\r\n", ch);
+        }
+        else if( bdata.bonus == KARMA )
+        {
+          ch->base_stats.Karma = BOUNDED(0, ch->base_stats.Karma+1, 100);
+          send_to_char("You feel strange.\r\n", ch);
+        }
+        else
+        {
+          debug("check_boon_completion(): Bad bonus value %d.", bdata.bonus );
+          logit(LOG_DEBUG, "check_boon_completion(): Bad bonus value %d.", bdata.bonus );
+        }
+        affect_total(ch, TRUE);
+        break;
       case BTYPE_STATS:
-	  {
-	    boon_notify(bdata.id, ch, BN_COMPLETE);
-	    BoonShop bshop;
-	    if (!get_boon_shop_data(GET_PID(ch), &bshop))
-	    {
-	      bshop.pid = GET_PID(ch);
-	      bshop.points = 0;
-	      bshop.stats = (int)bdata.bonus;
-	      if (!create_boon_shop_entry(&bshop))
-	      {
-		debug("check_boon_completion(): failed to create shop DB entry");
-		send_to_char("Failed to create your shop data, please contact an Immortal.\r\n", ch);
-		continue;
-	      }
-	    }
-	    else
-	    {
-	      if (!qry("UPDATE boons_shop SET stats = '%d' WHERE pid = '%d'", (bshop.stats + (int)bdata.bonus), GET_PID(ch)))
-	      {
-		debug("check_boon_completion(): failed to update shop DB entry");
-		send_to_char("Failed to update your shop data for this boon, please contact an Immortal.\r\n", ch);
-		continue;
-	      }
-	    }
-	    break;
-	  }
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        if( !get_boon_shop_data(GET_PID(ch), &bshop) )
+        {
+          bshop.pid = GET_PID(ch);
+          bshop.points = 0;
+          bshop.stats = (int)bdata.bonus;
+          if( !create_boon_shop_entry(&bshop) )
+          {
+          	debug("check_boon_completion(): failed to create shop DB entry");
+          	send_to_char("Failed to create your shop data, please contact an Immortal.\r\n", ch);
+          	continue;
+          }
+        }
+        else
+        {
+          if( !qry("UPDATE boons_shop SET stats = '%d' WHERE pid = '%d'", (bshop.stats + (int)bdata.bonus), GET_PID(ch)) )
+          {
+            debug("check_boon_completion(): Failed to update shop DB entry: stats %d, pid %d.",(bshop.stats + (int)bdata.bonus), GET_PID(ch) );
+            logit(LOG_DEBUG, "check_boon_completion(): Failed to update shop DB entry: stats %d, pid %d.",(bshop.stats + (int)bdata.bonus), GET_PID(ch) );
+            send_to_char("Failed to update your shop data for this boon, please contact an Immortal.\r\n", ch);
+            continue;
+          }
+        }
+        break;
       case BTYPE_POINT:
-	  {
-	    boon_notify(bdata.id, ch, BN_COMPLETE);
-	    BoonShop bshop;
-	    if (!get_boon_shop_data(GET_PID(ch), &bshop))
-	    {
-	      bshop.pid = GET_PID(ch);
-	      bshop.points = (int)bdata.bonus;
-	      bshop.stats = 0;
-	      if (!create_boon_shop_entry(&bshop))
-	      {
-		debug("check_boon_completion(): failed to create shop DB entry");
-		send_to_char("Failed to create your shop data, please contact an Immortal.\r\n", ch);
-		continue;
-	      }
-	    }
-	    else
-	    {
-	      if (!qry("UPDATE boons_shop SET points = '%d' WHERE pid = '%d'", (bshop.points + (int)bdata.bonus), GET_PID(ch)))
-	      {
-		debug("check_boon_completion(): failed to update shop DB entry");
-		send_to_char("Failed to update your shop data for this boon, please contact an Immortal.\r\n", ch);
-		continue;
-	      }
-	    }
-	    break;
-	  }
+        boon_notify(bdata.id, ch, BN_COMPLETE);
+        if( !get_boon_shop_data(GET_PID(ch), &bshop) )
+        {
+          bshop.pid = GET_PID(ch);
+          bshop.points = (int)bdata.bonus;
+          bshop.stats = 0;
+          if (!create_boon_shop_entry(&bshop))
+          {
+            debug("check_boon_completion(): Failed to create shop DB entry: pid %d.", GET_PID(ch) );
+            logit(LOG_DEBUG, "check_boon_completion(): Failed to create DB entry: pid %d.", GET_PID(ch) );
+            send_to_char("Failed to create your shop data, please contact an Immortal.\r\n", ch);
+            continue;
+          }
+        }
+        else
+        {
+          if (!qry("UPDATE boons_shop SET points = '%d' WHERE pid = '%d'", (bshop.points + (int)bdata.bonus), GET_PID(ch)))
+          {
+            debug("check_boon_completion(): Failed to update shop DB entry: points %d, pid %d.", (bshop.points + (int)bdata.bonus), GET_PID(ch) );
+            logit(LOG_DEBUG, "check_boon_completion(): Failed to update shop DB entry: points %d, pid %d.", (bshop.points + (int)bdata.bonus), GET_PID(ch) );
+            send_to_char("Failed to update your shop data for this boon, please contact an Immortal.\r\n", ch);
+            continue;
+          }
+        }
+        break;
       default:
-	break;
+        break;
     }
-
-    if (bdata.type != BTYPE_EXPM)
+    if( bdata.type != BTYPE_EXPM )
+    {
       debug("%s has completed boon # %d.", GET_NAME(ch), bdata.id);
-
+    }
     // Check and expire boon's if they are player targeted and not repeatable..
     // all though boon_progress wont let them continue if its not repeatable,
     // we don't need to leave it on the boon list if it's done.
-    if (bdata.pid == GET_PID(ch) && !bdata.repeat)
+    if( bdata.pid == GET_PID(ch) && !bdata.repeat )
     {
       remove_boon(bdata.id);
       boon_notify(bdata.id, NULL, BN_VOID);
@@ -3006,17 +3029,16 @@ void check_boon_completion(P_char ch, P_char victim, double data, int option)
     {
       if (bdata.repeat)
       {
-	obj_to_room(ctfdata[(int)bdata.criteria].obj, real_room0(ctfdata[(int)bdata.criteria].room));
-	send_to_room_f(real_room0(ctfdata[(int)bdata.criteria].room), "%s &n appears.\r\n", (ctfdata[(int)bdata.criteria].obj)->short_description);
+        obj_to_room(ctfdata[(int)bdata.criteria].obj, real_room0(ctfdata[(int)bdata.criteria].room));
+        send_to_room_f(real_room0(ctfdata[(int)bdata.criteria].room), "%s &n appears.\r\n", (ctfdata[(int)bdata.criteria].obj)->short_description);
       }
       else
       {
-	ctf_delete_flag((int)bdata.criteria);
-	ctfdata[(int)bdata.criteria].room = 0;
+        ctf_delete_flag((int)bdata.criteria);
+        ctfdata[(int)bdata.criteria].room = 0;
       }
     }
 #endif
   }
-  
   return;
 }
