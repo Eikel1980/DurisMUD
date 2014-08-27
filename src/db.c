@@ -2192,10 +2192,18 @@ P_char read_mobile(int nr, int type)
     tmp3 = 0;
     fscanf(mob_f, " %ldd%ld+%ld ", &tmp, &tmp2, &tmp3);
 
+    // Added some extra hps for mobs for the Sept 12th 2014 wipe.
+    //  lvl 1:0, lvl 2:2, lvl 3:4, lvl4:8 .. lvl 50:1250, lvl 62:1922.
     if (tmp2 <= 0 || tmp <= 0)
-      mob->points.base_hit = tmp3;
+    {
+      // mob->points.base_hit = tmp3;
+      mob->points.base_hit = tmp3 + mob->player.level * mob->player.level / 2;
+    }
     else
-      mob->points.base_hit = dice(tmp, tmp2) + tmp3;
+    {
+      // mob->points.base_hit = dice(tmp, tmp2) + tmp3;
+      mob->points.base_hit = dice(tmp, tmp2) + tmp3 + mob->player.level * mob->player.level / 2;
+    }
     mob->points.hit = mob->points.max_hit = mob->points.base_hit;
     if (mob->points.hit <= 0)
       logit(LOG_MOB, "Warning: MOB #%d has negative (%d) hp.\n",
