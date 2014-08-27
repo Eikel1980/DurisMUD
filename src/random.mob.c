@@ -271,27 +271,24 @@ struct random_mob
 
 };
 
+// I assume this is an event of some kind?
 void spawn_random_mapmob()
 {
-    P_char   random_mob;
-    int i = 0;
-    int count = 0;
+  P_char random_mob;
+  int    count = 0;
 
-    for (random_mob = character_list; random_mob; random_mob = random_mob->next)
-
+  for (random_mob = character_list; random_mob; random_mob = random_mob->next)
+  {
+    if( IS_NPC(random_mob) && GET_VNUM(random_mob) == 1255 )
     {
-     
-      if(IS_NPC(random_mob) &&
-        GET_VNUM(random_mob) == 1255 )
-
-        count++;
+      count++;
     }
+  }
 
-    if (count < 45)
-
-    {
-      create_random_mob(-1, 0);
-    }
+  if (count < 45)
+  {
+    create_random_mob(-1, 0);
+  }
 }
 
 // Really should list what themes are here.. but I don't know them.
@@ -369,6 +366,7 @@ P_char create_random_mob(int theme, int mob_level)
     extract_char(random_mob);
     return NULL;
   }
+  // Theme 3 is dwarf.
   if( theme == 3 )
   {
     if( number(0, 1) )
@@ -384,7 +382,7 @@ P_char create_random_mob(int theme, int mob_level)
   {
     race = zones_random_data[zone_idx].races[number(0, races-1)];
   }
-
+  // Theme 4 is good race.
   if( theme == 4 )
   {
     while (TRUE)
@@ -399,6 +397,7 @@ P_char create_random_mob(int theme, int mob_level)
       }
     }
   }
+  // Theme 5 is evil race.
   else if (theme == 5)
   {
     while (TRUE)
@@ -412,6 +411,7 @@ P_char create_random_mob(int theme, int mob_level)
       }
     }
   }
+  // Theme 6 is undead race.
   else if( theme == 6 )
   {
     while (TRUE)
@@ -449,6 +449,7 @@ P_char create_random_mob(int theme, int mob_level)
     // If we've gone around all the classes..
     if( i == class_idx )
     {
+      extract_char(random_mob);
       return NULL;
     }
   }
