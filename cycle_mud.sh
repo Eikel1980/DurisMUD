@@ -61,4 +61,11 @@ done
 if [ $RESULT == 55 ]; then
   echo "Wiping player data..."
   ./Players/wipers/wipe_it_all
+  echo "Moving player-logs to backup.."
+  if [ -d logs/player-log ]; then
+    #LOGNAME=`date +%b%d-%H%M`
+    mkdir logs/player-log/$DATESTR
+    mv logs/player-log/* logs/player-log/$DATESTR
+  fi
+  echo "Wiped!"
 fi
