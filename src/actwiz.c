@@ -5007,6 +5007,7 @@ void do_start(P_char ch, int nomsg)
     SET_BIT(ch->specials.act2, PLR2_SPEC);
     SET_BIT(ch->specials.act2, PLR2_HINT_CHANNEL);
     SET_BIT(ch->specials.act2, PLR2_SHOW_QUEST);
+    SET_BIT(ch->specials.act2, PLR2_BOON);
     SET_BIT(ch->specials.act2, PLR2_SHIPMAP);
     if( !GET_CLASS(ch, CLASS_PALADIN) )
     {
