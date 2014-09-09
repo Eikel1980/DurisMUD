@@ -2581,10 +2581,7 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
     }
     if (*arg2)
     {
-      bits =
-        generic_find(arg2,
-                     FIND_OBJ_INV | FIND_OBJ_ROOM | FIND_OBJ_EQUIP |
-                     FIND_CHAR_ROOM, ch, &tmp_char, &found_object);
+      bits = generic_find(arg2, FIND_OBJ_INV | FIND_OBJ_ROOM | FIND_OBJ_EQUIP | FIND_CHAR_ROOM, ch, &tmp_char, &found_object);
       if (tmp_char)
       {
         show_char_to_char(tmp_char, ch, 1);
@@ -3111,12 +3108,12 @@ void do_examine(P_char ch, char *argument, int cmd)
   sprintf(buf, "at %s", argument);
   do_look(ch, buf, -4);
 
-  bits =
-    generic_find(name, FIND_OBJ_INV | FIND_OBJ_ROOM | FIND_OBJ_EQUIP, ch,
-                 &tmp_char, &tmp_object);
+  // This needs to match the generic find in new_look, switch(keyword_no) case 7,
+  //   so that we are dealing with the same char/obj.
+  bits = generic_find(name, FIND_OBJ_INV | FIND_OBJ_ROOM | FIND_OBJ_EQUIP | FIND_CHAR_ROOM, ch, &tmp_char, &tmp_object);
 
   // check legend lore
-  if (tmp_object && (GET_CHAR_SKILL(ch, SKILL_LEGEND_LORE) > number(0, 110)) &&
+  if( tmp_object && (GET_CHAR_SKILL(ch, SKILL_LEGEND_LORE) > number(0, 110)) &&
 		  (GET_ITEM_TYPE(tmp_object) != ITEM_CONTAINER && GET_ITEM_TYPE(tmp_object) != ITEM_CORPSE))
   {
     notch_skill( ch, SKILL_LEGEND_LORE, 5 );

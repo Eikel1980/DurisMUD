@@ -1275,6 +1275,14 @@ bool parse_spell_arguments(P_char ch, struct spell_target_data * data, char *arg
           vict = ch;
           target_ok = TRUE;
         }
+
+      if (!target_ok && IS_SET(skills[spl].targets, TAR_CHAR_ROOM))
+      {
+        if (!*argument)
+          if ((vict = get_char_room_vis(ch, Gbuf1)))
+            target_ok = TRUE;
+      }
+
       if (!target_ok && IS_SET(skills[spl].targets, TAR_OBJ_INV))
         if ((obj = get_obj_in_list_vis(ch, Gbuf1, ch->carrying)))
           target_ok = TRUE;
@@ -1293,6 +1301,7 @@ bool parse_spell_arguments(P_char ch, struct spell_target_data * data, char *arg
         if ((obj =
              get_obj_in_list_vis(ch, Gbuf1, world[ch->in_room].contents)))
           target_ok = TRUE;
+
       if (!target_ok && IS_SET(skills[spl].targets, TAR_CHAR_RANGE))
       {
         range = IS_SET(skills[spl].targets, TAR_RANGE2) ? 2 : 1;
@@ -1316,18 +1325,14 @@ bool parse_spell_arguments(P_char ch, struct spell_target_data * data, char *arg
           target_ok = TRUE;
         }
       }
+
       if (!target_ok && IS_SET(skills[spl].targets, TAR_AREA))
       {
         if (!*argument)
           if ((vict = get_char_room_vis(ch, Gbuf1)))
             target_ok = TRUE;
       }
-      if (!target_ok && IS_SET(skills[spl].targets, TAR_CHAR_ROOM))
-      {
-        if (!*argument)
-          if ((vict = get_char_room_vis(ch, Gbuf1)))
-            target_ok = TRUE;
-      }
+
       if (!target_ok && IS_SET(skills[spl].targets, TAR_OBJ_WORLD))
         if ((obj = get_obj_vis(ch, Gbuf1)))
           target_ok = TRUE;
@@ -1366,12 +1371,12 @@ bool parse_spell_arguments(P_char ch, struct spell_target_data * data, char *arg
       if (!target_ok && IS_SET(skills[spl].targets, TAR_WALL))
       {
         int var = dir_from_keyword(Gbuf1);
-  
+
         if (check_visible_wall(ch, var))
         {
           obj = get_wall_dir(ch, var);
         }
-        
+
         if (obj)
       	  target_ok = TRUE;
       }
