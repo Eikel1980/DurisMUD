@@ -4149,7 +4149,7 @@ void do_shutdown(P_char ch, char *argument, int cmd)
       if(!str_cmp(arg, "yes"))
       {
         send_to_char( "&-RYou've done it now.. the world is really going away!!!&n\n\r", ch );
-        if( GET_LEVEL(ch) < FORGER )
+        if( GET_LEVEL(ch) < OVERLORD )
         {
           send_to_char( "&=RLThe world resists your attempt to destroy it!  You must attain a higher level to do this.&n\n\r", ch );
           return;
