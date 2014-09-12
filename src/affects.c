@@ -307,28 +307,30 @@ int calculate_hitpoints(P_char ch)
   char buf[128];
   int hps, i, lvl, old_bonus, hitpoint_bonus, j, mod, toughness;
   P_obj obj;
-  bool apply_maxconbonus_hitpoints = false;
-  
+  bool apply_maxconbonus_hitpoints = FALSE;
+
   lvl = GET_LEVEL(ch);
 
   i = MAX(-390, 390 - MIN(GET_C_CON(ch), stat_factor[GET_RACE(ch)].Con));
   old_bonus = (int) (lvl * ((152100.0 - i * i) / 10864.285 - 4.0));
   hps = old_bonus;
-  hps += (int) (((float) lvl) / 50 *
-                stat_factor[GET_RACE(ch)].Con *
-                stat_factor[GET_RACE(ch)].Con *
-                get_property("hitpoints.conMultiplier", 0.035));
-                
-  if (IS_MULTICLASS_PC(ch))
+  hps += (int) (((float) lvl) / 50 * stat_factor[GET_RACE(ch)].Con *
+    stat_factor[GET_RACE(ch)].Con * get_property("hitpoints.conMultiplier", 0.035));
+
+  if( IS_MULTICLASS_PC(ch) )
   {
     hps = (int) (hps * MAX(class_hitpoints[flag2idx(ch->player.m_class)],
               class_hitpoints[flag2idx(ch->player.secondary_class)]));
   }
   else
+  {
     hps = (int) (hps * class_hitpoints[flag2idx(ch->player.m_class)]);
+  }
 
-  if (GET_AGE(ch) <= racial_data[GET_RACE(ch)].max_age)
+  if( GET_AGE(ch) <= racial_data[GET_RACE(ch)].max_age )
+  {
     hps += graf(ch, age(ch).year, 2, 4, 17, 14, 8, 4, 3);
+  }
 
   hps += MAX(0, 10 - lvl);
 
@@ -337,8 +339,10 @@ int calculate_hitpoints(P_char ch)
   i = MAX(-390, 390 - GET_C_CON(ch));
   hps += (int) (lvl * ((152100.0 - i * i) / 10864.285 - 4.0)) - old_bonus;
 
-  if (IS_HARDCORE(ch))
+  if( IS_HARDCORE(ch) )
+  {
     hps += (2 * lvl);
+  }
 
   /* This calculates the HP bonus from the toughness
    * epic skill. Remove or comment it out if for some
@@ -356,33 +360,36 @@ int calculate_hitpoints(P_char ch)
    }
 */
 
-  if (IS_ILLITHID(ch))
+  if( IS_ILLITHID(ch) )
   {
     // 10 hps at level 1, 1 points in max con = 1 hp, gains 1 hp per level.
     hps = GET_LEVEL(ch) + 10 + MAX(GET_C_CON(ch), 100) - 100;
   }
-  
+
   toughness = GET_CHAR_SKILL(ch, SKILL_TOUGHNESS);
 
-  if(toughness > 0 &&
-     !GET_CLASS(ch, CLASS_MONK))
+  if( toughness > 0 && !GET_CLASS(ch, CLASS_MONK) )
   {
     hps += (int) (toughness * get_property("epic.skill.toughness", 0.500) * (GET_CLASS(ch, CLASS_WARRIOR | CLASS_PALADIN | CLASS_ANTIPALADIN | CLASS_MERCENARY) ? 2 : 1));
   }
   else
   {
-    if(toughness < 50)
+    if( toughness < 50 )
+    {
       hps += (int) (toughness * get_property("epic.skill.toughness.monk.low", 0.800));
-    else if(toughness >= 50 &&
-             toughness <= 90)
+    }
+    else if( toughness >= 50 && toughness <= 90 )
+    {
       hps += (int) (toughness * get_property("epic.skill.toughness.monk.medium", 1.000));
+    }
     else
-      hps += (int) (toughness * get_property("epic.skill.toughness.monk.high", 1.250));    
+    {
+      hps += (int) (toughness * get_property("epic.skill.toughness.monk.high", 1.250));
+    }
   }
-  if (hps < 0)
+  if( hps < 0 )
   {
-    logit(LOG_DEBUG, "%s has negative hitpoints bonus: %d (%d, %d)",
-          GET_NAME(ch), hps, old_bonus, i);
+    logit(LOG_DEBUG, "%s has negative hitpoints bonus: %d (%d, %d)", GET_NAME(ch), hps, old_bonus, i);
     return 0;
   }
   // Casters get hitpoint bonus with con_max eq. Dec08 -Lucrot
@@ -390,23 +397,19 @@ int calculate_hitpoints(P_char ch)
   // Never liked this and it grew from making hitters far too powerful
   // downing this and finding a better solution - Jexni 2/6/11
 
-  if(ch &&
-    IS_MAX_CON_BONUS_CLASS(ch) &&
-    !IS_MULTICLASS_PC(ch))
+  if( ch && IS_MAX_CON_BONUS_CLASS(ch) && !IS_MULTICLASS_PC(ch) )
   {
-    apply_maxconbonus_hitpoints = true;
+    apply_maxconbonus_hitpoints = TRUE;
   }
-  
+
   if(ch && IS_MULTICLASS_PC(ch)
     && GET_PRIME_CLASS(ch, CLASS_ETHERMANCER | CLASS_DRUID | CLASS_CLERIC | CLASS_SORCERER | CLASS_NECROMANCER | CLASS_SHAMAN | CLASS_PSIONICIST | CLASS_ILLUSIONIST | CLASS_CONJURER | CLASS_BARD | CLASS_SUMMONER | CLASS_BLIGHTER)
     && GET_SECONDARY_CLASS(ch, CLASS_ETHERMANCER | CLASS_DRUID | CLASS_CLERIC | CLASS_SORCERER | CLASS_NECROMANCER | CLASS_SHAMAN | CLASS_PSIONICIST | CLASS_ILLUSIONIST | CLASS_CONJURER | CLASS_BARD | CLASS_SUMMONER | CLASS_BLIGHTER))
   {
-    apply_maxconbonus_hitpoints = true;
+    apply_maxconbonus_hitpoints = TRUE;
   }
- 
-  if(ch &&
-    IS_PC(ch) &&
-    apply_maxconbonus_hitpoints)
+
+  if( ch && IS_PC(ch) && apply_maxconbonus_hitpoints )
   {
     hitpoint_bonus = 0;
     for (i = 0; i < MAX_WEAR; i++)
@@ -420,7 +423,7 @@ int calculate_hitpoints(P_char ch)
       if(ch->equipment[i])
       {
         obj = ch->equipment[i];
-        
+
         for (j = 0; j < MAX_OBJ_AFFECT; j++)
         {
           if(obj->affected[j].location == APPLY_CON_MAX &&
@@ -431,9 +434,8 @@ int calculate_hitpoints(P_char ch)
         }
       }
     }
-// Max con hitpoint bonus now uses a racial constitution ratio. May2010 -Lucrot   
-    if(IS_PC(ch) &&
-       hitpoint_bonus)
+// Max con hitpoint bonus now uses a racial constitution ratio. May2010 -Lucrot
+    if( IS_PC(ch) && hitpoint_bonus )
     {
       sprintf(buf, "stats.con.%s", race_names_table[GET_RACE(ch)].no_spaces);
       mod = (int) get_property(buf, 100.);
