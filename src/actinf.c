@@ -6352,17 +6352,16 @@ void do_users(P_char ch, char *argument, int cmd)
     do_users_DEPRECATED(ch, connbuf, cmd);
     return;
   }
-  if( !strcmp("nonplaying", linebuf) )
+  else if( linebuf && *linebuf && is_abbrev(linebuf, "nonplaying") )
   {
     nonplaying = TRUE;
   }
   else if( linebuf && *linebuf && is_abbrev(linebuf, "get_name") )
   {
-debug( "PENIS");
     getname = TRUE;
   }
 
-  send_to_char("\r\n Character   | State       | Idle | Hostname\r\n-----------------------------------------------------------------------------------\r\n", ch);
+  send_to_char("\r\n Character   |  #  | State       | Idle | Hostname\r\n-----------------------------------------------------------------------------------\r\n", ch);
   for( P_desc d = descriptor_list; d; d = d->next )
   {
     // don't show admins of higher level who are invisible
@@ -6420,9 +6419,9 @@ debug( "PENIS");
       sprintf(hostbuf, "&+Yunknown&n");
     }
 
-    sprintf(linebuf, " %s | %s | %4d | %s\r\n",
+    sprintf(linebuf, " %s | %3d | %s | %4d | %s\r\n",
       ((d->character && GET_NAME(d->character)) ? pad_ansi(GET_NAME(d->character), 11).c_str() : "-          "),
-      pad_ansi(connbuf, 11).c_str(), (d->wait / 240), hostbuf );
+      d->descriptor, pad_ansi(connbuf, 11).c_str(), (d->wait / 240), hostbuf );
 
     send_to_char(linebuf, ch);
   }
