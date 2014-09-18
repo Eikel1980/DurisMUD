@@ -205,9 +205,9 @@ int max_spells_in_circle(P_char ch, int circ)
 int get_spell_circle(P_char ch, int spl)
 {
   int i, ch_circle = (GET_LEVEL(ch) - 1) / 5 + 1;
-  int lowest, class_idx;
-
+  int lowest, class_idx, spec;
   lowest = MAX_CIRCLE + 1;
+  spec = ch->player.spec;
 
   // We check all classes for NPCs.
   if( IS_NPC(ch) )
@@ -224,13 +224,22 @@ int get_spell_circle(P_char ch, int spl)
         }
       }
     }
+    if( IS_SPECIALIZED(ch) )
+    {
+      // Set i to the class.
+      i = flag2idx(ch->player.m_class) - 1;
+      if( (skills[spl].m_class[i].rlevel[spec] > 0) && (skills[spl].m_class[i].rlevel[spec] < lowest) )
+      {
+        lowest = skills[spl].m_class[i].rlevel[spec];
+      }
+    }
   }
   else
   {
     // If the player has the spell as a spec spell (or reg if not spec'd).
-    if( (SKILL_DATA(ch, spl).rlevel[ch->player.spec] > 0) )
+    if( (SKILL_DATA(ch, spl).rlevel[spec] > 0) )
     {
-      lowest = SKILL_DATA(ch, spl).rlevel[ch->player.spec];
+      lowest = SKILL_DATA(ch, spl).rlevel[spec];
     }
 
     // If the player has it as a secondary class spell.
