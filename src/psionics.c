@@ -1168,7 +1168,7 @@ void spell_death_field(int level, P_char ch, char *arg, int type,
 
   zone_spellmessage(ch->in_room,
                     "&+LYour brain hurts as a black haze fills the sky!\r\n");
-  CharWait(ch, (int) (PULSE_SPELLCAST * 1.1)); //old 1.5
+  CharWait( ch, WAIT_SEC*2 );
 }
 
 
@@ -1263,7 +1263,7 @@ void spell_detonate(int level, P_char ch, char *arg, int type, P_char victim, P_
    spell_damage(ch, victim, dam / 2, SPLDAM_PSI, SPLDAM_NOSHRUG, &messages);
   }
 
-  CharWait(ch, (int) (PULSE_SPELLCAST * 1));
+//  CharWait(ch, (int) (PULSE_SPELLCAST * 1));
 }
 
 void spell_spinal_corruption(int level, P_char ch, char *arg, int type,
@@ -1417,9 +1417,7 @@ void spell_mental_anguish(int level, P_char ch, char *arg, int type, P_char vict
   }
 }
 
-void
-spell_memory_block(int level, P_char ch, char *arg, int type, P_char victim,
-                   P_obj obj)
+void spell_memory_block(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   if (CheckMindflayerPresence(ch))
   {
@@ -2206,7 +2204,7 @@ void spell_pyrokinesis(int level, P_char ch, char *arg, int type, P_char victim,
     }
     affect_to_char(victim, &af);
   }
-  CharWait(ch, 8);
+  CharWait(ch, 2*WAIT_SEC);
 }
 
 void spell_celerity(int level, P_char ch, char *arg, int type,
@@ -2514,11 +2512,12 @@ void spell_enrage(int level, P_char ch, char *arg, int type, P_char victim, P_ob
 
   appear(ch);
 
-  int attdiff = ((GET_C_POW(ch) - GET_C_POW(victim)) / 2);
+  int attdiff = GET_C_POW(ch) - GET_C_POW(victim);
   attdiff += 2 * (level - GET_LEVEL(victim));
-  attdiff = BOUNDED(WAIT_SEC, attdiff, WAIT_SEC*10);
+  attdiff = BOUNDED(WAIT_SEC, attdiff, WAIT_SEC*12);
 
-  if( (ch != victim) && NewSaves(victim, SAVING_SPELL, attdiff/5) )
+//debug( "attdiff: %d, save: %d.", attdiff, attdiff/WAIT_SEC );
+  if( (ch != victim) && NewSaves(victim, SAVING_SPELL, attdiff/WAIT_SEC) )
   {
     send_to_char("You feel a brief bit of &+ranger&n, but it passes.\r\n", victim);
     return;
@@ -2817,7 +2816,7 @@ void spell_radial_navigation(int level, P_char ch, char *arg, int type, P_char v
 
   /* subtract mana regardless of success..  snif */
   GET_MANA(ch) -= (distance * 3);
-  CharWait(ch, 10);
+  CharWait(ch, 2.5*WAIT_SEC);
 
   /* twould be best to add more to their knock out time if they're already knocked out, but f it */
   if( (GET_MANA(ch) < 0) && !IS_AFFECTED(ch, AFF_KNOCKED_OUT) )
@@ -2914,7 +2913,7 @@ void spell_ethereal_rift(int level, P_char ch, char *arg, int type,
   zone_powerspellmessage(to_room,
                          "&+LYou sense a disturbance in the ethereal fabric.\r\n");
 
-  CharWait(ch, 3);
+  CharWait(ch, WAIT_SEC);
   return;
 }
 
@@ -3047,7 +3046,7 @@ void spell_ether_warp(int level, P_char ch, char *arg, int type,
 	}
 	else
 	{
-	  CharWait(ch, 40);
+	  CharWait(ch, 7*WAIT_SEC);
 	}
 }
 
