@@ -1557,7 +1557,12 @@ int ship_panel_proc(P_obj obj, P_char ch, int cmd, char *arg)
 
     if (cmd == CMD_SCAN) 
     {
-        return do_scan(ch, ship, arg);
+      // Use regular scan if ship is docked.
+      if( SHIP_DOCKED(ship) )
+      {
+        return FALSE;
+      }
+      return do_scan(ch, ship, arg);
     }
 
     if (cmd == CMD_FIRE) 
