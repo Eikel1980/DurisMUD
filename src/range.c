@@ -2096,7 +2096,7 @@ void return_home(P_char ch, P_char victim, P_obj obj, void *data)
  P_nevent  ev;
  hunt_data h_data;
 
- if (!ch)
+ if( !IS_ALIVE(ch) )
    return;
 
  if (IS_PC(ch))
