@@ -1227,10 +1227,10 @@ void show_char_to_char(P_char i, P_char ch, int mode)
   int      j, found, percent, lt_lvl;
   P_obj    tmp_obj, wpn;
   int      wear_order[] =
-    { 41, 24, 40, 6, 19, 21, 22, 20, 39, 3, 4, 5, 35, 12, 27, 37, 42, 23, 13, 28,
-    29, 30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1, 2, 16, 17, 25, 26, 18, 7,
-      36, 8, 38, -1
-  };  // Also defined in get_equipment_list
+    { 41, 24, 40,  6, 19, 21, 22, 20, 39, 3,  4, 5, 35, 12, 27, 42, 37, 23, 13, 28,
+      29, 30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1,  2, 16, 17, 25, 26, 18,  7,
+      36,  8, 38, -1
+    };  // Also defined in get_equipment_list
   int      higher, lower, diff;
   struct affected_type *af;
   int quester_id;
@@ -6828,6 +6828,7 @@ void do_inventory(P_char ch, char *argument, int cmd)
 // Returns true iff ch can wear something in wear_slot slot.
 bool has_eq_slot( P_char ch, int wear_slot )
 {
+
   switch (wear_slot)
   {
     case WEAR_FINGER_R:
@@ -6842,8 +6843,8 @@ bool has_eq_slot( P_char ch, int wear_slot )
       return TRUE;
       break;
     case WEAR_BODY:
-      if( !has_innate( ch, INNATE_SPIDER_BODY )
-        || !has_innate( ch, INNATE_HORSE_BODY ) )
+//      if( has_innate( ch, INNATE_SPIDER_BODY ) || has_innate( ch, INNATE_HORSE_BODY ) || IS_THRIKREEN(ch) )
+      if( IS_THRIKREEN(ch) )
       {
         return FALSE;
       }
@@ -6987,10 +6988,10 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
   P_obj    t_obj, wpn;
   int      free_hands;
   int      wear_order[] =
-    { 41, 24, 40, 6, 19, 21, 22, 20, 39, 3, 4, 5, 35, 12, 27, 42, 37, 23, 13, 28,
-    29, 30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1, 2, 16, 17, 25, 26, 18, 7,
-      36, 8, 38, -1
-  }; //also defined in show_char_to_char
+    { 41, 24, 40,  6, 19, 21, 22, 20, 39, 3,  4, 5, 35, 12, 27, 42, 37, 23, 13, 28,
+      29, 30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1,  2, 16, 17, 25, 26, 18,  7,
+      36,  8, 38, -1
+    }; //also defined in show_char_to_char
 
   buf[0] = '\0';
   found = FALSE;
@@ -7011,19 +7012,19 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
       t_obj = ch->equipment[wear_order[j]];
       found = TRUE;
 
-      if (((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD)) &&
-          (wield_item_size(ch, ch->equipment[wear_order[j]]) == 2))
-        strcat(buf,
-               ((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD) &&
-                (t_obj->type != ITEM_WEAPON) && 
-                t_obj->type != ITEM_FIREWEAPON) ? "<held in both hands> " :
-               "<wielding twohanded> ");
+      if( ((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD))
+        && (wield_item_size(ch, ch->equipment[wear_order[j]]) == 2) )
+      {
+        strcat(buf, ((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD)
+          && (t_obj->type != ITEM_WEAPON) &&  t_obj->type != ITEM_FIREWEAPON)
+          ? "<held in both hands> " : "<wielding twohanded> ");
+      }
       else
-        strcat(buf,
-            (wear_order[j] >= WIELD && wear_order[j] <= HOLD &&
-             t_obj->type != ITEM_WEAPON &&
-             t_obj->type != ITEM_FIREWEAPON) ? where[HOLD] : 
-            where[wear_order[j]]);
+      {
+        strcat(buf, (wear_order[j] >= WIELD && wear_order[j] <= HOLD
+          && t_obj->type != ITEM_WEAPON && t_obj->type != ITEM_FIREWEAPON)
+          ? where[HOLD] :  where[wear_order[j]]);
+      }
 
       if (CAN_SEE_OBJ(ch, t_obj) || list_only)
       {
@@ -7057,7 +7058,7 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
         if (IS_OBJ_STAT(t_obj, ITEM_LIT) ||
             ((t_obj->type == ITEM_LIGHT) && t_obj->value[2]))
           strcat(buf, " (&+Willuminating&n)");
-        
+
         if (affected_by_spell(ch, SPELL_HOLY_SWORD))
         {
           if (ch->equipment[wear_order[j]]->type == ITEM_WEAPON)
@@ -7068,7 +7069,7 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
             }
           }
         }
-        
+
         if (affected_by_spell(ch, SPELL_ILIENZES_FLAME_SWORD))
         {
           if (ch->equipment[wear_order[j]]->type == ITEM_WEAPON)

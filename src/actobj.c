@@ -49,6 +49,7 @@ extern P_index mob_index;
 extern const int new_exp_table[];
 
 extern void obj_affect_remove(P_obj, struct obj_affect *);
+extern bool has_eq_slot( P_char ch, int wear_slot );
 
 #define USE_SPACE 0
 #define IN_WELL_ROOM(x) ((world[(x)->in_room].number == 55126) || (world[(x)->in_room].number == 8003))
@@ -3663,9 +3664,11 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
   char     Gbuf3[MAX_STRING_LENGTH];
   int      free_hands, wield_to_where, o_size, hands_needed, comnd;
 
-  // Kill on !Object or !Character
-  if( !obj_object || !ch )
-    return false;
+  // Kill on !Object or !Character or dead char.
+  if( !obj_object || !IS_ALIVE(ch) )
+  {
+    return FALSE;
+  }
 
   // Scrap it. Might cause crash. Dec08 -Lucrot
   if(obj_object->condition <= 0)
@@ -3721,7 +3724,7 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
   }
 
   // Cannot use the item.  Return FALSE.
-  if (!can_char_use_item(ch, obj_object))
+  if( !can_char_use_item(ch, obj_object) )
   {
     if( showit )
       act("You can't use $p.", FALSE, ch, obj_object, 0, TO_CHAR);
@@ -3838,7 +3841,7 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
     break;
 
   case 3: /* Body */
-    if( CAN_WEAR(obj_object, ITEM_WEAR_BODY) && !IS_THRIKREEN(ch) )
+    if( CAN_WEAR(obj_object, ITEM_WEAR_BODY) && has_eq_slot( ch, WEAR_BODY ) )
     {
       if( IS_SET(obj_object->extra_flags, ITEM_WHOLE_BODY) )
       {
@@ -4798,21 +4801,25 @@ void do_wear(P_char ch, char *argument, int cmd)
   }
 
   argument_interpreter(argument, Gbuf1, Gbuf2);
-  if (*Gbuf1 && str_cmp(Gbuf1, "all"))
+  // If there's an argument other than 'all'
+  if( *Gbuf1 && str_cmp(Gbuf1, "all") )
   {
     obj_object = get_obj_in_list_vis(ch, Gbuf1, ch->carrying);
-    if (obj_object)
+    if( obj_object )
     {
-      if (*Gbuf2)
+      // Wear slot to wear obj_object in.
+      if( *Gbuf2 )
       {
         keyword = search_block(Gbuf2, keywords, FALSE); // Partial Match
-        if (keyword == -1)
+        if( keyword == -1 )
         {
           sprintf(Gbuf4, "%s is an unknown body location.\r\n", Gbuf2);
           send_to_char(Gbuf4, ch);
         }
         else
+        {
           wear(ch, obj_object, keyword + 1, 1); // UGH!  Passing through a +1 is nasty. But, aligns array with reality.
+        }
       }
       else
       {
@@ -4830,19 +4837,19 @@ void do_wear(P_char ch, char *argument, int cmd)
           }
         }
       	// Can't Find a Wear Position
-        //  This is really weird. there's no -2 in the equipment_pos_table[][], nor in WEAR_*.
+        //  keyword not set (default -2 above for loop).
         if( keyword == -2 )
         {
           send_to_char("That doesn't seem to work.\r\n", ch);
           return;
         }
         // Wear the Object
-        if (obj_index[obj_object->R_num].virtual_number == 400218 && IS_MULTICLASS_PC(ch))
+        if( obj_index[obj_object->R_num].virtual_number == 400218 && IS_MULTICLASS_PC(ch) )
         {
           send_to_char("&nThe power of this item is too great for a multiclassed character!&n\r\n", ch);
           return;
         }
-        if(IS_OBJ_STAT2(obj_object, ITEM2_SOULBIND) && !isname(GET_NAME(ch), obj_object->name))
+        if( IS_OBJ_STAT2(obj_object, ITEM2_SOULBIND) && !isname(GET_NAME(ch), obj_object->name) )
         {
           send_to_char("&+LThis item is bound to someone elses &+Wsoul&+L, you may not wear it!&n\r\n", ch);
           return;
