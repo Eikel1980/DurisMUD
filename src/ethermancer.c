@@ -2346,7 +2346,7 @@ void event_razor_wind(P_char victim, P_char ch, P_obj obj, void *data)
     dam = (int)(dam *  1.2);
   }
 
-  if( spell_damage(ch, victim, (int) dam, SPLDAM_COLD, 0, &messages) == DAM_NONEDEAD
+  if( spell_damage(ch, victim, (int) dam, SPLDAM_COLD, SPLDAM_NODEFLECT, &messages) == DAM_NONEDEAD
     && --duration > 0 )
   {
     // This has to be backwards for the event search to work right.. *sigh*
@@ -2804,7 +2804,7 @@ void event_antimatter_collision(P_char victim, P_char ch, P_obj obj, void *data)
     dam = (int)(dam *  1.2);
   }
 
-  if( spell_damage(ch, victim, (int) dam, SPLDAM_NEGATIVE, 0, &messages) == DAM_NONEDEAD
+  if( spell_damage(ch, victim, (int) dam, SPLDAM_NEGATIVE, SPLDAM_NODEFLECT, &messages) == DAM_NONEDEAD
     && --duration > 0 )
   {
     // This has to be backwards for the event search to work right.. *sigh*
@@ -2880,7 +2880,7 @@ void event_arctic_blast(P_char victim, P_char ch, P_obj obj, void *data)
     dam = (int)(dam *  1.2);
   }
 
-  if( spell_damage(ch, victim, (int) dam, SPLDAM_COLD, 0, &messages) == DAM_NONEDEAD
+  if( spell_damage(ch, victim, (int) dam, SPLDAM_COLD, SPLDAM_NODEFLECT, &messages) == DAM_NONEDEAD
     && --duration > 0 )
   {
     // This has to be backwards for the event search to work right.. *sigh*
