@@ -79,59 +79,70 @@ void generic_char_event(P_char ch, P_char victim, P_obj obj, void *data)
   int      n, x;
   int      dam;
 
-  for (i = character_list; i; i = i_next)
+  for( i = character_list; i; i = i_next )
   {
     i_next = i->next;
 
     /* A basic mob sanity check */
-    if (IS_NPC(i) && !i->only.npc && !IS_MORPH(i))
+    if( IS_NPC(i) && !i->only.npc && !IS_MORPH(i) )
     {
-      wizlog(AVATAR,
-             "&=LRDanger! Mob without only.npc struct! Attempting to neutralize!");
-      logit(LOG_DEBUG, "mob #%u (%s) without only.npc struct", GET_RNUM(i),
-            i->player.long_descr);
+      wizlog(AVATAR, "&=LRDanger! Mob without only.npc struct! Attempting to neutralize!");
+      logit(LOG_DEBUG, "mob #%u (%s) without only.npc struct", GET_RNUM(i), i->player.long_descr);
       extract_char(i);
       continue;
     }
-    
-    if (!IS_BLOODLUST && has_innate(i, INNATE_VULN_SUN) )
-      sun_damage_check(i);
 
-    if (GET_CLASS(i, CLASS_DRUID) && (GET_LEVEL(i) > 30) &&
-        (IS_AFFECTED2(i, AFF2_POISONED)))
+    if( !IS_BLOODLUST && has_innate(i, INNATE_VULN_SUN) )
     {
-      
-      if (poison_common_remove(i))
-      	send_to_char("You neutralize the poison in your bloodstream!\r\n", i);
+      sun_damage_check(i);
     }
 
-   // that wonderful god spell...
-       if (affected_by_spell(i, SPELL_PLEASANTRY))
-       pleasantry(i);
+    if( GET_CLASS(i, CLASS_DRUID) && (GET_LEVEL(i) > 30) && (IS_AFFECTED2(i, AFF2_POISONED)) )
+    {
+      if( poison_common_remove(i) )
+      {
+      	send_to_char("You neutralize the poison in your bloodstream!\r\n", i);
+      }
+    }
+
+    // that wonderful god spell...
+    if( affected_by_spell(i, SPELL_PLEASANTRY) )
+    {
+      pleasantry(i);
+    }
 
     /* repair munged flyers/swimmers */
-    if (i->specials.z_cord > 0 && !OUTSIDE(i))
+    if( i->specials.z_cord > 0 && !OUTSIDE(i) )
+    {
       i->specials.z_cord = 0;
-    else if (i->specials.z_cord < 0 && !IS_WATER_ROOM(i->in_room))
+    }
+    else if( i->specials.z_cord < 0 && !IS_WATER_ROOM(i->in_room) )
+    {
       i->specials.z_cord = 0;
-    if (IS_SET(i->specials.affected_by3, AFF3_SWIMMING) &&
-        !IS_WATER_ROOM(i->in_room))
+    }
+    if( IS_SET(i->specials.affected_by3, AFF3_SWIMMING) && !IS_WATER_ROOM(i->in_room) )
+    {
       REMOVE_BIT(i->specials.affected_by3, AFF3_SWIMMING);
+    }
 
     /* keep taught/learned proper */
-    if (IS_PC(i) && !IS_MORPH(i))
+    if( IS_PC(i) && !IS_MORPH(i) )
+    {
       for (n = FIRST_SKILL; n <= LAST_SKILL; n++)
       {
         if (i->only.pc->skills[n].taught < i->only.pc->skills[n].learned)
           i->only.pc->skills[n].learned = i->only.pc->skills[n].taught;
       }
+    }
 
     /* light sources, et al */
     update_char_objects(i);
 
     /* since fights stop healing, lets make sure we restart it */
-    if (GET_HIT(i) < GET_MAX_HIT(i))
+    if( GET_HIT(i) < GET_MAX_HIT(i) )
+    {
       StartRegen(i, EVENT_HIT_REGEN);
+    }
   }
   add_event(generic_char_event, 20 * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0);
   //AddEvent(EVENT_SPECIAL, 20 * WAIT_SEC, TRUE, generic_char_event, 0);
@@ -142,17 +153,30 @@ void event_sundamage(P_char ch, P_char victim, P_obj obj, void *data);
 void sun_damage_check(P_char ch)
 {
   if( IS_NPC(ch) || IS_TRUSTED(ch) )
+  {
     return;
+  }
+
+  if( !has_innate(ch, INNATE_VULN_SUN) || IS_AFFECTED4(ch, AFF4_GLOBE_OF_DARKNESS) )
+  {
+    return;
+  }
+
+  if( IS_SWAMP_ROOM(ch->in_room) || IS_FOREST_ROOM(ch->in_room) )
+  {
+    return;
+  }
 
   if( !IS_SUNLIT(ch->in_room) || IS_TWILIGHT_ROOM(ch->in_room) )
+  {
     return;
-  
-  if( !has_innate(ch, INNATE_VULN_SUN) || IS_AFFECTED4(ch, AFF4_GLOBE_OF_DARKNESS) )
+  }
+
+  if( GET_HIT(ch) < 1 )
+  {
     return;
- 
-  if (GET_HIT(ch) < 1)
-    return;
-  
+  }
+
   switch( GET_RACE(ch) )
   {
     case RACE_TROLL:
@@ -249,19 +273,24 @@ int char_light(P_char ch)
   int      i, amt = 0, dark = 0, mf_l;
   struct affected_type *af;
 
-  if (!ch)
+  if( !ch )
+  {
     return -1;
+  }
 
-  if (GET_RACE(ch) == RACE_F_ELEMENTAL)
+/* These are all handled elsewhere.  And fire elementals no longer light up the room.
+  if( GET_RACE(ch) == RACE_F_ELEMENTAL )
+  {
     amt += 3;
+  }
 
   if (IS_AFFECTED4(ch, AFF4_MAGE_FLAME) ||
       IS_AFFECTED4(ch, AFF4_GLOBE_OF_DARKNESS))
   {
     mf_l = 0;
 
-    /* first, check if spell has been cast, and base level of light on
-       that.  if not, assume artifact or whatnot and use vict level */
+    // first, check if spell has been cast, and base level of light on
+    //   that.  if not, assume artifact or whatnot and use vict level
 
     for (af = ch->affected; af; af = af->next)
     {
@@ -282,35 +311,43 @@ int char_light(P_char ch)
 
     amt = BOUNDED(-1, amt, 127);
   }
+*/
 
-  for (i = 0; i < MAX_WEAR; i++)
-    if (ch->equipment[i])
+  for( i = 0; i < MAX_WEAR; i++ )
+  {
+    if( ch->equipment[i] )
     {
-      if ((i >= WIELD) && (i <= HOLD))  /* hands */
-        if ((ch->equipment[i]->type == ITEM_LIGHT) &&
-            ch->equipment[i]->value[2])
-          amt += 2;
-
-      if (IS_SET(ch->equipment[i]->extra_flags, ITEM_LIT))
-        amt += 3;
+      /* hands have a light that's not burnt out */
+      if( ((i >= WIELD) && (i <= HOLD)) && (ch->equipment[i]->type == ITEM_LIGHT)
+        && ch->equipment[i]->value[2] )
+      {
+        amt++;
+      }
+      else if( IS_SET(ch->equipment[i]->extra_flags, ITEM_LIT) )
+      {
+        amt++;
+      }
     }
+  }
   /* yup inven (surface layer anyway) counts */
+  /* No more inventory.. too cheesy.
   for (t_obj = ch->carrying; !dark && t_obj; t_obj = t_obj->next_content)
   {
     if (IS_SET(t_obj->extra_flags, ITEM_LIT))
       amt += 3;
   }
-
   if (dark)
     amt = -1;
-  if (amt > 127)
-    amt = 127;
+  */
 
   i = ch->light;
   ch->light = BOUNDED(-1, amt, 127);
 
-  if (ch->light != i)
+  // If the ch changed the amount of light on them, change the room they're in too.
+  if( ch->light != i )
+  {
     room_light(ch->in_room, REAL);
+  }
 
   return ch->light;
 }
@@ -318,29 +355,43 @@ int char_light(P_char ch)
 /*
  * recalculate (and return) the amount of light in a room
  */
-
+// This is lightsources only now!
+// Returns -1 on error, otherwise number of lit objects worn in room.
 int room_light(int room_nr, int flag)
 {
   P_char   t_ch = NULL;
   P_obj    t_obj = NULL;
   int      amt = 0, dark = 0, rroom = -1;
 
-  if (room_nr < 0)
+  if( room_nr < 0 )
+  {
     return -1;
+  }
 
-  if (flag == REAL)
+  if( flag == REAL )
+  {
     rroom = room_nr;
-  else if (room_nr < top_of_world)
+  }
+  else if( room_nr < top_of_world )
+  {
     rroom = real_room(room_nr);
+  }
   else
+  {
     return -1;
+  }
 
-  if (rroom == NOWHERE)
+  if( rroom == NOWHERE )
+  {
     return -1;
+  }
 
-  amt = 1;
+  amt = 0;
 
-  if (IS_SURFACE_MAP(rroom))
+/* No.. surface maps are not always lit.. there's no magic torch in every room.
+ * In fact, we're only counting light sources from equipment here now.
+ * Sunlight/Fireplane/etc is handled elsewhere. - Lohrr
+  if( IS_SURFACE_MAP(rroom) )
     amt += 1;
 
   //if (world[rroom].sector_type == SECT_INSIDE)
@@ -351,7 +402,7 @@ int room_light(int room_nr, int flag)
     if (IS_SET(world[rroom].room_flags, MAGIC_DARK ))
       amt -= 1;
     //else
-      //amt++;                    /* give them a little light */
+      //amt++; // give them a little light
   //}
   //else if (IS_SET(world[rroom].room_flags, DARK))
     //amt--;
@@ -371,48 +422,50 @@ int room_light(int room_nr, int flag)
   if (world[rroom].sector_type == SECT_UNDRWLD_LIQMITH)
     amt += 2;
   int dirty_loop_fix = 0;
-  
-  for (t_ch = world[rroom].people; t_ch; t_ch = t_ch->next_in_room)
+*/
+
+  // Add the number of lights on each person.
+  for( t_ch = world[rroom].people; t_ch; t_ch = t_ch->next_in_room )
   {
-
-	dirty_loop_fix++;  
-  if (t_ch->light == -1)
-      dark = 1;
-    else
+    if( t_ch->light > 0 )
+    {
+if( rroom == 59 ) debug( "t_ch: %s, light %d", J_NAME(t_ch), t_ch->light );
       amt += t_ch->light;
-
-    /* wild guess that a wacky pointer is causing an infinite loop.. */
-
-    if(dirty_loop_fix > 100)
-	    break;
-    if (t_ch == t_ch->next_in_room)
+    }
+    if( t_ch == t_ch->next_in_room )
+    {
+      debug( "Buggy char '%s' in room list twice, room %d.", J_NAME(t_ch), rroom );
       break;
+    }
   }
 
   /*
    * lit items in room count
    */
-
-
-  for (t_obj = world[rroom].contents; !dark && t_obj;
-       t_obj = t_obj->next_content)
+  for( t_obj = world[rroom].contents; t_obj; t_obj = t_obj->next_content )
   {
-    if (t_obj)
+    if( IS_SET(t_obj->extra_flags, ITEM_LIT) )
     {
-      if (IS_SET(t_obj->extra_flags, ITEM_LIT))
-        amt += 2;
-      if ((t_obj->type == ITEM_LIGHT) && (t_obj->value[2] == -1))
-        amt += 1;
+if( rroom == 59 ) debug( "t_obj: %s, lit", t_obj->short_description );
+        amt++;
+    }
+    else if( (t_obj->type == ITEM_LIGHT) && (t_obj->value[2] == -1) )
+    {
+if( rroom == 59 ) debug( "t_obj: %s, light", t_obj->short_description );
+        amt++;
     }
   }
 
   /*
    * have to do something about ambient (sun) light, not sure what yet
    */
+/*
   if (dark)
     amt = BOUNDED(-1, amt, 1);
+*/
 
   world[rroom].light = BOUNDED(-1, amt, 127);
+
 #if 0
   if (world[rroom].people && !ALONE(world[rroom].people))
   {
@@ -432,6 +485,7 @@ int room_light(int room_nr, int flag)
     }
   }
 #endif
+
   return world[rroom].light;
 }
 
@@ -2980,7 +3034,7 @@ P_char get_char_room_vis(P_char ch, const char *name)
        /*  !IS_DISGUISE_NPC(i) && */ (!is_introd(i, ch) ||
        /* racewar(ch, i) || */ (IS_DISGUISE(i) && (i != ch)) ))) ||
        (isname(tmp, GET_NAME(i)) && (IS_NPC(i))) ||
-         ((i != ch) && !IS_TRUSTED(ch) && IS_DARK(ch->in_room) &&
+         ((i != ch) && !IS_TRUSTED(ch) && !CAN_DAYPEOPLE_SEE(ch->in_room) &&
           IS_AFFECTED(ch, AFF_INFRAVISION) && (isname(tmp, "shape") ||
                                                isname(tmp, "outline")))))
     {

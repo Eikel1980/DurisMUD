@@ -255,24 +255,24 @@ SECS_PER_MUD_DAY)
     && world[r].sector_type != SECT_ASTRAL \
     && world[r].sector_type != SECT_NEG_PLANE)
 
-#define IS_LIGHT(r) ( (world[r].light > 0 && !IS_MAGIC_DARK(r) ) || \
-                      IS_SUNLIT(r) || \
-                      IS_TWILIGHT_ROOM(r) )
+#define IS_LIGHT(r) ( (world[r].light > 0 && !IS_SET(world[r].room_flags, MAGIC_DARK)) \
+                    || IS_SUNLIT(r) || IS_TWILIGHT_ROOM(r) || IS_ROOM(r, MAGIC_LIGHT) )
 
-#define IS_DARK(r) ( !IS_LIGHT(r) )
+#define CAN_DAYPEOPLE_SEE(r) ( world[r].light > 0 || IS_SUNLIT(r) || IS_TWILIGHT_ROOM(r) \
+                             || IS_ROOM(r, MAGIC_LIGHT) )
+
+// This isn't simply !LIGHT, because twilight counts as both, and so does dark + lights in room.
+#define CAN_NIGHTPEOPLE_SEE(r) ( IS_TWILIGHT_ROOM(r) || (!IS_SUNLIT(r) && !IS_ROOM(r, MAGIC_LIGHT)) )
 
 #define IS_MAGIC_LIGHT(r) ( IS_SET(world[r].room_flags, MAGIC_LIGHT) && !IS_SET(world[r].room_flags, MAGIC_DARK ) )
 #define IS_MAGIC_DARK(r) ( IS_SET(world[r].room_flags, MAGIC_DARK) && !IS_SET(world[r].room_flags, MAGIC_LIGHT ) )
 
-#define IS_SUNLIT(r) \
-           (IS_DAY && !IS_SET(world[r].room_flags, DARK) && \
-           !IS_SET(world[r].room_flags, MAGIC_DARK) && \
-           !IS_SET(world[r].room_flags, INDOORS) && \
-           !IS_UD_MAP(r) && \
-           !IS_UNDERWORLD(r) && \
-           !IS_TWILIGHT)
+#define IS_SUNLIT(r) ( IS_DAY && !IS_TWILIGHT && !IS_ROOM(r, DARK | MAGIC_DARK | INDOORS) \
+                       && !IS_UD_MAP(r) && !IS_UNDERWORLD(r) )
 
 int IS_TWILIGHT_ROOM(int r);
+
+#define IS_ROOM( room, flag ) (IS_SET(world[room].room_flags, flag) )
 
 #define SET_BIT(var, bit)  ((var) = (var) | (bit))
 

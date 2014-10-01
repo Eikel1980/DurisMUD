@@ -1937,7 +1937,7 @@ void do_sneak(P_char ch, char *argument, int cmd)
 void do_hide(P_char ch, char *argument, int cmd)
 {
   byte     percent;
-  int      skl_lvl = 0;
+  int      skl_lvl = 0, vis_mode;
   bool     tried = FALSE;
   P_obj    obj_object, next_obj, tobj, next_tobj;
   char     Gbuf1[MAX_STRING_LENGTH], Gbuf2[MAX_STRING_LENGTH];
@@ -2036,7 +2036,7 @@ void do_hide(P_char ch, char *argument, int cmd)
 
     if (GET_RACE(ch) == RACE_PSBEAST)
     {
-      if (IS_TWILIGHT_ROOM(ch->in_room) || IS_DARK(ch->in_room))
+      if( IS_TWILIGHT_ROOM(ch->in_room) || !IS_LIGHT(ch->in_room) )
       {
         percent = 0;
         send_to_char("&+LYou blend into the shadows...&n\r\n", ch);

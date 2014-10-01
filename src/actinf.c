@@ -1901,6 +1901,7 @@ void show_char_to_char(P_char i, P_char ch, int mode)
   }
 }
 
+// mode argument is unused?
 void list_char_to_char(P_char list, P_char ch, int mode)
 {
   P_char i, j;
@@ -1970,9 +1971,9 @@ void list_char_to_char(P_char list, P_char ch, int mode)
     // CAN_SEE returns TRUE for infravision sight.
     if( CAN_SEE(ch, i) )
     {
-      // Infravision: DARK -> not Twilight, Ultra supercedes Infra.
-      if( IS_AFFECTED(ch, AFF_INFRAVISION) && !IS_AFFECTED2(ch, AFF2_ULTRAVISION)
-        && (IS_MAGIC_DARK(i->in_room) || IS_DARK(i->in_room)) )
+      // Infravision: Too dark for day people, has infra, no ultra.
+      if( !IS_TRUSTED(ch) && IS_AFFECTED(ch, AFF_INFRAVISION) && !IS_AFFECTED2(ch, AFF2_ULTRAVISION)
+        && !CAN_DAYPEOPLE_SEE(i->in_room) )
       {
         sprintf(buf, "&+rYou see the red shape of a %s living being %shere.\n",
           size_types[GET_ALT_SIZE(i)], higher ? "above you " : lower ? "below you " : "");
@@ -1983,7 +1984,7 @@ void list_char_to_char(P_char list, P_char ch, int mode)
         show_char_to_char(i, ch, 0);
       }
       continue;
-     }
+    }
     /*if (IS_AFFECTED2(ch, AFF2_ULTRAVISION) ||
         (IS_LIGHT(i->in_room)) ||
         (IS_TRUSTED(ch)) ||
@@ -2857,11 +2858,12 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
 
 void show_exits_to_char(P_char ch, int room_no, int mode)
 {
-  int      i, vis_mode, count, brief_mode, globe, flame;
+  int      i, vis_mode, count;
+  struct room_direction_data *exit;
+  bool     brief_mode;
   P_char   tmp_char;
   char     buffer[MAX_STRING_LENGTH];
 
-/*  const char dir_letters[7] = "NESWUD";*/
   const char *short_exits[] = {
     "N",
     "E",
@@ -2890,233 +2892,271 @@ void show_exits_to_char(P_char ch, int room_no, int mode)
 
   *buffer = '\0';
 
-  globe = 0;
-  flame = 0;
-  for( tmp_char = world[ch->in_room].people; tmp_char; tmp_char = tmp_char->next_in_room )
+  if( room_no < 0 )
   {
-    if( IS_AFFECTED4(tmp_char, AFF4_MAGE_FLAME) )
-    {
-      flame = 1;
-      if( globe )
-      {
-        break;
-      }
-    }
-    if( IS_AFFECTED4(tmp_char, AFF4_GLOBE_OF_DARKNESS) )
-    {
-      globe = 1;
-      if( flame )
-      {
-        break;
-      }
-    }
+    room_no = ch->in_room;
   }
 
   vis_mode = get_vis_mode(ch, room_no);
-
-  if( vis_mode == 5 || vis_mode == 6 )
+  // mode == 1 -> exits via new_look: if they're blind, no obvious exits.
+  // mode == 2 -> actual exits command: check for exits.  Should we allow this?
+  if( (vis_mode == 5 || vis_mode == 6) && mode == 1 )
+  {
+//    send_to_char("&+gObvious exits: &+RNone!\n", ch);
     return;
+  }
 
   brief_mode = IS_SET(ch->specials.act, PLR_BRIEF);
 
   strcpy(buffer, "&+gObvious exits:&n");
 
-  if (mode == 1)
+  if( mode == 1 )
   {
-
     for (count = 0, i = 0; i < NUM_EXITS; i++)
     {
-      if (!(world[room_no].dir_option[i]) ||
-          (((world[room_no].dir_option[i])->to_room == NOWHERE) &&
-           (vis_mode != 1)))
-        continue;
-      switch (vis_mode)
+      exit = world[room_no].dir_option[i];
+      if( !exit || (exit->to_room == NOWHERE && (vis_mode != 1)) )
       {
+        continue;
+      }
+      vis_mode = get_vis_mode(ch, exit->to_room);
+      switch( vis_mode )
+      {
+      // God vision.
       case 1:
         count++;
-        if (!brief_mode)
-          sprintf(buffer + strlen(buffer), " &+c-%s&n", exits[i]);
-        else
-/*          sprintf(buffer + strlen(buffer), " &+c-%c&n", dir_letters[i]);*/
-          sprintf(buffer + strlen(buffer), " &+c-%s&n", short_exits[i]);
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED))
-          strcat(buffer, "&+g#&n");
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_LOCKED))
-          strcat(buffer, "&+y@&n");
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_SECRET))
-          strcat(buffer, "&+L*&n");
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_BLOCKED))
-          strcat(buffer, "&+r%&n");
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_WALLED))
-          strcat(buffer, "&+Y!&n");
-
-        if (IS_SET(ch->specials.act, PLR_VNUM))
+        if( !brief_mode )
         {
-          if ((world[room_no].dir_option[i])->to_room == NOWHERE)
+          sprintf(buffer + strlen(buffer), " &+c-%s&n", exits[i]);
+        }
+        else
+        {
+          sprintf(buffer + strlen(buffer), " &+c-%s&n", short_exits[i]);
+        }
+        if (IS_SET(exit->exit_info, EX_CLOSED))
+        {
+          strcat(buffer, "&+g#&n");
+        }
+        if (IS_SET(exit->exit_info, EX_LOCKED))
+        {
+          strcat(buffer, "&+y@&n");
+        }
+        if (IS_SET(exit->exit_info, EX_SECRET))
+        {
+          strcat(buffer, "&+L*&n");
+        }
+        if (IS_SET(exit->exit_info, EX_BLOCKED))
+        {
+          strcat(buffer, "&+r%&n");
+        }
+        if (IS_SET(exit->exit_info, EX_WALLED))
+        {
+          strcat(buffer, "&+Y!&n");
+        }
+
+        if( IS_SET(ch->specials.act, PLR_VNUM) )
+        {
+          if( exit->to_room == NOWHERE )
+          {
             strcat(buffer, "[&+RNOWHERE&N] ");
+          }
           else
+          {
             sprintf(buffer + strlen(buffer), " [&+R%d&N:&+C%d&N]",
-                    zone_table[world[(world[room_no].dir_option[i])->to_room].zone].number,
-                    world[(world[room_no].dir_option[i])->to_room].number);
+              zone_table[world[exit->to_room].zone].number, world[exit->to_room].number);
+          }
         }
         break;
       case 2:
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_SECRET) ||
-            IS_SET((world[room_no].dir_option[i])->exit_info, EX_BLOCKED) ||
-            IS_SET((world[room_no].dir_option[i])->exit_info, EX_ILLUSION))
+        if( IS_SET(exit->exit_info, EX_SECRET) || IS_SET(exit->exit_info, EX_BLOCKED)
+          || IS_SET(exit->exit_info, EX_ILLUSION) )
+        {
           break;
+        }
         count++;
-        if (!brief_mode)
+        if( !brief_mode )
+        {
           sprintf(buffer + strlen(buffer), " &+c-%s&n", exits[i]);
+        }
         else
+        {
           sprintf(buffer + strlen(buffer), " &+c-%s&n", short_exits[i]);
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED))
+        }
+        if(IS_SET(exit->exit_info, EX_CLOSED))
+        {
           strcat(buffer, "&+g#&n");
+        }
         break;
       case 3:
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_SECRET) ||
-            IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED) ||
-            IS_SET((world[room_no].dir_option[i])->exit_info, EX_BLOCKED))
+        if( IS_SET(exit->exit_info, EX_SECRET) || IS_SET(exit->exit_info, EX_CLOSED)
+          || IS_SET(exit->exit_info, EX_BLOCKED) )
+        {
           break;
+        }
         count++;
         if (!brief_mode)
+        {
           sprintf(buffer + strlen(buffer), " &+c-%s&n", exits[i]);
+        }
         else
+        {
           sprintf(buffer + strlen(buffer), " &+c-%s&n", short_exits[i]);
+        }
         break;
       case 4:
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_SECRET) ||
-            (IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED) &&
-             (IS_SET((world[room_no].dir_option[i])->exit_info, EX_PICKPROOF)
-              || ((world[room_no].dir_option[i])->key == -2))) ||
-            IS_SET((world[room_no].dir_option[i])->exit_info, EX_BLOCKED))
+        if( IS_SET((world[room_no].dir_option[i])->exit_info, EX_SECRET)
+          || (IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED)
+          && (IS_SET((world[room_no].dir_option[i])->exit_info, EX_PICKPROOF)
+          || ((world[room_no].dir_option[i])->key == -2)))
+          || IS_SET((world[room_no].dir_option[i])->exit_info, EX_BLOCKED))
+        {
           break;
+        }
         count++;
-        if (!brief_mode)
+        if( !brief_mode )
+        {
           sprintf(buffer + strlen(buffer), " &+c-%s&n", exits[i]);
+        }
         else
+        {
           sprintf(buffer + strlen(buffer), " &+c-%s&n", short_exits[i]);
-        if (IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED))
+        }
+        if( IS_SET((world[room_no].dir_option[i])->exit_info, EX_CLOSED) )
+        {
           strcat(buffer, "&+g#&n");
+        }
         break;
       }
     }
   }
-  else if (mode == 2)
+  else if( mode == 2 )
   {
     strcat(buffer, "\n");
-
-    for (count = 0, i = 0; i < NUM_EXITS; i++)
+    for( count = 0, i = 0; i < NUM_EXITS; i++ )
     {
-      if (!EXIT(ch, i) ||
-          ((EXIT(ch, i)->to_room == NOWHERE) && (vis_mode != 1)))
+      exit = world[room_no].dir_option[i];
+      if( !exit || (exit->to_room == NOWHERE && (vis_mode != 1)) )
+      {
         continue;
+      }
+      vis_mode = get_vis_mode(ch, exit->to_room);
 
-      switch (vis_mode)
+      switch( vis_mode )
       {
       case 1:
         count++;
         sprintf(buffer + strlen(buffer), "%s- %s%s%s%s%s%s&n ", exits[i],
-                IS_SET(EXIT(ch, i)->exit_info, EX_ISDOOR) ? "&+yD" : " ",
-                IS_SET(EXIT(ch, i)->exit_info, EX_CLOSED) ? "&+gC" : " ",
-                IS_SET(EXIT(ch, i)->exit_info, EX_LOCKED) ? "&+RL&n" : " ",
-                IS_SET(EXIT(ch, i)->exit_info, EX_SECRET) ? "&+LS&n" : " ",
-                IS_SET(EXIT(ch, i)->exit_info, EX_BLOCKED) ? "&+bB" : " ",
-                IS_SET(EXIT(ch, i)->exit_info, EX_WALLED) ? "&+YW&n" : " ");
+          IS_SET(exit->exit_info, EX_ISDOOR) ? "&+yD" : " ",
+          IS_SET(exit->exit_info, EX_CLOSED) ? "&+gC" : " ",
+          IS_SET(exit->exit_info, EX_LOCKED) ? "&+RL&n" : " ",
+          IS_SET(exit->exit_info, EX_SECRET) ? "&+LS&n" : " ",
+          IS_SET(exit->exit_info, EX_BLOCKED) ? "&+bB" : " ",
+          IS_SET(exit->exit_info, EX_WALLED) ? "&+YW&n" : " ");
 
-        if (EXIT(ch, i)->to_room != NOWHERE)
+        if( exit->to_room != NOWHERE )
         {
-          if (IS_SET(world[EXIT(ch, i)->to_room].room_flags, MAGIC_DARK))
+          if (IS_SET(world[exit->to_room].room_flags, MAGIC_DARK))
+          {
             strcat(buffer, "(&+LMagic Dark&n) ");
-          else if (IS_DARK(EXIT(ch, i)->to_room))
+          }
+          else if (!IS_LIGHT(exit->to_room))
+          {
             strcat(buffer, "(&+LDark&n) ");
-          else
-            if (IS_SET(world[EXIT(ch, i)->to_room].room_flags, MAGIC_LIGHT))
+          }
+          else if (IS_SET(world[exit->to_room].room_flags, MAGIC_LIGHT))
+          {
             strcat(buffer, "(&+WMagic Light&n) ");
+          }
         }
-        if (IS_SET(ch->specials.act, PLR_VNUM))
+        if( IS_TRUSTED(ch) && IS_SET(ch->specials.act, PLR_VNUM) )
         {
-          if (EXIT(ch, i)->to_room == NOWHERE)
+          if( exit->to_room == NOWHERE )
+          {
             strcat(buffer, "[&+RNOWHERE&N] ");
+          }
           else
+          {
             sprintf(buffer + strlen(buffer), "[&+R%d&N:&+C%d&N] ",
-                    zone_table[world[EXIT(ch, i)->to_room].zone].number,
-                    world[EXIT(ch, i)->to_room].number);
+              zone_table[world[exit->to_room].zone].number, world[exit->to_room].number);
+          }
         }
-        if (EXIT(ch, i)->to_room != NOWHERE)
-          strcat(buffer, world[EXIT(ch, i)->to_room].name);
+        if( exit->to_room != NOWHERE )
+        {
+          strcat(buffer, world[exit->to_room].name);
+        }
         strcat(buffer, "\n");
         break;
       case 2:
-        if ((EXIT(ch, i)->to_room == NOWHERE) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_SECRET) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_BLOCKED))
+        if( (exit->to_room == NOWHERE) || IS_SET(exit->exit_info, EX_SECRET)
+          || IS_SET(exit->exit_info, EX_BLOCKED) )
+        {
           break;
+        }
         count++;
         sprintf(buffer + strlen(buffer), "%s- ", exits[i]);
-        if (IS_SET(EXIT(ch, i)->exit_info, EX_ISDOOR))
-          sprintf(buffer + strlen(buffer), "(%s %s) ",
-                  IS_SET(EXIT(ch, i)->exit_info,
-                         EX_CLOSED) ? "closed" : "open", FirstWord(EXIT(ch,
-                                                                        i)->
-                                                                   keyword));
-  	    
-  	    if (check_visible_wall(ch, i))   /* can we see that exit is walled off ?*/
-		      sprintf(buffer + strlen(buffer), "(%s) ", get_wall_dir(ch, i)->short_description);
-		      
-        if (!IS_SET(EXIT(ch, i)->exit_info, EX_CLOSED))
+        if( IS_SET(exit->exit_info, EX_ISDOOR) )
         {
-          if(!IS_TWILIGHT_ROOM(EXIT(ch, i)->to_room) &&
-             (IS_SUNLIT(EXIT(ch, i)->to_room) ||
-             IS_SET(world[EXIT(ch, i)->to_room].room_flags, MAGIC_LIGHT)) &&
-             IS_AFFECTED2(ch, AFF2_ULTRAVISION) &&
-             !RACE_GOOD(ch))
-              strcat(buffer, "&+WToo bright to tell.&n.");
-          else if(!IS_TWILIGHT_ROOM(EXIT(ch, i)->to_room) &&
-                  (IS_SET(world[EXIT(ch, i)->to_room].room_flags,
-                  MAGIC_DARK) ||
-                  (IS_DARK(EXIT(ch, i)->to_room) &&
-                  !IS_AFFECTED2(ch, AFF2_ULTRAVISION))) &&
-                  !RACE_EVIL(ch))
-                    strcat(buffer, "&+LToo dark to tell.&n.");
-          else
-            strcat(buffer, world[EXIT(ch, i)->to_room].name);
+          sprintf(buffer + strlen(buffer), "(%s %s) ", IS_SET(exit->exit_info, EX_CLOSED) ? "closed" : "open",
+            FirstWord(EXIT(ch, i)->keyword));
+        }
+        /* can we see that exit is walled off ?*/
+  	    if( check_visible_wall(ch, i) )
+        {
+		      sprintf(buffer + strlen(buffer), "(%s) ", get_wall_dir(ch, i)->short_description);
+        }
+        if( !IS_SET(exit->exit_info, EX_CLOSED) )
+        {
+          strcat(buffer, world[exit->to_room].name);
         }
         strcat(buffer, "\n");
         break;
       case 3:
-        if ((EXIT(ch, i)->to_room == NOWHERE) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_SECRET) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_CLOSED) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_BLOCKED) ||
-            IS_DARK(EXIT(ch, i)->to_room))
+        if( (exit->to_room == NOWHERE) || IS_SET(exit->exit_info, EX_SECRET)
+          || IS_SET(exit->exit_info, EX_CLOSED) || IS_SET(exit->exit_info, EX_BLOCKED) )
+        {
           break;
+        }
         count++;
-        sprintf(buffer + strlen(buffer), "%s- %s\n", exits[i],
-                world[EXIT(ch, i)->to_room].name);
+        sprintf(buffer + strlen(buffer), "%s- %s\n", exits[i], world[exit->to_room].name);
         break;
       case 4:
-        if ((EXIT(ch, i)->to_room == NOWHERE) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_SECRET) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_BLOCKED) ||
-            IS_SET(EXIT(ch, i)->exit_info, EX_PICKPROOF) ||
-            (EXIT(ch, i)->key == -2))
+        if( (exit->to_room == NOWHERE) || IS_SET(exit->exit_info, EX_SECRET)
+          || IS_SET(exit->exit_info, EX_BLOCKED) || IS_SET(exit->exit_info, EX_PICKPROOF)
+          || (exit->key == -2) )
+        {
           break;
+        }
         count++;
         sprintf(buffer + strlen(buffer), "%s- ", exits[i]);
-        if (IS_SET(EXIT(ch, i)->exit_info, EX_ISDOOR) &&
-            IS_SET(EXIT(ch, i)->exit_info, EX_CLOSED))
+        if( IS_SET(exit->exit_info, EX_ISDOOR) && IS_SET(exit->exit_info, EX_CLOSED) )
+        {
           strcat(buffer, "(veiled)\n");
+        }
         else
+        {
           strcat(buffer, "open\n");
+        }
+        break;
+      case 5:
+        strcat(buffer, "&+WToo bright to tell.&n.");
+        break;
+      case 6:
+        strcat(buffer, "&+LToo dark to tell.&n.");
+        break;
+      default:
+        strcat(buffer, "Buggy vis mode, plz tell a god.");
         break;
       }
     }
   }
-  if (!count)
+  if( !count )
+  {
     strcat(buffer, " &+RNone!\n");
-  else if (mode == 1)
+  }
+  else if( mode == 1 )
+  {
     strcat(buffer, "\n");
+  }
 
   send_to_char(buffer, ch);
 }
@@ -3341,48 +3381,28 @@ void do_examine(P_char ch, char *argument, int cmd)
 
 void do_exits(P_char ch, char *argument, int cmd)
 {
-  if (!ch->desc || (ch->in_room == NOWHERE))
+  if( !ch->desc || (ch->in_room == NOWHERE) )
+  {
     return;
+  }
 
-  if (GET_STAT(ch) < STAT_SLEEPING)
+  if( GET_STAT(ch) < STAT_SLEEPING )
+  {
     return;
+  }
   else if (GET_STAT(ch) == STAT_SLEEPING)
   {
     send_to_char("Try opening your eyes first.\n", ch);
     return;
   }
+
   if (IS_AFFECTED(ch, AFF_BLIND))
   {
     send_to_char("You can't see a damn thing, you're blinded!\n", ch);
     return;
   }
-  
-  /*
-  if (IS_DAYBLIND(ch))
-  {
-    send_to_char("&+WArgh!!! The sun is too bright.\n", ch);
-    return;
-  }
-  */
 
-  /*
-   * ultravision is 'dark sight', basically chars with ultravision can
-   * see in total darkness, just like 'normal' chars can see in
-   * daylight, chars with ultravision are completely blind in 'normal'
-   * light.  JAB
-   */
-
-  if (IS_SET(world[ch->in_room].room_flags, MAGIC_DARK) &&
-      !IS_TWILIGHT_ROOM(ch->in_room))
-  {
-    if (IS_TRUSTED(ch))
-      send_to_char("&+LRoom is magically dark.\n", ch);
-    else if (IS_PC(ch) && !IS_AFFECTED2(ch, AFF2_ULTRAVISION))
-    {
-      send_to_char("&+LIt is pitch black...\n", ch);
-      return;
-    }
-  }
+  // Handles all visibility modes.
   show_exits_to_char(ch, ch->in_room, 2);
 }
 
@@ -8320,97 +8340,96 @@ void do_glance(P_char ch, char *argument, int cmd)
   char     name[MAX_INPUT_LENGTH];
   char     Gbuf1[MAX_STRING_LENGTH];
   P_char   tar_char = NULL;
-  int      percent, j;
+  int      percent, j, vis_mode;
   int      wear_order[] =
     { 24, 40, 6, 19, 21, 22, 20, 39, 3, 4, 5, 35, 37, 12, 27, 23, 13, 28, 29,
     30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1, 2, 16, 17, 25, 26, 18, 7, 36, 8,
       38, -1
   };
 
-  if (!ch->desc)
+  if( !IS_ALIVE(ch) || !ch->desc )
+  {
     return;
-
-/*
- * Technically, this doesn't have to be here either, but if you want the
- * proper messages, I guess. . . .
- */
-  if (IS_AFFECTED(ch, AFF_BLIND))
-    send_to_char("You can't see a thing, you're blinded!\n", ch);
-  /*
-  else if (IS_DAYBLIND(ch))
-    send_to_char("&+WArgh!!! The sun is too bright!\n", ch);
-  */
-  else if (IS_DARK(ch->in_room) && !IS_TRUSTED(ch) &&
-           !IS_AFFECTED(ch, AFF_INFRAVISION) &&
-           !IS_AFFECTED2(ch, AFF2_ULTRAVISION) &&
-           !IS_TWILIGHT_ROOM(ch->in_room))
-  {
-    send_to_char("It is pitch black...\n", ch);
   }
-  else
+
+  if( IS_AFFECTED(ch, AFF_BLIND) )
   {
+    send_to_char("You can't see a thing, you're blinded!\n", ch);
+    return;
+  }
 
-    if (*argument)
-    {
-      one_argument(argument, name);
-      tar_char = get_char_room_vis(ch, name);
-      if (!tar_char)
-      {
-        send_to_char("You don't see that here.\n", ch);
-        return;
-      }
-    }
-    else if (ch->specials.fighting)
-      tar_char = ch->specials.fighting;
 
-    if (!tar_char)
+  /* Uncomment this if you want to make dayblind/nightblind active on glance.
+
+  vis_mode = get_vis_mode(ch, room_no);
+  if( vismode == 5 )
+  {
+    send_to_char("&+LIt is pitch black...&n\n", ch);
+    return;
+  }
+  else if( vis_mode == 6 )
+  {
+    send_to_char("&+WArgh!!! The sun is too bright!\n", ch);
+    return;
+  }
+  */
+
+  if( *argument )
+  {
+    one_argument(argument, name);
+    if( !(tar_char = get_char_room_vis(ch, name)) )
     {
-      send_to_char("Glance at whom?\n", ch);
+      send_to_char("You don't see that here.\n", ch);
       return;
     }
+  }
+  else if( ch->specials.fighting )
+  {
+    tar_char = ch->specials.fighting;
+  }
+  if( !tar_char )
+  {
+    send_to_char("Glance at whom?\n", ch);
+    return;
+  }
 
-    show_visual_status(ch, tar_char);
+  show_visual_status(ch, tar_char);
 
-    if (GET_SPEC(ch, CLASS_ROGUE, SPEC_THIEF) || GET_CLASS(ch, CLASS_THIEF))
+  if( GET_SPEC(ch, CLASS_ROGUE, SPEC_THIEF) || GET_CLASS(ch, CLASS_THIEF) )
+  {
+    for( j = 0; wear_order[j] != -1; j++ )
     {
-      for (j = 0; wear_order[j] != -1; j++)
+      if( wear_order[j] == -2 )
       {
-        if (wear_order[j] == -2)
+        send_to_char("You are holding:\n", ch);
+        continue;
+      }
+      if( tar_char->equipment[wear_order[j]] )
+      {
+        if( CAN_SEE_OBJ(ch, tar_char->equipment[wear_order[j]]) || (ch == tar_char) )
         {
-          send_to_char("You are holding:\n", ch);
-          continue;
+          if( ((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD))
+            && (wield_item_size(tar_char, tar_char->equipment[wear_order[j]]) == 2) )
+          {
+            send_to_char( ((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD)
+              && (tar_char->equipment[wear_order[j]]->type != ITEM_WEAPON))
+              ? "<held in both hands> " : "<wielding twohanded> ", ch);
+          }
+          else
+          {
+            send_to_char((wear_order[j] >= WIELD && wear_order[j] <= HOLD
+              && tar_char->equipment[wear_order[j]]->type != ITEM_FIREWEAPON
+              && tar_char->equipment[wear_order[j]]->type != ITEM_WEAPON)
+              ? where[HOLD] : where[wear_order[j]], ch);
+          }
         }
-        if (tar_char->equipment[wear_order[j]])
+        if( CAN_SEE_OBJ(ch, tar_char->equipment[wear_order[j]]) )
         {
-          if (CAN_SEE_OBJ(ch, tar_char->equipment[wear_order[j]]) ||
-              (ch == tar_char))
-          {
-
-            if (((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD)) &&
-                (wield_item_size(tar_char, tar_char->equipment[wear_order[j]]) ==
-                 2))
-              send_to_char(((wear_order[j] >= WIELD) &&
-                            (wear_order[j] <= HOLD) &&
-                            (tar_char->equipment[wear_order[j]]->type !=
-                             ITEM_WEAPON)) ? "<held in both hands> " :
-                           "<wielding twohanded> ", ch);
-            else
-              send_to_char((wear_order[j] >= WIELD &&
-                            wear_order[j] <= HOLD &&
-                            tar_char->equipment[wear_order[j]]->type !=
-                             ITEM_FIREWEAPON &&
-                            tar_char->equipment[wear_order[j]]->type !=
-                             ITEM_WEAPON) ? where[HOLD] :
-                           where[wear_order[j]], ch);
-          }
-          if (CAN_SEE_OBJ(ch, tar_char->equipment[wear_order[j]]))
-          {
-            show_obj_to_char(tar_char->equipment[wear_order[j]], ch, 1, 1);
-          }
-          else if (ch == tar_char)
-          {
-            send_to_char("Something.\n", ch);
-          }
+          show_obj_to_char(tar_char->equipment[wear_order[j]], ch, 1, 1);
+        }
+        else if (ch == tar_char)
+        {
+          send_to_char("Something.\n", ch);
         }
       }
     }
@@ -8436,7 +8455,7 @@ void do_scan(P_char ch, char *argument, int cmd)
   bool     found;
   P_char   vict, vict_next;
   int      was_in_room, percent, basemod = 0, dirmod = 0;
-  int      obscurmist = 0;
+  int      obscurmist = 0, vis_mode;
   char     buf3[20];
 
   if( !IS_ALIVE(ch) )
@@ -8580,9 +8599,12 @@ void do_scan(P_char ch, char *argument, int cmd)
           continue;
         if( IS_SET(world[EXIT(ch, dir)->to_room].room_flags, BLOCKS_SIGHT) )
           continue;
-        if( IS_DARK(ch->in_room) )
+        vis_mode = get_vis_mode(ch, EXIT(ch, dir)->to_room);
+
+        // If too dark or too bright.
+        if( vis_mode == 5 || vis_mode == 6 )
         {
-          visibility -= IS_AFFECTED2(ch, AFF2_ULTRAVISION) ? 0 : 1;
+          visibility -= 1;
         }
 
         for (vict = world[EXIT(ch, dir)->to_room].people; vict != NULL; vict = vict_next)

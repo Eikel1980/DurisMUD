@@ -124,13 +124,13 @@ int get_vis_mode(P_char ch, int room)
   {
     return 2;
   }
-  // Normal dayvision.
-  if( !has_innate(ch, INNATE_DAYBLIND) && (IS_LIGHT(room) || flame || IS_MAGIC_LIGHT(room)) )
+  // Normal dayvision: Not dayblind and in lit room.
+  if( !has_innate(ch, INNATE_DAYBLIND) && (CAN_DAYPEOPLE_SEE(room) || flame) )
   {
     return 2;
   }
-  // Normal nightvision
-  if( IS_AFFECTED2(ch, AFF2_ULTRAVISION) && (IS_DARK(room) || globe || IS_MAGIC_DARK(room)) )
+  // Normal nightvision: Ultravision and dark/twilight room.
+  if( IS_AFFECTED2(ch, AFF2_ULTRAVISION) && (CAN_NIGHTPEOPLE_SEE(room) || globe) )
   {
     return 2;
   }
@@ -146,13 +146,14 @@ int get_vis_mode(P_char ch, int room)
   }
 
   // Ok, they don't have ultra .. if it's dark and they have infra.
-  if( IS_AFFECTED(ch, AFF_INFRAVISION) && (IS_DARK(room) || IS_MAGIC_DARK(room)) )
+  if( IS_AFFECTED(ch, AFF_INFRAVISION) && !CAN_DAYPEOPLE_SEE(room) )
   {
     return 3;
   }
 
-  // Ok, they can't see in dark (no infra/ultra)
-  if( IS_DARK(room) || IS_MAGIC_DARK(room) )
+  // Ok, they can't see for some reason:
+  // If in dark (no infra/ultra)
+  if( CAN_NIGHTPEOPLE_SEE(room) )
   {
     return 5;
   }
@@ -1293,6 +1294,7 @@ int ac_can_see(P_char sub, P_char obj, bool check_z)
 
   // Room is magically dark & viewer has no ultra & no mage flames.
   if( IS_SET(world[obj->in_room].room_flags, MAGIC_DARK) && IS_PC(sub)
+    && world[obj->in_room].light <= 0
     && !IS_AFFECTED(sub, AFF_INFRAVISION)
     && !IS_AFFECTED2(sub, AFF2_ULTRAVISION) && !flame )
   {
@@ -1334,6 +1336,7 @@ int ac_can_see(P_char sub, P_char obj, bool check_z)
     return 1;
   }
 
+/*
   if( IS_PC(sub) && IS_AFFECTED2(sub, AFF2_ULTRAVISION) )
   {
     if( (IS_SUNLIT(obj->in_room) || (IS_SET(world[obj->in_room].room_flags, MAGIC_LIGHT)
@@ -1350,13 +1353,21 @@ int ac_can_see(P_char sub, P_char obj, bool check_z)
   {
     return 1;
   }
+*/
 
-  /*
-   * room is dark - do infra checks
-   */
-  if(IS_NPC(sub))
+  if( IS_NPC(sub) )
+  {
     return 1;
+  }
 
+  // Darkened rooms aren't dark when there's a light source.
+  if( IS_SET(world[obj->in_room].room_flags, MAGIC_DARK) && IS_PC(sub)
+    && world[obj->in_room].light > 0 )
+  {
+    return 1;
+  }
+
+  // room is dark - do infra checks
   if(IS_AFFECTED((sub), AFF_INFRAVISION))
   {
     if(IS_UNDEAD(obj) || IS_INSECT(obj) ||
@@ -2631,25 +2642,23 @@ char *PERS(P_char ch, P_char vict, int short_d)
   return PERS(ch, vict, short_d, false);
 }
 
+// This is kinda backwards: how does vict see ch?
 char *PERS(P_char ch, P_char vict, int short_d, bool noansi)
 {
-  if (!CAN_SEE_Z_CORD(vict, ch) ||
-      ((abs(ch->specials.z_cord - vict->specials.z_cord) > 2) &&
-       !IS_AFFECTED4(vict, AFF4_HAWKVISION) && !IS_TRUSTED(vict)))
+  if( !CAN_SEE_Z_CORD(vict, ch) || ((abs(ch->specials.z_cord - vict->specials.z_cord) > 2)
+    && !IS_AFFECTED4(vict, AFF4_HAWKVISION) && !IS_TRUSTED(vict)) )
   {
     strcpy(GS_buf1, "someone");
     return GS_buf1;
   }
 
 #if 0
-  if ((racewar(vict, ch) /* && !IS_ILLITHID(vict)) */  ||
-       !is_introd(ch, vict))
-      {
+  if( (racewar(vict, ch) /* && !IS_ILLITHID(vict)) */  || !is_introd(ch, vict) )
 #else
-  if (racewar(vict, ch) /* && !IS_ILLITHID(vict) */ )
-  {
+  if( racewar(vict, ch) /* && !IS_ILLITHID(vict) */ )
 #endif
-    if (IS_DISGUISE_PC(ch))
+  {
+    if( IS_DISGUISE_PC(ch) )
     {
       sprintf(GS_buf1, noansi ? "%s" : "%s %s",
         noansi ? race_names_table[GET_DISGUISE_RACE(ch)].normal :
@@ -2661,12 +2670,32 @@ char *PERS(P_char ch, P_char vict, int short_d, bool noansi)
         (GET_DISGUISE_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
         race_names_table[GET_DISGUISE_RACE(ch)].ansi);
     }
-    else if (IS_DISGUISE_NPC(ch))
+    else if( IS_DISGUISE_NPC(ch) )
     {
       sprintf(GS_buf1, "%s", (noansi ? strip_ansi(ch->disguise.name).c_str() : (ch->disguise.name)) );
     }
     else
     {
+      // If daypeople are blind..
+      if( !CAN_DAYPEOPLE_SEE(ch->in_room) )
+      {
+        // And vict is a day person or infravision.
+        if( !(IS_TRUSTED(vict) || IS_AFFECTED2(vict, AFF2_ULTRAVISION) || IS_AFFECTED(vict, AFF_WRAITHFORM)) )
+        {
+          // If they have infra, then it's a red shape..
+          if( IS_AFFECTED(vict, AFF_INFRAVISION) )
+          {
+            strcpy(GS_buf1, "a red shape");
+            return GS_buf1;
+          }
+          // Otherwise it's a someone.
+          else
+          {
+            strcpy(GS_buf1, "someone");
+            return GS_buf1;
+          }
+        }
+      }
       sprintf(GS_buf1, noansi ? "%s" : "%s %s",
         noansi ?  race_names_table[GET_RACE(ch)].normal :
         ((GET_RACE(ch) == RACE_ILLITHID) ||
@@ -2681,42 +2710,50 @@ char *PERS(P_char ch, P_char vict, int short_d, bool noansi)
     return GS_buf1;
   }
 
+  // You can always see yourself (unless blind/invis & no di/etc).
+  if( IS_PC(vict) && vict == ch )
+  {
+    return vict->player.name;
+  }
+
 //if( IS_PC(vict) ) debug( "IS_DARK: %s, IS_TWILIGHT: %s.", IS_DARK(ch->in_room) ? "YES" : "NO", IS_TWILIGHT_ROOM(ch->in_room) ? "YES" : "NO" );
-  if( IS_DARK(ch->in_room) && !IS_TWILIGHT_ROOM(ch->in_room) )
+  if( !CAN_DAYPEOPLE_SEE(ch->in_room) )
   {
     if( IS_TRUSTED(vict) || IS_AFFECTED2(vict, AFF2_ULTRAVISION)
       || IS_AFFECTED(vict, AFF_WRAITHFORM) )
     {
-      if (IS_NPC(ch))
-        return (ch->player.short_descr);
-      else if (IS_DISGUISE_PC(ch))
-        return (GET_DISGUISE_NAME(ch));
-      else if (IS_DISGUISE_NPC(ch))
+      if( IS_NPC(ch) )
       {
-          sprintf(GS_buf1, "%s", (noansi ? strip_ansi(ch->disguise.name).c_str()
-                                         : (ch->disguise.name)) );
-          return GS_buf1;
+        return ch->player.short_descr;
+      }
+      else if( IS_DISGUISE_PC(ch) )
+      {
+        return GET_DISGUISE_NAME(ch);
+      }
+      else if( IS_DISGUISE_NPC(ch) )
+      {
+        sprintf(GS_buf1, "%s", (noansi ? strip_ansi(ch->disguise.name).c_str() : (ch->disguise.name)) );
+        return GS_buf1;
       }
       else
       {
-        if (is_introd(ch, vict))
-          return (ch->player.name);
-        if (short_d)
-          return (ch->player.short_descr);
-        sprintf(GS_buf1, noansi ? "%s" : "%s %s", 
-            noansi ?  race_names_table[GET_RACE(ch)].normal :
-            ((GET_RACE(ch) == RACE_ILLITHID) ||
-             (GET_RACE(ch) == RACE_PILLITHID) ||
-	     (GET_RACE(ch) == RACE_ORC) ||
-	     (GET_RACE(ch) == RACE_OROG) ||
-             (GET_RACE(ch) == RACE_OGRE) ||
-             (GET_RACE(ch) == RACE_AGATHINON) ||
-             (GET_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
-            race_names_table[GET_RACE(ch)].ansi);
-        return (GS_buf1);
+        if( is_introd(ch, vict) )
+        {
+          return ch->player.name;
+        }
+        if( short_d )
+        {
+          return ch->player.short_descr;
+        }
+        sprintf(GS_buf1, noansi ? "%s" : "%s %s", noansi ? race_names_table[GET_RACE(ch)].normal
+          : ((GET_RACE(ch) == RACE_ILLITHID) || (GET_RACE(ch) == RACE_PILLITHID)
+          || (GET_RACE(ch) == RACE_ORC) || (GET_RACE(ch) == RACE_OROG) || (GET_RACE(ch) == RACE_OGRE)
+          || (GET_RACE(ch) == RACE_AGATHINON) || (GET_RACE(ch) == RACE_ELADRIN)) ? "An" : "A",
+          race_names_table[GET_RACE(ch)].ansi);
+        return GS_buf1;
       }
     }
-    if (IS_AFFECTED(vict, AFF_INFRAVISION))
+    if( IS_AFFECTED(vict, AFF_INFRAVISION) )
     {
       strcpy(GS_buf1, "a red shape");
       return GS_buf1;
@@ -4822,12 +4859,17 @@ int IS_TWILIGHT_ROOM(int r)
   if( IS_SET(world[r].room_flags, MAGIC_LIGHT) && IS_SET(world[r].room_flags, MAGIC_DARK | DARK) )
     return TRUE;
 
-  // If it's not lit and it's Swamp/Forest, it's Twilight.  What about darked?
-  if( !IS_SET(world[r].room_flags, MAGIC_LIGHT) && ( IS_SWAMP_ROOM(r) || IS_FOREST_ROOM(r) ) )
+  // If it's not lit/darkened and it's Swamp/Forest, it's Twilight.  What about darked?
+  if( !IS_ROOM(r, MAGIC_DARK | MAGIC_LIGHT) && ( IS_SWAMP_ROOM(r) || IS_FOREST_ROOM(r) ) )
     return TRUE;
 
   // Astral/Eth is all Twilight.
   if( world[r].sector_type == SECT_ASTRAL || world[r].sector_type == SECT_ETHEREAL )
+    return TRUE;
+
+  // Indoors is now Twilight so everyone can see inside them (unless acted upon).
+  if( ((world[r].sector_type == SECT_INSIDE) || IS_SET(world[r].room_flags, INDOORS ))
+    && !IS_ROOM(r, MAGIC_LIGHT | MAGIC_DARK | DARK) )
     return TRUE;
 
   return FALSE;

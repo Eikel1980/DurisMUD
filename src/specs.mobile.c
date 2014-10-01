@@ -7630,62 +7630,81 @@ int nw_merthol(P_char ch, P_char pl, int cmd, char *arg)
  * support function for nw_mirroid, sends message to both rooms, and blocks/unblocks the
  * given exit.
  */
-
 void nw_block_exit(int room, int dir, int flag)
 {
   P_char   t_ch;
   int      i, room2;
   const char Gbuf1[] = "You see shifting reflections.\r\n";
-  const char Gbuf2[] =
-    "You hear a faint creaking, and see shifting reflections.\r\n";
+  const char Gbuf2[] = "You hear a faint creaking, and see shifting reflections.\r\n";
   const char Gbuf3[] = "You hear a faint creaking.\r\n";
 
-  if ((room == NOWHERE) || !VIRTUAL_EXIT(room, dir))
+  if( (room == NOWHERE) || !VIRTUAL_EXIT(room, dir) )
     return;
 
-  if (world[room].dir_option[dir]->to_room)
-    room2 = world[room].dir_option[dir]->to_room;
-  else
-    return;
-
-  if (room2 == NOWHERE)
-    return;
-
-  for (i = room; i != room2; i = room2)
+  if( world[room].dir_option[dir]->to_room )
   {
-    if (world[i].people &&
-        (!IS_SET(world[i].room_flags, ROOM_SILENT) || !IS_DARK(i)))
-      if (IS_LIGHT(i))
+    room2 = world[room].dir_option[dir]->to_room;
+  }
+  else
+  {
+    return;
+  }
+
+  if( room2 == NOWHERE )
+  {
+    return;
+  }
+
+  // TODO: Fix this such that is uses vis_mode = get_vis_mode(ch, room_no);
+  //   'cause some people see in dark, some in light, some in both.
+  // WTH does this for loop do?  Looks like crap to me.
+  for( i = room; i != room2; i = room2 )
+  {
+    if( world[i].people && (!IS_ROOM(i, ROOM_SILENT) || IS_LIGHT(i)) )
+    {
+      if( IS_LIGHT(i) )
       {
         LOOP_THRU_PEOPLE(t_ch, world[i].people)
-          if (AWAKE(t_ch) && !IS_AFFECTED(t_ch, AFF_BLIND))
         {
-          if (!IS_SET(world[i].room_flags, ROOM_SILENT))
-            send_to_char(Gbuf2, t_ch);
-          else
-            send_to_char(Gbuf1, t_ch);
+          if( AWAKE(t_ch) && !IS_AFFECTED(t_ch, AFF_BLIND) )
+          {
+            if( !IS_SET(world[i].room_flags, ROOM_SILENT) )
+            {
+              send_to_char(Gbuf2, t_ch);
+            }
+            else
+            {
+              send_to_char(Gbuf1, t_ch);
+            }
+          }
+          else if( AWAKE(t_ch) )
+          {
+            send_to_char(Gbuf3, t_ch);
+          }
         }
-        else if (AWAKE(t_ch))
-          send_to_char(Gbuf3, t_ch);
       }
       else
       {
-        LOOP_THRU_PEOPLE(t_ch, world[i].people) if (AWAKE(t_ch))
-          send_to_char(Gbuf3, t_ch);
+        LOOP_THRU_PEOPLE(t_ch, world[i].people)
+        {
+          if( AWAKE(t_ch) )
+          {
+            send_to_char(Gbuf3, t_ch);
+          }
+        }
       }
+    }
   }
 
-  if (flag)
+  if( flag )
   {
     SET_BIT(world[room].dir_option[dir]->exit_info, EX_BLOCKED);
-    SET_BIT(world[room2].dir_option[(int) rev_dir[dir]]->exit_info,
-            EX_BLOCKED);
+    SET_BIT(world[room2].dir_option[(int) rev_dir[dir]]->exit_info, EX_BLOCKED);
   }
   else
   {
     REMOVE_BIT(world[room].dir_option[dir]->exit_info, EX_BLOCKED);
-    REMOVE_BIT(world[room2].dir_option[(int) rev_dir[dir]]->exit_info,
-               EX_BLOCKED);
+    REMOVE_BIT(world[room2].dir_option[(int) rev_dir[dir]]->exit_info, EX_BLOCKED);
   }
 }
 

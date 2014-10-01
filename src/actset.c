@@ -359,7 +359,8 @@ static void setbit_room(P_char ch, char *name, char *flag, char *val, int on_off
     {"sect", OFFSET(sector_type), (char **) sector_types, ac_byteCopy,
       sizeof(char *)},
     {"flag", OFFSET(room_flags), (char **) room_bits, ac_bitCopy,
-      sizeof(flagDef)}
+      sizeof(flagDef)},
+    {"light", OFFSET(light), NULL, ac_shortCopy}
   };
 
   /* Local Variables */
@@ -368,21 +369,23 @@ static void setbit_room(P_char ch, char *name, char *flag, char *val, int on_off
   /* Executable Section */
   if( !strcmp(name, "here") )
   {
-    room_number = ch->in_room;	
+    room_number = ch->in_room;
   }
   else
   {
     room_number = real_room(atoi(name));
   }
 
-  if (room_number < 0 || room_number > top_of_world)
+  if( room_number < 0 || room_number > top_of_world )
   {
     send_to_char( "Invalid room number.\n\r", ch );
     return;
   }
   setbit_parseTable(ch, (void *) (world + room_number), table, ARRAY_SIZE(table), flag, val, on_off, SETBIT_ROOM);
 
-  room_light(room_number, REAL);
+  // Since we can set room lights (highly temporary as they get reset quickly),
+  //   we don't update the light here. - Lohrr
+//  room_light(room_number, REAL);
 }
 
 /*
