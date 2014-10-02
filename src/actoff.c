@@ -7525,18 +7525,18 @@ void do_rearkick(P_char ch, char *argument, int cmd)
     0, 0
   };
 
-  if(!(ch) || !IS_ALIVE(ch))
+  if( !IS_ALIVE(ch) )
+  {
     return;
+  }
 
-  if(!has_innate(ch, INNATE_HORSE_BODY)
-    && !(GET_RACE(ch) == RACE_QUADRUPED)
-    && !IS_TRUSTED(ch))
+  if( !has_innate(ch, INNATE_HORSE_BODY) && !(GET_RACE(ch) == RACE_QUADRUPED) && !IS_TRUSTED(ch) )
   {
     send_to_char("You wish you were a horse...\n", ch);
     return;
   }
 
-  if(!on_front_line(ch))
+  if( !on_front_line(ch) )
   {
     send_to_char("You can't seem to break the ranks!\n", ch);
     return;
@@ -7544,29 +7544,32 @@ void do_rearkick(P_char ch, char *argument, int cmd)
 
   victim = ParseTarget(ch, argument);
 
-  if(!victim)
+  if( !IS_ALIVE(victim) )
   {
     send_to_char("Rearkick who?\n", ch);
     return;
   }
 
-  if(!CanDoFightMove(ch, victim))
+  if( !CanDoFightMove(ch, victim) )
+  {
     return;
+  }
 
   appear(ch);
 
   victim = guard_check(ch, victim);
 
-  if((percent_chance = chance_kick(ch, victim)) == 0)
+  if( (percent_chance = chance_kick(ch, victim)) == 0 )
+  {
     return;
+  }
 
   vict_size = get_takedown_size(victim);
   ch_size = get_takedown_size(ch);
 
-  // dam = GET_CHAR_SKILL(ch, SKILL_KICK) +
-    // (int) (1.6 * number(1, GET_CHAR_SKILL(ch, SKILL_KICK)));
-  dam = (int)(MAX((int) (GET_C_STR(ch) / 2),
-    (GET_CHAR_SKILL(ch, SKILL_KICK)) * get_property("skill.rearkick.dam", 2) * GET_LEVEL(ch)) / 56);
+  // Rear kick does similar damage to kick, and is no longer level based.  Bad idea.
+  dam = (int)(MAX( GET_C_STR(ch) / 2,
+    (GET_CHAR_SKILL(ch, SKILL_KICK)) * get_property("skill.rearkick.dam", 2) ));
 
   // Randomize damage same as in kick.
   dam = number( dam/2, dam );
