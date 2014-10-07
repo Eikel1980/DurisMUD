@@ -192,8 +192,10 @@ int setup_pet(P_char mob, P_char ch, int duration, int flag)
   P_obj globe;
 
   memset(&af, 0, sizeof(af));
-  if ( !IS_SET(flag, PET_NOORDER) )
+  if( !IS_SET(flag, PET_NOORDER) )
+  {
     af.bitvector = AFF_CHARM;
+  }
   af.flags = AFFTYPE_NODISPEL;
   af.type = SPELL_CHARM_PERSON;
   af.duration = IS_PC(ch) ? duration : -1;
@@ -207,7 +209,8 @@ int setup_pet(P_char mob, P_char ch, int duration, int flag)
 
   duration = af.duration;
   /* the higher the level of the mob, the more likely it'll be aggro to the caster after charm*/
-  if (IS_NPC(mob) && !IS_SET(flag, PET_NOAGGRO) && (GET_LEVEL(mob) > number(30, 62)))
+  if( IS_NPC(mob) && !IS_SET(flag, PET_NOAGGRO) && (GET_LEVEL(mob) > number(30, 62))
+    && !has_innate(ch, INNATE_UNHOLY_ALLIANCE) )
   {
     SET_BIT(mob->specials.act, ACT_MEMORY);
     clearMemory(mob);
@@ -216,7 +219,7 @@ int setup_pet(P_char mob, P_char ch, int duration, int flag)
 
   linked_affect_to_char(mob, &af, ch, LNK_PET);
 
-  if (flag & PET_NOCASH)
+  if( flag & PET_NOCASH )
   {
     GET_PLATINUM(mob) = 0;
     GET_GOLD(mob) = 0;
@@ -224,8 +227,10 @@ int setup_pet(P_char mob, P_char ch, int duration, int flag)
     GET_COPPER(mob) = 0;
   }
 
-  if (IS_NPC(mob))
+  if( IS_NPC(mob) )
+  {
     GET_EXP(mob) = 0;
+  }
   remove_plushit_bits(mob);
 
   return duration;
