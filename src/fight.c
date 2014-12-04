@@ -658,51 +658,51 @@ bool soul_trap(P_char ch, P_char victim)
 
 void appear(P_char ch)
 {
-  if(!(ch))
+  if( !ch )
   {
     logit(LOG_EXIT, "appear called in fight.c without ch");
     raise(SIGSEGV);
   }
-  if(ch)
+
+  REMOVE_BIT(ch->specials.affected_by, AFF_HIDE);
+
+  if( (!IS_SET(ch->specials.affected_by, AFF_INVISIBLE)
+    && !IS_SET(ch->specials.affected_by2, AFF2_MINOR_INVIS)
+    && !IS_SET(ch->specials.affected_by3, AFF3_ECTOPLASMIC_FORM)
+    && !IS_SET(ch->specials.affected_by3, AFF3_NON_DETECTION)) )
   {
-    if (IS_AFFECTED(ch, AFF_HIDE))
-      REMOVE_BIT(ch->specials.affected_by, AFF_HIDE);
-
-    if((!IS_SET(ch->specials.affected_by, AFF_INVISIBLE) &&
-          !IS_SET(ch->specials.affected_by2, AFF2_MINOR_INVIS) &&
-          !IS_SET(ch->specials.affected_by3, AFF3_ECTOPLASMIC_FORM)))
       return;
-
-    if (affected_by_spell(ch, SPELL_INVISIBLE))
-      affect_from_char(ch, SPELL_INVISIBLE);
-
-    if (affected_by_spell(ch, SKILL_PERMINVIS))
-      affect_from_char(ch, SKILL_PERMINVIS);
-
-    if (affected_by_spell(ch, SPELL_INVIS_MAJOR))
-      affect_from_char(ch, SPELL_INVIS_MAJOR);
-
-    if (affected_by_spell(ch, SPELL_ECTOPLASMIC_FORM))
-      affect_from_char(ch, SPELL_ECTOPLASMIC_FORM);
-
-    if (affected_by_spell(ch, SPELL_MIND_BLANK))
-      affect_from_char(ch, SPELL_MIND_BLANK);
-
-    act("$n snaps into visibility.", TRUE, ch, 0, 0, TO_ROOM);
-    act("You snap into visibility.", FALSE, ch, 0, 0, TO_CHAR);
-
-    if(IS_SET(ch->specials.affected_by, AFF_INVISIBLE))
-      REMOVE_BIT(ch->specials.affected_by, AFF_INVISIBLE);
-
-    if(IS_SET(ch->specials.affected_by2, AFF2_MINOR_INVIS))
-      REMOVE_BIT(ch->specials.affected_by2, AFF2_MINOR_INVIS);
-
-    if(IS_SET(ch->specials.affected_by3, AFF3_ECTOPLASMIC_FORM))
-      REMOVE_BIT(ch->specials.affected_by3, AFF3_ECTOPLASMIC_FORM);
-
-    if(IS_SET(ch->specials.affected_by3, AFF3_NON_DETECTION))
-      REMOVE_BIT(ch->specials.affected_by3, AFF3_NON_DETECTION);
   }
+
+  affect_from_char(ch, SPELL_INVISIBLE);
+  affect_from_char(ch, SKILL_PERMINVIS);
+  affect_from_char(ch, SPELL_INVIS_MAJOR);
+  affect_from_char(ch, SPELL_ECTOPLASMIC_FORM);
+
+  REMOVE_BIT(ch->specials.affected_by, AFF_INVISIBLE);
+  REMOVE_BIT(ch->specials.affected_by2, AFF2_MINOR_INVIS);
+  REMOVE_BIT(ch->specials.affected_by3, AFF3_ECTOPLASMIC_FORM);
+
+  if( IS_SET(ch->specials.affected_by3, AFF3_NON_DETECTION) )
+  {
+    struct affected_type *afp;
+
+    for( afp = ch->affected; afp; afp = afp->next )
+    {
+      // Need to remove the mind blank effect without removing the cooldown.
+      if( afp->type == SPELL_MIND_BLANK && afp->bitvector3 == AFF3_NON_DETECTION )
+      {
+        affect_remove(ch, afp);
+        // If you decide not to break here, for whatever reason, you need to modify the loop.
+        break;
+      }
+    }
+    REMOVE_BIT(ch->specials.affected_by3, AFF3_NON_DETECTION);
+  }
+
+  act("$n snaps into visibility.", TRUE, ch, 0, 0, TO_ROOM);
+  act("You snap into visibility.", FALSE, ch, 0, 0, TO_CHAR);
+
 }
 
 void setHeavenTime(P_char victim)

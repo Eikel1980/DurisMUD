@@ -1271,104 +1271,85 @@ void spell_spinal_corruption(int level, P_char ch, char *arg, int type,
 {
   struct affected_type af;
 
-  if(!(ch)) // Something amiss. Nov08 -Lucrot
+  if( !ch )
   {
     logit(LOG_EXIT, "spell_spinal_corruption called in psionics.c without ch");
     raise(SIGSEGV);
   }
-  if(ch) // Just making sure.
+  if(!IS_ALIVE(ch))
   {
-    if(!IS_ALIVE(ch))
-    {
-      send_to_char("Stay still. You are dead.&n\r\n", ch);
-      return;
-    }
-    if(victim &&
-      !IS_ALIVE(victim))
-    {
-      act("&+MBut it's dead already!", TRUE, ch, 0, victim, TO_CHAR);
-      return;
-    }
-
-    if(affected_by_spell(ch, TAG_CONJURED_PET))
+    send_to_char("Stay still. You are dead.&n\r\n", ch);
     return;
-    if(CheckMindflayerPresence(ch))
-    {
-      send_to_char
-        ("You sense an ethereal disturbance and abort your spell!\r\n", ch);
-      return;
-    }
-    if (StatSave
-        (victim, APPLY_POW,
-         MIN(1, GET_LEVEL(ch) - GET_LEVEL(victim)) * POW_DIFF(ch, victim)))
-    {
-      send_to_char("&+RYou feel a twinge of pain along your spine.&n\r\n",
-                   victim);
-      return;
-    }
-    appear(ch);
+  }
+  if( !IS_ALIVE(victim) )
+  {
+    act("&+MBut it's dead already!", TRUE, ch, 0, NULL, TO_CHAR);
+    return;
+  }
 
-    act("&+RYou smile as you sense the agony $N&+R is feeling.", TRUE, ch, 0,
-        victim, TO_CHAR);
-    act("&+RYou collapse in agony as pure fire envelops your spine!&n", TRUE,
-        ch, 0, victim, TO_VICT);
-    act("&+R$N&+R suddenly collapses, screaming in agony!", TRUE, ch, 0, victim,
-        TO_NOTVICT);
+  if(affected_by_spell(ch, TAG_CONJURED_PET))
+  {
+    return;
+  }
 
-    if(ch &&
-       victim &&
-       !StatSave(victim, APPLY_POW, POW_DIFF(ch, victim)))
+  if(CheckMindflayerPresence(ch))
+  {
+    send_to_char("You sense an ethereal disturbance and abort your spell!\r\n", ch);
+    return;
+  }
+
+  if( StatSave(victim, APPLY_POW, MIN(1, GET_LEVEL(ch) - GET_LEVEL(victim)) * POW_DIFF(ch, victim)) )
+  {
+    send_to_char("&+RYou feel a twinge of pain along your spine.&n\r\n", victim);
+    return;
+  }
+  appear(ch);
+
+  act("&+RYou smile as you sense the agony $N&+R is feeling.", TRUE, ch, 0, victim, TO_CHAR);
+  act("&+RYou collapse in agony as pure fire envelops your spine!&n", TRUE, ch, 0, victim, TO_VICT);
+  act("&+R$N&+R suddenly collapses, screaming in agony!", TRUE, ch, 0, victim, TO_NOTVICT);
+
+  if( !StatSave(victim, APPLY_POW, POW_DIFF(ch, victim)) )
+  {
+    switch (number(1, 5))
     {
-      switch (number(1, 5))
+    case 1:
+    	CharWait(victim, (int) (0.75 * PULSE_VIOLENCE));
+    	act("$n falls to the ground, trashing wildly!.", FALSE, victim, 0, 0, TO_ROOM);
+      send_to_char("&+LYou feel your body stop responding to your commands, and you fall to the ground, thrashing.&n\r\n", victim);
+      break;
+    case 2:
+      if (GET_STAT(ch) > STAT_SLEEPING && !IS_TRUSTED(ch))
       {
-      case 1:
-    	{
-    	  CharWait(victim, (int) (0.75 * PULSE_VIOLENCE));
-    	  act("$n falls to the ground, trashing wildly!.",
-              FALSE, victim, 0, 0, TO_ROOM);
-        send_to_char
-            ("&+LYou feel your body stop responding to your commands, and you fall to the ground, thrashing.&n\r\n",
-             victim);
-        break;
+        act("&+L$n suddenly loses control, and falls asleep.", FALSE, victim, 0, 0, TO_ROOM);
+        send_to_char("&+LYour are overwhelmed with a great desire to get some rest. Yawn.\r\n", victim);
+        SET_POS(victim, GET_POS(victim) + STAT_SLEEPING);
+        update_pos(victim);
       }
-      case 2:
-    		if (GET_STAT(ch) > STAT_SLEEPING && !IS_TRUSTED(ch))
-    		{
-          act("&+L$n suddenly loses control, and falls asleep.",
-              FALSE, victim, 0, 0, TO_ROOM);
-          send_to_char
-            ("&+LYour are overwhelmed with a great desire to get some rest. Yawn.\r\n",
-             victim);
-    			SET_POS(victim, GET_POS(victim) + STAT_SLEEPING);
-          update_pos(victim);
-    		}
-        break;
-      case 3:
-    	  spell_silence(60, ch, NULL, 0, victim, 0);
-        break;
-      case 4:
-    	  if(!affected_by_spell(victim, SPELL_SPINAL_CORRUPTION))
-    		{
-          bzero(&af, sizeof(af));
-          af.type = SPELL_SPINAL_CORRUPTION;
-          af.duration =  3;
-          af.bitvector2 = AFF2_SLOW;
-          affect_to_char(victim, &af);
-          act("&+LThe power of your psychic assault renders $N unable to react as quickly!", TRUE, ch, 0,
-            victim, TO_CHAR);
-          send_to_char("&+LIt seems as though you aren't as spry as you once were...\r\n", victim);
-    		}
-    	  break;
-      case 5:
+      break;
+    case 3:
+      spell_silence(60, ch, NULL, 0, victim, 0);
+      break;
+    case 4:
+      if( !affected_by_spell(victim, SPELL_SPINAL_CORRUPTION) )
       {
-        poison_lifeleak(level, ch, 0, 0, victim, 0);
-        act("$n&n&+G shivers slightly.", TRUE, victim, 0, 0, TO_ROOM);
-         send_to_char("&+yYou feel very sick.\n", victim);
-        break;
+        bzero(&af, sizeof(af));
+        af.type = SPELL_SPINAL_CORRUPTION;
+        af.duration =  3;
+        af.bitvector2 = AFF2_SLOW;
+        affect_to_char(victim, &af);
+        act("&+LThe power of your psychic assault renders $N unable to react as quickly!", TRUE, ch, 0,
+          victim, TO_CHAR);
+        send_to_char("&+LIt seems as though you aren't as spry as you once were...\r\n", victim);
       }
-      default:
-        break;
-      }
+      break;
+    case 5:
+      poison_lifeleak(level, ch, 0, 0, victim, 0);
+      act("$n&n&+G shivers slightly.", TRUE, victim, 0, 0, TO_ROOM);
+      send_to_char("&+yYou feel very sick.\n", victim);
+      break;
+    default:
+      break;
     }
   	SET_POS(victim, POS_PRONE + GET_STAT(victim));
     update_pos(victim);
@@ -1443,9 +1424,7 @@ void spell_memory_block(int level, P_char ch, char *arg, int type, P_char victim
   return;
 }
 
-void
-spell_psionic_cloud(int level, P_char ch, char *arg, int type, P_char victim,
-                    P_obj obj)
+void spell_psionic_cloud(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   struct affected_type af;
   struct affected_type af1;
@@ -2534,41 +2513,42 @@ void spell_mind_blank(int level, P_char ch, char *arg, int type, P_char victim, 
 {
   struct affected_type af;
 
-  if (!(victim && ch))
+  if( !(victim && ch) )
   {
     logit(LOG_EXIT, "assert: bogus params in mind blank");
     raise(SIGSEGV);
   }
-  if (CheckMindflayerPresence(ch))
+  if( CheckMindflayerPresence(ch) )
   {
-    send_to_char
-      ("You sense an ethereal disturbance and abort your spell!\r\n", ch);
+    send_to_char("You sense an ethereal disturbance and abort your spell!\r\n", ch);
     return;
   }
 
   if (affected_by_spell(ch, TAG_CONJURED_PET))
-  return;
-
-  if (affected_by_spell(ch, SPELL_MIND_BLANK))
   {
-    struct affected_type *af1;
+    return;
+  }
 
-    for (af1 = victim->affected; af1; af1 = af1->next)
-      if (af1->type == SPELL_MIND_BLANK)
-      {
-        af1->duration = level / 2;
-      }
+  if( affected_by_spell(ch, SPELL_MIND_BLANK) )
+  {
+    act( "Your mind goes completely blank... Maybe you should wait a while before trying that again.", FALSE, ch, 0, 0, TO_CHAR );
     return;
   }
 
   bzero(&af, sizeof(af));
   af.type = SPELL_MIND_BLANK;
-  af.duration = level / 2;
+  af.duration = level * 2 * WAIT_SEC;
+  af.flags = AFFTYPE_SHORT;
   af.bitvector3 = AFF3_NON_DETECTION;
   affect_to_char(ch, &af);
 
-  act("&+YYour mind now protect you against detection!", FALSE, ch, 0, 0,
-      TO_CHAR);
+  // Cooldown timer.. in minutes.
+  af.flags = 0;
+  af.duration = 15;
+  af.bitvector3 = 0;
+  affect_to_char(ch, &af);
+
+  act("&+YYour mind now protect you against detection!", FALSE, ch, 0, 0, TO_CHAR);
 
   return;
 }
