@@ -10130,7 +10130,8 @@ void do_shadowstep(P_char ch, char *, int)
 
 void do_garrote(P_char ch, char *argument, int cmd)
 {
-  P_char   victim = NULL;
+  P_char victim = NULL;
+  int    chsize, victsize;
 
   if( !(ch) || !IS_ALIVE(ch) )
   {
@@ -10161,6 +10162,20 @@ void do_garrote(P_char ch, char *argument, int cmd)
   if( IS_DESTROYING( ch ) )
   {
     act("You choke $p viciously.", FALSE, ch, ch->specials.destroying_obj, NULL, TO_CHAR);
+    return;
+  }
+
+  chsize = get_takedown_size(ch);
+  victsize = get_takedown_size(victim);
+  // Size handling: +/- 1 (position irrelevant .. neck size is).
+  if( victsize < chsize - 1 )
+  {
+    act("You can't seem to reach down that far.", FALSE, ch, 0, 0, TO_CHAR);
+    return;
+  }
+  if( victsize > chsize + 1 )
+  {
+    act("You can seem to get your arms around $s neck!", FALSE, ch, 0, victim, TO_CHAR);
     return;
   }
 
