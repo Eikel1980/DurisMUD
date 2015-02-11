@@ -3801,7 +3801,7 @@ void do_craft(P_char ch, char *argument, int cmd)
     spell_identify(GET_LEVEL(ch), ch, 0, 0, 0, tobj);
     extract_obj(tobj, FALSE);
     return;
-  }
+ }
   else if(is_abbrev(first, "info"))
   {
     if(choice2 == 0)
@@ -3814,69 +3814,80 @@ void do_craft(P_char ch, char *argument, int cmd)
       send_to_char("You dont appear to have that &+Wrecipe&n in your list.&n\n", ch);
       return;
     }
+
     tobj = read_object(selected, VIRTUAL);
-
-    float tobjvalue = itemvalue(ch, tobj);
-
-    tobjvalue += 4; //minimum craft start value.
-
-    int startmat = get_matstart(tobj);
-
-    tobjvalue = (float)tobjvalue / (float)5;
-
-    int fullcount = tobjvalue;
-
-    float difference = tobjvalue - fullcount;
-    difference = (int)(((float)difference * (float)10.0) / 2);
-
-    P_obj material;
-    P_obj material2;
-    material = read_object(startmat + 4, VIRTUAL);
-    material2 = read_object(startmat + ((int)difference - 1), VIRTUAL);
-    char matbuf[MAX_STRING_LENGTH];
-    //display startmat + difference;
-    if(fullcount != 0)
+    if( !tobj )
     {
-      if(difference == 0)
-      {
-        send_to_char("&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch);
-        sprintf(matbuf, "To craft this item, you will need %d of %s.\r\n&n", fullcount, material->short_description);
-        page_string(ch->desc, matbuf, 1);
-      }
-      else
-      {
-        send_to_char("&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch);
-        sprintf(matbuf, "To craft this item, you will need %d of %s and %d of %s.\r\n&n", fullcount, material->short_description, (int)difference, material2->short_description);
-        page_string(ch->desc, matbuf, 1);
-      }
+      debug( "Couldn't load object vnum %d.", selected );
+      send_to_char( "Couldn't create the object. :(\n\r", ch );
+      return;
+    }
 
+    // Minimum value is iVal 1 -> 1 Max quality material, 0 Min quality materials to create.
+    int iVal = itemvalue(ch, tobj);
+
+    int lowQualityMaterialVnum = get_matstart(tobj);
+
+    if( lowQualityMaterialVnum <= 0 )
+    {
+      send_to_char( "Could not figure out what this is made out of !?  Can bug it if you want.\n\r", ch );
+      debug( "Couldn't get start material for object: '%s' %d.", tobj->short_description, selected );
+      extract_obj(tobj, FALSE);
+      return;
+    }
+
+    // The number of highest quality materials is 1 per 5 itemvalue (with starting point 1@1).
+    int numHighest = (iVal + 4) / 5;
+    // The following gets the remainder.
+    int numLowest = (iVal + 4) - numHighest * 5;
+
+    P_obj matLowest, matHighest;
+
+    matLowest = read_object(lowQualityMaterialVnum, VIRTUAL);
+    matHighest = read_object(lowQualityMaterialVnum + 4, VIRTUAL);
+
+    if( matLowest == NULL || matHighest == NULL )
+    {
+      send_to_char( "Could not figure out what this is made out of !?  Can bug it if you want.\n\r", ch );
+      debug( "Couldn't load a material: matLowest(%s) or matHighest(%s) for object '%s' %d.",
+        (matLowest == NULL) ? "NULL" : matLowest->short_description,
+        (matHighest == NULL) ? "NULL" : matHighest->short_description, tobj->short_description, selected );
+      extract_obj(tobj, FALSE);
+      return;
+    }
+
+    if( numLowest == 0 )
+    {
+      send_to_char("&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch);
+      sprintf(buf1, "To craft this item, you will need %d of %s.\r\n&n", numHighest, matHighest->short_description);
+      page_string(ch->desc, buf1, 1);
     }
     else
     {
       send_to_char("&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch);
-      sprintf(matbuf, "To craft this item, you will need %d of %s.\r\n&n", (int)difference, material2->short_description);
-      page_string(ch->desc, matbuf, 1);
+      sprintf(buf1, "To craft this item, you will need %d of %s and %d of %s.\r\n&n",
+        numHighest, matHighest->short_description, numLowest, matLowest->short_description);
+      page_string(ch->desc, buf1, 1);
     }
 
-    if(has_affect(tobj))
+/* It will never happen that we don't need at least one of matHighest since min itemvalue is 1,
+ *   then we add 4 (total 5) and divide by 5 (result minimum 1).
+ * But, in case we change that, I'm leaving the code here. 2/10/2015
+      send_to_char("&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch);
+      sprintf(buf1, "To craft this item, you will need %d of %s.\r\n&n", numLowest, matLowest->short_description);
+      page_string(ch->desc, buf1, 1);
+*/
+
+    if( has_affect(tobj) )
     {
       send_to_char("...as well as &+W1 &nof &+ma &+Mm&+Ya&+Mg&+Yi&+Mc&+Ya&+Ml &+messence&n due to the &+mmagical &nproperties this item possesses.\r\n", ch);
     }
-    
-    if(tobj)
-    {
-      extract_obj(tobj, FALSE);
-    }
-    
-    if(material2)
-    {
-      extract_obj(material2, FALSE);
-    }
-    
-    if(material)
-    {
-      extract_obj(material, FALSE);
-    }
+
+    // It's safe to assume tobj exists since we checked after the read_object call.
+    extract_obj(tobj, FALSE);
+    // The same follows for matLowest and matHighest.
+    extract_obj(matLowest, FALSE);
+    extract_obj(matHighest, FALSE);
     return;
   }
   else if (is_abbrev(first, "make"))
@@ -3894,153 +3905,168 @@ void do_craft(P_char ch, char *argument, int cmd)
 
 
     tobj = read_object(selected, VIRTUAL);
-
-    float tobjvalue = itemvalue(ch, tobj);
-
-    tobjvalue += 4;
-
-    int startmat = get_matstart(tobj);
-
-    tobjvalue = (float)tobjvalue / (float)5;
-
-    int fullcount = tobjvalue;
-
-    float difference = tobjvalue - fullcount;
-    difference = (int)(((float)difference * (float)10.0) / 2);
-
-    P_obj material;
-    P_obj material2;
-    material = read_object(startmat + 4, VIRTUAL);
-    material2 = read_object(startmat + ((int)difference - 1), VIRTUAL);
-    char matbuf[MAX_STRING_LENGTH];
-
-    int affcount = has_affect(tobj);
-
-
-    P_obj t_obj, nextobj;
-    int i = 0; //highest mat value
-    int o = 0; //lowest mat value
-    int x = 0; //magical essence
-    int y = 0; //crafting tools
-    for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
+    if( !tobj )
     {
-      nextobj = t_obj->next_content;
-
-      if(GET_OBJ_VNUM(t_obj) == GET_OBJ_VNUM(material))
-        i++;
-
-      if(GET_OBJ_VNUM(t_obj) == GET_OBJ_VNUM(material2))
-        o++;
-
-      if(GET_OBJ_VNUM(t_obj) == 400224)
-        y++;
-
-      if(GET_OBJ_VNUM(t_obj) == 400211)
-        x++;
+      debug( "Couldn't load object vnum %d.", selected );
+      send_to_char( "Couldn't create the object. :(\n\r", ch );
+      return;
     }
-    int z = 0;
-    if(has_affect(tobj))
-      z = 1;
-//    debug("do_craft: difference: %d.", (int)difference);
-    if((i < fullcount) || (o < (int)difference) || ((z == 1) && (x < 1)))
+
+    // Minimum value is iVal 1 -> 1 Max quality material, 0 Min quality materials to create.
+    int iVal = itemvalue(ch, tobj);
+
+    int lowQualityMaterialVnum = get_matstart(tobj);
+    int highQualityMaterialVnum = lowQualityMaterialVnum + 4;
+
+    if( lowQualityMaterialVnum <= 0 )
+    {
+      send_to_char( "Could not figure out what this is made out of !?  Can bug it if you want.\n\r", ch );
+      debug( "Couldn't get start material for object: '%s' %d.", tobj->short_description, selected );
+      extract_obj(tobj, FALSE);
+      return;
+    }
+
+    // The number of highest quality materials is 1 per 5 itemvalue (with starting point 1@1).
+    int numHighest = (iVal+4)/5;
+    // The following gets the remainder.
+    int numLowest = iVal - numHighest * 5;
+
+    P_obj matLowest, matHighest;
+
+    matLowest = read_object(lowQualityMaterialVnum, VIRTUAL);
+    matHighest = read_object(highQualityMaterialVnum, VIRTUAL);
+
+    if( matLowest == NULL || matHighest == NULL )
+    {
+      send_to_char( "Could not figure out what this is made out of !?  Can bug it if you want.\n\r", ch );
+      debug( "Couldn't load a material: matLowest(%s) or matHighest(%s) for object '%s' %d.",
+        (matLowest == NULL) ? "NULL" : matLowest->short_description,
+        (matHighest == NULL) ? "NULL" : matHighest->short_description, tobj->short_description, selected );
+      extract_obj(tobj, FALSE);
+      return;
+    }
+
+    // If we're going to require multiple essences, we need to change this to int numAffects ...
+    bool hasAffect = has_affect(tobj);
+
+    int invLowMats = 0; // Number of lowest quality materials in inventory.
+    int invHighMats = 0; // Number of highest quality materials in inventory.
+    int invEssences = 0; // Number of magical essences in inventory.
+    int invTools = 0; // Number of crafting tools in inventory
+    int invVnum = 0; // Vnum of the current inventory object.
+    for( P_obj inventory = ch->carrying; inventory; inventory = inventory->next_content )
+    {
+      invVnum = GET_OBJ_VNUM(inventory);
+
+      if( invVnum == lowQualityMaterialVnum )
+        invLowMats++;
+      else if( invVnum == highQualityMaterialVnum )
+        invHighMats++;
+      else if( invVnum == CRAFTING_ESSENCE_VNUM )
+        invEssences++;
+      else if( invVnum == CRAFTING_TOOLS_VNUM )
+        invTools++;
+    }
+
+    // Check mats in inventory vs mats needed.
+    if( invLowMats < numLowest || invHighMats < numHighest )
     {
       send_to_char("You do not have the required &+ysalvaged &+Ymaterials &nin your inventory.\r\n", ch);
       extract_obj(tobj, FALSE);
-      extract_obj(material2, FALSE);
-      extract_obj(material, FALSE);
+      extract_obj(matLowest, FALSE);
+      extract_obj(matHighest, FALSE);
       return;
     }
-    if(y < 1)
+    // If for some reason we want more than 1 box of tools, change the 1 below.
+    if( invTools < 1)
     {
       send_to_char("You must have &+ma &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&n to create your item.\r\n", ch);
       extract_obj(tobj, FALSE);
-      extract_obj(material2, FALSE);
-      extract_obj(material, FALSE);
+      extract_obj(matLowest, FALSE);
+      extract_obj(matHighest, FALSE);
       return;
     }
-    if(has_affect(tobj) && x < 1)
+    // If we're going to require multiple essences, need to edit this if statement.
+    if( invEssences < 1 && hasAffect )
     {
       send_to_char("You must have &+W1 &nof &+ma &+Mm&+Ya&+Mg&+Yi&+Mc&+Ya&+Ml &+messence&n due to the &+mmagical &nproperties this item possesses.\r\n", ch);
+      extract_obj(tobj, FALSE);
+      extract_obj(matLowest, FALSE);
+      extract_obj(matHighest, FALSE);
       return;
     }
 
-    int expgain = itemvalue(ch, tobj);
-    //drannak - make the item
-    int obj1 = startmat + 4;
-    int obj2 = (startmat + ((int)difference -1));
-    y = 0;
-    i = 0;
-    z = 0;
-    y = 0;
-    o = 0;
-
-    for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
+    // Remove the materials from inventory...  Since we are changing the inventory
+    //   list, we need to use nextObj instead of just going to inventory->next_content.
+    P_obj nextObj;
+    // If for some reason we want more than 1 box of tools, change gotTools from boolean to int...
+    //   For right now, gotTools -> TRUE when we extract a set of tools from inventory.
+    bool gotTools = FALSE;
+    for( P_obj inventory = ch->carrying; inventory; inventory = nextObj )
     {
-      nextobj = t_obj->next_content;
+      nextObj = inventory->next_content;
+      invVnum = GET_OBJ_VNUM(inventory);
 
-      if((GET_OBJ_VNUM(t_obj) == obj1) && (i < fullcount) )
+      if( (numLowest > 0) && (invVnum == lowQualityMaterialVnum) )
       {
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
-        i++;
+        obj_from_char(inventory, TRUE);
+        extract_obj(inventory, TRUE);
+        numLowest--;
       }
-      if((GET_OBJ_VNUM(t_obj) == obj2) && (o < difference))
+      else if( (numHighest > 0) && (invVnum == highQualityMaterialVnum) )
       {
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
-        o++;
+        obj_from_char(inventory, TRUE);
+        extract_obj(inventory, TRUE);
+        numHighest--;
       }
-      if((GET_OBJ_VNUM(t_obj) == 400211) && (z < affcount))
+      // If we're requiring multiple essences, need to change this if clause.
+      else if( hasAffect && (invVnum == CRAFTING_ESSENCE_VNUM) )
       {
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
-        z++;
+        obj_from_char(inventory, TRUE);
+        extract_obj(inventory, TRUE);
+        hasAffect = FALSE;
       }
-      if((GET_OBJ_VNUM(t_obj) == 400224) && (y < 1))
+      // If we're requiring multiple tools, need to change this if clause.
+      else if( !gotTools && (invVnum == CRAFTING_TOOLS_VNUM) )
       {
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
-        y++;
+        obj_from_char(inventory, TRUE);
+        extract_obj(inventory, TRUE);
+        gotTools = TRUE;
       }
     }
 
-    //reward here
-    wizlog(56, "%s crafted '%s' (%d) ival %d.", GET_NAME(ch), tobj->short_description, GET_OBJ_VNUM(tobj), itemvalue(ch, tobj));
+    // Rewards here: tobj is the crafted item, so no need to load another.
+    wizlog(56, "%s crafted '%s' (%d) ival %d.", GET_NAME(ch), tobj->short_description, selected, iVal );
     notch_skill(ch, SKILL_CRAFT, 50);
-    P_obj reward = read_object(selected, VIRTUAL);
-    SET_BIT(reward->extra2_flags, ITEM2_CRAFTED);
-    SET_BIT(reward->extra_flags, ITEM_NOREPAIR);
-    REMOVE_BIT(reward->extra_flags, ITEM_SECRET);
-    randomizeitem(ch, reward);
-    sprintf(keywords, "%s %s tradeskill", reward->name, GET_NAME(ch));
 
-    sprintf(tempdesc, "%s", reward->short_description);
+    SET_BIT(tobj->extra2_flags, ITEM2_CRAFTED);
+    SET_BIT(tobj->extra_flags, ITEM_NOREPAIR);
+    REMOVE_BIT(tobj->extra_flags, ITEM_SECRET);
+    randomizeitem(ch, tobj);
+    sprintf(keywords, "%s %s tradeskill", tobj->name, GET_NAME(ch));
+
+    sprintf(tempdesc, "%s", tobj->short_description);
     sprintf(short_desc, "%s &+ymade by&n &+r%s&n", tempdesc, GET_NAME(ch));
-    set_keywords(reward, keywords);
-    set_short_description(reward, short_desc);
+    set_keywords(tobj, keywords);
+    set_short_description(tobj, short_desc);
 
+    obj_to_char(tobj, ch);
+    act("&+W$n &+Ldelicately opens their &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&+L and starts their work...\r\n"
+      "&+W$n &+Lremoves the &+Wim&+wpur&+Lities &+Lfrom their &+ymaterials &+Land gently assembles a masterpiece...\r\n"
+      "&+L...hands shaking, &+W$n &+Lraises their head and &+Ysmiles&+L, admiring their new $p.&N",
+      TRUE, ch, tobj, 0, TO_ROOM);
+    act("You &+Ldelicately open your &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&+L and get to work...\r\n"
+      "you &+Lremove the &+Wim&+wpur&+Lities &+Lfrom your &+ymaterials &+Land gently assemble a masterpiece...\r\n"
+      "&+L...hands shaking, &+Wyou &+Lraise your head and &+Ysmile&+L, admiring your new $p.&N",
+      FALSE, ch, tobj, 0, TO_CHAR);
 
-    obj_to_char(reward, ch);
-    act
-      ("&+W$n &+Ldelicately opens their &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&+L and starts their work...\r\n"
-       "&+W$n &+Lremoves the &+Wim&+wpur&+Lities &+Lfrom their &+ymaterials &+Land gently assembles a masterpiece...\r\n"
-       "&+L...hands shaking, &+W$n &+Lraises their head and &+Ysmiles&+L, admiring their new $p.&N",
-       TRUE, ch, tobj, 0, TO_ROOM);
-    act
-      ("You &+Ldelicately open your &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&+L and get to work...\r\n"
-       "you &+Lremove the &+Wim&+wpur&+Lities &+Lfrom your &+ymaterials &+Land gently assemble a masterpiece...\r\n"
-       "&+L...hands shaking, &+Wyou &+Lraise your head and &+Ysmile&+L, admiring your new $p.&N",
-       FALSE, ch, tobj, 0, TO_CHAR);
-    gain_exp(ch, NULL, (itemvalue(ch, tobj) * 1000), EXP_BOON);
-    extract_obj(tobj, FALSE);
-    extract_obj(material2, FALSE);
-    extract_obj(material, FALSE);
-    gain_exp(ch, NULL, (expgain * 10000), EXP_QUEST);
+    gain_exp(ch, NULL, iVal*1000, EXP_BOON);
+    extract_obj(matLowest, FALSE);
+    extract_obj(matHighest, FALSE);
+    gain_exp(ch, NULL, iVal*10000, EXP_QUEST);
+    // Save the character! 1 -> in game.
+    do_save_silent(ch, 1);
   }
-
-
-
-
 
   /*
      argument = one_argument(argument, Gbuf1);

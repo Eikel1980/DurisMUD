@@ -3470,166 +3470,181 @@ void do_salvation(P_char ch, char *arg, int cmd)
 void do_drandebug(P_char ch, char *arg, int cmd)
 {
   return;
-/*
+ /*
  P_obj obj;
  int value = itemvalue(ch, obj);
  debug("Item's value is: %d\r\n&n", value);
  */
 }
 
+// Returns the lowest material vnum (lowest quality) for material with the same type as obj->material.
+// I.e. for a material type FEATHER -> returns 400000 (vnum for a small feather).
+//   Material range for FEATHER is 400000 (lowest quality) - 400004 (highest quality).
 int get_matstart(P_obj obj)
 {
-  //starting values for each salvaged type
-  if(!obj)
-  return FALSE;
-
-  byte objmat = obj->material;
   int matstart;
-                              switch (objmat)
-					{
-					case MAT_NONSUBSTANTIAL:
-					matstart = 400205;  
-					break;
-					case MAT_FLESH:
-					matstart = 400005;  
-					break;
-					case MAT_CLOTH:
-					matstart = 400015;  
-					break;
-					case MAT_BARK:
-					matstart = 400035;  
-					break;
-					case MAT_SOFTWOOD:
-					matstart = 400040;  
-					break;
-					case MAT_HARDWOOD:
-					matstart = 400050;  
-					break;
-					//case MAT_SILICON:
-					//matstart = 67283;  
-					//break;
-					case MAT_CRYSTAL:
-					matstart = 400090;  
-					break;
-					//case MAT_CERAMIC:
-					//matstart = 67283;  
-					//break;
-					case MAT_BONE:
-					matstart = 400065;  
-					break;
-					case MAT_STONE:
-					matstart = 400095;  
-					break;
-					case MAT_HIDE:
-					matstart = 400030;  
-					break;
-					case MAT_LEATHER:
-					matstart = 400045;  
-					break;
-					case MAT_CURED_LEATHER:
-					matstart = 400060;  
-					break;
-					case MAT_IRON:
-					matstart = 400110;  
-					break;
-					case MAT_STEEL:
-					matstart = 400120;  
-					break;
-					case MAT_BRASS:
-					matstart = 400125;  
-					break;
-					case MAT_MITHRIL:
-					matstart = 400185;  
-					break;
-					case MAT_ADAMANTIUM:
-					matstart = 400195;  
-					break;
-					case MAT_BRONZE:
-					matstart = 400130;  
-					break;
-					case MAT_COPPER:
-					matstart = 400135;  
-					break;
-					case MAT_SILVER:
-					matstart = 400140;  
-					break;
-					case MAT_ELECTRUM:
-					matstart = 400145;  
-					break;
-					case MAT_GOLD:
-					matstart = 400150;  
-					break;
-					case MAT_PLATINUM:
-					matstart = 400180;  
-					break;
-					case MAT_GEM:
-					matstart = 400155;  
-					break;
-					case MAT_DIAMOND:
-					matstart = 400190;  
-					break;
-					//case MAT_LEAVES:
-					//matstart = 67283;  
-					//break;
-					case MAT_RUBY:
-					matstart = 400165;  
-					break;
-					case MAT_EMERALD:
-					matstart = 400160;  
-					break;
-					case MAT_SAPPHIRE:
-					matstart = 400170;  
-					break;
-					case MAT_IVORY:
-					matstart = 400070;  
-					break;
-					case MAT_DRAGONSCALE:
-					matstart = 400200;  
-					break;
-					case MAT_OBSIDIAN:
-					matstart = 400175;  
-					break;
-					case MAT_GRANITE:
-					matstart = 400100;  
-					break;
-					case MAT_MARBLE:
-					matstart = 400105;  
-					break;
-					//case MAT_LIMESTONE:
-					//matstart = 67283;  
-					//break;
-					case MAT_BAMBOO:
-					matstart = 400055;  
-					break;
-					case MAT_REEDS:
-					matstart = 400010;  
-					break;
-					case MAT_HEMP:
-					matstart = 400020;  
-					break;
-					case MAT_GLASSTEEL:
-					matstart = 400115;  
-					break;
-					case MAT_CHITINOUS:
-					matstart = 400080;  
-					break;
-					case MAT_REPTILESCALE:
-					matstart = 400085;  
-					break;
-					case MAT_RUBBER:
-					matstart = 400025;  
-					break;
-					case MAT_FEATHER:
-					matstart = 400000;  
-					break;
-					case MAT_PEARL:
-					matstart = 400075;  
-					break;
-					default:
-					matstart = 400205;
-					break;
-					}
-return matstart;
+  byte objmat;
+
+  if( !obj )
+  {
+    return 0;
+  }
+
+  objmat = obj->material;
+
+  switch( objmat )
+  {
+    case MAT_NONSUBSTANTIAL:
+      matstart = 400205;
+      break;
+    case MAT_FLESH:
+      matstart = 400005;
+      break;
+    case MAT_CLOTH:
+      matstart = 400015;
+      break;
+    case MAT_BARK:
+      matstart = 400035;
+      break;
+    case MAT_SOFTWOOD:
+      matstart = 400040;
+      break;
+    case MAT_HARDWOOD:
+      matstart = 400050;
+      break;
+/*
+    case MAT_SILICON:
+      matstart = 67283;
+      break;
+*/
+    case MAT_CRYSTAL:
+      matstart = 400090;
+      break;
+/*
+    case MAT_CERAMIC:
+      matstart = 67283;
+      break;
+*/
+    case MAT_BONE:
+      matstart = 400065;
+      break;
+    case MAT_STONE:
+      matstart = 400095;
+      break;
+    case MAT_HIDE:
+      matstart = 400030;
+      break;
+    case MAT_LEATHER:
+      matstart = 400045;
+      break;
+    case MAT_CURED_LEATHER:
+      matstart = 400060;
+      break;
+    case MAT_IRON:
+      matstart = 400110;
+      break;
+    case MAT_STEEL:
+      matstart = 400120;
+      break;
+    case MAT_BRASS:
+      matstart = 400125;
+      break;
+    case MAT_MITHRIL:
+      matstart = 400185;
+      break;
+    case MAT_ADAMANTIUM:
+      matstart = 400195;
+      break;
+    case MAT_BRONZE:
+      matstart = 400130;
+      break;
+    case MAT_COPPER:
+      matstart = 400135;
+      break;
+    case MAT_SILVER:
+      matstart = 400140;
+      break;
+    case MAT_ELECTRUM:
+      matstart = 400145;
+      break;
+    case MAT_GOLD:
+      matstart = 400150;
+      break;
+    case MAT_PLATINUM:
+      matstart = 400180;
+      break;
+    case MAT_GEM:
+      matstart = 400155;
+      break;
+    case MAT_DIAMOND:
+      matstart = 400190;
+    break;
+/*
+    case MAT_LEAVES:
+      matstart = 67283;
+      break;
+*/
+    case MAT_RUBY:
+      matstart = 400165;
+      break;
+    case MAT_EMERALD:
+      matstart = 400160;
+      break;
+    case MAT_SAPPHIRE:
+      matstart = 400170;
+      break;
+    case MAT_IVORY:
+      matstart = 400070;
+      break;
+    case MAT_DRAGONSCALE:
+      matstart = 400200;
+      break;
+    case MAT_OBSIDIAN:
+      matstart = 400175;
+      break;
+    case MAT_GRANITE:
+      matstart = 400100;
+      break;
+    case MAT_MARBLE:
+      matstart = 400105;
+      break;
+/*
+    case MAT_LIMESTONE:
+      matstart = 67283;
+      break;
+*/
+    case MAT_BAMBOO:
+      matstart = 400055;
+      break;
+    case MAT_REEDS:
+      matstart = 400010;
+      break;
+    case MAT_HEMP:
+      matstart = 400020;
+      break;
+    case MAT_GLASSTEEL:
+      matstart = 400115;
+      break;
+    case MAT_CHITINOUS:
+      matstart = 400080;
+      break;
+    case MAT_REPTILESCALE:
+      matstart = 400085;
+      break;
+    case MAT_RUBBER:
+      matstart = 400025;
+      break;
+    case MAT_FEATHER:
+      matstart = 400000;
+      break;
+    case MAT_PEARL:
+      matstart = 400075;
+      break;
+    default:
+      matstart = 400205;
+      break;
+  }
+  return matstart;
 }
 
 bool has_affect(P_obj obj)

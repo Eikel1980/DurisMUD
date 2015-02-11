@@ -61,6 +61,9 @@
 #define MAT_WAX       51
 #define MAT_PEARL     52
 
+#define CRAFTING_TOOLS_VNUM 400224
+#define CRAFTING_ESSENCE_VNUM 400211
+
 #define IS_METAL(mat) ( mat == MAT_IRON || mat == MAT_STEEL || \
                         mat == MAT_COPPER || mat == MAT_BRASS || \
                         mat == MAT_ADAMANTIUM || mat == MAT_GOLD || \
