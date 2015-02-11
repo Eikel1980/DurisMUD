@@ -2260,7 +2260,7 @@ void do_stat(P_char ch, char *argument, int cmd)
       sprintf(buf, "&+YTongue:&N %d", j->value[0]);
       break;
     case ITEM_KEY:
-      sprintf(buf, "&+YKeytype:&N %d", j->value[0]);
+      sprintf(buf, "&+YKeytype:&N %3d   &+YBreak Percentage:&n %d%%", j->value[0], j->value[1]);
       break;
     case ITEM_FOOD:
       sprintf(buf, "&+YMakes full:&N %d  &+YPoisoned:&N %d",
