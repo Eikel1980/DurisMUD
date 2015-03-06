@@ -3363,6 +3363,7 @@ void perform_wear(P_char ch, P_obj obj_object, int keyword)
     act("$n straps $p to $s back.", TRUE, ch, obj_object, 0, TO_ROOM);
     break;
   case 19:
+  case 28:
     act("You don the guild insignia of $p.", 0, ch, obj_object, 0, TO_CHAR);
     act("$n dons $p.", TRUE, ch, obj_object, 0, TO_ROOM);
     break;
@@ -4497,7 +4498,7 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
     {
       // Replace if Wearing Something or Wear New Item
       // Using hardcoded 19, 'cause 28 is just a duplicate.
-      return remove_and_wear(ch, obj_object, GUILD_INSIGNIA, 19, comnd, showit);
+      return remove_and_wear(ch, obj_object, GUILD_INSIGNIA, keyword, comnd, showit);
     }
     else
     {
@@ -4522,7 +4523,6 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
       }
     }
     break;
-
   case 21: /* Attach Belt */
     if( CAN_WEAR(obj_object, ITEM_ATTACH_BELT) )
     {
@@ -4781,7 +4781,7 @@ void do_wear(P_char ch, char *argument, int cmd)
     "horns",                    /* 24 */
     "ioun",
     "spider_body",
-    "badge"
+    "badge",
     "\n"
   };
   int      loop = 0;
