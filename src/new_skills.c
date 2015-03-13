@@ -1078,21 +1078,20 @@ void chant_jin_touch(P_char ch, char *argument, int cmd)
   P_char   vict = NULL;
   char name[256];
   int dam, damdice, percent, skl_lvl;
-  
-  if(!(ch) ||
-     !IS_ALIVE(ch) ||
-     IS_IMMOBILE(ch))
-        return;
 
-  if(!GET_CLASS(ch, CLASS_MONK))
+  if( !IS_ALIVE(ch) || IS_IMMOBILE(ch) )
+  {
+    return;
+  }
+
+  if( !GET_CLASS(ch, CLASS_MONK) )
   {
     send_to_char("Too bad you're not a monk.\r\n", ch);
     return;
   }
   else
   {
-    if (IS_PC(ch) ||
-        IS_PC_PET(ch))
+    if( IS_PC(ch) || IS_PC_PET(ch) )
       skl_lvl = GET_CHAR_SKILL(ch, SKILL_JIN_TOUCH);
     else
       skl_lvl = MAX(100, GET_LEVEL(ch) * 3);

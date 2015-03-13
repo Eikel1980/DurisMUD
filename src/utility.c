@@ -4393,6 +4393,11 @@ int GET_CHAR_SKILL_P(P_char ch, int skl)
   }
   else
   {
+    // PC pets don't get epic skills.
+    if( IS_PC_PET(ch) && IS_EPIC_SKILL(skl) )
+    {
+      return 0;
+    }
     bit = 1;
     highest = 0;
     classEntry = skills[skl].m_class;
