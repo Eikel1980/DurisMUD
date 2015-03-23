@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'munin_plugin'
+require 'mysql'
+
+DB_NAME='duris_dev'
+DB_USER='root'
+DB_PASS=''
+
+def get_current_statistics
+  my = Mysql.connect('localhost', DB_USER, DB_PASS, DB_NAME)
+  query = "select date, goods_count, evils_count, illithids_count, undeads_count, gods_count, in_guildhall_count, sum_goods_levels, sum_evils_levels, sum_illithids_levels, sum_undeads_levels, unique_ips_count from statistics where date > (unix_timestamp() - 300) order by date desc limit 1"
+  my.query(query).fetch_row
+end
+
+munin_plugin do
+  graph_title "Duris Statistics"
+  graph_vlabel "Number"
+  graph_category "Duris"
+
+  goods_count.label "Goods"
+  evils_count.label "Evils"
+  gods_count.label "Gods"
+
+  in_guildhall_count.label "In GH"
+
+  sum_goods_level.label "Good Levels"
+  sum_evils_level.label "Evil Levels"
+
+  unique_ips_count.label "Unique IPs"
+
+  collect do
+    _date, _goods_count, _evils_count, _illithids_count, _undeads_count, _gods_count, _in_guildhall_count, _sum_goods_levels, _sum_evils_levels, _sum_illithids_levels, _sum_undeads_levels, _unique_ips_count = get_current_statistics
+
+    goods_count.value _goods_count
+    evils_count.value _evils_count
+    gods_count.value _gods_count
+    in_guildhall_count.value _in_guildhall_count
+    unique_ips_count.value _unique_ips_count
+  end
+end
