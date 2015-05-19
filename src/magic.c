@@ -10654,8 +10654,8 @@ void spell_fire_breath(int level, P_char ch, char *arg, int type, P_char victim,
     //   this is much easier to manage and understand.
     for( burn = victim->carrying; burn; burn = burn->next_content )
     {
-      // Skip artifacts.
-      if( IS_ARTIFACT(burn) )
+      // Skip artifacts and containers.
+      if( IS_ARTIFACT(burn) || burn->contains || burn->type == ITEM_CONTAINER )
       {
         continue;
       }
@@ -10667,8 +10667,8 @@ void spell_fire_breath(int level, P_char ch, char *arg, int type, P_char victim,
       {
         break;
       }
-      // 2/3 chance to burn up an item regardless?
-      if( number(0, 2) )
+      // 1/3 chance to burn up an item regardless?
+      if( !number(0, 2) )
       {
         break;
       }
@@ -10725,7 +10725,6 @@ void spell_frost_breath(int level, P_char ch, char *arg, int type, P_char victim
     return;
   }
 
-PENIS:
   // And now for the damage on inventory (Why just one item?)
   // High level breathers get a greater chance, victim can save, and !arena damage.
   if( number(0, TOTALLVLS) < GET_LEVEL(ch) && !NewSaves(victim, SAVING_BREATH, save)
@@ -10735,8 +10734,8 @@ PENIS:
     //   this is much easier to manage and understand.
     for( frozen = victim->carrying; frozen; frozen = frozen->next_content )
     {
-      // Skip artifacts.
-      if( IS_ARTIFACT(frozen) )
+      // Skip artifacts and containers.
+      if( IS_ARTIFACT(frozen) || frozen->contains || frozen->type == ITEM_CONTAINER )
       {
         continue;
       }
@@ -10747,8 +10746,8 @@ PENIS:
       {
         break;
       }
-      // 2/3 chance to shatter an item regardless?
-      if( number(0, 2) )
+      // 1/3 chance to shatter an item regardless?
+      if( !number(0, 2) )
       {
         break;
       }
@@ -11103,8 +11102,8 @@ void spell_crimson_light(int level, P_char ch, char *arg, int type, P_char victi
     //   this is much easier to manage and understand.
     for( burn = victim->carrying; burn; burn = burn->next_content )
     {
-      // Skip artifacts.
-      if( IS_ARTIFACT(burn) )
+      // Skip artifacts and containers.
+      if( IS_ARTIFACT(burn) || burn->contains || burn->type == ITEM_CONTAINER )
       {
         continue;
       }
@@ -11116,8 +11115,8 @@ void spell_crimson_light(int level, P_char ch, char *arg, int type, P_char victi
       {
         break;
       }
-      // 2/3 chance to burn up an item regardless?
-      if( number(0, 2) )
+      // 1/3 chance to burn up an item regardless?
+      if( !number(0, 2) )
       {
         break;
       }
