@@ -4799,14 +4799,6 @@ cloak green cloth dark~
 11 3 3 8 7 0 0 1025 0 0 0
 0 0 0 4 0 0 0 0
 3 160 100
-#458
-lizzard tiny friend~
-&+wG&+Lell&+wz&n &+wT&+Lin&+wy &+gL&+Gi&+gzz&+Gar&+gd &+wF&+Lr&+wie&+Ln&+wd&n~
-&+wG&+Lell&+wz&n &+wT&+Lin&+wy &+gL&+Gi&+gzz&+Gar&+gd &+wF&+Lr&+wie&+Ln&+wd&n skitters around here, looks lost waiting for &+wG&+Lell&+wz.&n~
-~
-11 35 3 0 15 0 71262472 1073635327 2114 0 0
-0 0 0 0 0 0 0 0
-0 100000 100 3206130172 284605662 1700725225 131743528
 #459
 griffon familiar great~
 &+wG&+Lell&+wz&n &+wG&+Lrea&+wt &+rG&+Rr&+Yi&+Wf&+Yf&+Ro&+rn&n &+wF&+Lam&+wil&+Lia&+wr&n~
@@ -8931,7 +8923,7 @@ gellz test item~
 &+CGellz&+y special test item&n~
 &+yYAn item that &+CGellz&+y uses for testing is lying here discarded.&n~
 ~
-12 15 3 0 7 0 0 268451841 0 0 0
+12 15 3 0 7 0 0 16385 0 0 0
 0 0 0 0 0 0 0 0
 0 0 100
 #1204

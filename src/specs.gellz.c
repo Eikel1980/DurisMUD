@@ -181,43 +181,6 @@ int magic_deck(P_obj obj, P_char ch, int cmd, char *argument)
 //*****************************************************************
 //              THIS IS THE MAIN CALLS - Start
 //*****************************************************************
-/*      if (!strcmp(arg, "bet")) //CHANGE STRINGS FOR NEED TO BET ***********
-      {                         // Start Keyword for 'fold' - player folds
-         if (!say(ch,arg)) //thye have to say it..
-            {act (STR_CARDS_FAILED, FALSE, ch, obj, obj, TO_CHAR);} // they didnt say it somehow?
-         //Start Actual ACTIONS
-         if (!(game_on == 2))
-         {
-            act (STR_CARDS_GAME_0, FALSE, ch, obj, ch, TO_CHAR); // Was game in progress.
-         }// else // end game was already on.
-       } //end IF bet 
-*/
-//*****************************************************************
-/*      if (!strcmp(arg, "gametime"))
-      {                    // Start Keyword for 'gametime' - prepare the game
-	if ((!(betamt>0)) || (bettype<0))
-	{act ("&+yYou must &+Woffer&+y a bet prior to attempting to play a game. Try and &+Wshowgame&+y to see if you are ready.", FALSE, ch, obj, obj, TO_CHAR);
-	return FALSE;
-	}
-         if (!say(ch,arg)) //thye have to say it..
-            {act (STR_CARDS_FAILED, FALSE, ch, obj, obj, TO_CHAR);} // they didnt say it somehow?
-         //Start Actual ACTIONS
-         if (game_on == 1)
-         {
-            act (STR_CARDS_GAME_ON, FALSE, ch, obj, obj, TO_CHAR); // Was game in progress.
-         } else // end game was already on.
-         { //game wasnt on already
-         setup_deck();
-         act (STR_CARDS_SHUFFLE, FALSE, ch, obj, ch, TO_CHAR);
-         clear_hands(1);
-         clear_hands(2);
-         game_on = 1;
-        //END of the actions
-         return TRUE;
-         } //end ELSE game was off.
-      }                         // Endof SAY keyword for 'gametime'
-*/
-//*****************************************************************
 //*****************************************************************
       if (!strcmp(arg, "deal"))
       {                         // Start Keyword for 'deal' - deal initial cards
