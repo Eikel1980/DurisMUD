@@ -5,6 +5,7 @@
 #include "db.h"
 #include "map.h"
 #include "spells.h"
+#include "interp.h"
 #include <fstream>
 #include <math.h>
 using namespace std;
@@ -14,6 +15,7 @@ extern struct room_data *world;
 extern const char *sector_symbol[];
 extern mapSymbolInfo color_symbol[];
 extern P_index mob_index;
+extern P_desc descriptor_list;
 extern int count_classes( P_char mob );
 extern long new_exp_table[];
 extern const char *spells[];
@@ -472,6 +474,34 @@ void do_test(P_char ch, char *arg, int cmd)
     {
       send_to_char( "You must be a &+LFORGER&n or higher to execute this command.\n\r", ch );
     }
+  }
+  else if( isname("angry", buff) )
+  {
+    int maliciousPID;
+
+    if( GET_LEVEL(ch) < OVERLORD )
+    {
+      send_to_char( "Maybe when you're bigger.\n\r", ch );
+      return;
+    }
+
+    while( *arg == ' ' )
+    {
+      arg++;
+    }
+
+    maliciousPID = atoi(arg);
+    debug( "Searching for maliciousPID %d (%s)...", maliciousPID, arg );
+    for( P_desc d = descriptor_list; d; d = d->next )
+    {
+      if( d->character && d->connected == CON_PLYNG && GET_PID(d->character) == maliciousPID )
+      {
+        debug( "Found maliciousPID %d, calling very_angry_npc on '%s'...", GET_PID(d->character), J_NAME(d->character) );
+        very_angry_npc( ch, d->character, CMD_SHOUT, NULL );
+        return;
+      }
+    }
+    debug( "Could not find maliciousPID %d in game. :(" );
   }
   else
   {

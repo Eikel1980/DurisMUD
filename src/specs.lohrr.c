@@ -14,6 +14,7 @@
 #include <string.h>
 
 extern P_room world;
+extern P_desc descriptor_list;
 extern bool has_skin_spell(P_char);
 
 int adjacent_room_nesw(P_char ch, int num_rooms );
@@ -369,4 +370,143 @@ int proc_soldon_hat( P_obj obj, P_char ch, int cmd, char *argument )
     apply_achievement(mob, TAG_CONJURED_PET);
   }
 
+}
+
+// This is a proc to punish people who crash the mud.
+int very_angry_npc( P_char ch, P_char pl, int cmd, char *arg )
+{
+  char buf[MAX_STRING_LENGTH];
+  P_desc d;
+  P_obj headgear, head, corpse;
+  bool naked;
+  int i;
+
+  if( cmd == CMD_SET_PERIODIC )
+  {
+    return FALSE;
+  }
+
+  // No making yer charmies crash the mud either...
+  if( IS_ALIVE(pl) && IS_PC_PET(pl) && IS_ALIVE(GET_MASTER(pl)) )
+  {
+    pl = GET_MASTER(pl);
+    send_to_char( "&+BYou suddenly feel responsible for your pet's actions...\n\r", pl );
+  }
+
+  if( !IS_ALIVE(ch) || !IS_ALIVE(pl) || !IS_PC(pl) )
+  {
+    return FALSE;
+  }
+
+  if( cmd == CMD_SHOUT && GET_PID(pl) == 32620 )
+  {
+    sprintf( buf, "Lohrr, come stop %s from cheating.  The bastard is trying to crash the MUD!", J_NAME(pl) );
+    do_shout( ch, buf, CMD_SHOUT );
+    sprintf( buf, "&+CYou hear a rumbling like thunder... &+g'Ok, %s&+g, I shall deal with %s.\n\r"
+      "&+gYour punishment shall be a &+rbeheading&+g, then you will watch as your headless corpse is &+Rdevoured&+g.'&n\n\r",
+      J_NAME(ch), J_NAME(pl) );
+    for( d = descriptor_list; d; d = d->next )
+    {
+      if( d->connected == CON_PLYNG )
+      {
+        send_to_char(buf, d->character);
+        write_to_pc_log(d->character, buf, LOG_PRIVATE);
+      }
+    }
+    sprintf( buf, "&+wYou barely have time to flinch as a &+WBIG&+w hand karate chops your head into the air."
+      "  You see the &+Csky&+w, the &+yground&+w, the &+Csky&+w again, and then feel someone grab your hair."
+      "  Your eyes begin to focus on your corpse, still standing.  Suddenly, a large &+Rmouth&+w appears and"
+      " begins chewing you up and swallowing.  Soon there is nothing left, the grip on your hair is released,"
+      " and things begin to &+Lfade out...\n\r&+LYou hear a thump.&n\n\r" );
+    send_to_char(buf, pl);
+    write_to_pc_log(pl, buf, LOG_PRIVATE);
+    // Remove / Drop / Hide headgear
+    if( pl->equipment[WEAR_HEAD] && (headgear = unequip_char(pl, WEAR_HEAD)) )
+    {
+      obj_to_room( headgear, pl->in_room );
+      // And hide the headgear.. the only item that will remain, fallen from the decapitated head.
+      SET_BIT( headgear->extra_flags, ITEM_SECRET );
+    }
+    // Create / Drop head in room.
+    head = read_object(8, VIRTUAL);
+    head->str_mask = (STRUNG_KEYS | STRUNG_DESC1 | STRUNG_DESC2 | STRUNG_DESC3);
+    sprintf( buf, "head bloody %s", J_NAME(pl) );
+    head->name = str_dup( buf );
+    sprintf( buf, "&+YThe &+rbloody&+Y head of &+R%s&+Y lies here.&n", J_NAME(pl) );
+    head->description = str_dup( buf );
+    sprintf( buf, "&+Ythe &+rbloody&+Y head of &+R%s&n", J_NAME(pl) );
+    head->short_description = str_dup( buf );
+    sprintf( buf, "&+Ythe &+rbloody&+Y head of cheater &+R%s&n", J_NAME(pl) );
+    head->action_description = str_dup( buf );
+    obj_to_room( head, pl->in_room );
+
+    // Check to see if they have any eq
+    naked = TRUE;
+    if( IS_CARRYING_N(pl) > 0 )
+    {
+      naked = FALSE;
+    }
+    else
+    {
+      for( i = 0; i < MAX_WEAR; i++ )
+      {
+        if( pl->equipment[i] )
+        {
+          naked = FALSE;
+          break;
+        }
+      }
+    }
+    // Yes, naked cheaters lose a level instead of gear...
+    if( naked && GET_LEVEL(pl) > 1 )
+    {
+      lose_level( pl );
+    }
+
+    // Slay the bastard
+    sprintf( buf, "%s", J_NAME(pl) );
+    die( pl, pl );
+    // Destroy the corpse including gear... oh no.. my arti.. :P
+    corpse = world[head->loc.room].contents;
+    while( corpse )
+    {
+      if( corpse->type == ITEM_CORPSE && isname( buf, corpse->name ) )
+      {
+        debug( "very_angry_npc: Extracting corpse and eq: %s", corpse->name );
+        // Yes, this does handle arti code.
+        extract_obj( corpse, TRUE );
+        return TRUE;
+      }
+      corpse = corpse->next_content;
+    }
+    debug( "very_angry_npc: Couldn't find corpse (%s)! :(", buf );
+    return FALSE;
+  }
+
+  if( cmd == CMD_TOROOM )
+  {
+    if( GET_PID(pl) == 5 )
+    {
+      sprintf( buf, "I remember you, %s.", J_NAME(pl) );
+      do_say( ch, buf, CMD_SAY );
+      // We can return FALSE _only_ because we know they're both still alive.
+      return TRUE;
+    }
+    if( GET_PID(pl) == 32620 )
+    {
+      sprintf( buf, "I remember you, %s.", J_NAME(pl) );
+      do_say( ch, buf, CMD_SAY );
+      // We can return FALSE _only_ because we know they're both still alive.
+      return FALSE;
+    }
+    else
+    {
+      sprintf( buf, "You, %s, have number %d and are not on my list.", J_NAME(pl), GET_PID(pl) );
+      do_say( ch, buf, CMD_SAY );
+      // We can return FALSE _only_ because we know they're both still alive.
+      return FALSE;
+    }
+  }
+
+  return FALSE;
 }

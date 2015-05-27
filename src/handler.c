@@ -1035,8 +1035,7 @@ int char_to_room(P_char ch, int room, int dir)
       send_to_char("\n<map>\n", ch);
       rm = &world[ch->in_room];
       zone = &zone_table[world[ch->in_room].zone];
-      sprintf(temp_buffer, "&+WZone: %s&n.\n&+WRoom: %s", zone->name,
-              rm->name);
+      sprintf(temp_buffer, "&+WZone: %s&n.\n&+WRoom: %s", zone->name, rm->name);
       send_to_char(temp_buffer, ch);
       send_to_char("\n</map>\n", ch);
       ch->desc->last_map_update = 0;
@@ -1209,6 +1208,22 @@ int char_to_room(P_char ch, int room, int dir)
   if (ALONE(ch))
     return FALSE;
 
+  // If you comment out the return, you need to change this loop to handle deaths.
+  for( k = world[room].people; k; k = k->next_in_room )
+  {
+    // Skip PCs and NPCs with no proc
+    if( !IS_NPC(k) || mob_index[GET_RNUM(k)].func.mob == NULL )
+    {
+      continue;
+    }
+    if( (*mob_index[GET_RNUM(k)].func.mob) (k, ch, CMD_TOROOM, NULL) )
+    {
+      // Can comment out this return if we want to allow multiple procs upon entering room.
+      //   If you do this, make sure IS_ALIVE(ch) and k and such...
+      return TRUE;
+    }
+  }
+
   /*
    * check char entering room for an agg (auto) attack on occupants.
    */
@@ -1235,13 +1250,11 @@ int char_to_room(P_char ch, int room, int dir)
 	 has_innate(ch, INNATE_CALMING))
         calming = (int)get_property("innate.calming.delay", 10);
 
-  if (t_ch && is_aggr_to(ch, t_ch))
-    add_event(event_agg_attack,
-              number(0,
-                     MAX(0,
-                         (11 -
-                          dex_app[STAT_INDEX(GET_C_DEX(ch))].reaction) / 2)) + calming,
-              ch, t_ch, 0, 0, 0, 0);
+  if( t_ch && is_aggr_to(ch, t_ch) )
+  {
+    add_event(event_agg_attack, number(0, MAX(0, (11 - dex_app[STAT_INDEX(GET_C_DEX(ch))].reaction) / 2)) + calming,
+     ch, t_ch, 0, 0, 0, 0);
+  }
 
   for (t_ch = world[ch->in_room].people; t_ch; t_ch = t_ch->next_in_room)
   {

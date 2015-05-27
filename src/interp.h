@@ -865,6 +865,7 @@ extern unsigned int game_locked;
 #define CMD_SET_PERIODIC -10
 #define CMD_PERIODIC     0
 #define CMD_DEATH       -1
+#define CMD_TOROOM      -2    // Checks NPC procs when someone enters a room.
 #define CMD_GOTHIT      -100
 #define CMD_GOTNUKED    -101
 #define CMD_DECAY       -200

@@ -71,6 +71,7 @@ int      CheckFor_remember(P_char ch, P_char victim);
 int      count_potions(P_char ch);
 void try_wield_weapon(P_char ch);
 int empty_slot_for_weapon(P_char ch);
+int very_angry_npc(P_char, P_char, int, char *);
 
 #define UNDEAD_TYPES 6
 
@@ -9612,6 +9613,25 @@ void mob_hunt_event(P_char ch, P_char victim, P_obj obj, void *d)
   else
   {
     targ_room = data->targ.room;
+    if( targ_room < 0 || targ_room > top_of_world )
+    {
+      int maliciousPID = GET_MEMORY(ch) ? GET_MEMORY(ch)->pcID : -1;
+
+      if( mob_index[GET_RNUM(ch)].func.mob == very_angry_npc && maliciousPID > 0 )
+      {
+        for( P_desc d = descriptor_list; d; d = d->next )
+        {
+          if( d->character && d->connected == CON_PLYNG && GET_PID(d->character) == maliciousPID )
+          {
+            debug( "Found maliciousPID %d, calling very_angry_npc on '%s'...",
+              GET_PID(d->character), J_NAME(d->character) );
+            very_angry_npc( ch, d->character, CMD_SHOUT, NULL );
+          }
+        }
+      }
+      justice_hunt_cancel(ch);
+      return;
+    }
     vict = NULL;
   }
 
