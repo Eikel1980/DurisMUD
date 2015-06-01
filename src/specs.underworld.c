@@ -1258,38 +1258,52 @@ int avernus(P_obj obj, P_char ch, int cmd, char *arg)
 }
 
 
-int purple_worm(P_char ch, P_char pl, int cmd, char *arg)
+int purple_worm( P_char ch, P_char pl, int cmd, char *arg )
 {
   P_obj    obj, next_obj;
   P_char   vict;
+  int      id;
 
-  /*
-     check for periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
-    return FALSE;
+  if( cmd == CMD_SET_PERIODIC )
+  {
+    return TRUE;
+  }
 
-  if (cmd == CMD_DEATH)
-  {                             /*
-                                   dead
-                                 */
-    act("$n falls to the ground and dissolves into nothing.",
-        FALSE, ch, 0, 0, TO_ROOM);
+  if( cmd == CMD_PERIODIC )
+  {
+    // Look for a corpse to poop out!
+    for( obj = ch->carrying; obj; obj = obj->next_content )
+    {
+      // 10% chance to poop a PC corpse. average digest time == 1 min + 5*6 sec == 1 1/2 min.
+      if( obj->type == ITEM_CORPSE && IS_SET(obj->value[1], PC_CORPSE)
+        && obj->timer[0] < time(NULL) && !number(0, 9) )
+      {
+        obj_from_char(obj, TRUE);
+        obj_to_room(obj, ch->in_room);
+        act("$n&n &+mst&+Mop&+ms s&+Mud&+mde&+Mnl&+my&n, then begins to &+yu&+Yn&+yd&+Yu&+yl&+Ya&+yt&+Ye&n.  $o&n drops from $s behind.",
+          FALSE, ch, obj, 0, TO_ROOM);
+        writeCorpse(obj);
+        break;
+      }
+    }
+    return TRUE;
+  }
+
+  if( cmd == CMD_DEATH )
+  {
+    act("$n falls to the ground and dissolves into nothing.", FALSE, ch, 0, 0, TO_ROOM);
     for (obj = ch->carrying; obj; obj = next_obj)
     {
       next_obj = obj->next_content;
       obj_from_char(obj, TRUE);
       obj_to_room(obj, ch->in_room);
     }
-    return (FALSE);
+    return FALSE;
   }
 
-  if (!IS_FIGHTING(ch) && (ch->in_room != NOWHERE) &&
-      (MIN_POS(ch, POS_STANDING + STAT_NORMAL)))
+  if( !IS_FIGHTING(ch) && (ch->in_room != NOWHERE) && (MIN_POS(ch, POS_STANDING + STAT_NORMAL)) )
   {
-
     /* ok we check if there is any PC near */
-
     if (range_scan_track(ch, 15, SCAN_ANY))
     {
       InitNewMobHunt(ch);
@@ -1297,40 +1311,31 @@ int purple_worm(P_char ch, P_char pl, int cmd, char *arg)
     }
   }
 
-  /*
-     pl is defined if called from command_interpreter
-   */
-  if (!pl && ch->specials.fighting)
+  // pl is defined if called from command_interpreter
+  if( ch->specials.fighting && !pl )
   {
-    if (!number(0, 10))
+    if( !number(0, 9) )
     {
       // swallow the bastard
       vict = ch->specials.fighting;
-      if (!IS_TRUSTED(vict) && !IS_ELITE(vict) && !IS_NEXUS_GUARDIAN(vict) && !IS_GH_GOLEM(vict) && !IS_OP_GOLEM(vict))
+
+      if( !IS_TRUSTED(vict) && !(IS_NPC(vict) && IS_ELITE(vict)) && !IS_NEXUS_GUARDIAN(vict) && !IS_GH_GOLEM(vict) && !IS_OP_GOLEM(vict) )
       {
-        if (vict->in_room == ch->in_room)
+        if( vict->in_room == ch->in_room )
         {
-          act("You open your mouth and swallow $N whole!",
-              FALSE, ch, 0, vict, TO_CHAR);
+          act("You open your mouth and swallow $N whole!", FALSE, ch, 0, vict, TO_CHAR);
           act("$n opens $s gaping maw, and the last thing you feel is\nthe odd sensation of sliding down $s throat.",
              FALSE, ch, 0, vict, TO_VICT);
 
-          if (IS_PC(vict))
+          if( IS_PC(vict) )
           {
-            statuslog(vict->player.level,
-                      "%s killed by purple worm swallow at [%d].",
-                      GET_NAME(vict),
-                      ((vict->in_room == NOWHERE) ?
-                       -1 : world[vict->in_room].number));
-            logit(LOG_DEATH, "%s killed by purple worm swallow at [%d].",
-                  GET_NAME(vict),
-                  ((vict->in_room == NOWHERE) ?
-                   -1 : world[vict->in_room].number));
+            statuslog(vict->player.level, "%s killed by purple worm swallow at [%d].", GET_NAME(vict),
+              ((vict->in_room == NOWHERE) ? -1 : world[vict->in_room].number));
+            logit(LOG_DEATH, "%s killed by purple worm swallow at [%d].", GET_NAME(vict),
+              ((vict->in_room == NOWHERE) ? -1 : world[vict->in_room].number));
           }
 
           act("$n swallows $N whole!", FALSE, ch, 0, vict, TO_ROOM);
-
-          int id = -1;
 
           if( IS_PC(vict) )
             id = GET_PID(vict);
@@ -1342,19 +1347,23 @@ int purple_worm(P_char ch, P_char pl, int cmd, char *arg)
 
           for( P_obj obj = world[ch->in_room].contents; obj; obj = obj->next_content )
           {
-           if( obj->value[3] == id )
-           {
-             obj_from_room(obj);
-             obj_to_char(obj, ch);
-             if (obj->type == ITEM_CORPSE && IS_SET(obj->value[1], PC_CORPSE))
-               writeCorpse(obj);
-           }
+            if( obj->value[3] == id )
+            {
+              obj_from_room(obj);
+              obj_to_char(obj, ch);
+              if (obj->type == ITEM_CORPSE && IS_SET(obj->value[1], PC_CORPSE))
+              {
+                writeCorpse(obj);
+                // Corpse is digested for a minute
+                obj->timer[0] = 60 + time(NULL);
+              }
+            }
           }
         }
       }
     }
   }
-  return (FALSE);
+  return FALSE;
 }
 
 int piercer(P_char ch, P_char pl, int cmd, char *arg)
@@ -2933,7 +2942,7 @@ int barb( P_obj obj, P_char ch, int cmd, char *arg )
     if( GET_RACE(ch) == RACE_OGRE )
     {
       obj->short_description = NULL;
-      // PENIS: Need to test this; does it solve a mem leak or cause a crash?
+      // TODO: Need to test this; does it solve a mem leak or cause a crash?
       if( IS_SET( obj->str_mask, STRUNG_DESC2) )
       {
         str_free( obj->short_description );

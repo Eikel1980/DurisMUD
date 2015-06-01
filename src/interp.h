@@ -873,7 +873,7 @@ extern unsigned int game_locked;
 #define CMD_DISPEL      -202
 #define CMD_BARB_REMOVE -300  // CMD for barb hammer (vnum #17) to reset it's static vars (sigh).
 
-#define CMD_MOB_COMBAT  0
+#define CMD_MOB_COMBAT  -102
 #define CMD_MOB_MUNDANE 0
 
 #endif /* _SOJ_INTERP_H_ */
