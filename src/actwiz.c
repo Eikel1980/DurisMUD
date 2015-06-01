@@ -7326,7 +7326,7 @@ void do_finger(P_char ch, char *arg, int cmd)
   laston = finger_foo->player.time.saved;
   timegone = (time(0) - laston) / 60;
   send_to_char(Gbuf1, ch);
-  sprintf(Gbuf1, "&+cLast saved:&n %s", asctime(localtime(&laston)));
+  sprintf(Gbuf1, "&+cPID:&n %d &+cLast saved:&n %s", GET_PID(finger_foo), asctime(localtime(&laston)));
   Gbuf1[strlen(Gbuf1) - 1] = 0;
   send_to_char(Gbuf1, ch);
   send_to_char("\n", ch);
