@@ -366,6 +366,8 @@ void update_dam_factors()
   dam_factor[DF_RAGED] = get_property("damage.increase.rage", 2.000);
   dam_factor[DF_ENERGY_CONTAINMENT] = get_property("damage.reduction.EnergyContainment", 0.750);
   dam_factor[DF_GUARDIANS_BULWARK] = get_property("damage.reduction.guardians.bulwark", 0.850);
+  dam_factor[DF_DAMROLL_MOD] = get_property("damroll.mod", 1.0);
+  dam_factor[DF_MELEEMASTERY] = get_property("damage.modifier.meleemastery", 1.100);
 }
 
 // The swashbuckler is considered the victim. // May09 -Lucrot
@@ -7287,14 +7289,18 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   {
     dam = MonkDamage( ch );
   }
-  else if( GET_CLASS(ch, CLASS_PSIONICIST)
-    && affected_by_spell(ch, SPELL_COMBAT_MIND) )
+  else if( GET_CLASS(ch, CLASS_PSIONICIST) && affected_by_spell(ch, SPELL_COMBAT_MIND) )
   {
     dam = dice(ch->points.damnodice, ch->points.damsizedice);
   }
   else
   {
     dam = number(1, 4);         /* 1d4 dam with bare hands */
+    // Those with unarmed damage get an additional 4 damage with skill at 100.
+    if(  GET_CHAR_SKILL(ch, SKILL_UNARMED_DAMAGE) )
+    {
+      dam += GET_CHAR_SKILL(ch, SKILL_UNARMED_DAMAGE) / 25;
+    }
   }
 
   if( weapon )
@@ -7308,15 +7314,19 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
       dam += dice(weapon->value[1], MAX(1, weapon->value[2]));
     }
 
-    /*if (IS_SWORD(weapon) && affected_by_spell(ch, SPELL_HEALING_BLADE))
-      {
+    dam *= dam_factor[DF_WEAPON_DICE];
+    /* Guess healing blade is out.
+    if( IS_SWORD(weapon) && affected_by_spell(ch, SPELL_HEALING_BLADE) )
+    {
       vamp(ch, number(1, 4), GET_MAX_HIT(ch));
-      }*/
+    }
+    */
   }
 
-  dam *= dam_factor[DF_WEAPON_DICE];
-
-  dam += str_app[STAT_INDEX(GET_C_STR(ch))].todam + (int) (GET_DAMROLL(ch) * get_property("damroll.mod", 1.0));
+  tmp = str_app[STAT_INDEX(GET_C_STR(ch))].todam + (int) (GET_DAMROLL(ch) * dam_factor[DF_DAMROLL_MOD] );
+  // Randomize a bit by dropping between 0 and 10% of the damage incurred via damroll mods.
+  tmp = (tmp * number(90,100))/100;
+  dam += tmp;
 
   if( sic == -1 && GET_CHAR_SKILL(ch, SKILL_DEVASTATING_CRITICAL) > devcrit )
   {
@@ -7345,18 +7355,24 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     }
   }
 
+  /* WTF is this BS?  Randomly drop damage by up to 70%?!?
+   *   Commenting this out atm, although it does randomize damage a good bit.
+   * It would be of better use in randomizing the damroll damage instead of both dice and damroll.
+   *   And so, I'm utilizing a similar approach above in the damroll damage.
   // Weapon skill check, used to be offense.
   if( sic != -1 )
   {
     dam = (int) (dam * number(3, 10) / 10);
   }
+  */
 
   if( has_divine_force(ch) )
   {
     dam *= get_property("damage.modifier.divineforce", 1.250);
   }
 
-  if( (GET_RACE(victim) == RACE_MINOTAUR) && !number(0, 25) )
+  // Dropped this to 30sec and made it not stack.
+  if( (GET_RACE(victim) == RACE_MINOTAUR) && !number(0, 25) && !affected_by_spell(ch, TAG_MINOTAUR_RAGE) )
   {
     struct affected_type af;
     act("&+LAs $n&+L strikes you, the power of your &+rance&+Lstor&+rs&+L fill you with &+rR&+RAG&+RE&+L!&n", TRUE, ch, 0, victim, TO_VICT);
@@ -7366,7 +7382,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     af.type = TAG_MINOTAUR_RAGE;
     af.location = APPLY_COMBAT_PULSE;
     af.modifier = -1;
-    af.duration = 130;
+    af.duration = 30;
     af.flags = AFFTYPE_SHORT;
     affect_to_char(victim, &af);
 
@@ -7374,7 +7390,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
     af.type = TAG_INNATE_TIMER;
     af.location = APPLY_SPELL_PULSE;
     af.modifier = -1;
-    af.duration = 130;
+    af.duration = 30;
     af.flags = AFFTYPE_SHORT;
     affect_to_char(victim, &af);
 
@@ -7390,7 +7406,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
 
   if( has_innate(ch, INNATE_MELEE_MASTER) )
   {
-    dam *= get_property("damage.modifier.meleemastery", 1.100);
+    dam *= dam_factor[DF_MELEEMASTERY];
   }
 
   memset(&messages, 0, sizeof(struct damage_messages));
@@ -7417,8 +7433,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   {
     if( IS_PC(ch) )
     {
-      dam += get_property("damage.modifier.vicious.strike", 1.050)
-        * GET_CHAR_SKILL(ch, SKILL_VICIOUS_STRIKE);
+      dam += get_property("damage.modifier.vicious.strike", 1.050) * GET_CHAR_SKILL(ch, SKILL_VICIOUS_STRIKE);
     }
     else if(IS_ELITE(ch))
     {

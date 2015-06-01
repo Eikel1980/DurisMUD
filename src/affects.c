@@ -80,7 +80,7 @@ extern float spell_pulse_data[LAST_RACE + 1];
 struct mm_ds *dead_affect_pool = NULL;
 struct mm_ds *dead_room_affect_pool = NULL;
 float    combat_by_class[CLASS_COUNT + 1][2];
-float    combat_by_race[LAST_RACE + 1][2];
+float    combat_by_race[LAST_RACE + 1][3];
 float    class_hitpoints[CLASS_COUNT + 1];
 struct mm_ds *dead_link_pool = NULL;
 struct mm_ds *dead_obj_affect_pool = NULL;
@@ -104,6 +104,7 @@ struct link_description link_types[LNK_MAX + 1];
 
 extern void disarm_single_event(P_nevent);
 int damroll_cap;
+int hitroll_cap;
 
 
 /*
@@ -506,7 +507,7 @@ int add_racial_stat_bonus(P_char ch, struct hold_data *affs)
 
 void apply_affs(P_char ch, int mode)
 {
-  int t1, t2, t3;
+  int t1, t2, t3, temp;
   float max_con_bonus;
   char  buf1[256];
 
@@ -755,6 +756,13 @@ void apply_affs(P_char ch, int mode)
 
   ch->points.damroll = ch->points.base_damroll + ((mode) ? TmpAffs.Dam : 0);
 
+  if( IS_PC(ch) && ch->points.damroll > (damroll_cap * combat_by_race[GET_RACE(ch)][2]) )
+  {
+//debug( "damroll: %d, damroll_cap: %d, racial modifier: %.3f, new damroll: %d", ch->points.damroll,
+//  damroll_cap, combat_by_race[GET_RACE(ch)][2], (int)(damroll_cap * combat_by_race[GET_RACE(ch)][2]) );
+    ch->points.damroll = (int)(damroll_cap * combat_by_race[GET_RACE(ch)][2]);
+  }
+
   if( GET_C_STR(ch) > stat_factor[(int) GET_RACE(ch)].Str )
   {
     if( GET_C_STR(ch) - stat_factor[(int) GET_RACE(ch)].Str < 9 )
@@ -777,67 +785,74 @@ void apply_affs(P_char ch, int mode)
     }
   }
 
-  if (IS_PC(ch) && ch->points.damroll > damroll_cap)
-    ch->points.damroll = damroll_cap;
-
-  ch->points.hitroll = ch->points.base_hitroll + ((mode) ? TmpAffs.Hit : 0);
-
-  if (mode)
+  if( mode )
   {
-    if (IS_AFFECTED4(ch, AFF4_HAWKVISION))
-      ch->points.hitroll += 5;
+    temp = ch->points.base_hitroll + TmpAffs.Hit;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
   }
 
-  if (IS_PC(ch) && ch->points.hitroll > damroll_cap )
+  if( mode )
   {
-    ch->points.hitroll = damroll_cap;
+    if( IS_AFFECTED4(ch, AFF4_HAWKVISION) )
+    {
+      ch->points.hitroll = (ch->points.hitroll > 121) ? 127 : ch->points.hitroll + 5;
+    }
+  }
+
+  if( IS_PC(ch) && ch->points.hitroll > hitroll_cap )
+  {
+    ch->points.hitroll = hitroll_cap;
   }
 
   if (GET_C_DEX(ch) > stat_factor[(int) GET_RACE(ch)].Dex)
   {
-    ch->points.hitroll +=
-      (int) (GET_C_DEX(ch) - stat_factor[(int) GET_RACE(ch)].Dex) / 2;
+    temp = ch->points.hitroll + (int) (GET_C_DEX(ch) - stat_factor[(int) GET_RACE(ch)].Dex) / 2;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
   }
 
-  if ( ( GET_CLASS(ch, CLASS_PALADIN) || GET_CLASS(ch, CLASS_ANTIPALADIN) ) &&
-       is_wielding_paladin_sword(ch) )
+  if( ( GET_CLASS(ch, CLASS_PALADIN) || GET_CLASS(ch, CLASS_ANTIPALADIN) ) && is_wielding_paladin_sword(ch) )
   {
-    ch->points.hitroll += GET_LEVEL(ch) / 6;
-    ch->points.damroll += GET_LEVEL(ch) / 6;
-  }
-   
-  if (has_innate(ch, INNATE_DUAL_WIELDING_MASTER) &&
-      ch->equipment[PRIMARY_WEAPON] &&
-      ch->equipment[SECONDARY_WEAPON])
-
-  {
-    ch->points.hitroll += GET_LEVEL(ch) / 5;
-  }
-  
-  if(has_innate(ch, INNATE_HAMMER_MASTER) &&
-     ch->equipment[PRIMARY_WEAPON] &&
-     ch->equipment[PRIMARY_WEAPON]->value[0] == WEAPON_HAMMER)
-  {
-    ch->points.hitroll += GET_LEVEL(ch) / 8;
-    ch->points.damroll += GET_LEVEL(ch) / 10;
+    temp = ch->points.hitroll + GET_LEVEL(ch) / 6;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
+    temp = ch->points.damroll + GET_LEVEL(ch) / 6;
+    ch->points.damroll = (temp > 127) ? 127 : temp;
   }
 
-  if( has_innate(ch, INNATE_AXE_MASTER) &&
-      ( ch->equipment[PRIMARY_WEAPON] && ch->equipment[PRIMARY_WEAPON]->value[0] == WEAPON_AXE )
-    )
+  if( has_innate(ch, INNATE_DUAL_WIELDING_MASTER) && ch->equipment[PRIMARY_WEAPON]
+    && ch->equipment[SECONDARY_WEAPON] )
   {
-    ch->points.hitroll += GET_LEVEL(ch) / 8;
-    ch->points.damroll += GET_LEVEL(ch) / 12;
+    temp = ch->points.hitroll + GET_LEVEL(ch) / 5;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
+  }
+
+  if( has_innate(ch, INNATE_HAMMER_MASTER) && ch->equipment[PRIMARY_WEAPON]
+    && ch->equipment[PRIMARY_WEAPON]->value[0] == WEAPON_HAMMER )
+  {
+    temp = ch->points.hitroll + GET_LEVEL(ch) / 8;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
+    temp = ch->points.damroll + GET_LEVEL(ch) / 10;
+    ch->points.damroll = (temp > 127) ? 127 : temp;
+  }
+
+  if( has_innate(ch, INNATE_AXE_MASTER) && (ch->equipment[PRIMARY_WEAPON]
+    && ch->equipment[PRIMARY_WEAPON]->value[0] == WEAPON_AXE) )
+  {
+    temp = ch->points.hitroll + GET_LEVEL(ch) / 8;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
+    temp = ch->points.damroll + GET_LEVEL(ch) / 12;
+    ch->points.damroll = (temp > 127) ? 127 : temp;
   }
 
   if( has_innate(ch, INNATE_LONGSWORD_MASTER) && ( ch->equipment[PRIMARY_WEAPON]
     && ch->equipment[PRIMARY_WEAPON]->value[0] == WEAPON_LONGSWORD))
   {
-    ch->points.hitroll += GET_LEVEL(ch) / 8;
-    ch->points.damroll += GET_LEVEL(ch) / 12;
+    temp = ch->points.hitroll + GET_LEVEL(ch) / 8;
+    ch->points.hitroll = (temp > 127) ? 127 : temp;
+    temp = ch->points.damroll + GET_LEVEL(ch) / 12;
+    ch->points.damroll = (temp > 127) ? 127 : temp;
   }
 
-  if (has_innate(ch, INNATE_GAMBLERS_LUCK))
+  if( has_innate(ch, INNATE_GAMBLERS_LUCK) )
   {
     GET_C_LUK(ch) = GET_C_LUK(ch) + 10;
   }
@@ -845,7 +860,7 @@ void apply_affs(P_char ch, int mode)
   // sure best if we store max_hp in pfile :(
   // now lets use diff approach - store in pfile not HP, but difference max-curr HP
   // can you believe? it works! (Lom)
-  if( !mode && (GET_MAX_HIT(ch) == 0))
+  if( !mode && (GET_MAX_HIT(ch) == 0) )
      t1 = GET_HIT(ch); // diff is stored in pfile
   else
      t1 = GET_MAX_HIT(ch) - GET_HIT(ch);
@@ -2831,13 +2846,15 @@ void update_damage_data()
   {
     sprintf(buf, "damage.pulse.racial.%s", race_names_table[i].no_spaces);
     combat_by_race[i][0] = pulse = get_property(buf, (float) PULSE_VIOLENCE);
-    sprintf(buf, "damage.totalOutput.racial.%s",
-            race_names_table[i].no_spaces);
-    multiplier =
-      get_property(buf, 1.0);
-      // Cancelling the rest of this crap. It doesn't work right anyway. - Lohrr
-      // get_property(buf, 1.0) * melee_factor * pulse / PULSE_VIOLENCE;
+    sprintf(buf, "damage.totalOutput.racial.%s", race_names_table[i].no_spaces);
+    multiplier = get_property(buf, 1.0);
+    // Cancelling the rest of this crap. It doesn't work right anyway. - Lohrr
+    // get_property(buf, 1.0) * melee_factor * pulse / PULSE_VIOLENCE;
     combat_by_race[i][1] = multiplier;
+    sprintf(buf, "damage.damrollModifier.racial.%s", race_names_table[i].no_spaces);
+    multiplier = get_property(buf, 1.0);
+    combat_by_race[i][2] = multiplier;
+
   }
 
   for (i = 0; i <= CLASS_COUNT; i++)

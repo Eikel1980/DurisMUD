@@ -138,7 +138,7 @@ void     sprintbitde(ulong, const flagDef[], char *);
 extern flagDef weapon_types[];
 extern flagDef missile_types[];
 extern float combat_by_class[][2];
-extern float combat_by_race[][2];
+extern float combat_by_race[][3];
 extern const int new_exp_table[];
 extern const char *get_event_name(P_event);
 extern const char *get_function_name(void *);
@@ -1385,24 +1385,24 @@ void do_deathobj(P_char ch, char *argument, int cmd)
 void stat_dam(P_char ch, char *arg)
 {
   char    *race_name, tmplate[512], buf[512], prop_name[512];
-  float    pulse, multiplier, mult_mod, melee_factor;
+  float    pulse, multiplier, mult_mod, melee_factor, damcap;
   int      race;
 
-  send_to_char("Race          &+WPulse&n  Mult  (&+WProp&n)\n", ch);
-  send_to_char("-----------------------------------------\n", ch);
+  send_to_char("Race          &+WPulse&n  Mult  (&+WProp&n) DamCap\n", ch);
+  send_to_char("-------------------------------------------\n", ch);
   melee_factor = get_property("damage.meleeFactor", 1.);
   for (race = 1; race <= LAST_RACE; race++)
   {
     race_name = race_names_table[race].ansi;
     pulse = combat_by_race[race][0];
     pulse += (int)(get_property("damage.pulse.class.all", 2));
-    sprintf(prop_name, "damage.totalOutput.racial.%s",
-            race_names_table[race].no_spaces);
+    sprintf(prop_name, "damage.totalOutput.racial.%s", race_names_table[race].no_spaces);
     mult_mod = get_property(prop_name, 1.);
-    multiplier = combat_by_race[race][1];    
-    sprintf(buf, "%%-%ds &+W%%2d&n  %%.3f  (&+W%%.3f&n)\n",
-            strlen(race_name) - ansi_strlen(race_name) + 15);
-    sprintf(tmplate, buf, race_name, (int) pulse, multiplier, mult_mod);
+    multiplier = combat_by_race[race][1];
+    damcap = combat_by_race[race][2];
+    sprintf(buf, "%%-%ds &+W%%2d&n  %%.3f  (&+W%%.3f&n) &+%%c%%.3f&n\n",
+      strlen(race_name) - ansi_strlen(race_name) + 15);
+    sprintf(tmplate, buf, race_name, (int) pulse, multiplier, mult_mod, (damcap > 1) ? 'C' : 'c', damcap);
     send_to_char(tmplate, ch);
   }
 }
