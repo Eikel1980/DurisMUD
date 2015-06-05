@@ -2353,8 +2353,10 @@ void event_artifact_wars( P_char ch, P_char vict, P_obj obj, void * arg )
       {
         statuslog( 56, "event_artifact_wars: arti %d is not on %s's pfile.", vnum, name );
         wizlog( 56, "event_artifact_wars: arti %d is not on %s's pfile.", vnum, name );
+        /* We don't want to do this because of artis on corpses.
         sprintf(name, ARTIFACT_DIR "%d", vnum);
         unlink(name);
+         */
         // Remove eq from char and extract.
         nuke_eq( owner );
         extract_char( owner );
@@ -2394,8 +2396,10 @@ void event_artifact_wars( P_char ch, P_char vict, P_obj obj, void * arg )
       {
         statuslog( 56, "event_artifact_wars: arti %d is not on %s!", vnum, name );
         wizlog( 56, "event_artifact_wars: arti %d is not on %s!", vnum, name );
+        /* We don't want to do this because of artis on corpses.
         sprintf(name, ARTIFACT_DIR "%d", vnum);
         unlink(name);
+         */
       }
       else
       {
