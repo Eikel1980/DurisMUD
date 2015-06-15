@@ -3392,8 +3392,7 @@ void enter_game(P_desc d)
     af1.flags = AFFTYPE_PERM | AFFTYPE_NODISPEL;
     affect_to_char(ch, &af1);
 
-    GetMIA2(ch->player.name, Gbuf1 );
-    debug( "'%s' getting well-rested bonus (%s)!", J_NAME(ch), Gbuf1 );
+    debug( "'%s' getting well-rested bonus!", J_NAME(ch) );
   }
   // 10 hrs -> 2h rested bonus.
   else if( rest / 3600 >= 10 )
@@ -3409,8 +3408,7 @@ void enter_game(P_desc d)
     af1.flags = AFFTYPE_PERM | AFFTYPE_NODISPEL;
     affect_to_char(ch, &af1);
 
-    GetMIA2(ch->player.name, Gbuf1 );
-    debug( "'%s' getting rested bonus (%s)!", J_NAME(ch), Gbuf1 );
+    debug( "'%s' getting rested bonus!", J_NAME(ch) );
   }
 
   GetMIA(ch->player.name, Gbuf1 );
