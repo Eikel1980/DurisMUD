@@ -31,8 +31,9 @@ extern P_char character_list;
 extern P_event current_event;
 extern P_room world;
 extern int top_of_zone_table;
-extern int map_g_modifier;
-extern int map_e_modifier;
+extern int map_normal_modifier;
+extern int map_ultra_modifier;
+extern int map_dayblind_modifier;
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
@@ -130,64 +131,76 @@ int astral_clock_setMapModifiers(void)
   // Dawn
   case 4:
     astralMsgIdx = 1;
-    map_g_modifier = 5;
-    map_e_modifier = 7;
+    map_normal_modifier = 5;
+    map_ultra_modifier = 7;
+    map_dayblind_modifier = 5;
     break;
   case 5:
     astralMsgIdx = 2;
-    map_g_modifier = 6;
-    map_e_modifier = 6;
+    map_normal_modifier = 5;
+    map_ultra_modifier = 7;
+    map_dayblind_modifier = 4;
     break;
   case 6:
   case 7:
-    map_g_modifier = 7;
-    map_e_modifier = 3;
+    map_normal_modifier = 6;
+    map_ultra_modifier = 6;
+    map_dayblind_modifier = 4;
     break;
   case 8:
     astralMsgIdx = 3;
-    map_g_modifier = 7;
-    map_e_modifier = 3;
+    map_normal_modifier = 6;
+    map_ultra_modifier = 6;
+    map_dayblind_modifier = 3;
     break;
   case 9:
     astralMsgIdx = 4;
-    map_g_modifier = 7;
-    map_e_modifier = 3;
+    map_normal_modifier = 7;
+    map_ultra_modifier = 6;
+    map_dayblind_modifier = 3;
     break;
   case 10:
   case 11:
   case 12:
-    map_g_modifier = 7;
-    map_e_modifier = 3;
+    map_normal_modifier = 7;
+    map_ultra_modifier = 5;
+    map_dayblind_modifier = 3;
     break;
   case 13:
-    map_g_modifier = 8;
-    map_e_modifier = 3;
+    map_normal_modifier = 8;
+    map_ultra_modifier = 5;
+    map_dayblind_modifier = 3;
     break;
   case 14:
     astralMsgIdx = 5;
   case 15:
-    map_g_modifier = 7;
-    map_e_modifier = 3;
+    map_normal_modifier = 7;
+    map_ultra_modifier = 5;
+    map_dayblind_modifier = 3;
     break;
   case 16:
     astralMsgIdx = 6;
-    map_g_modifier = 7;
-    map_e_modifier = 3;
+    map_normal_modifier = 7;
+    map_ultra_modifier = 6;
+    map_dayblind_modifier = 4;
     break;
   case 17:
     astralMsgIdx = 7;
-    map_g_modifier = 6;
-    map_e_modifier = 3;
+    map_normal_modifier = 6;
+    map_ultra_modifier = 7;
+    map_dayblind_modifier = 5;
     break;
   case 18:
     astralMsgIdx = 8;
-    map_g_modifier = 6;
-    map_e_modifier = 5;
+    map_normal_modifier = 5;
+    map_ultra_modifier = 7;
+    map_dayblind_modifier = 6;
     break;
   case 19:
     astralMsgIdx = 9;
-    map_g_modifier = 5;
-    map_e_modifier = 7;
+    map_normal_modifier = 4;
+    map_ultra_modifier = 6;
+    map_dayblind_modifier = 6;
     break;
   // Night time
   case 20:
@@ -199,8 +212,9 @@ int astral_clock_setMapModifiers(void)
   case 1:
   case 2:
   case 3:
-    map_g_modifier = 3;
-    map_e_modifier = 8;
+    map_normal_modifier = 3;
+    map_ultra_modifier = 6;
+    map_dayblind_modifier = 8;
     break;
   }
   return astralMsgIdx;

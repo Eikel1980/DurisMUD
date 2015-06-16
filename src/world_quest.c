@@ -47,8 +47,6 @@ using namespace std;
 extern char *target_locs[];
 extern char *set_master_text[];
 extern int mini_mode;
-extern int map_g_modifier;
-extern int map_e_modifier;
 extern FILE *help_fl;
 extern FILE *info_fl;
 extern P_char character_list;

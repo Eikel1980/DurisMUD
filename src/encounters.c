@@ -23,8 +23,6 @@ extern const char rev_dir[];
 extern int top_of_world;
 extern int top_of_zone_table;
 
-/*extern int map_g_modifier;
-extern int map_e_modifier;*/
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
 extern int LOADED_RANDOM_ZONES;

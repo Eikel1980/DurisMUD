@@ -65,7 +65,7 @@
 #define IS_DAY ((time_info.hour >= 8) && (time_info.hour <= 16))
 // Twilight : 4am to 8am and 4pm to 7pm
 #define IS_TWILIGHT (((time_info.hour > 4) && (time_info.hour < 8)) || \
-                     ((time_info.hour > 16) && (time_info.hour < 19)))
+                     ((time_info.hour > 16) && (time_info.hour <= 19)))
 // Night: 8pm to 4am
 #define IS_NIGHT ((time_info.hour <= 4) || (time_info.hour > 19))
 

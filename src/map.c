@@ -68,17 +68,16 @@ extern const int rev_dir[];
 extern int top_of_world;
 extern int top_of_zone_table;
 
-// These are set in weather.c
-/*extern int map_g_modifier;
-extern int map_e_modifier;*/
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
 extern int LOADED_RANDOM_ZONES;
 extern struct time_info_data time_info;
 
 int      whats_in_maproom(P_char, int, int);
-int      map_e_modifier;
-int      map_g_modifier;
+// These are set in weather.c
+int      map_normal_modifier;
+int      map_ultra_modifier;
+int      map_dayblind_modifier;
 
 void     add_quest_data(char *map);
 
@@ -872,59 +871,62 @@ int map_view_distance(P_char ch, int room)
   // if on the surface
   else if( IS_SURFACE_MAP(room) )
   {
-    // The map_e_modifier and map_g_modifier varies by time.
+    // The map_*_modifiers vary over time of day (done in weather.c).
     if( has_innate(ch, INNATE_DAYBLIND) )
     {
       if( IS_AFFECTED(ch, AFF_INFRAVISION) )
       {
-        n = BOUNDED(0, (map_e_modifier + 2), 8);
+        n = BOUNDED(0, (map_dayblind_modifier + 2), 8);
       }
       else
       {
-        n = BOUNDED(0, (map_e_modifier), 8);
+        n = BOUNDED(0, (map_dayblind_modifier), 8);
       }
     }
     else
     {
-      n = BOUNDED(0, map_g_modifier, 8);
+      if( IS_AFFECTED2(ch, AFF2_ULTRAVISION) )
+      {
+        n = BOUNDED(0, (map_ultra_modifier), 8);
+      }
+      else
+      {
+        n = BOUNDED(0, (map_normal_modifier), 8);
+      }
+      // Infra raises view slightly on surface maps.
+      if( IS_AFFECTED(ch, AFF_INFRAVISION) )
+      {
+        n = MIN( 8, n + 1 );
+      }
     }
-
     if( IS_AFFECTED(ch, AFF_FLY) )
     {
       n++;
     }
   }
-  else if (IS_UD_MAP(room))
+  // UD maps have a constant ultravision glow, but not much in the way of natural light.
+  else if( IS_UD_MAP(room) )
   {
-    if( RACE_GOOD(ch) )
+    if( has_innate(ch, INNATE_DAYBLIND) )
     {
-      n = 5;
-
-      if( IS_LIGHT(room) )
-      {
-        n += 1;
-      }
-      if( IS_AFFECTED2(ch, AFF2_ULTRAVISION) )
-      {
-        n += 1;
-      }
-      if( IS_AFFECTED(ch, AFF_UD_VISION) )
-      {
-        n += 2;
-      }
+      n = 8;
+    }
+    else if( IS_AFFECTED2(ch, AFF2_ULTRAVISION) )
+    {
+      n = 6;
     }
     else
     {
-      n = 5;
-
-      if (has_innate(ch, INNATE_DAYBLIND))
-      {
-        n += 1;
-      }
-      if (IS_AFFECTED2(ch, AFF2_ULTRAVISION))
-      {
-        n += 2;
-      }
+      n = 4;
+    }
+    if( IS_AFFECTED(ch, AFF_UD_VISION) )
+    {
+      n += 2;
+    }
+    // Infra raises view slightly on UD maps too.
+    else if( IS_AFFECTED(ch, AFF_INFRAVISION) )
+    {
+      n++;
     }
   }
   // In a zone.. ?!

@@ -31,8 +31,6 @@ extern P_char character_list;
 extern P_event current_event;
 extern P_room world;
 extern int top_of_zone_table;
-extern int map_g_modifier;
-extern int map_e_modifier;
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;

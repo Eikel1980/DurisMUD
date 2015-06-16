@@ -53,8 +53,6 @@ extern float spell_pulse_data[LAST_RACE + 1];
 extern char *target_locs[];
 extern char *set_master_text[];
 extern int mini_mode;
-extern int map_g_modifier;
-extern int map_e_modifier;
 extern FILE *help_fl;
 extern FILE *info_fl;
 extern P_char character_list;
@@ -124,6 +122,10 @@ extern void show_world_events(P_char ch, const char* arg);
 extern struct quest_data quest_index[];
 extern struct epic_bonus_data ebd[];
 extern long ne_event_counter;
+extern int map_normal_modifier;
+extern int map_ultra_modifier;
+extern int map_dayblind_modifier;
+
 void display_map(P_char ch, int n, int show_map_regardless);
 extern void event_short_affect(P_char, P_char , P_obj , void *);
 
@@ -8775,7 +8777,8 @@ void do_scan(P_char ch, char *argument, int cmd)
 
     if( IS_SURFACE_MAP(ch->in_room) )
     {
-      visibility += GOOD_RACE(ch) ? map_g_modifier : map_e_modifier;
+      visibility += IS_DAYBLIND(ch) ? map_dayblind_modifier : IS_AFFECTED2(ch, AFF2_ULTRAVISION)
+        ? map_ultra_modifier : map_normal_modifier;
     }
     else if( IS_UD_MAP(ch->in_room) )
     {
