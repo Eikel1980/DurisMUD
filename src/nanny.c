@@ -4069,6 +4069,7 @@ void reconnect(P_desc d, P_char tmp_ch)
     d->character->desc = d;
     tmp_ch->desc = NULL;
   }
+  send_offline_messages(d->character);
 }
 
 void select_pwd(P_desc d, char *arg)

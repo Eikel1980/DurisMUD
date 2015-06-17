@@ -90,9 +90,7 @@ struct command_info cmd_info[MAX_CMD_LIST];
  */
 
 const char *command[] = {
-  "north",                      /*
-                                 * 1
-                                 */
+  "north",                      // 1
   "east",
   "south",
   "west",
@@ -1079,6 +1077,7 @@ const char *command[] = {
   "deforest",
   "beep",
   "deathsdoor",
+  "offlinemsg",
   "\n"                          /* MAX_CMD_LIST is now 1000 */
 };
 
@@ -2342,6 +2341,7 @@ void assign_command_pointers(void)
   CMD_GRT(CMD_PETITION_BLOCK, STAT_DEAD + POS_PRONE, do_petition_block, FORGER);
   CMD_GRT(CMD_WHITELIST, STAT_DEAD + POS_PRONE, do_whitelist, IMMORTAL);
   CMD_GRT(CMD_QUESTWHERE, STAT_NORMAL + POS_STANDING, do_questwhere, IMMORTAL);
+  CMD_GRT(CMD_OFFLINEMSG, STAT_NORMAL + POS_STANDING, do_offlinemsg, GREATER_G);
 
 
   /*

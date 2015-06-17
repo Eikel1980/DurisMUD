@@ -10784,3 +10784,89 @@ void stat_race(P_char ch, char *arg)
 
   stat_single_race( ch, race );
 }
+
+// Does pretty much what it sounds like: Sends a message to a character.
+//   If that character is online, it sends them the message right away.
+//   If that character is ld/offline, it adds the message to the offline_messages
+//     table which, in turn, shows the message at next login.
+void do_offlinemsg(P_char ch, char *arg, int cmd)
+{
+  char     name[MAX_INPUT_LENGTH], *rest;
+  char     message[MAX_INPUT_LENGTH];
+  char     buf[MAX_STRING_LENGTH];
+  int      pid;
+  P_desc   d;
+  P_char   recipient;
+
+  // Separate name from message.
+  rest = one_argument(arg, name);
+  rest = skip_spaces(rest);
+
+  pid = get_player_pid_from_name(name);
+
+  if( !name || !*name || *name == '?' )
+  {
+    sprintf( buf, "&+YSyntax:&N offlinemsg <player's name> <message to send>\n\r", name );
+    send_to_char( buf, ch );
+    return;
+  }
+
+  if( pid == 0 )
+  {
+    sprintf( buf, "&+YCould not find player '&+w%s&+Y'.&n\n\r", name );
+    send_to_char( buf, ch );
+    return;
+  }
+
+  if( !rest || !*rest )
+  {
+    send_to_char( "&+YYes, but what message do you want to send them?&n\n\r", ch );
+    return;
+  }
+
+  // This needs a carriage return.. *sigh*
+  sprintf( message, "&+W%s&n: %s\n\r", GET_NAME(ch), rest );
+
+  // Walk through the connected players, looking for the recipient online first.
+  for( d = descriptor_list; d; d = d->next )
+  {
+    // Need an in-game descriptor w/a character attached.
+    if( !d->character || d->connected )
+    {
+      continue;
+    }
+
+    // Handles switched gods / morphed players.
+    recipient = (d->original) ? d->original : d->character;
+
+    // This should never be the case, but ...
+    if( IS_NPC(recipient) )
+    {
+      debug( "do_offlinemsg: NPC char '%s' %d on descriptor list??", GET_NAME(recipient),
+        (recipient->only.npc != NULL) ? GET_VNUM(recipient) : -1 );
+      continue;
+    }
+
+    // If we have the right pid
+    if( GET_PID(recipient) == pid )
+    {
+      if( CAN_SEE_Z_CORD(ch, recipient) )
+      {
+        sprintf( buf, "&+YSending &=LWin-game&n&+Y message '&n%s&n&+Y' to '&+w%s&+Y' (pid: &+w%d&+Y).&n\n\r",
+          rest, name, pid );
+        send_to_char( buf, ch );
+        sprintf( buf, "&+Y%s&+Y sends you an in-game message '&n%s&n&+W'&N\r\n",
+          CAN_SEE( recipient, ch ) ? J_NAME(ch) : "Someone", rest );
+        SEND_TO_Q( buf, d );
+        return;
+      }
+      else
+      {
+        break;
+      }
+    }
+  }
+  sprintf( buf, "&+YSending offline message '&n%s&+Y' to '&+w%s&n&+Y' (pid: &+w%d&+Y).&n\n\r", rest, name, pid );
+  send_to_char( buf, ch );
+  send_to_pid_offline( message, pid );
+}
