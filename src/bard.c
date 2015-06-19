@@ -352,6 +352,9 @@ int bard_calc_chance(P_char ch, int song)
     {
       debug( "bard_calc_chance: '%s' has final percentage of 100 - arti instrument.", J_NAME(ch) );
     }
+    // We'll let them notch the song if they have an arti, but not the intstrument, since
+    //   artis are 'all instrument' types.
+    notch_skill(ch, song, BARD_SKILL_NOTCH_CHANCE);
     return 100;
   }
   // Playing the right instrument and can play said instrument...
