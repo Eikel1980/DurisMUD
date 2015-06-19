@@ -151,54 +151,56 @@ const char *sector_symbol[NUM_SECT_TYPES] = {
   "#",                          /* Castle Wall */
   "^",                          /* Castle Porticulus */
   "O",                           /* Castle Itself */
-  " ",                           // "Negative Plane",
-  " ",                           // "Plane of Avernus",
-  "+",                           // "Patrolled Road", 
-  "*",                          /* Snowy Forest */
+  " ",                           // Negative Plane
+  " ",                           // Plane of Avernus
+  "+",                           // Patrolled Road
+  "*",                           // Snowy Forest
+  " "                            // Lava
 };
 
 // whee..  'typedef char bool'?  BAH!
 
 mapSymbolInfo color_symbol[NUM_SECT_TYPES] = {
   {"=wl", true},
-  {"+L", false},
-  {"+g", false},
+  {"+L" , false},
+  {"+g" , false},
   {"=gl", true},
-  {"+y", false},
-  {"+y", false},
+  {"+y" , false},
+  {"+y" , false},
   {"=cl", true},
   {"=bB", true},
-  {"+w", false},
-  {"+w", false},
-  {"+w", false},
+  {"+w" , false},
+  {"+w" , false},
+  {"+w" , false},
   {"=rR", true},
   {"=bB", true},
   {"=mL", true},
   {"=wl", true},
-  {"+m", false},
+  {"+m" , false},
   {"=bB", true},
   {"=bB", true},
-  {"+w", false},
-  {"+w", false},
-  {"+L", true},
-  {"+w", false},
-  {"+w", false},
+  {"+w" , false},
+  {"+w" , false},
+  {"+L" , true},
+  {"+w" , false},
+  {"+w" , false},
   {"=Lr", true},
   {"=yY", true},
-  {"+W", false},
+  {"+W" , false},
   {"=mL", true},
-  {"+L", false},
+  {"+L" , false},
   {"=rL", true},
-  {"+M", false},
+  {"+M" , false},
   {"=wW", true},
-  {"+M", false},
+  {"+M" , false},
   {"=wL", true},
   {"=wB", true},
-  {"+r", true},
+  {"+r" , true},
   {"=lw", false},
   {"=lw", false},
-  {"+L", false},
-  {"=wl", true}
+  {"+L" , false},
+  {"=wl", true},
+  {"=rR", true}
 };
 
 unsigned int calculate_relative_room(unsigned int rroom, int x, int y)

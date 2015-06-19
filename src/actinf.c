@@ -3785,22 +3785,48 @@ void do_world(P_char ch, char *argument, int cmd)
     length = 0;
     i = world[ch->in_room].zone;
     send_to_char("R-Num   V-Num   Room-Name\n", ch);
-    for (room_count = 0; room_count <= top_of_world; room_count++)
-      if (world[room_count].zone == i)
+    if( !argument || !*argument )
+    {
+      for (room_count = 0; room_count <= top_of_world; room_count++)
       {
-        sprintf(buf, "%5d  %6d  %-s\n", room_count,
-                world[room_count].number, world[room_count].name);
-        if ((strlen(buf) + length + 40) < MAX_STRING_LENGTH)
+        if (world[room_count].zone == i)
         {
-          strcat(buff, buf);
-          length += strlen(buf);
-        }
-        else
-        {
-          strcat(buff, "Too many rooms to list...\n");
-          break;
+          sprintf(buf, "%5d  %6d  %-s\n", room_count, world[room_count].number, world[room_count].name);
+          if( (strlen(buf) + length + 40) < MAX_STRING_LENGTH )
+          {
+            strcat(buff, buf);
+            length += strlen(buf);
+          }
+          else
+          {
+            strcat(buff, "Too many rooms to list...\n");
+            break;
+          }
         }
       }
+    }
+    else
+    {
+      for (room_count = 0; room_count <= top_of_world; room_count++)
+      {
+        if( world[room_count].zone == i )
+        {
+          if( !isname( argument, strip_ansi(world[room_count].name).c_str() ) )
+            continue;
+          sprintf(buf, "%5d  %6d  %-s\n", room_count, world[room_count].number, world[room_count].name);
+          if( (strlen(buf) + length + 40) < MAX_STRING_LENGTH )
+          {
+            strcat(buff, buf);
+            length += strlen(buf);
+          }
+          else
+          {
+            strcat(buff, "Too many rooms to list...\n");
+            break;
+          }
+        }
+      }
+    }
     strcat(buff, "\n");
     page_string(ch->desc, buff, 1);
     break;
