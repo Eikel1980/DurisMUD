@@ -2932,8 +2932,7 @@ void kill_gain(P_char ch, P_char victim)
 
   if( IS_PC(victim) )
   {
-    if(GOOD_RACE(ch) && GOOD_RACE(victim)
-        || EVIL_RACE(ch) && EVIL_RACE(victim))
+    if( GOOD_RACE(ch) && GOOD_RACE(victim) || EVIL_RACE(ch) && EVIL_RACE(victim) )
     {
       gain = 1;
     }
@@ -2972,7 +2971,7 @@ void kill_gain(P_char ch, P_char victim)
 
     if(!IS_PC(victim) && affected_by_spell(victim, SPELL_CONTAIN_BEING) && GET_CLASS(ch, CLASS_SUMMONER) && IS_SPECIALIZED(ch) && IS_PC(ch))
     {
-      if(!valid_conjure(ch, victim)) 
+      if(!valid_conjure(ch, victim))
       {
         send_to_char("You cannot learn to summon a being outside of your area of expertise.\r\n", ch);
         return;
@@ -3100,8 +3099,7 @@ void kill_gain(P_char ch, P_char victim)
   }
 }
 
-void dam_message(double fdam, P_char ch, P_char victim,
-    struct damage_messages *messages)
+void dam_message(double fdam, P_char ch, P_char victim, struct damage_messages *messages)
 {
   int      dam = (int) fdam;
   P_obj    wield;

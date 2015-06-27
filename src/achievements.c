@@ -22,9 +22,9 @@ int get_frags(P_char ch)
 void do_achievements(P_char ch, char *arg, int cmd)
 {
   char buf[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH], buf3[MAX_STRING_LENGTH];
-  struct affected_type *paf = get_spell_from_char(ch, ACH_LEVELACHIEVEMENT);
+  struct affected_type *paf = get_spell_from_char(ch, AIP_LEVELACHIEVEMENT);
   int lvlachi = paf ? paf->modifier : 0;
-  paf = get_spell_from_char(ch, ACH_CARGOCOUNT);
+  paf = get_spell_from_char(ch, AIP_CARGOCOUNT);
   int cargo = paf ? paf->modifier : 0;
 
   sprintf(buf, "\r\n&+L=-=-=-=-=-=-=-=-=-=--= &+rDuris Mud &+yAch&+Yieveme&+ynts &+Lfor &+r%s &+L=-=-=-=-=-=-=-=-=-=-=-&n\r\n\r\n", GET_NAME(ch));
@@ -109,9 +109,9 @@ void do_achievements(P_char ch, char *arg, int cmd)
   //-----DRagonslayer
 
   //-----Achievement: Trader
-  if( cargo > 10000 )
+  if( cargo >= 10000 )
     sprintf(buf3, "  &+L%-43s&+L%-45s  &+L%s\r\n",
-        "&+yT&+Yr&+ya&+Yd&+ye&+Yr&n", "&+ySell 10000 crates of cargo&n", "&+YShip construction halved&n");
+        "&+yT&+Yr&+ya&+Yd&+ye&+Yr&n", "&+BSell 10000 crates of cargo&n", "&+YShip construction halved&n");
   else
     sprintf(buf3, "  &+L%-43s&+L%-45s  &+L%s &+W%d%%\r\n",
         "&+yT&+Yr&+ya&+Yd&+ye&+Yr&n", "&+ySell 10000 crates of cargo&n", "&+YShip construction halved&n", cargo/100);
@@ -271,7 +271,7 @@ void update_achievements(P_char ch, P_char victim, int cmd, int ach)
   }
 
   /* Level-Based Achievements */
-  if( !(paf = get_spell_from_char(ch, ACH_LEVELACHIEVEMENT)) || paf->modifier < GET_LEVEL(ch) )
+  if( !(paf = get_spell_from_char(ch, AIP_LEVELACHIEVEMENT)) || paf->modifier < GET_LEVEL(ch) )
   {
     // The Journey Begins
     if( GET_LEVEL(ch) >= 5 && (!paf || paf->modifier < 5) )
@@ -286,7 +286,7 @@ void update_achievements(P_char ch, P_char victim, int cmd, int ach)
       obj_to_char( gift, ch);
       if( !paf )
       {
-        paf = apply_achievement(ch, ACH_LEVELACHIEVEMENT);
+        paf = apply_achievement(ch, AIP_LEVELACHIEVEMENT);
       }
       paf->modifier = 5;
     }
@@ -309,7 +309,7 @@ void update_achievements(P_char ch, P_char victim, int cmd, int ach)
       }
       if( !paf )
       {
-        paf = apply_achievement(ch, ACH_LEVELACHIEVEMENT);
+        paf = apply_achievement(ch, AIP_LEVELACHIEVEMENT);
       }
       paf->modifier = 30;
     }
@@ -362,20 +362,29 @@ void update_achievements(P_char ch, P_char victim, int cmd, int ach)
     /* Decepticon */
 
     /* Dragonslayer */
-    if((findaf && findaf->type == AIP_DRAGONSLAYER) && !affected_by_spell(ch, ACH_DRAGONSLAYER) && (ach == 2) && (GET_RACE(victim) == RACE_DRAGON) )
+    if((findaf && findaf->type == AIP_DRAGONSLAYER) && (ach == 2) && (GET_RACE(victim) == RACE_DRAGON) )
     {
-      //check to see if we've hit 1000 kills
-      int result = findaf->modifier;
-      if(result >= 1000)
+      int result;
+
+      // Skip illusionist dragons.
+      if(GET_VNUM(victim) != 1108)
+      {
+        findaf->modifier++;
+      }
+
+      result = findaf->modifier;
+      // If they already have the DragonSlayer achievement, kill the achievement in progress.
+      if( affected_by_spell(ch, ACH_DRAGONSLAYER) )
+      {
+        affect_remove(ch, findaf);
+      }
+      // Check to see if we've hit 1000 kills
+      else if(result >= 1000)
       {
         affect_remove(ch, findaf);
         apply_achievement(ch, ACH_DRAGONSLAYER);
         send_to_char("&+rCon&+Rgra&+Wtula&+Rtio&+rns! You have completed the &+RDragonslayer&+r achievement!&n\r\n", ch);
         send_to_char("&+yYou will now do 10 percent more damage to dragon races!&n\r\n", ch);
-      }
-      if(GET_VNUM(victim) != 1108)
-      {
-        findaf->modifier += 1;
       }
     }
     /* end Dragonslayer */

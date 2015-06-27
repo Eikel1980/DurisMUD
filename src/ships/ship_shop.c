@@ -510,9 +510,9 @@ int sell_cargo_slot(P_char ch, P_ship ship, int slot, int rroom)
   adjust_ship_market(SOLD_CARGO, rroom, type, crates);
 
   // Movement towards the Trader boon.
-  if( !(paf = get_spell_from_char(ch, ACH_CARGOCOUNT)) )
+  if( !(paf = get_spell_from_char(ch, AIP_CARGOCOUNT)) )
   {
-    paf = apply_achievement(ch, ACH_CARGOCOUNT);
+    paf = apply_achievement(ch, AIP_CARGOCOUNT);
     paf->modifier = 0;
   }
   if( paf->modifier < 10000 && paf->modifier + crates >= 10000 )
@@ -1601,7 +1601,7 @@ int buy_contra(P_char ch, P_ship ship, char* arg)
 
 int buy_weapon(P_char ch, P_ship ship, char* arg1, char* arg2)
 {
-  struct affected_type *paf = get_spell_from_char(ch, ACH_CARGOCOUNT);
+  struct affected_type *paf = get_spell_from_char(ch, AIP_CARGOCOUNT);
   bool quickbuild = (paf && paf->modifier >= 10000) ? TRUE : FALSE;
 
     if (!is_number(arg1) || !arg2 || !*arg2) 
@@ -1735,7 +1735,7 @@ int buy_weapon(P_char ch, P_ship ship, char* arg1, char* arg2)
 
 int buy_equipment(P_char ch, P_ship ship, char* arg1)
 {
-  struct affected_type *paf = get_spell_from_char(ch, ACH_CARGOCOUNT);
+  struct affected_type *paf = get_spell_from_char(ch, AIP_CARGOCOUNT);
   bool quickbuild = (paf && paf->modifier >= 10000) ? TRUE : FALSE;
 
     if (!is_number(arg1)) 
@@ -1831,8 +1831,8 @@ int buy_equipment(P_char ch, P_ship ship, char* arg1)
 
 int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
 {
-  int cost, buildtime;
-  struct affected_type *paf = get_spell_from_char(ch, ACH_CARGOCOUNT);
+  int cost, buildtime, hull_type, oldhull;
+  struct affected_type *paf = get_spell_from_char(ch, AIP_CARGOCOUNT);
   bool quickbuild = (paf && paf->modifier >= 10000) ? TRUE : FALSE;
 
   if( owned )
@@ -1852,20 +1852,20 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
     }
   }
 
-  int i = atoi(arg1) - 1;
-  if( (i < 0) || (i >= MAXSHIPCLASS) )
+  hull_type = atoi(arg1) - 1;
+  if( (hull_type < 0) || (hull_type >= MAXSHIPCLASS) )
   {
     send_to_char ("Not a valid hull selection.\r\n", ch);
     return TRUE;
   }
 
-  if( SHIPTYPE_MIN_LEVEL(i) > GET_LEVEL(ch) )
+  if( SHIPTYPE_MIN_LEVEL(hull_type) > GET_LEVEL(ch) )
   {
     send_to_char ("You are too low for such a big ship! Get more experience!\r\n", ch);
     return TRUE;
   }
 
-  if( SHIPTYPE_COST(i) == 0 && !IS_TRUSTED(ch) )
+  if( SHIPTYPE_COST(hull_type) == 0 && !IS_TRUSTED(ch) )
   {
     send_to_char ("You can not buy this hull.\r\n", ch);
     return TRUE;
@@ -1874,8 +1874,8 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
   /* Okay, we have a valid selection for ship hull */
   if( owned )
   {
-    int oldclass = ship->m_class;
-    if( i == oldclass )
+    oldhull = ship->m_class;
+    if( hull_type == oldhull )
     {
       send_to_char ("You own this hull already!\r\n", ch);
       return TRUE;
@@ -1885,7 +1885,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
       send_to_char ("You can not reconstruct ship full of cargo!\r\n", ch);
       return TRUE;
     }
-    if( !check_undocking_conditions (ship, i, ch) )
+    if( !check_undocking_conditions (ship, hull_type, ch) )
     {
       return TRUE;
     }
@@ -1900,14 +1900,14 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
     }
     */
 
-    cost = SHIPTYPE_COST(i) - (int) (SHIPTYPE_COST(oldclass) * .90);
+    cost = SHIPTYPE_COST(hull_type) - (int) (SHIPTYPE_COST(oldhull) * .90);
     if( cost >= 0 )
     {
-      if( GET_MONEY(ch) < cost || GET_EPIC_POINTS(ch) < SHIPTYPE_EPIC_COST(i) )
+      if( GET_MONEY(ch) < cost || GET_EPIC_POINTS(ch) < SHIPTYPE_EPIC_COST(hull_type) )
       {
-        if( SHIPTYPE_EPIC_COST(i) > 0 )
+        if( SHIPTYPE_EPIC_COST(hull_type) > 0 )
         {
-          send_to_char_f(ch, "That upgrade costs %s and %d epic points!\r\n", coin_stringv(cost), SHIPTYPE_EPIC_COST(i));
+          send_to_char_f(ch, "That upgrade costs %s and %d epic points!\r\n", coin_stringv(cost), SHIPTYPE_EPIC_COST(hull_type));
         }
         else
         {
@@ -1916,37 +1916,37 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
         return TRUE;
       }
       SUB_MONEY(ch, cost, 0);/* OKay, they have the plat, deduct it and build the ship */
-      if(SHIPTYPE_EPIC_COST(i) > 0 )
+      if(SHIPTYPE_EPIC_COST(hull_type) > 0 )
       {
-        ch->only.pc->epics -= SHIPTYPE_EPIC_COST(i);
+        ch->only.pc->epics -= SHIPTYPE_EPIC_COST(hull_type);
       }
     }
     else
     {
-      if( GET_EPIC_POINTS(ch) < SHIPTYPE_EPIC_COST(i) )
+      if( GET_EPIC_POINTS(ch) < SHIPTYPE_EPIC_COST(hull_type) )
       {
-        send_to_char_f(ch, "That upgrade costs %d epic points!\r\n", SHIPTYPE_EPIC_COST(i));
+        send_to_char_f(ch, "That upgrade costs %d epic points!\r\n", SHIPTYPE_EPIC_COST(1928));
         return TRUE;
       }
       cost *= -1;
       send_to_char_f(ch, "You receive %s&n for remaining materials.\r\n", coin_stringv(cost));
       ADD_MONEY(ch, cost);
-      if( SHIPTYPE_EPIC_COST(i) > 0 )
+      if( SHIPTYPE_EPIC_COST(hull_type) > 0 )
       {
-        ch->only.pc->epics -= SHIPTYPE_EPIC_COST(i);
+        ch->only.pc->epics -= SHIPTYPE_EPIC_COST(hull_type);
       }
     }
 
-    ship->m_class = i;
+    ship->m_class = hull_type;
     reset_ship(ship, false);
 
-    if( ship->m_class > oldclass )
+    if( ship->m_class > oldhull )
     {
-      buildtime = 75 * (ship->m_class / 2 - oldclass / 3);
+      buildtime = 75 * (ship->m_class / 2 - oldhull / 3);
     }
     else
     {
-      buildtime = 75 * (oldclass / 2 - ship->m_class / 3);
+      buildtime = 75 * (oldhull / 2 - ship->m_class / 3);
     }
 
     if( ocean_pvp_state() )
@@ -1989,7 +1989,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
     }
     if( affected_by_spell( ch, AIP_FREESLOOP ) )
     {
-      if( (GET_MONEY(ch) >= SHIPTYPE_COST(i) - 100000) && GET_EPIC_POINTS(ch) >= SHIPTYPE_EPIC_COST(i) )
+      if( (GET_MONEY(ch) >= SHIPTYPE_COST(hull_type) - 100000) && GET_EPIC_POINTS(ch) >= SHIPTYPE_EPIC_COST(hull_type) )
       {
         send_to_char( "You show your &+ysmall &+bS&+Ba&+bi&+Bl&+bo&+Br&+b'&+Bs&n &+yTattoo&n for a discount.&n\n\r", ch );
         ADD_MONEY(ch, 100000);
@@ -1998,21 +1998,21 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
       }
     }
 
-    if( GET_MONEY(ch) < SHIPTYPE_COST(i) || GET_EPIC_POINTS(ch) < SHIPTYPE_EPIC_COST(i) )
+    if( GET_MONEY(ch) < SHIPTYPE_COST(hull_type) || GET_EPIC_POINTS(ch) < SHIPTYPE_EPIC_COST(hull_type) )
     {
-      if( SHIPTYPE_EPIC_COST(i) > 0 )
+      if( SHIPTYPE_EPIC_COST(hull_type) > 0 )
       {
-        send_to_char_f(ch, "That ship costs %s and %d epic points!\r\n", coin_stringv(SHIPTYPE_COST(i)), SHIPTYPE_EPIC_COST(i));
+        send_to_char_f(ch, "That ship costs %s and %d epic points!\r\n", coin_stringv(SHIPTYPE_COST(hull_type)), SHIPTYPE_EPIC_COST(hull_type));
       }
       else
       {
-        send_to_char_f(ch, "That ship costs %s!\r\n", coin_stringv(SHIPTYPE_COST(i)));
+        send_to_char_f(ch, "That ship costs %s!\r\n", coin_stringv(SHIPTYPE_COST(hull_type)));
       }
       return TRUE;
     }
 
     // Now, create the ship object
-    ship = new_ship(i);
+    ship = new_ship(hull_type);
     if( ship == NULL )
     {
       logit(LOG_FILE, "error in new_ship(): %d\n", shiperror);
@@ -2020,7 +2020,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
       return TRUE;
     }
 
-    buildtime = 75 * SHIPTYPE_ID(i) / 4;
+    buildtime = 75 * SHIPTYPE_ID(hull_type) / 4;
     ship->ownername = str_dup(GET_NAME(ch));
     ship->anchor = world[ch->in_room].number;
     name_ship(arg2, ship);
@@ -2038,10 +2038,10 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
     write_ships_index();
 
     // everything went successfully, substracting the cost
-    SUB_MONEY(ch, SHIPTYPE_COST(i), 0);
-    if (SHIPTYPE_EPIC_COST(i) > 0)
+    SUB_MONEY(ch, SHIPTYPE_COST(hull_type), 0);
+    if( SHIPTYPE_EPIC_COST(hull_type) > 0 )
     {
-      epic_gain_skillpoints(ch, -SHIPTYPE_EPIC_COST(i));
+      epic_gain_skillpoints(ch, -SHIPTYPE_EPIC_COST(hull_type));
     }
 
     send_to_char( "Your ship, '", ch );

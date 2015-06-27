@@ -2,7 +2,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <math.h>
-    
+
 #include "ships.h"
 #include "comm.h"
 #include "db.h"
@@ -24,26 +24,47 @@ extern char buf[MAX_STRING_LENGTH];
 
 int epic_ship_damage_control(P_char ch, int dam)
 {
-    if(!(ch) || dam < 2)
-        return dam;
+  int skill;
+  float reduction_mod;
 
-    int skill = GET_CHAR_SKILL(ch, SKILL_SHIP_DAMAGE_CONTROL);
-    if (skill < 1)
-        return dam;
-
-    float reduction_mod = dam * (4.0 + (float)skill / 5.0) / 100.0;
-    while (reduction_mod >= 1.0 && dam > 1)
-    {
-        dam--;
-        reduction_mod -= 1.0;
-    }
-    if (reduction_mod == 0.0 || dam < 2)
-        return dam;
-
-    if (number(1, (int)(1.0 / reduction_mod)) == 1)
-        dam--;
-
+  if( !IS_ALIVE(ch) || dam < 2 )
+  {
     return dam;
+  }
+
+  if( (skill = GET_CHAR_SKILL(ch, SKILL_SHIP_DAMAGE_CONTROL)) < 1 )
+  {
+    return dam;
+  }
+
+  // reduction_mod starts at dam * 4% - 24%.
+  reduction_mod = dam * (4.0 + (float)skill / 5.0) / 100.0;
+
+  // Here we reduce dam by the floor of reduction mod, down to dam == 1
+  while( reduction_mod >= 1.0 && dam > 1 )
+  {
+      dam--;
+      reduction_mod -= 1.0;
+  }
+  // It's safe to say at this point that 0 <= reduction_mod < 1 or dam == 1.
+
+  // Here, we handle if we're down to 1 damage, or out of reduction.
+  if( reduction_mod == 0.0 || dam < 2 )
+  {
+    return dam;
+  }
+  // It's safe to say at this point that 0 < reduction_mod < 1.
+
+  // Here, we calculate the chance to remove one more point of damage:
+  //   We multiply red_mod by 100 to create a percentage, then check the percent vs random percent.
+  reduction_mod *= 100;
+  // As reduction_mod is at least one percent, and goes up to 99.999... so always a chance to fail.
+  if( number(1, 100) <= reduction_mod )
+  {
+    dam--;
+  }
+
+  return dam;
 }
 
 void stun_all_in_ship(P_ship ship, int timer)
@@ -187,7 +208,7 @@ int calc_salvage(P_ship target)
           salvage += (int) (weapon_data[target->slot[j].index].cost * 0.1);
         }
         else
-        {    
+        {
           salvage += (int) (weapon_data[target->slot[j].index].cost / 2);
         }
       }
@@ -200,6 +221,7 @@ int calc_salvage(P_ship target)
     {
       salvage = MAX((int)(salvage/get_property("ship.sinking.rewardDivider", 7.)), 0);
     }
+
     return salvage;
 }
 

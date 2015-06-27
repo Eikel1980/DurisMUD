@@ -1142,7 +1142,7 @@
 #define ACH_UNSTOPPABLE              2071
 #define ACH_LETSGETDIRTY             2072
 #define ACH_SERIALKILLER             2073
-#define ACH_LEVELACHIEVEMENT         2074
+#define AIP_LEVELACHIEVEMENT         2074
 #define AIP_ARACHNOPHOBIA            2075
 #define ACH_ARACHNOPHOBIA            2076
 #define ACH_TROLLIN                  2077
@@ -1178,7 +1178,7 @@
 #define TAG_RESTED                   2107
 #define TAG_WELLRESTED               2108
 #define TAG_EPICS_GAINED             2109
-#define ACH_CARGOCOUNT               2110
+#define AIP_CARGOCOUNT               2110
 #define ACH_DEATHSDOOR               2111
 #define TAG_DEATHSDOOR               2112
 #define TAG_BARDSONG_FAILURE         2113
