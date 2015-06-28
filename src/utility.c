@@ -39,6 +39,7 @@ using namespace std;
 #include "defines.h"
 #include "sql.h"
 #include "mm.h"
+#include "epic.h"
 
 /*
  * extern variables
@@ -5839,4 +5840,33 @@ char *CRYPT2( char *passwd, char *name )
   }
 
   return crypt( passwd, buf );
+}
+
+// Returns TRUE iff ch has a stone/monolith for a zone touch.
+//   These chars do not get poofed out of a zone.
+bool has_touch_stone( P_char ch )
+{
+  int i;
+  P_obj obj;
+
+  // First check inventory.
+  for( obj = ch->carrying; obj; obj = obj->next_content )
+  {
+    if( obj_index[GET_OBJ_VNUM(obj)].func.obj == epic_stone )
+    {
+      return TRUE;
+    }
+  }
+  // Then check to see if it's eq'd.. just to make sure.
+  for( i = 0; i < MAX_WEAR; i++ )
+  {
+    if( (obj = ch->equipment[i]) != NULL )
+    {
+      if( obj_index[GET_OBJ_VNUM(obj)].func.obj == epic_stone )
+      {
+        return TRUE;
+      }
+    }
+  }
+  return FALSE;
 }

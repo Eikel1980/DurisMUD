@@ -580,13 +580,15 @@ int orb_of_the_sea(P_obj obj, P_char ch, int cmd, char *arg)
   {
     return TRUE;
   }
-  if (!ch && cmd == CMD_PERIODIC)
+
+  if( !ch && cmd == CMD_PERIODIC)
   {
     hummer(obj);
     return TRUE;
   }
 
-  if( cmd != CMD_GOTHIT || !IS_ALIVE(ch) )
+  // Procs on hits or getting hit.. since it's a mage arti.
+  if( (cmd != CMD_GOTHIT && cmd != CMD_MELEE_HIT) || !IS_ALIVE(ch) )
   {
     return FALSE;
   }
@@ -595,16 +597,23 @@ int orb_of_the_sea(P_obj obj, P_char ch, int cmd, char *arg)
    if (!OBJ_WORN_POS(obj, WIELD) || !OBJ_WORN_POS(obj, WIELD2))
     return (FALSE);
 */
-
-  if( !(data = (struct proc_data *) arg) )
+  // If we can't find the victim
+  if( (cmd == CMD_GOTHIT && !(data = (struct proc_data *) arg) && !(victim = (P_char) arg))
+    || (cmd == CMD_MELEE_HIT && !(victim = (P_char) arg)) )
   {
     return FALSE;
   }
-  victim = data->victim;
 
   if( OBJ_WORN_BY(obj, ch) && IS_ALIVE(victim) && !IS_SET(world[ch->in_room].room_flags, NO_TELEPORT)
     && !IS_GH_GOLEM(victim) && GET_RACE(victim) != RACE_CONSTRUCT && !(strstr(victim->player.name, "_no_move_")) )
   {
+    // We don't poof the stone carriers to the WP 'cause we don't want them to drop to ground
+    //   and not be retrievable when the carrier dies.
+    if( IS_NPC(victim) && has_touch_stone(victim) )
+    {
+      return FALSE;
+    }
+
     // 1/30 chance.
     if( !number(0, 29) )
     {

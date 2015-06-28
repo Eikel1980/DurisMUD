@@ -2991,6 +2991,7 @@ bool is_natural_creature(P_char);
 bool is_casting_aggr_spell(P_char);
 bool match_pattern(const char *pat, const char *str);
 bool is_pid_online( int pid, bool includeLD );
+bool has_touch_stone( P_char ch );
 
 /* statistcs.c */
 void event_write_statistic(P_char ch, P_char victim, P_obj obj, void *data);
