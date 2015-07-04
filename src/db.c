@@ -3864,7 +3864,7 @@ void free_char(P_char ch)
 
   clear_char_nevents(ch, -1, NULL);
 
-  if (IS_PC(ch))
+  if (IS_PC(ch) && ch->only.pc)
     delete_knownShapes(ch);
 
 //  if (IS_PC(ch))                /* clear trophy */
