@@ -1598,8 +1598,9 @@ void arti_files_to_sql( P_char ch, char *arg )
   struct    dirent *dire;
   FILE     *f;
   P_obj     arti, obj, obj2;
-  P_char    tmpch;
+  P_char    tmpch, owner;
   arti_data artidata;
+  bool super;
 
   if( !*arg || !strcmp(arg, "?") || !strcmp(arg, "help") )
   {
@@ -1613,11 +1614,19 @@ void arti_files_to_sql( P_char ch, char *arg )
     send_to_char("This command is reserved for use by &+rOverlords&n only.\n\r", ch);
     return;
   }
-  if( strcmp(arg, "confirm") )
+  if( strcmp(arg, "confirm") && strcmp(arg, "super") )
   {
     send_to_char("This command is requires &+wconfirmation&n.  Please do not use if you don't know"
       " what you're doing, as it can corrupt the current artifact data.\n\r", ch);
     return;
+  }
+  if( !strcmp(arg, "super") )
+  {
+    super = TRUE;
+  }
+  else
+  {
+    super = FALSE;
   }
 
   // At this point, it's a go.
@@ -1656,6 +1665,7 @@ void arti_files_to_sql( P_char ch, char *arg )
       fclose(f);
       continue;
     }
+    fclose(f);
 
     sprintf( buf, "  Char '%s' %d, has arti %d (%s) with timer %s", pname, pid, vnum,
       (temp == 0) ? "on char" : ((temp == 1) ? "on corpse" : "unknown location"), ctime(&timer) );
@@ -1723,10 +1733,28 @@ void arti_files_to_sql( P_char ch, char *arg )
       // If we can read everything, update the entry for it.
       artifact_update_sql( vnum, TRUE, (temp==0) ? ARTIFACT_ON_PC : ARTIFACT_ONCORPSE, pid, timer, type );
 
-      extract_obj( arti, FALSE );
+      if( super )
+      {
+        owner = load_dummy_char(pname);
+        if( !owner )
+        {
+          extract_obj( arti, FALSE );
+        }
+        else
+        {
+          if( get_object_from_char( owner, vnum ) == NULL )
+          {
+            obj_to_char( arti, owner);
+            writeCharacter(owner, RENT_CRASH, owner->in_room);
+          }
+          nuke_eq(owner);
+          extract_char(owner);
+        }
+      }
+      else
+        extract_obj( arti, FALSE );
     }
 
-    fclose(f);
   }
 
   closedir(dir);

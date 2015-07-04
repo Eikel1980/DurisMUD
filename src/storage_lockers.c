@@ -121,8 +121,7 @@ StorageLocker::~StorageLocker(void)
     world[m_realRoom].ex_description->next->keyword = NULL;
   }
 
-  // how teh hell did this not happen... sigh...
-  free_char(m_chLocker);
+//  free_char(m_chLocker);
 }
 
 void StorageLocker::NukeLockerChests(void)
