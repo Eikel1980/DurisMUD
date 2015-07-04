@@ -26,6 +26,8 @@
 #include "disguise.h"
 #include "weather.h"
 #include "siege.h"
+#include "tradeskill.h"
+#include "vnum.obj.h"
 
 /*
  * external variables
@@ -51,7 +53,6 @@ extern struct zone_data *zone_table;
 extern struct sector_data *sector_table;
 extern void check_room_links(P_char, int, int);
 extern bool grease_check(P_char);
-extern int top_of_world;
 extern int get_number_allies_in_room(P_char ch, int room_index);
 extern int get_weight_allies_in_room(P_char ch, int room_index);
 void send_movement_noise(P_char ch, int num);
@@ -2055,8 +2056,8 @@ void make_ice(P_char ch)
         return;
     }
 
-  ice = read_object(110, VIRTUAL);
-  if( !ice)
+  ice = read_object(VOBJ_PATH_OF_FROST_ICE, VIRTUAL);
+  if( !ice )
     return;
 
   set_obj_affected(ice, 400, TAG_OBJ_DECAY, 0);
@@ -2067,7 +2068,7 @@ void make_ice(P_char ch)
       obj_to_room(ice, real_room(ch->specials.was_in_room));
     else
     {
-      extract_obj(ice, TRUE);
+      extract_obj(ice, FALSE);
       ice = NULL;
     }
   }
@@ -2315,9 +2316,11 @@ void do_open(P_char ch, char *argument, int cmd)
     }
     else
     {
-      //special proc for bag of random goodness - drannak 4/3/2013 400232= turkey gut
-      if( obj_index[obj->R_num].virtual_number == 400217 || obj_index[obj->R_num].virtual_number == 400235
-        || obj_index[obj->R_num].virtual_number == 400233 || obj_index[obj->R_num].virtual_number == 400232 )
+      // Yeah, misusing the door variable.. so sue me.
+      door = obj_index[obj->R_num].virtual_number;
+      // Special proc for bag of random goodness - drannak 4/3/2013 400232= turkey gut
+      if( door == REG_FAERIE_BAG_VNUM || door == RARE_FAERIE_BAG_VNUM
+        || door == EXCEPT_FAERIE_BAG_VNUM || door == TURKEY_INNARDS_VNUM )
       {
         if( (IS_CARRYING_N(ch) + 1) > CAN_CARRY_N(ch)) //check their inventory
         {
@@ -2330,12 +2333,12 @@ void do_open(P_char ch, char *argument, int cmd)
           send_to_char("You must have the &+Witem&n in your &+Yinventory&n to open it!\r\n", ch);
           return;
         }
-        if(obj_index[obj->R_num].virtual_number == 400235 || obj_index[obj->R_num].virtual_number == 400217)
+        if(door == REG_FAERIE_BAG_VNUM || door == RARE_FAERIE_BAG_VNUM)
         {
           send_to_char("&+mAs you open the &+Mbag&+m, a magical mist &+rex&+Rpl&+Mod&+Wes&+m covering everything!\r\n", ch);
           act("&+mAs $n opens the &+Mbag&+m, a magical mist &+rex&+Rpl&+Mod&+Wes&+m covering everything!", FALSE, ch, obj, 0, TO_ROOM);
         }
-        else if(obj_index[obj->R_num].virtual_number == 400233)
+        else if(door == EXCEPT_FAERIE_BAG_VNUM)
         {
           send_to_char("&+mAs you open the &+Ychest&+m, a magical mist &+rex&+Rpl&+Mod&+Wes&+m covering everything!\r\n", ch);
           act("&+mAs $n opens the &+Ychest&+m, a magical mist &+rex&+Rpl&+Mod&+Wes&+m covering everything!", FALSE, ch, obj, 0, TO_ROOM);
@@ -2349,54 +2352,54 @@ void do_open(P_char ch, char *argument, int cmd)
         char buf[MAX_STRING_LENGTH];
         P_obj robj;
         long robjint;
-        int validobj;
-        validobj = 0;
+        bool validobj;
+        validobj = FALSE;
 /*
 debug sprintf(buf, "validobj value: %d\n\r", validobj);
 send_to_char(buf, ch);
 */
-        if( obj_index[obj->R_num].virtual_number == 400232 ) //turkey gut
+        if( door == TURKEY_INNARDS_VNUM )
         {
           int roll = number(0, 500);
           if( roll < 5) //big reward
           {
-            robj = read_object(400237, VIRTUAL);
+            robj = read_object(TURKEY_WING_CAPE_VNUM, VIRTUAL);
           }
           else if( roll < 20)
           {
-            robj = read_object(400233, VIRTUAL);
+            robj = read_object(EXCEPT_FAERIE_BAG_VNUM, VIRTUAL);
           }
           else
           {
-            robj = read_object(400236, VIRTUAL);
+            robj = read_object(TURKEY_FOOD_VNUM, VIRTUAL);
           }
         }
         else
         {
-          while(validobj == 0)
+          while(validobj == FALSE)
           {
  	          robjint = number(1300, 134000);
  	          robj = read_object(robjint, VIRTUAL);
-            validobj = 1;
+            validobj = TRUE;
             if( !robj )
             {
-              validobj = 0;
+              validobj = FALSE;
             }
-            else if( !IS_SET(robj->wear_flags, ITEM_TAKE) || robj->type == ITEM_KEY || IS_SET(robj->extra_flags, ITEM_ARTIFACT)
+            else if( !IS_SET(robj->wear_flags, ITEM_TAKE) || robj->type == ITEM_KEY || IS_ARTIFACT(robj)
               || IS_SET(robj->extra_flags, ITEM_NORENT) || IS_SET(robj->extra_flags, ITEM_NOSHOW)
-              || IS_SET(robj->extra_flags, ITEM_TRANSIENT) )
+              || IS_SET(robj->extra_flags, ITEM_TRANSIENT) || isname("_noquest_", robj->name) )
             {
-              validobj = 0;
+              validobj = FALSE;
               extract_obj(robj, FALSE);
             }
-            else if((obj_index[obj->R_num].virtual_number == 400235) && itemvalue(ch, robj) < 15)
+            else if(door == RARE_FAERIE_BAG_VNUM && itemvalue(ch, robj) < 25)
             {
-              validobj = 0;
+              validobj = FALSE;
               extract_obj(robj, FALSE);
             }
-            else if((obj_index[obj->R_num].virtual_number == 400233) && itemvalue(ch, robj) < 25)
+            else if(door == EXCEPT_FAERIE_BAG_VNUM && itemvalue(ch, robj) < 50)
             {
-              validobj = 0;
+              validobj = FALSE;
               extract_obj(robj, FALSE);
             }
           }
@@ -2406,7 +2409,7 @@ send_to_char(buf, ch);
         REMOVE_BIT(robj->extra_flags, ITEM_NODROP);
         REMOVE_BIT(robj->extra_flags, ITEM_INVISIBLE);
 
-        if( obj_index[obj->R_num].virtual_number == 400232 )
+        if( door == TURKEY_INNARDS_VNUM )
         {
           act("&+rAfter some &+Rmessy &+rsearching, you finally find &n$p&+m!\r\n", FALSE, ch, robj, 0, TO_CHAR);
           act("&+rAfter some &+Rmessy &+rsearching, $n finally finds &n$p&+m!\r\n", FALSE, ch, robj, 0, TO_ROOM);
@@ -2418,7 +2421,7 @@ send_to_char(buf, ch);
         }
 
         obj_to_char(robj, ch);
-        obj_from_char(obj, TRUE);
+        obj_from_char(obj);
         extract_obj(obj, FALSE);
         if( itemvalue(ch, robj) > 100 )
         {
@@ -2755,7 +2758,7 @@ void do_unlock(P_char ch, char *argument, int cmd)
       send_to_char("...but you unlock it anyway!\n", ch);
       act("$n unlocks $p.", FALSE, ch, obj, 0, TO_ROOM);
     }
-    else if( (key_obj = has_key(ch, OBJ_TEMPLATE_KEY)) &&
+    else if( (key_obj = has_key(ch, VOBJ_TEMPLATE_KEY)) &&
              (key_obj->value[7] == obj_index[obj->R_num].virtual_number))
     {
       REMOVE_BIT(obj->value[1], CONT_LOCKED);
@@ -2789,7 +2792,7 @@ void do_unlock(P_char ch, char *argument, int cmd)
           act("$n's key breaks off in the lock!", FALSE, ch, 0, 0, TO_ROOM);
           if( ch->equipment[HOLD] && (ch->equipment[HOLD] == key_obj))
             unequip_char(ch, HOLD);
-          extract_obj(key_obj, TRUE);
+          extract_obj(key_obj, TRUE); // Not that there are any artifact keys but ok.
           key_obj = NULL;
         }
     }
@@ -2863,7 +2866,7 @@ void do_unlock(P_char ch, char *argument, int cmd)
         act("$n's key breaks off in the lock!", FALSE, ch, 0, 0, TO_ROOM);
         if( ch->equipment[HOLD] && (ch->equipment[HOLD] == key_obj))
           unequip_char(ch, HOLD);
-        extract_obj(key_obj, TRUE);
+        extract_obj(key_obj, TRUE); // Not that there are any artifact keys but ok.
         key_obj = NULL;
       }
     /*
@@ -2983,7 +2986,7 @@ void do_pick(P_char ch, char *argument, int cmd)
             FALSE, ch, pick, 0, TO_ROOM);
         if( ch->equipment[HOLD] && (ch->equipment[HOLD] == pick))
           unequip_char(ch, HOLD);
-        extract_obj(pick, TRUE);
+        extract_obj(pick, TRUE); // Not that there are any artifact lockpicks, but ok.
       }
       return;
     }
@@ -3035,7 +3038,7 @@ void do_pick(P_char ch, char *argument, int cmd)
             FALSE, ch, pick, 0, TO_ROOM);
         if( ch->equipment[HOLD] && (ch->equipment[HOLD] == pick))
           unequip_char(ch, HOLD);
-        extract_obj(pick, TRUE);
+        extract_obj(pick, TRUE); // Not that there are any artifact lockpicks, but ok.
       }
       return;
     }
@@ -3084,7 +3087,7 @@ void do_pick(P_char ch, char *argument, int cmd)
         FALSE, ch, pick, 0, TO_ROOM);
     if( ch->equipment[HOLD] && (ch->equipment[HOLD] == pick))
       unequip_char(ch, HOLD);
-    extract_obj(pick, TRUE);
+    extract_obj(pick, TRUE); // Not that there are any artifact lockpicks, but ok.
   }
 }
 

@@ -353,8 +353,9 @@ int ferry_automat_proc(P_obj obj, P_char ch, int cmd, char *arg) {
 		if( !ticket )
 			return FALSE;
 
-		if( GET_MONEY(ch) < ticket_cost ) {
-			extract_obj(ticket, TRUE);
+		if( GET_MONEY(ch) < ticket_cost )
+    {
+			extract_obj(ticket);
 			send_to_char("You don't have enough money to buy a ticket!\r\n", ch);
 			return TRUE;
 		}

@@ -34,7 +34,8 @@
 #include "specs.winterhaven.h"
 #include "guildhall.h"
 #include "achievements.h"
-
+#include "tradeskill.h"
+#include "vnum.obj.h"
 /*
  * external variables
  */
@@ -63,7 +64,6 @@ extern struct dex_app_type dex_app[];
 extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;
 extern struct time_info_data time_info;
-extern int top_of_world;
 extern P_index obj_index;
 extern char *specdata[][MAX_SPEC];
 extern P_char character_list;
@@ -1171,42 +1171,42 @@ void do_forage(P_char ch, char *arg, int cmd)
     switch (world[ch->in_room].sector_type)
     {
     case SECT_SWAMP:
-      foodobj = read_object(821 + number(0, 2), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_NIGHTSHADE + number(0, 2), VIRTUAL);
       strcpy(sectname, "the surrounding swamp");
       break;
 
     case SECT_FIELD:
-      foodobj = read_object(821 + number(0, 1), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_NIGHTSHADE + number(0, 1), VIRTUAL);
       strcpy(sectname, "through the brush");
       break;
 
     case SECT_FOREST:
-      foodobj = read_object(822 + number(0, 4), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_MANDRAKE + number(0, 4), VIRTUAL);
       strcpy(sectname, "through the undergrowth");
       break;
 
     case SECT_HILLS:
-      foodobj = read_object(825 + number(0, 3), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_DRAGON_BLOOD + number(0, 3), VIRTUAL);
       strcpy(sectname, "through the rocky terrain");
       break;
 
     case SECT_MOUNTAIN:
-      foodobj = read_object(826 + number(0, 2), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_GREEN_HERB + number(0, 2), VIRTUAL);
       strcpy(sectname, "through the rocky terrain");
       break;
 
     case SECT_UNDRWLD_WILD:
-      foodobj = read_object(822 + number(0, 2), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_MANDRAKE + number(0, 2), VIRTUAL);
       strcpy(sectname, "the surrounding area");
       break;
 
     case SECT_UNDRWLD_MUSHROOM:
-      foodobj = read_object(822 + number(0, 3), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_MANDRAKE + number(0, 3), VIRTUAL);
       strcpy(sectname, "the surrounding area");
       break;
 
     case SECT_DESERT:
-      foodobj = read_object(820 + number(0, 1), VIRTUAL);
+      foodobj = read_object(VOBJ_INGRED_DESERT_GRASS + number(0, 1), VIRTUAL);
       strcpy(sectname, "the surrounding desert");
       break;
 
@@ -1356,7 +1356,7 @@ void do_quit(P_char ch, char *argument, int cmd)
         obj = unequip_char(ch, l);
         if (IS_SET(obj->extra_flags, ITEM_TRANSIENT))
         {
-          extract_obj(obj, TRUE);
+          extract_obj(obj, TRUE); // Transient artifacts?
           obj = NULL;
         }
         else                    /* if (!IS_SET (obj->extra_flags, ITEM_NODROP)) */
@@ -1372,12 +1372,12 @@ void do_quit(P_char ch, char *argument, int cmd)
         next_obj = obj->next_content;
         if (IS_SET(obj->extra_flags, ITEM_TRANSIENT))
         {
-          extract_obj(obj, TRUE);
+          extract_obj(obj, TRUE); // Transient artifacts?
           obj = NULL;
         }
         else
         {                       /* if (!IS_SET (obj->extra_flags, ITEM_NODROP)) */
-          obj_from_char(obj, TRUE);
+          obj_from_char(obj);
           obj_to_room(obj, ch->in_room);
         }
       }
@@ -2033,7 +2033,7 @@ void do_hide(P_char ch, char *argument, int cmd)
         next_tobj = tobj->next_content;
         if (tobj->R_num == real_object(VNUM_TRACKS))
         {
-          extract_obj(tobj, TRUE);
+          extract_obj(tobj);
           tobj = NULL;
         }
       }
@@ -2303,78 +2303,77 @@ static int location_mod[] = { 75,       /* light */
 
 void do_steal(P_char ch, char *argument, int cmd)
 {
-  P_char   victim;
-  P_obj    obj = NULL;
+  int      skl;
   char     victim_name[MAX_INPUT_LENGTH];
   char     obj_name[MAX_INPUT_LENGTH];
+  P_char   victim;
+
+  P_obj    obj = NULL;
   int      percent, roll, i, type = 0;
   int      gold[4] = { 0, 0, 0, 0 }, eq_pos = 0, diff;
   bool     failed = FALSE, caught = FALSE;
   char     Gbuf1[MAX_STRING_LENGTH];
 
-  if (IS_NPC(ch))
+  // NPCs use npc_steal.
+  if( IS_NPC(ch) )
+  {
     return;
-  if(!IS_TRUSTED(ch))
+  }
+
+  if( !IS_TRUSTED(ch) )
   {
     send_to_char("Steal is temporarily disabled for rework. Go stab something.\r\n", ch);
     return;
   }
 
-  if (GET_LEVEL(ch) < 10)
+  if( GET_LEVEL(ch) < 10 )
   {
     send_to_char("You're too inexperienced.. get some levels.\r\n", ch);
     return;
   }
-  
-  if (IS_RIDING(ch))
+
+  if( IS_RIDING(ch) )
   {
     send_to_char("While mounted? I don't think so...\r\n", ch);
     return;
   }
-  
-/* 
- if((IS_AFFECTED(ch, AFF_INVISIBLE) ||
-      IS_AFFECTED2(ch, AFF2_MINOR_INVIS)) &&
-      !IS_AFFECTED(ch, AFF_DETECT_INVISIBLE))
+
+  if( !CAN_SEE(ch, ch) )
   {
-    send_to_char
-      ("You can't even see your own hand. How do you plan on stealing?\r\n",
-       ch);
+    send_to_char("You can't even see your own hand. How do you plan on stealing?\r\n", ch);
     return;
   }
-*/
-  
-  if (!GET_CHAR_SKILL(ch, SKILL_STEAL) &&
-      !IS_TRUSTED(ch))
+
+  if( (skl = IS_TRUSTED(ch) ? 100 : GET_CHAR_SKILL(ch, SKILL_STEAL)) < 1 )
   {
-    send_to_char("You better leave the art of stealing to the thieves.\r\n",
-                 ch);
+    send_to_char("You better leave the art of stealing to the thieves.\r\n", ch);
     return;
   }
-  if (CHAR_IN_ARENA(ch))
+
+  if( CHAR_IN_ARENA(ch) )
   {
     send_to_char("Steal in the arena? Yeah right.\r\n", ch);
     return;
   }
-  /*if (GET_ALIGNMENT(ch) > 349 && !IS_TRUSTED(ch)) {
-     send_to_char("Your conscience gets the better of you. You must be getting soft in your old age.\r\n", ch);
-     return;
-     } */
-  if ((IS_CARRYING_N(ch) + 1) > CAN_CARRY_N(ch))
+  /*
+  if (GET_ALIGNMENT(ch) > 349 && !IS_TRUSTED(ch))
   {
-    send_to_char
-      ("My! Aren't we the greedy one!  You couldn't carry anything more if it was just\r\nlaying around on the ground!\r\n",
-       ch);
+    send_to_char("Your conscience gets the better of you. You must be getting soft in your old age.\r\n", ch);
     return;
   }
-  if (IS_CARRYING_W(ch) >= CAN_CARRY_W(ch))
+  */
+  if( (IS_CARRYING_N(ch) + 1) > CAN_CARRY_N(ch) )
   {
-    send_to_char("Sheesh!  With that load it's a wonder you can walk!\r\n",
-                 ch);
+    send_to_char("My! Aren't we the greedy one!  You couldn't carry anything more if it was just\r\nlaying around on the ground!\r\n", ch);
+    return;
+  }
+  if( IS_CARRYING_W(ch) >= CAN_CARRY_W(ch) )
+  {
+    send_to_char("Sheesh!  With that load it's a wonder you can walk!\r\n", ch);
     return;
   }
 
-  if (affected_by_spell(ch, TAG_PVPDELAY))
+  if( affected_by_spell(ch, TAG_PVPDELAY) )
   {
     send_to_char("There is too much adrenaline pumping through your body right now.\r\n", ch);
     return;
@@ -2382,53 +2381,50 @@ void do_steal(P_char ch, char *argument, int cmd)
 
   if( CHAR_IN_SAFE_ZONE(ch) && !IS_TRUSTED(ch) )
   {
-    send_to_char
-      ("Your conscience prevents you from stealing in such a peaceful place.\r\n",
-       ch);
+    send_to_char("Your conscience prevents you from stealing in such a peaceful place.\r\n", ch);
     return;
   }
-  
+
   argument = one_argument(argument, obj_name);
   one_argument(argument, victim_name);
 
-  if (!(victim = get_char_room_vis(ch, victim_name)))
+  if( !(victim = get_char_room_vis(ch, victim_name)) )
   {
     send_to_char("Steal what from who?\r\n", ch);
     //CharWait(ch, PULSE_VIOLENCE);
     return;
   }
-  else if (victim == ch)
+
+  if( victim == ch )
   {
     send_to_char("Come on now, that's rather stupid!\r\n", ch);
     return;
   }
- /* if (IS_PC(victim) && (GET_LEVEL(ch) < 35) &&
-      !GET_SPEC(ch, CLASS_THIEF, SPEC_CUTPURSE))
+ /*
+  if( IS_PC(victim) && (GET_LEVEL(ch) < 35) && !GET_SPEC(ch, CLASS_THIEF, SPEC_CUTPURSE) )
   {
     send_to_char("Maybe you should practice more...\r\n", ch);
     return;
-  }*/
-  if ((world[ch->in_room].room_flags & SINGLE_FILE) &&
-      !AdjacentInRoom(ch, victim))
+  }
+  */
+  if( (world[ch->in_room].room_flags & SINGLE_FILE) && !AdjacentInRoom(ch, victim) )
   {
-    act("$N seems to be just a BIT out of reach.",
-        FALSE, ch, 0, victim, TO_CHAR);
+    act("$N seems to be just a BIT out of reach.", FALSE, ch, 0, victim, TO_CHAR);
     return;
   }
-  if (ch->group && !on_front_line(ch))
+  if( ch->group && !on_front_line(ch) )
   {
     send_to_char("You can't quite reach...\r\n", ch);
     return;
   }
-  if (victim->group && !on_front_line(victim))
-    if (GET_SPEC(ch, CLASS_THIEF, SPEC_CUTPURSE))
+  if( victim->group && !on_front_line(victim) )
+  {
+    if( GET_SPEC(ch, CLASS_THIEF, SPEC_CUTPURSE) )
     {
-      if (number(0, GET_C_DEX(ch)) < (75 + STAT_INDEX(GET_C_DEX(victim))))
+      if( number(0, GET_C_DEX(ch)) < (75 + STAT_INDEX(GET_C_DEX(victim))) )
       {
         CharWait(ch, PULSE_VIOLENCE);
-        send_to_char
-          ("You can't quite reach your victim, but you try anyway...\r\n",
-           ch);
+        send_to_char("You can't quite reach your victim, but you try anyway...\r\n", ch);
         return;
       }
     }
@@ -2437,70 +2433,68 @@ void do_steal(P_char ch, char *argument, int cmd)
       send_to_char("You can't quite reach...\r\n", ch);
       return;
     }
+  }
 
   if( IS_FIGHTING(victim) || IS_DESTROYING(victim) )
   {
     send_to_char("Yah, right, good way to lose a hand, or a head!\r\n", ch);
     return;
   }
-  /*if (IS_PC(victim) && !victim->desc && GET_LEVEL(ch) <= MAXLVLMORTAL) {
-     send_to_char("Not while they're link.dead, you don't...\r\n", ch);
-     return;
-     } */
   /*
-   * percent chance to succeed
-   */
+  if( IS_PC(victim) && !victim->desc && GET_LEVEL(ch) <= MAXLVLMORTAL)
+  {
+    send_to_char("Not while they're link.dead, you don't...\r\n", ch);
+    return;
+  }
+  */
 
+  // Percent chance to succeed
   // Begin trying to figure out chance of success..
-  // thief skill
-  percent = GET_CHAR_SKILL(ch, SKILL_STEAL);
+  percent = skl;
   // thief dex
   percent += dex_app[STAT_INDEX(GET_C_DEX(ch))].p_pocket;
   // victim mentals
-  percent -=
-    (STAT_INDEX(GET_C_WIS(victim)) + STAT_INDEX(GET_C_INT(victim))) - 19;
-  // both thief and victim luck
-  if (GET_C_LUK(victim) / 2 > number(0, 100))
+  percent -= (STAT_INDEX(GET_C_WIS(victim)) + STAT_INDEX(GET_C_INT(victim))) - 19;
+
+  // Both thief and victim luck
+  if( GET_C_LUK(victim) / 2 > number(0, 100) )
     percent = (int) (percent * 0.85);
-  if (GET_C_LUK(ch) / 2 > number(0, 100))
+  if( GET_C_LUK(ch) / 2 > number(0, 100) )
     percent = (int) (percent * 1.05);
-  // modifier for level differences
+  // Modifier for level differences
   percent += (GET_LEVEL(ch) - GET_LEVEL(victim)) / 2;
-  // no clue what this innate is
-  if (has_innate(victim, INNATE_DRAGONMIND))
-  percent = percent / 2;
-  // at this point, ensure that percent is between 1 and 100
+  // Hard to steal from Red Dragon - Monks?
+  if( has_innate(victim, INNATE_DRAGONMIND) )
+    percent = percent / 2;
+  // At this point, ensure that percent is between 1 and 100
   percent = BOUNDED(1, percent, 100);
 
   // victim can't see?  that makes it much easier to steal...
-	if (!CAN_SEE(victim, ch))
+	if( !CAN_SEE(victim, ch) )
     percent += 40;
   // cutpurses get an additional bonus...
-  if (GET_SPEC(ch, CLASS_ROGUE, SPEC_THIEF))
+  if( GET_SPEC(ch, CLASS_ROGUE, SPEC_THIEF) )
     percent += 25;
 
-  if (IS_TRUSTED(ch) ||
-      (GET_STAT(victim) < STAT_SLEEPING) ||
-      IS_AFFECTED(victim, AFF_SLEEP) ||
-      IS_IMMOBILE(victim))
+  if( IS_TRUSTED(ch) || (GET_STAT(victim) < STAT_SLEEPING) || IS_AFFECTED(victim, AFF_SLEEP)
+    || IS_IMMOBILE(victim) )
     percent += 200;             /* ALWAYS SUCCESS */
-  else if (IS_AFFECTED2(victim, AFF2_STUNNED))
+  else if( IS_AFFECTED2(victim, AFF2_STUNNED) )
     percent += 20;              /* nice bonus if target is stunned */
-  else if (GET_STAT(victim) == STAT_SLEEPING)
+  else if( GET_STAT(victim) == STAT_SLEEPING )
     percent += 40;              /* hefty bonus if just normal sleeping */
 
   // AWARE victims get a massive bonus to "save"
-  if (IS_AFFECTED(victim, AFF_AWARE) ||
-      affected_by_spell(victim, SKILL_AWARENESS))
+  if( IS_AFFECTED(victim, AFF_AWARE) || affected_by_spell(victim, SKILL_AWARENESS) )
     percent -= 70;
 
-  if(is_being_guarded(victim))
+  if( is_being_guarded(victim) )
     percent = (int) (percent * 0.60);
 
   if( IS_FIGHTING(victim) )
     percent = (int) (percent * 0.60);
 
-  if(affected_by_spell(victim, SPELL_GUARDIAN_SPIRITS))
+  if( affected_by_spell(victim, SPELL_GUARDIAN_SPIRITS) )
   {
     percent = (int) (percent * 0.25);
     guardian_spirits_messages(ch, victim);
@@ -2512,7 +2506,7 @@ void do_steal(P_char ch, char *argument, int cmd)
 
   roll = number(0, 100);
 
-  if (!str_cmp(obj_name, "coins"))
+  if( !str_cmp(obj_name, "coins") )
     type = 3;
   else
   {
@@ -2537,15 +2531,12 @@ void do_steal(P_char ch, char *argument, int cmd)
   }
 
   CharWait(ch, PULSE_VIOLENCE * 2);
-  
- 
- if (obj && IS_ARTIFACT(obj) && 
-      !IS_TRUSTED(ch))
+
+  if( obj && IS_ARTIFACT(obj) && !IS_TRUSTED(ch) )
   {
     send_to_char("That item appears to be &+Mmagically &nbound to them, better try to steal something else.\r\n", ch);
     return;
   }
-
 
   switch (type)
   {
@@ -2580,7 +2571,7 @@ void do_steal(P_char ch, char *argument, int cmd)
     {                           /* success */
       act("You unequip $p and steal it.", FALSE, ch, obj, 0, TO_CHAR);
       obj = unequip_char(victim, eq_pos);
-      remove_owned_artifact(obj, victim, TRUE);
+      remove_owned_artifact_sql(obj);
       obj_to_char(obj, ch);
       /*
        * success, but heavy stuff increases chance of getting caught
@@ -2644,7 +2635,7 @@ void do_steal(P_char ch, char *argument, int cmd)
             affected_by_spell(victim, TAG_PERMINVIS))
           affect_from_char(victim, TAG_PERMINVIS);
 
-        obj_from_char(obj, TRUE);
+        obj_from_char(obj);
         obj_to_char(obj, ch);
         notch_skill(ch, SKILL_STEAL, 10);
         if (IS_PC(victim))
@@ -3379,11 +3370,12 @@ void do_quaff(P_char ch, char *argument, int cmd)
     if( has_innate(ch, INNATE_QUICK_THINKING) || affected_by_spell(ch, SPELL_COMBAT_MIND) )
       chance = (int)(chance * 1.25);
 
-    if( number(0, 99) >= chance && GET_OBJ_VNUM(temp) != 400228 )
+    if( number(0, 99) >= chance && GET_OBJ_VNUM(temp) != VOBJ_EPIC_BOTTLE_EPICS
+      && GET_OBJ_VNUM(temp) != VOBJ_EPIC_TOCORPSE_POTION )
     {
       act("Whoops!  You spilled it!", TRUE, ch, 0, 0, TO_CHAR);
       act("$n attempts to quaff $p, but spills it instead!", TRUE, ch, temp, 0, TO_ROOM);
-      extract_obj(temp, TRUE);
+      extract_obj(temp);
       return;
     }
   }
@@ -3397,11 +3389,11 @@ void do_quaff(P_char ch, char *argument, int cmd)
   if(equipped)
     unequip_char(ch, HOLD);
   //epic potion
-  if(GET_OBJ_VNUM(temp) == 400234)
+  if(GET_OBJ_VNUM(temp) == VOBJ_EPIC_BOTTLE_EPICS)
   {
     gain_epic(ch, EPIC_BOTTLE, 0, 75);
     send_to_char("&+CYou suddenly feel.. epic!\r\n", ch);
-    extract_obj(temp, TRUE);
+    extract_obj(temp);
     return;
   }
 
@@ -3420,18 +3412,17 @@ void do_quaff(P_char ch, char *argument, int cmd)
     if(temp->value[5] == 1337)
     {
       advance_level(ch);
-      extract_obj(temp, TRUE);
+      extract_obj(temp);
       return;
     }
   }
 */
-  /* value[4] specifies damage player takes from potion - considered non-magical */
-
+  // value[4] specifies damage player takes from potion - considered non-magical
   if(temp->value[4] > 0)
   {
     if(spell_damage(ch, ch, temp->value[4], SPLDAM_GENERIC, 0, 0))
     {
-      extract_obj(temp, TRUE);
+      extract_obj(temp);
       return;
     }
   }
@@ -3439,8 +3430,7 @@ void do_quaff(P_char ch, char *argument, int cmd)
 
   if(IS_SET(world[ch->in_room].room_flags, NO_MAGIC))
   {
-    send_to_char
-      ("You feel a slight gathering of magic within you, but it fades.\r\n", ch);
+    send_to_char("You feel a slight gathering of magic within you, but it fades.\r\n", ch);
   }
   else
     for (i = 1; i < 4; i++)
@@ -3449,14 +3439,13 @@ void do_quaff(P_char ch, char *argument, int cmd)
         j = temp->value[i];
         if ((j != -1) && (skills[j].spell_pointer != NULL))
         {
-          ((*skills[j].spell_pointer) ((int) temp->value[0], ch, 0,
-                                       SPELL_TYPE_POTION, ch, 0));
+          ((*skills[j].spell_pointer) ((int) temp->value[0], ch, 0, SPELL_TYPE_POTION, ch, 0));
           if (!char_in_list(ch))
             break;
         }
       }
 
-  extract_obj(temp, TRUE);
+  extract_obj(temp);
 }
 
 void do_recite(P_char ch, char *argument, int cmd)
@@ -3555,13 +3544,10 @@ void do_recite(P_char ch, char *argument, int cmd)
 
           /* best thing to do if victim dies is just extract the obj and quit out, since many
              spells kill the mud w/o a victim
-
              besides, what if the char IS the victim?  heh. */
-
-          if ((victim && !char_in_list(victim)) ||
-              ((victim != ch) && !char_in_list(ch)))
+          if( (victim && !char_in_list(victim)) || ((victim != ch) && !char_in_list(ch)) )
           {
-            extract_obj(scroll, TRUE);
+            extract_obj(scroll);
             return;
           }
           else if (IS_AGG_SPELL(j) && victim && (ch != victim))
@@ -3583,7 +3569,7 @@ void do_recite(P_char ch, char *argument, int cmd)
       }
     }
   }
-  extract_obj(scroll, TRUE);
+  extract_obj(scroll);
 }
 
 void do_use(P_char ch, char *argument, int cmd)
@@ -5279,28 +5265,29 @@ void try_to_donate(P_char ch, P_obj obj_to_put)
   int      dupes_in_well = 0;
   char     Gbuf3[MAX_STRING_LENGTH];
 
-  /*
-   * Get Well object
-   */
-  for (sub_object = world[ch->in_room].contents;
-       sub_object && !isname("well", sub_object->name);
-       sub_object = sub_object->next_content) ;
-  if (!sub_object)
+  // Get Well object
+  for( sub_object = world[ch->in_room].contents; sub_object; sub_object = sub_object->next_content)
+  {
+    if( isname("well", sub_object->name) )
+    {
+      break;
+    }
+  }
+  if( !sub_object )
+  {
+    send_to_char( "You see no well here in which to donate.\n\r", ch );
     return;
+  }
 
-  /*
-   * If not-droppable
-   */
+  // If not-droppable
   if (IS_SET(obj_to_put->extra_flags, ITEM_NODROP))
   {
-    sprintf(Gbuf3,
-            "Donating %s?  How thoughtful....too bad it's CURSED!\r\n",
-            obj_to_put->short_description);
+    sprintf(Gbuf3, "Donating %s?  How thoughtful....too bad it's CURSED!\r\n", obj_to_put->short_description);
     send_to_char(Gbuf3, ch);
     return;
   }
 
-  if (IS_ARTIFACT(obj_to_put))
+  if( IS_ARTIFACT(obj_to_put) )
   {
     send_to_char("Donate an artifact?  What a waste!\r\n", ch);
     return;
@@ -5338,8 +5325,7 @@ void try_to_donate(P_char ch, P_obj obj_to_put)
    * Check to see how many of the same objects are in well already
    */
 
-  for (obj_object = sub_object->contains; obj_object;
-       obj_object = next_object)
+  for (obj_object = sub_object->contains; obj_object; obj_object = next_object)
   {
     next_object = obj_object->next_content;
 
@@ -5357,7 +5343,7 @@ void try_to_donate(P_char ch, P_obj obj_to_put)
   /*
    * Remove item from player's inventory
    */
-  obj_from_char(obj_to_put, TRUE);
+  obj_from_char(obj_to_put);
 
   /*
    * Send donate message to player.
@@ -5376,7 +5362,7 @@ void try_to_donate(P_char ch, P_obj obj_to_put)
   }
 
   act("You donate $p - thank you!", FALSE, ch, obj_to_put, 0, TO_CHAR);
-  
+
   /*
    * If max_dupes in well not exceeded then put in well, otherwise nuke
    * object
@@ -5387,7 +5373,7 @@ void try_to_donate(P_char ch, P_obj obj_to_put)
   }
   else
   {
-    extract_obj(obj_to_put, TRUE);
+    extract_obj(obj_to_put);
   }
 }
 
@@ -5843,6 +5829,7 @@ P_obj blood_in_room_with_me(P_char ch)
   return NULL;
 }
 
+// Could have done this via a proc on the blood object.
 void do_lick(P_char ch, char *argument, int cmd)
 {
   P_obj    obj;
@@ -5857,19 +5844,17 @@ void do_lick(P_char ch, char *argument, int cmd)
     return;
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
   obj = NULL;
 
   act("$n licks some blood from the floor...", TRUE, ch, 0, ch, TO_NOTVICT);
-  act("You lick some blood from the floor. Refreshing.", TRUE, ch, 0, ch,
-      TO_VICT);
+  act("You lick some blood from the floor. Refreshing.", TRUE, ch, 0, ch, TO_VICT);
 
   spell_cure_serious(45, ch, 0, SPELL_TYPE_SPELL, ch, 0);
 
   CharWait(ch, 10);
 
   return;
-
 }
 
 void do_nothing(P_char ch, char *argument, int cmd)

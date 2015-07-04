@@ -60,7 +60,7 @@ extern const struct racial_data_type racial_data[];
 extern const struct stat_data stat_factor[];
 extern const int movement_loss[];
 extern int top_of_zone_table;
-extern int top_of_world;
+extern const int top_of_world;
 extern struct command_info cmd_info[];
 extern struct time_info_data time_info;
 extern struct zone_data *zone_table;

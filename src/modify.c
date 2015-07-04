@@ -1722,7 +1722,6 @@ bool rename_character(P_char ch, char *old_name, char *new_name)
     GET_NAME(doofus) = str_dup(new_name);
     // Imperative that arti list is updated here (Otherwise, crasssh).
     writeCharacter(doofus, 1, doofus->in_room);
-    save_artifact_data(doofus);
 
 #ifdef USE_ACCOUNT
     c = find_char_in_list(doofus->desc->account->acct_character_list, new_name);

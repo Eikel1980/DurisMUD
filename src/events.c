@@ -252,7 +252,6 @@ extern int errno;
 extern int pulse;
 extern int top_of_mobt;
 extern int top_of_objt;
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct time_info_data time_info;
 extern struct zone_data *zone;

@@ -9,6 +9,7 @@
 #include "specs.prototypes.h"
 #include "structs.h"
 #include "utils.h"
+#include "vnum.obj.h"
 
 /*
    extern variables
@@ -55,20 +56,17 @@ int clwcvrn_golem_shatter(P_char ch, P_char pl, int cmd, char *arg)
   P_obj    pile, money, obj, next_obj;
   int      pos;
 
-  /*
-   * check for periodic event calls
-   */
+  // Check for periodic event calls
   if (cmd == CMD_SET_PERIODIC)
-    return (FALSE);
+    return FALSE;
 
-  if (!ch || IS_PC(ch))
-    return (FALSE);
+  if( !ch || IS_PC(ch) )
+    return FALSE;
 
+  // Spec die
   if (cmd == CMD_DEATH)
-  {                             /*
-                                 * spec die
-                                 */
-    pile = read_object(80730, VIRTUAL);
+  {
+    pile = read_object(VOBJ_CLWCVRN_CRYSTAL_SHARDS, VIRTUAL);
     if (!pile)
     {
       logit(LOG_EXIT, "assert: clwcvrn_golem_shatter proc");
@@ -77,19 +75,15 @@ int clwcvrn_golem_shatter(P_char ch, P_char pl, int cmd, char *arg)
     if (pile->type == ITEM_CONTAINER)
     {
 
-      /*
-       * transfer inventory to pile
-       */
+      // Transfer inventory to pile
       for (obj = ch->carrying; obj; obj = next_obj)
       {
         next_obj = obj->next_content;
-        obj_from_char(obj, TRUE);
+        obj_from_char(obj);
         obj_to_obj(obj, pile);
       }
 
-      /*
-       * transfer equipment to pile
-       */
+      // Transfer equipment to pile
       for (pos = 0; pos < MAX_WEAR; pos++)
       {
         if (ch->equipment[pos])
@@ -98,18 +92,14 @@ int clwcvrn_golem_shatter(P_char ch, P_char pl, int cmd, char *arg)
         }
       }
 
-      /*
-       * transfer money
-       */
+      // Transfer money
       if (GET_MONEY(ch) > 0)
       {
-        money = create_money(GET_COPPER(ch), GET_SILVER(ch),
-                             GET_GOLD(ch), GET_PLATINUM(ch));
+        money = create_money(GET_COPPER(ch), GET_SILVER(ch), GET_GOLD(ch), GET_PLATINUM(ch));
         obj_to_obj(money, pile);
       }
-      /*
-       * stick object in same room unless something's weird
-       */
+
+      // Stick object in same room unless something's weird
       if (ch->in_room == NOWHERE)
       {
         if (real_room(ch->specials.was_in_room) != NOWHERE)
@@ -118,11 +108,9 @@ int clwcvrn_golem_shatter(P_char ch, P_char pl, int cmd, char *arg)
         }
         else
         {
-          extract_obj(pile, TRUE);      /*
-                                         * no good place to put it
-                                         */
+          extract_obj(pile, TRUE); // No good place to put it (never 'in game', but contents may have been).
           pile = NULL;
-          return (FALSE);
+          return FALSE;
         }
       }
       else
@@ -130,28 +118,20 @@ int clwcvrn_golem_shatter(P_char ch, P_char pl, int cmd, char *arg)
         obj_to_room(pile, ch->in_room);
       }
 
-      /*
-       * clue players in
-       */
+      // Clue players in
       act("$n emits a lood pitched wail and begins to shake.\r\n"
-          "$n shatters and falls into $p... a cloud of dust rises.",
-          TRUE, ch, pile, 0, TO_ROOM);
-      return (FALSE);
-
+        "$n shatters and falls into $p... a cloud of dust rises.",
+        TRUE, ch, pile, 0, TO_ROOM);
+      return TRUE;
     }
     else
     {
-      logit(LOG_OBJ,
-            "Object 80730 not CONTAINER for clwcvrn_golem_shatter()!!  Aborted.");
-      return (FALSE);
+      logit(LOG_OBJ, "Object %d not CONTAINER for clwcvrn_golem_shatter()!!  Aborted.", VOBJ_CLWCVRN_CRYSTAL_SHARDS);
+      return FALSE;
     }
   }
-  else
-  {                             /*
-                                 * was from some command
-                                 */
-    return (FALSE);
-  }
+  // Was from some command
+  return FALSE;
 }
 
 

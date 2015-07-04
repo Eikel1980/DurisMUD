@@ -31,7 +31,7 @@
 #include "outposts.h"
 #include "buildings.h"
 
-extern int top_of_world;
+extern const int top_of_world;
 extern P_index mob_index;
 extern P_index obj_index;
 extern P_obj object_list;

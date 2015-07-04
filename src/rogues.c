@@ -143,7 +143,7 @@ void do_slip(P_char ch, char *argument, int cmd)
     notch_skill(ch, SKILL_SLIP, (int)get_property("skill.notch.slip", 5));
 
     /* transfer the obj */
-    obj_from_char(obj, TRUE);
+    obj_from_char(obj);
     obj_to_char(obj, vict);
     // If this is not suppost to be a secretive hand off, uncomment below.
     //act("$n slips $p to $N.", 1, ch, obj, vict, TO_NOTVICT);
@@ -173,7 +173,7 @@ void do_slip(P_char ch, char *argument, int cmd)
     /* an idea: if you want a fail to place the object in the room (a penalty for poor skill) uncomment below */
     act("You fumble $p as its weight proves too much for your slyness.", 0, ch, obj, 0, TO_CHAR);
     act("$p falls to the ground as $n slyly looks the other way.", 0, ch, obj, 0, TO_NOTVICT);
-    obj_from_char(obj, TRUE);
+    obj_from_char(obj);
     obj_to_room(obj, ch->in_room);
 
     writeCharacter(ch, 1, ch->in_room);

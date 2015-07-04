@@ -473,8 +473,7 @@ int very_angry_npc( P_char ch, P_char pl, int cmd, char *arg )
       if( corpse->type == ITEM_CORPSE && isname( buf, corpse->name ) )
       {
         debug( "very_angry_npc: Extracting corpse and eq: %s", corpse->name );
-        // Yes, this does handle arti code.
-        extract_obj( corpse, TRUE );
+        extract_obj( corpse, TRUE ); // Yes, do handle arti code.
         return TRUE;
       }
       corpse = corpse->next_content;

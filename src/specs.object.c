@@ -35,6 +35,7 @@ using namespace std;
 #include "ctf.h"
 #include "blispells.h"
 #include "utility.h"
+#include "vnum.obj.h"
 
 /*
    external variables
@@ -54,7 +55,7 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int innate_abilities[];
 extern int planes_room_num[];
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct dex_app_type dex_app[52];
@@ -158,42 +159,41 @@ int artifact_monolith(P_obj monolith, P_char ch, int cmd, char *arg)
   P_obj obj, next_obj;
   const int HOURS_PER_CHARGE = 2;
 
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
     return TRUE;
 
-  // if its not in_room, return
-  if (!monolith || !OBJ_ROOM(monolith))
+  // If its not in room, return
+  if( !monolith || !OBJ_ROOM(monolith) )
     return FALSE;
 
   // periodics.. do something fancy
   if (cmd == CMD_PERIODIC)
   {
-    // check for the existance of other of this item in the room.  if they
-    // exist, absorb them.
-    bool bUpdateDesc = false ;
+    // Check for the existence of other of this item in the room.  If they exist, absorb them.
+    bool bUpdateDesc = FALSE;
 
-    for (obj = world[monolith->loc.room].contents; obj; obj = next_obj)
+    for( obj = world[monolith->loc.room].contents; obj; obj = next_obj )
     {
       next_obj = obj->next_content;
 
-      if (obj == monolith)
+      if( obj == monolith )
         continue;
-      if (obj->R_num == monolith->R_num)
+      if( obj->R_num == monolith->R_num )
       {
-        // okay, each 'obj' has a charge count stored in val0.  add
+        // Okay, each 'obj' has a charge count stored in val0.  add
         // obj's charges to monolith's charges, and then destroy obj.
         monolith->value[0] += MAX(1, obj->value[0]);
-        extract_obj(obj, TRUE);
-        bUpdateDesc = true;
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
+        bUpdateDesc = TRUE;
       }
     }
-    if (bUpdateDesc || !(monolith->value[1]))
+    if( bUpdateDesc || !(monolith->value[1]) )
     {
       artifact_monolith_update(monolith);
       monolith->value[1] = CMD_SCRATCH;
       return TRUE;
     }
-    // now hum, or crackle or something - only if there are charges left
+    // Now hum, or crackle or something - only if there are charges left
     if (!number(0,12) && (monolith->value[0]))
     {
       if (number(0,1))
@@ -236,7 +236,7 @@ int artifact_monolith(P_obj monolith, P_char ch, int cmd, char *arg)
           if (ch->equipment[i] && IS_ARTIFACT(ch->equipment[i]))
           {
             obj = ch->equipment[i];
-            UpdateArtiBlood(ch, ch->equipment[i], 0 - nFeedSeconds);
+            artifact_feed_sql(ch, ch->equipment[i], nFeedSeconds);
           }
         }
         // update the feeder object to have one less charge..
@@ -1236,7 +1236,7 @@ int ring_elemental_control(P_obj obj, P_char ch, int cmd, char *arg)
             }
           }
         }
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
         obj = NULL;
       }
     }
@@ -2217,10 +2217,9 @@ int xmas_cap(P_obj obj, P_char ch, int cmd, char *arg)
 
 /*  if(curr_time > ( 1135362289 + 60 * 60* 24 * 7))
    {
-    act("&+L$p &+Lhums with a &+GCRA&+YC&+GKED &+Lsounds.&n", FALSE, ch, obj,
-        0, TO_CHAR);
+    act("&+L$p &+Lhums with a &+GCRA&+YC&+GKED &+Lsounds.&n", FALSE, ch, obj, 0, TO_CHAR);
     act("&+L$p &+Lcrumble to dust.&n", FALSE, ch, obj, 0, TO_CHAR);
-    extract_obj(obj, TRUE);
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     return FALSE;
   } */
 
@@ -2230,7 +2229,7 @@ int xmas_cap(P_obj obj, P_char ch, int cmd, char *arg)
     act("&+L$p &+Lhums with a &+GCRA&+YC&+GKED &+Lsounds.&n", FALSE, ch, obj, 0, TO_CHAR);
     act("&+L$p &+Lcrumble to dust.&n", FALSE, ch, obj, 0, TO_CHAR);
     spell_ice_missile(30, ch, NULL, SPELL_TYPE_SPELL, ch, 0);
-    extract_obj(obj, TRUE);
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     return FALSE;
   }
   if( IS_PC(victim) )
@@ -2993,7 +2992,7 @@ int living_necroplasm(P_obj obj, P_char ch, int cmd, char *arg)
       {
         obj_to_char(unequip_char(ch, slot), ch);
       }
-      obj_from_char(obj, TRUE);
+      obj_from_char(obj);
       equip_char(ch, obj, slot, FALSE);
       act("$p &+Mbegins to envelop your body!", FALSE, ch, obj, 0, TO_CHAR);
       act("$p &+Mwraps itself around $n!", FALSE, ch, obj, 0, TO_ROOM);
@@ -3149,7 +3148,7 @@ int vapor(P_obj obj, P_char ch, int cmd, char *arg)
       {
         obj_to_char(unequip_char(ch, slot), ch);
       }
-      obj_from_char(obj, TRUE);
+      obj_from_char(obj);
       equip_char(ch, obj, slot, FALSE);
 
       act("&+LSuddenly the &+ggreen vapor &+Lon the ground starts to sw&+wi&+Wrl &+Las if coming&n&L&+Lalive."
@@ -3757,24 +3756,40 @@ int attemptToDisengage(P_char ch, int cmd, char *arg)
 
 void good_evil_poofSword(P_char ch, P_obj obj)
 {
-  int      i;
 
   /* Zap the char and poof */
-  act("$p &+Wflares up&n, burns your hands, and vaporizes!&N",
-      FALSE, ch, obj, 0, TO_CHAR);
-  act("$p &+Wflares up&n, burns $n's hands, and vaporizes!&N",
-      FALSE, ch, obj, 0, TO_ROOM);
+  act("$p &+Wflares up&n, burns your hands, and vaporizes!&N", FALSE, ch, obj, 0, TO_CHAR);
+  act("$p &+Wflares up&n, burns $n's hands, and vaporizes!&N", FALSE, ch, obj, 0, TO_ROOM);
   GET_HIT(ch) -= 100;
 
-  if (OBJ_WORN(obj))
-    for (i = 0; i < MAX_WEAR; i++)
-      if (ch->equipment[i] == obj)
-        obj_to_char(unequip_char(ch, i), ch);
+  // Don't need to remove from ch anymore, extract_obj handles it.
+  extract_obj(obj, TRUE); // Bye arti sword.
 
-  obj_from_char(obj, TRUE);
-  extract_obj(obj, 1);
-
-//  obj_to_room(obj, number(zone_table[0].real_top + 1, top_of_world));
+/* Old code for putting it in a new room. (tweaked)
+  if( OBJ_WORN(obj) )
+  {
+    for( int i = 0; i < MAX_WEAR; i++ )
+    {
+      if( ch->equipment[i] == obj )
+      {
+        unequip_char(ch, i);
+        break;
+      }
+    }
+  }
+  else if( OBJ_CARRIED(obj) )
+  {
+    obj_from_char(obj);
+  }
+  // OBJ_ROOM or OBJ_INSIDE
+  else if( !OBJ_NOWHERE(obj) )
+  {
+    return;
+  }
+  // Go to any random room in the game not in heaven.
+  // Should tweak this to not land on mountains or other !accessible areas.
+  obj_to_room(obj, number(zone_table[0].real_top + 1, top_of_world));
+*/
 }
 
 
@@ -3940,7 +3955,7 @@ int good_evil_sword(P_obj obj, P_char ch, int cmd, char *arg)
       act("$p shoves itself into your hands, ready for battle!", TRUE, ch, obj, NULL, TO_CHAR);
       act("$p shoves itself $n's hands, ready for battle!", TRUE, ch, obj, NULL, TO_ROOM);
     }
-    obj_from_char(obj, 0);
+    obj_from_char(obj);
     equip_char(ch, obj, PRIMARY_WEAPON, 0);
   }
 
@@ -4883,6 +4898,7 @@ int labelas(P_obj obj, P_char ch, int cmd, char *arg)
   return FALSE;
 }
 
+// Chaos/Ambran/Death Rider
 int holy_weapon(P_obj obj, P_char ch, int cmd, char *arg)
 {
   P_char   tch, vict = NULL;
@@ -5093,9 +5109,8 @@ int holy_weapon(P_obj obj, P_char ch, int cmd, char *arg)
            obj_to_char(unequip_char(ch, (ch->equipment[WIELD] == obj) ? WIELD : 
              (ch->equipment[SECONDARY_WEAPON] == obj) ? SECONDARY_WEAPON : 
                (ch->equipment[HOLD] == obj) ? HOLD : 0), ch);
-               
-         obj_from_char(obj, TRUE);
-      
+         obj_from_char(obj);
+
        for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
        {
          if (IS_PC(tch) && opposite_racewar(ch, tch))
@@ -5115,7 +5130,7 @@ int holy_weapon(P_obj obj, P_char ch, int cmd, char *arg)
          act("$p &=LCshimmers&n, blasts you with power and vanishes from your hand!", FALSE, ch, obj, 0, TO_CHAR);
          act("$p &=LCshimmers&n and blasts $n before vanishing!", FALSE, ch, obj, 0, TO_ROOM);
          spell_lightning_bolt(61, ch, 0, SPELL_TYPE_SPELL, ch, 0);
-         extract_obj(obj, TRUE);
+         extract_obj(obj, TRUE); // Bye arti sword.
        }
        return TRUE;
      }
@@ -5301,7 +5316,7 @@ int menden_figurine(P_obj obj, P_char ch, int cmd, char *arg)
       add_follower(tempchar, ch);
       setup_pet(tempchar, ch, 10, PET_NOCASH);
 
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
     }
   }
@@ -5468,7 +5483,7 @@ int skeleton_key(P_obj obj, P_char ch, int cmd, char *arg)
          remove key
        */
       unequip_char(obj->loc.wearing, pos);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
       return (TRUE);
 
@@ -5496,7 +5511,7 @@ int skeleton_key(P_obj obj, P_char ch, int cmd, char *arg)
            remove key
          */
         unequip_char(obj->loc.wearing, pos);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
         return (TRUE);
 
@@ -5526,7 +5541,7 @@ int skeleton_key(P_obj obj, P_char ch, int cmd, char *arg)
             TRUE, ch, obj, 0, TO_ROOM);
 
         unequip_char(obj->loc.wearing, pos);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
         return (TRUE);
       }
@@ -5567,7 +5582,7 @@ int skeleton_key(P_obj obj, P_char ch, int cmd, char *arg)
          remove key
        */
       unequip_char(obj->loc.wearing, pos);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
       return (TRUE);
 
@@ -5593,7 +5608,7 @@ int skeleton_key(P_obj obj, P_char ch, int cmd, char *arg)
            remove key
          */
         unequip_char(obj->loc.wearing, pos);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
         return (TRUE);
 
@@ -5641,7 +5656,7 @@ int skeleton_key(P_obj obj, P_char ch, int cmd, char *arg)
             obj, 0, TO_ROOM);
 
         unequip_char(obj->loc.wearing, pos);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
         return (TRUE);
       }
@@ -5708,7 +5723,7 @@ int banana(P_obj obj, P_char ch, int cmd, char *arg)
         CharWait(ch, PULSE_VIOLENCE);
         if (GET_COND(ch, FULL) > 20)
           act("You feel comfortably sated.", FALSE, ch, 0, 0, TO_CHAR);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
         obj = NULL;
         new_obj = read_object(1234, VIRTUAL);
         set_obj_affected(new_obj, 2400, TAG_OBJ_DECAY, 0);
@@ -6039,7 +6054,7 @@ int tyr_sword(P_obj obj, P_char ch, int cmd, char *arg)
   return FALSE;
 }
 
-
+// Subtract 1 from values[0] each cast.  When reaching 0, poof item.
 int crystal_spike(P_obj obj, P_char ch, int cmd, char *arg)
 {
   if( cmd == CMD_SET_PERIODIC )
@@ -6064,7 +6079,7 @@ int crystal_spike(P_obj obj, P_char ch, int cmd, char *arg)
         act("$n's $q fades slowly, and disappears into nothing.", FALSE,
             obj->loc.wearing, obj, 0, TO_ROOM);
         unequip_char(obj->loc.wearing, HOLD);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
         obj = NULL;
       }
     }
@@ -6423,6 +6438,13 @@ int llyms_altar(P_obj obj, P_char ch, int cmd, char *arg)
   act("You offer up $p to $P.", TRUE, ch, treasure, obj, TO_CHAR);
   act("$n offers up $p to $P.", TRUE, ch, treasure, obj, TO_ROOM);
 
+  if( IS_ARTIFACT(treasure) )
+  {
+    act("$P rumbles briefly, then is silent.\n\rYour offering is refused.", TRUE, ch, 0, obj, TO_CHAR);
+    act("$P rumbles briefly, then is silent.", TRUE, ch, 0, obj, TO_ROOM);
+    return TRUE;
+  }
+
   // It better be worth something -- at some point I'm gonna make reward depend on the value of the treasure
   if( treasure->cost < 10000 )
   {
@@ -6440,8 +6462,8 @@ int llyms_altar(P_obj obj, P_char ch, int cmd, char *arg)
  */
 
   obj_to_char(unequip_char(ch, HOLD), ch);
-  obj_from_char(treasure, TRUE);
-  extract_obj(treasure, TRUE);
+  obj_from_char(treasure);
+  extract_obj(treasure, TRUE); // Not an arti, but 'in game.'
 
   // They get blessed, unless they're already blessed, in which case, they  get money.
   //   Then there's a small chance of something extra cool happening.
@@ -8752,28 +8774,16 @@ int life_of_stream(P_obj obj, P_char ch, int cmd, char *arg)
   P_obj    tempobj;
   int      r_room, rand;
 
-  /*
-     check for periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd != CMD_ENTER || !arg || !IS_ALIVE(ch) || !*arg )
     return FALSE;
 
-
-
-  if (!ch || cmd == CMD_PERIODIC || !arg)
-    return FALSE;
-
-
-  if (cmd == CMD_ENTER)
+  if( !strcmp(arg, "stream") )
   {
-
-    if (get_obj_in_list("anoteyoushouldnotknowabout", ch->carrying))
+    if( affected_by_spell(ch, TAG_LIFESTREAMNEWBIE) )
     {
-      send_to_char("Your not ready yet, ask the paladin about racewar.\n",
-                   ch);
+      send_to_char("Your not ready yet, ask the paladin about racewar.\n", ch);
       return TRUE;
     }
-
 
     send_to_char("You feel refreshed as you enter the realm of life.\n", ch);
     GET_HIT(ch) = GET_MAX_HIT(ch);
@@ -8782,7 +8792,6 @@ int life_of_stream(P_obj obj, P_char ch, int cmd, char *arg)
     char_to_room(ch, r_room, -1);
     act("$n slowly fades into existence.", FALSE, ch, 0, 0, TO_ROOM);
     return TRUE;
-
   }
   else
   {
@@ -9344,14 +9353,11 @@ int hammer_titans(P_obj obj, P_char ch, int cmd, char *arg)
   return TRUE;
 }
 
-/*
-Guild badges Kvark 2002-02-04
-This item is a bonus for those with artifact's and
-those that have frags, item changes name tho soo it's also fun
-for lowbies and others. This item might need tweaking in long wipes
-since the frag amount might be pretty high and frags above 100
-let ya get pretty nice stat's.
-*/
+/* Guild badges Kvark 2002-02-04
+ * This item is a bonus for those with artifact's and those that have frags, item changes name tho soo
+ *   it's also fun for lowbies and others. This item might need tweaking in long wipes since the frag
+ *   amount might be pretty high and frags above 100 let ya get pretty nice stat's.
+ */
 int guild_badge(P_obj obj, P_char ch, int cmd, char *arg)
 {
   int      cur_time;
@@ -9383,11 +9389,11 @@ int guild_badge(P_obj obj, P_char ch, int cmd, char *arg)
     {
       act("&+L$p &+Lhums with a &+GCRA&+YC&+GKING &+Lsound.&n", FALSE, ch, obj, 0, TO_CHAR);
       act("&+L$p &+Lcrumble to dust.&n", FALSE, ch, obj, 0, TO_CHAR);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
     }
 
-    // didnt break it? ok.... lets give them some fun then
+    // Didnt break it? ok.... lets give them some fun then.
     obj->timer[0] = curr_time;
 
     // Things that modifes the badge.
@@ -9400,7 +9406,7 @@ int guild_badge(P_obj obj, P_char ch, int cmd, char *arg)
       {
         if( ch->equipment[i] )
         {
-          if( IS_ARTIFACT(ch->equipment[i]) || isname("powerunique", ch->equipment[i]->name) )
+          if( IS_ARTIFACT(ch->equipment[i]) )
           {
             count++;
           }
@@ -9681,7 +9687,7 @@ int dragonslayer(P_obj obj, P_char ch, int cmd, char *arg)
     act("&+G$n's $q zaaaps $s experienced hands&n!", TRUE, ch, obj, 0, TO_NOTVICT);
     act("&+GYour $q drops to the ground with a soft thud.", TRUE, ch, obj, 0, TO_CHAR);
     act("&+G$n's $q drops to the ground with a soft thud.", TRUE, ch, obj, 0, TO_NOTVICT);
-    obj_from_char(obj, TRUE);
+    obj_from_char(obj);
     obj_to_room(obj, ch->in_room);
     return FALSE;
   }
@@ -9813,14 +9819,15 @@ int rax_red_dagger(P_obj obj, P_char ch, int cmd, char *arg)
 
 int obj_imprison(P_obj obj, P_char ch, int cmd, char *arg)
 {
-  int      victim_in_room = FALSE;
+  int      victim_in_room;
   P_char   tch;
 
   if (cmd == CMD_SET_PERIODIC)
   {
-    return TRUE;
+    return FALSE;
   }
 
+  victim_in_room = FALSE;
   if( OBJ_ROOM(obj) )
   {
     for (tch = world[obj->loc.room].people; tch; tch = tch->next_in_room)
@@ -9828,10 +9835,12 @@ int obj_imprison(P_obj obj, P_char ch, int cmd, char *arg)
       if( IS_PC(tch) && GET_PID(tch) == obj->value[0] )
       {
         victim_in_room = TRUE;
+        break;
       }
     }
   }
 
+  // If it's been picked up or victim escaped the room somehow, then purge object and remove bit.
   if( !victim_in_room )
   {
     for( tch = character_list; tch; tch = tch->next )
@@ -9846,11 +9855,12 @@ int obj_imprison(P_obj obj, P_char ch, int cmd, char *arg)
       }
     }
     //obj_from_room(obj);
-    extract_obj(obj, 1);
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     return FALSE;
   }
 
-  if( !IS_ALIVE(ch) || IS_TRUSTED(ch) || (IS_PC(ch) && obj->value[0] != GET_PID(ch)) )
+  // If ch isn't the right ch.
+  if( !IS_ALIVE(ch) || IS_TRUSTED(ch) || IS_NPC(ch) || obj->value[0] != GET_PID(ch) )
   {
     return FALSE;
   }
@@ -9862,8 +9872,8 @@ int obj_imprison(P_obj obj, P_char ch, int cmd, char *arg)
 
   obj->value[1] -= GET_LEVEL(ch) + 66;
 
-  // 5% chance.
-  if( obj->value[1] > 0 && 5 < number(0, 100) )
+  // Struggled enough or 5% 'lucky' chance.
+  if( obj->value[1] > 0 && number(1, 100) <= 95 )
   {
     act("But you are totally encased by the $q!", FALSE, ch, obj, NULL, TO_CHAR);
     act("$N struggles to break out of the $q but fails.", TRUE, ch, obj, ch, TO_NOTVICT);
@@ -9873,13 +9883,9 @@ int obj_imprison(P_obj obj, P_char ch, int cmd, char *arg)
 
   act("Aha! The $q was nothing but an illusion, you are free!", FALSE, ch, obj, ch, TO_CHAR);
   act("An indescribable relief emanates from $N as $E realises the $q was just an illusion!", TRUE, NULL, obj, ch, TO_NOTVICT);
+  REMOVE_BIT( ch->specials.affected_by5, AFF5_IMPRISON );
+  extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
-  if( IS_AFFECTED5(ch, AFF5_IMPRISON) )
-  {
-    REMOVE_BIT( ch->specials.affected_by5, AFF5_IMPRISON );
-  }
-
-  extract_obj(obj, TRUE);
   return FALSE;
 }
 
@@ -10518,7 +10524,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj->timer[0] = curr_time;
 
     // nightshade
-    ingred = read_object(821, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_NIGHTSHADE, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10526,7 +10532,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj_to_obj(ingred, obj);
 
     // mandrake
-    ingred = read_object(822, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_MANDRAKE, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10534,7 +10540,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj_to_obj(ingred, obj);
 
     // garlic
-    ingred = read_object(823, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_GARLIC, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10542,7 +10548,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj_to_obj(ingred, obj);
 
     // faerie dust
-    ingred = read_object(824, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_FAERIE_DUST, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10550,7 +10556,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj_to_obj(ingred, obj);
 
     // dragons blood
-    ingred = read_object(825, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_DRAGON_BLOOD, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10558,7 +10564,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj_to_obj(ingred, obj);
 
     // green herb
-    ingred = read_object(826, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_GREEN_HERB, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10567,7 +10573,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
 
 
     // strange stone
-    ingred = read_object(827, VIRTUAL);
+    ingred = read_object( VOBJ_INGRED_STRANGE_STONE, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -10575,7 +10581,7 @@ int alch_bag(P_obj obj, P_char ch, int cmd, char *arg)
     obj_to_obj(ingred, obj);
 
     // empty potion bottle
-    ingred = read_object(835, VIRTUAL);
+    ingred = read_object(VOBJ_POTION_BOTTLES, VIRTUAL);
     if( !ingred )
     {
       return FALSE;
@@ -12386,7 +12392,7 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
   int      dam, item;
   char     buf[256];
 
-  item = obj_index[obj->R_num].virtual_number;
+  item = GET_OBJ_VNUM(obj);
 
   if( cmd == CMD_HIDE )
   {
@@ -12448,7 +12454,7 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
         {
           act("You notice you just broke a &+Wthin string&n attached to $p!", FALSE, ch, obj, 0, TO_CHAR);
         }
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       }
 
       return FALSE;
@@ -12472,7 +12478,7 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
 
         melee_damage(tch, ch, dam, PHSDAM_NOREDUCE | PHSDAM_NOSHIELDS | PHSDAM_NOPOSITION | PHSDAM_NOENGAGE, 0);
 
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       }
       return FALSE;
     }
@@ -12505,7 +12511,7 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
         // 3-7 * ~5 damage = 15-35 damage total.
         int	numb = number(3, 7);
         add_event(event_bleedproc, PULSE_VIOLENCE, tch, ch, 0, 0, &numb, sizeof(numb));
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       }
      return FALSE;
     }
@@ -12524,7 +12530,7 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
 
         spell_poison(56, ch, 0, 0, ch, NULL);
 
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       }
       return FALSE;
     }
@@ -12532,6 +12538,7 @@ int huntsman_ward(P_obj obj, P_char ch, int cmd, char *argument)
   return FALSE;
 }
 
+// Item for learning skills.  Not in game as of 7/4/2015
 int skill_beacon(P_obj obj, P_char ch, int cmd, char *argument)
 {
   int      skill = obj->value[0];
@@ -12540,82 +12547,67 @@ int skill_beacon(P_obj obj, P_char ch, int cmd, char *argument)
   int      l, t, maxlearn, i;
   bool     active = IS_SET(obj->extra2_flags, ITEM2_MAGIC);
   char     buf[1024];
-  struct
+
+  static const struct
   {
     int      room;
     int      skills[5];
   } beacon_loads[] =
   {
-    {
-      26860,                    // neg
-      {
-    SKILL_DODGE,
-          SKILL_MEDITATE,
-          SKILL_SPELL_KNOWLEDGE_MAGICAL,
-          SKILL_2H_BLUDGEON, SKILL_SHIELD_BLOCK}},
-    {
-      25087,                    // brass
-      {
-    SKILL_1H_SLASHING,
-          SKILL_UNARMED_DAMAGE,
-          SKILL_SPELL_KNOWLEDGE_CLERICAL, SKILL_PARRY, SKILL_RESCUE}},
-    {
-      81094,                    // ceothia
-      {
-    SKILL_QUICK_CHANT,
-          SKILL_BASH, SKILL_1H_PIERCING, SKILL_2H_SLASHING, SKILL_HIDE}},
-    {
-      25922,                    // baha
-      {
-    SKILL_1H_FLAYING,
-          SKILL_TACKLE, SKILL_GAZE, SKILL_DOUBLE_ATTACK, SKILL_SPRINGLEAP}},
-    {
-      45718,                    // cel
-      {
-    SKILL_SWEEPING_THRUST,
-          SKILL_1H_BLUDGEON, SKILL_BACKSTAB, SKILL_HEADBUTT, SKILL_TRIP}},
-    {
-      34804,                    // 4horsemen
-      {
-    SKILL_RIPOSTE,
-          SKILL_FLANK, SKILL_RAGE, SKILL_MARTIAL_ARTS, SKILL_ARCANE_RIPOSTE}},
-    {
-    0}
+    { 26860,                    // neg
+      { SKILL_DODGE, SKILL_MEDITATE, SKILL_SPELL_KNOWLEDGE_MAGICAL, SKILL_2H_BLUDGEON, SKILL_SHIELD_BLOCK}
+    },
+    { 25087,                    // brass
+      { SKILL_1H_SLASHING, SKILL_UNARMED_DAMAGE, SKILL_SPELL_KNOWLEDGE_CLERICAL, SKILL_PARRY, SKILL_RESCUE}
+    },
+    { 81094,                    // ceothia
+      { SKILL_QUICK_CHANT, SKILL_BASH, SKILL_1H_PIERCING, SKILL_2H_SLASHING, SKILL_HIDE}
+    },
+    { 25922,                    // baha
+      { SKILL_1H_FLAYING, SKILL_TACKLE, SKILL_GAZE, SKILL_DOUBLE_ATTACK, SKILL_SPRINGLEAP}
+    },
+    { 45718,                    // cel
+      { SKILL_SWEEPING_THRUST, SKILL_1H_BLUDGEON, SKILL_BACKSTAB, SKILL_HEADBUTT, SKILL_TRIP}
+    },
+    { 34804,                    // 4horsemen
+      { SKILL_RIPOSTE, SKILL_FLANK, SKILL_RAGE, SKILL_MARTIAL_ARTS, SKILL_ARCANE_RIPOSTE}
+    },
+    { 0}
   };
 
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
     return TRUE;
 
-  if (cmd == 0)
+  if (cmd == CMD_PERIODIC)
   {
     if (!number(0, 5) && active)
     {
-      act
-        ("You hear a cracking noise as twisting &+Bthreads of &-Lelectric&-l&+B discharges&n crawl up $p.",
+      act("You hear a cracking noise as twisting &+Bthreads of &-Lelectric&-l&+B discharges&n crawl up $p.",
          FALSE, 0, obj, 0, TO_ROOM);
       for (i = 0; beacon_loads[i].room; i++)
+      {
         if (world[obj->loc.room].number == beacon_loads[i].room)
         {
           obj->value[0] = beacon_loads[i].skills[number(0, 4)];
           break;
         }
+      }
     }
     else if (!number(0, 10) && !active)
     {
-      act
-        ("$p flashes brightly then blurs and with a loud rumble falls apart leaving nothing but a pile of debris.",
+      act("$p flashes brightly then blurs and with a loud rumble falls apart leaving nothing but a pile of debris.",
          FALSE, 0, obj, 0, TO_ROOM);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     }
     return FALSE;
   }
 
-  if (!ch || IS_NPC(ch))
+  if( !ch || IS_NPC(ch) || (cmd != CMD_TOUCH && cmd != CMD_EXAMINE) || !argument )
     return FALSE;
 
   one_argument(argument, buf);
 
-  if (obj != get_obj_in_list_vis(ch, buf, world[ch->in_room].contents))
+  if( obj != get_obj_in_list_vis(ch, buf, world[ch->in_room].contents) )
     return FALSE;
 
   l = ch->only.pc->skills[skill].learned;
@@ -12627,71 +12619,54 @@ int skill_beacon(P_obj obj, P_char ch, int cmd, char *argument)
   {
     if (l < t || (requirement && t < requirement))
     {
-      act("As you touch $p you feel the power surge under its surface "
-          "but you can sense you are not ready yet to extend your "
-          "capabilities.", FALSE, ch, obj, 0, TO_CHAR);
-      act("$n touches $p but nothing seems to happen.", FALSE, ch, obj, 0,
-          TO_ROOM);
+      act("As you touch $p you feel the power surge under its surface but you can sense you"
+        " are not ready yet to extend your capabilities.", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n touches $p but nothing seems to happen.", FALSE, ch, obj, 0, TO_ROOM);
       return TRUE;
     }
 
     if (t == maxlearn || (cap && cap <= t))
     {
-      act("As you touch $p you feel the power surge under its surface "
-          "but you can sense it is not enough to extend your "
-          "capabilities any further.", FALSE, ch, obj, 0, TO_CHAR);
-      act("$n touches $p but nothing seems to happen.",
-          FALSE, ch, obj, 0, TO_ROOM);
+      act("As you touch $p you feel the power surge under its surface but you can sense it is"
+        " not enough to extend your capabilities any further.", FALSE, ch, obj, 0, TO_CHAR);
+      act("$n touches $p but nothing seems to happen.", FALSE, ch, obj, 0, TO_ROOM);
       return TRUE;
     }
 
-    if (true)
-    {
-      send_to_char("You are too exhausted to extend your skills now.\n", ch);
-      return TRUE;
-    }
-
-    ch->only.pc->skills[skill].taught =
-      MIN(ch->only.pc->skills[skill].taught + 2, maxlearn);
+    ch->only.pc->skills[skill].taught = MIN(ch->only.pc->skills[skill].taught + 2, maxlearn);
     sprintf(buf, "As you reach towards $p, suddenly a &+Bcracking bolt&n\n"
             "jumps from it binding you for a second in an immobilizing\n"
             "grip. In a sudden flash of understanding you feel you can\n"
             "now progress further in &+W%s&n!", skills[skill].name);
     act(buf, FALSE, ch, obj, 0, TO_CHAR);
     act("Upon $n's touch a &+B&-Lcracking bolt&n shoots out from $p "
-        "binding $m for a second in an immobilizing grip.", FALSE, ch, obj, 0,
-        TO_ROOM);
+        "binding $m for a second in an immobilizing grip.", FALSE, ch, obj, 0, TO_ROOM);
     REMOVE_BIT(obj->extra2_flags, ITEM2_MAGIC);
+    // Maybe add a cooldown timer here instead of removing the magic flag?
     return TRUE;
   }
   else if (cmd == CMD_EXAMINE)
   {
     if (IS_TRUSTED(ch))
     {
-      sprintf(buf, "This is a skill beacon object. The following values "
-              "are used to configure it:\n"
+      sprintf(buf, "This is a skill beacon object. The following values are used to configure it:\n"
               "  &+Wval0&n   skill number\n"
               "  &+Wval1&n   minimal skill level to use the beacon\n"
               "  &+Wval2&n   maximal skill level beacon will grant");
       if (skill)
-        sprintf(buf + strlen(buf),
-                "\n$p is %sactive and grants skill &+W%s&n.",
-                active ? "" : "in", skills[skill].name);
+        sprintf(buf + strlen(buf), "\n$p is %sactive and grants skill &+W%s&n.",
+          active ? "" : "in", skills[skill].name);
       if (requirement)
-        sprintf(buf + strlen(buf),
-                "\nrequired skill level is &+W%d&n", requirement);
+        sprintf(buf + strlen(buf), "\nrequired skill level is &+W%d&n", requirement);
       if (cap)
-        sprintf(buf + strlen(buf),
-                "\nit will not raise skill above &+W%d&n", cap);
+        sprintf(buf + strlen(buf), "\nit will not raise skill above &+W%d&n", cap);
     }
     else if (GET_C_INT(ch) > number(50, 150))
-      sprintf(buf, "$p is a monolithic block of an unidentified metal. "
-              "There are some runes drawn on it which you decipher as "
-              "referring to the art of &+W%s&n.", skills[skill].name);
+      sprintf(buf, "$p is a monolithic block of an unidentified metal. There are some runes drawn on"
+        " it which you decipher as referring to the art of &+W%s&n.", skills[skill].name);
     else
-      sprintf(buf, "$p is a monolithic block of an unidentified metal. "
-              "There are some runes drawn on it which you can not "
-              "decipher at all.");
+      sprintf(buf, "$p is a monolithic block of an unidentified metal. There are some runes drawn on"
+        " it which you can not decipher at all.");
     act(buf, FALSE, ch, obj, 0, TO_CHAR);
     return TRUE;
   }
@@ -13279,9 +13254,8 @@ int thought_beacon(P_obj obj, P_char ch, int cmd, char *arg)
   if (cmd != CMD_DISPEL || !OBJ_ROOM(obj))
     return FALSE;
 
-  send_to_room("&+LThe fog quickly disperses, leaving only a trace of it ever existing.\n",
-      obj->loc.room);
-  extract_obj(obj, FALSE);
+  send_to_room("&+LThe fog quickly disperses, leaving only a trace of it ever existing.\n", obj->loc.room);
+  extract_obj(obj, FALSE); // Not an arti, but 'in game.'
   return TRUE;
 }
 

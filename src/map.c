@@ -29,6 +29,7 @@ using namespace std;
 #include "ships/ships.h"
 #include "guildhall.h"
 #include "ctf.h"
+#include "vnum.obj.h"
 
 struct continent
 {
@@ -65,7 +66,7 @@ extern P_index obj_index;
 extern P_room world;
 extern const char *dirs[];
 extern const int rev_dir[];
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 
 extern struct zone_data *zone;
@@ -403,12 +404,12 @@ int whats_in_maproom(P_char ch, int room, int distance, int show_regardless)
           val = MIN(val, CONTAINS_CORPSE);
         }
       }
-      else if(GET_OBJ_VNUM(obj) == GEMMINE_VNUM && (( (has_innate(ch, INNATE_MINER) ||
+      else if(GET_OBJ_VNUM(obj) == VOBJ_GEMMINE && (( (has_innate(ch, INNATE_MINER) ||
         IS_AFFECTED5(ch, AFF5_MINE)) && distance < 2 ) || IS_TRUSTED(ch) ) )
       {
         val = MIN(val, CONTAINS_GEMMINE);
       }
-      else if(GET_OBJ_VNUM(obj) == MINE_VNUM && (( (has_innate(ch, INNATE_MINER) ||
+      else if(GET_OBJ_VNUM(obj) == VOBJ_MINE && (( (has_innate(ch, INNATE_MINER) ||
         IS_AFFECTED5(ch, AFF5_MINE)) && distance < 3 ) || IS_TRUSTED(ch) ) )
       {
         val = MIN(val, CONTAINS_MINE);

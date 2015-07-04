@@ -58,24 +58,25 @@ typedef char                   bool;
 #define true 1
 #endif
 
-typedef char                   byte;
-typedef signed char            sbyte;
-typedef signed short int       sh_int;
-typedef struct AC_Memory       Memory;
-typedef struct char_data       *P_char;
-typedef struct descriptor_data *P_desc;
-typedef struct event_data      *P_event;
-typedef struct nevent_data *P_nevent;
-typedef struct obj_data        *P_obj;
-typedef struct room_data       *P_room;
-typedef struct affected_by     *P_aff;
-typedef struct mob_prog_data   *P_mprog;
+typedef char                      byte;
+typedef signed char               sbyte;
+typedef signed short int          sh_int;
+typedef struct AC_Memory          Memory;
+typedef struct char_data         *P_char;
+typedef struct descriptor_data   *P_desc;
+typedef struct event_data        *P_event;
+typedef struct nevent_data       *P_nevent;
+typedef struct obj_data          *P_obj;
+typedef struct room_data         *P_room;
+typedef struct affected_by       *P_aff;
+typedef struct mob_prog_data     *P_mprog;
 typedef struct mob_prog_act_list *P_mprog_list;
-typedef unsigned char          ubyte;
-typedef unsigned short int     ush_int;
-typedef struct witness_data    wtns_rec;
-typedef struct crime_info      crime_rec;
-typedef struct crime_data      crm_rec;
+typedef struct arti_data         *P_arti;
+typedef unsigned char             ubyte;
+typedef unsigned short int        ush_int;
+typedef struct witness_data       wtns_rec;
+typedef struct crime_info         crime_rec;
+typedef struct crime_data         crm_rec;
 // old guildhalls (deprecated)
 //typedef struct house_control_rec *P_house;
 //typedef struct house_upgrade_rec *P_house_upgrade;
@@ -192,10 +193,6 @@ struct edit_data {
   int callback_data;
 };
 
-/* 'blank' objects, that may be used to create other things */
-#define OBJ_TEMPLATE_LOCK       11010
-#define OBJ_TEMPLATE_KEY        11011
-
 /* The following defs are for obj_data  */
 
 /* note:  before reassigning any of these, especially the ones that you have no
@@ -217,15 +214,7 @@ struct edit_data {
 #define MISSING_LEGS    BIT_11
 #define HUMANOID_CORPSE BIT_16
 
-/* for loc_p */
-#define LOC_NOWHERE        BIT_1
-#define LOC_ROOM           BIT_2
-#define LOC_CARRIED        BIT_3
-#define LOC_WORN           BIT_4
-#define LOC_INSIDE         BIT_5
-
 /* for 'str_mask' */
-
 #define STRUNG_KEYS   BIT_1     /* M: name         O: name               */
 #define STRUNG_DESC1  BIT_2     /* M: long_descr   O: description        */
 #define STRUNG_DESC2  BIT_3     /* M: short_descr  O: short_description  */
@@ -490,6 +479,16 @@ struct obj_affect {
   sh_int data;
   ulong extra2;
   struct obj_affect *next;
+};
+
+struct arti_data {
+  int    vnum;          // Vnum of the artifact
+  bool   owned;         // Whether the artifact's timer is currently countinng down.
+  char   locType;       // ARTIFACT_NOTINGAME, ARTIFACT_ON_NPC, ARTIFACT_ON_PC, ARTIFACT_ONGROUND, or ARTIFACT_ONCORPSE
+  int    location;      // The number corresponding to the location of the arti (vnum of mob|room/pid of PC/etc).
+  time_t timer;         // The current time when the artifact will poof.
+  char   type;          // ARTIFACT_IOUN / ARTIFACT_UNIQUE / ARTIFACT_MAIN
+  P_arti next;          // Used for lists of P_arti.  Usually NULL.
 };
 
 /* ======================== Structure for object ========================= */
@@ -1963,6 +1962,7 @@ struct  mob_prog_data
 #define LOG_CHAT "logs/log/chat"
 
 /* problem reporting */
+#define LOG_ARTIFACT "logs/log/artifact"
 #define LOG_DEBUG "logs/log/debug"
 #define LOG_FILE "logs/log/file"
 #define LOG_SAVED_OBJ "logs/log/saved_items"

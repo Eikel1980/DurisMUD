@@ -20,6 +20,7 @@
 #include "specs.prototypes.h"
 #include "weather.h"
 #include "damage.h"
+#include "vnum.obj.h"
 
 /* external variables */
 
@@ -38,7 +39,7 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct str_app_type str_app[];
@@ -442,99 +443,97 @@ int breale_townsfolk(P_char ch, P_char pl, int cmd, char *arg)
   return FALSE;
 }
 
+// This proc isn't in game atm, and is found in specs.myranth.c as well?
 int blackness_sword(P_obj obj, P_char ch, int cmd, char *arg)
 {
-  int      ankh_vr = 70133;     /*
-                                   Virtual Number of object that sword keys off 
-                                   of 
-                                 */
-  int      got_it = FALSE, t_val;
+  int      ankh_loc, t_val;
   char     Buf1[MAX_STRING_LENGTH], Buf2[MAX_STRING_LENGTH];
+  bool     got_it;
   P_obj    ankh = NULL, sword;
 
   /* check for periodic event calls */
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
     return FALSE;
 
-  if (!obj || !ch || cmd == CMD_PERIODIC || !arg || !OBJ_ROOM(obj))
+  if( (cmd != CMD_GET) && (cmd != CMD_TAKE) )
     return FALSE;
 
-  if ((cmd != CMD_GET) && (cmd != CMD_TAKE))
+  if( !obj || !ch || !arg || !OBJ_ROOM(obj) )
     return FALSE;
 
-  if (ch->equipment[WEAR_NECK_1])
-    if (obj_index[ch->equipment[WEAR_NECK_1]->R_num].virtual_number ==
-        ankh_vr)
+  ankh_loc = WEAR_NONE;
+  if( ch->equipment[WEAR_NECK_1] )
+    if( GET_OBJ_VNUM(ch->equipment[WEAR_NECK_1]) == VOBJ_HIGHWAY_ANKH_BLACKSWORD )
     {
-      got_it = TRUE;
+      ankh_loc = WEAR_NECK_1;
       ankh = ch->equipment[WEAR_NECK_1];
     }
-  if (!got_it && ch->equipment[WEAR_NECK_2])
-    if (obj_index[ch->equipment[WEAR_NECK_2]->R_num].virtual_number ==
-        ankh_vr)
+  if( ankh_loc == WEAR_NONE && ch->equipment[WEAR_NECK_2] )
+    if( GET_OBJ_VNUM(ch->equipment[WEAR_NECK_2]) == VOBJ_HIGHWAY_ANKH_BLACKSWORD )
     {
-      got_it = TRUE;
+      ankh_loc = WEAR_NECK_2;
       ankh = ch->equipment[WEAR_NECK_2];
     }
-  if (!got_it)
+  if( ankh_loc == WEAR_NONE )
     return FALSE;
 
   argument_interpreter(arg, Buf1, Buf2);
 
-  if (*Buf2)
+  if( *Buf2 )
     return FALSE;
 
+  // If we're trying to 'get|take all' or 'get|take all.<sword keyword>'
   got_it = FALSE;
-  if (!str_cmp(Buf1, "all"))
+  if( !str_cmp(Buf1, "all") )
     got_it = TRUE;
-  else if ((sscanf(Buf1, "all.%s", Buf2) == 1) && isname(Buf2, obj->name))
+  else if( (sscanf(Buf1, "all.%s", Buf2) == 1) && isname(Buf2, obj->name) )
     got_it = TRUE;
   else
   {
-    t_val = 0;
-    if (isname(Buf1, obj->name) ||
-        ((sscanf(Buf1, "%d.%s", &t_val, Buf2) == 2) &&
-         isname(Buf2, obj->name)))
+    if( isname(Buf1, obj->name) || ((sscanf(Buf1, "%d.%s", &t_val, Buf2) == 2) && isname(Buf2, obj->name)))
     {
-      if (!t_val)
+      if( t_val < 1)
       {
-        t_val = 1;
-        strcpy(Buf2, Buf1);
+        return FALSE;
       }
-      for (sword = world[obj->loc.room].contents; sword;
-           sword = sword->next_content)
+      for( sword = world[obj->loc.room].contents; sword; sword = sword->next_content )
       {
-        if (isname(Buf2, sword->name))
+        if( isname(Buf2, sword->name) )
           t_val--;
-        if (t_val <= 0)
+        if( t_val <= 0 )
         {
-          if (sword == obj)
+          if( sword == obj )
+          {
             got_it = TRUE;
+          }
           break;
         }
       }
     }
   }
 
-  if (!got_it)
+  if( !got_it )
     return FALSE;
 
-  if (IS_SET(obj->wear_flags, ITEM_TAKE))
+  // If it's already flagged takeable.
+  if( IS_SET(obj->wear_flags, ITEM_TAKE) )
     return FALSE;
 
+  // Otherwise make it takeable and not cursed.
   REMOVE_BIT(obj->extra_flags, ITEM_NODROP);
   SET_BIT(obj->wear_flags, ITEM_TAKE);
 
-  /*
-     Ankh only works once, for whatever command. . . . 
-   */
-  unequip_char(ch,
-               OBJ_WORN_POS(ankh, WEAR_NECK_1) ? WEAR_NECK_1 : WEAR_NECK_2);
-  extract_obj(ankh, TRUE);
-  send_to_char("The ankh around your neck disappears with a hollow pop.\n\n",
-               ch);
+  // Ankh only works once, for whatever command. . . .
+  unequip_char(ch, ankh_loc );
+  extract_obj(ankh, TRUE); // Should poof if arti.
+  send_to_char("The ankh around your neck disappears with a hollow pop.\n\n", ch);
+  // Actually get the sword.
+  obj_from_room(obj);
+  obj_to_char(obj, ch);
+  act("You get $p.", FALSE, ch, obj, 0, TO_CHAR);
+  act("$n gets $p.", TRUE, ch, obj, 0, TO_ROOM);
 
-  return FALSE;
+  return TRUE;
 }
 
 int kearonor_hide(P_obj obj, P_char ch, int cmd, char *arg)

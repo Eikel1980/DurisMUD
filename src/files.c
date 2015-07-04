@@ -65,7 +65,7 @@ extern int innate_abilities[];
 extern int class_innates[][5];
 extern int innate2_abilities[];
 extern int class_innates2[][5];
-extern int top_of_world;
+extern const int top_of_world;
 
 #ifndef _PFILE_
 extern Skill skills[];
@@ -797,7 +797,7 @@ bool writeObjectlist(P_obj obj, int loc)
 
     if (t_obj && (t_obj->R_num != w_obj->R_num))
     {
-      extract_obj(t_obj, FALSE);
+      extract_obj(t_obj);
       t_obj = NULL;
     }
     if (!t_obj)
@@ -952,7 +952,7 @@ bool writeObjectlist(P_obj obj, int loc)
     ADD_BYTE(ibuf, O_F_EOL);
 
   if (t_obj)
-    extract_obj(t_obj, FALSE);
+    extract_obj(t_obj);
 
   return TRUE;
 }
@@ -1142,9 +1142,8 @@ int writeObject(P_obj obj, int o_f_flag, ulong o_u_flag, int count, int loc, cha
 	return (int) (ibuf-start);
 }
 
-/* this function writes one object to a char buffer, and returns the total number of bytes written.
-   this will *not* write the contents of a container object. */
-
+// This function writes one object to a char buffer, and returns the total number of bytes written.
+// This will *not* write the contents of a container object.
 int write_one_object(P_obj obj, char* dest_buff)
 {
 	char *start = dest_buff;
@@ -1153,22 +1152,25 @@ int write_one_object(P_obj obj, char* dest_buff)
 	byte o_f_flag = 0;
   ulong o_u_flag = 0;
 
-	if( !obj ) {
+	if( !obj )
+  {
 		logit(LOG_DEBUG, "write_one_object(): invalid object\n");
 		return 0;
 	}
-	
-	if( !buff ) {
+
+	if( !buff )
+  {
 		logit(LOG_DEBUG, "write_one_object(): invalid buffer\n");
 		return 0;
 	}
 
 	P_obj t_obj = read_object(obj->R_num, REAL);
-	
-	if( !t_obj ) {
-		logit(LOG_DEBUG, "write_one_object(): obj %d [%d] not loadable\n", 
+
+	if( !t_obj )
+  {
+		logit(LOG_DEBUG, "write_one_object(): obj %d [%d] not loadable\n",
 				obj->R_num, obj_index[obj->R_num].virtual_number);
-    extract_obj(t_obj, TRUE);
+    extract_obj(t_obj);
 		return 0;
 	}
 
@@ -1183,14 +1185,14 @@ int write_one_object(P_obj obj, char* dest_buff)
 
   if ((o_u_flag = ObjUniqueFlags(obj, t_obj)))
     o_f_flag |= O_F_UNIQUE;
-	
+
 	int len = writeObject(obj, o_f_flag, o_u_flag, (ush_int) 1, 0, buff);
 
 	buff += len;
 
   ADD_BYTE(buff, O_F_EOL); // end of items
 
-  extract_obj(t_obj, TRUE);
+  extract_obj(t_obj);
 	return (buff - start);
 }
 
@@ -1796,25 +1798,24 @@ int writeCharacter(P_char ch, int type, int room)
     for (i = 0; i < MAX_WEAR; i++)
       if (save_equip[i])
       {
-        extract_obj(save_equip[i], FALSE);
+        extract_obj(save_equip[i]);
         save_equip[i] = NULL;
       }
     for (obj = ch->carrying; obj; obj = obj2)
     {
       obj2 = obj->next_content;
-      extract_obj(obj, FALSE);
+      extract_obj(obj);
       obj = NULL;
     }
   }
 
-  all_affects(ch, TRUE);        /*
-                                 * reapply affects (including equip)
-                                 */
+  // Reapply affects (including equip)
+  all_affects(ch, TRUE);
 
   if ((int) (buf - buff) > SAV_MAXSIZE)
   {
     logit(LOG_PLAYER, "Could not save %s, file too large (%d bytes)",
-          GET_NAME(ch), (int) (buf - buff));
+      GET_NAME(ch), (int) (buf - buff));
     return 0;
   }
   sprintf(Gbuf1, "%s/%c/", SAVE_DIR, LOWER(*ch->player.name));
@@ -1975,6 +1976,7 @@ int deleteCharacter(P_char ch, bool bDeleteLocker)
   char     name[MAX_STRING_LENGTH];
   char     Gbuf1[MAX_STRING_LENGTH], Gbuf2[MAX_STRING_LENGTH];
   P_obj    obj;
+  FILE    *f;
 
   strcpy(name, GET_NAME(ch));
   for( tmp = name; *tmp; tmp++ )
@@ -1983,32 +1985,36 @@ int deleteCharacter(P_char ch, bool bDeleteLocker)
   }
 
   // Remove all artis from char.
-  removeArtiData( GET_NAME(ch) );
+  remove_all_artifacts_sql( ch );
 
 #ifdef USE_ACCOUNT
   remove_char_from_list(ch->desc->account, ch->player.name);
 #endif
 
-  sprintf(Gbuf1, "%s/%c/", SAVE_DIR, LOWER(*ch->player.name));
-  strcat(Gbuf1, name);
-  strcpy(Gbuf2, Gbuf1);
-  strcat(Gbuf2, ".bak");
-  unlink(Gbuf1);
-  unlink(Gbuf2);
+  sprintf( Gbuf1, "%s/%c/%s", SAVE_DIR, *name, name );
+  strcpy( Gbuf2, Gbuf1 );
+  sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
+  if( f = fopen( Gbuf1, "r" ) )
+  {
+    fclose( f );
+    system( Gbuf2 );
+  }
 
-  if (bDeleteLocker)
+  if( bDeleteLocker )
   {
     // delete the locker as well
-    sprintf(Gbuf1, "%s/%c/%s.locker", SAVE_DIR, LOWER(*ch->player.name), name);
-    strcpy(Gbuf2, Gbuf1);
-    strcat(Gbuf2, ".bak");
-    unlink(Gbuf1);
-    unlink(Gbuf2);
+    sprintf( Gbuf1, "%s/%c/%s.locker", SAVE_DIR, LOWER(*ch->player.name), name );
+    sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
+    if( f = fopen( Gbuf1, "r" ) )
+    {
+      fclose( f );
+      system( Gbuf2 );
+    }
   }
+
   // Delete file containing conjurable mobs.
   sprintf( Gbuf1, "%s/%c/%s.spellbook", SAVE_DIR, LOWER(*ch->player.name), name);
-  // If file exists.
-  if( FILE *f = fopen( Gbuf1, "r" ) )
+  if( f = fopen( Gbuf1, "r" ) )
   {
     fclose( f );
     sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
@@ -2016,8 +2022,7 @@ int deleteCharacter(P_char ch, bool bDeleteLocker)
   }
   // Delete file containing crafting/forging recipe list.
   sprintf(Gbuf1, "%s/Tradeskills/%c/%s.crafting", SAVE_DIR, LOWER(*ch->player.name), name);
-  // If file exists.
-  if( FILE *f = fopen( Gbuf1, "r" ) )
+  if( f = fopen( Gbuf1, "r" ) )
   {
     fclose( f );
     sprintf( Gbuf2, "mv -f %s %s.bak", Gbuf1, Gbuf1 );
@@ -3437,7 +3442,7 @@ P_obj restoreObjects(char *buf, P_char ch, int not_room)
           {
             tmp = GET_INTE(buf);
           }
-          
+
           if (tmp)
           {                     /*
                                  * create fake spell description
@@ -3493,9 +3498,7 @@ P_obj restoreObjects(char *buf, P_char ch, int not_room)
 
         if (c_obj && (c_obj->type == ITEM_QUIVER || !ch))
           obj_to_obj(obj, c_obj);
-        else if (c_obj &&
-                 ((GET_OBJ_WEIGHT(obj) + GET_OBJ_WEIGHT(c_obj) <=
-                   c_obj->value[0]) || !ch))
+        else if (c_obj && ((GET_OBJ_WEIGHT(obj) + GET_OBJ_WEIGHT(c_obj) <= c_obj->value[0]) || !ch))
         {
           obj_to_obj(obj, c_obj);
         }
@@ -3534,7 +3537,7 @@ P_obj restoreObjects(char *buf, P_char ch, int not_room)
     for (obj = ch->carrying; obj; obj = obj->next_content)
       GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(obj);
   }
-  
+
   return root_obj ? root_obj : (P_obj) 1;
 }
 
@@ -3881,7 +3884,7 @@ int confiscate_item(P_char ch, int debt)
         obj = obj2;
       }
     }
-    extract_obj(cobj, TRUE);
+    extract_obj(cobj, TRUE); // If arti is confiscated.. ouch.
     return ((value * 3) / 4);
   }
   /*
@@ -3925,7 +3928,7 @@ int confiscate_item(P_char ch, int debt)
     }
   }
 #   endif
-  extract_obj(cobj, TRUE);
+  extract_obj(cobj, TRUE); // If arti is confiscated.. ouch.
   return ((value * 3) / 4);
 }
 
@@ -3939,7 +3942,7 @@ void confiscate_all(P_char ch)
     save_equip[i] = NULL;
     if (ch->equipment[i])
     {
-      extract_obj(ch->equipment[i], TRUE);
+      extract_obj(ch->equipment[i], TRUE); // If arti is confiscated.. ouch!
       ch->equipment[i] = NULL;
     }
   }
@@ -3947,7 +3950,7 @@ void confiscate_all(P_char ch)
   while (obj)
   {
     obj2 = obj->next_content;
-    extract_obj(obj, TRUE);
+    extract_obj(obj, TRUE); // If arti is confiscated.. ouch!
     obj = obj2;
   }
 }
@@ -4011,6 +4014,7 @@ int      restore_wear[MAX_WEAR] = {
 
 int restoreItemsOnly(P_char ch, int flatrate)
 {
+  int      wearSuccess;
 #ifndef _PFILE_
   FILE    *f;
   char     buff[SAV_MAXSIZE];
@@ -4111,7 +4115,7 @@ int restoreItemsOnly(P_char ch, int flatrate)
 
 #endif
 
-  if (!restoreObjects(buff + item_off, ch, 1))
+  if( !restoreObjects(buff + item_off, ch, 1) )
   {
     fprintf(stderr, "Problem restoring inventory of: %s\n", GET_NAME(ch));
     logit(LOG_FILE, "Problem restoring inventory of %s.", GET_NAME(ch));
@@ -4123,15 +4127,14 @@ int restoreItemsOnly(P_char ch, int flatrate)
     return -2;
   }
   for (tmp = 0; tmp < MAX_WEAR; tmp++)
+  {
     if (save_equip[tmp] != NULL)
     {
-      int      wearSuccess;
-
-      wearSuccess = wear(ch, save_equip[tmp], restore_wear[tmp], 0);
+      wearSuccess = wear(ch, save_equip[tmp], restore_wear[tmp], FALSE);
       if (!wearSuccess && restore_wear[tmp] == 12)
-        wearSuccess = wear(ch, save_equip[tmp], 13, 0);
+        wearSuccess = wear(ch, save_equip[tmp], 13, FALSE);
     }
-
+  }
 //  wear(ch, save_equip[tmp], restore_wear[tmp], 0);
 
   return 0;
@@ -4395,13 +4398,13 @@ int writePet(P_char ch)
   for (i = 0; i < MAX_WEAR; i++)
     if (save_equip[i])
     {
-      extract_obj(save_equip[i], FALSE);
+      extract_obj(save_equip[i]);
       save_equip[i] = NULL;
     }
   for (obj = ch->carrying; obj; obj = obj2)
   {
     obj2 = obj->next_content;
-    extract_obj(obj, FALSE);
+    extract_obj(obj);
     obj = NULL;
   }
 #   endif
@@ -5639,13 +5642,13 @@ int writeJailItems(P_char ch)
   for (i = 0; i < MAX_WEAR; i++)
     if (save_equip[i])
     {
-      extract_obj(save_equip[i], FALSE);
+      extract_obj(save_equip[i]);
       save_equip[i] = NULL;
     }
   for (obj = ch->carrying; obj; obj = obj2)
   {
     obj2 = obj->next_content;
-    extract_obj(obj, FALSE);
+    extract_obj(obj);
     obj = NULL;
   }
 

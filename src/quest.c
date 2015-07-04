@@ -152,8 +152,8 @@ bool quest_completion(struct quest_complete_data *qcp, P_char mob, P_char pl)
           break;
       if (!obj)
         return (FALSE);
-      obj_from_char(obj, TRUE);
-      extract_obj(obj, TRUE);
+      obj_from_char(obj);
+      extract_obj(obj, TRUE); // Arti quest item?
       obj = NULL;
     }
     if (gp->goal_type == QUEST_GOAL_COINS)
@@ -168,8 +168,8 @@ bool quest_completion(struct quest_complete_data *qcp, P_char mob, P_char pl)
           break;
       if (!obj)
         return (FALSE);
-      obj_from_char(obj, TRUE);
-      extract_obj(obj, TRUE);
+      obj_from_char(obj);
+      extract_obj(obj, TRUE); // Arti quest item?
       obj = NULL;
     }
   }
@@ -240,10 +240,10 @@ void give_reward(struct quest_complete_data *qcp, P_char mob, P_char pl)
       }
 
       // No duplicating artifacts.
-      if( IS_ARTIFACT(obj) && get_current_artifact_info(obj->R_num, 0, NULL, NULL, NULL, NULL, FALSE, NULL) )
+      if( get_artifact_data_sql(GET_OBJ_VNUM(obj), NULL) )
       {
-        // It's imperative that we extract.. FALSE because otherwise extract_obj kills artifact info.
-        extract_obj(obj, FALSE);
+        // It's imperative that we extract FALSE (no poofing arti data)..
+        extract_obj(obj);
         break;
       }
 
@@ -373,9 +373,8 @@ void tell_quest(int id, P_char pl)
         obj = read_object(gp->number, VIRTUAL);
         if (obj && real_object(gp->number) > 0)
         {
-          sprintf(Gbuf2, "  - item #%d %s\n", gp->number,
-                  obj->short_description);
-          extract_obj(obj, FALSE);
+          sprintf(Gbuf2, "  - item #%d %s\n", gp->number, obj->short_description);
+          extract_obj(obj);
         }
         else
         {
@@ -408,7 +407,7 @@ void tell_quest(int id, P_char pl)
         {
           sprintf(Gbuf2, "  - item #%d %s\n", gp->number,
                   obj->short_description);
-          extract_obj(obj, FALSE);
+          extract_obj(obj);
         }
         else
         {
@@ -472,8 +471,7 @@ int quester(P_char ch, P_char pl, int cmd, char *arg)
     if ((quester_id = find_quester_id(GET_RNUM(ch))) < 0)
       return (FALSE);
 
-    if ((cmd == CMD_TELL) && 
-        IS_TRUSTED(pl) && !strn_cmp(Gbuf1, "quest", 5))
+    if ((cmd == CMD_TELL) && IS_TRUSTED(pl) && !strn_cmp(Gbuf1, "quest", 5))
     {
       tell_quest(quester_id, pl);
       return (TRUE);
@@ -525,8 +523,7 @@ int quester(P_char ch, P_char pl, int cmd, char *arg)
       keeps them in game, so they dont repop every friggin update
  ***/
 //        send_to_char(qcp->disappear_message, pl);
-          act(qcp->disappear_message, FALSE, ch, 0, pl,
-              qcp->echoAll ? TO_ROOM : TO_VICT);
+          act(qcp->disappear_message, FALSE, ch, 0, pl, qcp->echoAll ? TO_ROOM : TO_VICT);
 
           P_obj obj;
 
@@ -534,7 +531,7 @@ int quester(P_char ch, P_char pl, int cmd, char *arg)
             if (ch->equipment[l])
             {
               obj = unequip_char(ch, l);
-              extract_obj(obj, TRUE);
+              extract_obj(obj, TRUE); // Quest mob with an arti?
             }
 
           if (ch->carrying)
@@ -544,7 +541,7 @@ int quester(P_char ch, P_char pl, int cmd, char *arg)
             for (obj = ch->carrying; obj != NULL; obj = next_obj)
             {
               next_obj = obj->next_content;
-              extract_obj(obj, TRUE);
+              extract_obj(obj, TRUE); // Quest mob with an arti?
             }
           }
           extract_char(ch);

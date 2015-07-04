@@ -27,7 +27,6 @@ using namespace std;
 
 extern P_index obj_index;
 extern char *spells[];
-extern int top_of_world;
 extern int char_is_on_plane(P_char);
 extern P_room world;
 

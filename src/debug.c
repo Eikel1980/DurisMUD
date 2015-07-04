@@ -36,7 +36,7 @@
 extern P_char character_list;
 extern P_desc descriptor_list;
 extern P_room world;
-extern int top_of_world;
+extern const int top_of_world;
 
 extern mm_ds_list *mmds_list;
 extern mem_usage mem_used[];

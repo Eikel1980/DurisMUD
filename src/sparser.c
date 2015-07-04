@@ -62,7 +62,6 @@ extern struct time_info_data time_info;
 extern void initialize_skills(void);
 extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];
-extern int top_of_world;
 
 extern Skill skills[MAX_AFFECT_TYPES+1];
 int      SortedSkills[MAX_AFFECT_TYPES+1];

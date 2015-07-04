@@ -39,6 +39,9 @@
 #include "specs.prototypes.h"
 #include "structs.h"
 #include "utils.h"
+#include "vnum.obj.h"
+#include "vnum.mob.h"
+#include "vnum.room.h"
 
 /*
    external variables 
@@ -400,45 +403,72 @@ int demodragon(P_char ch, P_char pl, int cmd, char *arg)
 
 int room_of_sanctum(int room, P_char ch, int cmd, char *arg)
 {
-  P_char   archbishop, bishop;
-  P_obj    destroy;
+  P_char archbishop, bishop;
+  P_obj  key;
 
-  /*
-     check for periodic event calls 
-   */
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
     return FALSE;
 
-  if ((cmd != CMD_UNLOCK) || !AWAKE(ch))
+  if( (cmd != CMD_UNLOCK) || !ch || !AWAKE(ch) )
     return FALSE;
 
-  archbishop = get_char_room("archbishop", real_room(6855));
-  if (archbishop && IS_PC(archbishop))
-    archbishop = NULL;
-  bishop = get_char_room("bishop", real_room(6857));
-  if (bishop && IS_PC(bishop))
-    bishop = NULL;
-
-  if (archbishop && archbishop->equipment[HOLD])
+  // What if these mobs have been lured from their rooms?
+  for( archbishop = world[real_room0(VROOM_DRAGONNIA_ARCHBISHOP)].people; archbishop; archbishop = archbishop->next_in_room )
   {
-    if (ch->equipment[HOLD] &&
-        ch->equipment[HOLD]->R_num == real_object(6855))
-      unequip_char(ch, HOLD);
-    for (destroy = ch->carrying;
-         destroy && (destroy->R_num != real_object(6855));
-         destroy = destroy->next_content) ;
-    if (destroy)
+    if( IS_NPC(archbishop) && GET_VNUM(archbishop) == VMOB_DRAGONNIA_ARCHBISHOP )
     {
-      act("The $o melts as you put it in the lock and burns you.",
-          0, ch, destroy, 0, TO_CHAR);
-      act("Maybe you should find the 'real' key??", 0, ch, destroy, 0,
-          TO_CHAR);
-      act("The $o of $n has melted and you hear $m scream in pain!", 0, ch,
-          destroy, 0, TO_ROOM);
-      obj_from_char(destroy, TRUE);
-      extract_obj(destroy, TRUE);
-      destroy = NULL;
-      if (GET_HIT(ch) < 90)
+      break;
+    }
+  }
+  // We'll hunt the world, just to make me happy.
+  if( !archbishop )
+  {
+    for( archbishop = character_list; archbishop; archbishop = archbishop->next )
+    {
+      if( IS_NPC(archbishop) && GET_VNUM(archbishop) == VMOB_DRAGONNIA_ARCHBISHOP )
+      {
+        break;
+      }
+    }
+  }
+  for( bishop = world[real_room0(VROOM_DRAGONNIA_BISHOP)].people; bishop; bishop = bishop->next_in_room )
+  {
+    if( IS_NPC(bishop) && GET_VNUM(bishop) == VMOB_DRAGONNIA_BISHOP )
+    {
+      break;
+    }
+  }
+  // We'll hunt the world, just to make me happy. - I mean, how ofter are you going to attempt to unlock
+  //   in this room?
+  if( !bishop )
+  {
+    for( bishop = character_list; bishop; bishop = bishop->next )
+    {
+      if( IS_NPC(bishop) && GET_VNUM(bishop) == VMOB_DRAGONNIA_BISHOP )
+      {
+        break;
+      }
+    }
+  }
+
+  if( archbishop && archbishop->equipment[HOLD]
+    && GET_OBJ_VNUM(archbishop->equipment[HOLD]) == VOBJ_DRAGONNIA_ARCHBISHOP_KEY)
+  {
+    if( ch->equipment[HOLD] && GET_OBJ_VNUM(ch->equipment[HOLD]) == VOBJ_DRAGONNIA_ARCHBISHOP_KEY)
+    {
+      obj_to_char( unequip_char(ch, HOLD), ch );
+    }
+    for( key = ch->carrying; key && GET_OBJ_VNUM(key) != VOBJ_DRAGONNIA_ARCHBISHOP_KEY; key = key->next_content)
+      ;
+    if( key )
+    {
+      act("The $o melts as you put it in the lock and burns you.", 0, ch, key, 0, TO_CHAR);
+      act("Maybe you should find the 'real' key??", 0, ch, key, 0, TO_CHAR);
+      act("The $o of $n has melted and you hear $m scream in pain!", 0, ch, key, 0, TO_ROOM);
+      obj_from_char(key);
+      extract_obj(key, TRUE); // Key is not an arti, but ok.
+      key = NULL;
+      if( GET_HIT(ch) <= 90 )
         GET_HIT(ch) = 1;
       else
         GET_HIT(ch) -= 90;
@@ -448,12 +478,11 @@ int room_of_sanctum(int room, P_char ch, int cmd, char *arg)
     }
     return TRUE;
   }
-  if (bishop && bishop->equipment[HOLD])
+  if( bishop && bishop->equipment[HOLD]
+    && GET_OBJ_VNUM(bishop->equipment[HOLD]) == VOBJ_DRAGONNIA_BISHOP_KEY)
   {
-    act("A strange force doesn't let you unlock the sanctum.",
-        0, ch, 0, 0, TO_CHAR);
-    act("A strange force doesn't let $n unlocks the sanctum.",
-        1, ch, 0, 0, TO_ROOM);
+    act("A strange force doesn't let you unlock the sanctum.", 0, ch, 0, 0, TO_CHAR);
+    act("A strange force doesn't let $n unlocks the sanctum.", 1, ch, 0, 0, TO_ROOM);
     return TRUE;
   }
   return FALSE;

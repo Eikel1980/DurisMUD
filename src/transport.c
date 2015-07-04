@@ -28,7 +28,6 @@ extern P_room world;
 extern const char *dirs[];
 extern const char *dirs2[];
 extern const int rev_dir[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct zone_data *zone;
 extern struct zone_data *zone_table;
@@ -332,7 +331,7 @@ bool flying_transport_cmd_give(P_char ch, P_char victim, char *arg)
   }
 
   // just destroy the ticket
-  extract_obj(ticket, TRUE);  
+  extract_obj(ticket, TRUE); // Not an arti, but 'in game.'
 
   TRANSPORT_ROUTE(victim) = ticket->value[7];
   TRANSPORT_STEP(victim) = 0;

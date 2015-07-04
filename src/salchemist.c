@@ -36,6 +36,7 @@
 #include "epic.h"
 #include "specs.prototypes.h"
 #include "sql.h"
+#include "vnum.obj.h"
 
 /*
  * external variables
@@ -103,7 +104,8 @@ struct potion potion_data[] = {
 };
 
 
-int      basic_ingredients[] = { 821, 822, 823, 824, 825, 826, 827, 828 };
+int basic_ingredients[] = { VOBJ_INGRED_NIGHTSHADE, VOBJ_INGRED_MANDRAKE, VOBJ_INGRED_GARLIC, VOBJ_INGRED_FAERIE_DUST,
+      VOBJ_INGRED_DRAGON_BLOOD, VOBJ_INGRED_GREEN_HERB, VOBJ_INGRED_STRANGE_STONE, VOBJ_INGRED_HUMAN_BONE };
 
 const char *encrust_color_list[] = {
   "",
@@ -459,7 +461,7 @@ void extract_used_ingredients(P_char ch, int ingredients[])
   {
     if(used_objs[i])
     {
-      extract_obj(used_objs[i], TRUE);
+      extract_obj(used_objs[i]);
     }
   }
 }
@@ -498,8 +500,7 @@ void do_mix(P_char ch, char *argument, int cmd)
   one_argument(argument, arg);
   if(*arg)
   {
-    act
-      ("Get a potion bottle, and have the garlic and stuff in inventory and type mix!",
+    act("Get a potion bottle, and have the garlic and stuff in inventory and type mix!",
        FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
@@ -508,8 +509,7 @@ void do_mix(P_char ch, char *argument, int cmd)
 
   if(!bottle)
   {
-    act("You need to have a potion bottle in your inventory.", FALSE, ch, 0,
-        0, TO_CHAR);
+    act("You need to have a potion bottle in your inventory.", FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
   for (i = 0; potion_data[i].spell_type; i++)
@@ -523,22 +523,22 @@ void do_mix(P_char ch, char *argument, int cmd)
         char gbuf2[MAX_STRING_LENGTH], buffer[MAX_STRING_LENGTH];
 
 
-	if(number(1, 160) < ((GET_C_WIS(ch) + GET_C_DEX(ch)) / 2))
-	{
+      if(number(1, 160) < ((GET_C_WIS(ch) + GET_C_DEX(ch)) / 2))
+      {
         potion = read_object(potion_data[i].vnum, VIRTUAL);
         potion->value[0] = GET_LEVEL(ch);
         act("You've &+Wcreated&n $p.", FALSE, ch, potion, 0, TO_CHAR);
         sprintf(gbuf2, "%s %s", GET_NAME(ch), potion->name);
         potion->name = str_dup(gbuf2);
-	 sprintf(buffer, "%s mixed by %s", potion->short_description, GET_NAME(ch));
-	 set_short_description(potion, buffer);
+        sprintf(buffer, "%s mixed by %s", potion->short_description, GET_NAME(ch));
+        set_short_description(potion, buffer);
         obj_to_char(potion, ch);
        }
         else
        {
         act("&+RYou clumsily spill your ingredients everywhere, ruining your creation!", FALSE, ch, 0, 0, TO_CHAR);
        }
-        extract_obj(bottle, TRUE);
+        extract_obj(bottle);
 
         if(number(0, 5))
         {
@@ -813,8 +813,7 @@ void do_encrust(P_char ch, char *argument, int cmd)
 
   if(isname("encrust", item->name))
   {
-    act("You may not further encrust this item.",
-      FALSE, ch, 0, 0, TO_CHAR);
+    act("You may not further encrust this item.", FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
 
@@ -863,8 +862,8 @@ void do_encrust(P_char ch, char *argument, int cmd)
   {
     act("You broke your item in the process.", FALSE, ch, 0, 0, TO_CHAR);
     act("...and breaks it in the process.", TRUE, ch, 0, 0, TO_ROOM);
-    extract_obj(item, TRUE);
-    extract_obj(jewel, TRUE);
+    extract_obj(item);
+    extract_obj(jewel);
     wizlog(56, "and ruined it in the process...");
     return;
   }
@@ -922,8 +921,8 @@ void do_encrust(P_char ch, char *argument, int cmd)
   set_keywords(new_item, buf1);
 
   set_encrust_affect(new_item, jewel->value[6]);
-  extract_obj(item, TRUE);
-  extract_obj(jewel, TRUE);
+  extract_obj(item);
+  extract_obj(jewel);
   obj_to_char(new_item, ch);
 
   return;
@@ -1051,20 +1050,18 @@ void do_fix(P_char ch, char *argument, int cmd)
   }
   P_obj needed = read_object(imat, VIRTUAL);
   if (i < 1)
-   {
+  {
     sprintf(gbuf1, "You must have %s in your inventory to repair that item.\r\n", needed->short_description);
     send_to_char(gbuf1, ch);
-    extract_obj(needed, TRUE);
+    extract_obj(needed);
     return;
-   }
-    extract_obj(needed, TRUE);
+  }
+  extract_obj(needed);
   //endmaterial check
 
   if(skill > number(0, 105))
   {
-
-    act("$N fiddles with $p, fixing it quickly!", TRUE, ch, item, ch,
-        TO_ROOM);
+    act("$N fiddles with $p, fixing it quickly!", TRUE, ch, item, ch, TO_ROOM);
     act("You fiddle with $p, fixing it quickly!", TRUE, ch, item, 0, TO_CHAR);
     item->condition = 100 - number(0, 10);
   }
@@ -1085,21 +1082,20 @@ void do_fix(P_char ch, char *argument, int cmd)
           item, 0, TO_CHAR);
     }
   }
-    int done;
- while(done < 1)
+  int done = 0;
+  while(done < 1)
+  {
+    for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
     {
-     for (t_obj = ch->carrying; t_obj; t_obj = nextobj)
-     {
       nextobj = t_obj->next_content;
-  
-       if(GET_OBJ_VNUM(t_obj) == imat)
-       {
-         obj_from_char(t_obj, TRUE);
-         done++;
-       }
-
+      if(GET_OBJ_VNUM(t_obj) == imat)
+      {
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
+        done++;
       }
     }
+  }
 }
 
 P_obj check_furnace(P_char ch)
@@ -1134,29 +1130,40 @@ void do_smelt(P_char ch, char *arg, int cmd)
 
     first_obj = furnace->contains;
 
-    if(!first_obj) { // Nothing inside!
+    // Nothing inside!
+    if(!first_obj || IS_ARTIFACT(first_obj) )
+    {
       act("&+LNothing seems to happen!&n", FALSE, ch, 0, 0, TO_CHAR);
       return;
     }
 
     second_obj = first_obj->next_content;
 
-    if(!second_obj) { // There is only 1 items inside, destroy it!
-      extract_obj(first_obj, TRUE);
+    // There is only 1 items inside, destroy it!
+    if(!second_obj)
+    {
+      extract_obj(first_obj);
       act("&+LThe furnace roars with activity!&n", FALSE, ch, 0, 0, TO_CHAR);
       act("&+LYou destroy everything in the furnace!&n", FALSE, ch, 0, 0, TO_CHAR);
       act("&+L$p &+Lmakes a roaring sound!&n", FALSE, 0, furnace, 0, TO_ROOM);
       ash = read_object(2670, VIRTUAL);
-                obj_to_obj(ash, furnace);
+      obj_to_obj(ash, furnace);
       return;
     }
-
-    else if(second_obj->next_content) { // There is more than 2 items inside
-      act("&+LThe furnace is to full to operate.&n", FALSE, ch, 0, 0, TO_CHAR);
+    // There is more than 2 items inside
+    else if(second_obj->next_content)
+    {
+      act("&+LThe furnace is too full to operate.&n", FALSE, ch, 0, 0, TO_CHAR);
       return;
     }
-
-    else { // 2 items inside
+    else if( IS_ARTIFACT(second_obj) )
+    {
+      act("&+LNothing seems to happen!&n", FALSE, ch, 0, 0, TO_CHAR);
+      return;
+    }
+    // 2 items inside
+    else
+    {
 
       new_obj = NULL;
 
@@ -1230,8 +1237,8 @@ void do_smelt(P_char ch, char *arg, int cmd)
             }
       }
 
-      extract_obj(first_obj, TRUE);
-      extract_obj(second_obj, TRUE);
+      extract_obj(first_obj);
+      extract_obj(second_obj);
       obj_to_obj(new_obj, furnace);
 
       act("&+LThe furnace hums with activity!&n", FALSE, ch, 0, 0, TO_CHAR);
@@ -1375,8 +1382,8 @@ int thrusted_eq_proc(P_obj obj, P_char ch, int cmd, char *arg)
 
     if( !found )
     {
-      act("$p &+Gmagical &+Yaura&+G slowly dissipates away", FALSE, 0, obj, 0, TO_ROOM);
-      extract_obj(obj, TRUE);
+      act("$p's &+Gmagical &+Yaura&+G slowly dissipates away", FALSE, 0, obj, 0, TO_ROOM);
+      extract_obj(obj, TRUE); // A random eq arti?
       return FALSE;
     }
     act("$p &+Wwhispers softly...", FALSE, i, obj, 0, TO_CHAR);
@@ -1613,7 +1620,7 @@ void event_enchant(P_char ch, P_char victim, P_obj item, void *data)
   tmp = *((spell_target_data *) data);
   spll = tmp.ttype;
   item = tmp.t_obj;
-  
+
   if(!(ch))
   {
     logit(LOG_EXIT, "event_enchant called in alchemist.c without ch");
@@ -1626,8 +1633,7 @@ void event_enchant(P_char ch, P_char victim, P_obj item, void *data)
       act("The dead do not enchant things!", FALSE, ch, 0, 0, TO_CHAR);
       return;
     }
-    if(!item ||
-      ch != item->loc.carrying)
+    if(!item || ch != item->loc.carrying)
     {
       act("You lost the item! Where is it?", FALSE, ch, 0, 0, TO_CHAR);
       act("$n suddenly stops abruptly, looking around in anger.", TRUE, ch, 0,
@@ -1646,23 +1652,21 @@ void event_enchant(P_char ch, P_char victim, P_obj item, void *data)
     skill = GET_CHAR_SKILL(ch, SKILL_ENCHANT);
     if(!number(0, skill - 10))
     {
-      act
-        ("$n utters a foul curse as $e pours too much acid on $q.&L$n's $q was damaged as the acid eats into it!",
+      act("$n utters a foul curse as $e pours too much acid on $q.&L$n's $q was damaged as the acid eats into it!",
         FALSE, ch, item, 0, TO_ROOM);
-      act
-        ("You utter a foul curse as you pour too much acid on the $q.&LYour $q was damaged as the acid eats into it!",
+      act("You utter a foul curse as you pour too much acid on the $q.&LYour $q was damaged as the acid eats into it!",
         FALSE, ch, item, 0, TO_CHAR);
       item->condition = item->condition - number(5, 10);
-      
+
       if(item->condition < 1)
       {
         act("$n has destroyed $p!", TRUE, ch, item, 0, TO_ROOM);
         act("You have destroyed $p!", TRUE, ch, item, 0, TO_CHAR);
-        extract_obj(item, TRUE);
+        extract_obj(item, TRUE); // Not an arti, but ok.
         item = NULL;
         return;
       }
-      
+
       if(!number(0, 5))
       {
         act("$q &+yglows bright and eerie!&n", FALSE, ch, item, 0, TO_ROOM);

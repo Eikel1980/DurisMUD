@@ -25,7 +25,7 @@
 #include "necromancy.h"
 #include "sql.h"
 #include "ctf.h"
-
+#include "tradeskill.h"
 
 /*
  * external variables
@@ -278,7 +278,7 @@ void get(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
           act("$n gets $p.", 1, ch, o_obj, 0, TO_ROOM);
       }
       send_to_char(Gbuf3, ch);
-      extract_obj(o_obj, FALSE);
+      extract_obj(o_obj);
       o_obj = NULL;
     }
 
@@ -507,7 +507,7 @@ void do_get(P_char ch, char *argument, int cmd)
            continue; */
 
         if( (IS_CARRYING_N(ch) + 1) <= CAN_CARRY_N(ch) ||
-          ( (GET_OBJ_VNUM(o_obj) > 400000) && (GET_OBJ_VNUM(o_obj) < 400211)) )
+          ( (GET_OBJ_VNUM(o_obj) > LOWEST_MAT_VNUM) && (GET_OBJ_VNUM(o_obj) <= HIGHEST_MAT_VNUM)) )
         {
           if ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <= CAN_CARRY_W(ch))
           {
@@ -578,7 +578,7 @@ void do_get(P_char ch, char *argument, int cmd)
        */
 
       if( IS_CARRYING_N(ch) < CAN_CARRY_N(ch)
-        || ((GET_OBJ_VNUM(o_obj) > 400000) && (GET_OBJ_VNUM(o_obj) < 400211)) )
+        || ((GET_OBJ_VNUM(o_obj) > LOWEST_MAT_VNUM) && (GET_OBJ_VNUM(o_obj) <= HIGHEST_MAT_VNUM)) )
       {
         if( (IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <= CAN_CARRY_W(ch) )
         {
@@ -601,8 +601,7 @@ void do_get(P_char ch, char *argument, int cmd)
               }
               else
               {
-                send_to_char
-                  ("Looting of player corpses requires consent.\r\n", ch);
+                send_to_char("Looting of player corpses requires consent.\r\n", ch);
                 return;
               }
             }
@@ -707,66 +706,55 @@ void do_get(P_char ch, char *argument, int cmd)
            * something from a container in your inv, in spite of
            * weight -JAB
            */
-          if (CAN_SEE_OBJ(ch, o_obj))
+          if( CAN_SEE_OBJ(ch, o_obj) )
           {
-            if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch) ||   
-           ((GET_OBJ_VNUM(o_obj) > 400000) &&
-	   (GET_OBJ_VNUM(o_obj) < 400211) ))
+            if( IS_CARRYING_N(ch) < CAN_CARRY_N(ch)
+              || ((GET_OBJ_VNUM(o_obj) >= LOWEST_MAT_VNUM) && (GET_OBJ_VNUM(o_obj) <= HIGHEST_MAT_VNUM) ))
             {
-              if (((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <
-                   CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj))
+              if( ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) < CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj) )
               {
-                if( CAN_WEAR(o_obj, ITEM_TAKE)
-                  || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
+                if( CAN_WEAR(o_obj, ITEM_TAKE) || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
                 {
-                  if ((GET_ITEM_TYPE(o_obj) == ITEM_CORPSE) &&
-                      IS_SET(o_obj->value[1], PC_CORPSE))
+                  if( (GET_ITEM_TYPE(o_obj) == ITEM_CORPSE) && IS_SET(o_obj->value[1], PC_CORPSE) )
                   {
-                    logit(LOG_CORPSE, "%s%s: corpse of %s from %s",
-                          GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
-                          o_obj->action_description, s_obj->name);
+                    logit(LOG_CORPSE, "%s%s: corpse of %s from %s", GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
+                      o_obj->action_description, s_obj->name);
                   }
-                  else if (corpse_flag && o_obj)
+                  else if( corpse_flag && o_obj )
                   {
-                    if (o_obj->type == ITEM_MONEY)
+                    if( o_obj->type == ITEM_MONEY )
                     {
                       logit(LOG_CORPSE, "%s%s: %dp, %dg, %ds, %dc from %s",
-                        GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
-                        o_obj->value[3], o_obj->value[2], o_obj->value[1],
-                        o_obj->value[0], s_obj->action_description);
+                        GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood), o_obj->value[3], o_obj->value[2],
+                        o_obj->value[1], o_obj->value[0], s_obj->action_description);
                     }
                     else
                     {
                       if( CAN_WEAR(o_obj, ITEM_WEAR_IOUN) || IS_ARTIFACT(o_obj) )
                       {
-                        logit(LOG_CORPSE, "%s%s: %s [%d] (ARTIFACT) from %s",
-                              GET_NAME(ch),
-                              (hood == ch) ? "" : GET_NAME(hood), o_obj->name,
-                              obj_index[o_obj->R_num].virtual_number,
-                              s_obj->action_description);
+                        logit(LOG_CORPSE, "%s%s: %s [%d] (ARTIFACT) from %s", GET_NAME(ch),
+                          (hood == ch) ? "" : GET_NAME(hood),
+                          o_obj->name, obj_index[o_obj->R_num].virtual_number, s_obj->action_description);
 
                         act("$n gets $P from $p.", 0, ch, s_obj, o_obj, TO_ROOM);
 
-                        //if((GET_LEVEL(ch) > 44) && (s_obj->value[2] > 44)) {
-                        if ((s_obj->value[5] != 0) &&
-                            ((RACE_GOOD(ch) && (s_obj->value[5] != 1)) ||
-                             (RACE_EVIL(ch) && (s_obj->value[5] != 2)) ||
-                             (RACE_PUNDEAD(ch) && (s_obj->value[5] != 3))))
+                        // If the artifact was picked up across racewar lines.
+                        if( (s_obj->value[5] != RACEWAR_NONE) && (GET_RACEWAR(ch) != s_obj->value[5]) )
                         {
                           int vnum = GET_OBJ_VNUM(o_obj);
                           int owner_pid = -1;
                           int timer = time(NULL);
+                          // This sets the 'soul' of the artifact to the new owner.
                           sql_update_bind_data(vnum, &owner_pid, &timer);
-                          artifact_feed_to_min( o_obj, 2 * MINS_PER_REAL_DAY );
+                          // Feed artifact to at least the minimum for across racewar sides.
+                          artifact_feed_to_min_sql( o_obj, 2 * MINS_PER_REAL_DAY );
                         }
                       }
                       else
                       {
-                        logit(LOG_CORPSE, "%s%s: %s [%d] from %s",
-                              GET_NAME(ch),
-                              (hood == ch) ? "" : GET_NAME(hood), o_obj->name,
-                              obj_index[o_obj->R_num].virtual_number,
-                              s_obj->action_description);
+                        logit(LOG_CORPSE, "%s%s: %s [%d] from %s", GET_NAME(ch),
+                          (hood == ch) ? "" : GET_NAME(hood), o_obj->name, obj_index[o_obj->R_num].virtual_number,
+                          s_obj->action_description);
 
                         act("$n gets $P from $p.", 0, ch, s_obj, o_obj, TO_ROOM);
 
@@ -819,16 +807,14 @@ void do_get(P_char ch, char *argument, int cmd)
                 }
                 else
                 {
-                  sprintf(Gbuf3, "%s isn't takeable.\r\n",
-                          o_obj->short_description);
+                  sprintf(Gbuf3, "%s isn't takeable.\r\n", o_obj->short_description);
                   send_to_char(Gbuf3, ch);
                   fail = TRUE;
                 }
               }
               else
               {
-                sprintf(Gbuf3, "%s is too heavy.\r\n",
-                        o_obj->short_description);
+                sprintf(Gbuf3, "%s is too heavy.\r\n", o_obj->short_description);
                 send_to_char(Gbuf3, ch);
                 fail = TRUE;
               }
@@ -847,8 +833,7 @@ void do_get(P_char ch, char *argument, int cmd)
         }
         if (!total && !fail)
         {
-          sprintf(Gbuf3, "%s appears to be empty.\r\n",
-                  s_obj->short_description);
+          sprintf(Gbuf3, "%s appears to be empty.\r\n", s_obj->short_description);
           send_to_char(Gbuf3, ch);
           fail = TRUE;
         }
@@ -857,13 +842,11 @@ void do_get(P_char ch, char *argument, int cmd)
         else if ((total > 1) && (total < 6))
           act("$n gets some stuff from $p.", TRUE, ch, s_obj, 0, TO_ROOM);
         else if (total > 5)
-          act("$n gets a bunch of stuff from $p.",
-              TRUE, ch, s_obj, 0, TO_ROOM);
+          act("$n gets a bunch of stuff from $p.", TRUE, ch, s_obj, 0, TO_ROOM);
       }
       else
       {
-        sprintf(Gbuf3, "%s is not a container.\r\n",
-                s_obj->short_description);
+        sprintf(Gbuf3, "%s is not a container.\r\n", s_obj->short_description);
         send_to_char(Gbuf3, ch);
         fail = TRUE;
       }
@@ -879,8 +862,7 @@ void do_get(P_char ch, char *argument, int cmd)
     /* get ??? all */
   if(type == 5)
   {
-    send_to_char("You can't take things from two or more containers.\r\n",
-                 ch);
+    send_to_char("You can't take things from two or more containers.\r\n", ch);
   }
 
     /* get ??? ??? */
@@ -912,9 +894,7 @@ void do_get(P_char ch, char *argument, int cmd)
 
         if( IS_FIGHTING(ch) || IS_DESTROYING(ch) )
         {
-          send_to_char
-            ("You're too busy fighting to be pulling things out of bags!\r\n",
-             ch);
+          send_to_char("You're too busy fighting to be pulling things out of bags!\r\n", ch);
           return;
         }
 
@@ -941,68 +921,51 @@ void do_get(P_char ch, char *argument, int cmd)
           o_obj = get_obj_in_list_vis(ch, arg1, s_obj->contains);
         if (o_obj)
         {
-          if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch) ||   
-           ((GET_OBJ_VNUM(o_obj) > 400000) &&
-	   (GET_OBJ_VNUM(o_obj) < 400211) ))
+          if (IS_CARRYING_N(ch) < CAN_CARRY_N(ch)
+            || ((GET_OBJ_VNUM(o_obj) >= LOWEST_MAT_VNUM) && (GET_OBJ_VNUM(o_obj) <= HIGHEST_MAT_VNUM) ))
           {
-            if (((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) <
-                 CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj))
+            if( ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(o_obj)) < CAN_CARRY_W(ch)) || OBJ_CARRIED(s_obj) )
             {
-              if( CAN_WEAR(o_obj, ITEM_TAKE)
-                || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
+              if( CAN_WEAR(o_obj, ITEM_TAKE) || ((GET_LEVEL(ch) >= 60) && !IS_NPC(ch)) )
               {
-                /*
-                 * SAM 7-94 log corpse looting of
-                 * player
-                 */
-                if((GET_ITEM_TYPE(o_obj) == ITEM_CORPSE) &&
-                  IS_SET(o_obj->value[1], PC_CORPSE))
+                // SAM 7-94 log corpse looting of player
+                if( (GET_ITEM_TYPE(o_obj) == ITEM_CORPSE) && IS_SET(o_obj->value[1], PC_CORPSE) )
                 {
-                  logit(LOG_CORPSE, "%s%s: corpse of %s from %s",
-                        GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
-                        o_obj->action_description, s_obj->name);
+                  logit(LOG_CORPSE, "%s%s: corpse of %s from %s", GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
+                    o_obj->action_description, s_obj->name);
                 }
-                else if (corpse_flag && o_obj)
+                else if( corpse_flag && o_obj )
                 {
-                  if (GET_ITEM_TYPE(o_obj) == ITEM_MONEY)
+                  if( GET_ITEM_TYPE(o_obj) == ITEM_MONEY )
                   {
-                    logit(LOG_CORPSE, "%s%s: %dp, %dg, %ds, %dc from %s",
-                          GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
-                          o_obj->value[3], o_obj->value[2], o_obj->value[1],
-                          o_obj->value[0], s_obj->action_description);
+                    logit(LOG_CORPSE, "%s%s: %dp, %dg, %ds, %dc from %s", GET_NAME(ch),
+                      (hood == ch) ? "" : GET_NAME(hood), o_obj->value[3], o_obj->value[2],
+                      o_obj->value[1], o_obj->value[0], s_obj->action_description);
                   }
                   else
                   {
-                    if( CAN_WEAR(o_obj, ITEM_WEAR_IOUN) || IS_ARTIFACT(o_obj))
+                    if( CAN_WEAR(o_obj, ITEM_WEAR_IOUN) || IS_ARTIFACT(o_obj) )
                     {
-                      logit(LOG_CORPSE, "%s %s: %s [%d] (ARTIFACT) from %s",
-                            GET_NAME(ch),
-                            (hood == ch) ? "" : GET_NAME(hood), o_obj->name,
-                            obj_index[o_obj->R_num].virtual_number,
-                            s_obj->action_description);
-                      //if((GET_LEVEL(ch) > 44) && (s_obj->value[2] > 44)) {
-                      if ((s_obj->value[5] != 0) &&
-                          ((RACE_GOOD(ch) && (s_obj->value[5] != 1)) ||
-                           (RACE_EVIL(ch) && (s_obj->value[5] != 2)) ||
-                           (RACE_PUNDEAD(ch) && (s_obj->value[5] != 3))))
+                      logit(LOG_CORPSE, "%s %s: %s [%d] (ARTIFACT) from %s", GET_NAME(ch),
+                        (hood == ch) ? "" : GET_NAME(hood), o_obj->name,
+                        obj_index[o_obj->R_num].virtual_number, s_obj->action_description);
+                      // If the artifact was picked up across racewar lines.
+                      if( (s_obj->value[5] != RACEWAR_NONE) && (GET_RACEWAR(ch) != s_obj->value[5]) )
                       {
                         int vnum = GET_OBJ_VNUM(o_obj);
                         int owner_pid = -1;
                         int timer = time(NULL);
                         sql_update_bind_data(vnum, &owner_pid, &timer);
-                        artifact_feed_to_min( o_obj, 2 * MINS_PER_REAL_DAY );
+                        artifact_feed_to_min_sql( o_obj, 2 * MINS_PER_REAL_DAY );
                       }
                     }
                     else
-                    { // No
-                      logit(LOG_CORPSE, "%s%s: %s [%d] from %s",
-                            GET_NAME(ch),
-                            (hood == ch) ? "" : GET_NAME(hood), o_obj->name,
-                            obj_index[o_obj->R_num].virtual_number,
-                            s_obj->action_description);
+                    {
+                      logit(LOG_CORPSE, "%s%s: %s [%d] from %s", GET_NAME(ch), (hood == ch) ? "" : GET_NAME(hood),
+                        o_obj->name, obj_index[o_obj->R_num].virtual_number, s_obj->action_description);
                     }
                   }
-                  if (!IS_TRUSTED(ch))
+                  if( !IS_TRUSTED(ch) )
                   {
                     CharWait(ch, PULSE_VIOLENCE);
                   }
@@ -1118,8 +1081,7 @@ void do_junk(P_char ch, char *argument, int cmd)
 
   argument = one_argument(argument, Gbuf1);
 
-  if(!IS_TRUSTED(ch) ||
-    !(ch))
+  if( !IS_ALIVE(ch) || !IS_TRUSTED(ch) )
   {
     return;
   }
@@ -1186,14 +1148,19 @@ void do_junk(P_char ch, char *argument, int cmd)
       {
         next_obj = tmp_object->next_content;
 
+        if( IS_ARTIFACT(tmp_object) )
+        {
+          act("But $p is not junk!", 1, ch, tmp_object, 0, TO_CHAR);
+          continue;
+        }
+
         if (!IS_SET(tmp_object->extra_flags, ITEM_NODROP) || IS_TRUSTED(ch))
         {
           if (!IS_SET(tmp_object->extra_flags, ITEM_TRANSIENT))
           {
             if (CAN_SEE_OBJ(ch, tmp_object))
             {
-              sprintf(Gbuf3, "You junk a %s.\r\n",
-                      FirstWord(tmp_object->name));
+              sprintf(Gbuf3, "You junk %s&n.\r\n", OBJ_SHORT(tmp_object));
               send_to_char(Gbuf3, ch);
               act("You are awarded for outstanding performance in recycling.",
                   FALSE, ch, 0, 0, TO_CHAR);
@@ -1208,22 +1175,38 @@ void do_junk(P_char ch, char *argument, int cmd)
           }
           else
           {
-            sprintf(Gbuf3, "The %s dissolves with a blinding light.\r\n",
-                    FirstWord(tmp_object->name));
-            for (t_ch = world[ch->in_room].people;
-                 t_ch; t_ch = t_ch->next_in_room)
+            sprintf(Gbuf3, "%s dissolves with a blinding light.\r\n", OBJ_SHORT(tmp_object));
+            // Capitalize the first non-ansi char.
+            if( *Gbuf3 != '&' )
             {
-              if (CAN_SEE_OBJ(t_ch, tmp_object))
+              CAP( Gbuf3 );
+            }
+            else if( LOWER(*(Gbuf3+1)) == 'n' )
+            {
+              CAP( (Gbuf3+2) );
+            }
+            else if( *(Gbuf3+1) == '-' || *(Gbuf3+1) == '+' )
+            {
+              CAP( (Gbuf3+3) );
+            }
+            else if( *(Gbuf3+1) == '=' )
+            {
+              CAP( (Gbuf3+4) );
+            }
+
+            for (t_ch = world[ch->in_room].people; t_ch; t_ch = t_ch->next_in_room)
+            {
+              if( CAN_SEE_OBJ(t_ch, tmp_object) )
                 send_to_char(Gbuf3, t_ch);
             }
-            extract_obj(tmp_object, TRUE);
+            extract_obj(tmp_object, TRUE); // Just in case someone enables junking artis.
             tmp_object = NULL;
             test = TRUE;
             continue;
           }
           act("$n junks $p.", 1, ch, tmp_object, 0, TO_ROOM);
-          obj_from_char(tmp_object, TRUE);
-          extract_obj(tmp_object, TRUE);
+          obj_from_char(tmp_object);
+          extract_obj(tmp_object, TRUE); // Just in case someone enables junking artis.
           tmp_object = NULL;
           GET_SILVER(ch) += 1;
           test = TRUE;
@@ -1238,9 +1221,8 @@ void do_junk(P_char ch, char *argument, int cmd)
             test = TRUE;
           }
         }
-      }                         /*
-                                 * (!str_cmp(Gbuf1, "all"))
-                                 */
+      }
+      // (!str_cmp(Gbuf1, "all"))
       if (!test)
       {
         send_to_char("You do not seem to have anything.\r\n", ch);
@@ -1251,6 +1233,11 @@ void do_junk(P_char ch, char *argument, int cmd)
       tmp_object = get_obj_in_list_vis(ch, Gbuf1, ch->carrying);
       if (tmp_object)
       {
+        if( IS_ARTIFACT(tmp_object) )
+        {
+          act("But $p is not junk!", 1, ch, tmp_object, 0, TO_CHAR);
+          return;
+        }
         if (!IS_SET(tmp_object->extra_flags, ITEM_NODROP) || IS_TRUSTED(ch))
         {
           if (!IS_SET(tmp_object->extra_flags, ITEM_TRANSIENT))
@@ -1258,21 +1245,19 @@ void do_junk(P_char ch, char *argument, int cmd)
             sprintf(Gbuf3, "You junk a %s.\r\n", FirstWord(tmp_object->name));
             send_to_char(Gbuf3, ch);
             act("$n junks $p.", 1, ch, tmp_object, 0, TO_ROOM);
-            extract_obj(tmp_object, TRUE);
+            extract_obj(tmp_object, TRUE); // Just in case someone enables junking artis.
             tmp_object = NULL;
             GET_SILVER(ch) += 1;
           }
           else
           {
-            sprintf(Gbuf3, "The %s dissolves with a blinding light.\r\n",
-                    FirstWord(tmp_object->name));
-            for (t_ch = world[ch->in_room].people;
-                 t_ch; t_ch = t_ch->next_in_room)
+            sprintf(Gbuf3, "The %s dissolves with a blinding light.\r\n", FirstWord(tmp_object->name));
+            for( t_ch = world[ch->in_room].people; t_ch; t_ch = t_ch->next_in_room )
             {
               if (CAN_SEE_OBJ(t_ch, tmp_object))
                 send_to_char(Gbuf3, t_ch);
             }
-            extract_obj(tmp_object, TRUE);
+            extract_obj(tmp_object, TRUE); // Just in case someone enables junking artis.
             /*
              * added by DTS 5/18/95 to solve light bug
              */
@@ -1367,7 +1352,7 @@ void do_dropalldot(P_char ch, char *name, int cmd)
     if (isname(name, tmp_object->name))
       if (!IS_SET(tmp_object->extra_flags, ITEM_NODROP) || IS_TRUSTED(ch))
       {
-        obj_from_char(tmp_object, TRUE);
+        obj_from_char(tmp_object);
         obj_to_room(tmp_object, ch->in_room);
         total++;
         if (IS_TRUSTED(ch))
@@ -1600,7 +1585,7 @@ void do_drop(P_char ch, char *argument, int cmd)
             send_to_char("You drop something.\r\n", ch);
           }
           act("$n drops $p.", 1, ch, tmp_object, 0, TO_ROOM);
-          obj_from_char(tmp_object, TRUE);
+          obj_from_char(tmp_object);
           if (IS_TRUSTED(ch))
           {
             wizlog(GET_LEVEL(ch), "%s drops %s [%d].",
@@ -1658,7 +1643,7 @@ void do_drop(P_char ch, char *argument, int cmd)
           sprintf(Gbuf3, "You drop %s.\r\n", tmp_object->short_description);
           send_to_char(Gbuf3, ch);
           act("$n drops $p.", 0, ch, tmp_object, 0, TO_ROOM);
-          obj_from_char(tmp_object, TRUE);
+          obj_from_char(tmp_object);
           if (IS_TRUSTED(ch))
           {
             wizlog(GET_LEVEL(ch), "%s drops %s [%d]",
@@ -1828,9 +1813,8 @@ void do_put(P_char ch, char *argument, int cmd)
     obj_to_char(o_obj, ch);
     if (count = put(ch, o_obj, s_obj, TRUE))
     {
-      sprintf(buf,
-              "You put %d &+Wplatinum&n, %d &+Ygold&n, %d silver, and %d &+ycopper&n coins into $P.",
-              plat, gold, silv, copp);
+      sprintf(buf, "You put %d &+Wplatinum&n, %d &+Ygold&n, %d silver, and %d &+ycopper&n coins into $P.",
+        plat, gold, silv, copp);
       act(buf, TRUE, ch, 0, s_obj, TO_CHAR);
       ch->points.cash[3] -= plat;
       ch->points.cash[2] -= gold;
@@ -1839,13 +1823,13 @@ void do_put(P_char ch, char *argument, int cmd)
       if (tmp_obj)
       {
         GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
-        extract_obj(tmp_obj, TRUE);
+        extract_obj(tmp_obj);
         GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(s_obj);
       }
     }
     else
     {
-      extract_obj(o_obj, TRUE);
+      extract_obj(o_obj);
     }
   }
 
@@ -1985,7 +1969,7 @@ bool put(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
              * carrying the objects weight, this is most likely a
              * really ancient bug -JAB
              */
-            obj_from_char(o_obj, TRUE);
+            obj_from_char(o_obj);
             if (OBJ_CARRIED(s_obj))
               GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
             obj_to_obj(o_obj, s_obj);
@@ -2084,7 +2068,7 @@ bool put(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
                * carrying the objects weight, this is most likely a
                * really ancient bug -JAB
                */
-              obj_from_char(o_obj, TRUE);
+              obj_from_char(o_obj);
               if (OBJ_CARRIED(s_obj))
                 GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
               obj_to_obj(o_obj, s_obj);
@@ -2357,7 +2341,7 @@ void do_give(P_char ch, char *argument, int cmd)
     wizlog( 56, "%s tried to give %s to %s.", ch->player.name, obj->short_description, vict->player.name );
     return;
   }
-  obj_from_char(obj, TRUE);
+  obj_from_char(obj);
   act("$n gives $p to $N.", 1, ch, obj, vict, TO_NOTVICT);
   act("$n gives you $p.", 0, ch, obj, vict, TO_VICT);
   send_to_char("Ok.\r\n", ch);
@@ -2402,7 +2386,7 @@ void weight_change_object(P_obj obj, int weight)
   else if (OBJ_CARRIED(obj))
   {
     tmp_ch = obj->loc.carrying;
-    obj_from_char(obj, TRUE);
+    obj_from_char(obj);
     obj->weight += weight;
     obj_to_char(obj, tmp_ch);
   }
@@ -2672,14 +2656,12 @@ void do_drink(P_char ch, char *argument, int cmd)
       /* If it is .. it needs to vanish.  The way to do that is */
       /* to force player to drop object */
 
-      if (temp->value[1] <= 0 &&
-          IS_SET(temp->extra_flags, ITEM_TRANSIENT) && own_object)
+      if (temp->value[1] <= 0 && IS_SET(temp->extra_flags, ITEM_TRANSIENT) && own_object)
       {
 
-        act("The empty $q vanishes into thin air.\r\n", TRUE, ch, temp, 0,
-            TO_CHAR);
-        obj_from_char(temp, TRUE);
-        extract_obj(temp, TRUE);
+        act("The empty $q vanishes into thin air.\r\n", TRUE, ch, temp, 0, TO_CHAR);
+        obj_from_char(temp);
+        extract_obj(temp, TRUE); // Hmm, a transient drink container artifact?
       }
       return;
     }
@@ -2694,21 +2676,43 @@ void do_drink(P_char ch, char *argument, int cmd)
 void do_eat(P_char ch, char *argument, int cmd)
 {
   P_obj    temp;
-  char     Gbuf4[MAX_STRING_LENGTH];
+  char     Gbuf1[MAX_STRING_LENGTH];
+  bool     updateArtiList;
 
-  one_argument(argument, Gbuf4);
+  argument = one_argument(argument, Gbuf1);
 
-  if (GET_RACE(ch) == RACE_ILLITHID && GET_LEVEL(ch) < AVATAR)
+  if (GET_RACE(ch) == RACE_ILLITHID && !IS_TRUSTED(ch) )
   {
-    send_to_char
-      ("Ugh. Even if you had the means to eat, the thought revolts you.\r\n",
-       ch);
+    send_to_char("Ugh. Even if you had the means to eat, the thought revolts you.\r\n", ch);
     return;
   }
-  if (!(temp = get_obj_in_list_vis(ch, Gbuf4, ch->carrying)))
+
+  if (!(temp = get_obj_in_list_vis(ch, Gbuf1, ch->carrying)))
   {
     act("You can't find it!", FALSE, ch, 0, 0, TO_CHAR);
     return;
+  }
+
+  // We need some sort of confirmation as to what to do here.
+  if( IS_ARTIFACT(temp) && IS_TRUSTED(ch) )
+  {
+    argument = skip_spaces(argument);
+    if( !strcmp(argument, "update") )
+    {
+      updateArtiList = TRUE;
+    }
+    else if( !strcmp(argument, "noupdate") )
+    {
+      updateArtiList = FALSE;
+    }
+    else
+    {
+      send_to_char( "&+YIn order to eat an artifact, you must specify '&+wupdate&+Y' or '&+wnoupdate&+Y'"
+        " as to whether or not to update the artifact list.  If you don't know which to choose, you're"
+        " better off handing it to another Immortal who knows.  The reason for this is to figure out if"
+        " the artifact is duplicated or if it's being pulled from a char for some reason, etc.&n\n\r", ch );
+      return;
+    }
   }
 
   if ((temp->type != ITEM_FOOD) && (GET_LEVEL(ch) < AVATAR))
@@ -2740,18 +2744,18 @@ void do_eat(P_char ch, char *argument, int cmd)
     return;
   }
 
-  if( (temp->value[1] < 0 || (temp->timer[0] && (time(NULL) - temp->timer[0] > 1 * 60 * 10)) )
-    && !IS_TRUSTED(ch) )
+  if( (temp->value[1] < 0 || (temp->timer[0] && (time(NULL) - temp->timer[0] > 1 * 60 * 10)) ) && !IS_TRUSTED(ch) )
   {
     act("That stinks, find some fresh food instead.", FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
 
-    /* special handling: value[5] specifies special functions for epic food */
+  /* special handling: value[5] specifies special functions for epic food */
   int oaffect;
   oaffect = (temp->value[5]);
   if(oaffect > 0)
   {
+    // What slacker did this instead of writing a real object proc that captures CMD_EAT?
     if(oaffect == 1337) //+1 level mushroom
     {
       if( (GET_LEVEL(ch) > 45) || (GET_RACE(ch) == RACE_PLICH) )
@@ -2765,7 +2769,7 @@ void do_eat(P_char ch, char *argument, int cmd)
         GET_NAME(ch), (ch->in_room == NOWHERE) ? -1 : world[ch->in_room].number);
       advance_level(ch);
       do_save_silent(ch, 1);
-      extract_obj(temp, TRUE);
+      extract_obj(temp);
       return;
     }
   }
@@ -2862,10 +2866,9 @@ void do_eat(P_char ch, char *argument, int cmd)
        }
      */
   }
-  extract_obj(temp, !IS_TRUSTED(ch));
-  /*
-   * added by DTS 5/18/95 to solve light bug
-   */
+
+  extract_obj(temp); // Important not to kill arti-data, as only Immortals eat artifacts.
+  // Added by DTS 5/18/95 to solve light bug
   char_light(ch);
   room_light(ch->in_room, REAL);
 }
@@ -3553,7 +3556,7 @@ void execute_wear(P_char ch, P_obj obj_object, int position, int keyword, bool s
 {
   if (showit) // Show the Object Wear?
     perform_wear(ch, obj_object, keyword);
-  obj_from_char(obj_object, true);
+  obj_from_char(obj_object);
   equip_char(ch, obj_object, position, !showit);
 }
 
@@ -3651,7 +3654,7 @@ int remove_and_wear(P_char ch, P_obj obj_object, int position, int keyword, int 
  * remove_and_wear() should be called following a RETURN statement
  * [ie. return remove_and_wear()]. -Sniktiorg (Dec.12.12)
  */
-int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
+int wear(P_char ch, P_obj obj_object, int keyword, bool showit )
 {
   char     Gbuf3[MAX_STRING_LENGTH];
   int      free_hands, wield_to_where, o_size, hands_needed, comnd;
@@ -3685,12 +3688,11 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
     if(obj_object->affected[i].location >= 41 &&
       obj_object->affected[i].location <= 50)
     {
-      wizlog(56, "%s has MAX_RACE item : %s",
-        GET_NAME(ch), obj_object->short_description);
+      wizlog(56, "%s has MAX_RACE item : %s", GET_NAME(ch), obj_object->short_description);
     }
     // Hunting APPLY_DAMROLL >= 20
-    if(obj_object->affected[i].location == APPLY_DAMROLL &&
-       obj_object->affected[i].modifier >= 20)
+    if(obj_object->affected[i].location == APPLY_DAMROLL
+      && obj_object->affected[i].modifier >= 20)
     {
       wizlog(56, "%s has item with >= 20 damroll : %s",
         GET_NAME(ch), obj_object->short_description);
@@ -3774,8 +3776,8 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
   switch (keyword)
   {
   case 0: /* None */
-    logit(LOG_OBJ, "wear(): object worn in invalid location (%s, %s)",
-      GET_NAME(ch), obj_object->short_description);
+    logit(LOG_OBJ, "wear(): object worn in invalid location (%s, '%s' %d)",
+      J_NAME(ch), obj_object->short_description, GET_OBJ_VNUM(obj_object) );
     break;
 
   case 1: /* Finger */
@@ -4119,7 +4121,7 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
         {
           perform_wear(ch, obj_object, keyword);
         }
-        obj_from_char(obj_object, TRUE);
+        obj_from_char(obj_object);
         if( !ch->equipment[WEAR_WRIST_L] )
         {
           if( showit )
@@ -4333,7 +4335,7 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
     {
       perform_wear(ch, obj_object, keyword);
     }
-    obj_from_char(obj_object, TRUE);
+    obj_from_char(obj_object);
     if( HAS_FOUR_HANDS(ch) )
     {
       if( !ch->equipment[HOLD] )
@@ -4548,7 +4550,7 @@ int wear(P_char ch, P_obj obj_object, int keyword, bool showit)
         {
           perform_wear(ch, obj_object, keyword);
         }
-        obj_from_char(obj_object, TRUE);
+        obj_from_char(obj_object);
         // Left the following an If-Then-Else instead of a ?: for ease of read.  -Sniktiorg (Nov.12.12)
         if( !ch->equipment[WEAR_ATTACH_BELT_1] )
         {
@@ -5364,7 +5366,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
 
   tempvnum = GET_OBJ_VNUM(temp);
 
-  //handle salvage materials
+  // handle salvage materials
   if((tempvnum > 399999) && (tempvnum < 400210))
   {
     int lowest = get_matstart(temp);
@@ -5385,8 +5387,8 @@ void do_salvage(P_char ch, char *argument, int cmd)
     obj_to_char(read_object(reward, VIRTUAL), ch);
     act("$n breaks down their $p into its &+ylesser&n material...", TRUE, ch, temp, 0, TO_ROOM);
     act("You break down your $p into its &+ylesser &+Ymaterial&n...", FALSE, ch, temp, 0, TO_CHAR);
-    obj_from_char(temp, TRUE);
-    extract_obj(temp, TRUE);
+    obj_from_char(temp);
+    extract_obj(temp);
     return;
   }
 
@@ -5401,7 +5403,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
   {
     act("&+LYou attempt to break down your $p&+L, but end up &+Rbreaking &+Lit in the process.", FALSE, ch, temp, 0, TO_CHAR);
     act("$n attempts to salvage their $p, but clumsily destroys it.", TRUE, ch, temp, 0, TO_ROOM);
-    extract_obj(temp, !IS_TRUSTED(ch));
+    extract_obj(temp);
     notch_skill(ch, SKILL_SALVAGE, 10);
     return;
   }
@@ -5416,7 +5418,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
     if((objchance <= 5) && (number(1, 1000) > GET_C_LUK(ch)))
     {
       send_to_char("The &+ypoor &nquality and &+Lcraftsmanship&n of the item yield to your force, &+Rbreaking&n the item into unusable bits.\r\n", ch);
-      extract_obj(temp, !IS_TRUSTED(ch));
+      extract_obj(temp);
       return;
     }
 
@@ -6183,7 +6185,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
       {
         if(number(80, 500) < GET_C_LUK(ch))
         {
-          obj_to_char(read_object(400211, VIRTUAL), ch);
+          obj_to_char(read_object(MAG_ESSENCE_VNUM, VIRTUAL), ch);
           send_to_char("...as you work, a small &+Mm&+Ya&+Mg&+Yi&+Mc&+Ya&+Ml&n object gently separates from your item!\r\n", ch);
         }
 	    }
@@ -6203,7 +6205,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
       || IS_SET(temp->bitvector, AFF_DETECT_INVISIBLE)
       || IS_SET(temp->bitvector4, AFF4_DETECT_ILLUSION) )
     {
-      obj_to_char(read_object(400211, VIRTUAL), ch);
+      obj_to_char(read_object(MAG_ESSENCE_VNUM, VIRTUAL), ch);
       send_to_char("...as you work, a small &+Mm&+Ya&+Mg&+Yi&+Mc&+Ya&+Ml&n object gently separates from your item!\r\n", ch);
     }
 
@@ -6371,7 +6373,7 @@ void do_salvage(P_char ch, char *argument, int cmd)
     char_light(ch);
     room_light(ch->in_room, REAL);
     //if(scitools < 1)
-    extract_obj(temp, !IS_TRUSTED(ch));
+    extract_obj(temp);
   }
 }
 
@@ -6603,8 +6605,8 @@ void do_apply_poison(P_char ch, char *argument, int cmd)
   if (poison->value[1] <= 0 && IS_SET(poison->extra_flags, ITEM_TRANSIENT))
   {
     act("The empty $q vanishes in thin air!", FALSE, ch, poison, 0, TO_CHAR);
-    obj_from_char(poison, TRUE);
-    extract_obj(poison, TRUE);
+    obj_from_char(poison);
+    extract_obj(poison, TRUE); // Transient artifact poison?
   }
 
   return;

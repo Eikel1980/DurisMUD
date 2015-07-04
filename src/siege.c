@@ -782,7 +782,7 @@ void damage_siege( P_obj siege, P_obj ammo )
     if( !scraps )
     {
       remove_siege( siege );
-      extract_obj( siege, TRUE );
+      extract_obj( siege, TRUE ); // Siege arti?
       return;
     }
     sprintf(buf, "Scraps from %s&n lie in a pile here.",
@@ -797,7 +797,7 @@ void damage_siege( P_obj siege, P_obj ammo )
     obj_to_room(scraps, siege->loc.room);
 
     remove_siege( siege );
-    extract_obj( siege, TRUE );
+    extract_obj( siege, TRUE ); // Siege arti?
   }
 }
 
@@ -943,7 +943,7 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
   if( cmd == CMD_DONATE )
   {
     donation = get_obj_in_list_vis(pl, arg, pl->carrying);
-    if( !donation )
+    if( !donation || IS_ARTIFACT(donation) )
     {
       send_to_char( "Donate what?!?\n", pl );
       return TRUE;
@@ -951,9 +951,9 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
     sprintf( buf, "You donate %s to %s.\n", donation->short_description, 
         town->zone->name );
     send_to_char( buf, pl );
-    obj_from_char( donation, TRUE );
+    obj_from_char( donation );
     town->resources += itemvalue( ch, donation );
-    extract_obj( donation, TRUE );
+    extract_obj( donation, TRUE ); // Will never bi arti, but ok.
     save_towns();
     return TRUE;
   }
@@ -1418,7 +1418,7 @@ void multihit_siege( P_char ch )
     if( !scraps )
     {
       remove_siege( siege );
-      extract_obj( siege, TRUE );
+      extract_obj( siege, TRUE ); // Siege arti?
       return;
     }
     sprintf(buf, "Scraps from %s&n lie in a pile here.",
@@ -1433,7 +1433,7 @@ void multihit_siege( P_char ch )
     obj_to_room(scraps, siege->loc.room);
 
     remove_siege( siege );
-    extract_obj( siege, TRUE );
+    extract_obj( siege, TRUE ); // Siege arti?
   }
 }
 

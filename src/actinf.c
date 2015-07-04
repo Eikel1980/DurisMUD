@@ -96,7 +96,7 @@ extern int top_of_helpt;
 extern int top_of_infot;
 extern int top_of_mobt;
 extern int top_of_objt;
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern int used_descs;
 extern struct agi_app_type agi_app[];
@@ -703,16 +703,14 @@ int ageCorpse(P_char ch, P_obj obj, char *s)
 
 }
 
-char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
+char *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
 {
   bool     found;
   static char buf[MAX_STRING_LENGTH];
   P_obj    wpn;
 
   if (IS_TRUSTED(ch) && IS_SET(ch->specials.act, PLR_VNUM))
-    sprintf(buf, "[&+B%5d&N] ",
-            (object->R_num >=
-             0 ? obj_index[object->R_num].virtual_number : -1));
+    sprintf(buf, "[&+B%5d&N] ", (object->R_num >= 0 ? obj_index[object->R_num].virtual_number : -1));
   else
     buf[0] = 0;
 
@@ -778,8 +776,7 @@ char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
       strcat(buf, " (&+Lburied&n)");
       found = TRUE;
     }
-    if (IS_OBJ_STAT2(object, ITEM2_MAGIC) &&
-        (IS_TRUSTED(ch) || IS_AFFECTED2(ch, AFF2_DETECT_MAGIC)))
+    if (IS_OBJ_STAT2(object, ITEM2_MAGIC) && (IS_TRUSTED(ch) || IS_AFFECTED2(ch, AFF2_DETECT_MAGIC)))
     {
       strcat(buf, " (&+bmagic&n)");
       found = TRUE;
@@ -799,8 +796,7 @@ char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
       strcat(buf, " (&+mEnchanted&n)");
       found = TRUE;
     }
-    if (IS_OBJ_STAT(object, ITEM_LIT) ||
-        ((object->type == ITEM_LIGHT) && (object->value[2] == -1)))
+    if( IS_OBJ_STAT(object, ITEM_LIT) || ((object->type == ITEM_LIGHT) && (object->value[2] == -1)) )
     {
       strcat(buf, " (&+Willuminating&n)");
       found = TRUE;
@@ -817,8 +813,7 @@ char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
       }
     }
     */
-    if (OBJ_WORN(object) &&
-        affected_by_spell(object->loc.wearing, SPELL_ILIENZES_FLAME_SWORD))
+    if (OBJ_WORN(object) && affected_by_spell(object->loc.wearing, SPELL_ILIENZES_FLAME_SWORD))
     {
       if (object->type == ITEM_WEAPON && (IS_SWORD(object) || IS_AXE(object)))
       {
@@ -826,8 +821,7 @@ char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
       }
     }
 
-    if (OBJ_WORN(object) &&
-        affected_by_spell(object->loc.wearing, SPELL_THRYMS_ICERAZOR))
+    if (OBJ_WORN(object) && affected_by_spell(object->loc.wearing, SPELL_THRYMS_ICERAZOR))
     {
       if (object->type == ITEM_WEAPON && IS_BLUDGEON(object) )
       {
@@ -835,8 +829,7 @@ char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
       }
     }
 
-    if (OBJ_WORN(object) &&
-        affected_by_spell(object->loc.wearing, SPELL_LLIENDILS_STORMSHOCK))
+    if (OBJ_WORN(object) && affected_by_spell(object->loc.wearing, SPELL_LLIENDILS_STORMSHOCK))
     {
       if (object->type == ITEM_WEAPON && !IS_BLUDGEON(object) && !IS_AXE(object) )
       {
@@ -844,21 +837,26 @@ char    *show_obj_to_char(P_obj object, P_char ch, int mode, int print)
       }
     }
 
-	if (OBJ_WORN(object) &&
-        affected_by_spell(object->loc.wearing, SPELL_HOLY_SWORD))
+    if (OBJ_WORN(object) && affected_by_spell(object->loc.wearing, SPELL_HOLY_SWORD))
     {
       if (object->type == ITEM_WEAPON && IS_SWORD(object) )
       {
         strcat(buf, " &+L(&+Wh&+wol&+Wy&+L)&N");
       }
     }
-        
-/*
+
+    // Now Imms can see timers on other's eq.
+    if( IS_ARTIFACT(object) && IS_TRUSTED(ch) )
+    {
+      artifact_timer_sql( GET_OBJ_VNUM(object), buf + strlen(buf) );
+    }
+
+    /*
     if (IS_TRUSTED(ch)) {
       sprintf(buf, "%s (&+m%s&n)", buf, item_size_types[GET_OBJ_SIZE(object)]);
       found = TRUE;
     }
-*/
+    */
   }
   strcat(buf, item_condition(object));
   if (ch->specials.z_cord > object->z_cord)
@@ -1227,8 +1225,7 @@ void create_in_room_status(P_char ch, P_char i, char buffer[])
    ch is char looking, i is target */
 void show_char_to_char(P_char i, P_char ch, int mode)
 {
-  char     buffer[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH],
-    buf[MAX_STRING_LENGTH];
+  char     buffer[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH], buf[MAX_STRING_LENGTH];
   int      j, found, percent, lt_lvl;
   P_obj    tmp_obj, wpn;
   int      wear_order[] =
@@ -1236,182 +1233,189 @@ void show_char_to_char(P_char i, P_char ch, int mode)
       29, 30, 10, 31, 11, 14, 15, 33, 34, 9, 32, 1,  2, 16, 17, 25, 26, 18,  7,
       36,  8, 38, -1
     };  // Also defined in get_equipment_list
-  int      higher, lower, diff;
+  int      diff, race;
   struct affected_type *af;
-  int quester_id;
+  int      quester_id;
+  bool     visobj, higher, lower;
 
   *buffer = '\0';
   *buf2 = '\0';
 
-  if (IS_NPC(i) && !IS_TRUSTED(ch) && !i->player.long_descr)
-    return;                     /* Undetectable mobs - SKB 22 Nov 1995 */
-
-  if (i->only.pc == NULL)
-    return;                     /* this shouldnt occur, but it does -Granor */
-
-  // show char info shown in room list
-
-  if (mode == 0)
+  // Undetectable mobs - SKB 22 Nov 1995
+  if( IS_NPC(i) && !IS_TRUSTED(ch) && !i->player.long_descr )
   {
-    if (get_linking_char(i, LNK_RIDING) && !IS_TRUSTED(ch))
-      return;                   /* mounts are strung to riders descrip */
+    return;
+  }
+
+  // This shouldnt occur, but it does -Granor
+  if( i->only.pc == NULL )
+  {
+    debug( "show_char_to_char: Looker: '%s' %d, Target: '%s' has no only data!",
+      J_NAME(ch), GET_ID(ch), i->player.name );
+    return;
+  }
+
+  // Show char info shown in list of people in room
+  if( mode == 0 )
+  {
+    // Mounts are strung to riders description, so don't show them.
+    if( get_linking_char(i, LNK_RIDING) && !IS_TRUSTED(ch) )
+    {
+      return;
+    }
 
     diff = i->specials.z_cord - ch->specials.z_cord;
     higher = (diff > 0);
     lower = (diff < 0);
 
-    if (i == ch)
-      return;
-
-    //Check for enhanced hide and return if undetectable
-    if (IS_AFFECTED5(i, AFF5_ENH_HIDE) && !IS_TRUSTED(ch))
-      return;
-
-    if (!CAN_SEE_Z_CORD(ch, i) && !IS_TRUSTED(i) &&
-        (IS_AFFECTED3(i, AFF3_NON_DETECTION) &&
-         (!affected_by_spell(ch, SPELL_TRUE_SEEING) &&
-          !GET_CLASS(ch, CLASS_PSIONICIST) && !GET_CLASS(ch, CLASS_DRUID))))
+    // Don't show yourself in room list
+    if( i == ch )
     {
-      if (IS_AFFECTED(ch, AFF_SENSE_LIFE))
+      return;
+    }
+
+    // Check for enhanced hide and return if undetectable (Not currently implemented, but ok).
+    if( IS_AFFECTED5(i, AFF5_ENH_HIDE) && !IS_TRUSTED(ch) )
+    {
+      return;
+    }
+
+    if( !CAN_SEE_Z_CORD(ch, i) && !IS_TRUSTED(i) && IS_AFFECTED3(i, AFF3_NON_DETECTION)
+      && !affected_by_spell(ch, SPELL_TRUE_SEEING) && !GET_CLASS(ch, CLASS_PSIONICIST | CLASS_DRUID) )
+    {
+      if( IS_AFFECTED(ch, AFF_SENSE_LIFE) )
       {
-        if (higher)
+        if( higher )
           send_to_char("&+LYou sense a hidden lifeform above you.\n", ch);
-        else if (lower)
+        else if( lower )
           send_to_char("&+LYou sense a hidden lifeform below you.\n", ch);
         else
           send_to_char("&+LYou sense a hidden lifeform nearby.\n", ch);
       }
-
       return;
     }
-    if ((IS_AFFECTED(i, AFF_INVISIBLE) ||
-         IS_AFFECTED2(i, AFF2_MINOR_INVIS) ||
-         IS_AFFECTED3(i, AFF3_ECTOPLASMIC_FORM)) &&
-        !IS_AFFECTED(ch, AFF_WRAITHFORM))
-      strcat(buffer, "*");
 
-    if ((IS_NPC(i) && IS_MORPH(i)) &&
-        affected_by_spell(ch, SPELL_TRUE_SEEING))
-      strcat(buffer, "%");
-
-    if (get_linking_char(i, LNK_RIDING))
-      strcat(buffer, "&+L(R)&n");
-
-    if (IS_NPC(i) &&
-        PLR2_FLAGGED(ch, PLR2_SHOW_QUEST) &&
-        (GET_LEVEL(ch) <= (int)get_property("look.showquestgiver.maxlvl", 30.000)))
+    if( (IS_AFFECTED(i, AFF_INVISIBLE) || IS_AFFECTED2(i, AFF2_MINOR_INVIS)
+      || IS_AFFECTED3(i, AFF3_ECTOPLASMIC_FORM)) && !IS_AFFECTED(ch, AFF_WRAITHFORM) )
     {
-      if (mob_index[GET_RNUM(i)].func.mob &&
-        !strcmp(get_function_name((void*)mob_index[GET_RNUM(i)].func.mob), "world_quest"))
+      strcat(buffer, "*");
+    }
+
+    if( (IS_NPC(i) && IS_MORPH(i)) && affected_by_spell(ch, SPELL_TRUE_SEEING) )
+    {
+      strcat(buffer, "%");
+    }
+
+    if( get_linking_char(i, LNK_RIDING) )
+    {
+      strcat(buffer, "&+L(R)&n");
+    }
+
+    // If it's a quest mob
+    if( IS_NPC(i) && (IS_NPC(ch) || PLR2_FLAGGED(ch, PLR2_SHOW_QUEST))
+      && (GET_LEVEL(ch) <= get_property("look.showquestgiver.maxlvl", 30)) )
+    {
+      if( mob_index[GET_RNUM(i)].func.mob
+        && !strcmp(get_function_name((void*)mob_index[GET_RNUM(i)].func.mob), "world_quest") )
       {
         strcat(buffer, "&+Y(Q)&n");
       }
-      else if (mob_index[GET_RNUM(i)].qst_func)
+      else if( mob_index[GET_RNUM(i)].qst_func )
       {
-	if (has_quest(i))
-	{
-	  strcat(buffer, "&+B(Q)&n");
-	}
+        if (has_quest(i))
+        {
+          strcat(buffer, "&+B(Q)&n");
+        }
       }
     }
 
-    if ((ch->only.pc->quest_active) &&
-        IS_NPC(i) &&
-	PLR2_FLAGGED(ch, PLR2_SHOW_QUEST) &&
-        (GET_LEVEL(ch) <= (int)get_property("look.showquestgiver.maxlvl", 30.000)) &&
-	(GET_VNUM(i) == ch->only.pc->quest_mob_vnum))
+    if( (ch->only.pc->quest_active) && IS_NPC(i) && (IS_NPC(ch) || PLR2_FLAGGED(ch, PLR2_SHOW_QUEST))
+      && (GET_LEVEL(ch) <= get_property("look.showquestgiver.maxlvl", 30))
+      && (GET_VNUM(i) == ch->only.pc->quest_mob_vnum) )
+    {
       strcat(buffer, "&+R(Q)&n");
+    }
 
-    if (IS_PC(i) || (i->specials.position != i->only.npc->default_pos) ||
-        IS_FIGHTING(i) || IS_RIDING(i) || i->lobj->Visible_Type() ||
-        (GET_RNUM(i) == real_mobile(250)) || IS_DESTROYING(ch) )
+    if( IS_PC(i) || (i->specials.position != i->only.npc->default_pos) || IS_FIGHTING(i) || IS_RIDING(i)
+      || i->lobj->Visible_Type() || (GET_RNUM(i) == real_mobile(IMAGE_REFLECTION_VNUM)) || IS_DESTROYING(ch) )
     {
       /* A player char or a mobile w/o long descr, or not in default pos. */
-      if (IS_PC(i) || (GET_RNUM(i) == real_mobile(250)))
+      if( IS_PC(i) || (GET_RNUM(i) == real_mobile(IMAGE_REFLECTION_VNUM)) )
       {
-        if (i->in_room < 0)
+        if( i->in_room < 0 )
         {
-          logit(LOG_DEBUG, "%s->in_room < 0 in show_char_to_char.",
-                GET_NAME(i));
+          logit(LOG_DEBUG, "show_char_to_char: %s->in_room < 0.", GET_NAME(i));
           return;
         }
 
         // if char is more than 2 above or below and char doesn't have hawkvision, they just
         // see 'someone'
-
-        if (!IS_TRUSTED(ch) && !IS_AFFECTED4(ch, AFF4_HAWKVISION) &&
-            (abs(diff) > 2))
+        if( !IS_TRUSTED(ch) && !IS_AFFECTED4(ch, AFF4_HAWKVISION) && (abs(diff) > 2) )
         {
           strcat(buffer, "Someone");
 
-          if (GET_TITLE(i))
+          if( GET_TITLE(i) )
           {
             strcat(buffer, " ");
             strcat(buffer, GET_TITLE(i));
           }
         }
-        else if (IS_DISGUISE(i))
+        else if( IS_DISGUISE(i) )
         {
-          if (racewar(ch, i) && !IS_ILLITHID(ch) && !IS_TRUSTED(i) &&
-              IS_DISGUISE_PC(i))
+          race = GET_DISGUISE_RACE(i);
+          if( racewar(ch, i) && !IS_ILLITHID(ch) && !IS_TRUSTED(i) && IS_DISGUISE_PC(i) )
+          {
             sprintf(buffer + strlen(buffer), "%s %s (%s)",
-                    ((GET_DISGUISE_RACE(i) == RACE_ILLITHID) ||
-		     (GET_DISGUISE_RACE(i) == RACE_PILLITHID) ||
-                     (GET_DISGUISE_RACE(i) == RACE_ORC) ||
-		     (GET_DISGUISE_RACE(i) == RACE_OROG) ||
-                     (GET_DISGUISE_RACE(i) == RACE_OGRE) ||
-		     (GET_DISGUISE_RACE(i) == RACE_AGATHINON)) ? "An" : "A",
-                    race_names_table[(int) GET_DISGUISE_RACE(i)].ansi,
-                    size_types[GET_ALT_SIZE(i)]);
+              ( race == RACE_ILLITHID || race == RACE_PILLITHID || race == RACE_ORC
+              || race == RACE_OROG || race == RACE_OGRE || race == RACE_AGATHINON ) ? "An" : "A",
+              race_names_table[race].ansi, size_types[GET_ALT_SIZE(i)] );
+          }
           else
           {
-            if (IS_DISGUISE_NPC(i) && GET_STAT(i) == STAT_NORMAL &&
-                GET_POS(i) == POS_STANDING)
+            if( IS_DISGUISE_NPC(i) && GET_STAT(i) == STAT_NORMAL && GET_POS(i) == POS_STANDING )
             {
-              sprintf(buffer + strlen(buffer), "%s", GET_DISGUISE_LONG(i) ?
-                      (char *) striplinefeed(GET_DISGUISE_LONG(i)) :
-                      "&=LRBogus char!&n");
+              sprintf(buffer + strlen(buffer), "%s",
+                GET_DISGUISE_LONG(i) ? (char *) striplinefeed(GET_DISGUISE_LONG(i)) : "&=LRBogus char!&n");
             }
             else
             {
-              sprintf(buffer + strlen(buffer), "%s", (IS_DISGUISE_NPC(i) && i->disguise.name) ? i->disguise.name : (IS_DISGUISE_PC(i) && GET_DISGUISE_NAME(i)) ? GET_DISGUISE_NAME(i) : "&=LRBogus char!&n");   /*Alv */
+              sprintf(buffer + strlen(buffer), "%s",
+                (IS_DISGUISE_NPC(i) && i->disguise.name) ? i->disguise.name :
+                (IS_DISGUISE_PC(i) && GET_DISGUISE_NAME(i)) ? GET_DISGUISE_NAME(i) : "&=LRBogus char!&n");   // Alv
             }
           }
-          if (!IS_DISGUISE_NPC(i) &&
-              (!IS_SET(ch->specials.act2, PLR2_NOTITLE) ||
-               (racewar(ch, i) && !IS_ILLITHID(ch))) && GET_DISGUISE_TITLE(i))
+          // If not a disguised NPC, & we're showing titles to ch or diff't racewars (!including squids),
+          //   and i's disguise has a title.
+          if( !IS_DISGUISE_NPC(i) && ((IS_NPC(ch) || !IS_SET(ch->specials.act2, PLR2_NOTITLE))
+            || (racewar(ch, i) && !IS_ILLITHID(ch))) && GET_DISGUISE_TITLE(i) )
           {
             strcat(buffer, " ");
             strcat(buffer, GET_DISGUISE_TITLE(i));
           }
-          if (!IS_TRUSTED(i) && (!racewar(ch, i) || IS_ILLITHID(ch)) &&
-              IS_DISGUISE_PC(i))
-            sprintf(buffer + strlen(buffer), " (%s)(%s)",
-                    race_names_table[(int) GET_DISGUISE_RACE(i)].ansi,
-                    size_types[GET_ALT_SIZE(i)]);
+          if( !IS_TRUSTED(i) && (!racewar(ch, i) || IS_ILLITHID(ch)) && IS_DISGUISE_PC(i) )
+          {
+            sprintf(buffer + strlen(buffer), " (%s)(%s)", race_names_table[race].ansi, size_types[GET_ALT_SIZE(i)]);
+          }
         }
         else
         {
-          if (racewar(ch, i) && !IS_TRUSTED(i) && !IS_ILLITHID(ch))
+          race = GET_RACE(i);
+          if( racewar(ch, i) && !IS_TRUSTED(i) && !IS_ILLITHID(ch) )
+          {
             sprintf(buffer + strlen(buffer), "%s %s (%s)",
-            ((GET_RACE(i) == RACE_ILLITHID) ||
-            (GET_RACE(i) == RACE_PILLITHID) ||
-            (GET_RACE(i) == RACE_ORC) ||
-            (GET_RACE(i) == RACE_OROG) ||
-            (GET_RACE(i) == RACE_AGATHINON) ||
-            (GET_RACE(i) == RACE_OGRE)) ? "An" : "A",
-              race_names_table[(int) GET_RACE(i)].ansi,
-              size_types[GET_ALT_SIZE(i)]);
+              ( race == RACE_ILLITHID || race == RACE_PILLITHID || race == RACE_ORC || race == RACE_OROG
+              || race == RACE_AGATHINON || GET_RACE(i) == RACE_OGRE ) ? "An" : "A",
+              race_names_table[(int) GET_RACE(i)].ansi, size_types[GET_ALT_SIZE(i)]);
+          }
           else
           {
-            if (IS_NPC(i) && (GET_RNUM(i) == real_mobile(250)))
+            if( IS_NPC(i) && (GET_RNUM(i) == real_mobile(IMAGE_REFLECTION_VNUM)) )
               sprintf(buffer + strlen(buffer), "%s", i->player.short_descr);
             else
             {
-              if (is_introd(i, ch))
+              if( is_introd(i, ch) )
               {
-                sprintf(buffer + strlen(buffer), "%s", GET_NAME(i) ?
-                        GET_NAME(i) : "&=LRBogus char!&n");
+                sprintf(buffer + strlen(buffer), "%s", GET_NAME(i) ? GET_NAME(i) : "&=LRBogus char!&n");
               }
               else
               {
@@ -1419,29 +1423,28 @@ void show_char_to_char(P_char i, P_char ch, int mode)
               }
             }
           }
-          if (IS_HARDCORE(i))
+          if( IS_HARDCORE(i) )
             strcat(buffer, " &+L(&+rHard&+RCore&+L)&n");
 
-          if ((!IS_SET(ch->specials.act2, PLR2_NOTITLE) ||
-               (racewar(ch, i) && !IS_ILLITHID(ch))) && GET_TITLE(i))
+          if( (!IS_SET(ch->specials.act2, PLR2_NOTITLE) || (racewar(ch, i) && !IS_ILLITHID(ch))) && GET_TITLE(i) )
           {
             strcat(buffer, " ");
             strcat(buffer, GET_TITLE(i));
           }
-          if (GET_LEVEL(i) < AVATAR && (!racewar(ch, i) || IS_ILLITHID(ch)) &&
-              is_introd(i, ch))
+          if( GET_LEVEL(i) < AVATAR && (!racewar(ch, i) || IS_ILLITHID(ch)) && is_introd(i, ch) )
+          {
             sprintf(buffer + strlen(buffer), " (%s)(%s)",
-                    race_names_table[(int) GET_RACE(i)].ansi,
-                    size_types[GET_ALT_SIZE(i)]);
+              race_names_table[(int) GET_RACE(i)].ansi, size_types[GET_ALT_SIZE(i)]);
+          }
         }
-        //Backrank display - Drannak  
+        //Backrank display - Drannak
         /*
 				if (i->group && !IS_BACKRANKED(i))
           strcat(buffer, "(&+RF&n)");
 
         if (i->group && IS_BACKRANKED(i))
           strcat(buffer, "(&+BB&n)");
-		*/		
+        */
 
         if (IS_PC(i) && i->desc && i->desc->olc)
           strcat(buffer, " (&+MOLC&N)");
@@ -1486,46 +1489,43 @@ void show_char_to_char(P_char i, P_char ch, int mode)
 				}
       }
 
-      if (!
-          (IS_DISGUISE_NPC(i) && GET_STAT(i) == STAT_NORMAL &&
-           GET_POS(i) == POS_STANDING))
+      if( !(IS_DISGUISE_NPC(i) && GET_STAT(i) == STAT_NORMAL && GET_POS(i) == POS_STANDING) )
       {
-        switch (GET_STAT(i))
+        switch( GET_STAT(i) )
         {
         case STAT_DEAD:
           sprintf(buffer + strlen(buffer), " is lying %s, quite dead",
-                  higher ? "above you" : lower ? "below you" : "here");
+            higher ? "above you" : lower ? "below you" : "here");
           break;
         case STAT_DYING:
           sprintf(buffer + strlen(buffer), " is lying %s, mortally wounded",
-                  higher ? "above you" : lower ? "below you" : "here");
+            higher ? "above you" : lower ? "below you" : "here");
           break;
         case STAT_INCAP:
           sprintf(buffer + strlen(buffer), " is lying %s, incapacitated",
-                  higher ? "above you" : lower ? "below you" : "here");
+            higher ? "above you" : lower ? "below you" : "here");
           break;
         case STAT_SLEEPING:
           switch (GET_POS(i))
           {
           case POS_PRONE:
-            sprintf(buffer + strlen(buffer),
-                    " is stretched out%s, sound asleep",
-                    higher ? " above you" : lower ? " below you" : "");
+            sprintf(buffer + strlen(buffer), " is stretched out%s, sound asleep",
+              higher ? " above you" : lower ? " below you" : "");
             break;
           case POS_SITTING:
             sprintf(buffer + strlen(buffer), " has nodded off%s, sitting",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           case POS_KNEELING:
             sprintf(buffer + strlen(buffer), " is asleep%s, kneeling",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           case POS_STANDING:
             sprintf(buffer + strlen(buffer), " stands%s, apparently asleep",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           }
-          if (IS_AFFECTED(i, AFF_BOUND))
+          if( IS_AFFECTED(i, AFF_BOUND) )
             strcat(buffer, " and restrained");
           break;
         case STAT_RESTING:
@@ -1533,19 +1533,19 @@ void show_char_to_char(P_char i, P_char ch, int mode)
           {
           case POS_PRONE:
             sprintf(buffer + strlen(buffer), " is sprawled out%s, resting",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           case POS_SITTING:
             sprintf(buffer + strlen(buffer), " sits resting%s",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           case POS_KNEELING:
             sprintf(buffer + strlen(buffer), " squats comfortably%s",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           case POS_STANDING:
             sprintf(buffer + strlen(buffer), " stands at ease%s",
-                    higher ? " above you" : lower ? " below you" : "");
+              higher ? " above you" : lower ? " below you" : "");
             break;
           }
           if (IS_AFFECTED(i, AFF_KNOCKED_OUT))
@@ -1563,19 +1563,19 @@ void show_char_to_char(P_char i, P_char ch, int mode)
             {
             case POS_PRONE:
               sprintf(buffer + strlen(buffer), " is lying%s",
-                      higher ? " above you" : lower ? " below you" : "");
+                higher ? " above you" : lower ? " below you" : "");
               break;
             case POS_SITTING:
               sprintf(buffer + strlen(buffer), " sits%s",
-                      higher ? " above you" : lower ? " below you" : "");
+                higher ? " above you" : lower ? " below you" : "");
               break;
             case POS_KNEELING:
               sprintf(buffer + strlen(buffer), " crouches%s",
-                      higher ? " above you" : lower ? " below you" : "");
+                higher ? " above you" : lower ? " below you" : "");
               break;
             case POS_STANDING:
               sprintf(buffer + strlen(buffer), " stands%s",
-                      higher ? " above you" : lower ? " below you" : "");
+                higher ? " above you" : lower ? " below you" : "");
               break;
             }
           if (IS_AFFECTED(i, AFF_KNOCKED_OUT))
@@ -1592,23 +1592,19 @@ void show_char_to_char(P_char i, P_char ch, int mode)
             strcat(buffer, ", floating");
           if (!IS_RIDING(i))
             strcat(buffer, " here");
-/*
-              if (IS_SET(i->specials.act3, PLR3_FRAGLEAD))
-		  strcat(buffer, " (&+rF&+Rr&+ra&+Rg &+rL&+Ro&+rr&+Rd&n&N)");
+          /*
+          if (IS_SET(i->specials.act3, PLR3_FRAGLEAD))
+            strcat(buffer, " (&+rF&+Rr&+ra&+Rg &+rL&+Ro&+rr&+Rd&n&N)");
 
-		if (IS_SET(i->specials.act3, PLR3_FRAGLOW))
-		  strcat(buffer, " (&+yFrag &+YFood&n&N)");
-*/
-
-             		if(IS_SET(i->specials.act2, PLR2_NEWBIE))
-			strcat(buffer, " (&+GNewbie&N)");
-
-
-			
-	  //drannak2
+          if (IS_SET(i->specials.act3, PLR3_FRAGLOW))
+            strcat(buffer, " (&+yFrag &+YFood&n&N)");
+          */
+          if(IS_SET(i->specials.act2, PLR2_NEWBIE))
+            strcat(buffer, " (&+GNewbie&N)");
+          //drannak2
           break;
         }
-        if (IS_RIDING(i))
+        if( IS_RIDING(i) )
         {
           strcat(buffer, " sits atop ");
           if (IS_PC(i) && (get_linked_char(i, LNK_RIDING) == ch))
@@ -1669,27 +1665,25 @@ void show_char_to_char(P_char i, P_char ch, int mode)
 #if defined (CTF_MUD) && (CTF_MUD == 1)
       if ((af = get_spell_from_char(i, TAG_CTF)) != NULL)
       {
-	if (af->modifier == CTF_FLAG_GOOD)
-	  strcat(buffer, " &+W(&+YFlag&+W)&n");
-	else if (af->modifier == CTF_FLAG_EVIL)
-	  strcat(buffer, " &+W(&+rFlag&+W)&n");
-	else
-	  strcat(buffer, " &+W(&+LFlag&+W)&n");
+        if (af->modifier == CTF_FLAG_GOOD)
+          strcat(buffer, " &+W(&+YFlag&+W)&n");
+        else if (af->modifier == CTF_FLAG_EVIL)
+          strcat(buffer, " &+W(&+rFlag&+W)&n");
+        else
+          strcat(buffer, " &+W(&+LFlag&+W)&n");
       }
 #endif
 
       create_in_room_status(ch, i, buffer);
 
-      if (IS_TRUSTED(ch) && IS_SET(ch->specials.act, PLR_VNUM) && IS_NPC(i))
-        sprintf(buffer + strlen(buffer), " [&+Y%d&n]",
-                mob_index[GET_RNUM(i)].virtual_number);
+      if( IS_TRUSTED(ch) && IS_SET(ch->specials.act, PLR_VNUM) && IS_NPC(i))
+        sprintf(buffer + strlen(buffer), " [&+Y%d&n]", mob_index[GET_RNUM(i)].virtual_number);
 
       act(buffer, TRUE, ch, i->lobj->Visible_Object(), i->specials.fighting, TO_CHAR);
     }
     else
     {                           /* npc with long */
-      if (i->player.long_descr ||
-          (IS_DISGUISE_NPC(i) && GET_DISGUISE_LONG(i)))
+      if (i->player.long_descr || (IS_DISGUISE_NPC(i) && GET_DISGUISE_LONG(i)))
       {
         found = FALSE;
         if (!IS_DISGUISE_NPC(i) || !GET_DISGUISE_LONG(i))
@@ -1710,9 +1704,7 @@ void show_char_to_char(P_char i, P_char ch, int mode)
           buffer[j - 1] = 0;
           j -= 2;
         }
-        while ((j >= 0) &&
-               ((buffer[j] == '\n') || (buffer[j] == '\r') ||
-                (buffer[j] == '~') || (buffer[j] == ' ')))
+        while( (j >= 0) && ((buffer[j] == '\n') || (buffer[j] == '\r') || (buffer[j] == '~') || (buffer[j] == ' ')) )
         {
           buffer[j] = 0;
           j--;
@@ -1750,14 +1742,13 @@ void show_char_to_char(P_char i, P_char ch, int mode)
 
     /* Obscuring mist (illusionist spec) spell */
 
-    if (IS_AFFECTED5(i, AFF5_OBSCURING_MIST)) {
+    if (IS_AFFECTED5(i, AFF5_OBSCURING_MIST))
+    {
       strcpy(buffer, "&+cA very thick &+Wcloud of mist&+c swirls all around $N.&n");
-
     }
     /* now show mage flame info on line after char info (if existant) */
 
-    if (IS_AFFECTED4(i, AFF4_MAGE_FLAME) ||
-        IS_AFFECTED4(i, AFF4_GLOBE_OF_DARKNESS))
+    if( IS_AFFECTED4(i, AFF4_MAGE_FLAME) || IS_AFFECTED4(i, AFF4_GLOBE_OF_DARKNESS) )
     {
       lt_lvl = 0;
 
@@ -1779,28 +1770,26 @@ void show_char_to_char(P_char i, P_char ch, int mode)
       if (IS_AFFECTED4(i, AFF4_MAGE_FLAME))
       {
         if (GET_CLASS(ch, CLASS_THEURGIST))
-	{
-	  strcpy(buffer, "&+WA ");
+        {
+          strcpy(buffer, "&+WA ");
 
           if (lt_lvl <= 1)
             strcat(buffer, "bright white ");
           else if (lt_lvl >= 5)
             strcat(buffer, "blindingly bright white ");
 
-          strcat(buffer,
-                 "light floats near $N&+W's head. &n(&+Willuminating&n)");
+          strcat(buffer, "light floats near $N&+W's head. &n(&+Willuminating&n)");
         }
-	else
-	{
-	  strcpy(buffer, "&+WA ");
+        else
+        {
+          strcpy(buffer, "&+WA ");
 
           if (lt_lvl <= 1)
             strcat(buffer, "feebly glowing ");
           else if (lt_lvl >= 5)
             strcat(buffer, "brightly glowing ");
 
-          strcat(buffer,
-                 "torch floats near $N&+W's head. &n(&+Willuminating&n)");
+          strcat(buffer, "torch floats near $N&+W's head. &n(&+Willuminating&n)");
         }
       }
       else
@@ -1822,7 +1811,6 @@ void show_char_to_char(P_char i, P_char ch, int mode)
   }
   else if (mode == 1)
   {
-
     *buffer = '\0';
 
     if (i->player.description)
@@ -1836,53 +1824,49 @@ void show_char_to_char(P_char i, P_char ch, int mode)
     if (IS_AFFECTED(ch, AFF_WRAITHFORM))
       return;
 
-    /*
-     * new look character wear order - Allenbri
-     */
-
+    // New look character wear order - Allenbri
     found = FALSE;
-    for (j = 0; wear_order[j] != -1; j++)
+    for( j = 0; wear_order[j] != -1; j++ )
     {
-      if (wear_order[j] == -2)
+      /* There is no -2 in wear_order ??
+      if( wear_order[j] == -2 )
       {
         send_to_char("You are holding:\n", ch);
         found = FALSE;
         continue;
       }
-      if (i->equipment[wear_order[j]])
+      */
+      if( (tmp_obj = i->equipment[wear_order[j]]) != NULL )
       {
-        if (CAN_SEE_OBJ(ch, i->equipment[wear_order[j]]) || (ch == i))
+        visobj = CAN_SEE_OBJ(ch, tmp_obj);
+        if( visobj || (ch == i) )
         {
-
-          if (((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD)) &&
-              (wield_item_size(i, i->equipment[wear_order[j]]) == 2))
-            send_to_char(((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD)
-                          && (i->equipment[wear_order[j]]->type !=
-                              ITEM_WEAPON)) ? "<held in both hands> " :
-                         "<wielding twohanded> ", ch);
+          if( ((wear_order[j] >= WIELD) && (wear_order[j] <= HOLD))
+            && (wield_item_size(i, i->equipment[wear_order[j]]) == 2) )
+          {
+            send_to_char( (i->equipment[wear_order[j]]->type != ITEM_WEAPON)
+              ? "<held in both hands> " : "<wielding twohanded> ", ch);
+          }
           else
-            send_to_char((wear_order[j] >= WIELD && wear_order[j] <= HOLD
-                          && i->equipment[wear_order[j]]->type !=
-                              ITEM_WEAPON
-                          && i->equipment[wear_order[j]]->type !=
-                              ITEM_FIREWEAPON) ? where[HOLD] :
-                         where[wear_order[j]], ch);
+          {
+            send_to_char( (wear_order[j] >= WIELD && wear_order[j] <= HOLD
+              && i->equipment[wear_order[j]]->type != ITEM_WEAPON
+              && i->equipment[wear_order[j]]->type != ITEM_FIREWEAPON) ? where[HOLD] : where[wear_order[j]], ch);
+          }
           found = TRUE;
         }
-        if (CAN_SEE_OBJ(ch, i->equipment[wear_order[j]]))
+        if( visobj )
         {
           show_obj_to_char(i->equipment[wear_order[j]], ch, 1, 1);
         }
-        else if (ch == i)
+        else if( ch == i )
         {
           send_to_char("Something.\n", ch);
         }
       }
     }
 
-    if ((ch != i) &&
-        (GET_CLASS(ch, CLASS_ROGUE) || GET_CLASS(ch, CLASS_THIEF)) &&
-        !IS_TRUSTED(ch))
+    if( (ch != i) && (GET_CLASS(ch, CLASS_ROGUE) || GET_CLASS(ch, CLASS_THIEF)) && !IS_TRUSTED(ch) )
     {
       found = FALSE;
       send_to_char("\nYou attempt to peek at the inventory:\n", ch);
@@ -1901,7 +1885,7 @@ void show_char_to_char(P_char i, P_char ch, int mode)
   }
   else if ((mode == 2) && IS_TRUSTED(ch))
   {
-    act("$n is carrying:", FALSE, i, 0, ch, TO_VICT);
+    act("\n\r$n is carrying:", FALSE, i, 0, ch, TO_VICT);
     list_obj_to_char(i->carrying, ch, 1, TRUE);
   }
 }
@@ -7265,8 +7249,7 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
          */
         if (IS_TRUSTED(ch) && IS_SET(ch->specials.act, PLR_VNUM))
           sprintf(buf + strlen(buf), "[&+B%5d&N] ",
-                  (t_obj->R_num >=
-                   0 ? obj_index[t_obj->R_num].virtual_number : -1));
+            (t_obj->R_num >= 0 ? obj_index[t_obj->R_num].virtual_number : -1));
         if (t_obj->short_description)
           strcat(buf, t_obj->short_description);
         if (IS_OBJ_STAT(t_obj, ITEM_INVISIBLE))
@@ -7334,30 +7317,9 @@ bool get_equipment_list(P_char ch, char *buf, int list_only)
 
         if (IS_ARTIFACT(t_obj))
         {
-          blood =
-            (int) ((ARTIFACT_BLOOD_DAYS * SECS_PER_REAL_DAY) - (float) ((time(NULL) - t_obj->timer[3])));
-
-          if ((blood / 3600) <= 15)
-          {
-            sprintf(tempbuf, "[&+R%d&+Lh &+R%d&+Lm &+R%d&+Ls&n]",
-                    blood / 3600, (blood / 60) % 60, blood % 60);
-          }
-
-          if ((blood / 3600) > 15 && ((blood / 3600) <= 50))
-          {
-            sprintf(tempbuf, "[&+Y%d&+Lh &+Y%d&+Lm &+Y%d&+Ls&n]",
-                    blood / 3600, (blood / 60) % 60, blood % 60);
-          }
-
-          if ((blood / 3600) >= 50)
-          {
-            sprintf(tempbuf, "[&+G%d&+Lh &+G%d&+Lm &+G%d&+Ls&n]",
-                    blood / 3600, (blood / 60) % 60, blood % 60);
-          }
-
+          artifact_timer_sql( GET_OBJ_VNUM(t_obj), tempbuf );
           strcat(buf, tempbuf);
         }
-
 
         strcat(buf, "\n");
       }
@@ -8543,15 +8505,18 @@ void do_title(P_char ch, char *arg, int cmd)
 
 void do_artireset(P_char ch, char *arg, int cmd)
 {
-  char     name[MAX_INPUT_LENGTH], buf[MAX_INPUT_LENGTH + 4];
+  char     name[MAX_INPUT_LENGTH];
   int      bits, wtype, craft, mat;
   P_char   tmp_char;
   P_obj    tmp_object;
   float    result_space;
 
+  send_to_char("This is no longer supported.  Use the 'artifact timer <artifact name> <timer>' command instead.\n", ch);
+  return;
+
   one_argument(arg, name);
 
-  if (!*name)
+  if( !*name )
   {
     send_to_char("Reset what arti?\n", ch);
     return;
@@ -8559,7 +8524,7 @@ void do_artireset(P_char ch, char *arg, int cmd)
 
   bits = generic_find(name, FIND_OBJ_INV, ch, &tmp_char, &tmp_object);
 
-  if (tmp_object)
+  if( tmp_object )
   {
     if (!IS_ARTIFACT(tmp_object))
     {
@@ -8567,8 +8532,7 @@ void do_artireset(P_char ch, char *arg, int cmd)
       return;
     }
 
-
-    UpdateArtiBlood(ch, tmp_object, 100);
+//    UpdateArtiBlood(ch, tmp_object, 100);
     tmp_object->timer[3] = time(NULL);
     act("$p is reset.", FALSE, ch, tmp_object, 0, TO_CHAR);
     tmp_object->value[7] = number(4, 7);
@@ -8580,8 +8544,7 @@ void do_artireset(P_char ch, char *arg, int cmd)
     return;
   }
 
-  send_to_char
-    ("Cant find that object, make sure you have it in your inventory.\n", ch);
+  send_to_char("Cant find that object, make sure you have it in your inventory.\n", ch);
   return;
 
 }
@@ -9425,7 +9388,7 @@ void where_stat(P_char ch, char *argument)
     }
 
     // Free up the object copy.
-    extract_obj( obj, TRUE );
+    extract_obj( obj, FALSE );
   }
 }
 

@@ -138,7 +138,8 @@
 #define MAX_ZONES            512    /* mob memory shortcut, 'remembers' what zone player is in */
 
 /* room in heavens to store corpses if room is invalid */
-#define CORPSE_STORAGE 40
+#define CORPSE_STORAGE      40
+#define CORPSE_STORAGE_II   45
 
 /* misc thingies */
 #define DEFAULT_MODE (SHOW_NAME | SHOW_ON)      /* information that whod reveals */

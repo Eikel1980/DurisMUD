@@ -23,6 +23,8 @@ using namespace std;
 #include "damage.h"
 #include "reavers.h"
 #include "specs.ravenloft.h"
+#include "vnum.obj.h"
+#include "vnum.room.h"
 
 extern P_char character_list;
 extern P_desc descriptor_list;
@@ -37,7 +39,6 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct str_app_type str_app[];
@@ -65,18 +66,13 @@ int ravenloft_vistani_shout(P_char ch, P_char tch, int cmd, char *arg)
   return FALSE;
 }
 
-#define MALLET_VNUM 58427
-#define CASE_ROOM_VNUM 58564
-#define LOCKED_SWORDCASE 58430
-#define UNLOCKED_SWORDCASE 58428
-
 int ravenloft_bell(P_obj bell, P_char ch, int cmd, char *arg)
 {
    P_obj weapon = NULL;
    P_obj swordcase = NULL;
    P_room room = NULL;
    char buf[MAX_STRING_LENGTH];
-   int roomIndex = -1;
+   int roomIndex;
 
   if( cmd == CMD_SET_PERIODIC )
   {
@@ -88,7 +84,7 @@ int ravenloft_bell(P_obj bell, P_char ch, int cmd, char *arg)
     return FALSE;
   }
 
-  if( !(weapon = ch->equipment[WIELD]) || GET_OBJ_VNUM(weapon) != MALLET_VNUM || !OBJ_WORN_POS(weapon, WIELD) )
+  if( !(weapon = ch->equipment[WIELD]) || GET_OBJ_VNUM(weapon) != VOBJ_RAVENLOFT_MALLET || !OBJ_WORN_POS(weapon, WIELD) )
   {
     return FALSE;
   }
@@ -99,10 +95,10 @@ int ravenloft_bell(P_obj bell, P_char ch, int cmd, char *arg)
   {
     if( isname(arg, "bell") )
     {
-      roomIndex = real_room(CASE_ROOM_VNUM);
+      roomIndex = real_room0(VROOM_RAVENLOFT_SWORDCASE);
       for( swordcase = world[roomIndex].contents; swordcase; swordcase = swordcase->next_content )
       {
-        if( GET_OBJ_VNUM(swordcase) == LOCKED_SWORDCASE )
+        if( GET_OBJ_VNUM(swordcase) == VOBJ_RAVENLOFT_LOCKED_CASE )
         {
           break;
         }
@@ -125,7 +121,7 @@ int ravenloft_bell(P_obj bell, P_char ch, int cmd, char *arg)
         "&+wthe note awakened a long lost secret hidden deep below.\n\n"
         "&+wIn the distance, a &+Ygreat beam of light &+wsurges downwards and &+Willuminates\n"
         "&+wthe &+WHall of &+YHeroes&+w.\n", FALSE, ch, obj, 0, TO_ROOM);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       REMOVE_BIT(swordcase->value[1], CONT_LOCKED);
       sprintf(buf, "&+WA brilliant &+Ybeam &+Wof light shines upon an &+Lancient &+wsword case &+Where.&n");
       set_long_description(swordcase, buf);

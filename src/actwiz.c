@@ -116,7 +116,7 @@ extern int shutdownflag, _reboot, _autoboot, _copyover, _pwipe;
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int top_of_mobt;
 extern int top_of_objt;
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern int used_descs;
 extern struct agi_app_type agi_app[];
@@ -1313,7 +1313,7 @@ void do_deathobj(P_char ch, char *argument, int cmd)
       if((obj = read_object(atoi(vnum), VIRTUAL)))
       {
         sprintf(Gbuf, "%d. [%s] %s\n", count, vnum, obj->short_description);
-        extract_obj(obj, TRUE);
+        extract_obj(obj);
       }
       else
       {
@@ -2030,7 +2030,7 @@ void do_stat(P_char ch, char *argument, int cmd)
       // If there's more than one in the game, pull t_obj.
       if( obj_index[t_obj->R_num].number > 1 )
       {
-        extract_obj(t_obj, TRUE);
+        extract_obj(t_obj);
         t_obj = NULL;
       }
     }
@@ -2056,7 +2056,7 @@ void do_stat(P_char ch, char *argument, int cmd)
       send_to_char("No such object.\n", ch);
       if( t_obj )
       {
-        extract_obj(t_obj, TRUE);
+        extract_obj(t_obj);
       }
       return;
     }
@@ -2473,7 +2473,7 @@ void do_stat(P_char ch, char *argument, int cmd)
 
     if(t_obj)
     {
-      extract_obj(t_obj, TRUE);
+      extract_obj(t_obj);
       t_obj = NULL;
     }
     return;
@@ -3294,23 +3294,21 @@ void do_stat(P_char ch, char *argument, int cmd)
       {
         if((t_obj = read_object(shop_index[i].producing[i2], REAL)))
         {
-          m_virtual =
-            (t_obj->R_num >= 0) ? obj_index[t_obj->R_num].virtual_number : 0;
+          m_virtual = (t_obj->R_num >= 0) ? obj_index[t_obj->R_num].virtual_number : 0;
 
           sprintf(o_buf + strlen(o_buf),
                   "&+Y[&N%5d&+Y] (&N%5d&+Y)&N %12s %s\n", m_virtual,
                   t_obj->R_num, item_types[(int) t_obj->type],
                   ((t_obj->short_description) ? t_obj->
                    short_description : "None"));
-          extract_obj(t_obj, FALSE);
+          extract_obj(t_obj);
         }
         else
         {
           logit(LOG_DEBUG, "do_stat(): obj %d [%d] not loadable (shop stat)",
-                shop_index[i].producing[i2],
-                obj_index[shop_index[i].producing[i2]].virtual_number);
+            shop_index[i].producing[i2], obj_index[shop_index[i].producing[i2]].virtual_number);
           sprintf(o_buf + strlen(o_buf), "&+RNon-existant object: &N%d\n",
-                  shop_index[i].producing[i2]);
+            shop_index[i].producing[i2]);
         }
       }
     }
@@ -4729,9 +4727,9 @@ void do_purge(P_char ch, char *argument, int cmd)
   level = MIN(62, GET_LEVEL(ch));
   one_argument(argument, name);
 
+  // Argument supplied. destroy single object or char
   if(*name)
-  {                             /* argument supplied. destroy single
-                                   object or char */
+  {
     if((vict = get_char_room_vis(ch, name)))
     {
       if((GET_LEVEL(vict) >= level) && IS_PC(vict))
@@ -4751,9 +4749,9 @@ void do_purge(P_char ch, char *argument, int cmd)
                GET_NAME(vict), world[ch->in_room].number);
       logit(LOG_WIZ, "%s has purged %s [%d]", GET_NAME(ch),
             GET_NAME(vict), world[ch->in_room].number);
-      
-      sql_log(ch, WIZLOG, "Purged %s", GET_NAME(vict)); 
-      
+
+      sql_log(ch, WIZLOG, "Purged %s", GET_NAME(vict));
+
       if(IS_NPC(vict))
       {
         extract_char(vict);
@@ -4772,8 +4770,7 @@ void do_purge(P_char ch, char *argument, int cmd)
         vict = NULL;
       }
     }
-    else
-      if((obj = get_obj_in_list_vis(ch, name, world[ch->in_room].contents)))
+    else if((obj = get_obj_in_list_vis(ch, name, world[ch->in_room].contents)))
     {
       if(obj->R_num == real_object(VOBJ_WALLS))
       {
@@ -4792,16 +4789,25 @@ void do_purge(P_char ch, char *argument, int cmd)
           obj->short_description, world[ch->in_room].number);
       logit(LOG_WIZ, "%s has purged %s [%d]", GET_NAME(ch),
           obj->short_description, world[ch->in_room].number);
-      sql_log(ch, WIZLOG, "Purged %s", obj->short_description); 
+      sql_log(ch, WIZLOG, "Purged %s", obj->short_description);
 
-      if(obj_index[obj->R_num].virtual_number == 60001) 
+      if(obj_index[obj->R_num].virtual_number == ALL_SHIPS_VNUM)
       {
         temp = shipObjHash.find(obj);
-        if(!temp) return;
+        if(!temp)
+          return;
         shipObjHash.erase(temp);
         delete_ship(temp);
-      } else {
-        extract_obj(obj, TRUE);
+      }
+      else
+      {
+        if( IS_ARTIFACT(obj) )
+        {
+          act("You purged artifact $p; not removing it from the artifact list.", FALSE, ch, obj, 0, TO_CHAR);
+          sprintf( buf, "&+WIf you wish to clear the artifact entry, use '&+wartifact clear %d&+W'.&n\n\r",
+            GET_OBJ_VNUM(obj) );
+        }
+        extract_obj(obj);
         obj = NULL;
       }
     }
@@ -4859,13 +4865,10 @@ void do_purge(P_char ch, char *argument, int cmd)
       send_to_char("Don't... You would only kill yourself...\n", ch);
       return;
     }
-    wizlog(GET_LEVEL(ch), "%s has purged the room %d",
-           GET_NAME(ch), world[ch->in_room].number);
-    logit(LOG_WIZ, "%s has purged the room %d", GET_NAME(ch),
-          world[ch->in_room].number);
+    wizlog(GET_LEVEL(ch), "%s has purged the room %d", GET_NAME(ch), world[ch->in_room].number);
+    logit(LOG_WIZ, "%s has purged the room %d", GET_NAME(ch), world[ch->in_room].number);
     sql_log(ch, WIZLOG, "Purged room");
-    act("$n gestures... you are surrounded by godly power!",
-        FALSE, ch, 0, 0, TO_ROOM);
+    act("$n gestures... you are surrounded by godly power!", FALSE, ch, 0, 0, TO_ROOM);
     send_to_room("The world seems a little cleaner.\n", ch->in_room);
 
     for (vict = world[ch->in_room].people; vict; vict = next_v)
@@ -4883,12 +4886,20 @@ void do_purge(P_char ch, char *argument, int cmd)
       next_o = obj->next_content;
 
       if(obj->R_num == real_object(VOBJ_WALLS))
-        continue;
-
-      if((obj->wear_flags & ITEM_TAKE) || (obj->type == ITEM_CORPSE &&
-                                            !obj->contains))
       {
-        extract_obj(obj, TRUE);
+        continue;
+      }
+
+      if( IS_ARTIFACT(obj) )
+      {
+        act("Skipping artifact $p.  You must purge that item by name if you want it gone.",
+          FALSE, ch, obj, 0, TO_ROOM);
+        continue;
+      }
+
+      if((obj->wear_flags & ITEM_TAKE) || (obj->type == ITEM_CORPSE && !obj->contains))
+      {
+        extract_obj(obj);
         obj = NULL;
       }
     }
@@ -10155,7 +10166,7 @@ void do_storage(P_char ch, char *arg, int cmd)
     if( (s_obj->type != ITEM_STORAGE) && (s_obj->type != ITEM_CONTAINER) )
     {
       send_to_char("&+RError&n: The item on file must be of type STORAGE or CONTAINER\n", ch);
-      extract_obj(s_obj, TRUE);
+      extract_obj(s_obj, FALSE);
       return;
     }
     if(s_obj->type == ITEM_CONTAINER)
@@ -10164,10 +10175,9 @@ void do_storage(P_char ch, char *arg, int cmd)
     }
     if(s_obj->type == ITEM_STORAGE)
     {
-      if(IS_SET(s_obj->wear_flags, ITEM_TAKE))
-      {
-        REMOVE_BIT(s_obj->wear_flags, ITEM_TAKE);
-      }
+      REMOVE_BIT(s_obj->wear_flags, ITEM_TAKE);
+      // Just making sure.
+      REMOVE_BIT( s_obj->extra_flags, ITEM_ARTIFACT);
       obj_to_room(s_obj, ch->in_room);
       writeSavedItem(s_obj);
       send_to_char("This object now loads here without being in a .zon file.  Please remove it from the .zon file if necessessary to prevent double loading and confusion.\n", ch);
@@ -10179,7 +10189,7 @@ void do_storage(P_char ch, char *arg, int cmd)
     }
     else
     {
-      extract_obj(s_obj, TRUE);
+      extract_obj(s_obj);
     }
     send_to_char("Syntax: storage new <item vnum> - load a new object for storage\n" \
                  "        storage delete <item name> - delete a storage item and all contents within\n" \
@@ -10191,7 +10201,7 @@ void do_storage(P_char ch, char *arg, int cmd)
     if( (s_obj = get_obj_in_list(objarg, world[ch->in_room].contents))
       && (s_obj->type == ITEM_STORAGE) )
     {
-      extract_obj(s_obj, TRUE);
+      extract_obj(s_obj);
       PurgeSavedItemFile(s_obj);
       wizlog( GET_LEVEL(ch), "%s deletes storage item %s from room %d.",
         J_NAME(ch), s_obj->short_description, world[ch->in_room].number);
@@ -10216,7 +10226,7 @@ void do_storage(P_char ch, char *arg, int cmd)
         obj_from_obj(tmpobj);
         obj_to_room(tmpobj, ch->in_room);
       }
-      extract_obj(s_obj, TRUE);
+      extract_obj(s_obj, FALSE);
       PurgeSavedItemFile(s_obj);
       wizlog(GET_LEVEL(ch), "%s removes storage item %s from room %d.",
         J_NAME(ch), s_obj->short_description, world[ch->in_room].number);

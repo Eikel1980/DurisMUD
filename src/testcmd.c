@@ -13,7 +13,7 @@ using namespace std;
 
 extern struct zone_data *zone_table;
 extern struct room_data *world;
-extern int top_of_world;
+extern const int top_of_world;
 extern const flagDef room_bits[];
 extern const char *sector_types[];
 extern const char *sector_symbol[];
@@ -345,7 +345,7 @@ void do_test(P_char ch, char *arg, int cmd)
       one_argument( arg, buff );
       if( (feed_min = atoi(buff)) > 0 )
       {
-        artifact_feed_to_min( arti, feed_min );
+        artifact_feed_to_min_sql( arti, feed_min );
       }
       else
       {

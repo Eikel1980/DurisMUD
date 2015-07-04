@@ -117,7 +117,7 @@ void do_disguise(P_char ch, char *arg, int cmd)
     send_to_char("Can't do that while fighting!\r\n", ch);
     return;
   }
-  
+
   // No diguising for NPC's!
   if (IS_NPC(ch))
     return;
@@ -130,7 +130,7 @@ void do_disguise(P_char ch, char *arg, int cmd)
     send_to_char("You don't know how.\r\n", ch);
     return;
   }
-  
+
   if (!*arg)
   {
     // Removing the disguise
@@ -138,6 +138,7 @@ void do_disguise(P_char ch, char *arg, int cmd)
     {
       remove_disguise(ch, FALSE);
       act("$n starts removing $s disguise.", FALSE, ch, 0, ch, TO_ROOM);
+      send_to_char( "You start removing your disguise.\n\r", ch );
       justice_witness(ch, NULL, CRIME_DISGUISE);
       CharWait(ch, PULSE_VIOLENCE * 3);
       return;
@@ -149,21 +150,19 @@ void do_disguise(P_char ch, char *arg, int cmd)
       return;
     }
   }
-  
+
   // Disguising when already disgusied? I think not!
   if ((*arg) && IS_DISGUISE(ch))
   {
-    send_to_char
-      ("You need to remove your disguise (just 'disguise') before trying to disguise again!\r\n",
-       ch);
+    send_to_char("You need to remove your disguise (just 'disguise') before trying to disguise again!\r\n", ch);
     return;
   }
-  
+
   one_argument(arg, name);
 
   // Search the disguise_list to see if we're looking for an npc disguise
   i = search_block(name, disguise_list, 0);
-  
+
   if (i != -1)
   {
     disguise_npc = TRUE;
@@ -181,14 +180,14 @@ void do_disguise(P_char ch, char *arg, int cmd)
         target = NULL;
       }
     }
-    
+
     // Character dosn't exist
     if (!target)
     {
       send_to_char("Disguise as who?\r\n", ch);
       return;
     }
-    
+
     // disguise as himself?
     if (target == ch)
     {
@@ -197,17 +196,16 @@ void do_disguise(P_char ch, char *arg, int cmd)
         free_char(target);
       return;
     }
-    
+
     // No disguising as immortals
     if (!IS_TRUSTED(ch) && target && GET_LEVEL(target) > 56)
     {
-      send_to_char("You really don't want to disguise yourself as a God!\r\n",
-                   ch);
+      send_to_char("You really don't want to disguise yourself as a God!\r\n", ch);
       if (target)
         free_char(target);
       return;
     }
-    
+
     // Dissalow imms disguising as higher levle imms
     if (IS_TRUSTED(ch))
     {
@@ -226,11 +224,10 @@ void do_disguise(P_char ch, char *arg, int cmd)
       if (GET_RACE(target) == RACE_ILLITHID ||
           GET_RACE(target) == RACE_CENTAUR ||
           GET_RACE(target) == RACE_THRIKREEN ||
-          GET_RACE(target) == RACE_MINOTAUR || 
+          GET_RACE(target) == RACE_MINOTAUR ||
           GET_RACE(target) == RACE_TROLL)
       {
-        send_to_char("Disguising into that is just short of impossible.\r\n",
-                     ch);
+        send_to_char("Disguising into that is just short of impossible.\r\n", ch);
         if (target)
           free_char(target);
         return;
@@ -290,11 +287,10 @@ void do_disguise(P_char ch, char *arg, int cmd)
       send_to_char(", and ruin your disguise kit in the process.\r\n", ch);
       if (equipped)
         unequip_char(ch, HOLD);
-      extract_obj(temp, TRUE);
+      extract_obj(temp, TRUE); // An artifact disguise kit?
     }
     else
-      send_to_char
-        (", but manage to salvage the rest of the kit's supplies.\r\n", ch);
+      send_to_char(", but manage to salvage the rest of the kit's supplies.\r\n", ch);
     if (target)
       free_char(target);
 
@@ -371,7 +367,7 @@ void do_disguise(P_char ch, char *arg, int cmd)
     {
       if (equipped)
         unequip_char(ch, HOLD);
-      extract_obj(temp, TRUE);
+      extract_obj(temp, TRUE); // An artifact disguise kit?
     }
     notch_skill(ch, SKILL_DISGUISE, 6.25);
     CharWait(ch, PULSE_VIOLENCE * 5);

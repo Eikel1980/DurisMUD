@@ -18,6 +18,7 @@
 #include "disguise.h"
 #include "graph.h"
 #include "ctf.h"
+#include "vnum.obj.h"
 
 extern P_index obj_index;
 extern P_char character_list;
@@ -39,7 +40,6 @@ extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int hometown[];
-extern int top_of_world;
 extern struct str_app_type str_app[];
 extern struct con_app_type con_app[];
 extern struct time_info_data time_info;
@@ -110,57 +110,66 @@ void spell_vapor_armor(int level, P_char ch, char *arg, int type,
   }
 }
 
-void spell_faerie_sight(int level, P_char ch, char *arg, int type,
-                        P_char victim, P_obj tar_obj)
+void spell_faerie_sight(int level, P_char ch, char *arg, int type, P_char victim, P_obj tar_obj)
 {
   struct affected_type af;
-  int count;    
+  int count;
   P_obj    t_obj, next_obj;
   P_obj    used_obj[32];
-  
-        memset(&af, 0, sizeof(af));
 
-  if (!(victim && ch))
+  if( !(victim && ch) )
   {
-    logit(LOG_EXIT, "assert: bogus params");
+    logit(LOG_EXIT, "spell_faerie_sight: bogus params.");
     raise(SIGSEGV);
   }
 
-  if (affected_by_spell(victim, SPELL_FAERIE_SIGHT))
+  if( affected_by_spell(victim, SPELL_FAERIE_SIGHT) )
   {
     send_to_char("Nothing new happens.\r\n", ch);
     return;
   }
 
+  memset(&af, 0, sizeof(af));
   af.type = SPELL_FAERIE_SIGHT;
   af.duration = 25;
   af.bitvector = AFF_FARSEE;
 
   affect_to_char(victim, &af);
 
-  if (GET_LEVEL(ch) >= 36)
+  if( GET_LEVEL(ch) >= 36 )
   {
     af.bitvector = af.bitvector | AFF_DETECT_INVISIBLE;
     af.bitvector2 = 0;
   }
- 
+
+/* Changed this to the below, can change it back if 2 dusts do anything.
   for (count = 0, t_obj = ch->carrying; t_obj; t_obj = next_obj)
   {
     next_obj = t_obj->next_content;
 
-    if (obj_index[t_obj->R_num].virtual_number == 824)
+    if (obj_index[t_obj->R_num].virtual_number == VOBJ_INGRED_FAERIE_DUST)
     {
       used_obj[count] = t_obj;
       count++;
     }
   }
-        
-  if (GET_LEVEL(ch) >= 50 || count > 0)
+
+  if( GET_LEVEL(ch) >= 50 || count > 0 )
   {
     af.bitvector2 = AFF2_DETECT_MAGIC | AFF2_DETECT_GOOD | AFF2_DETECT_EVIL;
-    
-    if (count >  0)
-       extract_obj(used_obj[0], TRUE);
+
+    if( count > 0 )
+       extract_obj(used_obj[0]);
+  }
+*/
+  for( t_obj = ch->carrying; t_obj; t_obj = t_obj->next_content )
+  {
+    if( GET_OBJ_VNUM(t_obj) == VOBJ_INGRED_FAERIE_DUST )
+    {
+      af.bitvector2 = AFF2_DETECT_MAGIC | AFF2_DETECT_GOOD | AFF2_DETECT_EVIL;
+      extract_obj(t_obj);
+      break;
+    }
   }
 
   affect_to_char(victim, &af);
@@ -168,8 +177,7 @@ void spell_faerie_sight(int level, P_char ch, char *arg, int type,
 }
 
 
-void spell_cold_snap(int level, P_char ch, char *arg, int type, P_char victim,
-                     P_obj tar_obj)
+void spell_cold_snap(int level, P_char ch, char *arg, int type, P_char victim, P_obj tar_obj)
 {
   int      num;
   struct affected_type af, af2;

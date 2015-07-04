@@ -48,7 +48,7 @@ extern int MobSpellIndex[MAX_SKILLS];
 extern int equipment_pos_table[CUR_MAX_WEAR][3];
 extern int no_specials;
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
-extern int top_of_world;
+extern const int top_of_world;
 extern const int rev_dir[];
 extern struct zone_data *zone_table;
 extern char *troop_types[];
@@ -3602,12 +3602,11 @@ void nuke_portal(int rnum)
 
   P_obj    obj;
 
-  obj =
-    get_obj_in_list_num(real_object(TELEPORTER_VNUM), world[rnum].contents);
+  obj = get_obj_in_list_num(real_object(TELEPORTER_VNUM), world[rnum].contents);
   if (!obj)
     return;
   obj_from_room(obj);
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 }
 
 void nuke_doorways(int rnum)
@@ -3615,20 +3614,18 @@ void nuke_doorways(int rnum)
 
   P_obj    obj = NULL;
 
-  obj =
-    get_obj_in_list_num(real_object(HOUSE_INNER_DOOR), world[rnum].contents);
+  obj = get_obj_in_list_num(real_object(HOUSE_INNER_DOOR), world[rnum].contents);
   if (obj)
   {
     obj_from_room(obj);
-    extract_obj(obj, TRUE);
+    extract_obj(obj);
   }
   /* dont second guess, just look for and yank any type */
-  obj =
-    get_obj_in_list_num(real_object(HOUSE_OUTER_DOOR), world[rnum].contents);
+  obj = get_obj_in_list_num(real_object(HOUSE_OUTER_DOOR), world[rnum].contents);
   if (obj)
   {
     obj_from_room(obj);
-    extract_obj(obj, TRUE);
+    extract_obj(obj);
   }
   return;
 }

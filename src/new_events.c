@@ -75,7 +75,7 @@ extern int errno;
 extern int pulse;
 extern int top_of_mobt;
 extern int top_of_objt;
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern struct time_info_data time_info;
 extern struct zone_data *zone;
@@ -783,11 +783,11 @@ void ne_init_events(void)
   for( j = 0; j < top_of_world; j++ )
     room_light(j, REAL);
 
-  // Checks for artis rented with negative timers..
-  add_event( event_check_arti_poof, 30 * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
+  // Checks ALL artis rented and non for negative timers..
+  add_event( event_artifact_check_poof_sql, 35 * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
 
-  // Makes artifacts fight and lose time on timers.
-  add_event( event_artifact_wars, 20 * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
+  // Makes artifacts fight and lose time on timers (penalty for multiple artis).
+  add_event( event_artifact_wars_sql, 20 * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
 
   logit(LOG_STATUS, "Done scheduling events.\n");
 }
@@ -797,7 +797,7 @@ void zone_purge(int zone_number)
    P_char vict, next_v;
    P_obj obj, next_o;
    struct zone_data to_purge = zone_table[zone_number];
-   int k;   
+   int k;
 
    for(k = to_purge.real_bottom;k != NOWHERE && k <= to_purge.real_top;k++)
    {
@@ -817,12 +817,13 @@ void zone_purge(int zone_number)
 
          if(obj->R_num == real_object(VOBJ_WALLS))
            continue;
-  
+
          if(obj->type == ITEM_CORPSE && !obj->contains) // Don't purge corpses w/ contents
          {}
-         else
+         // Don't purge artis either.
+         else if( !IS_ARTIFACT(obj) )
          {
-           extract_obj(obj, TRUE);
+           extract_obj(obj, TRUE); // Does not include artis.
            obj = NULL;
          }
       }

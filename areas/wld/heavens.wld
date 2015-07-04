@@ -473,6 +473,10 @@ S
 &+Lbody parts do not give off the most pleasant smell.
 ~
 1 168329416 0
+D0
+~
+~
+0 0 45
 D2
 ~
 ~
@@ -532,6 +536,20 @@ D6
 ~
 ~
 3 0 15
+S
+#45
+&+LCorpse &+cStorage &+rII&n~
+    &+LRows upon rows of dirty tables line this room, with piles of disgusting
+&+Lbody &+rparts&+L and corpses filling every available flat surface. There is
+&+La &+cchill&+L in the air, designed to preserve the corpses. If the room were
+&+Lany warmer, a disgusting &+ystench&+L would fill the air as piles of &+Rbloody
+&+Lbody parts do not give off the most pleasant smell.
+~
+1 168329416 15
+D2
+~
+~
+0 0 40
 S
 #66
 &+CKharne's Glorious Room of Meditation&N~

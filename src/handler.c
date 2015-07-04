@@ -53,7 +53,7 @@ extern char *coin_abbrev[];
 extern const char *dirs[];
 extern const struct stat_data stat_factor[];
 extern int rev_dir[];
-extern int top_of_world;
+extern const int top_of_world;
 extern struct con_app_type con_app[];
 extern struct dex_app_type dex_app[];
 extern struct max_stat max_stats[];
@@ -1411,45 +1411,43 @@ bool char_to_room(P_char ch, int room, int dir)
   return TRUE;
 }
 
-/*
- * give an object to a char
- */
-
+// Give an object to a char
 void obj_to_char(P_obj object, P_char ch)
 {
-  P_obj    o;
-  char Gbuf[MAX_STRING_LENGTH];
+  P_obj o;
+  char  Gbuf[MAX_STRING_LENGTH];
 
-  if (!ch)
+  if( !ch )
   {
-    logit(LOG_MOB, "call to obj_to_char with no ch");
+    logit(LOG_MOB, "obj_to_char: no ch, obj vnum %d", object ? GET_OBJ_VNUM(object) : -1);
+    logit(LOG_OBJ, "obj_to_char: no ch, obj vnum %d", object ? GET_OBJ_VNUM(object) : -1);
     return;
   }
-  
-  if(!object)
+
+  if( !object )
   {
     if(IS_NPC(ch))
     {
-      logit(LOG_OBJ, "call to obj_to_char with no obj: mob (%d).", GET_VNUM(ch));
+      logit(LOG_OBJ, "obj_to_char: no obj: mob (%d).", GET_VNUM(ch));
     }
     else
     {
-      logit(LOG_OBJ, "call to obj_to_char with no obj: player (%s).", GET_NAME(ch));
+      logit(LOG_OBJ, "obj_to_char: no obj: player (%s).", GET_NAME(ch));
     }
     return;
   }
-  
-  if (!OBJ_NOWHERE(object))
+
+  if( !OBJ_NOWHERE(object) )
   {
-    logit(LOG_DEBUG /*DEBUG*/, "wonders never cease, obj not in NOWHERE");
+    logit(LOG_DEBUG, "obj_to_char: wonders never cease, obj vnum %d not in NOWHERE", GET_OBJ_VNUM(object));
     return;
 /*
     act("&+gWith a scurry, bugs appear from nowhere, engulfing $p.", TRUE, ch, object, 0, TO_ROOM);
-    extract_obj(object, TRUE);
+    extract_obj(object, TRUE); // A bug -> eating an arti.. ouch.
     return;
 */
   }
-  
+
   if (IS_OBJ_STAT2(object, ITEM2_CRUMBLELOOT) && IS_PC(ch) && !IS_TRUSTED(ch))
   {
     if (ch->in_room)
@@ -1457,12 +1455,12 @@ void obj_to_char(P_obj object, P_char ch)
       sprintf(Gbuf, "&+LThe magic within %s &+Lfades causing it to crumble to dust.\r\n", object->short_description);
       send_to_room(Gbuf, ch->in_room);
     }
-    extract_obj(object, TRUE);
+    extract_obj(object, TRUE); // Crumbleloot arti?
     object = NULL;
     return;
   }
 
-  if (ch->carrying && (ch->carrying->R_num == object->R_num))
+  if( ch->carrying && (ch->carrying->R_num == object->R_num) )
   {
     object->next_content = ch->carrying;
     ch->carrying = object;
@@ -1488,9 +1486,6 @@ void obj_to_char(P_obj object, P_char ch)
     }
   }
 
-  if (IS_ARTIFACT(object))
-    add_owned_artifact(object, ch, object->timer[3]);
-
   if (IS_SET(object->extra_flags, ITEM_LIT) ||
       ((object->type == ITEM_LIGHT) && (object->value[2] == -1)))
   {
@@ -1503,9 +1498,14 @@ void obj_to_char(P_obj object, P_char ch)
   GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(object);
   IS_CARRYING_N(ch)++;
 
-if(object->g_key == 0 && IS_PC(ch) && GET_LEVEL(ch) < 57 && GET_PID(ch) < 10000000)
+  if( IS_ARTIFACT(object) )
   {
-   object->g_key = 1;
+    artifact_update_location_sql( object );
+  }
+
+  if(object->g_key == 0 && IS_PC(ch) && GET_LEVEL(ch) < 57 && GET_PID(ch) < 10000000)
+  {
+    object->g_key = 1;
   }
 }
 
@@ -1513,7 +1513,7 @@ if(object->g_key == 0 && IS_PC(ch) && GET_LEVEL(ch) < 57 && GET_PID(ch) < 100000
  * take an object from a char
  */
 
-void obj_from_char(P_obj object, int gone_for_good)
+void obj_from_char(P_obj object)
 {
   P_obj    tmp;
   P_char   ch;
@@ -1534,10 +1534,6 @@ void obj_from_char(P_obj object, int gone_for_good)
 
   ch = object->loc.carrying;
 
-
-  if (IS_ARTIFACT(object) && gone_for_good)
-    remove_owned_artifact(object, object->loc.carrying, TRUE);
-
   if (IS_SET(object->extra_flags, ITEM_LIT) ||
       ((object->type == ITEM_LIGHT) && (object->value[2] == -1)))
   {
@@ -1548,7 +1544,7 @@ void obj_from_char(P_obj object, int gone_for_good)
   IS_CARRYING_N(object->loc.carrying)--;
   object->z_cord = object->loc.carrying->specials.z_cord;
   object->loc_p = LOC_NOWHERE;
-  object->loc.room = 0;
+  object->loc.room = NOWHERE;
   object->next_content = NULL;
 }
 
@@ -1579,22 +1575,26 @@ void equip_char(P_char ch, P_obj obj, int pos, int nodrop)
 
   if (!(ch && obj && (pos >= 0) && (pos < MAX_WEAR) && !ch->equipment[pos]))
   {
-    logit(LOG_EXIT, "assert: bogus args in equip_char");
+    logit(LOG_EXIT, "equip_char: !ch or !obj or pos out of bounds or !ch->equipment[pos].");
+    logit(LOG_EXIT, "equip_char: ch: '%s' %d, obj: '%s' %d, pos: %d.",
+      (!ch) ? "NULL" : J_NAME(ch), !IS_ALIVE(ch) ? -1 : IS_NPC(ch) ? GET_VNUM(ch) : GET_PID(ch),
+      (!obj) ? "NULL" : OBJ_SHORT(obj), (!obj) ? -1 : GET_OBJ_VNUM(obj), pos );
     raise(SIGSEGV);
   }
-  if (!OBJ_NOWHERE(obj))
+  if( !OBJ_NOWHERE(obj) )
   {
-    logit(LOG_DEBUG,
-          "and now for something completely different, obj not in NOWHERE");
+    logit(LOG_DEBUG, "equip_char: and now for something completely different, obj not in NOWHERE");
     return;
   }
-
-  if (IS_ARTIFACT(obj))
-    add_owned_artifact(obj, ch, obj->timer[3]);
 
   ch->equipment[pos] = obj;
   obj->loc.wearing = ch;
   obj->loc_p = LOC_WORN;
+
+  if( IS_ARTIFACT(obj) )
+  {
+    artifact_update_location_sql( obj );
+  }
 
   if (IS_PC(ch) && GET_ITEM_TYPE(ch->equipment[pos]) == ITEM_ARMOR)
     ch->only.pc->prestige += obj->value[2];
@@ -1603,8 +1603,7 @@ void equip_char(P_char ch, P_obj obj, int pos, int nodrop)
   /*
    * light works though
    */
-  if (IS_SET(obj->extra_flags, ITEM_LIT) ||
-      ((obj->type == ITEM_LIGHT) && obj->value[2]))
+  if (IS_SET(obj->extra_flags, ITEM_LIT) || ((obj->type == ITEM_LIGHT) && obj->value[2]))
   {
     char_light(ch);
     room_light(ch->in_room, REAL);
@@ -1616,16 +1615,18 @@ void equip_char(P_char ch, P_obj obj, int pos, int nodrop)
     {
       act("&+YA magical aura forms around your body.&n", FALSE, ch, obj, 0,
           TO_CHAR);
-      ((*skills[o_af->data].spell_pointer) ((int) GET_LEVEL(ch), ch, 0,
-                                            SPELL_TYPE_SPELL, ch, 0));
+      ((*skills[o_af->data].spell_pointer) ((int) GET_LEVEL(ch), ch, 0, SPELL_TYPE_SPELL, ch, 0));
     }
 }
 
+// Removes an object from a char's equipped slot [pos].
+// Note: There's no need to update arti data here, as we will update when it's
+//   put somewhere other than NOWHERE.  This is important because we don't want to
+//   update the arti info when eq is removed when someone rents.
 P_obj unequip_char(P_char ch, int pos)
 {
   P_obj    obj;
   struct obj_affect *o_af;
-
 
   if (!(ch && (pos >= 0) && (pos < MAX_WEAR) && ch->equipment[pos]))
   {
@@ -1645,12 +1646,12 @@ P_obj unequip_char(P_char ch, int pos)
   all_affects(ch, FALSE);
   ch->equipment[pos] = NULL;
   obj->loc_p = LOC_NOWHERE;
+  obj->loc.room = NOWHERE;
   all_affects(ch, TRUE);
 
   balance_affects(ch);
 
-  if (IS_SET(obj->extra_flags, ITEM_LIT) ||
-      ((obj->type == ITEM_LIGHT) && obj->value[2]))
+  if( IS_SET(obj->extra_flags, ITEM_LIT) || ((obj->type == ITEM_LIGHT) && obj->value[2]) )
   {
     char_light(ch);
     room_light(ch->in_room, REAL);
@@ -1665,19 +1666,19 @@ void unequip_all(P_char ch)
   for (int i = 0; i < MAX_WEAR; i++)
     if (ch->equipment[i])
       obj_to_char(unequip_char(ch, i), ch);
-}  
+}
 
 void transfer_inventory(P_char ch, P_char recipient)
 {
   P_obj o, next_obj;
-  
+
   for( o = ch->carrying; o; o = next_obj )
   {
     next_obj = o->next_content;
-    obj_from_char(o, FALSE);
+    obj_from_char(o);
     obj_to_char(o, recipient);
   }
-}  
+}
 
 int get_number(char **name)
 {
@@ -2073,19 +2074,17 @@ void obj_to_room(P_obj object, int room)
   P_nevent  e1;
   P_obj    o;
 
-  if (!OBJ_NOWHERE(object))
+  if( !OBJ_NOWHERE(object) )
   {
-    logit(LOG_DEBUG, "here's a switch, object NOT in NOWHERE");
+    logit(LOG_DEBUG, "obj_to_room: here's a switch, object NOT in NOWHERE");
     return;
   }
-  if ((room < 0) || (room > top_of_world))
+  if( (room < 0) || (room > top_of_world) )
   {
-    wizlog(56, "to_room %d", room);
-    logit(LOG_EXIT, "bogus room in obj_to_room");
+    wizlog(56, "obj_to_room: bad room Rnum %d", room);
+    logit(LOG_EXIT, "obj_to_room: bogus room Rnum %d", room);
     return;
   }
-  if (IS_ARTIFACT(object))
-    remove_owned_artifact(object, NULL, TRUE);
 
   if (IS_WATER_ROOM(room) && !IS_SET(object->extra_flags, ITEM_FLOAT) &&
       (object->type != ITEM_BOAT) && (object->type != ITEM_SHIP) &&
@@ -2098,7 +2097,7 @@ void obj_to_room(P_obj object, int room)
       if (CAN_SEE_OBJ(i, object) && !object->z_cord)
         act("$p sinks into the water.", TRUE, i, object, 0, TO_CHAR);
 
-    if (/*number(0, 1) ||*/ IS_ARTIFACT(object)) 
+    if( /*number(0, 1) ||*/ IS_ARTIFACT(object) )
     {
       object->z_cord = -(distance_from_shore(room));
     }
@@ -2111,12 +2110,15 @@ void obj_to_room(P_obj object, int room)
     {
     for (i = world[room].people; i; i = i->next_in_room)
         if (CAN_SEE_OBJ(i, object) && !object->z_cord)
-          act("$p gets swept away in the current!", TRUE, i, object, 0,
-              TO_CHAR);
-      //extract_obj(object, TRUE);
+          act("$p gets swept away in the current!", TRUE, i, object, 0, TO_CHAR);
+      //extract_obj(object, TRUE); // Sunken arti?
       // Sunk items goto vault under poseidon
       obj_from_room(object);
       obj_to_room(object, real_room(31724));
+      if( IS_ARTIFACT(object) )
+      {
+        artifact_update_location_sql( object );
+      }
       return;
     }
     else
@@ -2139,14 +2141,13 @@ void obj_to_room(P_obj object, int room)
   }
   if (world[room].contents && (world[room].contents->R_num == object->R_num))
   {
-    if (obj_index[object->R_num].virtual_number == 3)
+    if (obj_index[object->R_num].virtual_number == VOBJ_COINS)
     {
       /* generic 'pile of coins' object, merge them */
-      add_coins(world[room].contents,
-                object->value[0], object->value[1], object->value[2],
-                object->value[3]);
+      add_coins(world[room].contents, object->value[0], object->value[1], object->value[2], object->value[3]);
       object->loc_p = LOC_NOWHERE;
-      extract_obj(object, TRUE);
+      object->loc.room = NOWHERE;
+      extract_obj(object);
       return;
     }
     else
@@ -2162,14 +2163,13 @@ void obj_to_room(P_obj object, int room)
     {
       if (o->next_content && (o->next_content->R_num == object->R_num))
       {
-        if (obj_index[object->R_num].virtual_number == 3)
+        if (obj_index[object->R_num].virtual_number == VOBJ_COINS)
         {
           /* generic 'pile of coins' object, merge them */
-          add_coins(o->next_content,
-                    object->value[0], object->value[1], object->value[2],
-                    object->value[3]);
+          add_coins(o->next_content, object->value[0], object->value[1], object->value[2], object->value[3]);
           object->loc_p = LOC_NOWHERE;
-          extract_obj(object, TRUE);
+          object->loc.room = NOWHERE;
+          extract_obj(object);
           return;
         }
         object->next_content = o->next_content;
@@ -2197,6 +2197,10 @@ void obj_to_room(P_obj object, int room)
   if (OBJ_FALLING(object))
   {
     falling_obj(object, 1, false);
+  }
+  if( IS_ARTIFACT(object) )
+  {
+    artifact_update_location_sql( object );
   }
 }
 
@@ -2360,7 +2364,7 @@ void obj_from_obj(P_obj obj)
     }
 
     obj->loc_p = LOC_NOWHERE;
-    obj->loc.inside = NULL;
+    obj->loc.room = NOWHERE;
     obj->next_content = NULL;
 
     if (GET_ITEM_TYPE(obj_from) == ITEM_STORAGE)
@@ -2390,7 +2394,8 @@ void object_list_new_owner(P_obj list, P_char ch)
 }
 
 /* Extract an object from the world */
-
+// Ok, gone for good should _only_ be TRUE if we're removing an arti from the game,
+//   such that we want to reset it's timer and allow it to pop next boot/crash.
 void extract_obj(P_obj obj, int gone_for_good)
 {
   int      i;
@@ -2398,13 +2403,13 @@ void extract_obj(P_obj obj, int gone_for_good)
 
   if (!obj)
   {
-    logit(LOG_EXIT, "NULL obj in call to extract_obj");
+    logit(LOG_EXIT, "extract_obj: NULL obj!");
     raise(SIGSEGV);
   }
   if (OBJ_ROOM(obj))
     obj_from_room(obj);
   else if (OBJ_CARRIED(obj))
-    obj_from_char(obj, gone_for_good);
+    obj_from_char(obj);
   else if (OBJ_WORN(obj))
   {
     for (i = 0; i < MAX_WEAR; i++)
@@ -2446,8 +2451,16 @@ void extract_obj(P_obj obj, int gone_for_good)
   disarm_obj_nevents(obj, 0);
   ClearObjEvents(obj);
 
-  if (IS_ARTIFACT(obj) && gone_for_good)
-    remove_owned_artifact(obj, NULL, TRUE);
+  /* We don't want to do this because extract_obj( obj, TRUE ) gets called when
+   *   someone rents.  We need to handle this in the next function one step up in the stack.
+   *   Oh, the joy of looking through a zillion files. heh.
+   * Well, in retrospect, we just need to not have rent use the TRUE argument, along
+   *   with the rest of the calls to extract_obj.
+   */
+  if( IS_ARTIFACT(obj) && gone_for_good )
+  {
+    remove_owned_artifact_sql( obj );
+  }
 
   /*
    * yank it from the object_list, very fast now
@@ -2483,7 +2496,6 @@ void extract_obj(P_obj obj, int gone_for_good)
  * object decay and be extracted.  Mainly for use on corpses of course,
  * but other objects may be handled in the same way.
  */
-
 void Decay(P_obj obj)
 {
   P_char   carrier = NULL;
@@ -2493,13 +2505,13 @@ void Decay(P_obj obj)
   bool     genericdecay = TRUE;
 
 
-  if (!obj)
+  if( !obj )
   {
-    logit(LOG_DEBUG, "Decay():  NULL obj");
+    logit(LOG_DEBUG, "Decay:  NULL obj");
     return;
   }
 
-  if (OBJ_ROOM(obj))
+  if( OBJ_ROOM(obj) )
   {
     dest = 1;
 
@@ -2509,11 +2521,9 @@ void Decay(P_obj obj)
     {
       genericdecay = !(*obj_index[obj->R_num].func.obj) (obj, NULL, CMD_DECAY, NULL);
     }
-    else if (obj->R_num == real_object(2))
+    // Corpse
+    else if (obj->R_num == real_object(VOBJ_CORPSE))
     {
-      /*
-       * corpses
-       */
       if (world[obj->loc.room].people)
       {
         act("The winds of time have reclaimed $p.", 0, world[obj->loc.room].people, obj, 0, TO_ROOM);
@@ -2525,12 +2535,9 @@ void Decay(P_obj obj)
         corpselog = TRUE;
       }
     }
-
+    // Everything else
     if( genericdecay )
     {
-      /*
-       * everything else
-       */
       if (world[obj->loc.room].people)
       {
         act("$p crumbles to dust and blows away.", TRUE, world[obj->loc.room].people, obj, 0, TO_ROOM);
@@ -2543,18 +2550,14 @@ void Decay(P_obj obj)
       {
         if (!VIRTUAL_EXIT(obj->loc.room, obj->value[1]))
         {
-          logit(LOG_DEBUG,
-                "Decay(): error - wall is not on valid exit - room rnum #%d, value[1] %d (trying to remove EX_WALLED)\r\n",
-                obj->loc.room, obj->value[1]);
+          logit(LOG_DEBUG, "Decay(): error - wall is not on valid exit - room rnum #%d, value[1] %d"
+            " (trying to remove EX_WALLED)\r\n", obj->loc.room, obj->value[1]);
         }
         else
         {
-          REMOVE_BIT(VIRTUAL_EXIT(obj->loc.room, obj->value[1])->exit_info,
-                     EX_WALLED);
-          REMOVE_BIT(VIRTUAL_EXIT(obj->loc.room, obj->value[1])->exit_info,
-                     EX_BREAKABLE);
-          REMOVE_BIT(VIRTUAL_EXIT(obj->loc.room, obj->value[1])->exit_info,
-                     EX_ILLUSION);
+          REMOVE_BIT(VIRTUAL_EXIT(obj->loc.room, obj->value[1])->exit_info, EX_WALLED);
+          REMOVE_BIT(VIRTUAL_EXIT(obj->loc.room, obj->value[1])->exit_info, EX_BREAKABLE);
+          REMOVE_BIT(VIRTUAL_EXIT(obj->loc.room, obj->value[1])->exit_info, EX_ILLUSION);
         }
       }
     }
@@ -2568,9 +2571,8 @@ void Decay(P_obj obj)
      * if it is being carried, and changes the load.  So find carrier
      * and load.
      */
-
-    for (t_obj = obj->loc.inside; OBJ_INSIDE(t_obj);
-         t_obj = t_obj->loc.inside) ;
+    for( t_obj = obj->loc.inside; OBJ_INSIDE(t_obj); t_obj = t_obj->loc.inside )
+      ;
     if (OBJ_CARRIED(t_obj))
     {
       carrier = t_obj->loc.carrying;
@@ -2578,10 +2580,8 @@ void Decay(P_obj obj)
 
       if (IS_SET(obj->value[1], PC_CORPSE))
       {
-        logit(LOG_CORPSE, "%s decayed in possession of %s in room %d.",
-              obj->short_description,
-              (IS_PC(carrier) ? GET_NAME(carrier) :
-               carrier->player.short_descr), world[carrier->in_room].number);
+        logit(LOG_CORPSE, "%s decayed in possession of %s in room %d.", obj->short_description,
+          (IS_PC(carrier) ? GET_NAME(carrier) : carrier->player.short_descr), world[carrier->in_room].number);
         corpselog = TRUE;
       }
     }
@@ -2592,10 +2592,8 @@ void Decay(P_obj obj)
 
       if (IS_SET(obj->value[1], PC_CORPSE))
       {
-        logit(LOG_CORPSE, "%s decayed while equipped (!) by %s in room %d.",
-              obj->short_description,
-              (IS_PC(carrier) ? GET_NAME(carrier) :
-               carrier->player.short_descr), world[carrier->in_room].number);
+        logit(LOG_CORPSE, "%s decayed while equipped (!) by %s in room %d.", obj->short_description,
+          (IS_PC(carrier) ? GET_NAME(carrier) : carrier->player.short_descr), world[carrier->in_room].number);
         corpselog = TRUE;
       }
     }
@@ -2608,17 +2606,16 @@ void Decay(P_obj obj)
 
     if (OBJ_WORN(obj))
     {
-      for (pos = 0; pos < MAX_WEAR; pos++)
-        if (obj->loc.wearing->equipment[pos] &&
-            (obj->loc.wearing->equipment[pos] == obj))
+      for( pos = 0; pos < MAX_WEAR; pos++ )
+        if( obj->loc.wearing->equipment[pos] && (obj->loc.wearing->equipment[pos] == obj) )
           break;
 
-      if (obj->loc.wearing->equipment[pos] != obj)
+      if( obj->loc.wearing->equipment[pos] != obj )
       {
         logit(LOG_DEBUG, "Decay():  equipped obj %d (%s) not in equip (%s)",
-              obj->R_num, obj->name, GET_NAME(obj->loc.wearing));
+          obj->R_num, obj->name, GET_NAME(obj->loc.wearing));
         balance_affects(obj->loc.wearing);
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // If, God forbid, an artifact decays, I guess we remove it from active artis list.
         return;
       }
       obj_to_char(unequip_char(obj->loc.wearing, pos), obj->loc.wearing);
@@ -2628,7 +2625,7 @@ void Decay(P_obj obj)
     }
     if (OBJ_CARRIED(obj))
     {
-      if (obj->R_num == real_object(2))
+      if (obj->R_num == real_object(VOBJ_CORPSE))
       {
         /*
          * corpses
@@ -2652,40 +2649,32 @@ void Decay(P_obj obj)
           corpselog = TRUE;
         }
       }
+      // Everything else
       else
       {
-        /*
-         * everything else
-         */
         if (obj->contains)
-          act
-            ("$p crumbles in your hands, dumping its contents on the ground.",
-             FALSE, obj->loc.carrying, obj, 0, TO_CHAR);
+          act("$p crumbles in your hands, dumping its contents on the ground.",
+            FALSE, obj->loc.carrying, obj, 0, TO_CHAR);
         else
           act("$p crumbles in your hands, leaving no trace.",
-              FALSE, obj->loc.carrying, obj, 0, TO_CHAR);
+            FALSE, obj->loc.carrying, obj, 0, TO_CHAR);
       }
 
       if ((pos = obj->loc.carrying->in_room) != NOWHERE)
       {
-        obj_from_char(obj, TRUE);
+        obj_from_char(obj);
         obj_to_room(obj, pos);
-        if (IS_ARTIFACT(obj))
-          remove_owned_artifact(obj, NULL, TRUE);
         dest = 1;
       }
       else
       {
-        extract_obj(obj, TRUE);
+        extract_obj(obj, TRUE); // Nowhere to drop artifact. :(
         return;
       }
     }
     else
     {
-      /*
-       * ugly
-       */
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Nowhere to drop artifact. :(
       return;
     }
   }
@@ -2702,8 +2691,10 @@ void Decay(P_obj obj)
       if (dest == 1)
       {
         obj_to_room(t_obj, obj->loc.room);
-        if (IS_ARTIFACT(t_obj))
-          remove_owned_artifact(t_obj, NULL, TRUE);
+        if( IS_ARTIFACT(t_obj) )
+        {
+          artifact_update_location_sql(t_obj);
+        }
       }
       else
       {
@@ -2711,7 +2702,7 @@ void Decay(P_obj obj)
       }
     }
   }
-  extract_obj(obj, TRUE);
+  extract_obj(obj, TRUE); // If, God forbid, an artifact decays, I guess we remove it from active artis list.
 
   if (carrier)
   {
@@ -2834,8 +2825,7 @@ void extract_char(P_char ch)
 #if 0
   if (IS_SHADOWING(ch))
   {
-    act("You stop shadowing $N.",
-        TRUE, ch, 0, GET_CHAR_SHADOWED(ch), TO_CHAR);
+    act("You stop shadowing $N.", TRUE, ch, 0, GET_CHAR_SHADOWED(ch), TO_CHAR);
     FreeShadowedData(ch, GET_CHAR_SHADOWED(ch));
   }
   else
@@ -2970,12 +2960,11 @@ void extract_char(P_char ch)
   for (l = 0; l < MAX_WEAR; l++)
     if (ch->equipment[l])
     {
-
       obj = unequip_char(ch, l);
       /* Added pet check */
       if( ch->in_room == NOWHERE || IS_SET(obj->extra_flags, ITEM_TRANSIENT) || IS_SHOPKEEPER(ch) || (IS_NPC(ch) && IS_RANDOM_MOB(ch)) )
       {
-        extract_obj(obj, TRUE);
+        extract_obj(obj);
         obj = NULL;
       }
       else
@@ -2992,12 +2981,12 @@ void extract_char(P_char ch)
       if( ch->in_room == NOWHERE || IS_SHOPKEEPER(ch) || IS_SET(obj->extra_flags, ITEM_TRANSIENT)
         || (IS_NPC(ch) && mob_index[GET_RNUM(ch)].virtual_number >= 100000 && mob_index[GET_RNUM(ch)].virtual_number < 110000))
       {
-        extract_obj(obj, TRUE);
+        extract_obj(obj);
         obj = NULL;
       }
       else
       {
-        obj_from_char(obj, TRUE);
+        obj_from_char(obj);
         obj_to_room(obj, ch->in_room);
       }
     }
@@ -3051,7 +3040,13 @@ void extract_char(P_char ch)
 #endif
     }
   }
-  if (ch && IS_NPC(ch))
+  // LD chars.
+  else if( IS_PC(ch) )
+  {
+    free_char(ch);
+    ch = NULL;
+  }
+  else if( IS_NPC(ch) )
   {
     if (GET_RNUM(ch) > -1)            /* if mobile */
       mob_index[GET_RNUM(ch)].number--;

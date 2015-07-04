@@ -733,7 +733,9 @@ int nq_test_single_action(struct nq_action *action,
 
   /* success */
   while (found--)
-    extract_obj(components[found], TRUE);
+  {
+    extract_obj(components[found], TRUE); // Quest item artis?
+  }
 
   if (instance)
     for (act_tag = action->tag; act_tag; act_tag = act_tag->next)

@@ -38,7 +38,7 @@
 
 extern P_room world;
 extern struct zone_data *zone_table;
-extern int top_of_world;
+extern const int top_of_world;
 extern P_event current_event;
 extern P_index obj_index;
 
@@ -1287,7 +1287,7 @@ int purple_worm( P_char ch, P_char pl, int cmd, char *arg )
       if( obj->type == ITEM_CORPSE && IS_SET(obj->value[1], PC_CORPSE)
         && obj->timer[0] < time(NULL) && !number(0, 9) )
       {
-        obj_from_char(obj, TRUE);
+        obj_from_char(obj);
         obj_to_room(obj, ch->in_room);
         act("$n&n &+mst&+Mop&+ms s&+Mud&+mde&+Mnl&+my&n, then begins to &+yu&+Yn&+yd&+Yu&+yl&+Ya&+yt&+Ye&n.  $o&n drops from $s behind.",
           FALSE, ch, obj, 0, TO_ROOM);
@@ -1304,7 +1304,7 @@ int purple_worm( P_char ch, P_char pl, int cmd, char *arg )
     for (obj = ch->carrying; obj; obj = next_obj)
     {
       next_obj = obj->next_content;
-      obj_from_char(obj, TRUE);
+      obj_from_char(obj);
       obj_to_room(obj, ch->in_room);
     }
     return FALSE;
@@ -1747,7 +1747,7 @@ int githyanki(P_obj obj, P_char ch, int cmd, char *arg)
 
       SET_POS(ch, POS_SITTING + GET_STAT(ch));
       unequip_char(ch, WIELD);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
     }
     switch (number(1, 5))
@@ -1885,7 +1885,7 @@ int githpc_special_weap(P_obj obj, P_char ch, int cmd, char *arg)
             act("&+WYour weapon glows with &+Bpower... &+Wthen suddenly disappears in a flash of light!", FALSE, ch, 0, 0, TO_CHAR);
             act("&+W$n's&+W weapon glows with &+Bpower... &+Wthen suddenly disappears in a flash of light!", FALSE, ch, 0, 0, TO_ROOM);
             obj_to_char(unequip_char(ch, WIELD), ch);
-            obj_from_char(obj, TRUE);
+            obj_from_char(obj);
             obj_to_char(obj, vict);
             act("A bright flash of light erupts from your hands!!! When the light dies down, you realize $p has returned to your posession!", FALSE, vict, 0, obj, TO_CHAR);
             act("A bright flash of light erupts from $n's hands!!!", FALSE, vict, 0, 0, TO_ROOM);
@@ -1993,7 +1993,7 @@ int tiamat(P_char ch, P_char pl, int cmd, char *arg)
     for (t_obj = ch->carrying; t_obj; t_obj = next)
     {
       next = t_obj->next_content;
-      obj_from_char(t_obj, FALSE);
+      obj_from_char(t_obj);
       obj_to_room(t_obj, ch->in_room);
     }
     
@@ -4155,7 +4155,7 @@ int tendrils(P_obj obj, P_char ch, int cmd, char *arg)
                                  obj) ? HOLD : 0);
         obj_to_char(unequip_char(ch, e_pos), ch);
       }
-      obj_from_char(obj, TRUE);
+      obj_from_char(obj);
     }
 
     switch (w_align)

@@ -48,7 +48,7 @@ extern P_room world;
 extern char debug_mode;
 extern const char *class_names[];
 extern const char *race_types[];
-extern int top_of_world;
+extern const int top_of_world;
 
 //extern const int material_absorbtion[][];
 extern const struct stat_data stat_factor[];

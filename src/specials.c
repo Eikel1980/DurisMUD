@@ -271,71 +271,83 @@ void npc_steal(P_char ch, P_char vict)
   int      percent, roll, loc, gold, chance;
   bool     failed, caught;
 
-  if(!(ch) ||
-     !IS_ALIVE(ch) ||
-     !(vict) ||
-     !IS_ALIVE(vict))
-        return;
-  
-  if(IS_NPC(vict))
+  if( !IS_ALIVE(ch) || !IS_ALIVE(vict) || IS_NPC(vict) )
+  {
     return;
-  
-  if(IS_SET(ch->specials.act, ACT_TEACHER) ||
-     IS_SET(ch->specials.act, ACT_SPEC_TEACHER))
-      return;
-  
-  if (IS_TRUSTED(vict))
-    return;
-  if (world[ch->in_room].room_flags & SAFE_ZONE)
-    return;
+  }
 
-  if (!number(0, 1))
+  // Teachers don't steal.
+  if( IS_SET(ch->specials.act, ACT_TEACHER) || IS_SET(ch->specials.act, ACT_SPEC_TEACHER) )
+  {
+    return;
+  }
+
+  if( IS_TRUSTED(vict) || IS_SET(world[ch->in_room].room_flags, SAFE_ZONE) )
+  {
+    return;
+  }
+
+  if( !number(0, 1) )
   {                             /* 50/50, items or coins */
-    if ((IS_RIDING(ch)) ||
-        ((IS_CARRYING_N(ch) + 1) > CAN_CARRY_N(ch)) ||
-        (CHAR_IN_SAFE_ZONE(ch)) ||
-        ((world[ch->in_room].room_flags & SINGLE_FILE) &&
-         !AdjacentInRoom(ch, vict)) || IS_FIGHTING(ch) || IS_FIGHTING(vict))
+    if( (IS_RIDING(ch)) || ((IS_CARRYING_N(ch) + 1) > CAN_CARRY_N(ch))
+      || (CHAR_IN_SAFE_ZONE(ch)) || ((world[ch->in_room].room_flags & SINGLE_FILE)
+      && !AdjacentInRoom(ch, vict)) || IS_FIGHTING(ch) || IS_FIGHTING(vict))
+    {
       return;
+    }
+
     if( IS_DESTROYING(ch) || IS_DESTROYING(vict) )
+    {
       return;
+    }
+
     chance = ((2 * GET_LEVEL(vict) + GET_LEVEL(vict) / 4) - GET_LEVEL(ch));
-    if (chance == 0)
+    if( chance == 0 )
+    {
       chance = 1;
-    percent = 2 * (GET_LEVEL(ch) * 100 / chance);
+    }
+    percent = (2 * GET_LEVEL(ch) * 100) / chance;
     percent += number(1, 20);
-    percent -=
-      (STAT_INDEX(GET_C_WIS(vict)) + STAT_INDEX(GET_C_INT(vict))) - 19;
-    if (IS_AFFECTED(vict, AFF_AWARE) ||
-        affected_by_spell(vict, SKILL_AWARENESS))
+    percent -= (STAT_INDEX(GET_C_WIS(vict)) + STAT_INDEX(GET_C_INT(vict))) - 19;
+
+    if( IS_AFFECTED(vict, AFF_AWARE) || affected_by_spell(vict, SKILL_AWARENESS) )
+    {
       percent -= 100;
-    if (!CAN_SEE(vict, ch))
+    }
+    if( !CAN_SEE(vict, ch) )
+    {
       percent += 40;
-    if(IS_IMMOBILE(vict))
+    }
+    if( IS_IMMOBILE(vict) )
+    {
       percent += 200;           /* ALWAYS SUCCESS */
-    else if (IS_AFFECTED2(vict, AFF2_STUNNED))
+    }
+    else if( IS_AFFECTED2(vict, AFF2_STUNNED) )
+    {
       percent += 20;            /* nice bonus if target is stunned */
-    else if (GET_STAT(vict) == STAT_SLEEPING)
+    }
+    else if( GET_STAT(vict) == STAT_SLEEPING )
+    {
       percent += 40;            /* hefty bonus if just normal sleeping */
+    }
     if( IS_TRUSTED(vict) )      /* NO NO to gods  */
+    {
       percent = 0;              /* Failure */
+    }
 
     roll = number(1, 100);
     caught = FALSE;
     failed = FALSE;
-    loc = number(1, WEAR_QUIVER + 1);
-    loc--;
-    if (loc && !vict->equipment[loc])
+    loc = number(0, WEAR_QUIVER);
+    if( loc && !vict->equipment[loc] )
     {
-      send_to_char
-        ("You cannot resist searching for items, yet you find nothing of interest!\r\n",
-         ch);
+      send_to_char("You cannot resist searching for items, yet you find nothing of interest!\r\n", ch);
       failed = TRUE;
       percent += 50;
     }
     else
     {
-      if (!loc)
+      if( !loc )
       {
         for (obj = vict->carrying; obj; obj = next_obj)
         {
@@ -347,32 +359,35 @@ void npc_steal(P_char ch, P_char vict)
         }
         if (!obj)
         {
-          send_to_char("Hmm, not much there. Try a different pocket.\r\n",
-                       ch);
+          send_to_char("Hmm, not much there. Try a different pocket.\r\n", ch);
           return;
         }
       }
       else
         obj = vict->equipment[loc];
-      if ((IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(obj)) > CAN_CARRY_W(ch))
+      // No stealing artifacts.
+      if( (IS_CARRYING_W(ch) + GET_OBJ_WEIGHT(obj)) > CAN_CARRY_W(ch) || IS_ARTIFACT(obj) )
         failed = TRUE;
-      if (!failed && (percent > 175))
+      if( !failed && (percent > 175) )
       {
         act("You suddenly feel like relieving $N of $S spare equipment.. ",
             FALSE, ch, obj, vict, TO_CHAR);
         act("You unequip $p and steal it.", FALSE, ch, obj, 0, TO_CHAR);
-        if (loc)
+        if( loc )
         {
           obj = unequip_char(vict, loc);
           if( IS_ARTIFACT( obj ) )
           {
-            remove_owned_artifact(obj, vict, TRUE);
+            statuslog( MINLVLIMMORTAL, "npc_steal: %s &+Rjust stole&n '%s' %d from %s.",
+              OBJ_SHORT(obj), GET_OBJ_VNUM(obj), J_NAME(vict) );
+            // Don't need this; it's handled in unequip_char & obj_to_char.
+            //   artifact_update_location_sql( obj );
           }
           obj_to_char(obj, ch);
         }
         else
         {
-          obj_from_char(obj, TRUE);
+          obj_from_char(obj);
           obj_to_char(obj, ch);
         }
         /* success, but heavy stuff increases chance of getting caught */

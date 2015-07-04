@@ -1216,7 +1216,7 @@ int random_quest_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
       return TRUE;
     }
 
-    if (obj->value[5] == x)
+    if (GET_OBJ_VNUM(obj) == RANDOM_EQ_VNUM && obj->value[5] == x)
     {
       gain_epic(pl, EPIC_RANDOM_ZONE, 0, value_pts / 100 );
 
@@ -1224,8 +1224,8 @@ int random_quest_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
       act("$n gives you $p.", 0, pl, obj, ch, TO_VICT);
       send_to_char("Ok.\r\n", pl);
 
-      obj_from_char(obj, TRUE);
-      extract_obj(obj, TRUE);
+      obj_from_char(obj);
+      extract_obj(obj);
 
       mobsay(ch, "Yes! Perfect! Right one !");
       do_action(ch, 0, CMD_CACKLE);
@@ -1468,13 +1468,13 @@ int reset_lab(int type)
       if (obj->R_num == real_object(VOBJ_WALLS)) 
         continue;
 
-      if ((obj->wear_flags & ITEM_TAKE) || (obj->type == ITEM_CORPSE &&
-                                            !obj->contains))
+      if ((obj->wear_flags & ITEM_TAKE && !IS_ARTIFACT(obj))
+        || (obj->type == ITEM_CORPSE && !obj->contains))
       {
-        extract_obj(obj, TRUE);
+        extract_obj(obj);
         obj = NULL;
       }
-      if (obj && obj->type == ITEM_CORPSE)
+      if (obj && (obj->type == ITEM_CORPSE || IS_ARTIFACT(obj)))
       {
         obj_from_room(obj);
         obj_to_room(obj, real_room(entrance_room));
@@ -1545,16 +1545,16 @@ int create_lab(int type)
   obj = read_object(RELIC, VIRTUAL);
   vnum = obj_index[obj->R_num].virtual_number;
 
-  if( get_current_artifact_info(-1, vnum, NULL, NULL, NULL, NULL, FALSE, NULL) )
+  if( get_artifact_data_sql(vnum, NULL) )
   {
     wizlog(56, "Already tracked %d, not creating random map #%d ", vnum, type);
-    extract_obj(obj, TRUE);
+    extract_obj(obj);
     return 0;
   }
   else
   {
     wizlog(56, "Did not track %d, creating random map #%d ", vnum, type);
-    extract_obj(obj, TRUE);
+    extract_obj(obj);
   }
 
   current_room = start_room;
@@ -1630,10 +1630,10 @@ int create_lab(int type)
             obj = read_object(RELIC, VIRTUAL);
             vnum = obj_index[obj->R_num].virtual_number;
 
-            if( get_current_artifact_info(-1, vnum, NULL, NULL, NULL, NULL, FALSE, NULL) )
+            if( get_artifact_data_sql(vnum, NULL) )
             {
               wizlog(56, "Already tracked %d", vnum);
-              extract_obj(obj, TRUE);
+              extract_obj(obj);
               relic_in_game = 1;
             }
             else

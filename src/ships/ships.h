@@ -5,12 +5,13 @@
 #include "structs.h"
 
 
-#define PANEL_OBJ 50000
-#define SHIP_ZONE_START 50001
-#define SHIP_ZONE_END 50999
-#define BUILDTIME 1
-#define CARGO_CRATE_VNUM 40226
+#define PANEL_OBJ         50000
+#define SHIP_ZONE_START   50001
+#define SHIP_ZONE_END     50999
+#define BUILDTIME             1
+#define CARGO_CRATE_VNUM  40226
 #define DAVY_JONES_LOCKER 31725
+#define ALL_SHIPS_VNUM    60001
 
 // Ship status
 #define DOCK              0

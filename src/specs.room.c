@@ -45,7 +45,7 @@ extern const char rev_dir[];
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int planes_room_num[];
 extern int innate_abilities[];
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct time_info_data time_info;
@@ -633,7 +633,7 @@ int akh_elamshin(int room, P_char ch, int cmd, char *arg)
 
 int dump(int room, P_char ch, int cmd, char *arg)
 {
-  P_obj    k;
+  P_obj    obj, next_obj;
   P_char   tmp_char;
   int      value = 0;
   char     Gbuf1[MAX_STRING_LENGTH];
@@ -647,21 +647,19 @@ int dump(int room, P_char ch, int cmd, char *arg)
   if (!ch)
     return (FALSE);
 
-  for (k = world[ch->in_room].contents; k; k = world[ch->in_room].contents)
+  for( obj = world[ch->in_room].contents; obj; obj = next_obj )
   {
-    if (!(k && k->name))
+    next_obj = obj->next_content;
+
+    if( IS_ARTIFACT(obj) )
     {
-      logit(LOG_EXIT, "assert: error in dump() proc");
-      raise(SIGSEGV);
+      continue;
     }
-    sprintf(Gbuf1, "The %s vanish in a puff of smoke.\r\n",
-            FirstWord(k->name));
-    for (tmp_char = world[ch->in_room].people; tmp_char;
-         tmp_char = tmp_char->next_in_room)
-      if (CAN_SEE_OBJ(tmp_char, k))
+    sprintf(Gbuf1, "The %s vanishes in a puff of smoke.\r\n", FirstWord(obj->name));
+    for( tmp_char = world[ch->in_room].people; tmp_char; tmp_char = tmp_char->next_in_room )
+      if (CAN_SEE_OBJ(tmp_char, obj))
         send_to_char(Gbuf1, tmp_char);
-    extract_obj(k, TRUE);
-    k = NULL;
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
   }
 
   if (cmd != CMD_DROP)
@@ -671,34 +669,31 @@ int dump(int room, P_char ch, int cmd, char *arg)
 
   value = 0;
 
-  for (k = world[ch->in_room].contents; k; k = world[ch->in_room].contents)
+  for( obj = world[ch->in_room].contents; obj; obj = next_obj )
   {
-    if (!(k && k->name))
+    next_obj = obj->next_content;
+
+    if( IS_ARTIFACT(obj) )
     {
-      logit(LOG_EXIT, "assert: error in dump() proc");
-      raise(SIGSEGV);
+      continue;
     }
-    sprintf(Gbuf1, "The %s vanishes in a puff of smoke.\r\n",
-            FirstWord(k->name));
-    for (tmp_char = world[ch->in_room].people; tmp_char;
-         tmp_char = tmp_char->next_in_room)
-      if (CAN_SEE_OBJ(tmp_char, k))
+
+    sprintf(Gbuf1, "The %s vanishes in a puff of smoke.\r\n", FirstWord(obj->name));
+    for( tmp_char = world[ch->in_room].people; tmp_char; tmp_char = tmp_char->next_in_room )
+      if (CAN_SEE_OBJ(tmp_char, obj))
         send_to_char(Gbuf1, tmp_char);
-    if (k->type == ITEM_MONEY)
+    if (obj->type == ITEM_MONEY)
       value = 1;
     else
-      value += MAX(1, MIN(50, k->cost / 10));
+      value += MAX(1, MIN(50, obj->cost / 10));
 
-    extract_obj(k, TRUE);
-    k = NULL;
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
   }
 
   if (value > 0)
   {
-    act("You are awarded for outstanding performance.", FALSE, ch, 0, 0,
-        TO_CHAR);
-    act("$n has been awarded for being a good citizen.", TRUE, ch, 0, 0,
-        TO_ROOM);
+    act("You are awarded for outstanding performance.", FALSE, ch, 0, 0, TO_CHAR);
+    act("$n has been awarded for being a good citizen.", TRUE, ch, 0, 0, TO_ROOM);
 
     ADD_MONEY(ch, value);
   }
@@ -707,7 +702,6 @@ int dump(int room, P_char ch, int cmd, char *arg)
 
 int count_patrol(int vnum)
 {
-
     P_char   patrol;
     int i = 0;
     int count = 0;
@@ -1021,8 +1015,8 @@ int pet_shops(int room, P_char ch, int cmd, char *arg)
     sprintf(buf, "%s%d", GET_NAME(ch), ticket->value[1]);
 //    petrestore(ch, buf);
     SUB_MONEY(ch, val, 0);
-    obj_from_char(ticket, TRUE);
-    extract_obj(ticket, TRUE);
+    obj_from_char(ticket);
+    extract_obj(ticket, TRUE); // Not an arti, but 'in game.'
 
     send_to_char("A stable-hand brings yer pet from around back.\r\n", ch);
     act("A stable-hand returns $n's pet.", FALSE, ch, 0, 0, TO_ROOM);
@@ -1118,6 +1112,8 @@ int kings_hall(int room, P_char ch, int cmd, char *arg)
   return (1);
 }
 
+// A locked door that eats the key to the lock.  Must open another way heh.
+// Not currently in game. - 7/4/2015
 int feed_lock(int room, P_char ch, int cmd, char *arg)
 {
   P_obj    obj;
@@ -1143,23 +1139,16 @@ int feed_lock(int room, P_char ch, int cmd, char *arg)
     if (IS_SET(EXIT(ch, door)->exit_info, EX_LOCKED))
     {
       do_unlock(ch, arg, 0);
-      act
-        ("The Lock says 'yummie... I like to eat keys.'\r\nthe Lock looks at the key.\r\nthe Lock grins evily.\r\n\r\n",
+      act("The Lock says 'yummie... I like to eat keys.'\r\nthe Lock looks at the key.\r\nthe Lock grins evily.\r\n\r\n",
          TRUE, ch, obj, 0, TO_ROOM);
-      act
-        ("The Lock says 'yummie... I like to eat keys.'\r\nthe Lock looks at the key.\r\nthe Lock grins evily.\r\n\r\n",
+      act("The Lock says 'yummie... I like to eat keys.'\r\nthe Lock looks at the key.\r\nthe Lock grins evily.\r\n\r\n",
          TRUE, ch, obj, 0, TO_CHAR);
       act("Hey!. The Lock has eaten $p.\r\n", TRUE, ch, obj, 0, TO_ROOM);
-      act("Hey!. The Lock has eaten your key!.\r\n", TRUE, ch, obj, 0,
-          TO_CHAR);
-      act("The Lock says 'mo food ..mo food.. I'm still hungry'\r\n", TRUE,
-          ch, obj, 0, TO_ROOM);
-      act("The Lock says 'mo food ..mo food.. I'm still hungry'\r\n", TRUE,
-          ch, obj, 0, TO_CHAR);
+      act("Hey!. The Lock has eaten your key!.\r\n", TRUE, ch, obj, 0, TO_CHAR);
+      act("The Lock says 'mo food ..mo food.. I'm still hungry'\r\n", TRUE, ch, obj, 0, TO_ROOM);
+      act("The Lock says 'mo food ..mo food.. I'm still hungry'\r\n", TRUE, ch, obj, 0, TO_CHAR);
 
-      if ((ch->equipment[HOLD]) && (ch->equipment[HOLD] == obj))
-        unequip_char(ch, HOLD);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
     }
     return FALSE;

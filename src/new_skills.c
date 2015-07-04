@@ -1865,7 +1865,7 @@ void event_summon_book(P_char ch, P_char victim, P_obj obj, void *data)
   }
 
   if (book)
-    extract_obj(book, TRUE);
+    extract_obj(book);
 
   book = read_object(31, VIRTUAL);
   if (book == NULL)
@@ -1874,23 +1874,19 @@ void event_summon_book(P_char ch, P_char victim, P_obj obj, void *data)
   SET_BIT(book->str_mask, STRUNG_DESC2 || STRUNG_KEYS);
   sprintf(namebuf, "book spellbook %s", bookname);
   book->name = str_dup(namebuf);
-  sprintf(namebuf,
-          "a &+Wsp&+wel&+Wlb&+woo&+Wk&n &+Lbearing the insignia of&n %s",
-          ch->player.name);
+  sprintf(namebuf, "a &+Wsp&+wel&+Wlb&+woo&+Wk&n &+Lbearing the insignia of&n %s", ch->player.name);
   book->short_description = str_dup(namebuf);
   book->extra_flags |= ITEM_NORENT;
   book->bitvector = 0;
 
-  send_to_char("A magical spellbook materializes slowly in your hands.\r\n",
-               ch);
+  send_to_char("&+LA magical spellbook materializes slowly in your hands.&n\r\n", ch);
 
   obj_to_char(book, ch);
 }
 
 void do_summon_book(P_char ch, char *arg, int cmd)
 {
-  send_to_char("You utter a magical formula summoning your spellbook..\r\n",
-               ch);
+  send_to_char("You utter a magical formula summoning your spellbook..\r\n", ch);
   add_event(event_summon_book, PULSE_VIOLENCE, ch, 0, 0, 0, 0, 0);
 }
 
@@ -1911,7 +1907,7 @@ void event_summon_totem(P_char ch, P_char victim, P_obj obj, void *data)
   }
 
   if (totem)
-    extract_obj(totem, TRUE);
+    extract_obj(totem);
 
   totem = read_object(417, VIRTUAL);
   if (totem == NULL)
@@ -1920,9 +1916,7 @@ void event_summon_totem(P_char ch, P_char victim, P_obj obj, void *data)
   SET_BIT(totem->str_mask, STRUNG_DESC2 || STRUNG_KEYS);
   sprintf(namebuf, "totem spirit %s", totemname);
   totem->name = str_dup(namebuf);
-  sprintf(namebuf,
-          "a &+wspirit &+ytotem&n of&n &+G%s&n",
-          ch->player.name);
+  sprintf(namebuf, "a &+wspirit &+ytotem&n of&n &+G%s&n", ch->player.name);
   totem->short_description = str_dup(namebuf);
   totem->extra_flags |= ITEM_NORENT;
   totem->bitvector = 0;
@@ -1935,7 +1929,7 @@ void event_summon_totem(P_char ch, P_char victim, P_obj obj, void *data)
   if (GET_LEVEL(ch) >= 51)
   {
     totem->affected[1].location = APPLY_HIT;
-    totem->affected[1].modifier = 35;
+    totem->affected[1].modifier = 10;
   }
   if (GET_LEVEL(ch) >= 41)
   {
@@ -1950,8 +1944,7 @@ void event_summon_totem(P_char ch, P_char victim, P_obj obj, void *data)
     SET_BIT(totem->bitvector, AFF_FARSEE);
   }
 
-  send_to_char("&+GMaglubiyet&n answers your call, and a magic totem slowly materializes in your hands.\r\n",
-               ch);
+  send_to_char("&+GMaglubiyet&n answers your call, and a magic totem slowly materializes in your hands.\r\n", ch);
 
   obj_to_char(totem, ch);
 }
@@ -2877,7 +2870,7 @@ void do_bind(P_char ch, char *arg, int cmd)
   if (!IS_AFFECTED(t_char, AFF_KNOCKED_OUT))
     send_to_char("You're now bound and cannot move.\r\n", t_char);
 
-  extract_obj(unequip_char(ch, HOLD), TRUE);
+  extract_obj(unequip_char(ch, HOLD), TRUE); // Arti rope?
 
   CharWait(ch, 2 * PULSE_VIOLENCE);
 
@@ -3243,8 +3236,7 @@ void capture(P_char ch, P_char victim)
         victim, TO_NOTVICT);
 
     /* get rid of their rope.. */
-
-    extract_obj(unequip_char(ch, HOLD), TRUE);
+    extract_obj(unequip_char(ch, HOLD), TRUE); // Arti rope?
 
     notch_skill(ch, SKILL_CAPTURE, 2.22);
 

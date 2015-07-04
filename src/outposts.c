@@ -581,7 +581,7 @@ void do_outpost(P_char ch, char *arg, int cmd)
       // Ok begin repairs.
       SET_POS(ch, POS_STANDING + STAT_NORMAL);
       char_to_room(op, ch->in_room, -2);
-      extract_obj(rubble, TRUE);
+      extract_obj(rubble);
       act("$n begins repairs on the outpost.", TRUE, ch, 0, 0, TO_ROOM);
       add_event(event_outpost_repair, 1, op, NULL, NULL, 0, NULL, 0);
       return;
@@ -1093,7 +1093,7 @@ int outpost_rubble(P_obj obj, P_char ch, int cmd, char *arg)
       sprintf(buff2, "You receive %d wood and %d stone in outpost resources.\r\n", wood, stone);
       send_to_char(buff2, ch);
       
-      extract_obj(obj, TRUE);
+      extract_obj(obj);
 
       return TRUE;
     }

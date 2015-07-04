@@ -35,6 +35,7 @@ extern P_desc descriptor_list;
 extern P_index mob_index;
 extern P_index obj_index;
 extern P_room world;
+extern const int top_of_world;
 extern char *coin_names[];
 extern char *command[];
 extern const char *dirs[];
@@ -42,7 +43,6 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct str_app_type str_app[];
@@ -400,23 +400,22 @@ int lightning_sword(P_obj obj, P_char ch, int cmd, char *arg)
   P_obj    corpse, next_obj, temp;
   char     e_pos;
   int      dam, vict_level;
+  bool     hasCorpse;
 
-  vict = (P_char) arg;
-
-  if( cmd == CMD_SET_PERIODIC )
+  if( cmd != CMD_MELEE_HIT )
   {
     return FALSE;
   }
 
+  vict = (P_char) arg;
   // 1/33 chance.
-  if( !IS_ALIVE(ch) || !IS_FIGHTING(ch) || !IS_ALIVE(vict) || !OBJ_WORN(obj) || !(cmd / 1000) || CheckMultiProcTiming(ch) || number(0, 32) )
+  if( !IS_ALIVE(ch) || !IS_FIGHTING(ch) || !IS_ALIVE(vict) || !OBJ_WORN(obj) || CheckMultiProcTiming(ch) || number(0, 32) )
   {
     return FALSE;
   }
 
   e_pos = ((obj->loc.wearing->equipment[WIELD] == obj) ? WIELD :
-           (obj->loc.wearing->equipment[SECONDARY_WEAPON] == obj) ?
-           SECONDARY_WEAPON : 0);
+           (obj->loc.wearing->equipment[SECONDARY_WEAPON] == obj) ? SECONDARY_WEAPON : 0);
   if( !e_pos )
   {
     return FALSE;
@@ -441,35 +440,41 @@ int lightning_sword(P_obj obj, P_char ch, int cmd, char *arg)
     act("&+BA huge thunder racing towards you is the last thing you see before falling in the cold sleep of death...&N", FALSE, vict, 0, 0, TO_CHAR);
 
     vict_level = GET_LEVEL(vict);
+    hasCorpse = !IS_NOCORPSE(vict);
     die(vict, ch);
 
-    for( corpse = world[ch->in_room].contents; corpse; corpse = next_obj )
+    // Only destroy the corpse if it makes one.
+    if( hasCorpse )
     {
-      next_obj = corpse->next_content;
-      if( (GET_ITEM_TYPE(corpse) == ITEM_CORPSE) )
+      // It will be the first corpse in the room.
+      for( corpse = world[ch->in_room].contents; corpse; corpse = next_obj )
       {
-        for (temp = corpse->contains; temp; temp = next_obj)
+        next_obj = corpse->next_content;
+        if( (GET_ITEM_TYPE(corpse) == ITEM_CORPSE) )
         {
-           next_obj = temp->next_content;
-          obj_from_obj(temp);
-          obj_to_room(temp, ch->in_room);
+          for (temp = corpse->contains; temp; temp = next_obj)
+          {
+            next_obj = temp->next_content;
+            obj_from_obj(temp);
+            obj_to_room(temp, ch->in_room);
+            if( IS_SET(corpse->value[1], PC_CORPSE) )
+            {
+              logit(LOG_CORPSE, "%s dropped item %s [%d] in room %d.", corpse->short_description, temp->short_description,
+                obj_index[temp->R_num].virtual_number, ROOM_VNUM(ch->in_room) );
+            }
+          }
           if( IS_SET(corpse->value[1], PC_CORPSE) )
           {
-            logit(LOG_CORPSE, "%s dropped item %s [%d] in room %d.", corpse->short_description, temp->short_description,
-              obj_index[temp->R_num].virtual_number, world[corpse->loc.room].number);
+            logit(LOG_CORPSE, "%s destroyed by Lightning Sword in %d.", corpse->short_description, ROOM_VNUM(ch->in_room));
           }
-        }
-        if( IS_SET(corpse->value[1], PC_CORPSE) )
-        {
-          logit(LOG_CORPSE, "%s destroyed by Lightning Sword in %d.", corpse->short_description, world[corpse->loc.room].number);
-        }
-        extract_obj(corpse, TRUE);
+          extract_obj(corpse, TRUE); // Empy corpse, but 'in game.'
 
-        if( vict_level > (GET_LEVEL(ch) - 10) )
-        {
-          spell_chain_lightning(16, ch, NULL, SPELL_TYPE_SPELL, 0, 0);
+          if( vict_level > (GET_LEVEL(ch) - 10) )
+          {
+            spell_chain_lightning(16, ch, NULL, SPELL_TYPE_SPELL, 0, 0);
+          }
+          return TRUE;
         }
-        return TRUE;
       }
     }
   }
@@ -1060,11 +1065,9 @@ int generic_drow_eq(P_obj obj, P_char ch, int cmd, char *arg)
 
   if (DECAYABLE(ch->in_room))
   {
-    act("Your $q quickly decays in the surface air!", TRUE, ch, obj, vict,
-        TO_CHAR);
-    act("$n's $q quickly decays in the surface air!", TRUE, ch, obj, vict,
-        TO_ROOM);
-    extract_obj(obj, TRUE);
+    act("Your $q quickly decays in the surface air!", TRUE, ch, obj, vict, TO_CHAR);
+    act("$n's $q quickly decays in the surface air!", TRUE, ch, obj, vict, TO_ROOM);
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
   }
   return FALSE;
 }
@@ -1895,26 +1898,20 @@ int um_mezzoloth(P_char ch, P_char pl, int cmd, char *arg)
 
 int um_goblin_leader(P_char ch, P_char pl, int cmd, char *arg)
 {
-/*
-   is a mimic 
- */
+  // is a mimic
   return FALSE;
 }
 
 int flying_dagger(P_char ch, P_char pl, int cmd, char *arg)
 {
-
   P_obj    dagger, i, temp, next_obj;
 
   if (cmd == CMD_SET_PERIODIC)
     return FALSE;
 
-
-
+  // Special die aspect
   if (cmd == CMD_DEATH)
-  {                             /*
-                                   special die aspect 
-                                 */
+  {
     dagger = read_object(92044, VIRTUAL);
     act("A final blow, and the $n spins no more.", 1, ch, 0, 0, TO_ROOM);
     obj_to_room(dagger, ch->in_room);
@@ -1933,12 +1930,10 @@ int flying_dagger(P_char ch, P_char pl, int cmd, char *arg)
 
       if (IS_SET(i->value[1], PC_CORPSE))
       {
-        logit(LOG_CORPSE, "%s destroyed by flying daggers in %d.",
-              i->short_description, world[i->loc.room].number);
+        logit(LOG_CORPSE, "%s destroyed by flying daggers in %d.", i->short_description, world[i->loc.room].number);
       }
-      act("$n shreds the $o, &+rblood flies everywhere!", FALSE, ch, i, 0,
-          TO_ROOM);
-      extract_obj(i, TRUE);
+      act("$n shreds the $o, &+rblood flies everywhere!", FALSE, ch, i, 0, TO_ROOM);
+      extract_obj(i, TRUE); // Empty corpse, but 'in game.'
       return TRUE;
     }
   }
@@ -1949,31 +1944,30 @@ int ochre_jelly(P_char ch, P_char pl, int cmd, char *arg)
 {
   P_obj    i, temp, next_obj;
 
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd == CMD_SET_PERIODIC )
+    return TRUE;
+
+  if( cmd != CMD_PERIODIC )
     return FALSE;
 
   for (i = world[ch->in_room].contents; i; i = i->next_content)
   {
-    if (!(i))
-    {
-      logit(LOG_EXIT, "assert: ochre_jelly");
-      raise(SIGSEGV);
-    }
     if (GET_ITEM_TYPE(i) == ITEM_CORPSE)
+    {
       for (temp = i->contains; temp; temp = next_obj)
       {
         next_obj = temp->next_content;
         obj_from_obj(temp);
         obj_to_room(temp, ch->in_room);
       }
-    if (IS_SET(i->value[1], PC_CORPSE))
-    {
-      logit(LOG_CORPSE, "%s devoured by an Ochre Jelly in %d.",
-            i->short_description, world[i->loc.room].number);
+      if (IS_SET(i->value[1], PC_CORPSE))
+      {
+        logit(LOG_CORPSE, "%s devoured by an Ochre Jelly in %d.", i->short_description, world[i->loc.room].number);
+      }
+      act("$n cleans the area.", FALSE, ch, i, 0, TO_ROOM);
+      extract_obj(i, TRUE); // Empty corpse, but 'in game.'
+      return TRUE;
     }
-    act("$n cleans the area.", FALSE, ch, i, 0, TO_ROOM);
-    extract_obj(i, TRUE);
-    return TRUE;
   }
   return FALSE;
 }

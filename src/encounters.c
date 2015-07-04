@@ -20,7 +20,6 @@ extern P_index obj_index;
 extern P_room world;
 extern const char *dirs[];
 extern const char rev_dir[];
-extern int top_of_world;
 extern int top_of_zone_table;
 
 extern struct zone_data *zone;

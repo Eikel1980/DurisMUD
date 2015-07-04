@@ -2424,8 +2424,7 @@ void event_scribe(P_char ch, P_char victim, P_obj obj, void *data)
               skills[s_data->spell].name, GET_NAME(ch));
       send_to_char(Gbuf1, s_data->source.teacher);
 
-      REMOVE_BIT(s_data->source.teacher->specials.affected_by2,
-                 AFF2_SCRIBING);
+      REMOVE_BIT(s_data->source.teacher->specials.affected_by2, AFF2_SCRIBING);
     }
     if (s_data->flag == 2)
     {
@@ -2435,15 +2434,12 @@ void event_scribe(P_char ch, P_char victim, P_obj obj, void *data)
           j++;
       if (j == 1)
       {
-        send_to_char("The ancient parchment comes apart in your hands..\n",
-                     ch);
-        extract_obj(s_data->source.obj, TRUE);
+        send_to_char("The ancient parchment comes apart in your hands..\n", ch);
+        extract_obj(s_data->source.obj, TRUE); // Artifact scroll??
       }
       else if (j == 0)
       {
-        send_to_char
-          ("Error detected - please report this to a coder imm. [0 spells in scroll.\n",
-           ch);
+        send_to_char("Error detected - please report this to a coder imm. [0 spells in scroll].\n", ch);
         return;
       }
       else
@@ -2454,9 +2450,7 @@ void event_scribe(P_char ch, P_char victim, P_obj obj, void *data)
           {
             j = 1;
             s_data->source.obj->value[i] = 0;
-            send_to_char
-              ("You mess up the scroll so badly that part of it becomes unreadable!\n",
-               ch);
+            send_to_char("You mess up the scroll so badly that part of it becomes unreadable!\n", ch);
           }
       }
     }
@@ -2465,8 +2459,7 @@ void event_scribe(P_char ch, P_char victim, P_obj obj, void *data)
      */
     if (!AddSpellToSpellBook(ch, s_data->book, s_data->spell))
     {
-      send_to_char("Hmm, you have that spell in your spellbook already???\n",
-                   ch);
+      send_to_char("Hmm, you have that spell in your spellbook already???\n", ch);
       return;
     }
     if (s_data->book->value[2] - s_data->book->value[3])

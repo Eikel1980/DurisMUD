@@ -36,7 +36,7 @@ extern int get_multicast_chars(P_char leader, int m_class, int min_level);
 int      fight_in_room(P_char ch);
 extern P_obj object_list;
 extern P_room world;
-extern int top_of_world;
+extern const int top_of_world;
 extern struct minor_create_struct minor_create_name_list[];
 extern struct zone_data *zone_table;
 extern struct sector_data *sector_table;
@@ -1114,8 +1114,7 @@ void cast_wall_of_force(int level, P_char ch, char *arg, int type,
   }
 }
 
-void cast_wall_of_bones(int level, P_char ch, char *arg, int type,
-                        P_char tar_ch, P_obj tar_obj)
+void cast_wall_of_bones(int level, P_char ch, char *arg, int type, P_char tar_ch, P_obj tar_obj)
 {
   char     buf1[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH],
            Gbuf4[MAX_STRING_LENGTH], Gbuf5[MAX_STRING_LENGTH];
@@ -1194,9 +1193,7 @@ void cast_wall_of_bones(int level, P_char ch, char *arg, int type,
   {
 
     SET_BIT(EXIT(ch, var)->exit_info, EX_BREAKABLE);
-    SET_BIT(VIRTUAL_EXIT
-            ((world[ch->in_room].dir_option[var])->to_room,
-             rev_dir[var])->exit_info, EX_BREAKABLE);
+    SET_BIT(VIRTUAL_EXIT((world[ch->in_room].dir_option[var])->to_room, rev_dir[var])->exit_info, EX_BREAKABLE);
 
     sprintf(buf1, "&+LInfused by a powerful magic, %s &+Lmagically transforms into a pile of bones, blocking the %s!&n\r\n",
 	        corpse->short_description, dirs[var]);
@@ -1205,16 +1202,15 @@ void cast_wall_of_bones(int level, P_char ch, char *arg, int type,
 
     send_to_room(buf1, ch->in_room);
     send_to_room(buf2, (world[ch->in_room].dir_option[var])->to_room);
-	
+
     for (obj_in_corpse = corpse->contains; obj_in_corpse; obj_in_corpse = next_obj)
     {
-        next_obj = obj_in_corpse->next_content;
-        obj_from_obj(obj_in_corpse);
-        obj_to_room(obj_in_corpse, ch->in_room);
+      next_obj = obj_in_corpse->next_content;
+      obj_from_obj(obj_in_corpse);
+      obj_to_room(obj_in_corpse, ch->in_room);
     }
 
-	extract_obj(corpse, TRUE);
-
+    extract_obj(corpse, TRUE); // Empty corpse, but 'in game.'
   }
   else if( scales && create_walls(ch->in_room, var, ch, level, WALL_OF_BONES, scales, 1000,
     "&+La thin wall of &+gscales&n",
@@ -1222,9 +1218,7 @@ void cast_wall_of_bones(int level, P_char ch, char *arg, int type,
   {
 
     SET_BIT(EXIT(ch, var)->exit_info, EX_BREAKABLE);
-    SET_BIT(VIRTUAL_EXIT
-            ((world[ch->in_room].dir_option[var])->to_room,
-             rev_dir[var])->exit_info, EX_BREAKABLE);
+    SET_BIT(VIRTUAL_EXIT((world[ch->in_room].dir_option[var])->to_room, rev_dir[var])->exit_info, EX_BREAKABLE);
 
     sprintf(buf1, "&+LInfused by powerful sorcery, some &+gdragonscales &+Lmagically transform into a delicate yet solid curtain, blocking exit to the %s!&n\r\n",
             dirs[var]);
@@ -2255,11 +2249,10 @@ void cast_grow(int level, P_char ch, char *arg, int type, P_char tar_ch,
 }
 
 
-void cast_vines(int level, P_char ch, char *arg, int type, P_char tar_ch,
-                P_obj tar_obj)
+void cast_vines(int level, P_char ch, char *arg, int type, P_char tar_ch, P_obj tar_obj)
 {
   P_obj    t_obj, next_obj;
-  P_obj    used_obj[32];
+  P_obj    used_obj[4];
   struct affected_type af;
   int      count, i;
 
@@ -2274,42 +2267,38 @@ void cast_vines(int level, P_char ch, char *arg, int type, P_char tar_ch,
   }
 */
 
-  if(IS_PC(ch) ||
-     IS_PC_PET(ch))
+  if(IS_PC(ch) || IS_PC_PET(ch))
   {
-    for (count = 0, t_obj = ch->carrying; t_obj; t_obj = next_obj)
+    for( count = 0, t_obj = ch->carrying; t_obj; t_obj = next_obj )
     {
       next_obj = t_obj->next_content;
 
-      if (obj_index[t_obj->R_num].virtual_number == 826 &&
-          strstr(t_obj->name, "herb"))
+      if (obj_index[t_obj->R_num].virtual_number == VOBJ_INGRED_GREEN_HERB )
       {
         used_obj[count] = t_obj;
-        count++;
+        if( ++count == 4 )
+        {
+          break;
+        }
       }
     }
 
-    if (!count)
+    if( count == 0 )
     {
-      send_to_char("You must have &+ga green herb&n in your inventory.\r\n",
-                   ch);
+      send_to_char("You must have &+ga green herb&n in your inventory.\r\n", ch);
       return;
     }
 
-    if (count > 4)
-      count = 4;
-
-    for (i = 0; i < count; i++)
-      extract_obj(used_obj[i], TRUE);
+    for( i = 0; i < count; i++ )
+    {
+      extract_obj(used_obj[count], TRUE); // Just herb ingred, but 'in game.'
+    }
   }
   else
     count = (int)(level / 10);
-    
-  act("&+GGreen&n vines sprout up around you forming a protective shield.",
-      FALSE, ch, 0, 0, TO_CHAR);
 
-  act("&+GVines&n sprout up around $n forming a protective shield.",
-    FALSE, ch, 0, 0, TO_NOTVICT);
+  act("&+GGreen&n vines sprout up around you forming a protective shield.", FALSE, ch, 0, 0, TO_CHAR);
+  act("&+GVines&n sprout up around $n forming a protective shield.", FALSE, ch, 0, 0, TO_NOTVICT);
 
   memset(&af, 0, sizeof(af));
   af.type = SPELL_VINES;

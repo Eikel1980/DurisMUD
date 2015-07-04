@@ -1184,6 +1184,7 @@
 #define TAG_BARDSONG_FAILURE         2113
 #define TAG_CAMP                     2114
 #define TAG_PERMINVIS                2115
+#define TAG_LIFESTREAMNEWBIE         2116
 
 #define SAVING_PARA   0
 #define SAVING_ROD    1

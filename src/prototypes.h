@@ -631,7 +631,21 @@ void do_petition_block(P_char, char *, int);
 void concat_which_flagsde(const char *flagType, const flagDef flagNames[], char *buf);
 
 /* artifact.c */
+void addOnGroundArtis_sql();
+void artifact_feed_blood_sql(P_char ch, P_obj arti, int frag_gain);
+void artifact_feed_sql(P_char owner, P_obj arti, int feed_seconds, bool soulCheck = FALSE);
+void artifact_feed_to_min_sql( P_obj arti, int min_minutes );
+void artifact_timer_sql( int vnum, char *buffer );
+void artifact_update_location_sql( P_obj arti );
+void do_artifact_sql(P_char, char *, int);
+void event_artifact_check_poof_sql( P_char ch, P_char vict, P_obj obj, void * arg );
+void event_artifact_wars_sql(P_char, P_char, P_obj, void*);
+bool get_artifact_data_sql( int vnum, P_arti artidata );
+bool remove_owned_artifact_sql( P_obj arti, int pid = -1 );
+void remove_all_artifacts_sql( P_char ch );
+void setupMortArtiList_sql(void);
 
+/* artifact_old.c */
 void UpdateArtiBlood(P_char, P_obj, int);
 void setupMortArtiList(void);
 bool add_owned_artifact(P_obj, P_char, long unsigned);
@@ -1167,11 +1181,14 @@ void char_from_room(P_char);
 bool char_to_room(P_char, int, int);
 void equip_char(P_char, P_obj, int, int);
 void extract_char(P_char);
-void extract_obj(P_obj, int);
-void obj_from_char(P_obj, int);
+void extract_obj(P_obj obj, int gone_for_good = FALSE);  // Only use gone_for_good for purging arti data.
+                                                         //   If it was just a temp object, _don't_ use.
+                                                         // If it was actually in game, takeable by players,
+                                                         //   and it's going away completely, then use.
+void obj_from_char(P_obj);
 void obj_from_obj(P_obj);
 void obj_from_room(P_obj);
-void obj_to_char(P_obj, P_char);
+void obj_to_char(P_obj obj, P_char ch);
 void obj_to_obj(P_obj, P_obj);
 void obj_to_room(P_obj, int);
 void object_list_new_owner(P_obj, P_char);

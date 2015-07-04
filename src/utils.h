@@ -344,6 +344,7 @@ bool IS_OUTDOORS(int r);
 #define GET_NAME(ch)    ((ch)->player.name)
 
 #define GET_TRUE_CHAR(ch) ( ((ch)->desc && (ch)->desc->original) ? ((ch)->desc->original) : (ch) )
+#define GET_TRUE_CHAR_D(d) ( ((d)->original) ? ((d)->original) : ((d)->character) )
 #define GET_TRUE_NAME(ch) ( GET_TRUE_CHAR(ch)->player.name )
 #define J_NAME_TRUE(ch) ( J_NAME(GET_TRUE_CHAR(ch)) )
 
@@ -575,7 +576,10 @@ int race_size(int race);
 
 #define OUTSIDE(ch)  (!IS_SET(world[(ch)->in_room].room_flags, INDOORS) && !IS_UNDERWORLD(ch->in_room))
 
-#define ROOM_VNUM(rroom_id) ( (rroom_id >= 0) ? world[rroom_id].number : rroom_id )
+#define ROOM_VOID_VNUM        0
+#define ROOM_LIMBO_VNUM       1
+#define ROOM_VNUM(rroom_id) ( (rroom_id >= 0 && rroom_id <= top_of_world) ? world[rroom_id].number : NOWHERE )
+#define ROOM_VNUM0(rroom_id) ( (rroom_id >= 0 && rroom_id <= top_of_world) ? world[rroom_id].number : 0 )
 
 #define EXIT(ch, door)  (world[(ch)->in_room].dir_option[door])
 #define _2ND_EXIT(ch, door) (world[EXIT(ch, door)->to_room].dir_option[door])

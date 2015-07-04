@@ -1335,7 +1335,7 @@ void justice_delete_guard(P_char ch)
     if (ch->equipment[i])
     {
       obj = unequip_char(ch, i);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // If they've managed to pick up an arti.
     }
   /* similar story for stuff they are carrying.  While stuff they are
      carrying was probably given to them, just dropping it makes a
@@ -1348,7 +1348,7 @@ void justice_delete_guard(P_char ch)
     for (obj = ch->carrying; obj; obj = next_obj)
     {
       next_obj = obj->next_content;
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // If they've managed to pick up an arti.
     }
   }
   /* delete the char.  This will have the side effect of calling

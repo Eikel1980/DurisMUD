@@ -37,7 +37,6 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct str_app_type str_app[];
@@ -428,7 +427,7 @@ int skull_leggings(P_obj leggings, P_char ch, int cmd, char *arg)
           }
           obj_to_char(unequip_char(ch, slot), ch);
         }
-        obj_from_char(leggings, TRUE);
+        obj_from_char(leggings);
         equip_char(ch, leggings, slot, FALSE);
         act("&+LA longing for &+rblood &+Lbegins to &+Rburn &+Lin your &+rheart&+L, and you feel a strange\n"
           "&+Lforce overcome you, compelling you to don the &+Wskull leggings&+L.  They quickly\n"

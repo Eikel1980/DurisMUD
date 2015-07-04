@@ -64,7 +64,6 @@ int proclibObj_add(P_obj obj, char *procName, char *args);
 extern void event_mob_mundane(P_char, P_char, P_obj, void*);
 extern void event_mob_proc(P_char, P_char, P_obj, void*);
 extern void event_random_exit(P_char, P_char, P_obj, void*);
-extern void event_artifact_poof(P_char, P_char, P_obj, void*);
 extern int teacher(P_char ch, P_char pl, int cmd, char *arg);
 extern void event_mob_skin_spell(P_char, P_char, P_obj, void*);
 extern struct social_messg *soc_mess_list;
@@ -81,10 +80,10 @@ struct reset_q_type reset_q;
 P_room   world;                 /* dyn alloc'ed array of rooms     */
 P_town   towns;                 /* List of towns for defenses      */
 int      top_of_world = 0;      /* ref to the top element of world - LAST VALID ROOM INDEX world[top_of_world] is valid world[top_of_world+1] is out of bounds */
-P_obj    object_list = 0;       /* the global linked list of obj's */
-P_char   character_list = 0;    /* global l-list of chars */
-struct ban_t *ban_list = 0;
-struct wizban_t *wizconnect = 0;
+P_obj    object_list = NULL;    /* the global linked list of obj's */
+P_char   character_list = NULL; /* global l-list of chars          */
+struct ban_t *ban_list = NULL;
+struct wizban_t *wizconnect = NULL;
 struct zone_data *zone_table;   /* table of reset data             */
 struct sector_data *sector_table;       /* mostly weather info           */
 int      top_of_zone_table = 0;
@@ -730,11 +729,12 @@ void boot_db(int mini_mode)
 //  loadConstructionQ();
 
   logit(LOG_STATUS, "Setting up player-side artifact list.");
-  setupMortArtiList();
+  setupMortArtiList_sql();
+  addOnGroundArtis_sql();
 
   fprintf(stderr, "-- Continents\n");
   assign_continents();
-      
+
 //  logit(LOG_STATUS, "Setting up god object procedures.");
 //  loadGodProcs();
 
@@ -3007,8 +3007,7 @@ P_obj read_object(int nr, int type)
   if (isname("random_exit", obj->name))
     add_event(event_random_exit, 3, 0, 0, obj, 0, 0, 0);
 
-  /* arti check every minute */
-
+  /* This is no longer needed as poofing artis is handled in the DB via DB-located timers.
   if (IS_ARTIFACT(obj))
   {
     add_event(event_artifact_poof, 2 * WAIT_SEC, 0, 0, obj, 0, 0, 0);
@@ -3016,12 +3015,14 @@ P_obj read_object(int nr, int type)
     //   Not really sure atm.. will test this and see what happens...
     obj->timer[3] = time(NULL);
   }
+  */
 
   /* init justice flag */
 //  obj->justice_status = 0;
 //  obj->justice_name = NULL;
 
   convertObj(obj);
+
   return (obj);
 }
 
@@ -3076,13 +3077,13 @@ void no_reset_zone_reset(int zone_number)
 /* force_item_repop : 2 means this is a boot-time initial reset of zone. */
 void reset_zone(int zone, int force_item_repop)
 {
+  const int respawn = get_property("artifact.respawn", 0);
   int      cmd_no, last_cmd = 1, last_mob_load = 0;
   int      temp, room;
-  time_t   timer;
-  P_char   mob = NULL, last_mob = NULL, tmp_mob = NULL,
-    last_mob_followable = NULL;
+  P_char   mob = NULL, last_mob = NULL, tmp_mob = NULL, last_mob_followable = NULL;
   P_obj    obj, obj_to;
   P_event  e1 = NULL;
+  arti_data artidata;
   char     buf[MAX_STRING_LENGTH];
 
   for (cmd_no = 0;; cmd_no++)
@@ -3151,44 +3152,30 @@ void reset_zone(int zone, int force_item_repop)
 
         if ((ZCMD.arg3 >= 0) && (obj_index[temp].number < ZCMD.arg2))
         {
-          if( (timer = get_current_artifact_info(temp, 0, NULL, NULL, NULL, NULL, FALSE, NULL)) )
-          {
-            // If it's on the ground, load the room #.
-            if( timer == -1 )
-            {
-              get_current_artifact_info(temp, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-            }
-            // If it's on a pfile, break.
-            else
-            {
-              //statuslog(56, "didn't load arti obj #%d because already tracked", obj_index[temp].virtual_number);
-              break;
-            }
-          }
-
           if( !(obj = read_object(temp, REAL)) )
           {
              break;
           }
+          if( get_artifact_data_sql(obj_index[temp].virtual_number, &artidata) )
+          {
+            // If the artifact is owned, then it's timer is ticking somwhere, so we don't need to load another.
+            if( artidata.owned )
+            {
+              extract_obj(obj);
+              break;
+            }
+          }
           // Remove the artifact unless artifact.respawn == 0
           //   or artifact.respawn == 1 and we are not booting.
-          if( IS_ARTIFACT(obj) && ( get_property("artifact.respawn", 0) == 0
-            || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ))
+          if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
           {
-            extract_obj(obj, TRUE);
-            break;
-          }
-          // If timer != 0, then it was on ground.
-          if( IS_ARTIFACT(obj) && timer )
-          {
-            obj->timer[3] = timer;
-            obj_to_room( obj, real_room(room) );
+            extract_obj(obj);
             break;
           }
           obj_to = get_obj_num(ZCMD.arg3);
           if( !obj_to )
           {
-            extract_obj(obj, TRUE);
+            extract_obj(obj);
             break;
           }
           obj_to_obj(obj, obj_to);
@@ -3208,7 +3195,7 @@ void reset_zone(int zone, int force_item_repop)
         temp = real_object(temp);
         if (temp == -1)
           break;
-          
+
         obj_index[temp].limit = ZCMD.arg2; // set the limit from zone file
 
         if (obj_index[temp].number > ZCMD.arg2)
@@ -3219,40 +3206,27 @@ void reset_zone(int zone, int force_item_repop)
           ZCMD.command = '!';
           break;
         }
-
-        if( (timer = get_current_artifact_info(temp, 0, NULL, NULL, NULL, NULL, FALSE, NULL)) )
-        {
-          // If on ground, load room # and timer.
-          if( timer == -1 )
-          {
-            get_current_artifact_info(temp, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-          }
-          // Otherwise, it's on a pfile so don't load it.
-          else
-          {
-            //statuslog(56, "didn't load arti obj #%d because already tracked", obj_index[temp].virtual_number);
-            break;
-          }
-        }
-
         if( !(obj = read_object(temp, REAL)) )
         {
            break;
         }
+        if( get_artifact_data_sql(obj_index[temp].virtual_number, &artidata) )
+        {
+          // If the artifact is owned, then it's timer is ticking somwhere, so we don't need to load another.
+          if( artidata.owned )
+          {
+            extract_obj(obj);
+            break;
+          }
+        }
         // Remove the artifact unless artifact.respawn == 0
         //   or artifact.respawn == 1 and we are not booting.
-        if( IS_ARTIFACT(obj) && ( get_property("artifact.respawn", 0) == 0
-          || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ))
+        if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
         {
-          extract_obj(obj, TRUE);
+          extract_obj(obj);
           break;
         }
-        if( IS_ARTIFACT(obj) && timer )
-        {
-          obj->timer[3] = timer;
-          obj_to_room( obj, real_room(room) );
-          break;
-        }
+
         obj_to_room(obj, ZCMD.arg3);
         // Artifact poof timer to BLOOD_DAYS * secs in a day.
         obj->timer[3] = time(NULL);
@@ -3273,42 +3247,29 @@ void reset_zone(int zone, int force_item_repop)
 
         if (obj_index[ZCMD.arg1].number < ZCMD.arg2)
         {
-          if( (timer = get_current_artifact_info(temp, 0, NULL, NULL, NULL, NULL, FALSE, NULL)) )
-          {
-            if( timer == -1 )
-            {
-              get_current_artifact_info(temp, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-            }
-            else
-            {
-              //statuslog(56, "didn't load arti obj #%d because already tracked", obj_index[temp].virtual_number);
-              break;
-            }
-          }
-
           if( !(obj = read_object(temp, REAL)) )
           {
              break;
           }
+          if( get_artifact_data_sql(obj_index[temp].virtual_number, &artidata) )
+          {
+            // If the artifact is owned, then it's timer is ticking somwhere, so we don't need to load another.
+            if( artidata.owned )
+            {
+              extract_obj(obj);
+              break;
+            }
+          }
           // Remove the artifact unless artifact.respawn == 0
           //   or artifact.respawn == 1 and we are not booting.
-          if( IS_ARTIFACT(obj) && ( get_property("artifact.respawn", 0) == 0
-            || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ))
+          if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
           {
-            extract_obj(obj, TRUE);
-            break;
-          }
-          if( IS_ARTIFACT(obj) && timer )
-          {
-            obj->timer[3] = timer;
-            obj_to_room( obj, real_room(room) );
+            extract_obj(obj);
             break;
           }
           if( mob )              /* last mob */
           {
             obj_to_char(obj, mob);
-            // Artifact poof timer to BLOOD_DAYS * secs in a day.
-            obj->timer[3] = time(NULL);
             last_cmd = 1;
             break;
           }
@@ -3318,17 +3279,15 @@ void reset_zone(int zone, int force_item_repop)
       case 'M':                /* read a mobile */
         mob_index[ZCMD.arg1].limit = ZCMD.arg2; // set the limit from zone file
 
-        if ((mob_index[ZCMD.arg1].number < ZCMD.arg2 &&
-              ZCMD.arg4 == 100) || force_item_repop)
+        if( (mob_index[ZCMD.arg1].number < ZCMD.arg2 && ZCMD.arg4 == 100) || force_item_repop )
         {
           if (ZCMD.arg4 > number(0, 99))
           {
             if (!(mob = read_mobile(ZCMD.arg1, REAL)))
             {
               ZCMD.command = '!';
-              logit(LOG_DEBUG,
-                    "reset_zone(): (zone %d) mob %d [%d] not loadable", zone,
-                    ZCMD.arg1, mob_index[ZCMD.arg1].virtual_number);
+              logit(LOG_DEBUG, "reset_zone(): (zone %d) mob %d [%d] not loadable", zone,
+                ZCMD.arg1, mob_index[ZCMD.arg1].virtual_number);
             }
           }
           else
@@ -3336,9 +3295,9 @@ void reset_zone(int zone, int force_item_repop)
             mob = 0;
             last_mob = 0;
             logit(LOG_MOB, "M cmd not executed %d %d %d %d", ZCMD.arg1,
-                  ZCMD.arg2, ZCMD.arg3, ZCMD.arg4);
+              ZCMD.arg2, ZCMD.arg3, ZCMD.arg4);
           }
-          if (!mob)
+          if( !mob )
           {
             last_cmd = last_mob_load = 0;
             last_mob_followable = 0;
@@ -3358,29 +3317,14 @@ void reset_zone(int zone, int force_item_repop)
       case 'O':                /* load an object to room */
         obj_index[ZCMD.arg1].limit = ZCMD.arg2; // set the limit from zone file
 
-        if ((ZCMD.arg1 >= 0) && (ZCMD.arg3 >= 0) &&
-            ((obj_index[ZCMD.arg1].number < ZCMD.arg2 &&
-              ZCMD.arg4 == 100) || force_item_repop))
+        if( (ZCMD.arg1 >= 0) && (ZCMD.arg3 >= 0) && ((obj_index[ZCMD.arg1].number < ZCMD.arg2
+          && ZCMD.arg4 == 100) || force_item_repop) )
         {
           if( !(obj = get_obj_in_list_num(ZCMD.arg1, world[ZCMD.arg3].contents)) || IS_SET(obj->wear_flags, ITEM_TAKE) )
           {
             obj = NULL;
             if (ZCMD.arg4 > number(0, 99))
             {
-              if( (timer = get_current_artifact_info(ZCMD.arg1, 0, NULL, NULL, NULL, NULL, FALSE, NULL)) )
-              {
-                if( timer == -1 )
-                {
-                  get_current_artifact_info(ZCMD.arg1, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-                }
-                else
-                {
-                  last_cmd = 0;
-                  //statuslog(56, "didn't load arti obj #%d because already tracked", obj_index[temp].virtual_number);
-                  break;
-                }
-              }
-
               if( !(obj = read_object(ZCMD.arg1, REAL)) )
               {
                 ZCMD.command = '!';
@@ -3389,22 +3333,12 @@ void reset_zone(int zone, int force_item_repop)
               }
               if( obj )
               {
-                if( IS_ARTIFACT(obj)
-                  && ( get_property("artifact.respawn", 0) == 0
-                    || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ))
+                if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
                 {
-                  extract_obj(obj, TRUE);
-                  break;
-                }
-                if( IS_ARTIFACT(obj) && timer )
-                {
-                  obj->timer[3] = timer;
-                  obj_to_room( obj, real_room(room) );
+                  extract_obj(obj);
                   break;
                 }
                 obj_to_room(obj, ZCMD.arg3);
-                // Artifact poof timer to BLOOD_DAYS * secs in a day.
-                obj->timer[3] = time(NULL);
                 last_cmd = 1;
                 break;
               }
@@ -3427,49 +3361,35 @@ void reset_zone(int zone, int force_item_repop)
         last_cmd = 0;
         obj_index[ZCMD.arg1].limit = ZCMD.arg2; // set the limit from zone file
 
-        if ((ZCMD.arg1 >= 0) && (ZCMD.arg3 >= 0) &&
-            ((obj_index[ZCMD.arg1].number < ZCMD.arg2) || force_item_repop))
+        if( (ZCMD.arg1 >= 0) && (ZCMD.arg3 >= 0) && ((obj_index[ZCMD.arg1].number < ZCMD.arg2) || force_item_repop) )
         {
-
           if (ZCMD.arg4 > number(0, 99))
           {
-            if( get_current_artifact_info(ZCMD.arg1, 0, NULL, NULL, NULL, NULL, FALSE, NULL) )
-            {
-              if( timer == -1 )
-              {
-                get_current_artifact_info(ZCMD.arg1, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-              }
-              else
-              {
-                //statuslog(56, "didn't load arti obj #%d because already tracked", obj_index[temp].virtual_number);
-                break;
-              }
-            }
-
-            if (!(obj = read_object(ZCMD.arg1, REAL)))
+            if( !(obj = read_object(ZCMD.arg1, REAL)) )
             {
               ZCMD.command = '!';
               logit(LOG_DEBUG, "reset_zone(): (zone %d) obj %d [%d] not loadable", zone, ZCMD.arg1, obj_index[ZCMD.arg1].virtual_number);
             }
-            if (obj)
+            if( obj )
             {
+              if( IS_ARTIFACT(obj) && get_artifact_data_sql(obj_index[ZCMD.arg1].virtual_number, &artidata) )
+              {
+                // If the artifact is owned, then it's timer is ticking somwhere, so we don't need to load another.
+                if( artidata.owned )
+                {
+                  extract_obj(obj);
+                  break;
+                }
+              }
+
               obj_to = get_obj_num(ZCMD.arg3);
               if (obj_to)
               {
-                if( IS_ARTIFACT(obj)
-                  && ( get_property("artifact.respawn", 0) == 0
-                  || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ) )
+                if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
                 {
-                  extract_obj(obj, TRUE);
+                  extract_obj(obj);
                   break;
                 }
-                if( IS_ARTIFACT(obj) && timer )
-                {
-                  obj->timer[3] = timer;
-                  obj_to_room( obj, real_room(room) );
-                  break;
-                }
-                obj->timer[3] = time(NULL);
             		obj_to_obj(obj, obj_to);
                 last_cmd = 1;
                 break;
@@ -3492,22 +3412,8 @@ void reset_zone(int zone, int force_item_repop)
 
         if( (ZCMD.arg1 >= 0) && ((obj_index[ZCMD.arg1].number < ZCMD.arg2) || force_item_repop) )
         {
-
           if (ZCMD.arg4 > number(0, 99))
           {
-            if( (timer = get_current_artifact_info(ZCMD.arg1, 0, NULL, NULL, NULL, NULL, FALSE, NULL)) )
-            {
-              if( timer == -1 )
-              {
-                get_current_artifact_info(ZCMD.arg1, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-              }
-              else
-              {
-//                statuslog(56, "Didn't load arti obj #%d because already tracked.", obj_index[ZCMD.arg1].virtual_number);
-                break;
-              }
-            }
-
             if( !(obj = read_object(ZCMD.arg1, REAL)) )
             {
               ZCMD.command = '!';
@@ -3516,26 +3422,26 @@ void reset_zone(int zone, int force_item_repop)
             }
             if( obj )
             {
-              if( IS_ARTIFACT(obj)
-                && ( get_property("artifact.respawn", 0) == 0
-                || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ) )
+              if( IS_ARTIFACT(obj) && get_artifact_data_sql(obj_index[ZCMD.arg1].virtual_number, &artidata) )
               {
-                extract_obj(obj, TRUE);
-                break;
+                // If the artifact is owned, then it's timer is ticking somwhere, so we don't need to load another.
+                if( artidata.owned )
+                {
+                  extract_obj(obj);
+                  break;
+                }
               }
-              // Artifact poof timer to BLOOD_DAYS * secs in a day.
-              if( IS_ARTIFACT(obj) && timer )
+              if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
               {
-                obj->timer[3] = timer;
-                obj_to_room( obj, real_room(room) );
+                extract_obj(obj);
                 break;
               }
               if( mob )
               {
                 //Drannak trying out item stat randomization 3/28/14
-                if(!IS_ARTIFACT(obj))
+                // Added check for shopkeeper so their wares don't look goofy.
+                if( !IS_ARTIFACT(obj) && !IS_SHOPKEEPER(mob) )
                   randomizeitem(mob, obj);
-                obj->timer[3] = time(NULL);
                 obj_to_char(obj, mob);
                 last_cmd = 1;
             		break;
@@ -3553,7 +3459,6 @@ void reset_zone(int zone, int force_item_repop)
         {
           logit(LOG_OBJ, "G cmd, bad arg1.  disabling!");
           ZCMD.command = '!';
-
         }
         else if (obj_index[ZCMD.arg1].number < ZCMD.arg2)
         {
@@ -3572,19 +3477,6 @@ void reset_zone(int zone, int force_item_repop)
         {
           if (ZCMD.arg4 > number(0, 99))
           {
-            if( (timer = get_current_artifact_info(ZCMD.arg1, 0, NULL, NULL, NULL, NULL, FALSE, NULL)) )
-            {
-              if( timer == -1 )
-              {
-                get_current_artifact_info(ZCMD.arg1, 0, NULL, &room, NULL, NULL, FALSE, &timer);
-              }
-              else
-              {
-                //statuslog(56, "didn't load arti obj #%d because already tracked", obj_index[temp].virtual_number);
-                break;
-              }
-            }
-
             if( !(obj = read_object(ZCMD.arg1, REAL)) )
             {
               ZCMD.command = '!';
@@ -3592,26 +3484,26 @@ void reset_zone(int zone, int force_item_repop)
             }
             if( obj )
             {
-              if( IS_ARTIFACT(obj)
-                && ( get_property("artifact.respawn", 0) == 0
-                || (get_property("artifact.respawn", 0) == 1 && force_item_repop != 2) ) )
+              if( IS_ARTIFACT(obj) && get_artifact_data_sql(obj_index[ZCMD.arg1].virtual_number, &artidata) )
               {
-                extract_obj(obj, TRUE);
+                // If the artifact is owned, then it's timer is ticking somwhere, so we don't need to load another.
+                if( artidata.owned )
+                {
+                  extract_obj(obj);
+                  break;
+                }
+              }
+              if( IS_ARTIFACT(obj) && (respawn == 0 || (respawn == 1 && force_item_repop != 2)) )
+              {
+                extract_obj(obj);
                 break;
               }
-              // Artifact poof timer to BLOOD_DAYS * secs in a day.
-              if( IS_ARTIFACT(obj) && timer )
-              {
-                obj->timer[3] = timer;
-                obj_to_room( obj, real_room(room) );
-                break;
-              }
-              obj->timer[3] = time(NULL);
               if( mob && (ZCMD.arg3 > 0) && (ZCMD.arg3 <= CUR_MAX_WEAR) )
               {
                 // Drannak trying out item stat randomization 3/28/14
-                if(!IS_ARTIFACT(obj))
-            	  	randomizeitem(mob, obj);
+                // Added check for shopkeeper so their wares don't look goofy.
+                if( !IS_ARTIFACT(obj) && !IS_SHOPKEEPER(mob) )
+                  randomizeitem(mob, obj);
                 if (mob->equipment[ZCMD.arg3])
                   unequip_char(mob, ZCMD.arg3);
                 equip_char(mob, obj, ZCMD.arg3, 1);
@@ -4347,7 +4239,7 @@ int real_room0(const int virt)
   bot = 0;
   top = top_of_world;
 
-  if (virt == -1)
+  if( virt < 0 )
     return 0;
 
   /*

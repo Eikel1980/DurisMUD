@@ -32,11 +32,13 @@
 #include "sql.h"
 #include "specs.winterhaven.h"
 #include "ctf.h"
+#include "vnum.room.h"
 
 extern P_index obj_index;
 extern P_index mob_index;
 extern P_obj object_list;
 extern P_room world;
+extern const int top_of_world;
 extern P_event current_event;
 extern P_event event_list;
 extern struct mm_ds *dead_mob_pool;
@@ -690,21 +692,31 @@ P_obj LockerChest::CreateChestObject(void)
 
 LockerChest::~LockerChest(void)
 {
-  if (m_pChestObject)
-  {
-    if (OBJ_ROOM(m_pChestObject))
-    {
-      // drop the contents
-      while (m_pChestObject->contains)
-      {
-        P_obj    tmp_obj = m_pChestObject->contains;
+  int   room;
+  P_obj content, next;
 
-        obj_from_obj(tmp_obj);
-        obj_to_room(tmp_obj, m_pChestObject->loc.room);
-      }
-      obj_from_room(m_pChestObject);
+  if( m_pChestObject )
+  {
+    // Drop the contents - default to limbo just in case.
+    if( OBJ_ROOM(m_pChestObject) )
+    {
+      room = m_pChestObject->loc.room;
+      room = (room < 0 || room > top_of_world) ? RROOM_LIMBO : room;
     }
-    extract_obj(m_pChestObject, TRUE);
+    // This should never happen, but just in case.
+    else
+    {
+      room = RROOM_LIMBO;
+    }
+    next = m_pChestObject->contains;
+    while( (content = next) != NULL )
+    {
+      next = content->next_content;
+      obj_from_obj(content);
+      obj_to_room(content, room);
+    }
+    obj_from_room(m_pChestObject);
+    extract_obj(m_pChestObject, TRUE); // Not an arti, but 'in game.'
   }
 }
 
@@ -2099,7 +2111,7 @@ void StorageLocker::PFileToLocker(void)
   {
     next_obj = tmp_object->next_content;
     nCount++;
-    obj_from_char(tmp_object, FALSE);
+    obj_from_char(tmp_object);
     if ((tmp_object->type == ITEM_MONEY) || !PutInProperChest(tmp_object))
       obj_to_room(tmp_object, m_realRoom);
   }

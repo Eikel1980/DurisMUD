@@ -270,7 +270,7 @@ void event_harvest_tree(P_char ch, P_char victim, P_obj obj, void *data)
   if (!--tree->value[TREE_RESOURCE])
   {
     send_to_char("You have rendered this area barren of trees!\r\n", ch);
-    extract_obj(tree, TRUE);
+    extract_obj(tree);
   }
   else
     add_event(event_harvest_tree, WAIT_SEC * 3, ch, NULL, 0, 0, 0, 0);

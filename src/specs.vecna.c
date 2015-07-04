@@ -48,7 +48,6 @@ extern const struct stat_data stat_factor[];
 extern const struct class_names class_names_table[];
 extern int innate_abilities[];
 extern int planes_room_num[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct dex_app_type dex_app[52];
@@ -619,7 +618,7 @@ int vecna_staffoaken(P_obj obj, P_char ch, int cmd, char *arg)
         for (obj_lose = ch->carrying; obj_lose; obj_lose = obj_next)
         {
           obj_next = obj_lose->next_content;
-          obj_from_char(obj_lose, TRUE);
+          obj_from_char(obj_lose);
           act("$p falls to the ground.&n", TRUE, ch, obj_lose, NULL, TO_CHAR);
           act("$p falls to the ground.&n", TRUE, ch, obj_lose, NULL, TO_ROOM);
           obj_to_room(obj_lose, ch->in_room);

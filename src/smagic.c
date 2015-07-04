@@ -53,7 +53,6 @@ extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int hometown[];
-extern int top_of_world;
 extern struct time_info_data time_info;
 extern struct weather_data weather_info;
 extern struct zone_data *zone_table;
@@ -1745,7 +1744,7 @@ void spell_transfer_wellness(int level, P_char ch, char *arg, int type,
   for (t_obj = ch->carrying; t_obj; t_obj = next_obj)
   {
     next_obj = t_obj->next_content;
-    obj_from_char(t_obj, TRUE);
+    obj_from_char(t_obj);
     obj_to_room(t_obj, room);
   }
 

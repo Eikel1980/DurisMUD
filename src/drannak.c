@@ -36,6 +36,7 @@
 #include "specs.prototypes.h"
 #include "ships.h"
 #include "achievements.h"
+#include "vnum.obj.h"
 
 /*
  * external variables
@@ -340,11 +341,15 @@ void vnum_from_inv(P_char ch, int item, int count)
 
     if((GET_OBJ_VNUM(t_obj) == item) && (i > 0) )
     {
-      obj_from_char(t_obj, TRUE);
-      extract_obj(t_obj, TRUE);
+      obj_from_char(t_obj);
+      if( IS_ARTIFACT(t_obj) )
+      {
+        logit( LOG_ARTIFACT, "vnum_from_inv: Extracting artifact '%s' %d from '%s' %d.  Not changing arti list!",
+          OBJ_SHORT(t_obj), GET_OBJ_VNUM(t_obj), J_NAME(ch), GET_ID(ch) );
+      }
+      extract_obj(t_obj);
       i--;
     }
-
   }
 }
 
@@ -379,7 +384,7 @@ int pvp_store(P_char ch, P_char pl, int cmd, char *arg)
           "&+LThe Harvester&+L &+wsays 'Additionally, I offer a reward for &+R6 &+we&+Wt&+Lh&+rer&+Le&+Wa&+wl &+Wsoul &+rshards&n from beings who have fallen in battle&n.&+L.&n'\n"
           "&+LThe Harvester&+L &+wsays 'Simply have them in your &+Winventory&n and buy the item from the list below&n.&+L.&n'\n"
           "&+y=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
-          "&+y|		&+cItem Name					           Frags Required       &+y|\n"																
+          "&+y|		&+cItem Name					           Frags Required       &+y|\n"
           "&+y|&+W 1) &+Ya &+Mgreater&+Y o&+Mr&+Bb &+Yof &+mM&+Ma&+Wg&+Mi&+mc&n&+C%30d&n		                        &+y|\n"
           "&+y=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
           "\n", 0);
@@ -392,34 +397,29 @@ int pvp_store(P_char ch, P_char pl, int cmd, char *arg)
     if(!arg || !*arg)
     {//ifnoarg
       // practice called with no arguments
-      sprintf(buffer,
-          "&+LThe Harvester&+L &+wsays 'What item would you like to buy?'\n");
-
+      sprintf(buffer,"&+LThe Harvester&+L &+wsays 'What item would you like to buy?'\n");
       send_to_char(buffer, pl);
       return TRUE;
     }//endifnoarg
 
     else if(strstr(arg, "1"))
-    {//buy1
-      //check for 50 soul shards
-      if (vnum_in_inv(pl, 400230) < 2)
+    {
+      //check for 3 soul shards
+      if (vnum_in_inv(pl, VOBJ_SOUL_SHARD) < 3)
       {
-        send_to_char("&+LThe Harvester&+L &+wsays '&nI'm sorry, but you do not seem to have the 6 e&+Wt&+Lh&+rer&+Le&+Wa&+wl &+Wsoul &+rshards&n required to purchase that item.\r\n&n", pl);
+        send_to_char("&+LThe Harvester&+L &+wsays '&nI'm sorry, but you do not seem to have the 3 e&+Wt&+Lh&+rer&+Le&+Wa&+wl &+Wsoul &+rshards&n required to purchase that item.\r\n&n", pl);
         return TRUE;
       }
       //subtract 2 soul shards
-      P_obj obj;
-      obj = read_object(400231, VIRTUAL);
-      vnum_from_inv(pl, 400230, 2);
+      P_obj obj = read_object(VOBJ_GREATER_ORB_MAGIC, VIRTUAL);
+      vnum_from_inv(pl, VOBJ_SOUL_SHARD, 3);
       send_to_char("&+LThe Harvester&+L &+wsays '&nExcellent, mortal.'\n", pl);
       send_to_char("&+LThe Harvester &ntakes the &+rshards&n from you and tightly grasps them with his hands. After a moment, a large grin appears across it's face.\r\n&n", pl);
       send_to_char("Moments later, &+LThe Harvester &nmakes a strange gesture about your body.\r\n&n", pl);
       act("You now have $p!\r\n", FALSE, pl, obj, 0, TO_CHAR);
-      extract_obj(obj, FALSE);
-      obj_to_char(read_object(400231, VIRTUAL), pl);
+      obj_to_char(obj, pl);
       return TRUE;
-    }//endbuy1
-
+    }
   }
   return FALSE;
 }
@@ -849,19 +849,18 @@ void random_recipe(P_char ch, P_char victim)
   if( result < chance )
   {
     P_obj reward = random_zone_item(ch);
-    if(obj_index[reward->R_num].virtual_number == 1252 ||
+    if( obj_index[reward->R_num].virtual_number == 1252 ||
         obj_index[reward->R_num].virtual_number == 1253 ||
         obj_index[reward->R_num].virtual_number == 1254 )
     {
-      extract_obj(reward, !IS_TRUSTED(ch));
+      extract_obj(reward);
       return;
     }
     create_recipe(victim, reward);
-    extract_obj(reward, TRUE);
+    extract_obj(reward);
   }
 
   return;
-
 }
 
 void randomizeitem(P_char ch, P_obj obj)
@@ -1011,8 +1010,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+Ccold &+Wprotection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("bloodstone", t_obj->name) )
@@ -1041,8 +1040,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+rfire &+Wprotection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("black", t_obj->name) )
@@ -1071,8 +1070,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+ylesser &+Yde&+yfen&+Lse&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("pink", t_obj->name) )
@@ -1101,8 +1100,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+ylesser &+Yde&+yfen&+Lse&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("rubin", t_obj->name) )
@@ -1131,8 +1130,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+revil &+Ldetection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("green", t_obj->name) )
@@ -1161,8 +1160,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+Wgood &+Ldetection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("red", t_obj->name) )
@@ -1191,8 +1190,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+mmagic &+Ldetection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("yellow", t_obj->name) )
@@ -1221,8 +1220,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+mmagic &+Ldetection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
       else if( isname("blue", t_obj->name) )
@@ -1251,8 +1250,8 @@ void randomizeitem(P_char ch, P_obj obj)
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
           sprintf(emsg, " &+Lof &+mmagic &+Ldetection&n");
         }
-        obj_from_char(t_obj, TRUE);
-        extract_obj(t_obj, TRUE);
+        obj_from_char(t_obj);
+        extract_obj(t_obj);
         break;
       }
     }
@@ -1476,7 +1475,7 @@ void do_conjure(P_char ch, char *argument, int cmd)
     }
 
 
-    if( (GET_LEVEL(t_ch) > 51) && !vnum_in_inv(ch, 400231) && !IS_TRUSTED(ch) )
+    if( (GET_LEVEL(t_ch) > 51) && !vnum_in_inv(ch, VOBJ_GREATER_ORB_MAGIC) && !IS_TRUSTED(ch) )
     {
       send_to_char("You must have a &+Ya &+Mgreater&+Y o&+Mr&+Bb &+Yof &+mM&+Ma&+Wg&+Mi&+mc&n in your &+Winventory&n in order to &+Ysummon&n a being of such &+Mgreat&+M power&n.\r\n", ch);
       extract_char(t_ch);
@@ -1537,7 +1536,7 @@ void do_conjure(P_char ch, char *argument, int cmd)
 
     if(GET_LEVEL(t_ch) > 56 && !IS_TRUSTED(ch))
     {
-      vnum_from_inv(ch, 400231, 1);
+      vnum_from_inv(ch, VOBJ_GREATER_ORB_MAGIC, 1);
       act("$n &+Ltosses their &+Ya &+Mgreater&+Y o&+Mr&+Bb &+Yof &+mM&+Ma&+Wg&+Mi&+mc&n &+Linto the &+Cair&+L, which quickly forms an &+Rextra-dimensional &+Lpocket&n!", TRUE, ch, 0,
           t_ch, TO_ROOM);
       act("You &+Ltoss your &+Ya &+Mgreater&+Y o&+Mr&+Bb &+Yof &+mM&+Ma&+Wg&+Mi&+mc&n &+Linto the &+Cair&+L, which quickly forms an &+Rextra-dimensional &+Lpocket&n!", TRUE, ch, 0,
@@ -2031,7 +2030,6 @@ void enhance(P_char ch, P_obj source, P_obj material)
   sval = itemvalue(ch, source);
   val = itemvalue(ch, material);
   minval = itemvalue(ch, source) - 5;
-  validobj = FALSE;
   searchcount = 0;
   maxsearch = 20000;
   // Only search matching wear flags unless none matching, then just search source wear flags.
@@ -2102,22 +2100,23 @@ void enhance(P_char ch, P_obj source, P_obj material)
   }
 
   mod += itemvalue(ch, source);
+  validobj = FALSE;
   /*debug sprintf(buf, "validobj value: %d\n\r", validobj);
     send_to_char(buf, ch);*/
-  while(validobj == 0)
+  while( !validobj )
   {
     robjint = number(1300, 134000);
     robj = read_object(robjint, VIRTUAL);
-    validobj = 1;
+    validobj = TRUE;
 
     if(!robj)
     {
-      validobj = 0;
+      validobj = FALSE;
     }
     else if(!IS_SET(robj->wear_flags, ITEM_TAKE) || robj->type == ITEM_KEY || IS_SET(robj->extra_flags, ITEM_ARTIFACT) || IS_SET(robj->extra_flags, ITEM_NOSELL) || IS_SET(robj->extra_flags, ITEM_NORENT) || IS_SET(robj->extra_flags, ITEM_NOSHOW) || IS_SET(robj->extra_flags, ITEM_TRANSIENT))
     {
-      validobj = 0;
-      extract_obj(robj, FALSE);
+      validobj = FALSE;
+      extract_obj(robj);
     }
     else if( itemvalue(ch, robj) != mod
       || (robj->type == ITEM_STAFF && robj->value[3] > 0)
@@ -2125,18 +2124,18 @@ void enhance(P_char ch, P_obj source, P_obj material)
       || robj->type == ITEM_MONEY || robj->type == ITEM_KEY
       || robj->type == ITEM_WAND )
     {
-      validobj = 0;
-      extract_obj(robj, FALSE);
+      validobj = FALSE;
+      extract_obj(robj);
     }
     else if(GET_OBJ_VNUM(robj) == GET_OBJ_VNUM(source))
     {
-      validobj = 0;
-      extract_obj(robj, FALSE);
+      validobj = FALSE;
+      extract_obj(robj);
     }
     else if(IS_SET(source->wear_flags, ITEM_WIELD) && !IS_SET(robj->wear_flags, ITEM_WIELD))
     {
-      validobj = 0;
-      extract_obj(robj, FALSE);
+      validobj = FALSE;
+      extract_obj(robj);
     }
 /*  Tidying this up into a short simple statement...
     else if( (IS_SET(source->wear_flags, ITEM_WIELD) && IS_SET(robj->wear_flags, ITEM_WIELD)) ||
@@ -2164,12 +2163,12 @@ void enhance(P_char ch, P_obj source, P_obj material)
 */
     else if( wearflags & robj->wear_flags )
     {
-          validobj = 1;
+      validobj = TRUE;
     }
     else
     {
-      validobj = 0;
-      extract_obj(robj, FALSE);
+      validobj = FALSE;
+      extract_obj(robj);
     }
 
     searchcount++;
@@ -2178,7 +2177,6 @@ void enhance(P_char ch, P_obj source, P_obj material)
       act("&+GThe &+ritem gods&+G could not find a better type of &+yitem &+Gthan your &n$p&+G this time. &+WTry again&+G. If your item's value is above &+W55&+G you may have the &+Wbest&+G item of that type!\r\n", FALSE, ch, source, 0, TO_CHAR);
       return;
     }
-
   }
   //Remove Curse, Secret, add Invis
   if(IS_SET(robj->extra_flags, ITEM_SECRET))
@@ -2202,16 +2200,14 @@ void enhance(P_char ch, P_obj source, P_obj material)
 
   act("&+BYour enhancement is a success! You now have &n$p&+B!\r\n", FALSE, ch, robj, 0, TO_CHAR);
   //debug("search count: %d\r\n", searchcount);
-  obj_to_char(robj, ch);     
-  obj_from_char(source, TRUE);
-  extract_obj(source, FALSE);
-  obj_from_char(material, TRUE);
-  extract_obj(material, FALSE);
-  statuslog(ch->player.level,
-    "&+BEnhancement&n:&n %s&n just got [%d] '%s&n' ival [%d] at [%d]!",
+  obj_to_char(robj, ch);
+  obj_from_char(source);
+  extract_obj(source);
+  obj_from_char(material);
+  extract_obj(material);
+  statuslog(ch->player.level, "&+BEnhancement&n:&n %s&n just got [%d] '%s&n' ival [%d] at [%d]!",
     GET_NAME(ch), obj_index[robj->R_num].virtual_number, robj->short_description,
-      itemvalue(ch, robj), (ch->in_room == NOWHERE) ? -1 : world[ch->in_room].number);
-
+    itemvalue(ch, robj), (ch->in_room == NOWHERE) ? -1 : world[ch->in_room].number);
   return;
 }
 
@@ -2533,8 +2529,8 @@ void modenhance(P_char ch, P_obj source, P_obj material)
 
   act("&+BYour enhancement is a success! Your &n$p&+B now feels slightly more powerful!\r\n", FALSE, ch, source, 0, TO_CHAR);
 
-  obj_from_char(material, TRUE);
-  extract_obj(material, FALSE);
+  obj_from_char(material);
+  extract_obj(material);
 
   P_obj tempobj = read_object(GET_OBJ_VNUM(source), VIRTUAL);
   char tempdesc[MAX_STRING_LENGTH], short_desc[MAX_STRING_LENGTH], keywords[MAX_STRING_LENGTH];
@@ -2545,7 +2541,7 @@ void modenhance(P_char ch, P_obj source, P_obj material)
   sprintf(short_desc, "%s %s&n", tempdesc, modstring);
   set_keywords(source, keywords);
   set_short_description(source, short_desc);
-  extract_obj(tempobj, FALSE);
+  extract_obj(tempobj);
 
   return;
 }

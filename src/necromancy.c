@@ -680,7 +680,7 @@ void raise_undead(int level, P_char ch, P_char victim, P_obj obj,
     timeToDecay = obj_affect_time(obj, afDecay) / (60 * 4); /* 4 pulses in a sec, 60 secs in a minute */
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
   char_to_room(undead, ch->in_room, 0);
 
   int duration = setup_pet(undead, ch, MAX(4, timeToDecay), PET_NOCASH);
@@ -1133,7 +1133,7 @@ void spell_call_titan(int level, P_char ch, char *arg, int type, P_char victim, 
     timeToDecay = obj_affect_time(obj, afDecay) / (60 * 4); /* 4 pulses in a sec, 60 secs in a minute */
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
   remove_plushit_bits(mob);
   act(summons[sum].message, TRUE, mob, 0, 0, TO_ROOM);
   balance_affects(mob);
@@ -1193,9 +1193,9 @@ void check_saved_corpse(P_char ch)
     SavedCorpseData *data = (SavedCorpseData*) e->data;
     corpse = data->corpse;
   }
-  
-  if (corpse && corpse->loc.room == real_room(40))
-    extract_obj(corpse, TRUE);
+
+  if (corpse && corpse->loc.room == real_room(CORPSE_STORAGE))
+    extract_obj(corpse);
 }
 
 void event_saved_corpse(P_char ch, P_char vict, P_obj obj, void *data)
@@ -1347,7 +1347,7 @@ void spell_create_dracolich(int level, P_char ch, char *arg, int type, P_char vi
            return;
   }
 
-  extract_obj(dragonscale, TRUE);
+  extract_obj(dragonscale);
   */
 
   sum = number(0, 3);
@@ -1431,7 +1431,7 @@ void spell_create_dracolich(int level, P_char ch, char *arg, int type, P_char vi
     timeToDecay = obj_affect_time(obj, afDecay) / (60 * WAIT_SEC);
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
   remove_plushit_bits(mob);
   act(summons[sum].message, TRUE, mob, 0, 0, TO_ROOM);
   balance_affects(mob);
@@ -1685,7 +1685,7 @@ void create_golem(int level, P_char ch, P_char victim, P_obj obj,
     timeToDecay = obj_affect_time(obj, afDecay) / (60 * 4); /* 4 pulses in a sec, 60 secs in a minute */
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
   remove_plushit_bits(mob);
   //REMOVE_BIT(mob->only.npc->aggro_flags, AGGR_ALL);
   SET_BIT(mob->only.npc->aggro_flags, AGGR_ALL);
@@ -1709,8 +1709,7 @@ void create_golem(int level, P_char ch, P_char victim, P_obj obj,
 
 }
 
-void spell_call_avatar(int level, P_char ch, char *arg, int type,
-                                    P_char victim, P_obj obj)
+void spell_call_avatar(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   P_char   mob;
   bool     corpselog;
@@ -1910,7 +1909,7 @@ void spell_call_avatar(int level, P_char ch, char *arg, int type,
   {
     timeToDecay = obj_affect_time(obj, afDecay) / (60 * 4); /* 4 pulses in a sec, 60 secs in a minute */
   }
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 
   remove_plushit_bits(mob);
 
@@ -2141,7 +2140,7 @@ void spell_create_greater_dracolich(int level, P_char ch, char *arg, int type, P
      // WAIT_SEC pulses in a sec, 60 secs in a minute
     timeToDecay = obj_affect_time(obj, afDecay) / (60 * WAIT_SEC);
   }
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 
   remove_plushit_bits(mob);
 
@@ -2374,8 +2373,7 @@ void do_remort(P_char ch, char *arg, int cmd)
   CharWait(ch, PULSE_VIOLENCE * 3);
 }
 
-void spell_corpseform(int level, P_char ch, char *arg, int type,
-                      P_char victim, P_obj obj)
+void spell_corpseform(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   bool     loss_flag = FALSE;
   int      chance, l, found, clevel, ss_save, ss_roll, the_size;
@@ -2528,8 +2526,8 @@ void spell_corpseform(int level, P_char ch, char *arg, int type,
   {
     next_foll = foll->next;
     folpet = foll->follower;
-    
-    if (IS_PC_PET(folpet)) 
+
+    if (IS_PC_PET(folpet))
     {
       stop_follower(folpet);
       setup_pet(folpet, ch, 2, PET_NOORDER);
@@ -2546,18 +2544,18 @@ void spell_corpseform(int level, P_char ch, char *arg, int type,
       obj_to_room(obj_in_corpse, ch->in_room);
     }
   }
-  
-  extract_obj(obj, TRUE);
+
+  extract_obj(obj);
 }
 
 void event_corpseform_wearoff(P_char ch, P_char victim, P_obj obj, void *data)
 {
   struct affected_type *afrc;
-  
+
   if ((afrc = get_spell_from_char(ch, TAG_RACE_CHANGE)) != NULL)
   {
     if (!affected_by_spell(ch, SPELL_CORPSEFORM))
-    {  
+    {
       GET_RACE(ch) = afrc->modifier;
       affect_remove(ch, afrc);
       send_to_char("&+LThe necromatic aura dissipates and your true form is revealed.&n\r\n", ch);

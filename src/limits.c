@@ -45,7 +45,6 @@ extern P_room world;
 extern const struct stat_data stat_factor[];
 extern const struct max_stat max_stats[];
 extern const struct racial_data_type racial_data[];
-extern int top_of_world;
 extern struct con_app_type con_app[];
 extern struct wis_app_type wis_app[];
 extern struct zone_data *zone_table;

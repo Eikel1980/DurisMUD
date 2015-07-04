@@ -56,7 +56,7 @@ extern int MobSpellIndex[LAST_SPELL+1];
 extern int equipment_pos_table[CUR_MAX_WEAR][3];
 extern int no_specials;
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
-extern int top_of_world;
+extern const int top_of_world;
 extern const char rev_dir[];
 extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;
@@ -6380,7 +6380,7 @@ bool MobThief(P_char ch)
 
     if(!weapon_pos)
     {
-      obj_from_char(bs_weap, TRUE);
+      obj_from_char(bs_weap);
       /*
        * got to WIELD our bs weapon (maybe unWIELDing current)
        */
@@ -7458,9 +7458,7 @@ void CheckEqWorthUsing(P_char ch, P_obj obj)
 
 #if 0
   if(RateObject(ch, 0, obj) <= 200)
-    extract_obj(obj, TRUE);     /*
-                                 * didn't bag, not worth much, get rid of
-                                 */
+    extract_obj(obj, TRUE); // Didn't bag, not worth much, get rid of
 #endif
 }
 
@@ -8848,14 +8846,14 @@ void MobHuntCheck(P_char ch, P_char vict)
             {
               if(!ch->equipment[WIELD])
               {
-                obj_from_char(bs_weap, TRUE);
+                obj_from_char(bs_weap);
                 equip_char(ch, bs_weap, WIELD, FALSE);
               }
               else if(!ch->equipment[SECONDARY_WEAPON] &&
                        !IS_SET(ch->equipment[WIELD]->extra_flags,
                                ITEM_TWOHANDS))
               {
-                obj_from_char(bs_weap, TRUE);
+                obj_from_char(bs_weap);
                 equip_char(ch, bs_weap, SECONDARY_WEAPON, FALSE);
               }
               else
@@ -8867,22 +8865,21 @@ void MobHuntCheck(P_char ch, P_char vict)
                 {
                   if(!IS_SET(ch->equipment[WIELD]->extra_flags, ITEM_NODROP))
                   {
-                    obj_from_char(bs_weap, TRUE);
+                    obj_from_char(bs_weap);
                     obj_to_char(unequip_char(ch, WIELD), ch);
                     equip_char(ch, bs_weap, WIELD, FALSE);
                   }
                 }
-                else if(!IS_SET(ch->equipment[SECONDARY_WEAPON]->extra_flags,
-                                 ITEM_NODROP))
+                else if(!IS_SET(ch->equipment[SECONDARY_WEAPON]->extra_flags, ITEM_NODROP))
                 {
-                  obj_from_char(bs_weap, TRUE);
+                  obj_from_char(bs_weap);
                   obj_to_char(unequip_char(ch, SECONDARY_WEAPON), ch);
                   equip_char(ch, bs_weap, SECONDARY_WEAPON, FALSE);
                 }
                 else
                   if(!IS_SET(ch->equipment[WIELD]->extra_flags, ITEM_NODROP))
                 {
-                  obj_from_char(bs_weap, TRUE);
+                  obj_from_char(bs_weap);
                   obj_to_char(unequip_char(ch, WIELD), ch);
                   equip_char(ch, bs_weap, WIELD, FALSE);
                 }

@@ -46,7 +46,7 @@ extern const char *sector_types[];
 extern const char *room_bits[];
 extern const char *dirs[];
 extern struct zone_data *zone_table;
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 
 extern const char *olc_dirs[];

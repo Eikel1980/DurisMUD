@@ -21,6 +21,7 @@
 #include "graph.h"
 #include "damage.h"
 #include "map.h"
+#include "vnum.obj.h"
 
 /* external variables */
 
@@ -37,7 +38,7 @@ extern const struct stat_data stat_factor[];
 extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];
 extern int hometown[];
-extern int top_of_world;
+extern const int top_of_world;
 extern struct time_info_data time_info;
 extern struct weather_data weather_info;
 extern struct wis_app_type wis_app[];
@@ -3046,12 +3047,15 @@ void spell_thought_beacon(int level, P_char ch, char *arg, int type,
     return;
   }
 
-  if (afp = get_spell_from_char(ch, SPELL_THOUGHT_BEACON)) {
-    beacon = get_obj_in_list_num(real_object(416), world[afp->modifier].contents);
+  if (afp = get_spell_from_char(ch, SPELL_THOUGHT_BEACON))
+  {
+    beacon = get_obj_in_list_num(real_object(VOBJ_THOUGHT_BEACON), world[afp->modifier].contents);
     if (beacon)
       extract_obj(beacon, FALSE);
     afp->modifier = ch->in_room;
-  } else {
+  }
+  else
+  {
     memset(&af, 0, sizeof(af));
     af.type = SPELL_THOUGHT_BEACON;
     af.flags = /*AFFTYPE_NOSHOW | AFFTYPE_NOSAVE |*/ AFFTYPE_NODISPEL | AFFTYPE_NOAPPLY;

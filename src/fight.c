@@ -48,7 +48,7 @@
 #include "tether.h"
 #include "achievements.h"
 #include "siege.h"
-
+#include "vnum.obj.h"
 /*
  * external variables //
  */
@@ -778,105 +778,92 @@ void setHeavenTime( P_char victim )
 void AddFrags(P_char ch, P_char victim)
 {
   P_char   tch;
-  int allies, recfrag = 0, frag_gain, real_gain;
+  int allies, recfrag, frag_gain, loss;
   char buffer[1024];
   struct affected_type af, *afp, *next_af;
 
-  int gain;
+  float gain, real_gain;
 
-  if (IS_NPC(ch))
-    if (ch->following && IS_PC(ch->following) &&
-        ch->in_room == ch->following->in_room && grouped(ch, ch->following))
-      ch = ch->following;
-    else
-      return;
-
-  for (tch = world[ch->in_room].people, allies = 0; tch;
-      tch = tch->next_in_room)
+  if( IS_NPC(ch) )
   {
-    if (IS_PC(tch) && !opposite_racewar(ch, tch) && !IS_TRUSTED(tch))
-      allies++;
+    if( ch->following && IS_PC(ch->following) && ch->in_room == ch->following->in_room && grouped(ch, ch->following) )
+    {
+      ch = ch->following;
+    }
+    else
+    {
+      return;
+    }
   }
 
-  gain = 100 / allies;
+  for( tch = world[ch->in_room].people, allies = 0; tch; tch = tch->next_in_room )
+  {
+    if( IS_PC(tch) && !opposite_racewar(ch, tch) && !IS_TRUSTED(tch) )
+    {
+      allies++;
+    }
+  }
 
-  /*  Code for recent frags to allow blood task to be fulfilled within a set
-      period of time indicated in epic.frag.thrill.duration.  This allows for
-      multiple frags to add up to enough to fulfill blood task - Jexni 12/1/08 */
+  gain = 100.0 / allies;
 
-
-  if(EVIL_RACE(ch) &&
-      GOOD_RACE(victim))
-    gain = (int)(gain * get_property("frag.evil.penalty", 0.666));
-
+  if( EVIL_RACE(ch) && GOOD_RACE(victim) )
+  {
+    gain = gain * get_property("frag.evil.penalty", 0.666);
+  }
 
   for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
-  { 
-
-    if((IS_PC(tch) &&
-          (grouped(ch, tch)) ||
-          ch == tch))
+  {
+    if( (IS_PC(tch) && (grouped(ch, tch)) || ch == tch) )
     {
-
-      for(afp = tch->affected; afp; afp = next_af)
+      /*  Code for recent frags to allow blood task to be fulfilled within a set
+       *   period of time indicated in epic.frag.thrill.duration.  This allows for
+       *   multiple frags to add up to enough to fulfill blood task - Jexni 12/1/08
+       */
+      recfrag = 0;
+      for( afp = tch->affected; afp; afp = next_af )
       {
         next_af = afp->next;
-        if (afp->type == TAG_PLR_RECENT_FRAG)
+        if( afp->type == TAG_PLR_RECENT_FRAG )
         {
           recfrag = afp->modifier;
+          break;
         }
       }
 
-      if (fragWorthy(tch, victim))
+      if( fragWorthy(tch, victim) )
       {
-        real_gain = gain;
-        if(GET_LEVEL(tch) > GET_LEVEL(victim) + 5)
-          real_gain = (int)(real_gain * get_property("frag.leveldiff.modifier.low", 0.500));
-        if(GET_LEVEL(tch) + 5 < GET_LEVEL(victim))
-          real_gain = (int)(real_gain * get_property("frag.leveldiff.modifier.high", 1.200));
+        if( GET_LEVEL(tch) > GET_LEVEL(victim) + 5 )
+          real_gain = (gain * get_property("frag.leveldiff.modifier.low", 0.500));
+        else if( GET_LEVEL(tch) + 5 < GET_LEVEL(victim) )
+          real_gain = (gain * get_property("frag.leveldiff.modifier.high", 1.200));
+        else
+          real_gain = gain;
 
-        sprintf(buffer, "You just gained %.02f frags!\r\n", ((float) real_gain) / 100);
-
-        tch->only.pc->oldfrags = tch->only.pc->frags;
-        tch->only.pc->frags += real_gain;
-        sql_modify_frags(tch, real_gain);
-
+        sprintf(buffer, "You just gained %.02f frags!\r\n", real_gain/100.0);
         send_to_char(buffer, tch);
 
+        tch->only.pc->oldfrags = tch->only.pc->frags;
+        tch->only.pc->frags += (long)real_gain;
+        sql_modify_frags(tch, (int)real_gain);
 
+        memset(&af, 0, sizeof(af));
+        af.type = TAG_PLR_RECENT_FRAG;
+        af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL | AFFTYPE_NOAPPLY;
+        af.modifier = recfrag + (int)real_gain;
+        af.duration = get_property("epic.frag.thrill.duration", 45) * WAIT_SEC;
 
+        // affect_from_char doesn't care if ch has the spell or not, so just attempt to remove.
+        affect_from_char( tch, TAG_PLR_RECENT_FRAG );
+        // Then reapply the new af.
+        affect_to_char(tch, &af);
 
-
-        if(!affected_by_spell(tch, TAG_PLR_RECENT_FRAG))
-        {
-          memset(&af, 0, sizeof(af));
-          af.type = TAG_PLR_RECENT_FRAG;
-          af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL | AFFTYPE_NOAPPLY;
-          af.modifier = recfrag + real_gain;
-          af.duration = get_property("epic.frag.thrill.duration", 45) * WAIT_SEC;
-          affect_to_char(tch, &af);
-        }
-        else if(affected_by_spell(tch, TAG_PLR_RECENT_FRAG))
-        {
-          struct affected_type *af1;
-
-          for (af1 = tch->affected; af1; af1 = af1->next)
-          {
-            if(af1->type == TAG_PLR_RECENT_FRAG)
-            {
-              af1->modifier = af1->modifier + real_gain;
-              af1->duration = get_property("epic.frag.thrill.duration", 45) * WAIT_SEC;;
-            }
-          }
-        }
-
-        if(real_gain + recfrag >= get_property("epic.frag.threshold", 0.10)*100 )
+        if( real_gain + recfrag >= get_property("epic.frag.threshold", 0.10)*100 )
         {
           frag_gain = (int) ((real_gain/100.00) * (float) (get_property("epic.frag.amount", 20.000)));
           epic_frag(tch, GET_PID(victim), frag_gain);
         }
 
-        if (GET_RACE(ch) == RACE_HALFLING)
+        if( GET_RACE(ch) == RACE_HALFLING || GET_CLASS(ch, CLASS_MERCENARY) )
         {
           char     tmp[1024];
           sprintf(tmp, "You get %s in blood money.\r\n", coin_stringv(10000 * real_gain));
@@ -884,11 +871,15 @@ void AddFrags(P_char ch, P_char victim)
           ADD_MONEY(ch, 10000 * real_gain);
         }
 
-        if ((tch->only.pc->frags / 100) > (tch->only.pc->oldfrags / 100))
+        if( (tch->only.pc->frags / 100) > (tch->only.pc->oldfrags / 100) )
+        {
           checkFragList(tch);
+        }
 
-        if (IS_ILLITHID(tch))
+        if( IS_ILLITHID(tch) )
+        {
           illithid_advance_level(tch);
+        }
 
         check_boon_completion(tch, victim, ((double)(real_gain/100)), BOPT_FRAG);
         check_boon_completion(tch, victim, ((double)(real_gain/100)), BOPT_FRAGS);
@@ -896,16 +887,19 @@ void AddFrags(P_char ch, P_char victim)
     }
   }
 
-  int loss = gain;
-  if(GET_LEVEL(ch) > GET_LEVEL(victim) + 5)
-    loss = (int)(loss * get_property("frag.leveldiff.modifier.low", 0.500));
-  if(GET_LEVEL(ch) + 5 < GET_LEVEL(victim))
-    loss = (int)(loss * get_property("frag.leveldiff.modifier.high", 1.200));
+  if( GET_LEVEL(ch) > GET_LEVEL(victim) + 5 )
+    loss = (int)(gain * get_property("frag.leveldiff.modifier.low", 0.500));
+  else if( GET_LEVEL(ch) + 5 < GET_LEVEL(victim) )
+    loss = (int)(gain * get_property("frag.leveldiff.modifier.high", 1.200));
+  else
+    loss = gain;
 
   sql_modify_frags(victim, -loss);
   victim->only.pc->frags -= loss;
   sprintf(buffer, "You just lost %.02f frags!\r\n", ((float) loss) / 100);
+  send_to_char(buffer, victim);
   debug( "%s just fragged %s for %.02f/%.02f frags!", J_NAME(ch), J_NAME(victim), ((float) real_gain) / 100, ((float) loss) / 100);
+  checkFragList(victim);
 
   if(IS_PC(victim))
   {
@@ -916,9 +910,8 @@ void AddFrags(P_char ch, P_char victim)
     affect_to_char(victim, &af);
   }
 
-
   // When a player with a blood tasks dies, they now satisfy the pvp spill blood task.
-  if(afp = get_epic_task(victim))
+  if( afp = get_epic_task(victim) )
   {
     if(afp->modifier == SPILL_BLOOD && loss > 0 )
     {
@@ -927,9 +920,6 @@ void AddFrags(P_char ch, P_char victim)
       affect_remove(victim, afp);
     }
   }
-
-  send_to_char(buffer, victim);
-  checkFragList(victim);
 }
 
 unsigned int calculate_ch_state(P_char ch)
@@ -1343,8 +1333,7 @@ P_obj make_corpse(P_char ch, int loss)
     raise(SIGSEGV);
   }
 
-  corpse->str_mask =
-    (STRUNG_KEYS | STRUNG_DESC1 | STRUNG_DESC2 | STRUNG_DESC3);
+  corpse->str_mask = (STRUNG_KEYS | STRUNG_DESC1 | STRUNG_DESC2 | STRUNG_DESC3);
 
   if( IS_PC(ch) )
   {
@@ -1359,18 +1348,14 @@ P_obj make_corpse(P_char ch, int loss)
 
   if (IS_PC(ch))
   {
-    sprintf(buf2, "%s %s",
-        index("AEIOU",
-          race_names_table[ch->player.race].normal[0]) ==
-        NULL ? "a" : "an", race_names_table[ch->player.race].normal);
+    sprintf(buf2, "%s %s", index("AEIOU", race_names_table[ch->player.race].normal[0]) == NULL ? "a" : "an",
+      race_names_table[ch->player.race].normal);
   }
-  sprintf(buf, "The corpse of %s is lying here.",
-      IS_PC(ch) ? buf2 : ch->player.short_descr);
+  sprintf(buf, "The corpse of %s is lying here.", IS_PC(ch) ? buf2 : ch->player.short_descr);
 
   corpse->description = str_dup(buf);
 
-  sprintf(buf, "the corpse of %s",
-      IS_NPC(ch) ? ch->player.short_descr : GET_NAME(ch));
+  sprintf(buf, "the corpse of %s", IS_NPC(ch) ? ch->player.short_descr : GET_NAME(ch));
   corpse->short_description = str_dup(buf);
 
   /*
@@ -1385,35 +1370,32 @@ P_obj make_corpse(P_char ch, int loss)
    * things.)
    */
 
-  if (!IS_TRUSTED(ch))
+  if( !IS_TRUSTED(ch) )
   {
     money_to_inventory(ch);
   }
 
-  unequip_all(ch);
+  corpse->value[CORPSE_LEVEL] = GET_LEVEL(ch);     /* for animate dead */
+
+  if( GET_LEVEL(ch) > 1 )
+    corpse->value[CORPSE_EXP_LOSS] = -loss;
 
   /*
    * have to change the 'loc.carrying' pointers to 'loc.inside' pointers
    * for the whole object list, else ugly problems occur later.
    */
-
+  unequip_all(ch);
   corpse->contains = ch->carrying;
+  ch->carrying = NULL;
 
-  for (o = corpse->contains; o; o = o->next_content)
+  for( o = corpse->contains; o; o = o->next_content )
   {
     o->loc_p = LOC_INSIDE;
     o->loc.inside = corpse;
-    if (IS_ARTIFACT(o) && IS_PC(ch))
-      if (!remove_owned_artifact(o, ch, FALSE))
+    if( IS_ARTIFACT(o) && IS_PC(ch) )
+      if( !remove_owned_artifact_sql(o, GET_PID(ch)) )
         wizlog(56, "couldn't unflag arti after %s died", GET_NAME(ch));
   }
-
-  ch->carrying = 0;
-
-  corpse->value[CORPSE_LEVEL] = GET_LEVEL(ch);     /* for animate dead */
-
-  if (GET_LEVEL(ch) > 1)
-    corpse->value[CORPSE_EXP_LOSS] = -loss;
 
   if (IS_NPC(ch))
   {
@@ -1468,10 +1450,8 @@ P_obj make_corpse(P_char ch, int loss)
       obj_to_room(corpse, real_room(ch->specials.was_in_room));
     else
     {
-      extract_obj(corpse, TRUE);        /*
-                                         * no place sane to put it
-                                         */
-      corpse = NULL;
+      // No place sane to put it
+      obj_to_room(corpse, real_room(CORPSE_STORAGE_II));
     }
   }
   else
@@ -1495,18 +1475,14 @@ P_obj make_corpse(P_char ch, int loss)
       {
         o = corpse->contains;
         obj_from_obj(o);
-        if (ch->in_room != NOWHERE /*&& !IS_TRUSTED(ch) */ )
+        // Should always be true, but just in case.
+        if( OBJ_ROOM(corpse) )
         {
-          obj_to_room(o, ch->in_room);
-        }
-        else if (real_room(ch->specials.was_in_room) !=
-            NOWHERE /*&& !IS_TRUSTED(ch) */ )
-        {
-          obj_to_room(o, real_room(ch->specials.was_in_room));
+          obj_to_room(o, corpse->loc.room);
         }
         else
-        {                       /* no place to put it */
-          extract_obj(o, TRUE);
+        {
+          extract_obj(o, TRUE); // Yep, if the arti doesn't have a place to go..
         }
       }
     }
@@ -1573,7 +1549,7 @@ P_obj make_corpse(P_char ch, int loss)
     }
 
     obj_from_room(corpse);
-    extract_obj(corpse, TRUE);
+    extract_obj(corpse);
     corpse = NULL;
   }
   if (corpse && IS_PC(ch))
@@ -1608,10 +1584,10 @@ void make_bloodstain(P_char ch)
     for (obj = world[ch->in_room].contents; obj; obj = next_obj)
     {
       next_obj = obj->next_content;
-      if( obj->R_num == real_object(4) )
+      if( obj->R_num == real_object(VOBJ_BLOOD) )
       {
         obj_from_room(obj);
-        extract_obj( obj, TRUE );
+        extract_obj( obj );
       }
     }
   }
@@ -1640,7 +1616,7 @@ void make_bloodstain(P_char ch)
       obj_to_room(blood, real_room(ch->specials.was_in_room));
     else
     {
-      extract_obj(blood, TRUE);
+      extract_obj(blood);
       blood = NULL;
     }
   }
@@ -2084,6 +2060,8 @@ P_char ForceReturn(P_char ch)
   return (t_ch);
 }
 
+/* These two functions are no longer used.  No idea when they went out of style.
+ *   Discovered them on 6/29/2015 while moving arti code from file-based to DB-based.
 void update_all_arti_blood(P_char ch, int mod)
 {
   int      i, count;
@@ -2093,15 +2071,17 @@ void update_all_arti_blood(P_char ch, int mod)
 
   //dont feed if misfire check active.
 
-  for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
-    if ((ch == tch || grouped(tch, ch)) && affected_by_spell(tch, TAG_NOMISFIRE))
-      break;
-
-  if (!tch)
+  for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
   {
-    send_to_char
-      ("&+RYour artifact(s) do not seem happy with this kind of blood.&n\r\n",
-       ch);
+    if( (ch == tch || grouped(tch, ch)) && affected_by_spell(tch, TAG_NOMISFIRE) )
+    {
+      break;
+    }
+  }
+
+  if( !tch )
+  {
+    send_to_char("&+RYour artifact(s) do not seem happy with this kind of blood.&n\r\n", ch);
     return;
   }
 
@@ -2110,8 +2090,7 @@ void update_all_arti_blood(P_char ch, int mod)
   {
     if (ch->equipment[i])
     {
-      if (IS_ARTIFACT(ch->equipment[i]) ||
-          isname("powerunique", ch->equipment[i]->name))
+      if( IS_ARTIFACT(ch->equipment[i]) || CAN_WEAR(obj, ITEM_WEAR_IOUN) )
       {
         count++;
       }
@@ -2120,7 +2099,7 @@ void update_all_arti_blood(P_char ch, int mod)
   P_obj tobj = ch->carrying;
   while (tobj)
   {
-    if (IS_ARTIFACT(tobj))
+    if( IS_ARTIFACT(ch->equipment[i]) || CAN_WEAR(obj, ITEM_WEAR_IOUN) )
       count++;
     tobj = tobj->next_content;
   }
@@ -2128,38 +2107,25 @@ void update_all_arti_blood(P_char ch, int mod)
   for (i = 0; i < MAX_WEAR; i++)
   {
     obj = ch->equipment[i];
-    if (obj)
+    if( obj )
     {
-      bool bIsIoun = CAN_WEAR(obj, ITEM_WEAR_IOUN);
-      bool bIsUnique = (IS_ARTIFACT(obj) &&
-          isname("unique", obj->name) &&
-          !isname("powerunique", obj->name));
-      if (bIsIoun || bIsUnique)
+      if( (IS_ARTIFACT(ch->equipment[i]) && isname("unique", obj->name)) || CAN_WEAR(obj, ITEM_WEAR_IOUN) )
       {
         UpdateArtiBlood(ch, ch->equipment[i], mod);
       }
-      else if (IS_ARTIFACT(ch->equipment[i]))
+      else if( IS_ARTIFACT(ch->equipment[i]) )
       {
-        UpdateArtiBlood(ch, ch->equipment[i], int(mod/count));
+        UpdateArtiBlood(ch, ch->equipment[i], (int)(mod/count));
       }
     }
   }
-
-  /*  obj = ch->carrying;
-
-      while (obj)
-      {
-      if (IS_ARTIFACT(obj) || CAN_WEAR(obj, ITEM_WEAR_IOUN)) UpdateArtiBlood(ch, obj);
-
-      obj = obj->next_content;
-      }*/
 }
 
 void perform_arti_update(P_char ch, P_char victim)
 {
   float    frags;
 
-  /* check ch's group, see if any members' artis feed */
+  // Check ch's group, see if any members' artis feed
 
   if (ch->group)
   {
@@ -2171,12 +2137,9 @@ void perform_arti_update(P_char ch, P_char victim)
 
     while (gl)
     {
-      if (IS_PC(gl->ch) && (gl->ch->in_room == ch->in_room) &&
-          fragWorthy(gl->ch, victim))
+      if (IS_PC(gl->ch) && (gl->ch->in_room == ch->in_room) && fragWorthy(gl->ch, victim))
       {
-        update_all_arti_blood(gl->ch,
-            gl->ch->only.pc->frags -
-            gl->ch->only.pc->oldfrags);
+        update_all_arti_blood(gl->ch, gl->ch->only.pc->frags - gl->ch->only.pc->oldfrags);
       }
 
       gl = gl->next;
@@ -2184,11 +2147,11 @@ void perform_arti_update(P_char ch, P_char victim)
   }
   else
   {
-    if (IS_PC(ch) && fragWorthy(ch, victim) &&
-        ((ch->only.pc->frags) > (ch->only.pc->oldfrags)))
+    if (IS_PC(ch) && fragWorthy(ch, victim) && ((ch->only.pc->frags) > (ch->only.pc->oldfrags)))
       update_all_arti_blood(ch, ch->only.pc->frags - ch->only.pc->oldfrags);
   }
 }
+*/
 
 // in_their_zone is designed to stop pets/mounts/etc from dropping recipes.
 // This function returns TRUE iff a mob is in the zone that it loads in.
@@ -2330,29 +2293,24 @@ void die(P_char ch, P_char killer)
 
   }
 
-  /* if(  (IS_PC(ch)) &&
-     !IS_HARDCORE(ch) &&
-     ((GET_LEVEL(killer) - GET_LEVEL(ch)) > 15) && 
-     (IS_PC(killer) || (IS_NPC(killer) && IS_PC_PET(killer))) &&
-     (equipped_value(ch) < 250)
-     )
-     {
+ /* This is where we were saving the newbies from being killed by high lvls.
+  if( (IS_PC(ch)) && !IS_HARDCORE(ch) && ((GET_LEVEL(killer) - GET_LEVEL(ch)) > 15)
+    && (IS_PC(killer) || (IS_NPC(killer) && IS_PC_PET(killer))) && (equipped_value(ch) < 250) )
+   {
      newbie_reincarnate(ch);
      return;
-     }*/
+   }
+  */
 
-  //new conjurer pet learning procedure - Drannak
-
-
-  if(check_reincarnate(ch))
+  // For innate resurrection which I've never heard of.
+  if( check_reincarnate(ch) )
   {
     return;
   }
 
-  if(get_linked_char(ch, LNK_ETHEREAL) ||
-      get_linking_char(ch, LNK_ETHEREAL))
+  if( get_linked_char(ch, LNK_ETHEREAL) || get_linking_char(ch, LNK_ETHEREAL))
   {
-    if(get_linked_char(ch, LNK_ETHEREAL))
+    if( get_linked_char(ch, LNK_ETHEREAL) )
     {
       eth_ch = get_linked_char(ch, LNK_ETHEREAL);
     }
@@ -2363,39 +2321,38 @@ void die(P_char ch, P_char killer)
     clear_links(eth_ch, LNK_ETHEREAL);
     clear_links(ch, LNK_ETHEREAL);
   }
-  if(!killer)
+
+  if( !killer )
   {
     return;
   }
+
   holy_crusade_check(killer, ch);
   soul_taking_check(killer, ch);
 
   // Changed the order on this to take advantage of C's lazy evaluation.
+  // You don't get exp for killing someone who's LD?  Odd..
   if( ch && killer && (IS_NPC(ch) || ch->desc) && (killer != ch) && !IS_TRUSTED(killer) )
   {
     kill_gain(killer, ch);
 
-    if(IS_NPC(ch) && IS_SET(ch->specials.act, ACT_ELITE) && GET_LEVEL(ch) > 49)
+    if( IS_NPC(ch) && IS_SET(ch->specials.act, ACT_ELITE) && GET_LEVEL(ch) > 49 )
     {
       group_gain_epic(killer, EPIC_ELITE_MOB, GET_VNUM(ch), (GET_LEVEL(ch) - 49));
     }
   }
+
   /* victim is pc */
   if( killer && IS_PC(ch) && !IS_TRUSTED(ch) && !IS_TRUSTED(killer) )
   {
     logit(LOG_DEATH, "%s killed by %s at %s", GET_NAME(ch),
-        (IS_NPC(killer) ? killer->player.short_descr : GET_NAME(killer)),
-        world[ch->in_room].name);
-    statuslog(ch->player.level, "%s killed by %s at [%d] %s", GET_NAME(ch),
-        (IS_NPC(killer) ? killer->player.
-         short_descr : GET_NAME(killer)), world[ch->in_room].number,
-        world[ch->in_room].name);
+      (IS_NPC(killer) ? killer->player.short_descr : GET_NAME(killer)), world[ch->in_room].name);
+    statuslog(ch->player.level, "%s killed by %s at [%d] %s", GET_NAME(ch), (IS_NPC(killer)
+      ? killer->player.short_descr : GET_NAME(killer)), world[ch->in_room].number, world[ch->in_room].name);
 
-    // If killer is a PC, or a pet with master group and in room..
-    if( (IS_PC(killer) || ( IS_PC_PET(killer)
-      && (GET_MASTER(killer)->in_room == killer->in_room)
-      && killer->group && killer->group == GET_MASTER(killer)->group ))
-      && (killer != ch) )
+    // If killer is a PC, or a pet with master group and in room.. then we have PvP
+    if( (IS_PC(killer) || ( IS_PC_PET(killer) && (GET_MASTER(killer)->in_room == killer->in_room)
+      && killer->group && killer->group == GET_MASTER(killer)->group )) && (killer != ch) )
     {
       // It's important that this is before sql_save_pkill, 'cause we don't want to count this death as recent.
       setHeavenTime(ch);
@@ -2409,7 +2366,7 @@ void die(P_char ch, P_char killer)
       }
       else
       {
-        if(opposite_racewar(ch, killer))
+        if( opposite_racewar(ch, killer) )
         {
           sql_save_pkill(killer, ch);
         }
@@ -2419,20 +2376,17 @@ void die(P_char ch, P_char killer)
     {
       ;
     }
-    else if(IS_PC(killer) &&
-        fragWorthy(killer, ch) && !affected_by_spell(ch, TAG_RECENTLY_FRAGGED))
+    else if( IS_PC(killer) && fragWorthy(killer, ch) && !affected_by_spell(ch, TAG_RECENTLY_FRAGGED) )
     {
       AddFrags(killer, ch);
     }
-    else if(IS_PC_PET(killer) &&
-        fragWorthy(GET_MASTER(killer), ch) && !affected_by_spell(ch, TAG_RECENTLY_FRAGGED))
+    else if( IS_PC_PET(killer) && fragWorthy(GET_MASTER(killer), ch) && !affected_by_spell(ch, TAG_RECENTLY_FRAGGED) )
     {
       AddFrags(killer, ch);
     }
   }
 
-  if(IS_NPC(killer) && CAN_ACT(killer) && killer != ch &&
-      MIN_POS(killer, POS_STANDING + STAT_RESTING))
+  if( IS_NPC(killer) && CAN_ACT(killer) && killer != ch && MIN_POS(killer, POS_STANDING + STAT_RESTING) )
   {
     add_event(retarget_event, PULSE_VIOLENCE - 1, killer, NULL, NULL, 0, NULL, 0);
   }
@@ -6644,7 +6598,8 @@ int anatomy_strike(P_char ch, P_char victim, int msg, struct damage_messages *me
           attack_hit_text[msg].singular);
         sprintf(messages->victim, "$n's%%s %s hits $N on the torso making $M grimace in pain.",
           attack_hit_text[msg].singular);
-        sprintf(messages->room, "$n's%%s %s hits $N on the torso making $M grimace in pain.", attack_hit_text[msg].singular);
+        sprintf(messages->room, "$n's%%s %s hits $N on the torso making $M grimace in pain.",
+          attack_hit_text[msg].singular);
         messages->type = DAMMSG_HIT_EFFECT;
       }
       return (int) (dam * 1.1);

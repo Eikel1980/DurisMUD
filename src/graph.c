@@ -61,7 +61,7 @@ static void bfs_clear_queue(void);
 /*
  * Externals 
  */
-extern int top_of_world;
+extern const int top_of_world;
 extern const char *dirs[];
 extern const char *short_dirs[];
 extern P_room world;

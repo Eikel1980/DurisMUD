@@ -1085,7 +1085,8 @@ void do_infuse(P_char ch, char *arg, int cmd)
     sprintf(msg, "&+WYou infuse the magic from %s &+Winto %s&+W.&n\r\n",
             stone->short_description, device->short_description);
     send_to_char(msg, ch);
-    obj_from_char(stone, TRUE);
+    obj_from_char(stone);
+    extract_obj(stone, FALSE);
   }
   else
   {

@@ -43,7 +43,7 @@
 #include "map.h"
 #include "specs.prototypes.h"
 #include "assocs.h"
-
+#include "vnum.obj.h"
 
 #define SMITH_MAX_ITEMS   20
 
@@ -61,6 +61,7 @@ extern P_index mob_index;
 extern P_index obj_index;
 extern P_obj object_list;
 extern P_room world;
+extern const int top_of_world;
 extern char debug_mode;
 extern const char *race_types[];
 
@@ -78,7 +79,7 @@ extern struct time_info_data time_info;
 extern struct zone_data *zone_table;
 extern void material_restrictions(P_obj);
 extern int find_map_place();
-extern struct forge_item forge_item_list[]; 
+extern struct forge_item forge_item_list[];
 
 void     set_keywords(P_obj t_obj, const char *newKeys);
 void     set_short_description(P_obj t_obj, const char *newShort);
@@ -99,11 +100,11 @@ struct mine_range_data {
   //  Also, to add a type, you need to add to #defines MINES_... in tradeskill.h and
   //    catch the type in mines_properties() in this file, and add to duris.properties.
   // Zone display name, command argument matching, start range, end range, mine type, reloading mines?
-  {"Surface Map", "map", 500000, 659999, MINE_VNUM, TRUE},
-  {"Underdark", "ud", 700000, 859999, MINE_VNUM, TRUE},
-  {"Tharnadia Rift", "tharnrift", 110000, 119999, MINE_VNUM, FALSE},
-  {"Surface Map - G", "mapg", 500000, 659999, GEMMINE_VNUM, TRUE},
-  {"Underdark - G", "udg", 700000, 859999, GEMMINE_VNUM, TRUE},
+  {"Surface Map", "map", 500000, 659999, VOBJ_MINE, TRUE},
+  {"Underdark", "ud", 700000, 859999, VOBJ_MINE, TRUE},
+  {"Tharnadia Rift", "tharnrift", 110000, 119999, VOBJ_MINE, FALSE},
+  {"Surface Map - G", "mapg", 500000, 659999, VOBJ_GEMMINE, TRUE},
+  {"Underdark - G", "udg", 700000, 859999, VOBJ_GEMMINE, TRUE},
   {0}
 };
 
@@ -115,26 +116,26 @@ int forge_prices[] = {2000, 5000, 15000, 30000, 50000};
 
 struct smith_data {
   int vnum;
-  short int items[SMITH_MAX_ITEMS];
+  short int items[SMITH_MAX_ITEMS+1];
 } smith_array[] = {
-  {76010, { 131, 132, 53, 54, 55, 56}},
-  {82518, { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}},
-  {22269, { 92, 93, 94, 95, 96}},
-  {76691, { 88, 89, 91, 103}}, 
-  {20240, { 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}},
-  {40712, { 41, 42, 43, 44, 45, 46, 47}},
-  {99716, { 62, 63, 64, 65, 66, 67, 68, 69, 76, 77, 78, 79, 80}},
-  {9412, {60, 61, 49, 50, 70, 71, 72, 73, 73, 75}},   
-  {96058, {103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 119}},
-  {6002, {6, 7, 8, 9, 10, 23, 24, 25, 26, 30, 37, 38, 39, 40, 113}},
-  {66410, {127, 128, 129, 130, 88, 89, 90, 91}},
-  {1420, {70, 57, 58, 59, 48, 36, 38, 37, 39, 40}}, // kobolds
-  {96916, {57, 58, 59, 27, 29, 97, 101, 102, 107, 109, 112}}, //troll caves
-  {75628, {12, 13, 14,  66, 67, 67, 64, 65, 77, 76}}, //citadel
-  {76502, {60, 61, 34, 31, 32, 33, 74, 75, 88, 89, 92}},
-  {28917, {46, 47, 49, 45, 35, 78, 77, 86, 87, 85}}, //torg
-  {37755, {30, 26, 22, 23, 24, 25, 21, 11, 12, 13, 14, 15, 16}}, //nax
-  {0}
+  {76010, { 131, 132,  53,  54,  55,  56,  -1}},
+  {82518, {   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  -1}},
+  {22269, {  92,  93,  94,  95,  96,  -1}},
+  {76691, {  88,  89,  91, 103,  -1}},
+  {20240, {  11,  12,  13,  14,  15,  16,  17,  18,  19,  20,  21, 22,   -1}},
+  {40712, {  41,  42,  43,  44,  45,  46,  47,  -1}},
+  {99716, {  62,  63,  64,  65,  66,  67,  68,  69,  76,  77,  78,  79,  80,  -1}},
+  {9412,  {  60,  61,  49,  50,  70,  71,  72,  73,  73,  75,  -1}},
+  {96058, { 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 119,  -1}},
+  {6002,  {   6,   7,   8,   9,  10,  23,  24,  25,  26,  30,  37,  38,  39,  40, 113,  -1}},
+  {66410, { 127, 128, 129, 130,  88,  89,  90,  91,  -1}},
+  {1420,  {  70,  57,  58,  59,  48,  36,  38,  37,  39,  40,  -1}}, // kobolds
+  {96916, {  57,  58,  59,  27,  29,  97, 101, 102, 107, 109, 112,  -1}}, //troll caves
+  {75628, {  12,  13,  14,  66,  67,  67,  64,  65,  77,  76,  -1}}, //citadel
+  {76502, {  60,  61,  34,  31,  32,  33,  74,  75,  88,  89,  92,  -1}},
+  {28917, {  46,  47,  49,  45,  35,  78,  77,  86,  87,  85,  -1}}, //torg
+  {37755, {  30,  26,  22,  23,  24,  25,  21,  11,  12,  13,  14,  15,  16,  -1}}, //nax
+  {0, {-1}}
 };
 
 int mines_properties(int map)
@@ -227,20 +228,19 @@ int parchment_forge(P_obj obj, P_char ch, int cmd, char *arg)
       return TRUE;
     }
 
-    if( forge_item_list[ch->only.pc->learned_forged_list[obj->value[0]]].skill_min >
-        GET_CHAR_SKILL(ch, SKILL_FORGE))
+    if( forge_item_list[ch->only.pc->learned_forged_list[obj->value[0]]].skill_min > GET_CHAR_SKILL(ch, SKILL_FORGE))
     {
       send_to_char("This parchment contains smithing too advanced for you.\r\n", ch);
       return TRUE;
 
     }
-    if(ch->only.pc->learned_forged_list[tmp] == 0)  
+    if(ch->only.pc->learned_forged_list[tmp] == 0)
     {
       ch->only.pc->learned_forged_list[tmp] = obj->value[0];
       send_to_char("You learn a new item to forge!\r\n", ch);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
-    } 
+    }
   }
 }
 
@@ -275,28 +275,27 @@ P_obj forge_create(int choice, P_char ch, int material)
   char     short_desc[MAX_STRING_LENGTH];
   char     long_desc[MAX_INPUT_LENGTH];
   char     keywords[MAX_INPUT_LENGTH];
-  P_obj obj = read_object(1255, VIRTUAL); 
+  P_obj obj;
 
-  if(!obj)
+  if( !(obj = read_object(1255, VIRTUAL)) )
   {
     wizlog(56, "unabled to load object 1255");
     return 0;
-  } 
+  }
+
   sprintf(keywords, "%s", forge_item_list[choice].keywords);
   sprintf(dummy, "%s", forge_item_list[choice].short_desc);
-
   sprintf(short_desc, dummy, GET_NAME(ch));
-
   sprintf(dummy, "%s", forge_item_list[choice].long_desc);
   sprintf(long_desc, dummy, GET_NAME(ch));
 
   set_short_description(obj, short_desc);
-  set_long_description(obj, long_desc);         
+  set_long_description(obj, long_desc);
   set_keywords(obj, keywords);
 
   obj->material = material;
   obj->affected[0].location = forge_item_list[choice].loc0;
-  obj->affected[0].modifier = number(forge_item_list[choice].min0, forge_item_list[choice].max0);                   
+  obj->affected[0].modifier = number(forge_item_list[choice].min0, forge_item_list[choice].max0);
   obj->affected[1].location = forge_item_list[choice].loc1;
   obj->affected[1].modifier = number(forge_item_list[choice].min1, forge_item_list[choice].max1);
 
@@ -306,13 +305,14 @@ P_obj forge_create(int choice, P_char ch, int material)
   SET_BIT(obj->bitvector, forge_item_list[choice].aff1);
   SET_BIT(obj->bitvector2, forge_item_list[choice].aff2);
   SET_BIT(obj->bitvector3, forge_item_list[choice].aff3);
-  SET_BIT(obj->bitvector4, forge_item_list[choice].aff4);   
+  SET_BIT(obj->bitvector4, forge_item_list[choice].aff4);
 
   obj->anti_flags |= forge_item_list[choice].classes;
 
   if(forge_item_list[choice].allow_anti)
     obj->extra_flags = ITEM_ALLOWED_CLASSES;;
-  if (isname("quiver", obj->name)){    
+  if (isname("quiver", obj->name))
+  {
     obj->value[0] = number(20, 80);
     obj->value[1] = number(0, 1);
     obj->value[2] = 1;
@@ -436,7 +436,7 @@ void do_forge(P_char ch, char *argument, int cmd)
       sprintf(recipe, "   &+W%-22d&n%s&n\n", objVnum, obj->short_description);
       page_string(ch->desc, recipe, 1);
       send_to_char("----------------------------------------------------------------------------\n", ch);
-      extract_obj(obj, FALSE);
+      extract_obj(obj);
     }
     fclose(recipeBookFile);
     return;
@@ -505,13 +505,13 @@ void do_forge(P_char ch, char *argument, int cmd)
       send_to_char( "You couldn't figure out what materials to use.\n\r", ch );
       if( lowQualityMaterial != NULL )
       {
-        extract_obj( lowQualityMaterial, FALSE );
+        extract_obj( lowQualityMaterial );
       }
       if( highQualityMaterial != NULL )
       {
-        extract_obj( highQualityMaterial, FALSE );
+        extract_obj( highQualityMaterial );
       }
-      extract_obj( obj, FALSE );
+      extract_obj( obj );
       return;
     }
 
@@ -543,9 +543,9 @@ void do_forge(P_char ch, char *argument, int cmd)
     }
 
     page_string(ch->desc, recipe, 1);
-    extract_obj( obj, FALSE );
-    extract_obj( highQualityMaterial, FALSE );
-    extract_obj( lowQualityMaterial, FALSE );
+    extract_obj( obj );
+    extract_obj( highQualityMaterial );
+    extract_obj( lowQualityMaterial );
     return;
   }
   // 2 -> "stat"
@@ -554,7 +554,7 @@ void do_forge(P_char ch, char *argument, int cmd)
     // Display info on obj:
     send_to_char( "&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch );
     spell_identify(GET_LEVEL(ch), ch, 0, 0, 0, obj);
-    extract_obj( obj, FALSE );
+    extract_obj( obj );
     return;
   }
   // 3 -> "make"
@@ -566,7 +566,7 @@ void do_forge(P_char ch, char *argument, int cmd)
     {
       act("You look at the recipe for $p&n, but can't seem to discern how to make it.  &+mHow strange.&N",
         FALSE, ch, obj, 0, TO_CHAR);
-      extract_obj(obj, FALSE);
+      extract_obj(obj);
       return;
     }
     numHighQuality = (iVal + 4) / 5;
@@ -579,7 +579,7 @@ void do_forge(P_char ch, char *argument, int cmd)
     if( !check_foundry(ch) )
     {
       act("&+LYou need to be by your foundry to forge...&n", FALSE, ch, 0, 0, TO_CHAR);
-      extract_obj( obj, FALSE );
+      extract_obj( obj );
       return;
     }
     */
@@ -599,11 +599,11 @@ void do_forge(P_char ch, char *argument, int cmd)
       {
         invHighMats++;
       }
-      else if( invVnum == FORGING_ESSENCE_VNUM )
+      else if( invVnum == VOBJ_FORGING_ESSENCE )
       {
         invEssences++;
       }
-      else if( invVnum == FORGING_FLUX_VNUM )
+      else if( invVnum == VOBJ_FORGING_FLUX )
       {
         hasFlux = TRUE;
       }
@@ -613,13 +613,13 @@ void do_forge(P_char ch, char *argument, int cmd)
     if( hasFlux == FALSE )
     {
       send_to_char("You must have a &+Lblacksmithing &nflux to complete the smithing process!\r\n", ch);
-      extract_obj( obj, FALSE );
+      extract_obj( obj );
       return;
     }
     if( (hasAffect && invEssences < 1) || (invLowMats < numLowQuality) || (invHighMats < numHighQuality) )
     {
       send_to_char("You do not have the required &+ysalvaged &+Ymaterials &nin your inventory.\r\n", ch);
-      extract_obj( obj, FALSE );
+      extract_obj( obj );
       return;
     }
 
@@ -631,26 +631,22 @@ void do_forge(P_char ch, char *argument, int cmd)
 
       if( (invVnum == lowQualityMaterialVnum) && (numLowQuality > 0) )
       {
-        obj_from_char( inventory, TRUE );
-        extract_obj( inventory, TRUE );
+        extract_obj( inventory, TRUE ); // Not an arti, but 'in game.'
         numLowQuality--;
       }
       else if( (invVnum == highQualityMaterialVnum) && (numHighQuality > 0) )
       {
-        obj_from_char( inventory, TRUE );
-        extract_obj( inventory, TRUE );
+        extract_obj( inventory, TRUE ); // Not an arti, but 'in game.'
         numHighQuality--;
       }
-      else if( hasAffect && (invVnum == FORGING_ESSENCE_VNUM) )
+      else if( hasAffect && (invVnum == VOBJ_FORGING_ESSENCE) )
       {
-        obj_from_char( inventory, TRUE );
-        extract_obj( inventory, TRUE );
+        extract_obj( inventory, TRUE ); // Not an arti, but 'in game.'
         hasAffect = FALSE;
       }
-      else if( hasFlux && (invVnum == FORGING_FLUX_VNUM) )
+      else if( hasFlux && (invVnum == VOBJ_FORGING_FLUX) )
       {
-        obj_from_char( inventory, TRUE );
-        extract_obj( inventory, TRUE );
+        extract_obj( inventory, TRUE ); // Not an arti, but 'in game.'
         hasFlux = FALSE;
       }
     }
@@ -685,7 +681,7 @@ void do_forge(P_char ch, char *argument, int cmd)
   {
     send_to_char( "&+RBad command type&n: Please report this to an Immortal.\n\r", ch );
     logit( LOG_DEBUG, "do_forge: bad command arguments '%s' by '%s'.", argument, ch ? J_NAME(ch) : "NULL" );
-    extract_obj( obj, FALSE );
+    extract_obj( obj );
     return;
   }
 }
@@ -802,7 +798,7 @@ void do_forge(P_char ch, char *argument, int cmd)
             material = t_obj->material;
           sprintf(buf1, "You start to work on %s\n", t_obj->short_description );
           send_to_char(buf1, ch);
-          extract_obj(t_obj, TRUE);
+          extract_obj(t_obj);
           FOUND++;
           if(!number(0,2))
             if(GET_CHAR_SKILL(ch, SKILL_FORGE) < number(0, 99))
@@ -1469,7 +1465,7 @@ int mine(P_obj obj, P_char ch, int cmd, char *arg)
   {
     if( obj->value[0] <= 0 )
     {
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
     }
   }
@@ -1526,7 +1522,7 @@ int mine(P_obj obj, P_char ch, int cmd, char *arg)
     if( get_mine_content(obj) <= 0 )
     {
       send_to_char("There is very little left, but you keep digging one more time!\n", ch);
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     }
 
     add_event( event_mine_check, PULSE_VIOLENCE, ch, 0, 0, 0, &data, sizeof(struct mining_data));
@@ -1580,7 +1576,7 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
 
   if( mdata->counter == 0 )
   {
-    if( mdata->mine_type == MINE_VNUM )
+    if( mdata->mine_type == VOBJ_MINE )
     {
       ore = get_ore_from_mine(ch, mdata->mine_quality);
       if( !ore )
@@ -1593,7 +1589,7 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
       // Moved to a function to make it more readable.
       newcost = calc_ore_cost( ch, ore );
     }
-    else if( mdata->mine_type == GEMMINE_VNUM )
+    else if( mdata->mine_type == VOBJ_GEMMINE )
     {
       randommob = FALSE;
       if( !number(0,20) )
@@ -1832,27 +1828,46 @@ int smith(P_char ch, P_char pl, int cmd, char *arg)
   P_obj tobj, needed_ore[5];
   int i, j, choice;
 
-  if (cmd == 0 && !number(0,6)) {
+  if( cmd == CMD_SET_PERIODIC )
+  {
+    return TRUE;
+  }
+
+  if( cmd == CMD_PERIODIC && !number(0,6))
+  {
     act("$n hums a soft melody as $e forges another piece of armor.",
         FALSE, ch, 0, 0, TO_ROOM);
+    return TRUE;
+  }
+
+  if( cmd != CMD_FORGE )
+  {
     return FALSE;
   }
-  
-  if (cmd != CMD_FORGE)
-    return FALSE;
 
-  for (i = 0; smith_array[i].vnum; i++)
-    if (smith_array[i].vnum == GET_VNUM(ch))
+  j = GET_VNUM(ch);
+  for (i = 0; smith_array[i].vnum > 0; i++)
+  {
+    if( smith_array[i].vnum == j )
+    {
       break;
+    }
+  }
 
-  if (smith_array[i].vnum == 0)
+  if( smith_array[i].vnum == 0 )
+  {
     return FALSE;
+  }
   else
-    sdata = smith_array + i;
+  {
+    sdata = &smith_array[i];
+  }
 
-  if (!arg || !*arg) {
+  if( !arg || !*arg )
+  {
     act("$n tells you, 'I can forge the following items:'", FALSE, ch, 0, pl, TO_VICT);
-    for (i = 0; i < SMITH_MAX_ITEMS && sdata->items[i]; i++) {
+    for( i = 0; i < SMITH_MAX_ITEMS && sdata->items[i] != -1; i++ )
+    {
       sprintf(buffer, "%d) %s\n", i + 1, forge_item_list[sdata->items[i]].short_desc);
       send_to_char(buffer, pl);
     }
@@ -1861,43 +1876,78 @@ int smith(P_char ch, P_char pl, int cmd, char *arg)
 
   choice = atoi(arg);
 
-  if (choice < 1 || choice >= SMITH_MAX_ITEMS || sdata->items[choice - 1] == 0)
+  // Can't 'forge 0' or 'forge -1'.  Also, can't 'forge <num>' where <num> goes off the list.
+  if( choice < 1 || choice > i )
     return FALSE;
 
+  // Convert from list item to forge_item_list entry.
   choice = sdata->items[choice - 1];
 
-  memset(needed_ore, 0, sizeof(needed_ore));
-  for (i = 0; forge_item_list[choice].ore_needed[i]; i++) {
-    for (tobj = ch->carrying; tobj; tobj = tobj->next_content) {
-      if (forge_item_list[choice].ore_needed[i] == 
-          obj_index[tobj->R_num].virtual_number) {
-        for (j = 0; needed_ore[j] && needed_ore[j] != tobj; j++)
-          ;
-        if (needed_ore[j] == 0) {
-          needed_ore[j] = tobj;
-          break;
-        }
-      }
-    }
-    if (!tobj) {
-      forge_describe(choice, pl);
-      return TRUE;
-    }
-  }
-
-  if (GET_MONEY(pl) < forge_prices[i-1]) {
+  // If they're too broke,
+  if( GET_MONEY(pl) < forge_prices[i-1] )
+  {
+    // Explain reality.
     forge_describe(choice, pl);
     return TRUE;
   }
 
+  // Nullify all needed_ore entries.
+  for( i = 0; i < 5; i++ )
+  {
+    needed_ore[i] = NULL;
+  }
+  // Look through inventory for each needed ore.
+  for( i = 0, j = 0; i < 5 && forge_item_list[choice].ore_needed[i]; i++ )
+  {
+    for( tobj = ch->carrying; tobj; tobj = tobj->next_content )
+    {
+      // If we found a needed ore.
+      if( forge_item_list[choice].ore_needed[i] == GET_OBJ_VNUM(tobj) )
+      {
+        // Stick it in the needed_ore array
+        needed_ore[j++] = tobj;
+        // And pull it from pl, so we don't find the same ore twice.
+        obj_from_char(tobj);
+        break;
+      }
+    }
+    // If we encounter a needed ore that pl doesn't have,
+    if( !tobj )
+    {
+      // Send a message about it,
+      forge_describe(choice, pl);
+      // And give back the ores we pulled.
+      while( j-- > 0 )
+      {
+        obj_to_char(needed_ore[j], pl);
+      }
+      return TRUE;
+    }
+  }
+
+  // Create item 'choice' for 'pl' out of material type 'material'
+  if( !(tobj = forge_create(choice, pl, needed_ore[0]->material)) )
+  {
+    // Send an error message if we failed to create item.
+    send_to_char("&+YFailed to create the item.  Please tell an Immortal if you continue to have problems.\n\r", pl);
+    // And give back the ores we pulled.
+    while( j-- > 0 )
+    {
+      obj_to_char(needed_ore[j], pl);
+    }
+    return TRUE;
+  }
+
+  // Take their money.
   sprintf(buffer, "You hand $N %s.", coin_stringv(forge_prices[i-1]));
   act(buffer, FALSE, pl, 0, ch, TO_CHAR);
   SUB_MONEY(pl, forge_prices[i-1], 0);
 
-  tobj = forge_create(choice, pl, needed_ore[0]->material);
-
-  for (i = 0; i < 5 && needed_ore[i]; i++)
-    extract_obj(needed_ore[i], FALSE);
+  // And their ore.
+  while( j-- > 0 )
+  {
+    extract_obj(needed_ore[j], TRUE); // Ore is not an arti, but was 'in game.'
+  }
 
   act("$n takes the pieces of ore and starts to work on them.\n"
       "With powerful hammer strikes, the material starts to quickly take\n"
@@ -1910,9 +1960,7 @@ int smith(P_char ch, P_char pl, int cmd, char *arg)
       "$n puts it in water which explodes in a cloud of &+Csteam&n hissing loudly.\n"
       "'&+WThere you go!&n', $n gives $N $p.", FALSE, ch, tobj, pl, TO_NOTVICT);
 
-  if (tobj)
-    obj_to_char(tobj, pl);
-
+  obj_to_char(tobj, pl);
   return TRUE;
 }
 
@@ -1920,8 +1968,8 @@ void initialize_tradeskills()
 {
   int i;
 
-  obj_index[real_object0(MINE_VNUM)].func.obj = mine;
-  obj_index[real_object0(GEMMINE_VNUM)].func.obj = mine;
+  obj_index[real_object0(VOBJ_MINE)].func.obj = mine;
+  obj_index[real_object0(VOBJ_GEMMINE)].func.obj = mine;
 
   for (i = 0; mine_data[i].name; i++)
   {
@@ -1958,7 +2006,7 @@ bool invalid_mine_room(int rroom_id)
   
   for( P_obj tobj = world[rroom_id].contents; tobj; tobj = tobj->next )
   {
-    if( GET_OBJ_VNUM(tobj) == MINE_VNUM )
+    if( GET_OBJ_VNUM(tobj) == VOBJ_MINE )
       return TRUE;
   }
 
@@ -1971,7 +2019,7 @@ bool load_one_mine(int map)
 
   if( !mine )
   {
-    wizlog(56, "Error loading mine obj [%d]", MINE_VNUM);
+    wizlog(56, "Error loading mine obj [%d]", VOBJ_MINE);
     return FALSE;
   }
 
@@ -1998,7 +2046,7 @@ bool load_one_mine(int map)
 
   int random = number(0,99);
 
-  if( mine_data[map].type == GEMMINE_VNUM )
+  if( mine_data[map].type == VOBJ_GEMMINE )
   {
     mine->value[0] = number(10, 25);
     mine->value[1] = 100 + number(0, 3);
@@ -2291,21 +2339,19 @@ void do_mine(P_char ch, char *arg, int cmd)
     {
       next = tobj->next;
 
-      if( (GET_OBJ_VNUM(tobj) == MINE_VNUM)
+      if( (GET_OBJ_VNUM(tobj) == VOBJ_MINE)
         && (!strcmp(arg, mine_data[i].abbrev))
         && (world[tobj->loc.room].number >= mine_data[i].start)
         && (world[tobj->loc.room].number <= mine_data[i].end) )
       {
-        extract_obj(tobj, TRUE);
+        extract_obj(tobj, TRUE); // Not an arti, but 'in game.'
       }
       // The all factor
-      else if ( GET_OBJ_VNUM(tobj) == MINE_VNUM &&
-          (!strcmp(arg, "all")) )
+      else if ( GET_OBJ_VNUM(tobj) == VOBJ_MINE && (!strcmp(arg, "all")) )
       {
         extract_obj(tobj, TRUE);
       }
     }
-
     if (!strcmp(arg, "all"))
     {
       wizlog(56, "%s purged all mines.", GET_NAME(ch));
@@ -2417,7 +2463,7 @@ void do_bandage(P_char ch, char *arg, int cmd)
   }
 
   data.maxheal = bandage->value[0];
-  extract_obj(bandage, TRUE);
+  extract_obj(bandage, TRUE); // Not an arti, but 'in game.'
 
   if(ch!= victim)
     act("You attempt to &+Wbandage&n $N.", FALSE, ch, 0,victim, TO_CHAR);
@@ -2586,7 +2632,7 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
     if(recnum == recipenumber)
     {
       send_to_char("You already know how to create that item!&n\r\n", ch);
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
       return TRUE;
     }
   }
@@ -2602,7 +2648,7 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
     "quickly consuming $p, which vanishes from sight.\r\n", FALSE, ch, obj, 0, TO_CHAR);   
   fclose(recipefile);
 
-  extract_obj(obj, !IS_TRUSTED(ch));
+  extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
   if( forge )
   {
@@ -2618,7 +2664,7 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
     debug("learn_recipe: %s learned %s (%d) without craft or forge!?", J_NAME(ch), tobj->short_description, recipenumber );
     logit(LOG_DEBUG, "learn_recipe: %s learned %s (%d) without craft or forge!?", J_NAME(ch), tobj->short_description, recipenumber );
   }
-  extract_obj(tobj, FALSE);
+  extract_obj(tobj);
   return TRUE;
 }
 
@@ -2638,15 +2684,6 @@ int learn_recipe(P_obj obj, P_char ch, int cmd, char *arg)
 #define COST_EPIC_LANTAN_TOOLS       150
 #define COST_EPIC_FOREST_EYES       2500
 #define COST_EPIC_BOTTLE_EPICS       100
-
-#define VNUM_EPIC_MUSHROOM        400213
-#define VNUM_EPIC_FIX_SCROLL       14126
-#define VNUM_EPIC_FAERIE_BAG      400217
-#define VNUM_EPIC_BATTLEROBE      400218
-#define VNUM_EPIC_TOCORPSE_POTION 400221
-#define VNUM_EPIC_LANTAN_TOOLS    400227
-#define VNUM_EPIC_FOREST_EYES     400228
-#define VNUM_EPIC_BOTTLE_EPICS    400234
 
 int epic_store(P_char ch, P_char pl, int cmd, char *arg)
 {
@@ -2701,7 +2738,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         return TRUE;
       }
       pl->only.pc->epics -= COST_EPIC_MUSHROOM;
-      obj = read_object(VNUM_EPIC_MUSHROOM, VIRTUAL);
+      obj = read_object(VOBJ_EPIC_MUSHROOM, VIRTUAL);
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
       act("You now have $p!\r\n", FALSE, pl, obj, 0, TO_CHAR);
@@ -2709,7 +2746,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_MUSHROOM, COST_EPIC_MUSHROOM );
+        VOBJ_EPIC_MUSHROOM, COST_EPIC_MUSHROOM );
       return TRUE;
     }
     // 2 - fix scroll
@@ -2722,7 +2759,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         return TRUE;
       }
       pl->only.pc->epics -= COST_EPIC_FIX_SCROLL;
-      obj = read_object(VNUM_EPIC_FIX_SCROLL, VIRTUAL);
+      obj = read_object(VOBJ_EPIC_FIX_SCROLL, VIRTUAL);
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
       act("You now have $p!\r\n", FALSE, pl, obj, 0, TO_CHAR);
@@ -2730,7 +2767,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_FIX_SCROLL, COST_EPIC_FIX_SCROLL );
+        VOBJ_EPIC_FIX_SCROLL, COST_EPIC_FIX_SCROLL );
       return TRUE;
     }
     // 3 - faerie bag
@@ -2743,7 +2780,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         return TRUE;
       }
       pl->only.pc->epics -= COST_EPIC_FAERIE_BAG;
-      obj = read_object(VNUM_EPIC_FAERIE_BAG, VIRTUAL);
+      obj = read_object(VOBJ_EPIC_FAERIE_BAG, VIRTUAL);
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
       act("You now have $p!\r\n", FALSE, pl, obj, 0, TO_CHAR);
@@ -2751,7 +2788,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_FAERIE_BAG, COST_EPIC_FAERIE_BAG );
+        VOBJ_EPIC_FAERIE_BAG, COST_EPIC_FAERIE_BAG );
       return TRUE;
     }
     // 4 - netheril robe
@@ -2764,7 +2801,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         return TRUE;
       }
       pl->only.pc->epics -= COST_EPIC_BATTLEROBE;
-      obj = read_object( VNUM_EPIC_BATTLEROBE, VIRTUAL);
+      obj = read_object( VOBJ_EPIC_BATTLEROBE, VIRTUAL);
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
       act("You now have $p!\r\n", FALSE, pl, obj, 0, TO_CHAR);
@@ -2772,7 +2809,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_BATTLEROBE, COST_EPIC_BATTLEROBE );
+        VOBJ_EPIC_BATTLEROBE, COST_EPIC_BATTLEROBE );
       return TRUE;
     }
     // 5 - corpse portal potion
@@ -2784,7 +2821,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         send_to_char("&+WKannard&+L &+wsays '&nI'm sorry, but you do not seem to have the &+Wepics&n available for that item.\r\n&n", pl);
         return TRUE;
       }
-      obj = read_object( VNUM_EPIC_TOCORPSE_POTION, VIRTUAL );
+      obj = read_object( VOBJ_EPIC_TOCORPSE_POTION, VIRTUAL );
       pl->only.pc->epics -= COST_EPIC_TOCORPSE_POTION;
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
@@ -2793,7 +2830,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_TOCORPSE_POTION, COST_EPIC_TOCORPSE_POTION );
+        VOBJ_EPIC_TOCORPSE_POTION, COST_EPIC_TOCORPSE_POTION );
       return TRUE;
     }
     // 6 - lantan tools
@@ -2808,7 +2845,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         send_to_char("&+WKannard&+L &+wsays '&nI'm sorry, but you do not seem to have the &+Wepics&n available for that item.\r\n&n", pl);
         return TRUE;
       }
-      obj = read_object( VNUM_EPIC_LANTAN_TOOLS, VIRTUAL );
+      obj = read_object( VOBJ_EPIC_LANTAN_TOOLS, VIRTUAL );
       pl->only.pc->epics -= COST_EPIC_LANTAN_TOOLS;
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
@@ -2817,7 +2854,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_LANTAN_TOOLS, COST_EPIC_LANTAN_TOOLS);
+        VOBJ_EPIC_LANTAN_TOOLS, COST_EPIC_LANTAN_TOOLS);
       return TRUE;
     }
     // 7 - forest sight
@@ -2829,7 +2866,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         send_to_char("&+WKannard&+L &+wsays '&nI'm sorry, but you do not seem to have the &+Wepics&n available for that item.\r\n&n", pl);
         return TRUE;
       }
-      obj = read_object( VNUM_EPIC_FOREST_EYES, VIRTUAL );
+      obj = read_object( VOBJ_EPIC_FOREST_EYES, VIRTUAL );
       pl->only.pc->epics -= COST_EPIC_FOREST_EYES;
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
@@ -2840,7 +2877,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_FOREST_EYES, COST_EPIC_FOREST_EYES );
+        VOBJ_EPIC_FOREST_EYES, COST_EPIC_FOREST_EYES );
       return TRUE;
     }
 	else if(strstr(arg, "8"))
@@ -2851,7 +2888,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
         send_to_char("&+WKannard&+L &+wsays '&nI'm sorry, but you do not seem to have the &+Wepics&n available for that item.\r\n&n", pl);
         return TRUE;
       }
-      obj = read_object( VNUM_EPIC_BOTTLE_EPICS, VIRTUAL );
+      obj = read_object( VOBJ_EPIC_BOTTLE_EPICS, VIRTUAL );
       pl->only.pc->epics -= COST_EPIC_BOTTLE_EPICS;
       send_to_char("&+WKannard&+L &+wsays '&nAh, good choice! Quite a rare item!'\n", pl);
       send_to_char("&+WKannard &+Lthe &+ctra&+Cvell&+cer &nmakes a strange gesture about your body, and hands you your item.\r\n&n", pl);
@@ -2860,7 +2897,7 @@ int epic_store(P_char ch, P_char pl, int cmd, char *arg)
       do_save_silent(pl, 1);
       // Log the transaction in epic log file.
       epiclog( 56, "%s bought '%s' (%d) at the epic store for %d epics.", J_NAME(pl), obj->short_description,
-        VNUM_EPIC_BOTTLE_EPICS, COST_EPIC_BOTTLE_EPICS );
+        VOBJ_EPIC_BOTTLE_EPICS, COST_EPIC_BOTTLE_EPICS );
       return TRUE;
     }
   }
@@ -3697,7 +3734,7 @@ void do_refine(P_char ch, char *arg, int cmd)
 {
   P_obj obj;
   P_obj t_obj, nextobj;
-  int   i = 0, o = 0;
+  int   i = 0, o = 0, vnum;
   int   orechance;
   bool  plat = FALSE;
   char  gbuf1[MAX_STRING_LENGTH], gbuf2[MAX_STRING_LENGTH], buffer[MAX_STRING_LENGTH], gbuf3[MAX_STRING_LENGTH];
@@ -3714,13 +3751,14 @@ void do_refine(P_char ch, char *arg, int cmd)
       return;
     }
 
-    //must be salvaged material, and cannot be the highest salvage type.
-    if( (GET_OBJ_VNUM(obj) > 400208) || (GET_OBJ_VNUM(obj) < 400000) )
+    vnum = GET_OBJ_VNUM(obj);
+    // Must be salvaged material, and cannot be the highest salvage type.
+    if( (vnum > 400208) || (vnum < 400000) )
     {
       send_to_char("That item is not a &+ysalvaged&n item!\r\n", ch);
       return;
     }
-    if( GET_OBJ_VNUM(obj) == (get_matstart(obj) + 4) )
+    if( vnum == (get_matstart(obj) + 4) )
     {
       send_to_char("That &+bmaterial&n is already of the &+Bhighest&n quality.\n", ch );
       return;
@@ -3735,8 +3773,7 @@ void do_refine(P_char ch, char *arg, int cmd)
   // Check for other materials of same quality/type
   for( t_obj = ch->carrying; t_obj; t_obj = t_obj->next_content )
   {
-
-    if(GET_OBJ_VNUM(t_obj) == GET_OBJ_VNUM(obj))
+    if(GET_OBJ_VNUM(t_obj) == vnum)
     {
       i++;
     }
@@ -3769,15 +3806,18 @@ void do_refine(P_char ch, char *arg, int cmd)
   {
     nextobj = t_obj->next_content;
 
-    if((GET_OBJ_VNUM(t_obj) == GET_OBJ_VNUM(obj)) && i > 0 )
+    if((GET_OBJ_VNUM(t_obj) == vnum) && i > 0 )
     {
-      obj_from_char(t_obj, TRUE);
+      obj_from_char(t_obj);
+      extract_obj(t_obj, TRUE); // Not an arti, but 'in game.'
       send_to_char("You take the item and gently pour the melted ore over the item...\n", ch);
       i--;
     }
-    if((GET_OBJ_VNUM(t_obj) > 193) && (GET_OBJ_VNUM(t_obj) < 234))
+    if( o && (GET_OBJ_VNUM(t_obj) > 193) && (GET_OBJ_VNUM(t_obj) < 234) )
     {
-      obj_from_char(t_obj, TRUE);
+      o--;
+      obj_from_char(t_obj);
+      extract_obj(t_obj, TRUE); // Not an arti, but 'in game.'
       orechance = (GET_OBJ_VNUM(t_obj) - 194);
     }
   }
@@ -3808,16 +3848,20 @@ void do_refine(P_char ch, char *arg, int cmd)
     return;
   }
 
-  //success!
-  int newobj = GET_OBJ_VNUM(obj) + 1;
-  obj_to_char(read_object(newobj, VIRTUAL), ch);
+  // Success!
+  // Give them the new material.
+  obj = read_object( vnum+1, VIRTUAL );
+  obj_to_char(obj, ch);
+  // Load a temp copy of the old material for messages.
+  obj = read_object( vnum, VIRTUAL );
   act("&+W$n &+Ltakes their &+yore&+L and begins to &+rh&+Rea&+Yt &+Lit in the &+yforge&+L.\r\n"
     "&+W$n &+Lgently removes the &+rm&+Ro&+Ylt&+Re&+rn &+yore &+Land starts to spread it about their $ps&+L, which &+ycrack &+Land &+yreform&+L under the intense &+rheat&+L.&N",
     TRUE, ch, obj, 0, TO_ROOM);
   act("&+LYou &+Ltake your &+yore&+L and &+rh&+Rea&+Yt &+Lit in the &+yforge&+L.\r\n"
     "&+LYou &+Lgently remove the &+rm&+Ro&+Ylt&+Re&+rn &+yore &+Land start to spread it about your $ps&+L, which &+ycrack &+Land &+yreform&+L under the intense &+rheat&+L.&N",
     FALSE, ch, obj, 0, TO_CHAR);
-
+  // Then remove it from game.
+  extract_obj( obj );
 }
 
 void do_dice(P_char ch, char *arg, int cmd)

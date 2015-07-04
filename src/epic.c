@@ -609,7 +609,7 @@ void epic_feed_artifacts(P_char ch, int epics, int epic_type)
     obj = ch->equipment[i];
     if( obj && IS_ARTIFACT(obj) )
     {
-      feed_artifact(ch, ch->equipment[i], feed_seconds, ((epic_type == EPIC_PVP || epic_type == EPIC_SHIP_PVP) ? TRUE : FALSE));
+      artifact_feed_sql(ch, obj, feed_seconds, ((epic_type == EPIC_PVP || epic_type == EPIC_SHIP_PVP) ? TRUE : FALSE));
     }
   }
 }
@@ -636,18 +636,17 @@ void epic_stone_absorb(P_obj obj)
     if(tobj == obj)
       continue;
 
-   /* if the other object is smaller epic stone, absorb it */
-   if(GET_OBJ_VNUM(tobj) <= GET_OBJ_VNUM(obj) &&
-       obj_index[tobj->R_num].func.obj == epic_stone)
-   {
-     extract_obj(tobj, TRUE);
-   }
+    /* if the other object is smaller epic stone, absorb it */
+    if( GET_OBJ_VNUM(tobj) <= GET_OBJ_VNUM(obj) && obj_index[tobj->R_num].func.obj == epic_stone )
+    {
+      extract_obj(tobj);
+    }
 
-   /* if there is a level potion on the ground, absorb it */
-   if(tobj->affected[0].location == APPLY_LEVEL)
-   {
-     extract_obj(tobj, TRUE);
-   }
+    /* if there is a level potion on the ground, absorb it */
+    if(tobj->affected[0].location == APPLY_LEVEL)
+    {
+      extract_obj(tobj);
+    }
   }
 }
 

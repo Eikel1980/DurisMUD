@@ -59,7 +59,6 @@ extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int hometown[];
-extern int top_of_world;
 extern struct str_app_type str_app[];
 extern struct con_app_type con_app[];
 extern struct time_info_data time_info;
@@ -1818,31 +1817,30 @@ bool handle_imprison_damage(P_char ch, P_char victim, int dam)
 
   if (t_obj->value[1] < dam)
   {
-    act("A $q encasing $N suddenly blurs and fades into nothing under "
-        "$n's assault!", TRUE, ch, t_obj, victim, TO_NOTVICT);
-    act("A $q encasing $N suddenly blurs and fades into nothing under "
-        "your assault!", TRUE, ch, t_obj, victim, TO_CHAR);
-    act("A $q encasing you suddenly blurs and fades into nothing under "
-        "$n's assault!", FALSE, ch, t_obj, victim, TO_VICT);
+    act("A $q encasing $N suddenly blurs and fades into nothing under $n's assault!",
+      TRUE, ch, t_obj, victim, TO_NOTVICT);
+    act("A $q encasing $N suddenly blurs and fades into nothing under your assault!",
+      TRUE, ch, t_obj, victim, TO_CHAR);
+    act("A $q encasing you suddenly blurs and fades into nothing under $n's assault!",
+      FALSE, ch, t_obj, victim, TO_VICT);
     REMOVE_BIT(victim->specials.affected_by5, AFF5_IMPRISON);
-    extract_obj(t_obj, TRUE);
+    extract_obj(t_obj, TRUE); // Not gonna be an arti.
     return TRUE;
   }
 
   t_obj->value[1] -= dam;
   act("A $q encasing $N flares brightly as it absorbs $n's assault!",
-      TRUE, ch, t_obj, victim, TO_NOTVICT);
+    TRUE, ch, t_obj, victim, TO_NOTVICT);
   act("A $q encasing $N flares brightly as it absorbs your assault!",
-      TRUE, ch, t_obj, victim, TO_CHAR);
+    TRUE, ch, t_obj, victim, TO_CHAR);
   act("A $q encasing you flares brightly as it absorbs $n's assault!",
-      FALSE, ch, t_obj, victim, TO_VICT);
+    FALSE, ch, t_obj, victim, TO_VICT);
 
   return TRUE;
 }
 
 
-void spell_nonexistence(int level, P_char ch, char *arg, int type,
-                        P_char victim, P_obj obj)
+void spell_nonexistence(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   int room;
   if (!(ch))

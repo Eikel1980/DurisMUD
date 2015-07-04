@@ -29,7 +29,9 @@
 #include "listen.h"
 #include "disguise.h"
 #include "config.h"
-#include  "sql.h"
+#include "sql.h"
+#include "vnum.obj.h"
+
 /*
  * external variables
  */
@@ -2916,16 +2918,19 @@ void yank_make_item(P_char ch, P_obj obj)
   if (ch->equipment[HOLD] && (ch->equipment[HOLD] == obj))
   {
     unequip_char(ch, HOLD);
-    extract_obj(obj, TRUE);
+    extract_obj(obj, TRUE); // Templates aren't artifacts, but ok.
   }
   else
   {
     for (o = ch->carrying; o; o = o->next_content)
+    {
       if (o == obj)
       {
-        obj_from_char(obj, TRUE);
-        extract_obj(obj, TRUE);
+        obj_from_char(obj);
+        extract_obj(obj, TRUE); // Templates aren't artifacts, but ok.
+        break;
       }
+    }
   }
   obj = NULL;
 }
@@ -2943,7 +2948,7 @@ void make_lock(P_char ch, char *arg)
   argument_interpreter(arg, Gbuf2, Gbuf3);
 
 
-  if (!(templ = has_key(ch, OBJ_TEMPLATE_LOCK)))
+  if (!(templ = has_key(ch, VOBJ_TEMPLATE_LOCK)))
   {
     send_to_char("You don't seem to have a lock template to work with.\r\n", ch);
     return;
@@ -2993,11 +2998,9 @@ void make_lock(P_char ch, char *arg)
       EXIT(ch, door)->key = 1;  /* so its now a lockable, but keyless object */
       yank_make_item(ch, templ);
       if (EXIT(ch, door)->keyword)
-        act("$n locks the $F with a homemade lock.", 0, ch, 0,
-            EXIT(ch, door)->keyword, TO_ROOM);
+        act("$n locks the $F with a homemade lock.", 0, ch, 0, EXIT(ch, door)->keyword, TO_ROOM);
       else
-        act("$n locks the door with a homemade lock.", FALSE, ch, 0, 0,
-            TO_ROOM);
+        act("$n locks the door with a homemade lock.", FALSE, ch, 0, 0, TO_ROOM);
       send_to_char("You fashion a crude, but workable lock.\r\n", ch);
       /* now for locking the other side, too */
       if ((other_room = EXIT(ch, door)->to_room) != NOWHERE)
@@ -3019,7 +3022,7 @@ void make_key(P_char ch, char *arg)
 
   argument_interpreter(arg, Gbuf2, Gbuf3);
 
-  if (!(templ = has_key(ch, OBJ_TEMPLATE_KEY)))
+  if (!(templ = has_key(ch, VOBJ_TEMPLATE_KEY)))
   {
     send_to_char("You don't seem to have a blank key to work with.\r\n", ch);
     return;
@@ -3054,19 +3057,15 @@ void make_key(P_char ch, char *arg)
       obj->value[2] = obj_index[obj->R_num].virtual_number;
       templ->str_mask = (STRUNG_DESC1 | STRUNG_DESC2);
       templ->short_description = str_dup("&+ca small custom-made key&n");
-      templ->description =
-        str_dup("A small, custom-made key lies here, forgotten.");
+      templ->description = str_dup("A small, custom-made key lies here, forgotten.");
       send_to_char("You fashion a key for this lock!\r\n", ch);
-      if ((template2->value[1] > -1) &&
-          (number(1, 101) < template2->value[1]))
+      if( (template2->value[1] > -1) && (number(1, 101) < template2->value[1]) )
       {
-        act("Damn!  You broke your $p too!", FALSE, ch, template2, 0,
-            TO_CHAR);
-        act("$n begins cursing under $s breath as $s $p snaps.", FALSE, ch,
-            template2, 0, TO_ROOM);
+        act("Damn!  You broke your $p too!", FALSE, ch, template2, 0, TO_CHAR);
+        act("$n begins cursing under $s breath as $s $p snaps.", FALSE, ch, template2, 0, TO_ROOM);
         if (ch->equipment[HOLD] && (ch->equipment[HOLD] == template2))
           unequip_char(ch, HOLD);
-        extract_obj(template2, TRUE);
+        extract_obj(template2, TRUE); // Not that there are any artifact templates, but ok.
       }
     }
   }
@@ -3763,7 +3762,7 @@ void do_craft(P_char ch, char *argument, int cmd)
       sprintf(buffer, "   &+W%-22ld&n%s&n\n", recnum, tobj->short_description);
       page_string(ch->desc, buffer, 1);
       send_to_char("----------------------------------------------------------------------------\n", ch);
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
     }
     fclose(recipelist);
     return;
@@ -3815,7 +3814,7 @@ void do_craft(P_char ch, char *argument, int cmd)
     tobj = read_object(selected, VIRTUAL);
     send_to_char("&+yYou open your &+Ltome &+yof &+Ycra&+yftsm&+Lanship &+yand examine the &+Litem&n.\n", ch);
     spell_identify(GET_LEVEL(ch), ch, 0, 0, 0, tobj);
-    extract_obj(tobj, FALSE);
+    extract_obj(tobj);
     return;
   }
   else if( is_abbrev(first, "info") )
@@ -3842,7 +3841,7 @@ void do_craft(P_char ch, char *argument, int cmd)
     {
       send_to_char( "Could not figure out what this is made out of !?  Can bug it if you want.\n\r", ch );
       debug( "Couldn't get start material for object: '%s' %d.", tobj->short_description, selected );
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
       return;
     }
 
@@ -3862,7 +3861,7 @@ void do_craft(P_char ch, char *argument, int cmd)
       debug( "Couldn't load a material: matLowest(%s) or matHighest(%s) for object '%s' %d.",
         (matLowest == NULL) ? "NULL" : matLowest->short_description,
         (matHighest == NULL) ? "NULL" : matHighest->short_description, tobj->short_description, selected );
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
       return;
     }
 
@@ -3894,10 +3893,10 @@ void do_craft(P_char ch, char *argument, int cmd)
     }
 
     // It's safe to assume tobj exists since we checked after the read_object call.
-    extract_obj(tobj, FALSE);
+    extract_obj(tobj);
     // The same follows for matLowest and matHighest.
-    extract_obj(matLowest, FALSE);
-    extract_obj(matHighest, FALSE);
+    extract_obj(matLowest);
+    extract_obj(matHighest);
     return;
   }
   else if (is_abbrev(first, "make"))
@@ -3922,7 +3921,7 @@ void do_craft(P_char ch, char *argument, int cmd)
     {
       act("You look at the recipe for $p&n, but can't seem to discern how to make it.  &+mHow strange.&N",
         FALSE, ch, tobj, 0, TO_CHAR);
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
       return;
     }
 
@@ -3933,7 +3932,7 @@ void do_craft(P_char ch, char *argument, int cmd)
     {
       send_to_char( "Could not figure out what this is made out of !?  Can bug it if you want.\n\r", ch );
       debug( "Couldn't get start material for object: '%s' %d.", tobj->short_description, selected );
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
       return;
     }
 
@@ -3953,7 +3952,7 @@ void do_craft(P_char ch, char *argument, int cmd)
       debug( "Couldn't load a material: matLowest(%s) or matHighest(%s) for object '%s' %d.",
         (matLowest == NULL) ? "NULL" : matLowest->short_description,
         (matHighest == NULL) ? "NULL" : matHighest->short_description, tobj->short_description, selected );
-      extract_obj(tobj, FALSE);
+      extract_obj(tobj);
       return;
     }
 
@@ -3973,9 +3972,9 @@ void do_craft(P_char ch, char *argument, int cmd)
         invLowMats++;
       else if( invVnum == highQualityMaterialVnum )
         invHighMats++;
-      else if( invVnum == CRAFTING_ESSENCE_VNUM )
+      else if( invVnum == VOBJ_CRAFTING_ESSENCE )
         invEssences++;
-      else if( invVnum == CRAFTING_TOOLS_VNUM )
+      else if( invVnum == VOBJ_CRAFTING_TOOLS )
         invTools++;
     }
 
@@ -3983,27 +3982,27 @@ void do_craft(P_char ch, char *argument, int cmd)
     if( invLowMats < numLowest || invHighMats < numHighest )
     {
       send_to_char("You do not have the required &+ysalvaged &+Ymaterials &nin your inventory.\r\n", ch);
-      extract_obj(tobj, FALSE);
-      extract_obj(matLowest, FALSE);
-      extract_obj(matHighest, FALSE);
+      extract_obj(tobj);
+      extract_obj(matLowest);
+      extract_obj(matHighest);
       return;
     }
     // If for some reason we want more than 1 box of tools, change the 1 below.
     if( invTools < 1)
     {
       send_to_char("You must have &+ma &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&n to create your item.\r\n", ch);
-      extract_obj(tobj, FALSE);
-      extract_obj(matLowest, FALSE);
-      extract_obj(matHighest, FALSE);
+      extract_obj(tobj);
+      extract_obj(matLowest);
+      extract_obj(matHighest);
       return;
     }
     // If we're going to require multiple essences, need to edit this if statement.
     if( invEssences < 1 && hasAffect )
     {
       send_to_char("You must have &+W1 &nof &+ma &+Mm&+Ya&+Mg&+Yi&+Mc&+Ya&+Ml &+messence&n due to the &+mmagical &nproperties this item possesses.\r\n", ch);
-      extract_obj(tobj, FALSE);
-      extract_obj(matLowest, FALSE);
-      extract_obj(matHighest, FALSE);
+      extract_obj(tobj);
+      extract_obj(matLowest);
+      extract_obj(matHighest);
       return;
     }
 
@@ -4020,28 +4019,28 @@ void do_craft(P_char ch, char *argument, int cmd)
 
       if( (numLowest > 0) && (invVnum == lowQualityMaterialVnum) )
       {
-        obj_from_char(inventory, TRUE);
-        extract_obj(inventory, TRUE);
+        obj_from_char(inventory);
+        extract_obj(inventory);
         numLowest--;
       }
       else if( (numHighest > 0) && (invVnum == highQualityMaterialVnum) )
       {
-        obj_from_char(inventory, TRUE);
-        extract_obj(inventory, TRUE);
+        obj_from_char(inventory);
+        extract_obj(inventory);
         numHighest--;
       }
       // If we're requiring multiple essences, need to change this if clause.
-      else if( hasAffect && (invVnum == CRAFTING_ESSENCE_VNUM) )
+      else if( hasAffect && (invVnum == VOBJ_CRAFTING_ESSENCE) )
       {
-        obj_from_char(inventory, TRUE);
-        extract_obj(inventory, TRUE);
+        obj_from_char(inventory);
+        extract_obj(inventory);
         hasAffect = FALSE;
       }
       // If we're requiring multiple tools, need to change this if clause.
-      else if( !gotTools && (invVnum == CRAFTING_TOOLS_VNUM) )
+      else if( !gotTools && (invVnum == VOBJ_CRAFTING_TOOLS) )
       {
-        obj_from_char(inventory, TRUE);
-        extract_obj(inventory, TRUE);
+        obj_from_char(inventory);
+        extract_obj(inventory);
         gotTools = TRUE;
       }
     }
@@ -4072,8 +4071,8 @@ void do_craft(P_char ch, char *argument, int cmd)
       FALSE, ch, tobj, 0, TO_CHAR);
 
     gain_exp(ch, NULL, iVal*1000, EXP_BOON);
-    extract_obj(matLowest, FALSE);
-    extract_obj(matHighest, FALSE);
+    extract_obj(matLowest);
+    extract_obj(matHighest);
     gain_exp(ch, NULL, iVal*10000, EXP_QUEST);
     // Save the character! 1 -> in game.
     do_save_silent(ch, 1);
@@ -4190,11 +4189,11 @@ for (i = 0; i <= MAXMATERIAL; i++)
 /*        wizlog(56, "%s crafted.", GET_NAME(ch));
 
           if (howmany > 0)
-          extract_obj(craft_obj1, TRUE);
+          extract_obj(craft_obj1);
           if (howmany > 1)
-          extract_obj(craft_obj2, TRUE);
+          extract_obj(craft_obj2);
           if (howmany > 2)
-          extract_obj(craft_obj3, TRUE);
+          extract_obj(craft_obj3);
           obj = create_random_eq_new(ch, ch, slot, material_type);
           if (!obj)
           {
@@ -4238,7 +4237,7 @@ int chance_throw_potion(P_char ch, P_char victim)
 
 }
 
-bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
+bool throw_potion(P_char ch, P_obj potion, P_char victim, P_obj obj)
 {
   int      i, bits, j, in_room;
   bool     equipped = FALSE;
@@ -4248,24 +4247,20 @@ bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
   int      chance = 0;
   float      lag;
 
-  chance = chance_throw_potion(ch, victim);
 
-  if (!chance)
+  if( !(chance = chance_throw_potion(ch, victim)) )
   {
     act("Well, trying might not hurt.", FALSE, ch, 0, 0, TO_CHAR);
     return FALSE;
   }
 
-
-
-
-  if(!isname(GET_NAME(ch), scroll->short_description) && !IS_TRUSTED(ch))
+  if(!isname(GET_NAME(ch), potion->short_description) && !IS_TRUSTED(ch))
   {
     send_to_char("&nThrowing potions of unknown origin might be hazardous to your health... better not!&n\r\n", ch);
     return FALSE;
   }
 
-  if (scroll == ch->equipment[HOLD])
+  if (potion == ch->equipment[HOLD])
     equipped = TRUE;
 
   lag = get_property("alchemist.throwp.reorient.rounds", 1.75);
@@ -4292,13 +4287,11 @@ bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
       send_to_char("As you slip......\r\n", ch);
       if (equipped)
         unequip_char(ch, HOLD);
-      obj_from_char(scroll, TRUE);
-      send_to_char
-        ("&+YYou aim your throw a little too high, sending your potion flying across the room!\r\n&n",
-         ch);
-      act
-        ("$n slips as $e throws a $p, sending it bouncing along the ground!",
-         TRUE, ch, scroll, 0, TO_ROOM);
+      obj_from_char(potion);
+      send_to_char("&+YYou aim your throw a little too high, sending your potion flying across the room!\r\n&n", ch);
+      act("$n slips as $e throws a $p, sending it bouncing along the ground!",
+         TRUE, ch, potion, 0, TO_ROOM);
+      extract_obj(potion);
       return FALSE;
     }
 
@@ -4326,14 +4319,11 @@ bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
       {
         if (equipped)
           unequip_char(ch, HOLD);
-        obj_from_char(scroll, TRUE);
-        obj_to_room(scroll, ch->in_room);
-        send_to_char
-          ("&+YYou aim your throw a little too high, sending your potion flying across the room!\r\n&n",
-           ch);
-        act
-          ("$n slips as $e throws a $p, sending it bouncing along the ground!",
-           TRUE, ch, scroll, 0, TO_ROOM);
+        obj_from_char(potion);
+        obj_to_room(potion, ch->in_room);
+        send_to_char("&+YYou aim your throw a little too high, sending your potion flying across the room!\r\n&n", ch);
+        act("$n slips as $e throws a $p, sending it bouncing along the ground!",
+           TRUE, ch, potion, 0, TO_ROOM);
         return FALSE;
       }
     }
@@ -4341,14 +4331,12 @@ bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
 
   if (victim)
   {
-    act
-      ("&+W$N&n &+Wpales&N &+Las $p &+Lthrown by&n&+m $n&n&+L hits $M&n &+Lin the face.&n",
-       FALSE, ch, scroll, victim, TO_NOTVICT);
+    act("&+W$N&n &+Wpales&N &+Las $p &+Lthrown by&n&+m $n&n&+L hits $M&n &+Lin the face.&n",
+       FALSE, ch, potion, victim, TO_NOTVICT);
     act("&+W$N's&n&+L face turns&+W pale &+Las $p &+Lhits $M dead on!&n ",
-        FALSE, ch, scroll, victim, TO_CHAR);
-    act
-      ("&+LYour face &+Wpales&N&+L as $p &+Lthrown by&n&+m $n &n&+Lhits you dead on.&N",
-       FALSE, ch, scroll, victim, TO_VICT);
+        FALSE, ch, potion, victim, TO_CHAR);
+    act("&+LYour face &+Wpales&N&+L as $p &+Lthrown by&n&+m $n &n&+Lhits you dead on.&N",
+       FALSE, ch, potion, victim, TO_VICT);
   }
   else if (obj)
   {
@@ -4374,63 +4362,55 @@ bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
       (IS_SET(world[ch->in_room].room_flags, SINGLE_FILE)) &&
       !AdjacentInRoom(ch, victim))
   {
-    send_to_char("You can't get a clear line of sight!\r\n",
-        ch);
+    send_to_char("You can't get a clear line of sight!\r\n", ch);
   }
   else
   {
     for (i = 1; i < 4; i++)
     {
-      if ((scroll->value[i] >= 1) && (victim || obj))
+      if ((potion->value[i] >= 1) && (victim || obj))
       {
-        j = scroll->value[i];
+        j = potion->value[i];
         if ((j != -1) && (skills[j].spell_pointer != NULL))
         {
           if (IS_AGG_SPELL(j) && victim && (ch != victim))
           {
-            if (IS_AFFECTED(ch, AFF_INVISIBLE) ||
-                IS_AFFECTED2(ch, AFF2_MINOR_INVIS))
+            if( IS_AFFECTED(ch, AFF_INVISIBLE) || IS_AFFECTED2(ch, AFF2_MINOR_INVIS) )
               appear(ch);
-
           }
           in_room = ch->in_room;
 
-          if (scroll->value[0] > GET_LEVEL(ch))
+          if (potion->value[0] > GET_LEVEL(ch))
           {
-            send_to_char("The magic is too complex for you to understand.\r\n",
-                ch);
+            send_to_char("The magic is too complex for you to understand.\r\n", ch);
             return FALSE;
           }
 
-
           if (IS_SET(skills[j].targets, TAR_CHAR_ROOM) && victim &&
               !(IS_SET(skills[j].targets, TAR_CHAR_ROOM) && (ch == victim)))
-            ((*skills[j].spell_pointer) ((int) scroll->value[0], ch, 0,
+            ((*skills[j].spell_pointer) ((int) potion->value[0], ch, 0,
               SPELL_TYPE_SPELL, victim, obj));
           else if (IS_SET(skills[j].targets, TAR_SELF_ONLY) && victim &&
               (victim == ch))
-            ((*skills[j].spell_pointer) ((int) scroll->value[0], ch, 0,
+            ((*skills[j].spell_pointer) ((int) potion->value[0], ch, 0,
               SPELL_TYPE_SPELL, victim, obj));
           else
             if ((IS_SET(skills[j].targets, TAR_OBJ_ROOM) ||
                   IS_SET(skills[j].targets, TAR_OBJ_INV)) && obj)
-              ((*skills[j].spell_pointer) ((int) scroll->value[0], ch, 0,
+              ((*skills[j].spell_pointer) ((int) potion->value[0], ch, 0,
                 SPELL_TYPE_SPELL, victim, obj));
             else if (IS_SET(skills[j].targets, TAR_IGNORE))
-              ((*skills[j].spell_pointer) ((int) scroll->value[0], ch, 0,
+              ((*skills[j].spell_pointer) ((int) potion->value[0], ch, 0,
                 SPELL_TYPE_SPELL, victim, obj));
 
 
 
           /* best thing to do if victim dies is just extract the obj and quit out, since many
              spells kill the mud w/o a victim
-
              besides, what if the char IS the victim?  heh. */
-
-          if ((victim && !char_in_list(victim)) ||
-              ((victim != ch) && !char_in_list(ch)))
+          if( (victim && !char_in_list(victim)) || ((victim != ch) && !char_in_list(ch)) )
           {
-            extract_obj(scroll, TRUE);
+            extract_obj(potion);
             return FALSE;
           }
           else if (IS_AGG_SPELL(j) && victim && (ch != victim))
@@ -4458,18 +4438,17 @@ bool throw_potion(P_char ch, P_obj scroll, P_char victim, P_obj obj)
     if ((victim && !obj && IS_NPC(victim)) &&
         number(1, 120) < GET_CHAR_SKILL(ch, SKILL_REMIX))
     {
-      act("&+WYou quickly &+rremix&+W another potion!&n", FALSE, ch, 0,
-          victim, TO_CHAR);
+      act("&+WYou quickly &+rremix&+W another potion!&n", FALSE, ch, 0, victim, TO_CHAR);
     }
     else
     {
       notch_skill(ch, SKILL_REMIX, 1);
-      extract_obj(scroll, TRUE);
+      extract_obj(potion);
     }
 
   }
   else
-    extract_obj(scroll, TRUE);
+    extract_obj(potion);
 }
 
 

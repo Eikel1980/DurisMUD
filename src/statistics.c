@@ -36,7 +36,6 @@ extern struct zone_data *zone;
 extern struct zone_data *zone_table;
 extern struct sector_data *sector_table;
 extern P_desc descriptor_list;
-extern int top_of_world;
 
 void event_write_statistic(P_char ch, P_char victim, P_obj obj, void *data)
 {

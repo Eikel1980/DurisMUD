@@ -3889,8 +3889,7 @@ void do_gmotd(P_char ch, char *argument, int cmd)
   }
   if (obj->type != ITEM_NOTE)
   {
-    send_to_char("Item must be a piece of paper with your guild motd!\r\n",
-                 ch);
+    send_to_char("Item must be a piece of paper with your guild motd!\r\n", ch);
     return;
   }
   if (!obj->action_description)
@@ -3903,8 +3902,8 @@ void do_gmotd(P_char ch, char *argument, int cmd)
   strcat(text, "\r\n");
   fprintf(f, "%s", text);
   fclose(f);
-  obj_from_char(obj, TRUE);
-  extract_obj(obj, TRUE);
+  obj_from_char(obj);
+  extract_obj(obj);
   send_to_char("Guild Motd Updated.\r\n", ch);
 }
 

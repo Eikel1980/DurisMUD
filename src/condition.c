@@ -145,16 +145,13 @@ int DamageOneItem(P_char ch, int dam_type, P_obj obj, bool destroy)
   int      objtype;
   bool     force_destroy = destroy;
 
-  if((objtype == ITEM_TOTEM) ||
-     (objtype == ITEM_KEY) ||
-     (objtype == ITEM_SPELLBOOK) ||
-     (IS_ARTIFACT(obj)))
+  if( (objtype == ITEM_TOTEM) || (objtype == ITEM_KEY) || (objtype == ITEM_SPELLBOOK) || IS_ARTIFACT(obj) )
   {
     return 0;
   }
-  
+
   num = number(3, 9);
-  
+
   if(materials[obj->material].dam_res[dam_type])
   {
     num *= materials[obj->material].dam_res[dam_type];
@@ -194,7 +191,7 @@ int DamageOneItem(P_char ch, int dam_type, P_obj obj, bool destroy)
     if(!force_destroy)
       MakeScrap(ch, obj);
     else
-      extract_obj(obj, TRUE);
+      extract_obj(obj);
 
   return destroy;
 }
@@ -235,7 +232,7 @@ void MakeScrap(P_char ch, P_obj obj)
 
   if (OBJ_CARRIED(obj))
   {
-    obj_from_char(obj, TRUE);
+    obj_from_char(obj);
   }
   else if (OBJ_WORN(obj))
   {
@@ -263,7 +260,7 @@ void MakeScrap(P_char ch, P_obj obj)
   if (OBJ_FALLING(t))
     falling_obj(t, 1, false);
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 }
 
 void DamageAllStuff(P_char ch, int dam_type)

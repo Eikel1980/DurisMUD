@@ -28,6 +28,7 @@ using namespace std;
 extern P_index mob_index;
 extern P_index obj_index;
 extern P_room world;
+extern const int top_of_world;
 extern P_desc descriptor_list;
 extern P_char character_list;
 extern P_obj object_list;
@@ -1469,10 +1470,10 @@ void reset_nexus_stones(P_char ch)
 void reload_nexus_stone(P_char ch, int stone_id)
 {
   wizlog(57, "%s reloaded nexus stone (%d)", GET_NAME(ch), stone_id);
-  logit(LOG_WIZ, "%s reloaded nexus stone (%d)", GET_NAME(ch), stone_id);  
-  
+  logit(LOG_WIZ, "%s reloaded nexus stone (%d)", GET_NAME(ch), stone_id);
+
   vector<P_char> delete_chars;
-  
+
   for( P_char tch = character_list; tch; tch = tch->next )
   {
     if( ( IS_NEXUS_GUARDIAN(tch) || IS_NEXUS_SAGE(tch) ) && guardian_stone_id(tch) == stone_id )
@@ -1480,34 +1481,34 @@ void reload_nexus_stone(P_char ch, int stone_id)
       delete_chars.push_back(tch);
     }
   }
-  
+
   while( delete_chars.size() )
   {
     extract_char(delete_chars.back());
     delete_chars.pop_back();
   }
-  
+
   for( P_obj tobj = object_list; tobj; tobj = tobj->next )
   {
     if( IS_NEXUS_STONE(tobj) && STONE_ID(tobj) == stone_id )
     {
-      extract_obj(tobj, TRUE);
+      extract_obj(tobj);
       break;
     }
   }
-  
+
   // load nexus stones from DB
   if( !qry("SELECT name, room_vnum, align FROM nexus_stones WHERE id = '%d'", stone_id) )
     return;
-  
+
   MYSQL_RES *res = mysql_store_result(DB);
-  
+
   if( mysql_num_rows(res) < 1 )
   {
     mysql_free_result(res);
     return;
   }
-  
+
   MYSQL_ROW row = mysql_fetch_row(res);
   char* stone_name = row[0];
   int room_vnum = atoi(row[1]);
@@ -1564,7 +1565,7 @@ void expire_nexus_stone(int stone_id)
     if( IS_NEXUS_STONE(tobj) && STONE_ID(tobj) == stone_id )
     {
       STONE_ALIGN(tobj) = 0;
-      extract_obj(tobj, TRUE);
+      extract_obj(tobj);
       break;
     }
   }

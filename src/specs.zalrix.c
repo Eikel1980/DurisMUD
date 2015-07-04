@@ -1,9 +1,9 @@
-/*
-   *  File: specs.zalrix.c   (Part of Duris)                                  
-   *  Usage: special procedures by Zalrix
-   *  Copyright  1990, 1991 - see 'license.doc' for complete information.      
-   *  Copyright 1994 - 2008 - Duris Systems Ltd.                             
- */
+/*****************************************************************************
+ *  File: specs.zalrix.c   (Part of Duris)                                   *
+ *  Usage: special procedures by Zalrix                                      *
+ *  Copyright  1990, 1991 - see 'license.doc' for complete information.      *
+ *  Copyright 1994 - 2008 - Duris Systems Ltd.                               *
+ *****************************************************************************/
 
 #include <ctype.h>
 #include <stdio.h>
@@ -21,7 +21,8 @@
 #include "weather.h"
 #include "justice.h"
 #include "damage.h"
-
+#include "vnum.obj.h"
+#include "vnum.room.h"
 /*
    external variables
  */
@@ -31,6 +32,7 @@ extern P_desc descriptor_list;
 extern P_index mob_index;
 extern P_index obj_index;
 extern P_room world;
+extern const int top_of_world;
 extern P_event current_event;
 extern char *coin_names[];
 extern char *command[];
@@ -39,7 +41,6 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int innate_abilities[];
 extern int planes_room_num[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct dex_app_type dex_app[52];
@@ -59,69 +60,48 @@ int drowcrusher(P_obj obj, P_char ch, int cmd, char *arg)
   P_obj    obj2;
   int      i, from_room;
 
-  /* check for periodic calls */
-  if (cmd == CMD_SET_PERIODIC)
+  if( cmd != CMD_HIT )
     return FALSE;
-  if (!obj)
+  if( !OBJ_WORN(obj) || !IS_ALIVE(ch) )
     return FALSE;
-  if (!OBJ_WORN(obj))
+  if( obj->loc.wearing->equipment[WIELD] != obj )
     return FALSE;
-  if (obj->loc.wearing->equipment[WIELD] != obj)
+  if( ROOM_VNUM(ch->in_room) != VROOM_YUANTI_TREASUREROOM )
     return FALSE;
-  if (cmd != CMD_HIT)
-    return FALSE;
-  if (ch->in_room != real_room(80545))
-    return FALSE;
-  if (!arg || !*arg)
+  if( !arg || !*arg )
     return FALSE;
   // Not looking for tracks, so skipping them
   generic_find(arg, FIND_OBJ_ROOM | FIND_NO_TRACKS, ch, &ch2, &obj2);
-
   if (!obj2)
     return FALSE;
 
   /* check vnum of stone we hit, to the stone that we WANT to hit */
-  if (obj_index[obj2->R_num].virtual_number != 80563)
+  if( GET_OBJ_VNUM(obj2) != VOBJ_YUANTI_CRUSHERSTONE )
   {
     act("You playfully hit $p&n, *tink* *tink*", TRUE, ch, obj2, 0, TO_CHAR);
-    return FALSE;
+    return TRUE;
   }
-  act("Your $q&n hums loudly as you strike the stone!", TRUE, ch, obj, 0,
-      TO_CHAR);
-  act("$N's $q&n hums loudly as it strikes the stone!", TRUE, ch, obj, 0,
-      TO_ROOM);
-  act("$p&n explodes, covering the room in a fine dust.", TRUE, ch, obj2, 0,
-      TO_NOTVICT);
-  act("The $q in your hands crumbles into small, unusable pieces.", TRUE, ch,
-      obj, 0, TO_CHAR);
+  act("Your $q&n hums loudly as you strike the stone!", TRUE, ch, obj, 0, TO_CHAR);
+  act("$N's $q&n hums loudly as it strikes the stone!", TRUE, ch, obj, 0, TO_ROOM);
+  act("$p&n explodes, covering the room in a fine dust.", TRUE, ch, obj2, 0, TO_NOTVICT);
+  act("The $q in your hands crumbles into small, unusable pieces.", TRUE, ch, obj, 0, TO_CHAR);
 
   /* remove stone from room, and hammer from user */
   unequip_char(ch, WIELD);
-  extract_obj(obj, TRUE);
-  extract_obj(obj2, TRUE);
+  extract_obj(obj, TRUE); // Not an arti, but 'in game.'
+  extract_obj(obj2, TRUE); // Not an arti, but 'in game.'
 
-  send_to_room
-    ("  A deep rumbling can be heard from within the temple, and rocks and other\r\n",
-     ch->in_room);
-  send_to_room
-    ("debris start to fall on you. All of a sudden a sphere of force surrounds\r\n",
-     ch->in_room);
-  send_to_room
-    ("you and a large booming voice can be heard. You have succeeded in your\r\n",
-     ch->in_room);
-  send_to_room
-    ("quest, however do not expect Xueqin to save your hides again. You are\r\n",
-     ch->in_room);
-  send_to_room
-    ("then magicly transported to a different location, or perhaps a different\r\n",
-     ch->in_room);
-  send_to_room
-    ("time, it is hard to tell, but a thick layer of dust covers the room, and a\r\n",
-     ch->in_room);
+  send_to_room("  A deep rumbling can be heard from within the temple, and rocks and other\r\n", ch->in_room);
+  send_to_room("debris start to fall on you. All of a sudden a sphere of force surrounds\r\n", ch->in_room);
+  send_to_room("you and a large booming voice can be heard. You have succeeded in your\r\n", ch->in_room);
+  send_to_room("quest, however do not expect Xueqin to save your hides again. You are\r\n", ch->in_room);
+  send_to_room("then magicly transported to a different location, or perhaps a different\r\n", ch->in_room);
+  send_to_room("time, it is hard to tell, but a thick layer of dust covers the room, and a\r\n", ch->in_room);
   send_to_room("dank smell overpowers your senses.\r\n", ch->in_room);
 
-  /* bring all users in room 80500-80545 to room 80546 */
-  /*  for (i = 80500; i < 80546; i++)
+  /* No.. just moving group members that were in the room with the stone.
+  // Bring all users in room 80500-80545 to room 80546
+  for (i = 80500; i < 80546; i++)
   {
     for (victim = world[real_room(i)].people; victim; victim = next)
     {
@@ -133,17 +113,13 @@ int drowcrusher(P_obj obj, P_char ch, int cmd, char *arg)
       }
     }
   }*/
- from_room = ch->in_room;
- if(ch->group)
+  from_room = ch->in_room;
+  if( ch->group )
   {
-
-    // get the character's group list
-    gl = ch->group;
-
-    // teleport the group members in the character's room
-    for (gl; gl; gl = gl->next)
+    // Teleport the group members in the character's room
+    for( gl = ch->group; gl; gl = gl->next )
     {
-      if(gl->ch->in_room == from_room)
+      if( gl->ch->in_room == from_room )
       {
 
         // if they're fighting, break it up
@@ -154,28 +130,22 @@ int drowcrusher(P_obj obj, P_char ch, int cmd, char *arg)
 
         // move the char
         char_from_room(gl->ch);
-        char_to_room(gl->ch, real_room(80546), -1);
-
+        char_to_room(gl->ch, real_room(VROOM_YUANTI_RUBBLEFILLED), -1);
       }
     }
   }
   else
   {
-
-    // if they're fighting, break it up
+    // If they're fighting, break it up
     if(IS_FIGHTING(ch))
       stop_fighting(ch);
     if(IS_DESTROYING(gl->ch))
       stop_destroying(gl->ch);
 
-    // move the char
+    // Move the char
     char_from_room(ch);
-    char_to_room(ch, real_room(80546), -1);
-
+    char_to_room(ch, real_room(VROOM_YUANTI_RUBBLEFILLED), -1);
   }
-
-
-
   return TRUE;
 }
 

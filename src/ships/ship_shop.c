@@ -2673,7 +2673,7 @@ bool moonstone_fragment(P_obj obj, P_char ch, int cmd, char *argument)
           next_obj = obj->next_content;
           if (IS_MOONSTONE_PART(obj))
           {
-              obj_from_char(obj, TRUE);
+              obj_from_char(obj);
               extract_obj(obj, TRUE);
           }
         }
@@ -2818,7 +2818,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
             }
             send_to_char_f(pl, "You hand over the &+Wmoonstone&N and the &+Wmoney&N.\r\n");
             SUB_MONEY(pl, cost, 0);
-            obj_from_char(moonstone, TRUE);
+            obj_from_char(moonstone);
             extract_obj(moonstone, TRUE);
             set_crew(ship, AUTOMATON_CREW, false);
             update_ship_status(ship);
@@ -2830,7 +2830,7 @@ int erzul_proc(P_char ch, P_char pl, int cmd, char *arg)
         if (isname(arg2, "reward"))
         {
           send_to_char_f(pl, "You hand over the &+Wmoonstone&N.\r\n");
-          obj_from_char(moonstone, TRUE);
+          obj_from_char(moonstone);
           extract_obj(moonstone, TRUE);
 
           int r_num = real_object(9460);

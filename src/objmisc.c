@@ -103,9 +103,11 @@ void event_random_exit(P_char ch, P_char victim, P_obj obj, void *data)
   if (obj->value[0] > number(0,99) && OBJ_ROOM(obj) &&
       sscanf(obj->name, "%s exit_%s ", buf, exit_name) &&
       (exit_dir = dir_from_keyword(exit_name)) != -1 &&
-      (d_room = real_room(obj->value[1])) != -1) {
+      (d_room = real_room(obj->value[1])) != -1)
+  {
     s_room = obj->loc.room;
-    if (!world[s_room].dir_option[exit_dir]) {
+    if (!world[s_room].dir_option[exit_dir])
+    {
       CREATE(world[s_room].dir_option[exit_dir], room_direction_data, 1, MEM_TAG_DIRDATA);
       memset(world[s_room].dir_option[exit_dir], 0, sizeof(struct room_direction_data));
     }
@@ -118,21 +120,21 @@ void event_random_exit(P_char ch, P_char victim, P_obj obj, void *data)
       // will help prevent people shifting into the zone when they shouldn't.
       if (!(zone_table[world[(world[s_room].dir_option[exit_dir])->to_room].zone].flags & ZONE_CLOSED))
       { // close it...
-	SET_BIT(zone_table[world[(world[s_room].dir_option[exit_dir])->to_room].zone].flags, ZONE_CLOSED);
+	      SET_BIT(zone_table[world[(world[s_room].dir_option[exit_dir])->to_room].zone].flags, ZONE_CLOSED);
       }
     }
-    if (!world[d_room].dir_option[rev_dir[exit_dir]]) {
+    if (!world[d_room].dir_option[rev_dir[exit_dir]])
+    {
       CREATE(world[d_room].dir_option[rev_dir[exit_dir]], room_direction_data, 1, MEM_TAG_DIRDATA);
       memset(world[d_room].dir_option[rev_dir[exit_dir]], 0, sizeof(struct room_direction_data));
     }
-    world[s_room].dir_option[exit_dir]->to_room = 
-      real_room(obj->value[1]);
+    world[s_room].dir_option[exit_dir]->to_room = real_room(obj->value[1]);
     world[d_room].dir_option[rev_dir[exit_dir]]->to_room = s_room;
     if (zone_table[world[d_room].zone].flags & ZONE_CLOSED)
       REMOVE_BIT(zone_table[world[d_room].zone].flags, ZONE_CLOSED);
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 }
 
 /*

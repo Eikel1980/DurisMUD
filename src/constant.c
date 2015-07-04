@@ -15,6 +15,7 @@
 #include "spells.h"
 #include "structs.h"
 #include "ships.h"
+#include "vnum.obj.h"
 
 extern const char *god_list[];
 const char *god_list[] = {
@@ -590,7 +591,7 @@ const struct minor_create_struct minor_create_name_list[] = {
   {"harp", 1245},
   {"horn", 1242},
   {"mandolin", 1244},
-  {"potion", 835},
+  {"potion", VOBJ_POTION_BOTTLES},
   {"paper", 5},
   {"shovel", 191},
   {"raft", 431},

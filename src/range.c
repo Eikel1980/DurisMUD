@@ -1375,7 +1375,7 @@ void do_throw(P_char ch, char *argument, int cmd)
    else if (weapon == ch->equipment[SECONDARY_WEAPON])
      obj_to_char(unequip_char(ch, SECONDARY_WEAPON), ch);
 
-   obj_from_char(weapon, TRUE);
+   obj_from_char(weapon);
    obj_to_room(weapon, (target_room == -1) ? ch->in_room : target_room);
  }
 
@@ -1455,13 +1455,13 @@ void do_load_weapon(P_char ch, char *argument, int cmd)
     * shouldn't really get here.. this one's for Murphy :)
     */
    send_to_char("It's empty!\r\n", ch);
-   extract_obj(missile, TRUE);
+   extract_obj(missile, TRUE); // Arti bullets?
    return;
  }
  if (num_ammo <= num_needed)
  {
    weapon->value[2] += num_ammo;
-   extract_obj(missile, TRUE);
+   extract_obj(missile, TRUE); // Arti bullets?
  }
  else
  {

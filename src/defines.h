@@ -504,7 +504,7 @@ typedef unsigned int uint;
 /* The following defs and structures are related to char_data   */
 
 	/* For 'equipment' */
-
+#define WEAR_NONE              -1
 #define WEAR_LIGHT              0       /* should not be used any longer! */
 #define WEAR_FINGER_R           1
 #define WEAR_FINGER_L           2

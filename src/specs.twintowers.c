@@ -17,6 +17,7 @@
 #include "specs.prototypes.h"
 #include "structs.h"
 #include "utils.h"
+#include "vnum.obj.h"
 
 /*
    external variables 
@@ -34,7 +35,6 @@ extern const char *dirs[];
 extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct zone_data *zone;
@@ -90,11 +90,11 @@ int forest_corpse(P_obj obj, P_char ch, int cmd, char *args)
     // Make it into a real corpse
     P_obj    corpse;
 
-    corpse = read_object(13520, VIRTUAL);
+    corpse = read_object(VOBJ_TTFOREST_ROTTING_CORPSE, VIRTUAL);
     if( !corpse )
     {
-      logit(LOG_EXIT, "forest_corpse: unable to load obj #13520");
-      raise(SIGSEGV);
+      logit(LOG_EXIT, "forest_corpse: unable to load obj #%d", VOBJ_TTFOREST_ROTTING_CORPSE);
+      return FALSE;
     }
     corpse->weight = obj->weight;
     set_obj_affected(corpse, get_property("timer.decay.corpse.npc", 120), TAG_OBJ_DECAY, 0);
@@ -120,9 +120,9 @@ int forest_corpse(P_obj obj, P_char ch, int cmd, char *args)
     else
     {
       // Just destroy both the obj and the corpse
-      extract_obj(corpse, TRUE);
+      extract_obj(corpse);
     }
-    extract_obj(obj, TRUE);
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     return TRUE;
   }
   return FALSE;

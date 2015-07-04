@@ -113,7 +113,7 @@ int roulette_pistol(P_obj obj, P_char ch, int cmd, char *arg)
           act("&-RBANG!&n &+W$n&+W shot himself... What a loser!", FALSE, ch, obj, 0, TO_ROOM);
           if( !IS_TRUSTED(ch) )
           {
-            //obj_from_char(unequip_char(ch, HOLD), TRUE);
+            //obj_from_char(unequip_char(ch, HOLD), FALSE);
             //obj_to_room(obj, ch->in_room);
             //act("$p&+y drops to the floor.", FALSE, ch, obj, 0, TO_ROOM);
             GET_HIT(ch) = (-100);
@@ -549,7 +549,6 @@ void halloween_mine_proc(P_char ch)
 
 // Zombies game: loads zombies per round until all players are dead. :)
 // Need to setup a zombies class to load zombie vectors per spawner item.
-
 int zombies_game(P_obj obj, P_char ch, int cmd, char *arg)
 {
   P_desc i;
@@ -615,7 +614,7 @@ int zombies_game(P_obj obj, P_char ch, int cmd, char *arg)
     {
       debug("Error with zg_count_zombies(): can't find zombie game data");
       send_to_zone(zone, "&+RGame has ended due to technical difficulties, please notify a god.&n\r\n");
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
       return TRUE;
     }
 

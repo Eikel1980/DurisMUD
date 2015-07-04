@@ -66,12 +66,6 @@
 
 #define MAT_HIGHEST   53
 
-#define CRAFTING_TOOLS_VNUM 400224
-#define CRAFTING_ESSENCE_VNUM 400211
-// Yes, forging essence is the same as the crafting one.
-#define FORGING_ESSENCE_VNUM 400211
-#define FORGING_FLUX_VNUM 400223
-
 #define IS_METAL(mat) ( mat == MAT_IRON || mat == MAT_STEEL || \
                         mat == MAT_COPPER || mat == MAT_BRASS || \
                         mat == MAT_ADAMANTIUM || mat == MAT_GOLD || \

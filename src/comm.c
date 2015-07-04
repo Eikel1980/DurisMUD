@@ -63,7 +63,7 @@ extern P_event schedule[];
 extern P_index mob_index;
 extern P_room world;
 extern char debug_mode;
-extern int top_of_world;
+extern const int top_of_world;
 extern int top_of_zone_table;
 extern struct ban_t *ban_list;
 extern struct wizban_t *wizconnect;
@@ -432,8 +432,10 @@ void run_the_game(int port)
 
   close_sockets(s);
 
+  /* Don't need this anymore, as dropped artis are handled in real time on the DB.
   // Look for dropped artis and remove them from the next boot.
   dropped_arti_hunt();
+  */
 
 #ifdef MEMCHK
   free_world();

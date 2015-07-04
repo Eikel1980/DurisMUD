@@ -22,6 +22,7 @@
 #include "specs.prototypes.h"
 #include "sql.h"
 #include "epic_bonus.h"
+#include "damage.h"
 
 /*
  * external variables
@@ -30,6 +31,7 @@
 extern P_index mob_index;
 extern P_index obj_index;
 extern P_room world;
+extern const int top_of_world;
 extern char *drinks[];
 extern const struct stat_data stat_factor[];
 extern const char *item_types[];
@@ -342,8 +344,8 @@ P_obj get_purchase_obj(P_char ch, char *arg, P_char keeper, int shop_nr, int msg
     }
     if( obj->cost <= 0 )
     {
-      extract_obj(obj, TRUE);
-      obj = 0;
+      extract_obj(obj, TRUE); // Shopkeeper with cost 0 arti?
+      obj = NULL;
     }
   }
   while( !obj );
@@ -469,7 +471,7 @@ void shopping_buy(char *arg, P_char ch, P_char keeper, int shop_nr)
         if( IS_ARTIFACT(temp1) || isname("encrust", temp1->name) )
         {
           wizlog(56, "(%s) shopkeeper just destroyed (%s).", GET_NAME(keeper), (temp1->short_description));
-          extract_obj(temp1, TRUE);
+          extract_obj(temp1, TRUE); // Bye arti.
           continue;
         }
 
@@ -494,7 +496,7 @@ void shopping_buy(char *arg, P_char ch, P_char keeper, int shop_nr)
   {
     sprintf(Gbuf1, shop_index[shop_nr].no_such_item1, GET_NAME(ch));
     do_tell(keeper, Gbuf1, 0);
-    extract_obj(temp1, TRUE);
+    extract_obj(temp1, TRUE); // Arti with no cost?
     return;
   }
 
@@ -572,7 +574,7 @@ void shopping_buy(char *arg, P_char ch, P_char keeper, int shop_nr)
   }
   else
   {
-    obj_from_char(temp1, TRUE);
+    obj_from_char(temp1);
   }
   SET_BIT(temp1->extra2_flags, ITEM2_STOREITEM);
   obj_to_char(temp1, ch);
@@ -762,15 +764,14 @@ void shopping_sell(char *arg, P_char ch, P_char keeper, int shop_nr)
   if (!number(0, 3))
     shop_index[shop_nr].sell_percent -= .03;
 */
-  if ((get_obj_in_list(argm, keeper->carrying)) ||
-      (GET_ITEM_TYPE(temp1) == ITEM_TRASH))
+  if( (get_obj_in_list(argm, keeper->carrying)) || (GET_ITEM_TYPE(temp1) == ITEM_TRASH) )
   {
-    extract_obj(temp1, TRUE);
+    extract_obj(temp1, TRUE); // Prolly not an arti if type trash.
     temp1 = NULL;
   }
   else
   {
-    obj_from_char(temp1, TRUE);
+    obj_from_char(temp1);
     obj_to_char(temp1, keeper);
   }
 
@@ -910,14 +911,14 @@ void shopping_peruse(char *arg, P_char ch, P_char keeper, int shop_nr)
   {
     sprintf(Gbuf1, shop_index[shop_nr].no_such_item1, GET_NAME(ch));
     do_tell(keeper, Gbuf1, 0);
-    extract_obj(temp1, TRUE);
+    extract_obj(temp1, TRUE);  // Arti with no cost?
     return;
   }
 
   sale = (int)get_property("shops.peruse.cost", 1000.000);
 
   if (!IS_TRUSTED(ch))
-  {                             
+  {
     if (!transact(ch, gem, keeper, sale))
     {
       sprintf(Gbuf1, shop_index[shop_nr].missing_cash2, GET_NAME(ch));
@@ -928,7 +929,7 @@ void shopping_peruse(char *arg, P_char ch, P_char keeper, int shop_nr)
 
   sprintf(Gbuf1, "You peruse %s.\r\n", temp1->short_description);
   send_to_char(Gbuf1, ch);
-  
+
   spell_identify(60, ch, NULL, 0, 0, temp1);
 
   return;
@@ -997,15 +998,14 @@ void shopping_list(char *arg, P_char ch, P_char keeper, int shop_nr)
   found_obj = FALSE;
   if (keeper->carrying)
     for (temp1 = keeper->carrying; temp1; temp1 = temp1->next_content)
-    { 
-      if(IS_ARTIFACT(temp1) ||
-         isname("encrust", temp1->name))
+    {
+      if(IS_ARTIFACT(temp1) || isname("encrust", temp1->name))
       {
         wizlog(56, "(%s) shopkeeper just destroyed (%s).", GET_NAME(keeper), (temp1->short_description));
-        extract_obj(temp1, TRUE);
+        extract_obj(temp1, TRUE); // Bye arti.
         continue;
       }
-        
+
       sprintf(descbuf, "%s", temp1->short_description);
 
       if ((CAN_SEE_OBJ(ch, temp1)) && (temp1->cost > 0))
@@ -1114,7 +1114,7 @@ void shopping_repair(char *arg, P_char ch, P_char keeper, int shop_nr)
   act("$N looks at $p.", TRUE, ch, obj, keeper, TO_CHAR);
   act("$N looks at $p.", TRUE, ch, obj, keeper, TO_ROOM);
 
-  if (IS_SET(obj->extra_flags, ITEM_NOREPAIR))
+  if( IS_SET(obj->extra_flags, ITEM_NOREPAIR) || IS_ARTIFACT(obj) )
   {
     act("$N fiddles with $p, shaking his head.", TRUE, ch, obj, keeper,
         TO_ROOM);
@@ -1131,17 +1131,21 @@ void shopping_repair(char *arg, P_char ch, P_char keeper, int shop_nr)
   if (obj->type == ITEM_WEAPON)
   {
     wpn = read_object(obj_index[obj->R_num].virtual_number, VIRTUAL);
+    // If the type of damge (hit/slash/bludgeon/etc) was changed, fix it.
     if (wpn->value[3] != obj->value[3])
     {
       obj->value[3] = wpn->value[3];
     }
+    // If it wasn't originally a weapon, change the attack type to slash?
+    // Why are we not checking this first and leaving the new attack type if
+    //   it wasn't originally a weapon?
     if (wpn->type != ITEM_WEAPON)
     {
-      obj->value[3] = 3;
+      obj->value[3] = MSG_SLASH;
     }
-    extract_obj(wpn, TRUE);
+    extract_obj(wpn);
   }
-  if (obj->condition > 0)
+  if( obj->condition > 0 )
   {
     if (obj->condition < 100)
     {
@@ -1172,9 +1176,7 @@ void shopping_repair(char *arg, P_char ch, P_char keeper, int shop_nr)
         act("$N fiddles with $p.", TRUE, ch, obj, keeper, TO_CHAR);
         if (GET_LEVEL(keeper) > 35)
         {
-          ave =
-            BOUNDED(0, (100 + number(-9, 10) + (GET_LEVEL(keeper) - 35)),
-                    125);
+          ave = BOUNDED(0, (100 + number(-9, 10) + (GET_LEVEL(keeper) - 35)), 125);
         }
         else
           ave = BOUNDED(0, MAX(obj->condition, 50 + obj->condition), 100);
@@ -1198,9 +1200,7 @@ void shopping_repair(char *arg, P_char ch, P_char keeper, int shop_nr)
     return;
   }
 #else
-  cond =
-    BOUNDED(1, (int) (((float) obj->curr_sp / (float) obj->max_sp) * 10.0),
-            12);
+  cond = BOUNDED(1, (int) (((float) obj->curr_sp / (float) obj->max_sp) * 10.0), 12);
 
   if (cond > 0)
   {
@@ -1252,7 +1252,7 @@ void shopping_repair(char *arg, P_char ch, P_char keeper, int shop_nr)
 int shop_keeper(P_char keeper, P_char ch, int cmd, char *arg)
 {
   char     argm[MAX_INPUT_LENGTH], victim_name[MAX_STRING_LENGTH];
-  int      shop_nr;
+  int      shop_nr, room;
   P_obj    item, next_item;
 
   if (!cmd)
@@ -1263,11 +1263,23 @@ int shop_keeper(P_char keeper, P_char ch, int cmd, char *arg)
 
   if (cmd == CMD_DEATH)
   {
+    room = (keeper->in_room >= 0 && keeper->in_room <= top_of_world) ? keeper->in_room : NOWHERE;
+    if( room == NOWHERE )
+    {
+      room = real_room(keeper->specials.was_in_room);
+    }
     for (item = keeper->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
-      extract_obj(item, TRUE);
+      obj_from_char(item);
+      if( IS_ARTIFACT(item) && room != NOWHERE )
+      {
+        obj_to_room(item, room);
+      }
+      else
+      {
+        extract_obj(item, TRUE); // Shopkeep dies with arti? :(
+      }
     }
     return TRUE;
   }
@@ -1823,7 +1835,7 @@ bool transact(P_char from, P_obj merchandise, P_char to, int value)
         }
       }
       else
-        obj_from_char(merchandise, TRUE);
+        obj_from_char(merchandise);
       obj_to_char(merchandise, to);
       gem_value = merchandise->cost * 3 / 4;
       change = gem_value - value;

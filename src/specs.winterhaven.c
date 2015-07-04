@@ -26,7 +26,7 @@
 #include "assocs.h"
 #include "specs.prototypes.h"
 #include "specs.zion.h"
-
+#include "vnum.obj.h"
 /*
  * external variables 
  */ 
@@ -44,7 +44,6 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct str_app_type str_app[];
@@ -78,8 +77,7 @@ int wh_corpse_to_object(P_char ch, P_char pl, int cmd, char *arg)
     obj = read_object(GET_VNUM(ch), VIRTUAL);
     if (!(obj))
     {
-      logit(LOG_EXIT, "winterhaven_object: death object for mob %d doesn't exist",
-            GET_VNUM(ch));
+      logit(LOG_EXIT, "winterhaven_object: death object for mob %d doesn't exist", GET_VNUM(ch));
       raise(SIGSEGV);
     }
     obj_to_room(obj, ch->in_room);
@@ -99,22 +97,19 @@ int wh_corpse_decay(P_obj obj, P_char ch, int cmd, char *args)
   if (ch || cmd)
     return FALSE;
 
-  if (!obj->value[0]--)
+  // Make it into a real corpse 
+  if( obj->value[0]-- <= 0 )
   {
-    /*
-       make it into a real corpse 
-     */
     P_obj    corpse;
 
-    corpse = read_object(13520, VIRTUAL);
+    corpse = read_object(VOBJ_WINTERHAVEN_ROT_CORPSE, VIRTUAL);
     if (!corpse)
     {
-      logit(LOG_EXIT, "wh_corpse_decay: unable to load obj #55021");
-      raise(SIGSEGV);
+      logit(LOG_OBJ, "wh_corpse_decay: unable to load obj #%d", VOBJ_WINTERHAVEN_ROT_CORPSE);
+      return FALSE;
     }
     corpse->weight = obj->weight;
-    set_obj_affected(corpse, get_property("timer.decay.corpse.npc", 120),
-                     TAG_OBJ_DECAY, 0);
+    set_obj_affected(corpse, get_property("timer.decay.corpse.npc", 120), TAG_OBJ_DECAY, 0);
 
     if (OBJ_CARRIED(obj))
     {
@@ -137,7 +132,7 @@ int wh_corpse_decay(P_obj obj, P_char ch, int cmd, char *args)
     }
     else
     {
-      extract_obj(corpse, TRUE);
+      extract_obj(corpse);
     }
     extract_obj(obj, TRUE);
     return TRUE;
@@ -1493,31 +1488,25 @@ int wh_janitor(P_char ch, P_char pl, int cmd, char *arg)
     return FALSE;
 
 /* Is there anything in the room that we can pick up? Do it! */
-
-
   for (o = world[ch->in_room].contents; o; o = o->next_content)
   {
+    if(o->type == (ITEM_SWITCH || ITEM_KEY || ITEM_TRASH))
+      continue;
 
-    {
-        if(o->type == (ITEM_SWITCH || ITEM_KEY || ITEM_TRASH))
-          continue;
+  	if (!CAN_GET_OBJ(ch, o))
+  	{
+  		continue;
+  	}
 
-    	if (!CAN_GET_OBJ(ch, o))
-    	{
-    		continue;
-    	}
+    act("$n picks up some trash.", FALSE, ch, 0, 0, TO_ROOM);
 
-      act("$n picks up some trash.", FALSE, ch, 0, 0, TO_ROOM);
+    obj_from_room(o);
+    obj_to_char(o, ch);
 
-      obj_from_room(o);
-      obj_to_char(o, ch);
-
-      return TRUE;
-    }
+    return TRUE;
   }
 
 /* Are we in the well room? Drop the loot into it! */
-
   int well_room = real_room(WELL_ROOM);
 
   if (well_room == NOWHERE)
@@ -1545,7 +1534,7 @@ int wh_janitor(P_char ch, P_char pl, int cmd, char *arg)
       well = read_object(WELL, VIRTUAL);
       obj_to_room(well, real_room(WELL_ROOM));
     }
-    
+
     if (!well)
     {
 	    return FALSE;
@@ -1554,7 +1543,7 @@ int wh_janitor(P_char ch, P_char pl, int cmd, char *arg)
     unequip_all(ch);
 
     dumped = FALSE;
-    
+
     if (ch->carrying)
     {
       do_donate(ch, "all", CMD_DONATE);
@@ -1564,7 +1553,8 @@ int wh_janitor(P_char ch, P_char pl, int cmd, char *arg)
     for( o = ch->carrying; o; o = next_obj )
     {
       next_obj = o->next_content;
-      extract_obj(o, TRUE);
+      if( !IS_ARTIFACT(o) )
+        extract_obj(o, TRUE);
       //obj_from_char(o, FALSE);
       //obj_to_obj(o, well);
       //dumped = TRUE;
@@ -1579,16 +1569,13 @@ int wh_janitor(P_char ch, P_char pl, int cmd, char *arg)
 
   loaded = ((weight_notches_above_naked(ch) > 3) ||
    (IS_CARRYING_N(ch) > (int) (0.25*CAN_CARRY_N(ch))) || !number(0,299));
-     
 
 /* Are we loaded past 6% of our capacity? (or sometimes even without it)*/
-
-  switch (loaded) {
-
+  switch (loaded)
+  {
   case FALSE:
 
 /*  No we're not. Let's look if there's anything in adjacent rooms and move there. */
-
   if (1/*!number(0, 5)*/)
   {
     int move_to_loot = 0;
@@ -1645,9 +1632,7 @@ int wh_guard(P_char ch, P_char victim, int cmd, char *arg)
   if (cmd == CMD_SET_PERIODIC)
     return TRUE;
   if (!victim && IS_FIGHTING(ch) && EVIL_RACE(ch->specials.fighting))
-    return shout_and_hunt(ch, 20,
-                          "&+YCome to my aid! We are being invaded!&n",
-                          NULL, helpers, 0, 0);
+    return shout_and_hunt(ch, 20, "&+YCome to my aid! We are being invaded!&n", NULL, helpers, 0, 0);
   return FALSE;
 }
 
@@ -4161,15 +4146,14 @@ int key_mold(P_obj obj, P_char ch, int cmd, char *args)
   {
     P_obj    corpse;
 
-    corpse = read_object(13520, VIRTUAL);
+    corpse = read_object(VOBJ_WINTERHAVEN_ROT_CORPSE, VIRTUAL);
     if (!corpse)
     {
-      logit(LOG_EXIT, "wh_corpse_decay: unable to load obj #55021");
+      logit(LOG_EXIT, "wh_corpse_decay: unable to load obj #%d.", VOBJ_WINTERHAVEN_ROT_CORPSE);
       raise(SIGSEGV);
     }
     corpse->weight = obj->weight;
-    set_obj_affected(corpse, get_property("timer.decay.corpse.npc", 120),
-                     TAG_OBJ_DECAY, 0);
+    set_obj_affected(corpse, get_property("timer.decay.corpse.npc", 120), TAG_OBJ_DECAY, 0);
 
     if (OBJ_CARRIED(obj))
     {
@@ -4250,7 +4234,7 @@ int dragonnia_heart(P_char ch, P_char pl, int cmd, char *arg)
   {
     P_obj    obj;
 
-    obj = read_object(55082, VIRTUAL);
+    obj = read_object(VOBJ_WINTERHAVEN_HEART_DRAGONNIA, VIRTUAL);
     if (!(obj))
     {
       logit(LOG_EXIT, "winterhaven_object: death object for mob %d doesn't exist",
@@ -4274,23 +4258,21 @@ int dragonnia_heart(P_char ch, P_char pl, int cmd, char *arg)
 
 int dragon_heart_decay(P_obj obj, P_char ch, int cmd, char *args)
 {
-  if (cmd == CMD_SET_PERIODIC)
+
+  if( cmd == CMD_SET_PERIODIC )
     return TRUE;
 
-  if (ch || cmd)
+  if( cmd != CMD_PERIODIC )
     return FALSE;
 
-  if (!obj->value[0]--)
+  if( !obj->value[0]-- )
   {
-    /*
-       make it into a real corpse 
-     */
     P_obj    corpse;
 
-    corpse = read_object(55024, VIRTUAL);
+    corpse = read_object(VOBJ_WINTERHAVEN_ROT_HEART, VIRTUAL);
     if (!corpse)
     {
-      logit(LOG_EXIT, "wh_corpse_decay: unable to load obj #55021");
+      logit(LOG_EXIT, "wh_corpse_decay: unable to load obj #%d.", VOBJ_WINTERHAVEN_ROT_HEART);
       raise(SIGSEGV);
     }
     corpse->weight = obj->weight;
@@ -4317,9 +4299,9 @@ int dragon_heart_decay(P_obj obj, P_char ch, int cmd, char *args)
     }
     else
     {
-      extract_obj(corpse, TRUE);
+      extract_obj(corpse);
     }
-    extract_obj(obj, TRUE);
+    extract_obj(obj, TRUE); // Not an arti, but 'in game.'
     return TRUE;
   }
   return FALSE;
@@ -4416,7 +4398,8 @@ int weapon_vampire(P_obj obj, P_char ch, int cmd, char *arg)
 
 int lancer_gift(P_obj obj, P_char ch, int cmd, char *arg)
 {
-  P_char    vict = NULL;
+  P_char vict = NULL;
+  P_obj  gift;
 
   if( cmd == CMD_SET_PERIODIC )
   {
@@ -4438,9 +4421,13 @@ int lancer_gift(P_obj obj, P_char ch, int cmd, char *arg)
         act("&+WYou open &n$q &+Wand the wrappings fall to the floor.&n", TRUE, ch, obj, vict, TO_CHAR);
         act("$n opens &n$q &+Wand the wrappings fall to the floor.&n", TRUE, ch, obj, vict, TO_ROOM);
 
-        extract_obj(obj, TRUE);
-        obj_to_char(read_object(number(55198, 55203), VIRTUAL), ch);
-        obj_to_char(read_object(number(55198, 55203), VIRTUAL), ch);
+        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
+        gift = read_object(number(55198, 55203), VIRTUAL);
+        obj_to_char(gift, ch);
+        act("You receive $q.", TRUE, ch, obj, vict, TO_CHAR);
+        gift = read_object(number(55198, 55203), VIRTUAL);
+        obj_to_char(gift, ch);
+        act("You receive $q.", TRUE, ch, obj, vict, TO_CHAR);
         return TRUE;
       }
     }

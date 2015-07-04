@@ -311,8 +311,7 @@ void spell_beholder_paralyze(int level, P_char ch, P_char victim, P_obj obj)
   }
 }
 
-void spell_beholder_disintegrate(int level, P_char ch, P_char victim,
-                                 P_obj obj)
+void spell_beholder_disintegrate(int level, P_char ch, P_char victim, P_obj obj)
 {
   int i, dam, gotone = FALSE, save = 2;
   P_obj x;
@@ -380,13 +379,12 @@ void spell_beholder_disintegrate(int level, P_char ch, P_char victim,
 
             if(!IS_ARTIFACT(obj))
             {
-            
               act("$N&n's $q&n turns red hot, disappearing in a puff of smoke!",
                 TRUE, ch, obj, victim, TO_VICT);
 
               if(OBJ_CARRIED(obj))
               {                   /* remove the obj */
-                obj_from_char(obj, TRUE);
+                obj_from_char(obj);
               }
               else if(OBJ_WORN(obj))
               {
@@ -408,7 +406,7 @@ void spell_beholder_disintegrate(int level, P_char ch, P_char victim,
               }
               if(obj)
               {
-                extract_obj(obj, TRUE);
+                extract_obj(obj);
                 obj = NULL;
               }
             }

@@ -96,9 +96,7 @@ void do_auction(P_char ch, char *argument, int dummy)
   room = real_room0(auction[i].room);
   if (!auctioneer || ch->in_room != room || auctioneer->in_room != room)
   {
-    send_to_char
-      ("Are you sure you're in the auction house and the auctioneer is present?\r\n",
-       ch);
+    send_to_char("Are you sure you're in the auction house and the auctioneer is present?\r\n", ch);
     return;
   }
   if (arg1[0] == '\0')
@@ -250,7 +248,7 @@ void do_auction(P_char ch, char *argument, int dummy)
   }
   if (auction[i].item == NULL)
   {
-    obj_from_char(obj, TRUE);
+    obj_from_char(obj, FALSE);
     auction[i].item = obj;
     auction[i].bet = 0;
     auction[i].buyer = NULL;
@@ -261,8 +259,7 @@ void do_auction(P_char ch, char *argument, int dummy)
     mobsay(auctioneer, buf);
     if (auction[i].bet)
     {
-      sprintf(buf, "Minimum bid on this item is %s.",
-              coin_stringv(auction[i].bet));
+      sprintf(buf, "Minimum bid on this item is %s.", coin_stringv(auction[i].bet));
       mobsay(auctioneer, buf);
     }
     return;

@@ -245,56 +245,58 @@ bool auction_resort(P_char ch, char *args)
 {
   if( !IS_TRUSTED(ch) )
     return auction_help(ch, args);
-	
+
   if( !sorter )
   {
-    send_to_char("sorter not initialized.\r\n", ch);
+    send_to_char("Sorter not initialized.\r\n", ch);
     return TRUE;
   }
-	
+
   if( !qry("SELECT id, obj_short, obj_blob_str FROM auctions") )
+  {
     return FALSE;
-	
+  }
+
   MYSQL_RES *res = mysql_store_result(DB);
-	
+
   if( mysql_num_rows(res) < 1 )
   {
     send_to_char("No auctions to resort!\r\n", ch);
     mysql_free_result(res);
     return TRUE;
   }
-	
+
   MYSQL_ROW row;
-	
+
   int count = 0;
   while( row = mysql_fetch_row(res) )
   {
     int auction_id = atoi(row[0]);
     string obj_short(row[1]);
     char *obj_str = row[2];
-				
+
     P_obj tmp_obj = read_one_object(obj_str);
-		
+
     if( !tmp_obj )
       continue;
 
     string keywords = sorter->getSortFlagsString(tmp_obj);
     sprintf(buff, "%s: %s\r\n", obj_short.c_str(), keywords.c_str() );
     send_to_char(buff, ch);
-		
+
     if( keywords.length() > 0 )
     {
       if( !qry("UPDATE auctions SET id_keywords = '%s' WHERE id = '%d'", keywords.c_str(), auction_id) )
         return FALSE;
     }
 
-    extract_obj(tmp_obj, TRUE);
+    extract_obj(tmp_obj);
     count++;
   }
 
   sprintf(buff, "&+W%d items resorted.", count);
   send_to_char(buff, ch);
-	
+
   mysql_free_result(res);
 
   return TRUE;
@@ -304,7 +306,7 @@ bool auction_resort(P_char ch, char *args)
 bool auction_offer(P_char ch, char *args)
 {
   char item_name[MAX_STRING_LENGTH];
-	
+
   half_chop(args, item_name, args);
 
   P_obj tmp_obj = get_obj_in_list_vis(ch, item_name, ch->carrying);
@@ -320,7 +322,7 @@ bool auction_offer(P_char ch, char *args)
     send_to_char("&+WYou can't sell artifacts!\r\n", ch);
     return TRUE;
   }
-	
+
   if( IS_SET(tmp_obj->extra_flags, ITEM_NODROP) )
   {
     send_to_char("&+WYou can't sell that item, it must be &+RCursed&+W!\r\n", ch);
@@ -332,13 +334,13 @@ bool auction_offer(P_char ch, char *args)
     send_to_char("&+WYou can't sell that item.\r\n", ch);
     return TRUE;
   }
-	
+
   if ( tmp_obj->contains )
   {
     send_to_char("&+WYou can only sell containers if they are empty.\r\n", ch);
     return TRUE;
-  }	
-	
+  }
+
   half_chop(args, buff, args);
   int starting_price = 0;
   if( strlen(buff) )
@@ -370,7 +372,7 @@ bool auction_offer(P_char ch, char *args)
   {
     send_to_char("&+WInvalid auction length: please enter 1 to 7 (days).\r\n", ch);
     return TRUE;
-  }	
+  }
 
   half_chop(args, buff, args);
   int auction_quantity = 1;
@@ -398,7 +400,7 @@ bool auction_offer(P_char ch, char *args)
 
   // calculate listing fee price, in copper
   int fee = AUCTION_LISTING_FEE + (int) ( starting_price * AUCTION_START_PRICE_PCT_FEE );
-	
+
   // check for enough money
   if( GET_MONEY(ch) < fee )
   {
@@ -428,11 +430,11 @@ bool auction_offer(P_char ch, char *args)
 
   if( !saved_to_db )
     return FALSE;
-	
+
   logit(LOG_STATUS, "%s put %s up for auction.", ch->player.name, desc_buff);
   sprintf(buff, "&+WYou put &n%s &+Won the market.\r\n", tmp_obj->short_description);
   send_to_char(buff, ch);
-	
+
   // remove money
   SUB_MONEY(ch, fee, 0);
   i = auction_quantity;
@@ -445,7 +447,7 @@ bool auction_offer(P_char ch, char *args)
     // Move to next object.
     temp_obj = temp_obj->next_content;
     // Then extract the object.
-    extract_obj(tmp_obj, TRUE);
+    extract_obj(tmp_obj);
   }
   writeCharacter(ch, 1, ch->in_room);
 
@@ -614,18 +616,16 @@ bool auction_list(P_char ch, char *args)
 bool auction_info(P_char ch, char *args)
 {
   char arg[MAX_STRING_LENGTH];
-	
+
   half_chop(args, arg, args);
-	
+
   int auction_id = atoi(arg);
 
   if( !qry("SELECT seller_name, end_time - unix_timestamp() as secs_remaining, cur_price, buy_price, obj_short, obj_vnum, winning_bidder_pid, winning_bidder_name, obj_blob_str, quantity FROM auctions WHERE id = '%d' and status = 'OPEN'", auction_id) )
     return FALSE;
 
   MYSQL_RES *res = mysql_store_result(DB);
-	
   MYSQL_ROW row = mysql_fetch_row(res);
-		
   if( !row )
   {
     send_to_char("&+WThere is no auction with that id!\r\n", ch);
@@ -661,7 +661,7 @@ bool auction_info(P_char ch, char *args)
 
   sprintf(buff, "&+WSeller: &n%s\r\n", seller_name);
   send_to_char(buff, ch);
-	
+
   sprintf(buff, "&+WTime left: &n%s\r\n", format_time(secs_remaining).c_str() );
   send_to_char(buff, ch);
 
@@ -675,18 +675,18 @@ bool auction_info(P_char ch, char *args)
     sprintf(buff, "&+WHigh bid: &n%s&+W by &n%s\r\n", cur_price_str.c_str(), winning_bidder_name );
     send_to_char(buff, ch);
   }
-	
+
   if( buy_price > 0 )
   {
     sprintf(buff, "&+WBuy-it-now price: &n%s\r\n", buy_price_str.c_str() );
-    send_to_char(buff, ch);		
+    send_to_char(buff, ch);
   }
 
   sprintf(buff, "&+WQuantity:&n %d\r\n", quantity );
   send_to_char(buff, ch);
 
   send_to_char("\r\n", ch);
-	
+
   if( IS_TRUSTED(ch) )
   {
     sprintf(buff, "[&+B%d&n]\r\n", obj_vnum);
@@ -694,7 +694,7 @@ bool auction_info(P_char ch, char *args)
   }
 
   spell_identify(60, ch, NULL, 0, 0, tmp_obj);
-	
+
   if (can_char_use_item(ch, tmp_obj))
   {
     send_to_char("&+WYour race and class is permitted to use this item.\r\n", ch);
@@ -704,7 +704,7 @@ bool auction_info(P_char ch, char *args)
     send_to_char("&=LRYOU ARE UNABLE TO USE THIS ITEM.\r\n", ch);
   }
 
-  extract_obj(tmp_obj, TRUE);
+  extract_obj(tmp_obj);
   return TRUE;
 }
 
@@ -986,7 +986,7 @@ bool auction_pickup(P_char ch, char *args)
 
       if( quantity == -1 || !qry("UPDATE auction_item_pickups SET retrieved = 1 where id = '%d'", id) )
       {
-        extract_obj( tmp_obj, TRUE );
+        extract_obj( tmp_obj );
         continue;
       }
 

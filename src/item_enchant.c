@@ -54,7 +54,6 @@ extern int current_spell_being_cast;
 extern int guild_locations[][TOTALCLASS];
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int hometown[];
-extern int top_of_world;
 extern struct str_app_type str_app[];
 extern struct con_app_type con_app[];
 extern struct time_info_data time_info;
@@ -84,7 +83,7 @@ void spell_enchant(int level, P_char ch, P_char victim, P_obj obj)
       !IS_SET(obj->extra_flags, ITEM_MAGIC) && !(obj->enchant.prepared))
   {
 
-    if ( !(j = (GET_ITEM_TYPE(obj) == ITEM_WEAPON
+    if( IS_ARTIFACT(obj) || !(j = (GET_ITEM_TYPE(obj) == ITEM_WEAPON
       && (GET_CLASS(ch) == CLASS_CONJURER || GET_CLASS(ch) == CLASS_SUMMONER))
       || ( GET_ITEM_TYPE(obj) == ITEM_DRINKCON && GET_CLASS(ch) == CLASS_CLERIC)
       || ( GET_ITEM_TYPE(obj) == ITEM_NOTE
@@ -135,13 +134,13 @@ void spell_enchant_weapon(int level, P_char ch, P_char victim, P_obj obj)
 {
   int      weekday, plus_six, six_possible;
 
-  if (!((MAX_OBJ_AFFECT >= 2) && obj && ch))
+  if( !((MAX_OBJ_AFFECT >= 2) && obj && ch) )
   {
     logit(LOG_EXIT, "assert: bogus parms");
     raise(SIGSEGV);
   }
-  if ((GET_ITEM_TYPE(obj) == ITEM_WEAPON) && (obj->enchant.prepared) &&
-      IS_SET(obj->extra_flags, ITEM_MAGIC))
+
+  if( (GET_ITEM_TYPE(obj) == ITEM_WEAPON) && (obj->enchant.prepared) && IS_SET(obj->extra_flags, ITEM_MAGIC) )
   {
 
     obj->affected[0].location = APPLY_HITROLL;
@@ -165,8 +164,7 @@ void spell_enchant_weapon(int level, P_char ch, P_char victim, P_obj obj)
     {
       act("&+R$p cannot hold this much magic, and explodes.", FALSE, ch,
           obj, 0, TO_CHAR);
-      act("&+R$p, held by $n, &+Rcannot hold this much magic, and \
-	explodes.", FALSE, ch, obj, 0, TO_ROOM);
+      act("&+R$p, held by $n, &+Rcannot hold this much magic, and explodes.", FALSE, ch, obj, 0, TO_ROOM);
       obj_from_char(obj);
       extract_obj(obj);
       die(ch, ch, 0);
@@ -206,8 +204,7 @@ void cast_spell_to_object(int level, P_char ch, P_obj obj, int spell)
 
     if (!right_time && (GET_ITEM_TYPE(obj) == ITEM_WEAPON))
     {
-      send_to_char("The forces required to cast this spell have \
-not reached sufficient levels. \r\n", ch);
+      send_to_char("The forces required to cast this spell have not reached sufficient levels. \r\n", ch);
       return;
     }
 
@@ -241,8 +238,7 @@ not reached sufficient levels. \r\n", ch);
     {
       act("&+R$p cannot hold this much magic, and explodes.", FALSE, ch,
           obj, 0, TO_CHAR);
-      act("&+R$p, held by $n, &+Rcannot hold this much magic, and \
-	explodes.", FALSE, ch, obj, 0, TO_ROOM);
+      act("&+R$p, held by $n, &+Rcannot hold this much magic, and explodes.", FALSE, ch, obj, 0, TO_ROOM);
       obj_from_char(obj);
       extract_obj(obj);
       die(ch, ch, 0);
@@ -594,6 +590,9 @@ int max_magic(P_obj obj)
 /* which spells can be cast on which items */
 int can_cast_on_object(P_obj obj, int spell)
 {
+  if( IS_ARTIFACT(obj) )
+    return 0;
+
   switch (GET_ITEM_TYPE(obj))
   {
   case ITEM_WEAPON:

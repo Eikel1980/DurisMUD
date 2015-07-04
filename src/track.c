@@ -30,7 +30,7 @@ extern const char *dirs[];
 extern const char *short_dirs[];
 extern const struct race_names race_names_table[];
 extern const int track_limit[];
-extern int top_of_world;
+extern const int top_of_world;
 extern struct zone_data *zone_table;
 extern struct sector_data *sector_table;
 
@@ -568,7 +568,7 @@ void add_track(P_char ch, int dir)
         // Remove one set of tracks.
         if (obj->R_num == real_object(VNUM_TRACKS))
       	{
-          extract_obj(obj, TRUE);
+          extract_obj(obj, TRUE); // Not an arti, but 'in game.'
   	      obj = NULL;
 	        break;
         }
@@ -617,7 +617,7 @@ void add_track(P_char ch, int dir)
       obj_to_room(track, real_room(ch->specials.was_in_room));
     else
     {
-      extract_obj(track, TRUE);
+      extract_obj(track, TRUE); // Not an arti, but 'in game.'
       track = NULL;
     }
   }

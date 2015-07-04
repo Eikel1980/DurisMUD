@@ -30,7 +30,6 @@ extern P_room world;
 extern char *coin_names[];
 extern const struct stat_data stat_factor[];
 extern int pulse;
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct time_info_data time_info;
 extern struct zone_data *zone;

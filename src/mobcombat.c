@@ -44,7 +44,6 @@ extern int MobSpellIndex[MAX_SKILLS];
 extern int equipment_pos_table[CUR_MAX_WEAR][3];
 extern int no_specials;
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
-extern int top_of_world;
 extern const char rev_dir[];
 extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;

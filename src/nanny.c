@@ -39,7 +39,7 @@
 
 /* external variables */
 
-extern int top_of_world;
+extern const int top_of_world;
 extern P_ereg email_reg_table;
 extern int mini_mode;
 // extern FILE *help_fl;		// commented by weebler
@@ -2957,11 +2957,15 @@ void perform_eq_wipe(P_char ch)
 
   // actually remove their eq!
   int i;
-  for (i = 0; i < MAX_WEAR; i++)
-    if (ch->equipment[i])
-      extract_obj(unequip_char(ch, i), TRUE);
-
   P_obj obj, obj2;
+
+  for (i = 0; i < MAX_WEAR; i++)
+  {
+    if (ch->equipment[i])
+    {
+      extract_obj(unequip_char(ch, i), TRUE);
+    }
+  }
   for (obj = ch->carrying; obj; obj = obj2)
   {
     obj2 = obj->next_content;

@@ -31,7 +31,7 @@ extern const struct str_app_type str_app[52];
 extern P_room world;
 extern P_char combat_list;
 extern P_char combat_next_ch;
-extern int top_of_world;
+extern const int top_of_world;
 extern int body_dist_table[];
 extern bodyLocInfo *physBodyLocTables[];
 extern P_index obj_index;
@@ -858,7 +858,7 @@ int applyDamagetoObject(P_char ch, P_obj object, const unsigned int dam)
     weap_type;
 /*  char damstrn[64], actstrn[256]; */
 
-  if (!object || !dam)
+  if( !object || !dam || IS_ARTIFACT(object) )
     return FALSE;
 
   craft = BOUNDED(OBJCRAFT_LOWEST, object->craftsmanship, OBJCRAFT_HIGHEST);

@@ -39,7 +39,7 @@ extern struct zone_data *zone;
 extern struct zone_data *zone_table;
 extern struct sector_data *sector_table;
 extern P_desc descriptor_list;
-extern int top_of_world;
+extern const int top_of_world;
 extern P_index obj_index;
 
 int real_object( const int virt );
@@ -65,7 +65,7 @@ void event_another_hour(P_char ch, P_char victim, P_obj obj, void *data)
      {
         if( obj_index[flower->R_num].virtual_number == 41004 )
         {
-           extract_obj( flower, TRUE );
+           extract_obj( flower );
            flower = read_object( real_object( 41005 ), REAL );
            obj_to_room( flower, flowerroom );
            break;
@@ -80,7 +80,7 @@ void event_another_hour(P_char ch, P_char victim, P_obj obj, void *data)
      {
         if( obj_index[flower->R_num].virtual_number == 41005 )
         {
-           extract_obj( flower, TRUE );
+           extract_obj( flower );
            flower = read_object( real_object( 41004 ), REAL );
            obj_to_room( flower, flowerroom );
            break;

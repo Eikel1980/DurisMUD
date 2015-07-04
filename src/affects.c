@@ -61,7 +61,6 @@ extern char *coin_abbrev[];
 extern const char *dirs[];
 extern const struct stat_data stat_factor[];
 extern const int rev_dir[];
-extern int top_of_world;
 extern int pulse;
 extern struct con_app_type con_app[];
 extern struct dex_app_type dex_app[];
@@ -3132,7 +3131,7 @@ bool make_wet(P_char ch, int duration)
 void poo(P_char ch)
 {
   P_obj    load;
-  
+
   return; // Disabling.
 
   if (IS_PC(ch) && (IS_CENTAUR(ch) || IS_MINOTAUR(ch) || IS_GOBLIN(ch)) &&
@@ -3153,19 +3152,16 @@ void poo(P_char ch)
           obj_to_room(load, real_room(ch->specials.was_in_room));
         else
         {
-          extract_obj(load, TRUE);
+          extract_obj(load);
           load = NULL;
         }
       }
       else
       {
         obj_to_room(load, ch->in_room);
-        send_to_char
-          ("&+yYou can't resist the urge anymore - a load drops from between your rear legs.\n",
-           ch);
-        act
-          ("&+yA load of dung suddenly drops from between $n&n&+y's rear legs, landing with a soft plop.",
-           TRUE, ch, 0, 0, TO_ROOM);
+        send_to_char("&+yYou can't resist the urge anymore - a load drops from between your rear legs.\n", ch);
+        act("&+yA load of dung suddenly drops from between $n&n&+y's rear legs, landing with a soft plop.",
+          TRUE, ch, 0, 0, TO_ROOM);
       }
     }
     else if (IS_MINOTAUR(ch))
@@ -3183,26 +3179,23 @@ void poo(P_char ch)
           obj_to_room(load, real_room(ch->specials.was_in_room));
         else
         {
-          extract_obj(load, TRUE);
+          extract_obj(load);
           load = NULL;
         }
       }
       else
       {
         obj_to_room(load, ch->in_room);
-        send_to_char
-          ("&+yYou can't resist the urge anymore - a load drops from between your legs.\n",
-           ch);
-        act
-          ("&+yA load of dung suddenly drops from between $n&n&+y's legs, landing with a soft plop.",
-           TRUE, ch, 0, 0, TO_ROOM);
+        send_to_char("&+yYou can't resist the urge anymore - a load drops from between your legs.\n", ch);
+        act("&+yA load of dung suddenly drops from between $n&n&+y's legs, landing with a soft plop.",
+          TRUE, ch, 0, 0, TO_ROOM);
       }
     }
     else if (IS_GOBLIN(ch) && !number(0, 29))
     {
       load->str_mask = (STRUNG_DESC1 | STRUNG_DESC2);
 
-      load->description = str_dup("&+ySome dry boobs has been left here.&n");
+      load->description = str_dup("&+ySome dry feces has been left here.&n");
       load->short_description = str_dup("&+ya dry goblin poo-poo&n");
 
       if (ch->in_room == NOWHERE)
@@ -3211,17 +3204,15 @@ void poo(P_char ch)
           obj_to_room(load, real_room(ch->specials.was_in_room));
         else
         {
-          extract_obj(load, TRUE);
+          extract_obj(load);
           load = NULL;
         }
       }
       else
       {
         obj_to_room(load, ch->in_room);
-        send_to_char
-          ("&+yMmmm, much better. Don't forget to clean it up now.\n", ch);
-        act
-          ("&+y$n screws $s face in concentration, and some small tiny boobs drop from between his legs.",
+        send_to_char("&+yMmmm, much better. Don't forget to clean it up now.\n", ch);
+        act("&+y$n screws $s face in concentration, and some small tiny feces drop from between his legs.",
            TRUE, ch, 0, 0, TO_ROOM);
       }
     }

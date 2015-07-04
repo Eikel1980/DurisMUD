@@ -1,12 +1,22 @@
 #ifndef _TRADESKILL_H_
 
-#define MINE_VNUM 193
-#define GEMMINE_VNUM 434
-#define HAMMER_VNUM 252
-#define PICK_VNUM 253
-#define POLE_VNUM 336
-#define PARCHMENT_VNUM 251
-#define MAX_NEEDED_ORE 5
+#define REG_FAERIE_BAG_VNUM     400217
+#define RARE_FAERIE_BAG_VNUM    400235
+#define EXCEPT_FAERIE_BAG_VNUM  400233
+
+#define TURKEY_INNARDS_VNUM     400232
+#define TURKEY_WING_CAPE_VNUM   400237
+#define TURKEY_FOOD_VNUM        400236
+
+#define HAMMER_VNUM     252
+#define PICK_VNUM       253
+#define POLE_VNUM       336
+#define PARCHMENT_VNUM  251
+#define MAX_NEEDED_ORE  5
+
+#define LOWEST_MAT_VNUM   400000
+#define HIGHEST_MAT_VNUM  400210
+#define MAG_ESSENCE_VNUM  400211
 
 #define LOWEST_ORE_VNUM 400260
 
@@ -114,26 +124,26 @@ struct forge_item {
   char *keywords;
   char *long_desc;
   char *short_desc;
-  int   ore_needed[5];  
-  
+  int   ore_needed[5];
+
   int   loc0;
   int   min0;
   int   max0;
-  
+
   int   loc1;
   int   min1;
   int   max1;
 
   int skill_min;
-  int how_rare;  
+  int how_rare;
 
   int allow_anti;
   unsigned int classes;
-  unsigned int wear_flags; 
+  unsigned int wear_flags;
   unsigned int aff1;
   unsigned int aff2;
   unsigned int aff3;
-  unsigned int aff4;  
+  unsigned int aff4;
 };
 
 void mine_check(P_char);

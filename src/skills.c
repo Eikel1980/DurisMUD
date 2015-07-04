@@ -5255,6 +5255,8 @@ void create_tags()
 
   TAG_CREATE("invisibility from object", TAG_PERMINVIS );
   TAG_CREATE("establish camp", TAG_CAMP );
+
+  TAG_CREATE("old newbie zone tag", TAG_LIFESTREAMNEWBIE );
 }
 
 #ifdef SKILLPOINTS

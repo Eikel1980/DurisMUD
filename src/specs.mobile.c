@@ -34,6 +34,7 @@
 #include "nexus_stones.h"
 #include "epic.h"
 #include "necromancy.h"
+#include "vnum.obj.h"
 
 /*
  * external variables
@@ -44,6 +45,7 @@ extern P_desc descriptor_list;
 extern P_index mob_index;
 extern P_index obj_index;
 extern P_room world;
+extern const int top_of_world;
 extern P_obj justice_items_list;
 extern char *coin_names[];
 extern const char *command[];
@@ -52,7 +54,6 @@ extern const char rev_dir[];
 extern const struct stat_data stat_factor[];
 extern int planes_room_num[];
 extern int racial_base[];
-extern int top_of_world;
 extern int top_of_zone_table;
 extern struct command_info cmd_info[MAX_CMD_LIST];
 extern struct str_app_type str_app[];
@@ -152,20 +153,19 @@ int harpy_evil(P_char ch, P_char pl, int cmd, char *arg)
       send_to_char("You do not seem to have anything like that.\r\n", pl);
       return TRUE;
     }
-    if (obj->R_num == real_object(31112))
+    if( GET_OBJ_VNUM(obj) == VOBJ_HARPY_CHOOSE_FEATHER )
     {
       act("$n gives $p to $N.", 1, pl, obj, ch, TO_NOTVICT);
       act("$n gives you $p.", 0, pl, obj, ch, TO_VICT);
       send_to_char("Ok.\r\n", pl);
 
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti.
 
       GET_RACE(pl) = RACE_HARPY;
       GET_RACEWAR(pl) = RACEWAR_EVIL;
       GET_ALIGNMENT(pl) = -1000;
 
-      mobsay(ch,
-             "You have chosen the path of the darkness.  Now go slay some innocents.");
+      mobsay(ch, "You have chosen the path of the darkness.  Now go slay some innocents.");
 
       return TRUE;
     }
@@ -202,20 +202,19 @@ int harpy_good(P_char ch, P_char pl, int cmd, char *arg)
       send_to_char("You do not seem to have anything like that.\r\n", pl);
       return TRUE;
     }
-    if (obj->R_num == real_object(31111))
+    if( GET_OBJ_VNUM(obj) == VOBJ_HARPY_CHOOSE_FEATHER )
     {
       act("$n gives $p to $N.", 1, pl, obj, ch, TO_NOTVICT);
       act("$n gives you $p.", 0, pl, obj, ch, TO_VICT);
       send_to_char("Ok.\r\n", pl);
 
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Not an arti.
 
       GET_RACE(pl) = RACE_HARPY;
       GET_RACEWAR(pl) = RACEWAR_GOOD;
       GET_ALIGNMENT(pl) = 1000;
 
-      mobsay(ch,
-             "Always protect the innocent and be a beacon for justice and good.");
+      mobsay(ch, "Always protect the innocent and be a beacon for justice and good.");
       return TRUE;
     }
   }
@@ -291,7 +290,7 @@ int gargoyle_master(P_char ch, P_char pl, int cmd, char *arg)
                                    next_obj = obj->next_content;
                                    if ((obj->type == ITEM_CORPSE) && IS_SET(obj->value[1], NPC_CORPSE))
                                    if(strstr(obj->name, "harpy"))
-                                   extract_obj(obj, TRUE);
+                                   extract_obj(obj, TRUE); // Not an arti, but may contain one and is 'in game.'
                                    }
 
                                    send_to_char("&+LThe monsterous gargoyle grins evilly, then with lightning speed plunges his clawed hands into your chest.\n", pl);
@@ -2493,25 +2492,17 @@ int devour(P_char ch, P_char pl, int cmd, char *arg)
 {
   P_obj    i, temp, next_obj;
 
-  /*
-   * check for periodic event calls
-   */
+  // Check for periodic event calls
   if (cmd == CMD_SET_PERIODIC)
     return TRUE;
 
-  if (cmd || !AWAKE(ch))
-    return (FALSE);
+  if( cmd != CMD_PERIODIC || !AWAKE(ch) )
+    return FALSE;
 
   for (i = world[ch->in_room].contents; i; i = i->next_content)
   {
     if ((GET_ITEM_TYPE(i) == ITEM_FOOD) || (GET_ITEM_TYPE(i) == ITEM_CORPSE))
     {
-
-      if (!(i))
-      {
-        logit(LOG_EXIT, "assert: error in devour() proc");
-        raise(SIGSEGV);
-      }
       if (GET_ITEM_TYPE(i) == ITEM_CORPSE)
         for (temp = i->contains; temp; temp = next_obj)
         {
@@ -2521,11 +2512,10 @@ int devour(P_char ch, P_char pl, int cmd, char *arg)
         }
       if (IS_SET(i->value[1], PC_CORPSE))
       {
-        logit(LOG_CORPSE, "%s devoured in room %d.", i->short_description,
-              world[i->loc.room].number);
+        logit(LOG_CORPSE, "%s devoured in room %d.", i->short_description, world[i->loc.room].number);
       }
       act("$n savagely devours $o.", FALSE, ch, i, 0, TO_ROOM);
-      extract_obj(i, TRUE);
+      extract_obj(i, TRUE); // Just food/empty corpse, but 'in game.'
       return (TRUE);
     }
   }
@@ -3126,12 +3116,10 @@ int ticket_taker(P_char ch, P_char pl, int cmd, char *arg)
             ticket_info[(int) i].item_id)
         {
           found = 1;
-          act("$N tears up the ticket in your hand.", FALSE, pl, 0, ch,
-              TO_CHAR);
-          act("$N tears up the ticket in $n's hand.", FALSE, pl, 0, ch,
-              TO_ROOM);
-          obj_from_char(obj, TRUE);
-          extract_obj(obj, TRUE);
+          act("$N tears up the ticket in your hand.", FALSE, pl, 0, ch, TO_CHAR);
+          act("$N tears up the ticket in $n's hand.", FALSE, pl, 0, ch, TO_ROOM);
+          obj_from_char(obj);
+          extract_obj(obj, TRUE); // Not an arti, but 'in game.'
           obj = NULL;
           break;
         }
@@ -3145,8 +3133,8 @@ int ticket_taker(P_char ch, P_char pl, int cmd, char *arg)
           {
             found = 1;
             act("$n tears up the ticket.", FALSE, ch, 0, 0, TO_ROOM);
-            obj_from_char(obj, TRUE);
-            extract_obj(obj, TRUE);
+            obj_from_char(obj);
+            extract_obj(obj, TRUE); // Not an arti, but 'in game.'
             break;
           }
         }
@@ -3502,7 +3490,7 @@ int xexos(P_char ch, P_char pl, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, tempchar);
     }
 
@@ -3625,7 +3613,7 @@ int agthrodos(P_char ch, P_char pl, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, tempchar);
     }
 
@@ -5532,7 +5520,7 @@ int blob(P_char ch, P_char pl, int cmd, char *arg)
   /*
    * Check for takeable item to absorb.
    */
-  if ((i != NULL) && (IS_SET(i->wear_flags, ITEM_TAKE)))
+  if ((i != NULL) && (IS_SET(i->wear_flags, ITEM_TAKE)) && !IS_ARTIFACT(i) )
   {
     act("$n absorbs $p with a squish.", FALSE, ch, i, 0, TO_ROOM);
     obj_from_room(i);
@@ -5571,10 +5559,8 @@ int blob(P_char ch, P_char pl, int cmd, char *arg)
                                  * for later digestion
                                  */
       act("$n digests $p.", FALSE, ch, i, 0, TO_ROOM);
-      obj_from_char(i, TRUE);
-      extract_obj(i, TRUE);     /*
-                                 * digestion
-                                 */
+      obj_from_char(i);
+      extract_obj(i, TRUE); // Shouldn't be an arti, but 'in game.'
       return (TRUE);
     }
     return (FALSE);
@@ -5794,105 +5780,71 @@ int boulder_pusher(P_char ch, P_char t_ch, int cmd, char *arg)
 int stone_crumble(P_char ch, P_char pl, int cmd, char *arg)
 {
   P_obj    pile, money, obj, next_obj;
-  int      pos;
+  int      pos, room;
 
-  /*
-   * check for periodic event calls
-   */
-  if (cmd == CMD_SET_PERIODIC)
-    return (FALSE);
+  if( cmd == CMD_SET_PERIODIC )
+    return FALSE;
 
-  if (!ch || IS_PC(ch))
-    return (FALSE);
+  if( cmd != CMD_DEATH || !ch || IS_PC(ch) )
+  {
+    return FALSE;
+  }
 
-  if (cmd == CMD_DEATH)
-  {                             /*
-                                 * spec die
-                                 */
-    pile = read_object(1438, VIRTUAL);
-    if (!pile)
+  // Where to put pile.
+  room = (ch->in_room >= 0 && ch->in_room <= top_of_world) ? ch->in_room : NOWHERE;
+  if( room == NOWHERE )
+  {
+    room = real_room(ch->specials.was_in_room);
+  }
+  // If we couldn't find a spot, just let the regular death code handle things.
+  if( room == NOWHERE )
+  {
+    return FALSE;
+  }
+
+  if( !(pile = read_object(VOBJ_KOBOLD_DEATH_STONEPILE, VIRTUAL)) )
+  {
+    logit(LOG_OBJ, "stone_crumble: Could not load stone pile.");
+    return FALSE;
+  }
+
+  if( pile->type != ITEM_CONTAINER )
+  {
+    logit(LOG_OBJ, "stone_crumble: Object %d not type ITEM_CONTAINER!! Aborted.", VOBJ_KOBOLD_DEATH_STONEPILE);
+    return FALSE;
+  }
+
+  // Transfer inventory to pile
+  for (obj = ch->carrying; obj; obj = next_obj)
+  {
+    next_obj = obj->next_content;
+    obj_from_char(obj);
+    obj_to_obj(obj, pile);
+  }
+
+  // Transfer equipment to pile
+  for (pos = 0; pos < MAX_WEAR; pos++)
+  {
+    if (ch->equipment[pos])
     {
-      logit(LOG_EXIT, "assert: stone_crumble proc");
-      raise(SIGSEGV);
-    }
-    if (pile->type == ITEM_CONTAINER)
-    {
-
-      /*
-       * transfer inventory to pile
-       */
-      for (obj = ch->carrying; obj; obj = next_obj)
-      {
-        next_obj = obj->next_content;
-        obj_from_char(obj, TRUE);
-        obj_to_obj(obj, pile);
-      }
-
-      /*
-       * transfer equipment to pile
-       */
-      for (pos = 0; pos < MAX_WEAR; pos++)
-      {
-        if (ch->equipment[pos])
-        {
-          obj_to_obj(unequip_char(ch, pos), pile);
-        }
-      }
-
-      /*
-       * transfer money
-       */
-      if (GET_MONEY(ch) > 0)
-      {
-        money = create_money(GET_COPPER(ch), GET_SILVER(ch),
-                             GET_GOLD(ch), GET_PLATINUM(ch));
-        obj_to_obj(money, pile);
-      }
-      /*
-       * stick object in same room unless something's weird
-       */
-      if (ch->in_room == NOWHERE)
-      {
-        if (real_room(ch->specials.was_in_room) != NOWHERE)
-        {
-          obj_to_room(pile, real_room(ch->specials.was_in_room));
-        }
-        else
-        {
-          extract_obj(pile, TRUE);      /*
-                                         * no good place to put it
-                                         */
-          pile = NULL;
-          return (FALSE);
-        }
-      }
-      else
-      {
-        obj_to_room(pile, ch->in_room);
-      }
-
-      /*
-       * clue players in
-       */
-      act("$n stops fighting, and begins to shake.\r\n"
-          "$n silently crumbles into $p... a cloud of dust rises.",
-          TRUE, ch, pile, 0, TO_ROOM);
-      return (FALSE);
-
-    }
-    else
-    {
-      logit(LOG_OBJ,
-            "Object 1438 not CONTAINER for stone_crumble()!! Aborted.");
-      return (FALSE);
+      obj_to_obj(unequip_char(ch, pos), pile);
     }
   }
-  else
-  {                             /*
-                                 * was from some command
-                                 */
-    return (FALSE);
+
+  // Transfer money
+  if (GET_MONEY(ch) > 0)
+  {
+    money = create_money(GET_COPPER(ch), GET_SILVER(ch), GET_GOLD(ch), GET_PLATINUM(ch));
+    obj_to_obj(money, pile);
   }
+
+  obj_to_room(pile, room);
+
+  // Clue players in
+  act("$n stops fighting, and begins to shake.\r\n"
+  "$n silently crumbles into $p... a cloud of dust rises.", TRUE, ch, pile, 0, TO_ROOM);
+  return TRUE;
+
 }
 
 #define GUARDIAN_HELPER_LIMIT    30
@@ -5995,7 +5947,7 @@ int bahamut(P_char ch, P_char pl, int cmd, char *arg)
     for (t_obj = ch->carrying; t_obj; t_obj = next)
     {
       next = t_obj->next_content;
-      obj_from_char(t_obj, FALSE);
+      obj_from_char(t_obj);
       obj_to_room(t_obj, ch->in_room);
     }
     
@@ -9047,7 +8999,7 @@ int ice_wolf(P_char ch, P_char pl, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, tempchar);      /*
                                          * transfer any eq and inv
                                          */
@@ -9116,7 +9068,7 @@ int ice_wolf(P_char ch, P_char pl, int cmd, char *arg)
         for (item = i->carrying; item; item = next_item)
         {
           next_item = item->next_content;
-          obj_from_char(item, TRUE);
+          obj_from_char(item);
           obj_to_char(item, tempchar2);
         }
         for (pos = 0; pos < MAX_WEAR; pos++)
@@ -9197,7 +9149,7 @@ int ice_malice(P_char ch, P_char pl, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, vapor); /*
                                  * transfer any eq and inv
                                  */
@@ -11129,27 +11081,25 @@ int claw_cavern_drow_mage(P_char ch, P_char pl, int cmd, char *arg)
       return TRUE;
     }
 
-    if (obj->R_num == real_object(80733))
+    if( GET_OBJ_VNUM(obj) == VOBJ_CLWCVRN_RAINBOW_KEY )
     {
       act("$n gives $p to $N.", 1, pl, obj, ch, TO_NOTVICT);
       act("$n gives you $p.", 0, pl, obj, ch, TO_VICT);
       send_to_char("Ok.\r\n", pl);
 
-      obj_from_char(obj, TRUE);
-      extract_obj(obj, TRUE);
+      obj_from_char(obj);
+      extract_obj(obj, TRUE); // Not an arti, but 'in game.'
 
       mobsay(ch, "Yes!  Now those fools shall bow to their true master!");
       do_action(ch, 0, CMD_CACKLE);
       act("The mage begins a complex incantation and the key begins to glow.",
           TRUE, ch, 0, 0, TO_ROOM);
-      act
-        ("$n screams as the walls begin to hum at a high pitch and the key starts to shiver.",
+      act("$n screams as the walls begin to hum at a high pitch and the key starts to shiver.",
          TRUE, ch, 0, 0, TO_ROOM);
-      act
-        ("The crystal key shakes and glows, finally exploding in a burst of searing light.",
+      act("The crystal key shakes and glows, finally exploding in a burst of searing light.",
          TRUE, ch, 0, 0, TO_ROOM);
 
-      obj = read_object(80734, VIRTUAL);
+      obj = read_object(VOBJ_CLWCVRN_RAINBOW_SHARDS, VIRTUAL);
       if (!obj)
         mobsay(ch, "Oh damn, there is a bug in the proc!  Tell a god!");
       else
@@ -11695,74 +11645,49 @@ int newbie_quest(P_char ch, P_char pl, int cmd, char *arg)
 
 }
 
+// From The Plains of Life - newbie zone.
 int newbie_paladin(P_char ch, P_char pl, int cmd, char *arg)
 {
-  int      found;
-  P_char   tempch;
-  P_obj    tempobj, next_obj;
-  P_obj    tnote;
-  int      r_room, rand;
-  char     Gbuf1[MAX_STRING_LENGTH];
-  char     Gbuf2[MAX_STRING_LENGTH];
+  char     arg1[MAX_STRING_LENGTH];
+  char     arg2[MAX_STRING_LENGTH];
+  P_obj    sword;
 
-/*
- * check for periodic event calls
- */
+  if( cmd != CMD_ASK || !IS_ALIVE(ch) || !IS_ALIVE(pl) || !arg )
+  {
+    return FALSE;
+  }
 
-  if (cmd == CMD_SET_PERIODIC)
+  arg = one_argument(arg, arg1);
+  arg = one_argument(arg, arg2);
+
+  // If the first argument doesn't refer to the paladin, or the second arg isn't racewar and isn't racewars.
+  if( !(get_char_room_vis(pl, arg1) == ch)
+    || (strcmp(arg2, "racewar") && strcmp(arg2, "racewars")) )
+  {
+    return FALSE;
+  }
+
+  if( !affected_by_spell(pl, TAG_LIFESTREAMNEWBIE) )
+  {
+    mobsay(ch, "Go go in peace!");
     return TRUE;
-
-  if (!ch || !cmd || !arg)
-    return FALSE;
-//  arg = one_argument(arg, Gbuf1);
-  //arg = one_argument(arg, Gbuf2);
-
-
-  if (arg && cmd == CMD_ASK)
-  {
-    if (!isname(arg, "paladin racewar") && !isname(arg, "paladin racewars"))
-      return FALSE;
-
-
-    found = FALSE;
-
-    if (get_obj_in_list("anoteyoushouldnotknowabout", pl->carrying))
-    {
-      mobsay(ch, "&+bOgres&n, &+mDrow Elfs&n and &+gTrolls&n must die!&n");
-      mobsay(ch,
-             "Many evils died to this sword, it does me no good now, use it well.");
-      mobsay(ch, "TYPE \"HELP RACEWAR\" for more information");
-      tempobj = get_obj_in_list("anoteyoushouldnotknowabout", pl->carrying);
-      extract_obj(tempobj, TRUE);
-      tempobj = NULL;
-      tempobj = read_object(22804, VIRTUAL);
-
-      act("$n gives $q to $N!", TRUE, ch, tempobj, pl, TO_NOTVICT);
-      act("$n gives you $q ", TRUE, ch, tempobj, pl, TO_VICT);
-      load_obj_to_newbies(pl);
-      obj_to_char(tempobj, pl);
-      mobsay(ch,
-             "Here take this also, some items crafted by slaves in Bloodstone, maybe they will help you.");
-      act("$n gives a lot of stuff to $N!", TRUE, ch, tempobj, pl,
-          TO_NOTVICT);
-      act("$n gives you a lot of stuff.", TRUE, ch, tempobj, pl, TO_VICT);
-      return TRUE;
-    }
-    else
-    {
-      mobsay(ch, "Go go in peace!");
-      return TRUE;
-    }
-
-
-
   }
-  else
-  {
-    return FALSE;
-  }
+  affect_from_char(pl, TAG_LIFESTREAMNEWBIE);
 
+  mobsay(ch, "&+bOgres&n, &+mDrow Elfs&n and &+gTrolls&n must die!&n");
+  mobsay(ch, "Many evils died to this sword, it does me no good now, use it well.");
+  mobsay(ch, "TYPE \"HELP RACEWAR\" for more information");
 
+  sword = read_object(VOBJ_NEWBIE2_SWORD_BLESSED, VIRTUAL);
+  act("$n gives $q to $N!", TRUE, ch, sword, pl, TO_NOTVICT);
+  act("$n gives you $q!", TRUE, ch, sword, pl, TO_VICT);
+  obj_to_char(sword, pl);
+
+  mobsay(ch, "Here take this also, some items crafted by slaves in Bloodstone, maybe they will help you.");
+  act("$n gives a lot of stuff to $N!", TRUE, ch, NULL, pl, TO_NOTVICT);
+  act("$n gives you a lot of stuff.", TRUE, ch, NULL, pl, TO_VICT);
+  load_obj_to_newbies(pl);
+  return TRUE;
 }
 
 
@@ -11829,7 +11754,7 @@ int Malevolence(P_char ch, P_char pl, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, vapor); /*
                                  * transfer any eq and inv
                                  */
@@ -12704,7 +12629,7 @@ int shabo_butler(P_char ch, P_char pl, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, tempchar);      /*
                                          * transfer any eq and inv
                                          */
@@ -12772,7 +12697,7 @@ int shabo_butler(P_char ch, P_char pl, int cmd, char *arg)
         for (item = i->carrying; item; item = next_item)
         {
           next_item = item->next_content;
-          obj_from_char(item, TRUE);
+          obj_from_char(item);
           obj_to_char(item, tempchar2);
         }
         for (pos = 0; pos < MAX_WEAR; pos++)
@@ -13037,19 +12962,19 @@ int shabo_petre(P_char ch, P_char pl, int cmd, char *arg)
           0, tempchar2, 0, 0, TO_ROOM);
 
         char_to_room(tempchar2, i->in_room, -2);
-        
+
         if(!IS_SET(tempchar2->specials.act, ACT_HUNTER))
         {
           SET_BIT(tempchar2->specials.act, ACT_HUNTER);
         }
-        
+
         for (item = i->carrying; item; item = next_item)
         {
           next_item = item->next_content;
-          obj_from_char(item, TRUE);
+          obj_from_char(item);
           obj_to_char(item, tempchar2);
         }
-        
+
         for (pos = 0; pos < MAX_WEAR; pos++)
         {
           if (i->equipment[pos] != NULL)
@@ -14144,7 +14069,7 @@ int shabo_palle(P_char ch, P_char vict, int cmd, char *arg)
     for (item = ch->carrying; item; item = next_item)
     {
       next_item = item->next_content;
-      obj_from_char(item, TRUE);
+      obj_from_char(item);
       obj_to_char(item, tempchar2);
     }
     for (pos = 0; pos < MAX_WEAR; pos++)
@@ -14519,7 +14444,7 @@ int necro_dracolich(P_char ch, P_char pl, int cmd, char *arg)
     for (t_obj = ch->carrying; t_obj; t_obj = next)
     {
       next = t_obj->next_content;
-      obj_from_char(t_obj, FALSE);
+      obj_from_char(t_obj);
       obj_to_room(t_obj, ch->in_room);
     }
     for (i = 0; i < MAX_WEAR; i++)

@@ -71,7 +71,6 @@ extern const char *player_law_flags[];
 extern const char *player_prompt[];
 extern flagDef weapon_types[];
 extern const char *weekdays[];
-extern const char *where[];
 extern const int rev_dir[];
 extern const long boot_time;
 extern const struct stat_data stat_factor[];
@@ -91,7 +90,6 @@ extern int top_of_helpt;
 extern int top_of_infot;
 extern int top_of_mobt;
 extern int top_of_objt;
-extern int top_of_world;
 extern int top_of_zone_table;
 extern int used_descs;
 extern struct agi_app_type agi_app[];
@@ -830,8 +828,7 @@ int quest_buy_map(P_char ch)
 }
 
 
-//return number to a zone.
-
+// return vnum for item from zone.
 int getItemFromZone(int zone)
 {
   char     buf[MAX_STRING_LENGTH], buff[MAX_STRING_LENGTH],
@@ -852,8 +849,6 @@ int getItemFromZone(int zone)
     if ((obj_index[i].virtual_number >= world[z_num->real_bottom].number) &&
         (obj_index[i].virtual_number <= world[z_num->real_top].number))
     {
-
-
       /*
        * easier to just load one, and free it, than load only
        * ones that aren't already in game.

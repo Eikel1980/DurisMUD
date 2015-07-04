@@ -949,7 +949,7 @@ void ctf_delete_flag(int id)
     send_to_char_f(ch, "Suddenly the %s &ndissapears from you posession!\r\n", ctfdata[id].obj->short_description);
   }
 
-  extract_obj(ctfdata[id].obj, TRUE);
+  extract_obj(ctfdata[id].obj);
   ctfdata[id].obj = NULL;
 }
 

@@ -77,7 +77,7 @@ extern int avail_hometowns[][LAST_RACE + 1];
 extern int guild_locations[][CLASS_COUNT + 1];
 extern int spl_table[TOTALLVLS][MAX_CIRCLE];
 extern int hometown[];
-extern int top_of_world;
+extern const int top_of_world;
 extern struct str_app_type str_app[];
 extern struct con_app_type con_app[];
 extern struct time_info_data time_info;
@@ -260,18 +260,15 @@ P_char stack_area(P_char ch, int spell, int duration)
 // New function for spell components - Lucrot 31Aug2008
 int get_spell_component(P_char ch, int vnum, int max_components)
 {
-  
   P_obj    t_obj, next_obj;
   int      found = 0;
 
-  for (t_obj = ch->carrying;
-       t_obj && found < max_components;
-       t_obj = next_obj)
+  for( t_obj = ch->carrying; t_obj && found < max_components; t_obj = next_obj )
   {
     next_obj = t_obj->next_content;
-    if(obj_index[t_obj->R_num].virtual_number == vnum)    
+    if(obj_index[t_obj->R_num].virtual_number == vnum)
     {
-      extract_obj(t_obj, TRUE);
+      extract_obj(t_obj, TRUE); // Spell components shouldn't be artis.
       found++;
     }
   }
@@ -5951,10 +5948,8 @@ void spell_consecrate_land(int level, P_char ch, char *arg, int type,
   }
 }
 
-void spell_summon_insects(int level, P_char ch, char *arg, int type,
-                                                 P_char victim, P_obj obj)
+void spell_summon_insects(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
-
     P_obj    t_obj, next_obj;
     P_obj    used_obj = NULL;
     struct   room_affect af;
@@ -5967,26 +5962,24 @@ void spell_summon_insects(int level, P_char ch, char *arg, int type,
     for (count = 0, t_obj = ch->carrying; t_obj; t_obj = next_obj)
     {
       next_obj = t_obj->next_content;
-      
-      if(obj_index[t_obj->R_num].virtual_number == 822 &&
-          isname("root", t_obj->name))
+
+      if( obj_index[t_obj->R_num].virtual_number == VOBJ_INGRED_MANDRAKE )
       {
         used_obj = t_obj;
         break;
       }
 
-      if( count++ > 1000 )
+      if( ++count > 1000 )
         break;
     }
 
     if(!used_obj)
     {
-      send_to_char("You must have &+ya mandrake root&n in your inventory.\r\n",
-                   ch);
+      send_to_char("You must have &+ya mandrake root&n in your inventory.\r\n",ch);
       return;
     }
 
-    extract_obj(used_obj, TRUE);
+    extract_obj(used_obj);
 
     send_to_char("&+yYou summon the &+minsects&+y of the area.&n\n", ch);
     act("&+y$n sprinkles some food around to summon the &+minsects&+y of the area.&n\n", 0,
@@ -6543,8 +6536,7 @@ void spell_detect_poison(int level, P_char ch, char *arg, int type,
   }
 }
 
-void spell_unmaking(int level, P_char ch, char *arg, int type, P_char victim,
-                    P_obj obj)
+void spell_unmaking(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   int      clevel;
   P_obj    cobj, next_obj;
@@ -6566,7 +6558,7 @@ void spell_unmaking(int level, P_char ch, char *arg, int type, P_char victim,
       obj_from_obj(cobj);
       obj_to_room(cobj, ch->in_room);
     }
-    
+
     if (GET_CLASS(ch, CLASS_THEURGIST))
     {
       act("The $p turns to &+ydust&n and &+wb&+Llow&+ws&n away as its &+Wsoul&n is returned to whence it came.", FALSE, ch, obj, 0, TO_CHAR);
@@ -6579,12 +6571,10 @@ void spell_unmaking(int level, P_char ch, char *arg, int type, P_char victim,
       act("&+L$p&+L begins to &n&+gwither&+L and &n&+yrot&+L as $n&+L absorbs its essence.",
          FALSE, ch, obj, 0, TO_ROOM);
     }
-    
+
     if(GET_MAX_HIT(ch) > GET_HIT(ch))
-      GET_HIT(ch) =
-        MIN(GET_MAX_HIT(ch),
-            GET_HIT(ch) + (clevel * 4) + (level * 2));
-    extract_obj(obj, TRUE);
+      GET_HIT(ch) = MIN(GET_MAX_HIT(ch), GET_HIT(ch) + (clevel * 4) + (level * 2));
+    extract_obj(obj);
     update_pos(ch);
   }
   else
@@ -7125,9 +7115,13 @@ void spell_sticks_to_snakes(int level, P_char ch, char *arg, int type,
 
   obj = victim->carrying;
 
-  while (obj = get_obj_in_list("arrow", victim->carrying))
+  while( obj = get_obj_in_list("arrow", victim->carrying) )
   {
-    extract_obj(obj, TRUE);
+    if( IS_ARTIFACT(obj) )
+    {
+      break;
+    }
+    extract_obj(obj, TRUE); // Artifact arrows?
     arrowSnakes++;
   }
 
@@ -7135,21 +7129,18 @@ void spell_sticks_to_snakes(int level, P_char ch, char *arg, int type,
   {
     if(arrowSnakes > 0)
     {
-      spell_damage(ch, victim, dam, SPLDAM_GENERIC,
-                   SPLDAM_ALLGLOBES, &arrow_messages);
+      spell_damage(ch, victim, dam, SPLDAM_GENERIC, SPLDAM_ALLGLOBES, &arrow_messages);
       arrowSnakes--;
     }
     else
     {
-      spell_damage(ch, victim, dam, SPLDAM_GENERIC,
-                   SPLDAM_ALLGLOBES, &messages);
+      spell_damage(ch, victim, dam, SPLDAM_GENERIC, SPLDAM_ALLGLOBES, &messages);
       snakes--;
     }
   }
 }
 
-void spell_dispel_invisible(int level, P_char ch, char *arg, int type,
-                            P_char victim, P_obj obj)
+void spell_dispel_invisible(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   if(victim)
     if(resists_spell(ch, victim))
@@ -7682,8 +7673,7 @@ void spell_protection_from_good(int level, P_char ch, char *arg, int type,
   }
 }
 
-void spell_remove_curse(int level, P_char ch, char *arg, int type,
-                        P_char victim, P_obj obj)
+void spell_remove_curse(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   P_obj    t_obj, nextobj;
   int      e_pos;
@@ -7785,15 +7775,14 @@ void spell_remove_curse(int level, P_char ch, char *arg, int type,
                 world[victim->in_room].number);
           sql_log(victim, WIZLOG, "Dropped %s", t_obj->short_description);
         }
-        obj_from_char(t_obj, TRUE);
+        obj_from_char(t_obj);
         obj_to_room(t_obj, victim->in_room);
       }
     }
   }
 }
 
-void spell_remove_poison(int level, P_char ch, char *arg, int type,
-                         P_char victim, P_obj obj)
+void spell_remove_poison(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   struct affected_type *af, *next;
 
@@ -9102,31 +9091,27 @@ void spell_channel(int level, P_char ch, P_char victim, P_obj obj)
 
   obj->timer[0]++;
 
-  if(obj->timer[0] > 5)
+  if(obj->timer[0] > 5 && obj->timer[0] < 10)
   {
     act("$p &+Cbegins to form small particles... a shape can now be seen...",
         FALSE, ch, 0, 0, TO_ROOM);
     act("$p &+Cbegins to form small particles... a shape can now be seen...",
         FALSE, ch, 0, 0, TO_CHAR);
   }
-  else if(obj->timer[0] > 10)
+  else if(obj->timer[0] > 10 && obj->timer[0] < 20)
   {
     if(IS_EVIL(ch))
     {
-      act
-        ("&+LThe orb of darkness begins to take shape... a mounting sense of dread grips the area.",
+      act("&+LThe orb of darkness begins to take shape... a mounting sense of dread grips the area.",
          FALSE, ch, 0, 0, TO_ROOM);
-      act
-        ("&+LThe orb of darkness begins to take shape... a mounting sense of dread grips the area.",
+      act("&+LThe orb of darkness begins to take shape... a mounting sense of dread grips the area.",
          FALSE, ch, 0, 0, TO_CHAR);
     }
     else
     {
-      act
-        ("&+WThe orb of light begins to take shape... a mounting sense of awe grips the area.",
+      act("&+WThe orb of light begins to take shape... a mounting sense of awe grips the area.",
          FALSE, ch, 0, 0, TO_ROOM);
-      act
-        ("&+WThe orb of light begins to take shape... a mounting sense of awe grips the area.",
+      act("&+WThe orb of light begins to take shape... a mounting sense of awe grips the area.",
          FALSE, ch, 0, 0, TO_CHAR);
     }
   }
@@ -9153,12 +9138,10 @@ void spell_channel(int level, P_char ch, P_char victim, P_obj obj)
     }
 
     // get rid of avatar obj
-    act("$n &+Bis born from the &n$p!!!", FALSE, avatar, obj, victim,
-        TO_ROOM);
-    extract_obj(obj, TRUE);
+    act("$n &+Bis born from the &n$p!!!", FALSE, avatar, obj, victim, TO_ROOM);
+    extract_obj(obj);
 
-    act("&+Y$n's spirit leaves $s body and enters &n$N", FALSE, ch, 0, avatar,
-        TO_ROOM);
+    act("&+Y$n's spirit leaves $s body and enters &n$N", FALSE, ch, 0, avatar, TO_ROOM);
     bzero(&new_af, sizeof(new_af));
     new_af.type = SPELL_CHANNEL;
     new_af.duration = 24;
@@ -10672,7 +10655,7 @@ void spell_fire_breath(int level, P_char ch, char *arg, int type, P_char victim,
     {
       act("&+r$p&+r heats up and you drop it!&n", FALSE, victim, burn, 0, TO_CHAR);
       act("&+r$p&+r catches fire and $n&+r drops it!&n", FALSE, victim, burn, 0, TO_ROOM);
-      obj_from_char(burn, FALSE);
+      obj_from_char(burn);
       obj_to_room(burn, ch->in_room);
     }
   }
@@ -10758,7 +10741,7 @@ void spell_frost_breath(int level, P_char ch, char *arg, int type, P_char victim
     {
       act("&+C$p&+c gets really cold.  You drop it!&n", FALSE, victim, frozen, 0, TO_CHAR);
       act("&+C$p&+c frosts over and $n&+c drops it!&n", FALSE, victim, frozen, 0, TO_ROOM);
-      obj_from_char(frozen, FALSE);
+      obj_from_char(frozen);
       obj_to_room(frozen, ch->in_room);
     }
   }
@@ -11134,7 +11117,7 @@ void spell_crimson_light(int level, P_char ch, char *arg, int type, P_char victi
     {
       act("&+r$p&+r heats up and you drop it!&n", FALSE, victim, burn, 0, TO_CHAR);
       act("&+r$p&+r catches fire and $n&+r drops it!&n", FALSE, victim, burn, 0, TO_ROOM);
-      obj_from_char(burn, FALSE);
+      obj_from_char(burn);
       obj_to_room(burn, ch->in_room);
     }
   }
@@ -11670,8 +11653,7 @@ bool check_item_teleport(P_char ch, char *arg, int cmd)
             TRUE, ch, obj, 0, TO_CHAR);
       }
       else
-        act("&+W$p shatters and the pieces disappear in smoke.", TRUE, ch,
-            obj, 0, TO_ROOM);
+        act("&+W$p shatters and the pieces disappear in smoke.", TRUE, ch, obj, 0, TO_ROOM);
 
       if(OBJ_WORN(obj))
       {
@@ -11684,7 +11666,7 @@ bool check_item_teleport(P_char ch, char *arg, int cmd)
           }
         }
       }
-      extract_obj(obj, TRUE);
+      extract_obj(obj, TRUE); // Could make Dragonnia stone arti.
       obj = NULL;
     }
   }
@@ -12648,7 +12630,7 @@ void spell_wraithform(int level, P_char ch, P_char victim, char *arg)
     for (o1 = ch->carrying; o1; o1 = o2)
     {
       o2 = o1->next_content;
-      obj_from_char(o1, TRUE);
+      obj_from_char(o1);
       obj_to_room(o1, ch->in_room);
       dr = TRUE;
     }
@@ -13218,8 +13200,7 @@ void unequip_char_dale(P_obj kala)
     unequip_char(kala->loc.wearing, b);
 }
 
-void spell_disintegrate(int level, P_char ch, char *arg, int type,
-                        P_char victim, P_obj obj)
+void spell_disintegrate(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   int i, dam;
   P_obj x;
@@ -13240,33 +13221,30 @@ void spell_disintegrate(int level, P_char ch, char *arg, int type,
     "$p turns red hot and burns the last bit of life out of $N!", 0
   };
 
-  if(!(ch) ||
-     !IS_ALIVE(ch) ||
-     !(victim) ||
-     !IS_ALIVE(victim))
+  if( !IS_ALIVE(ch) || !IS_ALIVE(victim) )
   {
     return;
   }
-  
+
   dam = dice(level, 13) * DAMFACTOR;
-  
+
   act("$n sends a bright &+Ggreen ray of light&n streaking towards&n $N!",
     TRUE, ch, 0, victim, TO_NOTVICT);
   act("$n sends a &+Ggreen ray of light&n coming .. straight towards YOU!",
     TRUE, ch, 0, victim, TO_VICT);
   act("You grin evilly as you send a &+Ggreen beam of disintegration&n streaking towards&n $N!",
     TRUE, ch, 0, victim, TO_CHAR);
-    
+
   if(resists_spell(ch, victim))
     return;
-  
+
   if(!saves_spell(victim, SAVING_SPELL))
   {
     if(!IS_AFFECTED4(victim, AFF4_NEG_SHIELD) &&
        !IS_UNDEADRACE(victim))
     {
       dam = (dam * 2);
-    
+
       if(!IS_SET(world[victim->in_room].room_flags, ARENA))
       {
         i = 0;
@@ -13275,33 +13253,29 @@ void spell_disintegrate(int level, P_char ch, char *arg, int type,
           if(victim->equipment[i])
           {
             obj = victim->equipment[i];
-            
-            if(!NewSaves(victim, SAVING_SPELL, -5) &&
-               !CHAR_IN_ARENA(victim) &&
-               !IS_ARTIFACT(obj) &&
-               !IS_NOSHOW(obj) )
+
+            if(!NewSaves(victim, SAVING_SPELL, -5) && !CHAR_IN_ARENA(victim) && !IS_ARTIFACT(obj) && !IS_NOSHOW(obj) )
             {
               spell_damage(ch, victim, (int)get_property("spell.disintegrate.burn.dmg", 3), SPLDAM_FIRE, 0, &eqburnmsg);
-	      obj->condition -= BOUNDED(0, number(1, (int)get_property("spell.disintegrate.max.eq.dmg", 10)), (obj->condition-1));
+              obj->condition -= BOUNDED(0, number(1, (int)get_property("spell.disintegrate.max.eq.dmg", 10)),
+                (obj->condition-1));
               act("$p cracks from the heat.", FALSE, ch, obj, victim, TO_VICT);
-              /*
-	      statuslog(AVATAR, "%s just disintegrated %s from %s at [%d]",
-                        GET_NAME(ch), obj->short_description, GET_NAME(victim),
-                        world[ch->in_room].number);
-              
+              /* Getting rid of this spammy useless message crap - Jexni 7/17/08
+              statuslog(AVATAR, "%s just disintegrated %s from %s at [%d]", GET_NAME(ch),
+                obj->short_description, GET_NAME(victim), world[ch->in_room].number);
+
               act("$p turns red hot, $N screams, then it disappears in a puff of smoke!",
                  TRUE, ch, obj, victim, TO_CHAR);
-              
-              if(obj->loc.wearing ||
-                 obj->loc.carrying)
+
+              if( obj->loc.wearing || obj->loc.carrying)
               {
-                act("$p, held by $N, disappears in a puff of smoke!", TRUE, ch,
-                    obj, victim, TO_ROOM);
+                act("$p, held by $N, disappears in a puff of smoke!", TRUE, ch, obj, victim, TO_ROOM);
               }
-              
+
+              // remove the obj
               if(OBJ_CARRIED(obj))
-              {                   // remove the obj
-                obj_from_char(obj, TRUE);
+              {
+                obj_from_char(obj);
               }
               else if(OBJ_WORN(obj))
               {
@@ -13310,9 +13284,7 @@ void spell_disintegrate(int level, P_char ch, char *arg, int type,
               else if(OBJ_INSIDE(obj))
               {
                 obj_from_obj(obj);
-                obj_to_room(obj, ch->in_room);
               }
-              
               if(obj->contains)
               {
                 while (obj->contains)
@@ -13322,15 +13294,13 @@ void spell_disintegrate(int level, P_char ch, char *arg, int type,
                   obj_to_room(x, ch->in_room);
                 }
               }
-              
               if(obj)
               {
-                extract_obj(obj, TRUE);
+                extract_obj(obj);
                 obj = NULL;
               }
-	      */
             }
-            /* else
+            else
             {
               if(obj)
               {
@@ -13338,8 +13308,9 @@ void spell_disintegrate(int level, P_char ch, char *arg, int type,
                     obj, victim, TO_VICT);
                 act("$p, carried by $N, resists the disintegration ray!", TRUE,
                     ch, obj, victim, TO_ROOM);
-              }   Getting rid of this spammy useless message crap - Jexni 7/17/08 
-            } */
+              }
+            */
+            }
           }
           i++;
         }
@@ -15412,12 +15383,12 @@ void spell_resurrect(int level, P_char ch, char *arg, int type, P_char victim, P
       next_obj = t_obj->next_content;
       if(IS_SET(obj->extra_flags, ITEM_TRANSIENT))
       {
-        extract_obj(t_obj, TRUE);
+        extract_obj(t_obj, TRUE); // Transient artis?
         t_obj = NULL;
       }
       else
       {
-        obj_from_char(t_obj, TRUE);
+        obj_from_char(t_obj);
         obj_to_room(t_obj, t_ch->in_room);
       }
     }
@@ -15432,7 +15403,7 @@ void spell_resurrect(int level, P_char ch, char *arg, int type, P_char victim, P
         t_obj = unequip_char(t_ch, l);
         if( IS_SET(t_obj->extra_flags, ITEM_TRANSIENT) )
         {
-          extract_obj(t_obj, TRUE);
+          extract_obj(t_obj, TRUE); // Transient artis?
           t_obj = NULL;
         }
         else
@@ -15458,7 +15429,7 @@ void spell_resurrect(int level, P_char ch, char *arg, int type, P_char victim, P
       GET_SILVER(t_ch) += obj_in_corpse->value[1];
       GET_GOLD(t_ch) += obj_in_corpse->value[2];
       GET_PLATINUM(t_ch) += obj_in_corpse->value[3];
-      extract_obj(obj_in_corpse, TRUE);
+      extract_obj(obj_in_corpse);
       obj_in_corpse = NULL;
     }
     else
@@ -15566,20 +15537,18 @@ void spell_resurrect(int level, P_char ch, char *arg, int type, P_char victim, P
    */
   if( IS_PC(t_ch) && !writeCharacter(t_ch, 1, t_ch->in_room) )
   {
-    logit(LOG_DEBUG, "Problem saving player %s in spell_resurrect()",
-          GET_NAME(t_ch));
+    logit(LOG_DEBUG, "Problem saving player %s in spell_resurrect()", GET_NAME(t_ch));
     send_to_char("There was a problem saving your character!\n", t_ch);
     send_to_char("Contact an Implementor ASAP.\n", t_ch);
   }
 
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 }
 
-void spell_preserve(int level, P_char ch, char *arg, int type, P_char victim,
-                    P_obj obj)
+void spell_preserve(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   char     Gbuf1[MAX_STRING_LENGTH];
-  
+
   if(!(obj))
     return;
 
@@ -15627,8 +15596,7 @@ void spell_preserve(int level, P_char ch, char *arg, int type, P_char victim,
     writeCorpse(obj);
 }
 
-void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char victim,
-                     P_obj obj)
+void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   bool     loss_flag = FALSE;
   int      chance, l, found, clevel, ss_roll;
@@ -15636,12 +15604,10 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
   P_obj    obj_in_corpse, next_obj, t_obj, money;
   struct affected_type *af, *next_af;
   P_char   t_ch;
-  
-  if(!(ch) ||
-     !IS_ALIVE(ch) ||
-     !(obj))
-        return;
-  
+
+  if( !IS_ALIVE(ch) || !(obj) )
+    return;
+
   if(obj->type != ITEM_CORPSE)
   {
     send_to_char("You can only resurrect corpses!\n", ch);
@@ -15649,13 +15615,13 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
   }
 
   if(IS_NPC(ch))
-  return;
+    return;
 
-  if(GET_CHAR_SKILL(ch, SKILL_DEVOTION) <= 20 &&
-    !IS_TRUSTED(ch) ||
-    (GET_CLASS(ch, CLASS_SHAMAN) &&
-    level < 52))
-        CharWait(ch, 100);
+  if(GET_CHAR_SKILL(ch, SKILL_DEVOTION) <= 20 && !IS_TRUSTED(ch)
+    || (GET_CLASS(ch, CLASS_SHAMAN) && level < 52))
+  {
+    CharWait(ch, 100);
+  }
 
   if(IS_SET(obj->value[1], NPC_CORPSE))
   {
@@ -15667,8 +15633,7 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
     t_ch = read_mobile(obj->value[3], VIRTUAL);
     if(!t_ch)
     {
-      logit(LOG_DEBUG, "spell_resurrect(): mob %d not loadable",
-            obj->value[3]);
+      logit(LOG_DEBUG, "spell_resurrect(): mob %d not loadable", obj->value[3]);
       send_to_char("You can't resurrect this corpse!\n", ch);
       return;
     }
@@ -15691,8 +15656,7 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
 
     for (t_ch = character_list; t_ch; t_ch = t_ch->next)
     {
-      if(t_ch && IS_PC(t_ch) &&
-          !str_cmp(t_ch->player.name, obj->action_description))
+      if(t_ch && IS_PC(t_ch) && !str_cmp(t_ch->player.name, obj->action_description))
       {
         if(t_ch == ch)
         {
@@ -15720,8 +15684,7 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
     }
     if(!found)
     {
-      send_to_char("You can't find a soul to reunite with this corpse!\n",
-                   ch);
+      send_to_char("You can't find a soul to reunite with this corpse!\n", ch);
       return;
     }
 
@@ -15777,13 +15740,11 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
         /*
          * complete failure, corpse is unressable.
          */
-        logit(LOG_DEATH,
-              "%s ressed %s:  Failed roll: %3d Chance: %3d Level: %2d",
+        logit(LOG_DEATH, "%s ressed %s:  Failed roll: %3d Chance: %3d Level: %2d",
               GET_NAME(ch), GET_NAME(t_ch), ss_roll, chance, level);
       }
     }
-    
-    
+
     act("$n &+Mhowls in pain&n as $s body &+Lcrumbles to dust.&n",
       FALSE, t_ch, 0, 0, TO_ROOM);
     act("You &+Mhowl in pain&n as your &+wsoul&n leaves your body to return to your corpse.",
@@ -15796,7 +15757,7 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
     if( IS_DESTROYING(t_ch) )
       stop_destroying(t_ch);
     StopAllAttackers(t_ch);
-    
+
     if(IS_PC(t_ch) &&
        IS_RIDING(t_ch))
           stop_riding(t_ch);
@@ -15827,12 +15788,12 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
 //      if(IS_SET(world[t_ch->in_room].room_flags, DEATH) || IS_SET(obj->extra_flags, ITEM_TRANSIENT))
       if(IS_SET(obj->extra_flags, ITEM_TRANSIENT))
       {
-        extract_obj(t_obj, TRUE);
+        extract_obj(t_obj, TRUE); // Transient artis?
         t_obj = NULL;
       }
       else
       {
-        obj_from_char(t_obj, TRUE);
+        obj_from_char(t_obj);
         obj_to_room(t_obj, t_ch->in_room);
       }
     }
@@ -15852,7 +15813,7 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
          */
         if(IS_SET(t_obj->extra_flags, ITEM_TRANSIENT))
         {
-          extract_obj(t_obj, TRUE);
+          extract_obj(t_obj, TRUE); // Transient artis?
           t_obj = NULL;
         }
         else
@@ -15875,7 +15836,7 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
       GET_SILVER(t_ch) += obj_in_corpse->value[1];
       GET_GOLD(t_ch) += obj_in_corpse->value[2];
       GET_PLATINUM(t_ch) += obj_in_corpse->value[3];
-      extract_obj(obj_in_corpse, TRUE);
+      extract_obj(obj_in_corpse);
       obj_in_corpse = NULL;
     }
     else
@@ -15927,17 +15888,15 @@ void spell_lesser_resurrect(int level, P_char ch, char *arg, int type, P_char vi
   }
 /*  if(clevel == 56)
     advance_level(t_ch);*/
-  extract_obj(obj, TRUE);
+  extract_obj(obj);
 }
 
-void spell_mass_invisibility(int level, P_char ch, char *arg, int type,
-                             P_char victim, P_obj obj)
+void spell_mass_invisibility(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
 
-  if(!(ch) ||
-     !IS_ALIVE(ch))
-        return;
-  
+  if( !IS_ALIVE(ch) )
+    return;
+
   LOOP_THRU_PEOPLE(victim, ch)
     if(!IS_TRUSTED(ch) && !IS_TRUSTED(victim))
       spell_improved_invisibility(level, ch, 0, 0, victim, 0);
@@ -16760,54 +16719,55 @@ void spell_true_seeing(int level, P_char ch, char *arg, int type,
 
 void spell_tree(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
-                if(world[ch->in_room].sector_type != SECT_FOREST) {
-                        send_to_char("&+GTrees&+g don't grow here!&n\n", ch);
-                        return;
-                }
+  P_obj tobj, next_tobj;
+
+  if(world[ch->in_room].sector_type != SECT_FOREST)
+  {
+    send_to_char("&+GTrees&+g don't grow here!&n\n", ch);
+    return;
+  }
 
                 // DALRETH - 3/05
+  if(ch->specials.z_cord > 0)
+  {
+    send_to_char("There isn't enough forest up here.\r\n", ch);
+    return;
+  }
+  if(IS_RIDING(ch))
+  {
+    send_to_char("&+WYour mount prevents you from blending into the forest...&n\r\n", ch);
+    return;
+  }
+  if(affected_by_spell(ch, SPELL_FAERIE_FIRE))
+  {
+    send_to_char("You can't hide while surrounded by &+Mflames!&n\n\r", ch);
+    return;
+  }
 
-                if(ch->specials.z_cord > 0)
+  if(IS_FIGHTING(ch) || IS_DESTROYING(ch))
+  {
+    send_to_char("Your magic isn't strong enough to hide you from battle!\r\n", ch);
+    return;
+  }
+
+  if( IS_AFFECTED(ch, AFF_HIDE) )
+    REMOVE_BIT(ch->specials.affected_by, AFF_HIDE);
+
+  CharWait(ch, PULSE_VIOLENCE * 3);
+
+  /*  destroy your tracks! */
+  for( tobj = world[ch->in_room].contents; tobj; tobj = next_tobj )
+  {
+    next_tobj = tobj->next_content;
+    if( tobj->R_num == real_object(VNUM_TRACKS) )
     {
-      send_to_char("There isn't enough forest up here.\r\n", ch);
-      return;
+      extract_obj(tobj);
+      tobj = NULL;
     }
-    if(IS_RIDING(ch))
-    {
-      send_to_char("&+WYour mount prevents you from blending into the forest...&n\r\n", ch);
-      return;
-    }
-    if(affected_by_spell(ch, SPELL_FAERIE_FIRE))
-    {
-      send_to_char("You can't hide while surrounded by &+Mflames!&n\n\r", ch);
-      return;
-    }
+  }
 
-    if(IS_FIGHTING(ch) || IS_DESTROYING(ch))
-    {
-      send_to_char("Your magic isn't strong enough to hide you from battle!\r\n", ch);
-      return;
-    }
-
-    if(IS_AFFECTED(ch, AFF_HIDE))
-      REMOVE_BIT(ch->specials.affected_by, AFF_HIDE);
-
-    CharWait(ch, PULSE_VIOLENCE * 3);
-
-    /*  destroy your tracks! */
-        P_obj tobj, next_tobj=0;
-                for (tobj = world[ch->in_room].contents; tobj; tobj = next_tobj)
-                {
-                        next_tobj = tobj->next_content;
-                        if(tobj->R_num == real_object(VNUM_TRACKS))
-                        {
-                                extract_obj(tobj, TRUE);
-                                tobj = NULL;
-                        }
-                }
-    send_to_char("&+wYou blend silently into the &+gforest.&n\r\n", ch);
-    SET_BIT(ch->specials.affected_by, AFF_HIDE);
-
+  send_to_char("&+wYou blend silently into the &+gforest.&n\r\n", ch);
+  SET_BIT(ch->specials.affected_by, AFF_HIDE);
 }
 
 void spell_animal_vision(int level, P_char ch, char *arg, int type,
@@ -20793,12 +20753,15 @@ void spell_moonstone(int level, P_char ch, char *arg, int type,
     return;
   }
 
-  if(afp = get_spell_from_char(ch, SPELL_MOONSTONE)) {
+  if(afp = get_spell_from_char(ch, SPELL_MOONSTONE))
+  {
     moonstone = get_obj_in_list_num(real_object(419), world[afp->modifier].contents);
     if(moonstone)
-      extract_obj(moonstone, FALSE);
+      extract_obj(moonstone);
     afp->modifier = ch->in_room;
-  } else {
+  }
+  else
+  {
     memset(&af, 0, sizeof(af));
     af.type = SPELL_MOONSTONE;
     af.flags = /*AFFTYPE_NOSHOW |*/ AFFTYPE_NOSAVE | AFFTYPE_NODISPEL | AFFTYPE_NOAPPLY;
@@ -21025,7 +20988,7 @@ bool spell_general_portal( int level, P_char ch, P_char victim, struct portal_se
       send_to_char("Spell messed up. contact someone.\n", ch);
       if(portal1)
       {
-        extract_obj(portal1, TRUE);
+        extract_obj(portal1);
       }
       return FALSE;
     }
@@ -21138,8 +21101,6 @@ void set_up_portals(P_char ch, P_obj p1, P_obj p2, int charge)
    //----------------------------
 }
 
-#define GARLIC_VNUM 823
-
 struct sb_data {
   int room;
   int spores;
@@ -21162,7 +21123,7 @@ void spell_spore_burst(int level, P_char ch, char *arg, int type, P_char victim,
      break;
    }
   
-  garlic = get_spell_component(ch, GARLIC_VNUM, 1);
+  garlic = get_spell_component(ch, VOBJ_INGRED_GARLIC, 1);
   if(!garlic)
   {
     send_to_char("You must have &+Wsome garlic&n in your inventory.\n", ch);
@@ -21202,7 +21163,7 @@ void event_spore_burst(P_char ch, P_char victim, P_obj obj, void *data)
 
   if(number(0, 1) && (sbdata->spores < 3))
   { 
-    garlic = get_spell_component(ch, GARLIC_VNUM, 1);
+    garlic = get_spell_component(ch, VOBJ_INGRED_GARLIC, 1);
     sbdata->spores++;
   }
 
@@ -21781,7 +21742,7 @@ void remove_soulbind(P_char ch)
   {
     if( IS_SET((obj)->extra2_flags, ITEM2_SOULBIND) && isname(GET_NAME(ch), obj->name) )
     {
-      extract_obj(obj, FALSE);
+      extract_obj(obj);
     }
   }
 }
@@ -21903,7 +21864,7 @@ void do_soulbind(P_char ch, char *argument, int cmd)
     // Transfer the object to victim if necessary.
     if( ch != victim )
     {
-      obj_from_char(obj, FALSE);
+      obj_from_char(obj);
       obj_to_char(obj, victim);
     }
 
