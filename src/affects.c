@@ -3809,7 +3809,8 @@ bool falling_obj(P_obj obj, int speed, bool caller_is_event)
       else
       {
         act("$p crashes into the ground from above!", TRUE, 0, obj, 0, TO_ROOM);
-        obj->condition -= dam/10;
+        if( !IS_ARTIFACT(obj) )
+          obj->condition -= dam/10;
         // Add object damage/destroy, also hit people, here
         return FALSE;
       }
