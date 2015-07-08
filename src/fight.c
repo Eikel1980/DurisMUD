@@ -103,7 +103,7 @@ extern int top_of_zone_table;
 
 /* Structures */
 
-//extern struct mm_ds *dead_trophy_pool;
+//extern struct mm_ds *wdead_trophy_pool;
 P_char   combat_list = 0;       /* head of l-list of fighting chars  */
 P_char   destroying_list = 0;   /* head of l-list of destroying chars  */
 P_char   combat_next_ch = 0;    /* Next in combat global trick    */
@@ -3566,37 +3566,65 @@ int try_riposte(P_char ch, P_char victim, P_obj wpn)
 }
 
 /*
- * this routine is here to solve some message timing problems, called from
+ * This routine is here to solve some message timing problems, called from
  * several places in damage(), checks to see if victim should start
  * fighting ch.  JAB
+ * Returns one of DAM_NONEDEAD, DAM_VICTDEAD, DAM_CHARDEAD, DAM_BOTHDEAD.
  */
-
-void attack_back(P_char ch, P_char victim, int physical)
+int attack_back(P_char ch, P_char victim, int physical)
 {
-  if( !ch || !victim || IS_FIGHTING(victim) || (GET_STAT(ch) == STAT_DEAD) 
-      || (GET_STAT(victim) == STAT_DEAD) || IS_DESTROYING(victim) )
-    return;
+  if( !IS_ALIVE(ch) )
+  {
+    if( !IS_ALIVE(victim) )
+    {
+      return DAM_BOTHDEAD;
+    }
+    return DAM_CHARDEAD;
+  }
+  if( victim )
+  {
+    update_pos(victim);
+  }
+  if( !IS_ALIVE(victim) )
+  {
+    return DAM_VICTDEAD;
+  }
+  if( IS_FIGHTING(victim) || IS_DESTROYING(victim) )
+  {
+    return DAM_NONEDEAD;
+  }
 
-  update_pos(victim);
-
-  if (ch->in_room != victim->in_room ||
-      ch->specials.z_cord != victim->specials.z_cord)
+  if( ch->in_room != victim->in_room || ch->specials.z_cord != victim->specials.z_cord )
   {
     if (IS_NPC(victim))
     {
       MobRetaliateRange(victim, ch);
-      return;
     }
-    return;
   }
-  // can't very well attack back if either ch or victim is back ranked!
-  if (!physical &&
-      (IS_PC(ch) || IS_PC_PET(ch)) &&
-      IS_PC(victim) &&
-      (!IS_SET(ch->specials.act, PLR_VICIOUS) || IS_BACKRANKED(ch) || IS_BACKRANKED(victim)))
-    return;
-  if(!IS_IMMOBILE(ch))
+  // Can't very well attack back if either ch or victim is back ranked!
+  else if( !physical && (IS_PC(ch) || IS_PC_PET(ch)) && IS_PC(victim)
+    && (!IS_SET(ch->specials.act, PLR_VICIOUS) || IS_BACKRANKED(ch) || IS_BACKRANKED(victim)) )
+  {
+    return DAM_NONEDEAD;
+  }
+  else if( !IS_IMMOBILE(ch) )
+  {
     set_fighting(victim, ch);
+  }
+
+  if( !IS_ALIVE(ch) )
+  {
+    if( !IS_ALIVE(victim) )
+    {
+      return DAM_BOTHDEAD;
+    }
+    return DAM_CHARDEAD;
+  }
+  if( !IS_ALIVE(victim) )
+  {
+    return DAM_VICTDEAD;
+  }
+  return DAM_NONEDEAD;
 }
 
 
@@ -4084,25 +4112,33 @@ int spell_damage(P_char ch, P_char victim, double dam, int type, uint flags, str
   }
   /* End Ethermancer Absorb Spells */
 
-  if (!(flags & SPLDAM_NOSHRUG) && resists_spell(ch, victim))
+  if( !IS_SET(flags, SPLDAM_NOSHRUG) )
   {
-    if (dam / 100 > number(1, 7) &&
-        has_innate(victim, INNATE_SPELL_ABSORB) &&
-        number(0, 100) < GET_LEVEL(victim) && IS_CASTER(victim))
+    if( resists_spell(ch, victim) )
     {
-      for (circle = get_max_circle(victim); circle >= 1; circle--)
+      return attack_back(ch, victim, FALSE);
+    }
+
+    // @50dam: 1/10 chance, @100dam: 1/5chance, @499dam: 5/6 chance, @500dam: 100% chance to pass 1st check.
+    // Also, 1% chance per 2 levels: 28% at lvl 56 with 500+dam.
+    // So, 2.8% chance @lvl 56 with 50-99 dam, 5.6% chance @lvl 56 with 100-149 dam (most common).
+    if( (ch != victim) && (dam / 50) > number(0, 9) && has_innate(victim, INNATE_SPELL_ABSORB)
+      && number(1, 100) <= (GET_LEVEL(victim) / 2) && USES_SPELL_SLOTS(victim) )
+    {
+      for( circle = get_max_circle(victim); circle >= 1; circle-- )
       {
-        if (victim->specials.undead_spell_slots[circle] <
-            max_spells_in_circle(victim, circle))
+        if( victim->specials.undead_spell_slots[circle] < max_spells_in_circle(victim, circle) )
         {
-          send_to_char("&+LYou feel power surge into you.&n\r\n", victim);
+          act("&+L$N&+L absorbs the power of your spell!&n", FALSE, ch, 0, victim, TO_CHAR);
+          act("&+LYou absorb the power of $n&+L's spell!&n", FALSE, ch, 0, victim, TO_VICT);
+          act("&+L$N&+L absorbs the power of $n&+L's spells!&n", FALSE, ch, 0, victim, TO_NOTVICT);
+          send_to_char_f( victim, "&+LYou regain a %d%s circle slot.&n\r\n", circle, ((circle == 3) ? "rd" :
+            ( (circle == 2) ? "nd" : ((circle == 1) ? "st" : "th") )) );
           victim->specials.undead_spell_slots[circle]++;
-          break;
+          return attack_back(ch, victim, FALSE);
         }
       }
     }
-    attack_back(ch, victim, FALSE);
-    return DAM_NONEDEAD;
   }
   /* Commenting this out for now - vision was never fully implemented - Drannak 1/8/13
   // Shrug now works as MR
@@ -7716,16 +7752,17 @@ void StopMercifulAttackers(P_char ch)
 }
 
 /* start one char fighting another (yes, it is horrible, I know... ) */
-
 void set_fighting(P_char ch, P_char vict)
 {
   P_char   victim = vict;
   P_char   tch;
   char     Gbuf[10];
 
-  if ((ch == victim) || !SanityCheck(ch, "set_fighting - ch") ||
-      !SanityCheck(victim, "set_fighting - victim"))
+  if( (ch == victim) || !SanityCheck(ch, "set_fighting - ch")
+    || !SanityCheck(victim, "set_fighting - victim") )
+  {
     return;
+  }
 
   if( IS_FIGHTING(ch) || ch->specials.next_fighting )
   {
@@ -7737,6 +7774,7 @@ void set_fighting(P_char ch, P_char vict)
     logit(LOG_EXIT, "assert: set_fighting() when destroying object");
     raise(SIGSEGV);
   }
+
   /*
    * new reality mode, unless they are adjacent in a SINGLE_FILE room,
    * they can't hit each other, except with spells/breath, so they don't
@@ -7763,8 +7801,7 @@ void set_fighting(P_char ch, P_char vict)
     return;
   }
 
-  if(IS_IMMOBILE(ch) ||
-      !AWAKE(ch))
+  if(IS_IMMOBILE(ch) || !AWAKE(ch))
   {
     return;
   }
@@ -7835,12 +7872,8 @@ void set_fighting(P_char ch, P_char vict)
 
   /* call for initial 'dragon fear' check.  -JAB */
 
-  if(IS_NPC(ch) &&
-      (IS_DRAGON(ch) ||
-       IS_AVATAR(ch)) &&
-      !IS_MORPH(ch) &&
-      !IS_PC_PET(ch))
-  { 
+  if( IS_NPC(ch) && (IS_DRAGON(ch) || IS_AVATAR(ch)) && !IS_MORPH(ch) && !IS_PC_PET(ch) )
+  {
     if(!number(0, 2)) // Attack and roar.
     {
       DragonCombat(ch, TRUE);
@@ -7902,8 +7935,6 @@ void set_fighting(P_char ch, P_char vict)
     do_innate_decrepify(ch,vict);
   if (GET_CHAR_SKILL(ch, SKILL_DREAD_WRATH))
     do_dread_wrath(ch,vict);
-
-
 }
 
 // Attack that object!

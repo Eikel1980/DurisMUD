@@ -918,7 +918,7 @@ void MoveAllAttackers(P_char,P_char);
 void StopAllAttackers(P_char);
 void StopMercifulAttackers(P_char);
 void appear(P_char ch, bool removeHide = TRUE);
-void attack_back(P_char, P_char, int);
+int attack_back(P_char, P_char, int);
 void change_alignment(P_char, P_char);
 void check_killer(P_char, P_char);
 void death_cry(P_char);
