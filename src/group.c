@@ -25,11 +25,7 @@
 
    Other then as a convienence with the "group all" command,
    following, and follow order has NOTHING to do with grouping.
-
-
  */
-
-
 
 #include <stdio.h>
 #include <string.h>
@@ -1019,38 +1015,37 @@ bool group_add_member(P_char leader, P_char member)
   if( !leader || !member || !IS_ALIVE(leader) || !IS_ALIVE(member) )
     return FALSE;
 
-  if (member->group)
+  if( member->group )
   {
     sprintf(buf, "%s is already in another group!\n", GET_NAME(member));
     send_to_char(buf, leader);
     return FALSE;
   }
 
-  if (racewar(leader, member) && !IS_DISGUISE(member))
+  if( racewar(leader, member) && !IS_DISGUISE(member) )
   {
     send_to_char("You don't want to group with scum!\n", leader);
     return FALSE;
   }
 
 #if 1
-  if (IS_PC(member) && IS_PC(leader) && member != leader &&
-      !is_linked_to(leader, member, LNK_CONSENT))
+  if( IS_PC(member) && IS_PC(leader) && member != leader
+    && !is_linked_to(leader, member, LNK_CONSENT) )
   {
     send_to_char("But ye haven't their permission to do that!\n", leader);
     return FALSE;
   }
 #endif
 #if 0
-  if (GET_RACE(ch) == RACE_ILLITHID(leader) && IS_PC(member))
+  if( GET_RACE(ch) == RACE_ILLITHID(leader) && IS_PC(member) )
   {
     send_to_char("You can't stand being near them!\n", leader);
     return FALSE;
   }
 #endif
-  /* check if the leader is a member of a group, but not the leader of
-     it */
 
-  if (leader->group && (leader->group->ch != leader))
+  // Check if the leader is a member of a group, but not the leader of it
+  if( leader->group && (leader->group->ch != leader) )
   {
     send_to_char("This only works for the group leader!\n", leader);
     return FALSE;
@@ -1059,7 +1054,8 @@ bool group_add_member(P_char leader, P_char member)
   if( leader->group )
   {
     int group_size = 0;
-    for (gl = leader->group; gl; gl = gl->next) {
+    for (gl = leader->group; gl; gl = gl->next)
+    {
       group_size++;
     }
 
@@ -1070,14 +1066,18 @@ bool group_add_member(P_char leader, P_char member)
       return FALSE;
     }
 #else
-    if (RACE_EVIL(leader) && !IS_PC_PET(member)) {
-      if (group_size >= (int) get_property("groups.size.max.evil", 13) ) {
+    if (RACE_EVIL(leader) && !IS_PC_PET(member))
+    {
+      if (group_size >= (int) get_property("groups.size.max.evil", 13) )
+      {
         send_to_char("Your group is too large!\n", leader);
         return FALSE;
       }
     }
-    if (RACE_GOOD(leader) && !IS_PC_PET(member)) {
-      if (group_size >= (int) get_property("groups.size.max.good", 13) ) {
+    if (RACE_GOOD(leader) && !IS_PC_PET(member))
+    {
+      if (group_size >= (int) get_property("groups.size.max.good", 13) )
+      {
         send_to_char("Your group is too large!\n", leader);
         return FALSE;
       }
@@ -1088,9 +1088,8 @@ bool group_add_member(P_char leader, P_char member)
   if (!leader->group)
   {
     if (!dead_group_pool)
-      dead_group_pool = mm_create("GROUPS",
-                                  sizeof(struct group_list),
-                                  offsetof(struct group_list, next), 1);
+      dead_group_pool = mm_create("GROUPS", sizeof(struct group_list), offsetof(struct group_list, next), 1);
+
     leader->group = (struct group_list *) mm_get(dead_group_pool);
     leader->group->ch = leader;
     leader->group->next = NULL;

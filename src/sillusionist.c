@@ -11,32 +11,32 @@
 
 #ifndef _ILLUSIONIST_MAGIC_C_
 
-#   include <stdio.h>
-#   include <string.h>
-#   include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
 
-#   include "comm.h"
-#   include "db.h"
-#   include "events.h"
-#   include "interp.h"
-#   include "mm.h"
-#   include "new_combat_def.h"
-#   include "prototypes.h"
-#   include "spells.h"
-#   include "structs.h"
-#   include "utils.h"
-#   include "arena.h"
-#   include "arenadef.h"
-#   include "justice.h"
-#   include "weather.h"
-#   include "sound.h"
-#   include "objmisc.h"
-#   include "specs.prototypes.h"
-#   include "damage.h"
-#   include "disguise.h"
-#   include "sql.h"
-#   include "ctf.h"
-
+#include "comm.h"
+#include "db.h"
+#include "events.h"
+#include "interp.h"
+#include "mm.h"
+#include "new_combat_def.h"
+#include "prototypes.h"
+#include "spells.h"
+#include "structs.h"
+#include "utils.h"
+#include "arena.h"
+#include "arenadef.h"
+#include "justice.h"
+#include "weather.h"
+#include "sound.h"
+#include "objmisc.h"
+#include "specs.prototypes.h"
+#include "damage.h"
+#include "disguise.h"
+#include "sql.h"
+#include "ctf.h"
+#include "vnum.mob.h"
 
 /*
  * external variables
@@ -1888,48 +1888,45 @@ void spell_nonexistence(int level, P_char ch, char *arg, int type, P_char victim
   // }
 }
 
-void spell_dragon(int level, P_char ch, char *arg, int type, P_char victim,
-                  P_obj obj)
+void spell_dragon(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   P_char   mob;
-  int      summoned = 0;
+  int      summoned;
   struct char_link_data *cld;
 
   if (!ch || !victim)
     return;
 
-  if (CHAR_IN_SAFE_ZONE(ch))
+  if( CHAR_IN_SAFE_ZONE(ch) )
   {
     send_to_char("A mysterious force blocks your casting!\r\n", ch);
     return;
   }
 
-  for (cld = ch->linked; cld; cld = cld->next_linked)
+  for( summoned = 0, cld = ch->linked; cld; cld = cld->next_linked )
   {
-    if (cld->type == LNK_PET &&
-        IS_NPC(cld->linking) &&
-	GET_VNUM(cld->linking) == 1108)
+    if( cld->type == LNK_PET && IS_NPC(cld->linking) && GET_VNUM(cld->linking) == VMOB_ILLUS_DRAGON )
     {
       summoned++;
     }
   }
 
-  if (summoned >= MAX(1, GET_LEVEL(ch) / 14))
+  if( summoned >= MAX(1, GET_LEVEL(ch) / 14) )
   {
-    send_to_char("You cannot summon any more dragons here!\r\n", ch);
+    send_to_char("You cannot summon any more dragons right now!\r\n", ch);
     return;
   }
 
-  mob = read_mobile(real_mobile(1108), REAL);
-  if (!mob)
+  mob = read_mobile(real_mobile(VMOB_ILLUS_DRAGON), REAL);
+  if( !mob )
   {
-    logit(LOG_DEBUG, "spell_dragon(): mob %d not loadable", 1108);
-    send_to_char("Bug in dragon.  Tell a god!\r\n", ch);
+    logit(LOG_DEBUG, "spell_dragon(): mob %d not loadable", VMOB_ILLUS_DRAGON);
+    send_to_char("Your dragon has a bug.  Tell a &+WGod&n before it spreads!\r\n", ch);
     return;
   }
 
   char_to_room(mob, ch->in_room, 0);
-  act("$n &+w appears from nowhere!", TRUE, mob, 0, 0, TO_ROOM);
+  act("$n &+wappears from nowhere!", TRUE, mob, 0, 0, TO_ROOM);
 //  justice_witness(ch, NULL, CRIME_SUMMON);
 
   mob->player.level = BOUNDED(1, number(level - 5, level + 1), 55);
@@ -1939,15 +1936,21 @@ void spell_dragon(int level, P_char ch, char *arg, int type, P_char victim,
   mob->specials.act |= ACT_SPEC_DIE;
   remove_plushit_bits(mob);
 
-  GET_MAX_HIT(mob) = GET_HIT(mob) = mob->points.base_hit =
-    dice(GET_LEVEL(mob), 5) + (GET_LEVEL(mob) * 4);
+  GET_MAX_HIT(mob) = GET_HIT(mob) = mob->points.base_hit = dice(GET_LEVEL(mob), 5) + (GET_LEVEL(mob) * 4);
 
   balance_affects(mob);
 
 // play_sound(SOUND_ELEMENTAL, NULL, ch->in_room, TO_ROOM);
 
   setup_pet(mob, ch, 1, PET_NOORDER | PET_NOCASH);
-  group_add_member(ch, mob);
+  if( ch->group )
+  {
+    group_add_member(ch->group->ch, mob);
+  }
+  else
+  {
+    group_add_member(ch, mob);
+  }
   MobStartFight(mob, victim);
 }
 

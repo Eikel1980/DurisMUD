@@ -1,7 +1,9 @@
 #ifndef _VNUM_MOB_H_
 #define _VNUM_MOB_H_
 
-#define VMOB_DRAGONNIA_ARCHBISHOP 6824
-#define VMOB_DRAGONNIA_BISHOP     6825
+#define VMOB_ILLUS_DRAGON           1108
+
+#define VMOB_DRAGONNIA_ARCHBISHOP   6824
+#define VMOB_DRAGONNIA_BISHOP       6825
 
 #endif // _VNUM_MOB_H_

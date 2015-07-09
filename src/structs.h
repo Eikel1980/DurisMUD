@@ -1422,15 +1422,15 @@ struct char_data {
 
   struct affected_type *affected;       /* affected by what spells    */
 
-  P_obj equipment[MAX_WEAR];    /* Equipment array            */
-  P_obj carrying;               /* Head of list               */
+  P_obj equipment[MAX_WEAR];      // Equipment array
+  P_obj carrying;                 // Head of list
 
-  LINKED_OBJECTS *lobj;         /* carts, wagon, etc            */
-  P_char following;             /* Who is char following?      */
-  struct follow_type *followers;/* List of chars followers     */
-  struct group_list *group;
-  struct char_link_data *linked;  /* slave links to other characters */
-  struct char_link_data *linking; /* master links to other characters */
+  LINKED_OBJECTS *lobj;           // carts, wagon, etc
+  P_char following;               // Who is char following?
+  struct follow_type *followers;  // List of chars followers
+  struct group_list *group;       // Points to the head of the group list.
+  struct char_link_data *linked;  // Slave links to other characters
+  struct char_link_data *linking; // Master links to other characters
 };
 
 /* ======================================================================== */
