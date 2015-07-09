@@ -815,6 +815,9 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
            (GET_RACE(ch) == RACE_ARACHNID) || \
            (GET_RACE(ch) == RACE_INSECT))
 
+#define IS_PLANT(ch) ((GET_RACE(ch) == RACE_PLANT) || \
+           (GET_RACE(ch) == RACE_SLIME))
+
 #define IS_HUMANOID(ch) ((GET_RACE(ch) > RACE_NONE) && \
            (GET_RACE(ch) < 31) || \
            (GET_RACE(ch) == RACE_AGATHINON) || \

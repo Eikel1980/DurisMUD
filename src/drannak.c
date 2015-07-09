@@ -1694,7 +1694,7 @@ bool valid_conjure(P_char ch, P_char victim)
       return FALSE;
     }
 
-    if(GET_SPEC(ch, CLASS_SUMMONER, SPEC_NATURALIST) && !IS_ANIMAL(victim))
+    if( GET_SPEC(ch, CLASS_SUMMONER, SPEC_NATURALIST) && !(IS_ANIMAL(victim) || IS_PLANT(victim)) )
     {
       return FALSE;
     }
@@ -1799,7 +1799,7 @@ void learn_conjure_recipe(P_char ch, P_char victim)
     return;
   }
 
-  if(GET_SPEC(ch, CLASS_SUMMONER, SPEC_NATURALIST) && !IS_ANIMAL(victim))
+  if( GET_SPEC(ch, CLASS_SUMMONER, SPEC_NATURALIST) && !(IS_ANIMAL(victim) || IS_PLANT(victim)) )
   {
     send_to_char("You cannot learn to summon a being outside of your area of expertise.\r\n", ch);
     extract_char(victim);
