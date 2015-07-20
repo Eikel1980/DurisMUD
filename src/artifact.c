@@ -1029,6 +1029,11 @@ bool remove_owned_artifact_sql( P_obj arti, int pid )
       qry("INSERT INTO artifacts VALUES(%d, 'Y', %d, %d, 0, %d, SYSDATE())", vnum, ARTIFACT_ONCORPSE, pid,
         IS_IOUN(arti) ? ARTIFACT_IOUN : IS_UNIQUE(arti) ? ARTIFACT_UNIQUE : ARTIFACT_MAIN );
   }
+
+  // Safe to assume that a poofed arti has an entry in artifact_bind.  We don't really care either way though,
+  //   as long as it doesn't have an entry with a pid after poof.
+  qry("UPDATE artifact_bind SET owner_pid = -1, timer = 0 WHERE vnum = %d", vnum);
+
   // If pid <= 0 && there's no existing entry, don't bother.
   return TRUE;
 }
@@ -1352,6 +1357,11 @@ void poof_artifact( P_obj arti )
   {
     cont = NULL;
   }
+
+  // Logit.
+  logit( LOG_ARTIFACT, "poof_artifact: Poofing '%s' %d from %s!", OBJ_SHORT(arti), GET_OBJ_VNUM(arti),
+    owner ? J_NAME(owner) : OBJ_ROOM(arti) ? world[arti->loc.room].name : "unknown location" );
+
   // And get rid of it.
   extract_obj( arti, TRUE );
   // Save where appropriate.
@@ -1935,7 +1945,6 @@ void event_artifact_check_poof_sql( P_char ch, P_char vict, P_obj obj, void * ar
           if( arti )
           {
             poof_artifact( arti );
-            writeCharacter( owner, RENT_POOFARTI, owner->in_room );
           }
           else
           {
@@ -3228,8 +3237,8 @@ void event_artifact_check_bind_sql( P_char ch, P_char vict, P_obj obj, void * ar
     }
     else if( list->owner_pid > 0 )
     {
-      logit(LOG_ARTIFACT, "event_artifact_check_bind_sql(): artifact '%s' %d is unowned, but bound.",
-        arti ? OBJ_SHORT(arti) : "NULL", list->vnum );
+      logit(LOG_ARTIFACT, "event_artifact_check_bind_sql(): artifact '%s' %d is unowned, but bound to '%s' %d.",
+        arti ? OBJ_SHORT(arti) : "NULL", list->vnum, get_player_name_from_pid(list->owner_pid), list->owner_pid );
       debug( "%3d: artifact '%s&n' %d is unowned, but bound.  Setting owner_pid = -1 and timer = 0.",
         ++counter, pad_ansi( arti ? OBJ_SHORT(arti) : "NULL", 35, TRUE).c_str(), list->vnum );
       qry("UPDATE artifact_bind SET owner_pid = -1, timer = 0 WHERE vnum = %d", list->vnum);
