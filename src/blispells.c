@@ -81,6 +81,17 @@ void spell_thornskin(int level, P_char ch, char *arg, int type, P_char victim, P
     act("&+yYour skin gains the toughness of dead plant life, &+Lthorns&+y and brambles grow from your skin!",
       FALSE, victim, 0, 0, TO_CHAR);
   }
+  else if( !IS_AFFECTED5(ch, AFF5_THORNSKIN) && !IS_AFFECTED(ch, AFF_BARKSKIN) )
+  {
+    bzero(&af1, sizeof(af1));
+    af1.type = SPELL_THORNSKIN;
+    af1.duration =  25;
+    af1.bitvector5 = AFF5_THORNSKIN;
+
+    affect_to_char(victim, &af1);
+    act("&+LThorns&+y and brambles grow from $n&+y's skin!", FALSE, victim, 0, 0, TO_ROOM);
+    act("&+LThorns&+y and brambles grow from your skin!", FALSE, victim, 0, 0, TO_CHAR);
+  }
   else
   {
     struct affected_type *af1;
