@@ -822,8 +822,7 @@ void spell_scorching_touch(int level, P_char ch, char *arg, int type,
 }
 
 
-void spell_molten_spray(int level, P_char ch, char *arg, int type,
-                        P_char victim, P_obj obj)
+void spell_molten_spray(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   int  dam;
   struct damage_messages messages = {
@@ -835,31 +834,32 @@ void spell_molten_spray(int level, P_char ch, char *arg, int type,
     "A burst of &+Rmolten spray&n sent from $n&n's fingertips melts $N&n into a puddle of mush."
   };
 
-  if(!(ch) ||
-     !IS_ALIVE(ch) ||
-     !(victim) ||
-     !IS_ALIVE(victim))
-        return;
+  if( !IS_ALIVE(ch) || !IS_ALIVE(victim) )
+  {
+    return;
+  }
 
   do_point(ch, victim);
-  
+
   dam = dice(level, 2) * 4;
-  
-  if(!NewSaves(victim, SAVING_SPELL, 2))
+
+  if( !NewSaves(victim, SAVING_SPELL, 2) )
+  {
     dam = (int) (dam * 1.25);
-  
-  if(IS_UNDEADRACE(victim))
+  }
+
+  if( IS_UNDEADRACE(victim) )
   {
     spell_damage(ch, victim, (int)(dam * 1.25), SPLDAM_FIRE, SPLDAM_NOSHRUG, &messages);
-    
-    if(IS_ALIVE(victim))
+
+    if( IS_ALIVE(victim) )
     {
       send_to_char("&+LThe vile creature &+Rb&+ru&+Rr&+rn&+Rs&n &+Land &+Ys&+yi&+Yz&+yz&+Yl&+ye&+Ys!\r\n", ch);
       send_to_char("&+RThe molten fire &=Lrbursts&n &+Rthrough your defenses and melts away your &+Lundead carcass!\r\n", victim);
     }
     return;
   }
-    
+
   spell_damage(ch, victim, dam, SPLDAM_FIRE, SPLDAM_GLOBE, &messages);
 }
 
