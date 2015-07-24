@@ -542,89 +542,101 @@ void do_camp(P_char ch, char *arg, int cmd)
 void berserk(P_char ch, int duration)
 {
   struct affected_type af;
+  int berserk_quality;
 
-  if(affected_by_spell(ch, SKILL_BERSERK))
+  if( affected_by_spell(ch, SKILL_BERSERK) )
     return;
 
   act("$n fills with &+rBloodLust&N", FALSE, ch, 0, 0, TO_ROOM);
   send_to_char("Your instincts force you into a &+rBloodLust&N!\r\n", ch);
+
+  berserk_quality = (GET_CLASS(ch, CLASS_BERSERKER))
+    ? ( (GET_RACE(ch) == RACE_MOUNTAIN || GET_RACE(ch) == RACE_DUERGAR) ? 3 : 2 ) : 1;
 
   memset(&af, 0, sizeof(af));
   af.type = SKILL_BERSERK;
   af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL;
   af.duration = duration;
 
-  if (GET_CLASS(ch, CLASS_BERSERKER))
+  // Berserkers get better str.
+  if( berserk_quality > 1 )
+  {
     af.modifier = (ch->base_stats.Str * 1 / 7) + number(-5, 5);
+  }
   else
+  {
     af.modifier = (ch->base_stats.Str * 1 / 10) + number(-5, 5);
-
+  }
   af.location = APPLY_STR_MAX;
   affect_to_char(ch, &af);
-  
-  if(GET_CLASS(ch, CLASS_BERSERKER) &&
-    (GET_RACE(ch) == RACE_MOUNTAIN ||
-     GET_RACE(ch) == RACE_DUERGAR))
-        af.modifier = ch->base_stats.Con * 3 / 2 + number(-5, 5);
+
+  // Dwarven berserkers get better con.
+  if( berserk_quality == 3 )
+    af.modifier = ch->base_stats.Con * 3 / 2 + number(-5, 5);
   else
     af.modifier = ch->base_stats.Con + number(-5, 5);
-
   af.flags |= AFFTYPE_NOMSG;
   af.location = APPLY_CON_MAX;
   affect_to_char(ch, &af);
 
-  if(!GET_CLASS(ch, CLASS_BERSERKER))
+  // Non-zerkers get int penalty.
+  if( berserk_quality == 1 )
   {
-  af.modifier = -(ch->base_stats.Int * 2 / 3);
-  af.location = APPLY_INT;
-  affect_to_char(ch, &af);
+    af.modifier = -(ch->base_stats.Int * 2 / 3);
+    af.location = APPLY_INT;
+    affect_to_char(ch, &af);
   }
-  
-  if(GET_CLASS(ch, CLASS_BERSERKER) &&
-    (GET_RACE(ch) == RACE_MOUNTAIN ||
-     GET_RACE(ch) == RACE_DUERGAR))
-        af.modifier = -(ch->base_stats.Wis * 1 / 5);
+
+  // Dwarven berserkers get less of a wis penalty.
+  if( berserk_quality == 3 )
+    af.modifier = -(ch->base_stats.Wis * 1 / 5);
   else
     af.modifier = -(ch->base_stats.Wis * 2 / 3);
-
   af.location = APPLY_WIS;
   affect_to_char(ch, &af);
-  
-  if(GET_CLASS(ch, CLASS_BERSERKER) &&
-    (GET_RACE(ch) == RACE_MOUNTAIN ||
-     GET_RACE(ch) == RACE_DUERGAR))
-  {
-    if(GET_CHAR_SKILL(ch, SKILL_BERSERK) == 100 &&
-       GET_CHAR_SKILL(ch, SKILL_INDOMITABLE_RAGE) == 100)
-        af.modifier = -2;
-    else
-      af.modifier = -1;
-  }
-  else if(!GET_CLASS(ch, CLASS_BERSERKER))
-    af.modifier = -1;
-  else
-    af.modifier = 0;
-  
-  af.location = APPLY_COMBAT_PULSE;
-  affect_to_char(ch, &af);
 
-  if(GET_CLASS(ch, CLASS_BERSERKER) &&
-    (GET_RACE(ch) == RACE_MOUNTAIN ||
-     GET_RACE(ch) == RACE_DUERGAR))
-        af.modifier = ch->base_stats.Pow + number(-5, 5);
-  else if(!GET_CLASS(ch, CLASS_BERSERKER))
-    af.modifier = (ch->base_stats.Pow / 2) + number(-5, 5);
-  else 
-    af.modifier = 0;
-    
-  af.location = APPLY_POW_MAX;
-  affect_to_char(ch, &af);
-  
-  if(GET_CLASS(ch, CLASS_BERSERKER) &&
-    (GET_RACE(ch) == RACE_MOUNTAIN ||
-     GET_RACE(ch) == RACE_DUERGAR))
+  // Dwarven berserkers with max indom. rage and zerk get a 2 point combat pulse bonus.
+  if( berserk_quality == 3 && GET_CHAR_SKILL(ch, SKILL_BERSERK) == 100
+    && GET_CHAR_SKILL(ch, SKILL_INDOMITABLE_RAGE) == 100 )
   {
-    af.modifier = GET_LEVEL(ch) * 4;
+    af.modifier = -2;
+    af.location = APPLY_COMBAT_PULSE;
+    affect_to_char(ch, &af);
+  }
+  // All other zerkers get a 1 point combat pulse bonus.
+  else if( berserk_quality > 1 )
+  {
+    af.modifier = -1;
+    af.location = APPLY_COMBAT_PULSE;
+    affect_to_char(ch, &af);
+  }
+
+  // Dwarven berserkers get TOIW and a little pow bonus (8-12 @ 90 pow = mountain 100, 7-11 @ 85 pow = duergar 100).
+  if( berserk_quality == 3 )
+  {
+    af.bitvector3 = AFF3_TOWER_IRON_WILL;
+    af.location = APPLY_POW_MAX;
+    af.modifier = ch->base_stats.Pow/8 + number(-2, 2);
+    affect_to_char(ch, &af);
+  }
+  // Other zerkers get TOIW and a tiny pow bonus.
+  else if( berserk_quality == 2 )
+  {
+    af.bitvector3 = AFF3_TOWER_IRON_WILL;
+    af.location = APPLY_POW_MAX;
+    // Cases with no max_stat equipment:
+    // Worst case: Mino with 80 base pow -> (52 actual + 8) / 20 = 3 -> 1-5 pow.
+    // Best case: Human with 100 base pow -> (105 actual + 8) / 20 = 5 -> 3-7 pow.
+    af.modifier = (ch->base_stats.Pow + 8) / 20 + number(-2, 2);
+    affect_to_char(ch, &af);
+  }
+  af.bitvector3 = 0;
+
+  // Dwarven berserkers get extra hps. (We don't want them to lose hps @ lvls 1-5, 0 hps @6 -> no point).
+  if( berserk_quality == 3 && GET_LEVEL(ch) > 6 )
+  {
+    // 100 at lvl 56.
+    af.modifier = GET_LEVEL(ch) * 2 - 12;
     af.location = APPLY_HIT;
     affect_to_char(ch, &af);
   }
