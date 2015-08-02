@@ -606,6 +606,7 @@ void do_trans(P_char, char *, int);
 void do_uninvite(P_char, char*, int);
 void do_vis(P_char, char *, int);
 void do_which(P_char ch, char *args, int cmd);
+void do_whois(P_char ch, char *args, int cmd);
 void do_wizlock(P_char, char *, int);
 void do_wizmsg(P_char, char *, int);
 void do_zreset(P_char, char *, int);

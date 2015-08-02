@@ -588,7 +588,7 @@ extern unsigned int game_locked;
 #define CMD_ECHOG          561
 #define CMD_ECHOE          562
 #define CMD_ASCLIST        563 // Association list
-#define CMD_UNUSED         564 // Unused command.
+#define CMD_WHOIS          564
 #define CMD_FREE           565 // Keyword?
 #define CMD_ECHOT          566
 #define CMD_ROUNDKICK      567
