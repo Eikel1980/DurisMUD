@@ -1,0 +1,292 @@
+#4908
+iron chest~
+an &N&+ciron&N &N&+Lchest&N~
+An &N&+ciron&N&+L chest&N rests against the wall.&N~
+~
+15 15 3 0 7 0 4096 0 0 0 0
+1000 5 0 1000 0 0 0 0
+1000 1 100
+E
+iron chest~
+   This treasure chest appears to be constructed from iron.  A large
+latch is visible on the front, used for locking the chest, but no lock
+hangs from the hook.
+~
+#4909
+wooden treasure chest~
+a &N&+ywooden &N&+Ytreasure&N&+y chest&N~
+A &N&+ywooden &N&+Ytreasure&N&+L chest lies here near the wall.&N~
+~
+15 6 3 0 8 0 0 0 0 0 0
+1000 5 0 1000 0 0 0 0
+1000 1 100
+E
+wooden treasure chest~
+   This wooden treasure chest appears to made of a hard wood.  There
+are a few metal bands securing the chest and large bolts can be seen
+holding together the sides.&N
+~
+#4910
+wooden rack~
+&N&+ya wooden rack&N~
+A short &N&+ywooden rack&N rests on the north wall.&N~
+~
+15 15 6 0 11 0 0 0 0 0 0
+100 0 0 100 0 0 0 0
+1000 1 100
+E
+wooden rack~
+   This long wooden rack is used for the storage of money bags.&N
+~
+#4911
+balors balor balor's whip~
+&+La balor's whip&N~
+A wicked looking &N&+Lwhip&N lies here discarded.&N~
+~
+5 14 2 0 12 0 8193 8193 64 0 0
+14 1 1 0 0 0 0 0
+2 1 100
+E
+balors balor balor's whip~
+   This vile whip was crafted in one of the lower planes.  The tip is
+forked and very sharp.  The handle is wrapped with flesh and a long
+tassle dangles from the end.&N
+~
+A
+25 1
+#4912
+badge purity~
+a &N&+cbadge&N of &N&+Wpurity&N~
+A badge of some holy order lies here.&N~
+~
+11 22 1 0 12 0 1 2097153 2 0 0
+0 0 0 0 0 0 0 0
+1 25000 100
+E
+badge purity~
+   This badge has been blessed by a priest.  It depicts an eye over
+a green field.&N
+~
+A
+13 7
+A
+4 2
+#4913
+belt mining~
+&Na &N&+Lbelt&N of &N&+Lmining&N~
+&NA &N&+Lblack belt&N lies here, discarded carelessly.&N~
+~
+9 14 1 0 7 0 4096 2049 0 0 0
+10 0 0 1 0 0 0 0
+2 10000 100
+E
+belt mining~
+   This black belt is equipped with several handles from which
+to hang mining implements.  This is used by the actual miners in
+the &N&+yhalfling&N&+c silver &N&+Lmine&N.&N
+~
+A
+14 15
+A
+2 2
+#4914
+simple chisel~
+a simple &N&+cchisel&N~
+A simple &N&+cchisel&N lies here.&N~
+~
+5 15 1 0 7 0 8192 8193 0 0 0
+2 3 3 0 0 0 0 0
+1 1500 100
+E
+simple chisel~
+   This tool is used for shaping wood.  It has a simple wooden handle.&N
+~
+A
+5 1
+#4915
+golden boomerang curved stick~
+a &N&+Ygolden &N&+rboo&N&+Lmer&N&+rang&N~
+A &N&+Ygolden &Ncurved stick lies here forgotten.&N~
+~
+6 24 3 0 7 0 273 8193 0 0 0
+1 1 0 1 0 0 0 0
+1 2500 100
+E
+golden boomerang curved stick~
+   This boomerang is a golden color.  It is quite hard and an
+impressive weapon.&N
+~
+A
+1 2
+#4916
+bums knapsack~
+&N&+La bums knapsack&N~
+A large &N&+Lblack knapsack&N lies in a lumpy pile here.&N~
+~
+15 3 2 0 4 0 8192 4194305 0 0 0
+300 5 0 200 0 0 0 0
+1 150 100
+E
+bums knapsack~
+   This old knapsack is dirty, threadbare and very smelly.  One large
+flap on top is secured by a buckle, otherwise it is all one large bag.
+~
+A
+28 -1
+A
+13 5
+#4917
+cotton backpack bp~
+&N&+ya &N&+Wcotton&N&+y backpack&N~
+A large &N&+ybackpack&N lies in a pile here.&N~
+~
+15 15 2 0 8 0 8192 4194305 0 0 0
+300 5 0 300 0 0 0 0
+1 4500 100
+E
+cotton backpack~
+   This large backpack is made of cotton and leather.  The straps are
+long and adjustable to fit any body type.  The backpack is mostly white,
+but it has gotten dirty recently.  White is so hard to keep clean.&N
+~
+A
+14 10
+#4918
+pentagram~
+a &N&+rpen&N&+Ltag&N&+rram&N~
+A &N&+rpen&N&+Ltag&N&+rram&N lies here discarded.&N~
+~
+11 10 1 0 11 0 1 5 0 0 0
+0 0 0 0 0 0 0 0
+1 8500 100
+E
+pentagram~
+   This small symbol has been crafted from &N&+Wbone&N.  The simple chain
+it dangles from is slightly corroded from age.  &N
+~
+A
+20 -1
+A
+1 2
+#4919
+mining cart~
+&N&+ya mining cart&N~
+A &N&+ymining cart&N rests upon the tracks here.&N~
+~
+15 5 3 0 5 0 0 0 1024 0 0
+1000 0 0 1000 0 0 0 0
+1000 1 100
+E
+mining cart~
+   This &N&+ywooden mining cart&N rests upon to &N&+Cmetal axles&N.  The grooved
+wheels fit perfectly onto the rail system.
+~
+#4920
+wooden crate~
+&+ywooden crate&N~
+&NA &N&+ywooden crate&N resides in the corner.&N~
+~
+15 6 3 0 7 0 0 0 0 0 0
+100 1 0 100 0 0 0 0
+450 0 100
+E
+wooden crate~
+   This wooden crate seems to be used as a storage bin.
+~
+#4921
+mining pick~
+a mining pick~
+A old mining pick lies here.&N~
+~
+5 15 3 0 7 0 8192 8193 0 0 0
+11 2 4 0 0 0 0 0
+5 150 65
+E
+mining pick~
+&N  This mining pick is old and well used.  &N
+~
+A
+2 1
+#4932
+wooden desk~
+&+ya wooden desk&N~
+A &N&+ywooden desk&N covered in &N&+Wpapers&N rests here.&N~
+~
+15 6 3 0 7 0 0 0 1024 0 0
+100 15 4954 100 0 0 0 0
+5000 0 100
+E
+wooden desk~
+   This wooden desk is covered in papers.  It has a few drawers, but
+they are locked.  The wood seems old, but it is highly posished so it
+gives off a shine.&N
+~
+#4943
+key~
+the engineers key~
+The engineers key lies here forgotten.&N~
+~
+18 15 1 0 10 0 1 16385 0 0 0
+0 0 0 0 0 0 0 0
+1 1 100
+E
+key~
+   The engineers key hums with magic.&N
+~
+#4954
+key~
+a desk key~
+A key made for a desk lies here forgotten.&N~
+~
+18 15 1 0 7 0 4096 16385 0 0 0
+0 0 0 0 0 0 0 0
+1 1 100
+E
+key~
+   This is a steel key.&N
+~
+#4965
+wooden desk~
+&+ya wooden desk&N~
+A &N&+ywooden desk&N covered in &N&+Wpapers&N rests here.&N~
+~
+15 6 3 0 7 0 0 0 1024 0 0
+100 1 0 100 0 0 0 0
+5000 0 100
+E
+wooden desk~
+&N   This&N&+y wooden desk &Nis covered in &N&+Wpapers&N.  It has a few &N&+ydrawers&N.
+The &N&+ywood &Nseems old, but it is highly posished so it gives off a shine.&N
+~
+#4976
+vault key~
+the vault key~
+The vault key lies here, discarded, unwanted.  &N~
+~
+18 21 1 0 11 0 1 16385 0 0 0
+0 0 0 0 0 0 0 0
+1 1 50
+E
+vault key~
+   This small copper key has many teeth.  It seems to be a very
+advanced key.  And old. Very old.
+~
+#4987
+schematic map~
+a wall map~
+A large schematic hangs on the wall.&N~
+~
+13 15 3 0 7 0 67117056 0 0 0 0
+0 0 0 0 0 0 0 0
+12 1 100
+E
+schematic map~
+#&N&+c========================================= &NCCCCP
+#          x - &N&+Lnew tunnel&N                   cccp
+#&N&+Lbellows&N\  x                              CCCCB
+#       xx H E - &N&+GEngineers &N&+yoffice&N        CCD
+#          x&N&+r\&N                               CCCD
+#          x&N&+r \&N                           CCCD
+#&N&+Lmain line x &N&+r \&N&N&+W - &N&+LDon't go down!        CCPD
+#&N&+c=========================================
+~

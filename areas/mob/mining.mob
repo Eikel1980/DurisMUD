@@ -1,0 +1,416 @@
+#4900
+chef cook~
+a barracks cook~
+&NA very fat &N&+Wcook&N stands here cooking.&N
+~
+   This fat halfling is obviously the camp cook.  He provides
+the miners with food at set intervals between shifts.  He is
+average height but very fat.  His hair is brown and whispy.
+His eyes are blue and unremarkable.  &N
+~
+2058 0 0 0 33554440 0 0 0 450 S
+pf 0 1 0 -1
+33 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4901
+exhausted halfling~
+an exhausted &N&+yhalfling&N~
+An exhaused &N&+yhalfling&N tries to relax here.&N
+~
+&N   This halfling appears to be quite tired.  He is relatively
+clean but his hair is matted and in need of a wash.  He is very
+average in every way.  He seems to be well nourished and healthy.
+Little about him warrants further inspection.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 1 0 -1
+32 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4902
+halfling naked~
+&N&+Wa naked &N&+yhalfling&N~
+A naked &N&+yhalfling&N stands here trying to &N&+Lpoop&N.&N
+~
+   This naked &N&+yhalfling&N appears to be in some pain. His&N&+B pantaloons&N are
+wrapped around his ankles, but his &N&+Mshirt&N is no where to be found.  His
+hair is cropped short and appears to be dyed &N&+Lblack&N.  His left eye darts
+around quickly, while the right eye barely moves.  His nose is crooked
+and has a large &N&+Gwart&N on the tip of it.  &N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 2048 0 -1
+30 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4903
+filthy squatter bum~
+&+La filthy squatter&N~
+A filthy &N&+Lsquatter&N hides here in the mine.&N
+~
+   This &N&+Lfilthy bum&N seems to have made himself a home here in the
+&N&+Lmine&N.  How he avoids detection is up for speculation.  He looks
+like the kind that can sneak around.  He is very &N&+Ldirty&N.&N
+~
+2074 0 0 0 8 0 0 0 0 S
+pf 0 65536 0 -1
+40 0 0 1d1+1 1d1+1
+0.0.0.0 0
+5 5 1
+#4904
+drunk halfling~
+&Na drunk &N&+yhalfling&N~
+A drunk &N&+yhalfling&N stands here.&N
+~
+   This short creature appears to be quite intoxicated.  His &N&+yhair&N
+is dirty and some dried &N&+Wvomit&N appears to be stuck in the lower half
+of his&N&+y beard&N.  He wears the garb of a common worker and the shoes
+of a pauper.  He is quite&N&+L dirty&N from his last work shift, or a fall
+off the side of the mountain.&N
+~
+8 0 0 0 64 0 0 0 0 S
+pf 0 4096 0 -1
+42 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4905
+halfling miner~
+a &N&+yhalfling&N miner&N~
+A &N&+yhalfling &Nminer stands here chipping away at the rock.&N
+~
+   This halfling miner has seen many seasons working this rock.  He
+has a calm demeanor and great work ethic.  His ears are bigger than
+most, but they are usually covered by his miners helmet.  His arms
+are criss-crossed with scars and tattoos.  His hands appear to be
+as strong as iron.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 7 1 0 2
+1 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4906
+halfling worker~
+&Na &N&+yhalfling&N worker&N~
+A &N&+yhalfling&N worker loads rock into a&N&+y wheelbarrow&N here.&N
+~
+   This &N&+yhalfling&N is in charge of hauling away excess&N&+L rock&N.  He is quite
+dirty, short and heavily muscled.  His arms are rippling with muscles
+quite large for one his size.  His hair is a dark &N&+Lblack color&N and he
+appears to be very attentive to his work.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 1 0 -1
+45 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4907
+strong halfling~
+a strong &N&+yhalfling&N~
+A strong &N&+yhalfling&N stacks up &N&+ywood&N here.&N
+~
+   This &N&+yhalfling&N is quite muscular and covered with sweat.  His
+main job is the stacking and sorting of &N&+ywood&N, but he looks like
+he could handle himself in a fight as well. His clothes are
+covered in &N&+ysawdust&N and patches of his shirt are damp with sweat.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 1 1 -1
+45 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4908
+halfling drill driller~
+the &N&+yhalfling&N driller&N~
+A &N&+yhalfling&N runs the drill press here.&N
+~
+&N   This &N&+yhalfling&N appears to be about middle aged.  His cheecks are
+&N&+Rrosy&N and his smile is wide.  He has a small frame, but tough and
+wiry muscles.  His hands are gnarled and hard looking from years of
+working with &N&+ywood&N.  Although his clothes are shabby, he seems to
+have an air of importance.  &N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 1 0 -1
+42 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4909
+halfling chiseller chisel~
+a &N&+yhalfling&N chiseller&N~
+A &N&+yhalfling chiseller&N stands here working on a project.&N
+~
+&N   This &N&+yhalfling&N craftsman is skilled in the trades involving &N&+ywood&N.
+His posture is poor from years of working over his&N&+y materials&N and his
+feet seem smaller than they should be.  Not overly muscular, this
+&N&+yhalfling &Nmakes his living from fine tuning &N&+ywooden&N items.  He is very
+important for the maintenance of the &N&+Lmine&N.  &N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 1 0 -1
+45 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4910
+halfling miller~
+a &N&+yhalfling&N miller&N~
+A &N&+yhalfling&N miller works on processing some &N&+ylumber&N.&N
+~
+   This&N&+y halfling&N is stationed at the &N&+ysawmill&N within the&N&+L mine&N.  He is
+very strong and stout looking, almost like a &N&+Ymountain dwarf&N.  His face
+is free of any &N&+Lbeard&N or &N&+ymustache&N, but his big bushy &N&+yeyebrows&N make his
+face look &N&+Ldark&N and forboding.  He is covered in &N&+ysawdust&N and sweat, not
+to mention the unpleasant odor of hard work.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 1 0 -1
+44 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4911
+halfling miner~
+a halfling miner~
+A &N&+yhalfling&N miner works the stone here.&N
+~
+   This &N&+yhalfling&N&+L miner&N is currently quite exhausted.  His body is
+covered in sweat and the &N&+wdust &Nfrom crushed &N&+Lrock&N.  He has a small
+beard, which is in the process of turning &N&+wgrey&N.  He is middle aged,
+incredible for a &N&+Lminer&N, normally a profession reserved for the
+youth.  His hands are incredibly strong and his arms are twice the
+size of his legs.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 16384 1 -1
+45 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4912
+halfling cart pusher~
+a &N&+yhalfling&N cart pusher&N~
+A &N&+yhalfling&N cart pusher shovels &N&+ysawdust&N here.&N
+~
+   This &N&+yhalfling &Nis covered with&N&+y sawdust&N and &N&+Ldirt&N.  He appears to
+have been sweating profusely, the &N&+ysawdust &Nsticking to him like&N&+y mud&N.
+He has a neatly shaved &N&+Lgoatee&N that dangles with hardened &N&+ysawdust&N.
+His eyes are barely visible under the thick, bushy&N&+y eyebrows &Ncovered
+in &N&+ysawdust&N.&N
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 64 1 -1
+42 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4913
+halfling supervisor~
+a &N&+yhalfling &Nsupervisor&N~
+A &N&+yhalfling&N supervisor watches over the operations here.&N
+~
+   This &N&+yhalfling &Nis wearing a small patch on his &N&+ycloak&N that indicates
+he is a supervisor.  He is middle aged and starting to show&N&+w gray&N in
+his &N&+Lbeard &Nand &N&+yhair&N.  He is friendly and quick to laugh but carries with
+him the mantle of command.  His&N&+y clothes&N are quite clean compared to the
+rest of his comrades, but even he has &N&+Lblack smudges&N on his hands and face.&N
+~
+67110922 0 0 0 0 0 0 0 0 S
+pf 0 1 3 -1
+50 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4914
+halfling engineer~
+&Na &N&+yhalfling&N &+Gengineer&N~
+The lead &N&+yhalfling&N&+G engineer&N stands here in contemplation.&N
+~
+   This &N&+yhalfling&N is dressed finer than the rest of those who toil
+in the&N&+L mine&N.  His &N&+yhair&N is slicked back and pulled into a &N&+yponytail&N.
+While he doesn't have any armor or fancy jewelry on, he does have
+a small&N&+r pen&N&+Ltag&N&+rram&N he wears about his neck.  He is the lead engineer
+for the &N&+yhalfling &N&+csilver &N&+Lmine&N.  His responsibilities are few, but
+his importance is great.  His hand stays in his pocket, fiddling
+with something.&N
+~
+67110922 128 0 0 268435466 0 0 0 400 S
+pf 0 16384 1 -1
+50 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4915
+vaultkeeper keeper dwarf~
+&N&+Lthe vaultkeeper&N~
+The &N&+Lvaultkeeper&N of the &N&+yhalfling &N&+csilver&N&+L mine &Nstands here.&N
+~
+   This very large&N&+Y mountain dwarf &Nhas been hired by the&N&+y halflings &Nto
+protect their collected&N&+Y wealth&N.  He is a veteran of several wars and
+has the &N&+Lscars&N to prove it.  His &N&+Lbeard&N is nearly as long as a normal
+&N&+Ydwarf&N is tall.  His muscles are corded and ripple with movement as he
+paces the interior of the &N&+Wvault&N.  He wears simple, light-weight armor
+and has full range of motion with his arms and legs.  His skin is tan
+and looks to be recently wind burned.  His eyes twinkle with the
+promise of death.  &N
+~
+2122 1 0 0 8 0 0 0 500 S
+pm 0 1 1 4
+45 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4916
+furry rat~
+&N&+ya furry rat&N~
+&NA &N&+yfurry rat&N darts across the floor.&N
+~
+&N   This &N&+yfurry rat&N is constantly searching for&N&+y food&N.  It has thick,
+&N&+ycoarse fur&N that covers all but its &N&+Lnose&N.  The &N&+Lnose &Nis all &N&+Lblack&N and
+twitches as it searches for sustenance.  The long hairy &N&+ytail&N is the
+same length as its body.  The sharp &N&+Lclaws&N on the rear feet look to
+be rather fierce.&N
+~
+2184 0 0 0 0 0 0 2 0 S
+a 0 0 0 1
+4 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4917
+halfling rope puller~
+a &N&+yhalfling rope &Npuller&N~
+A &N&+yhalfling&N works on pulling up some &N&+yrope&N.&N
+~
+   This &N&+yhalfling is kept busy "working the &N&+yropes&N" which consists
+mainly of pulling&N&+y ropes&N.  His main duty is to bring up and lower
+down items for the operation of the &N&+Lmine&N.  He is quite short but
+has a great deal of muscle mass.  His hands are callused and show
+some dry, flaky skin.
+~
+2058 0 0 0 0 0 0 0 0 S
+pf 0 0 0 -1
+40 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4918
+halfling bellowman~
+&N&+La &N&+yhalfling&N&+L bellowman&N~
+A &N&+yhalfling&N&+L bellowman &Nworks the apparatus here.&N
+~
+   This short halfling has a lopsided body, large on top, small
+on bottom.  His thick muscles on his arms seem to be about ready
+to burst.  He is working the top side of the bellows themselves,
+using his body to pump air into the silver mine.  He is about
+middle aged and has a good attitude.&N
+~
+2058 0 0 0 0 0 0 0 210 S
+pf 0 16384 2 -1
+41 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4919
+red demon~
+&N&+ra red demon&N~
+A &N&+rred demon&N picks away at the &N&+Lstone&N here.&N
+~
+&N   This &N&+rdemon &Nis covered in a &N&+rred leathery hide&N.  Four small &N&+Lhorns&N
+just from his head and his mouth is filled with razor sharp&N&+W teeth&N.
+The &N&+rdemon &Nisn't overly large, but seems to be very powreful.  His
+hands terminate with long, diamond sharp &N&+Ltalons&N that it uses to cut
+it's way through the&N&+L stone&N.&N
+~
+2058 0 0 0 8 0 0 0 -1000 S
+x 0 1 0 -1
+41 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#4920
+halfling mine guard~
+a &N&+yhalfling&N&+L mine guard&N~
+A large &N&+yhalfling&N guards the entrance to the &N&+Lmine&N here.&N
+~
+   This rather large &N&+yhalfling&N is tasked with protecting the &N&+Lmine &Nfrom
+intruders.  He is very muscular and handsome as the day is long.  His
+eyes twinkle with mischief and wonderment.  His eyes are a deep shade
+of &N&+ybrown &Nand his&N&+W teeth &Nare as &N&+Wwhite &Nas the &N&+Wsnow&N.  His feet are bare
+and quite &N&+yhairy&N.&N
+~
+2058 384 0 0 152 0 0 0 800 S
+pf 0 1 2 4
+60 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4921
+worried priest~
+&Na worried &N&+Wpriest&N~
+A worried &N&+Wpriest&N prays frantically in the corner.&N
+~
+&N   This priest hails from great &N&+LTharnadia&N.  He is a very clean
+and meticulous man, wearing the holy vestments of his church.
+Obviously not &N&+yhalfling&N, it is puzzling to see one of his kind
+in the&N&+c silver&N&+L mine&N.  He seems to have a lot on his mind and prays
+frantically for guidance.  &N
+~
+10250 0 0 0 8 0 0 0 1000 S
+PH 0 32 3 -1
+20 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4922
+balor vicious~
+&Na &N&+Lvicious balor&N~
+&NA &N&+Lbalor&N yells loudly, wreathed in &N&+rflames&N.&N
+~
+&N   This large &N&+Ldemon&N is wreathed in &N&+rflames&N.  He is quite tall and
+has giant &N&+Lleathery wings&N.  His &N&+rhorned head&N is concealed in&N&+L shadow&N.
+His mere presence exudes power and fear, the barbed whip doesn't
+hurt either.  This &N&+Lbalor &Nis a&N&+r demon&N of exceptional strength and is
+a great general, a true god amongst &N&+rdemons&N.&N
+~
+26666 1 0 0 603979784 1 67108864 0 -1000 S
+x 0 4096 1 6
+51 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4923
+janitor~
+a &N&+Rservice tunnel&N janitor&N~
+A janitor stands here cleaning the &N&+Rservice tunnel&N.
+~
+   This old &N&+yhalfling &Nis an expert in cleaning. His hair is&N&+w gray&N
+and his back is stooped.  While he is not proficient in martial
+weapons, he is proficient in the cleaning and polishing of &N&+Lstone&N.
+Little about him is memorable, the only exception being his grin.
+He wears it often and always across his entire face.&N
+~
+10316 0 0 0 8 0 0 0 200 S
+pf 0 64 1 -1
+46 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4924
+tired halfling~
+&Na tired &N&+yhalfling&N~
+A tired &N&+yhalfling&N leans against his &N&+ybunk&N here.&N
+~
+   This&N&+y halfling &Nappears on the verge of exhaustion.  His skin is pale
+and he is covered in sweat.  There is no sense of urgency from this &N&+yhalfling&N
+and he appears to be about to fall asleep.  He is young, probably in his
+early twenties and much skinnier than he should be.  His hair is curly and
+getting rather long.&N
+~
+2058 128 0 0 8 0 0 0 600 S
+pf 0 32 2 -1
+36 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1
+#4925
+mine chief~
+&N&+Lthe mine chief&N~
+The &N&+Lmine chief&N stands here with his arms crossed.&N
+~
+   This stout &N&+yhalfling&N is the man in charge of the entire &N&+csilver&N&+L mine&N.
+He is a coordinator and motivator.  He is not above manual labor which
+is evident by his large muscles and calloused hands.  He has a neatly
+trimmed &N&+Lgoatee &Nand big bushy&N&+L sideburns&N.  He wears simple clothing and
+expensive shoes.&N
+~
+10250 128 0 0 0 4 0 0 200 S
+pf 0 1 1 -1
+47 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 1

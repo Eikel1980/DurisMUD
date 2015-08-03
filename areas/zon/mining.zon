@@ -1,0 +1,183 @@
+#1
+&N&+LThe &N&+yHalfling&N&+c Silver&N&+L Mine&N~
+4968 2 0 20 30 3
+*
+* Zone edited with durisEdit v2.99de
+*
+*
+D 0 4905 0 1 100 0 0 0
+*     north exit from "Before a Large Wooden Door" to
+*     "Inside the Halfling Worker Barracks" - closed
+*
+D 0 4906 2 1 100 0 0 0
+*     south exit from "Inside the Halfling Worker Barracks" to
+*     "Before a Large Wooden Door" - closed
+*
+D 0 4908 0 2 100 0 0 0
+*     north exit from "Before the Mines Vault" to
+*     "Inside the Silver Mine Vault" - closed/locked
+*
+D 0 4962 2 2 100 0 0 0
+*     south exit from "Inside the Silver Mine Vault" to
+*     "Before the Mines Vault" - closed/locked
+*
+D 0 4910 1 1 100 0 0 0
+*     east exit from "The Barracks Kitchen" to
+*     "A Food Pantry" - closed
+*
+D 0 4926 3 1 100 0 0 0
+*     west exit from "A Food Pantry" to
+*     "The Barracks Kitchen" - closed
+*
+D 0 4914 1 1 100 0 0 0
+*     east exit from "A Hub in the Silver Mine" to
+*     "The Engineers Office" - closed
+*
+D 0 4942 3 1 100 0 0 0
+*     west exit from "The Engineers Office" to
+*     "A Hub in the Silver Mine" - closed
+*
+D 0 4914 3 1 100 0 0 0
+*     west exit from "A Hub in the Silver Mine" to
+*     "The Bellows Tunnel" - closed
+*
+D 0 4940 1 1 100 0 0 0
+*     east exit from "The Bellows Tunnel" to
+*     "A Hub in the Silver Mine" - closed
+*
+D 0 4914 5 2 100 0 0 0
+*     down exit from "A Hub in the Silver Mine" to
+*     "A Dark and Long Shaft" - closed/locked
+*
+D 0 4943 4 2 100 0 0 0
+*     up exit from "A Dark and Long Shaft" to
+*     "A Hub in the Silver Mine" - closed/locked
+*
+D 0 4917 1 1 100 0 0 0
+*     east exit from "The Central Line" to
+*     "Inside a Service Tunnel" - closed
+*
+D 0 4918 3 1 100 0 0 0
+*     west exit from "Inside a Service Tunnel" to
+*     "The Central Line" - closed
+*
+D 0 4919 0 1 100 0 0 0
+*     north exit from "The End of the Service Tunnel" to
+*     "A Service Tunnel Bathroom" - closed
+*
+D 0 4920 2 1 100 0 0 0
+*     south exit from "A Service Tunnel Bathroom" to
+*     "The End of the Service Tunnel" - closed
+*
+D 0 4922 2 1 100 0 0 0
+*     south exit from "The Central Line" to
+*     "The Entrance to the Service Tunnel" - closed
+*
+D 0 4923 0 1 100 0 0 0
+*     north exit from "The Entrance to the Service Tunnel" to
+*     "The Central Line" - closed
+*
+D 0 4926 5 5 100 0 0 0
+*     down exit from "A Food Pantry" to
+*     "The Cellar of the Food Pantry" - closed/secret
+*
+D 0 4963 4 1 100 0 0 0
+*     up exit from "The Cellar of the Food Pantry" to
+*     "A Food Pantry" - closed
+*
+D 0 4961 4 5 100 0 0 0
+*     up exit from "The End of the Rough Tunnel" to
+*     "Inside the Silver Mine Vault" - closed/secret
+*
+D 0 4962 5 5 100 0 0 0
+*     down exit from "Inside the Silver Mine Vault" to
+*     "The End of the Rough Tunnel" - closed/secret
+*
+*
+O 0 4920 1 4903 100 0 0 0          * wooden crate
+P 1 4921 9 4920 100 0 0 0          *   a mining pick
+O 0 4965 1 4911 100 0 0 0          * a wooden desk
+O 0 4987 1 4914 100 0 0 0          * a wall map
+O 0 4919 4 4915 100 0 0 0          * a mining cart
+O 0 4919 4 4925 100 0 0 0          * a mining cart
+O 0 4919 4 4933 100 0 0 0          * a mining cart
+O 0 4919 4 4937 100 0 0 0          * a mining cart
+O 0 4932 1 4942 100 0 0 0          * a wooden desk
+P 1 4943 1 4932 100 0 0 0          *   the engineers key
+O 0 4908 1 4962 100 0 0 0          * an iron chest
+O 0 4909 1 4962 100 0 0 0          * a wooden treasure chest
+O 0 4910 1 4962 100 0 0 0          * a wooden rack
+P 1 4915 1 4910 100 0 0 0          *   a golden boomerang
+O 0 4917 1 4964 100 0 0 0          * a cotton backpack
+O 0 4976 10 4967 100 0 0 0         * the vault key
+*
+M 0 4920 6 4904 100 0 0 0          * a halfling mine guard
+M 0 4920 6 4904 100 0 0 0          * a halfling mine guard
+M 0 4920 6 4905 100 0 0 0          * a halfling mine guard
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4920 6 4905 100 0 0 0          * a halfling mine guard
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4920 6 4906 100 0 0 0          * a halfling mine guard
+M 0 4920 6 4906 100 0 0 0          * a halfling mine guard
+M 0 4901 1 4907 100 0 0 0          * an exhausted halfling
+M 0 4921 1 4907 100 0 0 0          * a worried priest
+M 0 4924 1 4907 100 0 0 0          * a tired halfling
+M 0 4904 1 4908 100 0 0 0          * a drunk halfling
+M 0 4900 1 4910 100 0 0 0          * a barracks cook
+M 0 4916 9 4911 100 0 0 0          * a furry rat
+M 0 4925 1 4911 100 0 0 0          * the mine chief
+M 0 4917 1 4912 100 0 0 0          * a halfling rope puller
+M 0 4916 9 4914 100 0 0 0          * a furry rat
+M 0 4906 5 4914 100 0 0 0          * a halfling worker
+M 0 4906 5 4916 100 0 0 0          * a halfling worker
+M 0 4906 5 4919 100 0 0 0          * a halfling worker
+M 0 4902 1 4920 100 0 0 0          * a naked halfling
+M 0 4911 5 4921 100 0 0 0          * a halfling miner
+E 1 4913 1 13 100 0 0 0            *   a belt of mining
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4916 9 4923 100 0 0 0          * a furry rat
+M 0 4911 5 4925 100 0 0 0          * a halfling miner
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4916 9 4926 100 0 0 0          * a furry rat
+M 0 4912 1 4928 100 0 0 0          * a halfling cart pusher
+M 0 4903 1 4929 100 0 0 0          * a filthy squatter
+E 1 4916 1 27 100 0 0 0            *   a bums knapsack
+M 0 4907 2 4930 100 0 0 0          * a strong halfling
+M 0 4907 2 4930 100 0 0 0          * a strong halfling
+M 0 4910 1 4931 100 0 0 0          * a halfling miller
+M 0 4913 1 4931 100 0 0 0          * a halfling supervisor
+M 0 4908 1 4932 100 0 0 0          * the halfling driller
+M 0 4909 1 4932 100 0 0 0          * a halfling chiseller
+E 1 4914 1 16 100 0 0 0            *   a simple chisel
+M 0 4916 9 4932 100 0 0 0          * a furry rat
+M 0 4911 5 4934 100 0 0 0          * a halfling miner
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4916 9 4934 100 0 0 0          * a furry rat
+M 0 4911 5 4936 100 0 0 0          * a halfling miner
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4916 9 4936 100 0 0 0          * a furry rat
+M 0 4911 5 4938 100 0 0 0          * a halfling miner
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4906 5 4938 100 0 0 0          * a halfling worker
+M 0 4905 1 4939 100 0 0 0          * a halfling miner
+E 1 4921 9 16 100 0 0 0            *   a mining pick
+M 0 4906 5 4939 100 0 0 0          * a halfling worker
+M 0 4918 1 4941 100 0 0 0          * a halfling bellowman
+M 0 4914 1 4942 100 0 0 0          * a halfling engineer
+E 1 4918 1 3 100 0 0 0             *   a pentagram
+G 1 4954 1 0 100 0 0 0             *    a desk key
+M 0 4922 1 4947 100 0 0 0          * a vicious balor
+E 1 4911 1 16 100 0 0 0            *   a balor's whip
+M 0 4919 5 4955 100 0 0 0          * a red demon
+M 0 4919 5 4956 100 0 0 0          * a red demon
+M 0 4919 5 4957 100 0 0 0          * a red demon
+M 0 4919 5 4959 100 0 0 0          * a red demon
+M 0 4919 5 4961 100 0 0 0          * a red demon
+M 0 4915 1 4962 100 0 0 0          * the vaultkeeper
+G 1 4976 10 0 100 0 0 0            *    the vault key
+M 0 4916 9 4963 100 0 0 0          * a furry rat
+M 0 4916 9 4963 100 0 0 0          * a furry rat
+M 0 4923 2 4965 100 0 0 0          * a service tunnel janitor
+M 0 4923 2 4965 100 0 0 0          * a service tunnel janitor
+*
+S

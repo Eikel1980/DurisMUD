@@ -1,0 +1,1411 @@
+#4900
+The Entrance to the &+cSilver&N &+LMine&N~
+&N   The entrance to the &+cSilver&N&+L Mine&N is free of any clutter or debris.
+&NThe ground seems to be free of any &+gplants&N or &+ggrasses&N and the &+Ldirt&N
+&Nhas been compacted by the stamping of many boots.  Although the &+Lmine&N
+&Ndoesn't look overly neglected, it does not appear the miners care about
+&Nwhat it look like to visitors at all.  One may head back to the west
+&Nor east through the entrance.&N
+~
+1 4 5 0
+D1
+~
+~
+0 0 4901
+D3
+~
+~
+0 0 566915
+S
+#4901
+&N&+LInside the &+cSilver&N&+L Mine&N~
+&N   The entrance to the &N&+Lmine&N is relatively narrow with a quite low ceiling.&N
+&NThe&N&+L rock &Nitself has been worked smooth, but little decoration adorns the walls.
+&NDeep &N&+ycart &Ntracks have been carved into the floor to keep the minerals flowing
+&Never out.  One may travel west out of the &+Lmine&N or east further in.&N
+~
+1 0 27 0
+D1
+~
+~
+0 0 4902
+D3
+~
+~
+0 0 4900
+S
+#4902
+&+LA Turn in the Tunnel&N~
+&N   &+LThe tunnel turns sharply and slighly down to the north.  This part of
+&+Lthe tunnel is slightly dirtier.  Soot covers the walls near the &+ytorch&N
+&+Lsconces.  Little changes in this kind of mining tunnel but a few nooks
+&+Lcan be seen at various heights.  The ceiling is still quite low and
+&+Lhard to navigate if too tall.  One may travel west or north.&N
+~
+1 0 29 0
+D0
+~
+~
+0 0 4903
+D3
+~
+~
+0 0 4901
+S
+#4903
+&+LA Widening Tunnel in the &N&+cSilver&N&+L Mine&N~
+&N&+L   The tunnel begins to widen at this point.  There are &N&+ywooden supports&N&+L adding &N
+&+Lstrength to the structure.  This section of the tunnel appears to be a
+&+Lstaging area.  Hardhats are hung on &N&+ywooden&N&+L pegs drilled into the wall.  A
+&N&+ylarge crate&N&+L sits to the side with various mining equipment.  &N&+yTorches&N&+L provide
+&N&+Willumination&N&+L to the room.  One may travel north or south from this point.&N
+~
+1 0 15 0
+D0
+~
+~
+0 0 4904
+D2
+~
+~
+0 0 4902
+S
+#4904
+&N&+LA Wide Tunnel in the &N&+cSilver&N&+L Mine&N~
+&N&+L   The tunnel begins to widen, even as it becomes less finished.  The walls
+&N&+Lare quite rough at this point in the mine.  The ceiling is supported by
+&N&+Lsturdy &N&+ywooden beams&N&+L.  While the air grows stale, a slight breeze can be felt
+&N&+Lcoming from the direction of the entrance.  The darkness is oppressive and
+&N&+Lhaving a &N&+Wlight&N&+L source is absolutely necessary for those without the ability
+&N&+Lto see in the dark.  One may travel north or south from this point.&N
+~
+1 1 15 0
+D0
+~
+~
+0 0 4905
+D2
+~
+~
+0 0 4903
+S
+#4905
+&N&+LBefore a Large &N&+yWooden Door&N~
+&N&+L   The rough tunnel comes to an end at this point.  A large &N&+ywooden door&N
+&N&+Lcan be seen barring further travel.  The wall around the &N&+ydoor&N&+L is covered
+&N&+Lin pictograms and hieroglyphs, most of which are in the common tongue.
+&N&+LNone of them appear to be very interesting and most look like graffiti.
+&N&+LThe &N&+ywooden door&N&+L is slightly recessed into the stone wall and the hinges
+&N&+Lappear to be completely hidden.  One may travel south towards the
+&N&+Lentrance or north through the wooden door.&N
+~
+1 0 0 0
+D0
+&N   A large &N&+ywooden door&N seperates the entrance of the mine from&N
+&Nwhat lies inside. &N
+~
+wooden door~
+1 0 4906
+D2
+~
+~
+0 0 4904
+S
+#4906
+&+LInside the &N&+yHalfling&N &+LWorker Barracks&N~
+&N&+L   The barracks is cluttered with various mining equipment and a few
+&N&+Lweapons.  The weapons are stored in &N&+ywooden racks&N&+L along the wall, near
+&N&+Lwhich several long &N&+ybenches&N&+L can be seen.  A few &N&+ywooden tables&N&+L and
+&N&+ychairs&N&+L can be seen around this part of the barracks.  Some &N&+rpaintings&N
+&N&+Lcan be seen hanging from the walls depicting famous &N&+yhalflings&N&+L of the
+&N&+Lpast. One may travel south back through the &N&+ywooden door&N&+L or to the north
+&N&+Land east further into the barracks.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4907
+D1
+~
+~
+0 0 4909
+D2
+&N  This door seperates the inner levels of the mine from the entrance.&N
+~
+wooden door~
+1 0 4905
+S
+#4907
+&+LNear Some Bunks in the Barracks&N~
+&N&+L   Various &N&+ybunks &N&+Lare located here along both walls.  They appear to be
+&N&+Lmade of&N&+y wood &N&+Land fastened with&N&+y leather straps&N&+L and &N&+ywooden pegs&N&+L.  A few
+&N&+Lsmall storage lockers can be seen, all open and empty.  A few dirty
+&N&+Wlinens &N&+Lare piled up in front of the &N&+ybunks&N&+L.  Heavy &N&+yaprons&N&+L and&N&+W face masks&N
+&N&+Lhang from pegs in the wall.  A few small&N&+b water &N&+ybarrels&N&+L reside in the
+&N&+Lcenter of the room next to the &N&+rfire pit&N&+L.  A chimney has been cut into
+&N&+Lthe ceiling to let the smoke out.  One may travel east or south in
+&N&+Lthe barracks.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4908
+D2
+~
+~
+0 0 4906
+D3
+~
+~
+0 0 -1
+S
+#4908
+&+LBefore the Mines &N&+WVault&N~
+&N&+L   A few &N&+ywooden chairs&N&+L are strewn about the room, most toppled on
+&N&+Ltheir sides.  The remnants of a few &N&+ytables &N&+Lare smashed up in the
+&N&+Lcorner.  A large marked &N&+ciron door&N&+L is located to the north.  It
+&N&+Lhas a huge and complex&N&+c lock &N&+Lright in the center.  There is little
+&N&+Lindication that the door has been recently opened, but large
+&N&+Lgouge marks can be seen on the &N&+ydoors&N&+L surface.  One may travel
+&N&+Lwest, south or east from this point in the barracks.&N
+~
+1 0 0 0
+D0
+~
+vault door~
+3 4976 4962
+D1
+~
+~
+0 0 4910
+D2
+~
+~
+0 0 4909
+D3
+~
+~
+0 0 4907
+S
+#4909
+&N&+LThe Common Room of the Barracks&N~
+&N&+L   The common room of the barracks is filled with rows of
+&N&+ytables&N&+L with long &N&+ybenches&N&+L.  The &N&+ytables&N&+L are relatively clean
+&N&+Lbut a few are still covered with dirty dishes and goblets.
+&N&+LThe ground is quite smooth in this part of the barracks,
+&N&+Lmost likely in an effort to keep the area clean.  A few
+&N&+Cknives&N&+L and &N&+Cforks&N&+L appear to be stuck in the &N&+ywooden&N&+L support
+&N&+Lbeam above.  One may travel north, west or east from this
+&N&+Lpoint.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4908
+D1
+~
+~
+0 0 4911
+D3
+~
+~
+0 0 4906
+S
+#4910
+&N&+LThe Barracks Kitchen&N~
+&N&+L   The "kitchen" of the barracks is little more than a &N&+wclay &N&+Lstove with a
+&N&+ywooden&N&+L spit and a few large cast &N&+ciron pots&N&+L.  There are several empty
+&N&+ycupboards &N&+Lbuilt into the stone wall.  Large piles of&N&+W rubbish &N&+Lhave overflown
+&N&+Ltheir waste bins and a few cockroaches can be seen scurrying about.
+&N&+LThe kitchen smells of roast &N&+ydonkey&N&+L and&N&+G parsnips&N&+L.  One may travel west,
+&N&+Least or south from this point.&N
+~
+1 0 0 0
+D1
+~
+pantry door~
+1 0 4926
+D2
+~
+~
+0 0 4911
+D3
+~
+~
+0 0 4908
+S
+#4911
+&N&+LThe Ofice of the Mine Chief&N~
+&N&+L   This small corner of the barracks contains the &N&+yworkstation&N&+L for
+&N&+Lthe lead miner and his assistants.  A few rough maps have been pinned
+&N&+Lto a large &N&+ytack-board&N&+L.  There is a &N&+ywooden desk&N&+L in the center of the
+&N&+Lroom covered with paper and mineral samples.  All operations flow
+&N&+Lthrough this room.  One may travel further in the barracks by heading
+&N&+Lnorth or west.  To the east is the mine shaft.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4910
+D1
+~
+~
+0 0 4912
+D3
+~
+~
+0 0 4909
+S
+#4912
+&N&+LThe Start of the Mine Shaft&N~
+&N&+L   Various &N&+Cpulleys&N&+L and &N&+yropes&N&+L criss-cross and intertwine overhead.
+&N&+LThis room is atop the initial mine shaft.  There are some tracks
+&N&+Lleading away from the hole itself, used to transport materials
+&N&+Lout of the mine.  Several large &N&+ycrates&N&+L are visible, an inventory
+&N&+Lof &N&+Yriches &N&+Lharvested from the stone.  Several &N&+bwater &N&+cbuckets&N&+L are
+&N&+Lcurrently being hauled down and slosh &N&+bwater &N&+Labout.  One may travel
+&N&+Lwest back into the barracks or down into the&N&+c silver &N&+Lmine.&N
+~
+1 0 0 0
+D3
+~
+~
+0 0 4911
+D5
+~
+~
+0 0 4913
+S
+#4913
+&N&+LInside the &N&+cSilver&N&+L Mine&N~
+&N&+L   Although the mine shaft itself is a sheer drop of
+&N&+Laround fifty feet, one may travel down using a highly
+&N&+Leffective spiral stair system masterfully crafted from
+&N&+Llocal &N&+gtrees&N&+L.  The &N&+yhalflings&N&+L have a knack for using
+&N&+Lmaterials in their surroundings.  Various &N&+yropes&N&+L and
+&N&+cpullys&N&+L seem to be in continuous motion.  One may
+&N&+Ltravel up or down from this point.&N
+~
+1 0 0 0
+D4
+~
+~
+0 0 4912
+D5
+~
+~
+0 0 4914
+S
+#4914
+&N&+LA Hub in the &N&+cSilver&N&+L Mine&N~
+&N&+L   This giant room is a central point in the mine.  The tracks
+&N&+Lhere are on a giant rotating&N&+c platform&N&+L, able to change directions
+&N&+Lthrough a complicated mechanism.  The floor is made of hammered
+&N&+csteel plate&N&+L and is clear of any debris.  Large &N&+yracks&N&+L sort various
+&N&+cores&N&+L before being routed to their next destination.  &N&+yWooden doors&N
+&N&+Lare visible to the east and west.  Mining tunnels lead north and
+&N&+Lsouth.  A large &N&+Mschematic&N&+L of the immediate area has been fastened
+&N&+Lto the wall.  One may travel up back towards the barracks. &N
+~
+1 0 18 0
+D0
+~
+~
+0 0 4935
+D1
+~
+door~
+1 0 4942
+D2
+~
+~
+0 0 4915
+D3
+  This door is wooden.&N
+~
+door wooden wood~
+1 0 4940
+D4
+~
+~
+0 0 4913
+D5
+   A trapdoor is visible here cut into the stone.&N
+~
+trapdoor~
+2 4943 4943
+S
+#4915
+&N&+LThe Central Line&N~
+&N&+L   This wide tunnel holds two sets of tracks, presumably
+&N&+Lfor two directions of traffic.  Several ore &N&+ycarts&N&+L can be
+&N&+Lseen near the western wall, obviously in disrepair.  &N&+yRopes&N
+&N&+Lseem to dangle from everywhere.  A few small &N&+ywooden tables&N
+&N&+Lprovide a place for workers to take a break.  One may
+&N&+Ltravel north back to the hub or south further down the main
+&N&+Lline.&N
+~
+1 4 0 0
+D0
+~
+~
+0 0 4914
+D2
+~
+~
+0 0 4916
+S
+#4916
+&N&+LThe Central Line&N~
+&N&+L   The two sets of cart tracks dominate the available floor
+&N&+Lspace, so most travel here is done on wooden catwalks.  &N&+yTorches&N
+&N&+Land &N&+Wlanterns&N&+L are used in tandem to battle the darkness of the
+&N&+Lmine.  A few bats have made homes near the ceiling, their runny
+&N&+Wguano&N&+L staining the rock and tracks below.  A few piles of broken
+&N&+Lmine &N&+ycarts&N&+L are visible next to a &N&+mfurnace&N&+L.  One may travel north
+&N&+Lor south on the main line.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4915
+D2
+~
+~
+0 0 4917
+S
+#4917
+&N&+LThe Central Line&N~
+&N&+L   The double sets of tracks continues here, obviously a main
+&N&+Ltunnel, and well used at that.  A few small &N&+ywooden benches&N&+L can
+&N&+Lbe seen for workers to rest upon.  There are a few &N&+ywooden&N
+&N&+ytorches&N&+W illuminating&N&+L the area.  There is a lot of rock-dust in
+&N&+Lthe air and on the floor.  One may travel north or south on the
+&N&+Lmain tunnel or east into the &N&+Rservice tunnel&N&+L.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4916
+D1
+&N   The closed door is labeled &N&+RService Entrance&N.&N
+~
+door~
+1 0 4918
+D2
+~
+~
+0 0 4921
+S
+#4918
+Inside a &N&+RService Tunnel&N~
+&N&+L   This tunnel is wide and the ceiling is high.  The walls are
+&N&+Lrough and unfinished but the floor is surprisingly level.  &N&+wDust&N
+&N&+Land &N&+Bwater &N&+Lmix to form a layer of thin, crusty &N&+ymud&N&+L.  The room is
+&N&+Lwell &N&+Wlit&N&+L by &N&+Wlight glyphs&N&+L etched into the walls.  The air is
+&N&+Lstale and no breeze can be felt.  One may leave west through the
+&N&+Ldoor or east further down the service tunnel.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4919
+D3
+~
+door~
+1 0 4917
+S
+#4919
+The End of the &N&+RService Tunnel&N~
+&N&+L   The &N&+Rservice tunnel&N&+L ends in this mostly rectangular shaped room.  High
+&N&+ychairs &N&+Land&N&+y tables &N&+Lare visible against the wall.  A small firepit in the
+&N&+Lcorner still smoulders, clearly a cooking area.  Various &N&+Yanimal skins &N
+&N&+Lhave been strewn about the room for workers to lay upon.  A door to the
+&N&+Lnorth is labeled '&N&+WNumber Two&N&+L'.  One may travel north through the door
+&N&+Lor west back through the &N&+Rservice tunnel&N&+L.&N
+~
+1 1 0 0
+D0
+~
+door~
+1 0 4920
+D3
+~
+~
+0 0 4918
+S
+#4920
+&NA &N&+RService Tunnel&N Bathroom&N~
+   This large and lavish bathroom is both warm and inviting.
+Soft and luxurious &N&+yrugs&N run the length of the room.  A few
+pieces of fancy &N&+yfurniture &Ngive the facilities a more homey
+feel.  The &N&+Wtoilets&N in this bathroom are quite low to the
+ground.  Lush &N&+Ctowels&N are piled near the washing&N&+y bucket&N, a
+luxury for any working man.  The room smells of sweat and
+&N&+Gspruce&N.  One may leave the bathroom by heading south.&N
+~
+1 0 0 0
+D2
+~
+door~
+1 0 4919
+S
+#4921
+&N&+LThe Central Line&N~
+&N&+L   The main mining tunnel continues here running north and south.
+&N&+LDouble sets of tracks makes it possible for harvested materials
+&N&+Lto be hauled out as empty carts are hauled back in.  This is a
+&N&+Lvery efficient mine, not surprising for a halfling-run operation.
+&N&+LThe walls are quite rough and the floor is surprisingly clean. One
+&N&+Lmay travel north or south in the tunnel.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4917
+D2
+~
+~
+0 0 4922
+S
+#4922
+&N&+LThe Central Line&N~
+&N&+L   The main tunnel turns here a full ninety degrees.  This room
+&N&+Lis larger than the previous parts of the main tunnel to allow
+&N&+Lfor the double sets of tracks to bend to the east.  Nothing of
+&N&+Lconsequence is stored in this room and there is no where to sit.
+&N&+LA &N&+Rservice tunnel&N&+L entrance can be seen to the south. One may travel
+&N&+Lnorth or east in the main tunnel.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4921
+D1
+~
+~
+0 0 4925
+D2
+~
+door~
+1 0 4923
+S
+#4923
+&NThe Entrance to the &N&+RService Tunnel&N~
+&N&+L   This &N&+Rservice tunnel&N&+L seems to be currently more of a
+&N&+Lstorage tunnel.  Several &N&+ywooden crates&N&+L and &N&+ybarrels&N&+L are
+&N&+Lstacked up on either side of the hallway.  The stone is
+&N&+Lnot as rough as the mine and someone has taken great
+&N&+Lcare to keep this part of the tunnels clean.  One may
+&N&+Ltravel north through the door or south further into the
+&N&+Rservice tunnel&N&+L.&N  This room is quite dark.&N
+~
+1 1 0 0
+D0
+~
+door~
+1 0 4922
+D2
+~
+~
+0 0 4924
+S
+#4924
+&NThe End of the &N&+RService Tunnel&N~
+&N&+L   The &N&+Rservice tunnel &N&+Lends here.  Several large &N&+ybundles&N&+L of &N&+Wpaper&N
+&N&+Lare visible against the west wall.  The floor is quite smooth
+&N&+Land has been polished to a shine.  All the &N&+Wlights&N&+L in the room
+&N&+Lhave been removed and it is quite dark.  Seeing as how you are
+&N&+Lcurrently underground, that makes a lot of sense.  The ceiling
+&N&+Lis about fifteen feet high and the walls are very roughly hewn
+&N&+Lfrom the surrounding rock.  One may travel to the north from this
+&N&+Lpoint.&N
+~
+1 1 0 0
+D0
+~
+~
+0 0 4923
+S
+#4925
+&N&+LThe Central Line&N~
+&N&+L   The tunnel continues here, cut through solid stone.  Flecks
+&N&+Land veins of various &N&+Cores&N&+L can be seen running through the walls.
+&N&+LThe floor here is rocky and uneven.  The parallel tracks are
+&N&+Lattached to the stone floor with long &N&+Cmetal spikes&N&+L.  Some &N&+ywood&N
+&N&+Lscraps are visible in between the two tracks, probably to be
+&N&+Lused as &N&+rfire&N&+L materials.  Several narrow vents are visible in
+&N&+Lthe ceiling to allow the fresh air in.  One may travel west
+&N&+Lor east from this point.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4927
+D3
+~
+~
+0 0 4922
+S
+#4926
+&+LA Food &N&+WPantry&N~
+&N&+L   This room is around ten feet by twelve feet.  There are
+&N&+Lmany &N&+ywooden shelves &N&+Lladen with preserved food and other
+&N&+Lingredients.  Several &N&+cmetal tables&N&+L are visible in the center
+&N&+Lof the room with a few&N&+y wooden chairs&N&+L scattered about.  The
+&N&+Lfloor is quite clean and free of any debris.  One may exit
+&N&+Lthe &N&+Wpantry&N&+L by heading west.  A faint outline can be seen
+&N&+Lon the floor. &N
+~
+1 0 0 0
+D3
+~
+pantry door~
+1 0 4910
+D5
+   A dusty trapdoor leads to the cellar.&N
+~
+trapdoor door trap~
+5 0 4963
+S
+#4927
+&N&+LOutside the &N&+yWoodshop&N &N&+Lon the Central Line&N~
+&N&+L   The tunnel continues here through the thick and mineral
+&N&+Lrich rock.  &N&+cSilver&N&+L is the main material being mined in this
+&N&+Larea, but a few smaller &N&+ycarts&N&+L are visible loaded with other
+&N&+Lvarious material.  Several long &N&+ywooden benches&N&+L are visible,
+&N&+Lpart of what seems to be a &N&+ywoodshop &N&+Lto service the mine.
+&N&+LOne may travel south into the &N&+ywoodshop&N&+L or east and west on
+&N&+Lthe central line.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4929
+D2
+~
+~
+0 0 4928
+D3
+~
+~
+0 0 4925
+S
+#4928
+Inside the &N&+yWoodshop&N~
+   This large cavern appears to be half naturally occuring and half
+carved from &N&+Lstone&N.  Stalactites hang from the ceiling, centuries of
+years old.  The room is relatively humid and smells of &N&+ywood&N.  Large
+&N&+yracks &Nhold various lengths and widths of &N&+ywood&N.  Several&N&+y sawhorses&N
+are visible around the room.  Piles of &N&+ysawdust&N have been swept into
+the corner.  One may travel north out of the &N&+ywoodshop&N or further in
+by going south or west.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4927
+D2
+~
+~
+0 0 4931
+D3
+~
+~
+0 0 4930
+S
+#4929
+&+LOn the Central Line&N~
+&N&+L   The central line continues here as it slowly descends further into the mine.
+&N&+LThe air has grown quite stale, bordering on rancid with hints of&N&+g mold &N&+Land &N&+rrot&N&+L.
+&N&+LThe walls seem to have some sort of &N&+yfecal matter&N&+L smeared on them.  Something
+&N&+Lterrible has happened here.  Several empty &N&+mwine bottles &N&+Llie in a pile next to
+&N&+La &N&+cdumpster&N&+L.  Clearly there is some sort of vagabond lurking nearby.  One may
+&N&+Ltravel west or east from this point.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4933
+D3
+~
+~
+0 0 4927
+S
+#4930
+The &N&+yLumber&N Storage Cave&N~
+   This large cavern is so massive that no excavating had to
+happen.  Large &N&+ciron racks&N hold various lengths of &N&+ylumber&N.  A
+few large &N&+ywooden carts&N have intact &N&+ylogs&N ready to be sent to
+the &N&+Csaw &N&+ymill&N for processing.  The floor is rough, but level
+and free of any &N&+Ldebris&N.  One may travel east back to the&N&+y wood&N
+&N&+yshop. &N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4928
+S
+#4931
+&NThe Sawmill&N~
+   The cave continues here, more natural than carved.  A large
+mechanism dominates this room.  A series of rolling bars and a
+massive &N&+ywooden frame&N house a giant, many toothed &N&+Csaw blade&N fixed
+on an axle.  The clever engineers have harnessed some natural
+gas to propel a simple &N&+Rcombustion &N&+Lengine&N.  The engine turns long
+&N&+ybelts&N that are attached to a &N&+yflywheel&N on the &N&+Csaw&N.  The &N&+Cblade&N is
+about six feel across and has dozens of sharp &N&+Wteeth&N.  Large blocks
+of &N&+ywood &Ncan be sawed into various thickness.  &N&+ySawdust&N covers the
+floor here and the finer particulate hangs in the air like a
+&N&+ywooden&N mist.  One may travel north towards the entrance or west
+towards the drill press.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4928
+D3
+~
+~
+0 0 4932
+S
+#4932
+&NThe Crafters Area of the &N&+yWood&N Shop&N~
+   This room is filled with the tools used for finishing&N&+y wood&N
+projects.  There are several hand cranking drill presses that
+seem to be of the industrial nature.  Several long &N&+yshelves&N are
+filled with various &N&+ysandpaper&N and &N&+Lchisels&N while large&N&+L pots &Nof
+&N&+Wglue&N have been piled up near the wall.  One may travel east
+from this point in the &N&+ywoodshop&N.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4931
+S
+#4933
+&N&+LApproaching the End of the Central Line&N~
+&N&+L   The tunnel starts to narrow at this point and the amount
+&N&+Lof activity seems to be increasing.  This is where the active
+&N&+Lmining is taking place.  Large boulders are being steadily
+&N&+Lworked into smaller, workable chunks.  Lots of&N&+w dust&N&+L and dirt
+&N&+Lseem to coat everything.  Heavy &N&+ywooden timbers &N&+Lhave been set
+&N&+Lin place to add strength to the tunnel.  One may travel west
+&N&+Lor east from this point.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4934
+D3
+~
+~
+0 0 4929
+S
+#4934
+&N&+LThe End of the Line&N~
+&N&+L   The tunnel terminates here where the workers are currently
+&N&+Lcutting their way into solid rock.  One can see the heavy&N&+c silver&N
+&N&+cvein &N&+Lvisible with smaller protrusions spiraling away from the
+&N&+Lmain vein.  Several &N&+ywooden racks&N&+L filled with various &N&+cpicks&N&+L and
+&N&+Lbars is visible on the north wall.  Other&N&+y tools &N&+Lhave been left
+&N&+Lhaphazardly around the eastern wall, implements to harvest the
+&N&+Lrich &N&+Ymineral wealth&N&+L of this mine.  One may travel west from
+&N&+Lthis point.&N
+~
+1 0 0 0
+D3
+~
+~
+0 0 4933
+S
+#4935
+&N&+LThe Beginning of a New Mine Shaft&N~
+&N&+L   This tunnel appears to be the newest tunnel branching off the
+&N&+Lmain hub.  The walls are very rough with no attempt at making
+&N&+Lany surface smooth.  Even the floor is rough and uneven.  While
+&N&+Lit is impossible to guess what &N&+cmineral&N&+L the miners are after, it
+&N&+Lis a safe bet it is a valuable &N&+core&N&+L.  &N&+yTorches&N&+L are spaced out evenly
+&N&+Lnear air vents to prevent the toxic &N&+wsmoke&N&+L from accumulating.  The
+&N&+Lair is fetid and rather unpleasant. One may travel north or
+&N&+Lsouth from this point.&N
+~
+1 4 0 0
+D0
+~
+~
+0 0 4936
+D2
+~
+~
+0 0 4914
+S
+#4936
+&+LA Newly Dug &N&+cSilver &N&+LTunnel&N~
+&N&+L   This new tunnel appears to be of an exploratory nature.  While
+&N&+Lthe tunnel doesn't veer off into any specific direction, the cuts
+&N&+Lare methodical.  With great purpose this stone has been worked.
+&N&+LThe tunnel slopes every so slightly downward.  Small &N&+Ylanterns&N&+L have
+&N&+Lbeen hung every fifty or so feet, barely &N&+Willuminating&N&+L the tunnel.
+&N&+LOne may travel north or south from this point.&N
+~
+1 0 0 0
+D0
+~
+~
+0 0 4937
+D2
+~
+~
+0 0 4935
+S
+#4937
+&N&+LThe Newly Dug Tunnel&N~
+&N&+L   This tunnel is fairly new.  You can tell by the piles of
+&N&+Lrubble still waiting to be carted out and the numerous mining
+&N&+Limplements laying about the room.  A few &N&+ywooden chairs &N&+Lcan be
+&N&+Lseen near the wall and &N&+Wgarbage &N&+Llitters the floor.  There is a
+&N&+Lfine dust that coats all in this area.  The air is surprisingly
+&N&+Lclean and pleasant to smell. One may travel south or east from
+&N&+Lthis point.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4938
+D2
+~
+~
+0 0 4936
+S
+#4938
+&+LThe Rough Branch of the &N&+cSilver&N&+L Tunnel&N~
+&N&+L   This part of the tunnel is, at best, a work in progress.  Few
+&N&+ywooden support beams&N&+L have been installed yet, giving the place a
+&N&+Ldangerous feel.  A few scraps of&N&+y wood &N&+Lhave been piled up near the
+&N&+Lwall but the needed &N&+ybeams &N&+Lare nowhere to be seen.  One may travel
+&N&+Lwest or east from this point.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4939
+D3
+~
+~
+0 0 4937
+S
+#4939
+&N&+LThe Active Mining Site&N~
+&N&+L   The tunnel ends here, or, in it's own way, begins here.  The ore
+&N&+Lis clearly visible and the miners dig all around it, eager to harvest
+&N&+Lthe&N&+Y riches &N&+Lfrom the ground.  Various rocks lie strewn about the room,
+&N&+Lawaiting transport to the surface.  One may travel west from this
+&N&+Lactive mining site.&N
+~
+1 0 0 0
+D3
+~
+~
+0 0 4938
+S
+#4940
+&+LThe Bellows Tunnel&N~
+&N&+L   This tunnel is very well maintained and free of any debris.  The
+&N&+Lwalls are smooth and polished with heavy duty &N&+cmetal wall mounts&N&+L for
+&N&+ytorches&N&+L.  The floor is smooth as well with no &N&+wdust &N&+Lor grime to speak
+&N&+Lof.  Many &N&+cmetal air tubes&N&+L run along the ceiling and through the stone,
+&N&+Lused for keeping the air circulated and fresh.  There are a few small
+&N&+wcots&N&+L along the wall for workers to catch up on some sleep between
+&N&+Lshifts.  One may travel west into the tunnel or east into the hub.&N
+~
+1 4 0 0
+D1
+  This door is made of wood.&N
+~
+wooden door wood~
+1 0 4914
+D3
+~
+~
+0 0 4941
+S
+#4941
+&NThe Bellows of the Mine&N~
+&N&+L   These bellows are used to suck fresh air from the outside
+&N&+Linto the mine.  The bellows themselves are rather large and
+&N&+Lmade of &N&+yleather&N&+L and &N&+wcloth&N&+L on a cast &N&+ciron frame&N&+L.  The contraption
+&N&+Lis bolted to the ground and stands at a height of ten feet.  Long
+&N&+Lrubber hoses go up into narrow chutes cut into the stone.  One may
+&N&+Ltravel east from this room.&N
+~
+1 0 0 0
+D1
+~
+~
+0 0 4940
+S
+#4942
+The &N&+GEngineers&N Office&N~
+   This room is very shabby and full of crappy old&N&+y furniture&N.  The
+&N&+yrug&N is stained with what appears to be &N&+yurine &Nand the odor is like
+that of the &N&+LShady Grove dump&N.  The walls have some large and ugly
+&N&+Rred curtains&N that hang from &N&+cmetal hooks&N in the wall.  There is a
+large &N&+ywooden desk&N in the corner of the room covered in various
+implements of writing and &N&+Wpapers&N.  One may travel west out of this
+room.&N
+~
+1 0 0 0
+D3
+~
+door~
+1 0 4914
+S
+#4943
+&N&+LA Dark and Long Shaft&N~
+&+L   This room is a sheer drop into the darkness.  No hand
+&+Lholds or ledges are visible.  This is a straight shaft down
+&+Lpast what even magical light can illuminate.  A great heat
+&+Lgives this a sweltering feeling.  One may travel up or down
+&+Lfrom this point.&N
+~
+1 134250496 18 0
+D4
+  The trapdoor is visible in the ceiling.&N
+~
+trapdoor~
+2 0 4914
+D5
+~
+~
+0 0 4944
+S
+#4944
+&+LA Sheer Mine Shaft&N~
+&+L   This room is a sheer drop into the darkness.  No hand
+&+Lholds or ledges are visible.  This is a straight shaft down
+&+Lpast what even magical light can illuminate.  A great heat
+&+Lgives this a sweltering feeling.  A tiny dot of &N&+Rred light&N&+L
+&N&+Lis visible far below.  One may travel up or down from this point.&N
+~
+1 134250496 18 0
+D4
+~
+~
+0 0 4943
+D5
+~
+~
+0 0 4945
+S
+#4945
+&+LHalfway Down the Mine Shaft&N~
+&+L   This room is a sheer drop into the darkness.  No hand
+&+Lholds or ledges are visible.  This is a straight shaft down
+&+Lpast what even magical light can illuminate.  A great heat
+&+Lgives this a sweltering feeling.  The tiny &N&+Rred dot&N&+L has grown
+&+Lto the size of a shield.  You seem to be approaching the bottom.
+&+LOne may travel up or down from this point.&N
+~
+1 134250496 18 0
+D4
+~
+~
+0 0 4944
+D5
+~
+~
+0 0 4946
+S
+#4946
+&+LNear the Bottom of the Shaft&N~
+&+L   This room is a sheer drop into the darkness.  No hand
+&+Lholds or ledges are visible.  This is a straight shaft down
+&+Lpast what even magical light can illuminate.  A great heat
+&+Lgives this a sweltering feeling.  It is almost becoming oppressive.
+&N&+LFar below you can see the floor is on &N&+Rfire&N&+L.  One may travel up or down
+&+Lfrom this point.&N
+~
+1 134250496 18 0
+D4
+~
+~
+0 0 4945
+D5
+~
+~
+0 0 4947
+S
+#4947
+&N&+rThe &N&+LSmouldering &N&+rPits of &N&+LMisery&N~
+&N&+L   This large cavern is filled with&N&+r flame&N&+L and &N&+Wdeath&N&+L.  The ground
+&N&+Lis littered with&N&+W bones&N&+L and splintered &N&+ywood&N&+L.  Little elevation change
+&N&+Lis evident as this all seems pretty much like a giant depression in
+&N&+Lthe bottom of the cavern.  Few stalagmites are visible, most broken
+&N&+Loff or destroyed.  Some stalactites can still be seen rimming the
+&N&+Lopening of the mine shaft.  One may travel up back out of the pits or
+&N&+Lin any direction into the pits.&N
+~
+1 32768 15 0
+D0
+~
+~
+0 0 4948
+D1
+~
+~
+0 0 4952
+D3
+~
+~
+0 0 4950
+D4
+~
+~
+0 0 4946
+S
+#4948
+&N&+rThe Pits of &N&+LMisery&N~
+&N&+L   Several horribly disfigured creatures writhe in agony, impaled
+&N&+Lon jagged stalagmites.  Screams echo the the pits as several poor
+&N&+Wsouls &N&+Lare nearing their encounter with &N&+Wdeath&N&+L.  &N&+rBlood &N&+Lseems to run
+&N&+Ldown the slight slope, collecting in small pools and then boiling
+&N&+Lfrom the &N&+rheat&N&+L.  &N&+WWhite froth &N&+Lcollects at the edge of each pool, a
+&N&+Lbiproduct from the boiling process.  The air is thick with &N&+wsmoke&N
+&N&+Land it is hard to see in any direction.  One may travel west, east
+&N&+Lor south from this point.&N
+~
+1 32768 11 0
+D1
+~
+~
+0 0 4951
+D2
+~
+~
+0 0 4947
+D3
+~
+~
+0 0 4949
+S
+#4949
+&N&+rA Corner in the Pits of &N&+LMisery&N~
+&N&+L   The amount of stalactites in this corner of the pits is disproportional
+&N&+Lto the rest of the cavern.  A few smashed stalagmites are piled near the
+&N&+Lnorth wall.  There is a few large piles of stone accumulated near the west
+&N&+Lwall.  The ground itself is alive with&N&+r flames&N&+L, licking at everything in
+&N&+Lspite of the lack of burnable materials.  The ground is rocky and uneven
+&N&+Land there is a great deal of &N&+wdust&N&+L covering the ground.  More than makes
+&N&+Lsense.  One may travel east or south from this point.&N
+~
+1 32768 11 0
+D0
+~
+~
+4 0 4953
+D1
+~
+~
+0 0 4948
+D2
+~
+~
+0 0 4950
+S
+#4950
+&N&+rNear a Pile of &N&+WBones&N&+r in the Pits of &N&+LMisery&N~
+&N&+L   The &N&+rflames&N&+L seem to flare from the stone itself.  He air here is quite
+&N&+rhot &N&+Land the humidity is almost unbearable.  The cavern itself is very big
+&N&+Lwith shadows obscuring the dark recesses.  The ground is rough and uneven
+&N&+Lin places, polished smooth in others.  There appears to be a path cut into
+&N&+Lthe stone from the plodding of many feet over many years.  A very large
+&N&+Lpile of &N&+Wbones&N&+L rests in the corner, many of which show obvious signs that
+&N&+Lthey were chewed on.  One may travel north or east from this point in the
+&N&+rPits &N&+Lof &N&+LMisery&N&+L.&N
+~
+1 32768 11 0
+D0
+~
+~
+0 0 4949
+D1
+~
+~
+0 0 4947
+S
+#4951
+&N&+rA Corner of the Pits of &N&+LMisery&N~
+&N&+L   A few small &N&+rfires &N&+Lburn near the northern wall.  Something has
+&N&+Lrecently died in this part of the pit.  The stench is terrible.
+&N&+LThe ground is littered with broken &N&+wbodies&N&+L and missing limbs and
+&N&+Lgreat pools of &N&+rblood &N&+Lhave collected.  Some of the &N&+rblood &N&+Lis boiling
+&N&+Lfrom the &N&+rheat&N&+L.  The cavern walls appear to be in their natural
+&N&+Lstate and have not been touched by&N&+c pick&N&+L or &N&+chammer&N&+L.  One may travel
+&N&+Lwest or south from this point.&N
+~
+1 32768 11 0
+D2
+~
+~
+0 0 4952
+D3
+~
+~
+0 0 4948
+S
+#4952
+&N&+rA Low Ceilinged Section of the Pits&N~
+&N&+L   The air in this large cavern is quite oppressive.  &N&+wSmoke&N&+L hangs
+&N&+Lin the air like a &N&+wdense fog&N&+L, obscuring lines of sight to other
+&N&+Lregions within the pits.  The ground is littered with various
+&N&+Lsizes of&N&+W bones&N&+L and a few fresh &N&+wcorpses&N&+L still smolder with the
+&N&+Lresidual&N&+r heat&N&+L of&N&+r flame&N&+L.  The ceiling is quite low here with
+&N&+Lstalactites nearly touching the ground in places.  One may
+&N&+Ltravel north or west from this point.&N
+~
+1 32768 11 0
+D0
+~
+~
+0 0 4951
+D3
+~
+~
+0 0 4947
+S
+#4953
+&N&+LA Hastily Created Tunnel&N~
+&N&+L   This tunnel has been very crudely cut into the stone.  There is
+&N&+Llittle evidence of craftsmanship, instead this tunnel seems to have
+&N&+Lbeen punched through the solid stone.  The walls are rough and
+&N&+Luneven, as is the floor and ceiling.  Loose stone and thick &N&+wdust&N
+&N&+Lcoat the floor making footing dicey at best.  The air is stuffy and
+&N&+Lhas a musky odor. One may travel north or south from this point.&N
+~
+1 32769 14 0
+D0
+~
+~
+0 0 4954
+D2
+~
+~
+4 0 4949
+S
+#4954
+&N&+LA Turn in the Tight Tunnel&N~
+&N&+L   This narrow tunnel contiues as it turns here.  The rock has been
+&N&+Lvery crudely removed and the tunnel is not very straight.  The
+&N&+Lfloor is covered in loose rock and debris, making for some tough
+&N&+Lfooting.  The air smells like sweat and stale cavern, but there is
+&N&+Llittle evidence of smoke in this part of the tunnel.  No &N&+Wlight&N&+L source
+&N&+Lis evident so it is quite hard to see.  One may travel west or south
+&N&+Lfrom this point.&N
+~
+1 32769 14 0
+D2
+~
+~
+0 0 4953
+D3
+~
+~
+0 0 4955
+S
+#4955
+&N&+LA Rough Hewn Tunnel&N~
+&N&+L   This tunnel continues to twist and wind through the solid stone.
+&N&+LWhoever, or whatever, dug this tunnel did it hastily and without any
+&N&+Laesthetic flair.  The walls are rough and uneven and the floor is
+&N&+Lcovered with small rubble and &N&+wdust&N&+L.  The air has a certain amount of
+&N&+wdust &N&+Lsuspended in it, making it kind of hard to see.  The sound of
+&N&+Ldigging can be heard coming from further ahead.  One may travel north
+&N&+Lor east from this point.&N
+~
+1 32768 14 0
+D0
+~
+~
+0 0 4956
+D1
+~
+~
+0 0 4954
+S
+#4956
+&N&+LA Turn in the Rough Tunnel&N~
+&N&+L   This tunnel continues to turn and twist.  It seems to be moving in a
+&N&+Lnorth westerly tract, but it's hard to keep ones bearings in such a rough
+&N&+Ltunnel.  Little differentiation can be detected in the tunnel itself as
+&N&+Lall of it is roughly cut and poorly supported.  Whoever made this tunnel
+&N&+Lput no care into safety or cave-in prevention.  The ground is covered in
+&N&+Lrubble and some &N&+Wbones&N&+L, while the walls have dirty &N&+whandprints &N&+Land a few
+&N&+Lscorch marks from &N&+ytorches&N&+L.  One may travel west or south from this point.&N
+~
+1 32768 14 0
+D2
+~
+~
+0 0 4955
+D3
+~
+~
+0 0 4957
+S
+#4957
+&N&+LA Landing in the Rough Tunnel&N~
+&N&+L   The tunnel abruptly takes an up turn at this point.  A small landing
+&N&+Lmarks the next section of the rough hewn tunnel.  A small &N&+yladder&N&+L leans
+&N&+Lagainst the wall to make travel from the lower level possible.  There are
+&N&+La few mining implements leaning up against the wall.  A few &N&+ywicker baskets&N
+&N&+Lare visible, used to haul away the excess rock.  The air is stale and
+&N&+Lsmells like &N&+wsmoke&N&+L.  One may travel east or up from this point.&N
+~
+1 32768 14 0
+D1
+~
+~
+0 0 4956
+D4
+~
+~
+0 0 4958
+S
+#4958
+&+LInside the Rough Tunnel&N~
+&N&+L   The tunnel continues here as it twists and turns towards an
+&N&+Lunknown goal.  The creatures that created this tunnel do not care
+&N&+Lfor the smooth, finished look of the&N&+y halflings&N&+L above.  The walls
+&N&+Lare quite rough and rocks of various sizes lay strewn about the
+&N&+Ltunnel.  Small scraps of &N&+yleather&N&+L and &N&+ywood&N&+L are visible amongst the
+&N&+Lrocky rubble.  One may travel north or down from this point.&N
+~
+1 32768 14 0
+D0
+~
+~
+0 0 4959
+D5
+~
+~
+0 0 4957
+S
+#4959
+&+LA Turn in the Rough Tunnel&N~
+&N&+L   The rough tunnel continues here as it twists and turns below the
+&N&+yhalfling &N&+csilver&N&+L mine.  The walls are rough and long gouges are visible
+&N&+Lthroughout.  The air is stale and filled with the scent of &N&+wsmoke&N&+L and
+&N&+Lsweat.  Echoes that sound like moans seem to come from deeper in the
+&N&+Ltunnel, while the sounds of digging can be heard from up ahead.  The
+&N&+Ltwisting and turning tunnel doesn't seem to have an end and no markings
+&N&+Lindicated one section is different from another.  One may travel south
+&N&+Lor west from this point.&N
+~
+1 32768 14 0
+D0
+~
+~
+4 0 4963
+D2
+~
+~
+0 0 4958
+D3
+~
+~
+0 0 4960
+S
+#4960
+&N&+LA Turn in the Rough Tunnel&N~
+&N&+L   A great deal of rubble is here, varying from small pebbles and &N&+wdust&N
+&N&+Lto great boulders the size of a &N&+Ggoblin&N&+L.  There are several &N&+ywicker baskets&N
+&N&+Lfilled with stone and a few &N&+yduffle bags&N&+L filled with mining equipment.  The
+&N&+Lroom is quite dark and no &N&+Wlight source&N&+L is visible.  One may travel up or
+&N&+Least from this point.&N
+~
+1 32768 14 0
+D1
+~
+~
+0 0 4959
+D4
+~
+~
+0 0 4961
+S
+#4961
+&N&+LThe End of the Rough Tunnel&N~
+&N&+L   The tunnel comes to an end here.  There is a &N&+cmetal trapdoor&N&+L installed
+&N&+Lin the ceiling, a new addition to the tunnel.  The tunnel slopes upwards
+&N&+Land all digging is being done upwards.  There are some various hunks of
+&N&+Lrock strewn about the room and a few&N&+c tools&N&+L lie near the &N&+ctrapdoor &N&+Litself.
+&N&+LThere is a &N&+wcorpse&N&+L in the corner, slowly decomposing.  One may travel up
+&N&+Lor down from this point.&N
+~
+1 32768 14 0
+D4
+  A secret trapdoor has been cut into the stone.&N
+~
+trapdoor trap door~
+5 0 4962
+D5
+~
+~
+0 0 4960
+S
+#4962
+&NInside the &N&+cSilver&N&+L Mine&N Vault&N~
+&N   The &N&+Wvault&N of the &N&+yhalfling &N&+csilver&N&+L mine&N is filled with &N&+ywooden
+&N&+yracks &Nand &N&+cchests&N.  The room is very functional with little in the
+means of adornment.  The room is &N&+Willuminated&N by a few &N&+mmagical&N
+&N&+ytorches &Nensconced in the wall.  The walls themselves are highly
+polished and no blemishes are visible.  Whoever built this room
+out of the solid &N&+Lstone&N spent a great deal of time making the &N&+Wvault&N
+secure.  No windows are visible and the only exit is to the south,
+the &N&+Wvault &Ndoor itself.  It hangs on heavy &N&+Lhinges&N and is made of
+a &N&+Cmetallic alloy&N.  Nothing could break into this &N&+Wvault&N.
+~
+1 134250560 0 0
+D2
+~
+vault door~
+2 4976 4908
+D5
+   This trapdoor seemingly came from nowhere.  It's made of metal.&N
+~
+trapdoor trap door~
+5 0 4961
+S
+#4963
+&N&+LThe Cellar of the Food &N&+WPantry&N~
+&N&+L   This dark cellar is considerably cooler than the room above.  Large
+&N&+ywooden crates &N&+Lhold various &N&+Wtubers&N&+L and&N&+W onions&N&+L and on the &N&+ywooden racks&N
+&N&+Llarge canned &N&+Gvegetable&N&+L containers are sorted by when they were made.
+&N&+LThe floor is clean but a layer of &N&+wdust&N&+L covers all the&N&+y shelves &N&+Las if the
+&N&+Wpantry &N&+Lis in dire need of a deep cleaning.  The air is cool and not very
+&N&+Lhumid.  &N&+yShelves &N&+Lline each wall but the southern wall.  The southern wall
+&N&+Lseems strange.  One may travel up the &N&+ywooden ladder&N&+L to leave the storage
+&N&+Lroom.&N
+~
+1 0 0 0
+D2
+~
+~
+4 0 4959
+D4
+~
+trapdoor door trap~
+1 0 4926
+S
+#4964
+&N&+GRandom Load Grid&N~
+   This is a random load grid.  No player should ever be in this
+room.  If you somehow end up here, please petition a god immediately.&N
+~
+1 201359552 1 0
+D0
+~
+~
+0 0 4965
+D1
+~
+~
+0 0 4967
+D2
+~
+~
+0 0 4919
+D3
+~
+~
+0 0 4968
+S
+#4965
+&+GRandom Load Grid&N~
+   This is a random load grid.  No player should ever be in this
+room.  If you somehow end up here, please petition a god immediately.&N
+~
+1 201359552 1 0
+D1
+~
+~
+0 0 4966
+D2
+~
+~
+0 0 4964
+S
+#4966
+&+GRandom Load Grid&N~
+   This is a random load grid.  No player should ever be in this
+room.  If you somehow end up here, please petition a god immediately.&Nz
+~
+1 201359552 1 0
+D0
+~
+~
+0 0 4968
+D1
+~
+~
+0 0 4968
+D2
+~
+~
+0 0 4967
+D3
+~
+~
+0 0 4965
+S
+#4967
+&N&+GRandom Load Grid&N~
+   This is a random load grid.  No player should ever be in this
+room.  If you somehow end up here, please petition a god immediately.&N
+~
+1 201359552 1 0
+D0
+~
+~
+0 0 4966
+D1
+~
+~
+0 0 4924
+D3
+~
+~
+0 0 4964
+S
+#4968
+&+RMOB TRAP ROOM&N~
+   Mob trap room is for holding random load mobs so they cannot
+populate the zone.  If you find yourself in this room, please
+petition and let a god know right away.  You should not be here.&N
+~
+1 201359552 0 0
+D3
+~
+~
+0 0 4968
+S
