@@ -4100,7 +4100,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
   /* Stats */
   if (GET_LEVEL(ch) >= 1)
   {
-    if (IS_TRUSTED(ch) || GET_LEVEL(ch) >= 20)
+    if (IS_TRUSTED(ch) || GET_LEVEL(ch) >= MIN_LEVEL_FOR_ATTRIBUTES)
     {
       /* this is ugly, because of new racial stat mods.  JAB */
 #if 0
@@ -4314,7 +4314,7 @@ void do_attributes(P_char ch, char *argument, int cmd)
 
 
     }
-    else                        /*if (GET_LEVEL(ch) >= 10) */
+    else
     {
       sprintf( buf,
               "&+cSTR: &+Y%-15s&n  &+cAGI: &+Y%-15s&n   &+cDEX: &+Y%s\n"

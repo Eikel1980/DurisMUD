@@ -616,6 +616,8 @@ struct attr_names_struct {
 #define LUCK	10
 #define MAX_ATTRIBUTES LUCK
 
+#define MIN_LEVEL_FOR_ATTRIBUTES 20
+
 /* Predifined  conditions */
 #define DRUNK        0
 #define FULL         1

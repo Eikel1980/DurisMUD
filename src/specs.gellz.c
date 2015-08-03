@@ -823,15 +823,56 @@ int showhand(P_obj obj, P_char ch, int cmd, char *argument, int whoscard)
 /*	Deaths Door achievment proc for all 100 base stats - gellz	*/
 void do_deaths_door(P_char ch, char *arg, int cmd)
 {
-    struct affected_type af;
+  struct affected_type af;
+  char buf[MAX_STRING_LENGTH];
 
   if( !IS_ALIVE(ch) )
   {
     return;
   }
-  if(!(affected_by_spell(ch, ACH_DEATHSDOOR)))
+  if( !(affected_by_spell(ch, ACH_DEATHSDOOR)) )
   {
     act("&+yYou do not posess the ability to use &+LDea&+wths &+LDo&+wor&+y portals...\n&n", FALSE, ch, 0, 0, TO_CHAR );
+    // Don't show stats to lowbies.
+    if( GET_LEVEL(ch) < MIN_LEVEL_FOR_ATTRIBUTES )
+    {
+      return;
+    }
+    sprintf( buf, "You still need: " );
+    if( ch->base_stats.Str < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Strength, ", 100 - ch->base_stats.Str );
+    }
+    if( ch->base_stats.Dex < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Dexterity, ", 100 - ch->base_stats.Dex );
+    }
+    if( ch->base_stats.Int < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Intelligence, ", 100 - ch->base_stats.Int );
+    }
+    if( ch->base_stats.Wis < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Wisdom, ", 100 - ch->base_stats.Wis );
+    }
+    if( ch->base_stats.Agi < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Agility, ", 100 - ch->base_stats.Agi );
+    }
+    if( ch->base_stats.Con < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Constitution, ", 100 - ch->base_stats.Con );
+    }
+    if( ch->base_stats.Pow < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Power, ", 100 - ch->base_stats.Pow );
+    }
+    if( ch->base_stats.Cha < 100 )
+    {
+      sprintf( buf + strlen(buf), "%d Charisma, ", 100 - ch->base_stats.Cha );
+    }
+    sprintf( buf + strlen(buf) - 2, ".\n" );
+    send_to_char(buf, ch );
     return;
   }
   if( !*arg )
