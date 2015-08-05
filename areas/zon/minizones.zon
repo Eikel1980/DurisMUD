@@ -190,36 +190,36 @@ D 0 5851 0 1 100 0 0 0
 *     "First Floor, Guest Rooms and Lounge" - closed
 *
 D 0 5854 1 2 100 0 0 0
-*     east exit from "Wide Corridor, Leading south to more Rooms" to
+*     east exit from "Wide Corridor, Leading South to More Rooms" to
 *     "A small, yet lavish room" - closed/locked
 *
 D 0 5855 3 2 100 0 0 0
 *     west exit from "A small, yet lavish room" to
-*     "Wide Corridor, Leading south to more Rooms" - closed/locked
+*     "Wide Corridor, Leading South to More Rooms" - closed/locked
 *
 D 0 5854 3 2 100 0 0 0
-*     west exit from "Wide Corridor, Leading south to more Rooms" to
+*     west exit from "Wide Corridor, Leading South to More Rooms" to
 *     "A large, elaborate room" - closed/locked
 *
 D 0 5856 1 2 100 0 0 0
 *     east exit from "A large, elaborate room" to
-*     "Wide Corridor, Leading south to more Rooms" - closed/locked
+*     "Wide Corridor, Leading South to More Rooms" - closed/locked
 *
 D 0 5857 1 2 100 0 0 0
-*     east exit from "Center Corridor, intersecting two Bedrooms" to
+*     east exit from "Center Corridor, Intersecting Two Bedrooms" to
 *     "A filthy room, caked in dirt" - closed/locked
 *
 D 0 5859 3 2 100 0 0 0
 *     west exit from "A filthy room, caked in dirt" to
-*     "Center Corridor, intersecting two Bedrooms" - closed/locked
+*     "Center Corridor, Intersecting Two Bedrooms" - closed/locked
 *
 D 0 5857 3 2 100 0 0 0
-*     west exit from "Center Corridor, intersecting two Bedrooms" to
+*     west exit from "Center Corridor, Intersecting Two Bedrooms" to
 *     "A small wooden room" - closed/locked
 *
 D 0 5858 1 2 100 0 0 0
 *     east exit from "A small wooden room" to
-*     "Center Corridor, intersecting two Bedrooms" - closed/locked
+*     "Center Corridor, Intersecting Two Bedrooms" - closed/locked
 *
 D 0 5858 5 5 100 0 0 0
 *     down exit from "A small wooden room" to
