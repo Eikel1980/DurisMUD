@@ -19125,8 +19125,7 @@ void spell_accel_healing(int level, P_char ch, char *arg, int type,
   send_to_char("You begin to heal faster.\r\n", victim);
 }
 
-void spell_pleasantry(int level, P_char ch, char *arg, int type,
-                      P_char victim, P_obj obj)
+void spell_pleasantry(int level, P_char ch, char *arg, int type, P_char victim, P_obj obj)
 {
   struct affected_type af;
 
@@ -19142,8 +19141,7 @@ void spell_pleasantry(int level, P_char ch, char *arg, int type,
   }
   else
   {
-    send_to_char("The bozo has already been made as pleasant as possible.\n",
-                 ch);
+    send_to_char("The bozo has already been made as pleasant as possible.\n", ch);
   }
 }
 
@@ -19164,14 +19162,19 @@ void do_pleasantry(P_char ch, char *argument, int cmd)
   else if(!generic_find(argument, FIND_CHAR_WORLD, ch, &vict, &dummy))
     send_to_char("Couldn't find any such creature.\n", ch);
   else if(GET_LEVEL(vict) >= AVATAR)
-    act("$E doesn't get any more pleasant than this.", 0, ch, 0, vict,
-        TO_CHAR);
+    act("$E doesn't get any more pleasant than this.", 0, ch, 0, vict, TO_CHAR);
   else if(!affected_by_spell(vict, SPELL_PLEASANTRY))
   {
     bzero(&af, sizeof(af));
     af.type = SPELL_PLEASANTRY;
     af.duration = 25;
     affect_to_char(vict, &af);
+    act("You make $M tense up as they think about the game.", 0, ch, 0, vict, TO_CHAR);
+  }
+  else
+  {
+    act("You let $M relax.", 0, ch, 0, vict, TO_CHAR);
+    affect_from_char( vict, SPELL_PLEASANTRY );
   }
 }
 
