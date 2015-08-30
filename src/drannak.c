@@ -1139,9 +1139,9 @@ void randomizeitem(P_char ch, P_obj obj)
       {
         if( rchance < 5 )
         {
-          SET_BIT(obj->bitvector3, AFF3_PASS_WITHOUT_TRACE);
+          SET_BIT(obj->bitvector4, AFF4_REGENERATION);
           send_to_char("&+LYou infuse the &+Mmagical&+L properties of your stone into your creation...\r\n", ch);
-          sprintf(emsg, " &+Lof the &+GRanger&n");
+          sprintf(emsg, " &+Lof the &+gTroll&n");
         }
         else if( rchance < 25 )
         {
