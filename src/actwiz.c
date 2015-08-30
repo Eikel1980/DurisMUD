@@ -10438,18 +10438,11 @@ void do_petition_block(P_char ch, char *argument, int cmd)
   P_obj    dummy;
   char     buf[MAX_STRING_LENGTH];
 
-  if(IS_NPC(ch) ||
-     !IS_TRUSTED(ch))
-        return;
-
-  if(GET_LEVEL(ch) < FORGER)
-  {
-    send_to_char("You are not yet able to block player petitions.\r\n", ch);
+  if( IS_NPC(ch) || !IS_TRUSTED(ch) )
     return;
-  }
-  
+
   one_argument(argument, buf);
-  
+
   if(!*buf)
     send_to_char("Usage: petition_block <player>\r\n", ch);
   else if(!generic_find(argument, FIND_CHAR_WORLD, ch, &vict, &dummy))
@@ -10462,9 +10455,9 @@ void do_petition_block(P_char ch, char *argument, int cmd)
   {
     send_to_char("The petition block was removed.\r\n", vict);
     send_to_char("Petition block removed.\n", ch);
-    
+
     REMOVE_BIT(vict->specials.act2, PLR2_B_PETITION);
-    
+
     wizlog(GET_LEVEL(ch), "%s just removed the petition block on %s.",
       GET_NAME(ch), GET_NAME(vict));
     logit(LOG_WIZ, "%s just removed the petition block on %s.",
@@ -10475,7 +10468,7 @@ void do_petition_block(P_char ch, char *argument, int cmd)
   {
     send_to_char("&+WThe gods take away your ability to use the &+Rpetition &+Wchannel.\r\n", vict);
     send_to_char("Petition block set.\r\n", ch);
-    
+
     SET_BIT(vict->specials.act2, PLR2_B_PETITION);
 
     wizlog(GET_LEVEL(ch), "%s was just PETITION BLOCKED by %s.",
