@@ -1149,8 +1149,7 @@ void show_visual_status(P_char ch, P_char tar_char)
 	    SVS("&+w$E appears to be encased in a &+Lsw&+wir&+Llin&+wg &+Lbarrier &+wof &+Lgravitational energy!&n");
   }
 
-  if( IS_NPC(tar_char) && (GET_CLASS(ch, CLASS_RANGER)
-    || (IS_PC_PET(tar_char) && GET_CLASS(ch, CLASS_SUMMONER) && GET_MASTER(tar_char) == ch)) )
+  if( IS_NPC(tar_char) && (GET_CLASS(ch, CLASS_RANGER) || GET_CLASS(ch, CLASS_SUMMONER)) )
   {
     get_class_string(tar_char, buf2);
     sprintf(buf, "Through your advanced training, you glean they are a level &+Y%d &N%s&n.", GET_LEVEL(tar_char), buf2);
