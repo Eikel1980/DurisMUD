@@ -3439,10 +3439,10 @@ int itemvalue( P_obj obj )
       workingvalue += get_ival_from_proc(obj_index[obj->R_num].func.obj);
     }
 
-    //AC negative is good
+    //AC negative is good, not reducing itemvalue for items that make ac worse.
     if( (obj->affected[i].location == APPLY_AC) )
     {
-      workingvalue -= mod / 10;
+      workingvalue -= (mod < 0) ? 0 : (mod+1)/2;
     }
 
     //saving throw values (good) are negative
