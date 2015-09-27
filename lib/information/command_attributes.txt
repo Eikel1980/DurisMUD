@@ -26,10 +26,12 @@ bash
 GET_C_STR(ch
 GET_C_DEX(ch
 GET_C_AGI(vi
+GET_C_STR(ch
+GET_C_DEX(ch
+GET_C_DEX(ch
+GET_C_AGI(vi
 GET_C_LUK(ch
 GET_C_LUK(vi
-GET_C_AGI(ch
-GET_C_AGI(vi
 GET_C_STR(ch
 ~
 battle orders
@@ -46,7 +48,7 @@ blood scent
 bodyslam
 GET_C_AGI(ch
 GET_C_AGI(vi
-GET_C_AGI(vi
+GET_C_DEX(ch
 GET_C_LUK(ch
 GET_C_LUK(vi
 GET_C_STR(ch
@@ -94,13 +96,15 @@ GET_C_LUK(vi
 GET_C_STR(ch
 GET_C_AGI(vi
 GET_C_STR(ch
+GET_C_AGI(vi
+GET_C_STR(ch
 ~
 circle
 ~
 conjure
 GET_C_CHA(ch
 GET_C_CHA(ch
-GET_C_INT(to
+GET_C_INT(t_
 ~
 craft
 ~
@@ -137,8 +141,8 @@ GET_C_STR(ch
 GET_C_AGI(vi
 GET_C_DEX(vi
 GET_C_LUK(vi
-GET_C_DEX(ch
 GET_C_LUK(ch
+GET_C_DEX(ch
 GET_C_LUK(ch
 ~
 flank
@@ -170,6 +174,9 @@ GET_C_AGI(vi
 headbutt
 GET_C_LUK(ch
 GET_C_LUK(vi
+GET_C_AGI(ch
+GET_C_AGI(vi
+GET_C_STR(ch
 GET_C_STR(ch
 ~
 headlock
@@ -207,8 +214,6 @@ kick
 GET_C_STR(ch
 GET_C_LUK(ch
 GET_C_LUK(vi
-GET_C_AGI(ch
-GET_C_AGI(vi
 ~
 lance charge
 GET_C_LUK(ch
@@ -368,6 +373,7 @@ GET_C_AGI(ch
 GET_C_AGI(vi
 ~
 shriek
+GET_C_POW(ch
 ~
 smith
 ~
@@ -424,8 +430,6 @@ subterfuge
 sweeping thrust
 GET_C_LUK(ch
 GET_C_LUK(vi
-GET_C_AGI(ch
-GET_C_AGI(vi
 GET_C_DEX(ch
 GET_C_AGI(vi
 GET_C_AGI(ch

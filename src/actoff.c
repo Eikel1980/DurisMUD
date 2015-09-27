@@ -4120,11 +4120,10 @@ void knock_out(P_char ch, int duration)
 
 void do_headbutt(P_char ch, char *argument, int cmd)
 {
-  P_char   victim, tch;
+  P_char  victim, tch;
   struct affected_type af;
-  int      success, tmp_num;
-  int      chsize, victsize;
-  int      attlevel;//, deflevel;
+  int     chsize, victsize, chance, roll;
+  float   dam, lvldiff;
 
   struct damage_messages messages_humanoid = {
     "You leave a huge, &+rred&N swollen lump on $N's temple.",
@@ -4134,7 +4133,6 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     "$n's exploding headbutt relieves you of your duties in life.",
     "$n bashes $N's skull in with a swift, stern butt to the head.", 0
   };
-
   struct damage_messages *messages = &messages_humanoid;
 
   struct damage_messages messages_other = {
@@ -4160,12 +4158,11 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     return;
   }
 
-  if( !(success = GET_CHAR_SKILL(ch, SKILL_HEADBUTT)) )
+  if( !(chance = GET_CHAR_SKILL(ch, SKILL_HEADBUTT)) )
   {
     send_to_char("You don't know how.  Besides, you might hurt yourself.\n", ch);
     return;
   }
-
 
   if( !(victim = ParseTarget(ch, argument)) )
   {
@@ -4180,9 +4177,7 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     return;
   }
 
-  attlevel = GET_LEVEL(ch);
-//  deflevel = GET_LEVEL(victim);
-  if( IS_TRUSTED(victim) || isname("_nobutt_", GET_NAME(victim)) )
+  if( /*PENIS IS_TRUSTED(victim) ||*/ isname("_nobutt_", GET_NAME(victim)) )
   {
     act("$N is clearly too quick and clever for such a brutish attack.", FALSE, ch, 0, victim, TO_CHAR);
     return;
@@ -4264,8 +4259,7 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     return;
   }
 
-  success = (success + attlevel) / 2;
-  //success += BOUNDED(-20, attlevel - deflevel, 20);
+  chance += (GET_LEVEL(ch) - GET_LEVEL(victim)) / 2;
 
 /* dont care for the penalty for larger mobs - Drannak
   if (get_takedown_size(victim) > get_takedown_size(ch))
@@ -4280,38 +4274,39 @@ void do_headbutt(P_char ch, char *argument, int cmd)
   // anatomy check
   if( GET_CHAR_SKILL(ch, SKILL_ANATOMY) && 5 + GET_CHAR_SKILL(ch, SKILL_ANATOMY)/10 > number(0,100) )
   {
-    success *= (int) 1.5;
+    chance += chance / 2;
   }
 
   /*  maybe the attacker or victim are lucky */
   if( (GET_C_LUK(ch) / 2) > number(0, 80) )
   {
-     success = (int) (success * 1.1);
+     chance += chance / 10;
   }
   if( (GET_C_LUK(victim) / 2) > number(0, 80) )
   {
-     success = (int) (success * 0.9);
+     chance -= chance / 10;
   }
+
+  // Making agi a factor.
+  chance += GET_C_AGI(ch) - GET_C_AGI(victim) / 2;
 
   if( IS_TRUSTED(ch) || !AWAKE(victim) )
   {
-    tmp_num = 100;
+    roll = 100;
   }
   else
   {
-    tmp_num = number(1, success);
+    roll = number(1, chance);
   }
 
-  int dam = 0;
-
   // failed catastrophically!
-  if( !notch_skill(ch, SKILL_HEADBUTT, get_property("skill.notch.offensive", 7)) && tmp_num <= 2 )
+  if( !notch_skill(ch, SKILL_HEADBUTT, get_property("skill.notch.offensive", 7)) && roll <= 2 )
   {
     dam = number(5, 15);
 
     if( get_takedown_size(victim) < get_takedown_size(ch) )
     {
-      dam = (int) (dam * 1.5);
+      dam += dam / 2.;
     }
 
     memset(&af, 0, sizeof(af));
@@ -4328,7 +4323,7 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     knock_out(ch, PULSE_VIOLENCE * number(2,3));
   }
   // merely failed
-  else if( tmp_num <= 5 )
+  else if( roll <= 5 )
   {
     dam = number(1, 8);
 
@@ -4347,28 +4342,42 @@ void do_headbutt(P_char ch, char *argument, int cmd)
   // success!
   else
   {
+    /* This is really horrible.  Redoing this and including level.
     dam = ((56 * (number(1, 25))/51 + GET_C_STR(ch) + GET_CHAR_SKILL(ch, SKILL_HEADBUTT)));
     dam = (dam * 1.2);
+    // Since we have PHSDAM_NOREDUCE, we need to divide by 4 from old code.
     dam /= 4;
+     */
+
+    // Have the base run from 20 to 80 (20 = 1 skill, lowest possible, 80 = 100 skill highest possible).
+    dam = (float)GET_CHAR_SKILL(ch, SKILL_HEADBUTT) / 2. + number(20, 30);
+    // Str modifier: We divide by 180 since that'll be about the average equipped character.
+    dam = (dam * (float)GET_C_STR(ch)) / 180.;
+    // 1/2 damage (+1/56th) for level 1s up to full damage at 56.
+    dam = dam * (GET_LEVEL(ch) / 2 + 28.) / 56.;
+    // Apply the damfactor property.
+    dam *= get_property("skill.headbutt.damfactor", 1.000);
+
     if( GET_RACE(ch) == RACE_MINOTAUR )
     {
-      dam = (int) (dam * get_property("damage.headbutt.damBonusMinotaur", 1.500));
+      dam *= get_property("damage.headbutt.damBonusMinotaur", 1.500);
     }
 
     // if victim is smaller, do a bit more damage
     if( get_takedown_size(victim) < get_takedown_size(ch) )
     {
-      dam = (int) (dam * get_property("damage.headbutt.damBonusVsSmaller", 1.10));
+      dam *= get_property("damage.headbutt.damBonusVsSmaller", 1.10);
     }
 
     // if victim is larger, do a bit less damage
     if (get_takedown_size(victim) > get_takedown_size(ch))
     {
-      dam = (int) (dam * get_property("damage.headbutt.damPenaltyVsLarger", 0.900));    
+      dam *= get_property("damage.headbutt.damPenaltyVsLarger", 0.900);
     }
 
-    debug("do_headbutt: (%s) butting (%s) dam (%d) skill (%d).", GET_NAME(ch), GET_NAME(victim), dam, GET_CHAR_SKILL(ch, SKILL_HEADBUTT) );
-    if( melee_damage(ch, victim, dam, PHSDAM_NOPOSITION | PHSDAM_TOUCH | PHSDAM_NOREDUCE, messages) != DAM_NONEDEAD )
+    debug("do_headbutt: (%s) butting (%s) dam (%d) skill (%d).", GET_NAME(ch), GET_NAME(victim),
+      (int)dam, GET_CHAR_SKILL(ch, SKILL_HEADBUTT) );
+    if( melee_damage(ch, victim, (int)dam, PHSDAM_NOPOSITION | PHSDAM_TOUCH | PHSDAM_NOREDUCE, messages) != DAM_NONEDEAD )
     {
       return;
     }
@@ -4392,20 +4401,20 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     affect_to_char(ch, &af);
     CharWait(ch, (int) (PULSE_VIOLENCE * 1.5));
 
-    tmp_num = number(1, 100 - (success / 2));
+    roll = number(1, 100 - (chance / 2));
 
-    // 6% chance at 100% success - Jexni 2/15/11
-    if( tmp_num < 6 && !IS_AFFECTED(victim, AFF_KNOCKED_OUT) )
+    // 10% chance at 100% chance
+    if( roll < 6 && !IS_AFFECTED(victim, AFF_KNOCKED_OUT) )
     {
       knock_out(victim, PULSE_VIOLENCE * number(2,3));
     }
-    else if( tmp_num < 13 )
+    else if( roll < 11 )
     {
       send_to_char("Wow!  Look at all those stars!!\n", victim);
       CharWait(victim, (int) (PULSE_VIOLENCE * 1));
       Stun(victim, ch, (int) (PULSE_VIOLENCE * 1.5), FALSE);
     }
-    else if( tmp_num < 15 )
+    else if( roll < 16 )
     {
       send_to_char("Wow!  Look at all those stars!\n", victim);
 
@@ -4418,7 +4427,7 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     {
       CharWait(victim, (int) (PULSE_VIOLENCE * 1));
     }
-    if( tmp_num < 25 && !IS_SET(ch->specials.act, PLR_VICIOUS) && IS_FIGHTING(ch) )
+    if( roll < 25 && !IS_SET(ch->specials.act, PLR_VICIOUS) && IS_FIGHTING(ch) )
     {
       for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
       {

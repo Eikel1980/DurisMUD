@@ -468,7 +468,7 @@ FUNCTIONNAME="void do_tackle"
 parsefile
 
 echo "takedowns" >> command_attributes.txt
-FUNCTIONNAME="int takedown_check"
+FUNCTIONNAME="float takedown_check"
 parsefile
 
 echo "throat crush" >> command_attributes.txt
