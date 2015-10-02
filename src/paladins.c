@@ -11,8 +11,11 @@
 #include "objmisc.h"
 #include "damage.h"
 #include "guard.h"
+#include "weather.h"
 
 #include "paladins.h"
+
+extern struct time_info_data time_info;
 
 char _buff[MAX_STRING_LENGTH];
 
@@ -651,9 +654,22 @@ bool holy_weapon_proc(P_char ch, P_char victim)
   act("$n's $p &+Weminates a soft &+yg&+Yl&+Wow and $n &+Wlooks &+Yrefreshed&+W!",
     TRUE, ch, wpn, NULL, TO_ROOM);
 
-  if( !(IS_MAGIC_LIGHT(room)) )
+  // Make room twilight.
+  if( !CAN_DAYPEOPLE_SEE(room) )
   {
-    spell_continual_light(GET_LEVEL(ch), ch, 0, 0, 0, 0);
+    struct room_affect  af;
+
+    send_to_char("&+YYour God brightens the room a bit.&n\r\n", ch);
+    act("&+Y$n&+Y sends forth a some light into the room.&n",0, ch, 0, 0, TO_ROOM);
+
+    memset(&af, 0, sizeof(struct room_affect));
+    af.type = SPELL_CONTINUAL_LIGHT;
+    // 1 sec per level.
+    af.duration = (GET_LEVEL(ch) * 4);
+    af.room_flags = TWILIGHT;
+    af.ch = ch;
+    affect_to_room(ch->in_room, &af);
+
   }
 
 /* WTH was this for? uber proc'ing on the victim?
