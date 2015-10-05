@@ -1086,7 +1086,7 @@
 #define TAG_DECREPIFY                2014
 #define TAG_HATRED                   2015
 #define TAG_PRESSURE_POINTS          2016
-#define TAG_EATING                   2017
+#define TAG_EATEN                    2017
 #define TAG_OBJ_RECENT_FRAG          2018
 #define TAG_KNOWN_SHAPE              2019
 #define TAG_UNUSED                   2020

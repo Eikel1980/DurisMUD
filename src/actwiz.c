@@ -173,6 +173,7 @@ void which_race( P_char ch, char *argument );
 void stat_race(P_char ch, char *arg);
 void event_mob_mundane(P_char, P_char, P_obj, void *);
 void which_stat(P_char ch, char *argument);
+void which_food(P_char ch, char *argument);
 
 /*
  * Macros
@@ -8386,7 +8387,7 @@ void do_which(P_char ch, char *args, int cmd)
   if(sc_min)
     stat_check = TRUE;
 
-  if(!*arg1 || !*arg2)
+  if( !*arg1 || (*arg1 != 'f' && *arg1 != 'F' && !*arg2) )
   {
     send_to_char(WHICH_SYNTAX, ch);
     return;
@@ -8731,6 +8732,11 @@ void do_which(P_char ch, char *args, int cmd)
   else if( (*arg1 == 's') || (*arg1 == 'S') )
   {
     which_stat( ch, rest );
+    return;
+  }
+  else if( (*arg1 == 'f') || (*arg1 == 'F') )
+  {
+    which_food( ch, rest );
     return;
   }
   if(!*o_buf)
@@ -11430,3 +11436,86 @@ void do_whois(P_char ch, char *arg, int cmd)
   mysql_free_result(res);
   send_to_char( ".\n", ch );
 }
+
+// We don't want this as a global since we have an adjust of 1 for the one we loaded.
+#define OBJ_COLOR(rnum) ( (obj_index[rnum].number <= 1) ? "+L" : \
+  (obj_index[rnum].number - 1 > obj_index[rnum].limit) ? "+W" : \
+  (obj_index[rnum].number - 1 == obj_index[rnum].limit) ? "n" : "+w" )
+
+char *food_modifiers( P_obj food )
+{
+  static char mod_string[MAX_STRING_LENGTH];
+  int sub, mod;
+
+  // Poison is in value[3].
+  if( food->value[3] > 0 )
+  {
+    sub = sprintf( mod_string, "&+GPOISON&N: %d, HP_REG: %d, ", food->value[3], -food->value[3] );
+  }
+  else
+  {
+    mod_string[0] = '\0';
+    if( (mod = food->value[1]) == 0 )
+    {
+      mod = 1;
+    }
+    sub = sprintf( mod_string, "HP_REG: %d, ", mod * 15 );
+    if( food->value[2] != 0 )
+    {
+      mod = food->value[2];
+    }
+    sub += sprintf( mod_string + sub, "MV_REG: %d, ", mod );
+  }
+  if( food->value[4] != 0 )
+  {
+    sub += sprintf( mod_string + sub, "STR&CON: %d, ", food->value[4] );
+  }
+  if( food->value[5] != 0 )
+  {
+    sub += sprintf( mod_string + sub, "AGI&DEX: %d, ", food->value[5] );
+  }
+  if( food->value[6] != 0 )
+  {
+    sub += sprintf( mod_string + sub, "INT&WIS: %d, ", food->value[6] );
+  }
+  if( food->value[7] != 0 )
+  {
+    sub += sprintf( mod_string + sub, "HIT&DAM: %d, ", food->value[7] );
+  }
+
+  // Duration is in value[0].
+  sprintf( mod_string + ((sub > 0) ? sub - 2 : sub), " for %d ticks", food->value[0] );
+
+  return mod_string;
+}
+
+// This looks through each item type for food-types and lists them along with their benefits.
+void which_food(P_char ch, char *argument)
+{
+  int   count = 0;
+  char  buf[MAX_STRING_LENGTH];
+  P_obj obj;
+
+  // Display the Header:
+                 // "  1)    0/   0     13 a *huge* valium tablet measuri - Unknown."
+  sprintf( buf, "&=LWNum) INGAME      VNUM Description                    - Modifiers&n\n"
+                "         &=LW/ LIMIT&n\n" );
+  send_to_char( buf, ch );
+
+  for( int r_num = 0; r_num <= top_of_objt; r_num++ )
+  {
+    // Load a copy of object.
+    obj = read_object(r_num, REAL);
+
+    if( obj->type == ITEM_FOOD )
+    {
+      sprintf( buf, "%3d) &%s%4d/%4d %6d&n %s&n - %s.\n", ++count, OBJ_COLOR(r_num), obj_index[r_num].number-1,
+        obj_index[r_num].limit, obj_index[r_num].virtual_number,
+        pad_ansi( obj->short_description, 30, TRUE ).c_str(), food_modifiers(obj) );
+      send_to_char( buf, ch );
+    }
+    // Free up the object copy.
+    extract_obj( obj, FALSE );
+  }
+}
+#undef OBJ_COLOR

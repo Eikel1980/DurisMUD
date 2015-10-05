@@ -3120,14 +3120,14 @@ QA
 &N$n smiles excitedly at $N and says 'Well done!'
 After several minutes of stirring up a thick &+Rconcoction&N, $n pours two bowls.
 ~
-R E 90000
+R E 15000
 R I 83482
 R I 83482
 G I 83366
 QA
 &N$n smiles at $N and says 'Well done, wyvern eggs!'
 ~
-R E 40000
+R E 7500
 R I 83483
 R I 83483
 G I 500026

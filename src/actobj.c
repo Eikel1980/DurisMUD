@@ -2740,7 +2740,7 @@ void do_eat(P_char ch, char *argument, int cmd)
      return;
      }
    */
-  if (affected_by_spell(ch, TAG_EATING) && !IS_TRUSTED(ch))
+  if (affected_by_spell(ch, TAG_EATEN) && !IS_TRUSTED(ch))
   {
     act("You feel sated already.", FALSE, ch, 0, 0, TO_CHAR);
     return;
@@ -2783,12 +2783,12 @@ void do_eat(P_char ch, char *argument, int cmd)
   {
     /* New code to grant reg from food */
     struct affected_type af;
-    if (!affected_by_spell(ch, TAG_EATING)) 
+    if (!affected_by_spell(ch, TAG_EATEN))
     {
       bzero(&af, sizeof(af));
-      af.type = TAG_EATING;
+      af.type = TAG_EATEN;
       af.flags = AFFTYPE_NOSHOW;
-      af.duration = 1 + (1 * temp->value[0]);
+      af.duration = 1 + (temp->value[0] > 0) ? temp->value[0] : 1;
 
       int hit_reg;
       int mov_reg;
@@ -2800,21 +2800,24 @@ void do_eat(P_char ch, char *argument, int cmd)
       }
       else
       {
-          hit_reg = 1;
-          if (temp->value[1] != 0)
-            hit_reg = temp->value[1];
-          mov_reg = hit_reg;
-          if (temp->value[2] != 0)
-            mov_reg = temp->value[2];
+        hit_reg = 1;
+        if (temp->value[1] != 0)
+          hit_reg = temp->value[1];
+        mov_reg = hit_reg;
+        if (temp->value[2] != 0)
+          mov_reg = temp->value[2];
       }
 
       af.location = APPLY_HIT_REG;
       af.modifier = 15 * hit_reg;
       affect_to_char(ch, &af);
 
-      af.location = APPLY_MOVE_REG;
-      af.modifier = mov_reg;
-      affect_to_char(ch, &af);
+      if( mov_reg != 0 )
+      {
+        af.location = APPLY_MOVE_REG;
+        af.modifier = mov_reg;
+        affect_to_char(ch, &af);
+      }
 
       if( (af.modifier = temp->value[4]) != 0 )
       {
