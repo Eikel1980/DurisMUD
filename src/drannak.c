@@ -1290,7 +1290,7 @@ P_obj random_zone_item(P_char ch)
 
   reward = read_object(real_object(getItemFromZone(GET_ZONE(ch))), REAL);
 
-  if( reward->type == ITEM_POTION )
+  if( reward != NULL && reward->type == ITEM_POTION )
   {
     extract_obj(reward);
     reward = NULL;
