@@ -903,8 +903,7 @@ void spell_restore_spirit(int level, P_char ch, char *arg, int type,
   }
 }
 
-void spell_enervation(int level, P_char ch, char *arg, int type,
-                            P_char victim, P_obj tar_obj)
+void spell_enervation(int level, P_char ch, char *arg, int type, P_char victim, P_obj tar_obj)
 {
   int result, dam;
 
@@ -995,7 +994,10 @@ void spell_enervation(int level, P_char ch, char *arg, int type,
       af.flags = AFFTYPE_SHORT | AFFTYPE_NODISPEL;
 
       af.location = APPLY_MOVE;
-      af.modifier = -(MIN(saved ? 7 : 15, GET_VITALITY(victim)));
+      af.modifier = saved ? -7 : -15;
+      // Do not put them below 1 max movement point: the prompt does not like that.
+      if( af.modifier < -GET_MAX_VITALITY(victim) + 1 )
+        af.modifier = -GET_MAX_VITALITY(victim) + 1;
 
       if (affected_by_spell(victim, SPELL_ENERVATION))
       {
