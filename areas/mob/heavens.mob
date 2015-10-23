@@ -1,5 +1,5 @@
 #7
-bronze dracolich _spec2_~
+bronze dracolich greater~
 &+ya bronze dracolich&N~
 &+yA bronze dracolich&N stands here, with &+rflesh&N hanging off its &+wrotting bones&N.
 ~
@@ -9,12 +9,12 @@ along the edges of its scales. This powerful beast has webbed feet with smooth, 
 scales and its glowing green eyes give off an eerie and fearful glow.
 ~
 201588746 0 0 0 721494168 266304 67108864 0 -1000 S
-UD 0 1 0 7
+UD 0 1 2 7
 56 193 -100 250d8+5500 10d10+90
 0.0.0.0 0
 8 8 0
 #8
-silver dracolich _spec1_~
+silver dracolich greater~
 &+ca silver dracolich&N~
 A &+csilver dracolich&N is here, with &+rflesh&N hanging off its &+wrotting bones&N.
 ~
@@ -23,13 +23,13 @@ hightlights appear to be carved out of pure silver.  Within its unlife this crea
 struggling to free itself from the pure evil magics that have raised it from its final resting place,
 its eyes glow with an eerie purple glow that delves deep into your soul.
 ~
-201590794 0 0 0 704717080 307264 67108864 0 -1000 S
-UD 0 1 0 7
+201590794 0 0 0 704717080 307264 67108864 8388608 -1000 S
+UD 0 1 1 7
 56 190 -100 250d7+6000 10d10+50
 0.0.0.0 0
 8 8 0
 #9
-golden dracolich _spec2_~
+golden dracolich greater~
 &+Ya golden dracolich&N~
 A &+Ygolden dracolich&N is here, with &+rflesh&N hanging off its &+wrotting bones&N.
 ~
@@ -39,12 +39,12 @@ living to do its bidding for the time being. Its scales gleem with a golden tint
 as almost swirling molten gold that stare right through you.
 ~
 201590794 0 0 0 721494424 276544 67108864 512 -1000 S
-UD 0 1 0 7
+UD 0 1 2 7
 56 190 -100 200d10+7000 10d10+90
 0.0.0.0 0
 8 8 0
 #10
-shadow dracolich~
+shadow dracolich greater~
 &+La shadow dracolich&n~
 A &+Lshadow dracolich&N is here, with &+rflesh&N hanging off its &+wrotting bones&N.
 ~
@@ -55,7 +55,7 @@ eyes being large skeletal pits of flaming shadows, with small piercing red
 pupils that give off a fearful light that seems to reach deep within your very
 soul.
 ~
-201590794 0 0 0 704717208 309313 0 570425344 -1000 S
+201590794 0 0 0 704717208 309441 16777248 578813952 -1000 S
 UD 0 16777217 0 7
 56 190 -100 100d15+8000 10d10+70
 0.0.0.0 0
