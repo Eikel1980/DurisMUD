@@ -3324,7 +3324,7 @@ void do_area(P_char ch, char *argument, int cmd)
 
 void do_quaff(P_char ch, char *argument, int cmd)
 {
-  P_obj    temp;
+  P_obj    bottle;
   int      i, j, chance;
   bool     equipped;
   char     Gbuf1[MAX_STRING_LENGTH];
@@ -3336,34 +3336,34 @@ void do_quaff(P_char ch, char *argument, int cmd)
 
   one_argument(argument, Gbuf1);
 
-  if(!(temp = get_obj_in_list_vis(ch, Gbuf1, ch->carrying)))
+  if(!(bottle = get_obj_in_list_vis(ch, Gbuf1, ch->carrying)))
   {
-    temp = ch->equipment[HOLD];
+    bottle = ch->equipment[HOLD];
     equipped = TRUE;
 
-    if((temp == NULL) || !isname(Gbuf1, temp->name))
+    if((bottle == NULL) || !isname(Gbuf1, bottle->name))
     {
       act("You do not have that item.", FALSE, ch, 0, 0, TO_CHAR);
       return;
     }
   }
 
-  if(temp->type != ITEM_POTION)
+  if(bottle->type != ITEM_POTION)
   {
     act("You can only quaff potions.", FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
 
-  if(obj_index[temp->R_num].virtual_number == 850 ||
-     obj_index[temp->R_num].virtual_number == 860)
+  if(obj_index[bottle->R_num].virtual_number == 850 ||
+     obj_index[bottle->R_num].virtual_number == 860)
   {
     act("You cannot quaff this potion.", FALSE, ch, 0, 0, TO_CHAR);
     return;
   }
 
-  if( GET_OBJ_VNUM(temp) == VOBJ_EPIC_BOTTLE_EPICS && GET_LEVEL(ch) < 46 )
+  if( GET_OBJ_VNUM(bottle) == VOBJ_EPIC_BOTTLE_EPICS && GET_LEVEL(ch) < 46 )
   {
-    act("&+CYou suddenly feel.. like doing some exp so you can quaff $p!\r\n", TRUE, ch, temp, 0, TO_CHAR);
+    act("&+CYou suddenly feel.. like doing some exp so you can quaff $p!\r\n", TRUE, ch, bottle, 0, TO_CHAR);
     return;
   }
 
@@ -3385,19 +3385,19 @@ void do_quaff(P_char ch, char *argument, int cmd)
     if( has_innate(ch, INNATE_QUICK_THINKING) || affected_by_spell(ch, SPELL_COMBAT_MIND) )
       chance = (int)(chance * 1.25);
 
-    if( number(0, 99) >= chance && GET_OBJ_VNUM(temp) != VOBJ_EPIC_BOTTLE_EPICS
-      && GET_OBJ_VNUM(temp) != VOBJ_EPIC_TOCORPSE_POTION )
+    if( number(0, 99) >= chance && GET_OBJ_VNUM(bottle) != VOBJ_EPIC_BOTTLE_EPICS
+      && GET_OBJ_VNUM(bottle) != VOBJ_EPIC_TOCORPSE_POTION )
     {
       act("Whoops!  You spilled it!", TRUE, ch, 0, 0, TO_CHAR);
-      act("$n attempts to quaff $p, but spills it instead!", TRUE, ch, temp, 0, TO_ROOM);
-      extract_obj(temp);
+      act("$n attempts to quaff $p, but spills it instead!", TRUE, ch, bottle, 0, TO_ROOM);
+      extract_obj(bottle);
       return;
     }
   }
 
-  act("$n &+yquaffs&n $p.", TRUE, ch, temp, 0, TO_ROOM);
+  act("$n &+yquaffs&n $p.", TRUE, ch, bottle, 0, TO_ROOM);
   act("As you quaff $p, the vial disappears in a bright &+Wflash of light!&n",
-    FALSE, ch, temp, 0, TO_CHAR);
+    FALSE, ch, bottle, 0, TO_CHAR);
 
   CharWait(ch, PULSE_VIOLENCE);
 
@@ -3405,11 +3405,11 @@ void do_quaff(P_char ch, char *argument, int cmd)
     unequip_char(ch, HOLD);
 
   //epic potion
-  if(GET_OBJ_VNUM(temp) == VOBJ_EPIC_BOTTLE_EPICS)
+  if(GET_OBJ_VNUM(bottle) == VOBJ_EPIC_BOTTLE_EPICS)
   {
     gain_epic(ch, EPIC_BOTTLE, 0, 75);
     send_to_char("&+CYou suddenly feel.. epic!\r\n", ch);
-    extract_obj(temp);
+    extract_obj(bottle);
     return;
   }
 
@@ -3423,22 +3423,22 @@ void do_quaff(P_char ch, char *argument, int cmd)
     /* value[5] specifies special functions for epic potions */
 /*
   //make sure to add default spell to potion.
-  if(temp->value[5] > 0)
+  if(bottle->value[5] > 0)
   {
-    if(temp->value[5] == 1337)
+    if(bottle->value[5] == 1337)
     {
       advance_level(ch);
-      extract_obj(temp);
+      extract_obj(bottle);
       return;
     }
   }
 */
   // value[4] specifies damage player takes from potion - considered non-magical
-  if(temp->value[4] > 0)
+  if(bottle->value[4] > 0)
   {
-    if(spell_damage(ch, ch, temp->value[4], SPLDAM_GENERIC, 0, 0))
+    if(spell_damage(ch, ch, bottle->value[4], SPLDAM_GENERIC, 0, 0))
     {
-      extract_obj(temp);
+      extract_obj(bottle);
       return;
     }
   }
@@ -3449,19 +3449,26 @@ void do_quaff(P_char ch, char *argument, int cmd)
     send_to_char("You feel a slight gathering of magic within you, but it fades.\r\n", ch);
   }
   else
+  {
     for (i = 1; i < 4; i++)
-      if (temp->value[i] >= 1)
+    {
+      if (bottle->value[i] >= 1)
       {
-        j = temp->value[i];
+        j = bottle->value[i];
         if ((j != -1) && (skills[j].spell_pointer != NULL))
         {
-          ((*skills[j].spell_pointer) ((int) temp->value[0], ch, 0, SPELL_TYPE_POTION, ch, 0));
+          // We don't do area spells via potions unless the quaffer explodes.
+          if( IS_SET(skills[j].targets, TAR_AREA | TAR_OFFAREA) )
+            continue;
+          ((*skills[j].spell_pointer) ((int) bottle->value[0], ch, 0, SPELL_TYPE_POTION, ch, 0));
           if (!char_in_list(ch))
             break;
         }
       }
+    }
+  }
 
-  extract_obj(temp);
+  extract_obj(bottle);
 }
 
 void do_recite(P_char ch, char *argument, int cmd)
