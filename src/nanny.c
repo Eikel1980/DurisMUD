@@ -287,7 +287,6 @@ void load_obj_to_newbies(P_char ch)
 
   static int torch[] = { 1134, -1 };
 
-
 /*Thrikreen Basics*/
   static int thrikreen_good_eq[] = { 
 						  677, 283, 285, 1112, 286, 288, 290,
@@ -2711,6 +2710,9 @@ void load_obj_to_newbies(P_char ch)
   obj_to_char(bandage, ch);
 
  bandage = read_object(393, VIRTUAL);
+  obj_to_char(bandage, ch);
+
+ bandage = read_object(458, VIRTUAL);
   obj_to_char(bandage, ch);
 
 }
