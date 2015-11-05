@@ -1487,7 +1487,7 @@ void close_socket(struct descriptor_data *d)
                  GET_NAME(GET_PLYR(d->character)), d->host);
         sql_log(d->character, CONNECTLOG, "Lost link");
       }
-      writeCharacter(d->character, 1, d->character->in_room);
+      writeCharacter(d->character, RENT_CRASH, d->character->in_room);
       d->character->desc = 0;
     }
     else

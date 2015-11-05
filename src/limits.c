@@ -1606,7 +1606,7 @@ void point_update(void)
       }
 
       // Void if mortal idle for 15 min, or Immortal linkdead and idle for over 15 min.
-      if( (i->specials.timer > 15) && (GET_LEVEL(i) < MINLVLIMMORTAL || !i->desc) )
+      if( (i->specials.timer > 3) && (GET_LEVEL(i) < MINLVLIMMORTAL || !i->desc) )
       {
         act("$n disappears into the void.", TRUE, i, 0, 0, TO_ROOM);
         send_to_char("You have been idle, and are pulled into a void.\r\n", i);
@@ -1645,10 +1645,11 @@ void point_update(void)
 
         strcat(Gbuf1, GET_NAME(i));
         strcat(Gbuf1, ", ");
-        //writeCharacter(i, 5, reloghere);
-        writeCharacter(i, RENT_LINKDEAD, i->in_room);
+        // It's important to close the socket before saving char since the close_socket fn saves RENT_CRASH.
         if( i->desc )
           close_socket(i->desc);
+        //writeCharacter(i, 5, reloghere);
+        writeCharacter(i, RENT_LINKDEAD, i->in_room);
         extract_char(i);
         continue;
       }
