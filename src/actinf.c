@@ -2509,27 +2509,23 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
 
     if( !IS_TRUSTED(ch) && !has_innate(ch, INNATE_EYELESS) )
     {
-      if( has_innate(ch, INNATE_DAYBLIND) && !CAN_NIGHTPEOPLE_SEE(temp) )
+      // Too bright?
+      if( has_innate(ch, INNATE_DAYBLIND) && !CAN_NIGHTPEOPLE_SEE(temp)
+        && !IS_AFFECTED(ch, AFF_INFRAVISION) )
       {
-        send_to_char("&+YThe sunlight! &+WIt's too bright to see!&n\n", ch);
+        if( IS_SUNLIT(temp) )
+        {
+          send_to_char("&+YThe sunlight! &+WIt's too bright to see!&n\n", ch);
+        }
+        else
+        {
+          send_to_char("&+WThe brightness there hurts your head!\n", ch);
+        }
         return;
       }
-
-      if( (IS_AFFECTED2(ch, AFF2_ULTRAVISION) && IS_MAGIC_LIGHT(temp)
-        && !OLD_RACE_NEUTRAL(GET_RACE(ch))
-        && !OLD_RACE_GOOD(GET_RACE(ch), GET_ALIGNMENT(ch))
-        && !IS_HARPY(ch) && !IS_REVENANT(ch) && !IS_DRAGONKIN(ch) && !IS_HALFORC(ch))
-        || (IS_MAGIC_LIGHT(temp)
-        && !OLD_RACE_NEUTRAL(GET_RACE(ch))
-        && OLD_RACE_EVIL(GET_RACE(ch), GET_ALIGNMENT(ch))
-        && !IS_HARPY(ch) && !IS_REVENANT(ch) && !IS_DRAGONKIN(ch) && !IS_HALFORC(ch)) )
-      {
-        send_to_char("&+WThe brightness there hurts your head!\n", ch);
-        return;
-      }
-      else if( (IS_MAGIC_DARK(temp) && !OLD_RACE_NEUTRAL(GET_RACE(ch)))
-        && OLD_RACE_GOOD(GET_RACE(ch), GET_ALIGNMENT(ch)) && !IS_HARPY(ch)
-        && !IS_HALFORC(ch) && !IS_REVENANT(ch) && !IS_DRAGONKIN(ch) )
+      // Or too dark?
+      if( !IS_AFFECTED2(ch, AFF2_ULTRAVISION) && !IS_AFFECTED(ch, AFF_INFRAVISION)
+        && !CAN_DAYPEOPLE_SEE(temp) )
       {
         send_to_char("&+LIt's much too dark there for you to see!\n", ch);
         return;
