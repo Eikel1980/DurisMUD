@@ -3364,6 +3364,7 @@ int itemvalue( P_obj obj )
 	    || (obj->affected[i].location == APPLY_CON)
 	    || (obj->affected[i].location == APPLY_AGI)
 	    || (obj->affected[i].location == APPLY_POW)
+	    || (obj->affected[i].location == APPLY_CHA)
 	    || (obj->affected[i].location == APPLY_LUCK) )
     {
       // 1:1, 2:2, 3:4, 4:9, 5:16, 6:25, 7:36, 8:49, 9:64, 10:81, 11:100
