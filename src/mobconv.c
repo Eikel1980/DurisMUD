@@ -483,21 +483,22 @@ void convertMob(P_char ch)
     ch->points.vitality = ch->points.base_vitality = ch->points.max_vitality;
   }
 
+  if( IS_SHOPKEEPER(ch) || has_quest(ch) )
+  {
+    REMOVE_BIT(ch->specials.act, ACT_SCAVENGER);
+  }
   /* thieves and neutral folks pick up stuff laying around... */
-  if((GET_ALIGNMENT(ch) == 0 ||
-     isname("thief", GET_NAME(ch)) ||
-     GET_CLASS(ch, CLASS_ROGUE | CLASS_THIEF)) &&
-     IS_HUMANOID(ch) &&
-     !IS_SHOPKEEPER(ch))
-        SET_BIT(ch->specials.act, ACT_SCAVENGER);
+  else if( (GET_ALIGNMENT(ch) == 0 || isname("thief", GET_NAME(ch)) || GET_CLASS(ch, CLASS_ROGUE | CLASS_THIEF))
+    && IS_HUMANOID(ch) )
+  {
+    SET_BIT(ch->specials.act, ACT_SCAVENGER);
+  }
 
   /* guards are protectors... */
   if(strstr(ch->player.name, "guard") ||
     (strstr(ch->player.name, "militia")))
       SET_BIT(ch->specials.act, ACT_PROTECTOR);
 
-  if (IS_SHOPKEEPER(ch))
-    REMOVE_BIT(ch->specials.act, ACT_SCAVENGER);
 
   /* now that the STONE_SKIN affect does something without the spell
      being cast, need to make sure area builders didn't use it
