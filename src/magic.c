@@ -5283,6 +5283,7 @@ void spell_teleport(int level, P_char ch, char *arg, int type, P_char victim, P_
     }
     while ((IS_SET(world[to_room].room_flags, PRIVATE) ||
           IS_SET(world[to_room].room_flags, PRIV_ZONE) ||
+          IS_SET(world[to_room].room_flags, NO_MAGIC) ||
           IS_SET(world[to_room].room_flags, NO_TELEPORT) ||
           IS_HOMETOWN(to_room) ||
           world[to_room].sector_type == SECT_OCEAN) && tries < 1000);
