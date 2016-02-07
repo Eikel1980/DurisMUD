@@ -2931,7 +2931,7 @@ void spell_ether_warp(int level, P_char ch, char *arg, int type, P_char victim, 
       GET_NAME(victim), world[to_room].number);
     logit(LOG_PORTALS, logbuf);
     // spam immo's if it looks like a possible camped target
-    if( (world[to_room].number == GET_HOME(victim)) || (GET_LEVEL(victim) < 10) )
+    if( IS_PC(victim) && ( (world[to_room].number == GET_HOME(victim)) || (GET_LEVEL(victim) < 10) ) )
     {
       strcat( logbuf, " - &=RCPossible Camped Target&n" );
       statuslog(57, logbuf);
