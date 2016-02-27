@@ -2687,10 +2687,12 @@ int sub_money_asc(int asc, int pc, int gc, int sc, int cc)
   fclose(f);
   logit(LOG_PLAYER, "Guild Withdrawal %d p %d g %d s %d c by %s", pc, gc, sc,
         cc, str_dup("System"));
-  
+
+  /* Commenting this out, as it just spams ledger.
   sprintf(buf, "&+y%s withdrew &+W%dp&n&+y, &+Y%dg&n&+y, &+w%ds&n&+y, and &+y%dc", str_dup("System"), pc, gc, sc, cc);
   insert_guild_transaction(asc_number, buf);
-  
+   */
+
   /* return one for success */
   return (1);
 }
