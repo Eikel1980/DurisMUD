@@ -2,7 +2,7 @@
 the &+LMo&+yunt&+La&+yin &nof &+LPeril Peaks~
 57695 1 8 40 50 3
 *
-* Zone edited with durisEdit v3.00
+* Zone edited with durisEdit v2.99de
 *
 *
 D 0 57505 0 2 100 0 0 0
@@ -296,7 +296,7 @@ G 1 57564 1 0 100 0 0 0            *    a bridge gate key
 M 0 57513 1 57551 100 0 0 0        * a human female
 E 1 57509 1 19 100 0 0 0           *   some magical elven glasses
 M 0 57515 1 57551 100 0 0 0        * a human man
-E 1 57505 1 16 100 0 0 0           *   an ancestrial loggsword of strength
+E 1 57505 1 16 100 0 0 0           *   an ancestral loggsword of strength
 M 0 57512 1 57551 100 0 0 0        * an elven woman
 E 1 57516 1 7 100 0 0 0            *   a pair of finely woven elven leggings
 M 0 57510 1 57551 100 0 0 0        * a tatooed human

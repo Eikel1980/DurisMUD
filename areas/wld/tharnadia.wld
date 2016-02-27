@@ -3380,9 +3380,9 @@ S
 A Small Library~
 &+y  This small library is the same size as the rest of the rooms in the inn,
 &+yand was probably just converted from a regular guest room.  A handfull of
-&+yLbookcases line the walls, with two tables sitting in the middle of the room
-&+yLcovered with more books.  A nicely crafted mahogany desk sits in the far corner,
-&+yLwith a half-open drawer protruding from its side.&n
+&+ybookcases line the walls, with two tables sitting in the middle of the room
+&+ycovered with more books.  A nicely crafted mahogany desk sits in the far corner,
+&+ywith a half-open drawer protruding from its side.&n
 ~
 1325 176193612 0 0
 D2
@@ -7754,7 +7754,7 @@ F
 100
 S
 #132820
-&+mTharnadia Postal Servics&n~
+&+mTharnadia Postal Services&n~
   This is just a small room, with various cubbyholes cut into the walls. A
 small counter is built into the northern wall, and upon this sits a small
 sign. Spiral stairs rise from the southwestern corner back to the lounge
