@@ -309,7 +309,7 @@ badge symbol blood horde~
 &+Wa badge of the &+rBlood &+LHorde&n~
 An abandoned symbol of a once great unit rests here.~
 ~
-11 3 10 0 7 0 0 2097153 65536 1 0
+11 3 10 0 7 0 0 2097153 0 1 0
 0 0 0 0 0 0 0 0
 0 1 100
 E
@@ -535,7 +535,7 @@ quiver simple~
 a simple quiver~
 An unused quiver collects dust here.~
 ~
-30 14 3 0 7 0 0 1048577 65536 57350 0
+30 14 3 0 7 0 0 1048577 0 57350 0
 100 0 1 100 0 0 0 0
 30 321 100
 E
@@ -675,7 +675,7 @@ key worn rusted metal _noquest_~
 a worn and rusted key~
 A short rusted length of metal lies here.~
 ~
-18 15 3 0 7 0 8392704 1 65536 1 0
+18 15 3 0 7 0 8392704 1 0 1 0
 0 11 0 0 0 0 0 0
 2 1 100
 E
