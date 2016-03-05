@@ -18468,7 +18468,7 @@ void event_apocalypse(P_char ch, P_char victim, P_obj obj, void *data)
   struct apoc_data *d = (struct apoc_data *) data;
   P_char   vict, tch;
   int max_affected, i, opponents;
-  
+
   struct damage_messages d_messages = {
     "$N screams in &+La&+rg&+Lo&+rn&+Ly&n as a &+Ldark h&+wa&+Lz&+we&n engulfs $M.",
     "You scream in &+La&+rg&+Lo&+rn&+Ly&n as a &+Ldark h&+wa&+Lz&+we&n engulfs you!",
@@ -18492,157 +18492,126 @@ void event_apocalypse(P_char ch, P_char victim, P_obj obj, void *data)
     return;
   }
 
-  if(d->next_affect == 4 ||
-     ch->in_room != d->room)
+  if( d->next_affect == 4 || ch->in_room != d->room )
   {
-    send_to_room
-      ("&+LAs the powerful summoning fades the r&+wi&+Ld&+we&+Lr&+ws &+Lof &+rh&+Le&+rl&+Ll return to the Abyss.&n\n\n",
-       ch->in_room);
-    
+    send_to_room("&+LAs the powerful summoning fades the r&+wi&+Ld&+we&+Lr&+ws &+Lof &+rh&+Le&+rl&+Ll return to the Abyss.&n\n\n",
+      ch->in_room);
     return;
   }
-  else if(d->stage == 0)
+  else if( d->stage == 0 )
   {
-    send_to_room("&+LA distant &+wroar &+Lcan be heard from the skies...\n\n",
-                 ch->in_room);
-                 
+    send_to_room("&+LA distant &+wroar &+Lcan be heard from the skies...\n\n", ch->in_room);
+
     zone_spellmessage(ch->in_room,
       "&+LA distant &+wroar &+Lcan be heard off in the distance...\n\n",
       "&+LA distant &+wroar &+Lcan be heard off from the %s...\n\n");
 
     d->stage++;
-    
-    add_event(event_apocalypse, (int) (PULSE_VIOLENCE / 2), ch, 0, 0, 0, d, sizeof(*d));
 
+    add_event(event_apocalypse, (int) (PULSE_VIOLENCE / 2), ch, 0, 0, 0, d, sizeof(*d));
     return;
   }
-  else if(d->stage == 1)
+  else if( d->stage == 1 )
   {
-    send_to_room
-      ("&+L   ...the r&+wi&+Ld&+we&+Lr&+ws &+Lof &+rh&+Le&+rl&+Ll broke free again!\n\n",
-       ch->in_room);
-    
+    send_to_room("&+L   ...the r&+wi&+Ld&+we&+Lr&+ws &+Lof &+rh&+Le&+rl&+Ll broke free again!\n\n", ch->in_room);
+
     d->stage++;
-    
     add_event(event_apocalypse, (int) (PULSE_VIOLENCE / 2), ch, 0, 0, 0, d, sizeof(*d));
-    
     return;
   }
 
-  vict = d->victim;
-  
-  if(!vict ||
-     !is_char_in_room(vict, ch->in_room))
+
+  if( (( vict = d->victim ) == NULL) || !is_char_in_room(vict, ch->in_room) )
   {
-    for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
+    for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
     {
-      if(ch != tch &&
-         should_area_hit(ch, tch) &&
-         !number(0, 1))
+      if( ch != tch && should_area_hit(ch, tch) && !number(0, 1) )
       {
         vict = tch;
         d->victim = tch;
       }
     }
   }
-  
-// End event_apocalypse right now. We do not have a valid vict.
-  if(!vict ||
-     vict->in_room != ch->in_room)
+
+  // End event_apocalypse right now. We do not have a valid vict.
+  if( !vict || vict->in_room != ch->in_room )
   {
-    send_to_room
-      ("&+LAs the powerful summoning fades the r&+wi&+Ld&+we&+Lr&+ws &+Lof &+rh&+Le&+rl&+Ll return to the Abyss.\n",
-       ch->in_room);
+    send_to_room("&+LAs the powerful summoning fades the r&+wi&+Ld&+we&+Lr&+ws &+Lof &+rh&+Le&+rl&+Ll return to the Abyss.\n",
+      ch->in_room);
     return;
   }
-  
+
   max_affected = (int) (get_property("spell.apocalypse.maxAffected", 4.000));
-  
-  if(d->next_affect == 0)
+
+  if( d->next_affect == 0 )
   {
-    send_to_room
-      ("&+LThe Horseman of D&+We&+La&+Wt&+Lh appears in the sky overhead!\n",
-       ch->in_room);
+    send_to_room("&+LThe Horseman of D&+We&+La&+Wt&+Lh appears in the sky overhead!\n", ch->in_room);
 
     act("&+LThe Horseman of &+LD&+We&+La&+Wt&+Lh cackles and swings a &+wmassive &+Wdeadly &+Lscythe &+Lat $n!",
       TRUE, vict, 0, 0, TO_ROOM);
-    act("&+LThe Horseman of &+LD&+We&+La&+Wt&+Lh cackles and swings a &+wmassive &+Wdeadly &+Lscythe &+Lat $N!",
-      TRUE, vict, 0, 0, TO_CHAR);
     act("&+LThe Horseman of &+LD&+We&+La&+Wt&+Lh cackles and swings a &+wmassive &+Wdeadly &+Lscythe &+Lat you!",
-      TRUE, vict, 0, 0, TO_VICT);
-      
-    if(!IS_MAGIC_DARK(ch->in_room))
+      TRUE, vict, 0, 0, TO_CHAR);
+
+    if( !IS_MAGIC_DARK(ch->in_room) )
     {
       spell_darkness(50, ch, 0, 0, NULL, NULL);
     }
-    
-    if(!number(0, 2) &&
-       should_area_hit(ch, vict))
+
+    if( !number(0, 2) && should_area_hit(ch, vict) )
     {
       spell_cloak_of_fear(40, ch, 0, 0, NULL, 0);
     }
-    
-    if(ch->in_room == vict->in_room)
+
+    if( ch->in_room == vict->in_room )
     {
       spell_damage(ch, vict, dice(20, 30), SPLDAM_PSI, 0, &d_messages);
     }
-    
-    if(!IS_ALIVE(ch))
+
+    if( !IS_ALIVE(ch) )
     {
       return;
     }
-    
+
     d->next_affect++;
   }
-  else if(d->next_affect == 1)
+  else if( d->next_affect == 1 )
   {
-    send_to_room("The Horseman of &+RW&+ra&+Rr&N appears in the skies!\n",
-                 ch->in_room);
-    
+    send_to_room("The Horseman of &+RW&+ra&+Rr&N appears in the skies!\n", ch->in_room);
+
     i = 0;
-    
-    for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
+
+    for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
     {
-      if(should_area_hit(ch, tch) &&
-        !number(0, 2) &&
-        !affected_by_spell(tch, SKILL_BERSERK))
+      if( should_area_hit(ch, tch) && !number(0, 2) && !affected_by_spell(tch, SKILL_BERSERK) )
       {
-        if(NewSaves(tch, SAVING_SPELL, 2))
+        if( NewSaves(tch, SAVING_SPELL, 2) )
         {
           continue;
         }
-        
+
         act("&+LThe Horseman of &+RW&+ra&+Rr &+Lglares with &+renraged &+Reyes &+Lat $n!&N",
           TRUE, tch, 0, 0, TO_ROOM);
-        act("&+LThe Horseman of &+RW&+ra&+Rr &+Lglares with &+renraged &+Reyes &+Lat $N!",
-          TRUE, tch, 0, 0, TO_CHAR);
         act("&+LThe Horseman of &+RW&+ra&+Rr &+Lglares with &+renraged &+Reyes &+Lat you!",
-          TRUE, tch, 0, 0, TO_VICT);
-        
+          TRUE, tch, 0, 0, TO_CHAR);
         berserk(tch, 1 * PULSE_VIOLENCE);
-        
-        i++;
-        
-        if(i >= max_affected)
+
+        if( ++i >= max_affected )
         {
           break;
         }
       }
     }
-    
+
     opponents = 0;
-    
-    for(tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
+    for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
     {
-      if(ch != tch &&
-         !grouped(ch, tch))
+      if( ch != tch && !grouped(ch, tch) )
       {
         opponents++;
       }
     }
-    
-    if(opponents <=  get_property("spell.apocalypse.maxAffected", 4.000) &&
-      should_area_hit(ch, vict))
+
+    if( opponents <= max_affected && should_area_hit(ch, vict) )
     {
       spell_incendiary_cloud(25, ch, NULL, 0, vict, NULL);
     }
@@ -18650,45 +18619,34 @@ void event_apocalypse(P_char ch, P_char victim, P_obj obj, void *data)
     {
       spell_immolate(GET_LEVEL(ch), ch, NULL, 0, vict, NULL);
     }
-    
-    if(!IS_ALIVE(ch))
+
+    if( !IS_ALIVE(ch) )
     {
       return;
     }
-    
+
     d->next_affect++;
   }
-  else if(d->next_affect == 2)
+  else if( d->next_affect == 2 )
   {
-    send_to_room
-      ("&+LThe Horseman of &+yF&+Ya&+ym&+Yi&+yn&+Ye &+Lappears in the sky overhead...\n",
+    send_to_room("&+LThe Horseman of &+yF&+Ya&+ym&+Yi&+yn&+Ye &+Lappears in the sky overhead...\n",
        ch->in_room);
-    
+
     i = 0;
-    
-    for(tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
+    for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
     {
-      if(should_area_hit(ch, tch) &&
-         !number(0, 2) &&
-         !IS_STUNNED(tch))
+      if( should_area_hit(ch, tch) && !number(0, 2) && !IS_STUNNED(tch) )
       {
-      
         act("The Horseman of &+yF&+Ya&+ym&+Yi&+yn&+Ye&N glares around!",
           TRUE, tch, 0, 0, TO_ROOM);
-        act("The Horseman of &+yF&+Ya&+ym&+Yi&+yn&+Ye&N glares at $N!",
+        act("&+LThe Horseman of &+yF&+Ya&+ym&+Yi&+yn&+Ye &+Lglares at you with &+rdeathly g&+Rl&+wo&+Ww&+wi&+Rn&+rg eyes&L&+Lcausing you to lose your &+Yconcentration.",
           TRUE, tch, 0, 0, TO_CHAR);
-        
-        act("&+LThe Horseman of &+yF&+Ya&+ym&+Yi&+yn&+Ye &+Lglares at you with &+rdeathly g&+Rl&+wo&+Ww&+wi&+Rn&+rg eyes&L&+Lcausing you to lose your &+Yconcentration.", FALSE, tch, 0, ch, TO_CHAR);
-           
+
         Stun(tch, ch, PULSE_VIOLENCE * 1, TRUE);
-        
         StopCasting(tch);
-        
         stop_memorizing(tch);
-        
-        i++;
-        
-        if(i >= max_affected)
+
+        if( ++i >= max_affected )
         {
           break;
         }
@@ -18696,87 +18654,71 @@ void event_apocalypse(P_char ch, P_char victim, P_obj obj, void *data)
     }
     d->next_affect++;
   }
-  else if(d->next_affect == 3)
+  else if( d->next_affect == 3 )
   {
-    send_to_room
-      ("The Horseman of &+gP&+Le&+gs&+Lt&+gi&+Ll&+ge&+Ln&+gc&+Le&N appears in the skies!\n",
-       ch->in_room);
-       
-    i = 0;
+    send_to_room("The Horseman of &+gP&+Le&+gs&+Lt&+gi&+Ll&+ge&+Ln&+gc&+Le&N appears in the skies!\n",
+      ch->in_room);
 
-    for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
+    i = 0;
+    for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
     {
-      if(should_area_hit(ch, tch) &&
-         !number(0, 2))
+      if( should_area_hit(ch, tch) && !number(0, 2) )
       {
         act("The Horseman of &+gP&+Le&+gs&+Lt&+gi&+Ll&+ge&+Ln&+gc&+Le&N breaths on $n!&N",
           TRUE, tch, 0, 0, TO_ROOM);
-        act("The Horseman of &+gP&+Le&+gs&+Lt&+gi&+Ll&+ge&+Ln&+gc&+Le&N breaths on $N!&N",
-          TRUE, tch, 0, 0, TO_CHAR);
         act("The Horseman of &+gP&+Le&+gs&+Lt&+gi&+Ll&+ge&+Ln&+gc&+Le&N chokes you with its\n&+ywretched breath!",
-          TRUE, tch, 0, 0, TO_VICT);
-          
-        if(!affected_by_spell(tch, SPELL_WITHER) &&
-           !number(0, 2))
+          TRUE, tch, 0, 0, TO_CHAR);
+
+        if( !affected_by_spell(tch, SPELL_WITHER) && !number(0, 2) )
         {
           spell_wither(GET_LEVEL(ch), ch, 0, SPELL_TYPE_SPELL, tch, 0);
         }
-        
-        if(!number(0, 2))
+
+        if( !number(0, 2) )
         {
           poison_weakness(GET_LEVEL(ch), ch, 0, 0, tch, 0);
         }
-        
-        if(!affected_by_spell(tch, SPELL_DISEASE) &&
-           !number(0, 2))
+
+        if( !affected_by_spell(tch, SPELL_DISEASE) && !number(0, 2) )
         {
           spell_disease(GET_LEVEL(ch), ch, NULL, SPELL_TYPE_SPELL, tch, 0);
         }
-        
+
         spell_damage(ch, tch, 3 * GET_LEVEL(ch), SPLDAM_GAS, 0, &p_messages);
-         
-        if(!IS_ALIVE(ch))
+
+        if( !IS_ALIVE(ch) )
         {
           return;
         }
-        
-        i++;
-        
-        if(i >= max_affected)
+
+        if( ++i >= max_affected )
         {
           break;
         }
       }
     }
-    
     d->next_affect++;
   }
-
   else if(d->next_affect == 4)
   {
     i = 0;
-    
-    for (tch = world[ch->in_room].people; tch; tch = tch->next_in_room)
+    for( tch = world[ch->in_room].people; tch; tch = tch->next_in_room )
     {
-      if(should_area_hit(ch, tch) &&
-        !number(0, 2))
+      if( should_area_hit(ch, tch) && !number(0, 2) )
       {
         astral_banishment(ch, tch, BANISHMENT_UNHOLY_WORD, d->level);
       }
-      
-      i++;
-      
-      if(i >= max_affected)
+
+      if( ++i >= max_affected )
       {
         break;
       }
     }
-// Setting stage 3 will exit from routine after the next event_apoc.
+    // Setting stage 3 will exit from routine after the next event_apoc.
     d->stage = 3;
-  }    
+  }
 
-  if(IS_ALIVE(ch) &&
-     d->next_affect <= 4)
+  if( IS_ALIVE(ch) && d->next_affect <= 4 )
   {
     add_event(event_apocalypse, PULSE_VIOLENCE, ch, 0, 0, 0, d, sizeof(*d));
   }

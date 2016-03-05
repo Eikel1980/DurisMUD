@@ -2145,7 +2145,7 @@ SPELL_CREATE("vigorize light", SPELL_VIGORIZE_LIGHT, PULSE_SPELLCAST * 2,
 
   SPELL_CREATE_MSG("pass without trace", SPELL_PASS_WITHOUT_TRACE, PULSE_SPELLCAST * 2,
                 TAR_SELF_ONLY,
-                spell_pass_without_trace, "The forest close in around you.");
+                spell_pass_without_trace, "&+gThe forest closes in around you.&n");
   SPELL_ADD(CLASS_DRUID, 8);
   //SPEC_SPELL_ADD(CLASS_RANGER, 10, SPEC_HUNTSMAN);
 
