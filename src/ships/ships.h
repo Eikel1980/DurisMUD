@@ -381,7 +381,7 @@ struct ShipCrewData
     ulong flags;
 
     bool hire_room(int room) const;
-    const char* get_next_bonus(int& cur) const;
+    const char* get_next_bonus(int *cur) const;
     const char* get_bonus_string(ulong flag) const;
 };
 
@@ -738,6 +738,7 @@ void set_crew(P_ship ship, int crew_index, bool reset_skills = true);
 void set_chief(P_ship ship, int chief_index);
 void update_crew(P_ship ship);
 void reset_crew_stamina(P_ship ship);
+char *crew_bonuses( const ShipCrewData crew );
 
 void set_weapon(P_ship ship, int slot, int w_num, int arc);
 void set_equipment(P_ship ship, int slot, int w_num);
@@ -772,7 +773,7 @@ void act_to_all_in_ship(P_ship ship, const char *msg, P_char victim);
 void act_to_all_in_ship(P_ship ship, const char *msg);
 void act_to_outside_ships(P_ship ship, P_ship notarget, int range, const char *msg, ... );
 void act_to_outside(P_ship ship, int range, const char *msg, ... );
-void everyone_get_out_ship(P_ship ship);
+void kick_everyone_off(P_ship ship);
 void clear_ship_content(P_ship ship);
 void look_out_ship(P_ship ship, P_char ch);
 void everyone_look_out_ship(P_ship ship);
@@ -788,9 +789,10 @@ bool has_eq_levistone(const ShipData* ship);
 int eq_levistone_slot(const ShipData* ship);
 int eq_levistone_weight(const ShipData* ship);
 
-bool has_eq_diplomat(const ShipData* ship);
-int eq_diplomat_slot(const ShipData* ship);
-int eq_diplomat_weight(const ShipData* ship);
+bool is_diplomat_slot( const ShipData *ship, int slot );
+bool has_eq_diplomat(const ShipData *ship);
+int eq_diplomat_slot(const ShipData *ship);
+int eq_diplomat_weight(const ShipData *ship);
 
 bool ocean_pvp_state();
 

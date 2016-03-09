@@ -141,7 +141,7 @@ P_ship get_ship_from_owner(char *ownername)
         if( isname(ownername, svs->ownername) )
             return svs;
     }
-    return 0;
+    return NULL;
 }
 
 //--------------------------------------------------------------------
@@ -179,7 +179,7 @@ void everyone_look_out_ship(P_ship ship)
   }
 }
 
-void everyone_get_out_ship(P_ship ship)
+void kick_everyone_off(P_ship ship)
 {
   P_char   ch, ch_next;
   P_obj    obj, obj_next;
@@ -991,18 +991,18 @@ bool ShipCrewData::hire_room(int room) const
     return false;
 }
 
-const char* ShipCrewData::get_next_bonus(int& cur) const
+const char* ShipCrewData::get_next_bonus(int *cur) const
 {
-    for (cur++; cur < 32; cur++)
+  for( (*cur)++; *cur < 32; (*cur)++)
+  {
+    ulong flag = 1 << (*cur);
+    if (IS_SET(flags, flag))
     {
-        ulong flag = 1 << cur;
-        if (IS_SET(flags, flag))
-        {
-            return get_bonus_string(flag);
-        }
+      return get_bonus_string(flag);
     }
-    cur = -1;
-    return NULL;
+  }
+  *cur = -1;
+  return "";
 }
 
 const char* ShipCrewData::get_bonus_string(ulong flag) const
@@ -1029,7 +1029,7 @@ const char* ShipCrewData::get_bonus_string(ulong flag) const
         return "Sail Repair x2";
     if (flag == CF_SAIL_REPAIR_3)
         return "Sail Repair x3";
-    
+
     return "Unknown";
 }
 
@@ -1484,21 +1484,32 @@ int eq_levistone_weight(const ShipData *ship)
     return (SHIP_HULL_WEIGHT(ship) + 50) / 40;
 }
 
-bool has_eq_diplomat(const ShipData* ship)
+bool is_diplomat_slot( const ShipData *ship, int slot )
 {
-	return eq_diplomat_slot(ship) != -1;
-}
-int eq_diplomat_slot(const ShipData* ship)
-{
-  for (int slot = 0; slot < MAXSLOTS; slot++)
+  if( ship->slot[slot].type == SLOT_EQUIPMENT && ship->slot[slot].index == E_DIPLOMAT )
   {
-    if (ship->slot[slot].type == SLOT_EQUIPMENT && ship->slot[slot].index == E_DIPLOMAT)
+    return TRUE;
+  }
+  return FALSE;
+}
+
+int eq_diplomat_slot( const ShipData *ship )
+{
+  for( int slot = 0; slot < MAXSLOTS; slot++ )
+  {
+    if( is_diplomat_slot(ship, slot) )
     {
-	    return slot;
+      return slot;
     }
   }
 	return -1;
 }
+
+bool has_eq_diplomat( const ShipData* ship )
+{
+	return eq_diplomat_slot(ship) != -1;
+}
+
 int eq_diplomat_weight(const ShipData *ship)
 {
 	return (SHIP_HULL_WEIGHT(ship) + 1) / 24;
@@ -1795,4 +1806,30 @@ void ShipData::sail_skill_raise(P_char ch, float raise )
   this->crew.sail_skill_raise( raise );
   sprintf( Gbuf1, "New Sail Skill: %.2f.\n\r", this->crew.sail_skill );
   send_to_char( Gbuf1, ch );
+}
+
+char *crew_bonuses( const ShipCrewData crew )
+{
+  int bonus_num = 0;
+  static char buf[MAX_STRING_LENGTH];
+
+  sprintf( buf, "%s", crew.get_next_bonus(&bonus_num) );
+  while( bonus_num != -1 )
+  {
+    strcat( buf, ", " );
+    strcat( buf, crew.get_next_bonus(&bonus_num) );
+  }
+
+  if( strlen(buf) < 2 )
+  {
+    return "";
+  }
+  else
+  {
+    // Replace the final ", " with "."
+    buf[strlen(buf)-2] = '.';
+    buf[strlen(buf)-1] = '\0';
+  }
+
+  return buf;
 }

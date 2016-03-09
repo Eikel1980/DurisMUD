@@ -1237,7 +1237,7 @@ bool special(P_char, int, char *);
 char *one_argument(const char *, char *);
 char lower(char);
 int fill_word(char *);
-int is_abbrev(const char *, const char *);
+int is_abbrev(const char *, const char *); // Checks to see if char *a is a prefix of char* b
 bool is_number(char *);
 int old_search_block(const char *, uint, uint, const char **, int);
 int search_block(char *, const char **, int);
@@ -2957,7 +2957,7 @@ bool aggressive_to(P_char, P_char);
 bool aggressive_to_basic(P_char, P_char);
 char *PERS(P_char, P_char, int);
 char *PERS(P_char, P_char, int, bool);
-char *coin_stringv(int);
+char *coin_stringv( int amount, int padfront = 0 );
 char *str_dup(const char *);
 void str_free(char *);
 char strleft(const char *, const char *);

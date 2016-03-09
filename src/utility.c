@@ -1645,48 +1645,102 @@ int ScaleAreaDamage(P_char ch, int orig_dam)
   return orig_dam * 10 / 15;
 }
 
-char    *coin_stringv(int amount)
+// Takes an amount and converts it to a string containing the corresponding coinage.
+// If padfront > 0, then we add padfront spaces to the string minus the number of digits
+//   of the first non-zero coin type. (So, padfront 5 on 5 plat -> "    5 plat").
+char *coin_stringv( int amount, int padfront = 0 )
 {
-  int      p, g, s;
-  static char buf[300];
+  int p, g, s, c;
+  static char buf[300], *spot;
 
-  if (!amount)
+  if( padfront < 0 )
+    padfront = 0;
+
+  if( !amount )
   {
-    buf[0] = '\0';
+    // Works a little backwards, but add the '\0', then spaces from it down to and including buf[0].
+    buf[padfront] = '\0';
+    while( padfront > 0 )
+    {
+      buf[--padfront] = ' ';
+    }
     return buf;
   }
+
+  buf[0] = '\0';
+  spot = buf;
+  if( amount < 0 )
+  {
+    amount *= -1;
+    *(spot++) = '-';
+    if( padfront )
+      padfront--;
+  }
+
   p = amount / 1000;
-  amount -= p * 1000;
+  amount %= 1000;
   g = amount / 100;
-  amount -= g * 100;
+  amount %= 100;
   s = amount / 10;
-  amount -= s * 10;
-  buf[0] = 0;
-  if (p)
+  c = amount % 10;
+
+  if( padfront )
   {
-    sprintf(buf, "%d &+Wplatinum&N", p);
+    amount = (p > 0) ? p : ((g > 0) ? g : ((s > 0) ? s : c));
+    while( amount > 0 && padfront > 0 )
+    {
+      amount /= 10;
+      padfront--;
+    }
+    while( padfront-- > 0 )
+    {
+      *(spot++) = ' ';
+    }
   }
-  if (g)
+
+  if( p )
   {
-    if (p && !s && !amount)
-      sprintf(buf + strlen(buf), ", and ");
-    else if (p)
-      sprintf(buf + strlen(buf), ", ");
-    sprintf(buf + strlen(buf), "%d &+Ygold&N", g);
+    amount = sprintf(spot, "%d &+Wplatinum&N", p);
+    spot += amount;
   }
-  if (s)
+  if( g )
   {
-    if ((p || g) && !amount)
-      sprintf(buf + strlen(buf), ", and ");
-    else if (p || g)
-      sprintf(buf + strlen(buf), ", ");
-    sprintf(buf + strlen(buf), "%d silver", s);
+    if( p && !s && !c )
+    {
+      sprintf(spot, ", and ");
+      spot += 6;
+    }
+    else if( p )
+    {
+      sprintf(spot, ", ");
+      spot += 2;
+    }
+    amount = sprintf(spot, "%d &+Ygold&N", g);
+    spot += amount;
   }
-  if (amount)
+  if( s )
   {
-    if (p || g || s)
-      sprintf(buf + strlen(buf), ", and ");
-    sprintf(buf + strlen(buf), "%d &+ycopper&N", amount);
+    if( (p || g) && !c )
+    {
+      sprintf(spot, ", and ");
+      spot += 6;
+    }
+    else if( p || g )
+    {
+      sprintf(spot, ", ");
+      spot += 2;
+    }
+    amount = sprintf(spot, "%d silver", s);
+    spot += amount;
+  }
+  if( c )
+  {
+    if( p || g || s )
+    {
+      sprintf(spot, ", and ");
+      spot += 6;
+    }
+    sprintf(spot, "%d &+ycopper&N", c);
   }
   return buf;
 }
