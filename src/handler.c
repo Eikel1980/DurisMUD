@@ -2908,20 +2908,18 @@ void extract_char(P_char ch)
       if (GET_LEVEL(ch) < 58)
         //send_to_char("&+CYou are no longer being snooped.&N\r\n",
         //           ch->desc->snoop.snooping);
-        rem_char_from_snoopby_list(&ch->desc->snoop.snooping->desc->snoop.
-                                   snoop_by_list, ch);
+        rem_char_from_snoopby_list(&ch->desc->snoop.snooping->desc->snoop.snoop_by_list, ch);
     }
     snoop_by_ptr = ch->desc->snoop.snoop_by_list;
     while (snoop_by_ptr)
     {
-      send_to_char("Your victim is no longer among us.\r\n",
-                   snoop_by_ptr->snoop_by);
+      send_to_char("Your victim is no longer among us.\r\n", snoop_by_ptr->snoop_by);
       snoop_by_ptr->snoop_by->desc->snoop.snooping = 0;
 
       snoop_by_ptr = snoop_by_ptr->next;
     }
 
-    ch->desc->snoop.snooping = /*ch->desc->snoop.snoop_by = */ 0;
+    ch->desc->snoop.snooping = /*ch->desc->snoop.snoop_by = */ NULL;
 
     snoop_by_ptr = ch->desc->snoop.snoop_by_list;
     while (snoop_by_ptr)
@@ -3000,25 +2998,29 @@ void extract_char(P_char ch)
 
   char_from_room(ch);
 
-  /* pull the char from the list */
-
-  if (ch == character_list)
+  // Pull the char from the list
+  // If at the head..
+  if( ch == character_list )
     character_list = ch->next;
   else
   {
-    for (k = character_list; (k) && (k->next != ch); k = k->next) ;
-    if (k)
+    // Look through the list..
+    for( k = character_list; k != NULL; k = k->next )
+    {
+      if( k->next == ch )
+        break;
+    }
+    if( k )
     {
       k->next = ch->next;
     }
     else
     {
-      logit(LOG_EXIT, "extract_char(), Char not in character_list. (%s)",
-            GET_NAME(ch));
+      logit(LOG_EXIT, "extract_char(), Char not in character_list. (%s)", GET_NAME(ch));
       raise(SIGSEGV);
     }
   }
-  
+
   SET_POS(ch, GET_POS(ch) + STAT_DEAD);
   GET_AC(ch) = 100;
 

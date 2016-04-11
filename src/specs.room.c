@@ -356,7 +356,7 @@ int inn(int room, P_char ch, int cmd, char *arg)
 
     if( ch->following )
     {
-      do_dismiss(ch, NULL, cmd);
+      do_dismiss(ch, NULL, CMD_RENT);
     }
 
     GET_HOME(ch) = world[ch->in_room].number;

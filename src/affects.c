@@ -2067,9 +2067,9 @@ void affect_remove(P_char ch, struct affected_type *af)
   struct affected_type *hjp;
   P_nevent pnev;
 
-  if (!(ch && ch->affected))
+  if( !(ch && ch->affected) )
   {
-    logit(LOG_EXIT, "affect_remove() bogus parms");
+    logit(LOG_EXIT, "affect_remove(): %s: %s", (ch ? "(NULL)" : J_NAME(ch)), (ch ? "no affects." : "no ch."));
     raise(SIGSEGV);
   }
 
@@ -2078,23 +2078,27 @@ void affect_remove(P_char ch, struct affected_type *af)
    */
 
   all_affects(ch, FALSE);
+  // If af is at the head of list
   if (ch->affected == af)
   {
-    /* remove head of list */
     ch->affected = af->next;
   }
   else
   {
-
-    for (hjp = ch->affected; (hjp->next) && (hjp->next != af);
-         hjp = hjp->next) ;
-
-    if (hjp->next != af)
+    // Look for previous affect
+    for( hjp = ch->affected; hjp->next != NULL; hjp = hjp->next )
     {
-      logit(LOG_EXIT, "affect_remove: could not locate affected_type in ch->affected for %s.", GET_NAME(ch));
+      if( hjp->next == af )
+        break;
+    }
+
+    if( hjp->next != af )
+    {
+      logit(LOG_EXIT, "affect_remove(): could not locate affected_type in ch->affected for %s.", GET_NAME(ch));
       raise(SIGSEGV);
     }
-    hjp->next = af->next;       /* skip the af element */
+    // Remove af from the list.
+    hjp->next = af->next;
   }
 
   // If it's a short affect.
@@ -2956,8 +2960,7 @@ void linked_affect_to_char(P_char ch, struct affected_type *af, P_char source,
 }
 
 //---------------------------------------------------------------------------------
-void internal_unlink_char(P_char ch, struct char_link_data *cld,
-                          struct char_link_data *prev)
+void internal_unlink_char(P_char ch, struct char_link_data *cld, struct char_link_data *prev)
 {
   struct char_link_data *cld2;
 

@@ -153,29 +153,30 @@ int is_wearing_necroplasm(P_char ch)
   return FALSE;
 }
 
+// Called when a CHARM affect (LNK_PET) is broken
 void charm_broken(struct char_link_data *cld)
 {
   int necropets[] = {3, 4, 5, 6, 7, 8, 9, 10, 78, 79, 80, 81, 82, 83, 84, 85};
-  
-  /* called when a CHARM affect is broken */
-  /* verify that the pet is still following anyone, as some mobs self-poof */
-  if (cld->linking && cld->linking->following)
+
+  // Verify that the pet is still following anyone, as some mobs self-poof
+  if( cld->linking && cld->linking->following )
   {
     stop_follower(cld->linking);
-    if (IS_NPC(cld->linking) && (cld->linking->in_room == cld->linked->in_room) &&
-        CheckFor_remember(cld->linking, cld->linked))
+    // The -10 check is to make sure the former master isn't in the process of dying.
+    if( IS_NPC(cld->linking) && (cld->linking->in_room == cld->linked->in_room)
+      && CheckFor_remember(cld->linking, cld->linked) && GET_HIT(cld->linked) > -10 )
     {
       MobStartFight(cld->linking, cld->linked);
     }
   }
 
-  for(int i = 0; i < 16; i++)
+  for( int i = 0; i < 16; i++ )
   {
-    if (IS_NPC(cld->linking) &&
-	((mob_index[GET_RNUM(cld->linking)].virtual_number == necropets[i]) ||
-         (mob_index[GET_RNUM(cld->linking)].virtual_number == NECROPET)))
+    if( IS_NPC(cld->linking) &&((mob_index[GET_RNUM(cld->linking)].virtual_number == necropets[i])
+      || (mob_index[GET_RNUM(cld->linking)].virtual_number == NECROPET)) )
     {
-      add_event(event_pet_death, 1 * 60 * 4, cld->linking, NULL, NULL, 0, NULL, 0);
+      // Add pet death in 1 minute.
+      add_event(event_pet_death, 1 * WAIT_MIN, cld->linking, NULL, NULL, 0, NULL, 0);
       break;
     }
   }
