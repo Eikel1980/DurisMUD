@@ -505,11 +505,15 @@ void spell_beholder_fear(int level, P_char ch, P_char victim, P_obj obj)
     af.type = SPELL_FEAR;
     af.location = APPLY_DAMROLL;
     af.modifier = -2 - (level / 10);
+    if( -af.modifier > GET_DAMROLL(victim) )
+      af.modifier = -GET_DAMROLL(victim);
     af.duration = 3 + (level / 10);
     affect_to_char(victim, &af);
 
     af.location = APPLY_HITROLL;
     af.modifier = -2 - (level / 10);
+    if( -af.modifier > GET_HITROLL(victim) )
+      af.modifier = -GET_HITROLL(victim);
     affect_to_char(victim, &af);
 
     send_to_char("&+LA wave of utter terror overcomes you!\r\n", victim);
