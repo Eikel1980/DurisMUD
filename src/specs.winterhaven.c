@@ -28,7 +28,7 @@
 #include "specs.zion.h"
 #include "objmisc.h"
 #include "vnum.obj.h"
-
+#include "tradeskill.h"
 /*
  * external variables
  */
@@ -4484,6 +4484,37 @@ int weapon_vampire(P_obj obj, P_char ch, int cmd, char *arg)
 
 }
 
+P_obj make_gem_gift( )
+{
+  P_obj gift;
+  int vnum;
+
+  switch( number(1, 5) )
+  {
+    case 1:
+      vnum = LG_FLAWLESS_TOPAZ;
+      break;
+    case 2:
+      vnum = LG_FLAWLESS_SAPPHIRE;
+      break;
+    case 3:
+      vnum = LG_FLAWLESS_EMERALD;
+      break;
+    case 4:
+      vnum = LG_FLAWLESS_DIAMOND;
+      break;
+    default:
+    case 5:
+      vnum = LG_FLAWLESS_RUBY;
+      break;
+  }
+
+  gift = read_object(vnum, VIRTUAL);
+  // 300 to (300 + 25 * 32 = 1100) base plat + (2d4 * 50 = 100 to 400) plat.
+  // Totalling 400 to 1500 plat.
+  gift->cost = ( 300 + (vnum - LG_FLAWLESS_TOPAZ) * 25 + dice(2, 4) * 50 ) * 1000;
+}
+
 int lancer_gift(P_obj obj, P_char ch, int cmd, char *arg)
 {
   P_char vict = NULL;
@@ -4509,13 +4540,13 @@ int lancer_gift(P_obj obj, P_char ch, int cmd, char *arg)
         act("&+WYou open &n$q &+Wand the wrappings fall to the floor.&n", TRUE, ch, obj, vict, TO_CHAR);
         act("$n opens &n$q &+Wand the wrappings fall to the floor.&n", TRUE, ch, obj, vict, TO_ROOM);
 
-        extract_obj(obj, TRUE); // Not an arti, but 'in game.'
-        gift = read_object(number(55198, 55203), VIRTUAL);
-        obj_to_char(gift, ch);
-        act("You receive $q.", TRUE, ch, obj, vict, TO_CHAR);
-        gift = read_object(number(55198, 55203), VIRTUAL);
-        obj_to_char(gift, ch);
-        act("You receive $q.", TRUE, ch, obj, vict, TO_CHAR);
+        extract_obj( obj, TRUE ); // Not an arti, but 'in game.'
+        gift = make_gem_gift();
+        obj_to_char( gift, ch );
+        act("You receive $p.", TRUE, ch, gift, vict, TO_CHAR);
+        gift = make_gem_gift();
+        obj_to_char( gift, ch );
+        act("You receive $p.", TRUE, ch, gift, vict, TO_CHAR);
         return TRUE;
       }
     }

@@ -103,16 +103,16 @@
 #define FLAWLESS_DIAMOND      534
 #define LG_FLAWLESS_DIAMOND   535
 
-#define TINY_IMP_RUBY         528
-#define REG_IMP_RUBY          529
-#define LG_IMP_RUBY           530
+#define TINY_IMP_RUBY         536
+#define REG_IMP_RUBY          537
+#define LG_IMP_RUBY           538
 
-#define TINY_REG_RUBY         531
-#define REG_REG_RUBY          532
-#define LG_REG_RUBY           533
+#define TINY_REG_RUBY         539
+#define REG_REG_RUBY          540
+#define LG_REG_RUBY           541
 
-#define FLAWLESS_RUBY         534
-#define LG_FLAWLESS_RUBY      535
+#define FLAWLESS_RUBY         542
+#define LG_FLAWLESS_RUBY      543
 
 #define ALLOW 1
 #define ANTI 0
