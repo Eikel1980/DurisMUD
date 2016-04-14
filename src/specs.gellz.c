@@ -154,6 +154,7 @@ int gellz_test_obj_procs(P_obj obj, P_char ch, int cmd, char *argument)
         return TRUE;
       }
 	    act ("&+BExperimental Deletion of Ship...", FALSE, ch, NULL, NULL, TO_CHAR);
+      CAP(argstring3);
       // First, we hunt for the ship, and make sure there is one (we can use the same loop as above).
       for( bool fn = shipObjHash.get_first(svs); fn; fn = shipObjHash.get_next(svs) )
 	    {
@@ -166,16 +167,14 @@ int gellz_test_obj_procs(P_obj obj, P_char ch, int cmd, char *argument)
         if( !strcmp( argstring3, SHIP_OWNER(svs) ) )
         {
           act( "&+RDeleting ship...&n", FALSE, ch, NULL, NULL, TO_CHAR );
-          // Now we set it to delete (just for fun).
-          SET_BIT(svs->flags, TO_DELETE);
-          // Remove it from the hash.
-          shipObjHash.erase(svs);
-          // Remove it from the game.
-          delete_ship(svs);
+          P_ship ship = svs;
+          fn = shipObjHash.erase(svs);
+          delete_ship(ship);
           return TRUE;
         }
       }
-      act( "&+WShip not found!", FALSE, ch, NULL, NULL, TO_CHAR );
+      sprintf( buf, "&+WShip of '%s' not found!", argstring3 );
+      act( buf, FALSE, ch, NULL, NULL, TO_CHAR );
       return TRUE;
     }
   } // End arg1 == "ship"

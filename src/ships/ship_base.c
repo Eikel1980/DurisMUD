@@ -2325,3 +2325,30 @@ void display_shipfrags(P_char ch)
             shipfrags[i].ship->frags);
   }
 }
+
+void delete_ship( char *owner_name )
+{
+  P_ship      ship;
+  ShipVisitor svs;
+
+  CAP(owner_name);
+  // First, we hunt for the ship, and make sure there is one (we can use the same loop as above).
+  for( bool fn = shipObjHash.get_first(svs); fn; fn = shipObjHash.get_next(svs) )
+  {
+    // Skip pirate ships.
+    if( SHIP_OWNER(svs) == NULL )
+    {
+      continue;
+    }
+    // Check if we have the right ship using the same code as to display the owner's name
+    if( !strcmp( owner_name, SHIP_OWNER(svs) ) )
+    {
+      debug( "&+RDeleting ship (%s)...&n", owner_name );
+      ship = svs;
+      shipObjHash.erase(svs);
+      delete_ship(ship);
+      return;
+    }
+  }
+  debug( "Could not find ship (%s) to delete.", owner_name );
+}

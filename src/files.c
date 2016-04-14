@@ -2042,6 +2042,9 @@ int deleteCharacter(P_char ch, bool bDeleteLocker)
     system( Gbuf2 );
   }
 
+  // Delete ship.
+  delete_ship( GET_NAME(ch) );
+
   return TRUE;
 }
 
