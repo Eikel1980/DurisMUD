@@ -712,7 +712,7 @@ void advance_level(P_char ch)
 
   if (GET_LEVEL(ch) < 26)
   {
-    ch->points.base_hit += (IS_ILLITHID(ch) ? 0 :number(0, 3));
+    ch->points.base_hit += (IS_ILLITHID(ch) ? 0 :number(0, 3)) + 1;
     ch->points.base_mana += number(0, 3);
   }
 
