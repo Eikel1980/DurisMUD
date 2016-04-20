@@ -2417,3 +2417,13 @@ const int race_hatred_data[][MAX_HATRED] = {
   {RACE_MOUNTAIN,RACE_ORC,RACE_DUERGAR,RACE_DROW,-1},
   {-1,-1,-1,-1,-1}                            /* * END */
 };
+
+extern const char racewar_sides[MAX_RACEWAR+1][10];
+const char racewar_sides[MAX_RACEWAR+1][10] =
+{
+  "None",
+  "Good",
+  "Evil",
+  "Undead",
+  "Neutral"
+};

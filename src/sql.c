@@ -136,6 +136,10 @@ const char *sql_select_IP_info(P_char ch, char *buf, size_t bufSize, time_t *las
   buf[0] = 0;
   return buf;
 }
+int sql_find_racewar_for_ip( char *ip, int *racewar_side )
+{
+  return -1;
+}
 bool qry(const char *format, ...) {
         return TRUE;
 }
@@ -390,7 +394,6 @@ int sql_level_cap( int racewar_side )
 
   // This goes from 25 for no frags, 26 for .4 frags, 27 for .8 frags, up to 56 for 12.4 or more frags.
   level_cap = (int) ( (max_frags / 40) + 25 );
-debug( "PENIS: level_cap: %d.", level_cap );
   // Everyone can reach 56 when someone reaches the limit.
   if( level_cap >= 56 )
     return 56;
@@ -714,7 +717,9 @@ void sql_disconnectIP(P_char ch)
   db_query_nolog("INSERT INTO ip_info (pid) VALUES (%d)", GET_PID(ch));
   if (ch->desc)
   {
-    db_query("UPDATE ip_info SET last_disconnect = NOW() WHERE pid = %d", GET_PID(ch));
+    // Set racewar side if not an immortal.
+    db_query( "UPDATE ip_info SET last_disconnect = NOW(), racewar_side=%d WHERE pid = %d",
+      IS_TRUSTED(ch) ? RACEWAR_NONE : GET_RACEWAR(ch), GET_PID(ch) );
   }
 }
 
@@ -724,7 +729,8 @@ void sql_connectIP(P_char ch)
   db_query_nolog("INSERT INTO ip_info (pid) VALUES (%d)", GET_PID(ch));
   if (ch->desc)
   {
-    db_query("UPDATE ip_info SET last_ip = '%s', last_connect = NOW() WHERE pid = %d", ch->desc->host, GET_PID(ch));
+    db_query("UPDATE ip_info SET last_ip = '%s', last_connect = NOW(), racewar_side = %d WHERE pid = %d",
+      ch->desc->host, IS_TRUSTED(ch) ? RACEWAR_NONE : GET_RACEWAR(ch), GET_PID(ch));
   }
 }
 
@@ -797,9 +803,6 @@ int sql_world_quest_done_already(P_char ch, int quest_target)
 return returning_value;
 }
 
-
-
-
 const char *sql_select_IP_info(P_char ch, char *buf, size_t bufSize, time_t *lastConnect, time_t*lastDisconnect)
 {
   time_t now = 0;
@@ -835,6 +838,39 @@ const char *sql_select_IP_info(P_char ch, char *buf, size_t bufSize, time_t *las
   }
   return buf;
 }
+
+// Returns the time needed *in seconds) to timeout the racewar side associated with an ip.
+// Or 0 if no character has been on within an hour.
+int sql_find_racewar_for_ip( char *ip, int *racewar_side )
+{
+  MYSQL_RES *db;
+  MYSQL_ROW row;
+  time_t last_connect, last_disconnect, hour_ago;
+
+  db = db_query( "SELECT UNIX_TIMESTAMP(last_connect), UNIX_TIMESTAMP(last_disconnect), UNIX_TIMESTAMP(), racewar_side"
+    " from ip_info WHERE last_ip = \"%s\" ORDER BY last_connect DESC LIMIT 1", ip );
+
+  if( db && (( row = mysql_fetch_row(db) ) != NULL) )
+  {
+    last_connect = strtoul(row[0], NULL, 10);
+    last_disconnect = strtoul(row[1], NULL, 10);
+    hour_ago = strtoul(row[2], NULL, 10) - 60 * 60;
+    *racewar_side = atoi(row[3]);
+
+    // If they've been offline for an hour or more, return a 0 timer.
+    if( last_disconnect > last_connect && last_disconnect <= hour_ago )
+      return 0;
+
+debug( "PENIS: racewar_side: %d for ip '%s'. time to clear: %lu sec.", atoi(row[3]), ip, last_disconnect - hour_ago );
+    while( row != NULL )
+      row = mysql_fetch_row(db);
+    // Return an hour if they're still online, or time delta to an hour offline.
+    return (last_disconnect < last_connect) ? 60 * 60 : last_disconnect - hour_ago;
+  }
+debug( "PENIS: IP '%s' not found.", ip );
+  return RACEWAR_NONE;
+}
+
 void perform_wiki_search(P_char ch, const char *query)
 {
 

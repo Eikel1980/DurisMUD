@@ -3944,7 +3944,6 @@ void do_soc_ledger(P_char ch, char *args)
   }
   else if( is_abbrev(args, "system") || is_abbrev(args, "guild") )
   {
-PENIS:
     if( !qry("SELECT transaction_info FROM guild_transactions WHERE soc_id = %d AND (transaction_info LIKE '%%System withdrew%%' OR transaction_info LIKE '%%System deposited%%') ORDER BY date DESC LIMIT 100", asc_number) )
     {
       send_to_char("No transactions found...\n", ch);

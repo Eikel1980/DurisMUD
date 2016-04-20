@@ -46,6 +46,7 @@ void perform_wiki_search(P_char ch, const char *buf);
 void sql_connectIP(P_char ch);
 // used to retrieve the last used IP for a player.
 const char *sql_select_IP_info(P_char ch, char *buf, size_t bufSize, time_t *lastConnect = NULL, time_t*lastDisconnect = NULL);
+int sql_find_racewar_for_ip( char *ip, int *racewar_side );
 // to log disconnect times...
 void sql_disconnectIP(P_char ch);
 bool qry(const char *format, ...);

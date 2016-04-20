@@ -60,6 +60,7 @@ extern const struct bonus_stat bonus_stats[];
 extern const struct con_app_type con_app[];
 extern const struct stat_data stat_factor[];
 extern const struct racial_data_type racial_data[];
+extern const char racewar_sides[MAX_RACEWAR+1][10];
 extern int avail_descs;
 extern int avail_hometowns[][LAST_RACE + 1];
 extern int class_table[LAST_RACE + 1][CLASS_COUNT + 1];
@@ -4193,6 +4194,36 @@ P_char find_ch_from_same_host(P_desc d)
   return NULL;
 }
 
+// Checks to see if they're violating the one hour rule.
+bool violating_one_hour_rule( P_desc d )
+{
+  int racewar_side;
+  int timer;
+
+  // Immortals don't violate the one hour rule, ever.
+  if( IS_TRUSTED(d->character) )
+  {
+    return FALSE;
+  }
+
+  timer = sql_find_racewar_for_ip( d->host, &racewar_side );
+
+  // If they haven't been on in an hour (or never before).
+  if( racewar_side == RACEWAR_NONE )
+    return FALSE;
+  // If they're on the same racewar side.
+  else if( racewar_side == GET_RACEWAR(d->character) )
+    return FALSE;
+
+  wizlog( AVATAR, "%s tried to break the one-hour rule.", GET_NAME(d->character) );
+  sql_log( d->character, PLAYERLOG, "Tried to break the one-hour rule.", GET_NAME(d->character) );
+
+  send_to_char_f( d->character, "\n\rYou need to wait longer before logging a character on a different"
+    " racewar side.\n\rCurrent side: %s, Seconds to clear: %d\n\rPress return to disconnect.\n\r",
+    racewar_sides[racewar_side], timer );
+  return TRUE;
+}
+
 bool is_multiplaying(P_desc d)
 {
   if( IS_TRUSTED(d->character) )
@@ -4389,6 +4420,12 @@ void select_pwd(P_desc d, char *arg)
 
       // multiplay check: if the user already has another character in game, don't let them connect a new character
       if( is_multiplaying(d) )
+      {
+        STATE(d) = CON_FLUSH;
+        return;
+      }
+      // One hour rule check: if the user has had a char on a different racewar side w/in an hour.
+      if( violating_one_hour_rule(d) )
       {
         STATE(d) = CON_FLUSH;
         return;
