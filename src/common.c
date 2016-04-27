@@ -211,7 +211,7 @@ int race_size(int race)
     case RACE_HUMANOID:
     case RACE_HERBIVORE:
     case RACE_CARNIVORE:
-    case RACE_PLICH:
+    case RACE_LICH:
     case RACE_PVAMPIRE:
     case RACE_PDKNIGHT:
     case RACE_BARBARIAN:
@@ -1259,7 +1259,7 @@ flagDef  aggro_bits[] = {
 };
 
 flagDef  aggro2_bits[] = {
-  {"AGGR2_PLICH", "Aggr to liches", 1, 0},
+  {"AGGR2_LICH", "Aggr to liches", 1, 0},
   {"AGGR2_PVAMPIRE", ".. to vampires", 1, 0},
   {"AGGR2_PDKNIGHT", ".. to death knights", 1, 0},
   {"AGGR2_PSBEAST", ".. to shadow beasts", 1, 0},

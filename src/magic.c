@@ -1963,7 +1963,7 @@ void spell_conjour_elemental(int level, P_char ch, char *arg, int type,
     return;
   }
 
-  if( GET_RACE(ch) == RACE_PLICH )
+  if( GET_RACE(ch) == RACE_LICH )
   {
     return;
   }

@@ -2203,7 +2203,7 @@ bool aggressive_to_race(P_char ch, P_char target)
     if (IS_AGGRO2FLAG(ch, AGGR2_PHANTOM) && (GET_RACE1(target) == RACE_PHANTOM))
       return TRUE;
 
-    if (IS_AGGRO2FLAG(ch, AGGR2_PLICH) && (GET_RACE1(target) == RACE_PLICH))
+    if (IS_AGGRO2FLAG(ch, AGGR2_LICH) && (GET_RACE1(target) == RACE_LICH))
       return TRUE;
 
     if (IS_AGGRO2FLAG(ch, AGGR2_PVAMPIRE) && (GET_RACE1(target) == RACE_PVAMPIRE))

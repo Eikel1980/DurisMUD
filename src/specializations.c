@@ -30,7 +30,7 @@ struct allowed_race_spec_struct {
     /* War Ran Psi Pal APa Cle Mon Dru Sha Sor Nec Con Rog Mer Bar Ber Rea Illu Dre Eth Ave The */
 	/* RACE_HUMAN,     RACE_BARBARIAN, RACE_DROW,      RACE_GREY,      RACE_MOUNTAIN, RACE_DUERGAR,
 	 * RACE_HALFLING,  RACE_GNOME,     RACE_OGRE,      RACE_TROLL,     RACE_HALFELF,  RACE_ORC,
-	 * RACE_THRIKREEN, RACE_CENTAUR,   RACE_GITHYANKI, RACE_MINOTAUR,  RACE_GOBLIN,   RACE_PLICH,
+	 * RACE_THRIKREEN, RACE_CENTAUR,   RACE_GITHYANKI, RACE_MINOTAUR,  RACE_GOBLIN,   RACE_LICH,
 	 * RACE_PVAMPIRE,  RACE_GITHZERAI, RACE_DRIDER,    RACE_AGATHINON, RACE_ELADRIN,  RACE_KOBOLD,
 	 * RACE_PILLITHID, RACE_KUOTOA,    RACE_WOODELF,   RACE_FIRBOLG */
 	/* Start Human Options */
@@ -340,7 +340,7 @@ struct allowed_race_spec_struct {
  	/* End Minotaur Options */
 
 	/* Start Lich Options */
-	{RACE_PLICH, CLASS_NECROMANCER, SPEC_ALL},
+	{RACE_LICH, CLASS_NECROMANCER, SPEC_ALL},
 	/* End Lich Options */
 
 	/* Start Vampire Options */

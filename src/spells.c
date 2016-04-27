@@ -2995,7 +2995,7 @@ void spell_mirage(int level, P_char ch, char *arg, int type, P_char victim, P_ob
 	{
 	  race = number(0, LAST_RACE);
 	}
-	while (race != RACE_PLICH &&
+	while (race != RACE_LICH &&
 	       race != RACE_PVAMPIRE &&
 	       race != RACE_PDKNIGHT &&
 	       race != RACE_SHADE &&

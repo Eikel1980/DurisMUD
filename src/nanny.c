@@ -1914,23 +1914,23 @@ void load_obj_to_newbies(P_char ch)
 /*END Orc Classes*/
 
 /*Lich Basics*/
-  CREATE_KIT(RACE_PLICH, 0, ((int[])
+  CREATE_KIT(RACE_LICH, 0, ((int[])
                              {
 						  677, 283, 285, 1112, 286, 288, 290,
                              1172, 1173, 612, -1}));
 
   /*Lich Classes */
-  CREATE_KIT(RACE_PLICH, CLASS_ALCHEMIST, ((int[])
+  CREATE_KIT(RACE_LICH, CLASS_ALCHEMIST, ((int[])
                                            {
                                            377, 676, 52, -1}));
 
 
-  CREATE_KIT(RACE_PLICH, CLASS_DREADLORD, ((int[])
+  CREATE_KIT(RACE_LICH, CLASS_DREADLORD, ((int[])
                                            {
                                            1101, 1102, 1103, 1104, 1105, 1105,
                                            1106, 1107, 286, -1}));
 
-  CREATE_KIT(RACE_PLICH, CLASS_NECROMANCER, ((int[])
+  CREATE_KIT(RACE_LICH, CLASS_NECROMANCER, ((int[])
                                              {
                                              1112, 1114, 1115, 1141, 1142,
                                              1143, -1}));
@@ -2058,7 +2058,7 @@ void load_obj_to_newbies(P_char ch)
                                            {
                                            1101, 1102, 1103, 1104, 1105, 1105,
                                            1106, 1107, 286, -1}));
-  CREATE_KIT(RACE_PLICH, CLASS_NECROMANCER, ((int[])
+  CREATE_KIT(RACE_LICH, CLASS_NECROMANCER, ((int[])
                                              {
                                              1112, 1114, 1115, 1141, 1142,
                                              1143, -1}));
@@ -4997,7 +4997,7 @@ void select_race(P_desc d, char *arg)
     */
     /*   
        case '1':
-       GET_RACE(d->character) = RACE_PLICH;
+       GET_RACE(d->character) = RACE_LICH;
        break;
        case '(':
        strcpy(Gbuf, "LICH");
@@ -5985,7 +5985,7 @@ void set_char_height_weight(P_char ch)
       if (GET_SEX(ch) == SEX_FEMALE)
         female = 95;
         break;
-    case RACE_PLICH:
+    case RACE_LICH:
     case RACE_DROW:
     case RACE_GREY:
     case RACE_WOODELF:
@@ -6078,7 +6078,7 @@ void set_char_size(P_char ch)
   case RACE_ORC:
   case RACE_MOUNTAIN:
   case RACE_GITHYANKI:
-  case RACE_PLICH:
+  case RACE_LICH:
   case RACE_PVAMPIRE:
   case RACE_PHANTOM:
   case RACE_PSBEAST:

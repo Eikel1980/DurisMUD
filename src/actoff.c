@@ -9226,7 +9226,7 @@ void event_call_grave(P_char ch, P_char victim, P_obj obj, void *data)
     ("&+LThe ground trembles, only to buckle and crack as &+Wskeletons &+Lrise from their cold graves.",
      FALSE, ch, 0, 0, TO_NOTVICT);
   
-  if(GET_RACE(ch) == RACE_PLICH)
+  if(GET_RACE(ch) == RACE_LICH)
   {
     skill = GET_LEVEL(ch) + 50;
   }

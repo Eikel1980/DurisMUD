@@ -1118,7 +1118,7 @@ void spell_nightmare(int level, P_char ch, char *arg, int type, P_char victim,
       act("$n shows $N! his worst nightmare!", FALSE, ch, 0, victim,
           TO_NOTVICT);
       break;
-    case RACE_PLICH:
+    case RACE_LICH:
     case RACE_PVAMPIRE:
       act
         ("You show $N a nightmare of $M getting stabbed by a wooden stake through the heart!",

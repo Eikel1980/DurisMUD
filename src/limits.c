@@ -695,7 +695,7 @@ void advance_level(P_char ch)
   if (IS_PC(ch) && (ch->only.pc->highest_level < GET_LEVEL(ch)))
     ch->only.pc->highest_level = GET_LEVEL(ch);
 
-  if ((GET_LEVEL(ch) == get_property("exp.maxExpLevel", 45)) && !IS_HARDCORE(ch) && (!GET_RACE(ch) == RACE_PLICH))
+  if ((GET_LEVEL(ch) == get_property("exp.maxExpLevel", 45)) && !IS_HARDCORE(ch) && (!GET_RACE(ch) == RACE_LICH))
   {
     char buf[512];
     sprintf(buf,
@@ -1425,7 +1425,7 @@ int gain_exp(P_char ch, P_char victim, const int value, int type)
   {
     // Hardcores should level via exp only. - Drannak 11/30/12
     // Liches can lvl exp only too since they are solo on 3rd racewar side (again). 7/7/2015
-    if( (IS_HARDCORE(ch) || GET_RACE(ch) == RACE_PLICH) && (GET_LEVEL(ch) < levelcap) )
+    if( (IS_HARDCORE(ch) || GET_RACE(ch) == RACE_LICH) && (GET_LEVEL(ch) < levelcap) )
     {
       for( int i = GET_LEVEL(ch) + 1; (i <= levelcap) && (new_exp_table[i] <= GET_EXP( ch )); i++ )
   	  {

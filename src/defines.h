@@ -274,7 +274,7 @@ typedef unsigned int uint;
 #define ITEM_ANTI2_AQUAELF     BIT_8
 #define ITEM_ANTI2_SAHUAGIN    BIT_9
 #define ITEM_ANTI2_GOBLIN      BIT_10
-#define ITEM_ANTI2_PLICH      BIT_11
+#define ITEM_ANTI2_LICH      BIT_11
 #define ITEM_ANTI2_PVAMPIRE      BIT_12
 #define ITEM_ANTI2_PSBEAST      BIT_13
 #define ITEM_ALLOW2_WARLOCK      BIT_14
@@ -631,6 +631,7 @@ struct attr_names_struct {
 #define MAX_COND     5    /* used by the loops, don't count all_cond */
 
 /* Bitvector for 'affected_by'.  Also, used for object bitvectors -DCL */
+#define AFF_NONE                  0
 #define AFF_BLIND             BIT_1
 #define AFF_INVISIBLE         BIT_2
 #define AFF_FARSEE            BIT_3
@@ -895,7 +896,7 @@ struct attr_names_struct {
 #define RACE_SHADE           18 /* mob race code: SA */
 #define RACE_REVENANT        19 /* mob race code: AE */
 #define RACE_GOBLIN          20 /* mob race code: HG */
-#define RACE_PLICH           21 /* mob race code: UL */
+#define RACE_LICH            21 /* mob race code: UL */
 #define RACE_PVAMPIRE        22 /* mob race code: UM */
 #define RACE_PDKNIGHT        23 /* mob race code: UK */
 #define RACE_PSBEAST         24 /* mob race code: US */
@@ -1183,7 +1184,7 @@ struct attr_names_struct {
 #define AGGR_MINOTAUR        BIT_31
 #define AGGR_GOBLIN          BIT_32
 
-#define AGGR2_PLICH          BIT_1
+#define AGGR2_LICH           BIT_1
 #define AGGR2_PVAMPIRE       BIT_2
 #define AGGR2_PDKNIGHT       BIT_3
 #define AGGR2_PSBEAST        BIT_4

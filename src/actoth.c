@@ -6585,7 +6585,7 @@ void do_descend(P_char ch, char *arg, int cmd)
   send_to_char("This command has been disabled until further notice.\n", ch);
   return;
 
-  /*  if(GET_RACE(ch) == RACE_PLICH)
+  /*  if(GET_RACE(ch) == RACE_LICH)
     {
       send_to_char("You could not get any &+Ldarker&n if you tried.\n", ch);
       return;
@@ -6651,7 +6651,7 @@ void do_descend(P_char ch, char *arg, int cmd)
     char_to_room(ch, real_room(98735), 0);
     GET_RACEWAR(ch) = 3;
     GET_SIZE(ch) = SIZE_MEDIUM;
-    GET_RACE(ch) = RACE_PLICH;
+    GET_RACE(ch) = RACE_LICH;
     ch->player.m_class = CLASS_NECROMANCER;
     ch->player.secondary_class = CLASS_SORCERER;
     secede_asc(ch); //leave your guild!
@@ -6881,7 +6881,7 @@ void do_old_descend(P_char ch, char *arg, int cmd)
         break;
       case NECRO:
         GET_SIZE(ch) = SIZE_MEDIUM;
-        GET_RACE(ch) = RACE_PLICH;
+        GET_RACE(ch) = RACE_LICH;
         ch->player.m_class = CLASS_NECROMANCER;
         break;
       case DREAD:

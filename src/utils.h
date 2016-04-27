@@ -748,7 +748,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
 #define IS_AVATAR(ch) (GET_RACE(ch) == RACE_AVATAR)
 
 #define IS_UNDEADRACE(ch)  ((GET_RACE(ch) == RACE_UNDEAD) || \
-           (GET_RACE(ch) == RACE_PLICH) || \
+           (GET_RACE(ch) == RACE_LICH) || \
            (GET_RACE(ch) == RACE_PVAMPIRE) || \
            (GET_RACE(ch) == RACE_SHADE) || \
            (GET_RACE(ch) == RACE_REVENANT) || \
@@ -769,7 +769,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
 #define IS_UNDEAD(ch) ((GET_RACE(ch) == RACE_UNDEAD) || \
            (GET_RACE(ch) == RACE_GHOST) || \
            (GET_RACE(ch) == RACE_VAMPIRE) || \
-           (GET_RACE(ch) == RACE_PLICH) || \
+           (GET_RACE(ch) == RACE_LICH) || \
            (GET_RACE(ch) == RACE_PDKNIGHT) || \
            (GET_RACE(ch) == RACE_ZOMBIE) || \
            (GET_RACE(ch) == RACE_SPECTRE) || \
@@ -793,7 +793,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
 #define IS_NOCORPSE(ch) ((GET_RACE(ch) == RACE_UNDEAD) || \
            ( GET_RACE(ch) == RACE_GHOST ) || \
            ( GET_RACE(ch) == RACE_VAMPIRE ) || \
-           ( GET_RACE(ch) == RACE_PLICH ) || \
+           ( GET_RACE(ch) == RACE_LICH ) || \
            ( GET_RACE(ch) == RACE_ZOMBIE ) || \
            ( GET_RACE(ch) == RACE_SPECTRE ) || \
            ( GET_RACE(ch) == RACE_SKELETON ) || \
@@ -1138,7 +1138,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
 	                                || (race == RACE_DRIDER) \
                                   || (OLD_RACE_NEUTRAL(race) && (align < 0)) )
 
-#define OLD_RACE_PUNDEAD(race) ( (race == RACE_PLICH) \
+#define OLD_RACE_PUNDEAD(race) ( (race == RACE_LICH) \
                               || (race == RACE_PVAMPIRE) \
                               || (race == RACE_PDKNIGHT) \
                               || (race == RACE_SHADE) \
@@ -1193,7 +1193,7 @@ for ((IN_ROOM) = world[(PLAYER)->in_room].people; (IN_ROOM) != NULL; (IN_ROOM) =
                              (GET_RACE(ch) == RACE_DEVIL) || \
                              (GET_RACE(ch) == RACE_ANGEL) || \
                              (GET_RACE(ch) == RACE_BEHOLDER) || \
-                             (GET_RACE(ch) == RACE_PLICH) || \
+                             (GET_RACE(ch) == RACE_LICH) || \
                              (GET_RACE(ch) == RACE_AVATAR) || \
                              (GET_RACE(ch) == RACE_CONSTRUCT)))
 
@@ -1402,7 +1402,7 @@ char *CRYPT2( char *passwd, char *name );
                        IS_ANGELIC(ch))
 
 #define INFRA_INVIS_RACE(race)   (race == RACE_UNDEAD      || race == RACE_GHOST       || race == RACE_VAMPIRE       \
-  || race == RACE_PLICH        || race == RACE_PDKNIGHT    || race == RACE_ZOMBIE      || race == RACE_SPECTRE       \
+  || race == RACE_LICH        || race == RACE_PDKNIGHT    || race == RACE_ZOMBIE      || race == RACE_SPECTRE       \
   || race == RACE_SKELETON     || race == RACE_WRAITH      || race == RACE_SHADOW      || race == RACE_DRACOLICH     \
   || race == RACE_PVAMPIRE     || race == RACE_SHADE       || race == RACE_REVENANT    || race == RACE_PSBEAST       \
   || race == RACE_WIGHT        || race == RACE_GARGOYLE    || race == RACE_PHANTOM     || race == RACE_AQUATIC_ANIMAL\
@@ -1412,7 +1412,7 @@ char *CRYPT2( char *passwd, char *name );
   || (IS_AFFECTED4(obj, AFF4_VAMPIRE_FORM) && !GET_CLASS(obj, CLASS_THEURGIST)) || RACE_PUNDEAD(obj) )
 
 // This is done in reverse 'cause it's faster that way.
-#define HAS_LUNGS(race)     ( race != RACE_SHADE     && race != RACE_REVENANT    && race != RACE_PLICH       \
+#define HAS_LUNGS(race)     ( race != RACE_SHADE     && race != RACE_REVENANT    && race != RACE_LICH       \
   && race != RACE_PVAMPIRE && race != RACE_PDKNIGHT  && race != RACE_PSBEAST     && race != RACE_WIGHT       \
   && race != RACE_PHANTOM  && race != RACE_GARGOYLE  && race != RACE_F_ELEMENTAL && race != RACE_A_ELEMENTAL \
   && race != RACE_UNDEAD   && race != RACE_VAMPIRE   && race != RACE_W_ELEMENTAL && race != RACE_E_ELEMENTAL \

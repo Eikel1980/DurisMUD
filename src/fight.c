@@ -1508,7 +1508,7 @@ P_obj make_corpse(P_char ch, int loss)
         act("$n crumbles to dust.", TRUE, ch, 0, 0, TO_ROOM);
         break;
       case RACE_UNDEAD:
-      case RACE_PLICH:
+      case RACE_LICH:
       case RACE_VAMPIRE:
         act("$n crumbles to dust.", TRUE, ch, 0, 0, TO_ROOM);
         break;
@@ -2395,7 +2395,7 @@ void die(P_char ch, P_char killer)
   if( IS_PC(ch) && !CHAR_IN_ARENA(ch) && (GET_LEVEL(ch) > 1) && !IS_TRUSTED(ch) )
     // && (GET_RACEWAR(ch) != 1)) Goods lose exp again.
   {
-    if( IS_PC(ch) && (GET_RACE(ch) == RACE_PLICH) )
+    if( IS_PC(ch) && (GET_RACE(ch) == RACE_LICH) )
     {
       long tmp = loss = GET_EXP(ch);
       float percentage = new_exp_table[GET_LEVEL(ch)] / new_exp_table[GET_LEVEL(ch)+1];
@@ -5569,7 +5569,7 @@ void check_vamp(P_char ch, P_char victim, double fdam, uint flags)
       fhits = dam * dam_factor[DF_UNDEADVAMP];
       fcap = GET_MAX_HIT(ch);
       // Liches vamp from spells.
-      if( flags & SPLDAM_SPELL && GET_RACE(ch) == RACE_PLICH )
+      if( flags & SPLDAM_SPELL && GET_RACE(ch) == RACE_LICH )
         fcap *= VAMPPERCENT(ch);
       vamped = vamp(ch, fhits, fcap);
     }

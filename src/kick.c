@@ -217,8 +217,7 @@ const char *att_kick_hit_room[] = {
   ""
 };
 
-void kick_messages(P_char ch, P_char victim, bool hit,
-                   struct damage_messages *messages)
+void kick_messages(P_char ch, P_char victim, bool hit, struct damage_messages *messages)
 {
   int      i;
 
@@ -317,7 +316,7 @@ void kick_messages(P_char ch, P_char victim, bool hit,
     i = 13;
     break;
   case RACE_UNDEAD:
-  case RACE_PLICH:
+  case RACE_LICH:
   case RACE_PVAMPIRE:
   case RACE_PDKNIGHT:
   case RACE_PSBEAST:

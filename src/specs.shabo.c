@@ -892,7 +892,7 @@ int shaboath_alternation_tower(int room, P_char ch, int cmd, char *argument)
   };
 
   int      undead_races[NUMBER_RACES_FOR_UNDEAD] =
-    { RACE_PLICH, RACE_PVAMPIRE,
+    { RACE_LICH, RACE_PVAMPIRE,
     RACE_PDKNIGHT, RACE_SHADE,
     RACE_REVENANT, RACE_PSBEAST,
     RACE_WIGHT, RACE_PHANTOM

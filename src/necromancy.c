@@ -53,74 +53,94 @@ const struct golem_description golem_data[4] = {
 
 extern const struct undead_description undead_data[NECROPET_LAST + 1];
 const struct undead_description undead_data[NECROPET_LAST + 1] = {
+    /* Format:
+    Name, Short Desc, Corpse Level, Act Flags
+    Affect 1 Flags
+    Affect 2 Flags, Hitpoints, Max Level, Cost
+    Class, Race
+    * Note: AFF1 and AFF2 might be on the same line if they're both short
+    * Note: For multiclass, use CLASS_<FIRST> | CLASS_<SECOND> ...
+    */
   {
-   "skeleton", "", 2, ACT_NICE_THIEF, AFF_HASTE, 0, 1.2, 21, 10, CLASS_WARRIOR,
-   RACE_SKELETON},
+    "skeleton", "", 2, ACT_NICE_THIEF,
+    AFF_HASTE, AFF_NONE, 1.2, 21, 10,
+    CLASS_WARRIOR, RACE_SKELETON
+  },
   {
-   "zombie", "", 4, ACT_NICE_THIEF + ACT_MEMORY, AFF_PROTECT_GOOD, AFF2_SLOW, 1.8, 26, 10, CLASS_WARRIOR,
-   RACE_ZOMBIE},
+    "zombie", "", 4, ACT_NICE_THIEF + ACT_MEMORY,
+    AFF_PROTECT_GOOD, AFF2_SLOW, 1.8, 26, 10,
+    CLASS_WARRIOR, RACE_ZOMBIE
+  },
   {
-   "spectre", "", 20, ACT_MEMORY,
-   AFF_FLY + AFF_INVISIBLE + AFF_DETECT_INVISIBLE + AFF_PROTECT_GOOD +
-   AFF_SNEAK,
-   AFF2_PROT_COLD, 2, 31, 10, CLASS_ASSASSIN, RACE_SPECTRE},
+    "spectre", "", 20, ACT_MEMORY,
+    AFF_FLY + AFF_INVISIBLE + AFF_DETECT_INVISIBLE + AFF_PROTECT_GOOD + AFF_SNEAK,
+    AFF2_PROT_COLD, 2, 31, 10,
+    CLASS_ASSASSIN, RACE_SPECTRE
+  },
   {
-   "wraith", "", 30, ACT_MEMORY, AFF_FLY + AFF_DETECT_INVISIBLE +
-   AFF_INVISIBLE + AFF_PROTECT_GOOD,
-   AFF2_PROT_COLD, 3.2, 36, 22, CLASS_SORCERER, RACE_WRAITH},
+    "wraith", "", 30, ACT_MEMORY,
+    AFF_FLY + AFF_DETECT_INVISIBLE + AFF_INVISIBLE + AFF_PROTECT_GOOD,
+    AFF2_PROT_COLD, 3.2, 36, 22,
+    CLASS_SORCERER, RACE_WRAITH
+  },
   {
-   "vampire", "", 40, ACT_MEMORY,
-   AFF_FLY + AFF_DETECT_INVISIBLE + AFF_INVISIBLE + AFF_PROTECT_GOOD
-   + AFF_HASTE, AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH,
-   12, 50, 28, CLASS_WARRIOR,
-   RACE_VAMPIRE},
+    "vampire", "", 40, ACT_MEMORY,
+    AFF_FLY + AFF_DETECT_INVISIBLE + AFF_INVISIBLE + AFF_PROTECT_GOOD + AFF_HASTE,
+    AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH, 12, 50, 28,
+    CLASS_WARRIOR, RACE_VAMPIRE
+  },
   {
-   "lich", "", 45, ACT_MEMORY,
-   AFF_DETECT_INVISIBLE + AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE +
-   AFF_PROTECT_GOOD + AFF_HASTE,
-   AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH, 5, 46, 28, CLASS_SORCERER,
-   RACE_PLICH},
+    "lich", "", 45, ACT_MEMORY,
+    AFF_DETECT_INVISIBLE + AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE + AFF_PROTECT_GOOD + AFF_HASTE,
+    AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH, 5, 46, 28,
+    CLASS_SORCERER, RACE_LICH
+  },
   {
-   "shadow", "", 40, ACT_MEMORY,
-   AFF_HASTE + AFF_DETECT_INVISIBLE +
-   AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE + AFF_PROTECT_GOOD,
-   AFF2_PROT_COLD + AFF4_PHANTASMAL_FORM,
-   5, 50, 65, CLASS_PSIONICIST,
-   RACE_SHADOW},
+    "shadow", "", 40, ACT_MEMORY,
+    AFF_HASTE + AFF_DETECT_INVISIBLE + AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE + AFF_PROTECT_GOOD,
+    AFF2_PROT_COLD + AFF4_PHANTASMAL_FORM, 5, 50, 65,
+    CLASS_PSIONICIST, RACE_SHADOW
+  },
   {
-   "hound archon brawler", "&+yhou&+Yn&+yd &+Rarch&+Wo&+Rn &+rbr&+Raw&+rler&n", 2, ACT_NICE_THIEF, AFF_HASTE, 0, 1.2, 21, 10, CLASS_WARRIOR,
-   RACE_ARCHON},
+    "hound archon brawler", "&+yhou&+Yn&+yd &+Rarch&+Wo&+Rn &+rbr&+Raw&+rler&n", 2, ACT_NICE_THIEF,
+    AFF_HASTE, AFF_NONE, 1.2, 21, 10,
+    CLASS_WARRIOR, RACE_ARCHON
+  },
   {
-   "lantern archon soldier", "&+Ylantern &+Rarch&+Wo&+Rn &+yso&+rldi&+yer&n", 4, ACT_NICE_THIEF + ACT_MEMORY, AFF_PROTECT_EVIL, AFF2_SLOW, 1.8, 26, 10, CLASS_WARRIOR,
-   RACE_ARCHON},
+    "lantern archon soldier", "&+Ylantern &+Rarch&+Wo&+Rn &+yso&+rldi&+yer&n", 4, ACT_NICE_THIEF + ACT_MEMORY,
+    AFF_PROTECT_EVIL, AFF2_SLOW, 1.8, 26, 10,
+    CLASS_WARRIOR, RACE_ARCHON
+  },
   {
-   "asura avenger", "&+Rasu&+Yr&+Ra &+rave&+Lng&+rer&n", 20, ACT_MEMORY,
-   AFF_FLY + AFF_INVISIBLE + AFF_DETECT_INVISIBLE + AFF_PROTECT_EVIL +
-   AFF_SNEAK,
-   AFF2_PROT_COLD, 2, 31, 10, CLASS_ASSASSIN, RACE_ASURA},
+    "asura avenger", "&+Rasu&+Yr&+Ra &+rave&+Lng&+rer&n", 20, ACT_MEMORY,
+    AFF_FLY + AFF_INVISIBLE + AFF_DETECT_INVISIBLE + AFF_PROTECT_EVIL + AFF_SNEAK,
+    AFF2_PROT_COLD, 2, 31, 10,
+    CLASS_ASSASSIN, RACE_ASURA
+  },
   {
-   "bralani battlemage", "&+Cbral&+Wa&+Cni &+Rbattle&+Mmage&n", 30, ACT_MEMORY, AFF_FLY + AFF_DETECT_INVISIBLE +
-   AFF_INVISIBLE + AFF_PROTECT_EVIL,
-   AFF2_PROT_COLD, 3.2, 36, 22, CLASS_SORCERER, RACE_BRALANI},
+    "bralani battlemage", "&+Cbral&+Wa&+Cni &+Rbattle&+Mmage&n", 30, ACT_MEMORY, AFF_FLY + AFF_DETECT_INVISIBLE +
+    AFF_INVISIBLE + AFF_PROTECT_EVIL,
+    AFF2_PROT_COLD, 3.2, 36, 22,
+    CLASS_SORCERER, RACE_BRALANI
+  },
   {
-   "knight-errant knight errant ghaele", "&+cgha&+Ce&+cle &+wkn&+Wi&+wght&+W-e&+wrr&+Wa&+wnt&n", 40, ACT_MEMORY,
-   AFF_FLY + AFF_DETECT_INVISIBLE + AFF_INVISIBLE + AFF_PROTECT_EVIL
-   + AFF_HASTE, AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH,
-   12, 50, 28, CLASS_WARRIOR,
-   RACE_GHAELE},
+    "knight-errant knight errant ghaele", "&+cgha&+Ce&+cle &+wkn&+Wi&+wght&+W-e&+wrr&+Wa&+wnt&n", 40, ACT_MEMORY,
+    AFF_FLY + AFF_DETECT_INVISIBLE + AFF_INVISIBLE + AFF_PROTECT_EVIL + AFF_HASTE,
+    AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH, 12, 50, 28,
+    CLASS_WARRIOR, RACE_GHAELE
+  },
   {
-   "liberator holy eladrin", "&+ce&+Cl&+Wadr&+Ci&+cn &+Wholy &+Cliber&+Wator&n", 45, ACT_MEMORY,
-   AFF_DETECT_INVISIBLE + AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE +
-   AFF_PROTECT_EVIL + AFF_HASTE,
-   AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH, 5, 46, 28, CLASS_SORCERER,
-   RACE_ELADRIN},
+    "liberator holy eladrin", "&+ce&+Cl&+Wadr&+Ci&+cn &+Wholy &+Cliber&+Wator&n", 45, ACT_MEMORY,
+    AFF_DETECT_INVISIBLE + AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE + AFF_PROTECT_EVIL + AFF_HASTE,
+    AFF2_PROT_COLD + AFF2_VAMPIRIC_TOUCH, 5, 46, 28,
+    CLASS_SORCERER, RACE_ELADRIN
+  },
   {
-   "deva astral", "&+Lastral &+wd&+Wev&+wa&n", 40, ACT_MEMORY,
-   AFF_HASTE + AFF_DETECT_INVISIBLE +
-   AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE + AFF_PROTECT_EVIL,
-   AFF2_PROT_COLD + AFF4_PHANTASMAL_FORM,
-   5, 50, 65, CLASS_PSIONICIST,
-   RACE_DEVA}
+    "deva astral", "&+Lastral &+wd&+Wev&+wa&n", 40, ACT_MEMORY,
+    AFF_HASTE + AFF_DETECT_INVISIBLE + AFF_SENSE_LIFE + AFF_FLY + AFF_INVISIBLE + AFF_PROTECT_EVIL,
+    AFF2_PROT_COLD + AFF4_PHANTASMAL_FORM, 5, 50, 65,
+    CLASS_PSIONICIST, RACE_DEVA
+  }
 };
 
 #define NECROPLASM_VNUM 67243
@@ -706,12 +726,6 @@ void raise_undead(int level, P_char ch, P_char victim, P_obj obj, int which_type
     duration += number(1,10);
     add_event(event_pet_death, (duration+1) * 60 * 4, undead, NULL, NULL, 0, NULL, 0);
   }
-  if(GET_RACE(undead) == RACE_PLICH)
-  {
-    undead->player.m_class += CLASS_SORCERER;
-    //send_to_char("is lich\r\n", ch);
-  }
-
 }
 
 #undef UNDEAD_TYPES

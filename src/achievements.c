@@ -163,7 +163,7 @@ void do_achievements(P_char ch, char *arg, int cmd)
   if(GET_CLASS(ch, CLASS_NECROMANCER))
   {
     //-----Achievement: Descendent
-    if(GET_RACE(ch) == RACE_PLICH)
+    if(GET_RACE(ch) == RACE_LICH)
       sprintf(buf3, "  &+L%-50s&+L%-45s&+L%s\r\n",
           "&+LDe&+msc&+Len&+mde&+Lnt&n", "&+BSuccessfully &+cdescend&+L into darkness", "&+BBecome a Lich&n");
     else

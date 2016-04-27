@@ -2778,7 +2778,7 @@ void do_eat(P_char ch, char *argument, int cmd)
     // What slacker did this instead of writing a real object proc that captures CMD_EAT?
     if(oaffect == 1337) //+1 level mushroom
     {
-      if( (GET_LEVEL(ch) > 45) || (GET_RACE(ch) == RACE_PLICH) )
+      if( (GET_LEVEL(ch) > 45) || (GET_RACE(ch) == RACE_LICH) )
       {
         send_to_char("&+GYou are much too powerful for the magic of this item&n.\r\n", ch);
         return;

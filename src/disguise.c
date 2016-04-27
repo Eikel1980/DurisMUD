@@ -81,7 +81,7 @@ struct disguise_list_data_struct disguise_list_data[] = {
    {"&+ga githyanki antipaladin&N", "&+ga githyanki traveler&N", "&+La githyanki psionicist&N"}},
   {SIZE_MEDIUM, RACE_PVAMPIRE,
    {"&+ra vampire antipaladin&N", "&+ra vampire necromancer&N", "&+ra vampire warlock&N"}},
-  {SIZE_MEDIUM, RACE_PLICH,
+  {SIZE_MEDIUM, RACE_LICH,
    {"&+La lich wizard&N", "&+La lich necromancer&N", "&+La lich warlock&N"}},
   {SIZE_MEDIUM, RACE_RAKSHASA,
    {"a rakshasa tribesman", "&+ya rakshasa warrior&N", "&+ya rakshasa guard&N"}},

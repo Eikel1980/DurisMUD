@@ -607,7 +607,7 @@ int GetFormType(P_char ch)
   case RACE_ELADRIN:
   case RACE_FAERIE:
   case RACE_UNDEAD:
-  case RACE_PLICH:
+  case RACE_LICH:
   case RACE_PVAMPIRE:
   case RACE_PSBEAST:
   case RACE_PDKNIGHT:
