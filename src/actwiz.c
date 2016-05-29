@@ -5505,17 +5505,17 @@ void do_restore(P_char ch, char *argument, int cmd)
   P_desc   d;
   P_obj    obj;
   int      i = 0, j;
-  char     buf[MAX_STRING_LENGTH];
-  char     bomb[MAX_STRING_LENGTH];
+  char     arg1[MAX_STRING_LENGTH], arg2[MAX_STRING_LENGTH];
 
-  if(IS_NPC(ch))
+  if( IS_NPC(ch) )
     return;
 
-  one_argument(argument, buf);
+  argument = one_argument(argument, arg1);
+  one_argument(argument, arg2);
 
-  if(!*buf)
+  if( !*arg1 )
     send_to_char("Who do you wish to restore?\n", ch);
-  else if(!str_cmp("all", buf))
+  else if( !str_cmp("all", arg1) )
   {
     if(GET_LEVEL(ch) < FORGER && !god_check(ch->player.name))
     {
@@ -5570,15 +5570,16 @@ void do_restore(P_char ch, char *argument, int cmd)
       }
     send_to_char("Restoration of all players completed.\n", ch);
   }
-  else if(!str_cmp("items", buf))
+  else if( !str_cmp("items", arg1) )
   {
-    if(GET_LEVEL(ch) < FORGER)
+    if( GET_LEVEL(ch) < FORGER )
     {
       send_to_char("Whoops, you can't!\n", ch);
       return;
     }
 
     for (d = descriptor_list; d; d = d->next)
+    {
       if(!d->connected)
       {
         victim = d->character;
@@ -5591,9 +5592,19 @@ void do_restore(P_char ch, char *argument, int cmd)
           obj->condition = 100;//obj->max_condition; wipe2011
         send_to_char("&+gFrom out of nowhere, little gremlin-like creatures about 6 inches tall pop up.&LThey grab all of your equipment, and fiddle with it before returning to you.&LThey then vanish as quickly as they came.\n", victim);
       }
+    }
   }
-  else if(!(victim = get_char_vis(ch, buf)))
+  else if(!(victim = get_char_vis(ch, arg1)))
+  {
     send_to_char("No-one by that name in the world.\n", ch);
+  }
+  else if( !str_cmp("skills", arg2) )
+  {
+    for( i = 0; i < MAX_SKILLS; i++ )
+    {
+      victim->only.pc->skills[i].learned = victim->only.pc->skills[i].taught;
+    }
+  }
   else
   {
     if(affected_by_spell(victim, TAG_BUILDING))
@@ -5611,8 +5622,8 @@ void do_restore(P_char ch, char *argument, int cmd)
 /*
  * Restore the NPCs complement of spells available for casting. - SKB
  */
- 
-    if(IS_NPC(victim))
+
+    if( IS_NPC(victim) )
     {
       victim->specials.undead_spell_slots[0] = 0;
 
