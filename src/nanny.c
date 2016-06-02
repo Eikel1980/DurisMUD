@@ -2786,6 +2786,7 @@ bool _parse_name(char *arg, char *name)
     "mail",
     "male",
     "female",
+    "duris", // blocking duris auto-62 for now.
     "\n"
   };
 
