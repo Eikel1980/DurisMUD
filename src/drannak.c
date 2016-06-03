@@ -871,28 +871,28 @@ void random_recipe(P_char ch, P_char victim)
 
 void randomizeitem(P_char ch, P_obj obj)
 {
-  int   i = 0, good = 0, workingvalue, range, value, limit, luckroll, rchance;
+  int   i, good = 0, workingvalue, range, value, limit, luckroll, rchance;
   P_obj t_obj, nextobj;
-  bool  modified = FALSE;
+  bool  modified;
   char  tempdesc [MAX_INPUT_LENGTH];
   char  short_desc[MAX_STRING_LENGTH], emsg[MAX_STRING_LENGTH];
 
   // Changed 2 to 1, don't need uber randomization.
-  while( i < 1 )
+  for( i = 0, modified = FALSE;(i < MAX_OBJ_AFFECT) && !modified; i++ )
   {
-    //no randomization of items with combat/spell pulse
+    // No randomization of combat/spell pulse
     if( obj->affected[i].location == APPLY_COMBAT_PULSE || obj->affected[i].location == APPLY_SPELL_PULSE )
     {
-      return;
+      continue;
     }
 
-    //Get current a0/1 value
-    if(obj->affected[i].location != 0)
+    // Get current a[i] value
+    if( obj->affected[i].location != APPLY_NONE )
     {
       //debug("obj->affected[i].location: %d\r\n", obj->affected[i].location);
       luckroll = (number(1, 110));
 
-      //initialize workingvalue
+      // Initialize workingvalue
       workingvalue = obj->affected[i].modifier; //base value
       //send_to_char("Item has been randomized\r\n", ch);
 
@@ -979,10 +979,11 @@ void randomizeitem(P_char ch, P_obj obj)
         }
       }
     }
-    i++;
   }
 
   emsg[0] = '\0';
+
+/* Commenting this out until I can go over it.
   for( t_obj = ch->carrying; t_obj; t_obj = nextobj )
   {
     nextobj = t_obj->next_content;
@@ -1262,7 +1263,7 @@ void randomizeitem(P_char ch, P_obj obj)
       }
     }
   }
-
+*/
 
   if( good > 0 )
   {

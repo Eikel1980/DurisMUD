@@ -660,7 +660,6 @@ void do_forge(P_char ch, char *argument, int cmd)
       }
     }
 
-    wizlog(56, "%s forged '%s' (%d) ival %d.", GET_NAME(ch), obj->short_description, objVnum, iVal );
     notch_skill(ch, SKILL_FORGE, 50);
     SET_BIT(obj->extra2_flags, ITEM2_CRAFTED);
     SET_BIT(obj->extra_flags, ITEM_NOREPAIR);
@@ -672,6 +671,7 @@ void do_forge(P_char ch, char *argument, int cmd)
     set_keywords( obj, keywords );
     set_short_description( obj, short_desc );
 
+    wizlog(56, "%s forged '%s' (%d) ival %d.", GET_NAME(ch), obj->short_description, objVnum, itemvalue(obj) );
     obj_to_char( obj, ch );
 
     act("&+W$n &+Lgently takes their &+ymaterials&+L, their &nflux&+L, and places them into the &+rf&+Ro&+Yr&+Rg&+re&+L.\r\n"

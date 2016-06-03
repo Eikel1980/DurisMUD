@@ -4088,8 +4088,6 @@ void do_craft(P_char ch, char *argument, int cmd)
       }
     }
 
-    // Rewards here: tobj is the crafted item, so no need to load another.
-    wizlog(56, "%s crafted '%s' (%d) ival %d.", GET_NAME(ch), tobj->short_description, selected, iVal );
     notch_skill(ch, SKILL_CRAFT, 50);
 
     SET_BIT(tobj->extra2_flags, ITEM2_CRAFTED);
@@ -4102,6 +4100,9 @@ void do_craft(P_char ch, char *argument, int cmd)
     sprintf(short_desc, "%s &+ymade by&n &+r%s&n", tempdesc, GET_NAME(ch));
     set_keywords(tobj, keywords);
     set_short_description(tobj, short_desc);
+
+    // Rewards here: tobj is the crafted item, so no need to load another.
+    wizlog(56, "%s crafted '%s' (%d) ival %d.", GET_NAME(ch), tobj->short_description, selected, itemvalue(tobj) );
 
     obj_to_char(tobj, ch);
     act("&+W$n &+Ldelicately opens their &+ybox &+mof &+Rgnomish &+rcrafting &+mtools&+L and starts their work...\r\n"
