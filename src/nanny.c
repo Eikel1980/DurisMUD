@@ -4788,8 +4788,8 @@ void select_sex(P_desc d, char *arg)
     return;
   }
 
-  
-  if( !IS_NEWBIE(d->character)) 
+
+  if( !IS_NEWBIE(d->character) )
 	{
 	  SEND_TO_Q
 	    ("\r\n\r\nDo you want to play hardcore? Hardcore char can only die 5 times, then it's gone for ever.\r\n",
@@ -4799,7 +4799,7 @@ void select_sex(P_desc d, char *arg)
 	     d);
 	  SEND_TO_Q("Please select either H (for Hardcore), N (for Normal)", d);
 	  STATE(d) = CON_HARDCORE;
-	} 
+	}
   else {
 	  display_classtable(d);
 	  STATE(d) = CON_QCLASS;
@@ -5013,7 +5013,7 @@ void select_race(P_desc d, char *arg)
     strcpy(Gbuf, "KUO TOA");
     break;
     */
-    /*   
+    /*
        case '1':
        GET_RACE(d->character) = RACE_LICH;
        break;
@@ -5103,9 +5103,7 @@ void select_race(P_desc d, char *arg)
   if (invitemode && EVIL_RACE(d->character) &&
       !is_invited(GET_NAME(d->character)))
   {
-    SEND_TO_Q
-      ("\r\nSorry, but only those players that have been invited can roll evil characters.\r\n\r\n",
-       d);
+    SEND_TO_Q("\r\nSorry, but only those players that have been invited can roll evil characters.\r\n\r\n", d);
 
     // since STATE is not changed, player should be forced back into race selection
 
@@ -5114,8 +5112,7 @@ void select_race(P_desc d, char *arg)
   else if ((GET_RACE(d->character) != RACE_ILLITHID) &&
            (GET_RACE(d->character) != RACE_PILLITHID))
   {
-    SEND_TO_Q("\r\nIs your character Male or Female (Z for race)? (M/F/Z) ",
-              d);
+    SEND_TO_Q("\r\nIs your character Male or Female (Z for race)? (M/F/Z) ", d);
     STATE(d) = CON_QSEX;
   }
   else
@@ -5300,16 +5297,20 @@ void select_class(P_desc d, char *arg)
 
   d->character->player.m_class = CLASS_NONE;
 
-  for (cls = 1; cls <= CLASS_COUNT; cls++)
+  for( cls = 1; cls <= CLASS_COUNT; cls++ )
   {
-    if (*arg == class_names_table[cls].letter)
+    if( *arg == class_names_table[cls].letter )
       d->character->player.m_class = 1 << (cls - 1);
-    else if (tolower(*arg) == class_names_table[cls].letter)
+    else if( tolower(*arg) == class_names_table[cls].letter )
       strcpy(Gbuf, class_names_table[cls].normal);
-    else if (tolower(*arg) == 'z')
+    // Had to hardcode the # for Summoners (option 3).
+    else if( *arg == '#' )
     {
-      SEND_TO_Q("\r\nIs your character Male or Female (Z for race)? (M/F/Z) ",
-                d);
+      strcpy(Gbuf, class_names_table[29].normal);
+    }
+    else if( tolower(*arg) == 'z' )
+    {
+      SEND_TO_Q("\r\nIs your character Male or Female (Z for race)? (M/F/Z) ", d);
       STATE(d) = CON_QSEX;
     }
     else
@@ -5317,7 +5318,7 @@ void select_class(P_desc d, char *arg)
     break;
   }
 
-  if (cls > CLASS_COUNT)
+  if( cls > CLASS_COUNT )
   {
     display_classtable(d);
     STATE(d) = CON_QCLASS;
@@ -5325,7 +5326,7 @@ void select_class(P_desc d, char *arg)
   }
 
   /* Krov: help */
-  if (*Gbuf)
+  if( *Gbuf )
   {
     do_help(d->character, Gbuf, -4);
     return;
@@ -5441,7 +5442,7 @@ void display_classtable(P_desc d)
               ansi_strlen(class_names_table[cls].ansi) + 20);
       sprintf(buf + strlen(buf), template_buf, class_names_table[cls].letter,
               class_names_table[cls].ansi,
-              toupper(class_names_table[cls].letter));
+              (class_names_table[cls].letter == '3') ? '#' : toupper(class_names_table[cls].letter));
     }
 
   strcat(buf, "\r\n");
