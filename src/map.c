@@ -884,7 +884,7 @@ int map_view_distance(P_char ch, int room)
   else if( IS_SURFACE_MAP(room) )
   {
     // The map_*_modifiers vary over time of day (done in weather.c).
-    if( IS_DAYBLIND(ch) )
+    if( IS_DAYBLIND(ch) && IS_SUNLIT(ch->in_room) )
     {
       if( IS_AFFECTED(ch, AFF_INFRAVISION) )
       {

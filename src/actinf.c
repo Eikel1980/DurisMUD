@@ -1912,29 +1912,10 @@ void list_char_to_char(P_char list, P_char ch, int mode)
 {
   P_char i, j;
   char   buf[MAX_STRING_LENGTH];
-  int    higher, lower;
+  int    higher, lower, vis_mode;
   bool   globe, flame;
 
-  globe = flame = FALSE;
-  for( j = world[ch->in_room].people; j; j = j->next_in_room )
-  {
-    if( IS_AFFECTED4(j, AFF4_MAGE_FLAME) )
-    {
-      flame = TRUE;
-      if( globe )
-      {
-        break;
-      }
-    }
-    if( IS_AFFECTED4(j, AFF4_GLOBE_OF_DARKNESS) )
-    {
-      globe = TRUE;
-      if( flame )
-      {
-        break;
-      }
-    }
-  }
+  vis_mode = get_vis_mode(ch, list->in_room);
 
   for( i = list; i; i = i->next_in_room )
   {
@@ -1979,9 +1960,7 @@ void list_char_to_char(P_char list, P_char ch, int mode)
     {
       // Infravision: Too dark for day people or too bright for night people, but has infra.
       //   red shape if infra + ( dayblind and lit and no darkness globe, or nightblind and dark and no mage flame)
-      if( !IS_TRUSTED(ch) && IS_AFFECTED(ch, AFF_INFRAVISION)
-        && (( IS_DAYBLIND(ch) && !CAN_NIGHTPEOPLE_SEE(i->in_room) && !globe )
-        || ( !IS_AFFECTED2(ch, AFF2_ULTRAVISION) && !CAN_DAYPEOPLE_SEE(i->in_room) && !flame )) )
+      if( vis_mode == 3 )
       {
         sprintf(buf, "&+rYou see the red shape of a %s living being %shere.\n",
           size_types[GET_ALT_SIZE(i)], higher ? "above you " : lower ? "below you " : "");
@@ -8443,7 +8422,7 @@ void do_scan(P_char ch, char *argument, int cmd)
     return;
   }
 
-  if( IS_DAYBLIND(ch) )
+  if( IS_DAYBLIND(ch) && IS_SUNLIT(ch->in_room) )
   {
     send_to_char("&+WArgh!!! The sun is too bright.\n", ch);
     return;

@@ -150,8 +150,14 @@ int get_vis_mode(P_char ch, int room)
   // If they have infra, they use it here; we failed at regular vision.
   if( IS_AFFECTED(ch, AFF_INFRAVISION) )
   {
+    /* Removing absolute blindness and moving it to infra, and infra to regular.
     return 3;
+    */
+    return 2;
   }
+
+  // For the 6/3/2016 wipe.
+  return 3;
 
   // Ok, they can't see for some reason:
   // If in dark (no infra/ultra)
@@ -1338,6 +1344,8 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
         // Here we check sub's infra vs obj's race (some races are invis to infravision).
         if( IS_AFFECTED(sub, AFF_INFRAVISION) )
         {
+// Changed this for the 6/3/2016 wipe.
+} else {
           // We use GET_RACE2 becaue of shape shifters.
           race = GET_RACE2(obj);
           if( INFRA_INVIS_RACE(race) )
@@ -1345,10 +1353,12 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
             return FALSE;
           }
         }
+/* Removed for the 6/3/2016 wipe
         else
         {
-          return FALSE;
+            return FALSE;
         }
+*/
       }
     }
     // Else check for nightblind: Dark room with no ultra subject.
@@ -1370,6 +1380,8 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
         // Here we check sub's infra vs obj's race (some races are invis to infravision).
         if( IS_AFFECTED(sub, AFF_INFRAVISION) )
         {
+// Changed this for the 6/3/2016 wipe.
+} else {
           // We use GET_RACE2 becaue of shape shifters.
           race = GET_RACE2(obj);
           if( INFRA_INVIS_RACE(race) )
@@ -1377,10 +1389,12 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
             return FALSE;
           }
         }
+/* Removed for the 6/3/2016 wipe
         else
         {
           return FALSE;
         }
+*/
       }
     }
   }
@@ -1407,6 +1421,8 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
       {
         if( IS_AFFECTED(sub, AFF_INFRAVISION) )
         {
+// Changed this for the 6/3/2016 wipe.
+} else {
           // We use GET_RACE2 becaue of shape shifters.
           race = GET_RACE2(obj);
           if( INFRA_INVIS_RACE(race) )
@@ -1414,10 +1430,12 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
             return FALSE;
           }
         }
+/* Removed for the 6/3/2016 wipe
         else
         {
           return FALSE;
         }
+*/
       }
     }
     // Else check for nightblind: Dark room with no infra/ultra subject.
@@ -1438,6 +1456,8 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
       {
         if( IS_AFFECTED(sub, AFF_INFRAVISION) )
         {
+// Changed this for the 6/3/2016 wipe.
+} else {
           // We use GET_RACE2 becaue of shape shifters.
           race = GET_RACE2(obj);
           if( INFRA_INVIS_RACE(race) )
@@ -1445,10 +1465,12 @@ bool ac_can_see(P_char sub, P_char obj, bool check_z)
             return FALSE;
           }
         }
+/* Removed for the 6/3/2016 wipe
         else
         {
           return FALSE;
         }
+*/
       }
     }
   }
@@ -2822,8 +2844,10 @@ char *PERS(P_char ch, P_char vict, int short_d, bool noansi)
 
   // Handle infravision during dayblind / nightblind.
   // If they have infra, then it's a red shape..
-  if( IS_AFFECTED(vict, AFF_INFRAVISION) && !IS_TRUSTED(vict) )
+  if( IS_AFFECTED(vict, AFF_INFRAVISION) ) // && !IS_TRUSTED(vict) )
   {
+// Changed this for the 6/3/2016 wipe.
+} else {
     if( IS_DAYBLIND(vict) && !CAN_NIGHTPEOPLE_SEE(ch->in_room) )
     {
       bool globe = FALSE;

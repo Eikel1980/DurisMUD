@@ -1244,7 +1244,6 @@ char *CRYPT2( char *passwd, char *name );
                          !IS_TRUSTED(ch) && \
                          !IS_TWILIGHT_ROOM(ch->in_room) && \
                          !IS_AFFECTED4(ch, AFF4_GLOBE_OF_DARKNESS) && \
-                          IS_SUNLIT(ch->in_room) && \
                           has_innate(ch, INNATE_DAYBLIND))
 
 #define DISALLOW_GROUPED 1
