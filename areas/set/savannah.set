@@ -2,8 +2,8 @@ alias er edit room
 alias ee edit room
 alias aa load o 138545;get sleep
 set MainZoneName savannah
-set lastcommand edit dromis
-set startroom 138584
+set lastcommand d
+set startroom 138516
 set menuprompt &+GYour choice, O mighty Ike? &N
 set objaffect true
 set IsMapZone true
