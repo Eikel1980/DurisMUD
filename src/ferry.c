@@ -128,14 +128,18 @@ void Ferry::init() {
 }
 
 // do an action to all player characters on board the ferry
-void Ferry::act_to_all_on_board(const char* msg) {
-	for( vector<int>::iterator it = rooms.begin(); it != rooms.end(); it++ ) {
-		if( *it > 0 && world[*it].people ) {
-			for( P_char ch = world[*it].people; ch; ch = ch->next_in_room ) {				
-				act(msg, FALSE, ch, 0, 0, TO_CHAR);				
+void Ferry::act_to_all_on_board(const char* msg)
+{
+	for( vector<int>::iterator it = rooms.begin(); it != rooms.end(); it++ )
+  {
+		if( *it > 0 && world[*it].people )
+    {
+			for( P_char ch = world[*it].people; ch; ch = ch->next_in_room )
+      {
+				act(msg, FALSE, ch, 0, 0, TO_CHAR);
 			}
 		}
-	}	
+	}
 }
 
 // determine whether or not a room is on board this ferry
@@ -159,22 +163,47 @@ int Ferry::num_chars_on_board() {
 	return(char_count);
 }
 
+void Ferry::everyone_look_out_ferry()
+{
+  P_char passengers;
+
+  // For each room on the ferry
+	for( vector<int>::iterator rroom = rooms.begin(); rroom != rooms.end(); rroom++ )
+  {
+		if( (*rroom > 0) && (( passengers = world[*rroom].people ) != NULL) )
+    {
+      // For each person in the room
+			while( passengers != NULL )
+      {
+        if( IS_SET(passengers->specials.act2, PLR2_SHIPMAP) )
+  				new_look( passengers, 0, CMD_LOOKOUT, obj->loc.room );
+        passengers = passengers->next_in_room;
+			}
+		}
+	}
+}
+
 // this function is called every second; determine which state the ferry is in and react accordingly
-void Ferry::activity() {	
-	switch( cur_state ) {
+void Ferry::activity()
+{
+	switch( cur_state )
+  {
 		case FRY_STATE_DISABLED:
 			return;
 			break;
-			
+
 		case FRY_STATE_WAITING:
 			state_timer--;
-			
-			if( state_timer == depart_notice_time ) {
+
+			if( state_timer == depart_notice_time )
+      {
 				sprintf(buffer, "A bell rings, announcing final boarding call for %s\r\nA strange voice announces, 'All aboard! Now departing for %s.'&n\r\n", name.c_str(), cur_dest_name() );
 				act_to_all_on_board(buffer);
 				send_to_room( buffer, cur_room() );
-			
-			} else if( state_timer <= 0 ) {
+
+			}
+      else if( state_timer <= 0 )
+      {
 				sprintf(buffer, "The %s departs for %s&n.\r\n", name.c_str(), cur_dest_name() );
 				act_to_all_on_board(buffer);
 				send_to_room(buffer, cur_room() );
@@ -182,23 +211,25 @@ void Ferry::activity() {
 				cur_state = FRY_STATE_UNDERWAY;
 				state_timer = speed;
 			}
-		
 			break;
-						
+
 		case FRY_STATE_UNDERWAY:
 			state_timer--;
-			
+
 			ticket_control();
-			
-			if( state_timer <= 0 ) {
+
+			if( state_timer <= 0 )
+      {
 				move();
 				state_timer = speed;
 			}
-			
-			if( cur_room() == cur_dest_room() ) {
+
+			if( cur_room() == cur_dest_room() )
+      {
 				int next_route_leg = (cur_route_leg+1) % route.size();
-				
-				if( route[next_route_leg].stop_here ) {
+
+				if( route[next_route_leg].stop_here )
+        {
 					// we've reached one of our stops
 					sprintf(buffer, "A shrill horn blows, alerting passengers to disembark.\r\nA strange voice announces, 'Now arrived at %s.'&n\r\n", cur_dest_name() );
 					act_to_all_on_board(buffer);
@@ -207,14 +238,14 @@ void Ferry::activity() {
 					cur_state = FRY_STATE_WAITING;
 					state_timer = wait_time;
 					passenger_list.clear();
-				}				
+				}
 
 				cur_route_leg = next_route_leg;
 				cur_route_leg_step = 0;
 
 			}
 			break;
-		
+
 		default:
 			// error, reset to disabled
 			debug("%s got into invalid state.", name.c_str() );
@@ -222,7 +253,6 @@ void Ferry::activity() {
 			state_timer = 0;
 			panic();
 	}
-	
 }
 
 void Ferry::ticket_control() {	
@@ -282,7 +312,8 @@ void Ferry::add_to_passenger_list(P_char p) {
 	passenger_list.push_back(GET_PID(p));
 }
 
-void Ferry::move() {
+void Ferry::move()
+{
 	int dummy;
 
 	if( !obj || !obj->loc.room || !world ) {
@@ -300,25 +331,30 @@ void Ferry::move() {
 
 	int next_step = route[cur_route_leg].path[cur_route_leg_step];
 	cur_route_leg_step++;
-		
+
 	if( next_step >= 0 && next_step < NUM_EXITS ) {
 		int to_room = world[obj->loc.room].dir_option[next_step]->to_room;
-		
-		if( !to_room ) {
+
+		if( !to_room )
+    {
 			logit(LOG_DEBUG, "ferry %s wants to move but to_room doesn't exist!", name.c_str() );
 			panic();
 			return;
 		}
-		
+
 		sprintf(buffer, "$p sails to %s.", dirs2[next_step]);
 		act(buffer, FALSE, 0, obj, 0, TO_ROOM);
 		obj_from_room(obj);
-		
+
 		obj_to_room(obj,to_room);
 		sprintf(buffer, "$p sails in from %s.", dirs2[rev_dir[next_step]]);
 		act(buffer, FALSE, 0, obj, 0, TO_ROOM);
-		
-	} else {
+
+    everyone_look_out_ferry();
+
+	}
+  else
+  {
 		// ferry tried to go invalid direction
 		logit(LOG_DEBUG, "ferry %s wants to move but exit is invalid.", name.c_str() );
 		panic();

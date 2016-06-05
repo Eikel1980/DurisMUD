@@ -209,16 +209,21 @@ Ferry* get_ferry_from_obj(int obj_num) {
 	return(NULL);	
 }
 
-int ferry_room_proc(int room_num, P_char ch, int cmd, char *arg) {
-	if ( (cmd != CMD_LOOK) && (cmd != CMD_DISEMBARK) ) return (FALSE);
+int ferry_room_proc(int room_num, P_char ch, int cmd, char *arg)
+{
+	if( (cmd != CMD_LOOK) && (cmd != CMD_DISEMBARK) )
+    return FALSE;
 
 	Ferry* ferry = get_ferry_from_room(room_num);
-	
-	if( !ferry ) return(FALSE);
-	
-	if (cmd == CMD_LOOK) {
-		if( !arg || !(*arg) || str_cmp(arg, " out") ) return FALSE;
-		
+
+	if( !ferry )
+    return FALSE;
+
+	if (cmd == CMD_LOOK)
+  {
+		if( !arg || !(*arg) || str_cmp(arg, " out") )
+      return FALSE;
+
 		// i think this is a hack-y way to do this, but following
 		// foo's lead from newships. this basically transfers the
 		// player temporarily to the outside room which triggers

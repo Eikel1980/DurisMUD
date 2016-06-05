@@ -64,49 +64,50 @@ class Ferry {
   public:
     Ferry();
 	Ferry(int);
-	
+
 	int cur_room() const {
 		if( !obj ) return 0;
 		return obj->loc.room;
 	}
-	
+
 	int cur_dest_room() const {
 		if( route.empty() ) return 0;
 		return route[(cur_route_leg+1)%route.size()].dest_room;
 	}
-	
+
 	const char* cur_dest_name() {
 		if( route.empty() ) return '\0';
-		
+
 		// hack to find the next route leg that is an actual stop
-		int i = (cur_route_leg+1)%route.size();		
+		int i = (cur_route_leg+1)%route.size();
 		for( ; !route[i].stop_here && i != cur_route_leg; i = (i+1)%route.size() ) ;
-					
+
 		return route[i].dest_name.c_str();
 	}
-	
+
 	// add a stop on the route, with name
 	void add_stop(int room_num, const char* stop_name) {
 		route.push_back(RouteLeg(room_num, stop_name));
 	}
-	
+
 	// add a "waypoint" on the route, without name - the ferry won't stop
 	void add_stop(int room_num) {
-		route.push_back(RouteLeg(room_num));		
+		route.push_back(RouteLeg(room_num));
 	}
-	
+
 	void init();
-	
+
 	// determine whether or not a room is on board the ferry
 	bool room_num_on_board(int room_num);
-	
+
 	int num_chars_on_board();
 
 	void act_to_all_on_board(const char* msg);
+  void everyone_look_out_ferry();
 
 	bool on_passenger_list(P_char p);
 	void add_to_passenger_list(P_char p);
-	
+
 	void activity();
 	void move();
 	void ticket_control();
@@ -115,15 +116,15 @@ class Ferry {
 	int eta(int route_stop);
 
 	void panic();
-	
+
 	// variables
 	string name;
 	int id;
 	int ticket_price;
-		
+
 	int obj_num;
 	P_obj obj;
-	
+
 	int ticket_obj_num;
 
  	int boarding_room_num;
@@ -137,10 +138,10 @@ class Ferry {
 	int cur_route_leg;
 	int cur_route_leg_step;
 	vector<RouteLeg> route;
-	
+
 	int cur_state;
 	int state_timer;
-	
+
 	list<int> passenger_list;
 };
 
