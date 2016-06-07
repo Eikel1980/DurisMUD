@@ -4235,7 +4235,9 @@ bool violating_one_hour_rule( P_desc d )
   if( racewar_side == RACEWAR_NONE )
     return FALSE;
   // If they're on the same racewar side.
-  else if( racewar_side == GET_RACEWAR(d->character) )
+  if( racewar_side == GET_RACEWAR(d->character) )
+    return FALSE;
+  if( timer <= 0 )
     return FALSE;
 
   wizlog( AVATAR, "%s tried to break the one-hour rule.", GET_NAME(d->character) );
