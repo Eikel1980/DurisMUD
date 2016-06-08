@@ -4945,53 +4945,35 @@ int check_shields(P_char ch, P_char victim, int dam, int flags)
     else
     {
       dam = MAX(1, (int) (dam * soulshielddam));
-      result =
-        spell_damage(victim, ch, dam,
-            SPLDAM_HOLY, sflags | SPLDAM_GRSPIRIT, &soulshield);
+      result = spell_damage(victim, ch, dam, SPLDAM_HOLY, sflags | SPLDAM_GRSPIRIT, &soulshield);
     }
   }
-  if(result == DAM_NONEDEAD &&
-      IS_AFFECTED2(victim, AFF2_FIRESHIELD))
+  if( result == DAM_NONEDEAD && IS_AFFECTED2(victim, AFF2_FIRESHIELD) )
   {
-    result =
-      spell_damage(victim, ch, (int) (dam * fshield),
-          SPLDAM_FIRE, sflags, &fireshield);
+    result = spell_damage(victim, ch, (int) (dam * fshield), SPLDAM_FIRE, sflags, &fireshield);
   }
-  else if(result == DAM_NONEDEAD &&
-      IS_AFFECTED3(victim, AFF3_COLDSHIELD))
+  else if(result == DAM_NONEDEAD && IS_AFFECTED3(victim, AFF3_COLDSHIELD))
   {
-    result =
-      spell_damage(victim, ch, (int) (dam * cshield),
-          SPLDAM_COLD, sflags, &coldshield);
+    result = spell_damage(victim, ch, (int) (dam * cshield), SPLDAM_COLD, sflags, &coldshield);
   }
-  else if(result == DAM_NONEDEAD &&
-      IS_AFFECTED3(victim, AFF3_LIGHTNINGSHIELD))
+  else if(result == DAM_NONEDEAD && IS_AFFECTED3(victim, AFF3_LIGHTNINGSHIELD))
   {
-    result =
-      spell_damage(victim, ch, (int) (dam * lshield),
-          SPLDAM_LIGHTNING, sflags, &lightningshield);
+    result = spell_damage(victim, ch, (int) (dam * lshield), SPLDAM_LIGHTNING, sflags, &lightningshield);
   }
-  else if(result == DAM_NONEDEAD &&
-      IS_AFFECTED5(victim, AFF5_THORNSKIN))
+  else if( result == DAM_NONEDEAD && IS_AFFECTED5(victim, AFF5_THORNSKIN) )
   {
     result = raw_damage(victim, ch, 2, RAWDAM_DEFAULT | flags, &thornskin);
   }
 
-  if(result == DAM_NONEDEAD &&
-      has_innate(victim, INNATE_ACID_BLOOD) &&
-      dam > 5 &&
-      !number(0, 19) &&
-      !(flags & PHSDAM_TOUCH))
+  if( (result == DAM_NONEDEAD) && has_innate(victim, INNATE_ACID_BLOOD) && (dam > ( (flags & PHSDAM_TOUCH) ? 9 : 5 ))
+    && !number(0, 9) )
   {
-    act
-      ("&+LBlack blood &+wspurts from your wound as&n $N's &+wweapon &+wrips your &+rflesh.&n",
-       FALSE, victim, 0, ch, TO_CHAR);
-    act
-      ("&+LBlack blood &+wspurts from&n $n &+was your weapon &+wrips $s &+rflesh.&n",
-       FALSE, victim, 0, ch, TO_VICT);
-    act
-      ("&+LBlack blood &+wspurts from $n &+was&n $N's &+Lweapon &+wrips $s &+rflesh.&n",
-       FALSE, victim, 0, ch, TO_NOTVICT);
+    act("&+LBlack blood &+wspurts from your wound as&n $N's &+wweapon &+wrips your &+rflesh.&n",
+      FALSE, victim, 0, ch, TO_CHAR);
+    act("&+LBlack blood &+wspurts from&n $n &+was your weapon &+wrips $s &+rflesh.&n",
+      FALSE, victim, 0, ch, TO_VICT);
+    act("&+LBlack blood &+wspurts from $n &+was&n $N's &+Lweapon &+wrips $s &+rflesh.&n",
+      FALSE, victim, 0, ch, TO_NOTVICT);
     if ((15 + GET_C_AGI(ch) / 6) > number(0, 100))
     {
       act
@@ -7628,7 +7610,7 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
 
   blade_skill = GET_CLASS(ch, CLASS_AVENGER) ? SKILL_HOLY_BLADE : SKILL_TAINTED_BLADE;
   if( notch_skill(ch, blade_skill, get_property("skill.notch.offensive.auto", 4))
-    ||(GET_CHAR_SKILL(ch, blade_skill) > number(1, 100) && !number(0, 40)) )
+    || (GET_CHAR_SKILL(ch, blade_skill) >= number(1, 100) && !number(0, 19)) )
   {
     if( tainted_blade(ch, victim) )
     {
