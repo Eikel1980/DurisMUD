@@ -379,6 +379,8 @@ int list_hulls( P_char ch, P_ship ship, int owned )
 
 int summon_ship( P_char ch, P_ship ship, bool time_only )
 {
+  char buf[32];
+
   if( ship->location == ch->in_room )
   {
     send_to_char("&+gYour ship is already here!&n\n", ch);
@@ -387,7 +389,8 @@ int summon_ship( P_char ch, P_ship ship, bool time_only )
   if( IS_SET(ship->flags, SINKING) )
   {
     send_to_char("&+gWe can't summon your ship, mate, as it's sinking.&n\n", ch);
-    command_interpreter(ch, "beer me" );
+    sprintf(buf, "beer me" );
+    command_interpreter(ch, buf );
     return TRUE;
   }
   if( ship->timer[T_BSTATION] > 0 && !IS_TRUSTED(ch) )
@@ -1945,6 +1948,7 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
   int cost, buildtime, hull_type, oldhull;
   struct affected_type *paf = get_spell_from_char(ch, AIP_CARGOCOUNT);
   bool quickbuild = (paf && paf->modifier >= 10000) ? TRUE : FALSE;
+  char buf[32];
 
   hull_type = atoi(arg1) - 1;
   // Note: hull_type MAXSHIPCLASS - 1 is a NPC - Only ship class.
@@ -2080,13 +2084,15 @@ int buy_hull(P_char ch, P_ship ship, int owned, char* arg1, char* arg2)
     if( !is_valid_ansi_with_msg(ch, arg2, FALSE) )
     {
       send_to_char ("&+gInvalid ANSI name!&n\n", ch); 
-      command_interpreter(ch, "spank me" );
+      sprintf( buf, "spank me" );
+      command_interpreter( ch, buf );
       return TRUE;
     }
     if( sub_string_set(strip_ansi(arg2).c_str(), rude_ass) )
     {
       send_to_char("&+gName must not contain rude terms.&n\n", ch);
-      command_interpreter(ch, "whap me" );
+      sprintf( buf, "whap me" );
+      command_interpreter( ch, buf );
       return TRUE;
     }
     if( (int) strlen(strip_ansi(arg2).c_str()) > 20 )
