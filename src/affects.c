@@ -817,6 +817,8 @@ void apply_affs(P_char ch, int mode)
     SET_BIT(ch->specials.affected_by4, AFF4_NOFEAR);
   if (has_innate(ch, INNATE_EYELESS))
     SET_BIT(ch->specials.affected_by5, AFF5_NOBLIND);
+  if( has_innate(ch, INNATE_INVISIBILITY) )
+    SET_BIT(ch->specials.affected_by, AFF_INVISIBLE);
 
   if( IS_AFFECTED5(ch, AFF5_THORNSKIN) )
   {
