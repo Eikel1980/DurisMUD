@@ -3403,7 +3403,7 @@ void do_drag(P_char ch, char *argument, int cmd)
     send_to_char("Drag what/who which direction?\n", ch);
     return;
   }
-  
+
   if(ch->specials.z_cord > 0)
   {
     send_to_char("You can't drag something when you're flying.\n", ch);
@@ -3420,7 +3420,7 @@ void do_drag(P_char ch, char *argument, int cmd)
 
   one_argument(Gbuf2, Gbuf4);
   dragCommand = old_search_block(Gbuf4, 0, strlen(Gbuf4), command, 2);
-  
+
   if(!IS_TRUSTED(ch))
   {
     switch (dragCommand)
@@ -3444,6 +3444,8 @@ void do_drag(P_char ch, char *argument, int cmd)
     case CMD_SE:
     case CMD_ENTER:
     case CMD_DISEMBARK:
+    case CMD_STARE:
+    case CMD_STOMP:
       break;
     default:
       send_to_char("You cannot drag anything that way.\n", ch);
