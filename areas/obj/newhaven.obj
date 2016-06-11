@@ -1,208 +1,690 @@
 #35200
-elegant gate~
-&+WA elegant gate&N~
-&+WAn elegant gate hangs here blocking the right side entrance.~
+sign~
+a &+Wsign&n~
+&+wA &+Wsign&+w hangs from the &+Wlimestone&+w wall.&n~
 ~
-25 15 3 0 7 0 1024 0 0 0 0
-35203 7 -1 0 0 0 0 0
+12 6 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
 0 0 100
+E
+sign sheet paper~
+&+W _________________________________
+&+W|                                 |
+&+W| &+LFor a &+wVeldian &+MCo&+ml&+Ml&+mar&+L, simply    &+W|
+&+W| &+Lbring me a &+mFrayed Collar&+L from   &+W|
+&+w> &+gKhonami &+GKhan&+L, the &+rheart&+L of &+yMixt &+W|
+&+W| &+Lfrom the &+CTwin &+CTowers&+L, and &+W100   &+W|
+&+W| &+Wplatinum &+Lcoins.                 &+W|
+&+w)                                 &+w<
+&+W|               &+L_                 &+W|
+&+W|               &+L=.|/|)7(;^|2uS    &+W|
+&+w>    &+M____         &+RE&+r. &+RVulgarus     &+W|
+&+W|   &+m|    &+M|                        &+w(
+&+w>   &+m|    &+M|                        &+W|
+&+W|___&+m|    &+M|&+W________&+w/\&+W___________&+w/\&+W_|
+    &+m| &+M/&+m\ &+M|
+    &+m|&+M/  &+m\&+M|&n
+~
 #35201
 painting library~
-a large painting~
-A large painting depicting a library hangs here.~
+a large &+mpainting&n~
+&+wA large &+mpainting&+w depicting a &+Llibrary&+w hangs here.&n~
 ~
-25 15 3 0 7 0 1024 0 0 0 0
+25 3 3 0 13 0 1024 0 0 268435455 0
 35230 320 -1 0 0 0 0 0
-0 0 100
-#35202
-rusted gate~
-&+ra rusted gate&N~
-&+rA rusting gate hangs here blocking the left side of the entrance.&n~
+23 0 100
+E
+painting library~
+&+w   This painting is of a large &+Llibrary&+w filled with &+ystack&+w upon &+ystack&+w of &+cbooks
+&+wand other educational paraphernalia.  A stern &+Llibrarian&+w stares out of the
+&+mpainting&+w's center as if reading every guilt upon your brow.  Despite this,
+&+wyou have the strongest urge to reach out and &+Mtouch&+w the &+mpainting&+w.&n
 ~
-25 15 3 0 7 0 1024 0 0 0 0
+#35202
+rift tiny tear reality~
+a &+Ltear&n in &+rre&+Ra&+rl&+Rit&+ry&n~
+&+wA tiny &+Lrift&+w pulses in and out of &+Rr&+rea&+Rl&+rit&+Ry&+w.&n~
+~
+25 1 3 0 15 0 0 0 0 0 0
 35251 7 -1 0 0 0 0 0
-0 0 100
+666 0 100
+E
+rift tiny tear reality~
+&+w   A tiny &+Ltear&+w in &+rre&+Ra&+rl&+Rit&+ry&+w shimmers in and out of existence here.  The smell of
+&+wozone permeates the entire area, a side-effect of the &+men&+Me&+mr&+Mgy&+w expended by the
+&+Lrift&+w in its effort to remain stable.&n
+~
 #35203
 painting library~
-&+Ga large painting&N~
-&+LA large painting &+Gdepicting&+Y a library.&N~
+a large &+Gpainting&n~
+&+wA large &+Gpainting &+wdepicting a &+Llibrary&+w.&n~
 ~
-25 15 3 0 7 0 1024 0 0 0 0
+25 3 3 0 13 0 1024 0 0 268435455 0
 35280 320 -1 0 0 0 0 0
-0 0 100
+23 0 100
+E
+painting library~
+&+w   This painting is of a large &+Llibrary&+w filled with &+ystack&+w upon &+ystack&+w of &+cbooks
+&+wand other educational paraphernalia.  A stern &+Llibrarian&+w stares out of the
+&+Gpainting&+w's center as if reading every guilt upon your brow.  Despite this,
+&+wyou have the strongest urge to reach out and &+gtouch&+w the &+Gpainting&+w.&n
+~
 #35204
-glaive silver glimmering~
-&+Wa glimmering&+c silver&n &+Lglaive&N~
-&+LA glaive lies disgarded here.&N~
+glaive silver glimmering buried~
+a glimmering &+csilver &+Lglaive&n~
+&+cSilver&+w from a half-buried &+Lglaive&+w can be seen, here.&n~
 ~
 5 15 3 2 12 0 4195328 8193 67 87572507 0
 13 4 5 3 0 0 0 0
 15 15000 100
+E
+glaive silver glimmering~
+&+w   A &+Gmaple&+y stave&+w of seven-feet is capped in a finely-wrought &+csilver&+w blade.  The
+&+cglaive&+w is an excellent weapon for thrusting attacks and keeping opponents just
+&+wbeyond arms reach.&n
+~
 A
 18 1
 A
 19 1
 #35205
-shield tower skull spiked~
-&+La tower shield emblazoned with an &+Welven skull&N~
-&+wA simple shield lies in the dirt here.~
+shield tower elven skull spiked~
+a &+Ltower shield&n decorated with an &+celven &+Wskull&n~
+&+wA &+Ltower shield&+w lies in the &+ydirt&+w here.&n~
 ~
 37 15 3 0 7 0 201393152 513 66 121323579 0
-1 3 4 115 1 0 0 0
+1 3 4 115 2 1 0 0
 35 35000 100
 E
-shield tower skull spiked~
-&+LThis shield offers great protection against physical blows.  The shield is pitch black in color
-&+Lwhile a &+Wsheer white elven skull&+L has been carefully painted onto the face of the shield and
-&+Lsealed by magic to prevent any wear and tear on the paint.
+shield tower elven skull spiked~
+&+w   This &+Lshield&+w offers great protection against physical blows.  The &+Lshield&+w is
+&+wpitch in color, the &+Csteel&+w having been colored during the forging process.  An
+&+celven &+Wskull&+w has been secured to the &+Ltower shield&+w by &+yleather straps&+w in an gorey
+&+wattempt to instill fear in one's enemies.  &+LSpikes&+w have been secured to the
+&+Lshield&+w in further attempt to strengthen it.&n
 ~
-A
-10 25
 #35206
 ring silver black sapphire~
-&+ca silver ring encrusted with&+L a black sapphire&N~
-&+LA black sapphire ring is here.~
+a &+csilver ring&+w encrusted with a &+Lblack sapphire&n~
+&+wA &+Lblack sapphire&+c ring&+w lies in the &+ydirt&+w.&n~
 ~
 11 15 3 0 7 0 234881024 3 64 0 0
 0 0 0 0 0 0 0 0
 1 26000 100
 E
 ring silver black sapphire~
-&+wThis ring is exquisite in every detail.  A single gnome cut &+Lblack sapphire&N
-&+whas been encrusted into the &+csilver band&+w.  The ring glows with a mystical&N
-&+wlight as wisps of &+Ldark energy wri&+wthe about the band of the ring.&N
+&+w   This &+cring&+w is exquisite in every detail.  A single &+Rgnome&+w-cut &+Lblack sapphire
+&+whas been encrusted into the &+csilver band&+w.  The &+cring&+w glows with a mystical light
+&+was wisps of dark energy writhe about its &+cband&+w.&n
 ~
 A
 37 1
 A
 13 15
 #35207
-chainmail suit hammer crest~
-&+Can elaborate chainmail suit &+yemblazoned with a hammer~
-&+CA pile of supple chainmail is here.~
+chainmail suit hammer pile~
+an elaborate &+Cch&+ca&+Ci&+cnm&+Ca&+ci&+Cl&+w suit&+L emblazoned with a &+whammer&n~
+&+wA &+cpile&+w of supple &+cc&+Cha&+ci&+Cn&+cma&+Ci&+cl&+w is here.&n~
 ~
 9 15 3 0 7 0 134217728 9 66 4165209988 0
 26 0 0 3 0 0 0 0
 4 45000 100
 E
-chainmail elven hammer crest~
-&+CThis set of chainmail has been carefully forged and enchanted by a master
-&+Cblacksmith.  The armor is perfect in every detail.  Each link seems to glow
-&+Cwith it own magical power.
+chainmail suit hammer pile~
+&+w   This set of &+Cch&+ca&+Ci&+cnm&+Ca&+ci&+Cl&+w has been carefully &+Lforged&+w and enchanted by a master
+&+Lblacksmith&+w.  The &+carmor&+w is perfect in every detail.  Each &+Clink&+w seems to glow
+&+wwith it own magical power.&n
 ~
 A
 18 1
 A
 19 2
 #35208
-longsword gleaming shiny sword~
-&+Wa gleaming longsword&N~
-&+WA shiney slab of metal lies here.~
+longsword gleaming shiny sword moonshae~
+a gleaming &+clongsword&n~
+&+wA &+csword&+w of &+cMoon&+Cshae &+Lsteel&+w lies abandoned here.&n~
 ~
 5 15 3 0 7 0 67109888 8193 64 96071707 0
 5 3 4 3 0 0 0 0
 4 13000 100
 E
-longsword gleaming shiney~
-&+WThis sword has been forged from the finest steel available on the Moon Shaes.
-&+WThe edge is sharp and keen, while the sword itself is perfectly balanced.
+longsword sword gleaming shiny moonshae~
+&+w   This &+csword&+w has been forged from the finest &+Lsteel&+w available on &+cMoon&+Cshae&+w.  The
+&+wedge is sharp and keen, while the &+csword&+w itself is perfectly balanced.&n
 ~
 A
 18 1
 A
 19 2
 #35209
-morningstar morning-star flaming~
-&+La morning-star en&+Rshroud&+Led in &+Rcrimson flames&N~
-&+RA morningstar burns upon the ground here.~
+morningstar crimson flames flaming~
+a &+Lmorningstar&+w enshrouded in &+Rcrimson &+rflames&n~
+&+wA &+Lmorningstar&+r b&+Ru&+rr&+Rn&+rs&+w upon the &+yground&+w.&n~
 ~
 5 15 3 0 7 0 262144 8193 64 4165210052 0
-7 3 9 6 0 0 0 0
+7 3 7 6 0 0 0 0
 20 780000 100
 E
-morningstar morning-star flame crimson~
-&+RThis morning star glows with a bright crimson hue
-&+Ras flames dance along the entire surface of the
-&+Rweapon.
+morningstar flaming flame crimson~
+&+w   This &+Lmorningstar&+w glows with a bright &+Rcrimson&+w hue as &+rflames&+w dance along the
+&+wentire surface of the &+Lweapon&+w.&
 ~
 A
 18 3
 A
 19 1
 #35210
-shield tower~
-&+Wa tower shield &+rcaked with blood&N~
-&+WA shield lies here.~
+shield tower bloody caked~
+a &+Ltower shield&+w caked with &+Rb&+rl&+Ro&+ro&+Rd&n~
+&+wA &+rbl&+Ro&+ro&+Rdy&+L shield rests in the &+ydirt&+w.&n~
 ~
 37 15 4 0 7 0 0 513 64 4165209924 0
 1 7 5 126 4 1 0 0
-20 10000 100
+35 10000 100
 E
-tower shield blood~
-&+LThis tower shield has been forged from a solid
-&+Lpiece of iron.  It is still caked with &+rsplattered&N
-&+rblood&+L of the last bearers victims.
+tower shield bloody caked~
+&+w   This &+Ltower shield&+w has been forged from a solid piece of &+ciron&+w.  It is still
+&+rcaked&+w with the splattered &+Rb&+rl&+Ro&+ro&+Rd&+w of the last bearer's victims.&n
 ~
 A
 1 4
 A
-10 40
+19 2
 #35211
-suit onyx platemail~
-&+Wa suit of &+Lonyx &+Wplatemail&N~
-&+LA suit of mail lies discarded here.&N~
+suit onyx platemail mail~
+a &+Lsuit&+w of &+Lonyx &+wplatemail&n~
+&+wA &+Lsuit&+w of &+Lmail&+w lies discarded here.&N~
 ~
 9 36 3 0 11 0 2097152 9 64 4165287876 0
 24 0 0 4 1 0 0 0
 40 25000 100
 E
-suit onyx platemail~
-&+WThis suit offers vast protection from physical attacks.
-&+WSmall slivers of &+Lonyx&+W and &+Lbasalt&+W have been magically
-&+Wenchanted to reinforce the steel plates of the armor.
+suit onyx platemail mail~
+&+w   This suit offers vast protection from physical attacks.  Small &+Lslivers&+w of
+&+Lonyx&+w and &+mbasalt&+w have been magically enchanted to reinforce the &+csteel&+w plates of
+&+wthe &+Larmor&+w.&n
 ~
 A
 19 2
 A
 24 -1
 #35212
-circlet white stone~
-&+Ca glowing &+Wwhite stone circlet&N~
-&+CA circlet of &+Wwhite stone glows brightly.&N~
+circlet glowing white stone~
+a &+cgl&+Co&+cw&+Cin&+cg &+Wwhite &+Lstone&+c circlet&n~
+&+wA &+ccirclet&+w of &+Wwhite&+L stone&+w was left in the &+ydirt&+w.&n~
 ~
 9 11 3 0 7 0 98432 17 64 0 0
 10 0 0 3 0 0 0 0
 5 18000 100
+E
+circlet glowing white stone~
+&+w   Sculpted from the &+Wlimestone&+w over which the &+LNewhaven &+cwa&+Ct&+ce&+Crf&+ca&+Cl&+cl&+w makes its way,
+&+wthis &+ccirclet&+w scintillates in any light giving it the appearance of a glow from
+&+wdeep within.&n
+~
 A
 18 1
 A
 13 10
 #35213
 choker sandstone~
-&+Ya sand&+Lstone&+L choker&N~
-&+YA choker of sandstone&N~
+a &+ysandstone&+L choker&n~
+&+wA &+Lchoker&+w of &+ysandstone&+w was abandoned here.&n~
 ~
 9 11 3 0 7 0 1147008 5 64 0 0
 10 0 0 3 0 0 0 0
 5 12000 100
+E
+choker sandstone~
+&+w   This &+Lchoker&+w is comprised of thirty-two &+ysandstone&+w plates bound to a &+yleather
+&+Lstrap&+w which &+cclasps&+w at the rear of the neck.  Each plate has the personal sigil
+&+wof the major and minor pantheon of the &+mNuithavn &+Mcult&+w etched into the &+ysandstone&+w.&n
+~
 A
 20 -2
 A
 24 -2
 #35214
 epee crimson stained blade~
-&+ra crimson stained epee&n~
-&+rA long narrow blade lies here.~
+a &+Rcr&+ri&+Rm&+rso&+Rn&+L-stained &+wepee&n~
+&+wA long narrow &+Lblade&+w lies here.&n~
 ~
-5 15 3 0 7 0 16778496 8193 66 8515584 0
-2 2 7 11 0 0 0 0
-0 23000 100
+5 16 3 0 7 0 16778496 8193 66 8515584 0
+5 5 3 11 0 0 0 0
+1 23000 100
 E
 epee crimson stained tiny~
-&+LThis small epee is very narrow and long as &+rstains of crimson&+L tarnish the
-&+Lblade.  &+mStrange runes&+L have been engraved along the length of the blade.
+&+w   The &+Lblade&+w of this &+Lepee&+w is very narrow and about three-feet in length.  The
+&+chilt&+w has a series of strange &+mrunes&+w engraved upon it, the meaning of which you
+&+ware unable to readily ascertain.  &+rStains&+w of &+Rcr&+ri&+Rm&+rso&+Rn tarnish the weapon, the
+&+wdried remnants of past battles this &+Lsword&+w has seen.&n
 ~
 A
 18 3
 A
 19 2
+#35215
+gate rusting iron~
+a rusting &+cgate&n~
+&+wPieces of a rusted iron &+cgate&+w hang from the &+Lruins&+w of their &+Lframe&+w.&n~
+~
+15 15 4 0 7 0 0 0 0 0 0
+25 0 0 25 0 0 0 0
+666 0 100
+E
+gate rusting iron~
+&+w   This &+cgate&+w has &+yrusted&+w away with the passage of time.  Various &+Lnooks&+w and
+&+Lcrannies&+w look like they might be able to hide something small.&n
+~
+#35216
+sign wooden placard~
+a wooden &+ysign&n~
+&nA &+ysign&n hangs off the northern &+Lbuilding&n.~
+~
+8 6 3 0 8 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+500 100000 100
+E
+sign wooden placard~
+&+W|&+c________&+L==&+c___________________________&+L==&+c______
+&+W|&+c________&+w||&+c___________________________&+w||&+c______|
+&+W|        &+L==                           ==
+&+W|     &+y,--&+w||&+y---------------------------&+w||&+y--.
+&+W|     &+y|  &+L==  &+w.oO --------------- Oo.  &+L==  &+y|
+&+W|     &+y|                                   &+y|
+&+W|     &+y|  &+wNewhaven &+yStables &+L& &+wBlacksmithy   &+y|
+&+W|     &+y|                                   |
+&+W|     &+y`-----------------------------------'
+&+W|&n
+~
+#35217
+sign wooden placard teakwood~
+a &+Gte&+ca&+Gk&+cwo&+Go&+cd &+ysign&n~
+&+wA &+Gte&+ca&+Gk&+cwo&+Go&+cd &+ysign&+w extends from the &+Lbuilding&+w to the north.&n~
+~
+8 6 3 0 8 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+500 100000 100
+E
+sign teakwood wooden placard~
+&+W|&+c________&+L==&+c___________________________&+L==&+c______
+&+W|&+c________&+w||&+c___________________________&+w||&+c______|
+&+W|        &+L==                           ==
+&+W|     &+y,--&+w||&+y---------------------------&+w||&+y--.
+&+W|     &+y|  &+L==  &+w.oO --------------- Oo.  &+L==  &+y|
+&+W|     &+y|                                   &+y|
+&+W|     &+y|  &+LThe &+yInn&+L of the &+REternal &+rPhoenix   &+y|
+&+W|     &+y|                                   |
+&+W|     &+y`-----------------------------------'
+&+W|&n
+~
+#35218
+registry log ledger~
+the &+yregistry&n~
+&+wA leather-bound &+yregistry&+w lies upon the &+ycounter&+w.&n~
+~
+12 28 3 0 7 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+23 0 100
+E
+registry log ledger~
+&+y _________________________________________________________
+&+y| &+W,-------------------------.&+y|&+W,-------------------------. &+y|
+&+y|&+w|&+W|  &+LThe &+rEternal &+RPhoenix     &+w|     &+LRegistration Log     &+W|&+w|&+y|
+&+y|&+w|&+W|  &+L-------------------     &+w|     &+L----------------     &+W|&+w|&+y|
+&+y|&+w|&+W|  &+LDrevarr                 &+w|  &+LLohrr                   &+W|&+w|&+y|
+&+y|&+w|&+W|  &+LIlshadrial              &+w|  &+LTorgal                  &+W|&+w|&+y|
+&+y|&+w|&+W|  &+LSniktiorg Blackhaven    &+w|  &+LTavril                  &+W|&+w|&+y|
+&+y|&+w|&+W|                          &+w|  &+LIo                      &+W|&+w|&+y|
+&+y|&+w|&+W|  &+R* &+LZone Designers and    &+w|  &+LHank Moody              &+W|&+w|&+y|
+&+y|&+w|&+W|    &+LSpecial Guests of     &+w|  &+LGiordano Bruno          &+W|&+w|&+y|
+&+y|&+w|&+W|    &+Lthe House.            &+w|  &+LHiyao Miyazaki          &+W|&+w|&+y|
+&+y|&+w|&+W|                          &+w|  &+LAleister Crowley        &+W|&+w|&+y|
+&+y|&+w|&+W|__________________________&+w|&+W__________________________&+W|&+w|&+y|
+&+y|_________________________________________________________|&n
+~
+#35219
+sign wooden placard~
+a wooden &+ysign&n~
+&nA &+ysign&n sticks off the &+Lbuilding&n to the south.~
+~
+8 6 3 0 8 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+500 100000 100
+E
+sign wooden placard~
+&+W|&+c________&+L==&+c___________________________&+L==&+c______
+&+W|&+c________&+w||&+c___________________________&+w||&+c______|
+&+W|        &+L==                           ==
+&+W|     &+y,--&+w||&+y---------------------------&+w||&+y--.
+&+W|     &+y|  &+L==  &+w.oO --------------- Oo.  &+L==  &+y|
+&+W|     &+y|                                   &+y|
+&+W|     &+y|   &+wNewhaven &+yBakery &+L& &+cPastry &+CShop   &+y|
+&+W|     &+y|                                   |
+&+W|     &+y`-----------------------------------'
+&+W|&n
+~
+#35220
+water pool collection~
+a collection &+cp&+Co&+co&+Cl&n~
+&+LDrink from this &+Cp&+co&+Co&+cl&+L to refresh.&n~
+~
+17 40 3 0 7 0 2 0 0 0 0
+-1 -1 17 0 0 0 0 0
+0 0 100
+E
+water pool collection~
+&+w   This &+cpool&+w collects at the base of the &+cw&+Cat&+ce&+Cr&+cfa&+Cl&+cl&+w, its pristine &+cwaters&+w broken
+&+wonly by the &+Wf&+wr&+Wo&+wt&+Wh&+w created by the forceful mixture of the silent and raging
+&+Cwa&+ct&+Ce&+crs&+w.  The &+cpool&+w looks safe to drink.&n
+~
+#35221
+waterfall cave shadow~
+a &+Cw&+cat&+Ce&+cr&+Cfa&+cl&+Cl&n~
+&+wA &+cwa&+Ct&+ce&+Crf&+ca&+Cl&+cl&+w cascades into a &+cpool&+w to the west, here.&n~
+~
+25 40 3 0 7 0 0 0 0 0 0
+35201 7 -1 0 0 0 0 0
+0 0 100
+E
+waterfall cave shadow~
+&+w   Cascading down the &+Wlimestone&+w to the west, this &+Cw&+cat&+Ce&+cr&+Cfa&+cl&+Cl&+w collects in a small
+&+cp&+Co&+cn&+Cd&+w off to the west of &+LNewhaven Way&+w.  Small &+yanimals&+w gather here from time to
+&+wtime to bathe and drink from the clear &+cwater&+w, furiously hoping to avoid larger
+&+yanimals&+w that would make them meals.  A &+Lshadow&+w behind the &+cwa&+Ct&+ce&+Crf&+ca&+Cl&+cl&+w appears
+&+wto indicate a &+ycave&+w lies just beyond it.&n
+~
+#35222
+sign worn brass placard~
+a worn brass &+ysign&n~
+&nA worn &+ysign&n extends from the &+Lbuilding&n to the west.~
+~
+8 6 3 0 8 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+500 100000 100
+E
+sign worn brass placard~
+&+W|&+c________&+L==&+c___________________________&+L==&+c______
+&+W|&+c________&+w||&+c___________________________&+w||&+c______|
+&+W|        &+L==                           ==
+&+W|     &+y,--&+w||&+y---------------------------&+w||&+y--.
+&+W|     &+y|  &+L==  &+w.oO --------------- Oo.  &+L==  &+y|
+&+W|     &+y|                                   &+y|
+&+W|     &+y|    &+LThe &+wNewhaven &+cGeneral &+CStore     &+y|
+&+W|     &+y|                                   |
+&+W|     &+y`-----------------------------------'
+&+W|&n
+~
+#35223
+sign wooden placard sequoia~
+a &+Gs&+yeq&+Gu&+yo&+Gia &+ysign&n~
+&+wA &+Gs&+yeq&+Gu&+yo&+Gia &+ysign&+w extends from the &+Lbuilding&+w to the north.&n~
+~
+8 6 3 0 8 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+500 100000 100
+E
+sign sequoia wooden placard~
+&+W|&+c________&+L==&+c___________________________&+L==&+c______
+&+W|&+c________&+w||&+c___________________________&+w||&+c______|
+&+W|        &+L==                           ==
+&+W|     &+y,--&+w||&+y---------------------------&+w||&+y--.
+&+W|     &+y|  &+L==  &+w.oO --------------- Oo.  &+L==  &+y|
+&+W|     &+y|                                   &+y|
+&+W|     &+y| &+LThe &+yInn&+L of the &+REternal &+rSuffering  &+y|
+&+W|     &+y|                                   |
+&+W|     &+y`-----------------------------------'
+&+W|&n
+~
+#35224
+collar veldian excellent~
+a &+LVeldian &+Mco&+ml&+Ml&+mar&n~
+&+wA &+Mco&+ml&+Ml&+mar&+w of excellent crafstmanship lies on the &+yground&+w.&n~
+~
+9 14 3 0 14 0 67174401 5 64 0 0
+10 0 0 4 1 0 0 0
+0 0 100 67108896 0 0 0
+E
+collar veldian excellent~
+&+w   Crafted by &+RE&+r. &+RVulgaris&+w from the &+LNewhaven &+gen&+Gv&+gi&+Gro&+gn&+Gs&+w, this &+Mco&+ml&+Ml&+mar&+w is comprised
+&+wof a dark purple &+mspider-&+Msilk&+w woven and used in composite with a dyed &+yleather
+&+Lstrap&+w.  Enchanted using ancient magics, this &+mco&+Ml&+ml&+Mar& is rumored to improve its
+&+wwearer's ability to travel by some degree.&n
+~
+A
+13 15
+A
+14 25
+#35225
+key black~
+a &+Lblack key&n~
+&+wA &+Lkey&+w lies deserted in the &+ydirt&+w.&n~
+~
+18 15 3 0 7 0 8388616 8404993 0 0 0
+0 69 0 0 0 0 0 0
+0 0 100
+E
+key black~
+&+w   This &+Lkey&+w appears old and hardly used.  The word &+W'&+LCELL&+W'&+w has been etched into its head.&n
+~
+#35226
+corpse dessicated female mummy mummified~
+a &+Wmu&+wm&+Wm&+wif&+Wi&+we&+Wd &+cfemale&n~
+&+wA dessicated &+Lcorpse&+w is locked in the fetal position.&n~
+~
+12 2 3 0 7 0 8392712 4194305 32768 0 0
+0 0 0 0 0 0 0 0
+90 0 100
+E
+corpse dessicated female mummy mummified~
+&+w   This poor &+cwoman&+w has been quite unnaturally dessicated by being buried head-
+&+wfirst in a vat of &+Wnatrium&+w.  Every ounce of &+cm&+Coi&+cs&+Ct&+cur&+Ce&+w has been drained from the
+&+wcells of her body, her skin pulling so taut that her face is locked in a rictus
+&+wof pure agony.&n
+~
+#35227
+lizard tail~
+a &+Rli&+mz&+Ra&+mrd&+L tail&n~
+&+wA &+Rli&+mz&+Ra&+mrd&+w has lost its &+Ltail&+w here.&n~
+~
+9 2 3 0 15 0 9515016 4097 32768 0 0
+10 0 0 3 0 0 0 0
+2 0 100
+E
+lizard tail~
+&+w   Dislodged during a fight or while the &+Rc&+mre&+Ra&+mt&+Rur&+me&+w was fleeing a &+Lpredator&+w, this
+&+Ltail&+w still contains bits of its &+Wbones&+w and &+mte&+Mn&+md&+Mon&+ms&+w in place.  It is this fact
+&+walone that allows for the &+Rli&+mz&+Ra&+mrd&+w's &+Ltail&+w to be worn.&n
+~
+A
+54 2
+T
+2 7 1 5
+#35228
+badge scale balance~
+a &+Cscale&+L and &+cbalance&n~
+&+wA small &+Lbadge&+w made of a &+Cscale&+w and &+cbalance&+w lies here.&n~
+~
+11 23 3 0 10 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+E
+badge scale balance~
+&+w   Crafted from one of &+gShadowclave&+w's &+LDark Circles&+w, this &+cbadge&+w has been treated
+&+wwith ancient techniques to improve its overall effectiveness.  There is a motto
+&+wcarved across the &+Cbeam&+w of the &+cbalance&+w: &+LSniktiorg Invictus!&n
+~
+A
+4 5
+A
+3 5
+#35229
+lizard tail bracer~
+a &+Rli&+mz&+Ra&+mrd&+L tail&+w bracer&n~
+&+wA &+Lbracer&+w crafted from a &+Rli&+mz&+Ra&+mrd &+Ltail&+w lies here.&n~
+~
+9 2 3 0 15 0 67108929 4097 64 0 0
+10 0 0 3 0 0 0 0
+2 0 100
+E
+lizard tail bracer~
+&+w   This &+Lbracer&+w was adroitly fashioned from the whole &+Ltail&+w of a &+Rli&+mz&+Ra&+mrd&+w.  The
+&+Wbones&+w have been carved with various icons and runes, or completely worked into
+&+wimages of different creatures from across the &+yrealm&+w.  The whole thing has been
+&+wstitched together with &+mca&+Mt&+mg&+Mut&+w, and leather &+ystraps&+w have been added to allow the
+&+Lbracer&+w to be laced up on the arm.&n
+~
+A
+55 3
+A
+14 15
+#35230
+razor cutthroat cut throat bloodied~
+a &+Lcut-throat &+rra&+Rz&+ro&+Rr&n~
+&+wA &+Rbl&+ro&+Ro&+rdi&+Re&+rd &+Lrazor&+w was tossed in the &+ydirt&+w.&n~
+~
+5 16 3 0 11 0 16777216 8193 0 0 0
+2 3 3 0 0 0 0 0
+1 0 100
+E
+razor cutthroat cut throat bloodied~
+&+w   This &+Rr&+ra&+Rz&+ro&+Rr&+w was crafted by the skilled hands of a long dead artist, as is
+&+wattested by the items wear as well as the ancient form of &+celven&+w script that
+&+wadorns the &+Cedge&+w.  The &+cblade&+w is seated in an black &+Livory&+w handle, worn smooth
+&+wat the center from years of constant handling.&n
+~
+A
+32 2
+A
+2 2
+#35231
+meat pie~
+a thick &+rm&+Re&+ra&+Rt&+y pie&n~
+&+wSomeone has left a &+Rm&+re&+Ra&+Rt&+y pie&+w here.&n~
+~
+19 2 3 0 9 0 0 0 0 0 0
+4 4 4 0 4 0 0 0
+0 0 100
+E
+meat pie~
+&+y   Venison&+w, &+Lbuffalo&+w, and &+ccat&+w have been baked into a fluffy &+ypastry&+w pocket.  The
+&+rm&+re&+Ra&+rt&+w has been cooked into a rich &+ygravy&+w filled with a mix of chopped &+gve&+Gg&+ge&+Gta&+gb&+Gl&+ges
+&+wand ground spices.  An &+Wegg&+w wash has given the pastry a deep &+ygolden&+w coloration.&n
+~
+#35232
+sign brass placard~
+a brass &+ysign&n~
+&nA &+ybrass&n placard hangs off the eastern &+Lbuilding&n.~
+~
+8 17 3 0 8 0 0 1 0 0 0
+0 0 0 0 0 0 0 0
+500 100000 100
+E
+sign brass placard~
+&+W|&+c________&+L==&+c___________________________&+L==&+c______
+&+W|&+c________&+w||&+c___________________________&+w||&+c______|
+&+W|        &+L==                           ==
+&+W|     &+y,--&+w||&+y---------------------------&+w||&+y--.
+&+W|     &+y|  &+L==  &+w.oO --------------- Oo.  &+L==  &+y|
+&+W|     &+y|                                   &+y|
+&+W|     &+y|        &+wThe &+LNewhaven &+wArmory        &+y|
+&+W|     &+y|                                   |
+&+W|     &+y`-----------------------------------'
+&+W|&n
+~
+#35233
+blackberries berries~
+some &+Lbl&+ma&+Lc&+mkb&+Le&+mr&+Lri&+me&+Ls&n~
+&+wSome &+Lbl&+ma&+Lc&+mkb&+Le&+mr&+Lri&+me&+Ls&+w grow on a &+gbush&+w here.&n~
+~
+19 48 2 0 9 0 69640 16385 32768 0 0
+6 3 3 1 2 0 0 0
+1 1 100
+E
+blackberries berries~
+&+w   A &+mbunch&+w of small &+Lbl&+ma&+Lc&+mkb&+Le&+mr&+Lri&+me&+Ls&+w.  They look very tasty indeed.&n
+~
+#35234
+teak fishing rod pole~
+a &+Gt&+ce&+Ga&+gk &+Lfishing &+yrod&n~
+&+wA &+ct&+Ge&+ca&+Gk&+L fishing &+yrod&+w has been abandoned here.&n~
+~
+8 6 3 0 9 0 8192 16385 0 0 0
+0 0 0 0 0 0 0 0
+0 0 100
+E
+teak fishing rod pole~
+&+w   This &+yrod&+w has been finally crafted from a solid &+ypole&+w of &+Gt&+ce&+Ga&+ck&+w.  You have
+&+wnever seen its equal.&N
+~
+A
+30 6
+#35235
+satchel silver threaded leather~
+a &+csilver&+L-threaded &+ysatchel&n~
+&+wA leather &+ysatchel&+w threaded with &+csilver&+w has been lost here.&n~
+~
+15 13 4 0 10 0 262144 8388609 0 0 0
+575 1 0 575 0 0 0 0
+1 0 100
+E
+satchel silver threaded leather~
+&+w   This &+ysatchel&+w is crafted from the uncured leather of one of the &+Rli&+mz&+Ra&+mrd&+Rs&+w that
+&+ware so ubiquitous in the area.  Threads of fine &+csilver&+w have been used to stitch
+&+wthe &+ysatchel&+w together, giving it a strength it might not otherwise have.&n
+~
+A
+14 10
+A
+1 3
+#35236
+shield buckler lizard skull spiked~
+a &+ybuckler&n decorated with a &+Rli&+mz&+Ra&+mrd &+Wskull&n~
+&+wA &+Rli&+mz&+Ra&+mrd &+Wskull&n detailed &+ybuckler&+w has been abandoned here.&n~
+~
+37 15 3 0 7 0 9232 513 0 121323579 0
+2 1 3 30 3 1 0 0
+15 0 100
+E
+shield buckler lizard skull spiked~
+&+w   This &+ybuckler&+w has been bound in a &+Csteel &+wband and had a painted &+Rli&+mi&+Rza&+mrd &+Wskull
+&+wused to decorate a wicked &+Lspike&+w that protrudes from the &+yshield&+w's center.  The
+&+ywood&+w planking is of &+yoak&+w, but has been treated and formed into a convex form to
+&+wbetter protect its bearer.&n
+~
+#35237
+skin displacer beast cloak feline~
+the &+Lskin&n of a &+Ld&+bis&+Lp&+bl&+Lac&+be&+Lr beast&n~
+&+wThe &+Lskin&+w of a &+bfe&+Ll&+bi&+Lne&+w lies on the &+yground&+w.&n~
+~
+9 12 3 0 7 0 4096 1029 64 0 0
+20 0 0 4 0 0 0 0
+0 0 100
+E
+skin displacer beast cloak feline~
+&+w   Skinned from the &+mca&+Mr&+mc&+Mas&+ms&+w of a &+Ld&+bis&+Lp&+bl&+Lac&+be&+Lr beast&+w, this &+Lhide&+w is wide enough
+&+wto wear as a cape either around the neck or about the body.  The &+Lblack&+w and
+&+bblue&+w tinged &+Lf&+bu&+Lr&+w seems to fade out of visual range around shadow.&n
+~
+A
+26 5
+A
+2 5
+#35238
+tobacco pouch small~
+a &+Lpouch&n of &+ytobacco&n~
+&+wA small &+Lpouch&+w of &+ytobacco&+w has been lost here.&n~
+~
+12 30 1 0 7 0 8392704 8404993 32768 0 0
+0 0 0 0 0 0 0 0
+1 0 100
+E
+tobacco pouch small~
+&+w   This small &+Lpouch&+w of &+ytobacco&+w has been sealed with a loop of &+cfabric&+w to prevent the
+&+gleaves&+w from being lost to hell and creation.  The scent is very strong, akin to the
+&+ytobacco&+w that &+RDibbly &+wis known to smoke.&n
+~
+A
+26 -2
+A
+36 1

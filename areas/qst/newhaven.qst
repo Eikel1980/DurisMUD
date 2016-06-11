@@ -1,0 +1,297 @@
+#35204
+M
+hi hello quest wife angry~
+$n&n looks at you, his face filled with anguish.
+
+$n&n says, "This damned curse."
+He says, "Eight months ago, my wife was taken from me through the rift."
+He sobs to himself.
+
+$n&n says, "I need to know what happened to my wife."
+He looks at you, "But we have been forbidden from traveling through the rift
+under penalty of death."
+~
+MA
+qc_action 3~
+$n&n appears to be sobbing.
+You hear him mutter something about his wife.
+~
+MA
+qc_action 7~
+$n&n quenches a red-hot &+csword&n blade in a vat of &+Loil&n.
+&+WS&+wt&+We&+wa&+Wm&n rises from the &+Csteel&n as he lifts it back into the air.
+~
+MA
+qc_action 14~
+$n &+csw&+Ce&+ca&+Cts&+w as he works at the &+Rf&+ro&+Rr&+rg&+Re&+w.&n
+~
+MA
+qc_action 20~
+&+CSp&+ca&+Cr&+cks&n fly as $n&n beats his &+Lhammer&n against hot &+Csteel&n.
+~
+Q
+$n&n cries out in agony and pulls at his beard.
+He clasps the mummy of his wife to his chest and sobs into her hair.
+
+$n&n says, "I owe you much for this, but she was all I had.  Now I am nothing."
+~
+R E 39200
+G I 35226
+S
+#35211
+M
+hi hello quest quests~
+$n&n says, "If you bring me certain items, I will improve them for a
+small fee."
+
+$n&n continues, "Bring me a Dark Circle from Shadowclave and 50
+platinum pieces."
+He says, "For that, I'll craft you a scale and balance badge."
+
+$n&n says, "Find me a lizard tail from here-abouts and 75 platinum."
+He finishes, "I'll turn it into a mighty fine bracer for that, I will."
+~
+MA
+qc_action 5~
+$n coughs and curses under his breath.
+~
+MA
+qc_action 10~
+$n&n wipes the &+cs&+Cw&+ce&+Ca&+ct&n from his brow.
+~
+MA
+qc_action 15~
+$n&n fiddles with a set of &+Larmor&n.
+He attaches some &+cplate&n using &+Crivets&n.
+~
+MA
+qc_action 20~
+$n&n cuts a section of &+cmail&n to size.
+He bangs the &+Lscissors&n against his &+yworkbench&n.
+~
+Q
+$n say, "May this serve you well in coming days."
+~
+R I 35228
+G I 93901
+G C 50000
+Q
+$n say, "This should help you considerably, I trust."
+~
+R I 35229
+G I 35227
+G C 75000
+S
+#35213
+MA
+qc_action 5~
+$n&n breaks three &+Yeggs&n into &+Wflour&n.
+She works the &+Wmi&+Yx&+Wt&+Yur&+We&n furiously with her &+cwhisk&n.
+~
+MA
+qc_action 10~
+$n&n works some &+ydough&n into a pocket.
+She stuffs the &+Lbl&+ma&+Lc&+mkb&+Le&+mr&+Lri&+me&+Ls&n and &+rm&+Re&+ra&+Rt&n into the &+ypastry&n.
+~
+MA
+qc_action 15~
+$n&n minces a &+rflank&n of &+rm&+Re&+ra&+Rt&n.
+She throws the chunks into a hot &+cskillet&n.
+~
+MA
+qc_action 20~
+$n&n kneads a mound of &+ydough&n.
+~
+MA
+qc_action 25~
+$n&n says, "If you find any Newhaven blackberries, I'll reward you for them."
+~
+Q
+$n&n takes the &+Lbl&+ma&+Lc&+mkb&+Le&+mr&+Lri&+me&+Ls&n from you with a giant smile.
+He says, 'Thank you, so much!'
+~
+R E 18000
+G I 35233
+S
+#35216
+MA
+qc_action 5~
+$n&n shifts some &+Cbottles&n on the &+cshelves&n.
+You notice him watching you from the corner of his eyes.
+~
+MA
+qc_action 10~
+$n&n exhales &+Ws&+wm&+Wo&+wk&+We&n through his huge &+rnose&n.
+He taps some &+Lash&n from his &+ypipe&n.
+~
+MA
+qc_action 15~
+$n&n inhales on his &+ypipe&n.
+He exhales a thick &+Ws&+wm&+Wo&+wk&+We&n ring.
+~
+MA
+qc_action 20~
+$n&n smiles at you.
+He says, "Take a look around.  Best wares in all of Duris."
+
+$n&n coughs.
+~
+MA
+qc_action 25~
+$n&n is tearing his shop apart looking for something.
+He says, "I know I have more tobacco around here somewhere!"
+~
+MA
+qc_action 30~
+$n&n says offhand, "If you come across &+ca reel of fishing
+&+Cline&n, I'll pay you nicely for it."
+He says, "I use them to make my &+Ct&+Ge&+Ca&+Gk &+Lfishing &+yrods&n."
+~
+Q
+$n&n claps his hands in delight.
+He says, "Excellent!  Here, take this as payment."
+~
+R C 5000
+G I 88905
+Q
+~
+R C 3500
+G I 35238
+S
+#35221
+MA
+qc_action 5~
+$n&n mumbles, "The Stroms expect an explanation.  But..."
+~
+MA
+qc_action 10~
+$n&n paces about the &+ylibrary&n.
+~
+MA
+qc_action 15~
+$n&n says, "Damnit!  Where did this rift come from?!"
+He slams a &+ydrawer&n on his &+ydesk&n.
+~
+MA
+qc_action 20~
+$n&n throws a &+ybook&n across the room.
+He shouts, "There must be an answer!"
+~
+S
+#35258
+MA
+qc_action 5~
+$n&n mumbles, "I... don't understand.  What... what the hell happened?!"
+~
+MA
+qc_action 10~
+&+LChains&n groan in protest as $n&n tries to ease his discomfort.
+~
+MA
+qc_action 15~
+$n&n sobs in the corner of the &+Lcell&n.
+~
+MA
+qc_action 20~
+$n&n looks at you with a tear-streaked face.
+
+He moans, "Kill... me.  Pl... please."
+~
+S
+#35263
+MA
+qc_action 5~
+$n&n mumbles, "It's all my fault.  All mine."
+He looks about wildly.
+
+$n&n begins to sob.
+~
+S
+#35280
+MA
+qc_action 1~
+$n&n looks you in the eyes.
+He moans, "Br... brains!"
+
+$n&n says, "I'm fucking with you.  I'm a vegetarian."
+~
+S
+#35285
+MA
+qc_action 5~
+$n&n snarls and sniffs at the air.
+&+CD&+cr&+Co&+co&+Cl&n drops from its lips as it bears its sharp &+Wfangs&n.
+~
+MA
+qc_action 10~
+&+WS&+wt&+We&+wa&+Wm&n rushes from $n&n's nostrils.
+$n&n thrashes his &+Lhead&n from side to side.
+~
+MA
+qc_action 15~
+$n&n claws at the &+yground&n with his powerful &+Lpaws&n.
+~
+MA
+qc_action 20~
+$n&n lets out a deep, soul-rumbling growl.
+~
+S
+#35286
+Q
+$n&n grins and moves amongst his &+cshelves&n muttering to himself.
+
+&nAfter a few minutes of strange chanting and the application of various
+&+ycompounds&n, $n&n looks up with a smile.
+
+$n&n says to you in Veldian, "Enjoy!"
+~
+R I 35224
+G I 98606
+G I 13221
+G C 100000
+S
+#35287
+MA
+qc_action 5~
+$n&n mewls and rubs his &+Lbody&n against a nearby &+ytree&n.
+~
+MA
+qc_action 10~
+$n &+Yurinates&n and &+csp&+Cr&+ca&+Cys&n about the &+yarea&n to mark its territory.
+~
+MA
+qc_action 15~
+$n&n thrashes its &+Lt&+ben&+Lt&+baB&+Lcl&+be&+Ls&n in rage.
+~
+MA
+qc_action 20~
+Bearing its wicked &+Wteeth&n, $n&n lets loose a growl from somewhere deep in its &+Lb&+bel&+Ll&+by&n.
+~
+S
+#35288
+MA
+qc_action 3~
+$n&n lets out a huge sigh.
+He looks at you.
+
+$n&n says, "You try standing here all day."
+$n&n mumbles, "Kids can be little bastards."
+~
+MA
+qc_action 7~
+$n&n &+cs&+Cp&+ci&+Ct&+cs&n on the &+yground&n.
+He says, "Been holding that in for awhile."
+~
+MA
+qc_action 11~
+$n&n looks uncomfortable.
+He scratches at himself through his &+carmor&n.
+~
+MA
+qc_action 15~
+$n&n looks around the area.
+
+$n&n says, "Mind yourselves in town.  Laws is laws."
+He states flatly, "All undead will be slaughtered on sight."
+~
+S

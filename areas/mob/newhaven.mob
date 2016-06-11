@@ -1,177 +1,170 @@
 #35200
-librarian small~
-&+Lthe librarian&N~
-&+LA small studious librarian sits here.&n
+librarian small studious~
+the &+Llibrarian&n~
+&+wA small, studious &+Llibrarian&+w sits here.&n
 ~
-&+wMilky skin covers her frail frame of bones like&n
-&+wa canvass waiting color.  Eyes of &+Mpale pink&N
-&+wglance up at you, then return to the book she is&n
-&+wcurrently cataloging.&n
+&+w   Milky &+Lskin&+w drapes over the &+Wbones&+w of her frail frame like an ancient canvas
+&+wawaiting an artist's application of color.  &+MEyes&+w of pale pink roll in their
+&+wsockets and briefly alight upon you before slowly returning to the &+ybook&+w she is
+&+win the process of cataloging.&n
 ~
 10 0 0 0 0 0 0 0 1000 S
-PH 0 8 0 -1
+PH 0 4194304 1 -1
 36 3 55 15d25+112 2d6+1
 88.73.1.0 4500
 8 8 1
 #35201
-esliae knight~
-Esliae Ji'Zaman~
-Esliae Ji'Zaman, &+WKnight of the Merciful Sword&N stands here.
+esliae ji'zaman jizaman knight~
+&+WEsliae Ji'Zaman&n~
+&+WEsliae Ji'Zaman&+w, &+LKnight&+w of the &+cMerciful &+CSword&+w, stands here.&n
 ~
-&+bHair of &+Wivory-white&N &+bgleams with brilliance as her finely
-&+bpolished platemail dazzles with a holy aura.  The symbol
-&+bof &+WNewhaven&+b has been emblazoned upon her breastplate with
-&+bextreme care and detail.  She grasps a glowing &+Wwhite&+b sword
-&+bin her right hand while a large tower shield protects her
-&+bflanking left side.
+&+w   Hair of ivory-white gleams with brilliance as her finely polished &+Lplatemail
+&+wdazzles with a holy aura.  The crest of &+LNewhaven&+w has been hammered into the
+&+csteel&+w of her &+Lbreastplate&+w with a high level of care and detail.  She grasps a
+&+wwhite-bladed &+Wsword&+w in her right hand while a large &+Ltower &+yshield&+w protects her
+&+wleft flank.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 1 1 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35202
-bevelin knight~
-Bevelin Tisvin~
-Bevelin Tisvin, &+BKnight of the Holy Judgement&N stands here.
+bevelin tisvin knight guard~
+&+BBevelin Tisvin&n~
+&+BBevelin Tisvin&+w, &+LKnight&+w of the &+CHoly &+cJudgement&+w, stands guard here.&n
 ~
-&+wEyes of crystal &+Bblue&+w gaze about the surrounding area
-&+wsearching for those waiting to be judged.  His large mass
-&+wripples with finely cut muscle and grace.  He has been
-&+wcompletely armored in a set of &+csilver&+w platemail while
-&+wgrasping a large halberd with his two hands.  A large &+bblue&n
-&+wcloak drapes down his back, prominently displaying the
-&+wsymbol of &+WNewhaven&+w for all to see.
+&+w   Eyes of crystal &+Bblue&+w gaze about the surrounding &+yarea&+w searching for those in
+&+wneed of judgment.  This &+Lknight&+w's large mass ripples with finely cut muscle and
+&+wan animal-level grace of motion.  He is completely armored in silver &+cplatemail
+&+wand a large &+chalberd&+w is grasped in the grips of his two hands.  A large cloak
+&+wdrapes down his back, prominently displaying the crest of &+LNewhaven&+w for all to
+&+wsee.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1140852744 6400 1006649359 0 0 0 0 0 0 S
+PH 0 8 2 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35203
-lesair magistrate high~
-LeSair I'villianda~
-LeSair I'villianda, &+WHigh Magistrate of Newhaven&N stands here.
+lesair ivila i'vila magistrate high~
+&+cLeSair &+CI'vila&n~
+&+cLeSair &+CI'vila&+w, &+MHigh &+mMagistrate&+w of &+LNewhaven&+w stands here.&n
 ~
-&+wHigh arched eyebrows accent eyes of &+Gemerald green&+w.  Her
-&+wlips are extremely narrow as her slender high cheekbones
-&+wtriangulate her face down to her pointed chin.  Her skin
-&+wis pale and shiny, stretching across a petite frame of bone.
+&+w   High arched &+yeyebrows&+w accent eyes of emerald &+ggr&+Gee&+gn&+w.  Her lips are extremely
+&+wnarrow as her slender, high cheekbones triangulate her face down to her pointed
+&+wchin.  Her skin is pale and shiny, stretching across a petite frame of bone.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 16777216 2 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35204
 blacksmith man~
-&+Lthe blacksmith&N~
-&+LA massive man is here hard at work.&N
+the &+Lblacksmith&n~
+&+wA &+Lmassive man&+w is here, hard at work.&n
 ~
-&+LLocks of sweat soaked &+Yyellow&+yish brown&+L hair sticks to the
-&+Lback of his thick neck as he works on a horseshoe.  His
-&+Lmassive arms ripples with muscles with each hammering
-&+Lstroke of the hammer onto the anvil.  His eyes are very
-&+Ldark and patches of scruff adorn his face.  His hands and
-&+Larms have been stained with soot while his thick leather
-&+Lapron continues to take punishment from his daily tasks.
+&+w   Locks of &+cs&+Cw&+ce&+Ca&+ct&+w-soaked, yellowish-brown &+yhair&+L sticks to the back of his thick
+&+wneck as he works on a &+Lhorseshoe&+w.  His massive arms ripple with muscles with
+&+weach jarring stroke of the &+chammer&+w onto the &+Canvil&+w.  His &+yeyes&+w are very dark and
+&+wpatches of &+Yscruff&+w adorn his face.  His hands and arms have been stained with
+&+Lsoot&+w while his thick leather &+yapron&+w continues to take punishment from his daily
+&+wtasks.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+2147518474 0 0 0 0 0 0 0 0 S
+PH 0 1048576 2 -1
 36 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35205
 boy hand stable~
-&+ythe stable hand&N~
-&+yA young boy is working here.&N
+the &+ystable hand&n~
+&+wA young &+yboy&+w is working here.&n
 ~
-&+yEyes of dull &+wgray&+y gleam with excitement as the young boy
-&+ydips several horseshoes into a barrel of water.  Beads of
-&+ysweat coat his entire plush face.  He is almost entirely
-&+ysoaked with sweat and soot from the raging fire of the
-&+yblacksmith's forge.
+&+w   Eyes of dull gray seem to gleam with excitement as this young &+yboy&+w dips one
+&+wof several &+Lhorseshoes&+w into a &+ybarrel&+w of &+cw&+Ca&+ct&+Ce&+cr&+w.  &+cBeads&+w of sweat coat his face in
+&+wa thin sheen, soaking into the collar of his loose tunic.  &+LSoot&+w from the &+rf&+Ri&+rr&+Re
+&+wof the &+Lblacksmith&+w's forge clings to the &+cmo&+Ci&+cs&+Ctu&+cr&+Ce&+w of his body, giving him the
+&+wdistinctive appearance of homeless waif.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 15 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35206
 equerry newhaven man knight~
-&+Wthe equerry&N~
-&+cThe Newhaven &+Wequerry&+c is here reviewing todays work.&N
+the &+Wequerry&n~
+&+wThe &+LNewhaven &+Wequerry&+w is here reviewing today's &+ywork&+w.&n
 ~
-&+cClad in a brilliantly polished suit of chainmail armor, his
-&+ceyes carefully scan the roadway for any signs of trouble.
-&+cA huge &+Wwhite plum&+c sprouts from the center of his partially
-&+cclosed-faced helmet as his hand firmly grips the hilt of
-&+chis longsword.
+&+w   Clad in a brilliantly polished suit of &+cch&+Ca&+ci&+Cnm&+ca&+Ci&+cl&+L armor&+w, the &+Wequerry&+w slowly
+&+wlets his eyes scan the &+yroadway&+w for any signs of trouble.  A huge, white &+Wplume
+&+wsprouts from the center of his partially closed-faced &+chelmet&+w and he firmly
+&+wgrips the hilt of a &+Llongsword&+w in his right hand.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1073743946 0 0 0 0 0 0 0 0 S
+PH 0 16384 2 -1
 39 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35207
 page young~
-&+ythe page&N~
-&+yA young page stands ready to serve.&N
+the &+cpage&n~
+&+wA young &+cpage&+w stands here, ready to serve.&n
 ~
-Padded leather armor covers this man’s entire body.  His
-body is heavily defined by his muscular definition due to
-his rigorous training to one day become a knight of Newhaven.
-His black hair has been cut short and his face clean shaven.
-He carries a small short sword in his right hand.
+&+w   Padded-leather &+yarmor&+w covers this man's entire body, which has been heavily
+&+wdefined by his rigorous training to one day become a &+Lknight&+w of &+LNewhaven&+w.  His
+&+wblack &+Lhair&+w has been cut short and his face clean shaven.  He carries a small
+&+csword&+w at the ready in his right hand.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 1 0 -1
 18 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35208
 knight stronghold~
-&+Wthe stronghold&+B knight&N~
-&+WA stronghold&+B knight&+W stands watch here.&N
+a &+Lstronghold &+Bknight&n~
+&+wA &+Lstronghold &+Bknight&+w stands watch here.&n
 ~
-&+wClad in highly &+Wpolished platemail&+w, the knight remains
-&+wmotionless.  His stance is almost statuesque.  The knight
-&+wscans the surrounding area for any of those that would
-&+wattempt to break the laws of the city.&N
+&+w   Clad in highly polished &+cplatemail&+w, this &+Bknight&+w keeps his guard here in a
+&+wcompletely motionless state.  His stance, his entire demeanor, is reminiscent
+&+wof an ancient &+Lstatue&+w carved into the very &+yrock&+w of the earth.  The &+Bknight&+w scans
+&+wthe surrounding area for any of those that would attempt to break the laws of
+&+wthe &+Lcity&+w.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+67110922 0 0 0 0 0 0 0 0 S
+PH 0 1 2 -1
 28 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35209
 knight grand~
-&+Wa grand&+L knight&N~
-&+WA grand&+L knight&+W of Newhaven strolls along here.&N
+a &+Wgrand &+Lknight&n~
+&+wA &+Wgrand &+Lknight&+w of &+LNewhaven&+w patrols the &+yarea&+w.&n
 ~
-Clad in full platemail, the knight scans the surrounding
-area for any signs of danger.  His massive great helm and
-visor has been topped with a vibrant blue and white plume.
-His blue cloak has been fastened to his shoulder plates
-making it easier to control if a fray should arise.
+&+w   Clad in full &+cplatemail&+w, this &+Lknight&+w scans the surrounding area for any hint
+&+wof danger.  His massive &+chelm&+w includes a grilled &+Lvisor&+w and has been topped with
+&+wa vibrant blue and white &+Wp&+Bl&+Wum&+Be&+w.  His &+Bcloak&+w has been fastened to his shoulder
+&+cplates&+w, making it easier to control if a fray should arise.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 1 0 -1
+67108872 0 0 0 0 0 0 0 0 S
+PH 0 8 1 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35210
 knight commander~
-&+Wa knight commander&N~
-&+WA knight commander of Newhaven stands here.&N
+a &+Lknight &+rcommander&n~
+&+wA &+Lknight &+rcommander&+w of &+LNewhaven&+w surveys the &+yarea&+w.&n
 ~
-&+LStern eyes scan the area for any wrong doings as a plume
-&+Lof &+Wcrystal-white &+Bblue&+L sprouts from the top of his enormous
-&+Lbattle helm.  A cloak of finely woven &+bblue&+L wool has been
-&+Lattached to his armor shoulder guards, which carelessly
-&+Ldrapes down his back.  The tip of a massive two-handed sword
-&+Lpresses firmly against the stone floor while his strong
-&+Lgauntlet hands grasp the hilt of the blade.
+&+w   This &+Lknight&+w stands tall over the area, his eyes scanning the region for
+&+wany trouble that might arise while he is on duty.  A dyed &+Wfe&+Ba&+Wt&+Bhe&+Wr&+w of blue and
+&+wwhite sprouts from the crown of his enormous helm, and a &+Bcloak&+w of finely woven
+&+wblue wool drapes from his shoulder guards.  The tip of his massive, two-handed
+&+csword&+w presses firmly against the stone &+Lfloor&+w while his large &+cgauntleted&+w hands
+&+wgrasp the &+yhilt&+w of the blade.&n
 ~
 10 0 0 0 0 0 0 0 1000 S
 PH 0 1 0 -1
@@ -180,682 +173,672 @@ PH 0 1 0 -1
 8 8 1
 #35211
 armorer newhaven~
-&+Gthe armorer&N~
-&+gThe Newhaven armorer is hard at work here.&n
+the &+garmorer&N~
+&+wThe &+LNewhaven &+garmorer&+w is working on a set of &+Larmor&+w.&n
 ~
-&+gLong brown hair sticks to his neck has his soot stained body
-&+gripples with massive muscle tension.  His eyes are dim and
-&+gtired looking, yet he keeps on working.
+&+w   Long, brown &+yhair&+w sticks to his neck as his &+Lsoot&+w-stained body ripples with
+&+wmassive muscle tension.  His &+yeyes&+w are dim and tired looking, yet he keeps on
+&+wworking.  His shoulders seem to cord and twist as he fastens each &+Lrivet&+w into
+&+wthe &+csteel&+w of the armor he is currently crafting.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+67110922 0 0 0 0 0 0 0 0 S
+PH 0 1 2 -1
 36 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35212
 assistant young man~
-&+Wthe assistant&N~
-&+yA young man is here assisting the armorer.&n
+the &+yassistant&N~
+&+wA young &+yman&+w is here assisting the &+garmorer&+w.&n
 ~
-&+yThis young man has been covered in soot and sweat, which seems
-&+yto continuously drip from his chin as he assists the Armorer.
-&+yHis eyes burn with an inner intensity has he watches the master
-&+ycraftsman construct a well-balanced shield of steel and iron.
-&+yHe pays you no attention at all.
+&+w   This young &+yman&+w is covered in &+Lsoot&+w and &+ygrime&+w that has mixed with his &+cs&+Cw&+ce&+Ca&+ct
+&+wto form a thick cake upon the visible sections of his skin.  &+CW&+ca&+Ct&+ce&+Cr&+w seems to
+&+wcontinuously drip from his chin as he assists the &+garmorer&+w.  His &+yeyes&+w burn with
+&+wan inner intensity has he watches the master craftsman construct an intricate
+&+wset of &+cplatemail&+w from &+Csteel&+w and &+ciron&+w.  Aside from the occasional glance, he
+&+wpays you no attention at all.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+67111050 0 0 0 0 0 0 0 0 S
+PH 0 1 0 -1
 20 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35213
-baker~
-the baker~
-The Newhaven Baker stands here covered in flour.
+baker woman female~
+the &+Wbaker&n~
+&+wThe &+LNewhaven &+Wbaker&+w stands here covered in &+Wflour&+w.&n
 ~
-An enormous woman stands behind the counter grinning at you.
-Rolls of fat ripple as she giggles in delight at yet another
-masterpiece of hers, a three tiered white vanilla cake.  Her
-face is plump and thick, a huge second chin giggles with her
-every motion.  Her lips are thick and deep red.  Her eyes are
-of crystal blue and emit a friendly feeling to all those who
-gaze at her.
+&+w   An enormous &+Cwoman&+w stands behind the &+ycounter&+w grinning at you.  Rolls of fat
+&+wripple as she giggles in delight at yet another masterpiece of hers, a three-
+&+wtiered, white vanilla &+Wcake&+w.  Her face is plump and thick, a huge second chin
+&+wjiggles with her every motion.  Her &+rlips&+w are large and shaded a deep red.  Her
+&+weyes are of crystal &+Bblue&+w and emit a friendly feeling to all those who gaze at
+&+wher.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+2186 0 0 0 0 0 0 0 0 S
+PH 0 16384 0 -1
 36 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35214
-ytarae innkeeper~
-Ytarae Retoriva~
-&+WThe Innkeeper stands here welcoming everyone.&n
+ytarae retoriva innkeeper~
+&+WYtarae&+w Retoriva&n~
+&+wThe &+yInnkeeper&+w seems to be purposefully busying herself.&n
 ~
-&+LRaven-black hair&+W has been pulled and tied to the back of her
-&+Whead.  Her skin is extremely pale and fine.  Her eyes are dark
-&+ybrown&+W, radiating like two voids within her chiseled face.  Her
-&+Wlips are smooth and thin, yet her smile instantly brings a warm
-&+Whappy feeling to you.
+&+w   Long, raven-black &+Lhair&+w has been pulled and tied into a &+Lponytail&+w at the back
+&+wof her head.  Her skin is extremely pale and fine, giving the occasional hint
+&+wof blue veins running just beneath its surface.  Her &+yeyes&+w are a deep brown,
+&+wtwo warm portals into a rather cool visage.  Her lips are smooth and thin, yet
+&+wher &+Wsmile&+w instantly brings a warm feeling to you.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+74 0 0 0 0 0 0 0 -250 S
+PH 0 4096 2 -1
 40 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35215
-jelfelir artisan~
-Jelfelir Ulikira~
-An artisan is busily at work here.
+jelfelir ulikura artisan~
+&nJelfelir Ulikira~
+&+wAn &+Bartisan&+w is busily at work here.&n
 ~
-Sandy blonde hair has been pulled and tied to the back of his
-body by a thick leather strap.  A light white powder seems to
-have caked itself to his wet sweaty skin making it appear with
-a marble like resemblance.  His eyes carefully scan over a block
-of stone, taking in every detail while ignoring you totally.
+&+w   Thin and standing nearly six-feet in height, this artist has long sandy-
+&+wblond &+Yhair&+w that has been pulled and tied at the back of his head by a thin
+&+yleather&+w strap.  Stone &+Lpowder&+w seems to have caked itself in every nook and
+&+wcrevice in his skin, giving him a marblesque appearance.  His attention is
+&+wcompletely occupied by a &+Lblock&+w of &+Lstone&+w, his eyes evaluating the art hidden
+&+wdeep in its core.  He pays you little mind.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+2186 0 0 0 0 0 0 0 0 S
+PH 0 32768 0 -1
 32 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35216
-dibbly gnome~
-&+RDibbly &+WLibaralienarfumbucle&N~
-&+WA plump gnome with a &+RHUGE nose&+W stands here.&N
+dibbly libalien gnome plump~
+&+RDibbly &+rLibalien&n~
+&+wA plump &+Rgnome&+w with a huge &+rnose&+w stands here.&n
 ~
-&+WShort and plump with a &+RHUGE nose&+W, this little gnome grins at you
-&+Wwith a warm smile.  His eyes twinkle in delight as he gazes at
-&+Wyour coin purse.  He casually puffs on a long brown pipe and
-&+Wwelcomes you to his shop.
+&+w   Short and plump with a huge &+rnose&+w, this little &+Rgnome&+w grins at you with a
+&+wwarm smile.  He can barely hide the delight in his eyes as he catches sight of
+&+wyour coin &+Lpurse&+w.  He casually puffs on a long brown &+ypipe&+w and welcomes you to
+&+whis &+cshop&+w.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PG 0 0 0 -1
+2058 0 0 0 0 0 0 0 0 S
+PG 0 16384 1 -1
 35 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35217
-artos avenger knight~
-&+WArtos&+C Chistori&+W, Avenger of Newhaven&N~
-&+WArtos&+C Chistori&+W, Avenger of Newhaven stands here solemnly.&N
+artos chori avenger~
+&+CArtos &+cChori&+w, &+WAvenger&+w of &+LNewhaven&n~
+&+CArtos &+cChori&+w, &+WAvenger&+w of &+LNewhaven&+w, solemnly stands here.&n
 ~
-Eyes of seaweed-green gaze at a list of those waiting to be
-judged by the Magistrate.  His mass ripples with finely cut
-muscle.  He has been completely armored in a set of ornately
-etched platemail. A scabbard, containing a longsword, hangs
-loosely around his waist.  A large blue cloak drapes down his
-back, prominently displaying the symbol of Newhaven.
+&+w   Eyes of &+gse&+ca&+gw&+cee&+gd&+w-green gaze at a &+Wlist&+w of those waiting to be judged by the
+&+mMagistrate&+w.  His mass ripples with finely cut muscle.  He has been completely
+&+warmored in a set of ornately etched &+cplatemail&+w.  A &+Lscabbard&+w, containing a long-
+&+csword&+w, hangs loosely around his waist.  A large blue &+Bcloak&+w drapes down his
+&+wback, prominently displaying the crest of &+LNewhaven&+w.&n
 ~
 8 0 0 0 8216 32768 1073741824 0 0 S
-PH 0 67108864 0 -1
+PH 0 67108864 2 -1
 41 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35218
 court scribe~
-a court scribe~
-&+BA court scribe&+W sits here recording every word.&N
+a &+Lcourt &+Wscribe&n~
+&+wA &+Lcourt &+Wscribe&+w sits here recording every word uttered.&n
 ~
-A simplistic white hooded robe clothes this scribe’s body.
-The hood of the robe covers the person’s entire head making
-it hard to see any facial features.  A long frilly quill
-scribbles quickly and endlessly taking every word spoke by
-the Magistrate onto paper.
+&+w   A simplistic white-hooded &+crobe&+w clothes this &+Wscribe&+w's body.  The &+Whood&+w of the
+&+crobe&+w covers the entirety of their head making it hard to make out any facial
+&+wfeatures.  A long, frilly &+Lquill&+w scribbles quickly and endlessly, recording
+&+wevery word spoken by the &+mMagistrate&+w onto a stack of &+Wpaper&+w.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
-20 0 0 0d0+0 0d0+0
+ph 0 32 2 -1
+21 0 0 0d0+0 0d0+0
 0.0.0.0 0
-8 8 1
+6 8 1
 #35219
 petitioner court~
-&+rthe court petitioner&n~
-&+rA petitioner&+W of the court is here pleading his case.&N
+the &+Lcourt &+rpetitioner&n~
+&+wA &+rpetitioner&+w of the &+Lcourt&+w is here pleading his case.&n
 ~
-A long blue robe drapes across this man giving him a very
-regal appearance.  A white rope belt has been tied across
-his waist while a heavy medallion emblazoned with the holy
-symbol of Newhaven hangs about his neck.
+&+w   Dressed in a long crimson &+Rrobe&+w, this man has a very regal appearance.  Thin
+&+yhair&+w has been combed over the pate of his head, making it look as if a small
+&+wmammal had climbed there to die.  A white, rope &+Wbelt&+w is tied across his waist
+&+wand a heavy &+cmedallion&+w emblazoned with the crest of &+LNewhaven&+w hangs about his
+&+wneck.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 4096 0 -1
 24 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35220
-lawkeeper knight~
-&+Bthe lawkeeper&N~
-&+BA lawkeeper of Newhaven stands here.&N
+lawkeeper knight guard~
+the &+Blawkeeper&n~
+&+wA &+Blawkeeper&+w of &+LNewhaven&+w stands guard here.&n
 ~
-Eyes gaze about the surrounding area searching for any signs
-of disruption. He has been completely armored in a set of
-platemail while grasping a large two-handed sword with his
-hands.  A large white cloak drapes down his back, prominently
-displaying the symbol of Newhaven.
+&+C   Eyes&+w gaze about the surrounding area searching for any signs of disruption.
+&+wHe has been completely armored in a set of &+cplatemail&+w while grasping a large,
+&+wtwo-handed &+Lsword&+w with his hands.  A large white &+Wcloak&+w drapes down his back,
+&+wprominently displaying the crest of &+LNewhaven&+w.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 1 0 -1
 26 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35221
-evelosi librarian~
-&+WEvelosi Thal'raylio&N~
-&+WEvelosi Thal'raylio,&+b Librarian of Newhaven is here.&N
+evelosi thal librarian~
+&+cEvelosi &+CThal&N~
+&+cEvelosi &+CThal&+w, &+yLibrarian&+w of &+LNewhaven&+w, paces the &+Lchamber&+w.&n
 ~
-Milky blue eyes peer through a pair of crimson crystal lenses
-and stare at you with a curiosity that makes your bones shiver.
-His skin is extremely wrinkled and aged.  Long white and grey
-hair flow freely about his head, mingling with his extremely
-long beard.  A single white robe, embroidered with intricate
-blue designs, clothes his body.
+&+w   Milky blue &+Ceyes&+w peer through a pair of crimson &+Ccr&+cy&+Cs&+cta&+Cl&+w lenses and stare at
+&+wyou with a curiosity that makes your bones shiver.  His skin is extremely aged
+&+wand wrinkled.  Long white and grey &+Whair&+w flows freely about his head, mingling
+&+wwith his extremely lengthy &+Wbeard&+w.  A single white &+Wrobe&+w, embroidered with
+&+wintricate blue &+Bdesigns&+w, clothes his body.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 512 0 -1
+PH 0 512 2 -1
 48 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35222
 scribe man old~
-&+wthe scribe&n~
-&+wA old man with &+Lstained&+w hands sits here.
+a &+Wscribe&n~
+&+wAn old &+Bman&+w with &+Lstained&+w hands sits here.&n
 ~
-This old man looks extremely tired.  His eyes are red from
-the constant reading he endures each day while his hands have
-become stained with the various colorful inks used in scripting
-the law of Newhaven.
+&+w   This old &+Bman&+w looks extremely tired.  His eyes are red from the constant
+&+wreading he endures each day and his hands have become stained with the various
+&+wcolorful &+Links&+w used in scripting the laws of &+LNewhaven&+w.  All in all, this &+Bman
+&+wappears more a creature of pulp and dye than flesh and blood.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
-30 0 0 0d0+0 0d0+0
+PH 0 32 3 -1
+31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35223
 acolyte law~
-&+wthe acolyte&n~
-&+wAn acolyte of law stands here.&n
+the &+cacolyte&n~
+&+wAn &+cacolyte&+w of the &+Llaw&+w stands here.&n
 ~
-A simple white robe covers this acolyte’s body.  A blue
-rope belt has been tied across his waist supporting a
-thick holy symbol of Newhaven.  He goes about the temple looking
-for imperfections that need to be corrected immediately.
+&+w   A simple white &+Wrobe&+w covers this &+cacolyte&+w's body.  A blue, rope &+Bbelt&+w has been
+&+wtied across his waist supporting a thick crest of &+LNewhaven&+w.  He goes about the
+&+Ltemple&+w looking for any imperfections that need to be corrected immediately.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 2 0 -1
 21 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35224
 brother solemn faith~
-&+Wa solemn brother&N~
-&+WA solemn brother of the faith is walking here.&N
+a &+Lsolemn brother&n~
+&+wA &+Lsolemn brother&+w of the faith is walking here.&n
 ~
-A long blue robe drapes across the priest’s body while a white
-rope belt stretched across his waist while a heavy medallion
-emblazoned with the holy symbol of Newhaven hangs about his neck.
+&+w   A long black &+Lrobe&+w drapes across the &+cpriest&+w's body, seeming to cradle the
+&+wfat that comprises much of his form.  A white, rope &+Wbelt&+w stretches across his
+&+wwaist, cinching the fabric of his &+Lrobe&+w tight to his corpulent frame.  From his
+&+wneck, a heavy medallion emblazoned with the crest of &+LNewhaven&+w dangles upon a
+&+wsilver &+cc&+Ch&+cai&+Cn&+w.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 64 0 -1
 27 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35225
 sister solemn faith~
-&+wa solemn sister&n~
-&+wA solemn sister of the faith is walking here.&N
+a &+Wsolemn sister&n~
+&+wA &+Wsolemn sister&+w of the faith is walking here.&n
 ~
-A loose fitting blue dress clothes her entire body.  A white
-rope belt has been tied across her waist while a heavy
-medallion emblazoned with the holy symbol of Newhaven hangs about
-her neck.  Her hair has been tied to the back of her head with
-a white piece of cloth.
+&+w   A loose-fitting blue &+Bdress&+w clothes her entire body.  A white, rope &+Wbelt&+w has
+&+wbeen tied across her waist while a heavy medallion emblazoned with the crest
+&+wof &+LNewhaven&+w hangs about her neck.  Her &+Yhair&+w has been tied at the back of her
+&+whead with a white piece of &+Wcloth&+w.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 128 0 -1
 29 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35226
-private knight~
-&+Ythe private&N~
-&+YA Private&+W of the Sword of Newhaven is standing here.&N
+private sword knight~
+a &+cprivate&n~
+&+wA &+cprivate&+w in the &+CSword&+w of &+LNewhaven&+w is on guard.&n
 ~
-Well-oiled studded leather encases a well-trained and fit body
-of this soldier.  An open-faced helm, with nose guard and
-chinstrap, makes it hard to make out any facial features of the
-soldier.  A steel-banded buckler promptly displays the symbol
-of Newhaven while a clothed hand firmly grasps the hilt of a longsword.
-A spotless white cloak flows about the warrior’s body.
+&+w   This &+cprivate&+w is dressed in a &+Lsuit&+w of studded-leather &+yarmor&+w which has been
+&+wmolded by heavy use to his body.  His face is obscured by the nose guard of
+&+wan open-faced &+Lhelm&+w, making it difficult to differentiate the various members
+&+wof the &+CSword&+w from each other.  The crest of &+LNewhaven&+w has been burned into
+&+wthe material of his &+ychestplate&+w, marking his allegiance for all to see.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 1 0 -1
 20 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35227
-member hammer grim jaw~
-&+Ythe member&N~
-&+YA member&+W of the Hammers of Grim Jaw&N
+member dagger man rogue~
+a &+ymember&n~
+&+wA &+ymember&+w in the &+cDagger&+w of &+LNewhaven&+w stalks the area.&n
 ~
-Well-oiled studded leather encases a well-trained and fit body of
-this soldier.  An open-faced helm, with nose guard and chinstrap,
-makes it hard to make out any facial features of the soldier.
-A steel-banded buckler promptly displays the symbol of Newhaven while
-a clothed hand firmly grasps the hilt of a longsword.  A spotless
-black cloak flows about the warrior’s body.
+&+w   This brawny young man is a &+ymember&+w of the &+cDagger&+w of &+LNewhaven&+w, a sanctioned
+&+worder of &+rrogues&+w dedicated to the defense of the city.  His uniform consists of
+&+wsupple a supple, full-suit of leather &+yarmor&+w emblazoned with the city's &+Lcrest
+&+won the chest.  Various loops and pockets line the entirety of his outfit, for
+&+wwhere and when a &+cdagger&+w, &+Wpoison&+w, or other accoutrements of the profession is
+&+win need of stashing.  His eyes are set with the determination of youth as yet
+&+wuntempered by firm experience.&n
 ~
-10 0 0 0 0 0 0 0 1000 S
-PH 0 0 0 -1
+10 0 0 0 0 0 0 0 0 S
+PH 0 4096 0 -1
 21 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35228
 private hammer knight~
-&+Ythe private&N~
-&+YA Private&+W in the Hammer of Newhaven is standing here.&N
+a &+rprivate&n~
+&+wA &+rprivate&+w in the &+RHammer&+w of &+LNewhaven&+w stands at attention.&n
 ~
-Well-oiled studded leather encases a well-trained and fit body of
-this soldier.  An open-faced helm, with nose guard and chinstrap,
-makes it hard to make out any facial features of the soldier.  A
-steel-banded buckler promptly displays the symbol of Newhaven while a
-clothed hand firmly grasps the hilt of a longsword.  A spotless
-blue cloak flows about the warrior’s body.
+&+w   This &+rprivate&+w is dressed in a &+Lsuit&+w of studded-leather &+yarmor&+w which has been
+&+wmolded by heavy use to his body.  His face is obscured by the nose guard of
+&+wan open-faced &+Lhelm&+w, making it difficult to differentiate the various members
+&+wof the &+RHammer&+w from each other.  The crest of &+LNewhaven&+w has been burned into
+&+wthe material of his &+ychestplate&+w, marking his allegiance for all to see.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 1 0 -1
 22 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35229
 lieutenant knight sword guard~
-&+Cthe lieutenant&N~
-&+CA Lieutenant&+W of the Sword of Newhaven stands here.&N
+the &+Clieutenant&n~
+&+wA &+Clieutenant&+w in the &+cSword&+w of &+LNewhaven+w stands here.&n
 ~
-Sparkling links of silver and steel chainmail encases a well
-trained and fit body of this lieutenant.  An open-faced helm,
-with nose guard and chinstrap, makes it hard to make out any
-facial features of the soldier.  A steel round shield promptly
-displays the symbol of Newhaven while an armored hand firmly grasps
-the hilt of a longsword.  A spotless white cloak adorned with
-tiny symbols of Newhaven flows about the warrior’s body.
+&+w   Sparkling links of silver and steel &+cc&+wha&+ci&+wn&+cma&+wi&+cl&+w encase the well-trained and
+&+wfit body of this &+Clieutenant&+w.  An open-faced &+Lhelm&+w, with nose guard and strap,
+&+wmakes it hard to make out any facial features of the soldier.  A steel round
+&+cshield&+w promptly displays the crest of Newhaven while an armored hand firmly
+&+wgrasps the hilt of a longsword.  A spotless white &+Wcloak&+w, adorned with the
+&+wiconography of &+LNewhaven&+w, flows about this &+Clieutenant&+w's body.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1140852746 10496 1006649359 0 0 0 0 0 0 S
+PH 0 8 2 -1
 27 0 0 5d5+200 0d0+0
 0.0.0.0 0
 8 8 1
 #35230
 lieutenant hammer knight guard~
-&+Cthe lieutenant&N~
-&+CA Lieutenant&+W of the Hammer of Newhaven stands here.&N
+the &+Rlieutenant&n~
+&+wA &+Rlieutenant&+w in the &+rHammer&+w of &+LNewhaven&+w stands here.&n
 ~
-Sparkling links of silver and steel chainmail encases a well
-trained and fit body of this lieutenant.  An open-faced helm,
-with nose guard and chinstrap, makes it hard to make out any
-facial features of the soldier.  A steel round shield promptly
-displays the symbol of Newhaven while an armored hand firmly grasps
-the hilt of a longsword.  A spotless blue cloak adorned with
-tiny symbols of Newhaven flows about the warrior’s body.
+&+w   Sparkling links of silver and steel &+cc&+wha&+ci&+wn&+cma&+wi&+cl&+w encase the well-trained and
+&+wfit body of this &+Clieutenant&+w.  An open-faced &+Lhelm&+w, with nose guard and strap,
+&+wmakes it hard to make out any facial features of the soldier.  A steel round
+&+cshield&+w promptly displays the crest of Newhaven while an armored hand firmly
+&+wgrasps the hilt of a longsword.  A spotless blue &+Bcloak&+w, adorned with the
+&+wiconography of &+LNewhaven&+w, flows about this &+Clieutenant&+w's body.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1140852746 10496 1006649359 0 0 0 0 0 0 S
+PH 0 1 1 -1
 28 0 0 5d5+250 0d0+0
 0.0.0.0 0
 8 8 1
 #35231
-citizen male man~
-&+Cthe citizen&N~
-&+CA citizen of Newhaven is walking here.&N
+citizen civilian male man~
+a &+Ccitizen&n~
+&+wA &+Ccitizen&+w of &+LNewhaven&+w is walking here.&n
 ~
-Well-groomed and clean cut, a typical male civilian of Newhaven
-makes his way down the maze like roadways.  His clothes are well
-tailored and very clean.
+&+w   Well-groomed and clean cut, a typical male &+Ccivilian&+w of &+LNewhaven&+w makes his
+&+wway down the maze-like &+yroadways&+w.  His clothes are of a fine quality; tailored
+&+wby skilled hands and kept very clean.  By the way he is walking and talking,
+&+wyou get the feeling he considers himself to be very important.&n
 ~
 2252 0 0 0 0 0 0 0 1000 S
-PH 0 0 0 -1
+PH 0 1 0 -1
 19 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35232
-citizen female woman~
-&+cthe citizen&N~
-&+cA citizen of Newhaven stands here.&N
+citizen civilian female woman~
+a &+ccitizen&n~
+&+wA &+ccitizen&+w of &+LNewhaven&+w stands here.&n
 ~
-Perfectly styled hair and flawless skin, a typical female civilian
-of Newhaven makes her way down the maze like roadways shopping the
-day away.  Her clothes are well tailored and very clean.
+&+w   With perfectly styled hair and flawless skin, this typical female &+ccivilian
+&+wof &+LNewhaven&+w makes her way down the maze like roadways shopping the day away.
+&+wHer clothes are well tailored and very clean, a point of apparent pride to the
+&+Ccitizens&+w of the city.  You can tell by her demeanor that she considers all
+&+wthose not from &+LNewhaven&+w to be of a lesser station in life.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 32 0 -1
 18 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35233
 girl small~
-&+ca girl&n~
-&+cA small girl is playing here.&n
+a &+cgirl&n~
+&+wA small &+cgirl&+w is playing here.&n
 ~
-Blonde locks of hair rustles as she plays with a stuffed doll.
-Her skin is pale as snow and her petite body looks like it could
-be crushed with the slightest force.
+&+w   Blonde locks of &+Yhair&+w rustle as this &+cgirl&+w giggles and plays with a stuffed
+&+Wdoll&+w.  Her skin is pale as snow and her frail body looks like it could easily
+&+wbe crushed with the slightest force.  All in all, this &+Cchild&+w exudes the joy
+&+wand innocence of youth.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 1 0 -1
 15 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35234
 boy small~
-&+Cthe boy&N~
-&+CA small boy is running about here.&N
+the &+Cboy&n~
+&+wA small &+Cboy&+w is running about here.&n
 ~
-Short brown hair has been spiked and trimmed short.  He plays
-with a wooden sword, pretending to be a paladin of Newhaven.  He
-is well fit and very agile.
+&+w   This &+Cboy&+w twirls and leaps as he lunges about with a wooden &+ysword&+w.  With his
+&+wbrown &+yhair&+w cut short and spiky, he gives a decent impression of the &+Wpaladins
+&+wof &+LNewhaven&+w that he emulates.  Though he is quite young, all of his constant
+&+wantics have kept him physically fit and quite agile.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+PH 0 8 0 -1
 14 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35235
-cat large~
-&+Lthe cat&N~
-&+LA large furry cat is resting here.&N
+cat large furry~
+a &+Lcat&n~
+&+wA large furry &+Lcat&+w is prowling the &+yarea&+w.&n
 ~
-&+LA massive ball of black fur and fluff lays here basking in the sun&N
-&+Lgrooming itself.  Its long tail occasionally plops and slithers&N
-&+Lacross the ground in a playful manner.&N
+&+w   A massive &+Lball&+w of black fur and fluff lays here, basking in the sun as it
+&+wgrooms itself.  Its long &+Ltail&+w occasionally slaps against, or slides across,
+&+wthe &+yground&+w in a playful manner.  Despite this, something in its demeanor warns
+&+wyou against underestimating this &+Lfeline&+w of questionable domesticity.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-A 0 0 0 -1
+8 0 0 0 0 0 0 0 -100 S
+ae 0 1 0 -1
 7 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35236
 wyiarn priest high~
-&+WWyiarn Truesteel&N~
-&+WWyiarn Truesteel,&+b High Priest of Newhaven is praying here.&N
+&+WWyiarn &+cTrue&+Csteel&n~
+&+WWyiarn &+cTrue&+Csteel&+w, &+CHigh &+cPriest&+w of &+LNewhaven&+w is praying here.&n
 ~
-&+YLong strands of Blonde hair flows about a finely tuned muscled body
-&+Yof pale flesh while his amber eyes are heavily intensified by thick
-&+Ybushy eyebrows.  His lips are mauve and shiny.  An aura of sheer
-&+Yholy force enshrouds his body with brilliance.
+&+w   Long strands of blond &+Yhair&+w flows about a finely tuned, well-muscled body of
+&+wpale flesh and his amber eyes are heavily intensified by thick bushy &+Yeyebrows&+w.
+&+wHis lips are &+ymauve&+w and shiny, having long ago stretched thin with age.  An
+&+Waura&+w of sheer holy force enshrouds his body with brilliance.&n
 ~
-8 0 0 0 0 0 0 0 1000 S
-PH 0 33 0 -1
+1090521160 0 0 0 0 0 0 0 1000 S
+PH 0 8 1 -1
 46 0 0 0d0+0 0d0+0
 0.0.0.0 0
-8 8 1
+6 8 1
 #35237
-riverlan captain hammer knight~
-&+RRiverlan&+W Stromtorlin&N~
-&+RThe Captain&+W of the Hammers of Grim Jaw is standing here.&N
+riverlan strom dagger captain~
+&+cRiver&+Clan&+y Strom&n~
+&+RCaptain&+y Strom&+w of the &+cDagger&+w of &+LNewhaven&+w scans the area.&n
 ~
-Spiked blond hair crowns a wide skull of flesh and bone.  Large
-oval blue eyes peer from under a visor of highly polished silver
-plated steel.  A huge blue and white streaked plume protrudes
-from the top of the visor helm as the knight’s armor clad body
-ripples with muscular tension.  His right hand grips a longsword
-while a tower shield has been strapped onto his left arm.  The
-symbol of a scale and balance has been emblazoned on a blue tabard
-that drapes across his torso and back.  A small tattoo of a weight
-scale can be seen under his right eye.
+&+w   Spiked blond &+Yhair&+w crowns a wide skull of crags and edges.  Wide, oval &+cazure
+&+weyes peer from under the &+Lvisor&+w of highly polished silver-limned &+Csteel&+w.  A dyed
+&+Wfe&+Ba&+Wt&+Bhe&+Wr&+w of blue and white sprouts from the crown of his enormous &+Lhelm&+w, while a
+&+Btabard&+w bearing the &+Lsymbol&+w of a scale and balance drapes over his shoulders.  A
+&+clongsword&+w is gripped in his right hand and a &+Ltower &+yshield&+w has been strapped to
+&+whis left arm.  A &+Ltattoo&+w of a weight scale can be seen beneath his right &+ceye&+w.
+&+wThis man is one of two twins that serve as &+Rcaptains&+w in the defense of &+LNewhaven&+w.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1140852810 10496 1006649359 0 0 0 0 0 -250 S
+PH 0 4096 1 -1
 35 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35238
-melairn captain knight~
-&+RMelairn&+W Stromtorlin&N~
-&+RThe Captain&+W of the Swords of Newhaven is standing here.&N
+melairn strom captain knight~
+&+cMel&+Cairn &+yStrom&n~
+&+RCaptain &+yStrom&+w of the &+CSword&+w of &+LNewhaven&+w is standing guard.&n
 ~
-Spiked blond hair crowns a wide skull of flesh and bone.  Large
-oval blue eyes peer from under a visor of highly polished silver
-plated steel.  A huge blue and white streaked plum protrudes
-from the top of the visor helm as the knight’s armor clad body
-ripples with muscular tension.  His right hand grips a longsword
-while a tower shield has been strapped onto his left arm.  The
-symbol of a scale and balance has been emblazoned on a blue tabard
-that drapes across his torso and back. A small tattoo of a balance
-can be seen under his right eye.
+&+w   Spiked blond &+Yhair&+w crowns a wide skull of crags and edges.  Wide, oval &+cazure
+&+weyes peer from under the &+Lvisor&+w of highly polished silver-limned &+Csteel&+w.  A dyed
+&+Wfe&+Ba&+Wt&+Bhe&+Wr&+w of blue and white sprouts from the crown of his enormous &+Lhelm&+w, while a
+&+Btabard&+w bearing the &+Lsymbol&+w of a scale and balance drapes over his shoulders.  A
+&+clongsword&+w is gripped in his left hand and a &+Ltower &+yshield&+w has been strapped to
+&+whis right arm.  A &+Ltattoo&+w of a balance can be seen beneath his left &+ceye&+w.  This
+&+wman is one of two twins that serve as &+Rcaptains&+w in the defense of &+LNewhaven&+w.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1140852810 10496 1006632975 0 0 0 0 0 0 S
+PH 0 1 3 -1
 35 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35239
-beltorian captain knight~
-&+RBeltorian&+W Stromtorlin&N~
-&+RThe Captain&+W of the Hammers of Newhaven is standing here.&N
+beltorian strom captain knight~
+&+CBelt&+corian &+yStrom&n~
+&+RCaptain &+yStrom&+w of the &+rHammer&+w of &+LNewhaven&+w is standing here.&n
 ~
-Spiked blond hair crowns a wide skull of flesh and bone.  Large
-oval blue eyes peer from under a visor of highly polished silver
-plated steel.  A huge blue and white streaked plum protrudes
-from the top of the visor helm as the knight’s armor clad body
-ripples with muscular tension.  His right hand grips a longsword
-while a tower shield has been strapped onto his left arm.  The
-symbol of a scale and balance has been emblazoned on a blue tabard
-that drapes across his torso and back. A small tattoo outlining a
-scale and balance can be seen under his right eye.
+&+C   Belt&+corian &+yStrom&+w, the oldest of the Strom siblings and &+Rcaptain&+w of the &+rHammer
+&+wof &+LNewhaven&+w.  Unlike his younger brothers, &+CBelt&+corian&+w has grown his blond locks
+&+wlong enough to bind in a loose &+Yponytail&+w at the nape of his neck.  A &+Ltattoo&+w of
+&+wtwo crossed hammers decorates the center of his forehead.  His &+cc&+wha&+ci&+wn&+cma&+wi&+cl&+w is
+&+wcovered by a &+Btabard&+w emblazoned with the &+Lsymbol&+w of a scale and balance.  Held
+&+win his massive hands, a giant &+Lwarhammer&+w crafted from the finest &+Csteel&+w stands
+&+wwith its head upon the &+yground&+w.  Two azure &+ceyes&+w glare out from under a thick
+&+wbrow, scanning the area for any sort of excitement.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1140852810 2304 1006649359 0 0 0 0 0 0 S
+PH 0 1048576 1 -1
 35 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35240
-warder knight~
-&+Ca warder&N~
-&+CA Warder of Newhaven roams the streets here.&N
+warder knight male~
+a &+Cwarder&n~
+&+wA &+Cwarder&+w of &+LNewhaven&+w roams the &+ystreets&+w.&n
 ~
-Rings of highly polished steel have been sewn onto a suit of well
-made leather armor offering its protective nature to this soldier
-of justice.  His hair has been cut very short so that no locks of
-hair would protrude form under his open-faced helm.  A blue tabard
-has been draped across his front and back emblazoned with a balance
-and scale symbol in white.  His eyes constantly scan the surrounding
-area looking for any signs of trouble or law breaking individuals.
+&+w   Rings of highly polished &+csteel&+w have been fastened to a &+Lsuit&+w of well-made
+&+wleather &+yarmor&+w, offering its protective nature to this soldier of justice.  His
+&+Yhair&+w has been cut very short so that nothing would protrude from under the rim
+&+wof his open-faced &+chelm&+w.  He is wearing a blue &+Btabard&+w emblazoned with a balance
+&+wand scale crest in white.  His &+yeyes&+w constantly scan the surrounding &+yarea&+w in a
+&+wvigilant search for any signs of trouble.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
-26 0 0 5d5+150 0d0+0
+PH 0 1 0 -1
+24 0 0 5d5+150 0d0+0
 0.0.0.0 0
 8 8 1
 #35241
 warder knight female~
-&+Ba warder&N~
-&+BA female Warder of Newhaven strolls along here.&N
+a &+cwarder&n~
+&+wA &+cwarder&+w of &+LNewhaven&+w strolls about the &+yarea&+w.&n
 ~
-Rings of highly polished steel have been sewn onto a suit of well
-made leather armor offering its protective nature to this soldier
-of justice.  Her hair has been woven in tight braids and curled
-up behind her head so that no locks of hair would protrude from
-under her open-faced helm.  A blue tabard has been draped across
-her front and back emblazoned with a balance and scale symbol in
-white.  Her eyes are very narrow and alert constantly scanning for
-any signs of trouble or who would break the law.
+&+w   Garbed in a lustrous suit of &+cri&+wn&+cg&+wma&+ci&+wl, this &+cwarder&+w is well-protected from
+&+wthe general dangers that accompany guarding a relatively prosperous &+Lcity&+w. Her
+&+Lhair&+w has been pulled back and tied so that nothing escapes the confines of the
+&+wrim of the &+chelm&+w adorning her head.  She is wearing a white &+Wtabard&+w emblazoned
+&+wwith the balance and scale crest of &+LNewhaven&+w in blue.  Her eyes are a whirl of
+&+wmotion as she scans the &+yenvironment&+w for anything that might indicate something
+&+wis amiss.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
-24 0 0 5d5+150 0d0+0
+8 0 0 0 0 0 0 0 750 S
+PH 0 8 0 -1
+26 0 0 5d5+150 0d0+0
 0.0.0.0 0
 8 8 2
 #35242
-librarian small~
-&+Lthe librarian&N~
-&+LA small studious librarian sits here.&n
+librarian small studious~
+the &+Llibrarian&n~
+&+wA small, studious &+Llibrarian&+w sits here.&n
 ~
-&+wMilky skin covers her frail frame of bones like&n
-&+wa canvass waiting color.  Eyes covered in a &+Wwhite&N
-&+Wfilm&+w glance up at you, then return to the book she is&n
-&+wcurrently destroying.&n
+&+w   Milky &+Lskin&+w drapes over the &+Wbones&+w of her frail frame like an ancient canvas
+&+wawaiting an artist's application of color.  &+MEyes&+w of pale pink roll in their
+&+wsockets and briefly alight upon you before slowly returning to the &+ybook&+w she is
+&+win the process of destroying.&n
 ~
-10 0 0 0 0 0 0 0 1000 S
-PG 0 17 0 -1
+10 0 0 0 0 0 0 0 -1000 S
+PG 0 4194304 2 -1
 36 3 55 15d25+112 2d6+1
 88.73.1.0 4500
 8 8 1
 #35243
-zombie esliae knight undead~
-&+Ythe zombie of &+LEsliae Ji'Zaman&N~
-&+YThe zombie of &+LEsliae Ji'Zaman stands here.&N
+zombie esliae jizaman ji'zaman undead~
+the &+czombie&n of &+WEsliae Ji'Zaman&N~
+&+wThe &+czombie&+w of &+WEsliae Ji'Zaman&+w sways here.&N
 ~
-Scraps of hair once ivory-white lie limply, covered in blood.
-The zombie wears rusty platemail, a symbol emblazoned upon
-the breastplate is partially covered in rdied blood.  She
-grasps a sword in her right hand while a large tower shield
-protects her flanking left side.
+&+w   Scraps of &+Whair&+w, once ivory-white, lie limply upon her shoulders and drip
+&+ci&+gc&+ch&+go&+cr&+w.  The &+Lzombie&+w wears rusty &+cplatemail&+w, a symbol hammered into the breast
+&+wis partially obscured by dried &+rb&+Rl&+ro&+Ro&+rd&+w.  She grasps a &+Wsword&+w in her right hand
+&+wwhile a large &+Ltower &+yshield&+w protects her left fank.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+zo 0 1 1 -1
 26 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35244
-bevelin knight~
-&+Ythe zombie of &+LBevelin Tisvin&N~
-&+YThe zombie of &+LBevelin Tisvin stands here.&N
+bevelin tisvin zombie knight~
+the &+czombie&+L of &+mBevelin &+LTisvin&N~
+&+wThe &+czombie&+w of &+mBevelin &+LTisvin&+w groans and shambles.&n
 ~
-Eyes of blood red gaze about the surrounding area
-searching for those waiting to be judged.  His large mass
-ripples with finely cut muscle and grace.  He has been
-completely armored in a set of silver platemail while
-grasping a large halberd with his two hands.  A large blue
-cloak drapes down his back, prominently displaying the
-symbol of Newhaven for all to see.
+&+R   Eyes&+w of blood &+rred&+w gaze out over the &+yarea&+w, searching for those waiting to be
+&+wjudged.  Where it still clings to the &+Wbone&+w, remnants of this &+Lknight&+w's onetime
+&+wmuscular flesh is now rotting and turning a putrid black.  The &+csilver&+w of his
+&+cpl&+La&+ct&+Lem&+ca&+Lil&+w is covered in a black &+Lpatina&+w, much as the &+cha&+yl&+cb&+yard&+w locked in his left
+&+whand has been damaged by heavy oxidation.  The tattered remains of a &+Bcloak&+w are
+&+wexpending their remaining efforts to stay in residence about it's wearer.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+74 3 0 0 0 0 0 0 0 S
+zo 0 8 2 -1
 26 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35245
-lesair vampire magistrate high~
-&+rthe vampire of &+LLeSair I'villianda&N~
-&+rThe vampire of the &+LHigh Magistrate stands here.&N
+lesair vampire magistrate high ivila i'vila~
+the &+rvampire&+L of &+cLeSair &+CI'vila&n~
+&+wThe &+rvampire&+w of the &+MHigh &+mMagistrate&+w stands here.&n
 ~
-High arched eyebrows accent eyes of emerald green.  Her
-lips are extremely narrow as her slender high cheekbones
-triangulate her face down to her pointed chin.  Her skin
-is pale and shiny, stretching across a petite frame of bone.
+&+w   High arched &+yeyebrows&+w accent eyes of emerald &+ggr&+Gee&+gn&+w.  Her lips are extremely
+&+wnarrow as her slender, high cheekbones triangulate her face down to her pointed
+&+wchin.  Her &+cskin&+w is deathly pale and matte, stretched thin across a frame of
+&+wlittle more than &+Wbones&+w.&n
 ~
-10 0 0 0 0 0 0 0 -1000 S
-UV 0 1 0 -1
+1073875018 5 0 0 268468256 2 0 16781312 -1000 S
+UV 0 16777216 2 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35246
 blacksmith man~
-&+Ythe zombie of a &+Lblacksmith&N~
-&+YThe zombie of a &+Lmassive man is here hard at work.&N
+the &+czombie&+w of a &+Lblacksmith&n~
+&+wThe &+czombie&+w of a &+Lblacksmith&+w works, mindlessly, here.&n
 ~
-Locks of sweat soaked yellowish brown hair sticks to the
-back of his thick neck as he works on a horseshoe.  His
-massive arms ripples with muscles with each hammering
-stroke of the hammer onto the anvil.  His eyes are very
-dark and patches of scruff adorn his face.  His hands and
-arms have been stained with soot while his thick leather
-apron continues to take punishment from his daily tasks.
+&+w   This wretched creature once demanded the awe of the other &+ccitizens&+w of the
+&+wrealms.  Before his &+Lmeat&+w hung rotting from his &+Wbones&+w, he had wielded command
+&+wof the &+Cmetals&+w dug from the &+yearth&+w.  Now, he shuffles about in vague memory of
+&+whis past life and driven by an insatiable hunger for &+mf&+Ml&+me&+Ms&+mh&+w.&n
 ~
-2056 0 0 0 0 64 0 0 -1000 S
-U 0 1 0 4
+2058 0 0 0 0 4290 0 0 -1000 S
+zo 0 33554432 2 3
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35247
-skeleton boy hand stable undead~
-&+Wthe skeleton of a stable hand&N~
-The &+Wskeleton&N of a young boy is working here.
+skeleton young boy hand stable undead~
+the &+Wskeleton&n of a &+ystable hand&n~
+&+wThe &+Wskeleton&+w of a young &+yboy&+w is lurking here.&n
 ~
-Eyes of dull gray gleam with excitement as the young boy
-dips several horseshoes into a barrel of water.  Beads of
-sweat coat his entire plush face.  He is almost entirely
-soaked with sweat and soot from the raging fire of the
-blacksmith's forge.
+&+w   With the exception of rotting &+Mtendons&+w and &+mligaments&+w that hold him together,
+&+wthis young &+yboy&+w is little more than an ambulatory &+Wskeleton&+w.  His eye &+Lsockets
+&+whave long been emptied of their contents and patches of scalp, including a few
+&+werrant tufts of &+Yhair&+w, still cling to the bone of his &+Wskull&+w.  The progressive
+&+wstate of his decay is made more obvious when taking into account the various
+&+wmissing &+Wbones&+w of his hands and feet, including the entire left arm below the
+&+welbow.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+sk 0 1 0 -1
 10 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35248
-zombie equerry newhaven man knight undead~
-the &+Yzombie&N of the &+Wequerry&N~
-The &+Yzombie&N of the &+cNewhaven &+Wequerry&N is standing here.
+zombie equerry man knight undead~
+the &+czombie&+L of the &+Wequerry&n~
+&+wThe &+czombie&+L of the &+LNewhaven &+Wequerry&+w shuffles about the &+yarea&+w.&n
 ~
-Clad in a brilliantly polished suit of chainmail armor, his
-eyes carefully scan the roadway for any signs of trouble.
-A huge white plum sprouts from the center of his partially
-closed-faced helmet as his hand firmly grips the hilt of
-his longsword.
+&+w   Dressed in a decaying suit of &+cch&+Ca&+ci&+Cnm&+ca&+Ci&+cl&+L armor&+w, the &+czombie&+w of this former
+&+Wequerry&+w still mindlessly performs the tasks of his prior existence.  A huge
+&+Lhelmet&+w covers most of the ruin he calls a face and a rusted &+Llongsword&+w hangs
+&+wfrom the grip of his right hand.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+1073743944 3 0 0 0 4290 0 0 0 S
+zo 0 16384 2 -1
 34 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35249
-skeleton page young undead~
-the page~
-The &+Wskeleton&N of a young page stands ready to serve.
+skeleton page boy young undead~
+the &+Wskeleton&+w of a &+cpage&n~
+&+wThe &+Wskeleton&+w of a young &+cpage&+w shuffles about aimlessly.&n
 ~
-Padded leather armor covers this man's entire body.  His
-body is heavily defined by his muscular definition due to
-his rigorous training to one day become a knight of Newhaven.
-His black hair has been cut short and his face clean shaven.
-He carries a small short sword in his right hand.
+&+w   This &+Wskeleton&+w wanders the area without the aid of purpose or a conscious
+&+wmind beyond the desire to consume &+rf&+Rl&+re&+Rs&+rh&+w.  The leather &+yarmor&+w, which once offered
+&+wthis page protection in his former life, is now nothing more than expensive
+&+Ltatters&+w of material hanging together by sheer strength of will.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+sk 0 1 0 -1
 13 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35250
 zombie knight stronghold undead~
-the stronghold knight~
-The &+Yzombie&N of a &+Lstronghold knight&N stands watch here.
+the &+czombie&+w of a &+Lstronghold &+Bknight&n~
+&+wThe &+Lzombie&+w of a &+Lstronghold &+Bknight&+w stands watch here.&n
 ~
-Clad in highly polished platemail, the knight remains
-motionless.  His stance is almost statuesque.  The knight
-scans the surrounding area for any of those that would
-attempt to break the laws of the city.
+&+w   Clad in a battered set of &+cplatemail&+w, this &+Lzombie&+w still keeps guard here in
+&+wan extreme display of devotion to the commitments of his prior life.  &+mMu&+Ms&+mc&+Mle
+&+wrots upon his &+Wbones&+w, giving off a stench so offensive that you find yourself
+&+win a constant fight not to gag.  His one remaining &+yeye&+w constantly flicks back
+&+wand forth as he scans the &+Lcity&+w for any perceived threats.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+zo 0 1 0 -1
 23 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35251
 vampire knight grand undead~
-a &+rvampire&n of a grand knight~
-The &+rvampire&n of a &+Lgrand knight&N strolls along here.
+a &+rvampire&n of a &+Wgrand &+Lknight&n~
+&+wThe &+rvampire&+w of a &+Wgrand &+Lknight&+w strolls along here.&n
 ~
-Clad in full platemail, the knight scans the surrounding
-area for any signs of danger.  His massive great helm and
-visor has been topped with a vibrant blue and white plume.
-His blue cloak has been fastened to his shoulder plates
-making it easier to control if a fray should arise.
+&+w   Garbed in a tarnished set of &+cplatemail&+w, this &+rvampire&+w is one of the grand
+&+wknights who appear to be tasked with defending this nightmarish &+Lcity&+w.  A huge
+&+chelm&+w with a grilled &+Lvisor&+w rests upon his head, making him appear that much
+&+wmore formidable than he already was.  Attached to his shoulder &+cplates&+w, a worn
+&+wand tattered blue &+Bcloak&+w lends this twisted &+Lknight&+w the only sense of majesty
+&+whe has.&n
 ~
-8 0 0 0 0 0 0 0 -1000 S
+8 5 0 0 268468512 0 0 0 -1000 S
 UV 0 1 0 -1
 26 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35252
 wraith knight commander undead~
-the &+wWraith&N of a knight commander~
-The &+Lwraith&N of a &+Wknight commander&N of Newhaven stands here.
+the &+Wwraith&+w of a &+Lknight &+rcommander&n~
+&+wThe &+Wwraith&+w of a &+Lknight &+rcommander&+w of &+LNewhaven&+w stands here.&n
 ~
-Stern eyes scan the area for any wrong doings as a plume
-of crystal-white blue sprouts from the top of his enormous
-battle helm.  A cloak of finely woven blue wool has been
-attached to his armor's shoulder guards, which carelessly
-drapes down his back.  The tip of a massive two-handed sword
-presses firmly against the stone road while his strong
-gauntlet hands grasp the hilt of the blade.
+&+w   The air about this &+Wcreature&+w is noticably colder than the rest of the &+yarea&+w,
+&+wan obvious side-effect of his &+Lundead&+w nature.  He is still dressed in the garb
+&+whe wore in life, whether this is a result of spectral projection or an effect
+&+wof the curse that created him in the first place is beyond your ability to
+&+wdiscern.  He grips a massive, two-handed &+Csword&+w in his &+cgauntleted&+w hands.&n
 ~
 10 0 0 0 0 0 0 0 -1000 S
 wr 0 512 0 -1
@@ -864,78 +847,78 @@ wr 0 512 0 -1
 8 8 0
 #35253
 vampire armorer newhaven undead~
-the armorer~
-The &+rvampire&N of the Newhaven armorer is hard at work here.
+the &+Lvampire&+w of an &+garmorer&n~
+&+wThe &+rvampire&+w of the &+LNewhaven &+garmorer&+w is hard at work here.&n
 ~
-Long brown hair sticks to his neck has his soot stained body
-ripples with massive muscle tension.  His eyes are dim and
-tired looking, yet he keeps on working.
+&+w   This &+rcreature&+w toils here, crafting armor for the army of undead that has
+&+wamassed in this unholy perversion of a &+Lcity&+w.  His long, brown &+yhair&+w is tied up
+&+win a loose &+yponytail&+w between his shoulders.  Every so often his exertions cause
+&+whim to reveal his nature through glimpses of the &+Wfangs&+w that inhabit his mouth.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-UV 0 0 0 -1
+10 5 0 0 268468512 0 0 0 0 S
+UV 0 1 2 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35254
 zombie assistant young man undead~
-the assistant~
-The &+Yzombie&N of a young man is here assisting the armorer.
+the &+czombie&+w of an &+yassistant&n~
+&+wThe &+czombie&+w of a young &+yman&+w is here assisting the &+garmorer&+w.&n
 ~
-This young man has been covered in soot and sweat, which seems
-to continuously drip from his chin as he assists the Armorer.
-His eyes burn with an inner intensity has he watches the master
-craftsman construct a well-balanced shield of steel and iron.
-He pays you no attention at all.
+&+w   This &+czombie&+w is covered in  &+Lsoot&+w and &+ygrime&+w that has mixed with the &+ci&+gc&+ch&+go&+cr&+w that
+&+wcovers much of his rotting body.  Thick &+cca&+Ct&+ca&+Cra&+cc&+Cts&+w cloud his eyes, but do not
+&+wstop him from staring with an unhealthy intensity at his &+rvampiric&+w master.  If
+&+wyou ignore the stench and the missing anatomy, this &+czombie&+w doesn't seem to be
+&+wmuch worse off than he was in life.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+zo 0 1 0 -1
 18 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35255
-baker spectre undead~
-the &+Lspectre&N of the &+Lbaker&N~
-The &+Lspectre&N of the &+LNewhaven baker&N stands here.
+baker female woman spectre undead~
+the &+Lspectre&+w of the &+Wbaker&n~
+&+wThe &+Lspectre&+w of the &+LNewhaven &+Wbaker&+w floats here.&n
 ~
-An enormous woman stands behind the counter grinning at you.
-Rolls of fat ripple as she giggles in delight at yet another
-masterpiece of hers, a three tiered white vanilla cake.  Her
-face is plump and thick, a huge second chin giggles with her
-every motion.  Her lips are thick and deep red.  Her eyes are
-of crystal blue and emit a friendly feeling to all those who
-gaze at her.
+&+w   The &+Lspectre&+w of an enormous &+Cwoman&+w floats behind the &+ycounter&+w, an evil rictus
+&+wspread across her corpulent face.  The &+Wteeth&+w in her face taper to points just
+&+wlike the unnaturely long fingers that cap her hands.  Despite lacking physical
+&+wreality, the huge gullet beneath her jaw still jiggles with her every motion.
+&+wHer thick &+clips&+w are slightly blued by &+Ldeath&+w and her eyes radiate an consuming
+&+whatred that seems to punch you in the chest whenever she looks at you.&n
 ~
-10 0 0 0 0 0 0 0 -1000 S
+2058 5 0 0 0 0 0 0 -1000 S
 sp 0 16384 0 -1
 32 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35256
-vampire ytarae innkeeper undead~
-the &+rvampire&N of &+WYtarae Retoriva&N~
-&+rThe vampire of the Innkeeper stands here welcoming everyone.&N
+vampire ytarae retoriva innkeeper undead~
+the &+rvampire&+w of &+WYtarae &+wRetoriva&n~
+&+wThe &+rvampire&+w of the &+yinnkeeper&+w has set her &+Lden&+w here.&n
 ~
-Raven-black hair has been pulled and tied to the back of her
-head.  Her skin is extremely pale and fine.  Her eyes are dark
-brown, radiating like two voids within her chiseled face.  Her
-lips are smooth and thin, yet her smile instantly brings a warm
-happy feeling to you.
+&+w   Long, raven-black &+Lhair&+w hangs loose about this &+rvampire&+w's head and frame an
+&+wangular face.  Two completely black &+Lorbs&+w stare out of her eye sockets, which
+&+win combination with her pale skin gives her a most unnatural appearance.  Row
+&+wupon row of &+Wfangs&+w can be glimpsed behind her vibrant red &+Rlips&+w, sending shivers
+&+wdown the spine of any who are forced to spend time in her presence.&n
 ~
-8 0 0 0 0 0 0 0 -1000 S
+1107429450 4294955716 1107296256 511 268435488 262146 536870912 50331648 -1000 S
 UV 0 4096 0 -1
 40 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 2
 #35257
-lich jelfelir artisan undead~
-the &+Mlich&N of &+WJelfelir Ulikira&N~
-The &+Mlich&N of an &+Lartisan&N is busily at work here.
+lich jelfelir ulikira artisan undead~
+the &+mlich&+w of &nJelfelir Ulikira&n~
+&+wThe &+mlich&+w of an &+Martisan&+w is busily at work here.&n
 ~
-Sandy blonde hair has been pulled and tied to the back of his
-body by a thick leather strap.  A light white powder seems to
-have caked itself to his wet sweaty skin making it appear with
-a marble like resemblance.  His eyes carefully scan over a block
-of stone, taking in every detail while ignoring you totally.
+&+w   This tall and lanky &+mlich&+w stands hunched over his work, his hands flying to
+&+wand fro as he secures a &+Wbone&+w here or drips &+rb&+Rl&+ro&+Ro&+rd&+w there.  A &+Lstone &+Martisan&+w in
+&+wlife, Jelfelir Ulikira couldn't shake his urge to create once he passed into
+&+wthe afterlife.  These days, however, instead of &+Lstone&+w, Jelfelir now works his
+&+wart in &+mf&+Ml&+me&+Ms&+mh&+w and &+Wbone&+w.  He is an &+Martist&+w of death in all senses of the term.&n
 ~
 395278 0 0 0 0 0 0 0 -1000 S
 ul 0 512 0 -1
@@ -943,109 +926,109 @@ ul 0 512 0 -1
 0.0.0.0 0
 8 8 1
 #35258
-dibbly gnome~
-Dibbly Libaralienarfumbucle~
-A skinny gnome with a HUGE nose is chained here.
+dibbly libalian gnome skinny~
+&+RDibbly &+rLibalien&n~
+&+wA skinny &+Rgnome&+w with a huge &+rnose&+w is &+Lchained&+w here.&n
 ~
-Short and skinny with a HUGE nose, this little gnome looks at you
-with a wan smile filled with pain.  He makes a gesture as if to bow,
-only to pause abruptly as his chains halt any movements.
+&+w   Short and skinny with a huge &+rnose&+w, this little &+Rgnome&+w looks at you with a
+&+wwan smile filled with pain.  He makes a gesture as if to bow, only to pause
+&+wabruptly as his &+Lshackles&+w severely limit any movement.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-PG 0 0 0 -1
+PG 0 16384 1 -1
 31 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35259
-demilich artos avenger knight undead~
-The &+LDemi&+MLich&N Artos Chistori~
-The &+LDemi&+MLich&N Artos Chistori stands here solemnly.
+demilich artos chori lich demi-lich undead~
+&+CArtos &+cChori&+w, &+Ldemi-&+mlich&+w of &+LTalos&n~
+&+CArtos &+cChori&+w, the &+Ldemi-&+mlich&+w of &+LTalos&+w, stands here solemnly.&n
 ~
-Eyes of seaweed-green gaze at a list of those waiting to be
-judged by the Magistrate.  His mass ripples with finely cut
-muscle.  He has been completely armored in a set of ornately
-etched platemail. A scabbard, containing a longsword, hangs
-loosely around his waist.  A large blue cloak drapes down his
-back, prominently displaying the symbol of Newhaven.
+&+w   This &+Ldemi-&+mlich&+w towers over the area, making praise to someone or something
+&+wcalled &+LTalos&+w.  His eyes burn with an otherwordly &+rf&+Ri&+rr&+Re&+w, drowning his body in a
+&+wlayer of shadows even when he is standing in full light.  He is armored her to
+&+wtoe in a set of ornately etched &+cplatemail&+w.  A &+Lscabbard&+w, containing  his &+csword&+w,
+&+whangs loosely about his waist.  The remains of a blue &+Bcloak&+w hang to the middle
+&+wof his back, a &+Lcrest&+w of some kind having at one time decorated its surface.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+10 0 0 0 0 0 0 0 -1000 S
+ul 0 16 2 -1
 41 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35260
-skeleton scribe court undead~
-the &+Wskeleton&N of a court scribe~
-The &+Wskeleton&N of a court scribe sits here recording every word.
+skeleton scribe court undead male~
+the &+Wskeleton&+w of a &+Lcourt &+Wscribe&n~
+&+wThe &+Wskeleton&+w of a &+Lcourt &+Wscribe&+w sits here recording every word.&n
 ~
-A simplistic white hooded robe clothes this scribe's body.
-The hood of the robe covers the person's entire head making
-it hard to see any facial features.  A long frilly quill
-scribbles quickly and endlessly taking every word spoke by
-the Magistrate onto paper.
+&+w   A shredded, white-hooded &+crobe&+w clothes this &+Wscribe&+w's body.  The &+Whood&+w of the
+&+crobe&+w is so destroyed it barely covers the &+Wskull&+w of this miserable being.  A
+&+wwicked looking &+Ldagger&+w is gripped in his right hand, with which he is carving
+&+wstrange designs into the surface of the &+ydesk&+w at which he sits.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+sk 0 32 2 -1
 20 0 0 0d0+0 0d0+0
 0.0.0.0 0
-8 8 0
+6 8 0
 #35261
-skeletal petitioner court undead~
-the court petitioner~
-A skeletal petitioner of the court is here pleading his case.
+skeletal petitioner court skeleton~
+the &+Wskeleton&+w of a &+rpetitioner&n~
+&+wA &+Wskeletal &+rpetitioner&+w of the &+Lcourt&+w sways before the &+ybench&+w.&n
 ~
-A long blue robe drapes across this man giving him a very
-regal appearance.  A white rope belt has been tied across
-his waist while a heavy medallion emblazoned with the holy
-symbol of Newhaven hangs about his neck.
+&+y   Dirt&+w and &+Lgrime&+w is caked into the tattered &+rfabric&+w of this &+Wskeleton&+w's once
+&+wregal raiments.  Where flesh had once filled its folds, the cloth of his &+Rrobe
+&+wnow hangs loose about his &+Wskeleton&+w.  The soiled white, rope &+Wbelt&+w that had held
+&+whis clothing to his hips is hanging loose in the hoops that secure it to the
+&+Rrobe&+w.  A heavy &+cmedallion&+w emblazoned with the crest of &+LNewhaven&+w slowly &+yrusts
+&+won it's chain about the &+rpetitioner&+w's neck.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+U 0 4096 0 -1
 23 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35262
 skeletal skeleton lawkeeper knight undead~
-the skeletal lawkeeper~
-A skeletal lawkeeper of Newhaven stands here.
+the &+Wskeletal &+Blawkeeper&n~
+&+wA &+Wskeletal &+Blawkeeper&+w of &+LNewhaven&+w patrols the &+yarea&+w.&n
 ~
-Eyes gaze about the surrounding area searching for any signs
-of disruption. He has been completely armored in a set of
-platemail while grasping a large two-handed sword with his
-hands.  A large white cloak drapes down his back, prominently
-displaying the symbol of Newhaven.
+&+w   Two empty &+Lsockets&+w stare out of the naked &+Wskull&+w of this &+Blawkeeper&+w, casually
+&+wsurveying the &+yarea&+w for any indication of trouble which would require brutal
+&+wintervention.  His dented &+cplatemail&+w has seen better days, its &+Cmetal&+w beginning
+&+wits descent into deterioration through oxidation.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+sk 0 1 0 -1
 24 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35263
-evelosi librarian~
-&+WEvelosi Thal'raylio&N~
-&+WEvelosi Thal'raylio,&+b Librarian of Newhaven is here.&N
+evelosi thal librarian~
+&+mEvelosi &+MThal&n~
+&+mEvelosi &+MThal&+w, &+yLibrarian&+w of &+LNewhaven&+w, paces the &+Lchamber&+w.&n
 ~
-Milky blue eyes peer through a pair of crimson crystal lenses
-and stare at you with a curiosity that makes your bones shiver.
-His skin is extremely wrinkled and aged.  Long white and grey
-hair flow freely about his head, mingling with his extremely
-long beard.  A single white robe, embroidered with intricate
-blue designs, clothes his body.
+&+w   Milky blue &+Ceyes&+w peer through a pair of crimson &+Ccr&+cy&+Cs&+cta&+Cl&+w lenses and stare at
+&+wyou with a curiosity that makes your bones shiver.  His skin is extremely aged
+&+wand wrinkled.  Long white and grey &+Whair&+w flows freely about his head, mingling
+&+wwith his extremely lengthy &+Wbeard&+w.  A single white &+Wrobe&+w, embroidered with
+&+wintricate blue &+Bdesigns&+w, clothes his body.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+8 0 0 0 0 0 0 0 -1000 S
+U 0 512 2 -1
 48 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35264
 zombie scribe man old undead~
-&+wthe zombie of a scribe~
-The &+Yzombie&N of an &+Lold man&+w sits here.
+the &+czombie&+w of a &+Wscribe&n~
+&+wThe &+czombie&+w of an old &+Bman&+w with &+Lstained&+w hands sits here.&n
 ~
-This old man looks extremely tired.  His eyes are red from
-the constant reading he endures each day while his hands have
-become stained with the various colorful inks used in scripting
-the law of Newhaven.
+&+w   The &+czombie&+w of an old &+Bman&+w sways to and fro, his blank eyes out of focus as
+&+wthey stare far into the distance.  His decaying &+Mf&+ml&+Me&+ms&+Mh&+w has been stained by the
+&+wplethora of vibrant &+Links&+w he once used to commit the laws of &+LNewhaven&+w to &+Wpaper&+w.
+&+wHis &+Wskull&+w is completely exposed at the pate where this &+Wscribe&+w has been scalped
+&+wat some previous time.&n
 ~
 8 0 0 0 0 0 0 0 0 S
 zo 0 0 0 -1
@@ -1053,61 +1036,63 @@ zo 0 0 0 -1
 0.0.0.0 0
 8 8 0
 #35265
-acolyte law skeletal undead~
-the acolyte~
-&+WA skeletal &+Bacolyte stands here.&N
+acolyte skeleton undead~
+the &+Wskeleton&+w of an &+cacolyte&n~
+&+wA &+Wskeleton&+w of an &+cacolyte&+w wanders here.&n
 ~
-A simple white robe covers this acolyte's body.  A blue
-rope belt has been tied across his waist supporting a
-thick holy symbol of Newhaven.  He goes about the temple looking
-for imperfections that need to be corrected immediately.
+&+w   This &+Wskeleton&+w is dressed in the rent and tattered &+Wrobe&+w of an &+cacolyte&+w of the
+&+LLaw&+w.  Snagged on the &+Wbone&+w of his hip, a rope &+Bbelt&+w drapes around his waist in
+&+wa comical attempt to support a thick crest of &+LNewhaven&+w.  He wanders about the
+&+Ltemple&+w looking for any imperfections that need to be addressed.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+U 0 2 0 -1
 21 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35266
-zombie brother solemn faith undead~
-a solemn brother~
-A &+Yzombie&N of a &+Lbrother of the faith&N is walking here.
+zombie male brother solemn faith undead~
+a &+czombie&+w of a &+Lsolemn brother&n~
+&+wA &+czombie&+w of a &+Lsolemn brother&+w is ambling about here.&n
 ~
-A long blue robe drapes across the priest's body while a white
-rope belt stretched across his waist while a heavy medallion
-emblazoned with the holy symbol of Newhaven hangs about his neck.
+&+w   This corpulent &+czombie&+w is draped in a black &+Lrobe&+w that has seen much better
+&+wdays.  Like the flesh it contains, the &+cpriest&+w's clothing is rent and decaying
+&+win large swatches.  A silver &+cc&+Ch&+cai&+Cn&+w suspends a heavy &+cmedallion&+w emblazoned with
+&+wthe crest of &+LNewhaven&+w from the zombie's thick neck.  All in all, this creature
+&+wseems to have led a life of comfort and plenty.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+zo 0 64 0 -1
 22 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
 #35267
-zombie sister solemn faith undead~
-a &+Yzombie&N of a solemn sister~
-A &+Yzombie&N of a &+Lsister of the faith&N is walking here.
+zombie female sister solemn faith undead~
+a &+czombie&+w of a &+Wsolemn sister&n~
+&+wA &+czombie&+w of a &+Wsolemn sister&+w shuffles about here.&n
 ~
-A loose fitting blue dress clothes her entire body.  A white
-rope belt has been tied across her waist while a heavy
-medallion emblazoned with the holy symbol of Newhaven hangs about
-her neck.  Her hair has been tied to the back of her head with
-a white piece of cloth.
+&+w   This &+Wsolemn sister&+w is wearing the ruins of a loose-fitting &+Bdress&+w which is
+&+wdraped over her bloated and decomposing &+Lcorpse&+w.  Tied around her waist, a rope
+&+Wbelt&+w tries unsuccessfully to corral the errant strips of cloth that seem to
+&+wconstitute the bulk of her outfit.  A heavy crest of &+LNewhaven&+w hangs from a
+&+cc&+Ch&+cai&+Cn&+w about her neck.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+U 0 128 0 -1
 24 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35268
-skeletal private knight undead~
-&+Wthe skeletal private&N~
-&+WA skeletal private of the Sword of Newhaven is standing here.&N
+skeleton skeletal private sword knight undead~
+a &+Wskeletal &+cprivate&n~
+&+wA &+Wskeletal &+cprivate&+w of the &+LSword&+w of &+LNewhaven&+w stumbles about.&n
 ~
-Well-oiled studded leather encases a well-trained and fit body
-of this soldier.  An open-faced helm, with nose guard and
-chinstrap, makes it hard to make out any facial features of the
-soldier.  A steel-banded buckler promptly displays the symbol
-of Newhaven while a clothed hand firmly grasps the hilt of a longsword.
-A spotless white cloak flows about the warrior's body.
+&+w   This &+Wskeleton&+w is garbed in rotted leather &+yarmor&+w whose iron &+cstuds&+w have begun
+&+wto rust where they haven't already fallen away from the garment.  Sufficient
+&+yleather&+w remains of the &+ychestplate&+w to make out the once proud crest of &+LNewhaven
+&+wthat had been burned into it long ago.  His &+Wskull&+w is obscured by the layout of
+&+whis &+Lhelm&+w, however it was already nearly impossible to differentiate between
+&+wthe various &+cprivates&+w of the &+CSword&+w by their facial features.&n
 ~
 10 0 0 0 0 0 0 0 -1000 S
 U 0 1 0 -1
@@ -1115,51 +1100,52 @@ U 0 1 0 -1
 0.0.0.0 0
 8 8 0
 #35269
-skeletal member hammer grim jaw undead~
-the &+Wskeletal&N member~
-A &+Wskeletal&N member of the Hammers of Grim Jaw
+skeleton skeletal member dagger knight undead~
+a &+Wskeletal&+L member&n~
+&+wA &+Wskeletal &+ymember&+w of the &+cDagger&+w of &+LNewhavenw&+w sways here.&n
 ~
-Well-oiled studded leather encases a well-trained and fit body of
-this soldier.  An open-faced helm, with nose guard and chinstrap,
-makes it hard to make out any facial features of the soldier.
-A steel-banded buckler promptly displays the symbol of Newhaven while
-a clothed hand firmly grasps the hilt of a longsword.  A spotless
-black cloak flows about the warrior's body.
+&+w   This &+Wskeleton&+w was once a &+ymember&+w of the &+cDagger&+w of &+LNewhaven&+w, but now appears
+&+wto be little more than a thrall to whatever creature has created this twisted
+&+wversion of reality.  What remains of his &+yuniform&+w serves little in the way of
+&+wfunction, neither as a protective garment or as one meant to harness the tools
+&+wof the &+rrogue&+w trade.  The various &+yloops&+w and &+ypockets&+w that once lined the entire
+&+woutfit are too compromised to serve their original functions.  His empty eye
+&+Lsockets&+w look almost sad, as if somewhere in there he is aware of what he has
+&+wbecome.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+U 0 4096 0 -1
 18 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35270
 zombie private hammer knight undead~
-the &+Yzombie&N of a private~
-The &+Yzombie&N of a private is standing here.
+a &+Lzombie&+w of a &+rprivate&n~
+&+wA &+Lzombie &+rprivate&+w of the &+RHammer&+w of &+LNewhaven&+w shuffles about.&n
 ~
-Well-oiled studded leather encases a well-trained and fit body of
-this soldier.  An open-faced helm, with nose guard and chinstrap,
-makes it hard to make out any facial features of the soldier.  A
-steel-banded buckler promptly displays the symbol of Newhaven while a
-clothed hand firmly grasps the hilt of a longsword.  A spotless
-blue cloak flows about the warrior's body.
+&+w   This &+Wskeleton&+w is garbed in rotted leather &+yarmor&+w whose iron &+cstuds&+w have begun
+&+wto rust where they haven't already fallen away from the garment.  Sufficient
+&+yleather&+w remains of the &+ychestplate&+w to make out the once proud crest of &+LNewhaven
+&+wthat had been burned into it long ago.  His &+Wskull&+w is obscured by the layout of
+&+whis &+Lhelm&+w, however it was already nearly impossible to differentiate between
+&+wthe various &+rprivates&+w of the &+RHammer&+w by their facial features.&n
 ~
-10 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+10 0 0 0 0 0 0 0 -1000 S
+zo 0 1 0 -1
 19 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35271
-zombie lieutenant knight guard undead~
-A &+Yzombie&N of the &+Llieutenant&N~
-The &+Yzombie&N of a &+LLieutenant of the Sword of Newhaven&N stands here.
+zombie lieutenant knight sword undead~
+a &+Lzombie&+w of a &+Clieutenant&n~
+&+wA &+Lzombie&+w of a &+Clieutenant&+w of the &+cSword&+w of &+LNewhaven&+w stands here.&n
 ~
-Sparkling links of silver and steel chainmail encases a well
-trained and fit body of this lieutenant.  An open-faced helm,
-with nose guard and chinstrap, makes it hard to make out any
-facial features of the soldier.  A steel round shield promptly
-displays the symbol of Newhaven while an armored hand firmly grasps
-the hilt of a longsword.  A spotless white cloak adorned with
-tiny symbols of Newhaven flows about the warrior's body.
+&+w   Garbed in a tarnished and battered set of &+cc&+wha&+ci&+wn&+cma&+wi&+cl&+w, this &+czombie&+w is a mess
+&+wof rotted &+Rf&+rl&+Re&+rs&+Rh&+w and decaying &+mti&+Ms&+ms&+Mue&+w.  A threadbare white &+Wcloak&+w, upon which the
+&+wfaded remains of tiny symbols can be made out, hangs from the sloped shoulders
+&+wof this former &+Rlieutenant&+w.  A round, steel &+cshield&+w still carries the crest of
+&+LNewhaven&+w, but the zombie's &+Csword&+w has begun its journey down the rust road on
+&+wthe path to obsolescence.&n
 ~
 10 0 0 0 0 0 0 0 -1000 S
 zo 0 1 0 -1
@@ -1167,230 +1153,286 @@ zo 0 1 0 -1
 0.0.0.0 0
 8 8 0
 #35272
-zombie lieutenant hammer knight guard undead~
-the &+Yzombie&N of a &+Llieutenant&N~
-The &+Yzombie&N of a &+LLieutenant&N of the Hammer of Newhaven stands here.
+zombie lieutenant hammer knight undead~
+a &+czombie&+w of a &+Rlieutenant&n~
+&+wThe &+czombie&+w of a &+Rlieutenant&+w of the &+rHammer&+w of &+LNewhaven&+w stands here.&n
 ~
-Sparkling links of silver and steel chainmail encases a well
-trained and fit body of this lieutenant.  An open-faced helm,
-with nose guard and chinstrap, makes it hard to make out any
-facial features of the soldier.  A steel round shield promptly
-displays the symbol of Newhaven while an armored hand firmly grasps
-the hilt of a longsword.  A spotless blue cloak adorned with
-tiny symbols of Newhaven flows about the warrior's body.
+&+w   Garbed in a tarnished and battered set of &+cc&+wha&+ci&+wn&+cma&+wi&+cl&+w, this &+czombie&+w is a mess
+&+wof rotted &+Rf&+rl&+Re&+rs&+Rh&+w and decaying &+mti&+Ms&+ms&+Mue&+w.  A threadbare blue &+Bcloak&+w, upon which the
+&+wfaded remains of tiny symbols can be made out, hangs from the sloped shoulders
+&+wof this former &+Rlieutenant&+w.  A round, steel &+cshield&+w still carries the crest of
+&+LNewhaven&+w, but the zombie's &+Csword&+w has begun its journey down the rust road on
+&+wthe path to obsolescence.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+zo 0 1 0 -1
 25 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35273
 skeletal citizen male man undead~
-the &+Wskeletal&N man~
-A &+Wskeletal&N citizen of Newhaven is walking here.
+a &+Wskeletal&+C man&n~
+A &+Wskeleton&+w of a &+Ccitizen&+w of &+LNewhaven&+w is walking here.&n
 ~
-The skeletal remains of a typical male civilian of Newhaven
-makes his way down the maze like roadways.  His clothes are ragged
-and blood-stained.
+&+w   All sense of entitlement that this &+Ccivilian&+w felt in his past life has been
+&+wwashed away with his transition to an osteoform.  The once fine clothing that
+&+wcovers his &+Wbones&+w has become ragged and &+rbl&+Ro&+ro&+Rds&+rt&+Ra&+rin&+Re&+rd&+w with whatever hell he has
+&+wseen.  Two empty &+Lsockets&+w stare out of his perpetually &+Wgrinning&+w face, but what
+&+wit is they exactly see is anyone's guess.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+U 0 1 0 -1
 17 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35274
 zombie citizen female woman undead~
-the &+Yzombie&N of a woman~
-The &+Yzombie&N of a citizen of Newhaven stands here.
+a &+Lzombie&+w of a &+cwoman&n~
+&+wThe &+Lzombie&+w of a &+ccitizen&+w of &+LNewhaven&+w shuffles about.&n
 ~
-Remnants of hair and oozing skin, a zombie of the typical female
-civilian of Newhaven makes her way down the maze like roadways
-shopping the day away.  Her clothes are ragged and soiled with bloog
-and gore.
+&+w   This &+Lzombie&+w's clothes withstood the degredation apparent on the &+Cgarb&+w of the
+&+wother citizens of &+LNewhaven&+w, a testament to the quality of their craftsmanship.
+&+wWhere once her hair sat perfectly coifed upon her head, it now hangs in random
+&+Ypatches&+w from a destroyed scalp that shows large swathes of &+Wskull&+w in places.  A
+&+wsense of loss seems to radiate from this miserable creature.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+zo 0 32 0 -1
 16 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35275
 skeleton girl small undead~
-the &+Wskeleton&N of a girl~
-The &+Wskeleton&N of a small girl is here.
+a &+Wskeleton&+w of a &+cgirl&n~
+&+wThe &+Wskeleton&+w of a small &+cgirl&+w is here.&n
 ~
-Blonde locks of hair rustles as she plays with a stuffed doll.
-Her skin is pale as snow and her petite body looks like it could
-be crushed with the slightest force.
+&+w   This &+Wskeleton&+w's head hangs at an impossible angle down her back, her &+Wneck
+&+whaving suffered some trauma at some time which was quite possibly the cause of
+&+wher demise.  She is dressed in little more than clothing-shaped &+ydirt&+w and &+Lgrime
+&+waccretions.  Overall, this &+cgirl&+w exudes despair and the inevitable sadness of
+&+Ldeath&+w.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+sk 0 1 0 -1
 13 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35276
-skeleton boy small undead~
-the &+Wskeleton&N of a boy~
-The &+Wskeleton&N of a small boy is here.
+zombie boy small undead~
+a &+czombie&+w of a &+Cboy&n~
+&+wThe &+czombie&+w of a small &+Cboy&+w is trudging about the &+yarea&+w.&n
 ~
-Short brown hair has been spiked and trimmed short.  He plays
-with a wooden sword, pretending to be a paladin of Newhaven.  He
-is well fit and very agile.
+&+w   This &+Cboy&+w is little more than blackened, rotting &+mf&+Ml&+me&+Ms+mh&+w and the sickly odor
+&+wof putrescence.  All that remains of his brown &+yhair&+w is the section directly
+&+wover his crown, the rest having already been lost to his decomposition.  He
+&+wclutches a battered, wooden &+ysword&+w in his left hand.&n
 ~
 10 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+zo 0 16 0 -1
 12 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35277
-skeletal cat large undead~
-the &+Wskeletal&N &+Lcat&N~
-A &+Wskeletal&N &+Lcat&N is resting here.
+skeleton skeletal cat large undead~
+a &+Wskeleton&+w of a &+Lcat&n~
+&+wA large &+Wskeletal &+Lcat&+w is relaxing here.&n
 ~
-&+LA ball of &+Wbones&+L and bits of fur lays here basking in the sun
-&+Lgrooming itself.  Its long &+Wbony tail&+L occasionally plops and
-&+Lslithers across the ground.&N
+&+w   This pitiful &+Lbeast&+w is a pale reflection of the animal it was when it drew
+&+wbreath into lungs that have long since turned to &+Wdust&+w.  The fact that it was
+&+wonce a housecat is only ascertainable from its behavior, which consists of
+&+wflicking the &+Wbones&+w of its tail and glaring at others with empty &+Lsockets&+w full
+&+wof contempt and quiet disdain.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-U 0 0 0 -1
+U 0 1 0 -1
 7 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35278
-baazetu woman naked demon erinyes~
-&+Rthe erinyes&N~
-&+yA beautiful naked woman &+Wsits upon the fountain here.&n
+erinyes woman naked beautiful demon~
+an &+Rerinyes&n~
+&+wA beautiful, naked &+Rwoman&+w sits upon the &+Lruins&+w of the &+ycounter&+w.&n
 ~
-&+LLong black hair&+y glistens off the magical dancing&n
-&+ylights as eyes of &+Cgli&+Wtte&+Crin&+Wg sil&+Cver&+y gazes at you.&n
-&+yHer plump &+Rred lips&+y smile revealing her &+Wpearly white&n
-&+Wteeth.&+y  Bronzed skin stretches across her petite&n
-&+yframe defining her slim muscular body.&n
+&+w   This &+Lcreature&+w is phenomenally beautiful, by any standards.  Her &+Lhair&+w is of
+&+wthe darkest pitch, straight, and seemingly comprised of millions upon millions
+&+wof fine silk strands.  Sharp &+Wteeth&+w, bleached to an almost impossible shade of
+&+wwhite, peek out from behind plump, red &+Rlips&+w.  Gigantic aramanthine &+Mwi&+mn&+Mg&+ms&+w grow
+&+wfrom betwixt her bronzed shoulders, darkening toward their tips to an intense,
+&+wnear &+Lraven&+w, shade of &+mpurple&+w.&n
 ~
-1073903626 0 0 0 537395208 264257 1310720 0 0 S
-Y 0 16384 0 4
+1124235278 0 0 0 537395208 264257 1310720 0 -1000 S
+su 0 1 3 4
 50 0 0 0d0+0 0d0+0
 0.0.0.0 0
-8 8 2
+6 8 2
 #35279
-wyiarn priest high~
-&+WWyiarn Truesteel&N~
-&+WWyiarn Truesteel,&+b High Priest of Newhaven is praying here.&N
+wyiarn truesteel priest high~
+&+WWyiarn &+mTrue&+Msteel&n~
+&+WWyiarn &+mTrue&+Msteel&+w, &+MHigh &+mPriest&+w of &+LNewhaven&+w is praying here.&n
 ~
-Long strands of Blonde hair flows about a finely tuned muscled body
-of pale flesh while his amber eyes are heavily intensified by thick
-bushy eyebrows.  His lips are mauve and shiny.  An aura of sheer
-holy force enshrouds his body with brilliance.
+&+w   Long strands of blond &+Yhair&+w flows about a finely tuned, well-muscled body of
+&+wpale flesh and his amber eyes are heavily intensified by thick bushy &+Yeyebrows&+w.
+&+wHis lips are &+ymauve&+w and shiny, having long ago stretched thin with age.  An
+&+Waura&+w of sheer holy force enshrouds his body with brilliance.&n
 ~
-8 0 0 0 0 0 0 0 0 S
-PH 0 0 0 -1
+1090521160 0 0 0 0 0 0 0 0 S
+PH 0 8 1 -1
 46 0 0 0d0+0 0d0+0
 0.0.0.0 0
-8 8 1
+6 8 1
 #35280
-zombie lord zombi-lord riverlan captain undead~
-the &+Yzombie-lord&+L, Riverlan Stromtorlin&N~
-The &+Yzombie-lord&N of &+LRiverlan Stromtorlin&N is standing here.
+riverlan zombie lord zombie-lord strom~
+the &+czombie&+L-lord&+w, &+cRiver&+Clan &+yStrom&n~
+&+cZombie&+L-lord &+yStrom&+w of the &+cDagger&+w of &+LNewhaven&+w moans in frustration.&n
 ~
-Spiked blond hair crowns a wide skull of flesh and bone.  Large
-oval blue eyes peer from under a visor of highly polished silver
-plated steel.  A huge blue and white streaked plume protrudes
-from the top of the visor helm as the knight's armor clad body
-ripples with muscular tension.  His right hand grips a longsword
-while a tower shield has been strapped onto his left arm.  The
-symbol of a scale and balance has been emblazoned on a blue tabard
-that drapes across his torso and back.  A small tattoo of a weight
-scale can be seen under his right eye.
+&+w   The &+yStrom&+w twins, &+cRiver&+Clan&+w and his brother &+cMel&+Cairn&+w, still retain much of the
+&+wprestige they commanded in life.  While their &+mf&+Ml&+me&+Ms&+mh&+w is rent and decayed, their
+&+carmor&+w tarnished and &+yrusted&+w, and their &+Yhair&+w matted with &+Lgrime&+w and &+rb&+Rl&+ro&+Ro&+rd&+w, these
+&+wtwo still control two of the most powerful organizations in &+LNewhaven&+w.  Beneath
+&+whis right &+ceye&+w, the &+Ltattoo&+w of a weight scale has been mostly destroyed by rot.
+&+cRiver&+Clan&+w still grips his &+clongsword&+w in this right hand, but his &+Ltower &+yshield&+w is
+&+wnowhere to be seen.&n
 ~
-2062 0 0 0 0 0 0 0 0 S
-zo 0 0 0 -1
+1140852814 5 0 0 0 0 0 0 0 S
+zo 0 1 1 -1
 30 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35281
-zombie lord zombie-lord melairn captain undead~
-&+Ythe zombie-lord&+L, Melairn Stromtorlin&N~
-The &+Yzombie-lord&N of &+LMelairn Stromtorlin&N is standing here.
+zombie lord zombie-lord melairn strom~
+the &+czombie&+L-lord&+w, &+cMel&+Cairn &+yStrom&n~
+&+cZombie&+L-lord &+yStrom&+w the &+CSword&+w of &+LNewhaven&+w shambles about.&n
 ~
-Spiked blond hair crowns a wide skull of flesh and bone.  Large
-oval blue eyes peer from under a visor of highly polished silver
-plated steel.  A huge blue and white streaked plum protrudes
-from the top of the visor helm as the knight's armor clad body
-ripples with muscular tension.  His right hand grips a longsword
-while a tower shield has been strapped onto his left arm.  The
-symbol of a scale and balance has been emblazoned on a blue tabard
-that drapes across his torso and back. A small tattoo of a balance
-can be seen under his right eye.
+&+w   The &+yStrom&+w twins, &+cMel&+Cairn&+w and his brother &+cRiver&+Clan&+w, still retain much of the
+&+wprestige they commanded in life.  While their &+mf&+Ml&+me&+Ms&+mh&+w is rent and decayed, their
+&+carmor&+w tarnished and &+yrusted&+w, and their &+Yhair&+w matted with &+Lgrime&+w and &+Rb&+rl&+Ro&+ro&+Rd&+w, these
+&+wtwo still control two of the most powerful organizations in &+LNewhaven&+w.  Beneath
+&+whis left &+ceye&+w, the &+Ltattoo&+w of a balance is just as pristine as when he wore it
+&+win life.  &+cMel&+Cairn&+w still has his &+Ltower &+yshield&+w strapped to his right arm, but
+&+whis &+clongsword&+w is nowhere to be seen.&n
 ~
-10 0 0 0 0 0 0 0 -1000 S
-zo 0 16 0 -1
+1140852814 1 0 0 0 0 0 0 -1000 S
+zo 0 16 1 -1
 30 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35282
-zombie lord zombie-lord beltorian captain undead~
-the &+Yzombie-lord&+L, Beltorian Stromtorlin&N~
-The &+Yzombie-lord&N of the &+LBeltorian Stromtorlin&n is standing here.
+zombie lord zombie-lord beltorian strom~
+the &+czombie&+L-lord&+w, &+CBelt&+corian &+yStrom&n~
+&+cZombie&+L-lord &+yStrom&+w of the &+rHammer&+w of &+LNewhaven&+w sways here.&n
 ~
-Spiked blond hair crowns a wide skull of flesh and bone.  Large
-oval blue eyes peer from under a visor of highly polished silver
-plated steel.  A huge blue and white streaked plum protrudes
-from the top of the visor helm as the knight's armor clad body
-ripples with muscular tension.  His right hand grips a longsword
-while a tower shield has been strapped onto his left arm.  The
-symbol of a scale and balance has been emblazoned on a blue tabard
-that drapes across his torso and back. A small tattoo outlining a
-scale and balance can be seen under his right eye.
+&+w   As in life, &+CBelt&+corian&+w is still differentiated from his younger siblings by
+&+wthe remnants of his long &+Yhair&+w and the &+Ltattoo&+w of the crossed hammers that is
+&+wmiraculously still intact upon his forehead.  His &+cc&+wha&+ci&+wn&+cma&+wi&+cl&+w armor has lost a
+&+wfew of its &+clinks&+w to &+yrust&+w, in some parts to the extent that it has compromised
+&+wany protective qualities it once had.  He still clutches his giant &+Lwarhammer
+&+wlike a priest clutching an idol and his azure &+ceyes&+w are only slightly faded
+&+wby the icy grip of &+Ldeath&+w.&n
 ~
-10 0 0 0 0 0 0 0 -1000 S
-zo 0 16 0 -1
+1140852814 5 0 0 0 0 0 0 -1000 S
+zo 0 1048576 1 -1
 30 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35283
-skeleton warder knight undead~
-a &+Wskeletal&N warder~
-The &+Wskeleton&N of a &+Lwarder&N roams the streets here.
+skeleton warder knight male undead~
+a &+Wskeletal &+Cwarder&n~
+&+wThe &+Wskeleton&+w of a &+Cwarder&+w roams the &+yarea&+w.&n
 ~
-Rings of tarnished steel have been sewn onto a suit of rotted
-leather armor offering its protective nature to this undead
-soldier.  Remnants of hair protrude from under her open-faced
-helm.  Scraps of a blue tabard hang across her front and back.
-White eyes stare outward in a fixed gaze.
+&+C   Rings&+w of tarnished &+csteel&+w tentatively cling to the threadbare shreds of what
+&+wonce comprised a suit of leather &+yarmor&+w, barely offering any protection to this
+&+wdamned soul.  &+YHair&+w can be seen escaping from under his &+chelm&+w in matted clumps
+&+wthat are slowly petrifying with the accretion of &+ydirt&+w.  The crest of &+LNewhaven
+&+whas miraculously survived the deterioration that has affected the blue &+Btabard
+&+wthat hangs down his chest.  Two empty &+Lsockets&+w stare out at the world from deep
+&+wbeneath the &+csteel&+w rim of his headwear, eerily devoid of any indication as to
+&+wwhat, if anything, he is looking at.&n
 ~
 8 0 0 0 0 0 0 0 0 S
-sk 0 0 0 -1
+sk 0 1 0 -1
 21 0 0 0d0+0 0d0+0
 0.0.0.0 0
-8 8 0
+8 8 1
 #35284
 zombie warder knight female undead~
-a &+Yzombie&N warder~
-The &+Yzombie&N of a &+Lwarder&N shambles along here.
+a &+Lzombie &+cwarder&n~
+&+wThe &+Lzombie&+w of a &+cwarder&+w shambles about.&n
 ~
-Rings of tarnished steel have been sewn onto a suit of rotted
-leather armor offering its protective nature to this undead
-soldier.  Remnants of hair protrude from under her open-faced
-helm.  Scraps of a blue tabard hang across her front and back.
-White eyes stare outward in a fixed gaze.
+&+c   Rings&+w of tarnished &+Csteel&+w mail barely form enough of a protective surface to
+&+wdefend this wretched creature from physical attack.  Tangles of &+Lhair&+w drape in
+&+wrandom groups from the decaying flesh that still covers her head.  The torn
+&+wand tattered remains of a white &+Wtabard&+w hang about the &+Lzombie&+w's shoulders, the
+&+wcrest of &+LNewhaven&+w just barely discernable in it's &+yleather&+w.  Blank, white eyes
+&+wstare out of her bloated face with a set and fixed gaze.&n
 ~
 8 0 0 0 0 0 0 0 -1000 S
-zo 0 1 0 -1
+zo 0 16 0 -1
 24 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 0
 #35285
 hound dog hellhound undead~
-&+ra hellhound&N~
-&+LA massive hound &+rengulfed in flames strides here.&N
+a &+Rh&+re&+Rll&+Lhound&n~
+&+wA massive &+Lhound&+w engulfed in &+Rfl&+ra&+Rm&+res&+w stalks the area for &+yfood&+w.&n
 ~
-&+LFlesh of &+rcrimson red&+L flares with &+rfire&+L as the tough skin&n
-&+Lstretches along a massive frame of muscle and bone.&n
-&+LEyes of black opal gleam with darkness as the being&n
-&+Lgazes the area for prey.  Sharp &+Yyellow canines&+L protrude&n
-&+Lfrom the upper lip of the hound as it snarls at you.&n
+&+w   Hulking over the area, this &+Lhound&+w appears to be sculpted from knotted and
+&+wscarred &+rf&+Rl&+re&+Rs&+rh&+w that has been set ablaze using a &+Lpitch&+w and &+cnaptha&+w mix.  Its &+Reyes
+&+ware two pinpoint orbs of gleaming darkness which peer out from under massive
+&+wboney sockets.  Sharp, yellowed &+Wcanines&+w protrude from the tight &+rskin&+w of the
+&+wanimal's upper &+Llips&+w as it snarls and growls at you.&n
 ~
-1073743880 0 0 0 0 0 0 0 -1000 S
-L 0 1 0 -1
+1107314792 5 0 0 570458168 4194305 4194304 0 -1000 S
+us 0 1 0 -1
 30 0 0 0d0+0 0d0+0
+0.0.0.0 0
+8 8 1
+#35286
+vulgaris pirate veld~
+Vulgaris~
+&nVulgaris (&+LVeld&n)(medium) stands here.
+~
+&+w   Standing roughly seven-feet tall, this singular creature has a human-like
+&+wappearance with the exception of his four &+Larms&+w and extremely corded muscles.
+&+wTwo grey-green &+ge&+Gy&+ges&+w glare out from wirey, white &+Weyebrows&+w and a long legacy
+&+Wbraid&+w extends down the right side of his &+Lhead&+w.&n
+~
+1107572750 0 0 0 268960052 0 537133056 5120 0 S
+h 7 1 3 3
+56 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 2
+#35287
+feline cat displacer beast large~
+a &+Ld&+bis&+Lp&+bl&+Lac&+be&+Lr &+Lbeast&n~
+&+LA large &+bf&+bel&+Li&+bn&+Le stalks the area, &+bfading &+Lin and &+bout &+Lof exis&+btence&+L.&n
+~
+&+w   This mammoth &+Lf&+bel&+Li&+bn&+Le&+w is prowling the &+yarea&+w in either search of sustenance
+&+wor to patrol its territory against other large predators.  Its muscles knot
+&+wand cord beneath a short-tuft pelage of deep &+Lraven&+w and &+bcobalt&+w, the effect of
+&+wwhich is that the &+Lcat&+w appears to shift in and out of the visible spectrum as
+&+wit moves.  Protruding from between, and slightly behind, its front shoulders,
+&+wtwo semi-prehensile &+Lt&+ben&+Lt&+baB&+Lcl&+be&+Ls&+w that are capped in wicked-looking, serrated
+&+wsuction &+Lcups&+w.&n
+~
+1107306504 1 0 0 33554688 2 294912 0 -1000 S
+AC 0 1 0 -1
+31 0 0 1d1+1 1d1+1
+0.0.0.0 0
+8 8 0
+#35288
+gatekeeper firbolg guard stronghold hulking~
+the &+Lstronghold &+cgatekeeper&n~
+&+wA hulking &+yFir&+cbolg&+w stands guard before the &+Lstronghold&+w.&n
+~
+&+w   Standing nearly thirteen-feet in height, this gigantic &+chuman&+yoid&+w has rough
+&+wfeatures and a gigantic lantern jaw.  He is dressed in primitively-styled, but
+&+wcompletely effective, &+cplate&+C-c&+ch&+Ca&+cin&+w armor.  The crest of &+LNewhaven Stronghold&+w has
+&+wbeen embossed into the steel of his chestplate, which has been reverently and
+&+wmeticulously maintained.  Though his race is traditionally reclusive, he has
+&+wdevoted himself, in the name of &+cHiatea&+w, to the defense of the lesser races.&n
+~
+100669450 384 0 0 268435500 0 0 0 500 S
+FB 0 1 1 -1
+45 0 0 0d0+0 0d0+0
 0.0.0.0 0
 8 8 1
