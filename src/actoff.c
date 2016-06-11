@@ -4949,7 +4949,8 @@ bool single_stab(P_char ch, P_char victim, P_obj weapon)
       || ((critical_stab * GET_CHAR_SKILL(ch, SKILL_CRITICAL_STAB)) > number(1, 100));
   }
 
-  if( (IS_AFFECTED(victim, AFF_AWARE) && !crit && ( (GET_RACE(ch) != RACE_MOUNTAIN) && (GET_RACE(ch) != RACE_DUERGAR) ))
+  if( (IS_AFFECTED(victim, AFF_AWARE) && !crit && !IS_AFFECTED(victim, AFF_KNOCKED_OUT)
+    && ( (GET_RACE(ch) != RACE_MOUNTAIN) && (GET_RACE(ch) != RACE_DUERGAR) ))
     || affected_by_spell(victim, SKILL_BACKSTAB) )
   {
     // A little higher than just int.
