@@ -4156,7 +4156,7 @@ void webwrap(P_char ch, P_char victim)
   struct affected_type af;
   int chance;
 
-  if (get_takedown_size(ch) <= get_takedown_size(victim))
+  if( get_takedown_size(ch) < get_takedown_size(victim) - 1 )
   {
   	send_to_char("You are too small to immobilize your victim!\n", ch);
     return;
