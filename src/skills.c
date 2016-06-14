@@ -5255,8 +5255,10 @@ void create_tags()
   TAG_CREATE_WITH_MESSAGES("arrow bleed", TAG_ARROW_BLEED, "&+WYour bleeding wound has healed.&n", "$n's bleeding wound has healed.&n");
   TAG_CREATE("summon spawn/ally", TAG_SPAWN);
 
-  TAG_CREATE("rested bonus", TAG_RESTED);
-  TAG_CREATE("well-rested bonus", TAG_WELLRESTED);
+  TAG_CREATE_WITH_MESSAGES("rested bonus", TAG_RESTED, "You sigh as you start to feel a bit tired.",
+    "$n sighs and stares off into the sky." );
+  TAG_CREATE_WITH_MESSAGES("well-rested bonus", TAG_WELLRESTED, "You sigh as you start to feel a bit tired.",
+    "$n sighs and stares off into the sky." );
 
   TAG_CREATE("total epics gained", TAG_EPICS_GAINED);
 
