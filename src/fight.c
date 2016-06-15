@@ -5010,7 +5010,7 @@ int melee_damage(P_char ch, P_char victim, double dam, int flags, struct damage_
 {
   struct damage_messages dummy_messages;
   unsigned int skin;
-  int      vamp_dam, i, result, shld_result;
+  int      vamp_dam, i, result, shld_result, ac;
   float    reduction;
   char     buffer[MAX_STRING_LENGTH];
   bool     dragonfist;
@@ -5047,11 +5047,13 @@ int melee_damage(P_char ch, P_char victim, double dam, int flags, struct damage_
     if( get_spell_from_char(ch, SKILL_FIST_OF_DRAGON) && !number(0,2) )
     {
       dragonfist = TRUE;
-      dam = dam  + (dam * (0.10 * MAX( 0, calculate_ac(victim)) / 100.00));
+      // If the ac is > 0, apply it (increases damage), otherwise skip.
+      if( (ac = calculate_ac( victim )) > 0 )
+        dam += ( dam * (ac / 1000.00) );
     }
     else
     {
-      dam = dam  + (dam * (0.10 * calculate_ac(victim) / 100.00)); //-drannak
+      dam += ( dam * calculate_ac(victim) / 1000.00 );
     }
 
     if(has_innate(victim, INNATE_TROLL_SKIN))
