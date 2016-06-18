@@ -1998,6 +1998,41 @@ bool is_number(char *str)
   return TRUE;
 }
 
+bool is_real_number( char *str )
+{
+  bool period = FALSE;
+
+  // Empty strings not ok.
+  if( !str || !*str )
+    return FALSE;
+
+  // Negative numbers are ok.
+  if( *str == '-' )
+    str++;
+
+  // We need at least one number.
+  if( !isdigit(*str) || (( *str == '.' ) && isdigit( str[1] )) )
+  {
+    return FALSE;
+  }
+
+  while( *str )
+  {
+    // Allow for 1 period.
+    if( *str == '.' && !period )
+    {
+      period = TRUE;
+      str++;
+    }
+    else if( !isdigit(*( str++ )) )
+    {
+      return FALSE;
+    }
+  }
+
+  return TRUE;
+}
+
 /*
  * find the first sub-argument of a string, return pointer to first char
  * in primary argument, following the sub-arg

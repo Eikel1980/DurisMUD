@@ -1305,19 +1305,19 @@ void do_supervise( P_char god, char *argument, int cmd )
     rest = lohrr_chop( rest, third );
     if( !*third )
     {
-      send_to_char_f( god, "&+YPlease enter &+wprestige&+Y or &+wconstruction&+Y for which points you want to setbit.\n"
-        "&+YSyntax: &+wsupervise setbit <association number> <prestige|construction> <amount>&+Y.&n\n", second );
+      send_to_char_f( god, "&+YPlease enter &+wprestige&+Y, &+wconstruction&+Y, or &+wfrags&+Y for which points you want to setbit.\n"
+        "&+YSyntax: &+wsupervise setbit <association number> <prestige|construction|frags> <amount>&+Y.&n\n", second );
       return;
     }
     lohrr_chop( rest, fourth );
-    if( !*fourth || !is_number(fourth) )
+    if( !*fourth || !is_real_number(fourth) )
     {
       if( !*fourth )
         send_to_char( "Please enter the amount to which you wish to setbit the guild's points.\n"
-          "&+YSyntax: &+wsupervise setbit <association number> <prestige|construction> <amount>&+Y.&n\n", god );
+          "&+YSyntax: &+wsupervise setbit <association number> <prestige|construction|frags> <amount>&+Y.&n\n", god );
       else
         send_to_char_f( god, "'%s' is not a valid amount to setbit the guild's points.\n"
-          "&+YSyntax: &+wsupervise setbit <association number> <prestige|construction> <amount>&+Y.&n\n", fourth );
+          "&+YSyntax: &+wsupervise setbit <association number> <prestige|construction|frags> <amount>&+Y.&n\n", fourth );
       return;
     }
 
@@ -1325,14 +1325,21 @@ void do_supervise( P_char god, char *argument, int cmd )
     {
       guild->set_prestige( atoi(fourth) );
       guild->save();
-      send_to_char_f( god, "You set %s's prestige points to %s.\n", guild->get_name().c_str(), fourth );
+      send_to_char_f( god, "You set %s's prestige points to %d.\n", guild->get_name().c_str(), guild->get_prestige() );
       return;
     }
     else if( is_abbrev(third, "construction") )
     {
       guild->set_construction( atoi(fourth) );
       guild->save();
-      send_to_char_f( god, "You set %s's construction points to %s.\n", guild->get_name().c_str(), fourth );
+      send_to_char_f( god, "You set %s's construction points to %d.\n", guild->get_name().c_str(), guild->get_construction() );
+      return;
+    }
+    else if( is_abbrev(third, "frags") )
+    {
+      guild->set_frags( (long)(100. * ( atof(fourth) + .001 )) );
+      guild->save();
+      send_to_char_f( god, "You set %s's frags to %.2f.\n", guild->get_name().c_str(), guild->get_frags() / 100. );
       return;
     }
     else

@@ -210,6 +210,7 @@ class Guild
 
     long get_frags( ) { return frags.frags; }
     void add_frags( P_char ch, long new_frags );
+    void set_frags( long new_frags ) { frags.frags = new_frags; }
     void frag_remove( P_char member );
 
     void apply(P_char member, P_char applicant );
