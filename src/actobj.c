@@ -6162,6 +6162,12 @@ void do_empty(P_char ch, char *argument, int cmd)
     return;
   }
 
+  if( obj1 == obj2 )
+  {
+    act( "I'll put &+Wyou&n in $p!", FALSE, ch, obj2, NULL, TO_CHAR );
+    return;
+  }
+
   count = 0;
   while( (content = obj1->contains) != NULL )
   {
