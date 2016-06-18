@@ -1268,11 +1268,14 @@ void do_supervise( P_char god, char *argument, int cmd )
         SET_NO_THANKS(GET_A_BITS(god));
         return;
       }
-      send_to_char_f( god, "'%s' is not a valid association number.\n"
-        "&+YSyntax: &+wsupervise govern <association number>&+Y.\n"
-        "&+YNote: You are%sgoverning an association currently.\n"
-        "&+YTo stop governing an association, use &+wsupervise govern 0&+Y.&n\n",
-        second, (GET_ASSOC(god) == NULL) ? " &+Wnot&+Y " : " " );
+      if( is_number(second) && (atoi( second ) == 0) )
+        send_to_char( "But you're not governing an association at the moment.\n", god );
+      else
+        send_to_char_f( god, "'%s' is not a valid association number.\n"
+          "&+YSyntax: &+wsupervise govern <association number>&+Y.\n"
+          "&+YNote: You are%sgoverning an association currently.\n"
+          "&+YTo stop governing an association, use &+wsupervise govern 0&+Y.&n\n",
+          second, (GET_ASSOC(god) == NULL) ? " &+Wnot&+Y " : " " );
       return;
     }
 
