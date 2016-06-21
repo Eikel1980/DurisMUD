@@ -9275,7 +9275,8 @@ void event_call_grave(P_char ch, P_char victim, P_obj obj, void *data)
     skeleton->only.npc->aggro_flags = 0;
 
     add_follower(skeleton, ch);
-    add_event(event_bye_grave, 4 * (60 + skill), skeleton, NULL, NULL, 0, 0, 0);
+    // 1 Minute + 5 Mins at 100 skill.
+    add_event(event_bye_grave, WAIT_SEC * (60 + skill * 3), skeleton, NULL, NULL, 0, 0, 0);
   }
 }
 
