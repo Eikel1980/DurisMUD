@@ -295,8 +295,11 @@ void do_epic_skills(P_char ch, char *arg, int cmd)
     if(epic_teachers[t].deny_skill && GET_CHAR_SKILL(ch, epic_teachers[t].deny_skill))
       continue;
 
-    if(epic_teachers[t].pre_requisite && GET_CHAR_SKILL(ch, epic_teachers[t].pre_requisite) < 100)
+    if( epic_teachers[t].pre_requisite
+      && (GET_CHAR_SKILL(ch, epic_teachers[t].pre_requisite) < epic_teachers[t].pre_req_lvl) )
+    {
       continue;
+    }
 
     if(IS_TRUSTED(ch))
     {
@@ -324,175 +327,219 @@ void do_epic_skills(P_char ch, char *arg, int cmd)
 
 int epic_teacher(P_char ch, P_char pl, int cmd, char *arg)
 {
-  int epic_penalty_cost = 1;
-  int cash_penalty_cost = 1;
+  int skl, epics_cost, coins_cost;
   char buffer[256];
+  float cost_mod;
+  epic_teacher_skill *pTeacher;
+  epic_reward *pReward;
 
-  if(cmd == CMD_PRACTICE)
+  if( cmd != CMD_PRACTICE )
   {
-    // find the teacher
-    int t;
-    for(t = 0; epic_teachers[t].vnum; t++)
-    {
-      if(GET_VNUM(ch) == epic_teachers[t].vnum)
-        break;
-    }
-
-    if(!epic_teachers[t].vnum)
-      return FALSE;
-
-    // find the skill
-    int s;
-    for(s = 0; epic_rewards[s].type; s++)
-    {
-      if(epic_rewards[s].type == EPIC_REWARD_SKILL &&
-          epic_rewards[s].value == epic_teachers[t].skill)
-        break;
-    }
-
-    if(!epic_rewards[s].type)
-      return FALSE;
-
-    int skill = epic_rewards[s].value;
-    float cost_f = 1 + GET_CHAR_SKILL(pl, skill) / get_property("epic.progressFactor", 30);
-    // For the 2015-6 wipe, doubling cash cost and tripling the epic point cost.
-    int points_cost = 3 * (int) (cost_f * epic_rewards[s].points_cost);
-    int coins_cost = 2 * (int) (cost_f * epic_rewards[s].coins);
-
-    if(IS_MULTICLASS_PC(pl) &&
-      !IS_SET(epic_rewards[s].classes, pl->player.m_class) &&
-      IS_SET(epic_rewards[s].classes, pl->player.secondary_class))
-    {
-      points_cost *= (int) (get_property("epic.multiclass.EpicSkillCost", 2));
-      coins_cost *= (int) (get_property("epic.multiclass.EpicPlatCost", 3));
-    }
-
-    if(!arg || !*arg)
-    {
-      // practice called with no arguments
-      sprintf(buffer,
-              "Welcome, traveller!\n"
-              "I am pleased that you have wandered so far in order to seek my assistance.\n"
-              "There are few adventurers willing to seek out the knowledge of &+W%s&n.\n\n", skills[skill].name);
-      send_to_char(buffer, pl);
-
-      // Handle anti-classes
-      if(epic_rewards[s].classes &&
-         !IS_SET(epic_rewards[s].classes, pl->player.m_class) &&
-         !IS_SET(epic_rewards[s].classes, pl->player.secondary_class))
-      {
-        send_to_char("Unfortunately, I am not able to teach people of your class.\n", pl);
-        return TRUE;
-      }
-
-      // Handle anti-race - Thris dev crit.
-      if( IS_THRIKREEN(pl) && skill == SKILL_DEVASTATING_CRITICAL )
-      {
-        sprintf(buffer, "I cannot with good conscience teach this skill to a %s!\n", race_names_table[RACE_THRIKREEN].ansi );
-        send_to_char(buffer, pl);
-        return TRUE;
-      }
-
-      if(epic_teachers[t].deny_skill && GET_CHAR_SKILL(pl, epic_teachers[t].deny_skill))
-      {
-        sprintf(buffer, "I cannot with good conscience teach this skill to someone who has already studied &+W%s&n!\n", skills[epic_teachers[s].deny_skill].name);
-        send_to_char(buffer, pl);
-        return TRUE;
-      }
-
-      if(epic_teachers[t].pre_requisite && GET_CHAR_SKILL(pl, epic_teachers[t].pre_requisite) < epic_teachers[t].pre_req_lvl)
-      {
-        sprintf(buffer, "You have not yet mastered the art of &+W%s&n!\r\n", skills[epic_teachers[t].pre_requisite].name);
-        send_to_char(buffer, pl);
-        return TRUE;
-      }
-
-      if(GET_CHAR_SKILL(pl, skill) >= 100 || GET_CHAR_SKILL(pl, skill) >= epic_teachers[t].max)
-      {
-        send_to_char("Unfortunately, I cannot teach you anything more, you have already mastered this skill!\n", pl);
-        return TRUE;
-      }
-
-      sprintf(buffer, "It will cost you &+W%d&n epic points and &+W%s&n.\n", points_cost, coin_stringv(coins_cost));
-      send_to_char(buffer, pl);
-      return TRUE;
-    }
-    else if(strstr(arg, skills[skill].name))
-    {
-      // called with skill name
-      if(epic_rewards[s].classes &&
-          !IS_SET(epic_rewards[s].classes, pl->player.m_class) &&
-          !IS_SET(epic_rewards[s].classes, pl->player.secondary_class))
-      {
-        send_to_char("Unfortunately, I am not able to teach people of your class.\n", pl);
-        return TRUE;
-      }
-
-      // Handle anti-race - Thris dev crit.
-      if( IS_THRIKREEN(pl) && skill == SKILL_DEVASTATING_CRITICAL )
-      {
-        sprintf(buffer, "I cannot with good conscience teach this skill to a %s!\n", race_names_table[RACE_THRIKREEN].ansi );
-        send_to_char(buffer, pl);
-        return TRUE;
-      }
-
-      if(epic_teachers[t].deny_skill && GET_CHAR_SKILL(pl, epic_teachers[t].deny_skill))
-      {
-        sprintf(buffer, "I cannot with good conscience teach that skill to someone who has already studied &+W%s&n!\n", skills[epic_teachers[s].deny_skill].name);
-        send_to_char(buffer, pl);
-        return TRUE;
-      }
-
-      if(GET_EPIC_POINTS(pl) < points_cost)
-      {
-        send_to_char("You don't have enough epic points!\n", pl);
-        return TRUE;
-      }
-
-      /*   ** Commented out by Gellz 14/01/2015
-      if(GET_EPIC_POINTS(pl) < epic_rewards[s].min_points)
-      {
-        send_to_char("You haven't progressed far enough to be able to master such skills!\n", pl);
-        return TRUE;
-      }
-      */
-
-      if(GET_MONEY(pl) < coins_cost)
-      {
-        send_to_char("You can't afford my teaching!", pl);
-        return TRUE;
-      }
-
-      if(GET_CHAR_SKILL(pl, skill) >= 100 || GET_CHAR_SKILL(pl, skill) >= epic_teachers[t].max)
-      {
-        send_to_char("Unfortunately, I cannot teach you anything more, you have already mastered this skill!\n", pl);
-        return TRUE;
-      }
-
-      sprintf(buffer, "$n takes you aside and teaches you the finer points of &+W%s&n.\n"
-                      "&+cYou feel your skill in %s improving.&n\n",
-              skills[skill].name, skills[skill].name);
-      act(buffer, FALSE, ch, 0, pl, TO_VICT);
-
-      SUB_MONEY(pl, coins_cost, 0);
-
-	  //ditching this, since we'll just use straight epic points now. Zion 4/8/2014
-      //epic_gain_skillpoints(pl, -1 * points_cost);
-	  pl->only.pc->epics -= points_cost;
-
-      pl->only.pc->skills[skill].taught =
-        pl->only.pc->skills[skill].learned =
-        MIN(100, pl->only.pc->skills[skill].learned +
-            get_property("epic.skillGain", 10));
-
-      do_save_silent(pl, 1); // Epic stats require a save.
-      CharWait(pl, PULSE_VIOLENCE);
-      return TRUE;
-    }
-
+    return FALSE;
   }
 
-  return FALSE;
+  pTeacher = NULL;
+  for( int iTeacher = 0; epic_teachers[iTeacher].vnum; iTeacher++ )
+  {
+    if( GET_VNUM(ch) == epic_teachers[iTeacher].vnum )
+    {
+        pTeacher = &(epic_teachers[iTeacher]);
+      break;
+    }
+  }
+  if( pTeacher == NULL )
+    return FALSE;
+
+  // Find the skill
+  pReward = NULL;
+  for( skl = 0; epic_rewards[skl].type; skl++ )
+  {
+    if( epic_rewards[skl].type == EPIC_REWARD_SKILL
+      && epic_rewards[skl].value == pTeacher->skill )
+    {
+      pReward = &(epic_rewards[skl]);
+      break;
+    }
+  }
+  if( pReward == NULL )
+    return FALSE;
+
+  skl = pReward->value;
+
+  cost_mod = 1 + GET_CHAR_SKILL(pl, skl) / get_property("epic.progressFactor", 30);
+  // For the 2015-6 wipe, doubling cash cost and tripling the epic point cost.
+  epics_cost = 3 * (int) (cost_mod * pReward->points_cost);
+  coins_cost = 2 * (int) (cost_mod * pReward->coins);
+
+  if( IS_MULTICLASS_PC(pl)
+    && !IS_SET(pReward->classes, pl->player.m_class)
+    && IS_SET(pReward->classes, pl->player.secondary_class) )
+  {
+    epics_cost *= (int) (get_property("epic.multiclass.EpicSkillCost", 2));
+    coins_cost *= (int) (get_property("epic.multiclass.EpicPlatCost", 3));
+  }
+
+  if( !arg || !*arg )
+  {
+    // Practice called with no arguments
+    sprintf(buffer, "Welcome, traveller!\n"
+      "I am pleased that you have wandered so far in order to seek my assistance.\n"
+      "There are few adventurers willing to seek out the knowledge of &+W%s&n.\n\n", skills[skl].name);
+    send_to_char(buffer, pl);
+    if( GET_CHAR_SKILL(pl, skl) < 100 )
+    {
+      // If they can learn the skill: Class gets it, not thri+dev crit, don't have mutually exclusive skill,
+      //   missing pre-req skill, or skill maxxed.
+      if(  !( pReward->classes && !IS_SET(pReward->classes, pl->player.m_class)
+        && !IS_SET(pReward->classes, pl->player.secondary_class) )
+        && !( IS_THRIKREEN(pl) && skl == SKILL_DEVASTATING_CRITICAL )
+        && !( pTeacher->deny_skill && GET_CHAR_SKILL(pl, pTeacher->deny_skill) )
+        && !( pTeacher->pre_requisite && GET_CHAR_SKILL(pl, pTeacher->pre_requisite) < pTeacher->pre_req_lvl )
+        && !( GET_CHAR_SKILL(pl, skl) >= 100 || GET_CHAR_SKILL(pl, skl) >= pTeacher->max ) )
+      {
+        sprintf( buffer, "It would cost you &+W%d&n epic points and &+W%s&n to learn &+W%s&n.\n",
+          epics_cost, coin_stringv(coins_cost), skills[skl].name );
+        send_to_char(buffer, pl);
+      }
+      else
+      {
+        sprintf( buffer, "&+W%s&n is not currently available to you.\n", skills[skl].name );
+        CAP(buffer);
+        send_to_char(buffer, pl);
+      }
+    }
+    else
+    {
+      sprintf( buffer, "You have already maxxed &+W%s&n.\n", skills[skl].name );
+      send_to_char(buffer, pl);
+    }
+    return TRUE;
+  }
+
+  // Trying to practice a different skill.
+  if( !strstr(arg, skills[skl].name) )
+  {
+    if( is_abbrev(arg, skills[skl].name) )
+      send_to_char( "To practice an epic skill, you must type the full epic skill name out.\n", pl );
+    return FALSE;
+  }
+
+  // Handle anti-classes
+  if( pReward->classes
+    && !IS_SET(pReward->classes, pl->player.m_class)
+    && !IS_SET(pReward->classes, pl->player.secondary_class) )
+  {
+    send_to_char("Unfortunately, I am not able to teach people of your class.\n", pl);
+    return TRUE;
+  }
+
+  // Handle anti-race - Thris dev crit.
+  if( IS_THRIKREEN(pl) && skl == SKILL_DEVASTATING_CRITICAL )
+  {
+    sprintf(buffer, "I cannot with good conscience teach this skill to a %s!\n", race_names_table[RACE_THRIKREEN].ansi );
+    send_to_char(buffer, pl);
+    return TRUE;
+  }
+
+  if( pTeacher->deny_skill && GET_CHAR_SKILL(pl, pTeacher->deny_skill) )
+  {
+    sprintf(buffer, "I cannot with good conscience teach this skill to someone who has already studied &+W%s&n!\n", skills[pTeacher->deny_skill].name);
+    send_to_char(buffer, pl);
+    return TRUE;
+  }
+
+  if( pTeacher->pre_requisite && GET_CHAR_SKILL(pl, pTeacher->pre_requisite) < pTeacher->pre_req_lvl )
+  {
+    sprintf(buffer, "You have not yet mastered the art of &+W%s&n!\r\n", skills[pTeacher->pre_requisite].name);
+    send_to_char(buffer, pl);
+    return TRUE;
+  }
+
+  if( GET_CHAR_SKILL(pl, skl) >= 100 || GET_CHAR_SKILL(pl, skl) >= pTeacher->max )
+  {
+    send_to_char("Unfortunately, I cannot teach you anything more, you have already mastered this skill!\n", pl);
+    return TRUE;
+  }
+
+  // If the prereq skill is less than the epic skill (after teaching).
+  if( pTeacher->pre_requisite
+    && GET_CHAR_SKILL(pl, pTeacher->pre_requisite) < GET_CHAR_SKILL(pl, skl) + get_property("epic.skillGain", 10) )
+  {
+    sprintf( buffer, "You must study &+W%s&n more before you can progress in &+W%s&n.\n",
+      skills[pTeacher->pre_requisite].name, skills[skl].name );
+    send_to_char( buffer, pl );
+    return TRUE;
+  }
+
+  if( pReward->classes
+    && !IS_SET(pReward->classes, pl->player.m_class)
+    && !IS_SET(pReward->classes, pl->player.secondary_class) )
+  {
+    send_to_char("Unfortunately, I am not able to teach people of your class.\n", pl);
+    return TRUE;
+  }
+
+  // Handle anti-race - Thris dev crit.
+  if( IS_THRIKREEN(pl) && skl == SKILL_DEVASTATING_CRITICAL )
+  {
+    sprintf(buffer, "I cannot with good conscience teach this skill to a %s!\n", race_names_table[RACE_THRIKREEN].ansi );
+    send_to_char(buffer, pl);
+    return TRUE;
+  }
+
+  if( pTeacher->deny_skill && GET_CHAR_SKILL(pl, pTeacher->deny_skill))
+  {
+    sprintf(buffer, "I cannot with good conscience teach that skill to someone who has already studied &+W%s&n!\n", skills[pTeacher->deny_skill].name);
+    send_to_char(buffer, pl);
+    return TRUE;
+  }
+
+  if( pTeacher->pre_requisite && GET_CHAR_SKILL(pl, pTeacher->pre_requisite) < pTeacher->pre_req_lvl )
+  {
+    send_to_char("You haven't progressed far enough to be able to master such skills!\n", pl);
+    return TRUE;
+  }
+
+  if( GET_EPIC_POINTS(pl) < epics_cost )
+  {
+    send_to_char("You don't have enough epic points!\n", pl);
+    return TRUE;
+  }
+
+  if( GET_MONEY(pl) < coins_cost )
+  {
+    send_to_char("You can't afford my teaching!", pl);
+    return TRUE;
+  }
+
+  if( (GET_CHAR_SKILL(pl, skl) >= 100) || (GET_CHAR_SKILL(pl, skl) >= pTeacher->max) )
+  {
+    send_to_char("Unfortunately, I cannot teach you anything more, you have already mastered this skill!\n", pl);
+    return TRUE;
+  }
+
+  sprintf( buffer, "$n takes you aside and teaches you the finer points of &+W%s&n.\n"
+    "&+cYou feel your skill in %s improving.&n\n", skills[skl].name, skills[skl].name );
+  act( buffer, FALSE, ch, 0, pl, TO_VICT );
+
+  SUB_MONEY(pl, coins_cost, 0);
+
+  // Ditching this, since we'll just use straight epic points now. Zion 4/8/2014
+  // epic_gain_skillpoints(pl, -1 * points_cost);
+	pl->only.pc->epics -= epics_cost;
+
+  pl->only.pc->skills[skl].taught = pl->only.pc->skills[skl].learned =
+    pl->only.pc->skills[skl].learned + get_property("epic.skillGain", 10);
+  if( pl->only.pc->skills[skl].taught > 100 )
+    pl->only.pc->skills[skl].taught = pl->only.pc->skills[skl].learned = 100;
+  if( pl->only.pc->skills[skl].taught == 100 )
+  {
+    sprintf( buffer, "You have mastered &+W%s&N.\n", skills[skl].name );
+    send_to_char( buffer, pl );
+  }
+  do_save_silent(pl, 1); // Epic stats require a save.
+  CharWait(pl, PULSE_VIOLENCE);
+  return TRUE;
 }
 
 void event_blizzard(P_char ch, P_char victim, P_obj obj, void *data)
