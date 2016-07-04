@@ -403,8 +403,8 @@ int sql_level_cap( int racewar_side )
   // This goes from 25 for no frags, 26 for .4 frags, 27 for .8 frags, up to 56 for 12.4 or more frags.
   level_cap = (int) ( (max_frags / 40) + 25 );
 
-  // Everyone can reach 56 when someone reaches the limit.
-  if( level_cap >= 56 )
+  // Everyone can reach 56 when someone reaches the limit + 40.
+  if( level_cap > 56 )
     return 56;
   // 25 is the lower limit.
   if( level_cap <= 25 )
