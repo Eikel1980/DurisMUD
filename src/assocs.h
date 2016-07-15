@@ -15,8 +15,8 @@
 /* DEFINES for assocs.c */
 
 /* defines allowing access to player association data */ 
-#define GET_ASSOC(ch) (ch)->specials.guild
-#define GET_A_BITS(ch) (ch)->specials.guild_status
+#define GET_ASSOC(ch) ((ch)->specials.guild)
+#define GET_A_BITS(ch) ((ch)->specials.guild_status)
 
 /* maximum/minimum numbers of associations */
 #define MAX_ASC           999       /* maximal number of associations */

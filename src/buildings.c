@@ -314,8 +314,9 @@ int building_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
 {
   int        allow;
   P_Alliance alliance;
-  P_Guild    guild = GET_ASSOC(ch);
+  P_Guild    guild;
   P_char     tmob;
+  Building  *building;
   struct group_list *gl;
 
   if( !ch )
@@ -324,15 +325,13 @@ int building_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
   if( cmd == CMD_SET_PERIODIC )
   {
     SET_BIT(ch->specials.act, ACT_SPEC_DIE);
-    return TRUE;
+    return FALSE;
   }
 
   if( !affected_by_spell(ch, TAG_BUILDING) )
     return FALSE;
 
-  Building *building = get_building_from_char(ch);
-
-  if( !building )
+  if( (building = get_building_from_char(ch)) == NULL )
     return FALSE;
 
   if( building->proc(ch, pl, cmd, arg) )
@@ -355,27 +354,28 @@ int building_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
     }
   }
 
+  guild = building->get_guild( );
+
   if( cmd == CMD_ENTER )
   {
     allow = FALSE;
 
     // Guild and Alliance checks
-    if( IS_TRUSTED(pl) || (guild == building->get_guild( )) || (building->get_guild( ) == NULL) )
+    if( IS_TRUSTED(pl) || (guild == NULL) || (GET_ASSOC( pl ) == guild) )
     {
       allow = TRUE;
     }
-    else if( (( alliance = building->get_guild()->get_alliance() ) != NULL)
-      && (( guild == alliance->get_forgers() ) || ( guild == alliance->get_joiners() )) )
+    else if( (( alliance = guild->get_alliance() ) != NULL)
+      && (( GET_ASSOC(pl) == alliance->get_forgers() ) || ( GET_ASSOC(pl) == alliance->get_joiners() )) )
     {
       allow = TRUE;
     }
 
     if( !allow && (( gl = pl->group ) != NULL) )
     {
-      gl = pl->group;
       while( gl )
       {
-        if( GET_ASSOC(gl->ch) == building->get_guild() )
+        if( GET_ASSOC(gl->ch) == guild )
         {
           allow = TRUE;
           break;
@@ -383,6 +383,9 @@ int building_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
         gl = gl->next;
       }
     }
+
+    if( !(tmob = get_char_room_vis(pl, arg)) || tmob != ch )
+      return FALSE;
 
     if( allow && (IS_FIGHTING(pl) || IS_DESTROYING(pl)) )
     {
@@ -395,9 +398,6 @@ int building_mob_proc(P_char ch, P_char pl, int cmd, char *arg)
       send_to_char("You don't own this outpost!\r\n", pl);
       return TRUE;
     }
-
-    if( !(tmob = get_char_room_vis(pl, arg)) || tmob != ch )
-      return FALSE;
 
     if( !building->get_room(0)->number )
       return FALSE;
