@@ -21388,23 +21388,19 @@ void event_electrical_execution(P_char ch, P_char vict, P_obj obj, void *data)
     0
   };
 
-  if(!ch)
+  if( !ch )
   {
     logit(LOG_EXIT, "event_electrical_execution called in magic.c with no ch");
     raise(SIGSEGV);
   }
-  if(!(vict) ||
-     !IS_ALIVE(ch) ||
-     !IS_ALIVE(vict))
+  if( !IS_ALIVE(ch) || !IS_ALIVE(vict) )
   {
     return;
   }
-  
+
   frytime = *((int *) data);
-  
-  if((frytime >= 5 &&
-     number(0, frytime)) ||
-     frytime == 7)
+
+  if( (frytime >= 5 && number(0, frytime)) || (frytime == 7) )
   {
     act("&+cThe arcs of electricty surrounding you &+yground out!&n", FALSE, ch, 0, vict, TO_VICT);
     act("&+cThe arcs of electricity surrounding&n $N &+yground out!&n", FALSE, ch, 0, vict, TO_CHAR);
@@ -21415,29 +21411,27 @@ void event_electrical_execution(P_char ch, P_char vict, P_obj obj, void *data)
   {
     frytime++;
   }
-  
-  dam = (int) (GET_LEVEL(ch) * 2.5 + number(4, 20));
 
-  if(frytime >= 2)
+  if( frytime >= 4 )
   {
-    dam = (int) (GET_LEVEL(ch) * 1 - number(-20, 20));
+    dam = (int) (GET_LEVEL(ch) / 2 + number(4, 12));
   }
-  
-  if(frytime >= 4)
+  else if( frytime >= 2 )
   {
-    dam = (int) (GET_LEVEL(ch) * 0.75 + number(4, 12));
+    dam = (int) ((2 * GET_LEVEL(ch)) / 3 - number(-20, 20));
   }
-  
-  if(IS_ALIVE(vict) &&
-    spell_damage(ch, vict, dam, SPLDAM_LIGHTNING, SPLDAM_NODEFLECT, &messages) == DAM_NONEDEAD)
-  { 
-    if(vict &&
-      IS_ALIVE(vict)) // Added another check due to reported double death bug.
+  else
+  {
+    dam = (int) ((3 * GET_LEVEL(ch)) / 2 + number(4, 20));
+  }
+
+  if( IS_ALIVE(vict)
+    && spell_damage(ch, vict, dam, SPLDAM_LIGHTNING, SPLDAM_NODEFLECT, &messages) == DAM_NONEDEAD )
+  {
+    if( IS_ALIVE(vict) )
     {
-      add_event(event_electrical_execution, (int) (0.5 * PULSE_VIOLENCE), ch, vict, NULL, 0,
-        &frytime, sizeof(frytime));
-    
-      if(6 > number(1, 10))
+      add_event(event_electrical_execution, (int) (0.5 * PULSE_VIOLENCE), ch, vict, NULL, 0, &frytime, sizeof(frytime));
+      if( 6 > number(1, 10) )
       {
         stop_memorizing(vict);
       }
