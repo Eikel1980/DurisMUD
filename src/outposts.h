@@ -44,7 +44,7 @@ void outpost_setup_gateguards(int, int, int, Building*);
 int outpost_gateguard_proc(P_char, P_char, int, char*);
 void event_outpost_repair(P_char, P_char, P_obj, void*);
 P_Guild get_killing_association(P_char);
-void outposts_upkeep();
+void event_outposts_upkeep( P_char , P_char , P_obj , void * );
 int get_outpost_archers(Building*);
 int outpost_archer_attack(P_char, P_char);
 int outpost_meurtriere_attack(P_char);

@@ -29,6 +29,7 @@
 #include "profile.h"
 #include "vnum.obj.h"
 #include "interp.h"
+#include "outposts.h"
 
 #define MAX_FUNCTIONS 6000
 #define FUNCTION_NAMES_FILE "lib/misc/event_names"
@@ -810,6 +811,9 @@ void ne_init_events(void)
 
   // Checks ALL artis rented and non for negative timers..
   add_event( event_artifact_check_poof_sql, 35 * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
+
+  // Upkeep costs for outposts
+  add_event( event_outposts_upkeep, SECS_PER_MUD_HOUR * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
 
   logit(LOG_STATUS, "Done scheduling events.\n");
 }

@@ -58,8 +58,6 @@ extern bool create_walls(int room, int exit, P_char ch, int level, int type,
 extern vector<Building*> buildings;
 extern const long boot_time;
 
-int upkeep_time;
-
 
 #define CAN_CONSTRUCT_CMD(ch) ( GET_ASSOC(ch) && (IS_LEADER(GET_M_BITS(GET_A_BITS(ch), A_RK_MASK)) || GT_LEADER(GET_M_BITS(GET_A_BITS(ch), A_RK_MASK))) )
 
@@ -1360,7 +1358,8 @@ bool check_castle_walls(int from, int to)
     return FALSE;
 }
 
-void outposts_upkeep()
+// None of the inputs matter.
+void event_outposts_upkeep( P_char ch, P_char vict, P_obj obj, void *data )
 {
   char buff[MAX_STRING_LENGTH];
   int i, j, k;
@@ -1369,15 +1368,6 @@ void outposts_upkeep()
   int cost = (int)get_property("outpost.cost.upkeep", 500000); // per day
   int deduct = 0;
   int owners[MAX_ASC];
-
-  if( time(0) - upkeep_time < (60*60) )
-  {
-    return;
-  }
-  else
-  {
-    upkeep_time = time(0);
-  }
 
   for (j = 0; j < MAX_ASC; j++)
   {
@@ -1409,7 +1399,8 @@ void outposts_upkeep()
         }
       }
       deduct /= 24; // per hour cost
-//      debug("owned: %d, owner: %d, deduct: %s", owners[j], j, coin_stringv(deduct));
+      guild = get_guild_from_id(j);
+//      debug("outposts_upkeep: owner: %s %d, outposts: %d, deduct: %s", guild->get_name().c_str(), j, owners[j], coin_stringv(deduct));
       int p = deduct / 1000;
       deduct = deduct % 1000;
       int g = deduct / 100;
@@ -1418,8 +1409,7 @@ void outposts_upkeep()
       deduct = deduct % 10;
       int c = deduct;
 //      debug("p: %d, g: %d, s: %d, c: %d", p, g, s, c);
-      guild = get_guild_from_id(j);
-      if( building->sub_money(p, g, s, c) )
+      if( !building->sub_money(p, g, s, c) )
       {
 	      send_to_guild(guild, "The Guild Banker", "There are not enough funds for the outpost upkeep.");
         // drop outposts.
@@ -1447,6 +1437,7 @@ void outposts_upkeep()
       }
     }
   }
+  add_event( event_outposts_upkeep, SECS_PER_MUD_HOUR * WAIT_SEC, NULL, NULL, NULL, 0, NULL, 0 );
 }
 
 int outpost_archer_attack(P_char ch, P_char vict)

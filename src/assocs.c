@@ -188,6 +188,7 @@ bool Guild::sub_money( int p, int g, int s, int c )
   silver -= s;
   copper -= c;
 
+  write_transaction_to_ledger( str_dup("System"), "withdrew", coins_to_string(p, g, s, c, "&+y") );
   return TRUE;
 }
 
@@ -2329,7 +2330,7 @@ void Guild::ledger( P_char member, char *args )
   }
   else if( is_abbrev(args, "system") || is_abbrev(args, "guild") )
   {
-    if( !qry("SELECT transaction_info FROM guild_transactions WHERE soc_id = %d AND (transaction_info LIKE '%%System deposited%%') ORDER BY date DESC LIMIT 100", id_number) )
+    if( !qry("SELECT transaction_info FROM guild_transactions WHERE soc_id = %d AND (transaction_info LIKE '%%System %%') ORDER BY date DESC LIMIT 100", id_number) )
     {
       send_to_char("No transactions found...\n", member );
       return;

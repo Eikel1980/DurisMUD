@@ -876,7 +876,6 @@ void game_loop(int s)
     if (!(pulse % (WAIT_SEC * 120)))
     {
       epic_zone_balance();
-      outposts_upkeep();
     }
 
     if (!(pulse % WAIT_SEC))
