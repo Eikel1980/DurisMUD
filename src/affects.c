@@ -3022,7 +3022,7 @@ void clear_links( P_char ch, P_obj obj, int flag )
       link_types[cold->type].break_func.obj(cold);
     ch->obj_linked = cold->next;
     cold->next = NULL;
-    mm_release(dead_link_pool, cold);
+    mm_release(dead_obj_link_pool, cold);
   }
 
   // Remove all those after the head of the list.
@@ -3042,7 +3042,7 @@ void clear_links( P_char ch, P_obj obj, int flag )
         cold_prev->next = cold_next;
         // And free memory.
         cold->next = NULL;
-        mm_release(dead_link_pool, cold);
+        mm_release(dead_obj_link_pool, cold);
       }
       // If we don't have a hit, move cold_prev down the list one.
       else
@@ -3154,7 +3154,7 @@ void unlink_char_obj_affect(P_char ch, struct affected_type *af)
       ch->obj_linked = cold->next;
     }
     cold->next = NULL;
-    mm_release(dead_link_pool, cold);
+    mm_release(dead_obj_link_pool, cold);
   }
 }
 
