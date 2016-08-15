@@ -198,7 +198,7 @@ orogs                     *458-459
 vehicles                  *470-479 /* wagons, ferrys, flying carpets */
 guildhalls                *480-489 /* for guildhalls */
 desert                    *490-497 (scip)
-player_ships              *500-509  /* For creating ships on the fly */
+*player_ships              *500-509  /* For creating ships on the fly */
 hell_one_avernus          *510-513
 hell_two_dis              *514-517
 hell_three_minauros       *518-521

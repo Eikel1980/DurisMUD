@@ -4920,7 +4920,7 @@ void do_purge(P_char ch, char *argument, int cmd)
           obj->short_description, world[ch->in_room].number);
       sql_log(ch, WIZLOG, "Purged %s", obj->short_description);
 
-      if(obj_index[obj->R_num].virtual_number == ALL_SHIPS_VNUM)
+      if( obj_index[obj->R_num].virtual_number == VOBJ_ALL_SHIPS )
       {
         temp = shipObjHash.find(obj);
         if(!temp)

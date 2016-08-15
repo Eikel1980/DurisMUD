@@ -215,7 +215,7 @@ SECS_PER_MUD_DAY)
 
 #define IS_HOMETOWN(r) ( zone_table[world[r].zone].hometown != 0 )
 
-#define IS_SHIP_ROOM(r) (world[r].number >= 60000 && world[r].number <= 64999)
+#define IS_SHIP_ROOM(r) ( (world[r].number >= VROOM_SHIPS_START) && (world[r].number <= VROOM_SHIPS_END) )
 
 #define IS_OCEAN_ROOM(r) ( world[r].sector_type == SECT_OCEAN )
 #define IS_SECT(room, sect) ( world[room].sector_type == sect )

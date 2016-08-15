@@ -47,8 +47,8 @@ struct ShipFragData shipfrags[20];
 //--------------------------------------------------------------------
 void initialize_ships()
 {
-  obj_index[real_object0(60000)].func.obj = ship_panel_proc;
-  obj_index[real_object0(60001)].func.obj = ship_obj_proc;
+  obj_index[real_object0(VOBJ_PANEL)].func.obj = ship_panel_proc;
+  obj_index[real_object0(VOBJ_ALL_SHIPS)].func.obj = ship_obj_proc;
   obj_index[real_object0(1223)].func.obj = ship_cargo_info_stick;
   davy_jones_locker_rnum = real_room0(VROOM_DAVY_JONES);
   ship_transit_rnum = real_room0(VROOM_SHIP_TRANSIT);
@@ -133,7 +133,7 @@ struct ShipData *new_ship(int m_class, bool npc)
    P_ship ship = NULL;
    CREATE(ship, ShipData, 1, MEM_TAG_SHIPDAT);
    
-   ship->shipobj = read_object(60001, VIRTUAL);
+   ship->shipobj = read_object(VOBJ_ALL_SHIPS, VIRTUAL);
    if (ship->shipobj == NULL) {
       shiperror = 16;
       return NULL;
@@ -143,7 +143,7 @@ struct ShipData *new_ship(int m_class, bool npc)
    // Set up the new ship
    ship->autopilot = 0;
    ship->npc_ai = 0;
-   ship->panel = read_object(60000, VIRTUAL);
+   ship->panel = read_object(VOBJ_PANEL, VIRTUAL);
    if (ship->panel == NULL) 
    {
       shiperror = 17;
@@ -811,61 +811,72 @@ void clear_ship_layout(P_ship ship)
 
 int find_free_ship_room()
 {
-   int room = (SHIPZONE * 100), rroom;
-   while ((rroom = real_room0(room))) 
-   {
-      if (world[rroom].funct != ship_room_proc)
-        return room;
-      room ++;
-   }
-   return 0;
+  int rroom, vroom;
+
+  // Two rooms (davy jones for sunken ships, and ship transit room) are used already.
+  vroom = (SHIPZONE * 100) + 2;
+  while( (rroom = real_room0(vroom)) )
+  {
+    if( world[rroom].funct != ship_room_proc )
+    {
+      return vroom;
+    }
+    if( ++vroom > VROOM_SHIPS_END )
+    {
+      return -1;
+    }
+  }
+  return -1;
 }
 
 bool set_ship_physical_layout(P_ship ship)
 {
-    for (int j = 0; j < ship->room_count; j++) 
-    {
-        int vroom = find_free_ship_room();
-        if (!vroom) return false;
-        int rroom = real_room0(vroom);
-        if (!rroom)
-            return FALSE;
-        SHIP_ROOM_NUM(ship, j) = vroom;
-        world[rroom].funct = ship_room_proc;
-    }
-    for (int j = 0; j < ship->room_count; j++) 
-    {
-        int rroom = real_room0(SHIP_ROOM_NUM(ship, j));
-        if (!rroom)
-            return FALSE;
+  int vroom, rroom, to_room;
 
-        for (int dir = 0; dir < NUM_EXITS; dir++) 
+  for( int j = 0; j < ship->room_count; j++ )
+  {
+    vroom = find_free_ship_room();
+    if( (vroom < VROOM_SHIPS_START) || (vroom > VROOM_SHIPS_END) )
+      return FALSE;
+    if( (rroom = real_room0( vroom )) == 0 )
+      return FALSE;
+
+    SHIP_ROOM_NUM(ship, j) = vroom;
+    world[rroom].funct = ship_room_proc;
+  }
+  for( int j = 0; j < ship->room_count; j++ )
+  {
+    if( (rroom = real_room0( SHIP_ROOM_NUM(ship, j) )) == 0 )
+    {
+      return FALSE;
+    }
+
+    for( int dir = 0; dir < NUM_EXITS; dir++ )
+    {
+      if( SHIP_ROOM_EXIT(ship, j, dir) != -1 )
+      {
+        if( (to_room = real_room0( SHIP_ROOM_NUM(ship, SHIP_ROOM_EXIT( ship, j, dir )) )) == 0 )
+          return FALSE;
+
+        if( !world[rroom].dir_option[dir] )
+          CREATE(world[rroom].dir_option[dir], room_direction_data, 1, MEM_TAG_DIRDATA);
+
+        world[rroom].dir_option[dir]->to_room = to_room;
+        world[rroom].dir_option[dir]->exit_info = 0;
+      }
+      else
+      {
+        if( world[rroom].dir_option[dir] )
         {
-            if (SHIP_ROOM_EXIT(ship, j, dir) != -1) 
-            {
-                int to_room = real_room0(SHIP_ROOM_NUM(ship, SHIP_ROOM_EXIT(ship, j, dir)));
-                if (!to_room)
-                    return FALSE;
-
-                if (!world[rroom].dir_option[dir]) 
-                    CREATE(world[rroom].dir_option[dir], room_direction_data, 1, MEM_TAG_DIRDATA);
-
-                world[rroom].dir_option[dir]->to_room = to_room;
-                world[rroom].dir_option[dir]->exit_info = 0;
-            } 
-            else 
-            {
-                if (world[rroom].dir_option[dir])
-                {
-                    FREE(world[rroom].dir_option[dir]);
-                    world[rroom].dir_option[dir] = 0;
-                }
-            }
+          FREE( world[rroom].dir_option[dir] );
+          world[rroom].dir_option[dir] = NULL;
         }
+      }
     }
-    ship->bridge = SHIP_ROOM_NUM(ship, 0);
-    ship->entrance = SHIP_ROOM_NUM(ship, ship->entrance);
-    name_ship_rooms(ship);
+  }
+  ship->bridge = SHIP_ROOM_NUM(ship, 0);
+  ship->entrance = SHIP_ROOM_NUM(ship, ship->entrance);
+  name_ship_rooms(ship);
 
     // Set entrance to/exit from zone to ship to zone here.
     /*
@@ -884,7 +895,7 @@ bool set_ship_physical_layout(P_ship ship)
       }
     }
     */
-    return TRUE;
+  return TRUE;
 }
 
 

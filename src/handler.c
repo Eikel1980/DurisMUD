@@ -32,6 +32,7 @@
 #include "map.h"
 #include "handler.h"
 #include "ctf.h"
+#include "ships/ships.h"
 
 /*
  *
@@ -52,7 +53,7 @@ extern char *coin_names[];
 extern char *coin_abbrev[];
 extern const char *dirs[];
 extern const struct stat_data stat_factor[];
-extern int rev_dir[];
+extern const int rev_dir[];
 extern const int top_of_world;
 extern struct con_app_type con_app[];
 extern struct dex_app_type dex_app[];

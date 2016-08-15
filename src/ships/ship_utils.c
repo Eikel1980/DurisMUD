@@ -1604,7 +1604,7 @@ int jettison_crates(P_ship ship, int crates, int index, int type)
             continue;
 
         int r_num;
-        if ((r_num = real_object(CARGO_CRATE_VNUM)) < 0)
+        if ((r_num = real_object(VOBJ_CARGO_CRATE)) < 0)
             return FALSE;
         P_obj crate = read_object(r_num, REAL);
         if (!crate) return FALSE;
@@ -1761,7 +1761,7 @@ int salvage_cargo(P_char ch, P_ship ship, int crates)
     while (obj && i < crates)
     {
         P_obj next_obj = obj->next_content;
-        if (obj_index[obj->R_num].virtual_number == CARGO_CRATE_VNUM)
+        if (obj_index[obj->R_num].virtual_number == VOBJ_CARGO_CRATE)
         {
             if (!add_crate(ship, obj->value[0], obj->value[1]))
             {

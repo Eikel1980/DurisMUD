@@ -411,7 +411,7 @@ int whats_in_maproom(P_char ch, int room, int distance, int show_regardless)
       {
         val = MIN(val, CONTAINS_GUILDHALL);
       }
-      else if( OBJ_VNUM(obj) == CARGO_CRATE_VNUM && (world[room].sector_type == SECT_WATER_NOSWIM
+      else if( OBJ_VNUM(obj) == VOBJ_CARGO_CRATE && (world[room].sector_type == SECT_WATER_NOSWIM
         || world[room].sector_type == SECT_OCEAN || world[room].sector_type == SECT_UNDRWLD_NOSWIM) )
       {
         val = MIN(val, CONTAINS_CARGO);

@@ -5,14 +5,17 @@
 #include "structs.h"
 
 
-#define PANEL_OBJ           50000
-#define SHIP_ZONE_START     50001
-#define SHIP_ZONE_END       50999
+#define VOBJ_PANEL          60000
+#define VOBJ_ALL_SHIPS      60001
+#define VOBJ_CARGO_CRATE    40226
+
+#define VROOM_DAVY_JONES    60000
+#define VROOM_SHIP_TRANSIT  60001
+// Includes davy jones and transit.
+#define VROOM_SHIPS_START   60000
+#define VROOM_SHIPS_END     64999
+
 #define BUILDTIME               1
-#define CARGO_CRATE_VNUM    40226
-#define VROOM_DAVY_JONES    50000
-#define VROOM_SHIP_TRANSIT  50001
-#define ALL_SHIPS_VNUM      60001
 
 // Ship status
 #define DOCK              0
