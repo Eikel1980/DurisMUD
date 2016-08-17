@@ -8754,20 +8754,38 @@ int staff_of_air_conjuration(P_obj obj, P_char ch, int cmd, char *arg)
 	  return TRUE;
   }
 
+  curr_time = time(NULL);
+
+  if( cmd == CMD_PERIODIC )
+  {
+    if( (obj->timer[1] + SECS_PER_REAL_DAY) <= curr_time )
+    {
+      if( obj->value[2] == 0 )
+      {
+        if( OBJ_WORN(obj) && (( ch = obj->loc.wearing ) != NULL) )
+          act("&+cA small &+Wj&+Co&+cl&+Yt&+c of electricity &+Ca&+Wr&+Bcs&+c from $p&+c to your hand.&n", FALSE, ch, obj, NULL, TO_CHAR);
+        obj->value[2] = 1;
+        obj->timer[1] = curr_time;
+      }
+    }
+    return FALSE;
+  }
+
   if( !IS_ALIVE(ch) || !OBJ_WORN(obj) || (obj->loc.wearing != ch) )
   {
 	  return FALSE;
   }
 
+
   if( cmd == CMD_USE )
   {
-    if( obj == get_object_in_equip_vis(ch, arg, &i) )
+    if( obj == get_object_in_equip_vis(ch, arg, &i) && obj->value[2] == 0 )
     {
-      send_to_char( "&+cA small voice inside your head whispers, \"Try '&+wsay lightning&+c'.\"\n", ch );
+      send_to_char( "&+cA small voice inside your head whispers, \"No energy for that right now, try '&+wsay lightning&+c'.\"\n", ch );
       return TRUE;
     }
   }
-  curr_time = time(NULL);
+
   if( arg && (cmd == CMD_SAY) )
   {
     if ( isname(arg, "lightning") )
@@ -8778,17 +8796,17 @@ int staff_of_air_conjuration(P_obj obj, P_char ch, int cmd, char *arg)
         return TRUE;
       }
 
-      if (obj->timer[0]+1440 <= curr_time )
+      if( obj->timer[0] + SECS_PER_REAL_HOUR <= curr_time )
       {
-        act("&+cElectrical c&+Wh&+Ca&+Br&+bges&+c begin to &+Ca&+Wr&+Bc&+c and &+Ws&+Cp&+Ba&+brk&+c on the ground randomly..&n", TRUE, ch, obj, NULL, TO_CHAR);
-        act("&+cElectrical c&+Wh&+Ca&+Br&+bges&+c begin to &+Ca&+Wr&+Bc&+c and &+Ws&+Cp&+Ba&+brk&+c on the ground randomly..&n", TRUE, ch, obj, NULL, TO_ROOM);
+        act("&+cElectrical c&+Wh&+Ca&+Br&+bges&+c begin to &+Ca&+Wr&+Bc&+c and &+Ws&+Cp&+Ba&+brk&+c on the ground randomly..&n", FALSE, ch, obj, NULL, TO_CHAR);
+        act("&+cElectrical c&+Wh&+Ca&+Br&+bges&+c begin to &+Ca&+Wr&+Bc&+c and &+Ws&+Cp&+Ba&+brk&+c on the ground randomly..&n", FALSE, ch, obj, NULL, TO_ROOM);
         cast_call_lightning(56, ch, 0, SPELL_TYPE_SPELL, NULL, 0);
         obj->timer[0] = curr_time;
         return TRUE;
       }
       else
       {
-        act("&+cA small &+Ws&+Cp&+Ba&+brk&+c of electricity &+Ca&+Wr&+Bcs&+c from your staff to your hand, but nothing else seems to happen.&n", TRUE, ch, obj, victim, TO_CHAR);
+        act("&+cA small &+Ws&+Cp&+Ba&+brk&+c of electricity &+Ca&+Wr&+Bcs&+c from $p to your hand, but nothing else seems to happen.&n", FALSE, ch, obj, victim, TO_CHAR);
         return TRUE;
       }
     }
