@@ -5613,8 +5613,8 @@ void spell_minor_creation(int level, P_char ch, P_char victim, P_obj obj)
   SET_BIT(obj->extra2_flags, ITEM2_STOREITEM);
   obj_to_room(obj, ch->in_room);
   obj->z_cord = ch->specials.z_cord;
-  act("$p &+Wsuddenly appears.", TRUE, ch, obj, 0, TO_ROOM);
-  act("$p &+Wsuddenly appears.", TRUE, ch, obj, 0, TO_CHAR);
+  act("$p &+Wsuddenly appears.", FALSE, ch, obj, 0, TO_ROOM);
+  act("$p &+Wsuddenly appears.", FALSE, ch, obj, 0, TO_CHAR);
 }
 
 
@@ -5767,8 +5767,8 @@ void spell_create_food(int level, P_char ch, char *arg, int type,
     logit(LOG_DEBUG, "spell_create_food(): obj 364 not loadable");
     return;
   }
-  act("$p &+Wsuddenly appears.", TRUE, ch, food, 0, TO_ROOM);
-  act("$p &+Wsuddenly appears.", TRUE, ch, food, 0, TO_CHAR);
+  act("$p &+Wsuddenly appears.", FALSE, ch, food, 0, TO_ROOM);
+  act("$p &+Wsuddenly appears.", FALSE, ch, food, 0, TO_CHAR);
 
   SET_BIT(food->extra_flags, ITEM_NOSELL);
   obj_to_room(food, ch->in_room);

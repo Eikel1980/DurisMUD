@@ -8356,28 +8356,84 @@ void do_knock(P_char ch, char *arg, int cmd)
 
 void do_ingame(P_char ch, char *args, int cmd)
 {
-  char     buf1[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH];
-  P_desc   i;
-  char    *p;
+  char     buf1[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH], buf3[MAX_STRING_LENGTH];
+  char     name[MAX_NAME_LENGTH + 1];
+  P_desc   desc;
+  char    *pIn, *pOut;
+  int      count, i;
+  bool     percent;
 
-  strcpy(buf1, args);           /* don't wanna change args directly */
+  count = 0;
+  percent = FALSE;
+  pIn = args;
+  pOut = buf1;
+  while( *pIn != '\0' )
+  {
+    // Leading %.
+    if( *pIn == '%' )
+    {
+      percent = TRUE;
+      *(pOut++) = '%';
+      pIn++;
+    }
+    // %p -> substitute.
+    else if( percent && (*pIn == 'p') )
+    {
+      percent = FALSE;
+      // We have the first % from initial if.
+      // For each additional %p, we need to add %'s to total 2^count.
+      for( i = (1 << ( count++ )) - 1; i > 0; i-- )
+      {
+        *(pOut++) = '%';
+      }
+      *(pOut++) = 's';
+      pIn++;
+    }
+    // Regular character.
+    else
+    {
+      percent = FALSE;
+      *(pOut++) = *(pIn++);
+    }
+  }
+  *pOut = '\0';
 
-  if(!(p = strstr(buf1, " %p")))
+  if( count == 0 )
   {
     send_to_char("Bleah. Try ingame <string>, and include a %p somewhere.\n", ch);
     return;
   }
-  p++;
-  p++;
-  *p = 's';
-  for (i = descriptor_list; i; i = i->next)
-    if((i->character != ch) && !i->connected && CAN_SEE(ch, i->character) &&
-        (GET_LEVEL(i->character) < GET_LEVEL(ch)))
-    {
 
-      sprintf(buf2, buf1, FirstWord(GET_NAME(i->character)));
-      command_interpreter(ch, buf2);
+  for( desc = descriptor_list; desc; desc = desc->next )
+  {
+    // Not self, in game, visible and lower lvl.
+    if( (desc->character != ch) && (desc->connected == CON_PLAYING) && CAN_SEE(ch, desc->character)
+      && (GET_LEVEL( desc->character ) < GET_LEVEL( ch )) )
+    {
+      sprintf( name, "%s", GET_TRUE_NAME(desc->character) );
+      // We know there's at least one %s in the string that needs substituting.
+      sprintf( buf2, buf1, name );
+      i = 1;
+      // Substitute the rest if there are any.
+      while( i++ < count )
+      {
+        // Swap back and forth between buffers.
+        if( (i % 2) == 0 )
+          sprintf( buf3, buf2, name );
+        else
+          sprintf( buf2, buf3, name );
+      }
+      // count % 2 tells us which buffer we have the final string.
+      if( (count % 2) == 0 )
+      {
+        command_interpreter(ch, buf3);
+      }
+      else
+      {
+        command_interpreter(ch, buf2);
+      }
     }
+  }
 }
 
 void do_inroom(P_char ch, char *args, int cmd)
