@@ -2,7 +2,7 @@
 &+LThe Twin Keeps of Devastated Tharnadia&N~
 78850 0 0 40 50 2
 *
-* Zone edited with durisEdit v3.00
+* Zone edited with durisEdit v3.02
 *
 *
 D 0 78400 3 2 100 0 0 0
@@ -1254,7 +1254,7 @@ E 1 78425 22 16 100 0 0 0          *   a blackrock pike
 M 0 78418 5 78648 100 0 0 0        * a dark iron camp watchman
 M 0 78418 5 78648 100 0 0 0        * a dark iron camp watchman
 M 0 78439 1 78659 60 0 0 0         * Kyzastaxkasis the Elder Azharul Dragon
-G 1 78428 1 0 100 0 0 0            *    the scales of Kyzastaxkasis
+G 1 78428 1 0 10 0 0 0             *    the scales of Kyzastaxkasis
 M 0 78447 26 78660 100 0 0 0       * an ice hawk
 M 0 78447 26 78662 100 0 0 0       * an ice hawk
 M 0 78447 26 78662 100 0 0 0       * an ice hawk
