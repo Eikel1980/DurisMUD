@@ -80,7 +80,8 @@ extern int bfs_cur_marker;
 // Similar to VALID_EDGE, missing the hometown check, but faster due to less dereferencing.
 #define VALID_EDGE2(exit) ( (exit != NULL) && (exit->to_room != NOWHERE) && !IS_MARKED(exit->to_room) \
   && !IS_SET(exit->exit_info, EX_LOCKED | EX_BLOCKED)                                                 \
-  && !IS_OCEAN_ROOM(exit->to_room) && (world[exit->to_room].sector_type != SECT_MOUNTAIN)             \
+  && !IS_OCEAN_ROOM(exit->to_room)                                                                    \
+  && (( world[exit->to_room].sector_type != SECT_MOUNTAIN ) || !IS_MAP_ROOM( exit->to_room ))         \
   && !IS_SET(world[exit->to_room].room_flags, GUILD_ROOM) )
 
 // Handles the missing hometown check difference between VALID_EDGE() and VALID_EDGE2()

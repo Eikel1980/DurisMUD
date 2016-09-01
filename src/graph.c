@@ -1371,9 +1371,9 @@ static void bfs_enqueue(int room, int dir, int step)
   curr->room = room;
   curr->dir = (ubyte) dir;
   curr->step_no = step;
-  curr->next = 0;
+  curr->next = NULL;
 
-  if (queue_tail)
+  if( queue_tail )
   {
     queue_tail->next = curr;
     queue_tail = curr;
@@ -1605,19 +1605,21 @@ static byte FFS_flying(int src, int target, int *ttl_steps)
  */
 byte find_first_step(int src, int target, long hunt_flags, int is_ship, int wagon_type, int *ttl_steps)
 {
-  int      curr_dir;
-  int      curr_room;
+  int   curr_dir;
+  int   curr_room;
   // setup some flags.  code is cleaner with booleans than with checking bit flags...
-  bool can_fly = IS_SET(hunt_flags, BFS_CAN_FLY);
-  bool can_dispel = IS_SET(hunt_flags, BFS_CAN_DISPEL);
-  bool can_break = IS_SET(hunt_flags, BFS_BREAK_WALLS);
-  bool stay_zone = IS_SET(hunt_flags, BFS_STAY_ZONE);
-  bool no_mob = IS_SET(hunt_flags, BFS_AVOID_NOMOB);
-  bool rr_targ = IS_SET(hunt_flags, BFS_ROADRANGER);
+  bool  can_fly, can_dispel, can_break, stay_zone, no_mob, rr_targ;
   struct room_direction_data *exit;
-  ulong    i = 0U;
+  ulong i;
   P_char tar;
 
+  i = 0U;
+  can_fly = IS_SET(hunt_flags, BFS_CAN_FLY);
+  can_dispel = IS_SET(hunt_flags, BFS_CAN_DISPEL);
+  can_break = IS_SET(hunt_flags, BFS_BREAK_WALLS);
+  stay_zone = IS_SET(hunt_flags, BFS_STAY_ZONE);
+  no_mob = IS_SET(hunt_flags, BFS_AVOID_NOMOB);
+  rr_targ = IS_SET(hunt_flags, BFS_ROADRANGER);
 
   if(is_ship)
   {
@@ -1649,18 +1651,12 @@ byte find_first_step(int src, int target, long hunt_flags, int is_ship, int wago
     return BFS_ALREADY_THERE;
   }
 
-/* Kinda spammy debugging message.
-#define YN(x) (x ? "YES" : "NO")
-debug( "From room: %d, can_fly: %s, can_dispel: %s, can_break: %s, stay_zone: %s, no_mob: %s.", world[src].number,
-  YN(can_fly), YN(can_dispel), YN(can_break), YN(stay_zone), YN(no_mob) );
-*/
-
   // clear marks first
   bfs_clear_marks();
   BFSMARK(src);
 
   // first, enqueue the first steps, saving which direction we're going. 
-  for (curr_dir = 0; curr_dir < NUM_EXITS; curr_dir++)
+  for( curr_dir = 0; curr_dir < NUM_EXITS; curr_dir++ )
   {
     exit = world[src].dir_option[curr_dir];
     if( VALID_EDGE2(exit) )
@@ -1673,12 +1669,19 @@ debug( "From room: %d, can_fly: %s, can_dispel: %s, can_break: %s, stay_zone: %s
         && (can_dispel || !IS_WALLED( src, curr_dir ) || ( can_break && IS_BREAKABLE(src, curr_dir) ))
         && (!no_mob || !IS_SET( world[exit->to_room].room_flags, NO_MOB )) )
       {
+        // If the target room is one room away and we've found it.
+        if( (rr_targ ? IS_ROADRANGER_TARGET(exit->to_room) : (exit->to_room == target)) )
+        {
+          bfs_clear_queue();
+          *ttl_steps = 1;
+          return curr_dir;
+        }
         // Enqueue it only if it passes the checks.
         bfs_enqueue(exit->to_room, curr_dir, 1);
       }
     }
   }
-  // now, do the classic BFS. 
+  // now, do the classic BFS.
   while( queue_head )
   {
     if( i++ > BFS_MAX_ROOMS )
@@ -1715,36 +1718,37 @@ debug( "From room: %d, can_fly: %s, can_dispel: %s, can_break: %s, stay_zone: %s
       return BFS_ERROR;
     }
 
-    if( (rr_targ ? IS_ROADRANGER_TARGET(queue_head->room) : (queue_head->room == target)) )
+    curr_room = queue_head->room;
+    for( curr_dir = 0; curr_dir < NUM_EXITS; curr_dir++ )
     {
-      curr_dir = queue_head->dir;
-      *ttl_steps = queue_head->step_no;
-      bfs_clear_queue();
-      return curr_dir;
-    }
-    else
-    {
-      for( curr_dir = 0; curr_dir < NUM_EXITS; curr_dir++ )
+      exit = world[curr_room].dir_option[curr_dir];
+      if( VALID_EDGE2(exit) )
       {
-        curr_room = queue_head->room;
-        exit = world[curr_room].dir_option[curr_dir];
-        if( VALID_EDGE2(exit) )
+        // Mark it first so we only check it once.
+        BFSMARK( exit->to_room );
+        if( HOMETOWN_CHECK(curr_room, exit->to_room)
+          && (can_fly || !NEEDS_FLY( curr_room, curr_dir ))
+          && (!stay_zone || SAME_ZONE(curr_room, curr_dir ))
+          && (can_dispel || !IS_WALLED( curr_room, curr_dir ) || ( can_break && IS_BREAKABLE(curr_room, curr_dir) ))
+          && (!no_mob || !IS_SET( world[exit->to_room].room_flags, NO_MOB )) )
         {
-          // Mark it first so we only check it once.
-          BFSMARK( exit->to_room );
-          if( HOMETOWN_CHECK(curr_room, exit->to_room)
-            && (can_fly || !NEEDS_FLY( curr_room, curr_dir ))
-            && (!stay_zone || SAME_ZONE(curr_room, curr_dir ))
-            && (can_dispel || !IS_WALLED( curr_room, curr_dir ) || ( can_break && IS_BREAKABLE(curr_room, curr_dir) ))
-            && (!no_mob || !IS_SET( world[exit->to_room].room_flags, NO_MOB )) )
+          // If we've found the target room.
+          if( (rr_targ ? IS_ROADRANGER_TARGET(exit->to_room) : (exit->to_room == target)) )
           {
-            // Enqueue it only if it passes the checks.
-            bfs_enqueue(exit->to_room, curr_dir, queue_head->step_no + 1 );
+            // Total steps is from the beginning to the head + 1 room to the target (head->exit->to_room).
+            *ttl_steps = queue_head->step_no + 1;
+            // We return the direction of the first step towards it (not the last).
+            //   So, store it in curr_dir while we clear the queue.
+            curr_dir = queue_head->dir;
+            bfs_clear_queue();
+            return curr_dir;
           }
+          // Enqueue it only if it passes the checks.
+          bfs_enqueue(exit->to_room, queue_head->dir, queue_head->step_no + 1 );
         }
       }
-      bfs_dequeue();
     }
+    bfs_dequeue();
   }
   return BFS_NO_PATH;
 }

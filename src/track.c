@@ -375,6 +375,7 @@ void do_track(P_char ch, char *arg, int cmd) //do_track_not_in_use
       return;
     }
   }
+
   SET_BIT(ch->specials.affected_by3, AFF3_TRACKING);
   ch->specials.tracking = (victim ? victim->in_room : real_room(atoi(name)));
   ch->specials.was_fighting = victim;
