@@ -2220,6 +2220,8 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
     "e",
     "s",            // 20
     "w",
+    "u",
+    "d",
     "inside",
     "\n"
   };
@@ -2290,6 +2292,9 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
   /* Partial Match */
   keyword_no = search_block(arg1, keywords, TRUE);
 
+  if( keyword_no == 24 )
+    keyword_no = 6;
+
   /* Let arg2 become the target object (arg1) */
   if( (keyword_no == -1) && *arg1 )
   {
@@ -2304,7 +2309,7 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
   // If we have no args, and CMD_LOOKOUT or CMD_LOOKAFAR
   if( (keyword_no == 8) && (cmd != CMD_LOOK) )
   {
-    keyword_no = 23;
+    keyword_no = 25;
   }
 
   switch (keyword_no)
@@ -2315,6 +2320,8 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
   case 19:
   case 20:
   case 21:
+  case 22:
+  case 23:
     keyword_no -= 10;
   case 14:
   case 15:
@@ -2775,9 +2782,9 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
 
   case 8:                      /* look COMMAND, with NULL args, brief is forced */
   case 9:                      /* look 'room', brief is overridden */
-  case 23:                     /* look called with CMD_LOOKOUT or CMD_LOOKAFAR */
+  case 25:                     /* look called with CMD_LOOKOUT or CMD_LOOKAFAR */
 
-  case 22:                     // looking 'inside' something - so we can show a room w/o the map
+  case 24:                     // looking 'inside' something - so we can show a room w/o the map
 
     switch (keyword_no)
     {
@@ -2791,7 +2798,7 @@ void new_look(P_char ch, char *argument, int cmd, int room_no)
           map_look(ch, MAP_IGNORE_TOGGLE);
         brief_mode = FALSE;
         break;
-      case 23:
+      case 25:
         // Look out -> look out of a tower, or out of a ship.
         if( IS_MAP_ROOM(room_no) && (cmd == CMD_LOOKOUT) )
         {
