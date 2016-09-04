@@ -995,6 +995,19 @@ struct racewar_struct
   const char *name;
 };
 
+#define MAX_SURNAME                         8
+
+struct surname_struct
+{
+  const char *color_name;
+  const char *name;
+  int         achievement_number;
+};
+
+// 1 is default (everyone has), 6 is frag based (2000 means 20.00 frags).  The rest are via achievements.
+#define HAS_SURNAME( ch, i ) ( (i == 1) ? TRUE : (( i == 6 ) ? ( GET_FRAGS(ch) > 2000 ) \
+  : ( affected_by_spell(ch, surnames[i].achievement_number) )) )
+
 /* class defn's (PC) */
 /* IF YOU ADD A CLASS, YOU NEED TO ADD IT HERE AND EXPMOD_CLS_...
  * IF YOU REMOVE A CLASS, YOU SHOULD TO UPDATE EXPMOD_CLS_... to EXPMOD_CLS_UNUSED or such."
@@ -1395,6 +1408,5 @@ struct material_data {
 #define EXPMOD_OVER_LEVEL_CAP              61
 
 #define EXPMOD_MAX                         61
-
 
 #endif /* _DURIS_DEFINES_H_ */

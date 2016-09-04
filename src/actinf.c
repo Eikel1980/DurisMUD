@@ -6550,32 +6550,52 @@ void do_who(P_char ch, char *argument, int cmd)
             strcat(who_output, " (&+rF&+Rr&+ra&+Rg &+rL&+Ro&+rr&+Rd&n&N)");
 
           // Surtitles - Drannak ... You did this so wrong.. should've used a mask and numbers... not on/off bits.
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURSERF))
-            strcat(who_output, "&n[&+ySerf&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURCOMMONER))
-            strcat(who_output, "&n[&+YCommoner&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURKNIGHT))
-            strcat(who_output, "&n[&+LK&+wn&+Wig&+wh&+Lt&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURNOBLE))
-            strcat(who_output, "&n[&+mN&+Mobl&+me&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURLORD))
-            strcat(who_output, "&n[&+rL&+Ror&+rd&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURKING))
-            strcat(who_output, "&n[&+yK&+Yin&+yg&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURLIGHT))
-            strcat(who_output, "&n[&+WLight&+wbri&+Lnger&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURDRAGON))
-            strcat(who_output, "&n[&+gDr&+Gag&+Lon &+gS&+Glaye&+gr&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURHEALS))
-            strcat(who_output, "&n[&+WD&+Ro&+rct&+Ro&+Wr&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURSERIAL))
-            strcat(who_output, "&n[&+LSe&+wr&+Wi&+wa&+Ll &+rKiller&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURREAPER))
-            strcat(who_output, "&n[&+LGr&+wi&+Wm Rea&+wp&+Ler&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURDECEPTICON))
-            strcat(who_output, "&n[&+LDe&+mCePTiC&+LoN&n]");
-          if(IS_SET((who_list[j])->specials.act3, PLR3_SURDEATHSDOOR))
-            strcat(who_output, "&n[&+MTo&+mug&+Mh G&+muy&n]");
+          // Fixed this.
+          if( PLR3_FLAGGED(ch, PLR3_SURNAMES) )
+          {
+            switch( GET_SURNAME(who_list[j]) )
+            {
+              case SURNAME_SERF:
+                strcat(who_output, "&n[&+ySerf&n]");
+                break;
+              case SURNAME_COMMONER:
+                strcat(who_output, "&n[&+YCommoner&n]");
+                break;
+              case SURNAME_KNIGHT:
+                strcat(who_output, "&n[&+LK&+wn&+Wig&+wh&+Lt&n]");
+                break;
+              case SURNAME_NOBLE:
+                strcat(who_output, "&n[&+mN&+Mobl&+me&n]");
+                break;
+              case SURNAME_LORD:
+                strcat(who_output, "&n[&+rL&+Ror&+rd&n]");
+                break;
+              case SURNAME_KING:
+                strcat(who_output, "&n[&+yK&+Yin&+yg&n]");
+                break;
+              case SURNAME_LIGHTBRINGER:
+                strcat(who_output, "&n[&+WLight&+wbri&+Lnger&n]");
+                break;
+              case SURNAME_DRAGONSLAYER:
+                strcat(who_output, "&n[&+gDr&+Gag&+Lon &+gS&+Glaye&+gr&n]");
+                break;
+              case SURNAME_DOCTOR:
+                strcat(who_output, "&n[&+WD&+Ro&+rct&+Ro&+Wr&n]");
+                break;
+              case SURNAME_SERIALKILLER:
+                strcat(who_output, "&n[&+LSe&+wr&+Wi&+wa&+Ll &+rKiller&n]");
+                break;
+              case SURNAME_GRIMREAPER:
+                strcat(who_output, "&n[&+LGr&+wi&+Wm Rea&+wp&+Ler&n]");
+                break;
+              case SURNAME_DECEPTICON:
+                strcat(who_output, "&n[&+LDe&+mCePTiC&+LoN&n]");
+                break;
+              case SURNAME_TOUGHGUY:
+                strcat(who_output, "&n[&+MTo&+mug&+Mh G&+muy&n]");
+                break;
+            }
+          }
 
           /* No frag food title? :(
           if( IS_SET((who_list[j])->specials.act3, PLR3_FRAGLOW) )

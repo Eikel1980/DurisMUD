@@ -1082,6 +1082,7 @@ const char *command[MAX_CMD] = {
   "deathsdoor",
   "offlinemsg",
   "instacast",
+  "surname",
   "\n"                          /* MAX_CMD = 833, MAX_CMD_LIST = 1000 */
 };
 
@@ -2750,6 +2751,7 @@ void assign_command_pointers(void)
   CMD_Y(CMD_THROAT_CRUSH, STAT_NORMAL + POS_STANDING, do_throat_crush, 0, TRUE);
   CMD_Y(CMD_TIME, STAT_DEAD + POS_PRONE, do_time, 0, FALSE);
   CMD_Y(CMD_TOGGLE, STAT_DEAD + POS_PRONE, do_toggle, 0, FALSE);
+  CMD_Y(CMD_SURNAME, STAT_DEAD + POS_PRONE, do_surname, 0, FALSE);
   CMD_Y(CMD_TRAMPLE, STAT_NORMAL + POS_STANDING, do_trample, 0, TRUE);
   CMD_Y(CMD_TROPHY, STAT_RESTING + POS_PRONE, do_trophy, 0, FALSE);
   CMD_Y(CMD_TYPO, STAT_DEAD + POS_PRONE, do_typo, 0, FALSE);

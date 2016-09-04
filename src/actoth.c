@@ -4300,7 +4300,7 @@ void show_toggles(P_char ch)
           ONOFF(PLR2_FLAGGED(ch, PLR2_NEWBIEEQ)),
           ONOFF(PLR3_FLAGGED(ch, PLR3_NOBEEP)),
           ONOFF(PLR3_FLAGGED(ch, PLR3_UNDERLINE)),
-          ONOFF(PLR3_FLAGGED(ch, PLR3_NOSUR)),
+          ONOFF(PLR3_FLAGGED(ch, PLR3_SURNAMES)),
           ONOFF(PLR2_FLAGGED(ch, PLR2_DAMAGE)),
           ONOFF(PLR3_FLAGGED(ch, PLR3_NOLEVEL)),
           ONOFF(PLR3_FLAGGED(ch, PLR3_PET_DAMAGE)),
@@ -4337,9 +4337,7 @@ void show_toggles(P_char ch)
             ONOFF(PLR2_FLAGGED(ch, PLR2_HEAL)),
             ONOFF(PLR3_FLAGGED(ch, PLR3_EPICWATCH)));
     send_to_char(Gbuf1, send_ch);
-    send_to_char
-      ("&+y-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-&N\r\n",
-       send_ch);
+    send_to_char("&+y-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-&N\r\n", send_ch);
   }
 }
 
@@ -4524,7 +4522,8 @@ static const char *tog_messages[][2] = {
    "You can not be beeped.\r\n"},
   {"You will receive blinking instead of underlined text.\r\n",
    "You will receive underlined instead of blinking text.\r\n"},
-  {NULL, NULL }, // Surname does its own messaging.
+  {"You will not see surnames.\n",
+   "You will see surnames.\n"},
   {"You will level at an epic stone.\r\n",
    "You will not level at an epic stone.\r\n"},
   {"You turn off the &+WEpic&N messages.\r\n",
@@ -5037,32 +5036,8 @@ void do_toggle(P_char ch, char *arg, int cmd)
   case 59:
     result = PLR3_TOG_CHK(ch, PLR3_UNDERLINE);
     break;
-  case 60: //surname
-    arg = one_argument(arg, Gbuf1);
-
-   /* if (is_number(Gbuf1) && (wimp_lev = atoi(Gbuf1)))
-    {
-      if ((wimp_lev < 12) || (wimp_lev > 48))
-      {
-        send_to_char("Screen length must be between 12 and 48 lines\r\n",
-                     send_ch);
-        return;
-      }*/
-	  if(is_number(Gbuf1) && (wimp_lev = atoi(Gbuf1)))
-	  {
-	    set_surname(ch, wimp_lev);
-  		return;
-    }
-  /*  else if (isname(Gbuf1, "off") || isname(Gbuf1, "default"))
-    {
-      result = FALSE;
-      strcpy(Gbuf3, " 24");
-    }*/
-    else
-    {
-      display_surnames(ch);
-      return;
-    }
+  case 60:
+    result = PLR3_TOG_CHK(ch, PLR3_SURNAMES);
     break;
   case 61:
     result = PLR3_TOG_CHK(ch, PLR3_NOLEVEL);

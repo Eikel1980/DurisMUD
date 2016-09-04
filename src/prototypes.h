@@ -814,6 +814,7 @@ void loop_debug(void);
 bool quested_spell(P_char ch, int spl);
 int vnum_in_inv(P_char ch, int vnum);
 void vnum_from_inv(P_char ch, int item, int count);
+void do_surname(P_char, char *, int);
 void set_surname(P_char ch, int num);
 void clear_surname(P_char ch);
 void display_surnames(P_char ch);

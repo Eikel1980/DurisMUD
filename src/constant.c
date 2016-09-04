@@ -860,21 +860,17 @@ const char *player3_bits[] = {
   "FRAGLEADER",
   "LOWEST_FRAGS",
   "GUILD_NAME",
-  "ACHIEVEMENT_SURNAME",
-  "SURNAME_SERF",
-  "SURNAME_COMMONER",
-  "SURNAME_KNIGHT",
-  "SURNAME_NOBLE",
-  "SURNAME_LORD",
-  "SURNAME_KING",
-  "SURNAME_LIGHT",
-  "SURNAME_DRAGON",
-  "SURNAME_HEALS",
-  "SURNAME_SERIAL",
-  "SURNAME_REAPER",
+  "SURNAMES_OFF",
+  "SURNAME_BASIC1",
+  "SURNAME_BASIC2",
+  "SURNAME_BASIC3",
+  "SURNAME_SPECIAL1",
+  "SURNAME_SPECIAL2",
+  "SURNAME_SPECIAL3",
+  "SURNAME_SPECIAL4",
+  "SURNAME_SPECIAL5",
   "\n"
 };
-  
 
 const char *player_prompt[] = {
   "NONE",
@@ -2436,4 +2432,18 @@ extern const racewar_struct racewar_color[MAX_RACEWAR+2];
 const racewar_struct racewar_color[MAX_RACEWAR+2] =
 {
   {'W', "None"}, {'Y', "Good"}, {'R', "Evil"}, {'L', "Undead"}, {'M', "Neutral"}, {'C', "Unknown"}
+};
+
+extern const surname_struct surnames[MAX_SURNAME+1];
+const surname_struct surnames[MAX_SURNAME+1] =
+{
+  {"&+WNone",                           "None",           0},
+  {"&+WFeudal Rank &n(default)&n",      "Feudal Rank",    0},
+  {"&+WLight&+wbri&+Lnger&n",           "Lightbringer",   ACH_YOUSTRAHDME},
+  {"&+gDr&+Gag&+Lon &+gS&+Glaye&+gr&n", "Dragon Slayer",  ACH_DRAGONSLAYER},
+  {"&+WD&+Ro&+rct&+Ro&+Wr&n",           "Doctor",         ACH_MAYIHEALSYOU},
+  {"&+LSe&+wr&+Wi&+wa&+Ll &+rKiller&n", "Serial Killer",  ACH_SERIALKILLER},
+  {"&+LGrim Reaper&n",                  "Grim Reaper",    0},
+  {"&+LDe&+mceptic&+LoN&n",             "Decepticon",     ACH_DECEPTICON},
+  {"&+MTo&+mug&+Mh G&+muy&n",           "Tough Guy",      ACH_DEATHSDOOR}
 };

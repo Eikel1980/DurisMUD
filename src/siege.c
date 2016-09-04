@@ -855,6 +855,7 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
   char arg2[MAX_STRING_LENGTH];
   char *rest;
   P_obj donation, siege;
+  int rank;
   int ztop, count, i, j, numgate;
 
   if( cmd == CMD_SET_PERIODIC ) return FALSE;
@@ -909,35 +910,31 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
       send_to_char( buf, pl );
     }
 
-    if( IS_SET( pl->specials.act3, PLR3_NOSUR ) )
+    rank = GET_SURNAME(pl);
+    if( rank == 0 )
     {
       do_say(ch, "Get out of here whelp! Earn a title before you come to me", CMD_SAY);
       return TRUE;
     }
 
     send_to_char( "You can donate an item to increase resources.\n", pl );
-    if( IS_SET( pl->specials.act3, PLR3_SURSERF ) )
-      return TRUE;
-    if( IS_SET( pl->specials.act3, PLR3_SURCOMMONER ) )
+    if( rank <= SURNAME_COMMONER )
       return TRUE;
     send_to_char( "You can buy a catapult, ballista, or battering ram.\n", pl );
     if( town->resources >= 150000 )
       send_to_char( "You can buy town gates.\n", pl );
-    if( IS_SET( pl->specials.act3, PLR3_SURKNIGHT ) )
-      return TRUE;
-    if( IS_SET( pl->specials.act3, PLR3_SURNOBLE ) )
+    if( rank <= SURNAME_NOBLE )
       return TRUE;
     if( town->resources >= 50000 )
       send_to_char( "You can deploy guards/stop deployment with the deploy command.\n", pl );
     if( town->resources >= 600000 )
       send_to_char( "You can deploy town portals/stop deployment with the deploy command.\n", pl );
-    if( IS_SET( pl->specials.act3, PLR3_SURLORD ) )
+    if( rank <= SURNAME_LORD )
       return TRUE;
     if( town->resources >= 450000 )
       send_to_char( "You can deploy cavalry/stop deployment with the deploy command.\n", pl );
-    if( IS_SET( pl->specials.act3, PLR3_SURKING ) )
+    if( rank == SURNAME_KING )
       return TRUE;
-
     return TRUE;
   }
   if( cmd == CMD_DONATE )
@@ -959,14 +956,9 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
   }
   if( cmd == CMD_DEPLOY )
   {
-    // These guys can't deploy guards.. 
-    if( IS_SET( pl->specials.act3, PLR3_SURSERF ) )
-      return FALSE;
-    if( IS_SET( pl->specials.act3, PLR3_SURCOMMONER ) )
-      return FALSE;
-    if( IS_SET( pl->specials.act3, PLR3_SURKNIGHT ) )
-      return FALSE;
-    if( IS_SET( pl->specials.act3, PLR3_SURNOBLE ) )
+    // These guys can't deploy guards..
+    rank = GET_SURNAME(pl);
+    if( rank <= SURNAME_NOBLE )
       return FALSE;
     one_argument( arg, arg1 );
     if( *arg1 == '\0' )
@@ -1004,7 +996,7 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
     }
     else if( is_abbrev( arg1, "cavalry" ) )
     {
-      if( IS_SET( pl->specials.act3, PLR3_SURLORD ) )
+      if( GET_SURNAME(pl) < SURNAME_LORD )
         return FALSE;
 
       if( town->resources < 450000 )
@@ -1055,9 +1047,7 @@ int warmaster( P_char ch, P_char pl, int cmd, char *arg )
   if( cmd == CMD_BUY )
   {
     // People that can't buy anything here.
-    if( IS_SET( pl->specials.act3, PLR3_NOSUR ) 
-        || IS_SET( pl->specials.act3, PLR3_SURSERF ) 
-        || IS_SET( pl->specials.act3, PLR3_SURCOMMONER ) )
+    if( GET_SURNAME(pl) <= SURNAME_COMMONER )
       return FALSE;
 
     rest = one_argument( arg, arg1 );

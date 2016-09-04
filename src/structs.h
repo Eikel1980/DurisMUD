@@ -931,25 +931,36 @@ struct room_data {
 #define PLR3_FRAGLEAD      BIT_1  /* FragList Leader */
 #define PLR3_FRAGLOW       BIT_2  /* Lowest Fragger */
 #define PLR3_GUILDNAME     BIT_3  // Whether or not they see guild name when using gcc.
-#define PLR3_NOSUR         BIT_4  /* Titles that will show on who list before names - This is default, none */
-#define PLR3_SURSERF	     BIT_5
-#define PLR3_SURCOMMONER   BIT_6
-#define PLR3_SURKNIGHT     BIT_7
-#define PLR3_SURNOBLE      BIT_8
-#define PLR3_SURLORD       BIT_9
-#define PLR3_SURKING	     BIT_10
-#define PLR3_SURLIGHT      BIT_11
-#define PLR3_SURDRAGON     BIT_12
-#define PLR3_SURHEALS      BIT_13
-#define PLR3_SURSERIAL     BIT_14
-#define PLR3_SURREAPER     BIT_15
-#define PLR3_SURDECEPTICON BIT_16
+#define PLR3_SURNAMES      BIT_4  // Toggle for whether or not to display surnames to the player.
+
+#define SET_SURNAME( ch, number ) (SET_BIT(ch->specials.act3, number) )
+#define SURNAME_MASK (BIT_12 | BIT_11 | BIT_10 | BIT_9 | BIT_8 | BIT_7 | BIT_6 | BIT_5)
+
+// Start by removing the first 3 bits, then lop off the bits after 8 bits.
+#define GET_SURNAME( ch ) ( (ch->specials.act3) & SURNAME_MASK )
+#define CLEAR_SURNAME( ch ) ( ch->specials.act3 = (ch->specials.act3 & ~SURNAME_MASK) )
+// The leaderboard-point based surnames get one 3 bit set.
+#define SURNAME_SERF      (BIT_5)                 // 001
+#define SURNAME_COMMONER  (BIT_6)                 // 010
+#define SURNAME_KNIGHT    (BIT_6 | BIT_5)         // 011
+#define SURNAME_NOBLE     (BIT_7)                 // 100
+#define SURNAME_LORD      (BIT_7 | BIT_5)         // 101
+#define SURNAME_KING      (BIT_7 | BIT_6)         // 110
+// The 'special' surnames get their own set.
+#define SURNAME_LIGHTBRINGER      (BIT_8)                  // 001
+#define SURNAME_DRAGONSLAYER      (BIT_9)                  // 010
+#define SURNAME_DOCTOR            (BIT_9  | BIT_8)         // 011
+#define SURNAME_SERIALKILLER      (BIT_10)                 // 100
+#define SURNAME_GRIMREAPER        (BIT_10 | BIT_8)         // 101
+#define SURNAME_DECEPTICON        (BIT_10 | BIT_9)         // 110
+#define SURNAME_TOUGHGUY          (BIT_10 | BIT_9 | BIT_8) // 111
+// Do not use bits 5 through 12 .. These are for the surnames.
+
 #define PLR3_NOBEEP        BIT_17
 #define PLR3_UNDERLINE     BIT_18
 #define PLR3_NOLEVEL       BIT_19
 #define PLR3_EPICWATCH     BIT_20 /* For Immortals: displays calls to epiclog */
-#define PLR3_SURDEATHSDOOR BIT_21
-#define PLR3_PET_DAMAGE    BIT_22
+#define PLR3_PET_DAMAGE    BIT_21
 
 /* For players : Prompt flags (16 bits max) */
 #define PROMPT_NONE        BIT_1

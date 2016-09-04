@@ -56,7 +56,6 @@ extern const int top_of_world;
 extern char debug_mode;
 extern const char *race_types[];
 
-
 extern const struct stat_data stat_factor[];
 extern float fake_sqrt_table[];
 extern int pulse;
@@ -71,6 +70,7 @@ extern struct zone_data *zone_table;
 extern P_obj quest_item_reward(P_char ch);
 extern int find_map_place();
 extern int getItemFromZone(int zone);
+extern const surname_struct surnames[MAX_SURNAME+1];
 
 void     set_short_description(P_obj t_obj, const char *newShort);
 void     set_keywords(P_obj t_obj, const char *newKeys);
@@ -84,213 +84,123 @@ void set_surname(P_char ch, int num)
      2 - Lightbringer
      3 - Dragonslayer
      4 - Decepticon
-     */
+     ...
+   */
 
-  if( !IS_ALIVE(ch) )
+  if( !IS_ALIVE(ch) || !IS_PC(ch) )
   {
     return;
   }
 
-  if((num == 0 && !IS_SET(ch->specials.act3, PLR3_NOSUR)) || num == 1 )
+  if( (num == 0) || (num == 1) )
   {
     int points = getLeaderBoardPts(ch);
-    points *= .01;
-    //debug("points: %d", points);
-    clear_surname(ch);
+    points /= 100;
 
-    if( IS_TRUSTED( ch ) )
+    CLEAR_SURNAME(ch);
+
+    if( IS_TRUSTED(ch) || (points >= 4000) )
     {
-      SET_BIT(ch->specials.act3, PLR3_SURKING);
-      return;
+      SET_SURNAME(ch, SURNAME_KING);
     }
-
-    if(points < 200)
+    else if( points < 200 )
     {
-      SET_BIT(ch->specials.act3, PLR3_SURSERF);
-      return;
+      SET_SURNAME(ch, SURNAME_SERF);
     }
-
-    if(points < 500)
+    else if( points < 500 )
     {
-      SET_BIT(ch->specials.act3, PLR3_SURCOMMONER);
-      return;
+      SET_SURNAME(ch, SURNAME_COMMONER);
     }
-
-    if(points < 1500)
+    else if( points < 1500 )
     {
-      SET_BIT(ch->specials.act3, PLR3_SURKNIGHT);
-      return;
+      SET_SURNAME(ch, SURNAME_KNIGHT);
     }
-
-    if(points < 2800)
+    else if( points < 2800 )
     {
-      SET_BIT(ch->specials.act3, PLR3_SURNOBLE);
-      return;
+      SET_SURNAME(ch, SURNAME_NOBLE);
     }
-
-    if(points < 4000)
+    else if( points < 4000 )
     {
-      SET_BIT(ch->specials.act3, PLR3_SURLORD);
-      return;
-    }
-
-    if(points >= 4000)
-    {
-      SET_BIT(ch->specials.act3, PLR3_SURKING);
-      return;
+      SET_SURNAME(ch, SURNAME_LORD);
     }
   }
-
-  if (num == 2)
+  else if( HAS_SURNAME(ch, num) )
   {
-    if(affected_by_spell(ch, ACH_YOUSTRAHDME))
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURLIGHT);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
+    CLEAR_SURNAME(ch);
+    // Skip the first 7 bits: 4 for non-surnames and 3 for the leaderboard-point-based surnames.
+    // Also, subtract one since one implies the leaderboard-point-based surnames.
+    SET_SURNAME( ch, (num - 1) << 7 );
   }
-
-  if (num == 3)
+  else
   {
-    if(affected_by_spell(ch, ACH_DRAGONSLAYER))
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURDRAGON);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
-  }
-
-  if (num == 4)
-  {
-    if(affected_by_spell(ch, ACH_MAYIHEALSYOU))
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURHEALS);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
-  }
-  if (num == 5)
-  {
-    if(affected_by_spell(ch, ACH_SERIALKILLER))
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURSERIAL);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
-  }
-  if (num == 6)
-  {
-    if(get_frags(ch) >= 2000)
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURREAPER);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
-  }
-  if (num == 7)
-  {
-    if(affected_by_spell(ch, ACH_DECEPTICON))
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURDECEPTICON);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
-  }
-  if (num == 8)
-  {
-    if(affected_by_spell(ch, ACH_DEATHSDOOR))
-    {
-      clear_surname(ch);
-      SET_BIT(ch->specials.act3, PLR3_SURDEATHSDOOR);
-      SET_BIT(ch->specials.act3, PLR3_NOSUR);
-      return;
-    }
-    send_to_char("You have not obtained that &+Wtitle&n yet.\r\n", ch);
+    send_to_char("You have not obtained that &+Wtitle&n yet.\n", ch);
   }
 }
 
 void display_surnames(P_char ch)
 {
-  char buf[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH], buf3[MAX_STRING_LENGTH];
+  char buf[MAX_STRING_LENGTH], buf2[MAX_STRING_LENGTH];
+  int i;
 
   sprintf(buf, "\r\n&+L=-=-=-=-=-=-=-=-=-=--= &+rTitles &+Lfor &+r%s &+L=-=-=-=-=-=-=-=-=-=-=-&n\r\n", GET_NAME(ch));
 
+  for( i = 1; i <= MAX_SURNAME; i++ )
+  {
+    if( HAS_SURNAME( ch, i ) )
+    {
+      sprintf(buf2, "   &+L%d) %s\n", i, surnames[i].color_name );
+      strcat(buf, buf2);
+    }
+  }
 
-  sprintf(buf2, "   &+W%-22s\r\n",
-      "Syntax: toggle surname <number>");
+  sprintf(buf2, "\n&+WNote: &nSome &+cachievements&n grant access to additional surnames.\n");
   strcat(buf, buf2);
-  sprintf(buf2, "   &+L%-49s\r\n",
-      "&+W1)&+WFeudal Rank &n(default)&n");
-  strcat(buf, buf2);
-
-  if(affected_by_spell(ch, ACH_YOUSTRAHDME))
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W2)&+WLight&+wbri&+Lnger&n");
-    strcat(buf, buf2);
-  }
-
-  if(affected_by_spell(ch, ACH_DRAGONSLAYER))
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W3)&+gDr&+Gag&+Lon &+gS&+Glaye&+gr&n");
-    strcat(buf, buf2);
-  }
-
-  if(affected_by_spell(ch, ACH_MAYIHEALSYOU))
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W4)&+WD&+Ro&+rct&+Ro&+Wr&n");
-    strcat(buf, buf2);
-  }
-
-  if(affected_by_spell(ch, ACH_SERIALKILLER))
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W5)&+LSe&+wr&+Wi&+wa&+Ll &+rKiller&n");
-    strcat(buf, buf2);
-  }
-
-  if(get_frags(ch) >= 2000)
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W6)&+LGrim Reaper&n");
-    strcat(buf, buf2);
-  }
-
-  if(affected_by_spell(ch, ACH_DECEPTICON))
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W7)&+LDe&+mceptic&+LoN&n");
-    strcat(buf, buf2);
-  }
-
-  if(affected_by_spell(ch, ACH_DEATHSDOOR))
-  {
-    sprintf(buf2, "   &+L%-49s\r\n",
-        "&+W8)&+MTo&+mug&+Mh G&+muy&n");
-    strcat(buf, buf2);
-  }
-
-  sprintf(buf2, "\r\n   &+W%-22s\r\n",
-      "Note: &nSome &+cachievements&n grant access to additional surnames&n\r\n");
-  strcat(buf, buf2);
-
 
   page_string(ch->desc, buf, 1);
+}
+
+// Looks through the list of surnames for name.
+int lookup_surname( char *name )
+{
+  for( int i = 1; i <= MAX_SURNAME; i++ )
+  {
+    if( is_abbrev(name, surnames[i].name) )
+    {
+      return i;
+    }
+  }
+  return 0;
+}
+
+void do_surname(P_char ch, char *argument, int cmd)
+{
+  char arg1[MAX_STRING_LENGTH];
+  int surname_index;
+
+  one_argument(argument, arg1);
+
+  if( is_number(arg1) )
+  {
+    surname_index = atoi(arg1);
+  }
+  else if( *arg1 != '\0' )
+  {
+    surname_index = lookup_surname( arg1 );
+  }
+  else
+  {
+    surname_index = 0;
+  }
+
+  if( (surname_index < 1) || (surname_index > MAX_SURNAME) )
+  {
+    send_to_char_f( ch, "'%s' is not a valid surname.\n&+YSyntax: &+wsurname <number|name>&n\n", arg1 );
+
+    display_surnames(ch);
+    return;
+  }
+
+  set_surname(ch, surname_index );
 }
 
 bool quested_spell(P_char ch, int spl)
@@ -304,25 +214,6 @@ bool quested_spell(P_char ch, int spl)
     return TRUE;*/
 
   return FALSE;
-}
-
-
-void clear_surname(P_char ch)
-{
-  REMOVE_BIT(ch->specials.act3, PLR3_SURLIGHT);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURSERF);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURCOMMONER);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURKNIGHT);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURNOBLE);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURLORD);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURKING);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURDRAGON);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURHEALS);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURSERIAL);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURREAPER);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURDECEPTICON);
-  REMOVE_BIT(ch->specials.act3, PLR3_SURDEATHSDOOR);
-  REMOVE_BIT(ch->specials.act3, PLR3_NOSUR);
 }
 
 void vnum_from_inv(P_char ch, int item, int count)
