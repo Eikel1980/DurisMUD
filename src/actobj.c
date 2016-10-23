@@ -1456,23 +1456,27 @@ void do_drop(P_char ch, char *argument, int cmd)
   }
 #endif
 
-  if (is_number(Gbuf1))
+  if( is_number(Gbuf1) )
   {
     if (strlen(Gbuf1) > 7)
     {
       send_to_char("Number field too big.\r\n", ch);
       return;
     }
-    amount = atoi(Gbuf1);
-    argument = one_argument(argument, Gbuf1);
-
-    ctype = coin_type(Gbuf1);
-
-    if ((ctype == -1) || (amount <= 0))
+    if( (amount = atoi( Gbuf1 )) <= 0 )
     {
-      send_to_char("Eh? Bugged call to do_drop(), you will be terminated.\r\n", ch);
+      send_to_char_f(ch, "Eh? What kind of magic is this.. dropping %d coins.\r\n", amount);
       return;
     }
+
+    argument = one_argument(argument, Gbuf1);
+    if( (ctype = coin_type( Gbuf1 )) == -1 )
+    {
+      send_to_char_f( ch, "Drop %d what?  What kind of coins did you want to drop?!\n'%s' is not a valid coin type.\n",
+        amount, Gbuf1 );
+      return;
+    }
+
     switch (ctype)
     {
     case 0:
