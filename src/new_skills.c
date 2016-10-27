@@ -558,17 +558,19 @@ void do_feign_death(P_char ch, char *arg, int cmd)
     return;
   }
 
-  memset(&af, 0, sizeof(af));
-  af.type = SKILL_FEIGN_DEATH;
-  af.flags = AFFTYPE_STORE | AFFTYPE_SHORT;
-  af.duration = WAIT_SEC * get_property("timer.secs.feignDeath", 60);
-  if( GET_CLASS(ch, CLASS_NECROMANCER) )
+  IF( IS_PC(ch) )
   {
-    af.duration /= 3;
+    memset(&af, 0, sizeof(af));
+    af.type = SKILL_FEIGN_DEATH;
+    af.flags = AFFTYPE_STORE | AFFTYPE_SHORT;
+    af.duration = WAIT_SEC * get_property("timer.secs.feignDeath", 60);
+    if( GET_CLASS(ch, CLASS_NECROMANCER) )
+    {
+      af.duration /= 3;
+    }
+    af.modifier = 0;
+    affect_to_char(ch, &af);
   }
-  af.modifier = 0;
-  affect_to_char(ch, &af);
-
 
   send_to_char("You try to fake your own demise..\r\n", ch);
   death_cry(ch);
