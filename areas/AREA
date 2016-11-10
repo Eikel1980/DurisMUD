@@ -1,7 +1,7 @@
 limbo                     *-1
-heavens                   *1 (heavens duh!)
+heavens                   *1-12 (heavens duh!)
 braddistock               *13
-kobold                    *14
+kobold                    *14-15
 truk                      *16
 quietus                   *17
 troll_hills               *18-19
@@ -13,6 +13,7 @@ castle                    *24-25
 breale                    *26
 headless                  *27
 verz1                     *28-32 (using objs)
+*OPEN 33
 flind                     *34
 mansion                   *35-36
 ako                       *37
@@ -38,9 +39,12 @@ worms                     *69
 traoul                    *70
 willem                    *71-72
 prison                    *73-74
+*OPEN 75
 bastine                   *76-77
 v2                        *78-79
-temple_laduguer           *80,81
+*OPEN 80
+temple_laduguer           *81,82
+*OPEN 83
 grave                     *84-86
 gibber                    *87,88
 raiders                   *89
@@ -64,6 +68,7 @@ ghore                     *115-119
 lava_tubes                *120-121 
 northern_wilderness       *122-123
 ethereal_main             *124-125
+*OPEN 126
 skulldrach                *127-129
 citadel                   *130-131
 ttowers                   *132 (re-added by Xueqin-3/8/98)
@@ -116,10 +121,13 @@ malch                     *236-237
 plane_earth_one           *238-239
 mobs_underdark            *240
 mushroom_caverns          *241-242
+*OPEN 243
 plane_air_one             *244-245
+*OPEN 246-249
 plane_fire_one            *250-251
 plane_fire_two            *252-253
 plane_fire_three          *254-255
+*OPEN 256
 bahamut                   *257-259
 swamp_one                 *260
 swamp_two                 *261
@@ -127,12 +135,15 @@ moonshae                  *262-263
 myrloch_vale              *264-265
 negplane                  *266-269
 halfcut                   *270-279
+*OPEN 280
 verspin                   *281-282
+*OPEN 283-284
 pods                      *285-288
 torg                      *289-291 (kolut)
-newbie                    *292-292 (haruko)
+newbie                    *292-293 (haruko)
 harrow                    *294-296 (haruko)
-cbl_hall                  *297
+cbl_hall                  *297-298
+*OPEN 299
 underworld3               *300-303
 ardgral                   *304
 patrols                   *305 Guard Map Mobs
@@ -146,15 +157,17 @@ seakngdm                  *315-317
 icetower                  *318-319
 avernus                   *320-323 (Mabort)
 bctdl                     *324-325 (mabort)
-eth2                      *326
+eth2                      *326-327
 shabo                     *328-329 (timken, edited by jera)
+*OPEN 330-332
 killing_fields            *333-334
-bloody_plains             *335-336 
+bloody_plains             *335-336
 mril                      *337-339
 basin_wa                  *340-341
 drst                      *342-343
 long                      *344
 4horse                    *345-349
+*OPEN 350-351
 newhaven                  *352
 asunwa                    *353-354
 lavcav                    *355-357 
@@ -170,21 +183,25 @@ mntcastl                  *371-376
 nax                       *377-379 (minotaur hometown -scip)
 thetis                    *380 (falari)
 fortb                     *381 (melkivar)
+*OPEN 382
 werrun                    *383 (krzzn/gargan)
 val                       *384-385 (scip)
 seveno                    *386 (melkivar)
 nyneth3                   *387-389
+*OPEN 390
 ugta                      *391-399
 nizari                    *400-401
 pharrvly                  *402-403
 gold_hal                  *404-406
 divhome                   *407-408
+*OPEN 409
 dreggan_wood              *410-411
 shadamehr_keep            *412
 highway                   *413-418 Additionals RESERVED!!
 mir                       *419-421
 tribal                    *422-424
 pworm                     *425-426
+*OPEN 427-428
 raxthan                   *429
 prisonb                   *430
 shipy                     *431-432
@@ -195,12 +212,14 @@ tikitt                    *441-443
 githzer                   *444-447 (githzerai stronghold)
 evkeep                    *448-449 (evil keep - Orax)
 charing                   *450-452 (new elf hometown)
-celestia                  *455 Celestia 56 zone
+*OPEN 453-454
+celestia                  *455-457 Celestia 56 zone
 orogs                     *458-459
+*OPEN 460-469
 vehicles                  *470-479 /* wagons, ferrys, flying carpets */
 guildhalls                *480-489 /* for guildhalls */
 desert                    *490-497 (scip)
-*player_ships              *500-509  /* For creating ships on the fly */
+*OPEN 498-509
 hell_one_avernus          *510-513
 hell_two_dis              *514-517
 hell_three_minauros       *518-521
@@ -211,16 +230,23 @@ valdrak                   *531
 shortc                    *532
 newfor                    *533-535
 connectorzones            *536-543
+*OPEN 544
 cyrictunnel               *545
 kvarkpass_connector       *546-549
 wh                        *550-558
+*OPEN 559-569
 trakkia                   *570-573
+*OPEN 574
 nexus                     *575-580
+*OPEN 581-582
 ravenloft                 *583-587
-barovia2                  *588
+barovia2                  *588-589
+*OPEN 590-599
 ship                      *600-649 New ships
+*OPEN 650
 rabble                    *651
 lockers                   *652 (player lockers)
+*OPEN 653-659
 ashrumite                 *660-661
 cityruin                  *662-663 (kharne)
 battlefi                  *664-665 (scip)
@@ -233,32 +259,38 @@ thri                      *676-677
 shortb                    *678
 arena                     *679-689
 tentro2                   *690-692
+*OPEN 693-699
 goblinht                  *700-704
+*OPEN 705-707
 opalphoenix               *708 (shae)
 knight                    *709
 fields_between            *710-711 (kolut)
 scorchvalley              *712-713 (kolut)
+*OPEN 714-739
 bs                        *740-749 
-dark_forest               *750 (Arthorn)
+dark_forest               *750-751 (Arthorn)
 nlakes                    *752-754
 teka2                     *755
 obcita                    *756,757 (Brakkor)
 roguerai                  *758-759 (Alachest)
 cosmic                    *760-762 (Alachest)
+*OPN 763-765
 jade                      *766-771 (Alachest)
 jademini                  *772
 desolateinv               *773-774 (Invasion)
 airshipgrave              *775-776 (Alachest)
 hall                      *777-779
-oasis                     *780
-caertannad                *784
+oasis                     *780-783
+caertannad                *784-788
+*OPEN 789-799
 rftjngle                  *800-804
 yuan_ti                   *805
 yuan_ti2                  *806
 clwcvrn                   *807
-ceothia                   *808-809
+ceothia                   *808-810
 ceopast                   *811-813
 ceofutur                  *814-816
+*OPEN 817-819
 jin                       *820
 outpost                   *821
 lylr                      *822
@@ -267,34 +299,42 @@ suntmpl                   *824
 mira                      *825-826
 forgotten_forest          *827 (Oraks)
 delwyn                    *828-830
-alatorin                  *831-832
+alatorin                  *831-839
+*OPEN 840-855
 ancientb                  *856 Bridge Zone
 arcium                    *857-862
+*OPEN 863-869
 crakkaro                  *870-875
 jubilex                   *876
 snogres                   *877
 church                    *878
-kelek                     *879
+kelek                     *879-881
 kuotoa                    *882
 firep                     *883-884
 udmini                    *885-886
 morg                      *887
-menden                    *888 
+menden                    *888
 fishermans_wharf          *889
-newhope                   *890
+newhope                   *890-892
+*OPEN 893-899
 foggy_woods               *900-902
 rtun                      *903 (Alachest, undead town)
 glacier                   *904-905
+*OPEN 906
 river_styx                *907
 valinhav                  *908-909
 barovia                   *910-911
+*OPEN 912-919
 undermountain             *920-929
 dungeon                   *930-932
 centaur_zone              *933
+*OPEN 934
 wemic                     *935
 bordello                  *936
+*OPEN 937-938
 shadowcl                  *939
 maze_are                  *940-941 (oraks, undead maze, connected to 
+*OPEN 942
 herders                   *943-946
 minopass                  *947-948
 llyrath                   *949
@@ -308,10 +348,12 @@ ixarkon                   *964-967
 dirkn                     *968
 troll_caves               *969
 icecrag                   *970-972
+*OPEN 973
 sforest                   *974
 shady                     *975-977
 buildings                 *978
-surfacemini               *979
+surfacemini               *979-980
+*OPEN 981-984
 bandit                    *985
 ruins                     *986
 unoutpst                  *987-988
@@ -322,40 +364,53 @@ cldgt                     *995-996
 lava                      *997
 olympus                   *998
 interspa                  *999
-random                    *1000 used for random encounter stuff
-tharnrifts                *1100
-surfacekeeps              *1200
+random                    *1000-? used for random encounter stuff
+tharnrifts                *1100-1199
+surfacekeeps              *1200-1238
+*OPEN 1239-1299 - ! THESE MAY BE PART OF THE MAP THOUGH (NOT SURE) !
 vecna                     *1300
 nexus_ic                  *1301
 nexus_uc                  *1302
 nexus_island              *1303
 nexus_roper               *1304
+*OPEN 1305-1309
 brimeforge                *1310-1311
-earthp                    *1312
-airp                      *1316
+earthp                    *1312-1313
+*OPEN 1314-1315
+airp                      *1316-1317
+*OPEN 1318-1319
 githyanki_fortress        *1320
-tharnadia                 *1325
-lortower                  *1340
+*OPEN 1321-1324
+tharnadia                 *1325-1330
+*OPEN 1331-1339
+lortower                  *1340-1341
+*OPEN 1342-1349
 brad                      *1350
 firesworn_altar           *1351
-*tiamats_lair             *1352
 azhural                   *1352
-eternal                   *1354
-PortSkythic               *1380
-mitashi                   *1382
-savannah                  *1385
+*OPEN 1353
+eternal                   *1354-1357
+*OPEN 1358-1379
+PortSkythic               *1380-1381
+mitashi                   *1382-1384
+savannah                  *1385-1386
+*OPEN 1387-1388
 lornecro                  *1389
-New_Brass_2012            *1390
-smoke	                    *1398  	
-magma                     *1420
+New_Brass_2012            *1390-1393
+*OPEN 1394-1397
+smoke	                    *1398-1399
+*OPEN 1400-1419
+magma                     *1420-1421
 blackpearl                *1422
-Voluntown                 *1424
-*surf                     *2000
-*underdark                *2100
-tradeskills	              *4000
+*OPEN 1423
+Voluntown                 *1424-1425
+*OPEN 1426-3999
+tradeskills	              *4000-4009
 siege                     *4010
-library                   *4020-4022
-surface                   *5000
-underdark	                *7000
+*OPEN 4011-4019
+library                   *4020-4021
+*OPEN 4022-4999
+surface                   *5000-6600
+underdark	                *7000-8599
 *    end zone adds top_of_world marker
 end                       *9999
