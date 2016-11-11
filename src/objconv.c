@@ -946,6 +946,10 @@ void convertObj(P_obj obj)
 
     /* number of dice more important than size.. */
     cost = 100 * (val1 * 2) * val2;
+    if( val1 < 1 )
+      val1 = obj->value[1] = 1;
+    if( val2 < 1 )
+      val2 = obj->value[2] = 1;
     break;
   case ITEM_FIREWEAPON:
     /* 1 s * missle type * rate of fire */

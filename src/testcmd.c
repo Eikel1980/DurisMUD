@@ -315,6 +315,28 @@ void do_test(P_char ch, char *arg, int cmd)
 
   arg = one_argument(arg, buff);
 
+  if( isname("weapondice", buff) )
+  {
+    P_obj obj;
+    int count = 0;
+
+    for( int r_num = 0; r_num <= top_of_objt; r_num++ )
+    {
+      // Load a copy of object.
+      obj = read_object(r_num, REAL);
+      if( (obj->type == ITEM_WEAPON) && (( obj->value[1] < 1 ) || ( obj->value[2] < 1 )) )
+      {
+        send_to_char_f( ch, "%d) %s %d - %dd%d.\n", ++count, OBJ_SHORT(obj), OBJ_VNUM(obj),
+          obj->value[1], obj->value[2] );
+      }
+      extract_obj(obj);
+    }
+    if( count == 0 )
+    {
+      send_to_char_f( ch, "All weapons have good dice.\n" );
+    }
+    return;
+  }
   if( isname("no_track", buff) )
   {
     do_test_no_track( ch, arg );

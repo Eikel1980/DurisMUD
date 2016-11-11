@@ -377,6 +377,7 @@ void update_dam_factors()
   dam_factor[DF_EVIL_MODIFIER] = get_property("damage.modifier.evil", 1.000);
   dam_factor[DF_UNDEAD_MODIFIER] = get_property("damage.modifier.undead", 1.000);
   dam_factor[DF_NEUTRAL_MODIFIER] = get_property("damage.modifier.neutral", 1.000);
+  dam_factor[DF_TWOHANDED_MODIFIER] = get_property("damage.modifier.twohanded", 1.500);
 
 }
 
@@ -7386,11 +7387,11 @@ bool hit(P_char ch, P_char victim, P_obj weapon)
   {
     if( IS_PC(ch) || IS_PC_PET(ch) )
     {
-      dam = dice(weapon->value[1], MAX(1, weapon->value[2]));
+      dam = dam_factor[DF_TWOHANDED_MODIFIER] * dice(weapon->value[1], weapon->value[2]);
     }
     else
     {
-      dam += dice(weapon->value[1], MAX(1, weapon->value[2]));
+      dam += dam_factor[DF_TWOHANDED_MODIFIER] * dice(weapon->value[1], weapon->value[2]);
     }
 
     dam *= dam_factor[DF_WEAPON_DICE];

@@ -8998,6 +8998,7 @@ void do_which(P_char ch, char *args, int cmd)
   else if( is_abbrev(arg1, "weapon") )
   {
     which_weapon( ch, rest );
+    return;
   }
   if(!*o_buf)
     send_to_char("No matches.\n", ch);
@@ -12721,6 +12722,11 @@ void which_weapon(P_char ch, char *argument)
       break;
     }
   }
+  if( is_abbrev(argument, "twohanded") || is_abbrev(argument, "two-handed")
+    || is_abbrev(argument, "twohands") || is_abbrev(argument, "two-hands") )
+  {
+    type = -1;
+  }
   if( type > WEAPON_HIGHEST )
   {
     send_to_char_f( ch, "'%s' is not a valid weapon type.\n", argument );
@@ -12733,7 +12739,10 @@ void which_weapon(P_char ch, char *argument)
     send_to_char( ".\n", ch );
     return;
   }
-  type = weapon_types[type].defVal;
+  if( type >= 0 )
+  {
+    type = weapon_types[type].defVal;
+  }
 
   // Display the Header:
                  // "  1)    0/   0     13 a *huge* valium tablet measuri - Unknown."
@@ -12746,7 +12755,8 @@ void which_weapon(P_char ch, char *argument)
     // Load a copy of object.
     obj = read_object(r_num, REAL);
 
-    if( obj->type == ITEM_WEAPON && obj->value[0] == type )
+    if( (obj->type == ITEM_WEAPON) && (( type == -1 && IS_SET(obj->extra_flags, ITEM_TWOHANDS) )
+      || ( obj->value[0] == type )) )
     {
       sprintf( buf, "%3d) &%s%4d/%4d %6d&n %s&n - %s.\n", ++count, OBJ_COLOR(r_num), obj_index[r_num].number-1,
         obj_index[r_num].limit, obj_index[r_num].virtual_number,
