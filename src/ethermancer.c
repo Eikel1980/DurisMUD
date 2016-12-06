@@ -1454,18 +1454,15 @@ void spell_wind_rage(int level, P_char ch, char *arg, int type, P_char victim, P
   af.location = APPLY_WIS_MAX;
   af.modifier = level / 4;
   affect_to_char(victim, &af);
-  if (level >=56) {
+  if (level >= 51)
+  {
     af.location = APPLY_SPELL_PULSE;
-    af.modifier = -1;
+    af.modifier = (level >= 56) ? -2 : -1;
     affect_to_char(victim, &af);
-    send_to_char
-      ("&+cYour mystic incantation bestows you with the &+Cspeed &+cand fury of the winds!\r\n",
-       victim);
+    send_to_char("&+cYour mystic incantation bestows you with the &+Cspeed &+cand fury of the winds!\r\n", victim);
   }
   else
-    send_to_char
-      ("&+cYour mystic incantation bestows you with the fury of the winds!\r\n",
-      victim);
+    send_to_char("&+cYour mystic incantation bestows you with the fury of the winds!\r\n", victim);
 }
 
 // Windtalker spec
