@@ -1504,7 +1504,7 @@ int read_type_list(FILE * shop_f, struct shop_buy_data *list, int max)
 
   if( error )
   {
-    sprintf(buf, "Raise MAX_TRADE constant in shop.h to %d", len + error);
+    sprintf(buf, "Raise MAX_TRADE constant in config.h to %d", len + error);
     logit(LOG_DEBUG, buf);
   }
 
