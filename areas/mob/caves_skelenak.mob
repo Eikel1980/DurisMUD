@@ -342,7 +342,7 @@ A &+yhuge stalactite&N moves, as if about to fall.
 The piercer resembles a large stalactite, except that it is has
 two small black dots for eyes near its top, and is light grey.
 ~
-11 1 0 0 1048608 0 0 0 0 S
+10 1 0 0 1048608 0 0 0 0 S
 H 0 0 0 -1
 15 15 51 15d23+60 2d5+2
 7.6.2.0 7290
@@ -356,7 +356,7 @@ The ogre magi is BIG, standing some ten feet tall, with a body the
 size of a bear.  Its massive fists and sharp fangs make it look
 extremely deadly.
 ~
-2063 1 0 0 168 0 0 0 -1000 S
+2062 1 0 0 168 0 0 0 -1000 S
 PO 0 256 0 -1
 46 -3 -72 46d110+2484 6d6+25
 6.0.9.4 111780
@@ -447,7 +447,7 @@ The pyrohydra has nine heads, each dull-red in color connecting to a
 rose colored torso.  The heads each move about independently,
 resembling a pile of twisting snakes.
 ~
-264235 1 0 0 33554472 0 0 0 -1000 S
+264234 1 0 0 33554472 0 0 0 -1000 S
 D 0 1048576 0 3
 45 -7 -148 59d96+6667 7d6+35
 4.5.9.19 477900

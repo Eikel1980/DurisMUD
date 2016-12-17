@@ -8,7 +8,7 @@ somewhat akin to an elf maiden. She has high cheek bones and violet
 eyes, with golden-red hair that seems to almost sparkle. Her light-tan
 skin is dotted with a greenish tint.
 ~
-205 0 0 0 32 0 0 0 0 S
+204 0 0 0 32 0 0 0 0 S
 H 0 0 0 -1
 20 13 35 20d30+100 3d4+2
 0.9.3.0 9720
@@ -135,7 +135,7 @@ It stands no taller than two feet in height, and looks extremely nimble.
 They resemble small elves with brown hair and bright blue eyes, which
 twinkle with mischief.
 ~
-205 0 0 0 524304 0 0 0 900 S
+204 0 0 0 524304 0 0 0 900 S
 H 0 0 0 -1
 15 15 51 15d23+60 2d5+2
 7.6.2.0 7290
@@ -149,7 +149,7 @@ It stands about a foot high and is extremely agile. Its long brown hair
 and flashing blue eyes are filled with fun and trouble. It laughs and
 plays and dances about the area with not a care in the world..
 ~
-205 0 0 0 524304 0 0 0 1000 S
+204 0 0 0 524304 0 0 0 1000 S
 H 0 0 0 -1
 5 20 83 5d15+17 1d5+0
 3.1.0.0 648
