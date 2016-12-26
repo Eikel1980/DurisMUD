@@ -1919,6 +1919,19 @@ bool sql_pwipe( int code_verify )
       send_to_all( "        failure!\n");
       return FALSE;
     }
+    logit(LOG_DEBUG, "sql_pwipe: Clearing locker grant list data... .. ." );
+    send_to_all( "Clearing locker grant list data... .. ." );
+    if( qry("DELETE FROM locker_access") )
+    {
+      logit(LOG_DEBUG, "  success!" );
+      send_to_all( "  success!\n" );
+    }
+    else
+    {
+      logit(LOG_DEBUG, "        failure!");
+      send_to_all( "        failure!\n");
+      return FALSE;
+    }
     logit(LOG_DEBUG, "sql_pwipe: Deactivating players_core data... .. ." );
     send_to_all( "Deactivating players_core data... .. ." );
     if( qry("UPDATE players_core SET active = 0") )
