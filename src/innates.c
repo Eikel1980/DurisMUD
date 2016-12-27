@@ -706,6 +706,8 @@ void assign_innates()
   ADD_RACIAL_INNATE(INNATE_VULN_SUN, RACE_PVAMPIRE, 1);
   ADD_RACIAL_INNATE(INNATE_SACRILEGIOUS_POWER, RACE_PVAMPIRE, 46);
 
+  ADD_RACIAL_INNATE(INNATE_EYELESS, RACE_SKELETON, 1);
+
   /* Neutral Races */
  
   /* List of Minotaur Innates        */
