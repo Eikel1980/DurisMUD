@@ -454,7 +454,7 @@ void sql_check_level_cap( long max_frags, int racewar )
   if( next_update <= time(NULL) )
   {
     // Have enough frags to update level.
-    if( old_level < FRAGS_TO_LEVEL(max_frags) )
+    if( old_level < FRAGS_TO_LEVEL(max_frags/100.) )
     {
       sprintf(query, "UPDATE level_cap SET most_frags = %f, racewar_leader = %d, level = %d, next_update = FROM_UNIXTIME(%ld)",
         max_frags/100., racewar, old_level + 1, CAP_DELAY(old_level) );
