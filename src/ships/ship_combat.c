@@ -359,8 +359,10 @@ bool sink_ship(P_ship ship, P_ship attacker)
     {
         if( IS_NPC_SHIP(attacker) )
             SET_BIT(ship->flags, SUNKBYNPC);
-        logit( LOG_SHIP, "%s's ship sunk by %s.", ship->ownername, (attacker->ownername) ? attacker->ownername : "a pirate" );
-        statuslog( AVATAR, "%s's ship sunk by %s.", ship->ownername, (attacker->ownername) ? attacker->ownername : "a pirate" );
+        logit( LOG_SHIP, "%s's ship sunk by %s.", (ship->ownername) ? ship->ownername : "A pirate",
+          (attacker->ownername) ? attacker->ownername : "a pirate" );
+        statuslog( AVATAR, "%s's ship sunk by %s.", (ship->ownername) ? ship->ownername : "A pirate",
+          (attacker->ownername) ? attacker->ownername : "a pirate" );
     }
     else
     {
