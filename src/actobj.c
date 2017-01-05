@@ -254,14 +254,7 @@ void get(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
     {
       if (s_obj)
       {
-        if (OBJ_CARRIED(s_obj))
-        {
-          GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
-          obj_from_obj(o_obj);
-          GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(s_obj);
-        }
-        else
-          obj_from_obj(o_obj);
+        obj_from_obj(o_obj);
         if (OBJ_CARRIED_BY(s_obj, ch))
         {
           act("You get $p from your $Q.", 0, ch, o_obj, s_obj, TO_CHAR);
@@ -307,14 +300,7 @@ void get(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
       return;
     }
 
-    if (OBJ_CARRIED(s_obj))
-    {
-      GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
-      obj_from_obj(o_obj);
-      GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(s_obj);
-    }
-    else
-      obj_from_obj(o_obj);
+    obj_from_obj(o_obj);
 
 #if USE_SPACE
     s_obj->space -= GET_OBJ_SPACE(o_obj);
@@ -1849,9 +1835,7 @@ void do_put(P_char ch, char *argument, int cmd)
       ch->points.cash[0] -= copp;
       if (tmp_obj)
       {
-        GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
         extract_obj(tmp_obj);
-        GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(s_obj);
       }
     }
     else
@@ -1997,11 +1981,7 @@ bool put(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
              * really ancient bug -JAB
              */
             obj_from_char(o_obj);
-            if (OBJ_CARRIED(s_obj))
-              GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
             obj_to_obj(o_obj, s_obj);
-            if (OBJ_CARRIED(s_obj))
-              GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(s_obj);
             s_obj->value[3]++;
           }
           else
@@ -2096,11 +2076,7 @@ bool put(P_char ch, P_obj o_obj, P_obj s_obj, int showit)
                * really ancient bug -JAB
                */
               obj_from_char(o_obj);
-              if (OBJ_CARRIED(s_obj))
-                GET_CARRYING_W(ch) -= GET_OBJ_WEIGHT(s_obj);
               obj_to_obj(o_obj, s_obj);
-              if (OBJ_CARRIED(s_obj))
-                GET_CARRYING_W(ch) += GET_OBJ_WEIGHT(s_obj);
 #if USE_SPACE
               s_obj->space += GET_OBJ_SPACE(o_obj);
 #endif
