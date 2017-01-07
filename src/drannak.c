@@ -1982,7 +1982,7 @@ void enhance(P_char ch, P_obj source, P_obj material)
   char buf[MAX_STRING_LENGTH];
   P_obj robj;
   long robjint;
-  int cost, searchcount, maxsearch, tries, sval;
+  int cost, searchcount, maxsearch, tries, sval, level;
   bool validobj;
   int newval, minval, chluck, wearflags;
 
@@ -2013,7 +2013,8 @@ void enhance(P_char ch, P_obj source, P_obj material)
     send_to_char( "This item is too powerful to be enhanced further.\n", ch );
     return;
   }
-  if( sval > GET_LEVEL(ch) * 2 )
+  level = GET_LEVEL(ch);
+  if( sval > (level * level / 41 + level / 3 + 1) )
   {
     send_to_char( "This item is too powerful for you to enhance right now.  Gain another levl and try again.\n", ch );
     return;
