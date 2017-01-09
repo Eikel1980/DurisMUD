@@ -332,7 +332,7 @@ void aishipspeedadjust(P_ship ship, int speed)
 void autopilot_activity(P_ship ship)
 {
   struct shipai_data *ai;
-  int      i, j, k, b, x, y;
+  int      i, j, k, b, x, y, head;
   float    r;
 
   if (ship->autopilot == NULL)
@@ -372,7 +372,13 @@ void autopilot_activity(P_ship ship)
     }
     if (k)
     {
-      if (ship->setheading != ship->heading)
+      head = ship->setheading - ship->heading;
+      if( head < 0 )
+      {
+        head *= -1;
+      }
+      // If we're off by more than 30 degrees.
+      if( head > 30 )
       {
         aishipspeedadjust(ai->ship, 0);
       }
@@ -395,23 +401,23 @@ void autopilot_activity(P_ship ship)
           r = range(50, 50, 0, x, y, 0);
           if (IS_SET(ai->flags, AIB_BATTLER))
           {
-            aishipspeedadjust(ship, ship->maxspeed);
+            aishipspeedadjust(ship, ship->get_maxspeed());
           }
-          else if (r < 2.70)
+          else if (r < 0.50)
           {
             aishipspeedadjust(ai->ship, 10);
           }
-          else if (r < 5.00)
+          else if (r < 1.50)
           {
             aishipspeedadjust(ai->ship, 30);
           }
-          else if (r < 10.00)
+          else if (r < 2.50)
           {
             aishipspeedadjust(ai->ship, 60);
           }
           else
           {
-            aishipspeedadjust(ship, ship->maxspeed);
+            aishipspeedadjust(ship, ship->get_maxspeed());
           }
         }
       }

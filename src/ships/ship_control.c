@@ -1468,6 +1468,7 @@ int ship_panel_proc(P_obj obj, P_char ch, int cmd, char *arg)
         if (!(isname(arg1, "sail sa") ||
               isname(arg1, "jettison j") || isname(arg1, "salvage") ||
               isname(arg1, "undock") ||
+              isname(arg1, "maproom") ||
               isname(arg1, "maneuver") || isname(arg1, "m") ||
               isname(arg1, "anchor") ||
               isname(arg1, "ram") ||
@@ -1517,6 +1518,12 @@ int ship_panel_proc(P_obj obj, P_char ch, int cmd, char *arg)
         if (isname(arg1, "salvage"))
         {
             return salvage_cargo(ch, ship, arg2);
+        }
+        if (isname(arg1, "maproom"))
+        {
+          send_to_char_f( ch, "Ship is in room %s %d.",  world[ship->location].name,
+            world[ship->location].number );
+          return TRUE;
         }
         if (isname(arg1, "jettison j"))
         {
