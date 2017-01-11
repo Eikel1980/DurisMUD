@@ -7732,7 +7732,7 @@ void do_approve(P_char ch, char *arg, int cmd)
 {
   int    count;
   P_desc d1, d2;
-  char   Gbuf2[MAX_STRING_LENGTH], Gbuf1[MAX_STRING_LENGTH];
+  char   Gbuf1[MAX_STRING_LENGTH], Gbuf2[MAX_STRING_LENGTH];
   const char *approve_modes[] = {
     "off",
     "on",
@@ -7752,8 +7752,12 @@ void do_approve(P_char ch, char *arg, int cmd)
       {
         if( STATE(d1) == CON_ACCEPTWAIT )
         {
-          sprintf(Gbuf1, "%d. %s (%s %s %s)\n", ++count, GET_NAME(d1->character), get_class_string(d1->character, Gbuf2),
-            race_names_table[(int) GET_RACE(d1->character)].ansi, d1->host ? d1->host : "UNKNOWN");
+          sprintf( Gbuf1, "%d. %s (%s %s) %s - Rolled for %ld:%02ld, Socket: %d, Idle: %d:%02d.\n",
+            ++count, GET_NAME(d1->character),
+            get_class_string(d1->character, Gbuf2), race_names_table[(int) GET_RACE(d1->character)].ansi,
+            d1->host ? d1->host : "UNKNOWN", d1->character->only.pc->pc_timer[PC_TIMER_HEAVEN]/60,
+            d1->character->only.pc->pc_timer[PC_TIMER_HEAVEN] % 60,
+            d1->descriptor, (d1->wait / WAIT_SEC) / 60, (d1->wait / WAIT_SEC) % 60 );
           send_to_char(Gbuf1, ch);
         }
       }

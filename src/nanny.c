@@ -4229,9 +4229,7 @@ void select_name(P_desc d, char *arg, int flag)
       FREE(d->character->player.name);
       d->character->player.name = str_dup(tmp_name);
       STATE(d) = CON_ACCEPTWAIT;
-      SEND_TO_Q
-        ("Now you just have to wait for re-acceptance or declination of your char.\r\n",
-         d);
+      SEND_TO_Q("Now you just have to wait for re-acceptance or declination of your char.\r\n", d);
       return;
     }
   }
@@ -6328,18 +6326,16 @@ int      approve_mode = 1;       /* whether to have need to accept new players o
 
 void newby_announce(P_desc d)
 {
-  char     Gbuf1[MAX_STRING_LENGTH];
+  char     Gbuf1[MAX_STRING_LENGTH], Gbuf2[MAX_STRING_LENGTH];
   P_desc   i;
 
-  sprintf(Gbuf1,
-          "&+C*** New char: &n&+c'&+C%s&n&+c' (&n%s %s %s&n&+c %s@&+W%s&n&+c) awaiting acceptance.\r\n",
-          GET_NAME(d->character),
-          (GET_SEX(d->character) ==
-           SEX_MALE) ? "Male" : (GET_SEX(d->character) ==
-                                 SEX_FEMALE) ? "Female" : "Neuter",
-          race_names_table[(int) GET_RACE(d->character)].ansi,
-          class_names_table[flag2idx(d->character->player.m_class)].ansi,
-          d->login ? d->login : "unknown", d->host ? d->host : "UNKNOWN");
+  sprintf( Gbuf1, "&+C*** New char: &n%s (%s %s %s) - Rolled for %ld:%02ld, Socket: %d, Idle: %d:%02d, IP: %s %s.\n",
+    GET_NAME(d->character),
+    GET_SEX(d->character) == SEX_MALE ? "Male" : GET_SEX(d->character) == SEX_FEMALE ? "Female" : "Neuter",
+    race_names_table[(int) GET_RACE(d->character)].ansi, get_class_string(d->character, Gbuf2),
+    d->character->only.pc->pc_timer[PC_TIMER_HEAVEN]/60, d->character->only.pc->pc_timer[PC_TIMER_HEAVEN] % 60,
+    d->descriptor, (d->wait / WAIT_SEC) / 60, (d->wait / WAIT_SEC) % 60,
+    d->login ? d->login : "unknown", d->host ? d->host : "UNKNOWN" );
   for (i = descriptor_list; i; i = i->next)
   {
     if( !i->connected && i->character && IS_SET(i->character->specials.act, PLR_NAMES)
@@ -6518,6 +6514,7 @@ void nanny(P_desc d, char *arg)
     if (*arg == 'y' || *arg == 'Y')
     {
       SEND_TO_Q("\r\nEntering new character generation mode.\r\n", d);
+      d->character->only.pc->pc_timer[PC_TIMER_HEAVEN] = time(NULL);
       SEND_TO_Q(namechart, d);
       STATE(d) = CON_APPROPRIATE_NAME;
     }
@@ -6840,6 +6837,7 @@ void nanny(P_desc d, char *arg)
         ("Now you have to wait for your character to be approved by a god.\r\nProcess should not take long.\r\nIf no god is on to approve you, you will &+WNOT&N be auto-approved.\r\n",
          d);
       STATE(d) = CON_ACCEPTWAIT;
+      d->character->only.pc->pc_timer[PC_TIMER_HEAVEN] = time(NULL) - d->character->only.pc->pc_timer[PC_TIMER_HEAVEN];
       newby_announce(d);
     }
     else
