@@ -1842,7 +1842,7 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
 
     if( dist <= 400 && (number( 1, 12 ) < 3) )
     {
-      zone_spellmessage(ch->in_room,
+      zone_spellmessage(ch->in_room, TRUE,
       "&+yThe sound of &+wmetal &+yhewing &+Lrock&+y can be heard in the distance...&n\r\n",
       "&+yThe sound of &+wmetal &+yhewing &+Lrock&+y can be heard in the distance to the %s...&n\r\n");
     }
