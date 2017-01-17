@@ -4380,6 +4380,7 @@ void do_headbutt(P_char ch, char *argument, int cmd)
       dam *= get_property("damage.headbutt.damPenaltyVsLarger", 0.900);
     }
 
+    CharWait(ch, (int) (PULSE_VIOLENCE * 1.5));
     debug("do_headbutt: (%s) butting (%s) dam (%d) skill (%d).", GET_NAME(ch), GET_NAME(victim),
       (int)dam, GET_CHAR_SKILL(ch, SKILL_HEADBUTT) );
     if( melee_damage(ch, victim, (int)dam, PHSDAM_NOPOSITION | PHSDAM_TOUCH | PHSDAM_NOREDUCE, messages) != DAM_NONEDEAD )
@@ -4404,7 +4405,6 @@ void do_headbutt(P_char ch, char *argument, int cmd)
     af.duration = (int) (PULSE_VIOLENCE * 2.5);
     af.flags = AFFTYPE_SHORT;
     affect_to_char(ch, &af);
-    CharWait(ch, (int) (PULSE_VIOLENCE * 1.5));
 
     roll = number(1, 100 - (chance / 2));
 
