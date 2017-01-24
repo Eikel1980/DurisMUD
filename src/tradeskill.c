@@ -94,6 +94,7 @@ void     set_long_description(P_obj t_obj, const char *newDescription);
 int      get_ival_from_proc( obj_proc_type );
 int      get_mincircle( int spell );
 int      calc_ore_cost( P_char ch, P_obj ore );
+int      calc_gem_cost( P_char ch, P_obj gem, bool randommob );
 
 struct mine_range_data {
   char *name;
@@ -1567,7 +1568,7 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
   P_obj ore, pick;
   char  buf[MAX_STRING_LENGTH], dbug[MAX_STRING_LENGTH];
   float newcost;
-  bool randommob;
+  bool randommob, gem;
   P_char mob;
 
   pick = get_pick(ch);
@@ -1607,10 +1608,16 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
   {
     if( mdata->mine_type == VOBJ_MINE )
     {
-      if( GET_C_LUK(ch) > number(1, 10000) )
+      if( GET_C_LUK(ch) > number(1, 5000) )
+      {
         ore = get_gem_from_mine(ch, mdata->mine_quality);
+        gem = TRUE;
+      }
       else
+      {
         ore = get_ore_from_mine(ch, mdata->mine_quality);
+        gem = FALSE;
+      }
       if( !ore )
       {
         wizlog(56, "event_mine_check: couldn't load ore, quality %d.", mdata->mine_quality );
@@ -1619,7 +1626,10 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
         return;
       }
       // Moved to a function to make it more readable.
-      newcost = calc_ore_cost( ch, ore );
+      if( gem )
+        newcost = calc_gem_cost( ch, ore, FALSE );
+      else
+        newcost = calc_ore_cost( ch, ore );
     }
     else if( mdata->mine_type == VOBJ_GEMMINE )
     {
@@ -1633,117 +1643,12 @@ void event_mine_check( P_char ch, P_char victim, P_obj, void *data )
       if( !ore )
       {
         wizlog(56, "event_mine_check: couldn't load gem, quality %d.", mdata->mine_quality );
-        logit( LOG_DEBUG, "event_mine_check: couldn't load ge,, quality %d.", mdata->mine_quality );
+        logit( LOG_DEBUG, "event_mine_check: couldn't load gem, quality %d.", mdata->mine_quality );
         send_to_char( "Your efforts were thwarted by a mysterious force.  Tell a God.\n\r", ch );
         return;
       }
-      int type = OBJ_VNUM(ore) - 504;
-      // Base price based on gem type.
-      switch( type / 8 )
-      {
-        // Topaz
-        case 0:
-          newcost = 200000;
-          if( randommob )
-          {
-            // A hideous zombie (#92)
-            // a corpse gatherer (#89)
-            mob = read_mobile(number(0, 1) ? 89 : 92, VIRTUAL);
-            // Enters from below.
-            char_to_room( mob, mdata->room, 4 );
-          }
-          break;
-        // Sapphire
-        case 1:
-          newcost = 250000;
-          if( randommob )
-          {
-            // An antlion (#94)
-            // A purple worm (#95)
-            mob = read_mobile(number(94, 95), VIRTUAL);
-            // Enters from below.
-            char_to_room( mob, mdata->room, 4 );
-          }
-          break;
-        // Emerald
-        case 2:
-          newcost = 300000;
-          if( randommob )
-          {
-            // a swarm of earth beetles (#97)
-            // A skeletal warrior (#93)
-            mob = read_mobile(number(0, 1) ? 93 : 97, VIRTUAL);
-            // Enters from below.
-            char_to_room( mob, mdata->room, 4 );
-          }
-          break;
-        // Diamond
-        case 3:
-          newcost = 250000;
-          if( randommob )
-          {
-            // A mohrg (#91)
-            // a sleeping earth elemental (#96)
-            mob = read_mobile(number(0, 1) ? 91 : 96, VIRTUAL);
-            // Enters from below.
-            char_to_room( mob, mdata->room, 4 );
-          }
-          break;
-        // Ruby
-        case 4:
-          newcost = 300000;
-          if( randommob )
-          {
-            // a GIANT purple worm (#90)
-            // a burrow wraith (#98)
-            mob = read_mobile( number(0, 1) ? 90 : 98, VIRTUAL);
-            // Enters from below.
-            char_to_room( mob, mdata->room, 4 );
-          }
-          break;
-        // Buggy gemstones are 1 plat base.
-        default:
-          newcost = 1000;
-          break;
-      }
-      newcost *= (float)GET_LEVEL(ch) / 56.0;
-      newcost *= (GET_CHAR_SKILL(ch, SKILL_MINE)) / 100.0;
-      switch( type % 8 )
-      {
-        // Tiny imperfect.
-        case 0:
-          break;
-        // Reg Imperfect.
-        case 1:
-          newcost *= 1.05;
-          break;
-        // Large Imperfect.
-        case 2:
-          newcost *= 1.15;
-          break;
-        // Tiny Reg.
-        case 3:
-          newcost *= 1.20;
-          break;
-        // Reg Reg.
-        case 4:
-          newcost *= 1.25;
-          break;
-        // Large Reg.
-        case 5:
-          newcost *= 1.35;
-          break;
-        // Reg Flawless.
-        case 6:
-          newcost *= 1.65;
-          break;
-        // Large Flawless.
-        case 7:
-          newcost *= 1.85;
-          break;
-        default:
-          break;
-      }
+      // Moved to a function to make it more readable.
+      newcost = calc_gem_cost( ch, ore, randommob );
     }
     else
     {
@@ -5413,4 +5318,120 @@ int calc_ore_cost( P_char ch, P_obj ore )
     GET_CHAR_SKILL(ch, SKILL_MINE), (int)newcost/1000, (int)newcost%1000 );
 
   return (int)newcost;
+}
+
+// Calculates the base cost of a gem (metal and size variables & level and skill of ch).
+int calc_gem_cost( P_char ch, P_obj gem, bool randommob )
+{
+  int newcost;
+  int type = OBJ_VNUM(gem) - 504;
+  P_char mob;
+
+  // Base price based on gem type.
+  switch( type / 8 )
+  {
+    // Topaz
+    case 0:
+      newcost = 200000;
+      if( randommob )
+      {
+        // A hideous zombie (#92)
+        // a corpse gatherer (#89)
+        mob = read_mobile(number(0, 1) ? 89 : 92, VIRTUAL);
+        // Enters from below.
+        char_to_room( mob, ch->in_room, 4 );
+      }
+      break;
+    // Sapphire
+    case 1:
+      newcost = 250000;
+      if( randommob )
+      {
+        // An antlion (#94)
+        // A purple worm (#95)
+        mob = read_mobile(number(94, 95), VIRTUAL);
+        // Enters from below.
+        char_to_room( mob, ch->in_room, 4 );
+      }
+      break;
+    // Emerald
+    case 2:
+      newcost = 300000;
+      if( randommob )
+      {
+        // a swarm of earth beetles (#97)
+        // A skeletal warrior (#93)
+        mob = read_mobile(number(0, 1) ? 93 : 97, VIRTUAL);
+        // Enters from below.
+        char_to_room( mob, ch->in_room, 4 );
+      }
+      break;
+    // Diamond
+    case 3:
+      newcost = 250000;
+      if( randommob )
+      {
+        // A mohrg (#91)
+        // a sleeping earth elemental (#96)
+        mob = read_mobile(number(0, 1) ? 91 : 96, VIRTUAL);
+        // Enters from below.
+        char_to_room( mob, ch->in_room, 4 );
+      }
+      break;
+    // Ruby
+    case 4:
+      newcost = 300000;
+      if( randommob )
+      {
+        // a GIANT purple worm (#90)
+        // a burrow wraith (#98)
+        mob = read_mobile( number(0, 1) ? 90 : 98, VIRTUAL);
+        // Enters from below.
+        char_to_room( mob, ch->in_room, 4 );
+      }
+      break;
+    // Buggy gemstones are 1 plat base.
+    default:
+      newcost = 1000;
+      break;
+  }
+  newcost *= (float)GET_LEVEL(ch) / 56.0;
+  newcost *= (GET_CHAR_SKILL(ch, SKILL_MINE)) / 100.0;
+  switch( type % 8 )
+  {
+    // Tiny imperfect.
+    case 0:
+      break;
+    // Reg Imperfect.
+    case 1:
+      newcost *= 1.05;
+      break;
+    // Large Imperfect.
+    case 2:
+      newcost *= 1.15;
+      break;
+    // Tiny Reg.
+    case 3:
+      newcost *= 1.20;
+      break;
+    // Reg Reg.
+    case 4:
+      newcost *= 1.25;
+      break;
+    // Large Reg.
+    case 5:
+      newcost *= 1.35;
+      break;
+    // Reg Flawless.
+    case 6:
+      newcost *= 1.65;
+      break;
+    // Large Flawless.
+    case 7:
+      newcost *= 1.85;
+      break;
+    default:
+      break;
+  }
+  return newcost;
 }
