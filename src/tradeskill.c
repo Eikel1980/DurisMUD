@@ -1977,31 +1977,31 @@ bool load_one_mine(int map)
   mine->value[2] = mine_data[map].mine_duration;
   if( mine_data[map].type == VOBJ_GEMMINE )
   {
-    mine->value[0] = number(10, 25);
+    mine->value[0] = number(12, 23);
     mine->value[1] = 100 + number(0, 3);
     // Description already set in heavens.obj file.
   }
   else if( random < 3 )
   {
-    mine->value[0] = number(20, 30);
+    mine->value[0] = number(24, 32);
     mine->value[1] = 3;
     mine->description = str_dup("&+LThe &+yearth &+Lhere is &+cbr&+Lim&+Cm&+Ling with &+Yore&+L - it's the &+GMother &+LLode!&n");
   }
   else if( random < 20 )
   {
-    mine->value[0] = number(10, 15);
+    mine->value[0] = number(16, 24);
     mine->value[1] = 2;
     mine->description = str_dup("&+LThe &+yearth&+L here is &+cst&+Lrea&+ck&+Led &+Lwith &+core&+L.&n");
   }
-  else if( random < 60 )
+  else if( random < 75 )
   {
-    mine->value[0] = number( 8, 12);
+    mine->value[0] = number( 12, 20);
     mine->value[1] = 1;
     mine->description = str_dup("&+LA few chunks of &+Yore &+Lpoke out of the ground here.&n");
   }
   else
   {
-    mine->value[0] = number( 5, 10);
+    mine->value[0] = number( 8, 16);
     mine->value[1] = 0;
     mine->description = str_dup("&+LA few glimmers &+Ws&+wpa&+Wrk&+wle&+L in the &+yearth &+Lhere.&n");
   }
