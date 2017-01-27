@@ -1413,7 +1413,9 @@ void do_conjure(P_char ch, char *argument, int cmd)
       {
         memset(&af, 0, sizeof(af));
         af.type = SPELL_CONJURE_ELEMENTAL;
-        af.duration = 2;
+        af.flags = AFFTYPE_SHORT;
+        // At level 21: 70-75 sec, at 56, 88-93 sec (assuming 100 cha).
+        af.duration = (WAIT_SEC * (60 + number(0, 5) + GET_LEVEL(ch) / 2) * 100) / GET_C_CHA(ch);
         affect_to_char(ch, &af);
       }
       extract_char(t_ch);
