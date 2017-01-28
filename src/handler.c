@@ -73,6 +73,7 @@ extern void timedShutdown(P_char ch, P_char, P_obj, void *data);
 //void disarm_obj_events(P_obj obj, event_func func);
 int map_view_distance(P_char ch, int room);
 bool leave_safe_room( P_char ch );
+void add_weight( P_obj obj, int weight );
 
 /*
  * called every 20 seconds, just loops through chars doing...stuff
@@ -2333,6 +2334,9 @@ void obj_to_obj(P_obj obj, P_obj obj_to)
     }
   }
 
+  if( obj->weight > 0 )
+    add_weight( obj_to, obj->weight );
+/* Broken out into a recursive function; neater and more correct for handling negative weights properly.
   wgt = GET_OBJ_WEIGHT(obj);
   for (tmp_obj = obj->loc.inside; wgt && tmp_obj;
        tmp_obj = OBJ_INSIDE(tmp_obj) ? tmp_obj->loc.inside : NULL)
@@ -2352,6 +2356,7 @@ void obj_to_obj(P_obj obj, P_obj obj_to)
   {
     owner->specials.carry_weight += GET_OBJ_WEIGHT(obj);
   }
+*/
 }
 
 /*
@@ -2382,8 +2387,12 @@ void obj_from_obj(P_obj obj)
       tmp->next_content = obj->next_content;
     }
 
-    /* Subtract weight from containers container */
-    wgt = GET_OBJ_WEIGHT(obj);
+    // Subtract weight from containers container
+    if( obj->weight > 0 )
+    {
+      add_weight( obj_from, -(obj->weight) );
+    }
+/*    wgt = GET_OBJ_WEIGHT(obj);
     for( tmp = obj->loc.inside; wgt && tmp; tmp = OBJ_INSIDE(tmp) ? tmp->loc.inside : NULL )
     {
       tmp->weight -= GET_OBJ_WEIGHT(obj);
@@ -2398,6 +2407,7 @@ void obj_from_obj(P_obj obj)
     {
       owner->specials.carry_weight -= GET_OBJ_WEIGHT(obj);
     }
+*/
 
     obj->loc_p = LOC_NOWHERE;
     obj->loc.room = NOWHERE;
@@ -4081,4 +4091,92 @@ bool leave_safe_room( P_char ch )
 
   do_simple_move( ch, dir, 0 );
   return TRUE;
+}
+
+// A little more complicated than it would first seem.
+// This function adds weight to the object, then adds weight to its container/holder/wearer,
+//   but only the amount of weight above the magical weightlessness of said object.
+// This function handles adding a negative weight properly as well.
+void add_weight( P_obj obj, int weight )
+{
+  // If we start with a negative weight.
+  if( obj->weight < 0 )
+  {
+    // Add the new amount of weight (Note: obj->weight stays negative if weight is negative).
+    obj->weight += weight;
+    // If we go above the 'weightlessness' of obj, then add to the container/holder/wearer.
+    if( obj->weight > 0 )
+    {
+      switch( obj->loc_p )
+      {
+        case LOC_WORN:
+          GET_CARRYING_W(obj->loc.wearing) += obj->weight;
+          break;
+        case LOC_CARRIED:
+          GET_CARRYING_W(obj->loc.carrying) += obj->weight;
+          break;
+        case LOC_INSIDE:
+          // Call recursively, since the containing object might also have a weightless factor.
+          add_weight( obj->loc.inside, obj->weight );
+          break;
+        case LOC_ROOM:
+        case LOC_NOWHERE:
+        default:
+          break;
+      }
+    }
+  }
+  // If we start with a positive weight (or 0)
+  else
+  {
+    // Add the new amount of weight (Note: obj->weight might become negative if weight is negative).
+    obj->weight += weight;
+    // If weight stayed positive, just adjust owner/container weight (works for both positive and negative weight).
+    if( obj->weight > 0 )
+    {
+      switch( obj->loc_p )
+      {
+        case LOC_WORN:
+          GET_CARRYING_W(obj->loc.wearing) += weight;
+          break;
+        case LOC_CARRIED:
+          GET_CARRYING_W(obj->loc.carrying) += weight;
+          break;
+        case LOC_INSIDE:
+          // Call recursively, since the containing object might also have a weightless factor.
+          add_weight( obj->loc.inside, weight );
+          break;
+        case LOC_ROOM:
+        case LOC_NOWHERE:
+        default:
+          break;
+      }
+    }
+    // We added a negative weight that dropped obj below 0... fun.
+    else
+    {
+      // We now shift weight to the amount of change to get obj from its previous weight to 0.
+      //   This is because once a container becomes weightless, it doesn't further affect the carrier/etc.
+      // To do this, we subtract the new obj->weight (obj->old_weight+weight) from weight, which yields the
+      //   negative of the original obj->weight.
+      weight -= obj->weight;
+      switch( obj->loc_p )
+      {
+        case LOC_WORN:
+          GET_CARRYING_W(obj->loc.wearing) += weight;
+          break;
+        case LOC_CARRIED:
+          GET_CARRYING_W(obj->loc.carrying) += weight;
+          break;
+        case LOC_INSIDE:
+          // Call recursively, since the containing object might also have a weightless factor.
+          add_weight( obj->loc.inside, weight );
+          break;
+        case LOC_ROOM:
+        case LOC_NOWHERE:
+        default:
+          break;
+      }
+    }
+  }
 }
