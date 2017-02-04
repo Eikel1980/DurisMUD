@@ -11819,6 +11819,17 @@ void do_whois(P_char ch, char *arg, int cmd)
       send_to_char_f( ch, "Name '%s' not found.\n", name );
       return;
     }
+    if( (res = db_query( "SELECT ip_address FROM log_entries WHERE pid=%d AND ip_address!=\"\" GROUP BY ip_address ORDER BY date DESC", pid )) != NULL )
+    {
+      CAP(name);
+      send_to_char_f( ch, "&=LWIP Addresses used by %s:&N\n", name );
+      while( (row = mysql_fetch_row( res )) != NULL )
+      {
+        send_to_char_f( ch, "%s, ", row[0] );
+      }
+      mysql_free_result(res);
+      send_to_char( "\n\n", ch );
+    }
     if( !(res = db_query("SELECT last_ip FROM ip_info WHERE pid = %d", pid)) )
     {
       send_to_char_f( ch, "Could not find pid %d in database!\n", pid );
@@ -11834,7 +11845,7 @@ void do_whois(P_char ch, char *arg, int cmd)
     mysql_free_result(res);
   }
 
-  send_to_char_f( ch, "&=LWIP Address: '%s'&N\n\n", ip_address );
+  send_to_char_f( ch, "&=LWIP Address: '%s'&N\n", ip_address );
 
   whois_ip( ch, ip_address );
 }
@@ -12418,6 +12429,7 @@ void do_where(P_char ch, char *argument, int cmd)
       {
         if( d->original )        /* If switched */
         {
+
           sprintf(lines[line_count].line, "&+%c%-20s &+Y- &n[&+R%4d&+W:&+C%6d&n] %s &n(In body of %s&n)\n",
             IS_TRUSTED(t_ch) ? 'w' : racewar_color[GET_RACEWAR(t_ch)].color, t_ch->player.name,
             ROOM_ZONE_NUMBER(d->character->in_room), world[d->character->in_room].number,
