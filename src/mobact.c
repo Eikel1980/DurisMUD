@@ -9258,10 +9258,11 @@ void zone_spellmessage(int room, bool hide_deaf, const char *msg, const char *ms
 
   bool indoors = IS_ROOM(room, ROOM_INDOORS);
 
-  for (chars_in_zone = remember_array[z]; chars_in_zone;
-       chars_in_zone = chars_in_zone->next)
+  int c_room;
+  for( chars_in_zone = remember_array[z]; chars_in_zone; chars_in_zone = chars_in_zone->next )
   {
-    int c_room = chars_in_zone->c->in_room;
+    c_room = chars_in_zone->c->in_room;
+
     if(c_room == room)
       continue;
     if(indoors && !IS_ROOM(c_room, ROOM_INDOORS))
@@ -9271,11 +9272,11 @@ void zone_spellmessage(int room, bool hide_deaf, const char *msg, const char *ms
     if( hide_deaf and !CAN_HEAR(chars_in_zone->c) )
       continue;
 
-    if (IS_MAP_ROOM(room))
+    if( IS_MAP_ROOM(room) )
     {
-      if (IS_MAP_ROOM(c_room) && world[room].map_section != 0 && world[room].map_section == world[c_room].map_section)
+      if( IS_MAP_ROOM(c_room) && (world[room].map_section != 0) && (world[room].map_section == world[c_room].map_section) )
       {
-        if (msg_dir != 0)
+        if( msg_dir != NULL )
         {
           sprintf(buf, msg_dir, get_map_direction(c_room, room));
           send_to_char(buf, chars_in_zone->c);

@@ -1257,7 +1257,7 @@ void spell_earthen_rain(int level, P_char ch, char *arg, int type, P_char victim
   send_to_char("&+yA &+Ldeadly rain&n &+yof rocks and &+Yearth &+yfalls from above!&n\n", ch);
   act("&+yA &+Ldeadly rain&n &+yof rocks and &+Yearth &+yfalls from above!", FALSE, ch, 0, 0, TO_ROOM);
 
-  zone_spellmessage(ch->in_room, "&+ySmall bits of &+Yearth &+yand rock rain from above!\n",
+  zone_spellmessage(ch->in_room, FALSE, "&+ySmall bits of &+Yearth &+yand rock rain from above!\n",
     "&+ySmall bits of &+Yearth &+yand rock rain from %sern sky!\n");
 
   cast_as_damage_area(ch, spell_single_earthen_rain, level, victim,
@@ -1428,7 +1428,7 @@ void spell_greater_earthen_grasp(int level, P_char ch, char *arg, int type, P_ch
     get_property("spell.area.minChance.gEarthGrasp", 100),
     get_property("spell.area.chanceStep.gEarthGrasp", 20));
 
-  zone_spellmessage(room, "&+yThe ground rumbles &+Ldeeply &+ynearby...\n",
+  zone_spellmessage(room, FALSE, "&+yThe ground rumbles &+Ldeeply &+ynearby...\n",
     "&+yThe ground rumbles &+Ldeeply &+yto the %s...\n");
 }
 

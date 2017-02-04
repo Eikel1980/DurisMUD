@@ -1429,7 +1429,7 @@ void spell_tempest(int level, P_char ch, char *arg, int type, P_char victim, P_o
     act("&+wYou have difficulty summoning the squall.&n",
       FALSE, ch, 0, victim, TO_CHAR);
 
-  zone_spellmessage(ch->in_room,"&+wYou feel a bitterly &+Ccold&+w wisp of air.\r\n",
+  zone_spellmessage(ch->in_room, FALSE,"&+wYou feel a bitterly &+Ccold&+w wisp of air.\r\n",
                                 "&+wYou feel a bitterly &+Ccold&+w wisp of air from the %s.\r\n");
 
   CharWait(ch, (int) (PULSE_SPELLCAST * 1));
@@ -1688,8 +1688,9 @@ void spell_supernova(int level, P_char ch, char *arg, int type, P_char victim, P
   act("&+LThrough your &+Yco&+Wsm&+Yic &+Lmanipulations you channel the powers of a distant &+Ynova &+Lright onto the battlefield!", FALSE, ch, 0, 0, TO_CHAR);
   act("$n &+Lchannels the powers of a distant &+Ynova &+Lright onto the battlefield!", FALSE, ch, 0, 0, TO_ROOM);
   
-  zone_spellmessage(ch->in_room, "&n&+cThe He&+Wav&n&+cens themselves &-L&+Yflash&n&+c as a &+YSupernova&n&+c is unleashed nearby!&n\r\n",
-                                 "&n&+cThe He&+Wav&n&+cens to the %s &-L&+Yflash&n&+c as a &+YSupernova&n&+c is unleashed nearby!&n\r\n" );
+  zone_spellmessage(ch->in_room, FALSE,
+    "&n&+cThe He&+Wav&n&+cens themselves &-L&+Yflash&n&+c as a &+YSupernova&n&+c is unleashed nearby!&n\r\n",
+    "&n&+cThe He&+Wav&n&+cens to the %s &-L&+Yflash&n&+c as a &+YSupernova&n&+c is unleashed nearby!&n\r\n" );
   cast_as_damage_area(ch, spell_single_supernova, level, victim, get_property("spell.area.minChance.superNova", 50), get_property("spell.area.chanceStep.superNova", 10));
   
   if (!is_char_in_room(ch, room)) 
@@ -2034,7 +2035,7 @@ void spell_polar_vortex(int level, P_char ch, char *arg, int type, P_char victim
                       get_property("spell.area.minChance.polarVortex", 50),
                       get_property("spell.area.chanceStep.polarVortex", 20));
 
-  zone_spellmessage(ch->in_room,
+  zone_spellmessage(ch->in_room, FALSE,
     "&+CA blast of &+cfreezing &+Cair swirls violently through the area.\r\n",
     "&+CA blast of &+cfreezing &+Cair from the %s swirls violently through the area.\r\n");
 }
@@ -2209,7 +2210,7 @@ void spell_cosmic_rift(int level, P_char ch, char *arg, int type, P_char victim,
   cast_as_damage_area(ch, spell_single_cosmic_rift, level, victim,
                       get_property("spell.area.minChance.cosmicRift", 0),
                       get_property("spell.area.chanceStep.cosmicRift", 20));
-  zone_spellmessage(ch->in_room,
+  zone_spellmessage(ch->in_room, FALSE,
                      "&+LThe air visibly ripples and distorts.\r\n",
                      "&+LThe air to the %s visibly ripples and distorts.\r\n");
 }

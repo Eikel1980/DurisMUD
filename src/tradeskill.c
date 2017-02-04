@@ -1461,7 +1461,7 @@ void event_fish_check(P_char ch, P_char victim, P_obj, void *data)
 
     if( dist <= 225 && (number( 1, 12 ) < 3) )
     {
-      zone_spellmessage(ch->in_room,
+      zone_spellmessage(ch->in_room, TRUE,
         "&+cThe &+Csoft &+csound of &+Cwater&+c splashing can be heard in the distance...&n\r\n",
         "&+cThe &+Csoft &+csound of &+Cwater&+c splashing can be heard to the %s...&n\r\n");
     }
