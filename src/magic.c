@@ -14573,7 +14573,7 @@ void spell_silence(int level, P_char ch, char *arg, int type, P_char victim, P_o
     act("$n is suddenly at a great loss for words.", TRUE, victim, 0, 0, TO_ROOM);
 
     af.type = SPELL_SILENCE;
-    af.duration = 40;
+    af.duration = 10 * WAIT_SEC;
     af.flags = AFFTYPE_SHORT;
     af.bitvector2 = AFF2_SILENCED;
     affect_to_char(victim, &af);
@@ -14584,7 +14584,7 @@ void spell_silence(int level, P_char ch, char *arg, int type, P_char victim, P_o
     act("$n suddenly grows silent.", TRUE, victim, 0, 0, TO_ROOM);
 
     af.type = SPELL_SILENCE;
-    af.duration = 30;
+    af.duration = 8 * WAIT_SEC;
     af.flags = AFFTYPE_SHORT;
     af.bitvector2 = AFF2_SILENCED;
     affect_to_char(victim, &af);
@@ -14596,7 +14596,7 @@ void spell_silence(int level, P_char ch, char *arg, int type, P_char victim, P_o
 
     af.type = SPELL_SILENCE;
     af.flags = AFFTYPE_SHORT;
-    af.duration = 20;
+    af.duration = 5 * WAIT_SEC;
     af.bitvector2 = AFF2_SILENCED;
     affect_to_char(victim, &af);
   }
@@ -14607,7 +14607,7 @@ void spell_silence(int level, P_char ch, char *arg, int type, P_char victim, P_o
 
     af.type = SPELL_SILENCE;
     af.flags = AFFTYPE_SHORT;
-    af.duration = 30;
+    af.duration = 3 * WAIT_SEC;
     af.bitvector2 = AFF2_SILENCED;
     affect_to_char(victim, &af);
   }
