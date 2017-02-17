@@ -5319,7 +5319,7 @@ int calc_ore_cost( P_char ch, P_obj ore )
 
   // Do you mine achievement.
   if( affected_by_spell(ch, ACH_DO_YOU_MINE) )
-    newcost *= 1.10;
+    newcost *= 1.15;
 
   debug( "New ore: '%s' (lvl: %d, skill: %d) value: %d,%d.", ore->short_description, GET_LEVEL(ch),
     GET_CHAR_SKILL(ch, SKILL_MINE), (int)newcost/1000, (int)newcost%1000 );

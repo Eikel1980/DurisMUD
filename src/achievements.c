@@ -124,10 +124,10 @@ void do_achievements(P_char ch, char *arg, int cmd)
   //-----Achievement: Miner
   if( affected_by_spell(ch, ACH_DO_YOU_MINE) )
     sprintf(buf3, "  %s            %s                             %s\r\n",
-        "&+LD&+co &+CY&+yo&+wu &+YM&+Wi&+mn&+Me&N", "&+BMine 1000 ore&n", "&+B10% increase in ore prices&n");
+        "&+LD&+co &+CY&+yo&+wu &+YM&+Wi&+mn&+Me&N", "&+BMine 1000 ore&n", "&+B15% increase in ore prices&n");
   else
     sprintf(buf3, "  %s            %s                             %s: &+W%d%%\r\n",
-        "&+LD&+co &+CY&+yo&+wu &+YM&+Wi&+mn&+Me&N", "&+wMine 1000 ore&n", "&+w10% increase in ore prices&n", ore/10);
+        "&+LD&+co &+CY&+yo&+wu &+YM&+Wi&+mn&+Me&N", "&+wMine 1000 ore&n", "&+w15% increase in ore prices&n", ore/10);
   strcat(buf, buf3);
   //-----Miner
 
