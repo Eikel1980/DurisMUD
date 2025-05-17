@@ -430,6 +430,7 @@ void run_the_game(int port, int sslport)
 
   loadHints();
   epic_initialization();
+  ssl_read_cert();
   time_after = clock();
   bfs_reset_marks();
   fprintf(stderr, "Boot completed in: %d milliseconds\n",

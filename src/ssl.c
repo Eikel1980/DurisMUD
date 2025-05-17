@@ -1,9 +1,63 @@
 #include <gnutls/gnutls.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <errno.h>
 #include "prototypes.h"
 #include "config.h"
 
 static gnutls_certificate_credentials_t x509_cred = 0;
 static gnutls_priority_t priority_cache = 0;
+
+// read the cert, skipping if file date is the same.
+// Errors are ok if we already have one (assume the cert is being updated),
+// fatal on startup.
+void ssl_read_cert(void)
+{
+  static timespec cert_time = {0,0};
+  struct stat st;
+  gnutls_certificate_credentials_t cred = 0;
+  const char *errfunc = 0;
+  int err;
+
+  if (!priority_cache)
+    if ((err = gnutls_priority_init(&priority_cache, NULL, NULL)) < 0)
+    {
+      logit(LOG_SYS, "Can't allocate SSL priority cache: %s\n",
+            gnutls_strerror(err));
+      exit(1);
+    }
+
+  if ((err = stat(CERTFILE, &st)))
+  {
+    logit(LOG_SYS, "Can't stat cert file %s: %s\n", CERTFILE, strerror(errno));
+    if (x509_cred)
+      return;
+    exit(1);
+  }
+
+  if (st.st_mtim.tv_sec==cert_time.tv_sec && st.st_mtim.tv_nsec==cert_time.tv_nsec)
+    return;
+
+  printf("Reading SSL cert: %s key: %s\n", CERTFILE, KEYFILE);
+  if ((err = gnutls_certificate_allocate_credentials(&cred)) < 0 ||
+      (err = gnutls_certificate_set_x509_key_file(cred, CERTFILE, KEYFILE,
+             GNUTLS_X509_FMT_PEM)) < 0 ||
+      (err = gnutls_certificate_set_known_dh_params(cred, GNUTLS_SEC_PARAM_MEDIUM)) < 0)
+  {
+    if (cred)
+      gnutls_certificate_free_credentials(cred);
+    logit(LOG_SYS, "Can't read cert file %s key file %s: %s\n", CERTFILE, KEYFILE,
+          gnutls_strerror(err));
+    if (x509_cred)
+      return;
+    exit(1);
+  }
+
+  // Can't deallocate old cert while some session is still using it.
+  // We could refcount, but just memory leak for now...
+  x509_cred = cred;
+  cert_time = st.st_mtim;
+}
 
 gnutls_session_t ssl_new(int s)
 {
@@ -11,23 +65,9 @@ gnutls_session_t ssl_new(int s)
   gnutls_session_t ses = 0;
   const char *errfunc = 0;
 
-  gnutls_global_set_log_level(10);
-  if (!x509_cred)
-  {
-    // one_time initialization
-    if ((err = gnutls_certificate_allocate_credentials(&x509_cred)) < 0)
-      errfunc = "gnutls_certificate_allocate_credentials";
-    else if ((err = gnutls_certificate_set_x509_key_file(x509_cred, CERTFILE, KEYFILE,
-                                                   GNUTLS_X509_FMT_PEM)) < 0)
-      errfunc = "gnutls_certificate_set_x509_key_file";
-    else if ((err = gnutls_priority_init(&priority_cache, NULL, NULL)) < 0)
-      errfunc = "gnutls_priority_init";
-    else if ((err = gnutls_certificate_set_known_dh_params(x509_cred, GNUTLS_SEC_PARAM_MEDIUM)) < 0)
-      errfunc = "gnutls_certificate_set_known_dh_params";
-  }
+  ssl_read_cert();
 
-  if (errfunc);
-  else if ((err = gnutls_init(&ses, GNUTLS_SERVER | GNUTLS_NONBLOCK)) < 0)
+  if ((err = gnutls_init(&ses, GNUTLS_SERVER | GNUTLS_NONBLOCK)) < 0)
     errfunc = "gnutls_init";
   else if ((err = gnutls_priority_set(ses, priority_cache)) < 0)
     errfunc = "gnutls_priority_set";

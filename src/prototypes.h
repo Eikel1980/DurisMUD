@@ -2854,6 +2854,7 @@ void spell_curse_of_yzar(int, P_char, char *, int, P_char, P_obj);
 void spell_rest(int, P_char, char *, int, P_char, P_obj);
 
 /* ssl.c */
+void ssl_read_cert(void);
 gnutls_session_t ssl_new(int);
 int ssl_negotiate(gnutls_session_t);
 void ssl_close(gnutls_session_t);
