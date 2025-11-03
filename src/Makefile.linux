@@ -13,9 +13,9 @@ endif
 
 LDFLAGS += -L/usr/lib/mysql -L./ships -fno-stack-protector
 
-OPTS    = -O2
+OPTS    = -O0 -march=core2
 
-CFLAGS = -g -Wno-write-strings -fpermissive -fno-stack-protector
+CFLAGS = -g -Wno-write-strings -fpermissive -fno-stack-protector -std=gnu++98 -Wno-error=address -Wno-format-truncation
 #CFLAGS += -D__NO_MYSQL__
 CFLAGS += -DTEST_MUD
 
@@ -25,7 +25,7 @@ CFLAGS += -DTEST_MUD
 
 INCLUDES	= -I. -I/usr/include/libxml2 -I/usr/include/mysql -I./ships
 
-GENERAL_LIBS    = -lm -lstdc++ -lz -lxml2 -lmysqlclient -lcrypt
+GENERAL_LIBS    = -lm -lstdc++ -lz -lxml2 -lcrypt -lmysqlclient
 
 ifdef EFENCE
 	LDFLAGS += -L.
@@ -258,7 +258,7 @@ SRCS	= $(OBJS:.o=.c) $(OPT_OBJS:.o=.c) $(SH_LIBS:.o=.c) $(PFILE_OBJS:.o=.c)
 all: $(PROGS)
 
 libships.a:
-	cd ships && $(MAKE)
+	cd ships && $(MAKE) -f Makefile.linux
 
 dms_new : $(DMS_OBJS) $(OPT_OBJS) $(OUR_LIBS)
 	$(CC) $(LDFLAGS) -g -o dms_new $(DMS_OBJS) $(OPT_OBJS) $(LIBS)
