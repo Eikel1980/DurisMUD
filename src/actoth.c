@@ -75,7 +75,7 @@ extern P_index obj_index;
 extern char *specdata[][MAX_SPEC];
 extern P_char character_list;
 extern Skill skills[];
-extern const int new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 
 extern void event_track_move(P_char ch, P_char vict, P_obj obj, void *data);
 
@@ -3411,6 +3411,39 @@ void do_explist(P_char ch, char *argument, int cmd)
     snprintf(Gbuf1, MAX_STRING_LENGTH, "&+bYou should level anytime now!&n\r\n");
 
   send_to_char(Gbuf1, ch);
+}
+
+// Arih: for debugging exp bug
+void do_expkkk(P_char ch, char *argument, int cmd)
+{
+  char     buf[MAX_STRING_LENGTH];
+  long     curr_exp = GET_EXP(ch);
+  long     required_exp = new_exp_table[GET_LEVEL(ch) + 1];
+  long     remaining_exp = required_exp - curr_exp;
+  double   percentage = ((double)curr_exp * 100.0) / required_exp;
+
+  if (IS_TRUSTED(ch))
+  {
+    send_to_char("Thats a moot point for immortals!\r\n", ch);
+    return;
+  }
+
+  snprintf(buf, MAX_STRING_LENGTH,
+          "&+bExperience Debug Info:&n\r\n"
+          "&+b  Current EXP:  &+W%ld&n\r\n"
+          "&+b  Required EXP: &+W%ld&n\r\n"
+          "&+b  Remaining:    &+W%ld&n\r\n"
+          "&+b  Percentage:   &+W%.2f%%&n\r\n"
+          "&+b  Level:        &+W%d&n\r\n"
+          "&+b  Table Index:  &+W%d&n\r\n",
+          curr_exp,
+          required_exp,
+          remaining_exp,
+          percentage,
+          GET_LEVEL(ch),
+          GET_LEVEL(ch) + 1);
+
+  send_to_char(buf, ch);
 }
 
 void do_idea(P_char ch, char *argument, int cmd)

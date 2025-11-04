@@ -50,7 +50,7 @@ extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;
 extern int top_of_zone_table;
 extern P_index mob_index;
-extern const int new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 
 extern void obj_affect_remove(P_obj, struct obj_affect *);
 extern bool has_eq_slot( P_char ch, int wear_slot );

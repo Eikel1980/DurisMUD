@@ -429,440 +429,441 @@ extern unsigned int game_locked_level;
 #define CMD_ASSIST         398
 #define CMD_DOORBASH       399
 #define CMD_EXP            400
-#define CMD_ROFL           401
-#define CMD_AGREE          402
-#define CMD_HAPPY          403
-#define CMD_PUCKER         404
-#define CMD_SPAM           405
-#define CMD_BEER           406
-#define CMD_BODYSLAM       407
-#define CMD_SACRIFICE      408
-#define CMD_TERMINATE      409
-#define CMD_CD             410 // For labelas proc
-#define CMD_MEMORIZE       411
-#define CMD_FORGET         412
-#define CMD_HEADBUTT       413
-#define CMD_SHADOW         414
-#define CMD_RIDE           415
-#define CMD_MOUNT          416
-#define CMD_DISMOUNT       417
-#define CMD_DEBUG          418
-#define CMD_FREEZE         419
-#define CMD_BBL            420
-#define CMD_GAPE           421
-#define CMD_VETO           422
-#define CMD_JK             423
-#define CMD_TIPTOE         424
-#define CMD_GRUNT          425
-#define CMD_HOLDON         426
-#define CMD_IMITATE        427
-#define CMD_TANGO          428
-#define CMD_TARZAN         429
-#define CMD_POUNCE         430
-#define CMD_CHEEK          431
-#define CMD_LAYHAND        432
-#define CMD_AWARENESS      433
-#define CMD_FIRSTAID       434
-#define CMD_SPRINGLEAP     435
-#define CMD_FEIGNDEATH     436
-#define CMD_CHANT          437
-#define CMD_DRAG           438
-#define CMD_SPEAK          439
-#define CMD_RELOAD         440
-#define CMD_DRAGONPUNCH    441
-#define CMD_REVOKE         442
-#define CMD_GRANT          443
-#define CMD_OLC            444
-#define CMD_MOTD           445
-#define CMD_ZRESET         446
-#define CMD_FULL           447
-#define CMD_WELCOME        448
-#define CMD_INTRODUCE      449
-#define CMD_SWEAT          450
-#define CMD_MUTTER         451
-#define CMD_LUCKY          452
-#define CMD_AYT            453
-#define CMD_FIDGET         454
-#define CMD_FUZZY          455
-#define CMD_SNOOGIE        456
-#define CMD_READY          457
-#define CMD_PLONK          458
-#define CMD_HERO           459
-#define CMD_LOST           460
-#define CMD_DRAIN          461
-#define CMD_FLASH          462
-#define CMD_CURIOUS        463
-#define CMD_HUNGER         464
-#define CMD_THIRST         465
-#define CMD_ECHOZ          466
-#define CMD_PTELL          467
-#define CMD_SCRIBE         468
-#define CMD_TEACH          469
-#define CMD_REINITPHYS     470
-#define CMD_FINGER         471
-#define CMD_APPROVE        472
-#define CMD_DECLINE        473
-#define CMD_SUMMON         474
-#define CMD_CLONE          475
-#define CMD_TROPHY         476
-#define CMD_ZAP            477 // Special triger?
-#define CMD_ALERT          478
-#define CMD_RECLINE        479
-#define CMD_KNOCK          480
-#define CMD_SKILLS         481
-#define CMD_BERSERK        482
-#define CMD_FAQ            483
-#define CMD_DISENGAGE      484
-#define CMD_RETREAT        485
-#define CMD_INROOM         486
-#define CMD_WHICH          487
-#define CMD_PROCLIB        488
-#define CMD_SETHOME        489
-#define CMD_SCAN           490
-#define CMD_APPLY          491 // Poison
-#define CMD_HITCH          492 // Cart 'n Horse
-#define CMD_UNHITCH        493
-#define CMD_MAP            494
-#define CMD_OGRE_ROAR      495
-#define CMD_BEARHUG        496
-#define CMD_DIG            497
-#define CMD_JUSTICE        498
-#define CMD_SUPERVISE      499
-#define CMD_SOCIETY        500
-#define CMD_TRAPSET        501
-#define CMD_TRAPREMOVE     502
-#define CMD_CARVE          503
-#define CMD_DEPISS         504
-#define CMD_REPISS         505
-#define CMD_BREATH         506
-#define CMD_INGAME         507
-#define CMD_FIRE           508
-#define CMD_REPAIR         509
-#define CMD_MAIL           510
-#define CMD_RENAME         511
-#define CMD_PROJECT        512
-#define CMD_ABSORBE        513
-#define CMD_FLY            514
-#define CMD_SQUIDRAGE      515
-#define CMD_FRAGLIST       516
-#define CMD_LWITNESS       517
-#define CMD_PAY            518
-#define CMD_PARDON         519
-#define CMD_REPORTING      520
-#define CMD_BIND           521
-#define CMD_UNBIND         522
-#define CMD_TURN_IN        523
-#define CMD_CAPTURE        524
-#define CMD_APPRAISE       525
-#define CMD_COVER          526
-#define CMD_HOUSE          527
-#define CMD_GUILDHALL      528
-#define CMD_DOORKICK       529
-#define CMD_BUCK           530
-#define CMD_STAMPEDE       531
-#define CMD_SUBTERFUGE     532
-#define CMD_DIRTTOSS       533
-#define CMD_DISGUISE       534
-#define CMD_CLAIM          535 // For justice clerk holding items
-#define CMD_CHARGE         536
-#define CMD_LORE           537
-#define CMD_POOFINSND      538
-#define CMD_POOFOUTSND     539
-#define CMD_SWIM           540
-#define CMD_NORTHWEST      541
-#define CMD_SOUTHWEST      542
-#define CMD_NORTHEAST      543
-#define CMD_SOUTHEAST      544
-#define CMD_NW             545
-#define CMD_SW             546
-#define CMD_NE             547
-#define CMD_SE             548
-#define CMD_WILL           549
-#define CMD_CONDITION      550
-#define CMD_NECKBITE       551
-#define CMD_FORAGE         552
-#define CMD_CONSTRUCT      553
-#define CMD_SACK           554
-#define CMD_CLIMB          555
-#define CMD_MAKE           556
-#define CMD_THROAT_CRUSH   557
-#define CMD_TEST_DESC      558
-#define CMD_TARGET         559
-#define CMD_SUICIDE        560
-#define CMD_ECHOG          561
-#define CMD_ECHOE          562
-#define CMD_ASCLIST        563 // Association list
-#define CMD_WHOIS          564
-#define CMD_FREE           565 // Keyword Only
-#define CMD_ECHOT          566
-#define CMD_ROUNDKICK      567
-#define CMD_PLEASANT       568 // Inflict pleasantry
-#define CMD_HAMSTRING      569
-#define CMD_EMPTY          570 // Not an empty slot: "empty <container1> <container2>" moves contents from 1 into 2.
-#define CMD_ARENA          571
-#define CMD_ARTIFACTS      572
-#define CMD_INVITE         573
-#define CMD_UNINVITE       574
-#define CMD_COMBINATION    575 // Combo attack, monk
-#define CMD_WIZCONNECT     576
-#define CMD_REPLY          577
-#define CMD_DEATHOBJ       578
-#define CMD_RWC            579 // Racewar chat (disabled)
-#define CMD_AFFECT_PURGE   580
-#define CMD_TUPOR          581
-#define CMD_ECHOU          582
-#define CMD_GUARD          583
-#define CMD_ASSIMILATE     584
-#define CMD_RANDOBJ        585
-#define CMD_COMMUNE        586
-#define CMD_TERRAIN        587
-#define CMD_OMG            588
-#define CMD_BSLAP          589
-#define CMD_HUMP           590
-#define CMD_BONG           591
-#define CMD_SPOON          592
-#define CMD_EEK            593
-#define CMD_MOVING         594
-#define CMD_WIT            595
-#define CMD_FLAP           596
-#define CMD_SPEW           597
-#define CMD_ADDICT         598
-#define CMD_BANZAI         599
-#define CMD_BHUG           600
-#define CMD_BKISS          601
-#define CMD_BLINDFOLD      602
-#define CMD_BOOGIE         603
-#define CMD_BREW           604
-#define CMD_BULLY          605
-#define CMD_BUNGEE         606
-#define CMD_SOB            607
-#define CMD_CURL           608
-#define CMD_CHERISH        609
-#define CMD_CLUE           610
-#define CMD_CHASTISE       611
-#define CMD_COFFEE         612
-#define CMD_COWER          613
-#define CMD_CARROT         614
-#define CMD_DOH            615
-#define CMD_EKISS          616
-#define CMD_FAINT          617
-#define CMD_GAWK           618
-#define CMD_GHUG           619
-#define CMD_HANGOVER       620
-#define CMD_HCUFF          621
-#define CMD_HMM            622
-#define CMD_ICECUBE        623
-#define CMD_MAIM           624
-#define CMD_MAHVELOUS      625
-#define CMD_MEOW           626
-#define CMD_MMMM           627
-#define CMD_MOOCH          628
-#define CMD_COW            629
-#define CMD_MUHAHA         630
-#define CMD_MWALK          631
-#define CMD_NAILS          632
-#define CMD_NASTY          633
-#define CMD_NI             634
-#define CMD_OHNO           635
-#define CMD_OINK           636
-#define CMD_OOO            637
-#define CMD_PECK           638
-#define CMD_PING           639
-#define CMD_PLOP           640
-#define CMD_POTATO         641
-#define CMD_EPARDON        642  // social, now 'epardon' in list of commands.  Pardon is for justice code.
-#define CMD_REASSURE       643
-#define CMD_OHHAPPY        644
-#define CMD_GLUM           645
-#define CMD_SMOOCH         646
-#define CMD_SQUEAL         647
-#define CMD_SQUISH         648
-#define CMD_STICKUP        649
-#define CMD_STRIP          650
-#define CMD_SUFFER         651
-#define CMD_STOKE          652
-#define CMD_ESWEEP         653  // social, now 'esweep' in list of commands. (sweep is for dragon pets/dracos).
-#define CMD_SWOON          654
-#define CMD_TENDER         655
-#define CMD_THROTTLE       656
-#define CMD_TIMEOUT        657
-#define CMD_TORTURE        658
-#define CMD_TUMMY          659
-#define CMD_TYPE           660
-#define CMD_WEDGIE         661
-#define CMD_WISH           662
-#define CMD_WRAP           663
-#define CMD_YABBA          664
-#define CMD_YAHOO          665
-#define CMD_YEEHAW         666
-#define CMD_SLOAD          667
-#define CMD_CASTRATE       668
-#define CMD_BOOT           669
-#define CMD_GLEE           670
-#define CMD_SCOWL          671
-#define CMD_MUMBLE         672
-#define CMD_JEER           673
-#define CMD_TANK           674
-#define CMD_PRAISE         675
-#define CMD_BECKON         676
-#define CMD_CRACK          677
-#define CMD_GRENADE        678
-#define CMD_CHORTLE        679
-#define CMD_WHIP           680
-#define CMD_CLAW           681
-#define CMD_SHADES         682
-#define CMD_TAN            683
-#define CMD_SUNBURN        684
-#define CMD_THREATEN       685
-#define CMD_TWITCH         686
-#define CMD_BABBLE         687
-#define CMD_WRINKLE        688
-#define CMD_GUFFAW         689
-#define CMD_JIG            690
-#define CMD_BLAME          691
-#define CMD_SHUFFLE        692
-#define CMD_FROTH          693
-#define CMD_HOWL           694
-#define CMD_MONKEY         695
-#define CMD_DISGUST        696
-#define CMD_VOTE           697
-#define CMD_HIRE           698
-#define CMD_RELOADHELP     699
-#define CMD_TESTCOLOR      700
-#define CMD_MULTICLASS     701
-#define CMD_RESETARTI      702 // Resets timer on an arti.
-#define CMD_SPECIALIZE     703
-#define CMD_RESETSPEC      704
-#define CMD_NCHAT          705
-#define CMD_WARCRY         706
-#define CMD_TACKLE         707
-#define CMD_DISAPPEAR      708
-#define CMD_HARDCORE       709
-#define CMD_CHEAT          710
-#define CMD_CHEATER        711 // Lists punished ppl
-#define CMD_PUNISH         712
-#define CMD_CRAFT          713
-#define CMD_MIX            714
-#define CMD_FORGE          715
-#define CMD_THROWPOTION    716
-#define CMD_PROJECTS       717 // Lists current projects defined in PROJECTS_FILE
-#define CMD_RAGE           718
-#define CMD_MAUL           719
-#define CMD_RAMPAGE        720
-#define CMD_LOTUS          721
-#define CMD_TRUE_STRIKE    722
-#define CMD_CHI            723
-#define CMD_SHIELDPUNCH    724
-#define CMD_SWEEPING_THRUST 725
-#define CMD_INFURIATE      726
-#define CMD_ENCRUST        727
-#define CMD_GMOTD          728
-#define CMD_FIX            729
-#define CMD_TRAMPLE        730
-#define CMD_WAIL           731 // Same as play (for Bards).
-#define CMD_STATISTIC      732
-#define CMD_HOME           733
-#define CMD_WHIRLWIND      734
-#define CMD_EPIC           735
-#define CMD_THRUST         736
-#define CMD_ENCHANT        737
-#define CMD_UNTHRUST       738
-#define CMD_RUSH           739
-#define CMD_PROPERTIES     740
-#define CMD_FLANK          741
-#define CMD_GAZE           742
-#define CMD_QUEST          743
-#define CMD_RELIC          744 // Displays current Relic points for each racewar side.
-#define CMD_SCENT          745 // Blood scent
-#define CMD_CALL           746 // Call of the grave.
-#define CMD_OK             747 // Puts online player <arg1> into ok file with message <arg rest>
-#define CMD_SNEAKY_STRIKE  748
-#define CMD_MUG            749
-#define CMD_DEFEND         750 // Unused command.
-#define CMD_EXHUME         751
-#define CMD_MORE           752
-#define CMD_FADE           753
-#define CMD_SHRIEK         754
-#define CMD_REMORT         755
-#define CMD_RECALL         756
-#define CMD_RAID           757 // Is raidable check
-#define CMD_MINE           758
-#define CMD_FISH           759
-#define CMD_SPELLBIND      760
-#define CMD_ASCEND         761
-#define CMD_SMELT          762
-#define CMD_HONE           763
-#define CMD_PARLAY         764
-#define CMD_NEWBIE         765
-#define CMD_MAKE_GUIDE     766
-#define CMD_SPELLWEAVE     767
-#define CMD_DESCEND        768
-#define CMD_SQL            769
-#define CMD_MAKEEXIT       770
-#define CMD_ROAR_OF_HEROES 771
-#define CMD_NEXUS          772
-#define CMD_TEST           773
-#define CMD_TRANQUILIZE    774
-#define CMD_TRAIN          775 // Used with nexus stones.
-#define CMD_SLIP           776 // Rogue skill
-#define CMD_HEADLOCK       777
-#define CMD_LEGLOCK        778
-#define CMD_GROUNDSLAM     779
-#define CMD_INFUSE         780 // Recharges Staff/Wand
-#define CMD_BUILD          781 // Builds an outpost mob? Arg: level
-#define CMD_PRESTIGE       782
-#define CMD_ALLIANCE       783
-#define CMD_ACCUSE         784
-#define CMD_DESTROY        785 // 'destroy' -> do_hit
-#define CMD_SMITE          786 // Holy smite for Avengers.
-#define CMD_STORAGE        787 // Create a storage container (persists through reboots/crashes/etc).
-#define CMD_GATHER         788 // Gather arrows.
-#define CMD_NAFK           789 // Unused command.
-#define CMD_GRIMACE        790
-#define CMD_NEWBSU         791 // Newbie buff <arg>
-#define CMD_GIVEPET        792
-#define CMD_OUTPOST        793
-#define CMD_OFFENSIVE      794 // Offensive toggle
-#define CMD_PERUSE         795 // Get stats on item in shop
-#define CMD_HARVEST        796 // Harvest a tree for resources.
-#define CMD_BATTLERAGER    797 // 'battlerager confirm' for a Dwarf to become a Berserker.
-#define CMD_PETITION_BLOCK 798
-#define CMD_AREA           799
-#define CMD_WHITELIST      800
-#define CMD_EPICRESET      801
-#define CMD_FOCUS          802 // Assimilate for ShadowBeast
-#define CMD_BOON           803
-#define CMD_CTF	           804 // Capture the flag
-#define CMD_TETHER         805 // Tether, for Cabalists (abandoned)
-#define CMD_QUESTWHERE     806 // Searches for items received from quests
-#define CMD_NEWBSA         807 // Newbie buff all.
-#define CMD_SALVAGE        808
-#define CMD_RESTRAIN       809 // Avenger & AP skill
-#define CMD_BARRAGE        810 // Ranger Blade Barrage skill
-#define CMD_BLADE          811 // Same as CMD_BARRAGE
-#define CMD_CONSUME        812 // AP/Violator command to consume flesh.
-#define CMD_RIFF           813 // Bard command
-#define CMD_LEADERBOARD    814
-#define CMD_SOULBIND       815
-#define CMD_ACHIEVEMENTS   816
-#define CMD_SALVATION      817 // Command gained from May I Heals You? Achievement
-#define CMD_REFINE         818 // Refine salvaged materials
-#define CMD_DREADNAUGHT    819 // Warrior/Guardian skill
-#define CMD_DICE           820
-#define CMD_SHADOWSTEP     821 // Rogue/Thief skill
-#define CMD_GARROTE        822 // Rogue/Assassin skill
-#define CMD_CONJURE        823 // Summoner command
-#define CMD_DISMISS        824 // Dismisses pets.
-#define CMD_ENHANCE        825 // Take two items, some plat, and make a new one.
-#define CMD_ADD            826 // Add command to add resrouces to a town.
-#define CMD_DEPLOY         827 // Deploy command to deploy troops in a town.
-#define CMD_ADDICTED_BLOOD 828 // 'blood' command: shows Addicted to Blood/Bloodlust info
-#define CMD_DEFOREST       829 // Blighter command
-#define CMD_BEEP           830 // Make <arg>'s computer beep
-#define CMD_DEATHS_DOOR    831 // gellz all base stats 100 achievement
-#define CMD_OFFLINEMSG     832 // Send an offline message to <char>, displayed the next time they log in.
-#define CMD_INSTACAST      833 // Instantly cast a spell (gods only).
-#define CMD_SURNAME        834 // Set yer surname to an available option.
+#define CMD_EXPKKK         401  // Arih: for debugging exp bug
+#define CMD_ROFL           402
+#define CMD_AGREE          403
+#define CMD_HAPPY          404
+#define CMD_PUCKER         405
+#define CMD_SPAM           406
+#define CMD_BEER           407
+#define CMD_BODYSLAM       408
+#define CMD_SACRIFICE      409
+#define CMD_TERMINATE      410
+#define CMD_CD             411 // For labelas proc
+#define CMD_MEMORIZE       412
+#define CMD_FORGET         413
+#define CMD_HEADBUTT       414
+#define CMD_SHADOW         415
+#define CMD_RIDE           416
+#define CMD_MOUNT          417
+#define CMD_DISMOUNT       418
+#define CMD_DEBUG          419
+#define CMD_FREEZE         420
+#define CMD_BBL            421
+#define CMD_GAPE           422
+#define CMD_VETO           423
+#define CMD_JK             424
+#define CMD_TIPTOE         425
+#define CMD_GRUNT          426
+#define CMD_HOLDON         427
+#define CMD_IMITATE        428
+#define CMD_TANGO          429
+#define CMD_TARZAN         430
+#define CMD_POUNCE         431
+#define CMD_CHEEK          432
+#define CMD_LAYHAND        433
+#define CMD_AWARENESS      434
+#define CMD_FIRSTAID       435
+#define CMD_SPRINGLEAP     436
+#define CMD_FEIGNDEATH     437
+#define CMD_CHANT          438
+#define CMD_DRAG           439
+#define CMD_SPEAK          440
+#define CMD_RELOAD         441
+#define CMD_DRAGONPUNCH    442
+#define CMD_REVOKE         443
+#define CMD_GRANT          444
+#define CMD_OLC            445
+#define CMD_MOTD           446
+#define CMD_ZRESET         447
+#define CMD_FULL           448
+#define CMD_WELCOME        449
+#define CMD_INTRODUCE      450
+#define CMD_SWEAT          451
+#define CMD_MUTTER         452
+#define CMD_LUCKY          453
+#define CMD_AYT            454
+#define CMD_FIDGET         455
+#define CMD_FUZZY          456
+#define CMD_SNOOGIE        457
+#define CMD_READY          458
+#define CMD_PLONK          459
+#define CMD_HERO           460
+#define CMD_LOST           461
+#define CMD_DRAIN          462
+#define CMD_FLASH          463
+#define CMD_CURIOUS        464
+#define CMD_HUNGER         465
+#define CMD_THIRST         466
+#define CMD_ECHOZ          467
+#define CMD_PTELL          468
+#define CMD_SCRIBE         469
+#define CMD_TEACH          470
+#define CMD_REINITPHYS     471
+#define CMD_FINGER         472
+#define CMD_APPROVE        473
+#define CMD_DECLINE        474
+#define CMD_SUMMON         475
+#define CMD_CLONE          476
+#define CMD_TROPHY         477
+#define CMD_ZAP            478 // Special triger?
+#define CMD_ALERT          479
+#define CMD_RECLINE        480
+#define CMD_KNOCK          481
+#define CMD_SKILLS         482
+#define CMD_BERSERK        483
+#define CMD_FAQ            484
+#define CMD_DISENGAGE      485
+#define CMD_RETREAT        486
+#define CMD_INROOM         487
+#define CMD_WHICH          488
+#define CMD_PROCLIB        489
+#define CMD_SETHOME        490
+#define CMD_SCAN           491
+#define CMD_APPLY          492 // Poison
+#define CMD_HITCH          493 // Cart 'n Horse
+#define CMD_UNHITCH        494
+#define CMD_MAP            495
+#define CMD_OGRE_ROAR      496
+#define CMD_BEARHUG        497
+#define CMD_DIG            498
+#define CMD_JUSTICE        499
+#define CMD_SUPERVISE      500
+#define CMD_SOCIETY        501
+#define CMD_TRAPSET        502
+#define CMD_TRAPREMOVE     503
+#define CMD_CARVE          504
+#define CMD_DEPISS         505
+#define CMD_REPISS         506
+#define CMD_BREATH         507
+#define CMD_INGAME         508
+#define CMD_FIRE           509
+#define CMD_REPAIR         510
+#define CMD_MAIL           511
+#define CMD_RENAME         512
+#define CMD_PROJECT        513
+#define CMD_ABSORBE        514
+#define CMD_FLY            515
+#define CMD_SQUIDRAGE      516
+#define CMD_FRAGLIST       517
+#define CMD_LWITNESS       518
+#define CMD_PAY            519
+#define CMD_PARDON         520
+#define CMD_REPORTING      521
+#define CMD_BIND           522
+#define CMD_UNBIND         523
+#define CMD_TURN_IN        524
+#define CMD_CAPTURE        525
+#define CMD_APPRAISE       526
+#define CMD_COVER          527
+#define CMD_HOUSE          528
+#define CMD_GUILDHALL      529
+#define CMD_DOORKICK       530
+#define CMD_BUCK           531
+#define CMD_STAMPEDE       532
+#define CMD_SUBTERFUGE     533
+#define CMD_DIRTTOSS       534
+#define CMD_DISGUISE       535
+#define CMD_CLAIM          536 // For justice clerk holding items
+#define CMD_CHARGE         537
+#define CMD_LORE           538
+#define CMD_POOFINSND      539
+#define CMD_POOFOUTSND     540
+#define CMD_SWIM           541
+#define CMD_NORTHWEST      542
+#define CMD_SOUTHWEST      543
+#define CMD_NORTHEAST      544
+#define CMD_SOUTHEAST      545
+#define CMD_NW             546
+#define CMD_SW             547
+#define CMD_NE             548
+#define CMD_SE             549
+#define CMD_WILL           550
+#define CMD_CONDITION      551
+#define CMD_NECKBITE       552
+#define CMD_FORAGE         553
+#define CMD_CONSTRUCT      554
+#define CMD_SACK           555
+#define CMD_CLIMB          556
+#define CMD_MAKE           557
+#define CMD_THROAT_CRUSH   558
+#define CMD_TEST_DESC      559
+#define CMD_TARGET         560
+#define CMD_SUICIDE        561
+#define CMD_ECHOG          562
+#define CMD_ECHOE          563
+#define CMD_ASCLIST        564 // Association list
+#define CMD_WHOIS          565
+#define CMD_FREE           566 // Keyword Only
+#define CMD_ECHOT          567
+#define CMD_ROUNDKICK      568
+#define CMD_PLEASANT       569 // Inflict pleasantry
+#define CMD_HAMSTRING      570
+#define CMD_EMPTY          571 // Not an empty slot: "empty <container1> <container2>" moves contents from 1 into 2.
+#define CMD_ARENA          572
+#define CMD_ARTIFACTS      573
+#define CMD_INVITE         574
+#define CMD_UNINVITE       575
+#define CMD_COMBINATION    576 // Combo attack, monk
+#define CMD_WIZCONNECT     577
+#define CMD_REPLY          578
+#define CMD_DEATHOBJ       579
+#define CMD_RWC            580 // Racewar chat (disabled)
+#define CMD_AFFECT_PURGE   581
+#define CMD_TUPOR          582
+#define CMD_ECHOU          583
+#define CMD_GUARD          584
+#define CMD_ASSIMILATE     585
+#define CMD_RANDOBJ        586
+#define CMD_COMMUNE        587
+#define CMD_TERRAIN        588
+#define CMD_OMG            589
+#define CMD_BSLAP          590
+#define CMD_HUMP           591
+#define CMD_BONG           592
+#define CMD_SPOON          593
+#define CMD_EEK            594
+#define CMD_MOVING         595
+#define CMD_WIT            596
+#define CMD_FLAP           597
+#define CMD_SPEW           598
+#define CMD_ADDICT         599
+#define CMD_BANZAI         600
+#define CMD_BHUG           601
+#define CMD_BKISS          602
+#define CMD_BLINDFOLD      603
+#define CMD_BOOGIE         604
+#define CMD_BREW           605
+#define CMD_BULLY          606
+#define CMD_BUNGEE         607
+#define CMD_SOB            608
+#define CMD_CURL           609
+#define CMD_CHERISH        610
+#define CMD_CLUE           611
+#define CMD_CHASTISE       612
+#define CMD_COFFEE         613
+#define CMD_COWER          614
+#define CMD_CARROT         615
+#define CMD_DOH            616
+#define CMD_EKISS          617
+#define CMD_FAINT          618
+#define CMD_GAWK           619
+#define CMD_GHUG           620
+#define CMD_HANGOVER       621
+#define CMD_HCUFF          622
+#define CMD_HMM            623
+#define CMD_ICECUBE        624
+#define CMD_MAIM           625
+#define CMD_MAHVELOUS      626
+#define CMD_MEOW           627
+#define CMD_MMMM           628
+#define CMD_MOOCH          629
+#define CMD_COW            630
+#define CMD_MUHAHA         631
+#define CMD_MWALK          632
+#define CMD_NAILS          633
+#define CMD_NASTY          634
+#define CMD_NI             635
+#define CMD_OHNO           636
+#define CMD_OINK           637
+#define CMD_OOO            638
+#define CMD_PECK           639
+#define CMD_PING           640
+#define CMD_PLOP           641
+#define CMD_POTATO         642
+#define CMD_EPARDON        643  // social, now 'epardon' in list of commands.  Pardon is for justice code.
+#define CMD_REASSURE       644
+#define CMD_OHHAPPY        645
+#define CMD_GLUM           646
+#define CMD_SMOOCH         647
+#define CMD_SQUEAL         648
+#define CMD_SQUISH         649
+#define CMD_STICKUP        650
+#define CMD_STRIP          651
+#define CMD_SUFFER         652
+#define CMD_STOKE          653
+#define CMD_ESWEEP         654  // social, now 'esweep' in list of commands. (sweep is for dragon pets/dracos).
+#define CMD_SWOON          655
+#define CMD_TENDER         656
+#define CMD_THROTTLE       657
+#define CMD_TIMEOUT        658
+#define CMD_TORTURE        659
+#define CMD_TUMMY          660
+#define CMD_TYPE           661
+#define CMD_WEDGIE         662
+#define CMD_WISH           663
+#define CMD_WRAP           664
+#define CMD_YABBA          665
+#define CMD_YAHOO          666
+#define CMD_YEEHAW         667
+#define CMD_SLOAD          668
+#define CMD_CASTRATE       669
+#define CMD_BOOT           670
+#define CMD_GLEE           671
+#define CMD_SCOWL          672
+#define CMD_MUMBLE         673
+#define CMD_JEER           674
+#define CMD_TANK           675
+#define CMD_PRAISE         676
+#define CMD_BECKON         677
+#define CMD_CRACK          678
+#define CMD_GRENADE        679
+#define CMD_CHORTLE        680
+#define CMD_WHIP           681
+#define CMD_CLAW           682
+#define CMD_SHADES         683
+#define CMD_TAN            684
+#define CMD_SUNBURN        685
+#define CMD_THREATEN       686
+#define CMD_TWITCH         687
+#define CMD_BABBLE         688
+#define CMD_WRINKLE        689
+#define CMD_GUFFAW         690
+#define CMD_JIG            691
+#define CMD_BLAME          692
+#define CMD_SHUFFLE        693
+#define CMD_FROTH          694
+#define CMD_HOWL           695
+#define CMD_MONKEY         696
+#define CMD_DISGUST        697
+#define CMD_VOTE           698
+#define CMD_HIRE           699
+#define CMD_RELOADHELP     700
+#define CMD_TESTCOLOR      701
+#define CMD_MULTICLASS     702
+#define CMD_RESETARTI      703 // Resets timer on an arti.
+#define CMD_SPECIALIZE     704
+#define CMD_RESETSPEC      705
+#define CMD_NCHAT          706
+#define CMD_WARCRY         707
+#define CMD_TACKLE         708
+#define CMD_DISAPPEAR      709
+#define CMD_HARDCORE       710
+#define CMD_CHEAT          711
+#define CMD_CHEATER        712 // Lists punished ppl
+#define CMD_PUNISH         713
+#define CMD_CRAFT          714
+#define CMD_MIX            715
+#define CMD_FORGE          716
+#define CMD_THROWPOTION    717
+#define CMD_PROJECTS       718 // Lists current projects defined in PROJECTS_FILE
+#define CMD_RAGE           719
+#define CMD_MAUL           720
+#define CMD_RAMPAGE        721
+#define CMD_LOTUS          722
+#define CMD_TRUE_STRIKE    723
+#define CMD_CHI            724
+#define CMD_SHIELDPUNCH    725
+#define CMD_SWEEPING_THRUST 726
+#define CMD_INFURIATE      727
+#define CMD_ENCRUST        728
+#define CMD_GMOTD          729
+#define CMD_FIX            730
+#define CMD_TRAMPLE        731
+#define CMD_WAIL           732 // Same as play (for Bards).
+#define CMD_STATISTIC      733
+#define CMD_HOME           734
+#define CMD_WHIRLWIND      735
+#define CMD_EPIC           736
+#define CMD_THRUST         737
+#define CMD_ENCHANT        738
+#define CMD_UNTHRUST       739
+#define CMD_RUSH           740
+#define CMD_PROPERTIES     741
+#define CMD_FLANK          742
+#define CMD_GAZE           743
+#define CMD_QUEST          744
+#define CMD_RELIC          745 // Displays current Relic points for each racewar side.
+#define CMD_SCENT          746 // Blood scent
+#define CMD_CALL           747 // Call of the grave.
+#define CMD_OK             748 // Puts online player <arg1> into ok file with message <arg rest>
+#define CMD_SNEAKY_STRIKE  749
+#define CMD_MUG            750
+#define CMD_DEFEND         751 // Unused command.
+#define CMD_EXHUME         752
+#define CMD_MORE           753
+#define CMD_FADE           754
+#define CMD_SHRIEK         755
+#define CMD_REMORT         756
+#define CMD_RECALL         757
+#define CMD_RAID           758 // Is raidable check
+#define CMD_MINE           759
+#define CMD_FISH           760
+#define CMD_SPELLBIND      761
+#define CMD_ASCEND         762
+#define CMD_SMELT          763
+#define CMD_HONE           764
+#define CMD_PARLAY         765
+#define CMD_NEWBIE         766
+#define CMD_MAKE_GUIDE     767
+#define CMD_SPELLWEAVE     768
+#define CMD_DESCEND        769
+#define CMD_SQL            770
+#define CMD_MAKEEXIT       771
+#define CMD_ROAR_OF_HEROES 772
+#define CMD_NEXUS          773
+#define CMD_TEST           774
+#define CMD_TRANQUILIZE    775
+#define CMD_TRAIN          776 // Used with nexus stones.
+#define CMD_SLIP           777 // Rogue skill
+#define CMD_HEADLOCK       778
+#define CMD_LEGLOCK        779
+#define CMD_GROUNDSLAM     780
+#define CMD_INFUSE         781 // Recharges Staff/Wand
+#define CMD_BUILD          782 // Builds an outpost mob? Arg: level
+#define CMD_PRESTIGE       783
+#define CMD_ALLIANCE       784
+#define CMD_ACCUSE         785
+#define CMD_DESTROY        786 // 'destroy' -> do_hit
+#define CMD_SMITE          787 // Holy smite for Avengers.
+#define CMD_STORAGE        788 // Create a storage container (persists through reboots/crashes/etc).
+#define CMD_GATHER         789 // Gather arrows.
+#define CMD_NAFK           790 // Unused command.
+#define CMD_GRIMACE        791
+#define CMD_NEWBSU         792 // Newbie buff <arg>
+#define CMD_GIVEPET        793
+#define CMD_OUTPOST        794
+#define CMD_OFFENSIVE      795 // Offensive toggle
+#define CMD_PERUSE         796 // Get stats on item in shop
+#define CMD_HARVEST        797 // Harvest a tree for resources.
+#define CMD_BATTLERAGER    798 // 'battlerager confirm' for a Dwarf to become a Berserker.
+#define CMD_PETITION_BLOCK 799
+#define CMD_AREA           800
+#define CMD_WHITELIST      801
+#define CMD_EPICRESET      802
+#define CMD_FOCUS          803 // Assimilate for ShadowBeast
+#define CMD_BOON           804
+#define CMD_CTF	           805 // Capture the flag
+#define CMD_TETHER         806 // Tether, for Cabalists (abandoned)
+#define CMD_QUESTWHERE     807 // Searches for items received from quests
+#define CMD_NEWBSA         808 // Newbie buff all.
+#define CMD_SALVAGE        809
+#define CMD_RESTRAIN       810 // Avenger & AP skill
+#define CMD_BARRAGE        811 // Ranger Blade Barrage skill
+#define CMD_BLADE          812 // Same as CMD_BARRAGE
+#define CMD_CONSUME        813 // AP/Violator command to consume flesh.
+#define CMD_RIFF           814 // Bard command
+#define CMD_LEADERBOARD    815
+#define CMD_SOULBIND       816
+#define CMD_ACHIEVEMENTS   817
+#define CMD_SALVATION      818 // Command gained from May I Heals You? Achievement
+#define CMD_REFINE         819 // Refine salvaged materials
+#define CMD_DREADNAUGHT    820 // Warrior/Guardian skill
+#define CMD_DICE           821
+#define CMD_SHADOWSTEP     822 // Rogue/Thief skill
+#define CMD_GARROTE        823 // Rogue/Assassin skill
+#define CMD_CONJURE        824 // Summoner command
+#define CMD_DISMISS        825 // Dismisses pets.
+#define CMD_ENHANCE        826 // Take two items, some plat, and make a new one.
+#define CMD_ADD            827 // Add command to add resrouces to a town.
+#define CMD_DEPLOY         828 // Deploy command to deploy troops in a town.
+#define CMD_ADDICTED_BLOOD 829 // 'blood' command: shows Addicted to Blood/Bloodlust info
+#define CMD_DEFOREST       830 // Blighter command
+#define CMD_BEEP           831 // Make <arg>'s computer beep
+#define CMD_DEATHS_DOOR    832 // gellz all base stats 100 achievement
+#define CMD_OFFLINEMSG     833 // Send an offline message to <char>, displayed the next time they log in.
+#define CMD_INSTACAST      834 // Instantly cast a spell (gods only).
+#define CMD_SURNAME        835 // Set yer surname to an available option.
 
 /* The CMD_s below are not real commands, they are used in item special procedures to identify
  * when wearer gets hit in melee or nuked and when an item is poofing on ground.

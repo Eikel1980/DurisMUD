@@ -142,7 +142,7 @@ extern flagDef weapon_types[];
 extern flagDef missile_types[];
 extern float combat_by_class[][2];
 extern float combat_by_race[][3];
-extern const int new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 extern const char *get_event_name(P_event);
 extern const char *get_function_name(void *);
 extern const char *spldam_types[];
@@ -8471,10 +8471,10 @@ bool check_apply(int *value, const char *flagName)
 {
   int i;
 
-  for (i = 0; apply_types[i] != NULL &&
+  for (i = 0; apply_types[i] != NULL && apply_types[i][0] != '\n' &&
       str_cmp(apply_types[i], flagName); i++) ;
 
-  if(apply_types[i] == NULL)
+  if(apply_types[i] == NULL || apply_types[i][0] == '\n')
     return FALSE;
 
   *value = i;
@@ -8543,6 +8543,7 @@ void do_which(P_char ch, char *args, int cmd)
     if(!room_bits[i].flagShort)
     {
       send_to_char("Unknown flag, valid options are:\n", ch);
+      buf1[0] = '\0';  // Initialize buf1 before use
       for (j = 0; room_bits[j].flagShort; j++)
       {
 
@@ -8582,6 +8583,7 @@ void do_which(P_char ch, char *args, int cmd)
     if(zone_bits[i][0] == '\n')
     {
       send_to_char("Unknown flag, valid options are:\n", ch);
+      buf1[0] = '\0';  // Initialize buf1 before use
       for (j = 0; zone_bits[j][0] != '\n'; j++)
       {
 
@@ -8748,6 +8750,7 @@ void do_which(P_char ch, char *args, int cmd)
         {
           char temp[MAX_STRING_LENGTH];
           char temp2[MAX_STRING_LENGTH];
+          temp[0] = '\0';  // Initialize temp buffer before use
           for(t = 0; t < MAX_OBJ_AFFECT; t++)
           {
             if(t_obj->affected[t].location != APPLY_NONE)
@@ -8760,8 +8763,6 @@ void do_which(P_char ch, char *args, int cmd)
           snprintf(buf1, MAX_STRING_LENGTH, "[%5d] %-30s - %s\n%s\n",
                   obj_index[t_obj->R_num].virtual_number,
                   t_obj->short_description, where_obj(t_obj, FALSE), temp);
-
-          temp[0] = '\0';
           o_len += strlen(buf1);
           if(o_len > MAX_STRING_LENGTH)
           {
@@ -8795,6 +8796,7 @@ void do_which(P_char ch, char *args, int cmd)
       if(player_bits[i][0] == '\n')
       {
         send_to_char("Unknown flag, valid options are:\n", ch);
+        buf1[0] = '\0';  // Initialize buf1 before use
         for (j = 0; action_bits[j].flagShort; j++)
         {
 

@@ -82,7 +82,7 @@ extern struct time_info_data time_info;
 extern struct zone_data *zone_table;
 extern const int class_tohit_mod[];
 extern Skill skills[];
-extern const int new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 extern struct wis_app_type wis_app[];
 
 int pv_common(P_char, P_char, const P_obj);

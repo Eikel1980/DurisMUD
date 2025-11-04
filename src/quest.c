@@ -31,7 +31,7 @@ extern const struct stat_data stat_factor[];
 extern struct str_app_type str_app[];
 extern struct zone_data *zone_table;
 extern int mini_mode;
-extern const int new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 
 #define QUEST_FILE "areas/world.qst"
 #define MINI_QUEST_FILE "areas/mini.qst"

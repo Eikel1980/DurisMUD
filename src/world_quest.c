@@ -77,7 +77,7 @@ extern const long boot_time;
 extern const struct stat_data stat_factor[];
 extern const char *size_types[];
 extern const char *item_size_types[];
-extern const int new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 extern int avail_descs;
 extern int help_array[27][2];
 extern int info_array[27][2];

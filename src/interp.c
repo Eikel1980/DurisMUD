@@ -614,6 +614,7 @@ const char *command[MAX_CMD] = {
   "exp",                        /*
                                  * 400
                                  */
+  "expkkk",  // Arih: for debugging exp bug
   "rofl",
   "agree",
   "happy",
@@ -2545,6 +2546,7 @@ void assign_command_pointers(void)
   CMD_N(CMD_ENTER, STAT_NORMAL + POS_STANDING, do_enter, 0, FALSE);
   CMD_N(CMD_EXAMINE, STAT_RESTING + POS_PRONE, do_examine, 0, FALSE);
   CMD_N(CMD_EXP, STAT_DEAD + POS_PRONE, do_explist, 0, FALSE);
+  CMD_N(CMD_EXPKKK, STAT_DEAD + POS_PRONE, do_expkkk, 0, FALSE);  // Arih: for debugging exp bug
   CMD_N(CMD_PROJECTS, STAT_SLEEPING + POS_PRONE, do_projects, 0, FALSE);
   CMD_N(CMD_HOME, STAT_SLEEPING + POS_PRONE, do_home, 0, FALSE);
   CMD_N(CMD_FAQ, STAT_SLEEPING + POS_PRONE, do_faq, 0, FALSE);

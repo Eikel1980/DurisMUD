@@ -41,7 +41,7 @@ extern P_obj object_list;
 extern int top_of_objt;
 extern P_desc descriptor_list;
 extern Skill skills[];
-extern int      new_exp_table[];
+extern long new_exp_table[];  // Arih: Fixed type mismatch bug - was int, should be long
 extern void event_reset_zone(P_char, P_char, P_obj, void *);
 
 extern epic_reward epic_rewards[];

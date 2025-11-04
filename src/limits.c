@@ -846,6 +846,11 @@ void update_exp_table()
       new_exp_table[i] = (i==1) ? 2000 : new_exp_table[i-1];
     }
     global_exp_limit += new_exp_table[i];
+
+    // Arih: for debugging exp bug - Debug logging for levels 25-31 to diagnose exp table bug
+    if (i >= 25 && i <= 31) {
+      fprintf(stderr, "  Level %d: exp required = %ld\n", i, new_exp_table[i]);
+    }
   }
 }
 
