@@ -9279,16 +9279,16 @@ void spell_miracle(int level, P_char ch, char *arg, int type, P_char victim,
     gl = ch->group;
     /* leader first */
     if(gl->ch->in_room == ch->in_room)
-      spell_vitality(50, ch, NULL, 0, gl->ch, 0);
-    spell_armor(50, ch, 0, 0, gl->ch, 0);
-    spell_bless(50, ch, 0, 0, gl->ch, 0);
+      spell_vitality(level, ch, NULL, 0, gl->ch, 0);
+    spell_armor(level, ch, 0, 0, gl->ch, 0);
+    spell_bless(level, ch, 0, 0, gl->ch, 0);
     /* followers */
     for (gl = gl->next; gl; gl = gl->next)
     {
       if(gl->ch->in_room == ch->in_room)
-        spell_vitality(50, ch, NULL, 0, gl->ch, 0);
-      spell_armor(50, ch, 0, 0, gl->ch, 0);
-      spell_bless(50, ch, 0, 0, gl->ch, 0);
+        spell_vitality(level, ch, NULL, 0, gl->ch, 0);
+      spell_armor(level, ch, 0, 0, gl->ch, 0);
+      spell_bless(level, ch, 0, 0, gl->ch, 0);
     }
   }
 }
