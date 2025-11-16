@@ -68,7 +68,7 @@ gnutls_session_t ssl_new(int s)
 
   ssl_read_cert();
 
-  if ((err = gnutls_init(&ses, GNUTLS_SERVER | GNUTLS_NONBLOCK)) < 0)
+  if ((err = gnutls_init(&ses, GNUTLS_SERVER | GNUTLS_NONBLOCK | GNUTLS_NO_SIGNAL)) < 0)
     errfunc = "gnutls_init";
   else if ((err = gnutls_priority_set(ses, priority_cache)) < 0)
     errfunc = "gnutls_priority_set";
