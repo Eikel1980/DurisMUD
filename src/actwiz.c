@@ -2889,7 +2889,7 @@ void do_stat(P_char ch, char *argument, int cmd)
           continue;
         }
 
-        snprintf(buf, MAX_STRING_LENGTH, "%13s &+Yby &N%4d &+Yfor &N%3d &+Yfrom &N'%s'\n",
+        snprintf(buf, MAX_STRING_LENGTH, "%13s &+Yby &N%4d &+Yfor &N%3d &+Yfrom &N'%s'",
                 IS_SET(aff->flags, AFFTYPE_NOAPPLY) ? "NONE" :
                 apply_types[(int) aff->location],
                 aff->modifier,
@@ -2926,11 +2926,15 @@ void do_stat(P_char ch, char *argument, int cmd)
 
         if(*buf2 != '\0' && !IS_SET(aff->flags, AFFTYPE_NOAPPLY))
         {
-          snprintf(buf, MAX_STRING_LENGTH, "%-61s &+YSets: &N%s\n", buf, buf2);
-        }
+			buf1[0] = 0;
+			snprintf(buf1, MAX_STRING_LENGTH, "%-61s &+YSets: &N%s\n\n", buf, buf2);
+			strcat(o_buf, buf1);
+		}
         else
-          strcat(buf, "\n");
-        strcat(o_buf, buf);
+		{
+			strcat(buf, "\n\n");
+			strcat(o_buf, buf);
+		}
       }
     }
     if(k->events || k->nevents)

@@ -13150,7 +13150,17 @@ void apply_zone_spell(P_char ch, int count, const char *zone_name, P_obj obj, in
 			  }
 
 			  // Sing the song.
-			  (bard_dragons)(MIN(56, count * 10), ch, tch, spell);
+			  bard_dragons(MIN(56, count * 10), ch, tch, spell);
+			  struct affected_type* paf = get_spell_from_char(tch, SONG_DRAGONS);
+			  if (paf)
+			  {
+				// hack to keep the song_dragons affect on the character
+				// for the same duration as the prot spells when proc'ing
+				// from an item, otherwise it has a duration of 1 and falls
+				// frequently, negating the !fear ability of the song for 
+				// many group members
+				paf->duration = GET_LEVEL(ch) / 3;
+			  }
 		  }
 	  }
 	  break;

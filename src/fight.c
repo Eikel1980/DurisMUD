@@ -5041,8 +5041,8 @@ int check_shields(P_char ch, P_char victim, int dam, int flags)
   else if( result == DAM_NONEDEAD && IS_AFFECTED5(victim, AFF5_THORNSKIN) )
   {
 	struct affected_type* afp = get_spell_from_char(victim, SPELL_THORNSKIN);
-	double thornDamage = afp == NULL ? 2 : dice(2, MIN(2, afp->level / 10)); // 2 dam for bit, 2d(level/10, min 2) - 2d2 at 1, 2d5 at 50
-	result = raw_damage(victim, ch, thornDamage, RAWDAM_DEFAULT | flags, &thornskin);
+	double thornDamage = afp == NULL ? 2 : dice(MAX(2, afp->level / 10), 2); // 2 dam for bit, (level/10, min 2)d2 - 2d2 at 1, 5d2 at 50
+	result = raw_damage(victim, ch, thornDamage, RAWDAM_DEFAULT | PHSDAM_NOREDUCE | flags, &thornskin);
   }
   else if( result == DAM_NONEDEAD && IS_AFFECTED(victim, AFF_INFERNAL_FURY) )
   {
