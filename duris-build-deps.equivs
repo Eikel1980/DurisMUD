@@ -9,7 +9,7 @@ Maintainer: Adam Borowski <kilobyte@angband.pl>
 Depends: build-essential,
 	 libxml2-dev,
 	 zlib1g-dev,
-	 gnutls-dev,
+	 libgnutls28-dev,
 	 libcjson-dev,
 	 libssl-dev,
 	 libhiredis-dev,
